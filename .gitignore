@@ -3,3 +3,14 @@ node_modules
 out
 .env*
 *.tsbuildinfo
+# macOS
+.DS_Store
+
+# Next.js
+.next/
+
+# PDF source files
+public/source/*.pdf
+
+# Temporary files
+repository_tree.txt
