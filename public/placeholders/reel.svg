@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A film reel and projector beam, evoking the cinema years">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#FAF7F1"/><stop offset="1" stop-color="#E8E2D6"/>
+</linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#sky)"/>
+
+<circle cx="200" cy="170" r="70" fill="none" stroke="#0F1720" stroke-width="10"/>
+<circle cx="200" cy="170" r="14" fill="#0F1720"/>
+<g fill="#0F1720"><circle cx="200" cy="118" r="12"/><circle cx="252" cy="170" r="12"/><circle cx="200" cy="222" r="12"/><circle cx="148" cy="170" r="12"/></g>
+<path d="M270 150 L600 70 L600 300 L270 195 Z" fill="#B98A2F" opacity="0.35"/>
+<g fill="#0E5D63">
+<rect x="290" y="230" width="260" height="36" rx="6" opacity="0.9"/>
+<g fill="#FAF7F1"><rect x="300" y="238" width="14" height="20" rx="2"/><rect x="326" y="238" width="14" height="20" rx="2"/><rect x="352" y="238" width="14" height="20" rx="2"/><rect x="378" y="238" width="14" height="20" rx="2"/><rect x="404" y="238" width="14" height="20" rx="2"/><rect x="430" y="238" width="14" height="20" rx="2"/><rect x="456" y="238" width="14" height="20" rx="2"/><rect x="482" y="238" width="14" height="20" rx="2"/><rect x="508" y="238" width="14" height="20" rx="2"/></g>
+</g>
+
+</svg>

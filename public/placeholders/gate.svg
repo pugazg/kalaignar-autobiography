@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A prison gate with a small lamp glowing between the bars">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#FAF7F1"/><stop offset="1" stop-color="#E8E2D6"/>
+</linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#sky)"/>
+
+<path d="M160 320 V140 A160 130 0 0 1 480 140 V320 Z" fill="#E8E2D6" stroke="#0F1720" stroke-width="3"/>
+<g stroke="#0F1720" stroke-width="8" stroke-linecap="round">
+<path d="M210 320 V170"/><path d="M265 320 V140"/><path d="M320 320 V128"/><path d="M375 320 V140"/><path d="M430 320 V170"/>
+</g>
+<circle cx="320" cy="205" r="16" fill="#B98A2F"/>
+<path d="M320 221 v20" stroke="#B98A2F" stroke-width="5" stroke-linecap="round"/>
+<rect x="80" y="318" width="480" height="6" fill="#0F1720" opacity="0.3"/>
+
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A leaflet with lines of print, evoking Murasoli's origins">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#FAF7F1"/><stop offset="1" stop-color="#E8E2D6"/>
+</linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#sky)"/>
+
+<rect x="180" y="60" width="280" height="240" rx="8" fill="#FAF7F1" stroke="#0F1720" stroke-width="2" transform="rotate(-3 320 180)"/>
+<g stroke="#0E5D63" stroke-width="4" stroke-linecap="round" transform="rotate(-3 320 180)">
+<path d="M210 110 h180"/><path d="M210 140 h220"/><path d="M210 170 h160"/>
+<path d="M210 200 h210"/><path d="M210 230 h120"/>
+</g>
+<circle cx="320" cy="88" r="14" fill="#B98A2F" transform="rotate(-3 320 180)"/>
+<rect x="90" y="270" width="460" height="10" rx="5" fill="#0F1720" opacity="0.15"/>
+
+</svg>

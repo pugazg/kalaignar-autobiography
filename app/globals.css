@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-paper text-ink antialiased dark:bg-night dark:text-night-text;
+}
+
+::selection {
+  @apply bg-marina text-paper;
+}
+
+.glass {
+  @apply border border-ink/10 bg-paper/70 backdrop-blur-md dark:border-white/10 dark:bg-night-surface/70;
+}
+
+.eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-marina focus-visible:ring-offset-2 focus-visible:ring-offset-paper dark:focus-visible:ring-offset-night;
+}

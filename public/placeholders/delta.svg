@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Stylised Cauvery delta landscape with a palm tree">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#FAF7F1"/><stop offset="1" stop-color="#E8E2D6"/>
+</linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#sky)"/>
+
+<g stroke="#0E5D63" stroke-width="2.5" fill="none" opacity="0.55">
+<path d="M0 220 C 120 200, 200 250, 320 235 S 540 205, 640 230"/>
+<path d="M0 260 C 140 240, 220 285, 340 270 S 560 245, 640 268"/>
+<path d="M0 300 C 130 285, 240 320, 360 305 S 550 285, 640 302"/>
+</g>
+<g fill="#0E5D63">
+<circle cx="500" cy="88" r="34" fill="#B98A2F" opacity="0.85"/>
+<path d="M150 230 l4 -80 M150 150 q-30 -18 -55 -8 M150 150 q28 -22 56 -10 M150 150 q-14 -30 -4 -52 M150 150 q16 -28 40 -34" stroke="#0E5D63" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g>
+<g stroke="#1B7F87" stroke-width="2" opacity="0.7">
+<path d="M260 236 v-24 M272 238 v-28 M284 236 v-22 M296 239 v-26"/>
+</g>
+
+</svg>

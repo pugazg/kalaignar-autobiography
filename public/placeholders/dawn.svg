@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A sun rising over rampart walls, evoking the dawn of 1967">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#FAF7F1"/><stop offset="1" stop-color="#E8E2D6"/>
+</linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#sky)"/>
+
+<circle cx="320" cy="205" r="72" fill="#B98A2F"/>
+<g stroke="#B98A2F" stroke-width="6" stroke-linecap="round" opacity="0.8">
+<path d="M320 96 v-34"/><path d="M228 130 l-24 -24"/><path d="M412 130 l24 -24"/><path d="M196 205 h-36"/><path d="M444 205 h36"/>
+</g>
+<rect x="60" y="230" width="520" height="90" fill="#0E5D63"/>
+<g fill="#0E5D63">
+<rect x="60" y="212" width="36" height="20"/><rect x="132" y="212" width="36" height="20"/><rect x="204" y="212" width="36" height="20"/><rect x="276" y="212" width="36" height="20"/><rect x="348" y="212" width="36" height="20"/><rect x="420" y="212" width="36" height="20"/><rect x="492" y="212" width="36" height="20"/><rect x="548" y="212" width="32" height="20"/>
+</g>
+<g stroke="#FAF7F1" stroke-width="3" opacity="0.6">
+<path d="M120 262 h60 M260 262 h60 M410 262 h60 M180 292 h60 M330 292 h60"/>
+</g>
+
+</svg>

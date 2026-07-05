@@ -1,0 +1,92 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { siteMeta } from "@/data/meta";
+
+export default function Hero() {
+  const reduce = useReducedMotion();
+  return (
+    <section
+      id="top"
+      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 text-center"
+      aria-label="Introduction"
+    >
+      {/* Layered background: soft gradient + delta contour lines */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-marina/10 via-paper to-paper dark:from-marina/20 dark:via-night dark:to-night" />
+      <svg
+        className="absolute inset-x-0 bottom-0 -z-10 h-2/3 w-full text-marina/[0.07] dark:text-marina-light/[0.08]"
+        viewBox="0 0 1440 480"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        {[0, 1, 2, 3, 4, 5].map((i) => (
+          <path
+            key={i}
+            d={`M0 ${180 + i * 52} C 240 ${140 + i * 52}, 480 ${220 + i * 52}, 720 ${180 + i * 52} S 1200 ${140 + i * 52}, 1440 ${190 + i * 52}`}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          />
+        ))}
+      </svg>
+
+      <motion.p
+        initial={reduce ? false : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="font-tamil text-2xl text-marina/70 dark:text-marina-light/70 sm:text-3xl"
+        lang="ta"
+      >
+        {siteMeta.heroTamil}
+      </motion.p>
+
+      <motion.h1
+        initial={reduce ? false : { opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.15 }}
+        className="mt-4 max-w-4xl font-display text-4xl font-medium leading-tight tracking-tight sm:text-6xl md:text-7xl"
+      >
+        Kalaignar M. Karunanidhi&rsquo;s Legacy
+      </motion.h1>
+
+      <motion.p
+        initial={reduce ? false : { opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="mt-5 max-w-2xl text-lg text-ink/70 dark:text-night-text/70 sm:text-xl"
+      >
+        {siteMeta.subtitle} — the story of Volume&nbsp;1 of his autobiography,
+        told in fifteen minutes instead of 756 pages.
+      </motion.p>
+
+      <motion.div
+        initial={reduce ? false : { opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.45 }}
+        className="mt-9 flex flex-wrap items-center justify-center gap-4"
+      >
+        <a
+          href="#summary"
+          className="focus-ring rounded-full bg-marina px-7 py-3 text-sm font-semibold text-paper shadow-lg shadow-marina/25 transition-transform hover:scale-[1.03]"
+        >
+          Explore the Legacy
+        </a>
+        <a
+          href="#timeline"
+          className="focus-ring rounded-full border border-ink/15 px-7 py-3 text-sm font-semibold text-ink/80 hover:border-marina hover:text-marina dark:border-white/20 dark:text-night-text/80 dark:hover:text-marina-light"
+        >
+          Jump to the timeline
+        </a>
+      </motion.div>
+
+      <a
+        href="#summary"
+        className="focus-ring absolute bottom-8 rounded-full p-2 text-ink/50 dark:text-night-text/50"
+        aria-label="Scroll to summary"
+      >
+        <ChevronDown className="h-6 w-6 animate-scrollhint" aria-hidden />
+      </a>
+    </section>
+  );
+}
