@@ -9,6 +9,7 @@ import Footer from "@/sections/Footer";
 import Gallery from "@/sections/Gallery";
 import Hero from "@/sections/Hero";
 import Pillars from "@/sections/Pillars";
+import Quotes from "@/sections/Quotes";
 import References from "@/sections/References";
 import StatsDashboard from "@/sections/StatsDashboard";
 import Themes from "@/sections/Themes";
@@ -27,6 +28,7 @@ export default function Home() {
         <Pillars />
         <Timeline />
         <Themes />
+        <Quotes />
         <StatsDashboard />
         <Gallery />
         <References />

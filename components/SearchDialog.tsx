@@ -3,19 +3,20 @@
 import { ArrowRight, Search, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { pillars } from "@/data/meta";
+import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
 import { timeline } from "@/data/timeline";
 import { cn } from "@/lib/utils";
 
 type Entry = {
-  category: "Timeline" | "Theme" | "Pillar" | "Chapter";
+  category: "Timeline" | "Theme" | "Pillar" | "Quote" | "Chapter";
   title: string;
   text: string;
   anchor: string;
 };
 
-const CATEGORIES = ["All", "Timeline", "Theme", "Pillar", "Chapter"] as const;
+const CATEGORIES = ["All", "Timeline", "Theme", "Pillar", "Quote", "Chapter"] as const;
 
 function buildIndex(): Entry[] {
   const entries: Entry[] = [];
@@ -30,6 +31,8 @@ function buildIndex(): Entry[] {
     });
   for (const p of pillars)
     entries.push({ category: "Pillar", title: p.title, text: `${p.short} ${p.detail}`, anchor: "pillars" });
+  for (const q of quotes)
+    entries.push({ category: "Quote", title: q.english, text: `${q.tamil} ${q.context}`, anchor: "quotes" });
   for (const c of chapterIndex)
     entries.push({ category: "Chapter", title: `${c.id.replace("v1-", "V1·")} ${c.title}`, text: c.pages, anchor: "references" });
   return entries;
