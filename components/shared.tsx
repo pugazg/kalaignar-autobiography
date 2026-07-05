@@ -171,7 +171,7 @@ export function RefChips({ refs }: { refs: string[] }) {
           className="focus-ring rounded-full border border-marina/30 px-2 py-0.5 text-[11px] font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light"
           title={`See reference ${r} — Volume ${r.slice(1, 2)}, chapter ${r.split("ch")[1]}`}
         >
-          {r.replace("v1-", "V1·")}
+          {r.replace(/^v(\d)-ch/, "V$1·")}
         </a>
       ))}
     </p>

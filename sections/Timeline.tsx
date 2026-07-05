@@ -72,8 +72,8 @@ export default function Timeline() {
       <SectionHeading
         id="timeline"
         tamil="காலம்"
-        eyebrow="Timeline · 1924–1969"
-        title="Forty-five years, seventeen turning points"
+        eyebrow="Timeline · 1924–2005"
+        title="Eighty-one years, forty-two turning points"
         lede="Every milestone below is drawn from the memoir itself, with chapter references you can follow into the source."
       />
 

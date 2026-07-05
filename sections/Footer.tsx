@@ -39,7 +39,7 @@ export default function Footer() {
             download
           >
             <Download className="h-4 w-4" aria-hidden />
-            Download the source (PDF)
+            Download Volume 1 source (PDF)
           </a>
           <p className="text-xs text-ink/55 dark:text-night-text/55">
             Place the source file at <code>public/source/nenjukku-neethi-volume-1.pdf</code> to
@@ -51,7 +51,7 @@ export default function Footer() {
         <p>
           Site content consists of original summaries of, and brief quotations from, the source
           memoir, with chapter citations throughout. Volumes loaded:{" "}
-          {siteMeta.volumesLoaded.join(", ")} — more to come.
+          {siteMeta.volumesLoaded.join(", ")} — the complete memoir.
         </p>
         <p className="mt-1">© {new Date().getFullYear()} — built as an educational, non-commercial digital report.</p>
       </div>
