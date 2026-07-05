@@ -8,6 +8,12 @@ export type Theme = {
   achievements: string[];
   stats: { value: string; label: string }[];
   refs: string[];
+  archive?: {
+    context?: string;
+    people?: string[]; // person ids from data/people.ts
+    laws?: { label: string; ref: string }[];
+    events?: { label: string; ref: string }[];
+  };
 };
 
 export const themes: Theme[] = [
@@ -55,6 +61,16 @@ export const themes: Theme[] = [
       { value: "18 yrs", label: "from founding to forming government" },
     ],
     refs: ["v1-ch05", "v1-ch23", "v1-ch24", "v1-ch34", "v1-ch36", "v1-ch53", "v1-ch72", "v1-ch73", "v1-ch125"],
+    archive: {
+      context:
+        "The through-line of all six volumes: from Periyar's self-respect platform to the 1949 founding at Robinson Park, and from opposition benches to five terms of government — the movement is the memoir's true protagonist.",
+      people: ["periyar", "anna", "mgr"],
+      events: [
+        { label: "The DMK is founded, 1949", ref: "v1-ch34" },
+        { label: "Kallakudi, 1953", ref: "v1-ch43" },
+        { label: "The break with MGR, 1972", ref: "v2-ch49" },
+      ],
+    },
   },
   {
     id: "pen",
@@ -99,6 +115,15 @@ export const themes: Theme[] = [
       { value: "1947", label: "first film, Rajakumari" },
     ],
     refs: ["v1-ch14", "v1-ch15", "v1-ch18", "v1-ch30", "v1-ch31", "v1-ch42", "v1-ch70", "v1-ch94", "v1-ch102", "v1-ch117", "v1-ch122", "v1-ch131", "v1-ch136"],
+    archive: {
+      context:
+        "Cinema was the movement's second stage — scripts that carried rationalist argument to village screens, with Sivaji Ganesan's voice as the instrument, until the author's own settled formula: art and politics as his two eyes.",
+      people: ["sivaji", "mgr"],
+      events: [
+        { label: "'Art and politics — my two eyes'", ref: "v1-ch87" },
+        { label: "'Sivaji in the movement'", ref: "v2-ch14" },
+      ],
+    },
   },
   {
     id: "prison",
@@ -121,6 +146,16 @@ export const themes: Theme[] = [
       { value: "Oct 26", label: "1962 — released two days after Anna" },
     ],
     refs: ["v1-ch45", "v1-ch46", "v1-ch47", "v1-ch48", "v1-ch49", "v1-ch50", "v1-ch76", "v1-ch110", "v1-ch111", "v1-ch113", "v1-ch114"],
+    archive: {
+      context:
+        "Four eras of imprisonment run through the memoir — 1953 Trichy, 1965, the Emergency's MISA years reaching even his son, and the midnight arrest of 2001 at age of a great-grandfather — each answered with the pen.",
+      people: ["stalin"],
+      events: [
+        { label: "'A new republic' in Trichy jail, 1953", ref: "v1-ch46" },
+        { label: "A letter to Stalin from prison", ref: "v3-ch30" },
+        { label: "The midnight arrest, 2001", ref: "v6-ch15" },
+      ],
+    },
   },
   {
     id: "power",

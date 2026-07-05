@@ -3,6 +3,8 @@
 import { ArrowRight, Search, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { pillars } from "@/data/meta";
+import { people } from "@/data/people";
+import { places } from "@/data/places";
 import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
@@ -10,13 +12,15 @@ import { timeline } from "@/data/timeline";
 import { cn } from "@/lib/utils";
 
 type Entry = {
-  category: "Timeline" | "Theme" | "Pillar" | "Quote" | "Chapter";
+  category: "Timeline" | "Theme" | "Person" | "Place" | "Pillar" | "Quote" | "Chapter";
   title: string;
   text: string;
   anchor: string;
+  href?: string; // overrides anchor navigation (e.g. open in the Reader)
+  meta?: string; // volume/pages line shown with the result
 };
 
-const CATEGORIES = ["All", "Timeline", "Theme", "Pillar", "Quote", "Chapter"] as const;
+const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Quote", "Chapter"] as const;
 
 function buildIndex(): Entry[] {
   const entries: Entry[] = [];
@@ -31,10 +35,31 @@ function buildIndex(): Entry[] {
     });
   for (const p of pillars)
     entries.push({ category: "Pillar", title: p.title, text: `${p.short} ${p.detail}`, anchor: "pillars" });
+  for (const per of people)
+    entries.push({
+      category: "Person",
+      title: `${per.name} · ${per.tamil}`,
+      text: `${per.role}. ${per.relationship}`,
+      anchor: "people",
+    });
+  for (const pl of places)
+    entries.push({
+      category: "Place",
+      title: `${pl.name} · ${pl.tamil}`,
+      text: pl.note,
+      anchor: "journey",
+    });
   for (const q of quotes)
     entries.push({ category: "Quote", title: q.english, text: `${q.tamil} ${q.context}`, anchor: "quotes" });
   for (const c of chapterIndex)
-    entries.push({ category: "Chapter", title: `${c.id.replace("v1-", "V1·")} ${c.title}`, text: c.pages, anchor: "references" });
+    entries.push({
+      category: "Chapter",
+      title: c.title,
+      text: c.title,
+      anchor: "references",
+      href: `/read/${c.id}`,
+      meta: `Vol ${c.volume} · ${c.pages}`,
+    });
   return entries;
 }
 
@@ -65,15 +90,26 @@ export default function SearchDialog({
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return index
+    const tokens = q.split(/\s+/).filter(Boolean);
+    const scored = index
       .filter((e) => category === "All" || e.category === category)
-      .filter(
-        (e) =>
-          q.length === 0 ||
-          e.title.toLowerCase().includes(q) ||
-          e.text.toLowerCase().includes(q)
-      )
+      .map((e) => {
+        if (tokens.length === 0) return { e, score: e.category === "Chapter" ? 0 : 1 };
+        const title = e.title.toLowerCase();
+        const text = e.text.toLowerCase();
+        let score = 0;
+        for (const t of tokens) {
+          if (title.includes(t)) score += 3;
+          else if (text.includes(t)) score += 1;
+          else return { e, score: -1 }; // every token must match somewhere
+        }
+        if (title.startsWith(tokens[0])) score += 2;
+        return { e, score };
+      })
+      .filter((r) => r.score >= (tokens.length ? 1 : 0))
+      .sort((a, b) => b.score - a.score)
       .slice(0, 30);
+    return scored.map((r) => r.e);
   }, [index, query, category]);
 
   if (!open) return null;
@@ -96,7 +132,7 @@ export default function SearchDialog({
             ref={inputRef}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search milestones, themes, chapters… (Tamil titles work too)"
+            placeholder="Search people, places, chapters, quotes… Tamil works too; chapters open in the Reader"
             className="w-full bg-transparent text-sm outline-none placeholder:text-ink/40 dark:placeholder:text-night-text/40"
             aria-label="Search query"
           />
@@ -132,7 +168,7 @@ export default function SearchDialog({
           {results.map((r, i) => (
             <li key={i}>
               <a
-                href={`#${r.anchor}`}
+                href={r.href ?? `#${r.anchor}`}
                 onClick={onClose}
                 className="focus-ring group flex items-start gap-3 rounded-xl px-3 py-2.5 hover:bg-marina-faint dark:hover:bg-white/5"
               >
@@ -142,7 +178,7 @@ export default function SearchDialog({
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm font-medium">{r.title}</span>
                   <span className="block truncate text-xs text-ink/60 dark:text-night-text/60">
-                    {r.text.slice(0, 110)}
+                    {r.meta ?? r.text.slice(0, 110)}
                   </span>
                 </span>
                 <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-ink/30 transition-transform group-hover:translate-x-0.5 dark:text-night-text/30" aria-hidden />

@@ -1,13 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import { MapPin } from "lucide-react";
 import { useState } from "react";
 import { timeline, type Milestone } from "@/data/timeline";
 import { Card, RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
+import { chapterById } from "@/data/references";
+import { useResearch } from "@/lib/ResearchMode";
 
 // Era filters derived from the milestone data itself (order-preserving).
 const ERA_FILTERS = ["All", ...Array.from(new Set(timeline.map((m) => m.era)))];
+const TAG_FILTERS = ["All topics", ...Array.from(new Set(timeline.flatMap((m) => m.tags ?? []))).sort()];
 
 function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
   return (
@@ -57,7 +61,22 @@ function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
             />
           </div>
         )}
+        {(m.location || m.tags) && (
+          <p className="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink/50 dark:text-night-text/50">
+            {m.location && (
+              <span className="inline-flex items-center gap-1">
+                <MapPin className="h-3 w-3 text-brass" aria-hidden /> {m.location}
+              </span>
+            )}
+            {m.tags?.map((t) => (
+              <span key={t} className="rounded-full bg-mist px-2 py-0.5 text-[10px] uppercase tracking-wide text-ink/55 dark:bg-white/10 dark:text-night-text/55">
+                {t}
+              </span>
+            ))}
+          </p>
+        )}
         <RefChips refs={m.refs} />
+        <ResearchSources refs={m.refs} />
       </Card>
     </Reveal>
   );
@@ -65,7 +84,10 @@ function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
 
 export default function Timeline() {
   const [era, setEra] = useState<string>("All");
-  const items = timeline.filter((m) => era === "All" || m.era === era);
+  const [tag, setTag] = useState<string>("All topics");
+  const items = timeline.filter(
+    (m) => (era === "All" || m.era === era) && (tag === "All topics" || (m.tags ?? []).includes(tag)),
+  );
 
   return (
     <section id="timeline" className="mx-auto max-w-content px-4 py-24 sm:px-6" aria-labelledby="timeline-label">
@@ -95,6 +117,30 @@ export default function Timeline() {
         ))}
       </div>
 
+      <div className="mb-12 flex flex-wrap justify-center gap-1.5" role="group" aria-label="Filter timeline by topic">
+        {TAG_FILTERS.map((f) => (
+          <button
+            key={f}
+            onClick={() => setTag(f)}
+            className={cn(
+              "focus-ring rounded-full px-3 py-1 text-xs transition-colors",
+              tag === f
+                ? "bg-brass text-paper"
+                : "border border-ink/10 text-ink/55 hover:border-brass/60 hover:text-brass dark:border-white/10 dark:text-night-text/55"
+            )}
+            aria-pressed={tag === f}
+          >
+            {f}
+          </button>
+        ))}
+      </div>
+
+      {items.length === 0 && (
+        <p className="mb-8 text-center text-sm text-ink/55 dark:text-night-text/55">
+          No milestone carries both filters — try widening one.
+        </p>
+      )}
+
       <div className="relative flex flex-col gap-8">
         {/* the spine */}
         <span
@@ -106,5 +152,20 @@ export default function Timeline() {
         ))}
       </div>
     </section>
+  );
+}
+
+function ResearchSources({ refs }: { refs: string[] }) {
+  const { research } = useResearch();
+  if (!research) return null;
+  return (
+    <p className="mt-2 border-t border-dashed border-marina/25 pt-2 font-mono text-[11px] text-marina/80 dark:text-marina-light/80">
+      {refs
+        .map((r) => {
+          const c = chapterById.get(r);
+          return c ? `${r} · ${c.pages}` : r;
+        })
+        .join("   ")}
+    </p>
   );
 }

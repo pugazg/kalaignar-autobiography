@@ -8,6 +8,8 @@ import ExecutiveSummary from "@/sections/ExecutiveSummary";
 import Footer from "@/sections/Footer";
 import Gallery from "@/sections/Gallery";
 import Hero from "@/sections/Hero";
+import Journey from "@/sections/Journey";
+import People from "@/sections/People";
 import Pillars from "@/sections/Pillars";
 import Quotes from "@/sections/Quotes";
 import References from "@/sections/References";
@@ -22,12 +24,14 @@ export default function Home() {
     <>
       <Navbar onSearch={() => setSearchOpen(true)} />
       <SearchDialog open={searchOpen} onClose={() => setSearchOpen(false)} />
-      <main>
+      <main id="main">
         <Hero />
         <ExecutiveSummary />
         <Pillars />
         <Timeline />
+        <Journey />
         <Themes />
+        <People />
         <Quotes />
         <StatsDashboard />
         <Gallery />

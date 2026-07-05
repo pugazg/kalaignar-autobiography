@@ -44,3 +44,20 @@ body {
 .focus-ring {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-marina focus-visible:ring-offset-2 focus-visible:ring-offset-paper dark:focus-visible:ring-offset-night;
 }
+
+/* Accessibility: skip link (visible on focus) */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: #0E5D63;
+  color: #FAF7F1;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  transition: top 0.15s ease;
+}
+.skip-link:focus-visible {
+  top: 0.75rem;
+}

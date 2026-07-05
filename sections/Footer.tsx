@@ -39,7 +39,7 @@ export default function Footer() {
             download
           >
             <Download className="h-4 w-4" aria-hidden />
-            Download Volume 1 source (PDF)
+            Download Volume 1 source (PDF)</a>{" · "}<a href="/read" className="focus-ring text-marina underline-offset-2 hover:underline dark:text-marina-light">Enter the Reading Room
           </a>
           <p className="text-xs text-ink/55 dark:text-night-text/55">
             Place the source file at <code>public/source/nenjukku-neethi-volume-1.pdf</code> to

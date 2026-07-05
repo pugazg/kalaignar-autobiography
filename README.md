@@ -63,3 +63,12 @@ smooth scroll); keyboard-operable search (Esc closes) and lightbox (arrows/Esc);
 ARIA on progress bars, dialogs, filters and expandables; system-font fallbacks with
 `next/font` (Newsreader for display, Inter for body, Noto Serif Tamil for Tamil);
 static single page, no client data fetching.
+
+## The Digital Library layer
+
+- **Reading Room** — `/read`: all 391 chapters in original Tamil (uncorrected OCR), statically
+  generated with stable URLs, bookmarks, reading-position memory and citation export.
+- **Research Mode** — navbar toggle; reveals page ranges, provenance, JSON downloads, citations.
+- **Open data** — `public/data/volume{N}.index.json` (chapter indexes) and
+  `public/data/text/{chapter-id}.json` (chapter text): the substrate for future search/AI features.
+- Regenerate text data with `python3 scripts/extract_chapter_text.py volumeN.md N`.

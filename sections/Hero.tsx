@@ -31,11 +31,28 @@ export default function Hero() {
         ))}
       </svg>
 
+      {/* Watermark: a single Tamil glyph, faint as an embossed manuscript initial */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute right-[4%] top-1/2 -z-10 hidden -translate-y-1/2 select-none font-tamil text-[26rem] leading-none text-marina/[0.045] dark:text-marina-light/[0.05] lg:block"
+      >
+        நீ
+      </span>
+
       <motion.p
         initial={reduce ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="font-tamil text-2xl text-marina/70 dark:text-marina-light/70 sm:text-3xl"
+        transition={{ duration: 0.9 }}
+        className="text-[11px] font-semibold uppercase tracking-[0.35em] text-brass"
+      >
+        கலைஞர் மின்னூலகம் · The Kalaignar Digital Library
+      </motion.p>
+
+      <motion.p
+        initial={reduce ? false : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.1 }}
+        className="mt-4 font-tamil text-2xl text-marina/70 dark:text-marina-light/70 sm:text-3xl"
         lang="ta"
       >
         {siteMeta.heroTamil}
@@ -71,6 +88,12 @@ export default function Hero() {
           className="focus-ring rounded-full bg-marina px-7 py-3 text-sm font-semibold text-paper shadow-lg shadow-marina/25 transition-transform hover:scale-[1.03]"
         >
           Explore the Legacy
+        </a>
+        <a
+          href="/read"
+          className="focus-ring rounded-full border border-marina/40 px-7 py-3 text-sm font-semibold text-marina transition-colors hover:bg-marina hover:text-paper dark:text-marina-light"
+        >
+          Enter the Reading Room
         </a>
         <a
           href="#timeline"

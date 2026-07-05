@@ -55,7 +55,7 @@ export default function StatsDashboard() {
         tamil="எண்கள்"
         eyebrow="Statistics dashboard"
         title="The life in numbers"
-        lede="A memoir has no data tables — but it is full of numbers. Every figure below is stated in the book, with its chapter cited."
+        lede="Numbers as narrative: a movement that entered the Assembly with 15 members in 1957 was governing with 184 by 1971, fell to 48 in the Emergency's wake, and returned with 167 — every figure below carries its chapter."
       />
 
       {/* Animated counters */}

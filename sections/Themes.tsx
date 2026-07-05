@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, ChevronDown, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { themes } from "@/data/themes";
+import { personById } from "@/data/people";
 import { Icon, RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
 
@@ -102,6 +103,41 @@ export default function Themes() {
                                 </li>
                               ))}
                             </ul>
+                            {t.archive && (
+                              <div className="mb-4 rounded-xl border border-brass/25 bg-brass/[0.05] p-4">
+                                <p className="text-xs font-semibold uppercase tracking-wider text-brass">
+                                  From the archive
+                                </p>
+                                {t.archive.context && (
+                                  <p className="mt-2 text-sm leading-relaxed text-ink/70 dark:text-night-text/70">
+                                    {t.archive.context}
+                                  </p>
+                                )}
+                                {t.archive.people && (
+                                  <p className="mt-2 text-xs text-ink/60 dark:text-night-text/60">
+                                    <span className="text-ink/45 dark:text-night-text/45">Key figures: </span>
+                                    {t.archive.people
+                                      .map((id) => personById.get(id)?.name ?? id)
+                                      .join(" · ")}{" "}
+                                    <a href="#people" className="focus-ring text-marina underline-offset-2 hover:underline dark:text-marina-light">
+                                      (profiles)
+                                    </a>
+                                  </p>
+                                )}
+                                {t.archive.events && (
+                                  <ul className="mt-2 space-y-1">
+                                    {t.archive.events.map((e) => (
+                                      <li key={e.ref} className="flex items-baseline justify-between gap-3 text-xs text-ink/65 dark:text-night-text/65">
+                                        <span>{e.label}</span>
+                                        <a href="#references" className="focus-ring shrink-0 rounded-full border border-marina/30 px-2 py-0.5 text-[10px] font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light">
+                                          {e.ref.replace(/^v(\d)-ch/, "V$1·")}
+                                        </a>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            )}
                             <RefChips refs={t.refs} />
                           </div>
 

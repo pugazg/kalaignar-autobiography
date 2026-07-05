@@ -1,0 +1,140 @@
+{
+  "volume": 4,
+  "strategy": "heuristic",
+  "totalPages": 650,
+  "chapterCount": 22,
+  "chapters": [
+    {
+      "title": "பதிப்புரை",
+      "startPage": 4,
+      "endPage": 6,
+      "id": "v4-ch01"
+    },
+    {
+      "title": "என்னுரை",
+      "startPage": 7,
+      "endPage": 51,
+      "id": "v4-ch02"
+    },
+    {
+      "title": "சதி ஆரம்பம்!",
+      "startPage": 52,
+      "endPage": 63,
+      "id": "v4-ch03"
+    },
+    {
+      "title": "உச்சகட்டம்!",
+      "startPage": 64,
+      "endPage": 87,
+      "id": "v4-ch04"
+    },
+    {
+      "title": "கடிதப் போக்குவரத்து",
+      "startPage": 88,
+      "endPage": 98,
+      "id": "v4-ch05"
+    },
+    {
+      "title": "மாநில அரசு தீர்மானம்",
+      "startPage": 99,
+      "endPage": 110,
+      "id": "v4-ch06"
+    },
+    {
+      "title": "சீனத்து மாணவர்கள்!",
+      "startPage": 111,
+      "endPage": 123,
+      "id": "v4-ch07"
+    },
+    {
+      "title": "\"நடந்தாய் வாழி காவேரி!\"",
+      "startPage": 124,
+      "endPage": 134,
+      "id": "v4-ch08"
+    },
+    {
+      "title": "தோற்றமும், முடிவும்",
+      "startPage": 135,
+      "endPage": 163,
+      "id": "v4-ch09"
+    },
+    {
+      "title": "சமுதாய அமைப்பு",
+      "startPage": 164,
+      "endPage": 177,
+      "id": "v4-ch10"
+    },
+    {
+      "title": "இராஜராஜ சோழன் விருது",
+      "startPage": 178,
+      "endPage": 191,
+      "id": "v4-ch11"
+    },
+    {
+      "title": "தெற்கும்-வடக்கும்",
+      "startPage": 192,
+      "endPage": 218,
+      "id": "v4-ch12"
+    },
+    {
+      "title": "எதிர்பாராத படுகொலையும்!",
+      "startPage": 219,
+      "endPage": 255,
+      "id": "v4-ch13"
+    },
+    {
+      "title": "வேதனை அரசியலும்!",
+      "startPage": 256,
+      "endPage": 269,
+      "id": "v4-ch14"
+    },
+    {
+      "title": "கறுப்பு விடியல்",
+      "startPage": 270,
+      "endPage": 321,
+      "id": "v4-ch15"
+    },
+    {
+      "title": "ஆரம்ப வேலைகள்!",
+      "startPage": 322,
+      "endPage": 334,
+      "id": "v4-ch16"
+    },
+    {
+      "title": "மையம் கொள்கிறது புயல்!",
+      "startPage": 335,
+      "endPage": 370,
+      "id": "v4-ch17"
+    },
+    {
+      "title": "இழைக்கப்பட்ட கொடுமை!",
+      "startPage": 371,
+      "endPage": 382,
+      "id": "v4-ch18"
+    },
+    {
+      "title": "பதவி துறந்தேன்!",
+      "startPage": 383,
+      "endPage": 573,
+      "id": "v4-ch19"
+    },
+    {
+      "title": "இரத்த வெறியாட்டம்!",
+      "startPage": 574,
+      "endPage": 626,
+      "id": "v4-ch20"
+    },
+    {
+      "title": "வெளியீட்டு விழா!",
+      "startPage": 627,
+      "endPage": 636,
+      "id": "v4-ch21"
+    },
+    {
+      "title": "படைத்தோம்!",
+      "startPage": 637,
+      "endPage": 650,
+      "id": "v4-ch22"
+    }
+  ]
+}

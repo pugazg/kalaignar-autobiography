@@ -5,10 +5,12 @@ import { useState } from "react";
 import { siteMeta } from "@/data/meta";
 import { chapterIndex, volumeMeta } from "@/data/references";
 import { Reveal, SectionHeading } from "@/components/shared";
+import { useResearch } from "@/lib/ResearchMode";
 
 export default function References() {
   const [showAll, setShowAll] = useState(false);
   const [vol, setVol] = useState<number | 0>(0);
+  const { research, setResearch } = useResearch();
   const filtered = vol === 0 ? chapterIndex : chapterIndex.filter((c) => c.volume === vol);
   const visible = showAll ? filtered : filtered.slice(0, 24);
 
@@ -67,7 +69,41 @@ export default function References() {
               Vol {v.volume} · {v.period}
             </button>
           ))}
+          <button
+            onClick={() => setResearch(!research)}
+            className={`focus-ring ml-auto rounded-full border px-3 py-1 text-xs font-medium transition ${
+              research
+                ? "border-brass bg-brass text-paper"
+                : "border-ink/15 text-ink/70 hover:border-brass/60 dark:border-white/15 dark:text-night-text/70"
+            }`}
+            aria-pressed={research}
+          >
+            Research mode {research ? "on" : "off"}
+          </button>
         </div>
+        {research && (
+          <div className="mb-6 rounded-xl border border-marina/25 bg-marina/[0.04] p-4 text-xs dark:bg-marina/10">
+            <p className="font-semibold text-marina dark:text-marina-light">Provenance & open data</p>
+            <p className="mt-1 text-ink/65 dark:text-night-text/65">
+              Chapters were auto-extracted from OCR of the printed editions — Vol 1 by title markers,
+              Vols 2 & 4 by a title-and-drop-cap heuristic, Vols 3, 5 & 6 by their numbered headings.
+              Text is uncorrected OCR; every chapter is downloadable as JSON, and each has a stable
+              URL in the Reader for citation.
+            </p>
+            <p className="mt-2 flex flex-wrap gap-2">
+              {volumeMeta.map((v) => (
+                <a
+                  key={v.volume}
+                  href={`/data/volume${v.volume}.index.json`}
+                  download
+                  className="focus-ring rounded-full border border-marina/30 px-2.5 py-0.5 text-marina hover:bg-marina hover:text-paper dark:text-marina-light"
+                >
+                  Vol {v.volume} index.json
+                </a>
+              ))}
+            </p>
+          </div>
+        )}
         <ol className="grid gap-x-8 gap-y-1.5 sm:grid-cols-2 lg:grid-cols-3" role="list">
           {visible.map((c) => (
             <li

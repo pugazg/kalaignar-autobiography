@@ -1,6 +1,7 @@
 "use client";
 
-import { Menu, Moon, Search, Sun, X } from "lucide-react";
+import { BookOpen, GraduationCap, Menu, Moon, Search, Sun, X } from "lucide-react";
+import { useResearch } from "@/lib/ResearchMode";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useScrollSpy } from "@/lib/useScrollSpy";
@@ -9,7 +10,9 @@ export const navSections = [
   { id: "summary", label: "Summary" },
   { id: "pillars", label: "Pillars" },
   { id: "timeline", label: "Timeline" },
+  { id: "journey", label: "Journey" },
   { id: "themes", label: "Themes" },
+  { id: "people", label: "People" },
   { id: "quotes", label: "Quotes" },
   { id: "dashboard", label: "In Numbers" },
   { id: "gallery", label: "Gallery" },
@@ -21,6 +24,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
   const [dark, setDark] = useState(false);
   const [open, setOpen] = useState(false);
   const active = useScrollSpy(navSections.map((s) => s.id));
+  const { research, setResearch } = useResearch();
 
   useEffect(() => {
     const onScroll = () => {
@@ -67,7 +71,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
               நெஞ்சுக்கு நீதி
             </span>
             <span className="hidden text-xs font-medium uppercase tracking-widest text-ink/60 dark:text-night-text/60 md:inline">
-              The Kalaignar Legacy
+              Kalaignar Digital Library
             </span>
           </a>
 
@@ -90,6 +94,26 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
           </div>
 
           <div className="flex items-center gap-1">
+            <a
+              href="/read"
+              className="focus-ring hidden items-center gap-1.5 rounded-full border border-marina/30 px-3 py-1.5 text-sm font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light sm:inline-flex"
+            >
+              <BookOpen className="h-4 w-4" aria-hidden /> Read
+            </a>
+            <button
+              onClick={() => setResearch(!research)}
+              className={cn(
+                "focus-ring rounded-full p-2",
+                research
+                  ? "text-marina dark:text-marina-light"
+                  : "text-ink/70 hover:text-marina dark:text-night-text/70 dark:hover:text-marina-light"
+              )}
+              aria-label="Toggle research mode"
+              aria-pressed={research}
+              title="Research mode: reveal pages, provenance and downloads"
+            >
+              <GraduationCap className="h-5 w-5" />
+            </button>
             <button
               onClick={onSearch}
               className="focus-ring rounded-full p-2 text-ink/70 hover:text-marina dark:text-night-text/70 dark:hover:text-marina-light"
