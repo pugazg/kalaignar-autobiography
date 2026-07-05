@@ -11,7 +11,7 @@ export default function ExecutiveSummary() {
         tamil="சுருக்கம்"
         eyebrow="Executive summary"
         title="One life, eight movements"
-        lede="Volume 1 covers 1924 to 1969 — a delta childhood, a language war, a leaflet that became an institution, a screen that became a pulpit, prisons that became schools, and finally the seat of government."
+        lede="The complete memoir spans six volumes, 1924 to 2005 — a delta childhood, a language war, a leaflet that became an institution, a screen that became a pulpit, prisons that became schools, power won and dismissed, adversity weathered, the return, and a final innings that never conceded. The eight movements below are Volume 1's; the timeline carries the whole arc."
       />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {summaryCards.map((c, i) => (

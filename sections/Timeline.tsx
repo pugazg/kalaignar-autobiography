@@ -6,7 +6,8 @@ import { timeline, type Milestone } from "@/data/timeline";
 import { Card, RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
 
-const ERA_FILTERS = ["All", "Roots", "Awakening", "Movement", "Assembly", "Struggle", "Power"] as const;
+// Era filters derived from the milestone data itself (order-preserving).
+const ERA_FILTERS = ["All", ...Array.from(new Set(timeline.map((m) => m.era)))];
 
 function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
   return (
@@ -63,7 +64,7 @@ function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
 }
 
 export default function Timeline() {
-  const [era, setEra] = useState<(typeof ERA_FILTERS)[number]>("All");
+  const [era, setEra] = useState<string>("All");
   const items = timeline.filter((m) => era === "All" || m.era === era);
 
   return (

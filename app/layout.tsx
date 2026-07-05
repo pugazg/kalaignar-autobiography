@@ -17,7 +17,7 @@ const tamil = Noto_Serif_Tamil({
 export const metadata: Metadata = {
   title: "Kalaignar M. Karunanidhi's Legacy — Nenjukku Neethi, Interactive",
   description:
-    "An interactive digital retelling of Nenjukku Neethi (Volume 1), the autobiography of Kalaignar M. Karunanidhi: 1924–1969, from a delta village to the seat of government.",
+    "An interactive digital retelling of Nenjukku Neethi, the complete six-volume autobiography of Kalaignar M. Karunanidhi: 1924–2005, from a delta village through the whole arc of a public life.",
   keywords: [
     "Karunanidhi",
     "Kalaignar",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kalaignar M. Karunanidhi's Legacy",
     description:
-      "Understand Volume 1 of Nenjukku Neethi in fifteen minutes: timeline, themes, statistics and references.",
+      "Understand the complete Nenjukku Neethi in fifteen minutes: timeline, themes, statistics and references.",
     type: "website",
   },
 };

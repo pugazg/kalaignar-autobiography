@@ -4,18 +4,18 @@ export const siteMeta = {
   heroTamil: "நெஞ்சுக்கு நீதி",
   heroTamilTransliteration: "Nenjukku Neethi — Justice for the Heart",
   description:
-    "An interactive digital retelling of Nenjukku Neethi, the autobiography of Kalaignar M. Karunanidhi. Volume 1 traces the years 1924–1969: from a delta village childhood to the Dravidian movement, the pen, the screen, the prison, and finally the seat of government.",
+    "An interactive digital retelling of Nenjukku Neethi, the complete six-volume autobiography of Kalaignar M. Karunanidhi, 1924–2005: the delta childhood, the movement, the pen and the screen, power won and dismissed, adversity, return — and the final innings of a life that gave rest itself a rest.",
   source: {
-    workTamil: "நெஞ்சுக்கு நீதி — முதல் பாகம்",
-    workEnglish: "Nenjukku Neethi (Justice for the Heart), Volume 1",
+    workTamil: "நெஞ்சுக்கு நீதி — ஆறு பாகங்கள்",
+    workEnglish: "Nenjukku Neethi (Justice for the Heart), the complete six volumes",
     author: "M. Karunanidhi (Kalaignar)",
-    firstSerialisedIn: "Dinamani Kadir (Volume 1)",
-    publisher: "Thirumagal Nilayam, Chennai",
-    pages: 756,
-    chapters: 140,
-    periodCovered: "1924 – 1969",
+    firstSerialisedIn: "Dinamani Kadir (Vol. 1) and Kungumam (Vol. 2)",
+    publisher: "Thirumagal Nilayam (Vols. 1–3); Tamizhkani Pathippagam (Vol. 4)",
+    pages: 4234,
+    chapters: 391,
+    periodCovered: "1924 – 2005",
   },
-  volumesLoaded: [1],
+  volumesLoaded: [1, 2, 3, 4, 5, 6],
 };
 
 export type SummaryCard = {

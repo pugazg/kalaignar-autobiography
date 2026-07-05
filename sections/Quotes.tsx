@@ -15,8 +15,8 @@ export default function Quotes() {
         id="quotes"
         tamil="வாசகங்கள்"
         eyebrow="In his words"
-        title="Eight lines that carry the book"
-        lede="Brief excerpts, each verified against the source and cited to its chapter — the full passages live in the book itself."
+        title="Fourteen lines that carry the story"
+        lede="Brief excerpts spanning all six volumes, each verified against the source and cited to its chapter — the full passages live in the books themselves."
       />
       <div className="grid gap-5 md:grid-cols-2">
         {quotes.map((q, i) => (
@@ -42,9 +42,9 @@ export default function Quotes() {
                 <a
                   href="#references"
                   className="focus-ring shrink-0 rounded-full border border-marina/30 px-2 py-0.5 text-[11px] font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light"
-                  title={`Volume 1, chapter ${q.ref.split("ch")[1]}`}
+                  title={`Volume ${q.ref.slice(1, 2)}, chapter ${q.ref.split("ch")[1]}`}
                 >
-                  {q.ref.replace("v1-", "V1·")}
+                  {q.ref.replace(/^v(\d)-ch/, "V$1·")}
                 </a>
               </figcaption>
             </figure>

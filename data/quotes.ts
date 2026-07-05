@@ -59,4 +59,40 @@ export const quotes: Quote[] = [
     context: "The cry that titles the volume's final chapter, February 1969.",
     ref: "v1-ch140",
   },
+  {
+    tamil: "எனக்கென்று ஒரு தனி வாழ்க்கை கிடையாது. ஒரு இலட்சியத்தை மையமாகக் கொண்டு சுழலும் இயக்கத்தின் வரலாற்றில் நான் ஒரு பகுதி.",
+    english: "I have no separate life of my own; I am one part of the history of a movement that turns around an ideal.",
+    context: "On why an autobiography of his could only be the movement's own story.",
+    ref: "v2-ch02",
+  },
+  {
+    tamil: "\u201cஓய்வெடுக்காமல் உழைத்தவன் இதோ ஓய்வு கொண்டிருக்கிறான்\u201d என்று என் கல்லறையின் மீதுதான் எழுதப்படும்.",
+    english: "It will be written only on my tomb: here rests one who laboured without rest.",
+    context: "His answer, in the Volume 2 preface, to rivals who teased him to retire.",
+    ref: "v2-ch01",
+  },
+  {
+    tamil: "நான் எடுத்துவைக்கும் ஒவ்வொரு அடியின் போதும் அண்ணா அவர்களின் நினைவே எனக்கு ஊன்று கோலாய்த் துணை புரிகிறது.",
+    english: "At every step I take, Anna's memory is the staff that steadies me.",
+    context: "The line from Volume 1's close that he repeats at the head of Volume 3.",
+    ref: "v3-ch01",
+  },
+  {
+    tamil: "பெரியார்க்கு மாணவனாவேன்; அண்ணாவுக்குத் தம்பியாவேன் … என்று நினைத்துப் பார்த்ததுகூட இல்லை!",
+    english: "That I would become a student to Periyar, a younger brother to Anna — I never even dreamed it.",
+    context: "Volume 4's preface, looking back from Thirukkuvalai to everything after.",
+    ref: "v4-ch02",
+  },
+  {
+    tamil: "அந்த “லகான்” என் கையில் இல்லாமல், என் பொதுவாழ்வின் கையில் இருப்பதால்தான் ஓய்வுக்கு ஓய்வு கொடுத்து விட்டு இந்த வண்டி ஓடிக் கொண்டிருக்கிறது.",
+    english: "The reins are not in my hands but in my public life's — that is why this cart runs on, giving rest itself a rest.",
+    context: "Opening the fifth volume, in answer to Vairamuthu's wonder at a fifth volume at his age.",
+    ref: "v5-ch01",
+  },
+  {
+    tamil: "உயிரினும் மேலான இனிய உடன்பிறப்புக்களே என்று எல்லோரையும் எனது உடன்பிறப்புக்களாகவே கருதி — உங்களை விளித்திருக்கிறேன்.",
+    english: "Siblings dearer than life itself — that is how I address you, counting every one of you as my own.",
+    context: "In the final pages, refusing to greet a mixed gathering by any dividing name.",
+    ref: "v6-ch29",
+  },
 ];

@@ -1,7 +1,7 @@
 export type Milestone = {
   id: string;
   year: string;
-  era: "Roots" | "Awakening" | "Movement" | "Struggle" | "Assembly" | "Power";
+  era: string;
   title: string;
   summary: string;
   stat?: { value: string; label: string };
@@ -13,9 +13,14 @@ export const eras = [
   { id: "Roots", label: "Roots", years: "1924–1936" },
   { id: "Awakening", label: "Awakening", years: "1937–1948" },
   { id: "Movement", label: "Movement", years: "1949–1956" },
-  { id: "Struggle", label: "Struggle", years: "1957–1966" },
-  { id: "Assembly", label: "Assembly", years: "1957–1966" },
+  { id: "Assembly", label: "Assembly", years: "1957–1960" },
+  { id: "Struggle", label: "Struggle", years: "1961–1966" },
   { id: "Power", label: "Power", years: "1967–1969" },
+  { id: "CM Years", label: "CM Years", years: "1969–1976" },
+  { id: "Adversity", label: "Adversity", years: "1976–1988" },
+  { id: "Return", label: "Return", years: "1989–1996" },
+  { id: "Fourth Term", label: "Fourth Term", years: "1996–1999" },
+  { id: "Final Innings", label: "Final Innings", years: "1999–2005" },
 ] as const;
 
 export const timeline: Milestone[] = [
@@ -203,5 +208,252 @@ export const timeline: Milestone[] = [
       "At 00:22 on February 3, 1969, with lakhs keeping vigil in the cold outside the Adyar hospital, Anna dies. Volume 1 closes on this grief — 'Give me your heart, Anna!' — the end of an era and, though the book does not yet say it, the beginning of another.",
     stat: { value: "00:22", label: "the hour the volume ends on" },
     refs: ["v1-ch138", "v1-ch139", "v1-ch140"],
+  },
+
+  // ——— Volume 2 · 1969–1976 ———
+  {
+    id: "t1969b",
+    year: "1969",
+    era: "CM Years",
+    title: "Chief Minister, and a near-fatal pandal",
+    summary:
+      "Volume 2 opens amid the world's condolences for Anna and the new ministry's first decisions — a separate Backward Classes welfare department created on April 1, 1969, held under the Chief Minister himself. Days later, on April 7 at Appakoodal in Coimbatore district, a storm brings a function pandal down on thousands; he is pulled from the wreckage in the dark and escapes with treatment at home.",
+    stat: { value: "Apr 7", label: "1969 — the Appakoodal collapse" },
+    refs: ["v2-ch04", "v2-ch12"],
+  },
+  {
+    id: "t1971",
+    year: "1971",
+    era: "CM Years",
+    title: "184 of 234",
+    summary:
+      "A progressive front assembled on January 8, 1971 — DMK with Congress, CPI, PSP, Forward Bloc, Muslim League and Tamilarasu Kazhagam — sweeps the state: the DMK alone takes 184 of 234 Assembly seats, its allies adding more. The mandate of 1967 becomes a landslide.",
+    stat: { value: "184/234", label: "DMK seats, 1971 Assembly" },
+    image: "dawn.svg",
+    refs: ["v2-ch35", "v2-ch36", "v2-ch37"],
+  },
+  {
+    id: "t1972",
+    year: "Oct 1972",
+    era: "CM Years",
+    title: "The break with MGR",
+    summary:
+      "Mediators shuttle through October 13 — Nanjil Manoharan, R. M. Veerappan — but the confrontation the book calls 'the beginning of betrayal' ends with the matinee idol's expulsion: 'there was no other way; he was removed.' Tamil politics splits into the rivalry that will define the next four decades.",
+    refs: ["v2-ch45", "v2-ch49"],
+  },
+  {
+    id: "t1975",
+    year: "Jun 1975",
+    era: "CM Years",
+    title: "Emergency",
+    summary:
+      "On June 12, 1975, Justice Jagmohanlal Sinha of the Allahabad High Court voids Indira Gandhi's election; on June 25 the Emergency is proclaimed. The DMK government in Madras resolves against it within two days — one of the few state governments in India to stand up and say so.",
+    stat: { value: "Jun 25", label: "1975 — Emergency proclaimed" },
+    refs: ["v2-ch59", "v2-ch60"],
+  },
+  {
+    id: "t1975b",
+    year: "Oct 1975",
+    era: "CM Years",
+    title: "Kamaraj passes",
+    summary:
+      "The death of Kamaraj — the adversary of 1967, honoured in grief — brings 'the tears and the seashore vow.' The book devotes chapters to the Kazhagam's homage to a rival it never stopped respecting.",
+    refs: ["v2-ch61", "v2-ch63", "v2-ch64"],
+  },
+  {
+    id: "t1976",
+    year: "Jan 31, 1976",
+    era: "CM Years",
+    title: "The government is dismissed",
+    summary:
+      "With the Valluvar Kottam inauguration being planned in the very same January, the Centre dismisses the DMK government on the evening of January 31, 1976 and dissolves the Assembly; the monument he raised to Thiruvalluvar opens that April under President's rule. MISA and the 'trial by commission' years begin.",
+    stat: { value: "Jan 31", label: "1976 — ministry dismissed, House dissolved" },
+    image: "gate.svg",
+    refs: ["v2-ch66", "v2-ch67", "v2-ch70"],
+  },
+
+  // ——— Volume 3 · 1976–1988 ———
+  {
+    id: "t1976b",
+    year: "1976–77",
+    era: "Adversity",
+    title: "Prison letters, again",
+    summary:
+      "The Emergency's dragnet reaches the movement itself — his own arrest (the volume records George Fernandes' public protest at it), a letter written from prison to Stalin, and testimony it titles 'the experiences of a life sentence.' The pen, as in 1953, does the enduring.",
+    refs: ["v3-ch09", "v3-ch30"],
+  },
+  {
+    id: "t1977",
+    year: "1977",
+    era: "Adversity",
+    title: "Democracy answers the Emergency",
+    summary:
+      "The campaign frames the March 1977 contest plainly — at Panagal Park the movement's platform declares only two candidates stand: democracy and dictatorship. Janata sweeps the Centre and the Shah Commission begins its reckoning; in Tamil Nadu the Kazhagam contests 230 seats and wins 48 against the ADMK's 129, settling into the opposition benches it will hold for a decade.",
+    stat: { value: "48/230", label: "DMK seats won of contested, 1977" },
+    refs: ["v3-ch10", "v3-ch18", "v3-ch29", "v3-ch32"],
+  },
+  {
+    id: "t1980",
+    year: "Feb 1980",
+    era: "Adversity",
+    title: "Nine governments fall",
+    summary:
+      "On the night of February 17, 1980, the returned Indira Gandhi cabinet resolves to dismiss nine state governments, Tamil Nadu's included — the same instrument used against the DMK in 1976, and by Janata against nine Congress states in 1977. The chapter title carries the book's verdict on that season's politics: 'poison spat while shaking hands.'",
+    stat: { value: "9", label: "state governments dismissed at once" },
+    image: "gate.svg",
+    refs: ["v3-ch51"],
+  },
+  {
+    id: "t1983",
+    year: "1981–85",
+    era: "Adversity",
+    title: "Eelam burns; Tamil Nadu answers",
+    summary:
+      "From 'the spark in Lanka' onward, the volume tracks the Eelam Tamils' cause becoming central to Tamil politics — chapters on the rights struggle, the pogroms, the agitations at home, and the Indian delegations to the island.",
+    refs: ["v3-ch17", "v3-ch26", "v3-ch67", "v3-ch69"],
+  },
+  {
+    id: "t1987",
+    year: "1987–88",
+    era: "Adversity",
+    title: "MGR's death, and a volume closes",
+    summary:
+      "On November 15, 1987 he travels to the Sixth World Tamil Conference in Malaysia; returning by train, he is met at the station with the news — MGR dead of a sudden heart attack at 3:45 in the pre-dawn dark. The volume closes on 1988: the National Front forming at Delhi, and an 'unshakable Himalaya' of a movement preparing its return.",
+    stat: { value: "3:45 am", label: "the hour the rivalry of a lifetime ended" },
+    refs: ["v3-ch71", "v3-ch72", "v3-ch73"],
+  },
+
+  // ——— Volume 4 · 1988–1996 ———
+  {
+    id: "t1989",
+    year: "Jan 27, 1989",
+    era: "Return",
+    title: "Sworn in at the monument he built",
+    summary:
+      "Chief Minister again after thirteen years — and the oath before Governor Alexander is taken at Valluvar Kottam, the memorial he raised in his last term. The government moves fast enough that the Hindustan Times (20.2.1989) calls it 'a Himalayan achievement in just twenty days of rule'; among the laws the volume counts with pride, equal property rights for women — enacted in 1989, sixty years after the movement first resolved it.",
+    stat: { value: "1989", label: "equal property rights for women enacted" },
+    image: "assembly.svg",
+    refs: ["v4-ch02", "v4-ch04"],
+  },
+  {
+    id: "t1990",
+    year: "1990",
+    era: "Return",
+    title: "'Live long, Cauvery'",
+    summary:
+      "The Cauvery chapter opens with a coincidence the author savours: the river-sharing accord between Mysore and the Madras Presidency was signed in 1924, the year he was born — with a fifty-year clause whose expiry now lands on his desk. The volume carries the fight for the river into the tribunal era.",
+    refs: ["v4-ch08"],
+  },
+  {
+    id: "t1991",
+    year: "Jan 30, 1991",
+    era: "Return",
+    title: "Dismissed on Gandhi's death-day",
+    summary:
+      "The volume traces 'the conspiracy to dismiss the government' from February 1989 to its end: with the state budget due on February 2, the ministry is dismissed on the night of January 30, 1991 — the book notes the bitter coincidence that this was the very date Gandhi was shot. 'For the second time, I gave up office.' Months later, on the night of May 21, 1991, Rajiv Gandhi is assassinated at Sriperumbudur — 'the unexpected murder' that reshapes everything.",
+    stat: { value: "May 21", label: "1991 — Rajiv Gandhi assassinated" },
+    refs: ["v4-ch03", "v4-ch13", "v4-ch17", "v4-ch19"],
+  },
+  {
+    id: "t1996",
+    year: "Apr 1996",
+    era: "Return",
+    title: "'We made history!'",
+    summary:
+      "After five years the book calls a 'blood frenzy' — its final pages recounting the rival regime's corruption cases mounting through the courts — the campaign of April 1996 (his own convoy stoned near Nellai on 19-4-96, as the closing chapter records) ends in a sweep. The chapter title declares it: 'we made a history of achievement!'",
+    image: "dawn.svg",
+    refs: ["v4-ch20", "v4-ch22"],
+  },
+
+  // ——— Volume 5 · 1996–1999 ———
+  {
+    id: "t1996b",
+    year: "May 13, 1996",
+    era: "Fourth Term",
+    title: "'Rest from rest'",
+    summary:
+      "The scale of the sweep is in the volume's own count: the DMK wins 167 of the 175 seats it contests, its front takes all 39 Lok Sabha seats, and the oath is taken on 13-5-1996 — with a thanksgiving meeting by the Gandhi statue on the Marina that same evening. Vairamuthu's greeting opens the fifth volume of a seventy-plus Chief Minister who has, as the first chapter's title says, given rest itself a rest.",
+    stat: { value: "167/175", label: "DMK seats won of contested, 1996" },
+    image: "dawn.svg",
+    refs: ["v5-ch01"],
+  },
+  {
+    id: "t1997",
+    year: "1996–98",
+    era: "Fourth Term",
+    title: "Krishna water reaches the border",
+    summary:
+      "The decades-old promise of Krishna water for a thirsty Chennai moves — the project launched jointly with Andhra's Chandrababu Naidu, and the volume's photographs showing the water flowing at Tamil Nadu's edge and Stalin taking office as Mayor of the city being rebuilt to receive it.",
+    stat: { value: "1996+", label: "Krishna water at Tamil Nadu's border" },
+    refs: ["v5-ch11"],
+  },
+  {
+    id: "t1998",
+    year: "1997–99",
+    era: "Fourth Term",
+    title: "A university, and a statue at land's end",
+    summary:
+      "The term's cultural signatures: a Dravidian University raised (the chapter opening with the housecleaning of the previous regime's self-naming excesses), and at Kanyakumari the Chief Minister inspecting the works of the 'sky-touching' Thiruvalluvar statue rising where the three seas meet.",
+    refs: ["v5-ch09", "v5-ch33"],
+  },
+  {
+    id: "t1999",
+    year: "1999",
+    era: "Fourth Term",
+    title: "One vote, and a sixth volume begins",
+    summary:
+      "The volume's late chapters carry Delhi's convulsions — the tea-party meeting of Jayalalithaa and Sonia Gandhi, the ordered resignations, and the Vajpayee government falling by a single vote in the chapter titled exactly that: 'By the difference of one vote.' It closes amid the September 1999 Lok Sabha polls with a promise in its final chapter title — 'the sixth volume begins!'",
+    stat: { value: "1", label: "vote by which the government fell, 1999" },
+    refs: ["v5-ch48", "v5-ch50"],
+  },
+
+  // ——— Volume 6 · 1999–2005 ———
+  {
+    id: "t2000",
+    year: "1999–2000",
+    era: "Final Innings",
+    title: "A new century's alignments",
+    summary:
+      "The final volume opens in grief — 'the sorrow of losing dearest friends' — and in flux: the September 1999 Lok Sabha polls announced in mid-July, and Rajinikanth's public statement weighing where his support goes with the DMK and TMC contesting apart. The coalition age has fully arrived.",
+    refs: ["v6-ch01"],
+  },
+  {
+    id: "t2001",
+    year: "Jun 30, 2001",
+    era: "Final Innings",
+    title: "The midnight arrest",
+    summary:
+      "Police without a warrant break the bedroom door in the small hours and haul the former Chief Minister from bed — 'kicked and dragged like a ball' down the stairs, as the chapter records — over a ₹4-crore flyover case. By morning of 30.6.2001 the NDA partners meet at Anna Arivalayam; a general strike is called for July 2. The chapter title gives the night its name: 'In pitch dark, a jungle-rule durbar.'",
+    stat: { value: "2.7.2001", label: "the general strike called in answer" },
+    image: "gate.svg",
+    refs: ["v6-ch15", "v6-ch16"],
+  },
+  {
+    id: "t2002",
+    year: "2001–02",
+    era: "Final Innings",
+    title: "Defending Anna's statues, and Tamil's claims",
+    summary:
+      "The Kannagi chapter opens with a history lesson aimed at the rival regime: the statue was one of ten Anna himself installed on the Marina for the 1968 World Tamil Conference — 'why this spite against Kannagi?' Alongside runs the old cause at Delhi: the case that Tamil too deserves the status of India's official language.",
+    stat: { value: "10", label: "statues Anna raised on the Marina, 1968" },
+    refs: ["v6-ch12", "v6-ch19"],
+  },
+  {
+    id: "t2003",
+    year: "2003",
+    era: "Final Innings",
+    title: "The never-forgettable Maran",
+    summary:
+      "The volume's most personal chapter is the memorial for Murasoli Maran — the nephew and comrade of the Murasoli years, treated at Apollo for a failing heart valve yet carrying on his Union minister's work; the narrative binds his ordeal to the shock of the midnight break-in at the family's door.",
+    refs: ["v6-ch26"],
+  },
+  {
+    id: "t2004",
+    year: "2004–05",
+    era: "Final Innings",
+    title: "The turning point",
+    summary:
+      "On the eve of the 2004 Lok Sabha polls the book marks its own 'turning point in the movement's history': the DMK, at odds with the BJP, turns toward the Congress side — and at a gathering of Congress leaders he opens his speech refusing every dividing salutation, greeting all present as 'siblings dearer than life itself.' The volume closes with Sethusamudram argued, and the movement's machinery — Stalin among its new deputy general secretaries — readied for what history would bring next.",
+    refs: ["v6-ch23", "v6-ch29"],
   },
 ];

@@ -57,7 +57,7 @@ export default function Hero() {
         className="mt-5 max-w-2xl text-lg text-ink/70 dark:text-night-text/70 sm:text-xl"
       >
         {siteMeta.subtitle} — the story of Volume&nbsp;1 of his autobiography,
-        told in fifteen minutes instead of 756 pages.
+        told in fifteen minutes instead of six volumes and 4,234 pages.
       </motion.p>
 
       <motion.div

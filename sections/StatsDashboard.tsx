@@ -80,7 +80,7 @@ export default function StatsDashboard() {
         <Reveal>
           <ChartCard
             title="From 15 to 138 seats"
-            note="DMK Assembly strength: 1957 debut vs the 1967 sweep (ch. 61, 128)."
+            note="DMK Assembly strength across the arc: 1957 debut, 1967 sweep, 1971 landslide, 1977 opposition, 1996 return (V1·61, V1·128, V2·36, V3·18, V5·01)."
           >
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={seatGrowth} margin={{ top: 8, right: 8, left: -18, bottom: 0 }}>

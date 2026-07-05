@@ -3,12 +3,14 @@
 import { BookMarked, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { siteMeta } from "@/data/meta";
-import { chapterIndex } from "@/data/references";
+import { chapterIndex, volumeMeta } from "@/data/references";
 import { Reveal, SectionHeading } from "@/components/shared";
 
 export default function References() {
   const [showAll, setShowAll] = useState(false);
-  const visible = showAll ? chapterIndex : chapterIndex.slice(0, 24);
+  const [vol, setVol] = useState<number | 0>(0);
+  const filtered = vol === 0 ? chapterIndex : chapterIndex.filter((c) => c.volume === vol);
+  const visible = showAll ? filtered : filtered.slice(0, 24);
 
   return (
     <section id="references" className="mx-auto max-w-content px-4 py-24 sm:px-6" aria-labelledby="references-label">
@@ -17,7 +19,7 @@ export default function References() {
         tamil="மேற்கோள்"
         eyebrow="References"
         title="Every claim traces to a chapter"
-        lede="Citations across this site use the pattern V1·NN — Volume 1, chapter number. The complete extracted chapter index of the source appears below, with page ranges from the edition used."
+        lede="Citations across this site use the pattern VN·NN — volume and chapter number. The complete extracted chapter index of each loaded volume appears below, with page ranges from the editions used."
       />
 
       <Reveal>
@@ -40,6 +42,32 @@ export default function References() {
       </Reveal>
 
       <Reveal>
+        <div className="mb-5 flex flex-wrap items-center gap-2">
+          <button
+            onClick={() => { setVol(0); setShowAll(false); }}
+            className={`focus-ring rounded-full border px-3 py-1 text-xs font-medium transition ${
+              vol === 0
+                ? "border-marina bg-marina text-paper"
+                : "border-ink/15 text-ink/70 hover:border-marina/50 dark:border-white/15 dark:text-night-text/70"
+            }`}
+          >
+            All volumes
+          </button>
+          {volumeMeta.map((v) => (
+            <button
+              key={v.volume}
+              onClick={() => { setVol(v.volume); setShowAll(false); }}
+              className={`focus-ring rounded-full border px-3 py-1 text-xs font-medium transition ${
+                vol === v.volume
+                  ? "border-marina bg-marina text-paper"
+                  : "border-ink/15 text-ink/70 hover:border-marina/50 dark:border-white/15 dark:text-night-text/70"
+              }`}
+              title={`${v.chapters} chapters · ${v.pages} pages`}
+            >
+              Vol {v.volume} · {v.period}
+            </button>
+          ))}
+        </div>
         <ol className="grid gap-x-8 gap-y-1.5 sm:grid-cols-2 lg:grid-cols-3" role="list">
           {visible.map((c) => (
             <li
@@ -47,7 +75,7 @@ export default function References() {
               className="flex items-baseline gap-2 border-b border-ink/5 py-1.5 text-sm dark:border-white/5"
             >
               <span className="shrink-0 font-mono text-[11px] font-semibold text-marina dark:text-marina-light">
-                {c.id.replace("v1-", "V1·")}
+                {c.id.replace(/^v(\d)-ch/, "V$1·")}
               </span>
               <span className="min-w-0 flex-1 truncate font-tamil" lang="ta" title={c.title}>
                 {c.title}
