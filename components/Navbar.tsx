@@ -74,18 +74,18 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
             <span className="font-tamil text-lg text-marina dark:text-marina-light" lang="ta">
               நெஞ்சுக்கு நீதி
             </span>
-            <span className="hidden text-xs font-medium uppercase tracking-widest text-ink/60 dark:text-night-text/60 md:inline">
+            <span className="hidden text-xs font-medium uppercase tracking-widest text-ink/60 dark:text-night-text/60 lg:inline">
               Kalaignar Digital Library
             </span>
           </a>
 
-          <div className="hidden items-center gap-1 lg:flex">
+          <div className="hidden items-center gap-0.5 xl:flex">
             {navSections.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
                 className={cn(
-                  "focus-ring rounded-full px-3 py-1.5 text-sm transition-colors",
+                  "focus-ring rounded-full px-2.5 py-1.5 text-[13px] transition-colors whitespace-nowrap",
                   active === s.id
                     ? "bg-marina text-paper"
                     : "text-ink/70 hover:text-marina dark:text-night-text/70 dark:hover:text-marina-light"
@@ -142,7 +142,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
             </button>
             <button
               onClick={() => setOpen(!open)}
-              className="focus-ring rounded-full p-2 text-ink/70 dark:text-night-text/70 lg:hidden"
+              className="focus-ring rounded-full p-2 text-ink/70 dark:text-night-text/70 xl:hidden"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
             >
@@ -152,7 +152,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
         </div>
 
         {open && (
-          <div className="border-t border-ink/10 px-4 pb-4 pt-2 dark:border-white/10 lg:hidden">
+          <div className="border-t border-ink/10 px-4 pb-4 pt-2 dark:border-white/10 xl:hidden">
             {navSections.map((s) => (
               <a
                 key={s.id}
