@@ -30,7 +30,7 @@ export default function Governance() {
           tamil="சட்டங்களும் திட்டங்களும்"
           eyebrow="The governance ledger"
           title="Laws, schemes — and the record he kept himself"
-          lede="Twenty-one entries the memoir itself records, from the Tamil Nadu renaming resolution to Sethusamudram — grouped by term of office, every one anchored to the chapter where the book keeps its own account."
+          lede="Thirty entries the memoir itself records, from the Tamil Nadu renaming resolution to Sethusamudram — grouped by term of office, every one anchored to the chapter where the book keeps its own account."
         />
 
         <div className="mb-10 flex flex-wrap justify-center gap-1.5" role="group" aria-label="Filter by kind">

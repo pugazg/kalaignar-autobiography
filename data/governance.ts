@@ -13,6 +13,8 @@ export type GovEntry = {
 export const govTerms = [
   { id: "t67", en: "1967–69 · In Anna's cabinet", ta: "1967–69 · அண்ணா அமைச்சரவையில்" },
   { id: "t69", en: "1969–76 · First & second terms", ta: "1969–76 · முதல் & இரண்டாம் ஆட்சி" },
+  { id: "sj", en: "Social justice · across the terms", ta: "சமூக நீதி · ஆட்சிகள் முழுவதும்" },
+  { id: "wr", en: "Women's rights · across the terms", ta: "பெண்கள் உரிமை · ஆட்சிகள் முழுவதும்" },
   { id: "t89", en: "1989–91 · Third term", ta: "1989–91 · மூன்றாம் ஆட்சி" },
   { id: "t96", en: "1996–2001 · Fourth term", ta: "1996–2001 · நான்காம் ஆட்சி" },
   { id: "t99", en: "1999–2005 · The advocacy years", ta: "1999–2005 · வாதாடிய ஆண்டுகள்" },
@@ -125,6 +127,91 @@ export const governance: GovEntry[] = [
       ta: "1967–76 ஆட்சிப் பதிவின் அவரது சொந்தச் சுருக்க அத்தியாயம் — முதலில் அண்ணாவின் மூன்று மைல்கற்கள்; பின் 'ஏழையின் சிரிப்பில் இறைவனைக் காண்போம்' என்ற முழக்கத்தின் கீழ் தன் அரசின் பணிகள்.",
     },
     refs: ["v2-ch55"],
+  },
+
+  // ——— Social justice · SC/ST/Adi Dravidar, across the terms ———
+  {
+    id: "adi-dravidar-judge", kind: "institution", term: "sj", year: "1969–76",
+    name: { en: "First Adi Dravidar High Court judge", ta: "முதல் ஆதிதிராவிட உயர்நீதிமன்ற நீதிபதி" },
+    note: {
+      en: "He records elevating Justice Varadarajan — the first person from the Adi Dravidar community appointed a judge of the Madras High Court in its hundred-year history.",
+      ta: "நீதிபதி வரதராசனை உயர்த்தியதைப் பதிவு செய்கிறார் — சென்னை உயர்நீதிமன்றத்தின் நூறாண்டு வரலாற்றில் ஆதிதிராவிட சமுதாயத்திலிருந்து நீதிபதியாக நியமிக்கப்பட்ட முதல் நபர்.",
+    },
+    refs: ["v3-ch04"],
+  },
+  {
+    id: "st-reservation", kind: "policy", term: "sj", year: "1969–76",
+    name: { en: "Separate reservation for Scheduled Tribes", ta: "பழங்குடியினருக்குத் தனி இட ஒதுக்கீடு" },
+    note: {
+      en: "The volume records a separate percentage of reservation carved out specifically for tribal communities — social-justice quotas extended to those the earlier categories had missed.",
+      ta: "பழங்குடியினருக்கென்றே தனிச் சதவிகித இட ஒதுக்கீடு வகுக்கப்பட்டதைத் தொகுதி பதிவு செய்கிறது — முந்தைய பிரிவுகள் தவறவிட்டவர்களுக்கும் சமூக நீதி ஒதுக்கீடு நீட்டிக்கப்பட்டது.",
+    },
+    refs: ["v3-ch73"],
+  },
+  {
+    id: "free-education-sc-st", kind: "scheme", term: "sj", year: "1969–76",
+    name: { en: "Free education for Adi Dravidar & tribal students", ta: "ஆதிதிராவிட, பழங்குடி மாணவர்க்கு இலவசக் கல்வி" },
+    note: {
+      en: "Free education up to the undergraduate degree for Adi Dravidar and tribal students, with first-graduate support for families sending their first child to college.",
+      ta: "ஆதிதிராவிட, பழங்குடி மாணவர்களுக்கு இளங்கலைப் பட்டப்படிப்பு வரை இலவசக் கல்வி; குடும்பத்தின் முதல் பட்டதாரிக்கான ஊக்கத்துடன்.",
+    },
+    refs: ["v3-ch73"],
+  },
+  {
+    id: "colony-electrification", kind: "scheme", term: "sj", year: "1989–91",
+    name: { en: "Electrifying Adi Dravidar colonies", ta: "ஆதிதிராவிடர் காலனிகளுக்கு மின்சாரம்" },
+    note: {
+      en: "Of 20,000 Adi Dravidar colonies, 18,000 were given electric-light facility during the term — infrastructure aimed squarely at the most neglected settlements.",
+      ta: "20,000 ஆதிதிராவிடர் காலனிகளில் 18,000-க்கு அந்த ஆட்சிக் காலத்தில் மின்விளக்கு வசதி — மிகவும் புறக்கணிக்கப்பட்ட குடியிருப்புகளை நோக்கிய உள்கட்டமைப்பு.",
+    },
+    refs: ["v4-ch04"],
+  },
+  {
+    id: "ambedkar-path", kind: "policy", term: "sj", year: "1996–99",
+    name: { en: "Honouring Ambedkar's path", ta: "அம்பேத்கர் கண்ட வழி" },
+    note: {
+      en: "A chapter titled 'Ambedkar's Path' — his engagement with Ambedkar's legacy, including the long campaign to name Marathwada University after him.",
+      ta: "'அம்பேத்கர் கண்ட வழி' என்ற அத்தியாயம் — மராட்டியப் பல்கலைக்கழகத்துக்கு அம்பேத்கர் பெயர் சூட்டும் நீண்ட போராட்டம் உட்பட, அம்பேத்கரின் மரபுடன் அவரது ஈடுபாடு.",
+    },
+    refs: ["v5-ch02"],
+  },
+
+  // ——— Women's rights · across the terms ———
+  {
+    id: "women-property", kind: "law", term: "wr", year: "1989",
+    name: { en: "Equal property rights for women", ta: "பெண்களுக்குச் சம சொத்துரிமை" },
+    note: {
+      en: "The law giving women equal rights in property, passed in the Assembly sixty years after Periyar's founding resolution — an act he names among the proudest of his five terms in office.",
+      ta: "பெரியாரின் தொடக்கத் தீர்மானத்திற்கு அறுபதாண்டுகளுக்குப் பின், பேரவையில் நிறைவேற்றப்பட்ட பெண்களுக்குச் சம சொத்துரிமைச் சட்டம் — தன் ஐந்து ஆட்சிக் காலங்களில் மிகவும் பெருமைப்படும் செயல்களில் ஒன்று என்கிறார்.",
+    },
+    refs: ["v5-ch22", "v3-ch73"],
+  },
+  {
+    id: "nagammai-degree", kind: "scheme", term: "wr", year: "1989–91",
+    name: { en: "E.V.R. Nagammai free-degree scheme for women", ta: "ஈ.வெ.ரா. நாகம்மையார் மகளிர் இலவசப் பட்டப்படிப்புத் திட்டம்" },
+    note: {
+      en: "Named for Periyar's wife: free undergraduate education, up to the degree, for poor and middle-class women of every caste.",
+      ta: "பெரியாரின் துணைவியார் பெயரில்: அனைத்து வகுப்பையும் சேர்ந்த ஏழை, நடுத்தரப் பெண்களுக்கு இளங்கலைப் பட்டப்படிப்பு வரை இலவசக் கல்வி.",
+    },
+    refs: ["v4-ch04"],
+  },
+  {
+    id: "women-police", kind: "institution", term: "wr", year: "1969–76",
+    name: { en: "Women's police force founded", ta: "பெண் போலீஸ் படை தொடக்கம்" },
+    note: {
+      en: "Among the achievements he lists for the 1967–76 rule in his own ledger chapter: the founding of the women's police force.",
+      ta: "1967–76 ஆட்சிக்கான தன் ஏட்டு அத்தியாயத்தில் அவர் பட்டியலிடும் சாதனைகளில்: பெண் போலீஸ் படையைத் தொடங்கியது.",
+    },
+    refs: ["v2-ch55"],
+  },
+  {
+    id: "women-welfare", kind: "scheme", term: "wr", year: "1989–91",
+    name: { en: "Special welfare schemes for women", ta: "மகளிர் நல சிறப்புத் திட்டங்கள்" },
+    note: {
+      en: "Women's special welfare schemes counted among the third term's fulfilled election promises.",
+      ta: "மூன்றாம் ஆட்சியின் நிறைவேற்றப்பட்ட தேர்தல் வாக்குறுதிகளில் இடம்பெற்ற மகளிர் நல சிறப்புத் திட்டங்கள்.",
+    },
+    refs: ["v4-ch19"],
   },
 
   // ——— 1989–91 · Third term ———

@@ -80,7 +80,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
             </span>
           </a>
 
-          <div className={cn("items-center gap-0.5", lang === "ta" ? "hidden" : "hidden xl:flex")}>
+          <div className="hidden">
             {navSections.map((s) => (
               <a
                 key={s.id}
@@ -143,7 +143,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
             </button>
             <button
               onClick={() => setOpen(!open)}
-              className={cn("focus-ring rounded-full p-2 text-ink/70 dark:text-night-text/70", lang === "ta" ? "" : "xl:hidden")}
+              className="focus-ring rounded-full p-2 text-ink/70 dark:text-night-text/70"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
             >
@@ -153,8 +153,8 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
         </div>
 
         {open && (
-          <div className={cn("border-t border-ink/10 px-4 pb-4 pt-2 dark:border-white/10", lang === "ta" ? "" : "xl:hidden")}>
-            <div className={cn(lang === "ta" ? "grid grid-cols-2 gap-1 sm:grid-cols-3 md:grid-cols-4" : "")}>
+          <div className="border-t border-ink/10 px-4 pb-4 pt-2 dark:border-white/10">
+            <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 md:grid-cols-4">
             {navSections.map((s) => (
               <a
                 key={s.id}
