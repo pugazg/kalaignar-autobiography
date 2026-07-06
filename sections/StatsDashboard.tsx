@@ -19,7 +19,7 @@ import {
   saidapetVotes,
   seatGrowth,
   strikeRates,
-} from "@/data/stats";
+} from "@/lib/archive";
 import { AnimatedCounter, Card, Icon, Reveal, SectionHeading } from "@/components/shared";
 
 const tooltipStyle = {

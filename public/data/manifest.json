@@ -1,0 +1,54 @@
+{
+  "buildId": "local",
+  "generatedAt": "2026-07-06T11:43:31.493479Z",
+  "volumes": [
+    {
+      "n": 1,
+      "period": "1924–1969",
+      "chapters": 140,
+      "pages": 759,
+      "serialisedIn": "Dinamani Kadir"
+    },
+    {
+      "n": 2,
+      "period": "1969–1976",
+      "chapters": 77,
+      "pages": 608,
+      "serialisedIn": "Kungumam"
+    },
+    {
+      "n": 3,
+      "period": "1976–1988",
+      "chapters": 73,
+      "pages": 624,
+      "serialisedIn": null
+    },
+    {
+      "n": 4,
+      "period": "1988–1996",
+      "chapters": 22,
+      "pages": 650,
+      "serialisedIn": null
+    },
+    {
+      "n": 5,
+      "period": "1996–1999",
+      "chapters": 50,
+      "pages": 1039,
+      "serialisedIn": null
+    },
+    {
+      "n": 6,
+      "period": "1999–2005",
+      "chapters": 29,
+      "pages": 554,
+      "serialisedIn": null
+    }
+  ],
+  "totals": {
+    "chapters": 391,
+    "pages": 4234,
+    "volumes": 6,
+    "yearsCovered": 81
+  }
+}
