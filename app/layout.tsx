@@ -43,21 +43,6 @@ export const metadata: Metadata = {
   title: "Kalaignar Digital Library — Nenjukku Neethi, the Complete Memoir",
   description:
     "An interactive digital retelling of Nenjukku Neethi, the complete six-volume autobiography of Kalaignar M. Karunanidhi: 1924–2005, from a delta village through the whole arc of a public life.",
-  keywords: [
-    "Karunanidhi",
-    "Kalaignar",
-    "Nenjukku Neethi",
-    "Tamil Nadu",
-    "Dravidian movement",
-    "DMK",
-    "autobiography",
-  ],
-  openGraph: {
-    title: "Kalaignar M. Karunanidhi's Legacy",
-    description:
-      "Understand the complete Nenjukku Neethi in fifteen minutes: timeline, themes, statistics and references.",
-    type: "website",
-  },
 };
 
 const jsonLd = {
@@ -90,12 +75,6 @@ export default function RootLayout({
           Skip to content
         </a>
         <Providers>
-        <a
-          href="#summary"
-          className="focus-ring sr-only z-[100] rounded bg-marina px-4 py-2 text-paper focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
-        >
-          Skip to content
-        </a>
           {children}
         </Providers>
       </body>
