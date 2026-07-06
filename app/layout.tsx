@@ -17,6 +17,29 @@ const tamil = Noto_Serif_Tamil({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kalaignar-autobiography.vercel.app"),
+  keywords: [
+    "Kalaignar", "Karunanidhi", "Nenjukku Neethi", "நெஞ்சுக்கு நீதி",
+    "Karunanidhi autobiography", "Kalaignar autobiography", "DMK history",
+    "Dravidian movement", "Tamil Nadu history", "கலைஞர்", "கருணாநிதி",
+  ],
+  openGraph: {
+    title: "Kalaignar Digital Library — Nenjukku Neethi, the Complete Memoir",
+    description:
+      "The complete six-volume autobiography of Kalaignar M. Karunanidhi (1924–2005) as an interactive digital archive: read all 391 chapters in Tamil, explore the timeline, people, places and governance record.",
+    url: "https://kalaignar-autobiography.vercel.app",
+    siteName: "Kalaignar Digital Library",
+    locale: "ta_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Kalaignar Digital Library — Nenjukku Neethi",
+    description:
+      "The complete six-volume memoir of Kalaignar M. Karunanidhi, 1924–2005, as an interactive archive.",
+  },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } }
+    : {}),
   title: "Kalaignar Digital Library — Nenjukku Neethi, the Complete Memoir",
   description:
     "An interactive digital retelling of Nenjukku Neethi, the complete six-volume autobiography of Kalaignar M. Karunanidhi: 1924–2005, from a delta village through the whole arc of a public life.",
