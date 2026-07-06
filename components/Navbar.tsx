@@ -14,6 +14,7 @@ export const navSections = [
   { id: "timeline", label: "Timeline" },
   { id: "journey", label: "Journey" },
   { id: "themes", label: "Themes" },
+  { id: "governance", label: "Governance" },
   { id: "people", label: "People" },
   { id: "quotes", label: "Quotes" },
   { id: "dashboard", label: "In Numbers" },

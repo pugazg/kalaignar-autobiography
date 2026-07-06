@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { pillars } from "@/data/meta";
 import { people } from "@/data/people";
 import { places } from "@/data/places";
+import { governance } from "@/data/governance";
 import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
@@ -14,7 +15,7 @@ import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
 
 type Entry = {
-  category: "Timeline" | "Theme" | "Person" | "Place" | "Pillar" | "Quote" | "Chapter";
+  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "Pillar" | "Quote" | "Chapter";
   title: string;
   text: string;
   anchor: string;
@@ -22,7 +23,7 @@ type Entry = {
   meta?: string; // volume/pages line shown with the result
 };
 
-const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Quote", "Chapter"] as const;
+const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "Quote", "Chapter"] as const;
 
 function buildIndex(): Entry[] {
   const entries: Entry[] = [];
@@ -50,6 +51,13 @@ function buildIndex(): Entry[] {
       title: `${pl.name} · ${pl.tamil}`,
       text: pl.note,
       anchor: "journey",
+    });
+  for (const g of governance)
+    entries.push({
+      category: "Governance",
+      title: `${g.name.en} · ${g.name.ta}`,
+      text: `${g.year} ${g.note.en}`,
+      anchor: "governance",
     });
   for (const q of quotes)
     entries.push({ category: "Quote", title: q.english, text: `${q.tamil} ${q.context}`, anchor: "quotes" });
