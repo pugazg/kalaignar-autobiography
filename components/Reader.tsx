@@ -17,6 +17,8 @@ import type { ChapterRef } from "@/data/references";
 import { volumeMeta } from "@/data/references";
 import { chapterCitation, useResearch } from "@/lib/ResearchMode";
 import { cn } from "@/lib/utils";
+import { useLang } from "@/lib/i18n";
+import { chromeTa } from "@/data/i18n.ta";
 
 type ChapterText = {
   id: string;
@@ -44,6 +46,7 @@ export default function Reader({
   const [marked, setMarked] = useState(false);
   const [copied, setCopied] = useState(false);
   const { research, setResearch } = useResearch();
+  const { lang } = useLang();
   const restored = useRef(false);
   const vol = volumeMeta.find((v) => v.volume === chapter.volume);
 
@@ -190,7 +193,7 @@ export default function Reader({
               <code>scripts/extract_chapter_text.py</code> with the volume source to generate it.
             </p>
           )}
-          {!data && !error && <p className="font-body text-sm text-ink/50 dark:text-night-text/50">Opening the volume…</p>}
+          {!data && !error && <p className="font-body text-sm text-ink/50 dark:text-night-text/50">{lang === "ta" ? chromeTa.openingVolume : "Opening the volume…"}</p>}
           {data?.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
         </article>
 
@@ -199,7 +202,7 @@ export default function Reader({
             <Link href={`/read/${prev.id}`} className="focus-ring group flex max-w-[48%] items-center gap-2 rounded-xl border border-ink/10 p-3 text-left hover:border-marina/50 dark:border-white/10">
               <ArrowLeft className="h-4 w-4 shrink-0 text-ink/40 group-hover:text-marina dark:text-night-text/40" aria-hidden />
               <span className="min-w-0">
-                <span className="block text-[10px] uppercase tracking-wider text-ink/40 dark:text-night-text/40">Previous</span>
+                <span className="block text-[10px] uppercase tracking-wider text-ink/40 dark:text-night-text/40">{lang === "ta" ? chromeTa.previous : "Previous"}</span>
                 <span className="block truncate font-tamil text-sm" lang="ta">{prev.title}</span>
               </span>
             </Link>
@@ -207,7 +210,7 @@ export default function Reader({
           {next ? (
             <Link href={`/read/${next.id}`} className="focus-ring group flex max-w-[48%] items-center gap-2 rounded-xl border border-ink/10 p-3 text-right hover:border-marina/50 dark:border-white/10">
               <span className="min-w-0">
-                <span className="block text-[10px] uppercase tracking-wider text-ink/40 dark:text-night-text/40">Next</span>
+                <span className="block text-[10px] uppercase tracking-wider text-ink/40 dark:text-night-text/40">{lang === "ta" ? chromeTa.next : "Next"}</span>
                 <span className="block truncate font-tamil text-sm" lang="ta">{next.title}</span>
               </span>
               <ArrowRight className="h-4 w-4 shrink-0 text-ink/40 group-hover:text-marina dark:text-night-text/40" aria-hidden />

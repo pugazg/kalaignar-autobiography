@@ -6,11 +6,14 @@ import { siteMeta } from "@/data/meta";
 import { chapterIndex, volumeMeta } from "@/data/references";
 import { Reveal, SectionHeading } from "@/components/shared";
 import { useResearch } from "@/lib/ResearchMode";
+import { useLang } from "@/lib/i18n";
+import { chromeTa } from "@/data/i18n.ta";
 
 export default function References() {
   const [showAll, setShowAll] = useState(false);
   const [vol, setVol] = useState<number | 0>(0);
   const { research, setResearch } = useResearch();
+  const { lang } = useLang();
   const filtered = vol === 0 ? chapterIndex : chapterIndex.filter((c) => c.volume === vol);
   const visible = showAll ? filtered : filtered.slice(0, 24);
 
@@ -53,7 +56,7 @@ export default function References() {
                 : "border-ink/15 text-ink/70 hover:border-marina/50 dark:border-white/15 dark:text-night-text/70"
             }`}
           >
-            All volumes
+            {lang === "ta" ? chromeTa.allVolumes : "All volumes"}
           </button>
           {volumeMeta.map((v) => (
             <button
@@ -66,7 +69,7 @@ export default function References() {
               }`}
               title={`${v.chapters} chapters · ${v.pages} pages`}
             >
-              Vol {v.volume} · {v.period}
+              {lang === "ta" ? chromeTa.vol : "Vol"} {v.volume} · {v.period}
             </button>
           ))}
           <button
@@ -78,7 +81,7 @@ export default function References() {
             }`}
             aria-pressed={research}
           >
-            Research mode {research ? "on" : "off"}
+            {lang === "ta" ? (research ? chromeTa.researchOn : chromeTa.researchOff) : `Research mode ${research ? "on" : "off"}`}
           </button>
         </div>
         {research && (

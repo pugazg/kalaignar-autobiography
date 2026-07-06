@@ -3,9 +3,12 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { siteMeta } from "@/data/meta";
+import { useLang, tr } from "@/lib/i18n";
+import { chromeTa } from "@/data/i18n.ta";
 
 export default function Hero() {
   const reduce = useReducedMotion();
+  const { lang } = useLang();
   return (
     <section
       id="top"
@@ -64,7 +67,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.15 }}
         className="mt-4 max-w-4xl font-display text-4xl font-medium leading-tight tracking-tight sm:text-6xl md:text-7xl"
       >
-        Kalaignar M. Karunanidhi&rsquo;s Legacy
+        {tr(lang, "Kalaignar M. Karunanidhi’s Legacy", chromeTa.heroTitle)}
       </motion.h1>
 
       <motion.p
@@ -73,8 +76,12 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="mt-5 max-w-2xl text-lg text-ink/70 dark:text-night-text/70 sm:text-xl"
       >
-        {siteMeta.subtitle} — the story of his six-volume autobiography,
-        told in fifteen minutes instead of six volumes and 4,234 pages.
+        {tr(lang, siteMeta.subtitle, chromeTa.heroSubtitle)} —{" "}
+        {tr(
+          lang,
+          "the story of his six-volume autobiography, told in fifteen minutes instead of six volumes and 4,234 pages.",
+          chromeTa.heroLine,
+        )}
       </motion.p>
 
       <motion.div
@@ -87,13 +94,13 @@ export default function Hero() {
           href="#summary"
           className="focus-ring rounded-full bg-marina px-7 py-3 text-sm font-semibold text-paper shadow-lg shadow-marina/25 transition-transform hover:scale-[1.03]"
         >
-          Explore the Legacy
+          {tr(lang, "Explore the Legacy", chromeTa.exploreCta)}
         </a>
         <a
           href="/read"
           className="focus-ring rounded-full border border-marina/40 px-7 py-3 text-sm font-semibold text-marina transition-colors hover:bg-marina hover:text-paper dark:text-marina-light"
         >
-          Enter the Reading Room
+          {tr(lang, "Enter the Reading Room", chromeTa.readCta)}
         </a>
         <a
           href="#timeline"

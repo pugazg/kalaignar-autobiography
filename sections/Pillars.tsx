@@ -4,10 +4,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { pillars } from "@/data/meta";
+import { useLang } from "@/lib/i18n";
+import { pillarsTa } from "@/data/i18n.ta";
 import { Icon, RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
 
 export default function Pillars() {
+  const { lang } = useLang();
+  const items = pillars.map((p, i) =>
+    lang === "ta" && pillarsTa[i] ? { ...p, ...pillarsTa[i] } : p,
+  );
   const [openId, setOpenId] = useState<string | null>(null);
 
   return (
@@ -25,7 +31,7 @@ export default function Pillars() {
           lede="Eight threads run through the memoir. Select a pillar to see how the book develops it — and which chapters carry it."
         />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
-          {pillars.map((p, i) => {
+          {items.map((p, i) => {
             const open = openId === p.id;
             return (
               <Reveal key={p.id} delay={i * 0.04} className={cn(open && "sm:col-span-2")}>

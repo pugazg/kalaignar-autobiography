@@ -2,9 +2,12 @@
 
 import { Quote as QuoteIcon } from "lucide-react";
 import { quotes } from "@/data/quotes";
+import { useLang } from "@/lib/i18n";
+import { quotesCtxTa } from "@/data/i18n.ta";
 import { Reveal, SectionHeading } from "@/components/shared";
 
 export default function Quotes() {
+  const { lang } = useLang();
   return (
     <section
       id="quotes"
@@ -38,7 +41,7 @@ export default function Quotes() {
                 </p>
               </blockquote>
               <figcaption className="mt-4 flex items-center justify-between gap-3 border-t border-ink/10 pt-3 dark:border-white/10">
-                <span className="text-xs text-ink/60 dark:text-night-text/60">{q.context}</span>
+                <span className="text-xs text-ink/60 dark:text-night-text/60">{lang === "ta" ? quotesCtxTa[i] ?? q.context : q.context}</span>
                 <a
                   href="#references"
                   className="focus-ring shrink-0 rounded-full border border-marina/30 px-2 py-0.5 text-[11px] font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light"

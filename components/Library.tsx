@@ -5,9 +5,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { chapterIndex, volumeMeta } from "@/data/references";
 import { cn } from "@/lib/utils";
+import { useLang } from "@/lib/i18n";
+import { chromeTa } from "@/data/i18n.ta";
 
 export default function Library() {
   const [open, setOpen] = useState<number>(1);
+  const { lang } = useLang();
   const [last, setLast] = useState<string | null>(null);
   const [marks, setMarks] = useState<string[]>([]);
 
@@ -31,7 +34,7 @@ export default function Library() {
           <p className="mt-5 font-tamil text-2xl text-marina/80 dark:text-marina-light/80" lang="ta">
             நெஞ்சுக்கு நீதி
           </p>
-          <h1 className="mt-2 font-display text-4xl font-medium tracking-tight">The Reading Room</h1>
+          <h1 className="mt-2 font-display text-4xl font-medium tracking-tight">{lang === "ta" ? chromeTa.readingRoom : "The Reading Room"}</h1>
           <p className="mt-3 max-w-xl text-sm text-ink/65 dark:text-night-text/65">
             The complete memoir in its original Tamil — six volumes, 391 chapters, 4,234 pages of
             uncorrected OCR text, each chapter a citable unit of the archive.
@@ -44,7 +47,7 @@ export default function Library() {
           <section aria-label="Your shelf" className="mb-8 rounded-2xl border border-brass/30 bg-brass/[0.06] p-4">
             {lastCh && (
               <p className="text-sm">
-                <span className="text-ink/55 dark:text-night-text/55">Continue reading · </span>
+                <span className="text-ink/55 dark:text-night-text/55">{lang === "ta" ? chromeTa.continueReading : "Continue reading"} · </span>
                 <Link href={`/read/${lastCh.id}`} className="focus-ring font-tamil text-marina underline-offset-2 hover:underline dark:text-marina-light" lang="ta">
                   {lastCh.title}
                 </Link>
@@ -54,7 +57,7 @@ export default function Library() {
             {marks.length > 0 && (
               <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
                 <span className="inline-flex items-center gap-1 text-ink/55 dark:text-night-text/55">
-                  <Bookmark className="h-3.5 w-3.5 text-brass" aria-hidden /> Bookmarks
+                  <Bookmark className="h-3.5 w-3.5 text-brass" aria-hidden /> {lang === "ta" ? chromeTa.bookmarks : "Bookmarks"}
                 </span>
                 {marks.map((id) => {
                   const c = byId.get(id);
@@ -82,10 +85,10 @@ export default function Library() {
                 >
                   <div>
                     <p className="font-display text-lg font-medium">
-                      Volume {v.volume} <span className="text-ink/45 dark:text-night-text/45">· {v.period}</span>
+                      {lang === "ta" ? chromeTa.vol : "Volume"} {v.volume} <span className="text-ink/45 dark:text-night-text/45">· {v.period}</span>
                     </p>
                     <p className="text-xs text-ink/55 dark:text-night-text/55">
-                      {v.chapters} chapters · {v.pages} pages
+                      {v.chapters} {lang === "ta" ? chromeTa.chapters : "chapters"} · {v.pages} {lang === "ta" ? chromeTa.pages : "pages"}
                       {"serialisedIn" in v && v.serialisedIn ? ` · first serialised in ${v.serialisedIn}` : ""}
                     </p>
                   </div>

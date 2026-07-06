@@ -2,6 +2,8 @@
 
 import { BookOpen, GraduationCap, Menu, Moon, Search, Sun, X } from "lucide-react";
 import { useResearch } from "@/lib/ResearchMode";
+import { useLang } from "@/lib/i18n";
+import { chromeTa, navTa } from "@/data/i18n.ta";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useScrollSpy } from "@/lib/useScrollSpy";
@@ -25,6 +27,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
   const [open, setOpen] = useState(false);
   const active = useScrollSpy(navSections.map((s) => s.id));
   const { research, setResearch } = useResearch();
+  const { lang, setLang } = useLang();
 
   useEffect(() => {
     const onScroll = () => {
@@ -88,7 +91,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
                 )}
                 aria-current={active === s.id ? "true" : undefined}
               >
-                {s.label}
+                {lang === "ta" ? navTa[s.id] ?? s.label : s.label}
               </a>
             ))}
           </div>
@@ -98,8 +101,16 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
               href="/read"
               className="focus-ring hidden items-center gap-1.5 rounded-full border border-marina/30 px-3 py-1.5 text-sm font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light sm:inline-flex"
             >
-              <BookOpen className="h-4 w-4" aria-hidden /> Read
+              <BookOpen className="h-4 w-4" aria-hidden /> {lang === "ta" ? chromeTa.read : "Read"}
             </a>
+            <button
+              onClick={() => setLang(lang === "en" ? "ta" : "en")}
+              className="focus-ring rounded-full border border-ink/15 px-2.5 py-1 text-xs font-semibold text-ink/70 hover:border-marina/50 hover:text-marina dark:border-white/15 dark:text-night-text/70"
+              aria-label={lang === "en" ? "தமிழில் காட்டு" : "Switch to English"}
+              lang={lang === "en" ? "ta" : "en"}
+            >
+              {lang === "en" ? "தமிழ்" : "EN"}
+            </button>
             <button
               onClick={() => setResearch(!research)}
               className={cn(
@@ -153,7 +164,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
                     : "text-ink/80 dark:text-night-text/80"
                 )}
               >
-                {s.label}
+                {lang === "ta" ? navTa[s.id] ?? s.label : s.label}
               </a>
             ))}
           </div>

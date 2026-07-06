@@ -8,6 +8,8 @@ import { Card, RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
 import { chapterById } from "@/data/references";
 import { useResearch } from "@/lib/ResearchMode";
+import { useLang } from "@/lib/i18n";
+import { erasTa, tagsTa, timelineTa, chromeTa } from "@/data/i18n.ta";
 
 // Era filters derived from the milestone data itself (order-preserving).
 const ERA_FILTERS = ["All", ...Array.from(new Set(timeline.map((m) => m.era)))];
@@ -85,9 +87,21 @@ function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
 export default function Timeline() {
   const [era, setEra] = useState<string>("All");
   const [tag, setTag] = useState<string>("All topics");
-  const items = timeline.filter(
-    (m) => (era === "All" || m.era === era) && (tag === "All topics" || (m.tags ?? []).includes(tag)),
-  );
+  const { lang } = useLang();
+  const items = timeline
+    .filter(
+      (m) => (era === "All" || m.era === era) && (tag === "All topics" || (m.tags ?? []).includes(tag)),
+    )
+    .map((m) => {
+      const ta = lang === "ta" ? timelineTa[m.id] : undefined;
+      if (!ta) return m;
+      return {
+        ...m,
+        title: ta.title,
+        summary: ta.summary,
+        stat: m.stat && ta.statLabel ? { ...m.stat, label: ta.statLabel } : m.stat,
+      };
+    });
 
   return (
     <section id="timeline" className="mx-auto max-w-content px-4 py-24 sm:px-6" aria-labelledby="timeline-label">
@@ -130,14 +144,14 @@ export default function Timeline() {
             )}
             aria-pressed={tag === f}
           >
-            {f}
+            {lang === "ta" ? tagsTa[f] ?? f : f}
           </button>
         ))}
       </div>
 
       {items.length === 0 && (
         <p className="mb-8 text-center text-sm text-ink/55 dark:text-night-text/55">
-          No milestone carries both filters — try widening one.
+          {lang === "ta" ? chromeTa.noMilestone : "No milestone carries both filters — try widening one."}
         </p>
       )}
 

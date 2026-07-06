@@ -10,6 +10,8 @@ import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
 import { timeline } from "@/data/timeline";
 import { cn } from "@/lib/utils";
+import { useLang } from "@/lib/i18n";
+import { chromeTa } from "@/data/i18n.ta";
 
 type Entry = {
   category: "Timeline" | "Theme" | "Person" | "Place" | "Pillar" | "Quote" | "Chapter";
@@ -74,6 +76,7 @@ export default function SearchDialog({
   const [category, setCategory] = useState<(typeof CATEGORIES)[number]>("All");
   const inputRef = useRef<HTMLInputElement>(null);
   const index = useMemo(buildIndex, []);
+  const { lang } = useLang();
 
   useEffect(() => {
     if (open) {
@@ -132,7 +135,7 @@ export default function SearchDialog({
             ref={inputRef}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search people, places, chapters, quotes… Tamil works too; chapters open in the Reader"
+            placeholder={lang === "ta" ? chromeTa.searchPlaceholder : "Search people, places, chapters, quotes… Tamil works too; chapters open in the Reader"}
             className="w-full bg-transparent text-sm outline-none placeholder:text-ink/40 dark:placeholder:text-night-text/40"
             aria-label="Search query"
           />
@@ -154,7 +157,7 @@ export default function SearchDialog({
               )}
               aria-pressed={category === c}
             >
-              {c}
+              {lang === "ta" ? chromeTa.categories[c] ?? c : c}
             </button>
           ))}
         </div>
@@ -162,7 +165,7 @@ export default function SearchDialog({
         <ul className="max-h-[50vh] overflow-y-auto p-2">
           {results.length === 0 && (
             <li className="px-4 py-8 text-center text-sm text-ink/60 dark:text-night-text/60">
-              Nothing matches yet — try a year (“1953”), a place (“Kallakudi”), or a Tamil chapter title.
+              {lang === "ta" ? chromeTa.searchEmpty : "Nothing matches yet — try a year (“1953”), a place (“Kallakudi”), or a Tamil chapter title."}
             </li>
           )}
           {results.map((r, i) => (

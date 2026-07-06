@@ -5,6 +5,8 @@ import { useState } from "react";
 import { places } from "@/data/places";
 import { RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
+import { useLang } from "@/lib/i18n";
+import { placesTa } from "@/data/i18n.ta";
 
 /**
  * A schematic (not cartographic) outline of Tamil Nadu, in the site's own
@@ -15,6 +17,7 @@ const TN_OUTLINE =
 
 export default function Journey() {
   const [sel, setSel] = useState(places[0].id);
+  const { lang } = useLang();
   const active = places.find((p) => p.id === sel)!;
 
   return (
@@ -73,7 +76,7 @@ export default function Journey() {
               </p>
               <p className="mt-2 font-tamil text-2xl text-marina dark:text-marina-light" lang="ta">{active.tamil}</p>
               <h3 className="font-display text-2xl font-medium">{active.name}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink/75 dark:text-night-text/75">{active.note}</p>
+              <p className="mt-3 text-sm leading-relaxed text-ink/75 dark:text-night-text/75">{lang === "ta" ? placesTa[active.id] ?? active.note : active.note}</p>
               <div className="mt-4"><RefChips refs={active.refs} /></div>
 
               <ul className="mt-6 grid grid-cols-2 gap-1 border-t border-ink/10 pt-4 dark:border-white/10" aria-label="All places">

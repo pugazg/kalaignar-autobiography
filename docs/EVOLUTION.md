@@ -50,3 +50,13 @@ extraction strategy per volume, per-chapter and per-volume JSON downloads, and o
   provenance can be acquired; slots and captions are ready for it.
 - People/Places entries are limited to figures and sites whose chapter references were verified
   against the source — the archive grows only as fast as verification does.
+
+### Bilingual layer (Tamil ⇄ English)
+A site-wide language toggle (navbar, persisted) drives a translation dictionary
+(`data/i18n.ta.ts`) with English as source-of-truth and automatic fallback. Fully
+translated in this pass: hero, navigation, every section heading & lede, all 42
+timeline milestones (titles, summaries, stat labels), era & topic filters, summary
+cards, pillar cards, the People and Journey layers, quote contexts, search chrome,
+and Reader/Library chrome. Scheduled for the next pass: theme narratives, pillar
+details, gallery captions, and the research-provenance prose. `<html lang>` follows
+the selection for screen readers.

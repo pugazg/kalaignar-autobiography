@@ -4,6 +4,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import * as Lucide from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { useLang } from "@/lib/i18n";
+import { headingsTa } from "@/data/i18n.ta";
 
 /** Resolve a lucide icon from its string name (used by data files). */
 export function Icon({
@@ -59,10 +61,15 @@ export function SectionHeading({
   title: string;
   lede?: string;
 }) {
+  const { lang } = useLang();
+  const taH = lang === "ta" ? headingsTa[id] : undefined;
+  const dEyebrow = taH?.eyebrow ?? eyebrow;
+  const dTitle = taH?.title ?? title;
+  const dLede = taH?.lede ?? lede;
   return (
     <Reveal className="mx-auto mb-12 max-w-3xl text-center">
       <p className="eyebrow" id={id ? `${id}-label` : undefined}>
-        {eyebrow}
+        {dEyebrow}
       </p>
       <div className="mt-3 flex items-baseline justify-center gap-4">
         <span
@@ -74,11 +81,11 @@ export function SectionHeading({
         </span>
       </div>
       <h2 className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
-        {title}
+        {dTitle}
       </h2>
       {lede ? (
         <p className="mt-4 text-base leading-relaxed text-ink/70 dark:text-night-text/70">
-          {lede}
+          {dLede}
         </p>
       ) : null}
     </Reveal>

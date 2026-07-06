@@ -6,9 +6,12 @@ import { useState } from "react";
 import { people } from "@/data/people";
 import { RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
+import { useLang } from "@/lib/i18n";
+import { peopleTa } from "@/data/i18n.ta";
 
 export default function People() {
   const [open, setOpen] = useState<string | null>(null);
+  const { lang } = useLang();
 
   return (
     <section id="people" className="mx-auto max-w-content px-4 py-24 sm:px-6" aria-labelledby="people-label">
@@ -33,7 +36,7 @@ export default function People() {
                   <div>
                     <p className="font-tamil text-lg text-marina dark:text-marina-light" lang="ta">{p.tamil}</p>
                     <h3 className="font-display text-xl font-medium">{p.name}</h3>
-                    <p className="mt-0.5 text-xs uppercase tracking-wider text-brass">{p.role}</p>
+                    <p className="mt-0.5 text-xs uppercase tracking-wider text-brass">{lang === "ta" ? peopleTa[p.id]?.role ?? p.role : p.role}</p>
                   </div>
                   <ChevronDown className={cn("mt-1 h-4 w-4 shrink-0 text-ink/40 transition-transform dark:text-night-text/40", isOpen && "rotate-180")} aria-hidden />
                 </button>
@@ -47,9 +50,9 @@ export default function People() {
                       className="overflow-hidden"
                     >
                       <div className="border-t border-ink/10 px-5 pb-5 pt-4 dark:border-white/10">
-                        <p className="text-sm leading-relaxed text-ink/75 dark:text-night-text/75">{p.relationship}</p>
+                        <p className="text-sm leading-relaxed text-ink/75 dark:text-night-text/75">{lang === "ta" ? peopleTa[p.id]?.relationship ?? p.relationship : p.relationship}</p>
                         <p className="mt-3 text-xs text-ink/50 dark:text-night-text/50">
-                          First appears · {p.firstAppears}
+                          {lang === "ta" ? "முதல் வருகை" : "First appears"} · {lang === "ta" ? peopleTa[p.id]?.firstAppears ?? p.firstAppears : p.firstAppears}
                         </p>
                         <div className="mt-3">
                           <RefChips refs={p.refs} />
