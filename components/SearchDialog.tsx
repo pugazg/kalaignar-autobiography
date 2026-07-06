@@ -6,6 +6,7 @@ import { pillars } from "@/data/meta";
 import { people } from "@/data/people";
 import { places } from "@/data/places";
 import { governance } from "@/data/governance";
+import { worldEvents } from "@/data/world";
 import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
@@ -15,7 +16,7 @@ import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
 
 type Entry = {
-  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "Pillar" | "Quote" | "Chapter";
+  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "World" | "Pillar" | "Quote" | "Chapter";
   title: string;
   text: string;
   anchor: string;
@@ -23,7 +24,7 @@ type Entry = {
   meta?: string; // volume/pages line shown with the result
 };
 
-const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "Quote", "Chapter"] as const;
+const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "World", "Quote", "Chapter"] as const;
 
 function buildIndex(): Entry[] {
   const entries: Entry[] = [];
@@ -58,6 +59,13 @@ function buildIndex(): Entry[] {
       title: `${g.name.en} · ${g.name.ta}`,
       text: `${g.year} ${g.note.en}`,
       anchor: "governance",
+    });
+  for (const w of worldEvents)
+    entries.push({
+      category: "World",
+      title: `${w.event.en} · ${w.event.ta}`,
+      text: `${w.year} ${w.connection.en}`,
+      anchor: "world",
     });
   for (const q of quotes)
     entries.push({ category: "Quote", title: q.english, text: `${q.tamil} ${q.context}`, anchor: "quotes" });

@@ -9,6 +9,7 @@ import Footer from "@/sections/Footer";
 import Gallery from "@/sections/Gallery";
 import Hero from "@/sections/Hero";
 import Governance from "@/sections/Governance";
+import AgainstTheWorld from "@/sections/AgainstTheWorld";
 import Journey from "@/sections/Journey";
 import People from "@/sections/People";
 import Pillars from "@/sections/Pillars";
@@ -30,6 +31,7 @@ export default function Home() {
         <ExecutiveSummary />
         <Pillars />
         <Timeline />
+        <AgainstTheWorld />
         <Journey />
         <Themes />
         <Governance />

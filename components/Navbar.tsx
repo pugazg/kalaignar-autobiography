@@ -12,6 +12,7 @@ export const navSections = [
   { id: "summary", label: "Summary" },
   { id: "pillars", label: "Pillars" },
   { id: "timeline", label: "Timeline" },
+  { id: "world", label: "World" },
   { id: "journey", label: "Journey" },
   { id: "themes", label: "Themes" },
   { id: "governance", label: "Governance" },
