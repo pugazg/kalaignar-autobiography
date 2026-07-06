@@ -79,7 +79,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
             </span>
           </a>
 
-          <div className="hidden items-center gap-0.5 xl:flex">
+          <div className={cn("items-center gap-0.5", lang === "ta" ? "hidden" : "hidden xl:flex")}>
             {navSections.map((s) => (
               <a
                 key={s.id}
@@ -142,7 +142,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
             </button>
             <button
               onClick={() => setOpen(!open)}
-              className="focus-ring rounded-full p-2 text-ink/70 dark:text-night-text/70 xl:hidden"
+              className={cn("focus-ring rounded-full p-2 text-ink/70 dark:text-night-text/70", lang === "ta" ? "" : "xl:hidden")}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
             >
@@ -152,7 +152,8 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
         </div>
 
         {open && (
-          <div className="border-t border-ink/10 px-4 pb-4 pt-2 dark:border-white/10 xl:hidden">
+          <div className={cn("border-t border-ink/10 px-4 pb-4 pt-2 dark:border-white/10", lang === "ta" ? "" : "xl:hidden")}>
+            <div className={cn(lang === "ta" ? "grid grid-cols-2 gap-1 sm:grid-cols-3 md:grid-cols-4" : "")}>
             {navSections.map((s) => (
               <a
                 key={s.id}
@@ -160,6 +161,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
                 onClick={() => setOpen(false)}
                 className={cn(
                   "focus-ring block rounded-lg px-3 py-2 text-sm",
+                  lang === "ta" ? "font-tamil" : "",
                   active === s.id
                     ? "bg-marina text-paper"
                     : "text-ink/80 dark:text-night-text/80"
@@ -168,6 +170,7 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
                 {lang === "ta" ? navTa[s.id] ?? s.label : s.label}
               </a>
             ))}
+            </div>
           </div>
         )}
       </nav>
