@@ -62,7 +62,7 @@ export function SectionHeading({
   lede?: string;
 }) {
   const { lang } = useLang();
-  const taH = lang === "ta" ? headingsTa[id] : undefined;
+  const taH = lang === "ta" && id ? headingsTa[id] : undefined;
   const dEyebrow = taH?.eyebrow ?? eyebrow;
   const dTitle = taH?.title ?? title;
   const dLede = taH?.lede ?? lede;
