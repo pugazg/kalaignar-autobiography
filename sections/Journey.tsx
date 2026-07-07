@@ -3,6 +3,7 @@
 import { MapPin } from "lucide-react";
 import { useState } from "react";
 import { places } from "@/data/places";
+import { TN_DISTRICTS, TN_VIEWBOX } from "@/data/tnmap";
 import { RefChips, Reveal, SectionHeading } from "@/components/shared";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
