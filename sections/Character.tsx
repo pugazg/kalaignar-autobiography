@@ -12,8 +12,8 @@ export default function Character() {
   const [active, setActive] = useState(0);
 
   // lay the beliefs out on a circle
-  const R = 140;
-  const cx = 160, cy = 160;
+  const R = 150;
+  const cx = 210, cy = 210;
 
   return (
     <section id="character" className="mx-auto max-w-content px-4 py-24 sm:px-6" aria-labelledby="character-label">
@@ -28,23 +28,29 @@ export default function Character() {
       {/* The beliefs wheel */}
       <Reveal>
         <div className="mb-16 flex justify-center">
-          <svg viewBox="0 0 320 320" className="w-full max-w-md" role="group" aria-label="Core beliefs">
+          <svg viewBox="0 0 420 420" className="w-full max-w-lg" role="group" aria-label="Core beliefs">
             {/* spokes */}
             {beliefs.map((_, i) => {
               const a = (i / beliefs.length) * 2 * Math.PI - Math.PI / 2;
               return <line key={i} x1={cx} y1={cy} x2={cx + R * Math.cos(a)} y2={cy + R * Math.sin(a)} className="stroke-marina/15" strokeWidth="1" />;
             })}
-            <circle cx={cx} cy={cy} r="46" className="fill-marina" />
-            <text x={cx} y={cy - 4} textAnchor="middle" className="fill-paper font-tamil" style={{ fontSize: 15 }}>கலைஞர்</text>
-            <text x={cx} y={cy + 14} textAnchor="middle" className="fill-paper/80" style={{ fontSize: 9, fontFamily: "var(--font-inter)" }}>his beliefs</text>
+            <circle cx={cx} cy={cy} r="52" className="fill-marina" />
+            <text x={cx} y={cy - 4} textAnchor="middle" className="fill-paper font-tamil" style={{ fontSize: 17 }}>கலைஞர்</text>
+            <text x={cx} y={cy + 15} textAnchor="middle" className="fill-paper/80" style={{ fontSize: 10, fontFamily: "var(--font-inter)" }}>his beliefs</text>
             {beliefs.map((b, i) => {
               const a = (i / beliefs.length) * 2 * Math.PI - Math.PI / 2;
               const x = cx + R * Math.cos(a), y = cy + R * Math.sin(a);
               return (
                 <g key={b.id}>
-                  <circle cx={x} cy={y} r="30" className="fill-mist stroke-brass/40 dark:fill-night-surface" strokeWidth="1" />
-                  <text x={x} y={y + 3} textAnchor="middle" className="fill-ink font-tamil dark:fill-night-text" style={{ fontSize: 11 }}>
-                    {b.tamil.length > 6 ? b.tamil.slice(0, 6) : b.tamil}
+                  <circle cx={x} cy={y} r="24" className="fill-mist stroke-brass/50 dark:fill-night-surface" strokeWidth="1.5" />
+                  <text x={x} y={y + 4} textAnchor="middle" className="fill-marina font-tamil dark:fill-marina-light" style={{ fontSize: 13, fontWeight: 600 }}>
+                    {i + 1}
+                  </text>
+                  <text x={x} y={y - 34} textAnchor="middle" className="fill-ink font-tamil dark:fill-night-text" style={{ fontSize: 12 }}>
+                    {b.tamil}
+                  </text>
+                  <text x={x} y={y + 40} textAnchor="middle" className="fill-ink/55 dark:fill-night-text/55" style={{ fontSize: 8.5, fontFamily: "var(--font-inter)" }}>
+                    {b.en}
                   </text>
                 </g>
               );

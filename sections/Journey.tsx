@@ -8,13 +8,6 @@ import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 import { placesTa } from "@/data/i18n.ta";
 
-/**
- * A schematic (not cartographic) outline of Tamil Nadu, in the site's own
- * line-drawing language — the same restraint as the hero's delta contours.
- */
-const TN_OUTLINE =
-  "M 300 62 C 330 70, 352 88, 350 118 C 348 150, 336 178, 330 210 C 324 244, 318 268, 306 296 C 294 326, 280 352, 262 382 C 246 408, 232 436, 214 456 C 202 470, 190 474, 182 462 C 172 448, 176 430, 170 414 C 162 392, 148 378, 136 358 C 122 336, 108 318, 100 294 C 92 270, 96 246, 106 224 C 116 200, 132 184, 148 166 C 166 146, 186 130, 208 114 C 232 96, 258 76, 288 64 C 292 62, 296 61, 300 62 Z";
-
 export default function Journey() {
   const [sel, setSel] = useState(places[0].id);
   const { lang } = useLang();
@@ -28,15 +21,15 @@ export default function Journey() {
           tamil="பயணம்"
           eyebrow="The geography of a life"
           title="From a delta village to the three seas"
-          lede="The places the memoir keeps returning to, plotted on a schematic map. Select a marker to see what happened there — and where the book records it."
+          lede="The places the memoir keeps returning to, plotted on the map of Tamil Nadu. Select a marker to see what happened there — and where the book records it."
         />
         <div className="grid items-start gap-8 lg:grid-cols-[1.1fr_1fr]">
           <Reveal>
             <figure className="rounded-2xl border border-ink/10 bg-white/60 p-4 dark:border-white/10 dark:bg-night-surface/70">
-              <svg viewBox="0 0 400 500" role="group" aria-label="Schematic map of Tamil Nadu with places from the memoir" className="w-full">
-                <path d={TN_OUTLINE} className="fill-marina/[0.05] stroke-marina/40 dark:fill-marina/10" strokeWidth="1.5" />
-                {/* Cauvery hint — the delta of Volume 1 */}
-                <path d="M 130 250 C 180 246, 230 258, 300 292" className="stroke-marina/25" fill="none" strokeWidth="1" strokeDasharray="3 4" />
+              <svg viewBox={TN_VIEWBOX} role="group" aria-label="Map of Tamil Nadu with places from the memoir" className="w-full">
+                {TN_DISTRICTS.map((d, i) => (
+                  <path key={i} d={d} className="fill-marina/[0.06] stroke-marina/25 dark:fill-marina/10" strokeWidth="1.5" />
+                ))}
                 {places.map((p) => {
                   const on = p.id === sel;
                   return (
@@ -44,9 +37,9 @@ export default function Journey() {
                       <circle
                         cx={p.x}
                         cy={p.y}
-                        r={on ? 7 : 5}
+                        r={on ? 26 : 18}
                         className={cn("cursor-pointer transition-all", on ? "fill-brass stroke-paper" : "fill-marina stroke-paper hover:fill-brass dark:stroke-night")}
-                        strokeWidth="1.5"
+                        strokeWidth="5"
                         role="button"
                         tabIndex={0}
                         aria-label={`${p.name} — select`}
@@ -55,7 +48,7 @@ export default function Journey() {
                         onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && setSel(p.id)}
                       />
                       {on && (
-                        <text x={p.x + 11} y={p.y + 4} className="fill-ink text-[13px] font-medium dark:fill-night-text" style={{ fontFamily: "var(--font-inter)" }}>
+                        <text x={p.x + 40} y={p.y + 12} className="fill-ink text-[42px] font-semibold dark:fill-night-text" style={{ fontFamily: "var(--font-inter)" }}>
                           {p.name}
                         </text>
                       )}
@@ -64,7 +57,7 @@ export default function Journey() {
                 })}
               </svg>
               <figcaption className="mt-2 text-center text-[11px] text-ink/45 dark:text-night-text/45">
-                Schematic — positions approximate, in the spirit of a museum floor plan.
+                {lang === "ta" ? "தமிழ்நாடு மாவட்ட வரைபடம்; நினைவேட்டின் இடங்கள் குறிக்கப்பட்டுள்ளன." : "Tamil Nadu, by district — the places the memoir names, on real geography."}
               </figcaption>
             </figure>
           </Reveal>

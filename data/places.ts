@@ -4,7 +4,7 @@ export type Place = {
   name: string;
   note: string; // one grounded line
   refs: string[];
-  x: number; // schematic SVG coordinates (viewBox 0 0 400 500) — approximate
+  x: number; // real coordinates in the TN map viewBox (0 0 1640 2032)
   y: number;
 };
 
@@ -16,7 +16,7 @@ export const places: Place[] = [
     name: "Thirukkuvalai",
     note: "The delta village where the story begins, 1924 — the 'ordinary family' of the Volume 4 preface.",
     refs: ["v1-ch01", "v4-ch02"],
-    x: 296, y: 300,
+    x: 1373, y: 1066,
   },
   {
     id: "tiruvarur",
@@ -24,7 +24,7 @@ export const places: Place[] = [
     name: "Tiruvarur",
     note: "Schooling that ended early — the movement became the university instead.",
     refs: ["v1-ch04"],
-    x: 285, y: 288,
+    x: 1353, y: 1040,
   },
   {
     id: "kallakudi",
@@ -32,7 +32,7 @@ export const places: Place[] = [
     name: "Kallakudi",
     note: "The 1953 struggle that made a 29-year-old famous — and a prisoner of the cause.",
     refs: ["v1-ch43"],
-    x: 232, y: 252,
+    x: 1031, y: 852,
   },
   {
     id: "trichy",
@@ -40,7 +40,7 @@ export const places: Place[] = [
     name: "Tiruchirappalli",
     note: "Central Jail, 1953 — where the prisoners 'built a new republic in there.'",
     refs: ["v1-ch46"],
-    x: 222, y: 258,
+    x: 983, y: 1033,
   },
   {
     id: "palayamkottai",
@@ -48,7 +48,7 @@ export const places: Place[] = [
     name: "Palayamkottai",
     note: "The 1965 imprisonment — hunger bearable, a day without friends' faces not.",
     refs: ["v1-ch110"],
-    x: 205, y: 415,
+    x: 601, y: 1797,
   },
   {
     id: "saidapet",
@@ -56,7 +56,7 @@ export const places: Place[] = [
     name: "Saidapet",
     note: "The constituency of February 1967 — victory received without gloating, at his own insistence.",
     refs: ["v1-ch128"],
-    x: 322, y: 100,
+    x: 1588, y: 213,
   },
   {
     id: "chennai",
@@ -64,7 +64,7 @@ export const places: Place[] = [
     name: "Chennai (Madras)",
     note: "Fort St. George, the Marina, Anna Arivalayam, Valluvar Kottam — the capital of the whole arc.",
     refs: ["v2-ch66", "v5-ch01", "v6-ch19"],
-    x: 330, y: 90,
+    x: 1608, y: 191,
   },
   {
     id: "appakoodal",
@@ -72,7 +72,7 @@ export const places: Place[] = [
     name: "Appakoodal",
     note: "April 7, 1969 — pulled from a collapsed pandal in the dark, days into the chief ministership.",
     refs: ["v2-ch12"],
-    x: 128, y: 262,
+    x: 593, y: 852,
   },
   {
     id: "kanyakumari",
@@ -80,7 +80,7 @@ export const places: Place[] = [
     name: "Kanyakumari",
     note: "The 'sky-touching' Thiruvalluvar statue rising where the three seas meet.",
     refs: ["v5-ch33"],
-    x: 190, y: 462,
+    x: 525, y: 1980,
   },
   {
     id: "sriperumbudur",
@@ -88,7 +88,7 @@ export const places: Place[] = [
     name: "Sriperumbudur",
     note: "The night of May 21, 1991 — 'the unexpected murder' that reshaped everything.",
     refs: ["v4-ch13"],
-    x: 305, y: 92,
+    x: 1477, y: 231,
   },
 ];
 
