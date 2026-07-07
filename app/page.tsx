@@ -7,9 +7,14 @@ import SearchDialog from "@/components/SearchDialog";
 import ExecutiveSummary from "@/sections/ExecutiveSummary";
 import Footer from "@/sections/Footer";
 import Gallery from "@/sections/Gallery";
+import Chronicle from "@/sections/Chronicle";
+import Principles from "@/sections/Principles";
 import Hero from "@/sections/Hero";
 import Governance from "@/sections/Governance";
 import AgainstTheWorld from "@/sections/AgainstTheWorld";
+import Character from "@/sections/Character";
+import Eelam from "@/sections/Eelam";
+import SocialJustice from "@/sections/SocialJustice";
 import Journey from "@/sections/Journey";
 import People from "@/sections/People";
 import Pillars from "@/sections/Pillars";
@@ -29,13 +34,18 @@ export default function Home() {
       <main id="main">
         <Hero />
         <ExecutiveSummary />
+        <Chronicle />
+        <Principles />
         <Pillars />
         <Timeline />
         <AgainstTheWorld />
+        <Eelam />
         <Journey />
         <Themes />
         <Governance />
+        <SocialJustice />
         <People />
+        <Character />
         <Quotes />
         <StatsDashboard />
         <Gallery />

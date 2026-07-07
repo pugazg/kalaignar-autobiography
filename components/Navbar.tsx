@@ -10,13 +10,18 @@ import { useScrollSpy } from "@/lib/useScrollSpy";
 
 export const navSections = [
   { id: "summary", label: "Summary" },
+  { id: "chronicle", label: "The Chronicle" },
+  { id: "principles", label: "Principles" },
   { id: "pillars", label: "Pillars" },
   { id: "timeline", label: "Timeline" },
   { id: "world", label: "World" },
+  { id: "eelam", label: "Eelam" },
   { id: "journey", label: "Journey" },
   { id: "themes", label: "Themes" },
   { id: "governance", label: "Governance" },
+  { id: "socialjustice", label: "Social Justice" },
   { id: "people", label: "People" },
+  { id: "character", label: "Character" },
   { id: "quotes", label: "Quotes" },
   { id: "dashboard", label: "In Numbers" },
   { id: "gallery", label: "Gallery" },

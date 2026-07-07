@@ -7,6 +7,12 @@ import { people } from "@/data/people";
 import { places } from "@/data/places";
 import { governance } from "@/data/governance";
 import { worldEvents } from "@/data/world";
+import { chronicleStrands } from "@/data/chronicle";
+import { eelamThread } from "@/data/eelam";
+import { justicePillars } from "@/data/socialjustice";
+import { beliefs, traits } from "@/data/character";
+import { principles, declarations } from "@/data/principles";
+import { principles, declarations } from "@/data/principles";
 import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
@@ -16,7 +22,7 @@ import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
 
 type Entry = {
-  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "World" | "Pillar" | "Quote" | "Chapter";
+  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "World" | "Chronicle" | "Principle" | "SocialJustice" | "Eelam" | "Character" | "Pillar" | "Quote" | "Chapter";
   title: string;
   text: string;
   anchor: string;
@@ -24,7 +30,7 @@ type Entry = {
   meta?: string; // volume/pages line shown with the result
 };
 
-const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "World", "Quote", "Chapter"] as const;
+const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "World", "Chronicle", "Principle", "SocialJustice", "Eelam", "Character", "Quote", "Chapter"] as const;
 
 function buildIndex(): Entry[] {
   const entries: Entry[] = [];
@@ -59,6 +65,53 @@ function buildIndex(): Entry[] {
       title: `${g.name.en} · ${g.name.ta}`,
       text: `${g.year} ${g.note.en}`,
       anchor: "governance",
+    });
+  for (const tr of traits)
+    entries.push({ category: "Character", title: `${tr.title} · ${tr.tamil}`, text: tr.moment.en, anchor: "character" });
+  for (const ej of eelamThread)
+    entries.push({ category: "Eelam", title: `${ej.title.en} · ${ej.title.ta}`, text: ej.note.en, anchor: "eelam" });
+  for (const jp of justicePillars)
+    entries.push({ category: "SocialJustice", title: `${jp.title} · ${jp.tamil}`, text: jp.note.en, anchor: "socialjustice" });
+  for (const dc of declarations)
+    entries.push({
+      category: "Principle",
+      title: `${dc.tamil} · ${dc.title}`,
+      text: dc.body.en,
+      anchor: "principles",
+    });
+  for (const pr of principles)
+    entries.push({
+      category: "Principle",
+      title: `${pr.title} · ${pr.tamil}`,
+      text: pr.body.en,
+      anchor: "principles",
+    });
+  for (const tr of traits)
+    entries.push({ category: "Character", title: `${tr.title} · ${tr.tamil}`, text: tr.moment.en, anchor: "character" });
+  for (const ej of eelamThread)
+    entries.push({ category: "Eelam", title: `${ej.title.en} · ${ej.title.ta}`, text: ej.note.en, anchor: "eelam" });
+  for (const jp of justicePillars)
+    entries.push({ category: "SocialJustice", title: `${jp.title} · ${jp.tamil}`, text: jp.note.en, anchor: "socialjustice" });
+  for (const dc of declarations)
+    entries.push({
+      category: "Principle",
+      title: `${dc.tamil} · ${dc.title}`,
+      text: dc.body.en,
+      anchor: "principles",
+    });
+  for (const pr of principles)
+    entries.push({
+      category: "Principle",
+      title: `${pr.title} · ${pr.tamil}`,
+      text: pr.body.en,
+      anchor: "principles",
+    });
+  for (const c of chronicleStrands)
+    entries.push({
+      category: "Chronicle",
+      title: `${c.title} · ${c.tamil}`,
+      text: c.body.en,
+      anchor: "chronicle",
     });
   for (const w of worldEvents)
     entries.push({
