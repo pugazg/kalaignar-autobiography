@@ -58,7 +58,7 @@ export default function Journey() {
                 })}
               </svg>
               <figcaption className="mt-2 text-center text-[11px] text-ink/45 dark:text-night-text/45">
-                {lang === "ta" ? "தமிழ்நாடு மாவட்ட வரைபடம்; நினைவேட்டின் இடங்கள் குறிக்கப்பட்டுள்ளன." : "Tamil Nadu, by district — the places the memoir names, on real geography."}
+                {lang === "ta" ? "தமிழ்நாடு மாவட்ட வரைபடம்; நினைவேட்டின் இடங்கள் தோராயமான இடங்களில் குறிக்கப்பட்டுள்ளன." : "Tamil Nadu, by district — the places the memoir names, shown at approximate locations."}
               </figcaption>
             </figure>
           </Reveal>
