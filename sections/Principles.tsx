@@ -68,8 +68,9 @@ export default function Principles() {
                 <RefChips refs={p.refs} />
               </div>
             </article>
-          ))}
-        </div>
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }

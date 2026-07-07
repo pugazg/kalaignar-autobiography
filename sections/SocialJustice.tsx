@@ -31,8 +31,9 @@ export default function SocialJustice() {
               </p>
               <div className="mt-3"><RefChips refs={p.refs} /></div>
             </article>
-          ))}
-        </div>
+          </Reveal>
+        ))}
+      </div>
 
       {/* The reservation arc */}
       <Reveal>

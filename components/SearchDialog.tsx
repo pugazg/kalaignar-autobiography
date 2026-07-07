@@ -12,7 +12,6 @@ import { eelamThread } from "@/data/eelam";
 import { justicePillars } from "@/data/socialjustice";
 import { beliefs, traits } from "@/data/character";
 import { principles, declarations } from "@/data/principles";
-import { principles, declarations } from "@/data/principles";
 import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
 import { themes } from "@/data/themes";
