@@ -9,11 +9,21 @@ import { cn } from "@/lib/utils";
 import { chapterById } from "@/data/references";
 import { useResearch } from "@/lib/ResearchMode";
 import { useLang } from "@/lib/i18n";
-import { erasTa, tagsTa, timelineTa, chromeTa } from "@/data/i18n.ta";
+import { erasTa, timelineTa, chromeTa } from "@/data/i18n.ta";
 
 // Era filters derived from the milestone data itself (order-preserving).
 const ERA_FILTERS = ["All", ...Array.from(new Set(timeline.map((m) => m.era)))];
-const TAG_FILTERS = ["All topics", ...Array.from(new Set(timeline.flatMap((m) => m.tags ?? []))).sort()];
+
+// Named themes map onto the underlying milestone tags — a human-friendly lens.
+const THEMES: { id: string; en: string; ta: string; tags: string[] }[] = [
+  { id: "all", en: "All themes", ta: "எல்லாக் கருப்பொருள்களும்", tags: [] },
+  { id: "politics", en: "Politics", ta: "அரசியல்", tags: ["movement", "governance", "alliances", "dismissal", "democracy"] },
+  { id: "elections", en: "Elections", ta: "தேர்தல்கள்", tags: ["elections"] },
+  { id: "language", en: "Language", ta: "மொழி", tags: ["language"] },
+  { id: "social-justice", en: "Social Justice", ta: "சமூக நீதி", tags: ["social justice"] },
+  { id: "cinema", en: "Cinema & Letters", ta: "திரையும் எழுத்தும்", tags: ["cinema", "literature"] },
+  { id: "struggle", en: "Struggle", ta: "போராட்டம்", tags: ["imprisonment", "losses"] },
+];
 
 function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
   return (
@@ -86,11 +96,16 @@ function MilestoneCard({ m, side }: { m: Milestone; side: "left" | "right" }) {
 
 export default function Timeline() {
   const [era, setEra] = useState<string>("All");
-  const [tag, setTag] = useState<string>("All topics");
+  const [theme, setTheme] = useState<string>("all");
   const { lang } = useLang();
   const items = timeline
     .filter(
-      (m) => (era === "All" || m.era === era) && (tag === "All topics" || (m.tags ?? []).includes(tag)),
+      (m) => {
+        if (era !== "All" && m.era !== era) return false;
+        if (theme === "all") return true;
+        const themeTags = THEMES.find((t) => t.id === theme)?.tags ?? [];
+        return (m.tags ?? []).some((tg) => themeTags.includes(tg));
+      },
     )
     .map((m) => {
       const ta = lang === "ta" ? timelineTa[m.id] : undefined;
@@ -131,20 +146,20 @@ export default function Timeline() {
         ))}
       </div>
 
-      <div className="mb-12 flex flex-wrap justify-center gap-1.5" role="group" aria-label="Filter timeline by topic">
-        {TAG_FILTERS.map((f) => (
+      <div className="mb-12 flex flex-wrap justify-center gap-1.5" role="group" aria-label="Filter timeline by theme">
+        {THEMES.map((th) => (
           <button
-            key={f}
-            onClick={() => setTag(f)}
+            key={th.id}
+            onClick={() => setTheme(th.id)}
             className={cn(
               "focus-ring rounded-full px-3 py-1 text-xs transition-colors",
-              tag === f
+              theme === th.id
                 ? "bg-brass text-paper"
                 : "border border-ink/10 text-ink/55 hover:border-brass/60 hover:text-brass dark:border-white/10 dark:text-night-text/55"
             )}
-            aria-pressed={tag === f}
+            aria-pressed={theme === th.id}
           >
-            {lang === "ta" ? tagsTa[f] ?? f : f}
+            {lang === "ta" ? th.ta : th.en}
           </button>
         ))}
       </div>

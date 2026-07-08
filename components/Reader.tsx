@@ -5,7 +5,6 @@ import {
   ArrowRight,
   Bookmark,
   BookmarkCheck,
-  Copy,
   GraduationCap,
   Home,
   Minus,
@@ -15,7 +14,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { ChapterRef } from "@/data/references";
 import { volumeMeta } from "@/data/references";
-import { chapterCitation, useResearch } from "@/lib/ResearchMode";
+import { useResearch } from "@/lib/ResearchMode";
+import CiteButton from "@/components/CiteButton";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
@@ -44,7 +44,6 @@ export default function Reader({
   const [error, setError] = useState(false);
   const [font, setFont] = useState(1);
   const [marked, setMarked] = useState(false);
-  const [copied, setCopied] = useState(false);
   const { research, setResearch } = useResearch();
   const { lang } = useLang();
   const restored = useRef(false);
@@ -113,14 +112,6 @@ export default function Reader({
     } catch {}
   };
 
-  const copyCitation = async () => {
-    try {
-      await navigator.clipboard.writeText(chapterCitation(chapter));
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1800);
-    } catch {}
-  };
-
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
       {/* Reading-room chrome: quiet, sticky, out of the text's way */}
@@ -173,11 +164,12 @@ export default function Reader({
               <div><dt className="text-ink/45 dark:text-night-text/45">Data</dt><dd><a className="text-marina underline-offset-2 hover:underline dark:text-marina-light" href={`/data/text/${chapter.id}.json`} download>chapter JSON</a></dd></div>
             </dl>
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              <button onClick={copyCitation} className="focus-ring inline-flex items-center gap-1.5 rounded-full border border-marina/40 px-3 py-1 text-xs font-medium text-marina hover:bg-marina hover:text-paper dark:text-marina-light">
-                <Copy className="h-3 w-3" aria-hidden /> {copied ? "Citation copied" : "Copy citation"}
-              </button>
+              <CiteButton chapter={chapter} />
+              <a href={`/data/text/${chapter.id}.json`} download className="focus-ring rounded-full border border-ink/15 px-3 py-1 text-xs text-ink/70 hover:border-marina/50 dark:border-white/15 dark:text-night-text/70">
+                {lang === "ta" ? "அத்தியாய JSON" : "Chapter JSON"}
+              </a>
               <a href={`/data/volume${chapter.volume}.index.json`} download className="focus-ring rounded-full border border-ink/15 px-3 py-1 text-xs text-ink/70 hover:border-marina/50 dark:border-white/15 dark:text-night-text/70">
-                Volume {chapter.volume} index (JSON)
+                {lang === "ta" ? `பாகம் ${chapter.volume} JSON` : `Volume ${chapter.volume} index (JSON)`}
               </a>
             </div>
             <p className="mt-2 text-[11px] text-ink/45 dark:text-night-text/45">
