@@ -24,7 +24,7 @@ export const places: Place[] = [
     name: "Tiruvarur",
     note: "Schooling that ended early — the movement became the university instead.",
     refs: ["v1-ch04"],
-    x: 1300, y: 1070,
+    x: 1230, y: 1000,
   },
   {
     id: "kallakudi",
@@ -32,7 +32,7 @@ export const places: Place[] = [
     name: "Kallakudi",
     note: "The 1953 struggle that made a 29-year-old famous — and a prisoner of the cause.",
     refs: ["v1-ch43"],
-    x: 980, y: 980,
+    x: 970, y: 970,
   },
   {
     id: "trichy",
@@ -40,7 +40,7 @@ export const places: Place[] = [
     name: "Tiruchirappalli",
     note: "Central Jail, 1953 — where the prisoners 'built a new republic in there.'",
     refs: ["v1-ch46"],
-    x: 960, y: 1050,
+    x: 950, y: 1040,
   },
   {
     id: "palayamkottai",
