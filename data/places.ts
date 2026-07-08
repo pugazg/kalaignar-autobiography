@@ -24,7 +24,7 @@ export const places: Place[] = [
     name: "Tiruvarur",
     note: "Schooling that ended early — the movement became the university instead.",
     refs: ["v1-ch04"],
-    x: 1230, y: 1000,
+    x: 1220, y: 1020,
   },
   {
     id: "kallakudi",
@@ -40,7 +40,7 @@ export const places: Place[] = [
     name: "Tiruchirappalli",
     note: "Central Jail, 1953 — where the prisoners 'built a new republic in there.'",
     refs: ["v1-ch46"],
-    x: 950, y: 1040,
+    x: 950, y: 1045,
   },
   {
     id: "palayamkottai",
@@ -56,7 +56,7 @@ export const places: Place[] = [
     name: "Saidapet",
     note: "The constituency of February 1967 — victory received without gloating, at his own insistence.",
     refs: ["v1-ch128"],
-    x: 1430, y: 230,
+    x: 1420, y: 240,
   },
   {
     id: "chennai",
@@ -64,7 +64,7 @@ export const places: Place[] = [
     name: "Chennai (Madras)",
     note: "Fort St. George, the Marina, Anna Arivalayam, Valluvar Kottam — the capital of the whole arc.",
     refs: ["v2-ch66", "v5-ch01", "v6-ch19"],
-    x: 1450, y: 210,
+    x: 1440, y: 220,
   },
   {
     id: "appakoodal",
