@@ -3102,70 +3102,25 @@
       "id": "person-stalin",
       "type": "person",
       "variants": [
-        "ஸ்டாலின்"
+        "மு.க.ஸ்டாலின்",
+        "மு.க. ஸ்டாலின்"
       ],
-      "mentionCount": 113,
-      "chapterCount": 51,
+      "mentionCount": 61,
+      "chapterCount": 37,
       "volumes": [
-        1,
-        2,
         3,
         4,
         5,
         6
       ],
-      "firstAppearance": "v1-ch01",
+      "firstAppearance": "v3-ch09",
       "mentions": [
-        {
-          "chapter": "v1-ch01",
-          "count": 2
-        },
-        {
-          "chapter": "v1-ch05",
-          "count": 1
-        },
-        {
-          "chapter": "v1-ch103",
-          "count": 2
-        },
-        {
-          "chapter": "v1-ch116",
-          "count": 1
-        },
-        {
-          "chapter": "v1-ch118",
-          "count": 1
-        },
-        {
-          "chapter": "v1-ch51",
-          "count": 1
-        },
-        {
-          "chapter": "v1-ch59",
-          "count": 2
-        },
-        {
-          "chapter": "v2-ch64",
-          "count": 1
-        },
-        {
-          "chapter": "v2-ch67",
-          "count": 1
-        },
-        {
-          "chapter": "v2-ch68",
-          "count": 4
-        },
         {
           "chapter": "v3-ch09",
           "count": 1
         },
         {
           "chapter": "v3-ch24",
-          "count": 1
-        },
-        {
-          "chapter": "v3-ch30",
           "count": 1
         },
         {
@@ -3182,7 +3137,7 @@
         },
         {
           "chapter": "v5-ch05",
-          "count": 3
+          "count": 2
         },
         {
           "chapter": "v5-ch09",
@@ -3190,11 +3145,11 @@
         },
         {
           "chapter": "v5-ch11",
-          "count": 15
+          "count": 10
         },
         {
           "chapter": "v5-ch13",
-          "count": 5
+          "count": 2
         },
         {
           "chapter": "v5-ch14",
@@ -3205,16 +3160,12 @@
           "count": 1
         },
         {
-          "chapter": "v5-ch19",
-          "count": 1
-        },
-        {
           "chapter": "v5-ch20",
           "count": 1
         },
         {
           "chapter": "v5-ch22",
-          "count": 4
+          "count": 2
         },
         {
           "chapter": "v5-ch24",
@@ -3222,11 +3173,11 @@
         },
         {
           "chapter": "v5-ch26",
-          "count": 6
+          "count": 1
         },
         {
           "chapter": "v5-ch27",
-          "count": 5
+          "count": 4
         },
         {
           "chapter": "v5-ch36",
@@ -3234,7 +3185,7 @@
         },
         {
           "chapter": "v5-ch39",
-          "count": 3
+          "count": 2
         },
         {
           "chapter": "v5-ch41",
@@ -3245,23 +3196,15 @@
           "count": 2
         },
         {
-          "chapter": "v5-ch46",
-          "count": 2
-        },
-        {
           "chapter": "v5-ch49",
           "count": 1
         },
         {
           "chapter": "v6-ch01",
-          "count": 2
-        },
-        {
-          "chapter": "v6-ch02",
           "count": 1
         },
         {
-          "chapter": "v6-ch05",
+          "chapter": "v6-ch02",
           "count": 1
         },
         {
@@ -3270,7 +3213,7 @@
         },
         {
           "chapter": "v6-ch12",
-          "count": 2
+          "count": 1
         },
         {
           "chapter": "v6-ch13",
@@ -3282,7 +3225,7 @@
         },
         {
           "chapter": "v6-ch15",
-          "count": 2
+          "count": 1
         },
         {
           "chapter": "v6-ch17",
@@ -3290,7 +3233,7 @@
         },
         {
           "chapter": "v6-ch18",
-          "count": 2
+          "count": 1
         },
         {
           "chapter": "v6-ch19",
@@ -3298,7 +3241,7 @@
         },
         {
           "chapter": "v6-ch21",
-          "count": 7
+          "count": 3
         },
         {
           "chapter": "v6-ch22",
@@ -3310,7 +3253,7 @@
         },
         {
           "chapter": "v6-ch25",
-          "count": 6
+          "count": 5
         },
         {
           "chapter": "v6-ch27",
@@ -3318,7 +3261,7 @@
         },
         {
           "chapter": "v6-ch29",
-          "count": 5
+          "count": 1
         }
       ],
       "origin": "analyzer"

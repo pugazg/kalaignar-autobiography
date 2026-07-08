@@ -174,11 +174,6 @@
     },
     {
       "source": "person-jayalalithaa",
-      "target": "person-stalin",
-      "weight": 31
-    },
-    {
-      "source": "person-jayalalithaa",
       "target": "person-nehru",
       "weight": 30
     },
@@ -193,14 +188,9 @@
       "weight": 29
     },
     {
-      "source": "person-mgr",
+      "source": "person-jayalalithaa",
       "target": "person-stalin",
       "weight": 29
-    },
-    {
-      "source": "person-maran",
-      "target": "person-stalin",
-      "weight": 28
     },
     {
       "source": "person-jayalalithaa",
@@ -208,9 +198,14 @@
       "weight": 25
     },
     {
-      "source": "person-anna",
+      "source": "person-maran",
       "target": "person-stalin",
-      "weight": 24
+      "weight": 25
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-stalin",
+      "weight": 25
     },
     {
       "source": "person-maran",
@@ -221,11 +216,6 @@
       "source": "person-periyar",
       "target": "person-rajiv",
       "weight": 24
-    },
-    {
-      "source": "person-periyar",
-      "target": "person-stalin",
-      "weight": 23
     },
     {
       "source": "person-mgr",
@@ -263,11 +253,6 @@
       "weight": 20
     },
     {
-      "source": "person-nehru",
-      "target": "person-stalin",
-      "weight": 19
-    },
-    {
       "source": "person-anna",
       "target": "person-bharathidasan",
       "weight": 19
@@ -288,6 +273,11 @@
       "weight": 18
     },
     {
+      "source": "person-anna",
+      "target": "person-stalin",
+      "weight": 18
+    },
+    {
       "source": "person-maran",
       "target": "person-vairamuthu",
       "weight": 18
@@ -298,11 +288,6 @@
       "weight": 18
     },
     {
-      "source": "person-kamaraj",
-      "target": "person-stalin",
-      "weight": 17
-    },
-    {
       "source": "person-nehru",
       "target": "person-rajiv",
       "weight": 17
@@ -310,6 +295,11 @@
     {
       "source": "person-kamaraj",
       "target": "person-rajiv",
+      "weight": 17
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-stalin",
       "weight": 17
     },
     {
@@ -323,9 +313,9 @@
       "weight": 15
     },
     {
-      "source": "person-indira",
+      "source": "person-nehru",
       "target": "person-stalin",
-      "weight": 14
+      "weight": 15
     },
     {
       "source": "person-ambedkar",
@@ -353,6 +343,11 @@
       "weight": 13
     },
     {
+      "source": "person-kamaraj",
+      "target": "person-stalin",
+      "weight": 13
+    },
+    {
       "source": "person-bharathidasan",
       "target": "person-mgr",
       "weight": 12
@@ -373,16 +368,6 @@
       "weight": 12
     },
     {
-      "source": "person-stalin",
-      "target": "person-vairamuthu",
-      "weight": 12
-    },
-    {
-      "source": "person-rajaji",
-      "target": "person-stalin",
-      "weight": 11
-    },
-    {
       "source": "person-periyar",
       "target": "person-sivaji",
       "weight": 11
@@ -390,6 +375,16 @@
     {
       "source": "person-bharathidasan",
       "target": "person-kamaraj",
+      "weight": 11
+    },
+    {
+      "source": "person-indira",
+      "target": "person-stalin",
+      "weight": 11
+    },
+    {
+      "source": "person-stalin",
+      "target": "person-vairamuthu",
       "weight": 11
     },
     {
@@ -450,11 +445,6 @@
     {
       "source": "person-maran",
       "target": "person-nedunchezhiyan",
-      "weight": 9
-    },
-    {
-      "source": "person-rajiv",
-      "target": "person-stalin",
       "weight": 9
     },
     {
@@ -498,6 +488,11 @@
       "weight": 8
     },
     {
+      "source": "person-rajiv",
+      "target": "person-stalin",
+      "weight": 8
+    },
+    {
       "source": "person-ambedkar",
       "target": "person-nehru",
       "weight": 8
@@ -505,6 +500,11 @@
     {
       "source": "person-rajaji",
       "target": "person-vairamuthu",
+      "weight": 8
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-stalin",
       "weight": 8
     },
     {
@@ -538,11 +538,6 @@
       "weight": 7
     },
     {
-      "source": "person-bharathidasan",
-      "target": "person-stalin",
-      "weight": 6
-    },
-    {
       "source": "person-kannadasan",
       "target": "person-periyar",
       "weight": 6
@@ -563,11 +558,6 @@
       "weight": 6
     },
     {
-      "source": "person-kannadasan",
-      "target": "person-stalin",
-      "weight": 6
-    },
-    {
       "source": "person-rajaji",
       "target": "person-sivaji",
       "weight": 5
@@ -575,6 +565,11 @@
     {
       "source": "person-bharathidasan",
       "target": "person-kannadasan",
+      "weight": 5
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-stalin",
       "weight": 5
     },
     {
@@ -599,17 +594,12 @@
     },
     {
       "source": "person-kannadasan",
+      "target": "person-stalin",
+      "weight": 4
+    },
+    {
+      "source": "person-kannadasan",
       "target": "person-vairamuthu",
-      "weight": 4
-    },
-    {
-      "source": "person-nedunchezhiyan",
-      "target": "person-stalin",
-      "weight": 4
-    },
-    {
-      "source": "person-sivaji",
-      "target": "person-stalin",
       "weight": 4
     },
     {
@@ -645,6 +635,11 @@
     {
       "source": "person-kannadasan",
       "target": "person-rajiv",
+      "weight": 3
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-stalin",
       "weight": 3
     },
     {
@@ -698,6 +693,11 @@
       "weight": 2
     },
     {
+      "source": "person-sivaji",
+      "target": "person-stalin",
+      "weight": 2
+    },
+    {
       "source": "person-ambedkar",
       "target": "person-nedunchezhiyan",
       "weight": 2
@@ -730,11 +730,6 @@
     {
       "source": "person-kannadasan",
       "target": "person-nsk",
-      "weight": 2
-    },
-    {
-      "source": "person-nsk",
-      "target": "person-stalin",
       "weight": 2
     },
     {
@@ -785,6 +780,11 @@
     {
       "source": "person-ambedkar",
       "target": "person-kannadasan",
+      "weight": 1
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-stalin",
       "weight": 1
     },
     {

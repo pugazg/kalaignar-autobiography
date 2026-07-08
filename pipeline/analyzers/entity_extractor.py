@@ -37,7 +37,9 @@ PEOPLE = {
     "person-rajaji":   ["ராஜாஜி", "இராஜாஜி", "இராஜகோபாலாச்சாரி"],
     "person-sivaji":   ["சிவாஜி கணேசன்"],
     "person-maran":    ["முரசொலி மாறன்"],
-    "person-stalin":   ["ஸ்டாலின்"],
+    # M.K. Stalin only — bare "ஸ்டாலின்" also matches JOSEF Stalin (world-history
+    # passages in Vol 1: Lenin, Siberia, 1924). Proper-noun forms disambiguate.
+    "person-stalin":   ["மு.க.ஸ்டாலின்", "மு.க. ஸ்டாலின்"],
     "person-nehru":    ["நேரு"],
     "person-indira":   ["இந்திரா"],
     "person-rajiv":    ["ராஜீவ்"],

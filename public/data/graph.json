@@ -87,18 +87,6 @@
       "y": 770.4
     },
     {
-      "id": "person-stalin",
-      "en": "M. K. Stalin",
-      "ta": "மு.க. ஸ்டாலின்",
-      "role": "Son and successor-in-training",
-      "mentions": 113,
-      "chapters": 51,
-      "firstChapter": "v1-ch01",
-      "r": 21.8,
-      "x": 371.0,
-      "y": 770.4
-    },
-    {
       "id": "person-nedunchezhiyan",
       "en": "V. R. Nedunchezhiyan",
       "ta": "நெடுஞ்செழியன்",
@@ -107,6 +95,18 @@
       "chapters": 50,
       "firstChapter": "v1-ch119",
       "r": 20.3,
+      "x": 371.0,
+      "y": 770.4
+    },
+    {
+      "id": "person-stalin",
+      "en": "M. K. Stalin",
+      "ta": "மு.க. ஸ்டாலின்",
+      "role": "Son and successor-in-training",
+      "mentions": 61,
+      "chapters": 37,
+      "firstChapter": "v3-ch09",
+      "r": 19.7,
       "x": 231.2,
       "y": 697.0
     },
@@ -277,32 +277,20 @@
     {
       "source": "person-jayalalithaa",
       "target": "person-stalin",
-      "weight": 31,
-      "strength": 0.36
-    },
-    {
-      "source": "person-mgr",
-      "target": "person-stalin",
       "weight": 29,
       "strength": 0.337
     },
     {
       "source": "person-maran",
       "target": "person-stalin",
-      "weight": 28,
-      "strength": 0.326
+      "weight": 25,
+      "strength": 0.291
     },
     {
-      "source": "person-anna",
+      "source": "person-mgr",
       "target": "person-stalin",
-      "weight": 24,
-      "strength": 0.279
-    },
-    {
-      "source": "person-periyar",
-      "target": "person-stalin",
-      "weight": 23,
-      "strength": 0.267
+      "weight": 25,
+      "strength": 0.291
     },
     {
       "source": "person-mgr",
@@ -335,13 +323,19 @@
       "strength": 0.209
     },
     {
+      "source": "person-anna",
+      "target": "person-stalin",
+      "weight": 18,
+      "strength": 0.209
+    },
+    {
       "source": "person-jayalalithaa",
       "target": "person-rajaji",
       "weight": 18,
       "strength": 0.209
     },
     {
-      "source": "person-kamaraj",
+      "source": "person-periyar",
       "target": "person-stalin",
       "weight": 17,
       "strength": 0.198
@@ -355,6 +349,12 @@
     {
       "source": "person-kamaraj",
       "target": "person-nedunchezhiyan",
+      "weight": 13,
+      "strength": 0.151
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-stalin",
       "weight": 13,
       "strength": 0.151
     },
@@ -375,12 +375,6 @@
       "target": "person-maran",
       "weight": 12,
       "strength": 0.14
-    },
-    {
-      "source": "person-rajaji",
-      "target": "person-stalin",
-      "weight": 11,
-      "strength": 0.128
     },
     {
       "source": "person-periyar",
@@ -455,16 +449,16 @@
       "strength": 0.093
     },
     {
+      "source": "person-rajaji",
+      "target": "person-stalin",
+      "weight": 8,
+      "strength": 0.093
+    },
+    {
       "source": "person-maran",
       "target": "person-sivaji",
       "weight": 7,
       "strength": 0.081
-    },
-    {
-      "source": "person-bharathidasan",
-      "target": "person-stalin",
-      "weight": 6,
-      "strength": 0.07
     },
     {
       "source": "person-kannadasan",
@@ -491,12 +485,6 @@
       "strength": 0.07
     },
     {
-      "source": "person-kannadasan",
-      "target": "person-stalin",
-      "weight": 6,
-      "strength": 0.07
-    },
-    {
       "source": "person-rajaji",
       "target": "person-sivaji",
       "weight": 5,
@@ -509,19 +497,19 @@
       "strength": 0.058
     },
     {
+      "source": "person-bharathidasan",
+      "target": "person-stalin",
+      "weight": 5,
+      "strength": 0.058
+    },
+    {
       "source": "person-kannadasan",
       "target": "person-nedunchezhiyan",
       "weight": 5,
       "strength": 0.058
     },
     {
-      "source": "person-nedunchezhiyan",
-      "target": "person-stalin",
-      "weight": 4,
-      "strength": 0.047
-    },
-    {
-      "source": "person-sivaji",
+      "source": "person-kannadasan",
       "target": "person-stalin",
       "weight": 4,
       "strength": 0.047
@@ -535,6 +523,12 @@
     {
       "source": "person-nsk",
       "target": "person-periyar",
+      "weight": 3,
+      "strength": 0.035
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-stalin",
       "weight": 3,
       "strength": 0.035
     },
@@ -571,6 +565,12 @@
     {
       "source": "person-kannadasan",
       "target": "person-sivaji",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-sivaji",
+      "target": "person-stalin",
       "weight": 2,
       "strength": 0.023
     },
@@ -599,12 +599,6 @@
       "strength": 0.023
     },
     {
-      "source": "person-nsk",
-      "target": "person-stalin",
-      "weight": 2,
-      "strength": 0.023
-    },
-    {
       "source": "person-nedunchezhiyan",
       "target": "person-sivaji",
       "weight": 1,
@@ -613,6 +607,12 @@
     {
       "source": "person-nsk",
       "target": "person-sivaji",
+      "weight": 1,
+      "strength": 0.012
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-stalin",
       "weight": 1,
       "strength": 0.012
     },
