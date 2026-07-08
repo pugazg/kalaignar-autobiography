@@ -40,7 +40,7 @@ export const places: Place[] = [
     name: "Tiruchirappalli",
     note: "Central Jail, 1953 — where the prisoners 'built a new republic in there.'",
     refs: ["v1-ch46"],
-    x: 950, y: 1000,
+    x: 980, y: 980,
   },
   {
     id: "palayamkottai",
@@ -48,7 +48,7 @@ export const places: Place[] = [
     name: "Palayamkottai",
     note: "The 1965 imprisonment — hunger bearable, a day without friends' faces not.",
     refs: ["v1-ch110"],
-    x: 600, y: 1720,
+    x: 590, y: 1720,
   },
   {
     id: "saidapet",
