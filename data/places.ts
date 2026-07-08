@@ -32,7 +32,7 @@ export const places: Place[] = [
     name: "Kallakudi",
     note: "The 1953 struggle that made a 29-year-old famous — and a prisoner of the cause.",
     refs: ["v1-ch43"],
-    x: 960, y: 1030,
+    x: 980, y: 1060,
   },
   {
     id: "trichy",
@@ -40,7 +40,7 @@ export const places: Place[] = [
     name: "Tiruchirappalli",
     note: "Central Jail, 1953 — where the prisoners 'built a new republic in there.'",
     refs: ["v1-ch46"],
-    x: 910, y: 1080,
+    x: 950, y: 1000,
   },
   {
     id: "palayamkottai",
@@ -48,7 +48,7 @@ export const places: Place[] = [
     name: "Palayamkottai",
     note: "The 1965 imprisonment — hunger bearable, a day without friends' faces not.",
     refs: ["v1-ch110"],
-    x: 640, y: 1720,
+    x: 600, y: 1720,
   },
   {
     id: "saidapet",
