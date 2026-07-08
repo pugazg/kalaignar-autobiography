@@ -16,7 +16,7 @@ export const places: Place[] = [
     name: "Thirukkuvalai",
     note: "The delta village where the story begins, 1924 — the 'ordinary family' of the Volume 4 preface.",
     refs: ["v1-ch01", "v4-ch02"],
-    x: 1320, y: 1120,
+    x: 1250, y: 1120,
   },
   {
     id: "tiruvarur",
@@ -24,7 +24,7 @@ export const places: Place[] = [
     name: "Tiruvarur",
     note: "Schooling that ended early — the movement became the university instead.",
     refs: ["v1-ch04"],
-    x: 1290, y: 1090,
+    x: 1200, y: 1000,
   },
   {
     id: "kallakudi",
