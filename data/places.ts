@@ -80,7 +80,7 @@ export const places: Place[] = [
     name: "Kanyakumari",
     note: "The 'sky-touching' Thiruvalluvar statue rising where the three seas meet.",
     refs: ["v5-ch33"],
-    x: 600, y: 1950,
+    x: 530, y: 1950,
   },
   {
     id: "sriperumbudur",
@@ -88,7 +88,7 @@ export const places: Place[] = [
     name: "Sriperumbudur",
     note: "The night of May 21, 1991 — 'the unexpected murder' that reshaped everything.",
     refs: ["v4-ch13"],
-    x: 1420, y: 190,
+    x: 1370, y: 250,
   },
 ];
 
