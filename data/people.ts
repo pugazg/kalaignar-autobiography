@@ -115,6 +115,56 @@ export const people: Person[] = [
     firstAppears: "Volume 3, the prison letter",
     refs: ["v3-ch30", "v5-ch11", "v6-ch29"],
   },
+  {
+    id: "nsk",
+    tamil: "என்.எஸ். கிருஷ்ணன்",
+    name: "N. S. Krishnan (Kalaivanar)",
+    role: "The comedian-conscience of the Tamil stage",
+    relationship:
+      "'Kalaivanar' N. S. Krishnan — the beloved comedian whose humour carried social reform, a presence from the earliest chapters of the memoir's world.",
+    firstAppears: "Volume 1, the early stage years",
+    refs: ["v1-ch03"],
+  },
+  {
+    id: "jayalalithaa",
+    tamil: "ஜெயலலிதா",
+    name: "J. Jayalalithaa",
+    role: "The long adversary",
+    relationship:
+      "The political rival of the later volumes — the AIADMK leader across whom the decades of Volumes 3 to 6 are contested. The most-named contemporary figure of the memoir's second half.",
+    firstAppears: "Volume 3 onward",
+    refs: ["v3-ch16"],
+  },
+  {
+    id: "nedunchezhiyan",
+    tamil: "நெடுஞ்செழியன்",
+    name: "V. R. Nedunchezhiyan",
+    role: "Senior colleague of the movement",
+    relationship:
+      "A senior DMK figure and cabinet colleague from the movement's early governing years, present through the founding decades.",
+    firstAppears: "Volume 1, the early party",
+    refs: ["v1-ch119"],
+  },
+  {
+    id: "kannadasan",
+    tamil: "கண்ணதாசன்",
+    name: "Kannadasan",
+    role: "Poet, comrade, then estranged",
+    relationship:
+      "The great lyricist of the movement's cinema years — a fellow writer whose path with the party crossed, diverged and is remembered across the volumes.",
+    firstAppears: "Volume 1, the cinema years",
+    refs: ["v1-ch26"],
+  },
+  {
+    id: "bharathidasan",
+    tamil: "பாரதிதாசன்",
+    name: "Bharathidasan",
+    role: "The revolutionary poet",
+    relationship:
+      "'Puratchi Kavignar' Bharathidasan — the Dravidian movement's revolutionary poet, whose verse and example thread through the memoir's literary self-understanding.",
+    firstAppears: "Volume 1",
+    refs: ["v1-ch05"],
+  },
 ];
 
 export const personById = new Map(people.map((p) => [p.id, p]));

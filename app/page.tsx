@@ -13,6 +13,8 @@ import Hero from "@/sections/Hero";
 import Governance from "@/sections/Governance";
 import AgainstTheWorld from "@/sections/AgainstTheWorld";
 import Character from "@/sections/Character";
+import RelationshipGraph from "@/sections/RelationshipGraph";
+import DiscoverChapters from "@/sections/DiscoverChapters";
 import Eelam from "@/sections/Eelam";
 import SocialJustice from "@/sections/SocialJustice";
 import Journey from "@/sections/Journey";
@@ -42,9 +44,11 @@ export default function Home() {
         <Eelam />
         <Journey />
         <Themes />
+        <DiscoverChapters />
         <Governance />
         <SocialJustice />
         <People />
+        <RelationshipGraph />
         <Character />
         <Quotes />
         <StatsDashboard />

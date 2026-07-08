@@ -61,3 +61,62 @@ body {
 .skip-link:focus-visible {
   top: 0.75rem;
 }
+
+/* ----------------------------------------------------------------------------
+   Print stylesheet — "Print → Save as PDF" produces a clean, readable document.
+   Hides interactive chrome, flattens colours to ink-on-paper, preserves the
+   Tamil/English text, citations and headings. Serves students and offline use
+   without a server-side PDF generator.
+---------------------------------------------------------------------------- */
+@media print {
+  /* hide interactive / navigational chrome that has no meaning on paper */
+  nav, header, footer,
+  [data-print="hide"],
+  button, .focus-ring[role="button"],
+  [aria-label="Back to top"],
+  [role="dialog"] {
+    display: none !important;
+  }
+
+  /* flatten to ink on paper; drop shadows, dark mode, backgrounds */
+  :root, .dark {
+    --tw-bg-opacity: 1;
+  }
+  html, body {
+    background: #ffffff !important;
+    color: #0F1720 !important;
+  }
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+  }
+
+  /* let sections flow naturally, full width, no clipping */
+  section {
+    break-inside: avoid-page;
+    padding: 1.5rem 0 !important;
+    max-width: 100% !important;
+  }
+  section, article, li, figure {
+    page-break-inside: avoid;
+  }
+
+  /* keep headings with their content */
+  h1, h2, h3, h4 { page-break-after: avoid; }
+
+  /* citation chips: show the reference as plain text */
+  a[href^="/read/"]::after {
+    content: " [" attr(href) "]";
+    font-size: 0.7em;
+    color: #6b6b6b;
+  }
+
+  /* images shouldn't overflow the page */
+  img, svg { max-width: 100% !important; height: auto !important; }
+
+  /* a discreet source line on every printed page */
+  @page {
+    margin: 1.8cm;
+  }
+}

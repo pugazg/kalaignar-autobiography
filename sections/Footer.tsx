@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen } from "lucide-react";
+import { BookOpen, MessageSquarePlus } from "lucide-react";
 import { siteMeta } from "@/data/meta";
 import { useLang } from "@/lib/i18n";
 
@@ -52,6 +52,15 @@ export default function Footer() {
               ? "ஆறு தொகுதிகளின் 391 அத்தியாயங்களும் மூல தமிழில் இங்கே வாசிக்கக் கிடைக்கின்றன."
               : "All 391 chapters of the six volumes are readable here in the original Tamil."}
           </p>
+          <a
+            href="https://github.com/pugazg/kalaignar-autobiography/issues/new?title=Correction&labels=correction&body=Chapter%20(VN-chNN)%3A%20%0AWhat%20should%20change%3A%20%0ASource%2Freason%3A%20"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="focus-ring inline-flex items-center gap-1.5 text-xs font-medium text-marina underline-offset-2 hover:underline dark:text-marina-light"
+          >
+            <MessageSquarePlus className="h-3.5 w-3.5" aria-hidden />
+            {ta ? "திருத்தத்தை பரிந்துரைக்கவும்" : "Suggest a correction"}
+          </a>
         </div>
       </div>
       <div className="border-t border-ink/10 py-5 text-center text-xs text-ink/55 dark:border-white/10 dark:text-night-text/55">

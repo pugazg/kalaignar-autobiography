@@ -16,6 +16,7 @@ import type { ChapterRef } from "@/data/references";
 import { volumeMeta } from "@/data/references";
 import { useResearch } from "@/lib/ResearchMode";
 import CiteButton from "@/components/CiteButton";
+import ShareButtons from "@/components/ShareButtons";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
@@ -153,6 +154,10 @@ export default function Reader({
         <h1 className="mt-3 font-tamil text-3xl font-semibold leading-snug text-ink dark:text-night-text sm:text-4xl" lang="ta">
           {chapter.title}
         </h1>
+
+        <div className="mt-4" data-print="hide">
+          <ShareButtons title={`${chapter.title} · நெஞ்சுக்கு நீதி`} path={`/read/${chapter.id}`} />
+        </div>
 
         {research && (
           <aside className="mt-6 rounded-xl border border-marina/25 bg-marina/[0.04] p-4 text-sm dark:bg-marina/10" aria-label="Research metadata">

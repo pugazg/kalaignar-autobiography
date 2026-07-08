@@ -1,0 +1,626 @@
+{
+  "schemaVersion": "1.0",
+  "origin": "merged",
+  "nodes": [
+    {
+      "id": "person-jayalalithaa",
+      "en": "J. Jayalalithaa",
+      "ta": "ஜெயலலிதா",
+      "role": "The long adversary",
+      "mentions": 1254,
+      "chapters": 89,
+      "firstChapter": "v3-ch16",
+      "r": 40.0,
+      "x": 450.0,
+      "y": 120.0
+    },
+    {
+      "id": "person-mgr",
+      "en": "M. G. Ramachandran (MGR)",
+      "ta": "எம்.ஜி.ஆர்.",
+      "role": "Comrade, then rival of a lifetime",
+      "mentions": 653,
+      "chapters": 138,
+      "firstChapter": "v1-ch121",
+      "r": 32.8,
+      "x": 603.4,
+      "y": 157.8
+    },
+    {
+      "id": "person-periyar",
+      "en": "Periyar E. V. Ramasamy",
+      "ta": "பெரியார்",
+      "role": "The mentor",
+      "mentions": 411,
+      "chapters": 142,
+      "firstChapter": "v1-ch01",
+      "r": 28.9,
+      "x": 721.6,
+      "y": 262.5
+    },
+    {
+      "id": "person-anna",
+      "en": "C. N. Annadurai (Anna)",
+      "ta": "அறிஞர் அண்ணா",
+      "role": "The elder brother",
+      "mentions": 399,
+      "chapters": 162,
+      "firstChapter": "v1-ch01",
+      "r": 28.7,
+      "x": 777.6,
+      "y": 410.2
+    },
+    {
+      "id": "person-kamaraj",
+      "en": "K. Kamaraj",
+      "ta": "காமராஜர்",
+      "role": "The rival he mourned",
+      "mentions": 292,
+      "chapters": 100,
+      "firstChapter": "v1-ch108",
+      "r": 26.5,
+      "x": 758.6,
+      "y": 567.0
+    },
+    {
+      "id": "person-rajaji",
+      "en": "C. Rajagopalachari (Rajaji)",
+      "ta": "ராஜாஜி",
+      "role": "The first great adversary",
+      "mentions": 247,
+      "chapters": 83,
+      "firstChapter": "v1-ch05",
+      "r": 25.5,
+      "x": 668.8,
+      "y": 697.0
+    },
+    {
+      "id": "person-maran",
+      "en": "Murasoli Maran",
+      "ta": "முரசொலி மாறன்",
+      "role": "Nephew, editor, Union minister",
+      "mentions": 177,
+      "chapters": 95,
+      "firstChapter": "v1-ch09",
+      "r": 23.8,
+      "x": 529.0,
+      "y": 770.4
+    },
+    {
+      "id": "person-stalin",
+      "en": "M. K. Stalin",
+      "ta": "மு.க. ஸ்டாலின்",
+      "role": "Son and successor-in-training",
+      "mentions": 113,
+      "chapters": 51,
+      "firstChapter": "v1-ch01",
+      "r": 21.8,
+      "x": 371.0,
+      "y": 770.4
+    },
+    {
+      "id": "person-nedunchezhiyan",
+      "en": "V. R. Nedunchezhiyan",
+      "ta": "நெடுஞ்செழியன்",
+      "role": "Senior colleague of the movement",
+      "mentions": 73,
+      "chapters": 50,
+      "firstChapter": "v1-ch119",
+      "r": 20.3,
+      "x": 231.2,
+      "y": 697.0
+    },
+    {
+      "id": "person-kannadasan",
+      "en": "Kannadasan",
+      "ta": "கண்ணதாசன்",
+      "role": "Poet, comrade, then estranged",
+      "mentions": 42,
+      "chapters": 21,
+      "firstChapter": "v1-ch26",
+      "r": 18.8,
+      "x": 141.4,
+      "y": 567.0
+    },
+    {
+      "id": "person-bharathidasan",
+      "en": "Bharathidasan",
+      "ta": "பாரதிதாசன்",
+      "role": "The revolutionary poet",
+      "mentions": 38,
+      "chapters": 31,
+      "firstChapter": "v1-ch05",
+      "r": 18.5,
+      "x": 122.4,
+      "y": 410.2
+    },
+    {
+      "id": "person-sivaji",
+      "en": "Sivaji Ganesan",
+      "ta": "சிவாஜி கணேசன்",
+      "role": "The movement's first screen voice",
+      "mentions": 28,
+      "chapters": 15,
+      "firstChapter": "v1-ch39",
+      "r": 17.9,
+      "x": 178.4,
+      "y": 262.5
+    },
+    {
+      "id": "person-nsk",
+      "en": "N. S. Krishnan (Kalaivanar)",
+      "ta": "என்.எஸ். கிருஷ்ணன்",
+      "role": "The comedian-conscience of the Tamil stage",
+      "mentions": 10,
+      "chapters": 6,
+      "firstChapter": "v1-ch139",
+      "r": 16.3,
+      "x": 296.6,
+      "y": 157.8
+    }
+  ],
+  "edges": [
+    {
+      "source": "person-anna",
+      "target": "person-periyar",
+      "weight": 78,
+      "strength": 0.907
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-periyar",
+      "weight": 66,
+      "strength": 0.767
+    },
+    {
+      "source": "person-anna",
+      "target": "person-mgr",
+      "weight": 62,
+      "strength": 0.721
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-mgr",
+      "weight": 62,
+      "strength": 0.721
+    },
+    {
+      "source": "person-maran",
+      "target": "person-mgr",
+      "weight": 61,
+      "strength": 0.709
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-maran",
+      "weight": 56,
+      "strength": 0.651
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-mgr",
+      "weight": 50,
+      "strength": 0.581
+    },
+    {
+      "source": "person-maran",
+      "target": "person-periyar",
+      "weight": 48,
+      "strength": 0.558
+    },
+    {
+      "source": "person-anna",
+      "target": "person-kamaraj",
+      "weight": 47,
+      "strength": 0.547
+    },
+    {
+      "source": "person-anna",
+      "target": "person-rajaji",
+      "weight": 45,
+      "strength": 0.523
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-periyar",
+      "weight": 44,
+      "strength": 0.512
+    },
+    {
+      "source": "person-anna",
+      "target": "person-maran",
+      "weight": 43,
+      "strength": 0.5
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-periyar",
+      "weight": 42,
+      "strength": 0.488
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-rajaji",
+      "weight": 41,
+      "strength": 0.477
+    },
+    {
+      "source": "person-anna",
+      "target": "person-jayalalithaa",
+      "weight": 40,
+      "strength": 0.465
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-rajaji",
+      "weight": 38,
+      "strength": 0.442
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-maran",
+      "weight": 32,
+      "strength": 0.372
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-rajaji",
+      "weight": 31,
+      "strength": 0.36
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-kamaraj",
+      "weight": 31,
+      "strength": 0.36
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-stalin",
+      "weight": 31,
+      "strength": 0.36
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-stalin",
+      "weight": 29,
+      "strength": 0.337
+    },
+    {
+      "source": "person-maran",
+      "target": "person-stalin",
+      "weight": 28,
+      "strength": 0.326
+    },
+    {
+      "source": "person-anna",
+      "target": "person-stalin",
+      "weight": 24,
+      "strength": 0.279
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-stalin",
+      "weight": 23,
+      "strength": 0.267
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-nedunchezhiyan",
+      "weight": 23,
+      "strength": 0.267
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-periyar",
+      "weight": 22,
+      "strength": 0.256
+    },
+    {
+      "source": "person-anna",
+      "target": "person-nedunchezhiyan",
+      "weight": 22,
+      "strength": 0.256
+    },
+    {
+      "source": "person-anna",
+      "target": "person-bharathidasan",
+      "weight": 19,
+      "strength": 0.221
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-periyar",
+      "weight": 18,
+      "strength": 0.209
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-rajaji",
+      "weight": 18,
+      "strength": 0.209
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-stalin",
+      "weight": 17,
+      "strength": 0.198
+    },
+    {
+      "source": "person-maran",
+      "target": "person-rajaji",
+      "weight": 14,
+      "strength": 0.163
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-nedunchezhiyan",
+      "weight": 13,
+      "strength": 0.151
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-mgr",
+      "weight": 12,
+      "strength": 0.14
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-mgr",
+      "weight": 12,
+      "strength": 0.14
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-maran",
+      "weight": 12,
+      "strength": 0.14
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-stalin",
+      "weight": 11,
+      "strength": 0.128
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-sivaji",
+      "weight": 11,
+      "strength": 0.128
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-kamaraj",
+      "weight": 11,
+      "strength": 0.128
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-rajaji",
+      "weight": 10,
+      "strength": 0.116
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-rajaji",
+      "weight": 10,
+      "strength": 0.116
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-sivaji",
+      "weight": 10,
+      "strength": 0.116
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-jayalalithaa",
+      "weight": 10,
+      "strength": 0.116
+    },
+    {
+      "source": "person-anna",
+      "target": "person-kannadasan",
+      "weight": 9,
+      "strength": 0.105
+    },
+    {
+      "source": "person-maran",
+      "target": "person-nedunchezhiyan",
+      "weight": 9,
+      "strength": 0.105
+    },
+    {
+      "source": "person-anna",
+      "target": "person-sivaji",
+      "weight": 8,
+      "strength": 0.093
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-kannadasan",
+      "weight": 8,
+      "strength": 0.093
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-maran",
+      "weight": 8,
+      "strength": 0.093
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-nedunchezhiyan",
+      "weight": 8,
+      "strength": 0.093
+    },
+    {
+      "source": "person-maran",
+      "target": "person-sivaji",
+      "weight": 7,
+      "strength": 0.081
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-stalin",
+      "weight": 6,
+      "strength": 0.07
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-periyar",
+      "weight": 6,
+      "strength": 0.07
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-sivaji",
+      "weight": 6,
+      "strength": 0.07
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-kannadasan",
+      "weight": 6,
+      "strength": 0.07
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-sivaji",
+      "weight": 6,
+      "strength": 0.07
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-stalin",
+      "weight": 6,
+      "strength": 0.07
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-sivaji",
+      "weight": 5,
+      "strength": 0.058
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-kannadasan",
+      "weight": 5,
+      "strength": 0.058
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-nedunchezhiyan",
+      "weight": 5,
+      "strength": 0.058
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-stalin",
+      "weight": 4,
+      "strength": 0.047
+    },
+    {
+      "source": "person-sivaji",
+      "target": "person-stalin",
+      "weight": 4,
+      "strength": 0.047
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-nsk",
+      "weight": 4,
+      "strength": 0.047
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-periyar",
+      "weight": 3,
+      "strength": 0.035
+    },
+    {
+      "source": "person-maran",
+      "target": "person-nsk",
+      "weight": 3,
+      "strength": 0.035
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-rajaji",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-sivaji",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-rajaji",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-nedunchezhiyan",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-sivaji",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-anna",
+      "target": "person-nsk",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-nsk",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-nsk",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-nsk",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-stalin",
+      "weight": 2,
+      "strength": 0.023
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-sivaji",
+      "weight": 1,
+      "strength": 0.012
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-sivaji",
+      "weight": 1,
+      "strength": 0.012
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-nsk",
+      "weight": 1,
+      "strength": 0.012
+    }
+  ]
+}

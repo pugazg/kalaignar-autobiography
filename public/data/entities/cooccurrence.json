@@ -1,0 +1,801 @@
+{
+  "schemaVersion": "1.0",
+  "origin": "analyzer",
+  "edges": [
+    {
+      "source": "person-indira",
+      "target": "person-mgr",
+      "weight": 86
+    },
+    {
+      "source": "person-anna",
+      "target": "person-periyar",
+      "weight": 78
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-periyar",
+      "weight": 66
+    },
+    {
+      "source": "person-anna",
+      "target": "person-mgr",
+      "weight": 62
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-mgr",
+      "weight": 62
+    },
+    {
+      "source": "person-indira",
+      "target": "person-periyar",
+      "weight": 61
+    },
+    {
+      "source": "person-maran",
+      "target": "person-mgr",
+      "weight": 61
+    },
+    {
+      "source": "person-anna",
+      "target": "person-indira",
+      "weight": 60
+    },
+    {
+      "source": "person-anna",
+      "target": "person-nehru",
+      "weight": 59
+    },
+    {
+      "source": "person-indira",
+      "target": "person-kamaraj",
+      "weight": 56
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-maran",
+      "weight": 56
+    },
+    {
+      "source": "person-nehru",
+      "target": "person-periyar",
+      "weight": 50
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-mgr",
+      "weight": 50
+    },
+    {
+      "source": "person-indira",
+      "target": "person-maran",
+      "weight": 48
+    },
+    {
+      "source": "person-maran",
+      "target": "person-periyar",
+      "weight": 48
+    },
+    {
+      "source": "person-anna",
+      "target": "person-kamaraj",
+      "weight": 47
+    },
+    {
+      "source": "person-anna",
+      "target": "person-rajaji",
+      "weight": 45
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-periyar",
+      "weight": 44
+    },
+    {
+      "source": "person-anna",
+      "target": "person-maran",
+      "weight": 43
+    },
+    {
+      "source": "person-indira",
+      "target": "person-jayalalithaa",
+      "weight": 43
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-periyar",
+      "weight": 42
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-rajaji",
+      "weight": 41
+    },
+    {
+      "source": "person-anna",
+      "target": "person-jayalalithaa",
+      "weight": 40
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-rajaji",
+      "weight": 38
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-rajiv",
+      "weight": 37
+    },
+    {
+      "source": "person-indira",
+      "target": "person-nehru",
+      "weight": 34
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-rajiv",
+      "weight": 34
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-nehru",
+      "weight": 33
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-nehru",
+      "weight": 33
+    },
+    {
+      "source": "person-maran",
+      "target": "person-rajiv",
+      "weight": 33
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-maran",
+      "weight": 32
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-rajaji",
+      "weight": 31
+    },
+    {
+      "source": "person-indira",
+      "target": "person-rajiv",
+      "weight": 31
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-kamaraj",
+      "weight": 31
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-stalin",
+      "weight": 31
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-nehru",
+      "weight": 30
+    },
+    {
+      "source": "person-nehru",
+      "target": "person-rajaji",
+      "weight": 29
+    },
+    {
+      "source": "person-indira",
+      "target": "person-rajaji",
+      "weight": 29
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-stalin",
+      "weight": 29
+    },
+    {
+      "source": "person-maran",
+      "target": "person-stalin",
+      "weight": 28
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-vairamuthu",
+      "weight": 25
+    },
+    {
+      "source": "person-anna",
+      "target": "person-stalin",
+      "weight": 24
+    },
+    {
+      "source": "person-maran",
+      "target": "person-nehru",
+      "weight": 24
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-rajiv",
+      "weight": 24
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-stalin",
+      "weight": 23
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-nedunchezhiyan",
+      "weight": 23
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-periyar",
+      "weight": 22
+    },
+    {
+      "source": "person-anna",
+      "target": "person-nedunchezhiyan",
+      "weight": 22
+    },
+    {
+      "source": "person-indira",
+      "target": "person-nedunchezhiyan",
+      "weight": 22
+    },
+    {
+      "source": "person-anna",
+      "target": "person-rajiv",
+      "weight": 22
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-vairamuthu",
+      "weight": 22
+    },
+    {
+      "source": "person-anna",
+      "target": "person-vairamuthu",
+      "weight": 20
+    },
+    {
+      "source": "person-nehru",
+      "target": "person-stalin",
+      "weight": 19
+    },
+    {
+      "source": "person-anna",
+      "target": "person-bharathidasan",
+      "weight": 19
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-vairamuthu",
+      "weight": 19
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-periyar",
+      "weight": 18
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-nehru",
+      "weight": 18
+    },
+    {
+      "source": "person-maran",
+      "target": "person-vairamuthu",
+      "weight": 18
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-rajaji",
+      "weight": 18
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-stalin",
+      "weight": 17
+    },
+    {
+      "source": "person-nehru",
+      "target": "person-rajiv",
+      "weight": 17
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-rajiv",
+      "weight": 17
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-nehru",
+      "weight": 15
+    },
+    {
+      "source": "person-nehru",
+      "target": "person-vairamuthu",
+      "weight": 15
+    },
+    {
+      "source": "person-indira",
+      "target": "person-stalin",
+      "weight": 14
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-jayalalithaa",
+      "weight": 14
+    },
+    {
+      "source": "person-maran",
+      "target": "person-rajaji",
+      "weight": 14
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-maran",
+      "weight": 14
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-nedunchezhiyan",
+      "weight": 13
+    },
+    {
+      "source": "person-indira",
+      "target": "person-vairamuthu",
+      "weight": 13
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-mgr",
+      "weight": 12
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-mgr",
+      "weight": 12
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-maran",
+      "weight": 12
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-vairamuthu",
+      "weight": 12
+    },
+    {
+      "source": "person-stalin",
+      "target": "person-vairamuthu",
+      "weight": 12
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-stalin",
+      "weight": 11
+    },
+    {
+      "source": "person-periyar",
+      "target": "person-sivaji",
+      "weight": 11
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-kamaraj",
+      "weight": 11
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-mgr",
+      "weight": 11
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-periyar",
+      "weight": 11
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-rajaji",
+      "weight": 10
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-indira",
+      "weight": 10
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-rajaji",
+      "weight": 10
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-sivaji",
+      "weight": 10
+    },
+    {
+      "source": "person-rajiv",
+      "target": "person-vairamuthu",
+      "weight": 10
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-jayalalithaa",
+      "weight": 10
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-kamaraj",
+      "weight": 10
+    },
+    {
+      "source": "person-indira",
+      "target": "person-sivaji",
+      "weight": 9
+    },
+    {
+      "source": "person-anna",
+      "target": "person-kannadasan",
+      "weight": 9
+    },
+    {
+      "source": "person-maran",
+      "target": "person-nedunchezhiyan",
+      "weight": 9
+    },
+    {
+      "source": "person-rajiv",
+      "target": "person-stalin",
+      "weight": 9
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-anna",
+      "weight": 9
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-indira",
+      "weight": 9
+    },
+    {
+      "source": "person-anna",
+      "target": "person-sivaji",
+      "weight": 8
+    },
+    {
+      "source": "person-indira",
+      "target": "person-kannadasan",
+      "weight": 8
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-kannadasan",
+      "weight": 8
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-maran",
+      "weight": 8
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-nedunchezhiyan",
+      "weight": 8
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-rajiv",
+      "weight": 8
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-nehru",
+      "weight": 8
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-vairamuthu",
+      "weight": 8
+    },
+    {
+      "source": "person-nehru",
+      "target": "person-sivaji",
+      "weight": 7
+    },
+    {
+      "source": "person-maran",
+      "target": "person-sivaji",
+      "weight": 7
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-rajiv",
+      "weight": 7
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-vairamuthu",
+      "weight": 7
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-rajiv",
+      "weight": 7
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-rajiv",
+      "weight": 7
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-stalin",
+      "weight": 6
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-periyar",
+      "weight": 6
+    },
+    {
+      "source": "person-kamaraj",
+      "target": "person-sivaji",
+      "weight": 6
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-kannadasan",
+      "weight": 6
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-sivaji",
+      "weight": 6
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-stalin",
+      "weight": 6
+    },
+    {
+      "source": "person-rajaji",
+      "target": "person-sivaji",
+      "weight": 5
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-kannadasan",
+      "weight": 5
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-nedunchezhiyan",
+      "weight": 5
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-nehru",
+      "weight": 5
+    },
+    {
+      "source": "person-sivaji",
+      "target": "person-vairamuthu",
+      "weight": 5
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-bharathidasan",
+      "weight": 5
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-vairamuthu",
+      "weight": 4
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-stalin",
+      "weight": 4
+    },
+    {
+      "source": "person-sivaji",
+      "target": "person-stalin",
+      "weight": 4
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-rajaji",
+      "weight": 4
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-vairamuthu",
+      "weight": 4
+    },
+    {
+      "source": "person-mgr",
+      "target": "person-nsk",
+      "weight": 4
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-periyar",
+      "weight": 3
+    },
+    {
+      "source": "person-anna",
+      "target": "person-chelva",
+      "weight": 3
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-vairamuthu",
+      "weight": 3
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-rajiv",
+      "weight": 3
+    },
+    {
+      "source": "person-maran",
+      "target": "person-nsk",
+      "weight": 3
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-rajaji",
+      "weight": 2
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-sivaji",
+      "weight": 2
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-rajaji",
+      "weight": 2
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-indira",
+      "weight": 2
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-jayalalithaa",
+      "weight": 2
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-periyar",
+      "weight": 2
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-nedunchezhiyan",
+      "weight": 2
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-sivaji",
+      "weight": 2
+    },
+    {
+      "source": "person-rajiv",
+      "target": "person-sivaji",
+      "weight": 2
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-nedunchezhiyan",
+      "weight": 2
+    },
+    {
+      "source": "person-anna",
+      "target": "person-nsk",
+      "weight": 2
+    },
+    {
+      "source": "person-bharathidasan",
+      "target": "person-nsk",
+      "weight": 2
+    },
+    {
+      "source": "person-jayalalithaa",
+      "target": "person-nsk",
+      "weight": 2
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-vairamuthu",
+      "weight": 2
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-stalin",
+      "weight": 2
+    },
+    {
+      "source": "person-kannadasan",
+      "target": "person-nsk",
+      "weight": 2
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-stalin",
+      "weight": 2
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-mgr",
+      "weight": 1
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-sivaji",
+      "weight": 1
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-sivaji",
+      "weight": 1
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-nsk",
+      "weight": 1
+    },
+    {
+      "source": "person-indira",
+      "target": "person-nsk",
+      "weight": 1
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-sivaji",
+      "weight": 1
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-maran",
+      "weight": 1
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-stalin",
+      "weight": 1
+    },
+    {
+      "source": "person-chelva",
+      "target": "person-rajiv",
+      "weight": 1
+    },
+    {
+      "source": "person-ambedkar",
+      "target": "person-kannadasan",
+      "weight": 1
+    },
+    {
+      "source": "person-nedunchezhiyan",
+      "target": "person-nsk",
+      "weight": 1
+    },
+    {
+      "source": "person-nsk",
+      "target": "person-rajiv",
+      "weight": 1
+    }
+  ]
+}
