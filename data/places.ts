@@ -56,7 +56,7 @@ export const places: Place[] = [
     name: "Saidapet",
     note: "The constituency of February 1967 — victory received without gloating, at his own insistence.",
     refs: ["v1-ch128"],
-    x: 1500, y: 170,
+    x: 1450, y: 210,
   },
   {
     id: "chennai",
@@ -64,7 +64,7 @@ export const places: Place[] = [
     name: "Chennai (Madras)",
     note: "Fort St. George, the Marina, Anna Arivalayam, Valluvar Kottam — the capital of the whole arc.",
     refs: ["v2-ch66", "v5-ch01", "v6-ch19"],
-    x: 1520, y: 150,
+    x: 1470, y: 190,
   },
   {
     id: "appakoodal",
