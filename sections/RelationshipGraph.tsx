@@ -65,6 +65,9 @@ export default function RelationshipGraph() {
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
           <svg viewBox="0 0 900 900" className="w-full" role="group" aria-label="Relationship graph">
+            <desc>
+              {`A network of ${data.nodes.length} figures the memoir names, connected when they share chapters. Strongest tie: ${data.nodes[0]?.en ?? ""}. Use the list in the side panel to explore connections.`}
+            </desc>
             {/* edges */}
             {data.edges.map((e, i) => {
               const s = byId(e.source), t = byId(e.target);

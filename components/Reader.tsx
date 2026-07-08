@@ -5,6 +5,7 @@ import {
   ArrowRight,
   Bookmark,
   BookmarkCheck,
+  Search,
   GraduationCap,
   Home,
   Minus,
@@ -45,10 +46,31 @@ export default function Reader({
   const [error, setError] = useState(false);
   const [font, setFont] = useState(1);
   const [marked, setMarked] = useState(false);
+  const [find, setFind] = useState("");
   const { research, setResearch } = useResearch();
   const { lang } = useLang();
   const restored = useRef(false);
   const vol = volumeMeta.find((v) => v.volume === chapter.volume);
+
+  // In-chapter find: split each paragraph on the query and wrap matches.
+  const highlight = (text: string) => {
+    const q = find.trim();
+    if (q.length < 2) return text;
+    try {
+      const parts = text.split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi"));
+      return parts.map((part, i) =>
+        part.toLowerCase() === q.toLowerCase() ? (
+          <mark key={i} className="rounded bg-brass/30 px-0.5 text-ink dark:bg-brass/40 dark:text-night-text">
+            {part}
+          </mark>
+        ) : (
+          part
+        ),
+      );
+    } catch {
+      return text;
+    }
+  };
 
   // Load the chapter text (shipped as static JSON — the archive's open data layer).
   useEffect(() => {
@@ -144,6 +166,22 @@ export default function Reader({
             </button>
           </div>
         </div>
+        <div className="mx-auto flex max-w-3xl items-center gap-2 border-t border-ink/5 px-4 py-1.5 dark:border-white/5" data-print="hide">
+          <Search className="h-3.5 w-3.5 shrink-0 text-ink/40 dark:text-night-text/40" aria-hidden />
+          <input
+            value={find}
+            onChange={(e) => setFind(e.target.value)}
+            placeholder={lang === "ta" ? "இந்த அத்தியாயத்தில் தேடு…" : "Find in this chapter…"}
+            className="w-full bg-transparent text-xs outline-none placeholder:text-ink/40 dark:placeholder:text-night-text/40"
+            aria-label={lang === "ta" ? "இந்த அத்தியாயத்தில் தேடு" : "Find in this chapter"}
+            lang="ta"
+          />
+          {find && (
+            <button onClick={() => setFind("")} className="focus-ring shrink-0 rounded px-1.5 text-xs text-ink/50 hover:text-marina dark:text-night-text/50" aria-label="Clear search">
+              ✕
+            </button>
+          )}
+        </div>
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pb-24 pt-10 sm:px-6">
@@ -191,7 +229,14 @@ export default function Reader({
             </p>
           )}
           {!data && !error && <p className="font-body text-sm text-ink/50 dark:text-night-text/50">{lang === "ta" ? chromeTa.openingVolume : "Opening the volume…"}</p>}
-          {data?.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+          {data?.paragraphs.map((p, i) => <p key={i}>{highlight(p)}</p>)}
+          {data && (
+            <p className="mt-10 border-t border-ink/10 pt-4 font-body text-xs italic text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
+              {lang === "ta"
+                ? "இந்த மூல தமிழ் உரை அச்சு நூலிலிருந்து எடுக்கப்பட்டது; அரிதாக எழுத்துப் பிழைகள் இருக்கலாம். திருத்தங்களைப் பரிந்துரைக்க வரவேற்கிறோம்."
+                : "This original Tamil text is drawn from the printed volumes and may contain occasional transcription errors. Corrections are welcome via the link in the footer."}
+            </p>
+          )}
         </article>
 
         <nav className="mt-16 flex items-stretch justify-between gap-3 border-t border-ink/10 pt-6 dark:border-white/10" aria-label="Chapter navigation">
