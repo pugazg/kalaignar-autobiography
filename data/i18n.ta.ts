@@ -25,6 +25,7 @@ export const navTa: Record<string, string> = {
   quotes: "வாசகங்கள்",
   dashboard: "எண்களில்",
   gallery: "காட்சியகம்",
+  scholarship: "ஆய்வுக் கட்டுரைகள்",
   references: "மேற்கோள்கள்",
 };
 
@@ -35,7 +36,7 @@ export const chromeTa = {
   searchEmpty: "இன்னும் பொருந்தவில்லை — ஓர் ஆண்டு (\u201c1953\u201d), ஓர் இடம் (\u201cகல்லக்குடி\u201d), அல்லது அத்தியாயத் தலைப்பை முயலுங்கள்.",
   categories: {
     All: "அனைத்தும்", Timeline: "காலவரிசை", Theme: "கருப்பொருள்", Person: "நபர்",
-    Place: "இடம்", Quote: "வாசகம்", Chapter: "அத்தியாயம்", Pillar: "தூண்", Governance: "ஆட்சி", World: "உலகம்", Chronicle: "வரலாறு", Principle: "கொள்கை", SocialJustice: "சமூக நீதி", Eelam: "ஈழம்", Character: "பண்பு",
+    Place: "இடம்", Quote: "வாசகம்", Chapter: "அத்தியாயம்", Pillar: "தூண்", Governance: "ஆட்சி", World: "உலகம்", Chronicle: "வரலாறு", Principle: "கொள்கை", SocialJustice: "சமூக நீதி", Eelam: "ஈழம்", Character: "பண்பு", Scholarship: "ஆய்வு",
   } as Record<string, string>,
   researchOn: "ஆய்வு நிலை இயக்கத்தில்",
   researchOff: "ஆய்வு நிலை",
@@ -169,6 +170,11 @@ export const headingsTa: Record<string, { eyebrow?: string; title: string; lede?
     eyebrow: "காட்சியகம்",
     title: "ஒரு வாழ்விலிருந்து ஆறு சட்டங்கள்",
     lede: "மூல நூலில் அச்சிடத்தக்க படங்கள் இல்லை; இவை காலகட்டங்களுக்கேற்ற மூல ஓவியங்கள் — ஆவணப் புகைப்படங்கள் கிடைத்ததும் மாற்றத் தயாராக.",
+  },
+  scholarship: {
+    eyebrow: "இரண்டாம்நிலை வாசிப்புகள்",
+    title: "நினைவேடு குறித்த ஆய்வுகள்",
+    lede: "நெஞ்சுக்கு நீதி குறித்த கல்வியாளர்களின் ஆக்கங்கள் — ஆவணத்திலிருந்து தனியே அடுக்கப்பட்டவை. இவை வெளி வாசிப்புகள்: பட்டியலிடும் முன் மதிப்பாய்வு செய்யப்பட்டாலும், இவற்றின் கூற்றுகள் அந்தந்த ஆசிரியர்களுடையவையே.",
   },
   references: {
     eyebrow: "மேற்கோள்கள்",

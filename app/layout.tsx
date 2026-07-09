@@ -16,7 +16,7 @@ const tamil = Noto_Serif_Tamil({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kalaignar-autobiography.vercel.app"),
+  metadataBase: new URL("https://nenjukkuneethi.org"),
   keywords: [
     "Kalaignar", "Karunanidhi", "Nenjukku Neethi", "நெஞ்சுக்கு நீதி",
     "Karunanidhi autobiography", "Kalaignar autobiography", "DMK history",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Kalaignar Digital Library — Nenjukku Neethi, the Complete Memoir",
     description:
       "The complete six-volume autobiography of Kalaignar M. Karunanidhi (1924–2005) as an interactive digital archive: read all 391 chapters in Tamil, explore the timeline, people, places and governance record.",
-    url: "https://kalaignar-autobiography.vercel.app",
+    url: "https://nenjukkuneethi.org",
     siteName: "Kalaignar Digital Library",
     locale: "ta_IN",
     type: "website",
@@ -56,7 +56,7 @@ const jsonLd = {
   bookFormat: "https://schema.org/EBook",
   description:
     "The complete six-volume autobiography of Kalaignar M. Karunanidhi, 1924\u20132005, presented as an interactive digital archive.",
-  url: "https://kalaignar-autobiography.vercel.app",
+  url: "https://nenjukkuneethi.org",
 };
 
 export default function RootLayout({

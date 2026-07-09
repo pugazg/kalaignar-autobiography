@@ -64,7 +64,8 @@ export default function RelationshipGraph() {
 
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
-          <svg viewBox="0 0 900 900" className="w-full" role="group" aria-label="Relationship graph">
+          <div className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:overflow-visible sm:px-0">
+            <svg viewBox="0 0 900 900" className="w-full min-w-[520px]" role="group" aria-label="Relationship graph">
             <desc>
               {`A network of ${data.nodes.length} figures the memoir names, connected when they share chapters. Strongest tie: ${data.nodes[0]?.en ?? ""}. Use the list in the side panel to explore connections.`}
             </desc>
@@ -100,6 +101,8 @@ export default function RelationshipGraph() {
                   aria-pressed={isSel}
                   onKeyDown={(ev) => (ev.key === "Enter" || ev.key === " ") && setSel(isSel ? null : n.id)}
                 >
+                  {/* transparent halo — enlarges the touch target on mobile without changing visuals */}
+                  <circle cx={n.x} cy={n.y} r={n.r + 14} fill="transparent" />
                   <circle
                     cx={n.x} cy={n.y} r={n.r}
                     className={cn(
@@ -120,8 +123,34 @@ export default function RelationshipGraph() {
                 </g>
               );
             })}
-          </svg>
+            </svg>
+          </div>
         </Reveal>
+
+        {/* Visually-hidden text equivalent — screen-reader users get the data, not just a picture */}
+        <div className="sr-only">
+          <h3>{ta ? "உறவுகளின் பட்டியல்" : "List of connections"}</h3>
+          <ul>
+            {data.nodes.map((n) => {
+              const ties = data.edges
+                .filter((e) => e.source === n.id || e.target === n.id)
+                .sort((a, b) => b.weight - a.weight)
+                .slice(0, 5)
+                .map((e) => {
+                  const other = byId(e.source === n.id ? e.target : e.source);
+                  return other ? `${label(other)} (${e.weight})` : "";
+                })
+                .filter(Boolean)
+                .join(", ");
+              return (
+                <li key={n.id}>
+                  {label(n)} — {n.mentions} {ta ? "குறிப்புகள்" : "mentions"}, {n.chapters} {ta ? "அத்தியாயங்கள்" : "chapters"}.
+                  {ties && ` ${ta ? "தொடர்புகள்" : "Connected to"}: ${ties}.`}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
         {/* side panel */}
         <Reveal delay={0.1}>

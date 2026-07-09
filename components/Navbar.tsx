@@ -27,6 +27,7 @@ export const navSections = [
   { id: "quotes", label: "Quotes" },
   { id: "dashboard", label: "In Numbers" },
   { id: "gallery", label: "Gallery" },
+  { id: "scholarship", label: "Scholarship" },
   { id: "references", label: "References" },
 ];
 

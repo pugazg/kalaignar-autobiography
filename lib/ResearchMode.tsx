@@ -46,5 +46,5 @@ export function chapterCitation(c: {
   title: string;
   pages: string;
 }) {
-  return `Karunanidhi, M. நெஞ்சுக்கு நீதி (Nenjukku Neethi), Vol. ${c.volume}, "${c.title}," ${c.pages}. Kalaignar Digital Library, https://kalaignar-autobiography.vercel.app/read/${c.id}.`;
+  return `Karunanidhi, M. நெஞ்சுக்கு நீதி (Nenjukku Neethi), Vol. ${c.volume}, "${c.title}," ${c.pages}. Kalaignar Digital Library, https://nenjukkuneethi.org/read/${c.id}.`;
 }

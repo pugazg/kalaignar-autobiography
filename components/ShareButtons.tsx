@@ -15,7 +15,7 @@ export default function ShareButtons({ title, path }: { title: string; path?: st
   const [copied, setCopied] = useState(false);
 
   const url =
-    (typeof window !== "undefined" ? window.location.origin : "https://kalaignar-autobiography.vercel.app") +
+    (typeof window !== "undefined" ? window.location.origin : "https://nenjukkuneethi.org") +
     (path ?? (typeof window !== "undefined" ? window.location.pathname : ""));
 
   const xHref = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;

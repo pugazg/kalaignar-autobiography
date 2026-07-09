@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { chapterIndex } from "@/data/references";
 
-const BASE = "https://kalaignar-autobiography.vercel.app";
+const BASE = "https://nenjukkuneethi.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

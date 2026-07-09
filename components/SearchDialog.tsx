@@ -14,6 +14,7 @@ import { beliefs, traits } from "@/data/character";
 import { principles, declarations } from "@/data/principles";
 import { quotes } from "@/data/quotes";
 import { chapterIndex } from "@/data/references";
+import { scholarship } from "@/data/scholarship";
 import { themes } from "@/data/themes";
 import { timeline } from "@/data/timeline";
 import { cn } from "@/lib/utils";
@@ -21,7 +22,7 @@ import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
 
 type Entry = {
-  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "World" | "Chronicle" | "Principle" | "SocialJustice" | "Eelam" | "Character" | "Pillar" | "Quote" | "Chapter";
+  category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "World" | "Chronicle" | "Principle" | "SocialJustice" | "Eelam" | "Character" | "Pillar" | "Quote" | "Chapter" | "Scholarship";
   title: string;
   text: string;
   anchor: string;
@@ -29,7 +30,7 @@ type Entry = {
   meta?: string; // volume/pages line shown with the result
 };
 
-const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "World", "Chronicle", "Principle", "SocialJustice", "Eelam", "Character", "Quote", "Chapter"] as const;
+const CATEGORIES = ["All", "Timeline", "Theme", "Person", "Place", "Governance", "World", "Chronicle", "Principle", "SocialJustice", "Eelam", "Character", "Quote", "Chapter", "Scholarship"] as const;
 
 function buildIndex(): Entry[] {
   const entries: Entry[] = [];
@@ -121,6 +122,14 @@ function buildIndex(): Entry[] {
     });
   for (const q of quotes)
     entries.push({ category: "Quote", title: q.english, text: `${q.tamil} ${q.context}`, anchor: "quotes" });
+  for (const s of scholarship)
+    entries.push({
+      category: "Scholarship",
+      title: `${s.author} — ${s.title}`,
+      text: `${s.summary.en} ${(s.keywords ?? []).join(" ")}`,
+      anchor: "scholarship",
+      meta: `${s.venue} · ${s.year}`,
+    });
   for (const c of chapterIndex)
     entries.push({
       category: "Chapter",

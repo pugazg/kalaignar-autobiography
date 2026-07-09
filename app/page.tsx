@@ -22,6 +22,7 @@ import People from "@/sections/People";
 import Pillars from "@/sections/Pillars";
 import Quotes from "@/sections/Quotes";
 import References from "@/sections/References";
+import Scholarship from "@/sections/Scholarship";
 import StatsDashboard from "@/sections/StatsDashboard";
 import Themes from "@/sections/Themes";
 import Timeline from "@/sections/Timeline";
@@ -53,6 +54,7 @@ export default function Home() {
         <Quotes />
         <StatsDashboard />
         <Gallery />
+        <Scholarship />
         <References />
       </main>
       <Footer />

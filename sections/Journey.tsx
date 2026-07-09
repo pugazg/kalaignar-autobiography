@@ -35,6 +35,7 @@ export default function Journey() {
                   const on = p.id === sel;
                   return (
                     <g key={p.id}>
+                      <circle cx={p.x} cy={p.y} r={44} fill="transparent" className="cursor-pointer" onClick={() => setSel(p.id)} aria-hidden="true" />
                       <circle
                         cx={p.x}
                         cy={p.y}

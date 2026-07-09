@@ -11,7 +11,7 @@ export type Citable = {
   pages: string; // e.g. "pp. 232–240"
 };
 
-const BASE = "https://kalaignar-autobiography.vercel.app";
+const BASE = "https://nenjukkuneethi.org";
 const AUTHOR = "Karunanidhi, M.";
 const WORK = "நெஞ்சுக்கு நீதி (Nenjukku Neethi)";
 const PUBLISHER = "Kalaignar Digital Library";
