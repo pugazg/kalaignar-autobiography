@@ -75,11 +75,6 @@ export default function Footer() {
             ? "கல்வி நோக்கிலான, வணிக நோக்கமற்ற மின்னணு ஆவணமாக உருவாக்கப்பட்டது."
             : "built as an educational, non-commercial digital edition."}
         </p>
-        <p className="mt-1 text-ink/45 dark:text-night-text/45">
-          {ta
-            ? "இத்தளம் Anthropic நிறுவனத்தின் Claude உதவியுடன் உருவாக்கப்பட்டது."
-            : "This website was developed with the help of Claude, by Anthropic."}
-        </p>
       </div>
     </footer>
   );
