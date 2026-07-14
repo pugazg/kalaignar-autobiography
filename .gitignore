@@ -14,3 +14,11 @@ public/source/*.pdf
 
 # Temporary files
 repository_tree.txt
+
+# OCR pipeline staging data (local only — rebuilt from source PDFs)
+pipeline/01_ocr_v2_full/
+pipeline/03_corrected_v4/
+pipeline/03_corrected_v4_1/
+pipeline/reference_verified_source_dictionary/
+vol*.pdf
+*.orig.json

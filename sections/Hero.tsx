@@ -65,7 +65,14 @@ export default function Hero() {
         initial={reduce ? false : { opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.15 }}
-        className="mt-4 max-w-4xl font-display text-4xl font-medium leading-tight tracking-tight sm:text-6xl md:text-7xl"
+        className={
+          lang === "ta"
+            ? // Tamil display type needs looser leading — கொம்பு ascenders and
+              // descenders clip under leading-tight — and the Tamil face.
+              "mt-4 max-w-4xl font-tamil text-3xl font-semibold leading-snug tracking-normal sm:text-5xl md:text-6xl"
+            : "mt-4 max-w-4xl font-display text-4xl font-medium leading-tight tracking-tight sm:text-6xl md:text-7xl"
+        }
+        lang={lang}
       >
         {tr(lang, "Kalaignar M. Karunanidhi’s Legacy", chromeTa.heroTitle)}
       </motion.h1>
@@ -106,7 +113,7 @@ export default function Hero() {
           href="#timeline"
           className="focus-ring rounded-full border border-ink/15 px-7 py-3 text-sm font-semibold text-ink/80 hover:border-marina hover:text-marina dark:border-white/20 dark:text-night-text/80 dark:hover:text-marina-light"
         >
-          Jump to the timeline
+          {tr(lang, "Jump to the timeline", chromeTa.timelineCta)}
         </a>
       </motion.div>
 

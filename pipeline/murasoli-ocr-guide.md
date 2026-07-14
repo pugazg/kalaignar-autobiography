@@ -228,3 +228,34 @@ Three pattern layers run after CSV corrections, all logged in self_heal_report.c
 V54 yield: 140 ortho + 489 glyph + 2 initial = 631 repairs; 63 suggestions for
 human review. Latin-script tokens are LEFT ALONE — Kalaignar quotes English
 sources (CAG, Times of India) verbatim, so English is content, not noise.
+
+---
+
+## Resolution workflow — which stage fixes what
+
+| Problem | Stage | Tool |
+|---|---|---|
+| Text missing / page barely read | **1.5 re-OCR** | `pipeline/reocr_failed_pages.py` (needs local tesseract + tam) |
+| Grammar-impossible sequences, glyph confusions | **3 corrections** | automatic (`--self-heal`, ortho + glyph layers) |
+| Recurring token errors needing judgment | **dictionary loop** | self_heal_report.csv suggestions → `review_corrections.csv` |
+| Garbled letter TITLES, missing DATES | **curation** | `pipeline/curated/murasoli-vNN-overrides.json` (splitter applies) |
+
+Full V54 cycle:
+```
+# 1. recover text the first OCR pass missed (auto-detects ~20 suspects incl. the TOC)
+python3 pipeline/reocr_failed_pages.py --pdf vol54.pdf --src 01_ocr_v2_full --volume 54
+# 2. corrections (normalization + rescue + ortho + glyph + CSV rules)
+python3 pipeline/apply_corrections_v4.py --src 01_ocr_v2_full --out 03_corrected_v4_1 \
+    --volume 54 --min-confidence medium \
+    --corrections pipeline/reference_verified_source_dictionary/review_corrections.csv \
+    --corrections pipeline/reference_verified_source_dictionary/automatic_corrections.csv \
+    --self-heal --vocab public/data/text \
+    --trusted pipeline/reference_verified_source_dictionary/trusted_terms_for_murasoli.json
+# 3. review: dropped/rescued/self_heal CSVs; fold accepted suggestions into review_corrections.csv
+# 4. rebuild pages + letters (curated overrides auto-apply if the file exists)
+python3 pipeline/builders/build_murasoli_collection.py --src 03_corrected_v4_1 --volume 54
+python3 pipeline/builders/split_murasoli_letters.py --volume 54 --no-unnumbered           # report
+#    edit pipeline/curated/murasoli-v54-overrides.json (titles/dates vs the printed TOC)
+python3 pipeline/builders/split_murasoli_letters.py --volume 54 --no-unnumbered --publish
+```
+Iterate 1→4 until the report and a spot-read satisfy you; then deploy the dev zip.

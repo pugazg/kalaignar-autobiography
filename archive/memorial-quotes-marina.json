@@ -1,0 +1,47 @@
+{
+  "note": "Inscriptions photographed by the maintainer at the Kalaignar Memorial (Marina, Chennai), July 2026. Each stone is bilingual and carries Kalaignar's signature with the legend 'தமிழ் வெல்லும்'. NOT surfaced on the site: none of these sentences occur in the Nenjukku Neethi corpus (verified 2026-07-09), so they cannot carry VN·chNN citations. Kept here for possible future use (gallery entries with photo provenance, or an explicitly uncited memorial cluster).",
+  "corpusCheck": {
+    "checkedAt": "2026-07-09",
+    "method": "key-phrase search across all 391 chapters (public/data/text)",
+    "verbatimMatches": 0,
+    "echoes": [
+      {
+        "quote": "laws-dictators",
+        "ref": "v1-ch113",
+        "note": "The memoir uses the same சாமரம் image in the same argument: 'வெண்சாமரம் வீசிடும் உள்நாட்டுப் புல்லுருவிகளை ஒழித்திடவும்தான் பாதுகாப்புச் சட்டம் பயன்பட்டிட வேண்டுமேயல்லாது…'"
+      },
+      {
+        "quote": "self-respect-milk",
+        "ref": "v5-ch49",
+        "note": "Self-respect as the movement's non-negotiable possession: 'தி.மு.கழகம் எனும் இந்த அமைப்பின் சுயமரியாதையை இழந்துவிட முடியாது…'"
+      }
+    ]
+  },
+  "quotes": [
+    {
+      "id": "memorial-01",
+      "ta": "தோல்வியால் அனலில் இட்ட அல்லித் தண்டாகவும் ஆகிவிடக்கூடாது! வெற்றியை; நெற்றியில் எழுதிக் கொண்டும் திரியக்கூடாது!",
+      "en": "Failure should not become a lily in the fire! Success should not be written on the forehead!"
+    },
+    {
+      "id": "memorial-02",
+      "ta": "பெரியார் என்னும் மலைப்பாறையில் செதுக்கப்பட்ட மாமல்லபுரத்துச் சிற்பம் அண்ணா! நாமெல்லாம் அந்தச் சிற்பத்தின் மாதிரி வடிவங்கள்!",
+      "en": "Anna was a Mamallapuram Sculpture carved in the rock \"Periyar\"; we are all models of that sculpture!"
+    },
+    {
+      "id": "memorial-03",
+      "ta": "சட்டங்கள் சமுதாய மறுமலர்ச்சிக்குப் பயன்படவேண்டுமே தவிர; சர்வாதிகாரிகளுக்குச் சாமரம் வீசிடப் பயன்படக் கூடாது!",
+      "en": "Laws should be useful for the reformation of the society and not to please the dictators."
+    },
+    {
+      "id": "memorial-04",
+      "ta": "சுதந்திரத்தை இழந்து விட்டால் கூட போராடி மீட்டுக் கொள்ள முடிகிறது. ஆனால் சுயமரியாதையை இழந்து விட்டால் அது தரையில் சிந்திய பால் தான்!",
+      "en": "Even if you lose freedom it may be reclaimed after a struggle. But losing self-respect is like milk spilt on the floor!"
+    },
+    {
+      "id": "memorial-05",
+      "ta": "வெற்றிகளால் அடக்கத்தையும் தோல்விகளால் ஊக்கத்தையும் பெறக்கூடியவர்களுக்கு வீழ்ச்சி என்பது எப்போதும் இல்லை!",
+      "en": "Those who are humble in success and are encouraged by failure will never fail!"
+    }
+  ]
+}

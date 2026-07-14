@@ -60,6 +60,20 @@ SIGNOFF = re.compile(r"அன்?புள்?ள\s*[,.]?\s*(?:\n\s*)?மு\s*\
 # trailing stray digit tolerated: "24-6-20168" → 2016
 DATE = re.compile(r"\b(\d{1,2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{4})\d?\b")
 
+# Running headers glued INTO body lines by the OCR (page header merged with the
+# first paragraph line). Always accompanied by junk — latin fragments, garbled
+# page numbers ("தலைவர் கலைஞர் IPSS", "] 83", "1 6டு கலைஞரின் கடிதங்கள்") —
+# which is what distinguishes them from genuine prose mentions.
+INLINE_HEADERS = [
+    # "...தலைவர் கலைஞர் <junk>" — கலைஞர் itself is often garbled (கலைஞார்,
+    # கலைஞா, or reduced to bare "கலை" with latin junk); page numbers may be
+    # Tamil digits ("0௫"). Junk = up to 3 short latin/digit/bracket tokens.
+    re.compile(r"\s*தலைவர்?\s*கலை(?:ஞார்|ஞர்|ஞாா்|ஞா|ஞ)?\s*(?:[A-Za-z0-9\[\]|.௦-௯]{1,5}\s*){0,3}(?=\s|$)"),
+    re.compile(r"\s*தலைவர்?\s*கலைஞர்\s*[இடுஉர]\s*(?=\s|$)"),
+    # "<junk> கலைஞரின் கடிதங்கள் ..." at/near line start
+    re.compile(r"(?:^|(?<=\s))(?:[A-Za-z0-9\[\]|டு௦-௯]{1,4}\s*){0,2}கலைஞரின்\s*கடிதங்கள்?\s*"),
+]
+
 # Running headers / pure page-number lines to strip.
 HEADERS = [
     re.compile(r"^\s*\d{0,3}\s*கலைஞரின்?\s*கடிதங்கள்?\s*\d{0,3}\s*$"),
@@ -67,19 +81,43 @@ HEADERS = [
     re.compile(r"^\s*[\d\]lI|]{1,4}\s*$"),
 ]
 
+# CATCH-ALL for header lines whose கலைஞர் dissolved into arbitrary junk
+# ("தலைவர் HONEY HIM 309", "தலைவர் HONE ERM 63", "தலைவர் கலை(சா் 255",
+# "தலைவர் கலைஞாரா் 1 49"). A SHORT standalone line starting தலைவர் is dropped
+# only when its remainder carries a junk signal — a Latin letter, digit,
+# Tamil digit or bracket, or a garbled கலை fragment. Genuine prose lines that
+# happen to start with தலைவர் (…பேரவைத்\nதலைவர் அனுமதி…) continue in pure
+# Tamil and never match.
+HEADER_RESIDUE = re.compile(r"^\s*தலைவ[ரா]்?\s+(?P<rest>.{1,26})$")
+JUNK_SIGNAL = re.compile(r"[A-Za-z0-9௦-௯()\[\]|]")
+
 def norm(s: str) -> str:
     return unicodedata.normalize("NFC", ZW.sub("", s))
 
 def is_header_line(line: str) -> bool:
-    return any(h.match(line.strip()) for h in HEADERS)
+    line = line.strip()
+    if any(h.match(line) for h in HEADERS):
+        return True
+    m = HEADER_RESIDUE.match(line)
+    if m:
+        rest = m.group("rest").strip()
+        if JUNK_SIGNAL.search(rest) or rest.startswith("கலை"):
+            return True
+    return False
 
 def clean_lines(paragraphs):
-    """Flatten a page's paragraphs to lines, dropping running headers."""
+    """Flatten a page's paragraphs to lines, dropping running headers —
+    both standalone header lines and headers glued into body lines."""
     lines = []
     for p in paragraphs:
         for ln in norm(p).split("\n"):
-            if ln.strip() and not is_header_line(ln):
-                lines.append(ln.rstrip())
+            if not ln.strip() or is_header_line(ln):
+                continue
+            for rx in INLINE_HEADERS:
+                ln = rx.sub(" ", ln)
+            ln = re.sub(r"\s{2,}", " ", ln).rstrip()
+            if ln.strip():
+                lines.append(ln)
         lines.append("")  # paragraph break marker
     return lines
 
@@ -103,6 +141,61 @@ def lines_to_paragraphs(lines):
     if cur:
         paras.append(" ".join(cur))
     return paras
+
+CURATED_DIR = "pipeline/curated"
+
+def curated_path(volume):
+    return os.path.join(CURATED_DIR, f"murasoli-v{volume}-overrides.json")
+
+def apply_curated_overrides(letters, volume, report):
+    """Human-verified per-letter facts beat OCR. The overrides file maps
+    letter id -> {title: {en, ta}, date: "YYYY-MM-DD"}; empty values are
+    ignored. Maintained by hand against the printed volume/TOC — this is
+    the right home for garbled TITLES and missing DATES, which are
+    per-letter facts, not global token corrections."""
+    path = curated_path(volume)
+    if not os.path.exists(path):
+        return
+    overrides = json.load(open(path, encoding="utf-8")).get("letters", {})
+    n = 0
+    for l in letters:
+        o = overrides.get(l["id"])
+        if not o:
+            continue
+        changed = False
+        t = o.get("title") or {}
+        if isinstance(t, dict):
+            for k in ("en", "ta"):
+                if t.get(k):
+                    l["title"][k] = t[k]; changed = True
+        if o.get("date"):
+            l["date"] = o["date"]; changed = True
+        if changed:
+            l["curated"] = True
+            n += 1
+    report["curatedOverridesApplied"] = n
+
+def write_overrides_template(letters, volume):
+    """Write an editable template with current values (never overwrites)."""
+    path = curated_path(volume)
+    if os.path.exists(path):
+        print(f"[template] {path} already exists — not touching it")
+        return
+    os.makedirs(CURATED_DIR, exist_ok=True)
+    doc = {
+        "note": "Human-verified letter facts for volume %d. Correct titles and "
+                "fill dates against the printed volume/TOC; empty strings are "
+                "ignored. Re-run the splitter after editing." % volume,
+        "letters": {
+            l["id"]: {"number": l["number"],
+                      "title": {"en": l["title"]["en"], "ta": l["title"]["ta"]},
+                      "date": l["date"] or "",
+                      "pages": f"{l['pages'][0]}..{l['pages'][-1]}"}
+            for l in letters
+        },
+    }
+    json.dump(doc, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"[template] wrote {path} ({len(letters)} letters) — edit and re-run")
 
 def split_volume(volume, pages_dir=PAGES_DIR, allow_unnumbered=True):
     files = sorted(glob.glob(f"{pages_dir}/m{volume}-p*.json"))
@@ -239,6 +332,9 @@ def main():
     ap.add_argument("--pages-dir", default=PAGES_DIR)
     ap.add_argument("--publish", action="store_true",
                     help="write letters under public/data/murasoli/ (complete volumes only)")
+    ap.add_argument("--write-overrides-template", action="store_true",
+                    help="write pipeline/curated/murasoli-vNN-overrides.json "
+                         "prefilled with current titles/dates for hand-editing")
     ap.add_argument("--no-unnumbered", action="store_true",
                     help="ignore salutation-only letter starts (use when the "
                          "volume's numbered serials are contiguous)")
@@ -246,6 +342,9 @@ def main():
 
     letters, report = split_volume(args.volume, args.pages_dir,
                                allow_unnumbered=not args.no_unnumbered)
+    apply_curated_overrides(letters, args.volume, report)
+    if args.write_overrides_template:
+        write_overrides_template(letters, args.volume)
 
     review_dir = os.path.join(ARCHIVE_DIR, f"murasoli-letters-v{args.volume}")
     os.makedirs(review_dir, exist_ok=True)

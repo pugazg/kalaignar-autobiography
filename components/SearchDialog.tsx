@@ -20,6 +20,7 @@ import { timeline } from "@/data/timeline";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
+import { fold, hasLatin, queryForms, transliterate } from "@/lib/transliterate";
 
 type Entry = {
   category: "Timeline" | "Theme" | "Person" | "Place" | "Governance" | "World" | "Chronicle" | "Principle" | "SocialJustice" | "Eelam" | "Character" | "Pillar" | "Quote" | "Chapter" | "Scholarship";
@@ -170,27 +171,39 @@ export default function SearchDialog({
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const tokens = q.split(/\s+/).filter(Boolean);
+    // Each typed token matches in ANY of its forms: as typed, its Tamil
+    // transliteration ("thondan" → தொண்டன்), or phonetically folded (ற≈ர…).
+    const tokenForms = q
+      .split(/\s+/)
+      .filter(Boolean)
+      .map((t) => {
+        const forms = queryForms(t);
+        return { raw: forms.map((f) => f.toLowerCase()), folded: forms.map((f) => fold(f)) };
+      });
     const scored = index
       .filter((e) => category === "All" || e.category === category)
       .map((e) => {
-        if (tokens.length === 0) return { e, score: e.category === "Chapter" ? 0 : 1 };
+        if (tokenForms.length === 0) return { e, score: e.category === "Chapter" ? 0 : 1 };
         const title = e.title.toLowerCase();
         const text = e.text.toLowerCase();
+        const titleF = fold(e.title);
+        const textF = fold(e.text);
         let score = 0;
-        for (const t of tokens) {
-          if (title.includes(t)) score += 3;
-          else if (text.includes(t)) score += 1;
+        for (const t of tokenForms) {
+          if (t.raw.some((f) => title.includes(f)) || t.folded.some((f) => titleF.includes(f))) score += 3;
+          else if (t.raw.some((f) => text.includes(f)) || t.folded.some((f) => textF.includes(f))) score += 1;
           else return { e, score: -1 }; // every token must match somewhere
         }
-        if (title.startsWith(tokens[0])) score += 2;
+        if (tokenForms[0].raw.some((f) => title.startsWith(f))) score += 2;
         return { e, score };
       })
-      .filter((r) => r.score >= (tokens.length ? 1 : 0))
+      .filter((r) => r.score >= (tokenForms.length ? 1 : 0))
       .sort((a, b) => b.score - a.score)
       .slice(0, 30);
     return scored.map((r) => r.e);
   }, [index, query, category]);
+
+  const taHint = hasLatin(query) ? transliterate(query) : null;
 
   if (!open) return null;
 
@@ -220,6 +233,13 @@ export default function SearchDialog({
             <X className="h-5 w-5" />
           </button>
         </div>
+
+        {taHint && (
+          <p className="border-b border-ink/5 px-4 py-1.5 text-xs text-ink/50 dark:border-white/5 dark:text-night-text/50">
+            <span className="font-tamil text-marina dark:text-marina-light" lang="ta">{taHint}</span>
+            <span className="ml-2">{lang === "ta" ? "எனவும் தேடப்படுகிறது" : "is also being searched"}</span>
+          </p>
+        )}
 
         <div className="flex flex-wrap gap-2 border-b border-ink/10 px-4 py-2 dark:border-white/10">
           {CATEGORIES.map((c) => (

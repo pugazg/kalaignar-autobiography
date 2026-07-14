@@ -81,10 +81,19 @@ def split_token(tok):
     return m.group(1), m.group(2), m.group(3)
 
 # ---------------------------------------------------------------- corrections
+# Fixed formula words whose garbled forms are unambiguous — the letter sign-off
+# "அன்புள்ள" appears at every letter's close and OCR drops its pulli marks in
+# every combination. Applied before (and overridable by) the CSV rules.
+BUILTIN_CORRECTIONS = {
+    "அனபுளள": "அன்புள்ள",
+    "அன்புளள": "அன்புள்ள",
+    "அனபுள்ள": "அன்புள்ள",
+}
+
 def load_corrections(paths, min_conf):
     """Load wrong->right token map from CSVs, gated by confidence. Keys normalized."""
     threshold = CONF_ORDER.get(min_conf, 1)
-    mapping = {}
+    mapping = dict(BUILTIN_CORRECTIONS)
     for path in paths:
         if not os.path.exists(path):
             print(f"  ! corrections file not found: {path}")
@@ -103,10 +112,20 @@ def load_corrections(paths, min_conf):
                 mapping[wrong] = right
     return mapping
 
+# The printed bullet glyph OCRs as the standalone token "ஓஒ", and sometimes as
+# a lone "ஓ", "ஒ" or "@" (V54 l4051's English newspaper quotations). The
+# two-char form is never a Tamil word — always safe. The single-char forms are
+# repaired only when standalone AND the NEXT token is Latin text — a pattern no
+# real Tamil sentence produces, but every bullet before an English quotation
+# does. Emails (name@gmail.com) can't match: their @ is not a standalone token.
+BULLET_MISREAD = re.compile(r"(?<!\S)ஓஒ(?!\S)")
+BULLET_MISREAD_SINGLE = re.compile(r"(?<!\S)[ஓஒ@](?=\s+[A-Za-z])")
+
 def correct_paragraph(text, mapping):
     """Whole-token replacement, punctuation-aware, on normalized text.
     Returns (new_text, n_fixes)."""
-    text = norm(text)
+    text = BULLET_MISREAD.sub("•", norm(text))
+    text = BULLET_MISREAD_SINGLE.sub("•", text)
     if not mapping:
         return text, 0
     n = 0
@@ -275,15 +294,29 @@ def glyph_paragraph(text, trusted, log, page_id, ext_vocab=None):
             out.append(tok)
             continue
         lead, core, trail = split_token(tok)
-        if (not core or len(core) < 4 or not TAMIL.search(core)
-                or core in trusted or ("ா" not in core and "ோ" not in core)):
+        if not core or len(core) < 4 or not TAMIL.search(core) or core in trusted:
+            out.append(tok)
+            continue
+        cands = glyph_candidates(core) if ("ா" in core or "ோ" in core) else set()
+        # WORD-FINAL PULLI DROP (ரூபாய→ரூபாய், காரணத்தால→காரணத்தால்): generate
+        # the ்-appended candidate ONLY for tokens rare in the independent
+        # corpus — valid bare forms (என, போல, இல்லாத, தான) are frequent there
+        # and must never be touched, nor flood the suggestion log.
+        if (core[-1] in "கஙசஞடணதநபமயரலவழளறனஜஷஸஹ"
+                and (ext_vocab is None or ext_vocab[core] <= 3)):
+            cands.add(core + "்")
+            # two-error chain: dropped final pulli AND a glyph confusion in the
+            # same token ("தோதல" → தோதல் → தேர்தல்). Same gates apply.
+            if "ா" in core or "ோ" in core:
+                cands |= glyph_candidates(core + "்")
+        if not cands:
             out.append(tok)
             continue
         # a candidate qualifies via the trusted lexicon OR by being an
         # established word in the independent corpus (inflected forms like
         # தேர்தலை are common in the memoir but below the trusted list's
         # frequency cut)
-        hits = {c for c in glyph_candidates(core)
+        hits = {c for c in cands
                 if c in trusted or (ext_vocab is not None and ext_vocab[c] >= 5)}
         established = ext_vocab is not None and ext_vocab[core] > 3
         if len(hits) == 1 and established:

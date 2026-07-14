@@ -12,6 +12,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile: kill sideways wobble while scrolling. Some wide elements (SVG map,
+   timeline, long unbroken strings) can push past the viewport; clamp the page
+   to the viewport width so touch scrolling is vertical-only. Individual wide
+   widgets that need panning must declare their own overflow-x-auto. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

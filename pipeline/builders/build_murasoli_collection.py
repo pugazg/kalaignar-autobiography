@@ -42,13 +42,16 @@ def load_existing_index():
     return {"collection": "murasoli",
             "title": {"en": "Murasoli — Letters to Udanpirappukkal",
                       "ta": "முரசொலி — உடன்பிறப்புகளுக்கு"},
-            "rights": "Nationalised. Source: Tamil Nadu Government Digital Library.",
+            "rights": "Nationalised. Source: Tamil Digital Library (tamildigitallibrary.in), University of Madras holdings.",
             "volumes": []}
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", required=True, help="corrected volume folder (has text/)")
     ap.add_argument("--volume", type=int, required=True)
+    ap.add_argument("--source-url", default=None,
+                    help="URL of the source scan (e.g. the Tamil Digital Library "
+                         "entry) — shown as the volume's attribution on the site")
     args = ap.parse_args()
 
     os.makedirs(TEXT_DIR, exist_ok=True)
@@ -81,13 +84,19 @@ def main():
                       "title": title, "pageType": d.get("pageType", "body")})
 
     idx = load_existing_index()
-    # replace any existing entry for this volume, then re-sort
+    # replace any existing entry for this volume, then re-sort;
+    # keep a previously recorded sourceUrl unless a new one is given
+    prev = next((v for v in idx["volumes"] if v["volume"] == args.volume), None)
+    source_url = args.source_url or (prev or {}).get("sourceUrl")
     idx["volumes"] = [v for v in idx["volumes"] if v["volume"] != args.volume]
-    idx["volumes"].append({
+    entry = {
         "volume": args.volume,
         "pageCount": len(pages),
         "pages": pages,
-    })
+    }
+    if source_url:
+        entry["sourceUrl"] = source_url
+    idx["volumes"].append(entry)
     idx["volumes"].sort(key=lambda v: v["volume"])
     idx["totalPages"] = sum(v["pageCount"] for v in idx["volumes"])
     idx["volumeCount"] = len(idx["volumes"])
