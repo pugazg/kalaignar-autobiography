@@ -42,6 +42,17 @@ export default function Hero() {
         நீ
       </span>
 
+      {/* Kalaignar: a feathered duotone portrait, balancing the நீ glyph.
+          Editorial presence on wide screens; hidden where space is tight. */}
+      <motion.img
+        src="/images/kalaignar-portrait.png"
+        alt="Kalaignar M. Karunanidhi"
+        initial={reduce ? false : { opacity: 0, scale: 1.03 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.4, ease: "easeOut" }}
+        className="pointer-events-none absolute left-[-2%] top-1/2 -z-10 hidden w-[30rem] max-w-[38vw] -translate-y-1/2 select-none opacity-90 mix-blend-multiply dark:opacity-70 dark:mix-blend-screen lg:block"
+      />
+
       <motion.p
         initial={reduce ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
