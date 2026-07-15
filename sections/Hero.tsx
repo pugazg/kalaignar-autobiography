@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 text-center"
+      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-28 text-center"
       aria-label="Introduction"
     >
       {/* Layered background: soft gradient + delta contour lines */}

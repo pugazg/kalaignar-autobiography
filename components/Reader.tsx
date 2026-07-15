@@ -227,7 +227,7 @@ export default function Reader({
           <div className="flex min-w-0 items-center gap-3">
             <Link href="/read" className="focus-ring inline-flex items-center gap-1 rounded p-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60" aria-label={lang === "ta" ? "நூலடக்கத்திற்குத் திரும்பு" : "Back to contents"}>
               <ArrowLeft className="h-4 w-4" aria-hidden />
-              <span className="hidden sm:inline">{lang === "ta" ? "நூலடக்கம்" : "Contents"}</span>
+              <span>{lang === "ta" ? "நூலடக்கம்" : "Contents"}</span>
             </Link>
             <Link href="/" className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina dark:text-night-text/60" aria-label="Home">
               <Home className="h-4 w-4" aria-hidden />
@@ -380,10 +380,10 @@ export default function Reader({
                 <ListOrdered className="h-4 w-4" aria-hidden />
                 {lang === "ta" ? `பத்திகள் (${data.paragraphs.length}) — நேரடிச் செல்ல` : `Paragraphs (${data.paragraphs.length}) — jump to`}
               </summary>
-              <ol className="mt-3 grid gap-1 sm:grid-cols-2">
+              <ol className="mt-3 grid max-w-full gap-1 overflow-hidden sm:grid-cols-2">
                 {data.paragraphs.map((p, i) => (
-                  <li key={i}>
-                    <a href={`#para-${i}`} className="focus-ring block truncate rounded px-1 py-0.5 font-tamil text-ink/70 hover:text-marina dark:text-night-text/70" lang="ta">
+                  <li key={i} className="min-w-0">
+                    <a href={`#para-${i}`} className="focus-ring block max-w-full truncate rounded px-1 py-0.5 font-tamil text-ink/70 hover:text-marina dark:text-night-text/70" lang="ta">
                       <span className="mr-1.5 font-mono text-[10px] text-ink/35 dark:text-night-text/35">{i + 1}</span>
                       {p.split(/\s+/).slice(0, 7).join(" ")}…
                     </a>

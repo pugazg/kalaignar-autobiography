@@ -55,7 +55,7 @@ export default function MurasoliReader({ page, prev, next }: { page: Pg; prev: P
           <div className="flex min-w-0 items-center gap-3">
             <Link href="/murasoli" className="focus-ring inline-flex items-center gap-1 rounded p-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60" aria-label={ta ? "கடித அடக்கத்திற்குத் திரும்பு" : "Back to contents"}>
               <ArrowLeft className="h-4 w-4" aria-hidden />
-              <span className="hidden sm:inline">{ta ? "அடக்கம்" : "Contents"}</span>
+              <span>{ta ? "அடக்கம்" : "Contents"}</span>
             </Link>
             <Link href="/" className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina dark:text-night-text/60" aria-label="Home">
               <Home className="h-4 w-4" aria-hidden />
