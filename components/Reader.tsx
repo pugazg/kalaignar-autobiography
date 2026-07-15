@@ -39,6 +39,11 @@ type ChapterText = {
   paragraphs: string[];
 };
 
+// Sketches/photos placed into the chapter (public/data/visuals/<id>.json,
+// built by pipeline/builders/build_volume1_visuals.py). afterParagraph = -1
+// renders before the first paragraph; otherwise just after that paragraph.
+type Visual = { src: string; type: string; afterParagraph: number; confidence: number };
+
 const FONT_STEPS = ["text-lg", "text-xl", "text-2xl"];
 
 export default function Reader({
@@ -63,6 +68,7 @@ export default function Reader({
   const [enTitle, setEnTitle] = useState<string | null>(null);
   const [enStatus, setEnStatus] = useState<string | null>(null);
   const [showEn, setShowEn] = useState(false);
+  const [visuals, setVisuals] = useState<Visual[]>([]);
   const { research, setResearch } = useResearch();
   const { lang } = useLang();
   const restored = useRef(false);
@@ -96,10 +102,15 @@ export default function Reader({
   useEffect(() => {
     setEnParas(null);
     setShowEn(false);
+    setVisuals([]);
     fetch(`/data/text/${chapter.id}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then(setData)
       .catch(() => setError(true));
+    fetch(`/data/visuals/${chapter.id}.json`)
+      .then((r) => (r.ok ? r.json() : []))
+      .then((d: Visual[]) => setVisuals(Array.isArray(d) ? d : []))
+      .catch(() => setVisuals([]));
     fetch(`/data/text-en/${chapter.id}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
@@ -201,6 +212,28 @@ export default function Reader({
   const teaser = teasers[chapter.id];
   const pullQuote = quotes.find((q) => q.ref === chapter.id);
   const refLabel = chapter.id.toUpperCase().replace(/^V(\d)-CH/, "V$1·");
+
+  // Sketches/photos anchored just after paragraph `i` (`-1` = before the text).
+  // Shown only in the Tamil view, since the anchors index the Tamil paragraphs.
+  const visualsAfter = (i: number) => {
+    const here = visuals.filter((v) => v.afterParagraph === i);
+    if (here.length === 0) return null;
+    return here.map((v) => (
+      <figure key={v.src} className="not-prose my-9" data-visual={v.type}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={v.src}
+          alt={
+            v.type === "photo"
+              ? "Photograph from Nenjukku Neethi, Volume 1"
+              : "Sketch from Nenjukku Neethi, Volume 1"
+          }
+          loading="lazy"
+          className="mx-auto max-h-[75vh] w-auto max-w-full rounded-xl border border-ink/10 bg-white shadow-sm dark:border-white/10"
+        />
+      </figure>
+    ));
+  };
 
   const setFontStep = (n: number) => {
     const v = Math.min(2, Math.max(0, n));
@@ -392,9 +425,11 @@ export default function Reader({
               </ol>
             </details>
           )}
+          {data && !showEn && visualsAfter(-1)}
           {(showEn && enParas ? enParas : data?.paragraphs)?.map((p, i) => (
             <div key={i} className="contents">
               <p id={`para-${i}`} className="scroll-mt-28">{highlight(p)}</p>
+              {!showEn && visualsAfter(i)}
               {i === 1 && pullQuote && !showEn && (
                 <aside className="not-prose my-8 rounded-2xl border border-marina/25 bg-marina/[0.04] p-6 dark:bg-marina/10" aria-label={lang === "ta" ? "மேற்கோள்" : "Pull quote"}>
                   <p className="font-tamil text-xl font-semibold leading-relaxed text-marina dark:text-marina-light" lang="ta">
