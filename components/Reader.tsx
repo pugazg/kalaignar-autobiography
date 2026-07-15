@@ -230,9 +230,9 @@ export default function Reader({
     }));
   })();
 
-  // Scanned ink-on-paper art blended into the page: `multiply` drops the scan's
-  // white ground into the cream page in light mode; in dark mode we invert the
-  // art (ink → light) and `screen` drops the now-dark ground into the night bg.
+  // The art is pre-processed to ink-on-transparent PNGs (build_volume1_visuals.py),
+  // tinted with the site's ink colour — so it sits directly on the page, and a
+  // simple `invert` in dark mode turns the ink to a warm off-white. No blending.
   const visualsAfter = (i: number) => {
     const here = displayVisuals.filter((v) => v.afterParagraph === i);
     if (here.length === 0) return null;
@@ -247,7 +247,7 @@ export default function Reader({
               : "Sketch from Nenjukku Neethi, Volume 1"
           }
           loading="lazy"
-          className="max-h-[70vh] w-auto max-w-[85%] mix-blend-multiply dark:mix-blend-screen dark:brightness-[0.9] dark:invert"
+          className="max-h-[70vh] w-auto max-w-[85%] dark:invert"
         />
       </figure>
     ));

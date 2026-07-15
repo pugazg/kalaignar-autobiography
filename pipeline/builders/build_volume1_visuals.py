@@ -21,8 +21,28 @@ from __future__ import annotations
 
 import json
 import re
-import shutil
 from pathlib import Path
+
+import numpy as np
+from PIL import Image
+
+# Ink tint for the cleaned art: the site's ink colour, so `filter: invert()`
+# in dark mode yields a warm off-white (~#F0E8DF) that matches night-text.
+INK_RGB = (15, 23, 32)
+# Luminance below BLACK_PT is solid ink; above WHITE_PT is transparent paper.
+BLACK_PT, WHITE_PT = 95, 205
+
+
+def to_transparent_png(src: Path, dst: Path) -> None:
+    """Threshold a scanned sketch to ink-on-transparent, dropping the paper."""
+    lum = np.asarray(Image.open(src).convert("L"), dtype=np.float32)
+    alpha = (WHITE_PT - lum) / (WHITE_PT - BLACK_PT)
+    alpha = np.clip(alpha, 0.0, 1.0)
+    h, w = lum.shape
+    out = np.zeros((h, w, 4), dtype=np.uint8)
+    out[..., 0], out[..., 1], out[..., 2] = INK_RGB
+    out[..., 3] = (alpha * 255).astype(np.uint8)
+    Image.fromarray(out, "RGBA").save(dst, "PNG", optimize=True)
 
 SRC = Path("/Users/pugazhendhirajendran/Documents/volume1_visuals_with_chapter_sentence_manifest")
 ROOT = Path(__file__).resolve().parents[2]
@@ -102,8 +122,9 @@ def main() -> None:
             else:
                 idx, conf = resolve_paragraph(loc.get("sentence", ""), paragraphs)
                 after = idx - 1 if loc.get("placement") == "before_sentence" else idx
+            png = Path(item["file"]).with_suffix(".png").name
             rec = {
-                "src": f"/images/volume1/{item['file']}",
+                "src": f"/images/volume1/{png}",
                 "type": item["type"],
                 "afterParagraph": after,
                 "confidence": round(conf, 2),
@@ -123,7 +144,8 @@ def main() -> None:
             resolved[k]["afterParagraph"] = max(0, round(frac * nparas) - 1)
 
         for item, _ in entries:
-            shutil.copy2(SRC / "images" / item["file"], IMG_OUT / item["file"])
+            dst = IMG_OUT / Path(item["file"]).with_suffix(".png").name
+            to_transparent_png(SRC / "images" / item["file"], dst)
 
         resolved.sort(key=lambda v: v["afterParagraph"])
         by_chapter[cid] = resolved
