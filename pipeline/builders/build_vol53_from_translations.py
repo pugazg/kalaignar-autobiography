@@ -20,12 +20,19 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 
-SRC = Path("/Users/pugazhendhirajendran/Documents/Kalaignar_Murasoli_Letters_Translated/vol53")
+# Same translated-markdown drop for every Murasoli volume. Pass the volume number
+# and its source directory to build another one:
+#   build_vol53_from_translations.py 52 /path/to/translations/vol52
+_DEFAULT_SRC = "/Users/pugazhendhirajendran/Documents/Kalaignar_Murasoli_Letters_Translated/vol53"
+VOLUME = int(sys.argv[1]) if len(sys.argv) > 1 else 53
+SRC = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(_DEFAULT_SRC)
 OUT = Path(__file__).resolve().parents[2] / "public" / "data" / "murasoli"
-VOLUME = 53
 TAMIL_SALUTATION = "உடன்பிறப்பே,"
+# Every Murasoli volume points at the same source library.
+SOURCE_URL = "https://tamildigitallibrary.in"
 
 
 def iso_date(raw: str) -> str | None:
@@ -210,8 +217,7 @@ def main() -> None:
     idx = json.loads(idx_path.read_text(encoding="utf-8"))
     prev = next((v for v in idx["volumes"] if v["volume"] == VOLUME), None)
     entry = {"volume": VOLUME, "pageCount": total_pages, "pages": []}
-    if prev and prev.get("sourceUrl"):  # preserve a source link set after the first build
-        entry["sourceUrl"] = prev["sourceUrl"]
+    entry["sourceUrl"] = (prev or {}).get("sourceUrl", SOURCE_URL)
     idx["volumes"] = [v for v in idx["volumes"] if v["volume"] != VOLUME]
     idx["volumes"].append(entry)
     idx["volumes"].sort(key=lambda v: v["volume"])

@@ -64,8 +64,8 @@ export default function MurasoliLibrary() {
           </p>
           <p className="mt-3 max-w-xl rounded-xl border border-marina/25 bg-marina/[0.05] px-4 py-2.5 text-sm text-ink/70 dark:bg-marina/10 dark:text-night-text/70">
             {ta
-              ? "54 தொகுதிகளில் தொகுதி 53 மற்றும் 54 (மே 2015 – நவம்பர் 2016) முதற்கனிகளாக வாசிக்கக் கிடைக்கின்றன — தொகுதி 53, தமிழ் மூலத்துடன் முழு ஆங்கில மொழிபெயர்ப்பும் கொண்டது. எஞ்சிய தொகுதிகள் ஒவ்வொன்றாக வந்து சேரும்."
-              : "Volumes 53 and 54 (May 2015 – November 2016) are the first of the fifty-four to arrive — Volume 53 with a full English translation alongside the authoritative Tamil. The rest are on their way, each joining as its text and corrections are completed."}
+              ? "54 தொகுதிகளில் தொகுதி 52, 53 மற்றும் 54 (2014–2016) முதற்கனிகளாக வாசிக்கக் கிடைக்கின்றன — தொகுதி 52 மற்றும் 53, தமிழ் மூலத்துடன் முழு ஆங்கில மொழிபெயர்ப்பும் கொண்டவை. எஞ்சிய தொகுதிகள் ஒவ்வொன்றாக வந்து சேரும்."
+              : "Volumes 52, 53 and 54 (2014–2016) are the first of the fifty-four to arrive — Volumes 52 and 53 each with a full English translation alongside the authoritative Tamil. The rest are on their way, each joining as its text and corrections are completed."}
           </p>
           {idx && (
             <p className="mt-3 text-xs text-ink/45 dark:text-night-text/45">
