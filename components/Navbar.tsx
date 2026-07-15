@@ -79,7 +79,13 @@ export default function Navbar({ onSearch }: { onSearch: () => void }) {
       />
       <nav className="glass" aria-label="Primary">
         <div className="mx-auto flex max-w-content items-center justify-between px-4 py-3 sm:px-6">
-          <a href="#top" className="focus-ring flex items-baseline gap-2 rounded">
+          <a href="#top" className="focus-ring flex items-center gap-2.5 rounded">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/kalaignar-avatar.jpg"
+              alt="Kalaignar at his writing pad"
+              className="h-8 w-8 shrink-0 rounded-full object-cover ring-1 ring-marina/25 dark:ring-white/15"
+            />
             <span className="font-tamil text-lg text-marina dark:text-marina-light" lang="ta">
               நெஞ்சுக்கு நீதி
             </span>

@@ -50,7 +50,7 @@ export default function Hero() {
       <img
         src="/images/kalaignar-portrait.png"
         alt="Kalaignar M. Karunanidhi"
-        className="pointer-events-none absolute left-[-42%] top-1/2 -z-10 w-[125vw] max-w-none -translate-y-1/2 select-none opacity-[0.09] dark:opacity-[0.14] dark:invert lg:left-[-12rem] lg:w-[48rem] lg:max-w-[52vw] lg:opacity-[0.6] lg:dark:opacity-[0.55]"
+        className="pointer-events-none absolute left-[-50%] top-1/2 -z-10 w-[125vw] max-w-none -translate-y-1/2 select-none opacity-[0.07] dark:opacity-[0.11] dark:invert lg:left-[-17rem] lg:w-[52rem] lg:max-w-[56vw] lg:opacity-[0.18] lg:dark:opacity-[0.2]"
       />
 
       <motion.p
