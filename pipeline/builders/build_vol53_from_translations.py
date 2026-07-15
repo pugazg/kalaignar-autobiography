@@ -104,10 +104,11 @@ def parse_letter(path: Path) -> dict:
     tamil_raw = sections.get("Original Tamil", "")
     tamil_raw = re.sub(r"^#\s+\d+\..*$", "", tamil_raw, count=1, flags=re.MULTILINE).strip()
     ta_blocks = paragraphs(tamil_raw)
-    ta_salutation = None
+    # Every letter opens with the "உடன்பிறப்பே," address, matching Volume 54.
+    # Drop it from the body if the source already carried it, so it isn't doubled.
     if ta_blocks and ta_blocks[0].replace(" ", "") == TAMIL_SALUTATION.replace(" ", ""):
-        ta_salutation = TAMIL_SALUTATION
         ta_blocks.pop(0)
+    ta_salutation = TAMIL_SALUTATION
 
     note = " ".join(paragraphs(sections.get("Translator's Note", "")))
     return {
@@ -207,10 +208,12 @@ def main() -> None:
     # --- index.json: add / replace volume 53 (empty pages -> no page routes) ---
     idx_path = OUT / "index.json"
     idx = json.loads(idx_path.read_text(encoding="utf-8"))
+    prev = next((v for v in idx["volumes"] if v["volume"] == VOLUME), None)
+    entry = {"volume": VOLUME, "pageCount": total_pages, "pages": []}
+    if prev and prev.get("sourceUrl"):  # preserve a source link set after the first build
+        entry["sourceUrl"] = prev["sourceUrl"]
     idx["volumes"] = [v for v in idx["volumes"] if v["volume"] != VOLUME]
-    idx["volumes"].append(
-        {"volume": VOLUME, "pageCount": total_pages, "pages": []}
-    )
+    idx["volumes"].append(entry)
     idx["volumes"].sort(key=lambda v: v["volume"])
     idx["totalPages"] = sum(v.get("pageCount", 0) for v in idx["volumes"])
     idx["volumeCount"] = len(idx["volumes"])
