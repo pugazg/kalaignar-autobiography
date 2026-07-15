@@ -230,27 +230,32 @@ export default function Reader({
     }));
   })();
 
-  // The art is pre-processed to ink-on-transparent PNGs (build_volume1_visuals.py),
-  // tinted with the site's ink colour — so it sits directly on the page, and a
-  // simple `invert` in dark mode turns the ink to a warm off-white. No blending.
+  // Two kinds of visual. Sketches are ink-on-transparent PNGs (tinted with the
+  // site's ink colour) that sit directly on the page and simply `invert` to a
+  // warm off-white in dark mode. Photographs are archival plates — framed, and
+  // never inverted or blended.
   const visualsAfter = (i: number) => {
     const here = displayVisuals.filter((v) => v.afterParagraph === i);
     if (here.length === 0) return null;
-    return here.map((v) => (
-      <figure key={v.src} className="not-prose my-10 flex justify-center" data-visual={v.type}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={v.src}
-          alt={
-            v.type === "photo"
-              ? "Photograph from Nenjukku Neethi, Volume 1"
-              : "Sketch from Nenjukku Neethi, Volume 1"
-          }
-          loading="lazy"
-          className="max-h-[70vh] w-auto max-w-[85%] dark:invert"
-        />
-      </figure>
-    ));
+    return here.map((v) => {
+      const isPhoto = v.type === "photo";
+      return (
+        <figure key={v.src} className="not-prose my-10 flex justify-center" data-visual={v.type}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={v.src}
+            alt={`${isPhoto ? "Photograph" : "Sketch"} from Nenjukku Neethi, Volume ${chapter.volume}`}
+            loading="lazy"
+            className={cn(
+              "w-auto",
+              isPhoto
+                ? "max-h-[80vh] max-w-[92%] rounded-lg border border-ink/10 bg-white shadow-sm dark:border-white/10"
+                : "max-h-[70vh] max-w-[85%] dark:invert",
+            )}
+          />
+        </figure>
+      );
+    });
   };
 
   const setFontStep = (n: number) => {

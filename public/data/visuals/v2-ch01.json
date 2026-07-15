@@ -1,8 +1,74 @@
 [
  {
-  "src": "/images/volume2/volume2_visual_018.png",
-  "type": "sketch",
-  "afterParagraph": 1,
-  "confidence": 0.6
+  "src": "/images/volume2/volume2_visual_027_page9.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_028_page10.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_029_page11.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_030_page12.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_031_page13.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_032_page14.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_033_page15.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_034_page16.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_035_page17.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_036_page18.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_037_page19.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
+ },
+ {
+  "src": "/images/volume2/volume2_visual_038_page20.jpg",
+  "type": "photo",
+  "afterParagraph": 10,
+  "confidence": 1.0
  }
 ]
