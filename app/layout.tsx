@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Kalaignar Digital Library — Nenjukku Neethi",
     description:
       "The complete six-volume memoir of Kalaignar M. Karunanidhi, 1924–2005, as an interactive archive.",
