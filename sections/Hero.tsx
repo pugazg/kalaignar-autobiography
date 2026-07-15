@@ -42,15 +42,15 @@ export default function Hero() {
         நீ
       </span>
 
-      {/* Kalaignar: a feathered duotone portrait, balancing the நீ glyph.
-          Editorial presence on wide screens; hidden where space is tight. */}
-      <motion.img
+      {/* Kalaignar: a hand-drawn line portrait (transparent ink) balancing the
+          நீ glyph. Sits directly on the page — inverts to light in dark mode.
+          A faint presence on phones, a fuller one on wide screens. Opacity is
+          responsive, so it is set with classes rather than a motion animation. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src="/images/kalaignar-portrait.png"
         alt="Kalaignar M. Karunanidhi"
-        initial={reduce ? false : { opacity: 0, scale: 1.03 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.4, ease: "easeOut" }}
-        className="pointer-events-none absolute left-[-2%] top-1/2 -z-10 hidden w-[30rem] max-w-[38vw] -translate-y-1/2 select-none opacity-90 mix-blend-multiply dark:opacity-70 dark:mix-blend-screen lg:block"
+        className="pointer-events-none absolute left-[-42%] top-1/2 -z-10 w-[125vw] max-w-none -translate-y-1/2 select-none opacity-[0.09] dark:opacity-[0.14] dark:invert lg:left-[-12rem] lg:w-[48rem] lg:max-w-[52vw] lg:opacity-[0.6] lg:dark:opacity-[0.55]"
       />
 
       <motion.p
