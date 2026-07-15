@@ -213,13 +213,31 @@ export default function Reader({
   const pullQuote = quotes.find((q) => q.ref === chapter.id);
   const refLabel = chapter.id.toUpperCase().replace(/^V(\d)-CH/, "V$1·");
 
-  // Sketches/photos anchored just after paragraph `i` (`-1` = before the text).
-  // Shown only in the Tamil view, since the anchors index the Tamil paragraphs.
+  // Sketches/photos placed by build_volume1_visuals.py. The anchors index the
+  // Tamil paragraphs; in the English view we remap each one proportionally so
+  // it lands at the equivalent point in the (differently split) translation.
+  const displayVisuals = (() => {
+    if (!showEn || !enParas) return visuals;
+    const taCount = data?.paragraphs.length ?? 0;
+    const enCount = enParas.length;
+    if (taCount === 0 || enCount === 0) return visuals;
+    return visuals.map((v) => ({
+      ...v,
+      afterParagraph:
+        v.afterParagraph < 0
+          ? -1
+          : Math.min(enCount - 1, Math.max(0, Math.round(((v.afterParagraph + 1) / taCount) * enCount) - 1)),
+    }));
+  })();
+
+  // Scanned ink-on-paper art blended into the page: `multiply` drops the scan's
+  // white ground into the cream page in light mode; in dark mode we invert the
+  // art (ink → light) and `screen` drops the now-dark ground into the night bg.
   const visualsAfter = (i: number) => {
-    const here = visuals.filter((v) => v.afterParagraph === i);
+    const here = displayVisuals.filter((v) => v.afterParagraph === i);
     if (here.length === 0) return null;
     return here.map((v) => (
-      <figure key={v.src} className="not-prose my-9" data-visual={v.type}>
+      <figure key={v.src} className="not-prose my-10 flex justify-center" data-visual={v.type}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={v.src}
@@ -229,7 +247,7 @@ export default function Reader({
               : "Sketch from Nenjukku Neethi, Volume 1"
           }
           loading="lazy"
-          className="mx-auto max-h-[75vh] w-auto max-w-full rounded-xl border border-ink/10 bg-white shadow-sm dark:border-white/10"
+          className="max-h-[70vh] w-auto max-w-[85%] mix-blend-multiply dark:mix-blend-screen dark:brightness-[0.9] dark:invert"
         />
       </figure>
     ));
@@ -425,11 +443,11 @@ export default function Reader({
               </ol>
             </details>
           )}
-          {data && !showEn && visualsAfter(-1)}
+          {data && visualsAfter(-1)}
           {(showEn && enParas ? enParas : data?.paragraphs)?.map((p, i) => (
             <div key={i} className="contents">
               <p id={`para-${i}`} className="scroll-mt-28">{highlight(p)}</p>
-              {!showEn && visualsAfter(i)}
+              {visualsAfter(i)}
               {i === 1 && pullQuote && !showEn && (
                 <aside className="not-prose my-8 rounded-2xl border border-marina/25 bg-marina/[0.04] p-6 dark:bg-marina/10" aria-label={lang === "ta" ? "மேற்கோள்" : "Pull quote"}>
                   <p className="font-tamil text-xl font-semibold leading-relaxed text-marina dark:text-marina-light" lang="ta">
