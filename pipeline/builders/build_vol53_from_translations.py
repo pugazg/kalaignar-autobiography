@@ -34,6 +34,15 @@ TAMIL_SALUTATION = "உடன்பிறப்பே,"
 # Every Murasoli volume points at the same source library.
 SOURCE_URL = "https://tamildigitallibrary.in"
 
+# Misprinted serials, corrected on publication: {volume: {printed: corrected}}.
+# The source markdown keeps the printed number (its filename is the key here);
+# only the published id/number are normalised.
+SERIAL_FIXES: dict[int, dict[int, int]] = {
+    # Volume 50 prints 3558 for the letter sitting between 3857 and 3859 — it
+    # continues the "Tiruchi… (5)" series as (6), so the serial is 3858.
+    50: {3558: 3858},
+}
+
 
 def iso_date(raw: str) -> str | None:
     """'27-5-2015' / '30.12.2015' / '14-07-2015' -> '2015-05-27'."""
@@ -149,13 +158,25 @@ def main() -> None:
     total_pages = 0
 
     for i, num in enumerate(numbers):
-        lid = f"m{VOLUME}-l{num}"
-        src = SRC / f"{lid}.en.md"
+        # `num` is the printed serial — it names the source file. `out_num` is
+        # the published serial, corrected where the print misnumbers a letter.
+        out_num = SERIAL_FIXES.get(VOLUME, {}).get(num, num)
+        lid = f"m{VOLUME}-l{out_num}"
+        src = SRC / f"m{VOLUME}-l{num}.en.md"
         if not src.exists():
             print(f"  ! missing {src.name}, skipping")
             continue
         info = parse_letter(src)
         c = contents[num]
+        if out_num != num:
+            # The note explains the serial was kept as printed; it is corrected now.
+            info["translator_note"] = re.sub(
+                r"The printed source identifies this letter as \d+, and that number is "
+                r"preserved without normalising it from sequence\.",
+                f"The printed source misnumbers this letter as {num}; it is corrected "
+                f"here to {out_num}, its place in sequence.",
+                info["translator_note"],
+            )
 
         # Printed page span: this letter's start page up to the next letter's start.
         start = c["page"]
@@ -173,7 +194,7 @@ def main() -> None:
                     "id": lid,
                     "collection": "murasoli-letter",
                     "volume": VOLUME,
-                    "number": num,
+                    "number": out_num,
                     "date": c["date"],
                     "title": title,
                     "salutation": info["ta_salutation"],
@@ -207,7 +228,7 @@ def main() -> None:
         letter_meta.append(
             {
                 "id": lid,
-                "number": num,
+                "number": out_num,
                 "date": c["date"],
                 "title": title,
                 "pages": page_numbers,
