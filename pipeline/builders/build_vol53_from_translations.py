@@ -101,11 +101,19 @@ def parse_letter(path: Path) -> dict:
     md = path.read_text(encoding="utf-8")
     sections = split_sections(md)
 
-    # English translation: first block is the "Udanpirappē," salutation.
-    en_blocks = paragraphs(sections.get("English Translation", ""))
+    # English translation: the body opens with the "Udanpirappē," salutation.
+    # Some volumes carry a "### Source Note" subsection ahead of it — that is
+    # commentary about the source, so it joins the translator's note rather
+    # than the translated text.
+    en_raw = re.sub(r"^###\s+.*$", "", sections.get("English Translation", ""), flags=re.MULTILINE)
+    en_blocks = paragraphs(en_raw)
     en_salutation = None
-    if en_blocks and en_blocks[0].lower().startswith("udanpirapp"):
-        en_salutation = en_blocks.pop(0)
+    en_preamble: list[str] = []
+    sal_i = next((i for i, b in enumerate(en_blocks) if b.lower().startswith("udanpirapp")), None)
+    if sal_i is not None:
+        en_preamble = en_blocks[:sal_i]
+        en_salutation = en_blocks[sal_i]
+        en_blocks = en_blocks[sal_i + 1 :]
 
     # Original Tamil: drop the "# {num}. title" heading, then blocks.
     tamil_raw = sections.get("Original Tamil", "")
@@ -117,7 +125,7 @@ def parse_letter(path: Path) -> dict:
         ta_blocks.pop(0)
     ta_salutation = TAMIL_SALUTATION
 
-    note = " ".join(paragraphs(sections.get("Translator's Note", "")))
+    note = " ".join(paragraphs(sections.get("Translator's Note", "")) + en_preamble)
     return {
         "en_salutation": en_salutation,
         "en_paragraphs": en_blocks,
@@ -132,7 +140,11 @@ def main() -> None:
     (OUT / "letters").mkdir(parents=True, exist_ok=True)
     (OUT / "letters-en").mkdir(parents=True, exist_ok=True)
 
-    numbers = sorted(contents)
+    # Printed contents order, not numeric order: a volume may carry a serial
+    # that breaks sequence (Volume 50 prints 3558 between 3857 and 3859), and
+    # the printed table is the authority on reading order. For volumes whose
+    # serials run in sequence this is identical to sorting.
+    numbers = list(contents)
     letter_meta = []
     total_pages = 0
 
