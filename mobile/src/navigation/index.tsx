@@ -2,6 +2,7 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import type { LinkingOptions, NavigatorScreenParams } from "@react-navigation/native";
 import { Pressable } from "react-native";
 import { useTheme } from "@/data/AppState";
 import { HomeScreen } from "@/screens/HomeScreen";
@@ -17,8 +18,16 @@ import { SettingsScreen } from "@/screens/SettingsScreen";
 // Native destinations (spec: Home, Library, Timeline, Explore, Search, Saved, Settings).
 // Mobile redesign: five bottom tabs; Timeline, Saved and Settings are first-class
 // stack screens reached from Home / Explore / headers rather than crammed into the bar.
+export type TabParamList = {
+  Home: undefined;
+  Library: undefined;
+  Search: undefined;
+  Explore: undefined;
+  Settings: undefined;
+};
+
 export type RootStackParamList = {
-  Tabs: undefined;
+  Tabs: NavigatorScreenParams<TabParamList>;
   Volume: { n: number };
   Reader: { id: string; find?: string };
   Timeline: undefined;
@@ -26,7 +35,7 @@ export type RootStackParamList = {
   Settings: undefined;
 };
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<TabParamList>();
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function HeaderGear({ onPress }: { onPress: () => void }) {
@@ -103,7 +112,7 @@ export function RootNavigator() {
 }
 
 // Universal / app links: nenjukkuneethi.org/read/<id> → Reader.
-export const linking = {
+export const linking: LinkingOptions<RootStackParamList> = {
   prefixes: ["nenjukkuneethi://", "https://nenjukkuneethi.org"],
   config: {
     screens: {

@@ -104,5 +104,27 @@ export const api = {
     await storage.removeDownload(c.id);
   },
 
+  /**
+   * Bytes currently held on disk for downloaded chapters. Sums the download
+   * registry (an exact figure the Settings screen can show without walking the
+   * whole cache directory).
+   */
+  async offlineBytes(): Promise<number> {
+    const map = await storage.getDownloads();
+    return Object.values(map).reduce((n, d) => n + (d.bytes || 0), 0);
+  },
+
+  /**
+   * Wipe every cached document (downloaded chapters + the runtime fetch cache)
+   * and clear the download registry. The manifest re-fetches on next launch.
+   */
+  async clearOfflineContent(): Promise<void> {
+    try {
+      await FileSystem.deleteAsync(DIR, { idempotent: true });
+    } catch {}
+    const map = await storage.getDownloads();
+    await Promise.all(Object.keys(map).map((id) => storage.removeDownload(id)));
+  },
+
   imageUrl: (src: string) => url(src),
 };

@@ -92,13 +92,33 @@ chapter. **Nothing rendered.** All pre-render deliverables exist under
 
 ---
 
-## 3. Mobile app (ACTIVE — in progress, does NOT yet compile)
+## 3. Mobile app (Increment 1 COMPLETE — compiles & bundles; real-device test pending)
 
 **Task:** production-quality cross-platform app (Expo + React Native + TypeScript) for App
 Store + Play, consuming the archive JSON. NOT a WebView wrapper (Apple 4.2). Reuse the site's
 visual identity but redesign interactions for mobile. This is **Increment 1: the runnable
 foundation** (navigation + offline reader + search + data layer) — production hardening,
 TestFlight, and store assets are staged in the roadmap, not faked.
+
+**Status:** Increment 1 compile-critical implementation is **complete** and lives on branch
+`mobile/increment-1-runnable` (not merged to `main` — see below). The app now compiles and
+Metro bundles it end to end. **Still pending: launching and smoke-testing on a real device /
+simulator** — do that before merging to `main` or tagging a release.
+
+Verified in this env (deps now installed):
+- `npx tsc --noEmit` → **exit 0** (fixed a real navigation `linking` type error: `Tabs` is
+  now typed as `NavigatorScreenParams<TabParamList>` and `linking` as `LinkingOptions`).
+- `npm run validate:manifest` → **passes** (AJV): 6 volumes, 391 chapters.
+- `npx expo-doctor` → **18/18 checks pass**.
+- `npx expo export --platform ios` → **succeeds** (whole module graph resolves; ~2.5 MB
+  Hermes bundle).
+- Dependency fixes required to bundle: added **`expo-asset`** and **`babel-plugin-module-resolver`**
+  (the latter is used by `babel.config.js` for the `@/` alias but was missing — app could not
+  bundle without it); aligned SDK-52 versions via `expo install --fix` (`react-native`
+  0.76.5→0.76.9, `@expo/vector-icons`→`~14.0.4`). `mobile/package-lock.json` is committed.
+- **App icons/splash regenerated from the exact brand vector** `app/icon.svg`
+  (`mobile/assets/generate-assets.py` rasterises the நீ glyph with correct bezier fill — the
+  earlier font-based approximation was replaced). Assets are pixel-consistent with the website.
 
 ### 3a. Data feed — DONE
 - **Builder:** `pipeline/builders/build_app_manifest.py` — reads `public/data/manifest.json` +
@@ -150,38 +170,37 @@ mobile/
       SavedScreen.tsx             tabs: bookmarks / offline downloads / in-progress
 ```
 
-### 3c. IMMEDIATE next steps to make it compile/run
-`navigation/index.tsx` imports **three screens that don't exist yet** — create them:
-1. **`mobile/src/screens/SettingsScreen.tsx`** — theme (light/dark/sepia + follow-system),
-   font size, line-height, "English by default" toggle; storage-used / clear-offline; About;
-   **Privacy Policy** + **Support** links (store requirement); app/content version display.
-2. **`mobile/src/screens/TimelineScreen.tsx`** — functional now from `volumeMeta` periods
-   (each volume = an era 1924–1969 … 1999–2005 → tap → Volume). When `features.timeline` JSON
-   exists (Increment 2), render `data/timeline.ts` milestones with deep-links to Reader.
-3. **`mobile/src/screens/ExploreScreen.tsx`** — thematic entry points: volumes, Murasoli
-   letters, Timeline, Search, stats; real navigation, no dead placeholder.
-4. **`mobile/App.tsx`** (entry, referenced by `index.ts`):
-   ```tsx
-   import React from "react"; import { NavigationContainer } from "@react-navigation/native";
-   import { SafeAreaProvider } from "react-native-safe-area-context";
-   import { StatusBar } from "expo-status-bar";
-   import { useFonts, NotoSerifTamil_500Medium, NotoSerifTamil_600SemiBold } from "@expo-google-fonts/noto-serif-tamil";
-   import { AppStateProvider, useTheme } from "@/data/AppState";
-   import { RootNavigator, linking } from "@/navigation";
-   // load fonts; wrap RootNavigator in AppStateProvider + NavigationContainer(theme, linking); set StatusBar from useTheme().statusBar
-   ```
-5. `mobile/scripts/validate-manifest.mjs` — AJV JSON-schema validation of manifest.v1.json
-   (referenced by `npm run validate:manifest`; schema per `types.ts`).
-6. **Assets:** `mobile/assets/icon.png`, `splash.png`, `adaptive-icon.png` (reuse the நீ /
-   marina identity; app.json already points to them).
-7. **Docs** still to write (deliverables): `mobile/docs/ARCHITECTURE.md`, `DATA_CONTRACTS.md`,
-   `ROADMAP.md`, `BUILD.md` (Expo/EAS Android internal + iOS TestFlight), `STORE_CHECKLIST.md`,
-   and `mobile/README.md`.
+### 3c. Increment 1 compile-critical work — DONE
+The three missing screens + entry point + tooling now exist and are wired in:
+1. **`mobile/src/screens/SettingsScreen.tsx`** — theme (light/sepia/dark + follow-system),
+   font-size & line-height steppers, "English by default" toggle, offline storage size +
+   clear, **Privacy Policy** + **Support** links, app/content version. (`api.offlineBytes()` +
+   `api.clearOfflineContent()` were added to `data/client.ts` for this.)
+2. **`mobile/src/screens/TimelineScreen.tsx`** — era-per-volume rail from `period` metadata
+   (1924–2005 → tap → Volume); degrades to milestones when `features.timeline` JSON lands.
+3. **`mobile/src/screens/ExploreScreen.tsx`** — real thematic entry points (Volumes, Timeline,
+   Search, Saved), a Murasoli card (opens the web collection, clearly labelled — no native
+   letters reader yet, so no dead placeholder), and a by-the-numbers panel.
+4. **`mobile/App.tsx`** — loads Noto Serif Tamil (holds native splash until ready), wraps
+   `RootNavigator` in `AppStateProvider` + `NavigationContainer` (palette→nav-theme mapping,
+   deep-link `linking`), drives `StatusBar` from the active theme.
+5. **`mobile/scripts/validate-manifest.mjs`** — AJV schema check + cross-checks (chapterCount
+   vs inlined chapters, unique ids). `npm run validate:manifest` passes.
+6. **Assets** — `icon.png`, `splash.png`, `adaptive-icon.png` generated from `app/icon.svg`
+   by `mobile/assets/generate-assets.py` (see §3 status note above).
+7. **Docs** — `mobile/README.md` + `mobile/docs/{ARCHITECTURE,DATA_CONTRACTS,ROADMAP,BUILD,
+   STORE_CHECKLIST}.md`, all written.
 
-### 3d. How to run (once §3c 1–4 done)
+### 3c-next. IMMEDIATE next step: real-device runtime test
+Everything above is static-verified (types, bundle, doctor) but **not yet run on a device**.
+Before merging `mobile/increment-1-runnable` → `main` or tagging: `cd mobile && npx expo start`,
+open in Expo Go / a simulator, and smoke-test each screen (manifest load, reader offline,
+search, downloads, theme switching, deep link `nenjukkuneethi.org/read/v1-ch01`).
+
+### 3d. How to run
 ```bash
 cd mobile
-npm install            # NOTE: was NOT run in this env (no network verified). ~SDK 52.
+npm install            # deps ARE installed on branch mobile/increment-1-runnable (network verified)
 npx expo start         # scan QR with Expo Go, or:
 npm run ios / android  # native build
 ```
