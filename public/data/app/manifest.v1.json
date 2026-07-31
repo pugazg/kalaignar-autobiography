@@ -1,0 +1,3626 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "20572249364a",
+  "generatedAt": "2026-07-31T13:39:00.975102+00:00",
+  "dataBase": "/data",
+  "work": {
+    "titleTa": "நெஞ்சுக்கு நீதி",
+    "titleEn": "Nenjukku Neethi",
+    "author": "மு. கருணாநிதி (M. Karunanidhi)",
+    "siteUrl": "https://nenjukkuneethi.org"
+  },
+  "volumes": [
+    {
+      "n": 1,
+      "titleTa": "நெஞ்சுக்கு நீதி — முதல் பாகம்",
+      "titleEn": "Nenjukku Neethi — Volume 1",
+      "period": "1924–1969",
+      "serialisedIn": "Dinamani Kadir",
+      "chapterCount": 140,
+      "pages": 759,
+      "searchIndexUrl": "/data/fulltext/v1.json",
+      "chapters": [
+        {
+          "id": "v1-ch01",
+          "title": "பிறந்த ஆண்டு",
+          "startPage": 15,
+          "endPage": 21,
+          "textUrl": "/data/text/v1-ch01.json",
+          "textEnUrl": "/data/text-en/v1-ch01.json",
+          "visualsUrl": "/data/visuals/v1-ch01.json"
+        },
+        {
+          "id": "v1-ch02",
+          "title": "தந்தையின் துணிவு",
+          "startPage": 22,
+          "endPage": 29,
+          "textUrl": "/data/text/v1-ch02.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch02.json"
+        },
+        {
+          "id": "v1-ch03",
+          "title": "\"சிவாய நம! ஓம் நமசிவாய\"",
+          "startPage": 30,
+          "endPage": 36,
+          "textUrl": "/data/text/v1-ch03.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch03.json"
+        },
+        {
+          "id": "v1-ch04",
+          "title": "என்னுடைய அரசியல் அரிச்சுவடி",
+          "startPage": 37,
+          "endPage": 41,
+          "textUrl": "/data/text/v1-ch04.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch05",
+          "title": "நீதிக் கட்சியில் பல மாற்றங்கள்",
+          "startPage": 42,
+          "endPage": 45,
+          "textUrl": "/data/text/v1-ch05.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch06",
+          "title": "தமிழ் காக்கும் போர் முனை",
+          "startPage": 46,
+          "endPage": 50,
+          "textUrl": "/data/text/v1-ch06.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch06.json"
+        },
+        {
+          "id": "v1-ch07",
+          "title": "\"நீங்களா 'மாணவ நேசன்' நடத்துகிறீர்கள்?\"",
+          "startPage": 51,
+          "endPage": 55,
+          "textUrl": "/data/text/v1-ch07.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch08",
+          "title": "தமிழ் மாணவர் மன்றம்",
+          "startPage": 56,
+          "endPage": 59,
+          "textUrl": "/data/text/v1-ch08.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch09",
+          "title": "கலகக்கார நாரதர் புகுந்தார்.",
+          "startPage": 60,
+          "endPage": 64,
+          "textUrl": "/data/text/v1-ch09.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch10",
+          "title": "நண்பன் நடித்த நாடகம்",
+          "startPage": 65,
+          "endPage": 67,
+          "textUrl": "/data/text/v1-ch10.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch11",
+          "title": "இளம் எழுத்தாளர்",
+          "startPage": 68,
+          "endPage": 70,
+          "textUrl": "/data/text/v1-ch11.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch11.json"
+        },
+        {
+          "id": "v1-ch12",
+          "title": "\"எடுக்கவோ, கோக்கவோ?\"",
+          "startPage": 71,
+          "endPage": 75,
+          "textUrl": "/data/text/v1-ch12.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch12.json"
+        },
+        {
+          "id": "v1-ch13",
+          "title": "மாமனார் தந்த வரவேற்பு",
+          "startPage": 76,
+          "endPage": 80,
+          "textUrl": "/data/text/v1-ch13.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch14",
+          "title": "வாழ்வதற்கு வழி? நடிகனானேன் நான்!",
+          "startPage": 81,
+          "endPage": 84,
+          "textUrl": "/data/text/v1-ch14.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch15",
+          "title": "நண்பர்கள் முகம் வாடலாமா?",
+          "startPage": 85,
+          "endPage": 89,
+          "textUrl": "/data/text/v1-ch15.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch15.json"
+        },
+        {
+          "id": "v1-ch16",
+          "title": "கம்புகள்! குண்டாந்தடிகள்!",
+          "startPage": 90,
+          "endPage": 93,
+          "textUrl": "/data/text/v1-ch16.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch16.json"
+        },
+        {
+          "id": "v1-ch17",
+          "title": "குளிப்பது ஒரு குற்றமா?",
+          "startPage": 94,
+          "endPage": 98,
+          "textUrl": "/data/text/v1-ch17.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch17.json"
+        },
+        {
+          "id": "v1-ch18",
+          "title": "அசல் நரிகளிடமிருந்து தப்பினேன்!",
+          "startPage": 99,
+          "endPage": 103,
+          "textUrl": "/data/text/v1-ch18.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch19",
+          "title": "சங்கிலியை விற்றுக் கடனை அடைத்தேன்",
+          "startPage": 104,
+          "endPage": 107,
+          "textUrl": "/data/text/v1-ch19.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch20",
+          "title": "போய் வருகிறேன் என்றாள் என் பத்மா",
+          "startPage": 108,
+          "endPage": 111,
+          "textUrl": "/data/text/v1-ch20.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch20.json"
+        },
+        {
+          "id": "v1-ch21",
+          "title": "காந்தியார் கண்ட கனவை நனவாக்குகிறோம்",
+          "startPage": 112,
+          "endPage": 116,
+          "textUrl": "/data/text/v1-ch21.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch22",
+          "title": "என் திருமணத்துக்கு நானே தலைமை தாங்கினேன்!",
+          "startPage": 117,
+          "endPage": 121,
+          "textUrl": "/data/text/v1-ch22.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch22.json"
+        },
+        {
+          "id": "v1-ch23",
+          "title": "பெரியார் - மணியம்மை திருமணம்",
+          "startPage": 122,
+          "endPage": 126,
+          "textUrl": "/data/text/v1-ch23.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch23.json"
+        },
+        {
+          "id": "v1-ch24",
+          "title": "அண்ணா அசைந்து கொடுக்கவில்லை",
+          "startPage": 127,
+          "endPage": 130,
+          "textUrl": "/data/text/v1-ch24.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch24.json"
+        },
+        {
+          "id": "v1-ch25",
+          "title": "எழுத்துரிமை, பேச்சுரிமை",
+          "startPage": 131,
+          "endPage": 133,
+          "textUrl": "/data/text/v1-ch25.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch25.json"
+        },
+        {
+          "id": "v1-ch26",
+          "title": "நண்பர் கண்ணதாசன்",
+          "startPage": 134,
+          "endPage": 136,
+          "textUrl": "/data/text/v1-ch26.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch27",
+          "title": "கனிவு வென்றது!",
+          "startPage": 137,
+          "endPage": 139,
+          "textUrl": "/data/text/v1-ch27.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch28",
+          "title": "மறக்க முடியாத பயணம்",
+          "startPage": 140,
+          "endPage": 144,
+          "textUrl": "/data/text/v1-ch28.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch29",
+          "title": "சேலத்தில் குடும்பம்",
+          "startPage": 145,
+          "endPage": 146,
+          "textUrl": "/data/text/v1-ch29.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch30",
+          "title": "கலைவாணரின் பெருந்தன்மை",
+          "startPage": 147,
+          "endPage": 150,
+          "textUrl": "/data/text/v1-ch30.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch30.json"
+        },
+        {
+          "id": "v1-ch31",
+          "title": "பண்டார உருவில்...",
+          "startPage": 151,
+          "endPage": 153,
+          "textUrl": "/data/text/v1-ch31.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch32",
+          "title": "வானத்து மத்தாப்பு",
+          "startPage": 154,
+          "endPage": 158,
+          "textUrl": "/data/text/v1-ch32.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch33",
+          "title": "சீனத்துக் கவிஞர் மூவர்",
+          "startPage": 159,
+          "endPage": 162,
+          "textUrl": "/data/text/v1-ch33.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch33.json"
+        },
+        {
+          "id": "v1-ch34",
+          "title": "மாவீரன் கே. வி. கே. சாமி",
+          "startPage": 163,
+          "endPage": 169,
+          "textUrl": "/data/text/v1-ch34.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch34.json"
+        },
+        {
+          "id": "v1-ch35",
+          "title": "இந்தி எதிர்ப்பில் தந்தையும் நானும்",
+          "startPage": 170,
+          "endPage": 176,
+          "textUrl": "/data/text/v1-ch35.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch35.json"
+        },
+        {
+          "id": "v1-ch36",
+          "title": "கறுப்புக் கொடி",
+          "startPage": 177,
+          "endPage": 180,
+          "textUrl": "/data/text/v1-ch36.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch36.json"
+        },
+        {
+          "id": "v1-ch37",
+          "title": "முதலாவது மாநில மாநாடு",
+          "startPage": 181,
+          "endPage": 183,
+          "textUrl": "/data/text/v1-ch37.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch37.json"
+        },
+        {
+          "id": "v1-ch38",
+          "title": "மும்முனைப் போராட்டம்",
+          "startPage": 184,
+          "endPage": 184,
+          "textUrl": "/data/text/v1-ch38.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch38.json"
+        },
+        {
+          "id": "v1-ch39",
+          "title": "விண்ணிலே மிதந்தோம்",
+          "startPage": 185,
+          "endPage": 188,
+          "textUrl": "/data/text/v1-ch39.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch40",
+          "title": "திருச்சி மாவட்ட எழுச்சி",
+          "startPage": 189,
+          "endPage": 194,
+          "textUrl": "/data/text/v1-ch40.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch41",
+          "title": "முரசு அதிர்ந்தது",
+          "startPage": 195,
+          "endPage": 196,
+          "textUrl": "/data/text/v1-ch41.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch42",
+          "title": "பரப்பிரம்மம்",
+          "startPage": 197,
+          "endPage": 199,
+          "textUrl": "/data/text/v1-ch42.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch42.json"
+        },
+        {
+          "id": "v1-ch43",
+          "title": "களம் புகுந்தேன்!",
+          "startPage": 200,
+          "endPage": 211,
+          "textUrl": "/data/text/v1-ch43.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch43.json"
+        },
+        {
+          "id": "v1-ch44",
+          "title": "அரியலூரில் விசாரணை",
+          "startPage": 212,
+          "endPage": 219,
+          "textUrl": "/data/text/v1-ch44.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch44.json"
+        },
+        {
+          "id": "v1-ch45",
+          "title": "மத்திய சிறை நுழைவு",
+          "startPage": 220,
+          "endPage": 223,
+          "textUrl": "/data/text/v1-ch45.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch46",
+          "title": "புதிய ராஜ்யம்",
+          "startPage": 224,
+          "endPage": 230,
+          "textUrl": "/data/text/v1-ch46.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch46.json"
+        },
+        {
+          "id": "v1-ch47",
+          "title": "சிறைச்சாலை விதிகள்",
+          "startPage": 231,
+          "endPage": 237,
+          "textUrl": "/data/text/v1-ch47.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch47.json"
+        },
+        {
+          "id": "v1-ch48",
+          "title": "சிறையில் போட்டி மன்றம்",
+          "startPage": 238,
+          "endPage": 244,
+          "textUrl": "/data/text/v1-ch48.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch48.json"
+        },
+        {
+          "id": "v1-ch49",
+          "title": "எனது சிறைப் பொழுதுபோக்கு",
+          "startPage": 245,
+          "endPage": 249,
+          "textUrl": "/data/text/v1-ch49.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch49.json"
+        },
+        {
+          "id": "v1-ch50",
+          "title": "சிறைச் சீர்திருத்தம் செய்தோம்",
+          "startPage": 250,
+          "endPage": 253,
+          "textUrl": "/data/text/v1-ch50.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch51",
+          "title": "காத்திருந்து பெற்ற வெற்றிக் கனி",
+          "startPage": 254,
+          "endPage": 257,
+          "textUrl": "/data/text/v1-ch51.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch51.json"
+        },
+        {
+          "id": "v1-ch52",
+          "title": "அண்ணாவுக்கும் கோபம் வரும்.",
+          "startPage": 258,
+          "endPage": 260,
+          "textUrl": "/data/text/v1-ch52.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch52.json"
+        },
+        {
+          "id": "v1-ch53",
+          "title": "கோவில்பட்டி மாநாடு",
+          "startPage": 261,
+          "endPage": 262,
+          "textUrl": "/data/text/v1-ch53.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch53.json"
+        },
+        {
+          "id": "v1-ch54",
+          "title": "எரிச்சலாளர் ஏமாற்றம்",
+          "startPage": 263,
+          "endPage": 265,
+          "textUrl": "/data/text/v1-ch54.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch55",
+          "title": "முதல் விபத்து",
+          "startPage": 266,
+          "endPage": 271,
+          "textUrl": "/data/text/v1-ch55.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch55.json"
+        },
+        {
+          "id": "v1-ch56",
+          "title": "கொள்ளிடத்து வெள்ளத்திடையே",
+          "startPage": 272,
+          "endPage": 274,
+          "textUrl": "/data/text/v1-ch56.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch57",
+          "title": "விபத்துத் துணுக்குகள்",
+          "startPage": 275,
+          "endPage": 277,
+          "textUrl": "/data/text/v1-ch57.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch58",
+          "title": "வெட்ட வெளியும் சட்ட சபையும்",
+          "startPage": 278,
+          "endPage": 285,
+          "textUrl": "/data/text/v1-ch58.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch58.json"
+        },
+        {
+          "id": "v1-ch59",
+          "title": "1956-ம் 1957-ம்",
+          "startPage": 286,
+          "endPage": 289,
+          "textUrl": "/data/text/v1-ch59.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch60",
+          "title": "குளித்தலையில் தேர்தல் பணி",
+          "startPage": 290,
+          "endPage": 301,
+          "textUrl": "/data/text/v1-ch60.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch60.json"
+        },
+        {
+          "id": "v1-ch61",
+          "title": "முதல் சட்டமன்ற நுழைவு",
+          "startPage": 302,
+          "endPage": 310,
+          "textUrl": "/data/text/v1-ch61.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch61.json"
+        },
+        {
+          "id": "v1-ch62",
+          "title": "கன்னிப் பேச்சு",
+          "startPage": 311,
+          "endPage": 314,
+          "textUrl": "/data/text/v1-ch62.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch63",
+          "title": "இணையற்ற நங்கவரம் போராட்டம்",
+          "startPage": 315,
+          "endPage": 317,
+          "textUrl": "/data/text/v1-ch63.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch63.json"
+        },
+        {
+          "id": "v1-ch64",
+          "title": "அதிகார அரசியலில் அண்ணன்",
+          "startPage": 318,
+          "endPage": 326,
+          "textUrl": "/data/text/v1-ch64.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch64.json"
+        },
+        {
+          "id": "v1-ch65",
+          "title": "இந்திச் சக்கரம் சுழன்றது",
+          "startPage": 327,
+          "endPage": 330,
+          "textUrl": "/data/text/v1-ch65.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch65.json"
+        },
+        {
+          "id": "v1-ch66",
+          "title": "இங்குமா வகுப்புக் கலவரம்?",
+          "startPage": 331,
+          "endPage": 336,
+          "textUrl": "/data/text/v1-ch66.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch66.json"
+        },
+        {
+          "id": "v1-ch67",
+          "title": "நேருவுக்குக் கறுப்புக் கொடி",
+          "startPage": 337,
+          "endPage": 343,
+          "textUrl": "/data/text/v1-ch67.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch67.json"
+        },
+        {
+          "id": "v1-ch68",
+          "title": "காரைக் கைது செய்த காவலர்கள்",
+          "startPage": 344,
+          "endPage": 349,
+          "textUrl": "/data/text/v1-ch68.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch69",
+          "title": "கட்டுப்பாட்டின் எடுத்துக்காட்டு",
+          "startPage": 350,
+          "endPage": 353,
+          "textUrl": "/data/text/v1-ch69.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch70",
+          "title": "உதய சூரியன்-நாடகமும், சின்னமும்",
+          "startPage": 354,
+          "endPage": 359,
+          "textUrl": "/data/text/v1-ch70.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch70.json"
+        },
+        {
+          "id": "v1-ch71",
+          "title": "அண்ணா அணிவித்த கணையாழி",
+          "startPage": 360,
+          "endPage": 364,
+          "textUrl": "/data/text/v1-ch71.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch71.json"
+        },
+        {
+          "id": "v1-ch72",
+          "title": "பகைமைத் தீயும் பண்புப் புனலும்",
+          "startPage": 365,
+          "endPage": 376,
+          "textUrl": "/data/text/v1-ch72.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch73",
+          "title": "சம்பத்துக்கு அண்ணனின் அறிக்கை",
+          "startPage": 377,
+          "endPage": 381,
+          "textUrl": "/data/text/v1-ch73.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch73.json"
+        },
+        {
+          "id": "v1-ch74",
+          "title": "கழகம் கொட்டிய குருதி வெள்ளம்",
+          "startPage": 382,
+          "endPage": 385,
+          "textUrl": "/data/text/v1-ch74.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch74.json"
+        },
+        {
+          "id": "v1-ch75",
+          "title": "சீனப் படையெடுப்பை எதிர்த்துக் கழகம்",
+          "startPage": 386,
+          "endPage": 391,
+          "textUrl": "/data/text/v1-ch75.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch75.json"
+        },
+        {
+          "id": "v1-ch76",
+          "title": "திருச்சியிலிருந்து விடுதலை பெற்றேன்",
+          "startPage": 392,
+          "endPage": 396,
+          "textUrl": "/data/text/v1-ch76.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch76.json"
+        },
+        {
+          "id": "v1-ch77",
+          "title": "நாமும் அமெரிக்காவும்",
+          "startPage": 397,
+          "endPage": 401,
+          "textUrl": "/data/text/v1-ch77.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch78",
+          "title": "தென் மண்டலக் குழு",
+          "startPage": 402,
+          "endPage": 405,
+          "textUrl": "/data/text/v1-ch78.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch78.json"
+        },
+        {
+          "id": "v1-ch79",
+          "title": "தங்கக் கட்டுப்பாடு",
+          "startPage": 406,
+          "endPage": 407,
+          "textUrl": "/data/text/v1-ch79.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch80",
+          "title": "அன்னையை இழந்தேன்",
+          "startPage": 408,
+          "endPage": 418,
+          "textUrl": "/data/text/v1-ch80.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch80.json"
+        },
+        {
+          "id": "v1-ch81",
+          "title": "அரசியல் சட்டப் பதினாறாவது திருத்தம்",
+          "startPage": 419,
+          "endPage": 426,
+          "textUrl": "/data/text/v1-ch81.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch82",
+          "title": "'மே'யும் 'ஷெல்'லும்",
+          "startPage": 427,
+          "endPage": 432,
+          "textUrl": "/data/text/v1-ch82.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch82.json"
+        },
+        {
+          "id": "v1-ch83",
+          "title": "கழகத்தைக் கலைத்தல் முடியுமா ?",
+          "startPage": 433,
+          "endPage": 437,
+          "textUrl": "/data/text/v1-ch83.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch84",
+          "title": "போராட்டக் குழுத் தலைவர் நான் !",
+          "startPage": 438,
+          "endPage": 443,
+          "textUrl": "/data/text/v1-ch84.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch84.json"
+        },
+        {
+          "id": "v1-ch85",
+          "title": "இடைத் தேர்தல் - திருவண்ணாமலை",
+          "startPage": 444,
+          "endPage": 451,
+          "textUrl": "/data/text/v1-ch85.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch85.json"
+        },
+        {
+          "id": "v1-ch86",
+          "title": "அண்ணாவின் வீரப் பேச்சு",
+          "startPage": 452,
+          "endPage": 462,
+          "textUrl": "/data/text/v1-ch86.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch86.json"
+        },
+        {
+          "id": "v1-ch87",
+          "title": "கலையும் அரசியலும் இரு கண்கள்",
+          "startPage": 463,
+          "endPage": 468,
+          "textUrl": "/data/text/v1-ch87.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch87.json"
+        },
+        {
+          "id": "v1-ch88",
+          "title": "பதினாறாவது விதியின் திருத்தத்தை எதிர்த்தேன்",
+          "startPage": 469,
+          "endPage": 472,
+          "textUrl": "/data/text/v1-ch88.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch88.json"
+        },
+        {
+          "id": "v1-ch89",
+          "title": "பிரிவினை கேட்டவருக்கு உதாரணம்!",
+          "startPage": 473,
+          "endPage": 477,
+          "textUrl": "/data/text/v1-ch89.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch89.json"
+        },
+        {
+          "id": "v1-ch90",
+          "title": "காமராசர் திட்டம்",
+          "startPage": 478,
+          "endPage": 480,
+          "textUrl": "/data/text/v1-ch90.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch91",
+          "title": "அண்ணா வழங்கிய வாளும் கேடயமும்",
+          "startPage": 481,
+          "endPage": 485,
+          "textUrl": "/data/text/v1-ch91.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch91.json"
+        },
+        {
+          "id": "v1-ch92",
+          "title": "இரண்டாந்தரக் குடிமக்களா?",
+          "startPage": 486,
+          "endPage": 490,
+          "textUrl": "/data/text/v1-ch92.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch92.json"
+        },
+        {
+          "id": "v1-ch93",
+          "title": "கோ. சு. மணி குடும்பத்திற்கு நிதியுதவி",
+          "startPage": 491,
+          "endPage": 492,
+          "textUrl": "/data/text/v1-ch93.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch94",
+          "title": "எனது கலைப்பணி",
+          "startPage": 493,
+          "endPage": 495,
+          "textUrl": "/data/text/v1-ch94.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch94.json"
+        },
+        {
+          "id": "v1-ch95",
+          "title": "மதுரைக் களம்",
+          "startPage": 496,
+          "endPage": 503,
+          "textUrl": "/data/text/v1-ch95.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch96",
+          "title": "சிங்கத் தமிழன் சின்னச்சாமி",
+          "startPage": 504,
+          "endPage": 507,
+          "textUrl": "/data/text/v1-ch96.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch97",
+          "title": "அடக்குமுறைக்கு இடையே நகராட்சித் தேர்தல்",
+          "startPage": 508,
+          "endPage": 513,
+          "textUrl": "/data/text/v1-ch97.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch98",
+          "title": "புரட்சித் தீபம் அணைந்தது",
+          "startPage": 514,
+          "endPage": 519,
+          "textUrl": "/data/text/v1-ch98.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch99",
+          "title": "நேரு மறைந்தார்",
+          "startPage": 520,
+          "endPage": 524,
+          "textUrl": "/data/text/v1-ch99.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch100",
+          "title": "அன்பகம் - தமிழகம்",
+          "startPage": 525,
+          "endPage": 527,
+          "textUrl": "/data/text/v1-ch100.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch101",
+          "title": "எதிர்ப்புக் கனல்",
+          "startPage": 528,
+          "endPage": 532,
+          "textUrl": "/data/text/v1-ch101.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch101.json"
+        },
+        {
+          "id": "v1-ch102",
+          "title": "பூம்புகார் படம்",
+          "startPage": 533,
+          "endPage": 537,
+          "textUrl": "/data/text/v1-ch102.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch103",
+          "title": "அரசியல் மாற்றங்கள்",
+          "startPage": 538,
+          "endPage": 539,
+          "textUrl": "/data/text/v1-ch103.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch104",
+          "title": "பிரெஞ்சுக் கதை",
+          "startPage": 540,
+          "endPage": 544,
+          "textUrl": "/data/text/v1-ch104.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch104.json"
+        },
+        {
+          "id": "v1-ch105",
+          "title": "பிறந்தவூரில் சிறந்த தொண்டு",
+          "startPage": 545,
+          "endPage": 549,
+          "textUrl": "/data/text/v1-ch105.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch105.json"
+        },
+        {
+          "id": "v1-ch106",
+          "title": "துக்க நாள்",
+          "startPage": 550,
+          "endPage": 557,
+          "textUrl": "/data/text/v1-ch106.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch106.json"
+        },
+        {
+          "id": "v1-ch107",
+          "title": "காராக்கிரகம் விழுங்கிற்று எங்களை",
+          "startPage": 558,
+          "endPage": 561,
+          "textUrl": "/data/text/v1-ch107.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch107.json"
+        },
+        {
+          "id": "v1-ch108",
+          "title": "நெஞ்சைப் பிளந்திடும் நிகழ்ச்சிகள்",
+          "startPage": 562,
+          "endPage": 571,
+          "textUrl": "/data/text/v1-ch108.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch108.json"
+        },
+        {
+          "id": "v1-ch109",
+          "title": "மறக்க முடியுமா?",
+          "startPage": 572,
+          "endPage": 576,
+          "textUrl": "/data/text/v1-ch109.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch109.json"
+        },
+        {
+          "id": "v1-ch110",
+          "title": "புனித பூமியாம் பாளையங்கோட்டை",
+          "startPage": 577,
+          "endPage": 582,
+          "textUrl": "/data/text/v1-ch110.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch110.json"
+        },
+        {
+          "id": "v1-ch111",
+          "title": "ஏன் பாதுகாப்புச் சட்டம்?",
+          "startPage": 583,
+          "endPage": 591,
+          "textUrl": "/data/text/v1-ch111.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch111.json"
+        },
+        {
+          "id": "v1-ch112",
+          "title": "மாறனும் கைது என அண்ணா கூறினார்",
+          "startPage": 592,
+          "endPage": 596,
+          "textUrl": "/data/text/v1-ch112.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch112.json"
+        },
+        {
+          "id": "v1-ch113",
+          "title": "எனக்கும் விடுதலை!",
+          "startPage": 597,
+          "endPage": 600,
+          "textUrl": "/data/text/v1-ch113.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch114",
+          "title": "பாராட்டுக் கோட்டை",
+          "startPage": 601,
+          "endPage": 604,
+          "textUrl": "/data/text/v1-ch114.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch115",
+          "title": "அந்தோ! போளூரார்!",
+          "startPage": 605,
+          "endPage": 607,
+          "textUrl": "/data/text/v1-ch115.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch116",
+          "title": "பாகிஸ்தான் உதயம் எப்படி?",
+          "startPage": 608,
+          "endPage": 615,
+          "textUrl": "/data/text/v1-ch116.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch117",
+          "title": "பிச்சைக்காரர் ஒழிப்பு",
+          "startPage": 616,
+          "endPage": 622,
+          "textUrl": "/data/text/v1-ch117.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch118",
+          "title": "பிராவ்தாவுக்கு என் பேட்டி",
+          "startPage": 623,
+          "endPage": 626,
+          "textUrl": "/data/text/v1-ch118.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch118.json"
+        },
+        {
+          "id": "v1-ch119",
+          "title": "அன்றைய தண்ணீர்த் தட்டுப்பாடு",
+          "startPage": 627,
+          "endPage": 632,
+          "textUrl": "/data/text/v1-ch119.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch119.json"
+        },
+        {
+          "id": "v1-ch120",
+          "title": "வள்ளுவருக்கு ஏற்றம்",
+          "startPage": 633,
+          "endPage": 638,
+          "textUrl": "/data/text/v1-ch120.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch121",
+          "title": "நாணயங் கெட்டது",
+          "startPage": 639,
+          "endPage": 644,
+          "textUrl": "/data/text/v1-ch121.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch121.json"
+        },
+        {
+          "id": "v1-ch122",
+          "title": "காகித ஓடம்",
+          "startPage": 645,
+          "endPage": 651,
+          "textUrl": "/data/text/v1-ch122.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch122.json"
+        },
+        {
+          "id": "v1-ch123",
+          "title": "காமராசரைக் காப்பாற்றியவர்",
+          "startPage": 652,
+          "endPage": 662,
+          "textUrl": "/data/text/v1-ch123.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch123.json"
+        },
+        {
+          "id": "v1-ch124",
+          "title": "இலக்கியத்தில் பிரச்சாரமா?",
+          "startPage": 663,
+          "endPage": 664,
+          "textUrl": "/data/text/v1-ch124.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch125",
+          "title": "விருகம்பாக்கம் மாநாடு",
+          "startPage": 665,
+          "endPage": 672,
+          "textUrl": "/data/text/v1-ch125.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch126",
+          "title": "கோட்டூரில் கொலை வெறியரிடையே",
+          "startPage": 673,
+          "endPage": 679,
+          "textUrl": "/data/text/v1-ch126.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch126.json"
+        },
+        {
+          "id": "v1-ch127",
+          "title": "கூட்டணியும் கேலிச் சித்திரமும்",
+          "startPage": 680,
+          "endPage": 683,
+          "textUrl": "/data/text/v1-ch127.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch128",
+          "title": "ஆட்சியை மாற்றிய தேர்தல் முடிவுகள்",
+          "startPage": 684,
+          "endPage": 690,
+          "textUrl": "/data/text/v1-ch128.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch128.json"
+        },
+        {
+          "id": "v1-ch129",
+          "title": "தந்தையைச் சந்தித்தோம்!",
+          "startPage": 691,
+          "endPage": 695,
+          "textUrl": "/data/text/v1-ch129.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch129.json"
+        },
+        {
+          "id": "v1-ch130",
+          "title": "பதவியெனும் புதிய சட்டை",
+          "startPage": 696,
+          "endPage": 704,
+          "textUrl": "/data/text/v1-ch130.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch130.json"
+        },
+        {
+          "id": "v1-ch131",
+          "title": "கலை மாமணியானேன்",
+          "startPage": 705,
+          "endPage": 708,
+          "textUrl": "/data/text/v1-ch131.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch131.json"
+        },
+        {
+          "id": "v1-ch132",
+          "title": "குடிசை மாற்று-கூவம் திருத்தம்-குடிநீர் வருகை",
+          "startPage": 709,
+          "endPage": 715,
+          "textUrl": "/data/text/v1-ch132.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch132.json"
+        },
+        {
+          "id": "v1-ch133",
+          "title": "அண்ணன் முடித்த பணிகள்",
+          "startPage": 716,
+          "endPage": 721,
+          "textUrl": "/data/text/v1-ch133.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch133.json"
+        },
+        {
+          "id": "v1-ch134",
+          "title": "கவியரங்கேறினேன்",
+          "startPage": 722,
+          "endPage": 728,
+          "textUrl": "/data/text/v1-ch134.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch134.json"
+        },
+        {
+          "id": "v1-ch135",
+          "title": "உலகத் தமிழ் மாநாடு",
+          "startPage": 729,
+          "endPage": 732,
+          "textUrl": "/data/text/v1-ch135.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch136",
+          "title": "எனது நாடகக் காப்பியம்",
+          "startPage": 733,
+          "endPage": 736,
+          "textUrl": "/data/text/v1-ch136.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch137",
+          "title": "'ஹிம்மத்' ஏட்டுக்குப் பேட்டியளித்தேன்",
+          "startPage": 737,
+          "endPage": 740,
+          "textUrl": "/data/text/v1-ch137.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch138",
+          "title": "அண்ணனைப் பற்றியது நோய்!",
+          "startPage": 741,
+          "endPage": 748,
+          "textUrl": "/data/text/v1-ch138.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch138.json"
+        },
+        {
+          "id": "v1-ch139",
+          "title": "கலைவாணர் சிலை திறந்தோம்!",
+          "startPage": 749,
+          "endPage": 752,
+          "textUrl": "/data/text/v1-ch139.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v1-ch140",
+          "title": "இதயத்தைத் தந்திடு, அண்ணா!",
+          "startPage": 753,
+          "endPage": 759,
+          "textUrl": "/data/text/v1-ch140.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v1-ch140.json"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "titleTa": null,
+      "titleEn": null,
+      "period": "1969–1976",
+      "serialisedIn": "Kungumam",
+      "chapterCount": 77,
+      "pages": 608,
+      "searchIndexUrl": "/data/fulltext/v2.json",
+      "chapters": [
+        {
+          "id": "v2-ch01",
+          "title": "என்னுரை",
+          "startPage": 5,
+          "endPage": 20,
+          "textUrl": "/data/text/v2-ch01.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch01.json"
+        },
+        {
+          "id": "v2-ch02",
+          "title": "முதல் பாகம் வெளியிட்ட கதை",
+          "startPage": 21,
+          "endPage": 26,
+          "textUrl": "/data/text/v2-ch02.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch02.json"
+        },
+        {
+          "id": "v2-ch03",
+          "title": "மூன்று கடிதங்கள்",
+          "startPage": 27,
+          "endPage": 36,
+          "textUrl": "/data/text/v2-ch03.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch03.json"
+        },
+        {
+          "id": "v2-ch04",
+          "title": "அதிர்ச்சியூட்டும் செய்தி",
+          "startPage": 37,
+          "endPage": 44,
+          "textUrl": "/data/text/v2-ch04.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch04.json"
+        },
+        {
+          "id": "v2-ch05",
+          "title": "ஒரு கெட்ட வார்த்தை!",
+          "startPage": 45,
+          "endPage": 53,
+          "textUrl": "/data/text/v2-ch05.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch05.json"
+        },
+        {
+          "id": "v2-ch06",
+          "title": "சங்கம் சரணம் கச்சாமி!",
+          "startPage": 54,
+          "endPage": 65,
+          "textUrl": "/data/text/v2-ch06.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch06.json"
+        },
+        {
+          "id": "v2-ch07",
+          "title": "மாலையும் கயிறும்!",
+          "startPage": 66,
+          "endPage": 73,
+          "textUrl": "/data/text/v2-ch07.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch08",
+          "title": "வெண்மணி வேதனை",
+          "startPage": 74,
+          "endPage": 80,
+          "textUrl": "/data/text/v2-ch08.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch08.json"
+        },
+        {
+          "id": "v2-ch09",
+          "title": "உறவுகள் - உரிமைகள்",
+          "startPage": 81,
+          "endPage": 87,
+          "textUrl": "/data/text/v2-ch09.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch10",
+          "title": "முதல் குரலும் - முதல் பிளவும்",
+          "startPage": 88,
+          "endPage": 95,
+          "textUrl": "/data/text/v2-ch10.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch11",
+          "title": "வண்டிப் பெரியார் நிகழ்ச்சி",
+          "startPage": 96,
+          "endPage": 102,
+          "textUrl": "/data/text/v2-ch11.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch11.json"
+        },
+        {
+          "id": "v2-ch12",
+          "title": "ஆப்பக்கூடல் ஆபத்து",
+          "startPage": 103,
+          "endPage": 109,
+          "textUrl": "/data/text/v2-ch12.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v2-ch12.json"
+        },
+        {
+          "id": "v2-ch13",
+          "title": "எங்கிருந்தாலும் வாழ்க!",
+          "startPage": 110,
+          "endPage": 116,
+          "textUrl": "/data/text/v2-ch13.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch14",
+          "title": "இயக்கத்தில் சிவாஜி",
+          "startPage": 117,
+          "endPage": 124,
+          "textUrl": "/data/text/v2-ch14.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch15",
+          "title": "தியாக தீபங்கள்",
+          "startPage": 125,
+          "endPage": 139,
+          "textUrl": "/data/text/v2-ch15.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch16",
+          "title": "நாடறிந்த உண்மை",
+          "startPage": 140,
+          "endPage": 145,
+          "textUrl": "/data/text/v2-ch16.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch17",
+          "title": "பரம்பிக்குளம் ஆளியாறு இறுதி ஒப்பந்தம்",
+          "startPage": 146,
+          "endPage": 153,
+          "textUrl": "/data/text/v2-ch17.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch18",
+          "title": "இங்கும் அங்கும்",
+          "startPage": 154,
+          "endPage": 171,
+          "textUrl": "/data/text/v2-ch18.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch19",
+          "title": "பிரதமரின் தோல்வி!",
+          "startPage": 172,
+          "endPage": 177,
+          "textUrl": "/data/text/v2-ch19.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch20",
+          "title": "ஆச்சரியம் காத்திருந்தது!",
+          "startPage": 178,
+          "endPage": 184,
+          "textUrl": "/data/text/v2-ch20.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch21",
+          "title": "வீழ்ச்சி தடுக்கப்பட்டது!",
+          "startPage": 185,
+          "endPage": 192,
+          "textUrl": "/data/text/v2-ch21.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch22",
+          "title": "பக்தவத்சலனார் பாராட்டு",
+          "startPage": 193,
+          "endPage": 201,
+          "textUrl": "/data/text/v2-ch22.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch23",
+          "title": "ஆகஸ்ட் திங்களில்!",
+          "startPage": 202,
+          "endPage": 211,
+          "textUrl": "/data/text/v2-ch23.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch24",
+          "title": "களம் காண்பதிலும் கடமையாற்றுவதிலும்!",
+          "startPage": 212,
+          "endPage": 219,
+          "textUrl": "/data/text/v2-ch24.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch25",
+          "title": "பஞ்சாப் பயணம்",
+          "startPage": 220,
+          "endPage": 227,
+          "textUrl": "/data/text/v2-ch25.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch26",
+          "title": "நற்பணியாற்றிய நான்கு குழுக்கள்",
+          "startPage": 228,
+          "endPage": 233,
+          "textUrl": "/data/text/v2-ch26.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch27",
+          "title": "இறைவனுக்குப் பிடித்த பணி!",
+          "startPage": 234,
+          "endPage": 238,
+          "textUrl": "/data/text/v2-ch27.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch28",
+          "title": "அர்ச்சகர் சட்டம்",
+          "startPage": 239,
+          "endPage": 244,
+          "textUrl": "/data/text/v2-ch28.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch29",
+          "title": "ஐம்பெரும் முழக்கம்",
+          "startPage": 245,
+          "endPage": 252,
+          "textUrl": "/data/text/v2-ch29.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch30",
+          "title": "\"தமிழ் உணர்வும் தமிழக உரிமையும்\"",
+          "startPage": 253,
+          "endPage": 258,
+          "textUrl": "/data/text/v2-ch30.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch31",
+          "title": "கொள்கை வளர்ந்த நிலை",
+          "startPage": 259,
+          "endPage": 265,
+          "textUrl": "/data/text/v2-ch31.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch32",
+          "title": "மருத்துவமனையிலும் மறவாத மக்கள் பணி",
+          "startPage": 266,
+          "endPage": 280,
+          "textUrl": "/data/text/v2-ch32.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch33",
+          "title": "கொள்கையும் கட்டுப்பாடும்",
+          "startPage": 281,
+          "endPage": 288,
+          "textUrl": "/data/text/v2-ch33.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch34",
+          "title": "நாடாளுமன்ற - சட்டமன்றத் தேர்தல்",
+          "startPage": 289,
+          "endPage": 296,
+          "textUrl": "/data/text/v2-ch34.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch35",
+          "title": "1971 தேர்தல் களம்",
+          "startPage": 297,
+          "endPage": 302,
+          "textUrl": "/data/text/v2-ch35.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch36",
+          "title": "அமைச்சரவையில் எம்.ஜி.ஆர்?",
+          "startPage": 303,
+          "endPage": 308,
+          "textUrl": "/data/text/v2-ch36.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch37",
+          "title": "மூன்றாவது-கழக அமைச்சரவை",
+          "startPage": 309,
+          "endPage": 316,
+          "textUrl": "/data/text/v2-ch37.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch38",
+          "title": "மதுரையில் ஒரு விழா!",
+          "startPage": 317,
+          "endPage": 323,
+          "textUrl": "/data/text/v2-ch38.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch39",
+          "title": "பிறந்த நாள் பணிகள்",
+          "startPage": 324,
+          "endPage": 328,
+          "textUrl": "/data/text/v2-ch39.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch40",
+          "title": "சில சட்டங்கள்!",
+          "startPage": 329,
+          "endPage": 333,
+          "textUrl": "/data/text/v2-ch40.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch41",
+          "title": "\"டாக்டர்\" பட்டம்",
+          "startPage": 334,
+          "endPage": 339,
+          "textUrl": "/data/text/v2-ch41.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch42",
+          "title": "அமெரிக்கப் பயணம்",
+          "startPage": 340,
+          "endPage": 345,
+          "textUrl": "/data/text/v2-ch42.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch43",
+          "title": "பாகிஸ்தான் ஆக்ரமிப்புக் கண்டனம்",
+          "startPage": 346,
+          "endPage": 351,
+          "textUrl": "/data/text/v2-ch43.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch44",
+          "title": "வங்கதேச உதயம்",
+          "startPage": 352,
+          "endPage": 359,
+          "textUrl": "/data/text/v2-ch44.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch45",
+          "title": "துரோகத்தின் தொடக்கம்!",
+          "startPage": 360,
+          "endPage": 367,
+          "textUrl": "/data/text/v2-ch45.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch46",
+          "title": "புயல் புகுமுன்!",
+          "startPage": 368,
+          "endPage": 375,
+          "textUrl": "/data/text/v2-ch46.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch47",
+          "title": "கட்டுப்பாடு மீறிய காரியங்கள்",
+          "startPage": 376,
+          "endPage": 384,
+          "textUrl": "/data/text/v2-ch47.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch48",
+          "title": "செயற்குழுவின் சீற்றம்",
+          "startPage": 385,
+          "endPage": 390,
+          "textUrl": "/data/text/v2-ch48.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch49",
+          "title": "வேறு வழியில்லை; விலக்கப்பட்டார்!",
+          "startPage": 391,
+          "endPage": 397,
+          "textUrl": "/data/text/v2-ch49.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch50",
+          "title": "\"இதுசத்தியம்\" என்றால்!",
+          "startPage": 398,
+          "endPage": 402,
+          "textUrl": "/data/text/v2-ch50.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch51",
+          "title": "திகைக்கவில்லை தித்திப்பு வழங்கினார்!",
+          "startPage": 403,
+          "endPage": 409,
+          "textUrl": "/data/text/v2-ch51.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch52",
+          "title": "சட்டமன்ற மரபுகளை வெட்டிப் புதைத்த செயல்!",
+          "startPage": 410,
+          "endPage": 425,
+          "textUrl": "/data/text/v2-ch52.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch53",
+          "title": "தஞ்சையும்-பூம்புகாரும்!",
+          "startPage": 426,
+          "endPage": 442,
+          "textUrl": "/data/text/v2-ch53.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch54",
+          "title": "கட்டபொம்மன் கோட்டை",
+          "startPage": 443,
+          "endPage": 450,
+          "textUrl": "/data/text/v2-ch54.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch55",
+          "title": "பொதுவாழ்வில் ஒரு பொன்னாள்!",
+          "startPage": 451,
+          "endPage": 457,
+          "textUrl": "/data/text/v2-ch55.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch56",
+          "title": "தீர்மானம் நிறைவேறியது",
+          "startPage": 458,
+          "endPage": 466,
+          "textUrl": "/data/text/v2-ch56.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch57",
+          "title": "இராமனுக்கு விரோதி யார்?",
+          "startPage": 467,
+          "endPage": 474,
+          "textUrl": "/data/text/v2-ch57.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch58",
+          "title": "ஜெ. பி. பாராட்டு!",
+          "startPage": 475,
+          "endPage": 482,
+          "textUrl": "/data/text/v2-ch58.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch59",
+          "title": "நெருக்கடி நிலைப் பிரகடனம்",
+          "startPage": 483,
+          "endPage": 489,
+          "textUrl": "/data/text/v2-ch59.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch60",
+          "title": "இந்தியாவிலேயே முதல் தீர்மானம்!",
+          "startPage": 490,
+          "endPage": 494,
+          "textUrl": "/data/text/v2-ch60.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch61",
+          "title": "காமராஜரின் கண்ணீரும் கடற்கரை சூளுரையும்!",
+          "startPage": 495,
+          "endPage": 497,
+          "textUrl": "/data/text/v2-ch61.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch62",
+          "title": "அந்தக் கூட்டத்தில் நான் உரையாற்றும் போது கூறியதாவது:-",
+          "startPage": 498,
+          "endPage": 502,
+          "textUrl": "/data/text/v2-ch62.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch63",
+          "title": "கடமை வீரரும் கர்ம வீரரும் மறைந்தனர்!",
+          "startPage": 503,
+          "endPage": 510,
+          "textUrl": "/data/text/v2-ch63.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch64",
+          "title": "காமராஜர் நினைவு போற்றிய கழகம்",
+          "startPage": 511,
+          "endPage": 515,
+          "textUrl": "/data/text/v2-ch64.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch65",
+          "title": "கோவை மாநாடும் சண்டிகர் மாநாடும்",
+          "startPage": 516,
+          "endPage": 524,
+          "textUrl": "/data/text/v2-ch65.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch66",
+          "title": "இந்தியாவில் இரு தீவுகள்",
+          "startPage": 525,
+          "endPage": 539,
+          "textUrl": "/data/text/v2-ch66.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch67",
+          "title": "கழக ஆட்சி கலைக்கப்பட்டது!",
+          "startPage": 540,
+          "endPage": 546,
+          "textUrl": "/data/text/v2-ch67.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch68",
+          "title": "அடக்குமுறை அடுக்கடுக்காக!",
+          "startPage": 547,
+          "endPage": 551,
+          "textUrl": "/data/text/v2-ch68.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch69",
+          "title": "கோவை, நீலகிரி மாவட்டங்கள்",
+          "startPage": 552,
+          "endPage": 553,
+          "textUrl": "/data/text/v2-ch69.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch70",
+          "title": "சட்டங்கள் பட்டபாடு!",
+          "startPage": 554,
+          "endPage": 560,
+          "textUrl": "/data/text/v2-ch70.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch71",
+          "title": "தடைபட்ட பயணம்!",
+          "startPage": 561,
+          "endPage": 567,
+          "textUrl": "/data/text/v2-ch71.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch72",
+          "title": "வேதனைக் காட்டில் சோதனைத் தீ!",
+          "startPage": 568,
+          "endPage": 579,
+          "textUrl": "/data/text/v2-ch72.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch73",
+          "title": "அண்ணா சாலையில் ஓர் அறப்போர்!",
+          "startPage": 580,
+          "endPage": 584,
+          "textUrl": "/data/text/v2-ch73.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch74",
+          "title": "வழக்குகள் தொடங்கின!",
+          "startPage": 585,
+          "endPage": 589,
+          "textUrl": "/data/text/v2-ch74.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch75",
+          "title": "இந்திரா காந்தி இறங்கி வந்தார்",
+          "startPage": 590,
+          "endPage": 594,
+          "textUrl": "/data/text/v2-ch75.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch76",
+          "title": "புதுடெல்லியில் ஒரு புதிய முயற்சி!",
+          "startPage": 595,
+          "endPage": 601,
+          "textUrl": "/data/text/v2-ch76.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v2-ch77",
+          "title": "இரண்டாம் பாகம் முற்றுப் பெறுகிறது!",
+          "startPage": 602,
+          "endPage": 608,
+          "textUrl": "/data/text/v2-ch77.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "titleTa": null,
+      "titleEn": null,
+      "period": "1976–1988",
+      "serialisedIn": null,
+      "chapterCount": 73,
+      "pages": 624,
+      "searchIndexUrl": "/data/fulltext/v3.json",
+      "chapters": [
+        {
+          "id": "v3-ch01",
+          "title": "மூன்றாம் பாகம் - முகப்பு",
+          "startPage": 12,
+          "endPage": 17,
+          "textUrl": "/data/text/v3-ch01.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch01.json"
+        },
+        {
+          "id": "v3-ch02",
+          "title": "தியாகமும் துரோகமும்!",
+          "startPage": 18,
+          "endPage": 23,
+          "textUrl": "/data/text/v3-ch02.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch02.json"
+        },
+        {
+          "id": "v3-ch03",
+          "title": "துப்பாக்கி மருந்து",
+          "startPage": 24,
+          "endPage": 31,
+          "textUrl": "/data/text/v3-ch03.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch03.json"
+        },
+        {
+          "id": "v3-ch04",
+          "title": "செயற்குழு கூடியது",
+          "startPage": 32,
+          "endPage": 40,
+          "textUrl": "/data/text/v3-ch04.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch04.json"
+        },
+        {
+          "id": "v3-ch05",
+          "title": "ஒப்புவமைகள்!",
+          "startPage": 41,
+          "endPage": 48,
+          "textUrl": "/data/text/v3-ch05.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch05.json"
+        },
+        {
+          "id": "v3-ch06",
+          "title": "\"கோடுகளே! வளையாதீர்!\"",
+          "startPage": 49,
+          "endPage": 50,
+          "textUrl": "/data/text/v3-ch06.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch07",
+          "title": "ராஷ்டிரபதி நெருக்கடி நிலை பிரகடனம் 1975 ஜூன் 25.",
+          "startPage": 51,
+          "endPage": 50,
+          "textUrl": "/data/text/v3-ch07.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch08",
+          "title": "நெருக்கடி நிலையை எதிர்த்துத் தி.மு.க. தீர்மானம் 1975 ஜூன் 27.",
+          "startPage": 51,
+          "endPage": 50,
+          "textUrl": "/data/text/v3-ch08.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch09",
+          "title": "காமராஜர் மரணம் 2.10.1975",
+          "startPage": 51,
+          "endPage": 79,
+          "textUrl": "/data/text/v3-ch09.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch09.json"
+        },
+        {
+          "id": "v3-ch10",
+          "title": "தேர்தல் முடிவும் தென்னகமும்",
+          "startPage": 80,
+          "endPage": 86,
+          "textUrl": "/data/text/v3-ch10.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch10.json"
+        },
+        {
+          "id": "v3-ch11",
+          "title": "கைவிலங்கு என்ன செய்யும்?",
+          "startPage": 87,
+          "endPage": 93,
+          "textUrl": "/data/text/v3-ch11.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch11.json"
+        },
+        {
+          "id": "v3-ch12",
+          "title": "திரைமறைவு நாடகம்",
+          "startPage": 94,
+          "endPage": 100,
+          "textUrl": "/data/text/v3-ch12.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch12.json"
+        },
+        {
+          "id": "v3-ch13",
+          "title": "தலைவர் பதவி விலகல்!",
+          "startPage": 101,
+          "endPage": 106,
+          "textUrl": "/data/text/v3-ch13.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch13.json"
+        },
+        {
+          "id": "v3-ch14",
+          "title": "ஊனமுற்ற ஒற்றுமை!",
+          "startPage": 107,
+          "endPage": 112,
+          "textUrl": "/data/text/v3-ch14.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch14.json"
+        },
+        {
+          "id": "v3-ch15",
+          "title": "வேண்டுகோள் வீணாயிற்று!",
+          "startPage": 113,
+          "endPage": 118,
+          "textUrl": "/data/text/v3-ch15.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch15.json"
+        },
+        {
+          "id": "v3-ch16",
+          "title": "தஞ்சைப் பொதுக்குழு",
+          "startPage": 119,
+          "endPage": 124,
+          "textUrl": "/data/text/v3-ch16.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch16.json"
+        },
+        {
+          "id": "v3-ch17",
+          "title": "ஈழத் தமிழர் உரிமைப்போர்",
+          "startPage": 125,
+          "endPage": 130,
+          "textUrl": "/data/text/v3-ch17.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch17.json"
+        },
+        {
+          "id": "v3-ch18",
+          "title": "சட்டமன்றத் தேர்தல் முடிவுகள்",
+          "startPage": 131,
+          "endPage": 136,
+          "textUrl": "/data/text/v3-ch18.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch18.json"
+        },
+        {
+          "id": "v3-ch19",
+          "title": "அரசியலில் ராஜகுருக்கள்!",
+          "startPage": 137,
+          "endPage": 141,
+          "textUrl": "/data/text/v3-ch19.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch19.json"
+        },
+        {
+          "id": "v3-ch20",
+          "title": "இந்திராமீது விசாரணையும் இயற்கை",
+          "startPage": 142,
+          "endPage": 147,
+          "textUrl": "/data/text/v3-ch20.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch20.json"
+        },
+        {
+          "id": "v3-ch21",
+          "title": "எதிர்க்கட்சி இலக்கணம்",
+          "startPage": 148,
+          "endPage": 153,
+          "textUrl": "/data/text/v3-ch21.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch21.json"
+        },
+        {
+          "id": "v3-ch22",
+          "title": "ஐ.ஏ.எஸ். அதிகாரி வாக்குமூலம்",
+          "startPage": 154,
+          "endPage": 158,
+          "textUrl": "/data/text/v3-ch22.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch22.json"
+        },
+        {
+          "id": "v3-ch23",
+          "title": "காலம் கடந்த உண்மை",
+          "startPage": 159,
+          "endPage": 164,
+          "textUrl": "/data/text/v3-ch23.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch23.json"
+        },
+        {
+          "id": "v3-ch24",
+          "title": "எதிர்க்கட்சி இலக்கணம்!",
+          "startPage": 165,
+          "endPage": 171,
+          "textUrl": "/data/text/v3-ch24.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch24.json"
+        },
+        {
+          "id": "v3-ch25",
+          "title": "தொழிலாளர்களுக்குத் துணை",
+          "startPage": 172,
+          "endPage": 187,
+          "textUrl": "/data/text/v3-ch25.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch26",
+          "title": "இலங்கையில் தீப்பொறி",
+          "startPage": 188,
+          "endPage": 195,
+          "textUrl": "/data/text/v3-ch26.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch27",
+          "title": "முன்னாள் பிரதமர்கள் கைது!",
+          "startPage": 196,
+          "endPage": 203,
+          "textUrl": "/data/text/v3-ch27.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch28",
+          "title": "இந்திரா காந்திக் கறுப்புக் கொடி",
+          "startPage": 204,
+          "endPage": 211,
+          "textUrl": "/data/text/v3-ch28.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch29",
+          "title": "\"ஷா\" கமிஷன் விசாரணை",
+          "startPage": 212,
+          "endPage": 219,
+          "textUrl": "/data/text/v3-ch29.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch30",
+          "title": "சிறையிலிருந்து ஸ்டாலினுக்குக் கடிதம்",
+          "startPage": 220,
+          "endPage": 228,
+          "textUrl": "/data/text/v3-ch30.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch31",
+          "title": "காங்கிரசில் மீண்டும் பிளவு",
+          "startPage": 229,
+          "endPage": 234,
+          "textUrl": "/data/text/v3-ch31.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch32",
+          "title": "ஷா கமிஷனும் இந்திரா காந்தியும்!",
+          "startPage": 235,
+          "endPage": 242,
+          "textUrl": "/data/text/v3-ch32.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch33",
+          "title": "மாங்கொல்லையில் கிடைத்த மாங்கனி!",
+          "startPage": 243,
+          "endPage": 251,
+          "textUrl": "/data/text/v3-ch33.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch34",
+          "title": "பிரான்சு நாட்டு தேர்தல் முறை",
+          "startPage": 252,
+          "endPage": 259,
+          "textUrl": "/data/text/v3-ch34.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch35",
+          "title": "என்.ஜி.ஓ. போராட்டமும் மணியம்மையார்",
+          "startPage": 260,
+          "endPage": 267,
+          "textUrl": "/data/text/v3-ch35.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch36",
+          "title": "விண்வெளிச் சாதனைகள்",
+          "startPage": 268,
+          "endPage": 276,
+          "textUrl": "/data/text/v3-ch36.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch37",
+          "title": "\"நெற்றிக்கண்ணைத் திறந்தாலும்...\"",
+          "startPage": 277,
+          "endPage": 284,
+          "textUrl": "/data/text/v3-ch37.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch38",
+          "title": "விவசாயிகளின் மாபெரும் போராட்டம்",
+          "startPage": 285,
+          "endPage": 292,
+          "textUrl": "/data/text/v3-ch38.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch39",
+          "title": "ஜனதா ஆட்சியில் குழப்பம்",
+          "startPage": 293,
+          "endPage": 301,
+          "textUrl": "/data/text/v3-ch39.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch40",
+          "title": "நினைவை விட்டு நீங்காத பிறந்த நாள்",
+          "startPage": 302,
+          "endPage": 311,
+          "textUrl": "/data/text/v3-ch40.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch41",
+          "title": "விழுப்புரத்தில் சாதிக்கலவரம்",
+          "startPage": 312,
+          "endPage": 320,
+          "textUrl": "/data/text/v3-ch41.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch42",
+          "title": "சிக்மகளூர் இடைத்தேர்தல்",
+          "startPage": 321,
+          "endPage": 329,
+          "textUrl": "/data/text/v3-ch42.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch43",
+          "title": "திருச்சி மாநாடும் இந்தி",
+          "startPage": 330,
+          "endPage": 337,
+          "textUrl": "/data/text/v3-ch43.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch44",
+          "title": "இந்திரா காந்திக்குத் தண்டனையும்",
+          "startPage": 338,
+          "endPage": 346,
+          "textUrl": "/data/text/v3-ch44.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch45",
+          "title": "பூட்டோ - ஸ்கைலாப்",
+          "startPage": 347,
+          "endPage": 355,
+          "textUrl": "/data/text/v3-ch45.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch46",
+          "title": "\"ஜன கண மன\" பாடிய",
+          "startPage": 356,
+          "endPage": 365,
+          "textUrl": "/data/text/v3-ch46.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch47",
+          "title": "தி.மு.க - அ.தி.மு.க.",
+          "startPage": 366,
+          "endPage": 374,
+          "textUrl": "/data/text/v3-ch47.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch48",
+          "title": "தி.மு.க. - இ.காங்கிரஸ் தேர்தல்",
+          "startPage": 375,
+          "endPage": 382,
+          "textUrl": "/data/text/v3-ch48.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch49",
+          "title": "தமிழகத்தில் காவல் துறையினர்",
+          "startPage": 383,
+          "endPage": 391,
+          "textUrl": "/data/text/v3-ch49.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch50",
+          "title": "\"மூப்பனாரின் பொன்னாடைக்குப் பதில்",
+          "startPage": 392,
+          "endPage": 400,
+          "textUrl": "/data/text/v3-ch50.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch51",
+          "title": "கை குலுக்கியவாறு கக்கிய நஞ்சு",
+          "startPage": 401,
+          "endPage": 408,
+          "textUrl": "/data/text/v3-ch51.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch52",
+          "title": "சட்டமன்றத் தேர்தலும் மறைமுகச்",
+          "startPage": 409,
+          "endPage": 417,
+          "textUrl": "/data/text/v3-ch52.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch53",
+          "title": "விபீஷணர்களைப் பற்றிய",
+          "startPage": 418,
+          "endPage": 428,
+          "textUrl": "/data/text/v3-ch53.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch54",
+          "title": "நாராயணசாமி நாயுடு",
+          "startPage": 429,
+          "endPage": 437,
+          "textUrl": "/data/text/v3-ch54.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch55",
+          "title": "மூன்று தமிழர்கள் மறைவு!",
+          "startPage": 438,
+          "endPage": 446,
+          "textUrl": "/data/text/v3-ch55.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch56",
+          "title": "ஈழப் பிரச்சினையில் கழகத்தின்",
+          "startPage": 447,
+          "endPage": 456,
+          "textUrl": "/data/text/v3-ch56.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch57",
+          "title": "தீக்குளித்தல் தொடர்கதையாவதோ?",
+          "startPage": 457,
+          "endPage": 466,
+          "textUrl": "/data/text/v3-ch57.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch58",
+          "title": "இந்திரா காங்கிரஸ் நன்றி",
+          "startPage": 467,
+          "endPage": 475,
+          "textUrl": "/data/text/v3-ch58.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch59",
+          "title": "நீதி கேட்டு நெடிய பயணம்",
+          "startPage": 476,
+          "endPage": 485,
+          "textUrl": "/data/text/v3-ch59.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch60",
+          "title": "வழங்கியது அனைத்தையும் வழங்கியது",
+          "startPage": 486,
+          "endPage": 495,
+          "textUrl": "/data/text/v3-ch60.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch61",
+          "title": "பொய்ப்புகார் பொடிப்பொடியானது!",
+          "startPage": 496,
+          "endPage": 504,
+          "textUrl": "/data/text/v3-ch61.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch62",
+          "title": "பேராசிரியர் மணிவிழா",
+          "startPage": 505,
+          "endPage": 514,
+          "textUrl": "/data/text/v3-ch62.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch63",
+          "title": "சுதந்திர இந்தியாவில் பஞ்சாப்",
+          "startPage": 515,
+          "endPage": 524,
+          "textUrl": "/data/text/v3-ch63.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch64",
+          "title": "அரசியல் அரங்கில் இடிகளும்",
+          "startPage": 525,
+          "endPage": 534,
+          "textUrl": "/data/text/v3-ch64.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch65",
+          "title": "அ.தி.மு.க.வைக் கைப்பற்ற",
+          "startPage": 535,
+          "endPage": 543,
+          "textUrl": "/data/text/v3-ch65.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch66",
+          "title": "இடைத் தேர்தல் வெற்றிகளும் -",
+          "startPage": 544,
+          "endPage": 552,
+          "textUrl": "/data/text/v3-ch66.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch67",
+          "title": "ஈழத்தமிழருக்கான போராட்டங்களும்",
+          "startPage": 553,
+          "endPage": 562,
+          "textUrl": "/data/text/v3-ch67.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch68",
+          "title": "மேலவை - கழக வெற்றிகளும்;",
+          "startPage": 563,
+          "endPage": 572,
+          "textUrl": "/data/text/v3-ch68.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch69",
+          "title": "இலங்கை சென்ற இந்திய",
+          "startPage": 573,
+          "endPage": 581,
+          "textUrl": "/data/text/v3-ch69.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch70",
+          "title": "மீண்டும் இந்த ஆதிக்க எதிர்ப்புப்",
+          "startPage": 582,
+          "endPage": 591,
+          "textUrl": "/data/text/v3-ch70.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch71",
+          "title": "மலேசியா உலகத்தமிழ்மாநாடு",
+          "startPage": 592,
+          "endPage": 601,
+          "textUrl": "/data/text/v3-ch71.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch72",
+          "title": "தேசிய முன்னணியின் தோற்றம்",
+          "startPage": 602,
+          "endPage": 612,
+          "textUrl": "/data/text/v3-ch72.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v3-ch73",
+          "title": "அசைக்க முடியாத இமயம்!",
+          "startPage": 613,
+          "endPage": 624,
+          "textUrl": "/data/text/v3-ch73.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v3-ch73.json"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "titleTa": null,
+      "titleEn": null,
+      "period": "1988–1996",
+      "serialisedIn": null,
+      "chapterCount": 22,
+      "pages": 650,
+      "searchIndexUrl": "/data/fulltext/v4.json",
+      "chapters": [
+        {
+          "id": "v4-ch01",
+          "title": "பதிப்புரை",
+          "startPage": 4,
+          "endPage": 6,
+          "textUrl": "/data/text/v4-ch01.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch02",
+          "title": "என்னுரை",
+          "startPage": 7,
+          "endPage": 51,
+          "textUrl": "/data/text/v4-ch02.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch03",
+          "title": "சதி ஆரம்பம்!",
+          "startPage": 52,
+          "endPage": 63,
+          "textUrl": "/data/text/v4-ch03.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch04",
+          "title": "உச்சகட்டம்!",
+          "startPage": 64,
+          "endPage": 87,
+          "textUrl": "/data/text/v4-ch04.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch05",
+          "title": "கடிதப் போக்குவரத்து",
+          "startPage": 88,
+          "endPage": 98,
+          "textUrl": "/data/text/v4-ch05.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch06",
+          "title": "மாநில அரசு தீர்மானம்",
+          "startPage": 99,
+          "endPage": 110,
+          "textUrl": "/data/text/v4-ch06.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch07",
+          "title": "சீனத்து மாணவர்கள்!",
+          "startPage": 111,
+          "endPage": 123,
+          "textUrl": "/data/text/v4-ch07.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch08",
+          "title": "\"நடந்தாய் வாழி காவேரி!\"",
+          "startPage": 124,
+          "endPage": 134,
+          "textUrl": "/data/text/v4-ch08.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch09",
+          "title": "தோற்றமும், முடிவும்",
+          "startPage": 135,
+          "endPage": 163,
+          "textUrl": "/data/text/v4-ch09.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch10",
+          "title": "சமுதாய அமைப்பு",
+          "startPage": 164,
+          "endPage": 177,
+          "textUrl": "/data/text/v4-ch10.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch11",
+          "title": "இராஜராஜ சோழன் விருது",
+          "startPage": 178,
+          "endPage": 191,
+          "textUrl": "/data/text/v4-ch11.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch12",
+          "title": "தெற்கும்-வடக்கும்",
+          "startPage": 192,
+          "endPage": 218,
+          "textUrl": "/data/text/v4-ch12.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch13",
+          "title": "எதிர்பாராத படுகொலையும்!",
+          "startPage": 219,
+          "endPage": 255,
+          "textUrl": "/data/text/v4-ch13.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch14",
+          "title": "வேதனை அரசியலும்!",
+          "startPage": 256,
+          "endPage": 269,
+          "textUrl": "/data/text/v4-ch14.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch15",
+          "title": "கறுப்பு விடியல்",
+          "startPage": 270,
+          "endPage": 321,
+          "textUrl": "/data/text/v4-ch15.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch16",
+          "title": "ஆரம்ப வேலைகள்!",
+          "startPage": 322,
+          "endPage": 334,
+          "textUrl": "/data/text/v4-ch16.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch17",
+          "title": "மையம் கொள்கிறது புயல்!",
+          "startPage": 335,
+          "endPage": 370,
+          "textUrl": "/data/text/v4-ch17.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch18",
+          "title": "இழைக்கப்பட்ட கொடுமை!",
+          "startPage": 371,
+          "endPage": 382,
+          "textUrl": "/data/text/v4-ch18.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch19",
+          "title": "பதவி துறந்தேன்!",
+          "startPage": 383,
+          "endPage": 573,
+          "textUrl": "/data/text/v4-ch19.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch20",
+          "title": "இரத்த வெறியாட்டம்!",
+          "startPage": 574,
+          "endPage": 626,
+          "textUrl": "/data/text/v4-ch20.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch21",
+          "title": "வெளியீட்டு விழா!",
+          "startPage": 627,
+          "endPage": 636,
+          "textUrl": "/data/text/v4-ch21.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v4-ch22",
+          "title": "படைத்தோம்!",
+          "startPage": 637,
+          "endPage": 650,
+          "textUrl": "/data/text/v4-ch22.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "titleTa": null,
+      "titleEn": null,
+      "period": "1996–1999",
+      "serialisedIn": null,
+      "chapterCount": 50,
+      "pages": 1039,
+      "searchIndexUrl": "/data/fulltext/v5.json",
+      "chapters": [
+        {
+          "id": "v5-ch01",
+          "title": "ஓய்வுக்கு ஓய்வு",
+          "startPage": 20,
+          "endPage": 43,
+          "textUrl": "/data/text/v5-ch01.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch01.json"
+        },
+        {
+          "id": "v5-ch02",
+          "title": "அம்பேத்கர் கண்ட வழி",
+          "startPage": 44,
+          "endPage": 63,
+          "textUrl": "/data/text/v5-ch02.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch02.json"
+        },
+        {
+          "id": "v5-ch03",
+          "title": "சூப்பர் ஸ்டார் சூளுரை",
+          "startPage": 64,
+          "endPage": 81,
+          "textUrl": "/data/text/v5-ch03.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch03.json"
+        },
+        {
+          "id": "v5-ch04",
+          "title": "மதுவிலக்கு மாயை",
+          "startPage": 82,
+          "endPage": 97,
+          "textUrl": "/data/text/v5-ch04.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch04.json"
+        },
+        {
+          "id": "v5-ch05",
+          "title": "கறுப்பு நாள்",
+          "startPage": 98,
+          "endPage": 117,
+          "textUrl": "/data/text/v5-ch05.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch05.json"
+        },
+        {
+          "id": "v5-ch06",
+          "title": "நேபாளத்தில் ஒரு பூபாளம்",
+          "startPage": 118,
+          "endPage": 136,
+          "textUrl": "/data/text/v5-ch06.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch06.json"
+        },
+        {
+          "id": "v5-ch07",
+          "title": "பழி போட்டு வளர்த்த பகை",
+          "startPage": 137,
+          "endPage": 154,
+          "textUrl": "/data/text/v5-ch07.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch07.json"
+        },
+        {
+          "id": "v5-ch08",
+          "title": "காவியக் கருவூலம்",
+          "startPage": 155,
+          "endPage": 180,
+          "textUrl": "/data/text/v5-ch08.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch08.json"
+        },
+        {
+          "id": "v5-ch09",
+          "title": "திராவிடப் பல்கலைக் கழகம்",
+          "startPage": 181,
+          "endPage": 200,
+          "textUrl": "/data/text/v5-ch09.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch09.json"
+        },
+        {
+          "id": "v5-ch10",
+          "title": "கறுப்பு நிலாவும், கலைவாணர் நினைவும்!",
+          "startPage": 201,
+          "endPage": 222,
+          "textUrl": "/data/text/v5-ch10.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v5-ch10.json"
+        },
+        {
+          "id": "v5-ch11",
+          "title": "சென்னைக்குக் கிருஷ்ணா!",
+          "startPage": 223,
+          "endPage": 242,
+          "textUrl": "/data/text/v5-ch11.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch12",
+          "title": "கரும்பு தேசத்து இரும்பு மனிதன்!",
+          "startPage": 243,
+          "endPage": 261,
+          "textUrl": "/data/text/v5-ch12.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch13",
+          "title": "அன்பும் கருணையும்",
+          "startPage": 262,
+          "endPage": 283,
+          "textUrl": "/data/text/v5-ch13.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch14",
+          "title": "மறைந்த மாமணிகள்!",
+          "startPage": 284,
+          "endPage": 303,
+          "textUrl": "/data/text/v5-ch14.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch15",
+          "title": "ஜெயின் கமிஷன்",
+          "startPage": 304,
+          "endPage": 322,
+          "textUrl": "/data/text/v5-ch15.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch16",
+          "title": "சிங்காரவேலர் மாளிகை",
+          "startPage": 323,
+          "endPage": 343,
+          "textUrl": "/data/text/v5-ch16.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch17",
+          "title": "நடுநிலை தவறாத நல்லாட்சி!",
+          "startPage": 344,
+          "endPage": 363,
+          "textUrl": "/data/text/v5-ch17.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch18",
+          "title": "நிவாரணம் வழங்கிட நீதிபதி",
+          "startPage": 364,
+          "endPage": 384,
+          "textUrl": "/data/text/v5-ch18.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch19",
+          "title": "மனித நேயம் வளர்த்திட!",
+          "startPage": 385,
+          "endPage": 405,
+          "textUrl": "/data/text/v5-ch19.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch20",
+          "title": "மாறனும்,மாநில சுயாட்சியும்!",
+          "startPage": 406,
+          "endPage": 425,
+          "textUrl": "/data/text/v5-ch20.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch21",
+          "title": "பூனைக் குட்டியும், யானையும்!",
+          "startPage": 426,
+          "endPage": 448,
+          "textUrl": "/data/text/v5-ch21.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch22",
+          "title": "ஒட்டு மாங்கனி",
+          "startPage": 449,
+          "endPage": 466,
+          "textUrl": "/data/text/v5-ch22.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch23",
+          "title": "கலைத்துறையினர் பிரச்சினையும் - காட்டு வீரப்பன் தேடலும்!",
+          "startPage": 467,
+          "endPage": 487,
+          "textUrl": "/data/text/v5-ch23.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch24",
+          "title": "தங்கமான தம்பி பாண்டியன்",
+          "startPage": 488,
+          "endPage": 507,
+          "textUrl": "/data/text/v5-ch24.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch25",
+          "title": "அன்னை தெரசாவும்,",
+          "startPage": 508,
+          "endPage": 532,
+          "textUrl": "/data/text/v5-ch25.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch26",
+          "title": "அண்ணாவே வந்து",
+          "startPage": 533,
+          "endPage": 552,
+          "textUrl": "/data/text/v5-ch26.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch27",
+          "title": "சாதனைச் சிகரம்; சமத்துவபுரம்!",
+          "startPage": 553,
+          "endPage": 573,
+          "textUrl": "/data/text/v5-ch27.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch28",
+          "title": "அலை மோதிய அரசியல்!",
+          "startPage": 574,
+          "endPage": 592,
+          "textUrl": "/data/text/v5-ch28.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch29",
+          "title": "சுய சொரூபம் வெளிப்பட்டது!",
+          "startPage": 593,
+          "endPage": 612,
+          "textUrl": "/data/text/v5-ch29.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch30",
+          "title": "ஆட்சியைக் கலைக்க ஆடிய ஆட்டம்",
+          "startPage": 613,
+          "endPage": 630,
+          "textUrl": "/data/text/v5-ch30.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch31",
+          "title": "\"கூனி மந்தரை\" என்று கூறியது",
+          "startPage": 631,
+          "endPage": 649,
+          "textUrl": "/data/text/v5-ch31.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch32",
+          "title": "சிறந்த நிர்வாகி-திரு.பக்தவத்சலம்!",
+          "startPage": 650,
+          "endPage": 671,
+          "textUrl": "/data/text/v5-ch32.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch33",
+          "title": "ஜீவாவும்- ஈ.எம்.எஸ்.ஸும்!",
+          "startPage": 672,
+          "endPage": 692,
+          "textUrl": "/data/text/v5-ch33.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch34",
+          "title": "மிகவும் பிற்படுத்தப்பட்டோர்க்கு",
+          "startPage": 693,
+          "endPage": 714,
+          "textUrl": "/data/text/v5-ch34.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch35",
+          "title": "கைக்கு எட்டியது... ஆனால்",
+          "startPage": 715,
+          "endPage": 733,
+          "textUrl": "/data/text/v5-ch35.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch36",
+          "title": "தாண்டிய தடைக்கற்கள்!",
+          "startPage": 734,
+          "endPage": 751,
+          "textUrl": "/data/text/v5-ch36.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch37",
+          "title": "கூறாததைக் கூறியதாக...",
+          "startPage": 752,
+          "endPage": 769,
+          "textUrl": "/data/text/v5-ch37.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch38",
+          "title": "ராஜரத்னா விருது!",
+          "startPage": 770,
+          "endPage": 789,
+          "textUrl": "/data/text/v5-ch38.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch39",
+          "title": "\"எதையும் வெல்லும் எழுத்து",
+          "startPage": 790,
+          "endPage": 810,
+          "textUrl": "/data/text/v5-ch39.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch40",
+          "title": "பீகாரும்-பெர்னாண்டசும்",
+          "startPage": 811,
+          "endPage": 830,
+          "textUrl": "/data/text/v5-ch40.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch41",
+          "title": "பொன்முடியின் புத்தகம்",
+          "startPage": 831,
+          "endPage": 852,
+          "textUrl": "/data/text/v5-ch41.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch42",
+          "title": "சோனியா காந்தியின் அரசியல்",
+          "startPage": 853,
+          "endPage": 871,
+          "textUrl": "/data/text/v5-ch42.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch43",
+          "title": "தமிழன்னைக்கு மகுடம்!",
+          "startPage": 872,
+          "endPage": 889,
+          "textUrl": "/data/text/v5-ch43.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch44",
+          "title": "மண்மீட்ட போராளிகளை மறக்க",
+          "startPage": 890,
+          "endPage": 910,
+          "textUrl": "/data/text/v5-ch44.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch45",
+          "title": "சிங்கை-மலேசியா நிகழ்ச்சிகள்!",
+          "startPage": 911,
+          "endPage": 931,
+          "textUrl": "/data/text/v5-ch45.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch46",
+          "title": "நிகழ்வுகளும் நினைவுகளும்!",
+          "startPage": 932,
+          "endPage": 950,
+          "textUrl": "/data/text/v5-ch46.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch47",
+          "title": "நம்ப முடியாதது;",
+          "startPage": 951,
+          "endPage": 972,
+          "textUrl": "/data/text/v5-ch47.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch48",
+          "title": "ஒரு வாக்கு வித்தியாசத்தில்",
+          "startPage": 973,
+          "endPage": 994,
+          "textUrl": "/data/text/v5-ch48.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch49",
+          "title": "ஏரி உடைப்பும்; என் கடமையும்!",
+          "startPage": 995,
+          "endPage": 1014,
+          "textUrl": "/data/text/v5-ch49.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v5-ch50",
+          "title": "ஆறாம் பாகம் ஆரம்பமாகும்!",
+          "startPage": 1015,
+          "endPage": 1039,
+          "textUrl": "/data/text/v5-ch50.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "titleTa": null,
+      "titleEn": null,
+      "period": "1999–2005",
+      "serialisedIn": null,
+      "chapterCount": 29,
+      "pages": 554,
+      "searchIndexUrl": "/data/fulltext/v6.json",
+      "chapters": [
+        {
+          "id": "v6-ch01",
+          "title": "ஆருயிர் நண்பர்களை",
+          "startPage": 27,
+          "endPage": 42,
+          "textUrl": "/data/text/v6-ch01.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v6-ch01.json"
+        },
+        {
+          "id": "v6-ch02",
+          "title": "அ.தி.மு.க. உறவுபற்றி அன்றே",
+          "startPage": 43,
+          "endPage": 62,
+          "textUrl": "/data/text/v6-ch02.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v6-ch02.json"
+        },
+        {
+          "id": "v6-ch03",
+          "title": "வழக்கும் - வரையற்ற",
+          "startPage": 63,
+          "endPage": 78,
+          "textUrl": "/data/text/v6-ch03.json",
+          "textEnUrl": null,
+          "visualsUrl": "/data/visuals/v6-ch03.json"
+        },
+        {
+          "id": "v6-ch04",
+          "title": "வாழ்நாளின் வரலாற்றுச் சாதனை!",
+          "startPage": 79,
+          "endPage": 94,
+          "textUrl": "/data/text/v6-ch04.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch05",
+          "title": "சேலத்தில் தொடர்ந்த",
+          "startPage": 95,
+          "endPage": 109,
+          "textUrl": "/data/text/v6-ch05.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch06",
+          "title": "முல்லைப் பெரியாறும்,",
+          "startPage": 110,
+          "endPage": 128,
+          "textUrl": "/data/text/v6-ch06.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch07",
+          "title": "அன்றே முழங்கிய",
+          "startPage": 129,
+          "endPage": 146,
+          "textUrl": "/data/text/v6-ch07.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch08",
+          "title": "முந்திக் கொண்டு பெற்ற",
+          "startPage": 147,
+          "endPage": 163,
+          "textUrl": "/data/text/v6-ch08.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch09",
+          "title": "அரசியல் நாகரிகம்",
+          "startPage": 164,
+          "endPage": 182,
+          "textUrl": "/data/text/v6-ch09.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch10",
+          "title": "நான் ஆற்றிய பணிகள் -",
+          "startPage": 183,
+          "endPage": 200,
+          "textUrl": "/data/text/v6-ch10.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch11",
+          "title": "தீர்க்கதரிசிபோல மாறன்",
+          "startPage": 201,
+          "endPage": 220,
+          "textUrl": "/data/text/v6-ch11.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch12",
+          "title": "தமிழே இந்தியாவின் ஆட்சிமொழி",
+          "startPage": 221,
+          "endPage": 239,
+          "textUrl": "/data/text/v6-ch12.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch13",
+          "title": "தேர்தலும், ஏமாந்த",
+          "startPage": 240,
+          "endPage": 257,
+          "textUrl": "/data/text/v6-ch13.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch14",
+          "title": "அன்றே ஆரம்பமான",
+          "startPage": 258,
+          "endPage": 276,
+          "textUrl": "/data/text/v6-ch14.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch15",
+          "title": "காரிருளில், காட்டாட்சி தர்பார்!",
+          "startPage": 277,
+          "endPage": 294,
+          "textUrl": "/data/text/v6-ch15.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch16",
+          "title": "\"நீ, எங்கிருந்தாலும் வாழ்க!\"",
+          "startPage": 295,
+          "endPage": 312,
+          "textUrl": "/data/text/v6-ch16.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch17",
+          "title": "நட்புக்கு இலக்கணம் -",
+          "startPage": 313,
+          "endPage": 331,
+          "textUrl": "/data/text/v6-ch17.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch18",
+          "title": "அரசியல் சட்டத்தையே மீறிய",
+          "startPage": 332,
+          "endPage": 349,
+          "textUrl": "/data/text/v6-ch18.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch19",
+          "title": "கண்ணகிமீது ஏனிந்தக் காழ்ப்பு?",
+          "startPage": 350,
+          "endPage": 366,
+          "textUrl": "/data/text/v6-ch19.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch20",
+          "title": "அய்யோத் - தீ!",
+          "startPage": 367,
+          "endPage": 385,
+          "textUrl": "/data/text/v6-ch20.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch21",
+          "title": "மஞ்சள் சால்வைக்கு மகத்துவம்",
+          "startPage": 386,
+          "endPage": 403,
+          "textUrl": "/data/text/v6-ch21.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch22",
+          "title": "வெற்றியுமல்ல - தோல்வியுமல்ல!",
+          "startPage": 404,
+          "endPage": 419,
+          "textUrl": "/data/text/v6-ch22.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch23",
+          "title": "சேது சமுத்திரத் திட்டம் ஏன்?",
+          "startPage": 420,
+          "endPage": 437,
+          "textUrl": "/data/text/v6-ch23.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch24",
+          "title": "ஜெயா ஆட்சியில்",
+          "startPage": 438,
+          "endPage": 455,
+          "textUrl": "/data/text/v6-ch24.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch25",
+          "title": "எந்த நாளும் மறவாத",
+          "startPage": 456,
+          "endPage": 475,
+          "textUrl": "/data/text/v6-ch25.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch26",
+          "title": "என்றும் மறக்க முடியாத மாறன்!",
+          "startPage": 476,
+          "endPage": 493,
+          "textUrl": "/data/text/v6-ch26.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch27",
+          "title": "\"தொல்காப்பிய பூங்கா\"",
+          "startPage": 494,
+          "endPage": 513,
+          "textUrl": "/data/text/v6-ch27.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch28",
+          "title": "நீதியே; நீ இன்னும்",
+          "startPage": 514,
+          "endPage": 532,
+          "textUrl": "/data/text/v6-ch28.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        },
+        {
+          "id": "v6-ch29",
+          "title": "இயற்கையின் துணையை நம்பி!",
+          "startPage": 533,
+          "endPage": 554,
+          "textUrl": "/data/text/v6-ch29.json",
+          "textEnUrl": null,
+          "visualsUrl": null
+        }
+      ]
+    }
+  ],
+  "murasoli": {
+    "title": {
+      "en": "Murasoli — Letters to Udanpirappukkal",
+      "ta": "முரசொலி — உடன்பிறப்புகளுக்கு"
+    },
+    "indexUrl": "/data/murasoli/index.json",
+    "lettersIndexUrl": "/data/murasoli/letters-index.json",
+    "letterUrlTemplate": "/data/murasoli/letters/{id}.json",
+    "letterEnUrlTemplate": "/data/murasoli/letters-en/{id}.json",
+    "volumeCount": 5,
+    "totalLetters": 235
+  },
+  "features": {
+    "timeline": null,
+    "governance": null,
+    "people": null,
+    "places": null,
+    "themes": null,
+    "quotes": null,
+    "stats": "/data/stats.json"
+  }
+}
