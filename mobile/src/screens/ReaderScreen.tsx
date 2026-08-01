@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Image, Pressable, ScrollView, Share, View, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -37,9 +37,17 @@ export function ReaderScreen() {
   // Search deep-link: the paragraph (in the Tamil text) that contains the query,
   // so a tapped search result scrolls to and highlights the matching passage.
   const needle = (find ?? "").trim();
-  const [findIndex, setFindIndex] = useState<number | null>(null);
   const paraY = useRef<Record<number, number>>({});
   const didFindScroll = useRef(false);
+
+  // Resolve the matched paragraph synchronously with the text render, so it is
+  // already available when paragraph onLayout callbacks and position-restore run
+  // (deriving it later in an effect races those and can miss the scroll).
+  const findIndex = useMemo(() => {
+    if (!text || needle.length < 2) return null;
+    const i = text.paragraphs.findIndex((p) => p.includes(needle));
+    return i >= 0 ? i : null;
+  }, [text, needle]);
 
   const showEn = prefs.showEnglish && !!en?.paragraphs?.length;
   const fontSize = fontSteps[Math.min(prefs.fontStep, fontSteps.length - 1)];
@@ -52,9 +60,7 @@ export function ReaderScreen() {
     let alive = true;
     setText(null);
     setError(false);
-    setFindIndex(null);
-    paraY.current = {};
-    didFindScroll.current = false;
+    paraY.current = {}; // chapter text changes → measured positions are stale
     restored.current = false;
     (async () => {
       try {
@@ -79,15 +85,22 @@ export function ReaderScreen() {
     };
   }, [id, chapter]);
 
-  // Locate the paragraph to jump to once the Tamil text is loaded.
+  // Re-arm the find scroll whenever the chapter or the query changes, so a new
+  // search targeting another passage in the same chapter scrolls again.
   useEffect(() => {
-    if (!text || needle.length < 2) {
-      setFindIndex(null);
-      return;
+    didFindScroll.current = false;
+  }, [id, needle]);
+
+  // If the matched paragraph has already been measured, scroll to it now;
+  // otherwise its onLayout callback will perform the scroll when it lands.
+  useEffect(() => {
+    if (findTarget == null || didFindScroll.current) return;
+    const y = paraY.current[findTarget];
+    if (y != null) {
+      didFindScroll.current = true;
+      setTimeout(() => scrollRef.current?.scrollTo({ y: Math.max(0, y - spacing(6)), animated: true }), 60);
     }
-    const idx = text.paragraphs.findIndex((p) => p.includes(needle));
-    setFindIndex(idx >= 0 ? idx : null);
-  }, [text, needle]);
+  }, [findTarget]);
 
   const toggleBookmark = useCallback(async () => {
     if (volumeN == null || !text) return;

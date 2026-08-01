@@ -16,6 +16,9 @@ export function SearchScreen() {
   const nav = useNavigation<any>();
   const c = useTheme();
   const [q, setQ] = useState("");
+  // The term that actually produced the current results. Editing `q` without
+  // re-submitting must not change what the displayed results mean.
+  const [submittedQuery, setSubmittedQuery] = useState("");
   const [vol, setVol] = useState<number | null>(null);
   const [results, setResults] = useState<Result[] | null>(null);
   const [history, setHistory] = useState<string[]>([]);
@@ -42,6 +45,7 @@ export function SearchScreen() {
       setResults(null);
       return;
     }
+    setSubmittedQuery(needle); // this is now the term the results belong to
     setLoading(true);
     setFailedVolumes(0);
     setResults([]); // enter the results view so the "Searching…" state shows
@@ -79,7 +83,7 @@ export function SearchScreen() {
   };
 
   const highlighted = (snippet: string) => {
-    const needle = q.trim();
+    const needle = submittedQuery;
     const idx = needle ? snippet.indexOf(needle) : -1;
     if (idx < 0) return <T ta size={13} muted numberOfLines={2}>{snippet}</T>;
     return (
@@ -140,7 +144,7 @@ export function SearchScreen() {
                   <T size={12} style={{ color: c.accent }}>
                     {failedVolumes} volume{failedVolumes === 1 ? "" : "s"} couldn't be searched — you may be offline.{" "}
                   </T>
-                  <Pressable onPress={() => run(q)} hitSlop={8} accessibilityRole="button">
+                  <Pressable onPress={() => run(submittedQuery)} hitSlop={8} accessibilityRole="button">
                     <T size={12} bold style={{ color: c.primary }}>Retry</T>
                   </Pressable>
                 </View>
@@ -154,7 +158,7 @@ export function SearchScreen() {
                 <T muted size={13} style={{ textAlign: "center", marginTop: spacing(2) }}>
                   No search index is available offline. Reconnect and try again.
                 </T>
-                <Pressable onPress={() => run(q)} accessibilityRole="button" style={{ marginTop: spacing(4), paddingHorizontal: spacing(5), paddingVertical: spacing(2.5), borderRadius: radius.pill, borderWidth: 1, borderColor: c.primary }}>
+                <Pressable onPress={() => run(submittedQuery)} accessibilityRole="button" style={{ marginTop: spacing(4), paddingHorizontal: spacing(5), paddingVertical: spacing(2.5), borderRadius: radius.pill, borderWidth: 1, borderColor: c.primary }}>
                   <T bold style={{ color: c.primary }}>Try again</T>
                 </Pressable>
               </View>
@@ -163,7 +167,7 @@ export function SearchScreen() {
           ItemSeparatorComponent={() => <View style={{ height: 1, backgroundColor: c.border }} />}
           contentContainerStyle={{ paddingBottom: spacing(24) }}
           renderItem={({ item }) => (
-            <Pressable onPress={() => nav.navigate("Reader", { id: item.id, find: q.trim() })} style={{ paddingVertical: spacing(3) }}>
+            <Pressable onPress={() => nav.navigate("Reader", { id: item.id, find: submittedQuery })} style={{ paddingVertical: spacing(3) }}>
               <T faint size={11}>தொகுதி {item.volume}</T>
               <T ta bold size={15} style={{ marginVertical: 2 }}>{item.title}</T>
               {highlighted(item.snippet)}
