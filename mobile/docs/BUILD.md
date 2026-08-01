@@ -14,14 +14,28 @@ npx expo install --fix
 
 ## 2. Run in development
 
+**Simulator / emulator (recommended for day-to-day dev):**
+
 ```bash
-npx expo start          # Metro + QR code
+npx expo start          # Metro
 #   press i → iOS simulator, a → Android emulator, w → web
 ```
 
-Or with Expo Go: install the app on your phone and scan the QR. The app fetches
-its manifest from `https://nenjukkuneethi.org` by default; point at a local
-site build by overriding `expo.extra.origin` in `app.json`.
+**Physical iPhone / Android:** use an Expo **development build**, not Expo Go. The
+App Store / Play Expo Go tracks a newer Expo SDK and may refuse to load this
+project (SDK ~52). Build a dev client once and install it on the device:
+
+```bash
+eas build --profile development --platform ios      # or: android
+# install the resulting build on the device, then:
+npx expo start --dev-client                          # connects the device to Metro
+```
+
+(Requires the EAS setup in §4. `expo run:ios --device` / `expo run:android` also
+produce an installable dev build if you have the native toolchain locally.)
+
+The app fetches its manifest from `https://nenjukkuneethi.org` by default; point
+at a local site build by overriding `expo.extra.origin` in `app.json`.
 
 ## 3. Type-check & validate
 

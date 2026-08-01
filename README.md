@@ -69,8 +69,12 @@ Node 18.17+ (Next 14 baseline). Push to `main` auto-deploys to Vercel. The `mobi
 ```bash
 cd mobile
 npm install
-npx expo start                 # scan the QR with Expo Go, or press i / a for a simulator
+npx expo start                 # then press i (iOS Simulator) or a (Android emulator)
 ```
+
+**Physical iPhone:** use an Expo **development build** (EAS `development` profile), not Expo
+Go — the current App Store Expo Go tracks a newer SDK and may not run this project's SDK 52.
+See [`mobile/docs/BUILD.md`](mobile/docs/BUILD.md).
 
 Full details — architecture, data contracts, build/EAS, store checklist — are in
 [`mobile/README.md`](mobile/README.md) and [`mobile/docs/`](mobile/docs/).

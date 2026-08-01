@@ -11,8 +11,11 @@ wrapper; every screen is native and the reader works fully offline.
 ```bash
 cd mobile
 npm install
-npx expo start        # scan the QR with Expo Go, or press i / a for a simulator
+npx expo start        # then press i (iOS Simulator) or a (Android emulator)
 ```
+
+For a **physical device**, use an Expo **development build** (not Expo Go — the store
+Expo Go tracks a newer SDK than this project's SDK ~52). See [docs/BUILD.md](docs/BUILD.md) §2.
 
 Requires Node ≥ 18 (tested on v22) and the Expo tooling (via `npx`, no global
 install needed). For native/store builds see [docs/BUILD.md](docs/BUILD.md).
