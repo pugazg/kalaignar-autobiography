@@ -43,13 +43,6 @@ export function TimelineScreen() {
           onPress={() => nav.navigate("Volume", { n: v.n })}
         />
       ))}
-
-      {manifest.features.timeline ? null : (
-        <T faint size={12} style={{ marginTop: spacing(6), fontStyle: "italic" }}>
-          Milestone-level events with direct links to passages are coming as the feature data is
-          published.
-        </T>
-      )}
     </Screen>
   );
 }

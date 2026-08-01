@@ -1,0 +1,50 @@
+name: Mobile CI
+
+# Vercel builds the Next.js website but ignores mobile/, so nothing else guards
+# the React Native app. This runs the mobile checks whenever the app — or the
+# app-data manifest it consumes — changes.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "mobile/**"
+      - "public/data/app/manifest.v1.json"
+      - "pipeline/builders/build_app_manifest.py"
+      - ".github/workflows/mobile-ci.yml"
+  pull_request:
+    paths:
+      - "mobile/**"
+      - "public/data/app/manifest.v1.json"
+      - "pipeline/builders/build_app_manifest.py"
+      - ".github/workflows/mobile-ci.yml"
+
+jobs:
+  mobile:
+    name: typecheck • manifest • doctor • export
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript
+        run: npm run typecheck
+
+      - name: Validate app manifest
+        run: npm run validate:manifest
+
+      - name: Expo Doctor
+        run: npx --yes expo-doctor
+
+      - name: Metro bundle (iOS)
+        run: npx expo export --platform ios --output-dir /tmp/expo-export

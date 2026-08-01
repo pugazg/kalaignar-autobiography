@@ -6,6 +6,13 @@ out
 # macOS
 .DS_Store
 
+# Editor / assistant tooling
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+
 # Next.js
 .next/
 

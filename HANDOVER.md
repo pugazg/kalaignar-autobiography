@@ -152,10 +152,17 @@ ink sketch + font/theme controls + bookmark).
 findings:
 - **Retry buttons** — `EmptyState` gained an optional action; Library/Timeline/Explore now show
   a "Try again" wired to AppState `reload()`.
-- **Search → passage** — the Reader now reads the `find` route param, scrolls to and highlights
-  the matching Tamil paragraph (previously `find` was ignored). *Caveat: verified statically
-  (typecheck + logic) only — the iOS Simulator can't input Tamil (ASCII-only typing; `simctl
-  pbcopy` mangles the UTF-8), so confirm this on a physical device with a Tamil keyboard.*
+- **Search → passage** — the Reader reads the `find` route param, scrolls to and highlights the
+  matching Tamil paragraph. A follow-up (commit `28f9454`) fixed a navigation race: the matched
+  paragraph is derived synchronously via `useMemo` (not a post-render effect), a watch-effect
+  scrolls to an already-measured target, `didFindScroll` re-arms on `id`/`needle` change, and
+  `SearchScreen` uses a `submittedQuery` so editing the field never changes displayed results'
+  meaning. **Runtime-verified in the iOS Simulator**: searched two Tamil terms landing in
+  different paragraphs of the same chapter (v1-ch01 ¶3 and ¶5) — the Reader scrolled to and
+  highlighted each; editing the field to an unsubmitted value still opened the submitted term.
+  (Tamil can't be typed/pasted into the sim — `simctl pbcopy` mangles UTF-8 as MacRoman — so the
+  two terms were seeded into the app's AsyncStorage search history and tapped from Recent
+  Searches.)
 - **Search errors** — per-volume fetch failures are caught; partial results still show, with a
   "N volumes couldn't be searched — Retry" banner and an empty-state Try-again.
 - **Truthful offline-search wording** — "Previously searched volumes remain searchable offline."
