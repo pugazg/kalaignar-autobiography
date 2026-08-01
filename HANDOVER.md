@@ -92,7 +92,7 @@ chapter. **Nothing rendered.** All pre-render deliverables exist under
 
 ---
 
-## 3. Mobile app (Increment 1 COMPLETE — compiles & bundles; real-device test pending)
+## 3. Mobile app (Increment 1 COMPLETE — merged to `main`, simulator-verified end to end)
 
 **Task:** production-quality cross-platform app (Expo + React Native + TypeScript) for App
 Store + Play, consuming the archive JSON. NOT a WebView wrapper (Apple 4.2). Reuse the site's
@@ -100,12 +100,13 @@ visual identity but redesign interactions for mobile. This is **Increment 1: the
 foundation** (navigation + offline reader + search + data layer) — production hardening,
 TestFlight, and store assets are staged in the roadmap, not faked.
 
-**Status:** Increment 1 compile-critical implementation is **complete** and lives on branch
-`mobile/increment-1-runnable` (not merged to `main` — see below). The app now compiles and
-Metro bundles it end to end. **Still pending: launching and smoke-testing on a real device /
-simulator** — do that before merging to `main` or tagging a release.
+**Status:** Increment 1 is **complete, merged to `main`, and verified running in the iOS
+Simulator** (iPhone Air, iOS 26.5, via Expo Go on Metro). Branch `mobile/increment-1-runnable`
+was fast-forward-merged into `main`; subsequent fixes (below) also landed on `main`.
+**Still pending: a build/run on a physical device and the full store-readiness roadmap (§3f).**
+No release tag has been created.
 
-Verified in this env (deps now installed):
+Static verification (deps installed; `cd mobile`):
 - `npx tsc --noEmit` → **exit 0** (fixed a real navigation `linking` type error: `Tabs` is
   now typed as `NavigatorScreenParams<TabParamList>` and `linking` as `LinkingOptions`).
 - `npm run validate:manifest` → **passes** (AJV): 6 volumes, 391 chapters.
@@ -119,6 +120,30 @@ Verified in this env (deps now installed):
 - **App icons/splash regenerated from the exact brand vector** `app/icon.svg`
   (`mobile/assets/generate-assets.py` rasterises the நீ glyph with correct bezier fill — the
   earlier font-based approximation was replaced). Assets are pixel-consistent with the website.
+
+**Bugs found by running it in the simulator, all fixed on `main`:**
+1. **Tile grid collapsed** (Home/Explore tiles were slivers, labels wrapping one letter per
+   line). `components/ui.tsx` `Card` applied the passed layout style (e.g. `width: "47%"`) to
+   an inner `View` while the outer `Pressable` — the actual flex item — had no width. Fixed by
+   putting the style on the outermost element. Commit `a787644`.
+2. **Website deploy had been failing for ~15 days** → the app's manifest was **404 in
+   production**, so Library/Explore/Search/Timeline showed "Couldn't load the archive". Root
+   cause: Vercel's `next build` type-checks the whole repo and choked on `mobile/App.tsx`'s
+   `react-native` import (that package lives only in `mobile/node_modules`). Fixed by excluding
+   `mobile` from the root `tsconfig.json` and adding a `.vercelignore` (`mobile`, `documentary`).
+   Commit `7371078`. After the passing deploy, `https://nenjukkuneethi.org/data/app/manifest.v1.json`
+   now returns **200 / application/json** and the app loads real data.
+3. **Reader infinite loop** ("Opening the chapter…" forever). `chapterById(id)` returns a fresh
+   wrapper object every render; it was in the data-fetch effect's dependency array, so the effect
+   re-ran each render, reset text to null, and refetched endlessly. Fixed by depending on the
+   stable manifest chapter/volume references. Commit `6e45ae0`.
+
+**Verified working in the simulator:** Home (2×2 tiles + live stats), Library (six volumes),
+Volume (chapter list + download toggles), Reader (Tamil body in Noto Serif Tamil + interleaved
+ink sketch + font/theme controls + bookmark). `main` HEAD after this work = `6e45ae0`.
+
+**Known minor gap (not blocking):** the Library/Explore error screens have no "Try again" —
+they only re-fetch on app relaunch. Worth adding a retry that calls `reload()` from AppState.
 
 ### 3a. Data feed — DONE
 - **Builder:** `pipeline/builders/build_app_manifest.py` — reads `public/data/manifest.json` +
@@ -191,16 +216,16 @@ The three missing screens + entry point + tooling now exist and are wired in:
 7. **Docs** — `mobile/README.md` + `mobile/docs/{ARCHITECTURE,DATA_CONTRACTS,ROADMAP,BUILD,
    STORE_CHECKLIST}.md`, all written.
 
-### 3c-next. IMMEDIATE next step: real-device runtime test
-Everything above is static-verified (types, bundle, doctor) but **not yet run on a device**.
-Before merging `mobile/increment-1-runnable` → `main` or tagging: `cd mobile && npx expo start`,
-open in Expo Go / a simulator, and smoke-test each screen (manifest load, reader offline,
-search, downloads, theme switching, deep link `nenjukkuneethi.org/read/v1-ch01`).
+### 3c-next. IMMEDIATE next step: physical-device run + remaining smoke tests
+Simulator-verified: Home, Library, Volume, Reader (see §3 status). **Still to exercise on a
+real device:** offline reading (download a chapter, kill network, reopen), full-text Search,
+theme/font persistence across relaunch, and the universal-link deep link
+`nenjukkuneethi.org/read/v1-ch01`. Then proceed to the store-readiness roadmap (§3f).
 
 ### 3d. How to run
 ```bash
 cd mobile
-npm install            # deps ARE installed on branch mobile/increment-1-runnable (network verified)
+npm install            # deps installed & committed (package-lock.json); network verified
 npx expo start         # scan QR with Expo Go, or:
 npm run ios / android  # native build
 ```
