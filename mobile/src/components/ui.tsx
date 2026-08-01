@@ -57,23 +57,28 @@ export function T({ ta, bold, muted, faint, size, style, children, ...rest }: Te
 
 export function Card({ children, onPress, style }: ViewProps & { onPress?: () => void }) {
   const c = useTheme();
-  const body = (
-    <View
-      style={[
-        { backgroundColor: c.surface, borderRadius: radius.lg, borderWidth: 1, borderColor: c.border, padding: spacing(4) },
-        style,
-      ]}
-    >
-      {children}
-    </View>
-  );
-  return onPress ? (
-    <Pressable onPress={onPress} accessibilityRole="button" style={({ pressed }) => pressed && { opacity: 0.85 }}>
-      {body}
-    </Pressable>
-  ) : (
-    body
-  );
+  // The card's own look. Layout styles passed via `style` (e.g. width) must land
+  // on the OUTERMOST element so the card is sized correctly as a flex item —
+  // when pressable that element is the Pressable, not an inner View.
+  const cardStyle = {
+    backgroundColor: c.surface,
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    borderColor: c.border,
+    padding: spacing(4),
+  };
+  if (onPress) {
+    return (
+      <Pressable
+        onPress={onPress}
+        accessibilityRole="button"
+        style={({ pressed }) => [cardStyle, style, pressed && { opacity: 0.85 }]}
+      >
+        {children}
+      </Pressable>
+    );
+  }
+  return <View style={[cardStyle, style]}>{children}</View>;
 }
 
 export function Pill({ label, active, onPress }: { label: string; active?: boolean; onPress?: () => void }) {
