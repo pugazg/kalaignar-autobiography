@@ -18,12 +18,18 @@ _Last updated: this session. Read this first in a new window to continue any wor
   and `data/*.ts` (feature datasets). Never hardcode historical prose in components.
 
 ### Git state at handover
-- `main` HEAD = `a398fd6` "Correct Volume 50 letter 3558 to 3858".
-- **Uncommitted / untracked** (intentionally not yet committed):
-  - `mobile/` — the new React Native app (ACTIVE work, incomplete — see §3).
-  - `documentary/` — documentary pre-production package (see §2).
-  - `pipeline/builders/build_app_manifest.py` + `public/data/app/manifest.v1.json` — app manifest.
-  - `.claude/`, `pipeline/builders/__pycache__/` — ignore.
+- `main` HEAD = `8eff589` (this HANDOVER update). Recent line on `main`: `6e45ae0` Reader
+  loop fix ← `7371078` exclude mobile from web build ← `a787644` Card tile fix ← `78a3231`
+  Increment 1 foundation ← `5b0bc3a` mobile foundation + documentary + app manifest.
+- `main` is pushed to `origin/main` and Vercel deploys it (the manifest is now live —
+  `https://nenjukkuneethi.org/data/app/manifest.v1.json` → 200). See §3.
+- Branch `mobile/increment-1-runnable` exists on origin but is now **behind** `main` (its work
+  was fast-forward-merged, then further fixes landed on `main`). Continue on `main`.
+- **Committed since first handover:** `mobile/` app (Increment 1, see §3), documentary
+  pre-production, `pipeline/builders/build_app_manifest.py` + `public/data/app/manifest.v1.json`,
+  root `tsconfig.json` exclude + `.vercelignore`.
+- **Untracked / ignore:** `.claude/`, `pipeline/builders/__pycache__/`, `.DS_Store`,
+  `mobile/node_modules/` (gitignored).
 
 ---
 
@@ -289,11 +295,13 @@ python3 pipeline/builders/build_vol53_from_translations.py <vol> <src-dir>   # a
 ---
 
 ## 6. Open questions for the user (carry into next window)
-1. **Mobile:** proceed to finish Increment 1 (Settings/Timeline/Explore screens + App.tsx +
-   docs so it compiles and runs), then commit `mobile/` + `build_app_manifest.py` +
-   `public/data/app/`? (Recommended next action.)
-2. **Documentary:** fund Higgsfield (trial vs top-up) and approve a Tamil voice test? Provide
-   pp. 15–21 scans to lift the R4 print-verification hold?
-3. **Volume 4 visuals / any remaining Murasoli volumes** — supply when ready; builders exist.
-4. Commit the currently-uncommitted `mobile/`, `documentary/`, and app-manifest files? (Nothing
-   from those is committed yet.)
+1. **Mobile — Increment 1 DONE** (merged to `main`, simulator-verified, see §3). Next decisions:
+   (a) run on a physical device + finish the remaining smoke tests (§3c-next); (b) start
+   **Increment 2** (export `data/*.ts` feature datasets → JSON; native Murasoli reader;
+   timeline milestones — §3b/§3f); (c) begin store-readiness (§3f, `mobile/docs/STORE_CHECKLIST.md`).
+   No release tag has been cut yet — cut one after device testing if desired.
+2. **Quick mobile polish** (noted while testing): Library/Explore error screens have no
+   "Try again" (they only re-fetch on relaunch) — add a retry calling AppState `reload()`.
+3. **Documentary:** fund Higgsfield (trial vs top-up) and approve a Tamil voice test? Provide
+   pp. 15–21 scans to lift the R4 print-verification hold? (Unchanged — still paused, §2.)
+4. **Volume 4 visuals / any remaining Murasoli volumes** — supply when ready; builders exist.
