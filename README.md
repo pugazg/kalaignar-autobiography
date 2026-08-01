@@ -1,74 +1,117 @@
-# Kalaignar M. Karunanidhi's Legacy — an interactive digital report
+# Kalaignar Digital Library — நெஞ்சுக்கு நீதி
 
-An interactive, mobile-first retelling of **Nenjukku Neethi (நெஞ்சுக்கு நீதி), Volume 1** —
-the autobiography of Kalaignar M. Karunanidhi — designed so a visitor can understand
-the arc of 1924–1969 in ten to fifteen minutes.
+An interactive digital archive of **Nenjukku Neethi (நெஞ்சுக்கு நீதி)**, the complete
+six-volume Tamil memoir of **Kalaignar M. Karunanidhi**, together with a collection of his
+**Murasoli** letters. It spans **six volumes · 391 chapters** of memoir (1924–2005) plus
+**235 Murasoli letters** across five letter-volumes.
 
-Built with **Next.js 14 (App Router) · React 18 · TypeScript · Tailwind CSS ·
-Framer Motion · Recharts · Lucide icons**.
+Live: **[nenjukkuneethi.org](https://nenjukkuneethi.org)**
 
-## Run it
+The project has two surfaces that share one body of data:
+
+| Surface | Stack | Location |
+| --- | --- | --- |
+| **Website** | Next.js 14 (App Router) · React 18 · TypeScript · Tailwind · Framer Motion | repo root, deployed to Vercel |
+| **Mobile app** | Expo · React Native · TypeScript (iOS + Android) | [`mobile/`](mobile/) |
+
+## Data is the source of truth
+
+Historical content is **never hardcoded in components**. It lives as served JSON and typed
+datasets, and every surface reads from it:
+
+- `public/data/**` — the served archive JSON (chapter text, translations, search indexes,
+  visuals, Murasoli letters, stats). This is what both the website and the app fetch.
+- `data/*.ts` — typed feature datasets for the website (timeline, themes, people, governance,
+  quotes, stats). *(JSON export of these for the app is an Increment-2 task.)*
+
+Key endpoints (see [`mobile/docs/DATA_CONTRACTS.md`](mobile/docs/DATA_CONTRACTS.md) for the full contract):
+
+| Endpoint | Contents |
+| --- | --- |
+| `/data/app/manifest.v1.json` | Versioned app manifest — all 6 volumes + 391 chapters inlined |
+| `/data/text/<id>.json` | Chapter body (Tamil), `id` = `v<vol>-ch<NN>` |
+| `/data/text-en/<id>.json` | English translation (optional, per chapter) |
+| `/data/fulltext/v<N>.json` | Per-volume full-text search index |
+| `/data/visuals/<id>.json` | Chapter illustration/photo placements |
+| `/images/volume<N>/…` | Chapter illustrations (ink-on-transparent PNG or photo JPG) |
+| `/data/murasoli/…` | Murasoli letters index + `letters/<id>.json` (`m<vol>-l<serial>`) |
+| `/data/stats.json` | Archive statistics |
+
+## Repository layout
+
+```
+app/                 Next.js App Router — root layout, /read Reading Room, routes, SEO, icons
+sections/            Website home-page sections (Hero, Chronicle, Governance, Gallery, …)
+components/          Website UI (Navbar, Reader, SearchDialog, shared primitives)
+data/                Typed feature datasets (*.ts) for the website
+public/data/         The served archive JSON (source of truth) — see table above
+public/images/       Chapter illustrations and photos
+pipeline/builders/   Python builders that generate public/data/** from OCR + sources
+scripts/             Extraction/utility scripts (chapter index & text)
+mobile/              Expo / React Native app (own README + docs/)
+.github/workflows/   CI (mobile-ci.yml)
+```
+
+## Run the website
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
-npm run build && npm start   # production
+npm run dev                    # http://localhost:3000
+npm run build && npm start     # production build
 ```
 
-Node 18.17+ is required (Next 14 baseline).
+Node 18.17+ (Next 14 baseline). Push to `main` auto-deploys to Vercel. The `mobile/` and
+`documentary/` directories are excluded from the website build (`.vercelignore` + root
+`tsconfig.json`), so the Next.js build only type-checks the site.
 
-## What's inside
+## Run the mobile app
 
-| Path | Purpose |
-| --- | --- |
-| `app/` | Root layout (fonts, SEO metadata, skip link) and the single-page composition |
-| `sections/` | Hero, ExecutiveSummary, Pillars, Timeline, Themes, StatsDashboard, Gallery, References, Footer |
-| `components/` | Navbar (scroll spy + reading progress + dark mode), SearchDialog, BackToTop, shared primitives |
-| `data/` | All content as typed data: `meta.ts`, `timeline.ts`, `themes.ts`, `stats.ts`, `gallery.ts`, `references.ts` |
-| `data/extracted/` | Machine-extracted chapter index of the source volume (provenance) |
-| `scripts/extract_index.py` | The extraction pipeline — run it on each new volume |
-| `public/placeholders/` | Original SVG illustrations used until archival photographs are supplied |
+```bash
+cd mobile
+npm install
+npx expo start                 # scan the QR with Expo Go, or press i / a for a simulator
+```
 
-## Content rules honoured
+Full details — architecture, data contracts, build/EAS, store checklist — are in
+[`mobile/README.md`](mobile/README.md) and [`mobile/docs/`](mobile/docs/).
 
-- **Nothing is invented.** Every date, number and event on the site is stated in the
-  source text; each card carries `V1·NN` chapter chips that resolve in the References
-  section, which lists all 140 chapters with page ranges.
-- Long narrative passages are **summarised in original words**; only brief quoted
-  phrases appear, always attributed.
-- The memoir contains no data tables, so the "Statistics Dashboard" is built from
-  figures the book itself records (1957: 15 seats; 1967: 138/173, Congress 49,
-  25/25 Lok Sabha, Saidapet 53,000 vs 32,000; ₹50 tenement rent; 36.5% devaluation;
-  and so on).
+## The data pipeline
 
-## Extending with new volumes
+Builders under `pipeline/builders/` regenerate the served JSON from OCR text and sources:
 
-1. Drop `volumeN.md` (same OCR format) somewhere local.
-2. `python3 scripts/extract_index.py volumeN.md N` → writes `data/extracted/volumeN.index.json`.
-3. Append the new chapters to `data/references.ts`, add milestones to `data/timeline.ts`
-   and themes/stats as the volume warrants, and add `N` to `siteMeta.volumesLoaded`.
+```bash
+# App manifest consumed by the mobile app (rebuild after any index change)
+python3 pipeline/builders/build_app_manifest.py
+npm --prefix mobile run validate:manifest        # AJV schema + cross-checks
 
-The ID convention `vN-chNN` keeps citations stable across volumes.
+# Add a Murasoli letter volume (parametrised)
+python3 pipeline/builders/build_vol53_from_translations.py <vol> <src-dir>
 
-## Enabling the PDF download
+# Chapter visuals (per volume; sketch/photo placement)
+python3 pipeline/builders/build_volume1_visuals.py     # …2, …3, photo volumes, etc.
+```
 
-Place the source file at `public/source/nenjukku-neethi-volume-1.pdf`;
-the footer button links to that path.
+Website chapter data is produced by the `scripts/` extractors (chapter index and text). The
+`v<vol>-ch<NN>` id convention keeps citations stable across volumes and surfaces.
 
-## Accessibility & performance
+## Content & editorial rules
 
-Semantic landmarks and heading order; skip-to-content link; visible focus rings;
-`prefers-reduced-motion` respected by every animation (Framer reveals, counters,
-smooth scroll); keyboard-operable search (Esc closes) and lightbox (arrows/Esc);
-ARIA on progress bars, dialogs, filters and expandables; system-font fallbacks with
-`next/font` (Newsreader for display, Inter for body, Noto Serif Tamil for Tamil);
-static single page, no client data fetching.
+- **Nothing is invented.** Every date, figure and event is grounded in the source text; the
+  website cites chapters (`V<vol>·<NN>`) resolving to page ranges in the References section.
+- Narrative is **summarised in original words**; only brief, attributed quotes appear.
+- Tamil chapter text is presented as the **original source** (some volumes uncorrected OCR);
+  corrections are welcome via the site.
+- Copyright in the original works remains with the respective rights holders; this independent
+  digital edition provides source attribution for every collection.
 
-## The Digital Library layer
+## Continuous integration
 
-- **Reading Room** — `/read`: all 391 chapters in original Tamil (uncorrected OCR), statically
-  generated with stable URLs, bookmarks, reading-position memory and citation export.
-- **Research Mode** — navbar toggle; reveals page ranges, provenance, JSON downloads, citations.
-- **Open data** — `public/data/volume{N}.index.json` (chapter indexes) and
-  `public/data/text/{chapter-id}.json` (chapter text): the substrate for future search/AI features.
-- Regenerate text data with `python3 scripts/extract_chapter_text.py volumeN.md N`.
+[`.github/workflows/mobile-ci.yml`](.github/workflows/mobile-ci.yml) runs on changes under
+`mobile/**` (or the app manifest / its builder): TypeScript, manifest validation, Expo Doctor,
+and an iOS Metro export. The website is built and deployed by Vercel.
+
+## Accessibility
+
+Semantic landmarks and heading order, skip-to-content, visible focus, `prefers-reduced-motion`
+honoured, keyboard-operable search and lightbox, ARIA on interactive controls, and Noto Serif
+Tamil for Tamil text (with Dynamic Type support in the app).
