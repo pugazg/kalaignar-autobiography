@@ -15,6 +15,11 @@ export function ReaderScreen() {
   const c = useTheme();
   const { chapterById, prefs, setPrefs } = useApp();
   const found = chapterById(id);
+  // `found` is a fresh wrapper object on every render, but the chapter/volume it
+  // points at are stable manifest references — depend on those, never on `found`
+  // itself, or effects keyed on it re-run every render (infinite reload loop).
+  const chapter = found?.chapter ?? null;
+  const volumeN = found?.volume.n ?? null;
 
   const [text, setText] = useState<ChapterText | null>(null);
   const [en, setEn] = useState<ChapterTextEn | null>(null);
@@ -33,16 +38,16 @@ export function ReaderScreen() {
   const lineHeight = fontSize * lineHeightSteps[Math.min(prefs.lineHeightStep, lineHeightSteps.length - 1)];
 
   useEffect(() => {
-    if (!found) return;
+    if (!chapter) return;
     let alive = true;
     setText(null);
     setError(false);
     (async () => {
       try {
         const [t, e, v] = await Promise.all([
-          api.chapterText(found.chapter),
-          api.chapterTextEn(found.chapter),
-          api.chapterVisuals(found.chapter),
+          api.chapterText(chapter),
+          api.chapterTextEn(chapter),
+          api.chapterVisuals(chapter),
         ]);
         if (!alive) return;
         setText(t);
@@ -57,18 +62,18 @@ export function ReaderScreen() {
     return () => {
       alive = false;
     };
-  }, [id, found]);
+  }, [id, chapter]);
 
   const toggleBookmark = useCallback(async () => {
-    if (!found || !text) return;
+    if (volumeN == null || !text) return;
     const on = await storage.toggleBookmark({
       chapterId: id,
-      volume: found.volume.n,
+      volume: volumeN,
       title: text.title,
       createdAt: Date.now(),
     });
     setBookmarked(on);
-  }, [found, text, id]);
+  }, [volumeN, text, id]);
 
   useLayoutEffect(() => {
     nav.setOptions({
