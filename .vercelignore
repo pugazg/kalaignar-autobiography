@@ -1,0 +1,5 @@
+# The React Native app under mobile/ is not part of the Next.js website build.
+# Excluding it keeps `next build` from type-checking react-native imports and
+# speeds up the Vercel deployment.
+mobile
+documentary
