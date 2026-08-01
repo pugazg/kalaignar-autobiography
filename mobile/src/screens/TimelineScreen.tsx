@@ -11,12 +11,17 @@ import type { VolumeEntry } from "@/data/types";
 // export exists (Increment 2) this screen gains milestone-level entries with
 // deep-links straight to the Reader; until then each era opens its Volume.
 export function TimelineScreen() {
-  const { status, manifest } = useApp();
+  const { status, manifest, reload } = useApp();
   const nav = useNavigation<any>();
   const c = useTheme();
 
   if (status === "loading") return <Screen><Loading label="Building the timeline…" /></Screen>;
-  if (!manifest) return <Screen><EmptyState title="The timeline couldn't load" body="Check your connection." /></Screen>;
+  if (!manifest)
+    return (
+      <Screen>
+        <EmptyState title="The timeline couldn't load" body="Check your connection." actionLabel="Try again" onAction={reload} />
+      </Screen>
+    );
 
   const eras = [...manifest.volumes].sort((a, b) => startYear(a) - startYear(b));
 

@@ -45,6 +45,13 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       `.well-known/apple-app-site-association` + `assetlinks.json`.
 - [ ] Store assets: screenshots, metadata, privacy policy page, support page.
 - [ ] Android internal-testing track + iOS TestFlight builds (see BUILD.md).
+- [ ] **Expo/SDK upgrade before submission.** Currently Expo SDK ~52 / React
+      Native 0.76.9. Apple requires App Store uploads to be built with a recent
+      Xcode / iOS SDK (Xcode 26 / iOS 26 SDK as of 2026-04-28). Don't leave this
+      to submission day: on a throwaway branch, upgrade Expo sequentially
+      (`npx expo install expo@^<next> --fix`, one major at a time), confirm EAS
+      produces an Xcode 26 / iOS 26 SDK build, then re-run the simulator
+      acceptance tests. Do this before Increment 2 grows large.
 
 ## Known gaps to close before submission
 

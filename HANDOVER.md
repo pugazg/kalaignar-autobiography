@@ -146,10 +146,28 @@ Static verification (deps installed; `cd mobile`):
 
 **Verified working in the simulator:** Home (2×2 tiles + live stats), Library (six volumes),
 Volume (chapter list + download toggles), Reader (Tamil body in Noto Serif Tamil + interleaved
-ink sketch + font/theme controls + bookmark). `main` HEAD after this work = `6e45ae0`.
+ink sketch + font/theme controls + bookmark).
 
-**Known minor gap (not blocking):** the Library/Explore error screens have no "Try again" —
-they only re-fetch on app relaunch. Worth adding a retry that calls `reload()` from AppState.
+**Reliability pass (post-review, on `main`):** addressed the review's "Immediate stability"
+findings:
+- **Retry buttons** — `EmptyState` gained an optional action; Library/Timeline/Explore now show
+  a "Try again" wired to AppState `reload()`.
+- **Search → passage** — the Reader now reads the `find` route param, scrolls to and highlights
+  the matching Tamil paragraph (previously `find` was ignored). *Caveat: verified statically
+  (typecheck + logic) only — the iOS Simulator can't input Tamil (ASCII-only typing; `simctl
+  pbcopy` mangles the UTF-8), so confirm this on a physical device with a Tamil keyboard.*
+- **Search errors** — per-volume fetch failures are caught; partial results still show, with a
+  "N volumes couldn't be searched — Retry" banner and an empty-state Try-again.
+- **Truthful offline-search wording** — "Previously searched volumes remain searchable offline."
+- **Offline images** — `downloadChapter` now downloads the illustration/photo binaries to
+  `content/img/` and the Reader renders the local copy when present; `bytes` counts
+  text+English+visuals+images. **Verified on-disk in the sim**: downloading v1-ch01 wrote 2 PNGs
+  (~196 KB) + JSON = ~238 KB, and Settings → Storage reflects the image-inclusive total.
+- Deferred **Expo/SDK upgrade** documented in `mobile/docs/ROADMAP.md` (Xcode 26 / iOS 26 SDK
+  requirement — do before submission, not on submission day).
+
+Legal items (create `/privacy` + `/about`, copyright wording) were **intentionally skipped** this
+round per the user; still open (see §3f / STORE_CHECKLIST). `main` HEAD after this work = latest.
 
 ### 3a. Data feed — DONE
 - **Builder:** `pipeline/builders/build_app_manifest.py` — reads `public/data/manifest.json` +

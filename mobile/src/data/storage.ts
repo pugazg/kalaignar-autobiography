@@ -11,6 +11,7 @@ const K = {
   recents: "nn:recents", // array of chapterId, most-recent first
   downloads: "nn:downloads", // map chapterId -> DownloadRecord
   searchHistory: "nn:searchHistory",
+  imageCache: "nn:imageCache", // map remote image src -> local file uri
 };
 
 async function getJSON<T>(key: string, fallback: T): Promise<T> {
@@ -82,6 +83,20 @@ export const storage = {
   async isDownloaded(id: string) {
     return !!(await this.getDownloads())[id];
   },
+
+  // downloaded image binaries: remote src -> local file uri
+  getImageCache: () => getJSON<Record<string, string>>(K.imageCache, {}),
+  async setImageCacheEntry(src: string, uri: string) {
+    const m = await this.getImageCache();
+    m[src] = uri;
+    await setJSON(K.imageCache, m);
+  },
+  async removeImageCacheEntry(src: string) {
+    const m = await this.getImageCache();
+    delete m[src];
+    await setJSON(K.imageCache, m);
+  },
+  clearImageCache: () => AsyncStorage.removeItem(K.imageCache),
 
   // search history
   getSearchHistory: () => getJSON<string[]>(K.searchHistory, []),

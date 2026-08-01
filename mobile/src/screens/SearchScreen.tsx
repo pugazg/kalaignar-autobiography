@@ -20,6 +20,7 @@ export function SearchScreen() {
   const [results, setResults] = useState<Result[] | null>(null);
   const [history, setHistory] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
+  const [failedVolumes, setFailedVolumes] = useState(0);
   const index = useRef<Map<number, FullTextEntry[]>>(new Map());
 
   React.useEffect(() => {
@@ -42,29 +43,37 @@ export function SearchScreen() {
       return;
     }
     setLoading(true);
+    setFailedVolumes(0);
+    setResults([]); // enter the results view so the "Searching…" state shows
+    const vols = vol ? [vol] : manifest?.volumes.map((v) => v.n) ?? [];
+    const out: Result[] = [];
+    let failed = 0;
     try {
-      const vols = vol ? [vol] : manifest?.volumes.map((v) => v.n) ?? [];
-      const out: Result[] = [];
       for (const n of vols) {
-        const entries = await loadVolume(n);
-        for (const e of entries) {
-          const at = e.x.indexOf(needle);
-          if (at >= 0) {
-            const start = Math.max(0, at - 40);
-            out.push({
-              id: e.i,
-              volume: n,
-              title: e.t,
-              snippet: (start > 0 ? "…" : "") + e.x.slice(start, at + needle.length + 60) + "…",
-              at,
-            });
+        try {
+          const entries = await loadVolume(n); // may throw when offline & uncached
+          for (const e of entries) {
+            const at = e.x.indexOf(needle);
+            if (at >= 0) {
+              const start = Math.max(0, at - 40);
+              out.push({
+                id: e.i,
+                volume: n,
+                title: e.t,
+                snippet: (start > 0 ? "…" : "") + e.x.slice(start, at + needle.length + 60) + "…",
+                at,
+              });
+            }
           }
+        } catch {
+          failed += 1; // this volume's index couldn't be fetched — keep going
         }
         if (out.length > 200) break;
       }
-      setResults(out);
       storage.pushSearch(needle).then(() => storage.getSearchHistory().then(setHistory));
     } finally {
+      setResults(out);
+      setFailedVolumes(failed);
       setLoading(false);
     }
   };
@@ -110,7 +119,7 @@ export function SearchScreen() {
         <View style={{ marginTop: spacing(4) }}>
           <T faint size={12} style={{ letterSpacing: 1, marginBottom: spacing(2) }}>RECENT SEARCHES</T>
           {history.length === 0 ? (
-            <T muted>Search all six volumes in Tamil. Downloaded volumes search offline.</T>
+            <T muted>Search all six volumes in Tamil. Previously searched volumes remain searchable offline.</T>
           ) : (
             history.map((h) => (
               <Pressable key={h} onPress={() => { setQ(h); run(h); }} style={{ paddingVertical: spacing(2.5) }}>
@@ -123,7 +132,34 @@ export function SearchScreen() {
         <FlatList
           data={results}
           keyExtractor={(r) => r.id}
-          ListHeaderComponent={<T faint size={12} style={{ marginVertical: spacing(3) }}>{loading ? "Searching…" : `${results.length} result${results.length === 1 ? "" : "s"}`}</T>}
+          ListHeaderComponent={
+            <View style={{ marginVertical: spacing(3) }}>
+              <T faint size={12}>{loading ? "Searching…" : `${results.length} result${results.length === 1 ? "" : "s"}`}</T>
+              {!loading && failedVolumes > 0 ? (
+                <View style={{ marginTop: spacing(2), flexDirection: "row", alignItems: "center", flexWrap: "wrap" }}>
+                  <T size={12} style={{ color: c.accent }}>
+                    {failedVolumes} volume{failedVolumes === 1 ? "" : "s"} couldn't be searched — you may be offline.{" "}
+                  </T>
+                  <Pressable onPress={() => run(q)} hitSlop={8} accessibilityRole="button">
+                    <T size={12} bold style={{ color: c.primary }}>Retry</T>
+                  </Pressable>
+                </View>
+              ) : null}
+            </View>
+          }
+          ListEmptyComponent={
+            !loading && failedVolumes > 0 ? (
+              <View style={{ paddingVertical: spacing(8), alignItems: "center" }}>
+                <T bold size={16} style={{ textAlign: "center" }}>Couldn't search</T>
+                <T muted size={13} style={{ textAlign: "center", marginTop: spacing(2) }}>
+                  No search index is available offline. Reconnect and try again.
+                </T>
+                <Pressable onPress={() => run(q)} accessibilityRole="button" style={{ marginTop: spacing(4), paddingHorizontal: spacing(5), paddingVertical: spacing(2.5), borderRadius: radius.pill, borderWidth: 1, borderColor: c.primary }}>
+                  <T bold style={{ color: c.primary }}>Try again</T>
+                </Pressable>
+              </View>
+            ) : null
+          }
           ItemSeparatorComponent={() => <View style={{ height: 1, backgroundColor: c.border }} />}
           contentContainerStyle={{ paddingBottom: spacing(24) }}
           renderItem={({ item }) => (

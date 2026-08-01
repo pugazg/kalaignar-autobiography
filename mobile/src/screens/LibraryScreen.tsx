@@ -14,7 +14,12 @@ export function LibraryScreen() {
   if (status === "error" || !manifest)
     return (
       <Screen>
-        <EmptyState title="The library couldn't load" body={error ?? "Check your connection."} />
+        <EmptyState
+          title="The library couldn't load"
+          body={error ?? "Check your connection."}
+          actionLabel="Try again"
+          onAction={reload}
+        />
       </Screen>
     );
 

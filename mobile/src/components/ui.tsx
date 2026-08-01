@@ -123,11 +123,39 @@ export function Loading({ label }: { label?: string }) {
   );
 }
 
-export function EmptyState({ title, body }: { title: string; body?: string }) {
+export function EmptyState({
+  title,
+  body,
+  actionLabel,
+  onAction,
+}: {
+  title: string;
+  body?: string;
+  actionLabel?: string;
+  onAction?: () => void;
+}) {
+  const c = useTheme();
   return (
     <View style={styles.center}>
       <T bold size={17} style={{ textAlign: "center" }}>{title}</T>
       {body ? <T muted style={{ textAlign: "center", marginTop: spacing(2) }}>{body}</T> : null}
+      {actionLabel && onAction ? (
+        <Pressable
+          onPress={onAction}
+          accessibilityRole="button"
+          style={({ pressed }) => ({
+            marginTop: spacing(5),
+            paddingHorizontal: spacing(5),
+            paddingVertical: spacing(2.5),
+            borderRadius: radius.pill,
+            borderWidth: 1,
+            borderColor: c.primary,
+            backgroundColor: pressed ? c.surfaceAlt : "transparent",
+          })}
+        >
+          <T bold style={{ color: c.primary }}>{actionLabel}</T>
+        </Pressable>
+      ) : null}
     </View>
   );
 }

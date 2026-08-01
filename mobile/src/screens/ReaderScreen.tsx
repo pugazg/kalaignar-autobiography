@@ -10,7 +10,7 @@ import { fontSteps, lineHeightSteps, radius, spacing, tamilFont } from "@/theme/
 import type { ChapterText, ChapterTextEn, Visual } from "@/data/types";
 
 export function ReaderScreen() {
-  const { id } = (useRoute().params ?? {}) as { id: string };
+  const { id, find } = (useRoute().params ?? {}) as { id: string; find?: string };
   const nav = useNavigation<any>();
   const c = useTheme();
   const { chapterById, prefs, setPrefs } = useApp();
@@ -24,6 +24,7 @@ export function ReaderScreen() {
   const [text, setText] = useState<ChapterText | null>(null);
   const [en, setEn] = useState<ChapterTextEn | null>(null);
   const [visuals, setVisuals] = useState<Visual[]>([]);
+  const [imgCache, setImgCache] = useState<Record<string, string>>({});
   const [error, setError] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -33,15 +34,28 @@ export function ReaderScreen() {
   const restored = useRef(false);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Search deep-link: the paragraph (in the Tamil text) that contains the query,
+  // so a tapped search result scrolls to and highlights the matching passage.
+  const needle = (find ?? "").trim();
+  const [findIndex, setFindIndex] = useState<number | null>(null);
+  const paraY = useRef<Record<number, number>>({});
+  const didFindScroll = useRef(false);
+
   const showEn = prefs.showEnglish && !!en?.paragraphs?.length;
   const fontSize = fontSteps[Math.min(prefs.fontStep, fontSteps.length - 1)];
   const lineHeight = fontSize * lineHeightSteps[Math.min(prefs.lineHeightStep, lineHeightSteps.length - 1)];
+  // Search-match behaviour only applies to the Tamil text (the query is Tamil).
+  const findTarget = showEn ? null : findIndex;
 
   useEffect(() => {
     if (!chapter) return;
     let alive = true;
     setText(null);
     setError(false);
+    setFindIndex(null);
+    paraY.current = {};
+    didFindScroll.current = false;
+    restored.current = false;
     (async () => {
       try {
         const [t, e, v] = await Promise.all([
@@ -53,6 +67,7 @@ export function ReaderScreen() {
         setText(t);
         setEn(e);
         setVisuals(v);
+        storage.getImageCache().then((m) => alive && setImgCache(m));
         storage.pushRecent(id);
         storage.isBookmarked(id).then(setBookmarked);
       } catch {
@@ -63,6 +78,16 @@ export function ReaderScreen() {
       alive = false;
     };
   }, [id, chapter]);
+
+  // Locate the paragraph to jump to once the Tamil text is loaded.
+  useEffect(() => {
+    if (!text || needle.length < 2) {
+      setFindIndex(null);
+      return;
+    }
+    const idx = text.paragraphs.findIndex((p) => p.includes(needle));
+    setFindIndex(idx >= 0 ? idx : null);
+  }, [text, needle]);
 
   const toggleBookmark = useCallback(async () => {
     if (volumeN == null || !text) return;
@@ -109,15 +134,27 @@ export function ReaderScreen() {
     }, 500);
   };
 
-  // Restore reading position once content is measured.
+  // Restore reading position once content is measured. When arriving from a
+  // search result (findIndex set), the paragraph's own onLayout drives the
+  // scroll instead — don't also restore the saved position.
   const onContentSize = async (_w: number, h: number) => {
     contentH.current = h;
     if (restored.current || !text) return;
     restored.current = true;
+    if (findTarget != null) return;
     const rec = await storage.getProgress(id);
     if (rec && rec.ratio > 0.02) {
       const y = rec.ratio * Math.max(1, h - viewH.current);
       setTimeout(() => scrollRef.current?.scrollTo({ y, animated: false }), 50);
+    }
+  };
+
+  // Scroll to the matched paragraph as soon as its position is known.
+  const onParaLayout = (i: number, y: number) => {
+    paraY.current[i] = y;
+    if (findTarget === i && !didFindScroll.current) {
+      didFindScroll.current = true;
+      setTimeout(() => scrollRef.current?.scrollTo({ y: Math.max(0, y - spacing(6)), animated: true }), 60);
     }
   };
 
@@ -166,19 +203,24 @@ export function ReaderScreen() {
           {showEn && en?.title ? en.title : text.title}
         </T>
 
-        {!showEn && renderVisual(visuals, -1, c)}
+        {!showEn && renderVisual(visuals, -1, c, imgCache)}
         {paras.map((p, i) => (
           <React.Fragment key={i}>
-            <Pressable onLongPress={() => shareParagraph(p)} delayLongPress={280} accessibilityHint="Long-press to share this passage">
+            <Pressable
+              onLongPress={() => shareParagraph(p)}
+              delayLongPress={280}
+              accessibilityHint="Long-press to share this passage"
+              onLayout={(e) => onParaLayout(i, e.nativeEvent.layout.y)}
+            >
               <T
                 ta={!showEn}
                 selectable
                 style={{ fontSize, lineHeight, fontFamily: showEn ? undefined : tamilFont, marginBottom: spacing(4) }}
               >
-                {p}
+                {findTarget === i ? highlightMatch(p, needle, c) : p}
               </T>
             </Pressable>
-            {!showEn && renderVisual(visuals, i, c)}
+            {!showEn && renderVisual(visuals, i, c, imgCache)}
           </React.Fragment>
         ))}
 
@@ -190,6 +232,27 @@ export function ReaderScreen() {
   );
 }
 
+/** Wrap every occurrence of `needle` in the paragraph with a highlight span. */
+function highlightMatch(p: string, needle: string, c: any): React.ReactNode {
+  if (needle.length < 2) return p;
+  const parts: React.ReactNode[] = [];
+  let from = 0;
+  let at = p.indexOf(needle);
+  let key = 0;
+  while (at >= 0) {
+    if (at > from) parts.push(p.slice(from, at));
+    parts.push(
+      <T key={`h${key++}`} style={{ backgroundColor: c.highlight }}>
+        {p.slice(at, at + needle.length)}
+      </T>,
+    );
+    from = at + needle.length;
+    at = p.indexOf(needle, from);
+  }
+  if (from < p.length) parts.push(p.slice(from));
+  return parts;
+}
+
 function Ctrl({ icon, onPress, label, c }: { icon: any; onPress: () => void; label: string; c: any }) {
   return (
     <Pressable onPress={onPress} hitSlop={8} accessibilityLabel={label} style={{ padding: spacing(2) }}>
@@ -198,7 +261,7 @@ function Ctrl({ icon, onPress, label, c }: { icon: any; onPress: () => void; lab
   );
 }
 
-function renderVisual(visuals: Visual[], afterIndex: number, c: any) {
+function renderVisual(visuals: Visual[], afterIndex: number, c: any, imgCache: Record<string, string>) {
   const here = visuals.filter((v) => v.afterParagraph === afterIndex);
   if (!here.length) return null;
   return (
@@ -206,7 +269,8 @@ function renderVisual(visuals: Visual[], afterIndex: number, c: any) {
       {here.map((v) => (
         <Image
           key={v.src}
-          source={{ uri: api.imageUrl(v.src) }}
+          // Prefer the offline copy when this image has been downloaded.
+          source={{ uri: imgCache[v.src] ?? api.imageUrl(v.src) }}
           resizeMode="contain"
           accessibilityLabel="Chapter illustration"
           style={{ width: "100%", height: 200, marginVertical: spacing(4), tintColor: undefined }}

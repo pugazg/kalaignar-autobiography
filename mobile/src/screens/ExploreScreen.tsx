@@ -11,12 +11,17 @@ import { radius, spacing } from "@/theme/theme";
 // collection (still web-hosted; opened in the browser and clearly labelled as
 // such until a native letters reader ships).
 export function ExploreScreen() {
-  const { status, manifest } = useApp();
+  const { status, manifest, reload } = useApp();
   const nav = useNavigation<any>();
   const c = useTheme();
 
   if (status === "loading") return <Screen><Loading label="Loading…" /></Screen>;
-  if (!manifest) return <Screen><EmptyState title="Couldn't load the archive" body="Check your connection." /></Screen>;
+  if (!manifest)
+    return (
+      <Screen>
+        <EmptyState title="Couldn't load the archive" body="Check your connection." actionLabel="Try again" onAction={reload} />
+      </Screen>
+    );
 
   const chapters = manifest.volumes.reduce((n, v) => n + v.chapterCount, 0);
   const pages = manifest.volumes.reduce((n, v) => n + (v.pages ?? 0), 0);
