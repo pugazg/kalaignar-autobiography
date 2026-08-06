@@ -43,6 +43,17 @@ SERIAL_FIXES: dict[int, dict[int, int]] = {
     50: {3558: 3858},
 }
 
+# Misprinted sign-off dates, corrected on publication: {volume: {number: iso}}.
+# The printed date is preserved verbatim in the letter body (and documented in
+# the translator's note); only the derived chronological sort-date is corrected,
+# mirroring SERIAL_FIXES above.
+DATE_FIXES: dict[int, dict[int, str]] = {
+    # Vol 51 letter 3876 prints its sign-off as 20-4-2017, but the letter sits in
+    # the April-2014 sequence (between 3875 on 2014-04-17 and 3877 on 2014-04-23)
+    # and discusses the April 2014 campaign — the printed "2017" is a source typo.
+    51: {3876: "2014-04-20"},
+}
+
 
 def iso_date(raw: str) -> str | None:
     """'27-5-2015' / '30.12.2015' / '14-07-2015' -> '2015-05-27'."""
@@ -168,6 +179,9 @@ def main() -> None:
             continue
         info = parse_letter(src)
         c = contents[num]
+        # Chronological sort-date: the misprinted sign-off date is preserved in
+        # the body; only this derived field is corrected (see DATE_FIXES).
+        date_out = DATE_FIXES.get(VOLUME, {}).get(out_num, c["date"])
         if out_num != num:
             # The note explains the serial was kept as printed; it is corrected now.
             info["translator_note"] = re.sub(
@@ -195,7 +209,7 @@ def main() -> None:
                     "collection": "murasoli-letter",
                     "volume": VOLUME,
                     "number": out_num,
-                    "date": c["date"],
+                    "date": date_out,
                     "title": title,
                     "salutation": info["ta_salutation"],
                     "pages": page_numbers,
@@ -229,7 +243,7 @@ def main() -> None:
             {
                 "id": lid,
                 "number": out_num,
-                "date": c["date"],
+                "date": date_out,
                 "title": title,
                 "pages": page_numbers,
             }
