@@ -39,6 +39,21 @@ export default function MurasoliLibrary() {
   const label = (t: { en: string; ta: string }) => (ta ? t.ta : t.en);
   const totalLetters = letters?.volumes.reduce((n, v) => n + v.letterCount, 0) ?? 0;
 
+  // Derive the "what's available" copy from the data so it never goes stale as
+  // volumes arrive. Letter-volumes (empty `pages`) carry full English; the
+  // page-scan volumes (e.g. 54) are Tamil-only. Fallbacks match the current
+  // corpus for the brief moment before the indexes finish loading.
+  const allVols = idx?.volumes.map((v) => v.volume) ?? [];
+  const letterVols = idx?.volumes.filter((v) => v.pages.length === 0).map((v) => v.volume) ?? [];
+  const firstVol = allVols.length ? Math.min(...allVols) : 49;
+  const lastVol = allVols.length ? Math.max(...allVols) : 54;
+  const enFirst = letterVols.length ? Math.min(...letterVols) : 49;
+  const enLast = letterVols.length ? Math.max(...letterVols) : 53;
+  // Era of the currently-available volumes (49–54). Kept as stable editorial copy
+  // rather than derived from per-letter dates, which still carry OCR typos (e.g.
+  // one 2017 sign-off in Vol 51). Revisit when the earlier volumes (1–48) arrive.
+  const yearSpan = "2013–2016";
+
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
       <header className="border-b border-ink/10 bg-mist/40 dark:border-white/10 dark:bg-night-surface/40">
@@ -64,8 +79,8 @@ export default function MurasoliLibrary() {
           </p>
           <p className="mt-3 max-w-xl rounded-xl border border-marina/25 bg-marina/[0.05] px-4 py-2.5 text-sm text-ink/70 dark:bg-marina/10 dark:text-night-text/70">
             {ta
-              ? "54 தொகுதிகளில் தொகுதி 50 முதல் 54 வரை (2013–2016) முதற்கனிகளாக வாசிக்கக் கிடைக்கின்றன — தொகுதி 50 முதல் 53 வரை, தமிழ் மூலத்துடன் முழு ஆங்கில மொழிபெயர்ப்பும் கொண்டவை. எஞ்சிய தொகுதிகள் ஒவ்வொன்றாக வந்து சேரும்."
-              : "Volumes 50 to 54 (2013–2016) are the first of the fifty-four to arrive — Volumes 50 through 53 each with a full English translation alongside the authoritative Tamil. The rest are on their way, each joining as its text and corrections are completed."}
+              ? `54 தொகுதிகளில் தொகுதி ${firstVol} முதல் ${lastVol} வரை (${yearSpan}) முதற்கனிகளாக வாசிக்கக் கிடைக்கின்றன — தொகுதி ${enFirst} முதல் ${enLast} வரை, தமிழ் மூலத்துடன் முழு ஆங்கில மொழிபெயர்ப்பும் கொண்டவை. எஞ்சிய தொகுதிகள் ஒவ்வொன்றாக வந்து சேரும்.`
+              : `Volumes ${firstVol} to ${lastVol} (${yearSpan}) are the first of the fifty-four to arrive — Volumes ${enFirst} through ${enLast} each with a full English translation alongside the authoritative Tamil. The rest are on their way, each joining as its text and corrections are completed.`}
           </p>
           {idx && (
             <p className="mt-3 text-xs text-ink/45 dark:text-night-text/45">

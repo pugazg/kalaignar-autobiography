@@ -62,8 +62,8 @@ Built by `pipeline/builders/build_app_manifest.py`. Fetched once, cached.
   "lettersIndexUrl": "/data/murasoli/letters-index.json",
   "letterUrlTemplate": "/data/murasoli/letters/{id}.json",
   "letterEnUrlTemplate": "/data/murasoli/letters-en/{id}.json",
-  "volumeCount": 5 | null,
-  "totalLetters": 235
+  "volumeCount": 6 | null,
+  "totalLetters": 288
 }
 ```
 

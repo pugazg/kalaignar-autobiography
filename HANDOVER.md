@@ -37,8 +37,12 @@ _Last updated: this session. Read this first in a new window to continue any wor
 
 - **Murasoli letters** — added Volumes **50, 51, 52, 53** (each: Tamil + full English
   translation, `உடன்பிறப்பே,` salutation, common source link `https://tamildigitallibrary.in`).
-  Collection now spans Vols **50–54** (Vol 54 was pre-existing). Builder:
-  `pipeline/builders/build_vol53_from_translations.py` (parametrized: `python3 … <vol> <src-dir>`).
+  Builder: `pipeline/builders/build_vol53_from_translations.py` (parametrized: `python3 … <vol> <src-dir>`).
+  - **Later:** Volume **49** added (53 letters 3764–3816, 2013; Tamil + full English) from the
+    page-fidelity source repo `github.com/pugazg/kalaignar-murasoli-letters` via a **new** builder
+    `pipeline/builders/build_vol49_from_pages.py` (Tamil assembled across `pages/*.md`). Collection
+    now spans Vols **49–54** (Vol 54 = page-scan, pre-existing); **288 letters** total. The app
+    manifest and the website's Murasoli library copy both track this dynamically.
   - Vol 50 quirks handled in the builder: **printed-order** (serial 3558 sits between 3857 &
     3859) and a `### Source Note` sub-section that must join the translator's note; then serial
     **3558 was corrected to 3858** via `SERIAL_FIXES` in the builder.

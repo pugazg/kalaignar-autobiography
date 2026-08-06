@@ -3,7 +3,7 @@
 An interactive digital archive of **Nenjukku Neethi (நெஞ்சுக்கு நீதி)**, the complete
 six-volume Tamil memoir of **Kalaignar M. Karunanidhi**, together with a collection of his
 **Murasoli** letters. It spans **six volumes · 391 chapters** of memoir (1924–2005) plus
-**235 Murasoli letters** across five letter-volumes.
+**288 Murasoli letters** across volumes 49–54.
 
 Live: **[nenjukkuneethi.org](https://nenjukkuneethi.org)**
 
