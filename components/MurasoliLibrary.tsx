@@ -89,6 +89,9 @@ export default function MurasoliLibrary() {
                 : `${idx.volumeCount} volume${idx.volumeCount > 1 ? "s" : ""}${totalLetters ? ` · ${totalLetters} letters` : ""} · ${idx.totalPages} pages so far`}
             </p>
           )}
+          <Link href="/tholkappiyam" className="focus-ring mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brass underline-offset-2 hover:underline">
+            {ta ? "தொல்காப்பியப் பூங்கா — கலைஞரின் உரையையும் பார்க்கவும் →" : "Also explore Tholkappiya Poonga — Kalaignar's Tolkāppiyam commentary →"}
+          </Link>
         </div>
       </header>
 

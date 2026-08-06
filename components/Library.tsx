@@ -117,9 +117,14 @@ export default function Library() {
             The complete memoir in its original Tamil — six volumes, 391 chapters, 4,234 pages of
             uncorrected OCR text, each chapter a citable unit of the archive.
           </p>
-          <Link href="/murasoli" className="focus-ring mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-marina underline-offset-2 hover:underline dark:text-marina-light">
-            {lang === "ta" ? "முரசொலி கடிதத் தொகுப்பையும் பார்க்கவும் →" : "Also explore the Murasoli letters collection →"}
-          </Link>
+          <div className="mt-4 flex flex-col gap-1.5">
+            <Link href="/murasoli" className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-marina underline-offset-2 hover:underline dark:text-marina-light">
+              {lang === "ta" ? "முரசொலி கடிதத் தொகுப்பையும் பார்க்கவும் →" : "Also explore the Murasoli letters collection →"}
+            </Link>
+            <Link href="/tholkappiyam" className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-brass underline-offset-2 hover:underline">
+              {lang === "ta" ? "தொல்காப்பியப் பூங்கா — கலைஞரின் உரையையும் பார்க்கவும் →" : "Also explore Tholkappiya Poonga — Kalaignar's Tolkāppiyam commentary →"}
+            </Link>
+          </div>
         </div>
       </header>
 

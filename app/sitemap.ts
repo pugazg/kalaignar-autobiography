@@ -17,6 +17,16 @@ function loadLetterIds(): string[] {
   }
 }
 
+function loadTholkappiyamIds(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/tholkappiyam/index.json");
+    const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { malars: { id: string }[] };
+    return idx.malars.map((m) => m.id);
+  } catch {
+    return [];
+  }
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const idx = murasoliIndex as MurasoliIndex;
@@ -33,6 +43,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/murasoli`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     ...murasoliIds.map((id) => ({
       url: `${BASE}/murasoli/${id}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    { url: `${BASE}/tholkappiyam`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    ...loadTholkappiyamIds().map((id) => ({
+      url: `${BASE}/tholkappiyam/${id}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,
