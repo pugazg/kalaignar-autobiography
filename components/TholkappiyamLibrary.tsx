@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { BookOpen, Flower2, Home, Search, Sparkles } from "lucide-react";
+import { BookOpen, ChevronDown, Flower2, Home, Search, Sparkles } from "lucide-react";
 import type { TpIndex, TpMalarMeta } from "@/data/tholkappiyam";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -13,6 +13,20 @@ type AdhKey = "ezhuttu" | "sol" | "porul";
 
 const READ_KEY = "tp:read";
 const LAST_KEY = "tp:last";
+const COLLAPSE_KEY = "tp:collapsed";
+
+// Short descriptors for the two entry pieces — surfaced as subtitles + tooltips
+// so a first-time reader knows what each door opens onto.
+const INTRO_BLURB: Record<string, { ta: string; en: string }> = {
+  "tp-aninthurai": {
+    ta: "நூலுக்கு அறிஞர்கள் வழங்கிய அணிந்துரைகள்",
+    en: "Scholars' forewords to the book",
+  },
+  "tp-pugumun": {
+    ta: "கலைஞரின் முன்னுரை — பூங்காவிற்குள் நுழைவதற்கு முன்",
+    en: "Kalaignar's own introduction, before you enter",
+  },
+};
 
 export default function TholkappiyamLibrary() {
   const { lang } = useLang();
@@ -22,6 +36,8 @@ export default function TholkappiyamLibrary() {
   const [query, setQuery] = useState("");
   const [read, setRead] = useState<Set<string>>(new Set());
   const [last, setLast] = useState<string | null>(null);
+  // Which adhikāram sections are collapsed in the browse-all view (persisted).
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   // Full-text search: fetched lazily on first text query, cached for the session.
   const [ft, setFt] = useState<FtEntry[] | null>(null);
   const ftReq = useRef(false);
@@ -34,8 +50,19 @@ export default function TholkappiyamLibrary() {
     try {
       setRead(new Set(JSON.parse(localStorage.getItem(READ_KEY) || "[]")));
       setLast(localStorage.getItem(LAST_KEY));
+      setCollapsed(new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY) || "[]")));
     } catch {}
   }, []);
+
+  const toggleSection = (key: string) =>
+    setCollapsed((prev) => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      try {
+        localStorage.setItem(COLLAPSE_KEY, JSON.stringify(Array.from(next)));
+      } catch {}
+      return next;
+    });
 
   const q = query.trim();
   const sutraQuery = /^\d+$/.test(q) ? Number(q) : null;
@@ -69,6 +96,9 @@ export default function TholkappiyamLibrary() {
     }
     return true;
   });
+  const visibleMalars = visible.filter((m) => m.kind === "malar");
+  // Browse-all view (no filter/search): group into collapsible adhikāram sections.
+  const browseAll = filter === "all" && q.length < 2 && sutraQuery === null;
 
   // Segmented progress — grammar isn't read front-to-back, so show per-adhikāram.
   const progress = (idx?.adhikarams ?? []).map((a) => ({
@@ -99,6 +129,9 @@ export default function TholkappiyamLibrary() {
             <Link href="/read" className="focus-ring inline-flex items-center gap-1.5 text-xs text-ink/60 hover:text-brass dark:text-night-text/60">
               <BookOpen className="h-3.5 w-3.5" aria-hidden /> {ta ? "வாசிப்பு அறை" : "Reading Room"}
             </Link>
+            <span aria-current="page" className={cn("inline-flex items-center gap-1.5 text-xs text-brass", ta && "font-tamil")} lang={ta ? "ta" : undefined}>
+              <Flower2 className="h-3.5 w-3.5" aria-hidden /> {ta ? "தொல்காப்பியப் பூங்கா" : "Tholkappiya Poonga"}
+            </span>
           </div>
           <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-brass">
             {ta ? "கலைஞரின் உரை · தொல்காப்பியம்" : "Kalaignar's commentary · Tolkāppiyam"}
@@ -116,7 +149,7 @@ export default function TholkappiyamLibrary() {
               {[
                 [`${idx.adhikarams.length}`, ta ? "அதிகாரம்" : "books"],
                 [`${idx.malarCount}`, ta ? "மலர்" : "blossoms"],
-                [`${idx.sutraCount}`, ta ? "நூற்பா" : "sutras"],
+                [`${idx.sutraCount}`, ta ? "நூற்பா விளக்கம்" : "sutras commented"],
                 [`${idx.scanPages}`, ta ? "பக்கம்" : "pages"],
               ].map(([n, l]) => (
                 <span key={l}>
@@ -155,8 +188,10 @@ export default function TholkappiyamLibrary() {
           </div>
         )}
 
+        {/* Sticky search + filter bar */}
+        <div className="sticky top-0 z-20 -mx-5 mb-6 border-b border-ink/8 bg-paper/90 px-5 pt-3 backdrop-blur dark:border-white/8 dark:bg-night/90 sm:-mx-6 sm:px-6" data-print="hide">
         {/* Search */}
-        <div className="mb-4 flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-4 py-2.5 dark:border-white/15 dark:bg-night-surface/70" data-print="hide">
+        <div className="mb-3 flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-4 py-2.5 dark:border-white/15 dark:bg-night-surface/70">
           <Search className="h-4 w-4 shrink-0 text-ink/40 dark:text-night-text/40" aria-hidden />
           <input
             value={query}
@@ -170,13 +205,14 @@ export default function TholkappiyamLibrary() {
         </div>
 
         {/* Adhikāram filter */}
-        <div className="mb-6 flex flex-wrap items-center gap-2" data-print="hide">
+        <div className="flex flex-wrap items-center gap-2 pb-3">
           <button onClick={() => setFilter("all")} className={chip(filter === "all")}>{ta ? "அனைத்தும்" : "All"}</button>
           {(idx?.adhikarams ?? []).map((a) => (
             <button key={a.key} onClick={() => setFilter(a.key as AdhKey)} className={cn(chip(filter === a.key), "font-tamil")} lang="ta">
               {a.ta}
             </button>
           ))}
+        </div>
         </div>
 
         {sutraQuery !== null && (
@@ -187,16 +223,34 @@ export default function TholkappiyamLibrary() {
 
         {/* Intro pieces (only when unfiltered/unsearched) */}
         {filter === "all" && q.length < 2 && sutraQuery === null && intros.length > 0 && (
-          <div className="mb-6 rounded-2xl border border-ink/10 bg-white/40 p-4 dark:border-white/10 dark:bg-night-surface/40">
-            <p className="mb-2 flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-brass">
+          <div className="mb-6 rounded-2xl border border-brass/20 bg-brass/[0.04] p-4 dark:border-brass/25 dark:bg-brass/[0.06]">
+            <p className="mb-3 flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-brass">
               <Sparkles className="h-3.5 w-3.5" aria-hidden /> {ta ? "பூங்கா நடைபாதை" : "Enter the garden"}
             </p>
-            <div className="flex flex-wrap gap-2">
-              {intros.map((m) => (
-                <Link key={m.id} href={`/tholkappiyam/${m.id}`} className="focus-ring inline-flex items-center gap-2 rounded-full border border-brass/30 px-3 py-1 font-tamil text-sm hover:border-brass/60" lang="ta">
-                  {read.has(m.id) && <span className="text-brass">✓</span>}{m.title.ta}
-                </Link>
-              ))}
+            <div className="grid gap-3 sm:grid-cols-2">
+              {intros.map((m) => {
+                const blurb = INTRO_BLURB[m.id];
+                const sub = blurb ? (ta ? blurb.ta : blurb.en) : "";
+                return (
+                  <Link
+                    key={m.id}
+                    href={`/tholkappiyam/${m.id}`}
+                    title={sub || undefined}
+                    className="focus-ring group flex items-start gap-3 rounded-xl border border-brass/30 bg-white/60 px-4 py-3 transition hover:border-brass/70 hover:bg-brass/[0.06] dark:bg-night-surface/50"
+                  >
+                    <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-brass" aria-hidden />
+                    <span className="min-w-0">
+                      <span className="flex items-center gap-1.5">
+                        <span className="font-tamil text-[15px] font-medium group-hover:text-brass" lang="ta">{m.title.ta}</span>
+                        {read.has(m.id) && <span className="shrink-0 text-brass" aria-label={ta ? "வாசித்தாயிற்று" : "Read"}>✓</span>}
+                      </span>
+                      {sub && (
+                        <span className="mt-0.5 block text-xs leading-snug text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : undefined}>{sub}</span>
+                      )}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
@@ -204,13 +258,43 @@ export default function TholkappiyamLibrary() {
         {/* Malar list */}
         {!idx ? (
           <p className="text-center text-sm text-ink/50 dark:text-night-text/50">{ta ? "பூங்கா ஏற்றப்படுகிறது…" : "Opening the garden…"}</p>
-        ) : visible.filter((m) => m.kind === "malar").length === 0 ? (
+        ) : visibleMalars.length === 0 ? (
           <p className="py-12 text-center text-sm text-ink/50 dark:text-night-text/50">
             {ta ? "இந்தத் தேடலுக்கு மலர் எதுவும் இல்லை — வேறு சொல்லில் அல்லது நூற்பா எண்ணில் முயலுங்கள்." : "No blossoms match — try another word or a sutra number."}
           </p>
+        ) : browseAll ? (
+          <div className="space-y-3">
+            {(idx.adhikarams ?? []).map((a) => {
+              const rows = visibleMalars.filter((m) => m.adhikaram?.key === a.key);
+              if (rows.length === 0) return null;
+              const isOpen = !collapsed.has(a.key);
+              const done = rows.filter((m) => read.has(m.id)).length;
+              return (
+                <section key={a.key} className="overflow-hidden rounded-2xl border border-ink/10 dark:border-white/10">
+                  <button
+                    onClick={() => toggleSection(a.key)}
+                    aria-expanded={isOpen}
+                    className="focus-ring flex w-full items-center gap-3 bg-white/40 px-4 py-3 text-left transition hover:bg-brass/[0.05] dark:bg-night-surface/40"
+                  >
+                    <ChevronDown className={cn("h-4 w-4 shrink-0 text-brass transition-transform", !isOpen && "-rotate-90")} aria-hidden />
+                    <span className="font-tamil text-base font-medium" lang="ta">{a.ta}</span>
+                    <span className="hidden text-xs text-ink/45 dark:text-night-text/45 sm:inline">{a.en}</span>
+                    <span className="ml-auto text-xs tabular-nums text-ink/50 dark:text-night-text/50">{done}/{rows.length}</span>
+                  </button>
+                  {isOpen && (
+                    <ul className="divide-y divide-ink/8 border-t border-ink/8 px-4 dark:divide-white/8 dark:border-white/8">
+                      {rows.map((m) => (
+                        <MalarRow key={m.id} m={m} ta={ta} isRead={read.has(m.id)} />
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              );
+            })}
+          </div>
         ) : (
           <ul className="divide-y divide-ink/8 dark:divide-white/8">
-            {visible.filter((m) => m.kind === "malar").map((m) => (
+            {visibleMalars.map((m) => (
               <MalarRow key={m.id} m={m} ta={ta} isRead={read.has(m.id)} />
             ))}
           </ul>

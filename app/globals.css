@@ -16,11 +16,16 @@ html {
 /* Mobile: kill sideways wobble while scrolling. Some wide elements (SVG map,
    timeline, long unbroken strings) can push past the viewport; clamp the page
    to the viewport width so touch scrolling is vertical-only. Individual wide
-   widgets that need panning must declare their own overflow-x-auto. */
-html,
-body {
+   widgets that need panning must declare their own overflow-x-auto.
+   Clip only on <html> (the scroll root): putting overflow-x on <body> too makes
+   <body> a non-scrolling scroll container, which silently breaks `position: sticky`
+   for its descendants (sticky headers, filter bars). */
+html {
   max-width: 100%;
   overflow-x: hidden;
+}
+body {
+  max-width: 100%;
 }
 @media (prefers-reduced-motion: reduce) {
   html {

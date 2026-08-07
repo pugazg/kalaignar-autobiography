@@ -37,7 +37,7 @@
    "key": "porul",
    "ta": "பொருள்",
    "en": "Poruḷatikāram",
-   "malarCount": 82,
+   "malarCount": 83,
    "sutraCount": 55
   }
  ],
@@ -660,8 +660,12 @@
    "title": {
     "ta": "இடையில் ஓர் எளிய விளக்கம்?"
    },
-   "adhikaram": null,
-   "iyal": null,
+   "adhikaram": {
+    "key": "porul",
+    "ta": "பொருள்",
+    "en": "Poruḷatikāram"
+   },
+   "iyal": "அகத்திணை இயல்",
    "sutras": [],
    "pages": {
     "scanStart": 163,
