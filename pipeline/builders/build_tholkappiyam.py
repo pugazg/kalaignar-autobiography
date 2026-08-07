@@ -25,6 +25,10 @@ SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/tp")
 OUT = Path(__file__).resolve().parents[2] / "public" / "data" / "tholkappiyam"
 SOURCE_REPO = "https://github.com/pugazg/tolkappiyap-poonga"
 _SENTENCE_END = re.compile(r"[.!?…”\"’')\]।]$")
+# The final malar's pages run into the book's back-matter (a composition-date
+# colophon + a catalogue of Kalaignar's other works). That is not commentary —
+# truncate the last malar's text here.
+_BACK_MATTER = "தொல்காப்பியப் பூங்கா எழுதத் தொடங்கியது"
 
 # Normalise the adhikāram name (READMEs use the full "-அதிகாரம்" form; the printed
 # contents table uses the short form) to a stable key + display label.
@@ -212,6 +216,9 @@ def main():
     fulltext, index_malars = [], []
     for e in entries:
         paras = e.pop("paragraphs")
+        cut = next((i for i, p in enumerate(paras) if p.startswith(_BACK_MATTER)), None)
+        if cut is not None:  # drop the book's trailing colophon + other-works catalogue
+            paras = paras[:cut]
         (OUT / "text" / f"{e['id']}.json").write_text(
             json.dumps({**e, "paragraphs": paras}, ensure_ascii=False), encoding="utf-8"
         )
