@@ -16,7 +16,7 @@ import {
   Plus,
 } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import type { ChapterRef } from "@/data/references";
 import { chapterIndex, volumeMeta } from "@/data/references";
 import { useResearch } from "@/lib/ResearchMode";
@@ -26,6 +26,7 @@ import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 import { chromeTa } from "@/data/i18n.ta";
 import { queryForms } from "@/lib/transliterate";
+import { useReaderProgress } from "@/lib/useReaderProgress";
 import { quotes } from "@/data/quotes";
 import { teasers } from "@/data/teasers";
 import ShareQuote from "@/components/ShareQuote";
@@ -60,8 +61,6 @@ export default function Reader({
   const [font, setFont] = useState(1);
   const [marked, setMarked] = useState(false);
   const [find, setFind] = useState("");
-  const [progress, setProgress] = useState(0); // 0–100 scroll-through
-  const [isRead, setIsRead] = useState(false);
   // English translation: exists only where a translation file has been
   // published (public/data/text-en/<id>.json). Tamil is authoritative.
   const [enParas, setEnParas] = useState<string[] | null>(null);
@@ -71,7 +70,6 @@ export default function Reader({
   const [visuals, setVisuals] = useState<Visual[]>([]);
   const { research, setResearch } = useResearch();
   const { lang } = useLang();
-  const restored = useRef(false);
   const vol = volumeMeta.find((v) => v.volume === chapter.volume);
 
   // In-chapter find: split each paragraph on the query and wrap matches.
@@ -132,66 +130,24 @@ export default function Reader({
     } catch {}
   }, [chapter.id]);
 
-  // Restore preferences, bookmark state, reading position; record "last read".
+  // Restore font + bookmark state. Progress, read-state, position restore and
+  // last-read recording all live in the shared reader hook below.
   useEffect(() => {
     try {
       const f = window.localStorage.getItem("nn-font");
       if (f !== null) setFont(Math.min(2, Math.max(0, Number(f))));
       const marks: string[] = JSON.parse(window.localStorage.getItem("nn-bookmarks") || "[]");
       setMarked(marks.includes(chapter.id));
-      const read: string[] = JSON.parse(window.localStorage.getItem("nn-read") || "[]");
-      setIsRead(read.includes(chapter.id));
-      window.localStorage.setItem("nn-last", chapter.id);
     } catch {}
   }, [chapter.id]);
 
-  useEffect(() => {
-    if (!data || restored.current) return;
-    restored.current = true;
-    try {
-      const pos = window.localStorage.getItem(`nn-pos:${chapter.id}`);
-      if (pos) window.scrollTo({ top: Number(pos) * document.body.scrollHeight });
-    } catch {}
-  }, [data, chapter.id]);
-
-  useEffect(() => {
-    let t: ReturnType<typeof setTimeout> | null = null;
-    const onScroll = () => {
-      if (t) return;
-      t = setTimeout(() => {
-        t = null;
-        try {
-          window.localStorage.setItem(
-            `nn-pos:${chapter.id}`,
-            String(window.scrollY / Math.max(1, document.body.scrollHeight)),
-          );
-          // surface the same measurement as visible progress, and auto-mark
-          // the chapter read once the reader has scrolled essentially through
-          const denom = Math.max(1, document.body.scrollHeight - window.innerHeight);
-          const pct = Math.min(100, Math.round((window.scrollY / denom) * 100));
-          setProgress(pct);
-          if (pct >= 95) {
-            const read: string[] = JSON.parse(window.localStorage.getItem("nn-read") || "[]");
-            if (!read.includes(chapter.id)) {
-              window.localStorage.setItem("nn-read", JSON.stringify([...read, chapter.id]));
-              setIsRead(true);
-            }
-          }
-        } catch {}
-      }, 400);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [chapter.id]);
-
-  const toggleRead = () => {
-    try {
-      const read: string[] = JSON.parse(window.localStorage.getItem("nn-read") || "[]");
-      const next = isRead ? read.filter((r) => r !== chapter.id) : [...read, chapter.id];
-      window.localStorage.setItem("nn-read", JSON.stringify(next));
-      setIsRead(!isRead);
-    } catch {}
-  };
+  const { progress, isRead, toggleRead } = useReaderProgress({
+    id: chapter.id,
+    ready: !!data,
+    readKey: "nn-read",
+    posPrefix: "nn-pos:",
+    lastKey: "nn-last",
+  });
 
   // ~200 space-separated words per minute; Tamil agglutination makes real
   // words denser, so this reads as a floor, not a promise.

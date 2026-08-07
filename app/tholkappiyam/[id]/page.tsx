@@ -34,11 +34,21 @@ export default function TholkappiyamMalarRoute({ params }: { params: { id: strin
   if (!idx) notFound();
   const i = idx.malars.findIndex((m) => m.id === params.id);
   if (i === -1) notFound();
+  const malar = idx.malars[i];
+
+  // Three more blossoms from the same அதிகாரம் (following this one, wrapping).
+  const adhKey = malar.adhikaram?.key;
+  const siblings = adhKey ? idx.malars.filter((m) => m.kind === "malar" && m.adhikaram?.key === adhKey) : [];
+  const si = siblings.findIndex((m) => m.id === malar.id);
+  const alsoInAdhikaram =
+    si === -1 ? [] : [1, 2, 3].map((k) => siblings[(si + k) % siblings.length]).filter((m) => m.id !== malar.id);
+
   return (
     <TholkappiyamReader
-      malar={idx.malars[i]}
+      malar={malar}
       prev={i > 0 ? idx.malars[i - 1] : null}
       next={i < idx.malars.length - 1 ? idx.malars[i + 1] : null}
+      alsoInAdhikaram={alsoInAdhikaram}
       collection={{ publisher: idx.publisher, year: idx.year, sourceRepo: idx.sourceRepo, work: idx.work }}
     />
   );

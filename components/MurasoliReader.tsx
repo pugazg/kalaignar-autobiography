@@ -7,6 +7,7 @@ import ShareButtons from "@/components/ShareButtons";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { queryForms } from "@/lib/transliterate";
+import { useReaderProgress } from "@/lib/useReaderProgress";
 
 type Pg = { id: string; page: number; title: { en: string; ta: string }; volume: number; pageType: string };
 
@@ -26,6 +27,10 @@ export default function MurasoliReader({ page, prev, next }: { page: Pg; prev: P
       .then((d) => setParas(d.paragraphs ?? []))
       .catch(() => setError(true));
   }, [page.id]);
+
+  // Scroll progress + position restore only — page scans are fragments, so they
+  // stay out of the mark-as-read / shelf model (no readKey).
+  const { progress } = useReaderProgress({ id: page.id, ready: !!paras, posPrefix: "mu:pos:" });
 
   const title = ta ? page.title.ta : page.title.en;
   const sizes = ["text-base", "text-lg", "text-xl"];
@@ -65,6 +70,7 @@ export default function MurasoliReader({ page, prev, next }: { page: Pg; prev: P
             </Link>
             <p className="truncate text-xs text-ink/60 dark:text-night-text/60">
               {ta ? "முரசொலி" : "Murasoli"} · {ta ? `தொகுதி ${page.volume}` : `Vol ${page.volume}`} · {ta ? `பக். ${page.page}` : `p. ${page.page}`}
+              {progress > 0 && <span className="ml-2 tabular-nums text-marina dark:text-marina-light">{progress}%</span>}
             </p>
           </div>
           <div className="flex items-center gap-1">
@@ -86,6 +92,10 @@ export default function MurasoliReader({ page, prev, next }: { page: Pg; prev: P
             lang="ta"
           />
           {find && <button onClick={() => setFind("")} className="focus-ring shrink-0 rounded px-1.5 text-xs text-ink/50 dark:text-night-text/50" aria-label="Clear">✕</button>}
+        </div>
+        {/* thin scroll-through bar pinned to the header's lower edge */}
+        <div className="h-0.5 w-full bg-transparent" aria-hidden>
+          <div className="h-full bg-marina transition-[width] duration-300 dark:bg-marina-light" style={{ width: `${progress}%` }} />
         </div>
       </header>
 

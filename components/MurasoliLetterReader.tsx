@@ -2,26 +2,35 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, ChevronLeft, ChevronRight, Home, Minus, Plus } from "lucide-react";
+import { ArrowLeft, BookOpen, CheckCircle2, ChevronLeft, ChevronRight, Circle, Clock, Home, ListOrdered, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
+import ShareQuote from "@/components/ShareQuote";
 import type { MurasoliLetterMeta } from "@/data/murasoli";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { queryForms } from "@/lib/transliterate";
+import { useReaderProgress } from "@/lib/useReaderProgress";
+
+type Letter = MurasoliLetterMeta & { volume: number };
 
 type Props = {
-  letter: MurasoliLetterMeta & { volume: number };
-  prev: (MurasoliLetterMeta & { volume: number }) | null;
-  next: (MurasoliLetterMeta & { volume: number }) | null;
+  letter: Letter;
+  prev: Letter | null;
+  next: Letter | null;
+  alsoInVolume: Letter[];
   sourceUrl?: string;
 };
+
+const READ_KEY = "mu:read";
+const LAST_KEY = "mu:last";
+const POS_PREFIX = "mu:pos:";
 
 function formatDate(iso: string) {
   const [y, m, d] = iso.split("-");
   return `${Number(d)}.${Number(m)}.${y}`;
 }
 
-export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: Props) {
+export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume, sourceUrl }: Props) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const [paras, setParas] = useState<string[] | null>(null);
@@ -64,6 +73,17 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
       .catch(() => {});
   }, [letter.id]);
 
+  // Shared reading behaviour: scroll progress, position restore, mark-as-read
+  // (auto at ~95% + manual toggle), and recording this as the resume point.
+  const { progress, isRead, toggleRead } = useReaderProgress({
+    id: letter.id,
+    ready: !!paras,
+    readKey: READ_KEY,
+    posPrefix: POS_PREFIX,
+    lastKey: LAST_KEY,
+  });
+  const readMins = paras ? Math.max(1, Math.round(paras.join(" ").split(/\s+/).length / 200)) : null;
+
   const sizes = ["text-base", "text-lg", "text-xl"];
 
   const highlight = (text: string) => {
@@ -84,6 +104,8 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
     }
   };
 
+  const displayParas = showEn && enParas ? enParas : paras;
+
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
       <header className="sticky top-0 z-30 border-b border-ink/10 bg-paper/90 backdrop-blur dark:border-white/10 dark:bg-night/90">
@@ -102,6 +124,7 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
             <p className="truncate text-xs text-ink/60 dark:text-night-text/60">
               {ta ? "முரசொலி" : "Murasoli"} · {ta ? `தொகுதி ${letter.volume}` : `Vol ${letter.volume}`}
               {letter.number != null && <> · {ta ? `கடிதம் ${letter.number}` : `Letter ${letter.number}`}</>}
+              {progress > 0 && <span className="ml-2 tabular-nums text-marina dark:text-marina-light">{progress}%</span>}
             </p>
           </div>
           <div className="flex items-center gap-1">
@@ -110,6 +133,9 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
             </button>
             <button onClick={() => setFont(Math.min(2, font + 1))} disabled={font === 2} className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina disabled:opacity-30 dark:text-night-text/60" aria-label="Larger text">
               <Plus className="h-4 w-4" aria-hidden />
+            </button>
+            <button onClick={toggleRead} className={cn("focus-ring rounded p-1.5", isRead ? "text-marina dark:text-marina-light" : "text-ink/60 hover:text-marina dark:text-night-text/60")} aria-label={ta ? (isRead ? "வாசித்ததாகக் குறிக்கப்பட்டது" : "வாசித்ததாகக் குறிக்க") : (isRead ? "Marked as read" : "Mark as read")} aria-pressed={isRead} title={ta ? "வாசித்ததா?" : "Mark as read"}>
+              {isRead ? <CheckCircle2 className="h-4 w-4" aria-hidden /> : <Circle className="h-4 w-4" aria-hidden />}
             </button>
           </div>
         </div>
@@ -124,6 +150,10 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
           />
           {find && <button onClick={() => setFind("")} className="focus-ring shrink-0 rounded px-1.5 text-xs text-ink/50 dark:text-night-text/50" aria-label="Clear">✕</button>}
         </div>
+        {/* thin scroll-through bar pinned to the header's lower edge */}
+        <div className="h-0.5 w-full bg-transparent" aria-hidden>
+          <div className="h-full bg-marina transition-[width] duration-300 dark:bg-marina-light" style={{ width: `${progress}%` }} />
+        </div>
       </header>
 
       <article className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
@@ -134,11 +164,21 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
         <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
           {showEn && enTitle ? enTitle : letter.title.ta}
         </h1>
-        {letter.date && (
-          <p className="mt-2 text-xs text-ink/50 dark:text-night-text/50">
-            {ta ? "நாள்" : "Dated"} {formatDate(letter.date)}
-          </p>
-        )}
+        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink/50 dark:text-night-text/50">
+          {letter.date && <span>{ta ? "நாள்" : "Dated"} {formatDate(letter.date)}</span>}
+          {readMins !== null && (
+            <span className="inline-flex items-center gap-1.5">
+              <Clock className="h-3.5 w-3.5" aria-hidden />
+              {ta ? `சுமார் ${readMins} நிமிட வாசிப்பு` : `~${readMins} min read`}
+            </span>
+          )}
+          {isRead && (
+            <span className="inline-flex items-center gap-1 text-marina dark:text-marina-light">
+              <CheckCircle2 className="h-3.5 w-3.5" aria-hidden />
+              {ta ? "வாசித்தது" : "read"}
+            </span>
+          )}
+        </div>
 
         <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
           <ShareButtons title={`${letter.title.ta} · முரசொலி`} path={`/murasoli/${letter.id}`} />
@@ -187,12 +227,32 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
           </p>
         )}
 
+        {/* In-letter jump list for long letters (Tamil view only; mechanical labels) */}
+        {!showEn && paras && paras.length > 12 && (
+          <details className="not-prose mt-6 rounded-xl border border-ink/10 bg-white/60 p-4 text-sm dark:border-white/10 dark:bg-night-surface/60" data-print="hide">
+            <summary className="focus-ring inline-flex cursor-pointer items-center gap-2 text-marina dark:text-marina-light">
+              <ListOrdered className="h-4 w-4" aria-hidden />
+              {ta ? `பத்திகள் (${paras.length}) — நேரடிச் செல்ல` : `Paragraphs (${paras.length}) — jump to`}
+            </summary>
+            <ol className="mt-3 grid max-w-full gap-1 overflow-hidden sm:grid-cols-2">
+              {paras.map((p, i) => (
+                <li key={i} className="min-w-0">
+                  <a href={`#mu-para-${i}`} className="focus-ring block max-w-full truncate rounded px-1 py-0.5 font-tamil text-ink/70 hover:text-marina dark:text-night-text/70" lang="ta">
+                    <span className="mr-1.5 font-mono text-[10px] text-ink/35 dark:text-night-text/35">{i + 1}</span>
+                    {p.split(/\s+/).slice(0, 7).join(" ")}…
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </details>
+        )}
+
         <div className={cn("mt-8 space-y-5 leading-loose text-ink/90 dark:text-night-text/90", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
           {!paras && !error && <p className="text-sm text-ink/50 dark:text-night-text/50">{ta ? "கடிதம் ஏற்றப்படுகிறது…" : "Loading the letter…"}</p>}
           {error && <p className="text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்தக் கடிதத்தை ஏற்ற முடியவில்லை." : "This letter could not be loaded."}</p>}
           {!showEn && paras && salutation && <p className="font-medium text-marina dark:text-marina-light">{salutation}</p>}
           {showEn && enParas && <p className="font-medium text-marina dark:text-marina-light">{enSalutation ?? "Udanpirappē,"}</p>}
-          {(showEn && enParas ? enParas : paras)?.map((p, i) => <p key={i}>{highlight(p)}</p>)}
+          {displayParas?.map((p, i) => <p key={i} id={showEn ? undefined : `mu-para-${i}`} className={showEn ? undefined : "scroll-mt-28"}>{highlight(p)}</p>)}
           {paras && (
             <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
               {ta
@@ -230,7 +290,29 @@ export default function MurasoliLetterReader({ letter, prev, next, sourceUrl }: 
             </Link>
           ) : <span />}
         </nav>
+
+        {alsoInVolume.length > 0 && (
+          <section className="mt-10" aria-label={ta ? "இந்தத் தொகுதியில் மேலும்" : "Also in this volume"}>
+            <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-brass">
+              {ta ? `தொகுதி ${letter.volume}-இல் மேலும் கடிதங்கள்` : `More in Volume ${letter.volume}`}
+            </h2>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-3">
+              {alsoInVolume.map((l) => (
+                <li key={l.id}>
+                  <Link href={`/murasoli/${l.id}`} className="focus-ring block rounded-xl border border-ink/10 p-3 transition hover:border-marina/50 dark:border-white/10">
+                    <span className="block text-[10px] text-ink/40 dark:text-night-text/40">
+                      {l.number != null ? (ta ? `கடிதம் ${l.number}` : `Letter ${l.number}`) : `Vol ${l.volume}`}
+                      {l.date ? ` · ${formatDate(l.date)}` : ""}
+                    </span>
+                    <span className="mt-0.5 block truncate font-tamil text-sm text-marina dark:text-marina-light" lang="ta">{l.title.ta}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </article>
+      <ShareQuote title={letter.title.ta} refLabel={letter.number != null ? (ta ? `கடிதம் ${letter.number}` : `Letter ${letter.number}`) : `முரசொலி · தொகுதி ${letter.volume}`} />
     </div>
   );
 }

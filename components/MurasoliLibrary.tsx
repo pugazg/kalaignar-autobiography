@@ -20,6 +20,9 @@ export default function MurasoliLibrary() {
   const [letters, setLetters] = useState<MurasoliLettersIndex | null>(null);
   const [open, setOpen] = useState<number | null>(null);
   const [query, setQuery] = useState("");
+  // "Your shelf": letters read + last read (per-device), mirroring /read.
+  const [read, setRead] = useState<string[]>([]);
+  const [last, setLast] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/data/murasoli/index.json")
@@ -33,11 +36,22 @@ export default function MurasoliLibrary() {
       .then((r) => (r.ok ? r.json() : null))
       .then((d: MurasoliLettersIndex | null) => setLetters(d))
       .catch(() => setLetters(null));
+    try {
+      setRead(JSON.parse(localStorage.getItem("mu:read") || "[]"));
+      setLast(localStorage.getItem("mu:last"));
+    } catch {}
   }, []);
 
   const q = query.trim().toLowerCase();
   const label = (t: { en: string; ta: string }) => (ta ? t.ta : t.en);
   const totalLetters = letters?.volumes.reduce((n, v) => n + v.letterCount, 0) ?? 0;
+
+  // Resolve saved letter ids to titles for the shelf.
+  const letterById = new Map(
+    (letters?.volumes ?? []).flatMap((v) => v.letters.map((l) => [l.id, { ...l, volume: v.volume }] as const)),
+  );
+  const lastLetter = last ? letterById.get(last) : null;
+  const readCount = read.filter((id) => letterById.has(id)).length;
 
   // Derive the "what's available" copy from the data so it never goes stale as
   // volumes arrive. Letter-volumes (empty `pages`) carry full English; the
@@ -102,6 +116,37 @@ export default function MurasoliLibrary() {
           </p>
         ) : (
           <>
+            {(lastLetter || readCount > 0) && (
+              <section aria-label={ta ? "உங்கள் அலமாரி" : "Your shelf"} className="mb-6 rounded-2xl border border-marina/30 bg-marina/[0.06] p-4">
+                {readCount > 0 && (
+                  <div className="mb-2">
+                    <p className="mb-1 text-sm text-ink/55 dark:text-night-text/55">
+                      {ta ? `${readCount} / ${totalLetters} கடிதங்கள் வாசித்தவை` : `${readCount} of ${totalLetters} letters read`}
+                    </p>
+                    <div
+                      className="h-1.5 w-full max-w-xs overflow-hidden rounded-full bg-ink/10 dark:bg-white/10"
+                      role="progressbar"
+                      aria-valuenow={readCount}
+                      aria-valuemin={0}
+                      aria-valuemax={totalLetters}
+                      aria-label={ta ? "வாசித்த கடிதங்கள்" : "Letters read"}
+                    >
+                      <div className="h-full rounded-full bg-brass" style={{ width: `${totalLetters ? (readCount / totalLetters) * 100 : 0}%` }} />
+                    </div>
+                  </div>
+                )}
+                {lastLetter && (
+                  <p className="text-sm">
+                    <span className="text-ink/55 dark:text-night-text/55">{ta ? "தொடர்ந்து வாசி" : "Continue reading"} · </span>
+                    <Link href={`/murasoli/${lastLetter.id}`} className="focus-ring font-tamil text-marina underline-offset-2 hover:underline dark:text-marina-light" lang="ta">
+                      {lastLetter.title.ta}
+                    </Link>
+                    <span className="text-ink/45 dark:text-night-text/45"> ({ta ? `தொகுதி ${lastLetter.volume}` : `Vol ${lastLetter.volume}`})</span>
+                  </p>
+                )}
+              </section>
+            )}
+
             <div className="mb-6 flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-4 py-2.5 dark:border-white/15 dark:bg-night-surface/70" data-print="hide">
               <Search className="h-4 w-4 shrink-0 text-ink/40 dark:text-night-text/40" aria-hidden />
               <input

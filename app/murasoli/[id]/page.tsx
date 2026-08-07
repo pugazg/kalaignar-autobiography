@@ -36,11 +36,17 @@ export default function MurasoliRoute({ params }: { params: { id: string } }) {
     if (li !== -1) {
       const pageIdx = loadIndex();
       const sourceUrl = pageIdx?.volumes.find((v) => v.volume === flat[li].volume)?.sourceUrl;
+      // Three more letters from the same volume (following this one, wrapping).
+      const inVol = flat.filter((l) => l.volume === flat[li].volume);
+      const vi = inVol.findIndex((l) => l.id === flat[li].id);
+      const alsoInVolume =
+        vi === -1 ? [] : [1, 2, 3].map((k) => inVol[(vi + k) % inVol.length]).filter((l) => l.id !== flat[li].id);
       return (
         <MurasoliLetterReader
           letter={flat[li]}
           prev={li > 0 ? flat[li - 1] : null}
           next={li < flat.length - 1 ? flat[li + 1] : null}
+          alsoInVolume={alsoInVolume}
           sourceUrl={sourceUrl}
         />
       );
