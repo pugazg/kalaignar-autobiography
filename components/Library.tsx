@@ -1,6 +1,6 @@
 "use client";
 
-import { Bookmark, ChevronDown, FileSearch, Home, Search } from "lucide-react";
+import { BookText, Bookmark, ChevronDown, FileSearch, Flower2, Home, Mail, Search } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { chapterIndex, volumeMeta } from "@/data/references";
@@ -79,6 +79,13 @@ export default function Library() {
   }, [mode, query, volFilter]);
 
   const [read, setRead] = useState<string[]>([]);
+  // Live counts for the sibling collections' cards (kept fresh from their own
+  // data, so the Murasoli count tracks as volumes are added). Stored raw and
+  // formatted at render so a language toggle re-localises them.
+  const [sibling, setSibling] = useState<{
+    murasoli?: { volumeCount: number; letters: number };
+    tholkappiyam?: { malarCount: number; sutraCount: number };
+  }>({});
 
   useEffect(() => {
     try {
@@ -88,8 +95,28 @@ export default function Library() {
     } catch {}
   }, []);
 
+  useEffect(() => {
+    fetch("/data/murasoli/letters-index.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!d) return;
+        const vols = d.volumes ?? [];
+        const letters = vols.reduce((n: number, v: { letterCount: number }) => n + v.letterCount, 0);
+        setSibling((s) => ({ ...s, murasoli: { volumeCount: vols.length, letters } }));
+      })
+      .catch(() => {});
+    fetch("/data/tholkappiyam/index.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!d) return;
+        setSibling((s) => ({ ...s, tholkappiyam: { malarCount: d.malarCount, sutraCount: d.sutraCount } }));
+      })
+      .catch(() => {});
+  }, []);
+
   const byId = new Map(chapterIndex.map((c) => [c.id, c]));
   const lastCh = last ? byId.get(last) : null;
+  const totalPages = volumeMeta.reduce((n, v) => n + v.pages, 0);
 
   // Client-side filter: keyword-in-title (Tamil or id) + volume. No theme/year
   // here on purpose — theme discovery lives in the "Find by theme" section, and
@@ -102,41 +129,121 @@ export default function Library() {
   const filtered = chapterIndex.filter(matches);
   const taHint = q.length > 1 && hasLatin(query) ? transliterate(query.trim()) : null;
 
+  // The three Reading Room collections, presented as peers so Murasoli and
+  // Tholkappiya Poonga aren't buried — the memoir is the one you're reading here.
+  const ta = lang === "ta";
+  const accentCls = {
+    marina: { border: "border-marina/30 hover:border-marina/60", icon: "text-marina dark:text-marina-light", title: "group-hover:text-marina dark:group-hover:text-marina-light", bg: "bg-marina/[0.06] dark:bg-marina/10" },
+    brass: { border: "border-brass/30 hover:border-brass/60", icon: "text-brass", title: "group-hover:text-brass", bg: "bg-brass/[0.06] dark:bg-brass/10" },
+  };
+  const collections = [
+    {
+      key: "memoir", href: null as string | null, current: true, Icon: BookText, accent: "marina" as const,
+      title: "நெஞ்சுக்கு நீதி", en: "Nenjukku Neethi",
+      desc: ta ? "கலைஞரின் நினைவுக் குறிப்புகள்" : "The memoir",
+      stat: ta ? `${chapterIndex.length} அத்தியாயங்கள்` : `${chapterIndex.length} chapters`,
+    },
+    {
+      key: "murasoli", href: "/murasoli", current: false, Icon: Mail, accent: "marina" as const,
+      title: "முரசொலி கடிதங்கள்", en: "Murasoli — The Letters",
+      desc: ta ? "உடன்பிறப்புகளுக்கு எழுதிய கடிதங்கள்" : "Letters to udanpirappukkal",
+      stat: sibling.murasoli ? (ta ? `${sibling.murasoli.volumeCount} தொகுதி · ${sibling.murasoli.letters} கடிதங்கள்` : `${sibling.murasoli.volumeCount} volumes · ${sibling.murasoli.letters} letters`) : "",
+    },
+    {
+      key: "tholkappiyam", href: "/tholkappiyam", current: false, Icon: Flower2, accent: "brass" as const,
+      title: "தொல்காப்பியப் பூங்கா", en: "Tholkappiya Poonga",
+      desc: ta ? "கலைஞரின் தொல்காப்பிய உரை" : "Kalaignar's Tolkāppiyam commentary",
+      stat: sibling.tholkappiyam ? (ta ? `${sibling.tholkappiyam.malarCount} மலர் · ${sibling.tholkappiyam.sutraCount} நூற்பா` : `${sibling.tholkappiyam.malarCount} blossoms · ${sibling.tholkappiyam.sutraCount} sutras`) : "",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
       <header className="border-b border-ink/10 bg-mist/40 dark:border-white/10 dark:bg-night-surface/40">
         <div className="mx-auto max-w-3xl px-5 py-12 sm:px-6">
           <Link href="/" className="focus-ring inline-flex items-center gap-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60">
-            <Home className="h-3.5 w-3.5" aria-hidden /> Kalaignar Digital Library
+            <Home className="h-3.5 w-3.5" aria-hidden /> {lang === "ta" ? "கலைஞர் நூலகம்" : "Kalaignar Digital Library"}
           </Link>
           <p className="mt-5 font-tamil text-2xl text-marina/80 dark:text-marina-light/80" lang="ta">
             நெஞ்சுக்கு நீதி
           </p>
           <h1 className="mt-2 font-display text-4xl font-medium tracking-tight">{lang === "ta" ? chromeTa.readingRoom : "The Reading Room"}</h1>
-          <p className="mt-3 max-w-xl text-sm text-ink/65 dark:text-night-text/65">
-            The complete memoir in its original Tamil — six volumes, 391 chapters, 4,234 pages of
-            uncorrected OCR text, each chapter a citable unit of the archive.
+          <p className="mt-3 max-w-xl text-sm text-ink/65 dark:text-night-text/65" lang={lang}>
+            {lang === "ta"
+              ? "மூல தமிழில் முழு நினைவுக் குறிப்பு — ஆறு தொகுதிகள், 391 அத்தியாயங்கள், 4,234 பக்கங்கள் திருத்தப்படாத OCR உரை; ஒவ்வொரு அத்தியாயமும் மேற்கோளிடத்தக்க ஓர் ஆவண அலகு."
+              : "The complete memoir in its original Tamil — six volumes, 391 chapters, 4,234 pages of uncorrected OCR text, each chapter a citable unit of the archive."}
           </p>
-          <div className="mt-4 flex flex-col gap-1.5">
-            <Link href="/murasoli" className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-marina underline-offset-2 hover:underline dark:text-marina-light">
-              {lang === "ta" ? "முரசொலி கடிதத் தொகுப்பையும் பார்க்கவும் →" : "Also explore the Murasoli letters collection →"}
-            </Link>
-            <Link href="/tholkappiyam" className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-brass underline-offset-2 hover:underline">
-              {lang === "ta" ? "தொல்காப்பியப் பூங்கா — கலைஞரின் உரையையும் பார்க்கவும் →" : "Also explore Tholkappiya Poonga — Kalaignar's Tolkāppiyam commentary →"}
-            </Link>
+          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink/55 dark:text-night-text/55">
+            {[
+              [`${volumeMeta.length}`, lang === "ta" ? chromeTa.vol : "volumes"],
+              [`${chapterIndex.length}`, lang === "ta" ? chromeTa.chapters : "chapters"],
+              [totalPages.toLocaleString(), lang === "ta" ? chromeTa.pages : "pages"],
+            ].map(([n, l]) => (
+              <span key={l}>
+                <span className="font-semibold text-ink/80 dark:text-night-text/80">{n}</span> {l}
+              </span>
+            ))}
           </div>
         </div>
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
+        {/* The three Reading Room collections as peers */}
+        <section aria-labelledby="collections-h" className="mb-8">
+          <h2 id="collections-h" className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">
+            {ta ? "வாசிப்பு அறையின் தொகுப்புகள்" : "Collections in the Reading Room"}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {collections.map((c) => {
+              const a = accentCls[c.accent];
+              const inner = (
+                <>
+                  <c.Icon className={cn("h-5 w-5 shrink-0", a.icon)} aria-hidden />
+                  <span className="mt-2 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                    <span className={cn("font-tamil text-[15px] font-medium", c.href && a.title)} lang="ta">{c.title}</span>
+                    {c.current && (
+                      <span className="rounded-full bg-marina/15 px-2 py-0.5 text-[10px] font-medium text-marina dark:text-marina-light">
+                        {ta ? "நீங்கள் இங்கே" : "You're here"}
+                      </span>
+                    )}
+                  </span>
+                  <span className="mt-0.5 text-xs leading-snug text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : undefined}>{c.desc}</span>
+                  {c.stat && <span className="mt-2 text-[11px] tabular-nums text-ink/45 dark:text-night-text/45" lang={ta ? "ta" : undefined}>{c.stat}</span>}
+                </>
+              );
+              return c.href ? (
+                <Link key={c.key} href={c.href} className={cn("focus-ring group flex flex-col rounded-2xl border bg-white/60 p-4 transition dark:bg-night-surface/60", a.border)}>
+                  {inner}
+                </Link>
+              ) : (
+                <div key={c.key} aria-current="page" className={cn("flex flex-col rounded-2xl border p-4", a.border.split(" ")[0], a.bg)}>
+                  {inner}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
         {(lastCh || marks.length > 0 || read.length > 0) && (
-          <section aria-label="Your shelf" className="mb-8 rounded-2xl border border-brass/30 bg-brass/[0.06] p-4">
+          <section aria-label={ta ? "உங்கள் அலமாரி" : "Your shelf"} className="mb-8 rounded-2xl border border-brass/30 bg-brass/[0.06] p-4">
             {read.length > 0 && (
-              <p className="mb-1 text-sm text-ink/55 dark:text-night-text/55">
-                {lang === "ta"
-                  ? `${read.length} / ${chapterIndex.length} அத்தியாயங்கள் வாசித்தவை`
-                  : `${read.length} of ${chapterIndex.length} chapters read`}
-              </p>
+              <div className="mb-2">
+                <p className="mb-1 text-sm text-ink/55 dark:text-night-text/55">
+                  {lang === "ta"
+                    ? `${read.length} / ${chapterIndex.length} அத்தியாயங்கள் வாசித்தவை`
+                    : `${read.length} of ${chapterIndex.length} chapters read`}
+                </p>
+                <div
+                  className="h-1.5 w-full max-w-xs overflow-hidden rounded-full bg-ink/10 dark:bg-white/10"
+                  role="progressbar"
+                  aria-valuenow={read.length}
+                  aria-valuemin={0}
+                  aria-valuemax={chapterIndex.length}
+                  aria-label={ta ? "வாசித்த அத்தியாயங்கள்" : "Chapters read"}
+                >
+                  <div className="h-full rounded-full bg-brass" style={{ width: `${(read.length / chapterIndex.length) * 100}%` }} />
+                </div>
+              </div>
             )}
             {lastCh && (
               <p className="text-sm">
@@ -165,7 +272,7 @@ export default function Library() {
           </section>
         )}
 
-        <div className="mb-6" data-print="hide">
+        <div className="sticky top-0 z-20 -mx-5 mb-6 border-b border-ink/8 bg-paper/90 px-5 pb-3 pt-3 backdrop-blur dark:border-white/8 dark:bg-night/90 sm:-mx-6 sm:px-6" data-print="hide">
           <div className="flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-4 py-2.5 dark:border-white/15 dark:bg-night-surface/70">
             <Search className="h-4 w-4 shrink-0 text-ink/40 dark:text-night-text/40" aria-hidden />
             <input
@@ -333,7 +440,7 @@ export default function Library() {
                     </p>
                     <p className="text-xs text-ink/55 dark:text-night-text/55">
                       {v.chapters} {lang === "ta" ? chromeTa.chapters : "chapters"} · {v.pages} {lang === "ta" ? chromeTa.pages : "pages"}
-                      {"serialisedIn" in v && v.serialisedIn ? ` · first serialised in ${v.serialisedIn}` : ""}
+                      {"serialisedIn" in v && v.serialisedIn ? (ta ? ` · முதலில் ${v.serialisedIn} இதழில் தொடராக` : ` · first serialised in ${v.serialisedIn}`) : ""}
                     </p>
                   </div>
                   <ChevronDown className={cn("h-4 w-4 shrink-0 text-ink/40 transition-transform dark:text-night-text/40", isOpen && "rotate-180")} aria-hidden />

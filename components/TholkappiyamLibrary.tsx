@@ -274,6 +274,7 @@ export default function TholkappiyamLibrary() {
                   <button
                     onClick={() => toggleSection(a.key)}
                     aria-expanded={isOpen}
+                    aria-label={ta ? `${a.ta} பிரிவு — ${rows.length} இல் ${done} வாசித்தது` : `${a.en} section — ${done} of ${rows.length} read`}
                     className="focus-ring flex w-full items-center gap-3 bg-white/40 px-4 py-3 text-left transition hover:bg-brass/[0.05] dark:bg-night-surface/40"
                   >
                     <ChevronDown className={cn("h-4 w-4 shrink-0 text-brass transition-transform", !isOpen && "-rotate-90")} aria-hidden />

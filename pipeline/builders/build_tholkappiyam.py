@@ -242,6 +242,13 @@ def main():
         })
 
     malar_count = sum(1 for e in index_malars if e["kind"] == "malar")
+    # Durability net: every malar — including interludes like malar 24
+    # (இடையில் ஓர் எளிய விளக்கம்?) — must declare an அதிகாரம் in its chapter
+    # README. A malar with no அதிகாரம் silently drops out of the adhikāram
+    # filters and the segmented progress (the counts stop summing to malarCount).
+    # If this warns, add the அதிகாரம் line back upstream rather than muting it.
+    uncategorised = [e["id"] for e in index_malars
+                     if e["kind"] == "malar" and not e["adhikaram"]]
     # நூற்பா numbering restarts in each அதிகாரம், so a "sutra discussed" is an
     # (adhikāram, number) pair — summing the per-book unique counts is exact.
     total_sutras = sum(a["sutraCount"] for a in adhik_summary)
@@ -269,6 +276,10 @@ def main():
           f"({malar_count} malars + {len(entries)-malar_count} intro), {total_sutras} sutras discussed.")
     for a in adhik_summary:
         print(f"  {a['ta']}: {a['malarCount']} malars · {a['sutraCount']} sutras")
+    if uncategorised:
+        print(f"  ! WARNING: {len(uncategorised)} malar(s) have no அதிகாரம் and will be "
+              f"missing from the adhikāram filters + segmented progress: {uncategorised}. "
+              f"Add the 'அதிகாரம்:' line to their chapter README in {SOURCE_REPO} (see malar 24).")
     if dup_ids:
         print(f"  ! skipped duplicate source dirs: {dup_ids} (flag for cleanup in {SOURCE_REPO})")
     if _BAD_UTF8:
