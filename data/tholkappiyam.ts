@@ -47,6 +47,8 @@ export type TpIndex = {
   malarCount: number;
   sutraCount: number;
   malars: TpMalarMeta[];
+  // Present when the separately-published English translation has been onboarded.
+  english?: { work: string; translator: string; blossomCount: number };
 };
 
 export type TpMalarText = TpMalarMeta & { paragraphs: string[]; textUrl?: string };

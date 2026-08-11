@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { BookOpen, ChevronDown, Flower2, Home, Search, Sparkles } from "lucide-react";
+import { BookOpen, ChevronDown, Flower2, Home, Languages, Search, Sparkles } from "lucide-react";
 import type { TpIndex, TpMalarMeta } from "@/data/tholkappiyam";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -157,6 +157,15 @@ export default function TholkappiyamLibrary() {
                 </span>
               ))}
             </div>
+          )}
+
+          {idx?.english && (
+            <p className="mt-3 inline-flex flex-wrap items-center gap-1.5 rounded-full border border-brass/30 bg-brass/[0.06] px-3 py-1 text-xs text-ink/70 dark:text-night-text/70">
+              <Languages className="h-3.5 w-3.5 text-brass" aria-hidden />
+              {ta
+                ? `${idx.english.blossomCount} மலர்களும் ஆங்கிலத்திலும் — ஒவ்வொரு மலரிலும் தமிழ்/English மாற்றி`
+                : `All ${idx.english.blossomCount} blossoms now in English too — toggle Tamil/English in any blossom`}
+            </p>
           )}
         </div>
       </header>

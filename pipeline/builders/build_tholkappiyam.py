@@ -24,6 +24,10 @@ from pathlib import Path
 SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/tp")
 OUT = Path(__file__).resolve().parents[2] / "public" / "data" / "tholkappiyam"
 SOURCE_REPO = "https://github.com/pugazg/tolkappiyap-poonga"
+# The separately-published English edition transcribed under english-translation/.
+EN_SRC = SRC / "english-translation"
+EN_WORK_TITLE = "The Flower-garden of Tolkāppiyam"
+EN_TRANSLATOR = "G. Thiruvasagam"
 _SENTENCE_END = re.compile(r"[.!?…”\"’')\]।]$")
 # The final malar's pages run into the book's back-matter (a composition-date
 # colophon + a catalogue of Kalaignar's other works). That is not commentary —
@@ -193,6 +197,71 @@ def build_entry(cdir: Path) -> dict | None:
     }
 
 
+# ── English: the separately-published translation (The Flower-garden of
+# Tolkāppiyam, tr. G. Thiruvasagam). 100 Blossoms, one chapter README each,
+# body assembled from english-translation/pages/<scan>.md. Maps blossom N to the
+# same tp-m{N} id the Tamil malar uses so the reader can offer an En/Ta toggle.
+_EN_HEADING = re.compile(r"^#\s+Blossom\s+(\d+)\s*[—–-]\s*(.+)$", re.M)
+_EN_SCAN = re.compile(r"Scan range:\s*\*\*\s*(\d+)\s*(?:[–-]\s*(\d+))?\s*\*\*")
+
+
+def assemble_english(scan_start: int, scan_end: int) -> list[str]:
+    bodies = []
+    for pg in range(scan_start, scan_end + 1):
+        f = EN_SRC / "pages" / f"{pg:04d}.md"
+        if not f.exists():
+            continue
+        fm, body = strip_frontmatter(read(f))
+        if fm.get("page_type", "text") != "text":
+            continue  # skip cover/blank/title/copyright scans
+        bodies.append(body)
+    return page_paragraphs(bodies)  # reuse: drops "# Blossom" headings, HTML markers, separators
+
+
+def build_english() -> int:
+    if not (EN_SRC / "chapters").exists():
+        return 0
+    (OUT / "text-en").mkdir(parents=True, exist_ok=True)
+    count = 0
+    for cdir in sorted((EN_SRC / "chapters").glob("*")):
+        readme_p = cdir / "README.md"
+        if not cdir.is_dir() or not readme_p.exists():
+            continue
+        readme = read(readme_p)
+        hm = _EN_HEADING.search(readme)
+        sr = _EN_SCAN.search(readme)
+        if not hm or not sr:
+            continue
+        number = int(hm.group(1))
+        title = hm.group(2).strip()
+        ss, se = int(sr.group(1)), int(sr.group(2) or sr.group(1))
+        paras = assemble_english(ss, se)
+        if not paras:
+            print(f"  ! English blossom {number}: no text assembled (scans {ss}-{se})")
+            continue
+        entry_id = f"tp-m{number:02d}"
+        (OUT / "text-en" / f"{entry_id}.json").write_text(
+            json.dumps(
+                {
+                    "id": entry_id,
+                    "lang": "en",
+                    "title": title,
+                    "paragraphs": paras,
+                    "provenance": {
+                        "status": "published-translation",
+                        "work": EN_WORK_TITLE,
+                        "translator": EN_TRANSLATOR,
+                    },
+                },
+                ensure_ascii=False,
+                indent=1,
+            ),
+            encoding="utf-8",
+        )
+        count += 1
+    return count
+
+
 def main():
     (OUT / "text").mkdir(parents=True, exist_ok=True)
 
@@ -253,6 +322,9 @@ def main():
     # (adhikāram, number) pair — summing the per-book unique counts is exact.
     total_sutras = sum(a["sutraCount"] for a in adhik_summary)
 
+    # English translation layer (separate published edition) → text-en/*.json.
+    en_count = build_english()
+
     index = {
         "collection": "tholkappiya-poonga",
         "title": {"ta": "தொல்காப்பியப் பூங்கா", "en": "Tholkappiya Poonga"},
@@ -269,6 +341,12 @@ def main():
         "sutraCount": total_sutras,
         "malars": index_malars,
     }
+    if en_count:
+        index["english"] = {
+            "work": EN_WORK_TITLE,
+            "translator": EN_TRANSLATOR,
+            "blossomCount": en_count,
+        }
     (OUT / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "fulltext.json").write_text(json.dumps(fulltext, ensure_ascii=False), encoding="utf-8")
 
@@ -276,6 +354,7 @@ def main():
           f"({malar_count} malars + {len(entries)-malar_count} intro), {total_sutras} sutras discussed.")
     for a in adhik_summary:
         print(f"  {a['ta']}: {a['malarCount']} malars · {a['sutraCount']} sutras")
+    print(f"  English: {en_count} blossom translations (text-en/) — {EN_WORK_TITLE}, tr. {EN_TRANSLATOR}.")
     if uncategorised:
         print(f"  ! WARNING: {len(uncategorised)} malar(s) have no அதிகாரம் and will be "
               f"missing from the adhikāram filters + segmented progress: {uncategorised}. "

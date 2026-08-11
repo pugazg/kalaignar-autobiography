@@ -37,15 +37,36 @@ export default function TholkappiyamReader({ malar, prev, next, alsoInAdhikaram,
   const [error, setError] = useState(false);
   const [font, setFont] = useState(1);
   const [find, setFind] = useState("");
+  // English: the separately-published translation (The Flower-garden of
+  // Tolkāppiyam, tr. G. Thiruvasagam). Present for the 100 blossoms; Tamil stays
+  // authoritative. The two intro pieces have no English.
+  const [enParas, setEnParas] = useState<string[] | null>(null);
+  const [enTitle, setEnTitle] = useState<string | null>(null);
+  const [enCredit, setEnCredit] = useState<{ work?: string; translator?: string }>({});
+  const [showEn, setShowEn] = useState(false);
 
   useEffect(() => {
     setParas(null);
     setError(false);
+    setEnParas(null);
+    setShowEn(false);
     fetch(`/data/tholkappiyam/text/${malar.id}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d) => setParas(d.paragraphs ?? []))
       .catch(() => setError(true));
+    fetch(`/data/tholkappiyam/text-en/${malar.id}.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (d?.paragraphs?.length) {
+          setEnParas(d.paragraphs);
+          setEnTitle(d.title ?? null);
+          setEnCredit({ work: d.provenance?.work, translator: d.provenance?.translator });
+        }
+      })
+      .catch(() => {});
   }, [malar.id]);
+
+  const displayParas = showEn && enParas ? enParas : paras;
 
   // Shared reading behaviour: scroll progress, position restore, mark-as-read
   // (auto at ~95% + manual toggle), and recording this as the resume point.
@@ -129,8 +150,8 @@ export default function TholkappiyamReader({ malar, prev, next, alsoInAdhikaram,
           <Flower2 className="h-3.5 w-3.5" aria-hidden />
           {isMalar ? (ta ? `மலர் ${malar.number}` : `Blossom ${malar.number}`) : (ta ? "பூங்கா நடைபாதை" : "Enter the garden")}
         </p>
-        <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
-          {malar.title.ta}
+        <h1 className={cn("mt-3 text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl", showEn && enTitle ? "font-display" : "font-tamil")} lang={showEn && enTitle ? "en" : "ta"}>
+          {showEn && enTitle ? enTitle : malar.title.ta}
         </h1>
         {readMins !== null && (
           <p className="mt-2 inline-flex items-center gap-1.5 text-xs text-ink/50 dark:text-night-text/50">
@@ -147,7 +168,34 @@ export default function TholkappiyamReader({ malar, prev, next, alsoInAdhikaram,
 
         <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
           <ShareButtons title={`${malar.title.ta} · தொல்காப்பியப் பூங்கா`} path={`/tholkappiyam/${malar.id}`} />
+          {enParas && (
+            <div className="inline-flex overflow-hidden rounded-full border border-brass/40 text-xs font-medium">
+              <button
+                onClick={() => setShowEn(false)}
+                className={cn("focus-ring px-3 py-1 transition", !showEn ? "bg-brass text-paper" : "text-brass hover:bg-brass/10")}
+                aria-pressed={!showEn}
+              >
+                தமிழ்
+              </button>
+              <button
+                onClick={() => setShowEn(true)}
+                className={cn("focus-ring px-3 py-1 transition", showEn ? "bg-brass text-paper" : "text-brass hover:bg-brass/10")}
+                aria-pressed={showEn}
+              >
+                English
+              </button>
+            </div>
+          )}
         </div>
+
+        {showEn && enParas && (
+          <p className="mt-4 rounded-xl border border-dashed border-brass/50 bg-brass/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
+            {ta ? "இது ஒரு தனி வெளியீட்டு ஆங்கில மொழிபெயர்ப்பு" : "This is a separately-published English translation"}
+            {enCredit.work ? ` — ${enCredit.work}` : ""}{enCredit.translator ? `, ${ta ? "மொழிபெயர்ப்பு" : "tr."} ${enCredit.translator}` : ""}
+            {". "}
+            {ta ? "தமிழ் மூலமே சான்றுநிலை." : "The Tamil original is authoritative."}
+          </p>
+        )}
 
         {/* நூற்பா reference block — clearly the Tolkāppiyam source Kalaignar comments on,
             visually distinct (brass rule) from his commentary below. */}
@@ -173,7 +221,7 @@ export default function TholkappiyamReader({ malar, prev, next, alsoInAdhikaram,
         )}
 
         {/* In-blossom jump list for long commentaries (mechanical, first-words labels) */}
-        {paras && paras.length > 12 && (
+        {!showEn && paras && paras.length > 12 && (
           <details className="not-prose mt-8 rounded-xl border border-ink/10 bg-white/60 p-4 text-sm dark:border-white/10 dark:bg-night-surface/60" data-print="hide">
             <summary className="focus-ring inline-flex cursor-pointer items-center gap-2 text-brass">
               <ListOrdered className="h-4 w-4" aria-hidden />
@@ -192,11 +240,11 @@ export default function TholkappiyamReader({ malar, prev, next, alsoInAdhikaram,
           </details>
         )}
 
-        {/* Kalaignar's commentary */}
-        <div className={cn("mt-8 space-y-5 font-tamil leading-loose text-ink/90 dark:text-night-text/90", sizes[font])} lang="ta">
+        {/* Kalaignar's commentary (Tamil) / its published English translation */}
+        <div className={cn("mt-8 space-y-5 leading-loose text-ink/90 dark:text-night-text/90", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
           {!paras && !error && <p className="text-sm text-ink/50 dark:text-night-text/50">{ta ? "மலர் ஏற்றப்படுகிறது…" : "Opening the blossom…"}</p>}
           {error && <p className="text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்த மலரை ஏற்ற முடியவில்லை." : "This blossom could not be loaded."}</p>}
-          {paras?.map((p, i) => <p key={i} id={`tp-para-${i}`} className="scroll-mt-28">{highlight(p)}</p>)}
+          {displayParas?.map((p, i) => <p key={i} id={showEn ? undefined : `tp-para-${i}`} className={showEn ? undefined : "scroll-mt-28"}>{highlight(p)}</p>)}
         </div>
 
         {/* Cross-links to Kalaignar's other works */}
