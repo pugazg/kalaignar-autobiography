@@ -1,4 +1,8 @@
-import * as FileSystem from "expo-file-system";
+// SDK 54 redesigned expo-file-system to a File/Directory class API; the classic
+// functional API (documentDirectory, getInfoAsync, downloadAsync, …) is preserved
+// under /legacy. Kept as-is here to hold Increment-1 offline behaviour identical;
+// migrating to the new API is a separate future task.
+import * as FileSystem from "expo-file-system/legacy";
 import { MANIFEST_PATH, url } from "@/config/env";
 import { storage } from "./storage";
 import type {
