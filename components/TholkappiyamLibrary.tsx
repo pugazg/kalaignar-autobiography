@@ -39,7 +39,9 @@ export default function TholkappiyamLibrary() {
   // Which adhikāram sections are collapsed in the browse-all view (persisted).
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   // Full-text search: fetched lazily on first text query, cached for the session.
+  // Tamil commentary + (when present) the English translation are both searched.
   const [ft, setFt] = useState<FtEntry[] | null>(null);
+  const [ften, setFten] = useState<FtEntry[] | null>(null);
   const ftReq = useRef(false);
 
   useEffect(() => {
@@ -75,17 +77,23 @@ export default function TholkappiyamLibrary() {
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => setFt(d))
       .catch(() => {});
+    // English commentary bundle (only exists once the translation is onboarded).
+    fetch("/data/tholkappiyam/fulltext-en.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => setFten(d))
+      .catch(() => {});
   }, [q, sutraQuery, ft]);
 
   const malars = idx?.malars ?? [];
   const label = (t: { ta: string; en?: string }) => (ta ? t.ta : t.en ?? t.ta);
 
   const textHitIds = useMemo(() => {
-    if (!ft || q.length < 2 || sutraQuery !== null) return null;
+    if ((!ft && !ften) || q.length < 2 || sutraQuery !== null) return null;
     const ids = new Set<string>();
-    for (const e of ft) if (matchesQuery(e.x, q)) ids.add(e.i);
+    for (const e of ft ?? []) if (matchesQuery(e.x, q)) ids.add(e.i);
+    for (const e of ften ?? []) if (matchesQuery(e.t, q) || matchesQuery(e.x, q)) ids.add(e.i);
     return ids;
-  }, [ft, q, sutraQuery]);
+  }, [ft, ften, q, sutraQuery]);
 
   const visible = malars.filter((m) => {
     if (filter !== "all" && (m.kind !== "malar" || m.adhikaram?.key !== filter)) return false;

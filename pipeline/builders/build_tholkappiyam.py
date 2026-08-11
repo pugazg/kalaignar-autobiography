@@ -223,6 +223,7 @@ def build_english() -> int:
         return 0
     (OUT / "text-en").mkdir(parents=True, exist_ok=True)
     count = 0
+    fulltext_en = []  # [{i,t,x}] mirroring the Tamil fulltext.json, for English search
     for cdir in sorted((EN_SRC / "chapters").glob("*")):
         readme_p = cdir / "README.md"
         if not cdir.is_dir() or not readme_p.exists():
@@ -258,7 +259,10 @@ def build_english() -> int:
             ),
             encoding="utf-8",
         )
+        fulltext_en.append({"i": entry_id, "t": title, "x": " ".join(paras)})
         count += 1
+    if fulltext_en:
+        (OUT / "fulltext-en.json").write_text(json.dumps(fulltext_en, ensure_ascii=False), encoding="utf-8")
     return count
 
 
