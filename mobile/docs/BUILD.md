@@ -1,7 +1,11 @@
 # Build & run
 
-Expo SDK ~52 / React Native 0.76. Node ≥ 18 (tested on v22). No global `expo`
-needed — use `npx`.
+Expo SDK ~57 / React Native 0.86 / React 19.2.3. **Node ≥ 22.13** (required by
+SDK 57). No global `expo` needed — use `npx`. Install uses `.npmrc`
+(`legacy-peer-deps=true`) — RN's peer graph otherwise fails npm's ERESOLVE.
+
+> Upgraded from SDK 52 on the `mobile/expo-sdk-upgrade` branch (2026-08-11).
+> See **[Expo SDK 52 → 57 upgrade](#expo-sdk-52--57-upgrade-2026-08-11)** below.
 
 ## 1. Install
 
@@ -23,7 +27,7 @@ npx expo start          # Metro
 
 **Physical iPhone / Android:** use an Expo **development build**, not Expo Go. The
 App Store / Play Expo Go tracks a newer Expo SDK and may refuse to load this
-project (SDK ~52). Build a dev client once and install it on the device:
+project (SDK ~57). Build a dev client once and install it on the device:
 
 ```bash
 eas build --profile development --platform ios      # or: android
@@ -95,6 +99,61 @@ serve:
 - `https://nenjukkuneethi.org/.well-known/assetlinks.json`
 
 (See ROADMAP — not yet added to the site.)
+
+## Expo SDK 52 → 57 upgrade (2026-08-11)
+
+Done on branch `mobile/expo-sdk-upgrade` (branched from clean `main`), **one SDK
+major at a time** per Expo's guidance, running the full gate after every step
+(`expo install --fix` → `expo-doctor` → `typecheck` → `validate:manifest` →
+`expo export --platform ios`).
+
+| | before | after |
+|---|---|---|
+| Expo SDK | ~52.0 | ~57.0 |
+| React Native | 0.76.9 | 0.86.2 |
+| React | 18.3.1 | 19.2.3 |
+| Node (min) | 18 | **22.13** |
+
+Notable dependency bumps (via `expo install --fix`): `@react-native-async-storage/async-storage`
+1→2, `react-native-safe-area-context` 4→5, `expo-system-ui` 4→5, `@types/react`
+18→19, plus every `expo-*` package and React Navigation aligned to SDK 57.
+
+### Migration issues fixed (in commit order)
+- **`.npmrc` `legacy-peer-deps=true`** — RN's strict peer graph fails npm's
+  ERESOLVE otherwise; also keeps CI `npm ci` consistent.
+- **`expo-file-system/legacy`** — SDK 54 redesigned it to a `File`/`Directory`
+  class API. `src/data/client.ts` (the offline engine) imports the preserved
+  functional API from `/legacy`; behaviour is unchanged (a rewrite to the new
+  API is deliberately out of scope).
+- **`expo export --output-dir`** — SDK 53+ rejects paths outside the project;
+  the gate + CI now export to the gitignored `dist/`.
+- **`app.json` splash** — SDK 56 forbids the top-level `splash` key; moved into
+  the `expo-splash-screen` plugin config.
+- **`tsconfig.json`** — dropped the deprecated `baseUrl`; the `@/*` path is now
+  relative (`./src/*`).
+- **CI Node 20 → 22** (`.github/workflows/mobile-ci.yml`).
+- New Architecture is default-on from SDK 54; React 18→19 caused no type fallout.
+
+### The Xcode-26 `fmt`/`consteval` failure is GONE
+The whole point of the upgrade. The SDK-52 native build failed on Xcode 26 with
+`fmt`'s `consteval` error and needed a temporary local `fmt/base.h` patch (see
+git history of this file / the physical-device branch). **On SDK 57 the freshly
+prebuilt native project compiles cleanly on Xcode 26.6 with NO `fmt` patch and no
+manual `node_modules`/`Pods` edits** — verified by a full `npx expo run:ios`
+(prebuild → pod install → `Build Succeeded`), then run on an iOS 26 simulator.
+
+### Verification status
+- **Local gate (mirrors CI):** typecheck, `validate:manifest`, `expo-doctor`
+  (20/20), `expo export --platform ios` — all pass at SDK 57. GitHub Mobile CI
+  runs on PR/merge (not run yet — branch not merged).
+- **Simulator (iOS 26):** app launches and the core Increment-1 flows work —
+  Home, Library (6 volumes), chapter list, Reader (Tamil + inline illustration +
+  font controls + theme toggle), Search. **No fmt patch.**
+- **Physical device:** the SDK-52 smoke test passed on an iPhone 15 Pro (that run
+  needed the now-removed fmt patch + free-team signing tweaks in the gitignored
+  `ios/`). A **physical-device re-test on SDK 57 is pending** and is the merge gate
+  — steps are the standard `npx expo run:ios --device`, and no fmt patch should be
+  required this time.
 
 ## Notes
 
