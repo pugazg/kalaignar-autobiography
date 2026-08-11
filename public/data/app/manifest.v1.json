@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "20572249364a",
-  "generatedAt": "2026-08-06T06:30:57.662246+00:00",
+  "generatedAt": "2026-08-11T08:49:58.685234+00:00",
   "dataBase": "/data",
   "work": {
     "titleTa": "நெஞ்சுக்கு நீதி",
@@ -3611,8 +3611,8 @@
     "lettersIndexUrl": "/data/murasoli/letters-index.json",
     "letterUrlTemplate": "/data/murasoli/letters/{id}.json",
     "letterEnUrlTemplate": "/data/murasoli/letters-en/{id}.json",
-    "volumeCount": 6,
-    "totalLetters": 288
+    "volumeCount": 7,
+    "totalLetters": 346
   },
   "features": {
     "timeline": null,

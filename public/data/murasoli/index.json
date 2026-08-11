@@ -7,6 +7,12 @@
   "rights": "Nationalised. Source: Tamil Nadu Government Digital Library.",
   "volumes": [
     {
+      "volume": 48,
+      "pageCount": 399,
+      "pages": [],
+      "sourceUrl": "https://tamildigitallibrary.in"
+    },
+    {
       "volume": 49,
       "pageCount": 400,
       "pages": [],
@@ -3113,6 +3119,6 @@
       "sourceUrl": "https://tamildigitallibrary.in"
     }
   ],
-  "totalPages": 2333,
-  "volumeCount": 6
+  "totalPages": 2732,
+  "volumeCount": 7
 }

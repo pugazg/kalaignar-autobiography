@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Build the site's Murasoli data for Volume 49 from the page-fidelity repo.
+"""Build the site's Murasoli data for any page-fidelity volume.
 
-Volume 49 (github.com/pugazg/kalaignar-murasoli-letters, volumes/volume-49) is
-transcribed page-by-page rather than as one file per letter:
+The page-fidelity repo (github.com/pugazg/kalaignar-murasoli-letters,
+volumes/volume-<N>) transcribes each volume page-by-page rather than as one
+file per letter:
 
   chapters/<n>-<slug>.md         per-letter frontmatter (number, date, page spans);
                                  the Tamil BODY is NOT here — it lives in pages/.
+                                 Field names drifted across volumes: vol 49 used
+                                 `title`/`date`, vol 48+ use `title_ta`/`date_iso`.
+                                 Both are accepted below.
   pages/page-<PDF>.md            one Markdown file per PDF page, tagged with its
                                  letter_number — the canonical Tamil text.
   translations/en/letters/<n>-<slug>.md
@@ -14,13 +18,17 @@ transcribed page-by-page rather than as one file per letter:
 
 This parses that layout and emits exactly the shape volumes 50–54 already use:
 
-  public/data/murasoli/letters/m49-l{n}.json      Tamil   {salutation, paragraphs, …}
-  public/data/murasoli/letters-en/m49-l{n}.json   English {title, salutation, translatorNote, paragraphs, …}
-  public/data/murasoli/letters-index.json         + volume 49 entry
-  public/data/murasoli/index.json                 + volume 49 entry
+  public/data/murasoli/letters/m<V>-l{n}.json      Tamil   {salutation, paragraphs, …}
+  public/data/murasoli/letters-en/m<V>-l{n}.json   English {title, salutation, translatorNote, paragraphs, …}
+  public/data/murasoli/letters-index.json          + this volume's entry
+  public/data/murasoli/index.json                  + this volume's entry
+
+The volume number is taken from the source folder name (…/volume-<N>); pass
+--volume <N> to override.
 
 Usage:
-  python3 build_vol49_from_pages.py [/path/to/kalaignar-murasoli-letters/volumes/volume-49]
+  python3 build_murasoli_from_pages.py /path/to/kalaignar-murasoli-letters/volumes/volume-48
+  python3 build_murasoli_from_pages.py /path/to/volume-dir --volume 48
 """
 from __future__ import annotations
 
@@ -29,10 +37,21 @@ import re
 import sys
 from pathlib import Path
 
-VOLUME = 49
-SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(
-    "/tmp/kml49/volumes/volume-49"
-)
+_args = [a for a in sys.argv[1:] if a != "--volume"]
+_vol_flag = next((sys.argv[i + 1] for i, a in enumerate(sys.argv) if a == "--volume" and i + 1 < len(sys.argv)), None)
+SRC = Path(_args[0]) if _args else Path("/tmp/kml49/volumes/volume-49")
+
+
+def _infer_volume() -> int:
+    if _vol_flag and _vol_flag.isdigit():
+        return int(_vol_flag)
+    m = re.search(r"volume-(\d+)", str(SRC))
+    if m:
+        return int(m.group(1))
+    raise SystemExit("Could not determine volume number — pass --volume <N> or point at a …/volume-<N> dir.")
+
+
+VOLUME = _infer_volume()
 OUT = Path(__file__).resolve().parents[2] / "public" / "data" / "murasoli"
 TAMIL_SALUTATION = "உடன்பிறப்பே,"
 EN_SALUTATION = "Udanpirappē,"
@@ -221,7 +240,10 @@ def main() -> None:
         pages = [str(p) for p in range(start_pg, end_pg + 1)]
         total_pages = max(total_pages, end_pg)
 
-        title = {"en": "", "ta": chap.get("title", "")}
+        # Field names drifted across volumes: vol 49 = title/date, vol 48+ = title_ta/date_iso.
+        ta_title = chap.get("title") or chap.get("title_ta") or ""
+        date = chap.get("date") or chap.get("date_iso")
+        title = {"en": "", "ta": ta_title}
         en_sal, note, en_paras = (EN_SALUTATION, "", [])
         if num in en_by_num:
             en_fm, _ = read_frontmatter(en_by_num[num])
@@ -237,7 +259,7 @@ def main() -> None:
                     "collection": "murasoli-letter",
                     "volume": VOLUME,
                     "number": num,
-                    "date": chap.get("date"),
+                    "date": date,
                     "title": title,
                     "salutation": TAMIL_SALUTATION,
                     "pages": pages,
@@ -258,7 +280,7 @@ def main() -> None:
                     "salutation": en_sal or EN_SALUTATION,
                     "translatorNote": note,
                     "paragraphs": en_paras,
-                    "provenance": {"status": "translated", "source": "vol49 page-fidelity set"},
+                    "provenance": {"status": "translated", "source": f"vol{VOLUME} page-fidelity set"},
                 },
                 ensure_ascii=False,
                 indent=1,
@@ -267,7 +289,7 @@ def main() -> None:
         )
 
         letter_meta.append(
-            {"id": lid, "number": num, "date": chap.get("date"), "title": title, "pages": pages}
+            {"id": lid, "number": num, "date": date, "title": title, "pages": pages}
         )
 
     # letters-index.json — add/replace volume 49, keep ascending
