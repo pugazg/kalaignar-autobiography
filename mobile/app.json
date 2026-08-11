@@ -7,11 +7,6 @@
     "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0E5D63"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -51,7 +46,17 @@
     "plugins": [
       "expo-font",
       "expo-notifications",
-      "expo-asset"
+      "expo-asset",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0E5D63"
+        }
+      ],
+      "expo-status-bar"
     ],
     "extra": {
       "origin": "https://nenjukkuneethi.org",
