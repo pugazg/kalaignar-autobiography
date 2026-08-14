@@ -251,11 +251,23 @@ The three missing screens + entry point + tooling now exist and are wired in:
 7. **Docs** — `mobile/README.md` + `mobile/docs/{ARCHITECTURE,DATA_CONTRACTS,ROADMAP,BUILD,
    STORE_CHECKLIST}.md`, all written.
 
-### 3c-next. IMMEDIATE next step: physical-device run + remaining smoke tests
-Simulator-verified: Home, Library, Volume, Reader (see §3 status). **Still to exercise on a
-real device:** offline reading (download a chapter, kill network, reopen), full-text Search,
-theme/font persistence across relaunch, and the universal-link deep link
-`nenjukkuneethi.org/read/v1-ch01`. Then proceed to the store-readiness roadmap (§3f).
+### 3c-next. Physical-device verification + Expo SDK upgrade
+**Physical-device smoke test PASSED (2026-08-11, iPhone 15 Pro, on SDK 52):** reader/6
+volumes, navigation, Tamil rendering, illustrations, font/theme controls, both Tamil
+searches with scroll + highlight, offline Tamil/English/illustrations, bookmark +
+reading-position + theme/font persistence, storage accounting, clear-offline, share sheet.
+That build needed a temporary local `fmt` patch + free-team signing tweaks in the
+git-ignored `ios/` for Xcode 26 (documented in `mobile/docs/BUILD.md`).
+
+**Expo SDK upgrade — COMPLETE (PR #3):** upgraded **52 → 57** (RN 0.86.2, React
+19.2.3, Node 22 in CI), sequentially, gate green at each step. **The Xcode-26
+`fmt`/`consteval` failure is now eliminated — the SDK-57 native project builds clean
+with no patch** — verified by GitHub Mobile CI (PASS) + the iOS 26 simulator core-flow
+check. See `mobile/docs/BUILD.md` → "Expo SDK 52 → 57 upgrade" for the full verification
+block. **The SDK-57 physical-device re-test was waived by the user** (Increment 1 was
+already physically verified on SDK 52) — a deliberate decision, not a blocker, recorded
+as `SDK-57 physical-device re-test: NOT PERFORMED — waived by user`. Universal-link deep
+links remain separately pending (need a paid-team build + the site `.well-known` file).
 
 ### 3d. How to run
 ```bash

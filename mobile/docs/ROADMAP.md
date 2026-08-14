@@ -45,13 +45,14 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       `.well-known/apple-app-site-association` + `assetlinks.json`.
 - [ ] Store assets: screenshots, metadata, privacy policy page, support page.
 - [ ] Android internal-testing track + iOS TestFlight builds (see BUILD.md).
-- [ ] **Expo/SDK upgrade before submission.** Currently Expo SDK ~52 / React
-      Native 0.76.9. Apple requires App Store uploads to be built with a recent
-      Xcode / iOS SDK (Xcode 26 / iOS 26 SDK as of 2026-04-28). Don't leave this
-      to submission day: on a throwaway branch, upgrade Expo sequentially
-      (`npx expo install expo@^<next> --fix`, one major at a time), confirm EAS
-      produces an Xcode 26 / iOS 26 SDK build, then re-run the simulator
-      acceptance tests. Do this before Increment 2 grows large.
+- [x] **Expo/SDK upgrade — COMPLETE (PR #3).** Upgraded **Expo 52 → 57** (RN
+      0.76.9 → 0.86.2, React 18.3.1 → 19.2.3, Node 22 in CI), one major at a time,
+      gate green at every step. **The Xcode-26 `fmt`/`consteval` native-build failure
+      is eliminated — the SDK-57 project builds clean with no fmt patch** — verified
+      by GitHub Mobile CI (PASS) + the iOS 26 simulator core-flow check. The
+      **SDK-57 physical-device re-test was waived by the user** (Increment 1 was
+      already physically verified on SDK 52) — a deliberate decision, not a blocker.
+      Full detail + migration notes in `mobile/docs/BUILD.md` → "Expo SDK 52 → 57 upgrade".
 
 ## Known gaps to close before submission
 

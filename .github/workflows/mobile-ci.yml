@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: mobile/package-lock.json
 
@@ -47,4 +47,5 @@ jobs:
         run: npx --yes expo-doctor
 
       - name: Metro bundle (iOS)
-        run: npx expo export --platform ios --output-dir /tmp/expo-export
+        # expo export (SDK 53+) requires --output-dir inside the project; dist/ is gitignored.
+        run: npx expo export --platform ios --output-dir dist
