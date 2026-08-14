@@ -259,12 +259,14 @@ reading-position + theme/font persistence, storage accounting, clear-offline, sh
 That build needed a temporary local `fmt` patch + free-team signing tweaks in the
 git-ignored `ios/` for Xcode 26 (documented in `mobile/docs/BUILD.md`).
 
-**Expo SDK upgrade (branch `mobile/expo-sdk-upgrade`):** upgraded **52 → 57** (RN
-0.86.2, React 19.2.3, Node ≥ 22.13), sequentially, gate green at each step. **The
-Xcode-26 `fmt`/`consteval` failure is now eliminated — the SDK-57 native project builds
-clean with no patch** — verified in the iOS 26 simulator (core flows). See
-`mobile/docs/BUILD.md` → "Expo SDK 52 → 57 upgrade". **Merge gate:** a physical-iPhone
-re-test on SDK 57 (same checklist), which should need no fmt patch. Universal-link deep
+**Expo SDK upgrade — COMPLETE (PR #3):** upgraded **52 → 57** (RN 0.86.2, React
+19.2.3, Node 22 in CI), sequentially, gate green at each step. **The Xcode-26
+`fmt`/`consteval` failure is now eliminated — the SDK-57 native project builds clean
+with no patch** — verified by GitHub Mobile CI (PASS) + the iOS 26 simulator core-flow
+check. See `mobile/docs/BUILD.md` → "Expo SDK 52 → 57 upgrade" for the full verification
+block. **The SDK-57 physical-device re-test was waived by the user** (Increment 1 was
+already physically verified on SDK 52) — a deliberate decision, not a blocker, recorded
+as `SDK-57 physical-device re-test: NOT PERFORMED — waived by user`. Universal-link deep
 links remain separately pending (need a paid-team build + the site `.well-known` file).
 
 ### 3d. How to run

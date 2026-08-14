@@ -45,14 +45,14 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       `.well-known/apple-app-site-association` + `assetlinks.json`.
 - [ ] Store assets: screenshots, metadata, privacy policy page, support page.
 - [ ] Android internal-testing track + iOS TestFlight builds (see BUILD.md).
-- [~] **Expo/SDK upgrade — DONE on `mobile/expo-sdk-upgrade`, pending physical-device
-      re-test + merge.** Upgraded **Expo 52 → 57** (RN 0.76.9 → 0.86.2, React
-      18.3.1 → 19.2.3, Node ≥ 22.13), one major at a time, gate green at every
-      step. **The Xcode-26 `fmt`/`consteval` native-build failure is eliminated —
-      the SDK-57 project builds clean with no fmt patch** — and the app runs in the
-      iOS 26 simulator (core Increment-1 flows verified). Remaining before this is
-      ticked `[x]` and merged: the physical-iPhone re-test on SDK 57. Full detail +
-      migration notes in `mobile/docs/BUILD.md` → "Expo SDK 52 → 57 upgrade".
+- [x] **Expo/SDK upgrade — COMPLETE (PR #3).** Upgraded **Expo 52 → 57** (RN
+      0.76.9 → 0.86.2, React 18.3.1 → 19.2.3, Node 22 in CI), one major at a time,
+      gate green at every step. **The Xcode-26 `fmt`/`consteval` native-build failure
+      is eliminated — the SDK-57 project builds clean with no fmt patch** — verified
+      by GitHub Mobile CI (PASS) + the iOS 26 simulator core-flow check. The
+      **SDK-57 physical-device re-test was waived by the user** (Increment 1 was
+      already physically verified on SDK 52) — a deliberate decision, not a blocker.
+      Full detail + migration notes in `mobile/docs/BUILD.md` → "Expo SDK 52 → 57 upgrade".
 
 ## Known gaps to close before submission
 

@@ -143,17 +143,28 @@ manual `node_modules`/`Pods` edits** — verified by a full `npx expo run:ios`
 (prebuild → pod install → `Build Succeeded`), then run on an iOS 26 simulator.
 
 ### Verification status
-- **Local gate (mirrors CI):** typecheck, `validate:manifest`, `expo-doctor`
-  (20/20), `expo export --platform ios` — all pass at SDK 57. GitHub Mobile CI
-  runs on PR/merge (not run yet — branch not merged).
-- **Simulator (iOS 26):** app launches and the core Increment-1 flows work —
-  Home, Library (6 volumes), chapter list, Reader (Tamil + inline illustration +
-  font controls + theme toggle), Search. **No fmt patch.**
-- **Physical device:** the SDK-52 smoke test passed on an iPhone 15 Pro (that run
-  needed the now-removed fmt patch + free-team signing tweaks in the gitignored
-  `ios/`). A **physical-device re-test on SDK 57 is pending** and is the merge gate
-  — steps are the standard `npx expo run:ios --device`, and no fmt patch should be
-  required this time.
+
+```
+Typecheck:                                     PASS
+Manifest validation:                           PASS
+Expo Doctor:                                   PASS   (21/21)
+iOS export:                                    PASS
+Xcode 26 clean native build:                   PASS   (no fmt patch)
+iOS simulator core-flow verification:          PASS
+GitHub Mobile CI:                              PASS   (PR #3)
+Increment-1 physical-iPhone verify (SDK 52):   PASS
+SDK-57 physical-device re-test:                NOT PERFORMED — waived by user
+```
+
+- **Simulator (iOS 26):** app launches; Library shows all 6 memoir volumes; Tamil
+  Reader renders; inline illustrations render; font controls work; theme
+  switch/persist works; Search screen renders. (Live network search results and
+  offline download were network-limited in the simulator and were not fully
+  exercised there — not overstated as verified.)
+- **SDK-57 physical-device re-test:** **NOT PERFORMED — waived by user.** Increment 1
+  was already physically verified on an iPhone 15 Pro on SDK 52; the SDK-57 upgrade
+  itself is verified by the clean Xcode 26 native build + simulator + the CI gate
+  above. This is a deliberate project decision, **not** an unresolved blocker.
 
 ## Notes
 
