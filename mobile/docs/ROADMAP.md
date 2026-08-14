@@ -18,11 +18,13 @@ under "Not done" is genuinely not built — no placeholder screens ship.
 
 ## Increment 2 — feature data & richer surfaces
 
-- [ ] **Export feature datasets to JSON.** Write
-      `pipeline/builders/export-feature-data` (via `npx tsx`) to dump
-      `data/timeline.ts`, `governance.ts`, `people.ts`, `themes.ts`, `quotes.ts`
-      → `public/data/app/features/*.json`. The manifest builder already links
-      them via `feature_url()` once the files exist.
+- [x] **Export feature datasets to JSON.** `pipeline/builders/export-feature-data.ts`
+      (`npm run build:features`, via `tsx`) imports `data/timeline.ts`, `governance.ts`,
+      `people.ts`, `themes.ts`, `quotes.ts` and writes `public/data/app/features/*.json`
+      (deterministic, validated, Tamil-preserving). `build_app_manifest.py` links all
+      five through `feature_url()`; `npm run build:app-data` chains export → manifest.
+      Counts: timeline 42, governance 30, people 15, themes 6, quotes 14. `places` has
+      no source yet → its manifest slot stays `null`. See DATA_CONTRACTS → Feature datasets.
 - [ ] **Timeline milestones.** When `features.timeline` is present, render dated
       events with deep-links straight to the relevant passage (the screen already
       degrades to era-per-volume without it).

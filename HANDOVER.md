@@ -269,6 +269,37 @@ already physically verified on SDK 52) — a deliberate decision, not a blocker,
 as `SDK-57 physical-device re-test: NOT PERFORMED — waived by user`. Universal-link deep
 links remain separately pending (need a paid-team build + the site `.well-known` file).
 
+### 3c-next3. Increment 2 · Activity 1 — feature-data export (DONE)
+**Implementation.** `pipeline/builders/export-feature-data.ts` (run via `npm run
+build:features`, using `tsx`; added as a root devDependency) imports the authoritative
+`data/{timeline,governance,people,themes,quotes}.ts` and writes
+`public/data/app/features/*.json`, each mirroring its module's named exports (so
+`eras`, `govTerms`, `govKindLabels` are preserved, not dropped). It is deterministic
+(source order preserved, Unicode Tamil intact, no timestamps → identical bytes on
+rerun) and **validates before writing** — duplicate ids, unknown era/term/kind, broken
+chapter refs, bad `archive.people` ids, empty required fields all fail the build with a
+report; nothing is written and source data is never silently "fixed". `npm run
+build:app-data` chains export → `build_app_manifest.py`. Contracts documented in
+`mobile/docs/DATA_CONTRACTS.md` → "Feature datasets".
+
+**Record counts:** timeline 42 · governance 30 · people 15 · themes 6 · quotes 14.
+All 149 distinct chapter refs resolve to real memoir chapters (of 391). No source
+inconsistencies found.
+
+**Verification (all PASS).** exporter runs; rerun is byte-identical (deterministic); all
+five JSON parse; Tamil preserved; counts match source; ids unique; refs valid. Manifest
+rebuilt: `features.{timeline,governance,people,themes,quotes}` now resolve to real files,
+`places` stays `null`, memoir/Murasoli unchanged (6 vols / 391 ch / 346 letters). Mobile
+gate: typecheck, `validate:manifest`, `expo-doctor` (21/21), `expo export --platform ios`
+— all green. Website: root `tsc --noEmit` + `next build` — green.
+
+**No UI work was started** (Timeline/Explore screens untouched — this activity is the
+data foundation only).
+
+**Exact next activity → Increment 2 · Activity 2 — Timeline milestones** using
+`features.timeline`: render dated events with deep-links to the Reader (the Timeline
+screen currently degrades to era-per-volume). Do not start it without a fresh prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile
