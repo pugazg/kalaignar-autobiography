@@ -19,9 +19,10 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 
 ## Privacy & legal
 
-- [ ] **Privacy Policy** live at a public URL (Settings links to
-      `nenjukkuneethi.org/privacy` — page must exist)
-- [ ] **Support** page / contact live (Settings links to `nenjukkuneethi.org/about`)
+- [x] **Privacy Policy** live at a public URL — `/privacy` built + Settings links to it
+      (live on merge/deploy)
+- [x] **Support** page live — dedicated `/support` (App Store support URL) built + Settings
+      links to it; `/about` is the informational page (live on merge/deploy)
 - [ ] App Privacy "nutrition label" (Apple) — the app collects no personal data;
       all state is on-device (`AsyncStorage` + file cache). Declare accordingly.
 - [ ] Play Data Safety form filled to match (no data collected / shared)

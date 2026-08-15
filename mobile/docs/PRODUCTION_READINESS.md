@@ -26,9 +26,10 @@ on-device for offline use. No memoir prose ships in the bundle. Bundle id / Andr
 
 | Cat | Item | Status | Store blocker? |
 |---|---|---|---|
-| A | Privacy Policy page (Settings → `/privacy`) | **NOT STARTED** (URL 404) | **YES** |
-| A | Support/About page (Settings → `/about`) | **NOT STARTED** (URL 404) | **YES** |
-| A | Copyright/permission wording | PARTIAL (in-app © line present; distribution permission not documented) | Soft |
+| A | Privacy Policy page (`/privacy`, Settings link) | **COMPLETE** (built; live on merge) | Resolved |
+| A | Support page (`/support`, Settings link) | **COMPLETE** (dedicated page; built; live on merge) | Resolved |
+| A | About page (`/about`, Settings link) | **COMPLETE** (built; live on merge) | Resolved |
+| A | Copyright/permission wording | PARTIAL (cautious neutral wording on About; distribution permission not documented) | Soft |
 | B | Deep-link route handling (app-side) | COMPLETE (`linking` config, Reader `read/:id`) | No |
 | B | iOS Associated Domains / Android intent filters (config) | COMPLETE in `app.json` (`applinks:`, autoVerify) | No |
 | B | `apple-app-site-association` + `assetlinks.json` (website) | **NOT STARTED** (no `.well-known`) | No (custom scheme works) |
@@ -60,12 +61,15 @@ or tablet support is deliberately scoped.
 
 ## 4. Genuine store blockers (strict)
 
-1. **Privacy Policy + Support pages live** — Apple requires a working Privacy Policy URL and a
-   Support URL; both Settings links currently 404. _(Website work; the app already links correctly.)_
-2. **Release engineering to produce a signable build** — add `eas.json`, a version/build-number
+- ~~Privacy Policy + Support pages live~~ — **RESOLVED (Prod-readiness Activity 1):** real
+  `/privacy`, `/support` and `/about` pages built and wired into Settings; live on merge.
+
+Remaining:
+
+1. **Release engineering to produce a signable build** — add `eas.json`, a version/build-number
    strategy; requires a **paid Apple Developer account** for TestFlight/App Store and Associated
    Domains signing. _(Account = external/process; `eas.json` + versioning = small repo work.)_
-3. **Store metadata + assets** — screenshots (per device class), description (Ta/En), keywords,
+2. **Store metadata + assets** — screenshots (per device class), description (Ta/En), keywords,
    privacy "nutrition" labels, age rating. _(Content/asset work; nothing to code.)_
 
 Everything else is polish, reliability, or post-launch — **not** a blocker by the strict definition.
@@ -77,8 +81,8 @@ post-launch), **not** roadmap order.
 
 | # | Work item | Status | Blocker? | Why now | Timing | Scope |
 |---|---|---|---|---|---|---|
-| 1 | Privacy + Support/About public pages (website) + confirm Settings URLs resolve | NOT STARTED | **Yes** | Hard Apple/Play requirement; smallest unblock | Before submission | **Small–Medium** |
-| 2 | Release engineering: `eas.json`, version/build-number strategy, export-compliance flag | NOT STARTED | **Yes (prereq)** | Nothing builds for TestFlight without it | Before first build | **Small** |
+| 1 | Privacy + Support/About public pages (website) + Settings URLs | **DONE** (Activity 1) | was Yes | Hard Apple/Play requirement; smallest unblock | — | Small–Medium |
+| 2 | Release engineering: `eas.json`, version/build-number strategy, export-compliance flag | NOT STARTED | **Yes (prereq)** | Nothing builds for TestFlight without it | **Next** | **Small** |
 | 3 | Accessibility pass: contrast across themes + VoiceOver/label/focus review | PARTIAL | Soft | Review risk; static parts already done | Before submission | **Medium** |
 | 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | NOT STARTED | **Yes** | Required to submit | Before submission | **Medium** |
 | 5 | Universal Links: website `.well-known` files + paid-team verification | PARTIAL | No | App works on custom scheme; needs paid team | After account is paid | **Medium** |
@@ -103,9 +107,12 @@ distribution-permission documentation (in-app © line present, formal permission
 
 ## 7. Exact recommended next workstream
 
-**Legal/store-link readiness — publish the Privacy Policy and Support/About pages on
-`nenjukkuneethi.org` and confirm the in-app Settings links resolve** (blocker #1). Pair it with a
-small **release-engineering setup** (`eas.json` + version/build strategy) so a first TestFlight
-build becomes possible once the paid Apple account is in place. Do **not** start Push Notifications.
+**Prod-readiness Activity 1 (legal/store-link readiness) is DONE** — `/privacy`, `/support`,
+`/about` built and wired into Settings (live on merge).
+
+**Next: Prod-readiness Activity 2 — release engineering / TestFlight preparation:** add
+`eas.json` (build profiles), a version/build-number strategy (`expo.version`, `autoIncrement`,
+buildNumber/versionCode), and the export-compliance flag; this plus a **paid Apple Developer
+account** enables the first TestFlight build. Do **not** start Push Notifications.
 
 See `STORE_CHECKLIST.md` for the granular pre-submission gate list.

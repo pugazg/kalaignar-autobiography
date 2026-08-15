@@ -420,6 +420,38 @@ Android) is polish/optional/post-launch. **Exact next workstream: legal/store-li
 (Privacy + Support/About pages) + release-engineering setup — NOT push notifications.**
 No production feature was implemented in the audit. See `STORE_CHECKLIST.md` for the raw gates.
 
+### 3c-next8. Production readiness · Activity 1 — legal/store-link pages (DONE)
+Resolved the top store blocker from the audit: the Settings Privacy/Support links were dead
+(`/privacy`, `/about` returned 404, and there was no support page).
+
+**Implemented:**
+- Website: real, static, theme-consistent pages **`/privacy`**, **`/support`** (dedicated —
+  the App Store support URL), **`/about`** (informational), plus a subtle global `Footer`
+  (About · Privacy · Support) in the root layout. Content is evidence-based and cautious — no
+  generic-template claims, no ownership/official/permission overclaims.
+- Mobile Settings now links Privacy → `/privacy`, Support → `/support`, About → `/about`
+  (new row), built from the shared `ORIGIN` constant (no duplicated origins); all open
+  externally, no WebView.
+
+**Privacy evidence (from code):** no accounts/auth, no analytics/ads/tracking/crash SDKs;
+`expo-notifications` present but 0 usage (inactive → policy says "does not send push
+notifications"); local-only storage (prefs/bookmarks/progress/recents/downloads/cache via
+AsyncStorage + FileSystem); sole network origin `nenjukkuneethi.org`; OS share sheet is
+user-initiated. Policy uses the accurate "app doesn't collect; normal hosting may process
+routine request metadata" distinction, and versioned ("current version") phrasing.
+
+**Verification (all PASS):** root `tsc` + `next build` (`/privacy`, `/support`, `/about`
+prerender static); mobile typecheck / validate:manifest / expo-doctor (21/21) / iOS export;
+Settings URLs statically confirmed. (Pages go live on merge/deploy; PR Vercel preview serves
+them.)
+
+**Remaining store blockers:** (1) **release engineering** — `eas.json` + version/build strategy
++ paid Apple account; (2) **store metadata/assets**. No release-engineering work was started here.
+
+**Exact next workstream → Production Readiness Activity 2 — Release engineering / TestFlight
+preparation** (`eas.json`, version/build-number strategy, export-compliance flag). Do not start
+without a fresh prompt. Details in `mobile/docs/PRODUCTION_READINESS.md`.
+
 ### 3d. How to run
 ```bash
 cd mobile
