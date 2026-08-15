@@ -13,15 +13,18 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "org.nenjukkuneethi.app",
+      "buildNumber": "1",
       "associatedDomains": [
         "applinks:nenjukkuneethi.org"
       ],
       "infoPlist": {
-        "CFBundleAllowMixedLocalizations": true
+        "CFBundleAllowMixedLocalizations": true,
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
       "package": "org.nenjukkuneethi.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0E5D63"
