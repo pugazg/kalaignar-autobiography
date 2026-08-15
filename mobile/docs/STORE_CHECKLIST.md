@@ -7,7 +7,9 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 - [x] App name: **Nenjukku Neethi** (`app.json → expo.name`)
 - [x] Bundle id / package: `org.nenjukkuneethi.app` (iOS + Android)
 - [x] Icon (1024²), adaptive icon, splash — from the brand vector
-- [ ] Final version / build numbers bumped (`expo.version`, EAS `autoIncrement`)
+- [x] Version / build-number strategy in place (`expo.version` `0.1.0`, `ios.buildNumber` `1`,
+      `android.versionCode` `1`, `production.autoIncrement`) — see `docs/RELEASE.md`. Bump
+      `expo.version` per release.
 
 ## Functionality (Apple 4.2 / Play quality)
 
@@ -52,8 +54,11 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 
 ## Build & release
 
+- [x] `eas.json` build profiles (development / preview / production) — see `docs/RELEASE.md`
+- [x] Export-compliance declared (`ITSAppUsesNonExemptEncryption: false`, standard HTTPS ⇒ exempt)
 - [ ] `npm run typecheck` clean
 - [ ] `npm run validate:manifest` passes
+- [ ] Paid Apple Developer account + `eas init` (writes `extra.eas.projectId`) — external prerequisite
 - [ ] EAS production build (iOS + Android) succeeds
 - [ ] Android internal-testing track green
 - [ ] iOS TestFlight build accepted
