@@ -14,6 +14,9 @@ import { ExploreScreen } from "@/screens/ExploreScreen";
 import { TimelineScreen } from "@/screens/TimelineScreen";
 import { SavedScreen } from "@/screens/SavedScreen";
 import { SettingsScreen } from "@/screens/SettingsScreen";
+import { MurasoliLibraryScreen } from "@/screens/MurasoliLibraryScreen";
+import { MurasoliVolumeScreen } from "@/screens/MurasoliVolumeScreen";
+import { MurasoliReaderScreen } from "@/screens/MurasoliReaderScreen";
 
 // Native destinations (spec: Home, Library, Timeline, Explore, Search, Saved, Settings).
 // Mobile redesign: five bottom tabs; Timeline, Saved and Settings are first-class
@@ -33,6 +36,9 @@ export type RootStackParamList = {
   Timeline: undefined;
   Saved: undefined;
   Settings: undefined;
+  MurasoliLibrary: undefined;
+  MurasoliVolume: { volume: number };
+  MurasoliReader: { id: string };
 };
 
 const Tab = createBottomTabNavigator<TabParamList>();
@@ -107,6 +113,9 @@ export function RootNavigator() {
       <Stack.Screen name="Timeline" component={TimelineScreen} options={{ title: "Timeline" }} />
       <Stack.Screen name="Saved" component={SavedScreen} options={{ title: "Saved" }} />
       <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: "Settings" }} />
+      <Stack.Screen name="MurasoliLibrary" component={MurasoliLibraryScreen} options={{ title: "Murasoli" }} />
+      <Stack.Screen name="MurasoliVolume" component={MurasoliVolumeScreen} options={{ title: "Murasoli" }} />
+      <Stack.Screen name="MurasoliReader" component={MurasoliReaderScreen} options={{ title: "", headerBackTitle: "Back" }} />
     </Stack.Navigator>
   );
 }

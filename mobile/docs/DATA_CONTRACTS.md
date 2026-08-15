@@ -150,6 +150,56 @@ failure with no cache, falls back to the era-per-volume view. Milestones are gro
 `find` term is synthesised — the dataset provides none). The typed shapes live in
 `src/data/types.ts` (`TimelineFeature`, `TimelineMilestone`, `TimelineEra`).
 
+## Murasoli collection (native reader)
+
+Consumed by the native Murasoli screens (Library → Volume → Reader). URLs/templates
+come from `manifest.murasoli`; all fetches are offline-first (a previously read
+index/letter stays readable offline). Types live in `src/data/types.ts`.
+
+```jsonc
+// GET /data/murasoli/index.json
+{ "collection": "murasoli",
+  "title": { "en": "…", "ta": "…" }, "rights": "…",
+  "volumes": [ { "volume": 48, "pageCount": 399, "pages": [], "sourceUrl": "…" }, …,
+    // vol 54 is scan-sourced: `pages` is populated (used only to flag it Tamil-only)
+    { "volume": 54, "pageCount": 341, "pages": [ { "id": "m54-p0002", "page": 2,
+        "title": {"en":"…","ta":"…"}, "pageType": "frontmatter|body|…" }, … ] } ],
+  "totalPages": …, "volumeCount": 7 }
+
+// GET /data/murasoli/letters-index.json — every volume, incl. 54 (its 36 curated letters)
+{ "collection": "murasoli",
+  "volumes": [ { "volume": 48, "letterCount": 58, "letters": [
+    { "id": "m48-l3706", "number": 3706, "date": "2013-02-20",
+      "title": { "en": "…", "ta": "…" }, "pages": ["23","24",…] }, … ] }, … ] }
+
+// GET /data/murasoli/letters/<id>.json — original Tamil letter
+{ "id": "m48-l3706", "collection": "murasoli-letter", "volume": 48, "number": 3706,
+  "date": "2013-02-20", "title": {"en":"…","ta":"…"}, "salutation": "உடன்பிறப்பே,",
+  "pages": ["23",…], "ocrStatus": "…", "paragraphs": ["…", …], "curated": true }
+
+// GET /data/murasoli/letters-en/<id>.json — English translation (subset; not all letters)
+{ "id": "…", "lang": "en", "title": "…", "salutation": "Udanpirappē,",
+  "translatorNote": "…",           // editorial — shown as a distinct block, never as body
+  "paragraphs": ["…", …], "provenance": { "status": "translated", "source": "…" } }
+```
+
+**Volume kinds & language.** A volume with a non-empty `index.pages` array (vol 54) is
+scan-sourced and **Tamil-only**; the rest are letter volumes with **full English**. The
+mobile UI browses **every** volume as letters (from `letters-index.json`) — vol 54's 36
+curated letters included — matching the website. The per-page OCR scan documents
+(`/data/murasoli/text/<id>.json`) exist in the data but are **not consumed** by the app.
+
+**Counts (current):** 7 volumes · 346 letters (48:58, 49:53, 50:50, 51:49, 52:50,
+53:50, 54:36). English: full for 48–53 (310); vol 54 Tamil-only (1 English present).
+
+**Caching / offline.** Index, letter and English JSON use the shared offline-first
+`fetchJSON` cache (`api.murasoli*`). A letter read once stays readable offline; an
+uncached letter opened offline shows the standard offline-error state. No bulk-volume
+download in this activity. Reading position is stored per id under `nn:mu:progress`
+(separate from memoir `nn:progress`). No Murasoli bookmarks yet — the Saved model is
+memoir-specific (`Bookmark.chapterId` + Saved routes to the memoir Reader); adding
+cross-collection Saved is a later scoped activity.
+
 ## ID formats
 
 - Chapter: `v<vol>-ch<NN>` — e.g. `v1-ch01`, `v3-ch140`.

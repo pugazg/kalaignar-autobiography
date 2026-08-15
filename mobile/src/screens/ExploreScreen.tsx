@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Linking, View } from "react-native";
+import { View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 import { useApp, useTheme } from "@/data/AppState";
@@ -8,8 +8,7 @@ import { radius, spacing } from "@/theme/theme";
 
 // Thematic front door to the archive. Every card is a real destination — the
 // native volumes / timeline / search / saved screens, plus the Murasoli letters
-// collection (still web-hosted; opened in the browser and clearly labelled as
-// such until a native letters reader ships).
+// collection, now read natively (Library → Volume → Letter/Scan → Reader).
 export function ExploreScreen() {
   const { status, manifest, reload } = useApp();
   const nav = useNavigation<any>();
@@ -27,11 +26,6 @@ export function ExploreScreen() {
   const pages = manifest.volumes.reduce((n, v) => n + (v.pages ?? 0), 0);
   const letters = manifest.murasoli?.totalLetters ?? 0;
   const years = spanYears(manifest.volumes.map((v) => v.period));
-
-  const openMurasoli = () =>
-    Linking.openURL("https://nenjukkuneethi.org/murasoli").catch(() =>
-      Alert.alert("Couldn't open the collection", "Please visit nenjukkuneethi.org."),
-    );
 
   return (
     <Screen scroll>
@@ -52,14 +46,17 @@ export function ExploreScreen() {
       {/* Collections */}
       <T faint size={12} style={{ letterSpacing: 1, marginTop: spacing(6), marginBottom: spacing(2) }}>COLLECTIONS</T>
       {letters ? (
-        <Card onPress={openMurasoli}>
+        <Card onPress={() => nav.navigate("MurasoliLibrary")}>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Ionicons name="mail-outline" size={24} color={c.primary} style={{ marginRight: spacing(3) }} />
             <View style={{ flex: 1 }}>
               <T ta bold size={17}>முரசொலி — உடன்பிறப்புகளுக்கு</T>
-              <T muted size={13} style={{ marginTop: 2 }}>{letters} letters · opens on the web</T>
+              <T muted size={13} style={{ marginTop: 2 }}>
+                {letters} letters
+                {manifest.murasoli?.volumeCount ? ` · ${manifest.murasoli.volumeCount} volumes` : ""}
+              </T>
             </View>
-            <Ionicons name="open-outline" size={18} color={c.textFaint} />
+            <Ionicons name="chevron-forward" size={18} color={c.textFaint} />
           </View>
         </Card>
       ) : null}
