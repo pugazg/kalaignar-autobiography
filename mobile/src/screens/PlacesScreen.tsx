@@ -35,7 +35,7 @@ export function PlacesScreen() {
   return (
     <Screen scroll>
       <Eyebrow>Explore</Eyebrow>
-      <T ta bold size={24} style={{ marginBottom: spacing(1) }}>இடங்கள்</T>
+      <T ta bold heading size={24} style={{ marginBottom: spacing(1) }}>இடங்கள்</T>
       <T muted size={13} style={{ marginBottom: spacing(4) }}>The memoir's geography · tap a place to explore</T>
 
       <SchematicMap c={c} places={places} onSelect={(id) => nav.navigate("PlaceDetail", { id })} />
@@ -87,7 +87,7 @@ function SchematicMap({ c, places, onSelect }: { c: any; places: PlaceItem[]; on
               onPress={() => onSelect(p.id)}
               accessibilityRole="button"
               accessibilityLabel={`${p.name}, ${p.tamil}`}
-              hitSlop={10}
+              hitSlop={16}
               style={{ position: "absolute", left, top, marginLeft: -6, marginTop: -6 }}
             >
               <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: c.primary, borderWidth: 2, borderColor: c.bg }} />
@@ -115,7 +115,7 @@ export function PlaceDetailScreen() {
 
   return (
     <Screen scroll>
-      <T ta bold size={26}>{place.tamil}</T>
+      <T ta bold heading size={26}>{place.tamil}</T>
       <T size={16} style={{ marginTop: 2, marginBottom: spacing(3) }}>{place.name}</T>
       <T style={{ fontSize: 15, lineHeight: 23 }}>{place.note}</T>
       <ChapterRefs refs={place.refs} />

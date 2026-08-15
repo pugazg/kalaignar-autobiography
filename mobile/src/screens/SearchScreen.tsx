@@ -109,7 +109,7 @@ export function SearchScreen() {
           style={{ flex: 1, paddingVertical: spacing(3), paddingHorizontal: spacing(2), color: c.text, fontFamily: tamilFont, fontSize: 15 }}
           accessibilityLabel="Search the archive"
         />
-        {q ? <Pressable onPress={() => { setQ(""); setResults(null); }} hitSlop={8}><Ionicons name="close-circle" size={18} color={c.textFaint} /></Pressable> : null}
+        {q ? <Pressable onPress={() => { setQ(""); setResults(null); }} hitSlop={12} accessibilityRole="button" accessibilityLabel="Clear search"><Ionicons name="close-circle" size={18} color={c.textFaint} /></Pressable> : null}
       </View>
 
       <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
@@ -126,7 +126,7 @@ export function SearchScreen() {
             <T muted>Search all six volumes in Tamil. Previously searched volumes remain searchable offline.</T>
           ) : (
             history.map((h) => (
-              <Pressable key={h} onPress={() => { setQ(h); run(h); }} style={{ paddingVertical: spacing(2.5) }}>
+              <Pressable key={h} onPress={() => { setQ(h); run(h); }} accessibilityRole="button" accessibilityLabel={`Search again for ${h}`} style={{ paddingVertical: spacing(2.5) }}>
                 <T ta>{h}</T>
               </Pressable>
             ))
@@ -167,7 +167,7 @@ export function SearchScreen() {
           ItemSeparatorComponent={() => <View style={{ height: 1, backgroundColor: c.border }} />}
           contentContainerStyle={{ paddingBottom: spacing(24) }}
           renderItem={({ item }) => (
-            <Pressable onPress={() => nav.navigate("Reader", { id: item.id, find: submittedQuery })} style={{ paddingVertical: spacing(3) }}>
+            <Pressable onPress={() => nav.navigate("Reader", { id: item.id, find: submittedQuery })} accessibilityRole="button" accessibilityLabel={`${item.title}, volume ${item.volume}`} style={{ paddingVertical: spacing(3) }}>
               <T faint size={11}>தொகுதி {item.volume}</T>
               <T ta bold size={15} style={{ marginVertical: 2 }}>{item.title}</T>
               {highlighted(item.snippet)}

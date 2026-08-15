@@ -31,7 +31,7 @@ export function ExploreScreen() {
   return (
     <Screen scroll>
       <Eyebrow>Explore</Eyebrow>
-      <T ta bold size={26} style={{ marginBottom: spacing(2) }}>ஆய்வு</T>
+      <T ta bold heading size={26} style={{ marginBottom: spacing(2) }}>ஆய்வு</T>
       <T muted style={{ marginBottom: spacing(5) }}>
         Ways into {manifest.work.titleEn} — read by volume, follow the timeline, or search every page.
       </T>

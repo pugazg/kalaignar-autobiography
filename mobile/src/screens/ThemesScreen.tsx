@@ -47,7 +47,7 @@ export function ThemesScreen() {
       ListHeaderComponent={
         <View style={{ paddingBottom: spacing(3) }}>
           <Eyebrow>Explore</Eyebrow>
-          <T ta bold size={24} style={{ marginBottom: spacing(1) }}>கருப்பொருள்கள்</T>
+          <T ta bold heading size={24} style={{ marginBottom: spacing(1) }}>கருப்பொருள்கள்</T>
           <T muted size={13}>Themes across the memoir · tap to explore</T>
         </View>
       }
@@ -92,7 +92,7 @@ export function ThemeDetailScreen() {
 
   return (
     <Screen scroll>
-      <T ta bold size={26}>{theme.tamil}</T>
+      <T ta bold heading size={26}>{theme.tamil}</T>
       <T bold size={16} style={{ color: c.accent, marginTop: 2, marginBottom: spacing(3) }}>{theme.title}</T>
       <T style={{ fontSize: 15, lineHeight: 23 }}>{theme.narrative}</T>
 

@@ -34,7 +34,7 @@ export function HomeScreen() {
   return (
     <Screen scroll>
       <Eyebrow>The Kalaignar Digital Library</Eyebrow>
-      <T ta bold size={30}>நெஞ்சுக்கு நீதி</T>
+      <T ta bold heading size={30}>நெஞ்சுக்கு நீதி</T>
       <T muted style={{ marginTop: spacing(2) }}>
         The complete six-volume memoir of Kalaignar M. Karunanidhi — read, search and explore offline.
       </T>

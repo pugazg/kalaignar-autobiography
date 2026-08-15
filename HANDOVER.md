@@ -452,6 +452,51 @@ them.)
 preparation** (`eas.json`, version/build-number strategy, export-compliance flag). Do not start
 without a fresh prompt. Details in `mobile/docs/PRODUCTION_READINESS.md`.
 
+### 3c-next9. Production readiness · Activity 2 — Release engineering (DONE, merged PR #11)
+Added the repo-side release engineering that makes the app buildable/submittable:
+- **`mobile/eas.json`** — `development` / `preview` / `production` build profiles + a
+  `submit.production` placeholder. `appVersionSource: "local"` (build numbers git-versioned,
+  reproducible, no EAS-account dependency); `development` builds on the iOS Simulator with no
+  signing; `production.autoIncrement`.
+- **`mobile/app.json`** — seeded `ios.buildNumber "1"` + `android.versionCode 1` (marketing
+  version stays `expo.version 0.1.0`); export-compliance flag
+  `ios.infoPlist.ITSAppUsesNonExemptEncryption=false` (standard HTTPS ⇒ exempt).
+- Docs: `mobile/docs/RELEASE.md` (strategy + Apple-account prerequisite) + `STORE_CHECKLIST`
+  ticks. Gate green (typecheck / validate:manifest / expo-doctor 21/21 / iOS export; website
+  build). **External prerequisite:** a **paid Apple Developer account** for the first TestFlight
+  build (`eas login` → `eas init` writes `extra.eas.projectId` → `eas build`). Merged as PR #11
+  (squash `75c9c85`).
+
+### 3c-next10. Production readiness · Activity 3 — Accessibility audit & fixes (DONE)
+**Branch `mobile/accessibility-readiness` (PR #12, open — leave unmerged until asked).** A
+repository-side accessibility pass; full detail in **`mobile/docs/ACCESSIBILITY.md`**.
+
+**Main fixes (3 commits):**
+- **Semantics/touch targets:** `heading` prop on the shared `T` (`accessibilityRole="header"`)
+  applied to every screen's primary title; `role="button"` on the reader font/line-height/theme
+  controls, header gear, volume download (+ `state.busy`), search rows; explicit
+  "Show English translation" label on both Ta/En reader switches; labelled the previously
+  **unlabelled** Search clear button; enlarged Places map-marker hit targets to ~44 pt (the
+  place **list** is the authoritative accessible path).
+- **Contrast → WCAG AA (measured):** 7 tokens across light/sepia/dark (`textFaint` in all three,
+  `accent` in light+sepia, sepia `textMuted`, dark `primary`) — all text now ≥4.5:1 on common
+  backgrounds; palette identity preserved; borders left (decorative). Before/after in the doc.
+
+**Verification:** native SDK-57 build **succeeded (0/0)**; iOS 26.5 simulator — normal + large
+accessibility text, all three themes, navigation regression (Reader deep-links, tabs, back).
+Reader reflows at all sizes. Gate green (typecheck · validate:manifest · expo-doctor 21/21 ·
+iOS export). Docs updated (`ACCESSIBILITY.md`, `PRODUCTION_READINESS.md`, `STORE_CHECKLIST.md`).
+
+**Remaining manual check:** **manual VoiceOver / TalkBack on-device navigation — NOT performed
+(no physical-device test in scope), documented truthfully.** Also a non-blocking follow-up:
+Home/Explore dashboard tiles + long Tamil display titles clip at the **largest** accessibility
+text sizes (those destinations are duplicated in the tab bar) — layout enhancement, font scaling
+deliberately not capped.
+
+**Exact next workstream → Production Readiness Activity 4 — App Store metadata + screenshots /
+assets** (screenshots per device class, Ta/En description + keywords, privacy "nutrition"
+labels, age rating). Do not start without a fresh prompt. See `mobile/docs/STORE_CHECKLIST.md`.
+
 ### 3d. How to run
 ```bash
 cd mobile

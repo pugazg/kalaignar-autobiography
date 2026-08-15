@@ -66,7 +66,7 @@ export function MurasoliLibraryScreen() {
   return (
     <Screen scroll>
       <Eyebrow>Collection</Eyebrow>
-      <T ta bold size={24} style={{ marginBottom: spacing(2) }}>{idx.title?.ta ?? "முரசொலி"}</T>
+      <T ta bold heading size={24} style={{ marginBottom: spacing(2) }}>{idx.title?.ta ?? "முரசொலி"}</T>
       <T muted style={{ marginBottom: spacing(2) }}>{idx.title?.en ?? "Murasoli"}</T>
       {idx.rights ? <T faint size={12} style={{ marginBottom: spacing(5) }}>{idx.rights}</T> : <View style={{ height: spacing(3) }} />}
 

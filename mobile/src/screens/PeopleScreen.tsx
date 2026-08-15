@@ -38,7 +38,7 @@ export function PeopleScreen() {
       ListHeaderComponent={
         <View style={{ paddingBottom: spacing(3) }}>
           <Eyebrow>Explore</Eyebrow>
-          <T ta bold size={24} style={{ marginBottom: spacing(1) }}>மனிதர்கள்</T>
+          <T ta bold heading size={24} style={{ marginBottom: spacing(1) }}>மனிதர்கள்</T>
           <T muted size={13}>Figures in the memoir · tap to explore</T>
         </View>
       }
@@ -74,7 +74,7 @@ export function PersonDetailScreen() {
 
   return (
     <Screen scroll>
-      <T ta bold size={26}>{person.tamil}</T>
+      <T ta bold heading size={26}>{person.tamil}</T>
       <T size={16} style={{ marginTop: 2 }}>{person.name}</T>
       <T bold size={14} style={{ color: c.accent, marginTop: spacing(1) }}>{person.role}</T>
 

@@ -66,6 +66,8 @@ export function VolumeScreen() {
             <Pressable
               onPress={() => toggleDownload(item)}
               hitSlop={10}
+              accessibilityRole="button"
+              accessibilityState={{ busy: busy === item.id }}
               accessibilityLabel={downloads[item.id] ? "Remove offline copy" : "Download for offline"}
               style={{ padding: spacing(2), borderRadius: radius.pill }}
             >
