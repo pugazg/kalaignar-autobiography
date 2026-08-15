@@ -160,6 +160,21 @@ failure with no cache, falls back to the era-per-volume view. Milestones are gro
 `find` term is synthesised — the dataset provides none). The typed shapes live in
 `src/data/types.ts` (`TimelineFeature`, `TimelineMilestone`, `TimelineEra`).
 
+**Explore — Themes / People / Places.** The Explore screen shows native Discover entries
+that each load `features.{themes,people,places}` through the shared `useFeature<T>(url, parse)`
+hook (wrapping `api.feature`, offline-first). Every collection **degrades independently**:
+a missing feature URL, a fetch failure with no cache, or a payload that fails its defensive
+parser resolves to a truthful loading/unavailable state without crashing Explore, and a
+malformed collection fails whole (records are never silently dropped to fake completeness).
+Each has a list + a detail screen. Memoir `refs` are resolved to real chapter titles/volumes
+and deep-linked to the existing `Reader({ id })` via the shared `ChapterRefs` component
+(unresolved ids are dropped, never linked; no `find` term invented). Theme `archive.events`
+open their `ref` chapter; `archive.people` link to the native Person detail. Places render a
+dependency-free **schematic** map from the source `x`/`y` in the viewBox `0 0 1640 2032`
+(percentage-positioned markers, labelled non-geographic, tap → detail) plus a list. Reading
+prefs (font/line-height/theme) are the shared memoir prefs; these screens add no new local
+state. Types: `ThemesFeature`/`ThemeItem`, `PeopleFeature`/`PersonItem`, `PlacesFeature`/`PlaceItem`.
+
 ## Murasoli collection (native reader)
 
 Consumed by the native Murasoli screens (Library → Volume → Reader). URLs/templates

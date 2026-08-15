@@ -41,7 +41,14 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       website. Offline-first via the existing cache; no bulk download; Murasoli
       bookmarks deferred (Saved is memoir-specific — see DATA_CONTRACTS). Verified in
       the iOS 26 simulator.
-- [ ] Explore: theme / people / places entry points from the feature JSON.
+- [x] **Explore: theme / people / places entry points from the feature JSON.** Explore
+      now has native Discover entries for Themes (6), People (15), Places (10) alongside
+      Murasoli, each loading its `features.*` JSON offline-first via a shared `useFeature`
+      hook with a defensive parser (a failed/malformed collection degrades independently).
+      Themes/People/Places have list + detail screens; details deep-link memoir refs to the
+      Reader (resolved to real chapter titles), theme archive events/people cross-link, and
+      Places adds a dependency-free schematic map (source x/y, labelled non-geographic).
+      `data/places.ts` is now exported (Activity 4A). Verified in the iOS 26 simulator.
 
 ## Production / store-ready — Not done
 
