@@ -17,6 +17,9 @@ import { SettingsScreen } from "@/screens/SettingsScreen";
 import { MurasoliLibraryScreen } from "@/screens/MurasoliLibraryScreen";
 import { MurasoliVolumeScreen } from "@/screens/MurasoliVolumeScreen";
 import { MurasoliReaderScreen } from "@/screens/MurasoliReaderScreen";
+import { ThemesScreen, ThemeDetailScreen } from "@/screens/ThemesScreen";
+import { PeopleScreen, PersonDetailScreen } from "@/screens/PeopleScreen";
+import { PlacesScreen, PlaceDetailScreen } from "@/screens/PlacesScreen";
 
 // Native destinations (spec: Home, Library, Timeline, Explore, Search, Saved, Settings).
 // Mobile redesign: five bottom tabs; Timeline, Saved and Settings are first-class
@@ -39,6 +42,12 @@ export type RootStackParamList = {
   MurasoliLibrary: undefined;
   MurasoliVolume: { volume: number };
   MurasoliReader: { id: string };
+  Themes: undefined;
+  ThemeDetail: { id: string };
+  People: undefined;
+  PersonDetail: { id: string };
+  Places: undefined;
+  PlaceDetail: { id: string };
 };
 
 const Tab = createBottomTabNavigator<TabParamList>();
@@ -116,6 +125,12 @@ export function RootNavigator() {
       <Stack.Screen name="MurasoliLibrary" component={MurasoliLibraryScreen} options={{ title: "Murasoli" }} />
       <Stack.Screen name="MurasoliVolume" component={MurasoliVolumeScreen} options={{ title: "Murasoli" }} />
       <Stack.Screen name="MurasoliReader" component={MurasoliReaderScreen} options={{ title: "", headerBackTitle: "Back" }} />
+      <Stack.Screen name="Themes" component={ThemesScreen} options={{ title: "Themes" }} />
+      <Stack.Screen name="ThemeDetail" component={ThemeDetailScreen} options={{ title: "", headerBackTitle: "Back" }} />
+      <Stack.Screen name="People" component={PeopleScreen} options={{ title: "People" }} />
+      <Stack.Screen name="PersonDetail" component={PersonDetailScreen} options={{ title: "", headerBackTitle: "Back" }} />
+      <Stack.Screen name="Places" component={PlacesScreen} options={{ title: "Places" }} />
+      <Stack.Screen name="PlaceDetail" component={PlaceDetailScreen} options={{ title: "", headerBackTitle: "Back" }} />
     </Stack.Navigator>
   );
 }

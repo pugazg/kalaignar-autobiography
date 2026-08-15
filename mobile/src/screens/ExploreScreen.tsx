@@ -26,6 +26,7 @@ export function ExploreScreen() {
   const pages = manifest.volumes.reduce((n, v) => n + (v.pages ?? 0), 0);
   const letters = manifest.murasoli?.totalLetters ?? 0;
   const years = spanYears(manifest.volumes.map((v) => v.period));
+  const f = manifest.features; // which cross-cut collections are available
 
   return (
     <Screen scroll>
@@ -43,22 +44,26 @@ export function ExploreScreen() {
         <BigTile c={c} icon="bookmark-outline" title="Saved" sub="Bookmarks & offline" onPress={() => nav.navigate("Saved")} />
       </View>
 
-      {/* Collections */}
-      <T faint size={12} style={{ letterSpacing: 1, marginTop: spacing(6), marginBottom: spacing(2) }}>COLLECTIONS</T>
+      {/* Discover — native entry points into the archive's cross-cuts */}
+      <T faint size={12} style={{ letterSpacing: 1, marginTop: spacing(6), marginBottom: spacing(2) }}>DISCOVER</T>
+      {f.themes ? (
+        <DiscoverRow c={c} icon="layers-outline" ta="கருப்பொருள்கள்" en="Themes" sub="Themes across the memoir" onPress={() => nav.navigate("Themes")} />
+      ) : null}
+      {f.people ? (
+        <DiscoverRow c={c} icon="people-outline" ta="மனிதர்கள்" en="People" sub="Figures in the memoir" onPress={() => nav.navigate("People")} />
+      ) : null}
+      {f.places ? (
+        <DiscoverRow c={c} icon="location-outline" ta="இடங்கள்" en="Places" sub="The memoir's geography" onPress={() => nav.navigate("Places")} />
+      ) : null}
       {letters ? (
-        <Card onPress={() => nav.navigate("MurasoliLibrary")}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <Ionicons name="mail-outline" size={24} color={c.primary} style={{ marginRight: spacing(3) }} />
-            <View style={{ flex: 1 }}>
-              <T ta bold size={17}>முரசொலி — உடன்பிறப்புகளுக்கு</T>
-              <T muted size={13} style={{ marginTop: 2 }}>
-                {letters} letters
-                {manifest.murasoli?.volumeCount ? ` · ${manifest.murasoli.volumeCount} volumes` : ""}
-              </T>
-            </View>
-            <Ionicons name="chevron-forward" size={18} color={c.textFaint} />
-          </View>
-        </Card>
+        <DiscoverRow
+          c={c}
+          icon="mail-outline"
+          ta="முரசொலி — உடன்பிறப்புகளுக்கு"
+          en="Murasoli"
+          sub={`${letters} letters${manifest.murasoli?.volumeCount ? ` · ${manifest.murasoli.volumeCount} volumes` : ""}`}
+          onPress={() => nav.navigate("MurasoliLibrary")}
+        />
       ) : null}
 
       {/* By the numbers */}
@@ -71,6 +76,21 @@ export function ExploreScreen() {
         {letters ? <Stat c={c} value={String(letters)} label="Murasoli letters" /> : null}
       </View>
     </Screen>
+  );
+}
+
+function DiscoverRow({ c, icon, ta, en, sub, onPress }: { c: any; icon: any; ta: string; en: string; sub: string; onPress: () => void }) {
+  return (
+    <Card onPress={onPress} style={{ marginBottom: spacing(2) }}>
+      <View style={{ flexDirection: "row", alignItems: "center" }}>
+        <Ionicons name={icon} size={24} color={c.primary} style={{ marginRight: spacing(3) }} />
+        <View style={{ flex: 1 }}>
+          <T ta bold size={17}>{ta}</T>
+          <T muted size={13} style={{ marginTop: 2 }}>{en} · {sub}</T>
+        </View>
+        <Ionicons name="chevron-forward" size={18} color={c.textFaint} />
+      </View>
+    </Card>
   );
 }
 

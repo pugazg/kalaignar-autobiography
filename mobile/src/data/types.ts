@@ -194,6 +194,56 @@ export interface MurasoliScanPage {
   ocrStatus?: string;
 }
 
+// ─── Explore feature datasets (themes / people / places) ─────────────────────
+// Mirror the JSON emitted from data/{themes,people,places}.ts by the exporter.
+
+export interface ThemeStat { value: string; label: string }
+export interface ThemeArchiveRef { label: string; ref: string } // ref = chapter id
+export interface ThemeItem {
+  id: string;
+  icon: string;
+  tamil: string;
+  title: string;
+  narrative: string;
+  initiatives: string[];
+  achievements: string[];
+  stats: ThemeStat[];
+  refs: string[];
+  archive?: {
+    context?: string;
+    people?: string[]; // person ids
+    laws?: ThemeArchiveRef[];
+    events?: ThemeArchiveRef[];
+  };
+}
+export interface ThemesFeature { themes: ThemeItem[] }
+
+export interface PersonItem {
+  id: string;
+  tamil: string;
+  name: string;
+  role: string;
+  relationship: string;
+  firstAppears: string;
+  refs: string[];
+}
+export interface PeopleFeature { people: PersonItem[] }
+
+/** `x`/`y` are SCHEMATIC positions in the TN map viewBox 0 0 1640 2032 — NOT GPS. */
+export interface PlaceItem {
+  id: string;
+  tamil: string;
+  name: string;
+  note: string;
+  refs: string[];
+  x: number;
+  y: number;
+}
+export interface PlacesFeature { places: PlaceItem[] }
+
+/** Schematic map viewBox for `PlaceItem.x`/`y` (not geographic). */
+export const PLACE_MAP_VIEWBOX = { w: 1640, h: 2032 } as const;
+
 // ─── Local (device) state — persisted, never shipped as content ──────────────
 export type ThemeName = "light" | "dark" | "sepia";
 
