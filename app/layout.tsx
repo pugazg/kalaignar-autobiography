@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Newsreader, Noto_Serif_Tamil } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const newsreader = Newsreader({
@@ -76,6 +77,7 @@ export default function RootLayout({
         </a>
         <Providers>
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
