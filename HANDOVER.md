@@ -300,6 +300,36 @@ data foundation only).
 `features.timeline`: render dated events with deep-links to the Reader (the Timeline
 screen currently degrades to era-per-volume). Do not start it without a fresh prompt.
 
+### 3c-next4. Increment 2 · Activity 2 — Timeline milestones (DONE)
+**Implementation.** `src/screens/TimelineScreen.tsx` now renders the real milestones when
+`manifest.features.timeline` is present. It fetches the feature JSON through a new reusable
+data-layer helper `api.feature<T>(url)` (`src/data/client.ts`) — offline-first, so a
+previously fetched copy renders with no network — and validates the payload defensively
+(`parseTimeline`) before use. Milestones are grouped by the source `eras` and rendered in
+the JSON's array order (already chronological — never re-sorted); each card deep-links to
+the cited chapter via the existing `Reader` route (`nav.navigate("Reader", { id: refs[0] })`;
+no `find` term is invented — the dataset has none). Types added to `src/data/types.ts`
+(`TimelineFeature`, `TimelineMilestone`, `TimelineEra`). The timeline milestone `image`
+field (a website `/placeholders` asset) is intentionally not rendered on mobile.
+
+**Fallback (preserved).** When the feature URL is absent, the fetch fails with no cache, or
+the payload is malformed, the screen falls back to the Increment-1 era-per-volume view
+(`EraFallback`, the original component) — no dead-end, no weakened offline/error behaviour.
+
+**Verification (all PASS).** Mobile gate: typecheck, `validate:manifest`, `expo-doctor`
+(21/21), `expo export --platform ios`. iOS 26 simulator (native SDK-57 build): Timeline
+shows the 42 milestones grouped by era in chronological order; Tamil renders; theme
+switching applies (light↔sepia); deep-links open the correct chapter for an early volume
+(1924 → v1-ch01 "பிறந்த ஆண்டு") and later volumes (1991 → v4-ch03, 1996 → v4-ch20), all
+appearing in Home's "recently read"; back-nav returns to the Timeline with scroll
+preserved; Library/Reader navigation unregressed. No physical-device test (not required).
+
+**Scope.** Only the Timeline experience — no Explore/Murasoli/places/people/themes/quotes UI.
+
+**Exact next activity → Increment 2 · Activity 3 — Native Murasoli reader** (next open
+roadmap item): replace the Explore web hand-off with a native letters list + reader using
+the murasoli endpoints. Do not start it without a fresh prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile
