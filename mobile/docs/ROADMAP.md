@@ -31,8 +31,15 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       cited chapter). It degrades to the era-per-volume view when the feature URL is
       absent, the fetch fails with no cache, or the payload is malformed. Verified in
       the iOS 26 simulator (deep-links from Vol 1 & Vol 4, theme switching, back-nav).
-- [ ] **Native Murasoli reader.** Replace the web hand-off in Explore with a
-      letters list + reader using the murasoli endpoints.
+- [x] **Native Murasoli reader.** Explore now opens a native Murasoli Library
+      (data-driven from `index.json` + `letters-index.json`) → Volume (letter list,
+      `FlatList`) → native letter Reader with Tamil / English toggle, translator's
+      note distinguished, shared reading prefs and a separate Murasoli scroll-position
+      key. All 7 volumes (48–54, 346 letters) are browsed as letters — vol 54 is
+      scan-sourced/Tamil-only but presented as its 36 curated letters, matching the
+      website. Offline-first via the existing cache; no bulk download; Murasoli
+      bookmarks deferred (Saved is memoir-specific — see DATA_CONTRACTS). Verified in
+      the iOS 26 simulator.
 - [ ] Explore: theme / people / places entry points from the feature JSON.
 
 ## Production / store-ready — Not done

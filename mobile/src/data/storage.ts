@@ -12,6 +12,7 @@ const K = {
   downloads: "nn:downloads", // map chapterId -> DownloadRecord
   searchHistory: "nn:searchHistory",
   imageCache: "nn:imageCache", // map remote image src -> local file uri
+  murasoliProgress: "nn:mu:progress", // map murasoli id -> position; separate from memoir progress
 };
 
 async function getJSON<T>(key: string, fallback: T): Promise<T> {
@@ -59,6 +60,19 @@ export const storage = {
   },
   async getProgress(id: string) {
     return (await this.getProgressMap())[id] ?? null;
+  },
+
+  // Murasoli reading position — a SEPARATE namespace from memoir progress so the
+  // two collections can never overwrite each other. Keyed by murasoli id
+  // (letter id like "m48-l3706" or scan page id like "m54-p0024").
+  getMurasoliProgressMap: () => getJSON<Record<string, { ratio: number; updatedAt: number }>>(K.murasoliProgress, {}),
+  async setMurasoliProgress(id: string, ratio: number) {
+    const m = await this.getMurasoliProgressMap();
+    m[id] = { ratio, updatedAt: Date.now() };
+    await setJSON(K.murasoliProgress, m);
+  },
+  async getMurasoliProgress(id: string) {
+    return (await this.getMurasoliProgressMap())[id] ?? null;
   },
 
   // recently read

@@ -330,6 +330,42 @@ preserved; Library/Reader navigation unregressed. No physical-device test (not r
 roadmap item): replace the Explore web hand-off with a native letters list + reader using
 the murasoli endpoints. Do not start it without a fresh prompt.
 
+### 3c-next5. Increment 2 · Activity 3 — Native Murasoli reader (DONE)
+**Implementation.** Explore's Murasoli web hand-off is replaced by native navigation:
+Explore → `MurasoliLibrary` → `MurasoliVolume` → `MurasoliReader`. New screens under
+`src/screens/Murasoli*`; routes added to `navigation/index.tsx`; data-layer helpers
+`api.murasoli{Index,Letters,Letter,LetterEn}` (offline-first) in `client.ts`; Murasoli
+types + a separate `nn:mu:progress` storage key in `types.ts`/`storage.ts`. The Library
+is driven entirely by `index.json` + `letters-index.json` (no hardcoded volume numbers).
+Every volume — including the scan-sourced vol 54 — is browsed as letters via `FlatList`;
+the Reader reuses the memoir controls + shared prefs, offers a Tamil/English toggle where
+English exists, and shows the translator's note as a distinct block (never merged into
+Kalaignar's text). Only the letter index is fetched to render a volume; bodies load on tap.
+
+**Vol 54.** Scan-sourced (341 OCR pages in the data) and Tamil-only, but presented as its
+36 curated letters like every other volume, per request and matching the website. The raw
+per-page scan JSON (`/data/murasoli/text/`) is left unconsumed.
+
+**Counts (from data):** 7 volumes · 346 letters (48:58, 49:53, 50:50, 51:49, 52:50,
+53:50, 54:36). English full for 48–53 (310 letters); vol 54 Tamil-only.
+
+**Verification (all PASS).** typecheck / validate:manifest / expo-doctor (21/21) /
+iOS export. iOS 26 simulator: Explore opens Murasoli natively (no web hand-off); Library
+lists all 7 volumes with correct counts/ranges/language; letter list + Tamil reader render;
+English toggle both ways on a vol-49 letter (translator's note distinguished); vol 54 opens
+as 36 letters (Tamil, no fake English); theme + font controls; back-nav Reader→Volume→
+Library→Explore; memoir Library/Reader unregressed.
+
+**Limitations.** No Murasoli bookmarks (Saved is memoir-specific — deferred as a scoped
+cross-collection Saved activity). No bulk-volume download (later download-manager scope).
+No Murasoli search (out of scope). Vol 54's raw scan pages aren't separately browsable.
+
+**Also on this branch's base:** memoir volumes 2–6 were given their Tamil part-titles so
+all six title consistently in the Library (merged separately as PR #6).
+
+**Exact next activity → Increment 2 · Activity 4 — Explore theme / people / places entry
+points** (next open roadmap item, from the feature JSON). Do not start without a fresh prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile

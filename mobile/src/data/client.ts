@@ -12,6 +12,10 @@ import type {
   ChapterTextEn,
   DownloadRecord,
   FullTextEntry,
+  MurasoliIndex,
+  MurasoliLetter,
+  MurasoliLetterEn,
+  MurasoliLettersIndex,
   Visual,
 } from "./types";
 
@@ -115,6 +119,18 @@ export const api = {
    * fetches and caches. Callers validate the payload shape.
    */
   feature: <T>(featureUrl: string) => fetchJSON<T>(featureUrl, { offlineFirst: true }),
+
+  // ── Murasoli collection ────────────────────────────────────────────────────
+  // URLs/templates come from `manifest.murasoli`; everything is offline-first so
+  // an index/letter/page fetched once stays readable offline.
+  murasoliIndex: (indexUrl: string) => fetchJSON<MurasoliIndex>(indexUrl, { offlineFirst: true }),
+  murasoliLetters: (lettersIndexUrl: string) =>
+    fetchJSON<MurasoliLettersIndex>(lettersIndexUrl, { offlineFirst: true }),
+  murasoliLetter: (template: string, id: string) =>
+    fetchJSON<MurasoliLetter>(template.replace("{id}", id), { offlineFirst: true }),
+  /** English translation, or null when this letter has none / isn't cached offline. */
+  murasoliLetterEn: (template: string, id: string) =>
+    fetchJSON<MurasoliLetterEn>(template.replace("{id}", id), { offlineFirst: true }).catch(() => null),
 
   /** Persist a chapter (text + English + visuals + image binaries) for offline reading. */
   async downloadChapter(c: ChapterEntry, volume: number): Promise<DownloadRecord> {

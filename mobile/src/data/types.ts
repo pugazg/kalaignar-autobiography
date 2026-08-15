@@ -118,6 +118,82 @@ export interface TimelineFeature {
   timeline: TimelineMilestone[];
 }
 
+// ─── Murasoli collection (native reader) ─────────────────────────────────────
+// Shapes mirror the generated JSON under /data/murasoli/. Letter volumes (48–53)
+// carry full English; the page-scan volume (54) has `pages` populated in the
+// index and is Tamil-only OCR by page.
+
+export interface MurasoliTitle { en: string; ta: string }
+
+/** One scanned page reference in the index (present only for scan volumes). */
+export interface MurasoliPageRef { id: string; page: number; title: MurasoliTitle; pageType?: string }
+
+export interface MurasoliVolumeIndex {
+  volume: number;
+  pageCount: number;
+  pages: MurasoliPageRef[]; // non-empty ⇒ scan volume; [] ⇒ letter volume
+  sourceUrl?: string;
+}
+
+/** GET /data/murasoli/index.json */
+export interface MurasoliIndex {
+  collection: string;
+  title: MurasoliTitle;
+  rights?: string;
+  volumes: MurasoliVolumeIndex[];
+  totalPages?: number;
+  volumeCount?: number;
+}
+
+export interface MurasoliLetterRef {
+  id: string;
+  number: number;
+  date: string | null;
+  title: MurasoliTitle;
+  pages: string[]; // page numbers (letter vols) or page ids (vol 54)
+}
+export interface MurasoliLettersVolume { volume: number; letterCount: number; letters: MurasoliLetterRef[] }
+/** GET /data/murasoli/letters-index.json */
+export interface MurasoliLettersIndex { collection: string; volumes: MurasoliLettersVolume[] }
+
+/** GET /data/murasoli/letters/<id>.json — original Tamil letter. */
+export interface MurasoliLetter {
+  id: string;
+  collection: string;
+  volume: number;
+  number: number;
+  date: string | null;
+  title: MurasoliTitle;
+  salutation?: string;
+  pages: string[];
+  ocrStatus?: string;
+  paragraphs: string[];
+  curated?: boolean;
+}
+
+/** GET /data/murasoli/letters-en/<id>.json — English translation (subset). */
+export interface MurasoliLetterEn {
+  id: string;
+  lang: string;
+  title?: string; // English title (plain string)
+  salutation?: string;
+  translatorNote?: string; // editorial note — never Kalaignar's own words
+  paragraphs: string[];
+  provenance?: { status?: string; source?: string };
+}
+
+/** GET /data/murasoli/text/<id>.json — one OCR'd scan page (vol 54). */
+export interface MurasoliScanPage {
+  id: string;
+  collection: string;
+  volume: number;
+  page: number;
+  pageType?: string;
+  title: MurasoliTitle;
+  paragraphs: string[];
+  ocrStatus?: string;
+}
+
 // ─── Local (device) state — persisted, never shipped as content ──────────────
 export type ThemeName = "light" | "dark" | "sepia";
 
