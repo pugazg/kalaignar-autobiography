@@ -109,6 +109,13 @@ export const api = {
 
   searchIndex: (volumeSearchUrl: string) => fetchJSON<FullTextEntry[]>(volumeSearchUrl, { offlineFirst: true }),
 
+  /**
+   * Feature dataset (timeline, …) fetched from its `manifest.features.<name>` URL.
+   * offline-first: a previously fetched copy renders with no network; otherwise it
+   * fetches and caches. Callers validate the payload shape.
+   */
+  feature: <T>(featureUrl: string) => fetchJSON<T>(featureUrl, { offlineFirst: true }),
+
   /** Persist a chapter (text + English + visuals + image binaries) for offline reading. */
   async downloadChapter(c: ChapterEntry, volume: number): Promise<DownloadRecord> {
     await fetchJSON<ChapterText>(c.textUrl); // writes cache

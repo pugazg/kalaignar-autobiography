@@ -25,9 +25,12 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       five through `feature_url()`; `npm run build:app-data` chains export → manifest.
       Counts: timeline 42, governance 30, people 15, themes 6, quotes 14. `places` has
       no source yet → its manifest slot stays `null`. See DATA_CONTRACTS → Feature datasets.
-- [ ] **Timeline milestones.** When `features.timeline` is present, render dated
-      events with deep-links straight to the relevant passage (the screen already
-      degrades to era-per-volume without it).
+- [x] **Timeline milestones.** `TimelineScreen` loads `features.timeline` offline-first
+      (`api.feature`) and renders the 42 dated milestones grouped by the source `eras`
+      in chronological order; each card deep-links to `Reader({ id: refs[0] })` (the
+      cited chapter). It degrades to the era-per-volume view when the feature URL is
+      absent, the fetch fails with no cache, or the payload is malformed. Verified in
+      the iOS 26 simulator (deep-links from Vol 1 & Vol 4, theme switching, back-nav).
 - [ ] **Native Murasoli reader.** Replace the web hand-off in Explore with a
       letters list + reader using the murasoli endpoints.
 - [ ] Explore: theme / people / places entry points from the feature JSON.

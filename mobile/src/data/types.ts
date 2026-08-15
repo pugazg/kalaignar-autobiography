@@ -87,6 +87,37 @@ export interface Visual {
   confidence?: number;
 }
 
+// ─── Feature datasets — /data/app/features/<name>.json ───────────────────────
+// Exported from the website's data/*.ts by pipeline/builders/export-feature-data.ts
+// and linked from manifest.features. See mobile/docs/DATA_CONTRACTS.md.
+
+/** One era band in the timeline (grouping metadata for milestones). */
+export interface TimelineEra {
+  id: string; // matches TimelineMilestone.era
+  label: string;
+  years: string;
+}
+
+/** A dated milestone from data/timeline.ts. `refs` are memoir chapter ids. */
+export interface TimelineMilestone {
+  id: string;
+  year: string; // free-form (e.g. "1924", "c. 1938–40") — display verbatim, do not parse
+  era: string; // ∈ TimelineEra.id
+  location?: string;
+  tags?: string[];
+  title: string;
+  summary: string;
+  stat?: { value: string; label: string };
+  image?: string;
+  refs: string[]; // memoir chapter ids; refs[0] is the primary chapter
+}
+
+/** timeline.json: mirrors data/timeline.ts named exports. */
+export interface TimelineFeature {
+  eras: TimelineEra[];
+  timeline: TimelineMilestone[];
+}
+
 // ─── Local (device) state — persisted, never shipped as content ──────────────
 export type ThemeName = "light" | "dark" | "sepia";
 

@@ -141,6 +141,15 @@ activity adds and exports it. The exporter validates before writing and **fails 
 (emitting nothing) on any duplicate id, unknown era/term/kind, broken chapter ref, bad
 `archive.people` id, or empty required field** — it never "fixes" source data.
 
+**Consumers.** `TimelineScreen` loads `features.timeline` via `api.feature<T>(url)`
+(offline-first: a previously fetched copy renders with no network). It validates the
+payload shape defensively and, on anything malformed / a missing feature URL / a fetch
+failure with no cache, falls back to the era-per-volume view. Milestones are grouped by
+`eras` and rendered in the JSON's array order (already chronological — never re-sorted);
+`refs[0]` is treated as the primary chapter and opens the native `Reader` (no search
+`find` term is synthesised — the dataset provides none). The typed shapes live in
+`src/data/types.ts` (`TimelineFeature`, `TimelineMilestone`, `TimelineEra`).
+
 ## ID formats
 
 - Chapter: `v<vol>-ch<NN>` — e.g. `v1-ch01`, `v3-ch140`.
