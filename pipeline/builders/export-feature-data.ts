@@ -32,6 +32,11 @@ import { govTerms, govKindLabels, governance } from "../../data/governance";
 import { people } from "../../data/people";
 import { themes } from "../../data/themes";
 import { quotes } from "../../data/quotes";
+import { places } from "../../data/places";
+
+// Declared schematic map viewBox for place coordinates — NOT geographic (see data/places.ts).
+const MAP_W = 1640;
+const MAP_H = 2032;
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const DATA = path.join(ROOT, "public", "data");
@@ -158,6 +163,18 @@ function validate(chapterIds: Set<string>) {
     requireStr(q.context, `${w}.context`);
     if (!chapterIds.has(q.ref)) err(`${w}.ref "${q.ref}" is not a real chapter id`);
   });
+
+  // places — coordinates are schematic map positions, never geographic
+  checkUniqueIds(places, "places");
+  for (const p of places) {
+    const w = `places[${p.id}]`;
+    requireStr(p.tamil, `${w}.tamil`);
+    requireStr(p.name, `${w}.name`);
+    requireStr(p.note, `${w}.note`);
+    checkRefs(p.refs, w, chapterIds);
+    if (!Number.isFinite(p.x) || p.x < 0 || p.x > MAP_W) err(`${w}.x ${p.x} outside schematic viewBox 0–${MAP_W}`);
+    if (!Number.isFinite(p.y) || p.y < 0 || p.y > MAP_H) err(`${w}.y ${p.y} outside schematic viewBox 0–${MAP_H}`);
+  }
 }
 
 // ── Deterministic write ──────────────────────────────────────────────────────
@@ -189,6 +206,7 @@ function main() {
     ["people", { people }, people.length],
     ["themes", { themes }, themes.length],
     ["quotes", { quotes }, quotes.length],
+    ["places", { places }, places.length],
   ];
 
   for (const [name, payload, count] of datasets) {

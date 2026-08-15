@@ -21,10 +21,11 @@ under "Not done" is genuinely not built — no placeholder screens ship.
 - [x] **Export feature datasets to JSON.** `pipeline/builders/export-feature-data.ts`
       (`npm run build:features`, via `tsx`) imports `data/timeline.ts`, `governance.ts`,
       `people.ts`, `themes.ts`, `quotes.ts` and writes `public/data/app/features/*.json`
-      (deterministic, validated, Tamil-preserving). `build_app_manifest.py` links all
-      five through `feature_url()`; `npm run build:app-data` chains export → manifest.
-      Counts: timeline 42, governance 30, people 15, themes 6, quotes 14. `places` has
-      no source yet → its manifest slot stays `null`. See DATA_CONTRACTS → Feature datasets.
+      (deterministic, validated, Tamil-preserving). `build_app_manifest.py` links them
+      through `feature_url()`; `npm run build:app-data` chains export → manifest.
+      Counts: timeline 42, governance 30, people 15, themes 6, quotes 14. (`places` was
+      added later in Activity 4A — see below, all six feature slots now populate.)
+      See DATA_CONTRACTS → Feature datasets.
 - [x] **Timeline milestones.** `TimelineScreen` loads `features.timeline` offline-first
       (`api.feature`) and renders the 42 dated milestones grouped by the source `eras`
       in chronological order; each card deep-links to `Reader({ id: refs[0] })` (the

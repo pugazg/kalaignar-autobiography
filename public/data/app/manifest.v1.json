@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "0aff0807d5e8",
-  "generatedAt": "2026-08-15T06:38:13.009297+00:00",
+  "generatedAt": "2026-08-15T07:16:55.496507+00:00",
   "dataBase": "/data",
   "work": {
     "titleTa": "நெஞ்சுக்கு நீதி",
@@ -3618,7 +3618,7 @@
     "timeline": "/data/app/features/timeline.json",
     "governance": "/data/app/features/governance.json",
     "people": "/data/app/features/people.json",
-    "places": null,
+    "places": "/data/app/features/places.json",
     "themes": "/data/app/features/themes.json",
     "quotes": "/data/app/features/quotes.json",
     "stats": "/data/stats.json"

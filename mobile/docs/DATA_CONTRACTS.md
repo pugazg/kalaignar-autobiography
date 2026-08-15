@@ -18,9 +18,10 @@ Built by `pipeline/builders/build_app_manifest.py`. Fetched once, cached.
             "author": "…", "siteUrl": "https://nenjukkuneethi.org" },
   "volumes": [ VolumeEntry, … ],   // all 6
   "murasoli": MurasoliEntry | null,
-  "features": {                    // JSON URLs or null until exported
-    "timeline": null, "governance": null, "people": null,
-    "places": null, "themes": null, "quotes": null, "stats": "/data/stats.json"
+  "features": {                    // JSON URLs (null only until a dataset is exported)
+    "timeline": "/data/app/features/timeline.json", "governance": "…", "people": "…",
+    "places": "/data/app/features/places.json", "themes": "…", "quotes": "…",
+    "stats": "/data/stats.json"
   }
 }
 ```
@@ -134,12 +135,21 @@ mirrors its source module's named exports; every `ref`/`refs` is a memoir chapte
 
 // quotes.json  (from data/quotes.ts) — a chapter may carry more than one quote
 { "quotes": [ { "tamil": "…", "english": "…", "context": "…", "ref": "v1-ch01" } , … ] }
+
+// places.json  (from data/places.ts) — x/y are SCHEMATIC map positions, not GPS
+{ "places": [ {
+  "id": "thirukkuvalai", "tamil": "திருக்குவளை", "name": "Thirukkuvalai",
+  "note": "…", "refs": ["v1-ch01", "v4-ch02"],
+  "x": 1250, "y": 1120           // within the schematic TN viewBox 0 0 1640 2032
+}, … ] }
 ```
 
-`places` has no source dataset yet, so `features.places` stays `null` until a later
-activity adds and exports it. The exporter validates before writing and **fails loudly
+All six datasets are exported. The exporter validates before writing and **fails loudly
 (emitting nothing) on any duplicate id, unknown era/term/kind, broken chapter ref, bad
-`archive.people` id, or empty required field** — it never "fixes" source data.
+`archive.people` id, empty required field, or a place `x`/`y` outside the schematic
+viewBox (x 0–1640, y 0–2032)** — it never "fixes" source data. The place coordinates are
+**schematic positions in the source's Tamil Nadu map viewBox, not geographic
+coordinates**; they are exported verbatim and must never be geocoded or "corrected".
 
 **Consumers.** `TimelineScreen` loads `features.timeline` via `api.feature<T>(url)`
 (offline-first: a previously fetched copy renders with no network). It validates the
