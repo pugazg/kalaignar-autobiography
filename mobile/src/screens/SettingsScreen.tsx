@@ -4,6 +4,7 @@ import { useFocusEffect } from "@react-navigation/native";
 import Constants from "expo-constants";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "@/data/client";
+import { ORIGIN } from "@/config/env";
 import { useApp, useTheme } from "@/data/AppState";
 import { Eyebrow, Screen, T } from "@/components/ui";
 import { fontSteps, lineHeightSteps, radius, spacing } from "@/theme/theme";
@@ -15,8 +16,11 @@ const THEMES: { key: ThemeName; label: string }[] = [
   { key: "dark", label: "Dark" },
 ];
 
-const PRIVACY_URL = "https://nenjukkuneethi.org/privacy";
-const SUPPORT_URL = "https://nenjukkuneethi.org/about";
+// Legal/support links resolve against the shared content origin (default
+// nenjukkuneethi.org). These map to real public pages required for store submission.
+const PRIVACY_URL = `${ORIGIN}/privacy`;
+const SUPPORT_URL = `${ORIGIN}/support`;
+const ABOUT_URL = `${ORIGIN}/about`;
 
 export function SettingsScreen() {
   const { prefs, setPrefs, manifest } = useApp();
@@ -168,7 +172,8 @@ export function SettingsScreen() {
       <Section c={c} title="About">
         <LinkRow c={c} icon="shield-checkmark-outline" label="Privacy Policy" onPress={() => openLink(PRIVACY_URL)} />
         <LinkRow c={c} icon="help-buoy-outline" label="Support" onPress={() => openLink(SUPPORT_URL)} />
-        <LinkRow c={c} icon="globe-outline" label="nenjukkuneethi.org" onPress={() => openLink("https://nenjukkuneethi.org")} last />
+        <LinkRow c={c} icon="information-circle-outline" label="About" onPress={() => openLink(ABOUT_URL)} />
+        <LinkRow c={c} icon="globe-outline" label="nenjukkuneethi.org" onPress={() => openLink(ORIGIN)} last />
       </Section>
 
       <View style={{ marginTop: spacing(5), alignItems: "center" }}>
