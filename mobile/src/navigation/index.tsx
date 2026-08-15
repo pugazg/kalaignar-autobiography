@@ -56,7 +56,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function HeaderGear({ onPress }: { onPress: () => void }) {
   const c = useTheme();
   return (
-    <Pressable onPress={onPress} accessibilityLabel="Settings" hitSlop={12} style={{ paddingHorizontal: 4 }}>
+    <Pressable onPress={onPress} accessibilityRole="button" accessibilityLabel="Settings" hitSlop={12} style={{ paddingHorizontal: 4 }}>
       <Ionicons name="settings-outline" size={22} color={c.text} />
     </Pressable>
   );

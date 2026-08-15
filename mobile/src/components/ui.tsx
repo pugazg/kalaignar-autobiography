@@ -29,19 +29,23 @@ export function Screen({ children, scroll = false, style }: ViewProps & { scroll
   );
 }
 
-/** Tamil-optimized text. `ta` uses Noto Serif Tamil; latin/UI text stays system. */
-export function T({ ta, bold, muted, faint, size, style, children, ...rest }: TextProps & {
+/** Tamil-optimized text. `ta` uses Noto Serif Tamil; latin/UI text stays system.
+ *  `heading` exposes the run as a VoiceOver heading (rotor navigation) — use for a
+ *  screen's primary title only, not every label. */
+export function T({ ta, bold, muted, faint, size, heading, style, children, ...rest }: TextProps & {
   ta?: boolean;
   bold?: boolean;
   muted?: boolean;
   faint?: boolean;
   size?: number;
+  heading?: boolean;
 }) {
   const c = useTheme();
   const color = faint ? c.textFaint : muted ? c.textMuted : c.text;
   return (
     <Text
       allowFontScaling // respects OS dynamic type
+      accessibilityRole={heading ? "header" : rest.accessibilityRole}
       style={[
         { color, fontSize: size ?? 16 },
         ta && { fontFamily: bold ? tamilFontBold : tamilFont, lineHeight: (size ?? 16) * 1.6 },

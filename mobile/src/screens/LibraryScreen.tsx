@@ -26,7 +26,7 @@ export function LibraryScreen() {
   return (
     <Screen>
       <Eyebrow>{manifest.work.titleEn} · six volumes</Eyebrow>
-      <T ta bold size={26} style={{ marginBottom: spacing(4) }}>{manifest.work.titleTa}</T>
+      <T ta bold heading size={26} style={{ marginBottom: spacing(4) }}>{manifest.work.titleTa}</T>
       <FlatList
         data={manifest.volumes}
         keyExtractor={(v) => String(v.n)}

@@ -117,7 +117,7 @@ export function ReaderScreen() {
     nav.setOptions({
       headerRight: () => (
         <View style={{ flexDirection: "row", gap: spacing(4) }}>
-          <Pressable onPress={toggleBookmark} hitSlop={10} accessibilityLabel={bookmarked ? "Remove bookmark" : "Bookmark"}>
+          <Pressable onPress={toggleBookmark} hitSlop={12} accessibilityRole="button" accessibilityLabel={bookmarked ? "Remove bookmark" : "Bookmark"}>
             <Ionicons name={bookmarked ? "bookmark" : "bookmark-outline"} size={22} color={bookmarked ? c.accent : c.text} />
           </Pressable>
         </View>
@@ -197,7 +197,7 @@ export function ReaderScreen() {
         <Ctrl icon="contrast" onPress={() => setPrefs({ followSystemTheme: false, theme: prefs.theme === "light" ? "sepia" : prefs.theme === "sepia" ? "dark" : "light" })} label="Theme" c={c} />
         <View style={{ flex: 1 }} />
         {en?.paragraphs?.length ? (
-          <Pressable onPress={() => setPrefs({ showEnglish: !prefs.showEnglish })} accessibilityRole="switch" accessibilityState={{ checked: showEn }}
+          <Pressable onPress={() => setPrefs({ showEnglish: !prefs.showEnglish })} accessibilityRole="switch" accessibilityLabel="Show English translation" accessibilityState={{ checked: showEn }}
             style={{ paddingHorizontal: spacing(3), paddingVertical: spacing(1.5), borderRadius: radius.pill, borderWidth: 1, borderColor: c.primary, backgroundColor: showEn ? c.primary : "transparent" }}>
             <T size={12} bold style={{ color: showEn ? c.primaryText : c.primary }}>{showEn ? "EN" : "தமிழ்"}</T>
           </Pressable>
@@ -212,7 +212,7 @@ export function ReaderScreen() {
         contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(24) }}
       >
         <T faint size={11} style={{ letterSpacing: 1 }}>நெஞ்சுக்கு நீதி · தொகுதி {found.volume.n}{found.chapter.startPage ? ` · பக். ${found.chapter.startPage}–${found.chapter.endPage}` : ""}</T>
-        <T ta bold size={fontSize + 6} style={{ marginTop: spacing(2), marginBottom: spacing(4) }}>
+        <T ta bold heading size={fontSize + 6} style={{ marginTop: spacing(2), marginBottom: spacing(4) }}>
           {showEn && en?.title ? en.title : text.title}
         </T>
 
@@ -268,7 +268,7 @@ function highlightMatch(p: string, needle: string, c: any): React.ReactNode {
 
 function Ctrl({ icon, onPress, label, c }: { icon: any; onPress: () => void; label: string; c: any }) {
   return (
-    <Pressable onPress={onPress} hitSlop={8} accessibilityLabel={label} style={{ padding: spacing(2) }}>
+    <Pressable onPress={onPress} hitSlop={8} accessibilityRole="button" accessibilityLabel={label} style={{ padding: spacing(2) }}>
       <Ionicons name={icon} size={20} color={c.textMuted} />
     </Pressable>
   );

@@ -32,7 +32,7 @@ export function TimelineScreen() {
   return (
     <Screen scroll>
       <Eyebrow>1924 – 2005 · Eighty-one years</Eyebrow>
-      <T ta bold size={26} style={{ marginBottom: spacing(2) }}>காலக்கோடு</T>
+      <T ta bold heading size={26} style={{ marginBottom: spacing(2) }}>காலக்கோடு</T>
       <T muted style={{ marginBottom: spacing(6) }}>
         {showMilestones
           ? "Kalaignar's life in dated milestones from the memoir. Tap an event to open the chapter."

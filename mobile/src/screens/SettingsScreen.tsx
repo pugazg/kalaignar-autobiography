@@ -70,7 +70,7 @@ export function SettingsScreen() {
   return (
     <Screen scroll>
       <Eyebrow>Settings</Eyebrow>
-      <T ta bold size={26} style={{ marginBottom: spacing(5) }}>அமைப்புகள்</T>
+      <T ta bold heading size={26} style={{ marginBottom: spacing(5) }}>அமைப்புகள்</T>
 
       {/* ─── Appearance ─── */}
       <Section c={c} title="Appearance">

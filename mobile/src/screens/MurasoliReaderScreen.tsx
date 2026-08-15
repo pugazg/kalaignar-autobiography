@@ -120,7 +120,7 @@ export function MurasoliReaderScreen() {
         <Ctrl icon="contrast" onPress={() => setPrefs({ followSystemTheme: false, theme: prefs.theme === "light" ? "sepia" : prefs.theme === "sepia" ? "dark" : "light" })} label="Theme" c={c} />
         <View style={{ flex: 1 }} />
         {en?.paragraphs?.length ? (
-          <Pressable onPress={() => setPrefs({ showEnglish: !prefs.showEnglish })} accessibilityRole="switch" accessibilityState={{ checked: showEn }}
+          <Pressable onPress={() => setPrefs({ showEnglish: !prefs.showEnglish })} accessibilityRole="switch" accessibilityLabel="Show English translation" accessibilityState={{ checked: showEn }}
             style={{ paddingHorizontal: spacing(3), paddingVertical: spacing(1.5), borderRadius: radius.pill, borderWidth: 1, borderColor: c.primary, backgroundColor: showEn ? c.primary : "transparent" }}>
             <T size={12} bold style={{ color: showEn ? c.primaryText : c.primary }}>{showEn ? "EN" : "தமிழ்"}</T>
           </Pressable>
@@ -137,7 +137,7 @@ export function MurasoliReaderScreen() {
         <T faint size={11} style={{ letterSpacing: 1 }}>
           முரசொலி · தொகுதி {letter.volume} · #{letter.number}{letter.date ? ` · ${formatDate(letter.date)}` : ""}
         </T>
-        <T ta={!showEn} bold size={fontSize + 5} style={{ marginTop: spacing(2), marginBottom: spacing(3), fontFamily: showEn ? undefined : tamilFont }}>
+        <T ta={!showEn} bold heading size={fontSize + 5} style={{ marginTop: spacing(2), marginBottom: spacing(3), fontFamily: showEn ? undefined : tamilFont }}>
           {title}
         </T>
 
@@ -180,7 +180,7 @@ export function MurasoliReaderScreen() {
 
 function Ctrl({ icon, onPress, label, c }: { icon: any; onPress: () => void; label: string; c: any }) {
   return (
-    <Pressable onPress={onPress} hitSlop={8} accessibilityLabel={label} style={{ padding: spacing(2) }}>
+    <Pressable onPress={onPress} hitSlop={8} accessibilityRole="button" accessibilityLabel={label} style={{ padding: spacing(2) }}>
       <Ionicons name={icon} size={20} color={c.textMuted} />
     </Pressable>
   );
