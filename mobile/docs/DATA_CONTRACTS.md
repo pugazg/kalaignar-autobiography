@@ -18,9 +18,10 @@ Built by `pipeline/builders/build_app_manifest.py`. Fetched once, cached.
             "author": "…", "siteUrl": "https://nenjukkuneethi.org" },
   "volumes": [ VolumeEntry, … ],   // all 6
   "murasoli": MurasoliEntry | null,
-  "features": {                    // JSON URLs or null until exported
-    "timeline": null, "governance": null, "people": null,
-    "places": null, "themes": null, "quotes": null, "stats": "/data/stats.json"
+  "features": {                    // JSON URLs (null only until a dataset is exported)
+    "timeline": "/data/app/features/timeline.json", "governance": "…", "people": "…",
+    "places": "/data/app/features/places.json", "themes": "…", "quotes": "…",
+    "stats": "/data/stats.json"
   }
 }
 ```
@@ -134,12 +135,21 @@ mirrors its source module's named exports; every `ref`/`refs` is a memoir chapte
 
 // quotes.json  (from data/quotes.ts) — a chapter may carry more than one quote
 { "quotes": [ { "tamil": "…", "english": "…", "context": "…", "ref": "v1-ch01" } , … ] }
+
+// places.json  (from data/places.ts) — x/y are SCHEMATIC map positions, not GPS
+{ "places": [ {
+  "id": "thirukkuvalai", "tamil": "திருக்குவளை", "name": "Thirukkuvalai",
+  "note": "…", "refs": ["v1-ch01", "v4-ch02"],
+  "x": 1250, "y": 1120           // within the schematic TN viewBox 0 0 1640 2032
+}, … ] }
 ```
 
-`places` has no source dataset yet, so `features.places` stays `null` until a later
-activity adds and exports it. The exporter validates before writing and **fails loudly
+All six datasets are exported. The exporter validates before writing and **fails loudly
 (emitting nothing) on any duplicate id, unknown era/term/kind, broken chapter ref, bad
-`archive.people` id, or empty required field** — it never "fixes" source data.
+`archive.people` id, empty required field, or a place `x`/`y` outside the schematic
+viewBox (x 0–1640, y 0–2032)** — it never "fixes" source data. The place coordinates are
+**schematic positions in the source's Tamil Nadu map viewBox, not geographic
+coordinates**; they are exported verbatim and must never be geocoded or "corrected".
 
 **Consumers.** `TimelineScreen` loads `features.timeline` via `api.feature<T>(url)`
 (offline-first: a previously fetched copy renders with no network). It validates the
@@ -149,6 +159,21 @@ failure with no cache, falls back to the era-per-volume view. Milestones are gro
 `refs[0]` is treated as the primary chapter and opens the native `Reader` (no search
 `find` term is synthesised — the dataset provides none). The typed shapes live in
 `src/data/types.ts` (`TimelineFeature`, `TimelineMilestone`, `TimelineEra`).
+
+**Explore — Themes / People / Places.** The Explore screen shows native Discover entries
+that each load `features.{themes,people,places}` through the shared `useFeature<T>(url, parse)`
+hook (wrapping `api.feature`, offline-first). Every collection **degrades independently**:
+a missing feature URL, a fetch failure with no cache, or a payload that fails its defensive
+parser resolves to a truthful loading/unavailable state without crashing Explore, and a
+malformed collection fails whole (records are never silently dropped to fake completeness).
+Each has a list + a detail screen. Memoir `refs` are resolved to real chapter titles/volumes
+and deep-linked to the existing `Reader({ id })` via the shared `ChapterRefs` component
+(unresolved ids are dropped, never linked; no `find` term invented). Theme `archive.events`
+open their `ref` chapter; `archive.people` link to the native Person detail. Places render a
+dependency-free **schematic** map from the source `x`/`y` in the viewBox `0 0 1640 2032`
+(percentage-positioned markers, labelled non-geographic, tap → detail) plus a list. Reading
+prefs (font/line-height/theme) are the shared memoir prefs; these screens add no new local
+state. Types: `ThemesFeature`/`ThemeItem`, `PeopleFeature`/`PersonItem`, `PlacesFeature`/`PlaceItem`.
 
 ## Murasoli collection (native reader)
 

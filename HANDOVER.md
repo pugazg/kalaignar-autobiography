@@ -366,6 +366,48 @@ all six title consistently in the Library (merged separately as PR #6).
 **Exact next activity → Increment 2 · Activity 4 — Explore theme / people / places entry
 points** (next open roadmap item, from the feature JSON). Do not start without a fresh prompt.
 
+### 3c-next6. Increment 2 · Activity 4 — Explore: Themes · People · Places (DONE)
+Activity 3 (native Murasoli) merged to `main` first. Then, on `mobile/increment2-explore`:
+
+**4A — Places export.** `data/places.ts` (authoritative, 10 places) was unexported
+(`features.places` was null). Extended `pipeline/builders/export-feature-data.ts` to import
+it and emit `public/data/app/features/places.json` — the exporter now produces all six
+datasets. Places validation (fails loudly): unique ids; non-empty tamil/name/note; non-empty
+refs; every ref a real chapter; `x`/`y` finite and within the **schematic** viewBox
+(x 0–1640, y 0–2032). Coordinates are schematic map positions, exported verbatim — never
+geocoded. Manifest rebuilt: `features.places` now resolves; all other feature URLs and
+memoir/Murasoli counts unchanged; deterministic rerun clean. Corrected the stale "places has
+no source" docs.
+
+**4B — native Explore.** Explore's Discover section now has native entries for Themes, People
+and Places (plus the Activity-3 Murasoli). New screens `src/screens/{Themes,People,Places}Screen.tsx`
+(list + detail each), a shared `src/data/useFeature.ts` loader (offline-first, defensive
+parse, independent degradation) and `src/components/ChapterRefs.tsx` (resolves refs → real
+chapter titles → `Reader`). Theme detail shows narrative/initiatives/achievements/stats +
+archive context, with `archive.events` → Reader and `archive.people` → Person detail. Places
+has a dependency-free schematic map (source x/y, labelled non-geographic) + list. Shared
+reading prefs; no new mapping dependency. Types added to `types.ts`; 6 routes added.
+
+**Counts (from generated JSON):** themes 6 · people 15 · places 10 · timeline 42 ·
+governance 30 · quotes 14. (Governance/Quotes have data but **no Explore UI** — out of scope.)
+
+**Verification (all PASS).** typecheck (root + mobile) · validate:manifest · expo-doctor
+(21/21) · iOS export · website `next build`. iOS 26 simulator: Explore shows Themes/People/
+Places/Murasoli; Themes list+detail with archive-event → Reader (v2-ch49); People list +
+Person detail (Periyar, refs resolved); Places list + schematic map + detail (Chennai →
+v2-ch66); memoir Reader deep-links correct; Murasoli + memoir Library/Reader unregressed.
+(Places was exercised against the branch's data via a temporary local origin, since live
+`features.places` deploys only on merge; the override was reverted and never committed.)
+
+**Limitations.** No Governance/Quotes UI (out of scope). No cross-feature search, no bulk
+download, no Murasoli changes. Places schematic map is dot-markers only (no TN outline —
+avoids a mapping dependency).
+
+**Exact next activity → the next open item in `mobile/docs/ROADMAP.md`** after Explore
+entry points (re-check the roadmap; the remaining Increment-2 UI items are complete, so the
+next work is in the "Production / store-ready" list, e.g. push notifications / share-as-image
+/ download manager). Do not start without a fresh prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile

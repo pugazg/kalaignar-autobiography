@@ -21,10 +21,11 @@ under "Not done" is genuinely not built — no placeholder screens ship.
 - [x] **Export feature datasets to JSON.** `pipeline/builders/export-feature-data.ts`
       (`npm run build:features`, via `tsx`) imports `data/timeline.ts`, `governance.ts`,
       `people.ts`, `themes.ts`, `quotes.ts` and writes `public/data/app/features/*.json`
-      (deterministic, validated, Tamil-preserving). `build_app_manifest.py` links all
-      five through `feature_url()`; `npm run build:app-data` chains export → manifest.
-      Counts: timeline 42, governance 30, people 15, themes 6, quotes 14. `places` has
-      no source yet → its manifest slot stays `null`. See DATA_CONTRACTS → Feature datasets.
+      (deterministic, validated, Tamil-preserving). `build_app_manifest.py` links them
+      through `feature_url()`; `npm run build:app-data` chains export → manifest.
+      Counts: timeline 42, governance 30, people 15, themes 6, quotes 14. (`places` was
+      added later in Activity 4A — see below, all six feature slots now populate.)
+      See DATA_CONTRACTS → Feature datasets.
 - [x] **Timeline milestones.** `TimelineScreen` loads `features.timeline` offline-first
       (`api.feature`) and renders the 42 dated milestones grouped by the source `eras`
       in chronological order; each card deep-links to `Reader({ id: refs[0] })` (the
@@ -40,7 +41,14 @@ under "Not done" is genuinely not built — no placeholder screens ship.
       website. Offline-first via the existing cache; no bulk download; Murasoli
       bookmarks deferred (Saved is memoir-specific — see DATA_CONTRACTS). Verified in
       the iOS 26 simulator.
-- [ ] Explore: theme / people / places entry points from the feature JSON.
+- [x] **Explore: theme / people / places entry points from the feature JSON.** Explore
+      now has native Discover entries for Themes (6), People (15), Places (10) alongside
+      Murasoli, each loading its `features.*` JSON offline-first via a shared `useFeature`
+      hook with a defensive parser (a failed/malformed collection degrades independently).
+      Themes/People/Places have list + detail screens; details deep-link memoir refs to the
+      Reader (resolved to real chapter titles), theme archive events/people cross-link, and
+      Places adds a dependency-free schematic map (source x/y, labelled non-geographic).
+      `data/places.ts` is now exported (Activity 4A). Verified in the iOS 26 simulator.
 
 ## Production / store-ready — Not done
 
