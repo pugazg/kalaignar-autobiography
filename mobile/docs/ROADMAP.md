@@ -52,15 +52,21 @@ under "Not done" is genuinely not built — no placeholder screens ship.
 
 ## Production / store-ready — Not done
 
+> Increment 2's richer surfaces are all complete. Before building any of the items
+> below, see **`mobile/docs/PRODUCTION_READINESS.md`** — a prioritized audit that
+> ranks these by genuine store-blocker vs polish vs post-launch. **The next
+> workstream is legal/store-link readiness (Privacy + Support/About pages) +
+> release-engineering setup, NOT push notifications.**
+
 - [ ] Push notifications: `expo-notifications` wiring + a content-update signal
-      keyed on the manifest's `contentVersion`.
+      keyed on the manifest's `contentVersion`. _(Post-launch — not a blocker; see audit.)_
 - [ ] Share-as-image (`react-native-view-shot` is already a dependency).
 - [ ] Offline banner via `@react-native-community/netinfo` (already a dependency).
 - [ ] Download manager screen: bulk / whole-volume downloads, storage breakdown.
 - [ ] iPad / tablet split layouts.
 - [ ] Crash reporting (e.g. Sentry) and privacy-minimal analytics.
 - [ ] Accessibility audit (VoiceOver / TalkBack, contrast, focus order).
-- [ ] Manifest validation in CI.
+- [x] Manifest validation in CI. _(Mobile CI runs `validate:manifest` — done.)_
 - [ ] Server-side universal-link verification files on the website:
       `.well-known/apple-app-site-association` + `assetlinks.json`.
 - [ ] Store assets: screenshots, metadata, privacy policy page, support page.

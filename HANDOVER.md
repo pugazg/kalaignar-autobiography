@@ -408,6 +408,18 @@ entry points (re-check the roadmap; the remaining Increment-2 UI items are compl
 next work is in the "Production / store-ready" list, e.g. push notifications / share-as-image
 / download manager). Do not start without a fresh prompt.
 
+### 3c-next7. Production readiness audit (DONE — planning only)
+Increment 2 is complete. A production/store-readiness audit is recorded in
+**`mobile/docs/PRODUCTION_READINESS.md`** (status by category, strict store-blocker
+classification, and a ranked execution order). Headline: the genuine store blockers are
+(1) live **Privacy Policy + Support/About pages** (Settings links currently 404),
+(2) **release engineering** — `eas.json` + version/build strategy + a paid Apple account,
+(3) **store metadata/assets**. Everything else (Universal Links website files, offline
+banner, crash reporting, share-as-image, download manager, **push notifications**, iPad,
+Android) is polish/optional/post-launch. **Exact next workstream: legal/store-link readiness
+(Privacy + Support/About pages) + release-engineering setup — NOT push notifications.**
+No production feature was implemented in the audit. See `STORE_CHECKLIST.md` for the raw gates.
+
 ### 3d. How to run
 ```bash
 cd mobile
