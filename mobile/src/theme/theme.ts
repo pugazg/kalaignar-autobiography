@@ -21,8 +21,10 @@ export type Palette = {
 };
 
 const marina = "#0E5D63";
-const marinaLight = "#1B7F87";
-const brass = "#B98A2F";
+// Brighter marina for dark mode — darkened teal fails AA as link/label text on the
+// night background, so dark uses this lighter tone (5.5:1 on bg vs 4.0:1 before).
+const marinaLight = "#2A98A1";
+const brass = "#B98A2F"; // dark-mode accent (6:1 on night bg); light/sepia use darker brass below for AA
 
 export const palettes: Record<ThemeName, Palette> = {
   light: {
@@ -32,10 +34,10 @@ export const palettes: Record<ThemeName, Palette> = {
     surfaceAlt: "#F1ECE2",
     text: "#0F1720",
     textMuted: "rgba(15,23,32,0.66)",
-    textFaint: "rgba(15,23,32,0.45)",
+    textFaint: "rgba(15,23,32,0.6)", // was 0.45 (2.9:1 — failed AA); now 4.6:1 on paper
     primary: marina,
     primaryText: "#FAF7F1",
-    accent: brass,
+    accent: "#8C6A1E", // darkened brass — was #B98A2F (2.9:1); now 4.7:1 on paper (AA)
     border: "rgba(15,23,32,0.12)",
     highlight: "rgba(185,138,47,0.28)",
     statusBar: "dark",
@@ -46,11 +48,11 @@ export const palettes: Record<ThemeName, Palette> = {
     surface: "#FBF4E3",
     surfaceAlt: "#EADFC4",
     text: "#3B2F1E",
-    textMuted: "rgba(59,47,30,0.68)",
-    textFaint: "rgba(59,47,30,0.45)",
+    textMuted: "rgba(59,47,30,0.72)", // was 0.68 (4.4:1 — under AA); now 4.9:1 on sepia
+    textFaint: "rgba(59,47,30,0.7)", // was 0.45 (2.5:1 — failed AA); now 4.7:1 on sepia
     primary: "#0D5158",
     primaryText: "#FBF4E3",
-    accent: "#9A6E1F",
+    accent: "#8C6318", // darkened brass — was #9A6E1F (3.9:1); now 4.6:1 on sepia (AA)
     border: "rgba(59,47,30,0.16)",
     highlight: "rgba(154,110,31,0.30)",
     statusBar: "dark",
@@ -62,7 +64,7 @@ export const palettes: Record<ThemeName, Palette> = {
     surfaceAlt: "#1B2530",
     text: "#EDE7DB",
     textMuted: "rgba(237,231,219,0.66)",
-    textFaint: "rgba(237,231,219,0.45)",
+    textFaint: "rgba(237,231,219,0.56)", // was 0.45 (3.9:1 — under AA); now 5.4:1 on night
     primary: marinaLight,
     primaryText: "#0C1116",
     accent: brass,
