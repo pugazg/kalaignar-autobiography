@@ -34,8 +34,10 @@ on-device for offline use. No memoir prose ships in the bundle. Bundle id / Andr
 | B | iOS Associated Domains / Android intent filters (config) | COMPLETE in `app.json` (`applinks:`, autoVerify) | No |
 | B | `apple-app-site-association` + `assetlinks.json` (website) | **NOT STARTED** (no `.well-known`) | No (custom scheme works) |
 | B | Universal-link entitlement signing + on-device verification | NOT STARTED (needs paid team) | No |
-| C | Dynamic Type + accessibility labels | COMPLETE (statically) | No |
-| C | VoiceOver/TalkBack pass, contrast across themes, focus order | NOT STARTED (needs manual/device) | Soft (review risk) |
+| C | Dynamic Type + accessibility labels | COMPLETE (statically) · simulator-verified (Activity 3) | No |
+| C | Contrast across themes (light/sepia/dark) | **COMPLETE** (Activity 3 — 7 tokens fixed to WCAG AA, measured; see `docs/ACCESSIBILITY.md`) | No |
+| C | Screen-reader semantics / roles / headings / touch targets | **COMPLETE (repo-side)** (Activity 3) — manual VoiceOver/TalkBack device pass still pending | Soft (review risk) |
+| C | VoiceOver / TalkBack on-device navigation pass | NOT STARTED (needs manual/device — documented, not faked) | Soft (review risk) |
 | D | Per-chapter download, offline images, offline-first caches, storage total, clear-offline | COMPLETE | No |
 | D | Offline banner (`netinfo` dep unused), bulk/volume download, download manager, storage breakdown, content-version update check | NOT STARTED | No |
 | E | Native text share | COMPLETE (2 readers) | No |
@@ -83,7 +85,7 @@ post-launch), **not** roadmap order.
 |---|---|---|---|---|---|---|
 | 1 | Privacy + Support/About public pages (website) + Settings URLs | **DONE** (Activity 1) | was Yes | Hard Apple/Play requirement; smallest unblock | — | Small–Medium |
 | 2 | Release engineering: `eas.json`, version/build-number strategy, export-compliance flag | NOT STARTED | **Yes (prereq)** | Nothing builds for TestFlight without it | **Next** | **Small** |
-| 3 | Accessibility pass: contrast across themes + VoiceOver/label/focus review | PARTIAL | Soft | Review risk; static parts already done | Before submission | **Medium** |
+| 3 | Accessibility pass: contrast across themes + VoiceOver/label/focus review | **Repo-side COMPLETE (Activity 3)**; manual VoiceOver device pass pending | Soft | Review risk; contrast/semantics/headings/touch-targets fixed & measured, see `docs/ACCESSIBILITY.md` | Manual VO before submission | **Medium** |
 | 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | NOT STARTED | **Yes** | Required to submit | Before submission | **Medium** |
 | 5 | Universal Links: website `.well-known` files + paid-team verification | PARTIAL | No | App works on custom scheme; needs paid team | After account is paid | **Medium** |
 | 6 | Offline banner (`netinfo`) + truthful offline states polish | NOT STARTED | No | Cheap reliability win | Launch polish | **Small** |

@@ -33,10 +33,12 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 
 ## Accessibility
 
-- [x] Dynamic Type via `allowFontScaling`
-- [x] Accessibility labels on interactive controls
-- [ ] VoiceOver / TalkBack pass
-- [ ] Contrast check across light / sepia / dark
+- [x] Dynamic Type via `allowFontScaling` (simulator-verified; Reader reflows at all sizes —
+      see `docs/ACCESSIBILITY.md` for the extreme-size dashboard caveat)
+- [x] Accessibility labels on interactive controls (+ roles, `busy`/`selected`/`checked` state,
+      heading semantics on primary titles — Activity 3)
+- [x] Contrast check across light / sepia / dark (measured; 7 tokens fixed to WCAG AA)
+- [ ] VoiceOver / TalkBack on-device pass (manual — not performed; see `docs/ACCESSIBILITY.md`)
 
 ## Store listing assets
 
