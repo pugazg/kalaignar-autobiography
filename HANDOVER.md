@@ -497,6 +497,40 @@ deliberately not capped.
 assets** (screenshots per device class, Ta/En description + keywords, privacy "nutrition"
 labels, age rating). Do not start without a fresh prompt. See `mobile/docs/STORE_CHECKLIST.md`.
 
+### 3c-next11. Production readiness · Activity 4 — App Store listing package (DONE)
+**PR #12 (Accessibility) merged** — squash `28eebe8` on `main`; post-merge Mobile CI green; site
+healthy; the PR description was corrected to 4 commits / 20 files before merge (the "20th file"
+was `HANDOVER.md`, the 4th commit — no unexpected files).
+
+**Branch `mobile/app-store-assets` (PR TBD, leave unmerged).** Repository-side App Store listing
+package — **no submission, no ASC login, no build, no EAS init, no signing.**
+
+**Store package: `mobile/store/`** — `README.md`, `metadata.en.md`, `metadata.ta.md`,
+`PRIVACY_LABELS.md`, `AGE_RATING.md`, `REVIEW_NOTES.md`, `SCREENSHOT_PLAN.md`,
+`SUBMISSION_CHECKLIST.md`, and `screenshots/raw/iphone/` (6 clean 6.9" shots).
+
+**Prepared:** canonical identity (name **Nenjukku Neethi**, `org.nenjukkuneethi.app`, v0.1.0 /
+build 1 / versionCode 1 — not renamed); EN + **TA** metadata (Tamil is a supported ASC
+localization) within Apple limits (Name/Subtitle 30 verified from Apple; Desc 4000/Keywords
+100/Promo 170 = standard, reconfirm in ASC); keywords (EN 94 chars); category **Books /
+Reference**; age-rating worksheet (ASC computes number); privacy label → **Data Not Collected**;
+URLs verified 200; screenshot story + captions (EN/TA) + reproducible capture state; **6 clean
+raw iPhone 6.9" screenshots (1260×2736, alpha stripped)** — Home, Reader Ta, Reader En, Timeline,
+Explore, Murasoli; icon technically valid (1024² opaque); splash OK; review notes drafted.
+
+**Remains external / decisions:** paid Apple Developer account, ASC app record, `eas init`,
+signing, TestFlight/production build, metadata+screenshot **upload**, age-rating + privacy entry,
+review submission. **Repo decisions pending:** copyright-field entity (**OWNER DECISION
+REQUIRED**); **iPad screenshot set OR scope tablet out** (required by `supportsTablet: true`);
+`04-search` + optional screenshots (method documented). Gate green (typecheck / validate:manifest
+/ expo-doctor 21/21 / iOS export). No website code changed.
+
+**Exact next workstream → re-check `mobile/docs/PRODUCTION_READINESS.md` §5.** With store metadata
+prepared, the remaining non-submission items are all "No/Soft" blockers — candidates:
+**Universal Links `.well-known` association files** (website `apple-app-site-association` +
+`assetlinks.json`), **offline banner / launch polish**, or **crash reporting**. **Do NOT** start
+Push Notifications. Pick one with a fresh prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile
