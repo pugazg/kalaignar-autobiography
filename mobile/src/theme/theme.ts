@@ -76,6 +76,10 @@ export const palettes: Record<ThemeName, Palette> = {
 
 export const spacing = (n: number) => n * 4;
 export const radius = { sm: 8, md: 12, lg: 18, pill: 999 };
+// Max width of a centered content/reading column. On phones (<720pt wide) this is a
+// no-op; on iPad it keeps reading line-length comfortable and content from stretching
+// edge-to-edge. Applied via the shared Screen component and the reader scroll views.
+export const contentMaxWidth = 720;
 
 // Reading typography. Tamil body uses Noto Serif Tamil (loaded in App). Font size
 // and line-height are user-controlled (see reading prefs); these are the anchors.

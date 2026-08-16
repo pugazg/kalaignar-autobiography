@@ -5,7 +5,7 @@ import { useApp, useTheme } from "@/data/AppState";
 import { useFeature } from "@/data/useFeature";
 import { ChapterRefs } from "@/components/ChapterRefs";
 import { EmptyState, Eyebrow, Loading, Screen, T } from "@/components/ui";
-import { radius, spacing } from "@/theme/theme";
+import { contentMaxWidth, radius, spacing } from "@/theme/theme";
 import type { PeopleFeature, PersonItem } from "@/data/types";
 
 function parsePeople(raw: unknown): PeopleFeature | null {
@@ -32,7 +32,7 @@ export function PeopleScreen() {
   return (
     <FlatList
       style={{ flex: 1, backgroundColor: c.bg }}
-      contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(16) }}
+      contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(16), width: "100%", maxWidth: contentMaxWidth, alignSelf: "center" }}
       data={state.data.people}
       keyExtractor={(p) => p.id}
       ListHeaderComponent={

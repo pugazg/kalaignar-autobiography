@@ -11,19 +11,22 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme } from "@/data/AppState";
-import { radius, spacing, tamilFont, tamilFontBold } from "@/theme/theme";
+import { contentMaxWidth, radius, spacing, tamilFont, tamilFontBold } from "@/theme/theme";
 
 export function Screen({ children, scroll = false, style }: ViewProps & { scroll?: boolean }) {
   const c = useTheme();
-  const inner = <View style={[{ flex: 1, padding: spacing(4) }, style]}>{children}</View>;
+  // Content is centered and capped at contentMaxWidth so it doesn't stretch edge-to-edge
+  // on iPad. On phones the viewport is narrower than the cap, so this is a no-op.
   return (
     <SafeAreaView edges={["top", "left", "right"]} style={{ flex: 1, backgroundColor: c.bg }}>
       {scroll ? (
-        <ScrollView contentContainerStyle={{ padding: spacing(4), paddingBottom: spacing(20) }}>
-          {children}
+        <ScrollView contentContainerStyle={{ padding: spacing(4), paddingBottom: spacing(20), alignItems: "center" }}>
+          <View style={[{ width: "100%", maxWidth: contentMaxWidth }, style]}>{children}</View>
         </ScrollView>
       ) : (
-        inner
+        <View style={{ flex: 1, padding: spacing(4), alignItems: "center" }}>
+          <View style={[{ flex: 1, width: "100%", maxWidth: contentMaxWidth }, style]}>{children}</View>
+        </View>
       )}
     </SafeAreaView>
   );

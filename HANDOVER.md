@@ -531,6 +531,47 @@ prepared, the remaining non-submission items are all "No/Soft" blockers — cand
 `assetlinks.json`), **offline banner / launch polish**, or **crash reporting**. **Do NOT** start
 Push Notifications. Pick one with a fresh prompt.
 
+### 3c-next12. Production readiness · Activity 5 — iPad readiness + missing screenshots (DONE)
+**PR #13 (Activity 4 store package) merged** — squash `d9e879f` on `main`; post-merge Mobile CI
+green; site healthy; `mobile/store/` + 6 iPhone screenshots present on `main`.
+
+**Branch `mobile/ipad-store-readiness` (PR TBD, leave unmerged).**
+
+**iPad decision → FIRST-RELEASE READY** (Outcome A). Audited on an **iPad Pro 13" (M5)**,
+iPadOS 26 (native 2064×2752). The one real issue was prose/reader spanning full width
+(uncomfortable line length) + content stretching edge-to-edge. **Fix (small, high-value):** a
+centered **`contentMaxWidth = 720`** column — added to the shared `Screen` (covers Home, Library,
+Volume, Timeline, Explore, Search, Saved, Settings, Murasoli Library, detail screens), the two
+readers (`Reader`, `MurasoliReader`), and the three raw-FlatList lists (Themes, People,
+MurasoliVolume). **No-op on phones** (viewport < 720) → zero iPhone regression; pure iPad
+improvement. **`supportsTablet` was NOT changed.** Deep iPad optimization (split-view /
+master-detail) deliberately deferred.
+
+**Screenshots (in `mobile/store/screenshots/raw/`):**
+- **iPhone Air 6.9" (1260×2736), 7 shots:** home, reader-tamil, reader-english, **search**
+  (`தமிழ்` → 215 results, seeded via `nn:searchHistory` since Tamil can't be typed in the sim),
+  timeline, explore, murasoli. (`04-search` gap from Activity 4 now filled; `08` skipped — redundant.)
+- **iPad Pro 13" (2064×2752), 6 shots:** home, reader-tamil, reader-english, timeline, explore,
+  murasoli. All alpha-stripped, clean 9:41 status bar, light theme, QA'd (no dev chrome).
+
+**Verified:** Home/Library/Volume/Reader(Ta+En)/Search/Timeline/Explore/Murasoli/Settings on
+iPad at default text; Reader/Search/Volume reflow at `accessibility-extra-large`. **Known
+limitations (documented, unchanged):** (1) Home/Explore dashboard clips at the **largest**
+accessibility text sizes (Activity-3 limitation — NOT fixed here); (2) **iPad landscape** not
+exercised (Simulator rotation automation unauthorized) — orientation is `default`, centered
+column handles it by design; recommend a manual landscape check (non-blocking). Copyright-field
+entity remains **OWNER DECISION REQUIRED** (unresolved — no owner supplied). Gate green
+(typecheck / validate:manifest / expo-doctor 21/21 / iOS export).
+
+**Remaining genuine store blockers:** (1) paid Apple Developer account + ASC record + signed
+TestFlight/production build; (2) copyright-field owner decision. (iPad screenshots — previously a
+blocker — resolved.)
+
+**Exact next workstream → re-check `mobile/docs/PRODUCTION_READINESS.md` §5.** Candidates (all
+No/Soft blockers): **Universal Links `.well-known` files** (best done once the signing Team ID is
+known — see §R of the Activity-5 brief), **offline banner / launch polish**, or **crash
+reporting**. **Do NOT** start Push Notifications. Pick one with a fresh prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile

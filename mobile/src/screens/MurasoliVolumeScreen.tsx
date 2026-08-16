@@ -4,7 +4,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { useApp, useTheme } from "@/data/AppState";
 import { api } from "@/data/client";
 import { EmptyState, Eyebrow, Loading, T } from "@/components/ui";
-import { radius, spacing } from "@/theme/theme";
+import { contentMaxWidth, radius, spacing } from "@/theme/theme";
 import type { MurasoliLetterRef } from "@/data/types";
 
 // A Murasoli volume: its letter list (every volume, including the scan-sourced
@@ -57,7 +57,7 @@ export function MurasoliVolumeScreen() {
   return (
     <FlatList
       style={{ flex: 1, backgroundColor: c.bg }}
-      contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(16) }}
+      contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(16), width: "100%", maxWidth: contentMaxWidth, alignSelf: "center" }}
       data={letters}
       keyExtractor={(l) => l.id}
       ListHeaderComponent={

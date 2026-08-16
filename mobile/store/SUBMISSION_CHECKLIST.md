@@ -17,19 +17,27 @@ App Store Connect / with a paid Apple account. Nothing here submits anything to 
 - [x] App Privacy worksheet (`PRIVACY_LABELS.md`) — recommend **Data Not Collected**.
 - [x] Listing URLs verified 200: `/privacy`, `/support`, site home.
 - [x] Screenshot story + capture plan + reproducible state (`SCREENSHOT_PLAN.md`).
-- [x] Clean raw iPhone 6.9" screenshots (1260×2736, no alpha): Home, Reader (Ta), Reader (En),
-      Timeline, Explore, Murasoli — `screenshots/raw/iphone/`.
+- [x] Clean raw **iPhone 6.9"** screenshots (1260×2736, no alpha) — **7**: Home, Reader (Ta),
+      Reader (En), **Search** (`தமிழ்` → 215 results), Timeline, Explore, Murasoli
+      — `screenshots/raw/iphone/`.
+- [x] Clean raw **iPad 13"** screenshots (2064×2752, no alpha) — **6**: Home, Reader (Ta),
+      Reader (En), Timeline, Explore, Murasoli — `screenshots/raw/ipad/` (Activity 5).
+- [x] **iPad first-release readiness** — audited on iPad Pro 13"; a centered `maxWidth: 720`
+      content column added (phones unaffected); `supportsTablet` kept `true`. See `SCREENSHOT_PLAN.md`.
 - [x] App icon technically valid (1024², opaque — no iOS alpha issue); splash configured.
 - [x] Review notes draft (`REVIEW_NOTES.md`).
 - [x] EAS build config + versioning present (from Activity 2: `eas.json`, `RELEASE.md`).
 
-## Pending in repository (small, capturable later)
-- [ ] `04-search.png` screenshot — needs a stable Tamil query seeded via Recent Searches (Tamil
-      can't be typed in the simulator); method documented in `SCREENSHOT_PLAN.md`.
-- [ ] Optional `08-reading-controls.png`.
-- [ ] iPad screenshot set **OR** decide to scope tablet out (`ios.supportsTablet`) — see the
-      iPad decision in `SCREENSHOT_PLAN.md`. Required because `supportsTablet: true`.
-- [ ] Copyright field entity — **OWNER DECISION REQUIRED** (`metadata.en.md`).
+## Pending in repository (small)
+- [x] `04-search.png` — captured (`தமிழ்` → 215 results). (Activity 5)
+- [x] iPad screenshots + first-release readiness decision — done (Activity 5); `supportsTablet`
+      unchanged. `08-reading-controls.png` intentionally skipped (redundant).
+- [ ] **Landscape** on iPad — orientation is `default` (landscape allowed); the centered-column
+      design handles it, but a landscape pass could not be exercised this session (Simulator
+      rotation automation is not authorized). Recommend a manual landscape check before submission
+      (non-blocking).
+- [ ] Copyright field entity — **OWNER DECISION REQUIRED** (`metadata.en.md`); not resolved
+      (no owner/entity supplied).
 
 ## External / manual — required before submission (NOT done, NOT in scope here)
 - [ ] Paid **Apple Developer Program** membership.
@@ -37,7 +45,7 @@ App Store Connect / with a paid Apple account. Nothing here submits anything to 
 - [ ] **EAS project init / login** (`eas init` → writes `extra.eas.projectId`) — not yet done.
 - [ ] Signing & provisioning (Apple certificates / profiles).
 - [ ] **Production / TestFlight build** via EAS, uploaded to App Store Connect.
-- [ ] Upload screenshots (and iPad set if shipping iPad) to ASC.
+- [ ] Upload screenshots (iPhone 6.9" **and** iPad 13" sets) to ASC.
 - [ ] Enter App Privacy answers (from `PRIVACY_LABELS.md`).
 - [ ] Complete the age-rating questionnaire (from `AGE_RATING.md`).
 - [ ] Enter metadata (EN + TA) and the copyright field (once owner decides).
@@ -45,7 +53,7 @@ App Store Connect / with a paid Apple account. Nothing here submits anything to 
 
 ## Genuine remaining store blockers (strict)
 1. Paid Apple Developer account + App Store Connect record + a signed TestFlight/production build.
-2. iPad screenshots (or scoping tablet out) — gated by `supportsTablet: true`.
-3. Copyright-field owner decision.
+2. Copyright-field owner decision.
 
+(iPad screenshots — previously a blocker — are now captured; tablet readiness is resolved.)
 Everything else in the "Ready in repository" list is complete.
