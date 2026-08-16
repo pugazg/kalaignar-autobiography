@@ -45,21 +45,22 @@ on-device for offline use. No memoir prose ships in the bundle. Bundle id / Andr
 | F | Push notifications (`expo-notifications` dep+plugin, **0 code**) | NOT STARTED | No |
 | G | Crash reporting | NOT STARTED | Soft (recommended) |
 | G | Analytics | NOT STARTED | OPTIONAL (privacy stance = no data) |
-| H | iPad basic compatibility (`supportsTablet: true`, flex layouts) | PARTIAL (runs; not optimized, no split-view/max-width) | No* |
+| H | iPad basic compatibility (`supportsTablet: true`, flex layouts) | **FIRST-RELEASE READY** (Activity 5 — audited on iPad Pro 13"; centered `maxWidth: 720` reading/content column added; dedicated tablet optimization deferred) | No |
 | I | Android config (package, adaptive icon, intent filters) | COMPLETE | No |
 | I | Android build/signing/`assetlinks`/internal-testing | NOT STARTED | No (defer after iOS) |
 | J | Bundle id / app.json identity | COMPLETE | No |
 | J | EAS build config (`eas.json`) | **COMPLETE** (Activity 2) | Resolved |
 | J | Paid Apple Developer membership + App Store Connect | NOT STARTED (external/process) | **YES** (process) |
-| J | Screenshots / description / keywords / privacy labels / age rating | **REPO PACKAGE COMPLETE** (Activity 4 — `mobile/store/`: EN+TA metadata, keywords, category, age-rating + privacy worksheets, 6 clean 6.9" screenshots); external upload + iPad set + copyright-owner decision pending | Partly (external upload remains) |
+| J | Screenshots / description / keywords / privacy labels / age rating | **REPO PACKAGE COMPLETE** (Activity 4–5 — `mobile/store/`: EN+TA metadata, keywords, category, age-rating + privacy worksheets, **7 iPhone 6.9" + 6 iPad 13" screenshots**); external upload + copyright-owner decision pending | Partly (external upload remains) |
 | J | Export-compliance declaration (`ITSAppUsesNonExemptEncryption`) | **COMPLETE** (Activity 2, `= false`) | Resolved |
 | K | App Review 4.2 (minimum functionality) | **LOW RISK** — rich native app, no WebView wrapper, no dead ends | No |
 | L | Mobile CI (typecheck / validate:manifest / expo-doctor / iOS export) | COMPLETE | No |
 | L | Version/build-number strategy (`autoIncrement`, buildNumber/versionCode) | NOT STARTED | Prereq for release |
 
-\* iPad: `supportsTablet: true` means Apple will review on iPad and expects iPad screenshots;
-the app runs there but is not optimized. Not a hard blocker if iPad screenshots are provided
-or tablet support is deliberately scoped.
+iPad (Activity 5): audited on iPad Pro 13"; a centered `maxWidth: 720` reading/content column was
+added so prose/lists don't stretch edge-to-edge. iPad 13" screenshots (2064×2752) captured.
+`supportsTablet` kept `true`. Not "fully optimized" (no split-view/master-detail) — that is
+deferred; the app is respectable and submittable on iPad for a first release.
 
 ## 4. Genuine store blockers (strict)
 
@@ -86,14 +87,14 @@ post-launch), **not** roadmap order.
 | 1 | Privacy + Support/About public pages (website) + Settings URLs | **DONE** (Activity 1) | was Yes | Hard Apple/Play requirement; smallest unblock | — | Small–Medium |
 | 2 | Release engineering: `eas.json`, version/build-number strategy, export-compliance flag | NOT STARTED | **Yes (prereq)** | Nothing builds for TestFlight without it | **Next** | **Small** |
 | 3 | Accessibility pass: contrast across themes + VoiceOver/label/focus review | **Repo-side COMPLETE (Activity 3)**; manual VoiceOver device pass pending | Soft | Review risk; contrast/semantics/headings/touch-targets fixed & measured, see `docs/ACCESSIBILITY.md` | Manual VO before submission | **Medium** |
-| 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | **Repo package COMPLETE (Activity 4, `mobile/store/`)**; external upload / iPad set / copyright-owner decision pending | **Yes (external)** | Required to submit | Repo done; upload at submission | **Medium** |
+| 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | **Repo package COMPLETE (Activity 4–5, `mobile/store/`)** — incl. 7 iPhone + 6 iPad screenshots; external upload + copyright-owner decision pending | **Yes (external)** | Required to submit | Repo done; upload at submission | **Medium** |
 | 5 | Universal Links: website `.well-known` files + paid-team verification | PARTIAL | No | App works on custom scheme; needs paid team | After account is paid | **Medium** |
 | 6 | Offline banner (`netinfo`) + truthful offline states polish | NOT STARTED | No | Cheap reliability win | Launch polish | **Small** |
 | 7 | Crash reporting (e.g. Sentry) | NOT STARTED | Soft | Diagnose field crashes early | Around launch | **Small–Medium** |
 | 8 | Share-as-image (`react-native-view-shot`) | NOT STARTED | No | Nice-to-have; text share already works | Post-launch | **Medium** |
 | 9 | Download manager / bulk download / storage breakdown | NOT STARTED | No | Enhancement | Post-launch | **Large** |
 | 10 | **Push notifications** | NOT STARTED | No | No first-release need; needs a signal backend | Post-launch | **Medium–Large** |
-| 11 | iPad optimization (split layouts, max content width) | PARTIAL | No | Only if iPad is a launch target | Post-launch | **Medium** |
+| 11 | iPad optimization (split layouts, max content width) | **First-release layout DONE** (Activity 5 — centered max-width column); split-view/master-detail deferred | No | Respectable on iPad now | Post-launch (deep optimization) | **Medium** |
 | 12 | Android internal-testing release | NOT STARTED | No | Sequence after iOS to bound scope | After iOS | **Large** |
 | 13 | Analytics | NOT STARTED | Optional | Conflicts with no-data privacy stance | Only if required | **Small** |
 

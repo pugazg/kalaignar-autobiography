@@ -46,9 +46,11 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 - [x] Subtitle + Promotional text (EN + TA), within Apple limits
 - [x] Age-rating worksheet prepared (ASC computes the final number) — `AGE_RATING.md`
 - [x] App Privacy label worksheet (**Data Not Collected**) — `PRIVACY_LABELS.md`
-- [x] iPhone 6.9" screenshots captured (1260×2736, no alpha) — `store/screenshots/raw/iphone/`
+- [x] iPhone 6.9" screenshots — **7** (1260×2736, no alpha) — `store/screenshots/raw/iphone/` (incl. Search)
+- [x] iPad 13" screenshots — **6** (2064×2752, no alpha) — `store/screenshots/raw/ipad/` (Activity 5)
+- [x] iPad first-release layout (centered max-width column); `supportsTablet` unchanged
 - [x] Screenshot plan + captions (EN/TA) + review notes — `SCREENSHOT_PLAN.md`, `REVIEW_NOTES.md`
-- [ ] iPad screenshot set (required by `supportsTablet: true`) **or** scope tablet out — decision pending
+- [ ] iPad **landscape** pass (orientation is `default`; centered column handles it; manual check recommended — non-blocking)
 - [ ] `04-search` screenshot (+ optional extras) — capture method documented
 - [ ] Copyright field entity — OWNER DECISION REQUIRED
 - [ ] Android phone/tablet screenshots (defer with Android release)
