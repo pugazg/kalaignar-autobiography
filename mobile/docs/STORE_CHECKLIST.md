@@ -40,13 +40,19 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 - [x] Contrast check across light / sepia / dark (measured; 7 tokens fixed to WCAG AA)
 - [ ] VoiceOver / TalkBack on-device pass (manual — not performed; see `docs/ACCESSIBILITY.md`)
 
-## Store listing assets
+## Store listing assets  _(repo package = `mobile/store/`, Activity 4)_
 
-- [ ] Screenshots per required device class (6.7" + 6.5" iPhone, 12.9" iPad;
-      Android phone + tablet)
-- [ ] Description (Tamil + English), keywords, category (Books / Reference)
-- [ ] Promotional text / what's new
-- [ ] Age rating questionnaire
+- [x] Description (Tamil + English), keywords, category (Books / Reference) — `mobile/store/`
+- [x] Subtitle + Promotional text (EN + TA), within Apple limits
+- [x] Age-rating worksheet prepared (ASC computes the final number) — `AGE_RATING.md`
+- [x] App Privacy label worksheet (**Data Not Collected**) — `PRIVACY_LABELS.md`
+- [x] iPhone 6.9" screenshots captured (1260×2736, no alpha) — `store/screenshots/raw/iphone/`
+- [x] Screenshot plan + captions (EN/TA) + review notes — `SCREENSHOT_PLAN.md`, `REVIEW_NOTES.md`
+- [ ] iPad screenshot set (required by `supportsTablet: true`) **or** scope tablet out — decision pending
+- [ ] `04-search` screenshot (+ optional extras) — capture method documented
+- [ ] Copyright field entity — OWNER DECISION REQUIRED
+- [ ] Android phone/tablet screenshots (defer with Android release)
+- [ ] Upload metadata/screenshots + submit — external (App Store Connect)
 
 ## Deep links
 

@@ -49,10 +49,10 @@ on-device for offline use. No memoir prose ships in the bundle. Bundle id / Andr
 | I | Android config (package, adaptive icon, intent filters) | COMPLETE | No |
 | I | Android build/signing/`assetlinks`/internal-testing | NOT STARTED | No (defer after iOS) |
 | J | Bundle id / app.json identity | COMPLETE | No |
-| J | EAS build config (`eas.json`) | **NOT STARTED** | **YES** (to build/submit) |
+| J | EAS build config (`eas.json`) | **COMPLETE** (Activity 2) | Resolved |
 | J | Paid Apple Developer membership + App Store Connect | NOT STARTED (external/process) | **YES** (process) |
-| J | Screenshots / description / keywords / privacy labels / age rating | NOT STARTED (assets) | **YES** (to submit) |
-| J | Export-compliance declaration (`ITSAppUsesNonExemptEncryption`) | NOT SET (standard HTTPS ⇒ exempt) | Soft (one-line) |
+| J | Screenshots / description / keywords / privacy labels / age rating | **REPO PACKAGE COMPLETE** (Activity 4 — `mobile/store/`: EN+TA metadata, keywords, category, age-rating + privacy worksheets, 6 clean 6.9" screenshots); external upload + iPad set + copyright-owner decision pending | Partly (external upload remains) |
+| J | Export-compliance declaration (`ITSAppUsesNonExemptEncryption`) | **COMPLETE** (Activity 2, `= false`) | Resolved |
 | K | App Review 4.2 (minimum functionality) | **LOW RISK** — rich native app, no WebView wrapper, no dead ends | No |
 | L | Mobile CI (typecheck / validate:manifest / expo-doctor / iOS export) | COMPLETE | No |
 | L | Version/build-number strategy (`autoIncrement`, buildNumber/versionCode) | NOT STARTED | Prereq for release |
@@ -86,7 +86,7 @@ post-launch), **not** roadmap order.
 | 1 | Privacy + Support/About public pages (website) + Settings URLs | **DONE** (Activity 1) | was Yes | Hard Apple/Play requirement; smallest unblock | — | Small–Medium |
 | 2 | Release engineering: `eas.json`, version/build-number strategy, export-compliance flag | NOT STARTED | **Yes (prereq)** | Nothing builds for TestFlight without it | **Next** | **Small** |
 | 3 | Accessibility pass: contrast across themes + VoiceOver/label/focus review | **Repo-side COMPLETE (Activity 3)**; manual VoiceOver device pass pending | Soft | Review risk; contrast/semantics/headings/touch-targets fixed & measured, see `docs/ACCESSIBILITY.md` | Manual VO before submission | **Medium** |
-| 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | NOT STARTED | **Yes** | Required to submit | Before submission | **Medium** |
+| 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | **Repo package COMPLETE (Activity 4, `mobile/store/`)**; external upload / iPad set / copyright-owner decision pending | **Yes (external)** | Required to submit | Repo done; upload at submission | **Medium** |
 | 5 | Universal Links: website `.well-known` files + paid-team verification | PARTIAL | No | App works on custom scheme; needs paid team | After account is paid | **Medium** |
 | 6 | Offline banner (`netinfo`) + truthful offline states polish | NOT STARTED | No | Cheap reliability win | Launch polish | **Small** |
 | 7 | Crash reporting (e.g. Sentry) | NOT STARTED | Soft | Diagnose field crashes early | Around launch | **Small–Medium** |
