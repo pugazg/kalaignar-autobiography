@@ -6,7 +6,7 @@ import { useApp, useTheme } from "@/data/AppState";
 import { useFeature } from "@/data/useFeature";
 import { ChapterRefs } from "@/components/ChapterRefs";
 import { EmptyState, Eyebrow, Loading, Screen, T } from "@/components/ui";
-import { radius, spacing } from "@/theme/theme";
+import { contentMaxWidth, radius, spacing } from "@/theme/theme";
 import type { PeopleFeature, PersonItem, ThemeItem, ThemesFeature } from "@/data/types";
 
 // ── Defensive parsers (fail the whole collection rather than drop records) ─────
@@ -41,7 +41,7 @@ export function ThemesScreen() {
   return (
     <FlatList
       style={{ flex: 1, backgroundColor: c.bg }}
-      contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(16) }}
+      contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(16), width: "100%", maxWidth: contentMaxWidth, alignSelf: "center" }}
       data={state.data.themes}
       keyExtractor={(t) => t.id}
       ListHeaderComponent={

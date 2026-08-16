@@ -6,7 +6,7 @@ import { api } from "@/data/client";
 import { storage } from "@/data/storage";
 import { useApp, useTheme } from "@/data/AppState";
 import { EmptyState, Loading, T } from "@/components/ui";
-import { fontSteps, lineHeightSteps, radius, spacing, tamilFont } from "@/theme/theme";
+import { contentMaxWidth, fontSteps, lineHeightSteps, radius, spacing, tamilFont } from "@/theme/theme";
 import type { MurasoliLetter, MurasoliLetterEn } from "@/data/types";
 import { formatDate } from "./MurasoliVolumeScreen";
 
@@ -113,7 +113,7 @@ export function MurasoliReaderScreen() {
       </View>
 
       {/* Reading controls (shared prefs, memoir-consistent) */}
-      <View style={{ flexDirection: "row", alignItems: "center", gap: spacing(2), paddingHorizontal: spacing(4), paddingVertical: spacing(2), borderBottomWidth: 1, borderBottomColor: c.border }}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: spacing(2), paddingHorizontal: spacing(4), paddingVertical: spacing(2), borderBottomWidth: 1, borderBottomColor: c.border, width: "100%", maxWidth: contentMaxWidth, alignSelf: "center" }}>
         <Ctrl icon="remove" onPress={() => setPrefs({ fontStep: Math.max(0, prefs.fontStep - 1) })} label="Smaller text" c={c} />
         <Ctrl icon="add" onPress={() => setPrefs({ fontStep: Math.min(fontSteps.length - 1, prefs.fontStep + 1) })} label="Larger text" c={c} />
         <Ctrl icon="reorder-three" onPress={() => setPrefs({ lineHeightStep: (prefs.lineHeightStep + 1) % lineHeightSteps.length })} label="Line spacing" c={c} />
@@ -132,7 +132,7 @@ export function MurasoliReaderScreen() {
         onScroll={onScroll}
         scrollEventThrottle={16}
         onContentSizeChange={onContentSize}
-        contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(24) }}
+        contentContainerStyle={{ padding: spacing(5), paddingBottom: spacing(24), width: "100%", maxWidth: contentMaxWidth, alignSelf: "center" }}
       >
         <T faint size={11} style={{ letterSpacing: 1 }}>
           முரசொலி · தொகுதி {letter.volume} · #{letter.number}{letter.date ? ` · ${formatDate(letter.date)}` : ""}
