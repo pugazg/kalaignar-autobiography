@@ -18,7 +18,7 @@ Governing principle: **one coherent library, multiple source-faithful reader typ
 
 - **Location / types:** `data/library.ts`
   - `ShelfId`, `Shelf`, `SHELVES` (the nine shelves, ordered)
-  - `LibraryWork` (work envelope), `ReaderStructure`, `Availability`, `EnglishTranslationType`,
+  - `LibraryWork` (work envelope), `ReaderStructure`, `Availability`, `EnglishKind`,
     `PublicationState`
   - `LIBRARY_WORKS` (the catalog), `publishedWorks()`, `visibleShelves()`
 - Public rendering is driven **only** by `state: "published"`. There is **no filesystem
@@ -40,14 +40,33 @@ All nine exist in the model. **Empty shelves are not rendered** (`visibleShelves
 shelves with ≥1 published work). No "coming soon" placeholders.
 
 ### Three published works (Phase 1)
-| id | shelf | reader structure | href |
-|---|---|---|---|
-| `nenjukku-neethi` | life-writing | volume-chapter | `/read/nenjukku-neethi` |
-| `murasoli-letters` | letters | letter | `/murasoli` |
-| `tholkappiya-poonga` | literary-commentary | commentary-unit | `/tholkappiyam` |
+| id | shelf | reader structure | href | tamil | english | englishKind |
+|---|---|---|---|---|---|---|
+| `nenjukku-neethi` | life-writing | volume-chapter | `/read/nenjukku-neethi` | complete | _(unset)_ | _(unset)_ |
+| `murasoli-letters` | letters | letter | `/murasoli` | **partial** | partial | _(unset)_ |
+| `tholkappiya-poonga` | literary-commentary | commentary-unit | `/tholkappiyam` | complete | complete | _(unset)_ |
 
 After Phase 1 the public landing therefore shows exactly three shelves: Life Writing, Letters,
 Literary Commentary.
+
+### Language coverage vs English provenance (two separate concepts)
+`Availability` (`complete | partial | none`) is **coverage for the intended catalog work /
+collection boundary** — not "every unit currently vendored happens to have this language".
+`EnglishKind` (`project-created | separately-published | published-source-witness`) is the
+**kind/provenance** of the English text, a distinct optional field. Notes:
+- **Murasoli** `tamil` is **`partial`**: only volumes 48–54 of the intended full letters
+  collection are integrated (the earlier `complete` was misleading at the collection boundary).
+  Its `english` is `partial` (e.g. vol 54 is Tamil-only + the collection is partial). Its
+  `englishKind` is left **unset** — the provenance of the Murasoli English layer is not
+  established in the implementation data (not guessed).
+- **Tholkappiya Poonga**: `english: complete` (En/Ta toggle covers the onboarded work);
+  `englishKind` left **unset** — whether it is a separately-published or project-created
+  translation is not established in the implementation data.
+- **Nenjukku Neethi**: `english`/`englishKind` left **unset** — no English coverage is claimed
+  (the implementation does not establish one).
+This lets future integrations (Phase-2 cinema, stage-play secondary English witnesses, other
+source repos) distinguish project-created vs published translations vs secondary/published
+English witnesses vs Tamil-only / incomplete, without overloading a single field.
 
 ## Routes
 

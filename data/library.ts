@@ -62,8 +62,19 @@ export type ReaderStructure =
   | "article"
   | "speech";
 
+// Language COVERAGE for the *intended catalog work / collection boundary* — NOT
+// merely "every unit currently vendored happens to have this language". A work whose
+// full collection is only partly integrated is "partial" even if every integrated
+// unit carries the language.
 export type Availability = "complete" | "partial" | "none";
-export type EnglishTranslationType = "full" | "selective" | "none";
+
+// KIND / provenance of the English text, where established. This is a SEPARATE
+// concept from coverage (see `english`). Optional: leave unset when the
+// implementation repository does not establish it — do not guess an origin.
+export type EnglishKind =
+  | "project-created" // English translation created for/by this project
+  | "separately-published" // a separately published English translation
+  | "published-source-witness"; // a published English source / secondary witness
 
 // Internal control state. Only "published" is ever surfaced publicly.
 export type PublicationState = "published" | "ready-to-integrate" | "archival-in-progress";
@@ -98,10 +109,13 @@ export interface LibraryWork {
   /** Publication/edition metadata, where actually established. */
   edition?: string;
 
-  // ── Language availability ──
+  // ── Language coverage vs English provenance (kept semantically separate) ──
+  /** Tamil coverage for the intended work/collection boundary. */
   tamil?: Availability;
+  /** English coverage for the intended work/collection boundary. */
   english?: Availability;
-  englishType?: EnglishTranslationType;
+  /** KIND/provenance of the English text, where established (unset = not established). */
+  englishKind?: EnglishKind;
 
   /** Source-supported unit count, where stable. */
   unitCount?: { value: number; labelTa: string; labelEn: string };
@@ -143,11 +157,17 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     state: "published",
     descTa: "உடன்பிறப்புகளுக்கு எழுதிய கடிதங்கள்",
     descEn: "Letters to udanpirappukkal",
-    tamil: "complete",
+    // Only volumes 48–54 of the intended full "Murasoli — The Letters" collection
+    // are integrated → "partial" at the work/collection boundary (even though every
+    // integrated volume carries Tamil). This is a collection-boundary status, not a
+    // per-unit one.
+    tamil: "partial",
+    // English exists for most integrated volumes but not all (e.g. vol 54 is
+    // Tamil-only), and the collection itself is partial → "partial".
     english: "partial",
-    englishType: "full",
-    // Letter count grows as volumes are added → shown live on the collection surface,
-    // not pinned here.
+    // englishKind intentionally UNSET — the provenance/kind of the Murasoli English
+    // layer is not established in the implementation data (not guessed).
+    // Letter count grows as volumes are added → shown live on the collection surface.
   },
   {
     id: "tholkappiya-poonga",
@@ -162,8 +182,11 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     descTa: "கலைஞரின் தொல்காப்பிய உரை",
     descEn: "Kalaignar's Tolkāppiyam commentary",
     tamil: "complete",
+    // English (En/Ta toggle) covers the onboarded work.
     english: "complete",
-    englishType: "full",
+    // englishKind intentionally UNSET — whether this English is a separately
+    // published translation or project-created is not established in the
+    // implementation data (not guessed).
   },
 ];
 
