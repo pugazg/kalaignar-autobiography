@@ -23,13 +23,53 @@
     "id": "manohara-en-s017-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(The inquiry hall of the Pandiyan people.)"
+    "text": "(The inquiry hall of the Pandiyan people.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-017.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-017.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Pandiyan people's inquiry hall."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s017-u002",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்பிரியன்",
-    "text": "She tried to commit murder—she attempted suicide. She has committed enormous, unforgivable crimes, Princess! She stands before the people's assembly! The very lifetime of the young princess who tried to separate our prince, my dearest friend, the jewel of the Chola line—this Manoharan—must be brought to an end. Princess! Prepare to suffer the punishment I give you for your whole life. By sunset tomorrow evening—at the Kali temple—no! I do not wish to postpone the punishment even by one day—for the crime of Vijayadevi, tender creeper of the Pandiyan land, attempting to kill the Chola land's athaan, today itself—right now—in this very place—before everyone—you must place a garland upon Manoharan and accept him as your bridegroom!"
+    "text": "She tried to commit murder—she attempted suicide. She has committed enormous, unforgivable crimes, Princess! She stands before the people's assembly! The very lifetime of the young princess who tried to separate our prince, my dearest friend, the jewel of the Chola line—this Manoharan—must be brought to an end. Princess! Prepare to suffer the punishment I give you for your whole life. By sunset tomorrow evening—at the Kali temple—no! I do not wish to postpone the punishment even by one day—for the crime of Vijayadevi, tender creeper of the Pandiyan land, attempting to kill the Chola land's athaan, today itself—right now—in this very place—before everyone—you must place a garland upon Manoharan and accept him as your bridegroom!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-017.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-017.md",
+     "sourceRecordId": "manohara-s017-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The mock-sentencing cadence is preserved so the marriage sentence arrives as the source's comic reversal.",
+      "`அத்தான்` is retained as `athaan` rather than flattened to a single English kinship term."
+     ]
+    }
    }
   ]
  }

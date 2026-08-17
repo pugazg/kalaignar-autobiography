@@ -23,13 +23,53 @@
     "id": "manohara-en-s004-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "In another part of the palace."
+    "text": "In another part of the palace.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-004.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-004.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "scene-location-heading",
+      "ordinal": 1,
+      "description": "Bare source-visible location label opening the archival scene."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s004-u002",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "(Before the King's portrait) Swami! Will the day never come when the two of us are united again...? In all my life I have done no harm to anyone! I have forgiven even Vasantha Sena, who ruined my life.... I did so because your deep affection for her should not bring you pain!... And even if I had harmed someone, have I not suffered for many years, wasting away apart from you? Is this punishment not enough? Swami! The birthday of our darling Manoharan is approaching too. Shall we not both kiss the crown of our beautiful, blooming treasure and bless him together—can that day of joy never come again, Swami!"
+    "text": "(Before the King's portrait) Swami! Will the day never come when the two of us are united again...? In all my life I have done no harm to anyone! I have forgiven even Vasantha Sena, who ruined my life.... I did so because your deep affection for her should not bring you pain!... And even if I had harmed someone, have I not suffered for many years, wasting away apart from you? Is this punishment not enough? Swami! The birthday of our darling Manoharan is approaching too. Shall we not both kiss the crown of our beautiful, blooming treasure and bless him together—can that day of joy never come again, Swami!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-004.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-004.md",
+     "sourceRecordId": "manohara-s004-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's repeated `Swami!` and sequence of pleading rhetorical questions are retained.",
+      "`உச்சி மோந்து` is rendered as the parental gesture `kiss the crown`, preserving the affectionate action without adding explanation."
+     ]
+    }
    }
   ]
  }

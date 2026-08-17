@@ -23,37 +23,150 @@
     "id": "manohara-en-s027-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Padmavathi's room."
+    "text": "Padmavathi's room.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-027.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-027.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Padmavathi's room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s027-u002",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Amma!"
+    "text": "Amma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-027.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-027.md",
+     "sourceRecordId": "manohara-s027-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s027-u003",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Manohara!... what happened?"
+    "text": "Manohara!... what happened?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-027.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-027.md",
+     "sourceRecordId": "manohara-s027-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s027-u004",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "What you bound my hands expecting to happen—that is what happened. Amma! Had I known beforehand that you would lay down such a terrible command, I would not have killed Muthu Vijayan—given the lives of so many soldiers—and brought that throne for that sinner to sit upon. She on the throne where you ought to sit? Was an invasion fought for that?"
+    "text": "What you bound my hands expecting to happen—that is what happened. Amma! Had I known beforehand that you would lay down such a terrible command, I would not have killed Muthu Vijayan—given the lives of so many soldiers—and brought that throne for that sinner to sit upon. She on the throne where you ought to sit? Was an invasion fought for that?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-027.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-027.md",
+     "sourceRecordId": "manohara-s027-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The kill/lives/throne accumulation is preserved rather than compressed."
+     ]
+    }
    },
    {
     "id": "manohara-en-s027-u005",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Isn't this green parrot the gain that came from the invasion? (She points to Vijaya.) Think of this and forget that, Manohara!"
+    "text": "Isn't this green parrot the gain that came from the invasion? (She points to Vijaya.) Think of this and forget that, Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-027.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-027.md",
+     "sourceRecordId": "manohara-s027-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Padmavathi's `பைங்கிளி` image for Vijaya is retained as green parrot."
+     ]
+    }
    },
    {
     "id": "manohara-en-s027-u006",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Vijaya, calm your husband!"
+    "text": "Vijaya, calm your husband!",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-027.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-027.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-dialogue",
+      "ordinal": 1,
+      "description": "After the source direction `(விஜயாவிடம்)`, Padmavathi's quoted instruction is printed without a speaker label."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The dramatic context identifies the addressee, but the source prints no speaker label; metadata therefore remains null."
+     ]
+    }
    }
   ]
  }

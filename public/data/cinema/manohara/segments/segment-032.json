@@ -23,19 +23,78 @@
     "id": "manohara-en-s032-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The king's room. Vasantha Sena knocks on the door.]"
+    "text": "[The king's room. Vasantha Sena knocks on the door.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-032.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-032.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "The king's room; Vasantha Sena knocks on the door."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s032-u002",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Prabhu! Vasanthi has come, Prabhu!"
+    "text": "Prabhu! Vasanthi has come, Prabhu!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-032.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-032.md",
+     "sourceRecordId": "manohara-s032-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s032-u003",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The king paces without opening his mouth.]"
+    "text": "[The king paces without opening his mouth.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-032.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-032.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "closing-stage-direction",
+      "ordinal": 1,
+      "description": "The king paces without opening his mouth."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source scene derivative's bracket form is not silently repaired; only the verified action is translated."
+     ]
+    }
    }
   ]
  }

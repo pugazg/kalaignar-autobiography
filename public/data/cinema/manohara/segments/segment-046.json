@@ -23,67 +23,256 @@
     "id": "manohara-en-s046-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Puja room.]"
+    "text": "[Puja room.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-046.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Puja room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s046-u002",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "How are the grapes?"
+    "text": "How are the grapes?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s046-u003",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Everything your fingers touch turns sweet."
+    "text": "Everything your fingers touch turns sweet.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s046-u004",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "This guava is still inferior to the taste of my lips, isn't it?"
+    "text": "This guava is still inferior to the taste of my lips, isn't it?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The sensual comparison is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s046-u005",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "What lie is there in that?"
+    "text": "What lie is there in that?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source `கொய்யா / பொய்யா` guava/lie sound-play is kept as far as English allows."
+     ]
+    }
    },
    {
     "id": "manohara-en-s046-u006",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "My love, how many days has it been since we enjoyed this bliss?"
+    "text": "My love, how many days has it been since we enjoyed this bliss?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s046-u007",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "I yearned and pined, wondering when I would see you again, slender-bangled one!"
+    "text": "I yearned and pined, wondering when I would see you again, slender-bangled one!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "`ஏந்திழையே` is retained as a heightened poetic address rather than flattened."
+     ]
+    }
    },
    {
     "id": "manohara-en-s046-u008",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Swami!"
+    "text": "Swami!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s046-u009",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Vasanthi!"
+    "text": "Vasanthi!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s046-u010",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Prabho! Where are we now?"
+    "text": "Prabho! Where are we now?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s046-u011",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "We are on our way to heaven, my dear!"
+    "text": "We are on our way to heaven, my dear!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-046.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-046.md",
+     "sourceRecordId": "manohara-s046-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

@@ -59,546 +59,2142 @@
     "id": "manohara-en-s036-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "The king's court hall."
+    "text": "The king's court hall.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-036.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "The king's court hall."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u002",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்பிரியன்",
-    "text": "A storm is about to blow, O king! This palace is going to become a mound of dust!"
+    "text": "A storm is about to blow, O king! This palace is going to become a mound of dust!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The storm/dust warning is retained at its full theatrical pitch."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u003",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Rajapriya!"
+    "text": "Rajapriya!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u004",
     "kind": "dialogue",
     "speakerLabel": "ராஜ",
-    "text": "Hearing the king's urgent order, Manoharan is coming like a charging battle-bull!"
+    "text": "Hearing the king's urgent order, Manoharan is coming like a charging battle-bull!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "`அடலேறு` is kept as a heroic battle-bull image rather than weakened to merely 'angry'."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u005",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Ah!"
+    "text": "Ah!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u006",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "He is coming calmly. But a volcano gives no warning before it roars. Prison for the queen. Manoharan must apologize! O king, can one show poison to a tiger? If a warrior is enraged, disaster will follow! Withdraw the order! Otherwise a spark will leap! A spark will leap!"
+    "text": "He is coming calmly. But a volcano gives no warning before it roars. Prison for the queen. Manoharan must apologize! O king, can one show poison to a tiger? If a warrior is enraged, disaster will follow! Withdraw the order! Otherwise a spark will leap! A spark will leap!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Volcano/tiger/spark escalation and the repeated final warning are preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u007",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Vasanthi trembles.)"
+    "text": "(Vasanthi trembles.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-036.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "reaction-action",
+      "ordinal": 1,
+      "description": "Vasanthi trembles."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u008",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Do not be afraid! I shall see that spark! Hmm—bind him in iron chains and bring him here."
+    "text": "Do not be afraid! I shall see that spark! Hmm—bind him in iron chains and bring him here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u009",
     "kind": "dialogue",
     "speakerLabel": "சிப்பாய்",
-    "text": "(To Manoharan) The king's order... we must bind you with this chain and bring you to the assembly."
+    "text": "(To Manoharan) The king's order... we must bind you with this chain and bring you to the assembly.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u010",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Shackles?"
+    "text": "Shackles?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u011",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Shackles! This is disaster. (To the attendant) Bring my upper cloth!"
+    "text": "Shackles! This is disaster. (To the attendant) Bring my upper cloth!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u012",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(She runs out.)"
+    "text": "(She runs out.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-036.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "movement-action",
+      "ordinal": 1,
+      "description": "Padmavathi runs out."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u013",
     "kind": "dialogue",
     "speakerLabel": "சத்திய",
-    "text": "Manohara! You are going to the assembly to ask the reason. What does it matter how you go? Shackles are for the hands, not for the mouth! (Manoharan is dragged in wearing the shackles.)"
+    "text": "Manohara! You are going to the assembly to ask the reason. What does it matter how you go? Shackles are for the hands, not for the mouth! (Manoharan is dragged in wearing the shackles.)",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The hands/mouth contrast and source-attached dragging cue remain inside the linked turn."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u014",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Manohara! Do you know why I have called you?"
+    "text": "Manohara! Do you know why I have called you?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u015",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Please correct yourself. You did not have me brought. You had me dragged here."
+    "text": "Please correct yourself. You did not have me brought. You had me dragged here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u016",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "You will know my command."
+    "text": "You will know my command.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 49,
+       "printed_page": 48
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u017",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "A command—is this a command? An appetite with no shore in sight! Decking me in gold and gems and glittering diamonds, fondling me with ‘my eye! my pearl! my Tamil melody!’—on an ivory bed... in a sandalwood cradle! ‘Warrior! You who fill my eyes! You who came in the warrior line!’—the one whom you praised and cherished so... to bind that Manoharan in chains, stand him in the middle of the assembly and celebrate your joy—is the name for that unappeased desire of yours ‘a command,’ Father?"
+    "text": "A command—is this a command? An appetite with no shore in sight! Decking me in gold and gems and glittering diamonds, fondling me with ‘my eye! my pearl! my Tamil melody!’—on an ivory bed... in a sandalwood cradle! ‘Warrior! You who fill my eyes! You who came in the warrior line!’—the one whom you praised and cherished so... to bind that Manoharan in chains, stand him in the middle of the assembly and celebrate your joy—is the name for that unappeased desire of yours ‘a command,’ Father?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The childhood endearments, ivory/sandalwood imagery and final command/desire reversal are retained without compression."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u018",
     "kind": "dialogue",
     "speakerLabel": "சபையோர்",
-    "text": "Tch... tch..."
+    "text": "Tch... tch...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u019",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "You stand before justice as an accused man; at this moment you are not a son before his father!"
+    "text": "You stand before justice as an accused man; at this moment you are not a son before his father!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u020",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Accused! Hmm—what harm have I done, and to whom? Who has suffered because of me? O king! I ask not as a son before his father, but as one among the subjects. Did I murder? Did I rob?... Did I do the work of a little fox overturning the country? What crime did I commit, O sovereign—what crime did I commit? Will you not say? You need not say.\nHere are scholars and ministers. Here are great warriors born of the warrior clan! Representatives of the people! The pillars of this country are here. Let them say... what crime did I commit?"
+    "text": "Accused! Hmm—what harm have I done, and to whom? Who has suffered because of me? O king! I ask not as a son before his father, but as one among the subjects. Did I murder? Did I rob?... Did I do the work of a little fox overturning the country? What crime did I commit, O sovereign—what crime did I commit? Will you not say? You need not say.\nHere are scholars and ministers. Here are great warriors born of the warrior clan! Representatives of the people! The pillars of this country are here. Let them say... what crime did I commit?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The crime-question refrain and the scholars/ministers/warriors/representatives/pillars accumulation are retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u021",
     "kind": "dialogue",
     "speakerLabel": "சபையோர்",
-    "text": "The Maharaja must state the crime."
+    "text": "The Maharaja must state the crime.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u022",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "This has nothing to do with you."
+    "text": "This has nothing to do with you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u023",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "If it has nothing to do with the assembly, why bring it before the assembly? History meets for the first time today the strange spectacle of a family quarrel coming into the royal hall, Maharaja!"
+    "text": "If it has nothing to do with the assembly, why bring it before the assembly? History meets for the first time today the strange spectacle of a family quarrel coming into the royal hall, Maharaja!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 50,
+       "printed_page": 49
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s036-u024",
     "kind": "dialogue",
     "speakerLabel": "அரச",
-    "text": "Enough, stop... for the wrong you committed at the spring festival, you must apologize to Vasantha Sena."
+    "text": "Enough, stop... for the wrong you committed at the spring festival, you must apologize to Vasantha Sena.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u025",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "That is precisely why I ask the reason!"
+    "text": "That is precisely why I ask the reason!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u026",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Do you know the punishment in the royal assembly for those who speak against it?"
+    "text": "Do you know the punishment in the royal assembly for those who speak against it?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u027",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "It can only be less than the punishment given to those who imprison the lawfully wedded queen and crown the one who lay in a corner."
+    "text": "It can only be less than the punishment given to those who imprison the lawfully wedded queen and crown the one who lay in a corner.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u028",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Do not provoke my anger! Carry out the king's order—"
+    "text": "Do not provoke my anger! Carry out the king's order—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u029",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "What is a king's order? People have begun asking the reason even for God's order. O king! One who lies subdued even after hearing ‘Mother must go to prison’ is a tortoise!"
+    "text": "What is a king's order? People have begun asking the reason even for God's order. O king! One who lies subdued even after hearing ‘Mother must go to prison’ is a tortoise!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The God/order challenge and tortoise image are retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u030",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Fool who knows no distinction between mother and father! Have you heard of Parasurama, who obeyed his father's command and cut off his mother's head?"
+    "text": "Fool who knows no distinction between mother and father! Have you heard of Parasurama, who obeyed his father's command and cut off his mother's head?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d027",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u031",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Parasurama—an avatar. Manoharan—a human being!"
+    "text": "Parasurama—an avatar. Manoharan—a human being!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d028",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's compressed contrast is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u032",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Are you going to carry out my order or not?"
+    "text": "Are you going to carry out my order or not?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d029",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u033",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I shall carry it out—Manoharan must ask forgiveness."
+    "text": "I shall carry it out—Manoharan must ask forgiveness.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d030",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u034",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Yes; and within half a second."
+    "text": "Yes; and within half a second.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d031",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u035",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Half a second? Before even that! But do you know from whom I must ask forgiveness? After feeding to my sharp sword the murderous eyes—the cruel tongue—of this crooked-minded woman whom you praise as Komalavalli—the hessonite statue—the singing cuckoo—the leaping deer; after making corpses of you if you oppose it, and of that lady beside you if she comes to your aid; after sending to the cremation ground those who fan this sorceress... I must run to my mother, with a whirling sword and encircling fame, and say ‘I have done it’—and ask her forgiveness. Shall I carry out that order?...... Are you ready...? Are you ready?...\nWhy tremble? Ha... ha... ha! Purushothaman—a tiger in name; when he draws his sword, the world trembles. Is he the one afraid like this? Pity! Fingers that tested the sharpness of the spear are now delighting in the deceiver's finger. Eyes that inspected the battle camp are sunk in the sin of this snake-charmer's spectacle. A heart that dwelt on forts and battlements is finding coolness beneath the shadow of this little wall?....—"
+    "text": "Half a second? Before even that! But do you know from whom I must ask forgiveness? After feeding to my sharp sword the murderous eyes—the cruel tongue—of this crooked-minded woman whom you praise as Komalavalli—the hessonite statue—the singing cuckoo—the leaping deer; after making corpses of you if you oppose it, and of that lady beside you if she comes to your aid; after sending to the cremation ground those who fan this sorceress... I must run to my mother, with a whirling sword and encircling fame, and say ‘I have done it’—and ask her forgiveness. Shall I carry out that order?...... Are you ready...? Are you ready?...\nWhy tremble? Ha... ha... ha! Purushothaman—a tiger in name; when he draws his sword, the world trembles. Is he the one afraid like this? Pity! Fingers that tested the sharpness of the spear are now delighting in the deceiver's finger. Eyes that inspected the battle camp are sunk in the sin of this snake-charmer's spectacle. A heart that dwelt on forts and battlements is finding coolness beneath the shadow of this little wall?....—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d032",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50
+      },
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "englishPageSegments": [
+      {
+       "pdf_page": 51,
+       "printed_page": 50,
+       "english_text": "Half a second? Before even that! But do you know from whom I must ask forgiveness? After feeding to my sharp sword the murderous eyes—the cruel tongue—of this crooked-minded woman whom you praise as Komalavalli—the hessonite statue—the singing cuckoo—the leaping deer; after making corpses of you if you oppose it, and of that lady beside you if she comes to your aid;"
+      },
+      {
+       "pdf_page": 52,
+       "printed_page": 51,
+       "english_text": "after sending to the cremation ground those who fan this sorceress... I must run to my mother, with a whirling sword and encircling fame, and say ‘I have done it’—and ask her forgiveness. Shall I carry out that order?...... Are you ready...? Are you ready?...\nWhy tremble? Ha... ha... ha! Purushothaman—a tiger in name; when he draws his sword, the world trembles. Is he the one afraid like this? Pity! Fingers that tested the sharpness of the spear are now delighting in the deceiver's finger. Eyes that inspected the battle camp are sunk in the sin of this snake-charmer's spectacle. A heart that dwelt on forts and battlements is finding coolness beneath the shadow of this little wall?....—"
+      }
+     ],
+     "notes": [
+      "The epithet chain, threat, sword/fame echo and martial-to-erotic image reversals are preserved; the English page segments follow the physical PDF 51→52 split."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u036",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Do not speak!"
+    "text": "Do not speak!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d033",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u037",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "The town speaks... the world speaks!"
+    "text": "The town speaks... the world speaks!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d034",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u038",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Yes—that you are a whore's son."
+    "text": "Yes—that you are a whore's son.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d035",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source insult is translated directly rather than softened."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u039",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ah!"
+    "text": "Ah!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d036",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u040",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Why—are you stunned to hear it? I shall say it a thousand times: you are a whore's son!"
+    "text": "Why—are you stunned to hear it? I shall say it a thousand times: you are a whore's son!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d037",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u041",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ha... Amma,\nenough of your speech. Here! I shall tear that mouth to a hundred pieces.\n[The chain snaps.]"
+    "text": "Ha... Amma,\nenough of your speech. Here! I shall tear that mouth to a hundred pieces.\n[The chain snaps.]",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d038",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source-attached chain-breaking cue remains inside the linked turn."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u042",
     "kind": "dialogue",
     "speakerLabel": "சத். சீல",
-    "text": "Manohara!"
+    "text": "Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d039",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u043",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "No one interfere. Manoharan's fury will not even look to see who is good and who is bad. Let go of my raised hand."
+    "text": "No one interfere. Manoharan's fury will not even look to see who is good and who is bad. Let go of my raised hand.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d040",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u044",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Purushothama! You who see the world through the rolling eyes of a trickster! You who came as a stain in the line of warrior-kings who lived holding honour alone as the good life! Wise man who cannot tell a peacock from a monkey! Blind man who calls the cool moon a firebrand; my mother is the birthplace of love—the abode of righteousness—the form of compassion—the sacred embodiment of chastity—a flawless gem—gold whose fineness never diminishes! I shall tear apart the limbs of you who slandered her! I shall cut to pieces the body of the rogue who goaded you into this treacherous speech. If you have courage—if there is strength in your shoulders—take up your sword—take up your death! If you have no courage—if you have become a coward in the swaying laughter of this coquette—run from here! Run showing your back! Dust-wind that came to cover the glory of Purananuru—run showing your back! Black darkness that came to hide Kalingathu Parani—run until your heels strike your calves...... run... run... run wailing..... run crying Om at the top of your voice... What, is it shameful?\nTiny worm that abused my mother...\nWhy have you turned into a statue? Hey, royal idol: the devotee of vengeance has come to perform worship! Stand just so! Stand without moving! I shall scoop up the blood of this sorceress and perform abhishekam for you. I shall garland you with the nerves of this destroyer. You praise her teeth as a jasmine smile in your drunken infatuation! I shall pull out those teeth and offer them in worship to you! Sinner... look... look, great sinner who reviled a chaste wife! Look at the fate that befalls you and your cushioned-bed queen!"
+    "text": "Purushothama! You who see the world through the rolling eyes of a trickster! You who came as a stain in the line of warrior-kings who lived holding honour alone as the good life! Wise man who cannot tell a peacock from a monkey! Blind man who calls the cool moon a firebrand; my mother is the birthplace of love—the abode of righteousness—the form of compassion—the sacred embodiment of chastity—a flawless gem—gold whose fineness never diminishes! I shall tear apart the limbs of you who slandered her! I shall cut to pieces the body of the rogue who goaded you into this treacherous speech. If you have courage—if there is strength in your shoulders—take up your sword—take up your death! If you have no courage—if you have become a coward in the swaying laughter of this coquette—run from here! Run showing your back! Dust-wind that came to cover the glory of Purananuru—run showing your back! Black darkness that came to hide Kalingathu Parani—run until your heels strike your calves...... run... run... run wailing..... run crying Om at the top of your voice... What, is it shameful?\nTiny worm that abused my mother...\nWhy have you turned into a statue? Hey, royal idol: the devotee of vengeance has come to perform worship! Stand just so! Stand without moving! I shall scoop up the blood of this sorceress and perform abhishekam for you. I shall garland you with the nerves of this destroyer. You praise her teeth as a jasmine smile in your drunken infatuation! I shall pull out those teeth and offer them in worship to you! Sinner... look... look, great sinner who reviled a chaste wife! Look at the fate that befalls you and your cushioned-bed queen!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d041",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51
+      },
+      {
+       "pdf_page": 53,
+       "printed_page": 52
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "englishPageSegments": [
+      {
+       "pdf_page": 52,
+       "printed_page": 51,
+       "english_text": "Purushothama! You who see the world through the rolling eyes of a trickster! You who came as a stain in the line of warrior-kings who lived holding honour alone as the good life! Wise man who cannot tell a peacock from a monkey! Blind man who calls the cool moon"
+      },
+      {
+       "pdf_page": 53,
+       "printed_page": 52,
+       "english_text": "a firebrand; my mother is the birthplace of love—the abode of righteousness—the form of compassion—the sacred embodiment of chastity—a flawless gem—gold whose fineness never diminishes! I shall tear apart the limbs of you who slandered her! I shall cut to pieces the body of the rogue who goaded you into this treacherous speech. If you have courage—if there is strength in your shoulders—take up your sword—take up your death! If you have no courage—if you have become a coward in the swaying laughter of this coquette—run from here! Run showing your back! Dust-wind that came to cover the glory of Purananuru—run showing your back! Black darkness that came to hide Kalingathu Parani—run until your heels strike your calves...... run... run... run wailing..... run crying Om at the top of your voice... What, is it shameful?\nTiny worm that abused my mother...\nWhy have you turned into a statue? Hey, royal idol: the devotee of vengeance has come to perform worship! Stand just so! Stand without moving! I shall scoop up the blood of this sorceress and perform abhishekam for you. I shall garland you with the nerves of this destroyer. You praise her teeth as a jasmine smile in your drunken infatuation! I shall pull out those teeth and offer them in worship to you! Sinner... look... look, great sinner who reviled a chaste wife! Look at the fate that befalls you and your cushioned-bed queen!"
+      }
+     ],
+     "notes": [
+      "This is retained as a sustained rhetorical performance, not reduced to a summary. `Purananuru`, `Kalingathu Parani` and `abhishekam` remain culturally explicit. The physical PDF 52→53 break is preserved in English page segments."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u045",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "[Coming in] Drop the sword!"
+    "text": "[Coming in] Drop the sword!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d042",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 53,
+       "printed_page": 52
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached entrance cue remains inside the linked utterance."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u046",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Who are you?... (stunned) Amma! Amma! Why have you come here, Amma? Your pure feet must not touch this place where wickedness rules, Amma!"
+    "text": "Who are you?... (stunned) Amma! Amma! Why have you come here, Amma? Your pure feet must not touch this place where wickedness rules, Amma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d043",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 53,
+       "printed_page": 52
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s036-u047",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Manohara!"
+    "text": "Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d044",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 53,
+       "printed_page": 52
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u048",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Wait a moment, Mother! [Looking at the king] Where are you trying to run? Stop."
+    "text": "Wait a moment, Mother! [Looking at the king] Where are you trying to run? Stop.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d045",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u049",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Manohara! Do not forget yourself as well!"
+    "text": "Manohara! Do not forget yourself as well!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d046",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u050",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma, if you had heard the cruel words that rang through this royal hall about you just a moment ago, you would not speak like this. Stay here; I shall return."
+    "text": "Amma, if you had heard the cruel words that rang through this royal hall about you just a moment ago, you would not speak like this. Stay here; I shall return.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d047",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u051",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma! No harm. For every drop of blood that falls from your sacred golden hand, these wicked people must answer."
+    "text": "Amma! No harm. For every drop of blood that falls from your sacred golden hand, these wicked people must answer.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d048",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s036-u052",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Manohara! It was only me they insulted, was it not?"
+    "text": "Manohara! It was only me they insulted, was it not?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d049",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u053",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Leave me! Even if my mother stops me, I will not spare the man who insulted my mother."
+    "text": "Leave me! Even if my mother stops me, I will not spare the man who insulted my mother.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d050",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u054",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Manohara! If it is true that you are my son, listen to what I say."
+    "text": "Manohara! If it is true that you are my son, listen to what I say.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d051",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u055",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma."
+    "text": "Amma.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d052",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u056",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "First plunge the sword into this belly from which you were born, and then go to the Maharaja! Stand upon your mother's corpse and fight your father. Hmm... here is your mother... kill me. Then walk according to your principle... I am standing here."
+    "text": "First plunge the sword into this belly from which you were born, and then go to the Maharaja! Stand upon your mother's corpse and fight your father. Hmm... here is your mother... kill me. Then walk according to your principle... I am standing here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d053",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The mother’s-body/father-war challenge is retained without euphemism."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u057",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma!..."
+    "text": "Amma!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d054",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u058",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "I am not going to keep talking now. I had sworn that I would never go of my own accord to see the man I had vowed not to see; because of you I have been forced to see him, and now I must beg my own son before the assembly—an unbearable humiliation!"
+    "text": "I am not going to keep talking now. I had sworn that I would never go of my own accord to see the man I had vowed not to see; because of you I have been forced to see him, and now I must beg my own son before the assembly—an unbearable humiliation!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d055",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u059",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "What do you ask me to do now, Amma?"
+    "text": "What do you ask me to do now, Amma?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d056",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u060",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Give me the sword like this!"
+    "text": "Give me the sword like this!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d057",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u061",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Shall I ask forgiveness too?"
+    "text": "Shall I ask forgiveness too?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d058",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 54,
+       "printed_page": 53
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u062",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Manohara! My jewel! Your mother was not born into a coward's family. She did not become the wife of a coward. She did not bear a coward as her son, my dear! Better to die than to ask forgiveness."
+    "text": "Manohara! My jewel! Your mother was not born into a coward's family. She did not become the wife of a coward. She did not bear a coward as her son, my dear! Better to die than to ask forgiveness.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d059",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The threefold coward/family-wife-son sequence is preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u063",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Yes; that is my decision too. This cruel man must not be left alive. Death sentence for Manoharan!"
+    "text": "Yes; that is my decision too. This cruel man must not be left alive. Death sentence for Manoharan!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d060",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u064",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ha! Amma!...\nAt least now give me permission, Amma. I shall crush these wretches and fling them away. Still patience, Amma?"
+    "text": "Ha! Amma!...\nAt least now give me permission, Amma. I shall crush these wretches and fling them away. Still patience, Amma?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d061",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s036-u065",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Now is precisely the time for patience!"
+    "text": "Now is precisely the time for patience!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d062",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u066",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Then what of me?"
+    "text": "Then what of me?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d063",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u067",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "You must die."
+    "text": "You must die.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d064",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u068",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I must die? Your son Manoharan must die?"
+    "text": "I must die? Your son Manoharan must die?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d065",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u069",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Yes! A fortune no one else can obtain: a father himself killing his son! And the mother nodding her head to it—my treasure, who on this earth could receive such royal fortune? Go, son—go to die!"
+    "text": "Yes! A fortune no one else can obtain: a father himself killing his son! And the mother nodding her head to it—my treasure, who on this earth could receive such royal fortune? Go, son—go to die!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d066",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The bitterly ironic `royal fortune` refrain is preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u070",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma! Are you the one saying this?"
+    "text": "Amma! Are you the one saying this?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d067",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u071",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Yes! The mother who bore you! I myself say it! Die!"
+    "text": "Yes! The mother who bore you! I myself say it! Die!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d068",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u072",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma, to be parted from you?"
+    "text": "Amma, to be parted from you?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d069",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u073",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "I myself have found the courage to part from you."
+    "text": "I myself have found the courage to part from you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d070",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u074",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma! Amma!"
+    "text": "Amma! Amma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d071",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 55,
+       "printed_page": 54
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u075",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Be quiet! Satyaseelar! Arrange to carry Manoharan away—to the execution ground!"
+    "text": "Be quiet! Satyaseelar! Arrange to carry Manoharan away—to the execution ground!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d072",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u076",
     "kind": "dialogue",
-    "speakerLabel": "சபையோர்"
+    "speakerLabel": "சபையோர்",
+    "text": "‘No!’\n‘The judgement is unjust... unjust!’",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d073",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "englishLines": [
+      "‘No!’",
+      "‘The judgement is unjust... unjust!’"
+     ],
+     "notes": [
+      "The two quoted crowd cries remain one source-record-linked unit."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u077",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "No one speak! He is my son—I shall deal with him as I wish! After the death sentence is carried out, even the funeral must take place outside this empire!\n[Taking Manoharan's hand]\nSon! If this is my last kiss, let our graves meet us next!"
+    "text": "No one speak! He is my son—I shall deal with him as I wish! After the death sentence is carried out, even the funeral must take place outside this empire!\n[Taking Manoharan's hand]\nSon! If this is my last kiss, let our graves meet us next!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d074",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The exile-even-in-burial and grave-meeting images are retained; the source-attached hand-taking cue remains inside the linked turn."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u078",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Mama...... why, Mama, did you tear away the petals of the blooming rose... why, Mama, did you cut the green branch of the jasmine that had spread and grown... I followed him out of pure good love...... why, Mama, did you cast me into waves of suffering... tell me, Mama, is my life now only a desert?......... Is my heart only a dark room? Is there no deliverance at all, Mama?......"
+    "text": "Mama...... why, Mama, did you tear away the petals of the blooming rose... why, Mama, did you cut the green branch of the jasmine that had spread and grown... I followed him out of pure good love...... why, Mama, did you cast me into waves of suffering... tell me, Mama, is my life now only a desert?......... Is my heart only a dark room? Is there no deliverance at all, Mama?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d075",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Rose/jasmine/waves/desert/dark-room imagery is preserved as one sustained lament."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u079",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "There is no use stirring up a matter that is finished."
+    "text": "There is no use stirring up a matter that is finished.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d076",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u080",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "What matter is finished, Mama? The bond called father and son?...... Or the tie called husband and wife? Even if both are finished as far as you are concerned, think from where I stand; I am your enemy's daughter. The noble man who captured my heart is your son. Is it not a strange thing, Mama, to subject a man with a heart capable of drawing even an enemy to such cruelty—and that too when his wife is pregnant? Why did a princess of the Pandiyan country come to the Chola palace............ to become a lotus of sorrow...? To lose happiness? Tell me, Mama."
+    "text": "What matter is finished, Mama? The bond called father and son?...... Or the tie called husband and wife? Even if both are finished as far as you are concerned, think from where I stand; I am your enemy's daughter. The noble man who captured my heart is your son. Is it not a strange thing, Mama, to subject a man with a heart capable of drawing even an enemy to such cruelty—and that too when his wife is pregnant? Why did a princess of the Pandiyan country come to the Chola palace............ to become a lotus of sorrow...? To lose happiness? Tell me, Mama.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d077",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55
+      },
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "englishPageSegments": [
+      {
+       "pdf_page": 56,
+       "printed_page": 55,
+       "english_text": "What matter is finished, Mama? The bond called father and son?...... Or the tie called husband and wife? Even if both are finished as far as you are concerned, think from where I stand; I am your enemy's daughter. The noble man who captured my heart is your son. Is it not a strange thing, Mama, to subject a man with a heart capable of drawing even an enemy to such cruelty—and that too when his wife is pregnant? Why did a princess of the Pandiyan country come to the Chola"
+      },
+      {
+       "pdf_page": 57,
+       "printed_page": 56,
+       "english_text": "palace............ to become a lotus of sorrow...? To lose happiness? Tell me, Mama."
+      }
+     ],
+     "notes": [
+      "The father-son/husband-wife parallel, enemy-to-love reversal and sorrow-lotus image are retained. The English page split follows physical PDF 56→57."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u081",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "The mother-in-law's lesson—exactly the same for the daughter-in-law!"
+    "text": "The mother-in-law's lesson—exactly the same for the daughter-in-law!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d078",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u082",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "I am speaking to my Mama..."
+    "text": "I am speaking to my Mama...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d079",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u083",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "Mama... to you the Maharaja is Mama... all this trouble came from that doubt, girl!"
+    "text": "Mama... to you the Maharaja is Mama... all this trouble came from that doubt, girl!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d080",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u084",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Fie... do not speak, whore..."
+    "text": "Fie... do not speak, whore...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d081",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source insult is translated directly."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u085",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "What did you say... whore who became wife to a whore's son... what did you say..."
+    "text": "What did you say... whore who became wife to a whore's son... what did you say...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d082",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The reciprocal insult is not softened."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u086",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Ah... Vasantha Sena..."
+    "text": "Ah... Vasantha Sena...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d083",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u087",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "Queens of chastity—no dagger alone; even God cannot come near!..."
+    "text": "Queens of chastity—no dagger alone; even God cannot come near!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d084",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The taunting hyperbole is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u088",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Vasanthi!...\n[Looking at Vijaya]...\nSinner!... you tried to destroy my desires in half a second..."
+    "text": "Vasanthi!...\n[Looking at Vijaya]...\nSinner!... you tried to destroy my desires in half a second...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d085",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached gaze cue remains inside the linked turn."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u089",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "A plot is being laid, Maharaja—to bring me down!..."
+    "text": "A plot is being laid, Maharaja—to bring me down!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d086",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s036-u090",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Do not fear... I shall put an end to the plot...... Who is there?\n[A guard comes.]\nTogether with Padmavathi, put Vijaya too in the underground prison... Hmm... let it be done..."
+    "text": "Do not fear... I shall put an end to the plot...... Who is there?\n[A guard comes.]\nTogether with Padmavathi, put Vijaya too in the underground prison... Hmm... let it be done...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d087",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached guard entrance remains inside the linked turn."
+     ]
+    }
    },
    {
     "id": "manohara-en-s036-u091",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Mama..."
+    "text": "Mama...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-036.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-036.md",
+     "sourceRecordId": "manohara-s036-d088",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 57,
+       "printed_page": 56
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

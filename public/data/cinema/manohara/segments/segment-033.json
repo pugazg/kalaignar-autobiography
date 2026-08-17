@@ -35,301 +35,1144 @@
     "id": "manohara-en-s033-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Padmavathi's room.]"
+    "text": "[Padmavathi's room.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-033.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Padmavathi's room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u002",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "She said that? And the king simply stood there listening? Was Satyaseelar there then, Vijaya?"
+    "text": "She said that? And the king simply stood there listening? Was Satyaseelar there then, Vijaya?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u003",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "He was."
+    "text": "He was.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u004",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "It was a mother's command that stopped Manoharan. What stopped Satyaseelar...... Did his voice tremble so that he could not speak against that cruelty? Or did cowardice take up residence in his heart? (To the attendant) Call Satyaseelar... go at once... bring him now!"
+    "text": "It was a mother's command that stopped Manoharan. What stopped Satyaseelar...... Did his voice tremble so that he could not speak against that cruelty? Or did cowardice take up residence in his heart? (To the attendant) Call Satyaseelar... go at once... bring him now!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The voice/heart parallel accusation is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u005",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Vasantha Sena looks at Ugrasenan's picture in the pendant on her pearl necklace.]"
+    "text": "[Vasantha Sena looks at Ugrasenan's picture in the pendant on her pearl necklace.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-033.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "Vasantha Sena looks at Ugrasenan's picture in the pendant on her pearl necklace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u006",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "What is it, Amma... why that now..."
+    "text": "What is it, Amma... why that now...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u007",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Haven't I told you... this is the god who gives a hand in danger."
+    "text": "Haven't I told you... this is the god who gives a hand in danger.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The ironic `god who helps in danger` image for Ugrasenan's portrait is preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u008",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Its help isn't needed now at all."
+    "text": "Its help isn't needed now at all.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u009",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Leave that... the news you brought..."
+    "text": "Leave that... the news you brought...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u010",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Manoharan is in a fury. The queen too, after hearing what happened, is terribly shaken......"
+    "text": "Manoharan is in a fury. The queen too, after hearing what happened, is terribly shaken......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u011",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Don't pile it up... tell me quickly."
+    "text": "Don't pile it up... tell me quickly.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u012",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "They have sent an attendant to bring Satyaseelar at once."
+    "text": "They have sent an attendant to bring Satyaseelar at once.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u013",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "At this hour?"
+    "text": "At this hour?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u014",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Yes..."
+    "text": "Yes...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u015",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "In the darkness?"
+    "text": "In the darkness?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u016",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Yes..."
+    "text": "Yes...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u017",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Satyaseelar is coming to Padmavathi's inner chamber... at night..."
+    "text": "Satyaseelar is coming to Padmavathi's inner chamber... at night...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u018",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "To inquire about the spring-festival incident,"
+    "text": "To inquire about the spring-festival incident,",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u019",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "I know, girl... I know why he has been summoned... I know that... that is what must be turned around...\nDarkness! Padmavathi's inner chamber! Satyaseelar there! It must be seen with his own eyes! By whom? By whom, girl? We must arrange for the king to see it... we must find a way... come..."
+    "text": "I know, girl... I know why he has been summoned... I know that... that is what must be turned around...\nDarkness! Padmavathi's inner chamber! Satyaseelar there! It must be seen with his own eyes! By whom? By whom, girl? We must arrange for the king to see it... we must find a way... come...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 44,
+       "printed_page": 43
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The clipped darkness/chamber/Satyaseelar plotting cadence is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u020",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[At the king's room, Vasantha Sena's attendant knocks on the door.]"
+    "text": "[At the king's room, Vasantha Sena's attendant knocks on the door.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-033.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-action",
+      "ordinal": 2,
+      "description": "At the king's room, Vasantha Sena's attendant knocks on the door."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u021",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Maharaja... Maharaja, danger... open the door, Maharaja... everything will be ruined... danger, Maharaja!"
+    "text": "Maharaja... Maharaja, danger... open the door, Maharaja... everything will be ruined... danger, Maharaja!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u022",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "What is this?"
+    "text": "What is this?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u023",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Maharaja! Ayyo..."
+    "text": "Maharaja! Ayyo...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u024",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Tell me what happened..."
+    "text": "Tell me what happened...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u025",
     "kind": "dialogue",
     "speakerLabel": "தோ",
-    "text": "Vasantha Sena Amma... she's put up a noose..."
+    "text": "Vasantha Sena Amma... she's put up a noose...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u026",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Ah!"
+    "text": "Ah!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u027",
     "kind": "dialogue",
     "speakerLabel": "தோ",
-    "text": "She's going to die... only if we hurry can we save her..."
+    "text": "She's going to die... only if we hurry can we save her...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u028",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Where?"
+    "text": "Where?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u029",
     "kind": "dialogue",
     "speakerLabel": "தோ",
-    "text": "She went this way...... Ayyo...... Amma......"
+    "text": "She went this way...... Ayyo...... Amma......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u030",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[They run. Beneath a tree Vasantha Sena stands as though preparing to hang herself.]"
+    "text": "[They run. Beneath a tree Vasantha Sena stands as though preparing to hang herself.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-033.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "staged-suicide-action",
+      "ordinal": 1,
+      "description": "They run; beneath a tree Vasantha Sena stands as though preparing to hang herself."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u031",
     "kind": "dialogue",
     "speakerLabel": "வ. சேனை",
-    "text": "Lord...... take this servant into your sacred feet. All the loyalty I showed the king has become water poured upon barren grass... he is not at fault... it is my fate—I alone must endure it."
+    "text": "Lord...... take this servant into your sacred feet. All the loyalty I showed the king has become water poured upon barren grass... he is not at fault... it is my fate—I alone must endure it.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d027",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The `water poured on barren grass` image is retained rather than generalized as wasted devotion."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u032",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Che! Che? (He runs in.) Vasanthi!... what have you done... what madness is this?"
+    "text": "Che! Che? (He runs in.) Vasanthi!... what have you done... what madness is this?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d028",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached running cue remains inside the linked turn."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u033",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "No... this is the reward true love has received, Maharaja... I do not wish to remain alive even for a moment longer. I shall close my eyes before your very eyes. That alone is supreme bliss for me, Prabhu!"
+    "text": "No... this is the reward true love has received, Maharaja... I do not wish to remain alive even for a moment longer. I shall close my eyes before your very eyes. That alone is supreme bliss for me, Prabhu!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d029",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s033-u034",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Vasanthi... don't..."
+    "text": "Vasanthi... don't...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d030",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u035",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Leave me, Prabhu!"
+    "text": "Leave me, Prabhu!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d031",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u036",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Vasanthi... don't... come here."
+    "text": "Vasanthi... don't... come here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d032",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 45,
+       "printed_page": 44
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u037",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Leave me—Maharaja—one request at the threshold of death. Please fulfil it. Do not let the slur ‘Vasantha killed herself’ fall upon you. You yourself kill me—here (she shows the dagger). Plunge this into my heart that carries your memories. I shall not think of it as a knife-thrust. I shall think of it as the last kiss given by my beloved. Hmm... do not hesitate—why the hesitation, Swami?..."
+    "text": "Leave me—Maharaja—one request at the threshold of death. Please fulfil it. Do not let the slur ‘Vasantha killed herself’ fall upon you. You yourself kill me—here (she shows the dagger). Plunge this into my heart that carries your memories. I shall not think of it as a knife-thrust. I shall think of it as the last kiss given by my beloved. Hmm... do not hesitate—why the hesitation, Swami?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d033",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The knife/last-kiss reversal is retained without softening its theatrical register."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u038",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Vasanthi... have you lost your senses?"
+    "text": "Vasanthi... have you lost your senses?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d034",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u039",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "After losing your love, for whom should I live?"
+    "text": "After losing your love, for whom should I live?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d035",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u040",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Vasanthi... I said it in anger..."
+    "text": "Vasanthi... I said it in anger...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d036",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u041",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Fine anger... if we had delayed a little, a killing would have happened by now... all who live by deceiving must go to the world of bliss... and you must go to Yama's world... fine justice this is, Amma..."
+    "text": "Fine anger... if we had delayed a little, a killing would have happened by now... all who live by deceiving must go to the world of bliss... and you must go to Yama's world... fine justice this is, Amma...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d037",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The Inba-lokam/Yama-lokam contrast is retained rather than generalized to heaven/hell."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u042",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Fie... why are you philosophizing, girl... without even the respect to remember that we are speaking to the Maharaja?"
+    "text": "Fie... why are you philosophizing, girl... without even the respect to remember that we are speaking to the Maharaja?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d038",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u043",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "My heart is boiling, Amma... the queen too..."
+    "text": "My heart is boiling, Amma... the queen too...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d039",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u044",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "What..."
+    "text": "What...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d040",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u045",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Shut your mouth... get out of here..."
+    "text": "Shut your mouth... get out of here...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d041",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u046",
     "kind": "dialogue",
     "speakerLabel": "தோ",
-    "text": "Beat me... kill me, I don't care. One day or another the truth will come out... the thief of many days, one day..."
+    "text": "Beat me... kill me, I don't care. One day or another the truth will come out... the thief of many days, one day...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d042",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The proverb is left deliberately incomplete because the source stops after `ஒரு நாள்...`."
+     ]
+    }
    },
    {
     "id": "manohara-en-s033-u047",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Malini... you will not go......"
+    "text": "Malini... you will not go......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d043",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u048",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "I cannot... come and see the queen's inner chamber! What business does Satyaseelar have there at midnight?..."
+    "text": "I cannot... come and see the queen's inner chamber! What business does Satyaseelar have there at midnight?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d044",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u049",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Ayyo! Ayyo?..."
+    "text": "Ayyo! Ayyo?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d045",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s033-u050",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Ah!...... Is that so... truly?... (He runs. Vasanthi and the attendant laugh.)"
+    "text": "Ah!...... Is that so... truly?... (He runs. Vasanthi and the attendant laugh.)",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-033.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-033.md",
+     "sourceRecordId": "manohara-s033-d046",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 46,
+       "printed_page": 45
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached exit and conspirators' laughter remain inside the linked turn."
+     ]
+    }
    }
   ]
  }

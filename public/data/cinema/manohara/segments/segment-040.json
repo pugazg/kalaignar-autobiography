@@ -27,127 +27,500 @@
     "id": "manohara-en-s040-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Cave.]"
+    "text": "[Cave.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-040.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Cave."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u002",
     "kind": "dialogue",
     "speakerLabel": "கேசரிவர்மன்",
-    "text": "The vengeful woman has prepared the palm-leaf letter. To make her plan succeed, if we are careless even a little with this final letter, it itself will become our death-letter!"
+    "text": "The vengeful woman has prepared the palm-leaf letter. To make her plan succeed, if we are careless even a little with this final letter, it itself will become our death-letter!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The `letter/death-letter` wordplay is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s040-u003",
     "kind": "dialogue",
     "speakerLabel": "சத்யசீலர்",
-    "text": "Tell us the matter, Varma!"
+    "text": "Tell us the matter, Varma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u004",
     "kind": "dialogue",
     "speakerLabel": "கே. வ",
-    "text": "The deceiver tried to crown Vasanthan! The king refused. So she has sent a letter to the outsider Ugrasenan, asking him to seize this palace and make her son king."
+    "text": "The deceiver tried to crown Vasanthan! The king refused. So she has sent a letter to the outsider Ugrasenan, asking him to seize this palace and make her son king.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u005",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ugrasenan! King of Imayapuri!"
+    "text": "Ugrasenan! King of Imayapuri!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u006",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "Yes! The man who has been waiting for a chance to enter our empire."
+    "text": "Yes! The man who has been waiting for a chance to enter our empire.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u007",
     "kind": "dialogue",
     "speakerLabel": "கே. வ",
-    "text": "The man bringing a reply from Ugrasenan must come by this very route. Come, let us see."
+    "text": "The man bringing a reply from Ugrasenan must come by this very route. Come, let us see.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u008",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Akshayan comes on horseback. Manoharan stops him.]"
+    "text": "[Akshayan comes on horseback. Manoharan stops him.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-040.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "entrance-action",
+      "ordinal": 1,
+      "description": "Akshayan comes on horseback; Manoharan stops him."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u009",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Who are you!"
+    "text": "Who are you!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u010",
     "kind": "dialogue",
     "speakerLabel": "அட்",
-    "text": "Are you asking me? I am myself!"
+    "text": "Are you asking me? I am myself!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The evasive comic tautology is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s040-u011",
     "kind": "dialogue",
     "speakerLabel": "வர்ம",
-    "text": "Where are you going?"
+    "text": "Where are you going?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u012",
     "kind": "dialogue",
     "speakerLabel": "அட்",
-    "text": "To the place I must go!"
+    "text": "To the place I must go!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u013",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Manoharan and Rajapriyan attack Akshayan and bind him to a stone pillar. Manoharan takes a letter from him.]"
+    "text": "[Manoharan and Rajapriyan attack Akshayan and bind him to a stone pillar. Manoharan takes a letter from him.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-040.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "capture-action",
+      "ordinal": 1,
+      "description": "Manoharan and Rajapriyan attack Akshayan, bind him to a stone pillar, and take a letter from him."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 64,
+       "printed_page": 63
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u014",
     "kind": "written-text",
     "speakerLabel": null,
-    "text": "‘Dear Vasantha Sena!\n\nKeep Akshayan as your aide and attend to what must be done inside the palace. The troops and I are setting out. We shall do away with Purushothaman. We shall begin a new life.\n\nUgrasenan.’"
+    "text": "‘Dear Vasantha Sena!\n\nKeep Akshayan as your aide and attend to what must be done inside the palace. The troops and I are setting out. We shall do away with Purushothaman. We shall begin a new life.\n\nUgrasenan.’",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-040.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "printed-letter",
+      "ordinal": 1,
+      "description": "Ugrasenan's letter to Vasantha Sena printed in full on PDF 65."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The salutation, body and signature are preserved as one printed-letter unit; no words are supplied beyond the source."
+     ]
+    }
    },
    {
     "id": "manohara-en-s040-u015",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "Treason... we must not let this go!"
+    "text": "Treason... we must not let this go!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u016",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Let us set out now... that crooked-minded woman must be destroyed root and branch."
+    "text": "Let us set out now... that crooked-minded woman must be destroyed root and branch.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`கூண்டோடு அழிக்க` is rendered as total/root-and-branch destruction without adding a literal cage not warranted in this idiomatic context."
+     ]
+    }
    },
    {
     "id": "manohara-en-s040-u017",
     "kind": "dialogue",
     "speakerLabel": "கே. வ.",
-    "text": "If you destroy her, your valour will be revealed. That whore's disguise will not be revealed. Prince! Have I wandered yearning all this time merely to kill her in half a second? I too could do that; I would have done it long ago."
+    "text": "If you destroy her, your valour will be revealed. That whore's disguise will not be revealed. Prince! Have I wandered yearning all this time merely to kill her in half a second? I too could do that; I would have done it long ago.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The valour/disguise contrast is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s040-u018",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Why did you not?"
+    "text": "Why did you not?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u019",
     "kind": "dialogue",
     "speakerLabel": "வர்",
-    "text": "Wisdom, Prince! Wisdom. Had I killed her then, the king—who had lost his eyes for that deceitful woman—would have shed tears for her. Her schemes would not have been exposed. The world could not have known her deceits. Our cleverness does not lie in killing her. It lies in exposing her plots."
+    "text": "Wisdom, Prince! Wisdom. Had I killed her then, the king—who had lost his eyes for that deceitful woman—would have shed tears for her. Her schemes would not have been exposed. The world could not have known her deceits. Our cleverness does not lie in killing her. It lies in exposing her plots.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The repeated `விவேகம்` and killing-versus-exposing contrast are preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s040-u020",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "And the way to do that......"
+    "text": "And the way to do that......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s040-u021",
     "kind": "dialogue",
     "speakerLabel": "வர்",
-    "text": "Just as a thorn is removed with another thorn, a plot must be defeated by a plot. I shall tell you—come."
+    "text": "Just as a thorn is removed with another thorn, a plot must be defeated by a plot. I shall tell you—come.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-040.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-040.md",
+     "sourceRecordId": "manohara-s040-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The thorn-with-thorn proverb is translated literally rather than replaced by an English proverb."
+     ]
+    }
    }
   ]
  }

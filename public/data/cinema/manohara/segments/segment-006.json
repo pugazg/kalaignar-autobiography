@@ -31,121 +31,468 @@
     "id": "manohara-en-s006-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Palace. Vasantha Sena is looking at Ugrasena's portrait, hidden inside the pendant on her pearl necklace.)"
+    "text": "(Palace. Vasantha Sena is looking at Ugrasena's portrait, hidden inside the pendant on her pearl necklace.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-006.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Opening palace direction introducing the concealed Ugrasena portrait in Vasantha Sena's pendant."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 10,
+       "printed_page": 9
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u002",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Amma... whatever else you may forget day after day, you never forget this, do you? What is there in this pendant that draws your eyes like a magnet?"
+    "text": "Amma... whatever else you may forget day after day, you never forget this, do you? What is there in this pendant that draws your eyes like a magnet?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u003",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "No magnet, girl! A god who lends a hand in danger!"
+    "text": "No magnet, girl! A god who lends a hand in danger!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source pivots from the maid's literal `magnet` to Vasantha Sena's metaphorical protector; the abrupt contrast is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s006-u004",
     "kind": "dialogue",
     "speakerLabel": "தோ",
-    "text": "A god?"
+    "text": "A god?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u005",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Look... (She shows the portrait.)"
+    "text": "Look... (She shows the portrait.)",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The label-attached source action remains inside the dialogue-linked unit."
+     ]
+    }
    },
    {
     "id": "manohara-en-s006-u006",
     "kind": "dialogue",
     "speakerLabel": "தோ",
-    "text": "Amma, the Maharaja is coming!"
+    "text": "Amma, the Maharaja is coming!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u007",
     "kind": "dialogue",
     "speakerLabel": "புருஷோத்தமன்",
-    "text": "Still not finished with your adornment? It is already time for the play..."
+    "text": "Still not finished with your adornment? It is already time for the play...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u008",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "There—finished."
+    "text": "There—finished.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u009",
     "kind": "dialogue",
     "speakerLabel": "புரு",
-    "text": "Have you forgotten? Today is Manoharan's birthday."
+    "text": "Have you forgotten? Today is Manoharan's birthday.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u010",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "Would I forget—the boy's birthday? Another memory came to me..."
+    "text": "Would I forget—the boy's birthday? Another memory came to me...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u011",
     "kind": "dialogue",
     "speakerLabel": "புருஷோத்",
-    "text": "What is it, Vasanthi?"
+    "text": "What is it, Vasanthi?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u012",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "The thirteenth anniversary of our festival of love."
+    "text": "The thirteenth anniversary of our festival of love.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u013",
     "kind": "dialogue",
     "speakerLabel": "புருஷோத்",
-    "text": "Yes, my dear... I did not even notice the years flying by."
+    "text": "Yes, my dear... I did not even notice the years flying by.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u014",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[As he comes closer, he touches Vasantha.]"
+    "text": "[As he comes closer, he touches Vasantha.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-006.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "Purushothaman approaches and touches Vasantha before Vasanthan interrupts."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u015",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Do not touch fire! This body will burn you! It may sting a little too—about all this I have no doubt... no doubt.... What is this, Amma, a new lesson today? Amma!... Hey... Appa! Look at Amma's beauty, Appa... If only I got a girl like Amma..."
+    "text": "Do not touch fire! This body will burn you! It may sting a little too—about all this I have no doubt... no doubt.... What is this, Amma, a new lesson today? Amma!... Hey... Appa! Look at Amma's beauty, Appa... If only I got a girl like Amma...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The comic return of `சந்தேகமில்லே` from scene 3 is preserved instead of normalized away.",
+      "The colloquial Amma/Appa register is retained to keep Vasanthan's teasing voice distinct."
+     ]
+    }
    },
    {
     "id": "manohara-en-s006-u016",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "Chi... keep quiet!"
+    "text": "Chi... keep quiet!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s006-u017",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Was Pillaiyar the only one who asked for a girl like his mother Parvati? What is wrong if I ask too, Appa..."
+    "text": "Was Pillaiyar the only one who asked for a girl like his mother Parvati? What is wrong if I ask too, Appa...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`Pillaiyar` and `Parvati` are retained because the joke depends on the culturally specific comparison."
+     ]
+    }
    },
    {
     "id": "manohara-en-s006-u018",
     "kind": "dialogue",
     "speakerLabel": "புருஷோத்",
-    "text": "This will never, ever end!"
+    "text": "This will never, ever end!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 11,
+       "printed_page": 10
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The emphatic repetition in `தீரவே தீராது` is reflected in English."
+     ]
+    }
    },
    {
     "id": "manohara-en-s006-u019",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "No doubt."
+    "text": "No doubt.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 12,
+       "printed_page": 11
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The brief punchline carries forward the recurring `சந்தேகமில்லை` joke."
+     ]
+    }
    },
    {
     "id": "manohara-en-s006-u020",
     "kind": "dialogue",
     "speakerLabel": "புருஷோத்",
-    "text": "Vasanthi, I am going... get ready quickly..."
+    "text": "Vasanthi, I am going... get ready quickly...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-006.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-006.md",
+     "sourceRecordId": "manohara-s006-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 12,
+       "printed_page": 11
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

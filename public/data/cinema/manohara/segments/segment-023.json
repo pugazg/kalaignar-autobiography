@@ -23,19 +23,79 @@
     "id": "manohara-en-s023-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Prison. Vasantha Sena's companion, carrying a pot, speaks secretly with the prison guard; afterwards the guard takes the pot and gives it to Bauthayanan.]"
+    "text": "[Prison. Vasantha Sena's companion, carrying a pot, speaks secretly with the prison guard; afterwards the guard takes the pot and gives it to Bauthayanan.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-023.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-023.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "In the prison, Vasantha Sena's companion secretly speaks to the guard while carrying a pot; the guard then takes it to Bauthayanan."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s023-u002",
     "kind": "dialogue",
     "speakerLabel": "பெளத்தாயன்",
-    "text": "When the giving god gives, he tears open the roof and gives! Long live Vasantha Sena!"
+    "text": "When the giving god gives, he tears open the roof and gives! Long live Vasantha Sena!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-023.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-023.md",
+     "sourceRecordId": "manohara-s023-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source proverb is retained through its roof-tearing image rather than replaced by an English proverb.",
+      "The source's visible `*` after `தெய்வம்` remains a source-text anomaly upstream and is not silently interpreted here."
+     ]
+    }
    },
    {
     "id": "manohara-en-s023-u003",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "As he unties the bundle, a snake rises with its hood spread, comes out and bites him... Bauthayanan dies."
+    "text": "As he unties the bundle, a snake rises with its hood spread, comes out and bites him... Bauthayanan dies.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-023.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-023.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 1,
+      "description": "As Bauthayanan unties the bundle, a hooded snake comes out, bites him, and he dies."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

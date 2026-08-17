@@ -23,43 +23,165 @@
     "id": "manohara-en-s014-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Vijaya's inner chamber.)"
+    "text": "(Vijaya's inner chamber.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-014.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Vijaya's inner chamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s014-u002",
     "kind": "dialogue",
     "speakerLabel": "அமைச்சர்",
-    "text": "He has set, Amma!"
+    "text": "He has set, Amma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-014.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": "manohara-s014-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source uses the sunset image `அஸ்தமித்து விட்டார்` for death, retained rather than flattened to 'he died'."
+     ]
+    }
    },
    {
     "id": "manohara-en-s014-u003",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Ah!"
+    "text": "Ah!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-014.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": "manohara-s014-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s014-u004",
     "kind": "dialogue",
     "speakerLabel": "அமை",
-    "text": "The king embraced a warrior's death with a smile of victory."
+    "text": "The king embraced a warrior's death with a smile of victory.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-014.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": "manohara-s014-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s014-u005",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Appa!......"
+    "text": "Appa!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-014.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": "manohara-s014-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s014-u006",
     "kind": "dialogue",
     "speakerLabel": "அமை",
-    "text": "Be calm..."
+    "text": "Be calm...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-014.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": "manohara-s014-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s014-u007",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Calm? My father is a corpse... the flag has fallen... the crown has fallen...\nA vow of victory! I will bring it to an end today itself! Tonight!"
+    "text": "Calm? My father is a corpse... the flag has fallen... the crown has fallen...\nA vow of victory! I will bring it to an end today itself! Tonight!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-014.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-014.md",
+     "sourceRecordId": "manohara-s014-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 28,
+       "printed_page": 27
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The flag/crown fall and immediate vow are kept in the source's clipped escalation."
+     ]
+    }
    }
   ]
  }

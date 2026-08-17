@@ -23,31 +23,123 @@
     "id": "manohara-en-s019-u001",
     "kind": "song-reference",
     "speakerLabel": null,
-    "text": "[The song ‘Lovely Green Parrot... Speak’.]"
+    "text": "[The song ‘Lovely Green Parrot... Speak’.]",
+    "source": {
+     "sourcePath": "works/manohara/songs/inventory.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-019.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": "manohara-song-004",
+     "sourceLocator": {
+      "kind": "named-song-reference",
+      "ordinal": 1,
+      "description": "The booklet names the song `சிங்காரப் பைங்கிளியே... பேசு`."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Only the source-visible title is translated; no absent lyric body is supplied.",
+      "Authorship remains in review in the separate song evidence layer because external attributions conflict."
+     ]
+    }
    },
    {
     "id": "manohara-en-s019-u002",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[As they travel by boat singing, Bauthayanan hurls a dagger; it misses its mark.]"
+    "text": "[As they travel by boat singing, Bauthayanan hurls a dagger; it misses its mark.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-019.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-019.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "While they travel by boat singing, Bauthayanan throws a dagger and misses."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s019-u003",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "What! Vijaya?"
+    "text": "What! Vijaya?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-019.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-019.md",
+     "sourceRecordId": "manohara-s019-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s019-u004",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Someone threw a dagger at you and is running away... there!"
+    "text": "Someone threw a dagger at you and is running away... there!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-019.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-019.md",
+     "sourceRecordId": "manohara-s019-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s019-u005",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Some conspiracy is afoot... come, let us leave at once!"
+    "text": "Some conspiracy is afoot... come, let us leave at once!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-019.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-019.md",
+     "sourceRecordId": "manohara-s019-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

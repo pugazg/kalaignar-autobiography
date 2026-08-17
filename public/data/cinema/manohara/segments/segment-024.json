@@ -23,19 +23,86 @@
     "id": "manohara-en-s024-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Vasantha and the King's bedchamber."
+    "text": "Vasantha and the King's bedchamber.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-024.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-024.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-location-heading",
+      "ordinal": 1,
+      "description": "Vasantha and the King's bedchamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s024-u002",
     "kind": "song-reference",
     "speakerLabel": null,
-    "text": "The song ‘The Day Has Dawned’."
+    "text": "The song ‘The Day Has Dawned’.",
+    "source": {
+     "sourcePath": "works/manohara/songs/inventory.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-024.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": "manohara-song-005",
+     "sourceLocator": {
+      "kind": "named-song-reference",
+      "ordinal": 1,
+      "description": "The booklet names the song `பொழுது புலர்ந்தது`."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Only the source-visible song title is translated; no absent lyrics are supplied.",
+      "The separate song evidence layer verifies the lyricist as Surabi; that external credit does not alter the source translation text."
+     ]
+    }
    },
    {
     "id": "manohara-en-s024-u003",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "The Ratna throne is carried to the audience hall. Vasanthi sees it. Vijaya bows before Padmavathi."
+    "text": "The Ratna throne is carried to the audience hall. Vasanthi sees it. Vijaya bows before Padmavathi.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-024.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-024.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 1,
+      "description": "The Ratna throne is carried to the audience hall; Vasanthi sees it and Vijaya bows before Padmavathi."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Scene 24 remains a zero-labelled-dialogue scene; no dialogue record is invented."
+     ]
+    }
    }
   ]
  }

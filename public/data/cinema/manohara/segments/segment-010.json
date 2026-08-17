@@ -27,55 +27,224 @@
     "id": "manohara-en-s010-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "In another part of the palace."
+    "text": "In another part of the palace.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-010.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "scene-location-heading",
+      "ordinal": 1,
+      "description": "Bare source-visible location label opening the archival scene."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s010-u002",
     "kind": "dialogue",
     "speakerLabel": "சத்யசீலர்",
-    "text": "The sword that appeared in the play was a false sword! The one I speak of is a sword of war! That sword belonged to Manoharan's grandfather—the Maharani's father—Athiveera Cherar!"
+    "text": "The sword that appeared in the play was a false sword! The one I speak of is a sword of war! That sword belonged to Manoharan's grandfather—the Maharani's father—Athiveera Cherar!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The repeated `வாள்` contrast is preserved instead of compressed into explanatory prose."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u003",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்பிரியன்",
-    "text": "Athiveera Cheran...... the name in the play... Athi Dheera Soorar...... Hmm... then?......"
+    "text": "Athiveera Cheran...... the name in the play... Athi Dheera Soorar...... Hmm... then?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The near-parallel between the historical name and its play-within-the-play alias is kept audible in English transliteration."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u004",
     "kind": "dialogue",
     "speakerLabel": "சத்யசீலர்",
-    "text": "Pandiyan Muthuvijayan... defeated Manoharan's grandfather by an unexpected turn and seized the jeweled throne as well... When the grandfather, wounded on the battlefield, was dying, he entrusted to the child Manoharan the duty of avenging Muthu Vijayan, and breathed his last...... Manoharan's broad shoulders must fulfil his grandfather's wish."
+    "text": "Pandiyan Muthuvijayan... defeated Manoharan's grandfather by an unexpected turn and seized the jeweled throne as well... When the grandfather, wounded on the battlefield, was dying, he entrusted to the child Manoharan the duty of avenging Muthu Vijayan, and breathed his last...... Manoharan's broad shoulders must fulfil his grandfather's wish.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`தடந்தோள்கள்` is retained as `broad shoulders`, preserving the heroic bodily image."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u005",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Yes, Manohara! Muthu Vijaya Pandiyan must be defeated. Flowers of victory must be scattered over the dead grandfather's tomb. Our hereditary jeweled throne must be liberated......"
+    "text": "Yes, Manohara! Muthu Vijaya Pandiyan must be defeated. Flowers of victory must be scattered over the dead grandfather's tomb. Our hereditary jeweled throne must be liberated......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The victory-flowers image and liberation language are preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u006",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Give me leave. I will make a rain of victory pour down. I will shatter the ribs of that worthless Muthu Vijayan. I will make him an example to show that those who use deceit to roll up and seize another's country will themselves be rolled up and crushed like this."
+    "text": "Give me leave. I will make a rain of victory pour down. I will shatter the ribs of that worthless Muthu Vijayan. I will make him an example to show that those who use deceit to roll up and seize another's country will themselves be rolled up and crushed like this.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source wordplay `சுருட்டிக் கொள்பவர்கள் / சுருண்டு போவார்கள்` is preserved through `roll up / be rolled up` rather than paraphrased away."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u007",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "My son! My heart is cooled, dear one... You must wash away the stain upon our lineage......"
+    "text": "My son! My heart is cooled, dear one... You must wash away the stain upon our lineage......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 22,
+       "printed_page": 21
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's `heart cooled` idiom and stain/washing metaphor are retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u008",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "The stain upon our lineage comes not only from Pandiyan Muthuvijayan—but from the sinner Vasantha Sena too! This sword will spare neither the madman who beat the drum of victory when we were deceived, nor the treacherous woman who came between your life of happiness!"
+    "text": "The stain upon our lineage comes not only from Pandiyan Muthuvijayan—but from the sinner Vasantha Sena too! This sword will spare neither the madman who beat the drum of victory when we were deceived, nor the treacherous woman who came between your life of happiness!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The victory-drum image and the parallel `not only... nor...` threat are preserved as part of Manoharan's martial rhetoric."
+     ]
+    }
    },
    {
     "id": "manohara-en-s010-u009",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "First do what I told you! Manohara! Go and get your father's permission!"
+    "text": "First do what I told you! Manohara! Go and get your father's permission!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-010.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-010.md",
+     "sourceRecordId": "manohara-s010-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

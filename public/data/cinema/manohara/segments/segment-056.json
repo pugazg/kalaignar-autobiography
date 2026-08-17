@@ -23,55 +23,236 @@
     "id": "manohara-en-s056-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[In the cave.]"
+    "text": "[In the cave.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-056.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "In the cave."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s056-u002",
     "kind": "dialogue",
     "speakerLabel": "கேசரி",
-    "text": "Can you see, woman! Look at me!"
+    "text": "Can you see, woman! Look at me!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-056.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": "manohara-s056-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s056-u003",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Kesari Varman did not die."
+    "text": "Kesari Varman did not die.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-056.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 1,
+      "description": "Colon-only continuation after Kesari's first labelled line."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred."
+     ]
+    }
    },
    {
     "id": "manohara-en-s056-u004",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Would I die without taking revenge on you? Arrogant woman!"
+    "text": "Would I die without taking revenge on you? Arrogant woman!",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-056.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 2,
+      "description": "Second colon-only continuation after Kesari's first labelled line."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred."
+     ]
+    }
    },
    {
     "id": "manohara-en-s056-u005",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "Let me go! You are..."
+    "text": "Let me go! You are...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-056.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": "manohara-s056-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s056-u006",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "my husband; am I not your wife?"
+    "text": "my husband; am I not your wife?",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-056.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 3,
+      "description": "Colon-only continuation after Vasanthi's labelled fragment."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred."
+     ]
+    }
    },
    {
     "id": "manohara-en-s056-u007",
     "kind": "dialogue",
     "speakerLabel": "கேசரி",
-    "text": "Husband?...! Hahaha!"
+    "text": "Husband?...! Hahaha!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-056.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": "manohara-s056-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s056-u008",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "You who would prepare a new dictionary for the very words husband and wife! Writhe like a worm and die! Sinner—perish!"
+    "text": "You who would prepare a new dictionary for the very words husband and wife! Writhe like a worm and die! Sinner—perish!",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-056.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 4,
+      "description": "Colon-only continuation after Kesari's laugh."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred.",
+      "The `new dictionary for husband/wife` accusation and worm image are retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s056-u009",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Vasanthi dies.]"
+    "text": "[Vasanthi dies.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-056.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-056.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "death-action",
+      "ordinal": 1,
+      "description": "Vasanthi dies."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

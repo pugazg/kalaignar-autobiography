@@ -23,85 +23,325 @@
     "id": "manohara-en-s035-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Padmavathi's room."
+    "text": "Padmavathi's room.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-035.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Padmavathi's room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u002",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Mother must go to prison... Manoharan must apologize!"
+    "text": "Mother must go to prison... Manoharan must apologize!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u003",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்பிரியன்",
-    "text": "And that too in the royal hall, before that owl from the rubbish heap!"
+    "text": "And that too in the royal hall, before that owl from the rubbish heap!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`குப்பை மேட்டுக் கோட்டான்` is kept close to its concrete comic insult rather than replaced by a generic slur."
+     ]
+    }
    },
    {
     "id": "manohara-en-s035-u004",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "The one giving the order is Father!"
+    "text": "The one giving the order is Father!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u005",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Yes, my dear! Do not forget that—the father who begot you."
+    "text": "Yes, my dear! Do not forget that—the father who begot you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u006",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "Father... he gained a fearless-hearted son... he gained a wife of rare virtue... there is one thing he forgot to gain, Mother! Sense! Sense! That alone he forgot to gain!"
+    "text": "Father... he gained a fearless-hearted son... he gained a wife of rare virtue... there is one thing he forgot to gain, Mother! Sense! Sense! That alone he forgot to gain!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The repeated `அறிவு! அறிவு!` is retained for Rajapriyan's punchline."
+     ]
+    }
    },
    {
     "id": "manohara-en-s035-u007",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I shall remind him of what he forgot..."
+    "text": "I shall remind him of what he forgot...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u008",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "I am telling you that you cannot, my treasure! Appa may have erred in haste... whatever it is, go and ask the reason!"
+    "text": "I am telling you that you cannot, my treasure! Appa may have erred in haste... whatever it is, go and ask the reason!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u009",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ask the reason?"
+    "text": "Ask the reason?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u010",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Athai... no... do not send him... no, Athai... do not send him... no, Athai... that is it—you must not go..."
+    "text": "Athai... no... do not send him... no, Athai... do not send him... no, Athai... that is it—you must not go...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The repeated pleading is preserved rather than compressed."
+     ]
+    }
    },
    {
     "id": "manohara-en-s035-u011",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Brave son... go and return..."
+    "text": "Brave son... go and return...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u012",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "No, Athai!"
+    "text": "No, Athai!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u013",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Vijaya!"
+    "text": "Vijaya!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s035-u014",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I shall go and return. [To the soldiers who have come to arrest Padmavathi] Beware! Until I return, you must not go near my mother...\n[To Vijaya]\nVijaya! Take care of her... I am going."
+    "text": "I shall go and return. [To the soldiers who have come to arrest Padmavathi] Beware! Until I return, you must not go near my mother...\n[To Vijaya]\nVijaya! Take care of her... I am going.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-035.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-035.md",
+     "sourceRecordId": "manohara-s035-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 48,
+       "printed_page": 47
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Both source-attached address cues remain inside the immutable linked record."
+     ]
+    }
    }
   ]
  }

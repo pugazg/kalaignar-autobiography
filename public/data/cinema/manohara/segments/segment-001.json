@@ -27,73 +27,320 @@
     "id": "manohara-en-s001-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Inside the cave, an invisible figure is sculpting a statue, smiling before it.)"
+    "text": "(Inside the cave, an invisible figure is sculpting a statue, smiling before it.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-001.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Opening cave direction after the structural star and before the first labelled utterance."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source noun `அரூபம்` is rendered descriptively as `an invisible figure`; no identity is inserted into the stage direction."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u002",
     "kind": "dialogue",
     "speakerLabel": "பெரியவர்",
-    "text": "Victory... the reward won by one who heeds not pain!... A fitting harvest for the suffering of so many years! From now on, I shall accomplish all that I have set my mind on... Kesari Varma! Let joy overflow in those eyes clouded by sorrow. Let the clouds of grief flee far from you. Troubles—henceforth, dust to us...... Ha... ha... ha... Victory; victory;"
+    "text": "Victory... the reward won by one who heeds not pain!... A fitting harvest for the suffering of so many years! From now on, I shall accomplish all that I have set my mind on... Kesari Varma! Let joy overflow in those eyes clouded by sorrow. Let the clouds of grief flee far from you. Troubles—henceforth, dust to us...... Ha... ha... ha... Victory; victory;",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The harvest metaphor, repeated `Victory`, exclamations and extended pauses are retained to preserve the source's theatrical cadence."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u003",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Only Kesari Varman's voice is heard. The chisel and hammer keep at their work."
+    "text": "Only Kesari Varman's voice is heard. The chisel and hammer keep at their work.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-001.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "scene-narrative-stage-direction",
+      "ordinal": 1,
+      "description": "Two source sentences between the first and second labelled utterances describing Kesari Varman's unseen voice and the continuing tools."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s001-u004",
     "kind": "dialogue",
     "speakerLabel": "கேசரி வர்மன்",
-    "text": "Gurudeva! Is it true? Can your eyes not see me!......"
+    "text": "Gurudeva! Is it true? Can your eyes not see me!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`Gurudeva` is retained as the character's form of address rather than flattened to a generic `teacher`."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u005",
     "kind": "dialogue",
     "speakerLabel": "பெரி",
-    "text": "Yes, Kesari Varma! You have become invisible. The medicine I discovered has begun to work. What could not be attained has been attained. A magnificent triumph for my research. You can see everyone. But no one can see you."
+    "text": "Yes, Kesari Varma! You have become invisible. The medicine I discovered has begun to work. What could not be attained has been attained. A magnificent triumph for my research. You can see everyone. But no one can see you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's short declarative sequence is retained rather than compressed into smoother explanatory prose."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u006",
     "kind": "dialogue",
     "speakerLabel": "கேசரி",
-    "text": "Gurudeva!... Thirteen years... I have burned with one thought—to avenge myself upon that sinner! Now that you have shown me the path at last! ......Swami! Will this invisibility not last long?......"
+    "text": "Gurudeva!... Thirteen years... I have burned with one thought—to avenge myself upon that sinner! Now that you have shown me the path at last! ......Swami! Will this invisibility not last long?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6
+      },
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "englishPageSegments": [
+      {
+       "pdf_page": 7,
+       "printed_page": 6,
+       "english_text": "Gurudeva!... Thirteen years... I have burned with one thought—to avenge myself upon that sinner! Now that you have shown me the path"
+      },
+      {
+       "pdf_page": 8,
+       "printed_page": 7,
+       "english_text": "at last! ......Swami! Will this invisibility not last long?......"
+      }
+     ],
+     "notes": [
+      "The source utterance crosses PDF 7→8 and remains one English unit with page segments mirroring the source break.",
+      "`Swami` is retained as a second reverential address because the source shifts from `குருதேவா` to `சுவாமி`."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u007",
     "kind": "dialogue",
     "speakerLabel": "பெரி",
-    "text": "It will not—but we can try further. If I find the herbs I seek, you may not merely remain invisible; you may even become imperishable. But Kesari Varma! Use this so that the good may live!"
+    "text": "It will not—but we can try further. If I find the herbs I seek, you may not merely remain invisible; you may even become imperishable. But Kesari Varma! Use this so that the good may live!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`அழியாமலே` is rendered as `imperishable` rather than expanded into a stronger claim of literal immortality."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u008",
     "kind": "dialogue",
     "speakerLabel": "கேசரி",
-    "text": "I will use it so the good may live! At the same time, I will expose this destroyer's fox-like tricks. Sinner! Vindictive wretch................... Bhadrakali who poisoned her own husband! Your poison did not kill me, woman. Kesari Varman is alive! He has not died—he will not die, not before exposing your plot! Cheat!.....glib-tongued trickster!"
+    "text": "I will use it so the good may live! At the same time, I will expose this destroyer's fox-like tricks. Sinner! Vindictive wretch................... Bhadrakali who poisoned her own husband! Your poison did not kill me, woman. Kesari Varman is alive! He has not died—he will not die, not before exposing your plot! Cheat!.....glib-tongued trickster!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's escalating invective, repeated death-denial and mythic insult `பத்திரகாளி` are retained rather than softened.",
+      "`Bhadrakali` is transliterated because replacing the culturally specific image with a generic insult would flatten the rhetoric."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u009",
     "kind": "dialogue",
     "speakerLabel": "பெரிய",
-    "text": "Ha ha ha............"
+    "text": "Ha ha ha............",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s001-u010",
     "kind": "dialogue",
     "speakerLabel": "கேசரி",
-    "text": "Guruji."
+    "text": "Guruji.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s001-u011",
     "kind": "dialogue",
     "speakerLabel": "பெரி",
-    "text": "It's the statue, my boy!"
+    "text": "It's the statue, my boy!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The colloquial address embedded in `சிலையப்பா அது!` is kept as `my boy` rather than dropped."
+     ]
+    }
    },
    {
     "id": "manohara-en-s001-u012",
     "kind": "dialogue",
     "speakerLabel": "கேசரி",
-    "text": "A statue, yes! Why am I sculpting her? To rehearse the torture; Vasantha Sena! I will thrust a spear into your eyes—set your hair aflame—those kovvai-red lips!... I will drive sharp needles into them..... Your mirror-bright cheeks! Ha ha ha... I will slash them with a dagger... that body that drives onlookers mad... I will hack it into pieces and fling them away! The wondrous work of invisibility has begun, woman!... Enchantress, the chapter of vengeance by your former husband has begun. Walking serpent!... Dance of destruction itself! Treacherous demon... gnawing spider........."
+    "text": "A statue, yes! Why am I sculpting her? To rehearse the torture; Vasantha Sena! I will thrust a spear into your eyes—set your hair aflame—those kovvai-red lips!... I will drive sharp needles into them..... Your mirror-bright cheeks! Ha ha ha... I will slash them with a dagger... that body that drives onlookers mad... I will hack it into pieces and fling them away! The wondrous work of invisibility has begun, woman!... Enchantress, the chapter of vengeance by your former husband has begun. Walking serpent!... Dance of destruction itself! Treacherous demon... gnawing spider.........",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-001.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-001.md",
+     "sourceRecordId": "manohara-s001-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The violent catalogue is translated without euphemism because its accumulation is central to Kesari Varman's theatrical voice.",
+      "`கொவ்வை உதடுகள்` is rendered as `kovvai-red lips`, retaining the Tamil fruit-colour image rather than replacing it with a generic `red lips`.",
+      "The source's sequence of vocatives—serpent, destruction, demon, spider—is retained in order."
+     ]
+    }
    }
   ]
  }

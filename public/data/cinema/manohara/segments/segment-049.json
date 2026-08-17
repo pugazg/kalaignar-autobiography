@@ -23,79 +23,309 @@
     "id": "manohara-en-s049-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Palace.]"
+    "text": "[Palace.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-049.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Palace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u002",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Akshaya! They say Vijaya, who is lying in the underground prison, has given birth to a child."
+    "text": "Akshaya! They say Vijaya, who is lying in the underground prison, has given birth to a child.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u003",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ah!"
+    "text": "Ah!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u004",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "What is it, Akshaya?"
+    "text": "What is it, Akshaya?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u005",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Nothing...... nothing. A bud has sprouted at the very moment of destruction!"
+    "text": "Nothing...... nothing. A bud has sprouted at the very moment of destruction!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s049-u006",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Yes. You must pluck out that very bud and cast it away!"
+    "text": "Yes. You must pluck out that very bud and cast it away!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s049-u007",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ah! What—me?"
+    "text": "Ah! What—me?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u008",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Who is there but you to do this deed? Here! Go this very moment!"
+    "text": "Who is there but you to do this deed? Here! Go this very moment!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u009",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[She gives him the signet ring.]"
+    "text": "[She gives him the signet ring.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-049.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "prop-action",
+      "ordinal": 1,
+      "description": "Vasantha Sena gives him the signet ring."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u010",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I must kill my own treasure.\nNo... no..."
+    "text": "I must kill my own treasure.\nNo... no...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source-unlabelled `இல்ல...இல்ல...` continuation remains inside the preceding explicit Manoharan record, matching the immutable dialogue layer."
+     ]
+    }
    },
    {
     "id": "manohara-en-s049-u011",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[He draws his sword.]"
+    "text": "[He draws his sword.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-049.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "weapon-action",
+      "ordinal": 1,
+      "description": "Manoharan draws his sword."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s049-u012",
     "kind": "dialogue",
     "speakerLabel": "மனக்குரல்",
-    "text": "Manohara, stop. Do not give way to fury; do not become a slave to haste! The palace is full of enemies. Your mother is in prison—your father is suffering. You rush forward with sword outstretched... who will protect your unfading flowers? Who will protect your many-coloured parrots?"
+    "text": "Manohara, stop. Do not give way to fury; do not become a slave to haste! The palace is full of enemies. Your mother is in prison—your father is suffering. You rush forward with sword outstretched... who will protect your unfading flowers? Who will protect your many-coloured parrots?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-049.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": "manohara-s049-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The inner voice and the paired `unfading flowers / coloured parrots` protective images are retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s049-u013",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[He turns back and goes to the prison.]"
+    "text": "[He turns back and goes to the prison.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-049.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-049.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "exit-action",
+      "ordinal": 1,
+      "description": "Manoharan turns back and goes to the prison."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

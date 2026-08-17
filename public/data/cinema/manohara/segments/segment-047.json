@@ -23,73 +23,273 @@
     "id": "manohara-en-s047-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Outside the window of the puja room.]"
+    "text": "[Outside the window of the puja room.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-047.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Outside the window of the puja room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u002",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Physician! Physician! Physician!"
+    "text": "Physician! Physician! Physician!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u003",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "What?"
+    "text": "What?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u004",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Mother and the holy man are going off to heaven! Come! Come! Let us go and save Mother."
+    "text": "Mother and the holy man are going off to heaven! Come! Come! Let us go and save Mother.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u005",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "You go and bring the Maharaja at once!"
+    "text": "You go and bring the Maharaja at once!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u006",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Ah! That's right... no doubt! No doubt."
+    "text": "Ah! That's right... no doubt! No doubt.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u007",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The king's chamber.]"
+    "text": "[The king's chamber.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-047.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 2,
+      "description": "The king's chamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u008",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Father! Father!"
+    "text": "Father! Father!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u009",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "What is this, da?"
+    "text": "What is this, da?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u010",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "They say Mother and the holy man are going to heaven!"
+    "text": "They say Mother and the holy man are going to heaven!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u011",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Ah.........!"
+    "text": "Ah.........!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s047-u012",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Come, Father...... come......"
+    "text": "Come, Father...... come......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-047.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-047.md",
+     "sourceRecordId": "manohara-s047-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 72,
+       "printed_page": 71
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

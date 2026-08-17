@@ -23,25 +23,99 @@
     "id": "manohara-en-s022-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Vasantha Sena's inner chamber.)"
+    "text": "(Vasantha Sena's inner chamber.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-022.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-022.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Vasantha Sena's inner chamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s022-u002",
     "kind": "dialogue",
     "speakerLabel": "வசந்தா",
-    "text": "Bauthayanan is a useless little wall!... a cowardly fellow!... He will certainly betray me. If I am to escape, he must not remain alive."
+    "text": "Bauthayanan is a useless little wall!... a cowardly fellow!... He will certainly betray me. If I am to escape, he must not remain alive.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-022.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-022.md",
+     "sourceRecordId": "manohara-s022-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source insult `குட்டிச்சுவரு` is kept close to its concrete wall-image rather than silently replaced with a different insult."
+     ]
+    }
    },
    {
     "id": "manohara-en-s022-u003",
     "kind": "dialogue",
     "speakerLabel": "தோழி",
-    "text": "Poor Bauthayanan!"
+    "text": "Poor Bauthayanan!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-022.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-022.md",
+     "sourceRecordId": "manohara-s022-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s022-u004",
     "kind": "dialogue",
     "speakerLabel": "வசந்தா",
-    "text": "Hmm. If one wants to take honey, many bees must be killed... all right, arrange what I told you!"
+    "text": "Hmm. If one wants to take honey, many bees must be killed... all right, arrange what I told you!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-022.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-022.md",
+     "sourceRecordId": "manohara-s022-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The honey/bees metaphor for eliminating intermediaries is preserved without explanatory expansion."
+     ]
+    }
    }
   ]
  }

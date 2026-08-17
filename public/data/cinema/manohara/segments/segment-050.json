@@ -31,187 +31,705 @@
     "id": "manohara-en-s050-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Near the cave, the real Akshayan—who was tied to a stone pillar—struggles and cuts through the ropes.]"
+    "text": "[Near the cave, the real Akshayan—who was tied to a stone pillar—struggles and cuts through the ropes.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-050.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-action",
+      "ordinal": 1,
+      "description": "The real Akshayan cuts the ropes binding him to the stone pillar near the cave."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 76,
+       "printed_page": 75
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u002",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Palace.]"
+    "text": "[Palace.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-050.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Palace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u003",
     "kind": "dialogue",
     "speakerLabel": "வசந்தசேனை",
-    "text": "Let us discuss what must be done tomorrow."
+    "text": "Let us discuss what must be done tomorrow.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u004",
     "kind": "dialogue",
     "speakerLabel": "உக்ரசேனன்",
-    "text": "What more remains to be done?"
+    "text": "What more remains to be done?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u005",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Tomorrow is Vasanthan's coronation."
+    "text": "Tomorrow is Vasanthan's coronation.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u006",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Certainly. But before that, we must proclaim that the country is under our control."
+    "text": "Certainly. But before that, we must proclaim that the country is under our control.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u007",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Will proclaiming it bring any danger?"
+    "text": "Will proclaiming it bring any danger?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u008",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Danger!... From whom? Is there anyone in this world capable of opposing me?"
+    "text": "Danger!... From whom? Is there anyone in this world capable of opposing me?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u009",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "In this flood of triumph, do not forget that Manoharan is still alive!"
+    "text": "In this flood of triumph, do not forget that Manoharan is still alive!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s050-u010",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Prison. Showing the signet ring, Manoharan enters.]"
+    "text": "[Prison. Showing the signet ring, Manoharan enters.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-050.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-and-entrance",
+      "ordinal": 1,
+      "description": "Prison; Manoharan enters by showing the signet ring."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u011",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Mother."
+    "text": "Mother.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u012",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Who are you!"
+    "text": "Who are you!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u013",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Manoharan... sent me!"
+    "text": "Manoharan... sent me!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u014",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Manoharan... is my jewel well?"
+    "text": "Manoharan... is my jewel well?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u015",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Atthai! Where do they say he is?"
+    "text": "Atthai! Where do they say he is?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u016",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Where else could he be, when he is always in your heart?"
+    "text": "Where else could he be, when he is always in your heart?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u017",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Who are you, son?"
+    "text": "Who are you, son?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u018",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I will tell you that later. Now both of you must escape from here."
+    "text": "I will tell you that later. Now both of you must escape from here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u019",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "What?"
+    "text": "What?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u020",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Yes! Manoharan's secret arrangement. Here is the signet ring. You can leave without fear and without anyone stopping you. Set out."
+    "text": "Yes! Manoharan's secret arrangement. Here is the signet ring. You can leave without fear and without anyone stopping you. Set out.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u021",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "To escape by trickery—no, I cannot. I cannot disobey the Maharaja's order. Tell Manoharan that."
+    "text": "To escape by trickery—no, I cannot. I cannot disobey the Maharaja's order. Tell Manoharan that.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's anomalous comma delimiter after `பத்` remains source metadata in the immutable dialogue layer; translation does not normalize it."
+     ]
+    }
    },
    {
     "id": "manohara-en-s050-u022",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Atthai!"
+    "text": "Atthai!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u023",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Tell Manoharan, thambi—I have a precious grandson, born here in prison!"
+    "text": "Tell Manoharan, thambi—I have a precious grandson, born here in prison!",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-050.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 1,
+      "description": "Colon-only source line after Vijaya's `Atthai!`; no printed speaker label."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 77,
+       "printed_page": 76
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source begins with an empty speaker field; no speaker is inferred. `தம்பி` is retained as the vocative `thambi`."
+     ]
+    }
    },
    {
     "id": "manohara-en-s050-u024",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I am telling you to leave only to avert the great danger coming upon this grandson."
+    "text": "I am telling you to leave only to avert the great danger coming upon this grandson.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u025",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "For the queen herself to disobey the king's command...? It would not be proper."
+    "text": "For the queen herself to disobey the king's command...? It would not be proper.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u026",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Then... Princess! At least give me that child. I will carry him away."
+    "text": "Then... Princess! At least give me that child. I will carry him away.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u027",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Ah! The child?"
+    "text": "Ah! The child?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u028",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "If the child's life is to be saved......?"
+    "text": "If the child's life is to be saved......?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u029",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Atthai, do not trust him...... some plot is under way to kill the child."
+    "text": "Atthai, do not trust him...... some plot is under way to kill the child.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u030",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "No! No!......"
+    "text": "No! No!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s050-u031",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "Impossible... impossible... go away."
+    "text": "Impossible... impossible... go away.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-050.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-050.md",
+     "sourceRecordId": "manohara-s050-d027",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

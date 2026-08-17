@@ -23,61 +23,242 @@
     "id": "manohara-en-s031-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Padmavathi's room.]"
+    "text": "[Padmavathi's room.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-031.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Padmavathi's room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s031-u002",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Amma... Amma... Amma... I have stopped the leaping spear, the sword that gathers up fury. Is this deceitful woman who mocked me greater than all of them? Yet it is she whom I cannot oppose, and I have run back here. Because of whom, Amma? Because of you—because of your command—because of the oath!"
+    "text": "Amma... Amma... Amma... I have stopped the leaping spear, the sword that gathers up fury. Is this deceitful woman who mocked me greater than all of them? Yet it is she whom I cannot oppose, and I have run back here. Because of whom, Amma? Because of you—because of your command—because of the oath!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The spear/sword escalation and repeated causal cadence are preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s031-u003",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Manohara! Tell me the matter! What happened?"
+    "text": "Manohara! Tell me the matter! What happened?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s031-u004",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Self-respect has been levelled to the ground; valour has been put up for price. A symbol of disgrace danced in arrogance! Amma! You must change your command at once."
+    "text": "Self-respect has been levelled to the ground; valour has been put up for price. A symbol of disgrace danced in arrogance! Amma! You must change your command at once.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The three-part rhetorical escalation is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s031-u005",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "You have sworn an oath, my dear!"
+    "text": "You have sworn an oath, my dear!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s031-u006",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Must a warrior become a coward? Must throbbing shoulders droop? No... let me not keep that disastrous oath......"
+    "text": "Must a warrior become a coward? Must throbbing shoulders droop? No... let me not keep that disastrous oath......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s031-u007",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Manoharan leaves.]"
+    "text": "[Manoharan leaves.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-031.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "exit-action",
+      "ordinal": 1,
+      "description": "Manoharan leaves."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s031-u008",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Vijaya enters..."
+    "text": "Vijaya enters...",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-031.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "entrance-action",
+      "ordinal": 1,
+      "description": "Vijaya enters."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s031-u009",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "What happened, Vijaya..."
+    "text": "What happened, Vijaya...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s031-u010",
     "kind": "dialogue",
     "speakerLabel": "விஜ",
-    "text": "That sinner, Vasantha Sena... (she sobs and weeps)"
+    "text": "That sinner, Vasantha Sena... (she sobs and weeps)",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-031.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-031.md",
+     "sourceRecordId": "manohara-s031-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 43,
+       "printed_page": 42
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached sobbing cue remains inside the linked turn."
+     ]
+    }
    }
   ]
  }

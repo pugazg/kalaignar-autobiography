@@ -31,211 +31,850 @@
     "id": "manohara-en-s011-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(A war proclamation is beaten out in the street.)"
+    "text": "(A war proclamation is beaten out in the street.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "A war proclamation is beaten out in the street."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u002",
     "kind": "chant",
     "speakerLabel": "முரசறைவோன்",
-    "text": "War! Terrible war! A war that will decide our country's honour—its future! Warriors, make ready! One from every household, set forth! We shall break the bones of the worthless—we shall raise the flag of victory. Come! Come! To war!... War! War! War! Dum, dum, dum!"
+    "text": "War! Terrible war! A war that will decide our country's honour—its future! Warriors, make ready! One from every household, set forth! We shall break the bones of the worthless—we shall raise the flag of victory. Come! Come! To war!... War! War! War! Dum, dum, dum!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Classified as chant/proclamation while preserving the immutable labelled source-record link and drum-beat ending."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u003",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "War! War! Mightiest of warriors! March to war! There are two kinds of war. In one war, cattle graze—that is a hay-war! Another war is merely an akka-war! The war I speak of is the fight in which skulls are smashed! Tiger-eyed warriors! Lions! Leopards! Sheep! Roar and charge! Hmm, set out. Why are you standing there? Cut! Strike down! Kill... rip out their guts......"
+    "text": "War! War! Mightiest of warriors! March to war! There are two kinds of war. In one war, cattle graze—that is a hay-war! Another war is merely an akka-war! The war I speak of is the fight in which skulls are smashed! Tiger-eyed warriors! Lions! Leopards! Sheep! Roar and charge! Hmm, set out. Why are you standing there? Cut! Strike down! Kill... rip out their guts......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Vasanthan's intentionally absurd war-wordplay and descending animal catalogue are preserved rather than regularized."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u004",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Warrior dolls now appear in the scene.]"
+    "text": "[Warrior dolls now appear in the scene.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "Warrior dolls now appear in the scene."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u005",
     "kind": "dialogue",
     "speakerLabel": "விகடன்",
-    "text": "Shabash! Vasanthan—you truly are a warrior."
+    "text": "Shabash! Vasanthan—you truly are a warrior.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u006",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "No doubt... no doubt......"
+    "text": "No doubt... no doubt......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Carries forward Vasanthan's recurring `சந்தேகமில்லே` comic refrain."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u007",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Saying this, he draws his sword. Only the hilt is in his hand...... Vasantha Sena arrives; he shoots an arrow.)"
+    "text": "(Saying this, he draws his sword. Only the hilt is in his hand...... Vasantha Sena arrives; he shoots an arrow.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "cross-page-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Vasanthan draws a sword that has only a hilt; as Vasantha Sena arrives he shoots an arrow. The source direction crosses PDF 23→24."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22
+      },
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "englishPageSegments": [
+      {
+       "pdf_page": 23,
+       "printed_page": 22,
+       "english_text": "(Saying this, he draws his sword. Only the hilt is in his hand......"
+      },
+      {
+       "pdf_page": 24,
+       "printed_page": 23,
+       "english_text": "Vasantha Sena arrives; he shoots an arrow.)"
+      }
+     ],
+     "notes": [
+      "Preserved as one source-continuous stage unit across the physical page break."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u008",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Vasantha, what is this?"
+    "text": "Vasantha, what is this?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u009",
     "kind": "dialogue",
     "speakerLabel": "விக",
-    "text": "He says he's going to the battlefield... for that......"
+    "text": "He says he's going to the battlefield... for that......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u010",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "The battlefield?...... Why should you go there, my dear?......"
+    "text": "The battlefield?...... Why should you go there, my dear?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u011",
     "kind": "dialogue",
     "speakerLabel": "விகடன்",
-    "text": "That is a place for warriors to go..."
+    "text": "That is a place for warriors to go...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u012",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Hmm!... Give me leave, Amma..."
+    "text": "Hmm!... Give me leave, Amma...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u013",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "You'll ruin your health...... You don't need this swaggering work......"
+    "text": "You'll ruin your health...... You don't need this swaggering work......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u014",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Mother! Is it you who speaks like this? You, descended from the line of that heroic mother who, hearing that her son had been wounded in the chest on the battlefield, vowed in anguish to break the vessel from which he drank her milk—and who rejoiced when she saw that her son had died with a wound on his back? Is it you who speaks so—coward! Coward!... Coward!..."
+    "text": "Mother! Is it you who speaks like this? You, descended from the line of that heroic mother who, hearing that her son had been wounded in the chest on the battlefield, vowed in anguish to break the vessel from which he drank her milk—and who rejoiced when she saw that her son had died with a wound on his back? Is it you who speaks so—coward! Coward!... Coward!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The deliberately overblown heroic-mother rhetoric is retained without silently correcting its paradoxical source wording."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u015",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "Ayyo... fate!......... Vikata! I have sent for the physician—let Vasanthan's treatments begin...... The throne is waiting......"
+    "text": "Ayyo... fate!......... Vikata! I have sent for the physician—let Vasanthan's treatments begin...... The throne is waiting......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u016",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Father!...\nGive me leave!..."
+    "text": "Father!...\nGive me leave!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u017",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Manohara! Make the enemy know the glory of the warrior clan! Grind the enemy's arrogance into the dust!"
+    "text": "Manohara! Make the enemy know the glory of the warrior clan! Grind the enemy's arrogance into the dust!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The parallel martial imperatives are retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u018",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "Bring the victory garland!"
+    "text": "Bring the victory garland!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u019",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Vasanthi brings the garland."
+    "text": "Vasanthi brings the garland.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 1,
+      "description": "Vasanthi brings the garland."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u020",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "I myself shall place it on my darling..."
+    "text": "I myself shall place it on my darling...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u021",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Rajapriya, warriors do not customarily wear the garland of victory before victory is won."
+    "text": "Rajapriya, warriors do not customarily wear the garland of victory before victory is won.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 24,
+       "printed_page": 23
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u022",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Vasanthi's expression changes......)"
+    "text": "(Vasanthi's expression changes......)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "parenthetical-reaction",
+      "ordinal": 1,
+      "description": "Vasanthi's face changes."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u023",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "I take my leave—"
+    "text": "I take my leave—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u024",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "May you conquer! Long live!"
+    "text": "May you conquer! Long live!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u025",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "The two leave......"
+    "text": "The two leave......",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 2,
+      "description": "The two leave."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u026",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Vasanthi!...... Are you angry, my dear—\nManoharan is a boy—forgive him!"
+    "text": "Vasanthi!...... Are you angry, my dear—\nManoharan is a boy—forgive him!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u027",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "I have never once been angry with him—he is the treasure of my desire—my beloved son—he may hate me—but to me he is moonlight—a star! Sugarcane juice!"
+    "text": "I have never once been angry with him—he is the treasure of my desire—my beloved son—he may hate me—but to me he is moonlight—a star! Sugarcane juice!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The moonlight/star/sugarcane-juice accumulation is retained rather than rationalized."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u028",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Vasanthi!......"
+    "text": "Vasanthi!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u029",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Outside Padmavathi's inner chamber."
+    "text": "Outside Padmavathi's inner chamber.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Outside Padmavathi's inner chamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u030",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Amma......"
+    "text": "Amma......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u031",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "My son..."
+    "text": "My son...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u032",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "She takes the tray from her companion and applies the tilak to Manoharan..."
+    "text": "She takes the tray from her companion and applies the tilak to Manoharan...",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 3,
+      "description": "Padmavathi takes the tray from her companion and applies the tilak to Manoharan."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s011-u033",
     "kind": "dialogue",
     "speakerLabel": "பத்மாவதி",
-    "text": "Come back a victorious warrior, Manohara, so that the mother who bore you and the golden land where you were born may rejoice!"
+    "text": "Come back a victorious warrior, Manohara, so that the mother who bore you and the golden land where you were born may rejoice!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`பொன்னாடு` is kept as the image of the golden native land."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u034",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Amma! If I win, the Ratna throne will return! If not, this blood-soaked warrior's sword will return and bear you my news!"
+    "text": "Amma! If I win, the Ratna throne will return! If not, this blood-soaked warrior's sword will return and bear you my news!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-011.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": "manohara-s011-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The paired throne/sword return image is preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s011-u035",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[He departs in the chariot.]"
+    "text": "[He departs in the chariot.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-011.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-011.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-stage-direction",
+      "ordinal": 2,
+      "description": "Departure by chariot."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

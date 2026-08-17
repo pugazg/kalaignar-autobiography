@@ -27,55 +27,229 @@
     "id": "manohara-en-s045-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Corridor of the prison.]"
+    "text": "[Corridor of the prison.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-045.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Corridor of the prison."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s045-u002",
     "kind": "dialogue",
     "speakerLabel": "காவலன்",
-    "text": "Hey, don't go that way... Vijaya Amma... she's in labour pains..."
+    "text": "Hey, don't go that way... Vijaya Amma... she's in labour pains...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-045.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": "manohara-s045-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The guard's colloquial register is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s045-u003",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Man...... is that so......"
+    "text": "Man...... is that so......",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-045.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 1,
+      "description": "The source prints `ஆள்......அப்படியா......` without a speaker delimiter after the guard's line."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`ஆள்` remains inside the translated source text rather than being promoted to an inferred speaker label."
+     ]
+    }
    },
    {
     "id": "manohara-en-s045-u004",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Inside the prison.)"
+    "text": "(Inside the prison.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-045.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-transition",
+      "ordinal": 1,
+      "description": "Inside the prison."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s045-u005",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "(Bending over the child) O treasure of my treasures! You who should have slept in a diamond-studded cradle, listening to Tamil music from a thousand nursemaids—I never even imagined you would be rolling here in a straw-filled pen..."
+    "text": "(Bending over the child) O treasure of my treasures! You who should have slept in a diamond-studded cradle, listening to Tamil music from a thousand nursemaids—I never even imagined you would be rolling here in a straw-filled pen...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-045.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": "manohara-s045-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The thousand nursemaids / Tamil music / diamond cradle versus straw-filled enclosure contrast is retained in full."
+     ]
+    }
    },
    {
     "id": "manohara-en-s045-u006",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Atthe!......"
+    "text": "Atthe!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-045.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": "manohara-s045-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The kinship address is retained rather than flattened to a generic English address."
+     ]
+    }
    },
    {
     "id": "manohara-en-s045-u007",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "My dear... daughter of the Pandiyan king...... did you come as my daughter-in-law to suffer like this......"
+    "text": "My dear... daughter of the Pandiyan king...... did you come as my daughter-in-law to suffer like this......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-045.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": "manohara-s045-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s045-u008",
     "kind": "dialogue",
     "speakerLabel": "விஜயா",
-    "text": "Only after I came, Atthe, have so many torments come upon you and your beloved son...... all of it only after this sinner set foot here........"
+    "text": "Only after I came, Atthe, have so many torments come upon you and your beloved son...... all of it only after this sinner set foot here........",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-045.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": "manohara-s045-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Vijaya's self-blaming `பாவி` is retained rather than softened."
+     ]
+    }
    },
    {
     "id": "manohara-en-s045-u009",
     "kind": "dialogue",
     "speakerLabel": "பத்",
-    "text": "Vijaya!... No, child... wherever your flower-feet touch, even earth turns to gold... you are not the one who turned the golden mansion into a mound of dust... she lives in bliss......"
+    "text": "Vijaya!... No, child... wherever your flower-feet touch, even earth turns to gold... you are not the one who turned the golden mansion into a mound of dust... she lives in bliss......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-045.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-045.md",
+     "sourceRecordId": "manohara-s045-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 71,
+       "printed_page": 70
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The flower-feet / earth-to-gold and golden-mansion / dust-mound contrasts are preserved."
+     ]
+    }
    }
   ]
  }

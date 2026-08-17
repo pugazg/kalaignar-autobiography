@@ -99,13 +99,22 @@ export default function ManoharaLanding({ index, source }: Props) {
               </div>
             </dl>
 
-            {/* Printed rights notice — a source-witness quotation only, no legal claim. */}
+            {/* Printed rights notice — a historical source-witness quotation only. The PRESENT
+                rights status (Tamil Nadu Government nationalisation) is a different fact, shown
+                on /cinema/manohara/source. */}
             <div className="mt-4 rounded-xl border-l-4 border-ink/20 bg-ink/[0.03] py-2.5 pl-4 pr-4 dark:border-white/20 dark:bg-white/[0.03]">
               <p className="text-[11px] uppercase tracking-wider text-ink/45 dark:text-night-text/45">
-                {ta ? "அச்சிடப்பட்ட உரிமை அறிவிப்பு (சான்றாக மட்டும்)" : "Rights notice as printed (quoted as a source witness only)"}
+                {ta ? "இப்பதிப்பில் உரிமை அறிவிப்பு — அச்சிட்டபடி" : "Rights notice in this edition — as printed"}
               </p>
               <p className="mt-1 font-tamil text-sm text-ink/80 dark:text-night-text/80" lang="ta">
                 “{source.rights_notice_as_printed}”
+              </p>
+              <p className="mt-1.5 text-[11px] leading-snug text-ink/45 dark:text-night-text/45" lang={lang}>
+                {ta ? (
+                  <>கலைஞரின் படைப்புகள் தமிழ்நாடு அரசால் தேசியமயமாக்கப்பட்டுள்ளன — தற்போதைய உரிமை நிலைக்கு <Link href="/cinema/manohara/source" className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina">மூலப் பக்கம்</Link> காண்க.</>
+                ) : (
+                  <>Kalaignar's works have since been nationalised by the Government of Tamil Nadu — see the <Link href="/cinema/manohara/source" className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">source page</Link> for present rights status.</>
+                )}
               </p>
             </div>
           </section>

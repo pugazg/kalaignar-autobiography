@@ -68,10 +68,24 @@
    }
   }
  },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDateStated": "December 2024",
+  "distinctionNote": "The 1954 edition's printed rights notice and the later Tamil Nadu Government nationalisation are two different historical/provenance facts; the printed notice does not describe the present rights status.",
+  "thirdPartyNote": "The nationalisation applies to Kalaignar's underlying authored work. It does not extend to third-party contributions (other authors' prefaces/essays, separately published translations, secondary source/witness editions, or photographs/illustrations/cover/publisher material), which retain their own independent provenance and rights.",
+  "projectTranslationNote": "The English reading layer is a project-created derivative (englishKind: project-created) and retains its own distinct provenance, separate from the rights status of the underlying Tamil work.",
+  "evidencePending": "The exact Government Order number/date must be captured and verified from the Government Order or another authoritative government record before being recorded here."
+ },
  "notes": [
   "The 1954 booklet prints NO numbered scenes; the 57 divisions are archive-created navigation segments only.",
   "The rendered scan is the controlling archival source; the OCR layer is non-canonical navigation only.",
   "Tamil is the verified source scene derivative; English is the verified source reader translation. Neither was edited during import.",
-  "The accidental website public/data/cinema/manohara/parts/ files were NOT used as source, reference, baseline or validation."
+  "Each English unit preserves the authoritative source-linked audit trail verbatim (source_path, canonical_scene_path, source_record_id, source_occurrence_id, source_locator, page_provenance) plus the exact cross-page english_page_segments, translation mode and editorial notes. These are copied directly from the source reader record and are never reconstructed.",
+  "The accidental website public/data/cinema/manohara/parts/ files were NOT used as source, reference, baseline or validation, and were subsequently removed from the website repository."
  ]
 }

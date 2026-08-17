@@ -27,121 +27,486 @@
     "id": "manohara-en-s051-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Palace.]"
+    "text": "[Palace.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-051.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Palace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u002",
     "kind": "dialogue",
     "speakerLabel": "சிப்பாய்",
-    "text": "Maharaja! Akshayan has come. He says he wishes to see you."
+    "text": "Maharaja! Akshayan has come. He says he wishes to see you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u003",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "He has come?... Tell him to come here."
+    "text": "He has come?... Tell him to come here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u004",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "He must have come with news of victory. He must have killed Vijaya's child and returned. This reward is for him."
+    "text": "He must have come with news of victory. He must have killed Vijaya's child and returned. This reward is for him.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-051.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 1,
+      "description": "Colon-only line following Vasantha Sena's order to admit Akshayan."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u005",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Your commander is very cunning."
+    "text": "Your commander is very cunning.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-051.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 2,
+      "description": "Second consecutive colon-only source line."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u006",
     "kind": "dialogue",
     "speakerLabel": "உக்ரசேனன்",
-    "text": "What doubt is there about that? Oh... come... Akshaya, come..."
+    "text": "What doubt is there about that? Oh... come... Akshaya, come...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u007",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "What is it, Akshaya?"
+    "text": "What is it, Akshaya?",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-051.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 3,
+      "description": "Colon-only question immediately before the real Akshayan enters."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u008",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The real Akshayan enters.]"
+    "text": "[The real Akshayan enters.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-051.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "entrance-action",
+      "ordinal": 1,
+      "description": "The real Akshayan enters."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u009",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Who is he? Akshayan?"
+    "text": "Who is he? Akshayan?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u010",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Yes."
+    "text": "Yes.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u011",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Ah! No."
+    "text": "Ah! No.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u012",
     "kind": "dialogue",
     "speakerLabel": "அட்சயன்",
-    "text": "I am the real Akshayan. The one who deceived you all this while was a false Akshayan, madam!"
+    "text": "I am the real Akshayan. The one who deceived you all this while was a false Akshayan, madam!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source semicolon delimiter is preserved in the immutable record; translation does not regularize it."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u013",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Yes... Maharaja! They tied me up. I have only just escaped and come."
+    "text": "Yes... Maharaja! They tied me up. I have only just escaped and come.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-051.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 4,
+      "description": "Colon-only continuation after the real Akshayan identifies himself."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Empty source speaker field; no speaker is inferred even though context strongly suggests Akshayan."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u014",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "They tied you up? Who?"
+    "text": "They tied you up? Who?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u015",
     "kind": "dialogue",
     "speakerLabel": "அட்",
-    "text": "Manoharan!"
+    "text": "Manoharan!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source semicolon delimiter remains source metadata and is not silently normalized."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u016",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "Ah! Manoharan! Then the Akshayan who is here?"
+    "text": "Ah! Manoharan! Then the Akshayan who is here?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 78,
+       "printed_page": 77
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source semicolon delimiter remains source metadata and is not silently normalized."
+     ]
+    }
    },
    {
     "id": "manohara-en-s051-u017",
     "kind": "dialogue",
     "speakerLabel": "அட்",
-    "text": "Manoharan!"
+    "text": "Manoharan!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 79,
+       "printed_page": 78
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u018",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Where is he......"
+    "text": "Where is he......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 79,
+       "printed_page": 78
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u019",
     "kind": "dialogue",
     "speakerLabel": "சேனா",
-    "text": "He has gone to the prison."
+    "text": "He has gone to the prison.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 79,
+       "printed_page": 78
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s051-u020",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "We must not let him go."
+    "text": "We must not let him go.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-051.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-051.md",
+     "sourceRecordId": "manohara-s051-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 79,
+       "printed_page": 78
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

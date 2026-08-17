@@ -23,115 +23,430 @@
     "id": "manohara-en-s037-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The palace.]"
+    "text": "[The palace.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-037.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "The palace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u002",
     "kind": "dialogue",
     "speakerLabel": "காவலாளி",
-    "text": "Maharaja! The prince has escaped."
+    "text": "Maharaja! The prince has escaped.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u003",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "What?"
+    "text": "What?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u004",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Ah! Manoharan escaped?"
+    "text": "Ah! Manoharan escaped?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u005",
     "kind": "dialogue",
     "speakerLabel": "காவலாளி",
-    "text": "Yes... someone loosened the bonds and saved him; we could not even see them with our eyes."
+    "text": "Yes... someone loosened the bonds and saved him; we could not even see them with our eyes.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u006",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "Disaster has begun to grow, Prabhu! Search the entire city; wherever that destroyer is, seize him and bring him here."
+    "text": "Disaster has begun to grow, Prabhu! Search the entire city; wherever that destroyer is, seize him and bring him here.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u007",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Hmm... go."
+    "text": "Hmm... go.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u008",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The cave.]"
+    "text": "[The cave.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-037.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 2,
+      "description": "The cave; Manoharan is there after being rescued."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u009",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Impossible, Amma... impossible... (looking around) What is this... I, who was killed, am alive..."
+    "text": "Impossible, Amma... impossible... (looking around) What is this... I, who was killed, am alive...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u010",
     "kind": "dialogue",
     "speakerLabel": "கேசரிவர்மன்",
-    "text": "Prince!"
+    "text": "Prince!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u011",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Who are you... who are you... Satyaseelar! Who is this man?"
+    "text": "Who are you... who are you... Satyaseelar! Who is this man?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u012",
     "kind": "dialogue",
     "speakerLabel": "சத்யசீலர்",
-    "text": "I shall tell you the details later... he is the one who saved you."
+    "text": "I shall tell you the details later... he is the one who saved you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u013",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Saving me...... saving Manoharan... the king's wish... Mother's loving command.... fulfil them at once... kill me... kill me... kill me, Rajapriya! My beloved friend... you at least carry out my mother's command."
+    "text": "Saving me...... saving Manoharan... the king's wish... Mother's loving command.... fulfil them at once... kill me... kill me... kill me, Rajapriya! My beloved friend... you at least carry out my mother's command.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The repeated kill-me cadence and contradictory king/mother commands remain explicit."
+     ]
+    }
    },
    {
     "id": "manohara-en-s037-u014",
     "kind": "dialogue",
     "speakerLabel": "சத்ய",
-    "text": "Wait, Manohara!"
+    "text": "Wait, Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u015",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "Manohara... because a mother's word must not be broken, will you let the mother who sits in prison die abandoned?"
+    "text": "Manohara... because a mother's word must not be broken, will you let the mother who sits in prison die abandoned?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u016",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ah! Amma is in prison..."
+    "text": "Ah! Amma is in prison...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u017",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "Not only Amma... Vijaya too..."
+    "text": "Not only Amma... Vijaya too...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u018",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ah..."
+    "text": "Ah...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s037-u019",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்",
-    "text": "At least now understand...... why you must live."
+    "text": "At least now understand...... why you must live.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-037.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-037.md",
+     "sourceRecordId": "manohara-s037-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 58,
+       "printed_page": 57
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

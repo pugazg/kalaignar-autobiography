@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, BookOpen, Database, FileCheck2, Home, Info, Landmark } from "lucide-react";
+import { ArrowLeft, BookOpen, Database, FileCheck2, Home, Info, Landmark, ShieldCheck } from "lucide-react";
 import type { ManoharaProvenance } from "@/data/manohara";
 import { useLang } from "@/lib/i18n";
 
@@ -9,6 +9,7 @@ export default function ManoharaSource({ prov }: { prov: ManoharaProvenance }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const s = prov.source;
+  const pr = prov.projectRights;
 
   const Row = ({ label, children, mono }: { label: string; children: React.ReactNode; mono?: boolean }) => (
     <div className="grid gap-0.5 border-b border-ink/5 py-2.5 last:border-0 dark:border-white/5 sm:grid-cols-[minmax(0,10rem)_1fr] sm:gap-4">
@@ -72,12 +73,12 @@ export default function ManoharaSource({ prov }: { prov: ManoharaProvenance }) {
             <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}>
               <span className="font-tamil" lang="ta">{s.price_as_printed}</span>
             </Row>
-            <Row label={ta ? "உரிமை அறிவிப்பு (அச்சிட்டபடி)" : "Rights notice (as printed)"}>
+            <Row label={ta ? "இப்பதிப்பில் உரிமை அறிவிப்பு — அச்சிட்டபடி" : "Rights notice in this edition — as printed"}>
               <span className="font-tamil" lang="ta">“{s.rights_notice_as_printed}”</span>
               <span className="mt-1 block text-[11px] not-italic text-ink/40 dark:text-night-text/40">
                 {ta
-                  ? "மூலத்தில் அச்சிடப்பட்டதன் நேரடிச் சான்று மட்டுமே — எந்தச் சட்ட விளக்கமும் இல்லை."
-                  : "Quoted strictly as a source witness — no legal interpretation is asserted."}
+                  ? "1954 பதிப்பில் அச்சிடப்பட்டதன் வரலாற்றுச் சான்று மட்டுமே — தற்போதைய உரிமை நிலையை இது விவரிக்கவில்லை (கீழே காண்க)."
+                  : "A historical witness of what the 1954 edition printed — it does not describe the present rights status (see below)."}
               </span>
             </Row>
             <Row label={ta ? "காப்பக அடையாளம்" : "Archive identifier"} mono>{s.identifier}</Row>
@@ -92,6 +93,40 @@ export default function ManoharaSource({ prov }: { prov: ManoharaProvenance }) {
               : "The rendered scan image is the controlling archival source. The OCR text layer is non-canonical — for navigation only."}
           </p>
         </section>
+
+        {/* ── PRESENT RIGHTS / NATIONALISATION STATUS ──────────────────── */}
+        {/* A DIFFERENT fact from the 1954 printed notice above: the present project-level
+            rights status of Kalaignar's underlying authored work. */}
+        {pr && (
+          <section className="mt-4 rounded-2xl border border-marina/30 bg-marina/[0.05] p-5">
+            <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
+              <ShieldCheck className="h-3.5 w-3.5" aria-hidden /> {ta ? "தற்போதைய உரிமை / தேசியமயமாக்கல் நிலை" : "Present rights / nationalisation status"}
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang={lang}>
+              {ta
+                ? "முத்தமிழ் அறிஞர் கலைஞர் மு. கருணாநிதியின் படைப்புகளைத் தமிழ்நாடு அரசு தேசியமயமாக்கியுள்ளது. 2024 ஆகஸ்ட் 22 அன்று ராயல்டி இன்றி தேசியமயமாக்கப்படும் என அறிவிக்கப்பட்டு, 2024 டிசம்பரில் அரசாணை வழங்கப்பட்டது. இது இந்நூலின் அடிப்படை மூலப் படைப்புக்கு (கலைஞர் எழுதியது) பொருந்தும்."
+                : "The works of Kalaignar M. Karunanidhi have been nationalised by the Government of Tamil Nadu — announced on 22 August 2024 (without royalty), with the Government Order issued in December 2024. This applies to the underlying work authored by Kalaignar."}
+            </p>
+            <dl className="mt-3">
+              <Row label={ta ? "உரிமை நிலை" : "Rights status"}>
+                {ta ? "தமிழ்நாடு அரசால் தேசியமயமாக்கப்பட்டது" : "Nationalised by the Government of Tamil Nadu"}
+              </Row>
+              <Row label={ta ? "அதிகாரம்" : "Authority"}>{pr.rightsAuthority}</Row>
+              <Row label={ta ? "நடவடிக்கை" : "Action"}>{pr.rightsAction}</Row>
+              <Row label={ta ? "அறிவிப்பு தேதி" : "Announcement date"}>{pr.rightsAnnouncementDate}</Row>
+              <Row label={ta ? "அரசாணை" : "Government Order"}>
+                {pr.governmentOrderNumber
+                  ? pr.governmentOrderNumber
+                  : `${pr.governmentOrderDateStated ?? "—"} · ${ta ? "எண் இன்னும் சரிபார்க்கப்படவில்லை" : "number not yet verified"}`}
+              </Row>
+            </dl>
+            <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.05] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
+              {ta
+                ? "தேசியமயமாக்கல் கலைஞரின் அடிப்படை தமிழ்ப் படைப்பிற்கு மட்டுமே. இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு அல்லது பிறர் பங்களிப்புகளுக்கு இது நீட்டிக்கப்படவில்லை. அரசாணை எண் அதிகாரப்பூர்வ ஆவணத்திலிருந்து சரிபார்த்த பின்பே பதிவு செய்யப்படும்."
+                : "The nationalisation covers Kalaignar's underlying Tamil work only. It does not extend to the project-created English translation or to third-party contributions. The exact Government Order number will be recorded only after verification from an authoritative record."}
+            </p>
+          </section>
+        )}
 
         {/* ── ARCHIVE-DERIVED ──────────────────────────────────────────── */}
         <section className="mt-4 rounded-2xl border border-brass/30 bg-brass/[0.04] p-5">

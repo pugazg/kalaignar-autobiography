@@ -35,271 +35,1076 @@
     "id": "manohara-en-s021-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Padmavathi's inner chamber."
+    "text": "Padmavathi's inner chamber.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-location-heading",
+      "ordinal": 1,
+      "description": "Padmavathi's inner chamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 33,
+       "printed_page": 32
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u002",
     "kind": "dialogue",
     "speakerLabel": "தோழி 1",
-    "text": "Hmm... weariness from war—delight with a new wife—how will he come quickly, Amma...!"
+    "text": "Hmm... weariness from war—delight with a new wife—how will he come quickly, Amma...!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 33,
+       "printed_page": 32
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The `களைப்பு / களிப்பு` fatigue/delight pairing is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u003",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "My heart is restless with the desire to see Vijaya!..."
+    "text": "My heart is restless with the desire to see Vijaya!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 33,
+       "printed_page": 32
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u004",
     "kind": "dialogue",
     "speakerLabel": "தோழி 2",
-    "text": "Amma... some renunciant says he must see you, urgently!"
+    "text": "Amma... some renunciant says he must see you, urgently!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 33,
+       "printed_page": 32
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u005",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(Bauthayanan enters in the guise of a renunciant.)"
+    "text": "(Bauthayanan enters in the guise of a renunciant.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "parenthetical-entrance",
+      "ordinal": 1,
+      "description": "Bauthayanan enters disguised as a renunciant."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u006",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Greetings..."
+    "text": "Greetings...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u007",
     "kind": "dialogue",
     "speakerLabel": "துறவி",
-    "text": "May you live in well-being... Maharani... first make your heart into iron..."
+    "text": "May you live in well-being... Maharani... first make your heart into iron...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u008",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "What?..."
+    "text": "What?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u009",
     "kind": "dialogue",
     "speakerLabel": "துறவி",
-    "text": "The news I am about to utter is no sugarcane! Hmm... human life is but a straw in the sea, Amma!"
+    "text": "The news I am about to utter is no sugarcane! Hmm... human life is but a straw in the sea, Amma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's `கரும்பு / துரும்பு` sound-play is represented through the literal sugarcane/straw images even though the Tamil rhyme cannot be reproduced exactly."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u010",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "What, Sami; you speak without any connection."
+    "text": "What, Sami; you speak without any connection.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u011",
     "kind": "dialogue",
     "speakerLabel": "துறவி",
-    "text": "A renunciant is one without ties, is he not!... How greatly you must have rejoiced on hearing that your son had won..."
+    "text": "A renunciant is one without ties, is he not!... How greatly you must have rejoiced on hearing that your son had won...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The `தொடர்பு / தொடர்பற்ற` connection/ties pun is preserved semantically."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u012",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Yes, Swami!..."
+    "text": "Yes, Swami!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u013",
     "kind": "dialogue",
     "speakerLabel": "துறவி",
-    "text": "Why does the same heart that embraces happiness refuse to face sorrow?"
+    "text": "Why does the same heart that embraces happiness refuse to face sorrow?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u014",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Swami... what has happened... tell me!"
+    "text": "Swami... what has happened... tell me!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u015",
     "kind": "dialogue",
     "speakerLabel": "துறவி",
-    "text": "Here... this war-sword will tell you..."
+    "text": "Here... this war-sword will tell you...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u016",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Ah!..."
+    "text": "Ah!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u017",
     "kind": "dialogue",
     "speakerLabel": "துறவி",
-    "text": "Your son has gone... to the world of merit!..."
+    "text": "Your son has gone... to the world of merit!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`புண்ணியலோகம்` is kept as the religious image 'world of merit'."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u018",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Ah... Manohara!..."
+    "text": "Ah... Manohara!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u019",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "I've come, Amma."
+    "text": "I've come, Amma.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-offstage-speech",
+      "ordinal": 1,
+      "description": "The source prints `வந்துவிட்டேனம்மா` without a speaker label before saying a voice is heard."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "No speaker identity is manufactured despite the immediate dramatic reveal."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u020",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[A voice is heard. Leaning on her companion, she starts and turns, unable to believe her eyes.]"
+    "text": "[A voice is heard. Leaning on her companion, she starts and turns, unable to believe her eyes.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-reaction-stage-direction",
+      "ordinal": 1,
+      "description": "A voice is heard; Padmavathi, leaning on her companion, starts and turns in disbelief."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u021",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "‘Manohara!’"
+    "text": "‘Manohara!’",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-exclamation",
+      "ordinal": 1,
+      "description": "The source prints `மனோகரா!` in quotation marks without a speaker label."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Context strongly suggests Padmavathi, but the source prints no label and none is invented."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u022",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "She embraces Manoharan and looks at him in astonishment..."
+    "text": "She embraces Manoharan and looks at him in astonishment...",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 1,
+      "description": "She embraces Manoharan and looks at him in astonishment."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u023",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Why are you looking at me like this, Amma... what happened...? Who is this Sami?... (Seeing the war-sword in his hand) Ah... my war-sword... it went missing... how did it come here...?"
+    "text": "Why are you looking at me like this, Amma... what happened...? Who is this Sami?... (Seeing the war-sword in his hand) Ah... my war-sword... it went missing... how did it come here...?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33
+      },
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "englishPageSegments": [
+      {
+       "pdf_page": 34,
+       "printed_page": 33,
+       "english_text": "Why are you looking at me like this, Amma... what happened...? Who is this Sami?... (Seeing the war-sword in his hand)"
+      },
+      {
+       "pdf_page": 35,
+       "printed_page": 34,
+       "english_text": "Ah... my war-sword... it went missing... how did it come here...?"
+      }
+     ],
+     "notes": [
+      "The genuine PDF 34→35 dialogue crossing remains one unit; the embedded stage cue stays inside the immutable dialogue-linked record."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u024",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Manohara! This sinner told me you had left me forever..."
+    "text": "Manohara! This sinner told me you had left me forever...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u025",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்பிரியன்",
-    "text": "Thieving rogue!... Not only has he stolen the sword... has he stretched out a tail too? Look at the beard, the beard!"
+    "text": "Thieving rogue!... Not only has he stolen the sword... has he stretched out a tail too? Look at the beard, the beard!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The Tamil `வாள் / வால்` sword/tail sound-play is represented directly."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u026",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[When the beard is grabbed, it comes away in the hand.]"
+    "text": "[When the beard is grabbed, it comes away in the hand.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-stage-action",
+      "ordinal": 1,
+      "description": "When the beard is grabbed, it comes away in the hand."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u027",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Bauthayanan..."
+    "text": "Bauthayanan...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u028",
     "kind": "dialogue",
     "speakerLabel": "ராஜ",
-    "text": "A new chapter in conspiracy—steal the war-sword and bring it to show her... the Maharani will die. A fine plot..."
+    "text": "A new chapter in conspiracy—steal the war-sword and bring it to show her... the Maharani will die. A fine plot...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u029",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Scorpion's sting!... Whose plan is this, you wretch!... Speak..."
+    "text": "Scorpion's sting!... Whose plan is this, you wretch!... Speak...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source insult `தேளின் கொடுக்கே` is retained as an image rather than replaced with a generic curse."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u030",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Manohara, poor fellow... let him go..."
+    "text": "Manohara, poor fellow... let him go...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u031",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "We must not let him go, Amma... Rajapriya... lock him in prison!"
+    "text": "We must not let him go, Amma... Rajapriya... lock him in prison!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u032",
     "kind": "dialogue",
     "speakerLabel": "பெளத்",
-    "text": "Vasantha Sena is the cause of everything!"
+    "text": "Vasantha Sena is the cause of everything!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u033",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Vasantha Sena! She must not be left alive any longer!"
+    "text": "Vasantha Sena! She must not be left alive any longer!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u034",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "(He goes.)"
+    "text": "(He goes.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-021.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "parenthetical-stage-action",
+      "ordinal": 2,
+      "description": "Manoharan goes."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u035",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Manohara! Stop—where are you running?..."
+    "text": "Manohara! Stop—where are you running?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d027",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u036",
     "kind": "dialogue",
     "speakerLabel": "மனோகரன்",
-    "text": "Amma, what more now—after I have fulfilled your vow!..."
+    "text": "Amma, what more now—after I have fulfilled your vow!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d028",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u037",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "I'll tell you. First, ‘put the sword into its sheath!... swear that without my permission you will do no kind of harm either to the Maharaja or to Vasantha Sena!... swear upon me..."
+    "text": "I'll tell you. First, ‘put the sword into its sheath!... swear that without my permission you will do no kind of harm either to the Maharaja or to Vasantha Sena!... swear upon me...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d029",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's opening quotation mark is retained in the English phrasing without inventing a closing quotation absent from the source record."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u038",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Amma!"
+    "text": "Amma!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d030",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u039",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Swear upon your mother!..."
+    "text": "Swear upon your mother!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d031",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u040",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "I will do nothing to the king, Amma."
+    "text": "I will do nothing to the king, Amma.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d032",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u041",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "No! It must include Vasantha Sena too!"
+    "text": "No! It must include Vasantha Sena too!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d033",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 35,
+       "printed_page": 34
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u042",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Vasantha Sena... the vulture circling overhead!... the wolf standing with its jaws agape!... the mountain-python that has coiled around us—mercy for her—??? Impossible! Never!..."
+    "text": "Vasantha Sena... the vulture circling overhead!... the wolf standing with its jaws agape!... the mountain-python that has coiled around us—mercy for her—??? Impossible! Never!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d034",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's `???` uncertainty marks are preserved rather than silently repaired.",
+      "The vulture/wolf/python accumulation is kept intact."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u043",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "As you wish... let the townspeople laugh that you are a son who does not heed his mother's word!... let the country laugh that I am the mother who bore an ungovernable son!..."
+    "text": "As you wish... let the townspeople laugh that you are a son who does not heed his mother's word!... let the country laugh that I am the mother who bore an ungovernable son!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d035",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The paired townspeople/country and son/mother reproach is preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s021-u044",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Ayyo... it is nothing like that, Amma... here, I swear it now."
+    "text": "Ayyo... it is nothing like that, Amma... here, I swear it now.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d036",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s021-u045",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "My son!..."
+    "text": "My son!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-021.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-021.md",
+     "sourceRecordId": "manohara-s021-d037",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 36,
+       "printed_page": 35
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

@@ -31,193 +31,755 @@
     "id": "manohara-en-s041-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[King's palace.]"
+    "text": "[King's palace.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-041.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "King's palace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u002",
     "kind": "dialogue",
     "speakerLabel": "காவலன்",
-    "text": "Maharaja...... there is a man said to be a great expert at treating madness..."
+    "text": "Maharaja...... there is a man said to be a great expert at treating madness...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u003",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Is that so!... Take him to Vasanthi!......"
+    "text": "Is that so!... Take him to Vasanthi!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u004",
     "kind": "dialogue",
     "speakerLabel": "காவலன்",
-    "text": "Your command!......"
+    "text": "Your command!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u005",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[In Vasantha Sena's inner quarters, the guard points out Manoharan, who is in Akshayan's guise.]"
+    "text": "[In Vasantha Sena's inner quarters, the guard points out Manoharan, who is in Akshayan's guise.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-041.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "disguise-introduction",
+      "ordinal": 1,
+      "description": "In Vasantha Sena's inner quarters, the guard points out Manoharan disguised as Akshayan."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 65,
+       "printed_page": 64
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u006",
     "kind": "dialogue",
     "speakerLabel": "காவலன்",
-    "text": "Amma—Maharaja sent this man to you. They say he is a great physician..."
+    "text": "Amma—Maharaja sent this man to you. They say he is a great physician...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u007",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "Who?......"
+    "text": "Who?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u008",
     "kind": "dialogue",
     "speakerLabel": "போலி அக்ஷயன்",
-    "text": "I am a physician. My name is..... Ugrasenan's messenger... [understanding]"
+    "text": "I am a physician. My name is..... Ugrasenan's messenger... [understanding]",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached `புரிந்துகொண்டு` cue is retained without assigning an unstated subject."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u009",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "A long name..."
+    "text": "A long name...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u010",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Manoharan extends the letter to Vasantha Sena. She reads it.]"
+    "text": "[Manoharan extends the letter to Vasantha Sena. She reads it.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-041.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "letter-action",
+      "ordinal": 1,
+      "description": "Manoharan extends the letter to Vasantha Sena; she reads it."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u011",
     "kind": "dialogue",
     "speakerLabel": null,
-    "text": "Your name?"
+    "text": "Your name?",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-041.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "source-unlabelled-spoken-line",
+      "ordinal": 1,
+      "description": "The source prints `உமது பெயர்?` without a speaker label after the letter-reading action."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "No speaker is inferred because the source line has no printed speaker label."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u012",
     "kind": "dialogue",
     "speakerLabel": "போலி அக்ஷயன்",
-    "text": "Akshayan!"
+    "text": "Akshayan!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u013",
     "kind": "dialogue",
     "speakerLabel": "வசந்தி",
-    "text": "You have fooled the king properly."
+    "text": "You have fooled the king properly.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u014",
     "kind": "dialogue",
     "speakerLabel": "போ. அக்ஷ",
-    "text": "Yes—no one can discover who I am..."
+    "text": "Yes—no one can discover who I am...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u015",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "All right... keep acting just like a physician—I'll attend to the rest."
+    "text": "All right... keep acting just like a physician—I'll attend to the rest.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u016",
     "kind": "dialogue",
     "speakerLabel": "போ. அக்ஷ.",
-    "text": "Acting? That's easy!... Oh!..."
+    "text": "Acting? That's easy!... Oh!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The boast in `நடிப்பதா பிரமாதம்` is kept brisk rather than formalized."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u017",
     "kind": "dialogue",
     "speakerLabel": "வசந்தன்",
-    "text": "Hey, physician... medicine, medicine—you keep taking my life!"
+    "text": "Hey, physician... medicine, medicine—you keep taking my life!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The literal `உயிரை வாங்குறே` sets up the physician's death-joke in the next exchange and is retained."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u018",
     "kind": "dialogue",
     "speakerLabel": "வைத்",
-    "text": "That's exactly what I'm trying to do, but it isn't happening!"
+    "text": "That's exactly what I'm trying to do, but it isn't happening!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The physician's reply preserves the dark comic reversal of `உயிரை வாங்க`."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u019",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "What for? To take my life?"
+    "text": "What for? To take my life?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s041-u020",
     "kind": "dialogue",
     "speakerLabel": "வைத்",
-    "text": "Tch...tch... by God's grace, may your lifespan go on... this disease go on... and this humble servant's job go on; I am forever praying to Yama-Dharma for it."
+    "text": "Tch...tch... by God's grace, may your lifespan go on... this disease go on... and this humble servant's job go on; I am forever praying to Yama-Dharma for it.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The threefold `நீடிச்சு` repetition and the joke of praying to Yama-Dharma are preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u021",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Physician! What is Yama's vehicle?"
+    "text": "Physician! What is Yama's vehicle?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u022",
     "kind": "dialogue",
     "speakerLabel": "விக",
-    "text": "A buffalo bull! That's why he comes so slowly to all the bad people..."
+    "text": "A buffalo bull! That's why he comes so slowly to all the bad people...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The Yama/buffalo joke is retained directly."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u023",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Yes... no doubt... no doubt—"
+    "text": "Yes... no doubt... no doubt—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u024",
     "kind": "dialogue",
     "speakerLabel": "விக",
-    "text": "Physician... first, allow me to convey my deepest condolences..."
+    "text": "Physician... first, allow me to convey my deepest condolences...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u025",
     "kind": "dialogue",
     "speakerLabel": "வைத்",
-    "text": "What is it, Vikatare..."
+    "text": "What is it, Vikatare...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u026",
     "kind": "dialogue",
     "speakerLabel": "விக",
-    "text": "Life is impermanent... here... a new physician has arrived for Vasanthan!"
+    "text": "Life is impermanent... here... a new physician has arrived for Vasanthan!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 66,
+       "printed_page": 65
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The mock-condolence setup in `நிலையில்லா வாழ்வு` is kept intact."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u027",
     "kind": "dialogue",
     "speakerLabel": "வைத்",
-    "text": "Then I..."
+    "text": "Then I...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u028",
     "kind": "dialogue",
     "speakerLabel": "விக",
-    "text": "Step aside a little, my boy..."
+    "text": "Step aside a little, my boy...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u029",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Manoharan enters in Akshayan's guise.]"
+    "text": "[Manoharan enters in Akshayan's guise.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-041.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "entrance-action",
+      "ordinal": 1,
+      "description": "Manoharan enters in Akshayan's guise."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u030",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Hey, new physician... what all do you know?"
+    "text": "Hey, new physician... what all do you know?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s041-u031",
     "kind": "dialogue",
     "speakerLabel": "அட்",
-    "text": "Without even giving medicine, I'll put an end to the disease!"
+    "text": "Without even giving medicine, I'll put an end to the disease!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The ominous joke in `ஒரு முடிவு கட்டுவேன்` is left intact."
+     ]
+    }
    },
    {
     "id": "manohara-en-s041-u032",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Then... you're the new physician, no doubt... hey, old physician, you run..."
+    "text": "Then... you're the new physician, no doubt... hey, old physician, you run...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-041.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-041.md",
+     "sourceRecordId": "manohara-s041-d027",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Vasanthan's recurring `சந்தேகமில்லே` refrain is retained as `no doubt`."
+     ]
+    }
    }
   ]
  }

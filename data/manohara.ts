@@ -47,14 +47,54 @@ export type ManoharaUnitKind =
   | "chant"
   | "written-text";
 
+export type ManoharaPageProvenance = { pdf_page: number; printed_page: number };
+
+// Structured source locator for units not linked to an immutable dialogue record
+// (stage directions, song references, chants, written text, unlabelled utterances).
+// Copied verbatim from the authoritative reader record; shape preserved.
+export type ManoharaSourceLocator = {
+  kind: string;
+  ordinal: number;
+  description: string;
+};
+
+// Per-unit archival provenance, copied DIRECTLY from the authoritative source reader
+// record (works/manohara/editions/en/reader-edition.json → unit.source). None of these
+// are reconstructed or converted into invented website IDs.
+export type ManoharaUnitSource = {
+  sourcePath: string; // e.g. works/manohara/dialogues/records/scene-001.json
+  canonicalScenePath: string; // e.g. works/manohara/scenes/scene-001.md
+  sourceRecordId: string | null; // immutable dialogue-record id (null for non-dialogue-linked units)
+  sourceOccurrenceId: string | null; // song/performance occurrence id where present (e.g. manohara-song-001)
+  sourceLocator: ManoharaSourceLocator | null; // structured locator where present; verbatim
+  pageProvenance: ManoharaPageProvenance[]; // exact source page_provenance array
+};
+
+// One physical-page segment of an English unit that crosses a source page break.
+// Present only when the authoritative translation record supplies it (the 17 cross-page units).
+export type ManoharaEnglishPageSegment = {
+  pdf_page: number;
+  printed_page: number;
+  english_text: string;
+};
+
+// English translation-layer metadata, copied directly from unit.translation. Editorial
+// notes are retained verbatim as static metadata and are never altered or regenerated.
+export type ManoharaUnitTranslation = {
+  mode: string; // e.g. "prose-faithful"
+  englishPageSegments?: ManoharaEnglishPageSegment[]; // only when the source supplies a cross-page split
+  englishLines?: string[]; // only when the source represents the unit as discrete lines (not english_text)
+  notes?: string[]; // authoritative editorial notes, verbatim; omitted when empty
+};
+
 export type ManoharaUnit = {
   id: string;
   kind: ManoharaUnitKind;
   speakerLabel: string | null; // exact source label (Tamil); null preserved verbatim
-  text: string; // verbatim English derivative text (never normalized)
+  text: string; // verbatim English derivative reading text (never normalized)
+  source: ManoharaUnitSource; // archival source-linked audit trail (verbatim)
+  translation: ManoharaUnitTranslation; // translation-layer metadata (verbatim)
 };
-
-export type ManoharaPageProvenance = { pdf_page: number; printed_page: number };
 
 export type ManoharaSegment = {
   workId: "manohara";
@@ -115,6 +155,24 @@ export type ManoharaProvenance = {
     translationInputAggregateSha256: string;
     validationInputAggregateSha256: string;
     readerEditionOutputs: Record<string, { sha256: string; bytes: number }>;
+  };
+  // Present project-level rights status of the UNDERLYING work authored by Kalaignar.
+  // This is a project-level provenance fact (Tamil Nadu Government nationalisation) — it is
+  // deliberately NOT source-repo-derived and is kept DISTINCT from the 1954 edition's printed
+  // rights notice (source.rights_notice_as_printed). The Government Order number is null until
+  // verified from the GO itself; it is never invented.
+  projectRights: {
+    appliesTo: string; // the underlying Kalaignar-authored work only
+    rightsStatus: string; // "nationalised-by-tamil-nadu-government"
+    rightsAuthority: string; // "Government of Tamil Nadu"
+    rightsAction: string; // "nationalisation"
+    rightsAnnouncementDate: string; // "2024-08-22" (announced without royalty)
+    governmentOrderNumber: string | null; // null until verified from the GO — never invented
+    governmentOrderDateStated: string | null; // e.g. "December 2024" (as stated; exact date pending)
+    distinctionNote: string; // printed 1954 notice vs present nationalisation are different facts
+    thirdPartyNote: string; // nationalisation does not extend to third-party contributions
+    projectTranslationNote: string; // project-created English retains its own distinct provenance
+    evidencePending: string; // exact GO number/date to be captured from an authoritative record
   };
   notes: string[];
 };

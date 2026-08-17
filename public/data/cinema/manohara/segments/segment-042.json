@@ -31,235 +31,905 @@
     "id": "manohara-en-s042-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Ugrasenan's tent.]"
+    "text": "[Ugrasenan's tent.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-042.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Ugrasenan's tent."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u002",
     "kind": "dialogue",
     "speakerLabel": "உக்ரசேனன்",
-    "text": "Veerasimha! We may have to set out suddenly... all our soldiers are ready, aren't they!"
+    "text": "Veerasimha! We may have to set out suddenly... all our soldiers are ready, aren't they!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u003",
     "kind": "dialogue",
     "speakerLabel": "வீர",
-    "text": "Ready, my king!"
+    "text": "Ready, my king!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u004",
     "kind": "dialogue",
     "speakerLabel": "உக்ர",
-    "text": "(Handing over a palm-leaf letter) Enter Purushothaman's palace and, through Vasantha Sena, get this delivered to Akshayan."
+    "text": "(Handing over a palm-leaf letter) Enter Purushothaman's palace and, through Vasantha Sena, get this delivered to Akshayan.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached letter-handover action remains inside the linked utterance."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u005",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "They say Ugrasenan has arrived; they say they're all coming disguised as sadhus..."
+    "text": "They say Ugrasenan has arrived; they say they're all coming disguised as sadhus...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u006",
     "kind": "dialogue",
     "speakerLabel": "போ. அக்ஷ.",
-    "text": "Sadhus... disguise..."
+    "text": "Sadhus... disguise...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u007",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "What, Akshaya?"
+    "text": "What, Akshaya?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u008",
     "kind": "dialogue",
     "speakerLabel": "போ. அக்ஷ.",
-    "text": "Nothing, Amma. Many empires have fallen under the guise of sadhus..."
+    "text": "Nothing, Amma. Many empires have fallen under the guise of sadhus...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The political irony of `சாது வேடத்தில்` is retained rather than softened."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u009",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Oh! Yes... how do we bring them into the palace?"
+    "text": "Oh! Yes... how do we bring them into the palace?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u010",
     "kind": "dialogue",
     "speakerLabel": "அக்ஷ",
-    "text": "We shall have to think it over..."
+    "text": "We shall have to think it over...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u011",
     "kind": "dialogue",
     "speakerLabel": "வ. சே",
-    "text": "What is there to think about? I'll arrange it in half a second."
+    "text": "What is there to think about? I'll arrange it in half a second.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u012",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Ugrasenan's group of sadhus is welcomed with drums, music and devotional cries...... The king and Vasanthi receive and honour the group with devotion, reverence and respect......]"
+    "text": "[Ugrasenan's group of sadhus is welcomed with drums, music and devotional cries...... The king and Vasanthi receive and honour the group with devotion, reverence and respect......]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-042.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "procession-and-reception",
+      "ordinal": 1,
+      "description": "Ugrasenan's sadhu group is welcomed with music and devotional cries; the king and Vasanthi receive and honour them with devotion and respect."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u013",
     "kind": "dialogue",
     "speakerLabel": "அரசன்",
-    "text": "Welcome...... welcome...... I am blessed."
+    "text": "Welcome...... welcome...... I am blessed.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 67,
+       "printed_page": 66
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u014",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "May Bhagavan's great grace be attained... King Purushothaman... the world itself is a drama; who knows what will happen tomorrow!......"
+    "text": "May Bhagavan's great grace be attained... King Purushothaman... the world itself is a drama; who knows what will happen tomorrow!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The disguised holy-man register and `the world is a drama` aphoristic turn are preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u015",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "True, true!......"
+    "text": "True, true!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u016",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "So this is the queen!......"
+    "text": "So this is the queen!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u017",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "(Nods his head)......"
+    "text": "(Nods his head)......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source stores this action under an explicit speaker label; it remains linked as dialogue-kind rather than being silently reclassified."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u018",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Mahalakshmi!... Nalayini of the Kali age... Queen...... may you live as your heart desires!... may your thoughts be fulfilled......"
+    "text": "Mahalakshmi!... Nalayini of the Kali age... Queen...... may you live as your heart desires!... may your thoughts be fulfilled......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "`மகாலஷ்மி` and `கலிகால நளாயினி` remain culturally explicit rather than being replaced with generic praise."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u019",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Vasantha... bow to Swami!"
+    "text": "Vasantha... bow to Swami!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u020",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "May I have the company of those noble ones who, with singleness of mind, think upon Your sacred flower-feet... Vikata, I've forgotten the lesson, da..."
+    "text": "May I have the company of those noble ones who, with singleness of mind, think upon Your sacred flower-feet... Vikata, I've forgotten the lesson, da...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The half-remembered devotional recitation is kept elevated before Vasanthan breaks it with his comic admission."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u021",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Enough... enough."
+    "text": "Enough... enough.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d019",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u022",
     "kind": "dialogue",
     "speakerLabel": "உக்ர",
-    "text": "Long live! Long live...... Hey, King... I have come at just the right time. A great danger is waiting for you........"
+    "text": "Long live! Long live...... Hey, King... I have come at just the right time. A great danger is waiting for you........",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d020",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u023",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Swami!......"
+    "text": "Swami!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d021",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u024",
     "kind": "dialogue",
     "speakerLabel": "உக்ர",
-    "text": "If you are to escape that danger, you and your queen must remain apart from this very moment until tomorrow morning."
+    "text": "If you are to escape that danger, you and your queen must remain apart from this very moment until tomorrow morning.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d022",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u025",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Is that so?"
+    "text": "Is that so?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d023",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u026",
     "kind": "dialogue",
     "speakerLabel": "உக்ர",
-    "text": "Otherwise, death will occur..."
+    "text": "Otherwise, death will occur...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d024",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u027",
     "kind": "dialogue",
     "speakerLabel": "வச",
-    "text": "Be separated from Maharaja?......"
+    "text": "Be separated from Maharaja?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d025",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u028",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Only until tomorrow morning, Vasanthi!..."
+    "text": "Only until tomorrow morning, Vasanthi!...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d026",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u029",
     "kind": "dialogue",
     "speakerLabel": "உக்",
-    "text": "Hmm—separate... separate..."
+    "text": "Hmm—separate... separate...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d027",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u030",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "I remember now: may I not mingle in the company of those who keep one thing within and speak another without."
+    "text": "I remember now: may I not mingle in the company of those who keep one thing within and speak another without.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d028",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The devotional-lesson cadence is retained as part of Vasanthan's comic recitation."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u031",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Vasantha"
+    "text": "Vasantha",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d029",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u032",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "Forgetfulness... desire for women must be forgotten."
+    "text": "Forgetfulness... desire for women must be forgotten.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d030",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source prints `மறவு பெண்ணாசை மறக்கவேண்டும்`; it is preserved as printed rather than silently normalized to a familiar devotional line."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u033",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "Hey! Keep quiet!"
+    "text": "Hey! Keep quiet!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d031",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u034",
     "kind": "dialogue",
     "speakerLabel": "வசந்",
-    "text": "Wisdom is needed..."
+    "text": "Wisdom is needed...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d032",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u035",
     "kind": "dialogue",
     "speakerLabel": "வ. சே.",
-    "text": "Vasantha!"
+    "text": "Vasantha!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d033",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u036",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[Vasanthi leaves]..."
+    "text": "[Vasanthi leaves]...",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-042.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "exit-action",
+      "ordinal": 1,
+      "description": "Vasanthi leaves."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's unusual agreement is not used to infer or alter identity; the English avoids adding a gendered pronoun."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u037",
     "kind": "dialogue",
     "speakerLabel": "உக்ர",
-    "text": "Everything is God's doing! King!... this body needs a little rest..."
+    "text": "Everything is God's doing! King!... this body needs a little rest...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d034",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 68,
+       "printed_page": 67
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The counterfeit ascetic register remains visible in `this body` rather than being normalized to `I`."
+     ]
+    }
    },
    {
     "id": "manohara-en-s042-u038",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "I'll arrange it at once......"
+    "text": "I'll arrange it at once......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-042.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": "manohara-s042-d035",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 69,
+       "printed_page": 68
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s042-u039",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[The king leaves. Ugrasenan's soldiers, disguised as sadhus, spread throughout the palace, kill the guards and occupy their places.]"
+    "text": "[The king leaves. Ugrasenan's soldiers, disguised as sadhus, spread throughout the palace, kill the guards and occupy their places.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-042.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-042.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "palace-seizure-action",
+      "ordinal": 1,
+      "description": "The king leaves; Ugrasenan's soldiers disguised as sadhus spread through the palace, kill the guards and occupy their places."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 69,
+       "printed_page": 68
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    }
   ]
  }

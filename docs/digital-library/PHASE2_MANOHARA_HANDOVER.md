@@ -54,12 +54,52 @@ tracking ref — was identified as local-only and did not reflect any real movem
   `archivalSceneNumbering: "derivative-navigation-only"`.
 - `public/data/cinema/manohara/segments/segment-001.json … segment-057.json` — per segment:
   `tamil.text` (verbatim Tamil scene derivative, ★ and all in-text markers preserved; page
-  markers captured separately in `pageProvenance`) and `english.units[]` =
-  `{ id, kind, speakerLabel, text }`.
+  markers captured separately in the segment-level `pageProvenance`) and `english.units[]`.
+  **Each English unit preserves the authoritative source-linked audit trail** (see below), not
+  merely `{ id, kind, speakerLabel, text }`.
 - `public/data/cinema/manohara/provenance.json` — the full integrity manifest surfaced on the
-  source page.
+  source page, plus the project-level `projectRights` block (see Rights).
 - **Types:** `data/manohara.ts` (`ManoharaIndex`, `ManoharaSegment`, `ManoharaUnit`,
-  `ManoharaProvenance`, …).
+  `ManoharaUnitSource`, `ManoharaUnitTranslation`, `ManoharaEnglishPageSegment`,
+  `ManoharaSourceLocator`, `ManoharaProvenance`, …).
+
+### Per-English-unit shape (source provenance preserved — reviewer correction)
+
+Each `english.units[]` entry is copied **directly** from the authoritative source reader record
+(`works/manohara/editions/en/reader-edition.json` → `scenes[].units[]`); nothing is reconstructed
+and no source path/record id is converted into an invented website id:
+
+```
+{
+  id, kind, speakerLabel, text,
+  source: {
+    sourcePath, canonicalScenePath,
+    sourceRecordId,        // immutable dialogue-record id, or null (non-dialogue-linked)
+    sourceOccurrenceId,    // song/performance occurrence id where present, else null
+    sourceLocator,         // structured {kind,ordinal,description} where present, else null (verbatim)
+    pageProvenance         // exact source array of { pdf_page, printed_page }
+  },
+  translation: {
+    mode,                              // e.g. "prose-faithful"
+    englishPageSegments?,              // exact { pdf_page, printed_page, english_text } — only the 17 cross-page units
+    englishLines?,                     // discrete source lines where the unit is represented that way
+    notes?                             // authoritative editorial notes, verbatim; omitted when empty
+  }
+}
+```
+
+Provenance populations preserved (all asserted against the source, never against the removed
+`parts/`): **983** immutable dialogue links (`sourceRecordId` non-null); **207** null-`sourceRecordId`
+/ null-speaker units; **6** song/performance occurrence links (`sourceOccurrenceId`); **17**
+cross-page units retaining their exact `englishPageSegments`; **207** structured `sourceLocator`s.
+Assertion example — `manohara-en-s001-u006` retains `sourceRecordId: manohara-s001-d004`, page
+provenance for PDF 7 and 8, and both exact English page segments.
+
+**Defect fixed in passing:** one unit (`manohara-en-s036-u076`) is represented in the source as
+`translation.english_lines` (two quoted crowd cries) rather than `english_text`; the previous
+importer produced `text: null` for it. The corrected importer sets `text` to the source lines
+joined by a newline — exactly as the authoritative `.md`/`.html` editions render them (`<br>`) —
+and preserves `englishLines`. No text is invented.
 
 ### English unit kinds (1190 units total, exact from the source reader edition)
 `dialogue` 1009 · `stage-direction` 173 · `song-reference` 6 · `chant` 1 · `written-text` 1.
@@ -140,20 +180,79 @@ data only** — it is **not** a source edit, a comparison, or a migration. The `
 **never** used as source, reference, comparison baseline, continuation input, or validation
 authority (this is also recorded verbatim in `provenance.json` notes and `import-manohara.mjs`).
 
-## Backward compatibility
+## Importer & source integrity
 
-Additive. Existing catalog entries, readers, and routes are unchanged. `visibleShelves()` /
-`publishedWorks()` are untouched (the new work flows through the existing selectors). Public
-rendering is still driven **only** by `state: "published"` — never by folder existence.
+`scripts/import-manohara.mjs` is deterministic and work-specific (no generalized ingestion
+framework). It reads **only** the authoritative `pugazg/kalaignar-cinema-works` (`works/manohara`)
+clone, never the removed website `parts/` tree; it never retranslates or normalizes English,
+never normalizes speaker labels, preserves `null` speakers, and keeps `sourceSceneNumber = null`.
+
+**Hardening added in this correction:** before generating any data, the importer runs
+`git -C <clone> rev-parse HEAD` and **fails closed** unless it equals the supplied
+`<source-commit>` argument — so a caller-supplied SHA can never be recorded against a
+non-matching checked-out tree. (Verified: a wrong commit aborts with a clear error and exit 1,
+touching no data.) The importer regenerated all 57 segment JSON files from the pinned source
+commit `4b5f3238…`.
+
+## Rights / nationalisation
+
+The catalog now carries a reusable, evidence-based rights model (`WorkRights` / `RightsStatus`
+in `data/library.ts`; `LibraryWork.rights`), and Manohara records:
+
+- `rightsStatus: "nationalised-by-tamil-nadu-government"`, `rightsAuthority: "Government of Tamil
+  Nadu"`, `rightsAction: "nationalisation"`, `rightsAnnouncementDate: "2024-08-22"`,
+  `governmentOrderDateStated: "December 2024"`, `governmentOrderNumber: null`.
+
+Background: the Government of Tamil Nadu announced on 2024-08-22 that Kalaignar's works would be
+nationalised **without royalty**, and issued the nationalising Government Order in December 2024.
+This is a **project-wide** fact for works authored by Kalaignar — **not** Manohara-specific. The
+same facts are also written into the vendored `provenance.json` (`projectRights`) so the audit
+trail travels with the static package, and the `/cinema/manohara/source` page now shows two
+**distinct** facts:
+
+- **"Rights notice in this edition — as printed"** — the 1954 booklet's `உரிமை : ஆசிரியருக்கே.`,
+  preserved verbatim as a historical **source witness** (not the present status).
+- **"Present rights / nationalisation status"** — the Tamil Nadu Government nationalisation of the
+  underlying authored work.
+
+Boundaries recorded in the data and UI: the nationalisation covers **Kalaignar's underlying Tamil
+work only**. It does **not** extend to the project-created English translation (`englishKind:
+project-created`, which keeps its own provenance) or to third-party contributions (other authors'
+prefaces/essays, separately published translations, secondary witness editions, or
+photographs/illustrations/cover/publisher material). The **exact Government Order number is not
+invented** — `governmentOrderNumber` stays `null` until verified from the GO or an authoritative
+government record. Nationalisation affects **rights/use context, not textual authority**: all
+archival-text rules are unchanged (scan controls transcription; no modernization; no
+retranslation; no invented text; mandatory source provenance).
+
+**Follow-up (not in this commit):** a dedicated project-wide **rights audit** should bring the
+existing catalog entries (Nenjukku Neethi, Murasoli, Tholkappiya Poonga) onto this same model,
+classifying each work separately as: Kalaignar-authored underlying work → Tamil Nadu Government
+nationalised; project-created translation → project derivative; separately published translation →
+its own independent provenance/rights; third-party contribution → independently determined. Locate
+and record the exact GO number/date as part of that audit. This corrective commit deliberately does
+**not** mass-migrate existing works — it establishes the reusable model and Manohara's entry only.
 
 ## Validation
 
+- **Programmatic source-vs-import validation** (vendored data compared **directly** against the
+  authoritative `reader-edition.json`, never against the removed `parts/`): 57/57 segments;
+  `sourceSceneNumber` null for every segment; 1190 units; exact unit-kind counts (1009 / 173 / 6 /
+  1 / 1); unit-id set == authoritative; **per-unit verbatim equality with 0 mismatches** across
+  `kind`, `speakerLabel` (null preserved), `text`, and all `source` / `translation` provenance
+  fields; 983 immutable dialogue links; 6 song-occurrence links; 17 cross-page units with exact
+  `englishPageSegments`; 207 null-speaker units preserved; no text changes; `manohara-en-s001-u006`
+  assertion (sourceRecordId + PDF 7&8 page provenance + both English page segments) passes; the
+  `manohara-en-s036-u076` `english_lines` fix verified.
+- **Importer HEAD guard** — regenerates only when the source clone HEAD equals the pinned commit;
+  a wrong commit aborts with exit 1 and touches no data (verified).
 - `tsc --noEmit` — clean (exit 0).
 - `npm run build` — success; generated the landing, all **57** segment routes, and the source
   page; **all pre-existing routes preserved** (1256 static pages total); sitemap includes the 59
-  Manohara URLs. Rebuilt clean after the `parts/` deletion. (The "Newsreader font override"
-  warning is pre-existing/environmental, unrelated to this change.)
+  Manohara URLs. (The "Newsreader font override" warning is pre-existing/environmental, unrelated
+  to this change.)
 - `git diff --check` — clean.
+- `parts/` remains **absent** (filesystem and `/data/cinema/manohara/parts/*` → 404).
 - `next start` smoke test (production build): `/read` shows exactly 4 works across 4 shelves
   (Cinema Writing → Manohara), empty shelves hidden; landing, first/middle/last segments 200;
   invalid segment 404; Ta/En toggle; Tamil verbatim (★, speakers, parentheticals) and English
@@ -169,7 +268,10 @@ rendering is still driven **only** by `state: "published"` — never by folder e
 - **Web-only; Manohara only.** No other cinema/other works; no mobile; no source-repo edits; no
   PDFs; no runtime GitHub; no generalized ingestion framework; no global search / unified
   bookmarks.
-- English is a project-created derivative — **no public-domain or authorization claim** is made
-  anywhere; the printed rights notice is shown solely as a source witness.
+- **Rights:** no unsupported generic public-domain claim is made. The underlying Kalaignar-authored
+  work is recorded as **nationalised by the Government of Tamil Nadu** (announced 2024-08-22; GO
+  December 2024, number pending verification), kept **separate** from the historical 1954 printed
+  edition notice, from the **project-created** English translation, and from any third-party
+  material. See the Rights section above.
 - **This PR does not mark the cross-project master handover "Phase 2 COMPLETE"** (that is a
   separate post-merge closeout). Parasakthi / Tirumbippaar are **not** started.

@@ -23,49 +23,187 @@
     "id": "manohara-en-s057-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[In the palace.] [Everyone is joyful.]"
+    "text": "[In the palace.] [Everyone is joyful.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-057.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-and-state-heading",
+      "ordinal": 1,
+      "description": "In the palace; everyone is joyful."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s057-u002",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Amma! Vijaya!\n\nPadma! Queen of my heart. Forgive me."
+    "text": "Amma! Vijaya!\n\nPadma! Queen of my heart. Forgive me.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source-unlabelled `Padma! Queen of my heart...` continuation remains inside the preceding explicit king's record; no new speaker is invented."
+     ]
+    }
    },
    {
     "id": "manohara-en-s057-u003",
     "kind": "dialogue",
     "speakerLabel": "பத்மா",
-    "text": "Come, Manohara!"
+    "text": "Come, Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s057-u004",
     "kind": "dialogue",
     "speakerLabel": "அரசர்",
-    "text": "Manohara!"
+    "text": "Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s057-u005",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Father!"
+    "text": "Father!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s057-u006",
     "kind": "dialogue",
     "speakerLabel": "அர",
-    "text": "My son! I have committed against you a crime that cannot be forgiven."
+    "text": "My son! I have committed against you a crime that cannot be forgiven.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
    },
    {
     "id": "manohara-en-s057-u007",
     "kind": "dialogue",
     "speakerLabel": "மனோ",
-    "text": "Do not speak like that. Forget all of it."
+    "text": "Do not speak like that. Forget all of it.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s057-u008",
     "kind": "dialogue",
     "speakerLabel": "ராஜப்பிரியன்",
-    "text": "Duty, dignity, discipline—in the end, victory must surely be won. Long live the king of kings!"
+    "text": "Duty, dignity, discipline—in the end, victory must surely be won. Long live the king of kings!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-057.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-057.md",
+     "sourceRecordId": "manohara-s057-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 88,
+       "printed_page": 87
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "`கடமை, கண்ணியம், கட்டுப்பாடு` is preserved as the three-part `Duty, dignity, discipline` cadence."
+     ]
+    }
    }
   ]
  }

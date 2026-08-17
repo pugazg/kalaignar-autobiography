@@ -23,49 +23,200 @@
     "id": "manohara-en-s029-u001",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "Cave. The elder is absorbed in discovering a medicinal method..."
+    "text": "Cave. The elder is absorbed in discovering a medicinal method...",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-029.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-location-action",
+      "ordinal": 1,
+      "description": "Cave; the elder is absorbed in discovering a medicinal method."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s029-u002",
     "kind": "dialogue",
     "speakerLabel": "பெரியவர்",
-    "text": "Before this invisibility medicine runs out, victory is certain......"
+    "text": "Before this invisibility medicine runs out, victory is certain......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-029.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": "manohara-s029-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`அரூப மருந்து` is translated as invisibility medicine in continuity with the source's established effect."
+     ]
+    }
    },
    {
     "id": "manohara-en-s029-u003",
     "kind": "dialogue",
     "speakerLabel": "கேசரிவர்மன்",
-    "text": "The invisibility medicine... has dwindled. A little more..."
+    "text": "The invisibility medicine... has dwindled. A little more...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-029.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": "manohara-s029-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s029-u004",
     "kind": "dialogue",
     "speakerLabel": "பெரியவர்",
-    "text": "No need...... Here...... today itself I shall discover a sanjeevi that does not die..."
+    "text": "No need...... Here...... today itself I shall discover a sanjeevi that does not die...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-029.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": "manohara-s029-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`சஞ்சீவி` is retained as sanjeevi, preserving the source's mythic medicinal register rather than replacing it with a modern scientific term."
+     ]
+    }
    },
    {
     "id": "manohara-en-s029-u005",
     "kind": "dialogue",
     "speakerLabel": "கேசரிவர்மன்",
-    "text": "(Pointing to Vasantha Sena's statue)... Vasantha Sena... I must tear out her heart, squeeze it, and paint this statue red... her eyes..."
+    "text": "(Pointing to Vasantha Sena's statue)... Vasantha Sena... I must tear out her heart, squeeze it, and paint this statue red... her eyes...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-029.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": "manohara-s029-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached pointing cue remains inside the linked utterance."
+     ]
+    }
    },
    {
     "id": "manohara-en-s029-u006",
     "kind": "stage-direction",
     "speakerLabel": null,
-    "text": "[An explosion...... The Gurunathar falls amid smoke. He is carried outside... his life is wavering...]"
+    "text": "[An explosion...... The Gurunathar falls amid smoke. He is carried outside... his life is wavering...]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-029.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "explosion-and-collapse",
+      "ordinal": 1,
+      "description": "An explosion; the guru falls amid smoke and is carried out, his life wavering."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
    },
    {
     "id": "manohara-en-s029-u007",
     "kind": "dialogue",
     "speakerLabel": "பெரியவர்",
-    "text": "Kesari Varma... my last... blessing.... Do not rush... make Manoharan your ally... for your goal!... I... I am dying......"
+    "text": "Kesari Varma... my last... blessing.... Do not rush... make Manoharan your ally... for your goal!... I... I am dying......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-029.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": "manohara-s029-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The broken dying cadence is preserved."
+     ]
+    }
    },
    {
     "id": "manohara-en-s029-u008",
     "kind": "dialogue",
     "speakerLabel": "கேசரிவர்மன்",
-    "text": "You laboured without rest to tell the world of a wonder! The invisibility medicine. You did not even show me that method... Swami! All those who discovered something new vanished without revealing it to others... You too have walked that path... is there such a curse upon this country itself?..."
+    "text": "You laboured without rest to tell the world of a wonder! The invisibility medicine. You did not even show me that method... Swami! All those who discovered something new vanished without revealing it to others... You too have walked that path... is there such a curse upon this country itself?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-029.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-029.md",
+     "sourceRecordId": "manohara-s029-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The lament about inventions dying with their discoverers is kept explicit rather than modernized into a generic science metaphor."
+     ]
+    }
    }
   ]
  }
