@@ -1,0 +1,42 @@
+{
+ "workId": "manohara",
+ "slug": "segment-024",
+ "ordinal": 24,
+ "sceneId": "manohara-s024",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "வசந்தா-அரசர் படுக்கையறை",
+ "startPdfPage": 37,
+ "startPrintedPage": 36,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 37,
+   "printed_page": 36
+  }
+ ],
+ "tamil": {
+  "text": "வசந்தா-அரசர் படுக்கையறை\n\n“பொழுது புலர்ந்தது” பாட்டு\n\nரத்ன சிம்மாசனம் அவைக்கூடத்திற்குக் கொண்டு செல்லப்படுகிறது. அதை வசந்தி பார்க்கிறாள். விஜயா பத்மாவதியின் முன் வணங்குகிறாள்."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s024-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Vasantha and the King's bedchamber."
+   },
+   {
+    "id": "manohara-en-s024-u002",
+    "kind": "song-reference",
+    "speakerLabel": null,
+    "text": "The song ‘The Day Has Dawned’."
+   },
+   {
+    "id": "manohara-en-s024-u003",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "The Ratna throne is carried to the audience hall. Vasanthi sees it. Vijaya bows before Padmavathi."
+   }
+  ]
+ }
+}

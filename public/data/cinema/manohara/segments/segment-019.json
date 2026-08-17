@@ -1,0 +1,54 @@
+{
+ "workId": "manohara",
+ "slug": "segment-019",
+ "ordinal": 19,
+ "sceneId": "manohara-s019",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பாடல் / படகு நிகழ்வு",
+ "startPdfPage": 32,
+ "startPrintedPage": 31,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 32,
+   "printed_page": 31
+  }
+ ],
+ "tamil": {
+  "text": "[“சிங்காரப் பைங்கிளியே... பேசு” — பாட்டு]\n\n[பாடிக்கொண்டு படகில் போகும்போது பெளத்தாயன் கட்டாரியை வீசுகிறான் குறி தவறிவிடுகிறது.]\n\nமனோ : என்ன! விஜயா?\n\nவிஜ : யாரோ கட்டாரியை உங்கள்மீது வீசிவிட்டு ஓடுகிறான்... அதோ!\n\nமனோ : ஏதோ சூழ்ச்சி நடக்கிறது... நாமும் உடனே புறப்படுவோம் வா!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s019-u001",
+    "kind": "song-reference",
+    "speakerLabel": null,
+    "text": "[The song ‘Lovely Green Parrot... Speak’.]"
+   },
+   {
+    "id": "manohara-en-s019-u002",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[As they travel by boat singing, Bauthayanan hurls a dagger; it misses its mark.]"
+   },
+   {
+    "id": "manohara-en-s019-u003",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "What! Vijaya?"
+   },
+   {
+    "id": "manohara-en-s019-u004",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Someone threw a dagger at you and is running away... there!"
+   },
+   {
+    "id": "manohara-en-s019-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Some conspiracy is afoot... come, let us leave at once!"
+   }
+  ]
+ }
+}

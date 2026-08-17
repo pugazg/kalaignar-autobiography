@@ -1,0 +1,82 @@
+{
+ "workId": "manohara",
+ "slug": "segment-045",
+ "ordinal": 45,
+ "sceneId": "manohara-s045",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "சிறைச்சாலையின் தாழ்வாரம்",
+ "startPdfPage": 70,
+ "startPrintedPage": 69,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 70,
+   "printed_page": 69
+  },
+  {
+   "pdf_page": 71,
+   "printed_page": 70
+  }
+ ],
+ "tamil": {
+  "text": "[சிறைச்சாலையின் தாழ்வாரம்]\n\nகாவலன் : ஏ அந்தப் பக்கம் போகாதே... விஜயாம்மா... பிரசவ வேதனைப் படுறாங்க...\n\nஆள்......அப்படியா......\n\n\n\n(சிறைக்குள்ளே)\n\nபத்மா : (குழந்தையிடம் குனிந்தபடி) என் செல்வத்துட் செல்வமே! தாதியர் ஆயிரம் பேர் தமிழிசை கேட்டு வைரமணித்தொட்டிலிலே உறங்கவேண்டிய நீ இப்படி வைக்கோல் நிறம்பிய கொட்டிலிலே உருண்டு கொண்டிருப்பாய் என்று நினைக்கக்கூட இல்லையே...\n\nவிஜயா : அத்தே!......\n\nபத்மா : கண்ணே... பாண்டிய ராஜன் பெண்ணே...... நீ இப்படி கஷ்டப்படவா என் மருமகளாக வந்தாய்......\n\nவிஜயா : நான் வந்த பிறகுதான் அத்தை - உங்களுக்கும் உங்கள் அன்பு மகனுக்கும் இத்தனை வேதனைகள்...... எல்லாம் இந்தப் பாவி அடியெடுத்து வைத்த பிறகு தான்........\n\nபத் : விஜயா!... இல்லையம்மா... உன் மலரடி பட்டால் மண்ணும் பொன்னாகும்... பொன் மாடத்தை தூசி மேடாக்கியவள் நீயல்ல... அவள் வாழ்கிறாள் ஆனந்தத்தோடு......"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s045-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Corridor of the prison.]"
+   },
+   {
+    "id": "manohara-en-s045-u002",
+    "kind": "dialogue",
+    "speakerLabel": "காவலன்",
+    "text": "Hey, don't go that way... Vijaya Amma... she's in labour pains..."
+   },
+   {
+    "id": "manohara-en-s045-u003",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "Man...... is that so......"
+   },
+   {
+    "id": "manohara-en-s045-u004",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(Inside the prison.)"
+   },
+   {
+    "id": "manohara-en-s045-u005",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மா",
+    "text": "(Bending over the child) O treasure of my treasures! You who should have slept in a diamond-studded cradle, listening to Tamil music from a thousand nursemaids—I never even imagined you would be rolling here in a straw-filled pen..."
+   },
+   {
+    "id": "manohara-en-s045-u006",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Atthe!......"
+   },
+   {
+    "id": "manohara-en-s045-u007",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மா",
+    "text": "My dear... daughter of the Pandiyan king...... did you come as my daughter-in-law to suffer like this......"
+   },
+   {
+    "id": "manohara-en-s045-u008",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Only after I came, Atthe, have so many torments come upon you and your beloved son...... all of it only after this sinner set foot here........"
+   },
+   {
+    "id": "manohara-en-s045-u009",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "Vijaya!... No, child... wherever your flower-feet touch, even earth turns to gold... you are not the one who turned the golden mansion into a mound of dust... she lives in bliss......"
+   }
+  ]
+ }
+}

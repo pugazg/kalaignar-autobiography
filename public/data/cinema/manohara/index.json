@@ -1,0 +1,526 @@
+{
+ "workId": "manohara",
+ "titleTa": "மனோகரா",
+ "titleEn": "Manohara",
+ "shelf": "cinema-writing",
+ "readerStructure": "scene",
+ "segmentTerminology": "archival-navigation-segment",
+ "segmentCount": 57,
+ "sourceSceneNumbering": "none-printed",
+ "archivalSceneNumbering": "derivative-navigation-only",
+ "segments": [
+  {
+   "slug": "segment-001",
+   "ordinal": 1,
+   "sceneId": "manohara-s001",
+   "readerLabelTa": "குகை உட்புறம்",
+   "startPdfPage": 7,
+   "startPrintedPage": 6,
+   "englishUnitCount": 12
+  },
+  {
+   "slug": "segment-002",
+   "ordinal": 2,
+   "sceneId": "manohara-s002",
+   "readerLabelTa": "அரண்மனை — வசந்த சேனையின் சிரிப்புடன்",
+   "startPdfPage": 8,
+   "startPrintedPage": 7,
+   "englishUnitCount": 4
+  },
+  {
+   "slug": "segment-003",
+   "ordinal": 3,
+   "sceneId": "manohara-s003",
+   "readerLabelTa": "மாளிகையின் ஒரு பகுதியில்",
+   "startPdfPage": 9,
+   "startPrintedPage": 8,
+   "englishUnitCount": 4
+  },
+  {
+   "slug": "segment-004",
+   "ordinal": 4,
+   "sceneId": "manohara-s004",
+   "readerLabelTa": "அரண்மனையின் மற்றொரு புறத்தில்",
+   "startPdfPage": 9,
+   "startPrintedPage": 8,
+   "englishUnitCount": 2
+  },
+  {
+   "slug": "segment-005",
+   "ordinal": 5,
+   "sceneId": "manohara-s005",
+   "readerLabelTa": "குகையின் உட்புறம்",
+   "startPdfPage": 10,
+   "startPrintedPage": 9,
+   "englishUnitCount": 16
+  },
+  {
+   "slug": "segment-006",
+   "ordinal": 6,
+   "sceneId": "manohara-s006",
+   "readerLabelTa": "அரண்மனை — வசந்தசேனை",
+   "startPdfPage": 10,
+   "startPrintedPage": 9,
+   "englishUnitCount": 20
+  },
+  {
+   "slug": "segment-007",
+   "ordinal": 7,
+   "sceneId": "manohara-s007",
+   "readerLabelTa": "மனோகரன் மாளிகையில்",
+   "startPdfPage": 12,
+   "startPrintedPage": 11,
+   "englishUnitCount": 15
+  },
+  {
+   "slug": "segment-008",
+   "ordinal": 8,
+   "sceneId": "manohara-s008",
+   "readerLabelTa": "அரண்மனையில் நாடகம்",
+   "startPdfPage": 13,
+   "startPrintedPage": 12,
+   "englishUnitCount": 77
+  },
+  {
+   "slug": "segment-009",
+   "ordinal": 9,
+   "sceneId": "manohara-s009",
+   "readerLabelTa": "வசந்தசேனை அந்தப்புரம்",
+   "startPdfPage": 19,
+   "startPrintedPage": 18,
+   "englishUnitCount": 45
+  },
+  {
+   "slug": "segment-010",
+   "ordinal": 10,
+   "sceneId": "manohara-s010",
+   "readerLabelTa": "மாளிகையின் வேறு பகுதியில்",
+   "startPdfPage": 22,
+   "startPrintedPage": 21,
+   "englishUnitCount": 9
+  },
+  {
+   "slug": "segment-011",
+   "ordinal": 11,
+   "sceneId": "manohara-s011",
+   "readerLabelTa": "தெருவில் முரசறைப்பு",
+   "startPdfPage": 23,
+   "startPrintedPage": 22,
+   "englishUnitCount": 35
+  },
+  {
+   "slug": "segment-012",
+   "ordinal": 12,
+   "sceneId": "manohara-s012",
+   "readerLabelTa": "நந்தவனம் — இரவு நேரம்",
+   "startPdfPage": 25,
+   "startPrintedPage": 24,
+   "englishUnitCount": 19
+  },
+  {
+   "slug": "segment-013",
+   "ordinal": 13,
+   "sceneId": "manohara-s013",
+   "readerLabelTa": "முத்துவிஜயன் அரண்மனை",
+   "startPdfPage": 26,
+   "startPrintedPage": 25,
+   "englishUnitCount": 17
+  },
+  {
+   "slug": "segment-014",
+   "ordinal": 14,
+   "sceneId": "manohara-s014",
+   "readerLabelTa": "விஜயாவின் அந்தப்புரம்",
+   "startPdfPage": 28,
+   "startPrintedPage": 27,
+   "englishUnitCount": 7
+  },
+  {
+   "slug": "segment-015",
+   "ordinal": 15,
+   "sceneId": "manohara-s015",
+   "readerLabelTa": "இரவு — மனோகரன் தங்குமிடம்",
+   "startPdfPage": 28,
+   "startPrintedPage": 27,
+   "englishUnitCount": 26
+  },
+  {
+   "slug": "segment-016",
+   "ordinal": 16,
+   "sceneId": "manohara-s016",
+   "readerLabelTa": "விஜயா அந்தப்புரம்",
+   "startPdfPage": 30,
+   "startPrintedPage": 29,
+   "englishUnitCount": 15
+  },
+  {
+   "slug": "segment-017",
+   "ordinal": 17,
+   "sceneId": "manohara-s017",
+   "readerLabelTa": "பாண்டியமக்கள் விசாரணை மண்டபம்",
+   "startPdfPage": 31,
+   "startPrintedPage": 30,
+   "englishUnitCount": 2
+  },
+  {
+   "slug": "segment-018",
+   "ordinal": 18,
+   "sceneId": "manohara-s018",
+   "readerLabelTa": "பாண்டியன் அரண்மனை",
+   "startPdfPage": 32,
+   "startPrintedPage": 31,
+   "englishUnitCount": 8
+  },
+  {
+   "slug": "segment-019",
+   "ordinal": 19,
+   "sceneId": "manohara-s019",
+   "readerLabelTa": "பாடல் / படகு நிகழ்வு",
+   "startPdfPage": 32,
+   "startPrintedPage": 31,
+   "englishUnitCount": 5
+  },
+  {
+   "slug": "segment-020",
+   "ordinal": 20,
+   "sceneId": "manohara-s020",
+   "readerLabelTa": "வசந்தசேனை அந்தப்புரம்",
+   "startPdfPage": 33,
+   "startPrintedPage": 32,
+   "englishUnitCount": 14
+  },
+  {
+   "slug": "segment-021",
+   "ordinal": 21,
+   "sceneId": "manohara-s021",
+   "readerLabelTa": "பத்மாவதி அந்தப்புரம்",
+   "startPdfPage": 33,
+   "startPrintedPage": 32,
+   "englishUnitCount": 45
+  },
+  {
+   "slug": "segment-022",
+   "ordinal": 22,
+   "sceneId": "manohara-s022",
+   "readerLabelTa": "வசந்தசேனை அந்தப்புரம்",
+   "startPdfPage": 36,
+   "startPrintedPage": 35,
+   "englishUnitCount": 4
+  },
+  {
+   "slug": "segment-023",
+   "ordinal": 23,
+   "sceneId": "manohara-s023",
+   "readerLabelTa": "சிறைச்சாலை",
+   "startPdfPage": 36,
+   "startPrintedPage": 35,
+   "englishUnitCount": 3
+  },
+  {
+   "slug": "segment-024",
+   "ordinal": 24,
+   "sceneId": "manohara-s024",
+   "readerLabelTa": "வசந்தா-அரசர் படுக்கையறை",
+   "startPdfPage": 37,
+   "startPrintedPage": 36,
+   "englishUnitCount": 3
+  },
+  {
+   "slug": "segment-025",
+   "ordinal": 25,
+   "sceneId": "manohara-s025",
+   "readerLabelTa": "அந்தப்புரம்",
+   "startPdfPage": 37,
+   "startPrintedPage": 36,
+   "englishUnitCount": 10
+  },
+  {
+   "slug": "segment-026",
+   "ordinal": 26,
+   "sceneId": "manohara-s026",
+   "readerLabelTa": "அவைக்கூடம்",
+   "startPdfPage": 38,
+   "startPrintedPage": 37,
+   "englishUnitCount": 13
+  },
+  {
+   "slug": "segment-027",
+   "ordinal": 27,
+   "sceneId": "manohara-s027",
+   "readerLabelTa": "பத்மாவதி அறை",
+   "startPdfPage": 39,
+   "startPrintedPage": 38,
+   "englishUnitCount": 6
+  },
+  {
+   "slug": "segment-028",
+   "ordinal": 28,
+   "sceneId": "manohara-s028",
+   "readerLabelTa": "மாளிகையின் ஒரு பகுதி",
+   "startPdfPage": 39,
+   "startPrintedPage": 38,
+   "englishUnitCount": 12
+  },
+  {
+   "slug": "segment-029",
+   "ordinal": 29,
+   "sceneId": "manohara-s029",
+   "readerLabelTa": "குகை / குரு பகுதி",
+   "startPdfPage": 40,
+   "startPrintedPage": 39,
+   "englishUnitCount": 8
+  },
+  {
+   "slug": "segment-030",
+   "ordinal": 30,
+   "sceneId": "manohara-s030",
+   "readerLabelTa": "வசந்த விழாக் கொண்டாட்டம்",
+   "startPdfPage": 41,
+   "startPrintedPage": 40,
+   "englishUnitCount": 38
+  },
+  {
+   "slug": "segment-031",
+   "ordinal": 31,
+   "sceneId": "manohara-s031",
+   "readerLabelTa": "பத்மாவதி அறை",
+   "startPdfPage": 43,
+   "startPrintedPage": 42,
+   "englishUnitCount": 10
+  },
+  {
+   "slug": "segment-032",
+   "ordinal": 32,
+   "sceneId": "manohara-s032",
+   "readerLabelTa": "அரசர் அறை",
+   "startPdfPage": 43,
+   "startPrintedPage": 42,
+   "englishUnitCount": 3
+  },
+  {
+   "slug": "segment-033",
+   "ordinal": 33,
+   "sceneId": "manohara-s033",
+   "readerLabelTa": "பத்மாவதி அறை — திரும்பல்",
+   "startPdfPage": 43,
+   "startPrintedPage": 42,
+   "englishUnitCount": 50
+  },
+  {
+   "slug": "segment-034",
+   "ordinal": 34,
+   "sceneId": "manohara-s034",
+   "readerLabelTa": "பத்மாவதியின் அறை",
+   "startPdfPage": 47,
+   "startPrintedPage": 46,
+   "englishUnitCount": 17
+  },
+  {
+   "slug": "segment-035",
+   "ordinal": 35,
+   "sceneId": "manohara-s035",
+   "readerLabelTa": "பத்மாவதியின் அறை",
+   "startPdfPage": 48,
+   "startPrintedPage": 47,
+   "englishUnitCount": 14
+  },
+  {
+   "slug": "segment-036",
+   "ordinal": 36,
+   "sceneId": "manohara-s036",
+   "readerLabelTa": "அரச அவைக்கூடம்",
+   "startPdfPage": 48,
+   "startPrintedPage": 47,
+   "englishUnitCount": 91
+  },
+  {
+   "slug": "segment-037",
+   "ordinal": 37,
+   "sceneId": "manohara-s037",
+   "readerLabelTa": "அரண்மனை / குகை மாற்றம்",
+   "startPdfPage": 58,
+   "startPrintedPage": 57,
+   "englishUnitCount": 19
+  },
+  {
+   "slug": "segment-038",
+   "ordinal": 38,
+   "sceneId": "manohara-s038",
+   "readerLabelTa": "சிறைச்சாலை",
+   "startPdfPage": 59,
+   "startPrintedPage": 58,
+   "englishUnitCount": 56
+  },
+  {
+   "slug": "segment-039",
+   "ordinal": 39,
+   "sceneId": "manohara-s039",
+   "readerLabelTa": "நந்தவனம்",
+   "startPdfPage": 61,
+   "startPrintedPage": 60,
+   "englishUnitCount": 43
+  },
+  {
+   "slug": "segment-040",
+   "ordinal": 40,
+   "sceneId": "manohara-s040",
+   "readerLabelTa": "குகை",
+   "startPdfPage": 64,
+   "startPrintedPage": 63,
+   "englishUnitCount": 21
+  },
+  {
+   "slug": "segment-041",
+   "ordinal": 41,
+   "sceneId": "manohara-s041",
+   "readerLabelTa": "அரசன் மாளிகை",
+   "startPdfPage": 65,
+   "startPrintedPage": 64,
+   "englishUnitCount": 32
+  },
+  {
+   "slug": "segment-042",
+   "ordinal": 42,
+   "sceneId": "manohara-s042",
+   "readerLabelTa": "உக்ரசேனன் கூடாரம்",
+   "startPdfPage": 67,
+   "startPrintedPage": 66,
+   "englishUnitCount": 39
+  },
+  {
+   "slug": "segment-043",
+   "ordinal": 43,
+   "sceneId": "manohara-s043",
+   "readerLabelTa": "குகை",
+   "startPdfPage": 69,
+   "startPrintedPage": 68,
+   "englishUnitCount": 6
+  },
+  {
+   "slug": "segment-044",
+   "ordinal": 44,
+   "sceneId": "manohara-s044",
+   "readerLabelTa": "பூஜை அறை",
+   "startPdfPage": 69,
+   "startPrintedPage": 68,
+   "englishUnitCount": 19
+  },
+  {
+   "slug": "segment-045",
+   "ordinal": 45,
+   "sceneId": "manohara-s045",
+   "readerLabelTa": "சிறைச்சாலையின் தாழ்வாரம்",
+   "startPdfPage": 70,
+   "startPrintedPage": 69,
+   "englishUnitCount": 9
+  },
+  {
+   "slug": "segment-046",
+   "ordinal": 46,
+   "sceneId": "manohara-s046",
+   "readerLabelTa": "பூஜை அறை",
+   "startPdfPage": 71,
+   "startPrintedPage": 70,
+   "englishUnitCount": 11
+  },
+  {
+   "slug": "segment-047",
+   "ordinal": 47,
+   "sceneId": "manohara-s047",
+   "readerLabelTa": "பூஜை அறையின் ஜன்னலுக்கு வெளியே",
+   "startPdfPage": 72,
+   "startPrintedPage": 71,
+   "englishUnitCount": 12
+  },
+  {
+   "slug": "segment-048",
+   "ordinal": 48,
+   "sceneId": "manohara-s048",
+   "readerLabelTa": "பூஜை அறை",
+   "startPdfPage": 72,
+   "startPrintedPage": 71,
+   "englishUnitCount": 46
+  },
+  {
+   "slug": "segment-049",
+   "ordinal": 49,
+   "sceneId": "manohara-s049",
+   "readerLabelTa": "அரண்மனை",
+   "startPdfPage": 76,
+   "startPrintedPage": 75,
+   "englishUnitCount": 13
+  },
+  {
+   "slug": "segment-050",
+   "ordinal": 50,
+   "sceneId": "manohara-s050",
+   "readerLabelTa": "குகை அருகிலுள்ள கல் தூண்",
+   "startPdfPage": 76,
+   "startPrintedPage": 75,
+   "englishUnitCount": 31
+  },
+  {
+   "slug": "segment-051",
+   "ordinal": 51,
+   "sceneId": "manohara-s051",
+   "readerLabelTa": "அரண்மனை",
+   "startPdfPage": 78,
+   "startPrintedPage": 77,
+   "englishUnitCount": 20
+  },
+  {
+   "slug": "segment-052",
+   "ordinal": 52,
+   "sceneId": "manohara-s052",
+   "readerLabelTa": "சிறைச்சாலை",
+   "startPdfPage": 79,
+   "startPrintedPage": 78,
+   "englishUnitCount": 25
+  },
+  {
+   "slug": "segment-053",
+   "ordinal": 53,
+   "sceneId": "manohara-s053",
+   "readerLabelTa": "மனோகரன் தூணில் கட்டப்பட்டிருக்கிறான்",
+   "startPdfPage": 80,
+   "startPrintedPage": 79,
+   "englishUnitCount": 30
+  },
+  {
+   "slug": "segment-054",
+   "ordinal": 54,
+   "sceneId": "manohara-s054",
+   "readerLabelTa": "சிறை — விஜயாவின் குழந்தை",
+   "startPdfPage": 82,
+   "startPrintedPage": 81,
+   "englishUnitCount": 14
+  },
+  {
+   "slug": "segment-055",
+   "ordinal": 55,
+   "sceneId": "manohara-s055",
+   "readerLabelTa": "மனோகரனின் முன்பு",
+   "startPdfPage": 83,
+   "startPrintedPage": 82,
+   "englishUnitCount": 48
+  },
+  {
+   "slug": "segment-056",
+   "ordinal": 56,
+   "sceneId": "manohara-s056",
+   "readerLabelTa": "குகையில்",
+   "startPdfPage": 88,
+   "startPrintedPage": 87,
+   "englishUnitCount": 9
+  },
+  {
+   "slug": "segment-057",
+   "ordinal": 57,
+   "sceneId": "manohara-s057",
+   "readerLabelTa": "அரண்மனையில் — எல்லோரும் இன்பம்",
+   "startPdfPage": 88,
+   "startPrintedPage": 87,
+   "englishUnitCount": 8
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "workId": "manohara",
+ "slug": "segment-017",
+ "ordinal": 17,
+ "sceneId": "manohara-s017",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பாண்டியமக்கள் விசாரணை மண்டபம்",
+ "startPdfPage": 31,
+ "startPrintedPage": 30,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 31,
+   "printed_page": 30
+  }
+ ],
+ "tamil": {
+  "text": "(பாண்டியமக்கள் விசாரணை மண்டபம்)\n\nராஜப்பிரியன் : கொலை செய்ய முயன்றார்—தற்கொலை செய்துகொள்ள யத்தனித்தார். மன்னிக்க முடியாத மாபெருங் குற்றங்களைச் செய்திருக்கிறார், ராஜகுமாரி! மக்கள் மன்றத்தின் முன் நிறுத்தப்பட்டிருக்கிறார்! எங்கள் அரசிளங்குமாரரை, எனது ஆருயிர்த் தோழரை, சோழர் குடித் திலகத்தை இந்த மனோகரனை பிரிக்க முயன்ற யுவராணியின் ஆயுளுக்கே முடிவுகட்ட வேண்டும். அரசிளங்குமாரியாரே! உங்கள் ஆயுள் முழுவதும் நான் தரும் தண்டனையை அனுபவிக்கத் தயாராயிருங்கள். நாளை மாலை சூரிய அஸ்தமனத்திற்குள்—காளி கோயிலில்—வேண்டாம் தண்டனையை ஒருநாள் ஒத்திப்போட நான் விரும்பவில்லை—பாண்டிய நாட்டு பைங்கொடி விஜயாதேவி சோழநாட்டு அத்தானை கொலைசெய்ய முயன்ற குற்றத்திற்காக இன்றே—இப்போதே—இந்த இடத்திலே—எல்லோர் முன்னிலையிலும் மனோகரனுக்கு மாலையைச் சூட்டி மணாளனாக ஏற்றுக்கொள்ள வேண்டும்!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s017-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(The inquiry hall of the Pandiyan people.)"
+   },
+   {
+    "id": "manohara-en-s017-u002",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்பிரியன்",
+    "text": "She tried to commit murder—she attempted suicide. She has committed enormous, unforgivable crimes, Princess! She stands before the people's assembly! The very lifetime of the young princess who tried to separate our prince, my dearest friend, the jewel of the Chola line—this Manoharan—must be brought to an end. Princess! Prepare to suffer the punishment I give you for your whole life. By sunset tomorrow evening—at the Kali temple—no! I do not wish to postpone the punishment even by one day—for the crime of Vijayadevi, tender creeper of the Pandiyan land, attempting to kill the Chola land's athaan, today itself—right now—in this very place—before everyone—you must place a garland upon Manoharan and accept him as your bridegroom!"
+   }
+  ]
+ }
+}

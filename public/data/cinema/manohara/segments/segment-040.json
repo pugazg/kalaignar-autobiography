@@ -1,0 +1,154 @@
+{
+ "workId": "manohara",
+ "slug": "segment-040",
+ "ordinal": 40,
+ "sceneId": "manohara-s040",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "குகை",
+ "startPdfPage": 64,
+ "startPrintedPage": 63,
+ "canonicalPart": "part-04",
+ "pageProvenance": [
+  {
+   "pdf_page": 64,
+   "printed_page": 63
+  },
+  {
+   "pdf_page": 65,
+   "printed_page": 64
+  }
+ ],
+ "tamil": {
+  "text": "[குகை]\n\nகேசரிவர்மன் : பழிகாரி ஓலை தயாரித்துவிட்டாள், அவள் காரியத்தை வெற்றிகரமாக்க கடைசி ஓலை கொஞ்சம் ஏமாந்தால் அதுவே நமக்கு சாவோலை ஆகிவிடும்!\n\nசத்யசீலர் : விஷயத்தைச் சொல் வர்மா!\n\nகே. வ : வசந்தனுக்கு முடிசூட்ட முயன்றாள் வஞ்சகி! மன்னர் மறுத்தார். ஆகவே இந்த மாளிகையை வசப்படுத்தி மகனை அரசனாக்க மாற்றான் உக்ரசேனனுக்கு மடல் அனுப்பியிருக்கிறாள்.\n\nமனோ : உக்ரசேனன்! இமயபுரி வேந்தன்!\n\nராஜப் : ஆம்! நம் சாம்ராஜ்யத்தில் நுழைய சமயம் பார்த்திருப்பவன்.\n\nகே. வ : உக்ரசேனனிடமிருந்து பதில் கொண்டு வருபவன் இந்த வழியேதான் வந்தாகவேண்டும். வாருங்கள் பார்ப்போம்.\n\n[அட்சயன் குதிரையில் வருகிறான். மனோகரன் அவனை நிறுத்தி]\n\nமனோ : யார் நீ!\n\nஅட் : என்னையா கேட்கிறாய்? நான் நான்தான்!\n\nவர்ம : எங்கே போய்க்கொண்டிருக்கிறாய்?\n\nஅட் : போகவேண்டிய இடத்திற்கு!\n\n[மனோகரனும் ராஜப்பிரியனும் அட்சயனைத் தாக்கி அவனை ஒரு கல்தூணில் கட்டிப் போடுகிறார்கள். மனோகரன் அட்சயனிடமிருந்து ஒரு கடிதத்தை எடுக்கிறான்.]\n\n\n\n“அன்புள்ள வசந்தசேனைக்கு!\n\nஅட்சயனை துணைக்கு வைத்துக்கொண்டு அரண்மனைக்குள் ஆகவேண்டியதைக் கவனி. படைகளும் நானும் புறப்படுகிறோம். புருஷோத்தமனை தொலைப்போம். புது வாழ்வு தொடங்குவோம்.\n\nஉக்ரசேனன்.”\n\nராஜப் : துரோகம்... விடக்கூடாது இதை!\n\nமனோ : இப்போதே புறப்படுவோம்... அந்த வக்ரபுத்திக்காரியை கூண்டோடு அழிக்கவேண்டும்.\n\nகே. வ. : அழித்துவிட்டால் உங்கள் வீரம் வெளிப்படும். அந்த வேசியின் வேஷம் வெளிப்படாது. இளவரசே! அரை நொடியில் சாகடிக்க அல்ல நான் இப்படியெல்லாம் இவ்வளவு காலம் ஏங்கித் திரிவது? என்னாலும் முடியும் எப்போதோ செய்திருப்பேன்.\n\nமனோ : ஏன் செய்யவில்லை?\n\nவர் : விவேகம் இளவரசே! விவேகம். அப்போது கொன்றிருந்தால் அந்த கள்ளிக்காக கண்ணை இழந்த அரசர் கண்ணீர் வடித்திருப்பார். அவள் சூழ்ச்சிகள் அம்பலமாயிருக்காது. சூதுக்களை உலகம் தெரிந்துகொண்டிருக்கமுடியாது. அவளை சாகடிப்பதில் இல்லை நம் சாமர்த்தியம். அவள் சதிகளை அம்பலப்படுத்துவதில்தான் இருக்கிறது.\n\nமனோ : அதற்கு வழி......\n\nவர் : முள்ளை முள் கொண்டு எடுப்பது போல சூழ்ச்சியையால்தான் வெல்லவேண்டும். சொல்லுகிறேன் வாருங்கள்,"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s040-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Cave.]"
+   },
+   {
+    "id": "manohara-en-s040-u002",
+    "kind": "dialogue",
+    "speakerLabel": "கேசரிவர்மன்",
+    "text": "The vengeful woman has prepared the palm-leaf letter. To make her plan succeed, if we are careless even a little with this final letter, it itself will become our death-letter!"
+   },
+   {
+    "id": "manohara-en-s040-u003",
+    "kind": "dialogue",
+    "speakerLabel": "சத்யசீலர்",
+    "text": "Tell us the matter, Varma!"
+   },
+   {
+    "id": "manohara-en-s040-u004",
+    "kind": "dialogue",
+    "speakerLabel": "கே. வ",
+    "text": "The deceiver tried to crown Vasanthan! The king refused. So she has sent a letter to the outsider Ugrasenan, asking him to seize this palace and make her son king."
+   },
+   {
+    "id": "manohara-en-s040-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Ugrasenan! King of Imayapuri!"
+   },
+   {
+    "id": "manohara-en-s040-u006",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்",
+    "text": "Yes! The man who has been waiting for a chance to enter our empire."
+   },
+   {
+    "id": "manohara-en-s040-u007",
+    "kind": "dialogue",
+    "speakerLabel": "கே. வ",
+    "text": "The man bringing a reply from Ugrasenan must come by this very route. Come, let us see."
+   },
+   {
+    "id": "manohara-en-s040-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Akshayan comes on horseback. Manoharan stops him.]"
+   },
+   {
+    "id": "manohara-en-s040-u009",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Who are you!"
+   },
+   {
+    "id": "manohara-en-s040-u010",
+    "kind": "dialogue",
+    "speakerLabel": "அட்",
+    "text": "Are you asking me? I am myself!"
+   },
+   {
+    "id": "manohara-en-s040-u011",
+    "kind": "dialogue",
+    "speakerLabel": "வர்ம",
+    "text": "Where are you going?"
+   },
+   {
+    "id": "manohara-en-s040-u012",
+    "kind": "dialogue",
+    "speakerLabel": "அட்",
+    "text": "To the place I must go!"
+   },
+   {
+    "id": "manohara-en-s040-u013",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Manoharan and Rajapriyan attack Akshayan and bind him to a stone pillar. Manoharan takes a letter from him.]"
+   },
+   {
+    "id": "manohara-en-s040-u014",
+    "kind": "written-text",
+    "speakerLabel": null,
+    "text": "‘Dear Vasantha Sena!\n\nKeep Akshayan as your aide and attend to what must be done inside the palace. The troops and I are setting out. We shall do away with Purushothaman. We shall begin a new life.\n\nUgrasenan.’"
+   },
+   {
+    "id": "manohara-en-s040-u015",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்",
+    "text": "Treason... we must not let this go!"
+   },
+   {
+    "id": "manohara-en-s040-u016",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Let us set out now... that crooked-minded woman must be destroyed root and branch."
+   },
+   {
+    "id": "manohara-en-s040-u017",
+    "kind": "dialogue",
+    "speakerLabel": "கே. வ.",
+    "text": "If you destroy her, your valour will be revealed. That whore's disguise will not be revealed. Prince! Have I wandered yearning all this time merely to kill her in half a second? I too could do that; I would have done it long ago."
+   },
+   {
+    "id": "manohara-en-s040-u018",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Why did you not?"
+   },
+   {
+    "id": "manohara-en-s040-u019",
+    "kind": "dialogue",
+    "speakerLabel": "வர்",
+    "text": "Wisdom, Prince! Wisdom. Had I killed her then, the king—who had lost his eyes for that deceitful woman—would have shed tears for her. Her schemes would not have been exposed. The world could not have known her deceits. Our cleverness does not lie in killing her. It lies in exposing her plots."
+   },
+   {
+    "id": "manohara-en-s040-u020",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "And the way to do that......"
+   },
+   {
+    "id": "manohara-en-s040-u021",
+    "kind": "dialogue",
+    "speakerLabel": "வர்",
+    "text": "Just as a thorn is removed with another thorn, a plot must be defeated by a plot. I shall tell you—come."
+   }
+  ]
+ }
+}

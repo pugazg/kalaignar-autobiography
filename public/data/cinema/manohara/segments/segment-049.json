@@ -1,0 +1,102 @@
+{
+ "workId": "manohara",
+ "slug": "segment-049",
+ "ordinal": 49,
+ "sceneId": "manohara-s049",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனை",
+ "startPdfPage": 76,
+ "startPrintedPage": 75,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 76,
+   "printed_page": 75
+  }
+ ],
+ "tamil": {
+  "text": "அரண்மனை.\n\nசேனா : அக்ஷயா! பாதாள சிறையில் கிடக்கும் விஜயா குழந்தை பெற்றிருக்கிறாளாம்.\n\nமனோ : ஆ!\n\nசேனா : என்ன அக்ஷயா?\n\nமனோ : ஒன்றுமில்ல......ஒன்றுமில்ல. அழியப்போகும் நேரத்தில் அரும்பு முளைத்திருக்கிறது!\n\nசேனா : ஆமாம். அதைத்தான் கிள்ளி எறிய வேண்டும் நீ!\n\nமனோ : ஆ! என்ன, நானு?\n\nசேனா : உன்னைவிட யார் இருக்கிறார்கள்—இந்தக் காரியத்தை செய்ய! இந்தா! இப்பொழுதே போ!\n\n[முத்திரை மோதிரத்தைக் கொடுக்கிறாள்]\n\nமனோ : என் செல்வத்தை நான் கொல்ல வேண்டும்.\n\nஇல்ல...இல்ல...\n\n[வாளை உருவுகிறான்]\n\nமனக்குரல் : மனோகரா நில். ஆத்திரப்படாதே, அவசரத்திற்கு அடிமையாகாதே! அரண்மனைமுழுதும் எதிரிகள். அன்னையோ சிறையில்-தந்தையோ தவிக்கிறார். வாளை நீட்டிப் பாய்கிறாயே... உன் வாடாமலர்களை யார் காப்பாற்றுவது? உன் வண்ணக் கிளிகளை யார் காப்பாற்றுவது?\n\n[திரும்பி சிறைச்சாலைக்குப் போகிறான்]"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s049-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Palace.]"
+   },
+   {
+    "id": "manohara-en-s049-u002",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Akshaya! They say Vijaya, who is lying in the underground prison, has given birth to a child."
+   },
+   {
+    "id": "manohara-en-s049-u003",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Ah!"
+   },
+   {
+    "id": "manohara-en-s049-u004",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "What is it, Akshaya?"
+   },
+   {
+    "id": "manohara-en-s049-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Nothing...... nothing. A bud has sprouted at the very moment of destruction!"
+   },
+   {
+    "id": "manohara-en-s049-u006",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Yes. You must pluck out that very bud and cast it away!"
+   },
+   {
+    "id": "manohara-en-s049-u007",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Ah! What—me?"
+   },
+   {
+    "id": "manohara-en-s049-u008",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Who is there but you to do this deed? Here! Go this very moment!"
+   },
+   {
+    "id": "manohara-en-s049-u009",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[She gives him the signet ring.]"
+   },
+   {
+    "id": "manohara-en-s049-u010",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "I must kill my own treasure.\nNo... no..."
+   },
+   {
+    "id": "manohara-en-s049-u011",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[He draws his sword.]"
+   },
+   {
+    "id": "manohara-en-s049-u012",
+    "kind": "dialogue",
+    "speakerLabel": "மனக்குரல்",
+    "text": "Manohara, stop. Do not give way to fury; do not become a slave to haste! The palace is full of enemies. Your mother is in prison—your father is suffering. You rush forward with sword outstretched... who will protect your unfading flowers? Who will protect your many-coloured parrots?"
+   },
+   {
+    "id": "manohara-en-s049-u013",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[He turns back and goes to the prison.]"
+   }
+  ]
+ }
+}

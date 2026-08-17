@@ -1,0 +1,178 @@
+{
+ "workId": "manohara",
+ "slug": "segment-052",
+ "ordinal": 52,
+ "sceneId": "manohara-s052",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "சிறைச்சாலை",
+ "startPdfPage": 79,
+ "startPrintedPage": 78,
+ "canonicalPart": "part-06",
+ "pageProvenance": [
+  {
+   "pdf_page": 79,
+   "printed_page": 78
+  },
+  {
+   "pdf_page": 80,
+   "printed_page": 79
+  }
+ ],
+ "tamil": {
+  "text": "சிறைச்சாலை\n\nமனோ : எங்கே! அந்தக் குழந்தையைக் கொஞ்சம் கொடுங்கள்!\n\n: மனோகரனுடைய குழந்தைக்கு நான் ஒரு முத்தம் கூட கொடுக்கக் கூடாதா?\n\nவிஜயா : அத்தே... நீ போகிறாயா? இல்லையா? சூழ்ச்சிக்காரா?\n\nமனோ : இல்லை விஜயா என்னைத் தெரியவில்லையா உனக்கு\n\n[தன் பொய்த்தாடியைக் கலைக்கிறான்.] விஜயா என்னைத் தெரியவில்லை. உனக்கு......\n\nசேனா : பிடியுங்கள் இவனை; மனோகரா!... இந்த முறையும் நீ தப்ப முடியாது.\n\nமனோ : பார்ப்போமடி அதை...\n\n[கட்டாரியை சேனமீது வீசக் குறி வைக்கிறான்]\n\nசேனா : ஆ!\n\nபத்மாவதி : மனோகரா!...... (தடுக்கிறாள்)\n\n[மனோகரன் சிலையாகிறான். உக்ரசேனன் கட்டாரி ஒன்றை எறிய அது மனோகரன் கையில் பாய்கிறது.]\n\nமனோ : நாசமாகி விட்டது! எல்லாம் நாசமாகிவிட்டதம்மா!\n\nசேனா : நாசமா?\n\n: அதற்கும் நாள் குறித்திருக்கிறேன் மனோகரா!\n\n: அந்த மகத்தான சம்பவம் நாளைக் காலையில், ராஜ மாளிகையில்! உன் குழந்தைக்கு மரணாபிஷேகம்!!\n\nவிஜயா : அத்தே!... அத்தே!...\n\nபத் : விஜயா!\n\nமனோ : அம்மா, அப்பா சிறையிலே பூட்டப்பட்டு விட்டார். உங்கள் ஆணையை மீறமுடியாத நான் இந்தப் பாதகியின்\n\n\n\nஉத்திரவுக்குப் பணிந்தேன். இந்தப் பாவியின் கரங்களால் பாதாள சிறையில் பூட்டினேன்.\n\nசேனா : இழுத்துச் செல்லுங்கள்.\n\nமனோ : அம்மா... உண்மையை உணர்ந்துகொண்ட தந்தை உங்களையும் என்னையும் காணத் துடிக்கிறார். இறந்து போன கொடுமைகளை எண்ணி எண்ணி கண்ணீர் வடிக்கிறார். கலங்கித் தவிக்கிறார்... கலங்கித் தவிக்கிறார் அம்மா...அம்மா...அம்மா...\n\nபத்மாவதி : மகாராஜா உண்மையை உணர்ந்து கொண்டார்! என் மகுடபதி உண்மையை உணர்ந்து கொண்டார். உண்மையை உணர்ந்து கொண்டார்.\n\nவிஜயா : அத்தே!... என்ன அத்தே!\n\nபத் : இருள் நீங்கிவிட்டது. இன்பம் உதயமாகிறது.\n\nவிஜ : இன்பம்...! நமக்கா?... இந்த நிலையிலா?\n\nபத் : மகாராஜா உணர்ந்துவிட்டார் என் மகுடபதி உண்மையை உணர்ந்துவிட்டார்."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s052-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Prison.]"
+   },
+   {
+    "id": "manohara-en-s052-u002",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Come! Let me hold that child for a little while!"
+   },
+   {
+    "id": "manohara-en-s052-u003",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "May I not give even one kiss to Manoharan's child?"
+   },
+   {
+    "id": "manohara-en-s052-u004",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Atthai... are you going or not, schemer?"
+   },
+   {
+    "id": "manohara-en-s052-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "No, Vijaya—do you not recognize me?\n\n[He removes his false beard.] Vijaya, do you not recognize me?......"
+   },
+   {
+    "id": "manohara-en-s052-u006",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Seize him; Manohara!... This time too you cannot escape."
+   },
+   {
+    "id": "manohara-en-s052-u007",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "We shall see about that..."
+   },
+   {
+    "id": "manohara-en-s052-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[He aims to throw the dagger at Sena.]"
+   },
+   {
+    "id": "manohara-en-s052-u009",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Ah!"
+   },
+   {
+    "id": "manohara-en-s052-u010",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Manohara!...... [She stops him.]"
+   },
+   {
+    "id": "manohara-en-s052-u011",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Manoharan freezes like a statue. Ugrasenan throws a dagger; it strikes Manoharan's hand.]"
+   },
+   {
+    "id": "manohara-en-s052-u012",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Ruined! Everything is ruined, Mother!"
+   },
+   {
+    "id": "manohara-en-s052-u013",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Ruined?"
+   },
+   {
+    "id": "manohara-en-s052-u014",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "I have fixed a day even for that, Manohara!"
+   },
+   {
+    "id": "manohara-en-s052-u015",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "That great event is tomorrow morning, in the royal palace! A death-abhishekam for your child!!"
+   },
+   {
+    "id": "manohara-en-s052-u016",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Atthai!... Atthai!..."
+   },
+   {
+    "id": "manohara-en-s052-u017",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "Vijaya!"
+   },
+   {
+    "id": "manohara-en-s052-u018",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Mother, Father has been locked in prison. Unable to disobey your command, I submitted to this wretch's order. With these sinful hands I locked him in the underground prison."
+   },
+   {
+    "id": "manohara-en-s052-u019",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Drag him away."
+   },
+   {
+    "id": "manohara-en-s052-u020",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Mother... Father, who has understood the truth, longs to see you and me. Thinking again and again of the cruelties now past, he sheds tears. He is shaken and tormented... shaken and tormented, Mother... Mother... Mother..."
+   },
+   {
+    "id": "manohara-en-s052-u021",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "The Maharaja has understood the truth! My crowned lord has understood the truth. He has understood the truth."
+   },
+   {
+    "id": "manohara-en-s052-u022",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Atthai!... What is it, Atthai!"
+   },
+   {
+    "id": "manohara-en-s052-u023",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "The darkness has lifted. Joy is dawning."
+   },
+   {
+    "id": "manohara-en-s052-u024",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Joy...! For us?... In this condition?"
+   },
+   {
+    "id": "manohara-en-s052-u025",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "The Maharaja has understood. My crowned lord has understood the truth."
+   }
+  ]
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "workId": "manohara",
+ "slug": "segment-006",
+ "ordinal": 6,
+ "sceneId": "manohara-s006",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனை — வசந்தசேனை",
+ "startPdfPage": 10,
+ "startPrintedPage": 9,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 10,
+   "printed_page": 9
+  },
+  {
+   "pdf_page": 11,
+   "printed_page": 10
+  },
+  {
+   "pdf_page": 12,
+   "printed_page": 11
+  }
+ ],
+ "tamil": {
+  "text": "(அரண்மனை. வசந்தசேனை முத்தாரத்தில் உள்ள பதக்கத்துள்ளே மறைத்து வைக்கப்பட்டிருக்கும் உக்ரசேனன் படத்தைப் பார்த்துக் கொண்டிருக்கிறாள்.)\n\n\n\nதோழி : என்னம்மா... தினம் தினம் எதை மறந்தாலும் இதை மறப்பதில்லை நீங்கள்? அப்படியென்ன இந்தப் பதக்கத்தில் கண்ணை இழுக்கும் காந்தம் இருக்கிறது?\n\nவச : காந்தமில்லையடி! ஆபத்தில் கை கொடுக்கும் கடவுள்!\n\nதோ : கடவுளா?\n\nவச : பாரேன்... (படத்தை காட்டுகிறாள்)\n\nதோ : அம்மா, மகாராஜா! வருகிறார்.\n\nபுருஷோத்தமன் : இன்னுமா முடியவில்லை, அலங்காரம்? நேரமாகிவிட்டதே நாடகத்துக்கு...\n\nவசந் : இதோ முடிந்துவிட்டது.\n\nபுரு : மறந்துவிட்டாயா, இன்று மனோகரன் பிறந்தநாள்.\n\nவசந் : மறப்பேனா, செல்வன் பிறந்த நாள்; எனக்கு வேறு ஒரு நினைவு வந்தது...\n\nபுருஷோத் : எது? வசந்தி!\n\nவசந் : நமதுகாதல் விழாவின் பதின்மூன்றாவது ஆண்டு.\n\nபுருஷோத் : ஆமாம் கண்ணே... வருடங்கள் ஓடியதே தெரியவில்லை.\n\n[வந்துகொண்டே வசந்தாவைத் தொடுகிறான்]\n\nவசந்தன் : நெருப்பைத் தொடாதீங்க! சுட்டுவிடும் தேகம்! கொஞ்சம் கொட்டிவிடும் - இதிலெல்லாம் எனக்கு சந்தேகமில்லே...சந்தேகமில்லே.... எப்படியம்மா இன்னிக்கு புதுப்பாடம்? எம்மா!... அடே... அப்பா! அம்மா அழகைப் பாருப்பா... எனக்கும் அம்மாவைப்போல ஒரு பெண்ணு கிடைச்சா...\n\nவசந் : சீ... பேசாமலிரு!\n\nவசந்தன் : பிள்ளையாரு மாத்திரம் கேட்டாரா, அவுங்க அம்மா பார்வதியைப் போல பெண்ணு! நான் கேட்டா என்னப்பா...\n\nபுருஷோத் : தீரவே தீராது இது!\n\n\n\nவசந்தன் : சந்தேகமில்லை.\n\nபுருஷோத் : வசந்தி, நான் போகிறேன்... சீக்கிரம் புறப்படு..."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s006-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(Palace. Vasantha Sena is looking at Ugrasena's portrait, hidden inside the pendant on her pearl necklace.)"
+   },
+   {
+    "id": "manohara-en-s006-u002",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "Amma... whatever else you may forget day after day, you never forget this, do you? What is there in this pendant that draws your eyes like a magnet?"
+   },
+   {
+    "id": "manohara-en-s006-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "No magnet, girl! A god who lends a hand in danger!"
+   },
+   {
+    "id": "manohara-en-s006-u004",
+    "kind": "dialogue",
+    "speakerLabel": "தோ",
+    "text": "A god?"
+   },
+   {
+    "id": "manohara-en-s006-u005",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Look... (She shows the portrait.)"
+   },
+   {
+    "id": "manohara-en-s006-u006",
+    "kind": "dialogue",
+    "speakerLabel": "தோ",
+    "text": "Amma, the Maharaja is coming!"
+   },
+   {
+    "id": "manohara-en-s006-u007",
+    "kind": "dialogue",
+    "speakerLabel": "புருஷோத்தமன்",
+    "text": "Still not finished with your adornment? It is already time for the play..."
+   },
+   {
+    "id": "manohara-en-s006-u008",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "There—finished."
+   },
+   {
+    "id": "manohara-en-s006-u009",
+    "kind": "dialogue",
+    "speakerLabel": "புரு",
+    "text": "Have you forgotten? Today is Manoharan's birthday."
+   },
+   {
+    "id": "manohara-en-s006-u010",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Would I forget—the boy's birthday? Another memory came to me..."
+   },
+   {
+    "id": "manohara-en-s006-u011",
+    "kind": "dialogue",
+    "speakerLabel": "புருஷோத்",
+    "text": "What is it, Vasanthi?"
+   },
+   {
+    "id": "manohara-en-s006-u012",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "The thirteenth anniversary of our festival of love."
+   },
+   {
+    "id": "manohara-en-s006-u013",
+    "kind": "dialogue",
+    "speakerLabel": "புருஷோத்",
+    "text": "Yes, my dear... I did not even notice the years flying by."
+   },
+   {
+    "id": "manohara-en-s006-u014",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[As he comes closer, he touches Vasantha.]"
+   },
+   {
+    "id": "manohara-en-s006-u015",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Do not touch fire! This body will burn you! It may sting a little too—about all this I have no doubt... no doubt.... What is this, Amma, a new lesson today? Amma!... Hey... Appa! Look at Amma's beauty, Appa... If only I got a girl like Amma..."
+   },
+   {
+    "id": "manohara-en-s006-u016",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Chi... keep quiet!"
+   },
+   {
+    "id": "manohara-en-s006-u017",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Was Pillaiyar the only one who asked for a girl like his mother Parvati? What is wrong if I ask too, Appa..."
+   },
+   {
+    "id": "manohara-en-s006-u018",
+    "kind": "dialogue",
+    "speakerLabel": "புருஷோத்",
+    "text": "This will never, ever end!"
+   },
+   {
+    "id": "manohara-en-s006-u019",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "No doubt."
+   },
+   {
+    "id": "manohara-en-s006-u020",
+    "kind": "dialogue",
+    "speakerLabel": "புருஷோத்",
+    "text": "Vasanthi, I am going... get ready quickly..."
+   }
+  ]
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "workId": "manohara",
+ "slug": "segment-037",
+ "ordinal": 37,
+ "sceneId": "manohara-s037",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனை / குகை மாற்றம்",
+ "startPdfPage": 58,
+ "startPrintedPage": 57,
+ "canonicalPart": "part-04",
+ "pageProvenance": [
+  {
+   "pdf_page": 58,
+   "printed_page": 57
+  }
+ ],
+ "tamil": {
+  "text": "(அரண்மனை)\n\nகாவலாளி : மகாராஜா! இளவரசர் தப்பிவிட்டார்.\n\nஅரசர் : என்ன?\n\nவ. சே : ஆ! மனோகரன் தப்பிவிட்டானா?\n\nகாவலாளி : ஆமாங்க... யாரோ கட்டுகளை அவுத்து காப்பாற்றினார்கள், கண்ணுக்கே தெரியவில்லை.\n\nவ. சே : விபரீதம்வளர ஆரம்பித்துவிட்டது பிரபு! நகர் முழுவதும் சோதனை போடுங்கள், அந்த நாசகாரன் எங்கிருந்தாலும் பிடித்து வாருங்கள்.\n\nஅரசர் : உம்...போங்கள்.\n\n[குகை : மனோகரன் மயக்கம் தெளிந்து கண் விழிக்கிறான்.]\n\nமனோகரன் : முடியாதும்மா... முடியாது... (சுற்றிலும் பார்த்தபடி) என்ன இது... கொல்லப்பட்ட நான் உயிரோடு...\n\nகேசரிவர்மன் : இளவரசே!\n\nமனோ : யார் நீ... நீ யார்... சத்யசீலரே! யார் இவன்?\n\nசத்யசீலர் : விபரம் பிறகு சொல்கிறேன்... அவன் தான் உன்னைக் காப்பாற்றியவன்.\n\nமனோ : என்னைக் காப்பாற்றுவது...... மனோகரனைக் காப்பாற்றுவது... மன்னன் ஆசை... மாதாவின் அன்புக் கட்டளை.... இவைகளை உடன் நிறைவேற்றுங்கள்... கொல்லுங்கள்... என்னைக் கொல்லுங்கள்... கொல்லுங்கள் ராஜப்பிரியா! என் அன்புத் தோழா... என் அன்னையின் கட்டளையை நீயாவது நிறைவேற்று.\n\nசத்ய : பொறு மனோகரா!\n\nராஜப் : மனோகரா... தாய்ச்சொல் தவறக் கூடாது என்பதற்காக சிறை வாசத்திலிருக்கும் தாயை அனாதையாகச் சாகவிடுவதா?\n\nமனோ : ஆ! அம்மா சிறையில்...\n\nராஜப் : அம்மா மட்டுமல்ல... விஜயா கூட...\n\nமனோ : ஆ...\n\nராஜப் : இப்போதாவது தெரிந்துகொள்...... நீ வாழ வேண்டிய அவசியத்தை."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s037-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The palace.]"
+   },
+   {
+    "id": "manohara-en-s037-u002",
+    "kind": "dialogue",
+    "speakerLabel": "காவலாளி",
+    "text": "Maharaja! The prince has escaped."
+   },
+   {
+    "id": "manohara-en-s037-u003",
+    "kind": "dialogue",
+    "speakerLabel": "அரசர்",
+    "text": "What?"
+   },
+   {
+    "id": "manohara-en-s037-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "Ah! Manoharan escaped?"
+   },
+   {
+    "id": "manohara-en-s037-u005",
+    "kind": "dialogue",
+    "speakerLabel": "காவலாளி",
+    "text": "Yes... someone loosened the bonds and saved him; we could not even see them with our eyes."
+   },
+   {
+    "id": "manohara-en-s037-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "Disaster has begun to grow, Prabhu! Search the entire city; wherever that destroyer is, seize him and bring him here."
+   },
+   {
+    "id": "manohara-en-s037-u007",
+    "kind": "dialogue",
+    "speakerLabel": "அரசர்",
+    "text": "Hmm... go."
+   },
+   {
+    "id": "manohara-en-s037-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The cave.]"
+   },
+   {
+    "id": "manohara-en-s037-u009",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Impossible, Amma... impossible... (looking around) What is this... I, who was killed, am alive..."
+   },
+   {
+    "id": "manohara-en-s037-u010",
+    "kind": "dialogue",
+    "speakerLabel": "கேசரிவர்மன்",
+    "text": "Prince!"
+   },
+   {
+    "id": "manohara-en-s037-u011",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Who are you... who are you... Satyaseelar! Who is this man?"
+   },
+   {
+    "id": "manohara-en-s037-u012",
+    "kind": "dialogue",
+    "speakerLabel": "சத்யசீலர்",
+    "text": "I shall tell you the details later... he is the one who saved you."
+   },
+   {
+    "id": "manohara-en-s037-u013",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Saving me...... saving Manoharan... the king's wish... Mother's loving command.... fulfil them at once... kill me... kill me... kill me, Rajapriya! My beloved friend... you at least carry out my mother's command."
+   },
+   {
+    "id": "manohara-en-s037-u014",
+    "kind": "dialogue",
+    "speakerLabel": "சத்ய",
+    "text": "Wait, Manohara!"
+   },
+   {
+    "id": "manohara-en-s037-u015",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்",
+    "text": "Manohara... because a mother's word must not be broken, will you let the mother who sits in prison die abandoned?"
+   },
+   {
+    "id": "manohara-en-s037-u016",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Ah! Amma is in prison..."
+   },
+   {
+    "id": "manohara-en-s037-u017",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்",
+    "text": "Not only Amma... Vijaya too..."
+   },
+   {
+    "id": "manohara-en-s037-u018",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Ah..."
+   },
+   {
+    "id": "manohara-en-s037-u019",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்",
+    "text": "At least now understand...... why you must live."
+   }
+  ]
+ }
+}

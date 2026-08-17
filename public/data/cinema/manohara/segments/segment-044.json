@@ -1,0 +1,142 @@
+{
+ "workId": "manohara",
+ "slug": "segment-044",
+ "ordinal": 44,
+ "sceneId": "manohara-s044",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பூஜை அறை",
+ "startPdfPage": 69,
+ "startPrintedPage": 68,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 69,
+   "printed_page": 68
+  },
+  {
+   "pdf_page": 70,
+   "printed_page": 69
+  }
+ ],
+ "tamil": {
+  "text": "[பூஜை அறை]\n\nஉக் : யாரது ஓ... ராணி வசந்தா தேவியா?\n\nவசந் : ஸ்வாமிகளுக்கு ஆண்டவன் நினைவோ?\n\n\n\nஉக் : ஆண்டவனைப்பற்றியல்ல. ஆண்டு கொண்டிருப்பவனைப்பற்றி... உட்கார். உல்லாசி.\n\nவ. சே. : பழரசம் அருந்துங்களேன்.\n\nஉக் : முதலில் உன் பார்வை ரசம் அருந்துகிறேன் கண்ணே!\n\nசேனா : உங்களைப்பார்த்து எவ்வளவு நாட்களாகின்றன.\n\nதோழி : கூப்பிட்டீர்களா அம்மா.\n\nசேனா : இல்லை போடி.\n\nஉக் : (கூந்தலைக் கோதியபடி) ஆகா! முகில் கூட்டம். (பல்லைக்காட்டி) முல்லைத் தோட்டம். (கன்னத்தைத் தடவி) ரோஜாக் கொல்லை!\n\nசேனா : ஸ்வாமி!\n\nஉக் : மொத்தத்தில் இன்பத்தின் எல்லை!\n\nசேனா : ஆமாம்... திட்டங்கள் எல்லாம் எப்படி திட்டியிருக்கிறீர்கள்?\n\nஉக் : திவ்யமாக! அரண்மனையின் முக்கிய பகுதிகள் எல்லாம் நமது ஆண்டி வேடந்தரித்த வீரர்கள் ஆக்ரமித்துக்கொண்டிருக்கிறார்கள், நாம் ஆணையிட்டால் போதும், போர்! புருஷோத்தமன் கைது!\n\nசேனா : போர்கூட தேவைப்படாது. புருஷோத்தமனின் படை வீரர்களை என் கைக்குள் போட்டு வைத்திருக்கிறேன்.\n\nஉக் : சபாஷ்! போர் வந்தால்தான் என்ன? எதிரிப் படைகள் அரண்மனைக்குள் வந்த பிறகு யாரால்தான் எதிர்த்து ஜெயிக்க முடியும்?\n\nசேனா : எதிரிப் படை அரண்மனைக்குள் மட்டுமா வந்திருக்கிறது?\n\nஉக் : அந்தப்புரத்திற்கே வந்துவிட்டது என்கிறாயா? இது சண்டையிட அல்ல. சரணாகதி அடைய.\n\nசேனா : இரவு வருகிறேன்."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s044-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Puja room.]"
+   },
+   {
+    "id": "manohara-en-s044-u002",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Who is it—oh... Queen Vasantha Devi?"
+   },
+   {
+    "id": "manohara-en-s044-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Are Swami's thoughts on God?"
+   },
+   {
+    "id": "manohara-en-s044-u004",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Not about the Lord. About the one who is ruling... sit down, my delight."
+   },
+   {
+    "id": "manohara-en-s044-u005",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே.",
+    "text": "Have some fruit juice."
+   },
+   {
+    "id": "manohara-en-s044-u006",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "First I shall drink the nectar of your gaze, my dear!"
+   },
+   {
+    "id": "manohara-en-s044-u007",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "How many days it has been since I saw you."
+   },
+   {
+    "id": "manohara-en-s044-u008",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "Did you call me, Amma?"
+   },
+   {
+    "id": "manohara-en-s044-u009",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "No, go away."
+   },
+   {
+    "id": "manohara-en-s044-u010",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "(Running his hand through her hair) Ah! A gathering of clouds. (Showing her teeth) A jasmine garden. (Stroking her cheek) A field of roses!"
+   },
+   {
+    "id": "manohara-en-s044-u011",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Swami!"
+   },
+   {
+    "id": "manohara-en-s044-u012",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Altogether, the very limit of delight!"
+   },
+   {
+    "id": "manohara-en-s044-u013",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Yes... how have you planned all the plans?"
+   },
+   {
+    "id": "manohara-en-s044-u014",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Splendidly! All the important parts of the palace are being occupied by our warriors disguised as mendicants. One command from us is enough—war! Purushothaman under arrest!"
+   },
+   {
+    "id": "manohara-en-s044-u015",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Even war will not be necessary. I have Purushothaman's soldiers in the palm of my hand."
+   },
+   {
+    "id": "manohara-en-s044-u016",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Sabash! What if war does come? Once enemy troops have entered the palace, who can resist and win?"
+   },
+   {
+    "id": "manohara-en-s044-u017",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Have the enemy troops come only into the palace?"
+   },
+   {
+    "id": "manohara-en-s044-u018",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "You mean they have come all the way into the inner chambers? This is not to fight. To surrender."
+   },
+   {
+    "id": "manohara-en-s044-u019",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "I will come tonight."
+   }
+  ]
+ }
+}

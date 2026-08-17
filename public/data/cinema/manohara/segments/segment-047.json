@@ -1,0 +1,96 @@
+{
+ "workId": "manohara",
+ "slug": "segment-047",
+ "ordinal": 47,
+ "sceneId": "manohara-s047",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பூஜை அறையின் ஜன்னலுக்கு வெளியே",
+ "startPdfPage": 72,
+ "startPrintedPage": 71,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 72,
+   "printed_page": 71
+  }
+ ],
+ "tamil": {
+  "text": "[பூஜை அறையின் ஜன்னலுக்கு வெளியே]\n\nவசந்தன் : வைத்தியா! வைத்தியா! வைத்தியா!\n\nமனோ : என்ன?\n\nவச : அம்மாவும், சாமியாரும் சொர்க்கலோகத்துக்குப் போய்க்கொண்டிருக்காங்க! வா! வா! போய அம்மாவைக் காப்பாற்றுவோம்.\n\nமனோ : நீ போய் உடனே மகாராஜாவை அழைத்துக் கொண்டுவா!\n\nவச : ஆ! அதுதான் சரி... சந்தேகமில்லே! சந்தேகமில்லே.\n\n* * *\n\n[அரசர் அறை]\n\nவசந்தன் : அப்பா! அப்பா!\n\nஅர : என்னடா இது?\n\nவச : அம்மாவும், சாமியாரும் சொர்க்கலோகத்துக்குப் போகிறாங்களாம்!\n\nஅர : ஆ.........!\n\nவச : வாப்பா......வா......"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s047-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Outside the window of the puja room.]"
+   },
+   {
+    "id": "manohara-en-s047-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Physician! Physician! Physician!"
+   },
+   {
+    "id": "manohara-en-s047-u003",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "What?"
+   },
+   {
+    "id": "manohara-en-s047-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Mother and the holy man are going off to heaven! Come! Come! Let us go and save Mother."
+   },
+   {
+    "id": "manohara-en-s047-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "You go and bring the Maharaja at once!"
+   },
+   {
+    "id": "manohara-en-s047-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Ah! That's right... no doubt! No doubt."
+   },
+   {
+    "id": "manohara-en-s047-u007",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The king's chamber.]"
+   },
+   {
+    "id": "manohara-en-s047-u008",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Father! Father!"
+   },
+   {
+    "id": "manohara-en-s047-u009",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "What is this, da?"
+   },
+   {
+    "id": "manohara-en-s047-u010",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "They say Mother and the holy man are going to heaven!"
+   },
+   {
+    "id": "manohara-en-s047-u011",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "Ah.........!"
+   },
+   {
+    "id": "manohara-en-s047-u012",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Come, Father...... come......"
+   }
+  ]
+ }
+}

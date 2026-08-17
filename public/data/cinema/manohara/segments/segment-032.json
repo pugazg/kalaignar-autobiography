@@ -1,0 +1,42 @@
+{
+ "workId": "manohara",
+ "slug": "segment-032",
+ "ordinal": 32,
+ "sceneId": "manohara-s032",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரசர் அறை",
+ "startPdfPage": 43,
+ "startPrintedPage": 42,
+ "canonicalPart": "part-03",
+ "pageProvenance": [
+  {
+   "pdf_page": 43,
+   "printed_page": 42
+  }
+ ],
+ "tamil": {
+  "text": "[அரசர் அறை, வசந்தசேனை கதவைத் தட்டுகிறாள்.]\n\nவ. சே. : பிரபோ! வசந்தி வந்திருக்கிறேன் பிரபோ!\n\n[அரசர் வாய் திறக்காமல் உலாவிக் கொண்டிருக்கிறார்."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s032-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The king's room. Vasantha Sena knocks on the door.]"
+   },
+   {
+    "id": "manohara-en-s032-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே.",
+    "text": "Prabhu! Vasanthi has come, Prabhu!"
+   },
+   {
+    "id": "manohara-en-s032-u003",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The king paces without opening his mouth.]"
+   }
+  ]
+ }
+}

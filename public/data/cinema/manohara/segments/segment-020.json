@@ -1,0 +1,108 @@
+{
+ "workId": "manohara",
+ "slug": "segment-020",
+ "ordinal": 20,
+ "sceneId": "manohara-s020",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "வசந்தசேனை அந்தப்புரம்",
+ "startPdfPage": 33,
+ "startPrintedPage": 32,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 33,
+   "printed_page": 32
+  }
+ ],
+ "tamil": {
+  "text": "[வசந்தசேனை அந்தப்புரம்]\n\n[பெளத்தாயனன் மனோகரனின் போர் வாளுடன் பிரவேசிக்கிறான்.]\n\nவசந்தா : பெளத்தாயன...\n\nபெளத்தாயன : கொண்டு வந்தேன், போர்வாளை!\n\nவசந்தா : சபாஷ்!...\n\nபெளத் : அம்மணி!... வெற்றி கண்ட மனோகரன்... விஜயாளை விவாகம் வேறு செய்து கொண்டான்...\n\nவசந் : அப்படியானால்...\n\nபெளத் : கேளுங்கள் - நீச்சல் விளையாட்டு நடத்தினார்கள் விஜயாளை விதவையாக்கிவிட்டு, வாளோடு வந்து விட்டேன்.\n\nவசந்தா : மனோகரன் இறந்துவிட்டானா?...\n\nபெளத் : நிச்சயமாக!... அம்மணி! பரிசுத் தொகை!\n\nவசந் : இதோ!...\n\n[பொன் மூட்டையை அவனிடம் கொடுக்கிறாள்.]\n\nபெளத்தாயனரே!... இன்னொரு காரியம்... ஒரே குறியில் இரண்டு வேட்டை!\n\nபத்மாவதியிடம் இந்த செய்தியைச் சொன்னால் நெஞ்சு வெடித்து செத்துவிடுவாள்... பிறகு... நான் தான் ராணி!... நீர்தான் பிரதம மந்திரி!...\n\nபெளத் : பிரதம மந்திரியா?... அப்ப எது வேண்டுமானாலும் செய்கிறேன்..."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s020-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Vasantha Sena's inner chamber.]"
+   },
+   {
+    "id": "manohara-en-s020-u002",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Bauthayanan enters with Manoharan's war-sword.]"
+   },
+   {
+    "id": "manohara-en-s020-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Bauthayanan..."
+   },
+   {
+    "id": "manohara-en-s020-u004",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன",
+    "text": "I brought it—the war-sword!"
+   },
+   {
+    "id": "manohara-en-s020-u005",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Shabash!..."
+   },
+   {
+    "id": "manohara-en-s020-u006",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்",
+    "text": "Ammani!... Manoharan returned victorious... and even married Vijaya..."
+   },
+   {
+    "id": "manohara-en-s020-u007",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Then..."
+   },
+   {
+    "id": "manohara-en-s020-u008",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்",
+    "text": "Listen—they held a swimming game. I made Vijaya a widow and came back with the sword."
+   },
+   {
+    "id": "manohara-en-s020-u009",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Manoharan is dead?..."
+   },
+   {
+    "id": "manohara-en-s020-u010",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்",
+    "text": "Certainly!... Ammani! The reward money!"
+   },
+   {
+    "id": "manohara-en-s020-u011",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Here!..."
+   },
+   {
+    "id": "manohara-en-s020-u012",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[She gives him the sack of gold.]"
+   },
+   {
+    "id": "manohara-en-s020-u013",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "Bauthayanar!... one more task... two hunts with a single aim! If you tell Padmavathi this news, her heart will burst and she will die... after that... I alone am the queen!... you are the Prime Minister!..."
+   },
+   {
+    "id": "manohara-en-s020-u014",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்",
+    "text": "Prime Minister?... Then I'll do anything you want..."
+   }
+  ]
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "workId": "manohara",
+ "slug": "segment-043",
+ "ordinal": 43,
+ "sceneId": "manohara-s043",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "குகை",
+ "startPdfPage": 69,
+ "startPrintedPage": 68,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 69,
+   "printed_page": 68
+  }
+ ],
+ "tamil": {
+  "text": "[குகை]\n\nமனோகரன் : காஷாய உடை! அதற்குள்ளே கத்தி ஏந்திய படை, மடை திறந்தாற்போல் நுழைந்துவிட்டார்கள்... தடை எதுவுமின்றி தபோதனர் வேடத்தில்! இனி அரைக்கணம் தாமதித்தால் சோழ மண்டலம் அடிமையாகிவிடும். உடன்புறப்படுங்கள்.\n\nராஜப்பிரியன் : ஆமாம், அதுதான் சரி! விடக்கூடாது, உடனே புறப்படுங்கள்.\n\nசத்யசீலர் : பொறுங்கள். மன வலிமை இருக்கிறது. நமக்கு தாயகத்தை விடுவிக்க! அதே நேரத்தில் மாற்றாரின் படை வலிமையைப் பற்றியும் கொஞ்சம் யோசிக்கவேண்டும். இதோ ராஜப்பிரியனை உடனே பாண்டிய நாட்டுக்கு அனுப்புவோம். பாண்டிய நாட்டுப் படைகள் வந்துவிட்டால் நமது போராட்டத்தைத் துவங்குவோம்!\n\nகேசரிவர்மன் : நல்ல யோசனை! இளவரசே! நீங்கள் உடனே அரண்மனைக்குள் செல்லுங்கள். அப்போதுதான் அன்னை, தந்தை, மனைவி ஆகியோருக்கு எந்த வித ஆபத்தும் அணுகாமல் கண்காணித்துக்கொள்ள முடியும். மற்றவைகளை நாங்கள் கவனித்துக்கொள்கிறோம்!\n\nசத் : மனோகரா! நீ உடனே புறப்படு. ராஜப்பிரியா நீ உடனே பாண்டிய நாட்டுக்குப் புறப்படு!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s043-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Cave.]"
+   },
+   {
+    "id": "manohara-en-s043-u002",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Saffron robes! Beneath them, an army bearing knives has poured in as though a sluice had been opened... in the guise of ascetics, without a single barrier! If we delay even half a moment now, the Chola realm will become enslaved. Set out at once."
+   },
+   {
+    "id": "manohara-en-s043-u003",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்பிரியன்",
+    "text": "Yes, that is right! We must not let this go. Set out immediately."
+   },
+   {
+    "id": "manohara-en-s043-u004",
+    "kind": "dialogue",
+    "speakerLabel": "சத்யசீலர்",
+    "text": "Wait. We have the strength of mind to free our motherland! At the same time, we must think a little about the strength of the enemy's army too. Let us send Rajapriyan at once to the Pandiyan country. Once the Pandiyan forces arrive, we shall begin our struggle!"
+   },
+   {
+    "id": "manohara-en-s043-u005",
+    "kind": "dialogue",
+    "speakerLabel": "கேசரிவர்மன்",
+    "text": "Good idea! Prince! You must enter the palace at once. Only then can you keep watch so that no danger approaches your mother, father or wife. We shall take care of the rest!"
+   },
+   {
+    "id": "manohara-en-s043-u006",
+    "kind": "dialogue",
+    "speakerLabel": "சத்",
+    "text": "Manohara! You set out at once. Rajapriya, you leave immediately for the Pandiyan country!"
+   }
+  ]
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "workId": "manohara",
+ "slug": "segment-050",
+ "ordinal": 50,
+ "sceneId": "manohara-s050",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "குகை அருகிலுள்ள கல் தூண்",
+ "startPdfPage": 76,
+ "startPrintedPage": 75,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 76,
+   "printed_page": 75
+  },
+  {
+   "pdf_page": 77,
+   "printed_page": 76
+  },
+  {
+   "pdf_page": 78,
+   "printed_page": 77
+  }
+ ],
+ "tamil": {
+  "text": "[குகையருகிலுள்ள கல் தூணில் கட்டப்பட்டிருந்த உண்மை அக்ஷயன் கஷ்டப்பட்டு கயிறுகளை அறுக்கிறான்.]\n\n\n\nஅரண்மனை\n\nவசந்தசேனை : நாளை ஆகவேண்டிய காரியத்தை ஆலோசிப்போம்.\n\nஉக்ரசேனன் : இனியும் என்ன ஆகவேண்டியது?\n\nசேனா : நாளை வசந்தனின் பட்டாபிஷேகம்.\n\nஉக் : நிச்சயமாக ஆனால் அதற்குள் நாடு நம் வசமானதை அறிவிக்க வேண்டும்.\n\nசேனா : அறிவிப்பதால் எதாவது ஆபத்து?\n\nஉக் : ஆபத்து!... யாரால்? என்னை எதிர்க்கக் கூடியவர்கள் இந்த உலகத்தில் இருக்கிறார்களா?\n\nசேனா : உற்சாக வெள்ளத்தில் உயிரோடு இருக்கும் மனோகரனை! மறந்துவிடக் கூடாது.\n\n* *\n\nசிறைச்சாலை. முத்திரை மோதிரத்தைக் காட்டி உள்ளே நுழைகிறான் மனோகரன்.\n\nமனோ : அம்மா\n\nபத்மாவதி : நீ யார்!\n\nமனோ : மனோகரன்...என்னை அனுப்பினான்!\n\nபத் : மனோகரன்...என் கண்மணி சுகமாக இருக்கிறானா?\n\nவிஜயா : அத்தே! அவர் எங்கிருக்கிறாராம்?\n\nமனோ : சதா உங்கள் இருதயத்திலே இருக்கும் அவர் வேறு எங்கு இருப்பார்.\n\nபத் : யாரப்பா நீ?\n\nமனோ : அதைப் பிறகு சொல்லுகிறேன். இப்போது நீங்கள் இருவரும் இதை விட்டு தப்பிவிடவேண்டும்.\n\nபத் : என்ன?\n\nமனோ : ஆமாம்! மனோகரனின் ரகசிய ஏற்பாடு. இதோ முத்திரை மோதிரம் பயமின்றி யாருடைய தடையுமின்றி வெளியேறலாம். புறப்படுங்கள்\n\nபத் , தந்திரமாக தப்பிவிடுவது—கூடாது, முடியாது. மகாராஜாவின் உத்திரவை மீற முடியாது. மனோகரனிடம் சொல்லிவிடு.\n\nவிஜ : அத்தே!\n\n: தம்பி மனோகரனிடம் சொல்—எனக்கு ஒரு செல்வப் பேரன் பிறந்திருக்கிறான், சிறைச்சாலையில் என்று!\n\n\n\nமனோ : இந்தப் பேரனுக்கு வரும் பேராபத்தை நீக்கத்தான் நீங்கள் வெளியேற வேண்டும் என்கிறேன்.\n\nபத் : அரசன் கட்டளையை... அரசியே மீறுவதா? முறையல்ல.\n\nமனோ : அப்படியானால்... ராஜகுமாரி! அந்த குழந்தையையாவது கொடுங்கள் நான் கொண்டுபோய்விடுகிறேன்.\n\nவிஜ : ஆ! குழந்தையா?\n\nமனோ : குழந்தையின் உயிரைக் காப்பாற்ற வேண்டுமானால்......?\n\nவிஜ : அத்தே இவனை நம்பாதீர்கள்...... குழந்தையைக் கொல்லுவதற்கு ஏதோ சூழ்ச்சி நடக்கிறது.\n\nமனோ : இல்ல! இல்ல!......\n\nவிஜ : முடியாது... முடியாது... நீ போய்விடு."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s050-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Near the cave, the real Akshayan—who was tied to a stone pillar—struggles and cuts through the ropes.]"
+   },
+   {
+    "id": "manohara-en-s050-u002",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Palace.]"
+   },
+   {
+    "id": "manohara-en-s050-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தசேனை",
+    "text": "Let us discuss what must be done tomorrow."
+   },
+   {
+    "id": "manohara-en-s050-u004",
+    "kind": "dialogue",
+    "speakerLabel": "உக்ரசேனன்",
+    "text": "What more remains to be done?"
+   },
+   {
+    "id": "manohara-en-s050-u005",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Tomorrow is Vasanthan's coronation."
+   },
+   {
+    "id": "manohara-en-s050-u006",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Certainly. But before that, we must proclaim that the country is under our control."
+   },
+   {
+    "id": "manohara-en-s050-u007",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Will proclaiming it bring any danger?"
+   },
+   {
+    "id": "manohara-en-s050-u008",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Danger!... From whom? Is there anyone in this world capable of opposing me?"
+   },
+   {
+    "id": "manohara-en-s050-u009",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "In this flood of triumph, do not forget that Manoharan is still alive!"
+   },
+   {
+    "id": "manohara-en-s050-u010",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Prison. Showing the signet ring, Manoharan enters.]"
+   },
+   {
+    "id": "manohara-en-s050-u011",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Mother."
+   },
+   {
+    "id": "manohara-en-s050-u012",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Who are you!"
+   },
+   {
+    "id": "manohara-en-s050-u013",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Manoharan... sent me!"
+   },
+   {
+    "id": "manohara-en-s050-u014",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "Manoharan... is my jewel well?"
+   },
+   {
+    "id": "manohara-en-s050-u015",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Atthai! Where do they say he is?"
+   },
+   {
+    "id": "manohara-en-s050-u016",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Where else could he be, when he is always in your heart?"
+   },
+   {
+    "id": "manohara-en-s050-u017",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "Who are you, son?"
+   },
+   {
+    "id": "manohara-en-s050-u018",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "I will tell you that later. Now both of you must escape from here."
+   },
+   {
+    "id": "manohara-en-s050-u019",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "What?"
+   },
+   {
+    "id": "manohara-en-s050-u020",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Yes! Manoharan's secret arrangement. Here is the signet ring. You can leave without fear and without anyone stopping you. Set out."
+   },
+   {
+    "id": "manohara-en-s050-u021",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "To escape by trickery—no, I cannot. I cannot disobey the Maharaja's order. Tell Manoharan that."
+   },
+   {
+    "id": "manohara-en-s050-u022",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Atthai!"
+   },
+   {
+    "id": "manohara-en-s050-u023",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "Tell Manoharan, thambi—I have a precious grandson, born here in prison!"
+   },
+   {
+    "id": "manohara-en-s050-u024",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "I am telling you to leave only to avert the great danger coming upon this grandson."
+   },
+   {
+    "id": "manohara-en-s050-u025",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "For the queen herself to disobey the king's command...? It would not be proper."
+   },
+   {
+    "id": "manohara-en-s050-u026",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Then... Princess! At least give me that child. I will carry him away."
+   },
+   {
+    "id": "manohara-en-s050-u027",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Ah! The child?"
+   },
+   {
+    "id": "manohara-en-s050-u028",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "If the child's life is to be saved......?"
+   },
+   {
+    "id": "manohara-en-s050-u029",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Atthai, do not trust him...... some plot is under way to kill the child."
+   },
+   {
+    "id": "manohara-en-s050-u030",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "No! No!......"
+   },
+   {
+    "id": "manohara-en-s050-u031",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Impossible... impossible... go away."
+   }
+  ]
+ }
+}

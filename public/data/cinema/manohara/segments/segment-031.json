@@ -1,0 +1,84 @@
+{
+ "workId": "manohara",
+ "slug": "segment-031",
+ "ordinal": 31,
+ "sceneId": "manohara-s031",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பத்மாவதி அறை",
+ "startPdfPage": 43,
+ "startPrintedPage": 42,
+ "canonicalPart": "part-03",
+ "pageProvenance": [
+  {
+   "pdf_page": 43,
+   "printed_page": 42
+  }
+ ],
+ "tamil": {
+  "text": "[பத்மாவதி அறை]\n\nமனோகரன் : அம்மா... அம்மா... அம்மா... துள்ளிவரும் வேல் ஆவேசத்தை அள்ளிவரும் வாள் அவைகளை எல்லாம் தடுத்திருக்கிறேன். அவைகளைவிடப் பெரியவளா என்னை நகையாடிய இந்த கள்ளி? ஆனால் அவளைத்தான் எதிர்க்க முடியாமல் ஓடி வந்திருக்கிறேன். யாராலம்மா? தங்களால் — தங்கள் கட்டளையால் — சத்தியத்தால்!\n\nபத்மாவதி : மனோகரா! விஷயத்தைச் சொல்! என்ன நடந்தது?\n\nமனோ : தன்மானம் தரைமட்டமானது, வீரம் விலை கூறப்பட்டது. அவமானச் சின்னம் ஆணவத்தால் ஆடியது! அம்மா! தங்கள் கட்டளையை உடனே மாற்றிக் கொள்ளவேண்டும்.\n\nபத் : சத்தியம் செய்திருக்கிறாய் செல்வா!\n\nமனோ : வீரன் கோழையாவதா? துடிக்கும் தோள்கள் துவண்டுபோவதா? வேண்டாம்... அந்த விபரீத சத்தியத்தை நான் காப்பாற்றவேண்டாம்......\n\n[மனோகரன் போய்விடுகிறான்]\n\nவிஜயா நுழைகிறாள்...\n\nபத் : என்ன நடந்தது விஜயா...\n\nவிஜ : அந்தப் பாதகி வசந்தசேனை (விம்மி அழுகிறாள்)"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s031-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Padmavathi's room.]"
+   },
+   {
+    "id": "manohara-en-s031-u002",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Amma... Amma... Amma... I have stopped the leaping spear, the sword that gathers up fury. Is this deceitful woman who mocked me greater than all of them? Yet it is she whom I cannot oppose, and I have run back here. Because of whom, Amma? Because of you—because of your command—because of the oath!"
+   },
+   {
+    "id": "manohara-en-s031-u003",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Manohara! Tell me the matter! What happened?"
+   },
+   {
+    "id": "manohara-en-s031-u004",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Self-respect has been levelled to the ground; valour has been put up for price. A symbol of disgrace danced in arrogance! Amma! You must change your command at once."
+   },
+   {
+    "id": "manohara-en-s031-u005",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "You have sworn an oath, my dear!"
+   },
+   {
+    "id": "manohara-en-s031-u006",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Must a warrior become a coward? Must throbbing shoulders droop? No... let me not keep that disastrous oath......"
+   },
+   {
+    "id": "manohara-en-s031-u007",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Manoharan leaves.]"
+   },
+   {
+    "id": "manohara-en-s031-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Vijaya enters..."
+   },
+   {
+    "id": "manohara-en-s031-u009",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "What happened, Vijaya..."
+   },
+   {
+    "id": "manohara-en-s031-u010",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "That sinner, Vasantha Sena... (she sobs and weeps)"
+   }
+  ]
+ }
+}

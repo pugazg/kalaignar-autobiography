@@ -1,0 +1,36 @@
+{
+ "workId": "manohara",
+ "slug": "segment-004",
+ "ordinal": 4,
+ "sceneId": "manohara-s004",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனையின் மற்றொரு புறத்தில்",
+ "startPdfPage": 9,
+ "startPrintedPage": 8,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 9,
+   "printed_page": 8
+  }
+ ],
+ "tamil": {
+  "text": "அரண்மனையின் மற்றொரு புறத்தில்\n\nபத்மாவதி : (அரசர் படத்துக்கு முன்பு)\nசுவாமி! நாமிருவரும் இனிமேல் ஒன்று சேரும் நாளே வராதா...? என் வாழ்க்கையிலே நான் யாருக்கும் எந்த தீங்கும் செய்தது கிடையாதே! என் வாழ்க்கையைக் கெடுத்த வசந்த சேனையைக்கூட மன்னித்து இருக்கிறேன்.... அவளிடம் வாஞ்சை மிகுந்து உங்களுக்கு வருத்தம் வரக்கூடாது என்பதற்காக!... அப்படியே நான் யாருக்காவது தீமை செய்திருந்தாலும் அதற்கு பல ஆண்டு காலம் தங்களைப் பிரிந்து வாடுகிறேனே! இந்த தண்டனை போதாதா? சுவாமி! கண்மணி மனோகரனின் பிறந்த நாளும் வருகிறது. எழில் பூத்த நம் செல்வத்தை இருவரும் உச்சி மோந்து வாழ்த்து கூறுவோமே - அந்த இன்ப நாள் இனிமேல் வரவே முடியாதா சுவாமி!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s004-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "In another part of the palace."
+   },
+   {
+    "id": "manohara-en-s004-u002",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "(Before the King's portrait) Swami! Will the day never come when the two of us are united again...? In all my life I have done no harm to anyone! I have forgiven even Vasantha Sena, who ruined my life.... I did so because your deep affection for her should not bring you pain!... And even if I had harmed someone, have I not suffered for many years, wasting away apart from you? Is this punishment not enough? Swami! The birthday of our darling Manoharan is approaching too. Shall we not both kiss the crown of our beautiful, blooming treasure and bless him together—can that day of joy never come again, Swami!"
+   }
+  ]
+ }
+}

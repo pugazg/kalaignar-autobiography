@@ -1,0 +1,77 @@
+{
+ "workId": "manohara",
+ "sourceRepo": "pugazg/kalaignar-cinema-works",
+ "sourcePath": "works/manohara",
+ "sourceCommit": "4b5f3238bd1e5983e995ddd85cd8a81ae27de21d",
+ "buildVersion": 1,
+ "source": {
+  "identifier": "TVA_BOK_0010102",
+  "scan_sha256": "87518fd8c290d7880aa2ddd9f2b5999c9d421d48fe1f02d61cf8e254393236a9",
+  "pdf_pages": 90,
+  "edition_statement_as_printed": "முதற்பதிப்பு : பிப்ரவரி 1954.",
+  "publication_year_as_printed": 1954,
+  "rights_notice_as_printed": "உரிமை : ஆசிரியருக்கே.",
+  "price_as_printed": "விலை எட்டணா",
+  "publisher_name": "மூனா கானா பதிப்பகம்",
+  "printer_as_printed": "Bharat Devi Press, 2/16, Mount Road, Madras-2.",
+  "credit_role": "திரைக்கதை வசனம்",
+  "credit_name": "மு. கருணாநிதி",
+  "main_text_pdf_pages": "7-88",
+  "main_text_logical_printed_pages": "6-87",
+  "ocr_authority": "non_canonical_navigation_only"
+ },
+ "sourceSceneNumbering": "none-printed",
+ "archivalSceneNumbering": "derivative-navigation-only",
+ "segmentCount": 57,
+ "tamil": {
+  "sceneDerivatives": 57,
+  "status": "complete-verified"
+ },
+ "english": {
+  "edition": "english-reader",
+  "status": "complete-verified",
+  "translationAuthority": "works/manohara/translations/records",
+  "translationUnits": 1190,
+  "unitKindCounts": {
+   "dialogue": 1009,
+   "stage-direction": 173,
+   "song-reference": 6,
+   "chant": 1,
+   "written-text": 1
+  },
+  "immutableDialogueRecordsLinked": 983,
+  "sourceUnlabelledSpokenUnits": 27,
+  "crossPageUnits": 17,
+  "songOccurrenceLinks": 6,
+  "qaStatus": "PASS"
+ },
+ "integrity": {
+  "sourceScanSha256": "87518fd8c290d7880aa2ddd9f2b5999c9d421d48fe1f02d61cf8e254393236a9",
+  "translationInputAggregateSha256": "e27d5319d3a35a0841e9eb27f4231151077ad7e153214a77d5e7596630e21d25",
+  "validationInputAggregateSha256": "17fbb18d8fa10a0b0413207fdcd4e8f43f1f311cb58cbb70cd25ae5a3b6db25d",
+  "readerEditionOutputs": {
+   "reader-edition.md": {
+    "sha256": "845a8caab1c6adb7ccb752a2bc33b997cf62f98aa229a87b6e9b390da4d346bf",
+    "bytes": 194932
+   },
+   "reader-edition.html": {
+    "sha256": "ded8a23304f9798756e8661b1c6d8591304ae03b8f2db3ac6ce4280e8cf98738",
+    "bytes": 284784
+   },
+   "reader-edition.json": {
+    "sha256": "a98315cb733d6a8460516afc77c9cab444f14253e38d854ddd95479525d3dfb4",
+    "bytes": 1248341
+   },
+   "QA_REPORT.md": {
+    "sha256": "c8d2f111e695fbae12946988201147b19823c9cf9a010b8321db48980aae98ce",
+    "bytes": 2056
+   }
+  }
+ },
+ "notes": [
+  "The 1954 booklet prints NO numbered scenes; the 57 divisions are archive-created navigation segments only.",
+  "The rendered scan is the controlling archival source; the OCR layer is non-canonical navigation only.",
+  "Tamil is the verified source scene derivative; English is the verified source reader translation. Neither was edited during import.",
+  "The accidental website public/data/cinema/manohara/parts/ files were NOT used as source, reference, baseline or validation."
+ ]
+}

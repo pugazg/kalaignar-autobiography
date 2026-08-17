@@ -1,0 +1,100 @@
+{
+ "workId": "manohara",
+ "slug": "segment-028",
+ "ordinal": 28,
+ "sceneId": "manohara-s028",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "மாளிகையின் ஒரு பகுதி",
+ "startPdfPage": 39,
+ "startPrintedPage": 38,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 39,
+   "printed_page": 38
+  },
+  {
+   "pdf_page": 40,
+   "printed_page": 39
+  }
+ ],
+ "tamil": {
+  "text": "மாளிகையின் ஒரு பகுதி.\n\nவைத்தியன் வசந்தனுக்கு மருந்து கொடுத்துக் கொண்டிருக்கிறான்......\n\nவைத்தியன் : உம்... சாப்பிடணும்......\n\nவசந்தன் : ஏய்—வைத்தியா! இந்த மருந்துக்குப் பெயர் என்ன?\n\nவைத்தியன் : சுயபுத்தி சூரணம்......\n\nவசந்தன் : இது எதிலே தயாரிக்கப்பட்டது—\n\nவைத்தியன் : திராட்சை, தேன், கற்கண்டு, சக்கரை இவைகளால் தயாரிக்கப்பட்டது.\n\nவசந்தன் : அப்ப கசக்குமோ...\n\nவைத் : “ஊஹூம்...கொஞ்சம் புளிக்கும், என்னு ரெண்டு? மிளகாயும் சேர்த்திருக்கேன்.\n\nவச : வைத்தியா!...எனக்கு என்ன வியாதிடா—\n\nவைத் : தீராத வியாதி...\n\n\n\nவசந் : உம்—அதானே பாத்தேன்—எல்லாரும் பைத்தியம் பைத்தியங்கிறாங்களே—\nவிகடா! கேட்டியா—எனக்கு பைத்தியம் ஒண்ணும் கிடையாது! தீராத வியாதி!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s028-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "A part of the palace. The physician is giving medicine to Vasanthan......"
+   },
+   {
+    "id": "manohara-en-s028-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்தியன்",
+    "text": "Hmm... you must take it......"
+   },
+   {
+    "id": "manohara-en-s028-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Hey—physician! What's the name of this medicine?"
+   },
+   {
+    "id": "manohara-en-s028-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்தியன்",
+    "text": "Suyabuddhi Chooranam......"
+   },
+   {
+    "id": "manohara-en-s028-u005",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "What is it made from—"
+   },
+   {
+    "id": "manohara-en-s028-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்தியன்",
+    "text": "It is made with grapes, honey, rock candy and sugar."
+   },
+   {
+    "id": "manohara-en-s028-u007",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Then will it be bitter?..."
+   },
+   {
+    "id": "manohara-en-s028-u008",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்",
+    "text": "Uh-huh... a little sour; and I've added a couple of chillies too."
+   },
+   {
+    "id": "manohara-en-s028-u009",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Physician!... what disease do I have, man—"
+   },
+   {
+    "id": "manohara-en-s028-u010",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்",
+    "text": "An incurable disease..."
+   },
+   {
+    "id": "manohara-en-s028-u011",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The exchange continues.]"
+   },
+   {
+    "id": "manohara-en-s028-u012",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Hmm—that's what I thought! Everyone keeps saying mad, mad—Vikata! Did you hear? I haven't got any madness at all! It's an incurable disease!"
+   }
+  ]
+ }
+}

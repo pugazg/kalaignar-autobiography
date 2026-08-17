@@ -1,0 +1,72 @@
+{
+ "workId": "manohara",
+ "slug": "segment-057",
+ "ordinal": 57,
+ "sceneId": "manohara-s057",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனையில் — எல்லோரும் இன்பம்",
+ "startPdfPage": 88,
+ "startPrintedPage": 87,
+ "canonicalPart": "part-06",
+ "pageProvenance": [
+  {
+   "pdf_page": 88,
+   "printed_page": 87
+  }
+ ],
+ "tamil": {
+  "text": "[அரண்மனையில்] [எல்லோரும் இன்பம்]\n\nஅரசர் : அம்மா! விஜயா!\n\nபத்மா! என் இதயராணி. என்னை மன்னித்துவிடு.\n\nபத்மா : வா. மனோகரா!\n\nஅரசர் : மனோகரா!\n\nமனோ : அப்பா!\n\nஅர : மைந்தனே! மன்னிக்க முடியாத குற்றத்தை நான் உனக்குச் செய்திருக்கிறேன்.\n\nமனோ : அப்படியெல்லாம் சொல்லாதீர்கள். அதையெல்லாம் மறந்து விடுங்கள்.\n\nராஜப்பிரியன் : கடமை, கண்ணியம், கட்டுப்பாடு கடைசியில் வெற்றி, பெற்றே தீரும் மன்னர் மன்னன் வாழ்க!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s057-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[In the palace.] [Everyone is joyful.]"
+   },
+   {
+    "id": "manohara-en-s057-u002",
+    "kind": "dialogue",
+    "speakerLabel": "அரசர்",
+    "text": "Amma! Vijaya!\n\nPadma! Queen of my heart. Forgive me."
+   },
+   {
+    "id": "manohara-en-s057-u003",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மா",
+    "text": "Come, Manohara!"
+   },
+   {
+    "id": "manohara-en-s057-u004",
+    "kind": "dialogue",
+    "speakerLabel": "அரசர்",
+    "text": "Manohara!"
+   },
+   {
+    "id": "manohara-en-s057-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Father!"
+   },
+   {
+    "id": "manohara-en-s057-u006",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "My son! I have committed against you a crime that cannot be forgiven."
+   },
+   {
+    "id": "manohara-en-s057-u007",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Do not speak like that. Forget all of it."
+   },
+   {
+    "id": "manohara-en-s057-u008",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்பிரியன்",
+    "text": "Duty, dignity, discipline—in the end, victory must surely be won. Long live the king of kings!"
+   }
+  ]
+ }
+}

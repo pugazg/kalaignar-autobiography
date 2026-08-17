@@ -1,0 +1,142 @@
+{
+ "workId": "manohara",
+ "slug": "segment-012",
+ "ordinal": 12,
+ "sceneId": "manohara-s012",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "நந்தவனம் — இரவு நேரம்",
+ "startPdfPage": 25,
+ "startPrintedPage": 24,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 25,
+   "printed_page": 24
+  },
+  {
+   "pdf_page": 26,
+   "printed_page": 25
+  }
+ ],
+ "tamil": {
+  "text": "மாளிகையை அடுத்த நந்தவனம்,\nஇரவு நேரம்......\n\nவசந்த சேனை, தனியாக மறைந்து மறைந்து யாரையோ எதிர் பார்க்கிறாள்......\n\nவசந்த சேனையின் தோழி வருகிறாள்.\n\nவசந்தா : எங்கேயடி பெளத்தாயனார்?\n\n[ஈனக் குரலில்]......\n\n\n\nதோழி : மெதுவாக இதோ...\n[மெதுவாக]......\n\nதோழி சுட்டிக் காட்டவே—பெளத்தாயனன் வந்துகொண்டிருக்கிறான்...\n\nவசந்தா : சரி...நீ போ ;...\n\nவசந்தா : பெளத்தாயனரே...இரவே புறப்படுகிறீரா......\n\nபெளத்தாயன் : ஆமாம்...ஏன்?...\n\nவசந்தா : தந்திரமாக நடந்து கொள்ளும்......\n\nபெளத்தாயன் : அவனை திரும்பாமல் செய்துவிடுகிறேன், நீங்கள் கவலையை விடுங்கள்.\n\nவசந்தா : அவன் தலை என் காலடியில் கிடக்கவேண்டும்.\n\nபெளத்தாயன் : ஊஹூம்...தலையைக் கொண்டுவந்தால் நமக்கு ஆபத்து. அவனை யுத்த களத்திலேயே கொன்று அவனுடைய போர்வாளை உங்களிடம் காட்டுகிறேன்.\n\nவசந்தா : ஆமாம்—பழியை பகைவர்கள்மீது போட்டுவிட வேண்டும். மனோகரனின் சாவு மர்மமாகவே இருந்து விடும்—\n\nபெளத்தாயன் : ஓ!\n\nவசந்தா : உமக்கு ஆயிரம் பொன் பரிசு!......\n\nபெளத்தாயன் : அம்மணி, நான் போர் வாளைக் கொண்டு வருவேன், நீங்கள் பொன் மூட்டையை......\n\nவசந்தா : பூரிப்பான செய்தி—கொண்டுவரும்—பொன் என்ன, வைரங்களை அள்ளித் தருகிறேன்.\n\nபெளத்தாயன் : சரியம்மா...\n\nவசந்தா : ஜாக்கிரதை......"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s012-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "The garden adjoining the palace. Night...... Vasantha Sena, alone, hides here and there, waiting for someone...... Vasantha Sena's companion arrives."
+   },
+   {
+    "id": "manohara-en-s012-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Where is Bauthayanar?"
+   },
+   {
+    "id": "manohara-en-s012-u003",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[In a low voice]......"
+   },
+   {
+    "id": "manohara-en-s012-u004",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "Softly... there he is...\n[Softly]......"
+   },
+   {
+    "id": "manohara-en-s012-u005",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "As the companion points him out, Bauthayanan is seen approaching..."
+   },
+   {
+    "id": "manohara-en-s012-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "All right... you go ;..."
+   },
+   {
+    "id": "manohara-en-s012-u007",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Bauthayanar... are you leaving tonight itself?......"
+   },
+   {
+    "id": "manohara-en-s012-u008",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Yes... why?..."
+   },
+   {
+    "id": "manohara-en-s012-u009",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Act with cunning......"
+   },
+   {
+    "id": "manohara-en-s012-u010",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "I'll make sure he does not return. Put aside your worry."
+   },
+   {
+    "id": "manohara-en-s012-u011",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "His head must lie at my feet."
+   },
+   {
+    "id": "manohara-en-s012-u012",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Uh-uh... bringing the head would put us in danger. I'll kill him on the battlefield itself and show you his war-sword."
+   },
+   {
+    "id": "manohara-en-s012-u013",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Yes—we must put the blame on the enemies. Manoharan's death must remain a mystery—"
+   },
+   {
+    "id": "manohara-en-s012-u014",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Oh!"
+   },
+   {
+    "id": "manohara-en-s012-u015",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "A reward of a thousand gold pieces for you!......"
+   },
+   {
+    "id": "manohara-en-s012-u016",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Ammani, I shall bring the war-sword; you, the sack of gold......"
+   },
+   {
+    "id": "manohara-en-s012-u017",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Bring me news that fills me with joy—gold? I'll heap diamonds upon you."
+   },
+   {
+    "id": "manohara-en-s012-u018",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "All right, Amma..."
+   },
+   {
+    "id": "manohara-en-s012-u019",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Be careful......"
+   }
+  ]
+ }
+}

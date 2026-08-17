@@ -1,0 +1,48 @@
+{
+ "workId": "manohara",
+ "slug": "segment-022",
+ "ordinal": 22,
+ "sceneId": "manohara-s022",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "வசந்தசேனை அந்தப்புரம்",
+ "startPdfPage": 36,
+ "startPrintedPage": 35,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 36,
+   "printed_page": 35
+  }
+ ],
+ "tamil": {
+  "text": "(வசந்தசேனை அந்தப்புரம்.)\n\nவசந்தா : பெளத்தாயனன் ஒருகுட்டிச்சுவரு!...கோழைப் பயல்!...என்னை நிச்சயம் காட்டிக்கொடுத்து விடுவான் நான் தப்ப வேண்டுமானால் அவன் உயிரோடு இருக்கக்கூடாது.\n\nதோழி : பாவம் பெளத்தாயனன்!\n\nவசந்தா : ஹூம் தேனை எடுக்க வேண்டுமானால் பல தேனீக்களை கொன்றுதான் ஆகவேண்டும்...சரி நான் சொன்னதை ஏற்பாடு செய்!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s022-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(Vasantha Sena's inner chamber.)"
+   },
+   {
+    "id": "manohara-en-s022-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Bauthayanan is a useless little wall!... a cowardly fellow!... He will certainly betray me. If I am to escape, he must not remain alive."
+   },
+   {
+    "id": "manohara-en-s022-u003",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "Poor Bauthayanan!"
+   },
+   {
+    "id": "manohara-en-s022-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Hmm. If one wants to take honey, many bees must be killed... all right, arrange what I told you!"
+   }
+  ]
+ }
+}

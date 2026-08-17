@@ -1,0 +1,120 @@
+{
+ "workId": "manohara",
+ "slug": "segment-005",
+ "ordinal": 5,
+ "sceneId": "manohara-s005",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "குகையின் உட்புறம்",
+ "startPdfPage": 10,
+ "startPrintedPage": 9,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 10,
+   "printed_page": 9
+  }
+ ],
+ "tamil": {
+  "text": "(குகையின் உட்புறம்)\n\nபெரியவர் : எங்கே கேசரி வர்மா அவசரமாகப் புறப்பட்டு இருப்பாய்?\n\nகேசரி வர்மன் : நாடகத்திற்கு - அதோ அவர்களைத்தான் ஏற்பாடு செய்திருக்கிறேன்.\n\nபெரி : மறந்துவிட்டேன். இன்று மனோகரன் பிறந்த விழாவா? உம் ... நாடகத்திற்கு என்ன பெயர் வைத்திருக்கிறாய்?\n\nகேசரி : போர்வாள்.\n\nபெரி : சபாஷ் ... தடையொன்றும் கிடையாதே நடத்துவதற்கு?...\n\nகேச : கிடையாது. காரணம், கதை அவர்களுக்குப் புரியாது...\n\nபெரி : வசந்த சேனைக்கு உன் நாடகத்துப் புனைப்பெயர் என்ன?\n\nகேச : தேவ சேனா!\n\nபெரி : உன் பெயர்?\n\nகேச : ஈஸ்வரி வர்மன். புருஷோத்தமனை உத்தம புருஷனென்று மாற்றியிருக்கிறேன்.\n\nபெரி : கட்டாயம் புரிந்துகொள்வார்கள் கதையை.\n\nகேச : புரியத்தானே வேண்டும். அப்போதாவது புருஷோத்தமனுக்கு புத்தி வராதா?\n\nபெரி : உம்... முயற்சி செய்து பார்!\n\nகேச : வருகிறேன், குரு தேவா!\n\nபெரி : ஜாக்கிரதை"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s005-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(Inside the cave.)"
+   },
+   {
+    "id": "manohara-en-s005-u002",
+    "kind": "dialogue",
+    "speakerLabel": "பெரியவர்",
+    "text": "Where are you off to in such a hurry, Kesari Varma?"
+   },
+   {
+    "id": "manohara-en-s005-u003",
+    "kind": "dialogue",
+    "speakerLabel": "கேசரி வர்மன்",
+    "text": "To the play—I have arranged for those very people there."
+   },
+   {
+    "id": "manohara-en-s005-u004",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "I had forgotten. Is today Manoharan's birthday celebration? Hmm... what name have you given the play?"
+   },
+   {
+    "id": "manohara-en-s005-u005",
+    "kind": "dialogue",
+    "speakerLabel": "கேசரி",
+    "text": "The Sword of War."
+   },
+   {
+    "id": "manohara-en-s005-u006",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "Shabash... there is no obstacle to staging it, is there?..."
+   },
+   {
+    "id": "manohara-en-s005-u007",
+    "kind": "dialogue",
+    "speakerLabel": "கேச",
+    "text": "None. Because they will not understand the story..."
+   },
+   {
+    "id": "manohara-en-s005-u008",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "What alias have you given Vasantha Sena in your play?"
+   },
+   {
+    "id": "manohara-en-s005-u009",
+    "kind": "dialogue",
+    "speakerLabel": "கேச",
+    "text": "Deva Sena!"
+   },
+   {
+    "id": "manohara-en-s005-u010",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "Your name?"
+   },
+   {
+    "id": "manohara-en-s005-u011",
+    "kind": "dialogue",
+    "speakerLabel": "கேச",
+    "text": "Eeswari Varman. I have changed Purushothaman to Uthama Purushan."
+   },
+   {
+    "id": "manohara-en-s005-u012",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "They will certainly understand the story."
+   },
+   {
+    "id": "manohara-en-s005-u013",
+    "kind": "dialogue",
+    "speakerLabel": "கேச",
+    "text": "They must understand it. At least then, will Purushothaman not come to his senses?"
+   },
+   {
+    "id": "manohara-en-s005-u014",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "Hmm... try and see!"
+   },
+   {
+    "id": "manohara-en-s005-u015",
+    "kind": "dialogue",
+    "speakerLabel": "கேச",
+    "text": "I shall go, Gurudeva!"
+   },
+   {
+    "id": "manohara-en-s005-u016",
+    "kind": "dialogue",
+    "speakerLabel": "பெரி",
+    "text": "Be careful."
+   }
+  ]
+ }
+}

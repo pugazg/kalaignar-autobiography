@@ -1,0 +1,60 @@
+{
+ "workId": "manohara",
+ "slug": "segment-027",
+ "ordinal": 27,
+ "sceneId": "manohara-s027",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பத்மாவதி அறை",
+ "startPdfPage": 39,
+ "startPrintedPage": 38,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 39,
+   "printed_page": 38
+  }
+ ],
+ "tamil": {
+  "text": "பத்மாவதி அறை:\n\nமனோகரன் : அம்மா!\n\nபத்மாவதி : மனோகரா!...என்ன நடந்தது?\n\nமனோ : என்ன நடக்க வேண்டுமென்று எண்ணி என் கைகளைக் கட்டிப் போட்டீர்களோ அது நடந்தது. அம்மா! இப்படி பயங்கரமாகக் கட்டளை இடுவீர்கள் என்று முன்பே தெரிந்திருந்தால் முத்து விஜயனைக் கொன்று—படை வீரர் பலரின் உயிரைத் தந்து—அந்தப் பாதகி அமர்வதற்கு சிம்மாசனத்தைக் கொண்டுவந்திருக்க மாட்டேன். நீங்கள் அமர வேண்டிய சிம்மாசனத்தில் அவளா? அதற்காக ஒரு படையெடுப்பா?\n\nபத்மாவதி : படையெடுப்பால் வந்த பயன்தானே இந்தப் பைங்கிளி (விஜயாவைக் காட்டுகிறாள்) இதை நினைத்து அதை மறந்துவிடு மனோகரா!\n\n(விஜயாவிடம்)\n\n“விஜயா உன் கணவனை சாந்தப் படுத்து!”"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s027-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Padmavathi's room."
+   },
+   {
+    "id": "manohara-en-s027-u002",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Amma!"
+   },
+   {
+    "id": "manohara-en-s027-u003",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Manohara!... what happened?"
+   },
+   {
+    "id": "manohara-en-s027-u004",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "What you bound my hands expecting to happen—that is what happened. Amma! Had I known beforehand that you would lay down such a terrible command, I would not have killed Muthu Vijayan—given the lives of so many soldiers—and brought that throne for that sinner to sit upon. She on the throne where you ought to sit? Was an invasion fought for that?"
+   },
+   {
+    "id": "manohara-en-s027-u005",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Isn't this green parrot the gain that came from the invasion? (She points to Vijaya.) Think of this and forget that, Manohara!"
+   },
+   {
+    "id": "manohara-en-s027-u006",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "Vijaya, calm your husband!"
+   }
+  ]
+ }
+}

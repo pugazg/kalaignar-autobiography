@@ -1,0 +1,42 @@
+{
+ "workId": "manohara",
+ "slug": "segment-023",
+ "ordinal": 23,
+ "sceneId": "manohara-s023",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "சிறைச்சாலை",
+ "startPdfPage": 36,
+ "startPrintedPage": 35,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 36,
+   "printed_page": 35
+  }
+ ],
+ "tamil": {
+  "text": "[சிறைச்சாலை வசந்தசேனையின் தோழி கையிலே ஒரு கலயத்தோடு ரகசியமாக சிறைக்காவலாளியோடு பேசுகிறாள், பின்னர் காவலாளி அந்தக் கலயத்தை எடுத்துச் சென்று பெளத்தாயனனிடம் கொடுக்கிறான்.]\n\nபெளத்தாயன் : கொடுக்கிற தெய்வம்* கூரையை பிச்சுக் கிட்டு கொடுக்கும! வாழ்க வசந்தசேனை!\n\nஎன்று மூட்டையை அவிழ்க்க, படமெடுத்தபடி பாம்பு வெளிவந்து கடித்து விடுகிறது...\nபெளத்தாயனன் சாகிறான்"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s023-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Prison. Vasantha Sena's companion, carrying a pot, speaks secretly with the prison guard; afterwards the guard takes the pot and gives it to Bauthayanan.]"
+   },
+   {
+    "id": "manohara-en-s023-u002",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "When the giving god gives, he tears open the roof and gives! Long live Vasantha Sena!"
+   },
+   {
+    "id": "manohara-en-s023-u003",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "As he unties the bundle, a snake rises with its hood spread, comes out and bites him... Bauthayanan dies."
+   }
+  ]
+ }
+}

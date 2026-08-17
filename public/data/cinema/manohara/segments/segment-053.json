@@ -1,0 +1,212 @@
+{
+ "workId": "manohara",
+ "slug": "segment-053",
+ "ordinal": 53,
+ "sceneId": "manohara-s053",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "மனோகரன் தூணில் கட்டப்பட்டிருக்கிறான்",
+ "startPdfPage": 80,
+ "startPrintedPage": 79,
+ "canonicalPart": "part-06",
+ "pageProvenance": [
+  {
+   "pdf_page": 80,
+   "printed_page": 79
+  },
+  {
+   "pdf_page": 81,
+   "printed_page": 80
+  },
+  {
+   "pdf_page": 82,
+   "printed_page": 81
+  }
+ ],
+ "tamil": {
+  "text": "(மனோகரன் தூணில் கட்டப்பட்டிருக்கிறான்)\n\nவசந்தசேனை : மனோகரா! உன் உடலைத்தான் எல்லாரால் கட்டிப் போட முடிந்தது, உயிரைக் கட்ட முடியவில்லை. அது வெகு சீக்கிரத்தில் விடுதலை பெற்று வேறு உலகத்திற்குப் போய்விடும்!\n\nமனோ : அம்மா! (உக்ரசேனன் அடிக்கிறான்)\n\nமனோ : அம்மா!\n\nஉக்ரசேனன் : ஹூம் ஐயோ பாவம் இந்த மழலைக் குழந்தை மாதாவை அழைக்கிறது.\n\nமனோ : அம்மா!\n\nஉக்ர : பரிதாபத்துக்குரியவனே! வாய் வலிக்க தாயை ஏன் அழைக்கிறாய்? கொஞ்சம் காத்திரு! உன் பாட்டி இருக்கும் பரலோகத்திற்கே உன்னை அனுப்பி வைக்கிறேன்.\n\nவசந்தி : வேண்டாம். முதலில் குழந்தை! பிறகு மனோகரன்! அவன் கண்ணுக்கு நேராகவே அவன் கண்மணியைக் கொல்லவேண்டும். ஆயா! போ! குழந்தையைக் கொண்டுவா;\n\n\n\n(வசந்தன் வருகிறான்)\n\nவசந் : அண்ணா என்ன இது? உன்னை யார் கட்டிப் போட்டது?\n\nவசந்தி : வசந்தா...\n\nஉக்ர : வா இங்கே\n\nவச : முடியாது... எல்லாம் உன்னுடைய வேலைதானே! அம்மா... அண்ணனை அவிழ்த்து விடு! உம்\n\nவசந்தி : வசந்தா... சும்மா இரு. உனக்கொன்றும் தெரியாது\n\nவச : எனக்கெல்லாம் தெரியும். என் பிரியமுள்ள அப்பா, பெரியம்மா, அண்ணி எல்லோரையும் சிறையிலே போட்டே, அண்ணனையும் கட்டிப் போட்டு அடிக்க ஆரம்பிச்சுட்டே, என்னால் இதை அனுமதிக்க முடியாது.\n\nவச : அண்ணா...\n\nவசந்தி : வசந்தா...\n\nவச : அண்ணா!......\n\nவசந்தி : வசந்தா வா இப்படி\n\nவச : அண்ணா அந்த சங்கிலியெல்லாம் அறுத்தெறி...... விடம்மா என்னை!\n\n(ஒரு அறைக்குள் இழுத்து வருகிறாள்).\n\nவிடு என்னை... விடு என்னை.\n\nவசந்தி : சும்மாயிரு எல்லாம் உன் நன்மைக்காகத்தான் செய்கிறேன்.\n\nவச : ஆ! அண்ணனைக் கட்டிப் போட்டு கொல்றது தம்பியின் நன்மைக்காகவா!\n\nவசந்தி : கண்ணே நீ ராஜாவாக வேண்டாமா!\n\nவச : ராஜாவா? வேண்டாம்! வேண்டாம். அப்புறம் உன்கிட்டம் ஒரு ராணி வந்து சிறையிலே போடுவா! செத்தாலும் சாகிறேன். அந்த சிம்மாசனம் வேண்டாம்மா?\n\nவசந்தி : எல்லாம் என் தலைவிதி! என் வயிற்றிலே வந்து நீ பிறந்தாயே!\n\nவச : அதுக்காகத்தான் நானும் கவலைப்படுறேன்.\n\nவசந்தி : வாயை மூடு\n\n\n\nவச : முடியாது.\n\nவசந்தி : முடியாதா?\n\nவச : அம்மா! அம்மா! (கதவை சாத்திப்போகிறாள்)"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s053-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Manoharan is tied to a pillar.]"
+   },
+   {
+    "id": "manohara-en-s053-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தசேனை",
+    "text": "Manohara! Everyone has been able to bind only your body; they could not bind your life. Very soon it will gain its freedom and go to another world!"
+   },
+   {
+    "id": "manohara-en-s053-u003",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Mother! [Ugrasenan strikes him.]"
+   },
+   {
+    "id": "manohara-en-s053-u004",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Mother!"
+   },
+   {
+    "id": "manohara-en-s053-u005",
+    "kind": "dialogue",
+    "speakerLabel": "உக்ரசேனன்",
+    "text": "Hmm! Ayyo, pity—this babbling child is calling for his mother."
+   },
+   {
+    "id": "manohara-en-s053-u006",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Mother!"
+   },
+   {
+    "id": "manohara-en-s053-u007",
+    "kind": "dialogue",
+    "speakerLabel": "உக்ர",
+    "text": "Pitiful creature! Why call your mother until your mouth aches? Wait a little! I shall send you to the very otherworld where your grandmother is."
+   },
+   {
+    "id": "manohara-en-s053-u008",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "No. First the child! Then Manoharan! His own jewel must be killed right before his eyes. Nurse! Go! Bring the child;"
+   },
+   {
+    "id": "manohara-en-s053-u009",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Vasanthan enters.]"
+   },
+   {
+    "id": "manohara-en-s053-u010",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Anna, what is this? Who tied you up?"
+   },
+   {
+    "id": "manohara-en-s053-u011",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Vasantha..."
+   },
+   {
+    "id": "manohara-en-s053-u012",
+    "kind": "dialogue",
+    "speakerLabel": "உக்ர",
+    "text": "Come here."
+   },
+   {
+    "id": "manohara-en-s053-u013",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "No... all this is your doing, isn't it! Mother... untie Anna! Hmm!"
+   },
+   {
+    "id": "manohara-en-s053-u014",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Vasantha... keep quiet. You know nothing."
+   },
+   {
+    "id": "manohara-en-s053-u015",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "I know everything. You put my beloved father, Periyamma and Anni all in prison; then you tied Anna too and started beating him. I cannot allow this."
+   },
+   {
+    "id": "manohara-en-s053-u016",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Anna..."
+   },
+   {
+    "id": "manohara-en-s053-u017",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Vasantha..."
+   },
+   {
+    "id": "manohara-en-s053-u018",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Anna!......"
+   },
+   {
+    "id": "manohara-en-s053-u019",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Vasantha, come this way."
+   },
+   {
+    "id": "manohara-en-s053-u020",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Anna, break all those chains...... let me go, Mother!\n\n[She drags him into a room.]\n\nLet me go... let me go."
+   },
+   {
+    "id": "manohara-en-s053-u021",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Keep quiet. I am doing everything only for your good."
+   },
+   {
+    "id": "manohara-en-s053-u022",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Ah! Tying up Anna and killing him—is that for the younger brother's good?"
+   },
+   {
+    "id": "manohara-en-s053-u023",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "My dear, don't you want to be king?"
+   },
+   {
+    "id": "manohara-en-s053-u024",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "King? No! No. Then some queen will come to you and throw you in prison! Let me die if I must. I don't want that throne, Mother!"
+   },
+   {
+    "id": "manohara-en-s053-u025",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "It is all my fate! Of all things, you had to be born from my womb!"
+   },
+   {
+    "id": "manohara-en-s053-u026",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "That's exactly what I worry about too."
+   },
+   {
+    "id": "manohara-en-s053-u027",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Shut your mouth."
+   },
+   {
+    "id": "manohara-en-s053-u028",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "I can't."
+   },
+   {
+    "id": "manohara-en-s053-u029",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "You can't?"
+   },
+   {
+    "id": "manohara-en-s053-u030",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Mother! Mother! [She shuts the door and leaves.]"
+   }
+  ]
+ }
+}

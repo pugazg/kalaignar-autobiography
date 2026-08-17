@@ -1,0 +1,148 @@
+{
+ "workId": "manohara",
+ "slug": "segment-051",
+ "ordinal": 51,
+ "sceneId": "manohara-s051",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனை",
+ "startPdfPage": 78,
+ "startPrintedPage": 77,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 78,
+   "printed_page": 77
+  },
+  {
+   "pdf_page": 79,
+   "printed_page": 78
+  }
+ ],
+ "tamil": {
+  "text": "அரண்மனை.\n\nசிப்பாய் : மகாராஜா! அக்ஷயன் வந்திருக்கிறார். பார்க்க வேண்டுமாம்.\n\nவ. சே : வந்துவிட்டானா?...இங்கே வரச்சொல்.\n\n: வெற்றிச் செய்தியோடு வந்திருப்பான். விஜயாவின் குழந்தையைக் கொன்று விட்டுவந்திருப்பான். அவனுக்காக இந்தப் பரிசு\n\n: உங்கள் தளபதி மிகவும் தந்திரசாலி.\n\nஉக்ரசேனன் : அதில் சந்தேகமென்ன? ஓ... வா... அக்ஷயா வா...\n\n: என்ன அக்ஷயா? [உண்மை அட்சயன் வருகிறான்]\n\nசேனா : யார் இவரு அக்ஷயன்?\n\nஉக் : ஆமாம்.\n\nசேனா : ஆ! இல்லை.\n\nஅட்சயன் ; நான் தான் உண்மையான அக்ஷயன், உங்களை இது வரை ஏமாற்றியது போலி அக்ஷயன் அம்மணி!\n\n: ஆமாம்...மகாராஜா! என்னைக் கட்டிப் போட்டார்கள். இப்போதுதான் தப்பி வந்தேன்.\n\nஉக் : கட்டிப் போட்டார்களா? யார்?\n\nஅட் ; மனோகரன்!\n\nசேனா ; ஆ! மனோகரன்! அப்படியானால் இங்கு இருக்கிற அக்ஷயன்?\n\n\n\nஅட் : மனோகரன்!\n\nஉக் : எங்கே அவன் இருக்கிறான்......\n\nசேனா : சிறைச்சாலைக்குத் தான் போயிருக்கிறான்.\n\nஉக் : விடக்கூடாது."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s051-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Palace.]"
+   },
+   {
+    "id": "manohara-en-s051-u002",
+    "kind": "dialogue",
+    "speakerLabel": "சிப்பாய்",
+    "text": "Maharaja! Akshayan has come. He says he wishes to see you."
+   },
+   {
+    "id": "manohara-en-s051-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "He has come?... Tell him to come here."
+   },
+   {
+    "id": "manohara-en-s051-u004",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "He must have come with news of victory. He must have killed Vijaya's child and returned. This reward is for him."
+   },
+   {
+    "id": "manohara-en-s051-u005",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "Your commander is very cunning."
+   },
+   {
+    "id": "manohara-en-s051-u006",
+    "kind": "dialogue",
+    "speakerLabel": "உக்ரசேனன்",
+    "text": "What doubt is there about that? Oh... come... Akshaya, come..."
+   },
+   {
+    "id": "manohara-en-s051-u007",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "What is it, Akshaya?"
+   },
+   {
+    "id": "manohara-en-s051-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The real Akshayan enters.]"
+   },
+   {
+    "id": "manohara-en-s051-u009",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Who is he? Akshayan?"
+   },
+   {
+    "id": "manohara-en-s051-u010",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Yes."
+   },
+   {
+    "id": "manohara-en-s051-u011",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Ah! No."
+   },
+   {
+    "id": "manohara-en-s051-u012",
+    "kind": "dialogue",
+    "speakerLabel": "அட்சயன்",
+    "text": "I am the real Akshayan. The one who deceived you all this while was a false Akshayan, madam!"
+   },
+   {
+    "id": "manohara-en-s051-u013",
+    "kind": "dialogue",
+    "speakerLabel": null,
+    "text": "Yes... Maharaja! They tied me up. I have only just escaped and come."
+   },
+   {
+    "id": "manohara-en-s051-u014",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "They tied you up? Who?"
+   },
+   {
+    "id": "manohara-en-s051-u015",
+    "kind": "dialogue",
+    "speakerLabel": "அட்",
+    "text": "Manoharan!"
+   },
+   {
+    "id": "manohara-en-s051-u016",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Ah! Manoharan! Then the Akshayan who is here?"
+   },
+   {
+    "id": "manohara-en-s051-u017",
+    "kind": "dialogue",
+    "speakerLabel": "அட்",
+    "text": "Manoharan!"
+   },
+   {
+    "id": "manohara-en-s051-u018",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Where is he......"
+   },
+   {
+    "id": "manohara-en-s051-u019",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "He has gone to the prison."
+   },
+   {
+    "id": "manohara-en-s051-u020",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "We must not let him go."
+   }
+  ]
+ }
+}

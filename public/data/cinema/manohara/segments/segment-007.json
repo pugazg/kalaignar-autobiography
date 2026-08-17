@@ -1,0 +1,118 @@
+{
+ "workId": "manohara",
+ "slug": "segment-007",
+ "ordinal": 7,
+ "sceneId": "manohara-s007",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "மனோகரன் மாளிகையில்",
+ "startPdfPage": 12,
+ "startPrintedPage": 11,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 12,
+   "printed_page": 11
+  },
+  {
+   "pdf_page": 13,
+   "printed_page": 12
+  }
+ ],
+ "tamil": {
+  "text": "(மனோகரன் மாளிகையில்)\n\n* * *\n\nசத்யசீலர் : வஞ்சகம் வாழ்ந்தது கிடையாது...கொடுமை நிலைத்ததில்லை...இதைக் கேள்! விழா உன் பொருட்டு நடைபெறுகிறது... விழாவுக்கு நீ வந்துதான் தீர வேண்டும்...\n\nமனோ : என்பொருட்டு விழா நடைபெறுகிறது. மனப்பூர்வமாகவா? இல்லை... சம்பிரதாயத்திற்கு!\n\nசத் : தவறு மனோகரா! புத்திர வாஞ்சையற்றவரல்ல புருஷோத்தமர்.\n\nமனோ : உங்களுடைய ஆசை, அந்த வாஞ்சையும் அற்றுவிடக்கூடாதென்று! ஆனால் அப்பா அணு அணுவாக விஷமாக்கப்படுகிறார்.\n\nசத் : எப்படியானாலும் சரி, ராஜ குடும்பத்திலே தகராறு இப்படி பிறர் பேசக்கூடாது.\n\nமனோ : உயர்ந்த எண்ணம்! ஆனால் அந்த ஊர் கெடுப்பவளுக்கு உதயமாகியிருக்க வேண்டும்.\n\nசத் : மனோகரா! உன்னுடைய பிறந்தநாள்... அதிலே நீ இல்லையென்றால்...\n\nராஜப்பிரியன் : அரசர் கவலைப்பட மாட்டார்... அந்த ஆனந்தவல்லி, அருகிலே இருக்கும்போது!\n\nசத் : உம்... இருவருமே இளக்காரம் அடிக்கிறீர்கள்!\n\nமனோ : அமைதி கற்பிப்பது விவேகிகளின் பண்புதான்! ஆனால் ஆமைபோல் அடங்கிக் கிடப்பது வீரர்களின் பண்பல்ல! அந்த மயக்கு மொழிக்காரியும் வருவாள்; அங்கே என் மாதாவும் வரவேண்டும், முடியாது! என்னால் அதைக் காண முடியாது!\n\nபத்மாவதி : மனோகரா!\n\nமனோ : அம்மா!...\n\n\n\nபத் : செல்வா... கேட்டுக்கொண்டுதான் வந்தேன்! ராஜப்பிரியன் கூட சீறி விழுந்தானே, ஏன்? மந்திரியாரே... மனோகரன் கட்டாயம் நாடகத்துக்கு வருவான்...\n\n(மனோகரன் மெளனியாகிறான்)"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s007-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(At Manoharan's mansion.)"
+   },
+   {
+    "id": "manohara-en-s007-u002",
+    "kind": "dialogue",
+    "speakerLabel": "சத்யசீலர்",
+    "text": "Deceit has never lived... cruelty has never endured... Listen to this! The celebration is being held for you... you must come to the celebration..."
+   },
+   {
+    "id": "manohara-en-s007-u003",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "A celebration for me. Wholeheartedly? No... for the sake of convention!"
+   },
+   {
+    "id": "manohara-en-s007-u004",
+    "kind": "dialogue",
+    "speakerLabel": "சத்",
+    "text": "Wrong, Manohara! Purushothaman is not a man without a father's affection for his son."
+   },
+   {
+    "id": "manohara-en-s007-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "It is your wish that he should not lose even that affection! But Father is being poisoned, atom by atom."
+   },
+   {
+    "id": "manohara-en-s007-u006",
+    "kind": "dialogue",
+    "speakerLabel": "சத்",
+    "text": "Whatever it may be, others should not speak this way of dissension within the royal family."
+   },
+   {
+    "id": "manohara-en-s007-u007",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "A noble thought! But it ought to have dawned on that woman who ruins the land."
+   },
+   {
+    "id": "manohara-en-s007-u008",
+    "kind": "dialogue",
+    "speakerLabel": "சத்",
+    "text": "Manohara! Your birthday... if you are not there..."
+   },
+   {
+    "id": "manohara-en-s007-u009",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்பிரியன்",
+    "text": "The king will not worry... while that Anandavalli is beside him!"
+   },
+   {
+    "id": "manohara-en-s007-u010",
+    "kind": "dialogue",
+    "speakerLabel": "சத்",
+    "text": "Hmm... both of you are being flippant!"
+   },
+   {
+    "id": "manohara-en-s007-u011",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Teaching calm is indeed the nature of the wise! But crouching subdued like a tortoise is not the nature of warriors! That woman with the bewitching tongue will come; and my mother must come there too—impossible! I cannot bear to see it!"
+   },
+   {
+    "id": "manohara-en-s007-u012",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Manohara!"
+   },
+   {
+    "id": "manohara-en-s007-u013",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Amma!..."
+   },
+   {
+    "id": "manohara-en-s007-u014",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "My dear... I came listening all along! Even Rajapriyan flared up—why? Minister... Manoharan will certainly come to the play..."
+   },
+   {
+    "id": "manohara-en-s007-u015",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(Manoharan falls silent.)"
+   }
+  ]
+ }
+}
