@@ -7,8 +7,9 @@
 // Public rendering is driven ONLY by entries whose `state` is "published" (see
 // `publishedWorks` / `visibleShelves`). It is NEVER driven by folder existence in
 // `public/data`. There is deliberately no filesystem auto-discovery here, so an
-// accidental data directory (e.g. the non-authoritative
-// `public/data/cinema/manohara/parts/`) can never surface as a public work.
+// accidental data directory (such as the non-authoritative
+// `public/data/cinema/manohara/parts/` scratch files that Phase 2 removed) can
+// never surface as a public work.
 //
 // Provenance note: source-repository / source-path / release-commit are DIFFERENT
 // concepts from this implementation repository. They are optional and are left unset
@@ -125,8 +126,15 @@ export interface LibraryWork {
 }
 
 // ── The catalog ──────────────────────────────────────────────────────────────
-// Phase 1 exposes exactly the three already-public collections. No new corpus is
-// integrated here. (Manohara is deliberately absent — see the header note.)
+// Phase 1 exposed exactly the three already-public collections. Digital Library
+// Phase 2 onboards ONE additional work — the Manohara screenplay/dialogue booklet
+// — onto the same shared envelope (its own `scene` reader; source-faithful Tamil +
+// a project-created English derivative). No generalized ingestion framework is
+// introduced: this is a single, work-specific catalog entry, exactly like the
+// others. The public UI is still driven ONLY by `state: "published"` (never by
+// folder existence), so the accidental (now-removed) `public/data/cinema/
+// manohara/parts/` directory — non-authoritative implementation scratch data,
+// never a source — could never have surfaced as a work regardless.
 export const LIBRARY_WORKS: LibraryWork[] = [
   {
     id: "nenjukku-neethi",
@@ -187,6 +195,34 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     // englishKind intentionally UNSET — whether this English is a separately
     // published translation or project-created is not established in the
     // implementation data (not guessed).
+  },
+  {
+    id: "manohara",
+    slug: "manohara",
+    titleTa: "மனோகரா",
+    titleEn: "Manohara",
+    shelf: "cinema-writing",
+    subtype: "screenplay-dialogue",
+    readerStructure: "scene",
+    href: "/cinema/manohara",
+    state: "published",
+    descTa: "கலைஞரின் திரைக்கதை–வசன நூல் (1954)",
+    descEn: "Kalaignar's screenplay-dialogue booklet (1954)",
+    // External source provenance IS established for this work (unlike the memoir),
+    // so it is recorded here and surfaced on /cinema/manohara/source.
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/manohara",
+    sourceCommit: "4b5f3238bd1e5983e995ddd85cd8a81ae27de21d",
+    tamil: "complete",
+    english: "complete",
+    // The English layer is a source-linked derivative created for this project
+    // (works/manohara/translations), NOT a separately-published translation.
+    englishKind: "project-created",
+    // The 1954 booklet prints NO scene numbers. The 57 divisions are archive-created
+    // navigation segments only — never presented as "printed scenes". The label makes
+    // that explicit on the catalog card.
+    unitCount: { value: 57, labelTa: "காப்பக வழிசெலுத்தல் பகுதிகள்", labelEn: "archival segments" },
+    provenanceHref: "/cinema/manohara/source",
   },
 ];
 

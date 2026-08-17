@@ -27,6 +27,16 @@ function loadTholkappiyamIds(): string[] {
   }
 }
 
+function loadManoharaSegmentSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/manohara/index.json");
+    const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { segments: { slug: string }[] };
+    return idx.segments.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const idx = murasoliIndex as MurasoliIndex;
@@ -51,6 +61,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tholkappiyam`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     ...loadTholkappiyamIds().map((id) => ({
       url: `${BASE}/tholkappiyam/${id}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    { url: `${BASE}/cinema/manohara`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/cinema/manohara/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    ...loadManoharaSegmentSlugs().map((slug) => ({
+      url: `${BASE}/cinema/manohara/${slug}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,
