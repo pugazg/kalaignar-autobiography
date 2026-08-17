@@ -1,6 +1,6 @@
 "use client";
 
-import { BookText, Bookmark, ChevronDown, FileSearch, Flower2, Home, Mail, Search } from "lucide-react";
+import { Bookmark, ChevronDown, FileSearch, Home, Search } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { chapterIndex, volumeMeta } from "@/data/references";
@@ -12,7 +12,7 @@ import { fold, hasLatin, matchesQuery, queryForms, transliterate } from "@/lib/t
 type FtChapter = { i: string; t: string; x: string };
 type FtHit = { id: string; title: string; snippet: string; form: string };
 
-export default function Library() {
+export default function NenjukkuNeethiLibrary() {
   const [open, setOpen] = useState<number>(1);
   const { lang } = useLang();
   const [last, setLast] = useState<string | null>(null);
@@ -79,13 +79,6 @@ export default function Library() {
   }, [mode, query, volFilter]);
 
   const [read, setRead] = useState<string[]>([]);
-  // Live counts for the sibling collections' cards (kept fresh from their own
-  // data, so the Murasoli count tracks as volumes are added). Stored raw and
-  // formatted at render so a language toggle re-localises them.
-  const [sibling, setSibling] = useState<{
-    murasoli?: { volumeCount: number; letters: number };
-    tholkappiyam?: { malarCount: number; sutraCount: number };
-  }>({});
 
   useEffect(() => {
     try {
@@ -93,25 +86,6 @@ export default function Library() {
       setMarks(JSON.parse(window.localStorage.getItem("nn-bookmarks") || "[]"));
       setRead(JSON.parse(window.localStorage.getItem("nn-read") || "[]"));
     } catch {}
-  }, []);
-
-  useEffect(() => {
-    fetch("/data/murasoli/letters-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => {
-        if (!d) return;
-        const vols = d.volumes ?? [];
-        const letters = vols.reduce((n: number, v: { letterCount: number }) => n + v.letterCount, 0);
-        setSibling((s) => ({ ...s, murasoli: { volumeCount: vols.length, letters } }));
-      })
-      .catch(() => {});
-    fetch("/data/tholkappiyam/index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => {
-        if (!d) return;
-        setSibling((s) => ({ ...s, tholkappiyam: { malarCount: d.malarCount, sutraCount: d.sutraCount } }));
-      })
-      .catch(() => {});
   }, []);
 
   const byId = new Map(chapterIndex.map((c) => [c.id, c]));
@@ -129,40 +103,14 @@ export default function Library() {
   const filtered = chapterIndex.filter(matches);
   const taHint = q.length > 1 && hasLatin(query) ? transliterate(query.trim()) : null;
 
-  // The three Reading Room collections, presented as peers so Murasoli and
-  // Tholkappiya Poonga aren't buried — the memoir is the one you're reading here.
   const ta = lang === "ta";
-  const accentCls = {
-    marina: { border: "border-marina/30 hover:border-marina/60", icon: "text-marina dark:text-marina-light", title: "group-hover:text-marina dark:group-hover:text-marina-light", bg: "bg-marina/[0.06] dark:bg-marina/10" },
-    brass: { border: "border-brass/30 hover:border-brass/60", icon: "text-brass", title: "group-hover:text-brass", bg: "bg-brass/[0.06] dark:bg-brass/10" },
-  };
-  const collections = [
-    {
-      key: "memoir", href: null as string | null, current: true, Icon: BookText, accent: "marina" as const,
-      title: "நெஞ்சுக்கு நீதி", en: "Nenjukku Neethi",
-      desc: ta ? "கலைஞரின் நினைவுக் குறிப்புகள்" : "The memoir",
-      stat: ta ? `${chapterIndex.length} அத்தியாயங்கள்` : `${chapterIndex.length} chapters`,
-    },
-    {
-      key: "murasoli", href: "/murasoli", current: false, Icon: Mail, accent: "marina" as const,
-      title: "முரசொலி கடிதங்கள்", en: "Murasoli — The Letters",
-      desc: ta ? "உடன்பிறப்புகளுக்கு எழுதிய கடிதங்கள்" : "Letters to udanpirappukkal",
-      stat: sibling.murasoli ? (ta ? `${sibling.murasoli.volumeCount} தொகுதி · ${sibling.murasoli.letters} கடிதங்கள்` : `${sibling.murasoli.volumeCount} volumes · ${sibling.murasoli.letters} letters`) : "",
-    },
-    {
-      key: "tholkappiyam", href: "/tholkappiyam", current: false, Icon: Flower2, accent: "brass" as const,
-      title: "தொல்காப்பியப் பூங்கா", en: "Tholkappiya Poonga",
-      desc: ta ? "கலைஞரின் தொல்காப்பிய உரை" : "Kalaignar's Tolkāppiyam commentary",
-      stat: sibling.tholkappiyam ? (ta ? `${sibling.tholkappiyam.malarCount} மலர் · ${sibling.tholkappiyam.sutraCount} நூற்பா` : `${sibling.tholkappiyam.malarCount} blossoms · ${sibling.tholkappiyam.sutraCount} sutras`) : "",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
       <header className="border-b border-ink/10 bg-mist/40 dark:border-white/10 dark:bg-night-surface/40">
         <div className="mx-auto max-w-3xl px-5 py-12 sm:px-6">
-          <Link href="/" className="focus-ring inline-flex items-center gap-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60">
-            <Home className="h-3.5 w-3.5" aria-hidden /> {lang === "ta" ? "கலைஞர் நூலகம்" : "Kalaignar Digital Library"}
+          <Link href="/read" className="focus-ring inline-flex items-center gap-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60">
+            <Home className="h-3.5 w-3.5" aria-hidden /> {lang === "ta" ? "கலைஞர் மின்னூலகம்" : "Kalaignar Digital Library"}
           </Link>
           <p className="mt-5 font-tamil text-2xl text-marina/80 dark:text-marina-light/80" lang="ta">
             நெஞ்சுக்கு நீதி
@@ -188,42 +136,6 @@ export default function Library() {
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
-        {/* The three Reading Room collections as peers */}
-        <section aria-labelledby="collections-h" className="mb-8">
-          <h2 id="collections-h" className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">
-            {ta ? "வாசிப்பு அறையின் தொகுப்புகள்" : "Collections in the Reading Room"}
-          </h2>
-          <div className="grid gap-3 sm:grid-cols-3">
-            {collections.map((c) => {
-              const a = accentCls[c.accent];
-              const inner = (
-                <>
-                  <c.Icon className={cn("h-5 w-5 shrink-0", a.icon)} aria-hidden />
-                  <span className="mt-2 flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                    <span className={cn("font-tamil text-[15px] font-medium", c.href && a.title)} lang="ta">{c.title}</span>
-                    {c.current && (
-                      <span className="rounded-full bg-marina/15 px-2 py-0.5 text-[10px] font-medium text-marina dark:text-marina-light">
-                        {ta ? "நீங்கள் இங்கே" : "You're here"}
-                      </span>
-                    )}
-                  </span>
-                  <span className="mt-0.5 text-xs leading-snug text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : undefined}>{c.desc}</span>
-                  {c.stat && <span className="mt-2 text-[11px] tabular-nums text-ink/45 dark:text-night-text/45" lang={ta ? "ta" : undefined}>{c.stat}</span>}
-                </>
-              );
-              return c.href ? (
-                <Link key={c.key} href={c.href} className={cn("focus-ring group flex flex-col rounded-2xl border bg-white/60 p-4 transition dark:bg-night-surface/60", a.border)}>
-                  {inner}
-                </Link>
-              ) : (
-                <div key={c.key} aria-current="page" className={cn("flex flex-col rounded-2xl border p-4", a.border.split(" ")[0], a.bg)}>
-                  {inner}
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
         {(lastCh || marks.length > 0 || read.length > 0) && (
           <section aria-label={ta ? "உங்கள் அலமாரி" : "Your shelf"} className="mb-8 rounded-2xl border border-brass/30 bg-brass/[0.06] p-4">
             {read.length > 0 && (
