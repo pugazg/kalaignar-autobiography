@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/read`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/read/nenjukku-neethi`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     ...chapterIndex.map((c) => ({
       url: `${BASE}/read/${c.id}`,
       lastModified: now,

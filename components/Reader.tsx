@@ -237,7 +237,7 @@ export default function Reader({
       <header className="sticky top-0 z-30 border-b border-ink/10 bg-paper/90 backdrop-blur dark:border-white/10 dark:bg-night/90">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-2 px-4 py-2.5">
           <div className="flex min-w-0 items-center gap-3">
-            <Link href="/read" className="focus-ring inline-flex items-center gap-1 rounded p-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60" aria-label={lang === "ta" ? "நூலடக்கத்திற்குத் திரும்பு" : "Back to contents"}>
+            <Link href="/read/nenjukku-neethi" className="focus-ring inline-flex items-center gap-1 rounded p-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60" aria-label={lang === "ta" ? "நூலடக்கத்திற்குத் திரும்பு" : "Back to contents"}>
               <ArrowLeft className="h-4 w-4" aria-hidden />
               <span>{lang === "ta" ? "நூலடக்கம்" : "Contents"}</span>
             </Link>
