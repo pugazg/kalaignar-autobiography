@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { api } from "./client";
 
 // Small reusable loader for a feature dataset (themes / people / places, …). It
@@ -14,8 +14,12 @@ export type FeatureState<T> =
 export function useFeature<T>(
   url: string | null | undefined,
   parse: (raw: unknown) => T | null,
-): FeatureState<T> {
+): FeatureState<T> & { reload: () => void } {
   const [state, setState] = useState<FeatureState<T>>(url ? { status: "loading" } : { status: "unavailable" });
+  // Bumping the nonce re-runs the fetch effect — a meaningful retry for an
+  // "unavailable" (offline / failed) feature once connectivity returns.
+  const [nonce, setNonce] = useState(0);
+  const reload = useCallback(() => setNonce((n) => n + 1), []);
 
   useEffect(() => {
     let alive = true;
@@ -37,7 +41,7 @@ export function useFeature<T>(
     return () => {
       alive = false;
     };
-  }, [url]);
+  }, [url, nonce]);
 
-  return state;
+  return { ...state, reload };
 }

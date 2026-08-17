@@ -26,6 +26,7 @@ export function ReaderScreen() {
   const [visuals, setVisuals] = useState<Visual[]>([]);
   const [imgCache, setImgCache] = useState<Record<string, string>>({});
   const [error, setError] = useState(false);
+  const [nonce, setNonce] = useState(0); // bump to retry after a failed load
   const [bookmarked, setBookmarked] = useState(false);
   const [progress, setProgress] = useState(0);
   const scrollRef = useRef<ScrollView>(null);
@@ -83,7 +84,7 @@ export function ReaderScreen() {
     return () => {
       alive = false;
     };
-  }, [id, chapter]);
+  }, [id, chapter, nonce]);
 
   // Re-arm the find scroll whenever the chapter or the query changes, so a new
   // search targeting another passage in the same chapter scrolls again.
@@ -178,7 +179,7 @@ export function ReaderScreen() {
   };
 
   if (!found) return <T style={{ padding: spacing(6) }}>Chapter not found.</T>;
-  if (error) return <EmptyState title="Could not open this chapter" body="It may not be downloaded and you appear to be offline." />;
+  if (error) return <EmptyState title="Could not open this chapter" body="It may not be downloaded and you appear to be offline." actionLabel="Try again" onAction={() => setNonce((n) => n + 1)} />;
   if (!text) return <Loading label="Opening the chapter…" />;
 
   const paras = showEn ? en!.paragraphs : text.paragraphs;

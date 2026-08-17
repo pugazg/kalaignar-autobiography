@@ -20,6 +20,7 @@ export function MurasoliLibraryScreen() {
   const [idx, setIdx] = useState<MurasoliIndex | null>(null);
   const [letters, setLetters] = useState<MurasoliLettersIndex | null>(null);
   const [state, setState] = useState<"loading" | "ready" | "error">("loading");
+  const [nonce, setNonce] = useState(0); // bump to retry after a failure
 
   useEffect(() => {
     if (!mu) {
@@ -43,7 +44,7 @@ export function MurasoliLibraryScreen() {
     return () => {
       alive = false;
     };
-  }, [mu]);
+  }, [mu, nonce]);
 
   const lettersByVol = useMemo(() => {
     const m = new Map<number, MurasoliLettersIndex["volumes"][number]>();
@@ -57,7 +58,7 @@ export function MurasoliLibraryScreen() {
   if (state === "error" || !idx)
     return (
       <Screen>
-        <EmptyState title="Couldn't load Murasoli" body="Check your connection and try again." />
+        <EmptyState title="Couldn't load Murasoli" body="Check your connection and try again." actionLabel="Try again" onAction={() => setNonce((n) => n + 1)} />
       </Screen>
     );
 

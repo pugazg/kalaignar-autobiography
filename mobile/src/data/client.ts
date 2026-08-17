@@ -83,6 +83,20 @@ async function writeCache(path: string, raw: string) {
   await FileSystem.writeAsStringAsync(fileFor(path), raw);
 }
 
+// A network request must never hang startup indefinitely (e.g. a captive/stalled
+// connection). Abort after this long and fall back to cache where available.
+const FETCH_TIMEOUT_MS = 12000;
+
+async function fetchWithTimeout(input: string, init: RequestInit, ms: number): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
+  try {
+    return await fetch(input, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 /** Fetch JSON. offlineFirst: return cached copy immediately if present, else network. */
 export async function fetchJSON<T>(path: string, opts: { offlineFirst?: boolean } = {}): Promise<T> {
   if (opts.offlineFirst) {
@@ -90,14 +104,17 @@ export async function fetchJSON<T>(path: string, opts: { offlineFirst?: boolean 
     if (cached) return cached;
   }
   try {
-    const res = await fetch(url(path), { headers: { accept: "application/json" } });
+    const res = await fetchWithTimeout(url(path), { headers: { accept: "application/json" } }, FETCH_TIMEOUT_MS);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const raw = await res.text();
+    // Parse BEFORE writing: a 200 with a malformed/truncated body must never
+    // overwrite a previously-valid cached copy (which would then fail to parse too).
+    const parsed = JSON.parse(raw) as T;
     await writeCache(path, raw);
-    return JSON.parse(raw) as T;
+    return parsed;
   } catch (e) {
     const cached = await readCache<T>(path);
-    if (cached) return cached; // offline fallback
+    if (cached) return cached; // offline / failure fallback — cache stays authoritative
     throw e;
   }
 }
