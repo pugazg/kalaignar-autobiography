@@ -1,0 +1,66 @@
+{
+ "workId": "udhaya-kathir",
+ "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+ "sourcePath": "speeches/1970/1970-09-09-no-confidence-motion",
+ "sourceCommit": "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+ "source": {
+  "publicationTitleTa": "உதயக் கதிர்",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "editionTa": "முதற்பதிப்பு",
+  "publicationDate": "1970-09",
+  "publisherTa": "புகழ் பதிப்பகம்",
+  "publisherLocationTa": "சென்னை-6",
+  "printerTa": "முரசொலி அச்சகம்",
+  "printerLocationTa": "சென்னை-6",
+  "coverPriceTa": "30 காசு",
+  "scanFilename": "TVA_BOK_0065650_உதயக்_கதிர்.pdf",
+  "scanTotalPages": 48,
+  "speechScanPages": "5-46",
+  "frontMatterScanPages": "1-4",
+  "advertisementScanPages": "47-48"
+ },
+ "transcription": {
+  "method": "manual transcription from scan with page-by-page visual review",
+  "preserve_source_spelling": true,
+  "preserve_source_punctuation": true,
+  "preserve_headings": true,
+  "page_boundaries_marked": true,
+  "status": "verified",
+  "verified_against_scan": true,
+  "verification_note": "Second-pass page-by-page visual verification completed against scan pp. 5-46; confirmed corrections applied to the canonical transcript.",
+  "verified_scan_pages": "5-46"
+ },
+ "translation": {
+  "language": "English",
+  "placement": "after the complete Tamil transcription",
+  "status": "verified",
+  "type": "faithful reading translation",
+  "verified_against_tamil": true
+ },
+ "archiveDerived": {
+  "sectionHeadings": 29,
+  "tamilParagraphs": 192,
+  "englishParagraphs": 170,
+  "sourcePagesCovered": 42,
+  "note": "Section headings are printed in the source; paragraph splits follow the source. No archive-created navigation numbering is imposed on the reader."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The 1970 publication's own imprint data and the later Tamil Nadu Government nationalisation are different facts; the imprint does not describe the present rights status.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored speech. It does not extend to third-party contributions or to the project-created English translation, which retain their own provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created) with its own distinct provenance.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the scanned 1970 booklet; only scan pages 5–46 are the Assembly speech (1–4 front matter, 47–48 advertisements).",
+  "Tamil is the verified source transcription; English is the verified faithful reading translation placed after the complete Tamil. Neither was edited during import.",
+  "Printed section headings and source-page boundaries are preserved. Paragraphs follow the source; no archive-created navigation numbering is presented as source numbering."
+ ]
+}
