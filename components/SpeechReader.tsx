@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, Calendar, Home, Info, Landmark, Mic, Minus, Plus } from "lucide-react";
+import { ArrowLeft, BookOpen, Calendar, Home, Info, Landmark, MapPin, Mic, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
 import type { Speech, SpeechBlock } from "@/data/speeches";
 import { useLang } from "@/lib/i18n";
@@ -18,8 +18,7 @@ export default function SpeechReader({ slug }: { slug: string }) {
   const [speech, setSpeech] = useState<Speech | null>(null);
   const [error, setError] = useState(false);
   const [font, setFont] = useState(1);
-  // Source-first: the verified Tamil is authoritative and shown by default; the verified
-  // English reading translation is one toggle away.
+  // Tamil remains the authoritative/default layer; verified English is one toggle away.
   const [showEn, setShowEn] = useState(false);
 
   useEffect(() => {
@@ -32,7 +31,6 @@ export default function SpeechReader({ slug }: { slug: string }) {
   }, [slug]);
 
   const { progress } = useReaderProgress({ id: slug, ready: !!speech, posPrefix: POS_PREFIX, lastKey: LAST_KEY });
-
   const sizes = ["text-base", "text-lg", "text-xl"];
   const blocks = speech ? (showEn ? speech.english.blocks : speech.tamil.blocks) : [];
 
@@ -70,7 +68,7 @@ export default function SpeechReader({ slug }: { slug: string }) {
 
       <article className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
         <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-marina dark:text-marina-light">
-          <Mic className="h-3.5 w-3.5" aria-hidden /> {ta ? "சட்டமன்ற உரை" : "Assembly speech"}
+          <Mic className="h-3.5 w-3.5" aria-hidden /> {speech ? speechSubtypeLabel(speech, ta) : ta ? "உரை" : "Speech"}
         </p>
         <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
           {speech?.title.ta ?? (ta ? "ஏற்றப்படுகிறது…" : "Loading…")}
@@ -79,19 +77,27 @@ export default function SpeechReader({ slug }: { slug: string }) {
           <>
             <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{speech.title.en}</p>
             <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-ink/55 dark:text-night-text/55">
-              <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5" aria-hidden /> {formatDate(speech.date, ta)}
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Landmark className="h-3.5 w-3.5" aria-hidden />
-                <span lang={lang}>{ta ? speech.legislature.nameTa : speech.legislature.nameEn}</span>
-              </span>
-              <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>
+              {speech.date && (
+                <span className="inline-flex items-center gap-1.5">
+                  <Calendar className="h-3.5 w-3.5" aria-hidden /> {formatDate(speech.date, ta)}
+                </span>
+              )}
+              {speech.legislature && (
+                <span className="inline-flex items-center gap-1.5">
+                  <Landmark className="h-3.5 w-3.5" aria-hidden />
+                  <span lang={lang}>{ta ? speech.legislature.nameTa : speech.legislature.nameEn}</span>
+                </span>
+              )}
+              {speech.venue && (
+                <span className="inline-flex items-center gap-1.5">
+                  <MapPin className="h-3.5 w-3.5" aria-hidden />
+                  <span lang={lang}>{ta ? speech.venue.ta : speech.venue.en}</span>
+                </span>
+              )}
+              {speech.event && <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>}
             </div>
             <p className="mt-1.5 text-xs text-ink/50 dark:text-night-text/50" lang={lang}>
-              {ta
-                ? `${speech.speaker.nameTa} — ${speech.speaker.roleTa}`
-                : `${speech.speaker.nameEn} — ${speech.speaker.roleEn}`}
+              {speakerLine(speech, ta)}
             </p>
 
             <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
@@ -112,8 +118,8 @@ export default function SpeechReader({ slug }: { slug: string }) {
                   ? "இது மூலத் தமிழுடன் இணைக்கப்பட்ட, சரிபார்க்கப்பட்ட நம்பகமான ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
                   : "A verified, source-linked faithful English reading translation. The Tamil original remains authoritative."
                 : ta
-                  ? "கீழே அச்சிட்ட 1970 நூலின்படி சரிபார்க்கப்பட்ட மூல தமிழ் உரை — மாற்றமின்றி; அச்சுத் தலைப்புகளும் பக்க எல்லைகளும் தக்கவைக்கப்பட்டுள்ளன."
-                  : "Below is the verified original Tamil, faithful to the printed 1970 booklet — printed section headings and source-page boundaries preserved."}
+                  ? "கீழே கட்டுப்படுத்தும் அச்சு மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்ட தமிழ் உரை — மாற்றமின்றி; மூலப் பக்கச் சான்று தக்கவைக்கப்பட்டுள்ளது."
+                  : "Below is the verified original Tamil, faithful to the controlling printed source, with source-page provenance preserved."}
             </p>
           </>
         )}
@@ -121,28 +127,21 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {!speech && !error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "உரை ஏற்றப்படுகிறது…" : "Opening the speech…"}</p>}
         {error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்த உரையை ஏற்ற முடியவில்லை." : "This speech could not be loaded."}</p>}
 
-        {/* Source-order blocks: printed section headings, resolved logical paragraphs, and —
-            where the paragraph relationship is scan-pending — a NEUTRAL group (not separate
-            paragraphs) with a source-page rule between the runs. */}
         {speech && (
           <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
             {renderBlocks(blocks, ta)}
           </div>
         )}
 
-        {/* Provenance / source note. */}
         {speech && (
           <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
-            {ta
-              ? `${speech.speaker.nameTa} · ${speech.legislature.nameTa}, ${formatDate(speech.date, true)}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
-              : `${speech.speaker.nameEn} · ${speech.legislature.nameEn}, ${formatDate(speech.date, false)}. Transcribed and verified against the printed source. `}
+            {provenanceLine(speech, ta)}{" "}
             <Link href={`/speeches/${slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
               {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
             </Link>
           </p>
         )}
 
-        {/* Cross-links. */}
         <div className="mt-10 rounded-2xl border border-ink/10 bg-white/40 p-4 dark:border-white/10 dark:bg-night-surface/40" data-print="hide">
           <p className="text-[11px] uppercase tracking-wider text-marina dark:text-marina-light">{ta ? "கலைஞர் வேறிடங்களில்" : "Elsewhere Kalaignar writes"}</p>
           <div className="mt-2 flex flex-wrap gap-2 text-sm">
@@ -159,9 +158,30 @@ export default function SpeechReader({ slug }: { slug: string }) {
   );
 }
 
-// Render the ordered block stream. A run of [paragraph, unresolved-break, paragraph, …] is
-// wrapped in ONE non-<p> `role="group"` so an unresolved paragraph relationship asserts neither
-// a break nor a continuation; standalone resolved paragraphs render as <p>.
+function speechSubtypeLabel(speech: Speech, ta: boolean) {
+  if (speech.subtype === "assembly-speech") return ta ? "சட்டமன்ற உரை" : "Assembly speech";
+  return ta ? "பொதுரை" : "Public speech";
+}
+
+function speakerLine(speech: Speech, ta: boolean) {
+  const name = ta ? speech.speaker.nameTa : speech.speaker.nameEn;
+  const role = ta ? speech.speaker.roleTa : speech.speaker.roleEn;
+  return role ? `${name} — ${role}` : name;
+}
+
+function provenanceLine(speech: Speech, ta: boolean) {
+  const context = speech.legislature
+    ? ta ? speech.legislature.nameTa : speech.legislature.nameEn
+    : speech.venue
+      ? ta ? speech.venue.ta : speech.venue.en
+      : null;
+  const date = speech.date ? formatDate(speech.date, ta) : null;
+  const facts = [ta ? speech.speaker.nameTa : speech.speaker.nameEn, context, date].filter(Boolean).join(" · ");
+  return ta
+    ? `${facts}. கட்டுப்படுத்தும் மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது.`
+    : `${facts}. Transcribed and verified against the controlling source.`;
+}
+
 function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
   const out: ReactNode[] = [];
   let i = 0;
@@ -169,7 +189,7 @@ function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
     const b = blocks[i];
     if (b.kind === "heading") {
       out.push(
-        <h2 key={i} className={cn("mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light")}>
+        <h2 key={i} className="mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light">
           {inline(b.text)}
         </h2>,
       );
@@ -186,7 +206,6 @@ function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
       continue;
     }
     if (b.kind === "paragraph") {
-      // Part of an unresolved-relationship group?
       if (blocks[i + 1]?.kind === "unresolved-break") {
         const group: SpeechBlock[] = [b];
         i++;
@@ -205,18 +224,12 @@ function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
       i++;
       continue;
     }
-    // A stray unresolved-break (shouldn't occur outside a group) → neutral marker.
-    if (b.kind === "unresolved-break") {
-      out.push(<PageRule key={i} toPage={b.toPage} note={b.note} ta={ta} />);
-    }
+    if (b.kind === "unresolved-break") out.push(<PageRule key={i} toPage={b.toPage} note={b.note} ta={ta} />);
     i++;
   }
   return out;
 }
 
-// A NEUTRAL group for an unresolved printed-paragraph relationship: the runs are <div>s (NOT
-// <p>) and the source-page rule sits between them. role="group" + aria-label communicate that
-// the printed paragraph relationship across these source pages is unresolved.
 function UnresolvedGroup({ items, ta }: { items: SpeechBlock[]; ta: boolean }) {
   return (
     <div
@@ -237,7 +250,6 @@ function UnresolvedGroup({ items, ta }: { items: SpeechBlock[]; ta: boolean }) {
   );
 }
 
-// A subtle labelled source-page rule (neutral — asserts no paragraph relationship).
 function PageRule({ toPage, note, ta }: { toPage: number; note?: string; ta: boolean }) {
   return (
     <div className="my-4 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" title={note} data-print="hide" role="separator" aria-label={ta ? `மூலப் பக்கம் ${toPage} எல்லை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை` : `source page ${toPage} boundary — printed paragraph relationship unresolved`}>
@@ -248,10 +260,6 @@ function PageRule({ toPage, note, ta }: { toPage: number; note?: string; ta: boo
   );
 }
 
-// Render a paragraph's per-source-page segments as inline nodes, joined per `joinToNext`:
-// "none" = no space (mid-word split); "space" = a single space; "unknown" = a NEUTRAL inline
-// source-page marker (the exact printed spacing is unresolved — never silently spaced or
-// concatenated); "end" = last segment. Each fragment keeps faithful inline Markdown.
 function renderSegments(segments: { text: string; sourcePage: number | null; joinToNext: string }[], ta: boolean): ReactNode[] {
   const nodes: ReactNode[] = [];
   segments.forEach((s, i) => {
@@ -267,21 +275,14 @@ function renderSegments(segments: { text: string; sourcePage: number | null; joi
           role="separator"
           aria-label={ta ? `மூலப் பக்கம் ${p} எல்லை — சரியான இடைவெளி தீர்மானிக்கப்படவில்லை` : `source page ${p} boundary — exact printed spacing unresolved`}
         >
-          {"⟨"}
-          {ta ? `ப.${p}` : `p.${p}`}
-          {"⟩"}
+          {"⟨"}{ta ? `ப.${p}` : `p.${p}`}{"⟩"}
         </span>,
       );
     }
-    // "none" / "end" → no separator (fragments abut with no space).
   });
   return nodes;
 }
 
-// Minimal, faithful inline Markdown rendering for the source text: **bold** (used by the
-// source for parliamentary interjection speaker labels and the subtitle) and *italic* (used
-// for interjections such as *(Laughter.)* and cited publication names). Nothing else is
-// interpreted; the text is otherwise verbatim.
 function inline(text: string): ReactNode {
   const nodes: ReactNode[] = [];
   const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
