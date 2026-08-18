@@ -1,0 +1,380 @@
+{
+ "workId": "manohara",
+ "slug": "segment-016",
+ "ordinal": 16,
+ "sceneId": "manohara-s016",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "விஜயா அந்தப்புரம்",
+ "startPdfPage": 30,
+ "startPrintedPage": 29,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 30,
+   "printed_page": 29
+  },
+  {
+   "pdf_page": 31,
+   "printed_page": 30
+  }
+ ],
+ "tamil": {
+  "text": "விஜயா அந்தப்புரம் “வாழ்வதே மாது நான்” பாட்டு.\n\nவிஜயா விஷம் அருந்த முயற்சிக்கிறாள்.\n\n(உள்ளேவந்து) மனோகரன் : விஜயா! தற்கொலை கோழைத்தனம்!\n\nவிஜயா : இருட்டு வேளையில் பெண்களின் அந்தப்புரத்தில் நுழைவது அதைவிட கோழைத்தனம்...\n\nமனோகரன் : பரவாயில்ல. மரணப் புயலிலிருந்து ஒரு மலர்க் கொடியைக் காப்பாற்றி யிருக்கிறேன்.\n\nவிஜயா : இந்த அடிமையின் சாவை யாரும் தடுக்க வேண்டாம்.\n\nமனோகரன் : அடிமையார் அடிமை? அழகே உருவான ராஜகுமாரி நீ...\n\n(ராஜப்பிரியன் நுழைந்தபடி)\n\n\n\nராஜ : அதனால் தான் சொல்லுகிறேன் அர்த்தராத்திரியில் அந்தப்புரத்தில் பிரவேசிக்கக் கூடாதென்று!\n\nமனோ : ராஜப்பிரியா! தெரியுமா சேதி?\n\nராஜ : தெரிந்துதானே வந்தேன் உன் சேதி! மனோகரா! எச்சரிக்கையாய் இருக்க வேண்டிய நேரம். ஏமாந்து விடாதே! இளவரசி கொஞ்ச நேரத்துக்கு முன் உன்னைக் கொல்லவந்த எமன்!\n\nவிஜ : இருதயம் எனக்கும் இருக்கிறது. நல்ல இருதயம் படைத்தவர்கள் ஒரு முறைதான் தவறு செய்வார்கள்\n\nமனோ : விஜயா! நீ வாழ வேண்டியவள். அதுமட்டுமல்ல என் பாதுகாப்பில் இருக்கிறாய்... இதுபோன்ற விபரீத செயல்களை என்னால் அனுமதிக்க முடியாது.\n\nவிஜ : உயிர் உங்கள் அடிமையல்ல. அது ஆண்டவன் தந்தது.\n\nமனோ : அதைப்பற்றிய விளக்கம் நாளை விசாரணை மண்டபத்தில்."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s016-u001",
+    "kind": "song-reference",
+    "speakerLabel": null,
+    "text": "Vijaya's inner chamber — the song ‘I, a Woman, Live.’",
+    "source": {
+     "sourcePath": "works/manohara/songs/inventory.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": "manohara-song-003",
+     "sourceLocator": {
+      "kind": "named-song-reference",
+      "ordinal": 1,
+      "description": "Vijaya's inner chamber; the source names the song `வாழ்வதே மாது நான்`."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "Only the source-visible title/location reference is translated; no absent lyrics are supplied.",
+      "The occurrence's lyric authorship remains unresolved in the song evidence layer."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s016-u002",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Vijaya tries to drink poison.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-016.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 1,
+      "description": "Vijaya tries to drink poison."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u003",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Vijaya! Suicide is cowardice!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u004",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Entering the women's inner chamber in the dark is greater cowardice still...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u005",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Never mind. I have saved a flowering creeper from the storm of death.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The flower-creeper/death-storm image is retained."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s016-u006",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "No one need stop the death of this slave.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u007",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Slave? Who is a slave? You are a princess made of beauty itself...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(Rajapriyan enters.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-016.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "parenthetical-entrance",
+      "ordinal": 1,
+      "description": "Rajapriyan enters as the conversation continues."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 30,
+       "printed_page": 29
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u009",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜ",
+    "text": "That is exactly why I say one must not enter the inner chamber at midnight!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u010",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Rajapriya! Do you know the news?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u011",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜ",
+    "text": "I came knowing your news, didn't I! Manohara! This is a time to be on guard. Do not be deceived! A little while ago the princess was Yama himself coming to kill you!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`எமன்` is retained as Yama rather than generalized to 'death'."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s016-u012",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "I too have a heart. Those who possess a good heart make a mistake only once.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u013",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Vijaya! You are one who must live. More than that, you are under my protection... I cannot permit such disastrous acts.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u014",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Life is not your slave. It was given by the Lord.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s016-u015",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "The explanation for that—tomorrow, in the inquiry hall.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-016.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-016.md",
+     "sourceRecordId": "manohara-s016-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 31,
+       "printed_page": 30
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   }
+  ]
+ }
+}

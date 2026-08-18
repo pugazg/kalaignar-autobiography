@@ -1,0 +1,337 @@
+{
+ "workId": "manohara",
+ "slug": "segment-026",
+ "ordinal": 26,
+ "sceneId": "manohara-s026",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அவைக்கூடம்",
+ "startPdfPage": 38,
+ "startPrintedPage": 37,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 38,
+   "printed_page": 37
+  }
+ ],
+ "tamil": {
+  "text": "அவைக்கூடம், “மனோகரன் வாழ்க!” என்ற முழக்கம், அரசர் வசந்தசேனையோடு நுழைகிறார்.\n\nபிரதானி1 : வசந்தசேனைக்கு ராஜ விருதுகளா? மன்னர் மயங்கித்தான் விட்டார்,\n\nபிரதானி2, மயக்கத்தால், இந்த மறவர் பூமியின் மானத்தையே வாங்கிவிட்டார்!\n\nபிரதானி3 : அவமானச் சின்னம்—அவளோடு அரசர்... அதுவும் அவைக்களத்தில்\n\nபிரதானி4 : சத்திய சீலரே...என்ன இது?\n\nசத்தியசீலர் : விண்மீன் இருக்க வேண்டிய இடத்தில் மின்மினி......\n\n[மனோகரன் வாழ்த்தொலிகளோடு நுழைகிறான். வசந்தசேனையை ரத்ன சிம்மாசனத்தில் பார்த்ததும் கொதிப்படைந்து “ஆ” வென அலறுகிறான்.]\n\nராஜப்பிரியன் : மனோகரா! தாயின் கட்டளை!\n\nவசந்தசேனை : புதல்வா.........நினைவிருக்கிறதா........... போரில் ஜெயித்த பிறகே வெற்றிமாலை- அணிவேன் என்றாயே—இதோ என் கண்மணிக்கு நான் சூட்டும் வாகைமாலை\n\nமனோ : சீ! வெற்றிமாலை!...உன் கையால்...வாள் (உருவுகிறான்)\n\nசத்தியசீலர் : மனோகரா...தாயின் சொல் தட்டிவிடாதே...\n\nராஜப்பிரியன் : ஆமாம்...மனோகரா!\n\nஆத்திரமடைந்த மனோகரன் ராஜப்பிரியன் கன்னத்தில் அறைந்துவிட்டு வேகமாக வெளியேறுகிறான்]"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s026-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Court hall. Cries of ‘Long live Manoharan!’ The king enters with Vasantha Sena.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-026.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-location-action",
+      "ordinal": 1,
+      "description": "Court hall; cries of Long live Manoharan; the king enters with Vasantha Sena."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u002",
+    "kind": "dialogue",
+    "speakerLabel": "பிரதானி1",
+    "text": "Royal honours for Vasantha Sena? The king has truly fallen under her spell.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u003",
+    "kind": "dialogue",
+    "speakerLabel": "பிரதானி2",
+    "text": "In that spell, he has bartered away the very honour of this warrior land!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source record's comma delimiter is preserved upstream and is not normalized here."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s026-u004",
+    "kind": "dialogue",
+    "speakerLabel": "பிரதானி3",
+    "text": "A symbol of disgrace—the king with her... and that too in the royal assembly.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u005",
+    "kind": "dialogue",
+    "speakerLabel": "பிரதானி4",
+    "text": "Satyaseelar... what is this?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u006",
+    "kind": "dialogue",
+    "speakerLabel": "சத்தியசீலர்",
+    "text": "A firefly in the place where a star should be......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The star/firefly contrast is retained literally."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s026-u007",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Manoharan enters amid cries of welcome. Seeing Vasantha Sena on the Ratna throne, he boils with rage and cries ‘Ah!’]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-026.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-entrance-reaction",
+      "ordinal": 1,
+      "description": "Manoharan enters amid cheers and cries out on seeing Vasantha Sena on the Ratna throne."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The embedded cry belongs to the source stage narration and is not assigned an invented dialogue record."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s026-u008",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்பிரியன்",
+    "text": "Manohara! Your mother's command!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u009",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தசேனை",
+    "text": "Son......... do you remember........... You said you would wear the victory garland only after winning the war—here is the vaagai garland I place on my darling.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`வாகைமாலை` is retained as the traditional vaagai victory garland rather than flattened to a generic wreath."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s026-u010",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Fie! A victory garland!... from your hand... sword—(he draws it)",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source-attached sword-drawing cue remains inside the linked utterance."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s026-u011",
+    "kind": "dialogue",
+    "speakerLabel": "சத்தியசீலர்",
+    "text": "Manohara... do not disobey your mother's word...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u012",
+    "kind": "dialogue",
+    "speakerLabel": "ராஜப்பிரியன்",
+    "text": "Yes... Manohara!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-026.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": "manohara-s026-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s026-u013",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Enraged, Manoharan slaps Rajapriyan across the cheek and storms out.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-026.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-026.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "closing-action",
+      "ordinal": 1,
+      "description": "Enraged, Manoharan slaps Rajapriyan and leaves quickly."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 38,
+       "printed_page": 37
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   }
+  ]
+ }
+}

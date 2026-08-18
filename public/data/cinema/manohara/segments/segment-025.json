@@ -1,0 +1,260 @@
+{
+ "workId": "manohara",
+ "slug": "segment-025",
+ "ordinal": 25,
+ "sceneId": "manohara-s025",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அந்தப்புரம்",
+ "startPdfPage": 37,
+ "startPrintedPage": 36,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 37,
+   "printed_page": 36
+  }
+ ],
+ "tamil": {
+  "text": "[அந்தப்புரம்]\n\nவசந்தா : உம், நாளை மனோகரனுக்கு வெற்றிவிழா வரவேற்பு!...அப்போது நான் விதவையைப் போல ஒரு மூலையில்......\n\nஅரசன் : (சங்கடத்துடன்).........வசந்தி! இப்படியெல்லாம் பேசாதே - சகலகெளரவத்தோடும் நீ சபைக்கு வரலாம்......\n\nவச : வரலாமா?\n\nஅர : உம்...வரலாம்.\n\nவச : உம்...தயக்கம் பிறந்துவிட்டது...பாவம்! நீங்கள் என்ன செய்வீர்கள். சபையோர்கள் அனுமதிக்க மாட்டார்கள். சக்கரவர்த்தியாயிருந்தாலென்ன சாதாரண பிரஜைகளுக்கு பயப்பட வேண்டியவர்தானே தாங்கள்!\n\nஅர : இல்லை...வரலாம்......\n\nவச : வரலாம்!... எங்கே வந்தால் என்ன? எதிரி நாட்டிலே இருந்து வந்திருக்கிற அந்த ரத்ன சிம்மாசனத்திலே அல்லும், பகலும் உங்கள் அன்பையே நினைத்து தவம் இருக்கும் இந்த தரித்திரம் பிடித்தவள் பட்டமகிஷிபோல பக்கத்திலே அமர முடியுமா என்ன? அவ்வளவுக்கு கொடுத்து வைத்த பாவியா நான்?\n\nஅர : பக்கத்திலென்ன—பரமசிவனைப் போல பலமிருந்தால் உன்னை என் தலையில்கூட வைத்துக் கொள்வேன், கங்கையைப் போல!\n\nவசந்தி : அப்படியானால் நாளை...... தர்பாரில்!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s025-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Inner chamber.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-025.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-bracketed-stage-direction",
+      "ordinal": 1,
+      "description": "Inner chamber."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s025-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Hmm, tomorrow a victory-festival welcome for Manoharan!... and then I, like a widow, in some corner......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s025-u003",
+    "kind": "dialogue",
+    "speakerLabel": "அரசன்",
+    "text": "(With discomfort)......... Vasanthi! Do not speak like this—you may come to the assembly with every honour......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The parenthetical emotional cue remains within the immutable dialogue-linked unit as stored in the source record."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s025-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "May I come?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s025-u005",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "Hmm... you may.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s025-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Hmm... hesitation has been born... poor you! What can you do? The people of the assembly will not permit it. So what if you are emperor—you must still fear ordinary subjects, must you not!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Vasantha Sena's insinuating progression from hesitation to the emperor's fear of ordinary subjects is preserved."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s025-u007",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "No... you may come......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s025-u008",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "I may come!... What does it matter where I come? On that Ratna throne brought from the enemy land, can this wretched woman—who day and night performs penance thinking only of your love—sit beside you like the chief queen? Am I a sinner blessed with such fortune?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The self-abasing `தரித்திரம் பிடித்தவள்` and ironic `கொடுத்து வைத்த பாவி` are retained rather than neutralized."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s025-u009",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "Why merely beside me—if I had strength like Paramasiva, I would keep you even upon my head, like the Ganga!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The Paramasiva/Ganga image is retained rather than replaced with a generic declaration of devotion."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s025-u010",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தி",
+    "text": "Then tomorrow...... in the durbar!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-025.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-025.md",
+     "sourceRecordId": "manohara-s025-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 37,
+       "printed_page": 36
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   }
+  ]
+ }
+}

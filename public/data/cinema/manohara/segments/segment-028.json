@@ -1,0 +1,312 @@
+{
+ "workId": "manohara",
+ "slug": "segment-028",
+ "ordinal": 28,
+ "sceneId": "manohara-s028",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "மாளிகையின் ஒரு பகுதி",
+ "startPdfPage": 39,
+ "startPrintedPage": 38,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 39,
+   "printed_page": 38
+  },
+  {
+   "pdf_page": 40,
+   "printed_page": 39
+  }
+ ],
+ "tamil": {
+  "text": "மாளிகையின் ஒரு பகுதி.\n\nவைத்தியன் வசந்தனுக்கு மருந்து கொடுத்துக் கொண்டிருக்கிறான்......\n\nவைத்தியன் : உம்... சாப்பிடணும்......\n\nவசந்தன் : ஏய்—வைத்தியா! இந்த மருந்துக்குப் பெயர் என்ன?\n\nவைத்தியன் : சுயபுத்தி சூரணம்......\n\nவசந்தன் : இது எதிலே தயாரிக்கப்பட்டது—\n\nவைத்தியன் : திராட்சை, தேன், கற்கண்டு, சக்கரை இவைகளால் தயாரிக்கப்பட்டது.\n\nவசந்தன் : அப்ப கசக்குமோ...\n\nவைத் : “ஊஹூம்...கொஞ்சம் புளிக்கும், என்னு ரெண்டு? மிளகாயும் சேர்த்திருக்கேன்.\n\nவச : வைத்தியா!...எனக்கு என்ன வியாதிடா—\n\nவைத் : தீராத வியாதி...\n\n\n\nவசந் : உம்—அதானே பாத்தேன்—எல்லாரும் பைத்தியம் பைத்தியங்கிறாங்களே—\nவிகடா! கேட்டியா—எனக்கு பைத்தியம் ஒண்ணும் கிடையாது! தீராத வியாதி!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s028-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "A part of the palace. The physician is giving medicine to Vasanthan......",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-028.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-location-action",
+      "ordinal": 1,
+      "description": "A part of the palace; the physician is giving medicine to Vasanthan."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்தியன்",
+    "text": "Hmm... you must take it......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Hey—physician! What's the name of this medicine?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்தியன்",
+    "text": "Suyabuddhi Chooranam......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The comic medicine-name `சுயபுத்தி சூரணம்` is transliterated rather than replaced with a modern diagnosis; literally it suggests a powder for one's own sense/wits."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s028-u005",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "What is it made from—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்தியன்",
+    "text": "It is made with grapes, honey, rock candy and sugar.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u007",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Then will it be bitter?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u008",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்",
+    "text": "Uh-huh... a little sour; and I've added a couple of chillies too.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's colloquial comic phrasing is retained rather than medicalized."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s028-u009",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Physician!... what disease do I have, man—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u010",
+    "kind": "dialogue",
+    "speakerLabel": "வைத்",
+    "text": "An incurable disease...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 39,
+       "printed_page": 38
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s028-u011",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The exchange continues.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-028.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "physical-page-continuation",
+      "ordinal": 1,
+      "description": "The exchange continues onto PDF 40."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "This unit marks the source's physical continuation without inventing a new scene ending or beginning."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s028-u012",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Hmm—that's what I thought! Everyone keeps saying mad, mad—Vikata! Did you hear? I haven't got any madness at all! It's an incurable disease!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-028.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-028.md",
+     "sourceRecordId": "manohara-s028-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 40,
+       "printed_page": 39
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The joke depends on Vasanthan taking `incurable disease` as proof that he is not mad; the comic logic is preserved."
+     ]
+    }
+   }
+  ]
+ }
+}

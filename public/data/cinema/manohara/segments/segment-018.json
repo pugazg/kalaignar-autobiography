@@ -1,0 +1,217 @@
+{
+ "workId": "manohara",
+ "slug": "segment-018",
+ "ordinal": 18,
+ "sceneId": "manohara-s018",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பாண்டியன் அரண்மனை",
+ "startPdfPage": 32,
+ "startPrintedPage": 31,
+ "canonicalPart": "part-02",
+ "pageProvenance": [
+  {
+   "pdf_page": 32,
+   "printed_page": 31
+  }
+ ],
+ "tamil": {
+  "text": "(பாண்டியன் அரண்மனை)\n\nமனோகரன் : விஜயா.... இந்த அரண்மனையில் நீ ஒருத்தி தான் அழகி என்று நினைத்தேன். உனக்குப் போட்டியாக ஒரு பொற்கொடி யிருப்பது தெரியாமல் போய் விட்டது.\n\nவிஜயா : யார்?\n\nமனோ : [கண்ணாடியில் தெரியும் விஜயாவின் உருவத்தை காட்டி] அதோ! தங்க ரோஜாவிலே வைரப்பனித்துளிகளின் சதிராட்டம் இந்தச் சிரிப்பு!\n\nவிஜ : அதிருக்கட்டும்! எதிரியின் மகள் நான்! என்னை தங்கள் தாய் தந்தையர்கள் ஏற்றுக்கொள்வார்களா?\n\nமனோ : நானும் அப்படித்தான் சந்தேகித்தேன். எதிரியாயிற்றே நான் என்னை நீ ஏற்றுக்கொள்வாயோ என்று!\n\nவிஜ : உங்கள் வீரத்தைக் காதலித்தேன். என் தாய் நாட்டு மண் அதைத் தடுத்தது! உங்கள் வசீகரத்தில் மயங்கினேன்! அப்பாவின் பாசம் அதற்கு அணை போட்டது. முடிவில் உங்கள் நேர்மையான இருதயம் என்னை ஜெயித்துவிட்டது! என்ன?\n\nமனோ : பேசு கண்ணே... பேசு! உன் அமுதூறும் இதழ் கடலின் தேனலைகளை... கண்கள் எழுதிக் குவிக்கும் காதற் காவியங்களை ரசித்துக்கொண்டே யிருக்கிறேன் இதயராணி... இன்னும் கொஞ்சம் பேசு..."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s018-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "(The Pandiyan palace.)",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-018.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-parenthetical-stage-direction",
+      "ordinal": 1,
+      "description": "Pandiyan palace."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s018-u002",
+    "kind": "dialogue",
+    "speakerLabel": "மனோகரன்",
+    "text": "Vijaya.... I thought you alone were the beauty in this palace. I failed to notice that there is a golden creeper to rival you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The `பொற்கொடி` golden-creeper image is retained."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s018-u003",
+    "kind": "dialogue",
+    "speakerLabel": "விஜயா",
+    "text": "Who?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s018-u004",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "[Pointing to Vijaya's reflection in the mirror] There! This smile is a sadir-dance of diamond dewdrops upon a golden rose!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The mirror action remains inside the immutable dialogue-linked unit as in the source record.",
+      "`சதிராட்டம்` is retained as `sadir-dance` to preserve the cultural dance image."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s018-u005",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Leave that aside! I am the enemy's daughter! Will your mother and father accept me?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s018-u006",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "I wondered the same thing. I am your enemy, after all—would you accept me?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s018-u007",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "I loved your valour. The soil of my motherland stopped it! I was enchanted by your charm! My father's affection dammed it back. In the end, your honest heart conquered me! What?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The soil/dam/conquest sequence is preserved as a linked metaphorical progression."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s018-u008",
+    "kind": "dialogue",
+    "speakerLabel": "மனோ",
+    "text": "Speak, my dear... speak! I go on savouring the honey-waves of the sea of your nectar-dripping lips... the love-epics your eyes write and heap before me, queen of my heart... speak a little more...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-018.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-018.md",
+     "sourceRecordId": "manohara-s018-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 32,
+       "printed_page": 31
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The deliberately lush lip-sea/honey-wave and eye-written-epic imagery is retained rather than reduced to ordinary romantic prose."
+     ]
+    }
+   }
+  ]
+ }
+}

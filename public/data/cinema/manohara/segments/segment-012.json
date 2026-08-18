@@ -1,0 +1,464 @@
+{
+ "workId": "manohara",
+ "slug": "segment-012",
+ "ordinal": 12,
+ "sceneId": "manohara-s012",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "நந்தவனம் — இரவு நேரம்",
+ "startPdfPage": 25,
+ "startPrintedPage": 24,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 25,
+   "printed_page": 24
+  },
+  {
+   "pdf_page": 26,
+   "printed_page": 25
+  }
+ ],
+ "tamil": {
+  "text": "மாளிகையை அடுத்த நந்தவனம்,\nஇரவு நேரம்......\n\nவசந்த சேனை, தனியாக மறைந்து மறைந்து யாரையோ எதிர் பார்க்கிறாள்......\n\nவசந்த சேனையின் தோழி வருகிறாள்.\n\nவசந்தா : எங்கேயடி பெளத்தாயனார்?\n\n[ஈனக் குரலில்]......\n\n\n\nதோழி : மெதுவாக இதோ...\n[மெதுவாக]......\n\nதோழி சுட்டிக் காட்டவே—பெளத்தாயனன் வந்துகொண்டிருக்கிறான்...\n\nவசந்தா : சரி...நீ போ ;...\n\nவசந்தா : பெளத்தாயனரே...இரவே புறப்படுகிறீரா......\n\nபெளத்தாயன் : ஆமாம்...ஏன்?...\n\nவசந்தா : தந்திரமாக நடந்து கொள்ளும்......\n\nபெளத்தாயன் : அவனை திரும்பாமல் செய்துவிடுகிறேன், நீங்கள் கவலையை விடுங்கள்.\n\nவசந்தா : அவன் தலை என் காலடியில் கிடக்கவேண்டும்.\n\nபெளத்தாயன் : ஊஹூம்...தலையைக் கொண்டுவந்தால் நமக்கு ஆபத்து. அவனை யுத்த களத்திலேயே கொன்று அவனுடைய போர்வாளை உங்களிடம் காட்டுகிறேன்.\n\nவசந்தா : ஆமாம்—பழியை பகைவர்கள்மீது போட்டுவிட வேண்டும். மனோகரனின் சாவு மர்மமாகவே இருந்து விடும்—\n\nபெளத்தாயன் : ஓ!\n\nவசந்தா : உமக்கு ஆயிரம் பொன் பரிசு!......\n\nபெளத்தாயன் : அம்மணி, நான் போர் வாளைக் கொண்டு வருவேன், நீங்கள் பொன் மூட்டையை......\n\nவசந்தா : பூரிப்பான செய்தி—கொண்டுவரும்—பொன் என்ன, வைரங்களை அள்ளித் தருகிறேன்.\n\nபெளத்தாயன் : சரியம்மா...\n\nவசந்தா : ஜாக்கிரதை......"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s012-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "The garden adjoining the palace. Night...... Vasantha Sena, alone, hides here and there, waiting for someone...... Vasantha Sena's companion arrives.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-012.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-stage-direction",
+      "ordinal": 1,
+      "description": "Garden adjoining the palace at night; Vasantha Sena waits in hiding and her companion arrives."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Where is Bauthayanar?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u003",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[In a low voice]......",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-012.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "bracketed-voice-direction",
+      "ordinal": 1,
+      "description": "The preceding question is spoken in a low, weak voice."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 25,
+       "printed_page": 24
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u004",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "Softly... there he is...\n[Softly]......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The embedded second `மெதுவாக` direction remains inside the immutable dialogue-linked unit because it is stored there in the source record."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s012-u005",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "As the companion points him out, Bauthayanan is seen approaching...",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-012.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "stage-action",
+      "ordinal": 1,
+      "description": "The companion points; Bauthayanan is seen approaching."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u006",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "All right... you go ;...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The unusual source punctuation is not smoothed into a new sentence structure."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s012-u007",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Bauthayanar... are you leaving tonight itself?......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u008",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Yes... why?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u009",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Act with cunning......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u010",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "I'll make sure he does not return. Put aside your worry.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u011",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "His head must lie at my feet.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u012",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Uh-uh... bringing the head would put us in danger. I'll kill him on the battlefield itself and show you his war-sword.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u013",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Yes—we must put the blame on the enemies. Manoharan's death must remain a mystery—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u014",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Oh!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u015",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "A reward of a thousand gold pieces for you!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u016",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "Ammani, I shall bring the war-sword; you, the sack of gold......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u017",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Bring me news that fills me with joy—gold? I'll heap diamonds upon you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u018",
+    "kind": "dialogue",
+    "speakerLabel": "பெளத்தாயன்",
+    "text": "All right, Amma...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s012-u019",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தா",
+    "text": "Be careful......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-012.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-012.md",
+     "sourceRecordId": "manohara-s012-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 26,
+       "printed_page": 25
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   }
+  ]
+ }
+}

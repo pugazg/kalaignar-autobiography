@@ -1,0 +1,354 @@
+{
+ "workId": "manohara",
+ "slug": "segment-054",
+ "ordinal": 54,
+ "sceneId": "manohara-s054",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "சிறை — விஜயாவின் குழந்தை",
+ "startPdfPage": 82,
+ "startPrintedPage": 81,
+ "canonicalPart": "part-06",
+ "pageProvenance": [
+  {
+   "pdf_page": 82,
+   "printed_page": 81
+  }
+ ],
+ "tamil": {
+  "text": "[சிறையில் காவலர் விஜயாவின் குழந்தையை தூக்கிவர முயற்சி]\n\nகாவலர் : குழந்தையை கொண்டுவரும்படி உத்திரவு.\n\nவிஜ : ஆ! அத்தே!\n\nகாவ : உம் கொடுங்கள்.\n\nபத்மா : இந்த சின்னஞ்சிறு சிசு என்னப்பா குற்றஞ் செய்தது? ஒரு குற்றமும் செய்யவில்லையே இந்த குழந்தை! கொடியவர் உலவும் உலகில் ஜனித்ததைத் தவிர வேறொரு குற்றமும் செய்யவில்லையே!\n\nகாவ : அதெல்லாம் எங்களுக்குத் தெரியாது. மகாராணி உத்திரவு!\n\nவிஜ : யாரடா! மகாராணியோ வெளியே... என் குழந்தையைக் கேட்க நீங்கள் யார்? அந்த பாதகியிடம் சொல்-பாண்டிய நாட்டு ராஜகுமாரி தான் பெற்ற பைங்கொடியை தர மறுக்கிறாள் என்று. துணிவிருந்தால் நேருக்கு நேர் போரிட்டுப் பெற்றுக் கொள்ளச் சொல்!\n\nபத் : விஜயா பொறுமையாய் இரு!\n\nவிஜ : அத்தே! என் குழந்தையைக் கொடுத்துவிடச் சொல்லுகிறீர்களா அத்தே! அந்தக் கொலைக்காரியிடம், குஞ்சுகளைக் கொல்ல வட்டமிடும் பருந்தை கோழிகள்கூட எதிர்த்துப் போராடுமே! அத்தே! அவைகளைவிட தாய்மை உணர்ச்சி அற்றவளா நான்? என்னைக் கொன்றுவிடச் சொல்லுங்கள். என் உயிர் போன பிறகு என் ஜீவ ஓவியத்தை எடுத்துக் கொண்டு போகட்டும்.\n\n[காவலர் குழந்தையைப் பறித்தல்]\n\nவிஜ : ஐயோ அத்தே!\n\nபத் : குழந்தையை ஒன்றும் செய்யாதீர்கள் விட்டுவிடுங்கள்.\n\n(காவலர் குழந்தையுடன் ஓடுதல்)\n\n(பத்மாவதி அலறியபடி பின் தொடருதல்)"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s054-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[In the prison, guards try to take away Vijaya's child.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-054.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "opening-action",
+      "ordinal": 1,
+      "description": "Guards attempt to take Vijaya's child in the prison."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u002",
+    "kind": "dialogue",
+    "speakerLabel": "காவலர்",
+    "text": "Orders to bring the child.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u003",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Ah! Atthai!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u004",
+    "kind": "dialogue",
+    "speakerLabel": "காவ",
+    "text": "Come, give the child.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u005",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மா",
+    "text": "What crime has this tiny infant committed, son? This child has committed no crime! No crime at all except being born into a world where the cruel roam!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u006",
+    "kind": "dialogue",
+    "speakerLabel": "காவ",
+    "text": "We know nothing about all that. The Maharani's order!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u007",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Who is the Maharani outside there! Who are you to ask for my child? Tell that wretch—the princess of the Pandya country refuses to hand over the tender creeper she herself bore. If she has courage, tell her to fight me face to face and take the child!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "`பைங்கொடி` is retained as the tender-creeper image for the child."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s054-u008",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "Vijaya, be patient!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u009",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Atthai! Are you asking me to hand my child over to that murderess, Atthai? Even hens fight the hawk circling to kill their chicks! Am I a woman with less feeling of motherhood than they? Tell them to kill me. After my life is gone, let them take away my living portrait.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The hen/hawk maternal image and `ஜீவ ஓவியம்` living-portrait image are preserved."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s054-u010",
+    "kind": "dialogue",
+    "speakerLabel": "விஜ",
+    "text": "Ayyo, Atthai!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u011",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "Do nothing to the child—leave the child alone.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-054.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": "manohara-s054-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u012",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The guards snatch the child.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-054.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "child-seizure",
+      "ordinal": 1,
+      "description": "The guards snatch the child."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u013",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The guards run away with the child.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-054.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "exit-action",
+      "ordinal": 1,
+      "description": "The guards run away with the child."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s054-u014",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Padmavathi follows them, crying out.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-054.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-054.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "pursuit-action",
+      "ordinal": 1,
+      "description": "Padmavathi follows the guards, crying out."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 82,
+       "printed_page": 81
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   }
+  ]
+ }
+}

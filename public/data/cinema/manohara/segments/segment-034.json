@@ -1,0 +1,430 @@
+{
+ "workId": "manohara",
+ "slug": "segment-034",
+ "ordinal": 34,
+ "sceneId": "manohara-s034",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பத்மாவதியின் அறை",
+ "startPdfPage": 47,
+ "startPrintedPage": 46,
+ "canonicalPart": "part-03",
+ "pageProvenance": [
+  {
+   "pdf_page": 47,
+   "printed_page": 46
+  }
+ ],
+ "tamil": {
+  "text": "பத்மாவதியின் அறை.\n\nபத்மாவதி : அமைச்சரே! மகாராஜாவையே கேளுங்கள், என்ன சொல்கிறாரென்று!\n\nசத்யசீலா : மகாராஜா இதையெல்லாம் கவனிக்கவே மாட்டார்—\n\nபத் : மனோகரனை நினைத்தால் எனக்கு பயமாயிருக்கிறது.\n\nசத் : பயப்படத்தேவையில்லை-நான் பார்த்துக்கொள்கிறேன்.\n\n[அரசனும், வசந்த சேனையும் ஒளிந்திருந்து, கேட்டுக்கொண்டிருக்கிறார்கள்]\n\nவ. சே : மகாராஜா கவனிக்கமாட்டார்... மனோகரனுக்கு பயப்படத் தேவையில்லை\n\n(அரசர் பத்மாமீது சந்தேகம்கொண்டு திரும்புகிறார்)\n\n[தனியிடத்தில்]\n\nஅரசர் : (நிலவைப் பார்த்தபடி) களங்கம்...களங்கம்! என் பரம்பரையிலேயே இல்லாத களங்கம்! பாதகி!\n\n[பக்கத்திலிருந்த பத்மாவதியின் சிலையை உடைத்தெறிகிறார்.]\n\nவ. சே : ப்ரபு! அமைதியாக இருங்கள்...\n\nஅர : அமைதி! அவளுடைய சாவிலேதான் எனக்கு அமைதி!\n\nவ. சே : இதைக் கேளுங்கள் மகாராஜா! மகாராணி......\n\nஅர : மகாராணி......மறுபடியும் சொல்லாதே! மானமிழந்தவள்! நாடோடி...வேசி! வசந்தி! நீயே உத்திரவிடு! அவளைப் பாதாள சிறையில் போடவேண்டும்.\n\nவ. சே : ராணியைச் சிறையில் போடுவதால் உங்கள் ஆத்திரம் அடங்கும். வசந்த விழாவில் தாயைக் குறை கூறினேன் என்று தாண்டி விழுந்தானே, மனோகரன்! இப்போது என்ன சொல்கிறான்? மன்னிப்பு கேட்டுக்கொள்வானா என்னிடம்...\n\nஅர : கேட்கச் சொல்லுகிறேன்... உன்னை எதிர்த்துப் பேசியதற்கு கொலு மண்டபத்திலேயே மன்னிப்பு கேட்கச் சொல்லுகிறேன். பத்மாவதிக்குச் சிறைச் சாலை! மனோகரன் வசந்த சேனையிடம் மன்னிப்பு கேட்க வேண்டும்......"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s034-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "Padmavathi's room.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-034.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Padmavathi's room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u002",
+    "kind": "dialogue",
+    "speakerLabel": "பத்மாவதி",
+    "text": "Minister! Ask the Maharaja himself what he says!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u003",
+    "kind": "dialogue",
+    "speakerLabel": "சத்யசீலா",
+    "text": "The Maharaja will not pay attention to any of this—",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u004",
+    "kind": "dialogue",
+    "speakerLabel": "பத்",
+    "text": "When I think of Manoharan, I am afraid.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u005",
+    "kind": "dialogue",
+    "speakerLabel": "சத்",
+    "text": "There is no need to fear—I will take care of it.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u006",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The king and Vasantha Sena listen from hiding.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-034.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "eavesdropping-action",
+      "ordinal": 1,
+      "description": "The king and Vasantha Sena listen from hiding."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u007",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "The Maharaja will not notice... there is no need to fear Manoharan.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Vasantha Sena repeats the overheard phrases to sharpen the king's suspicion."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s034-u008",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[The king turns away, now suspicious of Padmavathi.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-034.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "reaction-action",
+      "ordinal": 1,
+      "description": "The king turns away suspicious of Padmavathi."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u009",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[In a private place.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-034.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 2,
+      "description": "A private place."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u010",
+    "kind": "dialogue",
+    "speakerLabel": "அரசர்",
+    "text": "(Looking at the moon) Stain... stain! A stain never before in my lineage! Sinner!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The moon-gazing cue and repeated `stain` image remain inside the source-linked turn."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s034-u011",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[He smashes Padmavathi's statue beside him.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-034.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "violent-symbolic-action",
+      "ordinal": 1,
+      "description": "The king smashes Padmavathi's nearby statue."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u012",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "Prabhu! Be calm...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u013",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "Calm! Only in her death will I have calm!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The repeated `அமைதி` word is preserved."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s034-u014",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "Listen to this, Maharaja! The queen......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u015",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "Queen...... do not say that again! Woman without honour! Vagabond... whore! Vasanthi! You yourself give the order! She must be put in the underground prison.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The king's escalating insults are translated directly rather than euphemized."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s034-u016",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே",
+    "text": "Putting the queen in prison will cool your fury. At the spring festival Manoharan leapt at me because I spoke ill of his mother! What will he say now? Will he ask my pardon?...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s034-u017",
+    "kind": "dialogue",
+    "speakerLabel": "அர",
+    "text": "I shall make him ask... I shall make him apologize in the royal hall itself for speaking against you. Prison for Padmavathi! Manoharan must apologize to Vasantha Sena......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-034.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-034.md",
+     "sourceRecordId": "manohara-s034-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 47,
+       "printed_page": 46
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   }
+  ]
+ }
+}

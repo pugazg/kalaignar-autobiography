@@ -1,0 +1,130 @@
+{
+ "workId": "manohara",
+ "slug": "segment-003",
+ "ordinal": 3,
+ "sceneId": "manohara-s003",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "மாளிகையின் ஒரு பகுதியில்",
+ "startPdfPage": 9,
+ "startPrintedPage": 8,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 9,
+   "printed_page": 8
+  }
+ ],
+ "tamil": {
+  "text": "மாளிகையின் ஒரு பகுதியில்\n\nவசந்தன் : ஆமாமாம் சந்தேகமில்லே விகடா! ராஜா மகன் இளவரசன்! இதிலே எனக்கு சந்தேகமில்லே...\n\nவிகடன் : வசந்தா! இதிலேமட்டுமா நமக்கு சந்தேகமில்லே... எந்த நாளிலும் எதிலும் நமக்கு எள்ளளவிலும் உள்ளபடிக்கு ஒரு சந்தேகமில்லே.\n\n(வசந்தன் ; விகடன் சந்தேகமில்லே பாட்டு)"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s003-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "In one part of the palace.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-003.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-003.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "scene-location-heading",
+      "ordinal": 1,
+      "description": "Bare source-visible location label opening the archival scene."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s003-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தன்",
+    "text": "Yes, yes—no doubt, Vikata! The king's son is the prince! About that, I have no doubt...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-003.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-003.md",
+     "sourceRecordId": "manohara-s003-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The comic repetition of `சந்தேகமில்லே` is preserved because it leads directly into the named song reference."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s003-u003",
+    "kind": "dialogue",
+    "speakerLabel": "விகடன்",
+    "text": "Vasantha! Is that the only thing we have no doubt about?... On any day, in anything, there is not even the slightest bit of doubt in us.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-003.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-003.md",
+     "sourceRecordId": "manohara-s003-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The intentionally absurd certainty is retained rather than rewritten into smoother logic."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s003-u004",
+    "kind": "song-reference",
+    "speakerLabel": null,
+    "text": "(Vasanthan and Vikatan — the ‘No Doubt’ song.)",
+    "source": {
+     "sourcePath": "works/manohara/songs/inventory.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-003.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": "manohara-song-001",
+     "sourceLocator": {
+      "kind": "named-song-reference",
+      "ordinal": 1,
+      "description": "Parenthetical Vasanthan-Vikatan song reference immediately after their dialogue."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "Only the source-visible song reference is translated. No absent lyric body is supplied.",
+      "The occurrence remains linked to `manohara-song-001`, whose authorship is unresolved."
+     ]
+    }
+   }
+  ]
+ }
+}

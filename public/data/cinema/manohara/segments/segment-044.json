@@ -1,0 +1,480 @@
+{
+ "workId": "manohara",
+ "slug": "segment-044",
+ "ordinal": 44,
+ "sceneId": "manohara-s044",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "பூஜை அறை",
+ "startPdfPage": 69,
+ "startPrintedPage": 68,
+ "canonicalPart": "part-05",
+ "pageProvenance": [
+  {
+   "pdf_page": 69,
+   "printed_page": 68
+  },
+  {
+   "pdf_page": 70,
+   "printed_page": 69
+  }
+ ],
+ "tamil": {
+  "text": "[பூஜை அறை]\n\nஉக் : யாரது ஓ... ராணி வசந்தா தேவியா?\n\nவசந் : ஸ்வாமிகளுக்கு ஆண்டவன் நினைவோ?\n\n\n\nஉக் : ஆண்டவனைப்பற்றியல்ல. ஆண்டு கொண்டிருப்பவனைப்பற்றி... உட்கார். உல்லாசி.\n\nவ. சே. : பழரசம் அருந்துங்களேன்.\n\nஉக் : முதலில் உன் பார்வை ரசம் அருந்துகிறேன் கண்ணே!\n\nசேனா : உங்களைப்பார்த்து எவ்வளவு நாட்களாகின்றன.\n\nதோழி : கூப்பிட்டீர்களா அம்மா.\n\nசேனா : இல்லை போடி.\n\nஉக் : (கூந்தலைக் கோதியபடி) ஆகா! முகில் கூட்டம். (பல்லைக்காட்டி) முல்லைத் தோட்டம். (கன்னத்தைத் தடவி) ரோஜாக் கொல்லை!\n\nசேனா : ஸ்வாமி!\n\nஉக் : மொத்தத்தில் இன்பத்தின் எல்லை!\n\nசேனா : ஆமாம்... திட்டங்கள் எல்லாம் எப்படி திட்டியிருக்கிறீர்கள்?\n\nஉக் : திவ்யமாக! அரண்மனையின் முக்கிய பகுதிகள் எல்லாம் நமது ஆண்டி வேடந்தரித்த வீரர்கள் ஆக்ரமித்துக்கொண்டிருக்கிறார்கள், நாம் ஆணையிட்டால் போதும், போர்! புருஷோத்தமன் கைது!\n\nசேனா : போர்கூட தேவைப்படாது. புருஷோத்தமனின் படை வீரர்களை என் கைக்குள் போட்டு வைத்திருக்கிறேன்.\n\nஉக் : சபாஷ்! போர் வந்தால்தான் என்ன? எதிரிப் படைகள் அரண்மனைக்குள் வந்த பிறகு யாரால்தான் எதிர்த்து ஜெயிக்க முடியும்?\n\nசேனா : எதிரிப் படை அரண்மனைக்குள் மட்டுமா வந்திருக்கிறது?\n\nஉக் : அந்தப்புரத்திற்கே வந்துவிட்டது என்கிறாயா? இது சண்டையிட அல்ல. சரணாகதி அடைய.\n\nசேனா : இரவு வருகிறேன்."
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s044-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "[Puja room.]",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-044.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "location-heading",
+      "ordinal": 1,
+      "description": "Puja room."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 69,
+       "printed_page": 68
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u002",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Who is it—oh... Queen Vasantha Devi?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 69,
+       "printed_page": 68
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u003",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்",
+    "text": "Are Swami's thoughts on God?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 69,
+       "printed_page": 68
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "This sets up the `ஆண்டவன் / ஆண்டு கொண்டிருப்பவன்` wordplay in Ugrasenan's reply."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u004",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Not about the Lord. About the one who is ruling... sit down, my delight.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The Lord/ruler turn in `ஆண்டவன் / ஆண்டு கொண்டிருப்பவன்` is retained rather than flattened."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u005",
+    "kind": "dialogue",
+    "speakerLabel": "வ. சே.",
+    "text": "Have some fruit juice.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d004",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u006",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "First I shall drink the nectar of your gaze, my dear!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d005",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The source's `பார்வை ரசம்` image is preserved as gaze-nectar rather than reduced to ordinary flirtation."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u007",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "How many days it has been since I saw you.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d006",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u008",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "Did you call me, Amma?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d007",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u009",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "No, go away.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d008",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u010",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "(Running his hand through her hair) Ah! A gathering of clouds. (Showing her teeth) A jasmine garden. (Stroking her cheek) A field of roses!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d009",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The cloud / jasmine-garden / rose-field sequence and its source-attached gestures are retained in order."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u011",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Swami!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d010",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u012",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Altogether, the very limit of delight!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d011",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u013",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Yes... how have you planned all the plans?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d012",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's repetition of `திட்டங்கள் / திட்டியிருக்கிறீர்கள்` remains audible."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u014",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Splendidly! All the important parts of the palace are being occupied by our warriors disguised as mendicants. One command from us is enough—war! Purushothaman under arrest!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d013",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The abrupt `போர்! புருஷோத்தமன் கைது!` military cadence is preserved."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u015",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Even war will not be necessary. I have Purushothaman's soldiers in the palm of my hand.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d014",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "`என் கைக்குள் போட்டு வைத்திருக்கிறேன்` remains a control-in-the-hand image rather than being generalized."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u016",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "Sabash! What if war does come? Once enemy troops have entered the palace, who can resist and win?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d015",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s044-u017",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "Have the enemy troops come only into the palace?",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d016",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The line deliberately opens the sexual double meaning that follows."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u018",
+    "kind": "dialogue",
+    "speakerLabel": "உக்",
+    "text": "You mean they have come all the way into the inner chambers? This is not to fight. To surrender.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d017",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The palace/inner-chambers and fight/surrender double entendre is preserved without explanatory expansion."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s044-u019",
+    "kind": "dialogue",
+    "speakerLabel": "சேனா",
+    "text": "I will come tonight.",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-044.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-044.md",
+     "sourceRecordId": "manohara-s044-d018",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 70,
+       "printed_page": 69
+      }
+     ]
+    },
+    "translation": {
+     "mode": "semantic-poetic",
+     "notes": [
+      "The concise closing line is left to carry its source double meaning without added explanation."
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -7,8 +7,9 @@
 // Public rendering is driven ONLY by entries whose `state` is "published" (see
 // `publishedWorks` / `visibleShelves`). It is NEVER driven by folder existence in
 // `public/data`. There is deliberately no filesystem auto-discovery here, so an
-// accidental data directory (e.g. the non-authoritative
-// `public/data/cinema/manohara/parts/`) can never surface as a public work.
+// accidental data directory (such as the non-authoritative
+// `public/data/cinema/manohara/parts/` scratch files that Phase 2 removed) can
+// never surface as a public work.
 //
 // Provenance note: source-repository / source-path / release-commit are DIFFERENT
 // concepts from this implementation repository. They are optional and are left unset
@@ -79,6 +80,51 @@ export type EnglishKind =
 // Internal control state. Only "published" is ever surfaced publicly.
 export type PublicationState = "published" | "ready-to-integrate" | "archival-in-progress";
 
+// ── Present rights status of the UNDERLYING authored work ─────────────────────
+// A reusable, evidence-based rights model for the catalog. This describes the
+// PRESENT project-level rights status of the work authored by Kalaignar — a
+// DIFFERENT fact from any historical rights notice printed in an old edition (that
+// notice is preserved separately as a source witness on the work's provenance page).
+//
+// Background (Tamil: நாட்டுடைமையாக்கப்பட்டது): following the Government of Tamil Nadu's
+// 2024-08-22 announcement, Kalaignar M. Karunanidhi's works were nationalised without royalty.
+// The Government Order was publicly handed over to Rajathi Ammal on 2024-12-22. The GO's exact
+// number and formal ISSUE date have NOT yet been verified from the order itself and are left
+// unset — the handover date is NOT assumed to be the issue date. This is a project-wide fact
+// applicable to works authored by Kalaignar (subject to confirming each item is in fact his work
+// and falls within the order). It does NOT extend to third-party contributions (other authors'
+// prefaces/essays, separately published translations, secondary witness editions,
+// photographs/illustrations/cover/publisher material), nor to project-created translations,
+// which retain their own distinct provenance.
+export type RightsStatus =
+  // Kalaignar-authored underlying work, nationalised by the Government of Tamil Nadu.
+  | "nationalised-by-tamil-nadu-government"
+  // Not yet brought onto this model (existing entries pending the rights audit — see
+  // PHASE2_MANOHARA_HANDOVER.md). Absence of `rights` means the same thing.
+  | "unclassified";
+
+export interface WorkRights {
+  /** Present rights status of the underlying authored work. */
+  rightsStatus: RightsStatus;
+  /** Authority that established the status, e.g. "Government of Tamil Nadu". */
+  rightsAuthority?: string;
+  /** The action taken, e.g. "nationalisation". */
+  rightsAction?: string;
+  /** ISO date the action was announced, where verified (e.g. "2024-08-22"). */
+  rightsAnnouncementDate?: string;
+  /** Government Order number — ONLY once verified from the GO itself. Never invented. */
+  governmentOrderNumber?: string | null;
+  /** Government Order formal ISSUE date — null until verified from the order itself (never inferred). */
+  governmentOrderDate?: string | null;
+  /**
+   * Date the Government Order was publicly HANDED OVER to Rajathi Ammal (2024-12-22).
+   * This is NOT asserted as the GO issue date.
+   */
+  governmentOrderHandoverDate?: string;
+  /** Short note distinguishing this present status from historical printed edition notices. */
+  note?: string;
+}
+
 export interface LibraryWork {
   /** Stable catalog id (kebab-case). */
   id: string;
@@ -120,13 +166,28 @@ export interface LibraryWork {
   /** Source-supported unit count, where stable. */
   unitCount?: { value: number; labelTa: string; labelEn: string };
 
+  /**
+   * Present rights status of the underlying authored work (reusable model). Unset for
+   * works not yet brought onto the nationalisation-rights model — see the rights-audit
+   * follow-up in PHASE2_MANOHARA_HANDOVER.md. This is DISTINCT from any historical printed
+   * rights notice, which lives with the work's source provenance, not here.
+   */
+  rights?: WorkRights;
+
   /** Provenance / source-note page, where one exists. */
   provenanceHref?: string;
 }
 
 // ── The catalog ──────────────────────────────────────────────────────────────
-// Phase 1 exposes exactly the three already-public collections. No new corpus is
-// integrated here. (Manohara is deliberately absent — see the header note.)
+// Phase 1 exposed exactly the three already-public collections. Digital Library
+// Phase 2 onboards ONE additional work — the Manohara screenplay/dialogue booklet
+// — onto the same shared envelope (its own `scene` reader; source-faithful Tamil +
+// a project-created English derivative). No generalized ingestion framework is
+// introduced: this is a single, work-specific catalog entry, exactly like the
+// others. The public UI is still driven ONLY by `state: "published"` (never by
+// folder existence), so the accidental (now-removed) `public/data/cinema/
+// manohara/parts/` directory — non-authoritative implementation scratch data,
+// never a source — could never have surfaced as a work regardless.
 export const LIBRARY_WORKS: LibraryWork[] = [
   {
     id: "nenjukku-neethi",
@@ -187,6 +248,49 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     // englishKind intentionally UNSET — whether this English is a separately
     // published translation or project-created is not established in the
     // implementation data (not guessed).
+  },
+  {
+    id: "manohara",
+    slug: "manohara",
+    titleTa: "மனோகரா",
+    titleEn: "Manohara",
+    shelf: "cinema-writing",
+    subtype: "screenplay-dialogue",
+    readerStructure: "scene",
+    href: "/cinema/manohara",
+    state: "published",
+    descTa: "கலைஞரின் திரைக்கதை–வசன நூல் (1954)",
+    descEn: "Kalaignar's screenplay-dialogue booklet (1954)",
+    // External source provenance IS established for this work (unlike the memoir),
+    // so it is recorded here and surfaced on /cinema/manohara/source.
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/manohara",
+    sourceCommit: "4b5f3238bd1e5983e995ddd85cd8a81ae27de21d",
+    tamil: "complete",
+    english: "complete",
+    // The English layer is a source-linked derivative created for this project
+    // (works/manohara/translations), NOT a separately-published translation.
+    englishKind: "project-created",
+    // The 1954 booklet prints NO scene numbers. The 57 divisions are archive-created
+    // navigation segments only — never presented as "printed scenes". The label makes
+    // that explicit on the catalog card.
+    unitCount: { value: 57, labelTa: "காப்பக வழிசெலுத்தல் பகுதிகள்", labelEn: "archival segments" },
+    // Present rights status of Kalaignar's underlying work: nationalised by the Government of
+    // Tamil Nadu (announced 2024-08-22; the GO was publicly handed over to Rajathi Ammal on
+    // 2024-12-22 — its exact number and formal issue date are NOT yet verified). This is DISTINCT
+    // from the 1954 edition's printed "உரிமை : ஆசிரியருக்கே." notice, which is preserved as a
+    // source witness on /cinema/manohara/source.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil work; it does not extend to the project-created English translation or to third-party material. Distinct from the historical 1954 printed rights notice.",
+    },
+    provenanceHref: "/cinema/manohara/source",
   },
 ];
 

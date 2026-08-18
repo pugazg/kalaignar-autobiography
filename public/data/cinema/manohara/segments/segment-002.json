@@ -1,0 +1,130 @@
+{
+ "workId": "manohara",
+ "slug": "segment-002",
+ "ordinal": 2,
+ "sceneId": "manohara-s002",
+ "sourceSceneNumber": null,
+ "readerLabelTa": "அரண்மனை — வசந்த சேனையின் சிரிப்புடன்",
+ "startPdfPage": 8,
+ "startPrintedPage": 7,
+ "canonicalPart": "part-01",
+ "pageProvenance": [
+  {
+   "pdf_page": 8,
+   "printed_page": 7
+  },
+  {
+   "pdf_page": 9,
+   "printed_page": 8
+  }
+ ],
+ "tamil": {
+  "text": "வசந்த சேனையின் சிரிப்புடன் அரண்மனையில் காட்சி ஆரம்பமாகிறது.\n\n\n\nவசந்தசேனை : பைத்தியக்காரி! இப்போது நினைத்தாலும் நான் பட்டமகிஷி ஆக முடியுமடி!......\n\nதோழி : அதுதாம்மா எனக்கும் ஆசை. ஆனால் மகாராணியும், இளவரசரும் உயிரோடு இருக்கும்போது ...\n\nவச : மகாராணி-இளவரசர்...இரண்டும் உயிர்ப்பிணங்கள் நான் சிரித்தால் போதும், சிம்மாசனமே கிடைக்கும். மயக்குகின்ற ஒரு பார்வை - இந்த மண்டலமே என் காலடியில்! மகாராஜாவின் பிரேமை ராணியடி நான்! நினைத்தால் போதும் - வசந்த சேனை ராணி! அவள் மகன் வசந்தன் இளவரசன்!"
+ },
+ "english": {
+  "units": [
+   {
+    "id": "manohara-en-s002-u001",
+    "kind": "stage-direction",
+    "speakerLabel": null,
+    "text": "The scene opens in the palace with Vasantha Sena's laughter.",
+    "source": {
+     "sourcePath": "works/manohara/scenes/scene-002.md",
+     "canonicalScenePath": "works/manohara/scenes/scene-002.md",
+     "sourceRecordId": null,
+     "sourceOccurrenceId": null,
+     "sourceLocator": {
+      "kind": "scene-opening-transition",
+      "ordinal": 1,
+      "description": "Source-visible palace transition beginning with Vasantha Sena's laughter."
+     },
+     "pageProvenance": [
+      {
+       "pdf_page": 8,
+       "printed_page": 7
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful"
+    }
+   },
+   {
+    "id": "manohara-en-s002-u002",
+    "kind": "dialogue",
+    "speakerLabel": "வசந்தசேனை",
+    "text": "Mad girl! Even now, if I choose, I can become the chief queen!......",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-002.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-002.md",
+     "sourceRecordId": "manohara-s002-d001",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "`பட்டமகிஷி` is rendered as `chief queen`, preserving the courtly rank rather than reducing it to merely `queen`."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s002-u003",
+    "kind": "dialogue",
+    "speakerLabel": "தோழி",
+    "text": "That is my wish too, amma. But while the Maharani and the prince are still alive...",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-002.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-002.md",
+     "sourceRecordId": "manohara-s002-d002",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The intimate address `அம்மா` is retained as `amma` because it marks the attendant's deferential conversational register."
+     ]
+    }
+   },
+   {
+    "id": "manohara-en-s002-u004",
+    "kind": "dialogue",
+    "speakerLabel": "வச",
+    "text": "Maharani—the prince... both are living corpses. I need only laugh, and the throne itself is mine. One bewitching glance—and this whole realm lies at my feet! I am the queen of the Maharaja's love, girl! I need only will it—Vasantha Sena, queen! Her son Vasanthan, prince!",
+    "source": {
+     "sourcePath": "works/manohara/dialogues/records/scene-002.json",
+     "canonicalScenePath": "works/manohara/scenes/scene-002.md",
+     "sourceRecordId": "manohara-s002-d003",
+     "sourceOccurrenceId": null,
+     "sourceLocator": null,
+     "pageProvenance": [
+      {
+       "pdf_page": 9,
+       "printed_page": 8
+      }
+     ]
+    },
+    "translation": {
+     "mode": "prose-faithful",
+     "notes": [
+      "The source's boast builds through short escalating claims; the English keeps that cumulative theatrical rhythm.",
+      "`உயிர்ப்பிணங்கள்` is retained literally as `living corpses` rather than softened."
+     ]
+    }
+   }
+  ]
+ }
+}
