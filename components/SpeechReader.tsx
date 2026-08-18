@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, Calendar, Home, Info, Landmark, Mic, Minus, Plus } from "lucide-react";
+import { ArrowLeft, BookOpen, Calendar, Home, Info, Landmark, MapPin, Mic, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
 import type { Speech, SpeechBlock } from "@/data/speeches";
 import { useLang } from "@/lib/i18n";
@@ -70,7 +70,12 @@ export default function SpeechReader({ slug }: { slug: string }) {
 
       <article className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
         <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-marina dark:text-marina-light">
-          <Mic className="h-3.5 w-3.5" aria-hidden /> {ta ? "சட்டமன்ற உரை" : "Assembly speech"}
+          <Mic className="h-3.5 w-3.5" aria-hidden />{" "}
+          {speech
+            ? speech.subtype === "public-speech"
+              ? ta ? "பொது உரை" : "Public speech"
+              : ta ? "சட்டமன்ற உரை" : "Assembly speech"
+            : ta ? "உரை" : "Speech"}
         </p>
         <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
           {speech?.title.ta ?? (ta ? "ஏற்றப்படுகிறது…" : "Loading…")}
@@ -82,16 +87,29 @@ export default function SpeechReader({ slug }: { slug: string }) {
               <span className="inline-flex items-center gap-1.5">
                 <Calendar className="h-3.5 w-3.5" aria-hidden /> {formatDate(speech.date, ta)}
               </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Landmark className="h-3.5 w-3.5" aria-hidden />
-                <span lang={lang}>{ta ? speech.legislature.nameTa : speech.legislature.nameEn}</span>
-              </span>
-              <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>
+              {/* Assembly speeches show the legislature (Landmark); public speeches show the
+                  source-established venue (MapPin). No fake legislature/event is shown for a public
+                  speech, and no event is shown unless the source establishes one. */}
+              {speech.subtype === "public-speech" ? (
+                <>
+                  <span className="inline-flex items-center gap-1.5">
+                    <MapPin className="h-3.5 w-3.5" aria-hidden />
+                    <span lang={lang}>{ta ? speech.venue.ta : speech.venue.en}</span>
+                  </span>
+                  {speech.event && <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>}
+                </>
+              ) : (
+                <>
+                  <span className="inline-flex items-center gap-1.5">
+                    <Landmark className="h-3.5 w-3.5" aria-hidden />
+                    <span lang={lang}>{ta ? speech.legislature.nameTa : speech.legislature.nameEn}</span>
+                  </span>
+                  <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>
+                </>
+              )}
             </div>
             <p className="mt-1.5 text-xs text-ink/50 dark:text-night-text/50" lang={lang}>
-              {ta
-                ? `${speech.speaker.nameTa} — ${speech.speaker.roleTa}`
-                : `${speech.speaker.nameEn} — ${speech.speaker.roleEn}`}
+              {speakerLine(speech, ta)}
             </p>
 
             <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
@@ -134,8 +152,8 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {speech && (
           <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
             {ta
-              ? `${speech.speaker.nameTa} · ${speech.legislature.nameTa}, ${formatDate(speech.date, true)}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
-              : `${speech.speaker.nameEn} · ${speech.legislature.nameEn}, ${formatDate(speech.date, false)}. Transcribed and verified against the printed source. `}
+              ? `${speakerName(speech, true)} · ${speechContext(speech, true)}, ${formatDate(speech.date, true)}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
+              : `${speakerName(speech, false)} · ${speechContext(speech, false)}, ${formatDate(speech.date, false)}. Transcribed and verified against the printed source. `}
             <Link href={`/speeches/${slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
               {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
             </Link>
@@ -279,23 +297,47 @@ function renderSegments(segments: { text: string; sourcePage: number | null; joi
 }
 
 // Minimal, faithful inline Markdown rendering for the source text: **bold** (used by the
-// source for parliamentary interjection speaker labels and the subtitle) and *italic* (used
-// for interjections such as *(Laughter.)* and cited publication names). Nothing else is
+// source for parliamentary interjection speaker labels and the subtitle), *italic* (used for
+// interjections such as *(Laughter.)* and cited publication names), and `code` (used by the
+// public-speech translator notes to cite verbatim source-supported Tamil forms). Nothing else is
 // interpreted; the text is otherwise verbatim.
 function inline(text: string): ReactNode {
   const nodes: ReactNode[] = [];
-  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let k = 0;
   while ((m = re.exec(text)) !== null) {
     if (m.index > last) nodes.push(text.slice(last, m.index));
     if (m[1] !== undefined) nodes.push(<strong key={k++} className="font-semibold">{m[1]}</strong>);
-    else nodes.push(<em key={k++}>{m[2]}</em>);
+    else if (m[2] !== undefined) nodes.push(<em key={k++}>{m[2]}</em>);
+    else nodes.push(<code key={k++} className="rounded bg-ink/[0.06] px-1 py-0.5 text-[0.9em] dark:bg-white/10">{m[3]}</code>);
     last = m.index + m[0].length;
   }
   if (last < text.length) nodes.push(text.slice(last));
   return nodes;
+}
+
+// Speaker's bare name (no honorific/role). Used in the provenance line.
+function speakerName(s: Speech, ta: boolean): string {
+  return ta ? s.speaker.nameTa : s.speaker.nameEn;
+}
+
+// The speaker line under the title. An assembly speech shows the parliamentary office AFTER the
+// name ("name — Chief Minister"); a public speech shows the source's honorific/style BEFORE the
+// name ("தோழர் மு.கருணாநிதி"), exactly as the booklet attributes it — and just the name if none.
+function speakerLine(s: Speech, ta: boolean): string {
+  const name = ta ? s.speaker.nameTa : s.speaker.nameEn;
+  const role = ta ? s.speaker.roleTa : s.speaker.roleEn;
+  if (!role) return name;
+  return s.subtype === "public-speech" ? `${role} ${name}` : `${name} — ${role}`;
+}
+
+// The context shown in the provenance line: legislature for an assembly speech, venue for a public
+// speech.
+function speechContext(s: Speech, ta: boolean): string {
+  if (s.subtype === "public-speech") return ta ? s.venue.ta : s.venue.en;
+  return ta ? s.legislature.nameTa : s.legislature.nameEn;
 }
 
 function formatDate(iso: string, ta: boolean) {

@@ -1,0 +1,100 @@
+{
+ "workId": "poonthottam",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/poonthottam",
+ "sourceCommit": "c8abf95834e1d2549644e3607be3dd6f87b802c2",
+ "source": {
+  "publicationTitleTa": "கலைஞரின் பூந்தோட்டம்",
+  "authorTa": "மு. கருணாநிதி",
+  "editionTa": "நான்காம் பதிப்பு",
+  "publicationDate": "2019",
+  "publisherTa": "திராவிடர் கழக (இயக்க) வெளியீடு",
+  "publisherLocationTa": "சென்னை - 600 007",
+  "printerTa": "‘விடுதலை’ ஆஃப்செட் பிரிண்டர்ஸ்",
+  "printerLocationTa": "சென்னை - 600 007",
+  "coverPriceTa": "நன்கொடை (குறைந்த அளவு): ரூ.12/-",
+  "scanFilename": "TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf",
+  "scanTotalPages": 18,
+  "speechScanPages": "6–17",
+  "frontMatterScanPages": "1–5",
+  "advertisementScanPages": "18",
+  "scanSha256": "2a8bf5f6f42970ee95912f41662f9bc448581a5aaca15a55fee9b44ba20a4c52",
+  "scanFileSizeBytes": 49297657,
+  "printedSpeechPages": "5–16",
+  "firstEditionTa": "முதற்பதிப்பு - 1951 (திராவிடப் பண்ணை)",
+  "publisherAddressTa": "பெரியார் திடல், 84/1 (50), ஈ.வெ.கி. சம்பத் சாலை, வேப்பேரி, சென்னை - 600 007.",
+  "editionMatterNote": "PDF 4 carries a publisher preface (பதிப்புரை) signed for the publisher by கி. வீரமணி, dated 2018-01-12; PDF 5 carries Kalaignar's prefatory poem எரிமலை!. Neither is part of the பூந்தோட்டம் speech body. The preface is third-party front matter."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true,
+  "method": "manual transcription with strict independent line-by-line visual audit (T1–T3), frozen",
+  "note": "Tamil is the authoritative frozen layer, verified-complete against the supplied scan; source-supported spelling, punctuation, spacing, repetition and unusual forms preserved."
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation",
+  "language": "en",
+  "from": "frozen verified-complete Tamil (transcription-ta.md)",
+  "verified": true,
+  "note": "Project-created, source-linked; difficult source-supported Tamil forms are retained transparently with translator notes rather than conjecturally normalized."
+ },
+ "archiveDerived": {
+  "sectionHeadings": 0,
+  "tamilResolvedParagraphs": 89,
+  "tamilUnresolvedGroupRuns": 16,
+  "englishParagraphs": 107,
+  "tamilSourceTextSegments": 108,
+  "englishSourceTextSegments": 108,
+  "tamilCrossPageParagraphs": 3,
+  "englishCrossPageParagraphs": 1,
+  "sourcePagesCovered": 12,
+  "boundaryAudit": {
+   "tamilTransitions": 11,
+   "sameParagraph": 3,
+   "paragraphBoundary": 0,
+   "headingBoundary": 0,
+   "unknownParagraphRelation": 8,
+   "lexicalJoinNone": 0,
+   "lexicalJoinSpace": 3,
+   "lexicalJoinUnknown": 0
+  },
+  "englishBoundaryAudit": {
+   "englishAnchors": 12,
+   "paragraphBoundary": 5,
+   "headingNoteBoundary": 6,
+   "sameParagraphContinuations": 1,
+   "note": "Every English printed-page anchor (5-16) has an EXPLICIT EN_BOUNDARY entry, classified from the released translation structure (the printed title, the translator's blank-separated blocks, the six translator notes, and the single audited cross-page sentence continuation p.5→6) — NEVER from punctuation. Anchors are provenance only."
+  },
+  "note": "Section headings are printed in the source (none inside this speech body). A source-page boundary is NOT a paragraph boundary and paragraph relationships are NOT inferred from punctuation: every Tamil page transition is classified in an explicit source-audited table (audit.md + frozen transcription). One logical paragraph may span several source pages via per-page segments, each retaining its source page; ordinary cross-page word boundaries join with a single space; a source-page boundary whose printed paragraph relationship cannot be established is left UNRESOLVED and rendered neutrally."
+ },
+ "blockers": [
+  {
+   "item": "unresolved-paragraph-relationship",
+   "count": 8,
+   "detail": "8 printed-page boundaries where a sentence completes at the page edge and the next page opens a new sentence: whether the PRINTED PARAGRAPH continues or a new one begins cannot be established from the archive text. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule.",
+   "resolution": "Read-only inspection of the controlling scan TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf (speech PDF pp.6–17 / printed pp.5–16). The source PDF is not committed under repository policy and is not accessible read-only in this environment."
+  }
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The 2019 fourth-edition's own publisher/printer/edition data is a source/edition fact, distinct from and not a statement of the present rights of Kalaignar's underlying 1951 speech.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored speech. It does not extend to the project-created English translation, or to third-party edition material — the publisher's 2018 preface (கி. வீரமணி), cover/design, photographs, or annotations — which retain their own provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created) with its own distinct provenance.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the scanned booklet (fourth edition, 2019); only the speech body — PDF pages 6–17 / printed pages 5–16 (12 pages) — is transcribed. PDF 1–5 (cover, title, bibliographic, publisher preface, and Kalaignar's prefatory poem எரிமலை!) and PDF 18 (back cover) are NOT speech body. The source PDF is not vendored.",
+  "The source establishes the speech date (1951-12-06) and venue (சென்னை கிண்டி இன்ஜினியரிங் கல்லூரி) but does NOT separately name an event, occasion, or audience; those remain unset rather than inferred from the venue.",
+  "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from the frozen Tamil. Neither was edited during import. Difficult source-supported forms (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே, பெய்ப்படி, வழக்கு மன்றத்திற்கு, மானிடம்) and the six translator notes are preserved verbatim.",
+  "A source-page boundary is not a paragraph boundary. This is a single continuous speech with no speaker turns, so there are no clean paragraph-boundary transitions; the three audited mid-sentence continuations (printed p.5→6, p.6→7, p.10→11) join with a space, and the other eight page transitions — where a sentence completes at the page edge — are UNRESOLVED paragraph relationships, rendered neutrally (never guessed). Needs the controlling scan TVA_BOK_0065784.",
+  "English paragraph structure is the verified translation's own blank-separated blocks; printed-page anchors are provenance only, never paragraph boundaries; the single audited cross-page sentence continuation (printed p.5→6) is recorded in EN_BOUNDARY. No punctuation heuristic is used for either language."
+ ]
+}

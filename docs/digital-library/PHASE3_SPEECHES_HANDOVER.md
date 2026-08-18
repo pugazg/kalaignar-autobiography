@@ -3,7 +3,13 @@
 _Web activity in `pugazg/kalaignar-autobiography`. The controlling cross-project plan is
 `pugazg/kalaignar-tribute/projects/kalaignar-digital-library/HANDOVER.md`. Mobile app work is **on
 hold** (mobile Activity 6 / PR #15 was merged for preservation on 2026-08-18; no new mobile work).
-This activity touched **no** `mobile/` files, **no** source repositories, and **no** PDFs._
+No `mobile/` files, source repositories, or PDFs were modified in any of these activities._
+
+> **Benchmark status.** Benchmark #1 — உதயக் கதிர் / Udhaya Kathir (assembly speech) — is
+> **COMPLETE / MERGED / PRODUCTION-VERIFIED** (PR #18, squash `13ddf04f`, live 2026-08-18).
+> Benchmark #2 — பூந்தோட்டம் / Poonthottam (the first **public** speech) — is **IN REVIEW** (branch
+> `digital-library/phase-3-poonthottam`, reviewer-gated PR, **not merged, not production-live**).
+> **Phase 3 is ACTIVE, not complete** — more released speeches remain. See **§ Benchmark #2** below.
 
 ## Post-mobile baseline
 
@@ -199,6 +205,55 @@ Murasoli, Tholkappiyam and the memoir are untouched.
 Only the one benchmark speech. **Not** started: the remaining assembly speeches, any public speech,
 Parasakthi/Tirumbippaar or another cinema work, Essays/Fiction/Poetry, mobile features, a generalized
 ingestion framework, a `/speeches` collection landing, or the project-wide existing-works rights audit.
+
+> The two sections above (**What this activity did** … **What has NOT been implemented**) describe
+> the **Benchmark #1** activity. Benchmark #2 is recorded separately below.
+
+## Benchmark #2 — பூந்தோட்டம் / Poonthottam (public speech) — 🚧 IN REVIEW
+
+The second benchmark proves the shared speech architecture supports a **public** speech alongside the
+assembly speech, **without losing their distinct source metadata** and without a second reader. It is
+**reviewer-gated and NOT merged**; it is **not production-live**.
+
+- **Branch:** `digital-library/phase-3-poonthottam` (from live `main` `13ddf04f01b6a75024985b6df172deace9d26e80`).
+- **Work:** `poonthottam` — பூந்தோட்டம் / Poonthottam. Kalaignar's **1951-12-06** address at
+  **சென்னை கிண்டி இன்ஜினியரிங் கல்லூரி** (Guindy Engineering College, Chennai). `subtype: "public-speech"`,
+  on the **same** Speeches shelf; routes `/speeches/poonthottam` (+ `/source`). The source establishes the
+  date and venue but **no** event/occasion/audience — those stay **unset** (never inferred from the venue).
+- **Source (pinned, unmodified, READ-ONLY):** `pugazg/kalaignar-public-speeches` @
+  `c8abf95834e1d2549644e3607be3dd6f87b802c2`, `speeches/poonthottam`. Controlling scan
+  `TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf` (SHA-256 `2a8bf5f6…`, 49,297,657 bytes, 18 PDF pages). Speech
+  body = **PDF 6–17 / printed 5–16 (12 pages)**; PDF 1–5 (cover, title, bibliographic, publisher preface,
+  and Kalaignar's prefatory poem `எரிமலை!`) and PDF 18 (back cover) are **not** speech body. **No PDF
+  vendored; no runtime GitHub.** Tamil `verified-complete` (frozen, authoritative); English
+  `verified-complete` faithful reading translation — neither retranslated or normalized; the six difficult
+  source-supported forms and six translator notes are preserved verbatim.
+- **Subtype-aware model (bounded refactor, NOT a framework):** `data/speeches.ts` `Speech` is now a
+  discriminated union on `subtype` — `AssemblySpeech` keeps `legislature` + `event`; `PublicSpeech` has
+  `venue` and optional `event`/`occasion`/`audience`, and **no** legislature. The reader/source/route
+  metadata branch on `subtype` (public label பொது உரை, venue with a map pin, honorific-prefixed speaker,
+  optional extra source facts: scan SHA-256/size, first edition, printed-vs-PDF page range, third-party
+  edition-matter note). Udhaya's vendored data is **unchanged** and still validates.
+- **Boundary model (same honesty rule, different profile).** A single continuous speaker → **0** clean
+  paragraph boundaries. The **11** printed page transitions: **3** audited mid-sentence continuations
+  (printed p.5→6, p.6→7, p.10→11; space joins) and **8** UNRESOLVED paragraph relationships (sentence
+  completes at the page edge, next page opens a new sentence) rendered as neutral `unresolved-break` groups.
+  Lexical joins none 0 / space 3 / unknown 0 — no mid-word split, no scan-ambiguous join. English: 12
+  explicit anchors, exactly **1** audited cross-page continuation (p.5→6). audit.md calls p.15→16 a
+  "thought continuation," but since the sentence completes there, it stays **unresolved** (not a
+  same-paragraph claim). **One** blocker class: the 8 unresolved paragraph relationships need the
+  controlling scan (not accessible read-only here; PDF not vendored). No fact is guessed.
+- **New files:** `scripts/import-poonthottam.mjs`, `scripts/validate-poonthottam.mjs`,
+  `public/data/speeches/poonthottam/{speech.json, provenance.json}`; catalog entry + `SPEECH_SLUGS` +
+  sitemap (auto). Deterministic importer, fail-closed on source-HEAD mismatch.
+- **Validation (local):** `tsc` clean; `npm run build` success (adds the two Poonthottam routes; 1260
+  static pages); `git diff --check` clean; Poonthottam validator **ALL PASS** (20 checks); Udhaya validator
+  **ALL PASS** (regression); deterministic re-generation = no diff; wrong-HEAD import **fails closed**.
+- **Rights:** same nationalisation model (announced 2024-08-22; GO handed to Rajathi Ammal 2024-12-22;
+  number/issue date unverified). Kept distinct from the 2019 fourth-edition's third-party publisher/preface
+  material (`கி. வீரமணி`, 2018) and the project-created English.
+- **Not done (deliberate):** any third speech, bulk import, a `/speeches` landing, a generalized ingestion
+  framework, mobile, tribute-handover promotion (only after review + merge + production), or the rights audit.
 
 ## Next Phase-3 work (for a future, reviewer-gated activity)
 
