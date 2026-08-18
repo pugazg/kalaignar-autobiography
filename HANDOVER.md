@@ -576,8 +576,8 @@ reporting**. **Do NOT** start Push Notifications. Pick one with a fresh prompt.
 **PR #14 (Activity 5 iPad) merged** — squash `63910ce` on `main`; post-merge Mobile CI green;
 site healthy; `contentMaxWidth` + 13 screenshots present on `main`.
 
-**Branch `mobile/offline-network-readiness` (PR TBD, leave unmerged).** Full detail in
-**`mobile/docs/OFFLINE_NETWORK.md`**.
+**Activity 6 was implemented on `mobile/offline-network-readiness` and integrated through PR #15.**
+Full detail in **`mobile/docs/OFFLINE_NETWORK.md`**.
 
 **Implemented (small, aligned with the existing offline engine — not a rewrite):**
 - **Network status:** `src/data/network.tsx` — one `NetworkProvider` + `useNetworkStatus()` over
