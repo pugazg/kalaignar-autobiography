@@ -572,6 +572,52 @@ No/Soft blockers): **Universal Links `.well-known` files** (best done once the s
 known — see §R of the Activity-5 brief), **offline banner / launch polish**, or **crash
 reporting**. **Do NOT** start Push Notifications. Pick one with a fresh prompt.
 
+### 3c-next13. Production readiness · Activity 6 — offline / network + launch reliability (DONE)
+**PR #14 (Activity 5 iPad) merged** — squash `63910ce` on `main`; post-merge Mobile CI green;
+site healthy; `contentMaxWidth` + 13 screenshots present on `main`.
+
+**Activity 6 was implemented on `mobile/offline-network-readiness` and integrated through PR #15.**
+Full detail in **`mobile/docs/OFFLINE_NETWORK.md`**.
+
+**Implemented (small, aligned with the existing offline engine — not a rewrite):**
+- **Network status:** `src/data/network.tsx` — one `NetworkProvider` + `useNetworkStatus()` over
+  the already-installed (previously unused) `@react-native-community/netinfo`. States
+  `unknown | online | offline`; unknown is never treated as offline; flips offline only on
+  `isConnected === false` (a failing content server is a per-screen error, not "offline").
+- **Offline banner:** `src/components/OfflineBanner.tsx`, rendered once at the root above the
+  navigator (`App.tsx` → `NetworkProvider` + `AppFrame`). Shown only when offline; sits below the
+  status bar, covers no header/Reader controls, preserves the iPad 720 column, ≥AA in all themes,
+  Dynamic-Type-scaled, announces once to VoiceOver. Wording: "Offline — downloaded & cached
+  content is available".
+- **Startup reliability (`client.ts`):** parse-before-write (a malformed 200 can no longer clobber
+  a good cache) + a 12s `AbortController` fetch timeout (startup can't hang).
+- **Retry:** added "Try again" to previously dead-ended states — Themes/People/Places
+  (`useFeature` gained `reload`), all three Murasoli screens, and the memoir Reader.
+
+**Verified (iPhone Air + iPad Pro 13", SDK-57):** online launch (no banner); banner placement on
+Home/Reader/iPad (no overlap, 720 preserved); **offline relaunch from cached manifest**; cached
+chapter opens with the content origin unreachable; uncached chapter → truthful error + working
+"Try again" (graceful, no loop). Network method: content origin pointed at a `*.invalid` host
+(DNS fail) with Metro on localhost; banner state force-verified. Gate green (typecheck /
+validate:manifest / expo-doctor 21/21 / iOS export); URLs 200. **No privacy change** (NetInfo is
+device-local; nothing transmitted) — App Store privacy worksheet still valid. Temp test edits
+(env ORIGIN override, forced banner state) reverted; nothing committed.
+
+**Known limitations:** live airplane-mode toggle not exercised in this headless env (banner
+rendering force-verified; NetInfo→status mapping reviewed) — recommend a manual device toggle
+before release; reachable-but-no-internet treated as online (per-screen error surfaces);
+extreme-Dynamic-Type dashboard clipping unchanged; iPad landscape still a manual follow-up.
+
+**Remaining genuine store blockers:** (1) paid Apple Developer account + ASC record + signed
+TestFlight/production build; (2) copyright-field owner decision.
+
+**Exact next workstream → re-check `mobile/docs/PRODUCTION_READINESS.md` §5.** With offline polish
+done, remaining pre-launch items are the signed-build/TestFlight process (needs the paid Apple
+account) and the copyright-owner decision; other candidates are **crash reporting** (a privacy-
+model decision) or small polish. **Universal Links stay deferred** until the signing Team ID /
+Android cert fingerprint are known. **Do NOT** start Push Notifications. Pick one with a fresh
+prompt.
+
 ### 3d. How to run
 ```bash
 cd mobile

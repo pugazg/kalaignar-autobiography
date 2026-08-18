@@ -24,6 +24,7 @@ export function MurasoliReaderScreen() {
   const [letter, setLetter] = useState<MurasoliLetter | null>(null);
   const [en, setEn] = useState<MurasoliLetterEn | null>(null);
   const [error, setError] = useState(false);
+  const [nonce, setNonce] = useState(0); // bump to retry after a failure
   const [progress, setProgress] = useState(0);
   const scrollRef = useRef<ScrollView>(null);
   const viewH = useRef(1);
@@ -64,7 +65,7 @@ export function MurasoliReaderScreen() {
     return () => {
       alive = false;
     };
-  }, [id, mu]);
+  }, [id, mu, nonce]);
 
   useLayoutEffect(() => {
     nav.setOptions({ title: letter ? `#${letter.number}` : "" });
@@ -99,7 +100,7 @@ export function MurasoliReaderScreen() {
     });
   };
 
-  if (error) return <EmptyState title="Could not open this letter" body="It may not be downloaded and you appear to be offline." />;
+  if (error) return <EmptyState title="Could not open this letter" body="It may not be downloaded and you appear to be offline." actionLabel="Try again" onAction={() => setNonce((n) => n + 1)} />;
   if (!letter) return <Loading label="Opening the letter…" />;
 
   const title = showEn ? en?.title || letter.title?.en || `Letter ${letter.number}` : letter.title?.ta || `கடிதம் ${letter.number}`;

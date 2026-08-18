@@ -20,6 +20,7 @@ export function MurasoliVolumeScreen() {
 
   const [letters, setLetters] = useState<MurasoliLetterRef[] | null>(null);
   const [state, setState] = useState<"loading" | "ready" | "error">("loading");
+  const [nonce, setNonce] = useState(0); // bump to retry after a failure
 
   useLayoutEffect(() => {
     nav.setOptions({ title: `தொகுதி ${volume}` });
@@ -48,11 +49,11 @@ export function MurasoliVolumeScreen() {
     return () => {
       alive = false;
     };
-  }, [mu, volume]);
+  }, [mu, volume, nonce]);
 
   if (state === "loading") return <View style={{ flex: 1, backgroundColor: c.bg }}><Loading label="Loading volume…" /></View>;
   if (state === "error" || !letters)
-    return <View style={{ flex: 1, backgroundColor: c.bg }}><EmptyState title="Couldn't load this volume" body="Check your connection and try again." /></View>;
+    return <View style={{ flex: 1, backgroundColor: c.bg }}><EmptyState title="Couldn't load this volume" body="Check your connection and try again." actionLabel="Try again" onAction={() => setNonce((n) => n + 1)} /></View>;
 
   return (
     <FlatList

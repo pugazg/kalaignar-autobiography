@@ -16,7 +16,9 @@ Gate list before App Store / Play submission. Unchecked = do not submit.
 - [x] Native app, not a WebView wrapper
 - [x] Core value works offline (reader + downloaded search)
 - [x] No placeholder / "coming soon" screens — every destination is real
-- [ ] Tested cold-start with no network (manifest cache path)
+- [x] Tested cold-start with content origin unreachable (manifest cache-fallback path) — Activity 6;
+      global offline banner + truthful per-screen errors + retry. See `docs/OFFLINE_NETWORK.md`.
+      (Live device airplane-mode toggle recommended before release — see doc limitations.)
 - [ ] Tested on a small phone and a tablet
 
 ## Privacy & legal

@@ -27,7 +27,7 @@ export function PeopleScreen() {
 
   if (state.status === "loading") return <View style={{ flex: 1, backgroundColor: c.bg }}><Loading label="Loading people…" /></View>;
   if (state.status === "unavailable")
-    return <View style={{ flex: 1, backgroundColor: c.bg }}><EmptyState title="People couldn't load" body="Check your connection and try again." /></View>;
+    return <View style={{ flex: 1, backgroundColor: c.bg }}><EmptyState title="People couldn't load" body="Check your connection and try again." actionLabel="Try again" onAction={state.reload} /></View>;
 
   return (
     <FlatList

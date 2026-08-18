@@ -28,7 +28,7 @@ export function PlacesScreen() {
 
   if (state.status === "loading") return <View style={{ flex: 1, backgroundColor: c.bg }}><Loading label="Loading places…" /></View>;
   if (state.status === "unavailable")
-    return <View style={{ flex: 1, backgroundColor: c.bg }}><EmptyState title="Places couldn't load" body="Check your connection and try again." /></View>;
+    return <View style={{ flex: 1, backgroundColor: c.bg }}><EmptyState title="Places couldn't load" body="Check your connection and try again." actionLabel="Try again" onAction={state.reload} /></View>;
 
   const places = state.data.places;
 

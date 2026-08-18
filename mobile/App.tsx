@@ -10,6 +10,8 @@ import {
   NotoSerifTamil_600SemiBold,
 } from "@expo-google-fonts/noto-serif-tamil";
 import { AppStateProvider, useTheme } from "@/data/AppState";
+import { NetworkProvider } from "@/data/network";
+import { OfflineBanner } from "@/components/OfflineBanner";
 import { RootNavigator, linking } from "@/navigation";
 import type { Palette } from "@/theme/theme";
 
@@ -45,6 +47,19 @@ function Root() {
   );
 }
 
+// App frame: the global offline strip sits above the navigator (see OfflineBanner).
+function AppFrame() {
+  const c = useTheme();
+  return (
+    <View style={{ flex: 1, backgroundColor: c.bg }}>
+      <OfflineBanner />
+      <View style={{ flex: 1 }}>
+        <Root />
+      </View>
+    </View>
+  );
+}
+
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
     NotoSerifTamil_500Medium,
@@ -67,7 +82,9 @@ export default function App() {
     <SafeAreaProvider>
       <View style={{ flex: 1 }} onLayout={onLayoutRoot}>
         <AppStateProvider>
-          <Root />
+          <NetworkProvider>
+            <AppFrame />
+          </NetworkProvider>
         </AppStateProvider>
       </View>
     </SafeAreaProvider>

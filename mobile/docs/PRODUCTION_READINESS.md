@@ -39,7 +39,8 @@ on-device for offline use. No memoir prose ships in the bundle. Bundle id / Andr
 | C | Screen-reader semantics / roles / headings / touch targets | **COMPLETE (repo-side)** (Activity 3) — manual VoiceOver/TalkBack device pass still pending | Soft (review risk) |
 | C | VoiceOver / TalkBack on-device navigation pass | NOT STARTED (needs manual/device — documented, not faked) | Soft (review risk) |
 | D | Per-chapter download, offline images, offline-first caches, storage total, clear-offline | COMPLETE | No |
-| D | Offline banner (`netinfo` dep unused), bulk/volume download, download manager, storage breakdown, content-version update check | NOT STARTED | No |
+| D | Offline banner + `netinfo` network status + launch/retry reliability | **COMPLETE** (Activity 6 — `NetworkProvider`/`useNetworkStatus`, global `OfflineBanner`, manifest parse-before-write + fetch timeout, retry on all content-failure states; see `docs/OFFLINE_NETWORK.md`) | No |
+| D | Bulk/volume download, download manager, storage breakdown, content-version update check | NOT STARTED (deliberately deferred) | No |
 | E | Native text share | COMPLETE (2 readers) | No |
 | E | Share-as-image (`react-native-view-shot` dep unused) | NOT STARTED | No |
 | F | Push notifications (`expo-notifications` dep+plugin, **0 code**) | NOT STARTED | No |
@@ -89,7 +90,7 @@ post-launch), **not** roadmap order.
 | 3 | Accessibility pass: contrast across themes + VoiceOver/label/focus review | **Repo-side COMPLETE (Activity 3)**; manual VoiceOver device pass pending | Soft | Review risk; contrast/semantics/headings/touch-targets fixed & measured, see `docs/ACCESSIBILITY.md` | Manual VO before submission | **Medium** |
 | 4 | Store metadata + assets (screenshots, copy, privacy labels, age rating) | **Repo package COMPLETE (Activity 4–5, `mobile/store/`)** — incl. 7 iPhone + 6 iPad screenshots; external upload + copyright-owner decision pending | **Yes (external)** | Required to submit | Repo done; upload at submission | **Medium** |
 | 5 | Universal Links: website `.well-known` files + paid-team verification | PARTIAL | No | App works on custom scheme; needs paid team | After account is paid | **Medium** |
-| 6 | Offline banner (`netinfo`) + truthful offline states polish | NOT STARTED | No | Cheap reliability win | Launch polish | **Small** |
+| 6 | Offline banner (`netinfo`) + truthful offline states polish | **COMPLETE (Activity 6)** — banner, network status, launch/retry reliability; `docs/OFFLINE_NETWORK.md` | No | Done | — | **Small** |
 | 7 | Crash reporting (e.g. Sentry) | NOT STARTED | Soft | Diagnose field crashes early | Around launch | **Small–Medium** |
 | 8 | Share-as-image (`react-native-view-shot`) | NOT STARTED | No | Nice-to-have; text share already works | Post-launch | **Medium** |
 | 9 | Download manager / bulk download / storage breakdown | NOT STARTED | No | Enhancement | Post-launch | **Large** |
