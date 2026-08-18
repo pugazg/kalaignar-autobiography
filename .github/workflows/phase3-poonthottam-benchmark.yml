@@ -1,0 +1,116 @@
+name: Phase 3 Poonthottam benchmark
+
+on:
+  push:
+    branches:
+      - agent/digital-library-phase-3-benchmark-2-poonthottam
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-verify:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout implementation branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout pinned public-speech source
+        uses: actions/checkout@v4
+        with:
+          repository: pugazg/kalaignar-public-speeches
+          ref: c8abf95834e1d2549644e3607be3dd6f87b802c2
+          path: _source/public-speeches
+
+      - name: Checkout pinned Assembly benchmark source
+        uses: actions/checkout@v4
+        with:
+          repository: pugazg/kalaignar-assembly-speeches
+          ref: b1b82402642d8f2cf36927d4752c8e7d28142fdd
+          path: _source/assembly-speeches
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Poonthottam vendored data
+        run: node scripts/import-poonthottam.mjs _source/public-speeches c8abf95834e1d2549644e3607be3dd6f87b802c2
+
+      - name: Register benchmark in the public catalog
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const file = 'data/library.ts';
+          let text = fs.readFileSync(file, 'utf8');
+          if (text.includes('id: "poonthottam"')) process.exit(0);
+          const marker = '    provenanceHref: "/speeches/udhaya-kathir/source",\n  },\n];';
+          if (!text.includes(marker)) throw new Error('Udhaya catalog insertion marker not found');
+          const entry = `    provenanceHref: "/speeches/udhaya-kathir/source",
+  },
+  {
+    // Phase 3 Benchmark #2: a verified PUBLIC speech, proving that Assembly/Public are
+    // subtypes on the same Speeches shelf and share the source-faithful speech reader.
+    id: "poonthottam",
+    slug: "poonthottam",
+    titleTa: "பூந்தோட்டம்",
+    titleEn: "Poonthottam",
+    shelf: "speeches",
+    subtype: "public-speech",
+    readerStructure: "speech",
+    href: "/speeches/poonthottam",
+    state: "published",
+    descTa: "1951 சென்னை கிண்டி இன்ஜினியரிங் கல்லூரிப் பொதுரை",
+    descEn: "1951 public speech at Guindy Engineering College, Chennai",
+    sourceRepo: "pugazg/kalaignar-public-speeches",
+    sourcePath: "speeches/poonthottam",
+    sourceCommit: "c8abf95834e1d2549644e3607be3dd6f87b802c2",
+    edition: "முதற்பதிப்பு - 1951 (திராவிடப் பண்ணை); நான்காம் பதிப்பு : 2019",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    unitCount: { value: 12, labelTa: "மூலப் பக்கங்கள்", labelEn: "source pages" },
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil speech; it does not extend to the project-created English translation or third-party material. The exact GO number and formal issue date remain unverified.",
+    },
+    provenanceHref: "/speeches/poonthottam/source",
+  },
+];`;
+          text = text.replace(marker, entry);
+          fs.writeFileSync(file, text);
+          NODE
+
+      - name: Validate Poonthottam against source release
+        run: node scripts/validate-poonthottam.mjs _source/public-speeches
+
+      - name: Regression-validate Udhaya Kathir benchmark
+        run: node scripts/validate-udhaya-kathir.mjs _source/assembly-speeches
+
+      - name: Build web application
+        run: npm run build
+
+      - name: Commit deterministic vendored artifacts
+        run: |
+          git add data/library.ts public/data/speeches/poonthottam/speech.json public/data/speeches/poonthottam/provenance.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Vendor Poonthottam benchmark data [skip ci]"
+          git push origin HEAD:agent/digital-library-phase-3-benchmark-2-poonthottam
