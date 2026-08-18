@@ -73,8 +73,10 @@ const transcript = readText(path.join(SPEECH_DIR, "transcript.md"));
 // 4 verification/pp*.md, plus the 11-speech Tamil corpus for how a compound is written
 // elsewhere. `none` is asserted only where a space would demonstrably break a single Tamil
 // word (the following fragment is an inflection/suffix, not a standalone word) or where the
-// archive/reviewer explicitly documents a mid-word split. A few sandhi compounds where both a
-// spaced and a joined form are valid Tamil are rendered spaced and flagged `scanPending`.
+// archive/reviewer explicitly documents a mid-word split. A few sandhi compounds where both
+// spaced and joined forms are plausible remain `join: "unknown"` / `scanPending`; the reader
+// preserves both verbatim source fragments and renders a neutral source-page boundary marker
+// until the controlling scan can resolve the printed spacing.
 const TA_BOUNDARY = {
   6:  { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'அந்த'|'இடத்திலே' distinct words" },
   7:  { rel: "unknown",            join: "end",   ev: "sentence completes on p6; p7 opens new prose sentence; physical paragraph layout scan-pending" },
