@@ -1,25 +1,16 @@
-// Speeches (உரைகள்) — Digital Library Phase 3. Source-faithful speech readers built from the
-// authoritative speech source repositories (pugazg/kalaignar-assembly-speeches,
-// pugazg/kalaignar-public-speeches). Data-driven like the other Reading Rooms: each speech is
-// vendored to public/data/speeches/<slug>/{speech.json, provenance.json} by a deterministic,
-// work-specific importer (scripts/import-<slug>.mjs) that pins the exact source commit.
+// Speeches (உரைகள்) — source-faithful readers for Assembly and public speeches.
 //
-// A speech is NOT a scene reader: it is long-form prose with printed section headings, rendered
-// in source order. Printed section headings and source-page boundaries are preserved; no
-// archive-created navigation numbering is presented as printed source numbering.
+// The catalog envelope is shared, but ingestion remains work-specific. Each integrated speech is
+// vendored to public/data/speeches/<slug>/{speech.json, provenance.json} by a deterministic importer
+// pinned to the exact authoritative source-repository commit. Production never calls GitHub at runtime.
+//
+// A source-page boundary is NOT a paragraph boundary. One logical paragraph may span source pages;
+// each verbatim page fragment therefore carries an explicit join decision. Unknown source facts are
+// represented as unknown rather than inferred from punctuation.
 
-// A source-fidelity note (reviewer correction): a source-page boundary is NOT a paragraph
-// boundary. One LOGICAL paragraph may span several source pages. So a paragraph holds ordered
-// per-source-page text SEGMENTS, each carrying its own source page, joined for reading by an
-// explicit `joinToNext`:
-//   - "none"    = the source splits a WORD across the page → join with NO space;
-//   - "space"   = an ordinary cross-page word boundary → single space;
-//   - "unknown" = the exact printed joined-vs-spaced form is UNRESOLVED (scan-pending). The
-//                 reader must NOT silently choose a space or a concatenation — it renders a
-//                 neutral inline source-page marker between the two fragments.
-//   - "end"     = last segment of the paragraph.
-// Each `segment.text` is the exact source text line, verbatim (source Markdown emphasis kept).
+export type SpeechSubtype = "assembly-speech" | "public-speech";
 export type SpeechJoin = "space" | "none" | "unknown" | "end";
+export type SpeechBilingualText = { ta: string; en: string };
 
 export type SpeechTextSegment = {
   text: string;
@@ -30,24 +21,30 @@ export type SpeechTextSegment = {
 export type SpeechParagraph = {
   kind: "paragraph";
   segments: SpeechTextSegment[];
-  sourcePages: number[]; // the source pages this one logical paragraph spans
+  sourcePages: number[];
 };
 
 export type SpeechHeading = { kind: "heading"; text: string; sourcePage?: number | null };
 export type SpeechNote = { kind: "note"; text: string; sourcePage?: number | null };
+export type SpeechUnresolvedBreak = {
+  kind: "unresolved-break";
+  toPage: number;
+  relation: "unknown";
+  note?: string;
+};
 
-// A NEUTRAL boundary whose paragraph RELATIONSHIP could not be established from the archive text
-// (a sentence completes at the page edge and the next page opens a new sentence — same printed
-// paragraph or a new one is scan-pending). The reader groups the runs on either side into a
-// single non-`<p>` group so this asserts NEITHER a paragraph break NOR a continuation.
-export type SpeechUnresolvedBreak = { kind: "unresolved-break"; toPage: number; relation: "unknown"; note?: string };
-
-// One ordered block of a speech's Tamil or English stream.
 export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote | SpeechUnresolvedBreak;
 
-export type SpeechBilingualName = { nameTa: string; nameEn: string; roleTa?: string; roleEn?: string };
+export type SpeechBilingualName = {
+  nameTa: string;
+  nameEn: string;
+  roleTa?: string;
+  roleEn?: string;
+};
 
-// Vendored per-speech content (speech.json).
+// Vendored per-speech content (speech.json). Context fields are deliberately optional: a public
+// speech must not be forced into an Assembly schema, and a source that does not establish an event,
+// date, venue or role must not acquire one merely to satisfy the reader.
 export type Speech = {
   workId: string;
   slug: string;
@@ -55,85 +52,90 @@ export type Speech = {
   sourcePath: string;
   sourceCommit: string;
   shelf: "speeches";
-  subtype: string; // "assembly-speech" | "public-speech"
+  subtype: SpeechSubtype;
   readerStructure: "speech";
-  date: string; // ISO where the source establishes it
-  year: number;
-  title: { ta: string; en: string };
-  event: { ta: string; en: string };
+  date: string | null;
+  year: number | null;
+  title: SpeechBilingualText;
+  event?: SpeechBilingualText | null;
+  venue?: SpeechBilingualText | null;
   speechType: string;
   speaker: SpeechBilingualName;
-  legislature: { nameTa: string; nameEn: string };
-  transcriptionStatus: string; // verbatim released status
+  legislature?: { nameTa: string; nameEn: string } | null;
+  transcriptionStatus: string;
   translationStatus: string;
-  tamil: { sectionTitleTa: string; blocks: SpeechBlock[] }; // authoritative source transcription
-  english: { sectionTitleEn: string; blocks: SpeechBlock[] }; // verified faithful translation
-  sourcePages: number[]; // exact source pages the Tamil transcription covers
+  tamil: { sectionTitleTa: string; blocks: SpeechBlock[] };
+  english: { sectionTitleEn: string; blocks: SpeechBlock[] };
+  sourcePages: number[];
 };
 
-// Provenance manifest (provenance.json).
+export type SpeechSourceFacts = {
+  publicationTitleTa: string;
+  authorTa: string;
+  editionTa: string;
+  publicationDate: string;
+  publisherTa?: string;
+  publisherLocationTa?: string;
+  printerTa?: string;
+  printerLocationTa?: string;
+  coverPriceTa?: string;
+  scanFilename: string;
+  scanSha256?: string;
+  scanFileSizeBytes?: number;
+  scanTotalPages: number;
+  speechScanPages: string;
+  printedSpeechPages?: string;
+  frontMatterScanPages?: string;
+  advertisementScanPages?: string;
+  nonSpeechScanPages?: string;
+  controllingSourceNoteTa?: string;
+  controllingSourceNoteEn?: string;
+};
+
 export type SpeechProvenance = {
   workId: string;
   sourceRepo: string;
   sourcePath: string;
   sourceCommit: string;
-  source: {
-    publicationTitleTa: string;
-    authorTa: string;
-    editionTa: string;
-    publicationDate: string;
-    publisherTa: string;
-    publisherLocationTa: string;
-    printerTa: string;
-    printerLocationTa: string;
-    coverPriceTa: string;
-    scanFilename: string;
-    scanTotalPages: number;
-    speechScanPages: string;
-    frontMatterScanPages: string;
-    advertisementScanPages: string;
-  };
-  transcription: Record<string, unknown>; // verbatim from source metadata.json
-  translation: Record<string, unknown>; // verbatim from source metadata.json
+  source: SpeechSourceFacts;
+  transcription: Record<string, unknown>;
+  translation: Record<string, unknown>;
   archiveDerived: {
     sectionHeadings: number;
-    tamilResolvedParagraphs: number; // clean logical paragraphs (may span source pages)
-    tamilUnresolvedGroupRuns: number; // runs inside an unresolved-relationship group
+    tamilResolvedParagraphs: number;
+    tamilUnresolvedGroupRuns: number;
     englishParagraphs: number;
-    tamilSourceTextSegments: number; // physical per-source-page fragments
+    tamilSourceTextSegments: number;
     englishSourceTextSegments: number;
     tamilCrossPageParagraphs: number;
     englishCrossPageParagraphs: number;
     sourcePagesCovered: number;
-    // Source-audited results over all Tamil page transitions (explicit table, not punctuation).
     boundaryAudit: {
       tamilTransitions: number;
       sameParagraph: number;
       paragraphBoundary: number;
       headingBoundary: number;
       unknownParagraphRelation: number;
-      lexicalJoinNone: number; // join with NO space
+      lexicalJoinNone: number;
       lexicalJoinSpace: number;
-      lexicalJoinUnknown: number; // unresolved spacing (scan-pending), never silently spaced
+      lexicalJoinUnknown: number;
     };
     englishBoundaryAudit: {
       englishAnchors: number;
       paragraphBoundary: number;
       headingNoteBoundary: number;
       sameParagraphContinuations: number;
+      unknownParagraphRelation?: number;
       note: string;
     };
     note: string;
   };
-  // Known blockers — source facts only the controlling scan can resolve, each represented as
-  // unresolved in the data and rendered neutrally (never guessed).
   blockers?: {
     item: string;
     count: number;
     detail: string;
     resolution: string;
   }[];
-  // Present project-level rights of the underlying Kalaignar-authored work (see Manohara model).
   projectRights: {
     appliesTo: string;
     rightsStatus: string;
@@ -151,7 +153,5 @@ export type SpeechProvenance = {
   notes: string[];
 };
 
-// Lightweight catalog of integrated speech slugs (build/import authority; the public catalog
-// entry lives in data/library.ts). Kept minimal — one benchmark speech in Phase 3.
-export const SPEECH_SLUGS = ["udhaya-kathir"] as const;
+export const SPEECH_SLUGS = ["udhaya-kathir", "poonthottam"] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];
