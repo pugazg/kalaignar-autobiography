@@ -33,8 +33,14 @@ export type SpeechParagraph = {
 export type SpeechHeading = { kind: "heading"; text: string; sourcePage?: number | null };
 export type SpeechNote = { kind: "note"; text: string; sourcePage?: number | null };
 
+// A NEUTRAL source-page marker used ONLY at a boundary whose paragraph relationship could not
+// be established from the archive text (a sentence completes at the page edge and the next page
+// opens a new sentence — same printed paragraph or new one is scan-pending). It asserts neither
+// a paragraph break nor a continuation; it just shows the source page changed here.
+export type SpeechPageBreak = { kind: "page-break"; toPage: number; relation: "unknown"; note?: string };
+
 // One ordered block of a speech's Tamil or English stream.
-export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote;
+export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote | SpeechPageBreak;
 
 export type SpeechBilingualName = { nameTa: string; nameEn: string; roleTa?: string; roleEn?: string };
 
@@ -94,11 +100,28 @@ export type SpeechProvenance = {
     englishSourceTextSegments: number;
     tamilCrossPageParagraphs: number;
     englishCrossPageParagraphs: number;
-    tamilMidWordJoins: number; // documented mid-word page splits (join with no space)
-    tamilWordSpaceJoins: number;
     sourcePagesCovered: number;
+    // Source-audited results over all Tamil page transitions (explicit table, not punctuation).
+    boundaryAudit: {
+      tamilTransitions: number;
+      sameParagraph: number;
+      paragraphBoundary: number;
+      headingBoundary: number;
+      unknownScanPending: number;
+      midWordJoins: number; // join with NO space
+      wordSpaceJoins: number;
+      sandhiScanPendingJoins: number;
+    };
     note: string;
   };
+  // Known blockers (e.g. physical paragraph layout resolvable only from the controlling scan).
+  blockers?: {
+    item: string;
+    count: number;
+    detail: string;
+    alsoScanPending?: string;
+    resolution: string;
+  }[];
   // Present project-level rights of the underlying Kalaignar-authored work (see Manohara model).
   projectRights: {
     appliesTo: string;

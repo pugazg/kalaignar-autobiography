@@ -74,21 +74,40 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             <Row label={ta ? "அச்சுத் தலைப்புகள்" : "Printed section headings"}>{prov.archiveDerived.sectionHeadings}</Row>
             <Row label={ta ? "வாசிப்புப் பத்திகள் (த/ஆ)" : "Logical paragraphs (Ta/En)"}>{prov.archiveDerived.tamilParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>
             <Row label={ta ? "மூலப் பக்கத் துண்டுகள் (த/ஆ)" : "Source-page text segments (Ta/En)"}>{prov.archiveDerived.tamilSourceTextSegments} / {prov.archiveDerived.englishSourceTextSegments}</Row>
-            <Row label={ta ? "பக்கம் தாண்டும் பத்திகள் (த/ஆ)" : "Cross-page paragraphs (Ta/En)"}>
-              {prov.archiveDerived.tamilCrossPageParagraphs} / {prov.archiveDerived.englishCrossPageParagraphs}
-              <span className="mt-1 block text-[11px] text-ink/40 dark:text-night-text/40">
-                {ta
-                  ? `இதில் ${prov.archiveDerived.tamilMidWordJoins} சொல்-நடு பக்கப் பிரிப்புகள் (இடைவெளியின்றி இணைக்கப்படுகின்றன).`
-                  : `incl. ${prov.archiveDerived.tamilMidWordJoins} mid-word page splits (joined with no space).`}
-              </span>
-            </Row>
             <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>
           </dl>
+          {/* Source-audited page-boundary results (Tamil), not inferred from punctuation. */}
+          <div className="mt-4 rounded-xl border border-brass/30 bg-brass/[0.05] p-3">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-brass">
+              {ta ? "மூல-தணிக்கை செய்யப்பட்ட பக்க எல்லைகள் (தமிழ்)" : "Source-audited page boundaries (Tamil)"}
+            </p>
+            <dl className="mt-2">
+              <Row label={ta ? "மொத்த எல்லைகள்" : "Total transitions"}>{prov.archiveDerived.boundaryAudit.tamilTransitions}</Row>
+              <Row label={ta ? "அதே பத்தி (தொடர்ச்சி)" : "Same paragraph (continuation)"}>{prov.archiveDerived.boundaryAudit.sameParagraph}</Row>
+              <Row label={ta ? "பத்தி எல்லை (பேச்சாளர் மாற்றம்)" : "Paragraph boundary (speaker turn)"}>{prov.archiveDerived.boundaryAudit.paragraphBoundary}</Row>
+              <Row label={ta ? "சொல்-நடு இணைப்புகள் (இடைவெளியின்றி)" : "Mid-word joins (no space)"}>{prov.archiveDerived.boundaryAudit.midWordJoins}</Row>
+              <Row label={ta ? "சொல் எல்லை இணைப்புகள்" : "Word-boundary joins (space)"}>{prov.archiveDerived.boundaryAudit.wordSpaceJoins}</Row>
+              <Row label={ta ? "தீர்மானிக்கப்படாதவை (scan தேவை)" : "Unknown (scan-pending)"}>
+                {prov.archiveDerived.boundaryAudit.unknownScanPending}
+                <span className="mt-1 block text-[11px] text-ink/40 dark:text-night-text/40">
+                  {ta ? "நடுநிலையாகக் காட்டப்படுகின்றன — பத்தி உறவு கூறப்படவில்லை." : "rendered neutrally — no paragraph relationship asserted."}
+                </span>
+              </Row>
+            </dl>
+          </div>
           <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
             {ta
-              ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல — ஒரு வாசிப்புப் பத்தி பல மூலப் பக்கங்களில் நீளலாம்; ஒவ்வொரு பக்கத் துண்டும் அதன் மூலப் பக்கத்தைத் தக்கவைக்கிறது. வாசிப்பிற்கு எந்த காப்பக எண்ணிடலும் மூல எண்ணிடலாகக் காட்டப்படவில்லை."
-              : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary — one logical reading paragraph may span several source pages, and each page segment keeps its source page. No archive-created numbering is presented as source numbering."}
+              ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல; பத்தி உறவுகள் நிறுத்தற்குறியிலிருந்து ஊகிக்கப்படவில்லை — ஒவ்வொரு எல்லையும் மூல ஆவணங்களின் அடிப்படையில் வெளிப்படையாகத் தணிக்கை செய்யப்பட்டது."
+              : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary, and paragraph relationships are NOT inferred from punctuation — every transition is classified in an explicit source-audited table."}
           </p>
+          {prov.blockers?.map((b, i) => (
+            <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-3 py-2 text-[11px] leading-relaxed text-ink/60 dark:border-white/25 dark:bg-white/[0.03] dark:text-night-text/60" lang={lang}>
+              <span className="font-semibold">{ta ? "தடை: " : "Blocker: "}</span>
+              {ta
+                ? `${b.count} பக்க எல்லைகளின் அச்சுப் பத்தி அமைப்பை மூல scan (${s.scanFilename}) மட்டுமே தீர்மானிக்க முடியும்; இச்சூழலில் அது கிடைக்கவில்லை — நடுநிலையாகக் காட்டப்படுகின்றன.`
+                : b.detail}
+            </p>
+          ))}
         </section>
 
         {/* VERIFICATION */}

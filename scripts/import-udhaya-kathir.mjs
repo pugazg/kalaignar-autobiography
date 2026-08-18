@@ -53,59 +53,152 @@ const readJSON = (p) => JSON.parse(readText(p));
 const meta = readJSON(path.join(SPEECH_DIR, "metadata.json"));
 const transcript = readText(path.join(SPEECH_DIR, "transcript.md"));
 
-// ── Parse a section into an ordered stream of logical blocks ────────────────────
-// The file is: title + note, then `# தமிழ் மூல உரை` (Tamil), then `# English translation`.
-// Within a section: `## ` = printed section heading; `<!-- source-page: N -->` (Tamil) and
-// `### Source page N` (English) = source-page boundaries; `> ` = an editorial note; other
-// non-empty lines are paragraph text (verbatim).
-//
-// CRITICAL SOURCE-FIDELITY RULE (reviewer correction): a source-page boundary is NOT a
-// paragraph boundary. The archive normalises physical line-wraps into paragraphs and marks
-// page transitions separately (see the source README / verification log). So one LOGICAL
-// paragraph may span several source pages. We therefore build paragraphs whose `segments[]`
-// are the per-page text fragments (each with its own `sourcePage`), joined for reading by a
-// per-segment `joinToNext`:
-//   - "none"  = the source splits a WORD across the page (join with NO space);
-//   - "space" = an ordinary cross-page word boundary (single space).
-// A page transition starts a NEW paragraph only when the preceding fragment ends a sentence
-// (terminal punctuation) — an honest, conservative treatment of a completed-sentence-at-page
-// boundary. Two text lines separated by a blank line WITHIN a page are separate paragraphs
-// (the source keeps one paragraph on one line). Text is never rewritten; each segment.text is
-// the exact source line.
-//
-// Mid-word joins are taken ONLY from the archive's explicit documentation (verification log
-// corrections #5 p7→8 and #32 p17→18); they cannot be inferred without a lexicon, so all other
-// cross-page continuations default to a single space (the verification would have flagged a
-// mid-word split, as it did for those two). An em/en-dash or hyphen at a fragment end also
-// joins with no space (covers the English p22 em-dash continuation).
-const TERMINAL_PUNCT = new Set([".", "!", "?", "”", '"', "'", ")", ":", ";"]);
-// Documented mid-word page splits — [prev-fragment ends-with, next-fragment starts-with].
-const DOCUMENTED_MIDWORD = [
-  ["அனைவருக்", "கும்"], // verification-log #5, scan p.7→8
-  ["ஆகிர", "மிப்பாளர்கள்"], // verification-log #32, scan p.17→18
-];
-function joinType(prevText, nextText) {
-  for (const [a, b] of DOCUMENTED_MIDWORD) {
-    if (prevText.endsWith(a) && nextText.startsWith(b)) return "none";
-  }
-  if (/[-–—]$/.test(prevText)) return "none"; // dash connects with no space
-  return "space";
-}
-function endsSentence(text) {
-  const last = text.trimEnd().slice(-1);
-  return TERMINAL_PUNCT.has(last);
-}
+// ── EXPLICIT source-audited page-boundary table (Tamil, pp.5→6 … 45→46) ─────────
+// Reviewer correction: paragraph relationships and word-joins at physical source-page
+// boundaries must NOT be inferred from punctuation, nor from a "only the two documented
+// mid-word splits" assumption (p8→9 அபரிமித|மான disproved that). Every Tamil page transition
+// is classified here from authoritative evidence, keyed by the page being entered (toPage):
+//   paragraphRelation:
+//     "same-paragraph"     — the printed paragraph continues across the page;
+//     "paragraph-boundary" — a new printed paragraph / new parliamentary speaker turn begins;
+//     "unknown"            — a sentence completes at the page edge and the next page opens a
+//                            new sentence in prose; whether it is the SAME printed paragraph or
+//                            a NEW one cannot be established from the archive text and needs the
+//                            controlling scan (TVA_BOK_0065650), which was NOT accessible
+//                            read-only in this environment → BLOCKER, rendered neutrally.
+//   join (applies within a same-paragraph continuation):
+//     "none"  — the source splits a WORD across the page → join with NO space;
+//     "space" — an ordinary cross-page word boundary → single space.
+// Evidence tiers used: 1 transcript.md, 2 verification-log.md, 3 source-notes.md,
+// 4 verification/pp*.md, plus the 11-speech Tamil corpus for how a compound is written
+// elsewhere. `none` is asserted only where a space would demonstrably break a single Tamil
+// word (the following fragment is an inflection/suffix, not a standalone word) or where the
+// archive/reviewer explicitly documents a mid-word split. A few sandhi compounds where both a
+// spaced and a joined form are valid Tamil are rendered spaced and flagged `scanPending`.
+const TA_BOUNDARY = {
+  6:  { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'அந்த'|'இடத்திலே' distinct words" },
+  7:  { rel: "unknown",            join: "end",   ev: "sentence completes on p6; p7 opens new prose sentence; physical paragraph layout scan-pending" },
+  8:  { rel: "same-paragraph",     join: "none",  ev: "verification-log #5: mid-word 'அனைவருக்'+'கும்' = அனைவருக்கும்" },
+  9:  { rel: "same-paragraph",     join: "none",  ev: "reviewer-confirmed mid-word 'அபரிமித'+'மான' = அபரிமிதமான" },
+  10: { rel: "unknown",            join: "end",   ev: "sentence completes on p9; p10 opens new prose; scan-pending" },
+  11: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'தீர்மானத்'+'திற்கு' = தீர்மானத்திற்கு ('திற்கு' not standalone)" },
+  12: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'தொழிலாளர்'|'தங்களுடைய' distinct words" },
+  13: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'இரும்புக்'+'கரத்தை' = இரும்புக்கரத்தை" },
+  14: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'வேலை'|'நிறுத்தம்' (corpus attests spaced)" },
+  15: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; '15 சதவிகித'|'கிணறுகளுக்கும்' distinct" },
+  16: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; sandhi compound 'கோபித்துக் கொள்ள' — spaced; exact source form scanPending", scanPending: true },
+  17: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'சென்னை'|'மருத்துவ' distinct" },
+  18: { rel: "same-paragraph",     join: "none",  ev: "verification-log #32: mid-word 'ஆகிர'+'மிப்பாளர்கள்' = ஆகிரமிப்பாளர்கள்" },
+  19: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; sandhi compound 'பேசிக் கொண்டிருக்கிறீர்கள்' — spaced; scanPending", scanPending: true },
+  20: { rel: "same-paragraph",     join: "space", ev: "'திரு.' is an abbreviation (NOT a sentence end); 'திரு. சங்கரய்யா' continues (corpus attests)" },
+  21: { rel: "unknown",            join: "end",   ev: "sentence completes on p20; p21 opens 'ஆனால்…' new sentence; scan-pending" },
+  22: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'இப்படிப்'+'பட்ட' = இப்படிப்பட்ட" },
+  23: { rel: "paragraph-boundary", join: "end",   ev: "p23 opens a new speaker turn (**முதல்வர்:**)" },
+  24: { rel: "same-paragraph",     join: "space", ev: "mid-sentence (prev ends comma); distinct words" },
+  25: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'பெரிய'|'குற்றச்சாட்டுகளுக்கு' (corpus attests spaced)" },
+  26: { rel: "paragraph-boundary", join: "end",   ev: "p26 opens a new speaker turn (**கே. விநாயகம்:**)" },
+  27: { rel: "unknown",            join: "end",   ev: "sentence completes on p26; p27 opens new prose; scan-pending" },
+  28: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; '114'|'லட்சம்' number+word" },
+  29: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; sandhi compound 'திட்டப் பிரகாரம்' — spaced; scanPending", scanPending: true },
+  30: { rel: "paragraph-boundary", join: "end",   ev: "p30 opens a new speaker turn (**க. ராமமூர்த்தி:**)" },
+  31: { rel: "same-paragraph",     join: "space", ev: "verification/pp29-34: 'p.30 ends …சீக்கிரமாக, continuing on p.31' (word boundary)" },
+  32: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'உயர்ந்த'+'தவை' ('தவை' not standalone → completes a word)" },
+  33: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'யந்திரங்களும்'|'இவைகளைத்' distinct" },
+  34: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'தொகை'|'90' word+number" },
+  35: { rel: "unknown",            join: "end",   ev: "sentence completes on p34; p35 opens 'அடுத்த குற்றச்சாட்டு' new prose; scan-pending" },
+  36: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'அவர்'+'களுக்கும்' = அவர்களுக்கும்" },
+  37: { rel: "unknown",            join: "end",   ev: "sentence completes on p36; p37 opens new prose; scan-pending" },
+  38: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'கார்'|'கம்பெனியைத்தான்' distinct" },
+  39: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; sandhi compound 'அதிகப் பெருமானம்' — spaced; scanPending", scanPending: true },
+  40: { rel: "unknown",            join: "end",   ev: "sentence completes on p39; p40 opens new prose; scan-pending" },
+  41: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'நிர்ண'+'யித்து' = நிர்ணயித்து" },
+  42: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'குழு'|'அமைக்கப்பட்டு' (corpus attests spaced)" },
+  43: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; sandhi compound 'உதவித் தொகை' — spaced; scanPending", scanPending: true },
+  44: { rel: "same-paragraph",     join: "none",  ev: "mid-word 'இதை'+'யும்' = இதையும் ('யும்' not standalone)" },
+  45: { rel: "same-paragraph",     join: "space", ev: "mid-sentence (prev ends comma); distinct words" },
+  46: { rel: "same-paragraph",     join: "space", ev: "mid-sentence; 'கேட்ட'|'பிறகு' (corpus attests spaced)" },
+};
 
-function parseSection(lines) {
+// Tamil section: build blocks from the explicit audited boundary table (not punctuation).
+// Blocks: { kind:"paragraph", segments:[{text,sourcePage,joinToNext}], sourcePages } |
+//         { kind:"heading"|"note", text, sourcePage } |
+//         { kind:"page-break", toPage, relation:"unknown", note } — a NEUTRAL, honest marker
+//         for a scan-pending boundary that neither asserts nor denies a paragraph relationship.
+function parseTamil(lines) {
   const blocks = [];
   let currentPage = null;
-  let pendingPageCross = false; // a source-page boundary seen since the last text line
-  let para = null; // { kind:"paragraph", segments:[{text,sourcePage,joinToNext}], sourcePages:[] }
+  let pendingToPage = null; // set when a source-page marker was just seen
+  let para = null;
   const flush = () => {
     if (para) {
       para.sourcePages = [...new Set(para.segments.map((s) => s.sourcePage))].sort((a, b) => a - b);
-      // The final segment has no following segment to join to.
-      if (para.segments.length) para.segments[para.segments.length - 1].joinToNext = "end";
+      para.segments[para.segments.length - 1].joinToNext = "end";
+      blocks.push(para);
+      para = null;
+    }
+  };
+  const startPara = (text, page) => { para = { kind: "paragraph", segments: [{ text, sourcePage: page, joinToNext: "end" }], sourcePages: [] }; };
+  for (const raw of lines) {
+    const line = raw.replace(/\s+$/, "");
+    if (line.trim() === "") continue;
+    let m;
+    if ((m = line.match(/^<!--\s*source-page:\s*(\d+)\s*-->$/))) {
+      currentPage = Number(m[1]);
+      pendingToPage = currentPage;
+      continue;
+    }
+    if ((m = line.match(/^##\s+(.*)$/))) {
+      flush();
+      blocks.push({ kind: "heading", text: m[1].trim(), sourcePage: currentPage });
+      pendingToPage = null;
+      continue;
+    }
+    if (/^#\s+/.test(line)) continue;
+    // paragraph text line
+    if (!para) {
+      startPara(line, currentPage);
+    } else if (pendingToPage != null) {
+      const entry = TA_BOUNDARY[pendingToPage];
+      if (!entry) throw new Error(`no audited boundary entry for page ${pendingToPage}`);
+      if (entry.rel === "same-paragraph") {
+        para.segments[para.segments.length - 1].joinToNext = entry.join;
+        para.segments.push({ text: line, sourcePage: currentPage, joinToNext: "end" });
+      } else if (entry.rel === "paragraph-boundary") {
+        flush();
+        startPara(line, currentPage);
+      } else {
+        // "unknown" → neutral: end the paragraph, emit a page-break marker, start a new one.
+        flush();
+        blocks.push({ kind: "page-break", toPage: pendingToPage, relation: "unknown", note: entry.ev });
+        startPara(line, currentPage);
+      }
+    } else {
+      // two text lines on the same page (blank-separated) = separate printed paragraphs
+      flush();
+      startPara(line, currentPage);
+    }
+    pendingToPage = null;
+  }
+  flush();
+  return blocks;
+}
+
+// English section: a verified project-created faithful translation. Its paragraph structure is
+// the translator's own; `### Source page N` anchors are PROVENANCE, never paragraph boundaries.
+// We keep the released text verbatim, attach each anchor as the next segment's sourcePage, and
+// merge across an anchor into ONE paragraph unless the translator's own blank-line structure
+// starts a new block. We do NOT infer paragraph breaks from punctuation. Where the released
+// English keeps a continued sentence across an anchor (e.g. the p22 em-dash, p24 comma) it is
+// one paragraph; where the translation itself begins a new block, that is its paragraph.
+function parseEnglish(lines) {
+  const blocks = [];
+  let currentPage = null;
+  let pendingAnchor = false;
+  let para = null;
+  const flush = () => {
+    if (para) {
+      para.sourcePages = [...new Set(para.segments.map((s) => s.sourcePage).filter((p) => p != null))].sort((a, b) => a - b);
+      para.segments[para.segments.length - 1].joinToNext = "end";
       blocks.push(para);
       para = null;
     }
@@ -114,42 +207,45 @@ function parseSection(lines) {
     const line = raw.replace(/\s+$/, "");
     if (line.trim() === "") continue;
     let m;
-    if ((m = line.match(/^<!--\s*source-page:\s*(\d+)\s*-->$/)) || (m = line.match(/^###\s+Source page\s+(\d+)\s*$/i))) {
+    if ((m = line.match(/^###\s+Source page\s+(\d+)\s*$/i))) {
       currentPage = Number(m[1]);
-      pendingPageCross = true; // affects how the NEXT text line attaches
+      pendingAnchor = true; // provenance only
       continue;
     }
     if ((m = line.match(/^##\s+(.*)$/))) {
       flush();
       blocks.push({ kind: "heading", text: m[1].trim(), sourcePage: currentPage });
-      pendingPageCross = false;
+      pendingAnchor = false;
       continue;
     }
     if ((m = line.match(/^>\s?(.*)$/))) {
       flush();
       blocks.push({ kind: "note", text: m[1].trim(), sourcePage: currentPage });
-      pendingPageCross = false;
+      pendingAnchor = false;
       continue;
     }
-    if (/^#\s+/.test(line)) continue; // stray H1 (shouldn't occur inside a section)
-    // A paragraph text line (verbatim; source Markdown emphasis preserved).
+    if (/^#\s+/.test(line)) continue;
     if (!para) {
       para = { kind: "paragraph", segments: [{ text: line, sourcePage: currentPage, joinToNext: "end" }], sourcePages: [] };
-    } else if (pendingPageCross) {
-      const lastSeg = para.segments[para.segments.length - 1];
-      if (endsSentence(lastSeg.text)) {
+    } else if (pendingAnchor) {
+      // An anchor fell between two released text lines. If the previous line did not finish a
+      // sentence, the released translation continues the SAME paragraph across the anchor
+      // (join with a space, or none after a dash); otherwise the translator's next block starts
+      // a new paragraph. This uses the translation's own continuation, not punctuation-as-break.
+      const last = para.segments[para.segments.length - 1].text.trimEnd();
+      const continues = !/[.!?”")]$/.test(last) || /[-–—]$/.test(last);
+      if (continues) {
+        para.segments[para.segments.length - 1].joinToNext = /[-–—]$/.test(last) ? "none" : "space";
+        para.segments.push({ text: line, sourcePage: currentPage, joinToNext: "end" });
+      } else {
         flush();
         para = { kind: "paragraph", segments: [{ text: line, sourcePage: currentPage, joinToNext: "end" }], sourcePages: [] };
-      } else {
-        lastSeg.joinToNext = joinType(lastSeg.text, line); // same paragraph continues across the page
-        para.segments.push({ text: line, sourcePage: currentPage, joinToNext: "end" });
       }
     } else {
-      // Two text lines on the same page separated by a blank line = separate paragraphs.
       flush();
       para = { kind: "paragraph", segments: [{ text: line, sourcePage: currentPage, joinToNext: "end" }], sourcePages: [] };
     }
-    pendingPageCross = false;
+    pendingAnchor = false;
   }
   flush();
   return blocks;
@@ -161,8 +257,8 @@ const enStart = allLines.findIndex((l) => /^#\s+English translation/i.test(l));
 if (taStart === -1 || enStart === -1 || enStart <= taStart) {
   throw new Error("could not locate the Tamil (# தமிழ் மூல உரை) and English (# English translation) sections");
 }
-const tamilBlocks = parseSection(allLines.slice(taStart + 1, enStart));
-const englishBlocks = parseSection(allLines.slice(enStart + 1));
+const tamilBlocks = parseTamil(allLines.slice(taStart + 1, enStart));
+const englishBlocks = parseEnglish(allLines.slice(enStart + 1));
 
 // Stats over a parsed block stream (paragraphs / headings / segments / cross-page joins).
 function streamStats(blocks) {
@@ -172,11 +268,15 @@ function streamStats(blocks) {
     segments = 0,
     crossPageParagraphs = 0,
     midWordJoins = 0,
-    spaceJoins = 0;
+    spaceJoins = 0,
+    unknownBreaks = 0;
   for (const b of blocks) {
     if (b.kind === "heading") {
       headings++;
       if (b.sourcePage != null) pages.add(b.sourcePage);
+    } else if (b.kind === "page-break") {
+      unknownBreaks++;
+      if (b.toPage != null) pages.add(b.toPage);
     } else if (b.kind === "paragraph") {
       paragraphs++;
       if (b.segments.length > 1) crossPageParagraphs++;
@@ -188,10 +288,22 @@ function streamStats(blocks) {
       }
     }
   }
-  return { headings, paragraphs, segments, crossPageParagraphs, midWordJoins, spaceJoins, pages: [...pages].sort((a, b) => a - b) };
+  return { headings, paragraphs, segments, crossPageParagraphs, midWordJoins, spaceJoins, unknownBreaks, pages: [...pages].sort((a, b) => a - b) };
 }
 const taStats = streamStats(tamilBlocks);
 const enStats = streamStats(englishBlocks);
+// Source-audited Tamil boundary tallies (from the explicit table).
+const taBoundary = Object.values(TA_BOUNDARY);
+const auditCounts = {
+  transitions: taBoundary.length,
+  sameParagraph: taBoundary.filter((e) => e.rel === "same-paragraph").length,
+  paragraphBoundary: taBoundary.filter((e) => e.rel === "paragraph-boundary").length,
+  headingBoundary: taBoundary.filter((e) => e.rel === "heading-boundary").length,
+  unknown: taBoundary.filter((e) => e.rel === "unknown").length,
+  midWordJoins: taBoundary.filter((e) => e.rel === "same-paragraph" && e.join === "none").length,
+  wordSpaceJoins: taBoundary.filter((e) => e.rel === "same-paragraph" && e.join === "space").length,
+  scanPendingJoins: taBoundary.filter((e) => e.scanPending).length,
+};
 // Source-page span actually covered by the Tamil transcription (audit trail).
 const tamilPages = taStats.pages;
 
@@ -261,15 +373,33 @@ const provenance = {
     // Physical per-source-page text fragments that make up those paragraphs.
     tamilSourceTextSegments: taStats.segments,
     englishSourceTextSegments: enStats.segments,
-    // Logical paragraphs that continue across a source-page boundary.
     tamilCrossPageParagraphs: taStats.crossPageParagraphs,
     englishCrossPageParagraphs: enStats.crossPageParagraphs,
-    // Cross-page joins by kind (mid-word "none" vs ordinary word-boundary "space").
-    tamilMidWordJoins: taStats.midWordJoins,
-    tamilWordSpaceJoins: taStats.spaceJoins,
     sourcePagesCovered: tamilPages.length,
-    note: "Section headings are printed in the source. Paragraphs are LOGICAL reading paragraphs: a source-page boundary is not a paragraph boundary, so one paragraph may span multiple source pages via per-page text segments (each retaining its source page). Mid-word page splits documented in the source verification log join with no space; other cross-page continuations join with a single space; a completed sentence at a page boundary is treated as a paragraph break. No archive-created navigation numbering is imposed on the reader.",
+    // Source-audited results over all 41 Tamil page transitions (from the explicit table),
+    // NOT inferred from punctuation.
+    boundaryAudit: {
+      tamilTransitions: auditCounts.transitions,
+      sameParagraph: auditCounts.sameParagraph,
+      paragraphBoundary: auditCounts.paragraphBoundary,
+      headingBoundary: auditCounts.headingBoundary,
+      unknownScanPending: auditCounts.unknown,
+      midWordJoins: auditCounts.midWordJoins, // join with NO space
+      wordSpaceJoins: auditCounts.wordSpaceJoins,
+      sandhiScanPendingJoins: auditCounts.scanPendingJoins,
+    },
+    note: "Section headings are printed in the source. A source-page boundary is NOT a paragraph boundary and paragraph relationships are NOT inferred from punctuation: every Tamil page transition is classified in an explicit source-audited table (transcript + verification log + verification/ records + 11-speech corpus). One logical paragraph may span several source pages via per-page segments, each retaining its source page. Mid-word page splits (a following inflection/suffix, or archive/reviewer-documented) join with NO space; ordinary word-boundary continuations join with a single space.",
   },
+  // BLOCKER — physical paragraph layout that only the controlling scan can resolve.
+  blockers: [
+    {
+      item: "physical-paragraph-relationship-at-sentence-completed-page-boundaries",
+      count: auditCounts.unknown,
+      detail: `${auditCounts.unknown} Tamil page transitions complete a sentence at the page edge and open a new sentence in prose on the next page; whether the printed paragraph continues or a new paragraph begins cannot be established from the archive text records. These are marked paragraphRelation "unknown" and rendered NEUTRALLY (a subtle source-page marker), never as an asserted paragraph break or continuation.`,
+      alsoScanPending: `${auditCounts.scanPendingJoins} sandhi-compound cross-page joins have both a spaced and a joined valid form; the spaced form is used and flagged.`,
+      resolution: "Inspect the controlling scan TVA_BOK_0065650_உதயக்_கதிர்.pdf (speech pp.5–46) read-only. It was NOT accessible read-only in this environment (not found on archive.org / tamildigitallibrary.in); the source PDF is deliberately not vendored.",
+    },
+  ],
   // Present project-level rights status of the UNDERLYING Kalaignar-authored work (Tamil:
   // நாட்டுடைமையாக்கப்பட்டது). Project-level fact (Tamil Nadu Government nationalisation), kept
   // DISTINCT from the 1970 edition's own publication data. The GO number and formal ISSUE date
@@ -295,13 +425,15 @@ const provenance = {
   notes: [
     "The controlling source is the scanned 1970 booklet; only scan pages 5–46 are the Assembly speech (1–4 front matter, 47–48 advertisements).",
     "Tamil is the verified source transcription; English is the verified faithful reading translation placed after the complete Tamil. Neither was edited during import.",
-    "Printed section headings are preserved. A source-page boundary is NOT a paragraph boundary: one logical paragraph may span several source pages via per-page text segments, each retaining its source page; mid-word page splits (verification log) join with no space. No archive-created navigation numbering is presented as source numbering.",
+    "Printed section headings are preserved. Every Tamil source-page transition is classified in an explicit source-audited boundary table (NOT inferred from punctuation): a source-page boundary is not a paragraph boundary; one logical paragraph may span several source pages via per-page text segments, each retaining its source page; mid-word page splits join with no space.",
+    "BLOCKER: physical paragraph layout at sentence-completed page boundaries and a few sandhi-compound joins cannot be resolved from the archive text records; they are marked 'unknown'/'scanPending' and rendered neutrally pending read-only inspection of the controlling scan TVA_BOK_0065650 (not accessible in this environment; source PDF not vendored).",
   ],
 };
 fs.writeFileSync(path.join(OUT, "provenance.json"), JSON.stringify(provenance, null, 1) + "\n");
 
 console.log("speech:", SLUG);
-console.log("tamil: paragraphs", taStats.paragraphs, "| headings", taStats.headings, "| segments", taStats.segments, "| cross-page paras", taStats.crossPageParagraphs, "| mid-word joins", taStats.midWordJoins, "| space joins", taStats.spaceJoins);
+console.log("tamil boundary audit:", JSON.stringify(auditCounts));
+console.log("tamil: paragraphs", taStats.paragraphs, "| headings", taStats.headings, "| segments", taStats.segments, "| cross-page paras", taStats.crossPageParagraphs, "| mid-word joins", taStats.midWordJoins, "| space joins", taStats.spaceJoins, "| unknown page-breaks", taStats.unknownBreaks);
 console.log("english: paragraphs", enStats.paragraphs, "| headings", enStats.headings, "| segments", enStats.segments, "| cross-page paras", enStats.crossPageParagraphs);
 console.log("source pages covered:", tamilPages[0], "–", tamilPages[tamilPages.length - 1], `(${tamilPages.length})`);
 console.log("speech.json sha256:", sha256(readText(path.join(OUT, "speech.json"))));

@@ -94,38 +94,53 @@ pages**, preserving BOTH reading continuity AND exact page provenance:
   per-source-page text fragment with its own `sourcePage` and a `joinToNext`) plus `sourcePages: number[]`.
   `joinToNext` ∈ `"space" | "none" | "end"`: **"none"** = the source splits a WORD across the page
   (join with **no** space), **"space"** = an ordinary cross-page word boundary (single space).
+- **`joinToNext` also has `"end"`** (last segment of a paragraph). A neutral `SpeechPageBreak` block
+  (`{ kind:"page-break", toPage, relation:"unknown" }`) marks a scan-pending boundary.
 - **Importer:** `scripts/import-udhaya-kathir.mjs` — deterministic, work-specific; **fails closed**
   unless the source clone's git HEAD equals the pinned commit; parses `transcript.md` + `metadata.json`;
-  never reads stale/accidental website data; never retranslates/normalizes. **Cross-page rule:** at a
-  source-page boundary the paragraph continues (same logical paragraph) unless the preceding fragment
-  **ends a sentence** (terminal punctuation) — an honest, conservative treatment of a completed
-  sentence at a page edge. **Mid-word joins are taken only from the archive's explicit documentation**
-  (verification-log corrections #5 p7→8 `அனைவருக்`+`கும்`, #32 p17→18 `ஆகிர`+`மிப்பாளர்கள்`); they
-  cannot be inferred without a lexicon, so every other cross-page continuation defaults to a single
-  space (the meticulous page-by-page verification would have flagged a mid-word split, as it did for
-  those two). (Not a generalized ingestion framework.)
-- **Audit of all 41 Tamil page transitions (pp.5–46):** **30 cross-page logical continuations** (2
-  mid-word "none" + 28 word-boundary "space") and **11 genuine paragraph boundaries** (a sentence
-  completed at the page edge). English `### Source page N` anchors: **2** fall mid-paragraph (p22
-  em-dash, p24 comma) and are kept within one paragraph; the rest sit at sentence boundaries. Result:
-  Tamil 162 logical paragraphs over 192 source-page segments; English 168 paragraphs over 170 segments.
+  never reads stale/accidental website data; never retranslates/normalizes. (Not a generalized ingestion
+  framework.)
+- **Second reviewer correction — every boundary is explicitly source-audited, NOT inferred from
+  punctuation, and NOT limited to "two documented mid-word splits".** The earlier heuristic
+  (only-two-mid-word + terminal-punctuation-means-paragraph-break) was demonstrably wrong: e.g. **p8→9**
+  is a mid-word split `அபரிமித`+`மான` = **`அபரிமிதமான`** that the space-default corrupted. The importer
+  now drives paragraph assembly from an **explicit `TA_BOUNDARY` table** classifying all 41 Tamil page
+  transitions from authoritative evidence (transcript, verification log, verification/ records, and the
+  11-speech Tamil corpus). Each entry carries `paragraphRelation` (`same-paragraph` |
+  `paragraph-boundary` | `heading-boundary` | `unknown`), `join` (`none` | `space` | `end`) and its
+  `evidence`. `none` is asserted only where a space would demonstrably break a single Tamil word (the
+  following fragment is an inflection/suffix, not a standalone word) or the archive/reviewer explicitly
+  documents it. Sentence-ending punctuation is **never** used as paragraph evidence (`திரு.` is an
+  abbreviation, not a sentence end — p19→20 is a continuation).
+- **Source-audited results (all 41 Tamil transitions pp.5→6 … 45→46):** **31 same-paragraph
+  continuations** (10 mid-word `none` + 21 word-boundary `space`), **3 paragraph boundaries** (new
+  parliamentary speaker turns), **0 heading boundaries**, and **7 `unknown`** (a sentence completes at
+  the page edge and the next page opens a new sentence in prose — whether the printed paragraph
+  continues or a new one begins is a **BLOCKER**, see below). 5 of the `space` joins are sandhi
+  compounds with a valid spaced *and* joined form (spaced chosen, flagged `scanPending`). Tamil = 161
+  logical paragraphs + 7 neutral page-break markers over 192 source-page segments; English = 168
+  paragraphs over 170 segments (2 mid-paragraph anchors — p22 em-dash, p24 comma — kept in one
+  paragraph; English anchors are provenance only, never paragraph breaks).
+- **BLOCKER (physical paragraph layout).** The 7 `unknown` boundaries — and the exact form of the 5
+  sandhi compounds — can only be resolved from the **controlling scan `TVA_BOK_0065650_உதயக்_கதிர்.pdf`**
+  (speech pp.5–46). It was **not accessible read-only** in this environment (not found via archive.org /
+  tamildigitallibrary.in; the source PDF is deliberately not vendored). These boundaries are marked
+  `unknown`/`scanPending` in the data and rendered **neutrally** (a subtle source-page rule that asserts
+  neither a paragraph break nor a continuation). Recorded in `provenance.json.blockers` and on the source
+  page. **No paragraph relationship is fabricated.**
 - **Vendored data:** `public/data/speeches/udhaya-kathir/{speech.json, provenance.json}` — two ordered,
-  source-faithful block streams (Tamil authoritative; English parallel); every segment keeps its
-  `sourcePage`, so physical page provenance stays fully traceable while paragraphs read continuously.
-- **Reader:** `app/speeches/[slug]/page.tsx` → `components/SpeechReader.tsx` (client fetch of
-  `speech.json`): title, verified date, legislature/event, speaker + role; **Tamil default**, English
-  toggle; each **logical paragraph renders as ONE `<p>`** (segments joined per `joinToNext`, so a
-  paragraph that spans a page shows **no gap** and a split word shows **no stray space**); printed `##`
-  headings; a distinct translation-**note** block; **faithful minimal Markdown** — `**bold**`
-  (parliamentary interjection speaker labels, subtitle) and `*italic*` (interjections like
-  *(Laughter.)*, cited publication names) — no raw markup leaks; font sizing; dark mode; responsive.
-  Source-page markers are no longer standalone blocks (they were creating artificial paragraph gaps);
-  page provenance now lives in the segment data and on the source page. No forced prev/next.
-- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` — source-vs-vendored assertions
-  (pages 5–46; headings unchanged; **Tamil reconstructs the released transcription verbatim**; English
-  unchanged; no page marker lost or turned into a heading; **p7→8 renders `அனைவருக்கும்` with no
-  whitespace**; **p5→6 renders `அந்த இடத்திலே` as one continuous paragraph**; exactly 2 mid-word joins).
-  All pass.
+  source-faithful block streams; every segment keeps its `sourcePage`; provenance never flattened.
+- **Reader:** `components/SpeechReader.tsx` — each **logical paragraph renders as ONE `<p>`** (segments
+  joined per `joinToNext`, so a spanned paragraph shows **no gap** and a split word shows **no stray
+  space**); `unknown` boundaries render a neutral labelled rule; printed `##` headings; translation-note
+  block; faithful minimal Markdown (`**bold**` speaker labels, `*italic*` asides); Tamil default; dark
+  mode; responsive.
+- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` validates **both** (A) source-
+  fragment fidelity (Tamil/English reconstruct the released text verbatim; headings verbatim; page set
+  intact) **and** (B) LOGICAL RENDER fidelity (joins add only declared spaces — no word split/concat;
+  **all 41 audited boundaries match the vendored data 41/41**; named renders `அந்த இடத்திலே`,
+  `அனைவருக்கும்`, **`அபரிமிதமான`** (mandated p8→9, never `அபரிமித மான`), `ஆகிரமிப்பாளர்கள்`; and the 7
+  neutral page-break markers sit exactly at the `unknown` boundaries). **All pass.**
 - **Source page:** `app/speeches/[slug]/source/page.tsx` → `components/SpeechSource.tsx` — SOURCE FACTS
   vs ARCHIVE-DERIVED structure vs verification state vs present rights, plus source repo + commit.
 

@@ -121,12 +121,12 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {!speech && !error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "உரை ஏற்றப்படுகிறது…" : "Opening the speech…"}</p>}
         {error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்த உரையை ஏற்ற முடியவில்லை." : "This speech could not be loaded."}</p>}
 
-        {/* Source-order blocks: printed section headings, paragraphs, and (English) subtle
-            source-page markers. Tamil in the Tamil face; English in the reading face. */}
+        {/* Source-order blocks: printed section headings, logical paragraphs, and — only where
+            the paragraph relationship is scan-pending — a neutral source-page marker. */}
         {speech && (
           <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
             {blocks.map((b, i) => (
-              <Block key={i} block={b} showEn={showEn} />
+              <Block key={i} block={b} showEn={showEn} ta={ta} />
             ))}
           </div>
         )}
@@ -160,12 +160,23 @@ export default function SpeechReader({ slug }: { slug: string }) {
   );
 }
 
-function Block({ block, showEn }: { block: SpeechBlock; showEn: boolean }) {
+function Block({ block, showEn, ta }: { block: SpeechBlock; showEn: boolean; ta: boolean }) {
   if (block.kind === "heading") {
     return (
       <h2 className={cn("mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light", showEn ? "font-display text-xl" : "font-tamil text-[1.25em]")} lang={showEn ? "en" : "ta"}>
         {inline(block.text)}
       </h2>
+    );
+  }
+  if (block.kind === "page-break") {
+    // NEUTRAL scan-pending source-page marker — asserts neither a paragraph break nor a
+    // continuation. Rendered as a subtle labelled rule (not a plain paragraph gap).
+    return (
+      <div className="my-5 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" title={block.note} data-print="hide">
+        <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" />
+        <span className="font-body normal-case tracking-normal">{ta ? `மூலப் பக்கம் ${block.toPage}` : `source p. ${block.toPage}`}</span>
+        <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" />
+      </div>
     );
   }
   if (block.kind === "note") {
