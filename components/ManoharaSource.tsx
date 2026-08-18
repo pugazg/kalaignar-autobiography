@@ -100,30 +100,41 @@ export default function ManoharaSource({ prov }: { prov: ManoharaProvenance }) {
         {pr && (
           <section className="mt-4 rounded-2xl border border-marina/30 bg-marina/[0.05] p-5">
             <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
-              <ShieldCheck className="h-3.5 w-3.5" aria-hidden /> {ta ? "தற்போதைய உரிமை / தேசியமயமாக்கல் நிலை" : "Present rights / nationalisation status"}
+              <ShieldCheck className="h-3.5 w-3.5" aria-hidden /> {ta ? "தற்போதைய உரிமை / நாட்டுடைமை நிலை" : "Present rights / nationalisation status"}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang={lang}>
               {ta
-                ? "முத்தமிழ் அறிஞர் கலைஞர் மு. கருணாநிதியின் படைப்புகளைத் தமிழ்நாடு அரசு தேசியமயமாக்கியுள்ளது. 2024 ஆகஸ்ட் 22 அன்று ராயல்டி இன்றி தேசியமயமாக்கப்படும் என அறிவிக்கப்பட்டு, 2024 டிசம்பரில் அரசாணை வழங்கப்பட்டது. இது இந்நூலின் அடிப்படை மூலப் படைப்புக்கு (கலைஞர் எழுதியது) பொருந்தும்."
-                : "The works of Kalaignar M. Karunanidhi have been nationalised by the Government of Tamil Nadu — announced on 22 August 2024 (without royalty), with the Government Order issued in December 2024. This applies to the underlying work authored by Kalaignar."}
+                ? "முத்தமிழறிஞர் கலைஞர் மு. கருணாநிதியின் படைப்புகள் தமிழ்நாடு அரசால் நாட்டுடைமையாக்கப்பட்டுள்ளன. 2024 ஆகஸ்ட் 22 அன்றைய அறிவிப்பையடுத்து, ராயல்டி இன்றி நாட்டுடைமையாக்கப்பட்டன. அரசாணை 2024 டிசம்பர் 22 அன்று ராஜாத்தி அம்மாளிடம் பொதுவில் வழங்கப்பட்டது. அரசாணையின் சரியான எண்ணும் முறையான வெளியீட்டுத் தேதியும் ஆவணத்திலிருந்து இன்னும் சரிபார்க்கப்படவில்லை. இது கலைஞர் எழுதிய அடிப்படை மூலப் படைப்புக்கு மட்டுமே பொருந்தும்."
+                : "Kalaignar M. Karunanidhi's works were nationalised by the Government of Tamil Nadu following the 22 August 2024 announcement, without royalty. The Government Order was publicly handed over to Rajathi Ammal on 22 December 2024. Its exact GO number and formal issue date have not yet been verified from the order itself. This applies to the underlying work authored by Kalaignar."}
             </p>
             <dl className="mt-3">
               <Row label={ta ? "உரிமை நிலை" : "Rights status"}>
-                {ta ? "தமிழ்நாடு அரசால் தேசியமயமாக்கப்பட்டது" : "Nationalised by the Government of Tamil Nadu"}
+                {ta ? "தமிழ்நாடு அரசால் நாட்டுடைமையாக்கப்பட்டது" : "Nationalised by the Government of Tamil Nadu"}
               </Row>
               <Row label={ta ? "அதிகாரம்" : "Authority"}>{pr.rightsAuthority}</Row>
               <Row label={ta ? "நடவடிக்கை" : "Action"}>{pr.rightsAction}</Row>
               <Row label={ta ? "அறிவிப்பு தேதி" : "Announcement date"}>{pr.rightsAnnouncementDate}</Row>
-              <Row label={ta ? "அரசாணை" : "Government Order"}>
-                {pr.governmentOrderNumber
-                  ? pr.governmentOrderNumber
-                  : `${pr.governmentOrderDateStated ?? "—"} · ${ta ? "எண் இன்னும் சரிபார்க்கப்படவில்லை" : "number not yet verified"}`}
+              {pr.governmentOrderHandoverDate && (
+                <Row label={ta ? "அரசாணை பொதுவில் வழங்கப்பட்டது" : "GO publicly handed over"}>
+                  {pr.governmentOrderHandoverDate}
+                  <span className="mt-1 block text-[11px] text-ink/40 dark:text-night-text/40">
+                    {ta
+                      ? "ராஜாத்தி அம்மாளிடம் வழங்கப்பட்ட தேதி — இது வெளியீட்டுத் தேதி அல்ல."
+                      : "Date handed over to Rajathi Ammal — not asserted as the GO issue date."}
+                  </span>
+                </Row>
+              )}
+              <Row label={ta ? "அரசாணை எண்" : "GO number"}>
+                {pr.governmentOrderNumber ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}
+              </Row>
+              <Row label={ta ? "அரசாணை வெளியீட்டுத் தேதி" : "GO issue date"}>
+                {pr.governmentOrderDate ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}
               </Row>
             </dl>
             <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.05] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
               {ta
-                ? "தேசியமயமாக்கல் கலைஞரின் அடிப்படை தமிழ்ப் படைப்பிற்கு மட்டுமே. இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு அல்லது பிறர் பங்களிப்புகளுக்கு இது நீட்டிக்கப்படவில்லை. அரசாணை எண் அதிகாரப்பூர்வ ஆவணத்திலிருந்து சரிபார்த்த பின்பே பதிவு செய்யப்படும்."
-                : "The nationalisation covers Kalaignar's underlying Tamil work only. It does not extend to the project-created English translation or to third-party contributions. The exact Government Order number will be recorded only after verification from an authoritative record."}
+                ? "நாட்டுடைமையாக்கல் கலைஞரின் அடிப்படை தமிழ்ப் படைப்பிற்கு மட்டுமே. இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு, தனித்தனியே வெளியிடப்பட்ட மொழிபெயர்ப்புகள், அல்லது பிறர் பங்களிப்புகளுக்கு இது நீட்டிக்கப்படவில்லை — அவை தத்தம் உரிமை/மூலத் தன்மையைத் தக்கவைத்துக்கொள்கின்றன."
+                : "The nationalisation covers Kalaignar's underlying Tamil work only. It does not extend to the project-created English translation, separately published translations, or third-party contributions, which retain their own provenance and rights."}
             </p>
           </section>
         )}

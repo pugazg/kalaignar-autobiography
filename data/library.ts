@@ -86,14 +86,16 @@ export type PublicationState = "published" | "ready-to-integrate" | "archival-in
 // DIFFERENT fact from any historical rights notice printed in an old edition (that
 // notice is preserved separately as a source witness on the work's provenance page).
 //
-// Background: the Government of Tamil Nadu announced on 2024-08-22 that Kalaignar
-// M. Karunanidhi's works would be nationalised without royalty, and issued the
-// Government Order nationalising his works in December 2024. This is a project-wide
-// fact applicable to works authored by Kalaignar (subject to confirming each item is
-// in fact his work and falls within the order). It does NOT extend to third-party
-// contributions (other authors' prefaces/essays, separately published translations,
-// secondary witness editions, photographs/illustrations/cover/publisher material),
-// nor to project-created translations, which retain their own distinct provenance.
+// Background (Tamil: நாட்டுடைமையாக்கப்பட்டது): following the Government of Tamil Nadu's
+// 2024-08-22 announcement, Kalaignar M. Karunanidhi's works were nationalised without royalty.
+// The Government Order was publicly handed over to Rajathi Ammal on 2024-12-22. The GO's exact
+// number and formal ISSUE date have NOT yet been verified from the order itself and are left
+// unset — the handover date is NOT assumed to be the issue date. This is a project-wide fact
+// applicable to works authored by Kalaignar (subject to confirming each item is in fact his work
+// and falls within the order). It does NOT extend to third-party contributions (other authors'
+// prefaces/essays, separately published translations, secondary witness editions,
+// photographs/illustrations/cover/publisher material), nor to project-created translations,
+// which retain their own distinct provenance.
 export type RightsStatus =
   // Kalaignar-authored underlying work, nationalised by the Government of Tamil Nadu.
   | "nationalised-by-tamil-nadu-government"
@@ -112,8 +114,13 @@ export interface WorkRights {
   rightsAnnouncementDate?: string;
   /** Government Order number — ONLY once verified from the GO itself. Never invented. */
   governmentOrderNumber?: string | null;
-  /** Government Order date as stated where only partly verified (e.g. "December 2024"). */
-  governmentOrderDateStated?: string;
+  /** Government Order formal ISSUE date — null until verified from the order itself (never inferred). */
+  governmentOrderDate?: string | null;
+  /**
+   * Date the Government Order was publicly HANDED OVER to Rajathi Ammal (2024-12-22).
+   * This is NOT asserted as the GO issue date.
+   */
+  governmentOrderHandoverDate?: string;
   /** Short note distinguishing this present status from historical printed edition notices. */
   note?: string;
 }
@@ -268,17 +275,19 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     // navigation segments only — never presented as "printed scenes". The label makes
     // that explicit on the catalog card.
     unitCount: { value: 57, labelTa: "காப்பக வழிசெலுத்தல் பகுதிகள்", labelEn: "archival segments" },
-    // Present rights status of Kalaignar's underlying work: nationalised by the Government
-    // of Tamil Nadu (announced 2024-08-22; GO issued December 2024). This is DISTINCT from
-    // the 1954 edition's printed "உரிமை : ஆசிரியருக்கே." notice, which is preserved as a
-    // source witness on /cinema/manohara/source. The GO number is not yet verified → not set.
+    // Present rights status of Kalaignar's underlying work: nationalised by the Government of
+    // Tamil Nadu (announced 2024-08-22; the GO was publicly handed over to Rajathi Ammal on
+    // 2024-12-22 — its exact number and formal issue date are NOT yet verified). This is DISTINCT
+    // from the 1954 edition's printed "உரிமை : ஆசிரியருக்கே." notice, which is preserved as a
+    // source witness on /cinema/manohara/source.
     rights: {
       rightsStatus: "nationalised-by-tamil-nadu-government",
       rightsAuthority: "Government of Tamil Nadu",
       rightsAction: "nationalisation",
       rightsAnnouncementDate: "2024-08-22",
       governmentOrderNumber: null,
-      governmentOrderDateStated: "December 2024",
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
       note: "Nationalisation applies to Kalaignar's underlying Tamil work; it does not extend to the project-created English translation or to third-party material. Distinct from the historical 1954 printed rights notice.",
     },
     provenanceHref: "/cinema/manohara/source",

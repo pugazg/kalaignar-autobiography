@@ -156,11 +156,12 @@ export type ManoharaProvenance = {
     validationInputAggregateSha256: string;
     readerEditionOutputs: Record<string, { sha256: string; bytes: number }>;
   };
-  // Present project-level rights status of the UNDERLYING work authored by Kalaignar.
-  // This is a project-level provenance fact (Tamil Nadu Government nationalisation) — it is
-  // deliberately NOT source-repo-derived and is kept DISTINCT from the 1954 edition's printed
-  // rights notice (source.rights_notice_as_printed). The Government Order number is null until
-  // verified from the GO itself; it is never invented.
+  // Present project-level rights status of the UNDERLYING work authored by Kalaignar (Tamil:
+  // நாட்டுடைமையாக்கப்பட்டது). This is a project-level provenance fact (Tamil Nadu Government
+  // nationalisation) — deliberately NOT source-repo-derived, and kept DISTINCT from the 1954
+  // edition's printed rights notice (source.rights_notice_as_printed). The GO's number and formal
+  // ISSUE date are null until verified from the order itself; they are never invented or inferred.
+  // The 2024-12-22 date is only the public HANDOVER of the GO, not its issue date.
   projectRights: {
     appliesTo: string; // the underlying Kalaignar-authored work only
     rightsStatus: string; // "nationalised-by-tamil-nadu-government"
@@ -168,11 +169,12 @@ export type ManoharaProvenance = {
     rightsAction: string; // "nationalisation"
     rightsAnnouncementDate: string; // "2024-08-22" (announced without royalty)
     governmentOrderNumber: string | null; // null until verified from the GO — never invented
-    governmentOrderDateStated: string | null; // e.g. "December 2024" (as stated; exact date pending)
+    governmentOrderDate: string | null; // formal ISSUE date — null until verified (never inferred)
+    governmentOrderHandoverDate: string | null; // "2024-12-22" public handover to Rajathi Ammal; NOT the issue date
     distinctionNote: string; // printed 1954 notice vs present nationalisation are different facts
     thirdPartyNote: string; // nationalisation does not extend to third-party contributions
     projectTranslationNote: string; // project-created English retains its own distinct provenance
-    evidencePending: string; // exact GO number/date to be captured from an authoritative record
+    evidencePending: string; // exact GO number/issue date to be captured from an authoritative record
   };
   notes: string[];
 };

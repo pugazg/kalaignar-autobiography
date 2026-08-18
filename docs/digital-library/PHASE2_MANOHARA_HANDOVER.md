@@ -89,11 +89,17 @@ and no source path/record id is converted into an invented website id:
 ```
 
 Provenance populations preserved (all asserted against the source, never against the removed
-`parts/`): **983** immutable dialogue links (`sourceRecordId` non-null); **207** null-`sourceRecordId`
-/ null-speaker units; **6** song/performance occurrence links (`sourceOccurrenceId`); **17**
-cross-page units retaining their exact `englishPageSegments`; **207** structured `sourceLocator`s.
+`parts/`): **983** immutable dialogue links (`sourceRecordId` non-null); **6** song/performance
+occurrence links (`sourceOccurrenceId`); **17** cross-page units retaining their exact
+`englishPageSegments`; **207** structured `sourceLocator`s.
 Assertion example — `manohara-en-s001-u006` retains `sourceRecordId: manohara-s001-d004`, page
 provenance for PDF 7 and 8, and both exact English page segments.
+
+Two counts are kept **distinct** (do not conflate them): **27** = source-**unlabelled spoken**
+units (the authoritative manifest's `source_unlabelled_spoken_units`, surfaced on the source page).
+**207** = the broader population of units with a null `sourceRecordId` / null speaker across the
+whole unit set, which **includes non-spoken structural units** (stage directions, song references,
+etc.); it is **not** the same as, and must not be labelled, "source-unlabelled spoken units."
 
 **Defect fixed in passing:** one unit (`manohara-en-s036-u076`) is represented in the source as
 `translation.english_lines` (two quoted crowd cries) rather than `english_text`; the previous
@@ -201,14 +207,17 @@ in `data/library.ts`; `LibraryWork.rights`), and Manohara records:
 
 - `rightsStatus: "nationalised-by-tamil-nadu-government"`, `rightsAuthority: "Government of Tamil
   Nadu"`, `rightsAction: "nationalisation"`, `rightsAnnouncementDate: "2024-08-22"`,
-  `governmentOrderDateStated: "December 2024"`, `governmentOrderNumber: null`.
+  `governmentOrderNumber: null`, `governmentOrderDate: null` (formal issue date — unverified),
+  `governmentOrderHandoverDate: "2024-12-22"` (public handover only, **not** the issue date).
 
-Background: the Government of Tamil Nadu announced on 2024-08-22 that Kalaignar's works would be
-nationalised **without royalty**, and issued the nationalising Government Order in December 2024.
-This is a **project-wide** fact for works authored by Kalaignar — **not** Manohara-specific. The
-same facts are also written into the vendored `provenance.json` (`projectRights`) so the audit
-trail travels with the static package, and the `/cinema/manohara/source` page now shows two
-**distinct** facts:
+Background (Tamil: **நாட்டுடைமையாக்கப்பட்டது**): following the Government of Tamil Nadu's 2024-08-22
+announcement, Kalaignar's works were nationalised **without royalty**. The Government Order was
+publicly **handed over to Rajathi Ammal on 2024-12-22**; the GO's exact number and formal **issue
+date have NOT been verified** from the order itself and are left unset (the handover date is **not**
+equated with the issue date). This is a **project-wide** fact for works authored by Kalaignar —
+**not** Manohara-specific. The same facts are also written into the vendored `provenance.json`
+(`projectRights`) so the audit trail travels with the static package, and the
+`/cinema/manohara/source` page now shows two **distinct** facts:
 
 - **"Rights notice in this edition — as printed"** — the 1954 booklet's `உரிமை : ஆசிரியருக்கே.`,
   preserved verbatim as a historical **source witness** (not the present status).
@@ -241,7 +250,8 @@ and record the exact GO number/date as part of that audit. This corrective commi
   1 / 1); unit-id set == authoritative; **per-unit verbatim equality with 0 mismatches** across
   `kind`, `speakerLabel` (null preserved), `text`, and all `source` / `translation` provenance
   fields; 983 immutable dialogue links; 6 song-occurrence links; 17 cross-page units with exact
-  `englishPageSegments`; 207 null-speaker units preserved; no text changes; `manohara-en-s001-u006`
+  `englishPageSegments`; 207 null-speaker/null-`sourceRecordId` units preserved (distinct from the
+  manifest's 27 source-unlabelled **spoken** units); no text changes; `manohara-en-s001-u006`
   assertion (sourceRecordId + PDF 7&8 page provenance + both English page segments) passes; the
   `manohara-en-s036-u076` `english_lines` fix verified.
 - **Importer HEAD guard** — regenerates only when the source clone HEAD equals the pinned commit;
@@ -270,8 +280,9 @@ and record the exact GO number/date as part of that audit. This corrective commi
   bookmarks.
 - **Rights:** no unsupported generic public-domain claim is made. The underlying Kalaignar-authored
   work is recorded as **nationalised by the Government of Tamil Nadu** (announced 2024-08-22; GO
-  December 2024, number pending verification), kept **separate** from the historical 1954 printed
-  edition notice, from the **project-created** English translation, and from any third-party
-  material. See the Rights section above.
+  publicly handed over to Rajathi Ammal on 2024-12-22; GO number and formal issue date **not yet
+  verified**), kept **separate** from the historical 1954 printed edition notice, from the
+  **project-created** English translation, and from any third-party material. See the Rights section
+  above.
 - **This PR does not mark the cross-project master handover "Phase 2 COMPLETE"** (that is a
   separate post-merge closeout). Parasakthi / Tirumbippaar are **not** started.

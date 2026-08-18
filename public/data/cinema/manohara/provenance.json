@@ -75,11 +75,12 @@
   "rightsAction": "nationalisation",
   "rightsAnnouncementDate": "2024-08-22",
   "governmentOrderNumber": null,
-  "governmentOrderDateStated": "December 2024",
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
   "distinctionNote": "The 1954 edition's printed rights notice and the later Tamil Nadu Government nationalisation are two different historical/provenance facts; the printed notice does not describe the present rights status.",
   "thirdPartyNote": "The nationalisation applies to Kalaignar's underlying authored work. It does not extend to third-party contributions (other authors' prefaces/essays, separately published translations, secondary source/witness editions, or photographs/illustrations/cover/publisher material), which retain their own independent provenance and rights.",
   "projectTranslationNote": "The English reading layer is a project-created derivative (englishKind: project-created) and retains its own distinct provenance, separate from the rights status of the underlying Tamil work.",
-  "evidencePending": "The exact Government Order number/date must be captured and verified from the Government Order or another authoritative government record before being recorded here."
+  "evidencePending": "The Government Order's exact number and formal ISSUE date have not yet been verified from the order itself; 2024-12-22 is the public handover date only, not the issue date. These must be captured from the GO or another authoritative government record before being recorded here."
  },
  "notes": [
   "The 1954 booklet prints NO numbered scenes; the 57 divisions are archive-created navigation segments only.",

@@ -233,10 +233,11 @@ const provenance = {
     validationInputAggregateSha256: manifest.validation_input_aggregate_sha256,
     readerEditionOutputs: manifest.outputs, // md/html/json/QA hashes from source
   },
-  // Present project-level rights status of the UNDERLYING Kalaignar-authored work. These are
-  // PROJECT-LEVEL verified facts (not from the source repo) and are kept DISTINCT from the 1954
-  // edition's printed rights notice (source.rights_notice_as_printed above). The Government Order
-  // number is null until verified from the GO itself — it is never invented.
+  // Present project-level rights status of the UNDERLYING Kalaignar-authored work (Tamil:
+  // நாட்டுடைமையாக்கப்பட்டது). These are PROJECT-LEVEL verified facts (not from the source repo)
+  // and are kept DISTINCT from the 1954 edition's printed rights notice above. The GO's number and
+  // formal ISSUE date are null until verified from the order itself — never invented or inferred.
+  // 2024-12-22 is only the public HANDOVER of the GO to Rajathi Ammal, not its issue date.
   projectRights: {
     appliesTo: "underlying-work-authored-by-kalaignar",
     rightsStatus: "nationalised-by-tamil-nadu-government",
@@ -244,7 +245,8 @@ const provenance = {
     rightsAction: "nationalisation",
     rightsAnnouncementDate: "2024-08-22",
     governmentOrderNumber: null,
-    governmentOrderDateStated: "December 2024",
+    governmentOrderDate: null,
+    governmentOrderHandoverDate: "2024-12-22",
     distinctionNote:
       "The 1954 edition's printed rights notice and the later Tamil Nadu Government nationalisation are two different historical/provenance facts; the printed notice does not describe the present rights status.",
     thirdPartyNote:
@@ -252,7 +254,7 @@ const provenance = {
     projectTranslationNote:
       "The English reading layer is a project-created derivative (englishKind: project-created) and retains its own distinct provenance, separate from the rights status of the underlying Tamil work.",
     evidencePending:
-      "The exact Government Order number/date must be captured and verified from the Government Order or another authoritative government record before being recorded here.",
+      "The Government Order's exact number and formal ISSUE date have not yet been verified from the order itself; 2024-12-22 is the public handover date only, not the issue date. These must be captured from the GO or another authoritative government record before being recorded here.",
   },
   notes: [
     "The 1954 booklet prints NO numbered scenes; the 57 divisions are archive-created navigation segments only.",

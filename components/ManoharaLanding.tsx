@@ -111,7 +111,7 @@ export default function ManoharaLanding({ index, source }: Props) {
               </p>
               <p className="mt-1.5 text-[11px] leading-snug text-ink/45 dark:text-night-text/45" lang={lang}>
                 {ta ? (
-                  <>கலைஞரின் படைப்புகள் தமிழ்நாடு அரசால் தேசியமயமாக்கப்பட்டுள்ளன — தற்போதைய உரிமை நிலைக்கு <Link href="/cinema/manohara/source" className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina">மூலப் பக்கம்</Link> காண்க.</>
+                  <>கலைஞரின் படைப்புகள் தமிழ்நாடு அரசால் நாட்டுடைமையாக்கப்பட்டுள்ளன — தற்போதைய உரிமை நிலைக்கு <Link href="/cinema/manohara/source" className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina">மூலப் பக்கம்</Link> காண்க.</>
                 ) : (
                   <>Kalaignar's works have since been nationalised by the Government of Tamil Nadu — see the <Link href="/cinema/manohara/source" className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">source page</Link> for present rights status.</>
                 )}
