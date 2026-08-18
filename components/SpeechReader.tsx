@@ -121,13 +121,12 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {!speech && !error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "உரை ஏற்றப்படுகிறது…" : "Opening the speech…"}</p>}
         {error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்த உரையை ஏற்ற முடியவில்லை." : "This speech could not be loaded."}</p>}
 
-        {/* Source-order blocks: printed section headings, logical paragraphs, and — only where
-            the paragraph relationship is scan-pending — a neutral source-page marker. */}
+        {/* Source-order blocks: printed section headings, resolved logical paragraphs, and —
+            where the paragraph relationship is scan-pending — a NEUTRAL group (not separate
+            paragraphs) with a source-page rule between the runs. */}
         {speech && (
           <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
-            {blocks.map((b, i) => (
-              <Block key={i} block={b} showEn={showEn} ta={ta} />
-            ))}
+            {renderBlocks(blocks, ta)}
           </div>
         )}
 
@@ -160,41 +159,123 @@ export default function SpeechReader({ slug }: { slug: string }) {
   );
 }
 
-function Block({ block, showEn, ta }: { block: SpeechBlock; showEn: boolean; ta: boolean }) {
-  if (block.kind === "heading") {
-    return (
-      <h2 className={cn("mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light", showEn ? "font-display text-xl" : "font-tamil text-[1.25em]")} lang={showEn ? "en" : "ta"}>
-        {inline(block.text)}
-      </h2>
-    );
+// Render the ordered block stream. A run of [paragraph, unresolved-break, paragraph, …] is
+// wrapped in ONE non-<p> `role="group"` so an unresolved paragraph relationship asserts neither
+// a break nor a continuation; standalone resolved paragraphs render as <p>.
+function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
+  const out: ReactNode[] = [];
+  let i = 0;
+  while (i < blocks.length) {
+    const b = blocks[i];
+    if (b.kind === "heading") {
+      out.push(
+        <h2 key={i} className={cn("mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light")}>
+          {inline(b.text)}
+        </h2>,
+      );
+      i++;
+      continue;
+    }
+    if (b.kind === "note") {
+      out.push(
+        <p key={i} className="mb-6 rounded-xl border-l-2 border-ink/15 bg-ink/[0.02] py-2.5 pl-4 pr-4 text-[0.9em] italic leading-relaxed text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60">
+          {inline(b.text)}
+        </p>,
+      );
+      i++;
+      continue;
+    }
+    if (b.kind === "paragraph") {
+      // Part of an unresolved-relationship group?
+      if (blocks[i + 1]?.kind === "unresolved-break") {
+        const group: SpeechBlock[] = [b];
+        i++;
+        while (blocks[i]?.kind === "unresolved-break" && blocks[i + 1]?.kind === "paragraph") {
+          group.push(blocks[i], blocks[i + 1]);
+          i += 2;
+        }
+        out.push(<UnresolvedGroup key={"g" + i} items={group} ta={ta} />);
+        continue;
+      }
+      out.push(
+        <p key={i} className="mb-5 leading-loose text-ink/90 dark:text-night-text/90">
+          {renderSegments(b.segments, ta)}
+        </p>,
+      );
+      i++;
+      continue;
+    }
+    // A stray unresolved-break (shouldn't occur outside a group) → neutral marker.
+    if (b.kind === "unresolved-break") {
+      out.push(<PageRule key={i} toPage={b.toPage} note={b.note} ta={ta} />);
+    }
+    i++;
   }
-  if (block.kind === "page-break") {
-    // NEUTRAL scan-pending source-page marker — asserts neither a paragraph break nor a
-    // continuation. Rendered as a subtle labelled rule (not a plain paragraph gap).
-    return (
-      <div className="my-5 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" title={block.note} data-print="hide">
-        <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" />
-        <span className="font-body normal-case tracking-normal">{ta ? `மூலப் பக்கம் ${block.toPage}` : `source p. ${block.toPage}`}</span>
-        <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" />
-      </div>
-    );
-  }
-  if (block.kind === "note") {
-    // Editorial note (e.g. the translation note) — distinct from the speech text.
-    return (
-      <p className="mb-6 rounded-xl border-l-2 border-ink/15 bg-ink/[0.02] py-2.5 pl-4 pr-4 text-[0.9em] italic leading-relaxed text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60">
-        {inline(block.text)}
-      </p>
-    );
-  }
-  // ONE logical paragraph — its per-source-page segments are joined per `joinToNext`
-  // ("none" = no space at a mid-word page split; "space" = ordinary word boundary), so a
-  // paragraph that spans a source page renders as continuous prose with NO paragraph gap and
-  // NO stray whitespace inside a split word. Source page provenance stays in the data.
-  const joined = block.segments
-    .map((s, i) => (i === 0 ? "" : block.segments[i - 1].joinToNext === "space" ? " " : "") + s.text)
-    .join("");
-  return <p className="mb-5 leading-loose text-ink/90 dark:text-night-text/90">{inline(joined)}</p>;
+  return out;
+}
+
+// A NEUTRAL group for an unresolved printed-paragraph relationship: the runs are <div>s (NOT
+// <p>) and the source-page rule sits between them. role="group" + aria-label communicate that
+// the printed paragraph relationship across these source pages is unresolved.
+function UnresolvedGroup({ items, ta }: { items: SpeechBlock[]; ta: boolean }) {
+  return (
+    <div
+      role="group"
+      aria-label={ta ? "மூலப் பக்க எல்லை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை" : "source page boundary — printed paragraph relationship unresolved"}
+      className="mb-5"
+    >
+      {items.map((it, k) =>
+        it.kind === "unresolved-break" ? (
+          <PageRule key={k} toPage={it.toPage} note={it.note} ta={ta} />
+        ) : it.kind === "paragraph" ? (
+          <div key={k} className="leading-loose text-ink/90 dark:text-night-text/90">
+            {renderSegments(it.segments, ta)}
+          </div>
+        ) : null,
+      )}
+    </div>
+  );
+}
+
+// A subtle labelled source-page rule (neutral — asserts no paragraph relationship).
+function PageRule({ toPage, note, ta }: { toPage: number; note?: string; ta: boolean }) {
+  return (
+    <div className="my-4 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" title={note} data-print="hide" role="separator" aria-label={ta ? `மூலப் பக்கம் ${toPage} எல்லை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை` : `source page ${toPage} boundary — printed paragraph relationship unresolved`}>
+      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+      <span className="font-body normal-case tracking-normal" aria-hidden>{ta ? `மூலப் பக்கம் ${toPage}` : `source p. ${toPage}`}</span>
+      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+    </div>
+  );
+}
+
+// Render a paragraph's per-source-page segments as inline nodes, joined per `joinToNext`:
+// "none" = no space (mid-word split); "space" = a single space; "unknown" = a NEUTRAL inline
+// source-page marker (the exact printed spacing is unresolved — never silently spaced or
+// concatenated); "end" = last segment. Each fragment keeps faithful inline Markdown.
+function renderSegments(segments: { text: string; sourcePage: number | null; joinToNext: string }[], ta: boolean): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  segments.forEach((s, i) => {
+    nodes.push(<span key={"t" + i}>{inline(s.text)}</span>);
+    if (s.joinToNext === "space") nodes.push(" ");
+    else if (s.joinToNext === "unknown") {
+      const p = segments[i + 1]?.sourcePage;
+      nodes.push(
+        <span
+          key={"j" + i}
+          className="mx-0.5 select-none align-baseline text-[0.7em] text-ink/35 dark:text-night-text/35"
+          title={ta ? `மூலப் பக்கம் ${p} எல்லை — சரியான இடைவெளி தீர்மானிக்கப்படவில்லை` : `source page ${p} boundary — exact printed spacing unresolved`}
+          role="separator"
+          aria-label={ta ? `மூலப் பக்கம் ${p} எல்லை — சரியான இடைவெளி தீர்மானிக்கப்படவில்லை` : `source page ${p} boundary — exact printed spacing unresolved`}
+        >
+          {"⟨"}
+          {ta ? `ப.${p}` : `p.${p}`}
+          {"⟩"}
+        </span>,
+      );
+    }
+    // "none" / "end" → no separator (fragments abut with no space).
+  });
+  return nodes;
 }
 
 // Minimal, faithful inline Markdown rendering for the source text: **bold** (used by the

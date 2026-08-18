@@ -12,11 +12,14 @@
 // boundary. One LOGICAL paragraph may span several source pages. So a paragraph holds ordered
 // per-source-page text SEGMENTS, each carrying its own source page, joined for reading by an
 // explicit `joinToNext`:
-//   - "none"  = the source splits a WORD across the page → join with NO space;
-//   - "space" = an ordinary cross-page word boundary → single space;
-//   - "end"   = last segment of the paragraph.
+//   - "none"    = the source splits a WORD across the page → join with NO space;
+//   - "space"   = an ordinary cross-page word boundary → single space;
+//   - "unknown" = the exact printed joined-vs-spaced form is UNRESOLVED (scan-pending). The
+//                 reader must NOT silently choose a space or a concatenation — it renders a
+//                 neutral inline source-page marker between the two fragments.
+//   - "end"     = last segment of the paragraph.
 // Each `segment.text` is the exact source text line, verbatim (source Markdown emphasis kept).
-export type SpeechJoin = "space" | "none" | "end";
+export type SpeechJoin = "space" | "none" | "unknown" | "end";
 
 export type SpeechTextSegment = {
   text: string;
@@ -33,14 +36,14 @@ export type SpeechParagraph = {
 export type SpeechHeading = { kind: "heading"; text: string; sourcePage?: number | null };
 export type SpeechNote = { kind: "note"; text: string; sourcePage?: number | null };
 
-// A NEUTRAL source-page marker used ONLY at a boundary whose paragraph relationship could not
-// be established from the archive text (a sentence completes at the page edge and the next page
-// opens a new sentence — same printed paragraph or new one is scan-pending). It asserts neither
-// a paragraph break nor a continuation; it just shows the source page changed here.
-export type SpeechPageBreak = { kind: "page-break"; toPage: number; relation: "unknown"; note?: string };
+// A NEUTRAL boundary whose paragraph RELATIONSHIP could not be established from the archive text
+// (a sentence completes at the page edge and the next page opens a new sentence — same printed
+// paragraph or a new one is scan-pending). The reader groups the runs on either side into a
+// single non-`<p>` group so this asserts NEITHER a paragraph break NOR a continuation.
+export type SpeechUnresolvedBreak = { kind: "unresolved-break"; toPage: number; relation: "unknown"; note?: string };
 
 // One ordered block of a speech's Tamil or English stream.
-export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote | SpeechPageBreak;
+export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote | SpeechUnresolvedBreak;
 
 export type SpeechBilingualName = { nameTa: string; nameEn: string; roleTa?: string; roleEn?: string };
 
@@ -94,7 +97,8 @@ export type SpeechProvenance = {
   translation: Record<string, unknown>; // verbatim from source metadata.json
   archiveDerived: {
     sectionHeadings: number;
-    tamilParagraphs: number; // LOGICAL reading paragraphs (may span source pages)
+    tamilResolvedParagraphs: number; // clean logical paragraphs (may span source pages)
+    tamilUnresolvedGroupRuns: number; // runs inside an unresolved-relationship group
     englishParagraphs: number;
     tamilSourceTextSegments: number; // physical per-source-page fragments
     englishSourceTextSegments: number;
@@ -107,19 +111,26 @@ export type SpeechProvenance = {
       sameParagraph: number;
       paragraphBoundary: number;
       headingBoundary: number;
-      unknownScanPending: number;
-      midWordJoins: number; // join with NO space
-      wordSpaceJoins: number;
-      sandhiScanPendingJoins: number;
+      unknownParagraphRelation: number;
+      lexicalJoinNone: number; // join with NO space
+      lexicalJoinSpace: number;
+      lexicalJoinUnknown: number; // unresolved spacing (scan-pending), never silently spaced
+    };
+    englishBoundaryAudit: {
+      englishAnchors: number;
+      paragraphBoundary: number;
+      headingNoteBoundary: number;
+      sameParagraphContinuations: number;
+      note: string;
     };
     note: string;
   };
-  // Known blockers (e.g. physical paragraph layout resolvable only from the controlling scan).
+  // Known blockers — source facts only the controlling scan can resolve, each represented as
+  // unresolved in the data and rendered neutrally (never guessed).
   blockers?: {
     item: string;
     count: number;
     detail: string;
-    alsoScanPending?: string;
     resolution: string;
   }[];
   // Present project-level rights of the underlying Kalaignar-authored work (see Manohara model).

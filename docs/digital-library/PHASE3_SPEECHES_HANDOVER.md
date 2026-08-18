@@ -89,58 +89,64 @@ paragraphs and marks source-page transitions *separately*; a page break must the
 paragraph break. The block model represents **one logical paragraph that can span several source
 pages**, preserving BOTH reading continuity AND exact page provenance:
 
-- **Types:** `data/speeches.ts` — a stream of `SpeechBlock = SpeechParagraph | SpeechHeading |
-  SpeechNote`. A `SpeechParagraph` holds ordered `segments: SpeechTextSegment[]` (each a verbatim
-  per-source-page text fragment with its own `sourcePage` and a `joinToNext`) plus `sourcePages: number[]`.
-  `joinToNext` ∈ `"space" | "none" | "end"`: **"none"** = the source splits a WORD across the page
-  (join with **no** space), **"space"** = an ordinary cross-page word boundary (single space).
-- **`joinToNext` also has `"end"`** (last segment of a paragraph). A neutral `SpeechPageBreak` block
-  (`{ kind:"page-break", toPage, relation:"unknown" }`) marks a scan-pending boundary.
+- **Types:** `data/speeches.ts` — `SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote |
+  SpeechUnresolvedBreak`. A `SpeechParagraph` holds ordered `segments` (each a verbatim per-source-page
+  fragment with its own `sourcePage` and a `joinToNext`). **`joinToNext` ∈ `"none" | "space" | "unknown"
+  | "end"`:** **"none"** = the source splits a WORD across the page (no space); **"space"** = an ordinary
+  cross-page word boundary; **"unknown"** = the exact printed joined-vs-spaced form is **UNRESOLVED**
+  (scan-pending) — the reader renders a neutral inline source-page marker, never a silent space or a
+  concatenation; **"end"** = last segment. A `SpeechUnresolvedBreak` (`{kind:"unresolved-break", toPage,
+  relation:"unknown"}`) marks a boundary whose **paragraph relationship** is unresolved.
 - **Importer:** `scripts/import-udhaya-kathir.mjs` — deterministic, work-specific; **fails closed**
   unless the source clone's git HEAD equals the pinned commit; parses `transcript.md` + `metadata.json`;
-  never reads stale/accidental website data; never retranslates/normalizes. (Not a generalized ingestion
-  framework.)
-- **Second reviewer correction — every boundary is explicitly source-audited, NOT inferred from
-  punctuation, and NOT limited to "two documented mid-word splits".** The earlier heuristic
-  (only-two-mid-word + terminal-punctuation-means-paragraph-break) was demonstrably wrong: e.g. **p8→9**
-  is a mid-word split `அபரிமித`+`மான` = **`அபரிமிதமான`** that the space-default corrupted. The importer
-  now drives paragraph assembly from an **explicit `TA_BOUNDARY` table** classifying all 41 Tamil page
-  transitions from authoritative evidence (transcript, verification log, verification/ records, and the
-  11-speech Tamil corpus). Each entry carries `paragraphRelation` (`same-paragraph` |
-  `paragraph-boundary` | `heading-boundary` | `unknown`), `join` (`none` | `space` | `end`) and its
-  `evidence`. `none` is asserted only where a space would demonstrably break a single Tamil word (the
-  following fragment is an inflection/suffix, not a standalone word) or the archive/reviewer explicitly
-  documents it. Sentence-ending punctuation is **never** used as paragraph evidence (`திரு.` is an
-  abbreviation, not a sentence end — p19→20 is a continuation).
-- **Source-audited results (all 41 Tamil transitions pp.5→6 … 45→46):** **31 same-paragraph
-  continuations** (10 mid-word `none` + 21 word-boundary `space`), **3 paragraph boundaries** (new
-  parliamentary speaker turns), **0 heading boundaries**, and **7 `unknown`** (a sentence completes at
-  the page edge and the next page opens a new sentence in prose — whether the printed paragraph
-  continues or a new one begins is a **BLOCKER**, see below). 5 of the `space` joins are sandhi
-  compounds with a valid spaced *and* joined form (spaced chosen, flagged `scanPending`). Tamil = 161
-  logical paragraphs + 7 neutral page-break markers over 192 source-page segments; English = 168
-  paragraphs over 170 segments (2 mid-paragraph anchors — p22 em-dash, p24 comma — kept in one
-  paragraph; English anchors are provenance only, never paragraph breaks).
-- **BLOCKER (physical paragraph layout).** The 7 `unknown` boundaries — and the exact form of the 5
-  sandhi compounds — can only be resolved from the **controlling scan `TVA_BOK_0065650_உதயக்_கதிர்.pdf`**
-  (speech pp.5–46). It was **not accessible read-only** in this environment (not found via archive.org /
-  tamildigitallibrary.in; the source PDF is deliberately not vendored). These boundaries are marked
-  `unknown`/`scanPending` in the data and rendered **neutrally** (a subtle source-page rule that asserts
-  neither a paragraph break nor a continuation). Recorded in `provenance.json.blockers` and on the source
-  page. **No paragraph relationship is fabricated.**
-- **Vendored data:** `public/data/speeches/udhaya-kathir/{speech.json, provenance.json}` — two ordered,
-  source-faithful block streams; every segment keeps its `sourcePage`; provenance never flattened.
-- **Reader:** `components/SpeechReader.tsx` — each **logical paragraph renders as ONE `<p>`** (segments
-  joined per `joinToNext`, so a spanned paragraph shows **no gap** and a split word shows **no stray
-  space**); `unknown` boundaries render a neutral labelled rule; printed `##` headings; translation-note
-  block; faithful minimal Markdown (`**bold**` speaker labels, `*italic*` asides); Tamil default; dark
-  mode; responsive.
-- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` validates **both** (A) source-
-  fragment fidelity (Tamil/English reconstruct the released text verbatim; headings verbatim; page set
-  intact) **and** (B) LOGICAL RENDER fidelity (joins add only declared spaces — no word split/concat;
-  **all 41 audited boundaries match the vendored data 41/41**; named renders `அந்த இடத்திலே`,
-  `அனைவருக்கும்`, **`அபரிமிதமான`** (mandated p8→9, never `அபரிமித மான`), `ஆகிரமிப்பாளர்கள்`; and the 7
-  neutral page-break markers sit exactly at the `unknown` boundaries). **All pass.**
+  never retranslates/normalizes. (Not a generalized ingestion framework.)
+- **Every boundary is explicitly source-audited, NOT inferred from punctuation.** The earlier
+  heuristics (only-two-mid-word; terminal-punctuation-⇒-paragraph-break) were wrong — e.g. **p8→9** is a
+  mid-word split `அபரிமித`+`மான` = **`அபரிமிதமான`**. The importer drives paragraph assembly from an
+  **explicit `TA_BOUNDARY` table** over all 41 Tamil transitions, each with `paragraphRelation`
+  (`same-paragraph` | `paragraph-boundary` | `heading-boundary` | `unknown`), `join`
+  (`none` | `space` | `unknown` | `end`) and `evidence` (transcript, verification log, verification/
+  records, 11-speech corpus). `none` only where a space would break a single Tamil word.
+- **Third reviewer correction — unresolved facts are represented as unresolved, never as a best guess.**
+  Two classes were still making an editorial choice; both are now truly neutral:
+  1. **Unresolved lexical joins (5).** Sandhi compounds (p16, p19, p29, p39, p43) whose printed
+     joined-vs-spaced form the archive text cannot settle now carry `join: "unknown"` — **not** a silent
+     `"space"`. The reader keeps BOTH fragments verbatim and shows a subtle inline `⟨p.N⟩` marker between
+     them (asserting neither a space nor a concatenation).
+  2. **Unresolved paragraph relationships (7).** Boundaries where a sentence completes at the page edge
+     and the next page opens a new sentence (p7, p10, p21, p27, p35, p37, p40) are encoded as an
+     `unresolved-break`, and the reader wraps the runs on either side in **one non-`<p>` `role="group"`**
+     (aria-labelled "printed paragraph relationship unresolved") — so the data/HTML assert **neither** a
+     paragraph break **nor** a continuation, and these are **not** counted as clean logical paragraphs.
+- **English is audited too — no punctuation heuristic.** The terminal-punctuation regex is gone. Every
+  one of the **42** `### Source page N` anchors has an explicit `EN_BOUNDARY` entry classified from the
+  released translation structure (37 `paragraph-boundary` = the translator's own blank-separated blocks;
+  3 `heading-note-boundary` at pages 5/8/44; 2 `same-paragraph` continuations at p22 em-dash / p24 comma).
+  Anchors are provenance only — never a paragraph boundary in themselves — and the English text is verbatim.
+- **Source-audited results (Tamil):** 31 same-paragraph, 3 paragraph boundaries (speaker turns), 0
+  heading boundaries, **7 unresolved paragraph relationships**; lexical joins **none 10 / space 16 /
+  unknown 5**. 147 resolved paragraphs + 14 unresolved-group runs over 192 source-page segments; English
+  = 168 paragraphs over 170 segments (2 cross-anchor continuations).
+- **TWO BLOCKER CLASSES (both neutral, neither guessed), in `provenance.json.blockers` + the source page:**
+  (A) **7 unresolved paragraph relationships**; (B) **5 unresolved lexical joins**. Both need read-only
+  inspection of the controlling scan **`TVA_BOK_0065650_உதயக்_கதிர்.pdf`** (pp.5–46), which was **not
+  accessible read-only** in this environment (not on archive.org / tamildigitallibrary.in; PDF not
+  vendored). **No relationship or spacing is fabricated.**
+- **Vendored data:** `public/data/speeches/udhaya-kathir/{speech.json, provenance.json}` — every segment
+  keeps its `sourcePage`; provenance never flattened.
+- **Reader:** `components/SpeechReader.tsx` — a resolved paragraph renders as ONE `<p>` (joins per
+  `joinToNext`; a spanned paragraph shows **no gap** and a split word **no stray space**); an unresolved
+  lexical join shows an inline `⟨p.N⟩` marker; an unresolved paragraph relationship renders as a neutral
+  `role="group"` region with a source-page rule between the runs; printed `##` headings; translation-note
+  block; faithful minimal Markdown; Tamil default; dark mode; responsive.
+- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` — **17 requirements, all pass**:
+  all 41 Tamil transitions present once; every relation/join matches the audit (no punctuation
+  inference); the 5 scan-pending sandhi joins are `unknown` (never silently `space`) and keep both
+  fragments verbatim; no unknown paragraph relation is a semantic paragraph; named renders `அந்த இடத்திலே`,
+  `அனைவருக்கும்`, **`அபரிமிதமான`** (mandated p8→9, never `அபரிமித மான`), `ஆகிரமிப்பாளர்கள்`; Tamil & English
+  fragment fidelity is verbatim; all 42 English anchors have explicit `EN_BOUNDARY` entries; the English
+  parser has **no** punctuation heuristic; the 7 `unresolved-break` markers sit exactly at the unknown
+  boundaries; source pages remain 5–46; the importer HEAD guard still fails closed.
 - **Source page:** `app/speeches/[slug]/source/page.tsx` → `components/SpeechSource.tsx` — SOURCE FACTS
   vs ARCHIVE-DERIVED structure vs verification state vs present rights, plus source repo + commit.
 
