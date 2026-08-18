@@ -22,10 +22,13 @@ segmentation). One speech only; this is a reviewer-gated benchmark, not a bulk i
 Both authoritative speech repositories were cloned and inspected (README, processing/workflow
 guides, indexes, per-speech `metadata.json` / `transcript.md` / `source-notes.md`):
 
-- **`pugazg/kalaignar-assembly-speeches`** @ `b1b82402642d8f2cf36927d4752c8e7d28142fdd` — 10 speeches,
-  organised by date; the README + `data/speeches.json` confirm **all 10 (the 2007 industrial-speeches
-  anthology mapping) are fully released with verified Tamil and verified English**
-  (`transcription_status: verified`, `verified_against_scan: true`, `translation_status: verified`).
+- **`pugazg/kalaignar-assembly-speeches`** @ `b1b82402642d8f2cf36927d4752c8e7d28142fdd` — **11 indexed
+  speeches total**: the **10** dated speeches of the 2007 industrial-speeches anthology (Speech 1
+  through Speech 10) **plus** the separately archived **1970 Udhaya Kathir** speech. The README +
+  `data/speeches.json` confirm **all 10 industrial-anthology speeches are fully released with verified
+  Tamil and verified English** (`transcription_status: verified`, `verified_against_scan: true`,
+  `translation_status: verified`); **Udhaya Kathir** is likewise separately verified Tamil + verified
+  faithful English.
 - **`pugazg/kalaignar-public-speeches`** @ `c8abf95834e1d2549644e3607be3dd6f87b802c2` — 5 works, all
   "Verified complete" (`arappor`, `idhaya-perikai`, `poonthottam`, `palli-vazhkkai`,
   `kalaivanar-nsk-memorial-day`).
@@ -38,7 +41,7 @@ live, not assumed.
 | Repo | ID | Title | Type | Date | Tamil | English | Release |
 |---|---|---|---|---|---|---|---|
 | assembly | 1970-09-09-no-confidence-motion | உதயக் கதிர் | assembly | 1970-09-09 | verified | verified (faithful) | released |
-| assembly | 1963…2006 industries-debate (9) | தொழில்துறை … உரை 1–10 | assembly | various | verified | verified | released |
+| assembly | 1963…2006 industries-debate (Speech 1–10) | தொழில்துறை … உரை 1–10 | assembly | various | verified | verified | released |
 | public | arappor | அறப்போர் | public | not in source | verified | verified | released |
 | public | idhaya-perikai | இதய பேரிகை | public | not in source | verified | verified | released |
 | public | poonthottam | பூந்தோட்டம் | public | 1951-12-06 | verified | verified | released |
@@ -79,23 +82,50 @@ readiness**, not convenience:
 - **No archive-created navigation numbering** is presented as printed source numbering; section
   headings are the ones printed in the source.
 
-## Data / reader model
+## Data / reader model — corrected: a source-page boundary is NOT a paragraph boundary
 
-- **Types:** `data/speeches.ts` (`Speech`, `SpeechBlock` — `heading | para | page-marker | note`,
-  `SpeechProvenance`, `SPEECH_SLUGS`).
-- **Vendored data:** `public/data/speeches/udhaya-kathir/{speech.json, provenance.json}` — two ordered,
-  source-faithful block streams (Tamil authoritative; English parallel), with per-block `sourcePage`.
+**Reviewer correction (source fidelity).** The source archive normalises physical line-wraps into
+paragraphs and marks source-page transitions *separately*; a page break must therefore never become a
+paragraph break. The block model represents **one logical paragraph that can span several source
+pages**, preserving BOTH reading continuity AND exact page provenance:
+
+- **Types:** `data/speeches.ts` — a stream of `SpeechBlock = SpeechParagraph | SpeechHeading |
+  SpeechNote`. A `SpeechParagraph` holds ordered `segments: SpeechTextSegment[]` (each a verbatim
+  per-source-page text fragment with its own `sourcePage` and a `joinToNext`) plus `sourcePages: number[]`.
+  `joinToNext` ∈ `"space" | "none" | "end"`: **"none"** = the source splits a WORD across the page
+  (join with **no** space), **"space"** = an ordinary cross-page word boundary (single space).
 - **Importer:** `scripts/import-udhaya-kathir.mjs` — deterministic, work-specific; **fails closed**
   unless the source clone's git HEAD equals the pinned commit; parses `transcript.md` + `metadata.json`;
-  never reads stale/accidental website data; never retranslates/normalizes. (Not a generalized
-  ingestion framework.)
+  never reads stale/accidental website data; never retranslates/normalizes. **Cross-page rule:** at a
+  source-page boundary the paragraph continues (same logical paragraph) unless the preceding fragment
+  **ends a sentence** (terminal punctuation) — an honest, conservative treatment of a completed
+  sentence at a page edge. **Mid-word joins are taken only from the archive's explicit documentation**
+  (verification-log corrections #5 p7→8 `அனைவருக்`+`கும்`, #32 p17→18 `ஆகிர`+`மிப்பாளர்கள்`); they
+  cannot be inferred without a lexicon, so every other cross-page continuation defaults to a single
+  space (the meticulous page-by-page verification would have flagged a mid-word split, as it did for
+  those two). (Not a generalized ingestion framework.)
+- **Audit of all 41 Tamil page transitions (pp.5–46):** **30 cross-page logical continuations** (2
+  mid-word "none" + 28 word-boundary "space") and **11 genuine paragraph boundaries** (a sentence
+  completed at the page edge). English `### Source page N` anchors: **2** fall mid-paragraph (p22
+  em-dash, p24 comma) and are kept within one paragraph; the rest sit at sentence boundaries. Result:
+  Tamil 162 logical paragraphs over 192 source-page segments; English 168 paragraphs over 170 segments.
+- **Vendored data:** `public/data/speeches/udhaya-kathir/{speech.json, provenance.json}` — two ordered,
+  source-faithful block streams (Tamil authoritative; English parallel); every segment keeps its
+  `sourcePage`, so physical page provenance stays fully traceable while paragraphs read continuously.
 - **Reader:** `app/speeches/[slug]/page.tsx` → `components/SpeechReader.tsx` (client fetch of
   `speech.json`): title, verified date, legislature/event, speaker + role; **Tamil default**, English
-  toggle; source-order blocks (printed `##` headings, paragraphs, subtle source-page markers, a
-  distinct translation-**note** block); **faithful minimal Markdown** rendering — `**bold**` (source
-  uses it for parliamentary interjection speaker labels and the subtitle) and `*italic*` (interjections
-  like *(Laughter.)*, cited publication names) — no raw markup leaks; font sizing; dark mode; responsive.
-  No forced prev/next (single work; collection nav deferred until multiple speeches exist).
+  toggle; each **logical paragraph renders as ONE `<p>`** (segments joined per `joinToNext`, so a
+  paragraph that spans a page shows **no gap** and a split word shows **no stray space**); printed `##`
+  headings; a distinct translation-**note** block; **faithful minimal Markdown** — `**bold**`
+  (parliamentary interjection speaker labels, subtitle) and `*italic*` (interjections like
+  *(Laughter.)*, cited publication names) — no raw markup leaks; font sizing; dark mode; responsive.
+  Source-page markers are no longer standalone blocks (they were creating artificial paragraph gaps);
+  page provenance now lives in the segment data and on the source page. No forced prev/next.
+- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` — source-vs-vendored assertions
+  (pages 5–46; headings unchanged; **Tamil reconstructs the released transcription verbatim**; English
+  unchanged; no page marker lost or turned into a heading; **p7→8 renders `அனைவருக்கும்` with no
+  whitespace**; **p5→6 renders `அந்த இடத்திலே` as one continuous paragraph**; exactly 2 mid-word joins).
+  All pass.
 - **Source page:** `app/speeches/[slug]/source/page.tsx` → `components/SpeechSource.tsx` — SOURCE FACTS
   vs ARCHIVE-DERIVED structure vs verification state vs present rights, plus source repo + commit.
 

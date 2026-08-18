@@ -72,13 +72,22 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </h2>
           <dl className="mt-3">
             <Row label={ta ? "அச்சுத் தலைப்புகள்" : "Printed section headings"}>{prov.archiveDerived.sectionHeadings}</Row>
-            <Row label={ta ? "பத்திகள் (தமிழ்/ஆங்கிலம்)" : "Paragraphs (Tamil/English)"}>{prov.archiveDerived.tamilParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>
+            <Row label={ta ? "வாசிப்புப் பத்திகள் (த/ஆ)" : "Logical paragraphs (Ta/En)"}>{prov.archiveDerived.tamilParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>
+            <Row label={ta ? "மூலப் பக்கத் துண்டுகள் (த/ஆ)" : "Source-page text segments (Ta/En)"}>{prov.archiveDerived.tamilSourceTextSegments} / {prov.archiveDerived.englishSourceTextSegments}</Row>
+            <Row label={ta ? "பக்கம் தாண்டும் பத்திகள் (த/ஆ)" : "Cross-page paragraphs (Ta/En)"}>
+              {prov.archiveDerived.tamilCrossPageParagraphs} / {prov.archiveDerived.englishCrossPageParagraphs}
+              <span className="mt-1 block text-[11px] text-ink/40 dark:text-night-text/40">
+                {ta
+                  ? `இதில் ${prov.archiveDerived.tamilMidWordJoins} சொல்-நடு பக்கப் பிரிப்புகள் (இடைவெளியின்றி இணைக்கப்படுகின்றன).`
+                  : `incl. ${prov.archiveDerived.tamilMidWordJoins} mid-word page splits (joined with no space).`}
+              </span>
+            </Row>
             <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>
           </dl>
           <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
             {ta
-              ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை; பத்திப் பிரிவுகள் மூலத்தைப் பின்பற்றுகின்றன. வாசிப்பிற்கு எந்த காப்பக எண்ணிடலும் மூல எண்ணிடலாகக் காட்டப்படவில்லை."
-              : "Section headings are printed in the source; paragraph splits follow the source. No archive-created numbering is presented as source numbering."}
+              ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல — ஒரு வாசிப்புப் பத்தி பல மூலப் பக்கங்களில் நீளலாம்; ஒவ்வொரு பக்கத் துண்டும் அதன் மூலப் பக்கத்தைத் தக்கவைக்கிறது. வாசிப்பிற்கு எந்த காப்பக எண்ணிடலும் மூல எண்ணிடலாகக் காட்டப்படவில்லை."
+              : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary — one logical reading paragraph may span several source pages, and each page segment keeps its source page. No archive-created numbering is presented as source numbering."}
           </p>
         </section>
 

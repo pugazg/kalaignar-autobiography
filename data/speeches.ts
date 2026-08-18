@@ -8,13 +8,33 @@
 // in source order. Printed section headings and source-page boundaries are preserved; no
 // archive-created navigation numbering is presented as printed source numbering.
 
-// One block of a speech's Tamil or English stream, in source order.
-export type SpeechBlock = {
-  kind: "heading" | "para" | "page-marker" | "note";
+// A source-fidelity note (reviewer correction): a source-page boundary is NOT a paragraph
+// boundary. One LOGICAL paragraph may span several source pages. So a paragraph holds ordered
+// per-source-page text SEGMENTS, each carrying its own source page, joined for reading by an
+// explicit `joinToNext`:
+//   - "none"  = the source splits a WORD across the page → join with NO space;
+//   - "space" = an ordinary cross-page word boundary → single space;
+//   - "end"   = last segment of the paragraph.
+// Each `segment.text` is the exact source text line, verbatim (source Markdown emphasis kept).
+export type SpeechJoin = "space" | "none" | "end";
+
+export type SpeechTextSegment = {
   text: string;
-  // Source page this block belongs to (from the source's page boundaries), where known.
-  sourcePage?: number | null;
+  sourcePage: number | null;
+  joinToNext: SpeechJoin;
 };
+
+export type SpeechParagraph = {
+  kind: "paragraph";
+  segments: SpeechTextSegment[];
+  sourcePages: number[]; // the source pages this one logical paragraph spans
+};
+
+export type SpeechHeading = { kind: "heading"; text: string; sourcePage?: number | null };
+export type SpeechNote = { kind: "note"; text: string; sourcePage?: number | null };
+
+// One ordered block of a speech's Tamil or English stream.
+export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote;
 
 export type SpeechBilingualName = { nameTa: string; nameEn: string; roleTa?: string; roleEn?: string };
 
@@ -68,8 +88,14 @@ export type SpeechProvenance = {
   translation: Record<string, unknown>; // verbatim from source metadata.json
   archiveDerived: {
     sectionHeadings: number;
-    tamilParagraphs: number;
+    tamilParagraphs: number; // LOGICAL reading paragraphs (may span source pages)
     englishParagraphs: number;
+    tamilSourceTextSegments: number; // physical per-source-page fragments
+    englishSourceTextSegments: number;
+    tamilCrossPageParagraphs: number;
+    englishCrossPageParagraphs: number;
+    tamilMidWordJoins: number; // documented mid-word page splits (join with no space)
+    tamilWordSpaceJoins: number;
     sourcePagesCovered: number;
     note: string;
   };

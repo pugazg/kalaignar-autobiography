@@ -39,10 +39,16 @@
  },
  "archiveDerived": {
   "sectionHeadings": 29,
-  "tamilParagraphs": 192,
-  "englishParagraphs": 170,
+  "tamilParagraphs": 162,
+  "englishParagraphs": 168,
+  "tamilSourceTextSegments": 192,
+  "englishSourceTextSegments": 170,
+  "tamilCrossPageParagraphs": 30,
+  "englishCrossPageParagraphs": 2,
+  "tamilMidWordJoins": 2,
+  "tamilWordSpaceJoins": 28,
   "sourcePagesCovered": 42,
-  "note": "Section headings are printed in the source; paragraph splits follow the source. No archive-created navigation numbering is imposed on the reader."
+  "note": "Section headings are printed in the source. Paragraphs are LOGICAL reading paragraphs: a source-page boundary is not a paragraph boundary, so one paragraph may span multiple source pages via per-page text segments (each retaining its source page). Mid-word page splits documented in the source verification log join with no space; other cross-page continuations join with a single space; a completed sentence at a page boundary is treated as a paragraph break. No archive-created navigation numbering is imposed on the reader."
  },
  "projectRights": {
   "appliesTo": "underlying-work-authored-by-kalaignar",
@@ -61,6 +67,6 @@
  "notes": [
   "The controlling source is the scanned 1970 booklet; only scan pages 5–46 are the Assembly speech (1–4 front matter, 47–48 advertisements).",
   "Tamil is the verified source transcription; English is the verified faithful reading translation placed after the complete Tamil. Neither was edited during import.",
-  "Printed section headings and source-page boundaries are preserved. Paragraphs follow the source; no archive-created navigation numbering is presented as source numbering."
+  "Printed section headings are preserved. A source-page boundary is NOT a paragraph boundary: one logical paragraph may span several source pages via per-page text segments, each retaining its source page; mid-word page splits (verification log) join with no space. No archive-created navigation numbering is presented as source numbering."
  ]
 }

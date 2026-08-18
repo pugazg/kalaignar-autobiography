@@ -126,7 +126,7 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {speech && (
           <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
             {blocks.map((b, i) => (
-              <Block key={i} block={b} showEn={showEn} ta={ta} />
+              <Block key={i} block={b} showEn={showEn} />
             ))}
           </div>
         )}
@@ -160,22 +160,12 @@ export default function SpeechReader({ slug }: { slug: string }) {
   );
 }
 
-function Block({ block, showEn, ta }: { block: SpeechBlock; showEn: boolean; ta: boolean }) {
+function Block({ block, showEn }: { block: SpeechBlock; showEn: boolean }) {
   if (block.kind === "heading") {
     return (
       <h2 className={cn("mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light", showEn ? "font-display text-xl" : "font-tamil text-[1.25em]")} lang={showEn ? "en" : "ta"}>
         {inline(block.text)}
       </h2>
-    );
-  }
-  if (block.kind === "page-marker") {
-    // Subtle source-page divider (kept for provenance; not a printed heading).
-    return (
-      <div className="my-4 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/30 dark:text-night-text/30" aria-hidden data-print="hide">
-        <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" />
-        {ta ? `மூலப் பக்கம் ${block.sourcePage}` : `source p. ${block.sourcePage}`}
-        <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" />
-      </div>
     );
   }
   if (block.kind === "note") {
@@ -186,7 +176,14 @@ function Block({ block, showEn, ta }: { block: SpeechBlock; showEn: boolean; ta:
       </p>
     );
   }
-  return <p className="mb-5 leading-loose text-ink/90 dark:text-night-text/90">{inline(block.text)}</p>;
+  // ONE logical paragraph — its per-source-page segments are joined per `joinToNext`
+  // ("none" = no space at a mid-word page split; "space" = ordinary word boundary), so a
+  // paragraph that spans a source page renders as continuous prose with NO paragraph gap and
+  // NO stray whitespace inside a split word. Source page provenance stays in the data.
+  const joined = block.segments
+    .map((s, i) => (i === 0 ? "" : block.segments[i - 1].joinToNext === "space" ? " " : "") + s.text)
+    .join("");
+  return <p className="mb-5 leading-loose text-ink/90 dark:text-night-text/90">{inline(joined)}</p>;
 }
 
 // Minimal, faithful inline Markdown rendering for the source text: **bold** (used by the
