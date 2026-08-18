@@ -4,18 +4,23 @@ on:
   push:
     branches:
       - agent/digital-library-phase-3-benchmark-2-poonthottam
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
 
 jobs:
   generate-and-verify:
-    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    if: ${{ github.event_name == 'pull_request' || !contains(github.event.head_commit.message, '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout implementation branch
         uses: actions/checkout@v4
         with:
+          ref: agent/digital-library-phase-3-benchmark-2-poonthottam
           fetch-depth: 0
 
       - name: Checkout pinned public-speech source
@@ -104,6 +109,7 @@ jobs:
         run: npm run build
 
       - name: Commit deterministic vendored artifacts
+        if: ${{ github.event_name == 'pull_request' }}
         run: |
           git add data/library.ts public/data/speeches/poonthottam/speech.json public/data/speeches/poonthottam/provenance.json
           if git diff --cached --quiet; then
