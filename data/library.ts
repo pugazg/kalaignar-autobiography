@@ -292,6 +292,48 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     },
     provenanceHref: "/cinema/manohara/source",
   },
+  {
+    // Digital Library Phase 3 — Speeches. First benchmark: a fully-released, verified Assembly
+    // speech. "Assembly" vs "public" is a SUBTYPE / source context, not a separate public shelf —
+    // both belong to the single Speeches shelf.
+    id: "udhaya-kathir",
+    slug: "udhaya-kathir",
+    titleTa: "உதயக் கதிர்",
+    titleEn: "Udhaya Kathir",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/udhaya-kathir",
+    state: "published",
+    descTa: "1970 சட்டமன்ற நம்பிக்கையில்லாத் தீர்மான பதிலுரை",
+    descEn: "1970 Assembly reply to the no-confidence motion",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1970/1970-09-09-no-confidence-motion",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    // Source publication: the standalone 1970 booklet "உதயக் கதிர்" (முதற்பதிப்பு செப்டம்பர் 1970).
+    edition: "உதயக் கதிர் — முதற்பதிப்பு, செப்டம்பர் 1970",
+    tamil: "complete",
+    english: "complete",
+    // The English is a project-created, source-linked faithful reading translation (verified
+    // against the Tamil), not a separately-published translation.
+    englishKind: "project-created",
+    // 29 printed section headings in the source (not archive-created navigation numbering).
+    unitCount: { value: 29, labelTa: "தலைப்புகள்", labelEn: "sections" },
+    // Underlying Kalaignar-authored speech: nationalised by the Government of Tamil Nadu
+    // (announced 2024-08-22; GO handed over to Rajathi Ammal 2024-12-22 — number and formal issue
+    // date not yet verified). Distinct from the 1970 publication's own imprint.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil speech; it does not extend to the project-created English translation or to third-party material. Distinct from the 1970 publication's own imprint data.",
+    },
+    provenanceHref: "/speeches/udhaya-kathir/source",
+  },
 ];
 
 // ── Selectors ────────────────────────────────────────────────────────────────

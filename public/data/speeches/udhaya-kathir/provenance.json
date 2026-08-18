@@ -1,0 +1,104 @@
+{
+ "workId": "udhaya-kathir",
+ "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+ "sourcePath": "speeches/1970/1970-09-09-no-confidence-motion",
+ "sourceCommit": "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+ "source": {
+  "publicationTitleTa": "உதயக் கதிர்",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "editionTa": "முதற்பதிப்பு",
+  "publicationDate": "1970-09",
+  "publisherTa": "புகழ் பதிப்பகம்",
+  "publisherLocationTa": "சென்னை-6",
+  "printerTa": "முரசொலி அச்சகம்",
+  "printerLocationTa": "சென்னை-6",
+  "coverPriceTa": "30 காசு",
+  "scanFilename": "TVA_BOK_0065650_உதயக்_கதிர்.pdf",
+  "scanTotalPages": 48,
+  "speechScanPages": "5-46",
+  "frontMatterScanPages": "1-4",
+  "advertisementScanPages": "47-48"
+ },
+ "transcription": {
+  "method": "manual transcription from scan with page-by-page visual review",
+  "preserve_source_spelling": true,
+  "preserve_source_punctuation": true,
+  "preserve_headings": true,
+  "page_boundaries_marked": true,
+  "status": "verified",
+  "verified_against_scan": true,
+  "verification_note": "Second-pass page-by-page visual verification completed against scan pp. 5-46; confirmed corrections applied to the canonical transcript.",
+  "verified_scan_pages": "5-46"
+ },
+ "translation": {
+  "language": "English",
+  "placement": "after the complete Tamil transcription",
+  "status": "verified",
+  "type": "faithful reading translation",
+  "verified_against_tamil": true
+ },
+ "archiveDerived": {
+  "sectionHeadings": 29,
+  "tamilResolvedParagraphs": 147,
+  "tamilUnresolvedGroupRuns": 14,
+  "englishParagraphs": 168,
+  "tamilSourceTextSegments": 192,
+  "englishSourceTextSegments": 170,
+  "tamilCrossPageParagraphs": 31,
+  "englishCrossPageParagraphs": 2,
+  "sourcePagesCovered": 42,
+  "boundaryAudit": {
+   "tamilTransitions": 41,
+   "sameParagraph": 31,
+   "paragraphBoundary": 3,
+   "headingBoundary": 0,
+   "unknownParagraphRelation": 7,
+   "lexicalJoinNone": 10,
+   "lexicalJoinSpace": 16,
+   "lexicalJoinUnknown": 5
+  },
+  "englishBoundaryAudit": {
+   "englishAnchors": 42,
+   "paragraphBoundary": 37,
+   "headingNoteBoundary": 3,
+   "sameParagraphContinuations": 2,
+   "note": "Every English `### Source page N` anchor has an EXPLICIT EN_BOUNDARY entry, classified from the released translation structure (headings/notes, the translator's blank-separated blocks, and audited sentence continuations) — NEVER from punctuation. Anchors are provenance only; they are never paragraph boundaries in themselves."
+  },
+  "note": "Section headings are printed in the source. A source-page boundary is NOT a paragraph boundary and paragraph relationships are NOT inferred from punctuation: every Tamil page transition is classified in an explicit source-audited table (transcript + verification log + verification/ records + 11-speech corpus). One logical paragraph may span several source pages via per-page segments, each retaining its source page. Mid-word page splits join with NO space; ordinary word boundaries with a single space; a source-page boundary whose exact printed spacing OR paragraph relationship cannot be established is left UNRESOLVED and rendered neutrally (never silently spaced, concatenated, or split into paragraphs)."
+ },
+ "blockers": [
+  {
+   "item": "unresolved-paragraph-relationship",
+   "count": 7,
+   "detail": "7 Tamil source-page boundaries where a sentence completes at the page edge and the next page opens a new sentence: whether the PRINTED PARAGRAPH continues or a new one begins cannot be established from the archive text. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule.",
+   "resolution": "Read-only inspection of the controlling scan TVA_BOK_0065650_உதயக்_கதிர்.pdf (speech pp.5–46). Not accessible read-only in this environment (not on archive.org / tamildigitallibrary.in); the source PDF is not vendored."
+  },
+  {
+   "item": "unresolved-lexical-join",
+   "count": 5,
+   "detail": "5 Tamil cross-page joins (sandhi compounds) where the exact printed JOINED-vs-SPACED form cannot be established from the archive text. Encoded as joinToNext \"unknown\" (NOT silently \"space\") and rendered with a neutral inline source-page marker between the two fragments — asserting neither a space nor a concatenation.",
+   "resolution": "Same controlling scan; not accessible read-only in this environment."
+  }
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The 1970 publication's own imprint data and the later Tamil Nadu Government nationalisation are different facts; the imprint does not describe the present rights status.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored speech. It does not extend to third-party contributions or to the project-created English translation, which retain their own provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created) with its own distinct provenance.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the scanned 1970 booklet; only scan pages 5–46 are the Assembly speech (1–4 front matter, 47–48 advertisements).",
+  "Tamil is the verified source transcription; English is the verified faithful reading translation placed after the complete Tamil. Neither was edited during import.",
+  "Printed section headings are preserved. Every Tamil source-page transition is classified in an explicit source-audited boundary table (NOT inferred from punctuation): a source-page boundary is not a paragraph boundary; one logical paragraph may span several source pages via per-page text segments, each retaining its source page; mid-word page splits join with no space.",
+  "TWO BLOCKER CLASSES (both rendered neutrally, neither guessed): (A) unresolved PARAGRAPH RELATIONSHIPS at sentence-completed page boundaries — encoded as unresolved-break, not a paragraph; (B) unresolved LEXICAL JOINS at sandhi cross-page boundaries — encoded as joinToNext 'unknown', not silently spaced. Both need the controlling scan TVA_BOK_0065650 (not accessible read-only here; source PDF not vendored).",
+  "English paragraph structure is the verified translation's own blank-separated blocks; `### Source page N` anchors are provenance only, never paragraph boundaries; only the sentence-continuations across an anchor are recorded (EN_BOUNDARY). No punctuation heuristic is used for either language."
+ ]
+}

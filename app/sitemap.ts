@@ -4,6 +4,7 @@ import path from "node:path";
 import type { MetadataRoute } from "next";
 import { chapterIndex } from "@/data/references";
 import type { MurasoliIndex, MurasoliLettersIndex } from "@/data/murasoli";
+import { SPEECH_SLUGS } from "@/data/speeches";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -73,5 +74,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly" as const,
       priority: 0.5,
     })),
+    ...SPEECH_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/speeches/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
+      { url: `${BASE}/speeches/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ]),
   ];
 }
