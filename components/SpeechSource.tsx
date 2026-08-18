@@ -34,104 +34,84 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           <p className="mt-1 font-tamil text-lg text-marina/80 dark:text-marina-light/80" lang="ta">{s.publicationTitleTa}</p>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
             {ta
-              ? "இப்பக்கம் மூல உண்மைகளையும் (அச்சிட்ட நூல்/scan) காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது."
-              : "This page separates source facts (the printed booklet / scan) from the archive-derived reading structure."}
+              ? "இப்பக்கம் கட்டுப்படுத்தும் மூல உண்மைகளையும் காப்பகத்தால் உருவாக்கப்பட்ட வாசிப்பு அமைப்பையும் தனித்தனியாகக் காட்டுகிறது."
+              : "This page separates facts from the controlling source from the archive-derived reading structure."}
           </p>
         </div>
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
-        {/* SOURCE FACTS */}
         <section className="rounded-2xl border border-ink/10 bg-white/50 p-5 dark:border-white/10 dark:bg-night-surface/50">
           <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
-            <Landmark className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூல உண்மைகள் (அச்சிட்ட நூல்)" : "Source facts (the printed booklet)"}
+            <Landmark className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூல உண்மைகள்" : "Source facts"}
           </h2>
           <dl className="mt-3">
             <Row label={ta ? "நூல் தலைப்பு" : "Publication title"}><span className="font-tamil" lang="ta">{s.publicationTitleTa}</span></Row>
             <Row label={ta ? "ஆசிரியர்" : "Author"}><span className="font-tamil" lang="ta">{s.authorTa}</span></Row>
-            <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span> <span className="text-ink/45 dark:text-night-text/45">({s.publicationDate})</span></Row>
-            <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}, {s.publisherLocationTa}</span></Row>
-            <Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}, {s.printerLocationTa}</span></Row>
-            <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.coverPriceTa}</span></Row>
+            <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span>{s.publicationDate ? <span className="text-ink/45 dark:text-night-text/45"> ({s.publicationDate})</span> : null}</Row>
+            {s.publisherTa && <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}{s.publisherLocationTa ? `, ${s.publisherLocationTa}` : ""}</span></Row>}
+            {s.printerTa && <Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}{s.printerLocationTa ? `, ${s.printerLocationTa}` : ""}</span></Row>}
+            {s.coverPriceTa && <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.coverPriceTa}</span></Row>}
             <Row label={ta ? "Scan கோப்பு" : "Scan file"} mono>{s.scanFilename}</Row>
-            <Row label={ta ? "Scan பக்கங்கள்" : "Scan pages"}>
-              {s.scanTotalPages} {ta ? "மொத்தம்" : "total"} · {ta ? "உரை" : "speech"} {s.speechScanPages} · {ta ? "முன்பகுதி" : "front"} {s.frontMatterScanPages} · {ta ? "விளம்பரம்" : "ads"} {s.advertisementScanPages}
-            </Row>
+            {s.scanSha256 && <Row label="SHA-256" mono>{s.scanSha256}</Row>}
+            {s.scanFileSizeBytes != null && <Row label={ta ? "கோப்பு அளவு" : "File size"}>{s.scanFileSizeBytes.toLocaleString("en-IN")} bytes</Row>}
+            <Row label={ta ? "Scan பக்கங்கள்" : "Scan pages"}>{s.scanTotalPages} {ta ? "மொத்தம்" : "total"} · {ta ? "உரை" : "speech"} {s.speechScanPages}{s.printedSpeechPages ? ` · ${ta ? "அச்சுப் பக்கங்கள்" : "printed pages"} ${s.printedSpeechPages}` : ""}</Row>
+            {s.nonSpeechScanPages && <Row label={ta ? "உரையல்லாத பக்கங்கள்" : "Non-speech pages"}>{s.nonSpeechScanPages}</Row>}
+            {!s.nonSpeechScanPages && (s.frontMatterScanPages || s.advertisementScanPages) && (
+              <Row label={ta ? "உரையல்லாத பக்கங்கள்" : "Non-speech pages"}>
+                {[s.frontMatterScanPages && `${ta ? "முன்பகுதி" : "front"} ${s.frontMatterScanPages}`, s.advertisementScanPages && `${ta ? "விளம்பரம்" : "ads"} ${s.advertisementScanPages}`].filter(Boolean).join(" · ")}
+              </Row>
+            )}
           </dl>
           <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
             {ta
-              ? "கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட 1970 நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (5–46) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை."
-              : "The controlling source is the scanned 1970 booklet; only the speech pages (5–46) are transcribed. The source PDF is not vendored here."}
+              ? s.controllingSourceNoteTa ?? `கட்டுப்படுத்தும் மூலம் ${s.scanFilename}. மூல PDF இந்த இணையத் திட்டத்தில் சேமிக்கப்படவில்லை.`
+              : s.controllingSourceNoteEn ?? `The controlling source is ${s.scanFilename}. The source PDF is not vendored in this web project.`}
           </p>
         </section>
 
-        {/* ARCHIVE-DERIVED */}
         <section className="mt-4 rounded-2xl border border-brass/30 bg-brass/[0.04] p-5">
           <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-brass">
             <Info className="h-3.5 w-3.5" aria-hidden /> {ta ? "காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பு" : "Archive-derived structure"}
           </h2>
           <dl className="mt-3">
-            <Row label={ta ? "அச்சுத் தலைப்புகள்" : "Printed section headings"}>{prov.archiveDerived.sectionHeadings}</Row>
+            <Row label={ta ? "மூலத் தலைப்புகள்" : "Source headings"}>{prov.archiveDerived.sectionHeadings}</Row>
             <Row label={ta ? "தீர்மானிக்கப்பட்ட வாசிப்புப் பத்திகள் (த/ஆ)" : "Resolved paragraphs (Ta/En)"}>{prov.archiveDerived.tamilResolvedParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>
             <Row label={ta ? "மூலப் பக்கத் துண்டுகள் (த/ஆ)" : "Source-page text segments (Ta/En)"}>{prov.archiveDerived.tamilSourceTextSegments} / {prov.archiveDerived.englishSourceTextSegments}</Row>
             <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>
           </dl>
-          {/* Source-audited page-boundary results (Tamil), not inferred from punctuation. */}
           <div className="mt-4 rounded-xl border border-brass/30 bg-brass/[0.05] p-3">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-brass">
-              {ta ? "மூல-தணிக்கை செய்யப்பட்ட பக்க எல்லைகள் (தமிழ்)" : "Source-audited page boundaries (Tamil)"}
-            </p>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-brass">{ta ? "மூல-தணிக்கை செய்யப்பட்ட பக்க எல்லைகள் (தமிழ்)" : "Source-audited page boundaries (Tamil)"}</p>
             <dl className="mt-2">
               <Row label={ta ? "மொத்த எல்லைகள்" : "Total transitions"}>{prov.archiveDerived.boundaryAudit.tamilTransitions}</Row>
               <Row label={ta ? "அதே பத்தி (தொடர்ச்சி)" : "Same paragraph (continuation)"}>{prov.archiveDerived.boundaryAudit.sameParagraph}</Row>
-              <Row label={ta ? "பத்தி எல்லை (பேச்சாளர் மாற்றம்)" : "Paragraph boundary (speaker turn)"}>{prov.archiveDerived.boundaryAudit.paragraphBoundary}</Row>
-              <Row label={ta ? "இணைப்பு: இடைவெளியின்றி / இடைவெளி / தீர்மானிக்கப்படாதது" : "Joins: none / space / unresolved"}>
-                {prov.archiveDerived.boundaryAudit.lexicalJoinNone} / {prov.archiveDerived.boundaryAudit.lexicalJoinSpace} / {prov.archiveDerived.boundaryAudit.lexicalJoinUnknown}
-              </Row>
+              <Row label={ta ? "தீர்மானிக்கப்பட்ட பத்தி எல்லை" : "Resolved paragraph boundaries"}>{prov.archiveDerived.boundaryAudit.paragraphBoundary}</Row>
+              <Row label={ta ? "இணைப்பு: இடைவெளியின்றி / இடைவெளி / தீர்மானிக்கப்படாதது" : "Joins: none / space / unresolved"}>{prov.archiveDerived.boundaryAudit.lexicalJoinNone} / {prov.archiveDerived.boundaryAudit.lexicalJoinSpace} / {prov.archiveDerived.boundaryAudit.lexicalJoinUnknown}</Row>
               <Row label={ta ? "அச்சுப் பத்தி உறவு தீர்மானிக்கப்படாதவை" : "Unresolved paragraph relationships"}>{prov.archiveDerived.boundaryAudit.unknownParagraphRelation}</Row>
             </dl>
           </div>
           <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
             {ta
-              ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல; பத்தி உறவுகள் நிறுத்தற்குறியிலிருந்து ஊகிக்கப்படவில்லை — ஒவ்வொரு எல்லையும் மூல ஆவணங்களின் அடிப்படையில் வெளிப்படையாகத் தணிக்கை செய்யப்பட்டது. ஆங்கிலப் பத்தி அமைப்பு மொழிபெயர்ப்பாளரின் சொந்த அமைப்பே; பக்க அடையாளங்கள் மூலச் சான்று மட்டுமே."
-              : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary, and paragraph relationships are NOT inferred from punctuation — every transition is classified in an explicit source-audited table. English paragraph structure is the translator's own; its source-page anchors are provenance only."}
+              ? "மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல. எல்லை உறவு நிறுத்தற்குறியிலிருந்து ஊகிக்கப்படாது; கிடைக்கும் மூலச் சான்று போதாத இடங்களில் அது தீர்மானிக்கப்படாததாகவே வைக்கப்படுகிறது."
+              : "A source-page boundary is not a paragraph boundary. Boundary relationships are never inferred from punctuation; where the available source evidence is insufficient, the relationship stays explicitly unresolved."}
           </p>
-          {/* Both blocker classes, explicitly and separately surfaced. */}
-          {prov.blockers?.map((b, i) => {
-            const isLexical = b.item === "unresolved-lexical-join";
-            return (
-              <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-3 py-2 text-[11px] leading-relaxed text-ink/60 dark:border-white/25 dark:bg-white/[0.03] dark:text-night-text/60" lang={lang}>
-                <span className="font-semibold">
-                  {ta
-                    ? isLexical
-                      ? `தடை — சொல் இணைவு தீர்மானிக்கப்படாத ${b.count} பக்க எல்லைகள்: `
-                      : `தடை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படாத ${b.count} பக்க எல்லைகள்: `
-                    : isLexical
-                      ? `Blocker — ${b.count} unresolved lexical joins: `
-                      : `Blocker — ${b.count} unresolved paragraph relationships: `}
-                </span>
-                {ta
-                  ? isLexical
-                    ? `சரியான அச்சு இடைவெளி/இணைவை மூல scan (${s.scanFilename}) மட்டுமே தீர்மானிக்க முடியும்; இச்சூழலில் கிடைக்கவில்லை — நடுநிலை உள்-வரி குறியீட்டுடன் காட்டப்படுகின்றன (இடைவெளியோ இணைப்போ கூறப்படவில்லை).`
-                    : `அச்சுப் பத்தி உறவை மூல scan (${s.scanFilename}) மட்டுமே தீர்மானிக்க முடியும்; இச்சூழலில் கிடைக்கவில்லை — நடுநிலையாகக் காட்டப்படுகின்றன (பத்தி எல்லையோ தொடர்ச்சியோ கூறப்படவில்லை).`
-                  : b.detail}
-              </p>
-            );
-          })}
+          {prov.blockers?.map((b, i) => (
+            <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-3 py-2 text-[11px] leading-relaxed text-ink/60 dark:border-white/25 dark:bg-white/[0.03] dark:text-night-text/60">
+              <span className="font-semibold">{ta ? `தீர்க்கப்படாத மூலச் சான்று — ${b.count}: ` : `Unresolved source evidence — ${b.count}: `}</span>{b.detail}
+            </p>
+          ))}
         </section>
 
-        {/* VERIFICATION */}
         <section className="mt-4 rounded-2xl border border-ink/10 bg-white/50 p-5 dark:border-white/10 dark:bg-night-surface/50">
           <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">
             <FileCheck2 className="h-3.5 w-3.5" aria-hidden /> {ta ? "சரிபார்ப்பு நிலை" : "Verification state"}
           </h2>
           <dl className="mt-3">
             <Row label={ta ? "தமிழ் படியெடுப்பு" : "Tamil transcription"}>{String(prov.transcription.status)} · {prov.transcription.verified_against_scan ? (ta ? "scan-உடன் சரிபார்க்கப்பட்டது" : "verified against scan") : "—"}</Row>
-            <Row label={ta ? "ஆங்கில மொழிபெயர்ப்பு" : "English translation"}>{String(prov.translation.status)} · {String(prov.translation.type)}</Row>
+            <Row label={ta ? "ஆங்கில மொழிபெயர்ப்பு" : "English translation"}>{String(prov.translation.status)} · {String(prov.translation.type ?? "verified project translation")}</Row>
           </dl>
         </section>
 
-        {/* PRESENT RIGHTS / NATIONALISATION */}
         {pr && (
           <section className="mt-4 rounded-2xl border border-marina/30 bg-marina/[0.05] p-5">
             <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
@@ -139,28 +119,24 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang={lang}>
               {ta
-                ? "கலைஞர் மு. கருணாநிதியின் படைப்புகள் தமிழ்நாடு அரசால் நாட்டுடைமையாக்கப்பட்டுள்ளன. 2024 ஆகஸ்ட் 22 அன்றைய அறிவிப்பையடுத்து, ராயல்டி இன்றி நாட்டுடைமையாக்கப்பட்டன. அரசாணை 2024 டிசம்பர் 22 அன்று ராஜாத்தி அம்மாளிடம் பொதுவில் வழங்கப்பட்டது. அரசாணையின் சரியான எண்ணும் முறையான வெளியீட்டுத் தேதியும் இன்னும் சரிபார்க்கப்படவில்லை. இது கலைஞர் ஆற்றிய அடிப்படை உரைக்கு மட்டுமே பொருந்தும்."
-                : "Kalaignar M. Karunanidhi's works were nationalised by the Government of Tamil Nadu following the 22 August 2024 announcement, without royalty. The Government Order was publicly handed over to Rajathi Ammal on 22 December 2024. Its exact GO number and formal issue date have not yet been verified from the order itself. This applies to the underlying speech authored by Kalaignar."}
+                ? "கலைஞர் மு. கருணாநிதியின் படைப்புகள் தமிழ்நாடு அரசால் நாட்டுடைமையாக்கப்பட்டுள்ளன. 2024 ஆகஸ்ட் 22 அறிவிப்புக்குப் பின், ராயல்டி இன்றி நாட்டுடைமையாக்கப்பட்டன. அரசாணை 2024 டிசம்பர் 22 அன்று ராஜாத்தி அம்மாளிடம் பொதுவில் வழங்கப்பட்டது. அரசாணையின் சரியான எண்ணும் முறையான வெளியீட்டுத் தேதியும் இன்னும் சரிபார்க்கப்படவில்லை."
+                : "Kalaignar M. Karunanidhi's works were nationalised by the Government of Tamil Nadu following the 22 August 2024 announcement, without royalty. The Government Order was publicly handed over to Rajathi Ammal on 22 December 2024. Its exact GO number and formal issue date have not yet been verified from the order itself."}
             </p>
             <dl className="mt-3">
               <Row label={ta ? "உரிமை நிலை" : "Rights status"}>{ta ? "தமிழ்நாடு அரசால் நாட்டுடைமையாக்கப்பட்டது" : "Nationalised by the Government of Tamil Nadu"}</Row>
               <Row label={ta ? "அறிவிப்பு தேதி" : "Announcement date"}>{pr.rightsAnnouncementDate}</Row>
-              <Row label={ta ? "அரசாணை பொதுவில் வழங்கப்பட்டது" : "GO publicly handed over"}>
-                {pr.governmentOrderHandoverDate}
-                <span className="mt-1 block text-[11px] text-ink/40 dark:text-night-text/40">{ta ? "ராஜாத்தி அம்மாளிடம் — இது வெளியீட்டுத் தேதி அல்ல." : "To Rajathi Ammal — not the GO issue date."}</span>
-              </Row>
+              <Row label={ta ? "அரசாணை பொதுவில் வழங்கப்பட்டது" : "GO publicly handed over"}>{pr.governmentOrderHandoverDate}<span className="mt-1 block text-[11px] text-ink/40 dark:text-night-text/40">{ta ? "ராஜாத்தி அம்மாளிடம் — இது வெளியீட்டுத் தேதி அல்ல." : "To Rajathi Ammal — not the GO issue date."}</span></Row>
               <Row label={ta ? "அரசாணை எண்" : "GO number"}>{pr.governmentOrderNumber ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}</Row>
               <Row label={ta ? "அரசாணை வெளியீட்டுத் தேதி" : "GO issue date"}>{pr.governmentOrderDate ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}</Row>
             </dl>
             <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.05] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
               {ta
-                ? "நாட்டுடைமையாக்கல் கலைஞரின் அடிப்படை தமிழ் உரைக்கு மட்டுமே. இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு, தனித்தனியே வெளியிடப்பட்ட மொழிபெயர்ப்புகள், அல்லது பிறர் பங்களிப்புகளுக்கு இது நீட்டிக்கப்படவில்லை."
-                : "The nationalisation covers Kalaignar's underlying Tamil speech only. It does not extend to the project-created English translation, separately published translations, or third-party contributions, which retain their own provenance."}
+                ? "நாட்டுடைமையாக்கல் கலைஞரின் அடிப்படை தமிழ் உரைக்கு மட்டுமே. இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு மற்றும் பிறர் பங்களிப்புகள் தனித் தனியான மூலச்சான்றைத் தக்கவைத்துள்ளன."
+                : "The nationalisation covers Kalaignar's underlying Tamil speech only. It does not extend to the project-created English translation or third-party contributions, which retain their own provenance."}
             </p>
           </section>
         )}
 
-        {/* SOURCE & INTEGRITY */}
         <section className="mt-4 rounded-2xl border border-ink/10 bg-white/50 p-5 dark:border-white/10 dark:bg-night-surface/50">
           <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">{ta ? "மூலம்" : "Source"}</h2>
           <dl className="mt-3">
@@ -169,16 +145,10 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </dl>
         </section>
 
-        {/* Notes */}
         <section className="mt-4 rounded-2xl border border-ink/10 bg-white/40 p-5 dark:border-white/10 dark:bg-night-surface/40">
           <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">{ta ? "குறிப்புகள்" : "Notes"}</h2>
           <ul className="mt-3 space-y-2 text-sm text-ink/70 dark:text-night-text/70">
-            {prov.notes.map((n, i) => (
-              <li key={i} className="flex gap-2">
-                <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink/30 dark:bg-white/30" />
-                <span>{n}</span>
-              </li>
-            ))}
+            {prov.notes.map((n, i) => <li key={i} className="flex gap-2"><span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink/30 dark:bg-white/30" /><span>{n}</span></li>)}
           </ul>
         </section>
 
