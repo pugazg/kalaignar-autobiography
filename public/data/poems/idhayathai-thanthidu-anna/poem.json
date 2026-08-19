@@ -1,0 +1,4512 @@
+{
+ "workId": "idhayathai-thanthidu-anna",
+ "slug": "idhayathai-thanthidu-anna",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/idhayathai-thanthidu-anna",
+ "sourceCommit": "42c156d7242fa799ea80adbb0c5f2b9eba078fe9",
+ "shelf": "poetry",
+ "readerStructure": "poem",
+ "subtype": "poem",
+ "title": {
+  "ta": "இதயத்தைத் தந்திடு அண்ணா",
+  "en": "Lend Me Your Heart, Anna"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "sourceContext": {
+  "noteTa": "(9.2.1969 அன்று சென்னை வானொலியில் பேரறிஞர் அண்ணா\nஅவர்களுக்குக் கலைஞர் மு. கருணாநிதி அவர்கள் அளித்த\nகண்ணீர்க் கவிதாஞ்சலி)",
+  "noteEn": "The note printed above the poem records that on 9.2.1969, on Chennai Radio, Kalaignar M. Karunanidhi offered this கண்ணீர்க் கவிதாஞ்சலி — a tearful poetic tribute — to Perarignar Anna.",
+  "dateIso": "1969-02-09",
+  "datePrinted": "9.2.1969",
+  "venue": {
+   "ta": "சென்னை வானொலி",
+   "en": "Chennai Radio"
+  },
+  "occasion": {
+   "ta": "பேரறிஞர் அண்ணாவுக்கான கண்ணீர்க் கவிதாஞ்சலி",
+   "en": "A poetic tribute to Perarignar Anna"
+  }
+ },
+ "publicationYear": null,
+ "editionStatement": null,
+ "factsNotStated": [
+  "publication-year",
+  "edition-statement",
+  "printed-page-number-on-scan-26"
+ ],
+ "transcriptionStatus": "verified source assembly — PASS, 0 discrepancies (28/28 physical scans, 14/14 poem scans)",
+ "translationStatus": "RELEASE-COMPLETE project-created translation — batches 01–05 reviewed PASS, full-poem voice/fidelity review PASS",
+ "tamil": {
+  "stanzas": [
+   {
+    "lines": [
+     {
+      "text": "பூவிதழின் மென்மையினும் மென்மையான",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "புனித உள்ளம் - அன்பு உள்ளம் -",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "அரவணைக்கும் அன்னை உள்ளம்! அவர்",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "மலர் இதழ்கள் தமிழ் பேசும் -",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "மா, பலா, வாழையெனும் முக்கனியும் தோற்றுவிடும்-",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "விழிமலர்கள் வேலாகும், வாளாகும்",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "தீங்கொன்று தமிழ்த் தாய்க்கு வருகுதென்றால்!",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     }
+    ],
+    "sourceScans": [
+     13
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "கால் மலர்கள் வாடிடினும் அவர் கடும் பயணம் நிற்காது;",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "கை மலர்கள் பிணைத்து நிற்கும், தம்பியரை, கழகத்தை!",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "அம்மலரே எதிரிகளை மன்னித்து",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "நெற்கதிர் போல் தலை நாணச் செய்துவிடும்!",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "மக்களாட்சி மலர் குலுங்க",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "சமதர்மப்பூ மணக்க",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "தாய்மொழி தமிழே வாழ்வுப் பொழிலாக",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "ஆடிவரும் தென்றல்,",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "நாடிவரும் பூமுடியே! புகழ் முடியே! உமைத்",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "தேடிவரும் வாழ்த்துக் குவியலிலே - தினம்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "பாடிவரும் வண்டாக நான் பறப்பேன்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "உனக்காக எனைத் துறப்பேன்; என் -",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "ஒரு கோடித் தமிழ் இளைஞர்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "பாடி நின்ற பாட்டுக்குப் பெருந்தலைவன்..",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     }
+    ],
+    "sourceScans": [
+     13,
+     14
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "முரசிற் செறிந்த தமிழார்வம்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "முதிரா இளைஞர் ஆருயிரைப்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "பெருகச் செய்த செயல் மறவர்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "சிறப்பைப் பாடக் கேண்மினோ!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "தங்கு சனி வேல் செய்த புண்களை",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "அன்பெனும் வேது கொண்டாற்றியும்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "செங்கனி வாய் மருந்தாட்டுவார்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "சீர்மையைப் பாடக் கேண்மினோ!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "பொருதடக்கை வாளெங்கே; மணி மார்பெங்கே?",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "போர் முகத்தில் எவர் வரினும் புறங்கொடாத",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "புரவலர்த் தோளெங்கே எங்கே யென்று",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "தம்பியரைக் கேட்டதனைக் கேண்மின்! கேண்மின்!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "காஞ்சியிருக்கக் கலிங்கம் குலைந்த",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "கலவி மடவீர் கழற்சென்னி",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "காஞ்சியிருக்கக் கலிங்கம் தொலைந்த",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "களப் போர் பாடத் திறமினோ என்று",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     }
+    ],
+    "sourceScans": [
+     14
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "மயல் கொண்ட மாதர்தமைத் துயில் எழுப்பச்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "செயல் கொண்டார் பாடினார்,",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "களப்பரணி.. கலிங்கத்துப் பரணி",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "அளப்பரிய வீரத்தின் புகழ்ப்பரணி - யான்",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "கவிப்பரணியேற்றி, காஞ்சிபுரப் பரணி",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "பாடி நின்றேன் இன்று",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "அவலப் பரணி பாடுகின்றேன்....!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     }
+    ],
+    "sourceScans": [
+     14,
+     15
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "கவியினில் பொருளெனக் கரும்பினில் சுவையெனக்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "கதிரினில் ஒளியெனக் காவினில் மலரென",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "நிலவினில் குளிரென நிலமிசை வளமெனக்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "குலவிடும் அருவி குழறிடும் மொழியென",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "உலவிடும் காற்றில் ஏறிடும் இசையென",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     }
+    ],
+    "sourceScans": [
+     15
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "அலையெழுங் கடலின் ஆடிடும் நுரையெனக்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "கலைமணங் கமழக் கூடிய கவிஞர்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "தலைமகன் அண்ணா திருப்புகழ் பாடிட",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "நிலமகள் வடிக்கும் கண்ணீர் அந்தோ!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "வெள்ளம்!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "வெள்ளம்!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "மாபெரும் வெள்ளம்!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "ஆயிரத்துத் தொள்ளாயிரத்து முப்பத்து எட்டாம்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "தாயகத்தில் மொழிப் புரட்சி தோன்றுதற்கு",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "வித்திட்டார் சிலபேர் என்றால்: ஈரோட்டு",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "நாயகத்தின் இணையில்லாத் தலைமை வீரர்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "எங்களண்ணன் களம் புகுந்தார் காஞ்சி பூண்டு!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     }
+    ],
+    "sourceScans": [
+     15
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "இரு மூன்று திங்கள் வரை சிறையில் வாடி,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "தரும் ஊன்றுகோலாகத் தமிழைத் தந்து",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "அரு மூன்று எழுத்தாலே அண்ணாவானார்...",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "அன்றொரு நாள் அய்ம்பத்திரண்டுதனில்",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "சென்னையிலே சொன்னேனே",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "நினைவுண்டா உங்களுக்கு?",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "முன்றெழுத்திலே ஒரு சிறப்புண்டு",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "முத்தமிழ் மணமுண்டு..",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "மூவேந்தர் முக்கொடி முக்கனியென",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "மும்முரசார்த்தவர் தமிழர் - அவர் வாழ்ந்த",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "தமிழ் “வாழ்வு”க்கு முன்றெழுத்து - அந்த",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "வாழ்வுக்கு அடிப்படையாம் ‘அன்பு’க்கு முன்றெழுத்து..",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "அன்புக்குத் துணை நிற்கும் ‘அறிவு’க்கு முன்றெழுத்து",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "அறிவார்ந்தோர் இடையிலெழும், “காதல்”க்கு முன்றெழுத்து...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "காதலர்கள் போற்றி நின்ற கடும் ‘வீரமோ’ முன்றெழுத்து...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "வீரம் விளைக்கின்ற ‘களம்’ முன்றெழுத்து...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "களம் சென்று காணுகின்ற ‘வெற்றி’ முன்றெழுத்து",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "அந்த வெற்றிக்கு நமையெலாம் ஊக்குவிக்கும்",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "அமைதி மிகு அண்ணா முன்றெழுத்து",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "அறிந்திடுவீர் எனச் சொன்னேன்!",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     }
+    ],
+    "sourceScans": [
+     15,
+     16
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "திக்கெட்டும் தமிழ் முழக்கம்",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "திசையெங்கும் சொன்மாரி",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "வக்கற்றோர் வகையற்றோர்",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "வாழ்வதற்குத் திட்டம் கோரி",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "வண்டாகச் சுற்றுகின்றார் மேடையேறி!",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "எழுதுகின்றார் அண்ணா எனில்,",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "எடெல்லாம் வீடெல்லாம் தமிழ்",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "நாடெல்லாம்... புதுமை மணக்குதங்கே...",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "“ஏடா தம்பி! எட்டா பேனா....”",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "“கத்தியைத் தீட்டாதே புத்தியைத் தீட்டு”",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "கருத்துப் பேழை கற்பூரப் பெட்டகம்!",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "“மரக்கிளையிலே பிணம்;",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "வெந்த புண்ணிலே வேல்!”",
+      "indent": 4,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "மறந்திடப் போமோ; மனங்கவர் வாசகம்?",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“சாலை யோரத்திலே வேலையற்றதுகள் -",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "வேலையற்றதுகளின் உள்ளத்தில் விபரீத எண்ணங்கள் -",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "வேந்தே! அதுதான் காலக்குறி!”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "அண்ணனுக்கன்றி யாருக்கு வரும் இந்த அழகு நடை?",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "அறிவு நடை?",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“கோடு உயர்ந்தது குன்றம் தாழ்ந்தது”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "தமிழகம் மறவாத் தலையங்கமன்றோ!",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“இப்படை தோற்கின் எப்படை ஜெயிக்கும்?”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“தம்பியுடையான் படைக்கஞ்சான்!”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "ஒப்பில்லா வரிகள் உரைத்திடும் பனுவல்",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "மனோன்மணியும் எனினும் - நம்",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "மனத்தில் பதித்தவர் அண்ணாவன்றோ!",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     }
+    ],
+    "sourceScans": [
+     16,
+     17
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "“மாற்றான் தோட்டத்து மல்லிகையும் மணக்கும்”",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "அரசியல் பண்பினைப் போதிக்கும் அழகே!",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“மறப்போம் - மன்னிப்போம்”",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "மாற்றார் ஏசல் தாங்கிடும் மாண்பே! .",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "எவர் கற்றுத் தந்தார் இதனை?",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "சுவர் வைத்துச் சித்திரம் எழுதுதல் போல்",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "நயமிகு பண்புடன் அரசியல் நடத்தல்",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "நன்றென்றார் அண்ணா -",
+      "indent": 8,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "அதை மறந்து",
+      "indent": 8,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "நாலைந்து பேர் குதித்திட்டார் என்றால்",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "அவர் கண்டு சிரித்திட்டார் அண்ணா!",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "அனைவரையும் ஓர் அன்னை பெற்றெடுக்க",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "வயிறு தாங்காக் காரணத்தால்",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "தனித்தனித் தாய் ஈன்றெடுத்த தம்பிகளே! என அழைத்துக்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "கனிச் சுவையாய்க் கற்கண்டாய்த் தேன் பாகாய் அன்பு காட்டிப்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "பனிமலர் வீழ் தும்பியதாய்த் தழுவிக் கொண்டார்.",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "சொல்ல வல்லார் சேதுப் பிள்ளைதனைச்",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "சோமசுந்தர பாரதியைச் சொற் போரில்",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "சொக்க வைத்தார் - பாவம்; சிக்க வைத்தார்!",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "நீதிக் கட்சியென்று நெடியமதில் சுவருக்குள்ளே - பணச்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "சாதிக்குக் கட்சியாய் இருத்தலாகாதெனும்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "கொள்கையாலே - அதனை",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "வீதிக்குக் கொண்டு வந்தார்!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "வீசிடுக வெள்ளையர்கள் பட்டத்தையென்று",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "சேலத்து மாநாட்டில் தீர்மானம் போட்டுவிட்டார்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "- அண்ணாவின் போர்க்",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "கோலத்தை எதிர்க்க மாட்டாமல்",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "கோலற்ற குருடர் போலக் கொள்கையற்றோர்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "வீழ்ந்து போனார்!",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "தீர் அண்ணா திராவிடர் கழகமெனும்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "பெயர் மாற்றத் தீர்மானம்",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "வீரர் கூடிய மாநாட்டில் கொண்டு வந்தார்!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     }
+    ],
+    "sourceScans": [
+     17,
+     18
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "அண்ணல் காந்தியார் அறவழி கண்டு",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "ஆங்கில ஆட்சியை அகற்றியபோது",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "துன்ப நாளொன்றும் பெரியார் அறிக்கையை மறுத்துத்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "தொடங்கினார் போரை!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "இன்ப நாளிது! இனிய நாளிது!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "என்பு தோலாய் ஆன இந்தியர்",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "அன்புறு காந்தியின் அருளால் இன்று",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "எழுந்தனர் அடிமைத் தளையினை அறுத்து!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "முழங்குவோம் விடுதலை முரசினை எடுத்து",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "என்றே அண்ணா, அன்றே சொன்னார்...",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "அன்று முதல் அண்ணன் - அய்யா - உறவினிலே",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "கீறல் விழ",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "அது நாற்பத்தொன்பதாம் ஆண்டினிலே பிரிவாய்மாறி",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "முகில் கிழித்து வெளிக் கிளம்பும் முழு மதியாய்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "முன்னேற்றக் கழகத்தை முகிழ்க்கச் செய்தார்!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "தலைவருடன் கூடி வாழ முடியாமல்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "பெரும்பான்மைத் தோழருடன்",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "வெளியே வந்தவுடன்,",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "நிலைகுலையா நம் அண்ணா அன்று சொன்னார்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     }
+    ],
+    "sourceScans": [
+     18,
+     19
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "அது -",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "நேற்றுச் சொன்னது போல் இருக்குதம்மா!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "தலைவரில்லை முன்னேற்றக் கழகத்துக்கு - என்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "தலைவர் இருந்த நாற்காலி, காலியாக இருக்கும்! அதில்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "தலைவர் அவர் என்றேனும் வந்தமர்வார்..",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "அதுவரையில் காத்திருப்பேன் என்றார்.",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "பூத்திருக்கும் மலர்த் தோட்டம்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "காலைப் பனிநீர் வடிப்பது போல்",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "காத்திருந்து கூட்டம் கேட்டோர்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "கண்ணீர் வடித்தார்",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "கண்ணீர்த் துளிகளே! நாட்டின் கண்மணிகளே! என அழைத்துச்",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     }
+    ],
+    "sourceScans": [
+     19
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "செந்தீர் சிந்துதற்கு அணிவகுத்தார்!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "யாரேனும் கேட்டதுண்டா?",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "யாரேனும் புகன்றதுண்டா?",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "பதினெட்டு ஆண்டுக்குள் ஓர் இயக்கம்",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "பதுங்கிப் பாயும் வேங்கையெனப் - பாராள வந்த கதை?",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஈராண்டு முடியவில்லை என் அண்ணா ஆட்சியேற்று -",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "சீரார்ந்த செயல் பலவும் செயலுற்றார்!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஏரார்ந்த உழவர்க்கெல்லாம் ஏற்றம் தந்து",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "எழில் வாழ்வு குவிப்பதற்கு எடுத்தார் முயற்சி!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "உலகத் தமிழ் மாநாடு துவக்க வந்த",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஓங்கு புகழ்க் குடியரசுத் தலைவர்",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "இணையற்ற காட்சி கண்டேன் மாட்சி கண்டேன்",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "இதுபோல வாழ்வில் என்றும் கண்டதில்லை'யென",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஊர் மெச்சப் புகழ்ந்துரைத்தார் அண்ணன் கீர்த்தி!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஆந்திரத்துப் பிரம்மானந்த ரெட்டிகாரும்",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஆகா - நீர் தானே அசல் காந்திய வாதியென்று",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "ஆராதனை செய்திட்டார் - ஆண்டொன்று கழியவில்லை!",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     }
+    ],
+    "sourceScans": [
+     19,
+     20
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "மதுவிலக்கைத் தீவிரமாய் ஆக்குகின்றீர் பல",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "மாநிலத்தில் கை கழுவிக் கலயம் கட்டிவிட்டார் மரங்களிலே!",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "மகாத்மாவின் தோன்றல் நீர்தான் என்று",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "கீரியென்றால் மலையன்றோ - அந்த",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "மலைமுழுவதும் முகிலானார் நம் அண்ணா!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "வி.வி. கிரி தந்த வாழ்த்துக்கு விளக்கமிது.",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "பன்னாட்டுப் பேரறிஞர் வாழ்த்தி நின்றார் - அன்று",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "தென்னாட்டுச் சிகரமாக இருந்திட்டோர்",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "அண்ணன் பற்றி",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "என்ன சொன்னார்?",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "பழந்தமிழ் வித்தகர் பல்லாவரத்தார் - அண்ணா,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "பழந்தமிழ்ப் பேச்சால் மயங்கி நின்றார் - அந்த",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "மறைமலை தந்த புகழ்மொழி ஆயிரம்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "பசுமலை பாரதி - பாண்டியன் தோற்றம் - அவரை",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "நாவலர் என்று நாடே அழைக்கும் - அவர்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "சழக்கரால் வீழ்ந்த தமிழ் நிலம் காக்க - மன",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "அழுக்கில்லாத் தலைவன் கிடைத்தான் என்றே",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "அண்ணன் பெருமை சொன்னார் அன்று!",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     }
+    ],
+    "sourceScans": [
+     20,
+     21
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "ஈராயிரம் ஆண்டின் முன்னும் இன்றுபோல்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "இளையவளாய் இருந்திட்ட தமிழாம் அன்னை",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "நூறாயிரம் கோடி என ஆண்டு பல வாழ்வதற்கு",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "நூலாயிரம் செய்திட்ட புலவர்களை ஈன்றாள் எனினும்;",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "கலைமகளாம் நம் அன்னை வள்ளுவனைத்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "தலைமகனாய்ப் பெற்றெடுத்தாள்.",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     }
+    ],
+    "sourceScans": [
+     21
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "மலர் என்றால் தாமரைத்தான்",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "மன்னன் என்றால் கரிகாலன்",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "நூல் என்றால் திருக்குறளே",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "எனப்போற்றும் அறப்பனுவல்",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "அளித்திட்டான்; மாந்தரெல்லாம் களித்திட்டார்!",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "விண்முட்டும் மலையோரம் - நம்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "கண்பட்டும் படாமலும் எழுகின்ற நச்சுமரம் போலப்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "பண்பட்ட தமிழர் வாழ்வில் - முதுகில்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "புண்பட்ட கொள்கையெல்லாம் மூண்டதங்கே!",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "சாதிகளைக் காணாது குறள் ஒலித்த தமிழ் மண்ணில்",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "பாதியிலே வந்ததம்மா பலகோடி சாதிகளும்!",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "அறிவு மணங்கமழ்கின்ற ஆலயங்கள் அற்றுப்போய்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "ஆயிரம் தெய்வங்கள் உறைகின்ற கோயில்கள் கண்டுவிட்டார்.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     }
+    ],
+    "sourceScans": [
+     21,
+     22
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "மொழியுணர்வே இல்லாத வாயுணர்வின் மாக்கள் - தமிழ்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "அழியினும் வாழினும் என்னென்று இருந்திட்டார்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "அறநெறியே குறிக்கோளாய்த் திகழ்ந்திட்ட பெருநிலத்தில்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "பிறநெறிகள் பயிர் செய்தார்; பிழை குவித்தார்.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "மழையற்றுப் போன வயல்போல மாறிற்றுத் தமிழர் மனம்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "அழுக்காறு - அவா - வெகுளி - இன்னாச் சொல் நான்குமின்றி",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "நடக்காது வேலையென்று நடத்திட்டார் சில தமிழர்!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "பொருளில்லார்க்கு இவ்வுலகமில்லையென்று",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "பொருள் குவித்து வளம் செழித்த நாட்டில்- இன்று",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "இருள் கவிந்து வாட்டம் கொடி போட்டதங்கே.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "வாடினாள் தமிழன்னை - சோகப் பாட்டுப்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "பாடினாள் தமிழன்னை; சுடுநெருப்பில்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "ஆடினாள் தமிழன்னை...",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "ஓடினாள்.. ஓடினாள்.. ஒரு வழியும் கிடைக்கவில்லை!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "புவியூர் விட்டுப் புகழூரில் வாழுகின்றான்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "கவியூரின் பெருவேந்தன் குறளாசான்!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "ஆண்டு சென்று, ‘அருமை மகனே!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "வேண்டுகோள் ஒன்று விடுத்தேன்” என்றாள்.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "‘என்னம்மா?’ என்றான் குறளோன்.",
+      "indent": 4,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "“தோண்டுகின்ற இடமெல்லாம் தங்கம் வரும் தமிழகத்தில்",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "மீண்டும் நீ பிறந்திட வேண்டும்’மென்றாள்.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     }
+    ],
+    "sourceScans": [
+     22
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "‘தங்கம் எடுக்கவா?’ என்றான்",
+      "indent": 4,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "‘தமிழர் மனம் வாழ்வெல்லாம்",
+      "indent": 4,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "தங்கமாக ஆக்க’ என்றாள்.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "‘இன்றென்ன ஆயிற்’ றென்றான்.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "குன்றனைய மொழிக்கு ஆபத்தென்றாள்;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "சென்றமையக் குடில் இல்லை ஏழைக்கென்றான்;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "கடிதோச்சி மெல்ல எறியத் தெரியாமல்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "கொன்றெறியும் கோல் ஓங்கிற்றென்றாள்; அறிவில்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "கன்றனையோர் வீணில் கதைக்கின்ற கதையும் சொன்னாள்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "அழுத கண்ணைத் துடைத்தவாறு",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "அமுத மொழி வள்ளுவனும்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "அம்மா நான் எங்கே பிறப்பதென்றான்;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "தொழுத மகன் உச்சிமோந்து ஆல",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "விழுதனைய கைகளாலே.. அணைத்துக் கொண்டு",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "உழுத வயல் நாற்றின்றிக் காயாது.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     }
+    ],
+    "sourceScans": [
+     22,
+     23
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "இனிமேலே என எண்ணி",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "மனமகிழும்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "உழவன் போல் உள்ளமெல்லாம் பூரிப்புத் துள்ளி எழ",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "காய்ந்த வயிற்றுக்குக் கஞ்சி வார்த்திடவே",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "கற்கண்டே! தேன்பாகே! திருக்குறளே!",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "நீ காஞ்சியிலே பிறந்திடுக! என்றாள்.",
+      "indent": 4,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "பிறந்திட்டான் நம் அண்ணனாக;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "அறிவு மன்னனாக",
+      "indent": 4,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "பொதிகை மலைத் தென்றலாய்ப்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "போதாகி மலர்கின்ற",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     }
+    ],
+    "sourceScans": [
+     23
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "தமிழ் உணர்வின் புதுமணமாய்ப்",
+      "indent": 4,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "பதிகத்துப் பொருளாய்ப்",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "பழந்தமிழர் புறப்பாட்டாய்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "வந்துதித்தான் அண்ணன் - கீழ்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "வானுதித்த கதிர்போல -",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அவன் புகழைப் பாடுதற்கு",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அவன் வளர்த்த தம்பி நானும்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அவன் தந்த தமிழ் எடுத்து",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "இவண் வந்தேன் இதுதான் உண்மை -",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "தலைவரென்பார், தத்துவமேதை என்பார்,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "நடிகர் என்பார், நாடக வேந்தர் என்பார்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "சொல்வாற்றல் சுவைமிக்க எழுத்தாற்றல் பெற்றார் என்பார்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     }
+    ],
+    "sourceScans": [
+     23,
+     24
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "மனிதனென்பார், மாணிக்கமென்பார், மாநிலத்து அமைச்சரென்பார்.",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அன்னையென்பார், அருமொழிக் காவல் என்பார்,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அரசியல்வாதி என்பார் - அத்தனையும்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "தனித்தனியே சொல்வதற்கு நேரமென்றோர் - நெஞ்சத்து அன்பாலே",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "‘அண்ணா’ என்ற ஒரு சொல்லால்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அழைக்கட்டும் என்றே - அவர் அன்னை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "பெயரும் தந்தார்",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அந்த அன்னைக் குலம் போற்றுதற்கு",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "ஒளவைக்கோர் சிலை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "அறம் வளர்த்த கண்ணகிக்கோர் சிலை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "வளையாத நெஞ்சுப் பாரதிக்கும்,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "வணங்காமுடிப் பாரதிதாசருக்கும் சிலை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     }
+    ],
+    "sourceScans": [
+     24
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "வீரமா முனிவருக்கும் சிலை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "கால்டுவெல் போப்புக்கும் சிலை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "கம்பர்க்கும் சிலை",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "தீரமாய்க் கப்பலோட்டிய தமிழர்க்கும் சிலை",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "திக்கெட்டும் குறள் பரப்பத் திருவள்ளுவர்க்கும் சிலை",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "பத்து சிலை வைத்ததனால் - அண்ணன் தமிழன் பால் வைத்துள்ள",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "பற்றுதனை உலகறிய ; அந்த",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "அண்ணனுக்கோர் சிலை",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "சென்னையிலே வைத்த போது..",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "ஆள்காட்டி விரல் மட்டும் காட்டி நின்றார்..",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "ஆணையிடுகின்றார் எம் அண்ணா என்றிருந்தோம்",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "அய்யகோ, இன்னும்",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "ஓராண்டே வாழப் போகிறேன் என்று அவர்",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "ஒரு விரல் காட்டியது இன்றன்றோ புரிகிறது!",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "எம் அண்ணா.. இதயமன்னா...",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     }
+    ],
+    "sourceScans": [
+     24,
+     25
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "படைக்கஞ்சாத் தம்பியுண்டென்று",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "பகர்ந்தாயே;",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "எமை விடுத்தும் பெரும்பயணம் ஏன் தொடர்ந்தாய்...?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "உன் கண்ணொளியின் கதகதப்பில் வளர்ந்தோமே!",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "எம் கண்ணெல்லாம் குளமாக ஏன் மாற்றிவிட்டாய்?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "நிழல் நீ தான் என்றிருந்தோம்; நீ கடல்",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "நிலத்துக்குள் நிழல் தேடப் போய்விட்டாய்; நியாயந்தானா?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "நான்தானடா நன்முத்து எனச் சொல்லிக்",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "கடற்கரையில் உறங்குதியோ?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "நாத இசை கொட்டுகின்ற",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "நாவை ஏன் சுருட்டிக் கொண்டாய்?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     }
+    ],
+    "sourceScans": [
+     25
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "விரல் அசைத்து எழுத்துலகில்",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "விந்தைகளைச் செய்தாயே; அந்த",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "விரலை ஏன் மடக்கிக் கொண்டாய்?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "கண்மூடிக் கொண்டு நீ சிந்திக்கும்",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "பேரழகைப் பார்த்துள்ளேன்.. இன்று",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "மண் மூடிக் கொண்டுன்னைப் பார்க்காமல்",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "தடுப்பதென்ன கொடுமை!",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "கொடுமைக்கு முடிவு கண்டாய்; எமைக்",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "கொடுமைக்கு ஆளாக்கி ஏன் சென்றாய்?",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "எதையும் தாங்கும் இதயம் வேண்டுமென்றாய்:",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     }
+    ],
+    "sourceScans": [
+     25,
+     26
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "இதையும் தாங்க ஏதண்ணா எமக்கிதயம்?",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "கடற்கரையில் காற்று",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "வாங்கியது போதுமண்ணா!",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "எழுந்து வா எம்மண்ணா!",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "வரமாட்டாய்; வரமாட்டாய்;",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "இயற்கையின் சதி எமக்குத் தெரியும் அண்ணா. நீ",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "இருக்குமிடந் தேடி யான் வரும் வரையில்",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "இரவலாக உன் இதயத்தை தந்திடண்ணா..",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "நான் வரும்போது கையோடு கொணர்ந்து அஃதை",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "உன் கால்மலரில் வைப்பேன் அண்ணா...",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     }
+    ],
+    "sourceScans": [
+     26
+    ]
+   }
+  ],
+  "lineCount": 339
+ },
+ "english": {
+  "stanzas": [
+   {
+    "lines": [
+     {
+      "text": "Softer than the softness of a flower-petal,",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "a sacred heart — a loving heart —",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "a mother's heart that gathers one close! His",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "flower-petals speak Tamil —",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "mango, jackfruit, banana — the three fruits themselves are outdone —",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "his eye-flowers turn spear, turn sword",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "if even one harm comes to Mother Tamil!",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     }
+    ],
+    "sourceScans": [
+     13
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "Though his foot-flowers wilt, his arduous journey does not halt;",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "his hand-flowers clasp together the younger brothers, the Kazhagam!",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "Those very flowers forgive the enemies",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "and make their heads bow in shame, like ripened paddy!",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "Let democracy's flower sway,",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "let socialism's flower give fragrance,",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "with mother-tongue Tamil itself as life's garden —",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "O breeze that comes dancing,",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "O flower-crown! O crown of fame! In the heaps of blessings",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "that come seeking you — each day",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "I shall fly as the bee that comes singing.",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "For you I shall give up myself; for the song",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "my one crore Tamil youths stood singing,",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "you were the Great Leader..",
+      "indent": 0,
+      "sourceScan": 13,
+      "printedPage": 11
+     },
+     {
+      "text": "Listen as I sing the greatness",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "of the man of action, the warrior,",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "whose Tamil fervour, packed into the drum,",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "made the precious life of youth swell!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "The wounds dealt by the *tangu sani vēl* —",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "soothing them with the fomentation called love,",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "his red-fruit mouth applying medicine —",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "listen as I sing his nobility!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "Where is that battle-mighty arm; where that jewelled chest?",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "Where, where the patron's shoulders",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "that would never show their back, whoever came upon the battlefront? —",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "hear how he asked the younger brothers! Hear! Hear!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "While Kanchi stood, Kalinga trembled —",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "O maidens joined in love — *kazhar-chchenni* —",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "while Kanchi stood, Kalinga was lost:",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "\"Open — let the war of the field be sung!\"",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     }
+    ],
+    "sourceScans": [
+     13,
+     14
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "To wake the love-dazed women from sleep",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "he set himself to action and sang:",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "a parani of the battlefield.. the *Kalingattu Parani*,",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "a praise-parani of immeasurable valour — I",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "mounted a parani of poetry, a Kanchipuram Parani,",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "and stood singing then;",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "today",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "I sing a parani of grief....!",
+      "indent": 0,
+      "sourceScan": 14,
+      "printedPage": 12
+     },
+     {
+      "text": "As meaning within a poem, as sweetness in sugarcane,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "as light in a ray, as flower in a grove,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "as coolness in the moon, as richness upon the earth,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "as the babbling tongue of the roaming waterfall,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "as music mounting the wandering wind,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     }
+    ],
+    "sourceScans": [
+     14,
+     15
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "as dancing foam upon the wave-risen sea —",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "the poet in whom the fragrance of art gathers and rises,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "Anna, chief among poets — when I sing his sacred praise,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "ah! the tears the Earth-maiden pours!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "A flood!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "A flood!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "A mighty flood!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "In nineteen hundred and thirty-eight,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "if a few sowed the seed",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "for a language revolution to arise in the homeland:",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "the peerless chief-warrior of the leader of Erode —",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "our Anna entered the field, wearing Kanchi!",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     }
+    ],
+    "sourceScans": [
+     15
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "Withering in prison for two, three months,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "giving Tamil as the staff that would bear us,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "by those rare three letters he became Anna...",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "That day, in fifty-two,",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "in Chennai, I told you —",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "do you remember?",
+      "indent": 0,
+      "sourceScan": 15,
+      "printedPage": 13
+     },
+     {
+      "text": "There is a distinction in three letters,",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "the fragrance of *Muttamil* is there..",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "Three kings, three flags, three fruits —",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "Tamils who made the three drums resound — in the Tamil they lived,",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "*vāzhvu* — “life” — three letters;",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "*anbu* — “love”, the ground of that life — three letters..",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "*arivu* — “knowledge”, the companion of love — three letters;",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "*kādhal* — “love” that rises among the knowing — three letters...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "the fierce *vīram* — “valour” lovers praised — three letters...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "*kaḷam* — “the field” that brings forth valour — three letters...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "*veṟṟi* — “victory” seen by entering the field — three letters;",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "and serene Anna, who spurs us all toward that victory —",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "Anna — three letters:",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "I told you, know this!",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     }
+    ],
+    "sourceScans": [
+     15,
+     16
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "Tamil's roar to every direction,",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "a rain of words everywhere;",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "for those without means, those without a way,",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "seeking a plan by which they may live,",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "he circles like a bee, mounting the platform!",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "And when Anna writes,",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "every page, every home — Tamil;",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "the whole land... fragrant there with newness...",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "“Ēdā thambi! Ettā pēnā....”",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "“Sharpen not the knife — sharpen the mind.”",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "A casket of thought! A box of camphor!",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "“A corpse upon a tree-branch;",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "a spear in a burnt wound!”",
+      "indent": 0,
+      "sourceScan": 16,
+      "printedPage": 14
+     },
+     {
+      "text": "Could we ever forget those heart-capturing words?",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“The jobless by the roadside —",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "in the hearts of the jobless, perverse thoughts —",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "O King! That is the sign of the times!”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "To whom but Anna could come this gait of grace?",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "This gait of reason?",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“The line rose; the hill sank” —",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "was that not an editorial Tamil Nadu will never forget!",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“If this army falls, what army will win?”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“He who has a younger brother fears no army!”",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "Though the *Manonmani* text uttered such peerless lines —",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "was it not Anna who engraved them",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "upon our hearts!",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     }
+    ],
+    "sourceScans": [
+     16,
+     17
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "“The jasmine in another man's garden too has fragrance” —",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "what beauty, teaching the civility of politics!",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "“Let us forget — let us forgive” —",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "what greatness, bearing an opponent's taunt!",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "Who taught us this?",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "As one raises a wall before painting the picture,",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "Anna said it was good to conduct politics",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "with grace and civility —",
+      "indent": 8,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "forgetting that,",
+      "indent": 8,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "if four or five men leapt away,",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "Anna saw them — and laughed!",
+      "indent": 4,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "Because one mother's womb could not bear",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "to give birth to everyone,",
+      "indent": 0,
+      "sourceScan": 17,
+      "printedPage": 15
+     },
+     {
+      "text": "he called them, “You younger brothers,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "born of separate mothers!”",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "He showed love sweet as fruit,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "as rock-candy, as honey-syrup,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "and embraced them like a bee settling on a dew-flower.",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Sethu Pillai, master of words,",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Somasundara Bharathi too — in a war of words",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "he left them spellbound — poor souls; caught them!",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "The Justice Party, behind the walls of a towering fort —",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "a party of the moneyed caste — must not remain so:",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "by that principle",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "he brought it into the street!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "“Cast away the white men's titles!” —",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "at the Salem conference he moved the resolution.",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Unable to withstand",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Anna's battle-form,",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "those without principle fell,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "like blind men without a staff!",
+      "indent": 4,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Resolute Anna brought the resolution",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "to change the name to *Dravidar Kazhagam*",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "at the conference where warriors gathered!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     }
+    ],
+    "sourceScans": [
+     17,
+     18
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "When Mahatma Gandhi, by the path of righteousness,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "removed British rule,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "rejecting Periyar's declaration of it as a day of sorrow,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Anna began his battle!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "“This is a day of joy! This is a sweet day!",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "Indians reduced to bone and skin,",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "through the grace of loving Gandhi, today",
+      "indent": 0,
+      "sourceScan": 18,
+      "printedPage": 16
+     },
+     {
+      "text": "have risen, cutting the shackles of slavery!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Let us lift the drum of freedom and make it thunder!”",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "So Anna said, that very day...",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "From that day, in the bond between Anna and Ayya,",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "a scratch appeared;",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "in the year forty-nine it turned into separation.",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Like the full moon breaking out through cloud,",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "he made the *Munnetra Kazhagam* bud forth!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Unable to remain together with the Leader,",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "when he came out",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "with the majority of comrades,",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "our unshaken Anna said that day —",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     }
+    ],
+    "sourceScans": [
+     18,
+     19
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "it —",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "it feels, *amma*, as though he said it only yesterday!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "“The Munnetra Kazhagam has no Leader —",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "the chair where my Leader sat will remain empty!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Someday he — the Leader — will come and sit in it..",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Until then, I shall wait,” he said.",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Like a flower-garden in bloom",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "shedding its morning dew,",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "the waiting crowd that heard him",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "shed tears.",
+      "indent": 4,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "“O drops of tears! O pupils of the nation's eye!” he called them,",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     }
+    ],
+    "sourceScans": [
+     19
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "and marshalled them to shed red blood!",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Has anyone ever heard of such a thing?",
+      "indent": 0,
+      "sourceScan": 19,
+      "printedPage": 17
+     },
+     {
+      "text": "Has anyone ever spoken of such a thing?",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "Within eighteen years, a movement —",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "like a tiger crouching, then springing — came to rule the land?",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "Not even two years had passed since my Anna took the reins —",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "and many noble deeds had taken effect!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "To give uplift to all the farmers of the plough,",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "to heap up for them a life of beauty — he set himself to the task!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "The President of the Republic, of soaring renown,",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "who came to inaugurate the World Tamil Conference,",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "“I have seen a matchless sight, I have seen majesty;",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "in all my life I have never seen anything like this,”",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "said in praise — for the land to applaud — of Anna's glory!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "Brahmananda Reddy of Andhra too:",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "“Ah! You are the true Gandhian himself!” —",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "he adored him thus — before even a year had passed!",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     }
+    ],
+    "sourceScans": [
+     19,
+     20
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "“You are making prohibition rigorous; in many",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "states they have washed their hands of it and tied pots upon the trees!",
+      "indent": 4,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "You are the Mahatma's own manifestation.”",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "Giri — does that not mean a mountain? — over that",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "whole mountain our Anna became the cloud!",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "That is the meaning of the greeting V. V. Giri gave.",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "A world-renowned great scholar stood praising him — that day,",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "the one who had stood as the summit of the South —",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "what did he say",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "of Anna?",
+      "indent": 0,
+      "sourceScan": 20,
+      "printedPage": 18
+     },
+     {
+      "text": "The scholar of ancient Tamil, the man of Pallavaram —",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "stood entranced by Anna's ancient-Tamil speech —",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "a thousand were the words of praise that Maraimalai gave.",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "Pasumalai Bharathi — Pandyan in bearing — him",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "the whole land calls *Navalar* — he said:",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "“To guard the Tamil land fallen through the *sazhakkar*,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "a leader without stain in his heart has been found!”",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "Thus did he speak Anna's greatness that day!",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     }
+    ],
+    "sourceScans": [
+     20,
+     21
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "Two thousand years ago too, as young as she is today,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "Mother Tamil — though, so that she might live",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "for years upon years, a hundred-thousand crores, say,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "she gave birth to poets who made a thousand books —",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "our mother, goddess of the arts,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "gave birth to Valluvar as her foremost son.",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     }
+    ],
+    "sourceScans": [
+     21
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "If flower — the lotus alone;",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "if king — Karikalan;",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "if book — the *Tirukkural* alone:",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "the book of virtue praised in such words",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "he gave; and all humankind rejoiced!",
+      "indent": 4,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "Beside mountains that strike the sky —",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "like poison-trees rising, whether our eyes see them or not —",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "in the life of a cultivated Tamil people,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "all those doctrines that wounded the back",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "sprang up there!",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "In the Tamil land where the Kural rang out, seeing no castes,",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "midway there came, *amma*, castes by the many crores!",
+      "indent": 0,
+      "sourceScan": 21,
+      "printedPage": 19
+     },
+     {
+      "text": "Sanctuaries fragrant with knowledge disappeared;",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "they came to see temples where a thousand gods dwell.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     }
+    ],
+    "sourceScans": [
+     21,
+     22
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "People with no sense of language, creatures of mere mouth-sense —",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "whether Tamil died or lived, what was that to them?",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "In the great land where the path of virtue had stood as the goal,",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "they sowed other paths; they heaped up error.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Like a field gone without rain, the Tamil heart changed.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Envy — desire — anger — hurtful speech:",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "as though no work could be done without these four,",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "some Tamils carried on!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "“There is no world for those without wealth” —",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "in the land that had amassed wealth and flourished,",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "today darkness thickened; misery planted its flag there.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Mother Tamil withered — a song of sorrow",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Mother Tamil sang; in scorching fire",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Mother Tamil danced...",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "She ran.. she ran.. not one path could she find!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Leaving the town of earth, he lives in the town of fame —",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "the great sovereign of the town of poetry, the Master of the Kural!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "Going there, she said, “Precious son!",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "I have come with one request.”",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "“What is it, *amma*?” asked the Kural-one.",
+      "indent": 4,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "“In Tamil Nadu, wherever one digs, gold comes forth;",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "you must be born again,” she said.",
+      "indent": 0,
+      "sourceScan": 22,
+      "printedPage": 20
+     }
+    ],
+    "sourceScans": [
+     22
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "“To dig for gold?” he asked.",
+      "indent": 4,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "“To make Tamil hearts, all Tamil life,",
+      "indent": 4,
+      "sourceScan": 22,
+      "printedPage": 20
+     },
+     {
+      "text": "gold,” she said.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“What has happened today?” he asked.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“Danger has come to the mountain-like language,” she said;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“The poor man has no hut to go to,” he said;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“Not knowing how to raise the rod sternly and cast it gently,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "the killing staff has risen,” she said; and she told him too",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "of those calf-like in intellect talking useless tales.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "Wiping her weeping eyes,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "nectar-tongued Valluvar asked,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“Amma, where shall I be born?”",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "She kissed the crown of the son who bowed,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "and with arms like the hanging roots of a banyan.. embraced him.",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“A ploughed field shall not dry for want of seedlings",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     }
+    ],
+    "sourceScans": [
+     22,
+     23
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "anymore” — thinking so,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "like a farmer whose heart rejoices,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "her whole heart swelled and leapt;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "to pour gruel into the parched stomach —",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "“O rock-candy! O honey-syrup! O Tirukkural!",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "Be born in Kanchi!” she said.",
+      "indent": 4,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "He was born as our Anna;",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "as the king of reason,",
+      "indent": 4,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "as the breeze from Pothigai mountain,",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "as the fresh fragrance",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "of Tamil feeling budding into flower,",
+      "indent": 4,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "as the meaning within a *pathigam* —",
+      "indent": 0,
+      "sourceScan": 23,
+      "printedPage": 21
+     },
+     {
+      "text": "as the *purappāṭṭu* of the ancient Tamils,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "Anna came and rose — like a ray",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "rising on the eastern horizon —",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "to sing his fame,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "I too, the younger brother he raised,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "taking the Tamil he gave,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "have come here — this is the truth —",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "They call him Leader; they call him philosopher;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "they call him actor; they call him king of drama;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "they say he possessed the power of speech and the savour of writing.",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     }
+    ],
+    "sourceScans": [
+     23,
+     24
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "They call him man; they call him ruby; they call him Minister of the State.",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "They call him mother; they call him guardian of precious speech;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "they call him politician — all of these,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "if there is no time to say them one by one — out of the love in the heart,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "let them call him by the single word",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "“Anna” — for so",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "his mother gave him the name too.",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "To honour that lineage of mothers:",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "a statue for Avvai;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "a statue for Kannagi, who nurtured virtue;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "a statue for Bharathi of the unbending heart,",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "and for Bharathidasan of the unbowing head;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     }
+    ],
+    "sourceScans": [
+     24
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "a statue for Veerama Munivar;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "a statue for Caldwell and Pope;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "a statue for Kambar;",
+      "indent": 0,
+      "sourceScan": 24,
+      "printedPage": 22
+     },
+     {
+      "text": "a statue for the Tamil who bravely sailed the ship;",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "a statue for Tiruvalluvar, to spread the Kural to all eight directions.",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "By setting up ten statues — so the world might know",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "the attachment Anna held for the Tamil people;",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "when a statue for that Anna",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "was set up in Chennai..",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "he stood with only his index finger raised..",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "We thought: our Anna is giving an order.",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "Alas! Only today do we understand",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "that with one finger he was saying,",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "“I shall live only one more year!”",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "Our Anna.. O king of hearts...",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     }
+    ],
+    "sourceScans": [
+     24,
+     25
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "You told us,",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "“He who has a younger brother fears no army”;",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "leaving us behind, why did you continue",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "that great journey...?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "We grew in the warm glow of your eyes!",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "Why did you turn all our eyes into ponds?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "We thought you yourself were our shade; but you",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "went beneath the earth by the sea seeking shade — is that just?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "Saying, “I am the good pearl,”",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "are you sleeping on the seashore?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "Why have you curled up the tongue",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "that poured out resonant music?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     }
+    ],
+    "sourceScans": [
+     25
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "With the movement of your finger, in the world of letters,",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "you worked wonders; why",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "have you folded that finger?",
+      "indent": 0,
+      "sourceScan": 25,
+      "printedPage": 23
+     },
+     {
+      "text": "I have seen the great beauty",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "of you thinking with your eyes closed.. today,",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "what cruelty is this — the earth has closed over you,",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "stopping us from seeing you!",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "You found an end to cruelty; why did you go,",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "subjecting us to cruelty?",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "You said we need a heart that can bear anything:",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     }
+    ],
+    "sourceScans": [
+     25,
+     26
+    ]
+   },
+   {
+    "lines": [
+     {
+      "text": "what heart have we, Anna, to bear this too?",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "Enough of taking the sea breeze",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "on the shore, Anna!",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "Rise and come, our Anna!",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "You will not come; you will not come;",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "we know nature's conspiracy, Anna. Until",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "I come seeking the place where you are,",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "lend me your heart, Anna..",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "When I come, I shall bring it in my hand",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     },
+     {
+      "text": "and place it at your foot-flowers, Anna...",
+      "indent": 0,
+      "sourceScan": 26,
+      "printedPage": null
+     }
+    ],
+    "sourceScans": [
+     26
+    ]
+   }
+  ],
+  "lineCount": 345
+ },
+ "poemScans": [
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26
+ ]
+}

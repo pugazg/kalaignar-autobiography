@@ -179,6 +179,10 @@ export interface LibraryWork {
 }
 
 // ── The catalog ──────────────────────────────────────────────────────────────
+// Phase 4 (Poetry) onboards ONE poem — இதயத்தைத் தந்திடு அண்ணா — onto the same
+// envelope with its own `poem` reader structure, opening the கவிதைகள் shelf. It
+// changes no existing entry.
+//
 // Phase 1 exposed exactly the three already-public collections. Digital Library
 // Phase 2 onboards ONE additional work — the Manohara screenplay/dialogue booklet
 // — onto the same shared envelope (its own `scene` reader; source-faithful Tamil +
@@ -411,6 +415,47 @@ export const LIBRARY_WORKS: LibraryWork[] = [
       note: "Nationalisation applies to Kalaignar's underlying Tamil speech; it does not extend to the project-created English translation or to third-party edition material (the 1949 publisher's imprint, advertisements, cover/design).",
     },
     provenanceHref: "/speeches/arappor/source",
+  },
+  {
+    // Digital Library Phase 4 — Poetry. First benchmark, and the first work on the கவிதைகள் shelf.
+    // Owner-directed move to a new category: Phase 3 (Speeches) is ACTIVE but PAUSED after three
+    // benchmarks. A poem gets its OWN reader structure ("poem") — verse is not speech prose — while
+    // staying inside the same shared catalog envelope.
+    id: "idhayathai-thanthidu-anna",
+    slug: "idhayathai-thanthidu-anna",
+    titleTa: "இதயத்தைத் தந்திடு அண்ணா",
+    titleEn: "Lend Me Your Heart, Anna",
+    shelf: "poetry",
+    subtype: "poem",
+    readerStructure: "poem",
+    href: "/poems/idhayathai-thanthidu-anna",
+    state: "published",
+    descTa: "9.2.1969 சென்னை வானொலியில் பேரறிஞர் அண்ணாவுக்கு அளித்த கண்ணீர்க் கவிதாஞ்சலி",
+    descEn: "A poetic tribute to Perarignar Anna, offered on Chennai Radio on 9 February 1969",
+    sourceRepo: "pugazg/kalaignar-poems",
+    sourcePath: "poems/idhayathai-thanthidu-anna",
+    sourceCommit: "42c156d7242fa799ea80adbb0c5f2b9eba078fe9",
+    // `edition` is deliberately UNSET. The controlling scan carries NO standalone publication-year
+    // or edition statement, and the 15.9.2008 foreword date is a foreword-internal third-party date
+    // that must never become a publication/edition year. A field is never filled merely because the
+    // type allows it — the source context (9.2.1969, Chennai Radio) lives on the provenance page.
+    tamil: "complete",
+    english: "complete",
+    // RELEASE-COMPLETE translation created for this project from the verified Tamil.
+    englishKind: "project-created",
+    // unitCount intentionally UNSET — the source prints no numbered poem divisions, and a derived
+    // line or stanza count must never be presented as printed source structure.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil poem; it does not extend to the project-created English translation, nor to third-party material in the booklet (the என்னுரை foreword, photographs and captions, the publisher/donor advertisement and back matter, the printer imprint, cover/design).",
+    },
+    provenanceHref: "/poems/idhayathai-thanthidu-anna/source",
   },
 ];
 
