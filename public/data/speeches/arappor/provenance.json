@@ -1,0 +1,104 @@
+{
+ "workId": "arappor",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/arappor",
+ "sourceCommit": "1ef73a709a343390befe55dcdfb029427f527bf4",
+ "source": {
+  "publicationTitleTa": "அறப்போர்",
+  "authorTa": "மு. கருணாநிதி",
+  "editionTa": "இரண்டாம்பதிப்பு ஏப்ரல் 1949",
+  "publicationDate": "1949-04",
+  "publisherTa": "அறிவுப்பண்ணை",
+  "publisherLocationTa": "சென்னை - 1",
+  "printerTa": "மூர்த்தி பிரிண்டிங் ஒர்க்ஸ், சென்னை - 1",
+  "printerLocationTa": "சென்னை - 1",
+  "coverPriceTa": "விலை அணா மூன்று",
+  "scanFilename": "TVA_BOK_0064122_அறப்போர்.pdf",
+  "scanTotalPages": 22,
+  "speechScanPages": "4–20",
+  "frontMatterScanPages": "1–3",
+  "advertisementScanPages": "21–22",
+  "scanSha256": "8172cf4f04e804ebbcfe1b1e236c9d41bda2e07377952c162be4e4bb098ce01c",
+  "scanFileSizeBytes": 31769752,
+  "printedSpeechPages": "3–19",
+  "publisherAddressTa": "6, மங்கம்மாள் தெரு, (மிண்ட் போஸ்ட்), சென்னை - 1",
+  "speechFactsNotStated": [
+   "Speech date — not stated in the examined source. April 1949 is the second edition's publication date and is NOT used as a speech date.",
+   "Venue — not stated in the examined source; none is inferred.",
+   "Event / occasion / audience — not stated in the examined source; none is inferred."
+  ],
+  "speechFactsNoteEn": "The examined scan states no speech date, venue or event on its cover, title or imprint pages. These remain unset pending independent source evidence; the Digital Library does not infer them."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true,
+  "method": "manual transcription with a strict line-by-line visual fidelity re-audit of all 17 speech pages (4 batches), consolidated",
+  "note": "Tamil is the authoritative strict-verified layer; source-supported spelling, punctuation, unusual and possibly erroneous printed forms are preserved rather than normalized."
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation",
+  "language": "en",
+  "from": "strict-verified Tamil (transcription-ta.md)",
+  "verified": true,
+  "note": "Project-created, source-linked; rhetoric, repetition, historical references and polemical language preserved. Translator/source notes are carried as notes, never as speech prose."
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 49,
+  "tamilUnresolvedGroupRuns": 22,
+  "englishParagraphs": 76,
+  "tamilSourceTextSegments": 76,
+  "englishSourceTextSegments": 76,
+  "tamilCrossPageParagraphs": 5,
+  "englishCrossPageParagraphs": 0,
+  "sourcePagesCovered": 17,
+  "boundaryAudit": {
+   "tamilTransitions": 16,
+   "sameParagraph": 5,
+   "paragraphBoundary": 0,
+   "headingBoundary": 0,
+   "unknownParagraphRelation": 11,
+   "lexicalJoinNone": 0,
+   "lexicalJoinSpace": 5,
+   "lexicalJoinUnknown": 0
+  },
+  "englishBoundaryAudit": {
+   "englishAnchors": 17,
+   "paragraphBoundary": 16,
+   "headingNoteBoundary": 1,
+   "sameParagraphContinuations": 0,
+   "note": "Every English printed-page anchor (3-19) has an EXPLICIT EN_BOUNDARY entry classified from the released translation structure — the printed title and the translator's own blank-separated blocks — NEVER from punctuation. Anchors are provenance only. Translator/source notes are carried verbatim from the translation's own trailing notes section. English paragraph structure is never projected back onto Tamil."
+  },
+  "note": "Section headings are printed in the source. A source-page boundary is NOT a paragraph boundary; paragraph relations are taken ONLY from what the source archive establishes — never from punctuation, sentence completion, semantic continuity or speaker count, and never from any downstream inspection of the scan. The archive documents five genuine cross-page word splits, which prove the printed paragraph continued at those five boundaries; because consolidation already reassembled each word into the preceding page, the remaining segment join there is an ordinary word boundary (space), not a mid-word join. For the other eleven transitions the archive records no printed-paragraph relation at all, so they remain UNRESOLVED and render neutrally."
+ },
+ "blockers": [
+  {
+   "item": "unresolved-paragraph-relationship",
+   "count": 11,
+   "detail": "11 printed-page boundaries for which the source archive records no printed-paragraph relation: it establishes neither that the printed paragraph continues nor that a new one begins. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule. No relation is inferred here from punctuation, sentence completion, semantic continuity or speaker count.",
+   "resolution": "Resolution requires an upstream source-archive visual review of the controlling scan TVA_BOK_0064122_அறப்போர்.pdf (speech PDF pp.4–20 / printed pp.3–19) that explicitly records the printed paragraph relation for these transitions. The source PDF is not vendored here, and this Digital Library integration does not establish those typographic facts independently."
+  }
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The 1949 second edition's own publisher/printer/price data is a source/edition fact, distinct from and not a statement of the present rights of Kalaignar's underlying speech.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored speech. It does not extend to the project-created English translation, or to third-party edition material — publisher advertisements, cover/design, imprint or annotations — which retain their own provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created) with its own distinct provenance.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the scanned second-edition booklet (April 1949); only the speech body — PDF pages 4–20 / printed pages 3–19 (17 pages) — is transcribed. PDF 1–3 (cover, title page, imprint) and PDF 21–22 (publisher advertisements / back matter) are NOT speech body. The source PDF is not vendored.",
+  "The examined source states NO speech date, NO venue and NO event. These are source facts, not implementation blockers: they are carried as unset and documented on this page. April 1949 is the edition's publication date and is never presented as the speech date.",
+  "Tamil is the strict-verified source transcription; English is the verified-complete faithful reading translation made from it. Neither was edited during import; source-supported difficult and possibly erroneous printed forms are preserved exactly as released, and translator/source notes are carried as notes.",
+  "Of the 16 printed-page transitions, the archive establishes 5 as continuations via documented cross-page word splits (`மௌனம்`, `நடராஜன்`, `அதற்காக`, `சுப்பராயன்`, `கடைசியாக`) and records no printed-paragraph relation for the other 11, which stay UNRESOLVED and render neutrally. There are 0 source-established clean paragraph boundaries — a statement about the archive's silence, not an inference.",
+  "Because consolidation already reassembled each split word into the preceding page's text, those five segment boundaries join with a single space; encoding them as mid-word joins would corrupt the rendered text."
+ ]
+}

@@ -84,18 +84,24 @@ export default function SpeechReader({ slug }: { slug: string }) {
           <>
             <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{speech.title.en}</p>
             <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-ink/55 dark:text-night-text/55">
-              <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5" aria-hidden /> {formatDate(speech.date, ta)}
-              </span>
+              {/* Chips render ONLY for facts the source establishes. A source that states no speech
+                  date simply has no date chip — never a publication date, a guess or an empty slot. */}
+              {speech.date && (
+                <span className="inline-flex items-center gap-1.5">
+                  <Calendar className="h-3.5 w-3.5" aria-hidden /> {formatDate(speech.date, ta)}
+                </span>
+              )}
               {/* Assembly speeches show the legislature (Landmark); public speeches show the
                   source-established venue (MapPin). No fake legislature/event is shown for a public
                   speech, and no event is shown unless the source establishes one. */}
               {speech.subtype === "public-speech" ? (
                 <>
-                  <span className="inline-flex items-center gap-1.5">
-                    <MapPin className="h-3.5 w-3.5" aria-hidden />
-                    <span lang={lang}>{ta ? speech.venue.ta : speech.venue.en}</span>
-                  </span>
+                  {speech.venue && (
+                    <span className="inline-flex items-center gap-1.5">
+                      <MapPin className="h-3.5 w-3.5" aria-hidden />
+                      <span lang={lang}>{ta ? speech.venue.ta : speech.venue.en}</span>
+                    </span>
+                  )}
                   {speech.event && <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>}
                 </>
               ) : (
@@ -111,6 +117,13 @@ export default function SpeechReader({ slug }: { slug: string }) {
             <p className="mt-1.5 text-xs text-ink/50 dark:text-night-text/50" lang={lang}>
               {speakerLine(speech, ta)}
             </p>
+            {/* One concise source-honest line when the source states no date/venue — the provenance
+                page carries the full record, so the reading page stays undominated by absence. */}
+            {absentFactsNote(speech, ta) && (
+              <p className="mt-1 text-xs italic text-ink/40 dark:text-night-text/40" lang={lang}>
+                {absentFactsNote(speech, ta)}
+              </p>
+            )}
 
             <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
               <ShareButtons title={`${speech.title.ta} · ${speech.title.en}`} path={`/speeches/${slug}`} />
@@ -152,8 +165,8 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {speech && (
           <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
             {ta
-              ? `${speakerName(speech, true)} · ${speechContext(speech, true)}, ${formatDate(speech.date, true)}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
-              : `${speakerName(speech, false)} · ${speechContext(speech, false)}, ${formatDate(speech.date, false)}. Transcribed and verified against the printed source. `}
+              ? `${provenanceLine(speech, true)} அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
+              : `${provenanceLine(speech, false)} Transcribed and verified against the printed source. `}
             <Link href={`/speeches/${slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
               {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
             </Link>
@@ -333,11 +346,46 @@ function speakerLine(s: Speech, ta: boolean): string {
   return s.subtype === "public-speech" ? `${role} ${name}` : `${name} — ${role}`;
 }
 
-// The context shown in the provenance line: legislature for an assembly speech, venue for a public
-// speech.
+// The context shown in the provenance line: legislature for an assembly speech, the source-stated
+// venue for a public speech — or, when the source states none, the neutral speech-kind label.
 function speechContext(s: Speech, ta: boolean): string {
-  if (s.subtype === "public-speech") return ta ? s.venue.ta : s.venue.en;
+  if (s.subtype === "public-speech") {
+    if (s.venue) return ta ? s.venue.ta : s.venue.en;
+    return ta ? "பொது உரை" : "Public speech";
+  }
   return ta ? s.legislature.nameTa : s.legislature.nameEn;
+}
+
+// Build the provenance line from ONLY the parts the source establishes, so it stays grammatical
+// when a speech has no stated date (and, for a public speech, no stated venue):
+//   "M. Karunanidhi · Tamil Nadu Legislative Assembly, 9 September 1970."
+//   "M. Karunanidhi · Public speech."
+// It never emits "null", "undefined" or a dangling comma.
+function provenanceLine(s: Speech, ta: boolean): string {
+  const parts = [speechContext(s, ta)];
+  if (s.date) parts.push(formatDate(s.date, ta));
+  return `${speakerName(s, ta)} · ${parts.join(", ")}.`;
+}
+
+// One concise, source-honest sentence when the examined source states neither a date nor a venue.
+// The provenance page carries the full documentation; the reading page just avoids silent absence.
+function absentFactsNote(s: Speech, ta: boolean): string | null {
+  const noDate = !s.date;
+  const noVenue = s.subtype === "public-speech" && !s.venue;
+  if (!noDate && !noVenue) return null;
+  if (noDate && noVenue) {
+    return ta
+      ? "இவ்வுரையின் தேதியையோ இடத்தையோ பரிசோதிக்கப்பட்ட மூலம் குறிப்பிடவில்லை."
+      : "Speech date and venue are not stated in the examined source.";
+  }
+  if (noDate) {
+    return ta
+      ? "இவ்வுரையின் தேதியைப் பரிசோதிக்கப்பட்ட மூலம் குறிப்பிடவில்லை."
+      : "The speech date is not stated in the examined source.";
+  }
+  return ta
+    ? "இவ்வுரையின் இடத்தைப் பரிசோதிக்கப்பட்ட மூலம் குறிப்பிடவில்லை."
+    : "The speech venue is not stated in the examined source.";
 }
 
 function formatDate(iso: string, ta: boolean) {

@@ -24,11 +24,20 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const s = loadSpeech(params.slug);
   if (!s) return { title: "Speech — உரை | Kalaignar Digital Library" };
   const title = `${s.title.ta} — ${s.title.en} | Kalaignar Digital Library`;
-  // Context is subtype-specific: the legislature for an assembly speech, the venue for a public
-  // speech (never a fabricated legislature/event for a public speech).
-  const context =
-    s.subtype === "public-speech" ? s.venue.en : `${s.legislature.nameEn}${s.event?.en ? ` (${s.event.en})` : ""}`;
-  const description = `${s.title.en} — Kalaignar M. Karunanidhi's ${s.date} speech at ${context}. Original verified Tamil with a source-linked English translation.`;
+  // Description is built ONLY from source-established facts. A speech whose source states no date
+  // or venue must never be described as "the <year> speech" or "speech at undefined": the date and
+  // place clauses are simply omitted, and a publication/edition date is never used as a speech date.
+  const clauses: string[] = [];
+  if (s.date) clauses.push(`${s.date} speech`);
+  if (s.subtype === "public-speech") {
+    if (s.venue) clauses.push(`at ${s.venue.en}`);
+  } else {
+    clauses.push(`at ${s.legislature.nameEn}${s.event?.en ? ` (${s.event.en})` : ""}`);
+  }
+  const what = clauses.length
+    ? `Kalaignar M. Karunanidhi's ${clauses.join(" ")}`
+    : `a verified ${s.subtype === "public-speech" ? "public speech" : "speech"} by Kalaignar M. Karunanidhi`;
+  const description = `${s.title.en} — ${what}. Original verified Tamil with a source-linked English translation.`;
   return { title, description, openGraph: { title, description }, twitter: { title: s.title.en, description } };
 }
 
