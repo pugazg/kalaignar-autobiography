@@ -130,8 +130,8 @@ export default function SpeechReader({ slug }: { slug: string }) {
                   ? "இது மூலத் தமிழுடன் இணைக்கப்பட்ட, சரிபார்க்கப்பட்ட நம்பகமான ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
                   : "A verified, source-linked faithful English reading translation. The Tamil original remains authoritative."
                 : ta
-                  ? "கீழே அச்சிட்ட 1970 நூலின்படி சரிபார்க்கப்பட்ட மூல தமிழ் உரை — மாற்றமின்றி; அச்சுத் தலைப்புகளும் பக்க எல்லைகளும் தக்கவைக்கப்பட்டுள்ளன."
-                  : "Below is the verified original Tamil, faithful to the printed 1970 booklet — printed section headings and source-page boundaries preserved."}
+                  ? "கீழே அச்சிட்ட நூலின்படி சரிபார்க்கப்பட்ட மூல தமிழ் உரை — மாற்றமின்றி; அச்சுத் தலைப்புகளும் பக்க எல்லைகளும் தக்கவைக்கப்பட்டுள்ளன."
+                  : "Below is the verified original Tamil, faithful to the printed source booklet — printed section headings and source-page boundaries preserved."}
             </p>
           </>
         )}
