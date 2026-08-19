@@ -153,23 +153,32 @@ function parseTamil(text) {
   return blocks;
 }
 
-// ── EXPLICIT English anchor audit (EN_BOUNDARY) — NO punctuation heuristic ──────────────────────
-// The verified translation supplies its OWN paragraph structure (blank-separated blocks); each
-// "### PDF page N — printed page M" marker is PROVENANCE only, never a paragraph boundary in
-// itself. Every printed-page anchor 3-19 is classified explicitly:
-//   "heading-boundary"   — the anchor is adjacent to the printed `#### Arappor` title (printed p.3).
-//   "paragraph-boundary" — the default: the anchor sits between two distinct translator paragraphs.
-// Arappor's English keeps its translator/source notes in a separate "## Translator/source notes"
-// section rather than inline, so no anchor is note-adjacent and no cross-anchor sentence
-// continuation is asserted. English structure is never projected back onto Tamil.
+// ── EXPLICIT English anchor audit (EN_BOUNDARY) — manually audited, NO runtime punctuation rule ──
+// Every printed-page anchor 3-19 is classified from a complete read of the released translation.
+// The verified English carries most translator paragraphs ACROSS the page anchor, and marks that
+// itself: the fragment before the anchor ends with an em dash and the fragment after it begins with
+// one (p.6→7 uses a paired quote+dash). That paired-dash bracketing is the translation's own
+// continuation device, recorded here as an audited table — it is NOT re-derived from punctuation at
+// runtime; the table below is the authority and drives paragraph assembly.
+//
+//   "heading-boundary"   — printed p.3, where the printed `#### Arappor` title opens the speech.
+//   "same-paragraph"     — 15 anchors where one translator paragraph continues across the break.
+//   "paragraph-boundary" — printed p.11 ONLY: printed p.10 closes the marriage/prostitute analogy
+//                          with a full stop ("...placed here in Tamil Nadu.") and p.11 opens a new
+//                          translator paragraph ("There are facilities for studying Hindi—...").
+//
+// JOIN — the two fragments are already verbatim and each carries its own em dash, so the segments
+// abut with NOTHING inserted (`join: "none"`). Adding a space would inject a character the released
+// text does not contain; deleting either dash would alter the verified translation. Neither is done.
 const EN_BOUNDARY = {};
-for (let p = 3; p <= 19; p++) EN_BOUNDARY[p] = { rel: "paragraph-boundary" };
-EN_BOUNDARY[3] = { rel: "heading-boundary" };
+for (let p = 3; p <= 19; p++) EN_BOUNDARY[p] = { rel: "same-paragraph", join: "none" };
+EN_BOUNDARY[3] = { rel: "heading-boundary" };   // the printed title opens the speech
+EN_BOUNDARY[11] = { rel: "paragraph-boundary" }; // the single clean page-transition paragraph break
 
 function parseEnglish(text) {
   const body = text.split("## Speech body")[1].split("\n## ")[0];
   const blocks = [];
-  let printedPage = null, para = null, started = false;
+  let printedPage = null, pendingAnchor = null, para = null, started = false;
   const flush = () => {
     if (para) {
       para.sourcePages = [...new Set(para.segments.map((s) => s.sourcePage).filter((p) => p != null))].sort((a, b) => a - b);
@@ -181,14 +190,25 @@ function parseEnglish(text) {
   for (const raw of body.split("\n")) {
     const line = raw.replace(/\s+$/, "");
     let m;
-    if ((m = line.match(PAGE_RE))) { started = true; printedPage = Number(m[2]); continue; }
+    if ((m = line.match(PAGE_RE))) { started = true; printedPage = Number(m[2]); pendingAnchor = printedPage; continue; }
     if (!started) continue;
     if (line.trim() === "" || /^-{3,}$/.test(line) || line.trim().startsWith("|")) continue;
-    if ((m = line.match(/^####\s+(.*)$/))) { flush(); blocks.push({ kind: "heading", text: m[1].trim(), sourcePage: printedPage }); continue; }
-    if ((m = line.match(/^>\s?(.*)$/))) { flush(); blocks.push({ kind: "note", text: m[1].trim(), sourcePage: printedPage }); continue; }
+    if ((m = line.match(/^####\s+(.*)$/))) { flush(); blocks.push({ kind: "heading", text: m[1].trim(), sourcePage: printedPage }); pendingAnchor = null; continue; }
+    if ((m = line.match(/^>\s?(.*)$/))) { flush(); blocks.push({ kind: "note", text: m[1].trim(), sourcePage: printedPage }); pendingAnchor = null; continue; }
     if (/^#{1,3}\s+/.test(line)) continue;
-    flush();
-    para = { kind: "paragraph", segments: [{ text: line, sourcePage: printedPage, joinToNext: "end" }], sourcePages: [] };
+    const entry = pendingAnchor != null ? EN_BOUNDARY[pendingAnchor] : null;
+    if (para && entry && entry.rel === "same-paragraph") {
+      // The audited table says ONE translator paragraph spans this anchor: keep the paragraph open
+      // and append the next page's fragment as a further segment, preserving BOTH source pages.
+      para.segments[para.segments.length - 1].joinToNext = entry.join;
+      para.segments.push({ text: line, sourcePage: printedPage, joinToNext: "end" });
+    } else {
+      // A distinct translator paragraph (a blank-separated block, or the one audited clean
+      // page-transition boundary at printed p.11).
+      flush();
+      para = { kind: "paragraph", segments: [{ text: line, sourcePage: printedPage, joinToNext: "end" }], sourcePages: [] };
+    }
+    pendingAnchor = null;
   }
   flush();
   return blocks;
@@ -352,7 +372,7 @@ const provenance = {
       paragraphBoundary: Object.values(EN_BOUNDARY).filter((e) => e.rel === "paragraph-boundary").length,
       headingNoteBoundary: Object.values(EN_BOUNDARY).filter((e) => e.rel === "heading-boundary").length,
       sameParagraphContinuations: Object.values(EN_BOUNDARY).filter((e) => e.rel === "same-paragraph").length,
-      note: "Every English printed-page anchor (3-19) has an EXPLICIT EN_BOUNDARY entry classified from the released translation structure — the printed title and the translator's own blank-separated blocks — NEVER from punctuation. Anchors are provenance only. Translator/source notes are carried verbatim from the translation's own trailing notes section. English paragraph structure is never projected back onto Tamil.",
+      note: "Every English printed-page anchor (3-19) has an EXPLICIT EN_BOUNDARY entry from a complete manual read of the released translation: printed p.3 is the printed-title heading boundary, printed p.11 is the single clean page-transition paragraph boundary (p.10 closes with a full stop and p.11 opens a new translator paragraph), and the other 15 anchors are same-paragraph continuations that the translation itself brackets with paired em dashes. The audited table DRIVES paragraph assembly — it is not re-derived from punctuation at runtime — and both verbatim fragments are preserved with nothing inserted between them. English structure is never projected back onto Tamil.",
     },
     note: "Section headings are printed in the source. A source-page boundary is NOT a paragraph boundary; paragraph relations are taken ONLY from what the source archive establishes — never from punctuation, sentence completion, semantic continuity or speaker count, and never from any downstream inspection of the scan. The archive documents five genuine cross-page word splits, which prove the printed paragraph continued at those five boundaries; because consolidation already reassembled each word into the preceding page, the remaining segment join there is an ordinary word boundary (space), not a mid-word join. For the other eleven transitions the archive records no printed-paragraph relation at all, so they remain UNRESOLVED and render neutrally.",
   },

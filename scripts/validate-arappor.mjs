@@ -160,11 +160,70 @@ check(!evidenceStrings.some((e) => /single[- ]speaker|speaker turn|speaker count
 check(!evidenceStrings.some((e) => /semantic|continuity of thought|reads like|sentence completes|terminal punctuation/i.test(e)), "25e. no transition is justified by semantic continuity or punctuation");
 check(evidenceStrings.filter((e) => /records no printed-paragraph relation/.test(e)).length === 11, "25f. all 11 unresolved transitions cite archive silence as the basis");
 
-// ── ENGLISH ───────────────────────────────────────────────────────────────────
+// ── ENGLISH — prove the GENERATED STRUCTURE, not merely the declared table ────
+// The audited relations for printed-page anchors 3-19: p.3 opens with the printed title, p.11 is
+// the single clean page-transition paragraph boundary, and the other 15 are continuations of ONE
+// translator paragraph across the anchor.
+const EN_CONTINUATIONS = [4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19];
+const EN_CLEAN_BOUNDARY = 11;
+const enParas = speech.english.blocks.filter((b) => b.kind === "paragraph");
 const eba = prov.archiveDerived.englishBoundaryAudit;
-check(eba.englishAnchors === 17, "26. all 17 English printed-page anchors (3–19) explicitly classified");
-check(eba.paragraphBoundary + eba.headingNoteBoundary + eba.sameParagraphContinuations === 17, "26b. English anchor classifications account for every anchor");
-check(/EN_BOUNDARY/.test(importerSrc) && /NEVER from punctuation/.test(importerSrc), "26c. English audit is explicit, with no punctuation heuristic");
+
+check(eba.englishAnchors === 17 && eba.sameParagraphContinuations === 15 && eba.paragraphBoundary === 1 && eba.headingNoteBoundary === 1, "26. English audit: 17 anchors = 15 same-paragraph continuations + 1 clean paragraph boundary + 1 heading boundary");
+
+// Each continuation must actually be assembled into ONE paragraph carrying BOTH source pages.
+let contBad = [];
+for (const tp of EN_CONTINUATIONS) {
+  const para = enParas.find((b) => b.sourcePages.includes(tp) && b.sourcePages.includes(tp - 1));
+  if (!para) { contBad.push(`p${tp - 1}→p${tp} not in one paragraph`); continue; }
+  const idx = para.segments.findIndex((sg, i) => para.segments[i + 1]?.sourcePage === tp);
+  if (idx === -1) { contBad.push(`p${tp - 1}→p${tp} transition not inside the paragraph`); continue; }
+  const a = para.segments[idx], b = para.segments[idx + 1];
+  if (a.sourcePage !== tp - 1 || b.sourcePage !== tp) contBad.push(`p${tp} source pages not preserved`);
+  // Both released fragments must survive verbatim as source lines.
+  if (!srcEn.texts.includes(a.text) || !srcEn.texts.includes(b.text)) contBad.push(`p${tp} fragment not verbatim`);
+}
+check(contBad.length === 0, `26b. all 15 English continuations are assembled into ONE paragraph spanning both source pages, with both fragments verbatim (${contBad.slice(0, 3).join("; ")})`);
+
+// The generated cross-page count must agree with the actual parsed structure.
+const actualCrossPage = enParas.filter((b) => b.segments.length > 1).length;
+check(actualCrossPage === 15 && prov.archiveDerived.englishCrossPageParagraphs === 15, `26c. englishCrossPageParagraphs agrees with the generated blocks (declared ${prov.archiveDerived.englishCrossPageParagraphs}, actual ${actualCrossPage})`);
+check(prov.archiveDerived.englishParagraphs === enParas.length, `26d. englishParagraphs agrees with the generated blocks (${enParas.length})`);
+
+// printed p.11 must NOT be merged with p.10, and must start its own paragraph.
+const merged1011 = enParas.some((b) => b.sourcePages.includes(10) && b.sourcePages.includes(11));
+const p11Own = enParas.some((b) => b.sourcePages.length === 1 && b.sourcePages[0] === 11 && /^There are facilities for studying Hindi/.test(b.segments[0].text));
+check(!merged1011 && p11Own, "26e. printed p.10→p.11 is a clean paragraph boundary: not merged, and p.11 opens its own paragraph");
+
+// printed p.3 heading structure preserved.
+const enHeading = speech.english.blocks.find((b) => b.kind === "heading");
+check(!!enHeading && enHeading.sourcePage === 3 && enHeading.text === "Arappor", "26f. printed p.3 heading structure preserved");
+
+// Nothing lost, nothing duplicated: generated fragments == released fragments, in order.
+const genFragments = [];
+for (const b of speech.english.blocks) {
+  if (b.kind === "paragraph") genFragments.push(...b.segments.map((sg) => sg.text));
+  else if (b.kind === "heading") genFragments.push(b.text);
+}
+check(genFragments.join("␟") === srcEn.texts.join("␟"), `26g. English fragments verbatim and in order — none omitted, none duplicated (${genFragments.length} vs ${srcEn.texts.length})`);
+
+// The join must insert NOTHING: both em dashes stay, so a continuation renders as "—" + "—".
+const renderEn = (p) => p.segments.map((sg, i) => (i === 0 ? "" : p.segments[i - 1].joinToNext === "space" ? " " : p.segments[i - 1].joinToNext === "unknown" ? "␝" : "") + sg.text).join("");
+let joinBad = [];
+for (const tp of EN_CONTINUATIONS) {
+  const para = enParas.find((b) => b.sourcePages.includes(tp) && b.sourcePages.includes(tp - 1));
+  const idx = para.segments.findIndex((sg, i) => para.segments[i + 1]?.sourcePage === tp);
+  if (para.segments[idx].joinToNext !== "none") joinBad.push(`p${tp}=${para.segments[idx].joinToNext}`);
+  const r = renderEn(para);
+  if (!/——|—”“—/.test(r)) joinBad.push(`p${tp} lost a dash on joining`);
+}
+check(joinBad.length === 0, `26h. continuations join with nothing inserted; both verbatim em dashes survive (${joinBad.slice(0, 3).join(",")})`);
+
+// Translator/source note stays a note, never speech prose.
+const enNotes = speech.english.blocks.filter((b) => b.kind === "note");
+check(enNotes.length === 1 && /controlling archival layer/.test(enNotes[0].text) && !genFragments.some((f) => /controlling archival layer/.test(f)), "26i. translator/source note remains a note and never becomes speech prose");
+
+check(/EN_BOUNDARY\[pendingAnchor\]/.test(importerSrc) && /rel === "same-paragraph"/.test(importerSrc), "26j. the audited EN_BOUNDARY table DRIVES paragraph assembly in the importer");
 
 // ── BLOCKERS / DURABLE RESOLUTION ─────────────────────────────────────────────
 check(prov.blockers.length === 1 && prov.blockers[0].item === "unresolved-paragraph-relationship" && prov.blockers[0].count === 11, "27. exactly one blocker class: 11 unresolved paragraph relationships");
