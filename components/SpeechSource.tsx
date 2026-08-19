@@ -103,7 +103,7 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             <dl className="mt-2">
               <Row label={ta ? "மொத்த எல்லைகள்" : "Total transitions"}>{prov.archiveDerived.boundaryAudit.tamilTransitions}</Row>
               <Row label={ta ? "அதே பத்தி (தொடர்ச்சி)" : "Same paragraph (continuation)"}>{prov.archiveDerived.boundaryAudit.sameParagraph}</Row>
-              <Row label={ta ? "பத்தி எல்லை (பேச்சாளர் மாற்றம்)" : "Paragraph boundary (speaker turn)"}>{prov.archiveDerived.boundaryAudit.paragraphBoundary}</Row>
+              <Row label={ta ? "மூலத்தால் உறுதிசெய்யப்பட்ட பத்தி எல்லைகள்" : "Source-established paragraph boundaries"}>{prov.archiveDerived.boundaryAudit.paragraphBoundary}</Row>
               <Row label={ta ? "இணைப்பு: இடைவெளியின்றி / இடைவெளி / தீர்மானிக்கப்படாதது" : "Joins: none / space / unresolved"}>
                 {prov.archiveDerived.boundaryAudit.lexicalJoinNone} / {prov.archiveDerived.boundaryAudit.lexicalJoinSpace} / {prov.archiveDerived.boundaryAudit.lexicalJoinUnknown}
               </Row>
@@ -116,25 +116,45 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
               : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary, and paragraph relationships are NOT inferred from punctuation — every transition is classified in an explicit source-audited table. English paragraph structure is the translator's own; its source-page anchors are provenance only."}
           </p>
           {/* Both blocker classes, explicitly and separately surfaced. */}
+          {/* Blocker presentation. Two things must reach the reader: WHAT is unresolved
+              (`detail`) and HOW it can legitimately be resolved (`resolution`) — the durable
+              source-authority rule. `resolution` was previously never rendered, and the Tamil copy
+              hardcoded a temporary environment observation; both are fixed here. The provenance
+              strings are authored in English, so they are marked lang="en"; Tamil UI gets concise
+              Tamil presentation copy carrying the SAME authority rule (never an availability claim,
+              never an inferred fact). Bounded to the two existing blocker classes. */}
           {prov.blockers?.map((b, i) => {
             const isLexical = b.item === "unresolved-lexical-join";
             return (
-              <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-3 py-2 text-[11px] leading-relaxed text-ink/60 dark:border-white/25 dark:bg-white/[0.03] dark:text-night-text/60" lang={lang}>
-                <span className="font-semibold">
-                  {ta
-                    ? isLexical
-                      ? `தடை — சொல் இணைவு தீர்மானிக்கப்படாத ${b.count} பக்க எல்லைகள்: `
-                      : `தடை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படாத ${b.count} பக்க எல்லைகள்: `
-                    : isLexical
-                      ? `Blocker — ${b.count} unresolved lexical joins: `
-                      : `Blocker — ${b.count} unresolved paragraph relationships: `}
-                </span>
-                {ta
-                  ? isLexical
-                    ? `சரியான அச்சு இடைவெளி/இணைவை மூல scan (${s.scanFilename}) மட்டுமே தீர்மானிக்க முடியும்; இச்சூழலில் கிடைக்கவில்லை — நடுநிலை உள்-வரி குறியீட்டுடன் காட்டப்படுகின்றன (இடைவெளியோ இணைப்போ கூறப்படவில்லை).`
-                    : `அச்சுப் பத்தி உறவை மூல scan (${s.scanFilename}) மட்டுமே தீர்மானிக்க முடியும்; இச்சூழலில் கிடைக்கவில்லை — நடுநிலையாகக் காட்டப்படுகின்றன (பத்தி எல்லையோ தொடர்ச்சியோ கூறப்படவில்லை).`
-                  : b.detail}
-              </p>
+              <div key={i} className="mt-2 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-3 py-2 text-[11px] leading-relaxed text-ink/60 dark:border-white/25 dark:bg-white/[0.03] dark:text-night-text/60">
+                <p lang={lang}>
+                  <span className="font-semibold">
+                    {ta
+                      ? isLexical
+                        ? `தடை — சொல் இணைவு தீர்மானிக்கப்படாத ${b.count} பக்க எல்லைகள்: `
+                        : `தடை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படாத ${b.count} பக்க எல்லைகள்: `
+                      : isLexical
+                        ? `Blocker — ${b.count} unresolved lexical joins: `
+                        : `Blocker — ${b.count} unresolved paragraph relationships: `}
+                  </span>
+                  {ta ? (
+                    isLexical
+                      ? `சரியான அச்சு இடைவெளி/இணைவு தீர்மானிக்கப்படவில்லை. இதைத் தீர்க்க, கட்டுப்படுத்தும் scan-ஐ மூலக் காப்பகமே நேரில் பரிசோதித்து அந்த அச்சு வடிவத்தைப் பதிவுசெய்ய வேண்டும்; இம்மின்னூலகம் அதைத் தானாக நிறுவுவதில்லை. அதுவரை நடுநிலைக் குறியீடு காட்டப்படுகிறது — இடைவெளியோ இணைப்போ கூறப்படவில்லை.`
+                      : `அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை. இதைத் தீர்க்க, கட்டுப்படுத்தும் scan-ஐ மூலக் காப்பகமே நேரில் பரிசோதித்து அந்த அச்சு அமைப்பைப் பதிவுசெய்ய வேண்டும்; இம்மின்னூலகம் அதைத் தானாக நிறுவுவதில்லை. அதுவரை நடுநிலையாகக் காட்டப்படுகிறது — பத்தித் தொடர்ச்சியோ பத்தி எல்லையோ கூறப்படவில்லை.`
+                  ) : (
+                    <span lang="en">{b.detail}</span>
+                  )}
+                </p>
+                {/* The durable resolution rule. Provenance authors it in English, so it is always
+                    marked lang="en"; under Tamil UI it is introduced by a short Tamil label. */}
+                {b.resolution && (
+                  <p className="mt-1.5 text-ink/50 dark:text-night-text/50">
+                    {ta && <span className="font-semibold" lang="ta">{"தீர்வு வழி: "}</span>}
+                    {!ta && <span className="font-semibold" lang="en">{"Resolution: "}</span>}
+                    <span lang="en">{b.resolution}</span>
+                  </p>
+                )}
+              </div>
             );
           })}
         </section>

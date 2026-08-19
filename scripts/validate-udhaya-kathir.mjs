@@ -159,6 +159,31 @@ const expectedUnknown = Object.entries(EXPECT).filter(([, v]) => v[0] === "unkno
 const gotUnknown = vTa.unresolvedBreaks.map((b) => b.toPage).sort((a, b) => a - b);
 check(JSON.stringify(gotUnknown) === JSON.stringify(expectedUnknown), `extra. unresolved-break markers exactly at the ${expectedUnknown.length} unknown paragraph boundaries (${gotUnknown.join(",")})`);
 
+// ── Durable provenance regression (post-merge hotfix) ─────────────────────────────────────────
+const prov = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/speeches/udhaya-kathir/provenance.json"), "utf8"));
+const compSrc = fs.readFileSync(path.join(process.cwd(), "components/SpeechSource.tsx"), "utf8");
+const ENV_PHRASES = ["in this environment", "read-only here", "not accessible", "archive.org"];
+const provAll = JSON.stringify(prov);
+
+// 18. both blocker classes still exist, with their audited counts
+check(Array.isArray(prov.blockers) && prov.blockers.length === 2, "18. both blocker classes present");
+const byItem = Object.fromEntries(prov.blockers.map((b) => [b.item, b]));
+check(byItem["unresolved-paragraph-relationship"]?.count === 7 && byItem["unresolved-lexical-join"]?.count === 5, "18b. blocker counts unchanged: 7 unresolved paragraph relationships, 5 unresolved lexical joins");
+
+// 19. both blockers carry a durable upstream-source-archive resolution
+check(prov.blockers.every((b) => /upstream source-archive visual review/.test(b.resolution || "")), "19. both blocker resolutions state the upstream source-archive review rule");
+
+// 20. no environment-specific availability wording anywhere in generated provenance
+check(ENV_PHRASES.every((ph) => !provAll.includes(ph)), `20. generated provenance contains no environment-specific availability wording (${ENV_PHRASES.join(" / ")})`);
+
+// 21. audited boundary/join counts are frozen by this hotfix
+const ba = prov.archiveDerived.boundaryAudit;
+check(ba.tamilTransitions === 41 && ba.sameParagraph === 31 && ba.paragraphBoundary === 3 && ba.unknownParagraphRelation === 7, "21. boundary audit unchanged: 41 transitions, 31 same-paragraph, 3 source-established boundaries, 7 unresolved");
+check(ba.lexicalJoinNone === 10 && ba.lexicalJoinSpace === 16 && ba.lexicalJoinUnknown === 5, "21b. lexical joins unchanged: none 10 / space 16 / unknown 5");
+
+// 22. shared component regression (Udhaya renders through the same component)
+check(/b\.resolution/.test(compSrc) && !compSrc.includes("இச்சூழலில் கிடைக்கவில்லை") && !/speaker turn|பேச்சாளர் மாற்றம்/.test(compSrc), "22. shared SpeechSource renders resolution, drops the environment sentence and the speaker-turn label");
+
 console.log();
 console.log("RESULT:", fails.length === 0 ? "ALL PASS" : `${fails.length} FAILURE(S)`);
 process.exit(fails.length === 0 ? 0 : 1);
