@@ -65,7 +65,8 @@ const transcript = readText(path.join(SPEECH_DIR, "transcript.md"));
 //                            new sentence in prose; whether it is the SAME printed paragraph or
 //                            a NEW one cannot be established from the archive text and needs the
 //                            controlling scan (TVA_BOK_0065650), which was NOT accessible
-//                            read-only in this environment → BLOCKER, rendered neutrally.
+//                            established only by an upstream source-archive review → BLOCKER,
+//                            rendered neutrally.
 //   join (applies within a same-paragraph continuation):
 //     "none"  — the source splits a WORD across the page → join with NO space;
 //     "space" — an ordinary cross-page word boundary → single space.
@@ -425,13 +426,13 @@ const provenance = {
       item: "unresolved-paragraph-relationship",
       count: auditCounts.unknownParagraphRelation,
       detail: `${auditCounts.unknownParagraphRelation} Tamil source-page boundaries where a sentence completes at the page edge and the next page opens a new sentence: whether the PRINTED PARAGRAPH continues or a new one begins cannot be established from the archive text. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule.`,
-      resolution: "Read-only inspection of the controlling scan TVA_BOK_0065650_உதயக்_கதிர்.pdf (speech pp.5–46). Not accessible read-only in this environment (not on archive.org / tamildigitallibrary.in); the source PDF is not vendored.",
+      resolution: "Resolution requires an upstream source-archive visual review of the controlling scan TVA_BOK_0065650_உதயக்_கதிர்.pdf (speech scan pp.5–46) that explicitly records the printed paragraph relation for these transitions. The source PDF is not vendored here, and this Digital Library integration does not establish those typographic facts independently.",
     },
     {
       item: "unresolved-lexical-join",
       count: auditCounts.joinUnknown,
       detail: `${auditCounts.joinUnknown} Tamil cross-page joins (sandhi compounds) where the exact printed JOINED-vs-SPACED form cannot be established from the archive text. Encoded as joinToNext "unknown" (NOT silently "space") and rendered with a neutral inline source-page marker between the two fragments — asserting neither a space nor a concatenation.`,
-      resolution: "Same controlling scan; not accessible read-only in this environment.",
+      resolution: "Resolution requires the same upstream source-archive visual review of the controlling scan to establish the exact printed joined-vs-spaced form. This Digital Library integration does not establish that lexical join independently.",
     },
   ],
   // Present project-level rights status of the UNDERLYING Kalaignar-authored work (Tamil:
@@ -460,7 +461,7 @@ const provenance = {
     "The controlling source is the scanned 1970 booklet; only scan pages 5–46 are the Assembly speech (1–4 front matter, 47–48 advertisements).",
     "Tamil is the verified source transcription; English is the verified faithful reading translation placed after the complete Tamil. Neither was edited during import.",
     "Printed section headings are preserved. Every Tamil source-page transition is classified in an explicit source-audited boundary table (NOT inferred from punctuation): a source-page boundary is not a paragraph boundary; one logical paragraph may span several source pages via per-page text segments, each retaining its source page; mid-word page splits join with no space.",
-    "TWO BLOCKER CLASSES (both rendered neutrally, neither guessed): (A) unresolved PARAGRAPH RELATIONSHIPS at sentence-completed page boundaries — encoded as unresolved-break, not a paragraph; (B) unresolved LEXICAL JOINS at sandhi cross-page boundaries — encoded as joinToNext 'unknown', not silently spaced. Both need the controlling scan TVA_BOK_0065650 (not accessible read-only here; source PDF not vendored).",
+    "TWO BLOCKER CLASSES (both rendered neutrally, neither guessed): (A) unresolved PARAGRAPH RELATIONSHIPS at sentence-completed page boundaries — encoded as unresolved-break, not a paragraph; (B) unresolved LEXICAL JOINS at sandhi cross-page boundaries — encoded as joinToNext 'unknown', not silently spaced. Both can only be settled by an upstream source-archive visual review of the controlling scan TVA_BOK_0065650 that explicitly records the printed relation/form; the source PDF is not vendored here and this integration does not establish those facts independently.",
     "English paragraph structure is the verified translation's own blank-separated blocks; `### Source page N` anchors are provenance only, never paragraph boundaries; only the sentence-continuations across an anchor are recorded (EN_BOUNDARY). No punctuation heuristic is used for either language.",
   ],
 };

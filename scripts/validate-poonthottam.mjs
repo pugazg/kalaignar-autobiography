@@ -206,6 +206,25 @@ check(!speakerInference, "25. importer contains NO 'single speaker ⇒ paragraph
 const provText = JSON.stringify(prov);
 check(!/six translator notes|six difficult/i.test(provText) && !provText.includes("மாட்டுப்புறா"), "26. generated provenance encodes no six-note / six-form / superseded-reading state");
 
+// ── Durable provenance + shared-component presentation regression (post-merge hotfix) ─────────
+const SOURCE_COMP = fs.readFileSync(path.join(process.cwd(), "components/SpeechSource.tsx"), "utf8");
+const ENV_PHRASES = ["in this environment", "read-only here", "not accessible read-only", "archive.org"];
+
+// 27. the durable resolution states the upstream source-archive rule
+check(prov.blockers.every((b) => /upstream source-archive visual review/.test(b.resolution || "")), "27. every blocker resolution states the upstream source-archive review rule");
+
+// 28. no environment-specific availability wording survives in generated provenance
+const provAll = JSON.stringify(prov);
+check(ENV_PHRASES.every((ph) => !provAll.includes(ph)), `28. generated provenance contains no environment-specific availability wording (${ENV_PHRASES.join(" / ")})`);
+
+// 29. the shared source component must actually render the durable resolution, and must not carry
+// the retired hardcoded Tamil environment sentence or the Assembly-specific boundary label.
+check(/b\.resolution/.test(SOURCE_COMP), "29. SpeechSource renders blockers[].resolution (durable rule is not discarded)");
+check(/b\.detail/.test(SOURCE_COMP), "29b. SpeechSource still renders blockers[].detail (what is unresolved)");
+check(!SOURCE_COMP.includes("இச்சூழலில் கிடைக்கவில்லை"), "29c. SpeechSource no longer hardcodes the environment-availability sentence");
+check(!/speaker turn|பேச்சாளர் மாற்றம்/.test(SOURCE_COMP), "29d. generic paragraph-boundary label no longer implies a speaker turn");
+check(/Source-established paragraph boundaries/.test(SOURCE_COMP), "29e. paragraph-boundary label is subtype-neutral and source-honest");
+
 console.log();
 console.log("RESULT:", fails.length === 0 ? "ALL PASS" : `${fails.length} FAILURE(S)`);
 process.exit(fails.length === 0 ? 0 : 1);
