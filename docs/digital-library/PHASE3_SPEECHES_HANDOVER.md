@@ -17,7 +17,15 @@ No `mobile/` files, source repositories, or PDFs were modified in any of these a
 >   `4135c29ed3a2ad1322397a68d1f4d4b09c840d45`, squash merge
 >   `acb9721127de72c7575c035ccccf877deeb6421e`, production verified 2026-08-19.
 >
-> **Current implementation `main`: `acb9721127de72c7575c035ccccf877deeb6421e`.**
+> **Last production application-code checkpoint:
+> `acb9721127de72c7575c035ccccf877deeb6421e`** (the PR #21 squash merge).
+>
+> **Live GitHub `main` is authoritative and must always be inspected** — do not treat the SHA above
+> as a permanent claim about the repository's latest commit. This handover-closeout PR is
+> **documentation-only**, so merging it advances repository `main` **without changing the deployed
+> application code**. `acb97211…` therefore identifies the application-code / production checkpoint,
+> not the newest commit on `main`.
+>
 > `/read` publishes **6 works across 5 non-empty shelves**, with **both** speeches on the single
 > **Speeches / உரைகள்** shelf.
 >
