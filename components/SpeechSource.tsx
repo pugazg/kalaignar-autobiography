@@ -50,19 +50,38 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             <Row label={ta ? "நூல் தலைப்பு" : "Publication title"}><span className="font-tamil" lang="ta">{s.publicationTitleTa}</span></Row>
             <Row label={ta ? "ஆசிரியர்" : "Author"}><span className="font-tamil" lang="ta">{s.authorTa}</span></Row>
             <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span> <span className="text-ink/45 dark:text-night-text/45">({s.publicationDate})</span></Row>
+            {s.firstEditionTa && <Row label={ta ? "முதற்பதிப்பு" : "First edition"}><span className="font-tamil" lang="ta">{s.firstEditionTa}</span></Row>}
             <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}, {s.publisherLocationTa}</span></Row>
             <Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}, {s.printerLocationTa}</span></Row>
             <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.coverPriceTa}</span></Row>
             <Row label={ta ? "Scan கோப்பு" : "Scan file"} mono>{s.scanFilename}</Row>
+            {s.scanSha256 && <Row label={ta ? "Scan SHA-256" : "Scan SHA-256"} mono>{s.scanSha256}</Row>}
+            {s.scanFileSizeBytes != null && <Row label={ta ? "Scan அளவு" : "Scan size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>}
             <Row label={ta ? "Scan பக்கங்கள்" : "Scan pages"}>
-              {s.scanTotalPages} {ta ? "மொத்தம்" : "total"} · {ta ? "உரை" : "speech"} {s.speechScanPages} · {ta ? "முன்பகுதி" : "front"} {s.frontMatterScanPages} · {ta ? "விளம்பரம்" : "ads"} {s.advertisementScanPages}
+              {s.scanTotalPages} {ta ? "மொத்தம்" : "total"} · {ta ? "உரை" : "speech"} {s.speechScanPages}
+              {s.printedSpeechPages ? ` (${ta ? "அச்சு" : "printed"} ${s.printedSpeechPages})` : ""} · {ta ? "முன்பகுதி" : "front"} {s.frontMatterScanPages} · {ta ? "பின்பகுதி" : "back"} {s.advertisementScanPages}
             </Row>
           </dl>
+          {/* Page-range wording is subtype-agnostic but PROVENANCE-honest: a printed-page range is
+              named "printed" ONLY when the source actually publishes one (`printedSpeechPages`).
+              Where it does not (e.g. Udhaya Kathir), the scan range is described as scan/PDF pages
+              and is never relabelled as a printed-page range. */}
           <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
             {ta
-              ? "கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட 1970 நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (5–46) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை."
-              : "The controlling source is the scanned 1970 booklet; only the speech pages (5–46) are transcribed. The source PDF is not vendored here."}
+              ? s.printedSpeechPages
+                ? `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (scan பக்கம் ${s.speechScanPages} · அச்சுப் பக்கம் ${s.printedSpeechPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
+                : `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் scan பக்கங்கள் மட்டுமே (${s.speechScanPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
+              : s.printedSpeechPages
+                ? `The controlling source is the scanned printed booklet; only the speech pages (scan ${s.speechScanPages} · printed ${s.printedSpeechPages}) are transcribed. The source PDF is not vendored here.`
+                : `The controlling source is the scanned printed booklet; only the speech scan pages (${s.speechScanPages}) are transcribed. The source PDF is not vendored here.`}
           </p>
+          {/* Written in English in the source provenance → always marked lang="en", even when the
+              surrounding UI language is Tamil. */}
+          {s.editionMatterNoteEn && (
+            <p className="mt-2 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/60 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/60" lang="en">
+              {s.editionMatterNoteEn}
+            </p>
+          )}
         </section>
 
         {/* ARCHIVE-DERIVED */}

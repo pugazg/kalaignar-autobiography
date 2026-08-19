@@ -24,7 +24,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const s = loadSpeech(params.slug);
   if (!s) return { title: "Speech — உரை | Kalaignar Digital Library" };
   const title = `${s.title.ta} — ${s.title.en} | Kalaignar Digital Library`;
-  const description = `${s.title.en} — Kalaignar M. Karunanidhi's ${s.date} ${s.legislature.nameEn} speech (${s.event.en}). Original verified Tamil with a source-linked English translation.`;
+  // Context is subtype-specific: the legislature for an assembly speech, the venue for a public
+  // speech (never a fabricated legislature/event for a public speech).
+  const context =
+    s.subtype === "public-speech" ? s.venue.en : `${s.legislature.nameEn}${s.event?.en ? ` (${s.event.en})` : ""}`;
+  const description = `${s.title.en} — Kalaignar M. Karunanidhi's ${s.date} speech at ${context}. Original verified Tamil with a source-linked English translation.`;
   return { title, description, openGraph: { title, description }, twitter: { title: s.title.en, description } };
 }
 

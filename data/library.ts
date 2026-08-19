@@ -334,6 +334,47 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     },
     provenanceHref: "/speeches/udhaya-kathir/source",
   },
+  {
+    // Digital Library Phase 3 — Speeches. Second benchmark: a fully-released, verified PUBLIC
+    // speech. It shares the single Speeches shelf with the assembly benchmark — "public" vs
+    // "assembly" is a SUBTYPE / source context, not a separate public shelf.
+    id: "poonthottam",
+    slug: "poonthottam",
+    titleTa: "பூந்தோட்டம்",
+    titleEn: "Poonthottam",
+    shelf: "speeches",
+    subtype: "public-speech",
+    readerStructure: "speech",
+    href: "/speeches/poonthottam",
+    state: "published",
+    descTa: "1951 கிண்டி இன்ஜினியரிங் கல்லூரி பொது உரை",
+    descEn: "1951 public speech at Guindy Engineering College",
+    sourceRepo: "pugazg/kalaignar-public-speeches",
+    sourcePath: "speeches/poonthottam",
+    sourceCommit: "1ef73a709a343390befe55dcdfb029427f527bf4",
+    // Source publication: the booklet "கலைஞரின் பூந்தோட்டம்" — current scanned fourth edition (2019),
+    // first published 1951 (திராவிடப் பண்ணை). The speech itself was delivered 1951-12-06.
+    edition: "கலைஞரின் பூந்தோட்டம் — நான்காம் பதிப்பு, 2019 (முதற்பதிப்பு 1951)",
+    tamil: "complete",
+    english: "complete",
+    // The English is a project-created, source-linked faithful reading translation made from the
+    // frozen verified Tamil, not a separately-published translation.
+    englishKind: "project-created",
+    // Underlying Kalaignar-authored speech: nationalised by the Government of Tamil Nadu (announced
+    // 2024-08-22; GO handed over to Rajathi Ammal 2024-12-22 — number and formal issue date not yet
+    // verified). Distinct from the 2019 edition's own publisher/preface and other third-party matter.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil speech; it does not extend to the project-created English translation or to third-party edition material (the 2019 publisher's preface, cover/design, photographs). Distinct from the 2019 edition's own imprint data.",
+    },
+    provenanceHref: "/speeches/poonthottam/source",
+  },
 ];
 
 // ── Selectors ────────────────────────────────────────────────────────────────

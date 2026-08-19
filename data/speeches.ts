@@ -46,30 +46,52 @@ export type SpeechUnresolvedBreak = { kind: "unresolved-break"; toPage: number; 
 export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote | SpeechUnresolvedBreak;
 
 export type SpeechBilingualName = { nameTa: string; nameEn: string; roleTa?: string; roleEn?: string };
+export type SpeechBilingualText = { ta: string; en: string };
 
-// Vendored per-speech content (speech.json).
-export type Speech = {
+// Common fields shared by every speech subtype. The Tamil stream is authoritative; the English
+// stream is the verified faithful reading translation.
+type SpeechBase = {
   workId: string;
   slug: string;
   sourceRepo: string;
   sourcePath: string;
   sourceCommit: string;
   shelf: "speeches";
-  subtype: string; // "assembly-speech" | "public-speech"
   readerStructure: "speech";
   date: string; // ISO where the source establishes it
   year: number;
-  title: { ta: string; en: string };
-  event: { ta: string; en: string };
+  title: SpeechBilingualText;
   speechType: string;
   speaker: SpeechBilingualName;
-  legislature: { nameTa: string; nameEn: string };
   transcriptionStatus: string; // verbatim released status
   translationStatus: string;
   tamil: { sectionTitleTa: string; blocks: SpeechBlock[] }; // authoritative source transcription
   english: { sectionTitleEn: string; blocks: SpeechBlock[] }; // verified faithful translation
   sourcePages: number[]; // exact source pages the Tamil transcription covers
 };
+
+// A legislative-assembly speech: it has a legislature and a parliamentary event/context. These
+// fields are ASSEMBLY-SPECIFIC — they are not forced onto a public speech as empty placeholders.
+export type AssemblySpeech = SpeechBase & {
+  subtype: "assembly-speech";
+  legislature: { nameTa: string; nameEn: string };
+  event: SpeechBilingualText;
+};
+
+// A public speech: it has a source-established VENUE. `event` / `occasion` / `audience` are
+// OPTIONAL and stay unset unless the source establishes them (no fake college-function/meeting is
+// inferred from a venue). A public speech has NO legislature.
+export type PublicSpeech = SpeechBase & {
+  subtype: "public-speech";
+  venue: SpeechBilingualText;
+  event?: SpeechBilingualText | null;
+  occasion?: SpeechBilingualText | null;
+  audience?: SpeechBilingualText | null;
+};
+
+// Vendored per-speech content (speech.json). Discriminated on `subtype` so assembly-specific and
+// public-specific metadata each stay honestly typed rather than a bag of nullable assembly fields.
+export type Speech = AssemblySpeech | PublicSpeech;
 
 // Provenance manifest (provenance.json).
 export type SpeechProvenance = {
@@ -92,6 +114,15 @@ export type SpeechProvenance = {
     speechScanPages: string;
     frontMatterScanPages: string;
     advertisementScanPages: string;
+    // Optional source facts some editions establish and others do not (never fabricated):
+    scanSha256?: string; // published only where the source archive records a scan checksum
+    scanFileSizeBytes?: number;
+    printedSpeechPages?: string; // printed page range when it differs from the PDF/scan range
+    firstEditionTa?: string; // a distinct first-edition statement, where the edition prints one
+    publisherAddressTa?: string; // fuller publisher address, where recorded
+    // Third-party front-matter note (e.g. a publisher preface author/date). This field is written
+    // in ENGLISH, so the reader must mark it lang="en" even when the surrounding UI is Tamil.
+    editionMatterNoteEn?: string;
   };
   transcription: Record<string, unknown>; // verbatim from source metadata.json
   translation: Record<string, unknown>; // verbatim from source metadata.json
@@ -152,6 +183,7 @@ export type SpeechProvenance = {
 };
 
 // Lightweight catalog of integrated speech slugs (build/import authority; the public catalog
-// entry lives in data/library.ts). Kept minimal — one benchmark speech in Phase 3.
-export const SPEECH_SLUGS = ["udhaya-kathir"] as const;
+// entry lives in data/library.ts). One benchmark per subtype so far: an assembly speech
+// (udhaya-kathir) and a public speech (poonthottam).
+export const SPEECH_SLUGS = ["udhaya-kathir", "poonthottam"] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];
