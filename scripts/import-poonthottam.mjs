@@ -9,10 +9,11 @@
 //
 // Fidelity: the frozen verified-complete Tamil (transcription-ta.md) is authoritative; the
 // verified-complete English (translation-en.md) is the faithful reading translation. Neither is
-// retranslated, modernized or normalized. Difficult source-supported Tamil forms
-// (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே, பெய்ப்படி, வழக்கு மன்றத்திற்கு,
-// மானிடம்) and translator notes are preserved verbatim. Source-page boundaries are kept and every
-// page transition is classified from explicit source evidence (audit.md), NOT from punctuation.
+// retranslated, modernized or normalized. The five difficult source-supported Tamil forms the
+// archive keeps transparent (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே,
+// பெய்ப்படி, வழக்கு மன்றத்திற்கு) and the five translator notes are preserved verbatim.
+// Source-page boundaries are kept and every page transition is classified from explicit source
+// evidence (audit.md), NOT from punctuation.
 //
 // Usage: node scripts/import-poonthottam.mjs <path-to-public-speeches-clone> <source-commit>
 
@@ -56,37 +57,39 @@ const tamilSrc = readText(path.join(SPEECH_DIR, "transcription-ta.md"));
 const englishSrc = readText(path.join(SPEECH_DIR, "translation-en.md"));
 
 // ── EXPLICIT source-audited page-boundary table (Tamil), keyed by the printed page ENTERED ──────
-// Poonthottam is a single, continuous, single-speaker public speech: it has NO parliamentary
-// speaker turns, so there are no clean paragraph-boundary transitions. Every printed page
-// transition (printed 5→6 … 15→16, 11 transitions) is classified from the source's own visual
-// audit (audit.md) and the frozen transcription — NEVER from punctuation:
+// Every printed page transition (printed 5→6 … 15→16, 11 transitions) is classified from what the
+// SOURCE ARCHIVE itself establishes — from the source's own visual
+// audit (audit.md) and the frozen transcription — NEVER from punctuation, and NEVER from how many
+// speakers the speech has (speaker turns and printed paragraph layout are different facts):
 //   paragraphRelation:
-//     "same-paragraph" — the printed paragraph demonstrably continues across the page (the source
-//                        audit lists it as a mid-sentence continuation);
-//     "unknown"        — a sentence COMPLETES at the page edge and the next page opens a NEW
-//                        sentence: whether the printed paragraph continues or a new one begins
-//                        cannot be established from the archive text and needs the controlling
-//                        scan (TVA_BOK_0065784), which is NOT accessible read-only here → BLOCKER,
-//                        rendered neutrally (neither a break nor a continuation is asserted).
+//     "same-paragraph" — the SOURCE ARCHIVE explicitly establishes that the text continues across
+//                        the page break (audit.md lists it among its cross-page continuations);
+//     "unknown"        — the source archive does NOT establish the printed-paragraph relation for
+//                        this transition: it neither records the paragraph as continuing nor
+//                        records a new printed paragraph beginning. Only the controlling scan
+//                        (TVA_BOK_0065784) could settle the typographic relation, and this
+//                        integration does not derive layout facts of its own → rendered neutrally
+//                        (neither a break nor a continuation is asserted).
 //   join (within a same-paragraph continuation):
 //     "space" — an ordinary cross-page word boundary (no mid-word split occurs anywhere here).
-// audit.md explicitly lists the mid-sentence continuations printed p.5→6, p.6→7, p.10→11. It also
-// describes p.15→16 as a "thought/sentence continuation … no word is split", but the p.15 sentence
-// COMPLETES ("…வளரத்தான் நேரிடும்.") and p.16 opens a new sentence ("அந்த வெறுப்பு…"); that describes
-// lexical (no mid-word split) and thematic continuity, NOT a printed-paragraph claim — so p.15→16
-// remains an UNKNOWN paragraph relationship rather than a fabricated same-paragraph run.
+// audit.md establishes exactly three cross-page continuations: printed p.5→6, p.6→7 and p.10→11.
+// It also describes p.15→16 as a "thought/sentence continuation … no word is split", but a
+// continuity of thought or sentence is NOT a statement about printed paragraph layout, so that
+// transition stays unresolved rather than being promoted to a same-paragraph run.
+// There are therefore 0 SOURCE-ESTABLISHED clean paragraph-boundary transitions — not because the
+// speech has one speaker, but because the archive publishes no such relation for any transition.
 const TA_BOUNDARY = {
   6:  { rel: "same-paragraph", join: "space", ev: "audit.md continuation printed p.5→6: 'பண்படுத்த' | 'வேண்டும்.' — distinct words, mid-sentence" },
   7:  { rel: "same-paragraph", join: "space", ev: "audit.md continuation printed p.6→7: '…மொண்டு மொண்டு தரும்' | 'தென்றலாக,' — distinct words, mid-sentence" },
-  8:  { rel: "unknown",        join: "end",   ev: "printed p.7 completes '…பக்கமிருந்து கிளம்பும் தொனி!'; p.8 opens 'இப்படி ஒரு போராட்டம்…' a new sentence; printed-paragraph layout scan-pending" },
-  9:  { rel: "unknown",        join: "end",   ev: "printed p.8 completes '…புகழ் பாடப்படுகிறது ஒரு புறத்திலே!'; p.9 opens 'உடனே,…'; scan-pending" },
-  10: { rel: "unknown",        join: "end",   ev: "printed p.9 completes '…இந்த வசதி கிடையாதே!'; p.10 opens 'தண்ணொளி…'; scan-pending" },
+  8:  { rel: "unknown",        join: "end",   ev: "the source audit establishes cross-page continuations only for printed p.5→6, p.6→7 and p.10→11; it records no printed-paragraph relation for p.7→8 → unresolved (not derived here)" },
+  9:  { rel: "unknown",        join: "end",   ev: "the source archive records no printed-paragraph relation for printed p.8→9 → unresolved (not derived here)" },
+  10: { rel: "unknown",        join: "end",   ev: "the source archive records no printed-paragraph relation for printed p.9→10 → unresolved (not derived here)" },
   11: { rel: "same-paragraph", join: "space", ev: "audit.md continuation printed p.10→11: 'வேலைகளை விட்டு ஓய்வு' | 'பெறுகிறவர்' — distinct words, mid-sentence" },
-  12: { rel: "unknown",        join: "end",   ev: "printed p.11 completes '…சமத்துவக் கோரிக்கை விளக்கம்.'; p.12 opens '‘பூந்தோட்டமே யாருடையது…'; scan-pending" },
-  13: { rel: "unknown",        join: "end",   ev: "printed p.12 completes '…வீரன் செங்குட்டுவன் உலாவியிருக்கிறான்.'; p.13 opens 'கடாரங் கொண்ட சோழன்…'; scan-pending" },
-  14: { rel: "unknown",        join: "end",   ev: "printed p.13 completes '…மோதிக் கொள்வது என்ற நிலையிருந்திருக்காதே.'; p.14 opens 'அவர்கள் படித்தவர்கள்.'; scan-pending" },
-  15: { rel: "unknown",        join: "end",   ev: "printed p.14 completes '…என்று அழைத்தார் அப்பன் பரமசிவன்.'; p.15 opens 'சீராளனை…'; scan-pending" },
-  16: { rel: "unknown",        join: "end",   ev: "audit.md calls p.15→16 a thought continuation but the p.15 sentence completes '…வளரத்தான் நேரிடும்.' and p.16 opens 'அந்த வெறுப்பு,…' a new sentence; printed-paragraph relationship scan-pending (NOT claimed same-paragraph)" },
+  12: { rel: "unknown",        join: "end",   ev: "the source archive records no printed-paragraph relation for printed p.11→12 → unresolved (not derived here)" },
+  13: { rel: "unknown",        join: "end",   ev: "the source archive records no printed-paragraph relation for printed p.12→13 → unresolved (not derived here)" },
+  14: { rel: "unknown",        join: "end",   ev: "the source archive records no printed-paragraph relation for printed p.13→14 → unresolved (not derived here)" },
+  15: { rel: "unknown",        join: "end",   ev: "the source archive records no printed-paragraph relation for printed p.14→15 → unresolved (not derived here)" },
+  16: { rel: "unknown",        join: "end",   ev: "audit.md calls p.15→16 a thought/sentence continuation with no word split, which is NOT a statement about printed paragraph layout; the archive records no printed-paragraph relation for p.15→16 → unresolved (NOT promoted to same-paragraph)" },
 };
 
 // A printed page marker: "## PDF page <pdf> / printed page <printed>". We key the reader by the
@@ -327,7 +330,7 @@ const provenance = {
     printedSpeechPages: "5–16",
     firstEditionTa: "முதற்பதிப்பு - 1951 (திராவிடப் பண்ணை)",
     publisherAddressTa: meta.publication.publisher_address_ta,
-    editionMatterNote: `PDF 4 carries a publisher preface (பதிப்புரை) signed for the publisher by கி. வீரமணி, dated ${meta.publication.publisher_preface_date}; PDF 5 carries Kalaignar's prefatory poem எரிமலை!. Neither is part of the பூந்தோட்டம் speech body. The preface is third-party front matter.`,
+    editionMatterNoteEn: `PDF 4 carries a publisher preface (பதிப்புரை) signed for the publisher by கி. வீரமணி, dated ${meta.publication.publisher_preface_date}; PDF 5 carries Kalaignar's prefatory poem எரிமலை!. Neither is part of the பூந்தோட்டம் speech body. The preface is third-party front matter.`,
   },
   // Constructed from the workflow record (this repo tracks stage state, not a transcription block).
   transcription: {
@@ -357,7 +360,7 @@ const provenance = {
     boundaryAudit: {
       tamilTransitions: auditCounts.transitions, // 11
       sameParagraph: auditCounts.sameParagraph, // 3
-      paragraphBoundary: auditCounts.paragraphBoundary, // 0 (single continuous speaker — no turns)
+      paragraphBoundary: auditCounts.paragraphBoundary, // 0 SOURCE-ESTABLISHED clean paragraph boundaries
       headingBoundary: auditCounts.headingBoundary, // 0
       unknownParagraphRelation: auditCounts.unknownParagraphRelation, // 8
       lexicalJoinNone: auditCounts.joinNone, // 0 (no mid-word page splits)
@@ -369,9 +372,9 @@ const provenance = {
       paragraphBoundary: Object.values(EN_BOUNDARY).filter((e) => e.rel === "paragraph-boundary").length,
       headingNoteBoundary: Object.values(EN_BOUNDARY).filter((e) => e.rel === "heading-note-boundary").length,
       sameParagraphContinuations: Object.values(EN_BOUNDARY).filter((e) => e.rel === "same-paragraph").length,
-      note: "Every English printed-page anchor (5-16) has an EXPLICIT EN_BOUNDARY entry, classified from the released translation structure (the printed title, the translator's blank-separated blocks, the six translator notes, and the single audited cross-page sentence continuation p.5→6) — NEVER from punctuation. Anchors are provenance only.",
+      note: "Every English printed-page anchor (5-16) has an EXPLICIT EN_BOUNDARY entry, classified from the released translation structure (the printed title, the translator's blank-separated blocks, the five translator notes, and the single audited cross-page sentence continuation p.5→6) — NEVER from punctuation. Anchors are provenance only.",
     },
-    note: "Section headings are printed in the source (none inside this speech body). A source-page boundary is NOT a paragraph boundary and paragraph relationships are NOT inferred from punctuation: every Tamil page transition is classified in an explicit source-audited table (audit.md + frozen transcription). One logical paragraph may span several source pages via per-page segments, each retaining its source page; ordinary cross-page word boundaries join with a single space; a source-page boundary whose printed paragraph relationship cannot be established is left UNRESOLVED and rendered neutrally.",
+    note: "Section headings are printed in the source (none inside this speech body). A source-page boundary is NOT a paragraph boundary; paragraph relationships are NOT inferred from punctuation and NOT inferred from speaker count: every Tamil page transition is classified in an explicit source-evidence table (audit.md + frozen transcription), and a transition the archive does not speak to stays unresolved. One logical paragraph may span several source pages via per-page segments, each retaining its source page; ordinary cross-page word boundaries join with a single space; a source-page boundary whose printed paragraph relationship cannot be established is left UNRESOLVED and rendered neutrally.",
   },
   // BLOCKER — one class of source fact only the controlling scan can resolve. Represented as
   // unresolved in the data and rendered neutrally; never guessed. (Poonthottam has no scan-
@@ -380,7 +383,7 @@ const provenance = {
     {
       item: "unresolved-paragraph-relationship",
       count: auditCounts.unknownParagraphRelation,
-      detail: `${auditCounts.unknownParagraphRelation} printed-page boundaries where a sentence completes at the page edge and the next page opens a new sentence: whether the PRINTED PARAGRAPH continues or a new one begins cannot be established from the archive text. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule.`,
+      detail: `${auditCounts.unknownParagraphRelation} printed-page boundaries for which the source archive records no printed-paragraph relation: it establishes neither that the printed paragraph continues nor that a new one begins. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule. No relation is inferred here from punctuation or from speaker count.`,
       resolution: "Read-only inspection of the controlling scan TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf (speech PDF pp.6–17 / printed pp.5–16). The source PDF is not committed under repository policy and is not accessible read-only in this environment.",
     },
   ],
@@ -409,8 +412,8 @@ const provenance = {
   notes: [
     "The controlling source is the scanned booklet (fourth edition, 2019); only the speech body — PDF pages 6–17 / printed pages 5–16 (12 pages) — is transcribed. PDF 1–5 (cover, title, bibliographic, publisher preface, and Kalaignar's prefatory poem எரிமலை!) and PDF 18 (back cover) are NOT speech body. The source PDF is not vendored.",
     "The source establishes the speech date (1951-12-06) and venue (சென்னை கிண்டி இன்ஜினியரிங் கல்லூரி) but does NOT separately name an event, occasion, or audience; those remain unset rather than inferred from the venue.",
-    "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from the frozen Tamil. Neither was edited during import. Difficult source-supported forms (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே, பெய்ப்படி, வழக்கு மன்றத்திற்கு, மானிடம்) and the six translator notes are preserved verbatim.",
-    "A source-page boundary is not a paragraph boundary. This is a single continuous speech with no speaker turns, so there are no clean paragraph-boundary transitions; the three audited mid-sentence continuations (printed p.5→6, p.6→7, p.10→11) join with a space, and the other eight page transitions — where a sentence completes at the page edge — are UNRESOLVED paragraph relationships, rendered neutrally (never guessed). Needs the controlling scan TVA_BOK_0065784.",
+    "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from the frozen Tamil. Neither was edited during import. The five difficult source-supported forms the archive keeps transparent (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே, பெய்ப்படி, வழக்கு மன்றத்திற்கு) and the five translator notes are preserved verbatim. மானிடம் is NOT among them: the source archive establishes it as the ordinary noun for humanity and translates it.",
+    "A source-page boundary is not a paragraph boundary, and printed paragraph relations are taken ONLY from what the source archive establishes — never from punctuation, and never from how many speakers the speech has. The archive establishes three cross-page continuations (printed p.5→6, p.6→7, p.10→11), which join with a space. For the other eight transitions the archive records no printed-paragraph relation at all — neither a continuation nor a new printed paragraph — so they remain UNRESOLVED and are rendered neutrally (never guessed). There are therefore 0 SOURCE-ESTABLISHED clean paragraph-boundary transitions. Only the controlling scan TVA_BOK_0065784 could settle the typographic relations, and this integration does not derive layout facts of its own.",
     "English paragraph structure is the verified translation's own blank-separated blocks; printed-page anchors are provenance only, never paragraph boundaries; the single audited cross-page sentence continuation (printed p.5→6) is recorded in EN_BOUNDARY. No punctuation heuristic is used for either language.",
   ],
 };

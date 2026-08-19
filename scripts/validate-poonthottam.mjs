@@ -77,7 +77,7 @@ const renderPara = (p) => p.segments.map((s, i) => (i === 0 ? "" : p.segments[i 
 const paraSpanning = (a, b) => speech.tamil.blocks.find((x) => x.kind === "paragraph" && x.segments.some((s) => s.text.endsWith(a)) && x.segments.some((s) => s.text.startsWith(b)));
 
 // 1. source-commit pin: vendored + provenance record the pinned public-speeches commit
-check(speech.sourceCommit === "c8abf95834e1d2549644e3607be3dd6f87b802c2" && prov.sourceCommit === speech.sourceCommit && speech.sourceRepo === "pugazg/kalaignar-public-speeches", "1. source commit pinned to the public-speeches c8abf95 (speech + provenance)");
+check(speech.sourceCommit === "1ef73a709a343390befe55dcdfb029427f527bf4" && prov.sourceCommit === speech.sourceCommit && speech.sourceRepo === "pugazg/kalaignar-public-speeches", "1. source commit pinned to the corrected public-speeches 1ef73a7 (speech + provenance)");
 
 // 2. source SHA-256 provenance matches the authoritative metadata (and the known checksum)
 check(prov.source.scanSha256 === meta.source.sha256 && prov.source.scanSha256 === "2a8bf5f6f42970ee95912f41662f9bc448581a5aaca15a55fee9b44ba20a4c52" && prov.source.scanFileSizeBytes === 49297657, "2. source SHA-256 + file size recorded, matching metadata.json");
@@ -135,12 +135,14 @@ check(vTa.texts.join("␟") === srcTa.texts.join("␟"), "11. frozen Tamil is ve
 
 // 12. verified English is verbatim (text + translator notes in order == source body)
 check(vEn.texts.join("␟") === srcEn.texts.join("␟"), "12. verified English text is verbatim (== translation-en.md body)");
-check(vEn.notes.join("␟") === srcEn.notes.join("␟") && vEn.notes.length === 6, "12b. all 6 translator notes preserved verbatim, in order");
+check(vEn.notes.join("␟") === srcEn.notes.join("␟") && vEn.notes.length === 5, "12b. exactly 5 translator notes preserved verbatim, in order (was 6 before the source correction)");
 
 // 13. difficult source-supported forms retained verbatim (not normalized)
-const HARD = ["அகம்புற மென்ற அன்றலர்ந்த", "அயோத்தியானுக்கு", "தண்ட காரணயத்திலே", "பெய்ப்படி", "வழக்கு மன்றத்திற்கு", "மானிடம்"];
+// The FIVE forms the corrected source archive still keeps transparent. மானிடம் is deliberately
+// NOT here: the archive establishes it as the ordinary noun for humanity and now translates it.
+const HARD = ["அகம்புற மென்ற அன்றலர்ந்த", "அயோத்தியானுக்கு", "தண்ட காரணயத்திலே", "பெய்ப்படி", "வழக்கு மன்றத்திற்கு"];
 const taAll = vTa.texts.join("\n");
-check(HARD.every((h) => taAll.includes(h)), "13. all six difficult source-supported Tamil forms retained verbatim");
+check(HARD.every((h) => taAll.includes(h)), `13. all ${HARD.length} difficult source-supported Tamil forms retained verbatim (மானிடம் no longer among them)`);
 
 // 14. English boundary audit: 12 anchors, exactly ONE cross-anchor same-paragraph continuation (p5→6)
 const enCross = speech.english.blocks.filter((b) => b.kind === "paragraph" && b.segments.length > 1);
@@ -172,7 +174,37 @@ check(Array.isArray(prov.blockers) && prov.blockers.length === 1 && prov.blocker
 let head = "", dirty = "?";
 try { head = execFileSync("git", ["-C", SRC_REPO, "rev-parse", "HEAD"], { encoding: "utf8" }).trim(); } catch {}
 try { dirty = execFileSync("git", ["-C", SRC_REPO, "status", "--porcelain"], { encoding: "utf8" }).trim(); } catch {}
-check(head === "c8abf95834e1d2549644e3607be3dd6f87b802c2" && dirty === "", "20. source clone unmodified: pinned commit checked out, working tree clean");
+check(head === "1ef73a709a343390befe55dcdfb029427f527bf4" && dirty === "", "20. source clone unmodified: pinned commit checked out, working tree clean");
+
+// ── Corrected-source assertions (source PR #1, merged as 1ef73a7) ──────────────
+const taAllText = vTa.texts.join("\n");
+const enAllText = vEn.texts.concat(vEn.notes).join("\n");
+const finalEn = vEn.texts.find((t) => t.includes("artistic feast")) || "";
+
+// 21. the scan-established Tamil correction is present and the superseded reading is gone
+check(taAllText.includes("மாடப்புறா") && !taAllText.includes("மாட்டுப்புறா"), "21. canonical Tamil carries the scan-established மாடப்புறா; superseded மாட்டுப்புறா absent");
+
+// 22. dependent English corrections
+check(finalEn.includes("humanity") && finalEn.includes("the dove"), "22. corrected final English sentence renders 'humanity' and 'dove'");
+check(!enAllText.includes("mattuppura"), "22b. superseded transliteration 'mattuppura' absent from canonical English");
+check(!enAllText.includes("`மானிடம்`"), "22c. no untranslated/backticked மானிடம் survives in canonical English");
+
+// 23. the transparent-form list is exactly the five surviving forms (no six-form state anywhere)
+check(HARD.length === 5 && !HARD.includes("மானிடம்"), "23. transparent-form list is the five surviving forms; மானிடம் is not one of them");
+
+// 24. ZERO source-established clean paragraph boundaries — and that count is not derived from
+// speaker count. The archive establishes 3 continuations; the other 8 it does not speak to.
+const ba = prov.archiveDerived.boundaryAudit;
+check(ba.tamilTransitions === 11 && ba.sameParagraph === 3 && ba.paragraphBoundary === 0 && ba.unknownParagraphRelation === 8, "24. boundary audit: 11 transitions = 3 source-established continuations + 8 unresolved + 0 source-established clean paragraph boundaries");
+check(ba.lexicalJoinNone === 0 && ba.lexicalJoinSpace === 3 && ba.lexicalJoinUnknown === 0, "24b. lexical joins none/space/unknown = 0/3/0");
+
+// 25. the importer must NOT justify paragraph structure by speaker count anywhere
+const speakerInference = /single[- ]speaker|no speaker turns|single continuous speaker/i.test(importerSrc.replace(/NEVER from how many[\s\S]*?different facts\)/i, ""));
+check(!speakerInference, "25. importer contains NO 'single speaker ⇒ paragraph structure' inference");
+
+// 26. neither generated artifact encodes the pre-correction state
+const provText = JSON.stringify(prov);
+check(!/six translator notes|six difficult/i.test(provText) && !provText.includes("மாட்டுப்புறா"), "26. generated provenance encodes no six-note / six-form / superseded-reading state");
 
 console.log();
 console.log("RESULT:", fails.length === 0 ? "ALL PASS" : `${fails.length} FAILURE(S)`);

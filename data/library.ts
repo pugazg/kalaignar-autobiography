@@ -351,7 +351,7 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     descEn: "1951 public speech at Guindy Engineering College",
     sourceRepo: "pugazg/kalaignar-public-speeches",
     sourcePath: "speeches/poonthottam",
-    sourceCommit: "c8abf95834e1d2549644e3607be3dd6f87b802c2",
+    sourceCommit: "1ef73a709a343390befe55dcdfb029427f527bf4",
     // Source publication: the booklet "கலைஞரின் பூந்தோட்டம்" — current scanned fourth edition (2019),
     // first published 1951 (திராவிடப் பண்ணை). The speech itself was delivered 1951-12-06.
     edition: "கலைஞரின் பூந்தோட்டம் — நான்காம் பதிப்பு, 2019 (முதற்பதிப்பு 1951)",

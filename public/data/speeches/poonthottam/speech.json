@@ -3,7 +3,7 @@
  "slug": "poonthottam",
  "sourceRepo": "pugazg/kalaignar-public-speeches",
  "sourcePath": "speeches/poonthottam",
- "sourceCommit": "c8abf95834e1d2549644e3607be3dd6f87b802c2",
+ "sourceCommit": "1ef73a709a343390befe55dcdfb029427f527bf4",
  "shelf": "speeches",
  "subtype": "public-speech",
  "readerStructure": "speech",
@@ -243,7 +243,7 @@
     "kind": "unresolved-break",
     "toPage": 8,
     "relation": "unknown",
-    "note": "printed p.7 completes '…பக்கமிருந்து கிளம்பும் தொனி!'; p.8 opens 'இப்படி ஒரு போராட்டம்…' a new sentence; printed-paragraph layout scan-pending"
+    "note": "the source audit establishes cross-page continuations only for printed p.5→6, p.6→7 and p.10→11; it records no printed-paragraph relation for p.7→8 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -379,7 +379,7 @@
     "kind": "unresolved-break",
     "toPage": 9,
     "relation": "unknown",
-    "note": "printed p.8 completes '…புகழ் பாடப்படுகிறது ஒரு புறத்திலே!'; p.9 opens 'உடனே,…'; scan-pending"
+    "note": "the source archive records no printed-paragraph relation for printed p.8→9 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -476,7 +476,7 @@
     "kind": "unresolved-break",
     "toPage": 10,
     "relation": "unknown",
-    "note": "printed p.9 completes '…இந்த வசதி கிடையாதே!'; p.10 opens 'தண்ணொளி…'; scan-pending"
+    "note": "the source archive records no printed-paragraph relation for printed p.9→10 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -722,7 +722,7 @@
     "kind": "unresolved-break",
     "toPage": 12,
     "relation": "unknown",
-    "note": "printed p.11 completes '…சமத்துவக் கோரிக்கை விளக்கம்.'; p.12 opens '‘பூந்தோட்டமே யாருடையது…'; scan-pending"
+    "note": "the source archive records no printed-paragraph relation for printed p.11→12 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -910,7 +910,7 @@
     "kind": "unresolved-break",
     "toPage": 13,
     "relation": "unknown",
-    "note": "printed p.12 completes '…வீரன் செங்குட்டுவன் உலாவியிருக்கிறான்.'; p.13 opens 'கடாரங் கொண்ட சோழன்…'; scan-pending"
+    "note": "the source archive records no printed-paragraph relation for printed p.12→13 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -1111,7 +1111,7 @@
     "kind": "unresolved-break",
     "toPage": 14,
     "relation": "unknown",
-    "note": "printed p.13 completes '…மோதிக் கொள்வது என்ற நிலையிருந்திருக்காதே.'; p.14 opens 'அவர்கள் படித்தவர்கள்.'; scan-pending"
+    "note": "the source archive records no printed-paragraph relation for printed p.13→14 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -1234,7 +1234,7 @@
     "kind": "unresolved-break",
     "toPage": 15,
     "relation": "unknown",
-    "note": "printed p.14 completes '…என்று அழைத்தார் அப்பன் பரமசிவன்.'; p.15 opens 'சீராளனை…'; scan-pending"
+    "note": "the source archive records no printed-paragraph relation for printed p.14→15 → unresolved (not derived here)"
    },
    {
     "kind": "paragraph",
@@ -1357,7 +1357,7 @@
     "kind": "unresolved-break",
     "toPage": 16,
     "relation": "unknown",
-    "note": "audit.md calls p.15→16 a thought continuation but the p.15 sentence completes '…வளரத்தான் நேரிடும்.' and p.16 opens 'அந்த வெறுப்பு,…' a new sentence; printed-paragraph relationship scan-pending (NOT claimed same-paragraph)"
+    "note": "audit.md calls p.15→16 a thought/sentence continuation with no word split, which is NOT a statement about printed paragraph layout; the archive records no printed-paragraph relation for p.15→16 → unresolved (NOT promoted to same-paragraph)"
    },
    {
     "kind": "paragraph",
@@ -1441,7 +1441,7 @@
     "kind": "paragraph",
     "segments": [
      {
-      "text": "தென்றல் தவழும் - புதுமணம் நீந்தும் - மானிடம், தேன்சிட்டு, மயில், குயில், மாட்டுப்புறா எல்லாமே புதுமைக் கலைவிருந்து படைக்கும். அந்த இன்பப் பூந்தோட்டம் காண இளைஞர் உலகுக்கு மீண்டும் ஒரு முறை அழைப்பு விடுகிறேன்.",
+      "text": "தென்றல் தவழும் - புதுமணம் நீந்தும் - மானிடம், தேன்சிட்டு, மயில், குயில், மாடப்புறா எல்லாமே புதுமைக் கலைவிருந்து படைக்கும். அந்த இன்பப் பூந்தோட்டம் காண இளைஞர் உலகுக்கு மீண்டும் ஒரு முறை அழைப்பு விடுகிறேன்.",
       "sourcePage": 16,
       "joinToNext": "end"
      }
@@ -2868,7 +2868,7 @@
     "kind": "paragraph",
     "segments": [
      {
-      "text": "The breeze will glide—the new fragrance will float—`மானிடம்`, the honey-bird, the peacock, the cuckoo, and the *mattuppura* will all create a new artistic feast. I once again extend an invitation to the world of youth to behold that delightful flower garden.",
+      "text": "The breeze will glide—the new fragrance will float—humanity, the honey-bird, the peacock, the cuckoo, and the dove will all create a new artistic feast. I once again extend an invitation to the world of youth to behold that delightful flower garden.",
       "sourcePage": 16,
       "joinToNext": "end"
      }
@@ -2889,11 +2889,6 @@
     "sourcePages": [
      16
     ]
-   },
-   {
-    "kind": "note",
-    "text": "**Translator note:** The verified source prints `மானிடம்` in the final garden catalogue. Because its intended referent is not certain from the frozen Tamil layer alone, it is retained visibly rather than silently emended or interpreted.",
-    "sourcePage": 16
    }
   ]
  },

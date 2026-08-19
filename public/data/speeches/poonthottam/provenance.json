@@ -2,7 +2,7 @@
  "workId": "poonthottam",
  "sourceRepo": "pugazg/kalaignar-public-speeches",
  "sourcePath": "speeches/poonthottam",
- "sourceCommit": "c8abf95834e1d2549644e3607be3dd6f87b802c2",
+ "sourceCommit": "1ef73a709a343390befe55dcdfb029427f527bf4",
  "source": {
   "publicationTitleTa": "கலைஞரின் பூந்தோட்டம்",
   "authorTa": "மு. கருணாநிதி",
@@ -23,7 +23,7 @@
   "printedSpeechPages": "5–16",
   "firstEditionTa": "முதற்பதிப்பு - 1951 (திராவிடப் பண்ணை)",
   "publisherAddressTa": "பெரியார் திடல், 84/1 (50), ஈ.வெ.கி. சம்பத் சாலை, வேப்பேரி, சென்னை - 600 007.",
-  "editionMatterNote": "PDF 4 carries a publisher preface (பதிப்புரை) signed for the publisher by கி. வீரமணி, dated 2018-01-12; PDF 5 carries Kalaignar's prefatory poem எரிமலை!. Neither is part of the பூந்தோட்டம் speech body. The preface is third-party front matter."
+  "editionMatterNoteEn": "PDF 4 carries a publisher preface (பதிப்புரை) signed for the publisher by கி. வீரமணி, dated 2018-01-12; PDF 5 carries Kalaignar's prefatory poem எரிமலை!. Neither is part of the பூந்தோட்டம் speech body. The preface is third-party front matter."
  },
  "transcription": {
   "status": "verified-complete",
@@ -64,15 +64,15 @@
    "paragraphBoundary": 5,
    "headingNoteBoundary": 6,
    "sameParagraphContinuations": 1,
-   "note": "Every English printed-page anchor (5-16) has an EXPLICIT EN_BOUNDARY entry, classified from the released translation structure (the printed title, the translator's blank-separated blocks, the six translator notes, and the single audited cross-page sentence continuation p.5→6) — NEVER from punctuation. Anchors are provenance only."
+   "note": "Every English printed-page anchor (5-16) has an EXPLICIT EN_BOUNDARY entry, classified from the released translation structure (the printed title, the translator's blank-separated blocks, the five translator notes, and the single audited cross-page sentence continuation p.5→6) — NEVER from punctuation. Anchors are provenance only."
   },
-  "note": "Section headings are printed in the source (none inside this speech body). A source-page boundary is NOT a paragraph boundary and paragraph relationships are NOT inferred from punctuation: every Tamil page transition is classified in an explicit source-audited table (audit.md + frozen transcription). One logical paragraph may span several source pages via per-page segments, each retaining its source page; ordinary cross-page word boundaries join with a single space; a source-page boundary whose printed paragraph relationship cannot be established is left UNRESOLVED and rendered neutrally."
+  "note": "Section headings are printed in the source (none inside this speech body). A source-page boundary is NOT a paragraph boundary; paragraph relationships are NOT inferred from punctuation and NOT inferred from speaker count: every Tamil page transition is classified in an explicit source-evidence table (audit.md + frozen transcription), and a transition the archive does not speak to stays unresolved. One logical paragraph may span several source pages via per-page segments, each retaining its source page; ordinary cross-page word boundaries join with a single space; a source-page boundary whose printed paragraph relationship cannot be established is left UNRESOLVED and rendered neutrally."
  },
  "blockers": [
   {
    "item": "unresolved-paragraph-relationship",
    "count": 8,
-   "detail": "8 printed-page boundaries where a sentence completes at the page edge and the next page opens a new sentence: whether the PRINTED PARAGRAPH continues or a new one begins cannot be established from the archive text. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule.",
+   "detail": "8 printed-page boundaries for which the source archive records no printed-paragraph relation: it establishes neither that the printed paragraph continues nor that a new one begins. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule. No relation is inferred here from punctuation or from speaker count.",
    "resolution": "Read-only inspection of the controlling scan TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf (speech PDF pp.6–17 / printed pp.5–16). The source PDF is not committed under repository policy and is not accessible read-only in this environment."
   }
  ],
@@ -93,8 +93,8 @@
  "notes": [
   "The controlling source is the scanned booklet (fourth edition, 2019); only the speech body — PDF pages 6–17 / printed pages 5–16 (12 pages) — is transcribed. PDF 1–5 (cover, title, bibliographic, publisher preface, and Kalaignar's prefatory poem எரிமலை!) and PDF 18 (back cover) are NOT speech body. The source PDF is not vendored.",
   "The source establishes the speech date (1951-12-06) and venue (சென்னை கிண்டி இன்ஜினியரிங் கல்லூரி) but does NOT separately name an event, occasion, or audience; those remain unset rather than inferred from the venue.",
-  "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from the frozen Tamil. Neither was edited during import. Difficult source-supported forms (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே, பெய்ப்படி, வழக்கு மன்றத்திற்கு, மானிடம்) and the six translator notes are preserved verbatim.",
-  "A source-page boundary is not a paragraph boundary. This is a single continuous speech with no speaker turns, so there are no clean paragraph-boundary transitions; the three audited mid-sentence continuations (printed p.5→6, p.6→7, p.10→11) join with a space, and the other eight page transitions — where a sentence completes at the page edge — are UNRESOLVED paragraph relationships, rendered neutrally (never guessed). Needs the controlling scan TVA_BOK_0065784.",
+  "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from the frozen Tamil. Neither was edited during import. The five difficult source-supported forms the archive keeps transparent (அகம்புற மென்ற அன்றலர்ந்த, அயோத்தியானுக்கு, தண்ட காரணயத்திலே, பெய்ப்படி, வழக்கு மன்றத்திற்கு) and the five translator notes are preserved verbatim. மானிடம் is NOT among them: the source archive establishes it as the ordinary noun for humanity and translates it.",
+  "A source-page boundary is not a paragraph boundary, and printed paragraph relations are taken ONLY from what the source archive establishes — never from punctuation, and never from how many speakers the speech has. The archive establishes three cross-page continuations (printed p.5→6, p.6→7, p.10→11), which join with a space. For the other eight transitions the archive records no printed-paragraph relation at all — neither a continuation nor a new printed paragraph — so they remain UNRESOLVED and are rendered neutrally (never guessed). There are therefore 0 SOURCE-ESTABLISHED clean paragraph-boundary transitions. Only the controlling scan TVA_BOK_0065784 could settle the typographic relations, and this integration does not derive layout facts of its own.",
   "English paragraph structure is the verified translation's own blank-separated blocks; printed-page anchors are provenance only, never paragraph boundaries; the single audited cross-page sentence continuation (printed p.5→6) is recorded in EN_BOUNDARY. No punctuation heuristic is used for either language."
  ]
 }

@@ -37,7 +37,9 @@ guides, indexes, per-speech `metadata.json` / `transcript.md` / `source-notes.md
   faithful English.
 - **`pugazg/kalaignar-public-speeches`** @ `c8abf95834e1d2549644e3607be3dd6f87b802c2` — 5 works, all
   "Verified complete" (`arappor`, `idhaya-perikai`, `poonthottam`, `palli-vazhkkai`,
-  `kalaivanar-nsk-memorial-day`).
+  `kalaivanar-nsk-memorial-day`). _(This records the state inspected during Benchmark #1. That
+  repository has since moved: the Poonthottam source correction merged as
+  `1ef73a709a343390befe55dcdfb029427f527bf4`, which is the pin Benchmark #2 now uses.)_
 
 Repository state is authoritative over any historical conversation summary; readiness was verified
 live, not assumed.
@@ -221,34 +223,66 @@ assembly speech, **without losing their distinct source metadata** and without a
   on the **same** Speeches shelf; routes `/speeches/poonthottam` (+ `/source`). The source establishes the
   date and venue but **no** event/occasion/audience — those stay **unset** (never inferred from the venue).
 - **Source (pinned, unmodified, READ-ONLY):** `pugazg/kalaignar-public-speeches` @
-  `c8abf95834e1d2549644e3607be3dd6f87b802c2`, `speeches/poonthottam`. Controlling scan
-  `TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf` (SHA-256 `2a8bf5f6…`, 49,297,657 bytes, 18 PDF pages). Speech
+  **`1ef73a709a343390befe55dcdfb029427f527bf4`** (the merged source-correction commit — see below),
+  `speeches/poonthottam`. Controlling scan
+  `TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf` (SHA-256 `2a8bf5f6…`, 49,297,657 bytes, 18 PDF pages —
+  scan identity unchanged by the correction). Speech
   body = **PDF 6–17 / printed 5–16 (12 pages)**; PDF 1–5 (cover, title, bibliographic, publisher preface,
   and Kalaignar's prefatory poem `எரிமலை!`) and PDF 18 (back cover) are **not** speech body. **No PDF
-  vendored; no runtime GitHub.** Tamil `verified-complete` (frozen, authoritative); English
-  `verified-complete` faithful reading translation — neither retranslated or normalized; the six difficult
-  source-supported forms and six translator notes are preserved verbatim.
+  vendored; no runtime GitHub.** Tamil `verified-complete` (re-frozen, authoritative); English
+  `verified-complete` faithful reading translation — neither retranslated or normalized; the **five**
+  difficult source-supported forms and **five** translator notes are preserved verbatim.
+- **Upstream source correction (closed).** A post-freeze review of printed p.16 was raised against the
+  source archive and handled there, not here: `pugazg/kalaignar-public-speeches` **PR #1**, squash-merged
+  as `1ef73a70…`. The controlling scan (identity verified) established the print reads **`மாடப்புறா`**,
+  not the previously frozen `மாட்டுப்புறா`; dependent English *mattuppura* → **`dove`**; and `மானிடம்`,
+  previously left untranslated as an uncertain form, is the ordinary noun for **`humanity`** and is now
+  translated, its obsolete note removed (translator notes **6 → 5**). Tamil was re-frozen after a
+  documented T4, a fresh E2 of printed p.16 and a complete 12-page / 11-transition E3 passed, and the
+  archive was reclosed. This implementation PR has been **re-pinned and deterministically regenerated**
+  from that corrected source. No source question remains open.
 - **Subtype-aware model (bounded refactor, NOT a framework):** `data/speeches.ts` `Speech` is now a
   discriminated union on `subtype` — `AssemblySpeech` keeps `legislature` + `event`; `PublicSpeech` has
   `venue` and optional `event`/`occasion`/`audience`, and **no** legislature. The reader/source/route
   metadata branch on `subtype` (public label பொது உரை, venue with a map pin, honorific-prefixed speaker,
   optional extra source facts: scan SHA-256/size, first edition, printed-vs-PDF page range, third-party
   edition-matter note). Udhaya's vendored data is **unchanged** and still validates.
-- **Boundary model (same honesty rule, different profile).** A single continuous speaker → **0** clean
-  paragraph boundaries. The **11** printed page transitions: **3** audited mid-sentence continuations
-  (printed p.5→6, p.6→7, p.10→11; space joins) and **8** UNRESOLVED paragraph relationships (sentence
-  completes at the page edge, next page opens a new sentence) rendered as neutral `unresolved-break` groups.
-  Lexical joins none 0 / space 3 / unknown 0 — no mid-word split, no scan-ambiguous join. English: 12
-  explicit anchors, exactly **1** audited cross-page continuation (p.5→6). audit.md calls p.15→16 a
-  "thought continuation," but since the sentence completes there, it stays **unresolved** (not a
-  same-paragraph claim). **One** blocker class: the 8 unresolved paragraph relationships need the
-  controlling scan (not accessible read-only here; PDF not vendored). No fact is guessed.
+- **Boundary model — relations come only from what the source archive establishes.** Of the **11**
+  printed page transitions, the source audit explicitly establishes **3** cross-page continuations
+  (printed p.5→6, p.6→7, p.10→11; space joins). For the other **8** the archive records **no**
+  printed-paragraph relation at all — it states neither that the paragraph continues nor that a new
+  printed paragraph begins — so those stay **UNRESOLVED** and render as neutral `unresolved-break`
+  groups. There are therefore **0 SOURCE-ESTABLISHED clean paragraph-boundary transitions**. That zero
+  is a statement about the archive's silence, **not** an inference from the speech having one speaker:
+  speaker turns and printed paragraph layout are different facts, and neither punctuation nor speaker
+  count is used as a layout heuristic anywhere. Lexical joins none 0 / space 3 / unknown 0 — no mid-word
+  split, no scan-ambiguous join. English: 12 explicit anchors, exactly **1** audited cross-page
+  continuation (p.5→6). `audit.md` describes p.15→16 as a "thought/sentence continuation", but continuity
+  of thought is not a typographic claim, so it stays **unresolved** rather than promoted. **One** blocker
+  class: the 8 unresolved relations could only be settled by the controlling scan, and this integration
+  deliberately derives no layout facts of its own. No fact is guessed.
 - **New files:** `scripts/import-poonthottam.mjs`, `scripts/validate-poonthottam.mjs`,
   `public/data/speeches/poonthottam/{speech.json, provenance.json}`; catalog entry + `SPEECH_SLUGS` +
   sitemap (auto). Deterministic importer, fail-closed on source-HEAD mismatch.
 - **Validation (local):** `tsc` clean; `npm run build` success (adds the two Poonthottam routes; 1260
-  static pages); `git diff --check` clean; Poonthottam validator **ALL PASS** (20 checks); Udhaya validator
-  **ALL PASS** (regression); deterministic re-generation = no diff; wrong-HEAD import **fails closed**.
+  static pages); `git diff --check` clean; Poonthottam validator **ALL PASS** (26 checks, including the
+  corrected-source assertions: `மாடப்புறா` present / `மாட்டுப்புறா` absent, `humanity` + `dove`, no
+  `mattuppura`, no untranslated `மானிடம்`, exactly 5 translator notes, 0 source-established clean
+  paragraph boundaries, and no speaker-count inference in the importer); Udhaya validator **ALL PASS**
+  (regression); deterministic re-generation = no diff; wrong-HEAD import **fails closed**.
+- **Reviewer closeout (this correction round).**
+  1. **Re-pinned + regenerated** from the corrected source `1ef73a70…`; every Poonthottam pin now agrees
+     (catalog, validator, both generated artifacts, this handover, the PR description).
+  2. **Boundary rationale corrected** — the "single continuous speaker ⇒ 0 clean paragraph boundaries"
+     reasoning was invalid and is gone from the importer, generated provenance, validator and docs. The
+     zero now rests on the archive publishing no printed-paragraph relation for those transitions.
+  3. **Benchmark-#1 provenance regression fixed** — `SpeechSource.tsx` no longer labels a scan/PDF page
+     range as a *printed* range when the source publishes no `printedSpeechPages`. Poonthottam shows both
+     (scan 6–17 · printed 5–16); **Udhaya keeps a scan-page range only** and gains no fabricated printed
+     claim.
+  4. **Language-accessibility fix** — the English third-party edition-matter note is now the explicitly
+     English `editionMatterNoteEn` and renders `lang="en"` even when the UI is Tamil (previously it
+     inherited `lang={lang}` and could be marked as Tamil).
 - **Rights:** same nationalisation model (announced 2024-08-22; GO handed to Rajathi Ammal 2024-12-22;
   number/issue date unverified). Kept distinct from the 2019 fourth-edition's third-party publisher/preface
   material (`கி. வீரமணி`, 2018) and the project-created English.

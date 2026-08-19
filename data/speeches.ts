@@ -120,7 +120,9 @@ export type SpeechProvenance = {
     printedSpeechPages?: string; // printed page range when it differs from the PDF/scan range
     firstEditionTa?: string; // a distinct first-edition statement, where the edition prints one
     publisherAddressTa?: string; // fuller publisher address, where recorded
-    editionMatterNote?: string; // third-party front matter (e.g. a publisher preface author/date)
+    // Third-party front-matter note (e.g. a publisher preface author/date). This field is written
+    // in ENGLISH, so the reader must mark it lang="en" even when the surrounding UI is Tamil.
+    editionMatterNoteEn?: string;
   };
   transcription: Record<string, unknown>; // verbatim from source metadata.json
   translation: Record<string, unknown>; // verbatim from source metadata.json

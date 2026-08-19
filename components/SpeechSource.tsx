@@ -62,14 +62,24 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
               {s.printedSpeechPages ? ` (${ta ? "அச்சு" : "printed"} ${s.printedSpeechPages})` : ""} · {ta ? "முன்பகுதி" : "front"} {s.frontMatterScanPages} · {ta ? "பின்பகுதி" : "back"} {s.advertisementScanPages}
             </Row>
           </dl>
+          {/* Page-range wording is subtype-agnostic but PROVENANCE-honest: a printed-page range is
+              named "printed" ONLY when the source actually publishes one (`printedSpeechPages`).
+              Where it does not (e.g. Udhaya Kathir), the scan range is described as scan/PDF pages
+              and is never relabelled as a printed-page range. */}
           <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
             {ta
-              ? `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (${ta ? "அச்சுப் பக்கம் " : ""}${s.printedSpeechPages ?? s.speechScanPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
-              : `The controlling source is the scanned printed booklet; only the speech pages (printed ${s.printedSpeechPages ?? s.speechScanPages}) are transcribed. The source PDF is not vendored here.`}
+              ? s.printedSpeechPages
+                ? `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (scan பக்கம் ${s.speechScanPages} · அச்சுப் பக்கம் ${s.printedSpeechPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
+                : `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் scan பக்கங்கள் மட்டுமே (${s.speechScanPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
+              : s.printedSpeechPages
+                ? `The controlling source is the scanned printed booklet; only the speech pages (scan ${s.speechScanPages} · printed ${s.printedSpeechPages}) are transcribed. The source PDF is not vendored here.`
+                : `The controlling source is the scanned printed booklet; only the speech scan pages (${s.speechScanPages}) are transcribed. The source PDF is not vendored here.`}
           </p>
-          {s.editionMatterNote && (
-            <p className="mt-2 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/60 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/60" lang={lang}>
-              {s.editionMatterNote}
+          {/* Written in English in the source provenance → always marked lang="en", even when the
+              surrounding UI language is Tamil. */}
+          {s.editionMatterNoteEn && (
+            <p className="mt-2 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/60 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/60" lang="en">
+              {s.editionMatterNoteEn}
             </p>
           )}
         </section>
