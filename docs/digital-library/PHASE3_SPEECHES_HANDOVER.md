@@ -5,11 +5,32 @@ _Web activity in `pugazg/kalaignar-autobiography`. The controlling cross-project
 hold** (mobile Activity 6 / PR #15 was merged for preservation on 2026-08-18; no new mobile work).
 No `mobile/` files, source repositories, or PDFs were modified in any of these activities._
 
-> **Benchmark status.** Benchmark #1 — உதயக் கதிர் / Udhaya Kathir (assembly speech) — is
-> **COMPLETE / MERGED / PRODUCTION-VERIFIED** (PR #18, squash `13ddf04f`, live 2026-08-18).
-> Benchmark #2 — பூந்தோட்டம் / Poonthottam (the first **public** speech) — is **IN REVIEW** (branch
-> `digital-library/phase-3-poonthottam`, reviewer-gated PR, **not merged, not production-live**).
-> **Phase 3 is ACTIVE, not complete** — more released speeches remain. See **§ Benchmark #2** below.
+> **Benchmark status (current).**
+>
+> - **Benchmark #1 — உதயக் கதிர் / Udhaya Kathir** (assembly speech): **COMPLETE / MERGED /
+>   PRODUCTION-VERIFIED**. PR #18, squash merge `13ddf04f01b6a75024985b6df172deace9d26e80`,
+>   production verified 2026-08-18.
+> - **Benchmark #2 — பூந்தோட்டம் / Poonthottam** (the first **public** speech): **COMPLETE / MERGED /
+>   PRODUCTION-VERIFIED**. PR #20, reviewed head `0906919e21066ab9e917985d51f60086823ad8ce`,
+>   squash merge `2777064490910c02f5aa6938b9b6872b15e21e7c`, production verified 2026-08-19.
+> - **Post-production provenance hotfix:** PR #21, reviewed head
+>   `4135c29ed3a2ad1322397a68d1f4d4b09c840d45`, squash merge
+>   `acb9721127de72c7575c035ccccf877deeb6421e`, production verified 2026-08-19.
+>
+> **Last production application-code checkpoint:
+> `acb9721127de72c7575c035ccccf877deeb6421e`** (the PR #21 squash merge).
+>
+> **Live GitHub `main` is authoritative and must always be inspected** — do not treat the SHA above
+> as a permanent claim about the repository's latest commit. This handover-closeout PR is
+> **documentation-only**, so merging it advances repository `main` **without changing the deployed
+> application code**. `acb97211…` therefore identifies the application-code / production checkpoint,
+> not the newest commit on `main`.
+>
+> `/read` publishes **6 works across 5 non-empty shelves**, with **both** speeches on the single
+> **Speeches / உரைகள்** shelf.
+>
+> **Phase 3 remains ACTIVE — it is NOT complete**; more released speeches remain.
+> **Benchmark #3 has NOT been started** and is not selected by this handover.
 
 ## Post-mobile baseline
 
@@ -131,15 +152,23 @@ pages**, preserving BOTH reading continuity AND exact page provenance:
   released translation structure (37 `paragraph-boundary` = the translator's own blank-separated blocks;
   3 `heading-note-boundary` at pages 5/8/44; 2 `same-paragraph` continuations at p22 em-dash / p24 comma).
   Anchors are provenance only — never a paragraph boundary in themselves — and the English text is verbatim.
-- **Source-audited results (Tamil):** 31 same-paragraph, 3 paragraph boundaries (speaker turns), 0
+- **Source-audited results (Tamil):** 31 same-paragraph, **3 source-established paragraph boundaries**
+  (the source evidence for these three is a new parliamentary speaker turn; "speaker turn" is that
+  per-transition evidence, **not** the generic meaning of the `paragraphBoundary` field, which counts
+  source-established paragraph boundaries for any subtype), 0
   heading boundaries, **7 unresolved paragraph relationships**; lexical joins **none 10 / space 16 /
   unknown 5**. 147 resolved paragraphs + 14 unresolved-group runs over 192 source-page segments; English
   = 168 paragraphs over 170 segments (2 cross-anchor continuations).
 - **TWO BLOCKER CLASSES (both neutral, neither guessed), in `provenance.json.blockers` + the source page:**
-  (A) **7 unresolved paragraph relationships**; (B) **5 unresolved lexical joins**. Both need read-only
-  inspection of the controlling scan **`TVA_BOK_0065650_உதயக்_கதிர்.pdf`** (pp.5–46), which was **not
-  accessible read-only** in this environment (not on archive.org / tamildigitallibrary.in; PDF not
-  vendored). **No relationship or spacing is fabricated.**
+  (A) **7 unresolved paragraph relationships**; (B) **5 unresolved lexical joins**. **Durable rule:**
+  resolving either requires an **upstream source-archive visual review** of the controlling scan
+  **`TVA_BOK_0065650_உதயக்_கதிர்.pdf`** (speech scan pp.5–46) that explicitly records the missing
+  printed fact — the paragraph relation, or the exact joined-vs-spaced form. The source PDF is not
+  vendored here and **this Digital Library does not establish those typographic facts independently**;
+  rendering stays neutral until the archive settles them. **No relationship or spacing is fabricated.**
+  (Earlier revisions described this in terms of whether the scan happened to be reachable in one
+  developer environment; that was a temporary workflow observation, not durable provenance, and was
+  removed by PR #21.)
 - **Vendored data:** `public/data/speeches/udhaya-kathir/{speech.json, provenance.json}` — every segment
   keeps its `sourcePage`; provenance never flattened.
 - **Reader:** `components/SpeechReader.tsx` — a resolved paragraph renders as ONE `<p>` (joins per
@@ -147,7 +176,9 @@ pages**, preserving BOTH reading continuity AND exact page provenance:
   lexical join shows an inline `⟨p.N⟩` marker; an unresolved paragraph relationship renders as a neutral
   `role="group"` region with a source-page rule between the runs; printed `##` headings; translation-note
   block; faithful minimal Markdown; Tamil default; dark mode; responsive.
-- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` — **17 requirements, all pass**:
+- **Deterministic validation:** `scripts/validate-udhaya-kathir.mjs` — **17 requirements, all pass** _(the
+  count at the time of the Benchmark-#1 activity; the validator has since grown — see the current
+  validation status under Benchmark #2)_:
   all 41 Tamil transitions present once; every relation/join matches the audit (no punctuation
   inference); the 5 scan-pending sandhi joins are `unknown` (never silently `space`) and keep both
   fragments verbatim; no unknown paragraph relation is a semantic paragraph; named renders `அந்த இடத்திலே`,
@@ -211,11 +242,14 @@ ingestion framework, a `/speeches` collection landing, or the project-wide exist
 > The two sections above (**What this activity did** … **What has NOT been implemented**) describe
 > the **Benchmark #1** activity. Benchmark #2 is recorded separately below.
 
-## Benchmark #2 — பூந்தோட்டம் / Poonthottam (public speech) — 🚧 IN REVIEW
+## Benchmark #2 — பூந்தோட்டம் / Poonthottam (public speech) — ✅ COMPLETE
 
 The second benchmark proves the shared speech architecture supports a **public** speech alongside the
 assembly speech, **without losing their distinct source metadata** and without a second reader. It is
-**reviewer-gated and NOT merged**; it is **not production-live**.
+**COMPLETE / MERGED / PRODUCTION-VERIFIED**: PR #20, reviewed head
+`0906919e21066ab9e917985d51f60086823ad8ce`, squash merge
+`2777064490910c02f5aa6938b9b6872b15e21e7c` (2026-08-19T09:40:26Z), production verified 2026-08-19.
+A follow-up presentation hotfix (PR #21) is recorded at the end of this section.
 
 - **Branch:** `digital-library/phase-3-poonthottam` (from live `main` `13ddf04f01b6a75024985b6df172deace9d26e80`).
 - **Work:** `poonthottam` — பூந்தோட்டம் / Poonthottam. Kalaignar's **1951-12-06** address at
@@ -223,7 +257,9 @@ assembly speech, **without losing their distinct source metadata** and without a
   on the **same** Speeches shelf; routes `/speeches/poonthottam` (+ `/source`). The source establishes the
   date and venue but **no** event/occasion/audience — those stay **unset** (never inferred from the venue).
 - **Source (pinned, unmodified, READ-ONLY):** `pugazg/kalaignar-public-speeches` @
-  **`1ef73a709a343390befe55dcdfb029427f527bf4`** (the merged source-correction commit — see below),
+  **`1ef73a709a343390befe55dcdfb029427f527bf4`** — the authoritative pin, being the squash merge of
+  source-correction **PR #1** in `pugazg/kalaignar-public-speeches` (**closed / merged**; the source
+  archive was reclosed with both layers `verified-complete`) —
   `speeches/poonthottam`. Controlling scan
   `TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf` (SHA-256 `2a8bf5f6…`, 49,297,657 bytes, 18 PDF pages —
   scan identity unchanged by the correction). Speech
@@ -264,25 +300,31 @@ assembly speech, **without losing their distinct source metadata** and without a
 - **New files:** `scripts/import-poonthottam.mjs`, `scripts/validate-poonthottam.mjs`,
   `public/data/speeches/poonthottam/{speech.json, provenance.json}`; catalog entry + `SPEECH_SLUGS` +
   sitemap (auto). Deterministic importer, fail-closed on source-HEAD mismatch.
-- **Validation (local):** `tsc` clean; `npm run build` success (adds the two Poonthottam routes; 1260
-  static pages); `git diff --check` clean; Poonthottam validator **ALL PASS** (26 checks, including the
-  corrected-source assertions: `மாடப்புறா` present / `மாட்டுப்புறா` absent, `humanity` + `dove`, no
-  `mattuppura`, no untranslated `மானிடம்`, exactly 5 translator notes, 0 source-established clean
-  paragraph boundaries, and no speaker-count inference in the importer); Udhaya validator **ALL PASS**
-  (regression); deterministic re-generation = no diff; wrong-HEAD import **fails closed**.
-- **Reviewer closeout (this correction round).**
-  1. **Re-pinned + regenerated** from the corrected source `1ef73a70…`; every Poonthottam pin now agrees
-     (catalog, validator, both generated artifacts, this handover, the PR description).
-  2. **Boundary rationale corrected** — the "single continuous speaker ⇒ 0 clean paragraph boundaries"
-     reasoning was invalid and is gone from the importer, generated provenance, validator and docs. The
-     zero now rests on the archive publishing no printed-paragraph relation for those transitions.
-  3. **Benchmark-#1 provenance regression fixed** — `SpeechSource.tsx` no longer labels a scan/PDF page
-     range as a *printed* range when the source publishes no `printedSpeechPages`. Poonthottam shows both
-     (scan 6–17 · printed 5–16); **Udhaya keeps a scan-page range only** and gains no fabricated printed
-     claim.
-  4. **Language-accessibility fix** — the English third-party edition-matter note is now the explicitly
-     English `editionMatterNoteEn` and renders `lang="en"` even when the UI is Tamil (previously it
-     inherited `lang={lang}` and could be marked as Tamil).
+- **Validation (current, after PR #21).** On merged `main`: `tsc` clean; `npm run build` success
+  (**1260** static pages); `git diff --check` clean; both importers deterministic (a second run against
+  the pinned source produces **no diff**) and both **fail closed** on a source-HEAD mismatch, writing
+  nothing. **Poonthottam validator:** 45 assertions across 29 numbered requirement groups.
+  **Udhaya validator:** 26 assertions across numbered requirement groups up to 22 plus one named extra
+  check. (Earlier revisions described Udhaya as "17 requirements" and Poonthottam as "26 checks"; both
+  grew when PR #21 added regression cover.) Beyond the source-fidelity requirements, the validators now
+  also protect: durable blocker-`resolution` wording (the upstream source-archive rule), the **absence**
+  of environment-specific availability wording in generated provenance, the subtype-neutral
+  source-established boundary label, that `SpeechSource` actually renders `blockers[].resolution`, and
+  that blocker/boundary/join counts remain unchanged.
+- **Post-production provenance hotfix — PR #21 (✅ merged, production-verified 2026-08-19).** Production
+  verification of PR #20 surfaced a **presentation-only** defect — no canonical, source or count defect:
+  the durable blocker `resolution` existed in provenance but was **never rendered**; the Tamil UI
+  hardcoded temporary environment-availability wording (`இச்சூழலில் கிடைக்கவில்லை`); and the generic
+  boundary label read "speaker turn", which is Assembly-specific and wrong for a public speech.
+  PR #21 (reviewed head `4135c29ed3a2ad1322397a68d1f4d4b09c840d45`, squash merge
+  `acb9721127de72c7575c035ccccf877deeb6421e`) renders **both** blocker `detail` and `resolution`,
+  removes the environment-availability language, states the source-authority rule in Tamil, adopts the
+  generic label **"Source-established paragraph boundaries" / "மூலத்தால் உறுதிசெய்யப்பட்ட பத்தி எல்லைகள்"**,
+  cleans Udhaya's generated blocker resolutions to the durable upstream-review wording, and hardens both
+  validators. **No canonical speech data changed — both `speech.json` files stayed byte-identical.**
+  Verified live afterwards: Poonthottam **source-established paragraph boundaries = 0**, **unresolved
+  paragraph relationships = 8**; Udhaya **= 3**, **7 unresolved relations**, **5 unresolved lexical
+  joins**; and **no** environment-specific availability wording remains on either production source page.
 - **Rights:** same nationalisation model (announced 2024-08-22; GO handed to Rajathi Ammal 2024-12-22;
   number/issue date unverified). Kept distinct from the 2019 fourth-edition's third-party publisher/preface
   material (`கி. வீரமணி`, 2018) and the project-created English.
@@ -291,9 +333,18 @@ assembly speech, **without losing their distinct source metadata** and without a
 
 ## Next Phase-3 work (for a future, reviewer-gated activity)
 
-- Integrate additional released speeches one at a time (e.g. the rest of the assembly industries-debate
-  set, then the strongest public-speech such as `arappor`), reusing this reader/importer pattern.
-- Add a `/speeches` collection landing once ≥ a few speeches are published (with subtype grouping).
-- Extract a small shared speech adapter only after a second speech proves the shape — not prematurely.
-- Capture the exact Government Order number/issue date when verified, and run the project-wide rights
-  audit across existing works.
+- **The shared speech architecture is now proven across BOTH subtypes** — `assembly-speech`
+  (Udhaya Kathir) and `public-speech` (Poonthottam) — on one shelf, one reader, one provenance page.
+  The earlier guidance to "extract a shared adapter only after a second speech proves the shape" is
+  superseded: the second benchmark has happened, and the discriminated-union model is the proven shape.
+- Continue **one released speech per reviewer-gated activity**. No bulk import, no mass ingestion.
+- **Do not** create a separate Public Speeches shelf — assembly/public remain **subtypes** of the single
+  Speeches / உரைகள் shelf.
+- **Do not** add a `/speeches` collection landing until enough published works justify it (and only with
+  separate approval).
+- **Do not** generalize ingestion prematurely; importers stay work-specific and commit-pinned.
+- **Benchmark #3 is NOT selected by this handover activity.** The next candidate must be chosen by
+  inspecting the **live** `main` of both speech source repositories and judging current release and
+  provenance strength — not from historical prose in this document.
+- Still outstanding project-wide: capture the exact Government Order number/issue date when verified, and
+  run the project-wide rights audit across existing works.
