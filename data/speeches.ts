@@ -58,8 +58,10 @@ type SpeechBase = {
   sourceCommit: string;
   shelf: "speeches";
   readerStructure: "speech";
-  date: string; // ISO where the source establishes it
-  year: number;
+  // ISO date where the SOURCE establishes it. `null` when the examined source states no speech
+  // date — a publication/edition date is never substituted for a speech date.
+  date: string | null;
+  year: number | null;
   title: SpeechBilingualText;
   speechType: string;
   speaker: SpeechBilingualName;
@@ -83,7 +85,10 @@ export type AssemblySpeech = SpeechBase & {
 // inferred from a venue). A public speech has NO legislature.
 export type PublicSpeech = SpeechBase & {
   subtype: "public-speech";
-  venue: SpeechBilingualText;
+  // Every one of these is OPTIONAL because a booklet may establish none of them. `venue` is null
+  // when the examined source does not state one (Arappor); it carries the source-stated venue when
+  // it does (Poonthottam). Nothing here is ever inferred from an edition/publication fact.
+  venue?: SpeechBilingualText | null;
   event?: SpeechBilingualText | null;
   occasion?: SpeechBilingualText | null;
   audience?: SpeechBilingualText | null;
@@ -123,6 +128,10 @@ export type SpeechProvenance = {
     // Third-party front-matter note (e.g. a publisher preface author/date). This field is written
     // in ENGLISH, so the reader must mark it lang="en" even when the surrounding UI is Tamil.
     editionMatterNoteEn?: string;
+    // Explicit record that the examined source states no speech date / venue / event. These are
+    // SOURCE FACTS, not implementation blockers, and are surfaced as such on the provenance page.
+    speechFactsNotStated?: string[];
+    speechFactsNoteEn?: string;
   };
   transcription: Record<string, unknown>; // verbatim from source metadata.json
   translation: Record<string, unknown>; // verbatim from source metadata.json
@@ -185,5 +194,5 @@ export type SpeechProvenance = {
 // Lightweight catalog of integrated speech slugs (build/import authority; the public catalog
 // entry lives in data/library.ts). One benchmark per subtype so far: an assembly speech
 // (udhaya-kathir) and a public speech (poonthottam).
-export const SPEECH_SLUGS = ["udhaya-kathir", "poonthottam"] as const;
+export const SPEECH_SLUGS = ["udhaya-kathir", "poonthottam", "arappor"] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];

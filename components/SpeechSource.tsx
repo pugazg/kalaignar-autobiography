@@ -77,6 +77,27 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </p>
           {/* Written in English in the source provenance → always marked lang="en", even when the
               surrounding UI language is Tamil. */}
+          {/* SOURCE FACTS THE EXAMINED SOURCE DOES NOT STATE. These are valid source facts — not
+              implementation blockers and not missing work — so they are stated plainly here, and a
+              publication/edition date is never substituted for a speech date. */}
+          {s.speechFactsNotStated?.length ? (
+            <div className="mt-3 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-4 py-2.5 dark:border-white/25 dark:bg-white/[0.03]">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-night-text/50" lang={lang}>
+                {ta ? "மூலம் குறிப்பிடாத உரை விவரங்கள்" : "Speech facts not stated in the examined source"}
+              </p>
+              <ul className="mt-1.5 space-y-1 text-xs leading-relaxed text-ink/65 dark:text-night-text/65">
+                {s.speechFactsNotStated.map((f, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span aria-hidden className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ink/30 dark:bg-white/30" />
+                    <span lang="en">{f}</span>
+                  </li>
+                ))}
+              </ul>
+              {s.speechFactsNoteEn && (
+                <p className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang="en">{s.speechFactsNoteEn}</p>
+              )}
+            </div>
+          ) : null}
           {s.editionMatterNoteEn && (
             <p className="mt-2 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/60 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/60" lang="en">
               {s.editionMatterNoteEn}

@@ -375,6 +375,43 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     },
     provenanceHref: "/speeches/poonthottam/source",
   },
+  {
+    // Digital Library Phase 3 — Speeches. Third benchmark: the first speech whose examined source
+    // establishes NO speech date, venue or event. Those absences are source facts and are carried
+    // as such — the April 1949 second edition is publication/edition context, never a speech date.
+    id: "arappor",
+    slug: "arappor",
+    titleTa: "அறப்போர்",
+    titleEn: "Arappor",
+    shelf: "speeches",
+    subtype: "public-speech",
+    readerStructure: "speech",
+    href: "/speeches/arappor",
+    state: "published",
+    descTa: "ஏப்ரல் 1949 இரண்டாம் பதிப்பில் பாதுகாக்கப்பட்ட பொது உரை",
+    descEn: "Public speech preserved in the April 1949 second-edition booklet",
+    sourceRepo: "pugazg/kalaignar-public-speeches",
+    sourcePath: "speeches/arappor",
+    sourceCommit: "1ef73a709a343390befe55dcdfb029427f527bf4",
+    // Publication/edition context only — the source states no speech date.
+    edition: "அறப்போர் — இரண்டாம்பதிப்பு, ஏப்ரல் 1949 (அறிவுப்பண்ணை)",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // unitCount intentionally UNSET — the source publishes no meaningful printed section count for
+    // this booklet, and an archive-created number must never be presented as printed structure.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil speech; it does not extend to the project-created English translation or to third-party edition material (the 1949 publisher's imprint, advertisements, cover/design).",
+    },
+    provenanceHref: "/speeches/arappor/source",
+  },
 ];
 
 // ── Selectors ────────────────────────────────────────────────────────────────
