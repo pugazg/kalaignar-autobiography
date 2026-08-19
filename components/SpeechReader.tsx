@@ -190,6 +190,10 @@ export default function SpeechReader({ slug }: { slug: string }) {
   );
 }
 
+// `whitespace-pre-line` on the paragraph/run containers preserves INTENTIONAL source line breaks
+// (a Markdown hard break inside one source paragraph, e.g. the lineated p.9 language-policy
+// quotation) while still collapsing ordinary wrapping whitespace. Texts without a newline are
+// unaffected, so this changes nothing for Udhaya or Poonthottam.
 // Render the ordered block stream. A run of [paragraph, unresolved-break, paragraph, …] is
 // wrapped in ONE non-<p> `role="group"` so an unresolved paragraph relationship asserts neither
 // a break nor a continuation; standalone resolved paragraphs render as <p>.
@@ -229,7 +233,7 @@ function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
         continue;
       }
       out.push(
-        <p key={i} className="mb-5 leading-loose text-ink/90 dark:text-night-text/90">
+        <p key={i} className="mb-5 whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90">
           {renderSegments(b.segments, ta)}
         </p>,
       );
@@ -259,7 +263,7 @@ function UnresolvedGroup({ items, ta }: { items: SpeechBlock[]; ta: boolean }) {
         it.kind === "unresolved-break" ? (
           <PageRule key={k} toPage={it.toPage} note={it.note} ta={ta} />
         ) : it.kind === "paragraph" ? (
-          <div key={k} className="leading-loose text-ink/90 dark:text-night-text/90">
+          <div key={k} className="whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90">
             {renderSegments(it.segments, ta)}
           </div>
         ) : null,

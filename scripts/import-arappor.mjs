@@ -107,10 +107,51 @@ const PAGE_RE = /^###\s+PDF page\s+(\d+)\s*[-—]\s*printed page\s+(\d+)\s*$/;
 // horizontal rules are skipped. Two blank-separated text lines on one page are separate printed
 // paragraphs (the archive states paragraph boundaries are preserved); CROSS-page relationships come
 // only from the audited table above.
-function parseTamil(text) {
+// ── Markdown block semantics ────────────────────────────────────────────────────────────────────
+// Three distinct things must not be confused:
+//   1. BLANK LINE            → a paragraph/block boundary;
+//   2. MARKDOWN HARD BREAK   → two trailing spaces + newline: an intentional line break INSIDE the
+//                              same paragraph (the source uses this for the lineated p.9
+//                              language-policy quotation);
+//   3. PAGE ANCHOR           → provenance only; its cross-page paragraph relationship comes solely
+//                              from the audited TA_BOUNDARY / EN_BOUNDARY tables.
+// Trailing whitespace therefore must NOT be stripped before hard-break detection — doing so
+// destroys the very information that distinguishes "line··\n" from "line\n".
+// Splits a speech body into ordered blocks. Each text block keeps its own lines so intentional
+// lineation survives; `text` joins them with "\n" at a hard break and a space otherwise
+// (ordinary Markdown soft-wrap semantics).
+function splitBlocks(text) {
   const body = text.split("## Speech body")[1].split("\n## ")[0];
+  const out = [];
+  let page = null, lines = [], started = false;
+  const flush = () => {
+    // Anything before the FIRST page marker is section preamble (the Tamil body opens with a scope
+    // sentence and a per-page verification table), never speech prose.
+    if (!lines.length || !started) { lines = []; return; }
+    const parts = lines.map((l) => l.replace(/[ \t]+$/, ""));
+    let joined = parts[0];
+    for (let i = 1; i < parts.length; i++) joined += (/[ \t]{2,}$/.test(lines[i - 1]) ? "\n" : " ") + parts[i];
+    out.push({ kind: "text", page, lines: parts, text: joined });
+    lines = [];
+  };
+  for (const raw of body.split("\n")) {
+    const line = raw.replace(/\r$/, "");
+    const trimmed = line.trim();
+    let m;
+    if ((m = trimmed.match(PAGE_RE))) { flush(); started = true; page = Number(m[2]); out.push({ kind: "page", page }); continue; }
+    if (trimmed === "" || /^-{3,}$/.test(trimmed) || trimmed.startsWith("|")) { flush(); continue; }
+    if ((m = trimmed.match(/^####\s+(.*)$/))) { flush(); if (started) out.push({ kind: "heading", page, text: m[1].trim() }); continue; }
+    if ((m = trimmed.match(/^>\s?(.*)$/))) { flush(); if (started) out.push({ kind: "note", page, text: m[1].trim() }); continue; }
+    if (/^#{1,3}\s+/.test(trimmed)) { flush(); continue; }
+    lines.push(line);
+  }
+  flush();
+  return out;
+}
+
+function parseTamil(text) {
   const blocks = [];
-  let printedPage = null, pendingToPage = null, para = null, started = false;
+  let para = null, pendingToPage = null;
   const flush = () => {
     if (para) {
       para.sourcePages = [...new Set(para.segments.map((s) => s.sourcePage))].sort((a, b) => a - b);
@@ -119,33 +160,27 @@ function parseTamil(text) {
       para = null;
     }
   };
-  const startPara = (t, p) => { para = { kind: "paragraph", segments: [{ text: t, sourcePage: p, joinToNext: "end" }], sourcePages: [] }; };
-  for (const raw of body.split("\n")) {
-    const line = raw.replace(/\s+$/, "");
-    let m;
-    if ((m = line.match(PAGE_RE))) { started = true; printedPage = Number(m[2]); pendingToPage = printedPage; continue; }
-    if (!started) continue;
-    if (line.trim() === "" || /^-{3,}$/.test(line) || line.trim().startsWith("|")) continue;
-    if ((m = line.match(/^####\s+(.*)$/))) { flush(); blocks.push({ kind: "heading", text: m[1].trim(), sourcePage: printedPage }); pendingToPage = null; continue; }
-    if (/^#{1,3}\s+/.test(line)) continue;
+  for (const b of splitBlocks(text)) {
+    if (b.kind === "page") { pendingToPage = b.page; continue; }
+    if (b.kind === "heading") { flush(); blocks.push({ kind: "heading", text: b.text, sourcePage: b.page }); pendingToPage = null; continue; }
+    if (b.kind === "note") { flush(); blocks.push({ kind: "note", text: b.text, sourcePage: b.page }); pendingToPage = null; continue; }
     if (!para) {
-      startPara(line, printedPage);
+      para = { kind: "paragraph", segments: [{ text: b.text, sourcePage: b.page, joinToNext: "end" }], sourcePages: [] };
     } else if (pendingToPage != null) {
       const entry = TA_BOUNDARY[pendingToPage];
       if (!entry) throw new Error(`no audited Tamil boundary entry for printed page ${pendingToPage}`);
       if (entry.rel === "same-paragraph") {
         para.segments[para.segments.length - 1].joinToNext = entry.join;
-        para.segments.push({ text: line, sourcePage: printedPage, joinToNext: "end" });
+        para.segments.push({ text: b.text, sourcePage: b.page, joinToNext: "end" });
       } else {
-        // Unresolved printed-paragraph relation → NEUTRAL: close the run, emit an unresolved-break,
-        // open the next run. The reader groups both runs in one non-<p> role="group".
         flush();
         blocks.push({ kind: "unresolved-break", toPage: pendingToPage, relation: "unknown", note: entry.ev });
-        startPara(line, printedPage);
+        para = { kind: "paragraph", segments: [{ text: b.text, sourcePage: b.page, joinToNext: "end" }], sourcePages: [] };
       }
     } else {
+      // Another blank-line-separated block on the SAME page = a separate printed paragraph.
       flush();
-      startPara(line, printedPage);
+      para = { kind: "paragraph", segments: [{ text: b.text, sourcePage: b.page, joinToNext: "end" }], sourcePages: [] };
     }
     pendingToPage = null;
   }
@@ -176,9 +211,8 @@ EN_BOUNDARY[3] = { rel: "heading-boundary" };   // the printed title opens the s
 EN_BOUNDARY[11] = { rel: "paragraph-boundary" }; // the single clean page-transition paragraph break
 
 function parseEnglish(text) {
-  const body = text.split("## Speech body")[1].split("\n## ")[0];
   const blocks = [];
-  let printedPage = null, pendingAnchor = null, para = null, started = false;
+  let para = null, pendingAnchor = null;
   const flush = () => {
     if (para) {
       para.sourcePages = [...new Set(para.segments.map((s) => s.sourcePage).filter((p) => p != null))].sort((a, b) => a - b);
@@ -187,26 +221,20 @@ function parseEnglish(text) {
       para = null;
     }
   };
-  for (const raw of body.split("\n")) {
-    const line = raw.replace(/\s+$/, "");
-    let m;
-    if ((m = line.match(PAGE_RE))) { started = true; printedPage = Number(m[2]); pendingAnchor = printedPage; continue; }
-    if (!started) continue;
-    if (line.trim() === "" || /^-{3,}$/.test(line) || line.trim().startsWith("|")) continue;
-    if ((m = line.match(/^####\s+(.*)$/))) { flush(); blocks.push({ kind: "heading", text: m[1].trim(), sourcePage: printedPage }); pendingAnchor = null; continue; }
-    if ((m = line.match(/^>\s?(.*)$/))) { flush(); blocks.push({ kind: "note", text: m[1].trim(), sourcePage: printedPage }); pendingAnchor = null; continue; }
-    if (/^#{1,3}\s+/.test(line)) continue;
+  for (const b of splitBlocks(text)) {
+    if (b.kind === "page") { pendingAnchor = b.page; continue; }
+    if (b.kind === "heading") { flush(); blocks.push({ kind: "heading", text: b.text, sourcePage: b.page }); pendingAnchor = null; continue; }
+    if (b.kind === "note") { flush(); blocks.push({ kind: "note", text: b.text, sourcePage: b.page }); pendingAnchor = null; continue; }
     const entry = pendingAnchor != null ? EN_BOUNDARY[pendingAnchor] : null;
     if (para && entry && entry.rel === "same-paragraph") {
-      // The audited table says ONE translator paragraph spans this anchor: keep the paragraph open
-      // and append the next page's fragment as a further segment, preserving BOTH source pages.
+      // The audited table says ONE translator paragraph spans this anchor: keep it open and append
+      // the next page's block as a further segment, preserving BOTH source pages. Intra-segment
+      // lineation is independent of this cross-page join.
       para.segments[para.segments.length - 1].joinToNext = entry.join;
-      para.segments.push({ text: line, sourcePage: printedPage, joinToNext: "end" });
+      para.segments.push({ text: b.text, sourcePage: b.page, joinToNext: "end" });
     } else {
-      // A distinct translator paragraph (a blank-separated block, or the one audited clean
-      // page-transition boundary at printed p.11).
       flush();
-      para = { kind: "paragraph", segments: [{ text: line, sourcePage: printedPage, joinToNext: "end" }], sourcePages: [] };
+      para = { kind: "paragraph", segments: [{ text: b.text, sourcePage: b.page, joinToNext: "end" }], sourcePages: [] };
     }
     pendingAnchor = null;
   }
@@ -242,7 +270,9 @@ function streamStats(blocks) {
     else if (b.kind === "paragraph") {
       const adj = blocks[i - 1]?.kind === "unresolved-break" || blocks[i + 1]?.kind === "unresolved-break";
       if (adj) unresolvedRuns++; else resolvedParagraphs++;
-      if (b.segments.length > 1) crossPageParagraphs++;
+      // A cross-page paragraph = one spanning MORE THAN ONE DISTINCT source page (a paragraph may
+      // now hold several same-page structural pieces, so segment count is not the criterion).
+      if (new Set(b.segments.map((sg) => sg.sourcePage).filter((x) => x != null)).size > 1) crossPageParagraphs++;
       for (const s of b.segments) {
         segments++;
         if (s.sourcePage != null) pages.add(s.sourcePage);

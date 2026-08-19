@@ -102,9 +102,19 @@ check(/publication\/edition|second-edition booklet|இரண்டாம் ப�
 check(!/null|undefined/.test(vTa.texts.join(" ") + vEn.texts.join(" ")), "13. no literal null/undefined in imported canonical text");
 
 // ── TEXT FIDELITY ─────────────────────────────────────────────────────────────
-check(vTa.texts.join("␟") === srcTa.texts.join("␟"), "14. Tamil canonical text verbatim == strict-verified transcription body");
-const enBodyTexts = vEn.texts;
-check(enBodyTexts.join("␟") === srcEn.texts.join("␟"), "15. English canonical text verbatim == verified translation body");
+// Reconstruct the canonical source-line stream FROM the generated data — including intentional
+// hard-break placement — and prove it equals the released stream. This is stronger than comparing
+// block texts, because hard-broken source lines now live inside one segment.
+function reconstruct(stream) {
+  const out = [];
+  for (const b of stream.blocks) {
+    if (b.kind === "paragraph") for (const sg of b.segments) out.push(...sg.text.split("\n"));
+    else if (b.kind === "heading") out.push(b.text);
+  }
+  return out.map((x) => x.trim());
+}
+check(JSON.stringify(reconstruct(speech.tamil)) === JSON.stringify(srcTa.texts), `14. Tamil reconstructs the released source stream exactly — no line omitted, duplicated or altered (${reconstruct(speech.tamil).length} vs ${srcTa.texts.length})`);
+check(JSON.stringify(reconstruct(speech.english)) === JSON.stringify(srcEn.texts), `15. English reconstructs the released source stream exactly (${reconstruct(speech.english).length} vs ${srcEn.texts.length})`);
 // Audit-confirmed readings. For the printed p.9 quotation the discriminating token is
 // `மொழிக்கும்தான்` (the superseded reading was the semantically different `மொழிக்கு மட்டும்`);
 // the audit quotes it with a following word that is not contiguous in the printed line.
@@ -114,6 +124,72 @@ check(HARD.every((h) => taAll.includes(h)), `16. audit-confirmed difficult sourc
 const SUPERSEDED = ["வோட்டுக்களே", "மற்றுக் கட்சியினர்", "ஏற்றதுதானா?", "சிவசிந்தாமணியைக்", "துடுப்புக்குச் சிலை", "திவட்டியுங்", "இரண்டாம் மொழிக்கு மட்டும் கட்டாயம்", "தலைபிழந்த", "ஊமையாயிற்று"];
 check(SUPERSEDED.every((x) => !taAll.includes(x)), "17. no superseded pre-audit reading survives in canonical Tamil");
 check(vEn.notes.length >= 1 && vEn.notes.join(" ").includes("controlling archival layer"), "18. translator/source notes preserved as notes, not speech prose");
+
+// ── HARD LINE BREAKS — complete inventory derived independently from the source Markdown ───────
+// A Markdown hard break is "two trailing spaces + newline" INSIDE a blank-line-bounded block. Such
+// a block is ONE source paragraph with intentional lineation — never N separate paragraphs.
+function hardBreakGroups(md) {
+  const body = md.split("## Speech body")[1].split("\n## ")[0];
+  const groups = [];
+  let page = null, lines = [], started = false;
+  const flush = () => {
+    if (started && lines.length > 1) groups.push({ page, lines: lines.map((l) => l.replace(/[ \t]+$/, "")), breaks: lines.slice(0, -1).filter((l) => /[ \t]{2,}$/.test(l)).length });
+    lines = [];
+  };
+  for (const raw of body.split("\n")) {
+    const line = raw.replace(/\r$/, ""), t = line.trim();
+    let m;
+    if ((m = t.match(PAGE_RE))) { flush(); started = true; page = Number(m[2]); continue; }
+    if (!started) { lines = []; continue; }
+    if (t === "" || /^-{3,}$/.test(t) || t.startsWith("|")) { flush(); continue; }
+    if (/^####\s+/.test(t) || /^>\s?/.test(t) || /^#{1,3}\s+/.test(t)) { flush(); continue; }
+    lines.push(line);
+  }
+  flush();
+  return groups;
+}
+const taGroups = hardBreakGroups(tamilSrc), enGroups = hardBreakGroups(englishSrc);
+check(taGroups.length === 1 && enGroups.length === 1, `16b. complete hard-break inventory: Tamil ${taGroups.length} group(s), English ${enGroups.length} group(s)`);
+
+// Every hard-break group must be ONE SpeechParagraph on the right page, with its lines in order and
+// every intentional break preserved.
+function assertGroups(groups, stream, label) {
+  const bad = [];
+  for (const g of groups) {
+    const joined = g.lines.join("\n");
+    const hit = stream.blocks.filter((b) => b.kind === "paragraph" && b.segments.some((sg) => sg.text.includes(joined)));
+    if (hit.length !== 1) { bad.push(`${label} p.${g.page}: expected exactly 1 paragraph, found ${hit.length}`); continue; }
+    const seg = hit[0].segments.find((sg) => sg.text.includes(joined));
+    if (seg.sourcePage !== g.page) bad.push(`${label} p.${g.page}: wrong source page ${seg.sourcePage}`);
+    const segLines = seg.text.split("\n");
+    if (segLines.length < g.lines.length) bad.push(`${label} p.${g.page}: lost line breaks`);
+    if (g.breaks !== g.lines.length - 1) bad.push(`${label} p.${g.page}: unmarked internal break`);
+    // and the lines must NOT also exist as separate paragraph blocks
+    const asOwnParas = stream.blocks.filter((b) => b.kind === "paragraph" && b.segments.length === 1 && g.lines.includes(b.segments[0].text)).length;
+    if (asOwnParas > 0) bad.push(`${label} p.${g.page}: ${asOwnParas} line(s) still standalone paragraphs`);
+  }
+  return bad;
+}
+const hbBad = [...assertGroups(taGroups, speech.tamil, "TA"), ...assertGroups(enGroups, speech.english, "EN")];
+check(hbBad.length === 0, `16c. every hard-break group is ONE paragraph with its lineation preserved and no line left standalone (${hbBad.slice(0, 3).join("; ")})`);
+
+// The known p.9 language-policy quotation: 8 lines, 7 breaks, 1 paragraph in EACH language.
+for (const [label, stream, first] of [["Tamil", speech.tamil, "“ஆங்கிலத்தை மூன்றாவது"], ["English", speech.english, "“English has been made the third language."]]) {
+  const hit = stream.blocks.filter((b) => b.kind === "paragraph" && b.segments.some((sg) => sg.text.includes(first)));
+  const seg = hit[0]?.segments.find((sg) => sg.text.includes(first));
+  const lines = seg ? seg.text.split("\n") : [];
+  check(hit.length === 1 && lines.length === 8 && seg.sourcePage === 9, `16d. ${label} p.9 language-policy quotation is ONE paragraph of 8 lines with 7 hard breaks (found ${hit.length} paragraph(s), ${lines.length} lines)`);
+}
+
+// Cross-page statistics must mean MORE THAN ONE DISTINCT source page.
+const distinctPages = (b) => new Set(b.segments.map((sg) => sg.sourcePage).filter((x) => x != null)).size;
+const taCross = speech.tamil.blocks.filter((b) => b.kind === "paragraph" && distinctPages(b) > 1).length;
+const enCross = speech.english.blocks.filter((b) => b.kind === "paragraph" && distinctPages(b) > 1).length;
+check(taCross === 5 && prov.archiveDerived.tamilCrossPageParagraphs === 5, `16e. Tamil cross-page paragraphs = 5 by distinct source pages (declared ${prov.archiveDerived.tamilCrossPageParagraphs}, actual ${taCross})`);
+check(enCross === 15 && prov.archiveDerived.englishCrossPageParagraphs === 15, `16f. English cross-page paragraphs = 15 by distinct source pages (declared ${prov.archiveDerived.englishCrossPageParagraphs}, actual ${enCross})`);
+
+// Section preamble before the first page marker must never become speech prose.
+check(!reconstruct(speech.tamil).some((l) => /The speech occupies PDF pages/.test(l)), "16g. body-section preamble is not imported as speech prose");
 
 // ── TAMIL BOUNDARY MODEL ──────────────────────────────────────────────────────
 check(Object.keys(EXPECT).length === 16, "19. exactly 16 Tamil source-page transitions (17 pages), each present once");
@@ -205,7 +281,7 @@ for (const b of speech.english.blocks) {
   if (b.kind === "paragraph") genFragments.push(...b.segments.map((sg) => sg.text));
   else if (b.kind === "heading") genFragments.push(b.text);
 }
-check(genFragments.join("␟") === srcEn.texts.join("␟"), `26g. English fragments verbatim and in order — none omitted, none duplicated (${genFragments.length} vs ${srcEn.texts.length})`);
+check(JSON.stringify(reconstruct(speech.english)) === JSON.stringify(srcEn.texts), `26g. English reconstructs the released stream — none omitted, none duplicated (${reconstruct(speech.english).length} vs ${srcEn.texts.length})`);
 
 // The join must insert NOTHING: both em dashes stay, so a continuation renders as "—" + "—".
 const renderEn = (p) => p.segments.map((sg, i) => (i === 0 ? "" : p.segments[i - 1].joinToNext === "space" ? " " : p.segments[i - 1].joinToNext === "unknown" ? "␝" : "") + sg.text).join("");
