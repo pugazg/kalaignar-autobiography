@@ -384,7 +384,7 @@ const provenance = {
       item: "unresolved-paragraph-relationship",
       count: auditCounts.unknownParagraphRelation,
       detail: `${auditCounts.unknownParagraphRelation} printed-page boundaries for which the source archive records no printed-paragraph relation: it establishes neither that the printed paragraph continues nor that a new one begins. Encoded as unresolved-break (neither same-paragraph nor a new paragraph) and rendered as a neutral source-page rule. No relation is inferred here from punctuation or from speaker count.`,
-      resolution: "Read-only inspection of the controlling scan TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf (speech PDF pp.6–17 / printed pp.5–16). The source PDF is not committed under repository policy and is not accessible read-only in this environment.",
+      resolution: "Resolution requires an upstream source-archive visual review of the controlling scan TVA_BOK_0065784_கலைஞரின்_பூந்தோட்டம்.pdf (speech PDF pp.6–17 / printed pp.5–16) that explicitly records the printed paragraph relation for these transitions. The source PDF is not vendored here, and this Digital Library integration does not establish those typographic facts independently.",
     },
   ],
   // Present project-level rights of the UNDERLYING Kalaignar-authored speech (Tamil:
