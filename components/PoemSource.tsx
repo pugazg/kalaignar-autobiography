@@ -111,32 +111,102 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
           </dl>
         </Card>
 
-        {/* ARCHIVE-DERIVED STRUCTURE */}
+        {/* ARCHIVE-DERIVED STRUCTURE — the two dimensions kept strictly apart. */}
         <Card icon={BookOpen} title={ta ? "காப்பகத்தால் உருவான அமைப்பு" : "Archive-derived reading structure"}>
           <dl className="mt-3">
             <Row label={ta ? "தமிழ்" : "Tamil"}>
-              {d.tamilLines} {ta ? "மூல வரிகள்" : "source lines"} · {d.tamilStanzas} {ta ? "பத்திகள்" : "stanzas"} · {d.tamilIndentedLines} {ta ? "இடைவெளியிட்ட வரிகள்" : "indented lines"}
+              {d.tamilLines} {ta ? "மூல வரிகள்" : "source lines"} · {d.tamilInPageStanzaBreaks} {ta ? "பக்கத்திற்குள் பத்தி இடைவெளிகள்" : "in-page stanza breaks"} · {d.tamilVerseRuns} {ta ? "பாடல் தொகுதிகள்" : "verse runs"} · {d.tamilIndentedLines} {ta ? "இடைவெளியிட்ட வரிகள்" : "indented lines"}
             </Row>
             <Row label={ta ? "ஆங்கிலம்" : "English"}>
-              {d.englishLines} {ta ? "வரிகள்" : "lines"} · {d.englishStanzas} {ta ? "பத்திகள்" : "stanzas"} · {d.englishIndentedLines} {ta ? "இடைவெளியிட்ட வரிகள்" : "indented lines"}
+              {d.englishLines} {ta ? "வரிகள்" : "lines"} · {d.englishInPageStanzaBreaks} {ta ? "பக்கத்திற்குள் பத்தி இடைவெளிகள்" : "in-page stanza breaks"} · {d.englishVerseRuns} {ta ? "பாடல் தொகுதிகள்" : "verse runs"} · {d.englishIndentedLines} {ta ? "இடைவெளியிட்ட வரிகள்" : "indented lines"}
             </Row>
-            <Row label={ta ? "பக்க மாற்றங்கள்" : "Page transitions"}>
-              {d.pageTransitions} · {ta ? "பத்திக்குள் அமைந்தவை" : "falling inside a stanza"} {d.pageTransitionsInsideStanza} / {d.pageTransitions}
-            </Row>
-            <Row label={ta ? "பக்கங்களைக் கடக்கும் பத்திகள்" : "Stanzas spanning pages"}>
-              {ta ? "தமிழ்" : "Tamil"} {d.tamilStanzasSpanningPages} · {ta ? "ஆங்கிலம்" : "English"} {d.englishStanzasSpanningPages}
-            </Row>
-            <Row label={ta ? "மொழிபெயர்ப்புத் தொகுதி எல்லைகள்" : "Translation-batch boundaries"}>
-              {d.englishBatchBoundaries} · {ta ? "அனைத்தும் தொடர்ச்சிகள்" : "all continuations"} ({d.englishBatchBoundariesInsideStanza}/{d.englishBatchBoundaries})
+            <Row label={ta ? "மூலத்தால் நிறுவப்பட்ட பத்திகள்" : "Source-established stanzas"}>
+              {ta ? "தமிழ்" : "Tamil"} {d.tamilSourceEstablishedStanzas} · {ta ? "ஆங்கிலம்" : "English"} {d.englishSourceEstablishedStanzas}
             </Row>
           </dl>
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
-            {d.boundaryNote}
+            {d.terminologyNote}
           </p>
           <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
             {d.provenanceGranularity}
           </p>
         </Card>
+
+        {/* SOURCE AUTHORITY — page transitions: textual continuity vs typographic stanza relation. */}
+        <Card icon={FileCheck2} title={ta ? "பக்க மாற்றங்கள் — மூலச் சான்று" : "Page transitions — source authority"}>
+          <dl className="mt-3">
+            <Row label={ta ? "இயற்பியல் பக்க மாற்றங்கள்" : "Physical page transitions"}>{d.pageTransitionsAudited}</Row>
+          </dl>
+
+          <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/45 dark:text-night-text/45">
+            {ta ? "உரை / சொல்லாட்சித் தொடர்ச்சி" : "Textual / rhetorical continuity"}
+          </p>
+          <dl className="mt-1">
+            <Row label={ta ? "மூலத்தால் பதிவான தொடர்ச்சி" : "Source-recorded continuation"}>{d.textualContinuations}</Row>
+            <Row label={ta ? "மூலத்தால் பதிவான தொடர்ச்சியின்மை" : "Source-recorded non-continuation"}>{d.textualNonContinuations}</Row>
+            <Row label={ta ? "தனியாகப் பதிவு செய்யப்படவில்லை" : "Not specifically recorded"}>{d.textualNotRecorded}</Row>
+          </dl>
+
+          <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/45 dark:text-night-text/45">
+            {ta ? "அச்சுப் பத்தித் தொடர்பு" : "Typographic stanza relationship"}
+          </p>
+          <dl className="mt-1">
+            <Row label={ta ? "மூலத்தால் நிறுவப்பட்ட ஒரே பத்தி" : "Source-established continuation"}>{d.stanzaRelationSameStanza}</Row>
+            <Row label={ta ? "மூலத்தால் நிறுவப்பட்ட பத்தி எல்லை" : "Source-established stanza boundary"}>{d.stanzaRelationStanzaBoundary}</Row>
+            <Row label={ta ? "தீர்மானிக்கப்படாதவை" : "Unresolved"}>{d.stanzaRelationUnresolved}</Row>
+          </dl>
+
+          <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
+            {d.boundaryNote}
+          </p>
+
+          {/* The full per-transition audit table, so a reviewer can check every classification. */}
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full min-w-[34rem] border-collapse text-left text-xs">
+              <caption className="sr-only">{ta ? "ஒவ்வொரு பக்க மாற்றத்திற்கும் மூலச் சான்று" : "Source evidence for each physical page transition"}</caption>
+              <thead>
+                <tr className="border-b border-ink/10 text-[10px] uppercase tracking-wider text-ink/45 dark:border-white/10 dark:text-night-text/45">
+                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "மாற்றம்" : "Transition"}</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "உரைத் தொடர்பு" : "Textual"}</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "பத்தித் தொடர்பு" : "Stanza"}</th>
+                  <th scope="col" className="py-1.5 font-medium">{ta ? "மேற்கோள்கள்" : "Citations"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {d.transitions.map((t) => (
+                  <tr key={`${t.fromScan}-${t.toScan}`} className="border-b border-ink/5 align-top dark:border-white/5">
+                    <td className="py-1.5 pr-3 tabular-nums text-ink/80 dark:text-night-text/80">{t.fromScan} → {t.toScan}</td>
+                    <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70" lang="en">{t.textualRelation}</td>
+                    <td className="py-1.5 pr-3 font-medium text-ink/80 dark:text-night-text/80" lang="en">{t.stanzaRelation}</td>
+                    <td className="py-1.5 text-ink/55 dark:text-night-text/55" lang="en">
+                      {ta ? "பத்தி" : "stanza"} {t.stanzaEvidence.length} · {ta ? "உரை" : "textual"} {t.textualEvidence.length}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-2 text-[11px] leading-relaxed text-ink/50 dark:text-night-text/50" lang={lang}>
+            {ta
+              ? "உரைத் தொடர்ச்சி என்பது அச்சுப் பத்தித் தொடர்பை நிறுவுவதில்லை: ஒரு வாக்கியமோ மேற்கோளோ அச்சுப் பத்தி எல்லையையும் கடந்து தொடரலாம்."
+              : "A textual continuation does not establish the printed stanza relationship: a sentence or a quotation can run on across a printed stanza break."}
+          </p>
+        </Card>
+
+        {/* BLOCKERS */}
+        {prov.blockers && prov.blockers.length > 0 && (
+          <Card icon={Info} title={ta ? "தீர்க்கப்படாதவை (மூல உண்மை)" : "Open blockers (source facts)"}>
+            {prov.blockers.map((b, i) => (
+              <div key={i} className="mt-3 rounded-xl border border-dashed border-brass/40 bg-brass/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/75 dark:text-night-text/75">
+                <p className="font-semibold text-ink/85 dark:text-night-text/85" lang="en">
+                  {b.item} — {b.count}
+                </p>
+                <p className="mt-1.5" lang="en">{b.detail}</p>
+                <p className="mt-2 italic" lang="en">{b.resolution}</p>
+              </div>
+            ))}
+          </Card>
+        )}
 
         {/* LOCKED EXCLUSIONS */}
         <Card icon={Info} title={ta ? "கவிதைப் பகுதியிலிருந்து விலக்கப்பட்டவை" : "Locked exclusions from the poem body"}>

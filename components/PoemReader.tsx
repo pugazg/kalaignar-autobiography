@@ -4,7 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Calendar, Feather, Home, Info, Minus, Plus, Radio } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
-import type { Poem, PoemLayer } from "@/data/poems";
+import type { Poem, PoemElement, PoemLayer } from "@/data/poems";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { useReaderProgress } from "@/lib/useReaderProgress";
@@ -23,6 +23,78 @@ const INDENT_EM = 1.6;
 // line starting on its own margin and every wrapped row visibly inset under it. The data model is
 // untouched: a wrapped line is still ONE PoemLine.
 const HANG_EM = 1.15;
+
+// Render the ordered element stream. Consecutive lines are grouped into an unlabelled verse run
+// (a plain <div>, never an <h*> and never announced as a "stanza"); boundaries render between runs.
+function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
+  const out: ReactNode[] = [];
+  let run: ReactNode[] = [];
+  let key = 0;
+  const flush = (gap: string) => {
+    if (run.length) {
+      out.push(
+        <div key={"r" + key++} className={gap}>
+          {run}
+        </div>,
+      );
+      run = [];
+    }
+  };
+  elements.forEach((el, i) => {
+    if (el.kind === "line") {
+      run.push(
+        <span key={"l" + i} className="block leading-[1.85] text-ink/90 dark:text-night-text/90" style={lineStyle(el.indent)}>
+          {inline(el.text)}
+        </span>,
+      );
+      return;
+    }
+    if (el.kind === "stanza-break") {
+      // Source-established: a blank line inside one printed page. A full stanza gap is warranted.
+      flush("mb-7");
+      return;
+    }
+    // A physical page transition. Only a source-ESTABLISHED same-stanza relation may close up
+    // without a marker; an established boundary gets the stanza gap; anything unresolved gets the
+    // neutral marker, which asserts neither.
+    if (el.stanzaRelation === "same-stanza") {
+      flush("");
+      return;
+    }
+    if (el.stanzaRelation === "stanza-boundary") {
+      flush("mb-7");
+      return;
+    }
+    flush("mb-2");
+    out.push(<PageTransitionRule key={"p" + i} toScan={el.toScan} ta={ta} />);
+  });
+  flush("");
+  return out;
+}
+
+// A deliberately restrained marker for an UNRESOLVED cross-page stanza relationship. Its vertical
+// space is smaller than a stanza gap so it never reads as a stanza break, and it is visible so the
+// lines on either side are not silently presented as continuous. The poem stays visually primary.
+function PageTransitionRule({ toScan, ta }: { toScan: number; ta: boolean }) {
+  const label = ta
+    ? `மூலப் பக்க மாற்றம் — அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை`
+    : `Source page transition — stanza relationship unresolved`;
+  return (
+    <div
+      className="mb-2 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/30 dark:text-night-text/30"
+      role="separator"
+      aria-label={label}
+      title={label}
+      data-print="hide"
+    >
+      <span className="h-px w-6 bg-ink/10 dark:bg-white/10" aria-hidden />
+      <span className="font-body normal-case tracking-normal" aria-hidden>
+        {ta ? `மூல ஸ்கேன் ${toScan}` : `source scan ${toScan}`}
+      </span>
+      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+    </div>
+  );
+}
 
 // The released English marks transliterated Tamil terms and cited titles with Markdown emphasis
 // (*Muttamil*, *purappāṭṭu*, *Kalingattu Parani* …) — release typography, not literal asterisks in
@@ -151,11 +223,11 @@ export default function PoemReader({ slug }: { slug: string }) {
             <p className={cn("mt-4 rounded-xl border border-dashed px-4 py-2.5 text-xs leading-relaxed", showEn ? "border-brass/40 bg-brass/[0.06] text-ink/70 dark:text-night-text/70" : "border-ink/15 bg-ink/[0.02] text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60")} lang={lang}>
               {showEn
                 ? ta
-                  ? "இது திட்டத்தால் உருவாக்கப்பட்ட, முழு மதிப்பீடு நிறைவுற்ற ஆங்கில மொழிபெயர்ப்பு. வரி அமைப்பும் பத்தி அமைப்பும் வெளியிடப்பட்டபடியே. தமிழ் மூலமே சான்றுநிலை."
-                  : "The project-created, release-complete English translation — its lineation and stanza structure exactly as released. The Tamil original remains authoritative."
+                  ? "இது திட்டத்தால் உருவாக்கப்பட்ட, முழு மதிப்பீடு நிறைவுற்ற ஆங்கில மொழிபெயர்ப்பு — வரிகளும் வரி வரிசையும் வெளியிடப்பட்டபடியே. ஒரு பக்கத்திற்குள் உள்ள பத்தி இடைவெளிகள் தக்கவைக்கப்படுகின்றன; பக்க மாற்றத்தில் அச்சுப் பத்தித் தொடர்பு மூலத்தால் நிறுவப்படாததால் நடுநிலையாகக் காட்டப்படுகிறது. தமிழ் மூலமே சான்றுநிலை."
+                  : "The project-created, release-complete English translation — lines and line order exactly as released. Stanza gaps within a printed page are preserved; at a page transition the printed stanza relationship is not established by the source, so it is shown neutrally. The Tamil original remains authoritative."
                 : ta
-                  ? "கீழே அச்சிட்ட மூலத்தின்படி சரிபார்க்கப்பட்ட தமிழ்க் கவிதை — வரிகள், வரி வரிசை, பத்தி இடைவெளிகள், இடைவெளியிடல், நிறுத்தக் குறிகள் அனைத்தும் மூலத்தின்படியே."
-                  : "The verified Tamil poem, faithful to the printed source — lines, line order, stanza gaps, indentation and punctuation all exactly as the source has them."}
+                  ? "கீழே அச்சிட்ட மூலத்தின்படி சரிபார்க்கப்பட்ட தமிழ்க் கவிதை — வரிகள், வரி வரிசை, இடைவெளியிடல், நிறுத்தக் குறிகள் அனைத்தும் மூலத்தின்படியே. ஒரு பக்கத்திற்குள் உள்ள பத்தி இடைவெளிகள் தக்கவைக்கப்படுகின்றன; பக்க மாற்றத்தில் அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை."
+                  : "The verified Tamil poem, faithful to the printed source — lines, line order, indentation and punctuation exactly as the source has them. Stanza gaps within a printed page are preserved; across a page transition the printed stanza relationship is unresolved and is marked as such."}
             </p>
           </>
         )}
@@ -163,13 +235,16 @@ export default function PoemReader({ slug }: { slug: string }) {
         {!poem && !error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "கவிதை ஏற்றப்படுகிறது…" : "Opening the poem…"}</p>}
         {error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்தக் கவிதையை ஏற்ற முடியவில்லை." : "This poem could not be loaded."}</p>}
 
-        {/* THE POEM. Each released stanza is one <section>; each source line is one <span> laid out
-            as its own display line. A long line WRAPS on a narrow viewport (it is not clipped and
-            forces no horizontal scrolling) while remaining ONE logical source line — the data model
-            never splits it. Source-page transitions are deliberately invisible here: they are
-            provenance, they live in the data and on the /source page, and interrupting verse with a
-            marker between every page would be intrusive and would suggest a break that does not
-            exist. */}
+        {/* THE POEM. Each source line is one display line; a long line WRAPS on a narrow viewport
+            (hanging indent, no horizontal scrolling) while remaining ONE logical source line.
+            Boundaries carry their own meaning:
+              * a source-established stanza break (a blank line inside one printed page) renders as
+                a full stanza gap;
+              * a PAGE TRANSITION whose printed stanza relation the source does not establish renders
+                as a NEUTRAL, restrained source-page marker: smaller than a stanza gap, so it does
+                not assert a new stanza, and visible, so it does not assert continuation either.
+            Runs are never labelled "stanza": where a run touches an unresolved page edge, the
+            printed stanza it belongs to is simply not established. */}
         {poem && layer && (
           <div
             className={cn("mt-9", showEn ? "font-body" : "font-tamil", sizes[font])}
@@ -185,15 +260,7 @@ export default function PoemReader({ slug }: { slug: string }) {
                   : "The poem, Tamil source"
             }
           >
-            {layer.stanzas.map((st, i) => (
-              <section key={i} className="mb-7 last:mb-0" aria-label={ta ? `பத்தி ${i + 1}` : `Stanza ${i + 1}`}>
-                {st.lines.map((l, j) => (
-                  <span key={j} className="block leading-[1.85] text-ink/90 dark:text-night-text/90" style={lineStyle(l.indent)}>
-                    {inline(l.text)}
-                  </span>
-                ))}
-              </section>
-            ))}
+            {renderElements(layer.elements, ta)}
           </div>
         )}
 

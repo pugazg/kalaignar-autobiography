@@ -47,21 +47,190 @@
  },
  "archiveDerived": {
   "tamilLines": 339,
-  "tamilStanzas": 24,
+  "tamilInPageStanzaBreaks": 23,
+  "tamilVerseRuns": 37,
+  "tamilSourceEstablishedStanzas": 11,
   "tamilIndentedLines": 58,
   "englishLines": 345,
-  "englishStanzas": 21,
+  "englishInPageStanzaBreaks": 20,
+  "englishVerseRuns": 34,
+  "englishSourceEstablishedStanzas": 8,
   "englishIndentedLines": 47,
-  "pageTransitions": 13,
-  "pageTransitionsInsideStanza": 13,
-  "tamilStanzasSpanningPages": 13,
-  "englishStanzasSpanningPages": 13,
-  "englishBatchBoundaries": 4,
-  "englishBatchBoundariesInsideStanza": 4,
-  "boundaryNote": "A source page boundary is NOT a stanza boundary and a translation-batch boundary is NOT a stanza boundary. All 13 physical page transitions (13→14 … 25→26) fall INSIDE a stanza in BOTH layers, and all 4 batch boundaries fall inside an English stanza. Stanza structure is taken ONLY from blank lines in the released poem: in Tamil those are unambiguous because the hidden page markers sit outside the fenced verse blocks; in English the blank lines that surround a hidden marker are a uniform formatting convention (marker-removal artefacts in the assembled file) and carry no stanza information, which is why the batch files and the released assembly are reconciled line-for-line before stanzas are derived.",
-  "provenanceGranularity": "Line-level scan provenance in BOTH layers. Tamil lines carry the scan of their assembly block; English lines carry the scan marked in the reviewed batch files, whose verse is proved byte-identical to the released assembly. Printed page numbers are recorded only where the scan shows one (scans 13–25 → printed 11–23); scan 26 stays null. No provenance is manufactured beyond what the release artifacts establish, and the reader does not interrupt the verse with per-line page markers.",
-  "note": "Derived structure only. The Tamil assembly is the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, modernized, re-lineated or normalized during import: line text, line order, stanza gaps, indentation, punctuation, quotation marks, ellipses and repetition are carried exactly as released."
+  "pageTransitionsAudited": 13,
+  "stanzaRelationSameStanza": 0,
+  "stanzaRelationStanzaBoundary": 0,
+  "stanzaRelationUnresolved": 13,
+  "textualContinuations": 10,
+  "textualNonContinuations": 1,
+  "textualNotRecorded": 2,
+  "transitions": [
+   {
+    "fromScan": 13,
+    "toScan": 14,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0013.md: The final poetic line continues directly onto scan 14; the physical page boundary is preserved.",
+     "pages/0014.md: The opening continues the final `உமைத்` line from scan 13; the page boundary is not silently joined in the page record.",
+     "audit.md: Page ends `உமைத்`, continuing onto scan 14.",
+     "translations/en/batches/batch-01.md: scan 13 → 14 continuation (`உமைத் / தேடிவரும்`) preserved as one address/movement: **PASS**",
+     "translations/en/RELEASE_REPORT.md: scan 13 → 14 continuation: **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 14,
+    "toScan": 15,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0014.md: The final line continues onto scan 15.",
+     "pages/0015.md: The opening completes the `கவிப்பரணியேற்றி...` sequence from scan 14 while preserving the physical page boundary.",
+     "translations/en/batches/batch-01.md: scan 14 → 15 continuation (`காஞ்சிபுரப் பரணி / பாடி நின்றேன்`) preserved as one rhetorical turn: **PASS**",
+     "translations/en/RELEASE_REPORT.md: scan 14 → 15 continuation: **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 15,
+    "toScan": 16,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/batches/batch-02.md: This batch continues directly from Batch 01's closing question, `நினைவுண்டா உங்களுக்கு?` — “do you remember?” — and carries Kalaignar's answer through the repeated three-letter motif, Anna's remembered sayings, movement history, the Anna–Ayya split and the formation of the Munnetra Kazhagam.",
+     "translations/en/batches/batch-02.md: scan 15 → 16 rhetorical continuation (`நினைவுண்டா உங்களுக்கு?` → three-letter answer) respected: **PASS**"
+    ]
+   },
+   {
+    "fromScan": 16,
+    "toScan": 17,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "stanzaEvidence": [],
+    "textualEvidence": []
+   },
+   {
+    "fromScan": 17,
+    "toScan": 18,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0017.md: The final line continues onto scan 18; the physical page boundary is preserved.",
+     "pages/0018.md: The first line continues the `வயிறு தாங்காக் காரணத்தால்` passage from scan 17; the physical page boundary remains explicit.",
+     "translations/en/batches/batch-02.md: scan 17 → 18 continuation (`வயிறு தாங்காக் காரணத்தால்` → `தனித்தனித் தாய்...`) preserved as one sentence/movement: **PASS**",
+     "translations/en/RELEASE_REPORT.md: scan 17 → 18 continuation: **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 18,
+    "toScan": 19,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0018.md: The final line continues onto scan 19.",
+     "translations/en/batches/batch-02.md: scan 18 → 19 continuation (`அன்புறு காந்தியின் அருளால் இன்று` → `எழுந்தனர்...`) preserved: **PASS**",
+     "translations/en/RELEASE_REPORT.md: scan 18 → 19 continuation: **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 19,
+    "toScan": 20,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/batches/batch-03.md: Batch 02 → Batch 03 paired-question cadence preserved: **PASS**"
+    ]
+   },
+   {
+    "fromScan": 20,
+    "toScan": 21,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "stanzaEvidence": [],
+    "textualEvidence": []
+   },
+   {
+    "fromScan": 21,
+    "toScan": 22,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/batches/batch-04.md: This batch continues directly from Batch 03's closing caste/social-critique line. It intensifies the catalogue of moral and social decline, personifies Mother Tamil in grief, then moves into her dialogue with Valluvar and the imagined rebirth that becomes Anna. The final phrase remains deliberately open because it continues into Batch 05.",
+     "translations/en/batches/batch-04.md: 1. **Continuation from Batch 03:** scan 21 ends with the arrival of countless castes in a land where the Kural had sounded without caste. Scan 22 continues the same critique. The English therefore does not reset the subject or soften the transition.",
+     "translations/en/batches/batch-04.md: Batch 03 → Batch 04 social-critique continuity retained: **PASS**"
+    ]
+   },
+   {
+    "fromScan": 22,
+    "toScan": 23,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0022.md: The source's intentionally irregular quotation marks are preserved as closely as Unicode permits. The final open quotation continues onto scan 23.",
+     "pages/0023.md: The opening `தங்கமாக ஆக்க’ என்றாள்.` closes the quotation begun at the bottom of scan 22; the physical page boundary remains explicit.",
+     "translations/en/batches/batch-04.md: scan 22 → 23 quotation (`தமிழர் மனம் வாழ்வெல்லாம் / தங்கமாக ஆக்க`) preserved as one utterance: **PASS**",
+     "translations/en/RELEASE_REPORT.md: scan 22 → 23 quotation continuation: **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 23,
+    "toScan": 24,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0023.md: The final phrase continues onto scan 24.",
+     "pages/0024.md: The opening continues the `தமிழ் உணர்வின் புதுமணமாய்ப் / பதிகத்துப் பொருளாய்ப்` passage from scan 23.",
+     "translations/en/batches/batch-04.md: This batch continues directly from Batch 03's closing caste/social-critique line. It intensifies the catalogue of moral and social decline, personifies Mother Tamil in grief, then moves into her dialogue with Valluvar and the imagined rebirth that becomes Anna. The final phrase remains deliberately open because it continues into Batch 05.",
+     "translations/en/batches/batch-04.md: 12. **`பதிகம்`:** retained as *pathigam* because the line is part of a continuing Tamil literary catalogue. A loose generic “poem” would erase the specificity. The phrase continues directly into scan 24 / Batch 05.",
+     "translations/en/batches/batch-05.md: 1. **Batch 04 → Batch 05 continuation:** Batch 04 ends `தமிழ் உணர்வின் புதுமணமாய்ப் / பதிகத்துப் பொருளாய்ப்`; scan 24 continues `பழந்தமிழர் புறப்பாட்டாய்`. The English therefore carries the sequence directly into **“as the *purappāṭṭu* of the ancient Tamils”** rather than treating scan 24 as a fresh sentence.",
+     "translations/en/SOURCE_MAP.md: This continuation crosses Batch 04 → Batch 05. Batch 05 drafting must reread the final rhetorical unit of Batch 04 before translating its opening.",
+     "translations/en/RELEASE_REPORT.md: scan 23 → 24 `pathigam → purappāṭṭu` continuation: **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 24,
+    "toScan": 25,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "ASSEMBLY_REVIEW.md: scan 24's statue sequence continues in scan 25 from `கம்பர்க்கும் சிலை` to `தீரமாய்க் கப்பலோட்டிய தமிழர்க்கும் சிலை`.",
+     "translations/en/batches/batch-05.md: scan 24 → 25 statue catalogue continuity preserved: **PASS**",
+     "translations/en/SOURCE_MAP.md: Scan 25 continues:",
+     "translations/en/RELEASE_REPORT.md: scan 24 → 25 statue catalogue continuation: **PASS**."
+    ]
+   },
+   {
+    "fromScan": 25,
+    "toScan": 26,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-non-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0025.md: The final question continues thematically, but not textually, onto scan 26; the physical page boundary is preserved."
+    ]
+   }
+  ],
+  "boundaryNote": "TEXTUAL/RHETORICAL continuity and TYPOGRAPHIC stanza relation are separate dimensions and are recorded separately. The source archive records cross-page textual continuations (a line, a quotation or a rhetorical movement running on), but a sentence can run on across a printed stanza break, so those records do not establish the stanza relation. Marker-adjacent blank-line formatting does not by itself establish the cross-page stanza relationship either: in the Tamil assembly each page is a separate fenced block, which structurally cannot express a blank line across the page edge, and in the English release every hidden marker is written with blank-line padding on both sides. Blank lines wholly inside one source page ARE source-established stanza structure and are preserved as such.",
+  "provenanceGranularity": "Line-level scan provenance in BOTH layers. Tamil lines carry the scan of their assembly block; English lines carry the scan marked in the reviewed batch files, whose verse is proved byte-identical to the released assembly. Printed page numbers are recorded only where the scan shows one (scans 13–25 → printed 11–23); scan 26 stays null.",
+  "terminologyNote": "A maximal run of lines between two boundaries is a VERSE RUN, not a stanza: where a run is bounded by a page transition whose relation is unresolved, the printed stanza it belongs to is simply not established. Only runs delimited on both sides by source-established stanza structure are counted as source-established stanzas. No derived run count is reported as a printed stanza count.",
+  "note": "Derived structure only. The Tamil assembly is the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, modernized, re-lineated or normalized during import: line text, line order, in-page stanza gaps, indentation, punctuation, quotation marks, ellipses and repetition are carried exactly as released."
  },
+ "blockers": [
+  {
+   "item": "cross-page-stanza-relationship",
+   "count": 13,
+   "detail": "13 physical page transitions for which the pinned source repository records no printed stanza relation: it establishes neither that the printed stanza continues nor that a new one begins. Encoded as stanzaRelation \"unknown\" (neither same-stanza nor stanza-boundary) and rendered as a neutral source-page transition marker. The relation is never inferred from punctuation, sentence completion, rhetorical meaning, indentation, the fact that the text flows, or the absence of a blank line at a fenced page edge. The archive's cross-page TEXTUAL continuity records are preserved separately and are not read as typographic evidence.",
+   "resolution": "Resolution requires an UPSTREAM source-archive visual/source review of the controlling scan TVA_BOK_0064132_இதயத்தைத்_தந்திடு_அண்ணா.pdf (poem scans 13–26) that explicitly records the printed stanza relationship at each physical page transition. The source PDF is not vendored here, and this Digital Library integration does not establish those typographic facts independently."
+  }
+ ],
  "projectRights": {
   "appliesTo": "underlying-work-authored-by-kalaignar",
   "rightsStatus": "nationalised-by-tamil-nadu-government",
@@ -81,7 +250,7 @@
   "The poem body is scans 13–26 (14 scans). Scans 1–12 (front matter, foreword, photographs) and scans 27–28 (poster, back cover) are outside the poem.",
   "The source context printed above the poem — 9.2.1969 / சென்னை வானொலி / a கண்ணீர்க் கவிதாஞ்சலி to பேரறிஞர் அண்ணா — is carried as METADATA. Not one word of it is inserted into the verse.",
   "The scan establishes no publication year and no edition statement, so both are null. The 15.9.2008 foreword date is foreword-internal third-party matter and is never surfaced as publication or edition metadata.",
-  "Stanza structure comes from the released poem's own blank-line structure. All 13 physical page transitions and all 4 translation-batch boundaries fall inside a stanza in the generated data.",
+  "Independent-review correction: an earlier revision asserted that all 13 physical page transitions fall inside a stanza. That conflated textual continuity with typographic stanza continuity. The two dimensions are now recorded separately, and the stanza relation is resolved only from explicit source evidence — currently 0 same-stanza, 0 stanza-boundary, 13 unresolved.",
   "A source line remains one logical line. Indentation is carried as a source fact so it survives without <pre> styling, and a long line may wrap visually on a narrow viewport without ever becoming two poetic lines."
  ]
 }

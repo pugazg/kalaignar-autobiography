@@ -6,15 +6,26 @@
 //
 // A POEM IS NOT SPEECH PROSE. The governing Digital Library rule — ONE coherent library, MULTIPLE
 // source-faithful reader types — means poetry gets its own reader and its own narrow model rather
-// than reusing the speech reader:
+// than reusing the speech reader: in prose a line break is typography, but in verse THE LINE IS
+// THE TEXT. So the unit here is the source LINE. Lines are never merged into prose, never
+// re-wrapped, and never split; a long line may WRAP visually on a narrow viewport, but that is
+// presentation and never becomes two lines in the data.
 //
-//   * in prose, a line break is typography; in verse, THE LINE IS THE TEXT. So the unit here is the
-//     source LINE, not a paragraph of per-page segments (the speech model). Lines are never merged
-//     into prose, never re-wrapped, and never split.
-//   * a long source line may WRAP visually on a narrow viewport — that is presentation. It must
-//     never become two poetic lines in the data.
-//   * stanza structure comes from the RELEASED poem's own blank-line structure. It is never derived
-//     from physical page transitions or from translation-batch boundaries (see PoemStanza).
+// ── THE TWO DIMENSIONS (independent review correction) ───────────────────────────────────────────
+// An earlier revision of this model folded every physical page transition into a "stanza", on the
+// reasoning that the released Tamil assembly shows no blank line at a page edge. That was wrong,
+// and the error is worth stating plainly because it is easy to repeat:
+//
+//   * the assembly stores each source page as its own FENCED block, so the fence structurally
+//     CANNOT carry a blank line across the page edge. Absence of a blank there is an artefact of
+//     the container, not a source statement about the printed page;
+//   * the source archive does record cross-page continuity — but what it records is TEXTUAL /
+//     RHETORICAL: "the final poetic line continues directly onto scan 14", "the final open
+//     quotation continues onto scan 23". A sentence, a quotation or a rhetorical movement can run
+//     on across a printed stanza break. Textual continuity does NOT establish stanza relation.
+//
+// The corrected model therefore keeps the two dimensions strictly separate, and resolves the
+// typographic one only from explicit source evidence.
 export type PoemLine = {
   /** The exact released source line, verbatim (leading indentation is carried in `indent`). */
   text: string;
@@ -26,23 +37,60 @@ export type PoemLine = {
   printedPage: number | null;
 };
 
-// One released stanza / structural group: an ordered run of source lines.
-//
-// CRITICAL SOURCE RULE — a source page boundary is NOT a stanza boundary. A stanza may span several
-// scans (`sourceScans.length > 1`); in this work EVERY physical page transition falls inside a
-// stanza. Stanza breaks are taken ONLY from blank lines in the released poem, never manufactured
-// from a page marker or a translation-batch marker (both of which are provenance only).
-export type PoemStanza = {
-  lines: PoemLine[];
-  /** The distinct scans this one stanza spans, in order. */
-  sourceScans: number[];
-};
+// TYPOGRAPHIC relation across a physical page transition. `unknown` is a first-class, honest
+// value: it asserts NEITHER "same stanza" NOR "new stanza", and the reader renders it neutrally.
+export type PoemStanzaRelation = "same-stanza" | "stanza-boundary" | "unknown";
 
-// One language layer of the poem.
+// TEXTUAL / RHETORICAL relation across the same transition — a SEPARATE dimension. A transition
+// can truthfully be a source-established textual continuation while its stanza relation is
+// unknown. This field must never be read as typographic evidence.
+export type PoemTextualRelation =
+  | "source-established-continuation"
+  | "source-established-non-continuation"
+  | "not-specifically-recorded";
+
+// Ordered boundary events between source lines.
+//
+//   "stanza-break"     — a blank line WHOLLY INSIDE one physical source page. The verified page
+//                        record preserves that blank-line relation, so this IS source-established
+//                        stanza structure.
+//   "page-transition"  — a physical page edge. Its stanza relation is carried explicitly and is
+//                        `unknown` unless a pinned source document establishes it.
+export type PoemBoundary =
+  | { kind: "stanza-break"; evidence: "source-blank-line"; sourceScan: number }
+  | {
+      kind: "page-transition";
+      fromScan: number;
+      toScan: number;
+      stanzaRelation: PoemStanzaRelation;
+      textualRelation: PoemTextualRelation;
+      /** Verbatim citations from the pinned source repository supporting the two relations above. */
+      evidence: { stanza: string[]; textual: string[] };
+    };
+
+// One ordered element of a language layer: a source line, or a boundary between lines.
+export type PoemElement = ({ kind: "line" } & PoemLine) | PoemBoundary;
+
+// TERMINOLOGY. A maximal run of consecutive lines with no boundary between them is a VERSE RUN,
+// not a "stanza": where a run is bounded by a page transition whose relation is unknown, the
+// printed stanza it belongs to is simply not established. Only a run delimited on both sides by
+// source-established stanza structure (a blank line, or the start/end of the poem) is a
+// source-established stanza — counted separately below. Nothing in this model reports a derived
+// run count as a printed stanza count.
 export type PoemLayer = {
-  stanzas: PoemStanza[];
+  elements: PoemElement[];
   /** Total released source lines in this layer. */
   lineCount: number;
+  /** Blank-line stanza breaks the source establishes WITHIN a page. */
+  inPageStanzaBreaks: number;
+  /** Maximal runs of lines between any two boundaries — a derived reading unit, NOT a stanza count. */
+  verseRuns: number;
+  /** Runs whose stanza membership IS fully source-established (no unresolved page edge touching them). */
+  sourceEstablishedStanzas: number;
+  /** Physical page transitions in this layer. */
+  pageTransitions: number;
+  /** Page transitions whose typographic stanza relation the source does not establish. */
+  unresolvedStanzaRelations: number;
 };
 
 export type PoemBilingualText = { ta: string; en: string };
@@ -150,24 +198,46 @@ export type PoemProvenance = {
   };
   archiveDerived: {
     tamilLines: number;
-    tamilStanzas: number;
+    tamilInPageStanzaBreaks: number;
+    tamilVerseRuns: number;
+    tamilSourceEstablishedStanzas: number;
     tamilIndentedLines: number;
     englishLines: number;
-    englishStanzas: number;
+    englishInPageStanzaBreaks: number;
+    englishVerseRuns: number;
+    englishSourceEstablishedStanzas: number;
     englishIndentedLines: number;
     /** Physical page transitions inside the poem body (13→14 … 25→26). */
-    pageTransitions: number;
-    /** How many of those fall INSIDE a stanza (i.e. are not stanza boundaries). */
-    pageTransitionsInsideStanza: number;
-    tamilStanzasSpanningPages: number;
-    englishStanzasSpanningPages: number;
-    /** Translation-batch boundaries in the English release, and how many are continuations. */
-    englishBatchBoundaries: number;
-    englishBatchBoundariesInsideStanza: number;
+    pageTransitionsAudited: number;
+    /** TYPOGRAPHIC dimension — resolved only from explicit source evidence. */
+    stanzaRelationSameStanza: number;
+    stanzaRelationStanzaBoundary: number;
+    stanzaRelationUnresolved: number;
+    /** TEXTUAL / RHETORICAL dimension — recorded separately, never read as stanza evidence. */
+    textualContinuations: number;
+    textualNonContinuations: number;
+    textualNotRecorded: number;
+    /** Per-transition audit table, so a reviewer can check every classification against its citations. */
+    transitions: {
+      fromScan: number;
+      toScan: number;
+      stanzaRelation: PoemStanzaRelation;
+      textualRelation: PoemTextualRelation;
+      stanzaEvidence: string[];
+      textualEvidence: string[];
+    }[];
     boundaryNote: string;
     provenanceGranularity: string;
+    terminologyNote: string;
     note: string;
   };
+  /** Source facts only an upstream source-archive review can settle. */
+  blockers?: {
+    item: string;
+    count: number;
+    detail: string;
+    resolution: string;
+  }[];
   projectRights: {
     appliesTo: string;
     rightsStatus: string;

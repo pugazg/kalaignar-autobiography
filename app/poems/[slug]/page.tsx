@@ -27,7 +27,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   // "published in 1969" or "published in 2008" / "2008 edition", because the controlling scan
   // establishes no publication or edition statement at all.
   const occasion = `${p.title.en} — a poem by Kalaignar M. Karunanidhi: his poetic tribute to Perarignar Anna, offered on Chennai Radio on 9 February 1969.`;
-  const description = `${occasion} The verified Tamil source text with a release-complete English translation, source lineation and stanza structure preserved.`;
+  // Claims stay inside the evidence: source LINEATION is preserved exactly, and stanza gaps are
+  // preserved where the source establishes them (within a printed page). The description does not
+  // claim complete "stanza structure", because the printed stanza relationship across the physical
+  // page transitions is not established by the source.
+  const description = `${occasion} The verified Tamil source text with a release-complete English translation, source lineation preserved line for line.`;
   return { title, description, openGraph: { title, description }, twitter: { title: p.title.en, description } };
 }
 
