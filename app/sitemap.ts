@@ -6,6 +6,7 @@ import { chapterIndex } from "@/data/references";
 import type { MurasoliIndex, MurasoliLettersIndex } from "@/data/murasoli";
 import { SPEECH_SLUGS } from "@/data/speeches";
 import { POEM_SLUGS } from "@/data/poems";
+import { ESSAY_SLUGS } from "@/data/essays";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -34,6 +35,16 @@ function loadManoharaSegmentSlugs(): string[] {
     const p = path.join(process.cwd(), "public/data/cinema/manohara/index.json");
     const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { segments: { slug: string }[] };
     return idx.segments.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
+function loadEssayArticleSlugs(slug: string): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/essays", slug, "publication.json");
+    const pub = JSON.parse(fs.readFileSync(p, "utf-8")) as { articles: { slug: string }[] };
+    return pub.articles.map((a) => a.slug);
   } catch {
     return [];
   }
@@ -84,6 +95,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...POEM_SLUGS.flatMap((slug) => [
       { url: `${BASE}/poems/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
       { url: `${BASE}/poems/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ]),
+    // Essays & Articles (Phase 5). The publication landing, its provenance page and one stable
+    // deep-linkable route per source-numbered article. No /essays collection landing is added.
+    ...ESSAY_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/essays/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.7 },
+      { url: `${BASE}/essays/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+      ...loadEssayArticleSlugs(slug).map((a) => ({
+        url: `${BASE}/essays/${slug}/articles/${a}`,
+        lastModified: now,
+        changeFrequency: "yearly" as const,
+        priority: 0.5,
+      })),
     ]),
   ];
 }
