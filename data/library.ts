@@ -510,7 +510,7 @@ export const LIBRARY_WORKS: LibraryWork[] = [
   },
   {
     // Fiction — first novel benchmark, and the first work on the புனைகதை shelf. ONE continuous
-    // novel in three assembled reading sections. `ராயசம் வெங்கண்ணு` is an INTERNAL cinematic
+    // novel in three assembled reading sections. `ராயசம் வெங்கண்ணா` is an INTERNAL cinematic
     // sequence of this novel — the source archive states so explicitly — so it gets no catalog
     // entry, no route and no release identity of its own.
     id: "balipeedam-nokki",
@@ -522,11 +522,11 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     readerStructure: "novel",
     href: "/novels/balipeedam-nokki",
     state: "published",
-    descTa: "1947 முதற்பதிப்பு — உள்ளமைந்த ‘ராயசம் வெங்கண்ணு’ திரைக்காட்சியுடன்",
-    descEn: "The 1947 first edition, with its embedded Rayasam Vengannu sequence",
+    descTa: "1947 முதற்பதிப்பு — உள்ளமைந்த ‘ராயசம் வெங்கண்ணா’ திரைக்காட்சியுடன்",
+    descEn: "The 1947 first edition, with its embedded Rayasam Venganna sequence",
     sourceRepo: "pugazg/kalaignar-novels",
     sourcePath: "works/balipeedam-nokki",
-    sourceCommit: "1a8a373e368418046fd599b0ec54da4e54f27986",
+    sourceCommit: "c14a4e84f91962eb0d606e7d8b105adcd97b780a",
     // The scan IS the first edition, so the edition statement carries no reprint ambiguity.
     edition: "முதற்பதிப்பு ஏப்ரல் 1947 — எரிமலைப் பதிப்பகம், துறையூர் (எரிமலைப் பதிப்பக வெளியீடு 3)",
     tamil: "complete",

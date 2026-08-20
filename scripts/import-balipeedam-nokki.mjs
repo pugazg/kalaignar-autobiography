@@ -15,7 +15,7 @@
 //   * paragraph structure is taken verbatim from the assembled layer — never re-split, never merged;
 //   * the seven cross-page joins the audit established are carried as recorded provenance, and this
 //     importer never invents a join and never re-opens one;
-//   * `ராயசம் வெங்கண்ணு` is a SECTION of this novel, never a separate work (see the guard below).
+//   * `ராயசம் வெங்கண்ணா` is a SECTION of this novel, never a separate work (see the guard below).
 //
 // Usage: node scripts/import-balipeedam-nokki.mjs <kalaignar-novels-clone> <source-commit>
 
@@ -74,7 +74,7 @@ for (const [label, needle] of [
 }
 // The archive must still state that the earlier separate-work split was wrong.
 if (!meta.includes(nfc("embedded cinematic / historical sequence inside"))) {
-  throw new Error("source metadata no longer states the embedded-sequence rule for ராயசம் வெங்கண்ணு — refusing to import");
+  throw new Error("source metadata no longer states the embedded-sequence rule for ராயசம் வெங்கண்ணா — refusing to import");
 }
 
 // ── Parsing the assembled reading layer ──────────────────────────────────────────────────────────
@@ -258,7 +258,7 @@ for (const file of fs.readdirSync(PAGES_DIR).filter((f) => /^\d{4}.*\.md$/.test(
 }
 if (printedHeadings.size === 0) throw new Error("no printed headings found in the audited page records — refusing to import");
 
-const EMBEDDED_SLUG = "rayasam-vengannu-sequence";
+const EMBEDDED_SLUG = "rayasam-venganna-sequence";
 const sections = [];
 const allJoins = [];
 for (let i = 0; i < 3; i++) {
@@ -274,9 +274,9 @@ for (let i = 0; i < 3; i++) {
   const slug = taFiles[i].replace(/^\d\d-/, "").replace(/\.md$/, "");
   const isEmbedded = slug === EMBEDDED_SLUG;
   // GUARD: the embedded sequence must stay a SECTION of this work — never its own work identity.
-  if (isEmbedded && ta.fm.work !== SLUG) throw new Error("the ராயசம் வெங்கண்ணு sequence must keep the novel's work identity");
+  if (isEmbedded && ta.fm.work !== SLUG) throw new Error("the ராயசம் வெங்கண்ணா sequence must keep the novel's work identity");
   if (isEmbedded && !ta.fm.structural_note?.includes("not a separate work")) {
-    throw new Error("the assembled layer no longer marks ராயசம் வெங்கண்ணு as an internal sequence — refusing to import");
+    throw new Error("the assembled layer no longer marks ராயசம் வெங்கண்ணா as an internal sequence — refusing to import");
   }
 
   // Strip the archive's own section label from the reading body (see PRINTED_HEADINGS above). It can
@@ -459,11 +459,11 @@ const provenance = {
       "Printed page numbers are not visible on every scan. Where no number is visibly printed the page map records `—` and this integration carries `printedPage: null` — a number is never inferred from sequence.",
     bodyScans: `${bodyScans.from}–${bodyScans.to}`,
     embeddedSequenceNote:
-      "`ராயசம் வெங்கண்ணு — தஞ்சை சரித்திரக் கதை` is NOT a separate work. The source archive states, after a full read of scans 4–33, that it is an embedded cinematic/historical sequence inside `பலிபீடம் நோக்கி`, used by the narrator as the central illustrative episode. It therefore has no separate catalog work, no separate work-level metadata, no separate translation project, no separate release identity and no separate route here — only a section of this one novel, carrying its own source-printed heading. The importer refuses to run if the source stops stating this.",
+      "`ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is NOT a separate work. The source archive states, after a full read of scans 4–33, that it is an embedded cinematic/historical sequence inside `பலிபீடம் நோக்கி`, used by the narrator as the central illustrative episode. It therefore has no separate catalog work, no separate work-level metadata, no separate translation project, no separate release identity and no separate route here — only a section of this one novel, carrying its own source-printed heading. The importer refuses to run if the source stops stating this.",
     sourceContinuity: [
       "scans 4–7 — the opening `பலிபீடம்` frame develops the argument through சேரன் செங்குட்டுவன், Aryan ritual power and Tamil self-respect;",
       "scan 7 — the narrator explicitly introduces the internal film: `படக்காட்சி ஆரம்பமாகிறது பாருங்கள். படம் உங்களுக்கு ஒரு பாடம் தரட்டும்.`;",
-      "scan 8 — a title-card page prints `ராயசம் வெங்கண்ணு`, `தஞ்சை சரித்திரக் கதை`, `எரிமலை ‘ரிலீஸ்’` and screenplay/dialogue credits — the novel's cinematic device, not a second work;",
+      "scan 8 — a title-card page prints `ராயசம் வெங்கண்ணா`, `தஞ்சை சரித்திரக் கதை`, `எரிமலை ‘ரிலீஸ்’` and screenplay/dialogue credits — the novel's cinematic device, not a second work;",
       "scans 9–29 — the Thanjavur narrative is staged with screenplay-like narration, dialogue and visual directions;",
       "scan 30 — the narrator exits the film: `படம் முடிந்துவிட்டது. பாடம் கற்றுக்கொண்டீர்களா? பலிபீடம் நோக்க...`;",
       "scans 31–33 — the work returns to direct address and closes on the `பலிபீடம்` metaphor;",
@@ -534,12 +534,12 @@ const provenance = {
   },
   notes: [
     "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
-    "This is ONE continuous novel in THREE assembled sections. `ராயசம் வெங்கண்ணு — தஞ்சை சரித்திரக் கதை` is section 2 — an internal cinematic-historical sequence — and is never a separate catalog work, route or release identity.",
+    "This is ONE continuous novel in THREE assembled sections. `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is section 2 — an internal cinematic-historical sequence — and is never a separate catalog work, route or release identity.",
     "The section split at scan 30 follows the SOURCE's narrative transition, not a mechanical page boundary: section 2 carries the internal film through its printed end-card (`வணக்கம்`), and section 3 begins at the narrator's explicit `படம் முடிந்துவிட்டது…` return. No source text is duplicated or omitted at that split.",
     "Intentional source line breaks — the film-credit lines and the closing lineated address — are preserved inside their blocks and rendered as written, never collapsed into running prose.",
     "The body covers scans 4–33. Scans 1–3 (cover, title page, publisher note) and scan 34 (blank/back matter) are outside the reading body, as are all copy-specific marks.",
     "Printed page numbers are carried only where the scan shows one; where the page map records `—` this integration carries null rather than inferring a number.",
-    "SECTION TITLES ARE THE ARCHIVE'S, NOT THE BOOK'S. The assembled layer opens each file with its own descriptive section label. Where the 1947 edition actually prints that heading (scan 4 `பலிபீடம் நோக்கி`; scan 8 `ராயசம் வெங்கண்ணு` / `தஞ்சை சரித்திரக் கதை`) the printed heading is carried in the body and cited to the scan that prints it. Where it does not — section 3, where scan 30 runs straight on into `படம் முடிந்துவிட்டது…` — the label is NOT admitted to the reading body and no page provenance is asserted for it; it survives only as the section's title, which the reader labels as the archive's division.",
+    "SECTION TITLES ARE THE ARCHIVE'S, NOT THE BOOK'S. The assembled layer opens each file with its own descriptive section label. Where the 1947 edition actually prints that heading (scan 4 `பலிபீடம் நோக்கி`; scan 8 `ராயசம் வெங்கண்ணா` / `தஞ்சை சரித்திரக் கதை`) the printed heading is carried in the body and cited to the scan that prints it. Where it does not — section 3, where scan 30 runs straight on into `படம் முடிந்துவிட்டது…` — the label is NOT admitted to the reading body and no page provenance is asserted for it; it survives only as the section's title, which the reader labels as the archive's division.",
   ],
 };
 

@@ -35,7 +35,7 @@ const eq = (n, a, b) => check(n, JSON.stringify(a) === JSON.stringify(b), `expec
 // ── 1. SOURCE PIN AND IDENTITY ───────────────────────────────────────────────────────────────────
 eq("source repo", novel.sourceRepo, "pugazg/kalaignar-novels");
 eq("source path", novel.sourcePath, `works/${SLUG}`);
-eq("source commit", novel.sourceCommit, "1a8a373e368418046fd599b0ec54da4e54f27986");
+eq("source commit", novel.sourceCommit, "c14a4e84f91962eb0d606e7d8b105adcd97b780a");
 eq("provenance pin agrees", [prov.sourceRepo, prov.sourcePath, prov.sourceCommit], [novel.sourceRepo, novel.sourcePath, novel.sourceCommit]);
 eq("scan SHA-256", prov.source.scanSha256, "c4700c9043da8eadbf25144e7127a66a9270326512c095d99e1113a4feb464fe");
 eq("scan size", prov.source.scanFileSizeBytes, 69724254);
@@ -66,7 +66,7 @@ check("no PDF committed in the source repository either", !execFileSync("git", [
 }
 
 // ── 2. THE EMBEDDED-SEQUENCE RULE ────────────────────────────────────────────────────────────────
-// The single most important structural fact: ராயசம் வெங்கண்ணு is a SECTION, never a separate work.
+// The single most important structural fact: ராயசம் வெங்கண்ணா is a SECTION, never a separate work.
 {
   const meta = readText(path.join(WORK_DIR, "metadata/source.md"));
   check("source still states the one-work rule", meta.includes("This scan contains one work"));
@@ -82,10 +82,10 @@ check("no PDF committed in the source repository either", !execFileSync("git", [
   // (that is the point of the note), but must never give it an id, slug, href or route of its own.
   const lib = readText(path.join(process.cwd(), "data/library.ts"));
   const identities = [...lib.matchAll(/^\s*(?:id|slug|href|sourcePath|provenanceHref):\s*"([^"]*)"/gm)].map((m) => m[1]);
-  check("no catalog identity names the sequence", !identities.some((v) => /rayasam|vengannu/i.test(v)), identities.filter((v) => /rayasam|vengannu/i.test(v)).join(", "));
+  check("no catalog identity names the sequence", !identities.some((v) => /rayasam|venganna/i.test(v)), identities.filter((v) => /rayasam|venganna/i.test(v)).join(", "));
   eq("exactly one fiction work in the catalog", (lib.match(/shelf: "fiction"/g) || []).length, 1);
-  check("the sequence is mentioned only as description of the novel", [...lib.matchAll(/rayasam|vengannu/gi)].every((m) => /desc(Ta|En)|note/i.test(lib.slice(lib.lastIndexOf("\n", m.index), m.index))));
-  check("no separate route for the sequence", !fs.readdirSync(path.join(process.cwd(), "app/novels")).some((d) => /rayasam|vengannu/i.test(d)));
+  check("the sequence is mentioned only as description of the novel", [...lib.matchAll(/rayasam|venganna/gi)].every((m) => /desc(Ta|En)|note/i.test(lib.slice(lib.lastIndexOf("\n", m.index), m.index))));
+  check("no separate route for the sequence", !fs.readdirSync(path.join(process.cwd(), "app/novels")).some((d) => /rayasam|venganna/i.test(d)));
   eq("provenance explains the rule", typeof prov.source.embeddedSequenceNote, "string");
   check("provenance states it is not a separate work", prov.source.embeddedSequenceNote.includes("NOT a separate work"));
   check("source continuity is recorded", prov.source.sourceContinuity.length >= 6);
@@ -216,9 +216,14 @@ for (const f of fs.readdirSync(PAGES_DIR).filter((x) => /^\d{4}.*\.md$/.test(x))
   }
 
   // (e) Where the glossary records a rejected alternative reading, that reading must not be used.
-  const rejected = /do not change to\s+([A-Za-z\u0B80-\u0BFF]+)/.exec(glossNote);
-  if (rejected) {
-    check(`the glossary's rejected reading "${rejected[1]}" is not used in the release`, !new RegExp(rejected[1], "i").test(released), `the source marks ${rejected[1]} as wrong for \`${bare}\``);
+  // Whatever readings the glossary note marks as wrong must not appear in the release. The note's
+  // wording is the source's own, so every form it names after "do not …" is collected rather than
+  // matching one fixed phrasing.
+  const rejectedPart = /do not[^|]*/.exec(glossNote);
+  const rejected = rejectedPart ? [...rejectedPart[0].matchAll(/[`*]?([A-Za-z\u0B80-\u0BFF]{4,})[`*]?/g)].map((m) => m[1]).filter((w) => !/^(do|not|read|or|render|it|as|change|to|the|printed|final|sign|is|old|style|form|mandatory)$/i.test(w)) : [];
+  check("the glossary still records which readings are wrong", rejected.length > 0, `note: ${glossNote}`);
+  for (const r of new Set(rejected)) {
+    check(`the glossary's rejected reading "${r}" is not used in the release`, !released.includes(r), `the source marks ${r} as wrong for \`${bare}\``);
   }
   eq("the source records the name's audited status", /Pages marked \`needs-review\` \| \*\*0\*\*/.test(readText(path.join(WORK_DIR, "audit.md"))), true);
 }

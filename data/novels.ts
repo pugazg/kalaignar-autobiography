@@ -16,7 +16,7 @@
 //     separate work.
 //
 // ── THE EMBEDDED-SEQUENCE RULE (a source fact, not a presentation choice) ────────────────────────
-// `ராயசம் வெங்கண்ணு — தஞ்சை சரித்திரக் கதை` is NOT a separate work. The source archive states this
+// `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is NOT a separate work. The source archive states this
 // explicitly after a full read of scans 4–33: it is a cinematic/historical sequence staged INSIDE
 // `பலிபீடம் நோக்கி`, introduced on scan 7 (`படக்காட்சி ஆரம்பமாகிறது…`) and exited on scan 30
 // (`படம் முடிந்துவிட்டது…`). It therefore gets NO separate catalog work, no separate provenance
@@ -84,7 +84,7 @@ export type NovelSection = {
   sourceScansTa: string;
   sourceScansEn: string;
   /**
-   * TRUE only for the `ராயசம் வெங்கண்ணு` sequence. It is an internal sequence of this novel, never a
+   * TRUE only for the `ராயசம் வெங்கண்ணா` sequence. It is an internal sequence of this novel, never a
    * separate work.
    */
   isEmbeddedSequence: boolean;
