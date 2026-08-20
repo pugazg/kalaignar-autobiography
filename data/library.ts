@@ -64,7 +64,11 @@ export type ReaderStructure =
   | "speech"
   // Fiction — a continuous novel divided by the SOURCE ARCHIVE's own assembled reading layer into
   // ordered sections. Distinct from "story" (short stories) and from "volume-chapter" (the memoir).
-  | "novel";
+  | "novel"
+  // Drama — a printed STAGE PLAY: numbered scenes of dialogue, speaker labels and stage directions,
+  // plus any separately printed unnumbered tableau. Deliberately distinct from "scene", which is the
+  // cinema screenplay-dialogue model used by Manohara.
+  | "stage-play";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
 // merely "every unit currently vendored happens to have this language". A work whose
@@ -546,6 +550,44 @@ export const LIBRARY_WORKS: LibraryWork[] = [
       note: "Nationalisation applies to Kalaignar's underlying Tamil novel; it does not extend to the project-created English translation, to the 1947 edition's publisher/imprint matter, cover artwork or printer material, nor to the library stamps and accession marks on this physical copy.",
     },
     provenanceHref: "/novels/balipeedam-nokki/source",
+  },
+  {
+    // DRAMA — Phase 7 benchmark #1, and the first work on the நாடகங்கள் shelf. ONE printed stage
+    // play in 38 numbered scenes plus a separate UNNUMBERED closing tableau
+    // (`கண்ணகி சிலை நாட்டு விழா`). That tableau is NOT Scene 39 and is never counted among the 38,
+    // so `unitCount` reports 38.
+    id: "silappathikaram-nataka-kappiyam",
+    slug: "silappathikaram-nataka-kappiyam",
+    titleTa: "சிலப்பதிகாரம் — நாடகக் காப்பியம்",
+    titleEn: "Silappathikaram — A Dramatic Epic",
+    shelf: "drama",
+    subtype: "stage-play",
+    readerStructure: "stage-play",
+    href: "/plays/silappathikaram-nataka-kappiyam",
+    state: "published",
+    descTa: "அஞ்சுகம் வெளியீட்டு அச்சுப் பதிப்பு — 38 காட்சிகளும் ஒரு நிறைவுக் காட்சியும்",
+    descEn: "The printed Anjugam edition — 38 scenes and a closing tableau",
+    sourceRepo: "pugazg/kalaignar-stage-plays",
+    sourcePath: "works/silappathikaram-nataka-kappiyam",
+    sourceCommit: "a66e62bbecaf63825b3db09a1d421401e1ab2e8e",
+    // The edition prints NO publication year anywhere in the scan, so none is stated here. The
+    // foreword's internal dates are not promoted into one.
+    edition: "அஞ்சுகம் வெளியீடு, சென்னை-6 — பதிப்பாண்டு அச்சிடப்படவில்லை",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    unitCount: { value: 38, labelTa: "காட்சிகள்", labelEn: "scenes" },
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil stage play; it does not extend to the project-created English translation, to the edition's அஞ்சுகம் வெளியீடு imprint matter, printed price or decorative artwork, to the library stamps and accession marks on this physical copy, nor to the separately copyrighted 2009 published English edition held in the source archive as analytical evidence only.",
+    },
+    provenanceHref: "/plays/silappathikaram-nataka-kappiyam/source",
   },
 ];
 
