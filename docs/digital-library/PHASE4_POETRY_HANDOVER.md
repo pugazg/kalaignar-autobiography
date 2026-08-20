@@ -8,7 +8,11 @@ this activity touched **no** `mobile/` files. It made **no** changes to any sour
 
 > **Phase status (current).**
 >
-> - **Phase 4 — Poetry: ACTIVE — it is NOT complete.** More released poems remain.
+> - **Phase 4 — Poetry: an OPEN Digital Library form — it is NOT complete.** At the pinned source
+>   state used for this closeout, `pugazg/kalaignar-poems` contains **only this one archived work**
+>   (`poems/idhayathai-thanthidu-anna`), so **Poetry Benchmark #2 is NOT STARTED / NOT SELECTED and
+>   is PENDING SOURCE AVAILABILITY** — not cancelled. Future live source state may add more poems;
+>   **live source state always wins**.
 > - **Benchmark #1 — இதயத்தைத் தந்திடு அண்ணா / Lend Me Your Heart, Anna:** **COMPLETE / MERGED /
 >   PRODUCTION-VERIFIED**. PR #25, final reviewed head
 >   `3653023db60cb51ee1df4d970d621494c095791c`, squash merge
@@ -72,6 +76,11 @@ each present exactly once in the sitemap.
 - **Scan 26:** **no visible printed page number.** It is **never** labelled printed page 24, and no
   number is inferred.
 - **Source PDF: not vendored.** Its identity travels as filename + SHA-256 + byte size + scan map.
+- **Source inventory at this pin:** `poems/` contains **exactly one** work directory —
+  `poems/idhayathai-thanthidu-anna`. The repository README lists only இதயத்தைத் தந்திடு அண்ணா as its
+  current work and states that a *next* poem must begin again from the repository's
+  startup/source-inspection workflow. **No second released/verified poem exists at this commit.**
+  Re-check **live** source state before assuming otherwise.
 
 ## Source context, and the publication absence
 
@@ -277,23 +286,39 @@ continuous** — asserting exactly the continuation the source does not establis
   project-created English translation — each retains its own distinct provenance.
 - **No source repository was modified. No PDF was vendored. No mobile work. No runtime GitHub.**
 
-## Next Phase-4 work (for a future, reviewer-gated activity)
+## Next Phase-4 work — PENDING SOURCE AVAILABILITY
 
-- **Benchmark #2 is NOT started and NOT selected by this handover activity**, and no candidate is
-  named here or anywhere in this document.
-- The next activity is **Phase-4 Poetry Benchmark #2 candidate selection**: inspect the **live**
-  `main` of `pugazg/kalaignar-poems`, judge current release/verification and provenance strength, and
-  choose **exactly one** source-ready poem. Do not preselect from stale handover prose.
-- Require **verified Tamil**; require a **released English** layer if publishing bilingual.
-- Keep the same **Poetry / கவிதைகள்** shelf. Do not add a `/poems` collection landing without
-  separate justification and approval.
-- Preserve the line/boundary model **only where the next poem's source actually supports it**. **Do
-  not assume** this work's unresolved-boundary pattern applies to every poem: another poem's archive
-  may establish cross-page stanza relations explicitly, or may need a different boundary vocabulary.
-- Continue **one released work per reviewer-gated activity**. No bulk import, no mass ingestion.
-- Importers stay **work-specific and commit-pinned**; do not generalize ingestion prematurely.
-- **Speech Benchmark #4 remains PAUSED / NOT STARTED.** Do not resume speech expansion unless the
-  owner explicitly asks to return to speeches. If the owner names another non-speech category
-  instead, follow that owner direction rather than forcing Poetry Benchmark #2.
-- Still outstanding project-wide: capture the exact Government Order number/issue date when verified,
-  and run the project-wide rights audit across existing works.
+**Poetry Benchmark #2 is NOT STARTED, NOT SELECTED, and PENDING SOURCE AVAILABILITY.** No candidate
+is named here or anywhere in this document.
+
+At the source state recorded above, `pugazg/kalaignar-poems` holds only this one archived work, so a
+Poetry Benchmark #2 candidate-selection activity is **not actionable today** and must not be forced.
+This is **not** a cancellation, and Phase 4 is **not** complete merely because only one source work
+exists — the form stays open.
+
+**If a future live `pugazg/kalaignar-poems` main contains another released/verified, source-ready
+poem**, Poetry Benchmark #2 candidate selection may resume. In that case:
+
+- inspect that **live** source state, not this snapshot;
+- select **exactly one** work on current release/provenance strength;
+- require **verified Tamil**; require a **released English** layer if publishing bilingual;
+- keep the same **Poetry / கவிதைகள்** shelf, and add no `/poems` collection landing without separate
+  justification and approval;
+- **do not assume** இதயத்தைத் தந்திடு அண்ணா's unresolved cross-page boundary pattern applies to it —
+  another poem's archive may establish stanza relations explicitly, or may need a different boundary
+  vocabulary. Preserve the line/boundary model **only where that poem's source actually supports it**;
+- unresolved source facts stay **unresolved**: no punctuation, indentation, semantic or grammatical
+  inference may fill a typographic relation;
+- absent source metadata (publication year, edition) is represented honestly and never fabricated;
+- reviewer-gated PR, one work only — no bulk import, no mass ingestion;
+- deterministic, commit-pinned importer that fails closed on a source-HEAD mismatch;
+- no source-archive edits, no PDF vendoring, no runtime GitHub, no mobile work.
+
+**Phase 4 records the Poetry work that actually happened. It does not mean every subsequent
+non-speech integration must be Poetry.** The next Digital Library benchmark may come from another
+non-speech category; category/phase naming for that work is decided when it is selected. **Speech
+Benchmark #4 remains PAUSED / NOT STARTED / NOT SELECTED** unless the owner explicitly asks to return
+to speeches.
+
+Still outstanding project-wide: capture the exact Government Order number/issue date when verified,
+and run the project-wide rights audit across existing works.

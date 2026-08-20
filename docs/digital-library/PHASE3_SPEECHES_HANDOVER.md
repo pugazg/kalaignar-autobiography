@@ -411,7 +411,9 @@ exact squash SHA.
 > **Phase 3 is paused by owner direction.** The guidance in this section stays valid *for whenever
 > speeches are reactivated*, but **Speech Benchmark #4 is NOT the immediate next activity** and must
 > not be started without explicit owner direction. The current active phase is **Phase 4 — Poetry**;
-> its continuation is recorded in `PHASE4_POETRY_HANDOVER.md`.
+> its continuation is recorded in `PHASE4_POETRY_HANDOVER.md` — where Poetry Benchmark #2 is itself
+> **NOT STARTED / NOT SELECTED / PENDING SOURCE AVAILABILITY**, so neither a speech nor a poetry
+> benchmark is the automatic next activity.
 
 ### Guidance for a future, reviewer-gated speech activity
 
