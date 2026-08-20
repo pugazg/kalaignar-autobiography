@@ -22,20 +22,31 @@ No `mobile/` files, source repositories, or PDFs were modified in any of these a
 >   `ecf73cc8146cd9a9578c4aeaf73518b122ce569c` (2026-08-19T11:51:46Z), production Vercel **success**
 >   on that exact squash SHA.
 >
-> **Last production application-code checkpoint:
-> `ecf73cc8146cd9a9578c4aeaf73518b122ce569c`** (the Phase-3 Benchmark #3 / PR #23 squash merge).
+> **Phase 3 is ACTIVE but PAUSED by owner direction.** The owner explicitly asked for the next
+> Digital Library work to come from a category **other than speeches**, which produced **Phase 4 —
+> Poetry** (see `PHASE4_POETRY_HANDOVER.md`). Phase 3 is **NOT complete** — more released speeches
+> remain — but **speech expansion must not resume without explicit owner direction**.
+> **Benchmark #4 has NOT been started and is NOT selected.**
+>
+> **Last production application-code checkpoint (current):
+> `c2d1c46d1c2d4e1f11722360848226208867789f`** — the **Phase-4 Poetry Benchmark #1 / PR #25** squash
+> merge (2026-08-20T01:58:07Z), which merged and was production-verified after this phase's work.
+>
+> **`ecf73cc8146cd9a9578c4aeaf73518b122ce569c` is a HISTORICAL Phase-3 checkpoint** — the Benchmark
+> #3 / PR #23 squash merge, and the last application-code checkpoint *at the time this phase closed*.
+> It is **no longer current**. Everything below this status block records Phase-3 history as it stood
+> then and is preserved unchanged.
 >
 > **Live GitHub `main` is authoritative and must always be inspected.** Documentation-only closeout
 > commits — including the handover PR that carries this update — may advance repository `main`
 > **without changing deployed application behaviour**, and such a docs-only SHA must never be
 > recorded as a newer application-code checkpoint.
 >
-> `/read` publishes **7 works across 5 non-empty shelves**, with **all three** speeches on the single
-> **Speeches / உரைகள்** shelf (Udhaya Kathir · Poonthottam · Arappor). No separate Public Speeches
-> shelf exists and no `/speeches` collection landing was added.
->
-> **Phase 3 remains ACTIVE — it is NOT complete**; more released speeches remain.
-> **Benchmark #4 has NOT been started and is NOT selected** by this handover.
+> **Current public library:** `/read` publishes **8 works across 6 non-empty shelves**. **Speeches /
+> உரைகள்** remains exactly **3** works on **ONE** shelf (Udhaya Kathir · Poonthottam · Arappor) — no
+> separate Public Speeches shelf, no `/speeches` collection landing. **Poetry / கவிதைகள்** now holds
+> exactly **1** published work. (At the close of Phase 3 the library published 7 works across 5
+> shelves.)
 
 ## Post-mobile baseline
 
@@ -395,7 +406,14 @@ exact squash SHA.
   **ALL PASS** with their `speech.json` **and** `provenance.json` byte-identical across the
   benchmark; `tsc` clean; production build success (**1262** static pages); `git diff --check` clean.
 
-## Next Phase-3 work (for a future, reviewer-gated activity)
+## Next Phase-3 work — PAUSED (not the current continuation)
+
+> **Phase 3 is paused by owner direction.** The guidance in this section stays valid *for whenever
+> speeches are reactivated*, but **Speech Benchmark #4 is NOT the immediate next activity** and must
+> not be started without explicit owner direction. The current active phase is **Phase 4 — Poetry**;
+> its continuation is recorded in `PHASE4_POETRY_HANDOVER.md`.
+
+### Guidance for a future, reviewer-gated speech activity
 
 - **The shared speech architecture is now proven across BOTH subtypes** — `assembly-speech`
   (Udhaya Kathir) and `public-speech` (Poonthottam) — on one shelf, one reader, one provenance page.
@@ -408,8 +426,8 @@ exact squash SHA.
 - **Do not** add a `/speeches` collection landing until enough published works justify it (and only with
   separate approval).
 - **Do not** generalize ingestion prematurely; importers stay work-specific and commit-pinned.
-- **Benchmark #4 is NOT started and NOT selected by this handover activity.** The next activity is
-  **Phase-3 Benchmark #4 candidate selection**: the candidate must be chosen by inspecting the
+- **Benchmark #4 is NOT started and NOT selected.** If and when the owner reactivates speeches, that
+  activity would be **Phase-3 Benchmark #4 candidate selection**: the candidate must be chosen by inspecting the
   **live** `main` of **both** speech source repositories — `pugazg/kalaignar-assembly-speeches` and
   `pugazg/kalaignar-public-speeches` — and judging current release and provenance strength. Neither
   repository has priority by default, and no candidate is named here or anywhere in this document.
