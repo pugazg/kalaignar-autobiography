@@ -20,24 +20,36 @@
 /** Where a block sits in the printed source. A block may span more than one printed page. */
 export type ArticleSourcePage = { scan: number; printed: number };
 
-// One block of an article's body. Only the structures this source actually uses are modelled —
-// there is deliberately no general literary AST.
+// ── TWO INDEPENDENT DIMENSIONS (independent review correction) ────────────────────────────────────
+// An earlier revision gave a whole source paragraph ONE semantic kind, decided largely by whether it
+// opened with a quotation mark. That is wrong for this source: a single printed paragraph regularly
+// carries QUOTED third-party text and then Kalaignar's own framing, and typing the whole paragraph
+// as "quotation" rendered his commentary inside <blockquote> — attributing his voice to the person
+// he is quoting. The model therefore keeps the two dimensions apart:
 //
-//   "paragraph"  — ordinary authored prose.
-//   "quotation"  — a quoted passage the source sets apart (Kalaignar quoting Achariyar, Nehru,
-//                  Kambar …). Kept distinct so the reader never blurs Kalaignar's framing into the
-//                  voice he is quoting.
-//   "subheading" — a heading PRINTED IN THE SOURCE inside the article body.
-//   "attribution"— a source-bolded citation line closing a quotation, e.g. "(Achariyar in Kalki,
-//                  May 23.)".
+//   A. SOURCE BLOCK STRUCTURE  — paragraph | subheading | attribution
+//   B. VOICE STRUCTURE INSIDE A BLOCK — ordered authored-text / quoted-text segments
+//
+// A paragraph is never split to make rendering easier, and source paragraphs are never merged
+// because a quotation continues.
+export type ArticleVoice = "authored-text" | "quoted-text";
+
+/** One ordered run of a single voice inside a block. Source quotation punctuation is retained. */
+export type ArticleSegment = { kind: ArticleVoice; text: string };
+
 export type ArticleBlock = {
-  kind: "paragraph" | "quotation" | "subheading" | "attribution";
-  /** Verbatim released text (inline Markdown emphasis preserved as released). */
+  /** SOURCE structure only — the voice mix lives in `segments`. */
+  kind: "paragraph" | "subheading" | "attribution";
+  /** Ordered voice segments. A pure-authored block has one authored segment; a pure-quotation block
+   *  has only quoted segments; a MIXED block has both and must never render wholly as a quote. */
+  segments: ArticleSegment[];
+  /** Verbatim released text of the whole block (the segments concatenate back to exactly this). */
   text: string;
+  /** True when the block carries both voices — the case the earlier model got wrong. */
+  mixedVoice: boolean;
   /**
    * Every printed page this ONE block occupies, in order. A block that continues across a printed
-   * page carries both pages — provenance never forces the block to be split (see PAGE BOUNDARY ≠
-   * PARAGRAPH BOUNDARY in the importer).
+   * page carries both pages — provenance never forces the block to be split.
    */
   sourcePages: ArticleSourcePage[];
 };
@@ -52,15 +64,15 @@ export type ArticleNote = {
   notPartOfAuthoredText: true;
 };
 
-// TYPOGRAPHIC relation across a printed-page transition inside one article.
+// Relation across a printed-page transition inside one article. All three values require POSITIVE
+// source evidence except `unknown`, which is the honest default.
 //
-//   "same-block"       — the source archive explicitly records that the paragraph/quotation
-//                        continues across the page (the page records' audit notes state it).
-//   "block-boundary"   — the transition falls between two complete blocks. The archive verifies
-//                        every page record's paragraph structure and paragraph continuation against
-//                        the scan (83/83 strict PASS) and records a continuation whenever one
-//                        exists, so a verified page pair with no continuation record is a boundary.
-//   "unknown"          — reserved: neither could be established. Rendered neutrally, never guessed.
+//   "same-block"     — the archive POSITIVELY records that the paragraph/quotation continues across
+//                      the page (a page record's audit note says so).
+//   "block-boundary" — the archive POSITIVELY records that a new source block begins at the page.
+//   "unknown"        — the archive establishes NEITHER. Absence of a continuation note is NOT
+//                      boundary evidence: nothing in the source repository states that continuation
+//                      notes are exhaustive. An unresolved edge is preserved as unresolved.
 export type ArticlePageRelation = "same-block" | "block-boundary" | "unknown";
 
 export type ArticlePageTransition = {
@@ -69,7 +81,7 @@ export type ArticlePageTransition = {
   fromPrinted: number;
   toPrinted: number;
   relation: ArticlePageRelation;
-  /** Verbatim citations from the pinned source repository supporting the relation. */
+  /** Verbatim citations from the pinned source repository supporting the relation, if any. */
   evidence: string[];
 };
 
@@ -171,18 +183,30 @@ export type EssayProvenance = {
   };
   archiveDerived: {
     articles: number;
+    /** SOURCE block structure. */
     tamilBlocks: number;
     englishBlocks: number;
     tamilSubheadings: number;
     englishSubheadings: number;
-    tamilQuotations: number;
-    englishQuotations: number;
+    tamilAttributions: number;
+    englishAttributions: number;
+    /** VOICE inventory — a separate dimension from block structure. */
+    tamilAuthoredOnlyParagraphs: number;
+    englishAuthoredOnlyParagraphs: number;
+    tamilQuotationOnlyParagraphs: number;
+    englishQuotationOnlyParagraphs: number;
+    tamilMixedVoiceParagraphs: number;
+    englishMixedVoiceParagraphs: number;
+    tamilQuotedSegments: number;
+    englishQuotedSegments: number;
     translatorNotes: number;
+    /** CROSS-PAGE relation audit — positive evidence only. */
     pageTransitionsAudited: number;
     relationSameBlock: number;
     relationBlockBoundary: number;
     relationUnknown: number;
     crossPageBlocks: number;
+    voiceNote: string;
     boundaryNote: string;
     provenanceGranularity: string;
     note: string;

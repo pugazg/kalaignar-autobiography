@@ -161,8 +161,18 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
         <Card icon={BookOpen} title={ta ? "காப்பகத்தால் உருவான அமைப்பு" : "Archive-derived reading structure"}>
           <dl className="mt-3">
             <Row label={ta ? "கட்டுரைகள்" : "Articles"}>{d.articles}</Row>
-            <Row label={ta ? "தமிழ் தொகுதிகள்" : "Tamil blocks"}>{d.tamilBlocks} · {ta ? "மேற்கோள்" : "quotations"} {d.tamilQuotations} · {ta ? "துணைத்தலைப்பு" : "subheadings"} {d.tamilSubheadings}</Row>
-            <Row label={ta ? "ஆங்கிலத் தொகுதிகள்" : "English blocks"}>{d.englishBlocks} · {ta ? "மேற்கோள்" : "quotations"} {d.englishQuotations} · {ta ? "துணைத்தலைப்பு" : "subheadings"} {d.englishSubheadings}</Row>
+            <Row label={ta ? "தமிழ் தொகுதிகள்" : "Tamil blocks"}>
+              {d.tamilBlocks} · {ta ? "துணைத்தலைப்பு" : "subheadings"} {d.tamilSubheadings} · {ta ? "மேற்கோள் சான்று" : "attributions"} {d.tamilAttributions}
+            </Row>
+            <Row label={ta ? "தமிழ் — குரல் அமைப்பு" : "Tamil — voice structure"}>
+              {ta ? "கலைஞரின் உரை மட்டும்" : "authored only"} {d.tamilAuthoredOnlyParagraphs} · {ta ? "மேற்கோள் மட்டும்" : "quotation only"} {d.tamilQuotationOnlyParagraphs} · <strong>{ta ? "கலப்புக் குரல்" : "mixed voice"} {d.tamilMixedVoiceParagraphs}</strong> · {ta ? "மேற்கோள் பகுதிகள்" : "quoted segments"} {d.tamilQuotedSegments}
+            </Row>
+            <Row label={ta ? "ஆங்கிலத் தொகுதிகள்" : "English blocks"}>
+              {d.englishBlocks} · {ta ? "துணைத்தலைப்பு" : "subheadings"} {d.englishSubheadings} · {ta ? "மேற்கோள் சான்று" : "attributions"} {d.englishAttributions}
+            </Row>
+            <Row label={ta ? "ஆங்கிலம் — குரல் அமைப்பு" : "English — voice structure"}>
+              {ta ? "கலைஞரின் உரை மட்டும்" : "authored only"} {d.englishAuthoredOnlyParagraphs} · {ta ? "மேற்கோள் மட்டும்" : "quotation only"} {d.englishQuotationOnlyParagraphs} · <strong>{ta ? "கலப்புக் குரல்" : "mixed voice"} {d.englishMixedVoiceParagraphs}</strong> · {ta ? "மேற்கோள் பகுதிகள்" : "quoted segments"} {d.englishQuotedSegments}
+            </Row>
             <Row label={ta ? "மொழிபெயர்ப்பாளர் குறிப்புகள்" : "Translator notes"}>{d.translatorNotes} ({ta ? "உரைக்கு வெளியே" : "held outside the body"})</Row>
             <Row label={ta ? "பக்க மாற்றங்கள்" : "Page transitions audited"}>{d.pageTransitionsAudited}</Row>
             <Row label={ta ? "ஒரே தொகுதி (மூலத்தால் நிறுவப்பட்டது)" : "Same block (source-established)"}>{d.relationSameBlock}</Row>
@@ -171,6 +181,9 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
             <Row label={ta ? "பக்கங்களைக் கடக்கும் தொகுதிகள்" : "Blocks spanning printed pages"}>{d.crossPageBlocks}</Row>
           </dl>
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
+            {d.voiceNote}
+          </p>
+          <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
             {d.boundaryNote}
           </p>
           <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">

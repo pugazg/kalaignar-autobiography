@@ -106,10 +106,51 @@ function frontMatter(text) {
   return { fm, body: text.slice(m[0].length) };
 }
 
-// A quotation is a paragraph the source opens with a Tamil/English opening quotation mark. This is
-// a RELEASED typographic fact (the archive verifies every quotation mark against the scan), not an
-// inference about meaning — and it only affects presentation, never text or ordering.
-const OPENS_QUOTE = /^[“"']/;
+// ── VOICE SEGMENTATION (independent review correction) ──────────────────────────────────────────
+// An earlier revision typed a whole paragraph "quotation" when it merely OPENED with a quotation
+// mark. In this publication a single printed paragraph regularly closes a quotation and then
+// continues in Kalaignar's own voice — Article 1's `“பாயசத்தில் … சொல்லப்படுகிறது.”` followed by
+// `1954 - ஜூன் 6ஆம் நாள் …` is exactly that shape. Typing the block as a quotation rendered his
+// framing inside <blockquote>, attributing his words to the man he was quoting.
+//
+// Voice is therefore segmented INSIDE the block from the released text's own quotation punctuation,
+// tracking state across multiple quotations in one paragraph and across page-spanning quotations.
+// Speaker identity is never inferred from meaning, and punctuation is never repaired: the archive
+// documents source-irregular/unclosed quotations, and an unclosed quotation simply leaves the block
+// ending in quoted voice, exactly as the source leaves it.
+const OPEN_Q = "\u201c"; // “
+const CLOSE_Q = "\u201d"; // ”
+
+function segmentVoice(text) {
+  const segs = [];
+  let cur = "";
+  let voice = "authored-text";
+  for (const ch of text) {
+    if (ch === OPEN_Q && voice === "authored-text") {
+      if (cur) segs.push({ kind: "authored-text", text: cur });
+      cur = ch;
+      voice = "quoted-text";
+      continue;
+    }
+    cur += ch;
+    if (ch === CLOSE_Q && voice === "quoted-text") {
+      segs.push({ kind: "quoted-text", text: cur });
+      cur = "";
+      voice = "authored-text";
+    }
+  }
+  if (cur) segs.push({ kind: voice, text: cur });
+  // Never DROP a run: a whitespace-only run between two quotations is merged into the previous
+  // segment so the segments always concatenate back to the block verbatim.
+  const merged = [];
+  for (const seg of segs) {
+    if (seg.text.trim() === "" && merged.length) merged[merged.length - 1].text += seg.text;
+    else merged.push({ ...seg });
+  }
+  if (merged.map((x) => x.text).join("") !== text) throw new Error(`voice segmentation lost text: ${JSON.stringify(text.slice(0, 60))}`);
+  return merged.length ? merged : [{ kind: "authored-text", text }];
+}
+
 // A source-bolded citation line closing a quotation, e.g. **(மே. 23, ‘கல்கியில் ஆச்சாரியார்.)**
 const ATTRIBUTION = /^\*\*\(.*\)\*\*$/;
 
@@ -168,7 +209,12 @@ function parseArticle(text, markerRe) {
 }
 
 // ── Cross-page audit, derived from the page records ─────────────────────────────────────────────
-const CONTINUATION = /தொடர்கிறத|தொடர்ச்சி|continuation|continues|completes (?:scan|the)/i;
+// POSITIVE evidence only, for BOTH directions. Absence of a continuation note is NOT boundary
+// evidence — nothing in the pinned source repository states that continuation notes are exhaustive,
+// and the only "new …" statement in the archive concerns a new ARTICLE (scan 29→30), not an
+// in-article paragraph break. Where neither is positively established the relation is `unknown`.
+const CONTINUATION = /தொடர்கிறத|தொடர்ச்சி|continuation|continues|completes /i;
+const BOUNDARY = /new paragraph|புதிய பத்தி|paragraph break|opens a new paragraph|begins a new paragraph|starts a new paragraph/i;
 
 function pageRecords() {
   const dir = path.join(PUB_DIR, "pages");
@@ -198,30 +244,23 @@ for (const [scan, r] of RECS) {
   if (r.status !== "verified") throw new Error(`page record for scan ${scan} is "${r.status}", expected "verified"`);
 }
 
-/** Audit the transition scan→scan+1 inside one article, from the archive's own statements. */
+/** Audit one in-article page edge from the archive's own statements — positive evidence only. */
 function auditTransition(fromScan, toScan) {
   const a = RECS.get(fromScan);
   const b = RECS.get(toScan);
-  const evidence = [];
-  for (const [rec, line] of [
-    ...a.note.map((n) => [a, n]),
-    ...b.note.map((n) => [b, n]),
-  ]) {
-    if (!CONTINUATION.test(line)) continue;
-    // Only statements naming this page edge count.
-    if (new RegExp(`scan ${toScan}\\b|scan ${fromScan}\\b|தொடக்க|Opening|first line|இறுதி|Final`, "i").test(line)) {
-      evidence.push(`${rec.file}: ${line.replace(/^-\s*/, "")}`);
-    }
+  const names = new RegExp(`scan ${toScan}\\b|scan ${fromScan}\\b|தொடக்க|Opening|first line|இறுதி|Final`, "i");
+  const cont = [];
+  const bound = [];
+  for (const [rec, line] of [...a.note.map((n) => [a, n]), ...b.note.map((n) => [b, n])]) {
+    if (!names.test(line)) continue;
+    const cite = `${rec.file}: ${line.replace(/^-\s*/, "")}`;
+    if (CONTINUATION.test(line)) cont.push(cite);
+    if (BOUNDARY.test(line)) bound.push(cite);
   }
-  return evidence.length
-    ? { relation: "same-block", evidence: [...new Set(evidence)] }
-    : {
-        relation: "block-boundary",
-        evidence: [
-          `${a.file}: status "verified" — the processing guide defines verified as confirming text, punctuation, paragraph structure and non-text marks directly against the scan; no cross-page continuation is recorded for this transition.`,
-          `${b.file}: status "verified" — same; the strict visual-fidelity review (83/83 PASS) checks paragraph continuation against every page record.`,
-        ],
-      };
+  if (cont.length && !bound.length) return { relation: "same-block", evidence: [...new Set(cont)] };
+  if (bound.length && !cont.length) return { relation: "block-boundary", evidence: [...new Set(bound)] };
+  // Neither positively established (or contradictory) → honestly unresolved, never guessed.
+  return { relation: "unknown", evidence: [] };
 }
 
 // ── Build the 14 articles ────────────────────────────────────────────────────────────────────────
@@ -232,29 +271,38 @@ const enFiles = fs.readdirSync(path.join(PUB_DIR, "translations/en")).filter((f)
 if (taFiles.length !== 14) throw new Error(`expected 14 Tamil article assemblies, found ${taFiles.length}`);
 if (enFiles.length !== 14) throw new Error(`expected 14 English article files, found ${enFiles.length}`);
 
-/** Fold raw units into blocks, joining across a page edge the archive records as continuing. */
+/**
+ * Fold raw units into blocks. A page edge the archive POSITIVELY records as continuing joins the two
+ * fragments into ONE block carrying both printed pages. An `unknown` edge is NEVER silently joined
+ * and never presented as a clean paragraph break — the two fragments stay separate blocks and the
+ * unresolved edge is carried in `pageTransitions` for the reader to mark neutrally.
+ */
 function buildBlocks(units, transitions) {
   const contAt = new Map(transitions.filter((t) => t.relation === "same-block").map((t) => [t.toScan, t]));
   const blocks = [];
   for (const u of units) {
     if (u.kind === "title") continue;
     if (u.kind === "subheading") {
-      blocks.push({ kind: "subheading", text: u.text, sourcePages: [u.page] });
+      blocks.push({ kind: "subheading", segments: [{ kind: "authored-text", text: u.text }], text: u.text, mixedVoice: false, sourcePages: [u.page] });
       continue;
     }
-    const isQuote = u.kind === "blockquote" || OPENS_QUOTE.test(u.text);
-    const kind = ATTRIBUTION.test(u.text) ? "attribution" : isQuote ? "quotation" : "paragraph";
+    const kind = ATTRIBUTION.test(u.text) ? "attribution" : "paragraph";
     const prev = blocks[blocks.length - 1];
     const cont = u.page && contAt.get(u.page.scan);
-    // Join ONLY when the archive records a continuation into this page AND this is the page's very
-    // first unit continuing the previous block (never across a subheading).
     const firstOnPage = prev && prev.sourcePages[prev.sourcePages.length - 1].scan === u.page.scan - 1;
-    if (cont && prev && firstOnPage && prev.kind !== "subheading" && kind !== "subheading") {
+    if (cont && prev && firstOnPage && prev.kind === "paragraph" && kind === "paragraph") {
       prev.text = `${prev.text} ${u.text}`;
       prev.sourcePages.push(u.page);
       continue;
     }
-    blocks.push({ kind, text: u.text, sourcePages: [u.page] });
+    blocks.push({ kind, segments: null, text: u.text, mixedVoice: false, sourcePages: [u.page] });
+  }
+  // Segment voice AFTER cross-page joining, so a quotation that spans a printed page is one segment.
+  for (const b of blocks) {
+    if (b.segments) continue;
+    b.segments = segmentVoice(b.text);
+    const kinds = new Set(b.segments.map((x) => x.kind));
+    b.mixedVoice = kinds.size > 1;
   }
   return blocks;
 }
@@ -429,28 +477,38 @@ const provenance = {
     englishBlocks: count((a) => a.english.blocks.length),
     tamilSubheadings: count((a) => a.tamil.blocks.filter((b) => b.kind === "subheading").length),
     englishSubheadings: count((a) => a.english.blocks.filter((b) => b.kind === "subheading").length),
-    tamilQuotations: count((a) => a.tamil.blocks.filter((b) => b.kind === "quotation").length),
-    englishQuotations: count((a) => a.english.blocks.filter((b) => b.kind === "quotation").length),
+    tamilAttributions: count((a) => a.tamil.blocks.filter((b) => b.kind === "attribution").length),
+    englishAttributions: count((a) => a.english.blocks.filter((b) => b.kind === "attribution").length),
+    tamilAuthoredOnlyParagraphs: count((a) => a.tamil.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "authored-text")).length),
+    englishAuthoredOnlyParagraphs: count((a) => a.english.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "authored-text")).length),
+    tamilQuotationOnlyParagraphs: count((a) => a.tamil.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "quoted-text")).length),
+    englishQuotationOnlyParagraphs: count((a) => a.english.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "quoted-text")).length),
+    tamilMixedVoiceParagraphs: count((a) => a.tamil.blocks.filter((b) => b.mixedVoice).length),
+    englishMixedVoiceParagraphs: count((a) => a.english.blocks.filter((b) => b.mixedVoice).length),
+    tamilQuotedSegments: count((a) => a.tamil.blocks.reduce((n, b) => n + b.segments.filter((x) => x.kind === "quoted-text").length, 0)),
+    englishQuotedSegments: count((a) => a.english.blocks.reduce((n, b) => n + b.segments.filter((x) => x.kind === "quoted-text").length, 0)),
     translatorNotes: count((a) => a.english.notes.length),
     pageTransitionsAudited: allTx.length,
     relationSameBlock: rel("same-block"),
     relationBlockBoundary: rel("block-boundary"),
     relationUnknown: rel("unknown"),
     crossPageBlocks: count((a) => [...a.tamil.blocks, ...a.english.blocks].filter((b) => b.sourcePages.length > 1).length),
+    voiceNote:
+      "SOURCE BLOCK STRUCTURE and VOICE are separate dimensions. A block is a paragraph, a printed subheading or a source-bolded attribution line; inside a paragraph, ordered segments carry either Kalaignar's authored text or quoted third-party text, segmented from the released text's own quotation punctuation. A single printed paragraph regularly closes a quotation and then continues in Kalaignar's voice, so a MIXED paragraph is never rendered wholly as a quotation — doing so would attribute his framing to the person he quotes. Only a paragraph whose every segment is quoted may render as a full quotation. Source quotation punctuation is preserved and never repaired: the archive documents source-irregular and unclosed quotations, and an unclosed quotation simply leaves the block ending in quoted voice.",
     boundaryNote:
-      "A printed-page transition is PROVENANCE; it does not by itself establish a new paragraph, the same paragraph, a new quotation or a continued quotation. The hidden page markers in both released layers are written with blank lines around them, and that formatting is never read as structure. Every in-article transition is classified from the SOURCE ARCHIVE's own per-page audit notes: an explicit continuation record joins the fragments into ONE block carrying both printed pages; a verified page pair with no continuation record is a block boundary, because the archive defines `verified` as having confirmed paragraph structure against the scan and its strict review (83/83 PASS) checks paragraph continuation on every page record. Each classification carries its verbatim citation, and `unknown` stays available for any transition neither could establish.",
+      "A printed-page transition is PROVENANCE; it does not by itself establish a new paragraph, the same paragraph, a new quotation or a continued quotation, and the hidden page markers' surrounding blank lines are never read as structure. Every in-article edge is classified from POSITIVE evidence in the pinned source repository: a page record that records a continuation gives `same-block` and joins the fragments into ONE block carrying both printed pages; a page record that positively records a new paragraph would give `block-boundary`. Absence of a continuation note is NOT boundary evidence — nothing in the source repository states that continuation notes are exhaustive, and the archive's only 'new …' statement concerns a new ARTICLE, not an in-article paragraph break. Edges the archive establishes neither way remain `unknown`: their fragments are kept separate and the reader marks the edge neutrally rather than asserting a paragraph break or a continuation.",
     provenanceGranularity:
-      "Block-level printed-page provenance. Every block records each printed page it occupies, so a block that runs across a page edge carries both — provenance never forces a block to be split, and the reader does not interrupt prose with page markers.",
-    note: "Derived structure only. The Tamil assemblies are the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, re-paragraphed or normalized during import: text, order, quotation structure, source-supported subheadings and emphasis are carried exactly as released.",
+      "Block-level printed-page provenance. Every block records each printed page it occupies, so a block joined across a page edge carries both — provenance never forces a block to be split, and the reader does not interrupt prose with page markers except at an edge the archive leaves unresolved.",
+    note: "Derived structure only. The Tamil assemblies are the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, re-paragraphed or normalized during import: text, order, quotation punctuation, source-printed subheadings and emphasis are carried exactly as released.",
   },
   blockers: rel("unknown")
     ? [
         {
           item: "cross-page-block-relationship",
           count: rel("unknown"),
-          detail: `${rel("unknown")} printed-page transitions for which the source archive records no paragraph/quotation relation.`,
+          detail: `${rel("unknown")} in-article printed-page transitions for which the source archive positively establishes NEITHER a continuation nor a new paragraph. They are represented as unresolved: the two fragments are kept separate, neither joined nor presented as a clean paragraph break, and the reader marks the edge neutrally on screen and in print. The relation is never inferred from semantic flow, punctuation, or the blank lines around a page marker.`,
           resolution:
-            "Resolution requires an UPSTREAM source-archive review of the controlling scan that explicitly records the paragraph/quotation relation at those transitions. This Digital Library integration does not establish those typographic facts independently.",
+            "Resolution requires an UPSTREAM source-archive review of the controlling scan TVA_BOK_0065662_சக்கரவர்த்தியின்_திருமகன்.pdf that explicitly records the paragraph relation at each of these page edges — or an explicit archive convention stating that its continuation notes are exhaustive. This Digital Library integration does not establish those typographic facts independently.",
         },
       ]
     : [],
@@ -490,9 +548,10 @@ fs.writeFileSync(path.join(OUT, "provenance.json"), JSON.stringify(provenance, n
 
 const d = provenance.archiveDerived;
 console.log("publication:", SLUG);
-console.log("articles:", d.articles, "| Tamil blocks", d.tamilBlocks, "| English blocks", d.englishBlocks);
-console.log("subheadings ta/en:", d.tamilSubheadings, "/", d.englishSubheadings, "| quotations ta/en:", d.tamilQuotations, "/", d.englishQuotations);
+console.log("articles:", d.articles);
+console.log("Tamil   blocks", d.tamilBlocks, "| authored-only", d.tamilAuthoredOnlyParagraphs, "| quotation-only", d.tamilQuotationOnlyParagraphs, "| MIXED", d.tamilMixedVoiceParagraphs, "| attributions", d.tamilAttributions, "| subheadings", d.tamilSubheadings, "| quoted segments", d.tamilQuotedSegments);
+console.log("English blocks", d.englishBlocks, "| authored-only", d.englishAuthoredOnlyParagraphs, "| quotation-only", d.englishQuotationOnlyParagraphs, "| MIXED", d.englishMixedVoiceParagraphs, "| attributions", d.englishAttributions, "| subheadings", d.englishSubheadings, "| quoted segments", d.englishQuotedSegments);
 console.log("translator notes:", d.translatorNotes, "| cross-page blocks:", d.crossPageBlocks);
-console.log("page transitions audited:", d.pageTransitionsAudited, "— same-block", d.relationSameBlock, "/ block-boundary", d.relationBlockBoundary, "/ unknown", d.relationUnknown);
+console.log("page transitions:", d.pageTransitionsAudited, "— same-block", d.relationSameBlock, "/ block-boundary", d.relationBlockBoundary, "/ UNKNOWN", d.relationUnknown);
 console.log("publication.json sha256:", sha256(readText(path.join(OUT, "publication.json"))));
 console.log("provenance.json sha256:", sha256(readText(path.join(OUT, "provenance.json"))));

@@ -89,6 +89,12 @@ body {
   display: none;
 }
 
+/* The unresolved cross-page block-relation note is printed only; on screen the marker stays terse
+   and the accessible name / hover title carry the explanation. */
+.article-page-relation-note {
+  display: none;
+}
+
 @media print {
   /* hide interactive / navigational chrome that has no meaning on paper */
   nav, header, footer,
@@ -156,6 +162,24 @@ body {
   }
   /* In print there is no hover title or accessible name to explain the marker, so the label says so. */
   .poem-page-transition-print-note {
+    display: inline !important;
+  }
+
+  /* PROSE PROVENANCE ON PAPER. An unresolved cross-page block relation must survive Print → Save as
+     PDF: if the marker vanished, the fragments on either side would read as a clean paragraph break
+     the source does not establish. Narrow, local exception to the print chrome rules. */
+  .article-page-relation {
+    display: flex !important;
+    color: #6b6b6b !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .article-page-relation-rule {
+    background: none !important;
+    border-top: 1px solid #cfcfcf !important;
+    height: 0 !important;
+  }
+  .article-page-relation-note {
     display: inline !important;
   }
 

@@ -104,7 +104,7 @@ export default function ArticleReader({
             a block that runs across a printed page is ONE block carrying both pages, so the prose is
             never interrupted by a page marker and never silently re-paragraphed. */}
         <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
-          {blocks.map((b, i) => renderBlock(b, i))}
+          {renderBlocks(blocks, article, ta)}
         </div>
 
         {/* Translator/editorial notes — released alongside the English article and labelled by the
@@ -158,6 +158,51 @@ export default function ArticleReader({
   );
 }
 
+// Render the block stream, inserting a neutral marker at any printed-page edge whose block relation
+// the archive leaves UNRESOLVED. Such an edge must assert neither "same paragraph" nor "new
+// paragraph": the marker is deliberately weaker than the paragraph gap above it, and it survives
+// print (see globals.css) because dropping it on paper would silently assert a clean break.
+function renderBlocks(blocks: ArticleBlock[], article: Article, ta: boolean) {
+  const unresolved = new Map(
+    article.pageTransitions.filter((t) => t.relation === "unknown").map((t) => [t.fromScan, t]),
+  );
+  const out: ReactNode[] = [];
+  blocks.forEach((b, i) => {
+    out.push(renderBlock(b, i));
+    const last = b.sourcePages[b.sourcePages.length - 1];
+    const nextFirst = blocks[i + 1]?.sourcePages[0];
+    const t = last && nextFirst && nextFirst.scan === last.scan + 1 ? unresolved.get(last.scan) : undefined;
+    if (t) out.push(<PageRelationRule key={`u${i}`} toPrinted={t.toPrinted} ta={ta} />);
+  });
+  return out;
+}
+
+// A restrained, prose-appropriate marker for an unresolved cross-page block relation. It is NOT
+// authored text and is excluded from the reading measure by being a separator, not a paragraph.
+function PageRelationRule({ toPrinted, ta }: { toPrinted: number; ta: boolean }) {
+  const label = ta
+    ? "மூலப் பக்க மாற்றம் — தொகுதித் தொடர்பு தீர்மானிக்கப்படவில்லை"
+    : "Source page transition — block relationship unresolved";
+  return (
+    <div
+      className="article-page-relation -mt-2 mb-5 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/30 dark:text-night-text/30"
+      role="separator"
+      aria-label={label}
+      title={label}
+    >
+      <span className="article-page-relation-rule h-px w-5 bg-ink/10 dark:bg-white/10" aria-hidden />
+      <span className="article-page-relation-label font-body normal-case tracking-normal" aria-hidden>
+        {ta ? `அச்சுப் பக்கம் ${toPrinted}` : `printed page ${toPrinted}`}
+        {/* Print-only: on paper there is no hover title or accessible name to explain the marker. */}
+        <span className="article-page-relation-note">
+          {ta ? " · தொகுதித் தொடர்பு தீர்மானிக்கப்படவில்லை" : " · block relation unresolved"}
+        </span>
+      </span>
+      <span className="article-page-relation-rule h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+    </div>
+  );
+}
+
 function renderBlock(b: ArticleBlock, i: number) {
   if (b.kind === "subheading") {
     // A subheading PRINTED IN THE SOURCE, inside the article body.
@@ -167,14 +212,6 @@ function renderBlock(b: ArticleBlock, i: number) {
       </h2>
     );
   }
-  if (b.kind === "quotation") {
-    // Kept visually distinct so Kalaignar's framing is never blurred into the voice he quotes.
-    return (
-      <blockquote key={i} className="mb-5 whitespace-pre-line border-l-2 border-marina/40 py-1 pl-4 leading-loose text-ink/80 dark:text-night-text/80">
-        {inline(b.text)}
-      </blockquote>
-    );
-  }
   if (b.kind === "attribution") {
     return (
       <p key={i} className="mb-5 pl-4 text-[0.9em] font-semibold text-ink/60 dark:text-night-text/60">
@@ -182,9 +219,32 @@ function renderBlock(b: ArticleBlock, i: number) {
       </p>
     );
   }
+  // VOICE. A paragraph whose every segment is quoted may be set as a full quotation. A MIXED
+  // paragraph — quoted text followed by Kalaignar's own framing, which this source does constantly —
+  // stays a PARAGRAPH, with only its quoted runs marked inline. Wrapping the whole block in
+  // <blockquote> would attribute his commentary to the person he is quoting.
+  const allQuoted = b.segments.every((sg) => sg.kind === "quoted-text");
+  const body = b.segments.map((sg, k) =>
+    sg.kind === "quoted-text" ? (
+      // Source quotation marks are retained inside the text; the styling is additional, not a
+      // replacement for them.
+      <span key={k} className="article-quoted text-ink/75 dark:text-night-text/75">
+        {inline(sg.text)}
+      </span>
+    ) : (
+      <span key={k}>{inline(sg.text)}</span>
+    ),
+  );
+  if (allQuoted) {
+    return (
+      <blockquote key={i} className="mb-5 whitespace-pre-line border-l-2 border-marina/40 py-1 pl-4 leading-loose text-ink/80 dark:text-night-text/80">
+        {body}
+      </blockquote>
+    );
+  }
   return (
-    <p key={i} className="mb-5 whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90">
-      {inline(b.text)}
+    <p key={i} className="mb-5 whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90" data-mixed-voice={b.mixedVoice ? "true" : undefined}>
+      {body}
     </p>
   );
 }

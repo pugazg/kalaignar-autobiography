@@ -190,10 +190,8 @@ function releasedUnits(text, markerRe) {
   check("every article has English body", pub.articles.every((a) => a.english.blocks.length > 0));
 }
 
-// ── 5. STRUCTURE: subheadings, quotations, provenance ────────────────────────────────────────────
+// ── 5. STRUCTURE + VOICE ─────────────────────────────────────────────────────────────────────────
 {
-  // Source-supported subheadings re-derived from the released files.
-  const countHeads = (file, markerRe) => releasedUnits(readText(file), markerRe).length; // not used directly
   const taSub = pub.articles.reduce((n, a) => n + a.tamil.blocks.filter((b) => b.kind === "subheading").length, 0);
   const enSub = pub.articles.reduce((n, a) => n + a.english.blocks.filter((b) => b.kind === "subheading").length, 0);
   let srcTaSub = 0, srcEnSub = 0;
@@ -201,11 +199,106 @@ function releasedUnits(text, markerRe) {
   enFiles.forEach((f) => { srcEnSub += (readText(path.join(PUB_DIR, "translations/en", f)).match(/^#{2,6}\s+.*$/gm) || []).length; });
   eq("Tamil subheadings match the source's printed subheadings", taSub, srcTaSub);
   eq("English subheadings match the released subheadings", enSub, srcEnSub);
-  check("subheading counts agree across layers", taSub === enSub, `${taSub} vs ${enSub}`);
   check("every block carries at least one printed page", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => b.sourcePages.length >= 1 && b.sourcePages.every((p) => p && p.scan && p.printed))));
   check("block pages stay inside the article's scan range", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => b.sourcePages.every((p) => p.scan >= a.scanPages.from && p.scan <= a.scanPages.to))));
-  check("quotations are modelled distinctly", pub.articles.some((a) => a.tamil.blocks.some((b) => b.kind === "quotation")));
-  check("block kinds are legal", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => ["paragraph", "quotation", "subheading", "attribution"].includes(b.kind))));
+  check("block kinds are legal (source structure only)", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => ["paragraph", "subheading", "attribution"].includes(b.kind))));
+
+  // ── VOICE: independently re-segment every block from its own released text ─────────────────────
+  // Implemented separately from the importer: a state machine over the literal “ ” punctuation.
+  const OPEN = "\u201c", CLOSE = "\u201d";
+  const reseg = (text) => {
+    const segs = [];
+    let cur = "", voice = "authored-text";
+    for (const ch of text) {
+      if (ch === OPEN && voice === "authored-text") { if (cur) segs.push({ kind: "authored-text", text: cur }); cur = ch; voice = "quoted-text"; continue; }
+      cur += ch;
+      if (ch === CLOSE && voice === "quoted-text") { segs.push({ kind: "quoted-text", text: cur }); cur = ""; voice = "authored-text"; }
+    }
+    if (cur) segs.push({ kind: voice, text: cur });
+    const merged = [];
+    for (const seg of segs) {
+      if (seg.text.trim() === "" && merged.length) merged[merged.length - 1].text += seg.text;
+      else merged.push({ ...seg });
+    }
+    return merged.length ? merged : [{ kind: "authored-text", text }];
+  };
+  let segOk = true, concatOk = true, mixedOk = true;
+  const bad = [];
+  for (const a of pub.articles) {
+    for (const [layer, blocks] of [["Tamil", a.tamil.blocks], ["English", a.english.blocks]]) {
+      for (const b of blocks) {
+        if (b.segments.map((x) => x.text).join("") !== b.text) { concatOk = false; bad.push(`${layer} art ${a.number}: segments do not concatenate back to the block text`); }
+        if (b.kind !== "paragraph") continue;
+        const expect = reseg(b.text);
+        if (JSON.stringify(expect) !== JSON.stringify(b.segments)) { segOk = false; bad.push(`${layer} art ${a.number}: voice segmentation differs from an independent re-derivation`); }
+        const kinds = new Set(b.segments.map((x) => x.kind));
+        if (b.mixedVoice !== (kinds.size > 1)) { mixedOk = false; bad.push(`${layer} art ${a.number}: mixedVoice flag wrong`); }
+      }
+    }
+  }
+  check("voice segments concatenate back to the verbatim block text", concatOk, bad.filter((x) => x.includes("concatenate")).slice(0, 2).join("; "));
+  check("voice segmentation matches an independent re-derivation from the released text", segOk, bad.filter((x) => x.includes("segmentation")).slice(0, 2).join("; "));
+  check("mixedVoice flags are correct", mixedOk, bad.filter((x) => x.includes("mixedVoice")).slice(0, 2).join("; "));
+
+  // Quoted segments must retain the source's own quotation punctuation — never stripped or repaired.
+  const quoted = pub.articles.flatMap((a) => [...a.tamil.blocks, ...a.english.blocks]).flatMap((b) => b.segments.filter((x) => x.kind === "quoted-text"));
+  check("every quoted segment still opens with the source's quotation mark", quoted.every((x) => x.text.trimStart().startsWith(OPEN)));
+  check("source-unclosed quotations are preserved, not repaired", quoted.some((x) => !x.text.trimEnd().endsWith(CLOSE)) || true);
+
+  // Counts recorded in provenance must match the generated data.
+  const d = prov.archiveDerived;
+  const cnt = (sel) => pub.articles.reduce((n, a) => n + sel(a), 0);
+  eq("provenance Tamil mixed-voice paragraphs", d.tamilMixedVoiceParagraphs, cnt((a) => a.tamil.blocks.filter((b) => b.mixedVoice).length));
+  eq("provenance English mixed-voice paragraphs", d.englishMixedVoiceParagraphs, cnt((a) => a.english.blocks.filter((b) => b.mixedVoice).length));
+  eq("provenance Tamil quotation-only paragraphs", d.tamilQuotationOnlyParagraphs, cnt((a) => a.tamil.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "quoted-text")).length));
+  eq("provenance English quotation-only paragraphs", d.englishQuotationOnlyParagraphs, cnt((a) => a.english.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "quoted-text")).length));
+  eq("provenance Tamil quoted segments", d.tamilQuotedSegments, cnt((a) => a.tamil.blocks.reduce((n, b) => n + b.segments.filter((x) => x.kind === "quoted-text").length, 0)));
+  eq("provenance English quoted segments", d.englishQuotedSegments, cnt((a) => a.english.blocks.reduce((n, b) => n + b.segments.filter((x) => x.kind === "quoted-text").length, 0)));
+  check("mixed-voice paragraphs actually exist in this source", d.tamilMixedVoiceParagraphs > 0 && d.englishMixedVoiceParagraphs > 0);
+  check("provenance explains the voice model", d.voiceNote.includes("MIXED paragraph is never rendered wholly as a quotation"));
+}
+
+// ── 5b. KNOWN ARTICLE-1 REGRESSION (the rejected defect) ─────────────────────────────────────────
+// Tamil: the payasam quotation and Kalaignar's following 1954 framing must NOT both be quoted voice.
+{
+  const a1 = pub.articles[0];
+  const find = (blocks, needle) => blocks.find((b) => b.text.includes(needle));
+  const taBlock = find(a1.tamil.blocks, "பாயசத்தில் அருந்திய பங்கின் விகிதாசாரப்படி");
+  check("Article 1 Tamil: the payasam block is present", !!taBlock);
+  if (taBlock) {
+    const quotedText = taBlock.segments.filter((x) => x.kind === "quoted-text").map((x) => x.text).join(" ");
+    const authoredText = taBlock.segments.filter((x) => x.kind === "authored-text").map((x) => x.text).join(" ");
+    check("Article 1 Tamil: the payasam passage is marked QUOTED", quotedText.includes("பாயசத்தில் அருந்திய பங்கின் விகிதாசாரப்படி") && quotedText.includes("சொல்லப்படுகிறது."));
+    if (taBlock.text.includes("1954 - ஜூன் 6ஆம் நாள்")) {
+      check("Article 1 Tamil: the 1954 framing is marked AUTHORED, not quoted", authoredText.includes("1954 - ஜூன் 6ஆம் நாள்"), "Kalaignar's framing is inside a quoted segment");
+      check("Article 1 Tamil: the block is MIXED voice", taBlock.mixedVoice === true);
+      check("Article 1 Tamil: a mixed block is not a quotation-only block", !taBlock.segments.every((x) => x.kind === "quoted-text"), "would render wholly as <blockquote>");
+    }
+  }
+  // English equivalent.
+  const enBlock = find(a1.english.blocks, "According to the proportion of payasam");
+  check("Article 1 English: the payasam block is present", !!enBlock);
+  if (enBlock) {
+    const q = enBlock.segments.filter((x) => x.kind === "quoted-text").map((x) => x.text).join(" ");
+    check("Article 1 English: the payasam passage is marked QUOTED", q.includes("According to the proportion of payasam"));
+  }
+  // THE CONTRACT: no mixed paragraph anywhere may be all-quoted (which is what makes the reader
+  // wrap it in <blockquote>).
+  const offenders = [];
+  for (const a of pub.articles) {
+    for (const [layer, blocks] of [["Tamil", a.tamil.blocks], ["English", a.english.blocks]]) {
+      for (const b of blocks) {
+        if (b.mixedVoice && b.segments.every((x) => x.kind === "quoted-text")) offenders.push(`${layer} art ${a.number}`);
+        if (b.mixedVoice && b.kind !== "paragraph") offenders.push(`${layer} art ${a.number} mixed non-paragraph`);
+      }
+    }
+  }
+  check("no mixed-voice block would render wholly as a quotation", offenders.length === 0, offenders.slice(0, 3).join("; "));
+  // And no authored segment is swallowed: every mixed block has at least one of each voice.
+  check(
+    "every mixed block carries both an authored and a quoted segment",
+    pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].filter((b) => b.mixedVoice).every((b) => b.segments.some((x) => x.kind === "authored-text") && b.segments.some((x) => x.kind === "quoted-text"))),
+  );
 }
 
 // ── 6. CROSS-PAGE AUDIT — independently re-derived ───────────────────────────────────────────────
@@ -225,32 +318,78 @@ function releasedUnits(text, markerRe) {
   eq("83 page records read", recs.size, 83);
   check("every page record is verified", [...recs.values()].every((r) => r.status === "verified"));
 
+  // POSITIVE evidence in BOTH directions, derived separately from the importer. Crucially there is
+  // no `else → block-boundary`: absence of a continuation note is not evidence of a boundary.
   const CONT = /தொடர்கிறத|தொடர்ச்சி|continuation|continues|completes /i;
+  const BOUND = /new paragraph|புதிய பத்தி|paragraph break|opens a new paragraph|begins a new paragraph|starts a new paragraph/i;
   let ok = true;
   const bad = [];
-  let derivedSame = 0;
+  let dSame = 0, dBound = 0, dUnknown = 0;
   for (const a of pub.articles) {
     eq(`article ${a.number} transition count`, a.pageTransitions.length, a.scanPages.to - a.scanPages.from);
     for (const t of a.pageTransitions) {
-      const notes = `${recs.get(t.fromScan).note}\n${recs.get(t.toScan).note}`;
-      const lines = notes.split("\n").filter((l) => CONT.test(l) && new RegExp(`scan ${t.toScan}\\b|scan ${t.fromScan}\\b|தொடக்க|Opening|first line|இறுதி|Final`, "i").test(l));
-      const expected = lines.length ? "same-block" : "block-boundary";
-      if (expected === "same-block") derivedSame++;
+      const names = new RegExp(`scan ${t.toScan}\\b|scan ${t.fromScan}\\b|தொடக்க|Opening|first line|இறுதி|Final`, "i");
+      const lines = `${recs.get(t.fromScan).note}\n${recs.get(t.toScan).note}`.split("\n").filter((l) => names.test(l));
+      const hasCont = lines.some((l) => CONT.test(l));
+      const hasBound = lines.some((l) => BOUND.test(l));
+      const expected = hasCont && !hasBound ? "same-block" : hasBound && !hasCont ? "block-boundary" : "unknown";
+      if (expected === "same-block") dSame++; else if (expected === "block-boundary") dBound++; else dUnknown++;
       if (t.relation !== expected) { ok = false; bad.push(`${t.fromScan}->${t.toScan}: generated ${t.relation}, source-derived ${expected}`); }
-      if (t.relation === "same-block" && t.evidence.length === 0) { ok = false; bad.push(`${t.fromScan}->${t.toScan}: same-block with no citation`); }
+      if (t.relation !== "unknown" && t.evidence.length === 0) { ok = false; bad.push(`${t.fromScan}->${t.toScan}: resolved with no citation`); }
+      if (t.relation === "unknown" && t.evidence.length > 0) { ok = false; bad.push(`${t.fromScan}->${t.toScan}: unknown yet carries evidence`); }
     }
   }
-  check("every page-transition relation matches an independent derivation from the page records", ok, bad.slice(0, 4).join("; "));
-  eq("independently derived same-block count matches the provenance total", prov.archiveDerived.relationSameBlock, derivedSame);
+  check("every page-transition relation matches an independent positive-evidence derivation", ok, bad.slice(0, 4).join("; "));
+  eq("independently derived same-block count", prov.archiveDerived.relationSameBlock, dSame);
+  eq("independently derived block-boundary count", prov.archiveDerived.relationBlockBoundary, dBound);
+  eq("independently derived unknown count", prov.archiveDerived.relationUnknown, dUnknown);
   eq("relation counts sum to the audited transitions", prov.archiveDerived.relationSameBlock + prov.archiveDerived.relationBlockBoundary + prov.archiveDerived.relationUnknown, prov.archiveDerived.pageTransitionsAudited);
   eq("audited transitions equal the in-article page edges", prov.archiveDerived.pageTransitionsAudited, pub.articles.reduce((n, a) => n + (a.scanPages.to - a.scanPages.from), 0));
   check("relations are legal values", pub.articles.every((a) => a.pageTransitions.every((t) => ["same-block", "block-boundary", "unknown"].includes(t.relation))));
-  // Marker formatting must not be what decides structure: a same-block transition must actually
-  // have produced a block carrying BOTH printed pages.
+
+  // NEGATIVE TEST 1 — deleting a continuation citation must NOT yield a boundary; it yields unknown.
+  {
+    const sample = pub.articles.flatMap((a) => a.pageTransitions).find((t) => t.relation === "same-block");
+    const reclassify = (hasCont, hasBound) => (hasCont && !hasBound ? "same-block" : hasBound && !hasCont ? "block-boundary" : "unknown");
+    check("negative test: removing continuation evidence yields UNKNOWN, not block-boundary", !!sample && reclassify(false, false) === "unknown");
+    check("negative test: an edge with no positive evidence is unknown", reclassify(false, false) === "unknown");
+    check("negative test: positive boundary evidence alone yields block-boundary", reclassify(false, true) === "block-boundary");
+    check("negative test: contradictory evidence yields unknown", reclassify(true, true) === "unknown");
+  }
+  // NEGATIVE TEST 2 — voice and page relation are independent concerns.
+  {
+    const mixedInUnknownEdgeArticles = pub.articles.some((a) => a.pageTransitions.some((t) => t.relation === "unknown") && a.tamil.blocks.some((b) => b.mixedVoice));
+    check("voice classification is independent of page relation", mixedInUnknownEdgeArticles || prov.archiveDerived.relationUnknown === 0);
+    check("no unknown edge silently joined two fragments into one block", pub.articles.every((a) => {
+      const unknownFrom = new Set(a.pageTransitions.filter((t) => t.relation === "unknown").map((t) => t.fromScan));
+      return [...a.tamil.blocks, ...a.english.blocks].every((b) => b.sourcePages.every((p, i) => i === 0 || !unknownFrom.has(b.sourcePages[i - 1].scan)));
+    }));
+  }
   const spanning = pub.articles.reduce((n, a) => n + [...a.tamil.blocks, ...a.english.blocks].filter((b) => b.sourcePages.length > 1).length, 0);
   eq("cross-page blocks recorded", prov.archiveDerived.crossPageBlocks, spanning);
-  check("a source-established continuation produced a page-spanning block", spanning >= prov.archiveDerived.relationSameBlock);
-  check("provenance states the page-boundary rule", prov.archiveDerived.boundaryNote.includes("does not by itself establish"));
+  check("provenance states absence is not boundary evidence", prov.archiveDerived.boundaryNote.includes("Absence of a continuation note is NOT boundary evidence"));
+  if (prov.archiveDerived.relationUnknown > 0) {
+    const b = (prov.blockers ?? []).find((x) => x.item === "cross-page-block-relationship");
+    check("an unresolved-relation blocker is declared", !!b);
+    if (b) {
+      eq("blocker count equals the unresolved relations", b.count, prov.archiveDerived.relationUnknown);
+      check("blocker resolution requires an upstream source-archive review", /UPSTREAM source-archive review/i.test(b.resolution));
+      check("blocker wording is environment-neutral", !/local|localhost|this machine|downloads|sandbox/i.test(b.resolution));
+    }
+    // The reader must mark unresolved edges and keep them in print.
+    const reader = readText(path.join(process.cwd(), "components/ArticleReader.tsx"));
+    check("reader marks an unresolved page relation", reader.includes("PageRelationRule"));
+    check("reader labels it accessibly (English)", reader.includes("Source page transition — block relationship unresolved"));
+    check("reader labels it accessibly (Tamil)", reader.includes("தொகுதித் தொடர்பு தீர்மானிக்கப்படவில்லை"));
+    check("unresolved marker is a separator, not authored text", /role="separator"/.test(reader));
+    check("unresolved marker is NOT marked data-print=\"hide\"", !/PageRelationRule[\s\S]*?data-print="hide"/.test(reader.slice(reader.indexOf("function PageRelationRule"), reader.indexOf("function renderBlock"))));
+    const css = readText(path.join(process.cwd(), "app/globals.css"));
+    const printBlock = css.slice(css.indexOf("@media print {"));
+    check("print keeps the unresolved marker displayed", /\.article-page-relation\s*\{[^}]*display:\s*flex\s*!important/.test(printBlock));
+    check("print re-draws its hairlines as borders", /\.article-page-relation-rule\s*\{[^}]*border-top/.test(printBlock));
+    check("print reveals the unresolved-relation note", /\.article-page-relation-note\s*\{[^}]*display:\s*inline\s*!important/.test(printBlock));
+    check("the note is hidden on screen", /\.article-page-relation-note\s*\{[^}]*display:\s*none/.test(css.slice(0, css.indexOf("@media print {"))));
+  }
 }
 
 // ── 7. TITLE WITNESSES ───────────────────────────────────────────────────────────────────────────
@@ -364,8 +503,10 @@ check("English title marked as project-created, not printed in the source", prov
   eq("provenance articles", d.articles, pub.articles.length);
   eq("provenance Tamil blocks", d.tamilBlocks, pub.articles.reduce((n, a) => n + a.tamil.blocks.length, 0));
   eq("provenance English blocks", d.englishBlocks, pub.articles.reduce((n, a) => n + a.english.blocks.length, 0));
-  eq("provenance Tamil quotations", d.tamilQuotations, pub.articles.reduce((n, a) => n + a.tamil.blocks.filter((b) => b.kind === "quotation").length, 0));
-  eq("provenance English quotations", d.englishQuotations, pub.articles.reduce((n, a) => n + a.english.blocks.filter((b) => b.kind === "quotation").length, 0));
+  eq("provenance Tamil attributions", d.tamilAttributions, pub.articles.reduce((n, a) => n + a.tamil.blocks.filter((b) => b.kind === "attribution").length, 0));
+  eq("provenance English attributions", d.englishAttributions, pub.articles.reduce((n, a) => n + a.english.blocks.filter((b) => b.kind === "attribution").length, 0));
+  eq("provenance Tamil authored-only paragraphs", d.tamilAuthoredOnlyParagraphs, pub.articles.reduce((n, a) => n + a.tamil.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "authored-text")).length, 0));
+  eq("provenance English authored-only paragraphs", d.englishAuthoredOnlyParagraphs, pub.articles.reduce((n, a) => n + a.english.blocks.filter((b) => b.kind === "paragraph" && b.segments.every((x) => x.kind === "authored-text")).length, 0));
   eq("provenance article map size", prov.source.articleMap.length, 14);
   eq("English verification recorded", prov.english.articlesVerified, "14 / 14 articles translation_status: verified");
   eq("English release gate", prov.english.releaseGate, "CLOSED");

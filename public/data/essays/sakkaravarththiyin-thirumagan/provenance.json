@@ -159,19 +159,35 @@
   "englishBlocks": 358,
   "tamilSubheadings": 7,
   "englishSubheadings": 7,
-  "tamilQuotations": 80,
-  "englishQuotations": 81,
+  "tamilAttributions": 1,
+  "englishAttributions": 1,
+  "tamilAuthoredOnlyParagraphs": 213,
+  "englishAuthoredOnlyParagraphs": 208,
+  "tamilQuotationOnlyParagraphs": 54,
+  "englishQuotationOnlyParagraphs": 61,
+  "tamilMixedVoiceParagraphs": 74,
+  "englishMixedVoiceParagraphs": 81,
+  "tamilQuotedSegments": 146,
+  "englishQuotedSegments": 172,
   "translatorNotes": 14,
   "pageTransitionsAudited": 60,
   "relationSameBlock": 45,
-  "relationBlockBoundary": 15,
-  "relationUnknown": 0,
+  "relationBlockBoundary": 0,
+  "relationUnknown": 15,
   "crossPageBlocks": 90,
-  "boundaryNote": "A printed-page transition is PROVENANCE; it does not by itself establish a new paragraph, the same paragraph, a new quotation or a continued quotation. The hidden page markers in both released layers are written with blank lines around them, and that formatting is never read as structure. Every in-article transition is classified from the SOURCE ARCHIVE's own per-page audit notes: an explicit continuation record joins the fragments into ONE block carrying both printed pages; a verified page pair with no continuation record is a block boundary, because the archive defines `verified` as having confirmed paragraph structure against the scan and its strict review (83/83 PASS) checks paragraph continuation on every page record. Each classification carries its verbatim citation, and `unknown` stays available for any transition neither could establish.",
-  "provenanceGranularity": "Block-level printed-page provenance. Every block records each printed page it occupies, so a block that runs across a page edge carries both — provenance never forces a block to be split, and the reader does not interrupt prose with page markers.",
-  "note": "Derived structure only. The Tamil assemblies are the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, re-paragraphed or normalized during import: text, order, quotation structure, source-supported subheadings and emphasis are carried exactly as released."
+  "voiceNote": "SOURCE BLOCK STRUCTURE and VOICE are separate dimensions. A block is a paragraph, a printed subheading or a source-bolded attribution line; inside a paragraph, ordered segments carry either Kalaignar's authored text or quoted third-party text, segmented from the released text's own quotation punctuation. A single printed paragraph regularly closes a quotation and then continues in Kalaignar's voice, so a MIXED paragraph is never rendered wholly as a quotation — doing so would attribute his framing to the person he quotes. Only a paragraph whose every segment is quoted may render as a full quotation. Source quotation punctuation is preserved and never repaired: the archive documents source-irregular and unclosed quotations, and an unclosed quotation simply leaves the block ending in quoted voice.",
+  "boundaryNote": "A printed-page transition is PROVENANCE; it does not by itself establish a new paragraph, the same paragraph, a new quotation or a continued quotation, and the hidden page markers' surrounding blank lines are never read as structure. Every in-article edge is classified from POSITIVE evidence in the pinned source repository: a page record that records a continuation gives `same-block` and joins the fragments into ONE block carrying both printed pages; a page record that positively records a new paragraph would give `block-boundary`. Absence of a continuation note is NOT boundary evidence — nothing in the source repository states that continuation notes are exhaustive, and the archive's only 'new …' statement concerns a new ARTICLE, not an in-article paragraph break. Edges the archive establishes neither way remain `unknown`: their fragments are kept separate and the reader marks the edge neutrally rather than asserting a paragraph break or a continuation.",
+  "provenanceGranularity": "Block-level printed-page provenance. Every block records each printed page it occupies, so a block joined across a page edge carries both — provenance never forces a block to be split, and the reader does not interrupt prose with page markers except at an edge the archive leaves unresolved.",
+  "note": "Derived structure only. The Tamil assemblies are the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, re-paragraphed or normalized during import: text, order, quotation punctuation, source-printed subheadings and emphasis are carried exactly as released."
  },
- "blockers": [],
+ "blockers": [
+  {
+   "item": "cross-page-block-relationship",
+   "count": 15,
+   "detail": "15 in-article printed-page transitions for which the source archive positively establishes NEITHER a continuation nor a new paragraph. They are represented as unresolved: the two fragments are kept separate, neither joined nor presented as a clean paragraph break, and the reader marks the edge neutrally on screen and in print. The relation is never inferred from semantic flow, punctuation, or the blank lines around a page marker.",
+   "resolution": "Resolution requires an UPSTREAM source-archive review of the controlling scan TVA_BOK_0065662_சக்கரவர்த்தியின்_திருமகன்.pdf that explicitly records the paragraph relation at each of these page edges — or an explicit archive convention stating that its continuation notes are exhaustive. This Digital Library integration does not establish those typographic facts independently."
+  }
+ ],
  "projectRights": {
   "appliesTo": "underlying-work-authored-by-kalaignar",
   "rightsStatus": "nationalised-by-tamil-nadu-government",
