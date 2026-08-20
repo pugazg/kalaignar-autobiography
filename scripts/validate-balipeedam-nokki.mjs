@@ -35,7 +35,7 @@ const eq = (n, a, b) => check(n, JSON.stringify(a) === JSON.stringify(b), `expec
 // ── 1. SOURCE PIN AND IDENTITY ───────────────────────────────────────────────────────────────────
 eq("source repo", novel.sourceRepo, "pugazg/kalaignar-novels");
 eq("source path", novel.sourcePath, `works/${SLUG}`);
-eq("source commit", novel.sourceCommit, "c14a4e84f91962eb0d606e7d8b105adcd97b780a");
+eq("source commit", novel.sourceCommit, "9e80c567d4a2165178c5374a02210240140685bf");
 eq("provenance pin agrees", [prov.sourceRepo, prov.sourcePath, prov.sourceCommit], [novel.sourceRepo, novel.sourcePath, novel.sourceCommit]);
 eq("scan SHA-256", prov.source.scanSha256, "c4700c9043da8eadbf25144e7127a66a9270326512c095d99e1113a4feb464fe");
 eq("scan size", prov.source.scanFileSizeBytes, 69724254);

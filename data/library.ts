@@ -526,7 +526,7 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     descEn: "The 1947 first edition, with its embedded Rayasam Venganna sequence",
     sourceRepo: "pugazg/kalaignar-novels",
     sourcePath: "works/balipeedam-nokki",
-    sourceCommit: "c14a4e84f91962eb0d606e7d8b105adcd97b780a",
+    sourceCommit: "9e80c567d4a2165178c5374a02210240140685bf",
     // The scan IS the first edition, so the edition statement carries no reprint ambiguity.
     edition: "முதற்பதிப்பு ஏப்ரல் 1947 — எரிமலைப் பதிப்பகம், துறையூர் (எரிமலைப் பதிப்பக வெளியீடு 3)",
     tamil: "complete",
