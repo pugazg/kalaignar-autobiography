@@ -1,0 +1,169 @@
+{
+ "workId": "balipeedam-nokki",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/balipeedam-nokki",
+ "sourceCommit": "9e80c567d4a2165178c5374a02210240140685bf",
+ "source": {
+  "titleTa": "பலிபீடம் நோக்கி",
+  "titleEn": "Towards the Sacrificial Altar",
+  "authorTa": "மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0065570_பலிபீடம்_நோக்கி.pdf",
+  "scanSha256": "c4700c9043da8eadbf25144e7127a66a9270326512c095d99e1113a4feb464fe",
+  "scanFileSizeBytes": 69724254,
+  "scanTotalPages": 34,
+  "pageRecordsVerified": "34 / 34 page records verified",
+  "sourceAudit": "Tamil source audit PASSED",
+  "assembledLayer": "assembled Tamil reading layer PASSED (derived only from the audited page records)",
+  "sourcePdfCommitted": false,
+  "editionTa": "முதற்பதிப்பு ஏப்ரல் 1947",
+  "publisherTa": "எரிமலைப் பதிப்பகம்",
+  "placeTa": "துறையூர், திருச்சி Dt.",
+  "seriesTa": "எரிமலைப் பதிப்பக வெளியீடு 3",
+  "priceTa": "அணா ஆறு",
+  "printerTa": "ஊழியன் பிரஸ், துறையூர்",
+  "printedCode": "Q. H. No. Ty. 40. C. 2000",
+  "printedPageNumbering": "Printed page numbers are not visible on every scan. Where no number is visibly printed the page map records `—` and this integration carries `printedPage: null` — a number is never inferred from sequence.",
+  "bodyScans": "4–33",
+  "embeddedSequenceNote": "`ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is NOT a separate work. The source archive states, after a full read of scans 4–33, that it is an embedded cinematic/historical sequence inside `பலிபீடம் நோக்கி`, used by the narrator as the central illustrative episode. It therefore has no separate catalog work, no separate work-level metadata, no separate translation project, no separate release identity and no separate route here — only a section of this one novel, carrying its own source-printed heading. The importer refuses to run if the source stops stating this.",
+  "sourceContinuity": [
+   "scans 4–7 — the opening `பலிபீடம்` frame develops the argument through சேரன் செங்குட்டுவன், Aryan ritual power and Tamil self-respect;",
+   "scan 7 — the narrator explicitly introduces the internal film: `படக்காட்சி ஆரம்பமாகிறது பாருங்கள். படம் உங்களுக்கு ஒரு பாடம் தரட்டும்.`;",
+   "scan 8 — a title-card page prints `ராயசம் வெங்கண்ணா`, `தஞ்சை சரித்திரக் கதை`, `எரிமலை ‘ரிலீஸ்’` and screenplay/dialogue credits — the novel's cinematic device, not a second work;",
+   "scans 9–29 — the Thanjavur narrative is staged with screenplay-like narration, dialogue and visual directions;",
+   "scan 30 — the narrator exits the film: `படம் முடிந்துவிட்டது. பாடம் கற்றுக்கொண்டீர்களா? பலிபீடம் நோக்க...`;",
+   "scans 31–33 — the work returns to direct address and closes on the `பலிபீடம்` metaphor;",
+   "scan 34 — blank/back matter, outside the body."
+  ],
+  "lockedExclusions": [
+   "scans 1–3 — the illustrated cover, the title page and the publisher-note page (all of which also carry library stamps and handwritten accession marks)",
+   "scan 34 — blank/back matter with no body text",
+   "library and ownership stamps, handwritten accession-style markings, marginal marks, underlines and reverse-side bleed-through throughout",
+   "the assembled layer's own provenance comments and its authority/assembly prose",
+   "the English layer's translator's-note blockquote, per-batch translation notes, review results and status sections, and the batch scaffolding headings that divide the translation rather than the work",
+   "the assembled layer's own section label where the 1947 edition prints no such heading (section 3) — kept as the section's title, never as body text, and never given page provenance"
+  ]
+ },
+ "english": {
+  "kind": "project-created",
+  "status": "whole-work English VERIFIED",
+  "batches": "Batches 1–6 reviewed",
+  "bodyCoverage": "English body-text coverage complete for scans 4–33",
+  "bilingualAlignment": "final bilingual alignment PASSED",
+  "releaseReadiness": "combined archival package RELEASE-READY (an editorial/archival status, not a rights determination)",
+  "translatorNotesSeparated": "The English layer's translator's note and its per-batch translation notes, review results and status sections are carried OUTSIDE the reading body and rendered in a separate, clearly-labelled area — never as Kalaignar's prose. The `Batch N — …` headings divide the TRANSLATION, not the work, so they are dropped while the body continues."
+ },
+ "archiveDerived": {
+  "sections": 3,
+  "tamilBlocks": 248,
+  "englishBlocks": 254,
+  "tamilParagraphs": 243,
+  "englishParagraphs": 248,
+  "printedHeadingsInSource": [
+   {
+    "text": "பலிபீடம் நோக்கி",
+    "scans": [
+     4
+    ]
+   },
+   {
+    "text": "ராயசம் வெங்கண்ணா",
+    "scans": [
+     8
+    ]
+   },
+   {
+    "text": "தஞ்சை சரித்திரக் கதை",
+    "scans": [
+     8
+    ]
+   }
+  ],
+  "sectionsWithArchiveOnlyTitle": 1,
+  "tamilHeadings": 3,
+  "englishHeadings": 4,
+  "ornaments": 4,
+  "tamilBlocksWithLineBreaks": 4,
+  "englishBlocksWithLineBreaks": 6,
+  "translatorNotes": 11,
+  "sourceEstablishedJoins": 7,
+  "joins": [
+   {
+    "fromScan": 5,
+    "toScan": 6,
+    "evidence": "scan 5 ends `அணுக்`; scan 6 begins `களிலிருந்து` | sections/README.md: `அணுக்` + `களிலிருந்து` → `அணுக்களிலிருந்து`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 6,
+    "toScan": 7,
+    "evidence": "scan 6 ends `உதிர`; scan 7 begins `ஆறுகளைப் பாருங்கள்.` | sections/README.md: `உதிர` + `ஆறுகளைப் பாருங்கள்`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 12,
+    "toScan": 13,
+    "evidence": "sections/README.md: Vijay Raghava's open quotation continues without invented closure",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": false
+   },
+   {
+    "fromScan": 19,
+    "toScan": 20,
+    "evidence": "scan 19 ends `பாது`; scan 20 begins `காத்துக்கொள்’` | sections/README.md: `பாது` + `காத்துக்கொள்` → `பாதுகாத்துக்கொள்`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 21,
+    "toScan": 22,
+    "evidence": "scan 21 ends `என்று`; scan 22 begins `கூறியபடி` | sections/README.md: `என்று` + `கூறியபடி`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 29,
+    "toScan": 30,
+    "evidence": "scan 29 ends `அப்படித்`; scan 30 begins `தத்தளிக்கிறான்...` | sections/README.md: `அப்படித்` + `தத்தளிக்கிறான்...`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 30,
+    "toScan": 31,
+    "evidence": "scan 30 ends `கைகூப்புவதை`; scan 31 begins `யும்` | sections/README.md: `கைகூப்புவதை` + `யும்` → `கைகூப்புவதையும்`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
+   }
+  ],
+  "embeddedSequenceSections": 1,
+  "note": "Derived structure only. The 34 audited `pages/` records remain the controlling archival text; this integration reads the archive's own assembled reading layer, which was built from those records and PASSED assembly review. Paragraph structure is carried verbatim — never re-split, never merged — and no source wording, punctuation or historical spelling was normalized.",
+  "joinNote": "The source audit established every cross-page continuity BEFORE assembly, and the assembled layer applies each one at the exact point the audit fixed, marked with an inline comment. Those comments are carried here as recorded join provenance and stripped from the display text. This integration never invents a join, never re-opens one the archive made, and never infers continuity from punctuation, blank lines or page markers.",
+  "provenanceGranularity": "Block-level scan provenance taken from the assembled layer's own trailing `<!-- source: … -->` comments, which close the run of blocks above them. A block spanning a page carries both scans. Printed page numbers are recorded only where the scan shows one; otherwise `printedPage` is null."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying novel. The 1947 edition's own publisher, series, price and printer lines are edition facts, not statements about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored novel. It does NOT extend to the edition's publisher/imprint matter, the cover artwork and design, the printer's material, or the library's stamps and accession marks — each retains its own distinct provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked translation (englishKind: project-created) with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "archivalStatusNote": "The source repository's `RELEASE-READY` status is an editorial/archival judgement about transcription and translation completeness. It is NOT, by itself, a copyright, public-domain or republication-rights determination.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "This is ONE continuous novel in THREE assembled sections. `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is section 2 — an internal cinematic-historical sequence — and is never a separate catalog work, route or release identity.",
+  "The section split at scan 30 follows the SOURCE's narrative transition, not a mechanical page boundary: section 2 carries the internal film through its printed end-card (`வணக்கம்`), and section 3 begins at the narrator's explicit `படம் முடிந்துவிட்டது…` return. No source text is duplicated or omitted at that split.",
+  "Intentional source line breaks — the film-credit lines and the closing lineated address — are preserved inside their blocks and rendered as written, never collapsed into running prose.",
+  "The body covers scans 4–33. Scans 1–3 (cover, title page, publisher note) and scan 34 (blank/back matter) are outside the reading body, as are all copy-specific marks.",
+  "Printed page numbers are carried only where the scan shows one; where the page map records `—` this integration carries null rather than inferring a number.",
+  "SECTION TITLES ARE THE ARCHIVE'S, NOT THE BOOK'S. The assembled layer opens each file with its own descriptive section label. Where the 1947 edition actually prints that heading (scan 4 `பலிபீடம் நோக்கி`; scan 8 `ராயசம் வெங்கண்ணா` / `தஞ்சை சரித்திரக் கதை`) the printed heading is carried in the body and cited to the scan that prints it. Where it does not — section 3, where scan 30 runs straight on into `படம் முடிந்துவிட்டது…` — the label is NOT admitted to the reading body and no page provenance is asserted for it; it survives only as the section's title, which the reader labels as the archive's division."
+ ]
+}

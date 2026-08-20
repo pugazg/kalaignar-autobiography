@@ -61,7 +61,10 @@ export type ReaderStructure =
   | "poem"
   | "story"
   | "article"
-  | "speech";
+  | "speech"
+  // Fiction — a continuous novel divided by the SOURCE ARCHIVE's own assembled reading layer into
+  // ordered sections. Distinct from "story" (short stories) and from "volume-chapter" (the memoir).
+  | "novel";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
 // merely "every unit currently vendored happens to have this language". A work whose
@@ -179,6 +182,9 @@ export interface LibraryWork {
 }
 
 // ── The catalog ──────────────────────────────────────────────────────────────
+// Fiction onboards ONE novel — பலிபீடம் நோக்கி — opening the புனைகதை shelf with its own `novel`
+// reader structure. It changes no existing entry.
+//
 // Phase 5 (Essays & Articles) onboards ONE publication — சக்கரவர்த்தியின் திருமகன், 14
 // source-numbered articles inside a single catalog work — opening the கட்டுரைகள் shelf with its own
 // `article` reader structure. It changes no existing entry.
@@ -501,6 +507,45 @@ export const LIBRARY_WORKS: LibraryWork[] = [
       note: "Nationalisation applies to Kalaignar's underlying Tamil articles; it does not extend to the project-created English translation, to publisher/edition matter, cover/design, advertisements or library marks, nor to the third-party texts quoted inside the articles.",
     },
     provenanceHref: "/essays/sakkaravarththiyin-thirumagan/source",
+  },
+  {
+    // Fiction — first novel benchmark, and the first work on the புனைகதை shelf. ONE continuous
+    // novel in three assembled reading sections. `ராயசம் வெங்கண்ணா` is an INTERNAL cinematic
+    // sequence of this novel — the source archive states so explicitly — so it gets no catalog
+    // entry, no route and no release identity of its own.
+    id: "balipeedam-nokki",
+    slug: "balipeedam-nokki",
+    titleTa: "பலிபீடம் நோக்கி",
+    titleEn: "Towards the Sacrificial Altar",
+    shelf: "fiction",
+    subtype: "novel",
+    readerStructure: "novel",
+    href: "/novels/balipeedam-nokki",
+    state: "published",
+    descTa: "1947 முதற்பதிப்பு — உள்ளமைந்த ‘ராயசம் வெங்கண்ணா’ திரைக்காட்சியுடன்",
+    descEn: "The 1947 first edition, with its embedded Rayasam Venganna sequence",
+    sourceRepo: "pugazg/kalaignar-novels",
+    sourcePath: "works/balipeedam-nokki",
+    sourceCommit: "9e80c567d4a2165178c5374a02210240140685bf",
+    // The scan IS the first edition, so the edition statement carries no reprint ambiguity.
+    edition: "முதற்பதிப்பு ஏப்ரல் 1947 — எரிமலைப் பதிப்பகம், துறையூர் (எரிமலைப் பதிப்பக வெளியீடு 3)",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // 3 sections of the SOURCE ARCHIVE's own assembled reading layer — not chapters printed in the
+    // book, and not archive-created navigation numbering invented here.
+    unitCount: { value: 3, labelTa: "பகுதிகள்", labelEn: "sections" },
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil novel; it does not extend to the project-created English translation, to the 1947 edition's publisher/imprint matter, cover artwork or printer material, nor to the library stamps and accession marks on this physical copy.",
+    },
+    provenanceHref: "/novels/balipeedam-nokki/source",
   },
 ];
 

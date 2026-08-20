@@ -1,0 +1,5884 @@
+{
+ "workId": "balipeedam-nokki",
+ "slug": "balipeedam-nokki",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/balipeedam-nokki",
+ "sourceCommit": "9e80c567d4a2165178c5374a02210240140685bf",
+ "shelf": "fiction",
+ "readerStructure": "novel",
+ "subtype": "novel",
+ "title": {
+  "ta": "பலிபீடம் நோக்கி",
+  "en": "Towards the Sacrificial Altar"
+ },
+ "author": {
+  "ta": "மு. கருணாநிதி",
+  "en": "M. Karunanidhi"
+ },
+ "edition": {
+  "statementTa": "முதற்பதிப்பு ஏப்ரல் 1947",
+  "year": 1947,
+  "monthTa": "ஏப்ரல்",
+  "publisherTa": "எரிமலைப் பதிப்பகம்",
+  "placeTa": "துறையூர்",
+  "districtTa": "திருச்சி Dt.",
+  "seriesTa": "எரிமலைப் பதிப்பக வெளியீடு 3",
+  "priceTa": "அணா ஆறு",
+  "printerTa": "ஊழியன் பிரஸ், துறையூர்",
+  "printedCode": "Q. H. No. Ty. 40. C. 2000"
+ },
+ "sections": [
+  {
+   "order": 1,
+   "slug": "opening-frame",
+   "titleTa": "பலிபீடம் நோக்கி — தொடக்க frame",
+   "titleEn": "Towards the Sacrificial Altar — Opening Frame",
+   "sourceScansTa": "4-7",
+   "sourceScansEn": "4-7",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": false,
+   "carriesArchiveSectionLabel": false,
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "பலிபீடம் நோக்கி",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இமயத்தின் பனிப்பாறைகள், சேரன் செங்குட்டுவனின் வீரம் தீட்டிய ஏடுகள். கனக விசயரின் வளைந்த கழுத்துக்கள், அவன் வரலாற்றை விளக்கும் ‘கார்டூன்’ ஓவியங்கள். ஆரியவர்த்தத்தில் உருண்ட தலைகள், அவன் படை வலியைப் பாராட்டிய விமர்சன எழுத்துக்கள். தமிழகத்தில் எழுந்த கண்ணகியின் சிலை, அவன் கலையார்வத்தின் சின்னம்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வாளேந்தி, தமிழகத்தில் புகழேந்தி வாழ்ந்த வேங்கைப் புலி சேரன் செங்குட்டுவன், தம்பி அமைத்துத் தந்த தமிழச்சியின் கல்லுக்கு சிலை அமைத்தவன். அரசியல் துறையில் ஆரியத்தை எதிர்த்து, அதன் கொழுப்பேறிய இருதயத்தைத் துவைத்துப் பிழிந்த கோமான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்த வீராதி வீரன் வீழ்ந்தான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சிங்கத்தை சுண்டெலி வெற்றி கண்டது போல்- வேங்கையை வெள்ளாடு வீழ்த்தியது போல்- வாளின் கூர்மை வைக்கோல் வீச்சால் மழுங்கியது போல் ஆரியத்திடம் அவன் அடிமைப்பட்டான். மறவேந்தன் மண்புழு போல் நெளிந்தான். மண்டியிட்டான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எந்த ஆரியத்தை அரசியல் துறையில் எதிர்த்து தமிழ் நாட்டுக் கற்பின் சார்பில் வென்று, போர்க்கைதியாகப் பிடித்தானோ, அதே ஆரியத்திற்குத் தெண்டனிட்டான். அஞ்சலி செய்தான். அருள் வேண்டி நின்றான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மறக்குல வேந்தனை சாய்த்தவன் ஒரு மறக்குல மழவனல்ல! சேரனை சாய்த்தவன் அவன் இனத்தவன் பாண்டியனல்ல! அந்த சூரனை சாய்த்தவன் சோழனுமல்ல!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சோறும், குதுமன்றி எதுவுமறியா ஒரு சோதா, சேரன் செங்குட்டுவனை வீழ்த்தினான். வீரத்தை விலை கேட்கும் ஒரு ‘விருதா’ சேரன் செங்குட்டுவனை வீழ்த்தினான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீழ்த்திய முறை பெருமைக்குரியதா? இல்லை! போர் முனையிலா? இல்லை! போகசாலையை மட்டும் காட்டியா? இல்லை!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "யாகசாலையில்!... வீழ்ந்தான்!... வீழ்ந்தான்! ... வீழ்ந்தது தமிழன் மறம்! வீழ்ந்தது தமிழன் கொற்றம்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குதிரைகளின் குளம்படிச் சத்தம் கேட்கவில்லை. வேழப் படையின் வெற்றி முரசமில்லை. காலாட் படையின் கடுமையான தாக்குதலில்லை. ஊரும் தேருமில்லை. இவை ஒன்றுமே இல்லாமல் சேரன் கோட்டையில் ஆரியம் நுழைந்தது. படைத் தலைவன் மாடலவறையவன். ஆம், அந்தக் காலத்து “மஹா கனம்”! அரசியல் துறையில் வெற்றி கண்ட ஆண்மையாளனைப் பழி தீர்த்துக்கொள்ளப் பலிபீடம் அமைத்தான் அவன்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்த பலி பீடம் நோக்கி சேரனை இழுத்துச் சென்றான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆரியத்தின் அஸ்திரங்கள் சேரனின் அங்கங்கள் அறுத்திருக்கலாகாதா? சிந்திய ரத்த அணுக்களிலிருந்து சிங்கத் தமிழர் படை ஒன்று தோன்றி இருக்குமே!... அவன் நெஞ்சைப் பிளந்திருக்கக் கூடாதா? அந்த வெடிப்பில் ஒரு புது சமுதாயம் முளைத்திருக்குமே!... அது ஆரியத்தின் கருவை அப்பொழுதே அறுத்திருக்குமே?...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்த அஸ்திரங்கள் செங்குட்டுவனின் மானத்தையல்லவா துளைத்து மழுங்கின. யாக நெருப்பில் அவனே பாய்ந்து ‘ஆண்டவனுக்குத் தன்னை அர்ப்பணித்திருக்கலாகாதா? தமிழனின் தனிப் பண்பு, தன்மானம்!’ .. அதை யல்லவா தணலில் வேக வைத்தான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கனகவிசயர் தலையில் கல்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மாடலவறையன் தலையில் பணமுட்டை!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அது அரசியல்! இது மத இயல்! ஆரியம் ஆனந்த நர்த்தனம் செய்தது. பலிபீடத்தில் தமிழரைத் தள்ளுவதற்குப் பல வழிகள் அமைத்தது! ... எங்கும் வரவேற்பு பலகைகள்... ஆரியத்தின் அன்பு(?) அழைப்புகள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சொர்க்கம் செல்லும் மார்க்கம்,’ ‘தேவலோகத்திற்குப் பாதை,’ ‘வைகுண்ட வழி...’ எல்லாக் கைகாட்டிகளும்... பாதைகளைப் பிரித்துக் காட்டி, கடைசியில் ‘பலி பீடம் நோக்கி’ தமிழரை இழுத்துச் சென்றன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்த ஆட்டு மந்தைகளும் சேரன் சென்ற திக்கில் பயணம் வைத்தன. ஆரிய பலிபீடத்திற்கு அணிவகுத்தன. அணிவகுப்பில் எத்தனை அரசர்கள்... எத்தனை ஆண்மையாளர்கள்...? அய்யகோ...! என் நாட்டுத் தோழீர்!... அங்க பெருகி ஓடும் உதிர ஆறுகளைப் பாருங்கள். நீங்களும் பலிபீடம் நோக்குங்கள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீழ்ந்துபோக அல்ல!... வாழ்ந்து வா! பலிபீடம் நோக்கிகளே !... இதோ மாடலவறையன் மரபிலே ஒருவர்!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வேதியர் வெங்கண்ணா! திரைப் படமாக உருப்பெற்றிருக்கிறார்... படக்காட்சி ஆரம்பமாகிறது பாருங்கள். படம் உங்களுக்கு ஒரு பாடம் தரட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "திரையில் ஒரு எரிமலை குமுறுகிறது. ‘குபீர் குபீர்’ என்று நெருப்புக் குழம்பை வாரி வீசுகிறது. அந்த நெருப்பு அபிஷேகத்திற்கு ஆளாகி இடிந்து சரியும் ஆலயங்களின் கோபுரங்கள், மடாலய மதிற்சுவர்கள், பண்ணைக்காரரின் களஞ்சியங்கள் அனந்தம்... அனந்தம்! பயங்கரப் பின்னணி சங்கீதம் ‘கட கடா... குடு குடு..’ என்ற அகோர இரைச்சல்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எரிமலையைச் சுவராகக்கொண்டு பல எழுத்துக்கள் உருள்கின்றன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "ornament",
+      "text": "★",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "Towards the Sacrificial Altar",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Source:** scans 4–7\n**Canonical Tamil:** [`../../pages/0004-balipeedam-nokki-01.md`](../../pages/0004-balipeedam-nokki-01.md) through [`../../pages/0007-balipeedam-nokki-04.md`](../../pages/0007-balipeedam-nokki-04.md)",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The snow-clad rocks of the Himalayas are pages etched by the valour of Cheran Senguttuvan. The bent necks of Kanaka Vijayar are cartoon drawings illustrating his history. The heads that rolled in Aryavarta are critical lines praising the strength of his army. The statue of Kannagi raised in Tamilakam is the emblem of his love of art.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Cheran Senguttuvan, the tiger who lived bearing a sword and bearing fame in Tamilakam, was the king who raised in stone the Tamil woman fashioned by his younger brother. In politics he opposed Aryanism and washed and wrung its fattened heart.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "That warrior among warriors fell.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "As though a mouse had defeated a lion—as though a goat had felled a tiger—as though the edge of a sword had been blunted by a sweep of straw—he became enslaved to Aryanism. The warrior-king writhed like an earthworm. He knelt.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The very Aryanism that he had opposed in politics, defeated on behalf of the chastity of Tamilakam, and taken prisoner in war—before that same Aryanism he prostrated himself. He offered homage. He stood seeking grace.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 4,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The one who brought down this king of a warrior clan was no warrior of a martial clan! The one who brought down the Chera was no Pandya of his own kind! The one who brought down that hero was no Chola either!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A weakling who knew nothing beyond food and the tuft brought down Cheran Senguttuvan. A *virudha* who would put a price on valour brought down Cheran Senguttuvan.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Was the manner of his defeat something to be proud of? No! Was it on the battlefront? No! Was it merely by showing him a pleasure hall? No!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "In the sacrificial hall!... He fell!... He fell!... Tamil valour fell! Tamil triumph fell!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "There was no sound of horses' hooves. No victorious drum of the elephant corps. No fierce assault by infantry. No chariots rolling. Without any of these, Aryanism entered the Chera fortress. Its commander was Matalavaraiyan—the “Maha Ganam” of that age! To avenge himself upon a man who had triumphed in politics, he built a sacrificial altar!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "He dragged the Chera towards that sacrificial altar.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Should not the weapons of Aryanism have cut through the Chera's limbs? From the blood cells that spilled, would not an army of lion-hearted Tamils have arisen? Should it not have split his chest? In that explosion, would not a new society have sprouted? Would it not have cut out the seed of Aryanism then and there?...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printedPage": 4
+       },
+       {
+        "scan": 6,
+        "printedPage": 5
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Instead, did not those weapons pierce Senguttuvan's honour and grow blunt there? Could he not have leapt into the sacrificial fire himself and offered himself to the Lord? The Tamil's distinctive quality—self-respect! Was that not what he roasted in the embers?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A stone upon Kanaka Vijayar's head!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A bag of money upon Matalavaraiyan's head!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "That is politics! This is religion! Aryanism danced in delight. It devised many paths by which Tamils could be pushed onto the sacrificial altar!... Everywhere, welcoming signboards... Aryanism's loving(?) invitations.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Road to heaven,” “Path to the world of the gods,” “Way to Vaikuntha...” All the signposts... dividing and pointing out the roads, only to drag Tamils in the end “towards the sacrificial altar.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "These flocks of sheep too set out in the direction the Chera had gone. They marched towards the Aryan sacrificial altar. How many kings in that procession... how many men of courage...? Alas!... Comrades of my land!... Look at the rivers of blood running there in flood. You too, turn towards the sacrificial altar.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printedPage": 5
+       },
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Not to fall and perish!... Come to live, you who are bound for the sacrificial altar!... Here is one from the line of Matalavaraiyan!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Vedic priest Venganna! He has taken shape as a motion picture... The screening begins—watch. Let the picture teach you a lesson.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "On the screen a volcano rumbles. “Gubir! Gubir!”—it flings out molten fire. Bathed in that ablution of flame, temple towers collapse, monastery walls crumble, landlords' granaries fall—endless... endless! A terrifying background score: “kada-kadaa... kudu-kudu...” — a dreadful roar.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Against the volcano as a backdrop, rows of letters roll across the screen.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     },
+     {
+      "kind": "ornament",
+      "text": "★",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 7,
+        "printedPage": 6
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This English translation follows the audited first-edition Tamil source preserved in this repository. It aims to carry Kalaignar's argument, rhetoric, dialogue, historical-cinematic form and political intensity into clear English without modernising or silently correcting the Tamil. The audited Tamil page records remain authoritative. `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is retained as an internal film-like sequence of `பலிபீடம் நோக்கி`, not treated as a separate work."
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Pilot translation notes",
+      "text": "- `பலிபீடம்` is locked as **sacrificial altar**, including the governing metaphor.\n- `ஆரியம்` is rendered **Aryanism** in this opening section because the Tamil uses it as an ideological/social force rather than merely an adjective. Later contexts may use **Aryan** adjectivally under the translation plan.\n- `மறம்` is rendered **valour**; `கொற்றம்` as **triumph** in this rhetorical pair.\n- `தன்மானம்` is rendered **self-respect** in the movement-era ideological context.\n- The compressed source phrase about the Tamil woman and Senguttuvan's younger brother is translated closely as **“the Tamil woman fashioned by his younger brother”**; no external historical reconstruction has been inserted into the prose.\n- The source forms `குதுமன்றி` and `விருதா` are not silently regularised. The first is rendered contextually as “beyond food and the tuft”; the second is retained as *virudha* and recorded in the glossary.\n- The source varies `மாடலவறையவன் / மாடலவறையன்`; the English uses **Matalavaraiyan** consistently while the audited Tamil preserves both forms.\n- The source's punctuation `அன்பு(?)` is carried into English as **loving(?)**.\n- Source sound effects are retained by transliteration rather than replaced with newly invented English effects."
+     }
+    ]
+   }
+  },
+  {
+   "order": 2,
+   "slug": "rayasam-venganna-sequence",
+   "titleTa": "ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை",
+   "titleEn": "Towards the Sacrificial Altar — Internal Rayasam Venganna Sequence",
+   "sourceScansTa": "8-29 plus scan 30 through the internal film end card",
+   "sourceScansEn": "8-30 through internal film end-card (Batches 2-5)",
+   "isEmbeddedSequence": true,
+   "titleIsPrintedHeading": false,
+   "carriesArchiveSectionLabel": false,
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "ராயசம் வெங்கண்ணா",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "தஞ்சை சரித்திரக் கதை",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எரிமலை ‘ரிலீஸ்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "டைரக்ஷன், திரைக்கதை அமைப்பு, வசனம்:\nமு. கருணாநிதி (நான்)",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விநியோக உரிமை\nது. வி. நாராயணன் அன் கோ.",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எரிமலையின் அனல் மூச்சு நின்று விடுகிறது. பின்னணி இசையில் இனிமை இழைகிறது. வானளாவிய பிரகதீஸ்வரன் ஆலயத்தின் கோபுரம் காட்டப்படுகிறது. தொடர்ந்து மாடமாளிகைகள், கூட கோபுரங்கள், தஞ்சையின் வீதிகள் சுற்றிச் சுழல்கின்றன. பின்னணி நின்றுவிடுகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீதியில் ஒரு பல்லக்கு!... அதைத் தூக்கியிருக்கும் மனிதர்களின் தோள்வலியை முகத்தில் படர்ந்துள்ள சோக ரேகைகள் சொல்லுகின்றன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வைணவ மகான் குமார தாத்தாச்சார்யாவுக்கு’ ...ஒரு பட்டை நாமக்காரன் கத்துகிறான். தொடர்ந்து ‘ஜே கோஷம்’! தெரு அதிர்கிறது,",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பல்லக்கு போய்க்கொண்டே இருக்கிறது. கோட்டை வாசலில் பல்லக்கு நுழைகிறது. காட்சி மாறுகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "தர்பார் மண்டபம். மந்திரி பிரதானியர் வீற்றிருக்கின்றனர்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வீராதி வீரர் விசயராகவ மன்னன் வாழ்க!’ என்ற வாழ்த்தொலியோடு தர்பார் ஆரம்பமாகிறது. சிம்மாசனத்தில் ஒரு கிழவேந்தன் அமர்ந்திருக்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘இளவரசர் மன்னரு நாயக்கர் வருகிறார்’ ஒரு காவலன் வாய்மொழிகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இளமையும், எழிலுந் ததும்ப மன்னரு நாயக்கன் ஆசனத்தில் உட்காருகிறான். டக்டக் என்ற சப்தம் கேட்கிறது. சப்தம் வந்த திக்கில் எல்லோரும் திரும்புகிறார்கள். பாதரக்ஷை தெரிகிறது. பிறகு கால். பிறகு பஞ்சகச்சம். பிறகு பட்டை நாமம், பல்லக்கில் பவனி வந்த குமார தாத்தாச்சார்யா ஒய்யாரமாக நடந்து வருகிறார். விசயராகவ நாயக்கர், மன்னரு மற்றுமெல்லோரும் எழுந்து வணங்குகிறார்கள். குருவுக்கு பாத பூஜை நடக்கிறது. குரு பேசுகிறார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘விசயராகவா! என்னை அழைத்த விஷயம் என்ன?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விசயராகவர்: குருஸ்வாமி. மதுரைசொக்கநாத நாயக்கன் நமது மன்னருவின் மகளை மணந்து கொள்ள விரும்புகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குரு: மண விஷயமா?... மங்களமாக நடக்கட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விசய: மங்களத்திற்கு வழியில்லை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குரு: விசயராகவா?... என்ன சொல்கிறாய்?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விசய: மதுரை மன்னன்... விஜயநகரின் சேவக மரபில் வந்தவன். அவனுக்கு என் பேத்தியை அளிப்பது பேதமை. பெரும் இழிவு!... ஆகவே மறுத்துவிட்டேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குரு: கோத்திரமறிந்து பெண்ணைக் கொடுக்க வேண்டும் ...சந்தோஷம்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[மன்னரு நாயக்கன் குறுக்கிட்டு]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சந்தோஷத்திற்கும் வழியில்லை சாமி!... சமர்க்களத்தில் சந்திப்பதாக மதுரை வேந்தன் அறிவித்து விட்டான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குரு: சமாதானத்திற்கு வழியில்லையா?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னரு: சமாதானம்!... என் மகள் அவனுக்குக் கன்னிகாதானம் செய்தால் சமாதானம்!... இல்லையேல் போர்க்களத்தில் பெருக்கெடுக்கும் ரத்தவெள்ளத்தில் தான் சமாதானம் முளைக்கும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குரு: போருக்குத் துணிந்துவிட்டீர்களா?......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னரு: ஆம்! தோளில் பலமுள்ள வரையில் போராட்டம். மார்பில் வேல்தாங்கி மாண்டுபோகத் தீர்மானம், மகள் அந்த மித்தானமத்தனுக்குக் கொடுத்து மானமிழப்பதில்லை என்ற முடிவு.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குரு: சரியான முடிவு செய்யுங்கள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[விசயராகவ மன்னன் எழுந்து]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஸ்வாமி... மதுரை, மகத்தான வலிவோடு தஞ்சையில் பாயத் திட்டமிட்டிருக்கிறது. நம் படை மிகச் சிறிது. போரில் வெற்றிகாண வேண்டுமானால்... உங்கள் வாழ்த்து தேவை. அருளுங்கள்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னன் மண்டியிட்டு வணங்குகிறான். சபையில் ஒரே நிசப்தம். தாத்தாச்சார்யா பேச ஆரம்பிக்கிறார்:",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘விசயராகவா! நீயும், நின் குலமும் வாழ்க! இருப்பும், கடல் துயிலும் திருமாலின் திருவருளால்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "நின் திருமுடி வாழ்க! நின் தரணியில் அமைதி நிலவுக! நின் புகழ் பரவுக! நின் ஆயுள் வளர்க! நின் ஆட்சி நீள்க!...போரில் ஜெயம் உனக்கே!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வாழ்த்து முடிகிறது. ‘கல கல’ என்ற ஒலி கேட்கிறது. ஆச்சார்யாவின் பாதத்தில் பவுன் நாணயங்கள் கொட்டப்படும் காட்சி! திரையில் ஒரு மின்னல். மீண்டும் பயங்கரமான இசை!....... முரசு முழங்குகிறது. ஒரே தூசிப்படலம். குதிரைகளின் ஓட்டம். ‘ஆ ஊ’ என்ற கூச்சல்கள் எழுகின்றன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பீரங்கி வேட்டுகள் இடியென முழங்குகின்றன. கால்வாய்களில் சிகப்புத்தண்ணீர் ஓடுகின்றது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மார்பில் காயம் பட்டவரும், விலாவில் வேல் பட்டவரும், தலையில் ஈட்டிபாய்ந்தவருமாக......சட சடவென்று வீரர்கள் முறிந்து விழுகின்றனர். ஒரு வீரனின் கண்ணில் குண்டு துளைத்து பிடரிப்பக்கம் ஊடுறவுகிறது. பரிதாபமான காட்சி!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "போர்முனையில் மற்றொருபக்கம்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விசயராகவன், அவன் தேவி, மன்னரு, அவன் மகள் ஆயுதபாணிகளாய் காட்சிதருகின்றனர். விசயராகவன் கேட்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அந்தப்புர மாதர்கள் எங்கே?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னரு: எதிரிகள் உள்ளே நுழைந்தால், அவர்கள் தற்கொலை செய்துகொள்ள தீ, வளர்க்கிறார்கள்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[விசயராகன் ஆசையோடு]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மன்னரு’!... உன் குழந்தை செங்கமலதாசன் பத்திரமாக இருக்கிறானா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னரு: தாயிடம் இருக்கிறான். பயம் வேண்டியதில்லை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்தப் பேச்சு முடிவதற்குள் பேரிடி போன்ற சப்தங்கள் கிளம்புகின்றன. கோட்டைச்சுவர்கள் சரிகின்றன. கல்லும் மண்ணும் காற்றில் பறக்கின்றன. ஒரே அக்கினி வீச்சு!.......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னரு நாயக்கன் மார்பில் ஒரு ஈட்டி பாய்கிறது. ஈட்டி எறிந்தவன் அவன் மகள் வெட்டி வீழ்த்தி இன்னொரு ஈட்டிக்கு இரையாகிறாள். மன்னருவின் பயங்கர மரணம். சோகம் எதிரொலிக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விசயராகவனையும் அவன் தேவியையும் கைது செய்ய மதுரைத் தளபதி நெருங்கிவருகிறான். விசயராகவன் ஈட்டியை மேலே எறிந்து, அதை மார்பில் தாங்குகிறான். கீழே சாய்கிறான், மகாராணியும் அவ்வாறே மரணத்தை முத்தமிட்டு மன்னன் மார்பில் விழுகிறாள். எதிரிகள் பக்கம் வெற்றி யொலி கடல்போல் முழங்குகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குற்றுயிராகக் கிடக்கும் விசயராகவ வேந்தன் ‘குளோசப்பில்’ காண்கிறோம். அவன் வாய் முணு முணுக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஸ்ரீரங்கத்தை தெரிசிக்க, தஞ்சையில் ஆகாய மளாவக் கோபுரம், நாள்தோறும் பன்னீராயிரம் பிராமணருக்கு சந்தர்ப்பணம். மன்னார்குடி ராஜ கோபால ஸ்வாமிக்கு நவரத்ன கவசம், வைரமுடி, ஆலயப்பிரகாரங்கள், நந்தவனம், குளம், ரகுநாத அக்கிரகாரம், இவ்வளவு கைங்கர்யமும் செய்தேன். இன்று எதிரிகள் என் நாட்டில் நுழைவதைக்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கண்டு துடிக்கிறேன். என் தான தர்மங்கள் தெய்வ பக்திகள் வீண் தானா? தாத்தாச்சார்யாவின் வாழ்த்து தண்ணீரில் விழுந்த சாம்பல் போல் கரைந்துவிட்டதே!... கடவுள்களுக்கு அழித்த பொக்கிஷத்தை என் படைப்பெருக்கத்திற்கு செலவிட்டிருந்தால் இக்கதி வந்திராதே!......’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "விசயராகவன் கண்ணை மூடுகிறான், மார்பில் ரத்தம் மளமளவென வழிகிறது. கோட்டை வாயிலில் முச்சுற்றுப்படுத்திருக்கும் வீர உருவங்கள் வரிசையாகப் பார்க்கிறோம். காட்சி மாறுகிறது. அரண்மனையின் உட்புறம்! தீக்குண்டம் எரிநாக்குகளால் இரையைத் தேடி அலமோதுகிறது ...... ஒருவர்பின் ஒருவராக பெண்கள் தீக்குளத்தில் குதிக்கின்றனர்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மன்னரு நாயக்கன் மனைவி, குழந்தை செங்கமலதாசனுடன் நெருப்பின் பக்கம் வருகிறாள். அவள் கண்களில் இரண்டு நீர் வீழ்ச்சிகள், கையில் இருக்கும் குழந்தையை ஒரு தோழியிடம் கொடுக்கிறாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘பட்டத்துக் குரியவன். பத்திரமாகப் பாது காத்துக் கொள்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இதைக் சொல்லிக்கொண்டே அக்கினி குண்டத்தின் அருகில் வருகிறாள். குழந்தையை மறு முறையும் பார்க்கிறாள். அவ்வளவு தான் ‘சர்’ என்ற சப்தம். ஆம்... அவள் கண்ணீரைத்தான் நெருப்பு, அப்படி உறிஞ்சுகிறது. குழந்தையோடு தோழி எங்கேயோ ஓடுகிறாள்,",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஓடுகிறாள்... ஓடுகிறாள்... அப்படியே ஓடுகிறாள். காட்சி இருள் கொள்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மீண்டும் திரையில் எழுத்துக்கள், ஓடிவந்து நிற்கின்றன. அவை........",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "தஞ்சையைத் தன் வசமாக்கிக்கொண்ட மதுரை மன்னன் தன் பிரதிநிதியாக தம்பி அழகிரி என்பவனை தஞ்சைக்கு அனுப்பினான். அரசப் பிரதிநிதியாக வந்த அழகிரி ஆட்சியைக் கைப்பற்ற ஆசை கொண்டான். ஆசையைக் கிளப்பிவிட்டவன் வெங்கண்ணா என்னும் வேதியன். மதுரைக்குக் கப்பம் கட்டாமலிருந்தால் தஞ்சையை நம் வசப்படுத்திக் கொள்ளலாம் என்று வெங்கண்ணா தந்திரம் சொல்லிக் கொடுக்கவே அதன்படி அழகிரி நடந்துகொண்டான். பேராசையது கிளந்திருந்த மதுரையும் அலட்சியமாக இருந்துவிடுகிறது. அதேசமயம், அதிர்ஷ்டத்தின் மேல் அதிர்ஷ்டமாக அரண்மனையில் ஒரு புதையல் அகப்படுகிறது. அந்தப் புதையல் தான் அழகிரியின் ஆட்சிக்கு முடிவு தருகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எழுத்துக்கள் சென்றுவிடுகின்றன. அடுத்த காட்சியாக தஞ்சை அரண்மனையில் ஒரு தனியிடத்தைப் பார்க்கிறோம். வேந்தனும் வேதியரும் சரியாசனத்தில் அமர்ந்திருக்கிறார்கள் வேதியர் சிரித்துக்கொண்டே பேச்சைத் தொடங்குகிறார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘இந்த முறை கப்பம் கட்டியிருந்தால் சொக்க நாதனின் அடிமையாகவே இருந்திருக்க வேண்டும். எப்படி என் ராஜதந்திரம்?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்கண்ணா வாக்கு, வேதவாக்கு. ஒருவேளை ...மதுரை நம்மீது திடீரெனப் பாய்ந்தால்?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘புலி, கிளத்திருக்கிறது. அது கொஞ்ச நாளைக்கு குகையை விட்டுக் கிளம்பாது. அதற்குள் நம்படை வரிசையை பலப்படுத்தி விடலாம்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆஹா...வெங்கண்ணாவின் மூளையே மூளை!... விதவிதமான யோசனைகள் வெகுவேகமாக முளைக்கின்றன.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘இல்லாவிட்டால், பரம்பரை பரம்பரையாகப் பார்த்துவரும் ராயசத் தொழில் நிலைக்குமா? வீழ்ந்து போன விசயராகவன் கூட என் மூளைக்கு வேலை கொடுக்கத் தவறுவதில்லை. நான் மட்டும் மல்ல. அந்தணர் வம்சத்திற்கே அறிவியலிலும், அரசியலிலும் அதிக அனுபவமுண்டு.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அதற்கென்ன தடை....ஆண்டவன் படைப்பே அப்படியிருக்கிறது.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘முகத்தில் பிறந்தவர்கள் அல்லவா? மூளைக்கு அருகாமையில் இருப்பது தானே முகம்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சந்தேகமென்ன?...ஆமாம்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சாதாரண ஒரு ராஜப்பிரதிநிதியை சாம்ராஜ்ய மன்னனாக ஆக்குவதென்றால் எவ்வளவு அரிய பெரிய ஆலோசனை இருக்கவேண்டும்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆலோசனை மட்டுமா?... அழகிரியின் நலத்தில் அவ்வளவு அக்கரையும் இருக்கிறது உமக்கு. வெங்கண்ணா!...உம்முடைய உதவிக்கு நன்றி...ஏற்றுக் கொள்ள வேண்டும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வாயளவில்...வார்த்தை யளவில் அவ்வளவு தானே?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்கண்ணா! நீர் வேண்டும். வெகுமானம் பெறலாம்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அரசர் வாக்குத்தவற மாட்டாரல்லவா ?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அகில உலகம் அதைத் தவறும் வெங்கண்ணா விஷயத்தில் அழகிரி தவறமாட்டான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சரி .. எனக்கு வேண்டிய சன்மானத்தைக் கேட்கலாமா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சங்கோசமின்றிக் கேட்கலாம். சந்தோஷமாகத் தரப்படும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘உழைப்புக்கேற்ற ஊதியம்! இதில் சங்கோசத்திற்கு இடமேது?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘உமது உழைப்பால் நான் உயர்ந்தேன் உண்மை!... உழைப்பு உபயோகமான பிறகு உதறி விடும் உன்மத்தனல்ல நான். உமக்கு வேண்டியதைக் கேளும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘விபீஷணன் செய்த உதவிக்கு ஸ்ரீராமன்... இலங்கையையே கொடுத்துவிட்டானல்லவா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆமாம். இப்போது...’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[அழகிரியின் முகத்தில் சில கோடுகள் சந்தேகத்தைக் கிளப்புகின்றன.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அதைப்போல், நானும் தேசம் கேட்பேனென்று திகைக்க வேண்டாம்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நீர் கேட்டமாட்டீர்! நல்லவர்! எனக்குத் தெரியும்!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[அழகிரி முகத்தில் அசடு வழிகிறது.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நீர் என்னிடம் காட்டும் பிரியத்தில், நான் எதைக் கேட்டாலும் கொடுப்பீர்! அவ்வளவு தாராள சிந்தையும் தணியாத அன்பும் கொண்டவர் நீர்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘உம், கேளும்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[அழகிரியின் கண்களில் ஒளி இல்லை. புருவம் வணங்குகிறது.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘புதைந்து கிடந்த பொக்கிஷம்! அதைக் கண்டு பிடித்துக்கொடுத்தது, நான்தானே மகாராஜா!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆமாம்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[அழகிரியை இப்பொழுது பார்க்க சகிக்க வில்லை. பரிதாபமாக இருக்கிறது.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அதைக் கொடுத்தால் போதும்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இதைக் சொல்லிவிட்டு வெங்கண்ணா அழகிரியின் வாயை ஆவலோடு நோக்குகிறான். அழகிரி பேச ஆரம்பிக்கிறான். பேச்சில் ஆத்திரம் கொப்பளிக்கிறது. அதை அவனால் அடக்கமுடியவில்லை எப்படி அடக்கமுடியும்?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘பிராமணரே! பேராசைப்படுகிறீர். பொக்கிஷம் பொதுமக்கள் நலத்திற்காக! அதைத் தர முடியாது’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணாவுக்குக் கூட வீரம் பிறக்கிறது வெடுவெடுப்பாகப் பேசுகிறார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அழகிரி!... அகம்பாவம் தலைக்கேறிவிட்டது, அதிகார போதையில் அறிவை அணைத்துக்கொள்ளாதே. உன்னை அரசனாக்கியது நான். மதுரையின் அடிமையை மன்னனுக்கினேன். அவன் மமதை கொண்டு பேசுகிறான். பேஷ்!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்கண்ணா!... வெத்துவேட்டுக்கள் கிளப்ப வேண்டாம். வார்த்தையில் நிதானமிருக்கட்டும்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நன்றி கெட்டவனே! ஆரியத்தை நீ சரியாக உணரவில்லை. அது நெருப்பு. நெருங்காதே,’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சினத்தைக் கிளப்பாதீர். சிறைச்சாலை திறக்கப்படும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அழகிரி! இதோ உன் ஜாதகத்தைக் கணித்து விட்டேன் உன் ஆட்சி அற்பாயுசில் அழியப்போகிறது. வெங்கண்ணா ஒரு பூகம்பம். அதில் மாட்டி மாளப்போகிறாய்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணா ரெளத்ரகாரமாகத் திரும்புகிறான். அழகிரியும் அசைவற்று நின்றவன் ‘கட கட’வெனச் சிரிக்கிறான். அந்த சிரிப்பின் ஒலியைத் தொடர்ந்து ஒரு சித்திரம் காட்டப்படுகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சேரன் செங்குட்டுவன் மாடலவறையனுக்குமுன் சிரந்தாழ்த்தி நிற்கும் சித்திரமது. அதை உற்றுப் பார்க்கிறான் வெங்கண்ணா, ஒரு பயங்கர மின்னல், திரையில் பளிச்சிடுகிறது, காட்சி மாறுகிறது. கடற்கரையின் வெண்மணல். அதை முத்தமிட்டுத் திரும்பும் பேரலைகள். நீண்ட தெருக்கள். தெருக்களில் டச்சுக்காரர், போர்ச்சுக்கீசியர் நடந்துகொண்டிருக்கின்றனர். இப்படியே காட்சியில் பல பகுதிகள் ஓடிக்கொண்டே இருக்கின்றன. கடைத் தெரு காட்டப்படுகிறது. குறிப்பாக ஒரு விளம்பரப் பலகை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நயமான சிகப்புக்கள் விற்கப்படும்\nநல்லவெண்ண செட்டிக்கடை\nநாகை.’",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "காட்சி மீண்டும் உருண்டு, கடைசியில் ஒரு தெருக்கோடி தெரிகிறது. அழகான வீடு ஒன்று. அதில் வெங்கண்ணா நுழைகிறான் வீட்டின் வெளிப்புறம் மறைந்துவிடுகிறது. உள்ளே.... வெங்கண்ணா ஒரு பெண்ணுடன் பேசிக்கொண்டிருக்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘செங்கமலதாசன் ஒரு செட்டிப் பெண்ணிடம் வளர்கிறான் என்பது மட்டும் எனக்கு முன்னமே தெரியும்! அந்தப் பெண்ணரசி நீதான் என்பது எனக்குத் தெரியாது... கடவுள்தான் உன்னைக் காட்டிவிட்டார்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணா பேசிமுடிவதற்குள், செட்டிப் பெண்ணின் புருஷனும், ஒரு இளைஞனும் பிரவேசிக்கிறார்கள். வெங்கண்ணா ஆவலாக ஓடி அந்த வாலிபனைக் கட்டிக்கொண்டு அழுகிறான். அவன் அழுவது வெறும் பாசாங்கு என்பது அவன் முகத்தில் பிரதிபலிக்கிறது. வெங்கண்ணா சோக மொழிகள் உதிர்க்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘இளவரசே!... என் கண்ணே!... நீ உயிரோடு இருக்கிறாயே, அது போதும் அப்பா!... உன் தந்தை வேலுக்கு இரையானார். உன் தாய் நெருப்புக்கு இரையானாள். உன் தஞ்சைத் தரணி... தெகிடு தத்தக்கார்களுக்கு இரையாகிவிட்டது. இனிமேலாவது நாடு செழிக்கவும், மக்கள் நலம் பெறவும், இழந்த பொன்னுடை ஆளுவதற்கு வா!...’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வாலிபன் விழிக்கிறான். ‘அம்மா!’ என்று அவள் முகத்தைப் பார்க்கிறான். அவளும் ஆனந்தக் கண்ணீர் வழிய அவன் முகத்தமிடுகிறாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘தம்பி! நான் உன் அம்மா அல்ல. நீ...விசயராகவ வேந்தரின் பேரன், மன்னரு நாயக்கரின் மகன். தஞ்சைக் கோட்டை தணலில் வேகும்போது... உன் தாத்தாவும், தந்தையும் மாண்ட செய்தி கேட்டு உன் தாய் தற்கொலை செய்து கொண்டாள். அப்போது உன்னை என் கையில் கொடுத்து “பட்டத்துக்குரியவன். பத்திரமாக பாதுகாத்துக்கொள்’ என்று கூறி உன்னை வளர்க்க இந்தப் பவுன் மூட்டையையும் கொடுத்தாள்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பெட்டியிலிருந்து செட்டிப் பெண் ஒரு பவுன் மூட்டையை எடுத்து செங்கமலதாசனிடம் காட்டுகிறாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "செங்கமலதாசனின் தலை கம்பீரத்தால் நிமிர்கிறது. அவன் கண்களில் புதுஒளி. ஒரு வீர மூச்சு!....",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘என் தந்தையர் நாடு என்னைவிட்டுப் போய்விட்டதா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இளவரசன் கேட்கிறான் சோகமாக! அதில் கோபமும் கலந்துள்ளது, ஊமை வெயில் போல!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘உன் நாட்டை உனக்காக்கவே இந்த ஊழியன் கிளம்பியிருக்கிறேன். செங்கமலதாசா!...... உடன்புறப்படு.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணா அழைக்கிறான். செங்கமலம் தன் வளர்ப்புப்பெற்றோரை வணங்குகிறான். வளர்ப்புத் தந்தையின் இதழோரப் புன்னகை நெளிகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அந்தணர் பெருமானே!...... அரசைக் கைப்பற்றுவதென்றால் ஆட்பெரும் படை, அணிதேர் புரவி. அனைத்தும் வேண்டுமே. வீணே... செல்வன் செங்கமலத்தை பலியிட்டுவிடாதீர்கள்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "தந்தை கெஞ்சலுடன் எச்சரிக்கை முழங்குகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அமோகமான சைன்யம் இருக்கிறது. அதற்கெல்லாம் ஏற்பாடு செய்துவிட்டேன். அழகிரி ஒழிவான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணாவின் வெற்றிச் சிரிப்போடு காட்சி திடீரெனத் திரும்புகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பிறைக்கொடி பறந்துகொண்டிருக்கிறது. கொடி நடப்பட்டிருக்கும் உயர்ந்த ஸ்தூபி! அதைப் பின்பற்றி மளமள வென்று கோட்டையின் பல பாகங்கள் நகருகின்றன. பேச்சுக்குரல் கேட்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணா தான் பேசிக்கொண்டிருக்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘பீஜபூர் சுல்தான். பிரபு!... இன்னும் கேளுங்கள். மக்கள் பசியால் மாளுகிறார்கள். வறுமையால் வாடுகிறார்கள். அழகிரியின் ஆட்சி அழிந்தால் அக்கிரமம் அழியும். அக்கிரமம் ஒழியும். அந்தணர் வாழ்வர். ஆட்சி செழிக்கும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இன்னுங் கேளுங்கள், பீஜபூரின் புகழ்வதை இகழுகிறான் அழகிரி! உங்கள்...... பரந்த படை வலிமையைப் பரிகசிக்கிறான் அற்பன்! நான் அவனைப் பலமுறை எச்சரித்தேன். எரிமலை மேல் விளையாடாதே என்றேன். மக்களுக்காக ஆட்சி நடத்து. இல்லையேல் பீஜபூர் மன்னனை அழைத்து நீதி வழங்கச்செய்வேன் என்றேன். பீஜபூர் தனக்கு ஒரு தூசி என்றுன் பேதை!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சுல்தான்ஜி! இதோ இருக்கிறான் சொந்த நாட்டுக்குரிய செங்கமலம். தாய் தந்தையற்றவன் நீங்களே அவனுக்குத்தாய் - தந்தை - கடவுள் எல்லாம்! இவன் இழந்த உரிமையை நீங்கள் தான் வாங்கி அருளவேண்டும்.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இதுவரை மெளனமாக இருந்த சுல்தான் ‘சரி...ஷாஜியின் மைந்தனை அனுப்புகிறேன்’ என்று கூறியபடி பக்கத்து ஆசனத்தைப் பார்க்கிறான். அதில் அமர்ந்திருந்த ஒரு ஆண்மையாளன் கம்பீரமாக எழுந்து நிற்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       },
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்காஜி! அழகிரியின் மருட்டம் சாயவேண்டும். செங்கமலம் சிம்மாசனம் ஏற வேண்டும். பெரும்படையுடன் புறப்படுக.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சுல்தானின் ஆணையேற்று வெங்காஜியின் தலை அசைகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெற்றியோடு திரும்புக.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சுல்தானின் வாழ்த்து இது!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மராட்டியன் மார்பு ரத்தக்கரை படிந்து வெற்றி அவனுக்கு சாதாரண விஷயம். துர்க்கையின் அருள் இருக்கும் வரையில் தோல்வி இல்லை ......’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெற்றி தான்! வீரமொழியோடு வெங்காஜி வாளை உருவுகிறான். செங்கமலதாசனும் கம்பீரமாக நிமிர்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "திரையில் ஒரு நட்சத்திரம் ‘விசுவரூப’மெடுத்து விடுகிறது. ‘தோல்வி இங்கே...வெற்றி தான்!’ என்ற வீர முழக்கத்தோடு கையிலிருந்த வாளை உறையில் போடுகிறான் வெங்காஜி. பேரிகை ஒலித்து நிற்கிறது. செங்கமலதாசனுக்கு வெற்றி கிடைத்துவிட்டது என்பதின் அடையாளம் அது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உடன் ஒரு பயங்கரமான காடு தோன்றுகிறது. உயர்ந்த மலைப்பாறைகளில் ஒரு உருவம். ஓடிக்கொண்டிருக்கிறது. உருவத்தை ‘குளோசப்’பில் பார்க்கிறோம். ஆம் அழகிரி தான் அப்படி ஓடுகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘பாவி...வெங்கண்ணா!’ அவன் வாய் முணு முணுக்கிறது. பாறையிலிருந்து கீழே உருளுகிறான். பேச்சு மூச்சைக்காணோம்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘டான்! டான்!’ என்று மணியோசை கிளம்புகிறது. தஞ்சை பிரகதீஸ்வரர் ஆலயத்தின் பெரிய நந்தியை தரிசித்துவிட்டு கை கூப்பியவண்ணம் வெங்கண்ணாவும் செங்கமலதாசனும் பிரகதீஸ்வரர் சன்னதியில் நுழைகின்றனர். வெற்றி முழக்கம் காது செவிடுபடுகிறது. ‘ஆண்டவனுக்கு அர்ச்சனை’ களேபாரப்படுகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மணியோசையின் ஸ்தாயி குறைந்துவிட்டதே... அரண்மனைக் கொலுமண்டபத்தைப் பார்க்கிறோம்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "செங்கமலதாசன் பேசுகிறான்: ‘தஞ்சையில் மறு மலர்ச்சி உண்டாக்கி மகுடம் புனைந்ததற்காக மராட்டிய வீரர் வெங்காஜி இந்தப் பதினாறு லட்சம் பூவராகன்களும் பெற வேண்டுகிறேன். அத்துடன் சேனையின் செலவுக்கு ஈடாக கும்பகோணம் பாபநாசம், மன்னார்குடி வட்டாரங்களின் வரிப்பணத்தையும் எழுதிக்கொடுக்கிறேன்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்காஜி: வாழ்க மன்னன்! துர்க்கையின் அருள் சுரக்குமாக!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வாழ்க தஞ்சை!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்காஜி பரிசைப் பெற்றுக்கொள்கிறான். வெங்கண்ணா முகத்தில் பரவசம் பிரகாசிக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "திரையில் இரண்டு வாள்கள் மோதிக்கொள்கின்றன. அந்த மின்வெட்டில் அடுத்த காட்சி ஆரம்பமாகிறது. நந்தவனம்! நீர்த்தொட்டிகள்!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பூஞ்செடிகள்!...பளிங்கு மேடை!...நாம் காண்பது காதலர்கள் அல்ல!......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "செங்கமலதாசனும் வெங்கண்ணாவும் உரையாடலில் சிக்கியிருக்கிறார்கள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்கண்ணா! இன்னொரு சந்தோஷ சமாசாரம்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘என்ன அரசே?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘என்னை மகன் போல் வளர்த்தவர்கள் மறக்கக் கூடாதல்லவா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘கண்டிப்பாக மறக்கக் கூடாது. மாதா — பிதா — குரு — தெய்வம்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அப்பாவையும் அம்மாவையும் தஞ்சைக்கே கூப்பிட்டுவிட்டேன்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆமாம். அரண்மனையில் ஆனந்தமாயிருக்கட்டுமே.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அத்தோடு...அப்பா அகங்குளிரும்படி...செய்யப் போகிறேன்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘செய்யத்தானே வேண்டும். கடமை தான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அருமையான பரிசளிக்கப் போகிறேன்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அளிக்கத்தான் வேண்டும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அப்பாவையே அமைச்சராக்க உத்தேசம்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆ!... அபச்சாரம். வளர்த்த வாணிபச் செட்டிக்கு மந்திரிப்பதவி!... அப்படியானால் முடிசூட்டிய வெங்கண்ணாவுக்கு?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்கண்ணா!.. நீங்கள் தான். என் குருவாயிற்றே!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சிறுபிள்ளை! விளையாடுகிறீர். கோவிந்த தீட்சதர் போன்ற பெரியோர்கள் அமர்ந்த மந்திரி பீடத்தில் நீர் மாசு தூவுகிறீர்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அவர்கள், திக்கற்ற என்னை தாலாட்டி வளர்த்தவர்கள். என் உடலின் ஒவ்வொரு பாகமும் அவர்கள் உப்பால் வளர்ந்தவை. எனக்காக அல்லும் பகலும் கஷ்டப்பட்டார்கள். என் தாயும் தந்தையும் அவர்கள் தானே!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘இருக்கலாம். உமது தலையில் மின்னுகிற கிரீடத்தைக் கேளும். உம்மை மன்னுக்கியது யார், என்று அது சொல்லும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நீங்கள் தான்! அதை என் உடலில் ஓடும் ஒவ்வொரு துளி ரத்தமும் சொல்லும். நன்றி மறக்க மாட்டேன்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மறக்கவில்லையானால் மந்திரிப் பதவி எனக்கே வேண்டும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘கேவலம் மந்திரி பீடத்தில் உள்ள மோகத்திற்காகவா என்னை மன்னனாக்கினீர்? மக்களுக்கு நல்லாட்சி வேண்டும், எனக் கதறினீரே — உமக்கு ஒரு நல்ல பதவி கிடைக்கும் என்பதற்காகத்தானே?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘செங்கமலதாசா! குறும்பு வேண்டாம். கொதிக்கும் கொப்பரையில் குதித்துச் சாகாதே, நன்றி மறந்தாய்! நாயினுங் கீழானாய்!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மன்னிக்கவும். மந்திரி பதவி தருவதாக வாக்களித்துவிட்டேன்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அதைமாற்றி அமைத்தாக வேண்டும்,’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வாக்குறுதியை மீறுவது சரியா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெட்டிப் பேச்சு வேண்டாம். விறுவிறு என்று பதில் கூறு.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அமைச்சர் பதவி அப்பாவுக்குத்தான்! அதை மாற்ற முடியாது. தயவுசெய்து என்னை மன்னித்து விடுங்கள்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "தீவணங்குகிறான் தஞ்சை அரசன். தர்ப்பாகூரர் வெங்கண்ணா தடதடவென ஆத்திர மொழிகளை அள்ளிக்கொட்டுகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அடே! நீ ஆரியத்தை உணரவில்லை. விஷத்தை நாக்கில் தடவிக்கொள்கிறாய். விபரீதத்தை ஏற்கத் தயாராயிரு. அழகிரியின் அடிச்சுவட்டைப் பின்பற்றுகிறாய். ஆபத்து வெடிக்கப்போகிறது. இனி ஆண்டவன் பொறுக்கமாட்டான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணா நந்தவனத்தை விட்டே வேகமாக வெளியேறுகிறான். அவன் வேகத்தில் மோதுண்ட ஒரு மல்லிகை மொட்டு... காற்று முறிந்து கீழே விழுவதைக் காண்கிறோம். செங்கமல தாசன் சோக நடை போடுகிறான். இதையும் பின்னணி சங்கீதத்துடன்... கும்பகோணத்தின் மகாமகக் குளம் காட்சியாகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "காமிராவின் மாயாஜாலங்களில் குடந்தையின் அழகான பகுதிகள் அகப்பட்டு அசைந்தோடுகின்றன. தெருவில் இருவர் பேசிக்கொண்டு போகிறார்கள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வெங்காஜி, நம்ப ஊரில் தங்கியிருக்கிறாராமே?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘தங்குவாரப்பா... தங்குவார். தஞ்சாவூர் ராஜா தான் கும்பகோணத்தை வெங்காஜிக்குக் கொடுத்து விட்டாரே’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "தெருவின் மூல வரையில் தான் அவர்களைப் பார்க்க முடிகிறது. பிறகு காட்சியில் ஒரு காரணம்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்காஜி தன் மாளிகைத் தாழ்வாரத்தில் உலவிக்கொண்டிருக்கிறான். சிந்தனைக் கீறல்கள் நெற்றியில் ஒன்றன் மேல் ஒன்றாகப் படிகின்றன. உலகைக் கொண்டிருந்தவன் நடையை நிறுத்தி வாயைத் திறக்கிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நல்லகதை’ என்று நையாண்டியாக சொல் உதிர்க்கிறான். இதுவரை வெங்காஜியை மட்டுமே கண்ட நாம் இப்பொழுது வெங்கண்ணாவையும் காணுகிறோம் பூணூல் தடவிக்கொண்டே பூசாரி, வெங்காஜியின் பக்கம் அடி போடுகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மராட்டிய குல மகிபா! தஞ்சாவூர் சிம்மாசனம் தங்களை அழைக்கிறது.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘விளையாட்டாக இருக்கிறது.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆம். செங்கமலம் அரசியல் விளையாட்டாகத்தான் எண்ணிவிட்டான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘பாவம் .. சிறுவன்! பக்குவம் வரவேண்டும்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஷாஜி மைந்தரே! அவனு சிறுவன் இல்லை. விஷ வித்து!... தங்களைக் கொல்ல என்ன யோசனை கேட்கிறான்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அவன் பலம், அவனுக்கே தெரியும். அப்படி யெல்லாம் நினைக்கமாட்டான்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘உங்களோடு சண்டை செய்து அவன் ஜெயிக்கவா? அது இல்லை. ஆனால்...’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘என்ன ஆனால் ...?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘வீரரே!... உங்களை நான் இப்போது விருந்துக்கு அழைக்க வந்திருக்கிறேன்’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘விருந்தா?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘கேளுங்கள்! அழைப்பது விருந்துக்கு. அங்கு நடப்பதும் விருந்துதான். ஆனால்... விருந்து உங்களை வீழ்த்திவிடும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘காரணம்?’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘செங்கமலத்தின் சூழ்ச்சி! விருந்தில் விஷத்தைக் கலக்க ஏற்பாடு செய்திருக்கிறான்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘நன்றி மறந்த தீயன்! நானுக்கே நமது படையைத் திரட்டுகிறேன். தஞ்சையை ஆளவேண்டு மென்ற என் கனவு... பலிக்கட்டும். மழையை எதிர்க்கிறது மண்மேடு...!’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘ஆம்! .. அந்த மண்மேடு ரத்த மழையில் கரையப் போகிறது.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘இனி தஞ்சைக்கு நானே மன்னன்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘புலிக்கிர் வீரா! மராட்டிய சாம்ராஜ்யம் உதயமாகப்போகிறது. அகம்பாவம் பிடித்த நாயக்க வம்சம் அஸ்தமிக்கப் போகிறது’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மராட்டிய வீரத்தை, தஞ்சை மறமுறையும் ரசிக்க ஒரு வாய்ப்பு’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அரசே!... தங்கள் ஆட்சிக் காலத்தில் .????’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணா விஷயத்தை இழுத்து மறுப்புகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘அந்தணர் வாழ்வார். ஆலயம் செழிக்கும். அக்கிரகாரம் வளரும் அஞ்சாதீர்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘சிவாஜியின் தம்பியல்லவா தாங்கள்!... மகாராஷ்டிர மாவீரரே! வாழ்க! வாழ்க!... வாழ்க அந்தணர் வானவாணினம்... வாழ்க!...’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இங்கே பேச்சு முடிகிறது .. தஞ்சையில் ஒரே அல்லோலம். வீதிக்கு வீதி வீரர் கூட்டம். குதிரைகளின் குளம்புகளில் குழந்தைகள் மிதிபட்டுச் சாகின்ற கோரக்காட்சி! மராட்டியப் படை கோட்டை வாயிலில் நுழையப் போகிறது. அகோர சப்தம் மாறி, அமைதி நிலவுகிறது. தன்னந் தனியாக நிற்கிறான் செங்கமல தாசன். எதிரிகள் கோட்டையில் புகுந்துவிட்டனர். கோட்டை வாயிலைக் காத்திருந்த பீரங்கிகள் மெளன விரதமிருக்கின்றன... புத்த பூதம் உண்ணாவிரதமிருக்கிறதுபோலும். ஏன் என்று கேட்பாரில்லை. எதிரிப் படையின் எக்காளம் வெற்றித் தொனி கொட்டுகிறது. கோட்டை முகப்பில் பறந்த... நாயக்கர்கொடி .. எரிந்துகொண்டிருக்கிறது. அந்த எரியலைகளினூடே வெங்கண்ணாவின் இறுமாப்பான சிரிப்பும் முழங்குகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       },
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "செங்கமலதாசனை மீண்டும் பார்க்கிறோம். எங்கே? அரண்மனையிலா? .. இல்லை. இருண்ட ஒரு காட்டுப்பாதையில் காண்கிறோம். அந்த அகாத இருட்டில் கோட்டை வாயிலின் கொடி கொழுந்து விட்டெரிவதை... அந்தக் கொழுந்துச் சிறுவன் தரிசிக்கிறான். ‘கோ’வென அழுகிறான். அந்த அழுகையை மறைத்து அங்கே ஆயிரம் தலைகள் சிரிக்கின்றன. அனைத்தும் வெங்கண்ணாவின் தலைகள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       },
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சிரிப்பது மட்டுமா?... அவைகள் பேசுகின்றன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       },
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘டேய்!... சிறுவா!... வெங்கண்ணா வம்சம் நினைத்தால் பட்டமும் கட்டும் — பலிபீடத்தையும் காட்டும்.’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       },
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மீண்டும் ஒரே கர்வச் சிரிப்பு! ...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       },
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பைத்தியக்காரனைப் போல செங்கமலதாசன் ஓடுகிறான். ஆம்!... தஞ்சையின் மன்னன் அப்படித் தத்தளிக்கிறான்... குடிகாரனைப் போல் தள்ளாடுகிறான். முதலாளியின் முரட்டுச் சவுக்கால் தோல் கிழிய அடிக்கப்பட்ட ஏழைத் தொழிலாளியைப் போல் ஏங்குகிறான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       },
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஒரு மரம் அவன் ஆட்டத்தைத் தடுத்து அமைதி வழங்குகிறது. முகமெல்லாம் ரத்தம் வழிய தஞ்சையின் தலைவன் பிணமாகத் தரையில் படுத்துக்கொள்கிறான். அந்தப் பசலுக்கு வெங்கண்ணா அமைத்துத் தந்த பலிபீடம் அதுதான்!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வெங்கண்ணாவின் சிரிப்பு ஓய்கிறது. இருள் மறைகிறது ...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "‘மராட்டிய சாம்ராஜ்யம் உதயம்’ என்ற வார்த்தைகளே கட்டமாக அமைத்துக்கொண்டு, காலக் கதிரவன் உதிக்கிறான். படத்தின் முடிவைக் குறிக்க திரையில் ‘வணக்கம்’ என்ற வார்த்தை குதிக்கிறது. அதற்கு மேலே ஒரு வட்டத்திலே வேதியர் வெங்கண்ணா, வெங்காஜிக்கு மாலை அணிவிக்கிறார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "Rayasam Venganna",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "A Historical Tale of Thanjavur",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "> **Internal sequence of _Towards the Sacrificial Altar_.** This is the film-like historical sequence introduced by the narrator on scan 7; it is not a separate work.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Current translated coverage:** scans 8–30 through the internal film's `வணக்கம்` end-card\n**Canonical Tamil:** [`../../pages/0008-balipeedam-nokki-05.md`](../../pages/0008-balipeedam-nokki-05.md) through [`../../pages/0030-balipeedam-nokki-27.md`](../../pages/0030-balipeedam-nokki-27.md), stopping within scan 30 before `படம் முடிந்துவிட்டது...`",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "heading",
+      "level": 3,
+      "text": "Erimalai ‘Release’",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Direction, screenplay arrangement, dialogue:**\nM. Karunanidhi (me)",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Distribution rights**\nThu. Vi. Narayanan & Co.",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Erimalai's fiery breath comes to a stop. Sweetness threads through the background music. The sky-reaching tower of the Pragadeeswaran Temple is shown. Then mansions, towers and the streets of Thanjavur sweep and turn across the screen. The background music stops.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A palanquin in the street!... The lines of sorrow spread across the bearers' faces tell of the pain in their shoulders.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“For the great Vaishnava Kumar Tatacharya...” shouts a man wearing a broad *namam*. A chorus of “Jai!” follows. The street reverberates.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The palanquin keeps moving. It enters the fort gate. The scene changes.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The durbar hall. Ministers and chief officials are seated.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The durbar begins amid cries of, “Long live King Vijayaraghava, warrior among warriors!” An aged king sits on the throne.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Prince Mannaru Nayak is arriving,” announces a guard.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Brimming with youth and beauty, Mannaru Nayak takes his seat. A “tak-tak” sound is heard. Everyone turns towards the direction of the sound. Footwear appears. Then a foot. Then a *panchakacham*. Then a broad *namam*. Kumar Tatacharya, who came in procession in the palanquin, walks in with stately ease. Vijayaraghava Nayak, Mannaru and everyone else rise and bow. Worship is performed at the guru's feet. The guru speaks.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Vijayaraghava! Why did you summon me?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Vijayaraghava:** Guruswami. Sokkanatha Nayak of Madurai wishes to marry our Mannaru's daughter.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Guru:** A marriage matter?... Let it take place auspiciously.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Vijaya:** There is no way for anything auspicious to happen.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Guru:** Vijayaraghava?... What are you saying?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Vijaya:** The king of Madurai... comes from a line that served Vijayanagara. To give him my granddaughter would be folly. A great disgrace!... So I refused.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Guru:** A girl must be given only after knowing the *gotra*... good!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[Mannaru Nayak interrupts.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“There is no way even for happiness, Swami!... The king of Madurai has announced that he will meet us on the battlefield.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Guru:** Is there no way to peace?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Mannaru:** Peace!... If I give my daughter to him in *kanyadanam*, there will be peace!... Otherwise, peace will sprout only in the flood of blood that rises on the battlefield.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Guru:** Have you resolved upon war?......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Mannaru:** Yes! As long as there is strength in these shoulders, there will be struggle. I have resolved to die with a spear in my chest; I have resolved not to lose my honour by giving my daughter to that *mitthanamathan*.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Guru:** Make the right decision.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[King Vijayaraghava rises.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Swami... Madurai is preparing to spring upon Thanjavur with immense strength. Our army is very small. If we are to win the war... we need your blessing. Grant it.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The king kneels and bows. The hall is utterly silent. Tatacharya begins to speak:",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Vijayaraghava! May you and your clan live! By the divine grace of Tirumal, who abides and sleeps upon the sea—",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "—may your crown live! May peace prevail in your land! May your fame spread! May your life grow! May your reign lengthen!... Victory in war shall be yours!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The blessing ends. A “kala-kala” sound is heard—the sight of gold coins being poured at the Acharya's feet! A flash on the screen. Terrifying music again!....... The war drum sounds. A single cloud of dust. Horses gallop. Cries of “Aa! Oo!” rise.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Cannon blasts roar like thunder. Red water runs through the canals.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Warriors with wounds in their chests, spears in their sides and lances driven into their heads fall broken to the ground with a “sada-sada” sound...... A bullet pierces one warrior's eye and passes through towards the back of his head. A pitiful sight!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Another part of the battlefront.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Vijayaraghava, his queen, Mannaru and Mannaru's daughter appear armed. Vijayaraghava asks:",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Where are the women of the inner palace?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Mannaru:** They are building a fire so that, if the enemies enter, they can kill themselves.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[Vijayaraghava, eagerly.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Mannaru!... Is your child Sengamaladasan safe?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Mannaru:** He is with his mother. There is no need to fear.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Before this exchange is over, disaster-like sounds erupt. The fort walls collapse. Stone and earth fly through the air. A single sweep of flame!.......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A spear strikes Mannaru Nayak in the chest. His daughter cuts down the man who threw it and then herself becomes the victim of another spear. Mannaru's terrible death. Sorrow echoes.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The Madurai commander approaches to arrest Vijayaraghava and his queen. Vijayaraghava throws a spear upward and receives it upon his own chest. He falls. The queen likewise kisses death and falls upon the king's chest. From the enemy side, the roar of victory resounds like the sea.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "We see the mortally wounded King Vijayaraghava in “close-up.” His lips murmur:",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“To behold Srirangam; in Thanjavur, a tower reaching to the sky; every day *santharpanam* for twelve thousand Brahmins; for Mannargudi Rajagopala Swami, a nine-gem armour, a diamond crown, temple enclosures, a flower garden, a tank, the Raghunatha *agraharam*—I performed all these acts of service. And today, seeing enemies enter my country—",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "—I tremble. Were my charities, my acts of righteousness, my devotion to the gods all in vain? Tatacharya's blessing has dissolved like ash fallen into water!... Had I spent on enlarging my army the treasure I exhausted upon the gods, would this fate have come upon me?......”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Vijayaraghava closes his eyes. Blood pours from his chest in a rush. At the fort gate we see rows of warrior figures encircling it. The scene changes. Inside the palace! A fire-pit lashes about with tongues of flame in search of prey...... One after another, women leap into the fire.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Mannaru Nayak's wife approaches the flames with the child Sengamaladasan. Two waterfalls stream from her eyes. She gives the child in her arms to a companion.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“He is the one entitled to the crown. Keep him safe.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Even as she says this, she comes near the fire-pit. She looks at the child once more. That is all—there is a “sarr” sound. Yes... the fire sucks away her tears just like that. The companion runs somewhere with the child.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "She runs... runs... keeps on running. The scene goes dark.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Again, letters race onto the screen and come to a stop. They read........",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The king of Madurai, having brought Thanjavur under his control, sent his younger brother Alagiri to Thanjavur as his representative. Alagiri, who came as the royal representative, developed a desire to seize the rule for himself. The one who stirred that desire was the Vedic priest Venganna. Venganna advised him that if tribute were not paid to Madurai, Thanjavur could be brought under their own control, and Alagiri acted accordingly. Madurai too, with its greed already astir, remains careless. At the same time, as fortune upon fortune, a treasure is discovered in the palace. That treasure itself brings Alagiri's rule to an end.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The letters disappear. In the next scene we see a private place in the Thanjavur palace. The ruler and the Vedic priest are seated on seats of equal rank. Smiling, the priest begins the conversation.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“If tribute had been paid this time, we would have had to remain Sokkanathan's slaves. How is my statecraft?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Venganna's word is the word of the Veda. Suppose... Madurai suddenly springs upon us?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“The tiger is *kilathirukkirathu*. It will not leave its cave for a little while. By then we can strengthen the ranks of our army.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Ah... Venganna's brain—what a brain!... Ideas of every kind sprout at great speed.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Otherwise, would the Rayasam profession that we have practised generation after generation survive? Even the fallen Vijayaraghava never fails to give my brain work. Not only I—the Brahmin lineage itself has greater experience in knowledge and in politics.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“What obstacle could there be?... God's creation itself is like that.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Are we not those born from the face? And is not the face nearest to the brain?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“What doubt is there?... Yes.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“If an ordinary royal representative is to be made an imperial king, how rare and great the counsel must be!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Counsel alone?... You have such concern for Alagiri's welfare. Venganna!... You must accept my thanks for your help.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Only by mouth... only in words—is that all?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Venganna! Ask what you want. You may receive a reward.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“A king will not break his word, will he?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Even if the whole world fails in that, Alagiri will not fail where Venganna is concerned.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Very well... may I ask for the reward I want?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Ask without hesitation. It will be given gladly.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Pay befitting the labour! What place is there for hesitation in this?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“It is true that I rose through your labour!... I am not a madman who casts a man aside once his labour has been useful. Ask for what you want.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“For the help Vibhishana rendered, Sri Rama... gave him Lanka itself, did he not?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Yes. Now...”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[Lines appear on Alagiri's face, stirring suspicion.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Do not be alarmed that I too will ask for a country like that.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“You would not ask! You are a good man! I know!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[A foolish look seems to run over Alagiri's face.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“With the affection you show me, whatever I ask, you will give! You are a man of such generous thought and unquenchable affection.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printedPage": 15
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Mm, ask.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[There is no light in Alagiri's eyes. His brow bends.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“The buried treasure! I am the one who discovered it and gave it to you, am I not, Maharaja!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Yes.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "[It is unbearable to look at Alagiri now. He looks pitiful.]",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“If you give me that, it is enough.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Having said this, Venganna looks eagerly at Alagiri's mouth. Alagiri begins to speak. Anger bubbles in his speech. He cannot suppress it. How could he?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Brahmin! You are becoming greedy. The treasure is for the welfare of the people! I cannot give it.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Even Venganna finds courage. He speaks explosively.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Alagiri!... Arrogance has gone to your head. Do not smother reason in the intoxication of power. I made you king. I made Madurai's slave into a king. Now he speaks with conceit. Besh!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Venganna!... Do not set off empty shots. Let there be restraint in your words.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Ungrateful man! You have not understood Aryanism properly. It is fire. Do not come near—”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 17,
+        "printedPage": 16
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Do not provoke anger. The prison will be opened.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Alagiri! Here, I have calculated your horoscope. Your rule is going to perish in a short life. Venganna is an earthquake. Caught in it, you are going to die.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venganna turns in fury. Alagiri, who had stood motionless, laughs “kada-kada.” Following the sound of that laughter, a picture is shown.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is a picture of Cheran Senguttuvan standing with his head bowed before Matalavaraiyan. Venganna stares at it. A terrifying flash blazes across the screen. The scene changes. White sand on a seashore. Great waves kiss it and roll back. Long streets. Dutchmen and Portuguese walk along the streets. In this way many places keep running through the scene. A bazaar street is shown. One signboard in particular:",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Fine reds for sale\nNallavenna Chetti Shop\nNagai.”",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The scene rolls again, and at last a street corner appears. A beautiful house. Venganna enters it. The outside of the house disappears. Inside.... Venganna is speaking with a woman.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 18,
+        "printedPage": 17
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“All I knew earlier was that Sengamaladasan was being raised by a Chetti woman! I did not know that the lady was you... God himself has shown you to me.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Before Venganna finishes speaking, the Chetti woman's husband and a young man enter. Venganna runs eagerly to the youth, embraces him and weeps. His face reveals that his weeping is mere pretence. Venganna lets fall words of sorrow.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Prince!... my dear!... You are alive—that is enough, son!... Your father became prey to the spear. Your mother became prey to fire. Your Thanjavur land... has become prey to the *thegidu thaththakkar*. At least now, come—to make the country prosper, to bring welfare to the people, and to rule the golden realm you lost!...”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The young man looks up in surprise. “Amma!” he says, looking at her face. Tears of joy flow from her too as she touches his face.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Younger brother! I am not your mother. You are the grandson of King Vijayaraghava, the son of Mannaru Nayak. When the Thanjavur fort was baking in flame... your mother killed herself on hearing the news that your grandfather and father had died. Then she placed you in my hands and said, ‘He is the one entitled to the crown. Keep him safe—",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "—’ and gave me this bag of sovereigns too, so that I might raise you.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The Chetti woman takes a bag of sovereigns from a box and shows it to Sengamaladasan.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Sengamaladasan's head rises with majesty. A new light in his eyes. A warrior's breath!....",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Has the land of my fathers gone away from me?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The prince asks sorrowfully. Anger too is mixed in it—like mute sunlight!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“This servant has set out to win back your country for you. Sengamaladasa!...... Come with me.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venganna calls him. Sengamalam bows to his foster parents. A smile curls at the edge of the foster father's lips.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“O great Brahmin!...... If a kingdom is to be seized, a vast army of men, chariots and horses—everything is needed. Do not needlessly sacrifice the young Sengamalam.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The father pleads as he sounds his warning.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“There is a mighty army. I have arranged everything. Alagiri will be finished.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 20,
+        "printedPage": 19
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "With Venganna's victorious smile, the scene suddenly turns.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A crescent flag is flying. A tall stupa upon which the flag has been planted! Following it, parts of the fort move past in rapid succession. A voice is heard.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is Venganna speaking.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Bijapur Sultan. Lord!... Listen further. The people are dying of hunger. They are wasting away in poverty. If Alagiri's rule is destroyed, injustice will be destroyed. Injustice will be swept away. Brahmins will live. The rule will prosper.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Listen further. Alagiri mocks the glory of Bijapur! The wretch ridicules your...... vast military strength! I warned him many times. I told him not to play upon a volcano. Govern for the people, I said. Otherwise, I will summon the king of Bijapur and have justice dispensed, I said. The fool says Bijapur is but a speck of dust to him!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Sultanji! Here is Sengamalam, the one entitled to his own country. He is without mother or father; you alone are mother—father—God—everything to him! You alone must graciously restore the right he has lost.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Until now the Sultan has remained silent. Saying, “Very well... I shall send Shahji's son,” he—",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 21,
+        "printedPage": 20
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "—looks towards the adjoining seat. A man of martial bearing who had been sitting there rises majestically.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Venkoji! Alagiri's delusion must be brought down. Sengamalam must ascend the throne. Depart with a great army.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Accepting the Sultan's order, Venkoji nods his head.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Return with victory.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "That is the Sultan's blessing!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“A Maratha's chest is stained with blood; victory is an ordinary matter for him. As long as Durga's grace remains, there is no defeat......”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Victory indeed! With those heroic words, Venkoji draws his sword. Sengamaladasan too straightens with majesty.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A star on the screen assumes a “Visvarupa.” With the heroic cry, “Defeat here... victory indeed!” Venkoji places the sword in his hand back into its sheath. The war drum sounds and stops. It is the sign that Sengamaladasan has obtained victory.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "At once a terrifying forest appears. A figure on the high mountain rocks. It is running. We see the figure in “close-up.” Yes—it is Alagiri running like that.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 22,
+        "printedPage": 21
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Sinner... Venganna!” his mouth mutters. He rolls down from the rock. There is no speech, no breath.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Dong! Dong!” bells begin to ring. Having worshipped the great Nandi of the Thanjavur Pragadeeswarar Temple, Venganna and Sengamaladasan, hands joined, enter the shrine of Pragadeeswarar. The victory cries are deafening. “Worship for the Lord” erupts into commotion.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The pitch of the bells has fallen... We see the palace audience hall.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Sengamaladasan speaks: “For bringing about a revival in Thanjavur and placing the crown upon me, I request that the Maratha warrior Venkoji receive these sixteen lakh *poovaragans*. Along with that, to meet the expenses of the army, I grant in writing the tax revenues of the Kumbakonam, Papanasam and Mannargudi regions.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "**Venkoji:** Long live the king! May Durga's grace flow!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Long live Thanjavur!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venkoji receives the gift. Ecstasy shines across Venganna's face.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Two swords clash on the screen. In that flash, the next scene begins. A flower garden! Water tanks!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 23,
+        "printedPage": 22
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Flowering plants!... A marble platform!... What we see are not lovers!......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Sengamaladasan and Venganna are caught in conversation.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Venganna! Another piece of happy news.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“What is it, Your Majesty?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“We must not forget those who raised me like a son, must we?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Certainly they must not be forgotten. Mother—father—guru—God.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“I have summoned father and mother to Thanjavur itself.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Yes. Let them live happily in the palace.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Along with that... I am going to do something... that will gladden father's heart.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“You should indeed. It is your duty.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“I am going to give him a splendid gift.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“You should give it.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“I intend to make father himself the minister.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Ah!... Sacrilege. A ministerial post for the merchant Chetti who raised you!... Then what of Venganna, who placed the crown upon you?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Venganna!... You are my guru!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 24,
+        "printedPage": 23
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Child! You are playing. You are throwing dirt upon the ministerial seat where great men such as Govinda Dikshita sat.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“They are the ones who cradled and raised me when I had no refuge. Every part of my body grew on their salt. They suffered for me night and day. Are they not my mother and father!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Ask the crown glittering on your head. It will tell you who made you king.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“You did! Every drop of blood running through my body will say so. I will not forget gratitude.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“If you have not forgotten, the minister's post must be mine.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Did you make me king merely out of desire for the ministerial seat? You cried that the people needed good government—was that only so that you might obtain a good post?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Sengamaladasa! No mischief. Do not leap into a boiling cauldron and die. You have forgotten gratitude! You have become lower than a dog!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Forgive me. I have already promised the minister's post.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“That must be altered.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 25,
+        "printedPage": 24
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Is it right to break a promise?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“No useless talk. Answer briskly.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“The minister's post is for father alone! It cannot be changed. Please forgive me.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The king of Thanjavur bows. *Tharppakurar* Venganna pours out angry words in a rattling torrent.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Hey! You have not understood Aryanism. You are smearing poison upon your tongue. Be ready to face the calamity. You are following in Alagiri's footsteps. Danger is about to explode. From now on, the Lord will not tolerate it.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venganna strides swiftly out of the flower garden. A jasmine bud struck by his rush... breaks in the air and falls to the ground before our eyes. Sengamaladasan walks sadly. With this too carried by background music... the Mahamaham Tank of Kumbakonam comes into view.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Through the camera's magic, beautiful parts of Kudanthai are caught and move past. Two men walk along the street talking.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“They say Venkoji is staying in our town?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“He will stay, brother... he will stay. The king of Thanjavur has given Kumbakonam to Venkoji, has he not?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 26,
+        "printedPage": 25
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "We can see the two men only as far as the street corner. Then, in the scene, **a reason!**",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venkoji is pacing along the veranda of his mansion. Furrows of thought pile one upon another across his forehead. The man who seemed to possess the world stops walking and opens his mouth.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Fine story,” he says with sarcasm. Until now we have seen only Venkoji; now we see Venganna as well. Rubbing his sacred thread, the priest steps towards Venkoji.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“O ruler of the Maratha clan! The throne of Thanjavur calls you.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“This is becoming a game.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Yes. Sengamalam has taken politics itself for a game.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Poor boy!... He needs maturity.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Son of Shahji! He is no child. A seed of poison!... He is asking for counsel on how to kill you.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“He knows his own strength. He would not think of anything like that.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Can he fight you and win? That is not it. But...”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“But what...?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Warrior!... I have come now to invite you to a feast.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 27,
+        "printedPage": 26
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“A feast?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Listen! The invitation is to a feast. What happens there too will be a feast. But... the feast will bring you down.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Reason?”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Sengamalam's plot! He has arranged to mix poison into the feast.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Ungrateful villain! I myself will muster our army. Let my dream of ruling Thanjavur... come true. An earthen mound stands against the rain...!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Yes!... That earthen mound is going to dissolve in a rain of blood.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“From now on, I alone am king of Thanjavur.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“*Pulikkir veera!* The Maratha Empire is about to rise. The arrogant Nayak line is about to set.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“An opportunity for Thanjavur to savour Maratha valour once more.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Your Majesty!... During your reign .????”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venganna draws the matter out and turns it aside.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Brahmins will live. The temple will prosper. The agraharam will flourish. Do not fear.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Are you not Shivaji's younger brother!... O great warrior of Maharashtra! Long live! Long live!... Long live the Brahmin *vanavaninam*... long live!...”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 28,
+        "printedPage": 27
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The conversation ends here... Thanjavur is in total turmoil. Crowds of warriors in every street. A horrifying sight—children trampled to death beneath horses' hooves! The Maratha army is about to enter the fort gate. The dreadful noise changes; silence prevails. Sengamaladasan stands utterly alone. The enemies have entered the fort. The cannons that guarded the fort gate observe a vow of silence... as though a new demon too were observing a hunger strike. There is no one to ask why. The enemy army's trumpet pours out the note of victory. The Nayak flag that had flown over the fort front... is burning. Through those waves of flame, Venganna's arrogant laughter also rings out.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "We see Sengamaladasan again. Where? In the palace?... No. We see him on a dark forest path. In that unfathomable darkness, that tender shoot of a boy gazes upon the fort-gate flag blazing in flame. He cries “Go!” aloud. Drowning that cry, a thousand heads laugh there. Every one of them is Venganna's head!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Only laughter?... They speak.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Hey!... boy!... When the Venganna line wills it, it will bind on the crown—and it will show the sacrificial altar too.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Again, one great arrogant laugh!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Sengamaladasan runs like a madman. Yes!... the king of Thanjavur staggers like that—",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 29,
+        "printedPage": 28
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "—staggers... reels like a drunkard. He groans like a poor labourer beaten until his skin is torn by a master's brutal whip.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A tree stops his swaying and gives him peace. With blood running all over his face, the ruler of Thanjavur lies down upon the ground as a corpse. That was the sacrificial altar Venganna had built for that *pasalu*!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Venganna's laughter ceases. The darkness clears...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The words **“Rise of the Maratha Empire”** themselves form a frame, and the sun of time rises. To mark the end of the picture, the word **“Vanakkam”** leaps onto the screen. Above it, inside a circle, Vedic priest Venganna places a garland around Venkoji.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This English translation follows the audited first-edition Tamil source preserved in this repository. It aims to carry Kalaignar's argument, rhetoric, dialogue, historical-cinematic form and political intensity into clear English without modernising or silently correcting the Tamil. The audited Tamil page records remain authoritative. `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` is retained as an internal film-like sequence of `பலிபீடம் நோக்கி`, not treated as a separate work."
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Batch 2 translation notes",
+      "text": "- The scan-8 title card is reproduced prominently but explicitly labelled as an **internal sequence** of the one work.\n- `எரிமலை ‘ரிலீஸ்’`, `டைரக்ஷன்`, `திரைக்கதை அமைப்பு`, `வசனம்`, and the distribution-rights line are retained as film-credit vocabulary rather than rewritten into ordinary prose.\n- `மித்தானமத்தனுக்குக்` is a verified but lexically unusual source form. The English therefore retains **_mitthanamathan_** rather than inventing a historical or dictionary correction.\n- `முச்சுற்றுப்படுத்திருக்கும்` is also retained in the canonical Tamil as printed. The English gives the cautious contextual reading **“encircling it”**; the exact Tamil form remains documented in the glossary and canonical page record.\n- `கன்னிகாதானம்` is retained as **_kanyadanam_** rather than flattened to a generic “marriage.”\n- `சந்தர்ப்பணம்` is retained as **_santharpanam_** because the source uses a specific ritual/service term; no expanded ritual definition is inserted into the prose.\n- `அக்கிரகாரம்` is retained as **_agraharam_**.\n- Cinematic cues such as “close-up,” screen flashes, background music, scene changes, bracketed action directions, and source sound effects remain visible.\n- The dying speech across scans 12–13 is kept as one continuous quotation; no artificial closure is inserted at the scan boundary.\n---"
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Batch 3 translation notes",
+      "text": "- Batch 3 remains part of the **same internal cinematic sequence** and has been appended to this same file.\n- `கப்பம்` is translated as **tribute**; `ராஜதந்திரம்` as **statecraft** in this political-intrigue context.\n- The verified source forms `கிளந்திருந்த` and `கிளத்திருக்கிறது` are not silently normalized. The first receives the cautious contextual rendering **“with its greed already astir”**; the second is retained as **_kilathirukkirathu_** because its exact lexical force is not secure from the printed form alone.\n- `மன்னனுக்கினேன்` is a source-specific compressed form. The English renders the surrounding sense as **“I made Madurai's slave into a king”** without altering the canonical Tamil.\n- `வெத்துவேட்டுக்கள்` is rendered **“empty shots”** to preserve the source's explosive verbal metaphor rather than turning it into a neutral warning.\n- The three-line Nagai shop sign is retained as a distinct on-screen textual unit; `சிகப்புக்கள்` is rendered literally as **“reds”** rather than supplied with an unprinted commodity.\n- `தெகிடு தத்தக்கார்களுக்கு` is retained as **_thegidu thaththakkar_** because the source expression is unusual and should not be silently assigned a modern lexical meaning.\n- `முகத்தமிடுகிறாள்` is an unusual verified source form. The English uses the cautious contextual **“touches his face”** and records the exact Tamil form in the glossary rather than silently correcting it to a more familiar verb.\n- `ஊமை வெயில் போல!` is retained as the striking source metaphor **“like mute sunlight!”** rather than rationalised into an explanatory comparison.\n- The scan 19→20 quotation and `பாது` / `காத்துக்கொள்` continuity are kept intact.\n---"
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Batch 4 translation notes",
+      "text": "- Batch 4 remains inside the **same internal cinematic sequence** and is appended to this same file.\n- Scan 21 `மளமள வென்று` is rendered contextually as **“in rapid succession”**; the exact verified Tamil remains canonical.\n- The unusual scan-21 form `என்றுன் பேதை!` is not normalized in Tamil. The sentence is rendered cautiously as **“The fool says Bijapur is but a speck of dust to him!”** from its immediate context.\n- `வெங்காஜி` is rendered **Venkoji**, `ஷாஜி` as **Shahji**, and `பீஜபூர்` as **Bijapur** consistently with the translation plan.\n- `விசுவரூப` is retained as **Visvarupa** inside the screen metaphor rather than expanded into an external theological explanation.\n- Scan 23 `களேபாரப்படுகிறது` is a verified unusual verbal form. English uses the cautious contextual **“erupts into commotion”** while preserving the exact Tamil in the canonical page record and glossary.\n- `பூவராகன்` is retained as **_poovaragan_** rather than silently identifying or converting the historical currency.\n- Scan 25 `மன்னுக்கியது` receives the contextual rendering **“who made you king”**; the unusual Tamil remains untouched.\n- Scan 26 `தர்ப்பாகூரர்` is retained as **_Tharppakurar_** rather than expanded into an unsupported title or caste label.\n- Scan 26 `விபரீதத்தை ஏற்கத்` is rendered **“be ready to face the calamity”** without changing the source wording.\n- The source's `தீவணங்குகிறான்` is rendered conservatively as **“bows”**; no reconstructed Tamil verb is substituted.\n- The source prints `காற்று முறிந்து` in the jasmine-bud image. English uses **“breaks in the air and falls”** rather than silently changing the Tamil to a more expected anatomical/plant term.\n- `குடந்தை` is kept as **Kudanthai** where the source uses that place-name form; `கும்பகோணம்` remains **Kumbakonam**.\n---"
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Batch 5 translation notes",
+      "text": "- Batch 5 completes the **internal cinematic sequence** and stops exactly at scan 30's source-printed `வணக்கம்` end-card. The following `படம் முடிந்துவிட்டது...` begins the narrator's return to the main `பலிபீடம்` frame and is reserved for Batch 6 / section 3.\n- Scan 27's verified but narratively unusual `ஒரு காரணம்!` is retained literally as **“a reason!”** rather than silently rewritten into a more expected scene-transition word.\n- Scan 28's unusual forms `நானுக்கே`, `புலிக்கிர் வீரா`, and `வானவாணினம்` are not corrected in Tamil. English renders the first contextually as **“I myself will muster our army”** and retains the latter two as **_Pulikkir veera_** and **_vanavaninam_** because their exact lexical force is not secure from the source alone.\n- The four source question marks in `அரசே!... தங்கள் ஆட்சிக் காலத்தில் .????` are preserved as **“.????”** rather than regularised.\n- Scan 29's `புத்த பூதம்` image is translated conservatively as **“a new demon”**; the exact Tamil remains canonical.\n- `பட்டமும் கட்டும் — பலிபீடத்தையும் காட்டும்` is kept as **“it will bind on the crown—and it will show the sacrificial altar too”** so that the internal film explicitly reconnects with the governing `பலிபீடம்` metaphor before its end-card.\n- The scan 29→30 page join `அப்படித்` + `தத்தளிக்கிறான்` is preserved as one continuous English sentence and documented with a source-join comment.\n- Scan 30's unusual `பசலுக்கு` is retained as **_pasalu_** rather than assigned an unsupported meaning.\n- `மராட்டிய சாம்ராஜ்யம் உதயம்` is translated as **“Rise of the Maratha Empire”** while preserving its function as on-screen end-frame text.\n- `வணக்கம்` is retained as **“Vanakkam”** because it is a source-printed film end-card, not ordinary dialogue."
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Internal-sequence translation status",
+      "text": "**Scans 8–30 through `வணக்கம்`: REVIEWED.**\nThe internal `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` cinematic sequence is now fully translated. Batch 6 must begin in a new English section file at the same scan's next sentence: `படம் முடிந்துவிட்டது...`."
+     }
+    ]
+   }
+  },
+  {
+   "order": 3,
+   "slug": "return-and-conclusion",
+   "titleTa": "பலிபீடம் நோக்கி — திரைப்படக் காட்சியிலிருந்து திரும்புதல் மற்றும் முடிவுரை",
+   "titleEn": "Towards the Sacrificial Altar — Return and Conclusion",
+   "sourceScansTa": "scan 30 from `படம் முடிந்துவிட்டது...` through scan 33",
+   "sourceScansEn": "scan 30 from `படம் முடிந்துவிட்டது...` through scan 33",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": false,
+   "carriesArchiveSectionLabel": true,
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "paragraph",
+      "text": "படம் முடிந்துவிட்டது. பாடம் கற்றுக்கொண்டீர்களா? பலிபீடம் நோக்க இப்பொழுது நீங்கள் எத்தனை பேர் தயார்?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பலிபீடம் நோக்குங்கள். பலிபீடத்திலே ...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சேரனின் மானம் தூளாக்கப்பட்டுக் கிடப்பதை நோக்குங்கள். நாயக்கர் பரம்பரை நாசமாகிக் கிடப்பதை நோக்குங்கள். ராஜராஜ சோழனின் பொக்கிஷம் இறைந்து கிடப்பதை நோக்குங்கள். பலிவாளுக்கு கம்பனின் மாலை சூட்டப்பட்டிருப்பதை நோக்குங்கள். காமராஜர்கள், கலியாணசுந்தரங்கள், நாமக்கல்லார்கள் அந்த பலிபீடம் நோக்கி கைகூப்புவதையும் நோக்குங்கள். அவர்களைத் தடுத்து நிறுத்துங்கள். ஆபத்து என்று அறிவிப்புவிடுங்கள். அதையும் மீறிச்சென்றால்... நீங்கள் பலிபீடம் நோக்கிப் பாயுங்கள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆரியபலிபீடத்திலே நீங்கள் சிந்தும் ரத்தம் அதன் அஸ்திவாரத்தை அசைத்ததால் பொங்கிய வியர்வைக் கடலாக இருக்கட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்த பலிபீடத்திலே பெருக்கெடுத்தோடும் உங்கள் குருதி வெள்ளம், அதன் ஒரு மூலையைக் குத்தி உடைக்கும்போது பெருகியதாயிருக்கட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உங்கள் தலை பலிபீடத்திலே உருளட்டும். ஆனால் கம்பனின் ‘கண்மூடி’த் தனியைப் போல அல்ல! கனல் கக்கிடும் கண்களோடு அது வெட்டப்பட்டட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உங்கள் தசைகள் பலிபீடத்திலே கிழித்தெறியப்பட்டட்டும். ஆனால் ஆஞ்சநேயனின் ரோஷமற்ற தசையைப் போல அல்ல! தன்மான ரத்தத்தின் சூடு தணியாமல் அவை கழிக்கப்பட்டட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "நீங்கள் சாகப் பயன்படும் சமுதாயமா?... சமருக்கு...அஞ்சும் இனத்தவரா?... ரத்தக்கடல் உங்கள் மூதாதையரின் நீச்சல் குளம். வேலும் வாளும் அவர்கள் விளையாட்டுக் கருவிகள். போர்க்களம் அவர்கள் தவழும் தாழ்வாரம். பாசறை அவர்கள் படுத்திருந்த தொட்டில்!... அவ்வழி வந்தோரே! ஆளப்பிறந்தவரே! தமிழுக்காகத்தான் முத்துவையும், நடராசனையும் தத்தம்செய்தவரே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பலிபீடம் நோக்குங்கள்... பகுத்தறிவுச் சம்மட்டி, கையில் இருக்கட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பாராண்ட இனத்தை ஆசைகாட்டி பலிபீடத்திற்கு இழுத்துச் சென்ற கைகாட்டிகள் அதோ!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆலயங்கள், அக்கிரகாரங்கள், அலங்கார மடங்கள், பாரத ராமாயணங்கள், பழைய பஞ்சாங்கங்கள், மோட்ச நரக சொர்க்கங்கள் அத்தனையும் பலிபீடத்தில் நிறுத்துங்கள். சுக்கல் சுக்கலாக உடைத்தெறியுங்கள்! துண்டம் துண்டமாக நொறுக்குங்கள். அணு அணுவாகக் கொளுத்துங்கள். முதலில் அந்த இந்துமதக் கொடுவாள் முறியட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்துமதந்தான் உங்களை இன்று சேரியில் தள்ளியிருக்கிறது. இந்துமதந்தான் உங்கள் பெண்களை விதவைகளாக்கி வைத்திருக்கிறது. இந்துமதந்தான் உங்கள் இனத்தை மறைத்திருக்கிறது. இந்து மதந்தான் உங்களை மிருகங்களாக நடத்துகிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்துமதந்தான்... ஆலயங்கள் அமைத்து, உங்கள் திரண்ட செல்வத்தைத் தின்று கொழுக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்துமதந்தான் மனுதர்மத்தின் பெயரால் உங்களை ‘எதிர்த்துப் பேசாதே! எட்டி நில்!’ என்று தடைஉத்தரவு போட்டிருக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்துமதந்தான் ராமாயணத்தை உண்டாக்கி ‘செருப்பாண்டாலும் சரி’ என்ற அளவில் பிரிட்டிஷ் ஏகாதிபத்தியத்தை நிலைக்கவிட்டிருக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்துமதந்தான் உங்களை சூத்திரர்களாக்கி... முதலாளிகளின் கையில் ஒப்புவித்து.....உதிரத்தை உறிஞ்சும்படி செய்திருக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்த மதக்கொடுவாள்... உங்கள் சம்மட்டி வீச்சால் பொடி பொடியாக சிதறி மண்ணைப் போகட்டும், பலிபீடம் படார்.. படார்.. எனத் தெறித்துத்துகள் தூளாகப் பறக்கட்டும் கண்காட்டி, காம மூட்டி... கழுத்தையறுப்பதற்கு.... வழி காட்டும் ஆரியக் கைகாட்டிகள் அக்கினிக்கு இரையாகட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அழிந்து போதும்...இனி ஆள்வோம், வீழ்ந்தது போதும்...இனி வாழ்வோம். எங்கே நடக்கட்டும் உங்கள் வேலை! பாடிக்கொண்டே உங்கள் படை கிளம்பட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆரிய பலிபீடம்......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அங்கே இந்துமதக்கொடுவாள்! வாள்\nஅழிக்கப் புறப்பட்டோம்......\nஇதோ அவை தூள்! தூள்!",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "ornament",
+      "text": "✾",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "paragraph",
+      "text": "The picture is over. Have you learnt the lesson? How many of you are now ready to go towards the sacrificial altar?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Look towards the sacrificial altar. Upon the sacrificial altar...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Look at Cheran's honour lying reduced to dust. Look at the Nayak lineage lying destroyed. Look at Rajaraja Chola's treasure lying scattered. Look at Kamban's garland placed upon the sacrificial sword. Look too at the Kamarajs, the Kalyanasundarams and the Namakkallars standing with folded hands towards that sacrificial altar. Stop them. Sound the warning: danger. If they go beyond even that... you rush towards the sacrificial altar.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 30,
+        "printedPage": 29
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Let the blood you spill upon the Aryan sacrificial altar be an ocean of sweat that surged up because you shook its foundations.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Let the flood of your blood that courses across that sacrificial altar have swelled as you strike and break one of its corners.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Let your head roll upon the sacrificial altar. But not like Kamban's “blindfolded” nature! Let it be severed with eyes that spit fire.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Let your muscles be torn and flung upon the sacrificial altar. But not like Anjaneya's muscles without fury! Let them be severed while the heat of the blood of self-respect has not cooled.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Are you a community meant only to die?... Are you a people who fear... battle?... A sea of blood was your ancestors' swimming pool. Spears and swords were their playthings. The battlefield was the veranda upon which they crawled. The war camp was the cradle in which they lay!... O you who came by that path! O you born to rule! O you who dedicated Muthu and Natarajan to Tamil itself!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Look towards the sacrificial altar... Keep the hammer of rationalism in your hand.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "There are the signposts that tempted the people who once ruled the world and dragged them towards the sacrificial altar!...",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Temples, agraharams, ornate monasteries, Bharatas and Ramayanas, old almanacs, moksha, hell and heaven—place all of them upon the sacrificial altar. Break them apart, shard by shard! Smash them to pieces, fragment by fragment. Burn them atom by atom. First, let that cruel sword of Hinduism be broken.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is Hinduism that has pushed you into the *cheri* today. It is Hinduism that has made your women widows. It is Hinduism that has hidden your people. It is Hinduism that treats you like animals.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is Hinduism that... builds temples and grows fat by devouring your accumulated wealth.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is Hinduism that, in the name of Manudharma, has issued the prohibitory order: “Do not speak against it! Stand back!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is Hinduism that created the Ramayana and, to the point of saying “even if a sandal rules, so be it,” has allowed British imperialism to remain in place.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It is Hinduism that made you Shudras... handed you over into the hands of capitalists..... and made it possible for your blood to be sucked.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Let that cruel sword of religion... be shattered into powder and go to dust under the swing of your hammer. Let the sacrificial altar burst “padaar.. padaar..,” its splinters flying as dust. Let the Aryan signposts that beckon with the eyes, kindle desire... and show the way.... to slit the throat become prey to fire.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Enough of being destroyed... now we shall rule. Enough of falling... now we shall live. Let your work go on—wherever! Let your army set out singing.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Aryan sacrificial altar......",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "There—the cruel sword of Hinduism! Sword\nWe set out to destroy......\nBehold, they are dust! Dust!",
+      "hasLineBreaks": true,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     },
+     {
+      "kind": "ornament",
+      "text": "✾",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This English translation follows the audited first-edition Tamil source preserved in this repository. It aims to carry Kalaignar's argument, rhetoric, dialogue, historical-cinematic form and political intensity into clear English without modernising or silently correcting the Tamil. The audited Tamil page records remain authoritative. `ராயசம் வெங்கண்ணா — தஞ்சை சரித்திரக் கதை` remains an internal film-like sequence of `பலிபீடம் நோக்கி`, not a separate work."
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Batch 6 translation notes",
+      "text": "- Batch 6 begins exactly after the internal film's `வணக்கம்` end-card, at scan 30's `படம் முடிந்துவிட்டது. பாடம் கற்றுக்கொண்டீர்களா?`; the end-card is not duplicated here.\n- The scan 30→31 continuation `கைகூப்புவதை` + `யும்` is translated as one continuous sentence and explicitly documented above.\n- `பலிபீடம்` remains **sacrificial altar** and `ஆரியபலிபீடம்` / `ஆரிய பலிபீடம்` remains **Aryan sacrificial altar**, preserving the governing metaphor established in the pilot.\n- The pluralized source forms `காமராஜர்கள்`, `கலியாணசுந்தரங்கள்`, and `நாமக்கல்லார்கள்` are represented conservatively as **the Kamarajs, the Kalyanasundarams and the Namakkallars** rather than silently resolving them into externally identified individuals.\n- The unusual scan-31 verb forms `வெட்டப்பட்டட்டும்`, `கிழித்தெறியப்பட்டட்டும்`, and `கழிக்கப்பட்டட்டும்` remain untouched in canonical Tamil; English conveys their immediate imperative sense without attempting to reconstruct corrected Tamil forms.\n- `பகுத்தறிவுச் சம்மட்டி` is **hammer of rationalism**, retaining the movement-era force of `பகுத்தறிவு`.\n- `சேரி` is retained as **_cheri_** rather than flattened to a generic neighbourhood term inside the polemical sentence.\n- `மனுதர்மம்` is retained as **Manudharma** and `சூத்திரர்கள்` as **Shudras**.\n- The source phrase `செருப்பாண்டாலும் சரி` is translated literally and cautiously as **“even if a sandal rules, so be it”**; no explanatory Ramayana gloss is inserted into the prose.\n- `இந்துமதக் கொடுவாள்` is rendered **cruel sword of Hinduism** and the later `மதக்கொடுவாள்` as **cruel sword of religion**, preserving the repeated weapon metaphor.\n- The closing sound effect `படார்.. படார்..` is retained as **“padaar.. padaar..”** rather than replaced with an invented English effect.\n- The closing verse preserves the source's repeated `வாள்` as **“Sword”** rather than silently smoothing the line.\n- The printed floral ornament is retained as `✾`."
+     },
+     {
+      "kind": "translator-note",
+      "heading": "Batch 6 review result",
+      "text": "**Scans 30 (from `படம் முடிந்துவிட்டது...`) through 33: REVIEWED.**\nEvery substantive paragraph, rhetorical question, repeated imperative, named/source-specific reference, polemical claim and closing verse in the Batch-6 span is represented. Whole-work English is now complete at batch level, but it is **not yet `verified`**: the required final bilingual `TRANSLATION_REVIEW.md` remains the next gate."
+     }
+    ]
+   }
+  }
+ ],
+ "sectionCount": 3,
+ "bodyScans": {
+  "from": 4,
+  "to": 33
+ }
+}
