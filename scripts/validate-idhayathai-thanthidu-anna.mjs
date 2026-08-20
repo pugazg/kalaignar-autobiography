@@ -375,6 +375,36 @@ function typographicEvidenceFor(from, to) {
   check("reader gives an unresolved transition LESS space than a stanza break", reader.includes('flush("mb-2")') && reader.includes('flush("mb-7")'));
   check("reader only closes up a transition when the source establishes same-stanza", reader.includes('el.stanzaRelation === "same-stanza"'));
   check("reader keeps the hanging indent for visually wrapped lines", reader.includes("HANG_EM") && reader.includes("textIndent"));
+
+  // ── PRINT FIDELITY (independent review defect) ─────────────────────────────────────────────────
+  // An unresolved cross-page marker is PROVENANCE, not interactive chrome. If it were marked
+  // data-print="hide" the print stylesheet would delete it, and Print → Save as PDF would present
+  // the source lines on either side as silently continuous — asserting a continuation the source
+  // does not establish. These assertions lock that regression out.
+  {
+    const fn = reader.slice(reader.indexOf("function PageTransitionRule"), reader.indexOf("function inline("));
+    check("unresolved page-transition marker is NOT marked data-print=\"hide\"", !fn.includes('data-print="hide"'), "the marker would be deleted in print");
+    check("unresolved page-transition marker carries its print class", fn.includes("poem-page-transition"));
+    check("unresolved page-transition marker carries the source scan in its label", /source scan \$\{toScan\}/.test(fn) && /மூல ஸ்கேன் \$\{toScan\}/.test(fn));
+    // Interactive chrome must still be hidden in print — the exception is narrow.
+    check("interactive reader chrome is still marked data-print=\"hide\"", (reader.match(/data-print="hide"/g) || []).length >= 2);
+
+    const css = readText(path.join(process.cwd(), "app/globals.css"));
+    const printBlock = css.slice(css.indexOf("@media print {"));
+    check("print stylesheet keeps the unresolved marker displayed", /\.poem-page-transition\s*\{[^}]*display:\s*flex\s*!important/.test(printBlock));
+    check("print stylesheet re-draws the hairlines as borders (backgrounds are dropped by printers)", /\.poem-page-transition-rule\s*\{[^}]*border-top/.test(printBlock));
+    check("print-only note is shown in print", /\.poem-page-transition-print-note\s*\{[^}]*display:\s*inline\s*!important/.test(printBlock));
+    check("print-only note is hidden on screen", /\.poem-page-transition-print-note\s*\{[^}]*display:\s*none/.test(css.slice(0, css.indexOf("@media print {"))));
+    check("printed note explains that the stanza relation is unresolved (English)", fn.includes("· stanza relation unresolved"));
+    check("printed note has a Tamil equivalent", fn.includes("· அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை"));
+    check("printed note follows the reader language (a DOM node, not CSS content)", fn.includes("poem-page-transition-print-note") && !printBlock.includes("content: \" · stanza"));
+    // No print rule may hide the marker.
+    check(
+      "no print rule hides the unresolved marker",
+      !/\.poem-page-transition[^{]*\{[^}]*display:\s*none/.test(printBlock),
+      "a print rule sets display:none on the marker",
+    );
+  }
   const src = readText(path.join(process.cwd(), "components/PoemSource.tsx"));
   check("source page shows the per-transition audit table", src.includes("d.transitions.map"));
   check("source page separates textual continuity from stanza relationship", src.includes("Textual / rhetorical continuity") && src.includes("Typographic stanza relationship"));

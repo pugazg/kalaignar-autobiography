@@ -83,6 +83,12 @@ body {
    Tamil/English text, citations and headings. Serves students and offline use
    without a server-side PDF generator.
 ---------------------------------------------------------------------------- */
+/* The unresolved-transition note is printed only; on screen the marker stays terse and the
+   accessible name / hover title carry the explanation. */
+.poem-page-transition-print-note {
+  display: none;
+}
+
 @media print {
   /* hide interactive / navigational chrome that has no meaning on paper */
   nav, header, footer,
@@ -129,6 +135,29 @@ body {
 
   /* images shouldn't overflow the page */
   img, svg { max-width: 100% !important; height: auto !important; }
+
+  /* POETRY PROVENANCE ON PAPER.
+     An unresolved cross-page stanza relationship must survive Print → Save as PDF: if the marker
+     vanished, the source lines on either side would read as silently continuous, asserting a
+     continuation the source does not establish. This is a narrow, local exception to the print
+     chrome rules — the marker is provenance, not an interactive control. It stays restrained and
+     clearly weaker than a source-established stanza gap. */
+  .poem-page-transition {
+    display: flex !important;
+    color: #6b6b6b !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  /* Printers commonly drop background colours, so the hairlines are re-drawn as borders. */
+  .poem-page-transition-rule {
+    background: none !important;
+    border-top: 1px solid #cfcfcf !important;
+    height: 0 !important;
+  }
+  /* In print there is no hover title or accessible name to explain the marker, so the label says so. */
+  .poem-page-transition-print-note {
+    display: inline !important;
+  }
 
   /* a discreet source line on every printed page */
   @page {

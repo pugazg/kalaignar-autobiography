@@ -75,23 +75,39 @@ function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
 // A deliberately restrained marker for an UNRESOLVED cross-page stanza relationship. Its vertical
 // space is smaller than a stanza gap so it never reads as a stanza break, and it is visible so the
 // lines on either side are not silently presented as continuous. The poem stays visually primary.
+//
+// PRINT FIDELITY (independent review defect). This marker deliberately does NOT carry
+// `data-print="hide"`: that class is for interactive chrome, and the print stylesheet removes it
+// entirely. A marker for an UNRESOLVED relation is PROVENANCE, not chrome — dropping it from
+// Print → Save as PDF would leave the lines on either side silently continuous, which is exactly
+// the assertion the source does not support. The `poem-page-transition` class carries a small,
+// local print rule (see globals.css) so the marker survives on paper: its hairlines are re-drawn as
+// borders, because background-colour rules are commonly dropped by printers, and the label gains an
+// explicit "stanza relation unresolved" suffix in print, where no hover title or accessible name is
+// available to explain it.
 function PageTransitionRule({ toScan, ta }: { toScan: number; ta: boolean }) {
   const label = ta
     ? `மூலப் பக்க மாற்றம் — அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை`
     : `Source page transition — stanza relationship unresolved`;
   return (
     <div
-      className="mb-2 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/30 dark:text-night-text/30"
+      className="poem-page-transition mb-2 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/30 dark:text-night-text/30"
       role="separator"
       aria-label={label}
       title={label}
-      data-print="hide"
     >
-      <span className="h-px w-6 bg-ink/10 dark:bg-white/10" aria-hidden />
-      <span className="font-body normal-case tracking-normal" aria-hidden>
+      <span className="poem-page-transition-rule h-px w-6 bg-ink/10 dark:bg-white/10" aria-hidden />
+      <span className="poem-page-transition-label font-body normal-case tracking-normal" aria-hidden>
         {ta ? `மூல ஸ்கேன் ${toScan}` : `source scan ${toScan}`}
+        {/* Print-only suffix. On screen the marker stays terse (the accessible name and the hover
+            title carry the explanation); on paper neither is available, so the printed marker spells
+            the unresolved relation out. It is a real DOM node rather than CSS `content` so it
+            follows the reader's language and can be verified in the rendered output. */}
+        <span className="poem-page-transition-print-note">
+          {ta ? " · அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை" : " · stanza relation unresolved"}
+        </span>
       </span>
-      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+      <span className="poem-page-transition-rule h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
     </div>
   );
 }
