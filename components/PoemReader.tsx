@@ -1,0 +1,310 @@
+"use client";
+
+import { useEffect, useState, type ReactNode } from "react";
+import Link from "next/link";
+import { ArrowLeft, BookOpen, Calendar, Feather, Home, Info, Minus, Plus, Radio } from "lucide-react";
+import ShareButtons from "@/components/ShareButtons";
+import type { Poem, PoemElement, PoemLayer } from "@/data/poems";
+import { useLang } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
+import { useReaderProgress } from "@/lib/useReaderProgress";
+
+const LAST_KEY = "poems:last";
+const POS_PREFIX = "poems:pos:";
+
+// Source indentation (4 / 8 spaces) becomes a bounded left inset, in `em` so it scales with the
+// reader's font size. This preserves the source's stepped lineation WITHOUT putting the poem in a
+// <pre>: each line stays a normal flow element that can still wrap on a narrow screen.
+const INDENT_EM = 1.6;
+
+// A long source line WRAPS on a narrow viewport. Without help, that visual second row would look
+// exactly like a new poetic line — so continuation rows get a hanging indent: the line box is
+// pushed right by HANG_EM and the FIRST row is pulled back by the same amount, leaving the source
+// line starting on its own margin and every wrapped row visibly inset under it. The data model is
+// untouched: a wrapped line is still ONE PoemLine.
+const HANG_EM = 1.15;
+
+// Render the ordered element stream. Consecutive lines are grouped into an unlabelled verse run
+// (a plain <div>, never an <h*> and never announced as a "stanza"); boundaries render between runs.
+function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
+  const out: ReactNode[] = [];
+  let run: ReactNode[] = [];
+  let key = 0;
+  const flush = (gap: string) => {
+    if (run.length) {
+      out.push(
+        <div key={"r" + key++} className={gap}>
+          {run}
+        </div>,
+      );
+      run = [];
+    }
+  };
+  elements.forEach((el, i) => {
+    if (el.kind === "line") {
+      run.push(
+        <span key={"l" + i} className="block leading-[1.85] text-ink/90 dark:text-night-text/90" style={lineStyle(el.indent)}>
+          {inline(el.text)}
+        </span>,
+      );
+      return;
+    }
+    if (el.kind === "stanza-break") {
+      // Source-established: a blank line inside one printed page. A full stanza gap is warranted.
+      flush("mb-7");
+      return;
+    }
+    // A physical page transition. Only a source-ESTABLISHED same-stanza relation may close up
+    // without a marker; an established boundary gets the stanza gap; anything unresolved gets the
+    // neutral marker, which asserts neither.
+    if (el.stanzaRelation === "same-stanza") {
+      flush("");
+      return;
+    }
+    if (el.stanzaRelation === "stanza-boundary") {
+      flush("mb-7");
+      return;
+    }
+    flush("mb-2");
+    out.push(<PageTransitionRule key={"p" + i} toScan={el.toScan} ta={ta} />);
+  });
+  flush("");
+  return out;
+}
+
+// A deliberately restrained marker for an UNRESOLVED cross-page stanza relationship. Its vertical
+// space is smaller than a stanza gap so it never reads as a stanza break, and it is visible so the
+// lines on either side are not silently presented as continuous. The poem stays visually primary.
+//
+// PRINT FIDELITY (independent review defect). This marker deliberately does NOT carry
+// `data-print="hide"`: that class is for interactive chrome, and the print stylesheet removes it
+// entirely. A marker for an UNRESOLVED relation is PROVENANCE, not chrome — dropping it from
+// Print → Save as PDF would leave the lines on either side silently continuous, which is exactly
+// the assertion the source does not support. The `poem-page-transition` class carries a small,
+// local print rule (see globals.css) so the marker survives on paper: its hairlines are re-drawn as
+// borders, because background-colour rules are commonly dropped by printers, and the label gains an
+// explicit "stanza relation unresolved" suffix in print, where no hover title or accessible name is
+// available to explain it.
+function PageTransitionRule({ toScan, ta }: { toScan: number; ta: boolean }) {
+  const label = ta
+    ? `மூலப் பக்க மாற்றம் — அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை`
+    : `Source page transition — stanza relationship unresolved`;
+  return (
+    <div
+      className="poem-page-transition mb-2 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/30 dark:text-night-text/30"
+      role="separator"
+      aria-label={label}
+      title={label}
+    >
+      <span className="poem-page-transition-rule h-px w-6 bg-ink/10 dark:bg-white/10" aria-hidden />
+      <span className="poem-page-transition-label font-body normal-case tracking-normal" aria-hidden>
+        {ta ? `மூல ஸ்கேன் ${toScan}` : `source scan ${toScan}`}
+        {/* Print-only suffix. On screen the marker stays terse (the accessible name and the hover
+            title carry the explanation); on paper neither is available, so the printed marker spells
+            the unresolved relation out. It is a real DOM node rather than CSS `content` so it
+            follows the reader's language and can be verified in the rendered output. */}
+        <span className="poem-page-transition-print-note">
+          {ta ? " · அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை" : " · stanza relation unresolved"}
+        </span>
+      </span>
+      <span className="poem-page-transition-rule h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+    </div>
+  );
+}
+
+// The released English marks transliterated Tamil terms and cited titles with Markdown emphasis
+// (*Muttamil*, *purappāṭṭu*, *Kalingattu Parani* …) — release typography, not literal asterisks in
+// the poem. The DATA keeps every line verbatim, including the markers, so the validator's
+// reconstruction stays byte-exact; only the RENDERING resolves them to <em>, exactly as the speech
+// reader does. The Tamil layer carries no markup at all, so this is a no-op there.
+function inline(text: string): ReactNode {
+  if (!text.includes("*")) return text;
+  const nodes: ReactNode[] = [];
+  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let k = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    if (m[1] !== undefined) nodes.push(<strong key={k++} className="font-semibold">{m[1]}</strong>);
+    else nodes.push(<em key={k++}>{m[2]}</em>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
+function lineStyle(indent: number): React.CSSProperties {
+  const base = (indent / 4) * INDENT_EM;
+  return { paddingLeft: `${base + HANG_EM}em`, textIndent: `-${HANG_EM}em` };
+}
+
+export default function PoemReader({ slug }: { slug: string }) {
+  const { lang } = useLang();
+  const ta = lang === "ta";
+  const [poem, setPoem] = useState<Poem | null>(null);
+  const [error, setError] = useState(false);
+  const [font, setFont] = useState(1);
+  // Source-first: the verified Tamil is authoritative and is the default reading layer; the
+  // RELEASE-COMPLETE English translation is one toggle away.
+  const [showEn, setShowEn] = useState(false);
+
+  useEffect(() => {
+    setPoem(null);
+    setError(false);
+    fetch(`/data/poems/${slug}/poem.json`)
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d: Poem) => setPoem(d))
+      .catch(() => setError(true));
+  }, [slug]);
+
+  const { progress } = useReaderProgress({ id: slug, ready: !!poem, posPrefix: POS_PREFIX, lastKey: LAST_KEY });
+
+  const sizes = ["text-base", "text-lg", "text-xl"];
+  const layer: PoemLayer | null = poem ? (showEn ? poem.english : poem.tamil) : null;
+
+  return (
+    <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
+      <header className="sticky top-0 z-30 border-b border-ink/10 bg-paper/90 backdrop-blur dark:border-white/10 dark:bg-night/90">
+        <div className="mx-auto flex max-w-3xl items-center justify-between gap-2 px-4 py-2.5">
+          <div className="flex min-w-0 items-center gap-3">
+            <Link href="/read" className="focus-ring inline-flex items-center gap-1 rounded p-1.5 text-xs text-ink/60 hover:text-marina dark:text-night-text/60 dark:hover:text-marina-light" aria-label={ta ? "மின்னூலகம்" : "Library"}>
+              <ArrowLeft className="h-4 w-4" aria-hidden /> <span>{ta ? "கவிதைகள்" : "Poetry"}</span>
+            </Link>
+            <Link href="/" className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina dark:text-night-text/60" aria-label="Home">
+              <Home className="h-4 w-4" aria-hidden />
+            </Link>
+            {poem && (
+              <p className="truncate font-tamil text-xs text-ink/60 dark:text-night-text/60" lang="ta">
+                {poem.title.ta}
+                {progress > 0 && <span className="ml-2 tabular-nums text-marina dark:text-marina-light">{progress}%</span>}
+              </p>
+            )}
+          </div>
+          <div className="flex items-center gap-1">
+            <button onClick={() => setFont(Math.max(0, font - 1))} disabled={font === 0} className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina disabled:opacity-30 dark:text-night-text/60" aria-label={ta ? "எழுத்து சிறிதாக" : "Smaller text"}>
+              <Minus className="h-4 w-4" aria-hidden />
+            </button>
+            <button onClick={() => setFont(Math.min(2, font + 1))} disabled={font === 2} className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina disabled:opacity-30 dark:text-night-text/60" aria-label={ta ? "எழுத்து பெரிதாக" : "Larger text"}>
+              <Plus className="h-4 w-4" aria-hidden />
+            </button>
+          </div>
+        </div>
+        <div className="h-0.5 w-full bg-transparent" aria-hidden>
+          <div className="h-full bg-brass transition-[width] duration-300" style={{ width: `${progress}%` }} />
+        </div>
+      </header>
+
+      <article className="mx-auto max-w-2xl px-5 py-10 sm:px-6">
+        <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-brass">
+          <Feather className="h-3.5 w-3.5" aria-hidden /> {ta ? "கவிதை" : "Poem"}
+        </p>
+        <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
+          {poem?.title.ta ?? (ta ? "ஏற்றப்படுகிறது…" : "Loading…")}
+        </h1>
+        {poem && (
+          <>
+            <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{poem.title.en}</p>
+            <p className="mt-2 text-sm text-ink/60 dark:text-night-text/60" lang={lang}>
+              {ta ? poem.author.nameTa : poem.author.nameEn}
+            </p>
+
+            {/* SOURCE CONTEXT — what the note printed above the poem establishes. It is metadata:
+                not one word of it appears in the verse below. A publication/edition year is NOT
+                shown, because the controlling scan establishes none. */}
+            <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-ink/55 dark:text-night-text/55">
+              <span className="inline-flex items-center gap-1.5">
+                <Calendar className="h-3.5 w-3.5" aria-hidden />
+                <span lang={lang}>{ta ? "9.2.1969" : "9 February 1969"}</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <Radio className="h-3.5 w-3.5" aria-hidden />
+                <span lang={lang}>{ta ? poem.sourceContext.venue.ta : poem.sourceContext.venue.en}</span>
+              </span>
+              <span lang={lang}>{ta ? poem.sourceContext.occasion.ta : poem.sourceContext.occasion.en}</span>
+            </div>
+
+            <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
+              <ShareButtons title={`${poem.title.ta} · ${poem.title.en}`} path={`/poems/${slug}`} />
+              <div className="inline-flex overflow-hidden rounded-full border border-brass/50 text-xs font-medium">
+                <button onClick={() => setShowEn(false)} className={cn("focus-ring px-3 py-1 transition", !showEn ? "bg-brass text-paper" : "text-brass hover:bg-brass/10")} aria-pressed={!showEn} lang="ta">
+                  தமிழ்
+                </button>
+                <button onClick={() => setShowEn(true)} className={cn("focus-ring px-3 py-1 transition", showEn ? "bg-brass text-paper" : "text-brass hover:bg-brass/10")} aria-pressed={showEn}>
+                  English
+                </button>
+              </div>
+            </div>
+
+            <p className={cn("mt-4 rounded-xl border border-dashed px-4 py-2.5 text-xs leading-relaxed", showEn ? "border-brass/40 bg-brass/[0.06] text-ink/70 dark:text-night-text/70" : "border-ink/15 bg-ink/[0.02] text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60")} lang={lang}>
+              {showEn
+                ? ta
+                  ? "இது திட்டத்தால் உருவாக்கப்பட்ட, முழு மதிப்பீடு நிறைவுற்ற ஆங்கில மொழிபெயர்ப்பு — வரிகளும் வரி வரிசையும் வெளியிடப்பட்டபடியே. ஒரு பக்கத்திற்குள் உள்ள பத்தி இடைவெளிகள் தக்கவைக்கப்படுகின்றன; பக்க மாற்றத்தில் அச்சுப் பத்தித் தொடர்பு மூலத்தால் நிறுவப்படாததால் நடுநிலையாகக் காட்டப்படுகிறது. தமிழ் மூலமே சான்றுநிலை."
+                  : "The project-created, release-complete English translation — lines and line order exactly as released. Stanza gaps within a printed page are preserved; at a page transition the printed stanza relationship is not established by the source, so it is shown neutrally. The Tamil original remains authoritative."
+                : ta
+                  ? "கீழே அச்சிட்ட மூலத்தின்படி சரிபார்க்கப்பட்ட தமிழ்க் கவிதை — வரிகள், வரி வரிசை, இடைவெளியிடல், நிறுத்தக் குறிகள் அனைத்தும் மூலத்தின்படியே. ஒரு பக்கத்திற்குள் உள்ள பத்தி இடைவெளிகள் தக்கவைக்கப்படுகின்றன; பக்க மாற்றத்தில் அச்சுப் பத்தித் தொடர்பு தீர்மானிக்கப்படவில்லை."
+                  : "The verified Tamil poem, faithful to the printed source — lines, line order, indentation and punctuation exactly as the source has them. Stanza gaps within a printed page are preserved; across a page transition the printed stanza relationship is unresolved and is marked as such."}
+            </p>
+          </>
+        )}
+
+        {!poem && !error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "கவிதை ஏற்றப்படுகிறது…" : "Opening the poem…"}</p>}
+        {error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்தக் கவிதையை ஏற்ற முடியவில்லை." : "This poem could not be loaded."}</p>}
+
+        {/* THE POEM. Each source line is one display line; a long line WRAPS on a narrow viewport
+            (hanging indent, no horizontal scrolling) while remaining ONE logical source line.
+            Boundaries carry their own meaning:
+              * a source-established stanza break (a blank line inside one printed page) renders as
+                a full stanza gap;
+              * a PAGE TRANSITION whose printed stanza relation the source does not establish renders
+                as a NEUTRAL, restrained source-page marker: smaller than a stanza gap, so it does
+                not assert a new stanza, and visible, so it does not assert continuation either.
+            Runs are never labelled "stanza": where a run touches an unresolved page edge, the
+            printed stanza it belongs to is simply not established. */}
+        {poem && layer && (
+          <div
+            className={cn("mt-9", showEn ? "font-body" : "font-tamil", sizes[font])}
+            lang={showEn ? "en" : "ta"}
+            role="group"
+            aria-label={
+              ta
+                ? showEn
+                  ? "கவிதை — ஆங்கில மொழிபெயர்ப்பு"
+                  : "கவிதை — மூல தமிழ்"
+                : showEn
+                  ? "The poem, English translation"
+                  : "The poem, Tamil source"
+            }
+          >
+            {renderElements(layer.elements, ta)}
+          </div>
+        )}
+
+        {/* Provenance / source note. */}
+        {poem && (
+          <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
+            {ta
+              ? `${poem.author.nameTa} · ${poem.sourceContext.venue.ta}, 9.2.1969. அச்சிட்ட மூலத்துடன் ஒப்பிட்டு 14/14 கவிதைப் பக்கங்களும் சரிபார்க்கப்பட்டன. `
+              : `${poem.author.nameEn} · ${poem.sourceContext.venue.en}, 9 February 1969. All 14 poem scans verified against the printed source. `}
+            <Link href={`/poems/${slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-brass">
+              {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
+            </Link>
+          </p>
+        )}
+
+        {/* Cross-links. */}
+        <div className="mt-10 rounded-2xl border border-ink/10 bg-white/40 p-4 dark:border-white/10 dark:bg-night-surface/40" data-print="hide">
+          <p className="text-[11px] uppercase tracking-wider text-brass">{ta ? "கலைஞர் வேறிடங்களில்" : "Elsewhere Kalaignar writes"}</p>
+          <div className="mt-2 flex flex-wrap gap-2 text-sm">
+            <Link href="/read/nenjukku-neethi" className="focus-ring inline-flex items-center gap-1.5 rounded-full border border-ink/15 px-3 py-1 hover:border-brass/50 dark:border-white/15" lang={lang}>
+              <BookOpen className="h-3.5 w-3.5 text-brass" aria-hidden /> {ta ? "நெஞ்சுக்கு நீதி" : "Nenjukku Neethi"}
+            </Link>
+            <Link href="/read" className="focus-ring inline-flex items-center gap-1.5 rounded-full border border-ink/15 px-3 py-1 hover:border-brass/50 dark:border-white/15" lang={lang}>
+              <Info className="h-3.5 w-3.5 text-brass" aria-hidden /> {ta ? "மின்னூலகம்" : "The library"}
+            </Link>
+          </div>
+        </div>
+      </article>
+    </div>
+  );
+}

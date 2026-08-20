@@ -5,6 +5,7 @@ import type { MetadataRoute } from "next";
 import { chapterIndex } from "@/data/references";
 import type { MurasoliIndex, MurasoliLettersIndex } from "@/data/murasoli";
 import { SPEECH_SLUGS } from "@/data/speeches";
+import { POEM_SLUGS } from "@/data/poems";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -77,6 +78,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...SPEECH_SLUGS.flatMap((slug) => [
       { url: `${BASE}/speeches/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
       { url: `${BASE}/speeches/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ]),
+    // Poetry (Phase 4). Exactly the reader + provenance route per poem; no /poems collection
+    // landing is added in this benchmark.
+    ...POEM_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/poems/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
+      { url: `${BASE}/poems/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
     ]),
   ];
 }
