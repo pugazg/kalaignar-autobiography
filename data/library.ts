@@ -179,6 +179,10 @@ export interface LibraryWork {
 }
 
 // ── The catalog ──────────────────────────────────────────────────────────────
+// Phase 5 (Essays & Articles) onboards ONE publication — சக்கரவர்த்தியின் திருமகன், 14
+// source-numbered articles inside a single catalog work — opening the கட்டுரைகள் shelf with its own
+// `article` reader structure. It changes no existing entry.
+//
 // Phase 4 (Poetry) onboards ONE poem — இதயத்தைத் தந்திடு அண்ணா — onto the same
 // envelope with its own `poem` reader structure, opening the கவிதைகள் shelf. It
 // changes no existing entry.
@@ -456,6 +460,47 @@ export const LIBRARY_WORKS: LibraryWork[] = [
       note: "Nationalisation applies to Kalaignar's underlying Tamil poem; it does not extend to the project-created English translation, nor to third-party material in the booklet (the என்னுரை foreword, photographs and captions, the publisher/donor advertisement and back matter, the printer imprint, cover/design).",
     },
     provenanceHref: "/poems/idhayathai-thanthidu-anna/source",
+  },
+  {
+    // Digital Library Phase 5 — Essays & Articles. First benchmark, and the first work on the
+    // கட்டுரைகள் shelf. This is ONE catalog publication containing 14 source-numbered articles —
+    // never 14 catalog works. An article is ordinary prose, so it gets the `article` reader
+    // structure rather than the speech, poem or scene readers.
+    id: "sakkaravarththiyin-thirumagan",
+    slug: "sakkaravarththiyin-thirumagan",
+    titleTa: "சக்கரவர்த்தியின் திருமகன்",
+    titleEn: "Chakravarthi's Son",
+    shelf: "essays-articles",
+    subtype: "essay-collection",
+    readerStructure: "article",
+    href: "/essays/sakkaravarththiyin-thirumagan",
+    state: "published",
+    descTa: "‘கல்கி’ இதழ்த் தொடருக்கு முரசொலியில் எழுதிய 14 கட்டுரைகள்",
+    descEn: "14 articles answering the Kalki serial, written in Murasoli",
+    sourceRepo: "pugazg/kalaignar-essays",
+    sourcePath: "publications/sakkaravarththiyin-thirumagan",
+    sourceCommit: "bff35320b668cb5beeaafc5faa58260c4f4473f8",
+    // The CONTROLLING source integrated here is the 2018 reprint. The publication's own first
+    // edition (மே 1956, வேலூர் திராவிடன் பதிப்பகம்) is recorded too, but the edition field must not
+    // make the 2018 scan look like the 1956 physical edition.
+    edition: "மறு பதிப்பு 2018 — திராவிடர் கழக (இயக்க) வெளியீடு (முதற்பதிப்பு மே 1956, வேலூர் திராவிடன் பதிப்பகம்)",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // 14 articles NUMBERED IN THE PRINTED CONTENTS PAGE, with every boundary verified against its
+    // heading page — source-supported publication ordering, not archive-created navigation.
+    unitCount: { value: 14, labelTa: "கட்டுரைகள்", labelEn: "articles" },
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil articles; it does not extend to the project-created English translation, to publisher/edition matter, cover/design, advertisements or library marks, nor to the third-party texts quoted inside the articles.",
+    },
+    provenanceHref: "/essays/sakkaravarththiyin-thirumagan/source",
   },
 ];
 
