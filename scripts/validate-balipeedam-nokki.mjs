@@ -159,6 +159,68 @@ for (const f of fs.readdirSync(PAGES_DIR).filter((x) => /^\d{4}.*\.md$/.test(x))
   check("no section title is claimed as printed", novel.sections.every((s) => s.titleIsPrintedHeading === printed.has(nfc(s.titleTa))));
   check("the reader states a non-printed title is the archive's label", readText(path.join(process.cwd(), "components/NovelReader.tsx")).includes("!section.titleIsPrintedHeading"));
   check("the landing page states the titles are the archive's, not printed headings", /not chapters or printed headings/.test(readText(path.join(process.cwd(), "components/NovelLanding.tsx"))));
+
+  // The ENGLISH layer's typography is the translation's own editorial structure and is never
+  // promoted into a claim about what the 1947 edition prints. The printed set is Tamil-only, and
+  // the English layer may typeset a printed LINE as a heading (`Erimalai 'Release'`) where the
+  // authoritative Tamil layer keeps it as a paragraph — that is the translation's choice, carried
+  // as released, and it must not add to or subtract from the Tamil record.
+  check("the printed-heading record is derived from the Tamil layer only", prov.archiveDerived.printedHeadingsInSource.every((h) => !/[A-Za-z]/.test(h.text)));
+  const enHeads = novel.sections.flatMap((s) => s.english.blocks.filter((b) => b.kind === "heading").map((b) => b.text));
+  check("no English heading is recorded as a heading the edition prints", enHeads.every((t) => !printed.has(nfc(t))));
+  check("English headings carry their own page provenance", novel.sections.every((s) => s.english.blocks.filter((b) => b.kind === "heading").every((b) => b.sourcePages.length > 0)));
+  // Every heading the edition prints is present in the Tamil body; the English layer's extra
+  // headings are its own typesetting and add nothing to that record. (That the Tamil layer is
+  // otherwise complete and unaltered is proved by the exact reconstruction in section 4.)
+  const taHeads = novel.sections.flatMap((s) => s.tamil.blocks.filter((b) => b.kind === "heading").map((b) => nfc(b.text)));
+  eq("every printed heading survives in the Tamil body", [...printed.keys()].every((t) => taHeads.includes(t)), true);
+  check("English headings never outnumber Tamil ones by more than its own editorial additions", enHeads.length >= taHeads.length);
+  check("the English layer is the released translation, not an invented one", prov.english.kind === "project-created" && /VERIFIED/.test(prov.english.status));
+}
+
+// ── 3c. THE EMBEDDED SEQUENCE'S NAME, DERIVED FROM THE SOURCE ───────────────────────────────────
+// The canonical name is taken from the source, never asserted here: the printed title card on the
+// scan that carries it, cross-checked against the source's own English glossary, which fixes the
+// English rendering and records which alternative readings it rejects. If the archive ever revises
+// the name, these assertions fail until a re-import carries the revision through — and any form the
+// source does not print is rejected on the spot.
+{
+  // (a) The Tamil name as the audited page record prints it on the sequence's title card.
+  const scan8 = [...printed.entries()].filter(([, scans]) => scans.includes(8)).map(([t]) => nfc(t));
+  const nameTa = scan8.find((t) => t.startsWith("ராயசம் "));
+  check("the source prints the sequence's title card on scan 8", !!nameTa, `scan-8 headings: ${scan8.join(" | ")}`);
+  const bare = nameTa ? nameTa.replace(/^ராயசம்\s+/, "") : "";
+
+  // (b) The English rendering the source's own glossary mandates for that exact Tamil form.
+  const glossary = readText(path.join(WORK_DIR, "translations/en/GLOSSARY.md"));
+  const row = new RegExp(`^\\|\\s*\`${bare.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\`\\s*\\|\\s*\\*\\*(.+?)\\*\\*\\s*\\|\\s*(.*?)\\s*\\|\\s*$`, "m").exec(glossary);
+  check("the glossary fixes an English rendering for the printed Tamil name", !!row, `no glossary row for \`${bare}\``);
+  const nameEn = row ? row[1].trim() : "";
+  const glossNote = row ? row[2].trim() : "";
+
+  // (c) The generated data must use exactly those forms — and no other form of the name.
+  const embedded = novel.sections.find((s) => s.isEmbeddedSequence);
+  check("the embedded section is titled with the printed Tamil name", embedded?.titleTa.includes(nameTa || "\u0000"), embedded?.titleTa);
+  check("the embedded section's English title uses the glossary's mandated form", embedded?.titleEn.includes(nameEn || "\u0000"), embedded?.titleEn);
+  check("the section slug is the source's own filename stem", embedded?.slug === taFiles[1].replace(/^\d\d-/, "").replace(/\.md$/, ""), embedded?.slug);
+  check("the slug transliterates the glossary's English form", embedded?.slug.includes(nameEn.toLowerCase()), `${embedded?.slug} vs ${nameEn.toLowerCase()}`);
+
+  // (d) No variant of the name that the source does not print may appear anywhere in the release.
+  const released = nfc(JSON.stringify({ novel, prov }));
+  const variants = [...released.matchAll(/வெங்கண்ண[\u0BBE-\u0BCD]?/g)].map((m) => m[0]);
+  const stray = [...new Set(variants)].filter((v) => !nfc(v).startsWith(bare.slice(0, v.length)) || !bare.startsWith(v));
+  check("no variant spelling of the Tamil name appears in the released data", stray.length === 0, `unsupported form(s): ${stray.join(", ")}`);
+  const sourceText = [...taFiles.map((f) => readText(path.join(TA_DIR, f))), readText(path.join(WORK_DIR, "audit.md")), readText(path.join(WORK_DIR, "metadata/source.md"))].join("\n");
+  for (const v of new Set(variants)) {
+    check(`the form ${v} is one the source itself prints`, sourceText.includes(v), `${v} appears in the release but nowhere in the pinned source`);
+  }
+
+  // (e) Where the glossary records a rejected alternative reading, that reading must not be used.
+  const rejected = /do not change to\s+([A-Za-z\u0B80-\u0BFF]+)/.exec(glossNote);
+  if (rejected) {
+    check(`the glossary's rejected reading "${rejected[1]}" is not used in the release`, !new RegExp(rejected[1], "i").test(released), `the source marks ${rejected[1]} as wrong for \`${bare}\``);
+  }
+  eq("the source records the name's audited status", /Pages marked \`needs-review\` \| \*\*0\*\*/.test(readText(path.join(WORK_DIR, "audit.md"))), true);
 }
 
 // ── 4. BODY RECONSTRUCTION ───────────────────────────────────────────────────────────────────────
@@ -273,6 +335,20 @@ function releasedBlocks(text, english) {
   eq("the remaining documented join is the 12→13 quotation continuity", quotationOnly, [[12, 13]]);
   check("the 12→13 join cites the README, not an invented inline marker", prov.archiveDerived.joins.find((j) => j.fromScan === 12)?.evidence.includes("sections/README.md"));
   check("provenance states joins were established before assembly", prov.archiveDerived.joinNote.includes("never invents a join"));
+
+  // Evidence KIND, re-derived from the README's own wording: a continuity the audit established by
+  // reading must never be presented as a printed word split.
+  const fragmentEvidence = /`[^`]+`\s*\+\s*`[^`]+`/;
+  const readmeLines = Object.fromEntries([...readme.matchAll(/^-\s*scans\s*(\d+)\s*→\s*(\d+)\s*:(.*)$/gm)].map((m) => [`${m[1]}-${m[2]}`, m[3]]));
+  for (const j of prov.archiveDerived.joins) {
+    const expected = fragmentEvidence.test(readmeLines[`${j.fromScan}-${j.toScan}`] ?? "") ? "page-edge-fragments" : "narrative-continuity";
+    eq(`join ${j.fromScan}→${j.toScan} evidence kind`, j.evidenceKind, expected);
+  }
+  eq("exactly one join rests on narrative continuity", prov.archiveDerived.joins.filter((j) => j.evidenceKind === "narrative-continuity").map((j) => [j.fromScan, j.toScan]), [[12, 13]]);
+  check("every page-edge-fragment join is marked inline at the join point", prov.archiveDerived.joins.every((j) => j.evidenceKind !== "page-edge-fragments" || j.hasInlineMarker));
+  check("the narrative continuity carries no inline marker it does not have", prov.archiveDerived.joins.every((j) => j.evidenceKind !== "narrative-continuity" || !j.hasInlineMarker));
+  eq("inline-marked joins match the assembled layer", prov.archiveDerived.joins.filter((j) => j.hasInlineMarker).length, inlineJoins.length);
+  check("the provenance page labels the two evidence kinds apart", /never presented as printed paragraph structure/.test(readText(path.join(process.cwd(), "components/NovelSource.tsx"))));
 }
 
 // ── 7. TRANSLATOR APPARATUS SEPARATED ────────────────────────────────────────────────────────────

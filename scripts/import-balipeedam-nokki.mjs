@@ -347,6 +347,21 @@ for (const j of [...allJoins, ...readmeJoins]) {
   } else joins.push(j);
 }
 joins.sort((a, b) => a.fromScan - b.fromScan);
+// Classify each join by the KIND of evidence the audit recorded, so a semantic continuity is never
+// displayed as though it were a typographic one. Where the audit records the exact fragments printed
+// at the two page edges (`X` + `Y`), the continuity is visible in the type itself. Where it records
+// only that the sense runs on — the scans 12→13 dying-speech quotation, which no printed fragment
+// splits — it is a narrative continuity the audit established by reading, not by typography.
+const FRAGMENT_EVIDENCE = /`[^`]+`\s*\+\s*`[^`]+`/;
+for (const j of joins) {
+  j.evidenceKind = FRAGMENT_EVIDENCE.test(j.evidence) ? "page-edge-fragments" : "narrative-continuity";
+  j.hasInlineMarker = allJoins.some((x) => x.fromScan === j.fromScan && x.toScan === j.toScan);
+  // A join with no printed fragments and no inline marker rests wholly on the audit's reading; that
+  // is legitimate evidence, but it must be labelled as such rather than shown as a word split.
+  if (j.evidenceKind === "page-edge-fragments" && !j.hasInlineMarker) {
+    throw new Error(`join ${j.fromScan}→${j.toScan} shows page-edge fragments but carries no inline marker at the join point`);
+  }
+}
 // Every join the README documents must be represented.
 for (const r of readmeJoins) {
   if (!joins.some((x) => x.fromScan === r.fromScan && x.toScan === r.toScan)) {

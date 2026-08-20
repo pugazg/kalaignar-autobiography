@@ -90,37 +90,51 @@
    {
     "fromScan": 5,
     "toScan": 6,
-    "evidence": "scan 5 ends `அணுக்`; scan 6 begins `களிலிருந்து` | sections/README.md: `அணுக்` + `களிலிருந்து` → `அணுக்களிலிருந்து`"
+    "evidence": "scan 5 ends `அணுக்`; scan 6 begins `களிலிருந்து` | sections/README.md: `அணுக்` + `களிலிருந்து` → `அணுக்களிலிருந்து`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
    },
    {
     "fromScan": 6,
     "toScan": 7,
-    "evidence": "scan 6 ends `உதிர`; scan 7 begins `ஆறுகளைப் பாருங்கள்.` | sections/README.md: `உதிர` + `ஆறுகளைப் பாருங்கள்`"
+    "evidence": "scan 6 ends `உதிர`; scan 7 begins `ஆறுகளைப் பாருங்கள்.` | sections/README.md: `உதிர` + `ஆறுகளைப் பாருங்கள்`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
    },
    {
     "fromScan": 12,
     "toScan": 13,
-    "evidence": "sections/README.md: Vijay Raghava's open quotation continues without invented closure"
+    "evidence": "sections/README.md: Vijay Raghava's open quotation continues without invented closure",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": false
    },
    {
     "fromScan": 19,
     "toScan": 20,
-    "evidence": "scan 19 ends `பாது`; scan 20 begins `காத்துக்கொள்’` | sections/README.md: `பாது` + `காத்துக்கொள்` → `பாதுகாத்துக்கொள்`"
+    "evidence": "scan 19 ends `பாது`; scan 20 begins `காத்துக்கொள்’` | sections/README.md: `பாது` + `காத்துக்கொள்` → `பாதுகாத்துக்கொள்`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
    },
    {
     "fromScan": 21,
     "toScan": 22,
-    "evidence": "scan 21 ends `என்று`; scan 22 begins `கூறியபடி` | sections/README.md: `என்று` + `கூறியபடி`"
+    "evidence": "scan 21 ends `என்று`; scan 22 begins `கூறியபடி` | sections/README.md: `என்று` + `கூறியபடி`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
    },
    {
     "fromScan": 29,
     "toScan": 30,
-    "evidence": "scan 29 ends `அப்படித்`; scan 30 begins `தத்தளிக்கிறான்...` | sections/README.md: `அப்படித்` + `தத்தளிக்கிறான்...`"
+    "evidence": "scan 29 ends `அப்படித்`; scan 30 begins `தத்தளிக்கிறான்...` | sections/README.md: `அப்படித்` + `தத்தளிக்கிறான்...`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
    },
    {
     "fromScan": 30,
     "toScan": 31,
-    "evidence": "scan 30 ends `கைகூப்புவதை`; scan 31 begins `யும்` | sections/README.md: `கைகூப்புவதை` + `யும்` → `கைகூப்புவதையும்`"
+    "evidence": "scan 30 ends `கைகூப்புவதை`; scan 31 begins `யும்` | sections/README.md: `கைகூப்புவதை` + `யும்` → `கைகூப்புவதையும்`",
+    "evidenceKind": "page-edge-fragments",
+    "hasInlineMarker": true
    }
   ],
   "embeddedSequenceSections": 1,

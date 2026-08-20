@@ -57,6 +57,15 @@ export type NovelSourceJoin = {
   toScan: number;
   /** Verbatim comment text from the assembled layer. */
   evidence: string;
+  /**
+   * How the source audit established the continuity. `page-edge-fragments` — the audit recorded the
+   * exact fragments printed at the two page edges, so the join is visible in the type itself.
+   * `narrative-continuity` — the audit established it by reading (the scans 12→13 dying-speech
+   * quotation), with no printed fragment split. The two are never presented as the same evidence.
+   */
+  evidenceKind: "page-edge-fragments" | "narrative-continuity";
+  /** Whether the assembled layer also marks the join inline at the exact join point. */
+  hasInlineMarker: boolean;
 };
 
 export type NovelBilingualText = { ta: string; en: string };

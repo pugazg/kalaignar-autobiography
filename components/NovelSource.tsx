@@ -141,12 +141,18 @@ export default function NovelSource({ slug, prov }: { slug: string; prov: NovelP
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
             {d.joinNote}
           </p>
+          <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang={ta ? "ta" : "en"}>
+            {ta
+              ? "இரு வகைச் சான்றுகள் வேறுபடுத்தப்படுகின்றன: பக்க விளிம்பில் அச்சான துண்டுகள் சேரும் இணைப்புகள் அச்சிலேயே தெரிபவை; பொருள் தொடர்ச்சி என்பது தணிக்கை வாசிப்பால் நிறுவியது — அச்சுப் பிரிவு அல்ல. பொருள் தொடர்ச்சி எப்போதும் அச்சுக் கட்டமைப்பாகக் காட்டப்படுவதில்லை."
+              : "The two kinds of evidence are kept apart. A join backed by page-edge fragments is visible in the printed type itself. A narrative continuity is one the audit established by reading — the scans 12→13 dying-speech quotation, which no printed fragment splits — and is never presented as printed paragraph structure."}
+          </p>
           <div className="mt-3 overflow-x-auto">
             <table className="w-full min-w-[26rem] border-collapse text-left text-xs">
               <caption className="sr-only">{ta ? "மூலத் தணிக்கை நிறுவிய பக்க இணைப்புகள்" : "Cross-page joins established by the source audit"}</caption>
               <thead>
                 <tr className="border-b border-ink/10 text-[10px] uppercase tracking-wider text-ink/45 dark:border-white/10 dark:text-night-text/45">
                   <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "இணைப்பு" : "Join"}</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "சான்று வகை" : "Evidence"}</th>
                   <th scope="col" className="py-1.5 font-medium">{ta ? "மூலச் சான்று" : "Source evidence"}</th>
                 </tr>
               </thead>
@@ -154,6 +160,13 @@ export default function NovelSource({ slug, prov }: { slug: string; prov: NovelP
                 {d.joins.map((j) => (
                   <tr key={`${j.fromScan}-${j.toScan}`} className="border-b border-ink/5 align-top dark:border-white/5">
                     <td className="py-1.5 pr-3 tabular-nums text-ink/80 dark:text-night-text/80">{j.fromScan} → {j.toScan}</td>
+                    {/* A continuity the audit established by READING is never shown as though the
+                        page edges split a word. The two kinds of evidence are labelled apart. */}
+                    <td className="py-1.5 pr-3 text-ink/60 dark:text-night-text/60">
+                      {j.evidenceKind === "page-edge-fragments"
+                        ? ta ? "பக்க விளிம்புத் துண்டுகள்" : "page-edge fragments"
+                        : ta ? "பொருள் தொடர்ச்சி" : "narrative continuity"}
+                    </td>
                     <td className="py-1.5 text-ink/60 dark:text-night-text/60">{j.evidence}</td>
                   </tr>
                 ))}
