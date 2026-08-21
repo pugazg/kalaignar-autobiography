@@ -72,11 +72,15 @@ export default function DailyKural() {
         ))}
       </blockquote>
 
-      {/* VOICE 2 — கலைஞர். Its own labelled region, visibly a different voice. */}
+      {/* VOICE 2 — கலைஞர். Its own labelled region, visibly a different voice.
+          h3, not h2: the உரை is part of this panel, not a section of the Reading Room. As an h2 it
+          would sit in the page outline as a peer of the shelves — as though the library had a
+          "கலைஞர் உரை" shelf — and a screen-reader user moving by heading would leave the panel
+          without being told they had. The visual size is unchanged; only the level moves. */}
       <section aria-label="கலைஞர் உரை" className="mt-8 border-t border-ink/8 pt-6 dark:border-white/8">
-        <h2 className="font-tamil text-sm font-semibold tracking-wide text-marina dark:text-marina-light" lang="ta">
+        <h3 className="font-tamil text-sm font-semibold tracking-wide text-marina dark:text-marina-light" lang="ta">
           கலைஞர் உரை
-        </h2>
+        </h3>
         <p lang="ta" className="mt-3 font-tamil text-base leading-[1.95] text-ink/85 dark:text-night-text/85">
           {entry.kalaignarUrai}
         </p>
