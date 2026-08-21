@@ -1,0 +1,166 @@
+name: Library CI
+
+# Quality gates for the Digital Library web application.
+#
+# Until now every gate — typecheck, build, and the eight per-work validators — was run by hand.
+# Vercel builds the site, but nothing checked types or verified that the released archival data
+# still matches its pinned sources. This workflow automates exactly those existing gates. It adds
+# no new checks and changes no validator behaviour.
+#
+# Deliberately NOT in this workflow (Phase 8C-1 scope):
+#   * importer re-run / determinism checks — that needs source-checkout orchestration and its own
+#     review, so it is intentionally deferred rather than half-built here;
+#   * anything touching readers, provenance components, generated data or source repositories.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "components/**"
+      - "data/**"
+      - "lib/**"
+      - "public/data/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - ".github/workflows/library-ci.yml"
+  pull_request:
+    paths:
+      - "app/**"
+      - "components/**"
+      - "data/**"
+      - "lib/**"
+      - "public/data/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - ".github/workflows/library-ci.yml"
+
+jobs:
+  build:
+    name: typecheck • build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: TypeScript
+        run: npm run typecheck
+      - name: Build
+        run: npm run build
+
+  validate:
+    # Source-integrity gate. Each published work has a validator that derives its expectations from
+    # the SOURCE ARCHIVE at the exact commit the released data is pinned to — so this job proves the
+    # data in this repository still matches the archive it claims to come from.
+    name: archival validators
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+
+      # ── The source dependency model ───────────────────────────────────────────────────────────
+      # Every validator takes the path to a clone of its source repository as argv[2], and refuses
+      # to run unless that clone is checked out at the commit recorded in the work's own
+      # provenance.json. Pins are therefore READ FROM THE RELEASED DATA here, never hardcoded in
+      # this workflow — if a pin moves, this step follows it automatically.
+      #
+      # Two of those pins are NOT branch tips (Manohara's `4b5f3238` most notably, because the
+      # cinema repository has since moved on). A plain `git clone` would not contain them, so each
+      # repository is fetched BY SHA. If a source repository or a pinned commit cannot be obtained,
+      # this step FAILS LOUDLY naming the repo and pin — validation is never silently skipped.
+      - name: Fetch source archives at their pinned commits
+        env:
+          KDL_SOURCES_DIR: ${{ runner.temp }}/sources
+        run: |
+          set -euo pipefail
+          mkdir -p "$KDL_SOURCES_DIR"
+          pins=$(node -e '
+            const fs = require("fs");
+            const works = {
+              "cinema/manohara": "kalaignar-cinema-works",
+              "speeches/udhaya-kathir": "kalaignar-assembly-speeches",
+              "speeches/poonthottam": "kalaignar-public-speeches",
+              "speeches/arappor": "kalaignar-public-speeches",
+              "poems/idhayathai-thanthidu-anna": "kalaignar-poems",
+              "essays/sakkaravarththiyin-thirumagan": "kalaignar-essays",
+              "novels/balipeedam-nokki": "kalaignar-novels",
+              "plays/silappathikaram-nataka-kappiyam": "kalaignar-stage-plays",
+            };
+            const seen = new Map();
+            for (const [p, repo] of Object.entries(works)) {
+              const f = `public/data/${p}/provenance.json`;
+              const pin = JSON.parse(fs.readFileSync(f, "utf8")).sourceCommit;
+              if (!/^[0-9a-f]{40}$/.test(pin ?? "")) {
+                console.error(`::error::${f} does not record a valid sourceCommit`);
+                process.exit(1);
+              }
+              const prev = seen.get(repo);
+              if (prev && prev !== pin) {
+                console.error(`::error::${repo} is pinned to two different commits (${prev} and ${pin})`);
+                process.exit(1);
+              }
+              seen.set(repo, pin);
+            }
+            for (const [repo, pin] of seen) console.log(`${repo} ${pin}`);
+          ')
+          echo "$pins" | while read -r repo pin; do
+            echo "::group::$repo @ $pin"
+            dest="$KDL_SOURCES_DIR/$repo"
+            git init -q "$dest"
+            git -C "$dest" remote add origin "https://github.com/pugazg/$repo.git"
+            # Fetch BY SHA: several pins are historical and are not any branch tip.
+            if ! git -C "$dest" fetch -q --depth 1 origin "$pin"; then
+              echo "::error::Could not fetch $repo at pinned commit $pin — validation cannot proceed."
+              echo "The validator for this work will NOT be skipped; this job fails instead."
+              exit 1
+            fi
+            git -C "$dest" checkout -q FETCH_HEAD
+            echo "checked out $(git -C "$dest" rev-parse HEAD)"
+            echo "::endgroup::"
+          done
+
+      # One step per work, so a failure names the work in the Actions UI without reading logs.
+      - name: Manohara
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-manohara.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works"
+      - name: Udhaya Kathir
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-udhaya-kathir.mjs "$KDL_SOURCES_DIR/kalaignar-assembly-speeches"
+      - name: Poonthottam
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-poonthottam.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches"
+      - name: Arappor
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-arappor.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches"
+      - name: Idhayathai Thanthidu Anna
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-idhayathai-thanthidu-anna.mjs "$KDL_SOURCES_DIR/kalaignar-poems"
+      - name: Sakkaravarththiyin Thirumagan
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-sakkaravarththiyin-thirumagan.mjs "$KDL_SOURCES_DIR/kalaignar-essays"
+      - name: Balipeedam Nokki
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-balipeedam-nokki.mjs "$KDL_SOURCES_DIR/kalaignar-novels"
+      - name: Silappathikaram Nataka Kappiyam
+        if: ${{ !cancelled() }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-silappathikaram.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays"
