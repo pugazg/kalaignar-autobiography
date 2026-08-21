@@ -195,3 +195,11 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-thirukkural.mjs "$KDL_SOURCES_DIR/kalaignar-literary-commentary"
+
+      # Proves the migrated validators still obey docs/VALIDATOR_CONTRACT.md — that corrupted data
+      # exits 1 naming the difference, and an unusable source exits 2. Runs last, after the sources
+      # are already on disk, and mutates only disposable copies.
+      - name: Validator contract
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/test-validator-contract.mjs "$KDL_SOURCES_DIR"

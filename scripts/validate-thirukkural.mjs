@@ -2,7 +2,22 @@
 //
 //   node scripts/validate-thirukkural.mjs <kalaignar-literary-commentary-clone> [--data <dir>]
 //
-// Exit codes:  0 all assertions passed · 1 data validation failure · 2 configuration/source/pin failure
+// EXIT CODES — the contract in docs/VALIDATOR_CONTRACT.md:
+//
+//   0  every assertion passed; the released data matches the archive.
+//   1  DATA INTEGRITY FAILURE. The archive and the released data disagree, and someone must look
+//      at the text.
+//   2  COULD NOT RUN. No argument, missing or unreadable source clone, a clone at the wrong
+//      commit, missing or unparseable released data, or an upstream identity level below the one
+//      the work was released under.
+//
+// The 1/2 distinction is load-bearing. Exit 1 says the library's content is wrong; exit 2 says
+// nothing was learned either way. A run that could not fetch its source must never be mistaken for
+// a run that found nothing wrong — absence of validation is not evidence of validity.
+//
+// This validator is the reference implementation for that contract. Its four paths are proven by
+// scripts/test-validator-contract.mjs, which corrupts disposable COPIES and never writes to the
+// source archive.
 //
 // This file shares NO code with scripts/import-thirukkural.mjs. It re-parses the archive from
 // scratch and re-derives every expectation from the source, so that a defect in the importer

@@ -29,3 +29,7 @@ pipeline/03_corrected_v4_1/
 pipeline/reference_verified_source_dictionary/
 vol*.pdf
 *.orig.json
+
+# Source archive clones. `npm run validate` and the contract tests default to this path
+# (KDL_SOURCES_DIR); the archives are read-only upstream repositories and are never committed here.
+/.sources/
