@@ -1,0 +1,88 @@
+{
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/silappathikaram-nataka-kappiyam",
+ "sourceCommit": "a66e62bbecaf63825b3db09a1d421401e1ab2e8e",
+ "source": {
+  "scanFilename": "TVA_BOK_0016473_சிலப்பதிகாரம்_நாடகக்_காப்பியம்.pdf",
+  "scanSha256": "2886c8eaa9d79239eba3e9ed0ddefc4c7208da4761384ee7a8b4176e6b1a24dd",
+  "scanFileSizeBytes": 49459844,
+  "scanTotalPages": 88,
+  "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE. The controlling PDF is deliberately held outside both repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here. It is the archive's recorded identity, matched against the archive's own metadata — not a verification performed by this repository.",
+  "pageRecordsVerified": "88 / 88 scans verified at page-record level",
+  "sourceAudit": "Tamil transcription completion audit: PASSED",
+  "assembledLayer": "38 numbered scenes + closing tableau assembly-reviewed, visual text fidelity PASSED; global Tamil consistency review PASSED",
+  "bodyScans": "17–88",
+  "publicationYearNote": "NO publication year is printed anywhere in this scan. The edition's own foreword and introductory dates are internal dates and are NOT promoted to a publication year. The catalog therefore carries no year for this work rather than an inferred one.",
+  "twoColumnNote": "The edition is set in TWO COLUMNS. A speech begun at the foot of the left column continues at the head of the right column, and the source does not reprint the speaker label there. Those continuations are carried with `speakerAsPrinted: null` — the honest record that the edition prints no label at that point. They are never attributed to the preceding speaker and never reclassified as stage directions.",
+  "closingTableauNote": "`கண்ணகி சிலை நாட்டு விழா` is printed after காட்சி-38 and after three centred stars, WITHOUT a scene number. It is a separate closing tableau and is NOT Scene 39. It is never numbered, never counted among the 38 scenes and never merged into Scene 38. The importer refuses to run if a Scene 39 ever appears."
+ },
+ "english": {
+  "kind": "project-created",
+  "status": "38/38 numbered scenes + closing tableau translation-reviewed / PASS; final consistency review PASS; release READY",
+  "independence": "The reader's English is the project-created independent translation, drafted and reviewed WITHOUT any published English edition.",
+  "secondaryWitnessNote": "A 2009 published English edition (Macmillan / Bharathiar University, 'Tale of the Anklet and One Act Plays') exists in the source repository as a separately archived analytical witness. It is EVIDENCE ONLY. It was never used to draft or review this translation, is never imported here, and no part of it is published as reader content. The archive's post-release comparison across all 39 units imported 0 changes.",
+  "notesSeparated": "The English layer's translation notes and its 'Dravidian movement resonance' interpretive notes are carried OUTSIDE the reading body in a separately labelled area. The source itself calls the latter 'interpretive context, not translated source text', so it renders as neither Kalaignar's words nor part of the translation."
+ },
+ "archiveDerived": {
+  "scenes": 38,
+  "closingTableau": 1,
+  "tamilUnits": 1198,
+  "englishUnits": 1211,
+  "tamilDialogue": 903,
+  "tamilStageDirections": 285,
+  "tamilVerse": 7,
+  "ornaments": 6,
+  "distinctSpeakerLabels": 89,
+  "unlabelledDialogueUnits": 154,
+  "scenesWithoutPrintedSetting": 3,
+  "multiScanScenes": 20,
+  "printedPageNumbersPresent": 41,
+  "printedPageNumbersAbsent": 47,
+  "translationNotes": 39,
+  "interpretiveNotes": 39,
+  "obstructionMarkers": 4,
+  "note": "Derived structure only. The 88 audited page records remain the controlling archival text; this integration reads the archive's own assembled scene layer, which was built from those records and passed visual-text fidelity review. Dialogue, stage directions and speaker labels are carried verbatim — never re-split, merged, expanded or normalised.",
+  "speakerNote": "Speaker labels are rendered EXACTLY as printed. The edition abbreviates the same character inconsistently (`செங்குட்டுவன்` / `செங்குட்டு` / `செங்கு`; `கோவலன்` / `கோவ`). Those variations are source data, not errors, and are never expanded or unified.",
+  "unlabelledNote": "Dialogue units with `speakerAsPrinted: null` are places where the edition prints no label — overwhelmingly a speech resuming after the two-column break or after an interposed stage direction. Absence of a label is recorded as absence, never resolved into an attribution."
+ },
+ "unresolved": [
+  {
+   "marker": "⟦later library stamp obscures leading letters⟧",
+   "scan": 88,
+   "description": "A later circular library/accession stamp carrying handwritten 164596 physically covers the leading characters of two printed lines in the closing tableau. Non-destructive enlarged inspection could not securely recover them.",
+   "policy": "The covered characters are NOT reconstructed — not from context, not from another edition, not from the published English translation. The marker is carried verbatim in BOTH the Tamil and the English reading text, is visible on screen, and is never hidden from print or PDF export."
+  }
+ ],
+ "lockedExclusions": [
+  "the assembled layer's archival apparatus — assembly notes, source visual / caption / pagination layers, and visual-text fidelity reviews",
+  "the English layer's translation notes and 'Dravidian movement resonance' interpretive notes, which are held outside the reading body",
+  "the per-scene English review files and the whole published-witness comparison record",
+  "the 2009 published English edition itself, which is analytical evidence and is never read, imported or published as reader content",
+  "later library/accession stamps, handwritten shelf marks, damage and bleed-through, which are copy-specific and never merged into the literary text",
+  "decorative heading artwork, illustrations and photographs, which are described in page records rather than converted into dramatic text"
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying stage play. The edition's own publisher, place, price and copyright lines are edition facts, not statements about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored play. It does NOT extend to the edition's publisher/imprint matter (அஞ்சுகம் வெளியீடு), the printed price line, the decorative artwork, illustrations and photographs, or the library's stamps and accession marks — each retains its own distinct provenance.",
+  "publishedWitnessNote": "The 2009 Macmillan / Bharathiar University English edition is a THIRD PARTY's separately copyrighted translation. It is not covered by this nationalisation, is not published here in any form, and is recorded only as analytical evidence held in the source archive.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked independent translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "archivalStatusNote": "The source repository's completion/release status is an editorial and archival judgement about transcription and translation completeness. It is NOT, by itself, a copyright, public-domain or republication-rights determination.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "This is ONE stage play in THIRTY-EIGHT numbered scenes PLUS a separate unnumbered closing tableau. The catalog reports 38 scenes; the tableau is carried and displayed separately and is never counted as a 39th scene.",
+  "NO publication year is printed in this edition, so none is recorded. Internal foreword dates are not promoted to a publication year.",
+  "Printed page numbers are carried only where a page record shows one: 41 of the 88 scans print a folio and 47 do not.",
+  "Speaker labels, stage-direction delimiters, repetitions, ellipsis counts, punctuation and historical spelling are carried exactly as printed. Nothing is modernised, expanded or normalised."
+ ]
+}

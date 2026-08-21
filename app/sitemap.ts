@@ -8,6 +8,7 @@ import { SPEECH_SLUGS } from "@/data/speeches";
 import { POEM_SLUGS } from "@/data/poems";
 import { ESSAY_SLUGS } from "@/data/essays";
 import { NOVEL_SLUGS } from "@/data/novels";
+import { PLAY_SLUGS } from "@/data/plays";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -46,6 +47,17 @@ function loadNovelSectionSlugs(slug: string): string[] {
     const p = path.join(process.cwd(), "public/data/novels", slug, "novel.json");
     const n = JSON.parse(fs.readFileSync(p, "utf-8")) as { sections: { slug: string }[] };
     return n.sections.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
+/** Scene slugs come from the generated play data, so the sitemap can never drift from the routes. */
+function loadPlaySceneSlugs(slug: string): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/plays", slug, "play.json");
+    const play = JSON.parse(fs.readFileSync(p, "utf8")) as { scenes: { slug: string }[] };
+    return play.scenes.map((s) => s.slug);
   } catch {
     return [];
   }
@@ -126,6 +138,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${BASE}/novels/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
       ...loadNovelSectionSlugs(slug).map((x) => ({
         url: `${BASE}/novels/${slug}/${x}`,
+        lastModified: now,
+        changeFrequency: "yearly" as const,
+        priority: 0.5,
+      })),
+    ]),
+    // Drama. The play landing, its provenance page and one stable route per printed scene, plus the
+    // separate unnumbered closing tableau. No /plays or /drama collection landing is added.
+    ...PLAY_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/plays/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.7 },
+      { url: `${BASE}/plays/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+      ...loadPlaySceneSlugs(slug).map((x) => ({
+        url: `${BASE}/plays/${slug}/${x}`,
         lastModified: now,
         changeFrequency: "yearly" as const,
         priority: 0.5,
