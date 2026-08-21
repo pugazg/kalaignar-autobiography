@@ -68,7 +68,12 @@ export type ReaderStructure =
   // Drama — a printed STAGE PLAY: numbered scenes of dialogue, speaker labels and stage directions,
   // plus any separately printed unnumbered tableau. Deliberately distinct from "scene", which is the
   // cinema screenplay-dialogue model used by Manohara.
-  | "stage-play";
+  | "stage-play"
+  // Classical commentary — a fixed four-level hierarchy (பால் → இயல் → அதிகாரம் → குறள்) in which
+  // each unit pairs a poet's couplet with a separate commentator's prose on it. Deliberately
+  // distinct from "commentary-unit", whose units are free-standing prose without that hierarchy and
+  // without a second authorial voice to keep apart.
+  | "kural-commentary";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
 // merely "every unit currently vendored happens to have this language". A work whose

@@ -1,5 +1,7 @@
 "use client";
 
+import type { ReactNode } from "react";
+
 import { BookOpen, BookText, Clapperboard, Feather, Flower2, Home, Mail, Mic, Newspaper, Theater } from "lucide-react";
 import Link from "next/link";
 import { visibleShelves, type ShelfId } from "@/data/library";
@@ -39,7 +41,13 @@ const accentFor = (shelf: ShelfId) =>
         title: "group-hover:text-marina dark:group-hover:text-marina-light",
       };
 
-export default function LibraryHome() {
+/**
+ * `dailyKural` arrives as a rendered server component from app/read/page.tsx. It is a prop rather
+ * than an import because this file is a client component and the panel must resolve its date on
+ * the server. It sits at the top of <main>, immediately after the banner — deliberately NOT inside
+ * the <header>, which the print stylesheet deletes outright.
+ */
+export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const shelves = visibleShelves();
@@ -67,6 +75,8 @@ export default function LibraryHome() {
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-10 sm:px-6">
+        {dailyKural}
+
         {shelves.map(({ shelf, works }) => (
           <section key={shelf.id} aria-labelledby={`shelf-${shelf.id}`} className="mb-10">
             <h2

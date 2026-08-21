@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "validate": "node scripts/validate-manohara.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-cinema-works\" && node scripts/validate-udhaya-kathir.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-assembly-speeches\" && node scripts/validate-poonthottam.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-public-speeches\" && node scripts/validate-arappor.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-public-speeches\" && node scripts/validate-idhayathai-thanthidu-anna.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-poems\" && node scripts/validate-sakkaravarththiyin-thirumagan.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-essays\" && node scripts/validate-balipeedam-nokki.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-novels\" && node scripts/validate-silappathikaram.mjs \"${KDL_SOURCES_DIR:-.sources}/kalaignar-stage-plays\"",
+    "test:daily-kural": "tsx scripts/test-daily-kural.ts",
     "build:features": "tsx pipeline/builders/export-feature-data.ts",
     "build:app-data": "npm run build:features && python3 pipeline/builders/build_app_manifest.py"
   },

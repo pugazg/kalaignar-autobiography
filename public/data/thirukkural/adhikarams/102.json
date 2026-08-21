@@ -1,0 +1,356 @@
+{
+ "number": 102,
+ "tamil": "நாணுடைமை",
+ "from": 1011,
+ "to": 1020,
+ "paal": {
+  "index": 2,
+  "tamil": "பொருட்பால்"
+ },
+ "iyal": {
+  "index": 7,
+  "tamil": "குடியியல்"
+ },
+ "kurals": [
+  {
+   "number": 1011,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "கருமத்தால் நாணுதல் நாணுத் திருநுதல்",
+    "நல்லவர் நாணுப் பிற."
+   ],
+   "kalaignarUrai": "ஒருவர் தமது தகாத நடத்தையின் காரணமாக நாணுவதற்கும், நல்ல பெண்களுக்கு இயல்பாக ஏற்படும் நாணத்துக்கும் மிகுந்த வேறுபாடு உண்டு.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 238,
+    "printedPage": "205",
+    "pageType": "commentary",
+    "record": "0238-porul-naanudaimai-01.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1012,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "ஊணுடை எச்சம் உயிர்க்கெல்லாம் வேறல்ல",
+    "நாணுடைமை மாந்தர் சிறப்பு."
+   ],
+   "kalaignarUrai": "உணவு, உடை போன்ற அனைத்தும் எல்லோருக்கும் பொதுவான தேவைகளாக அமைந்திருக்கின்றன; ஆனால் சிறப்புக்குரிய தேவையாக இருப்பது, பிறரால் பழிக்கப்படும் செயல்களைத் தவிர்த்து வாழும் நாணுடைமைதான்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 238,
+    "printedPage": "205",
+    "pageType": "commentary",
+    "record": "0238-porul-naanudaimai-01.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1013,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "ஊனைக் குறித்த உயிரெல்லாம் நாணென்னும்",
+    "நன்மை குறித்தது சால்பு."
+   ],
+   "kalaignarUrai": "உடலுடன் இணைந்தே உயிர் இருப்பது போல், மாண்பு என்பது நாண உணர்வுடன் இணைந்து இருப்பதேயாகும்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 238,
+    "printedPage": "205",
+    "pageType": "commentary",
+    "record": "0238-porul-naanudaimai-01.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1014,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "அணியன்றோ நாணுடைமை சான்றோர்க் கஃதின்றேற்",
+    "பிணியன்றோ பீடு நடை."
+   ],
+   "kalaignarUrai": "நடந்த தவறு காரணமாகத் தமக்குள் வருந்துகிற நாணம் எனும் உணர்வு, பெரியவர்களுக்கு அணிகலன் ஆக விளங்கும். அந்த அணிகலன் இல்லாமல் என்னதான் பெருமிதமாக நடைபோட்டாலும், அந்த நடையை ஒரு நோய்க்கு ஒப்பானதாகவே கருத முடியும்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 238,
+    "printedPage": "205",
+    "pageType": "commentary",
+    "record": "0238-porul-naanudaimai-01.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1015,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "பிறர்பழியும் தம்பழியும் நாணுவார் நாணுக்",
+    "குறைபதி என்னும் உலகு."
+   ],
+   "kalaignarUrai": "தமக்கு வரும் பழிக்காக மட்டுமின்றிப் பிறர்க்கு வரும் பழிக்காகவும் வருந்தி நாணுகின்றவர், நாணம் எனும் பண்பிற்கான உறைவிடமாவார்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 238,
+    "printedPage": "205",
+    "pageType": "commentary",
+    "record": "0238-porul-naanudaimai-01.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1016,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "நாண்வேலி கொள்ளாது மன்னோ வியன்ஞாலம்",
+    "பேணலர் மேலா யவர்."
+   ],
+   "kalaignarUrai": "பரந்த இந்த உலகில் எந்தப் பாதுகாப்பையும்விட, நாணம் எனும் வேலியைத்தான் உயர்ந்த மனிதர்கள், தங்களின் பாதுகாப்பாகக் கொள்வார்கள்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 239,
+    "printedPage": "206",
+    "pageType": "commentary",
+    "record": "0239-porul-naanudaimai-02.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1017,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "நாணால் உயிரைத் துறப்பர் உயிர்ப்பொருட்டால்",
+    "நாண்துறவார் நாணாள் பவர்."
+   ],
+   "kalaignarUrai": "நாண உணர்வுடையவர்கள் மானத்தைக் காப்பாற்றிக் கொள்ள உயிரையும் விடுவார்கள். உயிரைக் காப்பாற்றிக் கொள்வதற்காக மானத்தை விடமாட்டார்கள்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 239,
+    "printedPage": "206",
+    "pageType": "commentary",
+    "record": "0239-porul-naanudaimai-02.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1018,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "பிறர்நாணத் தக்கது தானாணா னாயின்",
+    "அறநாணத் தக்க துடைத்து."
+   ],
+   "kalaignarUrai": "வெட்கப்படவேண்டிய அளவுக்குப் பழிக்கு ஆளானவர்கள் அதற்காக வெட்கப்படாமல் இருந்தால் அவர்களைவிட்டு அறநெறி வெட்கப்பட்டு அகன்றுவிட்டதாகக் கருத வேண்டும்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 239,
+    "printedPage": "206",
+    "pageType": "commentary",
+    "record": "0239-porul-naanudaimai-02.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1019,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "குலஞ்சுடும் கொள்கை பிழைப்பின் நலஞ்சுடும்",
+    "நாணின்மை நின்றக் கடை."
+   ],
+   "kalaignarUrai": "கொண்ட கொள்கையில் தவறினால் குலத்துக்கு இழுக்கு நேரும். அதற்கு நாணாமல் பிறர் பழிக்கும் செயல் புரிந்தால் நலமனைத்தும் கெடும்.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 239,
+    "printedPage": "206",
+    "pageType": "commentary",
+    "record": "0239-porul-naanudaimai-02.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  },
+  {
+   "number": 1020,
+   "paal": {
+    "index": 2,
+    "tamil": "பொருட்பால்"
+   },
+   "iyal": {
+    "index": 7,
+    "tamil": "குடியியல்"
+   },
+   "adhikaram": {
+    "number": 102,
+    "tamil": "நாணுடைமை",
+    "from": 1011,
+    "to": 1020
+   },
+   "tamilText": [
+    "நாணகத் தில்லார் இயக்கம் மரப்பாவை",
+    "நாணால் உயிர்மருட்டி அற்று."
+   ],
+   "kalaignarUrai": "உயிர் இருப்பது போல் கயிறுகொண்டு ஆட்டி வைக்கப்படும் மரப்பொம்மைக்கும், மனத்தில் நாணமெனும் ஓர் உணர்வு இல்லாமல் உலகில் நடமாடுபவருக்கும் வேறுபாடு இல்லை.",
+   "source": {
+    "filename": "திருக்குறள்_கலைஞர்_உரை_part_012_pages_238-260.pdf",
+    "role": "processing-split",
+    "scan": 239,
+    "printedPage": "206",
+    "pageType": "commentary",
+    "record": "0239-porul-naanudaimai-02.md"
+   },
+   "commentary": {
+    "author": "மு. கருணாநிதி",
+    "edition": "இரண்டாவது பதிப்பு, மார்ச் 2010"
+   }
+  }
+ ]
+}

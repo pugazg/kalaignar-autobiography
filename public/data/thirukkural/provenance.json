@@ -1,0 +1,210 @@
+{
+ "workId": "thirukkural",
+ "sourceRepo": "pugazg/kalaignar-literary-commentary",
+ "sourcePath": "works/thirukkural",
+ "sourceCommit": "d2a88fc62457c4bad59a3057e4f4c01e55b2f5a4",
+ "controllingSource": {
+  "filename": "TVA_BOK_0065564_திருக்குறள்_கலைஞர்_உரை.pdf",
+  "sha256": "765d0c73bce13c71e2e595e38f5216a3551c4dc94a315a0e2264a1a2630c3c56",
+  "byteSize": 712210007,
+  "pageCount": 323,
+  "committed": false,
+  "archiveIdentifier": "TVA_BOK_0065564",
+  "repository": "Tamil Digital Library (tamildigitallibrary.in)"
+ },
+ "identityStatus": "verified",
+ "identityVerification": {
+  "level": "content-correspondence-verified",
+  "verifiedAgainst": "TVA_BOK_0065564_திருக்குறள்_கலைஞர்_உரை.pdf",
+  "verificationMethod": [
+   "sha256",
+   "byte-size",
+   "page-count",
+   "page-correspondence-samples"
+  ]
+ },
+ "identitySourceNote": "Source identity is owned by the archive and is reproduced here verbatim from pugazg/kalaignar-literary-commentary works/thirukkural/metadata/source-manifest.json at the pinned commit. This application never computes, supplements or corrects it.",
+ "pageCorrespondence": {
+  "type": "one-to-one",
+  "sourcePageEqualsArchiveScan": true,
+  "sourcePageRange": [
+   1,
+   323
+  ],
+  "archiveScanRange": [
+   1,
+   323
+  ],
+  "verifiedSamples": [
+   {
+    "pdfPage": 34,
+    "archiveScan": 34,
+    "printedPage": "1",
+    "verification": "content-match",
+    "evidence": "running head 'அறம் - பாயிரம் - வழிபாடு'; heading '1. வழிபாடு'; Kurals 1–5 each followed by Kalaignar's urai"
+   },
+   {
+    "pdfPage": 303,
+    "archiveScan": 303,
+    "printedPage": "270",
+    "verification": "content-match",
+    "evidence": "running head 'திருக்குறள் - கலைஞர் உரை'; Kurals 1326–1330, ending the work at 1330"
+   }
+  ]
+ },
+ "edition": {
+  "statement": "இரண்டாவது பதிப்பு, மார்ச் 2010",
+  "publisher": "பூம்புகார் பதிப்பகம்",
+  "workTitleTa": "திருக்குறள்",
+  "workSubtitleTa": "கலைஞர் உரை",
+  "commentator": "கலைஞர் மு. கருணாநிதி"
+ },
+ "derived": {
+  "kurals": 1330,
+  "adhikarams": 133,
+  "kuralsPerAdhikaram": 10,
+  "paal": 3,
+  "iyal": 13,
+  "totalPageRecords": 323,
+  "commentaryPages": 266,
+  "commentaryPagesCarryingKurals": 266,
+  "adhikaramReadmeSchemas": {
+   "tamil": 77,
+   "english": 56
+  }
+ },
+ "transcriptionWitnesses": {
+  "note": "Each Kural records the file it was transcribed from. Those are `processing-split` derivations of the controlling PDF, declared upstream in derivedFiles and carried here for traceability. They are transcription witnesses, not the archival source: the controlling source is the single file named under controllingSource above.",
+  "declaredDerivedFiles": 15,
+  "citedByKurals": 14
+ },
+ "textualFidelity": "The couplet's two printed lines are carried separately and never joined. Spelling, sandhi, punctuation and spacing are reproduced exactly as printed; nothing is modernised or normalised.",
+ "excludedFromReadingBody": {
+  "rule": "Kural text and Kalaignar urai are taken ONLY from page records whose page_type is \"commentary\". Pages that quote a Kural are never a source of its text.",
+  "quotationsExcluded": 19,
+  "quotationPageTypes": [
+   "review"
+  ],
+  "quotationLedger": [
+   {
+    "kural": 17,
+    "record": "0020-mathippurai-paa-nalam.md",
+    "scan": 20,
+    "pageType": "review"
+   },
+   {
+    "kural": 29,
+    "record": "0024-mathippurai-11.md",
+    "scan": 24,
+    "pageType": "review"
+   },
+   {
+    "kural": 37,
+    "record": "0024-mathippurai-11.md",
+    "scan": 24,
+    "pageType": "review"
+   },
+   {
+    "kural": 55,
+    "record": "0024-mathippurai-11.md",
+    "scan": 24,
+    "pageType": "review"
+   },
+   {
+    "kural": 58,
+    "record": "0023-mathippurai-10.md",
+    "scan": 23,
+    "pageType": "review"
+   },
+   {
+    "kural": 83,
+    "record": "0021-mathippurai-08.md",
+    "scan": 21,
+    "pageType": "review"
+   },
+   {
+    "kural": 94,
+    "record": "0021-mathippurai-08.md",
+    "scan": 21,
+    "pageType": "review"
+   },
+   {
+    "kural": 98,
+    "record": "0022-mathippurai-09.md",
+    "scan": 22,
+    "pageType": "review"
+   },
+   {
+    "kural": 213,
+    "record": "0023-mathippurai-10.md",
+    "scan": 23,
+    "pageType": "review"
+   },
+   {
+    "kural": 234,
+    "record": "0023-mathippurai-10.md",
+    "scan": 23,
+    "pageType": "review"
+   },
+   {
+    "kural": 622,
+    "record": "0024-mathippurai-11.md",
+    "scan": 24,
+    "pageType": "review"
+   },
+   {
+    "kural": 1052,
+    "record": "0022-mathippurai-09.md",
+    "scan": 22,
+    "pageType": "review"
+   },
+   {
+    "kural": 1085,
+    "record": "0021-mathippurai-08.md",
+    "scan": 21,
+    "pageType": "review"
+   },
+   {
+    "kural": 1098,
+    "record": "0020-mathippurai-paa-nalam.md",
+    "scan": 20,
+    "pageType": "review"
+   },
+   {
+    "kural": 1101,
+    "record": "0020-mathippurai-paa-nalam.md",
+    "scan": 20,
+    "pageType": "review"
+   },
+   {
+    "kural": 1162,
+    "record": "0022-mathippurai-09.md",
+    "scan": 22,
+    "pageType": "review"
+   },
+   {
+    "kural": 1305,
+    "record": "0021-mathippurai-08.md",
+    "scan": 21,
+    "pageType": "review"
+   },
+   {
+    "kural": 1317,
+    "record": "0022-mathippurai-09.md",
+    "scan": 22,
+    "pageType": "review"
+   },
+   {
+    "kural": 1323,
+    "record": "0023-mathippurai-10.md",
+    "scan": 23,
+    "pageType": "review"
+   }
+  ],
+  "note": "The edition's front-matter மதிப்புரை essays quote 19 Kurals. Many are quoted in a sandhi that differs from Kalaignar's own printed text, so admitting them would publish a reviewer's wording under his name. Each quoted Kural is also independently present as commentary, so excluding these pages loses nothing.",
+  "alsoOutsideReadingBody": [
+   "the scan-8 handwritten facsimile, a documented partial record upstream",
+   "the first-word index, blank leaves, cover and publication matter"
+  ]
+ }
+}
