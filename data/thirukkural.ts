@@ -135,3 +135,50 @@ export function loadKural(n: number): { entry: ThirukkuralEntry; adhikaram: Thir
   const entry = adhikaram?.kurals.find((k) => k.number === n);
   return adhikaram && entry ? { entry, adhikaram } : null;
 }
+
+// ── EDITORIAL ATTRIBUTION ────────────────────────────────────────────────────────────────────────
+// Who made what, and on whose authority we say so.
+//
+// This is stated in CODE rather than pushed into public/data/, because the generated data is the
+// archive's word and must not be hand-edited. Two different kinds of claim are involved and the
+// reader is entitled to know which is which:
+//
+//   SOURCE-BACKED — the edition says so itself. Its title page reads திருக்குறள் / கலைஞர் உரை, its
+//   publication page names கலைஞர் மு. கருணாநிதி, and its printed rights line reads
+//   "உரிமை : உரையாசிரியருக்கு" — the edition's own word for Kalaignar's role: உரையாசிரியர்,
+//   commentator. That is the strongest possible evidence that his contribution here is the உரை.
+//
+//   GENERAL LITERARY KNOWLEDGE — that Thiruvalluvar composed the Kural. Verified against the
+//   archive: this edition's cover, title page and publication details do NOT name him, and neither
+//   does the upstream source manifest. The attribution is not in doubt anywhere in Tamil letters,
+//   but it is not read off this book, so it is not presented as though it were.
+//
+// The distinction matters because the whole point of naming both voices is to stop one being taken
+// for the other. Claiming a source for an attribution the source does not make would undercut that.
+export const THIRUKKURAL_ATTRIBUTION = {
+  originalWork: { ta: "திருக்குறள்", en: "Thirukkural" },
+  originalCreator: {
+    ta: "திருவள்ளுவர்",
+    en: "Thiruvalluvar",
+    /** Not named by this edition or its manifest; attributed on general literary knowledge. */
+    basis: "general-literary-knowledge" as const,
+  },
+  commentator: {
+    ta: "கலைஞர் மு. கருணாநிதி",
+    en: "Kalaignar M. Karunanidhi",
+    /** The edition names him and prints his role. */
+    basis: "stated-by-edition" as const,
+  },
+  contribution: {
+    ta: "உரை",
+    en: "commentary",
+    /** As the edition's own printed rights line has it: உரிமை : உரையாசிரியருக்கு. */
+    roleTa: "உரையாசிரியர்",
+    roleEn: "commentator",
+    basis: "stated-by-edition" as const,
+  },
+  /** One factual sentence for the landing page. No interpretation, no claims beyond the above. */
+  summaryTa:
+    "திருவள்ளுவர் அருளிய திருக்குறளுக்குக் கலைஞர் மு. கருணாநிதி அவர்கள் வழங்கிய உரை. " +
+    "இந்த வாசிப்பு அறையில் 1330 குறள்களும் கலைஞர் உரையுடன் ஆவணப்படுத்தப்பட்டுள்ளன.",
+} as const;

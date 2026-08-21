@@ -1,13 +1,17 @@
 import Link from "next/link";
-import type { ThirukkuralAdhikaram, ThirukkuralEntry } from "@/data/thirukkural";
+import { THIRUKKURAL_ATTRIBUTION as ATTR, type ThirukkuralAdhikaram, type ThirukkuralEntry } from "@/data/thirukkural";
 
 /**
  * One குறள் and Kalaignar's உரை on it.
  *
- * THREE VOICES, KEPT APART. The page carries Thiruvalluvar's couplet, then Kalaignar's prose
- * commentary on it, and they must never read as one continuous text. The couplet is set in a
- * `blockquote` at the largest size on the page; the உரை follows in its own labelled region, in a
- * different weight and colour, under a heading that names whose voice it is.
+ * TWO VOICES, NAMED BEFORE THEY SPEAK. The page carries Thiruvalluvar's couplet, then Kalaignar's
+ * prose commentary on it, and they must never read as one continuous text. Each is introduced by a
+ * heading that says whose voice follows — "திருவள்ளுவர் அருளிய குறள்", then "கலைஞர் மு. கருணாநிதி
+ * அவர்களின் உரை" — so a reader arriving cold cannot mistake the commentary for the couplet, or
+ * suppose Kalaignar wrote the Kural. The two headings are siblings (both h2 under the page's h1),
+ * because the two voices are of equal standing here: neither is a subsection of the other.
+ * The couplet is set in a `blockquote` at the largest size on the page; the உரை follows in a
+ * different weight and colour.
  *
  * WRAPPING. A printed line is longer than a narrow viewport, so it will wrap. Left alone, that
  * second visual row would look exactly like a new line of the couplet, and a reader could no longer
@@ -67,6 +71,9 @@ export default function KuralReader({
 
         {/* VOICE 1 — திருவள்ளுவர். The two printed lines are separate block elements. They are
             never joined, never re-wrapped, and no punctuation or spacing is adjusted. */}
+        <h2 className="mt-6 font-tamil text-sm font-semibold tracking-wide text-ink/55 dark:text-night-text/55" lang="ta">
+          திருவள்ளுவர் அருளிய குறள்
+        </h2>
         <blockquote
           lang="ta"
           className="mt-5 border-l-2 border-marina/40 pl-5 font-tamil text-xl leading-[1.95] text-ink dark:border-marina-light/40 dark:text-night-text sm:text-[1.6rem] sm:leading-[2.05]"
@@ -81,14 +88,11 @@ export default function KuralReader({
             </span>
           ))}
         </blockquote>
-        <div className="mt-3 pl-5 font-body text-xs text-ink/40 dark:text-night-text/40">
-          திருவள்ளுவர்
-        </div>
 
         {/* VOICE 2 — கலைஞர். Its own labelled region, visibly a different voice. */}
-        <section aria-label="கலைஞர் உரை" className="mt-10 border-t border-ink/10 pt-8 dark:border-white/10">
+        <section aria-label="கலைஞர் மு. கருணாநிதி அவர்களின் உரை" className="mt-10 border-t border-ink/10 pt-8 dark:border-white/10">
           <h2 className="font-tamil text-sm font-semibold tracking-wide text-marina dark:text-marina-light" lang="ta">
-            கலைஞர் உரை
+            {ATTR.commentator.ta} அவர்களின் {ATTR.contribution.ta}
           </h2>
           <p lang="ta" className="mt-4 font-tamil text-lg leading-[1.95] text-ink/85 dark:text-night-text/85">
             {entry.kalaignarUrai}

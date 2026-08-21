@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ThirukkuralIndex, ThirukkuralProvenance } from "@/data/thirukkural";
+import { THIRUKKURAL_ATTRIBUTION as ATTR, type ThirukkuralIndex, type ThirukkuralProvenance } from "@/data/thirukkural";
 
 /**
  * The way into the edition: who wrote it, who commented on it, how large it is, and the 133
@@ -28,16 +28,34 @@ export default function ThirukkuralLanding({
         <p className="mt-2 font-tamil text-xl text-marina dark:text-marina-light" lang="ta">
           {index.subtitle.ta}
         </p>
-        <p className="mt-6 font-tamil text-base leading-relaxed text-ink/70 dark:text-night-text/70" lang="ta">
-          உரையாசிரியர்: {index.commentator.ta}
+        {/* The editorial introduction. One factual sentence naming both voices and what this
+            reading room contains — no interpretation, no claim the sources do not support. */}
+        <p className="mt-7 font-tamil text-base leading-[1.9] text-ink/75 dark:text-night-text/75" lang="ta">
+          {ATTR.summaryTa}
         </p>
-        {prov.edition.statement && (
-          <p className="mt-1 font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">
-            {prov.edition.statement}
-            {prov.edition.publisher ? ` · ${prov.edition.publisher}` : ""}
-          </p>
-        )}
       </div>
+
+      {/* Work identity, stated as a list so the relationship between the two names cannot be
+          misread: Thiruvalluvar composed the work, Kalaignar wrote the commentary on it. */}
+      <dl className="mt-8 space-y-2.5 border-l-2 border-ink/10 pl-5 dark:border-white/10">
+        {[
+          ["மூல நூல்", ATTR.originalWork.ta],
+          ["மூல ஆசிரியர்", ATTR.originalCreator.ta],
+          ["உரையாசிரியர்", ATTR.commentator.ta],
+          ["பங்களிப்பு", ATTR.contribution.ta],
+          ["பதிப்பு", prov.edition.statement],
+          ["பதிப்பகம்", prov.edition.publisher],
+        ]
+          .filter(([, v]) => v)
+          .map(([k, v]) => (
+            <div key={k as string} className="grid grid-cols-[7.5rem_1fr] gap-3">
+              {/* 60% rather than the 45% used for incidental metadata elsewhere: at 14px, 45%
+                  falls to 3.9:1 on the dark surface, and this block exists to be read. */}
+              <dt className="font-tamil text-sm text-ink/60 dark:text-night-text/60" lang="ta">{k}</dt>
+              <dd className="font-tamil text-sm text-ink/85 dark:text-night-text/85" lang="ta">{v}</dd>
+            </div>
+          ))}
+      </dl>
 
       <dl className="mt-10 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-ink/10 py-6 dark:border-white/10 sm:grid-cols-4">
         {[

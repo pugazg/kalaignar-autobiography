@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ThirukkuralIndex, ThirukkuralProvenance } from "@/data/thirukkural";
+import { THIRUKKURAL_ATTRIBUTION as ATTR, type ThirukkuralIndex, type ThirukkuralProvenance } from "@/data/thirukkural";
 
 /**
  * Reader-facing provenance for the edition.
@@ -43,7 +43,29 @@ export default function ThirukkuralSource({
         {index.title.ta} — {index.subtitle.ta}
       </p>
 
-      <section aria-label="ஆளும் மூலம்" className="mt-10">
+      {/* EDITORIAL IDENTITY — what this book is, in plain Tamil, before any technical detail.
+          The two attributions rest on different evidence and the page says so rather than
+          flattening them into one confident-sounding statement. */}
+      <section aria-label="இந்தப் பதிப்பு பற்றி" className="mt-10">
+        <h2 className="font-tamil text-lg font-semibold text-ink dark:text-night-text" lang="ta">
+          இந்தப் பதிப்பு பற்றி
+        </h2>
+        <p className="mt-2 font-tamil text-sm leading-[1.9] text-ink/65 dark:text-night-text/65" lang="ta">
+          திருக்குறள் — கலைஞர் உரை என்பது திருவள்ளுவர் இயற்றிய குறள்களுக்குக் கலைஞர் மு. கருணாநிதி
+          அவர்கள் வழங்கிய உரையாகும். குறள் பாடம் திருவள்ளுவருடையது; உரை கலைஞருடையது. இவ்விரு
+          குரல்களும் இந்த வாசிப்பு அறையில் தனித்தனியே காக்கப்படுகின்றன.
+        </p>
+        <p className="mt-3 font-tamil text-sm leading-[1.9] text-ink/65 dark:text-night-text/65" lang="ta">
+          இந்தப் பதிப்பு தன் அட்டையிலும் தலைப்புப் பக்கத்திலும் “திருக்குறள் — கலைஞர் உரை” எனவும்,
+          வெளியீட்டுப் பக்கத்தில் “கலைஞர் மு. கருணாநிதி” எனவும் குறிப்பிடுகிறது; அச்சிடப்பட்ட
+          உரிமைக் குறிப்பு “உரிமை : உரையாசிரியருக்கு” என்கிறது. எனவே கலைஞரின் பங்கு உரையாசிரியர்
+          என்பது இந்தப் பதிப்பே கூறும் செய்தி. திருவள்ளுவரை மூல ஆசிரியராகக் குறிப்பிடுவது தமிழ்
+          இலக்கிய அறிவின் அடிப்படையிலானது; இந்தப் பதிப்பின் அட்டையோ தலைப்புப் பக்கமோ அவர் பெயரைக்
+          குறிப்பிடவில்லை.
+        </p>
+      </section>
+
+      <section aria-label="ஆளும் மூலம்" className="mt-12">
         <h2 className="font-tamil text-lg font-semibold text-ink dark:text-night-text" lang="ta">
           ஆளும் மூலம்
         </h2>
