@@ -1,0 +1,100 @@
+{
+  "workId": "2006-08-23-industries-debate",
+  "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+  "sourcePath": "speeches/2006/2006-08-23-industries-debate",
+  "sourceCommit": "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+  "source": {
+    "publicationTitleTa": "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள்",
+    "publicationDatePrintedTa": null,
+    "salesRightsTa": null,
+    "scanFilename": "TVA_BOK_0065516_தொழில்துறை_பற்றி_கலைஞரின்_சட்டமன்ற_உரைகள்.pdf",
+    "scanTotalPages": 329,
+    "scanFileSizeBytes": 217124211,
+    "scanSha256": "c26003fe77b97adc6487ba0e4c00c9fa34a0a53839aa326d3ef5897f8616d370",
+    "speechScanPages": "304-326",
+    "speechPrintedPages": "303-325",
+    "scanToPrintedRelationship": "For this speech, scan page = printed page + 1.",
+    "sourceAuthority": "scan image",
+    "speechSourceLabelTa": "உரை : 10",
+    "speechPrintedDate": "23.08.2006"
+  },
+  "archiveVerification": {
+    "registry": "data/speeches.json",
+    "transcriptionStatus": "verified",
+    "verifiedAgainstScan": true,
+    "translationStatus": "verified"
+  },
+  "releaseReadiness": {
+    "basis": "per-speech-release-block",
+    "explicitPerSpeechReleaseBlockPresent": true,
+    "releaseReady": true,
+    "note": "The per-speech metadata carries an explicit release block, recorded here verbatim."
+  },
+  "crossPageJoinPolicy": {
+    "policy": "space",
+    "basis": "archive-normalisation-rule",
+    "individualAdjudication": false,
+    "appliedBoundaries": 17,
+    "unresolvedBoundaries": 5,
+    "note": "Physical page-boundary continuations are joined with one space under the archive's normalisation policy (ARCHIVAL_WORKFLOW.md permits normalising physical line wraps into paragraphs). The source archive provides no per-boundary adjudication for this speech, so no boundary here is claimed to have been checked individually against the scan. Each source fragment is stored verbatim as its own segment with its own source page; the separator is inserted only when the paragraph is read, never into the stored text."
+  },
+  "transcription": {
+    "status": "verified",
+    "gate_c_status": "complete",
+    "gate_d_status": "passed",
+    "gate_e_status": "passed",
+    "verified_against_scan": true,
+    "completed_scan_pages": "304-326",
+    "completed_printed_pages": "303-325",
+    "completed_page_count": 23,
+    "total_page_count": 23,
+    "gate_e_correction_count": 6,
+    "unresolved_readings": 0
+  },
+  "translation": {
+    "language": "English",
+    "working_files": [
+      "translation.md",
+      "translation-gate-f-batch-2.md",
+      "translation-gate-f-batch-3.md",
+      "translation-gate-f-batch-4.md",
+      "translation-gate-f-batch-5.md"
+    ],
+    "review_file": "translation-review.md",
+    "status": "verified",
+    "gate_f_status": "complete",
+    "gate_g_status": "passed",
+    "requires_verified_tamil": true,
+    "tamil_gate_satisfied": true,
+    "source": "final verified Tamil transcription",
+    "voice_policy": "Retain Kalaignar's parliamentary language and voice in English: argumentative sequence, repetition, direct address, humour, wordplay, irony, metaphors, register shifts and stage markers are preserved rather than polished into generic modern English; printed English and source claims/figures are not silently corrected.",
+    "completed_source_pages": "304-326",
+    "completed_printed_pages": "303-325",
+    "completed_page_count": 23,
+    "total_page_count": 23,
+    "source_page_correspondence": true,
+    "unresolved_translation_questions": 0,
+    "verified_against_tamil": true,
+    "gate_g_reviewed_source_pages": "304-326",
+    "gate_g_reviewed_printed_pages": "303-325",
+    "gate_g_reviewed_page_count": 23,
+    "gate_g_total_page_count": 23,
+    "gate_g_correction_count": 9,
+    "gate_g_unresolved_questions": 0,
+    "gate_g_next_source_page": null,
+    "placement": "Canonical verified English follows the verified Tamil in transcript.md.",
+    "working_files_retired": true
+  },
+  "archiveDerived": {
+    "tamilSourcePages": 23,
+    "englishSourcePages": 23,
+    "tamilBlocks": 72,
+    "englishBlocks": 69,
+    "tamilHeadings": 0,
+    "englishHeadings": 0,
+    "tamilParagraphs": 67,
+    "tamilUnresolvedBreaks": 5,
+    "englishUnresolvedBreaks": 3,
+    "englishParagraphs": 65
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "workId": "1981-04-16-industries-debate",
+  "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+  "sourcePath": "speeches/1981/1981-04-16-industries-debate",
+  "sourceCommit": "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+  "source": {
+    "publicationTitleTa": "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள்",
+    "editionTa": "முதற்பதிப்பு",
+    "publicationDate": "2007-05",
+    "publicationDatePrintedTa": "மே, 2007",
+    "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+    "publisherLocationTa": "சென்னை - 600 004",
+    "salesRightsTa": "பூம்புகார் பதிப்பகம்",
+    "scanFilename": "TVA_BOK_0065516_தொழில்துறை_பற்றி_கலைஞரின்_சட்டமன்ற_உரைகள்.pdf",
+    "scanTotalPages": 329,
+    "scanFileSizeBytes": 217124211,
+    "scanSha256": "c26003fe77b97adc6487ba0e4c00c9fa34a0a53839aa326d3ef5897f8616d370",
+    "speechScanPages": "27-61",
+    "speechPrintedPages": "26-60",
+    "scanToPrintedRelationship": "For this speech, scan page = printed page + 1.",
+    "sourceAuthority": "scan image",
+    "speechSourceLabelTa": "உரை : 2",
+    "speechPrintedDate": "16.04.1981"
+  },
+  "archiveVerification": {
+    "registry": "data/speeches.json",
+    "transcriptionStatus": "verified",
+    "verifiedAgainstScan": true,
+    "translationStatus": "verified"
+  },
+  "releaseReadiness": {
+    "basis": "archive-index",
+    "explicitPerSpeechReleaseBlockPresent": false,
+    "note": "The archive registry records this speech as verified against the scan with a verified translation. The per-speech metadata contains no explicit release block, so none is reported here; its absence is recorded rather than filled in."
+  },
+  "crossPageJoinPolicy": {
+    "policy": "space",
+    "basis": "archive-normalisation-rule",
+    "individualAdjudication": false,
+    "appliedBoundaries": 31,
+    "unresolvedBoundaries": 3,
+    "note": "Physical page-boundary continuations are joined with one space under the archive's normalisation policy (ARCHIVAL_WORKFLOW.md permits normalising physical line wraps into paragraphs). The source archive provides no per-boundary adjudication for this speech, so no boundary here is claimed to have been checked individually against the scan. Each source fragment is stored verbatim as its own segment with its own source page; the separator is inserted only when the paragraph is read, never into the stored text."
+  },
+  "transcription": {
+    "method": "manual first-pass transcription from scan images, followed by full-speech completeness audit and strict direct page-by-page visual source-fidelity verification",
+    "status": "verified",
+    "full_speech_scan_pages": "27-61",
+    "completed_scan_pages": "27-61",
+    "completed_printed_pages": "26-60",
+    "next_scan_page": null,
+    "page_markers_audited_for_completed_batch": true,
+    "full_speech_completeness_audit": true,
+    "full_speech_page_marker_audit": true,
+    "verified_against_scan": true,
+    "verified_scan_pages": "27-61",
+    "strict_full_speech_visual_verification": true,
+    "explicit_unresolved_reading_markers": 0,
+    "unresolved_readings": 0,
+    "preserves_source_wording_spelling_punctuation_numerals_headings_speaker_labels_and_printed_english": true,
+    "completion_note": "All 35 mapped scan pages 27-61 are represented. Markers are unique and monotonic. Scan p.61 ends with Kalaignar's final intervention and a decorative ornament; scan p.62 begins Speech 3 (03.05.1989).",
+    "verification_note": "The complete Tamil transcript for scan pp.27-61 was checked directly page by page against the controlling scan. First-pass discrepancies found in that audit were corrected in transcript.md and documented in verification-log.md."
+  },
+  "translation": {
+    "language": "English",
+    "placement": "after the complete verified Tamil transcription",
+    "status": "verified",
+    "type": "faithful reading translation",
+    "source_text": "verified Tamil transcription",
+    "translated_source_pages": "27-61",
+    "requires_verified_tamil": true,
+    "tamil_gate_satisfied": true,
+    "verified_against_tamil": true,
+    "fidelity_verification_pages": "27-61",
+    "verification_note": "The complete English rendering was reread page by page against the final verified Tamil, including names, figures, quotations, printed-English passages, technical terms, source-page transitions and parliamentary context. No external historical correction was substituted for source claims."
+  },
+  "archiveDerived": {
+    "tamilSourcePages": 35,
+    "englishSourcePages": 35,
+    "tamilBlocks": 79,
+    "englishBlocks": 91,
+    "tamilHeadings": 0,
+    "englishHeadings": 0,
+    "tamilParagraphs": 76,
+    "tamilUnresolvedBreaks": 3,
+    "englishUnresolvedBreaks": 5,
+    "englishParagraphs": 83
+  }
+}

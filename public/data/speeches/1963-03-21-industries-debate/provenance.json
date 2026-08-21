@@ -1,0 +1,81 @@
+{
+  "workId": "1963-03-21-industries-debate",
+  "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+  "sourcePath": "speeches/1963/1963-03-21-industries-debate",
+  "sourceCommit": "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+  "source": {
+    "publicationTitleTa": "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள்",
+    "editionTa": "முதற்பதிப்பு",
+    "publicationDate": "2007-05",
+    "publicationDatePrintedTa": "மே, 2007",
+    "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+    "salesRightsTa": null,
+    "scanFilename": "TVA_BOK_0065516_தொழில்துறை_பற்றி_கலைஞரின்_சட்டமன்ற_உரைகள்.pdf",
+    "scanTotalPages": 329,
+    "scanSha256": "c26003fe77b97adc6487ba0e4c00c9fa34a0a53839aa326d3ef5897f8616d370",
+    "speechScanPages": "18-26",
+    "speechPrintedPages": "17-25",
+    "scanToPrintedRelationship": null,
+    "sourceAuthority": "scan image",
+    "speechSourceLabelTa": "உரை : 1",
+    "speechPrintedDate": "21.03.1963"
+  },
+  "archiveVerification": {
+    "registry": "data/speeches.json",
+    "transcriptionStatus": "verified",
+    "verifiedAgainstScan": true,
+    "translationStatus": "verified"
+  },
+  "releaseReadiness": {
+    "basis": "archive-index",
+    "explicitPerSpeechReleaseBlockPresent": false,
+    "note": "The archive registry records this speech as verified against the scan with a verified translation. The per-speech metadata contains no explicit release block, so none is reported here; its absence is recorded rather than filled in."
+  },
+  "crossPageJoinPolicy": {
+    "policy": "space",
+    "basis": "archive-normalisation-rule",
+    "individualAdjudication": false,
+    "appliedBoundaries": 6,
+    "unresolvedBoundaries": 2,
+    "note": "Physical page-boundary continuations are joined with one space under the archive's normalisation policy (ARCHIVAL_WORKFLOW.md permits normalising physical line wraps into paragraphs). The source archive provides no per-boundary adjudication for this speech, so no boundary here is claimed to have been checked individually against the scan. Each source fragment is stored verbatim as its own segment with its own source page; the separator is inserted only when the paragraph is read, never into the stored text."
+  },
+  "transcription": {
+    "method": "manual transcription from scan followed by completeness audit and strict page-by-page visual source-fidelity verification",
+    "preserve_source_spelling": true,
+    "preserve_source_punctuation": true,
+    "preserve_source_numerals": true,
+    "preserve_headings": true,
+    "preserve_speaker_labels_and_interventions": true,
+    "page_boundaries_marked": true,
+    "status": "verified",
+    "completeness_audit_passed": true,
+    "verified_against_scan": true,
+    "verified_scan_pages": "18-26",
+    "unresolved_readings": 0,
+    "verification_note": "Complete Tamil text for scan pp. 18-26 was checked directly against every controlling page image; discovered first-pass errors were corrected and recorded in verification-log.md."
+  },
+  "translation": {
+    "language": "English",
+    "placement": "after the complete verified Tamil transcription",
+    "status": "verified",
+    "type": "faithful reading translation",
+    "source_text": "verified Tamil transcription",
+    "translated_source_pages": "18-26",
+    "requires_verified_tamil": true,
+    "tamil_gate_satisfied": true,
+    "verified_against_tamil": true,
+    "verification_note": "The complete English rendering was reread page by page against the final verified Tamil, including names, figures, quotations, mid-sentence source-page transitions and parliamentary context. No external historical correction was substituted for source claims."
+  },
+  "archiveDerived": {
+    "tamilSourcePages": 9,
+    "englishSourcePages": 9,
+    "tamilBlocks": 27,
+    "englishBlocks": 28,
+    "tamilHeadings": 1,
+    "englishHeadings": 1,
+    "tamilParagraphs": 24,
+    "tamilUnresolvedBreaks": 2,
+    "englishUnresolvedBreaks": 2,
+    "englishParagraphs": 24
+  }
+}
