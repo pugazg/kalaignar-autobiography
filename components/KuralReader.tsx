@@ -6,9 +6,12 @@ import { THIRUKKURAL_ATTRIBUTION as ATTR, type ThirukkuralAdhikaram, type Thiruk
  *
  * TWO VOICES, NAMED BEFORE THEY SPEAK. The page carries Thiruvalluvar's couplet, then Kalaignar's
  * prose commentary on it, and they must never read as one continuous text. Each is introduced by a
- * heading that says whose voice follows — "திருவள்ளுவர் அருளிய குறள்", then "கலைஞர் மு. கருணாநிதி
+ * heading that says whose voice follows — "திருவள்ளுவர் இயற்றிய குறள்", then "கலைஞர் மு. கருணாநிதி
  * அவர்களின் உரை" — so a reader arriving cold cannot mistake the commentary for the couplet, or
- * suppose Kalaignar wrote the Kural. The two headings are siblings (both h2 under the page's h1),
+ * suppose Kalaignar wrote the Kural. இயற்றிய (composed), not அருளிய (graciously bestowed): both
+ * are ordinary Tamil, but an attribution label should state authorship neutrally rather than in a
+ * devotional register, and the same word will have to serve Ilango Adigal and every other
+ * classical author the library takes on. The two headings are siblings (both h2 under the page's h1),
  * because the two voices are of equal standing here: neither is a subsection of the other.
  * The couplet is set in a `blockquote` at the largest size on the page; the உரை follows in a
  * different weight and colour.
@@ -72,7 +75,7 @@ export default function KuralReader({
         {/* VOICE 1 — திருவள்ளுவர். The two printed lines are separate block elements. They are
             never joined, never re-wrapped, and no punctuation or spacing is adjusted. */}
         <h2 className="mt-6 font-tamil text-sm font-semibold tracking-wide text-ink/55 dark:text-night-text/55" lang="ta">
-          திருவள்ளுவர் அருளிய குறள்
+          திருவள்ளுவர் இயற்றிய குறள்
         </h2>
         <blockquote
           lang="ta"
