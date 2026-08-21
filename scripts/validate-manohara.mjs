@@ -24,8 +24,11 @@ import { execFileSync } from "node:child_process";
 
 const SRC_REPO = process.argv[2];
 if (!SRC_REPO) {
-  console.error("usage: node scripts/validate-manohara.mjs <kalaignar-cinema-works-clone>");
-  process.exit(1);
+  // Exit 2, not 1: being invoked without a source clone means the check could not run, which is a
+  // different fact from the released data being wrong. See docs/VALIDATOR_CONTRACT.md. This guard
+  // runs before die() is defined below, so it writes the same shape by hand.
+  console.error("\nmanohara — CANNOT VALIDATE\n\n  usage: node scripts/validate-manohara.mjs <kalaignar-cinema-works-clone>\n");
+  process.exit(2);
 }
 
 const SLUG = "manohara";
