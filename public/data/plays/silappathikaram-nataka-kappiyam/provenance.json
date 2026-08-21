@@ -5,9 +5,10 @@
  "source": {
   "scanFilename": "TVA_BOK_0016473_சிலப்பதிகாரம்_நாடகக்_காப்பியம்.pdf",
   "scanSha256": "2886c8eaa9d79239eba3e9ed0ddefc4c7208da4761384ee7a8b4176e6b1a24dd",
-  "scanFileSizeBytes": null,
+  "scanFileSizeBytes": 49459844,
   "scanTotalPages": 88,
   "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE. The controlling PDF is deliberately held outside both repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here. It is the archive's recorded identity, matched against the archive's own metadata — not a verification performed by this repository.",
   "pageRecordsVerified": "88 / 88 scans verified at page-record level",
   "sourceAudit": "Tamil transcription completion audit: PASSED",
   "assembledLayer": "38 numbered scenes + closing tableau assembly-reviewed, visual text fidelity PASSED; global Tamil consistency review PASSED",

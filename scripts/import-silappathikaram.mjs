@@ -60,8 +60,12 @@ if (!/Source PDF committed to repository:\s*\*\*No\*\*/.test(meta)) throw new Er
 if (!meta.includes("No standalone publication year has yet been identified")) {
   throw new Error("source metadata no longer states that no publication year is identified — refusing to import");
 }
-const sizeMatch = /File size:\s*\*\*([\d,]+)\*\* bytes/.exec(meta);
-const SCAN_SIZE = sizeMatch ? Number(sizeMatch[1].replace(/,/g, "")) : null;
+// The size IS recorded by the source, so failing to read it must abort rather than quietly write
+// `null` — a null here would be a false record of absence, not preserved uncertainty.
+const sizeMatch = /File size:\s*\*\*\s*([\d,]+)\s*bytes\s*\*\*/.exec(meta);
+if (!sizeMatch) throw new Error("source metadata no longer records the scan file size in the expected form — refusing to import");
+const SCAN_SIZE = Number(sizeMatch[1].replace(/,/g, ""));
+if (!Number.isInteger(SCAN_SIZE) || SCAN_SIZE <= 0) throw new Error(`unreadable scan file size: ${sizeMatch[1]}`);
 
 // The 2009 published English witness must never be read. Assert it is present but untouched.
 const witnessDir = path.join(SRC_REPO, "sources");
@@ -370,6 +374,8 @@ const provenance = {
     scanFileSizeBytes: SCAN_SIZE,
     scanTotalPages: SCAN_PAGES,
     sourcePdfCommitted: false,
+    scanIdentityBasis:
+      "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE. The controlling PDF is deliberately held outside both repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here. It is the archive's recorded identity, matched against the archive's own metadata — not a verification performed by this repository.",
     pageRecordsVerified: "88 / 88 scans verified at page-record level",
     sourceAudit: "Tamil transcription completion audit: PASSED",
     assembledLayer: "38 numbered scenes + closing tableau assembly-reviewed, visual text fidelity PASSED; global Tamil consistency review PASSED",

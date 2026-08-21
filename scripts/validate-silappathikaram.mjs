@@ -43,6 +43,20 @@ const meta = readText(path.join(WORK_DIR, "metadata/source.md"));
 check("scan SHA-256 matches the source record", meta.includes(prov.source.scanSha256));
 check("scan filename matches the source record (NFC)", nfc(meta).includes(nfc(prov.source.scanFilename)));
 eq("scan page count", prov.source.scanTotalPages, 88);
+// The size is recorded by the source, so a null here would be a FALSE record of absence.
+{
+  const m = /File size:\s*\*\*\s*([\d,]+)\s*bytes\s*\*\*/.exec(meta);
+  check("the source records a scan file size", !!m);
+  eq("scan file size matches the source exactly", prov.source.scanFileSizeBytes, m ? Number(m[1].replace(/,/g, "")) : null);
+  check("scan file size is not silently null", typeof prov.source.scanFileSizeBytes === "number" && prov.source.scanFileSizeBytes > 0);
+}
+// Honesty: the checksum must be presented as the archive's RECORDED identity, not as a verification
+// this repository performed — the controlling PDF was never supplied to the integration.
+check("provenance states how the scan identity was established", typeof prov.source.scanIdentityBasis === "string" && prov.source.scanIdentityBasis.length > 80);
+check("it does not claim an independent recomputation", /NOT independently recomputed/i.test(prov.source.scanIdentityBasis));
+check("it says the identity is as recorded by the source archive", /AS RECORDED BY THE SOURCE ARCHIVE/i.test(prov.source.scanIdentityBasis));
+check("no document claims this repository verified the PDF", !/(we|this repository) (re)?computed|independently verified the pdf/i.test(JSON.stringify(prov)));
+check("the provenance page surfaces the basis", readText(path.join(process.cwd(), "components/PlaySource.tsx")).includes("scanIdentityBasis"));
 eq("PDF not committed", prov.source.sourcePdfCommitted, false);
 check("no PDF vendored", !fs.readdirSync(DATA).some((f) => f.toLowerCase().endsWith(".pdf")));
 check("source repo commits no PDF either", !execFileSync("git", ["-C", SRC_REPO, "ls-files"], { encoding: "utf8" }).split("\n").some((f) => f.toLowerCase().endsWith(".pdf")));

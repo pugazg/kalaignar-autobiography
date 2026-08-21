@@ -47,7 +47,7 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
           <dl className="mt-3">
             <Row label={ta ? "கோப்பு" : "Scan file"}><span className="font-mono text-xs">{s.scanFilename}</span></Row>
             <Row label="SHA-256"><span className="font-mono text-[11px] break-all">{s.scanSha256}</span></Row>
-            <Row label={ta ? "அளவு" : "File size"}>{s.scanFileSizeBytes?.toLocaleString() ?? "—"} bytes</Row>
+            <Row label={ta ? "அளவு" : "File size"}>{s.scanFileSizeBytes.toLocaleString()} bytes</Row>
             <Row label={ta ? "ஸ்கேன் பக்கங்கள்" : "Scan pages"}>{s.scanTotalPages}</Row>
             <Row label={ta ? "PDF சேமிப்பு" : "PDF committed"}>{ta ? "இல்லை — களஞ்சியத்திற்கு வெளியே" : "No — held outside the repository"}</Row>
             <Row label={ta ? "பக்கப் பதிவுகள்" : "Page records"}>{s.pageRecordsVerified}</Row>
@@ -58,7 +58,12 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
               <span className="font-mono text-xs">{prov.sourceRepo}</span> @ <span className="font-mono text-[11px]">{prov.sourceCommit}</span>
             </Row>
           </dl>
-          <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
+          {/* States plainly how the identity above was established, so the checksum is never read
+              as a verification this repository performed. */}
+          <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang="en">
+            {s.scanIdentityBasis}
+          </p>
+          <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
             {s.publicationYearNote}
           </p>
         </Card>

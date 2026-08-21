@@ -147,9 +147,11 @@ export type PlayProvenance = {
   source: {
     scanFilename: string;
     scanSha256: string;
-    scanFileSizeBytes: number | null;
+    scanFileSizeBytes: number;
     scanTotalPages: number;
     sourcePdfCommitted: boolean;
+    /** How the scan identity above was established — see the importer; never overclaims. */
+    scanIdentityBasis: string;
     pageRecordsVerified: string;
     sourceAudit: string;
     assembledLayer: string;
