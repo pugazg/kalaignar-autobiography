@@ -28,10 +28,18 @@ export default function ThirukkuralLanding({
         <p className="mt-2 font-tamil text-xl text-marina dark:text-marina-light" lang="ta">
           {index.subtitle.ta}
         </p>
-        {/* The editorial introduction. One factual sentence naming both voices and what this
-            reading room contains — no interpretation, no claim the sources do not support. */}
+        {/* The editorial introduction, in three separate statements. They are kept apart because
+            they rest on different warrants: what the work is, which edition this room is built on,
+            and what that edition says about Kalaignar's role. There is deliberately no fourth
+            sentence claiming the edition names Thiruvalluvar — it does not. */}
         <p className="mt-7 font-tamil text-base leading-[1.9] text-ink/75 dark:text-night-text/75" lang="ta">
-          {ATTR.summaryTa}
+          {ATTR.landingTa.whatItIs}
+        </p>
+        <p className="mt-4 font-tamil text-base leading-[1.9] text-ink/75 dark:text-night-text/75" lang="ta">
+          {ATTR.landingTa.editionBasis(prov.edition.statement, prov.edition.publisher)}
+        </p>
+        <p className="mt-4 font-tamil text-base leading-[1.9] text-ink/75 dark:text-night-text/75" lang="ta">
+          {ATTR.landingTa.roleStatedByEdition}
         </p>
       </div>
 

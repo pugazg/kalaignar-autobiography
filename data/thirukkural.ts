@@ -155,6 +155,45 @@ export function loadKural(n: number): { entry: ThirukkuralEntry; adhikaram: Thir
 //
 // The distinction matters because the whole point of naming both voices is to stop one being taken
 // for the other. Claiming a source for an attribution the source does not make would undercut that.
+//
+// ATTRIBUTION BASIS — the short version, for anyone changing this file:
+//
+//   Kalaignar's role  →  "source-stated-by-edition"
+//                        The book says it. Safe to present as a fact ABOUT THE EDITION, and safe
+//                        to carry in provenance.
+//
+//   Thiruvalluvar     →  "general-literary-knowledge"
+//                        The book does NOT say it. True, but external to this source — so it is
+//                        NEVER written into public/data/thirukkural/provenance.json, and the reader
+//                        is never told the edition names him. If a future edition or an upstream
+//                        manifest field does name him, THAT is the moment this becomes
+//                        source-stated — not before.
+//
+// Reader-facing copy must therefore never say "this book states that Thiruvalluvar…". It may say
+// that Thiruvalluvar composed the Kural, and separately that this edition designates Kalaignar its
+// உரையாசிரியர். Those are two claims with two different warrants and they stay apart.
+//
+// ── FUTURE (catalogue, a later step — do NOT implement here) ─────────────────────────────────────
+// This work is not the only one where Kalaignar is not the original creator: Silappathikaram will
+// raise the same question with Ilango Adigal. The catalogue in data/library.ts currently models
+// rights and literary form but NOT Kalaignar's role relative to a work, which means
+// `rightsStatus: "nationalised-by-tamil-nadu-government"` applied naively to this work would assert
+// that Thiruvalluvar's couplets were nationalised. They were not; the உரை is the Kalaignar-authored
+// layer. The proposed shape, to be added to data/library.ts when Thirukkural is catalogued:
+//
+//   type KalaignarRole = "author" | "commentator" | "adapter" | "speaker" | "translator";
+//
+//   interface WorkAttribution {
+//     originalCreatorTa?: string;   // unset when Kalaignar IS the original creator
+//     originalCreatorEn?: string;
+//     kalaignarRole: KalaignarRole;
+//     contributionTa?: string;      // what the edition calls it, e.g. "உரை"
+//     basis: "source-stated-by-edition" | "general-literary-knowledge";
+//   }
+//
+// Deliberately not Thirukkural-specific: it covers commentator (Thirukkural), adapter
+// (Silappathikaram), speaker (speeches) and author (poems) on one model, and lets `rights` be
+// scoped to the Kalaignar-authored layer rather than to the whole work.
 export const THIRUKKURAL_ATTRIBUTION = {
   originalWork: { ta: "திருக்குறள்", en: "Thirukkural" },
   originalCreator: {
@@ -167,7 +206,7 @@ export const THIRUKKURAL_ATTRIBUTION = {
     ta: "கலைஞர் மு. கருணாநிதி",
     en: "Kalaignar M. Karunanidhi",
     /** The edition names him and prints his role. */
-    basis: "stated-by-edition" as const,
+    basis: "source-stated-by-edition" as const,
   },
   contribution: {
     ta: "உரை",
@@ -175,10 +214,26 @@ export const THIRUKKURAL_ATTRIBUTION = {
     /** As the edition's own printed rights line has it: உரிமை : உரையாசிரியருக்கு. */
     roleTa: "உரையாசிரியர்",
     roleEn: "commentator",
-    basis: "stated-by-edition" as const,
+    basis: "source-stated-by-edition" as const,
   },
-  /** One factual sentence for the landing page. No interpretation, no claims beyond the above. */
-  summaryTa:
-    "திருவள்ளுவர் அருளிய திருக்குறளுக்குக் கலைஞர் மு. கருணாநிதி அவர்கள் வழங்கிய உரை. " +
-    "இந்த வாசிப்பு அறையில் 1330 குறள்களும் கலைஞர் உரையுடன் ஆவணப்படுத்தப்பட்டுள்ளன.",
+  /**
+   * Landing copy, as three separate statements rather than one blended sentence — each carries a
+   * different warrant and blending them would hide that:
+   *   1. what the work is and who did what   (composition vs commentary)
+   *   2. which physical edition this reading room rests on
+   *   3. that THIS EDITION designates Kalaignar its உரையாசிரியர்
+   * Note (3) is phrased as a fact about the edition, which it is. There is deliberately no
+   * counterpart sentence claiming the edition names Thiruvalluvar, because it does not.
+   */
+  landingTa: {
+    whatItIs:
+      "திருவள்ளுவர் இயற்றிய திருக்குறளுக்குக் கலைஞர் மு. கருணாநிதி அவர்கள் உரை வழங்கிய பதிப்பு. " +
+      "இந்த வாசிப்பு அறையில் 1330 குறள்களும் கலைஞர் உரையுடன் ஆவணப்படுத்தப்பட்டுள்ளன.",
+    editionBasis: (edition: string | null, publisher: string | null) =>
+      `இந்த வாசிப்பு அறை “திருக்குறள் — கலைஞர் உரை”${
+        publisher || edition ? ` (${[publisher, edition].filter(Boolean).join(", ")})` : ""
+      } என்ற பதிப்பை அடிப்படையாகக் கொண்டது.`,
+    roleStatedByEdition:
+      "இந்தப் பதிப்பில் கலைஞர் அவர்கள் உரையாசிரியராகக் குறிப்பிடப்படுகிறார்.",
+  },
 } as const;
