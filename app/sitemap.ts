@@ -63,6 +63,24 @@ function loadPlaySceneSlugs(slug: string): string[] {
   }
 }
 
+/**
+ * Kural and அதிகாரம் numbers come from the generated Thirukkural index, exactly as every other
+ * loader here reads from generated data, so the sitemap can never drift from the routes that
+ * actually exist.
+ */
+function loadThirukkural(): { kurals: number[]; adhikarams: number[] } {
+  try {
+    const p = path.join(process.cwd(), "public/data/thirukkural/index.json");
+    const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as {
+      kurals: { number: number }[];
+      adhikarams: { number: number }[];
+    };
+    return { kurals: idx.kurals.map((k) => k.number), adhikarams: idx.adhikarams.map((a) => a.number) };
+  } catch {
+    return { kurals: [], adhikarams: [] };
+  }
+}
+
 function loadEssayArticleSlugs(slug: string): string[] {
   try {
     const p = path.join(process.cwd(), "public/data/essays", slug, "publication.json");
@@ -77,6 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const idx = murasoliIndex as MurasoliIndex;
   const murasoliIds = [...loadLetterIds(), ...idx.volumes.flatMap((v) => v.pages.map((p) => p.id))];
+  const thirukkural = loadThirukkural();
   return [
     { url: BASE, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/read`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
@@ -155,5 +174,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.5,
       })),
     ]),
+    // LITERARY COMMENTARY — Thirukkural (Phase 8D-1). The landing, its provenance page, one
+    // route per அதிகாரம் and one per குறள்.
+    //
+    // WHY EVERY KURAL IS LISTED. The established strategy in this file is landing + provenance +
+    // one entry per reading unit, derived from generated data — Murasoli lists 688 such URLs and
+    // Tholkappiyam 103. The குறள் page is this work's reading unit: it is what the Daily Kural
+    // links to, what a reader searching a half-remembered line is looking for, and the only place
+    // Kalaignar's உரை on that couplet appears. Listing only /thirukkural would leave the substance
+    // of the work — 1330 distinct commentaries — undiscoverable, which is the opposite of crawl
+    // quality. This adds 1465 URLs to a sitemap of ~1300, far inside the 50,000-URL limit, so
+    // there is no explosion to avoid. அதிகாரம் pages rank a step below the landing because they
+    // are navigational hubs; the குறள் pages carry the reading.
+    { url: `${BASE}/thirukkural`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${BASE}/thirukkural/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ...thirukkural.adhikarams.map((n) => ({
+      url: `${BASE}/thirukkural/adhikaram/${n}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
+    })),
+    ...thirukkural.kurals.map((n) => ({
+      url: `${BASE}/thirukkural/kural/${n}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
   ];
 }

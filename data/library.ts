@@ -273,6 +273,46 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     // implementation data (not guessed).
   },
   {
+    // LITERARY COMMENTARY — Phase 8D-1. The second work on the இலக்கிய உரை shelf, and the first
+    // with a `kural-commentary` reader: a fixed four-level hierarchy (பால் → இயல் → அதிகாரம் →
+    // குறள்) in which each unit pairs Thiruvalluvar's couplet with Kalaignar's separate prose on
+    // it. Deliberately not `commentary-unit`, whose units are free-standing prose without that
+    // hierarchy and without a second authorial voice to hold apart.
+    id: "thirukkural-kalaignar-urai",
+    slug: "thirukkural",
+    titleTa: "திருக்குறள் — கலைஞர் உரை",
+    titleEn: "Thirukkural — Kalaignar Commentary",
+    shelf: "literary-commentary",
+    subtype: "commentary",
+    readerStructure: "kural-commentary",
+    href: "/thirukkural",
+    state: "published",
+    // Wording taken from the reading room's own approved copy, which in turn rests on the edition:
+    // its title page reads திருக்குறள் / கலைஞர் உரை and its printed rights line reads
+    // "உரிமை : உரையாசிரியருக்கு". Nothing is claimed here that those do not support.
+    descTa: "திருவள்ளுவர் இயற்றிய குறள்களுக்குக் கலைஞர் வழங்கிய உரை — 133 அதிகாரங்கள்",
+    descEn: "Kalaignar's commentary on Thiruvalluvar's couplets — 133 adhikarams",
+    sourceRepo: "pugazg/kalaignar-literary-commentary",
+    sourcePath: "works/thirukkural",
+    sourceCommit: "d2a88fc62457c4bad59a3057e4f4c01e55b2f5a4",
+    edition: "பூம்புகார் பதிப்பகம் — இரண்டாவது பதிப்பு, மார்ச் 2010",
+    tamil: "complete",
+    // `english` intentionally UNSET. The source archive holds released English page records, but
+    // the reading room exposes none of them, and this field describes what a reader can actually
+    // read here. Recording "complete" would advertise a layer that does not exist; recording
+    // "none" would misstate the archive. An English layer is a separate phase.
+    unitCount: { value: 1330, labelTa: "குறள்கள்", labelEn: "Kurals" },
+    // `rights` intentionally UNSET (equivalent to "unclassified"). The nationalisation model
+    // describes the PRESENT status of the underlying work AUTHORED BY KALAIGNAR. Here the
+    // underlying work is Thiruvalluvar's, and Kalaignar authored the உரை alone — so applying
+    // `nationalised-by-tamil-nadu-government` to this catalog entry would assert that
+    // Thiruvalluvar's couplets were nationalised, which is not what the order says and not what
+    // this edition's own "உரிமை : உரையாசிரியருக்கு" says either. Scoping rights to the
+    // Kalaignar-authored layer needs the WorkAttribution model proposed in data/thirukkural.ts;
+    // until that exists, nothing is claimed rather than something wrong.
+    provenanceHref: "/thirukkural/source",
+  },
+  {
     id: "manohara",
     slug: "manohara",
     titleTa: "மனோகரா",
