@@ -61,15 +61,15 @@ jobs:
     # the SOURCE ARCHIVE at the exact commit the released data is pinned to — so this job proves the
     # data in this repository still matches the archive it claims to come from.
     #
-    # ── CREDENTIALS ──────────────────────────────────────────────────────────────────────────────
-    # All seven source archives are PRIVATE repositories. This repository is public, and the default
-    # GITHUB_TOKEN is scoped to THIS repository only, so it cannot read them. The job therefore needs
-    # a token with read access to the source archives, supplied as the repository secret
-    # SOURCE_ARCHIVES_TOKEN (a fine-grained PAT with Contents: read on the seven source repos).
+    # ── ACCESS ───────────────────────────────────────────────────────────────────────────────────
+    # All seven source archives are PUBLIC repositories, so they are cloned anonymously and this job
+    # needs NO secret. An earlier revision required a SOURCE_ARCHIVES_TOKEN because the archives were
+    # private at the time; that dependency is gone, and with it the risk of the gate sitting red
+    # waiting on a credential.
     #
-    # If that secret is absent the job FAILS with an explicit message. It does NOT skip validation
-    # quietly and it does NOT pass vacuously — a green tick that proved nothing would be worse than
-    # no gate at all.
+    # What has NOT changed is the pinning discipline: sources are fetched BY the exact commit each
+    # work records, never at a branch tip, and an unobtainable pin fails the job loudly rather than
+    # falling back to whatever main happens to be.
     name: archival validators
     runs-on: ubuntu-latest
     steps:
@@ -81,21 +81,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check source-archive credentials
-        env:
-          SOURCE_ARCHIVES_TOKEN: ${{ secrets.SOURCE_ARCHIVES_TOKEN }}
-        run: |
-          if [ -z "${SOURCE_ARCHIVES_TOKEN:-}" ]; then
-            echo "::error::SOURCE_ARCHIVES_TOKEN is not set. The seven Kalaignar source archives are"
-            echo "::error::private repositories and the default GITHUB_TOKEN cannot read them, so the"
-            echo "::error::archival validators cannot run. Add a fine-grained PAT with Contents: read"
-            echo "::error::on kalaignar-{cinema-works,assembly-speeches,public-speeches,poems,essays,"
-            echo "::error::novels,stage-plays} as the repository secret SOURCE_ARCHIVES_TOKEN."
-            echo "::error::Validation is failing rather than being skipped: a pass here must mean the"
-            echo "::error::released data was actually checked against its pinned sources."
-            exit 1
-          fi
-          echo "Source-archive credentials present."
 
       # ── The source dependency model ───────────────────────────────────────────────────────────
       # Every validator takes the path to a clone of its source repository as argv[2], and refuses
@@ -111,7 +96,6 @@ jobs:
         id: fetch
         env:
           KDL_SOURCES_DIR: ${{ runner.temp }}/sources
-          SOURCE_ARCHIVES_TOKEN: ${{ secrets.SOURCE_ARCHIVES_TOKEN }}
         run: |
           set -euo pipefail
           mkdir -p "$KDL_SOURCES_DIR"
@@ -148,7 +132,8 @@ jobs:
             echo "::group::$repo @ $pin"
             dest="$KDL_SOURCES_DIR/$repo"
             git init -q "$dest"
-            git -C "$dest" remote add origin "https://x-access-token:${SOURCE_ARCHIVES_TOKEN}@github.com/pugazg/$repo.git"
+            # Public repositories: anonymous clone, no credential needed.
+            git -C "$dest" remote add origin "https://github.com/pugazg/$repo.git"
             # Fetch BY SHA: several pins are historical and are not any branch tip.
             if ! git -C "$dest" fetch -q --depth 1 origin "$pin"; then
               echo "::error::Could not fetch $repo at pinned commit $pin — validation cannot proceed."
