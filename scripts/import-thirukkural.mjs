@@ -72,6 +72,12 @@ if (manifest.identityVerification?.level !== "content-correspondence-verified") 
   die(`source identity verification level is "${manifest.identityVerification?.level}" — refusing to import below content-correspondence-verified`);
 }
 const cs = manifest.controllingSource;
+// Page records cite the working file the transcription was made from — a `processing-split` of the
+// controlling PDF, declared upstream in derivedFiles. That is a transcription witness, NOT the
+// archival source, and the two must never be confused. Every cited file must be a declared split;
+// an undeclared filename means the archive gained a provenance path nobody has examined.
+const derivedFiles = new Map((manifest.derivedFiles ?? []).map((d) => [d.filename, d]));
+if (!derivedFiles.size) die("upstream manifest declares no derivedFiles — cannot verify transcription witnesses");
 if (!/^[0-9a-f]{64}$/.test(cs?.sha256 ?? "")) die("controlling source has no valid sha256");
 if (cs.pageCount !== manifest.totalScans) die("controlling source page count disagrees with totalScans");
 if (manifest.pageCorrespondence?.type !== "one-to-one" || manifest.pageCorrespondence?.sourcePageEqualsArchiveScan !== true) {
@@ -256,6 +262,20 @@ for (const p of pages) {
       break;
     }
     if (!urai?.trim()) die(`Kural ${number} on ${p.file} has no Kalaignar urai following it`);
+    if (p.sourceFilename === cs.filename) {
+      die(
+        `Kural ${number} on ${p.file} cites the controlling source directly. Page records cite the ` +
+          `processing split they were transcribed from; a record naming the controlling PDF means the ` +
+          `provenance chain has changed shape and must be re-examined.`,
+      );
+    }
+    if (!derivedFiles.has(p.sourceFilename)) {
+      die(
+        `Kural ${number} on ${p.file} cites source file "${p.sourceFilename}", which the upstream ` +
+          `manifest does not declare in derivedFiles. Refusing to publish a provenance path the ` +
+          `archive has not accounted for.`,
+      );
+    }
     if (p.printedPage === null) die(`Kural ${number} on ${p.file} has no printed page; this edition prints one on every commentary page`);
 
     const ad = adhikaramOf(number);
@@ -267,7 +287,14 @@ for (const p of pages) {
       adhikaram: { number: ad.number, tamil: ad.ta, from: ad.from, to: ad.to },
       tamilText,
       kalaignarUrai: urai,
-      source: { filename: p.sourceFilename, scan: p.scan, printedPage: p.printedPage, pageType: p.pageType, record: p.file },
+      source: {
+        filename: p.sourceFilename,
+        role: derivedFiles.get(p.sourceFilename).role,
+        scan: p.scan,
+        printedPage: p.printedPage,
+        pageType: p.pageType,
+        record: p.file,
+      },
       commentary: { author: "மு. கருணாநிதி", edition: manifest.edition },
     });
   }
@@ -397,6 +424,15 @@ const provenance = {
     commentaryPagesCarryingKurals: commentaryScans.size,
     adhikaramReadmeSchemas: schemaUse,
   },
+  transcriptionWitnesses: {
+    note:
+      "Each Kural records the file it was transcribed from. Those are `processing-split` derivations " +
+      "of the controlling PDF, declared upstream in derivedFiles and carried here for traceability. " +
+      "They are transcription witnesses, not the archival source: the controlling source is the single " +
+      "file named under controllingSource above.",
+    declaredDerivedFiles: manifest.derivedFiles.length,
+    citedByKurals: 0,
+  },
   textualFidelity:
     "The couplet's two printed lines are carried separately and never joined. Spelling, sandhi, " +
     "punctuation and spacing are reproduced exactly as printed; nothing is modernised or normalised.",
@@ -421,6 +457,7 @@ const provenance = {
     ],
   },
 };
+provenance.transcriptionWitnesses.citedByKurals = new Set(ordered.map((k) => k.source.filename)).size;
 fs.writeFileSync(path.join(OUT, "provenance.json"), JSON.stringify(provenance, null, 1) + "\n");
 
 const sha = (f) => execFileSync("shasum", ["-a", "256", f], { encoding: "utf8" }).split(" ")[0];

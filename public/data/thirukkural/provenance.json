@@ -73,6 +73,11 @@
    "english": 56
   }
  },
+ "transcriptionWitnesses": {
+  "note": "Each Kural records the file it was transcribed from. Those are `processing-split` derivations of the controlling PDF, declared upstream in derivedFiles and carried here for traceability. They are transcription witnesses, not the archival source: the controlling source is the single file named under controllingSource above.",
+  "declaredDerivedFiles": 15,
+  "citedByKurals": 14
+ },
  "textualFidelity": "The couplet's two printed lines are carried separately and never joined. Spelling, sandhi, punctuation and spacing are reproduced exactly as printed; nothing is modernised or normalised.",
  "excludedFromReadingBody": {
   "rule": "Kural text and Kalaignar urai are taken ONLY from page records whose page_type is \"commentary\". Pages that quote a Kural are never a source of its text.",
