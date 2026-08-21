@@ -1,0 +1,89 @@
+{
+  "workId": "1989-05-03-industries-debate",
+  "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+  "sourcePath": "speeches/1989/1989-05-03-industries-debate",
+  "sourceCommit": "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+  "source": {
+    "publicationTitleTa": "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள்",
+    "editionTa": "முதற்பதிப்பு",
+    "publicationDate": "2007-05",
+    "publicationDatePrintedTa": "மே, 2007",
+    "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+    "publisherLocationTa": "சென்னை - 600 004",
+    "salesRightsTa": "பூம்புகார் பதிப்பகம்",
+    "scanFilename": "TVA_BOK_0065516_தொழில்துறை_பற்றி_கலைஞரின்_சட்டமன்ற_உரைகள்.pdf",
+    "scanTotalPages": 329,
+    "scanFileSizeBytes": 217124211,
+    "scanSha256": "c26003fe77b97adc6487ba0e4c00c9fa34a0a53839aa326d3ef5897f8616d370",
+    "speechScanPages": "62-98",
+    "speechPrintedPages": "61-97",
+    "scanToPrintedRelationship": "For this speech, scan page = printed page + 1.",
+    "sourceAuthority": "scan image",
+    "speechSourceLabelTa": "உரை : 3",
+    "speechPrintedDate": "03.05.1989"
+  },
+  "archiveVerification": {
+    "registry": "data/speeches.json",
+    "transcriptionStatus": "verified",
+    "verifiedAgainstScan": true,
+    "translationStatus": "verified"
+  },
+  "releaseReadiness": {
+    "basis": "archive-index",
+    "explicitPerSpeechReleaseBlockPresent": false,
+    "note": "The archive registry records this speech as verified against the scan with a verified translation. The per-speech metadata contains no explicit release block, so none is reported here; its absence is recorded rather than filled in."
+  },
+  "crossPageJoinPolicy": {
+    "policy": "space",
+    "basis": "archive-normalisation-rule",
+    "individualAdjudication": false,
+    "appliedBoundaries": 29,
+    "unresolvedBoundaries": 7,
+    "note": "Physical page-boundary continuations are joined with one space under the archive's normalisation policy (ARCHIVAL_WORKFLOW.md permits normalising physical line wraps into paragraphs). The source archive provides no per-boundary adjudication for this speech, so no boundary here is claimed to have been checked individually against the scan. Each source fragment is stored verbatim as its own segment with its own source page; the separator is inserted only when the paragraph is read, never into the stored text."
+  },
+  "transcription": {
+    "method": "manual first-pass transcription from scan images, followed by full-speech completeness audit and strict direct page-by-page visual source-fidelity verification",
+    "status": "verified",
+    "full_speech_scan_pages": "62-98",
+    "completed_scan_pages": "62-98",
+    "completed_printed_pages": "61-97",
+    "next_scan_page": null,
+    "page_markers_audited_for_completed_batch": true,
+    "full_speech_completeness_audit": true,
+    "full_speech_page_marker_audit": true,
+    "verified_against_scan": true,
+    "verified_scan_pages": "62-98",
+    "strict_full_speech_visual_verification": true,
+    "explicit_unresolved_reading_markers": 0,
+    "unresolved_readings": 0,
+    "preserves_source_wording_spelling_punctuation_numerals_headings_speaker_labels_and_printed_english": true,
+    "completion_note": "All 37 mapped scan pages 62-98 are represented. Markers are unique and monotonic. Scan p.98 ends Speech 3 with Kalaignar's reply to Thiru V.K. Chinnasamy followed by the decorative ending ornament; scan p.99 begins Speech 4 (18.04.1990).",
+    "verification_note": "The complete Tamil transcript for scan pp.62-98 was checked directly page by page against the controlling scan. Four concrete first-pass discrepancies found in that audit were corrected in transcript.md and documented in verification-log.md."
+  },
+  "translation": {
+    "language": "English",
+    "placement": "after the complete verified Tamil transcription",
+    "status": "verified",
+    "requires_verified_tamil": true,
+    "tamil_gate_satisfied": true,
+    "source": "final verified Tamil transcription",
+    "completed_source_pages": "62-98",
+    "source_page_correspondence": true,
+    "verified_against_tamil": true,
+    "verification_gate": "Gate G passed",
+    "verification_pages": "62-98",
+    "completion_note": "Gate F translated the full speech; Gate G re-read all 37 English source-page sections 62-98 against the final verified Tamil, corrected the documented fidelity/source-preservation discrepancies, and confirmed complete source-page correspondence, speaker/intervention fidelity, figures, names, terminology and source anomalies."
+  },
+  "archiveDerived": {
+    "tamilSourcePages": 37,
+    "englishSourcePages": 37,
+    "tamilBlocks": 90,
+    "englishBlocks": 93,
+    "tamilHeadings": 0,
+    "englishHeadings": 0,
+    "tamilParagraphs": 83,
+    "tamilUnresolvedBreaks": 7,
+    "englishUnresolvedBreaks": 8,
+    "englishParagraphs": 84
+  }
+}
