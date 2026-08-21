@@ -2,10 +2,16 @@ name: Library CI
 
 # Quality gates for the Digital Library web application.
 #
-# Until now every gate — typecheck, build, and the eight per-work validators — was run by hand.
+# Until now every gate — typecheck, build, and the per-work validators — was run by hand.
 # Vercel builds the site, but nothing checked types or verified that the released archival data
 # still matches its pinned sources. This workflow automates exactly those existing gates. It adds
 # no new checks and changes no validator behaviour.
+#
+# Phase 8D-2.1 closed a correctness gap: Thirukkural shipped in #32 and #33 with its validator
+# wired into neither `npm run validate` nor this workflow, so the largest work in the library —
+# 1330 Kurals, 32,949 assertions, and the review-page quotation trap that guards its text — was the
+# only one merging with no automated protection. It is now fetched and validated like every other
+# work, and the deterministic Daily Kural selection test runs alongside typecheck and build.
 #
 # Deliberately NOT in this workflow (Phase 8C-1 scope):
 #   * importer re-run / determinism checks — that needs source-checkout orchestration and its own
@@ -55,6 +61,12 @@ jobs:
         run: npm run typecheck
       - name: Build
         run: npm run build
+      # Deterministic feature test, not an archival validator: it needs no source clone, only the
+      # released Thirukkural index. It pins FNV-1a against published vectors and a known date, so a
+      # change to the hash — which would silently reassign every day's Kural, past and future —
+      # fails here instead of shipping.
+      - name: Daily Kural determinism
+        run: npm run test:daily-kural
 
   validate:
     # Source-integrity gate. Each published work has a validator that derives its expectations from
@@ -62,7 +74,7 @@ jobs:
     # data in this repository still matches the archive it claims to come from.
     #
     # ── ACCESS ───────────────────────────────────────────────────────────────────────────────────
-    # All seven source archives are PUBLIC repositories, so they are cloned anonymously and this job
+    # All eight source archives are PUBLIC repositories, so they are cloned anonymously and this job
     # needs NO secret. An earlier revision required a SOURCE_ARCHIVES_TOKEN because the archives were
     # private at the time; that dependency is gone, and with it the risk of the gate sitting red
     # waiting on a credential.
@@ -110,6 +122,7 @@ jobs:
               "essays/sakkaravarththiyin-thirumagan": "kalaignar-essays",
               "novels/balipeedam-nokki": "kalaignar-novels",
               "plays/silappathikaram-nataka-kappiyam": "kalaignar-stage-plays",
+              "thirukkural": "kalaignar-literary-commentary",
             };
             const seen = new Map();
             for (const [p, repo] of Object.entries(works)) {
@@ -178,3 +191,7 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-silappathikaram.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays"
+      - name: Thirukkural
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-thirukkural.mjs "$KDL_SOURCES_DIR/kalaignar-literary-commentary"
