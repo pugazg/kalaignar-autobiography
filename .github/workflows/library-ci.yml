@@ -60,6 +60,16 @@ jobs:
     # Source-integrity gate. Each published work has a validator that derives its expectations from
     # the SOURCE ARCHIVE at the exact commit the released data is pinned to — so this job proves the
     # data in this repository still matches the archive it claims to come from.
+    #
+    # ── CREDENTIALS ──────────────────────────────────────────────────────────────────────────────
+    # All seven source archives are PRIVATE repositories. This repository is public, and the default
+    # GITHUB_TOKEN is scoped to THIS repository only, so it cannot read them. The job therefore needs
+    # a token with read access to the source archives, supplied as the repository secret
+    # SOURCE_ARCHIVES_TOKEN (a fine-grained PAT with Contents: read on the seven source repos).
+    #
+    # If that secret is absent the job FAILS with an explicit message. It does NOT skip validation
+    # quietly and it does NOT pass vacuously — a green tick that proved nothing would be worse than
+    # no gate at all.
     name: archival validators
     runs-on: ubuntu-latest
     steps:
@@ -70,6 +80,22 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+
+      - name: Check source-archive credentials
+        env:
+          SOURCE_ARCHIVES_TOKEN: ${{ secrets.SOURCE_ARCHIVES_TOKEN }}
+        run: |
+          if [ -z "${SOURCE_ARCHIVES_TOKEN:-}" ]; then
+            echo "::error::SOURCE_ARCHIVES_TOKEN is not set. The seven Kalaignar source archives are"
+            echo "::error::private repositories and the default GITHUB_TOKEN cannot read them, so the"
+            echo "::error::archival validators cannot run. Add a fine-grained PAT with Contents: read"
+            echo "::error::on kalaignar-{cinema-works,assembly-speeches,public-speeches,poems,essays,"
+            echo "::error::novels,stage-plays} as the repository secret SOURCE_ARCHIVES_TOKEN."
+            echo "::error::Validation is failing rather than being skipped: a pass here must mean the"
+            echo "::error::released data was actually checked against its pinned sources."
+            exit 1
+          fi
+          echo "Source-archive credentials present."
 
       # ── The source dependency model ───────────────────────────────────────────────────────────
       # Every validator takes the path to a clone of its source repository as argv[2], and refuses
@@ -82,8 +108,10 @@ jobs:
       # repository is fetched BY SHA. If a source repository or a pinned commit cannot be obtained,
       # this step FAILS LOUDLY naming the repo and pin — validation is never silently skipped.
       - name: Fetch source archives at their pinned commits
+        id: fetch
         env:
           KDL_SOURCES_DIR: ${{ runner.temp }}/sources
+          SOURCE_ARCHIVES_TOKEN: ${{ secrets.SOURCE_ARCHIVES_TOKEN }}
         run: |
           set -euo pipefail
           mkdir -p "$KDL_SOURCES_DIR"
@@ -120,7 +148,7 @@ jobs:
             echo "::group::$repo @ $pin"
             dest="$KDL_SOURCES_DIR/$repo"
             git init -q "$dest"
-            git -C "$dest" remote add origin "https://github.com/pugazg/$repo.git"
+            git -C "$dest" remote add origin "https://x-access-token:${SOURCE_ARCHIVES_TOKEN}@github.com/pugazg/$repo.git"
             # Fetch BY SHA: several pins are historical and are not any branch tip.
             if ! git -C "$dest" fetch -q --depth 1 origin "$pin"; then
               echo "::error::Could not fetch $repo at pinned commit $pin — validation cannot proceed."
@@ -134,33 +162,34 @@ jobs:
 
       # One step per work, so a failure names the work in the Actions UI without reading logs.
       - name: Manohara
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-manohara.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works"
       - name: Udhaya Kathir
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-udhaya-kathir.mjs "$KDL_SOURCES_DIR/kalaignar-assembly-speeches"
       - name: Poonthottam
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-poonthottam.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches"
       - name: Arappor
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-arappor.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches"
       - name: Idhayathai Thanthidu Anna
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-idhayathai-thanthidu-anna.mjs "$KDL_SOURCES_DIR/kalaignar-poems"
       - name: Sakkaravarththiyin Thirumagan
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-sakkaravarththiyin-thirumagan.mjs "$KDL_SOURCES_DIR/kalaignar-essays"
       - name: Balipeedam Nokki
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-balipeedam-nokki.mjs "$KDL_SOURCES_DIR/kalaignar-novels"
       - name: Silappathikaram Nataka Kappiyam
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-silappathikaram.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays"
