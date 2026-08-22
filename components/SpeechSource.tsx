@@ -16,6 +16,10 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
   // no per-boundary adjudication exists. They are rendered separately and never share wording: to
   // describe the second with the first's copy would upgrade policy into scan-by-scan adjudication.
   const audit = ad.boundaryAudit;
+  // The two archive eras write the SAME fact under different keys — verified as the same concept,
+  // not assumed from the similar name: in both, the speech's printed range where it differs from
+  // the scan range. Resolved once here so every printed-range rendering agrees.
+  const printedPages = s.printedSpeechPages ?? s.speechPrintedPages;
   const joinPolicy = prov.crossPageJoinPolicy;
 
   const Row = ({ label, children, mono }: { label: string; children: React.ReactNode; mono?: boolean }) => (
@@ -42,7 +46,7 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
             {ta
               ? "இப்பக்கம் மூல உண்மைகளையும் (அச்சிட்ட நூல்/scan) காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது."
-              : "This page separates source facts (the printed booklet / scan) from the archive-derived reading structure."}
+              : "This page separates source facts (the printed publication / scan) from the archive-derived reading structure."}
           </p>
         </div>
       </header>
@@ -51,7 +55,7 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
         {/* SOURCE FACTS */}
         <section className="rounded-2xl border border-ink/10 bg-white/50 p-5 dark:border-white/10 dark:bg-night-surface/50">
           <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
-            <Landmark className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூல உண்மைகள் (அச்சிட்ட நூல்)" : "Source facts (the printed booklet)"}
+            <Landmark className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூல உண்மைகள் (அச்சிட்ட நூல்)" : "Source facts (the printed publication)"}
           </h2>
           <dl className="mt-3">
             <Row label={ta ? "நூல் தலைப்பு" : "Publication title"}><span className="font-tamil" lang="ta">{s.publicationTitleTa}</span></Row>
@@ -66,21 +70,26 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             {s.scanFileSizeBytes != null && <Row label={ta ? "Scan அளவு" : "Scan size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>}
             <Row label={ta ? "Scan பக்கங்கள்" : "Scan pages"}>
               {s.scanTotalPages} {ta ? "மொத்தம்" : "total"} · {ta ? "உரை" : "speech"} {s.speechScanPages}
-              {s.printedSpeechPages ? ` (${ta ? "அச்சு" : "printed"} ${s.printedSpeechPages})` : ""} · {ta ? "முன்பகுதி" : "front"} {s.frontMatterScanPages} · {ta ? "பின்பகுதி" : "back"} {s.advertisementScanPages}
+              {printedPages ? ` (${ta ? "அச்சு" : "printed"} ${printedPages})` : ""}
+              {/* Front-matter and advertisement ranges belong to standalone booklets. An anthology
+                  section states neither, so neither label is printed for it. */}
+              {s.frontMatterScanPages ? ` · ${ta ? "முன்பகுதி" : "front"} ${s.frontMatterScanPages}` : ""}
+              {s.advertisementScanPages ? ` · ${ta ? "பின்பகுதி" : "back"} ${s.advertisementScanPages}` : ""}
             </Row>
           </dl>
           {/* Page-range wording is subtype-agnostic but PROVENANCE-honest: a printed-page range is
-              named "printed" ONLY when the source actually publishes one (`printedSpeechPages`).
+              named "printed" ONLY when the source actually publishes one (`printedSpeechPages` in the
+              benchmark era, `speechPrintedPages` in the assembly anthology — the same fact).
               Where it does not (e.g. Udhaya Kathir), the scan range is described as scan/PDF pages
               and is never relabelled as a printed-page range. */}
           <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
             {ta
-              ? s.printedSpeechPages
-                ? `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (scan பக்கம் ${s.speechScanPages} · அச்சுப் பக்கம் ${s.printedSpeechPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
+              ? printedPages
+                ? `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் பக்கங்கள் மட்டுமே (scan பக்கம் ${s.speechScanPages} · அச்சுப் பக்கம் ${printedPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
                 : `கட்டுப்படுத்தும் மூலம் அச்சிடப்பட்ட நூலின் scan. உரையின் scan பக்கங்கள் மட்டுமே (${s.speechScanPages}) படியெடுக்கப்பட்டுள்ளன. மூல PDF இங்கு சேமிக்கப்படவில்லை.`
-              : s.printedSpeechPages
-                ? `The controlling source is the scanned printed booklet; only the speech pages (scan ${s.speechScanPages} · printed ${s.printedSpeechPages}) are transcribed. The source PDF is not vendored here.`
-                : `The controlling source is the scanned printed booklet; only the speech scan pages (${s.speechScanPages}) are transcribed. The source PDF is not vendored here.`}
+              : printedPages
+                ? `The controlling source is the scanned printed publication; only the speech pages (scan ${s.speechScanPages} · printed ${printedPages}) are transcribed. The source PDF is not vendored here.`
+                : `The controlling source is the scanned printed publication; only the speech scan pages (${s.speechScanPages}) are transcribed. The source PDF is not vendored here.`}
           </p>
           {/* Written in English in the source provenance → always marked lang="en", even when the
               surrounding UI language is Tamil. */}
@@ -244,20 +253,25 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
 
                 {ta
 
-                  ? "இந்த உரையின் பக்க எல்லைகள் தனித்தனியாக மூலத்துடன் ஒப்பிடப்படவில்லை. காப்பகத்தின் இயல்பாக்கல் விதிப்படி, ஒரு வாக்கியம் பக்க எல்லையைத் தாண்டித் தொடரும்போது ஒரு இடைவெளி மட்டும் சேர்க்கப்படுகிறது. முந்தைய பகுதி ஒரு வாக்கியத்தை முடிக்கும் இடங்களில் பத்தி உறவு தீர்மானிக்கப்படாமலே விடப்படுகிறது."
+                  ? "இடைவெளி அல்லது பத்தி உறவு குறித்த தனித்தனி எல்லை ஆய்வை இந்த உரைக்குக் காப்பகம் பதிவு செய்யவில்லை. அதன் இயல்பாக்கல் விதிப்படி, ஒரு வாக்கியம் பக்க எல்லையைத் தாண்டித் தொடரும்போது ஒரு இடைவெளி மட்டும் சேர்க்கப்படுகிறது. முந்தைய பகுதி ஒரு வாக்கியத்தை முடிக்கும் இடங்களில் பத்தி உறவு ஊகிக்கப்படாமல், தீர்மானிக்கப்படாமலே விடப்படுகிறது."
 
-                  : "The page boundaries in this speech were not compared against the scan one by one. Under the archive's normalisation rule, a sentence running on across a page edge is joined with a single space; where the preceding fragment closes a sentence, the paragraph relationship is left explicitly unresolved rather than guessed."}
+                  : "The archive does not record per-boundary adjudication of spacing or paragraph relationship for this speech. Under its normalisation rule, a sentence running on across a page edge is joined with a single space; where the preceding fragment closes a sentence, the paragraph relationship is left explicitly unresolved rather than guessed."}
 
               </p>
 
             </div>
 
           )}
-          <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
-            {ta
-              ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல; பத்தி உறவுகள் நிறுத்தற்குறியிலிருந்து ஊகிக்கப்படவில்லை — ஒவ்வொரு எல்லையும் மூல ஆவணங்களின் அடிப்படையில் வெளிப்படையாகத் தணிக்கை செய்யப்பட்டது. ஆங்கிலப் பத்தி அமைப்பு மொழிபெயர்ப்பாளரின் சொந்த அமைப்பே; பக்க அடையாளங்கள் மூலச் சான்று மட்டுமே."
-              : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary, and paragraph relationships are NOT inferred from punctuation — every transition is classified in an explicit source-audited table. English paragraph structure is the translator's own; its source-page anchors are provenance only."}
-          </p>
+          {/* This paragraph makes the audited claim — every transition classified in an explicit
+              table — so it is shown only where a boundaryAudit actually exists. An anthology
+              speech has no such table and must not inherit the sentence. */}
+          {audit && (
+            <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
+              {ta
+                ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல; பத்தி உறவுகள் நிறுத்தற்குறியிலிருந்து ஊகிக்கப்படவில்லை — ஒவ்வொரு எல்லையும் மூல ஆவணங்களின் அடிப்படையில் வெளிப்படையாகத் தணிக்கை செய்யப்பட்டது. ஆங்கிலப் பத்தி அமைப்பு மொழிபெயர்ப்பாளரின் சொந்த அமைப்பே; பக்க அடையாளங்கள் மூலச் சான்று மட்டுமே."
+                : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary, and paragraph relationships are NOT inferred from punctuation — every transition is classified in an explicit source-audited table. English paragraph structure is the translator's own; its source-page anchors are provenance only."}
+            </p>
+          )}
           {/* Both blocker classes, explicitly and separately surfaced. */}
           {/* Blocker presentation. Two things must reach the reader: WHAT is unresolved
               (`detail`) and HOW it can legitimately be resolved (`resolution`) — the durable
