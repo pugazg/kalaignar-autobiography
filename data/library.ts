@@ -848,6 +848,51 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/novels/balipeedam-nokki/source",
   },
   {
+    // FICTION — Phase 8 benchmark B. The SECOND work on the புனைகதை shelf, and the first with the
+    // `story` reader structure, which has been declared in the envelope since Phase 6 and until now
+    // carried no work.
+    //
+    // A SHORT STORY IS NOT A NOVEL, even on the same shelf. `balipeedam-nokki` is section-based
+    // because the source archive's own assembled layer divides it into three ordered sections with
+    // their own routes; this is ONE continuous stream from scan 7 to scan 22 with no printed
+    // divisions at all. Hence `subtype: "short-story"` — the first non-`novel` subtype on this
+    // shelf — and `readerStructure: "story"`.
+    //
+    // `கற்பனையுரை` IS NOT PART OF THE TITLE. The booklet prints it under the title as its own word
+    // for what the piece is, so it belongs in the description and on the reading page, never
+    // concatenated into `titleTa`. The title is `கிழவன் கனவு`, nothing more.
+    //
+    // THREE FIELDS ARE DELIBERATELY UNSET, and each absence is a decision, not an omission:
+    //   * `edition` — the booklet states `இரண்டாம் பதிப்பு.` and that statement is published on the
+    //     work's provenance page, but there is no approved catalogue edition display for it here;
+    //   * `unitCount` — a single continuous story has no source-published numbered structure, and
+    //     the 16 scans it occupies are an archival fact about the scan, not units of the work;
+    //   * `rights` — nothing about this work's rights status has been established for the catalogue,
+    //     and the novel's nationalisation block is NOT copied across. Absence means unclassified,
+    //     exactly as the model says; a rights claim is never inherited from a shelf-mate.
+    id: "kizhavan-kanavu",
+    slug: "kizhavan-kanavu",
+    titleTa: "கிழவன் கனவு",
+    titleEn: "The Old Man's Dream",
+    shelf: "fiction",
+    subtype: "short-story",
+    readerStructure: "story",
+    href: "/stories/kizhavan-kanavu",
+    state: "published",
+    descTa: "ஒரு தொடர்ச்சியான சிறுகதை — நூல் தன் வடிவத்தை ‘கற்பனையுரை’ எனக் குறிக்கிறது",
+    descEn: "One continuous short story, printed under the booklet's own form label — an imagined narrative",
+    sourceRepo: "pugazg/kalaignar-short-stories",
+    sourcePath: "stories/kizhavan-kanavu",
+    sourceCommit: "d9a411d40bd54d9770e5b28854ac5b4e804dd419",
+    // The story itself is 16 of 16 scans verified with no unresolved reading — complete at the
+    // work boundary. (The booklet-wide 24-of-26 figure concerns front matter the story does not
+    // occupy, and is stated on the provenance page, not here.)
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    provenanceHref: "/stories/kizhavan-kanavu/source",
+  },
+  {
     // DRAMA — Phase 7 benchmark #1, and the first work on the நாடகங்கள் shelf. ONE printed stage
     // play in 38 numbered scenes plus a separate UNNUMBERED closing tableau
     // (`கண்ணகி சிலை நாட்டு விழா`). That tableau is NOT Scene 39 and is never counted among the 38,
