@@ -240,16 +240,32 @@ if (unresolved !== EXPECT_UNRESOLVED) die(`expected ${EXPECT_UNRESOLVED} unresol
 //
 // It runs against the raw sources and never touches what is written into story.json — the emphasis
 // in **ரஷ்யாவில் அல்ல!—தமிழ் நாட்டில்!!** stays in the generated reading text.
+// `norm` is for the coarse containment checks further down (conclusion present, erratum absent),
+// where whitespace is not the thing under test.
 const norm = (s) => nfc(s).replace(/[\s​]+/g, "");
+
+/**
+ * Normalisation for comparing the reading assembly against the archival page records.
+ *
+ * It removes STRUCTURAL Markdown and control syntax, and nothing else. Whitespace RUNS collapse to
+ * a single ordinary space — they are not deleted. That distinction is the whole point: deleting
+ * whitespace would make `சித்திரம் ; அந்தக்` compare equal to `சித்திரம்; அந்தக்`, and
+ * `தமிழ் நாட்டில்` equal to `தமிழ்நாட்டில்`, so a real change to the printed spacing would pass
+ * unnoticed. The source keeps that space before the semicolon in the story's final sentence, and
+ * this comparison has to be able to see it.
+ *
+ * Preserved: every space between textual tokens, spaces adjacent to punctuation, Tamil letters,
+ * punctuation, quote marks, semicolons, colons, dashes, ellipses and word boundaries.
+ */
 const normalizeForAuthorityComparison = (s) =>
-  norm(
-    nfc(s)
-      .replace(/<!--[\s\S]*?-->/g, "")
-      .replace(/^#{1,6}\s*/gm, "")
-      .replace(/^>\s?/gm, "")
-      .replace(/\*\*/g, "")
-      .replace(/\*/g, ""),
-  );
+  nfc(s)
+    .replace(/<!--[\s\S]*?-->/g, "")   // source-marker comments
+    .replace(/^#{1,6}\s*/gm, "")        // heading syntax
+    .replace(/^>\s?/gm, "")             // blockquote syntax
+    .replace(/\*\*/g, "")              // emphasis syntax
+    .replace(/\*/g, "")
+    .replace(/[\s​]+/g, " ")            // formatting whitespace runs → ONE space, never removed
+    .trim();
 
 const PRINTED_TEXT_HEADING = "# அச்சு உரை";
 const PRINTED_TEXT_END = "## அச்சு அல்லாத";
