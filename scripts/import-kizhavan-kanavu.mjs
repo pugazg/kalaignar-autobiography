@@ -35,11 +35,24 @@ const die = (m) => { throw new Error(m); };
 const nfc = (s) => s.normalize("NFC");
 const read = (p) => nfc(fs.readFileSync(p, "utf8"));
 
+// ── THE PIN IS HARD-LOCKED, NOT SUPPLIED ────────────────────────────────────────────────────────
+// The reviewed source state for this work. Comparing the clone's HEAD against a CLI argument only
+// proves the caller and the clone agree with each other — the archive could move to an unreviewed
+// commit and both would happily agree on it. Authority lives here, in the file, and the argument
+// is only an explicit confirmation that the caller means this same revision.
+const APPROVED_SOURCE_COMMIT = "d9a411d40bd54d9770e5b28854ac5b4e804dd419";
+
 let head;
 try { head = execFileSync("git", ["-C", SRC_REPO, "rev-parse", "HEAD"], { encoding: "utf8" }).trim(); }
 catch (e) { die(`unable to read git HEAD of ${SRC_REPO}: ${e.message}`); }
-if (head !== SRC_COMMIT) {
-  die(`source-commit mismatch: supplied ${SRC_COMMIT} but ${SRC_REPO} HEAD is ${head}.`);
+
+if (SRC_COMMIT !== APPROVED_SOURCE_COMMIT) {
+  die(`supplied source commit ${SRC_COMMIT} is not the approved pin ${APPROVED_SOURCE_COMMIT}. ` +
+      `A caller cannot redefine which revision this work was reviewed against.`);
+}
+if (head !== APPROVED_SOURCE_COMMIT) {
+  die(`${SRC_REPO} is at ${head}, not the approved pin ${APPROVED_SOURCE_COMMIT}. ` +
+      `Refusing to generate from an unreviewed revision even if the caller asked for it.`);
 }
 
 const SLUG = "kizhavan-kanavu";
@@ -93,7 +106,7 @@ for (const f of pageFiles) {
   const rawPrinted = (/^printed_page:\s*(.*)$/m.exec(h) ?? [])[1]?.trim();
   if (!Number.isInteger(scan)) die(`page record ${f} has no scan_page`);
   pages.set(scan, {
-    file: f, scan, pageType: str("page_type"), status: str("status"),
+    file: f, scan, pageType: str("page_type"), status: str("status"), section: str("section"),
     // `null` stays null. Scan 7 states no printed page and none is inferred from its neighbour.
     printedPage: !rawPrinted || rawPrinted === "null" ? null : Number(rawPrinted),
     body: t.slice(fm[0].length),
@@ -114,9 +127,36 @@ if (storyPages[0].printedPage !== null) {
   die(`scan ${STORY_FROM} now records printed page ${storyPages[0].printedPage}; the archive recorded none. ` +
       `A printed page must come from the source, never from the sequence.`);
 }
-// Whole-copy status, kept as its own fact.
+// ── THE WHOLE COPY, ASSERTED RATHER THAN ASSUMED ────────────────────────────────────────────────
+// provenance states "24 of 26 verified; the 2 that are not are non-story front matter". That
+// sentence is a claim about the physical booklet, so every part of it is checked here — the counts,
+// the exact identity of the blocked scans, and their classification. Checking only that
+// `blocked.length === 2` would let the block silently move to a different page while the
+// provenance kept asserting the same thing.
+const EXPECT_VERIFIED = 24;
+const EXPECT_BLOCKED_SCANS = [3, 4];
+const EXPECT_BLOCKED_CLASSIFICATION = {
+  3: { section: "front-matter", pageType: "reviews" },
+  4: { section: "front-matter", pageType: "publisher-note" },
+};
 const allVerified = [...pages.values()].filter((p) => p.status === "verified").length;
 const blocked = [...pages.values()].filter((p) => p.status === "blocked").map((p) => p.scan).sort((a, b) => a - b);
+if (allVerified !== EXPECT_VERIFIED) die(`physical copy: expected ${EXPECT_VERIFIED} verified scans, found ${allVerified}`);
+if (blocked.length !== EXPECT_BLOCKED_SCANS.length) die(`physical copy: expected ${EXPECT_BLOCKED_SCANS.length} blocked scans, found ${blocked.length} (${blocked})`);
+if (JSON.stringify(blocked) !== JSON.stringify(EXPECT_BLOCKED_SCANS)) {
+  die(`physical copy: blocked scans are ${JSON.stringify(blocked)}, expected ${JSON.stringify(EXPECT_BLOCKED_SCANS)}. ` +
+      `The identity of a blocked page matters, not just how many there are.`);
+}
+for (const [scanStr, want] of Object.entries(EXPECT_BLOCKED_CLASSIFICATION)) {
+  const p = pages.get(Number(scanStr));
+  if (p.section !== want.section || p.pageType !== want.pageType) {
+    die(`scan ${scanStr} is classified section "${p.section}" / page_type "${p.pageType}", expected ` +
+        `"${want.section}" / "${want.pageType}". provenance may only call the blocked pages ` +
+        `non-story front matter while that is what the archive records.`);
+  }
+}
+// The story stays publishable: a blocked FRONT-MATTER page is not a story blocker, but a blocked
+// STORY page would be, and that is checked separately above.
 if (blocked.some((s) => s >= STORY_FROM && s <= STORY_TO)) die(`a blocked scan falls inside the story range: ${blocked}`);
 
 // ── THE READING ASSEMBLY, RECONCILED BEFORE USE ─────────────────────────────────────────────────
@@ -188,16 +228,66 @@ if (marks.length - 1 !== EXPECT_TRANSITIONS) die(`expected ${EXPECT_TRANSITIONS}
 if (joins !== EXPECT_JOINS) die(`expected ${EXPECT_JOINS} policy joins, produced ${joins}`);
 if (unresolved !== EXPECT_UNRESOLVED) die(`expected ${EXPECT_UNRESOLVED} unresolved boundaries, produced ${unresolved}`);
 
-// Reconcile the derived assembly against the archival page records before trusting a word of it.
+// ── FULL PER-SCAN RECONCILIATION AGAINST THE ARCHIVAL AUTHORITY ─────────────────────────────────
+// The page records are the textual authority and the reading assembly is a derived convenience, so
+// the WHOLE of every scan's text is compared, not a sample of it. An earlier version probed a
+// handful of long words from the opening of each scan, which would have passed a page whose LATER
+// paragraphs had drifted. Sampling cannot support the claim provenance makes.
+//
+// Normalisation is deliberately narrow: it removes only syntax that represents FORMATTING, never
+// content. Punctuation, Tamil letters, words, quote marks, dashes and semicolons all survive, so a
+// changed READING can never slip through disguised as a formatting difference.
+//
+// It runs against the raw sources and never touches what is written into story.json — the emphasis
+// in **ரஷ்யாவில் அல்ல!—தமிழ் நாட்டில்!!** stays in the generated reading text.
 const norm = (s) => nfc(s).replace(/[\s​]+/g, "");
-for (const p of storyPages) {
-  const mine = tamilBlocks.flatMap((b) => b.kind === "paragraph" ? b.segments.filter((g) => g.sourceScan === p.scan).map((g) => g.text) : (b.sourceScan === p.scan && b.text ? [b.text] : []));
-  const rec = norm(p.body.replace(/<!--[\s\S]*?-->/g, "").replace(/^[-#>|].*$/gm, ""));
-  const probes = mine.join(" ").split(/\s+/).filter((w) => w.length > 6).slice(0, 8);
-  const hits = probes.filter((w) => rec.includes(norm(w))).length;
-  if (probes.length && hits < probes.length - 1) {
-    die(`scan ${p.scan}: the assembly text no longer reconciles with its page record (${hits}/${probes.length} probes matched)`);
+const normalizeForAuthorityComparison = (s) =>
+  norm(
+    nfc(s)
+      .replace(/<!--[\s\S]*?-->/g, "")
+      .replace(/^#{1,6}\s*/gm, "")
+      .replace(/^>\s?/gm, "")
+      .replace(/\*\*/g, "")
+      .replace(/\*/g, ""),
+  );
+
+const PRINTED_TEXT_HEADING = "# அச்சு உரை";
+const PRINTED_TEXT_END = "## அச்சு அல்லாத";
+
+/** The printed-text region of a page record — the part the archive presents as the page's text. */
+function authorityRegion(p) {
+  const i = p.body.indexOf(PRINTED_TEXT_HEADING);
+  if (i === -1) die(`page record ${p.file} has no "${PRINTED_TEXT_HEADING}" section — cannot locate its printed text`);
+  const rest = p.body.slice(i + PRINTED_TEXT_HEADING.length);
+  const j = rest.indexOf(PRINTED_TEXT_END);
+  // Physical-copy marks and audit notes below it are control matter, not printed text.
+  return j === -1 ? rest : rest.slice(0, j);
+}
+
+{
+  let matched = 0;
+  for (let k = 0; k < marks.length; k++) {
+    const scan = marks[k].scan;
+    const rec = pages.get(scan);
+    const end = k + 1 < marks.length ? marks[k + 1].i : aLines.length;
+    let slice = aLines.slice(marks[k].i + 1, end).join("\n");
+    if (k === marks.length - 1) slice = slice.split(/^## .*$/m)[0];
+    const a = normalizeForAuthorityComparison(authorityRegion(rec));
+    const b = normalizeForAuthorityComparison(slice);
+    if (a !== b) {
+      let at = 0;
+      while (at < Math.min(a.length, b.length) && a[at] === b[at]) at++;
+      die(
+        `scan ${scan}: the reading assembly no longer matches its page record.\n` +
+          `      first divergence at character ${at} (lengths ${a.length} / ${b.length})\n` +
+          `      page record : ${a.slice(at, at + 48)}\n` +
+          `      assembly    : ${b.slice(at, at + 48)}`,
+      );
+    }
+    matched++;
   }
+  if (matched !== STORY_SCANS) die(`reconciled ${matched} scans, expected ${STORY_SCANS}`);
+  console.log(`  page-record reconciliation: ${matched}/${STORY_SCANS} full normalized matches`);
 }
 
 // ── STORY END GUARD ─────────────────────────────────────────────────────────────────────────────
