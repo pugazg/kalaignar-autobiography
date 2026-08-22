@@ -1,0 +1,160 @@
+{
+  "workId": "kizhavan-kanavu",
+  "sourceRepo": "pugazg/kalaignar-short-stories",
+  "sourcePath": "stories/kizhavan-kanavu",
+  "sourceCommit": "d9a411d40bd54d9770e5b28854ac5b4e804dd419",
+  "source": {
+    "printedTitleTa": "கிழவன் கனவு",
+    "printedAuthorshipLineTa": "தீட்டியவர்: மு. கருணாநிதி.",
+    "editionStatementTa": "இரண்டாம் பதிப்பு.",
+    "scanFilename": "TVA_BOK_0014165_கிழவன்_கனவு.pdf",
+    "scanSha256": "cdea0e1c0d2ad657fc4163ed77c58027c18abbe58058221be7f32724b7ef8121",
+    "scanFileSizeBytes": 11017627,
+    "scanTotalPages": 26,
+    "controllingSourceNote": "The controlling source is the supplied scanned PDF; it is not committed to either repository."
+  },
+  "storyScope": {
+    "storyScans": "7–22",
+    "storyScanCount": 16,
+    "verified": 16,
+    "blocked": 0,
+    "unresolvedReadings": 0,
+    "complete": true,
+    "conclusionTa": "இதே கனவைத்தான் ராமசாமிப்பெரியாரும் காண்கிறார். வரப்போகும் திராவிடத்தின் அழியாத சித்திரம் ; அந்தக் கிழவன் கனவு.",
+    "boundaryNote": "The story ends at the conclusion above on scan 22. Salesperson, advertisement and publisher/printer matter printed below it, and scans 23–26, are outside the story and are not imported."
+  },
+  "physicalPublication": {
+    "totalScans": 26,
+    "verified": 24,
+    "blocked": 2,
+    "blockedScans": [
+      3,
+      4
+    ],
+    "blockedClassification": "non-story front matter",
+    "note": "24 of 26 scans of the physical copy are verified. The 2 that are not (scans 3 and 4) are front matter outside the story. This is a statement about the whole booklet, NOT about the story: the story itself is 16/16 verified with no unresolved reading."
+  },
+  "printedPageUncertainty": {
+    "scan": 7,
+    "printedPage": null,
+    "note": "The archive establishes no printed page for scan 7. Scan 8 carries printed page 4, but 3 is NOT inferred for scan 7: a printed page number must be read from the source, never derived from its neighbour."
+  },
+  "errata": {
+    "correctionCount": 10,
+    "printedOnScan": 23,
+    "policy": "separate-source-witness",
+    "appliedToReadingText": false,
+    "demonstrativeCase": {
+      "printedPage": 9,
+      "sourceScan": 13,
+      "archivalReadingTa": "வைத்திருந்தான்",
+      "publisherErratumTa": "வைத்திருந்தாள்",
+      "note": "Two witnesses to the same line. The reading text keeps the archival page reading; the erratum is recorded here and never substituted."
+    },
+    "corrections": [
+      {
+        "printedPage": 7,
+        "sourceScan": 11,
+        "line": 6,
+        "printedCorrection": "சிறுபுரட்சி",
+        "pageRecord": "0011-kizhavan-kanavu-05.md"
+      },
+      {
+        "printedPage": 7,
+        "sourceScan": 11,
+        "line": 18,
+        "printedCorrection": "அள்ளியள்ளி",
+        "pageRecord": "0011-kizhavan-kanavu-05.md"
+      },
+      {
+        "printedPage": 8,
+        "sourceScan": 12,
+        "line": 24,
+        "printedCorrection": "வண்டியோட்டி",
+        "pageRecord": "0012-kizhavan-kanavu-06.md"
+      },
+      {
+        "printedPage": 9,
+        "sourceScan": 13,
+        "line": 10,
+        "printedCorrection": "பார்த்து",
+        "pageRecord": "0013-kizhavan-kanavu-07.md"
+      },
+      {
+        "printedPage": 9,
+        "sourceScan": 13,
+        "line": 15,
+        "printedCorrection": "வைத்திருந்தாள்",
+        "pageRecord": "0013-kizhavan-kanavu-07.md"
+      },
+      {
+        "printedPage": 9,
+        "sourceScan": 13,
+        "line": 16,
+        "printedCorrection": "முடியும்",
+        "pageRecord": "0013-kizhavan-kanavu-07.md"
+      },
+      {
+        "printedPage": 12,
+        "sourceScan": 16,
+        "line": 11,
+        "printedCorrection": "வினைகளை",
+        "pageRecord": "0016-kizhavan-kanavu-10.md"
+      },
+      {
+        "printedPage": 12,
+        "sourceScan": 16,
+        "line": 17,
+        "printedCorrection": "மல்லிகா",
+        "pageRecord": "0016-kizhavan-kanavu-10.md"
+      },
+      {
+        "printedPage": 13,
+        "sourceScan": 17,
+        "line": 29,
+        "printedCorrection": "செம்மாந்து",
+        "pageRecord": "0017-kizhavan-kanavu-11.md"
+      },
+      {
+        "printedPage": 15,
+        "sourceScan": 19,
+        "line": 2,
+        "printedCorrection": "கொந்தளிப்பு",
+        "pageRecord": "0019-kizhavan-kanavu-13.md"
+      }
+    ]
+  },
+  "tamilAssembly": {
+    "authority": "pages/0007–0022",
+    "derivedAssembly": "sections/kizhavan-kanavu.md",
+    "reconciled": true,
+    "note": "The reading assembly is a derived convenience. Every scan's text was reconciled against its own page record before generation; the page records remain the authority."
+  },
+  "crossScanJoinPolicy": {
+    "policy": "space",
+    "basis": "archive-normalisation-rule",
+    "individualAdjudication": false,
+    "transitions": 15,
+    "appliedBoundaries": 9,
+    "unresolvedBoundaries": 6,
+    "note": "Where a sentence runs on across a physical scan edge, the fragments are joined with one space under the archive's normalisation rule. The archive records no per-boundary adjudication for this story, so no boundary here is claimed to have been checked individually against the scan. Where the preceding fragment closes a sentence, the paragraph relationship is left explicitly unresolved rather than guessed."
+  },
+  "english": {
+    "titleEn": "The Old Man's Dream",
+    "sourceScans": "7–22",
+    "scanAnchors": 16,
+    "blockedSourceLocations": 0,
+    "kind": "project-created",
+    "kindBasis": "An archive-produced translation derived from the project's own final Tamil reading, not a separately published translation.",
+    "archiveStatus": {
+      "statusAsRecorded": "editorial-reviewed",
+      "note": "This is the source archive's recorded status label. It does not establish completed human editorial review. The project's transcription and translation pipeline is machine-assisted, and no claim of human review is made here."
+    },
+    "paragraphingNote": "The released English paragraphing is preserved as published. It follows the Tamil closely but is not forced to match it block for block."
+  },
+  "reviewQueue": {
+    "exists": true,
+    "file": "POSSIBLE_ERRORS_FOR_REVIEW.md",
+    "note": "The archive keeps a forward-looking recheck queue. An entry there does not mean the current reading is wrong, does not downgrade the story's verified status, and does not establish that a human review has been completed. It is a list of places worth looking at again, not a list of known errors."
+  }
+}
