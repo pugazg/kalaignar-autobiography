@@ -1,44 +1,63 @@
+"use client";
+
+import { useState, type ReactNode } from "react";
 import Link from "next/link";
-import type { ReactNode } from "react";
 import type { Story, StoryBlock, StoryTextSegment } from "@/data/stories";
+import { useLang } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
 
 /**
  * கிழவன் கனவு and the Fiction short-story form — one continuous printed story, read straight through.
  *
- * A SERVER COMPONENT. The older Reading Rooms (SpeechReader, NovelLanding) are client components that
- * fetch their JSON in an effect and keep a Tamil/English toggle in React state. This one does not, and
- * the difference is deliberate: with no interactive toggle to hold, there is nothing for client state to
- * do, and rendering on the server puts the Tamil INTO THE INITIAL HTML — so the source text is present
- * for a crawler, for a reader with JavaScript off, and for Print → Save as PDF, instead of arriving one
- * network round-trip later. Both languages are rendered as ordered sections of the same document rather
- * than as two states of one region.
+ * A PUBLICATION INTERFACE, NOT AN EVIDENCE INTERFACE. This page is where the story is READ. It
+ * carries no scan numbers, no printed-page markers, no boundary labels and no provenance annotation
+ * — not in the text, not in a caption, and not in an `aria-label` either, since a name a screen
+ * reader speaks is still something the page says. What is left is a title, an author, the text, and
+ * the choice of language. Every archival fact the library holds about this story is still published,
+ * in full, one link away at `/stories/<slug>/source`: the scan mapping, the printed-page uncertainty
+ * on the opening scan, the story scope against the whole booklet's, the publisher's erratum witness,
+ * the join policy, and what the English layer is. The two interfaces are deliberately not mixed.
  *
- * TAMIL FIRST, AND TAMIL AUTHORITATIVE. The Tamil reading section comes first and is what the page is;
- * the English section follows, labelled as a project-created reading translation. Nothing in this
- * component claims the text was reviewed by a person, and nothing here corrects it: the publisher's
- * erratum sheet is a separate witness recorded on the provenance page, never a substitution in the
- * reading body. The line the erratum disputes — `வைத்திருந்தான்` on printed page 9 — is rendered exactly
- * as the archival page reading has it.
+ * ONE LANGUAGE AT A TIME. Tamil and English are two views of the same page, chosen by the toggle —
+ * never a Tamil text with an English one appended after it. The toggle is the same pill control the
+ * other bilingual Reading Rooms use (SpeechReader, PoemReader, NovelReader): Tamil is the default,
+ * the Tamil original is authoritative, and only the selected stream is ever in the document. Because
+ * the default is Tamil and this component still renders on the server for the first paint, the Tamil
+ * source text is in the initial HTML — present for a crawler, for a reader with JavaScript off, and
+ * for Print → Save as PDF — and printing produces the language on screen, never both.
  *
- * PRINT. Every element carrying story text or provenance is a `div`/`section`/`article`, never a
- * `header` or `footer`: the global print stylesheet deletes `nav`, `header` and `footer` outright, so
- * story prose placed in one would silently vanish from a printed copy. Only the navigation links sit in
- * a `nav`, where their removal from paper is correct.
+ * WHAT SURVIVES FROM THE SOURCE-FIDELITY MODEL. Blocks are still rendered in source order, verbatim,
+ * with nothing dropped or merged, and the six unresolved paragraph boundaries are still neutral: the
+ * runs either side stay inside one non-`<p>` group, so the markup asserts neither a paragraph break
+ * nor a continuation. What changed is only their PRESENTATION — the labelled scan rule is gone, and
+ * the two runs are set apart by a gap visibly smaller than an ordinary paragraph break. That asserts
+ * less than either alternative: no rule to read as a deliberate scene break, no seamless join to read
+ * as a continuation. The publisher's erratum is still never substituted into the reading text.
+ *
+ * PRINT. Everything carrying story text is a `div`/`section`/`article`, never a `header` or `footer`:
+ * the global print stylesheet deletes `nav`, `header` and `footer` outright. Only the navigation and
+ * the toggle itself are hidden from paper, where their removal is correct.
  */
 export default function StoryReader({ story }: { story: Story }) {
-  const scans = story.sourceScans;
-  const scanRange = scans.length ? `${scans[0]}–${scans[scans.length - 1]}` : "";
+  const { lang } = useLang();
+  const ta = lang === "ta";
+  // Source-first: the verified Tamil is authoritative and shown by default; the English reading
+  // translation is one toggle away. Only one of the two is ever rendered.
+  const [showEn, setShowEn] = useState(false);
+  const blocks = showEn ? story.english.blocks : story.tamil.blocks;
 
   return (
     <main id="main" className="mx-auto max-w-2xl px-5 pb-20 pt-8 sm:px-6">
-      <nav aria-label="வழிசெலுத்தல்" className="mb-8 text-sm" data-print="hide">
+      <nav aria-label={ta ? "வழிசெலுத்தல்" : "Navigation"} className="mb-8 text-sm" data-print="hide">
         <Link href="/read" className="text-marina hover:underline dark:text-marina-light">
-          <span lang="ta">மின்னூலகம்</span>
+          <span lang={lang}>{ta ? "மின்னூலகம்" : "The library"}</span>
         </Link>
       </nav>
 
       <article>
-        {/* The form label the BOOKLET prints under its own title. The source's word for what this is. */}
+        {/* The form label the BOOKLET prints under its own title — the source's own word for what this
+            is. It stays in Tamil in both views: the booklet prints no English form label, and one is
+            not invented. */}
         <p className="font-tamil text-xs uppercase tracking-[0.18em] text-marina dark:text-marina-light" lang="ta">
           {story.formLabel.ta}
         </p>
@@ -53,55 +72,44 @@ export default function StoryReader({ story }: { story: Story }) {
           {story.author.printedAuthorshipLineTa}
         </p>
 
-        {/* Source extent. A div, so it prints: a printed copy with no source line would present the
-            story as if it came from nowhere. */}
-        <div className="mt-2 font-body text-xs text-ink/45 dark:text-night-text/45">
-          <span className="font-tamil" lang="ta">மூல ஸ்கேன்கள்</span> {scanRange}
+        {/* The same pill toggle the other bilingual Reading Rooms use. Hidden from print: paper has
+            no toggle, and what prints is the language on screen. */}
+        <div className="mt-5 flex flex-wrap items-center gap-3" data-print="hide">
+          <div className="inline-flex overflow-hidden rounded-full border border-marina/40 text-xs font-medium">
+            <button
+              onClick={() => setShowEn(false)}
+              className={cn("focus-ring px-3 py-1 transition", !showEn ? "bg-marina text-paper" : "text-marina hover:bg-marina/10 dark:text-marina-light")}
+              aria-pressed={!showEn}
+              lang="ta"
+            >
+              தமிழ்
+            </button>
+            <button
+              onClick={() => setShowEn(true)}
+              className={cn("focus-ring px-3 py-1 transition", showEn ? "bg-marina text-paper" : "text-marina hover:bg-marina/10 dark:text-marina-light")}
+              aria-pressed={showEn}
+            >
+              English
+            </button>
+          </div>
         </div>
 
-        {/* ── TAMIL — the authoritative reading ─────────────────────────────────────────────────── */}
-        <section aria-label="மூல தமிழ் உரை" className="mt-12 border-t border-ink/10 pt-8 dark:border-white/10">
-          <h2 className="font-tamil text-sm font-semibold tracking-wide text-marina dark:text-marina-light" lang="ta">
-            மூல தமிழ் உரை
-          </h2>
-          {/* `break-words` only ever acts on a token that CANNOT fit the column — at 375px, Tamil
-              compounds such as `திருவிளையாடலுக்கெல்லையுமுண்டோ` are wider than the measure and would
-              otherwise spill past the viewport and make the whole page scroll sideways. It changes no
-              character of the text; it only gives the line-breaker a last resort. */}
-          <div className="mt-6 break-words font-tamil text-lg" lang="ta">
-            {renderBlocks(story.tamil.blocks, true)}
-          </div>
-        </section>
+        {/* The text, and nothing between the toggle and it. What the English layer is — a
+            project-created translation, with the Tamil authoritative — is stated on the provenance
+            page, which the link at the foot of this page reaches. */}
+        <div className={cn("mt-10 break-words", showEn ? "font-body text-base" : "font-tamil text-lg")} lang={showEn ? "en" : "ta"}>
+          {renderBlocks(blocks)}
+        </div>
 
-        {/* ── ENGLISH — a project-created reading translation ───────────────────────────────────── */}
-        <section aria-label="English translation" className="mt-14 border-t border-ink/10 pt-8 dark:border-white/10">
-          <h2 className="font-body text-sm font-semibold tracking-wide text-marina dark:text-marina-light">
-            English translation
-          </h2>
-          {/* What this layer IS, stated before it is read. No review claim is made for it. */}
-          <p className="mt-2 font-body text-xs leading-relaxed text-ink/50 dark:text-night-text/50">
-            A project-created English reading translation, derived from the project&rsquo;s own final Tamil
-            reading. The Tamil above remains authoritative.
-          </p>
-          <div className="mt-6 break-words font-body text-base" lang="en">
-            {renderBlocks(story.english.blocks, false)}
-          </div>
-        </section>
-
-        {/* Provenance. A div, so it survives print. */}
-        <div className="mt-12 border-t border-ink/10 pt-5 font-body text-xs leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45">
-          <span className="font-tamil" lang="ta">மூலம்</span>
-          {" · "}
-          <span className="font-tamil" lang="ta">ஸ்கேன்கள்</span> {scanRange}
-          {" · "}
-          {story.sourceRepo} · {story.sourceCommit.slice(0, 12)}
-          {" · "}
+        {/* The one link out to the evidence interface. A div, so it survives print — and it names the
+            provenance page without reproducing any of it here. */}
+        <div className="mt-12 border-t border-ink/10 pt-5 text-xs leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45">
           <Link
             href={`/stories/${story.slug}/source`}
-            className="font-tamil underline decoration-ink/20 underline-offset-2 hover:text-marina dark:decoration-white/20 dark:hover:text-marina-light"
-            lang="ta"
+            className={cn("underline decoration-ink/20 underline-offset-2 hover:text-marina dark:decoration-white/20 dark:hover:text-marina-light", ta && "font-tamil")}
+            lang={lang}
           >
-            மூலமும் சான்றும்
+            {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
           </Link>
         </div>
       </article>
@@ -110,21 +118,19 @@ export default function StoryReader({ story }: { story: Story }) {
 }
 
 // Render the ordered block stream. A run of [paragraph, unresolved-break, paragraph, …] is wrapped in
-// ONE non-<p> `role="group"`, so an unresolved paragraph relationship asserts neither a break nor a
-// continuation; resolved paragraphs render as ordinary <p>. This is the speech Reading Room's rule and
-// it is followed exactly, because the archival problem is the same one.
-function renderBlocks(blocks: StoryBlock[], ta: boolean): ReactNode[] {
+// ONE non-<p> group, so an unresolved paragraph relationship asserts neither a break nor a
+// continuation; resolved paragraphs render as ordinary <p>.
+function renderBlocks(blocks: StoryBlock[]): ReactNode[] {
   const out: ReactNode[] = [];
   let i = 0;
   while (i < blocks.length) {
     const b = blocks[i];
     if (b.kind === "heading") {
-      // The booklet's own printed title card. An h3 under the language section's h2 — it is a heading
-      // the SOURCE prints, nested inside the section that says which language stream it belongs to.
+      // The booklet's own printed title card, set as the text's opening heading.
       out.push(
-        <h3 key={i} className="mb-6 text-center text-xl font-semibold leading-snug text-ink dark:text-night-text">
+        <h2 key={i} className="mb-6 text-center text-xl font-semibold leading-snug text-ink dark:text-night-text">
           {inline(b.text)}
-        </h3>,
+        </h2>,
       );
       i++;
       continue;
@@ -148,44 +154,47 @@ function renderBlocks(blocks: StoryBlock[], ta: boolean): ReactNode[] {
           group.push(blocks[i], blocks[i + 1]);
           i += 2;
         }
-        out.push(<UnresolvedGroup key={"g" + i} items={group} ta={ta} />);
+        out.push(<UnresolvedGroup key={"g" + i} items={group} />);
         continue;
       }
       out.push(
         <p key={i} className="mb-5 leading-loose text-ink/90 dark:text-night-text/90">
-          {renderSegments(b.segments, ta)}
+          {renderSegments(b.segments)}
         </p>,
       );
       i++;
       continue;
     }
-    // A stray unresolved-break outside a group (does not occur in this dataset) → still neutral.
-    if (b.kind === "unresolved-break") out.push(<ScanRule key={i} toScan={b.toScan} note={b.note} ta={ta} />);
+    // A stray unresolved-break outside a group (does not occur in this dataset) → a quiet gap, never
+    // a labelled marker.
+    if (b.kind === "unresolved-break") out.push(<span key={i} className="block h-3" aria-hidden />);
     i++;
   }
   return out;
 }
 
-// A NEUTRAL group for an unresolved printed-paragraph relationship: the runs are <div>s (NOT <p>) and
-// the scan rule sits between them. role="group" + aria-label say, in words, that the printed paragraph
-// relationship across this scan edge is unresolved.
-function UnresolvedGroup({ items, ta }: { items: StoryBlock[]; ta: boolean }) {
+/**
+ * A NEUTRAL group for an unresolved printed-paragraph relationship.
+ *
+ * The runs are `div`s, never `<p>` — a `<p>` would assert that the printed booklet began a new
+ * paragraph here, which is exactly what is not known. They are set apart by a gap SMALLER than the
+ * `mb-5` between ordinary paragraphs: a full paragraph break would claim separation, and no break at
+ * all would claim continuation, so the presentation sits deliberately between the two and carries no
+ * label, no rule, no number and no name. `role="group"` alone binds the runs for assistive
+ * technology without describing them: a name here would have to say what is unresolved, and that
+ * explanation is archival. It belongs on the provenance page, along with which scans are involved.
+ */
+function UnresolvedGroup({ items }: { items: StoryBlock[] }) {
+  let run = 0;
   return (
     <div
       role="group"
-      aria-label={
-        ta
-          ? "மூல ஸ்கேன் எல்லை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை"
-          : "source scan boundary — printed paragraph relationship unresolved"
-      }
       className="mb-5"
     >
       {items.map((it, k) =>
-        it.kind === "unresolved-break" ? (
-          <ScanRule key={k} toScan={it.toScan} note={it.note} ta={ta} />
-        ) : it.kind === "paragraph" ? (
-          <div key={k} className="leading-loose text-ink/90 dark:text-night-text/90">
-            {renderSegments(it.segments, ta)}
+        it.kind === "paragraph" ? (
+          <div key={k} className={cn("leading-loose text-ink/90 dark:text-night-text/90", run++ > 0 && "mt-2.5")}>
+            {renderSegments(it.segments)}
           </div>
         ) : null,
       )}
@@ -193,61 +202,26 @@ function UnresolvedGroup({ items, ta }: { items: StoryBlock[]; ta: boolean }) {
   );
 }
 
-// A subtle labelled scan rule. It asserts no paragraph relationship — it marks where the physical scan
-// changed and the relationship stopped being knowable.
-//
-// UNLIKE the speech reader's page rule, this one is NOT `data-print="hide"`. Hiding it would let the two
-// runs of a group abut on paper with nothing between them, which reads as one continuous paragraph —
-// exactly the claim the group exists to withhold. The rule is evidence, not chrome, so it prints.
-function ScanRule({ toScan, note, ta }: { toScan: number; note?: string; ta: boolean }) {
-  const label = ta
-    ? `மூல ஸ்கேன் ${toScan} எல்லை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை`
-    : `source scan ${toScan} boundary — printed paragraph relationship unresolved`;
-  return (
-    <div
-      className="my-4 flex items-center gap-2 font-body text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35"
-      title={note}
-      role="separator"
-      aria-label={label}
-    >
-      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
-      <span className="normal-case tracking-normal" aria-hidden>
-        {ta ? `ஸ்கேன் ${toScan}` : `scan ${toScan}`}
-      </span>
-      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
-    </div>
-  );
-}
-
 // Render a logical paragraph's per-scan segments, joined per `joinToNext`:
 //   "space"   → one space;
 //   "none"    → nothing (the scan split a word);
-//   "unknown" → a NEUTRAL inline scan marker, never a silent space and never a silent concatenation;
+//   "unknown" → a bare hairline gap — never a silent space and never a silent concatenation, but
+//               carrying no label or number, because this page is not the evidence interface;
 //   "end"     → last segment, nothing after it.
 // `kizhavan-kanavu` uses only "space" and "end"; the other two are handled so that a story which does
 // use them cannot be rendered as a guess.
-function renderSegments(segments: StoryTextSegment[], ta: boolean): ReactNode[] {
+function renderSegments(segments: StoryTextSegment[]): ReactNode[] {
   const nodes: ReactNode[] = [];
   segments.forEach((s, i) => {
     nodes.push(<span key={"t" + i}>{inline(s.text)}</span>);
     if (s.joinToNext === "space") nodes.push(" ");
     else if (s.joinToNext === "unknown") {
-      const n = segments[i + 1]?.sourceScan;
-      const label = ta
-        ? `மூல ஸ்கேன் ${n} எல்லை — சரியான இடைவெளி தீர்மானிக்கப்படவில்லை`
-        : `source scan ${n} boundary — exact printed spacing unresolved`;
       nodes.push(
         <span
           key={"j" + i}
-          className="mx-0.5 select-none align-baseline font-body text-[0.7em] text-ink/35 dark:text-night-text/35"
-          title={label}
-          role="separator"
-          aria-label={label}
-        >
-          {"⟨"}
-          {ta ? `ஸ்.${n}` : `sc.${n}`}
-          {"⟩"}
-        </span>,
+          className="mx-1 inline-block h-[0.8em] w-px translate-y-[0.1em] bg-ink/20 align-baseline dark:bg-white/20"
+          aria-hidden
+        />,
       );
     }
     // "none" / "end" → no separator.
