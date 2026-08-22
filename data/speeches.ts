@@ -106,23 +106,35 @@ export type SpeechProvenance = {
   sourceCommit: string;
   source: {
     publicationTitleTa: string;
-    authorTa: string;
-    editionTa: string;
-    publicationDate: string;
-    publisherTa: string;
-    publisherLocationTa: string;
-    printerTa: string;
-    printerLocationTa: string;
-    coverPriceTa: string;
+    authorTa?: string;
+    editionTa?: string;
+    publicationDate?: string;
+    publisherTa?: string;
+    publisherLocationTa?: string;
+    printerTa?: string;
+    printerLocationTa?: string;
+    coverPriceTa?: string;
     scanFilename: string;
     scanTotalPages: number;
     speechScanPages: string;
-    frontMatterScanPages: string;
-    advertisementScanPages: string;
+    frontMatterScanPages?: string;
+    advertisementScanPages?: string;
     // Optional source facts some editions establish and others do not (never fabricated):
     scanSha256?: string; // published only where the source archive records a scan checksum
     scanFileSizeBytes?: number;
     printedSpeechPages?: string; // printed page range when it differs from the PDF/scan range
+    // The 2007 assembly anthology records the SAME fact under a different key. Verified as the
+    // same concept, not assumed from the similar name: in both eras it is the speech's printed
+    // range where it differs from the scan range (poonthottam scan 6–17 / printed 5–16; the
+    // anthology 199–240 / 198–239). Both spellings are kept rather than one being renamed, because
+    // each is the key its own archive era actually writes.
+    speechPrintedPages?: string;
+    salesRightsTa?: string; // the anthology names a separate sales-rights imprint
+    publicationDatePrintedTa?: string; // the printed form of the publication date, where given
+    scanToPrintedRelationship?: string; // e.g. "scan page = printed page + 1"
+    sourceAuthority?: string;
+    speechSourceLabelTa?: string; // the anthology's own label for the speech, e.g. "உரை : 7"
+    speechPrintedDate?: string;
     firstEditionTa?: string; // a distinct first-edition statement, where the edition prints one
     publisherAddressTa?: string; // fuller publisher address, where recorded
     // Third-party front-matter note (e.g. a publisher preface author/date). This field is written
@@ -136,17 +148,19 @@ export type SpeechProvenance = {
   transcription: Record<string, unknown>; // verbatim from source metadata.json
   translation: Record<string, unknown>; // verbatim from source metadata.json
   archiveDerived: {
-    sectionHeadings: number;
-    tamilResolvedParagraphs: number; // clean logical paragraphs (may span source pages)
-    tamilUnresolvedGroupRuns: number; // runs inside an unresolved-relationship group
-    englishParagraphs: number;
-    tamilSourceTextSegments: number; // physical per-source-page fragments
-    englishSourceTextSegments: number;
-    tamilCrossPageParagraphs: number;
-    englishCrossPageParagraphs: number;
-    sourcePagesCovered: number;
+    sectionHeadings?: number;
+    tamilResolvedParagraphs?: number; // clean logical paragraphs (may span source pages)
+    tamilUnresolvedGroupRuns?: number; // runs inside an unresolved-relationship group
+    englishParagraphs?: number;
+    tamilSourceTextSegments?: number; // physical per-source-page fragments
+    englishSourceTextSegments?: number;
+    tamilCrossPageParagraphs?: number;
+    englishCrossPageParagraphs?: number;
+    sourcePagesCovered?: number;
     // Source-audited results over all Tamil page transitions (explicit table, not punctuation).
-    boundaryAudit: {
+    // Present ONLY where the archive actually adjudicated each transition. The 2007 anthology
+    // has no such table and records crossPageJoinPolicy instead.
+    boundaryAudit?: {
       tamilTransitions: number;
       sameParagraph: number;
       paragraphBoundary: number;
@@ -156,14 +170,25 @@ export type SpeechProvenance = {
       lexicalJoinSpace: number;
       lexicalJoinUnknown: number; // unresolved spacing (scan-pending), never silently spaced
     };
-    englishBoundaryAudit: {
+    englishBoundaryAudit?: {
       englishAnchors: number;
       paragraphBoundary: number;
       headingNoteBoundary: number;
       sameParagraphContinuations: number;
       note: string;
     };
-    note: string;
+    note?: string;
+    // ── Anthology form. The 2007 assembly anthology reports its own counts; they are NOT
+    // interchangeable with the legacy metrics above and are never rendered under a legacy label.
+    tamilSourcePages?: number;
+    englishSourcePages?: number;
+    tamilBlocks?: number;
+    englishBlocks?: number;
+    tamilHeadings?: number;
+    englishHeadings?: number;
+    tamilParagraphs?: number;
+    tamilUnresolvedBreaks?: number;
+    englishUnresolvedBreaks?: number;
   };
   // Known blockers — source facts only the controlling scan can resolve, each represented as
   // unresolved in the data and rendered neutrally (never guessed).
@@ -174,7 +199,8 @@ export type SpeechProvenance = {
     resolution: string;
   }[];
   // Present project-level rights of the underlying Kalaignar-authored work (see Manohara model).
-  projectRights: {
+  /** Absent where the archive establishes no rights position for the work. */
+  projectRights?: {
     appliesTo: string;
     rightsStatus: string;
     rightsAuthority: string;
@@ -188,11 +214,66 @@ export type SpeechProvenance = {
     projectTranslationNote: string;
     evidencePending: string;
   };
-  notes: string[];
+  /** Absent where the archive records no curatorial notes for this speech. */
+  notes?: string[];
+
+  // ── TWO BOUNDARY-EVIDENCE MODELS, DELIBERATELY NOT MERGED ──────────────────────────────────────
+  //
+  // `archiveDerived.boundaryAudit` (benchmark speeches) records a per-transition classification:
+  // each physical page boundary was examined and filed as same-paragraph, paragraph boundary, or an
+  // unresolved relation. That is a strong claim and only those speeches can make it.
+  //
+  // `crossPageJoinPolicy` (2007 assembly anthology) records something weaker and different: the
+  // archive's normalisation POLICY was applied, and no per-boundary adjudication exists. Rendering
+  // the second under the first's wording would upgrade policy-derived evidence into scan-by-scan
+  // adjudication, so the reader must keep them apart.
+  crossPageJoinPolicy?: {
+    policy: "space";
+    basis: "archive-normalisation-rule";
+    individualAdjudication: false;
+    appliedBoundaries: number;
+    unresolvedBoundaries: number;
+    note: string;
+  };
+
+  /** The archive's machine-readable registry status for this speech. */
+  archiveVerification?: {
+    registry: string;
+    transcriptionStatus: string;
+    verifiedAgainstScan: boolean;
+    translationStatus: string;
+  };
+
+  /**
+   * Release evidence. Some speeches carry an explicit per-speech release block; others are covered
+   * only by the archive registry. `releaseReady` is present ONLY where the source states it.
+   */
+  releaseReadiness?: {
+    basis: "per-speech-release-block" | "archive-index";
+    explicitPerSpeechReleaseBlockPresent: boolean;
+    releaseReady?: boolean;
+    note: string;
+  };
 };
 
 // Lightweight catalog of integrated speech slugs (build/import authority; the public catalog
 // entry lives in data/library.ts). One benchmark per subtype so far: an assembly speech
 // (udhaya-kathir) and a public speech (poonthottam).
-export const SPEECH_SLUGS = ["udhaya-kathir", "poonthottam", "arappor"] as const;
+export const SPEECH_SLUGS = [
+  "udhaya-kathir",
+  "poonthottam",
+  "arappor",
+  // The 2007 assembly anthology — one speech per dated sitting, slugs taken verbatim from the
+  // source archive's own ids so a route is traceable straight back to its source directory.
+  "1963-03-21-industries-debate",
+  "1981-04-16-industries-debate",
+  "1989-05-03-industries-debate",
+  "1990-04-18-industries-debate",
+  "1996-08-14-industries-debate",
+  "1997-04-23-industries-debate",
+  "1998-05-14-industries-debate",
+  "1999-04-29-industries-debate",
+  "2000-05-08-industries-debate",
+  "2006-08-23-industries-debate",
+] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];

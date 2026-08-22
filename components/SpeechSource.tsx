@@ -10,6 +10,13 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
   const ta = lang === "ta";
   const s = prov.source;
   const pr = prov.projectRights;
+  const ad = prov.archiveDerived;
+  // TWO BOUNDARY-EVIDENCE MODELS. `boundaryAudit` means every Tamil page transition was examined
+  // and classified; `crossPageJoinPolicy` means the archive's normalisation policy was applied and
+  // no per-boundary adjudication exists. They are rendered separately and never share wording: to
+  // describe the second with the first's copy would upgrade policy into scan-by-scan adjudication.
+  const audit = ad.boundaryAudit;
+  const joinPolicy = prov.crossPageJoinPolicy;
 
   const Row = ({ label, children, mono }: { label: string; children: React.ReactNode; mono?: boolean }) => (
     <div className="grid gap-0.5 border-b border-ink/5 py-2.5 last:border-0 dark:border-white/5 sm:grid-cols-[minmax(0,11rem)_1fr] sm:gap-4">
@@ -48,12 +55,12 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </h2>
           <dl className="mt-3">
             <Row label={ta ? "நூல் தலைப்பு" : "Publication title"}><span className="font-tamil" lang="ta">{s.publicationTitleTa}</span></Row>
-            <Row label={ta ? "ஆசிரியர்" : "Author"}><span className="font-tamil" lang="ta">{s.authorTa}</span></Row>
-            <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span> <span className="text-ink/45 dark:text-night-text/45">({s.publicationDate})</span></Row>
+            {s.authorTa && <Row label={ta ? "ஆசிரியர்" : "Author"}><span className="font-tamil" lang="ta">{s.authorTa}</span></Row>}
+            {(s.editionTa || s.publicationDate) && (<Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span> <span className="text-ink/45 dark:text-night-text/45">({s.publicationDate})</span></Row>)}
             {s.firstEditionTa && <Row label={ta ? "முதற்பதிப்பு" : "First edition"}><span className="font-tamil" lang="ta">{s.firstEditionTa}</span></Row>}
-            <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}, {s.publisherLocationTa}</span></Row>
-            <Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}, {s.printerLocationTa}</span></Row>
-            <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.coverPriceTa}</span></Row>
+            {s.publisherTa && (<Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}{s.publisherLocationTa ? `, ${s.publisherLocationTa}` : ""}</span></Row>)}
+            {s.printerTa && (<Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}{s.printerLocationTa ? `, ${s.printerLocationTa}` : ""}</span></Row>)}
+            {s.coverPriceTa && (<Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.coverPriceTa}</span></Row>)}
             <Row label={ta ? "Scan கோப்பு" : "Scan file"} mono>{s.scanFilename}</Row>
             {s.scanSha256 && <Row label={ta ? "Scan SHA-256" : "Scan SHA-256"} mono>{s.scanSha256}</Row>}
             {s.scanFileSizeBytes != null && <Row label={ta ? "Scan அளவு" : "Scan size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>}
@@ -111,26 +118,141 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             <Info className="h-3.5 w-3.5" aria-hidden /> {ta ? "காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பு" : "Archive-derived structure"}
           </h2>
           <dl className="mt-3">
-            <Row label={ta ? "அச்சுத் தலைப்புகள்" : "Printed section headings"}>{prov.archiveDerived.sectionHeadings}</Row>
-            <Row label={ta ? "தீர்மானிக்கப்பட்ட வாசிப்புப் பத்திகள் (த/ஆ)" : "Resolved paragraphs (Ta/En)"}>{prov.archiveDerived.tamilResolvedParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>
-            <Row label={ta ? "மூலப் பக்கத் துண்டுகள் (த/ஆ)" : "Source-page text segments (Ta/En)"}>{prov.archiveDerived.tamilSourceTextSegments} / {prov.archiveDerived.englishSourceTextSegments}</Row>
-            <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>
-          </dl>
-          {/* Source-audited page-boundary results (Tamil), not inferred from punctuation. */}
-          <div className="mt-4 rounded-xl border border-brass/30 bg-brass/[0.05] p-3">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-brass">
-              {ta ? "மூல-தணிக்கை செய்யப்பட்ட பக்க எல்லைகள் (தமிழ்)" : "Source-audited page boundaries (Tamil)"}
-            </p>
-            <dl className="mt-2">
-              <Row label={ta ? "மொத்த எல்லைகள்" : "Total transitions"}>{prov.archiveDerived.boundaryAudit.tamilTransitions}</Row>
-              <Row label={ta ? "அதே பத்தி (தொடர்ச்சி)" : "Same paragraph (continuation)"}>{prov.archiveDerived.boundaryAudit.sameParagraph}</Row>
-              <Row label={ta ? "மூலத்தால் உறுதிசெய்யப்பட்ட பத்தி எல்லைகள்" : "Source-established paragraph boundaries"}>{prov.archiveDerived.boundaryAudit.paragraphBoundary}</Row>
-              <Row label={ta ? "இணைப்பு: இடைவெளியின்றி / இடைவெளி / தீர்மானிக்கப்படாதது" : "Joins: none / space / unresolved"}>
-                {prov.archiveDerived.boundaryAudit.lexicalJoinNone} / {prov.archiveDerived.boundaryAudit.lexicalJoinSpace} / {prov.archiveDerived.boundaryAudit.lexicalJoinUnknown}
+            {ad.sectionHeadings != null && <Row label={ta ? "அச்சுத் தலைப்புகள்" : "Printed section headings"}>{prov.archiveDerived.sectionHeadings}</Row>}
+            {ad.tamilResolvedParagraphs != null && <Row label={ta ? "தீர்மானிக்கப்பட்ட வாசிப்புப் பத்திகள் (த/ஆ)" : "Resolved paragraphs (Ta/En)"}>{prov.archiveDerived.tamilResolvedParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>}
+            {ad.tamilSourceTextSegments != null && <Row label={ta ? "மூலப் பக்கத் துண்டுகள் (த/ஆ)" : "Source-page text segments (Ta/En)"}>{prov.archiveDerived.tamilSourceTextSegments} / {prov.archiveDerived.englishSourceTextSegments}</Row>}
+            {ad.sourcePagesCovered != null && <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>}
+
+            {/* Anthology counts. Reported under their OWN labels: they are not the legacy metrics under a
+
+                different name, so none of them is shown in a legacy row. */}
+
+            {ad.tamilSourcePages != null && (
+
+              <Row label={ta ? "மூலப் பக்கங்கள் (த/ஆ)" : "Source pages (Ta/En)"}>
+
+                {ad.tamilSourcePages} / {ad.englishSourcePages}
+
               </Row>
-              <Row label={ta ? "அச்சுப் பத்தி உறவு தீர்மானிக்கப்படாதவை" : "Unresolved paragraph relationships"}>{prov.archiveDerived.boundaryAudit.unknownParagraphRelation}</Row>
-            </dl>
-          </div>
+
+            )}
+
+            {ad.tamilHeadings != null && (
+
+              <Row label={ta ? "அச்சுத் தலைப்புகள் (த/ஆ)" : "Printed headings (Ta/En)"}>
+
+                {ad.tamilHeadings} / {ad.englishHeadings}
+
+              </Row>
+
+            )}
+
+            {ad.tamilParagraphs != null && (
+
+              <Row label={ta ? "வாசிப்புப் பத்திகள் (த/ஆ)" : "Reading paragraphs (Ta/En)"}>
+
+                {ad.tamilParagraphs} / {ad.englishParagraphs}
+
+              </Row>
+
+            )}
+
+            {ad.tamilUnresolvedBreaks != null && (
+
+              <Row label={ta ? "தீர்மானிக்கப்படாத பத்தி உறவுகள்" : "Unresolved paragraph relations"}>
+
+                {ad.tamilUnresolvedBreaks}
+
+              </Row>
+
+            )}
+
+          </dl>
+          {/* BOUNDARY EVIDENCE — whichever model this speech's archive actually supports. */}
+
+          {audit && (
+            <div className="mt-4 rounded-xl border border-brass/30 bg-brass/[0.05] p-3">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-brass">
+                {ta ? "மூல-தணிக்கை செய்யப்பட்ட பக்க எல்லைகள் (தமிழ்)" : "Source-audited page boundaries (Tamil)"}
+              </p>
+              <dl className="mt-2">
+                <Row label={ta ? "மொத்த எல்லைகள்" : "Total transitions"}>{audit.tamilTransitions}</Row>
+                <Row label={ta ? "அதே பத்தி (தொடர்ச்சி)" : "Same paragraph (continuation)"}>{audit.sameParagraph}</Row>
+                <Row label={ta ? "மூலத்தால் உறுதிசெய்யப்பட்ட பத்தி எல்லைகள்" : "Source-established paragraph boundaries"}>{audit.paragraphBoundary}</Row>
+                <Row label={ta ? "இணைப்பு: இடைவெளியின்றி / இடைவெளி / தீர்மானிக்கப்படாதது" : "Joins: none / space / unresolved"}>
+                  {audit.lexicalJoinNone} / {audit.lexicalJoinSpace} / {audit.lexicalJoinUnknown}
+                </Row>
+                <Row label={ta ? "அச்சுப் பத்தி உறவு தீர்மானிக்கப்படாதவை" : "Unresolved paragraph relationships"}>{audit.unknownParagraphRelation}</Row>
+              </dl>
+            </div>
+
+          )}
+
+          {joinPolicy && (
+
+            <div className="mt-4 rounded-xl border border-brass/30 bg-brass/[0.05] p-3">
+
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-brass">
+
+                {ta ? "பக்க எல்லைக் கொள்கை (தமிழ்)" : "Page-boundary policy (Tamil)"}
+
+              </p>
+
+              <dl className="mt-2">
+
+                <Row label={ta ? "கொள்கை" : "Policy"}>
+
+                  {ta
+
+                    ? "இயற்பியல் பக்க எல்லையில் ஒரு இடைவெளி சேர்க்கப்படுகிறது"
+
+                    : "one space inserted at a physical page boundary"}
+
+                </Row>
+
+                <Row label={ta ? "அடிப்படை" : "Basis"}>
+
+                  {ta ? "காப்பகத்தின் இயல்பாக்கல் விதி" : "the archive's normalisation rule"}
+
+                </Row>
+
+                <Row label={ta ? "தனித்தனி எல்லை ஆய்வு" : "Per-boundary adjudication"}>
+
+                  {ta ? "பதிவு செய்யப்படவில்லை" : "not recorded by the archive"}
+
+                </Row>
+
+                <Row label={ta ? "கொள்கைப்படி இணைக்கப்பட்டவை" : "Policy-joined continuations"}>
+
+                  {joinPolicy.appliedBoundaries}
+
+                </Row>
+
+                <Row label={ta ? "தீர்மானிக்கப்படாத எல்லைகள்" : "Boundaries left unresolved"}>
+
+                  {joinPolicy.unresolvedBoundaries}
+
+                </Row>
+
+              </dl>
+
+              {/* The wording here deliberately stops short of the audited model's claim: this speech has
+
+                  no per-transition table, and saying it did would turn policy into adjudication. */}
+
+              <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
+
+                {ta
+
+                  ? "இந்த உரையின் பக்க எல்லைகள் தனித்தனியாக மூலத்துடன் ஒப்பிடப்படவில்லை. காப்பகத்தின் இயல்பாக்கல் விதிப்படி, ஒரு வாக்கியம் பக்க எல்லையைத் தாண்டித் தொடரும்போது ஒரு இடைவெளி மட்டும் சேர்க்கப்படுகிறது. முந்தைய பகுதி ஒரு வாக்கியத்தை முடிக்கும் இடங்களில் பத்தி உறவு தீர்மானிக்கப்படாமலே விடப்படுகிறது."
+
+                  : "The page boundaries in this speech were not compared against the scan one by one. Under the archive's normalisation rule, a sentence running on across a page edge is joined with a single space; where the preceding fragment closes a sentence, the paragraph relationship is left explicitly unresolved rather than guessed."}
+
+              </p>
+
+            </div>
+
+          )}
           <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
             {ta
               ? "தலைப்புகள் மூலத்தில் அச்சிடப்பட்டவை. மூலப் பக்க எல்லை என்பது பத்தி எல்லை அல்ல; பத்தி உறவுகள் நிறுத்தற்குறியிலிருந்து ஊகிக்கப்படவில்லை — ஒவ்வொரு எல்லையும் மூல ஆவணங்களின் அடிப்படையில் வெளிப்படையாகத் தணிக்கை செய்யப்பட்டது. ஆங்கிலப் பத்தி அமைப்பு மொழிபெயர்ப்பாளரின் சொந்த அமைப்பே; பக்க அடையாளங்கள் மூலச் சான்று மட்டுமே."
@@ -187,7 +309,7 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </h2>
           <dl className="mt-3">
             <Row label={ta ? "தமிழ் படியெடுப்பு" : "Tamil transcription"}>{String(prov.transcription.status)} · {prov.transcription.verified_against_scan ? (ta ? "scan-உடன் சரிபார்க்கப்பட்டது" : "verified against scan") : "—"}</Row>
-            <Row label={ta ? "ஆங்கில மொழிபெயர்ப்பு" : "English translation"}>{String(prov.translation.status)} · {String(prov.translation.type)}</Row>
+            <Row label={ta ? "ஆங்கில மொழிபெயர்ப்பு" : "English translation"}>{String(prov.translation.status)}{prov.translation.type ? ` · ${String(prov.translation.type)}` : ""}</Row>
           </dl>
         </section>
 
@@ -229,18 +351,24 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </dl>
         </section>
 
-        {/* Notes */}
-        <section className="mt-4 rounded-2xl border border-ink/10 bg-white/40 p-5 dark:border-white/10 dark:bg-night-surface/40">
-          <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">{ta ? "குறிப்புகள்" : "Notes"}</h2>
-          <ul className="mt-3 space-y-2 text-sm text-ink/70 dark:text-night-text/70">
-            {prov.notes.map((n, i) => (
-              <li key={i} className="flex gap-2">
-                <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink/30 dark:bg-white/30" />
-                <span>{n}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {/* Notes — omitted entirely when the archive records none for this speech. */}
+
+
+        {prov.notes && prov.notes.length > 0 && (
+          <section className="mt-4 rounded-2xl border border-ink/10 bg-white/40 p-5 dark:border-white/10 dark:bg-night-surface/40">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">{ta ? "குறிப்புகள்" : "Notes"}</h2>
+            <ul className="mt-3 space-y-2 text-sm text-ink/70 dark:text-night-text/70">
+              {prov.notes!.map((n, i) => (
+                <li key={i} className="flex gap-2">
+                  <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink/30 dark:bg-white/30" />
+                  <span>{n}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+
+        )}
 
         <div className="mt-8 flex flex-wrap gap-2 text-sm">
           <Link href={`/speeches/${slug}`} className="focus-ring inline-flex items-center gap-1.5 rounded-full border border-ink/15 px-3 py-1 hover:border-marina/50 dark:border-white/15" lang={lang}>
