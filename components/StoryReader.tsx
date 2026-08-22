@@ -11,11 +11,12 @@ import { cn } from "@/lib/utils";
  *
  * A PUBLICATION INTERFACE, NOT AN EVIDENCE INTERFACE. This page is where the story is READ. It
  * carries no scan numbers, no printed-page markers, no boundary labels and no provenance annotation
- * — a reader who opens it should find a clean literary text, not an apparatus. Every archival fact
- * the library holds about this story is still published, in full, one link away at
- * `/stories/<slug>/source`: the scan mapping, the printed-page uncertainty on the opening scan, the
- * story scope against the whole booklet's, the publisher's erratum witness and the join policy. The
- * two interfaces are deliberately not mixed.
+ * — not in the text, not in a caption, and not in an `aria-label` either, since a name a screen
+ * reader speaks is still something the page says. What is left is a title, an author, the text, and
+ * the choice of language. Every archival fact the library holds about this story is still published,
+ * in full, one link away at `/stories/<slug>/source`: the scan mapping, the printed-page uncertainty
+ * on the opening scan, the story scope against the whole booklet's, the publisher's erratum witness,
+ * the join policy, and what the English layer is. The two interfaces are deliberately not mixed.
  *
  * ONE LANGUAGE AT A TIME. Tamil and English are two views of the same page, chosen by the toggle —
  * never a Tamil text with an English one appended after it. The toggle is the same pill control the
@@ -93,19 +94,11 @@ export default function StoryReader({ story }: { story: Story }) {
           </div>
         </div>
 
-        {/* Said once, only in the English view, and only about what the English layer IS. A project
-            translation must never be mistaken for Kalaignar's own words; that is a statement about
-            authorship, not an archival annotation, so it belongs on the reading page. */}
-        {showEn && (
-          <p className="mt-4 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
-            {ta
-              ? "இது இத்திட்டத்தால் உருவாக்கப்பட்ட ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
-              : "A project-created English reading translation. The Tamil original remains authoritative."}
-          </p>
-        )}
-
+        {/* The text, and nothing between the toggle and it. What the English layer is — a
+            project-created translation, with the Tamil authoritative — is stated on the provenance
+            page, which the link at the foot of this page reaches. */}
         <div className={cn("mt-10 break-words", showEn ? "font-body text-base" : "font-tamil text-lg")} lang={showEn ? "en" : "ta"}>
-          {renderBlocks(blocks, ta)}
+          {renderBlocks(blocks)}
         </div>
 
         {/* The one link out to the evidence interface. A div, so it survives print — and it names the
@@ -127,7 +120,7 @@ export default function StoryReader({ story }: { story: Story }) {
 // Render the ordered block stream. A run of [paragraph, unresolved-break, paragraph, …] is wrapped in
 // ONE non-<p> group, so an unresolved paragraph relationship asserts neither a break nor a
 // continuation; resolved paragraphs render as ordinary <p>.
-function renderBlocks(blocks: StoryBlock[], ta: boolean): ReactNode[] {
+function renderBlocks(blocks: StoryBlock[]): ReactNode[] {
   const out: ReactNode[] = [];
   let i = 0;
   while (i < blocks.length) {
@@ -161,7 +154,7 @@ function renderBlocks(blocks: StoryBlock[], ta: boolean): ReactNode[] {
           group.push(blocks[i], blocks[i + 1]);
           i += 2;
         }
-        out.push(<UnresolvedGroup key={"g" + i} items={group} ta={ta} />);
+        out.push(<UnresolvedGroup key={"g" + i} items={group} />);
         continue;
       }
       out.push(
@@ -187,16 +180,15 @@ function renderBlocks(blocks: StoryBlock[], ta: boolean): ReactNode[] {
  * paragraph here, which is exactly what is not known. They are set apart by a gap SMALLER than the
  * `mb-5` between ordinary paragraphs: a full paragraph break would claim separation, and no break at
  * all would claim continuation, so the presentation sits deliberately between the two and carries no
- * label, no rule and no number. The `aria-label` gives assistive technology the same grouping the
- * markup gives everyone else, in plain reading language; the archival detail — which scans, and why
- * the relationship is open — is published on the provenance page.
+ * label, no rule, no number and no name. `role="group"` alone binds the runs for assistive
+ * technology without describing them: a name here would have to say what is unresolved, and that
+ * explanation is archival. It belongs on the provenance page, along with which scans are involved.
  */
-function UnresolvedGroup({ items, ta }: { items: StoryBlock[]; ta: boolean }) {
+function UnresolvedGroup({ items }: { items: StoryBlock[] }) {
   let run = 0;
   return (
     <div
       role="group"
-      aria-label={ta ? "பத்தி எல்லை — தீர்மானிக்கப்படவில்லை" : "paragraph boundary — unresolved"}
       className="mb-5"
     >
       {items.map((it, k) =>
