@@ -475,6 +475,257 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     },
     provenanceHref: "/speeches/arappor/source",
   },
+
+  // ── THE 2007 ASSEMBLY ANTHOLOGY ──────────────────────────────────────────────────────────────
+  // Ten dated speeches from one controlling publication, தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற
+  // உரைகள். They are catalogued as TEN works, not one collection card: each has its own sitting
+  // date, source path, reader route, provenance route and citable identity. The anthology is the
+  // controlling SOURCE PUBLICATION, not the public work boundary.
+  //
+  // Titles are the released identities verbatim, repetition and all. "உரை : N" is how the edition
+  // itself numbers these speeches; the descriptions carry the sitting date and the source-stated
+  // event, so otherwise-identical titles stay distinguishable without anything being renamed.
+  //
+  // `edition` is UNSET on all ten. Nine record the anthology's edition, date and publisher; the
+  // 2006 speech records none of them. Writing the siblings' values onto it would flatten a
+  // provenance distinction the generated data deliberately keeps, and the full publication
+  // evidence already lives on each work's /source page.
+  //
+  // `unitCount` is UNSET. The archive publishes no unit structure for an individual speech —
+  // source pages, paragraphs, blocks and the anthology's "உரை : N" sequence are none of them.
+  //
+  // `rights` is UNSET, deliberately and not as a TODO. The anthology provenance carries no rights
+  // position, the reader correctly omits that section, and rights/WorkAttribution is out of scope.
+  {
+    id: "1963-03-21-industries-debate",
+    slug: "1963-03-21-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 1",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 1",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1963-03-21-industries-debate",
+    state: "published",
+    descTa: "1963-03-21 · தொழில்துறை மானியத்தின்மீது உரை",
+    descEn: "1963-03-21 · Speech on the Industries grant",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1963/1963-03-21-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1963-03-21-industries-debate/source",
+  },
+  {
+    id: "1981-04-16-industries-debate",
+    slug: "1981-04-16-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 2",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 2",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1981-04-16-industries-debate",
+    state: "published",
+    descTa: "1981-04-16 · தொழில் கொள்கைகள், திட்டங்கள் மற்றும் மானியக் கோரிக்கை குறித்த உரை",
+    descEn: "1981-04-16 · Speech on industrial policies, plans and the grant demand",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1981/1981-04-16-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1981-04-16-industries-debate/source",
+  },
+  {
+    id: "1989-05-03-industries-debate",
+    slug: "1989-05-03-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 3",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 3",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1989-05-03-industries-debate",
+    state: "published",
+    descTa: "1989-05-03 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "1989-05-03 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1989/1989-05-03-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1989-05-03-industries-debate/source",
+  },
+  {
+    id: "1990-04-18-industries-debate",
+    slug: "1990-04-18-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 4",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 4",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1990-04-18-industries-debate",
+    state: "published",
+    descTa: "1990-04-18 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "1990-04-18 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1990/1990-04-18-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1990-04-18-industries-debate/source",
+  },
+  {
+    id: "1996-08-14-industries-debate",
+    slug: "1996-08-14-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 5",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 5",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1996-08-14-industries-debate",
+    state: "published",
+    descTa: "1996-08-14 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "1996-08-14 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1996/1996-08-14-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1996-08-14-industries-debate/source",
+  },
+  {
+    id: "1997-04-23-industries-debate",
+    slug: "1997-04-23-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 6",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 6",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1997-04-23-industries-debate",
+    state: "published",
+    descTa: "1997-04-23 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "1997-04-23 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1997/1997-04-23-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1997-04-23-industries-debate/source",
+  },
+  {
+    id: "1998-05-14-industries-debate",
+    slug: "1998-05-14-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 7",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 7",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1998-05-14-industries-debate",
+    state: "published",
+    descTa: "1998-05-14 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "1998-05-14 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1998/1998-05-14-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1998-05-14-industries-debate/source",
+  },
+  {
+    id: "1999-04-29-industries-debate",
+    slug: "1999-04-29-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 8",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 8",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/1999-04-29-industries-debate",
+    state: "published",
+    descTa: "1999-04-29 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "1999-04-29 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/1999/1999-04-29-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/1999-04-29-industries-debate/source",
+  },
+  {
+    id: "2000-05-08-industries-debate",
+    slug: "2000-05-08-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 9",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 9",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/2000-05-08-industries-debate",
+    state: "published",
+    descTa: "2000-05-08 · தொழில்துறை மானிய விவாத உரை",
+    descEn: "2000-05-08 · Speech in the Industries grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/2000/2000-05-08-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/2000-05-08-industries-debate/source",
+  },
+  {
+    id: "2006-08-23-industries-debate",
+    slug: "2006-08-23-industries-debate",
+    titleTa: "தொழில்துறை பற்றி கலைஞரின் சட்டமன்ற உரைகள் — உரை : 10",
+    titleEn: "Kalaignar's Legislative Assembly Speeches on Industry — Speech 10",
+    shelf: "speeches",
+    subtype: "assembly-speech",
+    readerStructure: "speech",
+    href: "/speeches/2006-08-23-industries-debate",
+    state: "published",
+    descTa: "2006-08-23 · தொழில்துறை மற்றும் தகவல் தொழில்நுட்பத் துறை மானிய விவாத உரை",
+    descEn: "2006-08-23 · Speech in the Industries and Information Technology grant debate",
+    sourceRepo: "pugazg/kalaignar-assembly-speeches",
+    sourcePath: "speeches/2006/2006-08-23-industries-debate",
+    sourceCommit: "b1b82402642d8f2cf36927d4752c8e7d28142fdd",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: every one of the ten records requires_verified_tamil and
+    // verified_against_tamil, and the English was produced from the verified Tamil under the
+    // archive's own translate-then-verify gates. Not a separately published translation.
+    englishKind: "project-created",
+    provenanceHref: "/speeches/2006-08-23-industries-debate/source",
+  },
   {
     // Digital Library Phase 4 — Poetry. First benchmark, and the first work on the கவிதைகள் shelf.
     // Owner-directed move to a new category: Phase 3 (Speeches) is ACTIVE but PAUSED after three
