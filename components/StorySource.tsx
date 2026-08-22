@@ -39,15 +39,19 @@ export default function StorySource({ slug, prov }: { slug: string; prov: StoryP
   const errata = prov.errata;
   const en = prov.english;
 
-  const identity: [string, string][] = [
-    ["அச்சுத் தலைப்பு", s.printedTitleTa],
-    ["தீட்டியவர்", s.printedAuthorshipLineTa],
-    ["பதிப்பு", s.editionStatementTa],
-    ["கோப்பு", s.scanFilename],
-    ["SHA-256", s.scanSha256],
+  // `machineId` marks the rows that are opaque identifiers rather than language. Those may break at
+  // any character, because a 64-character hash has no word boundaries to break at and would
+  // otherwise overflow the column. Everything else is Tamil the reader actually reads, and must
+  // break only between words — `break-all` on a name splits `கருணாநிதி` mid-syllable.
+  const identity: { label: string; value: string; machineId?: true }[] = [
+    { label: "அச்சுத் தலைப்பு", value: s.printedTitleTa },
+    { label: "தீட்டியவர்", value: s.printedAuthorshipLineTa },
+    { label: "பதிப்பு", value: s.editionStatementTa },
+    { label: "கோப்பு", value: s.scanFilename, machineId: true },
+    { label: "SHA-256", value: s.scanSha256, machineId: true },
     // Grouped as the archival record states it, so a reader can compare the two figures digit by digit.
-    ["அளவு", `${s.scanFileSizeBytes.toLocaleString("en-US")} bytes`],
-    ["ஸ்கேன் பக்கங்கள்", String(s.scanTotalPages)],
+    { label: "அளவு", value: `${s.scanFileSizeBytes.toLocaleString("en-US")} bytes` },
+    { label: "ஸ்கேன் பக்கங்கள்", value: String(s.scanTotalPages) },
   ];
 
   return (
@@ -77,10 +81,12 @@ export default function StorySource({ slug, prov }: { slug: string; prov: StoryP
           சேமிக்கப்படவில்லை.
         </Prose>
         <dl className="mt-5 space-y-3">
-          {identity.map(([k, v]) => (
-            <div key={k} className="grid grid-cols-[7.5rem_1fr] gap-3 border-b border-ink/8 pb-3 dark:border-white/8 sm:grid-cols-[9rem_1fr]">
-              <dt className="font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">{k}</dt>
-              <dd className="break-all font-tamil text-sm text-ink/85 dark:text-night-text/85">{v}</dd>
+          {identity.map((row) => (
+            <div key={row.label} className="grid grid-cols-[7.5rem_1fr] gap-3 border-b border-ink/8 pb-3 dark:border-white/8 sm:grid-cols-[9rem_1fr]">
+              <dt className="font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">{row.label}</dt>
+              <dd className={`${row.machineId ? "break-all" : "break-words"} font-tamil text-sm text-ink/85 dark:text-night-text/85`}>
+                {row.value}
+              </dd>
             </div>
           ))}
         </dl>
