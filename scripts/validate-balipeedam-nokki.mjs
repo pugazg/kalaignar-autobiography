@@ -24,6 +24,76 @@ const DATA = path.join(process.cwd(), "public/data/novels", SLUG);
 const nfc = (s) => s.normalize("NFC");
 const readText = (p) => nfc(fs.readFileSync(p, "utf8"));
 
+// Parse data/library.ts into one record per catalog entry.
+//
+// Regex-counting the whole file cannot tell WHICH entry a match belongs to, so an assertion built
+// on it can only ever count occurrences — which is how the old fiction-shelf check came to test the
+// wrong thing. Splitting the array into entries first means every assertion below can be stated
+// about a specific work.
+//
+// Comments are stripped before brace-matching (they contain both braces and backticks), and string
+// literals are respected so a brace inside a Tamil description cannot split an entry. data/library.ts
+// uses no template literals, which this relies on and which the parse-shape check below would catch.
+function catalogEntries(src) {
+  let s = "";
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '"' || c === "'") {
+      const q = c;
+      let j = i + 1;
+      while (j < src.length && src[j] !== q) j += src[j] === "\\" ? 2 : 1;
+      s += src.slice(i, j + 1);
+      i = j;
+    } else if (c === "/" && src[i + 1] === "/") {
+      const nl = src.indexOf("\n", i);
+      s += " ".repeat((nl === -1 ? src.length : nl) - i);
+      i = (nl === -1 ? src.length : nl) - 1;
+    } else if (c === "/" && src[i + 1] === "*") {
+      const end = src.indexOf("*/", i + 2);
+      const stop = end === -1 ? src.length : end + 2;
+      s += src.slice(i, stop).replace(/[^\n]/g, " ");
+      i = stop - 1;
+    } else s += c;
+  }
+  const decl = s.indexOf("LIBRARY_WORKS");
+  // The array opener is the LAST "[" before the first entry — `s.indexOf("[", decl)` would find the
+  // one in the `LibraryWork[]` type annotation instead.
+  const open = s.lastIndexOf("[", s.indexOf("{", decl));
+  const body = s.slice(open + 1, s.indexOf("\n];", open));
+  const spans = [];
+  let depth = 0;
+  let start = -1;
+  for (let i = 0; i < body.length; i++) {
+    const c = body[i];
+    if (c === '"' || c === "'") {
+      const q = c;
+      while (++i < body.length && body[i] !== q) if (body[i] === "\\") i++;
+    } else if (c === "{") {
+      if (depth++ === 0) start = i;
+    } else if (c === "}") {
+      if (--depth === 0) spans.push([start, i + 1]);
+    }
+  }
+  // Offsets come from the comment-blanked copy, which is character-for-character aligned with the
+  // original — so the ORIGINAL text (comments intact) is sliced for each entry, letting the mention
+  // checks see the notes.
+  // Span offsets are relative to `body`; shift them to absolute file offsets before slicing.
+  return spans.map(([a, b]) => {
+    const [from, to] = [open + 1 + a, open + 1 + b];
+    const stripped = s.slice(from, to);
+    const field = (k) => (stripped.match(new RegExp(`^\\s*${k}: "([^"]*)"`, "m")) || [])[1];
+    return {
+      src: src.slice(from, to),
+      id: field("id"),
+      slug: field("slug"),
+      shelf: field("shelf"),
+      href: field("href"),
+      sourcePath: field("sourcePath"),
+      provenanceHref: field("provenanceHref"),
+    };
+  });
+}
+
 const novel = JSON.parse(fs.readFileSync(path.join(DATA, "novel.json"), "utf8"));
 const prov = JSON.parse(fs.readFileSync(path.join(DATA, "provenance.json"), "utf8"));
 
@@ -77,15 +147,47 @@ check("no PDF committed in the source repository either", !execFileSync("git", [
   eq("the embedded section is section 2", embedded[0]?.order, 2);
   eq("provenance records one embedded-sequence section", prov.archiveDerived.embeddedSequenceSections, 1);
   check("the embedded section keeps the novel's work id", novel.sections.every(() => novel.workId === SLUG));
-  // There must be exactly ONE catalog work and no separate route/identity for the sequence.
-  // Scope this to IDENTITY fields only: the catalog may legitimately *describe* the sequence
-  // (that is the point of the note), but must never give it an id, slug, href or route of its own.
-  const lib = readText(path.join(process.cwd(), "data/library.ts"));
-  const identities = [...lib.matchAll(/^\s*(?:id|slug|href|sourcePath|provenanceHref):\s*"([^"]*)"/gm)].map((m) => m[1]);
-  check("no catalog identity names the sequence", !identities.some((v) => /rayasam|venganna/i.test(v)), identities.filter((v) => /rayasam|venganna/i.test(v)).join(", "));
-  eq("exactly one fiction work in the catalog", (lib.match(/shelf: "fiction"/g) || []).length, 1);
-  check("the sequence is mentioned only as description of the novel", [...lib.matchAll(/rayasam|venganna/gi)].every((m) => /desc(Ta|En)|note/i.test(lib.slice(lib.lastIndexOf("\n", m.index), m.index))));
-  check("no separate route for the sequence", !fs.readdirSync(path.join(process.cwd(), "app/novels")).some((d) => /rayasam|venganna/i.test(d)));
+  // The sequence must have NO catalog work, no identity and no route of its own. The catalog may
+  // legitimately DESCRIBE it — that is the point of the note — but never name it as a work.
+  //
+  // These checks used to be anchored on a count: `shelf: "fiction"` had to occur exactly once. That
+  // was a PROXY, valid only while the fiction shelf happened to hold this one novel, and it tested
+  // the wrong thing — it would have passed a second fiction entry called `rayasam-venganna` if this
+  // novel had been removed, and it fails an unrelated second fiction work that has nothing to do
+  // with the sequence. The invariant is about IDENTITY, so it is asserted on identity: this novel
+  // appears exactly once, and no fiction entry — however many there are — is the sequence.
+  const entries = catalogEntries(readText(path.join(process.cwd(), "data/library.ts")));
+  const IS_SEQUENCE = /rayasam|venganna|ராயசம்|வெங்கண்ணா/i;
+  const idFields = (e) => [e.id, e.slug, e.href, e.sourcePath, e.provenanceHref].filter(Boolean);
+
+  eq("the catalog parses into entries", entries.length > 0, true);
+  const named = entries.filter((e) => idFields(e).some((v) => IS_SEQUENCE.test(v)));
+  check("no catalog identity names the sequence", named.length === 0, named.map((e) => e.id).join(", "));
+
+  const fiction = entries.filter((e) => e.shelf === "fiction");
+  check("the fiction shelf carries this novel", fiction.some((e) => e.id === SLUG));
+  eq("the novel appears exactly once in the catalog", entries.filter((e) => e.id === SLUG).length, 1);
+  eq("the novel appears exactly once on the fiction shelf", fiction.filter((e) => e.id === SLUG).length, 1);
+  // Deliberately NOT a count of the shelf: fiction may hold any number of unrelated works. What is
+  // forbidden is a fiction entry that IS the sequence.
+  const seqOnShelf = fiction.filter((e) => idFields(e).some((v) => IS_SEQUENCE.test(v)));
+  check("no fiction work is the embedded sequence", seqOnShelf.length === 0, seqOnShelf.map((e) => e.id).join(", "));
+
+  // Every mention of the sequence anywhere in the catalog must sit in a free-text field, and inside
+  // THIS novel's entry — not merely in some entry's prose.
+  const mentions = entries.flatMap((e) =>
+    [...e.src.matchAll(new RegExp(IS_SEQUENCE.source, "gi"))].map((m) => ({
+      entry: e,
+      line: e.src.slice(e.src.lastIndexOf("\n", m.index) + 1, m.index),
+    })),
+  );
+  check("the sequence is mentioned somewhere (the note still exists)", mentions.length > 0);
+  check(
+    "every mention of the sequence is free text inside this novel's entry",
+    mentions.every((m) => m.entry.id === SLUG && /^\s*(?:\/\/|\*|desc(?:Ta|En):|note:)/.test(m.line)),
+    mentions.filter((m) => !(m.entry.id === SLUG && /^\s*(?:\/\/|\*|desc(?:Ta|En):|note:)/.test(m.line))).map((m) => `${m.entry.id}: ${m.line.trim().slice(0, 40)}`).join(" | "),
+  );
+  check("no separate route for the sequence", !fs.readdirSync(path.join(process.cwd(), "app/novels")).some((d) => IS_SEQUENCE.test(d)));
   eq("provenance explains the rule", typeof prov.source.embeddedSequenceNote, "string");
   check("provenance states it is not a separate work", prov.source.embeddedSequenceNote.includes("NOT a separate work"));
   check("source continuity is recorded", prov.source.sourceContinuity.length >= 6);
