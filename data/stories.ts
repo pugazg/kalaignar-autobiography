@@ -24,7 +24,9 @@
 //   - "space"   — an ordinary word boundary at the scan edge → a single space;
 //   - "none"    — the scan splits a WORD → join with NO space;
 //   - "unknown" — the exact printed joined-vs-spaced form is UNRESOLVED. The reader must NOT silently
-//                 choose a space or a concatenation; it renders a neutral inline scan marker instead;
+//                 choose a space or a concatenation; it keeps the uncertainty visible as an unlabelled
+//                 mark and exposes no scan metadata in the reading interface — the archival detail
+//                 lives on the work's provenance page;
 //   - "end"     — last segment of the paragraph.
 // `kizhavan-kanavu` uses only "space" and "end". The other two are part of the model because a reader
 // that does not handle them would have to guess, and guessing is the failure this vocabulary exists to
