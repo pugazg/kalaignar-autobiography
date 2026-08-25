@@ -1,0 +1,481 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-13",
+  "canonicalScene": 13,
+  "sourceHeading": 13,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—13",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 15,
+      "printedPage": 14
+    },
+    {
+      "pdfPage": 16,
+      "printedPage": 15,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 17,
+      "printedPage": 16,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(மார்வாடிக் கடை)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(சென்னையில் பணத்தை இழந்ததால் மதுரை செல்லப் பணத்திற்காகக் கஷ்டப்படுகிற குணசேகரன்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியாபாரி",
+        "text": "வியாபாரி : வாங்கோயா...நிம்மின்கி என்ன வேணும்? சொல்லுங்கோயா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அய்யா...எனக்கு ஒண்ணும் வேண்டாம் இந்த பேண்டை விலைக்கு எடுத்துக்கிட்றீங்களா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : இது ரொம்ப புராணு இருக்காங்க! எட்டு அணா தருங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : புதுசய்யா! ஐம்பது ரூபாய் போட்டு தைச்சேன் மதுரைக்குப் போகணும் ரயில் சார்ஜ்க்காவது கொடுங்கையா."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : நீப்பன்—பம்பாய் போறன்—மதராஸ் போறன் நம்பள்கி என்னப்பா. எட்டணா தர்றன்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குணசேகரன் நகருகிறான். ஒரு வீட்டில் போய் பணம் கேட்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அய்யோ! கப்பல்லே வந்தேன்—பணம் பெட்டி எல்லாம் திருட்டுப் போயிடுச்சி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "வீட்டுக் : பணம் பெட்டியெல்லாம் திருட்டுப் போயிட்டா போலீஸ் ஸ்டேஷனிலே ரிப்போர்ட் பண்ணு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : மதுரைக்குப் போகணும் ஏதாவது..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "வீட்டுக் : போ...போ..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இரவு நேரம் குணசேகரன் ஒரு திண்ணையில் தூங்கிக் கொண்டிருக்கிறான், வீட்டுக்காரன் தண்ணீரைக் கொண்டு வந்து ஊற்றுகிறான் குணசேகரன் மீது)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "வீட்டுக் : ஏண்டா அயோக்கியப் பயலே! யாரைக் கேட்டுடா இங்கே வந்து படுத்தே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அய்யா...இன்னும் கொஞ்சம் தண்ணி இருந்தா கொண்டு வந்து ஊத்துங்க! குளிச்சு ரொம்ப நாளாகுது கொஞ்சம் சோப்பு இருக்குங்களா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "வீட்டுக் : அட திருட்டுப் பயலே—(மனைவியிடம்) பார்த்தியாடி இவன் திமிரை?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அம்மா லட்சுமி மாதிரி இருக்கீங்க! உங்க தம்பியாக இருந்தால் இப்படி பார்த்துக்கிட்டு இருப்பீங்களா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பெண்",
+        "text": "பெண் : பார்த்தீங்களா! தம்பி முறையில்லா கொண்டாட வந்துட்டான் தடிப்பயல்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "வீட்டுக் : கொண்டாடுவான் இன்னும் கொஞ்சம் கழிச்சா ஒவ்வொரு முறையும் கொண்டாட ஆரம்பிச்சிடுவான். நீ முதல்லே போயிடு உள்ளே (உள்ளே போகிறாள்) குணசேகரனைப் பார்த்து போடா போடான்னு..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குணசேகரன் போய் ஒரு பிளாட்பாரத்தில் படுத்துத் தூங்கிக் கொண்டிருக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ் : டேய் டேய் டேய் சோம்பேறி பிக்பாக்கெட் அடிச்சிட்டு வந்துதானே படுத்திருக்கே என்னடா முழிக்கிறே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : தூங்கிறவனை எழுப்பினால் முழிக்காம வேற என்ன பண்ணுவான்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ் : டேய்! நீ பிக்பாக்கெட் தானே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (இரண்டு பைகளிலும் கையை விட்டுத் தடவி) இல்லே எம்ப்டி பாக்கெட்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ் : பின்ன ஏண்டா இங்கே வந்து படுத்தே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : இங்கக்கூட படுக்கக் கூடாதா? மாடு செய்த புண்ணியம்கூட இந்த மனிதன் செய்யலியா? ஆமா! மதராஸிலே மனுஷன் மிருகமாத்தான் இருக்கான்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ் : யாரையடா சொல்றே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : உங்களச் சொல்லலீங்க முதுகெலும்பு ஒடிய ஒடிய மூட்டை வண்டி இழுக்கிறேனே...குதிரைக்கு பதிலாக நரம்பு தெறிக்கத்தெறிக்க ரிக்ஷா இழுத்துக் கூனிப் போயிருக்"
+      },
+      {
+        "kind": "prose",
+        "text": "கிறேனே நாயைப்போல சுருண்டு நடைபாதையில் குடும்பத்துடன் வாழ்கிறேனே அந்த நல்லவன், நாதியற்றவனை நாலு காலு மிருகத்தைப் போல உழைக்கிறேனே அவனை சொல்லுகிறேன். சென்னை புனிதமான நகரம்! அங்கே மனிதன் மிருகம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ் : நீ மெட்ராசுக்கு மேயராக வர்ற காலத்திலே மிருகத்தையெல்லாம் மனுஷனுக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஏன்...இப்பவே எத்தனையோ மிருகங்கள் மனித உருவத்தில்தானே இருக்கு."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(அந்த இடத்தை விட்டு நகர்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (குழாயைப் பார்த்து)...ஆஹா...கடவுள் தண்ணீரையாவது காட்டினாரே! (தண்ணீர் விழவில்லை) பராசக்தி உன் மகனின் கதியைப் பார். அவனுக்கு உண்ண உணவு இல்ல. உடுத்த மாற்றுத் துணியில்லை! உறங்க ஒரு இடம் இல்ல! பராசக்தி—"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s013-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Marwari shop.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Having lost his money in Madras, Gunasekaran struggles to find money to go to Madurai.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u003",
+        "kind": "dialogue",
+        "speakerLabel": "வியாபாரி",
+        "text": "Come, sir... what do you want? Tell me, sir?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Sir... I don't want anything. Will you buy these trousers from me?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u005",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "This is very old! I'll give eight annas.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "It's new, sir! I paid fifty rupees to have it stitched. I have to get to Madurai—at least give me enough for the train fare, sir.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u007",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "You say—going to Bombay, going to Madras—what is that to me? I'll give eight annas.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u008",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran moves on. He goes to a house and asks for money.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u009",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Ayyo! I came by ship—my money and trunk were all stolen.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u010",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "If your money and trunk have been stolen, report it at the police station.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I have to get to Madurai—something...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u012",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "Go... go...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u013",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At night Gunasekaran is sleeping on a raised veranda. The householder brings water and pours it over him.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u014",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "Hey, you scoundrel! Who did you ask before coming and lying down here?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u015",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Sir... if there's a little more water, bring it and pour that too! It's been a long time since I bathed. Do you have a little soap?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u016",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "You thieving fellow—(to his wife) Did you see his insolence?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u017",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Madam, you look like Lakshmi! If I were your younger brother, would you just stand there watching like this?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u018",
+        "kind": "dialogue",
+        "speakerLabel": "பெண்",
+        "text": "Did you see! The lout has come claiming a younger-brother relationship without any right to it!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u019",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்டுக்",
+        "text": "He'll claim it! Give him a little more time and he'll start claiming every relationship. You go inside first. (She goes inside.) (Looking at Gunasekaran.) Get out, get out...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u020",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran goes and lies down to sleep on a raised veranda.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u021",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "Hey, hey, hey, you lazy pickpocket! You've come and lain down after picking pockets, haven't you? What are you staring at?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u022",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "If you wake a sleeping man, what else will he do but open his eyes?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u023",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "Hey! You're a pickpocket, aren't you?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u024",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(Putting his hands into both pockets and feeling them.) No—empty pocket.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u025",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "Then why did you come and lie down here?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u026",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Can't I even lie down here? Doesn't a human being have even the good fortune a cow has? Yes! In Madras, man is only a beast.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u027",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "Who are you talking about?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u028",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I'm not talking about you. With my spine breaking and breaking, I pull a handcart... in place of a horse, with my sinews straining and straining, I pull a rickshaw and become stooped; curled up like a dog, I live with my family on the pavement—that good man, that destitute one, I labour like a four-legged animal—I am talking about him. Madras is a sacred city! There, man is a beast.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u029",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "When you become Mayor of Madras, all the beasts into men...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u030",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Why... even now there are so many beasts in human form, aren't there?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u031",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(He moves away from that place.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s013-u032",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(Looking at the water tap.) Ah... at least God has shown me water! (No water comes.) Parasakthi, look at the fate of your son. He has no food to eat. No change of clothes to wear! No place to sleep! Parasakthi—",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

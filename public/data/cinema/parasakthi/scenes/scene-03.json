@@ -1,0 +1,168 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-03",
+  "canonicalScene": 3,
+  "sourceHeading": 3,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—3",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 7,
+      "printedPage": 6
+    },
+    {
+      "pdfPage": 8,
+      "printedPage": 7,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(மதுரையில் கல்யாண கோலத்துடன் கல்யாணி கண்ணாடி முன்னால் கண்ணீர் விட்டுக்கொண்டே...)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்யாணி",
+        "text": "கல்யாணி : அண்ணா என்னை மறந்து விட்டீர்களா? அம்மா என்று கூப்பிட கொடுத்துவைக்காத எனக்கு அண்ணா என்று கூப்பிட நீங்கள் இருக்கிறீர்கள் என்று நினைத்தேன். உலகில் ஒரு அண்ணன் இருந்து பெண்ணைப் பிறந்தால் பெரும் துயர் என்பார்கள் எனக்கு மூன்று அண்ணன்மார்கள் இருந்தும் என் கல்யாணத்தைக் காண ஒருவர் கூட வரவில்லையே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "பார் : கல்யாணி! அழாதேம்மா! அசந்தர்ப்பம்—எல்லோருக்கும் ஏற்பட்டதுதானே...வருவாங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அசந்தர்ப்பம்—இல்லை! என் அதிர்ஷ்டம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்கம்",
+        "text": "மாணிக்கம் : கல்யாணி! வருத்தப்படாதே அண்ணன்மார் எப்படியும் வருவார்கள் நேரம் ஆகுது வா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அப்பா அண்ணன் வருவார்கள் என்று எவ்வளவு நாள் காத்திருந்தேன் என் மணக்கோலத்தை காண இன்னும் அண்ணன் ஒருவரும் வரவில்லையே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "மாணிக் : வருவாங்கம்மா! இன்றைக்கு இல்லாவிட்டால் நாளைக்கு வருவார்கள் அழாதேம்மா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அப்பா கல்யாணத்தை தள்ளி வைச்சிட்டா என்னப்பா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "மாணிக் : ஐயர் வச்ச நாளம்மா தவறினு தகராறு வந்திடும் வா. எல்லோரும் காத்துக்கிட்டு இருக்காங்க"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(திருமணம் இனிது நடந்தேறுகிறது)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s003-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(In Madurai, Kalyani, dressed as a bride, stands before a mirror, weeping...)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கல்யாணி",
+        "text": "Brother, have you forgotten me? I was not blessed with a mother to call 'Amma'; I thought at least I had you to call 'Anna.' They say that for a girl to be born with even one elder brother is a great sorrow; though I have three elder brothers, not one has come to see my wedding...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "Kalyani! Don't cry, dear! It's the circumstances—it's happened to everyone... they'll come...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Circumstances? No—my fate.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u005",
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்கம்",
+        "text": "Kalyani, don't be upset. Your brothers will come somehow. It's getting late; come.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Father, how many days I waited, thinking my brothers would come. Even now, not one brother has come to see me in my bridal attire?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u007",
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "They'll come, dear! If not today, they'll come tomorrow. Don't cry, dear.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u008",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Father, what if we postpone the wedding?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u009",
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "The priest fixed this day, dear. If we miss it, there'll be a dispute. Come—everyone is waiting.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s003-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The wedding takes place happily.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

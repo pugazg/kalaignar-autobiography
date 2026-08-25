@@ -1,0 +1,66 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-11",
+  "canonicalScene": 11,
+  "sourceHeading": 11,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—11",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 14,
+      "printedPage": 13
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(மதுரையில் கடன்காரர்கள் மாணிக்கம் பிள்ளையின் வீட்டை ஏலமிடுகின்றனர்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விளம்பரம்",
+        "text": "விளம்பரம் : இதனால் யாவருக்கும் தெரிவிப்பது என்னவென்றால்; மாசிக்கோணார் தெரு, மாணிக்கம் பிள்ளையின் வீட்டாகிய இந்த ஆறும் நம்பர் வீட்டை நாளை பகல் மூன்று மணிக்கு பகிரங்க ஏலத்தில் விற்கப்படும், இது கோர்ட்டார் உத்தரவு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : டேய் தம்பி! பார்ரா இந்த பரிதாபத்தை...இரங்கூனிலே வில்லுக்கொத்து போல மூணு பிள்ளைகள் செல்வச் சிறப்போடு இருக்காங்க என்ற தைரியத்திலே இந்த அப்பாவி மாணிக்கம் பிள்ளை கடன் வாங்கி மகள் கல்யாணத்தை ஆடம்பரமாக நடத்திட்டு அந்த மனுஷனும் மண்டையைப் போட்டுட்டான். இரங்கூனில் ஜப்பான் குண்டு வீச்சிலே இந்த பசங்கள் என்ன ஆனுங்களோ? அட அதுதான் போகட்டும் இந்தப் பொண்ணு கல்யாணி கையிலே இருந்த பணம், நகை நட்டையெல்லாம் விற்றுக்கொடுத்துக்கூட ஒண்டி இருந்த வீட்டுக்கே ஆபத்து வந்திரிச்சி...ம் இன்னும் என்ன நடக்கப் போகுதோ?"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s011-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(In Madurai, creditors auction Manickam Pillai's house.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s011-u002",
+        "kind": "dialogue",
+        "speakerLabel": "விளம்பரம்",
+        "text": "This is to inform everyone that this house, number six, on Masi Konar Street, belonging to Manickam Pillai, will be sold by public auction tomorrow at three in the afternoon. This is an order of the court.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s011-u003",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "Hey, brother! Look at this misery... Trusting that his three sons in Rangoon were living in wealth and splendour, together like a bundle of bows, this poor Manickam Pillai borrowed money and celebrated his daughter's wedding lavishly—and the man himself died. Who knows what happened to those boys in the Japanese bombing of Rangoon? Well, leave that aside. Even after Kalyani used up the money she had and sold all her jewellery and ornaments, danger has now come even to the one house she had left... Mm... what else is going to happen?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

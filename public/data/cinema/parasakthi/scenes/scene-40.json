@@ -1,0 +1,84 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-40",
+  "canonicalScene": 40,
+  "sourceHeading": 40,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—40",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 45,
+      "printedPage": 44
+    },
+    {
+      "pdfPage": 46,
+      "printedPage": 45,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(தொல்லைகளாலும் பசிக்கொடுமையாலும் கன்னியரின் கற்பைச் சூறையாடும் கயவர்களாலும் கல்யாணி துரத்தப்பட்டு அவள் வாழ்க்கையின் ஓரத்திற்கே சென்று விட்டாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : கண்ணே! அதோ நம் உலகிற்குப் பாதை அந்த உலகிற்குப் போய்விட்டால் பசியே கிடையாது! உலகத்தின் பெயரைச் சொல்லி என் உயிரை வாங்கப் பார்க்கிறாயே அம்மா என்று கொஞ்சுகிறாயா? முடியாது எந்த உயிர்க்காக இந்தப் பாழும் உயிரை சுமந்தேனோ அந்த உயிரை கொல்லத்தான் போகிறேன். இந்த வஞ்சக உலகத்தில் உன்னை தனியாக வாழவிட முடியாது என் மடியிலே தவழும் மாணிக்கம் உன்னை இந்த நதியிலே தவழ விட்டுப்போகிறேன். திசைகாட்டி? அதுவே என் சகம் காட்டி! உன்னை இந்த ஆறுகாட்டும் வழியே அனுப்பப் போகிறேன். சோறுபோட சொரணையற்றவர்கள் விழுந்து சாவதற்கு இந்த ஆற்றையாவது வெட்டினார்களே! வா போவோம் வறுமை இல்லாத இடத்துக்கு உன் கடைசி முத்தத்தைக் கொடு! கொடுக்கமாட்டாயா? கன்னித்தமிழே கட்டி முத்தம் ஒன்று கொடு. உன் கடைசி முத்தத்தை இந்தக் காய்ந்த உதட்டிலே கொடு! கொடு."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குழந்தையைத் தூக்கி ஆற்றிலே எறிகிறாள் கல்யாணி அப்போது போலீசார் வந்து கல்யாணியை விரட்ட அவளும் ஆற்றில் குதிக்க அவளைச் சிறைபிடிக்கின்றனர் போலீசார்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : சாவது எவ்வளவோ மேல். இப்படி கஷ்டப்படுவதைவிட வைரக்கல்லிலே சம்மட்டி அடி விழுந்தாற் போல் எங்கள் குடும்பம் குழைந்து நொறுங்கிவிட்டதே. கல்யாணி எங்கு போனாளோ? சகோதரர்கள் என்னவானார்களோ ஞானசேகரன்! சந்திரசேகரன்!"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s040-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Driven by troubles, the cruelty of hunger, and villains who plunder maidens' chastity, Kalyani has reached the very edge of her life.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s040-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Dear child! There is the path to our world. If we go to that world, there will be no hunger! Are you trying to take my life by uttering the name of this world—cooing 'Amma'? No. I am going to kill the very life for whose sake I carried this ruined life. I cannot leave you to live alone in this deceitful world. Jewel crawling in my lap, I am going to leave you to crawl in this river. A guide to the way? That itself is my `sagam kaatti`! I am going to send you along the path this river shows. Those without even the sense to give food have at least cut this river for people to fall into and die! Come, let us go to a place without poverty. Give me your last kiss! Won't you? Kannithamizh, give me one tight kiss. Give your last kiss on these dried lips! Give it. Give it.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s040-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani lifts the child and throws it into the river. At that moment the police arrive and pursue Kalyani; she too jumps into the river, and the police take her into custody.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s040-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Death would be far better than suffering like this. Like a sledgehammer blow falling on a diamond, our family has crumpled and shattered. Where has Kalyani gone? What became of my brothers? Gnana Sekaran! Chandrasekaran!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

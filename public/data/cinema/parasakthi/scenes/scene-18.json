@@ -1,0 +1,210 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-18",
+  "canonicalScene": 18,
+  "sourceHeading": 18,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—18",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 22,
+      "printedPage": 21
+    },
+    {
+      "pdfPage": 23,
+      "printedPage": 22,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(மைனர்கள் சீட்டு விளையாடிக் கொண்டிருக்கின்றனர்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "1வது : திருப்பப்பா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "2வது",
+        "text": "2வது : மூணு ராஜா தம்பி"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "1வது : எனக்கு மட்டும் மூணு ஆஸ் இருந்தால்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ஒரு லாண்டறியே வச்சிருவே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "1வது : என்னப்பா சிரிக்கிறீங்க? நான் தான் ஆட்டத்துக்கு வர்லே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ஏது ஆள் அவுட்டா...சும்மா கெடப்பா போன காசையெல்லாம் திருப்பிடலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "1வது : ஏண்டா அதற்குக்கூட காசு வேணுமே! ஏய்...நீ வச்சிருந்தால் கொடுக்கமாட்டியா? ஏய் ஒரு டேபின் மட்டும் கொடப்பா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : பைசா நஹி! என்னப்பா...இரும்புப் பெட்டி சாவியை ஒங்க அப்பா ஒன்கிட்டே கொடுத்திருக்காரு பயப்பட்றியே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "1வது : சாவிதானே...எனக்கு அடிக்கடி காக்கா வலிப்பு வர்றது வழக்கம் அதனாலே கொடுத்திருக்காரு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ஏய்—அங்கே வர்றியா போவோம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "1வது : எங்கே?"
+      },
+      {
+        "kind": "prose",
+        "text": "[மைனர் வேணுவால் அழைத்துச் செல்லப்படுகிறான்]"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s018-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The young men are playing cards.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u002",
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "Turn it over, man.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u003",
+        "kind": "dialogue",
+        "speakerLabel": "2வது",
+        "text": "Three kings, brother.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u004",
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "If only I had three aces...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u005",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "You'd open a laundry.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u006",
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "Why are you laughing? I'm the one who's not joining the game.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u007",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "What, are you out? Just stay, man—we can win back all the money we've lost.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u008",
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "But even for that we need money! Hey... if you had it, wouldn't you give me some? Hey, just give me one tebin.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u009",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Paisa nahi! What, man... your father has given you the key to the iron safe, and you're afraid...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u010",
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "It's only the key... I often get fits; that's why he gave it to me.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u011",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Hey—are you coming there? Let's go...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u012",
+        "kind": "dialogue",
+        "speakerLabel": "1வது",
+        "text": "Where?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s018-u013",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[The young man is led away by Venu.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

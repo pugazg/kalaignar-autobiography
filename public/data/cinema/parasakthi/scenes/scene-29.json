@@ -1,0 +1,81 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-29",
+  "canonicalScene": 29,
+  "sourceHeading": 29,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—29",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 35,
+      "printedPage": 34
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(தெருவழியாக பசியால் துடித்துச் செல்கிறாள் கல்யாணி)"
+      },
+      {
+        "kind": "verse",
+        "text": "பொருளே இல்லார்க்கு தொல்லையா  \nபுது வாழ்வே இல்லையா  \nஇருள் நீங்கும் மார்க்கம் இல்லையா  \nஇறைவா நீ சொல்லையா                                             (பொரு  \nபசியாலே வாடும் பாவி முகத்தை  \nபார்ப்போர் இல்லையா  \nஎம்மைக் காப்போர் இல்லையா  \nஏழை எம்மை ஆதரிக்கும் இரக்கம் இல்லையா  \nஇருள் நீங்கும் மார்க்கம் இல்லையா  \nஇறைவா நீ சொல்லையா?                                            (பொரு  \nவறுமைப் பேயை விரட்ட நாட்டில்  \nவழியே இல்லையா அகற்றிடவே இல்லையா  \nபொருளில்லாதார் இல்லையெனும்—உலகில்  \nபொருளில்லாதார் இல்லையெனும்  \nதிருநாளே இல்லையா  \nஇருள் நீங்கும் மார்க்கம் இல்லையா  \nஇறைவா நீ சொல்லையா                                               (பொரு"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s029-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani walks along the street, tormented by hunger.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s029-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "Is there only hardship for those without means?\nIs there no new life?\nIs there no path for the darkness to depart?\nO Lord, will you not tell me? (Poru)\nIs there no one to look upon the face\nof one fading from hunger?\nIs there no one to protect us?\nIs there no compassion to support us poor ones?\nIs there no path for the darkness to depart?\nO Lord, will you not tell me? (Poru)\nIs there no way in this land\nto drive away the demon of poverty—to remove it?\nIn a world where one could say, 'There are none without means'—\nwhere one could say, 'There are none without means'—\nis there no such blessed day?\nIs there no path for the darkness to depart?\nO Lord, will you not tell me? (Poru)",
+        "lines": [
+          "Is there only hardship for those without means?",
+          "Is there no new life?",
+          "Is there no path for the darkness to depart?",
+          "O Lord, will you not tell me? (Poru)",
+          "Is there no one to look upon the face",
+          "of one fading from hunger?",
+          "Is there no one to protect us?",
+          "Is there no compassion to support us poor ones?",
+          "Is there no path for the darkness to depart?",
+          "O Lord, will you not tell me? (Poru)",
+          "Is there no way in this land",
+          "to drive away the demon of poverty—to remove it?",
+          "In a world where one could say, 'There are none without means'—",
+          "where one could say, 'There are none without means'—",
+          "is there no such blessed day?",
+          "Is there no path for the darkness to depart?",
+          "O Lord, will you not tell me? (Poru)"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-010"
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-010",
+      "canonicalScene": 29,
+      "kind": "unlabelled-song",
+      "openingLineTa": "பொருளே இல்லார்க்கு தொல்லையா",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 10 (`பொருளே இல்லார்க்கு`)",
+      "performanceContext": "Kalyani walks the street suffering from hunger; the scene consists of the verse/song block.",
+      "reprisesId": null
+    }
+  ]
+}

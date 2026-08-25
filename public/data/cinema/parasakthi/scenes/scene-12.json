@@ -1,0 +1,192 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-12",
+  "canonicalScene": 12,
+  "sourceHeading": 12,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—12",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 14,
+      "printedPage": 13
+    },
+    {
+      "pdfPage": 15,
+      "printedPage": 14,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(கல்யாணி கண்ணீர் சிந்திய முகத்துடன் கையிலே குழந்தையை வைத்துக்கொண்டு வாசலில் உட்கார்ந்து பாடுகிறாள்)"
+      },
+      {
+        "kind": "verse",
+        "text": "பூமாலே நீயே புழுதி மண்மேலே வீணே  \nவந்தேன் தவழ்ந்தாய்?                                               (பூமாலே  \nபாராயோ என் பன்னீர் செல்வமே  \nசீரோடு வாழ்ந்தோம் வேரோடு சாய்ந்தோம்  \nராஜாங்கம் போலே வாழ்ந்த வாழ்வும் வீழ்ந்ததே  \nபாரான எந்தன் வயிற்றில் பிறந்தாய் ராஜா?  \nநீயேன் பிறந்தாய்                                                   (பூமாலே  \nபறவை வீட்டில் நீ பிறந்திருந்தாலும்  \nபசி நீங்கவே உணவும் பறந்தோடி வந்திடும்  \nகோடானு கோடி ஏழை மாந்தர் வாழும்  \nசீமான்கள் வாழும் நாட்டில் பிறந்தாய்—ராஜா  \nநீயேன் பிறந்தாய்?                                                  (பூமாலே"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாடல் முடிந்ததும் பார்வதி வருகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "பார் : கல்யாணி எப்ப பார்த்தாலும் இப்படிக் கண்ணீரும் கம்பலையுமாக இருந்தால் என்ன ஆகும்? நடக்க வேண்டியதைப் பாரு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்யா",
+        "text": "கல்யா : இந்தக் குழந்தையை வளர்க்க யாராவது முன் வந்தால் நடக்க வேண்டியதுதானே நடக்கும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "பார் : குழந்தை என்ன செய்யும் பாவம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அக்கா குழந்தை ஒண்ணும் பாவமில்ல! இந்தக் குழந்தையை வறுமையிலே வளர்க்க முடியாததுதான் பெரிய பாவம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "பார் : கல்யாணி! நான் சொல்வதைக் கேளு. ஊர்க் கோடியிலே எங்களுக்கு இருக்கும் காலி மனையிலே ஒரு வீடு ஒண்ணு கட்டிக்கோ ஒரு சாதாரண இட்லி கடை வைத்தால் வயிறு வளர்க்க முடியாமலா போகும்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : ஆ! இட்லிக் கடையா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "பார் : தமிழ் நாட்டிலே தாலி அறுத்தவர்களுக்கெல்லாம் அது தானே தாசில் உத்தியோகம்."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s012-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani, her face wet with tears, sits at the doorway holding the child and sings.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "O flower-garland, you yourself—upon the dusty earth, in vain\nI came; you crawled? (O flower-garland\nWill you not look, my Panneerselvam?\nWe lived in prosperity; we fell, root and all.\nThe life we lived like a kingdom has fallen.\nMy king, were you born from this burdened womb of mine?\nWhy were you born? (O flower-garland\nEven if you had been born in a bird's nest,\nFood would have flown to you to drive away your hunger.\nCrores upon crores of poor people live\nIn the land where the rich lords live—you were born there, my king.\nWhy were you born? (O flower-garland",
+        "lines": [
+          "O flower-garland, you yourself—upon the dusty earth, in vain",
+          "I came; you crawled? (O flower-garland",
+          "Will you not look, my Panneerselvam?",
+          "We lived in prosperity; we fell, root and all.",
+          "The life we lived like a kingdom has fallen.",
+          "My king, were you born from this burdened womb of mine?",
+          "Why were you born? (O flower-garland",
+          "Even if you had been born in a bird's nest,",
+          "Food would have flown to you to drive away your hunger.",
+          "Crores upon crores of poor people live",
+          "In the land where the rich lords live—you were born there, my king.",
+          "Why were you born? (O flower-garland"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-004"
+      },
+      {
+        "id": "parasakthi-en-s012-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(When the song ends, Parvathi arrives.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "Kalyani, what will become of you if every time I see you, you're like this—all tears and weeping? Look to what has to be done.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u005",
+        "kind": "dialogue",
+        "speakerLabel": "கல்யா",
+        "text": "If someone comes forward to raise this child, then what has to happen will happen, won't it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "What can the poor child do...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u007",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sister, the child isn't the sin! The great sin is being unable to raise this child in poverty.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "Kalyani! Listen to me. On the vacant plot we have at the edge of town, put up a small house. If you run an ordinary idli stall, surely you can make a living?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u009",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Ah! An idli stall?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s012-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பார்",
+        "text": "In Tamil Nadu, for every woman whose tali has been cut, isn't that the Tahsildar's post?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-004",
+      "canonicalScene": 12,
+      "kind": "unlabelled-song",
+      "openingLineTa": "பூமாலே நீயே புழுதி மண்மேலே வீணே",
+      "lyricistTa": "மு. கருணாநிதி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 9 (`பூமாலை`)",
+      "performanceContext": "Kalyani sings while holding her child.",
+      "reprisesId": null
+    }
+  ]
+}

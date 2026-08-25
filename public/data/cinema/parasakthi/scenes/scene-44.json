@@ -1,0 +1,81 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-44",
+  "canonicalScene": 44,
+  "sourceHeading": 44,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—44",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 51,
+      "printedPage": 50
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : கல்யாணி! கல்யாணி! என் கல்யாணி ஏழை அவளுக்கு நல்ல சேலை கிடையாது ஒரே புடவை ஒட்டுத் துணி...அவளுக்கு வைர நெக்லஸ் கிடையாது அவள் கழுத்திலே கயிறுதான் இருக்கும்...அய்யோ அதுகூட கிடையாது அவள் விதவை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : டாக்டர்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "டாக் : பயப்படாதீங்க மூணுக்கொதிப்பு மருந்து கொடுத்தால் சரியாகப் போய்விடும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : மருந்து! ஹா ஹா எனக்கா மருந்து எனக்கு வேண்டாம் ஏழைக்குப் பசிக்காமல் இருக்க ஏதாவது மருந்து இருந்தால் கொடுங்க டாக்டர் கொடுக்கமாட்டீரா? கொடுக்கமாட்டீரா? அதுக்கப்புறம் குழந்தைகளை ஆற்றிலே போட்டுவிடுவார்கள் டாக்டர் ஆற்றிலே போட்டு விடுவார்கள் என் கல்யாணியும் அப்படித்தான் செய்து விட்டாள் கல்யாணி! கல்யாணி!"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s044-u001",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "Kalyani! Kalyani! My Kalyani is poor. She has no good sari—only one sari, a patched cloth... She has no diamond necklace; there would only be a cord around her neck... Ayyo, not even that. She is a widow.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s044-u002",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "Doctor.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s044-u003",
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "Don't be afraid. If we give `moonukkothippu` medicine, he will be all right.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s044-u004",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "Medicine! Ha, ha! Medicine for me? I don't want it. If there is some medicine that can keep the poor from feeling hunger, give that, doctor. Won't you give it? Won't you? After that they will throw children into the river, doctor—they will throw them into the river. My Kalyani did just that. Kalyani! Kalyani!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

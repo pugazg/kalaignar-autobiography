@@ -1,0 +1,123 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-01",
+  "canonicalScene": 1,
+  "sourceHeading": 1,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—1",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 4,
+      "printedPage": 3
+    },
+    {
+      "pdfPage": 4,
+      "printedPage": 3,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 5,
+      "printedPage": 4,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(மதுரையில் கல்யாணிக்குத் திருமணம் நடக்கப் போகும் சமயம் அவளது அண்ணன்மார்களான சந்திரசேகரன், ஞானசேகரன், குணசேகரன் ஆகிய மூன்று பேரும் ரங்கூனில் இருக்கின்றனர். அப்போது மதுரையில்...ஒரு கூட்டத்தில் நாட்டியம் நடைபெறுகிறது.)"
+      },
+      {
+        "kind": "verse",
+        "text": "வாழ்க வாழ்கவே வாழ்க வாழ்கவே  \nவளமார் எமது திராவிட நாடு                         (வாழ்கவே  \nசூழும் தென் கடல் ஆடும் குமரி  \nதொடரும் வடபால் அடல் சேர் வங்கம்  \nஆழும் கடல்கள் கிழக்கு மேற்காம்  \nஅறிவும் திறனும் செறிந்த நாடு                       (வாழ்க  \nபண்டைத் தமிழும் தமிழில் மலர்ந்த  \nபண்ணிகர் தெலுங்கு துளு மலையாளம்  \nகன்னட நிகர் கன்னடமெனும் மொழிகள்  \nகமழக் கலைகள் சிறந்த நாடு                           (வாழ்க  \nஅகிலும் தேக்கும் அழியாக் குன்றம்  \nஅழகாய் முத்துக்குவியும் கடல்கள்  \nமுகிலும் செந்நெல்லும் முழங்கு நல் செய்  \nமுல்லைக் காடு மணக்கும் நாடு                         (வாழ்க  \nஆற்றில், புனலின் ஊற்றில், கனியின்  \nசாற்றில் தென்றல் காற்றில் நல்ல  \nஆற்றல் மறவர் செயலில் பெண்கள்  \nஅழகில் கற்பில் உயர்ந்த நாடு                         (வாழ்க"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஆடல், பாடல்கள் முடிந்தவுடன் மாப்பிள்ளை பேசுகிறார்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தங்கப்பன்",
+        "text": "தங்கப்பன்: (மாப்பிள்ளை பெரியோர்களே இதுவரையில் புதுமையின் குரல் புதுமையாட்டத்துடன் கலந்து ரசித்தீர்கள். இத்தகைய எழில்மிக்க நாட்டின் குழந்தைகள் இந்த மண் மாதாவின் மடியிலே தவழாமல் வேறு நாடு சென்று வருகின்றனர். இதை நினைக்கும் போது நமது அறிவர் சொன்னது ஞாபகத்திற்கு வருகிறது. கடல் நீர் ஏன் உப்பாக இருக்கிறது காரணம் கற்பனையாக சொல்லப்போனால்...சொந்த நாட்டிலே பிழைக்க வழி இல்லாமல் அயல்நாடு சென்று தமிழர்கள் அழுது வடித்த கண்ணீர்தான் காரணம் என்றார். அவ்வளவு"
+      },
+      {
+        "kind": "prose",
+        "text": "ஏன்? இதோ நான் திருமணம் செய்து கொள்ளப் போகும் திருமதி கல்யாணி தன் சகோதரர்களின் முகத்தையே பார்த்ததில்லையாம்! அவ்வளவு இளமையிலேயே அவர்கள் இரங்கூன் சென்றுவிட்டனர். அவர்கள் மட்டுமல்ல! எத்தனையோ லட்சக் கணக்கான இளைஞர்கள். எத்தனையோ குடும்பங்கள்! மலேயாவின் ரப்பர் தோட்டத்திலே! ஆப்பிரிக்காவிலே, இலங்கை தீவிலே அவர்கள் எல்லாம் நம் திரு நாட்டுக்குத் திரும்ப வேண்டும். அதைத்தான் இந்த அழகிய பாடலும் நமக்கு நினைவூட்டுகிறது.)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s001-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(As Kalyani's wedding is about to take place in Madurai, her three elder brothers—Chandrasekaran, Gnanasekaran and Gunasekaran—are in Rangoon. At that time, in Madurai... a dance is taking place at a gathering.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s001-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "Long live, long live—long live, long live\nOur prosperous Dravidian land. (Long live\nEncircled by the southern sea, with Kumari dancing,\nTo the north extends Bengal, famed for valour;\nDeep seas lie to east and west—\nA land rich in knowledge and skill. (Long live\nAncient Tamil, and those that blossomed from Tamil—\nMelodious Telugu, Tulu and Malayalam,\nAnd Kannada, their peer—these languages;\nA land where the arts flourish and spread their fragrance. (Long live\nAgarwood and teak on inexhaustible hills,\nSeas that gather pearls in beauty,\nGood fields alive with clouds and red paddy,\nA land fragrant with mullai forests. (Long live\nIn rivers, in springs of water, in the juice of fruit,\nIn the gentle breeze; in noble strength,\nIn the deeds of valiant warriors; and in women,\nA land exalted in beauty and chastity. (Long live",
+        "lines": [
+          "Long live, long live—long live, long live",
+          "Our prosperous Dravidian land. (Long live",
+          "Encircled by the southern sea, with Kumari dancing,",
+          "To the north extends Bengal, famed for valour;",
+          "Deep seas lie to east and west—",
+          "A land rich in knowledge and skill. (Long live",
+          "Ancient Tamil, and those that blossomed from Tamil—",
+          "Melodious Telugu, Tulu and Malayalam,",
+          "And Kannada, their peer—these languages;",
+          "A land where the arts flourish and spread their fragrance. (Long live",
+          "Agarwood and teak on inexhaustible hills,",
+          "Seas that gather pearls in beauty,",
+          "Good fields alive with clouds and red paddy,",
+          "A land fragrant with mullai forests. (Long live",
+          "In rivers, in springs of water, in the juice of fruit,",
+          "In the gentle breeze; in noble strength,",
+          "In the deeds of valiant warriors; and in women,",
+          "A land exalted in beauty and chastity. (Long live"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-001"
+      },
+      {
+        "id": "parasakthi-en-s001-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(When the dance and songs end, the bridegroom speaks.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s001-u004",
+        "kind": "dialogue",
+        "speakerLabel": "தங்கப்பன்",
+        "text": "(Respected elders, until now you have enjoyed the voice of the new mingled with a new kind of dance. The children of such a beautiful land, instead of crawling in the lap of this Mother Earth, go away to other countries. When I think of this, I remember something one of our thinkers said. If we were to give an imaginative reason for why seawater is salty... he said it is because of the tears shed by Tamils who, unable to make a living in their own land, went abroad. Why go that far? Here is Kalyani, whom I am about to marry: she has apparently never even seen the faces of her brothers! They left for Rangoon when she was so young. And not only they! Hundreds of thousands of young people. Countless families! In Malaya's rubber plantations! In Africa, on the island of Ceylon—they must all return to our cherished homeland. That is exactly what this beautiful song reminds us of.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-001",
+      "canonicalScene": 1,
+      "kind": "unlabelled-song",
+      "openingLineTa": "வாழ்க வாழ்கவே வாழ்க வாழ்கவே",
+      "lyricistTa": "பாரதிதாசன்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 11 (`வாழ்க வாழ்கவே`)",
+      "performanceContext": "Opening dance/song at the gathering before Thangappan speaks.",
+      "reprisesId": null
+    }
+  ]
+}

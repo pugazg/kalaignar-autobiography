@@ -1,0 +1,139 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-05",
+  "canonicalScene": 5,
+  "sourceHeading": 5,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—5",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 8,
+      "printedPage": 7
+    },
+    {
+      "pdfPage": 9,
+      "printedPage": 8,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "prose",
+        "text": "[இரங்கூனில்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞா",
+        "text": "ஞா : (பேப்பர் படித்தல்) உலகப் போரின் உச்சநிலை ஜப்பான் யுத்த முஸ்தீபு! இரங்கூன் கடலோரங்களில் எதிரிகள் கப்பல்கள் இந்தியா போய்ச் சேரவில்லை—அண்ணு இந்தச் சேதியை அப்பாவும் தங்கையும் கேள்விப்பட்டால் ரொம்பவும் வருத்தப்படுவாங்க. கல்யாணக் காரியமெல்லாம் தடபுடலாக நடந்துகிட்டு இருக்கும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்திர",
+        "text": "சந்திர : ஆமாம் குணசேகரன் புறப்பட்டுப்போன கப்பல் இன்னும் மெட்ராசுக்கே போய்ச் சேரலியாமே மணக்கோலத்தில் இருக்கும் தங்கையை பார்க்க முடியாத பாவியாகி விட்டோம்."
+      },
+      {
+        "kind": "prose",
+        "text": "[இந்நேரம் ரேடியோவில் யுத்தச் செய்தி சொல்லப்படுகிறது. இன்று எதிரிகளின் குண்டு வீச்சினில் பலத்த சேதம்...சுமார் ஆயிரம் பேர் கொல்லப்பட்டனர். பர்மாவில் ஒரு நகரமே காலியாகி விட்டது.]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : நாம் இப்படி எத்தனை நாளைக்குத்தான் உயிர் வாழுறதாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : உயிர் தப்புவதே பெரிய கஷ்டம்போல் இருக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : இனியும் நம்ம இங்கு இருக்கக் கூடாது நடந்தாவது இந்தியா போய்ச் சேருவோம்."
+      },
+      {
+        "kind": "prose",
+        "text": "[இரங்கூனை விட்டு கால்நடையாக வெளியேறுகின்றனர்]"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s005-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[In Rangoon]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u002",
+        "kind": "dialogue",
+        "speakerLabel": "ஞா",
+        "text": "(Reading the newspaper.) The world war at its peak—Japan's war preparations! Enemies off the Rangoon coast; the ships have not reached India—brother, if Father and little sister hear this news, they'll be terribly upset. The wedding arrangements must be going on in full swing.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u003",
+        "kind": "dialogue",
+        "speakerLabel": "சந்திர",
+        "text": "Yes. The ship Gunasekaran left on apparently still hasn't even reached Madras. We've become wretches unable to see our sister in her bridal attire.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[At this moment war news is broadcast on the radio. Today, enemy bombing caused heavy damage... about a thousand people were killed. An entire city in Burma has been emptied.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u005",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "How many more days can we go on living like this?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u006",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "It feels as though simply escaping alive is a great struggle.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u007",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "We shouldn't stay here any longer. Even if we have to walk, let's reach India.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s005-u008",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[They leave Rangoon on foot.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

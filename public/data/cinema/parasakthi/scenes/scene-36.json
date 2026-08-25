@@ -1,0 +1,107 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-36",
+  "canonicalScene": 36,
+  "sourceHeading": 36,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—36",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 43,
+      "printedPage": 42
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(பசி வாட்டவே கல்யாணி பிச்சைக் கேட்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அய்யா நானும் குழந்தையும் சாப்பிட்டு ஆறுநாள் ஆகுது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "வீட் : நாங்க சாப்பிட்டு மூணுநாள் ஆகுது. நீ பிச்சைன்னு தெருத்தெருவா கேட்குற நாங்க வீட்டுக்குள்ளேயே இருக்கோம். இதுதான் வித்தியாசம் இன்னிக்கு ஜட்ஜ் சேகர் வீட்டிலே விருந்து அங்கே போயி கேளு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : எந்த வீடய்யா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "வீட் : அதோ தெரியுது பாரு அந்த மூல வீடுதான்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கல்யாணி போகிறாள்)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s036-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Tormented by hunger, Kalyani begs.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s036-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sir, it has been six days since my child and I ate.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s036-u003",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "It has been three days since we ate. You go street to street asking for alms; we stay inside the house. That is the difference. Today there is a feast at Judge Sekar's house. Go ask there.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s036-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Which house, sir?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s036-u005",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "There, you can see it—that house on the corner.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s036-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani leaves.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

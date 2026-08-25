@@ -1,0 +1,674 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-02",
+  "canonicalScene": 2,
+  "sourceHeading": 2,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—2",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 5,
+      "printedPage": 4
+    },
+    {
+      "pdfPage": 6,
+      "printedPage": 5,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 7,
+      "printedPage": 6,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(இரங்கூனில்...குணசேகரன் தூங்கிக் கொண்டிருக்கும் போது ஞானசேகரன் வருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : தம்பி! தம்பி குணசேகரா டேய் எழுந்திரு இன்னுமா தூங்குறே? எழுந்திருப்பா தம்பி டேய் குணசேகரா? (ரேடியோ வைத்தல்) டேய் கும்பகர்ண எழுந்திரு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ம்... அய்யய்யோ...என் கண்ணே! தூங்குற போது வந்து விளையாண்டுகிட்டு..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இந்நேரம் சந்திரசேகர் வருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : என்ன ஆரம்பிச்சிட்டீங்களா? பொழுது விடிஞ்சுட்டுதில்ல."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : அண்ணே குணசேகரன் இப்பத்தான் எழுந்திரிச்சான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : இல்லையண்ணே நான் காலையிலே அஞ்சரை மணிக்கெல்லாம் எழுந்திரிச்சிட்டேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : இல்லேண்ணு பொய் சொல்றேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஞானசேகரா! ஏம்பா பொய் சொல்றே! தம்பிக்குத் தான் சூரிய உதயத்தைப் பார்க்கவே பிடிக்காதே ம்...ஊரிலே இருந்து..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : தங்கச்சி போட்டோ வந்திருக்கா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : தங்கச்சிக்கு கல்யாணம் நிச்சயம் செய்து அப்பா கடிதம் எழுதியிருக்காரு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : அட பார்ரா! நாம் எல்லோரும் எப்போ ஊருக்குப் போகிறது!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : டிக்கட் புக் பண்ணச் சொல்லி போன் பண்ணி இருக்கிறேன். பதில் இப்போ வந்திடும். (அண்ணியிடம் போதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அண்ணி! குட் நியூஸ்! கல்யாணிக்குக் கல்யாணம் உங்களுக்குத் தெரியுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : அண்ணிக்குத்தானப்பா முதலிலே தெரிஞ்சிருக்கும். இல்லையண்ணே...!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(சந்திரசேகரன் அவன் மனைவி சரஸ்வதியினுடைய தந்தையின் போட்டோவைப் பார்த்து கண்ணீர் விடுகிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : தங்கச்சிக்குக் கல்யாணம்! இப்படி திடீர்னு வருத்தப்படுறீங்க"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : இல்ல...ஒங்க அப்பா படத்தைப் பார்த்தவுடன் என்னமோ மாதிரி இருந்திச்சி மனமே மாறிடுச்சி நம்ம கல்யாணத்துக்கு அவரு இருந்து எவ்வளவோ நல்லா நடத்திருப்பார் இப்ப இந்தக் கல்யாணத்துக்கு இல்லேன்னுதான்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : அதுக்குத்தான் ஒங்க அப்பா இருக்காரே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : என்ன இருந்தாலும் சீரழிந்த குடும்பத்தைச் செல்வமாக்கினவரு அவருதானே சின்ன வயசிலே இருந்து அவருடைய ஆதரவிலேதானே வளர்ந்தோம். மடியிலே விளையாண்டோம்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(காப்பி குடிக்க உட்காருகின்றனர்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : குணவைப் பார்த்து டேய்! கீழே வைடா பல் விளக்கிறதுக்குள்ள என்னடா காப்பி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஞானசேகரா! நீ சும்மா இருப்பா நீ சாப்பிடு தம்பி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : கல்யாணிக்கு என்ன பரிசு கொடுக்கிறது?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : கல்யாணிக்காக நம்ம இதயங்களே துடித்துக் கொண்டிருக்கின்றன. இதைவிட நல்ல பரிசு நம்மால் வேறென்ன அளிக்க முடியும். (போன் மணி அடிக்கிறது) ஹலோ—சந்திரசேகரன் ஸ்பீக்கிங்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "பேசு : டிக்கட் கேட்டீங்களாமே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஆமாம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "பேசு : எத்தினி?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : போர்...நாலு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "பேசு : நாலா முடியாதே சார்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : முடியாதா? எப்படியாவது முயற்சி செய்யுங்க சார் ப்ளீஸ்—"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : பெரிய பாரிஸ்டர் இதுக்கு எத்தினி ப்ளீஸ் போட வேண்டியிருக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "பேசு : உங்களுக்கு தெரியாதா? வார் டைம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : வார் டைம் சரி சார்! எங்க குடும்பத்துக்கு முக்கியமான மேரேஜ்! அவசியம் எல்லோரும் போகத்தான் வேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "பேசு : பேமிலிக்கு ஒருத்தரைதான் அலவ் பண்ணுறது? மொத்தமே முன்னூறு சீட்டுதான் ஒரு டிக்கட் தான் இருக்கு..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : சரி புக் பண்ணுங்க"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : என்ன அண்ணே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : நாளைக்கு சென்னைக்கு புறப்பட்ற கப்பல்ல மொத்தமே முன்னூறு டிக்கட்டானும்! அதுவும் குடும்பத்துக்கு ஒருத்தர்தானும். தங்கையின் வாழ்விலே பொன் விழா? அதை நாம் எல்லோரும் சேர்ந்து பார்க்க கொடுத்து வைக்கலே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : அப்படின்னு யார் போறது?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (ஆவலுடன்) நான் போகிறேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஞானசேகரா தங்கைக்கு வேண்டிய புடவை நகையெல்லாம் எடுத்து பெட்டிக்குள்ளே வச்சிட்டு குணசேகரன் வழி அனுப்பி விட்டு வா. (ஞான சேகரன் வருந்துகிறான்) ஞானசேகரா ஏம்பா கவலைப்படுற? நாமெல்லாம் போகலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : அண்ணே, அதுக்குள்ளே யுத்த நிலமை ரொம்பவும் மோசமாகிவிட்டா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : எப்படியும் போய்ச் சேரலாம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : நான் கல்யாணிக்காக அரை டஜன் சேலையும் ஜாக்கெட்டும் தாரேன் பெட்டியிலே இடம் இருக்குமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : தங்கைக்கின்னு தலையிலே தூக்கிட்டுப் போவானே, சும்மா கொடுத்தனுப்புங்க அண்ணி"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குணசேகரன் புறப்படுகிறான்)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s002-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(In Rangoon... Gnanasekaran enters while Gunasekaran is asleep.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u002",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Little brother! Little brother, Gunasekara! Hey, wake up. Still sleeping? Get up, little brother—hey, Gunasekara! (Turns on the radio.) Hey, Kumbakarna, wake up!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Mm... ayyo... my eyes! Coming and fooling around while I'm sleeping...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At this moment Chandrasekar enters.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u005",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "What, have you two started already? Dawn has broken, hasn't it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u006",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Brother, Gunasekaran only just woke up.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "No, brother. I was up by five-thirty this morning.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u008",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Yes, yes—I'm the one lying.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u009",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Gnanasekara! Why are you lying? Our little brother doesn't even like seeing the sunrise. Mm... from home...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u010",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Has little sister's photograph arrived?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u011",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Father has written that little sister's marriage has been fixed!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u012",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Hey, look at that! When are all of us going home?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u013",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "I've phoned and asked them to book the tickets. The reply should come any moment. (Goes over to sister-in-law.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u014",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Sister-in-law! Good news! Did you know Kalyani is getting married?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u015",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Sister-in-law would have been the first to know, wouldn't she? No, brother...!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u016",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Chandrasekar looks at a photograph of his wife Saraswathi's father and sheds tears.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u017",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "Little sister is getting married! Why have you suddenly become so upset?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u018",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "No... when I saw your father's photograph, I felt strange; my whole mood changed. If he had been alive, how splendidly he would have conducted our wedding. It's just that he isn't here for this wedding now...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u019",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "That's what your father is there for, isn't he?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u020",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Even so, he was the one who turned a ruined family into a prosperous one, wasn't he? From childhood we grew up under his protection. We played in his lap.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u021",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(They sit down to drink coffee.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u022",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "(Looking at Guna.) Hey! Put that down. Coffee before you've even brushed your teeth?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u023",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Gnanasekara! You keep quiet. Go ahead, little brother.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u024",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "What gift should we give Kalyani?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u025",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Our very hearts are beating for Kalyani. What better gift can we give than that? (The telephone rings.) Hello—Chandrasekaran speaking.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u026",
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "You asked for tickets, I hear?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u027",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Yes...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u028",
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "How many?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u029",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Four... four.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u030",
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "Four won't be possible, sir!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u031",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "It won't? Please, sir—somehow, try.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u032",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "A great barrister—and how many 'pleases' do you have to say even for this?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u033",
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "Don't you know? Wartime...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u034",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Wartime, yes, sir! But this is an important marriage in our family! All of us absolutely have to go.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u035",
+        "kind": "dialogue",
+        "speakerLabel": "பேசு",
+        "text": "Only one person from a family is allowed. There are just three hundred seats in all. There's only one ticket...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u036",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "All right, book it.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u037",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "What is it, brother?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u038",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "The ship leaving for Madras tomorrow has only three hundred tickets in all! And even then, only one person from each family. Our sister's golden occasion in life? We haven't been blessed with the chance for all of us to see it together.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u039",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "Then who's going?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u040",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(Eagerly.) I'll go.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u041",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Gnanasekara, take the saris and jewellery our sister needs, put them in the trunk, and send them with Gunasekaran. (Gnanasekaran is saddened.) Gnanasekara, why are you worrying? We'll all be able to go.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u042",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Brother, what if the war situation becomes much worse by then?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u043",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Somehow we'll make it there.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u044",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "I'll give half a dozen saris and blouses for Kalyani. Will there be room in the trunk?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u045",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "It's for our sister—he'd carry it on his head if he had to. Just send it, sister-in-law.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s002-u046",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran departs.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

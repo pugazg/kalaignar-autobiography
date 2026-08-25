@@ -1,0 +1,74 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-42",
+  "canonicalScene": 42,
+  "sourceHeading": 42,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—42",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 48,
+      "printedPage": 47
+    },
+    {
+      "pdfPage": 49,
+      "printedPage": 48,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(ரோட்டில் பிரசங்கி பேசுகிறார்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பிர",
+        "text": "பிர : உலகப் பேரழகி கிளியோபாட்ரா தமிழ் நாட்டின் முத்துக்களை சாராயத்திலே போட்டு குடித்தாளாம். அத்தகைய தமிழகத்தின் பெண்களோ இரங்கூனுக்கும் சிங்கப்பூருக்கும் சென்று ஆடவர்கள் சம்பாதித்து அனுப்பும் பணத்தை எதிர் பார்த்து பட்டினி கிடக்கிறார்கள். ஆலயங்கள் இங்கே. ஆண்டவனுக்கு வைரக்கவசம் ரத்தின சிம்மாசனம், அந்த ஆண்டவனின் அருமைக் குழந்தைகளோ அரைவயிற்றுக் கஞ்சிக்கும் அல்லல்படுகிறார்கள். கோவில்புரம் நிறைய நண்பர்களே தாய் தன் குழந்தையை விற்றாள் என்று. பசியின் கொடுமையால் பல தாய்மார்கள் குழந்தையை"
+      },
+      {
+        "kind": "prose",
+        "text": "விற்றுவிட்டார்களாம். தாயார் குழந்தையை விற்றாள்! பத்து மாதம் சுமந்து படாதபாடு பட்ட தாய், பாராட்டி சீராட்டி வளர்த்த தாய், தொட்டிலிலே போட்டு ஆராரோ பாடிய தாய், வெள்ளிக்கிண்ணத்தில் பால்சோறு போட்டு தாழ்வாரத்திலே தவழ்ந்தோடும் பிள்ளைக்கு ஊட்ட வேண்டும் என்று கனவு கண்டிருந்த தாய், மஞ்சள் நீராட்டி மகனின் மழலைமொழி கேட்டு “பள்ளிக்குச் செல்லடா கண்மணி” என்று அவன் பின்னழகைக் காணவேண்டுமென்று துடித்துக் கிடந்த தாய், மகனுக்கு திருமணம் செய்து மகனும் மருமகளும் மஞ்சத்திற்குச் செல்லும் அந்த நாளும் வராதோ என்று ஏங்கிக்கிடந்த தாய், தான் பெற்ற குழந்தையை தன் வயிற்றிலே கிடந்த வைரத்தை வறுமையினால், கோமேதகத்தை, தங்கத் தாம்பாளத்தை விற்றாளாம் கூறுகிறேன். பிள்ளையோ பிள்ளை, என்று மார்க்கெட்டில் கீரைப்போல் கூறுவதுபோல் எட்டு ரூபாய்க்குக் குழந்தையாம்! பெரிய குழந்தை ஐந்து ரூபாய் பிஞ்சுக் குழந்தை மூன்று ரூபாய், கொடுமை! கொடுமை!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இதைக் கேட்டுக் கொண்டிருந்த குணசேகரன் எழுந்து ஓடுகிறான். எதிர்ப்பட்ட குப்பனை சந்திக்கவே தன் தங்கை கல்யாணியை பூசாரி கற்பழிக்க முயற்சித்தான் என்பது அறிந்து ஆத்திரத்துடன் பராசக்தி கோவிலுக்குச் செல்கிறான்.)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s042-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(A preacher speaks on the road.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s042-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பிர",
+        "text": "Cleopatra, the world's great beauty, is said to have put the pearls of Tamil Nadu into liquor and drunk them. Yet the women of such a Tamil land lie starving, waiting for money sent by men who have gone to Rangoon and Singapore to earn. Temples are here. For God there is diamond armour and a gem-studded throne; the dear children of that God suffer even for half a stomach of gruel. The temple town is full, friends, with the cry that a mother sold her child. Because of the cruelty of hunger, many mothers are said to have sold their children. A mother sold her child! The mother who carried it for ten months and suffered every hardship; the mother who cherished and fondled it as she raised it; the mother who laid it in a cradle and sang 'aararo'; the mother who dreamed of feeding milk-rice from a silver bowl to the child crawling along the veranda; the mother who bathed him in turmeric water, heard his baby speech and longed to see his back as she said, 'Go to school, my dear'; the mother who yearned for the day when she would arrange her son's marriage and her son and daughter-in-law would go to the bridal bed—she is said to have sold the child she bore, the diamond that lay in her womb, the `gomethagam`, the golden platter, because of poverty. I tell you: 'Child, child!'—as greens are cried out in the market—eight rupees for a child! A big child five rupees; an infant three rupees. Cruelty! Cruelty!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s042-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran, who has been listening, gets up and runs. When he meets Kuppan coming the other way, he learns that the priest tried to violate his sister Kalyani and goes angrily to the Parasakthi temple.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

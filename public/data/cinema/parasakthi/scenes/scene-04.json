@@ -1,0 +1,115 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-04",
+  "canonicalScene": 4,
+  "sourceHeading": 4,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—4",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 8,
+      "printedPage": 7
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(கல்யாணி தன் கணவனோடு மாங்குயில் கூவும் சோலையில் பைந்தமிழ் பண்பாடி மகிழ்தல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தங்",
+        "text": "தங் : இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்  \nஎன் இதய ராணி ரூபம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : இந்த தீபத்திலே சுடராய் திகழ்வதன்  \nதீரனின் ரூபம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தங்",
+        "text": "தங் : இள மாமயில் ரூபம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்  \nநம் காதல் தீபம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தங்",
+        "text": "தங் : கனியே! கன்னல் தமிழே அமுதே  \nபனி தூங்கும் மலரே! நிலவே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : கனிவான மொழியால் என்னையே  \nகவர்ந்தீரே காந்தச் சிலையே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தங்",
+        "text": "தங் : உனைக் காணும்போது நெஞ்சில்  \nஊறிடும் உணர்ச்சி தனையே எழுதுவோர்  \nஎழுத்தும் இல்லையே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "இரு",
+        "text": "இரு : திருநாளிதுபோல் தினம் ஆடிப்பாடியே  \nதேன்போல் வாழ்வோம்                                               (இல்"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s004-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani and her husband rejoice, singing in refined Tamil in a grove where the cuckoo calls.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s004-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "தங்: The lamp that kindles light in this life—\nThe form of the queen of my heart.\nகல்: The one who shines as the flame within this lamp—\nThe form of the valiant one.\nதங்: The form of a youthful peacock.\nகல்: The lamp that kindles light in this life—\nThe lamp of our love.\nதங்: O fruit! O sugarcane-sweet Tamil! O nectar!\nO flower on which dew sleeps! O moon!\nகல்: With your tender words, you have captivated me,\nO magnetic statue.\nதங்: When I see you, the feeling that wells within my heart—\nThere are no letters with which a writer could set it down.\nஇரு: Like this festive day, every day let us dance and sing,\nAnd live as sweetly as honey. (In this life",
+        "lines": [
+          "தங்: The lamp that kindles light in this life—",
+          "The form of the queen of my heart.",
+          "கல்: The one who shines as the flame within this lamp—",
+          "The form of the valiant one.",
+          "தங்: The form of a youthful peacock.",
+          "கல்: The lamp that kindles light in this life—",
+          "The lamp of our love.",
+          "தங்: O fruit! O sugarcane-sweet Tamil! O nectar!",
+          "O flower on which dew sleeps! O moon!",
+          "கல்: With your tender words, you have captivated me,",
+          "O magnetic statue.",
+          "தங்: When I see you, the feeling that wells within my heart—",
+          "There are no letters with which a writer could set it down.",
+          "இரு: Like this festive day, every day let us dance and sing,",
+          "And live as sweetly as honey. (In this life"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-002"
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-002",
+      "canonicalScene": 4,
+      "kind": "speaker-labelled-verse",
+      "openingLineTa": "இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
+      "lyricistTa": "பாரதிதாசன்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+      "performanceContext": "Thangappan and Kalyani alternate labelled sung/verse lines; `இரு` marks their joint closing line.",
+      "reprisesId": null
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-21",
+  "canonicalScene": 21,
+  "sourceHeading": 21,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி 21",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 26,
+      "printedPage": 25
+    },
+    {
+      "pdfPage": 27,
+      "printedPage": 26,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 28,
+      "printedPage": 27,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "prose",
+        "text": "[காமவெறி பிடித்த கருநாகம் வேணு, கல்யாணி என்ற கனியைச் சுவைக்கும் நோக்கத்தோடு கல்யாணியின் வீட்டுக் கதவைத் தட்டுகிறான்.]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : கல்யாணி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : [கதவைத் திறந்தவுடன்] ஏண்ணா இவ்வளவு நாழி? இனிமேல் சீக்கிரமா வந்துடுங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : வரவேண்டிய நேரத்திலேதானே வந்திருக்கேன் ஏன் கல்யாணி இன்று வியாபாரம் எப்படி?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : என்றைக்கும் போலத்தான் இன்னிக்கும்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ம்...இட்லி இருக்குல்லே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : இருங்கண்ணா! கொண்டு வர்றேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ஏன் கல்யாணி! அரிசி கிடைக்காத நேரத்திலே இப்படி தனி அரிசியாய்ப் போடாமல் கொஞ்சம் கோதுமையைச் சேர்த்தால்—"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : சேர்க்கலாம் ஆனா ருசி கெட்டுடும்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : எதுவும் தனிமையாக இருக்கிறதைவிட இரண்டாக இருந்தால் நல்லா இருக்கும். கோதுமையும் கலந்துகிட்டால் லாபமும் அதிகம் இருக்குமே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : லாபத்துக்காக அக்கிரமம் செய்யலாமா அண்ணா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : என்னடி மூச்சிக்கு முப்பத்திரண்டு அண்ணா போட்ற?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அண்ணா! எனக்கு மூன்று அண்ணன்மார்கள் உண்டு அவர்களில் ஒருவரைக்கூடப் பார்க்க கொடுத்து வைக்காத பாவியானேன்! ஆசைக்கு உங்களையாவது அண்ணா அண்ணாண்ணு கூப்பிட்றேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : அட பைத்தியமே ஆசை அதிகமாயிட்டா அதுக்கு அண்ணாண்ணு கூப்பிட்றது?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அண்ணா! உங்கள் பேச்சில் விபரீதமிருக்கிறதே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ஆசையைக் காட்டிக்கொள்ளும் வழி அது வல்ல கல்யாணி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அண்ணா தனியாக இருக்கும் பெண்களிடம் இப்படிப் பேசுவது—"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : ஆமா! தளிர்க்கொடி தனியாக இருக்கக் கூடாதுன்னுதான் படர்வதற்கேற்ற பலாமரமாக நான் இருக்கிறேன். மாமான்னு கூப்பிடு! அது எவ்வளவு மனோகரமான வார்த்தை! அத்தான்னு கூப்பிடு அது எத்தனை சத்தான மாழி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : நிறுத்து இனி என்னால் பொறுக்க முடியாது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : இங்கே என்ன வாழுதாம்! தானும் அப்படித்தான் நீ சரின்னு சொல்லு. ஓலைக்குடிசை இருக்கும் இடத்திலே உப்பரிகை கட்டித் தருகிறேன். கந்தல்பாயிலே படுத்த கல்யாணி கனகமணிக் கட்டிலிலே படுப்பாள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : சீ நெருங்காதீர்கள்! வறுமையால் வாடும் பெண்கள் வஞ்சக வலைவீசினால் விழுவார்கள் என்று இப்படி எத்தனை பேர் கிளம்பியிருக்கிறீர்கள்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : போர்க்களத்திலே ஒப்பாரி! போகக் களத்திலே புலம்பல் கோழைகள் செயலடி என் கோமள நாயகி"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : என்னைத் தொட முயன்றால் சப்தம் போடுவேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "வேணு : போடு! உன் சப்தம் எனக்கு சங்கீதமாக இருக்கட்டும்."
+      },
+      {
+        "kind": "prose",
+        "text": "[என்று கல்யாணியைக் கட்டி அணைத்து அவள் செவ்விதழைச் சுவைக்கப் போகிறான், காம வெறியன் கயவன் வேணு, இந்நேரம் குணசேகரன் வந்து...)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : மரியாதை வேண்டாமடா, மைத்துனு [என்று வேணுவை அடித்து விரட்டுகிறான்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : நீ வரலின்னா என்கதி என்ன ஆகியிருக்கும்! கிறுக்கண்ணா நீ எங்கே இங்கு வந்தே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : உன்னைப் பார்க்கத்தான்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : கிறுக்கண்ணா பத்துநாளா அந்த மரத்தடியிலே என்ன செய்யுறே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ராஜாங்கம் நடத்துறேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : கிறுக்கண்ணா இட்லி தர்றேன் திங்கிறியா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ம்...நீ காசு கேட்பியே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : காசு வேண்டாம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : நான் யாருன்னு சொன்னா நீ காசே கேட்க மாட்டே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : நீ யாரு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : நானு...நானு மரத்தடி மகாராஜா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : இட்லி கொண்டு வாறேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : வேண்டாம்... வேண்டாம்மா... இட்லி வேண்டாம்மா... சட்டனி வேண்டும்மா..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : சரி ரெண்டும் கொண்டு வாறேன் (போகிறாள்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குணசேகரன் பின்னூல் சென்று தொட்டிலில் தூங்கிக் கொண்டிருக்கும் தன் மாப்பிள்ளைக்கு முத்தமிடுகிறான் அவன் கண்ணில் கண்ணீர்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : (இட்லியுடன்) ஏன் கிறுக்கண்ணு அழுறே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : உம்......என் ராஜாங்க பிரஜையெல்லாம் சந்தோஷமாக இருக்காங்க...அதுலே நான் அழுறேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(என்று தன் கையிலிருந்த ரூபாயை இட்லித் தட்டில் போட்டு விட்டுப் போய்விடுகிறான்)"
+      },
+      {
+        "kind": "prose",
+        "text": "கல் ! கிறுக்கண்ணு! கிறுக்கண்ணு!"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s021-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[Venu, a black cobra seized by lust, knocks at Kalyani's door intending to taste the fruit that is Kalyani.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u002",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Kalyani!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u003",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "[On opening the door.] Why, brother, so late? From now on, come earlier.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u004",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "I've come at just the time I should, haven't I? Why, Kalyani, how was business today?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u005",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Same as always today too.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u006",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Mm... there are idlis, aren't there?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u007",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Wait, brother! I'll bring them.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u008",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Why, Kalyani! At a time when rice is hard to get, instead of making them entirely with rice like this, what if you mixed in a little wheat—",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u009",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "We can, but the taste will be spoiled.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u010",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Anything is better as two than alone. If the wheat joins in too, the profit will be greater, won't it!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u011",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Can we do wrong for profit, brother?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u012",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Why do you say 'brother' thirty-two times with every breath?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u013",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Brother! I have three elder brothers. I became a sinner not blessed to see even one of them! Out of longing, at least I call you brother, brother...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u014",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "You fool, if the longing is so great, is calling me 'brother, brother' the answer?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u015",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Brother! There's something improper in your talk, isn't there?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u016",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "That is a way of showing desire, Kalyani!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u017",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Brother, speaking like this to women who are alone—",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u018",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Yes! A tender vine shouldn't be alone—that's why I'm here as a jackfruit tree fit for it to climb. Call me 'mama'! What a charming word! Call me 'athan'! What a substantial word.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u019",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Stop! I can't bear any more.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u020",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "What life is there here! It's the same for me too—just say yes. Where there is a thatched hut, I'll build you an upper storey. Kalyani who slept on a ragged mat will sleep on a golden-jewelled bed.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u021",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Chi! Don't come near me! How many of you have set out like this thinking women suffering in poverty will fall if you cast a deceitful net?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u022",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Lamentation on a battlefield! Wailing in a field of pleasure—those are the acts of cowards, my delicate lady.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u023",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "If you try to touch me, I'll shout.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u024",
+        "kind": "dialogue",
+        "speakerLabel": "வேணு",
+        "text": "Shout! Let your shout be music to me.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u025",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[Saying this, the lust-mad scoundrel Venu embraces Kalyani and is about to taste her red lips. At this moment Gunasekaran arrives...]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u026",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "No need for courtesy, da, brother-in-law! [He beats Venu and drives him away.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u027",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "If you hadn't come, what would have happened to me! Crazy brother, how did you come here?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u028",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Just to see you.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u029",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Crazy brother, what have you been doing under that tree for ten days?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u030",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Running a kingdom.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u031",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Crazy brother, I'll give you idlis. Will you eat?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u032",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Mm... you'll ask me for money.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u033",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "No money needed.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u034",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "If I tell you who I am, you won't ask for money at all.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u035",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Who are you?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u036",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I... I am the Maharaja under the tree!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u037",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "I'll bring idlis.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u038",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "No... no, amma... I don't want idlis, amma... I want chutney, amma...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u039",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "All right, I'll bring both. (She goes.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u040",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran goes around to the back and kisses his 'son-in-law', who is asleep in the cradle. There are tears in his eyes.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u041",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "(With the idlis.) Why are you crying, crazy brother?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u042",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Mm...... all the subjects in my kingdom are happy... and among them, I am crying.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u043",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Saying this, he drops the rupee in his hand onto the idli plate and leaves.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s021-u044",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Crazy brother! Crazy brother!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

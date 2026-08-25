@@ -1,0 +1,101 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-48",
+  "canonicalScene": 48,
+  "sourceHeading": 43,
+  "editorialNumberCorrection": true,
+  "headingTa": "காட்சி—48",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 57,
+      "printedPage": 56
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(சாந்தநாயகி அநாதை விடுதி திறக்கப்படுகிறது)"
+      },
+      {
+        "kind": "verse",
+        "text": "எல்லோரும் வாழ வேண்டும்—உயிர்கள்  \nஇன்புற்றிருக்க வேண்டும்  \nநல்லோர்கள் எண்ணமிது—முத்தம்மா  \nநல்லற வாழ்வுமிதே                                              (எல்லோ"
+      },
+      {
+        "kind": "verse",
+        "text": "கல்லாதார் என்றொருவர் நம்மிடையே  \nஇல்லாமல் ஆக வேண்டும்  \nகொல்லாமை போற்ற வேண்டும் மனிதர்கள்  \nகூட்டுறவாக வேண்டும்                                             (எல்லோ"
+      },
+      {
+        "kind": "verse",
+        "text": "இல்லாதாரை படைத்தான் என்றொருவன்  \nஇருந்தால் அழியட்டுமே  \nஇல்லார்கள் உள்ளாரென்று—முத்தம்மா  \nஏனிந்த வேற்றுமைகள்                                               (எல்லோ"
+      },
+      {
+        "kind": "prose",
+        "text": "—சுபம்—"
+      },
+      {
+        "kind": "prose",
+        "text": "கோபி பிரிண்டர்ஸ், சென்னை -1."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s048-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The Santhanayaki orphanage is opened.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s048-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "Everyone must live—all lives\nmust dwell in happiness.\nThis is the thought of good people—Muthamma;\nthis indeed is the life of good virtue. (Ello)\nNo one called uneducated among us\nshould remain.\nNon-killing must be cherished; people\nmust live cooperatively. (Ello)\nIf there is one who created the have-nots,\nlet that one perish.\nIf there are those who have not and those who have—Muthamma,\nwhy these differences? (Ello)",
+        "lines": [
+          "Everyone must live—all lives",
+          "must dwell in happiness.",
+          "This is the thought of good people—Muthamma;",
+          "this indeed is the life of good virtue. (Ello)",
+          "No one called uneducated among us",
+          "should remain.",
+          "Non-killing must be cherished; people",
+          "must live cooperatively. (Ello)",
+          "If there is one who created the have-nots,",
+          "let that one perish.",
+          "If there are those who have not and those who have—Muthamma,",
+          "why these differences? (Ello)"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-014"
+      },
+      {
+        "id": "parasakthi-en-s048-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "—The End—\n\nGopi Printers, Chennai -1.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-014",
+      "canonicalScene": 48,
+      "kind": "unlabelled-song",
+      "openingLineTa": "எல்லோரும் வாழ வேண்டும்—உயிர்கள்",
+      "lyricistTa": "அண்ணல் தங்கோ",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 7 (`எல்லோரும் வாழ வேண்டும்`)",
+      "performanceContext": "Closing collective song at the opening of the orphanage; scene 47 immediately precedes it with `(பேதமின்றி பாடுகின்றனர்)`.",
+      "reprisesId": null
+    }
+  ]
+}

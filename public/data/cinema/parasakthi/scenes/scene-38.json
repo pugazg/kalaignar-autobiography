@@ -1,0 +1,181 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-38",
+  "canonicalScene": 38,
+  "sourceHeading": 38,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—38",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 43,
+      "printedPage": 42
+    },
+    {
+      "pdfPage": 44,
+      "printedPage": 43,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(சந்திரசேகரன் வீட்டில் கல்யாணி பிச்சை கேட்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அய்யா! குழந்தையும் நானும் பட்டினி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : சரி அப்புறமா வா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அய்யா நல்லா இருப்பீங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : உனக்கு ஒருக்கா சொன்னது தெரியலியே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அய்யா உங்களுக்கு கோடி புண்ணியம்..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(சேகரின் காலைப் பிடிக்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : புண்ணியம் பார்த்துப் பார்த்துத்தான் தங்கச்சி முகத்தைக்கூட பார்க்க முடியாமல் போச்சி (என்று கல்யாணியை காலால் உதைத்து தள்ளுகிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அடப்பாவிகளே! நீங்கள் சகோதரர்கள் கூடப்பிறக்க வில்லை பசியால் துடிக்கும் என் பாலகனைப் பார்த்த பிறகும் பரட்டைத் தலையைக் கண்ட பிறகும் பாவிகளே! உங்கள் கண்ணில் பஞ்சடைந்து விட்டதா பாவம்... புண்ணியம்... நாசம் என்று பேசும் அகிம்சா மூர்த்திகளே நாசம் என்று ஒன்று இருந்தால் அதுவே உங்களுக்கு இடம் சரியாய்ப் போய் விடும் சரியாய்ப் போய்விடும்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(வேலைக்காரனால் விரட்டப்படுகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : கண்ணே! ஆடம்பரத்துக்கும் அக்கிரமத்துக்கும் அடங்கி நடப்பதுதானடா உலகம்! இந்த உலகத்தில் நமக்கு வாழ இடம் கிடையாது. என்ன பார்க்கிறாய் கண்ணிலே வடியும்கண்ணீர் பாலாக இருக்கக் கூடாதா என்று பார்க்கிறாயா? நீயும் நானும் அடிபட்டதை உன் அப்பா பார்த்திருக்க வேண்டும் உன் மாமன்மார்கள் பார்த்திருக்க வேண்டும். உன் அப்பாவும் மாமாவும் இருந்தால் நீதான் உன் அப்பாவை கர்ப்பத்திலே விழுங்கி விட்டாயே. என் அழகியா? பசிக்குதா அழாதே பசியை என்னாலேயே தாங்க முடியவில்லையே உன் குரல் எப்படித் தாங்க முடியும் வா போவோம்."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s038-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At Chandrasekaran's house, Kalyani begs.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sir! My child and I are starving.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u003",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "All right, come later!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sir, may you live well!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u005",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "Don't you understand when you're told once?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sir, a crore-fold merit to you...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u007",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani catches hold of Sekar's feet.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u008",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "It is by looking after merit again and again that I have ended up unable even to see my younger sister's face. (Saying this, he kicks Kalyani away.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u009",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Ah, sinners! Were you people not born with brothers and sisters? Even after seeing my little child writhing with hunger, even after seeing this dishevelled head—sinners! Have your eyes been stuffed with cotton? O embodiments of non-violence who speak of sin... merit... ruin—if there is such a thing as ruin, that alone will be the fitting place for you. It will be the fitting place for you.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani is driven away by the servant.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s038-u011",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Dear child! This world submits to pomp and wickedness! There is no place for us to live in this world. What are you looking at? Are you looking to see whether the tears running from my eyes might be milk? Your father should have seen you and me being beaten; your maternal uncles should have seen it. If your father and uncles were here... you yourself swallowed your father in the womb! My beauty? Are you hungry? Don't cry. I myself cannot bear the hunger; how can I bear your voice? Come, let's go.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

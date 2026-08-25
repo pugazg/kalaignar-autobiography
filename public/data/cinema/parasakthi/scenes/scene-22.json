@@ -1,0 +1,249 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-22",
+  "canonicalScene": 22,
+  "sourceHeading": 22,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—22",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 28,
+      "printedPage": 27
+    },
+    {
+      "pdfPage": 29,
+      "printedPage": 28,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "prose",
+        "text": "மறுநாள் காலை மைனர்கள் சிலர் கடை ஒன்றின் முன் நின்று அரட்டை அடிக்கின்றனர். அவர்களுக்கு அருகில் குணசேகரன் பல் துலக்கிக்கொண்டிருக்கிறான். அப்போது—)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "1—வது : எங்கடா இராத்திரியெல்லாம் ஆளையே காணும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "2—வது",
+        "text": "2—வது : இராத்திரியெல்லாம் ஒரே சீட்டாட்டம் கண்ணெல்லாம் எரியுது!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "1—வது : அட கண்ணுதான் எரிஞ்சுது! காசாவது கிடைச்சுதா? ம்...அதுதானே இல்ல."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "2—வது",
+        "text": "2—வது : எங்கடா வேணுவை? ஆளையே காணும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "1—வது : ஆள் மஞ்சமெத்தையிலே படுக்க போயிருச்சி அவதான் இட்லிகாரி கல்யாணி இல்லே! அவள் கிட்டே நம் பயல் வால் ஆட்டியிருக்கான்...பாச்சா பலிக்கலே...நல்ல அடி கொண்டுட்டான் பாவம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "1—வது : டேய் சும்மா இருடா! நீ வேற ஏண்டா ஒட்டையை வீணு அலட்டிக்கிட்டே? எவனோ பைத்தியக்கார வேஷத்திலே திரியுறவனும் கல்யாணிக்குக் கள்ளப்புருஷனும்..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இதைக் கேட்ட குணசேகரன் ஆத்திரத்துடன்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (மைனர்களை அடித்து) என்ன சொன்னே, என் கல்யாணிக்கா களங்கம்? கல்யாணி என் தங்கையடா என் தங்கை! இப்போதே போகிறேன் நான் யாரென்பதை சொல்லிவிடுகிறேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(தங்கை வீட்டை நோக்கி வெறிகொண்டு ஓடுகிறான்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குடிசையில் கல்யாணியைக் காணாமல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : சந்தர்ப்பம் என் தங்கையை விதவையாக்கியது சமுதாயம் அவள் வாழவிடவில்லை (கல்யாணியைக் காணாது திரும்புகிறான் வரும் வழியில்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அப்பா இந்தப் பக்கம் ஒரு குழந்தையோட ஒரு விதவை..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வழிப்",
+        "text": "வழிப் : அடே அது உனக்குத் தெரிஞ்ச பொண்ணுதானு? அதோ அந்தக் கூட்டத்திலே போய் பாரு தற்கொலை பண்ணிக்கிட்டாங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஆ—கல்யாணி; (அங்கே செத்துக் கிடக்கும் பெண் கல்யாணி அல்ல என்பதை அறிந்து திரும்புகிறான்)"
+      },
+      {
+        "kind": "prose",
+        "text": "[கல்யாணி மதுரையில் இட்லி வியாபாரத்தை விட்டு ஊரை விட்டே வெளியேறுகிறாள்]"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s022-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The next morning, some young men stand gossiping in front of a shop. Near them, Gunasekaran is brushing his teeth. Then—)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u002",
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "Where were you, man? Didn't see you all night.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u003",
+        "kind": "dialogue",
+        "speakerLabel": "2—வது",
+        "text": "Cards all night—my eyes are burning!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u004",
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "So your eyes burned! Did you at least get any money? Mm... that's exactly what you didn't.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u005",
+        "kind": "dialogue",
+        "speakerLabel": "2—வது",
+        "text": "Where's Venu? Can't see him anywhere.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u006",
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "The man's gone to lie on a soft bed. You know that idli seller Kalyani! Our fellow wagged his tail at her... his scheme didn't work... poor fellow got a good beating.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u007",
+        "kind": "dialogue",
+        "speakerLabel": "1—வது",
+        "text": "Hey, keep quiet! Why are you flapping your mouth for nothing too? Some fellow wandering around in a madman's disguise is also Kalyani's illicit lover...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u008",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Hearing this, Gunasekaran becomes enraged.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u009",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(Beating the young men.) What did you say—a stain on my Kalyani? Kalyani is my sister, my sister! I'm going right now to tell her who I am.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(He runs furiously toward his sister's house.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u011",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Not finding Kalyani in the hut.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u012",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Circumstance made my sister a widow; society did not let her live. (Not finding Kalyani, he turns back. On the way...)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u013",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Sir, around here, a widow with a child...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u014",
+        "kind": "dialogue",
+        "speakerLabel": "வழிப்",
+        "text": "Hey, is that a woman you know? Go look over there in that crowd. She committed suicide.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u015",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Ah—Kalyani! (He learns that the dead woman there is not Kalyani and returns.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s022-u016",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[Kalyani gives up her idli business in Madurai and leaves the town altogether.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

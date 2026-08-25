@@ -1,0 +1,154 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-10",
+  "canonicalScene": 10,
+  "sourceHeading": 10,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—10",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 13,
+      "printedPage": 12
+    },
+    {
+      "pdfPage": 14,
+      "printedPage": 13,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(சந்திரசேகரனும், அவன் மனைவி சரஸ்வதியும், தம்பி ஞானசேகரனும் வரும் வழியில் ஜப்பான் விமானங்கள் போட்ட குண்டுகளால் பாதிக்கப் படுகிறார்கள்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(சந்திரசேகரனும் சரஸ்வதியும் ஆஸ்பத்திரியில்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : டாக்டர் சார்...ஞானசேகரன் எந்த பெட்டிலே இருக்கான்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "டாக் : ஞானசேகரனு? அப்படி ஒருவர் இங்கே இல்லையே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஆ! அப்படியானால் எங்கே இருப்பார்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "டாக் : அந்தக் குண்டு வீச்சிலே மீதி இருப்பவர்கள் இவ்வளவு பேர்தான். இதைத்தவிர மற்றவர்களெல்லாம் செத்துப் போயிட்டாங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஆ! ஞானசேகரா! நீ இறந்தா போனாய்? சரஸ்வதி ஊருக்குப் போனவுடன் ஞானசேகரன் எங்கேன்னு அப்பா கேட்டாரே—கல்யாணிக்கு என்ன பதில் சொல்வேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : டாக்டர்! அவருக்கு கொஞ்சம் சொல்லுங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "டாக் : மிஸ்டர் சந்திரசேகரன் மனதைக் குழப்பிக்கிடாதீங்க அமைதியாக இருங்க."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s010-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Chandrasekaran, his wife Saraswathi, and his younger brother Gnanasekaran are caught in a bombing by Japanese aircraft while on their way.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Chandrasekaran and Saraswathi are in the hospital.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u003",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Doctor, sir... which bed is Gnanasekaran in?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u004",
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "Gnanasekaran? There's no one by that name here.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u005",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Ah! Then where could he be?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u006",
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "These are the only people left from that bombing. Everyone else is dead.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u007",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Ah! Gnanasekara! Have you died? When Saraswathi goes home and Father asks, 'Where is Gnanasekaran?'—what answer will I give Kalyani?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u008",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "Doctor! Please say something to him.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s010-u009",
+        "kind": "dialogue",
+        "speakerLabel": "டாக்",
+        "text": "Mr Chandrasekaran, don't trouble your mind. Stay calm.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

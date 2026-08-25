@@ -1,0 +1,80 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-27",
+  "canonicalScene": 27,
+  "sourceHeading": 27,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—27",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 32,
+      "printedPage": 31
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "prose",
+        "text": "[சந்திரசேகரன் வீட்டில்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : அப்பா இறந்துபோய் விட்டார் கடைசியாக என் தங்கை இட்லிசுட்டு விற்க வேண்டியதாயிற்று. ஞான சேகரன் இறந்ததை நினைக்கும்போது பயமாக இருக்கிறது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்த",
+        "text": "வந்த : அவுங்க போட்டோ இருக்கா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "சேகர் : கல்யாணி போட்டோ இல்லை. ஆனால் குண சேகரன் போட்டோ இருக்கு."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s027-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[At Chandrasekaran's house.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s027-u002",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "Father is dead. In the end, my younger sister had to make and sell idlis. When I think of Gnana Sekaran's death, I am afraid.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s027-u003",
+        "kind": "dialogue",
+        "speakerLabel": "வந்த",
+        "text": "Do you have their photograph?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s027-u004",
+        "kind": "dialogue",
+        "speakerLabel": "சேகர்",
+        "text": "There is no photograph of Kalyani. But there is a photograph of Guna Sekaran.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}
