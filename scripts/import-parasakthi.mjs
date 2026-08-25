@@ -12,8 +12,8 @@
 //     "derivative-navigation-only"` — so `segment-001` is a made-up handle and carries no source
 //     claim.
 //   * Parasakthi's booklet PRINTS its scene headings (`### காட்சி—N`). The numbers are the
-//     booklet's own, which is exactly why their gaps and their one misprint are source facts that
-//     must survive into the data rather than being smoothed away.
+//     booklet's own, which is exactly why their gaps and the late-number transposition are source
+//     facts that must survive into the data rather than being smoothed away.
 //
 // Reusing Manohara's `segment-NNN` handle here would erase that distinction, so this importer keeps
 // the canonical scene number as the identity and records the printed reading beside it.
@@ -66,6 +66,16 @@ const die = (m) => {
 const APPROVED_SOURCE_COMMIT = "a593db5079e76887abeb41d9c2abfd978a7fe9a5";
 const EXPECT_SCAN_SHA256 = "b0024315ca2018a63807b8ff44eb02d132868a7250e6399a2144a10e47c4ad4c";
 const EXPECT_TRANSLATION_AGGREGATE = "a409ce63863c357ff729594147234b8e38406ac2d67fdd388c68d19f47760608";
+// Every NON-ENGLISH source file this importer reads, hashed exactly as the archive hashes its own
+// translation inputs: sorted relative path, NUL, raw bytes, NUL. Computed once from a clean checkout
+// of the approved pin and hard-coded, so it is never derived from the tree it is meant to police.
+//
+// It exists because matching `git rev-parse HEAD` proves which COMMIT is checked out, not which
+// BYTES were read. A clone can sit at the approved pin with a single Tamil word edited in the
+// working tree: every structural invariant still holds, and the generated provenance would go on
+// claiming the pinned commit. This closes that gap.
+const EXPECT_SOURCE_INPUT_AGGREGATE = "38a0257bdf958481f7da560e4e8b4048b78bb329e8ccf6955095da479670a6c6";
+const EXPECT_SOURCE_INPUT_FILES = 55;
 const EXPECT_PDF_PAGES = 58;
 const EXPECT_CANONICAL_PDF = "4-57";
 const EXPECT_CANONICAL_PRINTED = "3-56";
@@ -392,7 +402,53 @@ if (kalaignarSongs.length !== 1) {
 const quoted = songs.filter((s) => s.kind === "quoted-verse");
 if (quoted.length !== EXPECT_QUOTED_VERSE) die(`expected ${EXPECT_QUOTED_VERSE} quoted verse, found ${quoted.length}`);
 
-// ── 6. EMIT ─────────────────────────────────────────────────────────────────────────────────────
+// ── 6. EXACT PINNED-CONTENT GUARD ───────────────────────────────────────────────────────────────
+// Deliberately LAST among the checks and still before a single byte is written.
+//
+// Placing it first would be easier and worse: every mutation — a fabricated scene, a dropped
+// lyricist, a repaired misprint — would collapse into one generic "aggregate mismatch", and the
+// semantic guards above would stop proving anything. Run last, they keep reporting what actually
+// went wrong, and this catches the one class they cannot see: a change that alters bytes while
+// preserving every structure they inspect.
+//
+// The set is defined by a rule, not a hand-list: every non-English source file the importer reads
+// and relies on. The English side is deliberately excluded because it is already byte-covered by
+// EXPECT_TRANSLATION_AGGREGATE — `translations/index.json` and all 46 record files are exactly the
+// 47 inputs of that hash, so including them here would duplicate the same guarantee.
+const sourceInputRel = [
+  "data/works.json",
+  "works/parasakthi/metadata.yaml",
+  "works/parasakthi/scenes/index.json",
+  "works/parasakthi/dialogues/index.json",
+  "works/parasakthi/songs/index.json",
+  "works/parasakthi/songs/inventory.json",
+  "works/parasakthi/songs/credits.json",
+  "works/parasakthi/songs/tracklist-evidence.json",
+  "works/parasakthi/editions/en/manifest.json",
+  ...sceneIndex.scenes.map((s) => `works/parasakthi/scenes/${s.file}`),
+].sort();
+if (sourceInputRel.length !== EXPECT_SOURCE_INPUT_FILES) {
+  die(`source input set has ${sourceInputRel.length} files, expected ${EXPECT_SOURCE_INPUT_FILES}`);
+}
+const srcAgg = crypto.createHash("sha256");
+for (const rel of sourceInputRel) {
+  const p = path.join(SRC_REPO, rel);
+  if (!fs.existsSync(p)) die(`source input ${rel} does not exist in the clone.`);
+  srcAgg.update(rel);
+  srcAgg.update(Buffer.from([0]));
+  srcAgg.update(fs.readFileSync(p)); // raw bytes, never normalised — this is a content check
+  srcAgg.update(Buffer.from([0]));
+}
+const srcAggHex = srcAgg.digest("hex");
+if (srcAggHex !== EXPECT_SOURCE_INPUT_AGGREGATE) {
+  die(
+    `source input aggregate sha256 is ${srcAggHex}, expected ${EXPECT_SOURCE_INPUT_AGGREGATE}. ` +
+      `The clone is at the approved commit but its working-tree content does not match the pinned archive. ` +
+      `Refusing to generate data that would claim a pin it did not come from.`,
+  );
+}
+
+// ── 7. EMIT ─────────────────────────────────────────────────────────────────────────────────────
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(SCENE_OUT, { recursive: true });
 const write = (p, obj) => fs.writeFileSync(p, JSON.stringify(obj, null, 2) + "\n");
@@ -548,6 +604,10 @@ write(path.join(OUT, "provenance.json"), {
   },
   integrity: {
     sourceScanSha256: EXPECT_SCAN_SHA256,
+    // Exact-content proof for the non-English source inputs: the generated data is bound to the
+    // pinned archive's BYTES, not merely to a clone whose HEAD names the pin.
+    sourceInputAggregateSha256: EXPECT_SOURCE_INPUT_AGGREGATE,
+    sourceInputFiles: sourceInputRel.length,
     translationInputAggregateSha256: EXPECT_TRANSLATION_AGGREGATE,
     translationInputFiles: aggInputs.length,
     readerEditionOutputs: manifest.outputs,
