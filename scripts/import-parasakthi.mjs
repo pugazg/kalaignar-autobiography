@@ -30,10 +30,11 @@
 //  3. THE SONGS ARE NOT ALL KALAIGNAR'S. The booklet credits him with திரைக்கதை/வசனம், but its
 //     song-credits page lists SIX contributors booklet-wide and pairs none of them with a song
 //     (`item_level_assignment_present: false`). Item-level authorship comes from the archive's
-//     separate songs derivative, where 13 of 14 items rest on an EXTERNAL tracklist and only one on
-//     the booklet's own words. Exactly ONE of the fourteen is Kalaignar's. Every item's lyricist AND
-//     its evidence basis are carried, because flattening them would attribute five other poets' work
-//     to him.
+//     separate songs derivative, across three evidence tiers: 11 items rest on an EXTERNAL
+//     tracklist, 2 on the verified Kalaignar film-song anthology, and 1 on the booklet's own words.
+//     TWO of the fourteen are Kalaignar's, both on anthology evidence. Every item's lyricist AND its
+//     evidence basis are carried, because flattening them would attribute five other poets' work to
+//     him — and because anthology attribution is not an original-film credit.
 //
 // Tamil authority: works/parasakthi/scenes/scene-NN.md — the verified scene derivatives. Provenance
 // comments are stripped and captured as structured page metadata; all Tamil text, speaker labels,
@@ -59,11 +60,16 @@ const die = (m) => {
 };
 
 // ── APPROVED PIN ────────────────────────────────────────────────────────────────────────────────
-// The work-specific commit, not the source repository's main. Source main has moved on by ~1800
-// commits for unrelated cinema work (a second film, Manohara updates, docs); NONE of it touches
-// works/parasakthi. Pinning the last commit that actually changed this work keeps the import
-// reproducible and independent of the rest of the archive's activity.
-const APPROVED_SOURCE_COMMIT = "a593db5079e76887abeb41d9c2abfd978a7fe9a5";
+// The work-specific commit, not the source repository's main. Source main moves constantly for
+// unrelated cinema work (other films, docs, workflows); this is the last commit that actually
+// changed works/parasakthi, which keeps the import reproducible and independent of that activity.
+//
+// SUPERSEDES a593db5079e76887abeb41d9c2abfd978a7fe9a5. That pin predates the archive's song
+// attribution correction: the verified Kalaignar film-song anthology names two of this booklet's
+// songs at item level, which moved parasakthi-song-002 off a secondary soundtrack table and onto
+// anthology evidence. Importing from the old pin would reproduce an attribution the archive has
+// since corrected.
+const APPROVED_SOURCE_COMMIT = "789b003b6c0dfcf0bc38b906037f92953fd8146f";
 const EXPECT_SCAN_SHA256 = "b0024315ca2018a63807b8ff44eb02d132868a7250e6399a2144a10e47c4ad4c";
 const EXPECT_TRANSLATION_AGGREGATE = "a409ce63863c357ff729594147234b8e38406ac2d67fdd388c68d19f47760608";
 // Every NON-ENGLISH source file this importer reads, hashed exactly as the archive hashes its own
@@ -74,7 +80,12 @@ const EXPECT_TRANSLATION_AGGREGATE = "a409ce63863c357ff729594147234b8e38406ac2d6
 // BYTES were read. A clone can sit at the approved pin with a single Tamil word edited in the
 // working tree: every structural invariant still holds, and the generated provenance would go on
 // claiming the pinned commit. This closes that gap.
-const EXPECT_SOURCE_INPUT_AGGREGATE = "38a0257bdf958481f7da560e4e8b4048b78bb329e8ccf6955095da479670a6c6";
+const EXPECT_SOURCE_INPUT_AGGREGATE = "65d5fdcb2b9a01cb7b8eb1d8b82d4383bdc0c3d5a85dbfe237d96288af49f464";
+// Still 55. The attribution correction added two cross-witness match reports to the archive, but the
+// input set is defined by what this importer READS AND RELIES ON, not by what exists beside it. The
+// reports are prose evidence for a human reader; nothing here derives from their bytes, so hashing
+// them would guard content that cannot affect the output. Their paths are carried into provenance
+// from `inventory.cross_witness_reports`, which IS covered by this aggregate.
 const EXPECT_SOURCE_INPUT_FILES = 55;
 const EXPECT_PDF_PAGES = 58;
 const EXPECT_CANONICAL_PDF = "4-57";
@@ -90,6 +101,11 @@ const EXPECT_SOUNDTRACK_TRACKS = 11;
 const EXPECT_SOUNDTRACK_OCCURRENCES = 13;
 const EXPECT_QUOTED_VERSE = 1;
 const EXPECT_BOOKLET_CONTRIBUTORS = 6;
+// The two songs the verified Kalaignar film-song anthology names at item level, and the exact
+// evidence census the archive now records. Checked against the source inventory rather than
+// asserted from author names alone, so a change in either direction has to be deliberate.
+const EXPECT_KALAIGNAR_OCCURRENCES = ["parasakthi-song-002", "parasakthi-song-004"];
+const EXPECT_EVIDENCE_TIERS = { "external-source": 11, "anthology-attributed": 2, "canonical-context-explicit": 1 };
 // The two printed misnumberings, as the booklet shows them.
 const EXPECT_ANOMALY = [
   { canonical: 43, source: 48, pdf: 49, printed: 48 },
@@ -395,9 +411,37 @@ const songs = songRecords.map((r) => {
     reprisesId: r.relation?.type === "reprise-of" ? r.relation.target_id : null,
   };
 });
+// ── ATTRIBUTION CENSUS ──────────────────────────────────────────────────────────────────────────
+// Two of the fourteen are Kalaignar's, both on anthology evidence. The other twelve are five other
+// poets', and the booklet credits six contributors for the songs as a whole while pairing none of
+// them with a song. Collapsing any of that would attribute other poets' work to him.
 const kalaignarSongs = songs.filter((s) => s.lyricistTa === "மு. கருணாநிதி");
-if (kalaignarSongs.length !== 1) {
-  die(`expected exactly 1 song attributed to மு. கருணாநிதி, found ${kalaignarSongs.length}. The booklet's songs have six credited contributors and must not be collapsed.`);
+const kalaignarIds = kalaignarSongs.map((s) => s.id).sort();
+if (JSON.stringify(kalaignarIds) !== JSON.stringify(EXPECT_KALAIGNAR_OCCURRENCES)) {
+  die(
+    `expected exactly ${EXPECT_KALAIGNAR_OCCURRENCES.length} occurrences attributed to மு. கருணாநிதி ` +
+      `(${EXPECT_KALAIGNAR_OCCURRENCES.join(", ")}), found ${kalaignarIds.length} (${kalaignarIds.join(", ") || "none"}). ` +
+      `The booklet's songs have six credited contributors and must not be collapsed.`,
+  );
+}
+for (const id of EXPECT_KALAIGNAR_OCCURRENCES) {
+  const it = songs.find((s) => s.id === id);
+  if (it.evidenceBasis !== "anthology-attributed") {
+    die(`${id} is attributed to மு. கருணாநிதி on evidence "${it.evidenceBasis}", expected "anthology-attributed". The controlling witness is the verified Kalaignar film-song anthology.`);
+  }
+}
+const tierCensus = songs.reduce((a, s) => ((a[s.evidenceBasis] = (a[s.evidenceBasis] || 0) + 1), a), {});
+for (const [tier, n] of Object.entries(EXPECT_EVIDENCE_TIERS)) {
+  if (tierCensus[tier] !== n) die(`evidence tier "${tier}" count is ${tierCensus[tier] ?? 0}, expected ${n}. Census: ${JSON.stringify(tierCensus)}`);
+}
+if (Object.keys(tierCensus).length !== Object.keys(EXPECT_EVIDENCE_TIERS).length) {
+  die(`unexpected evidence tiers present: ${Object.keys(tierCensus).join(", ")}`);
+}
+// The superseded witness must still be in the source. Preserving a disagreement is the point; a
+// tracklist quietly rewritten to agree would destroy the evidence this correction rests on.
+const track4 = tracklist.tracks.find((t) => t.track === 4);
+if (track4?.lyricist_ta !== "பாரதிதாசன்") {
+  die(`tracklist track 4 no longer attributes the song to பாரதிதாசன் (found ${track4?.lyricist_ta}). The superseded witness must be preserved, not rewritten to agree with the anthology.`);
 }
 const quoted = songs.filter((s) => s.kind === "quoted-verse");
 if (quoted.length !== EXPECT_QUOTED_VERSE) die(`expected ${EXPECT_QUOTED_VERSE} quoted verse, found ${quoted.length}`);
@@ -588,9 +632,30 @@ write(path.join(OUT, "provenance.json"), {
       evidenceTiers: {
         "external-source":
           "A secondary tracklist: a user-supplied screenshot matched against the Tamil Wikipedia soundtrack table for the 1952 film. This is weaker evidence than the printed booklet and is labelled as such on every item that rests on it.",
+        "anthology-attributed":
+          "The verified Kalaignar film-song anthology (கலைஞர் திரை இசைப் பாடல்கள்) names the song at item level: its contents page lists the title beside `கலைஞர்`. This is stronger than the secondary tracklist for archive attribution, but it remains anthology-level evidence and is NOT original-film primary-source-verified authorship — the 2024 anthology is authoritative for what that edition prints and attributes.",
         "canonical-context-explicit":
           "The booklet's own text names the poet immediately before the verse.",
       },
+      evidenceTierCounts: EXPECT_EVIDENCE_TIERS,
+      crossWitnessSource: "works/kalaignar-thirai-isai-paadalgal",
+      crossWitnessReports: songInventory.cross_witness_reports ?? [],
+      // The disagreement is carried, not resolved away. The tracklist still attributes the scene-4
+      // song to பாரதிதாசன்; it is simply no longer the controlling witness. Recording only the
+      // winner would erase the evidence the correction rests on.
+      supersededWitnesses: [
+        {
+          occurrenceId: "parasakthi-song-002",
+          canonicalScene: 4,
+          nowAttributedTo: "மு. கருணாநிதி",
+          nowOn: "anthology-attributed",
+          previouslyAttributedTo: "பாரதிதாசன்",
+          previouslyOn: "external-source",
+          previousReference: "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+          note:
+            "The verified Kalaignar film-song anthology names this song at item level, which supersedes the secondary soundtrack table for this record. The earlier witness is NOT deleted or called wrong: tracklist-evidence.json is unchanged and still attributes track 4 to பாரதிதாசன். It remains a conflicting secondary witness that no longer controls the attribution.",
+        },
+      ],
       externalEvidence: {
         evidenceId: tracklist.evidence_id,
         evidenceType: tracklist.evidence_type,
@@ -598,7 +663,13 @@ write(path.join(OUT, "provenance.json"), {
         qualityNote: tracklist.source_quality_note,
       },
       attributionNote:
-        "Exactly one of the fourteen song/verse occurrences is attributed to மு. கருணாநிதி. The other thirteen are attributed to பாரதிதாசன், கே. பி. காமாட்சிசுந்தரம், உடுமலை நாராயண கவி, சுப்பிரமணிய பாரதி and அண்ணல் தங்கோ. The booklet credits Kalaignar with the screenplay and dialogue; it does not make him the lyricist of these songs.",
+        "Two of the fourteen song/verse occurrences are attributed to மு. கருணாநிதி — parasakthi-song-002 (scene 4) and parasakthi-song-004 (scene 12) — both on the verified Kalaignar film-song anthology's item-level naming. The other twelve are attributed to பாரதிதாசன், கே. பி. காமாட்சிசுந்தரம், உடுமலை நாராயண கவி, சுப்பிரமணிய பாரதி and அண்ணல் தங்கோ. The booklet credits Kalaignar with the screenplay and dialogue; that credit does not make him the lyricist of these songs, and anthology attribution is not an original-film item-level credit.",
+      authorityOrder: [
+        "The scanned Parasakthi booklet (TVA_BOK_0062968) controls the canonical Tamil text.",
+        "The booklet's song-credits page establishes six contributors booklet-wide, pairing none with a song.",
+        "The verified Kalaignar film-song anthology establishes anthology-level item attribution for the two songs it names.",
+        "The external soundtrack table is weaker secondary evidence.",
+      ],
     },
     items: songs,
   },
