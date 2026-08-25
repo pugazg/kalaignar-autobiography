@@ -356,6 +356,57 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/cinema/manohara/source",
   },
   {
+    // CINEMA WRITING — Phase C. The SECOND work on the திரை எழுத்து shelf, and it shares almost
+    // nothing structurally with the first.
+    //
+    // MANOHARA'S BOOKLET PRINTS NO SCENE NUMBERS. Its 57 divisions are archive-created navigation,
+    // which is why its `unitCount` is labelled "காப்பக வழிசெலுத்தல் பகுதிகள்" / "archival segments".
+    // PARASAKTHI'S BOOKLET PRINTS ITS SCENE HEADINGS. The 46 here are the booklet's own, so they are
+    // labelled as scenes — and their gaps are source facts: headings 23 and 34 are never printed,
+    // and two late numbers are transposed in the print. The reader follows the canonical order and
+    // the provenance page records both readings.
+    //
+    // `subtype: "dialogue-songs"` rather than Manohara's "screenplay-dialogue": the archive types
+    // this source `printed_dialogue_song_booklet`, and the booklet titles itself
+    // `முழு வசனம் + பாடல்கள்`. The song layer is not incidental here — it is half the publication.
+    id: "parasakthi",
+    slug: "parasakthi",
+    titleTa: "பராசக்தி",
+    titleEn: "Parasakthi",
+    shelf: "cinema-writing",
+    subtype: "dialogue-songs",
+    readerStructure: "scene",
+    href: "/cinema/parasakthi",
+    state: "published",
+    // The description says what the booklet contains. It does NOT say Kalaignar wrote the songs: the
+    // booklet credits six poets for them collectively and pairs none with a song, and only two of the
+    // fourteen song/verse occurrences are attributed to him — on anthology evidence, not on an
+    // original-film credit. That whole distinction lives on /cinema/parasakthi/source.
+    descTa: "1952 திரைப்படத்தின் முழு வசனமும் பாடல்களும் — நூலில் அச்சிடப்பட்ட 46 காட்சிகள்",
+    descEn: "The 1952 film's full dialogue and songs — 46 scenes as printed in the booklet",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/parasakthi",
+    // The work-specific pin, and the one that carries the archive's song-attribution correction. It
+    // supersedes a593db50…, which predates that correction.
+    sourceCommit: "789b003b6c0dfcf0bc38b906037f92953fd8146f",
+    // `edition` is deliberately unset: the booklet prints no year, edition statement or publisher,
+    // and the source policy forbids inferring any of them from an undated scan.
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // The booklet's OWN scene headings, unlike Manohara's archive-created segments. 46 are printed;
+    // the canonical range runs 1–48 because 23 and 34 appear nowhere in the book.
+    unitCount: { value: 46, labelTa: "காட்சிகள்", labelEn: "scenes" },
+    // `rights` is deliberately ABSENT, and this is the one place Parasakthi must NOT follow Manohara.
+    // Manohara's booklet is Kalaignar's work throughout, so the nationalisation model applies to it.
+    // Parasakthi is a COMPOSITE publication: his dialogue alongside songs credited to six poets, of
+    // whom only one is him. Asserting `nationalised-by-tamil-nadu-government` over the whole booklet
+    // would claim five other poets' songs were nationalised as his work. Scoping rights to the
+    // Kalaignar-authored layer needs the WorkAttribution model that does not exist yet; until it
+    // does, nothing is claimed rather than something wrong.
+    provenanceHref: "/cinema/parasakthi/source",
+  },
+  {
     // Digital Library Phase 3 — Speeches. First benchmark: a fully-released, verified Assembly
     // speech. "Assembly" vs "public" is a SUBTYPE / source context, not a separate public shelf —
     // both belong to the single Speeches shelf.
