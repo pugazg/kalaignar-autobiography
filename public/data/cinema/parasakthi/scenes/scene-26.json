@@ -1,0 +1,121 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-26",
+  "canonicalScene": 26,
+  "sourceHeading": 26,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—26",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 31,
+      "printedPage": 30
+    },
+    {
+      "pdfPage": 32,
+      "printedPage": 31,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(மதுரையில் கல்யாணியைக் காணாமல் திருச்சி வந்து சேரும் குணசேகரன் ரெயில்வே ஸ்டேஷன் அருகில் இருக்கிறான். அச்சமயம் ரெயிலில் வந்த விமலா என்ற பெண்ணின் சாமான்களைக் கூலிக்குத் தூக்கி வருவதாக எடுத்துக்கொண்டு ஓடுகிறான். சிலர் அவனைத் துரத்தவே ஆகாரத்தை மாத்திரம் எடுத்துக்கொண்டு ஓடுகிறான். (தன் பசியின் கொடுமையை அறிந்து)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஆகாரத்தை திருடி வந்தவன் விமலா வீட்டின் கொல்லைப்புறத் தோட்டத்தின் கிணற்றங்கரையில் அமர்ந்து ஆகாரத்தைச் சாப்பிட்டுக் கொண்டே பாடுகிறான்)"
+      },
+      {
+        "kind": "verse",
+        "text": "கா—கா—கா—கா—  \nஆகாரம் உண்ண எல்லோரும் ஒன்றுக  \nஅன்போடு ஓடிவாங்க என்றே  \nஅனுபவப் பொருள் விளங்க—காக்கை  \nஅண்ணுவே நீங்கள் அழகான வாயால்  \nபண்ணைப் பாடுறீங்க—கா கா என  \nஒண்ணுகக் கூடுறீங்க—வாங்க                                    (கா  \nசாப்பாடு இல்லாம தவிக்குதுங்க—ஜனம்  \nகூப்பாடுபோட்டு மனம் குமுறுதுங்க—உயிர்  \nகாப்பாத்த கஞ்சி தண்ணி ஊத்துங்க என்றால்  \nதாப்பாளப் போடுறீங்க பாருங்க—அந்த  \nசண்டாளர் எங்கவே—தன்னலமும் நீங்கவே  \nதாரணி மீதிலே பாடுங்க ராகம்                                      (கா"
+      },
+      {
+        "kind": "verse",
+        "text": "எச்சில் தனிலே எறியும் சோத்துக்கு  \nபிச்சைக்காரர் சண்டை—ரோட்டிலே  \nஇளைத்தவன் வலுத்தவன்  \nஇனச்சண்டை பணச்சண்டை  \nஎத்தனையோ இந்த நாட்டிலே  \nபட்டி சாதி நீங்க—எங்க  \nபகுத்தறிவாளரைப் பார்க்காதீங்க  \nபட்சமாயிருங்க பகிர்ந்துண்டு வாழுங்க  \nபழக்கத்தை மாத்தாதீங்க—எங்கே பாடுங்க                         (கா"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(விமலா பாடலின் கவர்ச்சியால் இழுக்கப்பட்டு அங்கு வர அவளைக் கண்டு குணசேகரன் பயந்து ஓடுகிறான்! அவள் அவனுக்கு “புதுமைப்பித்தன்” என்ற பட்டம் சூட்டுகிறாள்)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s026-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(After failing to find Kalyani in Madurai, Gunasekaran reaches Tiruchi and is near the railway station. At that moment he takes the luggage of a woman named Vimala, who has arrived by train, saying he will carry it for hire, and runs away. When some people chase him, he takes only the food and runs. [Aware of the cruelty of his hunger.])",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s026-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The man who stole the food sits by the well in the rear garden of Vimala's house, eating it as he sings.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s026-u003",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "Kaa—kaa—kaa—kaa—\nTo eat, everyone gather as one;\ncome running with affection—\nto make the lesson of experience clear, O crow-brothers,\nwith your lovely mouths\nyou sing a melody—crying kaa, kaa,\nyou gather together as one—come. (Kaa)\nPeople are suffering without food;\nthey cry aloud, their hearts in anguish;\nwhen they ask, 'Pour us some gruel-water to save a life,'\nlook—you bolt the doors.\nWhere are those cruel ones? Let selfishness leave;\nsing that raga upon the earth. (Kaa)\nFor rice thrown among spit-stained leavings,\nbeggars fight—on the road;\nthe weak and the strong,\ncommunal quarrels, money quarrels—\nhow many in this country.\nLet `patti saathi` go—\ndo not look for our rationalists;\nbe `patchamāyirunga`; live by sharing what you eat;\ndo not change that habit—come, sing. (Kaa)",
+        "lines": [
+          "Kaa—kaa—kaa—kaa—",
+          "To eat, everyone gather as one;",
+          "come running with affection—",
+          "to make the lesson of experience clear, O crow-brothers,",
+          "with your lovely mouths",
+          "you sing a melody—crying kaa, kaa,",
+          "you gather together as one—come. (Kaa)",
+          "People are suffering without food;",
+          "they cry aloud, their hearts in anguish;",
+          "when they ask, 'Pour us some gruel-water to save a life,'",
+          "look—you bolt the doors.",
+          "Where are those cruel ones? Let selfishness leave;",
+          "sing that raga upon the earth. (Kaa)",
+          "For rice thrown among spit-stained leavings,",
+          "beggars fight—on the road;",
+          "the weak and the strong,",
+          "communal quarrels, money quarrels—",
+          "how many in this country.",
+          "Let `patti saathi` go—",
+          "do not look for our rationalists;",
+          "be `patchamāyirunga`; live by sharing what you eat;",
+          "do not change that habit—come, sing. (Kaa)"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-008"
+      },
+      {
+        "id": "parasakthi-en-s026-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Drawn there by the charm of the song, Vimala comes over. Seeing her, Gunasekaran runs away in fear. She bestows on him the title 'Puthumaippithan'.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-008",
+      "canonicalScene": 26,
+      "kind": "unlabelled-song",
+      "openingLineTa": "கா—கா—கா—கா—",
+      "lyricistTa": "உடுமலை நாராயண கவி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 2 (`கா கா கா`)",
+      "performanceContext": "Gunasekaran sings beside the well while eating stolen food; the scene explicitly describes him as singing.",
+      "reprisesId": null
+    }
+  ]
+}

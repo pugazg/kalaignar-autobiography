@@ -1,0 +1,183 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-35",
+  "canonicalScene": 35,
+  "sourceHeading": 35,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—35",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 42,
+      "printedPage": 41
+    },
+    {
+      "pdfPage": 43,
+      "printedPage": 42,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(இடம் அகதி முகாம்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அண்ணு இரங்கூனிலிருந்து அகதிகள் எல்லாம் வந்திருக்காங்களாமே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : ஆமா யாரு வேணும்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : சந்திரசேகரன், ஞானசேகரன், குணசேகரன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : அப்படி ஒருவரும் இல்லையே! அதோ அந்த ஆலமரத்தடிலே ஒரு கூட்டம் இருக்கு அங்கே போயி விசாரி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அண்ணு நீங்களெல்லாம் பர்மாவிலே இருந்துதானே வர்றீங்க?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : ஆமாம்மா அகதிகளாக வந்தோம், ஆண்டிகளாக மாறிவிட்டோம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : இரங்கூனில் என் அண்ணன்மார்களைத் தெரியுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மற்",
+        "text": "மற் : ஊரும். அவுங்க பேரு என்ன?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : சந்திரசேகரன்... ஞானசேகரன்... குணசேகரன்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : எங்ககூட்டமே இவ்வளவு பேருதான் இதிலே உன் அண்ணன்மார்கள் இருக்காங்களான்னு பாரு (கல்யாணி பார்க்கிறாள் இல்லை)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s035-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Location: refugee camp.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Brother, I hear all the refugees have come from Rangoon!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u003",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Yes. Who do you want?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Chandrasekaran, Gnana Sekaran, Guna Sekaran.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u005",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "There is no one by those names! There's a group under that banyan tree—go and inquire there.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Brother, you all came from Burma, didn't you?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u007",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "Yes, amma. We came as refugees and turned into mendicants!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u008",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Did you know my elder brothers in Rangoon?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u009",
+        "kind": "dialogue",
+        "speakerLabel": "மற்",
+        "text": "`Oorum.` What are their names?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u010",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Chandrasekaran... Gnana Sekaran... Guna Sekaran...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s035-u011",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "This is our whole group—only this many people. Look and see whether your brothers are among them. (Kalyani looks; they are not.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

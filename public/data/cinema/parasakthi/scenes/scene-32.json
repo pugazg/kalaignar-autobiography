@@ -1,0 +1,108 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-32",
+  "canonicalScene": 32,
+  "sourceHeading": 32,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—32",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 37,
+      "printedPage": 36
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(ஒருவன் நாய்க்கு பிஸ்கட் கொடுத்துக் கொண்டிருக்கிறான். அப்போது கல்யாணி வருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : டார்லிங்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : ஐயா குழந்தையும் நானும் பட்டினி! குழந்தையின் வயிறு காயுது! பால் வாங்க ஏதாவது ஒரு அரையணா..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : போ...போ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "கல் : அந்த நாய்க்கு போடுற பிஸ்கட்டிலாவது ஒண்ணு கொடுங்களையா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : என்ன சொன்னே? நாய்னு சொன்னே? இது என் டார்லிங்...போ...போ..."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s032-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(A man is feeding biscuits to a dog. Kalyani arrives then.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s032-u002",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "Darling...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s032-u003",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sir, my child and I are starving! The child's stomach is burning! Anything—half an anna—to buy milk...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s032-u004",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "Go... go...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s032-u005",
+        "kind": "dialogue",
+        "speakerLabel": "கல்",
+        "text": "Sir, at least give me one of the biscuits you're giving that dog.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s032-u006",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "What did you say? Did you say 'dog'? This is my darling... go... go...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

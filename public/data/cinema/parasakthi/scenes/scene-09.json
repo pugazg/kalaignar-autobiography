@@ -1,0 +1,48 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-09",
+  "canonicalScene": 9,
+  "sourceHeading": 9,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—9",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 12,
+      "printedPage": 11
+    },
+    {
+      "pdfPage": 13,
+      "printedPage": 12,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அப்பயோ—ஏமாந்தேன் எவ்வளவோ கஷ்டப்பட்டுக் கடல் கடந்து வந்தேன் கல்யாணி காலையிலே உன்னைக் காணலாம் என் அத்தானைக் காணலாம் அப்பாவைக் காணலாம் என்று ஆசை அலைமோதிக் கிடந்தேன். நெஞ்சிலே"
+      },
+      {
+        "kind": "prose",
+        "text": "நஞ்சைக் கொட்டி விட்டாள்.. கொஞ்சிக் குலாவி கொடுமை செய்துவிட்டாள் வஞ்சகி, இதைவிட என்னைக் கொன்றிருக்கலாமே அவள். பஞ்சையாய்...பராரியாய்—என் தங்கைக்கு இப்படித் தரிசனம் தர வேண்டுமா நான்? வறுமை, திருட்டு, வஞ்சகம், விபச்சாரம்! எங்கே? வற்றாத ஜீவநதிகள் வளந்தோடும் நாட்டிலே வளமான சோலைகள் பூத்துக் குலுங்கும் பூமியிலே! வாழ முடியாதவர்கள் வாழவழி தெரியாதவர்கள் வாழ்வதற்கே பிறந்தவர்கள்! இந்த வங்கத்திலே என்ன வந்ததும் வராததுமாய் வாட்டி வதைக்கவா வேண்டும்? சிங்கத் திருநாடே! நீ சிலந்திக் கூடாக மாறியது எப்போது? வந்தாரை வாழவைக்கும் வளமிகு தமிழகமே! நீ சொந்த நாட்டானையே சுரண்டுவது எத்தனை நாட்களாக? வீரப் பெண்களின் எடுகோள் எழுதி எழுதி ஏற்றம் பெற்ற என் அருமை பொன்னுடே! நீ வீதிகளிலே விபச்சாரிகளைத் திரிய விட்டு உன் விழிகளை மூடிக் கொண்டது ஏன்? ஏன் வானத்தை முட்டும் மாளிகைகள் மானத்தை இழந்த மனிதர்கள்; உயர்ந்த கோபுரங்கள்...தாழ்ந்த உள்ளங்கள்! ஏ, தமிழ் நாடே! இதுதானு உன் பெருமை? தகுதி? போக்கியதை? கல்யாணி!...நீ மதுரையிலே...நான் மதராஸ் தெரு வீதிலே! மாறுத மனக் குழப்பத்துடன்....அநாதையாக ஆதரவற்றவனாய்! யாரிடமும் எதுவும் பேசமுடியாத ஊமையாய்!...ஐயோ....கல்யாணி...கல்யாணி."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s009-u001",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Alas—I was deceived. After so many hardships I crossed the sea and came. Kalyani, this morning my hopes surged: I would see you, see my brother-in-law, see Father. Into my heart she poured poison... The deceitful woman, after fondling and flirting with me, has done me cruel harm; she might as well have killed me. A pauper... a wanderer—must I appear before my sister like this? Poverty, theft, deceit, prostitution! Where? In a country where unfailing life-giving rivers flow in abundance, on a land where fertile groves bloom and flourish! People unable to live, people who do not know a way to live, people born only to live! In this land, must every conceivable thing come upon me and torment me? O sacred land of lions! When did you become a spider's web? O prosperous Tamil land that gives life to those who come to you! How long have you been exploiting your own native sons? O my precious golden land, exalted again and again by chronicling the examples of heroic women! Why do you let prostitutes roam your streets and close your eyes? Why? Mansions touching the sky, people who have lost their honour; lofty towers... lowly hearts! O Tamil Nadu! Is this your greatness? Your worth? Your splendour? Kalyani!... you in Madurai... I on the streets of Madras! With a mind overturned and confused... orphaned, without support! Mute, unable to speak to anyone!... Ayyo... Kalyani... Kalyani.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

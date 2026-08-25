@@ -1,0 +1,150 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-37",
+  "canonicalScene": 37,
+  "sourceHeading": 37,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—37",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 43,
+      "printedPage": 42
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(வெளியுக்கு போயிருந்த நொண்டி வருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நொண்டி",
+        "text": "நொண்டி : இராகவா இன்னிக்கு ஏதாவது விசேஷம் உண்டா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ராக",
+        "text": "ராக : பாலம் ஒரு பிச்சைக்காரி ஒரு குழந்தையுடன் வந்தாள் நாங்களெல்லாம் யாருன்னு கேட்டாள். நாங்கள் இரங்கூனிலே இருந்து சம்பாதிச்சிட்டு வர்றோம்னு சொன்னோம்... இரங்கூனிலேன்னுமன்று அண்ணன்மார்களைத் தெரியுமான்னு கேட்டாள். தெரியாதுன்னு சொல்லிவிட்டோம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நொ",
+        "text": "நொ : அவளது பெயரை என்னவென்று சொன்னாள்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : அதுநம்ம தமிழ்நாட்டு பெயராகவே தெரியலியே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ராக",
+        "text": "ராக : என்னமோ—சந்திரசேகரன்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நொ",
+        "text": "நொ : சந்திரசேகரன், ஞானசேகரன், குணசேகரன் என்கிறாளா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "எல்",
+        "text": "எல் : ஆம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நொ",
+        "text": "நொ : அய்யோ கல்யாணி! என் தங்கை கல்யாணி! கல்யாணி! (என்று கதறி கீழே விழுகிறான்)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s037-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The lame man, who had gone outside, returns.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u002",
+        "kind": "dialogue",
+        "speakerLabel": "நொண்டி",
+        "text": "Iragava, is there anything special today?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u003",
+        "kind": "dialogue",
+        "speakerLabel": "ராக",
+        "text": "Baalam. A beggar woman came with a child. She asked who all of us were. We said we had been earning in Rangoon and were coming back... She asked whether we knew her elder brothers in Rangoon. We said we didn't.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u004",
+        "kind": "dialogue",
+        "speakerLabel": "நொ",
+        "text": "What did she say her name was?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u005",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "That doesn't even seem like a Tamil Nadu name, does it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u006",
+        "kind": "dialogue",
+        "speakerLabel": "ராக",
+        "text": "Something like—Chandrasekaran...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u007",
+        "kind": "dialogue",
+        "speakerLabel": "நொ",
+        "text": "Did she say Chandrasekaran, Gnana Sekaran, Guna Sekaran?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u008",
+        "kind": "dialogue",
+        "speakerLabel": "எல்",
+        "text": "Yes...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s037-u009",
+        "kind": "dialogue",
+        "speakerLabel": "நொ",
+        "text": "Ayyo, Kalyani! My younger sister Kalyani! Kalyani! (Crying out, he falls down.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

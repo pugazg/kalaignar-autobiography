@@ -1,0 +1,209 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-08",
+  "canonicalScene": 8,
+  "sourceHeading": 8,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—8",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 11,
+      "printedPage": 10
+    },
+    {
+      "pdfPage": 12,
+      "printedPage": 11,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(ஜாலிக்காரி ஜாலியுடன் ஓர் தாசி வீட்டில் நடக்கும் நாட்டியத்தை வெறுப்புடன் ரசிக்கிறான்)"
+      },
+      {
+        "kind": "verse",
+        "text": "ஓ ரசிகரும் சீமானே வா  \nஜொலிக்கும் உடையணிந்து  \nகளிக்கும் நடனம் புரிவோம்—அதை  \nநினைக்கும் பொழுது மனம்  \nஇனிக்கும் விதத்தில் சுகம்  \nஅளிக்கும் கலைகள் அறிவோம்                                   (ஓ ரசிகரும்"
+      },
+      {
+        "kind": "verse",
+        "text": "கற்சிலையும் சித்திரமும் கண்டு—அதன்  \nகட்டழகிலே மயக்கம் கொண்டு சிற்சிலையின்  \nகட்டழகிலே மயக்கம் கொண்டு—வீண்  \nகற்பனையெல்லாம் மனதில்  \nஅற்புதமென்றே மகிழ்ந்து  \nவிற்பனை செய்யாதீர் மதியை—தினம்  \nநினைக்கும் பொழுது மனம்  \nஇனிக்கும் விதத்தில் சுகம்  \nஅளிக்கும் கலைகள் அறிவோம்"
+      },
+      {
+        "kind": "verse",
+        "text": "வானுலக மோட்சமதை நாடி—இன்ப  \nவாழ்க்கையை இழந்தவர்கள் கோடி—பெண்களின்  \nவாழ்க்கையை இழந்தவர்கள் கோடி—வெறும்  \nஆணவத்தினிலே பெரும் ஞானியைப்போல நின்று  \nவீணிலே அலைய வேண்டாம்—தினம்  \nநினைக்கும் பொழுது மனம்  \nஇனிக்கும் விதத்தில் சுகம்  \nஅளிக்கும் கலைகள் அறிவோம்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குணசேகரன் டான்ஸ் கச்சேரியில் ஜாலிக்காரி ஜாலியால் குளிர்ந்த பானத்தில் மயக்க மருந்திட்டு மயக்கப்பட்டு தன் பணத்தை பூராவும் பறிகொடுக்கிறான்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கல்யாணி வீடு)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "டாக்டர்",
+        "text": "டாக்டர் : (கல்யாணியைப் பரிசோதித்து விட்டு) அவசரமாக இந்த மருந்தை வாங்கிக்கொண்டு வாங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தங்கப்பன்",
+        "text": "தங்கப்பன் : (எதிரே வரும் மாமனாரைப் பார்த்து) இப்போ எப்படி இருக்கு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "மாணிக் : (டாக்டர் சீட்டைக் காட்டி) அவசரமாக இந்த மருந்தை வாங்கிக்கொண்டு வாங்க. (தங்கப்பன் சைக்கிளில் வேகமாக செல்லுகிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பார்வதி",
+        "text": "பார்வதி : (வெளியே வந்து) பேரன் பன்னீர்செல்வம் பிறந்திருக்கிறான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "மாணிக் : (களிப்புடன்) மாப்பிள்ளே! மாப்பிள்ளே!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(மருந்தை வாங்கிவரப் போய்க்கொண்டிருந்த மாப்பிள்ளை வீட்டின் எதிரே காரில் அடிபட்டு விழுந்து இறக்கிறார். அதைக் கண்ணுற்ற மாமனார் மாணிக்கம் பிள்ளை அதிர்ச்சியால் மரணமடைகிறார். கல்யாணி விதவையாகிறாள்.)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s008-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(With the playful Jolly beside him, Gunasekaran watches with distaste a dance taking place in a courtesan's house.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "O discerning gentleman, come!\nDressed in shining clothes,\nLet us perform a joyous dance—when\nWe think of it, the heart\nSweetens; we know arts\nThat give delight and pleasure. (O discerning one\nSeeing stone statues and paintings—and\nEnchanted by their shapely beauty, by the sculpture's\nShapely beauty—do not, in vain,\nFill the mind with every fancy,\nRejoice in each as a marvel,\nAnd sell away your reason—each day,\nWhen you think of it, the heart\nSweetens; we know arts\nThat give delight and pleasure.\nSeeking salvation in the heavenly world—millions\nHave lost a life of pleasure—millions\nHave lost the lives of women—merely\nStanding in arrogance like a great sage,\nDo not wander about in vain—each day,\nWhen you think of it, the heart\nSweetens; we know arts\nThat give delight and pleasure.",
+        "lines": [
+          "O discerning gentleman, come!",
+          "Dressed in shining clothes,",
+          "Let us perform a joyous dance—when",
+          "We think of it, the heart",
+          "Sweetens; we know arts",
+          "That give delight and pleasure. (O discerning one",
+          "Seeing stone statues and paintings—and",
+          "Enchanted by their shapely beauty, by the sculpture's",
+          "Shapely beauty—do not, in vain,",
+          "Fill the mind with every fancy,",
+          "Rejoice in each as a marvel,",
+          "And sell away your reason—each day,",
+          "When you think of it, the heart",
+          "Sweetens; we know arts",
+          "That give delight and pleasure.",
+          "Seeking salvation in the heavenly world—millions",
+          "Have lost a life of pleasure—millions",
+          "Have lost the lives of women—merely",
+          "Standing in arrogance like a great sage,",
+          "Do not wander about in vain—each day,",
+          "When you think of it, the heart",
+          "Sweetens; we know arts",
+          "That give delight and pleasure."
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-003"
+      },
+      {
+        "id": "parasakthi-en-s008-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At the dance performance, Jolly slips a stupefying drug into Gunasekaran's cold drink, renders him unconscious, and takes all his money.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani's house.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u005",
+        "kind": "dialogue",
+        "speakerLabel": "டாக்டர்",
+        "text": "(After examining Kalyani.) Get this medicine urgently and bring it back.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u006",
+        "kind": "dialogue",
+        "speakerLabel": "தங்கப்பன்",
+        "text": "(Seeing his father-in-law coming toward him.) How is she now?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u007",
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "(Showing the doctor's prescription.) Get this medicine urgently and bring it back. (Thangappan rides away quickly on his bicycle.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பார்வதி",
+        "text": "(Coming outside.) A grandson, Panneerselvam, has been born.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u009",
+        "kind": "dialogue",
+        "speakerLabel": "மாணிக்",
+        "text": "(Joyfully.) Son-in-law! Son-in-law!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s008-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The son-in-law, on his way to buy the medicine, is struck by a car opposite the house, falls, and dies. His father-in-law, Manickam Pillai, witnesses it and dies from the shock. Kalyani becomes a widow.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-003",
+      "canonicalScene": 8,
+      "kind": "unlabelled-song",
+      "openingLineTa": "ஓ ரசிகரும் சீமானே வா",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 6 (`ஓ ரசிக்கும் சீமானே`)",
+      "performanceContext": "Dance-house performance observed by Gunasekaran and Jolly.",
+      "reprisesId": null
+    }
+  ]
+}

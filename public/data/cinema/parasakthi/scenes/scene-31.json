@@ -1,0 +1,233 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-31",
+  "canonicalScene": 31,
+  "sourceHeading": 31,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—31",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 37,
+      "printedPage": 36
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(ஆற்றில் கையைக் கழுவிக்கொண்டே குணசேகரன்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : கல்யாணி, நானாவது திருடி ஏமாற்றி மிரட்டி சாப்பிட்டுவிடுகிறேன், நீயும் உன் குழந்தையும் பசி தீர்த்துக் கொள்ள என்ன பாடுபடுகிறீர்களோ?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இந்நேரம் ஆற்றில் படகில் நின்று இறங்கிய விமலா குணசேகரனைப் பிடித்துக்கொள்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : நான் திருடன் இல்லை! நான் திருடன் இல்லை!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : நீ ஒன்றும் திருடன் இல்லை. நான் அப்படி நினைக்கவில்லை. உன் பசிக்கு வேண்டியதை நீ எடுத்துக் கொண்டு போறாய் அதை என்னிடம் கேட்டாலே கொடுத்திருப்பேன். வாங்கிக்கொண்டு போனால் நடந்தே போயிருக்கலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : எல்லோரையும் போலத்தான் நீயும் இருப்பேன்னு நினைச்சேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அதான் பகுத்தறிவாளரைப் பார்க்காதீங்கன்னு பாட்டு பாடினியா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஆமா, இரக்கமற்ற மனிதர்களைப் பகுத்தறிவாளர்னு சொல்றது தப்புதான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அடே புத்திசாலி இருக்கியே நீ...யாரு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : நானென்ன இந்த ஊர் கலெக்டரா? ஒருவேளை கேட்டா என் கதையே பெரியது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : எனக்குக் கதையென்றால் ரொம்பப் பிரியம் சொல்லு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : இந்தக் கதையில் ஒரு அணுவளவும் உன்னால் ரசிக்க முடியாது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : ஆவலே அதிகமாகத் தூண்டுகிறாய்! அவசியம் சொல்லித்தான் வேண்டும் வா வீட்டுக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : வீட்டுக்கா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : சும்மா வா பயப்படாதே (அழைத்து செல்கிறாள்)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s031-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran, washing his hands in the river.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Kalyani, at least I steal, deceive and threaten people and manage to eat. What hardships are you and your child going through to satisfy your hunger?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At that moment Vimala, who has got down from a boat on the river, catches hold of Gunasekaran.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I'm not a thief! I'm not a thief!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u005",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "You're no thief at all. I didn't think that. You're taking what your hunger needs and going. If you'd only asked me, I would have given it. If you'd received it and gone, you could simply have walked away.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I thought you'd be just like everyone else.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u007",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Is that why you sang, 'Don't look for rationalists'?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u008",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Yes. It is wrong to call merciless people rationalists.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u009",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Hey, you're quite a clever fellow... who are you?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u010",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "What am I, the Collector of this town? If you happen to ask, my story itself is a long one.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u011",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "I like stories very much. Tell me.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u012",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "You won't be able to enjoy even an atom's worth of this story.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u013",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "You're only whetting my curiosity more! You absolutely must tell me. Come home.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u014",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Home?!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s031-u015",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Just come. Don't be afraid. (She takes him along.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

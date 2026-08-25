@@ -1,0 +1,142 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-17",
+  "canonicalScene": 17,
+  "sourceHeading": 17,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—17",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 21,
+      "printedPage": 20
+    },
+    {
+      "pdfPage": 22,
+      "printedPage": 21,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(கல்யாணி தன் குழந்தையை தொட்டிலில் போட்டுப் பாடிக்கொண்டிருக்கிறாள். இதைப் பார்த்துக்கொண்டே கண்கள் கடலாக நெஞ்சைத் துளைக்கும் சோகத்தோடு நிற்கிறான் குணசேகரன்)"
+      },
+      {
+        "kind": "verse",
+        "text": "கொஞ்சும் மொழி சொல்லும் கிளியே—செழும்  \nகோமளத் தாமரைப் பூவே—ஒரு  \nவஞ்சமிலா முழுமதியே இன்ப  \nவானில் உதித்த நல்லமுதே!  \nகண்ணே கண்மணியே கண்ணுறங்காயோ"
+      },
+      {
+        "kind": "verse",
+        "text": "மாமன்மார் மூவர் தம்பி—நல்ல  \nவாழ்வளிக்க வருவார்  \nஉன் மாம்பழக் கன்னத்தில்—முத்த  \nமாரி பொழிந்திட வருவார்  \nகண்ணே கண்மணியே கண்ணுறங்காயோ"
+      },
+      {
+        "kind": "verse",
+        "text": "மாணிக்கப் பாலாடை—பச்சை  \nமாமணித் தொட்டிலுடன்—வெள்ளி  \nயானையும் வாகனமாய்—சின்ன  \nமாமன் தருவார் சீதனமாய்  \nகண்ணே கண்மணியே கண்ணுறங்காயோ"
+      },
+      {
+        "kind": "verse",
+        "text": "வெள்ளியினால் செய்த ஏட்டில்—நல்ல  \nவைர எழுத்தாணி கொண்டு  \nதெள்ளு தமிழ் பாடம் எழுத உனை  \nபள்ளியில் சேர்த்திட வருவார்—மாமன்  \nஅள்ளி அணைத்திட வருவார்  \nகண்ணே கண்மணியே கண்ணுறங்காயோ"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாடலின் கருத்து அவன் வருத்தத்தைப் பன்மடங்கு வளர்க்கிறது)"
+      },
+      {
+        "kind": "prose",
+        "text": "ஆம். மாமன்மார்கள் ஆடம்பரமாக வருவார்கள்...கல்யாணி உன் ஆசைக்கனவை நான் அழிக்க வேண்டாம். இந்தப் பைத்தியக்கார வேஷத்தில் நீ என்னைக் கண்டு கொள்ளவே வேண்டாம்—(இது குணசேகரனின் மனசாட்சி)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : கடலிலே திசை மாறிப்போன கப்பல் அப்படியே கவிழ்ந்தே போயிருக்கக் கூடாதா? கல்யாணி உன்னை இந்த நிலையில் காணவா இவ்வளவு ஆவலோடு ஓடிவந்தேன். (சுமைதாங்கி அருகே செல்கிறான்) சுமைதாங்கி இனி இதுவே என் சோகம் தாங்கி! இதுவே என்வீடு! இங்கேயே என்வாழ்வு! கல்யாணியை நிழல்போல பின்தொடர்ந்து கொண்டிருப்பது என் உத்தியோகம்."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s017-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Kalyani lays her child in the cradle and sings. Watching her, Gunasekaran stands with his eyes an ocean, sorrow piercing his heart.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s017-u002",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "O parrot that speaks tender words—O flourishing\nDelicate lotus flower—O\nGuileless full moon, good nectar\nRisen in the sky of joy!\nMy dear, my precious one, will you not sleep?\nYour three maternal uncles, little one—will come\nTo give you a good life.\nThey will come to shower kisses\nUpon your mango-like cheek.\nMy dear, my precious one, will you not sleep?\nA ruby feeding cup—with an emerald\nCradle—and a silver elephant\nAs your vehicle—the youngest uncle\nWill give them as seethanam.\nMy dear, my precious one, will you not sleep?\nOn a tablet made of silver—with a fine\nDiamond stylus,\nTo write lessons in clear Tamil, your uncle\nWill come to enroll you in school—your uncle\nWill come to gather you into his arms.\nMy dear, my precious one, will you not sleep?",
+        "lines": [
+          "O parrot that speaks tender words—O flourishing",
+          "Delicate lotus flower—O",
+          "Guileless full moon, good nectar",
+          "Risen in the sky of joy!",
+          "My dear, my precious one, will you not sleep?",
+          "Your three maternal uncles, little one—will come",
+          "To give you a good life.",
+          "They will come to shower kisses",
+          "Upon your mango-like cheek.",
+          "My dear, my precious one, will you not sleep?",
+          "A ruby feeding cup—with an emerald",
+          "Cradle—and a silver elephant",
+          "As your vehicle—the youngest uncle",
+          "Will give them as seethanam.",
+          "My dear, my precious one, will you not sleep?",
+          "On a tablet made of silver—with a fine",
+          "Diamond stylus,",
+          "To write lessons in clear Tamil, your uncle",
+          "Will come to enroll you in school—your uncle",
+          "Will come to gather you into his arms.",
+          "My dear, my precious one, will you not sleep?"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-007"
+      },
+      {
+        "id": "parasakthi-en-s017-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(The meaning of the song multiplies his sorrow many times.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s017-u004",
+        "kind": "dialogue",
+        "speakerLabel": null,
+        "text": "Yes. The maternal uncles will come in splendour... Kalyani, I must not destroy your cherished dream. In this madman's disguise, you need not recognize me at all—(This is Gunasekaran's conscience.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s017-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Wouldn't it have been better if the ship that lost its course at sea had simply capsized? Kalyani, did I come running with such eagerness only to see you in this state? (He goes near the roadside load-rest.) O bearer of burdens, from now on you will bear my sorrow! This is my home! My life is here! My occupation is to follow Kalyani like a shadow.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-007",
+      "canonicalScene": 17,
+      "kind": "unlabelled-song",
+      "openingLineTa": "கொஞ்சும் மொழி சொல்லும் கிளியே",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 8 (`கொஞ்சு மொழி சொல்லும்`)",
+      "performanceContext": "Kalyani sings a lullaby to her child while Gunasekaran watches unseen.",
+      "reprisesId": null
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-33",
+  "canonicalScene": 33,
+  "sourceHeading": 33,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி 33",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 38,
+      "printedPage": 37
+    },
+    {
+      "pdfPage": 39,
+      "printedPage": 38,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 40,
+      "printedPage": 39,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 41,
+      "printedPage": 40,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 42,
+      "printedPage": 41,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(விமலா வீட்டில் குணசேகரன் தன் கதையைக் கூறல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : முத்து எடுக்கப் போய் கிளிஞ்சல் பொறுக்கிய கதையாக முடிந்தது. தங்கையின் வீட்டில் மகிழ்ச்சி தவழும், உற்சாகம் ஊஞ்சலாடும், களிப்பு கொஞ்சும் என்றெல்லாம் கனவு கண்டேன். ஆனால் அங்கு வேதனை விநாடிக்கு நூறு, வறுமையிலிடப்பட்டு பைத்தியக்காரனாய் அங்கு சென்றேன். இந்த நிலையில் அறிமுகம் ஒருகேடா? என் தங்கையிடம் நான் யாரென்று சொல்லி அவள் வாழ்வை வேதனைப்படுத்தக்கூடாது. அவள் அழுதது போதும். அண்ணனும் அழவேண்டாம் என்று நினைத்தேன். ஆனால் என் அன்புத் தெய்வம் கல்யாணி என் கண்களுக்கு அப்பால் வெகுதூரம் சென்றுவிட்டாள். தேடுகிறேன்! தேடுகிறேன்! தேடிக்கொண்டே இருக்கிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அழுவதா? சிரிப்பதா? என்றே தெரியவில்லை. உன் கதையைக் கேட்ட பிறகு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஏன்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அன்பு இருக்கிற அளவுக்கு உன்னிடத்தில் அறிவு இல்லை. இப்படி சொல்கிறேனே என்று ஆத்திரப்படாதே. உன் செல்வம் கொள்ளையடிக்கப்பட்ட போது நீ சென்றிருக்க வேண்டும் போலீஸாரிடம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஒரு பானையோடு போனேன்...பானம் அருந்தினேன்...பணத்தைப் பறிகொடுத்தேன். இதை போலீஸாரிடம் சொல்ல எனக்கு வெட்கமாயிருந்தது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : பிச்சைக்காரனாய் திரிந்தாய் வெட்கமில்லை. திருடனாய் மாறினாய் அப்போதும் வெட்கமில்லை. ஆனால் உன் ஏமாற்றத்தை வெளியில் சொல்ல மட்டும் வெட்கப்பட்டிருக்கிறாய். வேடிக்கையான மனிதன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : உனக்குத் தெரியாது. சமுதாயமே பிச்சைக்கார மடம், பைத்தியக்கார விடுதி, திருடர் குகை. இதில் நான் மட்டும் வெட்கப்படுவானேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : ஆம்! சமுதாயம் பிச்சைக்கார மடம்தான். ஆனால் அதில் நீ திருவோடு இல்லாத பரதேசி. சமுதாயம் பைத்தியக்கார விடுதிதான்; அதில் நீ கல்வெறியத் தெரியாத பைத்தியம். சமுதாயம் திருடர்களின் குகை; அதில் நீ கனக்கோல் பிடிக்கத் தெரியாத திருடன். சமுதாயத்தை சரசாரமாய் திடுக்கிடவே யோசித்துப் பார்! உனக்குத் தெரியாமலே சமுதாயத்தோடு சேர்ந்து முட்டாளாகி இருக்கிறாய் நீ."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : முட்டாளா? நானு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : ஆம். ஆயிரம் முறை சொல்கிறேன். பிச்சைக்கார உடையிலே எத்தனைபேர் பணக்காரராய் இருக்கிறார்கள்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : பைத்தியக்கார வேஷத்தில் எத்தனையோ லட்சாதிபதிகளாய் உலவுகிறார்கள். தேவாலயத் திருப்பணி, திருமாலுக்கு திருவிழா...இந்தத் திரையிலே எத்தனைத் திருடர்கள் உலவுகிறார்கள். நீயும் மாறினாயே திருடனாய்...பித்தனாய்...பிச்சைக்காரனாய். முடிந்ததா உன்னுள் அந்த மோகன வாழ்வு பெற?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : எனக்குத் தேவையானது மோகன வாழ்வல்ல, கல்யாணி! என் தங்கை கல்யாணி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : இப்போதும் உன் ஜீவக் குற்றம் சாடுகிறேன். நீ ஒரு சுயநலவாதி. உன் சொந்தத் தங்கைக்காக அவள் நோய்த் வாழ்வுக்காக சுருண்டு போனாயே தவிர நாட்டிலே எத்தனை தங்கைகள் நலிந்து கிடக்கிறார்கள் என்று நினைத்தாவது பார்த்தாயா? உன் சொந்த தங்கைக்காக நீ அன்பும் பேராசையிலே வேலை வாங்கிக்கொண்டு வீட்டுவாசல்களிலே நிற்பவருக்கு விம்மும் குரலில் பசி பசி எனப் பதறி அழும் பாவை யாரென்று பார்த்திருப்பாயே. அவர்கள் எல்லாம் யார்? கல்யாணி! கல்யாணி! என்று கத்துகிறாயே ஒரு கல்யாணியல்ல, ஒரு கோடிக் கல்யாணிகள் கண்ணீர் கம்பளியுமாக கதியற்று நடைப்பிணமாய் நாட்டிலே நடமாடுகிறார்கள். அதற்காக உன் நாவு அசைத்ததுண்டா? உன் நெஞ்சு துடித்ததுண்டா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : எனக்கென்ன அடிக்கவேண்டும்? இந்தக் கேடு கெட்ட சமுதாயத்திற்கு, நன்றிகெட்ட நாட்டிற்கு, ஏழைகளை மிதித்து வாழும் எத்தர்களுக்குத் துடிக்கவேண்டும். நெஞ்சு உயிர் உடலெல்லாம் எனக்கேன் துடிக்கவேண்டும்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அந்தச் சமுதாயத்திலே நீயும் ஒரு அங்கம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஆனால் ஏழை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அப்படி ஆகப்பட்டாய் இதற்கேன்! உன்னை ஏமாற்றி பணத்தைப் பறித்துக் கொண்டாளே, அந்த நாட்டோடியை நான் பாராட்டுகிறேன்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : பாராட்டுகிறாயா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : ஆம்! உன் கண்ணைத் திறந்தவள் அவள்தான். நீ ஏழையாக ஆகப்படாவிட்டால் ஏழை உலகை நினைத்துக் கூட இருக்க மாட்டாய். அப்படி ஒரு உலகம் இருப்பதாகவே உனக்குத் தெரிந்திருக்காது. உன் உலகம் உல்லாசப் புரியாக இருந்திருக்கும். மாளிகையிலேயே வீசும் தென்றலை அனுபவிப்பாய்; குடிசையிலேயே குமுறும் புயலைக் காணமாட்டாய். சமுதாயக் கோணல்கள் வெறுக்கக் கற்றிருப்பாய். ஆனால் எரிமலையைத் தண்ணீர் ஊற்றி அணைக்கப் பார்க்கிறாய். மலைப் பாம்பை அடக்க மகுடி ஊதுகிறாய். சமுதாயப் புரட்சி ஆலகால விஷத்தின் கிளையை வெட்டுவதல்ல."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : அதன் ஆணிவேரையே பெயர்ப்பதுதான். வெட்கப்படு. நீ மேற்கொண்ட வேலைகளுக்கு வேதனை தீர்க்கும் மார்க்கம் நீ போட்ட வேஷங்களல்ல. அதற்காக மட்டும் இருந்திருக்கக் கூடாது. அவதிப்படும் ஆயிரமாயிரம் தங்கைகளுக்காக இருந்திருக்கவேண்டும். அதற்காக வெட்கப்பட்டு, வேதனைப்பட்டு விசாரப்படு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : போதும்! போதும்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : மன்னித்துக்கொள். உன் மனதைப் புண்படுத்தி விட்டேன். பாலைவனத்தை பூஞ்சோலையாக்கப் புதிய பாதை காண வேண்டும். உன்னைப்போல் மண்ணைவாரி இறைத்துப் பயனில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஆமாம்! உலகப் புத்தகத்தின் அனுபவ ஏடுகள் இப்படி புரட்டுகிறதே. இதற்கெல்லாம் ஆசிரியர் யார்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : எல்லாம் அண்ணுதான்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அண்ணுவா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : ஆம். முன்பே சொன்னேனே எனக்கு ஒரு அண்ணு இருப்பதாக. எங்கள் குடும்பமே வேடிக்கையானது. என் தந்தை ராமன் ஆண்டாலென்ன? ராவணன் ஆண்டாலென்ன? என்ற எதிர்த்துலகில் சஞ்சரிப்பவர். அண்ணுவோ புதுமையுள்ளம் படைத்தவர். அவர் தங்கை நான்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(அன்றிரவு வேளையில்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (படுக்கையில்) கல்யாணி காட்டிலேவா மாட்டிலேவா நான் இங்கே கட்டிலிலே சே......சே......ரோம் நகமும் தீப்பற்றி எரியும்போது நீரோ மன்னன் பிடில் வாசித்துக் கொண்டிருந்தானாம். கல்யாணி! கல்யாணி!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(விமலா கனவு காண்கிறாள்—கனவிலே)"
+      },
+      {
+        "kind": "verse",
+        "text": "புதுப்பெண்ணின் மனதைத் தொட்டுப் போறவரே  \nஉங்க எண்ணத்தை சொல்லிவிட்டுப் போங்க  \nஇளம் மனசைத் தூண்டிவிட்டுப் போறவரே  \nஅந்த மார்பத்தைச் சொல்லிவிட்டுப் போங்க                              (புது"
+      },
+      {
+        "kind": "verse",
+        "text": "உம்மை எண்ணியெங்கும் என்னிடத்தில் சொல்லாமல்  \nஇருட்டு வேளையிலே யாரும் காணாமலே  \nதிருட்டுத்தனமாய் சத்தம் செய்யாமலே  \nசிந்தித்திருந்ததெல்லாம் சிந்தித்துப் பாராமலே                       (புது"
+      },
+      {
+        "kind": "verse",
+        "text": "என்ன சுத்தி பறந்தவன்டே சும்மா நீ போகாதே  \nபுத்தம் புதுமலரின் தேனைச் சுவைத்துப் போவாயே  \nஎன்—இன்பக்கனவை பேணு கலைக்கிறாய்?  \nஅன்புக் கயிறுதான் அறுக்க யாராலும் ஆகாதையா"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(விடிந்ததும்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : குண! நான் இலட்சியவாதி என்று நினைத்துப் போய்விட்டாயா? இலட்சியவாதி என்னுள் காதல் வெறுத்த..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "விம : மணிமேகலியாகவா இருக்கவேண்டும் கண்ணகியாகவும் இருக்கலாமே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : தகப்பன் பெயர்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : பரமசிவம்பிள்ளை"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : உன் பெயர்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : இராமச்சந்திரன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : இராமச்சந்திரன் பிள்ளை..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : எனக்குப் பிள்ளை கிண்ணை ஒண்ணும் இல்லீங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : அட ஜாதியப்பா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : அதுதானே கெட்டது"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : தகப்பனார் தொழில்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : கோவில் தர்மகர்த்தா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : பெயர்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : சொர்ணலால்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : (அடுத்தவனைப் பார்த்து) நீ எங்கேய்யா இங்கே வந்தே? மெட்ராசிலே நாலு பேருக்குத்தானய்யா இடம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : நம்ம டில்லிக்காரனுடைய கொஞ்சம் பெரிய மனசு வையுங்கோ?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : நீ என்னைக்கய்யா டில்லிபோய்ச் சேரப்போறே?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஞானசேகரன் நொண்டிக்காலுடன் வருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : அய்யா..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : போ...போ...இடமில்ல."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : நாங்க ஒரு கூட்டமே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : ஒருத்தருக்கே இடமில்ல...போங்கைய்யா சுத்த நியூசென்ஸ் இருக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : அப்படியானால் நாங்களெல்லாம் எங்கே போறது?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : என்னையே வந்து வழிகாட்டச் சொல்றியா போயி எங்கேயாவது விழுந்து சாவுறதுதானே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : கால் ஒடிந்த பிறகும் சாவதற்குப் பயந்து தானே பல மாதங்கள் பட்டினி கிடந்து படாத பாடுபட்டு பசியுடன் பாதையோரத்திலே படுத்துறங்கி நடந்து வந்திருக்கிறோம். சாவதாக இருந்தால் பர்மாவிலே குண்டு வீச்சுக்கும் பயப்படாமல் எதிர்த்து நின்றிருந்தால் ஒரே கூட்டமாக பத்தாயிரம் பேர் சுட்டுக் கொல்லப்பட்டிருப்போம். ஆனால் சாவதற்கு வழிகேட்க வழியில்லா சங்கடப்பட்ட எங்கள் மனதிற்கு சாந்தி கேட்கவே வந்தோம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : சட்டம்! இதென்ன ஆபீஸா? அல்லது ஒங்கவீடா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : இடம் இல்லை உண்மையான அகதிகளுக்கு இடம் இல்லை வந்தவர்கள் எல்லாம் வரவேற்ற தேசத்தில்"
+      },
+      {
+        "kind": "prose",
+        "text": "பிறந்தவனுக்கு இடம் இல்லை உங்களைப்போன்ற இருதயமற்றவர்கள் இருக்கும்வரை மனிதனுக்கே இடமில்லை, அன்பு, அறம் இவை அத்தனைக்குமே இடம் இல்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "ஆபீ : கெட் அவுட் கெட் அவுட்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : கருணைக் கடைக்குப் பெயர் கருணைமகால், இதற்குப் பெயர் அகதி முகாம் வா நாங்கள் போவோம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : இப்படித் திரிவதைவிட்டா சிறைச்சாலைக்குச் செல்லலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : பொறு தம்பி திட்டவட்டமாக எதையும் யோசிக்காமல் ஆத்திரத்தில் நாலுபேர் எதையுமே செய்துவிட்டால் சிறைச்சாலைக்குச் செல்ல வேண்டியதுதான். நம்முடைய நிலைமை உலகத்துக்குத் தெரியாது. பிச்சைக்காரர்கள் நாம்மட்டு மல்ல இந்தநாடு பூராவுமே பரந்துகிடக்கின்றனர். முதலில் பிச்சைக்காரர்கள் அத்தனை பேரையும் ஒன்று சேர்க்க வேண்டும். நமக்காக அரசாங்கமோ தேசக்கட்சிகளோ பாடுபடுவதாகத் தெரியவில்லை. நம்முடைய கோரிக்கைகளை வீடு வீடாக சென்று வெளியிடுவதைவிட நாட்டில் பரப்புவதே நலம். நம்முடைய குரல் கலெக்டருக்கு எட்டிப் புண்ணியம் இல்லை. அரசாங்கத்துக்கு எட்ட வேண்டும். பிச்சைக்காரர்கள் அத்தனை பேரையும் ஒன்று சேர்த்து மகாநாடு ஒன்று நடத்த வேண்டும். அந்த மகாநாட்டுக்கு சென்னை மாகாணப் பிச்சைக்காரர் மகாநாடு என்று பெயரிட வேண்டும். (எல்லோரும் சிரிக்கின்றனர்) ஏன் சிரிக்கிறீர்கள்? சிரிப்பதற்காகச் சொல்லவில்லை. சிந்தனை செய்து பாருங்கள். அதிலே பிறந்த தீர்மானம் நமக்கு ஓட்டுரிமை வேண்டுமென்பது. அதைப் பெற்று விட்டால் நாம் எல்லோரும் கூட நிற்கலாம். நம்மை எதிர்த்து போட்டியிட எவரும் துணியமாட்டார்கள். நம்முடைய மகாநாட்டில் நிறைவேற்றும் தீர்மானங்கள் நிறைவேற்ற வேண்டும். நாம் ஓட்டுகிற பரதேசி அரசாங்கத்தையே நடுங்க வைக்க வேண்டும். (உயிர் போனாலும் சரி, நமது உரிமைக் குரல் உரக்க எழுப்ப வேண்டும். வருங்கால நமது சமுதாயத்தை வளம்போல் வாழுகின்ற வழிக்கு அமைக்க வேண்டும் என்று கூட்டத்தினர் குச்சலிட்டனர்.)"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s033-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At Vimala's house, Gunasekaran tells his story.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I went seeking pearls and ended up picking shells. I dreamed that joy would crawl through my sister's house, enthusiasm would swing there, and delight would coo. But there, anguish came a hundred times a second; cast into poverty, I went there like a madman. In that state, what good would revealing myself do? I must not tell my sister who I am and make her life more painful. She has cried enough. I thought her elder brother need not cry too. But my beloved goddess Kalyani has gone very far, beyond my sight. I search! I search! I keep searching.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u003",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "After hearing your story, I don't know whether to cry or laugh.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Why?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u005",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "You don't have as much sense as you have love. Don't get angry because I say this. When your wealth was stolen, you should have gone to the police.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I went with a vessel... drank a drink... lost the money. I was ashamed to tell the police about it.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u007",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "You wandered as a beggar and felt no shame. You became a thief and still felt no shame. But you were ashamed only to tell others how you were deceived. What a strange man.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u008",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "You don't know. Society itself is a beggars' monastery, a lunatic asylum, a thieves' cave. Why should I alone be ashamed in it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u009",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Yes! Society is indeed a beggars' monastery. But in it you are a paradesi without a begging bowl. Society is indeed a lunatic asylum; in it you are a madman who does not know `kalveriya`. Society is a thieves' cave; in it you are a thief who does not know how to wield a `kanakkol`. Think about society—`sarasaramai thidukkidave`! Without even realizing it, you have joined society and become a fool along with it.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u010",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "A fool? Me?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u011",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Yes. I'll say it a thousand times. How many people in beggars' clothes are rich...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u012",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "How many millionaires roam in the guise of madmen. Service to temples, festivals for Tirumal... behind this screen, how many thieves roam. You too changed into a thief... a madman... a beggar. Were you able to attain that enchanting life within yourself?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u013",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "What I need is not an enchanting life—Kalyani! My sister Kalyani!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u014",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Even now I accuse you of the great fault in your life. You are selfish. You collapsed in anguish over your own sister and her sickly life, but did you ever stop to think how many sisters in this country are wasting away? Out of love and possessive longing for your own sister, when you went seeking work from house to house, you must have seen a woman standing at a doorway, crying in a choking voice, 'Hunger! Hunger!' Who are they all? You keep shouting 'Kalyani! Kalyani!'—not one Kalyani, but a crore Kalyanis, with tears as their blanket, helpless living corpses moving through this country. Has your tongue ever moved for them? Has your heart ever throbbed for them?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u015",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Why should it beat for me? It should beat for this rotten society, this ungrateful country, for the cheats who live by trampling the poor. Why should heart, life and body all throb for me!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u016",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "You too are a part of that society.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u017",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "But a poor one.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u018",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "And who made you poor like that? I praise that wandering woman who deceived you and took your money!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u019",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "You praise her?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u020",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Yes! She is the one who opened your eyes. If you had not become poor, you would not even have thought about the world of the poor. You would not have known that such a world existed. Your world would have been a city of pleasure. You would enjoy the breeze that blows in the palace; you would never see the storm groaning in the hut. You would have learned to hate society's distortions. But you try to put out a volcano by pouring water on it. You play the magudi to tame a mountain snake. Social revolution is not the cutting of a branch of Halahala poison.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u021",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "It is uprooting its very taproot. Be ashamed. For the things you undertook, the way to end suffering was not the disguises you put on. Those efforts should not have been only for that. They should have been for the thousands upon thousands of suffering sisters. Be ashamed of that, suffer over it, and grieve over it.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u022",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Enough! Enough!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u023",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Forgive me. I have hurt your mind. We must find a new path to turn the desert into a flower garden. There is no use in scooping up and scattering earth as you do.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u024",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Yes! So the pages of experience in the book of the world are being turned like this. Who is the teacher behind all this?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u025",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "It is all my elder brother.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u026",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Your elder brother?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u027",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Yes. I told you earlier that I have an elder brother. Our whole family is strange. My father wanders in a contrary world of, 'What does it matter if Rama rules? What does it matter if Ravana rules?' My brother has a mind open to new ideas. I am his sister.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u028",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(That night.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u029",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(On the bed.) Kalyani—are you in the forest, or among cattle? And I am here on a cot—che... che... They say that while `Rom nagam` was burning, King Nero was playing the fiddle. Kalyani! Kalyani!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u030",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Vimala dreams—in the dream.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u031",
+        "kind": "song",
+        "speakerLabel": null,
+        "text": "You who touch the new bride's heart and go—\ntell me your thought before you go.\nYou who stir this young heart and go—\ntell me of that breast before you go. (Pudhu)\nThinking of you everywhere, without telling me,\nin the dark hour, unseen by anyone,\nstealthily, without making a sound,\nwithout pausing to think over all that had been thought. (Pudhu)\nYou who flew all around me, don't simply go away;\ntaste the honey of this brand-new flower before you go.\nWhy do you break my cherished dream of joy?\nCan anyone ever cut the cord of love?",
+        "lines": [
+          "You who touch the new bride's heart and go—",
+          "tell me your thought before you go.",
+          "You who stir this young heart and go—",
+          "tell me of that breast before you go. (Pudhu)",
+          "Thinking of you everywhere, without telling me,",
+          "in the dark hour, unseen by anyone,",
+          "stealthily, without making a sound,",
+          "without pausing to think over all that had been thought. (Pudhu)",
+          "You who flew all around me, don't simply go away;",
+          "taste the honey of this brand-new flower before you go.",
+          "Why do you break my cherished dream of joy?",
+          "Can anyone ever cut the cord of love?"
+        ],
+        "mode": "semantic-poetic",
+        "sourceOccurrenceId": "parasakthi-song-011"
+      },
+      {
+        "id": "parasakthi-en-s033-u032",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(At daybreak.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u033",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Guna! Did you go away thinking I am an idealist? Must the idealist in me be one who rejects love...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u034",
+        "kind": "dialogue",
+        "speakerLabel": "விம",
+        "text": "Why must she be Manimekalai? She can be Kannagi too.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u035",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Father's name?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u036",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Paramasiva Pillai.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u037",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Your name?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u038",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Ramachandran.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u039",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Ramachandran Pillai...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u040",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "I don't have any 'pillai' or anything like that, sir.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u041",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Hey—your caste, man!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u042",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "That's the very thing that's bad.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u043",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Father's occupation?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u044",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Temple trustee.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u045",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Name?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u046",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Sornlal.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u047",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "(Looking at the next man.) Why did you come here? In Madras there's room for only four people.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u048",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Please show a little more heart toward our Delhi man.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u049",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "When are you ever going to reach Delhi?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u050",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gnana Sekaran arrives with a lame leg.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u051",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Sir...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u052",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Go... go... there's no room.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u053",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "We're a whole group...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u054",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "There's no room even for one... go, sir. It's a complete nuisance.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u055",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Then where are all of us to go?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u056",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Have you come asking me to show you the way? Go fall somewhere and die.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u057",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Even after my leg broke, it was because we feared death that for many months we starved, endured untold suffering, slept by the roadside hungry and walked here. If we were going to die, had we stood our ground in Burma without fearing the bombing, ten thousand of us could have been shot dead as one group. But we did not come to ask for a way to die; we came seeking peace for our distressed minds, which have nowhere to turn.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u058",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Sattam! Is this an office, or your house?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u059",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "There is no room—no room for genuine refugees. In a land that welcomed all who came, there is no room for one born here. As long as heartless people like you exist, there is no room even for human beings; there is no room for love, for virtue—for any of them.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u060",
+        "kind": "dialogue",
+        "speakerLabel": "ஆபீ",
+        "text": "Get out! Get out!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u061",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "A charity shop is named Karunai Mahal; this place is named a refugee camp. Come, we'll go.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u062",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "Rather than wandering like this, we might as well go to prison.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s033-u063",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Wait, brother. If, without thinking anything through clearly, four people do something in anger, then prison is where we will have to go. The world does not know our condition. We are not the only beggars; beggars are spread throughout this whole country. First we must bring all the beggars together. It does not seem that either the government or the national parties are working for us. Rather than go door to door publishing our demands, it is better to spread them through the country. There is no merit in our voice merely reaching the Collector; it must reach the government. We must unite all the beggars and hold a conference. It must be called the Madras Province Beggars' Conference. (Everyone laughs.) Why are you laughing? I didn't say it to make you laugh. Think about it. The resolution to emerge there should be that we demand voting rights. Once we obtain that, we can all stand for election together. No one will dare contest against us. The resolutions passed at our conference must be carried out. We must make even the `paradesi` government that we `ottugira` tremble. (Even if it costs our lives, we must raise our voice for our rights loudly. We must shape a path by which our future society can live in prosperity, the group shouted.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": [
+    {
+      "id": "parasakthi-song-011",
+      "canonicalScene": 33,
+      "kind": "unlabelled-song",
+      "openingLineTa": "புதுப்பெண்ணின் மனதைத் தொட்டுப் போறவரே",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 5 (`புது பெண்ணின் மனதை`)",
+      "performanceContext": "Verse/song occurs inside Vimala's dream sequence.",
+      "reprisesId": null
+    }
+  ]
+}

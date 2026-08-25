@@ -1,0 +1,670 @@
+{
+  "workId": "parasakthi",
+  "titleTa": "பராசக்தி",
+  "sourceTitleTa": "பராசக்தி — முழு வசனம் + பாடல்கள்",
+  "titleEn": "Parasakthi",
+  "shelf": "cinema-writing",
+  "readerStructure": "scene",
+  "sceneNumbering": "source-printed",
+  "sceneCount": 46,
+  "canonicalSceneRange": "1-48",
+  "absentCanonicalScenes": [
+    23,
+    34
+  ],
+  "editorialNumberCorrections": [
+    {
+      "canonicalScene": 43,
+      "sourceHeading": 48
+    },
+    {
+      "canonicalScene": 48,
+      "sourceHeading": 43
+    }
+  ],
+  "scenes": [
+    {
+      "slug": "scene-01",
+      "canonicalScene": 1,
+      "sourceHeading": 1,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—1",
+      "tamilBlockCount": 5,
+      "englishUnitCount": 4,
+      "songItemIds": [
+        "parasakthi-song-001"
+      ]
+    },
+    {
+      "slug": "scene-02",
+      "canonicalScene": 2,
+      "sourceHeading": 2,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—2",
+      "tamilBlockCount": 46,
+      "englishUnitCount": 46,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-03",
+      "canonicalScene": 3,
+      "sourceHeading": 3,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—3",
+      "tamilBlockCount": 10,
+      "englishUnitCount": 10,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-04",
+      "canonicalScene": 4,
+      "sourceHeading": 4,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—4",
+      "tamilBlockCount": 9,
+      "englishUnitCount": 2,
+      "songItemIds": [
+        "parasakthi-song-002"
+      ]
+    },
+    {
+      "slug": "scene-05",
+      "canonicalScene": 5,
+      "sourceHeading": 5,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—5",
+      "tamilBlockCount": 8,
+      "englishUnitCount": 8,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-06",
+      "canonicalScene": 6,
+      "sourceHeading": 6,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—6",
+      "tamilBlockCount": 22,
+      "englishUnitCount": 22,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-07",
+      "canonicalScene": 7,
+      "sourceHeading": 7,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—7",
+      "tamilBlockCount": 24,
+      "englishUnitCount": 24,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-08",
+      "canonicalScene": 8,
+      "sourceHeading": 8,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—8",
+      "tamilBlockCount": 12,
+      "englishUnitCount": 10,
+      "songItemIds": [
+        "parasakthi-song-003"
+      ]
+    },
+    {
+      "slug": "scene-09",
+      "canonicalScene": 9,
+      "sourceHeading": 9,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—9",
+      "tamilBlockCount": 2,
+      "englishUnitCount": 1,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-10",
+      "canonicalScene": 10,
+      "sourceHeading": 10,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—10",
+      "tamilBlockCount": 9,
+      "englishUnitCount": 9,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-11",
+      "canonicalScene": 11,
+      "sourceHeading": 11,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—11",
+      "tamilBlockCount": 3,
+      "englishUnitCount": 3,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-12",
+      "canonicalScene": 12,
+      "sourceHeading": 12,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—12",
+      "tamilBlockCount": 10,
+      "englishUnitCount": 10,
+      "songItemIds": [
+        "parasakthi-song-004"
+      ]
+    },
+    {
+      "slug": "scene-13",
+      "canonicalScene": 13,
+      "sourceHeading": 13,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—13",
+      "tamilBlockCount": 33,
+      "englishUnitCount": 32,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-14",
+      "canonicalScene": 14,
+      "sourceHeading": 14,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—14",
+      "tamilBlockCount": 19,
+      "englishUnitCount": 19,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-15",
+      "canonicalScene": 15,
+      "sourceHeading": 15,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—15—",
+      "tamilBlockCount": 29,
+      "englishUnitCount": 24,
+      "songItemIds": [
+        "parasakthi-song-005",
+        "parasakthi-song-006"
+      ]
+    },
+    {
+      "slug": "scene-16",
+      "canonicalScene": 16,
+      "sourceHeading": 16,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—16",
+      "tamilBlockCount": 12,
+      "englishUnitCount": 12,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-17",
+      "canonicalScene": 17,
+      "sourceHeading": 17,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—17",
+      "tamilBlockCount": 8,
+      "englishUnitCount": 5,
+      "songItemIds": [
+        "parasakthi-song-007"
+      ]
+    },
+    {
+      "slug": "scene-18",
+      "canonicalScene": 18,
+      "sourceHeading": 18,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—18",
+      "tamilBlockCount": 13,
+      "englishUnitCount": 13,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-19",
+      "canonicalScene": 19,
+      "sourceHeading": 19,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி 19",
+      "tamilBlockCount": 18,
+      "englishUnitCount": 18,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-20",
+      "canonicalScene": 20,
+      "sourceHeading": 20,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி 20",
+      "tamilBlockCount": 39,
+      "englishUnitCount": 39,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-21",
+      "canonicalScene": 21,
+      "sourceHeading": 21,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி 21",
+      "tamilBlockCount": 44,
+      "englishUnitCount": 44,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-22",
+      "canonicalScene": 22,
+      "sourceHeading": 22,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—22",
+      "tamilBlockCount": 16,
+      "englishUnitCount": 16,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-24",
+      "canonicalScene": 24,
+      "sourceHeading": 24,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—24",
+      "tamilBlockCount": 7,
+      "englishUnitCount": 7,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-25",
+      "canonicalScene": 25,
+      "sourceHeading": 25,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—25—",
+      "tamilBlockCount": 30,
+      "englishUnitCount": 29,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-26",
+      "canonicalScene": 26,
+      "sourceHeading": 26,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—26",
+      "tamilBlockCount": 5,
+      "englishUnitCount": 4,
+      "songItemIds": [
+        "parasakthi-song-008"
+      ]
+    },
+    {
+      "slug": "scene-27",
+      "canonicalScene": 27,
+      "sourceHeading": 27,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—27",
+      "tamilBlockCount": 4,
+      "englishUnitCount": 4,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-28",
+      "canonicalScene": 28,
+      "sourceHeading": 28,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—28",
+      "tamilBlockCount": 56,
+      "englishUnitCount": 55,
+      "songItemIds": [
+        "parasakthi-song-009"
+      ]
+    },
+    {
+      "slug": "scene-29",
+      "canonicalScene": 29,
+      "sourceHeading": 29,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—29",
+      "tamilBlockCount": 2,
+      "englishUnitCount": 2,
+      "songItemIds": [
+        "parasakthi-song-010"
+      ]
+    },
+    {
+      "slug": "scene-30",
+      "canonicalScene": 30,
+      "sourceHeading": 30,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—30",
+      "tamilBlockCount": 28,
+      "englishUnitCount": 28,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-31",
+      "canonicalScene": 31,
+      "sourceHeading": 31,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—31",
+      "tamilBlockCount": 15,
+      "englishUnitCount": 15,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-32",
+      "canonicalScene": 32,
+      "sourceHeading": 32,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—32",
+      "tamilBlockCount": 6,
+      "englishUnitCount": 6,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-33",
+      "canonicalScene": 33,
+      "sourceHeading": 33,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி 33",
+      "tamilBlockCount": 66,
+      "englishUnitCount": 63,
+      "songItemIds": [
+        "parasakthi-song-011"
+      ]
+    },
+    {
+      "slug": "scene-35",
+      "canonicalScene": 35,
+      "sourceHeading": 35,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—35",
+      "tamilBlockCount": 11,
+      "englishUnitCount": 11,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-36",
+      "canonicalScene": 36,
+      "sourceHeading": 36,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—36",
+      "tamilBlockCount": 6,
+      "englishUnitCount": 6,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-37",
+      "canonicalScene": 37,
+      "sourceHeading": 37,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—37",
+      "tamilBlockCount": 9,
+      "englishUnitCount": 9,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-38",
+      "canonicalScene": 38,
+      "sourceHeading": 38,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—38",
+      "tamilBlockCount": 11,
+      "englishUnitCount": 11,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-39",
+      "canonicalScene": 39,
+      "sourceHeading": 39,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—39",
+      "tamilBlockCount": 16,
+      "englishUnitCount": 13,
+      "songItemIds": [
+        "parasakthi-song-012"
+      ]
+    },
+    {
+      "slug": "scene-40",
+      "canonicalScene": 40,
+      "sourceHeading": 40,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—40",
+      "tamilBlockCount": 4,
+      "englishUnitCount": 4,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-41",
+      "canonicalScene": 41,
+      "sourceHeading": 41,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—41",
+      "tamilBlockCount": 24,
+      "englishUnitCount": 24,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-42",
+      "canonicalScene": 42,
+      "sourceHeading": 42,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—42",
+      "tamilBlockCount": 4,
+      "englishUnitCount": 3,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-43",
+      "canonicalScene": 43,
+      "sourceHeading": 48,
+      "editorialNumberCorrection": true,
+      "headingTa": "காட்சி—43",
+      "tamilBlockCount": 26,
+      "englishUnitCount": 24,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-44",
+      "canonicalScene": 44,
+      "sourceHeading": 44,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—44",
+      "tamilBlockCount": 4,
+      "englishUnitCount": 4,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-45",
+      "canonicalScene": 45,
+      "sourceHeading": 45,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—45",
+      "tamilBlockCount": 38,
+      "englishUnitCount": 32,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-46",
+      "canonicalScene": 46,
+      "sourceHeading": 46,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—46",
+      "tamilBlockCount": 4,
+      "englishUnitCount": 4,
+      "songItemIds": []
+    },
+    {
+      "slug": "scene-47",
+      "canonicalScene": 47,
+      "sourceHeading": 47,
+      "editorialNumberCorrection": false,
+      "headingTa": "காட்சி—47",
+      "tamilBlockCount": 37,
+      "englishUnitCount": 37,
+      "songItemIds": [
+        "parasakthi-song-013"
+      ]
+    },
+    {
+      "slug": "scene-48",
+      "canonicalScene": 48,
+      "sourceHeading": 43,
+      "editorialNumberCorrection": true,
+      "headingTa": "காட்சி—48",
+      "tamilBlockCount": 6,
+      "englishUnitCount": 3,
+      "songItemIds": [
+        "parasakthi-song-014"
+      ]
+    }
+  ],
+  "songs": [
+    {
+      "id": "parasakthi-song-001",
+      "canonicalScene": 1,
+      "kind": "unlabelled-song",
+      "openingLineTa": "வாழ்க வாழ்கவே வாழ்க வாழ்கவே",
+      "lyricistTa": "பாரதிதாசன்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 11 (`வாழ்க வாழ்கவே`)",
+      "performanceContext": "Opening dance/song at the gathering before Thangappan speaks.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-002",
+      "canonicalScene": 4,
+      "kind": "speaker-labelled-verse",
+      "openingLineTa": "இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
+      "lyricistTa": "பாரதிதாசன்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+      "performanceContext": "Thangappan and Kalyani alternate labelled sung/verse lines; `இரு` marks their joint closing line.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-003",
+      "canonicalScene": 8,
+      "kind": "unlabelled-song",
+      "openingLineTa": "ஓ ரசிகரும் சீமானே வா",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 6 (`ஓ ரசிக்கும் சீமானே`)",
+      "performanceContext": "Dance-house performance observed by Gunasekaran and Jolly.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-004",
+      "canonicalScene": 12,
+      "kind": "unlabelled-song",
+      "openingLineTa": "பூமாலே நீயே புழுதி மண்மேலே வீணே",
+      "lyricistTa": "மு. கருணாநிதி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 9 (`பூமாலை`)",
+      "performanceContext": "Kalyani sings while holding her child.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-005",
+      "canonicalScene": 15,
+      "kind": "unlabelled-song",
+      "openingLineTa": "தேசம், ஞானம், கல்வி, ஈசன் பூசையெல்லாம்",
+      "lyricistTa": "உடுமலை நாராயண கவி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 1 (`தேசம் ஞானம் கல்வி`)",
+      "performanceContext": "Gunasekaran, acting like a madman, sings while collecting money.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-006",
+      "canonicalScene": 15,
+      "kind": "unlabelled-song",
+      "openingLineTa": "ஆரியக் கூத்தாடினாலும்",
+      "lyricistTa": "உடுமலை நாராயண கவி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 1 maps both parasakthi-song-005 and parasakthi-song-006",
+      "performanceContext": "Second structurally distinct verse section within Gunasekaran's street performance, using the `தாண்டவக்கோனே` refrain.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-007",
+      "canonicalScene": 17,
+      "kind": "unlabelled-song",
+      "openingLineTa": "கொஞ்சும் மொழி சொல்லும் கிளியே",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 8 (`கொஞ்சு மொழி சொல்லும்`)",
+      "performanceContext": "Kalyani sings a lullaby to her child while Gunasekaran watches unseen.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-008",
+      "canonicalScene": 26,
+      "kind": "unlabelled-song",
+      "openingLineTa": "கா—கா—கா—கா—",
+      "lyricistTa": "உடுமலை நாராயண கவி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 2 (`கா கா கா`)",
+      "performanceContext": "Gunasekaran sings beside the well while eating stolen food; the scene explicitly describes him as singing.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-009",
+      "canonicalScene": 28,
+      "kind": "quoted-verse",
+      "openingLineTa": "கோரிக்கையற்று கிடக்குதண்ணே—இங்கு",
+      "lyricistTa": "பாரதிதாசன்",
+      "evidenceBasis": "canonical-context-explicit",
+      "evidenceReference": "scene-28.md: Narayana Pillai says `யாரோ பாரதிதாசனும் விதவையைப் பற்றி சொல்லியிருக்கான் பாரு` immediately before the verse.",
+      "performanceContext": "Narayana Pillai introduces a printed/literary quotation while discussing widowhood; this is verse quotation, not staged singing.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-010",
+      "canonicalScene": 29,
+      "kind": "unlabelled-song",
+      "openingLineTa": "பொருளே இல்லார்க்கு தொல்லையா",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 10 (`பொருளே இல்லார்க்கு`)",
+      "performanceContext": "Kalyani walks the street suffering from hunger; the scene consists of the verse/song block.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-011",
+      "canonicalScene": 33,
+      "kind": "unlabelled-song",
+      "openingLineTa": "புதுப்பெண்ணின் மனதைத் தொட்டுப் போறவரே",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 5 (`புது பெண்ணின் மனதை`)",
+      "performanceContext": "Verse/song occurs inside Vimala's dream sequence.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-012",
+      "canonicalScene": 39,
+      "kind": "unlabelled-song",
+      "openingLineTa": "நெஞ்சு பொறுக்குதில்லையே—இந்த",
+      "lyricistTa": "சுப்பிரமணிய பாரதி",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 3 (`நெஞ்சு பொறுக்கு தில்லையே`)",
+      "performanceContext": "Gunasekaran expresses his anguish through song; afterward he explicitly says he did not compose/sing it originally and that it is another person's song.",
+      "reprisesId": null
+    },
+    {
+      "id": "parasakthi-song-013",
+      "canonicalScene": 47,
+      "kind": "unlabelled-reprise",
+      "openingLineTa": "புதுப் பெண்ணின் மனதைத் தொட்டுப் போறவரே",
+      "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 5 (`புது பெண்ணின் மனதை`), inherited through reprise-of parasakthi-song-011",
+      "performanceContext": "Short reprise after Gunasekaran stops Vimala from leaving.",
+      "reprisesId": "parasakthi-song-011"
+    },
+    {
+      "id": "parasakthi-song-014",
+      "canonicalScene": 48,
+      "kind": "unlabelled-song",
+      "openingLineTa": "எல்லோரும் வாழ வேண்டும்—உயிர்கள்",
+      "lyricistTa": "அண்ணல் தங்கோ",
+      "evidenceBasis": "external-source",
+      "evidenceReference": "tracklist-evidence.json: track 7 (`எல்லோரும் வாழ வேண்டும்`)",
+      "performanceContext": "Closing collective song at the opening of the orphanage; scene 47 immediately precedes it with `(பேதமின்றி பாடுகின்றனர்)`.",
+      "reprisesId": null
+    }
+  ]
+}

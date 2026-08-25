@@ -1,0 +1,578 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-20",
+  "canonicalScene": 20,
+  "sourceHeading": 20,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி 20",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 24,
+      "printedPage": 23
+    },
+    {
+      "pdfPage": 25,
+      "printedPage": 24,
+      "status": "verified"
+    },
+    {
+      "pdfPage": 26,
+      "printedPage": 25,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(இடம்ரோடு)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : வடை! முறுக்கு! அய்யா! முறுக்கு வேணுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : மூணு அணாவுக்கு கொடு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : அட கடவுளே! போணி ஆயி மூணு நாள் ஆகுது வடை எவ்வளவுக்கு முறுக்கு எவ்வளவுக்கு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அட ரெண்டு அணாவுக்கு இதுவும் ஓரணாவுக்கு அதுவும் கொடப்பா! (கொடுக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : ஏம்பா உன் கை நல்லா நடக்கும்லே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : கை நடக்காது—கால் நடக்கும் (என்று செய்கை மூலம் காட்டுகிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : அய்யோ—பாவம் பசி அதிகம் போலிருக்கு? சாப்பிடு சாப்பிடு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "அடுத்த",
+        "text": "அடுத்த : ஏ...முறுக்கு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : இருங்க அய்யாகிட்டே காசு வாங்கிட்டு வர்றேன் காசு எடப்பா—உம்—காசு எடு—"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (சிரிக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : ஏனப்பா சிரிக்கிறே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (மீண்டும் சிரிக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : அட! என்னப்பா மறுபடியும் சிரிக்கிறே காசை எடு நாலு தெருவுக்கு போகணும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஏன் பொறுக்கவா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : யாரடா இவன் திமிறுபடைச்சவன் காசு எடுன்னா."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : டேய்!—காசா? உனக்கா? எதுக்கு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : ஏம்பா மாமா மச்சான் மாதிரி விளையாடுறே, என்னை ஏமாத்தலாம்னு பாக்றயா என்னை யாருனு நினைச்சே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அப்படின்னா இன்னும் ரெண்டணாவுக்குக் கொடு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "வியா : அப்படி வா வழிக்கு! இந்தா வாங்கிக்கோ? (கொடுக்கிறான்—சாப்பிடுகிறான்) காசு எடுப்பா—ம்—நேரமாகுது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (பைத்தியம்போல்) அடடா பயலே—"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(வியாபாரியை விரட்டி விட்டுப் பெட்டியைத் தான் தூக்கிக்கொண்டு புறப்படுகிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : முதலாளி முறுக்கு வேணுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : சூடா இருக்கா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ரெண்டும் இருக்கு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : அப்ப எனக்கு இதிலே ஒரணவுக்கு அதிலே ஒரணவுக்கு கொடு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : காசை எடு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : அட முதல்ல கொடுப்பா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஏங்க உங்களுக்கு ரெண்டணவுக்கு போதுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : போதாது! காசை ரொம்ப செலவழிக்க கூடாது எப்பா ரெண்டு அணவுக்கு வாங்கியிருக்கேனே கொஞ்சம் ஓசி"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : அய்யோ இதிலே கூட உங்க பிச்சைக்கார புத்தி போகலியா! இந்தா ஓசி, (கொஞ்சம் பிட்டுக் கொடுக்கிறான்) காசை எடு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : காசா? ரூபாய்க்கு சில்லறை இருக்கா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : என்ன?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : ஒரு ரூபாய்க்கு சில்லறை இருக்கா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : சில்லறையா? எங்கிட்டேயா? அட பாவி கொண்டாடா. (ரூபாயை வாங்கி கையில் வைத்துக்கொண்டு) நல்ல சமயமடா இதை நழுவ விடுவாயோ—ஏதுங்காணும் இந்தக் காசு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : ஏதுங் காணும் இந்தக் காசா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : டேய் ‘எய்ட் நாட்திரீ’ கொண்டு போடா இந்தக் கொட்டாபுளியை [ரூபாயுடன் ஓடி விடுகிறான்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "முத : சரிதான் பெட்டி இருக்குதல்ல"
+      },
+      {
+        "kind": "prose",
+        "text": "[வியாபாரி வந்து பெட்டியைத் தூக்குதல்...முதலாளி தூக்கவிட மறுத்தல். வியாபாரி பெட்டியைத் தூக்கி முதலாளியின் தலையின்மீது வைத்தவுடன் போலீஸ் வந்து பிடித்துக்கொண்டு போதல்]"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s020-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Location: road.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u002",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Vadai! Murukku! Sir! Do you want murukku?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Give me three annas' worth.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u004",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Good God! It's been three days since I've made a first sale. How much vadai and how much murukku?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Give me this for two annas and that for one anna, man! (The vendor gives it.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u006",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Your hand works all right, doesn't it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "A hand doesn't walk—the leg walks. (He shows this with a gesture.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u008",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Ayyo—poor thing, you seem very hungry. Eat, eat!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u009",
+        "kind": "dialogue",
+        "speakerLabel": "அடுத்த",
+        "text": "Hey... murukku.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u010",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Wait, I'll get the money from this gentleman. Take out the money, man—mm—take it out—",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(He laughs.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u012",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Why are you laughing, man?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u013",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(He laughs again.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u014",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Hey! Why are you laughing again? Take out the money; I have four streets to cover.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u015",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Why—to scavenge?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u016",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Who is this insolent fellow? I said take out the money.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u017",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Hey!—Money? For you? What for?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u018",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Why are you fooling around as though we're uncle and brother-in-law? Are you trying to cheat me? Who do you think I am!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u019",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Then give me another two annas' worth.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u020",
+        "kind": "dialogue",
+        "speakerLabel": "வியா",
+        "text": "Now you're talking! Here, take it. (He gives it; Gunasekaran eats.) Take out the money—mm—it's getting late.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u021",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(Like a madman.) Ah, you fellow—",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u022",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(He drives the vendor away, picks up the box himself and sets off.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u023",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Boss, do you want murukku?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u024",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Is it hot?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u025",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Both are.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u026",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Then give me one anna's worth of this and one anna's worth of that.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u027",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Take out the money.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u028",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Hey, give it first.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u029",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Sir, will two annas' worth be enough for you?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u030",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Not enough! One shouldn't spend too much money. Since I'm buying for two annas, give me a little extra for free.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u031",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Ayyo, even here you haven't lost your beggar's mentality! Here, have this free. (He breaks off a little and gives it.) Take out the money.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u032",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Money? Do you have change for a rupee?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u033",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "What?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u034",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Do you have change for one rupee?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u035",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Change? From me? You fool, hand it here. (He takes the rupee and holds it in his hand.) What a chance—would I let this slip? What is this money, sir?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u036",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "What, sir—this money?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u037",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Hey, 'eight nought three'—take this kottapuli away! [He runs off with the rupee.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u038",
+        "kind": "dialogue",
+        "speakerLabel": "முத",
+        "text": "Fine—the box is still here, isn't it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s020-u039",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "[The vendor comes and lifts the box... The proprietor refuses to let him take it. The vendor lifts the box and puts it on the proprietor's head; at once the police arrive, seize him and take him away.]",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

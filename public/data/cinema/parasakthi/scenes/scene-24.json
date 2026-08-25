@@ -1,0 +1,122 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-24",
+  "canonicalScene": 24,
+  "sourceHeading": 24,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—24",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 29,
+      "printedPage": 28
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(இரங்கூனிலிருந்து வெளியேறிய சந்திரசேகர் திருச்சியில் எம். சி. சேகர் என்ற பெயருடன் நீதிபதியாக இருக்கிறார்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : ஏதாவது தகவல் கிடைத்ததா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "ஒரு : ஒரு தகவலும் கிடைக்கல்ல!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "வந் : ஆமாம் நீங்க இந்த ஊருக்கு வந்தது அவர்களுக்குத் தெரியுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : தெரியாது!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "சரஸ் : எதற்கும் நாம் நேரிலேயே பார்த்துவிட்டா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "சந் : ஆம் அதற்காகத்தான் அவர்களை வரச்சொன்னேன் நாளைக்கே புறப்படுவோம்."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s024-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Chandrasekar, having left Rangoon, is now a judge in Tiruchi under the name M. C. Sekar.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s024-u002",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Did you get any information?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s024-u003",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு",
+        "text": "Not a single piece of information!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s024-u004",
+        "kind": "dialogue",
+        "speakerLabel": "வந்",
+        "text": "Yes—do they know you've come to this town?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s024-u005",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "No!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s024-u006",
+        "kind": "dialogue",
+        "speakerLabel": "சரஸ்",
+        "text": "In any case, shall we go and see them in person?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s024-u007",
+        "kind": "dialogue",
+        "speakerLabel": "சந்",
+        "text": "Yes. That's why I asked them to come. We'll leave tomorrow itself.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

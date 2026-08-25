@@ -1,0 +1,81 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-46",
+  "canonicalScene": 46,
+  "sourceHeading": 46,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—46",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 55,
+      "printedPage": 54
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : அய்யா! பிச்சைக்கார மகாநாடு ஒன்று நடத்தப் போகிறோம் அதற்கு ஏதாவது நன்கொடை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "வீட் : ஏம்பா உங்களுக்கு வேலையில்ல."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "ஞான : வேலையில்லாமதான் நடத்துகிறோம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "வீட் : நாங்க ஒங்களுக்கெல்லாம் நன்கொடை கொடுத்தா நாங்களும் ஒங்ககூட வரவேண்டியதுதான் போ போ..."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s046-u001",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "Sir! We are going to hold a beggars' conference. Could you give some donation for it?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s046-u002",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "Why, man, don't you have any work?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s046-u003",
+        "kind": "dialogue",
+        "speakerLabel": "ஞான",
+        "text": "It is because we have no work that we're holding it.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s046-u004",
+        "kind": "dialogue",
+        "speakerLabel": "வீட்",
+        "text": "If we give donations to all of you, we'll have to come along with you too. Go, go...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}

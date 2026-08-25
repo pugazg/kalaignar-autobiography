@@ -1,0 +1,305 @@
+{
+  "workId": "parasakthi",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourcePath": "works/parasakthi",
+  "sourceCommit": "a593db5079e76887abeb41d9c2abfd978a7fe9a5",
+  "sourceCommitNote": "The last commit that changed works/parasakthi. The source repository's main has moved well beyond it for unrelated cinema work; no later commit touches this work.",
+  "source": {
+    "identifier": "TVA_BOK_0062968",
+    "filename": "TVA_BOK_0062968_பராசக்தி.pdf",
+    "scanSha256": "b0024315ca2018a63807b8ff44eb02d132868a7250e6399a2144a10e47c4ad4c",
+    "pdfPages": 58,
+    "canonicalPdfPages": "4-57",
+    "canonicalPrintedPages": "3-56",
+    "rearAdvertisementPdfPage": 58,
+    "scanType": "image_only",
+    "publicationYearAsPrinted": null,
+    "editionAsPrinted": null,
+    "publisherAsPrinted": null,
+    "controllingSourceNote": "The controlling source is the scanned booklet; it is not committed to either repository. Publication year, edition and publisher are not printed and are not inferred."
+  },
+  "creditsAsPrinted": {
+    "titlePageRoleTa": "திரைக்கதை, வசனம்",
+    "titlePageNameTa": "கலைஞர் மு. கருணாநிதி",
+    "creditsPageRoleTa": "கதை-வசனம்",
+    "creditsPageNameTa": "கலைஞர் மு. கருணாநிதி"
+  },
+  "structure": {
+    "sceneHeadingsObserved": 46,
+    "canonicalRange": "1-48",
+    "absentCanonicalScenes": [
+      23,
+      34
+    ],
+    "absenceNote": "Headings 23 and 34 are not printed anywhere in the booklet. The absence is recorded as absence: no scene is fabricated for either number, and neither has a reading page.",
+    "editorialNumberCorrections": [
+      {
+        "canonicalScene": 43,
+        "sourceHeading": 48,
+        "pdfPage": 49,
+        "printedPage": 48
+      },
+      {
+        "canonicalScene": 48,
+        "sourceHeading": 43,
+        "pdfPage": 57,
+        "printedPage": 56
+      }
+    ],
+    "misnumberingNote": "The booklet transposes two late scene numbers: PDF 49 prints heading 48 where the running order requires 43, and PDF 57 prints 43 where it requires 48. The archive reads them canonically for sequencing and preserves both printed readings. Reader order follows the canonical numbers; the printed readings are recorded here and never presented as the canonical ones."
+  },
+  "tamil": {
+    "authority": "works/parasakthi/scenes/scene-NN.md",
+    "sceneDerivatives": 46,
+    "dialogueRecords": 642,
+    "canonicalPages": 54,
+    "verifiedPages": 54,
+    "reviewPages": 0,
+    "verificationNote": "`verified` is the source archive's recorded state for its own fidelity audit of the 54 canonical pages. It is an archive-recorded verification state, not a claim that a person proofread the pages.",
+    "contentNote": "The reading layer is the full scene text, not the dialogue records. Scenes 26, 29 and 48 hold zero dialogue records yet are not empty: they carry stage directions and complete song blocks, which a dialogue-only reader would have lost."
+  },
+  "english": {
+    "authority": "works/parasakthi/translations/records",
+    "kind": "project-created",
+    "kindBasis": "An archive-produced translation derived from the archive's own verified Tamil scene derivatives. It is not a separately published translation, and the source does not describe it as one.",
+    "translationUnits": 769,
+    "unitKindCounts": {
+      "dialogue": 641,
+      "stage-direction": 114,
+      "song": 13,
+      "quoted-verse": 1
+    },
+    "scenesVerified": 46,
+    "absentCanonicalScenes": [
+      23,
+      34
+    ],
+    "readerEditionQa": "PASS",
+    "qaNote": "`complete-verified` and `QA PASS` are the source archive's recorded states from its automated whole-work reader QA. They do not establish that a human editorial review was completed, and no such review is claimed."
+  },
+  "songs": {
+    "bookletCredits": {
+      "pdfPage": 3,
+      "headingTa": "பாடல்கள்",
+      "scope": "booklet-wide",
+      "contributorsAsPrinted": [
+        "பாரதியார்",
+        "பாரதிதாசன்",
+        "உடுமலை நாராயணகவி",
+        "மு. கருணாநிதி",
+        "கே. பி. காமாட்சி சுந்தரம்",
+        "கு. ம. அண்ணல்தங்கோ"
+      ],
+      "itemLevelAssignmentPresent": false,
+      "note": "The booklet's song-credits page lists six contributors for the songs as a whole and pairs no name with any individual song. Item-level authorship therefore does not come from the booklet."
+    },
+    "itemLevelAuthority": {
+      "occurrenceRecords": 14,
+      "soundtrackTracks": 11,
+      "soundtrackOccurrences": 13,
+      "quotedVerseRecords": 1,
+      "evidenceTiers": {
+        "external-source": "A secondary tracklist: a user-supplied screenshot matched against the Tamil Wikipedia soundtrack table for the 1952 film. This is weaker evidence than the printed booklet and is labelled as such on every item that rests on it.",
+        "canonical-context-explicit": "The booklet's own text names the poet immediately before the verse."
+      },
+      "externalEvidence": {
+        "evidenceId": "parasakthi-tracklist-2026-08-13",
+        "evidenceType": "user-supplied-screenshot-corroborated-public-tracklist",
+        "publicSource": {
+          "title": "பராசக்தி (1952 திரைப்படம்)",
+          "section": "இசைத்தட்டு",
+          "publisher": "தமிழ் விக்கிப்பீடியா",
+          "url": "https://ta.wikipedia.org/wiki/பராசக்தி_(1952_திரைப்படம்)",
+          "matched_table_total_length": "35:46",
+          "match_note": "The user-supplied screenshot matches the public table exactly in row order, song titles, singers, lyricists, durations and total length."
+        },
+        "qualityNote": "This is item-level secondary tracklist evidence supplied by the user and independently matched to the public Tamil Wikipedia soundtrack table. The Wikipedia article cites a 1952 National Pictures song booklet among its music references, but that archived PDF could not be directly retrieved in this session. Canonical Tamil text remains controlled only by the verified dialogue/song booklet scan."
+      },
+      "attributionNote": "Exactly one of the fourteen song/verse occurrences is attributed to மு. கருணாநிதி. The other thirteen are attributed to பாரதிதாசன், கே. பி. காமாட்சிசுந்தரம், உடுமலை நாராயண கவி, சுப்பிரமணிய பாரதி and அண்ணல் தங்கோ. The booklet credits Kalaignar with the screenplay and dialogue; it does not make him the lyricist of these songs."
+    },
+    "items": [
+      {
+        "id": "parasakthi-song-001",
+        "canonicalScene": 1,
+        "kind": "unlabelled-song",
+        "openingLineTa": "வாழ்க வாழ்கவே வாழ்க வாழ்கவே",
+        "lyricistTa": "பாரதிதாசன்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 11 (`வாழ்க வாழ்கவே`)",
+        "performanceContext": "Opening dance/song at the gathering before Thangappan speaks.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-002",
+        "canonicalScene": 4,
+        "kind": "speaker-labelled-verse",
+        "openingLineTa": "இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
+        "lyricistTa": "பாரதிதாசன்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+        "performanceContext": "Thangappan and Kalyani alternate labelled sung/verse lines; `இரு` marks their joint closing line.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-003",
+        "canonicalScene": 8,
+        "kind": "unlabelled-song",
+        "openingLineTa": "ஓ ரசிகரும் சீமானே வா",
+        "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 6 (`ஓ ரசிக்கும் சீமானே`)",
+        "performanceContext": "Dance-house performance observed by Gunasekaran and Jolly.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-004",
+        "canonicalScene": 12,
+        "kind": "unlabelled-song",
+        "openingLineTa": "பூமாலே நீயே புழுதி மண்மேலே வீணே",
+        "lyricistTa": "மு. கருணாநிதி",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 9 (`பூமாலை`)",
+        "performanceContext": "Kalyani sings while holding her child.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-005",
+        "canonicalScene": 15,
+        "kind": "unlabelled-song",
+        "openingLineTa": "தேசம், ஞானம், கல்வி, ஈசன் பூசையெல்லாம்",
+        "lyricistTa": "உடுமலை நாராயண கவி",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 1 (`தேசம் ஞானம் கல்வி`)",
+        "performanceContext": "Gunasekaran, acting like a madman, sings while collecting money.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-006",
+        "canonicalScene": 15,
+        "kind": "unlabelled-song",
+        "openingLineTa": "ஆரியக் கூத்தாடினாலும்",
+        "lyricistTa": "உடுமலை நாராயண கவி",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 1 maps both parasakthi-song-005 and parasakthi-song-006",
+        "performanceContext": "Second structurally distinct verse section within Gunasekaran's street performance, using the `தாண்டவக்கோனே` refrain.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-007",
+        "canonicalScene": 17,
+        "kind": "unlabelled-song",
+        "openingLineTa": "கொஞ்சும் மொழி சொல்லும் கிளியே",
+        "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 8 (`கொஞ்சு மொழி சொல்லும்`)",
+        "performanceContext": "Kalyani sings a lullaby to her child while Gunasekaran watches unseen.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-008",
+        "canonicalScene": 26,
+        "kind": "unlabelled-song",
+        "openingLineTa": "கா—கா—கா—கா—",
+        "lyricistTa": "உடுமலை நாராயண கவி",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 2 (`கா கா கா`)",
+        "performanceContext": "Gunasekaran sings beside the well while eating stolen food; the scene explicitly describes him as singing.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-009",
+        "canonicalScene": 28,
+        "kind": "quoted-verse",
+        "openingLineTa": "கோரிக்கையற்று கிடக்குதண்ணே—இங்கு",
+        "lyricistTa": "பாரதிதாசன்",
+        "evidenceBasis": "canonical-context-explicit",
+        "evidenceReference": "scene-28.md: Narayana Pillai says `யாரோ பாரதிதாசனும் விதவையைப் பற்றி சொல்லியிருக்கான் பாரு` immediately before the verse.",
+        "performanceContext": "Narayana Pillai introduces a printed/literary quotation while discussing widowhood; this is verse quotation, not staged singing.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-010",
+        "canonicalScene": 29,
+        "kind": "unlabelled-song",
+        "openingLineTa": "பொருளே இல்லார்க்கு தொல்லையா",
+        "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 10 (`பொருளே இல்லார்க்கு`)",
+        "performanceContext": "Kalyani walks the street suffering from hunger; the scene consists of the verse/song block.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-011",
+        "canonicalScene": 33,
+        "kind": "unlabelled-song",
+        "openingLineTa": "புதுப்பெண்ணின் மனதைத் தொட்டுப் போறவரே",
+        "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 5 (`புது பெண்ணின் மனதை`)",
+        "performanceContext": "Verse/song occurs inside Vimala's dream sequence.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-012",
+        "canonicalScene": 39,
+        "kind": "unlabelled-song",
+        "openingLineTa": "நெஞ்சு பொறுக்குதில்லையே—இந்த",
+        "lyricistTa": "சுப்பிரமணிய பாரதி",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 3 (`நெஞ்சு பொறுக்கு தில்லையே`)",
+        "performanceContext": "Gunasekaran expresses his anguish through song; afterward he explicitly says he did not compose/sing it originally and that it is another person's song.",
+        "reprisesId": null
+      },
+      {
+        "id": "parasakthi-song-013",
+        "canonicalScene": 47,
+        "kind": "unlabelled-reprise",
+        "openingLineTa": "புதுப் பெண்ணின் மனதைத் தொட்டுப் போறவரே",
+        "lyricistTa": "கே. பி. காமாட்சிசுந்தரம்",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 5 (`புது பெண்ணின் மனதை`), inherited through reprise-of parasakthi-song-011",
+        "performanceContext": "Short reprise after Gunasekaran stops Vimala from leaving.",
+        "reprisesId": "parasakthi-song-011"
+      },
+      {
+        "id": "parasakthi-song-014",
+        "canonicalScene": 48,
+        "kind": "unlabelled-song",
+        "openingLineTa": "எல்லோரும் வாழ வேண்டும்—உயிர்கள்",
+        "lyricistTa": "அண்ணல் தங்கோ",
+        "evidenceBasis": "external-source",
+        "evidenceReference": "tracklist-evidence.json: track 7 (`எல்லோரும் வாழ வேண்டும்`)",
+        "performanceContext": "Closing collective song at the opening of the orphanage; scene 47 immediately precedes it with `(பேதமின்றி பாடுகின்றனர்)`.",
+        "reprisesId": null
+      }
+    ]
+  },
+  "integrity": {
+    "sourceScanSha256": "b0024315ca2018a63807b8ff44eb02d132868a7250e6399a2144a10e47c4ad4c",
+    "translationInputAggregateSha256": "a409ce63863c357ff729594147234b8e38406ac2d67fdd388c68d19f47760608",
+    "translationInputFiles": 47,
+    "readerEditionOutputs": {
+      "reader-edition.md": {
+        "sha256": "bd3ee6327632140c47c9a96ee141720a6d41c542bbed7f7efc39c1b21c819742",
+        "bytes": 148241
+      },
+      "reader-edition.html": {
+        "sha256": "4230807b70f9abb3553e2c84f8a31e6a6dda344af0e1fda0f39fa2d2b8dca996",
+        "bytes": 218526
+      },
+      "reader-edition.json": {
+        "sha256": "cd924960202193c222b24bdc7d1d1432415a4c52fb58932eefb59c0ef679c27e",
+        "bytes": 720633
+      },
+      "QA_REPORT.md": {
+        "sha256": "d7d6534d87c179ae1e3dff0c4c9d04ca14a97b7726dec784eb99531151899c33",
+        "bytes": 2927
+      }
+    }
+  },
+  "notes": [
+    "Runtime never calls GitHub. This data is generated at import time from a pinned source clone.",
+    "The source PDF is not vendored.",
+    "Page and PDF numbers are carried for the source/provenance interface and must not appear in the reading interface."
+  ]
+}

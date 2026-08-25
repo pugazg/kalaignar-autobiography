@@ -1,0 +1,364 @@
+{
+  "workId": "parasakthi",
+  "slug": "scene-07",
+  "canonicalScene": 7,
+  "sourceHeading": 7,
+  "editorialNumberCorrection": false,
+  "headingTa": "காட்சி—7",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 10,
+      "printedPage": 9
+    },
+    {
+      "pdfPage": 11,
+      "printedPage": 10,
+      "status": "verified"
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(குணசேகரன் சென்னை வந்து கப்பலிலிருந்து இறங்கி காரில் ஏறி அமர்ந்திருக்கிறான்.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பிச்சை",
+        "text": "பிச்சை : சாமி..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : சரிதாம்போ! தமிழ்நாட்டின் முதல் குரலே ரொம்ப நல்லா இருக்கே!...(பிச்சை கொடுக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மற்ற",
+        "text": "மற்ற : அய்யா...பிள்ளைக் குட்டிக்காரன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (கொடுத்து முடிந்தவுடன்) டிரைவர் போப்பா?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(காரில் புறப்பட்ட குணசேகரன் பேங் வந்து சேருகிறான் பணத்தைப் பெறும்போது அதனைக் கண்ட வீதியிலே நடமாடும் விபச்சாரி அவனைப் பின் தொடருகிறாள் நெஞ்சிலே நஞ்சுகொண்டு. பணங்களைப் பெற்றுக்கொண்டு ஒரு ஹோட்டலில் தங்குகிறான். ஹோட்டல் மேனேஜரிடம் டிக்கெட் புக் பண்ணிவிட்டு மீண்டும் தன் அறைக்கே திரும்பி உள்ளே நுழைகிறான். அங்கே—அவனைப் பின்தொடர்ந்த ஜாலி என்ற யுவதி படுத்திருக்கிறாள். அவளைக் கண்ட அவன்...)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : மன்னிக்கணும்! தவறி ஒங்க ரூமுக்கு வந்து விட்டேன், எல்லா ரூமும் ஒரே மாதிரியா இருக்கிறதால் வித்தியாசம் தெரியலே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : பரவாயில்ல! பரவாயில்ல ஒங்க ரூம் நெம்பர்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : செவன்! -"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : செவன்...என் நெம்பர் எய்ட் பக்கத்து ரூம் தவறியவள் நான் தான் (உடனே வெளியேறுபவள் போல் பாவனை செய்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : பரவாயில்லை! பரவாயில்லை (பையன் காப்பி கொண்டு வந்து கொடுக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : காப்பி சாப்பிடுங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : உம்...வேண்டாம்...தேங்க்ஸ்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : சும்மா சாப்பிடுங்க (கொடுக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : ம்...உங்க...ஊரு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : மதுரைக்குப் போகணும்!—டிரெயின மிஸ் பண்ணிட்டேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : நானும் அப்படித்தான்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : நான் சினிமாவுக்குப் போகணும்!...டைம் ஆகுது"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : (வெறுப்புடன்) சினிமாவுக்கா சீ! அது எனக்கு கொஞ்சம் கூட பிடிக்காது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : ஏன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : அதைக் குளோஸ் பண்ணுவதற்கு ஒரு சங்கம் ஏற்பட்டால் அதற்கு நான்தான் தலைவியாக இருப்பேன். நம்ம நாட்டுக்கு ஏற்றது பரதநாட்டியம் டான்ஸ் இதுக்குப் போனால் எவ்வளவோ நல்லா இருக்கும் எனக்குத் தெரிஞ்ச இடத்திலே நல்ல டான்ஸ் இருக்கு வாங்க அங்கே போவோம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : (வியப்புடன்) நீங்களுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "ஜாலி : ஏன் இப்படி வித்தியாசமா நினைக்கிறீங்க? உங்க தங்கையாக இருந்தால் அழைச்சிட்டு போகமாட்டீங்களா? இப்படி தப்பாக நினைக்காதீங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "குண : சரி போவோம்."
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "parasakthi-en-s007-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran arrives in Madras, gets off the ship, and sits in a car.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பிச்சை",
+        "text": "Sir...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "All right, go on! What a fine first voice to hear in Tamil Nadu!... (He gives alms.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u004",
+        "kind": "dialogue",
+        "speakerLabel": "மற்ற",
+        "text": "Sir... I have children.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(When he has finished giving.) Driver, drive on.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "text": "(Gunasekaran drives to a bank. As he receives the money, a prostitute roaming the street sees it and follows him, poison in her heart. After collecting the money, he stays at a hotel. He asks the hotel manager to book a ticket, then returns to his room and enters. There—the young woman named Jolly, who followed him, is lying down. Seeing her, he...)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Forgive me! I came into your room by mistake. All the rooms look alike, so I couldn't tell the difference!",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u008",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "No problem! No problem. What's your room number?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u009",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Seven!—",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u010",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "Seven... mine is number eight. I'm the one who mistook the next room. (She pretends she is about to leave immediately.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "No problem! No problem. (A boy brings coffee.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u012",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Have some coffee...",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u013",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "Mm... no... thanks.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u014",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Come on, have some. (He offers it.)",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u015",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "Mm... your... hometown?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u016",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I have to go to Madurai!—I missed the train.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u017",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "Same with me.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u018",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "I have to go to the cinema!... It's getting late.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u019",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "(With distaste.) Cinema? Ugh! I don't like it one bit.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u020",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "Why?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u021",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "If an association were formed to shut it down, I'd be its president. Bharatanatyam dance is what suits our country. It would be so much better to go to that. I know a place with a good dance performance—come, let's go there.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u022",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "(Surprised.) You too?",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u023",
+        "kind": "dialogue",
+        "speakerLabel": "ஜாலி",
+        "text": "Why think of me differently like that? If I were your younger sister, wouldn't you take me along? Don't think wrongly of me like this.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      },
+      {
+        "id": "parasakthi-en-s007-u024",
+        "kind": "dialogue",
+        "speakerLabel": "குண",
+        "text": "All right, let's go.",
+        "lines": null,
+        "mode": "prose-faithful",
+        "sourceOccurrenceId": null
+      }
+    ]
+  },
+  "songItems": []
+}
