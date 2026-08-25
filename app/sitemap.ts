@@ -43,6 +43,25 @@ function loadManoharaSegmentSlugs(): string[] {
   }
 }
 
+/**
+ * Parasakthi's scene slugs, from the generated index.
+ *
+ * Like Manohara — and unlike speeches, poems, essays, novels and plays — this work has no exported
+ * slug registry in `data/`; its units come from the archive and live in the generated data, so the
+ * sitemap reads them there. That is also what makes this safe: the booklet never prints headings 23
+ * or 34, so those slugs are not in the registry, no route exists for them, and no sitemap URL can be
+ * emitted for them. The list cannot drift from the routes because both read the same file.
+ */
+function loadParasakthiSceneSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/parasakthi/index.json");
+    const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { scenes: { slug: string }[] };
+    return idx.scenes.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
 function loadNovelSectionSlugs(slug: string): string[] {
   try {
     const p = path.join(process.cwd(), "public/data/novels", slug, "novel.json");
@@ -125,6 +144,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/cinema/manohara/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
     ...loadManoharaSegmentSlugs().map((slug) => ({
       url: `${BASE}/cinema/manohara/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    // Cinema Writing — பராசக்தி (Phase C). Landing, provenance, and one route per SOURCE-PRINTED
+    // scene. Same shape as Manohara above and the same priorities, but the units are not the same
+    // kind of thing: Manohara's are archive-created navigation segments, these are the booklet's own
+    // 46 printed scenes. Nothing here enumerates 1–48 and filters — the two headings the booklet
+    // never prints are simply absent from the generated registry, so they cannot be emitted.
+    { url: `${BASE}/cinema/parasakthi`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/cinema/parasakthi/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    ...loadParasakthiSceneSlugs().map((slug) => ({
+      url: `${BASE}/cinema/parasakthi/${slug}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,
