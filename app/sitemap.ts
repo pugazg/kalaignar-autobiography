@@ -9,6 +9,7 @@ import { POEM_SLUGS } from "@/data/poems";
 import { ESSAY_SLUGS } from "@/data/essays";
 import { NOVEL_SLUGS } from "@/data/novels";
 import { PLAY_SLUGS } from "@/data/plays";
+import { STORY_SLUGS } from "@/data/stories";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -161,6 +162,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "yearly" as const,
         priority: 0.5,
       })),
+    ]),
+    // Fiction — short stories (Phase 8, benchmark B). Reader + provenance per story, and nothing
+    // else: a short story is read on ONE page, so unlike the novel, the play and the essay
+    // publication it has no sub-unit routes to list. That makes its shape the poem's, not the
+    // novel's — hence the same 0.6/0.4 priorities as poems and speeches rather than the 0.7 those
+    // three carry as landings for multi-unit works.
+    //
+    // Driven by STORY_SLUGS, so onboarding a second short story needs no edit here. Note that this
+    // block had to be written: importing a registry does not wire it in, and every family above has
+    // its own explicit entry for the same reason.
+    ...STORY_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/stories/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
+      { url: `${BASE}/stories/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
     ]),
     // Drama. The play landing, its provenance page and one stable route per printed scene, plus the
     // separate unnumbered closing tableau. No /plays or /drama collection landing is added.
