@@ -105,9 +105,9 @@
       "canonicalScene": 4,
       "kind": "speaker-labelled-verse",
       "openingLineTa": "இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
-      "lyricistTa": "பாரதிதாசன்",
-      "evidenceBasis": "external-source",
-      "evidenceReference": "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+      "lyricistTa": "மு. கருணாநிதி",
+      "evidenceBasis": "anthology-attributed",
+      "evidenceReference": "works/kalaignar-thirai-isai-paadalgal/songs/song-002.md (kalaignar-song-002, anthology song 2, lyric PDF 29); anthology contents PDF 28 lists `இல் வாழ்வினிலே ஒளி ஏற்றும் தீபம்` beside `கலைஞர்`. Cross-witness comparison: songs/match-report-002-il-vaazhvinile.md",
       "performanceContext": "Thangappan and Kalyani alternate labelled sung/verse lines; `இரு` marks their joint closing line.",
       "reprisesId": null
     }

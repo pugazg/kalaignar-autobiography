@@ -183,8 +183,8 @@
       "kind": "unlabelled-song",
       "openingLineTa": "பூமாலே நீயே புழுதி மண்மேலே வீணே",
       "lyricistTa": "மு. கருணாநிதி",
-      "evidenceBasis": "external-source",
-      "evidenceReference": "tracklist-evidence.json: track 9 (`பூமாலை`)",
+      "evidenceBasis": "anthology-attributed",
+      "evidenceReference": "works/kalaignar-thirai-isai-paadalgal/songs/song-003.md (kalaignar-song-003, anthology song 3, lyric PDF 30); anthology contents PDF 28 lists `பூமாலை நீயே` beside `கலைஞர்`. Cross-witness comparison: songs/match-report-004-poomaalai-neeye.md",
       "performanceContext": "Kalyani sings while holding her child.",
       "reprisesId": null
     }

@@ -2,7 +2,7 @@
   "workId": "parasakthi",
   "sourceRepo": "pugazg/kalaignar-cinema-works",
   "sourcePath": "works/parasakthi",
-  "sourceCommit": "a593db5079e76887abeb41d9c2abfd978a7fe9a5",
+  "sourceCommit": "789b003b6c0dfcf0bc38b906037f92953fd8146f",
   "sourceCommitNote": "The last commit that changed works/parasakthi. The source repository's main has moved well beyond it for unrelated cinema work; no later commit touches this work.",
   "source": {
     "identifier": "TVA_BOK_0062968",
@@ -100,8 +100,31 @@
       "quotedVerseRecords": 1,
       "evidenceTiers": {
         "external-source": "A secondary tracklist: a user-supplied screenshot matched against the Tamil Wikipedia soundtrack table for the 1952 film. This is weaker evidence than the printed booklet and is labelled as such on every item that rests on it.",
+        "anthology-attributed": "The verified Kalaignar film-song anthology (கலைஞர் திரை இசைப் பாடல்கள்) names the song at item level: its contents page lists the title beside `கலைஞர்`. This is stronger than the secondary tracklist for archive attribution, but it remains anthology-level evidence and is NOT original-film primary-source-verified authorship — the 2024 anthology is authoritative for what that edition prints and attributes.",
         "canonical-context-explicit": "The booklet's own text names the poet immediately before the verse."
       },
+      "evidenceTierCounts": {
+        "external-source": 11,
+        "anthology-attributed": 2,
+        "canonical-context-explicit": 1
+      },
+      "crossWitnessSource": "works/kalaignar-thirai-isai-paadalgal",
+      "crossWitnessReports": [
+        "match-report-002-il-vaazhvinile.md",
+        "match-report-004-poomaalai-neeye.md"
+      ],
+      "supersededWitnesses": [
+        {
+          "occurrenceId": "parasakthi-song-002",
+          "canonicalScene": 4,
+          "nowAttributedTo": "மு. கருணாநிதி",
+          "nowOn": "anthology-attributed",
+          "previouslyAttributedTo": "பாரதிதாசன்",
+          "previouslyOn": "external-source",
+          "previousReference": "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+          "note": "The verified Kalaignar film-song anthology names this song at item level, which supersedes the secondary soundtrack table for this record. The earlier witness is NOT deleted or called wrong: tracklist-evidence.json is unchanged and still attributes track 4 to பாரதிதாசன். It remains a conflicting secondary witness that no longer controls the attribution."
+        }
+      ],
       "externalEvidence": {
         "evidenceId": "parasakthi-tracklist-2026-08-13",
         "evidenceType": "user-supplied-screenshot-corroborated-public-tracklist",
@@ -115,7 +138,13 @@
         },
         "qualityNote": "This is item-level secondary tracklist evidence supplied by the user and independently matched to the public Tamil Wikipedia soundtrack table. The Wikipedia article cites a 1952 National Pictures song booklet among its music references, but that archived PDF could not be directly retrieved in this session. Canonical Tamil text remains controlled only by the verified dialogue/song booklet scan."
       },
-      "attributionNote": "Exactly one of the fourteen song/verse occurrences is attributed to மு. கருணாநிதி. The other thirteen are attributed to பாரதிதாசன், கே. பி. காமாட்சிசுந்தரம், உடுமலை நாராயண கவி, சுப்பிரமணிய பாரதி and அண்ணல் தங்கோ. The booklet credits Kalaignar with the screenplay and dialogue; it does not make him the lyricist of these songs."
+      "attributionNote": "Two of the fourteen song/verse occurrences are attributed to மு. கருணாநிதி — parasakthi-song-002 (scene 4) and parasakthi-song-004 (scene 12) — both on the verified Kalaignar film-song anthology's item-level naming. The other twelve are attributed to பாரதிதாசன், கே. பி. காமாட்சிசுந்தரம், உடுமலை நாராயண கவி, சுப்பிரமணிய பாரதி and அண்ணல் தங்கோ. The booklet credits Kalaignar with the screenplay and dialogue; that credit does not make him the lyricist of these songs, and anthology attribution is not an original-film item-level credit.",
+      "authorityOrder": [
+        "The scanned Parasakthi booklet (TVA_BOK_0062968) controls the canonical Tamil text.",
+        "The booklet's song-credits page establishes six contributors booklet-wide, pairing none with a song.",
+        "The verified Kalaignar film-song anthology establishes anthology-level item attribution for the two songs it names.",
+        "The external soundtrack table is weaker secondary evidence."
+      ]
     },
     "items": [
       {
@@ -134,9 +163,9 @@
         "canonicalScene": 4,
         "kind": "speaker-labelled-verse",
         "openingLineTa": "இவ்வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
-        "lyricistTa": "பாரதிதாசன்",
-        "evidenceBasis": "external-source",
-        "evidenceReference": "tracklist-evidence.json: track 4 (`இல் வாழ்வினிலே`)",
+        "lyricistTa": "மு. கருணாநிதி",
+        "evidenceBasis": "anthology-attributed",
+        "evidenceReference": "works/kalaignar-thirai-isai-paadalgal/songs/song-002.md (kalaignar-song-002, anthology song 2, lyric PDF 29); anthology contents PDF 28 lists `இல் வாழ்வினிலே ஒளி ஏற்றும் தீபம்` beside `கலைஞர்`. Cross-witness comparison: songs/match-report-002-il-vaazhvinile.md",
         "performanceContext": "Thangappan and Kalyani alternate labelled sung/verse lines; `இரு` marks their joint closing line.",
         "reprisesId": null
       },
@@ -157,8 +186,8 @@
         "kind": "unlabelled-song",
         "openingLineTa": "பூமாலே நீயே புழுதி மண்மேலே வீணே",
         "lyricistTa": "மு. கருணாநிதி",
-        "evidenceBasis": "external-source",
-        "evidenceReference": "tracklist-evidence.json: track 9 (`பூமாலை`)",
+        "evidenceBasis": "anthology-attributed",
+        "evidenceReference": "works/kalaignar-thirai-isai-paadalgal/songs/song-003.md (kalaignar-song-003, anthology song 3, lyric PDF 30); anthology contents PDF 28 lists `பூமாலை நீயே` beside `கலைஞர்`. Cross-witness comparison: songs/match-report-004-poomaalai-neeye.md",
         "performanceContext": "Kalyani sings while holding her child.",
         "reprisesId": null
       },
@@ -276,7 +305,7 @@
   },
   "integrity": {
     "sourceScanSha256": "b0024315ca2018a63807b8ff44eb02d132868a7250e6399a2144a10e47c4ad4c",
-    "sourceInputAggregateSha256": "38a0257bdf958481f7da560e4e8b4048b78bb329e8ccf6955095da479670a6c6",
+    "sourceInputAggregateSha256": "65d5fdcb2b9a01cb7b8eb1d8b82d4383bdc0c3d5a85dbfe237d96288af49f464",
     "sourceInputFiles": 55,
     "translationInputAggregateSha256": "a409ce63863c357ff729594147234b8e38406ac2d67fdd388c68d19f47760608",
     "translationInputFiles": 47,
