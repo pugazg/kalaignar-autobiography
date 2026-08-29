@@ -113,37 +113,49 @@ jobs:
           mkdir -p "$KDL_SOURCES_DIR"
           pins=$(node -e '
             const fs = require("fs");
+            // Each work names the repository it comes from AND the directory it is
+            // checked out into. They are usually the same, but two cinema works pin
+            // the SAME archive at DIFFERENT commits — Manohara at a historical pin
+            // and Tirumbippaar at its publication pin — and one checkout cannot be
+            // at both. Those two therefore get their own directories, so each
+            // validator still sees a tree whose HEAD is exactly its own pin.
             const works = {
-              "cinema/manohara": "kalaignar-cinema-works",
-              "speeches/udhaya-kathir": "kalaignar-assembly-speeches",
-              "speeches/poonthottam": "kalaignar-public-speeches",
-              "speeches/arappor": "kalaignar-public-speeches",
-              "poems/idhayathai-thanthidu-anna": "kalaignar-poems",
-              "essays/sakkaravarththiyin-thirumagan": "kalaignar-essays",
-              "novels/balipeedam-nokki": "kalaignar-novels",
-              "plays/silappathikaram-nataka-kappiyam": "kalaignar-stage-plays",
-              "thirukkural": "kalaignar-literary-commentary",
+              "cinema/manohara": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-manohara" },
+              "cinema/tirumbippaar": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-tirumbippaar" },
+              "speeches/udhaya-kathir": { repo: "kalaignar-assembly-speeches" },
+              "speeches/poonthottam": { repo: "kalaignar-public-speeches" },
+              "speeches/arappor": { repo: "kalaignar-public-speeches" },
+              "poems/idhayathai-thanthidu-anna": { repo: "kalaignar-poems" },
+              "essays/sakkaravarththiyin-thirumagan": { repo: "kalaignar-essays" },
+              "novels/balipeedam-nokki": { repo: "kalaignar-novels" },
+              "plays/silappathikaram-nataka-kappiyam": { repo: "kalaignar-stage-plays" },
+              "thirukkural": { repo: "kalaignar-literary-commentary" },
             };
             const seen = new Map();
-            for (const [p, repo] of Object.entries(works)) {
+            for (const [p, spec] of Object.entries(works)) {
+              const repo = spec.repo;
+              const dir = spec.dir ?? spec.repo;
               const f = `public/data/${p}/provenance.json`;
               const pin = JSON.parse(fs.readFileSync(f, "utf8")).sourceCommit;
               if (!/^[0-9a-f]{40}$/.test(pin ?? "")) {
                 console.error(`::error::${f} does not record a valid sourceCommit`);
                 process.exit(1);
               }
-              const prev = seen.get(repo);
-              if (prev && prev !== pin) {
-                console.error(`::error::${repo} is pinned to two different commits (${prev} and ${pin})`);
+              // Still fail closed: two works sharing ONE directory must agree on the
+              // pin. Works that legitimately differ are separated by directory above,
+              // so this guard keeps its meaning instead of being loosened away.
+              const prev = seen.get(dir);
+              if (prev && prev.pin !== pin) {
+                console.error(`::error::${dir} is pinned to two different commits (${prev.pin} and ${pin})`);
                 process.exit(1);
               }
-              seen.set(repo, pin);
+              seen.set(dir, { repo, pin });
             }
-            for (const [repo, pin] of seen) console.log(`${repo} ${pin}`);
+            for (const [dir, { repo, pin }] of seen) console.log(`${dir} ${repo} ${pin}`);
           ')
-          echo "$pins" | while read -r repo pin; do
-            echo "::group::$repo @ $pin"
-            dest="$KDL_SOURCES_DIR/$repo"
+          echo "$pins" | while read -r dir repo pin; do
+            echo "::group::$dir <- $repo @ $pin"
+            dest="$KDL_SOURCES_DIR/$dir"
             git init -q "$dest"
             # Public repositories: anonymous clone, no credential needed.
             git -C "$dest" remote add origin "https://github.com/pugazg/$repo.git"
@@ -162,7 +174,11 @@ jobs:
       - name: Manohara
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
-        run: node scripts/validate-manohara.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works"
+        run: node scripts/validate-manohara.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-manohara"
+      - name: Tirumbippaar
+        if: always()
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-tirumbippaar.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-tirumbippaar"
       - name: Udhaya Kathir
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

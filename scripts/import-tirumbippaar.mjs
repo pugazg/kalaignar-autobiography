@@ -20,6 +20,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { execFileSync } from "node:child_process";
 
 const SRC_REPO = process.argv[2];
 const SRC_COMMIT = process.argv[3];
@@ -38,8 +39,8 @@ const die = (m) => {
 // fail loudly rather than quietly emit data that claims a pin it did not match.
 const APPROVED_SOURCE_COMMIT = "6a8c59c445890e568dfe65cc36c2900dd2a8a0b3";
 const EXPECT_SCAN_SHA256 = "973b9c3f7b84d6a1902a4a472af8799c783bf1ec2d6cd015796fc1df1ce59682";
-const EXPECT_SOURCE_INPUT_AGGREGATE = "db3c6361e7e9d508fdf4d128fc7e4e7389b81d9312953ee13cd6fa007b1822c1";
-const EXPECT_SOURCE_INPUT_FILES = 198;
+const EXPECT_SOURCE_INPUT_AGGREGATE = "486fe1ebc9c9f913882f23c27a2a998bc09d43c8f0b9b4aced06fea4a7a7671e";
+const EXPECT_SOURCE_INPUT_FILES = 199;
 const EXPECT_TRANSLATION_AGGREGATE = "b4064013fdfb70dca8d7b1375abfa2fe17dfc2787ac6d650bb056fe6896be786";
 const EXPECT_TRANSLATION_INPUT_FILES = 94;
 
@@ -111,6 +112,21 @@ if (head.startsWith("ref:")) {
     : (readText(path.join(SRC_REPO, ".git/packed-refs")).split("\n").find((l) => l.endsWith(` ${ref}`)) || "").split(" ")[0];
 }
 if (head !== APPROVED_SOURCE_COMMIT) die(`clone HEAD is ${head}, expected ${APPROVED_SOURCE_COMMIT}.`);
+// The aggregates below prove the bytes behind this output. That proof is only
+// meaningful if the working tree is exactly the pinned commit, so a dirty clone
+// is refused rather than silently hashed. The source is never mutated here.
+try {
+  const status = execFileSync("git", ["-C", SRC_REPO, "status", "--porcelain"], { encoding: "utf8" }).trim();
+  if (status) {
+    die(
+      `the source clone has uncommitted changes at ${APPROVED_SOURCE_COMMIT}:\n${status}\n` +
+        `Refusing to import: the byte aggregate would describe a tree that is not the pinned commit.`,
+    );
+  }
+} catch (e) {
+  if (e?.status === 1 || e?.stdout !== undefined) throw e;
+  die(`could not check whether the source clone is clean: ${e.message}`);
+}
 
 // ── 2. SOURCE SURFACES ────────────────────────────────────────────────────────
 const worksJson = readJSON(path.join(SRC_REPO, "data/works.json"));
@@ -450,6 +466,11 @@ const sourceInputRel = [
   "works/tirumbippaar/characters/entities.json",
   "works/tirumbippaar/characters/labels-inventory.json",
   "works/tirumbippaar/editions/en/manifest.json",
+  // The package manifest is read above for the EPUB and reader hashes that reach
+  // generated provenance, so it belongs in the byte set. Omitting a file the
+  // importer actually relies on would leave the aggregate claiming more coverage
+  // than it has.
+  "works/tirumbippaar/editions/en/package-manifest.json",
   ...sceneIndex.scenes.map((s) => `works/tirumbippaar/scenes/${s.file}`),
   ...fs.readdirSync(path.join(W, "dialogues/records")).sort().map((f) => `works/tirumbippaar/dialogues/records/${f}`),
 ].sort();
