@@ -62,6 +62,26 @@ function loadParasakthiSceneSlugs(): string[] {
   }
 }
 
+/**
+ * Tirumbippaar's scene slugs, from the generated index — the same registry the routes are built
+ * from, so the two cannot drift.
+ *
+ * This booklet numbers its 93 headings consecutively, so `scene-01`…`scene-93` would happen to
+ * produce the same list today. It is still read from the registry rather than generated, for the
+ * same reason Parasakthi's is: the sitemap must describe the routes that exist, not the routes a
+ * numbering convention predicts. Parasakthi is the proof — enumerating 1–48 there would emit two
+ * URLs for headings the booklet never prints.
+ */
+function loadTirumbippaarSceneSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/tirumbippaar/index.json");
+    const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { scenes: { slug: string }[] };
+    return idx.scenes.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
 function loadNovelSectionSlugs(slug: string): string[] {
   try {
     const p = path.join(process.cwd(), "public/data/novels", slug, "novel.json");
@@ -157,6 +177,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/cinema/parasakthi/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
     ...loadParasakthiSceneSlugs().map((slug) => ({
       url: `${BASE}/cinema/parasakthi/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    // Cinema Writing — திரும்பிப்பார் (Phase D2.4). The third cinema work, and the same shape and
+    // priorities as the two above: landing, provenance, one route per source-printed scene. Its 93
+    // headings are the booklet's own, like Parasakthi's and unlike Manohara's archive-created
+    // segments. Ordered after Parasakthi to match the catalogue shelf, which lists cinema works in
+    // onboarding order. The reader, scene and source routes were published in D2.2 and catalogued in
+    // D2.3; this block is only what makes them crawlable.
+    { url: `${BASE}/cinema/tirumbippaar`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/cinema/tirumbippaar/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    ...loadTirumbippaarSceneSlugs().map((slug) => ({
+      url: `${BASE}/cinema/tirumbippaar/${slug}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,
