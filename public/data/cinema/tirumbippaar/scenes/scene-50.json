@@ -1,0 +1,170 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-50",
+  "canonicalScene": 50,
+  "sourceHeading": 50,
+  "headingTa": "காட்சி 50] [குமுதா மதறாஸ் வீடு : ஹால்",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 65,
+      "printedPage": 57
+    },
+    {
+      "pdfPage": 66,
+      "printedPage": 58
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[குமுதா பாண்டியன் இருக்க குண்டுமணி வருதல் ]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : குண்டுமணி எல்லாம் பிரின்ட் ஆயிட்டுதா..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: ஆயிட்டுதுங்க. இதோ மூணு காப்பி எடுத்தாந்திருக்கேன். (கொடுக்க)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: இந்தப் புஸ்தகத்தைப் பார்த்தா பரந்தாமனுக்கு ஆத்திரம் வரும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : ஆத்திரம் வருவதற்கு இதை எழுதவில்லை. பரந்தாமன் போன்ற போலித் தலைவர்கள் அறிவு பெறுவதற்காக. அப்பாவி மக்களை ஏமாற்றுவதை நிறுத்துவதற்காக. குமுதா! இனியும் இந்த பூமியில் ஏமாளிகளும் இருக்கக் கூடாது ! இளிச்சவாயர்களும் இருக்கக்கூடாது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : இளிச்சவாயர் என்றால் எப்ப பாத்தாலும் சிரிச்சிக்கிட்டே இருக்காங்களே அவங்களாங்க? (குமுதா சிரிப்பு )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : இளிச்சவாயர் என்றால் அவர்களல்ல. புரட்டுக்காரர்களின் புன்சிரிப்பிலே புத்தியை பறிகொடுத்து, எந்த இழிவு வந்தாலும் எமக்கு என்னவென்று கவலைப்படாமல், ஏன், எப்படி என்று கேட்க தைரியமில்லாமல் வாயை இறுக மூடிக்கொண்டு கிடக்கிறார்களே அவர்கள் தான் இளிச்சவாயர்கள்!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s050-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 65,
+            "printedPage": 57
+          }
+        ],
+        "text": "(Kumudha and Pandiyan are there when Gundumani enters.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s050-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s050-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 65,
+            "printedPage": 57
+          }
+        ],
+        "text": "Gundumani, has everything been printed?....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s050-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s050-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 66,
+            "printedPage": 58
+          }
+        ],
+        "text": "Yes. I've brought three copies here. (hands them over)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s050-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s050-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 66,
+            "printedPage": 58
+          }
+        ],
+        "text": "If Paranthaman sees this book, he'll become furious.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s050-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s050-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 66,
+            "printedPage": 58
+          }
+        ],
+        "text": "I did not write it to make him angry. I wrote it so that false leaders like Paranthaman may gain sense, and so that they stop deceiving innocent people. Kumudha! From now on, there must be neither dupes nor gullible fools on this earth!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s050-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s050-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 66,
+            "printedPage": 58
+          }
+        ],
+        "text": "By 'gullible fools,' do you mean those people who are always grinning whenever you see them? (Kumudha laughs.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s050-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s050-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 66,
+            "printedPage": 58
+          }
+        ],
+        "text": "That isn't who I mean. I mean those who surrender their reason to the smiles of frauds, who remain unconcerned no matter what humiliation comes upon them, who lack the courage to ask 'why?' and 'how?' and lie there with their mouths tightly shut—they are the gullible fools.",
+        "notes": []
+      }
+    ]
+  }
+}

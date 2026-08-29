@@ -1,0 +1,150 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-42",
+  "canonicalScene": 42,
+  "sourceHeading": 42,
+  "headingTa": "காட்சி 42]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 57,
+      "printedPage": 49
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை வீடு - மாடி அறை"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பாண்டியன் ஏதோ மளமளவென்று எழுதி எழுதித் தள்ளுகிறான். குமுதா அருகே ஆவலுடன் சென்று கவனிக்கிறாள்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: என்ன திடீரென்று எழுத ஆரம்பித்துவிட்டீர்கள்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : நல்ல சிச்சுவேஷன் கிடைத்தது பாட்டு எழுதுகிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: எந்தப் பத்திரிகைக்கு?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : நான் எந்தப் பத்திரிகைக்கு எழுதுவேன்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: எங்கே பாட்டைக் கேட்கலாம்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s042-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "(Pandiyan is rapidly writing page after page. Kumudha comes near eagerly and watches.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s042-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s042-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "Why have you suddenly started writing?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s042-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s042-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "I found a good situation; I'm writing a song.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s042-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s042-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "For which magazine?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s042-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s042-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "Which magazine would I write for....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s042-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s042-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "Well then, let's hear the song.",
+        "notes": []
+      }
+    ]
+  }
+}

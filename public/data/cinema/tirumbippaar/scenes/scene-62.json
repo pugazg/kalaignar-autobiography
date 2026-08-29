@@ -1,0 +1,125 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-62",
+  "canonicalScene": 62,
+  "sourceHeading": 62,
+  "headingTa": "காட்சி 62]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 79,
+      "printedPage": 71
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(குமுதா நகருதல்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[ஒரு வீட்டின் பின்புறம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "அம்மாமி",
+        "text": "அம்மாமி : நன்னாயிருக்குடியம்மா வேலை செய்றது! எங்க வீட்டு சாமானையெல்லாம் நொறுக்கிண்டு போய்டுவே போலிருக்க !... போ போ ! போதும் போதும் உன் வேலையும் நீயும். அதுக்குத்தான் கர்ப்ப ஸ்திரியை வேலைக்கு சேர்க்க வேண்டாம்னேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: அம்மா !உங்கள் மகள் மாதிரி நினைச்சு ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "அம்மாமி",
+        "text": "அம்மாமி: மகளாவது மகள்! இங்கதான் ஒன்பதும் பெண்ணா பொறந்து கிடக்கே ! நீவேறயா? போடின்னா போ !"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s062-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "(Kumudha moves away.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s062-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "(Behind a house.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s062-u002",
+        "kind": "dialogue",
+        "speakerLabel": "அம்மாமி",
+        "sourceRecordId": "tirumbippaar-s062-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "What a fine job you're doing, girl! It looks as though you'll smash all the things in our house!... Go, go! Enough—enough of you and your work. That's why I said we shouldn't take a pregnant woman on for work.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s062-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s062-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Amma! Think of me as your own daughter...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s062-u004",
+        "kind": "dialogue",
+        "speakerLabel": "அம்மாமி",
+        "sourceRecordId": "tirumbippaar-s062-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Daughter, indeed! I've already got nine girls born here! Do I need you too? I said go—go!",
+        "notes": []
+      }
+    ]
+  }
+}

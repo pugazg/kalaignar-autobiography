@@ -1,0 +1,172 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-16",
+  "canonicalScene": 16,
+  "sourceHeading": 16,
+  "headingTa": "காட்சி 16] [கருடன் பதிப்பகம்—பகல்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 24,
+      "printedPage": 16
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன் திருமணப் பத்திரிகை படிக்கிறான்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : சிங்க நல்லூர் சிவசக்தி மில்ஸ் மேஸ்திரி புண்யகோடியின் மகன் எழுத்தாளர் பாண்டியனுக்கும், கோவை மெர்ச்சண்ட் குணரத்னம் திருச் செல்வி பாமாவுக்கும் திருமண விழா மணமகள் இல்லத்தில் சிறப்பாக நடைபெறும். தங்கள் சுற்றமும்....."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமான் பத்திரிகையை வேகமாகப் பிடுங்கி கசக்கி எறிதல் )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அந்தப் பயல் பாண்டியன் நம்ப விஷயத்திலே குறுக்கிட்டு கொண்டேயிருக்கிறான். அன்னைக்கு என்னடான்னா நாடகம் நடத்தி நம்ம கொள்கையை கிண்டல் பண்றான். இன்னைக்கு என்னடான்னா நம்ப கல்யாணம் பண்ணிக்க வேண்டிய பெண்ணை .."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: ஏய் ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : இல்லை. நீ கல்யாணம் பண்ணிக்க வேண்டிய பெண்ணை ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : யார் விட்டார்கள்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s016-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "(Garudan is reading the wedding invitation.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s016-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s016-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "The wedding of writer Pandiyan, son of Punyakodi, foreman at Sivasakthi Mills, Singanallur, and Miss Bama of Coimbatore merchant Gunaratnam, will be celebrated grandly at the bride's residence. You and your family....",
+        "notes": [
+          "The source invitation breaks off after `தங்கள் சுற்றமும்`; the English preserves that incompleteness.",
+          "The source identifies Punyakodi as Pandiyan's father but does not explicitly print a daughter-relationship word between merchant Gunaratnam and Bama, so the English does not add one."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s016-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "(Paranthaman abruptly snatches the invitation, crumples it and throws it away.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s016-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s016-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "That fellow Pandiyan keeps interfering in our affairs. The other day he staged a play and mocked our doctrine. And today, the woman we were supposed to marry....",
+        "notes": [
+          "Garudan's colloquial first-person plural is retained because Paranthaman immediately interrupts and forces him to correct it in the next line."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s016-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s016-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "Hey....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s016-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s016-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "No. The woman you were supposed to marry....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s016-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s016-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "Who allowed that?",
+        "notes": [
+          "The source `யார் விட்டார்கள்` is kept as a terse past/perfective challenge rather than shifted into a future prediction."
+        ]
+      }
+    ]
+  }
+}

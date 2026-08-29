@@ -1,0 +1,163 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-61",
+  "canonicalScene": 61,
+  "sourceHeading": 61,
+  "headingTa": "காட்சி 61]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 78,
+      "printedPage": 70
+    },
+    {
+      "pdfPage": 79,
+      "printedPage": 71
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[டைப்ரைட்டிங் ஆபீஸ்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[அங்கே பல கிளர்க்குகள். குமுதாவும் டைப் செய்து கொண்டிருக்கிறாள். எல்லா மேஜையிடமும் கவனித்து வந்த மேனேஜர் குமுதாவுக்கு பின்புறம்"
+      },
+      {
+        "kind": "prose",
+        "text": "வந்து நிற்கிறார்.குமுதா பாண்டியன் பாண்டியன் என்று அதே வார்த்தையை டைப் செய்து கொண்டிருக்கிறாள்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மேனேஜர்",
+        "text": "மேனேஜர்: ரொம்ப ஒழுங்காயிருக்கு டைப் பண்ற லக்ஷணம்!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குமுதா திடுக்கிட்டு எழுதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மேனேஜர்",
+        "text": "மேனேஜர்: பாண்டியன்! பாண்டியன்! போதும் நீ செஞ்ச வேலை. வெளியே போ!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சார் தயவு செய்து ......."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மேனேஜர்",
+        "text": "மேனேஜர்: ஊஹும். போன்னா போ !"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s061-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 78,
+            "printedPage": 70
+          },
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "(A typing office. Several clerks are there. Kumudha is typing. The manager, after looking over all the desks, comes and stands behind her. Kumudha is typing the same word over and over: 'Pandiyan, Pandiyan.')",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s061-u002",
+        "kind": "dialogue",
+        "speakerLabel": "மேனேஜர்",
+        "sourceRecordId": "tirumbippaar-s061-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Very neat indeed—what fine typing!",
+        "notes": [
+          "The manager's line is sarcastic in context; the translation preserves that tone rather than treating it as literal praise."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s061-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "(Kumudha starts and rises.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s061-u004",
+        "kind": "dialogue",
+        "speakerLabel": "மேனேஜர்",
+        "sourceRecordId": "tirumbippaar-s061-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Pandiyan! Pandiyan! Enough of the work you've done. Get out!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s061-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s061-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Sir, please......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s061-u006",
+        "kind": "dialogue",
+        "speakerLabel": "மேனேஜர்",
+        "sourceRecordId": "tirumbippaar-s061-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Uh-uh. I said go—go!",
+        "notes": []
+      }
+    ]
+  }
+}

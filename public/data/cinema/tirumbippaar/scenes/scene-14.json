@@ -1,0 +1,91 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-14",
+  "canonicalScene": 14,
+  "sourceHeading": 14,
+  "headingTa": "காட்சி 14]",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 22,
+      "printedPage": 14
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[ஸ்டேஜ்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[ஸ்டேஜில் பாட்டு. பாட்டு முடிந்ததும் பரந்தாமனும் கருடனும் ஆத்திரத்துடன் வெளியே போகிறார்கள்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : தோழர்களே! வணக்கம் / ஒரு சில எழுத்தாளர்கள் கிளம்பியிருக்கிறார்கள் ஆபாச நடையிலே, அர்த்தமற்ற அடுக்குத் தொடரிலே தேவையற்ற கேடுதரும் கருத்துக்களை நாட்டில் பரப்புவதற்காகவே. சமீபத்தில் 'வாழு' என்ற புத்தகம் வெளியாகியிருக்கிறது. மனிதன் தன்னுடைய லீலா விநோதங்களுக்காகவே உலகத்தில் அவதரிக்கிறான் என்று அதன் ஆசிரியர் கூறுகிறார். வாழு என்ற கொள்கையும்,வாழாதே, வாழ்வாவது மாயம் என்ற வரட்டுத் தத்துவத்தையும் தவறு என்று எடுத்துக்காட்டவே வாழு வாழ விடு என்ற நூலை எழுதினேன். அதை நாடகமாகவும் ஆக்கினேன்.'வாழு' என்பது சுய நலம். 'வாழாதே' என்பது அறிவீனம். 'வாழு வாழ விடு' என்பது பகுத்தறிவு. இந்த உண்மை உங்கள் ஆதரவால் வெற்றிபெற வேண்டும். நாடகத்திற்கு வந்துள்ள அனைவருக்கும் என் நன்றி வணக்கம்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s014-u001",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-004",
+        "pageProvenance": [
+          {
+            "pdfPage": 22,
+            "printedPage": 14
+          }
+        ],
+        "text": "(A song is performed on stage.)",
+        "notes": [
+          "The booklet prints no title or lyric body for this stage song, so none is supplied or reconstructed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s014-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 22,
+            "printedPage": 14
+          }
+        ],
+        "text": "(When the song ends, Paranthaman and Garudan leave angrily.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s014-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s014-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 22,
+            "printedPage": 14
+          }
+        ],
+        "text": "Comrades! Greetings! A few writers have sprung up merely to spread needless, harmful ideas in the country through obscene style and meaningless chains of phrases. Recently a book titled 'Vaazhu' has been published. Its author says that man is born into the world only for his own playful pleasures. I wrote the book 'Vaazhu Vaazha Vidu'—'Live and Let Live'—to show that both the doctrine of 'Live' and the barren philosophy of 'Do not live; life itself is illusion' are wrong. I made it into a play as well. 'Live' is selfishness. 'Do not live' is ignorance. 'Live and Let Live' is rationalism. With your support, this truth must triumph. My thanks and greetings to everyone who has come to the play.",
+        "notes": [
+          "The three title/slogan forms `வாழு`, `வாழாதே`, and `வாழு வாழ விடு` are kept visibly distinct because Pandiyan's argument depends on their contrast.",
+          "`பகுத்தறிவு` is rendered as `rationalism`, preserving the source's ideological vocabulary rather than softening it to general `reason`.",
+          "The closing `அனைவருக்கும்` means everyone who came to the play; the historical English's added `dear friends` has been removed."
+        ]
+      }
+    ]
+  }
+}

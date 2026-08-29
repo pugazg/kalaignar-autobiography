@@ -1,0 +1,149 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-08",
+  "canonicalScene": 8,
+  "sourceHeading": 8,
+  "headingTa": "காட்சி 8] [பூமாலை ஹால்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 18,
+      "printedPage": 10
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புரோகிதர்",
+        "text": "புரோகிதர்: மாப்பிள்ளையை வரச்சொல்லுங்க..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை பெருமூச்ச)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புரோகிதர்",
+        "text": "புரோகிதர்: எங்கே மாப்பிள்ளை—முகூர்த்தநேரம் தவறிடும்—சீக்கிரம்—சீக்கிரம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா ! மாமாவைக் காணும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : ஆ ! காணுமா."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(மாப்பிள்ளையைக் காணும் ரகளை)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s008-u001",
+        "kind": "dialogue",
+        "speakerLabel": "புரோகிதர்",
+        "sourceRecordId": "tirumbippaar-s008-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Ask the bridegroom to come...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s008-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "(Poomalai lets out a deep sigh.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s008-u003",
+        "kind": "dialogue",
+        "speakerLabel": "புரோகிதர்",
+        "sourceRecordId": "tirumbippaar-s008-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Where is the bridegroom—the auspicious hour will pass—quickly—quickly...",
+        "notes": [
+          "`முகூர்த்தநேரம்` is rendered as the auspicious wedding time without adding ritual detail."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s008-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s008-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Chinnamma! Uncle can't be found.",
+        "notes": [
+          "The compact colloquial `மாமாவைக் காணும்` is rendered from immediate scene context without inventing a destination."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s008-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s008-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Ah! Can't he be found?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s008-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "(An uproar as they search for the bridegroom.)",
+        "notes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-81",
+  "canonicalScene": 81,
+  "sourceHeading": 81,
+  "headingTa": "காட்சி 81] [பாழடைந்த மண்டபம்",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 98,
+      "printedPage": 90
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: பரந்தாமா! பாவி ! உனக்கு இந்த தண்டனை போதாது. இன்னும் வேண்டும். இன்னும் வேண்டும்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(வானத்திலே பல நட்சத்திரங்கள் திடீரென உதிர்ந்து பெண்ணாக மாறுகின்றன. பரந்தாமன் Reaction-Echo)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "Echo",
+        "text": "Echo: வானத்திலே பல நட்சத்திரங்கள்- ஒரே நிலவு- வையகத்திலே உனக்குப் பல சகோதரிகள் - ஒரே மனைவி - ஒரே மனைவி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அக்கா ! அன்பின் சிகரமே ! என்னை மன்னித்து விடுங்கள். நான் பகுத்தறிவாளனாகி விட்டேன். பகுத்தறிவாளனாகி விட்டேன். திரும்பிப்பார் - எனக்கு மட்டுமல்ல - உலகத்திற்கே என் அக்காள் வழங்கிய ஒப்பற்ற உபதேசம்.திரும்பிப்பார் - ஏ மாஜி மனிதனே - மகா பாதகனே - நீயும் திரும்பிப்பார். நீ உருண்டு வந்த சாலையிலே அள்ளித் தெளித்திருக்கும் மண்டையோடுங்கள் எத்தனை? பிழிந்தெறியப்பட்ட இருதயச் சக்கைகளின் தொகை எவ்வளவு? எண்ணிப்பார்.இழிவு நிறைந்தவனே திரும்பிப்பார். ஏ, மானிட ஜாதியே நீ குரங்கிலிருந்து வளர்ந்தாயாம்-அந்தக் குரங்கு மனப்பான்மை உன்னை விட்டு குறைந்துவிட்டதா என்று ஒருமுறை திரும்பிப்பார்- திரும்பிப் பார் - திரும்பிப் பார் - அக்கா ! நான் திரும்பிப் பார்த்துவிட்டேன் அக்கா ! திருந்திவிட்டேன் அக்கா !"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஓடுகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s081-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 98,
+            "printedPage": 90
+          }
+        ],
+        "text": "(A ruined pavilion.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s081-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s081-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 98,
+            "printedPage": 90
+          }
+        ],
+        "text": "Paranthama! Sinner! This punishment is not enough for you. You need more. More.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s081-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 98,
+            "printedPage": 90
+          }
+        ],
+        "text": "(Many stars in the sky suddenly fall and turn into a woman. Paranthaman—Reaction-Echo.)",
+        "notes": [
+          "The printed technical expression 'Reaction-Echo' is preserved rather than normalized."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s081-u004",
+        "kind": "dialogue",
+        "speakerLabel": "Echo",
+        "sourceRecordId": "tirumbippaar-s081-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 98,
+            "printedPage": 90
+          }
+        ],
+        "text": "Many stars in the sky—one moon. In the world you may have many sisters—one wife—one wife......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s081-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s081-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 98,
+            "printedPage": 90
+          }
+        ],
+        "text": "Akka! Summit of love! Forgive me. I have become a rationalist. I have become a rationalist. 'Look back'—the incomparable teaching my akka has given not merely to me but to the whole world. Look back—O former human being, O great sinner—you too look back. How many skulls lie scattered along the road down which you have rolled? How many husks of hearts have been squeezed dry and thrown away? Count them. You who are filled with degradation, look back. O human race, they say you evolved from the monkey—look back once and ask whether that monkey mentality has truly diminished within you. Look back—look back—look back! Akka! I have looked back, akka! I have reformed, akka!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s081-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 98,
+            "printedPage": 90
+          }
+        ],
+        "text": "(He runs.)",
+        "notes": []
+      }
+    ]
+  }
+}

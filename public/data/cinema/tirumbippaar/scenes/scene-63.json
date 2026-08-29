@@ -1,0 +1,483 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-63",
+  "canonicalScene": 63,
+  "sourceHeading": 63,
+  "headingTa": "காட்சி 63]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 79,
+      "printedPage": 71
+    },
+    {
+      "pdfPage": 80,
+      "printedPage": 72
+    },
+    {
+      "pdfPage": 81,
+      "printedPage": 73
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன் பதிப்பகம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி: எத்துக்காக இதெல்லாம் சொல்றேன்னா தொழிலாளர் கோரிக்கை கூடிய சீக்கிரம் நிறைவேறியாகணும். நம்மை நம்பிகிட்டு ஆயிரக் கணக்கான தொழிலாளிகள் இருக்காங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கவலைப்படாதீர்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி: நீங்க அதுக்குத்தான் திட்டம் தீட்றிங்கன்னு தெரியுது! இருந்தாலும் சில தொழிலாளிங்க கொஞ்சங்-"
+      },
+      {
+        "kind": "prose",
+        "text": "கொஞ்சமா அந்தப் பாண்டியன் கட்சியிலே சேர்ந்துகிட்டு, பகுத்தறிவு அது இதுன்னு பேசிகிட்டு நம்பளை கொஞ்சம் கேவலமா நினைக்கிறாங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : பரவாயில்லை. அவர்களால் என்ன செய்ய முடியும்? அவனுந்தான் ஜெயில்ல கிடக்கிறான். உம். நீங்க போங்க நான் எல்லாம் உடனடியாக கவனிக்கிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : நான் வர்ரேன். நமஸ்காரம். என்ன, உங்களைத்தானே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: வாழ்க தொழிலாளி வர்க்கம் !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : இவன் வேற தொழிலாளி தொழிலாளின்னு உயிரைவாங்குறான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: அட சும்மா இருப்பா ! அந்தத் திரை மறைவிலே தானே நம்ம நினைச்சதெல்லாம் நடத்த முடியுது!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : நினைத்ததெல்லாம் வெற்றிதான்,ஆனாலும் அந்த உஷா விஷயம் Failure ஆயிட்டுதே !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அதெல்லாம் ஒண்ணும் ஆகாது ! அதுக்குத்தான் சொல்றேன், நீ உஷாவை கல்யாணம் பண்ணிட்டீன்னா, அவ்வளவு பெரிய மில்லு உனக்குச் சொந்தம்! ஆயிரக் கணக்கான தொழிலாளிகள் உனக்கு அடிமை ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : தொழிலாளி தலைவன் மில் முதலாளி மகளை கல்யாணம் செய்வது....."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அட ''மாஸ் சைகாலஜி\" தெரியாது உனக்கு? அதுக்கும் ஒரு காரணம் சொல்லிவிடலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சொல்லலாம். ஆனால் முன்னுக்குப் பின் முரணாகப் பேசுவது"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: அப்படித்தான் பேசணும், அப்பறம் தலைவர்னா என்னா லக்ஷணம் நான் சொல்றபடி செய்யப்பா !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : உஷாவைக் கல்யாணம் பண்ணவேண்டும். அவ்வளவு தானே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : ஆமாம்! அப்படிச் செஞ்சா எவ்வளவோ காரியத்துக்கு செளகரியம். முதல்ல நம்ப பதிப்பகத்தையே விருத்தி பண்ணலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: சரி, அக்காளிடமே சொல்லி பெண் கேட்கச் சொல்வோம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அட, இதுக்கெல்லாம் ஏம்ப்பா அக்கா. அதுவேற எதுக்கெடுத்தாலும் தடை சொல்லும் சனியன் மாதிரி !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஏ கருடா! நிதானமா பேசு! எங்க அக்காளைப் பத்தி எதுவும் பேசாதே !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : மன்னிச்சிக்கோ, மன்னிச்சுக்க ஒரு டெஸ்ட் பாத்தேன். அக்காகிட்ட தம்பிக்கு எவ்வளவு அன்பு இருக்குன்னு ........"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s063-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "(Garudan Publishing House.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u002",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s063-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "The reason I'm saying all this is that the workers' demands must be fulfilled very soon. Thousands of workers are depending on us!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          }
+        ],
+        "text": "Don't worry!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u004",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s063-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 79,
+            "printedPage": 71
+          },
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "I know you're making plans for that! Even so, little by little some workers are joining that Pandiyan's party, talking about rationalism and all that, and looking down on us somewhat!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "Never mind. What can they do? He's lying in jail himself. Hmm. You go; I'll attend to everything immediately.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u006",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s063-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "I'll be going. Namaskaram. What, you...",
+        "notes": [
+          "The printed utterance ends unfinished at `என்ன, உங்களைத்தானே...`; no completion is supplied."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s063-u007",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "Long live the working class!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "This fellow too keeps tormenting me with 'workers, workers.'",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u009",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "Oh, keep quiet! Isn't it only behind that curtain that we can carry out everything we want!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "Everything we planned has succeeded, but that Usha matter was a failure!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u011",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "That won't matter at all! That's why I'm telling you: if you marry Usha, that enormous mill becomes yours! Thousands of workers become your slaves...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "A workers' leader marrying a mill owner's daughter....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u013",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "Don't you know 'mass psychology'? We can give a reason for that too.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "We can. But speaking inconsistently from one time to the next...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u015",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "That's exactly how you must speak; otherwise what is the mark of a leader? Do as I say, man!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u016",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 80,
+            "printedPage": 72
+          }
+        ],
+        "text": "I must marry Usha. That's all, isn't it!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u017",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "Yes! If you do that, it'll make many things convenient. First of all, we can expand our publishing house itself.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u018",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "All right, we'll tell akka and have her ask for the bride.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u019",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "Oh, why bring akka into all this? She's like a Saturn that objects to everything!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u020",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s063-d019",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "Hey, Garuda! Watch your words! Don't say anything about my akka!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s063-u021",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d020",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "Forgive me, forgive me!",
+        "notes": [
+          "The corrected dialogue corpus deliberately preserves the historical d020/d021 split for one printed Garudan utterance so stable source IDs are not renumbered."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s063-u022",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s063-d021",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "I was just testing how much love the younger brother has for his akka........",
+        "notes": [
+          "Continuation of the same printed Garudan utterance represented by stable source record d021."
+        ]
+      }
+    ]
+  }
+}

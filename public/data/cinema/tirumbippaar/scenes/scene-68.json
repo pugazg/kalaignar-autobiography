@@ -1,0 +1,146 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-68",
+  "canonicalScene": 68,
+  "sourceHeading": 68,
+  "headingTa": "காட்சி 68]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 84,
+      "printedPage": 76
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(போலீஸ் ஸ்டேஷன் - இரவு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ்: போலீஸார் மீது கல்வீச்சு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "II போலீஸ்",
+        "text": "II போலீஸ்: மில்லின் கதவையே தூள் தூளாக உடைத்து விட்டார்கள். மில் முதலாளி வீட்டிலும் கல் வீசினார்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ்: தெருவில் ஜனங்கள் நடமாடவே பயப்படுகிறார்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "text": "போலீஸ்: நாளைக்கு காலையிலே பெரிய ஊர்வலம் ஒண்ணு இருக்காம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர்: (வந்து) சரி, முக்கியஸ்தர்களை யெல்லாம் கைதுசெய்ய உத்திரவு வந்திருக்கு. புறப்படுங்க!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s068-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "(Police station—night.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s068-u002",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "sourceRecordId": "tirumbippaar-s068-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "Stones were thrown at the police!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s068-u003",
+        "kind": "dialogue",
+        "speakerLabel": "II போலீஸ்",
+        "sourceRecordId": "tirumbippaar-s068-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "They smashed the mill gate to pieces. They threw stones at the mill owner's house too.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s068-u004",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "sourceRecordId": "tirumbippaar-s068-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "People are afraid even to move about in the street.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s068-u005",
+        "kind": "dialogue",
+        "speakerLabel": "போலீஸ்",
+        "sourceRecordId": "tirumbippaar-s068-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "They say there's going to be a big procession tomorrow morning.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s068-u006",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s068-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "(Entering.) All right. Orders have come to arrest the leading figures. Move out!",
+        "notes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-65",
+  "canonicalScene": 65,
+  "sourceHeading": 65,
+  "headingTa": "காட்சி 65]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 81,
+      "printedPage": 73
+    },
+    {
+      "pdfPage": 82,
+      "printedPage": 74
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[மில் முதலாளி ரூம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : (பரந்தாமனிடம்) உஷாவின் இஷ்டத்துக்கு விரோதமா திருமணம் செய்ய மாட்டேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : பெண்புத்தி பின்புத்தி என்பார்கள். இந்த ஒரு விஷயத்தில் பெற்றோர்கள் அபிப்ராயத்திற்குத்தான் பெண்கள் நடக்க வேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : பெற்றோர்கள் இஷ்டமே வேறு மாப்பிள்ளைக்கு அவளைக் கொடுக்க வேண்டும் என்று தானே....."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அப்படியானால் முடியாது. இல்லையா? உம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி: இது என்னய்யா கேள்வி! நல்லாயிருக்கு ....."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கடைசியாகச் சொல்கிறேன், உஷாவை எனக்குக் கொடுத்தால் சரி ; இல்லாவிட்டால் பெரியதொரு புரட்சியை சமாளிக்க நேரிடும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி: என்னய்யா பூச்சி காட்ற..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : இந்தத் தடவை பணத்தைக் கொடுத்து ஏமாற்ற முடியாது பரந்தாமனை !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி: பெண்ணைக் கொடுத்து ஏமாறச் சொல்றியா? முடியாது ! எது வேண்டுமானால் செய்துக்கொள் போ !"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் கோபமாக வெளியேறுகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s065-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "(Mill owner's room.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u002",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s065-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "(To Paranthaman.) I will not arrange a marriage against Usha's wishes.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s065-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "They say a woman's judgement comes afterwards. In this one matter, women must act according to their parents' opinion.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u004",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s065-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "And her parents' wish is to give her in marriage to another bridegroom......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s065-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "Then it can't be done. Is that it? Hmm........",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u006",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s065-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "What kind of question is that, man! Very nice......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s065-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "I'm telling you for the last time: give Usha to me and all is well; otherwise you'll have a major revolution to deal with.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u008",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s065-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "What are you trying to frighten me with?......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s065-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "This time you cannot fool Paranthaman by giving him money!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u010",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s065-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "You want me to give you my daughter and be the one who's fooled? Impossible! Do whatever you want—go!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s065-u011",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "(Paranthaman leaves angrily.)",
+        "notes": []
+      }
+    ]
+  }
+}

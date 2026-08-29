@@ -1,0 +1,48 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-10",
+  "canonicalScene": 10,
+  "sourceHeading": 10,
+  "headingTa": "காட்சி 10]",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 18,
+      "printedPage": 10
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பாமாவின் கண்ணிலிருந்து நீர் வழிகிறது. வழிந்த நீர் கையில் விழுகிறது. கையில் விழுந்த நீர் அருவியாக மாறுகிறது. அருவி ஆறாகப் போகிறது.]"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s010-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "(Water streams from Bama's eyes. The flowing water falls into her hand. The water that falls into her hand turns into a waterfall. The waterfall becomes a river.)",
+        "notes": [
+          "The corrected Tamil repeats `நீர்`/`வழிந்த நீர்`; the English preserves the visual transformation without adding interpretation. Scene 10 contains no labelled dialogue."
+        ]
+      }
+    ]
+  }
+}

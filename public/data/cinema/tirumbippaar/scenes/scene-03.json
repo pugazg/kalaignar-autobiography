@@ -1,0 +1,109 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-03",
+  "canonicalScene": 3,
+  "sourceHeading": 3,
+  "headingTa": "காட்சி 3] [Bath Room",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 11,
+      "printedPage": 3
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[டூத் பிரஷை போட்டுவிட்டு முணுமுணுத்தப்படி]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: அன்பு...தொண்டு...அவரைக்காய்..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஆத்திரமாய் பம்பைத் திருகிவிட்டு ஷவர்பாத் எடுக்கிறான் தண்ணீர் மேலே விழுந்த பிறகுதான் தெரிகிறது. அவன் Nightdress களை கழற்றாமலே குளிக்கிறான் என்பது....)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: அடடே! இதுவேற நியூசென்ஸ்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s003-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "(After putting down the toothbrush, he mutters to himself.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s003-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s003-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Love...service...broad beans...",
+        "notes": [
+          "The muttered source turns the preceding three-letter-word rhetoric into comic word association; `அவரைக்காய்` is translated literally as `broad beans` rather than replaced with a new English pun."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s003-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "(Angrily he turns the tap and takes a shower. Only after the water falls on him does it become clear that he is bathing without taking off his nightdress.)",
+        "notes": [
+          "The source's English loanword `Nightdress` is translated as ordinary English without adding costume detail."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s003-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s003-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Oh no! This is another nuisance.",
+        "notes": []
+      }
+    ]
+  }
+}

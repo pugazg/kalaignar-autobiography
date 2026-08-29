@@ -1,0 +1,313 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-59",
+  "canonicalScene": 59,
+  "sourceHeading": 59,
+  "headingTa": "காட்சி 59]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 76,
+      "printedPage": 68
+    },
+    {
+      "pdfPage": 77,
+      "printedPage": 69
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[ஜெயில்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா : உங்களை விடுதலை செய்ய எவ்வளவோ முயற்சித்தேன். முடியவில்லை பாண்டியன்...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : வருந்தாதே குமுதா ! எனக்கும் விடுதலையில்லாமலா போய்விடப் போகிறது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: பாண்டியன் நான் திக்கற்றவள்.நீங்கள் வரும்வரை எனக்கு யார் கதி"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : நீயேதான் கதி ! என்னை வெளியூர் ஜெயிலுக்குக் கொண்டு போகிறார்களாம். பரந்தாமன் கண்களில் பட்டுவிடாதே.ஜாக்ரதையா இரு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: பாண்டியன் ! உங்களைப் பிரிந்து எப்படி இருப்பேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(அழல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : அழாதே குமுதா! அழாதே !... உன்னை சிரித்த முகத்தோடு என் சிந்தை குளிர ஒருமுறை பார்க்கிறேன். எங்கே சிரிப்பு காட்டு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா : சிரிக்கவா ? சிறைச்சாலையிலே என் ஜீவனை வாடவிட்டு நான் சிரிக்கவா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : அழாதே குமுதா! மூன்று வருடங்கள் விரைவில் ஓடிவிடும். நான் திரும்பி வந்து உன்னை சந்திக்கும் போது உன் மடியிலிருந்து அப்பா என அழைக்கும் மழலைச் செல்வத்தை வாரி அணைத்துக்கொள்வேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: (பதறி) பாண்டியன். பாண்டியன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "text": "வார்டர் : புறப்படம்மா ! டயம் ஆச்சு."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குமுதா பாண்டியனை விட்டு)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: பாண்டியன். பாண்டியன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : போய்வா குமுதா!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s059-u001",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s059-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "I tried so much to secure your release. I couldn't, Pandiyan....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s059-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Don't grieve, Kumudha! Am I going to remain without release forever?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s059-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Pandiyan, I am helpless. Until you return, who do I have to turn to?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s059-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "You yourself are your refuge! They say they're taking me to a prison out of town. Don't let yourself fall under Paranthaman's eye. Be careful.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s059-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Pandiyan! How can I live separated from you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "(She cries.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s059-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Don't cry, Kumudha! Don't cry!.... Let me see you once with a smiling face, to cool my heart. Come, show me a smile!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u008",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s059-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Smile? Leaving my very life to wither in prison, am I to smile?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s059-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 77,
+            "printedPage": 69
+          }
+        ],
+        "text": "Don't cry, Kumudha! Three years will pass quickly. When I return and meet you, I will gather into my arms the little treasure in your lap who calls me 'Appa.'",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u010",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s059-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 77,
+            "printedPage": 69
+          }
+        ],
+        "text": "(Startled.) Pandiyan. Pandiyan.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u011",
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "sourceRecordId": "tirumbippaar-s059-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 77,
+            "printedPage": 69
+          }
+        ],
+        "text": "You must leave, amma! It's time.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u012",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 77,
+            "printedPage": 69
+          }
+        ],
+        "text": "(Kumudha parts from Pandiyan.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u013",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s059-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 77,
+            "printedPage": 69
+          }
+        ],
+        "text": "Pandiyan. Pandiyan.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s059-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s059-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 77,
+            "printedPage": 69
+          }
+        ],
+        "text": "Go, Kumudha!",
+        "notes": []
+      }
+    ]
+  }
+}

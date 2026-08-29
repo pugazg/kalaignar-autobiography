@@ -1,0 +1,225 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-83",
+  "canonicalScene": 83,
+  "sourceHeading": 83,
+  "headingTa": "காட்சி 83]",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 100,
+      "printedPage": 92
+    },
+    {
+      "pdfPage": 101,
+      "printedPage": 93
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[சென்னை ஹோட்டல்\n[ பரந்தாமன் எழுதுவது\nஅவசர வேண்டுகோள்.\nஅன்புள்ள குமுதாவுக்கு ! உன்னைப் பார்க்கவேண்டும் என்று துடிக்கிறேன். நடந்தவைகளை மறந்துவிட்டு"
+      },
+      {
+        "kind": "prose",
+        "text": "உடனே உன்னுடைய விலாசத்தை எனக்குத் தெரியப் படுத்தினால் ஓடி வந்து சந்திக்கிறேன்.\nஇங்ஙனம்,\nஉன் அன்பு மாமன்\nபரந்தாமன்,\nரூம் -15, இமாலயா ஓட்டல்,\nசென்னை.\n(எழுதிய கடிதத்தை ஒருமுறை படித்துவிட்டு பையனிடம்)\nபரந்தாமன் : நீ உடனே தினசரி பத்திரிகை ஆபீஸ்களுக்குச் செல்லவேண்டும்.\nபையன்: ஏங்க...\nபரந்தாமன் : இந்த விளம்பரத்தை எல்லாப் பத்திரிகைகளிலும் போடவேண்டும்.\nபையன்: ஏங்க வீணா சிரமம் குமுதா அம்மாளுக்கே நேரா ஒரு கார்டு போட்டா போவுது\nபரந்தாமன் : ஏ. என்னா எனக்கு புத்தி வந்தவுடனே உனக்கு புத்தி மழுங்குது ! குமுதா விலாசம் தெரிஞ்சா இந்த விளம்பரம் எதுக்கு ! உம்\nபையன் : ஓ... அதை மறந்துட்டேன்.\nபரந்தாமன்: (நூறு ரூபாய் பணம் எடுத்துக் கொடுத்து) இந்தா விளம்பர சார்ஜுக்குக் கொடு! எல்லா பத்திரிகையிலும் இன்னைக்கே போடச் சொல்லணும்!\nபையன் : (பணத்தையும் காகிதத்தையும் வாங்கியபடி ) சரிங்க !...\nபரந்தாமன்: நிச்சயம் என் குமுதா இருக்குமிடம் தெரிந்து விடும்: அவளிடம் ஓடுவேன். மன்னிப்பு கேட்பேன். சீரழிந்த குடும்பத்திலே மறுமலர்ச்சி உண்டாக்குவேன்!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s083-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 100,
+            "printedPage": 92
+          }
+        ],
+        "text": "(Chennai hotel. Paranthaman is writing.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u002",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 100,
+            "printedPage": 92
+          },
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "URGENT APPEAL. To dear Kumudha! I am longing to see you. Forget what has happened and let me know your address immediately; I will run to you and meet you. Yours, your loving uncle, Paranthaman, Room 15, Himalaya Hotel, Chennai.",
+        "notes": [
+          "The printed appeal genuinely crosses PDF 100→101. It is source-visible written text, so no dialogue speaker or dialogue-record ID is invented."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s083-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "(He reads through the letter he has written once, then turns to the boy.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s083-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "You must go immediately to the offices of the daily newspapers.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s083-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "Why, sir...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s083-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "This advertisement must be placed in every newspaper.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s083-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "Why all this needless trouble? Wouldn't it be enough to send a card directly to Kumudha-amma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s083-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "Hey! The moment sense came to me, yours disappeared! If I knew Kumudha's address, why would I need this advertisement! Hmm...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s083-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "Oh... I forgot that.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s083-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "(Taking out one hundred rupees and giving it to him.) Here, pay this for the advertisement charges! Tell them it must appear in every paper today itself!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s083-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "(Taking the money and the paper.) All right!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s083-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s083-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 101,
+            "printedPage": 93
+          }
+        ],
+        "text": "I will certainly find out where my Kumudha is! I will run to her. I will ask forgiveness. I will bring a revival to the family that has fallen into ruin!",
+        "notes": []
+      }
+    ]
+  }
+}

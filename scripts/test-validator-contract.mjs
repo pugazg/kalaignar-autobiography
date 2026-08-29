@@ -50,6 +50,9 @@ const VALIDATORS = [
     name: "manohara",
     script: "scripts/validate-manohara.mjs",
     repo: "kalaignar-cinema-works",
+    // Shares an archive with Tirumbippaar but pins an older commit, so each has
+    // its own checkout directory.
+    sourceDir: "kalaignar-cinema-works-manohara",
     data: "public/data/cinema/manohara",
     // No --data flag, so the copy is run from a temporary working directory instead.
     corrupt(dir) {
@@ -63,6 +66,25 @@ const VALIDATORS = [
       j.sceneId = "not-the-source-scene-id";
       fs.writeFileSync(f, JSON.stringify(j, null, 2) + "\n");
       return "segment ids match the source scene ids in order";
+    },
+  },
+  {
+    name: "tirumbippaar",
+    script: "scripts/validate-tirumbippaar.mjs",
+    repo: "kalaignar-cinema-works",
+    sourceDir: "kalaignar-cinema-works-tirumbippaar",
+    data: "public/data/cinema/tirumbippaar",
+    // No --data flag, so the copy is run from a temporary working directory instead.
+    corrupt(dir) {
+      // Reintroduce the superseded ஊஹூம் reading into one scene. The file stays
+      // well-formed and the change is a single vowel sign, so only a validator that
+      // actually compares the release against the pinned archive notices — which is
+      // exactly the regression this work's guards exist to prevent.
+      const f = path.join(dir, "scenes", "scene-06.json");
+      const j = JSON.parse(fs.readFileSync(f, "utf8"));
+      for (const b of j.tamil.blocks) b.text = b.text.replace(/ஊஹும்/g, "ஊஹூம்");
+      fs.writeFileSync(f, JSON.stringify(j, null, 2) + "\n");
+      return "the superseded reading ஊஹூம் is absent from the imported text";
     },
   },
   {
@@ -105,7 +127,9 @@ console.log(`\nvalidator contract — ${VALIDATORS.length} registered, ${pending
 for (const v of VALIDATORS) {
   // Absolute: cwd-mode validators are run from a temporary directory, where a relative path
   // would resolve to nothing and be reported as an unusable source rather than as bad data.
-  const src = path.resolve(SOURCES, v.repo);
+  // Works whose archive is shared but pinned differently live in their own checkout
+  // directory, so a validator may name one explicitly instead of using the repo name.
+  const src = path.resolve(SOURCES, v.sourceDir ?? v.repo);
   if (!fs.existsSync(src)) {
     console.error(`  ${v.name}: source clone not found at ${src} — cannot test`);
     process.exit(2);

@@ -1,0 +1,250 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-21",
+  "canonicalScene": 21,
+  "sourceHeading": 21,
+  "headingTa": "காட்சி 21] [சென்னை குமுதா வீடு—பகல்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 29,
+      "printedPage": 21
+    },
+    {
+      "pdfPage": 30,
+      "printedPage": 22
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சமையல்காரன்",
+        "text": "சமையல்காரன்: அம்மா ! சின்னம்மா வர்றாங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குமுதா ஓடி வருகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா! (தழுவிக் கொள்ளல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: (பாண்டியனைப் பார்த்து) சின்னம்மா இவுரு .."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: சொன்னால் தெரியுமா உனக்கு ?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சொல்லாமலே தெரியும். “வாழு, வாழ விடு” மன்னிக்கவும். தங்கள் பெயர் பாண்டியன்தானே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : ஆமாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சமையல்காரன்",
+        "text": "சமையல்காரன்: யாருங்க. அந்த கோவலனைக் கொன்னாரே அந்தப் பாண்டியனா .."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: ஆக்கும்... சௌந்தர பாண்டியன். ஆளைப்பாரு !..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: வாருங்கள் முதலில் காபி சாப்பிடுவோம்...."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s021-u001",
+        "kind": "dialogue",
+        "speakerLabel": "சமையல்காரன்",
+        "sourceRecordId": "tirumbippaar-s021-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "Amma! Chinnamma is coming!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s021-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "Chinnamma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "(Kumudha comes running.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s021-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "Kumudha! (They embrace.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s021-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "(Looking at Pandiyan) Chinnamma, this gentleman...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s021-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "Would you know if I told you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s021-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "I know without being told. 'Vaazhu, Vaazha Vidu'—forgive me. Your name is Pandiyan, isn't it?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s021-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 29,
+            "printedPage": 21
+          }
+        ],
+        "text": "Yes.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u009",
+        "kind": "dialogue",
+        "speakerLabel": "சமையல்காரன்",
+        "sourceRecordId": "tirumbippaar-s021-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "Who, sir? That Pandiyan who killed Kovalan?...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u010",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s021-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "Yes indeed...Soundara Pandiyan. Just look at the man!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s021-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s021-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "Come, first let's have coffee....",
+        "notes": []
+      }
+    ]
+  }
+}

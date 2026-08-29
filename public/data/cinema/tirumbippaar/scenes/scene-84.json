@@ -1,0 +1,153 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-84",
+  "canonicalScene": 84,
+  "sourceHeading": 84,
+  "headingTa": "காட்சி 84]",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 102,
+      "printedPage": 94
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பிரசவ ஆஸ்பத்திரி\n(வாட்ச்மேன் கூண்டில், பத்திரிகையுடன் வாட்ச்மேன் உட்கார்ந்திருக்கிறான். பரந்தாமனின் விளம்பரம் கண்ணில்படல்]\n\"அன்புள்ள குமுதாவுக்கு\" (ஆர்வமாய்) என்னாது ! என்னாது ! நம்ப குமுதா பேரு வருது ! (மீண்டும்) அன்புள்ள குமுதாவுக்கு... (பிறகு முணகல் ) (உரக்க) இப்படிக்கு உன் மாமன் பரந்தாமன், 15, இமாலயா ஹோட்டல், சென்னை ...ஆகா, குமுதாவோட கவலையெல்லாம் ஒழிஞ்சிடும்!இப்பவே எழுதுகிறேன் குமுதா விலாசத்தை (கார்டைத்தேடி) எங்கடா கார்டு ! இதுவேற ...ம்....\n(எடுத்து எழுதுகிறான். எழுதி முடிக்கும்போது அந்தப் பக்கம் பாண்டியன் வருதல்)\nவாட்ச்மேன்: (பாண்டியனைப் பார்த்து) தம்பீ ! கொஞ்சம் நில்லேன்! (அருகே வந்து) இந்தப் பக்கம்தானே போறே?\nபாண்டியன்: ஆமாம்\nவாட்ச்மேன் : உம். இந்தக் கார்டை கொஞ்சம் தபால் பெட்டியிலே போட்டுட்டு போய்டேன். (பாண்டியன் வாங்குதல்) ரொம்ப அவசரம் எனக்கு ஆஸ்பத்திரி நேரம். வெளியே போகக்கூடாது ! போட்டுர்ரீயா?\nபாண்டியன்: ம்...\n(வாங்கிக்கொண்டு போகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s084-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "(Maternity hospital. The watchman is seated in his booth with a newspaper. Paranthaman's advertisement catches his eye.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s084-u002",
+        "kind": "dialogue",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "'To dear Kumudha'—(eagerly) What! What! Our Kumudha's name is here! (Again.) 'To dear Kumudha...' (Then muttering; aloud.) 'Yours, your uncle Paranthaman, 15, Himalaya Hotel, Chennai...' Ah! All Kumudha's worries will be over! I'll write Kumudha's address right now. (Searching for a card.) Where's the card! This too... hmm...",
+        "notes": [
+          "This source-visible passage is unlabelled in the booklet. The surrounding stage direction shows the watchman reading/reacting, but no speaker label or dialogue-record ID is invented in the derivative metadata."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s084-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "(He takes a card and writes. As he finishes writing, Pandiyan comes along that side.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s084-u004",
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "sourceRecordId": "tirumbippaar-s084-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "(Seeing Pandiyan.) Brother! Wait a moment! (Coming closer.) You're going this way, aren't you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s084-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s084-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "Yes.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s084-u006",
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "sourceRecordId": "tirumbippaar-s084-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "Hmm. Drop this card in the post box on your way. (Pandiyan takes it.) It's very urgent. I'm on hospital duty; I mustn't go outside! You'll post it, won't you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s084-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s084-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "Hmm...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s084-u008",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "(He takes the card and goes.)",
+        "notes": []
+      }
+    ]
+  }
+}

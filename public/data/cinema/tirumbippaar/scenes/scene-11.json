@@ -1,0 +1,64 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-11",
+  "canonicalScene": 11,
+  "sourceHeading": 11,
+  "headingTa": "காட்சி 11] [ஆறு",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 19,
+      "printedPage": 11
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[படகொன்று போய்க் கொண்டிருக்கிறது. படகில் பரந்தாமனும், வேறு ஒரு பெண்ணும் பாடிக் கொண்டு போகிறார்கள்.]"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s011-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 19,
+            "printedPage": 11
+          }
+        ],
+        "text": "(A boat is moving along.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s011-u002",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-003",
+        "pageProvenance": [
+          {
+            "pdfPage": 19,
+            "printedPage": 11
+          }
+        ],
+        "text": "(Paranthaman and another woman are singing as they travel in the boat.)",
+        "notes": [
+          "The booklet prints only this performance reference; no song title or lyric body is supplied or reconstructed.",
+          "The source does not name the other woman, so the English does not identify her."
+        ]
+      }
+    ]
+  }
+}

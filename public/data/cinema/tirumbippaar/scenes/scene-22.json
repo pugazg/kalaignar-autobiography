@@ -1,0 +1,168 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-22",
+  "canonicalScene": 22,
+  "sourceHeading": 22,
+  "headingTa": "காட்சி 22] [ஹோட்டலறை",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 30,
+      "printedPage": 22
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா : எத்தனை நாளைக்கு ஹோட்டலில் தங்கியிருப்பது. சீக்கிரம் ஒரு வீடு பாருங்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : வீடு பார்ப்பது இருக்கட்டும்.. வா இன்றைக்காவது ஊரைச் சுற்றிப் பார்த்துவிட்டு வரலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: ஊஹும்... முதலில் குடும்பம் ஆரம்பிக்க வேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஆரம்பிப்போமே. ஏன் அவசரப்படுகிறாய். குடும்பத்துக்கும் சென்னையைச் சுற்றிப் பார்ப்பதற்கும் என்ன சம்பந்தம்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: சென்னையில் என்ன இருக்கிறது?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சென்னையில் என்ன இருக்கிறதா? கண்காட்சி சாலையைப்பற்றி கதை கதையாகச் சொல்கிறார்கள். கதிரவனைப் பழிக்குமாம் கலங்கரை விளக்கம். மிருகக் காட்சி சாலையும், மெரினா கடற்கரையும் பார்க்காத கண்கள் பாபக் கண்களாம். ம்...புறப்படு ! அன்புக்கரசி, அழகு மணி மாளிகையின் அலங்காரத் திருவுருவே. அழித்தெழுதா சித்திரமே. புறப்படு."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(புறப்படுதல்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s022-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s022-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "How many days are we to stay in a hotel? Find a house soon.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s022-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s022-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "Let the house-hunting wait... Come, at least today let's go around and see the city.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s022-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s022-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "Uh-uh...first we must start a family.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s022-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s022-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "We will. Why are you in such a hurry? What has starting a family got to do with seeing Chennai?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s022-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s022-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "What is there in Chennai?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s022-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s022-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "What is there in Chennai? They tell story after story about the exhibition hall. They say the lighthouse puts even the sun to shame. Eyes that have not seen the zoo and Marina beach are sinful eyes, they say. Hmm...come! Queen of love, adorned sacred image of a jewel-beautiful palace, indelible picture. Come.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s022-u007",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "(They leave.)",
+        "notes": [
+          "Source-visible standalone direction `(புறப்படுதல்)` restored as its own unit rather than folded into Paranthaman's dialogue."
+        ]
+      }
+    ]
+  }
+}

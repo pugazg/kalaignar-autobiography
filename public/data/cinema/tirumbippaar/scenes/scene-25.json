@@ -1,0 +1,88 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-25",
+  "canonicalScene": 25,
+  "sourceHeading": 25,
+  "headingTa": "காட்சி 25]",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 31,
+      "printedPage": 23
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[தமயந்தி தூங்கும்போது நடுராத்திரியில் அவளை ஏமாற்றி விட்டு, வஞ்சித்து விட்டு சேலையில் பாதியை கிழித்துக்கொண்டு நளன் புறப்பட்டு ஓடிப் போனான் ! போனான், போனான், புண்ணியவதியைத் தவிக்கவிட்டுப் போனான். போயே போய்விட்டான்.]"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[அதேபோல பரந்தாமன், நளனைப் பின்பற்றி பாமாவைத் தவிக்கவிட்டுப் போய்விட்டான். பாமா பரந்தாமனைக் காணாது திகைப்பது.]"
+      },
+      {
+        "kind": "prose",
+        "text": "கானகத்தில் காதலியை காரிருளில் கைவிட்டுப் போனதுவும் வேந்தர்க்குப் போதுமோ ..."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s025-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "(While Damayanti slept, in the middle of the night Nala deceived her, betrayed her, tore off half her sari and set off running! He went, he went, leaving that virtuous woman to suffer. He went—he went away altogether.)",
+        "notes": [
+          "The corrected source narrates Nala in the third person; the historical first-person English has been removed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s025-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "(In the same way, following Nala, Paranthaman goes away leaving Bama to suffer. Bama is bewildered when she cannot find Paranthaman.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s025-u003",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "Was abandoning the beloved in the forest, in pitch darkness, not enough for the king?...",
+        "notes": [
+          "The source supplies no speaker label for this closing line; none is invented. The Nala-Damayanti parallel is preserved without importing outside text."
+        ]
+      }
+    ]
+  }
+}

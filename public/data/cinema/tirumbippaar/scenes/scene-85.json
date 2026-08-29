@@ -1,0 +1,100 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-85",
+  "canonicalScene": 85,
+  "sourceHeading": 85,
+  "headingTa": "காட்சி 85]",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 102,
+      "printedPage": 94
+    },
+    {
+      "pdfPage": 103,
+      "printedPage": 95
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[தெரு\n[கார்டை எடுத்துச் சென்ற பாண்டியன் தெரு மூலையிலுள்ள பெட்டியில் போடும்போது தவறி கீழே விழுகிறது. அதில் விலாசம் தெரிகிறது]\nபரந்தாமன்,\n15, இமாலயா ஹோட்டல்,\nசென்னை"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன்: (திடுக்கிட்டு) பரந்தாமன்!\n(கார்டைப் படிக்கிறான்) ஆ! குமுதாவின் விலாசம்!\nஎன் குமுதா அகப்பட்டுவிட்டாள் !\nகுமுதா! குமுதா! குமுதா ! குமுதா!\n(ஓடுகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s085-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "(Street. As Pandiyan goes to put the card into the box at the street corner, it slips and falls to the ground. The address on it becomes visible.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s085-u002",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 102,
+            "printedPage": 94
+          }
+        ],
+        "text": "Paranthaman, 15, Himalaya Hotel, Chennai.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s085-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s085-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 103,
+            "printedPage": 95
+          }
+        ],
+        "text": "(Startled.) Paranthaman! (He reads the card.) Ah! Kumudha's address! I've found my Kumudha! Kumudha! Kumudha! Kumudha! Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s085-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 103,
+            "printedPage": 95
+          }
+        ],
+        "text": "(He runs.)",
+        "notes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-02",
+  "canonicalScene": 2,
+  "sourceHeading": 2,
+  "headingTa": "காட்சி 2] [பூமாலை வீடு—காலை நேரம்",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 10,
+      "printedPage": 2
+    },
+    {
+      "pdfPage": 11,
+      "printedPage": 3
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பூமாலை ஏழெட்டு குழந்தைகளுக்கு பாட்டு மூலமாக நீதி போதனைப் பாடம் சொல்லித்தருகிறாள்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: நாளைக்கு காலையிலே வந்துடணும்..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குழந்தைகள் போகின்றன)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: (தூங்கியெழுந்த சோம்பலுடன் வந்துகொண்டே) ஆமாம் காலையிலே வந்துடுங்க! மனுஷனை தூங்கவிடாமல் கத்தலாம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: கத்தலா இது! கற்கண்டைவிட இனிப்பாயிற்றே மழலை மொழி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: அக்கா! இதெல்லாம் எனக்குப் பிடிக்கிலே! பஞ்சத்திலே அடிபட்டதையெல்லாம் இங்கே ஏன் கூப்பிடுறே? எங்கயாவது தர்மப் பள்ளிக்கூடத்துக்குப் போகட்டுமே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: எனக்குப் பொழுதுபோக வேண்டும் தம்பி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: பணக்கார வீட்டுப் பெண்களுக்கு பொழுதைக் கழிக்கவா வழியில்லை? பல வழியிருக்கு! பேட்மிட்டன், பிங்பாங், லேடீஸ் கிளப், இங்கிலீஷ் பிக்சர், So many entertainments."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: பல வழியிருக்கலாம் தம்பி! ஆனால் மற்றவர்களுக்கும் பயனுள்ளதாக இருக்க வேண்டாமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: சரி...உன் இஷ்டம்! இனிமே இந்த வீட்டுக்கு படுக்க வர்ரதே தப்பு! நமக்கு சத்திரம் சாவடியா இல்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: தம்பி அப்படியெல்லாம் சொல்லாதே! கடல் போல வீடு இருக்கு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: நல்லா இருந்ததுபோ! அக்கா! பணம் எதுக்காக இருக்கு...அனுபவிக்க—வாழ்வு, சுகம், பணம்—எல்லாமே மூன்று எழுத்து."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அன்பு, தொண்டு—அதுகூட மூன்று எழுத்துத்தான், பரந்தாமா வாழ்வு தேவைதான். ஆனால் மற்றவர்களுக்காக வாழ்கிற வாழ்வு—சுகம் வேண்டியதுதான்—பிறருடைய ஆனந்தத்திலே ஏற்படுகிற இதய சுகம் .... ... ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: ஊம் கும். கூடிய சீக்கிரம் இந்த வீடு ஒரு ஆஸ்ரமமா ஆயிடும்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கடுகடுப்புடன் போகிறான். பாமாவின் பெற்றோர் வருகின்றனர்.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: யாரு ... ... ஓ ... ... வாங்க வாங்க! உக்காருங்க! குண்டுமணி! டீ கொண்டுவா!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(எல்லோரும் உட்காருகின்றனர்.)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s002-u001",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-001",
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "(Poomalai is teaching seven or eight children moral lessons through song.)",
+        "notes": [
+          "The booklet prints only the performance reference; no song title or lyric body is supplied or reconstructed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "You must come tomorrow morning...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "(The children leave.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s002-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "(Coming in with the drowsiness of someone just awakened) Yes, come in the morning! Then you can shout away without letting a man sleep...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "You call this shouting? A child's prattle is sweeter than sugar candy!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s002-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "Akka! I don't like any of this! Why do you call all these famine-stricken people here? Let them go to some charity school somewhere...",
+        "notes": [
+          "`தர்மப் பள்ளிக்கூடம்` is retained as the source's charity-school reference rather than reduced to an unspecified school."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "I need something to pass the time, brother!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s002-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "Are there no ways for women of rich households to pass the time? There are plenty! Badminton, ping-pong, ladies' club, English pictures—so many entertainments.",
+        "notes": [
+          "The source's English code-switching is retained in meaning and register."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "There may be many ways, brother! But shouldn't it be useful to others too?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s002-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "All right...your wish! From now on, even coming to this house just to sleep is a mistake! Aren't there choultries and rest houses for me?",
+        "notes": [
+          "The earlier English incorrectly turned this first-person complaint into an instruction not to let other people sleep at the house. The corrected Tamil is about Paranthaman himself coming home merely to sleep."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Brother, don't say things like that! We have a house as vast as the sea!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s002-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Fine, keep it that way! Akka! What is money for...to enjoy—life, pleasure, money—all are three-letter words.",
+        "notes": [
+          "The source makes a Tamil word-length play; the English keeps the explicit claim rather than replacing it with a new English pun."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Love, service—those too are three-letter words, Paranthama. Life is necessary, yes. But a life lived for others—that is the life one needs; pleasure is desirable—the pleasure of the heart that arises from other people's happiness.... ... ...",
+        "notes": [
+          "The Tamil word-length contrast is preserved as a stated rhetorical device rather than recreated with different English vocabulary."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s002-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Hmm. At this rate, this house will soon become an ashram.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u015",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "(He leaves irritably. Bama's parents arrive.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s002-u016",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s002-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "Who is it... ... Oh... ... come, come! Sit down! Gundumani! Bring tea!",
+        "notes": [
+          "The exact Tamil label remains immutable metadata; the English uses a transliteration only in translated speech."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s002-u017",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 11,
+            "printedPage": 3
+          }
+        ],
+        "text": "(Everyone sits down.)",
+        "notes": []
+      }
+    ]
+  }
+}

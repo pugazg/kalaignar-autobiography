@@ -1,0 +1,82 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-23",
+  "canonicalScene": 23,
+  "sourceHeading": 23,
+  "headingTa": "காட்சி 23] [மிருக காட்சிசாலை",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 30,
+      "printedPage": 22
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கூண்டில் புலி]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: (பாமாவிடம்) புலி வாயில் உன்னைத் தள்ளிவிட்டால் என்ன செய்வாய்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: புல்லாக மாறிவிடுவேன்....புலி பசித்தாலும் புல்லைத் தின்னாது !"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s023-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "(A tiger in a cage.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s023-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s023-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "(To Bama) What would you do if I pushed you into the tiger's mouth?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s023-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s023-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 30,
+            "printedPage": 22
+          }
+        ],
+        "text": "I'd turn into grass.... Even when a tiger is hungry, it won't eat grass!",
+        "notes": []
+      }
+    ]
+  }
+}

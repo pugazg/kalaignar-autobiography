@@ -1,0 +1,98 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-26",
+  "canonicalScene": 26,
+  "sourceHeading": 26,
+  "headingTa": "காட்சி 26]",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 31,
+      "printedPage": 23
+    },
+    {
+      "pdfPage": 32,
+      "printedPage": 24
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(பாமா ஓடுகிறாள்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பாமா பைத்தியக்காரி போலானாள். பரிதாபத்திற்குரியவளானாள். ஓடினாள், எங்கேயோ ஓடினாள், ஒரு முடிவு தேடி ஓடினாள். வழவழப்பான தார் ரோடு, வஞ்சிக்கப்பட்ட அவளுக்குப் பாதை காட்ட முடியவில்லை. மாலுமிகளுக்கு வழி காட்டும் தீபஸ்தம்பம் திக்கற்ற அவளுக்கு திசை காட்ட முடியவில்லை. கொந்தளிக்கும் கடல் குமுறி எழும் அவள் உள்ளத்தோடு போட்டிபோட முடியவில்லை. உறுமு-"
+      },
+      {
+        "kind": "prose",
+        "text": "வது புலியல்ல. உலகம் உலகம்! அவள் வெறுத்துவிட்டு வந்த உற்றார் உறவினர் தாய் தந்தையர் வாழும் உலகம் ! அந்த உலகத்தின் முகத்திலே இனி அவள் விழிக்க முடியாது ! விழிக்க முடியாது ! விழிக்கவே முடியாது!]"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கடலோரத்தில் விழுகிறாள்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s026-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "(Bama runs.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s026-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          },
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "(Bama became like a madwoman, a figure deserving pity. She ran—ran somewhere, searching for an end. The smooth tar road could not show a path to the woman who had been deceived. The beacon that guides sailors could not show direction to one who had lost all bearings. The raging sea could not compete with her heart surging in turmoil. What roared was not a tiger. The world, the world! The world in which lived the kith and kin, mother and father whom she had rejected and left behind! She could no longer face that world! She could not! She could never face it!)",
+        "notes": [
+          "The source narration genuinely crosses PDF 31→32; its emphatic repetitions and the explicit sailors (`மாலுமிகள்`) reference are preserved."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s026-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "(She falls on the seashore.)",
+        "notes": []
+      }
+    ]
+  }
+}

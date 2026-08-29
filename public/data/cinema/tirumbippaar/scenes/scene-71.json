@@ -1,0 +1,305 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-71",
+  "canonicalScene": 71,
+  "sourceHeading": 71,
+  "headingTa": "காட்சி 71]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 87,
+      "printedPage": 79
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[ஹோட்டல்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : எல்லாம் அரேஞ்ச் பண்ணிட்டேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: ஆள் எப்படி அழகிதானா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: முப்பத்தி மூணு லட்சணம் பொருந்தியவள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: என்னப்பா ஒரு லட்சணம் புதுசா சொல்றே !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அவ லட்சணத்தெ நீ நேரா பாத்தா தெரியும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஆ !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: தாஸியாகப் பொறந்தாலும், நீ வர்ணிப்பியே ; அது மாதிரி தங்கக் கொடி பரந்தாமா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கருடா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: அவளெப் பாத்தோன்ன எனக்கு ஒரு ஐடியா தோணுச்சி !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : என்ன?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : நம்ப 'வாழு' புஸ்தகத்தின் இரண்டாம் பதிப்புக்கு அவளை அட்டைப் படமா போடலாம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஏ சும்மாயிருடா பிஸ்னஸ்!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் தாசி வீட்டுக்குப் புறப்படுகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s071-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "(Hotel.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s071-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "I've arranged everything.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s071-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "Ah—what is she like? Is she beautiful?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s071-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "She possesses thirty-three marks of beauty.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s071-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "What, man—you've added one new mark!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s071-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "You'll know that mark when you see her in person.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s071-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "Ah!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u008",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s071-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "Though born a courtesan, she's just the sort of golden creeper you would describe, Paranthama!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s071-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "Garuda!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u010",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s071-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "The moment I saw her, an idea came to me!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s071-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "What?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u012",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s071-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "We could put her on the cover of the second edition of our book 'Vaazhu'!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s071-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "Oh, keep quiet, you businessman!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s071-u014",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "(Paranthaman leaves for the courtesan's house.)",
+        "notes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-67",
+  "canonicalScene": 67,
+  "sourceHeading": 67,
+  "headingTa": "காட்சி 67]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 83,
+      "printedPage": 75
+    },
+    {
+      "pdfPage": 84,
+      "printedPage": 76
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[புண்யகோடி வீடு - இரவு"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[புண்யகோடி கதவைத் தட்டல்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குரல்",
+        "text": "குரல் : ராதா ராதா!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் வேறு பக்கமாக வெளியேறுகிறான். புண்யகோடி வருகிறான். பரந்தாமன் வந்ததைச் சொல்ல முனைகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : ராதா சாப்பாடு போடு சீக்கிரம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ராதா",
+        "text": "ராதா : .........."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : என்னா... இன்னைக்கு நேரத்லயே சாப்ட்டு படுக்கணும்..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கிராமபோன் வைத்துப் பாடியதற்காக கிராமபோனைக் காட்டுகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : ஆமாம் ! இப்பதான் சங்கீதம் கேட்கிற வேளை! சாப்பாட்டைப் போடு நீ!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் போன ஜன்னலைக் காட்டுகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : ஜன்னல் திறந்திருந்தா சாத்துறதுதானே ..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இன்னும் ஏதோ சொல்லப் போகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அது கெட்டுது போ ! நீ சாப்பாடு போடுறியா இல்லியா"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s067-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "(Punyakodi's house—night. Punyakodi knocks at the door.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குரல்",
+        "sourceRecordId": "tirumbippaar-s067-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "Radha! Radha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "(Paranthaman leaves by another side. Punyakodi comes in. Radha tries to tell him that Paranthaman had come.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u004",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s067-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "Radha, serve the food quickly!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u005",
+        "kind": "dialogue",
+        "speakerLabel": "ராதா",
+        "sourceRecordId": "tirumbippaar-s067-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "..........",
+        "notes": [
+          "The source prints only dots for Radha's labelled response; no vocalization is invented."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s067-u006",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s067-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "What... today I have to eat on time and go to bed...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u007",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "(She points to the gramophone, indicating that it had been played.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u008",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s067-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "Yes! Is this the time to listen to music! Serve the food!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "(She points to the window through which Paranthaman left.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u010",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s067-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "If the window is open, just close it...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u011",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "(She tries to say something more.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s067-u012",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s067-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 84,
+            "printedPage": 76
+          }
+        ],
+        "text": "Forget all that! Are you going to serve the food or not!",
+        "notes": []
+      }
+    ]
+  }
+}

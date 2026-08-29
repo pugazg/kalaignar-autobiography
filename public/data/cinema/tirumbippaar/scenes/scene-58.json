@@ -1,0 +1,89 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-58",
+  "canonicalScene": 58,
+  "sourceHeading": 58,
+  "headingTa": "காட்சி 58]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 76,
+      "printedPage": 68
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[News Paper Sheet"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன், பரந்தாமன் சிரிப்பு]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : (பத்திரிகையை வைத்துக்கொண்டு) பாண்டியனுக்கு மூன்று வருட கடுங்காவல் தண்டனை !"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(மீண்டும் சிரிப்பு)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s058-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "(Garudan and Paranthaman laugh.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s058-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s058-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "(Holding the newspaper.) Three years' rigorous imprisonment for Pandiyan!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s058-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "(They laugh again.)",
+        "notes": []
+      }
+    ]
+  }
+}

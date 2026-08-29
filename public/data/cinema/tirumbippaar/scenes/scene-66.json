@@ -1,0 +1,249 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-66",
+  "canonicalScene": 66,
+  "sourceHeading": 66,
+  "headingTa": "காட்சி 66]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 82,
+      "printedPage": 74
+    },
+    {
+      "pdfPage": 83,
+      "printedPage": 75
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[மில் வாசற்புரம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "text": "தொழிலாளி: என்ன இவ்வளவு நேரமா பேசுறாங்க முதலாளியும் பரந்தாமனும்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : என்ன பேசுவாங்க! நம்ப கோரிக்கையை முதலாளி கவனிக்கப் போறாரா இல்லையான்னு ஒரு முடிவு கட்டிட்டுத்தான் வருவாரு பரந்தாமன். அவர் என்ன சாமான்யமா! சாக்ஷாத் புரட்சி அவதாரம்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் வேகமாக வருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி: தம்பீ! என்ன பேசினீங்க! என்ன ஆச்சு ......"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : என்ன ஆச்சு. குறைகளை எடுத்துச் சொன்னேன். கோரிக்கையை கவனிக்கும்படியாக எப்படி எப்படியோ கேட்டுக்கொண்டேன். தொழிலாளர் புரட்சி மூளும் என்றுகூட எச்சரித்தேன். அசையவில்லை அந்த முதலாளி."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அப்புறம்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அப்புறமென்ன ! திருமணம் செய்யவேண்டியதுதான்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : என்ன?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : இல்லை... தீர்மானம் செய்ய வேண்டியதுதான்! திட்டம் தீட்ட வேண்டியதுதான் ! கோரிக்கைகளை கவனிப்பதாக இத்தனை நாள் அமைதியாயிருந்தோம். அதை கோழைத்தனம் என்று கருதிவிட்டார் குருட்டுமதி படைத்தவர் ! கொதித்துக் கிளம்புவோம்! போர்க்கொடியை உயர்த்துவோம்! புரட்சி நடத்துவோம்! புரட்சி !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : புரட்சி ! (எல்லோரும் புரட்சி கோஷம்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s066-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "(At the entrance to the mill.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u002",
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "sourceRecordId": "tirumbippaar-s066-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "What are the owner and Paranthaman talking about for so long?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u003",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s066-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "What else would they talk about! Paranthaman will come back only after deciding whether the owner is going to consider our demands or not. Is he an ordinary man! He is the very embodiment of revolution.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "(Paranthaman comes quickly.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u005",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s066-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "Brother! What did you speak about! What happened......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s066-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "What happened? I explained the grievances. I pleaded in every possible way that the demands be considered. I even warned him that a workers' revolution would erupt. That owner did not budge.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u007",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s066-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 82,
+            "printedPage": 74
+          }
+        ],
+        "text": "Then?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s066-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "What else! I must get married!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u009",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s066-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "What?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s066-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "No... we must make a decision! We must draw up a plan! All these days we stayed quiet because he said he would attend to the demands. That man of blind judgement has mistaken it for cowardice! Let us rise boiling with anger! Let us raise the battle flag! Let us make revolution! Revolution!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s066-u011",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s066-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 83,
+            "printedPage": 75
+          }
+        ],
+        "text": "Revolution! (Everyone raises the cry of 'Revolution!')",
+        "notes": []
+      }
+    ]
+  }
+}

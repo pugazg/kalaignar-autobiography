@@ -1,0 +1,728 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-32",
+  "canonicalScene": 32,
+  "sourceHeading": 32,
+  "headingTa": "காட்சி 32] [கருடன் பதிப்பகம்",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 38,
+      "printedPage": 30
+    },
+    {
+      "pdfPage": 39,
+      "printedPage": 31
+    },
+    {
+      "pdfPage": 40,
+      "printedPage": 32
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பேப்பர் பேல் கட்டு தூக்கிவந்த கூலி ஆள் ஆத்திரத்தோடு]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கூலி",
+        "text": "கூலி: இவ்வளவு பெரிய சுமை எங்கேருந்து தூக்கிட்டு வந்திருக்கேன். ஒழுங்காக காசை கொடுய்யா.."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : எட்டணாதான் அதோட மரியாதையா போ! நான்சன்ஸ்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கூலி",
+        "text": "கூலி : ஏன்ய்யா பெரிய மனுஷன் சின்ன வார்த்தையெல்லாம் பேசுரே. நான்சன்சாம்ல ..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் ஓங்கி இரண்டு மூன்று அடிகொடுத்தல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கூலி",
+        "text": "கூலி: அடிக்காதிய்யா. நான் தொழிலாளி !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : தொழிலாளி. தொழிலாளியாம் தொழிலாளி ... ........"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கூலிக்காரன் ஓடுகிறான் வெளியே )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: கொடுக்கிற காசை வாங்கிக்கிலேன்னா, இந்தப் பசங்களை யெல்லாம் இப்படித் தான் உதைக்கணும்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஆபிஸ் பையனைப் பார்த்தல் - வாய் பொத்தி நிற்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: பாட்டாளியின் குரல்! கருடா ! பேரு நல்லா அமஞ்சு போச்சில்ல. (புத்தகத்தை புரட்டியபடி)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : பேரு மட்டுமா ! இரண்டு நாள்ள 5000 காப்பி வித்திருக்கு ! அப்றம் என்ன?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் சிகரெட் பற்ற வைக்கிறான்.மேசையில் ''பாட்டாளியின் குரல் \" - இருக்கிறது. புண்யகோடி வருகிறான்)."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : யார் நீங்க !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : தெரியலியா என்னை. நான்தான் தொழிலாளர் தலைவன். நான் ஏன் வந்திருக்கேன் தெரியுமில்ல...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : என்னாங்க...."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கருடன் பரந்தாமன் விழித்தல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : தொழிலாளி சம்பளம் ஜாஸ்தியா கேட்டா, அதை சிந்திச்சு பார்க்க.."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : இல்லிங்க, அவன் சம்பளம் கேக்கிலே. இந்த பேப்பர் பேலை தூக்கிட்டு வந்தான்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அது இல்லிங்க! நான் மில் தொழிலாளியை சொல்கிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: ஆமாம் ஆமாம். தொழிலாளிகள் பிரச்சினையை கவனிக்காத முதலாளிகளை சும்மாவிடக்கூடாது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கருடா ! வாயால் கத்தி பயன் என்ன? பாட்டாளிகளின் குரல் பலம் பெறவேண்டுமானால், பெரிய கிளர்ச்சி நடத்தவேண்டும்.."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அப்படிச் சொல்லுங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : இந்த நாட்டின் முதுகெலும்புகள் பாட்டாளிகள். ஒரு தேசத்தின் உயிரே தொழிலாளி வர்க்கம். அதைத் துவண்டுபோக விடக்கூடாது ! நான் கங்கணம் கட்டிவிட்டேன். தொழிலாளி விடுதலைப் போராட்டத்தை விரைவில் தொடங்க வேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : சபாஷ் ! சபாஷ் ! தங்களைப்போன்ற உண்மையான உறுதி படைத்த வாலிபர்கள் இருந்தால் உலகத்துக்கே ஒரே நாளில் விமோசனம் பிறந்துவிடும். தாங்கள் எழுதிய பாட்டாளியின் குரல் படிக்கும்போது, படுகிழவனையும் பாலகனாக்குகிறது. கோழையையும் புலியாக்குகிறது. நாளையதினம் நடைபெறும் பொதுக்கூட்டத்திற்கு தாங்கள் தலைமை வகித்தாக வேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: தலைமையா? நானா! வேண்டாம் நான் பொதுஜனத் தொண்டன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி: இல்லை தம்பி ! அப்படிச் சொல்லக்கூடாது ! ஆயிரக்கணக்கான தொழிலாளரும் விரும்புகிறார்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : தொழிலாளர் என் தோழர்கள் ! அவர்கள் அன்புக்கட்டளையை நிறைவேற்றுகிறேன். இனி இந்த உலகத்தில் தொழிலாளி நினைத்ததெல்லாம் நடக்கவேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: ஆமா ...ஆமா ."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஆபீஸ் பையன் கருடனிடம் கையை நீட்டி)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: சம்பளம் ஜாஸ்தியா ."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : சீ போடா! பெரிய உலக விஷயம் பேசிட்டு இருக்கும்போது..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி: அப்ப நான் வர்ரேங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: நமஸ்காரம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி: (கருடனிடம்) நான் வர்ரேங்க!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s032-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "(A labourer who has carried in a bale of paper speaks angrily.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கூலி",
+        "sourceRecordId": "tirumbippaar-s032-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "I've carried such a huge load all this way. Pay me properly....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "Eight annas, that's all. Take it and leave respectfully! Nonsense....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கூலி",
+        "sourceRecordId": "tirumbippaar-s032-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "What, sir? You're a big man, yet you use such petty words. ‘Nonsense,’ is it?....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "(Paranthaman strikes him hard two or three times.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கூலி",
+        "sourceRecordId": "tirumbippaar-s032-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "Don't hit me, sir. I am a worker!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "Worker. A worker, he says—a worker....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u008",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "(The labourer runs outside.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u009",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "If they won't take the money they're given, these fellows all need to be kicked like this.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "(They look at the office boy; he stands covering his mouth.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "‘The Voice of the Toiler’! Garuda! The title has turned out well, hasn't it? (Leafing through the book.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u012",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "Not just the title! Five thousand copies sold in two days! What more do we need?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u013",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "(Paranthaman lights a cigarette. ‘The Voice of the Toiler’ lies on the table. Punyakodi enters.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u014",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "Who are you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u015",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "Don't you know me? I am the labour leader. You know why I've come....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u016",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "What is it, sir?....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u017",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "(Garudan and Paranthaman become alert.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u018",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "If a worker asks for higher wages, that ought to be considered....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u019",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "No, sir, he wasn't asking for wages. He carried this paper bale here....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u020",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "Not him! I mean the mill worker.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u021",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "Yes, yes. Employers who ignore workers' problems must not be spared.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u022",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "Garuda! What use is shouting with our mouths? If the voice of the toilers is to gain strength, we must launch a great agitation....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u023",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 39,
+            "printedPage": 31
+          }
+        ],
+        "text": "That's the way to speak....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u024",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "The toilers are the backbone of this country. The working class is the very life of a nation. We must not let it become dispirited! I have taken a solemn vow. We must soon begin the struggle for workers' liberation.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u025",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d019",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Bravo! Bravo! If there are truly resolute young men like you, liberation will dawn for the whole world in a single day. Reading your ‘The Voice of the Toiler’ turns even a decrepit old man into a youth, and a coward into a tiger. You must preside over tomorrow's public meeting.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u026",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d020",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Preside? Me? No, I am a servant of the public.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u027",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d021",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "No, brother! Don't say that! Thousands of workers want it too.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u028",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d022",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Workers are my comrades! I shall fulfil their loving command. From now on, everything the worker desires must happen in this world.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u029",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d023",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Yes...yes....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u030",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "(The office boy holds out his hand to Garudan.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u031",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s032-d024",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "A higher salary....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u032",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s032-d025",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Shoo, get lost! We're discussing great matters of the world....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u033",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d026",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Then I'll be going, sir....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u034",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s032-d027",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "Namaskaram.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s032-u035",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s032-d028",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 40,
+            "printedPage": 32
+          }
+        ],
+        "text": "(To Garudan) I'll be going, sir!",
+        "notes": []
+      }
+    ]
+  }
+}

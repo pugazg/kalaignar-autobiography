@@ -1,0 +1,128 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-87",
+  "canonicalScene": 87,
+  "sourceHeading": 87,
+  "headingTa": "காட்சி 87] [பூமாலை வீடு - காலை",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 105,
+      "printedPage": 97
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பூமாலை காப்பி சாப்பிட்டு முடிகிறது.குண்டுமணி பேப்பருடன் ஓடிவந்து]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : அம்மா அம்மா பாத்திங்களா ! குமுதா அம்மா விலாசத்தைக் கேட்டு உங்க தம்பி விளம்பரம் பண்ணியிருக்காரு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: ஆ! (பத்திரிகையைப் பார்த்தல்) குமுதாவைத் தேடுகிறான் பரந்தாமன் - பாவி ! அவளுக்கும் ஏதோ ஆபத்து வரப்போகிறது ! குண்டுமணி நான் உடனே மதறாஸ் புறப்பட வேண்டும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : நான் போனால்தான் அந்த நாசகாரனிடமிருந்து குமுதாவைக் காப்பாற்ற முடியும்!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s087-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "(Poomaalai finishes drinking coffee. Gundumani runs in carrying a newspaper.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s087-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s087-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "Amma! Amma! Did you see this! Your younger brother has put out an advertisement asking for Kumudha-amma's address!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s087-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s087-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "Ah! (She looks at the newspaper.) Paranthaman is searching for Kumudha—the sinner! Some danger is going to come to her too! Gundumani, I must leave for Madras immediately.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s087-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s087-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "...",
+        "notes": [
+          "The corrected source prints only an ellipsis for Gundumani's response; no reply is supplied editorially."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s087-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s087-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "Only if I go can I save Kumudha from that destroyer!",
+        "notes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-93",
+  "canonicalScene": 93,
+  "sourceHeading": 93,
+  "headingTa": "காட்சி 93] [ஜெயில்",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 111,
+      "printedPage": 103
+    },
+    {
+      "pdfPage": 112,
+      "printedPage": 104
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா ! சின்னம்மா !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : அழாதே குமுதா!..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : நீங்கள் கொல்லவில்லை உங்கள் தம்பியை ! அவனுடைய பழைய செயல்கள் அவனைப் பழிதீர்த்துக் கொண்டன !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: ஆரம்பத்திலிருந்தே அவன் நல்லவனாயிருந்தால் எனக்கேன் அவன்மீது ஆத்திரம் வரப்போகிறது. தொட்டுத் தொட்டு வளர்த்த என் செல்வத்தை துடிக்கத் துடிக்க ஏன் கொல்லப்போகிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : குமுதா ! உன் மாமன் உனக்கும் ஊராருக்கும் தந்த உபத்திரவங்களுக்கு உகந்த பரிசு வாங்கிக்கொண்டான் !\nஉன்னால் சந்தேகிக்கப்பட்ட நானும் களங்கமற்றவள் என்று காட்டிக்கொண்டேன், இந்தக் காரியத்தைச் செய்து !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: என்னை மன்னித்துவிடு சின்னம்மா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : அழாதே கண்ணே அழாதே ! சரி நேரமாகிறது ! குமுதா! பாண்டியன் ! வருகிறேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(மாணவிகளின் கண்களில் நீர். அதைக்கண்ட பூமாலை)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : குமுதா ! என் ஒரே வேண்டுகோளை நிறைவேற்று!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(மாணவிகளைக் காட்டி) இதோ புதிய ஜெகத்தின் பூங்கொத்துகள்! இந்த இளம் இதயங்களிலே அறிவு விளக்கேற்றி வைக்கப் பாடுபடு. திரும்பிப்பார் என்னும் அறிவுரையை, நன்றாக வாழ்பவர்கள், நலிந்து கிடப்பவர்கள் நாசவேலையில் ஈடுபட்டிருப்பவர்கள் அத்தனை பேருக்கும் தேவையான அறிவுரையாக்க நீயும் பாண்டியனும் முயற்சியுங்கள் ! வருகிறேன்.. (மாணவிகளிடம்) என் சிங்காரச் சிட்டுகளே ! எல்லோருக்கும் வாழ்த்து ! திரும்பிப்பார் உபதேசத்தை மறந்துவிடாதீர்கள், நான் திரும்பாத இடத்திற்குச் செல்கிறேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குழந்தைகள் கண்ணீருடன் நிற்கிறார்கள். பூமாலை வார்டர்கள் கூட்டிப் போகிறார்கள்)"
+      },
+      {
+        "kind": "prose",
+        "text": "வணக்கம்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s093-u013",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "(Jail.)",
+        "notes": [
+          "The corrected source explicitly prints the jail setting at the opening of scene 93. This source-proven setting was absent from the historical English layer and is restored without renumbering existing units."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s093-u001",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s093-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "Chinnamma! Chinnamma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s093-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "Don't cry, Kumudha!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s093-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "You did not kill your younger brother! His own past deeds took revenge upon him!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s093-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "If he had been a good man from the beginning, why would I ever have become angry with him? Why would I kill, while he writhed, the treasure I had so tenderly raised?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s093-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "Chinnamma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s093-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "Kumudha! Your uncle received the fitting reward for the suffering he caused you and the people of the town! And by doing this deed, I too showed that I—the woman you once suspected—was without stain!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s093-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "Forgive me, Chinnamma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s093-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "Don't cry, my dear, don't cry! All right, it is time. Kumudha! Pandiyan! I am going.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "(There are tears in the eyes of the female students. Poomaalai sees them.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s093-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "Kumudha! Fulfil my one request! (Pointing to the female students.) Here are the flower-clusters of a new world! Labour to kindle the lamp of knowledge in these young hearts. You and Pandiyan must strive to make the counsel 'Look Back' a counsel needed by everyone—those who live well, those who lie in distress, and those engaged in destructive deeds! I am going. (To the female students.) My lovely little birds! Blessings to all of you! Do not forget the teaching 'Look Back.' I am going to a place from which I will not return.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u011",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "(The children stand in tears. The warders lead Poomaalai away.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s093-u012",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 112,
+            "printedPage": 104
+          }
+        ],
+        "text": "Vanakkam.",
+        "notes": [
+          "The final printed word 'வணக்கம்.' is preserved as a closing salutation. The following star is structural and is not turned into a translation unit."
+        ]
+      }
+    ]
+  }
+}

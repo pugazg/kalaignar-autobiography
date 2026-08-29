@@ -1,0 +1,107 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-24",
+  "canonicalScene": 24,
+  "sourceHeading": 24,
+  "headingTa": "காட்சி 24] [கடற்கரை",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 31,
+      "printedPage": 23
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: நீலக்கடல் நேர்த்தியான காட்சி !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : இந்தக் கடல் திடீரென்று பொங்கிவிட்டால்.."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: அழகுக்குப் பக்கத்தில் எப்போதும் ஆபத்து இருக்கும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: இது பலருக்குப் புரிவதேயில்லை."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s024-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s024-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "The blue sea—what a beautiful sight!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s024-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s024-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "If this sea were suddenly to surge...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s024-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s024-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "There is always danger beside beauty.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s024-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s024-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 31,
+            "printedPage": 23
+          }
+        ],
+        "text": "Many people never understand that.",
+        "notes": []
+      }
+    ]
+  }
+}

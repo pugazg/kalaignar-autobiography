@@ -1,0 +1,67 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-54",
+  "canonicalScene": 54,
+  "sourceHeading": 54,
+  "headingTa": "காட்சி 54] [Reading Room",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 69,
+      "printedPage": 61
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[ஊர் மக்கள் பத்திரிகை செய்தி படித்துக் கொண்டிருக்கிறார்கள்.]"
+      },
+      {
+        "kind": "prose",
+        "text": "“பயங்கரமான வழிப்பறி. லேடி டாக்டர் உஷா தேவியின் நெக்லஸ் பறிபோயிற்று”—நேற்று இரவு கோவைக்குப் பக்கமுள்ள குனியமுத்தூர் கிராமத்திற்கு வைத்தியம் பார்க்கச் சென்று திரும்பிய, சிவசக்தி மில் முதலாளியின் புதல்வி லேடி டாக்டர் உஷாதேவியை சிலர் வழிமறித்து அவளுடைய ஐயாயிர ரூபாய் பெறுமானமுள்ள நெக்லஸை கொண்டுபோய் விட்டார்கள். போலீஸார் புலன் விசாரிக்கிறார்கள்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s054-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "(People of the town are reading a newspaper report.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s054-u002",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "'Terrifying highway robbery. Lady Doctor Usha Devi's necklace stolen'—Last night, Lady Doctor Usha Devi, daughter of the owner of Sivasakthi Mill, was returning after going to the village of Kuniyamuthur near Coimbatore to provide medical treatment. Some people waylaid her and carried away her necklace worth five thousand rupees. Police are investigating.",
+        "notes": [
+          "This is source-visible newspaper text, not labelled dialogue; no speaker or dialogue-record ID is invented."
+        ]
+      }
+    ]
+  }
+}

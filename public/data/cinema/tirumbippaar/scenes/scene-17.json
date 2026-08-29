@@ -1,0 +1,506 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-17",
+  "canonicalScene": 17,
+  "sourceHeading": 17,
+  "headingTa": "காட்சி 17] [பாமா அறை—இரவு",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 24,
+      "printedPage": 16
+    },
+    {
+      "pdfPage": 25,
+      "printedPage": 17
+    },
+    {
+      "pdfPage": 26,
+      "printedPage": 18
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பாமா சோகப் பதுமையாக அமர்ந்திருக்கிறாள், மறுநாள் நடைபெற இருக்கும் மண விழாவை நினைத்து கதவு தட்டப்படுகிறது. பாமா போய் கதவைத் திறக்கிறாள். பரந்தாமன் வருகிறான்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : பாமா!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாமா திடுக்கிடுகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: இது என்ன அக்ரமம். எனக்கொன்றும் புரியவில்லையே போய்விடுங்கள் தயவு செய்து..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஸ்...சத்தம் போடாதே ! தூங்குபவர்கள் விழித்துக் கொள்வார்கள். பாமா என்னைப் பார்! பார்க்கமாட்டாயா..... ஏன் பாமா என்னை இப்படி ஏமாற்றினாய்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா : ஏமாற்றுவது எனக்குத் தொழிலல்ல."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சரிதான்... கல்யாண தினத்தன்று காணாமற் போய்விட்டானே காதலன். எங்கே போனான். என்ன ஆனான். என்பதைப் பற்றி யெல்லாம் கவலைப்படாமல், அடுத்த காதலனை அவசரமாகத் தேர்ந்தெடுத்த நீ....எதுவும் தெரியாத பேதை ! நான் ஏமாற்றுக்காரன்—அப்படித்தானே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: எங்கே போனீர்கள். இந்த லோகத்தைவிட்டு சொர்க்க லோகத்துக்கா?...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சொர்க்கலோகம் போனாலும், அங்கே சொக்க வைக்கும் திலோத்தமை, மயக்குமொழி மேனகா அத்தனை பேரையும் உதறித் தள்ளிவிட்டு உன் சுந்தர முகத்தை நினைத்தபடி ஆகாயத்திலிருந்து குதித்திருப்பேனே, ஒரு சூனியக்கார லோகத்துக்குப் போய்விட்டேன் பாமா! ஒரு சூனியக்காரன் ஏமாற்றி விட்டான் பாமா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா : என்ன சொல்கிறீர்கள்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : யாரோ ஒரு மந்திரவாதி.... சாப்பிடுவதற்கு ஒரு காயகல்பம் இருக்கிறது. சாப்பிட்டால் எண்பது வயது வரையில் இளமை மாறாது என்றான். நம்பினேன், சாப்பிட்டேன். உனக்கும் வாங்கிவர எண்ணினேன். அவன் என்னை எங்கேயோ கொண்டு போய் விட்டான். என்னிடமிருந்த பத்தாயிர ரூபாயையும், உனக்காக நான் வாங்கிய வைர மாலையையும் திருடிக்கொண்டு எங்கேயோ போய்விட்டான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா : போலீஸாருக்குச் சொல்லவில்லையா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: இந்த வெட்கக்கேட்டை எப்படி வெளியில் சொல்வது ! மனமொடிந்து அலைந்து திரிந்து இங்கு வந்தேன். வந்தால், நீ வாழ்க்கைக்கு வேறு திட்டம் போட்டுவிட்டாய்... பாமா! நான் ஏமாற்றப்பட்டவன்தானா? அந்த மந்திரவாதியைவிட நீ பெரிய ஏமாற்றுக்காரியாகி விட்டாய், பாமா...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: (பரந்தாமனின் காலைப்பிடித்துக் கொண்டு விம்மியபடி) மன்னித்துவிடுங்கள் என்னை. அப்பாவின் ஆத்திரத்தை என்னால் எதிர்க்க முடியவில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : பொழுதுவிடிந்தால் உனக்குத் திருமணம். வேறொருவன் மனைவி! உன்னை மன்னிக்க நான் யார்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: என்னைக் காப்பாற்றுங்கள். இப்போதே அப்பாவிடம் சொல்லி கல்யாணத்தை நிறுத்தி விடலாம்...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: நிறுத்த மாட்டார். நம்முடைய காதல் நீடிக்க, ஒரே ஒரு வழிதானிருக்கிறது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: என்ன வழி (அழுகிறாள்)."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: அழாதே ! அன்புக்கரசி ! அழகுமணி மாளிகையின் அலங்காரத் திருவுருவே. அழித்தெழுதா சித்திரமே—ஆடிவரும் பொன் விளக்கே ! கட்டாணி முத்தழகி ! கண்கவரும் ரத்தினமே ! உன் கண்ணில் நீர் என்றால், என் உள்ளம் கலங்குதய்யோ! அழாதே பாமா !.... அழாதே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: நாம் வாழ வழி சொல்லுங்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: வாழ வழி ! இப்போதே இருவரும் வெளியேறி விடுவதுதான்...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா : ஆ"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : தங்கமே கேள் ! தந்தைக்கு ஒரு கடிதம் எழுதி வை. “திருமணம் பிடிக்கவில்லை—வெளியேறி விட்டேன்” என்று சிந்தைக்கினியவளே! சிங்கார மயிலே.... உம் சீக்கிரம் ... எழுது கண்ணே ! என் எழுதாத ஓவியமே எழுது !"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s017-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 24,
+            "printedPage": 16
+          }
+        ],
+        "text": "(Bama sits like an image of sorrow, thinking of the wedding that is to take place the next day. There is a knock at the door. Bama goes and opens it. Paranthaman enters.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Bama!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "(Bama is startled.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "What is this outrage? I don't understand anything. Please go away....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Shh...don't make a noise! The people sleeping will wake up. Bama, look at me! Won't you look at me?..... Why, Bama, did you deceive me like this?...",
+        "notes": [
+          "The corrected Tamil reads `என்னை இப்படி ஏமாற்றினாய்`; the earlier English `why are you changing like this` was based on a stale source reading and has been removed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s017-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Deceiving people is not my profession.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Quite right... Your lover disappeared on the wedding day. Without worrying at all about where he went or what happened to him, you hurriedly chose the next lover...an innocent who knows nothing! And I am the deceiver—isn't that it?...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Where did you go? From this world to heaven?....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Even if I had gone to heaven, I would have cast aside Tilottama who enchants there, Menaka of bewitching speech, every one of them, and leapt down from the sky thinking of your beautiful face. I went to a sorcerer's world, Bama! A sorcerer deceived me, Bama!",
+        "notes": [
+          "The corrected Tamil explicitly reads `சுந்தர முகம்`, `சூனியக்கார லோகம்`, and `சூனியக்காரன்`; the stale English `conch-like face`, `world of childish fools`, and `trickster` readings are therefore removed.",
+          "Mythological names are transliterated rather than replaced."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s017-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "What are you saying!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Some magician...said there was a kayakalpa remedy to eat, and that if one ate it youth would not change until the age of eighty. I believed him and ate it. I thought of buying some for you too. He took me somewhere. He stole the ten thousand rupees I had and the diamond necklace I had bought for you, and disappeared somewhere.",
+        "notes": [
+          "`காயகல்பம்` is retained as the traditional rejuvenation concept `kayakalpa`; the corrected Tamil explicitly prints `எண்பது வயது` (`eighty years`)."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s017-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 25,
+            "printedPage": 17
+          }
+        ],
+        "text": "Didn't you tell the police?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "How could I tell the outside world of this disgrace! Broken-hearted, I wandered about and came here. And when I arrived, you had made another plan for your life...Bama! I was the one who was deceived, wasn't I? Yet you have become a greater deceiver than that magician, Bama!....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "(Clutching Paranthaman's feet and sobbing) Forgive me. I could not stand up to my father's anger.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "At daybreak you will be married. Another man's wife! Who am I to forgive you!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u016",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "Save me. We can tell father right now and stop the wedding....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u017",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "He will not stop it. There is only one way for our love to continue.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u018",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "What way? (She cries.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u019",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "Don't cry! Queen of love! Ornamental sacred form of the jewel-palace of beauty! Picture that cannot be erased and redrawn—a swaying golden lamp! Kattani-pearl beauty! Eye-catching gem! If there are tears in your eyes, my heart is shaken, alas! Don't cry, Bama!.... Don't cry!",
+        "notes": [
+          "The deliberately ornate sequence of endearments is preserved rather than normalized into ordinary romantic prose.",
+          "The corrected Tamil reads `அழித்தெழுதா சித்திரமே`, so the stale English `not painted even with nectar` is removed.",
+          "`கட்டாணி முத்தழகி` is kept conservatively as `Kattani-pearl beauty` rather than assigning an unsupported modern paraphrase to the source image."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s017-u020",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "Tell me a way for us to live.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u021",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d019",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "A way to live! We must both leave right now....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u022",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s017-d020",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "Ah!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s017-u023",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s017-d021",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 26,
+            "printedPage": 18
+          }
+        ],
+        "text": "Listen, my gold! Write a letter to your father. 'I do not like the marriage—I have left,' write that, delight of my thoughts! Graceful peacock.... Hmm, quickly...write, my dear! My unpainted portrait, write!",
+        "notes": [
+          "The source's cascading endearments and imperative rhythm are retained."
+        ]
+      }
+    ]
+  }
+}

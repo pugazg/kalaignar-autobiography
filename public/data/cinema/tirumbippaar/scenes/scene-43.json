@@ -1,0 +1,110 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-43",
+  "canonicalScene": 43,
+  "sourceHeading": 43,
+  "headingTa": "காட்சி 43].",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 57,
+      "printedPage": 49,
+      "zeroDialogue": true
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(பாண்டியன் பாடுகிறான் எழுதியதை)"
+      },
+      {
+        "kind": "prose",
+        "text": "\"கலப்படம் கலப்படம் \""
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கருடன் பதிப்பகம் - மாலை"
+      },
+      {
+        "kind": "prose",
+        "text": "\"கலப்படம்\" பாட்டை ஆபீஸ் பையன் பாடுகிறான். பரந்தாமன் வந்து அவனிடமுள்ள பத்திரிகையை வாங்கி கிழித்தெறிகிறான்.அவன் வாய்மட்டும் ஆத்திரத்துடன் \" பாண்டியன்\" என்று முணுமுணுக்கிறது."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s043-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "(Pandiyan sings what he has written.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s043-u004",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-007",
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "“Kalappadam, kalappadam” [“Adulteration, adulteration”]",
+        "notes": [
+          "Only the repeated title/refrain printed in the booklet is translated. No missing lyric lines are imported or reconstructed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s043-u001",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-008",
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "(The office boy sings the song ‘Kalappadam’.)",
+        "notes": [
+          "This is the source-explicit reprise of the named song. The booklet prints no additional lyrics here."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s043-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 57,
+            "printedPage": 49
+          }
+        ],
+        "text": "(Paranthaman comes, takes the periodical from the boy and tears it up. His lips alone mutter ‘Pandiyan’ in anger.)",
+        "notes": [
+          "The source narrates the muttered name within prose rather than as a separately labelled dialogue line; no speaker-labelled dialogue record is invented."
+        ]
+      }
+    ]
+  }
+}

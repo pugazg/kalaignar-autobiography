@@ -1,0 +1,587 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-29",
+  "canonicalScene": 29,
+  "sourceHeading": 29,
+  "headingTa": "காட்சி 29] [கருடன் பதிப்பகம்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 34,
+      "printedPage": 26
+    },
+    {
+      "pdfPage": 35,
+      "printedPage": 27
+    },
+    {
+      "pdfPage": 36,
+      "printedPage": 28
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பரந்தாமன் வருதல்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : வாப்பா ! இரண்டு மூணு வாரமா ஏக ஜாலியா இருந்திருக்கும் life .."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : பாவம்... சென்னையிலே குடும்பம் அமைத்து என்னை சம்சார சிறையிலே போடலாமென்று துடித்தாள் பாமா... எங்கே போனாளோ என்ன ஆனாளோ!...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : ம்... சம்சாரமாவது ஒண்ணாவது மனுஷன் free-யா இருக்கணும், என்னாட்டம். நமக்கு உதாரணமாகத்தானே கடவுள் படைத்திருக்கிறான், மலருக்கு மலர் தாவுகிற......"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: மரத்துக்கு மரம் தாவுகிற மந்தி"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : டே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: மறந்துட்டிங்களோன்னு ஞாபகப்படுத்தினே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : கம்பர் மகன் அம்பிகாபதி! சும்மாயிருடா முந்திரிக்கொட்டை!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(தெருவிலே தொழிலாளர் ஊர்வலம் செல்லும் ஒலி கேட்கிறது.)"
+      },
+      {
+        "kind": "prose",
+        "text": "## கோஷம்"
+      },
+      {
+        "kind": "prose",
+        "text": "சிவசக்தி மில் தொழிலாளர் கூலியை உயர்த்து. தொழிலாளர் சம்பளத்தை உயர்த்து.. தொழிலாளர் சம்பளத்தை உயர்த்து."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : என்னடா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: நமக்குச் சம்மந்தமில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: நமக்காமில்ல நமக்கு ! இவரும் சேந்துக்கிறாரு விஷயத்தை சொல்லு கழுதை!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : மில் தொழிலாளிங்க சம்பள உயர்வுக்காக கிளர்ச்சி பண்றாங்க!..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அப்படியா? அப்ப நமக்கு சம்பந்தமில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: ஏன் இல்லை? எனக்கு ஒரு வழி தோணுது. இந்தக் கிளர்ச்சியை சாதகமாக்கிக்கிட்டு பாட்டாளிகளைப்பத்தி ஒரு புஸ்தகம் எழுதினா இந்தச் சமயம் நல்லா விக்கும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஆமாம்.... இன்றைக்கே எழுத ஆரம்பிக்கிறேன். பெயர் என்ன வைக்கலாம்—புஸ்தகத்துக்கு... ஆங்...சரி.... பாட்டாளியின் குரல்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : சபாஷ்! பாட்டாளியின் குரல். என்ன மூளை! என்ன மூளை!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : முதல்ல என் குரலை கொஞ்சம் கவனிங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : என்னடா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: எனக்கு சம்பளம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : (கோபமாய்) டேய் ! மில் தொழிலாளிகளுக்காக புஸ்தகம் எழுதினா..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: நானும் ஒரு தொழிலாளிதானுங்க!..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : பெரிய தொழிலாளி இவுரு ! பரந்தாமா! நீ எழுத ஆரம்பிச்சுடு ! லாபத்திலே உனக்கு கால், எனக்கு முக்கால்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: எனக்கு..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அறை ! (அறைதல்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s029-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 34,
+            "printedPage": 26
+          }
+        ],
+        "text": "(Paranthaman arrives.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 34,
+            "printedPage": 26
+          }
+        ],
+        "text": "Come, man! The last two or three weeks must have been one grand, jolly life....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s029-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 34,
+            "printedPage": 26
+          }
+        ],
+        "text": "Poor thing...Bama longed to set up a family in Chennai and put me in the prison of domestic life... Where she went, what happened to her!....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Hmm...family life and all that—man ought to be free, like me. Hasn't God created an example for us—the one that flits from flower to flower......",
+        "notes": [
+          "The source leaves the flower-to-flower comparison unfinished; the historical English insertion of `bee` has been removed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s029-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "The monkey that leaps from tree to tree.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Hey....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "I thought you had forgotten, so I reminded you.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u008",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Kambar's son Ambikapathi! Keep quiet, you meddlesome little cashew nut!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "(The sound of a workers' procession passing along the street is heard.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u010",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Slogan",
+        "notes": [
+          "Structural heading `கோஷம்`; retained separately from the chant body."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s029-u011",
+        "kind": "chant",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Raise the wages of the Sivasakthi Mill workers. Raise the workers' wages...raise the workers' wages.",
+        "notes": [
+          "The source labels this standalone block `கோஷம்`; no individual speaker is invented."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s029-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s029-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "What's that?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "It has nothing to do with us.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u014",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Not to us—to us! Tell the matter including him too, you donkey!",
+        "notes": [
+          "The compressed colloquial `நமக்காமில்ல நமக்கு! இவரும் சேந்துக்கிறாரு` is kept deliberately close to the source rather than expanded into a different explanation."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s029-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "The mill workers are agitating for a wage increase!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u016",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s029-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Is that so? Then it has nothing to do with us.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u017",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Why not? I've got an idea. If we make use of this agitation and write a book about the toilers, it will sell well at a time like this.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u018",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s029-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 35,
+            "printedPage": 27
+          }
+        ],
+        "text": "Yes....I'll start writing today itself. What shall we call the book...ah...right.... 'The Toiler's Voice.'",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u019",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "Bravo! 'The Toiler's Voice.' What a brain! What a brain!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u020",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "First pay a little attention to my voice!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u021",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s029-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "What is it?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u022",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "My wages.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u023",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d019",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "(Angrily) Hey! If a book is written for the mill workers...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u024",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d020",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "I'm a worker too, sir!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u025",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d021",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "A great worker he is! Paranthama! You start writing! Of the profit, one quarter for you and three quarters for me.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u026",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s029-d022",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "For me...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s029-u027",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s029-d023",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 36,
+            "printedPage": 28
+          }
+        ],
+        "text": "A slap! (He slaps him.)",
+        "notes": []
+      }
+    ]
+  }
+}
