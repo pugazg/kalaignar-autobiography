@@ -110,8 +110,13 @@ export default function TirumbippaarReader({
           </div>
         </div>
 
-        {/* An authorship distinction, not archival furniture: which layer is authoritative. No claim
-            of human editorial review is made, because the project has no such layer. */}
+        {/* Which layer is authoritative — not archival furniture, and not an authorship claim.
+            The Tamil notice describes the PRINTED SOURCE, never its authorship: this is a composite
+            cinema booklet, and the cover credit (கதை - வசனம்) covers story and dialogue, not the
+            song material. Of the eight song/performance occurrences, three are attributed to other
+            people and five are unresolved; none is attributed to Kalaignar. Saying "Kalaignar's
+            original Tamil text" over the whole stream would silently annex all of that.
+            No claim of human editorial review is made, because the project has no such layer. */}
         {showEn ? (
           <p className="mt-4 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
             {ta
@@ -121,8 +126,8 @@ export default function TirumbippaarReader({
         ) : (
           <p className="mt-4 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/60 dark:border-white/15 dark:text-night-text/60">
             {ta
-              ? "கீழே கலைஞரின் மூல தமிழ் உரை — அச்சிட்ட நூலின்படி, மாற்றமின்றி."
-              : "Below is Kalaignar's original Tamil text, verbatim from the printed booklet, unaltered."}
+              ? "கீழே அச்சிட்ட நூலின் மூல தமிழ் வாசிப்பு — மாற்றமின்றி."
+              : "Below is the original Tamil reading from the printed booklet, reproduced without alteration."}
           </p>
         )}
 

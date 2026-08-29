@@ -58,8 +58,9 @@ export default function TirumbippaarSource({
 
       <Section label="ஆளும் மூலம்">
         <Prose>
-          அச்சிடப்பட்ட நூலின் ஸ்கேன் செய்யப்பட்ட நகலே இப்பதிப்பின் ஆளும் மூலம். அது எந்தக் களஞ்சியத்திலும்
-          சேமிக்கப்படவில்லை; கீழ்க்காணும் கைரேகை அதனை அடையாளப்படுத்துகிறது.
+          அச்சிடப்பட்ட நூலின் ஸ்கேன் செய்யப்பட்ட நகலே இப்பதிப்பின் ஆளும் மூலம். அந்த ஸ்கேன் இந்த
+          இணையதளத்தின் செயலாக்கக் களஞ்சியத்திலும் மூல உரைக் களஞ்சியத்திலும் சேர்க்கப்படவில்லை;
+          கீழ்க்காணும் SHA-256 கைரேகை அதனை அடையாளப்படுத்துகிறது.
         </Prose>
         <Facts
           rows={[
@@ -85,7 +86,7 @@ export default function TirumbippaarSource({
             ["ஆண்டு", String(prov.source.publicationYearAsPrinted)],
             [prov.creditsAsPrinted.coverRoleTa, prov.creditsAsPrinted.coverNameTa],
             ["விலை", prov.historicalNotices.priceAsPrinted],
-            ["உரிமை அறிவிப்பு", prov.historicalNotices.rightsNoticeAsPrinted],
+            ["அச்சிட்ட உரிமை அறிவிப்பு", prov.historicalNotices.rightsNoticeAsPrinted],
           ]}
         />
         <Prose className="mt-3">{prov.creditsAsPrinted.note}</Prose>
@@ -114,7 +115,7 @@ export default function TirumbippaarSource({
         />
         <Prose className="mt-3">{prov.structure.numberingNote}</Prose>
         <h3 className="mt-6 font-tamil text-base font-semibold text-ink dark:text-night-text" lang="ta">
-          அச்சிடப்பட்ட தலைப்பு வழுக்கள்
+          அச்சிடப்பட்ட தலைப்பு வேறுபாடுகள்
         </h3>
         <ul className="mt-2 space-y-1.5 font-tamil text-sm text-ink/70 dark:text-night-text/70" lang="ta">
           {prov.structure.headingAnomalies.map((a) => (
@@ -182,7 +183,7 @@ export default function TirumbippaarSource({
             ["நிகழ்வுகள்", String(index.songs.length)],
             ["சான்றுடன் உறுதி", String(songVerified)],
             ["தீர்க்கப்படாதவை", String(songUnresolved)],
-            ["கலைஞருக்கு உரிமம்", String(prov.songs.kalaignarAttributedOccurrences)],
+            ["கலைஞருக்குச் சாற்றப்பட்டவை", String(prov.songs.kalaignarAttributedOccurrences)],
           ]}
         />
         <Prose className="mt-3">{prov.songs.note}</Prose>
@@ -226,13 +227,13 @@ export default function TirumbippaarSource({
         <Prose className="mt-3">{prov.publication.note}</Prose>
       </Section>
 
-      <Section label="குறிப்புகள்">
-        <ul className="mt-2 space-y-2 font-tamil text-sm leading-[1.9] text-ink/70 dark:text-night-text/70" lang="ta">
-          {prov.notes.map((n, i) => (
-            <li key={i}>{n}</li>
-          ))}
-        </ul>
-      </Section>
+      {/* `prov.notes` is deliberately NOT rendered. It is a phase-local field: one entry records that
+          D2.1 produced generated data with no public route yet — true when it was written, false the
+          moment these pages shipped — and the other restates the rights position that
+          `historicalNotices.note` already states above, more precisely. A provenance page that
+          replays implementation-phase status text goes stale silently, so the durable facts are
+          surfaced from the specific fields that carry them and nothing is echoed from this array.
+          The generated data itself is frozen and untouched. */}
     </main>
   );
 }
