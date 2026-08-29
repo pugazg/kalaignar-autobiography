@@ -1,0 +1,347 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-55",
+  "canonicalScene": 55,
+  "sourceHeading": 55,
+  "headingTa": "காட்சி 55] [பூமாலை வீடு",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 69,
+      "printedPage": 61
+    },
+    {
+      "pdfPage": 70,
+      "printedPage": 62
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பூமாலை ஊருக்குப் புறப்பட்டுக் கொண்டிருக்கிறாள். அங்கு வந்த பரந்தாமன்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: எங்கக்கா பயணம்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: மதராஸுக்கு..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: என்ன திடீர்னு மதராஸ்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: ஏன்? குமுதாவைப் பார்க்கப் போறேன்.போகக் கூடாதா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கூடாதென்றா சொல்கிறேன் ...ம் .... ஆமாம் பாண்டியன் மெட்றாஸில்தானே !..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: ஆமாம். நீ ஏன் அதெல்லாம் கேக்கிறே ! உனக்குத்தான் உற்றார் உறவினர், நல்லவர் கெட்டவர் எதுவுங் கிடையாதே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஏதோ ஆத்திரத்தில் செய்துவிட்டேனக்கா அப்படி ."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : நல்ல ஆத்திரம், கொஞ்சம் தவறியிருந்தால் குமுதா விதவையாக ஆகியிருப்பாள்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(உள்ளே போகிறாள். நெக்லஸை பெட்டியில் வைக்கிறான். பூமாலை வந்ததும்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : நான் ஏதாவது தவறு செய்திருந்தால் மன்னித்து விடக்கா! (பூமாலை பார்த்தல்) நான் பாண்டியனை சுட முயன்றது தவறுதான். என்னை ஒருபோதும் காட்டிக் கொடுக்க மாட்டாயே ..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(வேலைக்காரி வந்து )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வேலைக்காரி",
+        "text": "வேலைக்காரி : நேரம் ஆச்சும்மா."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: (பரந்தாமனிடம்) நான் வரட்டுமா."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சரிக்கா ! எல்லாரையும் விசாரிச்சேன்னு சொல்லு! பாண்டியனுக்கும் குமுதாவுக்கும் என் பரிபூரண ஆசீர்வாதங்களைச் சொல்லு !"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை போகிறாள்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s055-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "(Poomaalai is preparing to leave town. Paranthaman comes there.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s055-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "Where are you travelling to, akka?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s055-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "To Madras....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s055-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "Why Madras all of a sudden!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s055-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "Why? I'm going to see Kumudha. Am I not allowed to go?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s055-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "Did I say you shouldn't?... Hmm.... Yes, Pandiyan is in Madras, isn't he!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s055-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "Yes. Why are you asking all that? For you there is no such thing as kith or kin, good people or bad people anyway.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s055-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "I did that somehow in a fit of anger, akka.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s055-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 69,
+            "printedPage": 61
+          }
+        ],
+        "text": "A fine fit of anger. If you had missed by just a little, Kumudha would have become a widow.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "(She goes inside. He puts the necklace in a box. When Poomaalai returns...)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s055-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "If I have done anything wrong, forgive me, akka! (Poomaalai looks at him.) It was wrong of me to try to shoot Pandiyan. You would never expose me, would you...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u012",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "(The maid comes.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u013",
+        "kind": "dialogue",
+        "speakerLabel": "வேலைக்காரி",
+        "sourceRecordId": "tirumbippaar-s055-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "It's time, amma.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s055-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "(To Paranthaman.) Shall I leave?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s055-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "All right, akka! Tell everyone I asked after them! Give Pandiyan and Kumudha my fullest blessings!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s055-u016",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "(Poomaalai leaves.)",
+        "notes": []
+      }
+    ]
+  }
+}

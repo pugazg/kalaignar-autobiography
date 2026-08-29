@@ -1,0 +1,150 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-75",
+  "canonicalScene": 75,
+  "sourceHeading": 75,
+  "headingTa": "காட்சி 75]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 90,
+      "printedPage": 82
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": 83
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன் பதிப்பகம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : பரந்தாமனின் பாவ மன்னிப்புப் படலம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : ம் பத்திரிகை காரனுங்க அப்படித்தான் எழுதுவானுங்க. அதுக்கெல்லாம் பயப்பட முடியுமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : மன்னிப்புக் கேட்டதால் மானமே அழிந்துவிட்டதாமே ."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : நல்ல மானம்டா ! மன்னிப்புக் கேக்கறதாலேயே ஒரு மானம் அழிஞ்சிடும்னா அப்பேர்ப்பட்ட மானம் இருக்கவே வேண்டாமே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: சபாஷ்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s075-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "(Garudan Publishing House.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s075-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s075-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "Paranthaman's chapter of pardon for sins.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s075-u003",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s075-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "Hmm, newspaper fellows will write like that. Can we be afraid of all that?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s075-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s075-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "They say my honour itself has been destroyed because I asked forgiveness.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s075-u005",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s075-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 91,
+            "printedPage": 83
+          }
+        ],
+        "text": "Some honour! If a man's honour is destroyed merely by asking forgiveness, there's no need for such honour to exist at all.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s075-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s075-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 91,
+            "printedPage": 83
+          }
+        ],
+        "text": "Bravo.",
+        "notes": []
+      }
+    ]
+  }
+}

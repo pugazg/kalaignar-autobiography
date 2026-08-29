@@ -1,0 +1,261 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-34",
+  "canonicalScene": 34,
+  "sourceHeading": 34,
+  "headingTa": "காட்சி 34]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 42,
+      "printedPage": 34
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(கரகோஷம். புண்யகோடிக்கு ஒரே பூரிப்பு)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பூமாலை பிள்ளைகளுடன்!]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: ஜீவஹிம்சை கூடாதென்றவர்கள் இருவரைச் சொல்லு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : புத்தர், காந்தி"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: முகுந்தா! மூவேந்தர் யார்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : சேரன், சோழன்.... (திணறுவது)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : உம். சொல்லு"
+      },
+      {
+        "kind": "prose",
+        "text": "பாண்டியன்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாண்டியன் என்றதும் அவள் முகம் மாறுகிறது- உதடுகள் முணுமுணுக்கின்றன. பிறகு மாணவ - மாணவிகளிடம்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: சரி வீட்டுக்கு போய்ட்டு நாளைக்கு வாங்க"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(எல்லோரையும் அனுப்புகிறாள். அவர்கள் போனதும், தோட்டத்துப் பக்கம் போகிறாள்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s034-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s034-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "Name two people who said there should be no violence against living beings.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s034-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "Buddha, Gandhi.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s034-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "Mukunda! Who are the Three Crowned Kings?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s034-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "The Chera, the Chola.... (Hesitates.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s034-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "Hmm. Say it.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "(At the word ‘Pandiyan,’ her expression changes and her lips murmur. Then, to the students:)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s034-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "All right, go home and come back tomorrow.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u008",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "(She sends everyone away.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "(After they leave, she goes toward the garden.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "(Cheers. Punyakodi is overflowing with delight.)",
+        "notes": [
+          "This source-visible action is printed at the beginning of scene 34; the historical English layer had incorrectly attached it to scene 33."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s034-u011",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "(Poomalai is with the children.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s034-u012",
+        "kind": "dialogue",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 42,
+            "printedPage": 34
+          }
+        ],
+        "text": "Pandiyan.",
+        "notes": [
+          "The source prints this answer without a speaker label. It is retained as source-visible unlabelled speech; no dialogue-record ID or speaker is invented."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-88",
+  "canonicalScene": 88,
+  "sourceHeading": 88,
+  "headingTa": "காட்சி 88] [ஹோட்டல் ரூம்",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 105,
+      "printedPage": 97
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பரந்தாமன் அறையிலிருக்கும்போது ஹோட்டல் பையன் வந்து தந்தியைக் கொடுத்துவிட்டுப் போகிறான். பரந்தாமன் பிரித்துப் படிக்கிறான். ஆனந்தம். ஆபீஸ் பையன் உள்ளே வருகிறான்.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : நம்ம குமுதா அட்ரஸ் கெடைச்சிட்டுது. தந்தி கொடுத்திருக்கிறாள்.ம் .....ம் ..... குழந்தைக்கு வாங்கின பொம்மை,கிலு கிலுப்பை எல்லாத்தையும் எடுத்து வை. (பையன் போக) சீரழிந்த குடும்பத்திலே மறுமலர்ச்சி உண்டாக்குவேன்"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s088-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "(In the hotel room, a hotel boy brings Paranthaman a telegram and leaves. Paranthaman opens and reads it with joy. The office boy enters.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s088-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s088-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "We've got our Kumudha's address. She's sent a telegram. Hmm...... hmm...... Put together the doll, rattle and everything we bought for the child.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s088-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "(The boy leaves.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s088-u004",
+        "kind": "dialogue",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 105,
+            "printedPage": 97
+          }
+        ],
+        "text": "I will bring renewal to the ruined family.",
+        "notes": [
+          "This is source-visible direct speech after the boy leaves, but the booklet does not repeat a speaker label; no dialogue-record ID or speaker is invented."
+        ]
+      }
+    ]
+  }
+}

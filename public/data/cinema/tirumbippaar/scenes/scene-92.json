@@ -1,0 +1,117 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-92",
+  "canonicalScene": 92,
+  "sourceHeading": 92,
+  "headingTa": "காட்சி 92]",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 111,
+      "printedPage": 103
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "prose",
+        "text": "பத்திரிகை News"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(அக்காள் தம்பியைக் கொன்றாள்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[கோர்ட்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நீதிபதி",
+        "text": "நீதிபதி: (ஜட்ஜ்மெண்ட் படிக்கப்படுகிறது) பத்திரிகை மூலமாக செய்தி கேள்விப்பட்டுதான் பாண்டியன் வந்திருக்கிறார்! கொலைக்கும் அவருக்கும் எந்த சம்பந்தமும் இல்லையென்பது சிவசக்தி மில் முதலாளியின் சாட்சியத்தாலும், ஆஸ்பத்திரி வாட்ச்மேன் சாட்சியத்தாலும் தெளிவாகிறது. பரந்தாமனுக்கும் பாண்டியனுக்கும் விரோதம் என்கிற காரணத்தாலேயே கொலைசெய்தார் என்பது நம்பத்தகுந்ததல்ல! ஆகவே பாண்டியனை விடுதலை செய்யப்படுகிறது."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை புன்னகை) கொலை குற்றத்தை ஒப்புக்கொள்ளும் பூமாலைக்கு மரண தண்டனை விதிக்கப்படுகிறது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா : சின்னம்மா!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s092-u003",
+        "kind": "written-text",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "Newspaper News: 'Elder sister killed younger brother.'",
+        "notes": [
+          "The corrected source prints this newspaper heading at the opening of scene 92. It was historically attached to scene 91; this stable added unit restores the corrected source boundary without renumbering any surviving historical unit."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s092-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "(Court.)",
+        "notes": [
+          "The corrected source explicitly prints the court setting before the judgment. This source-proven setting was absent from the historical English layer and is restored without renumbering existing units."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s092-u001",
+        "kind": "dialogue",
+        "speakerLabel": "நீதிபதி",
+        "sourceRecordId": "tirumbippaar-s092-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "(The judgment is read.) Pandiyan came only after learning the news through the newspaper. The testimony of the owner of Sivasakthi Mill and the hospital watchman makes it clear that he had no connection whatsoever with the murder. It is not credible that Pandiyan committed the murder merely because there was enmity between Paranthaman and him. Therefore Pandiyan is acquitted. (Poomaalai smiles.) Poomaalai, who admits to the crime of murder, is sentenced to death.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s092-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s092-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 111,
+            "printedPage": 103
+          }
+        ],
+        "text": "Chinnamma!",
+        "notes": []
+      }
+    ]
+  }
+}

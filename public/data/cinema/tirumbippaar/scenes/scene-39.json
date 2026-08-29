@@ -1,0 +1,530 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-39",
+  "canonicalScene": 39,
+  "sourceHeading": 39,
+  "headingTa": "காட்சி 39]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 50,
+      "printedPage": 42
+    },
+    {
+      "pdfPage": 51,
+      "printedPage": 43
+    },
+    {
+      "pdfPage": 52,
+      "printedPage": 44
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(பாண்டியன் நடக்கிறான் அவளுடன்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[ஊரெங்கும் சுவர்களில் மில் வேலைநிறுத்தப் போஸ்டர்கள் ஒட்டப்பட்டிருக்கின்றன ]"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(மில் முதலாளி அறை]"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பரந்தாமனும் கருடனும் வர)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : வாருங்கள்.... உட்காருங்கள்!...."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இருவரும் உட்காராமல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அழைத்த காரியமென்ன?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இருவரும் உட்காருதல் )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : ம்... இந்த வேலை நிறுத்தத்தைப்பற்றி...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : எல்லாம் என் ஏற்பாடுதான் - நான் காட்டிய வழியில் செல்ல ஆயிரக் கணக்கான தொழிலாளர்கள் தயாராயிருக்கிறார்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி: மிஸ்டர் பரந்தாமன்! மில் தொழிலாளர்களின் கிளர்ச்சியை உங்களால்தான் நிறுத்த முடியுமென்று எனக்குத் தெரியும்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : சந்தேகமா அதிலே! பரந்தாமன் மாத்திரம் இல்லாவிட்டால் இந்நேரம் மில்லையே அழித்திருப்பார்கள்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: அதோட, தங்கள் உயிருக்கே ஆபத்து ஏற்படுத்த இருந்தார்கள் ! நான்தான் தடுத்தேன்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : சந்தோஷம் ! ரொம்ப நன்றி! என் உயிரைக் காப்பாற்றியதற்காக ! தங்களுக்கு என்னுடைய சிறிய உதவியாக இந்த ஐயாயிர ரூபாயை அளிக்கிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : என்ன... பணமா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : வாங்கிக் கொள்ளப்பா ! தொழிலாளர் நிதியில் சேர்த்துவிடலாம்! ஏழைகளுக்காக உழைக்கவே ஜென்மம் எடுத்துட்டோம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி: நான் இதை லஞ்சமாக நினைத்துக் கொடுக்கவில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : நானும் இதை அப்படி நினைத்து வாங்கவில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : இந்த ஸ்டிரைக்கை எப்படியாவது நிறுத்திவிடுவீர்களானால்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : நிறுத்திவிடலாம். அதற்கு புண்யகோடியை மாற்றினால்தான் முடியும்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: புண்யகோடி.... அவன் மூவாயிரமாவது கேட்பான்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : தருகிறேன் ! இப்போதே தருகிறேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பணம் எடுத்துத் தருகிறார்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: தங்களுடைய நல்ல குணத்திற்காகவும்,நம்முடைய நட்பு நீடிக்க வேண்டும் என்பதற்காகவும், ஒரு பெரிய கிளர்ச்சியை விட்டுக்கொடுக்கிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி: ரொம்ப நன்றி!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s039-u026",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 50,
+            "printedPage": 42
+          }
+        ],
+        "text": "(Pandiyan walks with her.)",
+        "notes": [
+          "The corrected source prints this carry-over action at the beginning of scene 39. The historical English layer had incorrectly placed it at the end of scene 38."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s039-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 50,
+            "printedPage": 42
+          }
+        ],
+        "text": "(Mill-strike posters have been pasted on walls throughout the town.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 50,
+            "printedPage": 42
+          }
+        ],
+        "text": "(Inside the mill owner's room.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 50,
+            "printedPage": 42
+          }
+        ],
+        "text": "(Paranthaman and Garudan arrive.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u004",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 50,
+            "printedPage": 42
+          }
+        ],
+        "text": "Come....sit down!....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 50,
+            "printedPage": 42
+          }
+        ],
+        "text": "(The two remain standing.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "Why did you call us?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u007",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "(The two sit down.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u008",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "Hmm...about this strike....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "It is all my arrangement—thousands of workers are ready to follow the path I showed them.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u010",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "Mr Paranthaman! I know that only you can stop the mill workers' agitation.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u011",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s039-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "Any doubt about that! If not for Paranthaman, by now they would have destroyed the mill itself!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "And they were even about to endanger your life! I was the one who stopped them!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u013",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "I'm pleased! Many thanks for saving my life! As a small token of help from me, I offer you these five thousand rupees.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "What...money?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u015",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s039-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "Take it! We can add it to the workers' fund! After all, we were born only to labour for the poor!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u016",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "I am not giving this thinking of it as a bribe.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u017",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "And I am not accepting it thinking of it that way either.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u018",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "If you can somehow stop this strike.....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u019",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "It can be stopped. But that is possible only if Punyakodi is won over!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u020",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s039-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 51,
+            "printedPage": 43
+          }
+        ],
+        "text": "Punyakodi....he'll ask for at least three thousand!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u021",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "I'll give it! I'll give it right now.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u022",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "(He takes out the money and gives it.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u023",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s039-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "For the sake of your good nature, and because I want our friendship to continue, I am giving up a major agitation.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s039-u024",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s039-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "Many thanks!",
+        "notes": []
+      }
+    ]
+  }
+}

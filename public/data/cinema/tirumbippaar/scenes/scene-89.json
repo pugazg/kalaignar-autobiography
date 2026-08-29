@@ -1,0 +1,126 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-89",
+  "canonicalScene": 89,
+  "sourceHeading": 89,
+  "headingTa": "காட்சி 89] [ஹோட்டல் அறை-பகல்",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 106,
+      "printedPage": 98
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: (ஆபீஸ் பையனிடம்) பரந்தாமன் எங்கே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : குமுதாகிட்ட போயிருக்கிறார்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அட்ரஸ்...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : இதோ அவுங்க அடிச்ச தந்தி!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(தந்தி தருவது வாங்கிப் பார்த்துவிட்டு வேகமாக வெளியேறுவது)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s089-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s089-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 106,
+            "printedPage": 98
+          }
+        ],
+        "text": "(To the office boy.) Where is Paranthaman?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s089-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s089-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 106,
+            "printedPage": 98
+          }
+        ],
+        "text": "He's gone to Kumudha.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s089-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s089-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 106,
+            "printedPage": 98
+          }
+        ],
+        "text": "The address...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s089-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s089-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 106,
+            "printedPage": 98
+          }
+        ],
+        "text": "Here is the telegram she sent!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s089-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 106,
+            "printedPage": 98
+          }
+        ],
+        "text": "(He gives her the telegram. She takes it, looks at it, and hurries out.)",
+        "notes": []
+      }
+    ]
+  }
+}

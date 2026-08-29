@@ -1,0 +1,342 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-07",
+  "canonicalScene": 7,
+  "sourceHeading": 7,
+  "headingTa": "காட்சி 7] [பூமாலை வீடு-பகல்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 17,
+      "printedPage": 9
+    },
+    {
+      "pdfPage": 18,
+      "printedPage": 10
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[உள்ளே பெண்கள் பலர் திருமண வேளைகளில் ஈடுபட்டிருக்கின்றனர்.குமுதா வரல்- பூமாலை ஆவலுடன் ஓடிச்சென்று]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா! (இருவரும் தழுவல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: ஏம்மா இவ்வளவு தாமதம்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: பரீட்சை சின்னம்மா. உடனே வரமுடியிலே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : உட்காரு குமுதா. தம்பிக்கு உன்னை கல்யாணம் செஞ்சு வச்சு வீட்டோட இருப்பேன்னு நெனச்சேன்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : அதுக்குள்ளத்தான் அவரு காதல் திருமணம் பண்ணிட்டாரே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: ஏய் குண்டுமணி."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் வருகை)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அடடே ! குமுதா தேவி எப்போது வந்தார்கள்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: மாமா, மாப்பிள்ளை முறுக்கிலேயே இருக்காரே! ஏன் மாமா, மாமி சிகப்பா கருப்பா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அய்ய... படிச்ச பெண்ணுக்கு இதுகூட தெரியிலேயே. ஒரு பெண்ணு சிகப்பு நிறமாயிருந்த எவனாவது விரும்புவானா? ரத்தம், குங்குமம் இதெல்லாம் சிகப்பு - இந்த நிறத்தை எவன் தொடுவான். இனிமேல் இப்படிக் கேளு. எழுமிச்சம்பழ நிறமா,நாகற்பழ நிறமா,அல்லது இரண்டுங் கலந்ததா?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குமுதா சிரிக்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: கல்யாண உற்சாகத்திலே மாமாவுக்கு கவிதைகளால்ல ஊறுது !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: அதுவும் கலர் கவிதைகளால்ல ஊறுது ! (சிரிப்பு)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s007-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "(Several women inside are busy with wedding preparations. Kumudha arrives. Poomalai eagerly runs to her—)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s007-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s007-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Chinnamma! (They embrace.)",
+        "notes": [
+          "The kinship address `சின்னம்மா` is transliterated rather than assigned a narrower English relationship."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s007-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s007-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Why are you so late, dear?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s007-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Exams, Chinnamma. I couldn't come at once...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s007-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Sit down, Kumudha. I had thought I would marry you to my younger brother and keep you here in the household...",
+        "notes": [
+          "The corrected source's `வீட்டோட இருப்பேன்னு` is retained; the historical English had dropped the household-continuity phrase."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s007-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s007-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "But before that, he already went and had a love marriage.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u008",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s007-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Hey, Gundumani.",
+        "notes": [
+          "The corrected source label is `குண்டுமணி`; the stale `குணமணி` metadata is not retained."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s007-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "(Paranthaman enters.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s007-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Ah! When did Goddess Kumudha arrive?",
+        "notes": [
+          "The mock-formal `தேவி` is retained as `Goddess` to preserve Paranthaman's playful register."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s007-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s007-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Uncle, you're still in full bridegroom style! Tell me, is my aunt fair or dark?",
+        "notes": [
+          "`மாப்பிள்ளை முறுக்கிலேயே` is retained as a joking reference to his bridegroom swagger/style, not location."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s007-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s007-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Oh dear...and an educated girl doesn't even know this! Would anyone like a woman if she were red in colour? Blood and kumkum are red—who would touch that colour? From now on, ask like this: lemon-fruit colour, jamun-fruit colour, or a mixture of the two?",
+        "notes": [
+          "The source's colour-based joking and period vocabulary are translated without modernization."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s007-u013",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "(Kumudha laughs.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u014",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s007-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "In the excitement of the wedding, poetry is pouring out of Uncle!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s007-u015",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s007-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "And colour poetry is pouring out too! (Laughter)",
+        "notes": [
+          "The corrected source reads `கலர் கவிதைகளால்ல`; the historical `cover-poetry` rendering was based on stale text."
+        ]
+      }
+    ]
+  }
+}

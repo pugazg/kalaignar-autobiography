@@ -1,0 +1,89 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-73",
+  "canonicalScene": 73,
+  "sourceHeading": 73,
+  "headingTa": "காட்சி 73]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 90,
+      "printedPage": 82
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[ரோடு இரவு"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பரந்தாமன் ஓடிக்கொண்டே இருக்கிறான் - போலீஸ் பிரவேசம்.]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "text": "இன்ஸ்பெக்டர்: உம் ! அரெஸ்ட் செய்யுங்கள்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் கைதியாகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s073-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "(Road—night. Paranthaman keeps running. The police enter.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s073-u002",
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s073-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "Hmm! Arrest him.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s073-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "(Paranthaman is arrested.)",
+        "notes": []
+      }
+    ]
+  }
+}

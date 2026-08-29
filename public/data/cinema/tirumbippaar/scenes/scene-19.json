@@ -1,0 +1,214 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-19",
+  "canonicalScene": 19,
+  "sourceHeading": 19,
+  "headingTa": "காட்சி 19] [பூமாலை ஹால்—பகல்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 27,
+      "printedPage": 19
+    },
+    {
+      "pdfPage": 28,
+      "printedPage": 20
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பூமாலை ஊருக்குப் புறப்பட ஏற்பாடு செய்கிறாள்—அவளிடம் பாடம் கற்கும் ஒரு பெண் வந்து]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பெண்",
+        "text": "பெண் : பட்டணத்துக்கு ஏம்மா போறீங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : குமுதாவுக்கு பரிக்ஷை முடிவு ரெண்டுநாளில் தெரிந்துவிடும். அவளை அழைத்து வருவதற்காகப் போகிறேன்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: (வந்தபடி) அம்மா! அம்மா! விஷயம் தெரியுமா! நம்ப சின்ன எஜமானுக்குப் பாத்த பெண்ணு ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: இன்னைக்கு கல்யாணம் அதுக்கு என்ன?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: பெண்ணு நேத்தி ராத்திரி ஓடிட்டுதாம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அப்படியா! (யோசனை) ம்... பரந்தாமன் எங்கே ?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : அவரு...அவரு...ம்...அவருகூட மெட்ராஸ் போகணும்னு கருடன் கிட்ட சொல்லிக்கிட்டு இருந்தாரு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : (சிந்தனை) ம்... சரி புறப்படு. ரயிலுக்கு நேரமாச்சு."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s019-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "(Poomalai is making preparations to leave town. A girl who studies under her comes to her.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s019-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பெண்",
+        "sourceRecordId": "tirumbippaar-s019-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "Why are you going to the city, amma?...",
+        "notes": [
+          "`அம்மா` is retained as the respectful/familiar address `amma` rather than assigning a relationship not stated by the source."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s019-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s019-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "Kumudha's examination result will be known in two days. I am going to bring her back.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s019-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s019-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "(Coming in) Amma! Amma! Do you know what happened! The girl chosen for our young master......",
+        "notes": [
+          "The corrected source label is exactly `குண்டுமணி`; the stale `குணமணி` metadata is removed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s019-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s019-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "The wedding is today. What about it?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s019-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s019-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "They say the girl ran away last night!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s019-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s019-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "Is that so! (Thinking) Hmm...where is Paranthaman?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s019-u008",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s019-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 28,
+            "printedPage": 20
+          }
+        ],
+        "text": "He...he...hmm...he was telling Garudan that he too had to go to Madras.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s019-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s019-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 28,
+            "printedPage": 20
+          }
+        ],
+        "text": "(Thoughtfully) Hmm...all right, get going. It's time for the train.",
+        "notes": []
+      }
+    ]
+  }
+}

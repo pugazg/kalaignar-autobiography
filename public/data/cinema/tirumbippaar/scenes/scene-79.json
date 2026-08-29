@@ -1,0 +1,68 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-79",
+  "canonicalScene": 79,
+  "sourceHeading": 79,
+  "headingTa": "காட்சி 79] [குமுதா வீடு",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 94,
+      "printedPage": 86
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[வீடு பூட்டியிருப்பதை பாண்டியன் பார்க்கிறான்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "அவன் குரல்",
+        "text": "அவன் குரல் : குமுதா நீ எங்கே போய்விட்டாய். கோயமுத்தூருக்கே போய்விட்டாயா? அங்கு வந்து உன்னை நான் எப்படிப் பார்ப்பேன். பூமாலை,பரந்தாமன் - அவர்கள் முகத்திலியே விழிக்கக்கூடாது. அந்தப் பொல்லாதவர்கள் வீட்டிலே என் குமுதா- கூடாது- அவளை அங்கு போய் பார்க்கக்கூடாது"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s079-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "(Pandiyan sees that Kumudha's house is locked.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s079-u002",
+        "kind": "dialogue",
+        "speakerLabel": "அவன் குரல்",
+        "sourceRecordId": "tirumbippaar-s079-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "Kumudha, where have you gone? Have you gone all the way to Coimbatore? How can I come there and see you? Poomaalai, Paranthaman—I must not even set eyes on their faces. My Kumudha in the house of those wicked people—no—I must not go there to see her.",
+        "notes": [
+          "The exact source speaker label `அவன் குரல்` ('his voice') is retained in metadata rather than normalized to Pandiyan, even though the scene context identifies him."
+        ]
+      }
+    ]
+  }
+}

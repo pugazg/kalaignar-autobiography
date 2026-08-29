@@ -1,0 +1,1288 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-57",
+  "canonicalScene": 57,
+  "sourceHeading": 57,
+  "headingTa": "காட்சி 57]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 71,
+      "printedPage": 63
+    },
+    {
+      "pdfPage": 72,
+      "printedPage": 64
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": 65
+    },
+    {
+      "pdfPage": 74,
+      "printedPage": 66
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": 67
+    },
+    {
+      "pdfPage": 76,
+      "printedPage": 68
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[சென்னையில் குமுதா வீடு"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பாண்டியன் காலையில் குளித்துவிட்டு புது ஆடைகளுடன் உட்கார்ந்திருக்கிறான். குமுதாவும் எதிரே அமர்ந்து காப்பி சாப்பிட்டுக் கொண்டிருக்கிறார்கள். பூமாலை வருகிறாள் கோவையிலிருந்து !]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : சின்னம்மா ! அம்மா வர்ராங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : வருவதாய் முன்கூட்டி எழுதக்கூட இல்லையே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : எதிர்பார்க்காத நேரத்தில் வந்தாதான் சந்தோஷம் ஜாஸ்தியாகும்னு இப்படி வந்திருக்காங்க ...!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: எல்லோரும் சௌக்கியமா சின்னம்மா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: குமுதா அம்மாக்கு சின்னய்யா ஏதாவது பிரசன்டேசன் அனுப்பியிருக்காரா?."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: உம். அனுப்பியிருக்காருடா. காதுக்கு கம்மல், கழுத்துக்கு நெக்லஸ் !..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: (குண்டுமணியிடம்) இந்தா பெட்டியைக் கொண்டு உள்ளே வையி."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குண்டுமணி பெட்டியை எடுத்துக்கொண்டு உள்ளே போகிறான்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை தான் கொண்டு வந்த ஆப்பில் பழங்களை எடுத்துக் கொடுக்கிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : உம். இப்ப பழம் வாங்கிட்டு வந்திருக்கீங்க. இன்னம் நாலு மாசங்கழித்து வரும் போது பம்பரம், படபடா வண்டி, பாலாடை, கிலுகிலுப்பை எல்லாம் வாங்கிட்டு வருவீங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: ஏய், போய் காபி கொண்டாடா."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(போகிறான்)."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : ஏன் குமுதா,உண்மையைச் சொன்னா கோபமா?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(போலீஸார் வந்து விட்டார்கள் உள்ளே எல்லோரும் திகைப்பு )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன்: வாங்க... உட்காருங்கள் ...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர்: உட்கார நேரமில்லை நீங்கள்தானே பாண்டியன்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன்: ஆமாம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "text": "சப் - இன்ஸ்பெக்டர்: குனியமுத்தூர் வழிப்பறி சம்பந்தமா உங்க வீட்டை சோதனை போட வேண்டியிருக்கு ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : என் வீட்டையா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர் : yes!..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : என்ன சார் சொல்றீங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர்: நான் சொல்லலே, இந்த ஆர்டர் சொல்லுது! எய்ட் செவன் சிக்ஸ், கமான்...."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை குமுதா திகைப்பு - வீடு சோதனை போடப்படுகிறது. எல்லா இடங்களிலும் போலீஸார் தேடுகிறார்கள் -)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா (கட்டிக் கொள்ளல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : சும்மா இரு. சும்மா இரு. ஒண்ணுமில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : குமுதா! பைத்தியம்! என்ன இது! ஏன் பயப்படுகிறாய்? குற்றம் இருந்தால்தானே பயப்பட வேண்டும்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(போலீஸார் எல்லா பெட்டிகளிலும் தேடுகிறார்கள். எதிலும் எந்தவித ஆதாரமும் கிடைக்கவில்லை.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர் : ம்... கிடைக்கலியே."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குண்டுமணி பூமாலையின் பெட்டியை எடுத்துக் கொண்டு வந்து)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : ஏன் சார் இதை மிச்சம் வச்சுட்டுப் போறீங்க. இதையும் பாத்துக்குங்க (பூமாலையிடம்) சாவி கொடுங்கம்மா!..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை சாவிதர, பெட்டித் திறக்கப்படுகிறது)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர்: என்னப்பா உனக்கு கோபம் வருது! எங்க கடமையை நாங்க செய்றோம்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(துணிமணிகளை எடுத்துப் பார்க்கும்போது கடைசியில் நெக்லஸ் இருக்கிறது. பூமாலையின் திகைப்பு. சப்- இன்ஸ்பெக்டர் நெக்லஸை திருப்பித் திருப்பிப் பார்க்கிறார். நெக்லஸ் பின்புறத்தில் 'உஷா' என்ற எழுத்துக்கள் இருக்கின்றன.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "text": "சப்- இன்ஸ்பெக்டர் : உஷா ! இதேதான்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குமுதா-பாண்டியன்- பூமாலை திகைப்பு )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "text": "சப் - இன்ஸ்பெக்டர் : அகப்பட்டுவிட்டது. பாண்டியன் உம்மை அரஸ்ட் செய்திருக்கிறேன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : ஆ"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: இது என் பெட்டி சார். அவரை விட்டுடுங்க..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "text": "சப் - இன்ஸ்பெக்டர்: ஸ்!... சொல்ல வேண்டியவைகளை கோர்ட்டில் சொல்லுங்கள்.என் வேலையை யாரும் தடுக்காதீர்கள். (போலீஸாரிடம் ) ம் ...கொண்டு போங்கள் !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: (பாண்டியனிடம் ஓடிவந்து அலறல்) பாண்டியன்! பாண்டியன்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : குமுதா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: இது என்ன பாண்டியன். எனக்கொன்றுமே புரிய......"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன்: புரியவில்லையா! இதுதான் உலகம் !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : சப் - இன்ஸ்பெக்டர் சார் ! நான் தான் ஊரிலிருந்து வந்தேன். இது என் பெட்டிதான். பாண்டியன் மீது எந்த குற்றமுமில்லை. அவரை விட்டு விடுங்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "text": "சப் - இன்ஸ்பெக்டர்: தொந்திரவு கொடுக்காதீர்கள். உம் கொண்டு போங்கள்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாண்டியனை அழைத்துச் செல்கிறார்கள்)"
+      },
+      {
+        "kind": "prose",
+        "text": "குமுதா (திகைத்து நின்று ஓடுகிறாள்) பாண்டியன், பாண்டியன் ...... (ஓடுகிறாள்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாண்டியன் ஜீப்பில் ஏற்றப்படுகிறான். அலறியோடும் குமுதாவை பூமாலை பிடித்துக்கொண்டு அணைத்து )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா... அமைதியாயிரு !... அழாதே ! அழாதே !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: அழாமல் ஆனந்தமடையச் சொல்கிறாயா! எனக்கு எப்படி வரும் ஆனந்தம் ? அவரை ஜெயிலுக்கு அனுப்ப வேண்டும் என்று நான் கங்கணம் கட்டிக்கொண்டா வந்தேன், காரியம் கை கூடியதும் மகிழ்ச்சியடைய"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: ஏன் சின்னம்மா, எங்கள் வாழ்வை இப்படிக் கெடுத்தாய்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா! நான் ஒரு குற்றமும் அறியாதவள் குமுதா! யாருடைய சூதாட்டத்திற்கோ நான் வெட்டுக்காயாக பயன்பட்டு விட்டேன், என்னையும் அறியாமல்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: யாருடைய சூதாட்டம்! ஏன் மறைக்கிறாய். எல்லாம் உன் தம்பியின் சூதாட்டம்தான் !...தெரியும் எனக்கு !.. இருவருமே சேர்ந்துகொண்டு எங்கள் இன்ப வாழ்வைக் கெடுக்க திட்டம் போட்டிருக்கிறீர்கள் என்று...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா ! சந்தர்ப்பம் செய்திருக்கும் சதியை உன்னால் உணர முடியாவிட்டாலும் உன் சின்னம்மாவுக்கு இருதயம் என்று ஒன்று இருக்கிறது என்பதைக்கூடவா மறந்து விட்டாய்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: இருதயம் இருக்கிறது. அதில் உன் தம்பியின் ஷேம லாபங்களுக்கு மட்டுமே இடமுமிருக்கிறது."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: (அலறல்) குமுதா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: தன்னுடைய படுக்கையறைப் பதுமைகளில் ஒருத்தியாக இருக்கவேண்டிய குமுதா பகைவன் பாண்டியனின் காதலியாகிவிட்டாளே என்ற ஆத்திரம் பரந்தாமனுக்கு! நம்முடைய காதலனாக இருக்கவேண்டிய பாண்டியன் குமுதாவோடு கொஞ்சிக் கிடக்கிறானே என்ற குமுறல் உனக்கு !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : ஆ ! என்ன சொன்னாய்! அடி பாவி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா : இனிமேல் எதுவும் சொல்ல வேண்டியதில்லை. இந்த வீட்டு பந்தம், பாசம், சொந்தம் எல்லாம் இன்றோடு தொலைந்தது ! போய் வருகிறேன். இந்தா நீ பூட்டிய பொன் அணிகள் ! பூணாரங்கள் எடுத்துக்கொள்! (நகைகளைக் கழற்றி எறிதல்) தம்பியோடு சுகமாயிரு ! நான் போகிறேன் .."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா !..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: என்னைத் தொடாதே ! இனி நான் யார்? நீ யார்?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(ஓடுகிறாள் - பூமாலை அசைவற்று நிற்கிறாள்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s057-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "(In Kumudha's house in Madras. Pandiyan, freshly bathed and in new clothes, is seated in the morning. Kumudha sits opposite drinking coffee. Poomaal arrives from Coimbatore.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u002",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s057-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Chinnamma! Amma is coming!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "She didn't even write beforehand that she was coming.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u004",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s057-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "She has come like this because the happiness is greater when someone arrives unexpectedly...!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Is everyone well, Chinnamma?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s057-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Has Chinnappa sent Kumudha-amma any present?...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Hmm. He has sent one, da. Earrings for the ears, a necklace for the neck!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "(To Gundumani.) Here, take this box inside.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "(Gundumani takes the box inside. Poomaal takes out the apples she has brought and gives them.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u010",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s057-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Hmm. Now you've brought fruit. When you come again four months from now, bring a spinning top, a toy cart, baby clothes, a rattle and all that...",
+        "notes": [
+          "The list contains colloquial/irregular printed wording; it is rendered conservatively from the supported context."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s057-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Hey, go bring coffee, da.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u012",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "(Gundumani goes.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Why, Kumudha, are you angry because he told the truth?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u014",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "(The police enter the house. Everyone inside is startled.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Come... sit down...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u016",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "No time to sit. You are Pandiyan, aren't you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u017",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Yes...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u018",
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "We have to search your house in connection with the Kuniyamuthur highway robbery...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u019",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "My house?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u020",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 72,
+            "printedPage": 64
+          }
+        ],
+        "text": "Yes!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u021",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "What are you saying, sir...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u022",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "I'm not saying it; this order says it! Eight seven six, come on....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u023",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "(Poomaal and Kumudha are startled. The house is searched; police look everywhere.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u024",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d019",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Chinnamma! (She embraces her.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u025",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d020",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Be quiet. Be quiet. It's nothing.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u026",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d021",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Kumudha! Foolish girl! What is this! Why are you afraid? One need fear only if there is guilt.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u027",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "(The police search all the boxes. They find no evidence of any kind.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u028",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d022",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Hmm... nothing's turning up.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u029",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s057-d023",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Why, sir, are you leaving this one behind? Shouldn't you look at this too?... (To Poomaal.) Give them the key, amma!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u030",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "(Poomaal gives the key and the box is opened.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u031",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d024",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Why are you getting angry, boy! We're only doing our duty.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u032",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "(As the clothes are taken out and examined, a necklace is found at the bottom. Poomaal is shocked. The Sub-Inspector turns the necklace over and over and looks at it. On its back are the letters 'Usha.')",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u033",
+        "kind": "dialogue",
+        "speakerLabel": "சப்- இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d025",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "Usha! This is it.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u034",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 73,
+            "printedPage": 65
+          }
+        ],
+        "text": "(Kumudha, Pandiyan and Poomaal are stunned.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u035",
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d026",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "We've found it. Pandiyan, I am arresting you.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u036",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d027",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Ah!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u037",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d028",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "This is my box, sir. Let him go....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u038",
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d029",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Shh! Say whatever you have to say in court. No one interfere with my work. (To the police.) Hmm... take him away!....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u039",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d030",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "(Running to Pandiyan and crying.) Pandiyan! Pandiyan!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u040",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d031",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u041",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d032",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "What is this, Pandiyan? I don't understand anything.....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u042",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s057-d033",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "You don't understand? This is the world!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u043",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d034",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Sub-Inspector sir! I am the one who came from out of town. This is my box. Pandiyan has committed no offence. Let him go.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u044",
+        "kind": "dialogue",
+        "speakerLabel": "சப் - இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s057-d035",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Don't cause trouble. Hmm...... take him away.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u045",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "(Pandiyan is taken away.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u046",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d036",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "(Standing stunned and crying.) Pandiyan, Pandiyan...... (She runs.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u047",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "(Pandiyan is put into the jeep. Poomaal catches and embraces Kumudha as she runs after him crying.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u048",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d037",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Kumudha... be calm!... Don't cry! Don't cry!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u049",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d038",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 74,
+            "printedPage": 66
+          }
+        ],
+        "text": "Are you telling me not to cry but to rejoice? How can happiness come to me? Did I come here having vowed to send him to jail, so that I could rejoice once the deed succeeded......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u050",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d039",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u051",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d040",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Why, Chinnamma, did you ruin our life like this?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u052",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d041",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Kumudha! I knew nothing of any crime, Kumudha! Without even knowing it myself, I have been used as a pawn in someone's game!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u053",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d042",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Whose game! Why hide it? It is all your younger brother's game!... I know!... The two of you together planned to destroy our happy life....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u054",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d043",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Kumudha! Even if you cannot understand the conspiracy created by circumstance, have you forgotten even that your Chinnamma has a heart?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u055",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d044",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "You have a heart. In it there is room only for your younger brother's welfare and gain.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u056",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d045",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "(Crying out.) Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u057",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d046",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Paranthaman is furious that Kumudha, who should have been one of the dolls in his bedchamber, became the beloved of his enemy Pandiyan! And you are furious that Pandiyan, who should have been your lover, lies fondling Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u058",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d047",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "Ah! What did you say! You sinner!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u059",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d048",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 75,
+            "printedPage": 67
+          }
+        ],
+        "text": "There is nothing more to say. As of today the bonds, affection and kinship of this house are all over. Here are the gold ornaments you fastened on me! Take the jewels! (She removes the ornaments and throws them down.) Live happily with your younger brother! I am leaving...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u060",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s057-d049",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Kumudha!....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u061",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s057-d050",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "Don't touch me! From now on, who am I? Who are you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s057-u062",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 76,
+            "printedPage": 68
+          }
+        ],
+        "text": "(She runs away. Poomaal stands motionless.)",
+        "notes": []
+      }
+    ]
+  }
+}

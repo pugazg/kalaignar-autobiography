@@ -1,0 +1,413 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-48",
+  "canonicalScene": 48,
+  "sourceHeading": 48,
+  "headingTa": "காட்சி 48]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 63,
+      "printedPage": 55
+    },
+    {
+      "pdfPage": 64,
+      "printedPage": 56
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[மில் வாசல்: ரோடு"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[புண்யகோடியும் இரண்டு மூன்று தொழிலாளர்களும் பேசிக்கொண்டு வருகின்றனர்.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு தொழிலாளி",
+        "text": "ஒரு தொழிலாளி: (புண்யகோடியிடம்) என்னங்க மேஸ்திரி குறைகளையெல்லாம் சீக்கிரம் கவனிக்கப்போறாரு முதலாளின்னீங்க ஒண்ணியும் காணுமே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அதெல்லாம் சீக்கிரம் நடக்கும் பாரு!... நடக்கலேன்னா நம்ம தலைவர் இறுதிப் போராட்டம் ஆரம்பிச்சுடுவாரு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "text": "தொழிலாளி: அது சரி.. இப்ப ஆரம்பிச்ச ஜனவரிப் போராட்டமே பிசு பிசுண்ணு போய்ட்டுதுண்ணு சில பேர் பேசிக்கிறாங்களே !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : பேசுவாங்க, பேசுவாங்க ! முட்டாள்கள். நம்முடைய தலைவர் பரந்தாமனை சாதாரணமா நினைச்சுக்கிட்டாங்க ! புலி பதுங்குறது பாய்ச்சலுக்கு அடையாளம்ணு சொல்லு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "text": "தொழிலாளி: பதுங்கிறது புலியா பூனையான்னுதானே சந்தேகப்படுறாரு பாண்டியன்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : பாண்டியன் ... அந்தப் பய பேச்சை என்கிட்டே பேசாதீங்க... அயோக்கியப் பயல் ! அப்பன் கல்யாணம் பண்ணிக்கிறதைத் தடுக்கிற பயலை அகில உலகத்திலியும் நான் கண்டதில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "text": "தொழிலாளி: சரி மேஸ்திரி நாங்க வர்ரோம்.."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் காரிடம் நின்று கொண்டிருக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : நமஸ்காரம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : என்ன ... ஆங்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : இப்பதான் மில்வேலை முடிஞ்சு ..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ம்... நான் சங்கத்துப் பக்கம் போய்ட்டு வர்றேன் .."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அப்படியா, வாங்களேன் வீட்டுக்குப் போகலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: எனக்கு அவசரமா வேலையிருக்கிறது..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : சரிதான் வாங்க... நம்ம கல்யாணத்துக்குக்கூட வர்லே. கல்யாண விருந்தாக ஒரு கப் காப்பி சாப்பிட்டு வரலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஓகோ wife இங்கதானா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : ஆமாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சரி வாங்க காரில் போகலாம்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s048-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "(Punyakodi and two or three workers come along talking.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u002",
+        "kind": "dialogue",
+        "speakerLabel": "ஒரு தொழிலாளி",
+        "sourceRecordId": "tirumbippaar-s048-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "(To Punyakodi) What is this, foreman? You said the owner would soon attend to all our grievances, but we don't see anything happening!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u003",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "All that will happen soon, you'll see!... If it doesn't, our leader will begin the final struggle!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u004",
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "sourceRecordId": "tirumbippaar-s048-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "All right... but some people say even the January struggle we started has fizzled out!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u005",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "They'll talk, they'll talk! Fools. They have taken our leader Paranthaman for an ordinary man! Tell them a tiger crouches only as a sign that it is about to pounce.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u006",
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "sourceRecordId": "tirumbippaar-s048-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "Pandiyan's doubt is whether the thing crouching is a tiger or a cat!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u007",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "Pandiyan... don't talk to me about that fellow... the scoundrel! Nowhere in the whole world have I seen a fellow who tries to stop his father from getting married.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u008",
+        "kind": "dialogue",
+        "speakerLabel": "தொழிலாளி",
+        "sourceRecordId": "tirumbippaar-s048-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "All right, foreman, we'll be going...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "(Paranthaman is standing near his car.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u010",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "Greetings...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s048-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "What... ah...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u012",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "Just finished work at the mill...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s048-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 63,
+            "printedPage": 55
+          }
+        ],
+        "text": "Hmm... I'm going over to the union and will be back...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u014",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 64,
+            "printedPage": 56
+          }
+        ],
+        "text": "Is that so? Come, let's go home.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s048-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 64,
+            "printedPage": 56
+          }
+        ],
+        "text": "I have urgent work...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u016",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 64,
+            "printedPage": 56
+          }
+        ],
+        "text": "Come on... you didn't even come to our wedding. At least have a cup of coffee as the wedding feast and go.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u017",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s048-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 64,
+            "printedPage": 56
+          }
+        ],
+        "text": "Oh... your wife is here, is she!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u018",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s048-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 64,
+            "printedPage": 56
+          }
+        ],
+        "text": "Yes.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s048-u019",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s048-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 64,
+            "printedPage": 56
+          }
+        ],
+        "text": "All right, come. We'll go in the car.",
+        "notes": []
+      }
+    ]
+  }
+}

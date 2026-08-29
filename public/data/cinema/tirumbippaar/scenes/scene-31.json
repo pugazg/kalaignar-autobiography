@@ -1,0 +1,107 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-31",
+  "canonicalScene": 31,
+  "sourceHeading": 31,
+  "headingTa": "காட்சி 31] [பூமாலை வீடு",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 38,
+      "printedPage": 30
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பாண்டியன் சிந்தனையிலமர்ந்திருக்கிறான் எழுதியபடியே ...குமுதா \"பாண்டியன் என் சொல்லை \" என்ற பாட்டை தன் காதலை வெளியிட்டுப் பாடுகிறாள் அபிநய அசைவுடன்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன்: உன் சொல்லைத் தாண்டிப்போனதே கிடையாதே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: பாண்டியன்!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(இருவரும் தழுவிக்கொள்ளுதல்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s031-u001",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-006",
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "(Pandiyan sits absorbed in thought, continuing to write. Kumudha sings ‘Pandiyan, en sollai’ [‘Pandiyan, my word...’], openly expressing her love through expressive gestures.)",
+        "notes": [
+          "Only the song reference/title fragment printed in the booklet is translated; absent lyrics are not reconstructed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s031-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s031-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "I have never gone against your word!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s031-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s031-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "Pandiyan!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s031-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 38,
+            "printedPage": 30
+          }
+        ],
+        "text": "(They embrace.)",
+        "notes": []
+      }
+    ]
+  }
+}

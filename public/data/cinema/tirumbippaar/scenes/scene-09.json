@@ -1,0 +1,110 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-09",
+  "canonicalScene": 9,
+  "sourceHeading": 9,
+  "headingTa": "காட்சி 9] [மாடியில் ஓர் அறை-பகல்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 18,
+      "printedPage": 10
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[மாடியில் தேடி அலுத்து பிரமைபிடித்தவள்போலிருக்கும் பூமாலையிடம் குமுதா ஓடிவருகிறாள்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குமுதா! இந்த அவமானத்துக்கு என்ன செய்வது... அய்யோ...(என்று அலறுகிறாள்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s009-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "(Kumudha runs to Poomalai, who is upstairs, exhausted from searching and looking as though she is in a daze.)",
+        "notes": [
+          "`பிரமைபிடித்தவள்போலிருக்கும்` is kept as a dazed/disoriented appearance rather than diagnosed or intensified."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s009-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s009-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s009-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s009-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Chinnamma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s009-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s009-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 18,
+            "printedPage": 10
+          }
+        ],
+        "text": "Kumudha! What are we to do about this disgrace... Ayyo... (she cries out)",
+        "notes": [
+          "The source exclamation `அய்யோ` is retained as `Ayyo` rather than replaced with a narrower emotional interpretation."
+        ]
+      }
+    ]
+  }
+}

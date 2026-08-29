@@ -1,0 +1,175 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-46",
+  "canonicalScene": 46,
+  "sourceHeading": 46,
+  "headingTa": "காட்சி 46 ]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 60,
+      "printedPage": 52
+    },
+    {
+      "pdfPage": 61,
+      "printedPage": 53
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன் பதிப்பகம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: (கருடனிடம்) கூட்டத்தில் அவ்வளவு பேசினான். கேட்டுக்கொண்டு வந்தாய்...ம்..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : நான் என்னப்பா செய்றது. தனி மனுஷன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : படாடோபம்,பத்திரிகை விளம்பரம், பரந்தாமனுக்கு ஜே...நேரிடையாகவே தாக்கியிருக்கிறான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: தாக்கினாலும் பரவாயில்லை. அந்த ஐயாயிரம் விஷயத்தையும் சொல்லிவிட்டான்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: பாண்டியன்! என் வீட்டுக்குள்ளேயே எதிரி! உயிரோடு உலவக்கூடாது அவன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: பிணமா உலவினால்கூட உன்பெருமைக்கு ஆபத்துதான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: முடிவு கட்டுகிறேன். இன்றைக்கே முடிவு கட்டுகிறேன்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s046-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s046-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 60,
+            "printedPage": 52
+          }
+        ],
+        "text": "(To Garudan) He spoke that much at the meeting, and you just listened and came away...hmm...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s046-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s046-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 60,
+            "printedPage": 52
+          }
+        ],
+        "text": "What can I do, man? I'm only one person.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s046-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s046-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 60,
+            "printedPage": 52
+          }
+        ],
+        "text": "Pomp, newspaper publicity, 'Victory to Paranthaman'... he has attacked me directly.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s046-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s046-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 60,
+            "printedPage": 52
+          }
+        ],
+        "text": "The attack itself doesn't matter. He has even spoken about that five-thousand matter.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s046-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s046-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 60,
+            "printedPage": 52
+          }
+        ],
+        "text": "Pandiyan! An enemy inside my own house! He must not walk around alive.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s046-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s046-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 61,
+            "printedPage": 53
+          }
+        ],
+        "text": "Even if he walks around as a corpse, it will be dangerous to your greatness.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s046-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s046-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 61,
+            "printedPage": 53
+          }
+        ],
+        "text": "I'll finish it. I'll finish it today itself.",
+        "notes": []
+      }
+    ]
+  }
+}

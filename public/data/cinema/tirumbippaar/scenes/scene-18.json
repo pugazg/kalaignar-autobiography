@@ -1,0 +1,131 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-18",
+  "canonicalScene": 18,
+  "sourceHeading": 18,
+  "headingTa": "காட்சி 18] [பாண்டியன் அறை",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 27,
+      "printedPage": 19
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பாண்டியன் பாமாவை மணக்கப்போகிற மகிழ்ச்சியில் இருக்கிறான். வெளியிலே மாப்பிள்ளை ஊர்வலத்துக்கு ஏற்பாடு நடக்கிறது. உள்ளே]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : சீக்கிரம் புறப்படுடா தம்பி ! எல்லாம் தயாரா இருக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : ஊர்வலம் வேணுமாப்பா? எனக்கென்னமோ பிடிக்கலை"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : அது கெட்டுது போ ! ஊர்வலமே வேண்டாமா ! நம்ப என்ன அவாளை இவாளை கூப்பிட்டு கச்சேரியா வைக்கப் போறோம். கொஞ்சம் சிறப்பா, வெறும் மாப்பிள்ளை ஊர்வலம் கூடவா கூடாது—பெண் உன் பக்கத்திலே இருக்கப் போறதில்லை நீ ஏன் வெட்கப் படுறே."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பாண்டு வாத்யம் திடீரென நிற்கிறது. ஒருவன் புண்யகோடியின் காதில் பெண் ஓடிவிட்டாள் என்ற செய்தியைக் கூறுதல். பாண்டியன் திகைப்பு)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s018-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "(Pandiyan is happy that he is going to marry Bama. Outside, preparations are under way for the bridegroom's procession. Inside—)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s018-u002",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s018-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "Set out quickly, son! Everything is ready.",
+        "notes": [
+          "The corrected source label is exactly `புண்யகோடி`; the stale `புண்ணகோடி` metadata is removed.",
+          "`புறப்படு` is rendered as setting out/leaving, not merely getting ready."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s018-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s018-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "Do we need a procession, father? Somehow I don't like it.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s018-u004",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s018-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "Oh, forget that! No procession at all? Are we going to call this person and that person and arrange a concert? Can't we at least have a simple bridegroom's procession with a little ceremony? The girl isn't going to be beside you—why are you shy?",
+        "notes": [
+          "The colloquial `அவாளை இவாளை` is rendered generically rather than assigned specific identities.",
+          "The corrected source label is exactly `புண்யகோடி`."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s018-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 27,
+            "printedPage": 19
+          }
+        ],
+        "text": "(The band suddenly stops. A man tells Punyakodi in his ear that the bride has run away. Pandiyan is stunned.)",
+        "notes": []
+      }
+    ]
+  }
+}

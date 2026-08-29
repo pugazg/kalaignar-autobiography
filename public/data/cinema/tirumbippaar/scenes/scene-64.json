@@ -1,0 +1,146 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-64",
+  "canonicalScene": 64,
+  "sourceHeading": 64,
+  "headingTa": "காட்சி 64]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 81,
+      "printedPage": 73
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[வாட்ச்மேன் வீடு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "text": "வாட்ச்மேன் : ஏம்மா வருத்தப்பட்டுகிட்டே இருக்கே ! சந்தோஷமா இரும்மா !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: எனக்கேது சந்தோஷம் ! உங்களுடைய நிலைமையில் நான் வேறே பாரமா வந்திருக்கிறேனே என்று நினைக்கும் ......"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "text": "வாட்ச்மேன் : பரவாயில்லேம்மா... அதனால என்னம்மா! உன் புருஷன் ஜெயில்லேருந்து வர்ர வரையிலும் நீ இங்கேயே இருக்கலாம். எனக்குத்தான் வேற யாரு! நீ தான் எம் பொண்ணு மாதிரி !."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா : உங்க உதவியை மறக்கவே முடியாது !."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "text": "வாட்ச்மேன் : சரி, பத்திரமாயிரும்மா ! நான் ஆஸ்பத்திரிக்குப் போய்ட்டு வாரேன்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s064-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "(Watchman's house.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s064-u002",
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "sourceRecordId": "tirumbippaar-s064-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "Why do you keep grieving, amma! Be happy, amma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s064-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s064-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "What happiness is there for me! When I think that I have come under your shelter only to become another burden......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s064-u004",
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "sourceRecordId": "tirumbippaar-s064-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "Never mind, amma... What's that to worry about! You can stay right here until your husband comes back from jail. Who else do I have? You're like my own daughter!........",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s064-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s064-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "I can never forget your help!......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s064-u006",
+        "kind": "dialogue",
+        "speakerLabel": "வாட்ச்மேன்",
+        "sourceRecordId": "tirumbippaar-s064-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 81,
+            "printedPage": 73
+          }
+        ],
+        "text": "All right, take care, amma! I'll go to the hospital and come back.",
+        "notes": []
+      }
+    ]
+  }
+}

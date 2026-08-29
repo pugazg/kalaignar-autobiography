@@ -1,0 +1,545 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-36",
+  "canonicalScene": 36,
+  "sourceHeading": 36,
+  "headingTa": "காட்சி 36",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 44,
+      "printedPage": 36
+    },
+    {
+      "pdfPage": 45,
+      "printedPage": 37
+    },
+    {
+      "pdfPage": 46,
+      "printedPage": 38
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[ஒரு அறை"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[குமுதா அழுதபடியிருக்கிறாள்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அழாதே குமுதா! (கலங்கியபடி )"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா! ! ஏன் சின்னம்மா என்னை அடிச்சே! என்மேல் ஒரு தவறும் இல்லியே சின்னம்மா !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: பரந்தாமனுக்கு யாரு ! நம்மைப் போலத்தானே அவனும் ! அவனைப்போயி நீ அடிக்கலாமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா பாண்டியனை மட்டும் மாமா அப்படி நடத்தலாமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அதைக் கேட்க நான் இருக்கிறேனே! அவனை எனக்கு நேராகவே"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: உனக்கு உன் தம்பி பெரிசு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : உனக்கு ?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: எனக்கு என் காதலன் பெரிசு !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : (திடுக்கிட்டு) காதலனா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: ஆமாம்! பாண்டியன் என் காதலன்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : உன் காதலன்?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(விம்மியபடி வேறிடம்போய் அழுகிறாள். விரக்தியுடன்- குமுதா அவளிடம் ஓடிவந்து)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: நான் காதலிக்கக் கூடாதா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அவர் சம்மதம் கொடுத்துவிட்டாரா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: இருவர் உள்ளமும் ஒன்றுபட்டுவிட்டது !"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பூமாலை அழுகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : சே ! எவ்வளவு பெரிய தவறு செய்துவிட்டேன்! குமுதா"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: என்ன தவறு செய்துவிட்டாய் சின்னம்மா ? அவரை அழைத்து வந்தாயே அது தவறா? அல்லது எனக்கு அறிமுகப்படுத்தினாயே அது தவறா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அழைத்து வந்ததிலும் தவறில்லை. அறிமுகப்படுத்தியதிலும் தவறில்லை."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா : பிறகென்ன நான் அன்பு காட்டியது தவறா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அதுவுமில்லை குமுதா! கொடி படரும் கொம்பிலே செடி படர முயன்றதுதான் தவறு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: விளங்கவில்லையே ...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை : விளங்க வேண்டாம் உனக்கு, விளங்கவே வேண்டாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா! எங்கள் காதலை நீங்கள் அனுமதிக்கவில்லையா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: அனுமதிக்கிறேன் கண்ணே! இப்போதே உங்களிருவரையும் வாழ்த்துகிறேன்....பாண்டியன்! பாண்டியன்!"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s036-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 44,
+            "printedPage": 36
+          }
+        ],
+        "text": "(Kumudha is crying.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 44,
+            "printedPage": 36
+          }
+        ],
+        "text": "Don't cry, Kumudha! (Distressed)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 44,
+            "printedPage": 36
+          }
+        ],
+        "text": "Chinnamma! Why did you hit me, Chinnamma? I haven't done anything wrong, Chinnamma!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 44,
+            "printedPage": 36
+          }
+        ],
+        "text": "Who is Paranthaman? Isn't he one of us too? How could you go and hit him?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u005",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 44,
+            "printedPage": 36
+          }
+        ],
+        "text": "Chinnamma, is uncle allowed to treat Pandiyan like that?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 44,
+            "printedPage": 36
+          }
+        ],
+        "text": "I'm here to question that! Right in front of me, he....",
+        "notes": [
+          "The corrected source utterance is unfinished at the page break; the English preserves the incompleteness instead of supplying a missing action."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s036-u007",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Your younger brother matters more to you!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "And to you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u009",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "My lover matters more to me!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "(Startled) Lover?....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u011",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Yes! Pandiyan is my lover!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Your lover?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u013",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "(Sobbing, Poomalai goes aside and cries in despair. Kumudha runs to her.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u014",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Am I not allowed to love?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Has he given his consent?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u016",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Our two hearts have become one!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u017",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Tch! What a great mistake I've made, Kumudha!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u018",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d016",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "What mistake did you make, Chinnamma? Was bringing him here the mistake? Or was introducing him to me the mistake?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u019",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d017",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "There was no mistake in bringing him. Nor in introducing him.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u020",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d018",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Then was it wrong that I showed him affection?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u021",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d019",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Not that either, Kumudha! The mistake was that a plant tried to climb the branch on which a creeper was already spreading.",
+        "notes": [
+          "The source's creeper/plant metaphor is preserved rather than replaced with an explicit explanation of the romantic triangle."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s036-u022",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d020",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "I don't understand....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u023",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d021",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "You need not understand; you must never understand.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u024",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s036-d022",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 45,
+            "printedPage": 37
+          }
+        ],
+        "text": "Chinnamma! Won't you permit our love?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s036-u025",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s036-d023",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 46,
+            "printedPage": 38
+          }
+        ],
+        "text": "I permit it, dear! I bless both of you this very moment....Pandiyan! Pandiyan!",
+        "notes": []
+      }
+    ]
+  }
+}

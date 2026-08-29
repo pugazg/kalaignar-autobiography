@@ -1,0 +1,316 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-06",
+  "canonicalScene": 6,
+  "sourceHeading": 6,
+  "headingTa": "காட்சி 6] [குளக்கரையோரமுள்ள தென்னஞ்சோலை-பகல்",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 15,
+      "printedPage": 7
+    },
+    {
+      "pdfPage": 16,
+      "printedPage": 8
+    },
+    {
+      "pdfPage": 17,
+      "printedPage": 9
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[பாமா பாடிமுடிந்ததும் குடத்தை எடுத்துக்கொண்டு போகிறாள் - மரத்தின் மேலே இருந்த பரந்தாமன் குடத்தின் கழுத்தில் சுருக்குப் போட்டு இழுக்கிறான். பாமா மேலே பார்த்து -]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "text": "பாமா: இது என்னா வேலை...\n(சிரித்தபடி பரந்தாமன் கீழே வருதல்)\nபாமா: குடத்திலே விழுந்த சுருக்கு தவறி என் கழுத்திலே விழுந்தது,\nபரந்தாமன்: கழுத்திலேயுந்தான் சுருக்குப் போடப் .....\nபாமா: என்னாது ..\nபரந்தாமன்: பயப்படாதே ! இந்தக் கயிற்றால் அல்ல. உன் மரகதமணிக் கழுத்திலே மஞ்சள் தோய்ந்த மாங்கல்யக் கயிற்றால். (பாமா வெட்கம்) பாமா! சொன்னது சரிதானே ! அட சொல்லு (பாமா புன்னகை )ஆகா புயலை அடக்கும் தென்றல்,எரிமலையை அணைக்கின்ற பனிக்கட்டி, கேள்விப்பட்டதே இல்லை நான் !. ஆனால் அந்தப் புதுமையான சக்தியை உன்னுடைய ஒரு புன்னகையிலேயே காணமுடிகிறது.\nபாமா: இதெல்லாம் வெறும் வர்ணனையாகப் போய்விடாதே?\nபரந்தாமன்: ஏன் சந்தேகம் !. (தோளில் கை வைத்து) நேற்று தானே அறிமுகமானான். இன்று தொட்டு விளையாடுகிறான், நாளை ஓடிவிடுவானோ என்று அஞ்சுகிறாயா? கொஞ்சு மொழியாளே! கூர்ந்து கவனிக்கவில்லையா நீ, இல்லற ஜோதியிலே என்ன எழுதியிருக்கிறேனென்று .\nபாமா : எழுதியபடியே நடப்பீர்களா?\nபரந்தாமன் : (அலுத்தபடி) பெண்களே இப்படித்தான் சந்தேகப் பிராணிகள்.\nபாமா : இல்லை...யில்லை ... (அவன் முகத்தைத்திருப்பி ) இங்கு பாருங்கள் ...\nபரந்தாமன் : பாமா! கண்ணே! (நெருங்கல்)\nபாமா: ஊஹும்... எல்லாம் திருமணம் ஆனபிறகு..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : திருமணந்தான் ஆகப்போகிறதே !\nபாமா : திருமணம். நான் பாக்யசாலி."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s006-u001",
+        "kind": "song-reference",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": "tirumbippaar-song-002",
+        "pageProvenance": [
+          {
+            "pdfPage": 15,
+            "printedPage": 7
+          }
+        ],
+        "text": "(Bama's song has ended.)",
+        "notes": [
+          "Only the source-visible performance reference is translated; no song title or lyric body is supplied or reconstructed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s006-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 15,
+            "printedPage": 7
+          }
+        ],
+        "text": "(She takes the water pot and walks away. From the tree above, Paranthaman loops a noose around the neck of the pot and pulls it. Bama looks up—)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "What kind of mischief is this...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "(Paranthaman comes down laughing.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "The noose that fell on the pot slipped and fell around my neck,",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s006-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "To put a noose around your neck too.....",
+        "notes": [
+          "The source's wordplay on `சுருக்கு` is retained literally so Paranthaman's next line can turn it toward the marriage cord. The scan-adjudicated Tamil `சுருக்குப் போடப் .....` breaks off after the infinitive, so the English keeps the unfinished construction rather than supplying the finite verb the earlier reading assumed."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s006-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "What......",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s006-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "Don't be afraid! Not with this rope. With a turmeric-dyed marriage cord around your emerald-jewel neck. (Bama is shy.) Bama! What I said is right, isn't it? Come on, say it...... (Bama smiles.) Ah! A breeze that subdues a storm, a block of ice that quenches a volcano—I have never even heard of such a thing!... Yet I can see that wondrous power in a single smile of yours.",
+        "notes": [
+          "`மாங்கல்யக் கயிறு` is rendered as `marriage cord`; the source imagery and embedded actions remain within the immutable dialogue-linked unit."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s006-u009",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "Won't all this end up as mere description?",
+        "notes": [
+          "The source's `வர்ணனை` is kept as `description`; the question is not expanded into a promise absent from the Tamil."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s006-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s006-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "Why the doubt! (Putting a hand on her shoulder) Only yesterday he became acquainted. Today he touches and plays; are you afraid that tomorrow he may run away? Sweet-tongued one! Haven't you carefully noticed what I wrote in Illara Jothi?",
+        "notes": [
+          "The corrected Tamil's sequence `நேற்று... இன்று... நாளை...` is retained explicitly. The scan-adjudicated forms `அறிமுகமானான்`, `விளையாடுகிறான்` and `ஓடிவிடுவானோ` are third person as printed and are rendered as such rather than normalised to first person; the closing `எழுதியிருக்கிறேன்` stays first person because the source prints it so. The book title remains transliterated without importing authorship claims into the speech."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s006-u011",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "Will you act as you wrote?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u012",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s006-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "(Wearily) Women are creatures of suspicion like this.",
+        "notes": [
+          "`அலுத்தபடி` is retained as weariness/exasperation rather than strengthened into a different attitude."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s006-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "No...no... (turning his face toward her) Look here...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u014",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s006-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "Bama! My dear! (moves closer)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 16,
+            "printedPage": 8
+          }
+        ],
+        "text": "No...all that only after the marriage...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u016",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s006-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "But the marriage is going to happen!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s006-u017",
+        "kind": "dialogue",
+        "speakerLabel": "பாமா",
+        "sourceRecordId": "tirumbippaar-s006-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 17,
+            "printedPage": 9
+          }
+        ],
+        "text": "Marriage. I am fortunate.",
+        "notes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-01",
+  "canonicalScene": 1,
+  "sourceHeading": 1,
+  "headingTa": "காட்சி 1] [கோர்ட்",
+  "canonicalPart": "part-01",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 9,
+      "printedPage": 1
+    },
+    {
+      "pdfPage": 10,
+      "printedPage": 2
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[வக்கீல் பேசிக்கொண்டிருக்கிறார்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வக்கீல்",
+        "text": "வக்கீல்: கொலை செய்தது பூமாலைதான் என்று பத்திரிகைகளில் வந்த செய்தி தவறானது! புலன் விசாரணைக்குப் பிறகு, வழக்கின் உருவமே மாறியிருக்கிறது. கொலை செய்யப்பட்டவரை பூமாலை கொன்றிருக்கவேண்டிய அடிப்படை காரணங்கள் எதுவுமே இல்லை. (பூமாலை காட்டப்படுதல்) கொலை செய்யப்பட்டவரின் பரம விரோதியாக ஆதிமுதல் இருந்தது பாண்டியன்தான். (பாண்டியன் காட்டப்படுதல்) குடும்ப விவகாரங்களிலும் சரி, பொதுவாழ்க்கையிலும் சரி இருவருக்கும் பல நாட்களாகவே பகை வளர்ந்திருக்கிறது. இந்தப் பகை வெறியாக மாறி கொலையில் முடிந்திருக்கிறது!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: இல்லை. பாண்டியன் நிரபராதி! அவர் கொலை செய்யவில்லை—கொலை செய்யவில்லை. நானேதான் கொலை செய்தேன்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(நீதிபதி மேஜையைத் தட்டுதல் Silence)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வக்கீல்",
+        "text": "வக்கீல்: பூமாலை கொலைக்குற்றத்தை தானே ஏற்றுக்கொள்வது பாண்டியன் மீதுள்ள அன்பின் காரணமாக. பாண்டியனைக் காட்டிக் கொடுக்கக் கூடாது என்ற ஒரே காரணத்திற்காக."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: இல்லை இல்லை. நீதிபதி அவர்களே! பாண்டியனுக்கும் இந்தக் கொலைக்கும் சம்மந்தமே இல்லை. தயவுசெய்து என் குடும்ப வரலாறு முழுவதையும் கேளுங்கள்!......"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நீதிபதி",
+        "text": "நீதிபதி: இந்தக் கொலை வழக்கிற்கும், உன் குடும்ப வரலாற்றுக்கும் என்னம்மா தொடர்பு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: நிறைய இருக்கிறது! இந்த வழக்கிற்கு ஆதரவாக அந்த வரலாறு மட்டுமல்ல, ஆஸ்பத்திரி வாட்ச்மேன், மில்"
+      },
+      {
+        "kind": "prose",
+        "text": "முதலாளி முதலிய சாட்சிகளுமிருக்கிறார்கள். அவர்களையும் விசாரியுங்கள்! முதலில் என் கதையைக் கேளுங்கள்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "நீதிபதி",
+        "text": "நீதிபதி: சொல்லு!..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: எங்கள் குடும்பம் இருந்தது கோயமுத்தூர்! அங்கே ஒரு புத்தக நிலையம் இருந்தது! அதன் பெயர் கருடன் பதிப்பகம். அங்கேதான்!..."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s001-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "(The lawyer is speaking.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s001-u002",
+        "kind": "dialogue",
+        "speakerLabel": "வக்கீல்",
+        "sourceRecordId": "tirumbippaar-s001-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "The report in the newspapers saying that Poomalai committed the murder is false! After the investigation, the very shape of the case has changed. There is no basic reason at all why Poomalai should have killed the murdered man. (Poomalai is shown.) From the very beginning, Pandiyan has been the murdered man's bitterest enemy. (Pandiyan is shown.) In family matters and in public life alike, hostility has been growing between the two for many days. That hostility turned into hatred and ended in murder!",
+        "notes": [
+          "Personal names are transliterated in the English text; the exact Tamil speaker label remains immutable metadata.",
+          "The two source-visible display directions embedded in the lawyer's utterance remain inside this dialogue unit."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s001-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s001-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "No. Pandiyan is innocent! He did not commit the murder—did not commit the murder. I alone committed the murder.",
+        "notes": [
+          "The source repeats the denial across the dash; the English deliberately preserves that repetition rather than smoothing it away."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s001-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "(The judge bangs the table. Silence.)",
+        "notes": [
+          "The source itself uses the English word `Silence`; it is retained in meaning rather than treated as an editorial insertion."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s001-u005",
+        "kind": "dialogue",
+        "speakerLabel": "வக்கீல்",
+        "sourceRecordId": "tirumbippaar-s001-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "Poomalai is taking the murder charge upon herself because of her affection for Pandiyan—for the sole reason that she does not want to give Pandiyan away.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s001-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s001-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "No, no. Your Honour! Pandiyan has nothing whatsoever to do with this murder. Please listen to my entire family history!......",
+        "notes": [
+          "The emphatic repeated `இல்லை இல்லை` and the extended source ellipsis are preserved rather than reduced to a single denial."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s001-u007",
+        "kind": "dialogue",
+        "speakerLabel": "நீதிபதி",
+        "sourceRecordId": "tirumbippaar-s001-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          }
+        ],
+        "text": "What connection is there between this murder case and your family history?",
+        "notes": [
+          "The conversational feminine address embedded in `என்னம்மா` is not expanded into an invented English name or title."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s001-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s001-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 9,
+            "printedPage": 1
+          },
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "There is a great deal! In support of this case, there is not only that history; there are also witnesses—the hospital watchman, the mill owner and others. Question them too! First listen to my story!",
+        "notes": [
+          "This cross-page dialogue mirrors the source break inside `மில் / முதலாளி`; the combined English restores the natural phrase `mill owner`."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s001-u009",
+        "kind": "dialogue",
+        "speakerLabel": "நீதிபதி",
+        "sourceRecordId": "tirumbippaar-s001-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "Tell me!...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s001-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s001-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 10,
+            "printedPage": 2
+          }
+        ],
+        "text": "Our family lived in Coimbatore! There was a bookshop there! Its name was Garudan Publishing House. It was there!...",
+        "notes": [
+          "The corrected Tamil source reads `கோயமுத்தூர்`; the English uses the standard English toponym `Coimbatore`.",
+          "The unfinished source pivot `அங்கேதான்!...` is kept unfinished rather than completed with inferred narrative."
+        ]
+      }
+    ]
+  }
+}

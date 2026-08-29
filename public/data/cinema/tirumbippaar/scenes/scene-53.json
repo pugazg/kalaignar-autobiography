@@ -1,0 +1,159 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-53",
+  "canonicalScene": 53,
+  "sourceHeading": 53,
+  "headingTa": "காட்சி 53] [கருடன் பதிப்பகம்",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 68,
+      "printedPage": 60
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முரடன்",
+        "text": "முரடன் : இத பாருங்க. உஷாவைப் பிடிச்சி இழுக்கும்போது இந்த நெக்லஸ்கூட அறுந்து கையோட வந்துட்டுது."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் நெக்லஸை வாங்கிப் பார்த்தல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : ஆஹா! அருமையான வைரம். ரொம்ப விலையிருக்கும். ம் ... கொடு கொடு. அதாவது மிச்சப்படட்டும். பெட்டியிலே வைப்போம்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமன் நெக்லஸைக் கொடுக்கவில்லை)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன்: கனல் கக்கப் பேசுவது. காரசாரமாக எழுதுவது ! கட்டுப்பாடில்லாமல் கட்சி நடத்துவது.கண்மூடித்தனமாக தொழிலாளரைத் தூண்டுவது. இதெல்லாம் போலித் தலைவர் விடும் புஸ் வாணங்கள்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(என்று \"போலித் தலைவன்\" என்ற பாண்டியனின் புத்தகத்தை படித்தபடி வருகிறான். பரந்தாமன் ஆத்திரம் அதிகமாகிறது.)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s053-u001",
+        "kind": "dialogue",
+        "speakerLabel": "முரடன்",
+        "sourceRecordId": "tirumbippaar-s053-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "Look at this. When I grabbed Usha and pulled her, this necklace snapped off too and came away in my hand.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s053-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "(Paranthaman takes the necklace and looks at it.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s053-u003",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s053-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "Ah! What a fine diamond. It must be very expensive. Hmm... give it, give it. At least let that remain. We'll put it in the box.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s053-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "(Paranthaman does not give the necklace.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s053-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s053-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "Speaking as though spitting fire. Writing with biting heat. Running a party without restraint. Blindly inciting workers. All these are the dud fireworks set off by a false leader.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s053-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "(He comes along reading Pandiyan's book 'The False Leader.')",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s053-u007",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 68,
+            "printedPage": 60
+          }
+        ],
+        "text": "(Paranthaman's anger increases.)",
+        "notes": []
+      }
+    ]
+  }
+}

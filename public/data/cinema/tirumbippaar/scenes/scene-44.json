@@ -1,0 +1,144 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-44",
+  "canonicalScene": 44,
+  "sourceHeading": 44,
+  "headingTa": "காட்சி 44]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 58,
+      "printedPage": 50
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[மைதானம்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[அங்கே கூட்டத்தை தூரத்தில் நின்று கருடன் பார்க்கிறான். பாண்டியன் பேசுகிறான்.]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : தோழர்களே ! தொல்லைப்படும் தொழிலாளி வர்க்கத்திற்கு தொண்டு செய்வதாகக் கூறிக்கொண்டு ஒரு சில துரோகிகள் புறப்பட்டிருக்கிறார்கள்.தொழிலாளர்கள் ஆர்வமென்னும் மலர்களால் கட்டப்பட்ட அருமையான பூமாலை. அதை மந்தியின் கழுத்தில் போட்டு அழகு பார்க்காதீர்கள். உங்கள் உணர்ச்சியை, உரிமையை, ஆர்வத்தை, ஆவேசத்தை அடகு வைத்து பேரும் புகழும் பணமும் சம்பாதிக்கிற போலித் தலைவனை நம்பாதீர்கள்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கருடன் ஆத்திரம் )"
+      },
+      {
+        "kind": "prose",
+        "text": "போராட்டம் கூடாது என்று கூறும் கோழையல்ல நான். போராட்டத்திற்கு உங்களைத் தூண்டி விடுபவர்கள் புலிகள் அல்ல. புகழ் தேடும் பூனைகள் என்பதை எச்சரிக்கவே இதைக் கூறுகிறேன்... பலாத்காரமற்ற விடுதலைக் கிளர்ச்சியை பகுத்தறிவுள்ள எந்த மனிதனும் மறுக்கமாட்டான். ஆனால் அடிப்படையில்லாத கிளர்ச்சி அடியற்ற நெடுமரமென சாய்ந்துவிடும். படாடோபம், பத்திரிகை விளம்பரம் பரந்தாமனுக்கு 'ஜே' - இந்தப் பகட்டுகளால் பாட்டாளிகளின் தலைவனாகிவிட முடியாது. (கரகோஷம்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கருடன் அதைவிட்டு ஆத்திரத்துடன் போய் விடுகிறான்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s044-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 58,
+            "printedPage": 50
+          }
+        ],
+        "text": "(At the grounds, Garudan stands at a distance watching the gathering. Pandiyan is speaking.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s044-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s044-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 58,
+            "printedPage": 50
+          }
+        ],
+        "text": "Comrades! A few traitors have set out claiming that they are serving the suffering working class. Workers are a beautiful garland woven from the flowers of enthusiasm. Do not put it around a monkey's neck merely to admire it. Do not trust a false leader who mortgages your feeling, your rights, your enthusiasm and your fervour in order to earn name, fame and money.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s044-u003",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 58,
+            "printedPage": 50
+          }
+        ],
+        "text": "(Garudan becomes angry.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s044-u004",
+        "kind": "dialogue",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 58,
+            "printedPage": 50
+          }
+        ],
+        "text": "I am no coward who says there should be no struggle. Those who incite you to struggle are not tigers; they are cats seeking fame. I say this only to warn you.... No rational person will reject a non-violent liberation struggle. But an agitation without a foundation will fall like a tall tree without roots. Pomp, newspaper publicity, cries of 'Jai' to Paranthaman—these displays cannot make anyone the leader of the toilers.",
+        "notes": [
+          "This speech appears after the Garudan-reaction direction without a renewed speaker label. It is therefore preserved as source-unlabelled direct speech with no invented dialogue-record ID, despite the surrounding context indicating continuation of the platform speech."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s044-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 58,
+            "printedPage": 50
+          }
+        ],
+        "text": "(Applause.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s044-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 58,
+            "printedPage": 50
+          }
+        ],
+        "text": "(Garudan leaves angrily.)",
+        "notes": []
+      }
+    ]
+  }
+}

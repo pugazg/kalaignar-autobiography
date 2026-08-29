@@ -1,0 +1,217 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-13",
+  "canonicalScene": 13,
+  "sourceHeading": 13,
+  "headingTa": "காட்சி 13]",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 21,
+      "printedPage": 13
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன் பதிப்பகம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: (வாழு புத்தகத்தைக் காட்டியபடி)கருடா! புத்தகம் எப்படி?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன்: ரொம்ப பிரமாதம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : இந்த புஸ்தகத்திலே ரொம்ப நல்லாயிருக்கிறது...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : என்னடா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : மேல் அட்டைங்க."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : சீ | அட்டை மாத்திரந்தான் நல்லா இருக்கா? அச்சு கூடத்தான் மணி மணியா இருக்கு."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கருடா / அச்சு எப்படி, அட்டை எப்படி என்று விமர்சனம் கேட்கவில்லை : அறிவுரைகள் தந்திருக்கிறேனே, அது எப்படி என்றுதான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : ஆஹா / அதைக் கேக்கணுமா ..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(புத்தகத்தைப் பிரித்துப் பாடல்)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s013-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s013-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "(Showing the Vaazhu book) Garuda! How is the book?",
+        "notes": [
+          "The source book title `வாழு` is transliterated as `Vaazhu`."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s013-u002",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s013-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "Absolutely splendid.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s013-u003",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s013-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "There is something very good in this book.....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s013-u004",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s013-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "What is it?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s013-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s013-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "The cover, sir.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s013-u006",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s013-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "Tch! Is only the cover good? The printing too is gem-like.",
+        "notes": [
+          "`அட்டை மாத்திரந்தான் நல்லா இருக்கா?` is a retort asking whether only the cover is good; it is not a suggestion to change the cover.",
+          "The source phrase `மணி மணியா` is retained as the image `gem-like` rather than normalized into a modern printing-quality term."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s013-u007",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s013-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "Garuda! I did not ask for criticism of how the printing is or how the cover is; I am asking how the advice I have given is.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s013-u008",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s013-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "Ah! Do you even have to ask about that...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s013-u009",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 21,
+            "printedPage": 13
+          }
+        ],
+        "text": "(The book is opened; a song follows.)",
+        "notes": [
+          "The source does not identify a title, lyrics or performer in this line. It is therefore preserved as a direct stage/performance direction and not linked to an invented song occurrence."
+        ]
+      }
+    ]
+  }
+}

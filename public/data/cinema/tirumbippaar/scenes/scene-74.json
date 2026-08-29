@@ -1,0 +1,70 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-74",
+  "canonicalScene": 74,
+  "sourceHeading": 74,
+  "headingTa": "காட்சி 74]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 90,
+      "printedPage": 82
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கோர்ட்"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[பரந்தாமன் கூண்டில் நிற்கிறான்]"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : கோர்ட்டார் அவர்களே, கூறியது அத்தனையும் புரிந்தது எனக்கு. தொழிலாளர்களைத் தூண்டிவிட்டேன், போலீசாருக்குத் தொல்லை கொடுத்தேன். என் சுயநலத்திற்காகப் பாட்டாளி சமூகத்தை பயன்படுத்திக்கொண்டேன், அராஜகம் - பலாத்காரம் இவைகளிலே அப்பாவி மக்களை ஈடுபடுத்தும் அரசியல் ஸ்டண்ட் நடத்தினேன் என்றெல்லாம் என்மீது குற்றஞ் சாட்டப்பட்டது. இதற்கெல்லாம் நான் என்ன பதில் சொல்லப் போகிறேன் ? ஒரே பதில்- தொழிலாளர்கள் அவர்களாகவே நடத்திய கிளர்ச்சிக்கு நான் எந்த விதத்திலும் தொடர்பு கொண்டவனல்ல. அப்படியே இருந்தாலும் ஒருமுறை எச்சரிக்கை செய்து என்னை மன்னிக்கும்படி கோர்ட்டார் அவர்களிடம் தலைவணங்கி மன்னிப்புக் கேட்டுக்கொள்கிறேன். மன்னிப்புக் கேட்டுக்கொள்கிறேன்."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s074-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "(Court. Paranthaman stands in the dock.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s074-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s074-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 90,
+            "printedPage": 82
+          }
+        ],
+        "text": "Honourable Court, I understand everything that has been said. I have been accused of inciting the workers, troubling the police, using the working class for my own selfish ends, involving innocent people in lawlessness and violence, and staging a political stunt. What answer am I going to give to all this? One answer: I had no connection whatsoever with the agitation that the workers carried out on their own. Even so, I bow before the Court and ask forgiveness, requesting that I be warned once and forgiven. I ask forgiveness.",
+        "notes": []
+      }
+    ]
+  }
+}

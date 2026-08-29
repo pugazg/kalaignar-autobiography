@@ -1,0 +1,367 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-70",
+  "canonicalScene": 70,
+  "sourceHeading": 70,
+  "headingTa": "காட்சி 70]",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 86,
+      "printedPage": 78
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": 79
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "[கருடன் பதிப்பகம்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : புண்யகோடியை அரஸ்ட் செய்ய போலீஸ் போயிருக்கிறது! இன்னும் கொஞ்ச நேரத்தில் இங்கு வந்து விடுவார்கள்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அய்யோ இப்ப எங்க ஓடுறது !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: மாறுவேஷத்தில் ஓடினால்தான் போலீஸார் கண்ணிலிருந்து தப்பிக்கலாம்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : மாறுவேஷமா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஆமாம். என்ன மாறுவேஷம் போடுவது?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : உனக்குத்தான் பைத்யம் மாதிரி நடிக்கத் தெரியுமே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : சே. அதெல்லாம் பழசாப் போச்சு. போலீஸுக்குப் புரிஞ்சுடும்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "text": "கருடன் : அப்புறம் ஆப்புட்டுக்க வேண்டியதுதானா?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(போலீஸ் ஜீப் சப்தம் கேட்டு ஓடுகிறார்கள். மாடியில் இருந்து ஆபீஸ் பையன் தூங்கி எழுந்து வருகிறான். போலீஸார் வந்து)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "text": "இன்ஸ்பெக்டர் : ஏ...கருடன் எங்கே?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பையன் தூக்கக் கலக்கத்தில் விழிக்கிறான்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "text": "இன்ஸ்பெக்டர்: பரந்தாமன் எங்கே?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(அதற்கும் விழிக்கிறான் கண்ணைத் துடைத்தபடி)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "text": "இன்ஸ்பெக்டர்: நீ உண்மையைச் சொல்லமாட்டே. நீயும் அவுங்க ஆளுதானே?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "text": "பையன் : இல்லிங்க! நான் சேத்திலே மலர்ந்த செந்தாமரை ! என்னை விட்டுடுங்க!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "text": "இன்ஸ்பெக்டர்: ம் .. தேடிப் பாருங்க."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s070-u001",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "(Garudan Publishing House.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s070-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "The police have gone to arrest Punyakodi! They'll be here in a little while!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u003",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s070-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Alas! Where do we run now!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s070-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Only by fleeing in disguise can we escape the police's eyes.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u005",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s070-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "A disguise?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s070-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Yes. What disguise shall we put on?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u007",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s070-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "You know how to act like a madman!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s070-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Tch. That's old now. The police will understand!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u009",
+        "kind": "dialogue",
+        "speakerLabel": "கருடன்",
+        "sourceRecordId": "tirumbippaar-s070-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Then are we simply supposed to get caught?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u010",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "(Hearing the sound of a police jeep, they run away. The office boy wakes from sleep upstairs and comes down. The police arrive.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u011",
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s070-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Hey... where is Garudan?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u012",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "(The boy stares in a sleepy daze.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u013",
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s070-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "Where is Paranthaman?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u014",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "(He stares again, rubbing his eyes.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u015",
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s070-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 86,
+            "printedPage": 78
+          }
+        ],
+        "text": "You won't tell the truth. You're one of their men too, aren't you?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u016",
+        "kind": "dialogue",
+        "speakerLabel": "பையன்",
+        "sourceRecordId": "tirumbippaar-s070-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "No, sir! I'm a red lotus that bloomed in the mud! Let me go!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s070-u017",
+        "kind": "dialogue",
+        "speakerLabel": "இன்ஸ்பெக்டர்",
+        "sourceRecordId": "tirumbippaar-s070-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 87,
+            "printedPage": 79
+          }
+        ],
+        "text": "Hmm... search the place.",
+        "notes": []
+      }
+    ]
+  }
+}

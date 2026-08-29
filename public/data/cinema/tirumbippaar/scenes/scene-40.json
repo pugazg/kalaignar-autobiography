@@ -1,0 +1,151 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-40",
+  "canonicalScene": 40,
+  "sourceHeading": 40,
+  "headingTa": "காட்சி 40]",
+  "canonicalPart": "part-03",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 52,
+      "printedPage": 44
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "stage-direction",
+        "text": "(இருவரும் எழுதல்)"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "[மில் Ext"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: (காரில் எழுந்து நின்றபடி) அன்புள்ள தொழிலாளர்களே! நமது போராட்டம் வெற்றிபெற்று விட்டது! நமது கிளர்ச்சி கண்டு கிடு கிடுத்துவிட்டார் முதலாளி !... வெகு சீக்கிரத்தில் சம்பள உயர்வு பிரச்னையை கவனிக்கிறேன் என்று என்னிடம் உறுதி அளித்துவிட்டார்! வீரர்களே ! வெற்றியடைந்துவிட்டோம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "text": "புண்யகோடி : நமது தலைவர் பரந்தாமனுக்கு!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "மற்றவர்கள்",
+        "text": "மற்றவர்கள்: ஜே! ஜே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஆகவே எல்லோரும் அமைதியாக வேலைக்குச் செல்லும்படியாக உங்கள் தலைவன் என்னும் முறையில் கேட்டுக் கொள்கிறேன். விரைவில் வெற்றி விழாவை சிறப்பாகக் கொண்டாடுவோம்."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(பரந்தாமனுக்கு ஜே ! என்ற கோஷமுடன் காட்சி முடிகிறது.)"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s040-u001",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s040-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "(Standing up in the car) Dear workers! Our struggle has succeeded! The owner has trembled before our agitation!... He has assured me that very soon he will attend to the question of a wage increase! Warriors! We have won!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s040-u002",
+        "kind": "dialogue",
+        "speakerLabel": "புண்யகோடி",
+        "sourceRecordId": "tirumbippaar-s040-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "For our leader Paranthaman!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s040-u003",
+        "kind": "dialogue",
+        "speakerLabel": "மற்றவர்கள்",
+        "sourceRecordId": "tirumbippaar-s040-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "Jai! Jai!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s040-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s040-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "Therefore, as your leader, I ask all of you to return peacefully to work. We will soon celebrate our victory in grand fashion.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s040-u005",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "(The scene ends amid slogans of 'Jai to Paranthaman!')",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s040-u006",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 52,
+            "printedPage": 44
+          }
+        ],
+        "text": "(The two rise.)",
+        "notes": [
+          "The corrected source prints this carry-over action at the beginning of scene 40. The historical English layer had incorrectly placed it at the end of scene 39."
+        ]
+      }
+    ]
+  }
+}

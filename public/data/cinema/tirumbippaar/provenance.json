@@ -1,0 +1,137 @@
+{
+  "workId": "tirumbippaar",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourcePath": "works/tirumbippaar",
+  "sourceCommit": "6a8c59c445890e568dfe65cc36c2900dd2a8a0b3",
+  "sourceCommitNote": "The CI publication commit that built the released English reader package. It is the archive's own authoritative Tirumbippaar checkpoint, not merely the last commit to touch the work.",
+  "source": {
+    "identifier": "TVA_BOK_0014652",
+    "filename": "TVA_BOK_0014652_திரும்பிப்பார்.pdf",
+    "scanSha256": "973b9c3f7b84d6a1902a4a472af8799c783bf1ec2d6cd015796fc1df1ce59682",
+    "pdfPages": 112,
+    "canonicalPdfPages": "9-112",
+    "canonicalPrintedPages": "1-104",
+    "printedPageFormula": "printed page = PDF page − 8",
+    "scanType": "scanned_image_with_unreliable_ocr",
+    "editionAsPrinted": "முதல் பதிப்பு: 1953",
+    "publicationYearAsPrinted": 1953,
+    "controllingSourceNote": "The controlling source is the scanned booklet, which is not committed to either repository. Every reading here derives from the archive's scan-adjudicated derivatives at the pinned commit."
+  },
+  "creditsAsPrinted": {
+    "coverRoleTa": "கதை - வசனம்",
+    "coverNameTa": "கலைஞர் மு. கருணாநிதி",
+    "note": "The cover credits story and dialogue to Kalaignar. It is not a lyric-authorship credit, and no song occurrence in this work is attributed to him."
+  },
+  "historicalNotices": {
+    "rightsNoticeAsPrinted": "உரிமையுடையது.",
+    "priceAsPrinted": "விலை ரூ. 0-10-0",
+    "note": "These are 1953 source statements recorded as printed evidence. They are not a present-day rights determination, and no catalogue-level rights block is asserted from them."
+  },
+  "frontMatterCrop": {
+    "pdfPage": 2,
+    "visiblePartialReading": "சிட்டி பிரஸ், மதுரை ரோ…",
+    "status": "unresolved-source-crop",
+    "note": "The printer/imprint line is physically cropped in the supplied scan. It sits in front matter, seven pages before canonical text begins, is documented as non-blocking, and is never reconstructed."
+  },
+  "structure": {
+    "sceneHeadingsObserved": 93,
+    "canonicalRange": "1-93",
+    "headingsNotObserved": [],
+    "numberingNote": "All 93 headings are observed consecutively with no gaps, repeats or editorial renumbering. This work has none of Parasakthi's absent-heading or transposed-number structure.",
+    "headingAnomalies": [
+      {
+        "canonicalScene": 5,
+        "printed": "காட்சி 5[",
+        "note": "Irregular opening bracket as printed."
+      },
+      {
+        "canonicalScene": 36,
+        "printed": "காட்சி 36",
+        "note": "No closing glyph is printed."
+      },
+      {
+        "canonicalScene": 43,
+        "printed": "காட்சி 43].",
+        "note": "Closing bracket followed by a full stop as printed."
+      }
+    ],
+    "anomalyNote": "These are source-visible typography, preserved rather than regularised for cleaner display data."
+  },
+  "tamil": {
+    "authority": "works/tirumbippaar/scenes/scene-NN.md",
+    "sceneDerivatives": 93,
+    "dialogueRecords": 1042,
+    "tamilDialogueBlocks": 923,
+    "separatorBlocks": 94,
+    "granularityNote": "The reading layer's 923 speaker-labelled paragraph blocks and the archive's 1042 immutable dialogue records are different granularities, not a discrepancy: ten scenes print a single long speech across several paragraphs that the archive indexes as multiple records. Neither layer is derived from the other.",
+    "canonicalPages": 104,
+    "zeroDialogueScenes": [
+      10,
+      11,
+      25,
+      26,
+      43,
+      54
+    ],
+    "zeroDialogueNote": "These six scenes carry no speaker-labelled dialogue but are not empty: they hold stage directions, chant, newspaper and performance material. The reading layer is the full scene text, not the dialogue records.",
+    "verificationNote": "`verified` and `verified-reconciled` are the archive's own recorded states for its scan-adjudicated fidelity audit of the 104 canonical pages. They are archive states, not a claim of independent human re-verification here.",
+    "settledReadings": {
+      "ஊஹும்": "Confirmed by the owner directly against the controlling scan; the superseded ஊஹூம் must never re-enter the reading text.",
+      "பாண்டியன் : தொழிலாளர்கள்": "Scene 45 prints no full stop after the speaker name; no பாண்டியன். label variant exists."
+    }
+  },
+  "english": {
+    "authority": "works/tirumbippaar/translations/records",
+    "kind": "project-created",
+    "kindBasis": "An archive-produced translation derived from the archive's own scan-adjudicated Tamil derivatives. It is not a historical published translation.",
+    "translationUnits": 1330,
+    "unitKindCounts": {
+      "dialogue": 1049,
+      "stage-direction": 262,
+      "song": 0,
+      "song-reference": 7,
+      "chant": 2,
+      "written-text": 10
+    },
+    "crossPageUnits": 12,
+    "scenesVerified": 93,
+    "noFullSongUnitsNote": "Zero full `song` units exist because the booklet prints no complete lyric body for either source-named song. The seven `song-reference` units record performance references only.",
+    "readerEditionQa": "PASS",
+    "qaNote": "`complete-verified` and `QA PASS` are the archive's recorded states from its own automated publication workflow."
+  },
+  "characters": {
+    "authority": "works/tirumbippaar/characters",
+    "entities": 39,
+    "exactSourceLabels": 45,
+    "note": "Exact printed speaker labels are preserved. Stable upstream entity ids are retained unchanged, including tirumbippaar-char-punnakodi."
+  },
+  "songs": {
+    "authority": "works/tirumbippaar/songs",
+    "occurrences": 8,
+    "authorshipStatusCounts": {
+      "verified": 3,
+      "unresolved": 5
+    },
+    "kalaignarAttributedOccurrences": 0,
+    "note": "Three occurrences carry item-level external-source attribution; five remain unresolved and stay unresolved. No complete lyric body is printed for any occurrence, so none is reproduced."
+  },
+  "publication": {
+    "epubPath": "works/tirumbippaar/editions/en/tirumbippaar-en.epub",
+    "epubSha256": "955ce8adffe318ccbb5f77cb65afebb6951b7c7ac3091343adf2fd3dcb996ae0",
+    "readerSha256": "918d2f8778b09c704731cdfac73035db92620ae35184afbb6865d5b7f9fa904f",
+    "packageStatus": "complete-verified",
+    "note": "The published EPUB and reader edition are archive artifacts. They are referenced for provenance and are not vendored into the website."
+  },
+  "integrity": {
+    "sourceScanSha256": "973b9c3f7b84d6a1902a4a472af8799c783bf1ec2d6cd015796fc1df1ce59682",
+    "sourceInputAggregateSha256": "db3c6361e7e9d508fdf4d128fc7e4e7389b81d9312953ee13cd6fa007b1822c1",
+    "sourceInputFiles": 198,
+    "translationInputAggregateSha256": "b4064013fdfb70dca8d7b1375abfa2fe17dfc2787ac6d650bb056fe6896be786",
+    "translationInputFiles": 94,
+    "aggregateNote": "Each aggregate is sha256 over `relative path + NUL + raw bytes + NUL` for the sorted input set. It proves the bytes behind this import, not merely the commit identity."
+  },
+  "notes": [
+    "Phase D2.1 generated data only. No public route, catalogue entry or sitemap URL exists for this work yet.",
+    "No current-day rights determination is asserted. The 1953 notice is preserved as printed source evidence."
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-27",
+  "canonicalScene": 27,
+  "sourceHeading": 27,
+  "headingTa": "காட்சி 27] [குமுதா வீடு—சென்னை",
+  "canonicalPart": "part-02",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 32,
+      "printedPage": 24
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: குண்டுமணி ! இன்னுமா டீ தயாராகவில்லை?"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(கீழே இறங்கி வருகிறாள்—பூமாலை அங்கு வருகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "text": "குமுதா: சின்னம்மா ! நீ அவருக்கு டீ அனுப்பச்சொல்லு. நான் போயி கேமராவுக்கு பிலிம் வாங்கிட்டு வர்றேன்..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(குண்டுமணி டீ கொண்டுவருதல்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "text": "பூமாலை: குண்டுமணி இரு... நான் கொண்டுபோறேன் டீயை. நீ போய் வேலையைப் பாரு"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி : சரிம்மா..."
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(வாங்கிக்கொண்டு மாடிக்குப் போகிறாள்)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "text": "குண்டுமணி: (தனக்குள்) பாண்டியனுக்கு உபசாரம் பண்றதுன்னா அம்மா முன்னாடி நிக்கிறாங்களே என்னா விஷயம். ஆங் சேசே ! அம்மா நல்லவங்க... ம் .. யாரு கண்டா. அப்பேர்பட்ட (சந்தேகம்) எப்பேர்பட்ட.. சரிசரி வேலைக்காரனுக்கு என்னா இதெல்லாம்..."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s027-u001",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s027-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "Gundumani! Isn't the tea ready yet?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s027-u002",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "(She comes downstairs; Poomalai comes there.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s027-u003",
+        "kind": "dialogue",
+        "speakerLabel": "குமுதா",
+        "sourceRecordId": "tirumbippaar-s027-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "Chinnamma! Have tea sent to him. I'm going to buy film for the camera....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s027-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "(Gundumani brings the tea.)",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s027-u005",
+        "kind": "dialogue",
+        "speakerLabel": "பூமாலை",
+        "sourceRecordId": "tirumbippaar-s027-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "Gundumani, wait... I'll take the tea. You go attend to your work.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s027-u006",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s027-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "All right, amma....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s027-u007",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "(Poomalai takes the tea and goes upstairs.)",
+        "notes": [
+          "The subject is resolved from Poomalai's immediately preceding `நான் கொண்டுபோறேன் டீயை`; no new action is added."
+        ]
+      },
+      {
+        "id": "tirumbippaar-en-s027-u008",
+        "kind": "dialogue",
+        "speakerLabel": "குண்டுமணி",
+        "sourceRecordId": "tirumbippaar-s027-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 32,
+            "printedPage": 24
+          }
+        ],
+        "text": "(To himself) When it comes to serving Pandiyan, Amma herself steps to the front—what's going on? Ah, tch, tch! Amma is a good woman...hmm...who knows? Such a... (suspiciously) what kind of... All right, all right—why should a servant concern himself with all this...",
+        "notes": [
+          "The source speech is deliberately fragmentary; `அப்பேர்பட்ட ... எப்பேர்பட்ட` is not completed or reconstructed in English."
+        ]
+      }
+    ]
+  }
+}

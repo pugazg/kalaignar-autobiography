@@ -1,0 +1,350 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-56",
+  "canonicalScene": 56,
+  "sourceHeading": 56,
+  "headingTa": "காட்சி 56] [மில் முதலாளி வீடு",
+  "canonicalPart": "part-04",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 70,
+      "printedPage": 62
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": 63
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : உஷா ! இரவு நேரங்களில் வெளியில் போகாதே என்று சொன்னேனே ! கேட்டாயா! ஏழைகளுக்கு உதவி செய்கிறேன் என்று நீ போகிறாய்"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "உஷா",
+        "text": "உஷா : போனதைப்பற்றி ஏனப்பா பேசுகிறீர்கள். போலீஸார் என்ன சொன்னார்கள்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : என்ன சொன்னார்கள். யாரும் அகப்படவில்லையாம்!"
+      },
+      {
+        "kind": "stage-direction",
+        "text": "(\"அகப்பட்டுவிட்டான்!\" என்ற குரலுடன் பரந்தாமன் பிரவேசிக்கிறான்.)"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : யார்?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: (உட்கார்ந்துகொண்டே) எல்லாம் கேள்விப்பட்டேன். ஓ... இதுதான் உஷாவோ ! (உஷாவிடம்) உங்களுக்கேற்பட்ட ஆபத்தை ஆண்டவன்தான் தடுத்திருக்கிறான்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : அதிருக்கட்டும் ஆள் அகப்பட்டுவிட்டான் என்றீரே!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: ஆமாம். தொழிலாளர்களைத் தூண்டிவிடும் பலாத்காரவாதிகளின் வேலையிது !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : ஆங்... பலாத்காரவாதி!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : அவன்தான் பாண்டியன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : பாண்டியனா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "உஷா",
+        "text": "உஷா: பாண்டியனா?"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன்: அவனேதான்!அராஜகத்திற்கு ஆரம்பவிழா நடத்தியிருக்கிறான். விரைவில் ஆலைக்கே தீ வைப்பான். உங்களை அழிப்பதற்கே ஒரு சிறு கும்பலை சேர்த்து வைத்திருக்கிறான் அவன்."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : உம் ! அவனைப் பிடிக்க ஆதாரம்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "text": "பரந்தாமன் : ஆதாரம் ! கொள்ளையடிக்கப்பட்ட வைர நெக்லஸ் சென்னையில் எங்கே யிருக்குமென்று எண்ணுகிறீர்கள். அவன் வீட்டில்தானிருக்க வேண்டும் உடனே போலீஸாருக்கு தகவல் கொடுத்து அவன் வீட்டை சோதனை போட வேண்டும். இதை அவசரமாகச் செய்ய வேண்டும். இப்போதே Phone செய்யுங்கள்!"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "text": "முதலாளி : சபாஸ்! சரியான யோசனை ! ( போனை எடுத்துப் பேசுகிறார்) ஹலோ! போலீஸ் ஸ்டேஷன் !"
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s056-u001",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "Usha! Didn't I tell you not to go out at night! Did you listen? You go saying you're helping the poor.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u002",
+        "kind": "dialogue",
+        "speakerLabel": "உஷா",
+        "sourceRecordId": "tirumbippaar-s056-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "Why talk about what has already happened, Appa? What did the police say?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u003",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "What did they say? Apparently no one has been caught!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u004",
+        "kind": "stage-direction",
+        "speakerLabel": null,
+        "sourceRecordId": null,
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "(Paranthaman enters saying, 'He's been caught!')",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u005",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "Who?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s056-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "(Sitting down.) I heard everything. Oh... so this is Usha! (To Usha.) It was God who averted the danger that befell you.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u007",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 70,
+            "printedPage": 62
+          }
+        ],
+        "text": "Leave that aside—you said the man has been caught!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u008",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s056-d007",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Yes. This is the work of violent men who incite the workers!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u009",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d008",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Ah... a violent man!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u010",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s056-d009",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "That man is Pandiyan.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u011",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d010",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Pandiyan?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u012",
+        "kind": "dialogue",
+        "speakerLabel": "உஷா",
+        "sourceRecordId": "tirumbippaar-s056-d011",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Pandiyan?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u013",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s056-d012",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "The very same! He has held the inaugural ceremony for lawlessness. Soon he'll set fire to the mill itself. He has gathered a small gang solely to destroy you.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u014",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d013",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Hmm! Evidence to catch him!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u015",
+        "kind": "dialogue",
+        "speakerLabel": "பரந்தாமன்",
+        "sourceRecordId": "tirumbippaar-s056-d014",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Evidence! Where in Madras do you think the stolen diamond necklace is? It must be in his house. Inform the police at once and have his house searched. This must be done urgently. Phone them right now!",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s056-u016",
+        "kind": "dialogue",
+        "speakerLabel": "முதலாளி",
+        "sourceRecordId": "tirumbippaar-s056-d015",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 71,
+            "printedPage": 63
+          }
+        ],
+        "text": "Bravo! Exactly the right idea! (He picks up the phone and speaks.) Hello! Police station!",
+        "notes": []
+      }
+    ]
+  }
+}

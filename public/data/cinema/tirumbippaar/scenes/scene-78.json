@@ -1,0 +1,147 @@
+{
+  "workId": "tirumbippaar",
+  "slug": "scene-78",
+  "canonicalScene": 78,
+  "sourceHeading": 78,
+  "headingTa": "காட்சி 78] [ஜெயில்",
+  "canonicalPart": "part-05",
+  "continuationNotes": [],
+  "pageProvenance": [
+    {
+      "pdfPage": 94,
+      "printedPage": 86
+    }
+  ],
+  "tamil": {
+    "blocks": [
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "text": "வார்டர் : உனக்கு விடுதலைப்பா."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : அதற்குள்ளாகவா- மூன்று வருஷம் ஆகவில்லையே..."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "text": "வார்டர் : உனக்கு மட்டுமல்ல. இன்றைக்கு இந்த உபகண்டத்திற்கே விடுதலை - சுதந்திரதின விழா - அதனால்தான் நீ விடுதலை செய்யப்பட்றே."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : சார் ! நான் மெட்ராஸ் போரதுக்கு பாஸ் கொடுப்பாங்கள்ளே !"
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "text": "வார்டர் : ஓ.நீ போகவேண்டிய ஊருக்கே கொடுப்பாங்க. மெட்ராஸிலே தானே உன் குடும்பம்...."
+      },
+      {
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "text": "பாண்டியன் : ஆம். அங்கேதான் என் குமுதா."
+      },
+      {
+        "kind": "separator",
+        "text": "★"
+      }
+    ]
+  },
+  "english": {
+    "units": [
+      {
+        "id": "tirumbippaar-en-s078-u001",
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "sourceRecordId": "tirumbippaar-s078-d001",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "You're being released, appa.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s078-u002",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s078-d002",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "So soon? Three years haven't passed yet...",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s078-u003",
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "sourceRecordId": "tirumbippaar-s078-d003",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "Not just you. Today this whole subcontinent is being freed—it's the Independence Day celebration. That's why you're being released.",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s078-u004",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s078-d004",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "Sir! They'll give me a pass to go to Madras, won't they?",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s078-u005",
+        "kind": "dialogue",
+        "speakerLabel": "வார்டர்",
+        "sourceRecordId": "tirumbippaar-s078-d005",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "Oh. They'll give you one for whichever town you need to go to. Your family is in Madras, isn't it....",
+        "notes": []
+      },
+      {
+        "id": "tirumbippaar-en-s078-u006",
+        "kind": "dialogue",
+        "speakerLabel": "பாண்டியன்",
+        "sourceRecordId": "tirumbippaar-s078-d006",
+        "sourceOccurrenceId": null,
+        "pageProvenance": [
+          {
+            "pdfPage": 94,
+            "printedPage": 86
+          }
+        ],
+        "text": "Yes. My Kumudha is there.",
+        "notes": []
+      }
+    ]
+  }
+}
