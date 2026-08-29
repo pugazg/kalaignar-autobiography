@@ -407,6 +407,56 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/cinema/parasakthi/source",
   },
   {
+    // Digital Library Phase D2.3 — the third Cinema Writing work. Reader, scene and source routes
+    // shipped in D2.2; this entry only makes them discoverable from /read. Placed after Parasakthi
+    // because this shelf lists works in ONBOARDING order, not by year — Manohara (1954) already
+    // precedes Parasakthi (1952).
+    id: "tirumbippaar",
+    slug: "tirumbippaar",
+    // The booklet prints the exclamation mark. It is part of the title, not catalogue decoration,
+    // and is kept exactly as printed.
+    titleTa: "திரும்பிப்பார்!",
+    titleEn: "Tirumbippaar",
+    shelf: "cinema-writing",
+    // The cover credit is `கதை - வசனம்` — story and dialogue. Not Manohara's "screenplay-dialogue",
+    // and deliberately not Parasakthi's "dialogue-songs": this booklet prints no complete lyric body
+    // for any of its eight song/performance occurrences, so naming songs in the form would promise
+    // text the book does not contain.
+    subtype: "story-dialogue",
+    readerStructure: "scene",
+    href: "/cinema/tirumbippaar",
+    state: "published",
+    // Role-scoped, exactly as far as the printed cover credit reaches: story and dialogue are his.
+    // The description does NOT say he wrote the songs — of the eight song/performance occurrences,
+    // three are attributed to other people, five are unresolved, and none is attributed to him. That
+    // whole distinction lives on /cinema/tirumbippaar/source.
+    descTa: "கலைஞரின் கதை–வசனம் — 1953 நூலில் அச்சிடப்பட்ட 93 காட்சிகள்",
+    descEn: "Kalaignar's story and dialogue — 93 scenes as printed in the 1953 booklet",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/tirumbippaar",
+    sourceCommit: "6a8c59c445890e568dfe65cc36c2900dd2a8a0b3",
+    // Unlike Parasakthi's undated scan, this booklet prints its own edition statement, so it is
+    // recorded verbatim. Nothing is added to it: the printer's imprint on PDF 2 is cropped mid-line
+    // (`சிட்டி பிரஸ், மதுரை ரோ…`) and is left unreconstructed rather than completed into a publisher.
+    edition: "முதல் பதிப்பு: 1953",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // The booklet's OWN printed scene headings, like Parasakthi's and unlike Manohara's
+    // archive-created navigation segments. All 93 are printed and consecutive.
+    unitCount: { value: 93, labelTa: "காட்சிகள்", labelEn: "scenes" },
+    // `rights` is deliberately ABSENT, for the same reason it is absent on Parasakthi and present on
+    // Manohara. Manohara's booklet is Kalaignar's throughout, so the nationalisation model fits it.
+    // Tirumbippaar is a COMPOSITE cinema publication: his story and dialogue alongside song and
+    // performance material that is not his — three occurrences attributed to other people, five
+    // unresolved, none to him. Asserting `nationalised-by-tamil-nadu-government` over the whole
+    // booklet would claim other people's work was nationalised as his. Scoping rights to the
+    // Kalaignar-authored layer needs the WorkAttribution model that still does not exist; until it
+    // does, nothing is claimed rather than something wrong. The 1953 printed `உரிமையுடையது.` notice
+    // is a historical source statement and stays on /cinema/tirumbippaar/source, not here.
+    provenanceHref: "/cinema/tirumbippaar/source",
+  },
+  {
     // Digital Library Phase 3 — Speeches. First benchmark: a fully-released, verified Assembly
     // speech. "Assembly" vs "public" is a SUBTYPE / source context, not a separate public shelf —
     // both belong to the single Speeches shelf.
