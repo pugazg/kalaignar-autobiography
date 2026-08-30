@@ -1,0 +1,164 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-012",
+  "slug": "song-012",
+  "songNumber": 12,
+  "filmId": "kalaignar-song-film-004",
+  "filmSlug": "film-04",
+  "filmTitleTa": "அம்மையப்பன்",
+  "yearPrinted": 1954,
+  "titleTa": "அம்மையப்பா அருள்புரிவாய் எல்லாம் உன் செயல்",
+  "titleEn": "Ammaiyappa, grant your grace — all is your doing",
+  "contentsTitleTa": "அம்மையப்பா",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      44
+    ],
+    "sectionPdfPages": "42-50",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "தொகையறா",
+      "labelEn": "Thogaiyara",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-012-s01-l001",
+          "tamil": "அம்மையப்பா அருள்புரிவாய் எல்லாம் உன் செயல்",
+          "english": "Ammaiyappa, grant your grace — all is your doing,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s01-l002",
+          "tamil": "அம்மையப்பா",
+          "english": "Ammaiyappa,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s01-l003",
+          "tamil": "எல்லாம் உன் செயல் அம்மையப்பா",
+          "english": "All is your doing, Ammaiyappa."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "பாட்டு",
+      "labelEn": "Paattu (song)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-012-s02-l001",
+          "tamil": "அம்மையப்பா அருள்புரிவாய் எல்லாம் உன் செயல்",
+          "english": "Ammaiyappa, grant your grace — all is your doing,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s02-l002",
+          "tamil": "அம்மையப்பா",
+          "english": "Ammaiyappa,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s02-l003",
+          "tamil": "எல்லாம் உன் செயல் அம்மையப்பா",
+          "english": "All is your doing, Ammaiyappa."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-012-s03-l001",
+          "tamil": "இம்மை மறுமை இன்பம் துன்பம்",
+          "english": "This life, the afterlife; pleasure, pain,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s03-l002",
+          "tamil": "உண்மை பொய்மை உலக பந்தம்",
+          "english": "Truth, falsehood, the bonds of the world —"
+        },
+        {
+          "id": "kalaignar-song-en-012-s03-l003",
+          "tamil": "எல்லாம் உன் செயல் அம்மையப்பா",
+          "english": "All is your doing, Ammaiyappa."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-012-s04-l001",
+          "tamil": "தேனின் விஷம் தெள்ளமுது தேனருவி தீக்காடு",
+          "english": "Poison in honey, clear nectar, honey-cascade, fire-forest,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s04-l002",
+          "tamil": "எரிகுளம் எரிமலைகள் எல்லாம் உன்செயல் அம்மையப்பா",
+          "english": "Burning pool, volcanoes — all are your doing, Ammaiyappa;"
+        },
+        {
+          "id": "kalaignar-song-en-012-s04-l003",
+          "tamil": "அரசன் முதல் ஆண்டிகளும் ஐயன் சிருஷ்டி உண்மையப்பா",
+          "english": "From the king down to aandis, all are Aiyan's creation — true, appa,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s04-l004",
+          "tamil": "இது ஐயன் சிருஷ்டி உண்மையப்பா",
+          "english": "This is Aiyan's creation — true, appa."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-012-s05-l001",
+          "tamil": "பல்லக்கு தூக்கிகளும் அதில் பவனி வருகின்ற மனிதர்களும்",
+          "english": "The palanquin-bearers, and the people who ride in procession within it,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s05-l002",
+          "tamil": "அம்மையப்பா உந்தன்",
+          "english": "Ammaiyappa — within your"
+        },
+        {
+          "id": "kalaignar-song-en-012-s05-l003",
+          "tamil": "எல்லைக்குள் வாழ்வோர் உண்மையப்பா",
+          "english": "Bounds they live; that is true, appa,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s05-l004",
+          "tamil": "கல்லுக்குள் தேரையும் எள்ளுக்குள் எண்ணெயும்",
+          "english": "The toad within the stone, the oil within sesame,"
+        },
+        {
+          "id": "kalaignar-song-en-012-s05-l005",
+          "tamil": "பாம்பின் பல்லுக்குள் கொடு நஞ்சும்",
+          "english": "The cruel venom within the snake's fang —"
+        },
+        {
+          "id": "kalaignar-song-en-012-s05-l006",
+          "tamil": "அம்மையப்பா தொல்லுலகம் உந்தன்",
+          "english": "Ammaiyappa, this ancient world says"
+        },
+        {
+          "id": "kalaignar-song-en-012-s05-l007",
+          "tamil": "செயல்தானென்று சொல்லுதப்பா.",
+          "english": "That all of it is your doing, appa."
+        }
+      ]
+    }
+  ]
+}

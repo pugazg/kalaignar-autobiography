@@ -1,0 +1,250 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-052",
+  "slug": "song-052",
+  "songNumber": 52,
+  "filmId": "kalaignar-song-film-021",
+  "filmSlug": "film-21",
+  "filmTitleTa": "பாசக் கிளிகள்",
+  "yearPrinted": 2006,
+  "titleTa": "தங்கை என்ற பாசக்கிளி கொஞ்சி விளையாட",
+  "titleEn": "Let the affection-parrot called younger sister fondle and play",
+  "contentsTitleTa": "தங்கை என்ற பாசக்கிளி",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      123,
+      124
+    ],
+    "sectionPdfPages": "118-124",
+    "crossPage": true
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "ஆண்",
+      "labelEn": "Man",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-052-s01-l001",
+          "tamil": "தங்கை என்ற பாசக்கிளி கொஞ்சி விளையாட...",
+          "english": "Let the affection-parrot called younger sister fondle and play..."
+        },
+        {
+          "id": "kalaignar-song-en-052-s01-l002",
+          "tamil": "பொங்கும் எங்கள் நெஞ்சங்களில் புன்னகைப் பூத்தாட...",
+          "english": "Let smiles bloom and dance in our overflowing hearts..."
+        },
+        {
+          "id": "kalaignar-song-en-052-s01-l003",
+          "tamil": "அண்ணன்மார்கள் சுற்றிநின்று ஆனந்தப் பண்பாட",
+          "english": "Let elder brothers stand around and joy's panpaadu dance,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s01-l004",
+          "tamil": "குமரிப்பெண்ணின் கூந்தலுக்கு குறிஞ்சிப்பூக்கள் ஓட",
+          "english": "Let kurinji flowers run to the young maiden's hair."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-052-s02-l001",
+          "tamil": "நிலவும்தான் இவள் முன்னால் நின்றாடுமா",
+          "english": "Would even the moon stand and dance before her?"
+        },
+        {
+          "id": "kalaignar-song-en-052-s02-l002",
+          "tamil": "நிலமயில் இவள்போல அழகாகுமா",
+          "english": "Could the land-peacock be as beautiful as she?"
+        },
+        {
+          "id": "kalaignar-song-en-052-s02-l003",
+          "tamil": "நிலவும்தான் இவள் முன்னால் நின்றாடுமா",
+          "english": "Would even the moon stand and dance before her?"
+        },
+        {
+          "id": "kalaignar-song-en-052-s02-l004",
+          "tamil": "நிலமயில் இவள்போல அழகாகுமா",
+          "english": "Could the land-peacock be as beautiful as she?"
+        },
+        {
+          "id": "kalaignar-song-en-052-s02-l005",
+          "tamil": "ஆ... ஆ... லூ... லூ...",
+          "english": "Aa... aa... loo... loo..."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "ஆண் / குழு",
+      "labelEn": "Man / Chorus",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-052-s03-l001",
+          "tamil": "ஆண் : தங்கை என்ற பாசக்கிளி கொஞ்சி விளையாட",
+          "english": "Man: Let the affection-parrot called younger sister fondle and play,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l002",
+          "tamil": "குழு : ஆட",
+          "english": "Chorus: Dance,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l003",
+          "tamil": "ஆண் : பொங்கும் எங்கள் நெஞ்சங்களில் புன்னகைப் பூத்தாட...",
+          "english": "Man: Let smiles bloom and dance in our overflowing hearts..."
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l004",
+          "tamil": "குழு : ஆட",
+          "english": "Chorus: Dance,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l005",
+          "tamil": "ஆண் : அண்ணன்மார்கள் சுற்றிநின்று ஆனந்தப் பண்பாட",
+          "english": "Man: Let elder brothers stand around and joy's panpaadu dance,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l006",
+          "tamil": "குழு : ஆட...!",
+          "english": "Chorus: Dance...!"
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l007",
+          "tamil": "ஆண் : குமரிப்பெண்ணின் கூந்தலுக்கு குறிஞ்சிப்பூக்கள் ஓட",
+          "english": "Man: Let kurinji flowers run to the young maiden's hair,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s03-l008",
+          "tamil": "குழு : ஆட...!",
+          "english": "Chorus: Dance...!"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "ஆண் / மனோரமா / பெண்",
+      "labelEn": "Man / Manorama / Woman",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-052-s04-l001",
+          "tamil": "ஆண் : பிறந்தாய் ஒரு பிள்ளைக்கனி அமுதாய் பிறந்தாய்",
+          "english": "Man: You were born — a child-fruit, born as nectar,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l002",
+          "tamil": "ஒரு வெள்ளிப் பிறைபோல வளர்ந்தாய்",
+          "english": "You grew like a silver crescent,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l003",
+          "tamil": "துள்ளிடும் இளமானாய் திகழ்ந்தாய்",
+          "english": "You shone as a leaping young deer,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l004",
+          "tamil": "எங்கள் வீட்டில் விளக்காக ஒளிவீசப் பிறந்தாய்",
+          "english": "You were born to shine as a lamp in our house,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l005",
+          "tamil": "மனோரமா: கண்ணகிதான் இங்கு வந்து தங்கையானால் பாரு",
+          "english": "Manorama: Look — as though Kannagi herself came here as a younger sister,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l006",
+          "tamil": "பெண்ணழகி பிறந்தநாளில் நல்வாழ்த்துக் கூறு",
+          "english": "Wish the beautiful woman well on her birthday,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l007",
+          "tamil": "பெண் : இருவருமே என்வாழ்வில் இமையானீரே",
+          "english": "Woman: Both of you have become eyelids in my life,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l008",
+          "tamil": "ஆண் : சிறந்தாய் ஒரு செம்மொழித் தமிழாய் சிறந்தாய்",
+          "english": "Man: You excelled — excelled as Classical Tamil,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l009",
+          "tamil": "செழுஞ்சுடர்கதிர்போல உயர்ந்தாய்",
+          "english": "You rose like a rich radiant ray,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l010",
+          "tamil": "சிவப்பு மல்லிகைப்பூவாய் மலர்ந்தாய்",
+          "english": "You blossomed as a red jasmine flower,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l011",
+          "tamil": "சிறந்தாய் ஒரு செம்மொழித் தமிழாய் சிறந்தாய்",
+          "english": "You excelled — excelled as Classical Tamil,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s04-l012",
+          "tamil": "செழுஞ்சுடர்கதிர்போல உயர்ந்தாய்",
+          "english": "You rose like a rich radiant ray."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "ஆண் / மனோரமா / பெண்",
+      "labelEn": "Man / Manorama / Woman",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-052-s05-l001",
+          "tamil": "சிவப்பு மல்லிகைப்பூவாய் மலர்ந்தாய்",
+          "english": "You blossomed as a red jasmine flower,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l002",
+          "tamil": "எங்கள் வீட்டில் தங்கையாகப் பிறந்து",
+          "english": "Born as a younger sister in our house,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l003",
+          "tamil": "எங்கள் வீட்டில் தாயாய் திகழ்வாய்",
+          "english": "You will shine as a mother in our house,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l004",
+          "tamil": "எங்கள் வீட்டில் தங்கையாகப் பிறந்து",
+          "english": "Born as a younger sister in our house,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l005",
+          "tamil": "எங்கள் வீட்டில் தாயாய் திகழ்வாய்",
+          "english": "You will shine as a mother in our house,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l006",
+          "tamil": "மனோரமா: உன்னை ஒரு நல்ல வீட்டு மருமகளாய் காண",
+          "english": "Manorama: To see you as the daughter-in-law of a good home,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l007",
+          "tamil": "அன்னைமனம்போல் இந்த அண்ணன்மனம் ஏங்க",
+          "english": "This elder-brother heart yearns like a mother's heart,"
+        },
+        {
+          "id": "kalaignar-song-en-052-s05-l008",
+          "tamil": "பெண் : அம்மா என் கண்கள் குளமாகுதே...",
+          "english": "Woman: Amma, my eyes are becoming ponds..."
+        }
+      ]
+    }
+  ]
+}

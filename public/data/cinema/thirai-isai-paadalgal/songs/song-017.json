@@ -1,0 +1,126 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-017",
+  "slug": "song-017",
+  "songNumber": 17,
+  "filmId": "kalaignar-song-film-004",
+  "filmSlug": "film-04",
+  "filmTitleTa": "அம்மையப்பன்",
+  "yearPrinted": 1954,
+  "titleTa": "சிதைந்ததே என் காதல் உயிரோவியம்",
+  "titleEn": "Shattered is my love's living portrait",
+  "contentsTitleTa": "சிதைந்ததே என் காதல்",
+  "authorship": {
+    "decision": "unresolved",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": false,
+    "authorshipNoticeRequired": true,
+    "noticeGroupId": "ammayappan-unresolved"
+  },
+  "sourcePages": {
+    "pdfPages": [
+      49
+    ],
+    "sectionPdfPages": "42-50",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "முத்தாயி பூங்காவனம் சோக கீதம்",
+      "labelEn": "முத்தாயி பூங்காவனம் — song of sorrow",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-017-s01-l001",
+          "tamil": "சிதைந்ததே என் காதல் உயிரோவியம்",
+          "english": "Shattered is my love's living portrait,"
+        },
+        {
+          "id": "kalaignar-song-en-017-s01-l002",
+          "tamil": "அழிந்ததே என் வாழ்வின் சுவைக் காவியம்.",
+          "english": "Destroyed is the epic of flavour in my life."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "தொகையறா",
+      "labelEn": "Thogaiyara",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-017-s02-l001",
+          "tamil": "சிதைந்ததே என் காதல் உயிரோவியம்",
+          "english": "Shattered is my love's living portrait,"
+        },
+        {
+          "id": "kalaignar-song-en-017-s02-l002",
+          "tamil": "அழிந்ததே என் வாழ்வின் சுவைக் காவியம்.",
+          "english": "Destroyed is the epic of flavour in my life."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "பாட்டு",
+      "labelEn": "Paattu (song)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-017-s03-l001",
+          "tamil": "மனமோகன ஜீவன் வாழ்வின் ஜோதி மறைந்தோடுதே...",
+          "english": "The heart-enchanting life, the flame of life, slips away hidden..."
+        },
+        {
+          "id": "kalaignar-song-en-017-s03-l002",
+          "tamil": "புயல் வீசுதே... பூங்காவிலே...",
+          "english": "A storm blows... in the flower-garden..."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "(மன)",
+      "labelEn": "(Mana — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-017-s04-l001",
+          "tamil": "(மன)",
+          "english": "(Mana — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-017-s05-l001",
+          "tamil": "அருள் மேவும் காதல் தெய்வச்சிலை வீழ்ந்ததே...",
+          "english": "The divine statue of love where grace dwells has fallen..."
+        },
+        {
+          "id": "kalaignar-song-en-017-s05-l002",
+          "tamil": "வெறுங் கோவிலானதே என் வாழ்வுதான்",
+          "english": "My life has become an empty temple,"
+        },
+        {
+          "id": "kalaignar-song-en-017-s05-l003",
+          "tamil": "வீணானதே...",
+          "english": "Gone to waste..."
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "(மன)",
+      "labelEn": "(Mana — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-017-s06-l001",
+          "tamil": "(மன)",
+          "english": "(Mana — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

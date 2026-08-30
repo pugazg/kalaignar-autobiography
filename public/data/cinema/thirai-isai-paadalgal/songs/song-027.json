@@ -1,0 +1,91 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-027",
+  "slug": "song-027",
+  "songNumber": 27,
+  "filmId": "kalaignar-song-film-006",
+  "filmSlug": "film-06",
+  "filmTitleTa": "ரங்கோன் ராதா",
+  "yearPrinted": 1956,
+  "titleTa": "ஓடையிலே ஒருநாள்",
+  "titleEn": "One day by the stream",
+  "contentsTitleTa": "ஓடையிலே ஒரு நாள்",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      66
+    ],
+    "sectionPdfPages": "60-67",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-027-s01-l001",
+          "tamil": "ஓடையிலே ஒருநாள் எந்தன்",
+          "english": "One day by the stream, my,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l002",
+          "tamil": "இதழ் பறித்து முத்தமிட்டான்",
+          "english": "lips he plucked and kissed,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l003",
+          "tamil": "இன்பசுகம் என் சொல்வேன்",
+          "english": "What can I say of that pleasure-bliss?"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l004",
+          "tamil": "வாடைக்குளிரில் இந்த தேகம் அணைத்த செல்வன்",
+          "english": "In the chill of the north wind, the dear one embraced this body,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l005",
+          "tamil": "வருகிறேன் என்று சொல்லிப்போய்விட்டானடி தோழி",
+          "english": "Saying, ‘I will come,’ he went away, di, my friend,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l006",
+          "tamil": "எடுப்புக்க அமர்ந்தேன் - எந்தன்",
+          "english": "I sat down for the eduppu — and in my,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l007",
+          "tamil": "எண்ணத்தில் வந்து கலந்தான்",
+          "english": "thoughts he came and mingled,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l008",
+          "tamil": "பண்ணிசைக்க யாழெடுத்தேன்",
+          "english": "I took up the yaazh to make pann-music,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l009",
+          "tamil": "கண்ணெதிரே அவன் நின்றான்",
+          "english": "Before my eyes he stood,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l010",
+          "tamil": "பாய்ந்து தழுவச் சென்றேன்",
+          "english": "I sprang forward to embrace him,"
+        },
+        {
+          "id": "kalaignar-song-en-027-s01-l011",
+          "tamil": "மின்னல் போல் மறைந்து விட்டான்.",
+          "english": "Like lightning, he vanished."
+        }
+      ]
+    }
+  ]
+}

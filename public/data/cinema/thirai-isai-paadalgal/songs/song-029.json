@@ -1,0 +1,121 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-029",
+  "slug": "song-029",
+  "songNumber": 29,
+  "filmId": "kalaignar-song-film-007",
+  "filmSlug": "film-07",
+  "filmTitleTa": "குறவஞ்சி",
+  "yearPrinted": 1960,
+  "titleTa": "அலையிருக்குது கடலிலே",
+  "titleEn": "There are waves in the sea",
+  "contentsTitleTa": "அலையிருக்கும் கடலிலே",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      70
+    ],
+    "sectionPdfPages": "68-70",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-029-s01-l001",
+          "tamil": "அலையிருக்குது கடலிலே",
+          "english": "There are waves in the sea,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l002",
+          "tamil": "அசைவிருக்குது உடலிலே",
+          "english": "There is movement in the body,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l003",
+          "tamil": "கலையிருக்குது நெளிவிலே",
+          "english": "There is art in the bend,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l004",
+          "tamil": "விலையிருக்குதா உலகிலே - எனக்கு",
+          "english": "Is there a price in this world — for me,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l005",
+          "tamil": "விலையிருக்குதா உலகிலே?",
+          "english": "Is there a price in this world?"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l006",
+          "tamil": "(அலை)",
+          "english": "(Wave)"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l007",
+          "tamil": "வலையிருக்குது விழியிலே - பழக்",
+          "english": "There is a net in the eyes — a fruit-"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l008",
+          "tamil": "குலையிருக்குது மொழியிலே",
+          "english": "cluster is there in the speech,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l009",
+          "tamil": "சிலையிருக்குது எதிரிலே",
+          "english": "There is a statue before me,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l010",
+          "tamil": "விலையிருக்குதா உலகிலே - எனக்கு",
+          "english": "Is there a price in this world — for me,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l011",
+          "tamil": "விலையிருக்குதா உலகிலே?",
+          "english": "Is there a price in this world?"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l012",
+          "tamil": "(அலை)",
+          "english": "(Wave)"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l013",
+          "tamil": "தளுக்கு நடையில் மினுக்கும் இடையில்",
+          "english": "In the coquettish walk, in the gleaming waist,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l014",
+          "tamil": "துடிக்கும் இளமை தொடுக்கும் கணையில்",
+          "english": "In throbbing youth, in the arrow it strings,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l015",
+          "tamil": "ஜொலிக்கும் வாழ்வில் இனிமை தவழப்",
+          "english": "As sweetness glides through a shining life,"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l016",
+          "tamil": "படிக்கும் இன்பக் கவிதைகள் நாம்!",
+          "english": "We are poems of pleasure being recited!"
+        },
+        {
+          "id": "kalaignar-song-en-029-s01-l017",
+          "tamil": "(அலை)",
+          "english": "(Wave)"
+        }
+      ]
+    }
+  ]
+}

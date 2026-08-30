@@ -1,0 +1,86 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-028",
+  "slug": "song-028",
+  "songNumber": 28,
+  "filmId": "kalaignar-song-film-006",
+  "filmSlug": "film-06",
+  "filmTitleTa": "ரங்கோன் ராதா",
+  "yearPrinted": 1956,
+  "titleTa": "தமிழே தேனே கண்ணே தாலேலோ",
+  "titleEn": "O Tamil, O honey, dear one — thaalelo",
+  "contentsTitleTa": "தமிழே தேனே கண்ணே",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      67
+    ],
+    "sectionPdfPages": "60-67",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-028-s01-l001",
+          "tamil": "தமிழே தேனே கண்ணே தாலேலோ",
+          "english": "O Tamil, O honey, dear one — thaalelo,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l002",
+          "tamil": "தங்க ஜோதி வீசும் தீபமே தாலேல தாலல தாலேலோ",
+          "english": "O lamp that casts golden radiance — thaalela, thaalala, thaalelo,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l003",
+          "tamil": "அலை மோதிடும் கடல் போலவே",
+          "english": "Like a sea where waves collide,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l004",
+          "tamil": "உனை ஈன்ற தாயின் உள்ளமே",
+          "english": "is the heart of the mother who bore you,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l005",
+          "tamil": "நிலை மாறி வரும் போதிலே",
+          "english": "When its state keeps changing,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l006",
+          "tamil": "நீதான் வந்தாய் நிலவாகவே",
+          "english": "you alone came as the moon,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l007",
+          "tamil": "முகில் காணுமோர் மயில் போலவே",
+          "english": "Like a peacock that beholds a cloud,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l008",
+          "tamil": "உன் கோல முகமும் காணவே",
+          "english": "on beholding your lovely face,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l009",
+          "tamil": "துயர் நீங்கி நானும் ஆடுவேன்",
+          "english": "my sorrow will leave and I too shall dance,"
+        },
+        {
+          "id": "kalaignar-song-en-028-s01-l010",
+          "tamil": "தூங்காத கண்ணே தூங்கப்பா",
+          "english": "Sleepless dear one, sleep, pa."
+        }
+      ]
+    }
+  ]
+}

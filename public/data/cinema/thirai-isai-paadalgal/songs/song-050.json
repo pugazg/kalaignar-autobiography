@@ -1,0 +1,180 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-050",
+  "slug": "song-050",
+  "songNumber": 50,
+  "filmId": "kalaignar-song-film-021",
+  "filmSlug": "film-21",
+  "filmTitleTa": "பாசக் கிளிகள்",
+  "yearPrinted": 2006,
+  "titleTa": "தென்றல் என்னும் தேர் ஏறி",
+  "titleEn": "Riding the chariot called the breeze",
+  "contentsTitleTa": "தென்றல் என்னும் தேர் ஏறி",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      120
+    ],
+    "sectionPdfPages": "118-124",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "ஆண்",
+      "labelEn": "Man",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-050-s01-l001",
+          "tamil": "ஆ... தென்றல் என்னும் தேர் ஏறி - தமிழ்",
+          "english": "Aa... riding the chariot called the breeze — O mullai flower,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l002",
+          "tamil": "மன்றம் வந்த முல்லை மலரே",
+          "english": "Who came to the Tamil mandram,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l003",
+          "tamil": "தென்றல் என்னும் தேர் ஏறி - தமிழ்",
+          "english": "Riding the chariot called the breeze — O mullai flower,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l004",
+          "tamil": "மன்றம் வந்த முல்லை மலரே",
+          "english": "Who came to the Tamil mandram,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l005",
+          "tamil": "உனைப்போல் இல்லையோர் அழகே",
+          "english": "There is no beauty like you,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l006",
+          "tamil": "உதிக்கும் ஞாயிறெனெ உருமாறி",
+          "english": "Transform like the rising `nyaayirene`,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l007",
+          "tamil": "உலகை எழுப்ப ஒளியாய் வா! வா!",
+          "english": "Come, come as light to awaken the world!"
+        },
+        {
+          "id": "kalaignar-song-en-050-s01-l008",
+          "tamil": "(தென்றல்)",
+          "english": "(Breeze)."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-050-s02-l001",
+          "tamil": "நானறிவேன் இசை ஞானம் யாவும்",
+          "english": "I know all the wisdom of music,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l002",
+          "tamil": "நாசிகா பூசனி நான் பாடும் ராகம்",
+          "english": "Nasika Poosani is the raga I sing,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l003",
+          "tamil": "நானறிவேன் இசை ஞானம் யாவும்",
+          "english": "I know all the wisdom of music,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l004",
+          "tamil": "நாசிகா பூசனி நான் பாடும் ராகம்",
+          "english": "Nasika Poosani is the raga I sing,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l005",
+          "tamil": "பாவமுடன் ஜதி சொல்லி பாடும்",
+          "english": "To utter jathi with bhava and sing —"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l006",
+          "tamil": "தகுதியும் அதனுடன் கூடும்",
+          "english": "That ability too comes with it,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l007",
+          "tamil": "நானும் தெரிந்தவன் நான்தானே",
+          "english": "I too am the one who knows, am I not?"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l008",
+          "tamil": "பல நூலின் ஆழம் அறிவேனே",
+          "english": "I know the depth of many books,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s02-l009",
+          "tamil": "(தென்றல்)",
+          "english": "(Breeze)."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "ஜதி சொல்லல்",
+      "labelEn": "Jathi utterance",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-050-s03-l001",
+          "tamil": "தகத் தோம்தில்லானா",
+          "english": "Thagath thom-thillanaa,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l002",
+          "tamil": "தகத் தோம்தில்லானா     (ஜதி சொல்லல்)",
+          "english": "Thagath thom-thillanaa — (jathi utterance),"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l003",
+          "tamil": "தோம்... தோம்...",
+          "english": "Thom... thom..."
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l004",
+          "tamil": "தண்ணிலவாய் குளிரும் உன்முகம்",
+          "english": "Your face cools like a cool moon,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l005",
+          "tamil": "தனலாய் கொதிக்கும் உன் அகம்",
+          "english": "Your inner self boils like burning heat,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l006",
+          "tamil": "மாமதுரை தமிழ்ச்சங்கப் பாட்டு",
+          "english": "The song of the great Madurai Tamil Sangam,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l007",
+          "tamil": "தேன்மதுர இதழ்கள் பாடக் கேட்டு",
+          "english": "Hearing honey-sweet lips sing it,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l008",
+          "tamil": "செவியில் தேன்பாய வீணை மீட்டு",
+          "english": "Pluck the veena till honey flows into the ear,"
+        },
+        {
+          "id": "kalaignar-song-en-050-s03-l009",
+          "tamil": "உலகிலே யார் காட்டு",
+          "english": "Who in the world — show me."
+        }
+      ]
+    }
+  ]
+}

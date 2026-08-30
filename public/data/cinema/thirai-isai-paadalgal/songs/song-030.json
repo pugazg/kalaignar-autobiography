@@ -1,0 +1,238 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-030",
+  "slug": "song-030",
+  "songNumber": 30,
+  "filmId": "kalaignar-song-film-008",
+  "filmSlug": "film-08",
+  "filmTitleTa": "காஞ்சித் தலைவன்",
+  "yearPrinted": 1963,
+  "titleTa": "நீர்மேல் நடக்கலாம்",
+  "titleEn": "We can walk on water",
+  "contentsTitleTa": "நீர்மேல் நடக்கலாம்",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      73
+    ],
+    "sectionPdfPages": "71-74",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "மதனன்",
+      "labelEn": "Madanan",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s01-l001",
+          "tamil": "நீர்மேல் நடக்கலாம்",
+          "english": "We can walk on water,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s01-l002",
+          "tamil": "நெருப்பிலே படுக்கலாம்",
+          "english": "We can lie down in fire,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s01-l003",
+          "tamil": "நிலை தடுமாறினால் நினைத்ததைப் பேசலாம்",
+          "english": "If our state staggers, we can say whatever we think."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "மதனன்",
+      "labelEn": "Madanan",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s02-l001",
+          "tamil": "உலகம் சுத்துது எதனாலே? நம்",
+          "english": "Why does the world spin? Our,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s02-l002",
+          "tamil": "உடம்பு சுத்துது அதனாலே",
+          "english": "body spins — that's why,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s02-l003",
+          "tamil": "உலகம் சுத்துது எதனாலே?",
+          "english": "Why does the world spin?"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "வீரர்கள்",
+      "labelEn": "Warriors",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s03-l001",
+          "tamil": "நம்ம உடம்பு சுத்துது அதனாலே",
+          "english": "Our body spins — that's why."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "மதனன்",
+      "labelEn": "Madanan",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s04-l001",
+          "tamil": "கலகம் வருவது எதனாலே?",
+          "english": "Why does kalagam — commotion — come?"
+        },
+        {
+          "id": "kalaignar-song-en-030-s04-l002",
+          "tamil": "கலயம் பொங்குது அதனாலே",
+          "english": "Because the kalayam pot bubbles over,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s04-l003",
+          "tamil": "கலகம் வருவது எதனாலே?",
+          "english": "Why does kalagam — commotion — come?"
+        },
+        {
+          "id": "kalaignar-song-en-030-s04-l004",
+          "tamil": "கலயம் பொங்குது அதனாலே",
+          "english": "Because the kalayam pot bubbles over,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s04-l005",
+          "tamil": "சொர்க்கம் தெரியுது எதனாலே?",
+          "english": "Why does heaven appear?"
+        },
+        {
+          "id": "kalaignar-song-en-030-s04-l006",
+          "tamil": "மயக்கம் வருது அதனாலே",
+          "english": "Because dizziness comes,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s04-l007",
+          "tamil": "சொர்க்கம் தெரியுது எதனாலே",
+          "english": "Why does heaven appear?"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "கோரஸ்",
+      "labelEn": "Chorus",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s05-l001",
+          "tamil": "மயக்கம் வருது அதனாலே",
+          "english": "Because dizziness comes."
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s06-l001",
+          "tamil": "(உலகம்)",
+          "english": "(World)"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": "மதனன்",
+      "labelEn": "Madanan",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s07-l001",
+          "tamil": "கண்ணைக் கவருது எதனாலே? - இவ",
+          "english": "Why does it captivate the eye? — this,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s07-l002",
+          "tamil": "கன்னிப் பொண்ணு அதனாலே",
+          "english": "maiden-girl, that's why,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s07-l003",
+          "tamil": "கண்ணைக் கவருது எதனாலே?",
+          "english": "Why does it captivate the eye?"
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": "கோரஸ்",
+      "labelEn": "Chorus",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s08-l001",
+          "tamil": "இவ கன்னிப் பொண்ணு அதனாலே",
+          "english": "This maiden-girl, that's why."
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "sourceLabelTa": "மதனன்",
+      "labelEn": "Madanan",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s09-l001",
+          "tamil": "கன்னிப் பொண்ணு ....ம் .....ம்......",
+          "english": "Maiden-girl.... mm..... mm......,"
+        },
+        {
+          "id": "kalaignar-song-en-030-s09-l002",
+          "tamil": "கன்னத்தில் ஒண்ணு",
+          "english": "one on the cheek."
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "sourceLabelTa": "சிங்காரி",
+      "labelEn": "Singari",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s10-l001",
+          "tamil": "உலகம் சுத்துது எதனாலே?",
+          "english": "Why does the world spin?"
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "sourceLabelTa": "கோரஸ்",
+      "labelEn": "Chorus",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s11-l001",
+          "tamil": "நம்ம உடம்பு சுத்துது அதனாலே",
+          "english": "Our body spins — that's why."
+        }
+      ]
+    },
+    {
+      "ordinal": 12,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-030-s12-l001",
+          "tamil": "(உலகம்)",
+          "english": "(World)"
+        }
+      ]
+    }
+  ]
+}

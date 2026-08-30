@@ -1,0 +1,116 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-034",
+  "slug": "song-034",
+  "songNumber": 34,
+  "filmId": "kalaignar-song-film-011",
+  "filmSlug": "film-11",
+  "filmTitleTa": "மறக்க முடியுமா",
+  "yearPrinted": 1966,
+  "titleTa": "காகித ஓடம் கடலலை மீது",
+  "titleEn": "A paper boat upon the sea-wave",
+  "contentsTitleTa": "காகித ஓடம் கடல் அலை மீது",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      83
+    ],
+    "sectionPdfPages": "81-84",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-034-s01-l001",
+          "tamil": "காகித ஓடம் கடலலை மீது",
+          "english": "Like a paper boat upon the sea-wave,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l002",
+          "tamil": "போவது போலே மூவரும் போவோம்",
+          "english": "Let the three of us go as it goes,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l003",
+          "tamil": "ஆதரவின்றி ஆழ்ந்திடும் ஓடம்",
+          "english": "A boat that sinks without support,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l004",
+          "tamil": "அது போல் ஒன்றாய் மூழ்குதல் நன்றாம்",
+          "english": "Like that, it is better that we sink as one,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l005",
+          "tamil": "கோலமும் போட்டு கொடிகளும் ஏற்றி",
+          "english": "He drew the kolam and raised the flags,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l006",
+          "tamil": "தேரையும் ஓட்டி தீயையும் வைத்தான்",
+          "english": "Drove the chariot and set the fire,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l007",
+          "tamil": "காலமும் பார்த்து நேரமும் பார்த்து",
+          "english": "Watching the season, watching the hour,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l008",
+          "tamil": "வாழ்வையும் ஈந்து வதைக்கவும் செய்தான்",
+          "english": "He gave us life and made us suffer too,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l009",
+          "tamil": "அழுவதை கேட்க ஆட்களும் இல்லை",
+          "english": "There is no one even to hear us cry,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l010",
+          "tamil": "ஆறுதல் வழங்க யாருமே இல்லை",
+          "english": "There is no one at all to give comfort,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l011",
+          "tamil": "ஏழைகள் வாழ இடமே இல்லை",
+          "english": "There is no place for the poor to live,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l012",
+          "tamil": "ஆலயம் எதிலும் ஆண்டவன் இல்லை",
+          "english": "In no temple is there a god,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l013",
+          "tamil": "தாயின் மடியும் நிலைத்திட வில்லை",
+          "english": "Even mother's lap did not remain,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l014",
+          "tamil": "தந்தையின் நிழலும் காத்திட வில்லை",
+          "english": "Even father's shadow did not protect,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l015",
+          "tamil": "ஆறிலும் சாவு நூறிலும் சாவு",
+          "english": "Death at six, death at a hundred,"
+        },
+        {
+          "id": "kalaignar-song-en-034-s01-l016",
+          "tamil": "அம்மா எங்களை அழைத்திடு தாயே",
+          "english": "Amma, call us to you, O mother."
+        }
+      ]
+    }
+  ]
+}

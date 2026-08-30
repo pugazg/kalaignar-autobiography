@@ -1,0 +1,140 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-041",
+  "slug": "song-041",
+  "songNumber": 41,
+  "filmId": "kalaignar-song-film-014",
+  "filmSlug": "film-14",
+  "filmTitleTa": "ஒரே ரத்தம்",
+  "yearPrinted": 1987,
+  "titleTa": "ஒரு போராளியின் பயணமிது",
+  "titleEn": "This is a fighter's journey",
+  "contentsTitleTa": "ஒரு போராளியின் பயணமிது",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      97
+    ],
+    "sectionPdfPages": "95-97",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-041-s01-l001",
+          "tamil": "ஒரு போராளியின் பயணமிது - அவன்",
+          "english": "This is a fighter's journey — his,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l002",
+          "tamil": "போராடி பெற்ற பரிசு இது",
+          "english": "This is the prize he won by fighting,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l003",
+          "tamil": "ஓய்வில்லாமல் உழைத்தவனே - இனி",
+          "english": "You who laboured without rest — now,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l004",
+          "tamil": "ஓய்வு கொள்ள போறியா",
+          "english": "Are you going to take rest?"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l005",
+          "tamil": "ஓய்வில்லாமல் உழைத்தவனே - இனி",
+          "english": "You who laboured without rest — now,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l006",
+          "tamil": "ஓய்வு கொள்ளப் போறியா",
+          "english": "Are you going to take rest?"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l007",
+          "tamil": "தாயின் மடியில் தவழ்ந்தவனே நீ",
+          "english": "You who crawled in your mother's lap,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s01-l008",
+          "tamil": "தரைக்குள் தூங்கப் போறியா",
+          "english": "Are you going to sleep beneath the ground?"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-041-s02-l001",
+          "tamil": "இளைஞர்களை எழுப்ப வந்த குட்டிச்சிங்கமே",
+          "english": "Little lion who came to awaken the youth,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s02-l002",
+          "tamil": "இளஞ்சூரியனாய் ஒளிவீசிய சுட்டித்தங்கமே",
+          "english": "Sprightly golden one who shone like a young sun,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s02-l003",
+          "tamil": "கொலைவெறி ஜாதிபேத ஆயுதங்கள் தாக்கினாரே",
+          "english": "The murder-mad weapons of caste division struck you,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s02-l004",
+          "tamil": "கொள்கைக்காக வாழ்ந்த உந்தன் உயிரை போக்கினாரே",
+          "english": "They took the life you lived for principle,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s02-l005",
+          "tamil": "ஓய்வில்லாமல் உழைத்தவனே - இனி",
+          "english": "You who laboured without rest — now,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s02-l006",
+          "tamil": "ஓய்வு கொள்ள போறியா",
+          "english": "Are you going to take rest?"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-041-s03-l001",
+          "tamil": "இயேசு புத்தர் நபிகள் காந்தி காட்டும் வழியிலே",
+          "english": "On the path shown by Jesus, Buddha, the Prophets and Gandhi,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s03-l002",
+          "tamil": "பேசும் புயல் பெரியார் அண்ணா அம்பேத்கர் மொழியிலே",
+          "english": "In the words of the speaking storm — Periyar, Anna, Ambedkar,"
+        },
+        {
+          "id": "kalaignar-song-en-041-s03-l003",
+          "tamil": "குன்றம் போல முழங்கி நடந்த குலவிளக்கு நீதியா",
+          "english": "O lamp of the lineage who walked roaring like a mountain — is this justice?"
+        },
+        {
+          "id": "kalaignar-song-en-041-s03-l004",
+          "tamil": "உன் கொடி நிழலில் என்றும் நாங்கள் கூடுவோம் பாரடா",
+          "english": "Under the shade of your flag, we will gather forever — see, da."
+        }
+      ]
+    }
+  ]
+}

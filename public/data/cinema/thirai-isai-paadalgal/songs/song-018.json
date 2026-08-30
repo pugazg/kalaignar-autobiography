@@ -1,0 +1,166 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-018",
+  "slug": "song-018",
+  "songNumber": 18,
+  "filmId": "kalaignar-song-film-004",
+  "filmSlug": "film-04",
+  "filmTitleTa": "அம்மையப்பன்",
+  "yearPrinted": 1954,
+  "titleTa": "காதல் புறா காதிலே பேசுவதென்னோ",
+  "titleEn": "Why does the love-dove speak into the ear?",
+  "contentsTitleTa": "காதல் புறா",
+  "authorship": {
+    "decision": "unresolved",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": false,
+    "authorshipNoticeRequired": true,
+    "noticeGroupId": "ammayappan-unresolved"
+  },
+  "sourcePages": {
+    "pdfPages": [
+      50
+    ],
+    "sectionPdfPages": "42-50",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "பூங்காவனம்",
+      "labelEn": "பூங்காவனம்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-018-s01-l001",
+          "tamil": "காதல் புறா காதிலே பேசுவதென்னோ -",
+          "english": "Why does the love-dove speak into the ear? —"
+        },
+        {
+          "id": "kalaignar-song-en-018-s01-l002",
+          "tamil": "அதன் ரகசியம் ஏதோ...",
+          "english": "What secret might it hold..."
+        },
+        {
+          "id": "kalaignar-song-en-018-s01-l003",
+          "tamil": "பாசம் கொண்டதும் வீணோ?...",
+          "english": "Was the affection I bore all in vain?..."
+        },
+        {
+          "id": "kalaignar-song-en-018-s01-l004",
+          "tamil": "பாவை ஏன் பிறந்தேனோ?...",
+          "english": "Why was I born a maiden?..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-018-s02-l001",
+          "tamil": "தளிர்மேனி சோர்ந்தாள் இளையராணி",
+          "english": "The young queen with a tender-shoot body has withered,"
+        },
+        {
+          "id": "kalaignar-song-en-018-s02-l002",
+          "tamil": "தாவும் தென்றலே வா... வா...",
+          "english": "O leaping breeze, come... come..."
+        },
+        {
+          "id": "kalaignar-song-en-018-s02-l003",
+          "tamil": "சோகம் தீர்க்கவே... நீ... வா...",
+          "english": "To end this sorrow... you... come..."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-018-s03-l001",
+          "tamil": "மான் தோல் வேங்கை வாழ்ந்திடும் காட்டில்",
+          "english": "In a forest where a deer-skinned tiger lives,"
+        },
+        {
+          "id": "kalaignar-song-en-018-s03-l002",
+          "tamil": "மாங்குயில் தான் கூவிடலாமோ...",
+          "english": "Can the mango-cuckoo truly sing?..."
+        },
+        {
+          "id": "kalaignar-song-en-018-s03-l003",
+          "tamil": "பாசம் கொண்டதும் வீணோ?...",
+          "english": "Was the affection I bore all in vain?..."
+        },
+        {
+          "id": "kalaignar-song-en-018-s03-l004",
+          "tamil": "பாவை ஏன் பிறந்தேனோ?...",
+          "english": "Why was I born a maiden?..."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-018-s04-l001",
+          "tamil": "துயர் மேவும் இருளில் வீழ்ந்தாள் ராணி",
+          "english": "The queen has fallen into darkness where sorrow dwells,"
+        },
+        {
+          "id": "kalaignar-song-en-018-s04-l002",
+          "tamil": "தூங்கும் வெண்ணில பெண்ணே - ஒளி",
+          "english": "O sleeping moon-maiden — come"
+        },
+        {
+          "id": "kalaignar-song-en-018-s04-l003",
+          "tamil": "தூவ வந்திடு கண்ணே...",
+          "english": "To scatter light, dear one..."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-018-s05-l001",
+          "tamil": "நேசத்தினாலே மோசம் போனேன்",
+          "english": "Through love itself I was deceived,"
+        },
+        {
+          "id": "kalaignar-song-en-018-s05-l002",
+          "tamil": "ஆசைக் கனவெல்லாம் பலிக்காதோ",
+          "english": "Will none of my dreams of desire come true?"
+        },
+        {
+          "id": "kalaignar-song-en-018-s05-l003",
+          "tamil": "பாசம் கொண்டதும் வீணோ",
+          "english": "Was the affection I bore all in vain?"
+        },
+        {
+          "id": "kalaignar-song-en-018-s05-l004",
+          "tamil": "பாவை ஏன் பிறந்தேனோ...",
+          "english": "Why was I born a maiden?..."
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "(கா)",
+      "labelEn": "(Kaa — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-018-s06-l001",
+          "tamil": "(கா)",
+          "english": "(Kaa — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-022",
+  "slug": "song-022",
+  "songNumber": 22,
+  "filmId": "kalaignar-song-film-005",
+  "filmSlug": "film-05",
+  "filmTitleTa": "ராஜா ராணி",
+  "yearPrinted": 1956,
+  "titleTa": "மணிப் புறா!... புது மணிப் புறா!...",
+  "titleEn": "Jewel-dove!... new jewel-dove!...",
+  "contentsTitleTa": "மணிப்புறா புது மணிப்புறா",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      57
+    ],
+    "sectionPdfPages": "51-59",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-022-s01-l001",
+          "tamil": "மணிப் புறா!...",
+          "english": "Jewel-dove!..."
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l002",
+          "tamil": "புது மணிப் புறா!... புத்தம்",
+          "english": "New jewel-dove!... brand-new,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l003",
+          "tamil": "புது மணிப் புறா!... நானேதான்",
+          "english": "New jewel-dove!... it is I,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l004",
+          "tamil": "மேவிடும் அன்பால்",
+          "english": "Through the love that dwells,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l005",
+          "tamil": "தாவிடும் உன்பால் நெஞ்சம்",
+          "english": "My heart leaps toward you,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l006",
+          "tamil": "பூ விரித்து அழைக்குது மஞ்சம்",
+          "english": "The bed spreads flowers and calls,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l007",
+          "tamil": "பூமானே வாராய் கொஞ்சம்",
+          "english": "Poomaane, come a little closer,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l008",
+          "tamil": "ரோஜாக் கொல்லை முல்லைத் தோட்டம்",
+          "english": "A rose enclosure, a jasmine garden,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l009",
+          "tamil": "எந்தன் முகந்தானே",
+          "english": "That is my very face,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l010",
+          "tamil": "ராஜா உமக்கு நான்தான் ராணி",
+          "english": "Raja, for you I alone am the queen,"
+        },
+        {
+          "id": "kalaignar-song-en-022-s01-l011",
+          "tamil": "தருவேன் சுகந்தானே",
+          "english": "I shall give you pleasure indeed."
+        }
+      ]
+    }
+  ]
+}

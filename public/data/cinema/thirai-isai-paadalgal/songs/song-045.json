@@ -1,0 +1,115 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-045",
+  "slug": "song-045",
+  "songNumber": 45,
+  "filmId": "kalaignar-song-film-018",
+  "filmSlug": "film-18",
+  "filmTitleTa": "மதுரை மீனாட்சி",
+  "yearPrinted": 1993,
+  "titleTa": "தங்கக்குணம் படைத்த எங்கள் தந்தையே",
+  "titleEn": "Our father, endowed with a golden nature",
+  "contentsTitleTa": "தங்க குணம் படைத்த",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      109
+    ],
+    "sectionPdfPages": "107-110",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "பெண்",
+      "labelEn": "Woman",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-045-s01-l001",
+          "tamil": "தங்கக்குணம் படைத்த எங்கள் தந்தையே",
+          "english": "Our father, endowed with a golden nature,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s01-l002",
+          "tamil": "பொங்கும் எங்கள் கண்ணீரால்",
+          "english": "With our overflowing tears,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s01-l003",
+          "tamil": "உங்கள் பாதங்களைக் குளிப்பாட்டுகின்றோமே",
+          "english": "We are bathing your feet,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s01-l004",
+          "tamil": "எங்கள் கைவிரல்களையே விழிகளாக்கி",
+          "english": "You who made our very fingers into eyes,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s01-l005",
+          "tamil": "கல்வி வெளிச்சம் தந்தவரே!",
+          "english": "And gave us the light of education!"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "குழு",
+      "labelEn": "Group",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-045-s02-l001",
+          "tamil": "கருணைக்கடலே! பொறுமையின் இமயமே!",
+          "english": "O ocean of compassion! O Himalaya of patience!"
+        },
+        {
+          "id": "kalaignar-song-en-045-s02-l002",
+          "tamil": "கருணைக்கடலே! பொறுமையின் இமயமே...",
+          "english": "O ocean of compassion! O Himalaya of patience!..."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-045-s03-l001",
+          "tamil": "எமது இதயங்களை மலர்களாக்கி",
+          "english": "Making our hearts into flowers,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s03-l002",
+          "tamil": "தொடுத்த மாலையை உமது புகழ் சிகரத்தின்",
+          "english": "We string a garland and place it around the neck,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s03-l003",
+          "tamil": "கழுத்தில் அணிவிக்கின்றோம்",
+          "english": "Of the summit of your fame,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s03-l004",
+          "tamil": "உம்மைக் காப்பாற்றி வைத்துக் கொள்ள",
+          "english": "Forgive us, who could not,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s03-l005",
+          "tamil": "முடியாத எங்களை மன்னித்துவிடும்",
+          "english": "Protect you and keep you with us,"
+        },
+        {
+          "id": "kalaignar-song-en-045-s03-l006",
+          "tamil": "எங்கள் தந்தையே!",
+          "english": "Our father!"
+        }
+      ]
+    }
+  ]
+}

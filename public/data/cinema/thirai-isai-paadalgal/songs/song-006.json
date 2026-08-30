@@ -1,0 +1,142 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-006",
+  "slug": "song-006",
+  "songNumber": 6,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "மணமில்லா மலர் நானம்மா!",
+  "titleEn": "I am a flower without fragrance — without marriage — amma!",
+  "contentsTitleTa": "மணமில்லா மலர் நானம்மா!",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      35
+    ],
+    "sectionPdfPages": "31-41",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "மீனா",
+      "labelEn": "Meena",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-006-s01-l001",
+          "tamil": "மணமில்லா மலர் நானம்மா!",
+          "english": "I am a flower without fragrance — without marriage — amma!"
+        },
+        {
+          "id": "kalaignar-song-en-006-s01-l002",
+          "tamil": "மாதர் உலகில் வாழ்வே அறியா",
+          "english": "Knowing not even the life of womanhood,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s01-l003",
+          "tamil": "மணமில்லா மலர் நானம்மா!",
+          "english": "I am a flower without fragrance — without marriage — amma!"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-006-s02-l001",
+          "tamil": "ஒடிந்தது வீணை நாதமே இனியேது",
+          "english": "The veena is broken — what music is there now?"
+        },
+        {
+          "id": "kalaignar-song-en-006-s02-l002",
+          "tamil": "இடியிதோ வீழ்ந்ததே பூங்கா அழிந்ததே",
+          "english": "Here the thunderbolt has fallen; the flower-garden is destroyed,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s02-l003",
+          "tamil": "மணமில்லா மலர் நானம்மா!",
+          "english": "I am a flower without fragrance — without marriage — amma!"
+        },
+        {
+          "id": "kalaignar-song-en-006-s02-l004",
+          "tamil": "வாழ்விலே விஷமே வீசியே மறைந்ததால்",
+          "english": "Having blown poison into my life and vanished,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s02-l005",
+          "tamil": "மணமில்லா மலர் நானம்மா!",
+          "english": "I am a flower without fragrance — without marriage — amma!"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-006-s03-l001",
+          "tamil": "வாடிடும் கொடியானேன்",
+          "english": "I became a vine that withers,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s03-l002",
+          "tamil": "சூறாவளிக் காற்றாலே",
+          "english": "In the cyclone wind,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s03-l003",
+          "tamil": "மகரந்த இதழ்மீது மாசு தோய்ந்து மூடிய",
+          "english": "Stain soaked and closed over the pollen-bearing petal,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s03-l004",
+          "tamil": "மணமில்லா மலர் நானம்மா!",
+          "english": "I am a flower without fragrance — without marriage — amma!"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-006-s04-l001",
+          "tamil": "இன்பச் சுடர் காணேனே",
+          "english": "I see no flame of joy,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s04-l002",
+          "tamil": "இருள் வீட்டில் தனியானேன்",
+          "english": "I am alone in a house of darkness,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s04-l003",
+          "tamil": "துன்பப் புயல் அலை மோதி",
+          "english": "Struck by the wave of a storm of sorrow,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s04-l004",
+          "tamil": "சோக வாழ்வுச் சோலையில்",
+          "english": "In the grove of a sorrowful life,"
+        },
+        {
+          "id": "kalaignar-song-en-006-s04-l005",
+          "tamil": "மணமில்லா மலர் நானம்மா!",
+          "english": "I am a flower without fragrance — without marriage — amma!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-003",
+  "slug": "song-003",
+  "songNumber": 3,
+  "filmId": "kalaignar-song-film-002",
+  "filmSlug": "film-02",
+  "filmTitleTa": "பராசக்தி",
+  "yearPrinted": 1952,
+  "titleTa": "பூமாலை நீயே...",
+  "titleEn": "You are the flower-garland...",
+  "contentsTitleTa": "பூமாலை நீயே புழுதிமண் மேலே",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      30
+    ],
+    "sectionPdfPages": "27-30",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-003-s01-l001",
+          "tamil": "பூமாலை நீயே...",
+          "english": "You are the flower-garland..."
+        },
+        {
+          "id": "kalaignar-song-en-003-s01-l002",
+          "tamil": "புழுதி மண்மேலே வீணே",
+          "english": "Wasted upon dust and earth,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s01-l003",
+          "tamil": "வந்தேன் தவழ்ந்தாய்?",
+          "english": "I came — did you crawl?"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "(பூமாலை)",
+      "labelEn": "(Flower-garland — refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-003-s02-l001",
+          "tamil": "(பூமாலை)",
+          "english": "(Flower-garland — refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-003-s03-l001",
+          "tamil": "பாராயோ என் பன்னீர்ச்செல்வமே",
+          "english": "Will you not look, my rosewater treasure?"
+        },
+        {
+          "id": "kalaignar-song-en-003-s03-l002",
+          "tamil": "சீரோடு வாழ்ந்தோம்",
+          "english": "We lived in splendour,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s03-l003",
+          "tamil": "வேரோடு சாய்ந்தோம்",
+          "english": "We fell with the very roots,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s03-l004",
+          "tamil": "ராஜாங்கம் போல வாழ்ந்த வாழ்வும் வீழ்ந்தே",
+          "english": "Even the life we lived like a kingdom has fallen,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s03-l005",
+          "tamil": "பாழான எந்தன் வயிற்றில் பிறந்தாய் ராஜா!",
+          "english": "In this ruined womb of mine you were born, my king!"
+        },
+        {
+          "id": "kalaignar-song-en-003-s03-l006",
+          "tamil": "நீயேன் பிறந்தாய்?",
+          "english": "Why were you born?"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "(பூமாலை)",
+      "labelEn": "(Flower-garland — refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-003-s04-l001",
+          "tamil": "(பூமாலை)",
+          "english": "(Flower-garland — refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-003-s05-l001",
+          "tamil": "பறவை வீட்டில் நீ பிறந்திருந்தாலும்",
+          "english": "Had you been born in a bird's home,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s05-l002",
+          "tamil": "பசி நீங்கவே உணவும்",
+          "english": "Food, just to end your hunger,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s05-l003",
+          "tamil": "பறந்தோடி வந்திடும்",
+          "english": "Would have come flying to you;"
+        },
+        {
+          "id": "kalaignar-song-en-003-s05-l004",
+          "tamil": "கோடானுகோடி ஏழை மாந்தர் வாடும்",
+          "english": "Crores upon crores of poor people wither,"
+        },
+        {
+          "id": "kalaignar-song-en-003-s05-l005",
+          "tamil": "சீமான்கள் வாழும் நாட்டில் பிறந்தாய்-ராஜா!",
+          "english": "You were born, my king, in a land where the grandees live!"
+        },
+        {
+          "id": "kalaignar-song-en-003-s05-l006",
+          "tamil": "நீயேன் பிறந்தாய்?",
+          "english": "Why were you born?"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "(பூமாலை)",
+      "labelEn": "(Flower-garland — refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-003-s06-l001",
+          "tamil": "(பூமாலை)",
+          "english": "(Flower-garland — refrain cue)"
+        }
+      ]
+    }
+  ]
+}

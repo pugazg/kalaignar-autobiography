@@ -1,0 +1,138 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-040",
+  "slug": "song-040",
+  "songNumber": 40,
+  "filmId": "kalaignar-song-film-013",
+  "filmSlug": "film-13",
+  "filmTitleTa": "தூக்கு மேடை",
+  "yearPrinted": 1982,
+  "titleTa": "ஏய் கனவிலே மயங்காதே",
+  "titleEn": "Hey, do not be lost in a dream",
+  "contentsTitleTa": "ஏய் கனவிலே மயங்காதே",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      94
+    ],
+    "sectionPdfPages": "88-94",
+    "crossPage": false
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-040-s01-l001",
+          "tamil": "ஏய் கனவிலே மயங்காதே",
+          "english": "Hey, do not be lost in a dream,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l002",
+          "tamil": "நான்தானே குறமுல்லை",
+          "english": "Am I not Kuramullai,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l003",
+          "tamil": "என்றே நினை ஒரு நாள் அணை",
+          "english": "Think so — one day, embrace me,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l004",
+          "tamil": "நீ வாராய் ராஜா... நீ வாராய் ராஜா...",
+          "english": "Come, Raja... come, Raja..."
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l005",
+          "tamil": "கண்ணிரண்டும் சின்ன சின்ன பூதானே",
+          "english": "Both eyes are little, little flowers,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l006",
+          "tamil": "பெண்ணின் மேனி கைகள் தேடும் மாந்தானே",
+          "english": "O man whose hands seek a woman's body,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l007",
+          "tamil": "நீ வெட்கம் கொண்டாயே",
+          "english": "You have taken on shyness,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l008",
+          "tamil": "சொல்லுக்கு செய்தாயே",
+          "english": "You have done it to the word,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l009",
+          "tamil": "ஏதோ பாட்டுப்பட்ட",
+          "english": "Somehow song-struck,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l010",
+          "tamil": "அல்லிப் பூவை தேடி வந்த பருவமே",
+          "english": "O season that came seeking the alli flower,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l011",
+          "tamil": "என்றே நினை ஒரு நாள் அணை",
+          "english": "Think so — one day, embrace me,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s01-l012",
+          "tamil": "நீ வாராய் ராஜா நீ வாராய்",
+          "english": "Come, Raja, come."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-040-s02-l001",
+          "tamil": "வந்தபேர்க்கு வாரி இவர் தருவாரே",
+          "english": "To those who come, he pours out and gives,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s02-l002",
+          "tamil": "வள்ளல் நேரில் வந்தது போல வந்தாரே",
+          "english": "He came as though a vallal had arrived in person,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s02-l003",
+          "tamil": "ரம்மை போல கண்ணு ஜின்னை போல கண்ணும்",
+          "english": "An eye like rammai, and an eye like jinnai too,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s02-l004",
+          "tamil": "ஜாடை ஒன்று காட்டி நாடி வரும் நாட்டி",
+          "english": "Showing one gesture — the naatti who comes seeking,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s02-l005",
+          "tamil": "நானே உன்னை தேடி வந்து நின்றேனே",
+          "english": "I myself came seeking you and stood here,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s02-l006",
+          "tamil": "என்றே நினை ஒரு நாள் அணை",
+          "english": "Think so — one day, embrace me,"
+        },
+        {
+          "id": "kalaignar-song-en-040-s02-l007",
+          "tamil": "நீ வாராய் ராஜா நீ வாராய்",
+          "english": "Come, Raja, come."
+        }
+      ]
+    }
+  ]
+}

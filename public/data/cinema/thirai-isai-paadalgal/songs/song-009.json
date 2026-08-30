@@ -1,0 +1,261 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-009",
+  "slug": "song-009",
+  "songNumber": 9,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "புதியதோர் பாதை வகுப்போம்",
+  "titleEn": "Let us lay out a new path",
+  "contentsTitleTa": "புதியதோர் பாதை வகுப்போம்",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sourcePages": {
+    "pdfPages": [
+      38,
+      39
+    ],
+    "sectionPdfPages": "31-41",
+    "crossPage": true
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "குமரன் & கிராமவாசிகள்",
+      "labelEn": "Kumaran & villagers",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s01-l001",
+          "tamil": "புதியதோர் பாதை வகுப்போம் - நாம் - கெட்ட",
+          "english": "Let us lay out a new path — we — the evil,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s01-l002",
+          "tamil": "போரிடும் பாதையை சாய்ப்போம் நாம்...",
+          "english": "Path that leads to fighting, we shall bring it down..."
+        },
+        {
+          "id": "kalaignar-song-en-009-s01-l003",
+          "tamil": "நித்தம் உழைத்தே உயர்வோம் நாம் -",
+          "english": "By labouring every day, we shall rise —"
+        },
+        {
+          "id": "kalaignar-song-en-009-s01-l004",
+          "tamil": "நெறி தவறாமல் வாழ்வோம் நாம் -",
+          "english": "Without straying from the path, we shall live —"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s02-l001",
+          "tamil": "அஞ்ஞானப் பாழ் வெளியையே - நல்",
+          "english": "The barren waste of ignorance — with the plough-point,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s02-l002",
+          "tamil": "அறிவாகும் ஏர் முனையினால்...",
+          "english": "That is good knowledge..."
+        },
+        {
+          "id": "kalaignar-song-en-009-s02-l003",
+          "tamil": "அஞ்ஞானப் பாழ் வெளியையே - நல்",
+          "english": "The barren waste of ignorance — with the plough-point,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s02-l004",
+          "tamil": "அறிவாகும் ஏர் முனையினால்...",
+          "english": "That is good knowledge..."
+        },
+        {
+          "id": "kalaignar-song-en-009-s02-l005",
+          "tamil": "அறிவாகும் ஏர் முனையினால்...",
+          "english": "With the plough-point that is knowledge..."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s03-l001",
+          "tamil": "விஞ்ஞானப் பேரறிவினால் - உழுதே",
+          "english": "With the great knowledge of science — ploughing,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s03-l002",
+          "tamil": "மெய்ஞ்ஞானம் காண்பவர்கள் நாம்!",
+          "english": "We are those who seek true wisdom!"
+        },
+        {
+          "id": "kalaignar-song-en-009-s03-l003",
+          "tamil": "விஞ்ஞானப் பேரறிவினால் - உழுதே",
+          "english": "With the great knowledge of science — ploughing,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s03-l004",
+          "tamil": "மெய்ஞ்ஞானம் காண்பவர்கள் நாம்!",
+          "english": "We are those who seek true wisdom!"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s04-l001",
+          "tamil": "ஏற்றங்கொண்டு வாழ்வோம் நாம் - கால",
+          "english": "We shall live rising upward — with the times,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s04-l002",
+          "tamil": "மாற்றத்தோடு மாறுவோம் நாம்",
+          "english": "We shall change along with change,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s04-l003",
+          "tamil": "மாற்றத்தோடு மாறுவோம் நாம்",
+          "english": "We shall change along with change."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s05-l001",
+          "tamil": "ஊற்றெடுக்கும் அறிவினாலே - புதிய",
+          "english": "With knowledge springing forth — with new,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s05-l002",
+          "tamil": "கருவிகொண்டு ஆளுவோம் - நாம்",
+          "english": "Tools we shall take command — we,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s05-l003",
+          "tamil": "ஊற்றெடுக்கும் அறிவினாலே - புதிய",
+          "english": "With knowledge springing forth — with new,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s05-l004",
+          "tamil": "கருவிகொண்டு ஆளுவோம் - நாம்!",
+          "english": "Tools we shall take command — we!"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s06-l001",
+          "tamil": "நாத்து நடுவோம் - களை",
+          "english": "We'll plant the seedlings — the weeds,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s06-l002",
+          "tamil": "பேத்து எறிவோம்!",
+          "english": "We'll yank up and throw away!"
+        },
+        {
+          "id": "kalaignar-song-en-009-s06-l003",
+          "tamil": "நாத்து நடுவோம் - களை",
+          "english": "We'll plant the seedlings — the weeds,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s06-l004",
+          "tamil": "பேத்து எறிவோம்!",
+          "english": "We'll yank up and throw away!"
+        },
+        {
+          "id": "kalaignar-song-en-009-s06-l005",
+          "tamil": "காத்து வளர்ப்போம் - கதிர்",
+          "english": "We'll guard and grow them — the grain-head,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s06-l006",
+          "tamil": "கண்டு மகிழ்வோம் - கதிர்",
+          "english": "Seeing it, we'll rejoice — the grain-head,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s06-l007",
+          "tamil": "கண்டு மகிழ்வோம்...",
+          "english": "Seeing it, we'll rejoice..."
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": "(தொகையறா)",
+      "labelEn": "Thogaiyara",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s07-l001",
+          "tamil": "சொப்பனத்தில் வந்த கடவுளின் அருளால்",
+          "english": "By the grace of the god who came in a dream,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s07-l002",
+          "tamil": "பயிர் வளர்த்தாராம் நந்தனார்...",
+          "english": "They say Nandanar raised the crop..."
+        },
+        {
+          "id": "kalaignar-song-en-009-s07-l003",
+          "tamil": "எப்பொழுதும்போல் கைகால்களுதவியால்",
+          "english": "As always, with the help of our hands and legs,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s07-l004",
+          "tamil": "பயிர் வளர்த்தோமே இந்நாள்...",
+          "english": "We raised the crop this day..."
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-009-s08-l001",
+          "tamil": "வளைந்த கதிரில் விளைந்து வந்தாய் தங்கராணியே...",
+          "english": "In the bending ear of grain you ripened and came, O golden queen..."
+        },
+        {
+          "id": "kalaignar-song-en-009-s08-l002",
+          "tamil": "வாழ்வில் இன்பம் பொங்கிட வந்தாய் எங்கள் தோழியே...",
+          "english": "You came, our comrade, so joy may overflow in life..."
+        },
+        {
+          "id": "kalaignar-song-en-009-s08-l003",
+          "tamil": "“பொதுக் களஞ்சியம் கண்டோம் நாம்",
+          "english": "“We have found a common granary,"
+        },
+        {
+          "id": "kalaignar-song-en-009-s08-l004",
+          "tamil": "புதியதோர் பாதை வகுத்தோம்” ...",
+          "english": "We have laid out a new path” ..."
+        }
+      ]
+    }
+  ]
+}

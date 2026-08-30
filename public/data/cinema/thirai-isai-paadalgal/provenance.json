@@ -1,0 +1,815 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "siteSlug": "thirai-isai-paadalgal",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourcePath": "works/kalaignar-thirai-isai-paadalgal",
+  "sourceCommit": "d6f3128381235e80891cc6647d19464b838f4103",
+  "sourceCommitNote": "The source-repository main commit that merged the reviewed 54-song authorship evidence gate and the Reading Room display contract (PR #8). It is the archive's authoritative checkpoint for this work.",
+  "source": {
+    "identifier": "TVA_BOK_0065867",
+    "scanSha256": "f0beac14c33ffc73c0231bd54ca57ec4093eef6e85072bd68ce48f7b5e258b05",
+    "scanType": "image_only",
+    "controllingSourceNote": "The controlling source is the 2024 scanned anthology, which is not committed to either repository. Every reading here derives from the archive's scan-adjudicated derivatives at the pinned commit.",
+    "earlierWitness": {
+      "identifier": "TVA_BOK_0065773",
+      "sha256": "56d414a65a61a73b990632eadc17a3b1efdc764d47f64b851060c161a3f98e3b",
+      "role": "earlier printed witness used upstream for authorship evidence only; no lyric text is imported from it"
+    }
+  },
+  "census": {
+    "films": 23,
+    "songs": 54,
+    "lineCues": 1105,
+    "crossPageSongs": 8,
+    "crossPageSongNumbers": [
+      9,
+      19,
+      23,
+      24,
+      36,
+      37,
+      51,
+      52
+    ]
+  },
+  "authorshipContract": {
+    "contractPath": "works/kalaignar-thirai-isai-paadalgal/authorship/public-inclusion.json",
+    "manifestVersion": "3.0.0",
+    "evidenceRegisterSha256": "9aa03e32f2bf2a2fa491f6995ed6d455f36d74aa1294cf4fc5763d4afb2f27de",
+    "sourceMainShaAtAdjudication": "84bc974c76326fafc7224d7209a2c704e214d92c",
+    "established": 48,
+    "unresolved": 6,
+    "establishedOther": 0,
+    "insufficientEvidence": 0,
+    "materialConflicts": 0,
+    "displayable": 54,
+    "noticeRequired": 6,
+    "unresolvedSongNumbers": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "separationNote": "Authorship certainty and display eligibility are independent. All 54 numbered lyrics are displayable because they are the controlling source's own corpus; only the 48 established songs may carry a positive Kalaignar-authorship claim. Displaying a song never resolves its authorship, and the six unresolved songs are neither claimed as Kalaignar's nor denied to him."
+  },
+  "english": {
+    "kind": "project-created",
+    "kindBasis": "An archive-produced translation derived from the archive's own scan-adjudicated Tamil derivatives. It is not a historical or officially published translation and is not a source witness.",
+    "lineCues": 1105,
+    "itemStatusCounts": {
+      "verified": 51,
+      "pilot-verified": 3
+    },
+    "itemStatusNote": "`verified` and `pilot-verified` are the archive's own recorded states for its translation review. They are archive states, not a claim of independent re-verification here, and they are build-time metadata only."
+  },
+  "settledSourceReadings": {
+    "film001Grouping": "மந்திரிகுமாரி",
+    "film001LyricPageVariant": "மந்திரி குமாரி",
+    "variantNote": "The film section heading prints மந்திரிகுமாரி and the numbered lyric page prints மந்திரி குமாரி. The section-heading form controls film grouping; the lyric-page form is preserved upstream as a source variant, not a correction.",
+    "settledTitles": {
+      "4": "மாரி மகமாயி மாரி மகமாயி",
+      "7": "பேசும் யாழே பெண் மானே",
+      "8": "வருவாய் வருவாய்...",
+      "14": "காதல் துறையே புதுமைக் கனவே",
+      "15": "காதல் துறையே புதுமைக் கனவே (சோகம்)"
+    },
+    "editorialOnlyExcluded": {
+      "incipit": "ஆளப்பிறந்தவன் தமிழன் அவனிதனிலே",
+      "reason": "Named in the 2024 front matter as a Kalaignar film song whose censor-blocked lyric body is not printed in the numbered corpus. It has no numbered lyric and must never be imported as a 55th song."
+    }
+  },
+  "publicSurfacePolicy": {
+    "readerStructure": "film-song",
+    "note": "The intended public experience is film → lyrics, not a bibliographic reproduction of the 2024 compilation. Compiler, publisher, ISBN, edition, printed-page counts, music and voice credits, item verification states and archive file paths are recorded here for validation only and are deliberately absent from the runtime song files.",
+    "runtimeData": [
+      "public/data/cinema/thirai-isai-paadalgal/index.json",
+      "public/data/cinema/thirai-isai-paadalgal/songs/song-NNN.json"
+    ],
+    "buildTimeOnly": [
+      "public/data/cinema/thirai-isai-paadalgal/provenance.json"
+    ]
+  },
+  "integrity": {
+    "sourceScanSha256": "f0beac14c33ffc73c0231bd54ca57ec4093eef6e85072bd68ce48f7b5e258b05",
+    "readingRoomPayloadSha256": "8ec0e25f7fc1f1a9750d370ccbef5dd07caa66629a3dfacb8425bbeebd08fcce",
+    "sourceInputAggregateSha256": "9d499beb2c54c692cf972e5fe269c7e7f21d3bafa07a5d4c76d2bf9acb027935",
+    "sourceInputFiles": 4,
+    "sourceInputPaths": [
+      "works/kalaignar-thirai-isai-paadalgal/authorship/public-inclusion.json",
+      "works/kalaignar-thirai-isai-paadalgal/integrations/reading-room/manifest.json",
+      "works/kalaignar-thirai-isai-paadalgal/integrations/reading-room/reading-room.json",
+      "works/kalaignar-thirai-isai-paadalgal/songs/index.json"
+    ],
+    "aggregateNote": "The aggregate is sha256 over `relative path + NUL + raw bytes + NUL` for the sorted input set. It proves the bytes behind this import, not merely the commit identity."
+  },
+  "songs": [
+    {
+      "songId": "kalaignar-song-001",
+      "songNumber": 1,
+      "translationId": "kalaignar-song-en-001",
+      "itemStatus": "pilot-verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "ஜி.ராமநாதன்",
+        "voice": "பி.எஸ்.சுப்பையா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-001.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-001.json"
+    },
+    {
+      "songId": "kalaignar-song-002",
+      "songNumber": 2,
+      "translationId": "kalaignar-song-en-002",
+      "itemStatus": "pilot-verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "ஆர்.சுதர்சனம்",
+        "voice": "டி.எஸ்.பகவதி, உசேன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-002.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-002.json"
+    },
+    {
+      "songId": "kalaignar-song-003",
+      "songNumber": 3,
+      "translationId": "kalaignar-song-en-003",
+      "itemStatus": "pilot-verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "ஆர்.சுதர்சனம்",
+        "voice": "பகவதி - ஹுசேன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-003.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-003.json"
+    },
+    {
+      "songId": "kalaignar-song-004",
+      "songNumber": 4,
+      "translationId": "kalaignar-song-en-004",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "செல்லமுத்து, ஏ.பி.கோமளா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-004.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-004.json"
+    },
+    {
+      "songId": "kalaignar-song-005",
+      "songNumber": 5,
+      "translationId": "kalaignar-song-en-005",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "ஏ.எம்.ராஜா, ஜிக்கி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-005.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-005.json"
+    },
+    {
+      "songId": "kalaignar-song-006",
+      "songNumber": 6,
+      "translationId": "kalaignar-song-en-006",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-006.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-006.json"
+    },
+    {
+      "songId": "kalaignar-song-007",
+      "songNumber": 7,
+      "translationId": "kalaignar-song-en-007",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "ஜிக்கி (சோகம்)"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-007.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-007.json"
+    },
+    {
+      "songId": "kalaignar-song-008",
+      "songNumber": 8,
+      "translationId": "kalaignar-song-en-008",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "செல்லமுத்து குழு"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-008.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-008.json"
+    },
+    {
+      "songId": "kalaignar-song-009",
+      "songNumber": 9,
+      "translationId": "kalaignar-song-en-009",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-009.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-009.json"
+    },
+    {
+      "songId": "kalaignar-song-010",
+      "songNumber": 10,
+      "translationId": "kalaignar-song-en-010",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-010.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-010.json"
+    },
+    {
+      "songId": "kalaignar-song-011",
+      "songNumber": 11,
+      "translationId": "kalaignar-song-en-011",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
+        "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-011.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-011.json"
+    },
+    {
+      "songId": "kalaignar-song-012",
+      "songNumber": 12,
+      "translationId": "kalaignar-song-en-012",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-012.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-012.json"
+    },
+    {
+      "songId": "kalaignar-song-013",
+      "songNumber": 13,
+      "translationId": "kalaignar-song-en-013",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-013.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-013.json"
+    },
+    {
+      "songId": "kalaignar-song-014",
+      "songNumber": 14,
+      "translationId": "kalaignar-song-en-014",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-014.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-014.json"
+    },
+    {
+      "songId": "kalaignar-song-015",
+      "songNumber": 15,
+      "translationId": "kalaignar-song-en-015",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-015.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-015.json"
+    },
+    {
+      "songId": "kalaignar-song-016",
+      "songNumber": 16,
+      "translationId": "kalaignar-song-en-016",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-016.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-016.json"
+    },
+    {
+      "songId": "kalaignar-song-017",
+      "songNumber": 17,
+      "translationId": "kalaignar-song-en-017",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-017.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-017.json"
+    },
+    {
+      "songId": "kalaignar-song-018",
+      "songNumber": 18,
+      "translationId": "kalaignar-song-en-018",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-018.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-018.json"
+    },
+    {
+      "songId": "kalaignar-song-019",
+      "songNumber": 19,
+      "translationId": "kalaignar-song-en-019",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "எம்.எல்.வசந்தகுமாரி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-019.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-019.json"
+    },
+    {
+      "songId": "kalaignar-song-020",
+      "songNumber": 20,
+      "translationId": "kalaignar-song-en-020",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "எம்.எல்.வசந்தகுமாரி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-020.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-020.json"
+    },
+    {
+      "songId": "kalaignar-song-021",
+      "songNumber": 21,
+      "translationId": "kalaignar-song-en-021",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "எம்.எல்.வசந்தகுமாரி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-021.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-021.json"
+    },
+    {
+      "songId": "kalaignar-song-022",
+      "songNumber": 22,
+      "translationId": "kalaignar-song-en-022",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "எம்.எல்.வசந்தகுமாரி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-022.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-022.json"
+    },
+    {
+      "songId": "kalaignar-song-023",
+      "songNumber": 23,
+      "translationId": "kalaignar-song-en-023",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "எஸ்.சி.கிருஷ்ணன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-023.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-023.json"
+    },
+    {
+      "songId": "kalaignar-song-024",
+      "songNumber": 24,
+      "translationId": "kalaignar-song-en-024",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "சி.எஸ்.ஜெயராமன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-024.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-024.json"
+    },
+    {
+      "songId": "kalaignar-song-025",
+      "songNumber": 25,
+      "translationId": "kalaignar-song-en-025",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "டி.வி. ரத்னம்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-025.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-025.json"
+    },
+    {
+      "songId": "kalaignar-song-026",
+      "songNumber": 26,
+      "translationId": "kalaignar-song-en-026",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "பி.பானுமதி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-026.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-026.json"
+    },
+    {
+      "songId": "kalaignar-song-027",
+      "songNumber": 27,
+      "translationId": "kalaignar-song-en-027",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": null
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-027.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-027.json"
+    },
+    {
+      "songId": "kalaignar-song-028",
+      "songNumber": 28,
+      "translationId": "kalaignar-song-en-028",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "பி.பானுமதி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-028.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-028.json"
+    },
+    {
+      "songId": "kalaignar-song-029",
+      "songNumber": 29,
+      "translationId": "kalaignar-song-en-029",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.ஆர்.பாப்பா",
+        "voice": "ஜமுனா ராணி அண்ட் குழுவினர்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-029.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-029.json"
+    },
+    {
+      "songId": "kalaignar-song-030",
+      "songNumber": 30,
+      "translationId": "kalaignar-song-en-030",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "கே.வி.மகாதேவன்",
+        "voice": "ஏ.எல்.இராகவன், எஸ்.ஆர்.ஈஸ்வரி குழு"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-030.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-030.json"
+    },
+    {
+      "songId": "kalaignar-song-031",
+      "songNumber": 31,
+      "translationId": "kalaignar-song-en-031",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "கே.வி.மகாதேவன்",
+        "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-031.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-031.json"
+    },
+    {
+      "songId": "kalaignar-song-032",
+      "songNumber": 32,
+      "translationId": "kalaignar-song-en-032",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "ஆர்.சுதர்சனம்",
+        "voice": "கே.பி. சுந்தராம்பாள்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-032.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-032.json"
+    },
+    {
+      "songId": "kalaignar-song-033",
+      "songNumber": 33,
+      "translationId": "kalaignar-song-en-033",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "ஆர்.சுதர்சனம்",
+        "voice": "எஸ்.ஆர்.ஈஸ்வரி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-033.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-033.json"
+    },
+    {
+      "songId": "kalaignar-song-034",
+      "songNumber": 34,
+      "translationId": "kalaignar-song-en-034",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.கே.இராமமூர்த்தி",
+        "voice": "பி.சுசீலா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-034.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-034.json"
+    },
+    {
+      "songId": "kalaignar-song-035",
+      "songNumber": 35,
+      "translationId": "kalaignar-song-en-035",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "டி.கே.இராமமூர்த்தி",
+        "voice": "டி.எம்.செளந்தரராஜன், பி.சுசீலா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-035.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-035.json"
+    },
+    {
+      "songId": "kalaignar-song-036",
+      "songNumber": 36,
+      "translationId": "kalaignar-song-en-036",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சங்கர் கணேஷ்",
+        "voice": "டி.எம்.செளந்தரராஜன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-036.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-036.json"
+    },
+    {
+      "songId": "kalaignar-song-037",
+      "songNumber": 37,
+      "translationId": "kalaignar-song-en-037",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எம்.எஸ்.விஸ்வநாதன்",
+        "voice": "மலேசியா வாசுதேவன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-037.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-037.json"
+    },
+    {
+      "songId": "kalaignar-song-038",
+      "songNumber": 38,
+      "translationId": "kalaignar-song-en-038",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எம்.எஸ்.விஸ்வநாதன்",
+        "voice": "வாணி ஜெயராம்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-038.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-038.json"
+    },
+    {
+      "songId": "kalaignar-song-039",
+      "songNumber": 39,
+      "translationId": "kalaignar-song-en-039",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எம்.எஸ்.விஸ்வநாதன்",
+        "voice": "ஜெயச்சந்திரன், வாணி ஜெயராம்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-039.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-039.json"
+    },
+    {
+      "songId": "kalaignar-song-040",
+      "songNumber": 40,
+      "translationId": "kalaignar-song-en-040",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எம்.எஸ்.விஸ்வநாதன்",
+        "voice": "வாணி ஜெயராம்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-040.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-040.json"
+    },
+    {
+      "songId": "kalaignar-song-041",
+      "songNumber": 41,
+      "translationId": "kalaignar-song-en-041",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "தேவேந்திரன்",
+        "voice": "தேவேந்திரன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-041.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-041.json"
+    },
+    {
+      "songId": "kalaignar-song-042",
+      "songNumber": 42,
+      "translationId": "kalaignar-song-en-042",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எஸ்.ஏ.ராஜ்குமார்",
+        "voice": "எஸ்.ஏ.ராஜ்குமார்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-042.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-042.json"
+    },
+    {
+      "songId": "kalaignar-song-043",
+      "songNumber": 43,
+      "translationId": "kalaignar-song-en-043",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "சங்கர் கணேஷ்",
+        "voice": "மலேசியா வாசுதேவன் குழு"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-043.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-043.json"
+    },
+    {
+      "songId": "kalaignar-song-044",
+      "songNumber": 44,
+      "translationId": "kalaignar-song-en-044",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "இளையராஜா",
+        "voice": "இளையராஜா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-044.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-044.json"
+    },
+    {
+      "songId": "kalaignar-song-045",
+      "songNumber": 45,
+      "translationId": "kalaignar-song-en-045",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "தேவா",
+        "voice": "சித்ரா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-045.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-045.json"
+    },
+    {
+      "songId": "kalaignar-song-046",
+      "songNumber": 46,
+      "translationId": "kalaignar-song-en-046",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "தேவா",
+        "voice": "மலேசியா வாசுதேவன்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-046.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-046.json"
+    },
+    {
+      "songId": "kalaignar-song-047",
+      "songNumber": 47,
+      "translationId": "kalaignar-song-en-047",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "பரத்வாஜ்",
+        "voice": "ஜெயலட்சுமி, சித்ரா, மாலதி சத்யா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-047.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-047.json"
+    },
+    {
+      "songId": "kalaignar-song-048",
+      "songNumber": 48,
+      "translationId": "kalaignar-song-en-048",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எஸ்.ஏ.ராஜ்குமார்",
+        "voice": "மாணிக்க விநாயகம்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-048.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-048.json"
+    },
+    {
+      "songId": "kalaignar-song-049",
+      "songNumber": 49,
+      "translationId": "kalaignar-song-en-049",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "எஸ்.ஏ.ராஜ்குமார்",
+        "voice": "வாணி ஜெயராம்"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-049.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-049.json"
+    },
+    {
+      "songId": "kalaignar-song-050",
+      "songNumber": 50,
+      "translationId": "kalaignar-song-en-050",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "வித்யாசாகர்",
+        "voice": "மதுபாலகிருஷ்ணா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-050.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-050.json"
+    },
+    {
+      "songId": "kalaignar-song-051",
+      "songNumber": 51,
+      "translationId": "kalaignar-song-en-051",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "வித்யாசாகர்",
+        "voice": "மாணிக்க விநாயகம், ஸ்ரீலேகா பார்த்தசாரதி"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-051.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-051.json"
+    },
+    {
+      "songId": "kalaignar-song-052",
+      "songNumber": 52,
+      "translationId": "kalaignar-song-en-052",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "வித்யாசாகர்",
+        "voice": "திப்பு, கார்த்திக், சுஜாதா, மணோரமா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-052.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-052.json"
+    },
+    {
+      "songId": "kalaignar-song-053",
+      "songNumber": 53,
+      "translationId": "kalaignar-song-en-053",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "இளையராஜா",
+        "voice": "இளையராஜா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-053.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-053.json"
+    },
+    {
+      "songId": "kalaignar-song-054",
+      "songNumber": 54,
+      "translationId": "kalaignar-song-en-054",
+      "itemStatus": "verified",
+      "attributionStatus": "anthology-attributed",
+      "creditsAsPrinted": {
+        "music": "தேவா",
+        "voice": "எஸ்.பி.பாலசுப்பிரமணியம், சித்ரா"
+      },
+      "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-054.md",
+      "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-054.json"
+    }
+  ],
+  "notes": [
+    "Phase E1 generated data only. No public route, catalogue entry, reader component or sitemap URL exists for this work.",
+    "No current-day rights determination is asserted, and no WorkAttribution is created. Archival attribution remains anthology-attributed for all 54 records."
+  ]
+}
