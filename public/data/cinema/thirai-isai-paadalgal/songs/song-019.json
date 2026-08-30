@@ -1,0 +1,483 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-019",
+  "slug": "song-019",
+  "songNumber": 19,
+  "filmId": "kalaignar-song-film-005",
+  "filmSlug": "film-05",
+  "filmTitleTa": "ராஜா ராணி",
+  "yearPrinted": 1956,
+  "titleTa": "வாங்க... வாங்க... வாங்க...",
+  "titleEn": "Come... come... come...",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s01-l001",
+          "tamil": "வாங்க... வாங்க... வாங்க...",
+          "english": "Come... come... come..."
+        },
+        {
+          "id": "kalaignar-song-en-019-s01-l002",
+          "tamil": "எல்லோரும் இங்கே வாங்க",
+          "english": "Everyone, come here,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s01-l003",
+          "tamil": "டிக்கெட்டு வாங்க... வாங்க...",
+          "english": "Buy a ticket... come..."
+        },
+        {
+          "id": "kalaignar-song-en-019-s01-l004",
+          "tamil": "இன்றிரவு மிக நன்றிரவு",
+          "english": "Tonight is a very fine night,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s01-l005",
+          "tamil": "இணையில்லாத இன்ப இரவு...",
+          "english": "A night of pleasure without equal..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "நபர் 1",
+      "labelEn": "Person 1",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s02-l001",
+          "tamil": "தரை ஒண்ணு!",
+          "english": "One floor ticket!"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s03-l001",
+          "tamil": "அரை ரூபா!",
+          "english": "Half a rupee!"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "அவன்",
+      "labelEn": "He",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s04-l001",
+          "tamil": "கொடு கொடு இந்தா!",
+          "english": "Give it, give it — here!"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s05-l001",
+          "tamil": "தரை அரை ரூபா!-கரை படிந்த தரை அரை ரூபா",
+          "english": "Floor, half a rupee! — the stained floor, half a rupee,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s05-l002",
+          "tamil": "ரத்த கறை படிந்த தரை அரை ரூபா",
+          "english": "The blood-stained floor, half a rupee,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s05-l003",
+          "tamil": "வெற்றிலை பாக்கு கறை படிந்த தரை அரை ரூபா",
+          "english": "The betel-leaf-and-areca-stained floor, half a rupee,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s05-l004",
+          "tamil": "(இன்றிரவு)",
+          "english": "(Tonight)"
+        },
+        {
+          "id": "kalaignar-song-en-019-s05-l005",
+          "tamil": "(இன்றிரவு)",
+          "english": "(Tonight)"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "நபர் 2",
+      "labelEn": "Person 2",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s06-l001",
+          "tamil": "ஏம்மா இன்னிக்கு என்னா ட்ராமா?",
+          "english": "Hey, ma, what drama is it today?"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": "பெண்",
+      "labelEn": "Woman",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s07-l001",
+          "tamil": "அட வெங்கட்ராமா கம்பெனிலே நில்லு!",
+          "english": "Hey Venkatrama, stand in the company!"
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": "அவன்",
+      "labelEn": "He",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s08-l001",
+          "tamil": "எப்படித் தெரியும் என் பேரு?",
+          "english": "How do you know my name?"
+        },
+        {
+          "id": "kalaignar-song-en-019-s08-l002",
+          "tamil": "செப்படி வித்தை கற்றவளோ?",
+          "english": "Have you learnt sleight-of-hand magic?"
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s09-l001",
+          "tamil": "தரை அரை ரூபா... பெஞ்சு ஒண்ணு",
+          "english": "Floor, half a rupee... bench, one,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s09-l002",
+          "tamil": "பேக் பெஞ்சு மூணு!..",
+          "english": "Back bench, three!.."
+        },
+        {
+          "id": "kalaignar-song-en-019-s09-l003",
+          "tamil": "ஏ... காலி...",
+          "english": "Hey... kaali..."
+        },
+        {
+          "id": "kalaignar-song-en-019-s09-l004",
+          "tamil": "காலி! காலி!...",
+          "english": "Kaali! kaali!..."
+        },
+        {
+          "id": "kalaignar-song-en-019-s09-l005",
+          "tamil": "நாற்காலி... அஞ்சு ரூபா...",
+          "english": "Naarkaali... five rupees..."
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "sourceLabelTa": "நபர் 3",
+      "labelEn": "Person 3",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s10-l001",
+          "tamil": "கொஞ்ச ரூபா சொல்லு",
+          "english": "Quote me a little less in rupees."
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s11-l001",
+          "tamil": "ஆ!...",
+          "english": "Ah!..."
+        }
+      ]
+    },
+    {
+      "ordinal": 12,
+      "sourceLabelTa": "அவன்",
+      "labelEn": "He",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s12-l001",
+          "tamil": "கொஞ்ச ரூபா சொல்லம்மா... கோகில வாணி",
+          "english": "Quote a little less, ma... Kokila Vani,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s12-l002",
+          "tamil": "அம்மா கோகில வாணி",
+          "english": "Amma, Kokila Vani,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s12-l003",
+          "tamil": "அம்மா கோகில வாணி",
+          "english": "Amma, Kokila Vani."
+        }
+      ]
+    },
+    {
+      "ordinal": 13,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s13-l001",
+          "tamil": "வஞ்சகனே போடா... ஏடா... மூடா...",
+          "english": "You cheat, get lost... hey, fellow... fool..."
+        },
+        {
+          "id": "kalaignar-song-en-019-s13-l002",
+          "tamil": "வீணே சாகாதேடா...",
+          "english": "Don't die for nothing, da..."
+        }
+      ]
+    },
+    {
+      "ordinal": 14,
+      "sourceLabelTa": "அவன்",
+      "labelEn": "He",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s14-l001",
+          "tamil": "ஆ!",
+          "english": "Ah!"
+        }
+      ]
+    },
+    {
+      "ordinal": 15,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s15-l001",
+          "tamil": "எங்க நாடகத்தில் இந்த வசனங்களை கேட்ட",
+          "english": "To hear these lines in our drama,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s15-l002",
+          "tamil": "கொஞ்ச ரூபாயா? அஞ்சு ரூபா தான்",
+          "english": "A few rupees? Five rupees, that's all,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s15-l003",
+          "tamil": "அழகான நாடகம் எழிலான காட்சிகள்",
+          "english": "A beautiful drama, lovely scenes,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s15-l004",
+          "tamil": "அனல் வீசும் பேச்சுகள் -",
+          "english": "Speeches that throw fire —"
+        },
+        {
+          "id": "kalaignar-song-en-019-s15-l005",
+          "tamil": "ஆடல்... பாடல் ஊடல்... கூடல் எல்லாம் காண",
+          "english": "To see dance... song... sulking... reunion — all of it,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s15-l006",
+          "tamil": "இங்கே வாங்க... வாங்க",
+          "english": "Come here... come,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s15-l007",
+          "tamil": "டிக்கெட்டு வாங்க வாங்க",
+          "english": "Buy a ticket, come, come."
+        }
+      ]
+    },
+    {
+      "ordinal": 16,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s16-l001",
+          "tamil": "மூணு வயதுக்கு மேல் முழு சார்ஜ்",
+          "english": "Above three years of age, full charge,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s16-l002",
+          "tamil": "இடம்மாறி உட்கார்ந்தால் டபுள் சார்ஜ்",
+          "english": "Change your seat and it's double charge,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s16-l003",
+          "tamil": "ட்ரெஸிங் சீனில் அடிக்கக் கூடாது டார்ச்சு",
+          "english": "In the dressing scene, don't shine a torch,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s16-l004",
+          "tamil": "(மூணு)",
+          "english": "(Three)"
+        }
+      ]
+    },
+    {
+      "ordinal": 17,
+      "sourceLabelTa": "கிழவன்",
+      "labelEn": "Old man",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s17-l001",
+          "tamil": "ஐம்பது மூணுக்கு?",
+          "english": "For fifty-three?"
+        }
+      ]
+    },
+    {
+      "ordinal": 18,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s18-l001",
+          "tamil": "ஈஸிசேர்!...",
+          "english": "Easy chair!..."
+        }
+      ]
+    },
+    {
+      "ordinal": 19,
+      "sourceLabelTa": "ஒரு பெண்",
+      "labelEn": "A woman",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s19-l001",
+          "tamil": "ஏம்மா! பெண்களுக்குத் தனி இடம் உண்டா?",
+          "english": "Hey, ma! Is there a separate place for women?"
+        }
+      ]
+    },
+    {
+      "ordinal": 20,
+      "sourceLabelTa": "ரா",
+      "labelEn": "Raa",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s20-l001",
+          "tamil": "பிள்ளைகள் போட்ட எனையும் உண்டு!",
+          "english": "There is even me, who has borne children!"
+        },
+        {
+          "id": "kalaignar-song-en-019-s20-l002",
+          "tamil": "பீடா சிகரெட் பாக்கு வெத்திலை",
+          "english": "Beeda, cigarette, areca nut, betel leaf,"
+        },
+        {
+          "id": "kalaignar-song-en-019-s20-l003",
+          "tamil": "சோடா கலர் ஆரஞ்சு!",
+          "english": "Soda, colour, orange!"
+        }
+      ]
+    },
+    {
+      "ordinal": 21,
+      "sourceLabelTa": "குள்ளன்",
+      "labelEn": "Dwarf",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s21-l001",
+          "tamil": "பீரியா?",
+          "english": "Beer-aa?"
+        }
+      ]
+    },
+    {
+      "ordinal": 22,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s22-l001",
+          "tamil": "அட பீரியோ!",
+          "english": "Hey, bureau!"
+        },
+        {
+          "id": "kalaignar-song-en-019-s22-l002",
+          "tamil": "பீரியோ டேபிள்னா டேபிள்னா!",
+          "english": "Bureau — table-na, table-na!"
+        },
+        {
+          "id": "kalaignar-song-en-019-s22-l003",
+          "tamil": "முட்டன்னா டாவன்னா உள்ளன்னா போய்யா",
+          "english": "Muttanna, daavanna, ullanna — go, ya!"
+        },
+        {
+          "id": "kalaignar-song-en-019-s22-l004",
+          "tamil": "(மூணு)",
+          "english": "(Three)"
+        }
+      ]
+    },
+    {
+      "ordinal": 23,
+      "sourceLabelTa": "நபர் 4",
+      "labelEn": "Person 4",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s23-l001",
+          "tamil": "ஏம்மா அரை டிக்கட் உண்டா?",
+          "english": "Hey, ma, is there a half ticket?"
+        }
+      ]
+    },
+    {
+      "ordinal": 24,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s24-l001",
+          "tamil": "யப்பா... உமக்கு முழு டிக்கட்டும் இல்லே!",
+          "english": "Ayya... there isn't even a full ticket for you!"
+        }
+      ]
+    },
+    {
+      "ordinal": 25,
+      "sourceLabelTa": "அவன்",
+      "labelEn": "He",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s25-l001",
+          "tamil": "ஏனாம்?",
+          "english": "Why so?"
+        }
+      ]
+    },
+    {
+      "ordinal": 26,
+      "sourceLabelTa": "ராணி",
+      "labelEn": "Rani",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-019-s26-l001",
+          "tamil": "ஹவுஸ் புல்!",
+          "english": "House full!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-004",
+  "slug": "song-004",
+  "songNumber": 4,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "மாரி மகமாயி மாரி மகமாயி",
+  "titleEn": "Mari Mahamayi, Mari Mahamayi",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "கோரஸ்",
+      "labelEn": "Chorus",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-004-s01-l001",
+          "tamil": "மாரி மகமாயி மாரி மகமாயி",
+          "english": "Mari Mahamayi, Mari Mahamayi,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s01-l002",
+          "tamil": "ஆயி எங்கள் காளியம்மா",
+          "english": "Aayi, our Kaliamma,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s01-l003",
+          "tamil": "மாரி மகமாயி மாரி மகமாயி",
+          "english": "Mari Mahamayi, Mari Mahamayi,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s01-l004",
+          "tamil": "ஏழை நாங்கள் எல்லோரும் வாழ",
+          "english": "For all of us poor folk to live,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s01-l005",
+          "tamil": "மாத மும்மாரி பொழியணும் தாயே..",
+          "english": "Let the month's mummari rains pour, Mother.."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "ஆண்",
+      "labelEn": "Male voice",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-004-s02-l001",
+          "tamil": "(சூரியனால் கடல் நீரும் - மேகமாகவே",
+          "english": "(By the sun, even the sea-water — into cloud itself,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s02-l002",
+          "tamil": "மாறியதால் லோகத்திலே",
+          "english": "Having changed, upon the world,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s02-l003",
+          "tamil": "மழையும் பொழியுமா",
+          "english": "Will the rain then fall?"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "பெண்",
+      "labelEn": "Female voice",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-004-s03-l001",
+          "tamil": "சொல்றேன் கேளு",
+          "english": "I'll tell you — listen,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s03-l002",
+          "tamil": "விஞ்ஞானம் புதிதாக மாறுது பாராய்",
+          "english": "See, science is changing anew,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s03-l003",
+          "tamil": "கொடும்பாவி அருளாலே பெய்யுமாம் ஜோராய்",
+          "english": "They say by Kodumpavi's grace it will rain hard,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s03-l004",
+          "tamil": "மானம் காஞ்சா நாமெல்லோரும் வாடிடுவோம்",
+          "english": "If the sky dries up, all of us will wither,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s03-l005",
+          "tamil": "தல்லாலே லா.... ....",
+          "english": "Thallale la.... ...."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "எல்லோரும்",
+      "labelEn": "All",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-004-s04-l001",
+          "tamil": "திரி சூலி நீலி எங்கள் மாரி மகமாயி",
+          "english": "Trisuli, Neeli, our Mari Mahamayi,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s04-l002",
+          "tamil": "வரி கொடுக்க முடியாமல்",
+          "english": "Unable to pay the tax,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s04-l003",
+          "tamil": "வாடுறோம் தாயே...",
+          "english": "We are withering, Mother..."
+        },
+        {
+          "id": "kalaignar-song-en-004-s04-l004",
+          "tamil": "ஓங்கார ரூபிணி மாரி மகமாயி",
+          "english": "Omkara-rupini, Mari Mahamayi,"
+        },
+        {
+          "id": "kalaignar-song-en-004-s04-l005",
+          "tamil": "எங்கள் குறை தீர்த்து விடு மாரி மகமாயி",
+          "english": "Set right our grievance, Mari Mahamayi."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "(மாரி)",
+      "labelEn": "(Mari — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-004-s05-l001",
+          "tamil": "(மாரி)",
+          "english": "(Mari — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

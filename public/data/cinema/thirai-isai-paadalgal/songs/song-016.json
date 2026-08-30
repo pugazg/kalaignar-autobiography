@@ -1,0 +1,177 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-016",
+  "slug": "song-016",
+  "songNumber": 16,
+  "filmId": "kalaignar-song-film-004",
+  "filmSlug": "film-04",
+  "filmTitleTa": "அம்மையப்பன்",
+  "yearPrinted": 1954,
+  "titleTa": "சின்னப் புது மலரே",
+  "titleEn": "O little new flower",
+  "authorship": {
+    "decision": "unresolved",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": false,
+    "authorshipNoticeRequired": true,
+    "noticeGroupId": "ammayappan-unresolved"
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "முத்தாயி",
+      "labelEn": "முத்தாயி",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s01-l001",
+          "tamil": "சின்னப் புது மலரே",
+          "english": "O little new flower,"
+        },
+        {
+          "id": "kalaignar-song-en-016-s01-l002",
+          "tamil": "சிங்கார அகல் விளக்கே...",
+          "english": "O lovely agal-lamp..."
+        },
+        {
+          "id": "kalaignar-song-en-016-s01-l003",
+          "tamil": "கன்னற் தனிச்சுவையே",
+          "english": "O unique taste of sugarcane,"
+        },
+        {
+          "id": "kalaignar-song-en-016-s01-l004",
+          "tamil": "கற்கண்டே கனிரசமே...",
+          "english": "O rock-candy, O fruit-nectar..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "(சின்)",
+      "labelEn": "(Sin — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s02-l001",
+          "tamil": "(சின்)",
+          "english": "(Sin — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s03-l001",
+          "tamil": "செந்நெல் மணிக் கதிரே",
+          "english": "O jewel-like ear of red paddy,"
+        },
+        {
+          "id": "kalaignar-song-en-016-s03-l002",
+          "tamil": "தித்திக்கும் செங்கரும்பே...",
+          "english": "O sweet-tasting red sugarcane..."
+        },
+        {
+          "id": "kalaignar-song-en-016-s03-l003",
+          "tamil": "செந்தமிழ் மலர் என்றெடுத்த",
+          "english": "O treasure-house gathered as"
+        },
+        {
+          "id": "kalaignar-song-en-016-s03-l004",
+          "tamil": "செல்வக் களஞ்சியமே...",
+          "english": "A flower of refined Tamil..."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "(சின்)",
+      "labelEn": "(Sin — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s04-l001",
+          "tamil": "(சின்)",
+          "english": "(Sin — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s05-l001",
+          "tamil": "காவிரியின் தென் பாங்கே",
+          "english": "O southern grace of the Kaveri,"
+        },
+        {
+          "id": "kalaignar-song-en-016-s05-l002",
+          "tamil": "கற்றார்ப் பெட்டகமே...",
+          "english": "O casket of the learned..."
+        },
+        {
+          "id": "kalaignar-song-en-016-s05-l003",
+          "tamil": "பூவிரித்த சோலையிலே",
+          "english": "In the grove spread open with flowers,"
+        },
+        {
+          "id": "kalaignar-song-en-016-s05-l004",
+          "tamil": "பொங்கும் புதுமணமே...",
+          "english": "O new fragrance that overflows..."
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "(சின்)",
+      "labelEn": "(Sin — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s06-l001",
+          "tamil": "(சின்)",
+          "english": "(Sin — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s07-l001",
+          "tamil": "நீ... இராவிடம் இருள் சூழும்",
+          "english": "You... gave that state — `at night, darkness gathers` —"
+        },
+        {
+          "id": "kalaignar-song-en-016-s07-l002",
+          "tamil": "என்ற நிலை தந்த",
+          "english": "That very condition,"
+        },
+        {
+          "id": "kalaignar-song-en-016-s07-l003",
+          "tamil": "திராவிடப் பொன்னழகி...",
+          "english": "O golden beauty of Dravida..."
+        },
+        {
+          "id": "kalaignar-song-en-016-s07-l004",
+          "tamil": "வாழ்ந்திடுவாய் விண்ண முதே -",
+          "english": "Live on, O nectar of heaven —"
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": "(சின்)",
+      "labelEn": "(Sin — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-016-s08-l001",
+          "tamil": "(சின்)",
+          "english": "(Sin — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

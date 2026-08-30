@@ -1,0 +1,169 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-002",
+  "slug": "song-002",
+  "songNumber": 2,
+  "filmId": "kalaignar-song-film-002",
+  "filmSlug": "film-02",
+  "filmTitleTa": "பராசக்தி",
+  "yearPrinted": 1952,
+  "titleTa": "இல் வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
+  "titleEn": "The lamp that lights our household life",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "தங்",
+      "labelEn": "தங்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s01-l001",
+          "tamil": "இல் வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
+          "english": "The lamp that lights our household life,"
+        },
+        {
+          "id": "kalaignar-song-en-002-s01-l002",
+          "tamil": "என் இதயராணி ரூபம்",
+          "english": "Is the form of my queen of the heart."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "கல்",
+      "labelEn": "கல்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s02-l001",
+          "tamil": "இந்த தீபத்திலே சுடராய் திகழ்வதென்",
+          "english": "The flame that shines within this lamp,"
+        },
+        {
+          "id": "kalaignar-song-en-002-s02-l002",
+          "tamil": "தீரனின் ரூபம்",
+          "english": "Is the form of my brave one."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "தங்",
+      "labelEn": "தங்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s03-l001",
+          "tamil": "இளமயில் ரூபம்",
+          "english": "The form of a young peacock."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "கல்",
+      "labelEn": "கல்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s04-l001",
+          "tamil": "இல் வாழ்வினிலே ஒளி ஏற்றும் தீபம்",
+          "english": "The lamp that lights our household life,"
+        },
+        {
+          "id": "kalaignar-song-en-002-s04-l002",
+          "tamil": "நம் காதல் தீபம்",
+          "english": "Is the lamp of our love."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "தங்",
+      "labelEn": "தங்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s05-l001",
+          "tamil": "கனியே! கன்னல் தமிழே! அமுதே!",
+          "english": "O fruit! O sugarcane-Tamil! O nectar!"
+        },
+        {
+          "id": "kalaignar-song-en-002-s05-l002",
+          "tamil": "பனி தூங்கும் மலரே! நிலவே!",
+          "english": "O flower where dew sleeps! O moon!"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "கல்",
+      "labelEn": "கல்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s06-l001",
+          "tamil": "கனிவான மொழியால் எனையே",
+          "english": "With your tender speech, you have captivated me alone —"
+        },
+        {
+          "id": "kalaignar-song-en-002-s06-l002",
+          "tamil": "கவர்ந்தீரே காந்தச் சிலையே",
+          "english": "O magnetic statue!"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": "தங்",
+      "labelEn": "தங்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s07-l001",
+          "tamil": "உனைக் காணும் போது நெஞ்சில்",
+          "english": "When I see you, the feeling that seeps through my heart —"
+        },
+        {
+          "id": "kalaignar-song-en-002-s07-l002",
+          "tamil": "ஊறிடும் உணர்ச்சி தனையே எழுதுவோர்",
+          "english": "For those who would write that very feeling,"
+        },
+        {
+          "id": "kalaignar-song-en-002-s07-l003",
+          "tamil": "எழுத்தும் இல்லையே",
+          "english": "There are no letters at all."
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": "தங்,கல்",
+      "labelEn": "தங்,கல்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s08-l001",
+          "tamil": "திருநாளிது போல்தினம் ஆடிப்பாடியே",
+          "english": "Every day like this festival day, dancing and singing,"
+        },
+        {
+          "id": "kalaignar-song-en-002-s08-l002",
+          "tamil": "தேன் போல் வாழ்வோம்",
+          "english": "Let us live like honey."
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "sourceLabelTa": "(இல்)",
+      "labelEn": "(Il — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-002-s09-l001",
+          "tamil": "(இல்)",
+          "english": "(Il — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

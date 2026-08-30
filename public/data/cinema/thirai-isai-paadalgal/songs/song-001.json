@@ -1,0 +1,129 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-001",
+  "slug": "song-001",
+  "songNumber": 1,
+  "filmId": "kalaignar-song-film-001",
+  "filmSlug": "film-01",
+  "filmTitleTa": "மந்திரிகுமாரி",
+  "yearPrinted": 1950,
+  "titleTa": "ஊருக்கு உழைப்பவண்டி",
+  "titleEn": "He who labours for the village, di",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "தொகையறா",
+      "labelEn": "Thogaiyara",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-001-s01-l001",
+          "tamil": "ஊருக்கு உழைப்பவண்டி",
+          "english": "He who labours for the village, di,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s01-l002",
+          "tamil": "ஒரு குற்றம் அறியான்டி",
+          "english": "Knows not a single wrong, di,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s01-l003",
+          "tamil": "உதை பட்டு சாவாண்டி - எருமைக் கன்னுக்குட்டி",
+          "english": "Gets kicked and dies, di — buffalo calf."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "பாட்டு",
+      "labelEn": "Paattu (song)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-001-s02-l001",
+          "tamil": "நல்லதுக்குக் காலமில்லே",
+          "english": "There is no time for what is good,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s02-l002",
+          "tamil": "நடப்பதெல்லாம் வெளிப்பகட்டு",
+          "english": "Everything that happens is outward show,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s02-l003",
+          "tamil": "சொல்லப்போனால் வெட்கக்கேடு - எருமைக் கன்னுக்குட்டி",
+          "english": "Say it plainly — it is a shame — buffalo calf."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "தொகையறா",
+      "labelEn": "Thogaiyara",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-001-s03-l001",
+          "tamil": "ஏய்ச்சுப் பொழைக்கிறவன்",
+          "english": "The fellow who lives by cheating,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s03-l002",
+          "tamil": "ஏழடுக்கு மாளிகையில்",
+          "english": "In a seven-storey mansion,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s03-l003",
+          "tamil": "எகத்தாளம் போடுறானே",
+          "english": "Beats out his swagger there;"
+        },
+        {
+          "id": "kalaignar-song-en-001-s03-l004",
+          "tamil": "அவன் - பேச்சை மறுக்கிறவன்",
+          "english": "But the man who contradicts his word,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s03-l005",
+          "tamil": "பிச்சை எடுக்கிறானே - எருமைக் கன்னுக்குட்டி",
+          "english": "Is out begging — buffalo calf."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "பாட்டு",
+      "labelEn": "Paattu (song)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-001-s04-l001",
+          "tamil": "நாட்டுக்குத் தலைவனென்று நம்பும்படி பேசிவிட்டு",
+          "english": "He talks till we believe him to be the leader of the land,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s04-l002",
+          "tamil": "வேணசெல்வம் வாரியே போவாரடி",
+          "english": "Then scoops away all the wealth he wants, di;"
+        },
+        {
+          "id": "kalaignar-song-en-001-s04-l003",
+          "tamil": "நாடு செழிக்க பெண்ணி நாளெல்லாம் பாடுபடும்",
+          "english": "With the land's prosperity in mind, the poor man labours all day,"
+        },
+        {
+          "id": "kalaignar-song-en-001-s04-l004",
+          "tamil": "ஏழைக்கிக் காலமில்லே எவனெவனோ வாழுகின்றான் -",
+          "english": "For the poor, no good times; all sorts of fellows are thriving —"
+        },
+        {
+          "id": "kalaignar-song-en-001-s04-l005",
+          "tamil": "எருமைக் கன்னுக்குட்டி",
+          "english": "Buffalo calf."
+        }
+      ]
+    }
+  ]
+}

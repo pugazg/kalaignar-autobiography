@@ -1,0 +1,98 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-020",
+  "slug": "song-020",
+  "songNumber": 20,
+  "filmId": "kalaignar-song-film-005",
+  "filmSlug": "film-05",
+  "filmTitleTa": "ராஜா ராணி",
+  "yearPrinted": 1956,
+  "titleTa": "வேலை யில்லாத தொல்லை",
+  "titleEn": "The trouble of having no work",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-020-s01-l001",
+          "tamil": "வேலை யில்லாத தொல்லை",
+          "english": "The trouble of having no work,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l002",
+          "tamil": "காலை பனி போலே நீங்கி போனதே...",
+          "english": "Has gone away like morning dew..."
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l003",
+          "tamil": "நான் எண்ணாத நல் வாழ்வுதான்",
+          "english": "A good life I had never imagined,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l004",
+          "tamil": "தன்னால் வந்து சேர்ந்ததே",
+          "english": "Came and joined me of its own accord,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l005",
+          "tamil": "இன்ப நன்னாளிதே",
+          "english": "This is a fine day of joy,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l006",
+          "tamil": "செல்வ பொன்னாளிதே...",
+          "english": "This is a golden day of wealth..."
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l007",
+          "tamil": "ஆஹா ஆனந்தம் ஆனந்தமே...",
+          "english": "Ah, happiness — happiness itself..."
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l008",
+          "tamil": "முன்பின் அறியாதார் உறவாளர் எனமனம்போலவே",
+          "english": "Those I had never known before came as kin, just as my heart wished,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l009",
+          "tamil": "நலமே நானடைந்தேன்",
+          "english": "I have found well-being,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l010",
+          "tamil": "அன்பின் உருவாகவே",
+          "english": "As forms of love,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l011",
+          "tamil": "எந்தன் துயர் நீங்கவே",
+          "english": "So that my sorrow may leave me,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l012",
+          "tamil": "நன்மை தந்திட வந்தார் இன்றே",
+          "english": "They came today to bring me good,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l013",
+          "tamil": "என்னை சீமாட்டி என்றெண்ணி ஏமாந்தாரே",
+          "english": "Thinking me a seemaatti, they were deceived,"
+        },
+        {
+          "id": "kalaignar-song-en-020-s01-l014",
+          "tamil": "ஆஹா விந்தையிதே...",
+          "english": "Ah, what a wonder this is..."
+        }
+      ]
+    }
+  ]
+}

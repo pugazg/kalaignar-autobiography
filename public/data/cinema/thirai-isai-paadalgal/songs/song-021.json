@@ -1,0 +1,73 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-021",
+  "slug": "song-021",
+  "songNumber": 21,
+  "filmId": "kalaignar-song-film-005",
+  "filmSlug": "film-05",
+  "filmTitleTa": "ராஜா ராணி",
+  "yearPrinted": 1956,
+  "titleTa": "ஆழிசூழ் உலகம் விடிந்த தென்று என்",
+  "titleEn": "Saying the ocean-girdled world had dawned",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-021-s01-l001",
+          "tamil": "ஆழிசூழ் உலகம் விடிந்த தென்று என்",
+          "english": "Saying the ocean-girdled world had dawned,"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l002",
+          "tamil": "ஆருயிர் மணவாளரை எழுப்பிவிட்டு",
+          "english": "You woke my life-beloved bridegroom,"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l003",
+          "tamil": "கோழிபோல் கொக்கரித்து என் கற்பையும்",
+          "english": "Crowed like a rooster and even my chastity,"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l004",
+          "tamil": "கொத்திவிட்டாய் கொடியவளே! படுபாவி!",
+          "english": "You pecked away, cruel woman! Great sinner!"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l005",
+          "tamil": "ஊழிபோல் வந்திங்கு ஆடிவிட்டாய் உடைந்த",
+          "english": "You came here like the end-age and played havoc; broken,"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l006",
+          "tamil": "தாழிபோல் ஆகிவிட்டேன் - இனி",
+          "english": "I have become like a shattered thaazhi-vessel — now,"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l007",
+          "tamil": "ஒரு கணம் இந்த உயிர் நில்லுமோ",
+          "english": "Will this life remain even one moment?"
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l008",
+          "tamil": "கற்புக்கு இலக்கணம் சொல்லுமோ... சொல்லுமோ...",
+          "english": "Will it state the grammar of chastity... will it..."
+        },
+        {
+          "id": "kalaignar-song-en-021-s01-l009",
+          "tamil": "எந்தன் உயிர் நில்லுமோ...",
+          "english": "Will my life remain...?"
+        }
+      ]
+    }
+  ]
+}

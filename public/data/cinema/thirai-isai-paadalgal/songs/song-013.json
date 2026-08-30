@@ -1,0 +1,97 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-013",
+  "slug": "song-013",
+  "songNumber": 13,
+  "filmId": "kalaignar-song-film-004",
+  "filmSlug": "film-04",
+  "filmTitleTa": "அம்மையப்பன்",
+  "yearPrinted": 1954,
+  "titleTa": "நீலக்கடல் பாரு பாப்பா...",
+  "titleEn": "Look at the blue sea, paappa...",
+  "authorship": {
+    "decision": "unresolved",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": false,
+    "authorshipNoticeRequired": true,
+    "noticeGroupId": "ammayappan-unresolved"
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "முத்தாயி",
+      "labelEn": "முத்தாயி",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-013-s01-l001",
+          "tamil": "நீலக்கடல் பாரு பாப்பா...",
+          "english": "Look at the blue sea, paappa..."
+        },
+        {
+          "id": "kalaignar-song-en-013-s01-l002",
+          "tamil": "அதில் நீந்தி விளையாடு பாப்பா...",
+          "english": "Swim and play in it, paappa..."
+        },
+        {
+          "id": "kalaignar-song-en-013-s01-l003",
+          "tamil": "வெள்ளி மணல் படுக்கையிலே பாப்பா",
+          "english": "On the bed of silver sand, paappa,"
+        },
+        {
+          "id": "kalaignar-song-en-013-s01-l004",
+          "tamil": "துள்ளி விளையாடு பாப்பா...",
+          "english": "Leap and play, paappa..."
+        },
+        {
+          "id": "kalaignar-song-en-013-s01-l005",
+          "tamil": "ஓடி விளையாடு பாப்பா... நீ",
+          "english": "Run and play, paappa... you,"
+        },
+        {
+          "id": "kalaignar-song-en-013-s01-l006",
+          "tamil": "ஓய்வாக நடமாடு பாப்பா...",
+          "english": "Stroll at ease, paappa..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-013-s02-l001",
+          "tamil": "சாய்ந்தாடம்மா சாய்ந்தாடு",
+          "english": "Sway, little one, sway,"
+        },
+        {
+          "id": "kalaignar-song-en-013-s02-l002",
+          "tamil": "சந்தனக் கிளியே சாய்ந்தாடு",
+          "english": "O sandalwood parrot, sway,"
+        },
+        {
+          "id": "kalaignar-song-en-013-s02-l003",
+          "tamil": "அழகு மயிலே சாய்ந்தாடு",
+          "english": "O beautiful peacock, sway,"
+        },
+        {
+          "id": "kalaignar-song-en-013-s02-l004",
+          "tamil": "அமுதப் புறாவே சாய்ந்தாடு",
+          "english": "O nectar-dove, sway."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "(சா)",
+      "labelEn": "(Saa — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-013-s03-l001",
+          "tamil": "(சா)",
+          "english": "(Saa — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

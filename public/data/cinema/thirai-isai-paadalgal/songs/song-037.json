@@ -1,0 +1,191 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-037",
+  "slug": "song-037",
+  "songNumber": 37,
+  "filmId": "kalaignar-song-film-013",
+  "filmSlug": "film-13",
+  "filmTitleTa": "தூக்கு மேடை",
+  "yearPrinted": 1982,
+  "titleTa": "குடி உயர கோல் உயரும்",
+  "titleEn": "When the people rise, the sceptre rises",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "பல்லவி",
+      "labelEn": "Pallavi",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-037-s01-l001",
+          "tamil": "ஆண் : குடி உயர கோல் உயரும்",
+          "english": "Man: When the people rise, the sceptre rises,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s01-l002",
+          "tamil": "கோல் உயர குடி உயரும்",
+          "english": "When the sceptre rises, the people rise,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s01-l003",
+          "tamil": "உயரம் எத்தனை அழகாய் எத்தனை விதமாய்",
+          "english": "What heights — how beautifully, in how many ways,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s01-l004",
+          "tamil": "எங்கள் மக்கள் சாகிறார்",
+          "english": "Our people are dying,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s01-l005",
+          "tamil": "எரியும் நெருப்பில் வேகிறார்",
+          "english": "They are cooking in burning fire."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "சரணம்",
+      "labelEn": "Charanam",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-037-s02-l001",
+          "tamil": "எல்லாரும் இந்நாட்டு மன்னர் என்றார் பாட்டுல",
+          "english": "'Everyone is a king of this country,' he said in the song,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s02-l002",
+          "tamil": "எங்கள் மன்னர் வாழுகின்றார் மண்ணாங்கட்டி வீட்டுல",
+          "english": "Our king lives in a mud-clod house,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s02-l003",
+          "tamil": "இடி இடித்தால் மழை பொழிந்தால்",
+          "english": "If thunder strikes, if rain pours,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s02-l004",
+          "tamil": "மன்னரெல்லாம் ரோட்டுல",
+          "english": "All the kings are on the road,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s02-l005",
+          "tamil": "சிறுகொடிந்த பறவை கூட இருக்குதுப்பா கூட்டில",
+          "english": "Even a `sirukodindha` bird has a nest, appa,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s02-l006",
+          "tamil": "(குடி உயர)",
+          "english": "(People rise)."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-037-s03-l001",
+          "tamil": "எங்களுக்கும் உணர்ச்சி உண்டு",
+          "english": "We too have feeling,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s03-l002",
+          "tamil": "எங்கள் பங்களாவில் மெத்தை உண்டு",
+          "english": "In our bungalow there is a mattress,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s03-l003",
+          "tamil": "புளிச்சக்காடி மதுவை உண்டு",
+          "english": "We drink the sour-kaadi liquor,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s03-l004",
+          "tamil": "புருஷன் மனைவி சேருவதுண்டு",
+          "english": "Husband and wife do come together,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s03-l005",
+          "tamil": "வெளிச்சம் போட்டா காரும் வந்தா",
+          "english": "When light is thrown, when a car comes,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s03-l006",
+          "tamil": "விலகி விலகி படுப்பதுண்டு ....",
+          "english": "We move aside, move aside, and lie down...."
+        },
+        {
+          "id": "kalaignar-song-en-037-s03-l007",
+          "tamil": "(குடி உயர)",
+          "english": "(People rise)."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-037-s04-l001",
+          "tamil": "முத்தெல்லாம் முக்குச் சளி",
+          "english": "All pearls are nose-mucus,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s04-l002",
+          "tamil": "ரத்தக் காயம் ரத்தினமாம்",
+          "english": "A blood-wound, they say, is a gem,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s04-l003",
+          "tamil": "வைரங்கள் நட்சத்திரம்",
+          "english": "Diamonds are stars,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s04-l004",
+          "tamil": "வானவில்லே வைடூரியம்.. எப்படி....",
+          "english": "The rainbow itself is vaiduriyam.. how...."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-037-s05-l001",
+          "tamil": "குத்துக் கல்லு சிம்மாசனம்",
+          "english": "Kuthuk-kallu is the throne,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s05-l002",
+          "tamil": "குப்பத் தொட்டி ராஜாங்கம்",
+          "english": "The garbage bin is the kingdom,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s05-l003",
+          "tamil": "செத்துப் பிழைக்கும் மக்களுக்கு",
+          "english": "For the people who survive by dying,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s05-l004",
+          "tamil": "ஜெகத்தை அழிக்கும் சக்தி உண்டு",
+          "english": "There is power to destroy the world,"
+        },
+        {
+          "id": "kalaignar-song-en-037-s05-l005",
+          "tamil": "(குடி உயர)",
+          "english": "(People rise)."
+        }
+      ]
+    }
+  ]
+}

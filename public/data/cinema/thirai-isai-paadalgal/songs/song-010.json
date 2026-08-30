@@ -1,0 +1,196 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-010",
+  "slug": "song-010",
+  "songNumber": 10,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "வாழ்க வாழ்க வாழ்க வாழ்கவே",
+  "titleEn": "Long live, long live, long live, long live!",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-010-s01-l001",
+          "tamil": "வாழ்க வாழ்க வாழ்க வாழ்கவே",
+          "english": "Long live, long live, long live, long live!"
+        },
+        {
+          "id": "kalaignar-song-en-010-s01-l002",
+          "tamil": "அருமை மிகுந்த எங்கள் அறிஞர்",
+          "english": "Our precious Arignar,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s01-l003",
+          "tamil": "அண்ணா வாழ்கவே",
+          "english": "Long live Anna!"
+        },
+        {
+          "id": "kalaignar-song-en-010-s01-l004",
+          "tamil": "குமர அண்ணா வாழ்கவே",
+          "english": "Long live Kumara Anna!"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-010-s02-l001",
+          "tamil": "பெருமை பேசும் மனிதரெல்லாம்",
+          "english": "Against all those men who boast of greatness,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s02-l002",
+          "tamil": "எதற்கெடுத்தாலும் எருமை போல",
+          "english": "Who, whatever the matter, like buffaloes,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s02-l003",
+          "tamil": "தலையசைப்பதை உரிமைக்காக",
+          "english": "Go on nodding their heads — for rights,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s02-l004",
+          "tamil": "எதிர்த்து நிற்கும்",
+          "english": "He stands opposing them,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s02-l005",
+          "tamil": "அண்ணா வாழ்கவே",
+          "english": "Long live Anna!"
+        },
+        {
+          "id": "kalaignar-song-en-010-s02-l006",
+          "tamil": "எங்கள் அண்ணா வாழ்கவே",
+          "english": "Long live our Anna!"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-010-s03-l001",
+          "tamil": "புழுவாகத் துடிக்கின்ற ஏழை",
+          "english": "The poor man writhing like a worm,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s03-l002",
+          "tamil": "கழுகாகப் பறக்கின்ற சீமான் - இந்தப்",
+          "english": "The grandee flying like an eagle — these,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s03-l003",
+          "tamil": "பொல்லாத பேதங்கள் எல்லாம்",
+          "english": "All these wicked divisions,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s03-l004",
+          "tamil": "இல்லாத பொன்னாடாய்ச் செய்தார் - அந்த",
+          "english": "He made into a golden land where they are no more — that,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s03-l005",
+          "tamil": "அண்ணா வாழ்கவே",
+          "english": "Anna, long live!"
+        },
+        {
+          "id": "kalaignar-song-en-010-s03-l006",
+          "tamil": "குமர அண்ணா வாழ்கவே",
+          "english": "Kumara Anna, long live!"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-010-s04-l001",
+          "tamil": "எலியாக வாழ்கின்ற விதவை",
+          "english": "The widow living like a mouse,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s04-l002",
+          "tamil": "பலியாக தருகின்ற இளமை",
+          "english": "Youth being given as sacrifice,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s04-l003",
+          "tamil": "புலியாக பாய்கின்ற பழமை",
+          "english": "Old custom pouncing like a tiger,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s04-l004",
+          "tamil": "மலிவாகப் போன இக்கொடுமை",
+          "english": "This cruelty that has become so commonplace,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s04-l005",
+          "tamil": "மாற்றிடும் அண்ணா வாழ்கவே!",
+          "english": "Long live Anna who will change it!"
+        },
+        {
+          "id": "kalaignar-song-en-010-s04-l006",
+          "tamil": "குமர அண்ணா வாழ்கவே.",
+          "english": "Long live Kumara Anna."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-010-s05-l001",
+          "tamil": "சிலசில இடங்களில் பணத்தோட்டம் - அது",
+          "english": "Here and there, Panathottam — that,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s05-l002",
+          "tamil": "செல்வக் குமரி... கோட்டம்! இப்படிப்",
+          "english": "Selvak Kumari... Kottam! Like this,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s05-l003",
+          "tamil": "பலபல கருத்துக்கள் சொல்லும் தேனாறு",
+          "english": "A honey-stream speaking many, many ideas,"
+        },
+        {
+          "id": "kalaignar-song-en-010-s05-l004",
+          "tamil": "பகுத்தறிவூட்டும் லட்சிய வரலாறு -",
+          "english": "An ideal history that feeds rational thought —"
+        },
+        {
+          "id": "kalaignar-song-en-010-s05-l005",
+          "tamil": "அண்ணா வாழ்கவே",
+          "english": "Long live Anna!"
+        },
+        {
+          "id": "kalaignar-song-en-010-s05-l006",
+          "tamil": "குமர அண்ணா வாழ்கவே.",
+          "english": "Long live Kumara Anna."
+        }
+      ]
+    }
+  ]
+}

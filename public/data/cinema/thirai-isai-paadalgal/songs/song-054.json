@@ -1,0 +1,157 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-054",
+  "slug": "song-054",
+  "songNumber": 54,
+  "filmId": "kalaignar-song-film-023",
+  "filmSlug": "film-23",
+  "filmTitleTa": "பெண் சிங்கம்",
+  "yearPrinted": 2010,
+  "titleTa": "வீணையில் எழுவது வேணுகானமா",
+  "titleEn": "Is what rises from the veena a flute-song?",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-054-s01-l001",
+          "tamil": "ஆஹா...",
+          "english": "Aahaa..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "ஆண்",
+      "labelEn": "Man",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-054-s02-l001",
+          "tamil": "வீணையில் எழுவது வேணுகானமா",
+          "english": "Is what rises from the veena a venu-song?"
+        },
+        {
+          "id": "kalaignar-song-en-054-s02-l002",
+          "tamil": "திருவாதிரையின் தோடி ராகமா",
+          "english": "Is it Thiruvathirai's Todi raga?"
+        },
+        {
+          "id": "kalaignar-song-en-054-s02-l003",
+          "tamil": "திருவெண்காட்டு மகுடி நாதமா",
+          "english": "Is it Thiruvenkadu's magudi sound?"
+        },
+        {
+          "id": "kalaignar-song-en-054-s02-l004",
+          "tamil": "இசைவதனால் இணையும் ஈருயிர்கள்",
+          "english": "Two lives join because they harmonize,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s02-l005",
+          "tamil": "இணைந்தபின்பு இரண்டும் ஓர் உயிர்தானே",
+          "english": "Once joined, are not the two a single life?"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "ஆண் / பெண்",
+      "labelEn": "Man / Woman",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-054-s03-l001",
+          "tamil": "ஆண் : காலை அரும்பி மாலை மலரும்",
+          "english": "Man: Budding in the morning, flowering in the evening,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l002",
+          "tamil": "காதல் நோயால் நானும் உருகினேன்",
+          "english": "I too melted from the disease of love,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l003",
+          "tamil": "பெண் : காலை அரும்பி மாலை மலரும்",
+          "english": "Woman: Budding in the morning, flowering in the evening,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l004",
+          "tamil": "காதல் நோயால் நானும் உருகினேன்",
+          "english": "I too melted from the disease of love,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l005",
+          "tamil": "ஆண் : ஓவியமாகி நீயும் கொடுமுடி கோகிலம்தானே",
+          "english": "Man: You became a painting — are you not the Kodumudi kokilam?"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l006",
+          "tamil": "கொள்ளை கொண்டாய்",
+          "english": "You plundered,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l007",
+          "tamil": "நெஞ்சத்தினையே, கொடுத்துவிடு",
+          "english": "My very heart; give it back,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l008",
+          "tamil": "எடுத்தபடியே",
+          "english": "Just as you took it,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l009",
+          "tamil": "பெண் : தேனும் பாலும் கலந்த பின்னே",
+          "english": "Woman: Once honey and milk are mixed,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l010",
+          "tamil": "தனியே சுவையை பிரிக்கலாகுமா",
+          "english": "Can their taste be separated out?"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l011",
+          "tamil": "ஆண் : இனிக்கும் தேனாய் நீயும்",
+          "english": "Man: You as sweet honey,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l012",
+          "tamil": "துடிக்கும் ஆண்பாலாய் நானும்",
+          "english": "And I as throbbing `aanpaal`,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l013",
+          "tamil": "திருமணம் ஆன பின்னால் தேனும் பாலுமாகலாம்",
+          "english": "After marriage, we may become honey and milk,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l014",
+          "tamil": "பெண் : ஆயிரம் இரவுகள் போதும்",
+          "english": "Woman: A thousand nights are enough,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l015",
+          "tamil": "பாயிரம் பாடல் போதும் இப்போது",
+          "english": "A paayiram song is enough now,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l016",
+          "tamil": "ஆண் : செம்புலம் நீர்போல அன்புடை நெஞ்சமும்",
+          "english": "Man: Like water upon red earth, our loving hearts,"
+        },
+        {
+          "id": "kalaignar-song-en-054-s03-l017",
+          "tamil": "நாம் கலந்தோமே",
+          "english": "We have mingled."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-011",
+  "slug": "song-011",
+  "songNumber": 11,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "எதையும் தாங்கும் இதயம் வேண்டும்",
+  "titleEn": "We need a heart that can bear anything",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-011-s01-l001",
+          "tamil": "எதையும் தாங்கும் இதயம் வேண்டும்",
+          "english": "We need a heart that can bear anything,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s01-l002",
+          "tamil": "பகையும் பழியும் பாம்பெனத் தீண்டும் - உலகில்",
+          "english": "In this world, enmity and blame strike like snakes —"
+        },
+        {
+          "id": "kalaignar-song-en-011-s01-l003",
+          "tamil": "எதையும் தாங்கும் இதயம் வேண்டும்",
+          "english": "We need a heart that can bear anything,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s01-l004",
+          "tamil": "சிறையா வதையா இன்னும்...",
+          "english": "Prison? Torture? What more..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "(எதையும்)",
+      "labelEn": "(Ethaiyum — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-011-s02-l001",
+          "tamil": "(எதையும்)",
+          "english": "(Ethaiyum — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-011-s03-l001",
+          "tamil": "சாக்ரட்டீஸ் வாழ்வினைப் பார்",
+          "english": "Look at the life of Socrates,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s03-l002",
+          "tamil": "சாகாத காந்தி முடிவையுமே பார்",
+          "english": "Look also at the end of deathless Gandhi,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s03-l003",
+          "tamil": "வேதனையாலே வீழாதே",
+          "english": "Do not fall because of pain,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s03-l004",
+          "tamil": "சோதனையாலே வாடாதே - நீ வாடாதே",
+          "english": "Do not wither under trial — you, do not wither,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s03-l005",
+          "tamil": "சோதனையாலே வாடாதே - வரும்...",
+          "english": "Do not wither under trial — what comes..."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "(எதையும்)",
+      "labelEn": "(Ethaiyum — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-011-s04-l001",
+          "tamil": "(எதையும்)",
+          "english": "(Ethaiyum — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-011-s05-l001",
+          "tamil": "தேனெனும் வாழ்வே தேளாய் மாறும்",
+          "english": "Life called honey itself will turn into a scorpion,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s05-l002",
+          "tamil": "போர்முனைச் சாவே பொதுவாழ்வில் இன்பம்",
+          "english": "In public life, death at the battlefront is joy,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s05-l003",
+          "tamil": "ஆணவம் சீறலாம், ராணுவம் பாயலாம்",
+          "english": "Arrogance may roar, the army may pounce,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s05-l004",
+          "tamil": "சீற்றத்தைக் கண்டு சிதறாதே - உளம் சிதறாதே",
+          "english": "Seeing fury, do not scatter — let the heart not scatter,"
+        },
+        {
+          "id": "kalaignar-song-en-011-s05-l005",
+          "tamil": "தூற்றலைக் கேட்டுத் துவளாதே - பகை...",
+          "english": "Hearing slander, do not wilt — enmity..."
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "(எதையும்)",
+      "labelEn": "(Ethaiyum — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-011-s06-l001",
+          "tamil": "(எதையும்)",
+          "english": "(Ethaiyum — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

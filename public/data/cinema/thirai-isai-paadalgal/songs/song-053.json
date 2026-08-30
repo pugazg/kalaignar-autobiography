@@ -1,0 +1,142 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-053",
+  "slug": "song-053",
+  "songNumber": 53,
+  "filmId": "kalaignar-song-film-022",
+  "filmSlug": "film-22",
+  "filmTitleTa": "உளியின் ஓசை",
+  "yearPrinted": 2008,
+  "titleTa": "அலை யெல்லாம் நடனம் ஆடும்",
+  "titleEn": "Every wave dances",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-053-s01-l001",
+          "tamil": "அலை யெல்லாம் நடனம் ஆடும்; தமிழர்",
+          "english": "Every wave dances; the Tamil people's,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s01-l002",
+          "tamil": "கலை யெல்லாம் தமது பண்பைப் பாடும்.",
+          "english": "Every art sings its own culture."
+        },
+        {
+          "id": "kalaignar-song-en-053-s01-l003",
+          "tamil": "காடுகளில் ஓடி விளையாடுகின்ற",
+          "english": "Running and playing in the forests,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s01-l004",
+          "tamil": "பீடு மிகு மானினமும்,",
+          "english": "The deer-kind, rich in dignity,"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-053-s02-l001",
+          "tamil": "பாடும் இசை",
+          "english": "Singing music,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l002",
+          "tamil": "ஜோடிக் குயில்",
+          "english": "Paired cuckoo,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l003",
+          "tamil": "தாளமொடு",
+          "english": "With rhythm,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l004",
+          "tamil": "பாவ மிடு",
+          "english": "Set bhava,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l005",
+          "tamil": "கான மயில்",
+          "english": "Forest peacock,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l006",
+          "tamil": "புள்ளினமும்",
+          "english": "Bird-kind too,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l007",
+          "tamil": "பட்டுக்கொடி,",
+          "english": "Silk flag,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s02-l008",
+          "tamil": "கொற்றக் குடை",
+          "english": "Victory parasol."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-053-s03-l001",
+          "tamil": "சுற்றிச் சுழல்",
+          "english": "Circle and whirl,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l002",
+          "tamil": "வெற்றித் திரு",
+          "english": "Sacred victory,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l003",
+          "tamil": "முத்துத் தமிழ்",
+          "english": "Pearl-Tamil,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l004",
+          "tamil": "கற்றுச் சுடர்",
+          "english": "Learned radiance,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l005",
+          "tamil": "பெற்றுக் குலச்",
+          "english": "Having received — clan,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l006",
+          "tamil": "சோழ தேசப்",
+          "english": "Chola land's,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l007",
+          "tamil": "புகழ் பாடத்",
+          "english": "Fame to sing,"
+        },
+        {
+          "id": "kalaignar-song-en-053-s03-l008",
+          "tamil": "தொழுதிடுவோம்",
+          "english": "Let us bow in worship."
+        }
+      ]
+    }
+  ]
+}

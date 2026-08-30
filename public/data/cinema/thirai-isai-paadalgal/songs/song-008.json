@@ -1,0 +1,129 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-008",
+  "slug": "song-008",
+  "songNumber": 8,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "வருவாய் வருவாய்...",
+  "titleEn": "Come, come...",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "கிராமவாசிகள்",
+      "labelEn": "Villagers",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-008-s01-l001",
+          "tamil": "ஆஹா ஆஹா!",
+          "english": "Aaha, aaha!"
+        },
+        {
+          "id": "kalaignar-song-en-008-s01-l002",
+          "tamil": "வருவாய் வருவாய்...",
+          "english": "Come, come..."
+        },
+        {
+          "id": "kalaignar-song-en-008-s01-l003",
+          "tamil": "வைபோக சுந்தரியே...",
+          "english": "Vaibhoga Sundariye..."
+        },
+        {
+          "id": "kalaignar-song-en-008-s01-l004",
+          "tamil": "சைபோக செளந்தரியே!",
+          "english": "Saibhoga Soundariye!"
+        },
+        {
+          "id": "kalaignar-song-en-008-s01-l005",
+          "tamil": "சைரந்திரியே... கண்ணே... வருவாய்...",
+          "english": "Sairandhri... dear one... come..."
+        },
+        {
+          "id": "kalaignar-song-en-008-s01-l006",
+          "tamil": "கீசகன் ஆசை கொண்ட கிச்சிலிப் பழமடி நீ...",
+          "english": "You are the kichili fruit that Kichaka desired, di..."
+        },
+        {
+          "id": "kalaignar-song-en-008-s01-l007",
+          "tamil": "காச நோய்போல வந்த காதலுக்கு மருந்தடி நீ...",
+          "english": "You are the medicine, di, for love that came like consumption..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-008-s02-l001",
+          "tamil": "ஆணழகா மம்முதா ஆசைகொண்ட கீசகா!",
+          "english": "O handsome one, Mammudha, desire-struck Kichaka!"
+        },
+        {
+          "id": "kalaignar-song-en-008-s02-l002",
+          "tamil": "கீசகா! கீசகா!",
+          "english": "Kichaka! Kichaka!"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-008-s03-l001",
+          "tamil": "கீசகா!... டேய்...",
+          "english": "Kichaka!... Dei..."
+        },
+        {
+          "id": "kalaignar-song-en-008-s03-l002",
+          "tamil": "கிறுக்குத்தனமாய் வந்து மீசையை",
+          "english": "You came in madness, twirling your moustache,"
+        },
+        {
+          "id": "kalaignar-song-en-008-s03-l003",
+          "tamil": "முறுக்கி விட்ட குரங்கே! பெரிய குரங்கே!",
+          "english": "You monkey! You great big monkey!"
+        },
+        {
+          "id": "kalaignar-song-en-008-s03-l004",
+          "tamil": "எட்டுத் திக்கும் நடுநடுங்க",
+          "english": "Making all eight directions tremble,"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-008-s04-l001",
+          "tamil": "முரசு கொட்டும் பீமசேனனிடம்",
+          "english": "Before Bhimasena, whose drum thunders,"
+        },
+        {
+          "id": "kalaignar-song-en-008-s04-l002",
+          "tamil": "வாலாட்டமா...?",
+          "english": "You wag your tail...?"
+        },
+        {
+          "id": "kalaignar-song-en-008-s04-l003",
+          "tamil": "வாலாட்டமா...?",
+          "english": "You wag your tail...?"
+        }
+      ]
+    }
+  ]
+}

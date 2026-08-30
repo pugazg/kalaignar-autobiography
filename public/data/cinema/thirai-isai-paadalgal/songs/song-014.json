@@ -1,0 +1,168 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-014",
+  "slug": "song-014",
+  "songNumber": 14,
+  "filmId": "kalaignar-song-film-004",
+  "filmSlug": "film-04",
+  "filmTitleTa": "அம்மையப்பன்",
+  "yearPrinted": 1954,
+  "titleTa": "காதல் துறையே புதுமைக் கனவே",
+  "titleEn": "O realm of love, O new dream",
+  "authorship": {
+    "decision": "unresolved",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": false,
+    "authorshipNoticeRequired": true,
+    "noticeGroupId": "ammayappan-unresolved"
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "முத்தாயி",
+      "labelEn": "முத்தாயி",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s01-l001",
+          "tamil": "காதல் துறையே புதுமைக் கனவே - மன",
+          "english": "O realm of love, O new dream — O blissful flame"
+        },
+        {
+          "id": "kalaignar-song-en-014-s01-l002",
+          "tamil": "மேவும் இன்ப ஜோதியே ஓடிவா",
+          "english": "That dwells in the heart, come running."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "(கா)",
+      "labelEn": "(Kaa — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s02-l001",
+          "tamil": "(கா)",
+          "english": "(Kaa — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "முத்தன்",
+      "labelEn": "முத்தன்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s03-l001",
+          "tamil": "வானில் உலாவும் மாமுகில் காணும்போதிலே",
+          "english": "When I see the great cloud roaming the sky,"
+        },
+        {
+          "id": "kalaignar-song-en-014-s03-l002",
+          "tamil": "சோலைக் கலாபம் ஆடுதே...",
+          "english": "The grove's plumage dances..."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "(கா)",
+      "labelEn": "(Kaa — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s04-l001",
+          "tamil": "(கா)",
+          "english": "(Kaa — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "முத்தன்",
+      "labelEn": "முத்தன்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s05-l001",
+          "tamil": "அன்பில் விளைந்த மாமணி...",
+          "english": "O great gem born of love..."
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "முத்தாயி",
+      "labelEn": "முத்தாயி",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s06-l001",
+          "tamil": "ஆனந்த வாழ்வின் செல்வம் நீ",
+          "english": "You are the treasure of a blissful life."
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": "முத்தன்",
+      "labelEn": "முத்தன்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s07-l001",
+          "tamil": "கண்ணில் நின்றாடும் பாவையே",
+          "english": "O maiden who stands dancing in my eyes."
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": "முத்தாயி",
+      "labelEn": "முத்தாயி",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s08-l001",
+          "tamil": "இன்பத்தின் எல்லை காணுவோம்...",
+          "english": "Let us behold the boundary of bliss..."
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "sourceLabelTa": "முத்தன்",
+      "labelEn": "முத்தன்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s09-l001",
+          "tamil": "இதய வீணையே....",
+          "english": "O veena of my heart...."
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "sourceLabelTa": "இருவரும்",
+      "labelEn": "இருவரும்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s10-l001",
+          "tamil": "ஈடில்லாத வாழ்விதே",
+          "english": "This is a life without equal."
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "sourceLabelTa": "இருவரும்",
+      "labelEn": "இருவரும்",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-014-s11-l001",
+          "tamil": "காதல் நிலவே புதுமைக் கனவே-மன",
+          "english": "O moon of love, O new dream — O blissful flame"
+        },
+        {
+          "id": "kalaignar-song-en-014-s11-l002",
+          "tamil": "மேவும் இன்ப ஜோதியே - ஓடிவா",
+          "english": "That dwells in the heart — come running."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-005",
+  "slug": "song-005",
+  "songNumber": 5,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "பேசும் யாழே பெண் மானே",
+  "titleEn": "O speaking yaazh, O doe",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "குமரன்",
+      "labelEn": "Kumaran",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s01-l001",
+          "tamil": "பேசும் யாழே பெண் மானே",
+          "english": "O speaking yaazh, O doe,"
+        },
+        {
+          "id": "kalaignar-song-en-005-s01-l002",
+          "tamil": "வீசும் தென்றல் நீ தானே",
+          "english": "You are the breeze that blows."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "மீனா",
+      "labelEn": "Meena",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s02-l001",
+          "tamil": "நீல வானே தன்னை மறந்து",
+          "english": "O blue sky, forgetting yourself,"
+        },
+        {
+          "id": "kalaignar-song-en-005-s02-l002",
+          "tamil": "நிலவினைப் புகழ்ந்திடலாமோ",
+          "english": "Can you go praising the moon?"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": "குமரன்",
+      "labelEn": "Kumaran",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s03-l001",
+          "tamil": "எழிலே! தமிழ்க் காவியமே",
+          "english": "O beauty! O Tamil epic,"
+        },
+        {
+          "id": "kalaignar-song-en-005-s03-l002",
+          "tamil": "எழுதாத ஓவியமே -",
+          "english": "O painting never painted —"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "மீனா",
+      "labelEn": "Meena",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s04-l001",
+          "tamil": "இன்ப மொழி பேசி பேசி",
+          "english": "Speaking and speaking words of delight,"
+        },
+        {
+          "id": "kalaignar-song-en-005-s04-l002",
+          "tamil": "அன்புப் பார்வை வீசி வீசி",
+          "english": "Casting and casting loving glances."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": "குமரன்",
+      "labelEn": "Kumaran",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s05-l001",
+          "tamil": "பேசும் யாழே பெண் மானே -",
+          "english": "O speaking yaazh, O doe —"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "மீனா",
+      "labelEn": "Meena",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s06-l001",
+          "tamil": "யாழே நானென்றால் நாதம் நீதானே",
+          "english": "If I am the yaazh, you are its resonance, are you not?"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "sourceLabelTa": "குமரன்",
+      "labelEn": "Kumaran",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s07-l001",
+          "tamil": "நாதத்தில் பேதம் உண்டு",
+          "english": "In resonance there can be difference;"
+        },
+        {
+          "id": "kalaignar-song-en-005-s07-l002",
+          "tamil": "நமக்கது வேண்டாமே",
+          "english": "Let there be none of that between us."
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "sourceLabelTa": "இருவரும்",
+      "labelEn": "Both",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-005-s08-l001",
+          "tamil": "காதல் வாழ்கவே கனி ரசமே",
+          "english": "Long live love, O fruit-nectar,"
+        },
+        {
+          "id": "kalaignar-song-en-005-s08-l002",
+          "tamil": "மாதர் மறவர் உல்லாசமே.",
+          "english": "Delight of women and warriors."
+        }
+      ]
+    }
+  ]
+}

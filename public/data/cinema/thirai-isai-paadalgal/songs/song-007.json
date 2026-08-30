@@ -1,0 +1,128 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-007",
+  "slug": "song-007",
+  "songNumber": 7,
+  "filmId": "kalaignar-song-film-003",
+  "filmSlug": "film-03",
+  "filmTitleTa": "நாம்",
+  "yearPrinted": 1953,
+  "titleTa": "பேசும் யாழே பெண் மானே",
+  "titleEn": "O speaking yaazh, O doe",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": "மீனா",
+      "labelEn": "Meena",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-007-s01-l001",
+          "tamil": "பேசும் யாழே பெண் மானே",
+          "english": "O speaking yaazh, O doe,"
+        },
+        {
+          "id": "kalaignar-song-en-007-s01-l002",
+          "tamil": "வீசும் தென்றல் நீதானே",
+          "english": "You are the breeze that blows,"
+        },
+        {
+          "id": "kalaignar-song-en-007-s01-l003",
+          "tamil": "கேளேனோ இனிமேல் இதுபோல் கீதம்...",
+          "english": "Will I ever again hear a song like this..."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "sourceLabelTa": "(பேசும்)",
+      "labelEn": "(Pesum — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-007-s02-l001",
+          "tamil": "(பேசும்)",
+          "english": "(Pesum — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-007-s03-l001",
+          "tamil": "தாளா தீச்சுழலில்",
+          "english": "In an unbearable whirl of fire,"
+        },
+        {
+          "id": "kalaignar-song-en-007-s03-l002",
+          "tamil": "தனியாய் வீழ்ந்தீரோ",
+          "english": "Did you fall alone?"
+        },
+        {
+          "id": "kalaignar-song-en-007-s03-l003",
+          "tamil": "மீளா சோகம் மீட்டிடும் யாழானேன்",
+          "english": "I became a yaazh that plucks an unreturning sorrow,"
+        },
+        {
+          "id": "kalaignar-song-en-007-s03-l004",
+          "tamil": "மாளா காதலினால் வாழ்ந்தோமே காதல்...",
+          "english": "By undying love we lived — love..."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "sourceLabelTa": "(பேசும்)",
+      "labelEn": "(Pesum — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-007-s04-l001",
+          "tamil": "(பேசும்)",
+          "english": "(Pesum — source refrain cue)"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-007-s05-l001",
+          "tamil": "பாடும் பேயாக பாரினில் அலைவீரோ",
+          "english": "Will you wander the earth as a singing ghost?"
+        },
+        {
+          "id": "kalaignar-song-en-007-s05-l002",
+          "tamil": "தீரா துன்பம் தீட்டிய ஏடானேன்",
+          "english": "I became a page on which endless sorrow was inscribed,"
+        },
+        {
+          "id": "kalaignar-song-en-007-s05-l003",
+          "tamil": "மாறா பாசம்தனை மறந்தீரோ நேசம்",
+          "english": "Did you forget the affection that never changes — love?"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "sourceLabelTa": "(பேசும்)",
+      "labelEn": "(Pesum — source refrain cue)",
+      "lines": [
+        {
+          "id": "kalaignar-song-en-007-s06-l001",
+          "tamil": "(பேசும்)",
+          "english": "(Pesum — source refrain cue)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "workId": "kalaignar-thirai-isai-paadalgal",
+  "songId": "kalaignar-song-026",
+  "slug": "song-026",
+  "songNumber": 26,
+  "filmId": "kalaignar-song-film-006",
+  "filmSlug": "film-06",
+  "filmTitleTa": "ரங்கோன் ராதா",
+  "yearPrinted": 1956,
+  "titleTa": "வான் மலர் சோலையில்",
+  "titleEn": "In the sky-flower grove",
+  "authorship": {
+    "decision": "established-kalaignar",
+    "publicDisplay": true,
+    "publicAuthorshipClaim": true,
+    "authorshipNoticeRequired": false,
+    "noticeGroupId": null
+  },
+  "sections": [
+    {
+      "ordinal": 1,
+      "sourceLabelTa": null,
+      "labelEn": null,
+      "lines": [
+        {
+          "id": "kalaignar-song-en-026-s01-l001",
+          "tamil": "வான் மலர் சோலையில்",
+          "english": "In the sky-flower grove,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l002",
+          "tamil": "தேன் மதி காணவே",
+          "english": "To behold the honeyed moon,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l003",
+          "tamil": "மாருதில் ஓடுதே",
+          "english": "It runs in the breeze,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l004",
+          "tamil": "காற்றில் ஆடும் முல்லைக் கொடியே",
+          "english": "O jasmine creeper dancing in the wind,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l005",
+          "tamil": "துணைதான் இணைந்த நம் வாழ்வில்",
+          "english": "In our life joined by companionship,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l006",
+          "tamil": "ஆனந்தம் காண்போமே இன்றே",
+          "english": "Let us behold bliss today,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l007",
+          "tamil": "ஆசைத்துரையே அழகான ராணி",
+          "english": "O lord of desire, beautiful queen,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l008",
+          "tamil": "அணைமீறும் அன்பால் அலைமோதுகின்றாள்",
+          "english": "She surges in waves with love that overflows the dam,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l009",
+          "tamil": "அருகே நீ வாராய்",
+          "english": "Come near,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l010",
+          "tamil": "தீயும் அணைந்து தென்றல் வீசுது",
+          "english": "The fire too is quenched; the breeze blows,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l011",
+          "tamil": "தெவிட்டாத அமுதாய் தேமாங்கனியாய்",
+          "english": "As nectar that never cloys, as sweet mango-fruit,"
+        },
+        {
+          "id": "kalaignar-song-en-026-s01-l012",
+          "tamil": "புதுவாழ்வு கண்டேன்.",
+          "english": "I have found a new life."
+        }
+      ]
+    }
+  ]
+}
