@@ -93,8 +93,13 @@ export default function ThiraiIsaiPaadalgalLanding({ index }: { index: FilmSongI
                 })}
               </ul>
 
-              {/* Shown only for the film the archive actually attaches a notice to. */}
-              {notice && <LangAwareAuthorshipNotice notice={notice} />}
+              {/* Shown only for the film the archive actually attaches a notice to. Resolution stays
+                  here on the server; only the two printed strings cross into the client renderer. */}
+              {notice && (
+                <LangAwareAuthorshipNotice
+                  notice={{ noticeTa: notice.noticeTa, noticeEn: notice.noticeEn }}
+                />
+              )}
             </section>
           );
         })}

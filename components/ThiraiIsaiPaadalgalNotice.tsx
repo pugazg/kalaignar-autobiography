@@ -1,7 +1,15 @@
 "use client";
 
-import type { FilmSongNotice } from "@/data/thirai-isai-paadalgal";
 import { useLang } from "@/lib/i18n";
+
+/**
+ * Exactly the two strings this renderer prints.
+ *
+ * The stored notice also carries its group id, film, status and the song ids and slugs it covers.
+ * All of that is what the SERVER uses to decide whether a notice applies; none of it is displayed,
+ * so none of it crosses into the page payload. Resolution stays on the server.
+ */
+export type AuthorshipNoticeView = { noticeTa: string; noticeEn: string };
 
 /**
  * The source-controlled authorship-uncertainty notice.
@@ -20,7 +28,7 @@ import { useLang } from "@/lib/i18n";
  * warning, an error, or a disclaimer badge. It is ordinary reading matter, available to assistive
  * technology as plain text, and it prints with the page.
  */
-export function AuthorshipNotice({ notice, en }: { notice: FilmSongNotice; en: boolean }) {
+export function AuthorshipNotice({ notice, en }: { notice: AuthorshipNoticeView; en: boolean }) {
   return (
     <aside
       className="mt-6 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:border-white/15 dark:text-night-text/70"
@@ -36,7 +44,7 @@ export function AuthorshipNotice({ notice, en }: { notice: FilmSongNotice; en: b
  * toggle. The reader page uses `AuthorshipNotice` directly, because there the notice must follow
  * the language of the lyric body the reader is actually looking at.
  */
-export default function LangAwareAuthorshipNotice({ notice }: { notice: FilmSongNotice }) {
+export default function LangAwareAuthorshipNotice({ notice }: { notice: AuthorshipNoticeView }) {
   const { lang } = useLang();
   return <AuthorshipNotice notice={notice} en={lang === "en"} />;
 }

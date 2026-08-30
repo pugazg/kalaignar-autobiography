@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import type { FilmSongNotice, FilmSongSummary } from "@/data/thirai-isai-paadalgal";
-import { AuthorshipNotice } from "@/components/ThiraiIsaiPaadalgalNotice";
+import { AuthorshipNotice, type AuthorshipNoticeView } from "@/components/ThiraiIsaiPaadalgalNotice";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -30,13 +29,22 @@ import { cn } from "@/lib/utils";
  * அம்மையப்பன் songs Kalaignar wrote. It never says a song is not his: that finding does not exist
  * in this work, and no wording here may imply it.
  *
- * ── THE READER IS GIVEN ONLY THE WORDS ───────────────────────────────────────
- * This is a client component, so everything handed to it is serialised into the page. It is
- * therefore given a minimal lyric view rather than the archival song record: the upstream
- * translation-record line ids are projected out on the server and never reach the page at all. They
- * are correct, stable and useful upstream — they are simply not reading matter, and a page that
- * shipped 1,105 of them would be publishing an internal index in its own payload. React keys come
- * from position within the section instead, which is what position is for.
+ * ── THE READER IS GIVEN ONLY WHAT IT DISPLAYS ────────────────────────────────
+ * This is a client component, so EVERY prop handed to it is serialised into the page. So each one
+ * is projected on the server down to what is actually rendered, and nothing else travels:
+ *
+ *   the lyric      the two texts and their labels — not the archival record, whose 1,105 upstream
+ *                  translation-record line ids would otherwise ship as an internal index inside
+ *                  public HTML. React keys come from position, which is what position is for.
+ *   a neighbour    slug and Tamil title — what the link needs. Not its song number, film ids,
+ *                  English title, section and line counts, or its authorship and display flags:
+ *                  a link to the next lyric has no business carrying that lyric's authorship state.
+ *   the notice     the two notice strings. The group id, film, status and covered song ids are how
+ *                  the SERVER decides a notice applies; deciding is not displaying.
+ *
+ * None of this is secret — most of it is already in the served registry, and this is payload
+ * minimisation, not a privacy boundary. It is the same rule that removed the line ids, applied
+ * consistently: a client component receives what it renders.
  *
  * ── LINEATION IS THE TEXT ────────────────────────────────────────────────────
  * These are song lyrics. Every stored line is rendered as its own line and never reflowed into a
@@ -61,14 +69,17 @@ export type LyricView = {
   sections: LyricSectionView[];
 };
 
+/** A neighbouring lyric, as a link needs it: where it goes and what it is called. */
+export type SongNavView = { slug: string; titleTa: string };
+
 export default function ThiraiIsaiPaadalgalReader({
   song, film, notice, prev, next,
 }: {
   song: LyricView;
   film: { slug: string; titleTa: string };
-  notice: FilmSongNotice | null;
-  prev: FilmSongSummary | null;
-  next: FilmSongSummary | null;
+  notice: AuthorshipNoticeView | null;
+  prev: SongNavView | null;
+  next: SongNavView | null;
 }) {
   const { lang } = useLang();
   const ta = lang === "ta";

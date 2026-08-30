@@ -80,10 +80,13 @@ export default function ThiraiIsaiPaadalgalSongPage({ params }: { params: { song
   // notice cannot be resolved the page is not served at all.
   if (song.authorship.authorshipNoticeRequired && !notice) notFound();
 
-  // Hand the client component only the words. The stored line ids are upstream translation-record
-  // identifiers — correct and useful for validation, but not reading matter — and anything passed to
-  // a client component is serialised into the page, so they are projected out here rather than
-  // shipped 1,105 times per corpus into public HTML.
+  // Everything below is projected before it crosses into the client component, because anything a
+  // client component receives is serialised into the page. The rule is the same for all three props:
+  // send what is rendered, nothing else.
+
+  // The lyric: the two texts and their labels. The stored line ids are upstream translation-record
+  // identifiers — correct and useful for validation, but not reading matter — so they are dropped
+  // here rather than shipped 1,105 times per corpus into public HTML.
   const view = {
     titleTa: song.titleTa,
     filmTitleTa: song.filmTitleTa,
@@ -94,13 +97,21 @@ export default function ThiraiIsaiPaadalgalSongPage({ params }: { params: { song
     })),
   };
 
+  // A neighbour: where the link goes and what it says. Not the neighbour's song number, film ids,
+  // English title, counts, or — least of all — its authorship and display flags.
+  const nav = (s: typeof prev) => (s ? { slug: s.slug, titleTa: s.titleTa } : null);
+
+  // The notice: the two strings that are printed. Its group id, film, status and covered song ids
+  // are how the resolution above was made, and resolving is not displaying.
+  const noticeView = notice ? { noticeTa: notice.noticeTa, noticeEn: notice.noticeEn } : null;
+
   return (
     <ThiraiIsaiPaadalgalReader
       song={view}
       film={{ slug: film.slug, titleTa: film.titleTa }}
-      notice={notice}
-      prev={prev}
-      next={next}
+      notice={noticeView}
+      prev={nav(prev)}
+      next={nav(next)}
     />
   );
 }
