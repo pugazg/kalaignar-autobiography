@@ -97,8 +97,11 @@ jobs:
       # ── The source dependency model ───────────────────────────────────────────────────────────
       # Every validator takes the path to a clone of its source repository as argv[2], and refuses
       # to run unless that clone is checked out at the commit recorded in the work's own
-      # provenance.json. Pins are therefore READ FROM THE RELEASED DATA here, never hardcoded in
-      # this workflow — if a pin moves, this step follows it automatically.
+      # provenance.json. Pins are therefore READ FROM EACH WORK'S RECORDED PROVENANCE PATH here,
+      # never hardcoded in this workflow — if a pin moves, this step follows it automatically.
+      # Most works record that file under public/data/; Film Songs records it under data/internal/,
+      # which is outside Next.js public/ and so is not served as a static asset. CI reads it
+      # directly from this repository checkout either way.
       #
       # Two of those pins are NOT branch tips (Manohara's `4b5f3238` most notably, because the
       # cinema repository has since moved on). A plain `git clone` would not contain them, so each
@@ -114,14 +117,24 @@ jobs:
           pins=$(node -e '
             const fs = require("fs");
             // Each work names the repository it comes from AND the directory it is
-            // checked out into. They are usually the same, but two cinema works pin
-            // the SAME archive at DIFFERENT commits — Manohara at a historical pin
-            // and Tirumbippaar at its publication pin — and one checkout cannot be
-            // at both. Those two therefore get their own directories, so each
-            // validator still sees a tree whose HEAD is exactly its own pin.
+            // checked out into. They are usually the same, but three cinema works pin
+            // the SAME archive at DIFFERENT commits — Manohara at a historical pin,
+            // Tirumbippaar at its publication pin and Film Songs at its own — and one
+            // checkout cannot be at all three. Those three therefore get their own
+            // directories, so each validator still sees a tree whose HEAD is exactly
+            // its own pin.
+            //
+            // `provenance` is optional and overrides the default public/data path. Film
+            // Songs keeps its provenance outside public/ so the archival apparatus is
+            // not a served static asset, so it names that path here.
             const works = {
               "cinema/manohara": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-manohara" },
               "cinema/tirumbippaar": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-tirumbippaar" },
+              "cinema/thirai-isai-paadalgal": {
+                repo: "kalaignar-cinema-works",
+                dir: "kalaignar-cinema-works-thirai-isai-paadalgal",
+                provenance: "data/internal/thirai-isai-paadalgal/provenance.json",
+              },
               "speeches/udhaya-kathir": { repo: "kalaignar-assembly-speeches" },
               "speeches/poonthottam": { repo: "kalaignar-public-speeches" },
               "speeches/arappor": { repo: "kalaignar-public-speeches" },
@@ -135,7 +148,7 @@ jobs:
             for (const [p, spec] of Object.entries(works)) {
               const repo = spec.repo;
               const dir = spec.dir ?? spec.repo;
-              const f = `public/data/${p}/provenance.json`;
+              const f = spec.provenance ?? `public/data/${p}/provenance.json`;
               const pin = JSON.parse(fs.readFileSync(f, "utf8")).sourceCommit;
               if (!/^[0-9a-f]{40}$/.test(pin ?? "")) {
                 console.error(`::error::${f} does not record a valid sourceCommit`);
@@ -179,6 +192,10 @@ jobs:
         if: always()
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-tirumbippaar.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-tirumbippaar"
+      - name: Kalaignar Film Songs
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-thirai-isai-paadalgal.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-thirai-isai-paadalgal"
       - name: Udhaya Kathir
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
