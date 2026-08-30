@@ -13,6 +13,12 @@
 // The assertion this work exists to protect: AUTHORSHIP CERTAINTY AND DISPLAY
 // ELIGIBILITY ARE INDEPENDENT. They are recomputed separately below from the
 // archive's own contract, and a record that conflates them fails.
+//
+// The second thing it protects is the public/internal boundary. Everything under
+// Next.js `public/` is a served static asset, so archival provenance kept there
+// is publicly fetchable however it is labelled. Provenance therefore lives under
+// data/internal/, and this validator fails if any of it reappears in the served
+// tree — by file, by key, or by value.
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -32,6 +38,8 @@ const SLUG = "thirai-isai-paadalgal";
 const WORK_ID = "kalaignar-thirai-isai-paadalgal";
 const WORK_DIR = path.join(SRC_REPO, "works", WORK_ID);
 const DATA = path.join(process.cwd(), "public/data/cinema", SLUG);
+const INTERNAL = path.join(process.cwd(), "data/internal", SLUG);
+const INTERNAL_PROVENANCE = path.join(INTERNAL, "provenance.json");
 const nfc = (s) => s.normalize("NFC");
 const readText = (p) => nfc(fs.readFileSync(p, "utf8"));
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
@@ -54,13 +62,12 @@ const cannot = (msg) => {
   process.exit(2);
 };
 
-if (!fs.existsSync(DATA)) cannot(`generated data missing at ${DATA}`);
-for (const f of ["index.json", "provenance.json"]) {
-  if (!fs.existsSync(path.join(DATA, f))) cannot(`generated ${f} is missing`);
-}
+if (!fs.existsSync(DATA)) cannot(`generated public data missing at ${DATA}`);
+if (!fs.existsSync(path.join(DATA, "index.json"))) cannot("generated index.json is missing");
+if (!fs.existsSync(INTERNAL_PROVENANCE)) cannot(`internal provenance missing at ${INTERNAL_PROVENANCE}`);
 let prov, index;
 try {
-  prov = readJSON(path.join(DATA, "provenance.json"));
+  prov = readJSON(INTERNAL_PROVENANCE);
   index = readJSON(path.join(DATA, "index.json"));
 } catch (e) {
   cannot(`released data is unparseable: ${e.message}`);
@@ -153,7 +160,17 @@ eq("the archive's own line-cue census agrees", payload.work.counts.line_cues, in
 eq("the archive's own cross-page census agrees", payload.work.counts.cross_page_songs, index.counts.crossPageSongs);
 eq("released films array length matches the census", index.films.length, index.counts.films);
 eq("released songs array length matches the census", index.songs.length, index.counts.songs);
-deepEq("cross-page song numbers match the archive", index.songs.filter((s) => s.crossPage).map((s) => s.songNumber), srcCross);
+// Per-song cross-page state is no longer served, so it is proved from the
+// internal provenance. The aggregate count stays public as part of the census.
+deepEq(
+  "cross-page song numbers match the archive",
+  (prov.songs || []).filter((s) => s.crossPage).map((s) => s.songNumber).sort((a, b) => a - b),
+  srcCross,
+);
+check("no served record carries per-song cross-page state", !JSON.stringify(index).includes("crossPage\":"));
+
+const srcBySong = new Map(srcSongs.map(({ f, s }) => [s.song_id, { f, s }]));
+const provBySong = new Map((prov.songs || []).map((s) => [s.songId, s]));
 
 // ── corpus identity ───────────────────────────────────────────────────────────
 const numbers = index.songs.map((s) => s.songNumber).sort((a, b) => a - b);
@@ -268,7 +285,6 @@ check(
 deepEq("the notice's song slugs resolve to released songs", n0.songSlugs, index.songs.filter((s) => s.authorshipNoticeRequired).map((s) => s.slug));
 
 // ── per-song text parity ──────────────────────────────────────────────────────
-const srcBySong = new Map(srcSongs.map(({ f, s }) => [s.song_id, { f, s }]));
 let tamilDrift = 0, englishDrift = 0, orderDrift = 0, pageDrift = 0, missing = 0, lineIdDrift = 0, sectionLabelDrift = 0;
 let releasedLines = 0;
 for (const summary of index.songs) {
@@ -279,12 +295,17 @@ for (const summary of index.songs) {
   if (!src) { missing++; continue; }
   const { f, s } = src;
 
-  if (rec.titleTa !== s.titles.tamil || rec.contentsTitleTa !== s.titles.contents_tamil) tamilDrift++;
+  if (rec.titleTa !== s.titles.tamil) tamilDrift++;
   if (rec.titleEn !== s.titles.english) englishDrift++;
   if (rec.filmTitleTa !== f.title_ta || rec.yearPrinted !== f.year_printed) tamilDrift++;
-  if (JSON.stringify(rec.sourcePages.pdfPages) !== JSON.stringify(s.provenance.pdf_pages)) pageDrift++;
-  if (rec.sourcePages.sectionPdfPages !== s.provenance.section_pdf_pages) pageDrift++;
-  if (rec.sourcePages.crossPage !== (s.provenance.pdf_pages.length > 1)) pageDrift++;
+  // Page linkage moved OUT of the served payload, so it is proved against the
+  // internal provenance instead. Moving it must not weaken the check.
+  const ip = provBySong.get(summary.songId);
+  if (!ip) { missing++; continue; }
+  if (JSON.stringify(ip.pdfPages) !== JSON.stringify(s.provenance.pdf_pages)) pageDrift++;
+  if (ip.sectionPdfPages !== s.provenance.section_pdf_pages) pageDrift++;
+  if (ip.crossPage !== (s.provenance.pdf_pages.length > 1)) pageDrift++;
+  if (ip.contentsTitleTa !== s.titles.contents_tamil) tamilDrift++;
 
   if (rec.sections.length !== s.sections.length) { orderDrift++; continue; }
   for (let i = 0; i < s.sections.length; i++) {
@@ -354,29 +375,108 @@ deepEq(
   sortedEntries(srcSongs.reduce((acc, { s }) => ((acc[s.item_status] = (acc[s.item_status] || 0) + 1), acc), {})),
 );
 
-// ── public-surface hygiene ────────────────────────────────────────────────────
-// The compilation's bibliographic apparatus must not reach runtime reader data.
-const runtimeBlob = JSON.stringify(index) + fs.readdirSync(path.join(DATA, "songs"))
-  .map((f) => readText(path.join(DATA, "songs", f))).join("");
+// ── public/internal boundary ──────────────────────────────────────────────────
+// The reviewed blocker: archival provenance under `public/` is a served asset and
+// is fetchable however it is labelled. These assertions are the boundary.
+const publicFiles = fs
+  .readdirSync(DATA, { recursive: true })
+  .map(String)
+  .filter((f) => f.endsWith(".json"));
+check("no provenance.json exists anywhere in the served tree", !publicFiles.some((f) => f.endsWith("provenance.json")));
+eq("the served tree holds exactly 55 JSON files", publicFiles.length, 55);
+eq("the served tree holds exactly 54 song files", publicFiles.filter((f) => f.includes("songs")).length, 54);
+check("internal provenance lives outside public/", !path.resolve(INTERNAL_PROVENANCE).includes(`${path.sep}public${path.sep}`));
+check("internal provenance is plain JSON, not an importable module", INTERNAL_PROVENANCE.endsWith(".json"));
+
+// Value-level audit. Lyric text is never searched for ordinary words: each needle
+// below is an identifier, hash, path or archival term that cannot occur in a lyric.
+const publicBlob = publicFiles.map((f) => readText(path.join(DATA, f))).join("\n");
 for (const [label, needle] of [
-  ["compiler", "நெல்லை ஜெயந்தா"],
-  ["publisher", "தமிழ்நாடு இயல் இசை நாடக மன்றம்"],
-  ["ISBN", "978-81-961205-2-8"],
-  ["music credit key", "creditsAsPrinted"],
-  ["voice credit", "பாடியவர்"],
-  ["archive file path", "works/kalaignar-thirai-isai-paadalgal/songs/"],
-  ["item verification state", "pilot-verified"],
+  ["the source repository", "pugazg/kalaignar-cinema-works"],
+  ["the controlling scan identifier", "TVA_BOK_0065867"],
+  ["the 1989 witness identifier", "TVA_BOK_0065773"],
+  ["the controlling scan hash", prov.integrity.sourceScanSha256],
+  ["the 1989 witness hash", prov.source.earlierWitness.sha256],
+  ["the evidence-register hash", prov.authorshipContract.evidenceRegisterSha256],
+  ["the source-input aggregate", prov.integrity.sourceInputAggregateSha256],
+  ["the source commit", prov.sourceCommit],
+  ["the archival attribution status", "anthology-attributed"],
+  ["an item verification state", "pilot-verified"],
+  ["archive source paths", "works/kalaignar-thirai-isai-paadalgal/"],
+  ["the compiler", "நெல்லை ஜெயந்தா"],
+  ["the publisher", "தமிழ்நாடு இயல் இசை நாடக மன்றம்"],
+  ["the ISBN", "978-81-961205-2-8"],
 ]) {
-  check(`runtime reader data exposes no ${label}`, !runtimeBlob.includes(needle));
+  check(`served data exposes no ${label}`, !publicBlob.includes(needle));
 }
-check("provenance keeps the credits for validation", Array.isArray(prov.songs) && prov.songs.length === 54);
-check("provenance credits are complete", prov.songs.every((s) => s.creditsAsPrinted && typeof s.creditsAsPrinted.music === "string"));
-eq("provenance records the reader structure as film-song", prov.publicSurfacePolicy.readerStructure, "film-song");
+// Key-level audit, so a renamed value cannot smuggle the same fact through.
+for (const key of [
+  "pdfPages",
+  "sectionPdfPages",
+  "creditsAsPrinted",
+  "tamilSourcePath",
+  "englishSourcePath",
+  "sourceCommit",
+  "sourceScanSha256",
+  "evidenceRegisterSha256",
+  "sourceInputAggregateSha256",
+  "itemStatus",
+  "attributionStatus",
+  "sourcePages",
+  "contentsTitleTa",
+]) {
+  check(`served data carries no ${key} key`, !publicBlob.includes(`"${key}"`));
+}
+// Music and voice credits, checked by their actual printed values rather than by
+// key name, since a leak could arrive under any label.
+const creditValues = new Set();
+for (const s of prov.songs) {
+  if (s.creditsAsPrinted?.music) creditValues.add(s.creditsAsPrinted.music);
+  if (s.creditsAsPrinted?.voice) creditValues.add(s.creditsAsPrinted.voice);
+}
+check("served data exposes no music or voice credit", ![...creditValues].some((v) => publicBlob.includes(v)));
+eq("credit values were actually checked", creditValues.size > 0, true);
+
+// ── internal provenance completeness ─────────────────────────────────────────
+// Proves the archival material was MOVED, not lost.
+check("internal provenance keeps the source repo and path", prov.sourceRepo === "pugazg/kalaignar-cinema-works" && typeof prov.sourcePath === "string");
+check("internal provenance keeps the source commit", prov.sourceCommit === PIN);
+check("internal provenance keeps the controlling scan hash", prov.integrity.sourceScanSha256 === payload.work.source_sha256);
+check("internal provenance keeps the 1989 witness hash", prov.source.earlierWitness.sha256 === contract.witness_sha256.TVA_BOK_0065773);
+check("internal provenance keeps the evidence-register hash", prov.authorshipContract.evidenceRegisterSha256 === contract.evidence_register_sha256);
+check("internal provenance keeps the source-input aggregate and paths", typeof prov.integrity.sourceInputAggregateSha256 === "string" && Array.isArray(prov.integrity.sourceInputPaths));
+eq("internal provenance holds all 54 song records", (prov.songs || []).length, 54);
+// Nine songs print no singer, so `voice` is null upstream. Absent metadata is
+// preserved as absent, never fabricated — so this compares to the source rather
+// than demanding a string.
+eq(
+  "internal provenance keeps every music and voice credit exactly as printed",
+  prov.songs.filter((s) => {
+    const src = srcBySong.get(s.songId)?.s.credits_as_printed;
+    return !src || s.creditsAsPrinted?.music !== src.music || s.creditsAsPrinted?.voice !== src.voice;
+  }).length,
+  0,
+);
+check(
+  "the printed-credit absences upstream are preserved as null, not invented",
+  prov.songs.filter((s) => s.creditsAsPrinted.voice === null).length ===
+    srcSongs.filter(({ s }) => s.credits_as_printed.voice === null).length,
+);
+check("internal provenance keeps every archive source path", prov.songs.every((s) => typeof s.tamilSourcePath === "string" && typeof s.englishSourcePath === "string"));
+check("internal provenance keeps every page mapping", prov.songs.every((s) => Array.isArray(s.pdfPages) && typeof s.sectionPdfPages === "string" && typeof s.crossPage === "boolean"));
+check("internal provenance keeps every item verification state", prov.songs.every((s) => typeof s.itemStatus === "string"));
+check("internal provenance keeps every archival attribution status", prov.songs.every((s) => s.attributionStatus === "anthology-attributed"));
+eq("internal cross-page count matches the archive", prov.songs.filter((s) => s.crossPage).length, srcCross.length);
+eq("internal provenance records the reader structure as film-song", prov.publicSurfacePolicy.readerStructure, "film-song");
+check("internal provenance records what was withheld from the served tree", Array.isArray(prov.publicSurfacePolicy.withheldFromPublicRuntime) && prov.publicSurfacePolicy.withheldFromPublicRuntime.length > 0);
+check("internal provenance keeps the archive's own navigation wording", typeof prov.publicSurfacePolicy.navigationAsPublished?.filmOrder === "string");
 eq("released index declares the film-song reader structure", index.readerStructure, "film-song");
 
 // ── publication posture ───────────────────────────────────────────────────────
 // E1 deliberately ships data without exposing the work. These assertions fail if
 // a later change quietly publishes it without the reviewed route stages.
+eq("released navigation uses machine order values, not the archive's prose", index.navigation.filmOrder, "source-order");
+eq("released song order is a machine value", index.navigation.songOrder, "song-number");
 eq("no current-day rights block is asserted", prov.rights, undefined);
 check("no WorkAttribution is created", !("workAttribution" in prov) && !JSON.stringify(index).includes("WorkAttribution"));
 check("no route or catalogue field is present in the released data",
@@ -384,6 +484,7 @@ check("no route or catalogue field is present in the released data",
 
 console.log(`\n${SLUG} — ${pass} assertions passed, ${failures.length} failed`);
 console.log(`  validated against pinned source ${PIN}`);
+console.log(`  served ${publicFiles.length} JSON files · archival provenance internal at ${path.relative(process.cwd(), INTERNAL_PROVENANCE)}`);
 console.log(`  ${index.counts.films} films · ${index.counts.songs} songs · ${index.counts.lineCues} line-cues · ${index.counts.crossPageSongs} cross-page`);
 console.log(`  authorship ${index.authorship.established} established / ${index.authorship.unresolved} unresolved`);
 console.log(`  display ${index.authorship.displayable} displayable / ${index.authorship.authorshipNoticeRequired} notice-required`);

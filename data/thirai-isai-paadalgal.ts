@@ -38,9 +38,11 @@
 //   * Never merge `titleTa` with `contentsTitleTa`. The anthology's contents table and its lyric
 //     pages sometimes print different forms of the same song's title; both are preserved.
 //   * Never surface the compilation's apparatus. Compiler, publisher, ISBN, edition, printed-page
-//     counts, music and voice credits and archive file paths are NOT in this model. They exist in
-//     provenance.json for validation only, and provenance.json is build-time data that no reader
-//     component should import.
+//     counts, music and voice credits, scan page numbers and archive file paths are NOT in this
+//     model and are not served. They live in data/internal/thirai-isai-paadalgal/provenance.json,
+//     OUTSIDE Next.js `public/`, because everything under `public/` is a fetchable static asset and
+//     a comment saying "build-time only" is not a boundary. Nothing archival was lost in moving it:
+//     the validator still proves page linkage, credits and verification census from there.
 //   * Never treat `anthology-attributed` as an authorship finding. It is the archive's record of how
 //     the 2024 compilation presents an item, it stays unchanged for all 54, and it is deliberately
 //     absent from this runtime model.
@@ -80,16 +82,6 @@ export interface FilmSongSection {
   lines: FilmSongLine[];
 }
 
-/** Where a lyric sits in the controlling scan. */
-export interface FilmSongSourcePages {
-  /** Numbered lyric pages. More than one means the lyric runs across a page break. */
-  pdfPages: number[];
-  /** The film section's full page range, as recorded upstream. */
-  sectionPdfPages: string;
-  /** True for the eight songs whose printed lyric spans two pages. */
-  crossPage: boolean;
-}
-
 /** One complete lyric — the unit a reader page would render. */
 export interface FilmSongRecord {
   workId: string;
@@ -103,11 +95,11 @@ export interface FilmSongRecord {
   yearPrinted: number;
   titleTa: string;
   titleEn: string;
-  /** The contents-table form, where it differs from the lyric-page form. */
-  contentsTitleTa: string;
   authorship: FilmSongAuthorship;
-  sourcePages: FilmSongSourcePages;
   sections: FilmSongSection[];
+  // No source-page mapping and no contents-table title variant. Both describe the printed
+  // compilation rather than the film or its lyric, and this reader shows films and lyrics, not
+  // pages. Both remain in the internal provenance and are still validated against the pinned source.
 }
 
 /** A film grouping. The anthology orders films by first appearance, not by year. */
@@ -139,7 +131,6 @@ export interface FilmSongSummary {
   noticeGroupId: string | null;
   sectionCount: number;
   lineCount: number;
-  crossPage: boolean;
 }
 
 /**
@@ -172,8 +163,9 @@ export interface FilmSongIndex {
   navigation: {
     primary: "film";
     secondary: "song";
-    filmOrder: string;
-    songOrder: string;
+    /** Machine values. The archive's own prose naming the printed compilation stays internal. */
+    filmOrder: "source-order";
+    songOrder: "song-number";
   };
   languageDefault: string;
   languagesAvailable: string[];
@@ -181,6 +173,10 @@ export interface FilmSongIndex {
     films: number;
     songs: number;
     lineCues: number;
+    /**
+     * How many lyrics the printed source runs across a page break. An aggregate, kept because it is
+     * part of the reviewed census; it exposes no page numbers, and no per-song page state is public.
+     */
     crossPageSongs: number;
   };
   authorship: {

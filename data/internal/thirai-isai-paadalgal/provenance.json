@@ -87,9 +87,25 @@
       "public/data/cinema/thirai-isai-paadalgal/index.json",
       "public/data/cinema/thirai-isai-paadalgal/songs/song-NNN.json"
     ],
-    "buildTimeOnly": [
-      "public/data/cinema/thirai-isai-paadalgal/provenance.json"
-    ]
+    "internalOnly": [
+      "data/internal/thirai-isai-paadalgal/provenance.json"
+    ],
+    "internalLocationNote": "Everything under Next.js public/ is a served static asset, so archival provenance placed there would be publicly fetchable however it was labelled. This file therefore lives outside public/, as plain JSON that only build-time scripts read.",
+    "withheldFromPublicRuntime": [
+      "source repository, path and commit",
+      "controlling-scan and witness identifiers and hashes",
+      "evidence-register hash and source-input aggregate",
+      "archive source file paths",
+      "archival attribution status (anthology-attributed)",
+      "item verification states (verified / pilot-verified)",
+      "music and voice credits as printed",
+      "scan page numbers, section page ranges and per-song cross-page state",
+      "the contents-table title variant"
+    ],
+    "navigationAsPublished": {
+      "filmOrder": "first appearance in anthology",
+      "songOrder": "anthology song number 001-054"
+    }
   },
   "integrity": {
     "sourceScanSha256": "f0beac14c33ffc73c0231bd54ca57ec4093eef6e85072bd68ce48f7b5e258b05",
@@ -115,6 +131,12 @@
         "music": "ஜி.ராமநாதன்",
         "voice": "பி.எஸ்.சுப்பையா"
       },
+      "contentsTitleTa": "ஊருக்கு உழைப்பவண்டி",
+      "pdfPages": [
+        26
+      ],
+      "sectionPdfPages": "24-26",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-001.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-001.json"
     },
@@ -128,6 +150,12 @@
         "music": "ஆர்.சுதர்சனம்",
         "voice": "டி.எஸ்.பகவதி, உசேன்"
       },
+      "contentsTitleTa": "இல்வாழ்வினிலே ஒளி ஏற்றும்",
+      "pdfPages": [
+        29
+      ],
+      "sectionPdfPages": "27-30",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-002.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-002.json"
     },
@@ -141,6 +169,12 @@
         "music": "ஆர்.சுதர்சனம்",
         "voice": "பகவதி - ஹுசேன்"
       },
+      "contentsTitleTa": "பூமாலை நீயே புழுதிமண் மேலே",
+      "pdfPages": [
+        30
+      ],
+      "sectionPdfPages": "27-30",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-003.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-003.json"
     },
@@ -154,6 +188,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "செல்லமுத்து, ஏ.பி.கோமளா"
       },
+      "contentsTitleTa": "மாரி மகமாயி மாரி",
+      "pdfPages": [
+        33
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-004.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-004.json"
     },
@@ -167,6 +207,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "ஏ.எம்.ராஜா, ஜிக்கி"
       },
+      "contentsTitleTa": "பேசும் யாழே பெண் மானே",
+      "pdfPages": [
+        34
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-005.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-005.json"
     },
@@ -180,6 +226,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": null
       },
+      "contentsTitleTa": "மணமில்லா மலர் நானம்மா!",
+      "pdfPages": [
+        35
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-006.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-006.json"
     },
@@ -193,6 +245,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "ஜிக்கி (சோகம்)"
       },
+      "contentsTitleTa": "பேசும் யாழே பெண் மானே",
+      "pdfPages": [
+        36
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-007.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-007.json"
     },
@@ -206,6 +264,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "செல்லமுத்து குழு"
       },
+      "contentsTitleTa": "வருவாய் வருவாய் வைபோக",
+      "pdfPages": [
+        37
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-008.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-008.json"
     },
@@ -219,6 +283,13 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
       },
+      "contentsTitleTa": "புதியதோர் பாதை வகுப்போம்",
+      "pdfPages": [
+        38,
+        39
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-009.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-009.json"
     },
@@ -232,6 +303,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
       },
+      "contentsTitleTa": "வாழ்க வாழ்க வாழ்கவே",
+      "pdfPages": [
+        40
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-010.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-010.json"
     },
@@ -245,6 +322,12 @@
         "music": "சிதம்பரம் எஸ்.ஜெயராமன்",
         "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
       },
+      "contentsTitleTa": "எதையும் தாங்கும் இதயம் வேண்டும்",
+      "pdfPages": [
+        41
+      ],
+      "sectionPdfPages": "31-41",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-011.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-011.json"
     },
@@ -258,6 +341,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "அம்மையப்பா",
+      "pdfPages": [
+        44
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-012.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-012.json"
     },
@@ -271,6 +360,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "நீலக்கடல்",
+      "pdfPages": [
+        45
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-013.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-013.json"
     },
@@ -284,6 +379,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "காதல் துறையே",
+      "pdfPages": [
+        46
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-014.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-014.json"
     },
@@ -297,6 +398,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "காதல் துறையே (சோகம்)",
+      "pdfPages": [
+        47
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-015.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-015.json"
     },
@@ -310,6 +417,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "சின்னப் புதுமலரே",
+      "pdfPages": [
+        48
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-016.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-016.json"
     },
@@ -323,6 +436,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "சிதைந்ததே என் காதல்",
+      "pdfPages": [
+        49
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-017.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-017.json"
     },
@@ -336,6 +455,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "காதல் புறா",
+      "pdfPages": [
+        50
+      ],
+      "sectionPdfPages": "42-50",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-018.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-018.json"
     },
@@ -349,6 +474,13 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "எம்.எல்.வசந்தகுமாரி"
       },
+      "contentsTitleTa": "வாங்க வாங்க எல்லோரும்",
+      "pdfPages": [
+        53,
+        54
+      ],
+      "sectionPdfPages": "51-59",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-019.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-019.json"
     },
@@ -362,6 +494,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "எம்.எல்.வசந்தகுமாரி"
       },
+      "contentsTitleTa": "வேலையில்லாத தொல்லை",
+      "pdfPages": [
+        55
+      ],
+      "sectionPdfPages": "51-59",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-020.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-020.json"
     },
@@ -375,6 +513,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "எம்.எல்.வசந்தகுமாரி"
       },
+      "contentsTitleTa": "ஆதிகுடி உலகம்",
+      "pdfPages": [
+        56
+      ],
+      "sectionPdfPages": "51-59",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-021.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-021.json"
     },
@@ -388,6 +532,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "எம்.எல்.வசந்தகுமாரி"
       },
+      "contentsTitleTa": "மணிப்புறா புது மணிப்புறா",
+      "pdfPages": [
+        57
+      ],
+      "sectionPdfPages": "51-59",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-022.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-022.json"
     },
@@ -401,6 +551,13 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "எஸ்.சி.கிருஷ்ணன்"
       },
+      "contentsTitleTa": "கண்ணற்ற தகப்பனுக்கு",
+      "pdfPages": [
+        58,
+        59
+      ],
+      "sectionPdfPages": "51-59",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-023.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-023.json"
     },
@@ -414,6 +571,13 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "சி.எஸ்.ஜெயராமன்"
       },
+      "contentsTitleTa": "பொது நலம் என்றும்",
+      "pdfPages": [
+        62,
+        63
+      ],
+      "sectionPdfPages": "60-67",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-024.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-024.json"
     },
@@ -427,6 +591,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "டி.வி. ரத்னம்"
       },
+      "contentsTitleTa": "ஆயர்பாடி கண்ணா",
+      "pdfPages": [
+        64
+      ],
+      "sectionPdfPages": "60-67",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-025.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-025.json"
     },
@@ -440,6 +610,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "பி.பானுமதி"
       },
+      "contentsTitleTa": "வான்மலர்ச் சோலையில்",
+      "pdfPages": [
+        65
+      ],
+      "sectionPdfPages": "60-67",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-026.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-026.json"
     },
@@ -453,6 +629,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": null
       },
+      "contentsTitleTa": "ஓடையிலே ஒரு நாள்",
+      "pdfPages": [
+        66
+      ],
+      "sectionPdfPages": "60-67",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-027.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-027.json"
     },
@@ -466,6 +648,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "பி.பானுமதி"
       },
+      "contentsTitleTa": "தமிழே தேனே கண்ணே",
+      "pdfPages": [
+        67
+      ],
+      "sectionPdfPages": "60-67",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-028.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-028.json"
     },
@@ -479,6 +667,12 @@
         "music": "டி.ஆர்.பாப்பா",
         "voice": "ஜமுனா ராணி அண்ட் குழுவினர்"
       },
+      "contentsTitleTa": "அலையிருக்கும் கடலிலே",
+      "pdfPages": [
+        70
+      ],
+      "sectionPdfPages": "68-70",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-029.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-029.json"
     },
@@ -492,6 +686,12 @@
         "music": "கே.வி.மகாதேவன்",
         "voice": "ஏ.எல்.இராகவன், எஸ்.ஆர்.ஈஸ்வரி குழு"
       },
+      "contentsTitleTa": "நீர்மேல் நடக்கலாம்",
+      "pdfPages": [
+        73
+      ],
+      "sectionPdfPages": "71-74",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-030.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-030.json"
     },
@@ -505,6 +705,12 @@
         "music": "கே.வி.மகாதேவன்",
         "voice": "சிதம்பரம் எஸ்.ஜெயராமன்"
       },
+      "contentsTitleTa": "வெல்க நாடு",
+      "pdfPages": [
+        74
+      ],
+      "sectionPdfPages": "71-74",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-031.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-031.json"
     },
@@ -518,6 +724,12 @@
         "music": "ஆர்.சுதர்சனம்",
         "voice": "கே.பி. சுந்தராம்பாள்"
       },
+      "contentsTitleTa": "ஒருவனுக்கு ஒருத்தி",
+      "pdfPages": [
+        77
+      ],
+      "sectionPdfPages": "75-77",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-032.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-032.json"
     },
@@ -531,6 +743,12 @@
         "music": "ஆர்.சுதர்சனம்",
         "voice": "எஸ்.ஆர்.ஈஸ்வரி"
       },
+      "contentsTitleTa": "கன்னம் கன்னம்",
+      "pdfPages": [
+        80
+      ],
+      "sectionPdfPages": "78-80",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-033.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-033.json"
     },
@@ -544,6 +762,12 @@
         "music": "டி.கே.இராமமூர்த்தி",
         "voice": "பி.சுசீலா"
       },
+      "contentsTitleTa": "காகித ஓடம் கடல் அலை மீது",
+      "pdfPages": [
+        83
+      ],
+      "sectionPdfPages": "81-84",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-034.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-034.json"
     },
@@ -557,6 +781,12 @@
         "music": "டி.கே.இராமமூர்த்தி",
         "voice": "டி.எம்.செளந்தரராஜன், பி.சுசீலா"
       },
+      "contentsTitleTa": "ஒண்ணு கொடுத்தா ஒன்பது",
+      "pdfPages": [
+        84
+      ],
+      "sectionPdfPages": "81-84",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-035.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-035.json"
     },
@@ -570,6 +800,13 @@
         "music": "சங்கர் கணேஷ்",
         "voice": "டி.எம்.செளந்தரராஜன்"
       },
+      "contentsTitleTa": "நெஞ்சுக்கு நீதி",
+      "pdfPages": [
+        86,
+        87
+      ],
+      "sectionPdfPages": "85-87",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-036.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-036.json"
     },
@@ -583,6 +820,13 @@
         "music": "எம்.எஸ்.விஸ்வநாதன்",
         "voice": "மலேசியா வாசுதேவன்"
       },
+      "contentsTitleTa": "(வாடிய பயிரை) குடி உயர",
+      "pdfPages": [
+        90,
+        91
+      ],
+      "sectionPdfPages": "88-94",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-037.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-037.json"
     },
@@ -596,6 +840,12 @@
         "music": "எம்.எஸ்.விஸ்வநாதன்",
         "voice": "வாணி ஜெயராம்"
       },
+      "contentsTitleTa": "ஆயிரம் பிறைகள்",
+      "pdfPages": [
+        92
+      ],
+      "sectionPdfPages": "88-94",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-038.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-038.json"
     },
@@ -609,6 +859,12 @@
         "music": "எம்.எஸ்.விஸ்வநாதன்",
         "voice": "ஜெயச்சந்திரன், வாணி ஜெயராம்"
       },
+      "contentsTitleTa": "குறிஞ்சி மலரொன்று",
+      "pdfPages": [
+        93
+      ],
+      "sectionPdfPages": "88-94",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-039.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-039.json"
     },
@@ -622,6 +878,12 @@
         "music": "எம்.எஸ்.விஸ்வநாதன்",
         "voice": "வாணி ஜெயராம்"
       },
+      "contentsTitleTa": "ஏய் கனவிலே மயங்காதே",
+      "pdfPages": [
+        94
+      ],
+      "sectionPdfPages": "88-94",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-040.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-040.json"
     },
@@ -635,6 +897,12 @@
         "music": "தேவேந்திரன்",
         "voice": "தேவேந்திரன்"
       },
+      "contentsTitleTa": "ஒரு போராளியின் பயணமிது",
+      "pdfPages": [
+        97
+      ],
+      "sectionPdfPages": "95-97",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-041.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-041.json"
     },
@@ -648,6 +916,12 @@
         "music": "எஸ்.ஏ.ராஜ்குமார்",
         "voice": "எஸ்.ஏ.ராஜ்குமார்"
       },
+      "contentsTitleTa": "சுருள்மீசைக் காரனடி வேலுத்தம்பி",
+      "pdfPages": [
+        100
+      ],
+      "sectionPdfPages": "98-100",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-042.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-042.json"
     },
@@ -661,6 +935,12 @@
         "music": "சங்கர் கணேஷ்",
         "voice": "மலேசியா வாசுதேவன் குழு"
       },
+      "contentsTitleTa": "ஆற அமர கொஞ்சம் யோசிக்க",
+      "pdfPages": [
+        103
+      ],
+      "sectionPdfPages": "101-103",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-043.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-043.json"
     },
@@ -674,6 +954,12 @@
         "music": "இளையராஜா",
         "voice": "இளையராஜா"
       },
+      "contentsTitleTa": "காவலுக்கு கெட்டிக்காரன்",
+      "pdfPages": [
+        106
+      ],
+      "sectionPdfPages": "104-106",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-044.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-044.json"
     },
@@ -687,6 +973,12 @@
         "music": "தேவா",
         "voice": "சித்ரா"
       },
+      "contentsTitleTa": "தங்க குணம் படைத்த",
+      "pdfPages": [
+        109
+      ],
+      "sectionPdfPages": "107-110",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-045.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-045.json"
     },
@@ -700,6 +992,12 @@
         "music": "தேவா",
         "voice": "மலேசியா வாசுதேவன்"
       },
+      "contentsTitleTa": "நீதிமன்ற துலாக் கோலே",
+      "pdfPages": [
+        110
+      ],
+      "sectionPdfPages": "107-110",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-046.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-046.json"
     },
@@ -713,6 +1011,12 @@
         "music": "பரத்வாஜ்",
         "voice": "ஜெயலட்சுமி, சித்ரா, மாலதி சத்யா"
       },
+      "contentsTitleTa": "கண்ணின் மணிபோல",
+      "pdfPages": [
+        113
+      ],
+      "sectionPdfPages": "111-113",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-047.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-047.json"
     },
@@ -726,6 +1030,12 @@
         "music": "எஸ்.ஏ.ராஜ்குமார்",
         "voice": "மாணிக்க விநாயகம்"
       },
+      "contentsTitleTa": "இளைஞனே இளைஞனே",
+      "pdfPages": [
+        116
+      ],
+      "sectionPdfPages": "114-117",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-048.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-048.json"
     },
@@ -739,6 +1049,12 @@
         "music": "எஸ்.ஏ.ராஜ்குமார்",
         "voice": "வாணி ஜெயராம்"
       },
+      "contentsTitleTa": "என் இருவிழி",
+      "pdfPages": [
+        117
+      ],
+      "sectionPdfPages": "114-117",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-049.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-049.json"
     },
@@ -752,6 +1068,12 @@
         "music": "வித்யாசாகர்",
         "voice": "மதுபாலகிருஷ்ணா"
       },
+      "contentsTitleTa": "தென்றல் என்னும் தேர் ஏறி",
+      "pdfPages": [
+        120
+      ],
+      "sectionPdfPages": "118-124",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-050.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-050.json"
     },
@@ -765,6 +1087,13 @@
         "music": "வித்யாசாகர்",
         "voice": "மாணிக்க விநாயகம், ஸ்ரீலேகா பார்த்தசாரதி"
       },
+      "contentsTitleTa": "கருத்தமச்சான் ஒனக்குத்தான்",
+      "pdfPages": [
+        121,
+        122
+      ],
+      "sectionPdfPages": "118-124",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-051.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-051.json"
     },
@@ -778,6 +1107,13 @@
         "music": "வித்யாசாகர்",
         "voice": "திப்பு, கார்த்திக், சுஜாதா, மணோரமா"
       },
+      "contentsTitleTa": "தங்கை என்ற பாசக்கிளி",
+      "pdfPages": [
+        123,
+        124
+      ],
+      "sectionPdfPages": "118-124",
+      "crossPage": true,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-052.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-052.json"
     },
@@ -791,6 +1127,12 @@
         "music": "இளையராஜா",
         "voice": "இளையராஜா"
       },
+      "contentsTitleTa": "அலையெல்லாம் நடனமாடும்",
+      "pdfPages": [
+        127
+      ],
+      "sectionPdfPages": "125-127",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-053.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-053.json"
     },
@@ -804,6 +1146,12 @@
         "music": "தேவா",
         "voice": "எஸ்.பி.பாலசுப்பிரமணியம், சித்ரா"
       },
+      "contentsTitleTa": "வீணையில் எழுவது வேணுகானமா",
+      "pdfPages": [
+        130
+      ],
+      "sectionPdfPages": "128-130",
+      "crossPage": false,
       "tamilSourcePath": "works/kalaignar-thirai-isai-paadalgal/songs/song-054.md",
       "englishSourcePath": "works/kalaignar-thirai-isai-paadalgal/translations/records/song-054.json"
     }

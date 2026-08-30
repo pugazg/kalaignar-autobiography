@@ -22,10 +22,18 @@
 //     Collapsing these two ideas back into one boolean would either suppress six
 //     source lyrics or assert six authorship claims the archive refuses to make.
 //   * THE PUBLIC SURFACE IS FILM → LYRICS, NOT A BIBLIOGRAPHIC EDITION. Music and
-//     voice credits, item verification states and source file paths are recorded
-//     in provenance.json for validation only. They are deliberately absent from
-//     the runtime song files so no later reader can render the 2024 compilation's
-//     apparatus as if it were the work.
+//     voice credits, item verification states, source file paths and the scan's
+//     own page numbering are archival apparatus, not reader content.
+//
+// ── WHY PROVENANCE IS NOT WRITTEN UNDER public/ ───────────────────────────────
+// Everything under Next.js `public/` is a served static asset, so a file placed
+// there is publicly fetchable whether or not any component imports it. Labelling
+// such a file "build-time only" is a comment, not a boundary. The archival
+// provenance for this work therefore lives OUTSIDE `public/`, under
+// data/internal/, as plain JSON that only scripts read — a location no client
+// bundle can reach by import. Nothing archival is lost: it is moved, and the
+// validator still proves page linkage, credits and verification census against
+// the pinned source from there.
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -90,8 +98,15 @@ const FORBIDDEN_EDITORIAL_ONLY = "ஆளப்பிறந்தவன்";
 
 const SITE_SLUG = "thirai-isai-paadalgal";
 const W = path.join(SRC_REPO, "works", EXPECT_WORK_ID);
+// Public: served static assets, the film → lyrics data a reader needs.
 const OUT = path.join(process.cwd(), "public/data/cinema", SITE_SLUG);
 const SONG_OUT = path.join(OUT, "songs");
+// Internal: never served, never importable by a client component.
+const INTERNAL_OUT = path.join(process.cwd(), "data/internal", SITE_SLUG);
+const INTERNAL_PROVENANCE = path.join(INTERNAL_OUT, "provenance.json");
+// A stale provenance file left behind under public/ would still be fetchable, so
+// the importer removes it rather than trusting that it was deleted by hand.
+const LEGACY_PUBLIC_PROVENANCE = path.join(OUT, "provenance.json");
 
 const nfc = (s) => s.normalize("NFC");
 const sha256 = (b) => crypto.createHash("sha256").update(b).digest("hex");
@@ -304,6 +319,8 @@ if (lineTotal !== EXPECT_LINE_CUES) die(`line cues total ${lineTotal} != ${EXPEC
 // ── 6. EMIT ───────────────────────────────────────────────────────────────────
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(SONG_OUT, { recursive: true });
+fs.rmSync(INTERNAL_OUT, { recursive: true, force: true });
+fs.mkdirSync(INTERNAL_OUT, { recursive: true });
 const writeJSON = (p, v) => fs.writeFileSync(p, JSON.stringify(v, null, 2) + "\n", "utf8");
 
 const filmSlug = (ordinal) => `film-${pad2(ordinal)}`;
@@ -356,7 +373,6 @@ for (const f of orderedFilms) {
       noticeGroupId: a.noticeGroupId,
       sectionCount: s.sections.length,
       lineCount: s.sections.reduce((t, sec) => t + sec.lines.length, 0),
-      crossPage,
     });
 
     writeJSON(path.join(SONG_OUT, `${songSlug(n)}.json`), {
@@ -370,13 +386,10 @@ for (const f of orderedFilms) {
       yearPrinted: f.year_printed,
       titleTa: s.titles.tamil,
       titleEn: s.titles.english,
-      contentsTitleTa: s.titles.contents_tamil,
+      // No source-page mapping and no contents-table title variant: both are
+      // facts about the printed compilation, and this reader shows films and
+      // lyrics, not pages. Both are preserved in the internal provenance.
       authorship: a,
-      sourcePages: {
-        pdfPages: [...s.provenance.pdf_pages],
-        sectionPdfPages: s.provenance.section_pdf_pages,
-        crossPage,
-      },
       sections: s.sections.map((sec) => ({
         ordinal: sec.ordinal,
         sourceLabelTa: sec.source_label,
@@ -394,6 +407,10 @@ for (const f of orderedFilms) {
       itemStatus: s.item_status,
       attributionStatus: s.attribution_status,
       creditsAsPrinted: { music: s.credits_as_printed.music, voice: s.credits_as_printed.voice },
+      contentsTitleTa: s.titles.contents_tamil,
+      pdfPages: [...s.provenance.pdf_pages],
+      sectionPdfPages: s.provenance.section_pdf_pages,
+      crossPage,
       tamilSourcePath: s.provenance.tamil_source_path,
       englishSourcePath: s.provenance.english_source_path,
     });
@@ -411,8 +428,10 @@ writeJSON(path.join(OUT, "index.json"), {
   navigation: {
     primary: "film",
     secondary: "song",
-    filmOrder: payload.navigation.film_order,
-    songOrder: payload.navigation.song_order,
+    // Machine values, not the archive's prose. The archive's own wording names
+    // the printed compilation and is kept in the internal provenance instead.
+    filmOrder: "source-order",
+    songOrder: "song-number",
   },
   languageDefault: payload.language_presentation.default,
   languagesAvailable: [...payload.language_presentation.available],
@@ -445,7 +464,7 @@ writeJSON(path.join(OUT, "index.json"), {
   ],
 });
 
-writeJSON(path.join(OUT, "provenance.json"), {
+writeJSON(INTERNAL_PROVENANCE, {
   workId: EXPECT_WORK_ID,
   siteSlug: SITE_SLUG,
   sourceRepo: "pugazg/kalaignar-cinema-works",
@@ -514,7 +533,24 @@ writeJSON(path.join(OUT, "provenance.json"), {
     note:
       "The intended public experience is film → lyrics, not a bibliographic reproduction of the 2024 compilation. Compiler, publisher, ISBN, edition, printed-page counts, music and voice credits, item verification states and archive file paths are recorded here for validation only and are deliberately absent from the runtime song files.",
     runtimeData: [`public/data/cinema/${SITE_SLUG}/index.json`, `public/data/cinema/${SITE_SLUG}/songs/song-NNN.json`],
-    buildTimeOnly: [`public/data/cinema/${SITE_SLUG}/provenance.json`],
+    internalOnly: [`data/internal/${SITE_SLUG}/provenance.json`],
+    internalLocationNote:
+      "Everything under Next.js public/ is a served static asset, so archival provenance placed there would be publicly fetchable however it was labelled. This file therefore lives outside public/, as plain JSON that only build-time scripts read.",
+    withheldFromPublicRuntime: [
+      "source repository, path and commit",
+      "controlling-scan and witness identifiers and hashes",
+      "evidence-register hash and source-input aggregate",
+      "archive source file paths",
+      "archival attribution status (anthology-attributed)",
+      "item verification states (verified / pilot-verified)",
+      "music and voice credits as printed",
+      "scan page numbers, section page ranges and per-song cross-page state",
+      "the contents-table title variant",
+    ],
+    navigationAsPublished: {
+      filmOrder: payload.navigation.film_order,
+      songOrder: payload.navigation.song_order,
+    },
   },
   integrity: {
     sourceScanSha256: EXPECT_SCAN_SHA256,
@@ -532,6 +568,15 @@ writeJSON(path.join(OUT, "provenance.json"), {
   ],
 });
 
+if (fs.existsSync(LEGACY_PUBLIC_PROVENANCE)) {
+  fs.rmSync(LEGACY_PUBLIC_PROVENANCE, { force: true });
+}
+// Fail closed rather than ship a served copy of the archival apparatus.
+const strayPublic = fs
+  .readdirSync(OUT, { recursive: true })
+  .filter((f) => String(f).endsWith("provenance.json"));
+if (strayPublic.length) die(`provenance must not be written under public/: found ${strayPublic.join(", ")}`);
+
 console.log("import-thirai-isai-paadalgal — OK");
 console.log(`  source pin        ${APPROVED_SOURCE_COMMIT}`);
 console.log(`  input aggregate   ${inputAggregate} (${inputRels.length} files)`);
@@ -539,4 +584,5 @@ console.log(`  payload sha256    ${payloadSha}`);
 console.log(`  films/songs/lines ${EXPECT_FILMS}/${EXPECT_SONGS}/${EXPECT_LINE_CUES} (cross-page ${EXPECT_CROSS_PAGE_SONGS})`);
 console.log(`  authorship        ${EXPECT_ESTABLISHED} established / ${EXPECT_UNRESOLVED} unresolved`);
 console.log(`  display           ${EXPECT_DISPLAYABLE} displayable / ${EXPECT_NOTICE_REQUIRED} notice-required`);
-console.log(`  wrote             ${path.relative(process.cwd(), OUT)}`);
+console.log(`  public runtime    ${path.relative(process.cwd(), OUT)}`);
+console.log(`  internal only     ${path.relative(process.cwd(), INTERNAL_PROVENANCE)}`);
