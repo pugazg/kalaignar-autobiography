@@ -258,13 +258,16 @@ for (const W of WORKS) {
     eq("generated intro unit count equals the source-derived paragraph count", got.length, src.length);
     eq("the Tamil note is verbatim from the verified page records", got, src);
 
-    // Source-sensitive spot guards, on BOTH sides.
+    // Source-sensitive spot guards, on BOTH sides. These read defensively on purpose: if the note
+    // ever empties again, every one of them must report a clean FAIL. Indexing an empty array threw
+    // instead, which aborted the run and destroyed the very report a reviewer reads — the exit code
+    // was right, but the evidence was gone and the assertions after it never ran at all.
     const OPENING = "ஃ சாக்ரடீஸ் கிரேக்கம் தந்த தத்துவாசிரியன்";
-    check(nfc(src[0]).trimStart().startsWith(nfc(OPENING)), "the SOURCE intro opens with the expected printed form");
-    check(nfc(got[0]).trimStart().startsWith(nfc(OPENING)), "the GENERATED intro opens with the expected printed form");
-    check(src[src.length - 1].trim() === "*", "the SOURCE intro ends with the printed ornament *");
+    check(nfc(src[0] ?? "").trimStart().startsWith(nfc(OPENING)), "the SOURCE intro opens with the expected printed form");
+    check(nfc(got[0] ?? "").trimStart().startsWith(nfc(OPENING)), "the GENERATED intro opens with the expected printed form");
+    check((src[src.length - 1] ?? "").trim() === "*", "the SOURCE intro ends with the printed ornament *");
     const lastUnit = play.openingNote.tamil.units[play.openingNote.tamil.units.length - 1];
-    check(lastUnit.kind === "ornament" && lastUnit.text.trim() === "*", "the GENERATED intro ends with the printed ornament *");
+    check(lastUnit?.kind === "ornament" && (lastUnit?.text ?? "").trim() === "*", "the GENERATED intro ends with the printed ornament *");
     const bracket = play.openingNote.tamil.units.filter((u) => u.kind === "stage-direction" && u.delimiter === "square");
     eq("the bracketed scan-28 setup is carried as one square stage-direction", bracket.length, 1);
     check(/முதற்காட்சி/.test(bracket[0]?.text ?? ""), "that bracketed setup is the source's own முதற்காட்சி description");
@@ -405,4 +408,8 @@ const totalFails = results.reduce((n, r) => n + r.fails.length, 0);
 console.log("─".repeat(72));
 console.log(`naanmani-malai-plays — ${total} assertions, ${totalFails} failed across ${results.length} groups`);
 console.log(`BATCH RESULT: ${failed === 0 ? "ALL PASS" : `${failed} GROUP(S) FAILED`}`);
-process.exit(failed === 0 ? 0 : 1);
+// NOT process.exit(). Node discards buffered stdout writes when process.exit() is called while
+// stdout is a pipe — which is exactly what GitHub Actions gives it. The exit CODE was always
+// right, but the report above was cut off mid-run in CI, so the assertion log a reviewer needs
+// to read never survived. Setting exitCode lets Node drain stdout and exit on its own.
+process.exitCode = failed === 0 ? 0 : 1;
