@@ -1,0 +1,1477 @@
+{
+ "workId": "cheran-senguttuvan",
+ "slug": "cheran-senguttuvan",
+ "title": {
+  "ta": "சேரன் செங்குட்டுவன்",
+  "en": "Cheran Senguttuvan"
+ },
+ "descriptor": {
+  "ta": "நான்கு காட்சி நாடகம்",
+  "en": "A play in four scenes"
+ },
+ "author": {
+  "ta": "கலைஞர் மு. கருணாநிதி",
+  "en": "Kalaignar M. Karunanidhi"
+ },
+ "edition": {
+  "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+  "placeTa": "சென்னை-28",
+  "priceTa": "விலை ரூ. 4/-",
+  "copyrightLineTa": "© பதிப்புரிமை",
+  "collectionTitleTa": "கலைஞரின் நான்மணி மாலை",
+  "year": null
+ },
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/cheran-senguttuvan",
+ "sourceCommit": "145e52e88dbd009286f749a7f0e3520386e63244",
+ "structureKind": "scene-sequence",
+ "sceneCount": 4,
+ "closingTableauCount": 0,
+ "scanProvenance": "per-unit-group",
+ "bodyScans": {
+  "from": 44,
+  "to": 53
+ },
+ "openingNote": {
+  "attachedTo": "01",
+  "labelTa": "நாடகத் துவக்கத்திற்கு முன் அச்சிடப்பட்டது",
+  "labelEn": "Printed before the play begins",
+  "sourceScans": [
+   44
+  ],
+  "tamil": {
+   "units": [
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": "நாடகத் துவக்கத்திற்கு முன்பு குரல்",
+     "speakerSeparator": ": ",
+     "text": "செங்குட்டுவனின் தம்பி இளங்கோவடிகள் தீட்டிய சிலப்பதிகாரத்தில் ஒரு பொன்னேடு!....",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "கண்ணகி சிலை நாட்டுவதற்கு வடநாட்டிலே இருந்து கல் கொண்டு வந்த கதை !",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "தமிழகத்துப் பழம்பெரும் சரித்திரத்தைச் சொல்லும் வீர வரிகள்!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "அன்றொரு நாள்! அணிதேர்ப்புரவி ஆட்பெரும்படையோடு நாம் அரசு கட்டிலில் அமர்ந்திருந்த நாள்!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "அப்போது வடபுலத்திலே....கனகவிசயர் சபையில்...",
+     "hasLineBreaks": false
+    }
+   ]
+  },
+  "english": {
+   "units": [
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": "Voice before the play begins",
+     "speakerSeparator": ": ",
+     "text": "A golden leaf from the *Silappathikaram* composed by Ilangovadigal, the younger brother of Senguttuvan!....",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "The story of bringing a stone from the northern land to install a statue of Kannagi!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "Lines of valour that tell the ancient history of Tamilakam!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "One day! The day when we sat upon the royal throne with ornamented chariots, horses and a vast army of men!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "Then, in the northern region....in the court of Kanaka-Vijaya...",
+     "hasLineBreaks": false
+    }
+   ],
+   "notes": []
+  }
+ },
+ "readingUnits": [
+  {
+   "order": 1,
+   "slug": "01",
+   "kind": "scene",
+   "headingTa": "காட்சி — 1",
+   "headingEn": "Scene — 1",
+   "titleTa": "காட்சி — 1",
+   "titleEn": "Scene — 1",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    44,
+    45
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தீராதிதீர தீன தயாபர தெய்வீக புருஷ வேதாந்த சாகர வேந்தர்குலதிலக உத்திரதேசத்து மன்னாதிமன்னர்கள் கடவுள் அவதார கனக விஜயர் பராக்! பராக்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மன்னர்கள்",
+      "speakerSeparator": ": ",
+      "text": "நமஸ்கார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கனகர்",
+      "speakerSeparator": ": ",
+      "text": "நமஸ்கார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "விஜயர்",
+      "speakerSeparator": ": ",
+      "text": "நமஸ்கார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "சுயம்வரத்துச் சுந்தரிக்காகக் காத்துக் கொண்டிருக்கிறீர்கள் போலும் ஹி! ஹி!...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மன்",
+      "speakerSeparator": ": ",
+      "text": "ஆமாம், நீங்கள் இருவருமே வந்து விட்டீர்களே! சுயம்வரப் போட்டியில் உங்களில் ஒருவர் ஜெயித்துவிட்டால், அந்தப் பெண்ணை நீங்கள் இருவரும் எப்படிப் பங்கு போட்டுக் கொள்வது?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தமிழ்நாட்டுப் புலவர்",
+      "speakerSeparator": ": ",
+      "text": "பிறகு பாரதந்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "விஜ. யாரப்பா நீ? என்ன பேசுகிறாய்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "தமிழ்! செந்தமிழ்! உலகத்தோடு பிறந்த தமிழ்! கல் தோன்றி மண் தோன்றாக் காலத்தே முன் தோன்றி மூத்த தமிழ்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "விஜ",
+      "speakerSeparator": ": ",
+      "text": "சுயம்வர மண்டபத்தில் உனக்கென்ன வேலை?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "உம்; விசித்திரமான கேள்வி வேந்தரே! சுயம்வர மண்டபத்தில் வயதான உங்களுக்குத்தான்வேலை; வாலிபர்களாகிய என் போன்றவர்களுக்கு வேலை இல்லை என்பது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "விஜ",
+      "speakerSeparator": ": ",
+      "text": "குறும்பு தேவையில்லை. நீ யார் என்று கூறு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "நானோர் தமிழ்ப்புலவன்—வடநாட்டு யாத்திரை வந்தேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "புலவனா? கவிதை புனையத் தெரியுமா உனக்கு?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "கவிதை புனையத் தெரியாத புலவன்—கத்தி தூக்கத் தெரியாத வீரன்—இவர்களைத் தமிழகம் இதுவரை கண்டதே இல்லை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "அதையும் பார்த்து விடுவோம். எங்கே, உடனே, ஒரு கவிதை சொல்லு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "கங்கை நதி தீரத்திலே போராடினான்—தமிழன் காவிரியின் ஓரத்திலே புகழ் பாடினான். பொங்குகடல் அத்தனையும் கட்டி ஆண்டான்—தமிழன் பூதலத்தில் மேலவனென் றுலகம் போற்ற!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "நிறுத்து! நிறுத்து!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "விஜ",
+      "speakerSeparator": ": ",
+      "text": "நிறுத்தும் ஓய்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "பைத்தியக்காரன், கங்கை நதி தீரத்திலே போராடினான் தமிழன்! போராடுவான்! போராடுவான்! அவன் கனக விஜயன் காலத்திலே வந்து போராடினால் காலை ஒடித்திடுவோம் ஜாக்கிரதை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மன்னர்கள்",
+      "speakerSeparator": ": ",
+      "text": "ஹா! ஹா!! ஹா.!!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "விஜ",
+      "speakerSeparator": ": ",
+      "text": "கனகர் சொன்னது ஆயிரம் லட்சம் பெறும் புலவனே! இமயத்தின் நெற்றியிலே உம் மன்னர் புலி—வில்—கயல் சின்னங்களைப் பொறித்த போது எம்போலும் மன்னர்! ஈங்கில்லை போலும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "ஏன்? காலில் விழுந்து காணிக்கை செலுத்தவா? பித்து மனம் கொண்டவரே; கேளீர்! இன்றே தென்னாடு திரும்புகிறேன். காவாநாவிற் கனகனும் விஜயனும் விருந்தின் மன்னர் தம்முடன் கூடி அருந்தமிழாற்றல் அறிந்திலராகிச் செப்பிய மொழிகளைச் சேரனுக்குணர்த்துவேன். மதோன் மத்தர்களே! மாண்டு விடவில்லை தமிழர் வீரம்! மீண்டும் சந்திப்போம். ஆண்டு கொண்டிருப்பவன் சேரன் செங்குட்டுவன்! சேரன் செங்குட்டுவன்!!",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Unsurpassed heroes, protectors of the distressed, divine men, oceans of Vedanta, ornaments of the royal clan, emperors of the northern land, incarnations of god—Kanaka and Vijaya—parak! parak!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kings",
+      "speakerSeparator": ": ",
+      "text": "Namaskar!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kanakar",
+      "speakerSeparator": ": ",
+      "text": "Namaskar!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vijayar",
+      "speakerSeparator": ": ",
+      "text": "Namaskar!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "It seems you are waiting for the beauty of the *swayamvara*. Hee! Hee!...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "King",
+      "speakerSeparator": ": ",
+      "text": "Yes, both of you have arrived! If one of you wins the *swayamvara* contest, how are the two of you going to divide that woman between yourselves?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Tamil-country Poet",
+      "speakerSeparator": ": ",
+      "text": "Then it will be *Bharatham* indeed.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Vij. Who are you, man? What are you saying?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "Tamil! Refined Tamil! Tamil born along with the world! Ancient Tamil that arose before stone arose and before earth arose!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vij",
+      "speakerSeparator": ": ",
+      "text": "What business do you have in the *swayamvara* hall?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "Hmm; what a strange question, O king! So, in a *swayamvara* hall, only aged men like you have business there; young men like me have none.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vij",
+      "speakerSeparator": ": ",
+      "text": "No mischief. Tell me who you are!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "I am a Tamil poet—I came on pilgrimage to the northern land.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "A poet? Do you know how to compose poetry?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "Tamilakam has never yet seen a poet who cannot compose poetry—or a warrior who cannot raise a sword.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "We shall see that too. Come, recite a poem at once!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "On the banks of the Ganges he fought—the Tamil; on the banks of the Kaveri he sang his fame. He ruled and bound the whole surging sea—the Tamil, whom the world praises as supreme upon the earth!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "Stop! Stop!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vij",
+      "speakerSeparator": ": ",
+      "text": "Stop it, man!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "Madman! The Tamil fought on the banks of the Ganges! He will fight! He will fight! If he comes and fights in the age of Kanaka-Vijaya, we shall break his legs—beware.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kings",
+      "speakerSeparator": ": ",
+      "text": "Ha! Ha!! Ha.!!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vij",
+      "speakerSeparator": ": ",
+      "text": "Poet, what Kanakar said is worth a thousand lakhs! When your kings engraved their tiger—bow—fish emblems upon the forehead of the Himalaya, perhaps kings like us were not here!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "Why? So that you might fall at their feet and offer tribute? Listen, you men of crazed minds! I return to the southern land today itself. I shall tell the Cheran the words spoken by Kanakan and Vijayan—men whose tongues know no restraint—together with the kings of their feast, ignorant of the power of noble Tamil. O drunken madmen! Tamil valour has not died! We shall meet again. The one who rules is Cheran Senguttuvan! Cheran Senguttuvan!!",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/01.md`; the complete 2009 published-English witness was not consulted.\n- The pre-scene voice-over is retained as part of the dramatic work rather than omitted as editorial framing.\n- `சுயம்வரம்`, `பராக்`, and `பாரதம்` are handled conservatively as `swayamvara`, `parak`, and `Bharatham` rather than replaced with an externally supplied cultural explanation.\n- The source distinction between `விஜ.` and `விஜ:` is retained as `Vij.` and `Vij:` instead of silently regularizing the label.\n- `புலி—வில்—கயல்` remains the source emblem sequence `tiger—bow—fish`.\n- The closing phrase beginning `காவாநாவிற்...` is translated from its immediate Tamil context as an accusation of unrestrained speech and ignorance of Tamil power; no later English witness was used to resolve it.\n- No closing `*` is added because the verified Scene 1 assembly has none."
+     }
+    ]
+   }
+  },
+  {
+   "order": 2,
+   "slug": "02",
+   "kind": "scene",
+   "headingTa": "காட்சி — 2",
+   "headingEn": "Scene — 2",
+   "titleTa": "காட்சி — 2",
+   "titleEn": "Scene — 2",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    46,
+    47,
+    48,
+    49
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சேரனின் மண்டபம்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(செங்குட்டுவனும் வேண்மாளும் இருக்கின்றனர்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வேண்",
+      "speakerSeparator": ": ",
+      "text": "சுவையான கதையொன்று சொல்லுங்கள் அத்தான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "சொல்லட்டுமா! சோழன் மகளைச் சேரன் மணந்தான்; சேரனுக்கு ஒரு செல்வன் பிறந்தான்! செல்வன் இந்தச் சிலையை மணந்தான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வேண்",
+      "speakerSeparator": ": ",
+      "text": "தெரிந்த கதைதானே இது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "நடந்த கதைகூட.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வேண்",
+      "speakerSeparator": ": ",
+      "text": "நடக்காத கதையொன்று சொல்லுங்கள் அத்தான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "சுவைக்காது கண்ணே அது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வேண்",
+      "speakerSeparator": ": ",
+      "text": "உம் ... சாதல் கதையொன்று.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "ஊஹூம். இதோ புறநானூற்றிலே... ...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வேண்",
+      "speakerSeparator": ": ",
+      "text": "போதும்; வீரக்கதைதானே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "வீரத்தை மணந்த காதல் கதை! தந்தையையும் கணவனையும் பலிகொடுத்த பெண்ணொருத்தி, தன் மகனையும் போருக்கனுப்பிய புறகாட்சி! வேண்மாள். கொஞ்சம் கேளேன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நானே எழுதியிருக்கிறேன் புதிய நடையில்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "காவிரி தந்த தமிழகத்து புது மணலில்  \nகளம் அமைத்துச் சேர சோழ பாண்டி மன்னர்  \nகோபுரத்துக் கலசத்தில்  \nயார் கொடிதான் பறப்பதென்று  \nபோர் தொடுத்துக் கொண்டிருந்த காலமது! அந்நாளில்  \nஓர் களத்தில்,",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தாய்நாடு காக்கத் தாவிப் பாய்ந்து செத்தார்  \nதந்தை என்ற சேதி கேட்டுத்  \nதணல் வீழ் மெழுகானாள் தமிழகத்துக் கிளியொருத்தி!  \nஅனல்போலும் கண்ணுடனே, அயலூர் சென்றிருந்த,  \nஅவள் கணவனும் வந்திட்டான்!  \nபுனல் போக்கும் விழியாலே அவள் போர்ச் செய்தி  \nதந்திட்டாள்.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“தந்தை களம்பட்ட செய்திக்கோ தவித்தாய்” என்றான்.  \n“இல்லை அன்பே!” முல்லைசூழ் இந்நாட்டுப் படையிலோர் வீரர் குறைந்திட்டால்  \nநல்ல உடையிலோர் கிழிசல் வந்தது போலன்றோ? இனித்  \nதடையின்றி நுழைவரே பகைவர் என எண்ணினேன்;  \nஅடைபட்ட கண்ணீர், அணை உடைத்ததத்தான்”என்றாள்.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அவன்,  \nகுகைவிட்டுக் கிளம்பும் ஒரு புலியென,  \nபுகைவிட்டுக் குமுறும் எரிமலையென.  \nபகைவெட்டிச் சாய்க்கும் வாளெடுத்தான்!  \nசூளுரைத்தான்; சுடர்முகம் தூக்கினான்;  \n“சுக்குநூறுதான் சூழ்ந்து வரும் பகை!” என்றான்,  \n“நாடு மீட்காமல், வீடு திரும்பேன்” என்றான்!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நங்கையோ,  \nநகை முழக்கம் செய்து, “நடந்திடுக கண்ணே” என்றாள்!  \n“திரும்பி வருவேனோ, இல்லையோ?  \nஎதற்கும் இப்போது ஒரு முத்தம்  \nஇந்தா திரும்பு” என்றான்!  \nகொடுத்தான்—பின் தொடுத்தான்  \nபகைவர் மீது பாணம்!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "போர்! போர்! போர்! எனவே  \nமுழங்கிற்று முரசு ஒலி!  \nபார்! பார்! பார்! அந்தப் பைங்கிளியின்  \nஉரிமையாளன்—பகைவர் மீது பாய்ந்து  \nகொல்லும் வீரம்பார்!—என்று  \nபட்டாளத்துத் தோழரெல்லாம் வியந்துரைத்தார்! அந்தக்  \nகட்டாணி முத்தாளும் கண்வழியே சிரித்திட்டாள்,  \nகளத்தினிலே அத்தானுக்கு  \nஅடுக்கடுக்காய்க் குவிந்து வரும் வெற்றிகளைக் கேட்டுவிட்டு!  \nகோட்டைகள் விடுபட்டன! எதிரியின்  \nகுதிரைக் கால்கள் உடைபட்டன!  \nவேழப்படை முறிபட்டது! வேல்கள் பொடிபட்டன!  \nஎம், கொற்றவன் படைகள் கொட்டும் பேரிகை  \nகோடையிடியெனக் கேட்குது! கேட்குது! எனக்  \nகுதித்திட்டாள்—புதுப்பண் அமைத்திட்டாள்!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வீரர்கள் வந்தனர்—வெற்றி உன் கணவனுக்கே என்றனர்!  \nவேந்தனின் தூதுவர் வந்தனர்! வாழ்த்துகள் வழங்கினர்!  \nவீட்டோரத்துத் தோழிகள் வந்தனர்—வெற்றி  \nநீட்டோலை வாசித்து மகிழ்ந்தனர்! அந்த அழகி,  \nஆனந்தக் கண்ணீர் பொழிந்தாள்—அப்போது,  \nஏனந்த மனிதன் வந்தானோ? இழவுச் சேதி சொல்வதற்கு!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“என்னருமைப் பெண்பாவாய்!  \nகண்ணல்ல—கலங்காதே!  \nகளச்சேதி கடைசிச் சேதி, கேள்” என்றான்—",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அந்தோ!  \nமாவிலைத் தோரணங்கட்டி, மணவிழா மேடைதன்னில்  \nவாழ்விலே ஒன்றானோம் என்று சொன்ன கண்ணாளன்—  \nமார்பிலே வேல்தாங்கி நல்ல  \nசாவிலே வீழ்ந்துவிட்டான்—  \nஆவிதான் போன பின்னும் உயிர்வாழும் ஆரணங்கு  \nஅச்சடித்தத் தமிழ்ப்பதுமை—  \nகூவி அழுதாள்—கொத்தான மலர்",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இந்தக் குடும்பம்!  \nஅதைக் கொத்தாமல் கொத்திவிட்ட  \nகொடும்சாவைப் பழித்தாள்—இழித் துரைத்தாள்!  \nஇனி என்ன மிச்சம் என்றும்,  \nகனி அழுகிப்போனதென்றும்  \nகதறி அழுதாள்!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பனிவெல்லும் விழிகாட்டி  \nபனவெல்ல மொழி உரைத்து,  \nபள்ளியறை கவிபாடும் நாளெல்லாம்  \nமண் தானே? இனி இது தூங்காத  \nகண் தானே? என அழுதாள்! அத்தான் பிணம்  \nகிடக்கும் களம் நோக்கித் தொழுதாள்!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சோகத்தாள் வீழ்ந்துவிட்ட அவள் காதில், வெற்றி  \nவேகத்தால் பகைவர் தட்டும் போர் முரசம்  \nபட்டதுதான் தாமதம்!  \nகெட்டதுதான் கெட்டது நம்குடி—முழுவதுமே  \nபட்டொழிந்து போகட்டும் என எழுந்தாள்!  \nமட்டில்லாப் புகழ்கொண்ட நாட்டுக்கே அன்றி,  \nவீட்டுக்கோ வாழ்வேன் என்றாள்—",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வட்டிலினால் நாழிபார்க்கும்விதங்கண்ட தமிழ்நாட்டுமாதரசு  \nதொட்டிலிலே இட்டுத் தான் வளர்த்த தூயசெல்வன்  \nஅட்டியின்றிக் கல்விகற்க, ஆலமரத்தடி  \nஆசானிடம் சென்றிருக்கும் நினைவு கொண்டாள்!  \nஅங்கு சென்றாள்—“அம்மா” எனப் பாய்ந்தான்,  \nஅழகுமிழும் மழலைமொழி அன்புத் தங்கம்!  \n“அப்பா, தாத்தா, ஊர் திரும்பினாரோ?” என்றான்—“திரும்பிவந்து சாவூர் சென்று விட்டார்—  \nகரும்பே—நீயும் வா!” என்றழைத்தாள்.  \n“என்ன வாங்கி வந்தார்?” என்றான்!  \n“மானம்! மானம்! அழியாத மான” மென்றாள்—  \n“மகனே! அதைச் சுவைக்க நீயும் வருக”—என்றாள்!  \nவந்துவிட்டான்—குலக்கொழுந்து!  \nகுடும்பவிளக்கு எரிந்து கொண்டே, கூறுகின்றாள்—  \n“எதிரிகளின் படையெடுப்பால்—நம் குடும்பம் தழை  \nஉதிர்ந்துவிட்ட மரமாகப் போனதடா தம்பீ!  \nகவலையில்லை—  \nகளம் சென்றார் மாண்டார்!  \nஆனாலும் இந்த,  \nநிலம் உள்ளவரையிலும் ‘மானங்காத்தார்’ என்ற பெயர்  \nபூண்டார்!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என் மகனே! நீயும் தோளில்  \nபலம் உள்ளவரையில் பகையைச் சாடு!  \nபரணி பாடு! இது உன்  \nதாய்த்திருநாடு!—உடனே ஓடு!” எனத்  \nதாவி அணைத்துத் தளிர் மகன் தன்னைச்  \nசீவிமடித்துச் சிங்காரித்து, ரத்தக்  \nகாவி படிந்த வாள் கொடுத்துச்  \n“சென்று வா மகனே, செருமுனை நோக்கி!”  \nஎன வாழ்த்திவிட்ட திருவிடத்துக்  \nகாட்சிதனைப்—போற்றிப் பாடாதார் உண்டோ!—  \nதிருமகளே! இந்தப் பூவுலகில்?...",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புலவர்",
+      "speakerSeparator": ": ",
+      "text": "(குறுக்கே வந்து) உண்டு! உண்டு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர",
+      "speakerSeparator": ": ",
+      "text": "என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "அந்த உண்டு கொழுத்தவர் உண்டு உத்தமா! நம் வீரத்தைப் பழிப்போர் இந்த அவனியிலே உண்டு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர",
+      "speakerSeparator": ": ",
+      "text": "ஆ !",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "வேந்தரும் அரசியும் தனித்திருக்கும் வெள்ளிமாடத்திற்கு வந்திருக்கிறேனே என்று வியப்படைய வேண்டாம். இதை விட வியப்பான செய்தி ஒன்று கூறப் போகிறேன்....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர",
+      "speakerSeparator": ": ",
+      "text": "புலவரே!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "நமது வீரம் பொல்லாத புல்லர்களால் தூற்றப்பட்டது மன்னவா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர",
+      "speakerSeparator": ": ",
+      "text": "தூற்றியவர்கள் இருக்கிறார்களா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "இருக்கிறார்கள்! வடநாட்டு மன்னர்கள் வால் நீட்டுகிறார்கள்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வேண்",
+      "speakerSeparator": ": ",
+      "text": "பிறகென்ன? அவர்கள் வாளையா நீட்டுவார்கள்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "புல",
+      "speakerSeparator": ": ",
+      "text": "கனகவிசயர் இல்லாத காலத்திலே இமயத்திலே படையெடுத்தோமாம்—அவர்கள் ஆளும்போது கால் எடுத்து வைக்கட்டும் பார்ப்போம் என்று கர்ஜிக்கிறார்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர",
+      "speakerSeparator": ": ",
+      "text": "நமது வாளைப் பழித்தார்களா? அவர்களைத் தாள் பணிய வைக்கிறேன்; வேண்மாள்....வேலை வந்துவிட்டது, வீரத்துக்குச் சோதனை வந்துவிட்டது! வருகிறேன்!",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Cheran Senguttuvan and Venmal are present.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Ven",
+      "speakerSeparator": ": ",
+      "text": "Tell me a delightful story, dear husband!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "Shall I? The Cheran married the Chola's daughter; a son was born to the Cheran! That son married this statue!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Ven",
+      "speakerSeparator": ": ",
+      "text": "That is a story I already know.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "It is also a story that happened.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Ven",
+      "speakerSeparator": ": ",
+      "text": "Tell me a story that did not happen, dear husband!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "It will have no savour, my dear.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Ven",
+      "speakerSeparator": ": ",
+      "text": "Hmm ... then a story of death.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "Uh-huh. Here, in the *Purananuru*... ...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Ven",
+      "speakerSeparator": ": ",
+      "text": "Enough; it is a tale of valour, isn't it?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "A love story wedded to valour! A *puram* scene of a woman who sacrificed both father and husband and then sent her own son to war! Venmal, listen a little!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "I myself have written it in a new style.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "On the fresh sands of Tamilakam given by the Kaveri,\nwhen the Chera, Chola and Pandya kings\nmade the field of battle,\nfighting to decide\nwhose flag would fly\nupon the finial of the temple tower! In those days,\non one such field,",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "she heard the news that her father\nhad leapt forward and died\nprotecting the motherland;\na Tamil parrot became like wax struck by flame!\nHer husband, who had gone to a neighbouring town,\nreturned with eyes like fire!\nThrough eyes that poured a flood,\nshe gave him the news of war.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“You grieve because your father fell in battle,” he said.\n“No, my love!” If one warrior is lost\nfrom the army of this mullai-girt land,\nis it not like a tear appearing in a fine garment? I thought\nthat enemies would henceforth enter without hindrance;\nthe tears held back within me broke their dam, dear,” she said.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He,\nlike a tiger emerging from its cave,\nlike a volcano roaring smoke,\ntook up the sword that would cut down the enemy!\nHe swore an oath; he raised his radiant face;\n“The enemy closing around us will be smashed to powder!” he said;\n“I will not return home without recovering the land,” he said!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The maiden\nlaughed aloud and said, “Go forth, my dear!”\n“Whether I return or not,\nfor whatever may happen, one kiss now—\nhere, turn around,” he said!\nHe gave it—and then sent\nhis arrows against the enemy!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "War! War! War! Thus\nroared the sound of the war-drum!\nLook! Look! Look! The one who belongs to that green parrot—\nlook at his valour as he leaps upon\nthe enemy and kills!—\nso all his comrades in the army cried in wonder! That\n*kattani-muththaal* smiled through her eyes,\nhearing of the victories\npiling one upon another for her husband on the field!\nForts were freed! The enemy's\nhorses' legs were broken!\nThe elephant force was shattered! Spears were smashed!\nThe great drum beaten by the armies of our victorious king\nsounds like thunder in summer! It sounds! It sounds!—\nshe leapt up and fashioned a new tune!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Warriors came—they said the victory belonged to your husband!\nMessengers of the king came! They offered congratulations!\nWomen friends from nearby houses came—they read\nthe long victory message and rejoiced! That beauty\nshed tears of joy—then,\nwhy did that man come? To bring news of bereavement!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“My dear woman!\nO jewel—do not be shaken!\nThe news of the field is the final news; listen,” he said—",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Alas!\nThe beloved who, beneath mango-leaf festoons upon the wedding stage,\nsaid, “We have become one in life”—\nreceived a spear in his chest\nand fell in a noble death—\nthat *aaranangu* who lives on even after the life has gone,\nthat imprinted Tamil lotus—\ncried aloud—the cluster of flowers",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "that was this family!\nShe cursed cruel death,\nwhich had torn apart that cluster—she reviled it!\n“What remains now?” she cried,\nand “the fruit has rotted,”\nand wailed!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Showing eyes that outdid the dew,\nspeaking *panavella* words,\n“Were all the days in which the bridal chamber sang poetry\nonly earth after all? Is this now an eye\nthat will never sleep?” she cried! She worshipped in the direction\nof the field where her husband's body lay!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Into the ear of that woman fallen in grief,\nthe enemy's war-drum, beaten in the speed of victory,\nstruck—and that was enough!\n“What is lost is lost—let our whole clan\nbe wiped away altogether,” she rose and said!\n“I shall live not for the house,\nbut only for the land of boundless fame”—",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "That queen among Tamil women,\nwho knew the way of measuring a *nazhi* with a *vatti*,\nremembered her pure son whom she had placed in the cradle\nand raised, now gone without delay to learn\nunder the teacher beneath the banyan tree!\nShe went there—he leapt toward her crying, “Mother!”\nA golden child of love, with beautiful baby speech!\n“Have father and grandfather returned to the town?” he asked—\n“They returned and have gone on to the town of death—\nmy sugarcane—come, you too!” she called.\n“What did they bring back?” he asked!\n“Honour! Honour! Honour that does not perish,” she said—\n“My son! Come, you too, to taste it,” she said!\nHe came—the tender shoot of the clan!\nThe lamp of the family still burning, she tells him—\n“Because of the enemy invasion—our family has become,\nlittle brother, a tree whose leaves have fallen!\nDo not grieve—\nthey went to the battlefield and died!\nYet, as long as this\nearth exists, they have taken the name\n‘Those who guarded honour’!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "My son! As long as there is\nstrength in your shoulder, strike the enemy!\nSing a *parani*! This is your\nsacred motherland!—run at once!”\nShe leapt and embraced the tender boy,\ncombed and bound his hair, adorned him,\nplaced in his hand a sword stained in the red ochre of blood,\nand blessed him:\n“Go, my son, toward the battle-front!”\nIs there anyone who would not praise and sing\nthat sacred scene—\nO goddess—in this flower-world?...",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Poet",
+      "speakerSeparator": ": ",
+      "text": "[Interrupting] There is! There is!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "What?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Pul",
+      "speakerSeparator": ": ",
+      "text": "There are indeed those bloated on plenty, O noble one! There are people in this world who revile our valour!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Ah!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Pul",
+      "speakerSeparator": ": ",
+      "text": "Do not wonder that I have come to the silver terrace where the king and queen are alone. I am about to tell you something more astonishing than that....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Poet!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Pul",
+      "speakerSeparator": ": ",
+      "text": "Our valour has been slandered by wicked low fellows, O king!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Are there people who have slandered it?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Pul",
+      "speakerSeparator": ": ",
+      "text": "There are! The kings of the northern land are stretching their tails.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Ven",
+      "speakerSeparator": ": ",
+      "text": "What else? Would they stretch out their swords instead?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Pul",
+      "speakerSeparator": ": ",
+      "text": "They roar that we marched upon the Himalaya only when Kanaka-Vijaya were not there—let us see them set foot there while they rule, they say.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "They mocked our sword? I will make them bow at our feet. Venmal....work has arrived; a test has come for valour! I shall return!",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/02.md`; no wording from the 2009 published-English witness was consulted.\n- The source distinguishes `சேரன்:` from later `சேர:` and `புலவர்:` from `புல:`; the English preserves these as `Cheran:` / `Cher:` and `Poet:` / `Pul:` rather than collapsing them silently.\n- The long embedded recitation is kept as verse-like lineation and is not reduced to prose summary.\n- Cultural forms such as `Purananuru`, `puram`, `nazhi`, `vatti`, and `parani` are retained rather than replaced by externally supplied equivalents.\n- Source-sensitive expressions including `கட்டாணி முத்தாள்`, `ஆரணங்கு`, and `பனவெல்ல` are not silently normalized; where their immediate sense is not secure, conservative transliteration remains visible in the English.\n- The source's honour / war / family-sacrifice rhetoric, repeated `போர்! போர்! போர்!`, `பார்! பார்! பார்!`, and long-dash transitions are retained.\n- The final `வாள்` / `தாள்` contrast is represented as `mocked our sword` / `bow at our feet` without importing wording from any later witness.\n- No closing `*` is added because the verified Scene 2 assembly has none."
+     }
+    ]
+   }
+  },
+  {
+   "order": 3,
+   "slug": "03",
+   "kind": "scene",
+   "headingTa": "காட்சி—3.",
+   "headingEn": "Scene—3.",
+   "titleTa": "காட்சி—3.",
+   "titleEn": "Scene—3.",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    50,
+    51
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சேரன் கொலுமண்டபம்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "வாளேந்தி, தமிழகத்தில் புகழேந்தி வாழும் வேங்கைப் புலிகளே! வந்துவிட்டது உங்களுக்கு எல்லாம் அழைப்பு! வடநாட்டிலே மீண்டும் ஓர்முறை நம்வீரத்தை நிலைநாட்ட நல்லதோர் வாய்ப்பு! இமயத்திலே பொறித்திருக்கும் நம் சின்னங்களைப் பழித்தார்களாம். சிறுமதி கொண்டோர் சிலர்—புலியைக் கேலி செய்தான் போர்முனை காணா புல்லன். வில்லை இகழ்ந்தான் வீரத்தை விலை கேட்கும் வீணன் - கயலைப் பழித்தான் களம்புகு கதைகளைக் கேட்டறியாக் கசடன். உத்திரனும்—விசித்திரனும்—சித்தரனும்—சிவேதனும்—பைரவனும்! விழிக்காதீர்கள்! மனிதர்களின் பெயர்கள்தான் இவைகள்! இந்த மண்டூக மன்னர்களுக்குத் தலைவர்களாம் கனகனும்விசயனும் கங்கைக்கரைவாழ் காவலர்கள் காவிரிக்கரைக்கு அறைகூவல் விடுத்தார்களாம்! தோழர்களே! புத்தி புகட்டுவோம் அவர்களுக்கு—புறப்படுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ஒரு அமைச்சர்",
+      "speakerSeparator": " : ",
+      "text": "சோழனுக்கும் பாண்டியனுக்கும் இல்லாத ஆத்திரம் தங்களுக்கு மட்டும் ஏன் மன்னவா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேரன்",
+      "speakerSeparator": ": ",
+      "text": "தமிழன் என்பதால்—தன்மான உணர்ச்சி குன்றாததால்! சோழனோ பாண்டியனோ என்னுடைய பகைவனாக இருக்கலாம் அதற்காக வடநாட்டு மன்னர்கள் வாலாட்ட விடமாட்டேன் என் உயிருள்ள வரையில்! என் தமிழையல்லவா இகழ்ந்தார்கள்! தருக்கர்கள்! ஆ....குறள் தந்த கோமானே, வள்ளுவனே! உன்னை இகழ்ந்தார்கள் வடநாட்டார்! அத்தாணி மண்டபத்தில் சத்தான கருத்துரைக்கும் சாத்தனாரே! உம்மை இகழ்ந்தார்கள்! முத்துக்கடலே, முல்லைக் கொல்லையே! உன்னை இகழ்ந்தார்கள் எட்டுத்திக்கும் முரசு கொட்டி வாழும் சிங்கத் திருவிடமே. உன்னை இகழ்ந்தார்கள். அன்னை நற்சோணையே, இமயவரம்பன் நெடுஞ்சேரலாதனின் மகன் செங்குட்டுவனின் வெற்றியை இகழ்ந்தார்கள் ஈடற்ற புலவனே, இளங்கோ! ஆசைத்தம்பி! உன்னை இகழ்ந்தார்கள்! நீதிக்கு உயிர் தந்த பாண்டியனே! ஆரியப் படைகடந்த நெடுஞ்செழியனே! உன்னை இகழ்ந்தார்கள்!—செந்தமிழ் வளங்குறையா சிங்க ஏறுகளே! அறிஞரே! கவிஞரே! கலைவாணரே! உம்மையெல்லாம் இகழ்ந்தார்கள்! இகழ்ந்தார்கள்! இகழ்ந்தவர்கள்! இகழ்ந்தவர்கள் உயிரோடு இருக்கிறார்கள் வடநாட்டில் மன்னர்களாய்! பொருணை நதியும், பொழிலும் சூழ்ந்த எழில்மிகு வஞ்சித் தலைநகரே, உன்னை இகழ்ந்தார்கள்! இகழ்ந்தார்கள்! இழிகுணம் படைத்தோர் இகழ்ந்தார்கள்; அமைச்சர் அழும்பில் வேள் இருக்கவீரன் வில்லவன் கோதை தளபதியாயிருக்க—உங்கள்திரண்ட தோள்களில் எல்லாம் வலிமை வளர் பிறையாயிருக்க—அந்தப்புரத்திலே உலவிக் கிடக்க வேண்டியசிலதுகள் ஆவேசக் கூச்சலிட்டதாம்—வீரர்களே! பார்ப்போம் ஒரு கை, அந்த நா காக்கத் தெரியாத நாடோடிகளை தும்பிவாடி, தோரணங்கற்பட்டு, வேட்ட மங்கலம் கோட்டைகளிலுள்ள வீரரெல்லாம் கிளம்பட்டும்! காளையரே, காதலியருக்கு கடைசிமுத்தம் இதுவாக இருக்கலாம் என்று கூறிவிட்டுப் புறப்படுங்கள்! நாமென்ன சாகப் பயப்படும் சமுதாயமா? சமருக்கஞ்சும் இனத்தவரா, அந்தச்சாமரமேந்திகளிடம் சரணடைய! இல்லை!....இல்லை!.. களத்திலே உங்கள் தலைகள் பறிபோகலாம்! ஆனால் கனல் கக்கும் கண்களோடு அவை கொய்யப்படட்டும். தசைகள் கிழித்தெறியப்படலாம்! ஆனால் சுயமரியாதை இரத்தத்தின் சூடுதணியாமல் அவை கிழிக்கப்படட்டும். முரசு தட்டுங்கள்! இமயத்தை முட்டுங்கள்! தமிழன் தோற்றதில்லை! தோற்றதில்லை! தோழர்களே! ....புறப்படுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "O tiger-warriors who live bearing swords and bearing fame in Tamilakam! The summons has come for all of you! A fine opportunity to establish our valour once again in the northern land! They say they mocked our emblems engraved upon the Himalaya. Some men of petty minds—the worthless fellow who has never seen a battle-front mocked the tiger. The useless man who asks a price for valour scorned the bow - the base fellow who has never even heard the tales of entering the battlefield reviled the fish. Uthiran—Visithiran—Sithiran—Sivethan—Bairavan! Do not be startled! These are only the names of men! Kanakan and Vijayan, said to be the leaders of these frog-kings, guardians living on the banks of the Ganges, have issued a challenge to the banks of the Kaveri! Comrades! We shall teach them wisdom—set out!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "A Minister",
+      "speakerSeparator": " : ",
+      "text": "Why do you alone have such anger, O king, when the Chola and Pandya do not?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cheran",
+      "speakerSeparator": ": ",
+      "text": "Because I am a Tamil—because my feeling of self-respect has not diminished! The Chola or the Pandya may be my enemy; for that reason I will not allow the kings of the northern land to wag their tails so long as I live! Was it not my Tamil they insulted! Wranglers! Ah.... O king who gave us the Kural, Valluvar! The northerners insulted you! O Sattanar, who gives weighty counsel in the Athani hall! They insulted you! O sea of pearls, O mullai grove! They insulted you! O sacred lion-abode that lives with drums sounding in all eight directions, they insulted you. O mother Narchonai, they insulted the victory of Senguttuvan, son of Imayavaramban Neduncheralathan! O peerless poet, Ilango! Beloved younger brother! They insulted you! O Pandyan who gave his life for justice! O Nedunchezhiyan who crossed the Aryan army! They insulted you!—O lion-bulls of unfailing refined-Tamil richness! Scholars! Poets! Masters of the arts! They insulted all of you! They insulted! Those who insulted! Those who insulted are alive in the northern land as kings! O beautiful capital Vanji, surrounded by the Porunai river and groves, they insulted you! They insulted! Men of low nature insulted you; with Minister Azhumbil Vel here, with the warrior Villavan Kothai as commander—with strength upon all your massed shoulders like a waxing crescent—some creatures fit only to loiter in the inner palace are said to have raised frenzied cries—warriors! Let us try one hand against those wanderers who do not know how to guard their tongues. Let every warrior in the forts of Thumpivadi, Thoranangkarpattu, and Vetta Mangalam set out! Young bulls, tell your beloveds that this may be the last kiss, and depart! Are we a society afraid to die? Are we a people who fear battle, to surrender to those fly-whisk bearers? No!....No!.. Your heads may fly from your bodies on the field! But let them be cut away with eyes that spit fire. Your muscles may be torn apart! But let them be torn while the heat of self-respect in your blood has not cooled. Beat the war-drum! Strike the Himalaya! The Tamil has never been defeated! Never been defeated! Comrades! ....Set out!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/03.md`; the complete 2009 published-English witness was not consulted.\n- The setting `சேரன் கொலுமண்டபம்` is rendered conservatively as `Cheran's Royal Hall`; the Tamil remains controlling.\n- The tiger—bow—fish insult sequence is kept explicit because it carries the political logic of the speech.\n- The source list `உத்திரனும்—விசித்திரனும்—சித்தரனும்—சிவேதனும்—பைரவனும்!` remains a five-name sequence rather than being historically normalized.\n- `மண்டூக மன்னர்கள்` is retained as the source insult `frog-kings`.\n- Tamil solidarity despite Chera–Chola–Pandya rivalry, `தன்மான` / self-respect, and the repeated catalogue of Tamil literary/historical figures are kept explicit rather than compressed.\n- The verified source spacing `வேட்ட மங்கலம்` is retained as `Vetta Mangalam`; it is not silently compounded.\n- `சாமரமேந்திகள்` remains `fly-whisk bearers`, preserving the source's contemptuous courtly image.\n- The source's repeated `இகழ்ந்தார்கள்!`, `இல்லை!....இல்லை!..`, martial body imagery, `இமயத்தை முட்டுங்கள்!`, and final `*` are retained."
+     }
+    ]
+   }
+  },
+  {
+   "order": 4,
+   "slug": "04",
+   "kind": "scene",
+   "headingTa": "காட்சி—4.",
+   "headingEn": "Scene—4.",
+   "titleTa": "காட்சி—4.",
+   "titleEn": "Scene—4.",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    52,
+    53
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "குயிலாலுவம்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சேரன் செங்குட்டுவனுக்கும், கனக—விஜயருக்கும் நடைபெற்ற போரில் செங்குட்டுவன் வெற்றி பெறுகிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "வில்லவா! வெற்றி முழங்கும் இந்த இடத்திற்குப் பெயர் என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வில்லவன்",
+      "speakerSeparator": ": ",
+      "text": "குயிலாலுவம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "குயிலாலுவம், குறித்துக்கொள்! இந்தப் பாறைகள் அனைத்தும் பைந்தமிழ் வீரம் தீட்டிய ஏடுகள்! வெற்றி மட்டும் போதாது வில்லவா, அந்த வீணர்களை விடக் கூடாது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வில்",
+      "speakerSeparator": ": ",
+      "text": "காஷாய உடையிலே ரிஷிகளைப்போல் எங்கோ ஓடி விட்டார்களாம் கனக விஜயர்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சேர்; ஹா!...ஹா!........புதுமையல்ல........அவர்களுக்கு உரியதான ஒரே பழக்கம் அதுதான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(கனக விஜயர்கள் சாமியார் உடையில் கொண்டுவரப்படுகிறார்கள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சேர்; யார் இவர்கள்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வில்! கனக விஜயர்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "கனக விஜயர், கனக விஜயர். ஹா! ஹா! ஹா....! வீராதி வீரர்களே! நன்றாக இருக்கிறது போர்த்திறமை! முதுகு காட்டுவது—முக்காடு போடுவது—மறைந்திருந்து தாக்குவது—மகானாய் மாறுவது. ஹா! ஹா! ஹா! முனிவர் வேடத்தில் இருக்கிறீர்களே! இதற்குப் பதில் சொல்லுங்கள் புராணத்திலே தேவாசுர யுத்தம் எவ்வளவு நாள் நடந்தது?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "பதினெட்டு ஆண்டுகள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "ராம ராவணப் போர்?....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "பதினெட்டு மாதங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "பாரதப் போர்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "பதினெட்டு நாட்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "வீரர்களே, நினைவிருக்கட்டும். சேரன் செங்குட்டுவன் வடநாட்டிலே நடத்திய போர், பதினெட்டே நாழிகையில் முடிந்துவிட்டது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கன",
+      "speakerSeparator": ": ",
+      "text": "மன்னவா, மண்டியிடுகிறோம். மன்னித்து விடுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சேர்! மன்னிப்பதா? நான் மன்னிப்பதா? தமிழ்நாட்டு மண்ணில் வந்து மண்டியிடுங்கள், அது உங்களை மன்னிக்கட்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வில்",
+      "speakerSeparator": ": ",
+      "text": "மன்னவா, தமிழகம் திரும்ப வேண்டாமா? புறப்பட்டு முப்பத்திரண்டு திங்கள் ஆகின்றனவே.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "புறப்படுவோம்—வில்லவா. அதற்குள் கண்ணகிக்குச் சிலை நாட்ட இங்கு கல் எடுக்க வேண்டுமல்லவா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "வில்",
+      "speakerSeparator": ": ",
+      "text": "ஆமாம்,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சேர்",
+      "speakerSeparator": ": ",
+      "text": "அந்தக் கல்லைச் சுமப்பதற்குச் சரியான எருதுகள் கிடைத்து விட்டன. கனக—விஜயா, தமிழரின் வீரத்தின் மீது வீசினாய் ஒரு சொல்—இப்போது தூக்கு கல்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "- * -",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[In the war fought between Cheran Senguttuvan and Kanaka—Vijaya, Senguttuvan is victorious.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Villava! What is the name of this place where victory resounds?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Villavan",
+      "speakerSeparator": ": ",
+      "text": "Kuyilaluvam.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Kuyilaluvam—mark it down! All these rocks are leaves upon which the valour of living Tamil has written! Victory alone is not enough, Villava; those useless fellows must not be allowed to escape.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vil",
+      "speakerSeparator": ": ",
+      "text": "They say Kanaka-Vijaya have run away somewhere in saffron robes, dressed like rishis.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Cher; Ha!...Ha!........Nothing new........That is the one habit that truly belongs to them!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Kanaka-Vijaya are brought in dressed as holy men.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Cher; Who are these?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Vil! Kanaka-Vijaya.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Kanaka-Vijaya, Kanaka-Vijaya. Ha! Ha! Ha....! O greatest of warriors! Fine indeed is your skill in war! Showing your backs—covering your heads—attacking from hiding—turning into holy men. Ha! Ha! Ha! Since you are dressed as sages, answer this: in the Puranas, how many days did the Deva-Asura war last?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "Eighteen years!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "The Rama-Ravana war?....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "Eighteen months!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "The Bharata war?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "Eighteen days!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "Warriors, remember this. The war Cheran Senguttuvan fought in the northern land ended in just eighteen *nazhigai*.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Kan",
+      "speakerSeparator": ": ",
+      "text": "O king, we kneel. Forgive us!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Cher! Forgive you? I should forgive you? Come and kneel on the soil of Tamil Nadu; let that soil forgive you!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vil",
+      "speakerSeparator": ": ",
+      "text": "O king, should we not return to Tamilakam? It has been thirty-two months since we set out.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "We shall depart—Villava. But before that, must we not take a stone from here to install a statue for Kannagi?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Vil",
+      "speakerSeparator": ": ",
+      "text": "Yes,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Cher",
+      "speakerSeparator": ": ",
+      "text": "We have found the right oxen to carry that stone. Kanaka—Vijaya, you hurled one word at the valour of the Tamils—now lift the stone!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "- * -",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/04.md`; the complete 2009 published-English witness was not consulted.\n- The source heading `காட்சி—4.` and setting `குயிலாலுவம்` are preserved as `Scene—4.` and `Kuyilaluvam` without external place-name normalization.\n- Speaker-label distinctions are intentionally preserved: `சேர்:` → `Cher:`, `சேர்;` → `Cher;`, unusual `சேர்!` → `Cher!`, `வில்லவன்:` → `Villavan:`, `வில்:` → `Vil:`, `வில்!` → `Vil!`, and `கன:` → `Kan:`. They are not silently collapsed into normalized speaker labels.\n- `ரிஷி`, `புராணம்`, and `நாழிகை` remain culturally visible as `rishis`, `Puranas`, and `nazhigai`; the traditional time unit is not converted into modern clock time.\n- The sequence Deva-Asura war / Rama-Ravana war / Bharata war and its eighteen years / months / days / `nazhigai` escalation is retained exactly in dramatic order.\n- Source long-dash rhetoric is retained in `We shall depart—Villava`, `Kanaka—Vijaya`, and the final `one word...—now lift the stone!` challenge.\n- The closing source mark `- * -` is retained exactly."
+     }
+    ]
+   }
+  }
+ ]
+}

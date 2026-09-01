@@ -1,0 +1,1342 @@
+{
+ "workId": "anarkali",
+ "slug": "anarkali",
+ "title": {
+  "ta": "அனார்கலி",
+  "en": "Anarkali"
+ },
+ "descriptor": {
+  "ta": "நான்கு காட்சி நாடகம்",
+  "en": "A play in four scenes"
+ },
+ "author": {
+  "ta": "கலைஞர் மு. கருணாநிதி",
+  "en": "Kalaignar M. Karunanidhi"
+ },
+ "edition": {
+  "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+  "placeTa": "சென்னை-28",
+  "priceTa": "விலை ரூ. 4/-",
+  "copyrightLineTa": "© பதிப்புரிமை",
+  "collectionTitleTa": "கலைஞரின் நான்மணி மாலை",
+  "year": null
+ },
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/anarkali",
+ "sourceCommit": "145e52e88dbd009286f749a7f0e3520386e63244",
+ "structureKind": "scene-sequence",
+ "sceneCount": 4,
+ "closingTableauCount": 0,
+ "scanProvenance": "per-unit-group",
+ "bodyScans": {
+  "from": 18,
+  "to": 26
+ },
+ "readingUnits": [
+  {
+   "order": 1,
+   "slug": "01",
+   "kind": "scene",
+   "headingTa": "காட்சி—1",
+   "headingEn": "Scene 1",
+   "titleTa": "காட்சி—1",
+   "titleEn": "Scene 1",
+   "settingTa": "தோட்டம்",
+   "settingEn": "Garden",
+   "sourceScans": [
+    18
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அனார்கலி, சலீம் காதல் கீதம். தூரத்திலிருந்து ராஜா மான்சிங் பார்க்கிறார்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்கலி! அணுப்பொழுதும் உன்னைவிட்டு அகலாதிருக்க மார்க்கமொன்று தேடுகிறேன். கிடைக்கவில்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "நீங்களோ போர்வீரர்! உங்களுக்குத் தெரியாதா என்ன! உலகத்திலே நிரந்தரமான சமாதானம் நிலைத்த பிறகுதான், வானத்திலே வல்லூறுகளுக்குப் பதிலாக வெண்புறாக்கள் வட்டமிடும் நிலை ஏற்பட்ட பிறகுதான், வீரர்கள் வீட்டுக் காதல் விழாவில் இடைவேளை ஏற்படாமல் இருக்க முடியும். இல்லையா கண்ணே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்கலி! இரவு நேரம், சொல்லாமலே விடை பெறுகிறது; நம்மைக் கொள்ளாமலே கொல்லுகிறது! என் செய்வது, அன்பே!....புறப்பட்டுமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம், கடமை அழைக்கிறது உங்களை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அதை உன் காந்தக் கண் தடுக்கிறது. அதையும் உணருகிறேன். ஆனால்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "நாளைக்குச் சந்திக்கப்போகிறோம் என்ற நம்பிக்கையில் புலம்பும் என் இருதயத்துக்கு ஆறுதல்கூறி-வாய் உபசாரமாக வழி அனுப்பி வைக்கிறேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அக்பரது குடைநிழலில் சிறு தவறு விளையவும் இந்த ஏழைச் சிப்பாய் காரணமாயிருக்கக்கூடாது, என் திழையே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "(தழுவுதல்) என்னுடையவரே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "வருகிறேன், கண்ணே........!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(பிரிகிறார்கள்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(ராஜா மான்சிங் தனக்குள் ஏதோ ஒரு முடிவு செய்து கொண்டு அகலுகிறார் அந்த இடத்தைவிட்டு)",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Anarkali and Salim sing a love song. Raja Man Singh watches from a distance.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anarkali! I am searching for a way never to be parted from you even for the smallest instant. I cannot find one!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "And you are a warrior! Don't you know? Only after lasting peace has settled over the world, only after white doves circle the sky instead of vultures, can warriors' festivals of love at home go on without interruption. Isn't that so, my dear?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "The night takes its leave without even telling us; without taking us with it, it kills us! What can I do, my love!....Shall I set out?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Yes. Duty is calling you!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Your magnetic eye holds me back. I know that too. But........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Trusting that we shall meet tomorrow, I console my lamenting heart and send you on your way with mere words of courtesy.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Under the shade of Akbar's parasol, this poor soldier must not be the cause of even the slightest wrong, my *thizhaiye*!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "[Embracing him] My beloved!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "I'll be going, my dear........!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[They part.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Raja Man Singh, having made some decision within himself, leaves the place.]",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- `அணுப்பொழுதும்` is rendered as `even for the smallest instant`; the verified Tamil form is not normalized.\n- `நம்மைக் கொள்ளாமலே கொல்லுகிறது!` carries an internal Tamil wordplay between `கொள்ள` and `கொல்ல`. The English `without taking us with it, it kills us` preserves the contrast without pretending to reproduce the sound-play fully.\n- The source-printed `ஆறுதல்கூறி-வாய்` contains an unusual hyphenated form. The English conveys the sentence's action without rewriting the Tamil source or inventing a repaired Tamil reading.\n- The verified source form `என் திழையே!` is unusual and remains unresolved as a lexical form. It is therefore retained conservatively as `my thizhaiye!` rather than silently replaced by an expected endearment.\n- `அக்பரது குடைநிழலில்` is rendered as `under the shade of Akbar's parasol`, retaining the royal-protection image.\n- No wording from the 2009 published-English witness was consulted or used in drafting or review."
+     }
+    ]
+   }
+  },
+  {
+   "order": 2,
+   "slug": "02",
+   "kind": "scene",
+   "headingTa": "காட்சி—2",
+   "headingEn": "Scene 2",
+   "titleTa": "காட்சி—2",
+   "titleEn": "Scene 2",
+   "settingTa": "அனார்கலி வீடு.",
+   "settingEn": "Anarkali's House",
+   "sourceScans": [
+    19,
+    20,
+    21
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அனார் தன் வீடு நோக்கி ஆனந்தமாகப் போய்க் கொண்டிருக்கிறாள் உலகை மறந்த நிலையில். அவள் வீட்டுக்குள் பிரவேசிக்கும்போது அங்கே ராஜா மான்சிங் நின்றுகொண்டிருப்பதைக் கண்டு திடுக்கிடுகிறாள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "யார்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "ராஜா மான்சிங்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "ராஜா மான்சிங்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்.......அக்பர் சக்ரவர்த்தியின் அமைச்சன், ராஜ நிர்வாகி, படைத்தளபதி....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "(சாவதானமாக—ஆனால் குறும்பாக) அக்பருக்கு மைத்துனர் கூட! தெரியும் எனக்குப் பிரபு! தங்கள் வருகையால் ஏழையின் குடிசை எல்லையில்லாப் பெருமையடைந்தது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "ராஜ நர்த்தகி! என்னுள் உன் குடிசை பெருமையுற்றது என்கிறாய்; உன்னால் இந்த மண்டலமே பெருமையடைய வேண்டும் என்கிறேன் நான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "நடனமாடு நான்! நாட்டுக்குப் பெருமை தரும் தகுதி எனக்கென்ன இருக்கிறது?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "கொற்றவனின் கொலு மண்டபத்தில்.......",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "நான் ஆடும் நடனத்தால் நாடு புகழடைகிறது என்கிறீர்கள்—இல்லையா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "இல்லை....கொற்றவனின் கொலு மண்டபத்தில் மட்டுமே நீ ஆடவேண்டும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "கோமகன் சலீமின் உள்ளத்திலும் நீ ஆடக் கூடாது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "என்ன?....சலீம்!....அவருக்கு ஓர் உள்ளம்! அதிலே என் ஆட்டம்?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "அதைக் காட்சியாக்கிக் காட்ட ஒரு தோட்டம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "என்ன சொல்கிறீர்கள்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "ஏன் மறைக்கிறாய், அனார்கலி?....ஜோடிப் புறாக்களாக நீங்கள் பாடி மகிழ்ந்ததைப் பார்த்துவிட்டுத்தான் இங்கு ஓடிவந்திருக்கிறேன் நான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "சரிதான். அக்பர் பாதுஷாவின் அதிகாரத்திலே காதல் புரிவது கடுமையான குற்றமென அவசரச்சட்டம் ஏதாவது!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "பிறக்கவில்லை.......ஆனால்.......அப்படிக் காதல் புரிவோர் தகுதி பற்றி யோசிக்க வேண்டியிருக்கிறது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "காதலுக்குத் தகுதி! நடனப் பெண்ணும் நாடு காக்கும் போர் வீரனும் நேசிக்கக்கூடாதா ?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "அவன் போர் வீரனல்ல, புவியாளும் மன்னன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "ஆ!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "அக்பரின் திருமகன்! இந்த அவனிக்கு அதிபதி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "ஆ!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "சலீம்! சலீம்! சலீம் !",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "சலீம்! சலீம்! சலீம்! இல்லை, இல்லை. அவர் சலீம் இல்லை; சக்ரவர்த்தியின் மைந்தரில்லை! சிப்பாய்தான்! சிப்பாய்தான்! என் சிந்தை கவர்ந்த அவர் பொய் சொல்லமாட்டார்! பொய் சொல்லமாட்டார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "நாடகமாடாதே! ஒரு நாடோடிப் பெண், சாதாரண சிப்பாயின்மீது சாகச வலை வீசமாட்டாள் என்பது எனக்கு நன்றாகத்தெரியும். சக்ரவர்த்தி, சபா மண்டபம், சப்ரகூட மஞ்சம், சாம்ராஜ்ய பவனி—இத்தனையும் ஒரு கண் வீச்சால் பெறலாம் என்ற முடிவு கட்டித்தான் முடியுடை வேந்தர் அக்பரின் செல்வனுக்கு நீ மோக போதை ஊட்டியிருக்கிறாய்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "போதும், நிறுத்தும்! அக்கினிப் பிழம்பாகப் போய்விட்ட என் உள்ளத்தில் ஆயிரம் தேளெனக் கொட்டாதீர்! அனார்கலி அன்பு காட்டியது ஒரு சிப்பாயிடந்தான்! செங்கோல் ஏந்தியின் மகனிடமல்ல!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "இன்னுமா மறைக்கிறாய், அனார்கலி?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "மறைத்தது நானல்ல! உங்கள் மகுடபதியின் மகன்தான் சிம்மாசனமேறிகளை நான் மதிக்கமாட்டேன் என்பது தெரிந்துதான் இளவரசர் சலீம் இவ்வளவு பெரிய பொய்யை என்னிடம் சொல்லியிருக்கிறார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "நடந்தவைகள் நடந்தவைகளாயிருக்கட்டும்; இனி நடப்பவைகள் நல்லவைகளாயிருக்கட்டும். இந்தா, அனார்கலி! இலட்சம் பொன் தருகிறேன். எடுத்துக் கொண்டு போய்விடு, எங்கயாவது. இளவரசன் உன்னை மறந்துவிடட்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "பொன்னுக்காகக் காதலித்திருந்தால் போய்விடுவேன்! நீர் தரும் இலட்சமென்ன, கோடி கோடியாக என்னைத் தேடி வந்து கொட்டக் குபேரர்கள் காத்திருக்கிறார்கள்! அவர்களும் சரி—நீர் தரும் இந்தப் பொன்னும் சரி—எனக்கு மண்ணுக்குச் சமானம்!....இந்த மண்ணுக்குச் சமானம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(மண்ணையள்ளிக் காட்டல்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "(அமைதியாக) கொஞ்சம் சிந்தனை செய், அமைதியாக! பிறகு பதில் சொல்! படை வீரன் என எண்ணிப் பாசம் வைத்தாய்! பாராள்பவன் எனத்தெரிந்ததும் மறந்துவிட வேண்டியதுதானே உன் கொள்கைப்படி! பெண்ணே! உன் ஸ்தானத்தில் நான் இருந்து, இப்படி ஒரு சம்பவம் ஏற்பட்டால், கட்டாயம் சலீமை மறந்துவிடுவேன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "நீர் மறந்து விடுவீர்........காரணம்.......நீர் அனார்கலி அல்லவே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "சரி, முடிவாக என்ன சொல்லுகிறாய்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "என் அபிப்பிராயத்திற்குத் தடையாக உங்களுக்கு அதிகாரம் கிடையாது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "அனார்கலியின் ‘காதல் சுதந்திரம்’ டில்லி ஏகாதிபத்தியத்திற்குப் பணிந்துவிடாது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "அதையுந்தான் பார்க்கிறேன்!",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Anar is going happily toward her house, oblivious to the world. As she enters, she is startled to find Raja Man Singh standing there.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Who is it?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Raja Man Singh!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Raja Man Singh!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Yes.......minister to Emperor Akbar, royal administrator, commander of the army....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "[Calmly—but mischievously] Akbar's brother-in-law too! I know, my lord! By your visit this poor woman's hut has attained boundless honour.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Royal dancer! You say, “Within me, your hut has gained honour”; I say that this whole realm must gain honour through you!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "I am one who dances! What qualification do I possess to bring honour to a country?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "In the victorious sovereign's court hall.......",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "You mean the country gains fame through the dance I perform—don't you?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "No....you must dance only in the sovereign's court hall.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "What?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "You must not dance even in Prince Salim's heart!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "What?....Salim!....He has a heart! My dance in it?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "And a garden to make that scene visible.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "What are you saying?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Why hide it, Anarkali?....I came running here only after seeing the two of you sing and rejoice like a pair of doves!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Very well. Has some emergency ordinance been born under Padshah Akbar's authority, declaring love to be a grave crime!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Not yet.......but.......one must think about the qualifications of those who engage in such love!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Qualifications for love! May not a dancing girl and a warrior who protects the country love each other?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "He is not a warrior. He is a king who rules the earth.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Ah!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Akbar's own son! Lord of this world!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Ah!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Salim! Salim! Salim !",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Salim! Salim! Salim! No, no. He is not Salim; he is not the Emperor's son! He is only a soldier! Only a soldier! The man who captured my heart would not lie! He would not lie!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Stop acting! I know very well that a wandering woman would not cast an adventurous net over an ordinary soldier. The Emperor, the assembly hall, the *sabrakooda* couch, the imperial procession—you decided that all this could be won with one cast of your eye, and so you have intoxicated the son of crowned King Akbar with the drug of desire!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Enough, stop! Do not sting my heart, now turned into a tongue of flame, like a thousand scorpions! Anarkali gave her love to a soldier! Not to the son of one who bears the sceptre!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Are you still hiding it, Anarkali?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "I was not the one who hid it! Your crown-lord's son knew that I would not respect those who mount thrones, and that is why Prince Salim told me such an enormous lie!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Let what has happened remain what has happened; let what happens hereafter be good. Here, Anarkali! I shall give you a lakh in gold. Take it and go away somewhere. Let the prince forget you!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "If I had loved for gold, I would go! What is the lakh you offer? Kuberas are waiting to seek me out and pour crores and crores before me! They too—and this gold you offer too—are equal to earth in my eyes!....Equal to this earth!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[She scoops up earth and shows it.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "[Calmly] Think a little, calmly! Then answer me! You loved him thinking he was a soldier! According to your own principle, now that you know he is one who rules a land, should you not forget him? Woman! If I were in your place and such a thing happened, I would certainly forget Salim!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "You would forget him........The reason is........you are not Anarkali!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "Very well. What is your final answer?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "You have no authority to stand in the way of my opinion!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "What?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Anarkali's “freedom of love” will not bow before Delhi imperialism!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "That too I shall see!",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- The verified source phrase `என்னுள் உன் குடிசை பெருமையுற்றது` is grammatically unusual. It is translated deliberately and literally as `Within me, your hut has gained honour` rather than silently repaired to a smoother Tamil reading.\n- `கொலு மண்டபம்` is rendered as `court hall`, preserving its royal-audience function.\n- The source-controlled `சப்ரகூட மஞ்சம்` is not silently identified with a more familiar historical term. The translation therefore retains the uncertain compound as the *sabrakooda* couch.\n- `சிம்மாசனமேறிகளை நான் மதிக்கமாட்டேன்` is rendered as `I would not respect those who mount thrones`, preserving the verified source's unusual plural form and its anti-rank force.\n- `காதல் சுதந்திரம்` is translated directly as `freedom of love`; `டில்லி ஏகாதிபத்தியம்` is translated directly as `Delhi imperialism`. The political contrast is source text, not an editorial gloss.\n- `குபேரர்கள்` is retained as `Kuberas`, preserving the conventional image of immense wealth.\n- No wording from the 2009 published-English witness was consulted or used in drafting or review."
+     }
+    ]
+   }
+  },
+  {
+   "order": 3,
+   "slug": "03",
+   "kind": "scene",
+   "headingTa": "காட்சி—3",
+   "headingEn": "Scene 3",
+   "titleTa": "காட்சி—3",
+   "titleEn": "Scene 3",
+   "settingTa": "அனார்கலி வீடு",
+   "settingEn": "Anarkali's House",
+   "sourceScans": [
+    22,
+    23,
+    24
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அனார் அழுது கொண்டிருக்கிறாள் — ‘அனார்’ என்ற சலீமின் இன்பக்குரல் கேட்கிறது. அவளோ திடுக்கிட்டு மிதியுண்ட நாகம்போல் எழுகிறாள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "வருக வருக! இளம் மனதை ஏங்கவிட்ட ஏந்தலே, வருக!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்! குறித்த நேரத்தில் வரவில்லை என்றுதானே கோபிக்கிறாய்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "கொலுமண்டபத்து மனிதர்களுக்கு நேரமாவது? நினைப்பாவது........?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "கொலு மண்டபத்து மனிதன்! அப்பப்பா! எவ்வளவு ஆத்திரம்! அனார்! உன் கோபத்தில் என் அந்தஸ்தைக் கூட உயர்த்துகிறாயே!........ஏழைச் சிப்பாய் நான் என்று எண்ணம் செய்கிறாயா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "தெரியும் எனக்கு! தென்றல் நடை பேசும் தீரரே! போர் வீரனல்ல என் காதலர், புவியாளும் பாதுஷாவின் புதல்வர் என்று!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "ஆ!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "புரிந்துவிட்டது! நீங்கள் மூட்டிய புகை மண்டலம் மறைந்துவிட்டது! உண்மை உதய சூரியனைப் போல் வெளிக் கிளம்பிவிட்டது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்கலி! இல்லை...... இல்லை.......",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "(கோபமாக — அழுகையோடு) ஆமாம், அப்படித்தான்! நீங்கள் சலீம் இல்லேதான்! சாமான்ய சிப்பாய்தான்! நீங்கள் ஜரிகைப்பூ அல்ல! சாமந்திப்பூ! நீங்கள் மாளிகையின் வெள்ளி மரவல்லி! மணம் வீசும் முல்லை மலர்! என் நெஞ்சை தவழ்ந்தவர், ஒளிவிடும் தங்க ரோஜா அல்ல! பனி விழும் இன்ப ரோஜா! இனிய ராஜா அல்ல! இதய ராஜா! அப்படித்தானே சலீம்? அதுபோலத்தானே நான் நம்பி ஏமாறவேண்டும்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்!.......சொல்வதைக் கேள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "கேட்டேனே பல முறை! “கேடயமும் ஈட்டியும் தாங்கிப் போர் முனை செல்லும் பட்டாளத்து வீரனும் நான்” என்று கூறிய போலிப் பேச்சைக் கேட்டேனே பலமுறை! அப்போதெல்லாம் தெரியாதே எனக்கு அந்தஸ்து பேதத்தின் அளவு! தெரிந்திருந்தால், ஆகாயத்துச் சூரியனுக்காக இந்தத் தடாகத்துத் தாமரை மலர்ந்திருக்காதே பிறைக்கொடி காக்கும் பெம்மானின் பிள்ளையே! டெல்லி ஆதிபத்தியத்தின் எதிர்காலக் காவலரே! என்ன விழிக்கிறீர்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "திரை மறைவில் அனுபவித்த தேன் விருந்து! தெவிட்டிய பின் வீசி எறியவேண்டிய காதல் அமுதம்! அந்தத் தேவை தீருவதற்கு முன் தடைபோட்டு நிற்கிறதே என்று எண்ணுகிறீரா?....படைபோட்டு வாழும் பாதுஷாவின் மைந்தரே! சிப்பாய் நடை போட்டு வந்து என்னை ஏமாற்றியது போதும்! சென்றுவிடும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்!... உன்னை நான் ஏமாற்ற எண்ணியதில்லை! ராஜ குடும்பம் என்றால் பயந்து விடுவாயே என்றுதான் போர் வீரன் என்று புகன்றேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "பயந்துவிடுவேன் என்றல்ல; மறந்துவிடுவேன் என்று! இணங்க மாட்டேன் என்று! சாதாரணமான மனிதர்களும் செய்யத் துணியாத சாகசம் சலீம் பாதுஷா செய்திருக்கிறார்! காரணம் அனார்கலியின் மீது அவ்வளவு அன்பாம் அவருக்கு! துள்ளி விளையாடும் புள்ளிமான் மீது அன்பு கொண்ட வேங்கை, வெள்ளாடு போல வேஷம் போட்டுக் கொண்டு வந்ததாம், பாசத்தைக் காட்டி நேசத்தை வளர்க்க! அப்படித்தானே பாதுஷா தங்கள் கதையும்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்கலி! போதும் நிறுத்து! சலீம், வேங்கையுமில்லை, வேஷம் போட்டவுமில்லை. ஆனால் நான் என்ன சொல்லி உன்னிடத்திலே வாதிட்டாலும் நீ நம்பப்போவதும் இல்லை. என் உள்ளத்திலே மெல்ல ஒலிக்கும் களங்கமற்ற காதல் கீதத்தை நீ கேட்க முடியாதபடி கோட்டைச் சுவர் தடுக்கிறது! இருதயத்திலே சித்திரமாக அமைந்துவிட்ட என் காதல் ராணி அனார்கலிதான் என்பதை நீ காணமுடியாதபடி ‘அக்பரின் மகன்’ என்ற திரை மறைக்கிறது! ஆகவே என் பேச்சும் பெருமூச்சும் உன் காதில் விழாது! அனார்கலியின் ரோஜாப் பாதங்களின் அருகே சலீம் சவமாகக் கிடப்பதையே விரும்புகிறேன் என்பதை இப்போதே செயல் மூலம் காட்டிவிடுகிறேன். இதோ, அனார்! இதோ!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சலீம் வாளை எடுத்துத் தற்கொலை செய்து கொள்ள முயலுதல்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனார்",
+      "speakerSeparator": " : ",
+      "text": "(ஓடிப்போய்) சலீம்! சலீம்! என்னை மன்னித்துவிடுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்! (இருவரும் தழுவுதல்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(காவலர் வந்து)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "காவ",
+      "speakerSeparator": " : ",
+      "text": "உங்களிருவரையும் கைது செய்யும்படி அக்பர் பாதுஷா உத்தரவு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(ராஜா மான்சிங் தொலைவிலிருக்கிறார்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "ஆ!.......ராஜா மான்சிங்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ராஜா",
+      "speakerSeparator": " : ",
+      "text": "(தொலைவில் இருந்தபடி)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்! அக்பர் ஆட்சி அப்படித்தான் ஆணையிடுகிறது (சலீம்—அனார் அழைத்துச் செல்லப்படுதல்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(திரையில் குரல்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சலீமும் அனார்கலியும் குற்றம் சாட்டப்பட்டனர். இருவருக்கும் அக்பர் பாதுஷா மரண தண்டனை விதித்தார் — அரசபரம்பரை அந்தமித்து விடக்கூடாது என்று எண்ணிய ராஜா மான்சிங் அக்பரோடு வாதாடி சலீமை மட்டும் விடுவித்தார்! அனார்கலியை உயிரோடு சமாதி வைக்க வேண்டுமென்று ஆணை பிறந்தது! சேதி கேட்டு சலீம் ஓடினான் காதலியை மீட்க! கண்மணியை மீட்க ஓடியவன் கண்டதென்ன? அய்யகோ! அதற்குள்........ அனார்கலி சமாதியில் மறைந்துவிட்டாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Anar is weeping—the sweet sound of Salim's voice calling “Anar” is heard. Startled, she rises like a trampled serpent.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Come, come! O lord who has left this young heart yearning, come!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anar! Are you angry because I did not come at the appointed time?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Do people of the royal court hall have any sense of time? Any remembrance........?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "A man of the court hall! Ah, ah! What fury! Anar! Even in your anger you raise my status!........Do you still think I am a poor soldier?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "I know now! O valiant one whose speech moves with a breeze-like grace! My beloved is no warrior, but the son of the Padshah who rules the earth!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Ah!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "I understand! The cloud of smoke you raised has vanished! Truth has emerged like the rising sun!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anarkali! No...... no.......",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "[Angrily, through tears] Yes, exactly so! You are not Salim after all! You are only an ordinary soldier! You are not a zari-flower! You are a chrysanthemum! You are the silver creeper of the palace! A fragrant mullai blossom! The one who crept over my heart is not a shining golden rose! He is a sweet rose on which the dew falls! Not a sweet king! The king of my heart! Isn't that so, Salim? Was that not how I was supposed to believe you and be deceived?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anar!.......Listen to what I have to say!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "I listened many times! Many times I listened to the false speech: “I too am a soldier of the army, bearing shield and spear and going to the battlefront!” At the time I did not know the measure of the difference in status! Had I known, this lotus in the pond would never have bloomed for the sun in the sky, O son of the lord who guards the crescent banner! O future guardian of Delhi's dominion! Why do you stare?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "A honey-feast enjoyed behind the curtain! The nectar of love to be thrown away after one has had one's fill! Do you think a barrier has now appeared before that need could be satisfied?....O son of a Padshah who lives by arraying armies! Enough of coming with a soldier's gait and deceiving me! Go away!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anar!... I never intended to deceive you! I said I was a warrior only because I feared that you would be frightened away if you knew I belonged to the royal family.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "Not because I would be frightened; because I would forget you! Because I would not consent! Salim Padshah has dared an adventure that ordinary people themselves would not dare! And the reason, they say, is that he has such love for Anarkali! A tiger, they say, loved a playful spotted deer and came disguised as a goat, to show affection and make love grow! Isn't that your story too, Padshah?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anarkali! Enough, stop! Salim is neither a tiger nor one who came in disguise. But whatever I say and however I argue with you, you are not going to believe me. A fortress wall prevents you from hearing the stainless song of love sounding softly within my heart! The curtain called “Akbar's son” prevents you from seeing that the queen of love who has become a picture within my heart is Anarkali! So neither my words nor my sighs will reach your ear! I shall show you by action, here and now, that Salim wishes only to lie as a corpse beside Anarkali's rose-like feet. Here, Anar! Here!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Salim draws his sword and attempts to kill himself.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anar",
+      "speakerSeparator": " : ",
+      "text": "[Running to him] Salim! Salim! Forgive me!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anar! [They embrace.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[A guard enters.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Guard",
+      "speakerSeparator": " : ",
+      "text": "Padshah Akbar orders that both of you be arrested!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Raja Man Singh is standing at a distance.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Ah!.......Raja Man Singh!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Raja",
+      "speakerSeparator": " : ",
+      "text": "[From a distance]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yes! That is what Akbar's rule commands. [Salim and Anar are led away.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Voice behind the curtain]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Salim and Anarkali were accused. Padshah Akbar sentenced both of them to death—the royal line must not be allowed to come to an end, Raja Man Singh thought; he argued with Akbar and secured the release of Salim alone! An order was issued that Anarkali be entombed alive! Hearing the news, Salim ran to rescue his beloved! What did the man who ran to save his precious one find? Alas! By then........Anarkali had disappeared within the tomb!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- `மிதியுண்ட நாகம்போல்` is translated directly as `like a trampled serpent`, retaining the violent image in the stage direction.\n- The elevated source phrase `தென்றல் நடை பேசும் தீரரே!` is rendered conservatively as `O valiant one whose speech moves with a breeze-like grace`; the English does not rewrite the underlying Tamil phrase.\n- `ஜரிகைப்பூ` is retained as `zari-flower`, while `சாமந்திப்பூ` is rendered as `chrysanthemum`, preserving the source's conspicuous contrast rather than substituting a smoother floral pair.\n- `அந்தஸ்து பேதத்தின் அளவு` is rendered as `the measure of the difference in status`, retaining the scene's rank/class vocabulary.\n- `பிறைக்கொடி` is `crescent banner`; `டெல்லி ஆதிபத்தியம்` is `Delhi's dominion`. These political-geographic expressions are kept explicit.\n- The accusation beginning `திரை மறைவில் அனுபவித்த தேன் விருந்து!` is retained as a sexually charged accusation and is not euphemized.\n- `(திரையில் குரல்)` is translated as `Voice behind the curtain`; its death-sentence and live-entombment narration is dramatic source text, not editorial summary.\n- The source-printed final `*` is retained.\n- No wording from the 2009 published-English witness was consulted or used in drafting or review."
+     }
+    ]
+   }
+  },
+  {
+   "order": 4,
+   "slug": "04",
+   "kind": "scene",
+   "headingTa": "காட்சி—4",
+   "headingEn": "Scene 4",
+   "titleTa": "காட்சி—4",
+   "titleEn": "Scene 4",
+   "settingTa": "சமாதி",
+   "settingEn": "Tomb",
+   "sourceScans": [
+    25,
+    26
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சலீம்",
+      "speakerSeparator": " : ",
+      "text": "அனார்! அனார்! மறைந்துவிட்டாயா என் மாசற்ற ஜோதி மழையே! பெண்ணிற் பெரும் பொருளே! பேரழகின் பிறப்பிடமே! என் கண்ணிற்படாமல் உன் கட்டழகைக் கல்லறைக்குள் மறைத்துவிட்டார்களா மாபாவிகள்! காதலுக்கோர் எடுத்துக்காட்டே! கவிஞர்களும் தொழுத்திட இயலாக் கற்பின் ஆரமே! சிரித்துச் செழித்த உன் சிங்கார முகத்தை எரித்துக்கெடுக்க வேண்டாமென்று, கல்லுகொட்டி மூடினரோ, கல்லினும் வலிய மனமுடையோர்? காதலி! அனார்கலி! அனார்கலி!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பாவிகளே! என் அனார்கலியை அழித்துவிட்டீர்கள்! என் இதய ஜோதியை அணைத்துவிட்டீர்கள்! அமர வீணையை உடைத்து விட்டீர்கள்! காதல் மகாகாவியத்தின் சிரஞ்சீவிக் கதாநாயகியைக் கல்லறைக்குள் மூடிவிட்டீர்கள்! அவள் அழுகை மறைத்தீர்கள்! ஆனால் அற்ப சந்தோஷக்காரர்களே, அவள் சலீம் நெஞ்சத்திலிருந்து எடுத்தெறிய யாருக்கும் துணிவில்லை! யாருக்கும் திறனில்லை!.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நாடோடியாம் அவள்! நாடாள வேண்டியவனும் நான்! என் சுட்டுவிரல் அசைவுக்கு எட்டுத்திக்கும் பணியுமாம்! படை பல உண்டாம் எனக்கு! தடை பல கடக்கலாமாம் நான், பெரிய ஊர்போல் அரண்மனை! பிரும்மாண்டமான கோட்டை! எடுபிடி, ஆள், அம்பு, யானை, சேனை ஏராளம், ஏராளம்! மணி முடியுண்டு! பணிபுரியப் பலர் வருவர்! மந்த மாருதம் வேண்டுமா? அதற்கோர் சோலை! நீந்தி விளையாடவா? அதற்கோர் நீரோடை! பட்டு விரித்த தரையிலே பாதம் பட்டால் நோகுமோ என்று கவலைப்படக் கணக்கற்றோர்! மொட்டு விரிந்த மல்லிகை நல்லதா, முல்லை நல்லதா, பஞ்சத்திலே பரப்ப—என்று யோசிப்போர் ஆயிரம் ஆயிரம்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இவ்வளவும் இருந்தென்ன? இத்தனை சுகமும் கிடைத்தென்ன? இதயத்திலே குடியேறி விட்டவளை ஏற்றுக் கொள்ளும் உரிமை கிட்டாத எனக்கு? விருப்பியவளை அடைந்திடும் சுதந்திரமில்லாத எனக்கு? இவ்வளவும் இருந்தால் என்ன, இல்லாவிட்டால் என்ன? அரண்மனை ஏன்? ஆடம்பரம் ஏன்? அரச வாழ்வு ஏன்? என் ஆணை கேட்க ஆயிரம் ஆட்கள் ஏன்? ஏன்? ஏன்....? அனார்கலி! உன்னை அடைய முடியாத இப்பாவிக்கு இத்தனையும் ஏன்? உயிரோடு உன்னைச் சமாதி வைத்ததைத் தடுக்க முடியாத இந்த அடிமை ராஜ குமாரனுக்கு ராஜ்யந்தான் ஏன்? நீதியில்லாத பூமியில், என் அன்பே! எனக்கு வாழ்வுதான் ஏன்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அக்பரின் மகன் ஒரு நடன மாதைக் காதலிக்கக் கூடாதாம். என் கட்டழகியை மூடியுள்ள கல்லறையே, நீ சொல்! ராஜ்ய அந்தஸ்து குறைந்துவிட்டது என்று அவளை நீ விழுங்கிவிட்டாய். முஸ்லீம் பாதுஷா அக்பர், ராஜபுத்திர ஜோதிபாயை மணந்து கொள்ளலாமாம். அந்த ஜோதிபாயின் மகன் ஒரு நடன சந்திரியை காதலிக்கக்கூடாதாம்! என் காதலியை விழுங்கியுள்ள கல்லறையே, நியாயந்தானா? சொல்! நீ இப்போது வழங்கியிருப்பது நல்ல தீர்ப்புதானா? சொல்....! சொல்ல மாட்டாய்! உனக்கு உயிரைக் குடிக்கத்தான் தெரியும்! இதோ அந்த வேலையைச் செய்! உனக்குப் பழக்கமான அந்த வேலையைச் செய்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சலீம் சாகத்துணிகிறான்........அவன் மரணத்தை, அந்த மண்டலம் விரும்பவில்லை.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Salim",
+      "speakerSeparator": " : ",
+      "text": "Anar! Anar! Have you vanished, my spotless shower of radiance! Great treasure among women! Birthplace of supreme beauty! Have those great sinners hidden your shapely beauty inside a grave where it can no longer meet my eyes! Exemplar of love! Garland of chastity beyond even poets' worship! Did those hearts harder than stone heap stones over you because they did not wish your smiling, flourishing lovely face to be burned and destroyed? Beloved! Anarkali! Anarkali!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Sinners! You have destroyed my Anarkali! You have extinguished the light of my heart! You have broken the immortal veena! You have shut within a grave the deathless heroine of the great epic of love! You have hidden her tears! But, you petty celebrants, no one has the courage to tear her out of Salim's heart! No one has the power!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "She is, they say, a wanderer! And I am the one who must rule a land! At the movement of my forefinger, they say, all eight directions submit! I have great armies, they say! I can cross many barriers, they say! A palace like a great city! A colossal fort! Attendants, men, arrows, elephants, armies in abundance, abundance! A jewelled crown! Many will come to serve! Do I want a gentle breeze? There is a grove for that! Do I want to swim and play? There is a stream for that! Countless people to worry whether my foot might hurt if it touches a floor spread with silk! Thousands upon thousands to wonder whether blossomed jasmine or mullai would be better to spread upon the cotton bedding........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "What use is all this? What use are so many pleasures? To me, who is denied the right to accept the woman who has taken up residence in my heart? To me, who has no freedom to attain the woman I desire? Whether all this exists or does not exist, what does it matter? Why a palace? Why splendour? Why royal life? Why a thousand people to obey my command? Why? Why? Why....? Anarkali! Why should this sinner, who cannot attain you, have all these things? Why should this slave-prince, who could not prevent you from being entombed alive, have a kingdom at all? On an earth without justice, my love, why should I even have life?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "They say Akbar's son must not love a dancing woman. O grave that has covered my beautiful beloved, you tell me! You swallowed her because, they say, royal status would be lowered. The Muslim Padshah Akbar may marry the Rajput Jodhabai, they say. But that Jodhabai's son must not love a moon-maiden of dance! O grave that has swallowed my beloved, is that justice? Tell me! Is the verdict you have just delivered a good one? Tell me....! You will not speak! All you know is how to drink life! Here—do that work! Do the work you are accustomed to!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Salim attempts to die........that realm does not wish his death.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- `மாசற்ற ஜோதி மழையே!` is rendered as `my spotless shower of radiance`, retaining the source's unusual compound image rather than replacing it with a generic endearment.\n- `கற்பின் ஆரமே!` is translated as `garland of chastity`; `அமர வீணை` remains `immortal veena`, preserving the source's cultural and poetic imagery.\n- The repeated status/privilege inventory is retained rather than compressed. Its accumulation is central to Salim's argument that royal abundance is worthless without freedom in love.\n- `பஞ்சத்திலே பரப்ப` is rendered conservatively in context as `to spread upon the cotton bedding`. The verified Tamil form itself remains unchanged in the archive.\n- `நீதியில்லாத பூமியில்` is translated directly as `on an earth without justice`; the phrase is not softened into private grief.\n- `ராஜபுத்திர ஜோதிபாயை` is rendered as `the Rajput Jodhabai` without importing an external historical correction or expanded identification.\n- `நடன சந்திரி` is translated as `a moon-maiden of dance`, retaining the source metaphor.\n- The final stage direction is translated literally as a dramatic statement: Salim attempts to die, but `that realm` does not wish his death. It is not replaced with a historically inferred outcome.\n- The source-printed final `*` is retained.\n- No wording from the 2009 published-English witness was consulted or used in drafting or review."
+     }
+    ]
+   }
+  }
+ ]
+}

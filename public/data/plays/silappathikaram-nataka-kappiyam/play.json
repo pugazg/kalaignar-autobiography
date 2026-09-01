@@ -23,16 +23,19 @@
  "sourceRepo": "pugazg/kalaignar-stage-plays",
  "sourcePath": "works/silappathikaram-nataka-kappiyam",
  "sourceCommit": "a66e62bbecaf63825b3db09a1d421401e1ab2e8e",
+ "structureKind": "scene-sequence",
  "sceneCount": 38,
  "closingTableauCount": 1,
+ "scanProvenance": "per-unit",
  "bodyScans": {
   "from": 17,
   "to": 88
  },
- "scenes": [
+ "readingUnits": [
   {
    "order": 1,
    "slug": "01",
+   "kind": "scene",
    "headingTa": "காட்சி-1",
    "headingEn": "Scene 1",
    "titleTa": "வஞ்சி மூதூரில் முரசறைதல்",
@@ -42,7 +45,6 @@
    "sourceScans": [
     17
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -139,6 +141,7 @@
   {
    "order": 2,
    "slug": "02",
+   "kind": "scene",
    "headingTa": "காட்சி-2",
    "headingEn": "Scene 2",
    "titleTa": "செங்குட்டுவன் பிறந்தநாள் விழா",
@@ -148,7 +151,6 @@
    "sourceScans": [
     18
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -503,6 +505,7 @@
   {
    "order": 3,
    "slug": "03",
+   "kind": "scene",
    "headingTa": "காட்சி-3",
    "headingEn": "Scene 3",
    "titleTa": "விழாவும் வினாவும்",
@@ -513,7 +516,6 @@
     19,
     20
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -1000,6 +1002,7 @@
   {
    "order": 4,
    "slug": "04",
+   "kind": "scene",
    "headingTa": "காட்சி-4",
    "headingEn": "Scene 4",
    "titleTa": "இளங்கோ துறவு",
@@ -1011,7 +1014,6 @@
     22,
     23
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -1884,6 +1886,7 @@
   {
    "order": 5,
    "slug": "05",
+   "kind": "scene",
    "headingTa": "காட்சி-5",
    "headingEn": "Scene 5",
    "titleTa": "சிலம்பின் தோற்றம்",
@@ -1894,7 +1897,6 @@
     24,
     25
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -2669,6 +2671,7 @@
   {
    "order": 6,
    "slug": "06",
+   "kind": "scene",
    "headingTa": "காட்சி-6",
    "headingEn": "Scene 6",
    "titleTa": "பூம்புகார்ப் பொற்றொடி",
@@ -2680,7 +2683,6 @@
     27,
     28
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -4093,6 +4095,7 @@
   {
    "order": 7,
    "slug": "07",
+   "kind": "scene",
    "headingTa": "காட்சி-7",
    "headingEn": "Scene 7",
    "titleTa": "கலைக்கரசி மாதவி",
@@ -4105,7 +4108,6 @@
     31,
     32
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -5754,6 +5756,7 @@
   {
    "order": 8,
    "slug": "08",
+   "kind": "scene",
    "headingTa": "காட்சி-8",
    "headingEn": "Scene 8",
    "titleTa": "கண்ணகி இல்லறம்",
@@ -5765,7 +5768,6 @@
     34,
     35
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -7174,6 +7176,7 @@
   {
    "order": 9,
    "slug": "09",
+   "kind": "scene",
    "headingTa": "காட்சி-9",
    "headingEn": "Scene 9",
    "titleTa": "பிரிவினை தந்த பேதை",
@@ -7185,7 +7188,6 @@
     37,
     38
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -9146,6 +9148,7 @@
   {
    "order": 10,
    "slug": "10",
+   "kind": "scene",
    "headingTa": "காட்சி-10",
    "headingEn": "Scene 10",
    "titleTa": "கலையரசி கண்ட உவகை",
@@ -9157,7 +9160,6 @@
     40,
     41
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -10238,6 +10240,7 @@
   {
    "order": 11,
    "slug": "11",
+   "kind": "scene",
    "headingTa": "காட்சி-11",
    "headingEn": "Scene 11",
    "titleTa": "கற்பரசியின் கலக்கம்",
@@ -10247,7 +10250,6 @@
    "sourceScans": [
     42
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -10767,6 +10769,7 @@
   {
    "order": 12,
    "slug": "12",
+   "kind": "scene",
    "headingTa": "காட்சி-12",
    "headingEn": "Scene 12",
    "titleTa": "இன்ப வாழ்வில் கோவலன்",
@@ -10776,7 +10779,6 @@
    "sourceScans": [
     43
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -11055,6 +11057,7 @@
   {
    "order": 13,
    "slug": "13",
+   "kind": "scene",
    "headingTa": "காட்சி-13",
    "headingEn": "Scene 13",
    "titleTa": "துன்பப் புயலில் கண்ணகி",
@@ -11065,7 +11068,6 @@
     44,
     45
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -12114,6 +12116,7 @@
   {
    "order": 14,
    "slug": "14",
+   "kind": "scene",
    "headingTa": "காட்சி-14",
    "headingEn": "Scene 14",
    "titleTa": "மாதவியின் மாண்பு",
@@ -12125,7 +12128,6 @@
     47,
     48
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -14328,6 +14330,7 @@
   {
    "order": 15,
    "slug": "15",
+   "kind": "scene",
    "headingTa": "காட்சி-15",
    "headingEn": "Scene 15",
    "titleTa": "மனமாறிந்த கோவலன்",
@@ -14337,7 +14340,6 @@
    "sourceScans": [
     49
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -14436,6 +14438,7 @@
   {
    "order": 16,
    "slug": "16",
+   "kind": "scene",
    "headingTa": "காட்சி-16",
    "headingEn": "Scene 16",
    "titleTa": "மணிமேகலை பிறப்பு",
@@ -14445,7 +14448,6 @@
    "sourceScans": [
     50
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -14642,6 +14644,7 @@
   {
    "order": 17,
    "slug": "17",
+   "kind": "scene",
    "headingTa": "காட்சி-17",
    "headingEn": "Scene 17",
    "titleTa": "மாசறு பொன்மகிழ்வு",
@@ -14652,7 +14655,6 @@
     51,
     52
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -14851,6 +14853,7 @@
   {
    "order": 18,
    "slug": "18",
+   "kind": "scene",
    "headingTa": "காட்சி-18",
    "headingEn": "Scene 18",
    "titleTa": "இந்திர விழா-இருமனைகளில்",
@@ -14861,7 +14864,6 @@
     53,
     54
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -16405,6 +16407,7 @@
   {
    "order": 19,
    "slug": "19",
+   "kind": "scene",
    "headingTa": "காட்சி-19",
    "headingEn": "Scene 19",
    "titleTa": "கானல் வரியும் / காதல் பிரிவும்",
@@ -16417,7 +16420,6 @@
     57,
     58
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -18317,6 +18319,7 @@
   {
    "order": 20,
    "slug": "20",
+   "kind": "scene",
    "headingTa": "காட்சி-20",
    "headingEn": "Scene 20",
    "titleTa": "திருந்திய கோவலன் / திரும்பி வருதல்",
@@ -18327,7 +18330,6 @@
     59,
     60
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -19152,6 +19154,7 @@
   {
    "order": 21,
    "slug": "21",
+   "kind": "scene",
    "headingTa": "காட்சி-21",
    "headingEn": "Scene 21",
    "titleTa": "கலைமகள்",
@@ -19162,7 +19165,6 @@
     61,
     62
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -19569,6 +19571,7 @@
   {
    "order": 22,
    "slug": "22",
+   "kind": "scene",
    "headingTa": "காட்சி-22",
    "headingEn": "Scene 22",
    "titleTa": "மதுரைப் பயணம்",
@@ -19579,7 +19582,6 @@
     63,
     64
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -20537,6 +20539,7 @@
   {
    "order": 23,
    "slug": "23",
+   "kind": "scene",
    "headingTa": "காட்சி-23",
    "headingEn": "Scene 23",
    "titleTa": "மாதவி துறவு",
@@ -20546,7 +20549,6 @@
    "sourceScans": [
     65
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -20961,6 +20963,7 @@
   {
    "order": 24,
    "slug": "24",
+   "kind": "scene",
    "headingTa": "காட்சி-24",
    "headingEn": "Scene 24",
    "titleTa": "கவுந்தியுடன் கண்ணகி கோவலன்",
@@ -20970,7 +20973,6 @@
    "sourceScans": [
     66
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -21492,6 +21494,7 @@
   {
    "order": 25,
    "slug": "25",
+   "kind": "scene",
    "headingTa": "காட்சி-25",
    "headingEn": "Scene 25",
    "titleTa": "நீதி வழுவா நெடுஞ்செழியன்",
@@ -21502,7 +21505,6 @@
     67,
     68
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -22337,6 +22339,7 @@
   {
    "order": 26,
    "slug": "26",
+   "kind": "scene",
    "headingTa": "காட்சி-26",
    "headingEn": "Scene 26",
    "titleTa": "அரசியின் சிலம்பு",
@@ -22346,7 +22349,6 @@
    "sourceScans": [
     69
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -22649,6 +22651,7 @@
   {
    "order": 27,
    "slug": "27",
+   "kind": "scene",
    "headingTa": "காட்சி-27",
    "headingEn": "Scene 27",
    "titleTa": "ஆய்ச்சியர் அறிமுகம்",
@@ -22658,7 +22661,6 @@
    "sourceScans": [
     70
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -23065,6 +23067,7 @@
   {
    "order": 28,
    "slug": "28",
+   "kind": "scene",
    "headingTa": "காட்சி-28",
    "headingEn": "Scene 28",
    "titleTa": "பொற்கொல்லர் முறையீடு",
@@ -23074,7 +23077,6 @@
    "sourceScans": [
     71
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -23755,6 +23757,7 @@
   {
    "order": 29,
    "slug": "29",
+   "kind": "scene",
    "headingTa": "காட்சி-29",
    "headingEn": "Scene 29",
    "titleTa": "ஒற்றைச் சிலம்பின் ஒலி",
@@ -23767,7 +23770,6 @@
     74,
     75
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -26261,6 +26263,7 @@
   {
    "order": 30,
    "slug": "30",
+   "kind": "scene",
    "headingTa": "காட்சி-30",
    "headingEn": "Scene 30",
    "titleTa": "சிலம்போ சிலம்பு",
@@ -26270,7 +26273,6 @@
    "sourceScans": [
     76
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -26955,6 +26957,7 @@
   {
    "order": 31,
    "slug": "31",
+   "kind": "scene",
    "headingTa": "காட்சி-31",
    "headingEn": "Scene 31",
    "titleTa": "வளைந்தது செங்கோல்",
@@ -26964,7 +26967,6 @@
    "sourceScans": [
     77
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -27547,6 +27549,7 @@
   {
    "order": 32,
    "slug": "32",
+   "kind": "scene",
    "headingTa": "காட்சி-32",
    "headingEn": "Scene 32",
    "titleTa": "மதுரை மண்ணில் கோவலன் குருதி",
@@ -27557,7 +27560,6 @@
     78,
     79
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -28358,6 +28360,7 @@
   {
    "order": 33,
    "slug": "33",
+   "kind": "scene",
    "headingTa": "காட்சி-33",
    "headingEn": "Scene 33",
    "titleTa": "கணவன் கள்வனா?",
@@ -28367,7 +28370,6 @@
    "sourceScans": [
     80
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -28817,6 +28819,7 @@
   {
    "order": 34,
    "slug": "34",
+   "kind": "scene",
    "headingTa": "காட்சி-34",
    "headingEn": "Scene 34",
    "titleTa": "வஞ்சினங் கூறுதல்",
@@ -28826,7 +28829,6 @@
    "sourceScans": [
     81
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -29049,6 +29051,7 @@
   {
    "order": 35,
    "slug": "35",
+   "kind": "scene",
    "headingTa": "காட்சி-35",
    "headingEn": "Scene 35",
    "titleTa": "வழக்குரை படலம்",
@@ -29061,7 +29064,6 @@
     84,
     85
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -31050,6 +31052,7 @@
   {
    "order": 36,
    "slug": "36",
+   "kind": "scene",
    "headingTa": "காட்சி-36",
    "headingEn": "Scene 36",
    "titleTa": "தீயினில் திருநகர்",
@@ -31059,7 +31062,6 @@
    "sourceScans": [
     86
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -31328,6 +31330,7 @@
   {
    "order": 37,
    "slug": "37",
+   "kind": "scene",
    "headingTa": "காட்சி-37",
    "headingEn": "Scene 37",
    "titleTa": "வடபுலப் படையெடுப்பு",
@@ -31337,7 +31340,6 @@
    "sourceScans": [
     87
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -31438,6 +31440,7 @@
   {
    "order": 38,
    "slug": "38",
+   "kind": "scene",
    "headingTa": "காட்சி-38",
    "headingEn": "Scene 38",
    "titleTa": "கண்ணகி சிலைக்குக் கல்",
@@ -31447,7 +31450,6 @@
    "sourceScans": [
     88
    ],
-   "isClosingTableau": false,
    "tamil": {
     "units": [
      {
@@ -32064,6 +32066,7 @@
   {
    "order": null,
    "slug": "closing-tableau",
+   "kind": "closing-tableau",
    "headingTa": "நிறைவுக் காட்சி அமைப்பு",
    "headingEn": "Closing Tableau",
    "titleTa": "கண்ணகி சிலை நாட்டு விழா",
@@ -32073,7 +32076,6 @@
    "sourceScans": [
     88
    ],
-   "isClosingTableau": true,
    "tamil": {
     "units": [
      {

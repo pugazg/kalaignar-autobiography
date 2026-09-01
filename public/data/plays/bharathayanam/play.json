@@ -1,0 +1,1995 @@
+{
+ "workId": "bharathayanam",
+ "slug": "bharathayanam",
+ "title": {
+  "ta": "பரதாயணம்",
+  "en": "Bharathayanam"
+ },
+ "descriptor": {
+  "ta": "காலட்சேப நாடகம்",
+  "en": "A kalakshepam drama"
+ },
+ "author": {
+  "ta": "கலைஞர் மு. கருணாநிதி",
+  "en": "Kalaignar M. Karunanidhi"
+ },
+ "edition": {
+  "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+  "placeTa": "சென்னை-28",
+  "priceTa": "விலை ரூ. 4/-",
+  "copyrightLineTa": "© பதிப்புரிமை",
+  "collectionTitleTa": "கலைஞரின் நான்மணி மாலை",
+  "year": null
+ },
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/bharathayanam",
+ "sourceCommit": "145e52e88dbd009286f749a7f0e3520386e63244",
+ "structureKind": "continuous-play",
+ "sceneCount": 0,
+ "closingTableauCount": 0,
+ "scanProvenance": "per-unit-group",
+ "bodyScans": {
+  "from": 6,
+  "to": 17
+ },
+ "openingNote": {
+  "attachedTo": "continuous-play",
+  "labelTa": "அச்சிடப்பட்ட தொடக்கக் குறிப்பு",
+  "labelEn": "Printed opening note",
+  "sourceScans": [
+   6
+  ],
+  "tamil": {
+   "units": [
+    {
+     "kind": "stage-direction",
+     "delimiter": "round",
+     "text": "(பொதுக்கூட்டம் — மக்கள் கூடியிருக்கிறார்கள். அறிவியக்கத்தைச் சேர்ந்த ஒரு தோழர், பாகவதர் உடையுடனும் — இன்னொரு தோழர் சீடன் வடிவிலும் நின்று கொண்டு, பரதாயணக் காலட்சேபத்தை நடத்துகிறார்கள், இடையிடையே பாடிக்கொண்டு! கேட்ட மக்கள் பயன் பெறுகிறார்கள். இதில் பிற்பகுதிதான் கற்பனை! முற்பகுதி — வால்மீகி ராமாயண உண்மை)",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": "குறிப்பு",
+     "speakerSeparator": " : ",
+     "text": "(காலட்சேப நடையில் இழுத்தாற்போலப் படிக்கின் இனிமை பயக்கும்)",
+     "hasLineBreaks": false
+    }
+   ]
+  },
+  "english": {
+   "units": [
+    {
+     "kind": "stage-direction",
+     "delimiter": "round",
+     "text": "(A public meeting — people have gathered. A comrade belonging to the rationalist movement, dressed as a Bhagavatar, and another comrade in the guise of his disciple stand together and perform the *Bharathayanam* kalakshepam, singing from time to time! The people who listen benefit from it. Only the latter part is imagination! The first part — the truth of Valmiki's Ramayana.)",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": "Note",
+     "speakerSeparator": ": ",
+     "text": "(It will be pleasing if read in the drawn-out style of kalakshepam.)",
+     "hasLineBreaks": false
+    }
+   ],
+   "notes": []
+  }
+ },
+ "readingUnits": [
+  {
+   "order": null,
+   "slug": "continuous-play",
+   "kind": "continuous-body",
+   "headingTa": "பரதாயணம்",
+   "headingEn": "Bharathayanam",
+   "titleTa": "பரதாயணம்",
+   "titleEn": "Bharathayanam",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாகவதர்",
+      "speakerSeparator": " : ",
+      "text": "அகோ வாரும் பிள்ளாய், சிஷ்யா! முன்னொரு காலத்தில் ஐம்பத்தாறு தேசத்து ராஜாக்களும். இந்த உலகத்திலே ராஜரீகம் செய்து வந்தார்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்யன்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்........!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "உலகமென்றால்........?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "உருண்டை வடிவமாக........சதா சர்வ காலமும் சுற்றிக் கொண்டேயிருக்கும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அட முட்டாளே! அது இப்போதுள்ள உலகமடா? முன்பெல்லாம் உலகமென்றால், கன்யாகுமரி முனையிலேயிருந்து இமயமலைத் தொடரிலேயுள்ள கைலாச மலையின் அடிவாரம்வரையிலே வியாபித்துப் பரந்து கிடந்ததாக்கும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்....ஆமாம்........!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அப்படிப் பரவிக் கிடந்த உலகத்திலே........அயோத்தியாபுரிப் பட்டணத்தை தசரத மகாராஜா ஆண்டு வந்தார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "யார் ஆண்டு வந்தா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "தசரத மகாராஜா!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அந்த மகாராஜாவின் அரண்மனையில்....அறுபதினாயிரம்....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சிஷ்யனிடம் திரும்ப)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "போர் வீரர்கள் இருந்தார்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "(திகைத்து) போர் வீரர்களா?....... அடப்பாவி!.......போர் வீரர்கள் இல்லையடா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆங்....(சமாளித்து) க்ஷமிக்கவும்; ஸ்வாமி, அறுபதினாயிரம் பொன் நாணயங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அட புத்தி கெட்டவனே....பொறுடா பொறு!....நீ சொல்வதும் உண்மைதான் — பொன் நாணயங்கள்தான் — அவர்கள் உடம்பெல்லாம் பொன்தான்!.... தங்க நிறந்தான்! நீ சொல்லியபடி போர் வீரர்கள்தான்!.... ஆனால் அவர்கள் போரிடும் இடமே வேறு!.... தசரதனோடு பஞ்சணையிலே போரிடும் பாவையர்கள்! அறுபதினாயிரம் பத்தினிமார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "அய்யோடா ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "பிள்ளைகள் இருந்திருந்தால்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "அயோத்தியில் பஞ்சம் வந்திருக்கும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "ஆங்!....முந்திரிக் கொட்டை! பிள்ளைகள் இருந்திருந்தால் தசரதன் சந்தோஷமாக இருந்திருப்பான்!.... தசரதனுக்கு அறுபதாயிரம் உற்சவ விக்கிரகங்களே இல்லாமல் மூன்று பேர் மூல விக்கிரகங்கள்! அவர்கள் கெளசல்யா — சுமித்திரை — கைகேயி......என்னும் நாமதேயமுடையவர்கள்!...... அதற்காக தசரதன் புத்திரகாமேஷ்டி யாகம் செய்தான். அந்த யாகத்திலே குதிரை வெட்டப்பட்டது. வெட்டப்பட்ட குதிரையை அணைத்துக்கொண்டு மூல மனைவியர் மூன்று பேரும் தூங்கினார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "யாகத்திலே அவிர்ப்பாகம் வரவழைக்கப்பட்டது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அதை அந்த மூன்று மனைவிகளும் சாப்பிட்டுவிட்டு, யாகத்திற்கு வந்திருந்த ரிஷிகளோடு இந்திர போகத்தை அனுபவித்தார்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அதனால் என்ன ஆயிற்று!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "கற்பு போயிற்று!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இல்லையடா ! கரு உருவாயிற்று....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அகோ வாரும் பிள்ளாய் சிஷ்யா! இப்படியாகத்தானே, வால்மீகி ராமாயணத்து சுலோகத்தின்படி யாகம் நடை பெற்று, மூன்று பட்டமகிஷிகளும் நான்கு பிள்ளைகளைப் பெற்றெடுத்தார்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம் !",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அந்தப் பிள்ளைகள் நாளொரு மேனியும் பொழுதொரு வண்ணமுமாக வளர்ந்து யானையேற்றம் — குதிரையேற்றம் முதலிய எல்லா வித்தைகளையும் கற்றுக்கொண்டார்கள் !",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அந்த தசரதனாகப்பட்டவனுக்கு....மூத்த பிள்ளை ராமன் மீதுதான் மோகம், அன்பு எல்லாம்!.... அதனால் அவனுக்கு ராஜ்ய பட்டாபிஷேகம் செய்ய வேண்டுமென்று தீர்மானித்து தேதி குறிக்க வசிஷ்ட முனிவரை வரவழைத்தான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இப்படியாகத்தானே வசிஷ்ட முனிவர் வந்ததும், அவரைப் பார்த்து தசரதன், — “அகோ வாரும், அன்பார்ந்த முனிபுங்கவரே! அடியேன் ஒரு விண்ணப்பம் செய்து கொள்கிறேன். அதாகப்பட்டது, நமது ராமச்சந்திரனுக்கு அயோத்தி யுவராஜா பட்டாபிஷேகத்தைச் செய்து முடித்துவிடலாமென நினைக்கிறேன்” என்பதாகச் சொல்லி நின்றான் — உடனே வசிஷ்ட முனிவர், தனது நரைத்த தாடியைத் தடவியபடிச் சொல்வதாவது:—",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“கேளும் தசரத மகாராஜனே! முன்னொரு காலத்தில் கேகயன் மகள் கைகேயியை நீ விவாகம் செய்துகொள்ளப் போகும்போது நடந்ததை மறந்துவிட்டாய் என்று நினைக்கிறேன் — வயதான உனக்கு பாரியாளாய் வர கைகேயி இணங்கவில்லை. கிழவருக்கு எப்படி இந்தக் கிளியைக் கொடுப்பது என்று கேகய ராஜன் மறுத்துவிட்டான். உடனே நீ கைகேயியின் சௌந்தர்ய ரூப லாவண்யத்திலே மயங்கித் தேன் குடித்த வண்டுபோல இருந்த காரணத்தால், கைகேயிக்கு அயோத்தியையே காணிக்கையாகத் தருகிறேன் என்று வாக்களித்து, அந்த க்ஷணமே அவளுக்கு ஆரிய தர்ம சாஸ்திரகிரமப்படி — ‘கன்யா சுல்கம்’ என்ற பெயரால் அயோத்தியைத் தாரை வார்த்துக் கொடுத்து, இந்த தேசத்திலே நீ கைகேயியின் பிரதிநிதியாக இருந்து ஆள்வதென்றும், கைகேயிக்குப் பிறக்கும் குழந்தைக்கே அயோத்தி சொந்தமென்றும், அப்படி அவளுக்குப் புத்திர பாக்கியம் கிடைக்காவிட்டால், அவளுடைய சகோதரன் யுதாஜித்து ராஜகுமாரனுக்கே அயோத்தி ஸ்வாதீனமாகுமென்றும் ஒப்பந்தம் செய்து கொடுத்து, கைகேயியை மணந்துகொண்டிருக்கிறாய்! அதை மறந்துவிடாதே மகாராஜனே!” என்று பழைய சம்பவத்தை ஞாபகப்படுத்தி நின்றார் ரிஷி சிரேஷ்டர்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அதைக் கேட்ட தசரதன் கலகலவென நகைத்து, “என்ன சுவாமி! தாங்களே இப்படிச் சொல்லுகிறீர்கள்? ஆயிரம் பொய்யைச் சொல்லி ஒரு கல்யாணத்தை நடத்து என்று பழமொழியே இருக்கிறது. அதன் பிரகாரந்தான் நான் கைகேயியை மணந்து கொண்டேன்!” என்றான். அதைக் கேட்ட வசிஷ்ட முனிவர், “ஆயிரம் பொய்யைச் சொல்லலாம். ஆனால் ஆரிய தர்மப்படி அயோத்தியை கைகேயிக்கு சுவாதீனப்படுத்திவிட்டாயே நீ; அதை அவளிடமிருந்து பறிப்பதுபோல் அல்லவா இருக்கிறது இந்த முயற்சி?” என்று வியாக்யானம் செய்தார் முனிவர்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "“எது எப்படியானாலும் சரி; என் மகன் ராமன்தான் நாடாளவேண்டும்! வசிஷ்ட மகரிஷியே! வாக்குறுதிகளைப் பற்றிக் கவலைப்பட்டுப் பயனில்லை. தாங்கள் பட்டாபிஷேகத்திற்கு சுப லக்னம் பார்த்துக் கொடுங்கள்! இது தான் நல்ல சமயம். பரதன் அவனுடைய பாட்டன் வீட்டுக்குப் போயிருக்கிறான். அவன் திரும்பி வருவதற்குள் ராஜ்யத்தை ராமனிடத்திலே ஒப்படைத்துவிடுகிறேன். பிறகு ராமன் பாடு; பரதன் பாடு! பார்த்துக்கொள்ளட்டும்; நமக்கென்ன?” என்று தசரதன் கண்டிப்பாக மொழிந்ததைக் கண்ட வசிஷ்ட மகாமுனிவரும் பட்டாபிஷேகத்திற்கான சுப யோக சுபதினமொன்றைக் குறித்துக்கொடுத்துவிட்டு, ராமனையும் அழைத்துவரச் சொல்லி ஆசீர்வாதம் செய்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இந்த விஷயம் அரண்மனையிலேயுள்ள எல்லோருக்கும் தெரிந்துவிட்டது !........ ஆனால் கைகேயிக்கு மாத்திரம் தெரிவிக்கப்படவில்லை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "காரணம் என்னவென்றால்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "என்னடா ஆமாம்.......?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "காரணம் என்னவென்றால்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "(கோபமாக) என்னு சொல்லு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "கைகேயிக்குத் தெரிந்தால், தசரதன் மீது கோர்ட்டிலே கேஸ் போட்டுவிட்டு, பட்டாபிஷேகத்தை நிறுத்த ‘ஸ்டே ஆர்டர்’ வாங்கிவிடுவாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அடே அதெல்லாம் இந்தக் காலம்!.....அந்தக் காலத்திலே கோர்ட் ஏது?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "அப்படியானால் இராவணனுக்கு “ஏரோப்ளேன்” ஏது சாமி?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "ஏய்....அவசரக்காரா! அதற்குள் ஆரண்ய காண்டத்துக்கு வராதே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "செத்தாலும் ஆரண்யத்துக்குப் போக மாட்டேன் சாமி",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அகோ வாரும் பிள்ளாய் சிஷ்யா!....இப்படியாகத்தானே பரதனுக்கும் கைகேயிக்கும் தெரியாமல் ராமனின் பட்டாபிஷேகத்திற்கான காரியங்களையெல்லாம் தசரதன் கவனித்துக்கொண்டிருந்தான்....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "எப்படியோ கூனியென்னும் தோழிமூலமாகக் கைகேயிக்குச் சேதி எட்டிவிட்டது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "சேதி கேள்விப்பட்ட கைகேயி, சீறும் பாம்பானாள்! அடுக்குமா இந்த அக்கிரமம் என்று ஆத்திரப்பட்டாள்! இதை எப்படித் தடுப்பது என்று கூனியிடம் யோசனை கேட்டாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "உடனே கூனியாகப்பட்டவள், கைகேயியைப் பார்த்து “கவலைப்படாதே பெண்ணே! உன்னைக்கல்யாணம் செய்யும்போது, தசரத ராஜன் இந்த அயோத்தியை உனக்குக் ‘கன்யா சுல்க’மாக அளித்திருக்கிறார். அதை அடிப்படையாக வைத்துப் போர்க்கொடியை உயர்த்து” என்று யுக்தி கூறினாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அது கேட்டுக் கைகேயி, “வேண்டாமடி! என்னுடைய நாயகன் தசரதராஜனுக்கு தேச முழுவதும்சத்திய கீர்த்தி, உத்தமன், சிரேஷ்டன் என்றெல்லாம் புகழும் பெயரும் இருக்கிறது! அவன் அயோத்தியைமுன்பே-எனக் களித்து விட்டு, இப்போது பறித்துக்கொள்ளச் சூழ்ச்சி செய்கிறான் என்று நான் கூறுவேனேயானால், தசரத மகாராஜாவைப் பற்றி உலக முழுவதும் தகாத முறையிலே பேசுவார்கள்! வாக்கு மறந்தவர், வஞ்சகர் சூழ்ச்சிக்காரர், காமபோதையில் ராஜ்யத்தை அளித்துவிட்டு இப்போது கபட நாடகம் ஆடிப் பிடுங்கிக் கொண்டவர் என்றெல்லாம் என் கணவருக்குக் களங்கம் ஏற்பட நான் காரணமாயிருக்கமாட்டேன்” என்று சொல்லி அழுதாள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "உடனே கூனி, “அப்படியானால் ராமனே நாடாளட்டும்!” என்றாள் சிரித்துக்கொண்டே! அது கேட்டுக் கைகேயி, “அதற்கும் சம்மதிக்கமாட்டேன். அந்த துஷ்டனுடைய ஆட்சியிலே, என்கதியும் என்மகன் கதியும் என்ன ஆவது?” என்று பிரலாபித்துவிட்டு, மீண்டும் சொல்கிறதாவது: “கேளடி கூனி! கேகயத்தில் இந்தக் கிழவன் அளித்த ‘கன்யா சுல்க’த்தை, மக்களிடம் ஞாபகப்படுத்தி, அவருக்கு அபகீர்த்தி உண்டாக்காமல், அந்தப்பழியையும் பாவத்தையும் நானே ஏற்றுக்கொண்டு, அவருக்கு வரும் தீயபெயரை நான் பெற்றுத் தியாகம் செய்யப்போகிறேன்.” என்றாள்! அது கேட்ட கூனி அதிசயத்தால் நிமிர்ந்துநின்று “எப்படியம்மா?” என்றாள்! “கேளடி கூனி! முன்பொரு முறை மன்னர், இரண்டு வரங்கள் அளித்திருக்கிறார். அதன்படி நான் எது வேண்டுமானாலும் கேட்டுப் பெறலாம். அப்படி வரத்தைக் கேட்டு, பரதனுக்கு நாடும், ராமனுக்குக் காடும் வாங்கித்தரப்போகிறேன்.... இதிலே ஏதாவது பழி வந்தால், என் பர்த்தாவிற்காக அதை நான் ஏற்றுக் கொள்கிறேன்” என்று கைகேயி சபதம் செய்வதுபோலப் பேசினாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இராஜ்ய பட்டாபிஷேகத்திற்கான காரியங்களையெல்லாம் பார்த்துவிட்டு, வழக்கம்போலத் தன் இளம் மனைவி கைகேயியிடம் காமக் களியாட்டத்தில் ஈடுபடுவதற்கான முஸ்தீபுகளோடு முதிய மகாராஜா தசரதர் பராக்! பராக்!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "பராக்! பராக்!!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "கைகேயி மாளிகையிலே வாசனைத் திரவியங்கள், பான விசேஷங்கள், வழக்கம்போல் எல்லாம் அந்தந்த இடத்தில் வைக்கப்பட்டிருந்தன. தசரத மகாராஜனுடைய பிரகிருதிவேகம் அதிகரித்தது! ராமனுக்குப் பட்டங் கட்டிவிட்டு, வனவாசம் செல்ல வேண்டுமென்று தீர்மானித்திருந்த அந்தக் கிழமகாராஜனுக்கு உள்ளமுழுதும் காதல்வேகம் பொங்கிட, “கைகேயி! கைகேயி!” என அழைத்தான் — கைகேயி, எந்த நிலைமையிலே இருக்கிறாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஒரே ஆத்திரமாக------",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்! தசரதன் வந்ததுதான் தாமதம்! ஒரு கூடை நெருப்பை அள்ளி அவன் தலையிலே கொட்டினாள்! குய்யோ முறையோவெனக் கத்தினாள்! மாரடித்தாள்! புலம்பினாள்! ஒப்பாரி வைத்தாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இப்படியெல்லாம் அவள் எதுவும் செய்யவில்லை. கேகயன் மகள் கேட்ட வரம் இரண்டு! ஒன்று ராமன் காட்டுக்குச் செல்லவேண்டும்; மற்றொன்று பரதன் நாடாள வேண்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "வரம் கேட்டதும் தசரதன் என்ன செய்தான்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "கொடுத்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "கொடுக்கவில்லை. சூழ்ச்சி அம்பலமாகிவிட்டதே என நினைத்தான். அவள் காலிலே விழுந்தான். இருதயம் வெடித்துவிட்டது! இறந்துவிட்டான்! இப்போது கைகேயி என்ன ஆனாள் தெரியுமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "விதவையானாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அதுமட்டுமல்ல; ‘கன்யா சுல்க’ முறைப்படி அயோத்திக்கு அவள் அரசியாகிவிட்டாள்! இனி அவள் இட்டது தான் சட்டம்! இராமனைக் கூப்பிட்டாள்! “காட்டுக்குப் போ!” என்று கட்டளையிட்டாள்! இராமனும், சீதையும், இலக்குமணப் பெருமாளும் காட்டுக்குப் போனார்கள்! கைகேயி சொல்லாமலே நாட்டு மக்களுக்கு விஷயம் தெரிந்துவிட்டது! நாட்டை ராமன் பறிக்கச் சூழ்ச்சிசெய்தான் என்ற சங்கதி, கேகய ராஜன் மூலமாக உலகமெங்கும் தெரிந்துவிட்டது!....பாட்டன் வீட்டுக்குப் போன பரதன் ஓடோடியும் வந்தான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "விஷயமனைத்தும் தெரிந்தது அவனுக்கு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "தேசத்திலே உள்ள சில பிரமுகர்கள், பரதன் நாடாளுவது நியாயம்—ஆனால் ராமன் காட்டுக்கு விரட்டப்பட்டது என்னவோ அநியாயம் என்று பிரச்சாரம் செய்ய ஆரம்பித்தனர்! இதைக் கண்ட கைகேயிக்குக் கொஞ்சம் பயம் பிறந்தது! பரதன் மீது அயோத்தியில் உள்ளவர்களுக்கு நல்ல எண்ணம் ஏற்படவேண்டுமென்று நினைத்தாள். அதற்காக ஒரு தந்திரம் செய்தாள்! பரதனைக் கூப்பிட்டு, “என் செல்வச் சிரஞ்சீவி பரதா! நான் ஒரு விஷயம் சொல்லுகிறேன் கவனமாகக் கேள்! உன் தந்தை எனக்குக் கொடுத்த நாட்டை அபகரித்து உன் அண்ணனுக்குக் கொடுக்கப் பார்த்தார்! அப்பாவுக்குப் பழிவரக் கூடாதென்று நானே பழியைச் சுமந்துகொண்டு உன்னை நாட்டுக்கு உரியவனாக ஆக்கிவிட்டேன். ஆனால்—நாட்டிலே சிலர், ராமன் காடேகியதைப் பற்றி வருந்தி, உன்னை தூஷிப்பதாகத் தெரிகிறது. அதனால் நீ நல்ல பெயர்வாங்க, ஒரு நாடகம் நடத்தவேண்டும்!” என்றாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அது என்ன நாடகம்? எப்படிப்பட்ட நாடகம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "“த்ரீ டி” நாடகம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "த்ரீடி நாடகமில்லையடா! திருடி நாடகம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "திருடி நாடகமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்....ராமன் காட்டுக்குப் போகும்போது ஒரு விலை உயர்ந்த பொருளைத் திருடிக்கொண்டு போய்விட்டான்! அது என்ன பொருள் தெரியுமோ?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "சீதை........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "சே! சீதையை ராமன் எப்படா திருடினான்? சீதைதான் அவன் மனைவியாயிற்றே!....அவன் போகும்போது திருடிக்கொண்டு போனது விலை உயர்ந்த மாணிக்கம்! அதைக் கொடுத்தால் அயோத்தியாபுரிப் பட்டணத்தைப்போல் ஆறு பட்டணங்களை விலைக்கு வாங்கலாம்! அந்த மாணிக்கத்தை ராமன் திருடிக்கொண்டு போய்விட்டான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "மாணிக்கக் கல் திருட்டுப் போன சங்கதி கைகேயிக்கு அறிவிக்கப்பட்டது! அது எப்படி காணாமற் போயிருக்குமென்று கைகேயி ஆராய்ச்சி நடத்த ஆரம்பித்தாள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அப்படி ஆராய்ச்சி நடத்தியதில்.....பார் புகழும் அந்த மாணிக்கக்கல்லை ராமன் தனது பாதரட்சையிலே மறைத்து எடுத்துக்கொண்டு போய்விட்டான் என்று புலன் கிடைத்து விட்டது கைகேயிக்கு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அப்போதுதான் பரதன் கேகய நாட்டிலிருந்து வந்து சேர்ந்தான். அவனிடம் கைகேயி சொல்லுவாள்: “தம்பி பரதா! ஈரேழு லோகத்திலும் காண முடியாத ஈடு இணையற்ற மாணிக்கக்கல்லை உன் அண்ணன் பாதுகையிலே மறைத்துக்கொண்டு போய்விட்டானாம்! மாணிக்கக் கல் இல்லாத அயோத்தி, சூரியனில்லாத வானம் போன்றது, கண் இல்லா முகம் போன்றது! எப்படியும் அந்தக் கல்லைத் திரும்பக் கொண்டு வரவேண்டும்” என்றாள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அதற்கு என்ன வழியென்று தெரியாமல் பரதன் விழித்துத் திகைத்து நின்றான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அப்போது கைகேயி சொல்கிறாள்: “பரதா! பயப்படாதே! சூழ்ச்சியைச் சூழ்ச்சியால் வெல்ல வேண்டும்! நீ இப்போதே ராமன் காட்டுக்குப் போவது கூடாது அவன்தான் நாடாளவேண்டும்” என்று கதறு! நான் சமாதானப் படுத்துவேன்! — கேட்காதே மந்திரிப் பிரதானிகளையெல்லாம் கூப்பிட்டுக்கொண்டு ராமனைத் தரிசித்து திருப்ப அழைத்து வருவதாகப் புறப்படு! புலம்பலை நிறுத்தாதே! அண்ணலே, அண்ணலே என்று அழு! அவன் பாதங்களைத் தொழு! நானிருக்கும் வரையில் அவன் நாட்டுக்குத் திரும்பிவரப் பயப்படுவான்! ஒரு வேளை, அப்படியே அவன் திரும்பி வந்துவிடுவான் போல் ஜாடை தெரிந்தால் அதற்கு இடங் கொடுக்காமல் நான் பார்த்துக் கொள்கிறேன்! அவனுக்கு நேராகவே என்னைத் திட்டு!.... மந்திரிப்பிரதானிகள் எல்லாம் உன்னுடைய சகோதரப் பாசத்தை மெச்சுகிற அளவுக்கு நாடகத்தை நடத்து!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“அண்ணா, நீ தந்தை சொல் மறவாத தனயன்! தந்தையின் வாக்குபடித் தரணியை வெறுத்துவிட்டு, இப்படித் தவக்கோலம் பூண்டுவிட்ட நீயல்லவா உத்தமன்! நீயல்லவர் தெய்வம்!” இப்படிப் புகழ்ந்து பேசியே அனைவரையும் மயக்கு! “திரும்பி வருகிறேன்” என்று ராமன் சொல்வதற்கு அவனுக்குச் சந்தர்ப்பமே கொடுக்காமல், ஜாக்கிரதையாகப் பேசு! ஒன்று மறந்துவிடாதே பரதா! ராமனின் பாதுகையிலே பதுக்கி வைத்திருக்கும் நமது மாணிக்கக்கல்! அதைக் கவர்ந்து வரவே இவ்வளவு ஏற்பாடும்! “நீ ஆளாவிட்டாலும் உனது பாதுகை நாட்டை ஆளட்டும்” என்று கெஞ்சிக் கூத்தாடி அதை எப்படியாவது பிடுங்கிக்கொண்டு வந்துவிடு! மந்திரிப் பிரதானிகளுக்கு மத்தியிலே ராமன் மாணிக்கக்கல்லை எடுத்துக்கொள்ள முடியாது! விழிப்பான்! திகைப்பான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“வேண்டாமடா தம்பி, பாதுகையைத் தொடாதே, பாபம்!” என்பான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“பாதுகையா இது? பார்புகழ் தெய்வத்திருவடியண்ணா!” என்று கூறி நீயாகவே அவைகளைக் கழற்றி எடுத்துக் கொண்டு வந்துவிடு, மகனே!” என்பதாகக் கைகேயி கூறவும், பரதனும் நாடகத்தை நடத்தப் பரவசத்தோடு புறப்பட்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அன்னையின் சொற்படியே, ராமனோ, லக்ஷ்மணனோ தன்னைக் கொன்றுவிடாமல் இருப்பதற்கான பாதுகாப்பாக ரதகஜதுரகபதாதிகளை அழைத்துக்கொண்டு பரதன் ராமனிடம் சென்றான். தந்திரமாகவும் சாகசமாகவும், அழுதும் புலம்பியும் அண்ணனிடத்தில் அவனுக்கு அழியாத பாசமிருப்பதாகக் காட்டிக் கொண்டான்! அதை அண்ணன் ராமனும் நம்பவில்லை — ஆனாலும் எதிரேயுள்ள மந்திரிப் பிரதானிகளுக்காக இருவரும் ஒருவரையொருவர் தழுவிக்கொண்டார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அப்படி ஒருவரையொருவர் தழுவிக் கொள்ளும்போது என்ன நடந்தது தெரியுமோ?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "மறைந்திருந்த புலி நகத்தால் குத்திக் கொன்றுவிட்டான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அடே முட்டாள்! அது சிவாஜி கதையடா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இருவரும் தழுவிக்கொண்டதைக் கண்ட அரண்மனை வாசிகள் ஆனந்த பாஷ்பம் பொழிந்தனர்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "உடனே பரதன், ராமனைப் பார்த்து அண்ணா! நீதான் தந்தை சொல் தட்டக்கூடாதென்று ஆரண்யம் வந்து விட்டாய்!....உனக்குப் பதிலாக உன் பாதுகைகளைக் கொடு! அவைகளுக்குப் பட்டங் கட்டி, அவற்றின் பிரதிநிதியாகநான் ஆளுகிறேன்” என்று, ராமனுடையகாலிலேயிருந்த பாதுகைகளைக் கழற்றிக்கொண்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "ராமனும் வேறு வழியின்றி, மாணிக்கக்கல் மறைந்திருந்த பாதுகைகளைக் கொடுக்க வேண்டியதாயிற்று.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அப்படி ராமன் பாதுகைகளைக் கொடுத்ததிலும் ஒரு சூழ்ச்சியிருந்ததை பரதன் உணர முடியவில்லை. கைகேயியும் உணர முடியவில்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்! உணரமுடியவில்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "பாதுகையிலே மாணிக்கக்கல்! மண்டலங்களை விலை கேட்கக் கூடிய மதிப்பு வாய்ந்த மாணிக்கக்கல்! அதனால் அவைகளைத் தலையிலே வைத்துத் தூக்கிக்கொண்டு போனான் பரதன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "பிறகு, தனக்குரிய நாட்டில் ராமன் படை எடுப்பது அநியாயம் என்று பரதன் வாதிட்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "பதினாலு ஆண்டு தன் பாதுகை ஆண்டிருப்பதால் ஆளும் அனுபவ பாத்தியதை தனக்கே உரியது என்று ராமன் பதில் கொடுத்தான்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "“பன்னிரண்டு ஆண்டுக்கு மேல் போனாலே பாத்தியதை வந்துவிடுகிறது; அதுவும்பதினாலு ஆண்டு என்றால் பாத்தியதை வந்தது நியாயந்தானே” என அண்டமா முனிவரெல்லாம் அபிப்பிராயம் தெரிவித்தனர்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "உடனே, பரதன் நாட்டை விட்டு வெளியேறி நந்திக் கிராமம் என்னும் ஊரிலே தீக்குண்டம் வளர்க்கச் சொல்லி அதிலே குதித்து உயிர்விட்டான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "அந்த மாணிக்கக்கல்லும் அவன் மடியிலே இருந்து, நெருப்பிலே கருகி, வெடித்துச் சிதறிப்போயிற்று!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இந்தப் பரதாயணத்தைப் படித்தவர்கள், படிக்கப் பக்கமிருந்து கேட்டவர்கள், கேட்டவர்கள் சொல்லிக்கேட்டவர்கள் அனைவருமே........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "மோக்ஷத்திற்குப் போவார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "பாக",
+      "speakerSeparator": " : ",
+      "text": "இல்லையடா இல்லை!... படித்தவர்களும் கேட்டவர்களும் மோட்சத்திற்கும் போகமாட்டார்கள்; மோசத்திற்கும் போகமாட்டார்கள்! பகுத்தறிவு பெறுவார்கள்!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிஷ்",
+      "speakerSeparator": " : ",
+      "text": "நமப் பகுத்தறிவுபதே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பரதாயணம் முற்றிற்று!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhagavatar",
+      "speakerSeparator": " : ",
+      "text": "Aho, come, my boy, disciple! Once upon a time, the kings of fifty-six realms exercised royal rule in this world.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disciple",
+      "speakerSeparator": " : ",
+      "text": "Yes........!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "And by “the world” you mean........?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Round in shape........always, at all times, going round and round.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "You fool! That is the world of today! In the old days, “the world” meant the vast land stretching from the tip of Kanyakumari to the foothills of Mount Kailasa in the Himalayan range!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes....yes........!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "In that world spread far and wide........Dasaratha Maharaja ruled the city of Ayodhyapuri!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Who ruled it?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Dasaratha Maharaja!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "In that Maharaja's palace....sixty thousand....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(Turning to the disciple)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "There were soldiers.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "(Startled) Soldiers?....... You wretch!....... Not soldiers, you fool!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Ah....(recovering himself) Forgive me, Swami; sixty thousand gold coins!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "You witless fellow....wait, wait!....What you say is true too — gold coins indeed — their bodies were all gold!....golden in colour! As you said, they were soldiers too!....But the place where they fought was different!....Women who waged battle with Dasaratha upon the bridal bed! Sixty thousand wives!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Ayyo, yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "If there had been children........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Ayodhya would have suffered a famine!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Ah!....You hasty little nut! If there had been children, Dasaratha would have been happy!....Dasaratha had sixty thousand festival idols, but only three principal idols! Their names were Kausalya — Sumitra — Kaikeyi!......For that reason Dasaratha performed the Putrakameshti sacrifice. In that sacrifice a horse was slaughtered. The three principal wives slept embracing the slaughtered horse!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "The sacrificial oblation was brought forth!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Those three wives ate it and then enjoyed Indra's pleasure with the rishis who had come for the sacrifice.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "And what came of that?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Their chastity was gone!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "No, you fool! A pregnancy came into being....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Aho, come, my boy, disciple! Thus, according to the verses of Valmiki's Ramayana, the sacrifice took place and the three chief queens gave birth to four sons.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Those boys grew day by day and hour by hour, learning elephant-riding, horse-riding and every other art!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Now, that fellow Dasaratha....all his infatuation, all his affection, was for his eldest son Rama!....So he decided to perform Rama's royal coronation, summoned Sage Vasishta to fix a date, and—",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Thus, when Sage Vasishta arrived, Dasaratha looked at him and said: “Aho, come, beloved and eminent sage! This humble man has a petition to make. That is to say, I am thinking of completing the coronation of our Ramachandra as Crown Prince of Ayodhya.” Thereupon Sage Vasishta stroked his greying beard and said:—",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Listen, Dasaratha Maharaja! I think you have forgotten what happened long ago when you went to marry Kaikeyi, daughter of the Kekaya king. Kaikeyi would not agree to become the wife of an aged man like you. The Kekaya king refused, asking how he could give this parrot-like maiden to an old man. But you were intoxicated by Kaikeyi's beauty, form and loveliness, like a bee drunk on honey. Because of that, you promised to give Ayodhya itself to Kaikeyi as a gift. At that very moment, according to Arya Dharma Shastra custom, you made over Ayodhya to her under the name of ‘kanya sulkam’; you agreed that you would rule this country only as Kaikeyi's representative; that Ayodhya would belong to the child born to Kaikeyi; and that, if she were not blessed with a son, Ayodhya would pass into the possession of her brother, Prince Yudhajit. You entered into this agreement and married Kaikeyi! Do not forget it, Maharaja!” Thus did the foremost of rishis remind him of the old event.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Hearing this, Dasaratha laughed aloud. “What is this, Swami? Even you speak like this? There is a proverb: ‘Tell a thousand lies and conduct one wedding.’ I married Kaikeyi according to that very rule!” he said. On hearing this, Sage Vasishta explained: “You may tell a thousand lies. But under Arya dharma you have already transferred Ayodhya into Kaikeyi's possession. Does not this attempt amount to taking it away from her?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "“Whatever the case, my son Rama alone must rule the country! Maharishi Vasishta! There is no use worrying about promises. Find me an auspicious lagna for the coronation! This is the right time. Bharata has gone to his grandfather's house. Before he returns, I shall hand the kingdom over to Rama. After that, it is Rama's affair and Bharata's affair! Let them deal with it; what is it to us?” Dasaratha declared firmly. Seeing this, the great sage Vasishta fixed an auspicious day and hour for the coronation, blessed them, and asked that Rama too be summoned.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Everyone in the palace came to know of this!........But Kaikeyi alone was not informed.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "The reason was........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "What do you mean, “yes”?.......",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "The reason was........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "(Angrily) Say what it is!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "If Kaikeyi came to know, she would file a case against Dasaratha in court and obtain a “stay order” stopping the coronation!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Hey, all that belongs to these times!.....What court was there in those days?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Then where did Ravana get an “aeroplane,” Swami?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Hey....you impatient fellow! Don't jump to the Aranya Kandam already!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Even if I die, I won't go to the forest, Swami.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Aho, come, my boy, disciple!....Thus Dasaratha was attending to all the arrangements for Rama's coronation without Bharata or Kaikeyi knowing.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Somehow the news reached Kaikeyi through her companion, the hunchback!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "When Kaikeyi heard the news, she became a hissing serpent! She raged, “Can such an injustice be allowed?” She asked the hunchback for a plan to stop it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "At once the hunchback said to Kaikeyi: “Do not worry, woman! When Dasaratha Raja married you, he gave this Ayodhya to you as ‘kanya sulka’. Make that your foundation and raise the banner of revolt.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Hearing this, Kaikeyi said: “No, girl! Throughout the whole country my lord Dasaratha Raja enjoys fame and a name as a man of truth, a noble man, an eminent man and so on! If I were to say that he had already given Ayodhya to me and is now scheming to take it back, the whole world would speak disgracefully of Dasaratha Maharaja! They would call him a man who forgot his word, a deceiver, a schemer, a man who gave away a kingdom in the intoxication of lust and is now staging a deceitful drama to seize it back. I will not be the cause of such a stain upon my husband,” she said, and wept.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "The hunchback immediately laughed and said, “Then let Rama rule!” Hearing this, Kaikeyi said, “I will not agree to that either. Under that wicked man's rule, what will become of me and what will become of my son?” After lamenting thus, she continued: “Listen, hunchback! Without reminding the people of the ‘kanya sulka’ this old man granted me in Kekaya, and without bringing disgrace upon him, I myself shall bear the blame and the sin. I shall take upon myself the bad name that would otherwise fall on him and make that sacrifice.” Astonished, the hunchback straightened herself and asked, “How, amma?” Kaikeyi said: “Listen, hunchback! On an earlier occasion the king granted me two boons. Under them, I may ask for anything and receive it. I shall invoke those boons and obtain the country for Bharata and the forest for Rama....If any blame comes from this, I shall bear it for my husband.” Thus Kaikeyi spoke as though taking an oath!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Having attended to all the arrangements for the royal coronation, the aged Maharaja Dasaratha, as usual, came with every preparation for amorous sport with his young wife Kaikeyi. Parak! Parak!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Parak! Parak!!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "In Kaikeyi's palace, perfumes, special drinks and all the usual things had been placed in their proper places. Dasaratha Maharaja's natural passion intensified! Having decided that after crowning Rama he would retire to the forest, the old Maharaja came with his whole heart surging with desire and called, “Kaikeyi! Kaikeyi!” — and in what state was Kaikeyi?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "In a fury------",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Yes! Dasaratha had hardly arrived when she scooped up a basketful of fire and poured it on his head! She screamed “kuyyo, muraiyo!” Beat her breast! Lamented! Wailed!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "She did none of those things. The daughter of Kekaya asked for two boons! One: Rama must go to the forest. The other: Bharata must rule the country!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "What did Dasaratha do when she asked for the boons?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "He granted them.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "He did not. He realized that his scheme had been exposed. He fell at her feet. His heart burst! He died! Do you know what Kaikeyi became now?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "A widow!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Not only that; under the ‘kanya sulka’ arrangement, she had become the ruler of Ayodhya! From then on, what she decreed was law! She summoned Rama. “Go to the forest!” she ordered. Rama, Sita and Lord Lakshmana went to the forest! Without Kaikeyi saying a word, the people of the country learned what had happened! Through the Kekaya king, the whole world came to know the story that Rama had conspired to seize the country!....Bharata, who had gone to his grandfather's house, came racing back!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "He learned everything that had happened!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Some prominent men in the country began campaigning that it was just for Bharata to rule, but that driving Rama into the forest was unjust. Seeing this, Kaikeyi became a little afraid! She wanted the people of Ayodhya to form a good opinion of Bharata. So she devised a trick! Calling Bharata, she said: “My precious long-lived Bharata! Listen carefully to something I am going to tell you! Your father tried to seize the country he had given me and hand it to your elder brother! To prevent blame from falling on your father, I bore that blame myself and made you the rightful claimant to the country. But I hear that some people in the country are distressed that Rama went to the forest and are reviling you. So, in order for you to earn a good name, you must stage a drama!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "What drama? What kind of drama?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "A “Three-D” drama!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Not a Three-D drama, you fool! A thieving drama!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "A thieving drama?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Yes....When Rama went to the forest, he stole a very valuable object and took it with him! Do you know what that object was?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Sita........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Tch! When did Rama steal Sita? Sita was his wife!....What he stole and took with him was a priceless gem! If you had it, you could buy six cities like Ayodhyapuri! Rama stole that gem and carried it away!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "The news that the gem had been stolen was reported to Kaikeyi! Kaikeyi began an investigation into how it had disappeared!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "In the course of that investigation.....Kaikeyi obtained information that Rama had hidden that world-famous gem inside his footwear and taken it away!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Just then Bharata returned from the Kekaya country. Kaikeyi said to him: “Brother Bharata! Your elder brother has hidden in his sandals a matchless gem that cannot be found in all the fourteen worlds! Ayodhya without that gem is like a sky without the sun, like a face without eyes! Somehow that gem must be brought back.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Bharata stood blinking in bewilderment, not knowing what to do.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Then Kaikeyi said: “Bharata! Do not be afraid! A plot must be defeated by a plot! From this very moment cry out, ‘Rama must not go to the forest; he alone must rule the country!’ I shall try to pacify you — do not listen! Take the ministers and chief officers with you and set out declaring that you are going to see Rama and bring him back! Do not stop lamenting! Cry, ‘My lord! My lord!’ Fall at his feet! As long as I am here, he will be afraid to return to the country! If he shows the slightest sign that he may actually come back, I shall make sure he does not! Abuse me to my face!....Stage the drama so well that all the ministers and chief officers praise your brotherly love!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“‘Elder brother, you are the son who does not forget his father's word! You rejected the earth in obedience to your father's command and took on this ascetic garb — are you not the noble one! Those who are not you are gods!’ Keep praising him like this and bewilder everyone! Do not even give Rama an opportunity to say, ‘I am coming back’; speak carefully! Do not forget one thing, Bharata! Our gem is hidden in Rama's sandals! All these arrangements are only to seize it! Beg and plead, ‘Even if you will not rule, let your sandals rule the country,’ and somehow wrench them away and bring them back! In the midst of the ministers and chief officers, Rama will not be able to take out the gem! He will blink! He will be bewildered! He will say, ‘No, little brother, don't touch the sandals — it is a sin!’ You say, ‘Are these sandals? They are your world-renowned divine feet, elder brother!’ and take them off yourself and bring them back, my son!” Thus spoke Kaikeyi, and Bharata set out in delight to perform the drama.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Following his mother's instructions, and taking chariots, elephants, cavalry and infantry with him for protection so that neither Rama nor Lakshmana might kill him, Bharata went to Rama. With cunning and theatrical skill, weeping and lamenting, he made it appear that he had undying affection for his elder brother! Rama did not believe it either — but for the sake of the ministers and chief officers standing before them, the two embraced one another!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Do you know what happened when they embraced one another like that?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "He stabbed him to death with a concealed tiger-claw!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "You fool! That's the story of Shivaji!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "The palace people who saw the two embrace shed tears of joy!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "At once Bharata looked at Rama and said: “Elder brother! You came to the forest because you would not disobey father's word!....Give me your sandals in your place! I shall crown them and rule as their representative.” And he removed the sandals from Rama's feet.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "With no other way out, Rama had to give him the sandals in which the gem was hidden.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Bharata did not realize that there was a plot even in Rama giving him the sandals. Kaikeyi did not realize it either!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes! They did not realize it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "A gem in the sandals! A gem valuable enough to buy entire realms! So Bharata placed those sandals upon his head and carried them away!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "Later, Bharata argued that it was unjust for Rama to invade the country that rightfully belonged to him.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Rama replied that since his sandals had ruled for fourteen years, the prescriptive right arising from enjoyment of rule belonged to him........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "“Once more than twelve years have passed, prescriptive right arises; if it is fourteen years, surely that right has arisen,” all the great sages opined!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "At once Bharata left the country, had a fire-pit kindled in a place called Nandigrama, jumped into it and gave up his life!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "The gem too, which was in his lap, burned in the fire, burst and shattered!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "All those who read this *Bharathayanam*, those who sat nearby and heard it being read, and those who heard it from people who had heard it........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "Will go to moksha!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Bhag.",
+      "speakerSeparator": " : ",
+      "text": "No, no! Those who read it and those who heard it will go neither to *motcham* nor to *mosam* — neither to salvation nor to deception! They will gain rational understanding!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Disc.",
+      "speakerSeparator": " : ",
+      "text": "*Nama Pagutharivupathe!*",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "*Bharathayanam* is concluded!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- The title `பரதாயணம்` is retained as *Bharathayanam*. Its form deliberately echoes the naming pattern of *Ramayanam* while centring Bharata; an explanatory English title would flatten that wordplay.\n- `காலட்சேபம்` is retained as *kalakshepam*: the opening explicitly frames the performance in the traditional drawn-out storytelling/singing mode, which the play then turns to satirical rationalist purpose.\n- Source speaker-label structure is reflected as `Bhagavatar`, `Disciple`, and the abbreviated `Bhag.` / `Disc.` rather than replacing the dramatic exchange with narrative prose.\n- `உற்சவ விக்கிரகம்` / `மூல விக்கிரகம்` is rendered as `festival idols` / `principal idols`, preserving the temple-image metaphor through which the sixty-thousand wives are contrasted with the three chief queens.\n- The `கற்பு` / `கரு` joke cannot be reproduced phonically in English. `Their chastity was gone!` / `A pregnancy came into being` preserves the semantic turn and its comic timing.\n- `கன்யா சுல்கம்` / `கன்யா சுல்க` is retained as `kanya sulkam` / `kanya sulka`, rather than being reduced everywhere to a modern legal label. In context it functions as the asserted bride-price/settlement on which the satire's property argument is built.\n- English loanwords in the Tamil — `கோர்ட்`, `கேஸ்`, `ஸ்டே ஆர்டர்`, `ஏரோப்ளேன்`, and `த்ரீ டி` — remain visibly modern in English because the anachronism is the joke.\n- `பராக்! பராக்!!` is retained as `Parak! Parak!!` as a heraldic/performance cry rather than assigned an uncertain paraphrase.\n- The Three-D / `திருடி` exchange is translated as `Three-D` / `thieving`; the exact Tamil sound-play cannot be carried over, so the note records the loss rather than inventing a different joke.\n- The verified Tamil physically assembles the anomalous `நீயல்ல` / `வர்` as `நீயல்லவர்`, not the semantically expected `நீயல்லவா`. The translation therefore preserves the anomaly literally as `Those who are not you are gods!` rather than silently repairing Kalaignar's printed witness.\n- `பாதுகாப்பாக ரதகஜதுரகபதாதிகளை` is rendered as `taking chariots, elephants, cavalry and infantry with him for protection`; the compound military list is unpacked for intelligible English without changing its function.\n- The legal joke in `அனுபவ பாத்தியதை` / the twelve-year rule is rendered as `prescriptive right arising from enjoyment of rule`, keeping the property-law register that makes the exchange comic.\n- The closing distinguishes `மோக்ஷம்` / `மோட்சம்` from `மோசம்`. English cannot reproduce the near-homophonic Tamil play cleanly, so `moksha`, `motcham`, and `mosam` are retained at the punchline with the sense `salvation` / `deception` made explicit.\n- `நமப் பகுத்தறிவுபதே!` is retained as *Nama Pagutharivupathe!* because it parodies a devotional/Sanskritic closing formula while replacing its object with `பகுத்தறிவு` — rational understanding.\n- No published English witness was used to draft or review this translation."
+     },
+     {
+      "kind": "interpretive-note",
+      "text": "This note is **interpretive context, not translated source text**.\n\nThe play itself explicitly frames the performers as belonging to `அறிவியக்கம்` and closes by rejecting both religious salvation and deception in favour of `பகுத்தறிவு`. Its satire repeatedly brings mythic authority, ritual, monarchy, property claims and scriptural narration into the language of public argument, legal procedure, political campaigning and comic cross-examination.\n\nThat framing strongly resonates with the rationalist and anti-mythic polemical tradition associated with the Dravidian movement. The translation preserves the abrupt anachronisms, courtroom vocabulary, political-performance language, ritual terms and final invocation of rational understanding rather than smoothing them into a neutral retelling of the Ramayana.\n\nAt the same time, this note does not treat every satirical claim in the dialogue as an independent historical assertion. The translated source remains the dramatic polemic printed in this edition; the interpretive movement-context note is kept separate from the characters' speech."
+     }
+    ]
+   }
+  }
+ ]
+}

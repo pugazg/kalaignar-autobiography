@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ChevronLeft, ChevronRight, Drama, Home, List, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
-import type { Play, PlayScene, PlayUnit } from "@/data/plays";
+import type { Play, PlayOpeningNote, PlayReadingUnit, PlayUnit } from "@/data/plays";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -20,7 +20,7 @@ const OBSTRUCTION = "⟦later library stamp obscures leading letters⟧";
  */
 export default function PlayReader({
   play, scene, prev, next,
-}: { play: Play; scene: PlayScene; prev: PlayScene | null; next: PlayScene | null }) {
+}: { play: Play; scene: PlayReadingUnit; prev: PlayReadingUnit | null; next: PlayReadingUnit | null }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const [font, setFont] = useState(1);
@@ -29,6 +29,12 @@ export default function PlayReader({
 
   const sizes = ["text-base", "text-lg", "text-xl"];
   const units = showEn ? scene.english.units : scene.tamil.units;
+  // Printed pre-dramatic material reads at the head of the unit the source prints it before. It is
+  // source text, but it is NOT a scene: it carries no number and never joins the scene navigation.
+  const openingNote: PlayOpeningNote | null =
+    play.openingNote && play.openingNote.attachedTo === scene.slug ? play.openingNote : null;
+  const openingUnits = openingNote ? (showEn ? openingNote.english.units : openingNote.tamil.units) : [];
+  const continuous = scene.kind === "continuous-body";
   const notes = scene.english.notes;
   const heading = showEn ? scene.headingEn ?? scene.headingTa : scene.headingTa;
   const title = showEn ? scene.titleEn : scene.titleTa;
@@ -119,9 +125,13 @@ export default function PlayReader({
       <article className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
         <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-marina dark:text-marina-light">
           <Drama className="h-3.5 w-3.5" aria-hidden />{" "}
-          {scene.isClosingTableau
+          {scene.kind === "closing-tableau"
             ? ta ? "நிறைவுக் காட்சி" : "Closing tableau"
-            : ta ? `காட்சி ${scene.order} / ${play.sceneCount}` : `Scene ${scene.order} of ${play.sceneCount}`}
+            : continuous
+              // A continuous work has no scene number and no "of N" — the source prints no scenes,
+              // so there is nothing to count and nothing to be the first of.
+              ? ta ? "தொடர் நாடகப் பகுதி" : "Continuous dramatic text"
+              : ta ? `காட்சி ${scene.order} / ${play.sceneCount}` : `Scene ${scene.order} of ${play.sceneCount}`}
         </p>
 
         {heading && (
@@ -138,13 +148,24 @@ export default function PlayReader({
 
         {/* The tableau is printed after காட்சி-38 without a scene number. Saying so where a reader
             meets it stops it being read as a 39th scene. */}
-        {scene.isClosingTableau && (
+        {scene.kind === "closing-tableau" && (
           <p className="mt-3 inline-flex items-start gap-1.5 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
             <Drama className="mt-0.5 h-3.5 w-3.5 shrink-0 text-marina" aria-hidden />
             <span>
               {ta
                 ? "இது காட்சி-38-க்குப் பின் எண்ணிடப்படாமல் அச்சிடப்பட்ட தனி நிறைவுக் காட்சி; இது காட்சி-39 அல்ல."
                 : "Printed after Scene 38 without a scene number — a separate closing tableau, not Scene 39."}
+            </span>
+          </p>
+        )}
+
+        {continuous && (
+          <p className="mt-3 inline-flex items-start gap-1.5 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+            <Drama className="mt-0.5 h-3.5 w-3.5 shrink-0 text-marina" aria-hidden />
+            <span>
+              {ta
+                ? "மூலம் இவ்வாக்கத்தைக் காட்சிகளாகப் பிரிக்கவில்லை — ஒரே தொடர்ச்சியான நாடகப் பகுதியாகவே அச்சிட்டுள்ளது. இந்த முகவரிப் பெயர் வழிசெலுத்தலுக்கானது; அது மூலத்தின் காட்சி எண் அல்ல."
+                : "The source prints this work without any scene division — one continuous dramatic text. This page's URL slug is navigation, not a source scene number."}
             </span>
           </p>
         )}
@@ -173,6 +194,19 @@ export default function PlayReader({
 
         {/* THE PRINTED SCENE. Unit order and paragraph structure come from the archive's own
             assembled scene layer and are never re-split or merged here. */}
+        {openingNote && (
+          <section className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"} aria-label={showEn ? openingNote.labelEn : openingNote.labelTa}>
+            <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/45 dark:text-night-text/45" lang={ta ? "ta" : "en"}>
+              {ta ? openingNote.labelTa : openingNote.labelEn}
+              <span className="ml-2 font-normal normal-case tracking-normal text-ink/35 dark:text-night-text/35">
+                {ta ? "ஸ்கேன்" : "scan"} {openingNote.sourceScans.join(", ")}
+              </span>
+            </p>
+            {openingUnits.map(renderUnit)}
+            <hr className="my-8 border-ink/10 dark:border-white/10" />
+          </section>
+        )}
+
         <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
           {units.map(renderUnit)}
         </div>
@@ -196,7 +230,7 @@ export default function PlayReader({
           </aside>
         )}
 
-        <nav className="mt-10 flex items-center justify-between gap-3 border-t border-ink/10 pt-5 dark:border-white/10" aria-label={ta ? "காட்சி வழிசெலுத்தல்" : "Scene navigation"}>
+        <nav className="mt-10 flex items-center justify-between gap-3 border-t border-ink/10 pt-5 dark:border-white/10" aria-label={continuous ? (ta ? "வழிசெலுத்தல்" : "Navigation") : ta ? "காட்சி வழிசெலுத்தல்" : "Scene navigation"}>
           {prev ? (
             <Link href={`/plays/${play.slug}/${prev.slug}`} className="focus-ring inline-flex max-w-[45%] items-center gap-1.5 rounded text-sm text-ink/70 hover:text-marina dark:text-night-text/70">
               <ChevronLeft className="h-4 w-4 shrink-0" aria-hidden />

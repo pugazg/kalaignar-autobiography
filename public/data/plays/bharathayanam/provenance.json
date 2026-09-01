@@ -1,0 +1,80 @@
+{
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/bharathayanam",
+ "sourceCommit": "145e52e88dbd009286f749a7f0e3520386e63244",
+ "source": {
+  "scanFilename": "TVA_BOK_0065576_நான்மணி_மாலை.pdf",
+  "scanSha256": "18d2b1405544b03507e9f92067d287cb28f5a92eaf02bed7054e6e78e5e38c89",
+  "scanFileSizeBytes": 146754449,
+  "scanTotalPages": 54,
+  "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE's composite-source registry. The controlling PDF is held outside both repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here.",
+  "pageRecordsVerified": "12 / 12 scans verified at page-record level",
+  "sourceAudit": "Composite 54-scan coverage audit: PASS / COMPLETE (0 gaps, 0 overlaps)",
+  "assembledLayer": "Continuous-text assembly COMPLETE / PASS; page-record ↔ assembly fidelity review PASS",
+  "bodyScans": "6–17",
+  "publicationYearNote": "NO publication year is established anywhere in this composite scan. The archive states so explicitly and forbids promoting internal dates or contextual clues into one, so the catalogue carries no year and no edition-year statement for this work.",
+  "collectionNote": "Printed inside the composite Tamil collection கலைஞரின் நான்மணி மாலை (54 scans). This work occupies scans 6–17. Scans 1–5 are shared front matter and scan 54 is the illustrated back cover; neither is part of any play's reading body.",
+  "continuousStructureNote": "The source prints this work as ONE continuous dramatic/kalakshepam text with NO scene division: its archive records `scene: null` and assembles a single continuous-play file. It therefore has 0 source scenes, and its single reading route carries an editorial navigation slug. It is never presented, numbered or counted as \"Scene 1\".",
+  "openingNoteNote": "The source prints printed opening note before the dramatic body (scans 6). It is published as source text at the head of the reading unit it precedes, but it is NOT a scene: it is never numbered, never counted in the scene total, and never given a route of its own."
+ },
+ "english": {
+  "kind": "project-created",
+  "status": "Independent English translation COMPLETE; translation review PASS; 0 unresolved translation blocks",
+  "independence": "The reader's English is the archive's own project-created independent translation, drafted and reviewed from the verified Tamil BEFORE any published English witness was opened. Every imported English file declares `secondary_english_witness_used: false`, and the importer refuses to run if one does not.",
+  "secondaryWitnessNote": "The 2009 published English 'One Act Plays' collection contains NO Bharathayanam, so no witness comparison applies to this work. That is 'not applicable', not an unfinished comparison, and no published English was used in its translation or review.",
+  "notesSeparated": "The English layer's translation notes — and, for Bharathayanam, its 'Dravidian movement resonance' interpretive note, which the source itself labels interpretive context rather than translated source text — are carried OUTSIDE the reading body in a separately labelled area."
+ },
+ "archiveDerived": {
+  "scenes": 0,
+  "closingTableau": 0,
+  "continuousBodies": 1,
+  "openingNotes": 1,
+  "tamilUnits": 138,
+  "englishUnits": 136,
+  "tamilDialogue": 131,
+  "tamilStageDirections": 2,
+  "tamilVerse": 4,
+  "ornaments": 2,
+  "distinctSpeakerLabels": 5,
+  "unlabelledDialogueUnits": 1,
+  "scenesWithoutPrintedSetting": 0,
+  "multiScanScenes": 1,
+  "translationNotes": 1,
+  "interpretiveNotes": 1,
+  "note": "Derived structure only. The archive's verified page records remain the controlling text; this integration reads the archive's own assembled layer, which was built from those records and passed its fidelity review. Dialogue, stage directions and speaker labels are carried verbatim — never re-split, merged, expanded or normalised.",
+  "speakerNote": "Speaker labels are rendered EXACTLY as printed, including the composite's inconsistent abbreviations (`பாகவதர்` / `பாக`, `சிஷ்யன்` / `சிஷ்`, `விஜயர்` / `விஜ.`). Those variations are source data, not errors, and are never expanded or unified.",
+  "unlabelledNote": "Dialogue units with `speakerAsPrinted: null` are printed paragraphs the edition sets without a speaker label. Absence of a label is recorded as absence and never resolved into an attribution."
+ },
+ "lockedExclusions": [
+  "the assembled layer's archival apparatus — assembly notes, visual-text / page-record fidelity reviews, and the continuous assembly's provenance and page-boundary table",
+  "the English layer's translation notes and interpretive notes, which are held outside the reading body",
+  "the per-work first-pass discrepancy, intro-reconciliation and page-verification records",
+  "the 2009 published English witness and every secondary-witness comparison record, which are analytical evidence and are never read or published as reader content",
+  "the composite volume's shared front matter (scans 1–5) and illustrated back cover (scan 54), which belong to no individual play",
+  "library/accession marks, later handwriting, damage and bleed-through, which are copy-specific and never merged into the literary text"
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying Tamil dramatic work. The composite volume's own publisher (தமிழ்க்கனி பதிப்பகம்), place, price and copyright lines are edition facts, not statements about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored play. It does NOT extend to the project-created English translation, to the composite edition's publisher/imprint matter, printed price or cover artwork and design, or to the library/accession markings and other artefacts of this physical copy — each retains its own distinct provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked independent translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "archivalStatusNote": "The source repository's completion/release status is an editorial and archival judgement about transcription and translation completeness. It is NOT, by itself, a copyright, public-domain or republication-rights determination.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the composite scanned PDF TVA_BOK_0065576_நான்மணி_மாலை.pdf; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "This work occupies scans 6–17 of the 54-scan composite கலைஞரின் நான்மணி மாலை. The volume's shared front matter and back cover belong to no individual play and are not imported into any reading body.",
+  "NO publication year is established in this composite scan, so none is recorded and no edition-year statement is made.",
+  "The source prints this work as one continuous dramatic text with NO scenes. It is carried as a continuous body with 0 source scenes and is never presented as \"Scene 1\".",
+  "The assembled source marks no scan boundaries inside its text, so scan provenance is carried per reading unit rather than per unit — the archive publishes no finer precision, and claiming any would be false.",
+  "Speaker labels, stage-direction delimiters, repetitions, ellipsis counts, punctuation and old/source spellings are carried exactly as the archive verified them. Nothing is modernised, expanded or normalised."
+ ]
+}

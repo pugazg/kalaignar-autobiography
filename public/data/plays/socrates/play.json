@@ -1,0 +1,1822 @@
+{
+ "workId": "socrates",
+ "slug": "socrates",
+ "title": {
+  "ta": "சாக்ரடீஸ்",
+  "en": "Socrates"
+ },
+ "descriptor": {
+  "ta": "ஐந்து காட்சி நாடகம்",
+  "en": "A play in five scenes"
+ },
+ "author": {
+  "ta": "கலைஞர் மு. கருணாநிதி",
+  "en": "Kalaignar M. Karunanidhi"
+ },
+ "edition": {
+  "publisherTa": "தமிழ்க்கனி பதிப்பகம்",
+  "placeTa": "சென்னை-28",
+  "priceTa": "விலை ரூ. 4/-",
+  "copyrightLineTa": "© பதிப்புரிமை",
+  "collectionTitleTa": "கலைஞரின் நான்மணி மாலை",
+  "year": null
+ },
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/socrates",
+ "sourceCommit": "145e52e88dbd009286f749a7f0e3520386e63244",
+ "structureKind": "scene-sequence",
+ "sceneCount": 5,
+ "closingTableauCount": 0,
+ "scanProvenance": "per-unit-group",
+ "bodyScans": {
+  "from": 29,
+  "to": 43
+ },
+ "openingNote": {
+  "attachedTo": "01",
+  "labelTa": "அச்சிடப்பட்ட முன்னுரைக் குறிப்பு",
+  "labelEn": "Printed introductory note",
+  "sourceScans": [
+   27,
+   28
+  ],
+  "tamil": {
+   "units": [
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "ஃ சாக்ரடீஸ் கிரேக்கம் தந்த தத்துவாசிரியன்; ஏதென்ஸ்  \nஅளித்த ஒப்பற்ற அறிவுப் புதையல்!",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "ஃ அவன் தயாரித்த பிளேட்டோ இன்றைய அரசியல் கருத்  \nதுக்கள் பலவற்றிற்குத் தந்தையாக இருக்கிறான்.",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "ஃ மார்க்சும், எஞ்சல்சும் தயாரித்து லெனின்—ஸ்டாலின்  \nபோன்றோரால் புடம்போட்டு எடுக்கப்பட்ட பொன்னென பொது  \nவுடைமைத் தத்துவம், பிளேட்டோ என்னும் சிந்தனை உலகக்கூடத்  \nதில் தயாரானதுதான்!",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "ஹெகல் என்னும் ஜெர்மன் நாட்டு தத்துவஞானி பிளேட்  \nடோவின் உலகக்கூடத்தைப் பயன்படுத்தித்தான் புளித்துப்போன  \nநாஜிசக் கருத்துக்களுக்கு ‘ஜாடை’ காட்டினான். அந்தக் கட்டாரி  \nயைக் கொண்டு தவறான வழியில் பயன்படுத்தித் தலை கொய்யப்  \nபுறப்பட்டனர், ஹிட்லர்—முசோலினி போன்ற புல்லர்கள்!",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "இது போன்ற நல்லனவற்றிற்கும் தீயனவற்றிற்கும் மூலப்  \nபொருள் உதவியவன் பிளேட்டோ; அந்தப் பிளேட்டோவைத்  \nதயாரித்தவனே சாக்ரடீஸ்!",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "வரலாறு கூறுகிறபடி சாக்ரடீஸ் ‘சாவுக்குப் பயப்படாத  \nமுதல் மனிதன்’ மட்டுமல்லன்; இதுபோன்ற பல தகுதிகளுக்கும்  \nஅவன் உரிமையாளன்!",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "அவன் பேச்சுக்களிலே சில நம் கருத்துக்களுக்குப் புறம்  \nபானவையென்று சிலர் கூறலாம். ஆனால் அறிவியக்கம் இந்தத்  \nதூசு நிகர் காரணங்களைக்கொண்டு அவனை ஒதுக்கிவிடத் தயாராக  \nஇல்லை.",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "மூதறிஞர் ராஜாஜி ‘சோக்ரதர்’ என்னும் நூலிலே சாக்ர  \nடீசை சங்கராச்சாரியார்போன்ற ஆஸ்திகப்பழமாக்கியிருக்கிறார்.",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "நானோ அறிவுலக ஜோதியாக அவன் நடமாடியதை இந்தச்  \nசிறு நாடகம் மூலம் இங்கே சித்தரித்திருக்கிறேன்.",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "சபைன் என்னும் பேராசிரியர், ஜனநாயகத்தின் தொட்டி  \nலாகிய ஏதென்சில், சாக்ரடீஸ் போன்ற பெரியார் ஒருவர் சாகடிக்  \nகப்பட்டது வியப்பாக இருக்கிறது என்று கூறுகிறார்; இதில் ஏதா  \nவது திரை மறைவான அரசியல் இருக்குமோ என்றும் ஐயப்  \nபடுகிறார்.",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "இந்தப் பின்னணியோடு இனி படிக்கத் துவங்குங்கள்!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "stage-direction",
+     "delimiter": "square",
+     "text": "[குள்ள உருவம்—திடகாத்திரமான தேக அமைப்பு—  \nசுழன்று கொண்டேயிருக்கும் ஒளிவிளக்கு போன்ற  \nகண்கள் - தட்டையான மூக்கு - துடிப்பு நிறைந்த  \nஅகன்ற புருவங்கள் - தடித்த உதடுகள் - சிறிய தாடி  \n- போர்வைபோல் உடல் முழுவதும் மறைத்திருக்  \nகும் பட்டும் பஞ்சும் கலந்த சாதாரணமான ஒரே  \nஉடை - இவன்தான் கிரேக்கம் தந்த கீர்த்திவாய்ந்த  \nஅறிஞன் சாக்ரடீஸ்! ஏதென்ஸ் நகரத்து மூலைமுடுக்கு  \nகளிலே, சந்து பொந்துகளிலே, போவோர் வருவோ  \nரை நிறுத்திவைத்துத் தர்க்கவாதம்புரியும் இலட்சிய  \nவாதி. அவனுடைய வீட்டு வாயிலிலே முதற்காட்சி  \nஆரம்பமாகிறது.]",
+     "hasLineBreaks": true
+    },
+    {
+     "kind": "ornament",
+     "text": "*",
+     "hasLineBreaks": false
+    }
+   ]
+  },
+  "english": {
+   "units": [
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "- Socrates, the philosopher given by Greece; the incomparable treasure of knowledge given by Athens!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "- Plato, whom he produced, stands as a father to many of the political ideas of the present day.",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "- The philosophy of common ownership, prepared by Marx and Engels and refined like gold by people such as Lenin—Stalin, was itself first prepared in the workshop of the world of thought called Plato!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "The German philosopher Hegal made use of Plato's workshop and gave a “jadai” toward the soured Nazi ideas. With that dagger, men like Hitler—Mussolini, base fellows, set out to use it on a wrong path and cut off heads!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "Plato was the one who supplied the raw material for good things and evil things of this kind; and the one who produced that Plato was Socrates!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "As history tells it, Socrates was not merely “the first man who did not fear death”; he was the possessor of many such qualifications!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "Some may say that certain things in his speeches lie outside our views. But the movement of knowledge is not prepared to cast him aside on account of reasons equal to this dust.",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "Elder statesman Rajaji, in the book `‘Sogradhar’`, has made Socrates into an `astika-pazham` like Sankaracharya.",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "I, on the other hand, have portrayed here through this short play how he walked as a light of the world of knowledge.",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "Professor Sabain says that it is astonishing that, in Athens—the cradle of democracy—a great man like Socrates was put to death; he also wonders whether there might have been some politics hidden behind the curtain in this.",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "dialogue",
+     "speakerAsPrinted": null,
+     "speakerSeparator": null,
+     "text": "With this background, now begin to read!",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "stage-direction",
+     "delimiter": "square",
+     "text": "[Short in stature—a strongly built body—eyes like lamps of light that keep turning—a flat nose—broad eyebrows full of movement—thick lips—a small beard—a single ordinary garment of silk and cotton, covering the whole body like a cloak—this is Socrates, the renowned scholar given by Greece! In the corners and byways of the city of Athens, in its lanes and alleys, he is an idealist who stops passers-by and engages them in argument. The first scene begins at the entrance to his house.]",
+     "hasLineBreaks": false
+    },
+    {
+     "kind": "ornament",
+     "text": "*",
+     "hasLineBreaks": false
+    }
+   ],
+   "notes": [
+    {
+     "kind": "translation-note",
+     "text": "- Immediate authority is the verified Tamil introductory-note records for scans 27–28; the complete 2009 published-English `Socrates` witness was not consulted.\n- The user-retained source forms `மார்க்சும், எஞ்சல்சும்`, `ஹெகல்`, `‘ஜாடை’ காட்டினான்`, `தூசு நிகர் காரணங்களைக்கொண்டு`, `ஆஸ்திகப்பழமாக்கியிருக்கிறார்`, `நானோ`, `சபைன்`, and quoted `‘சோக்ரதர்’` were not silently replaced in Tamil.\n- `‘சோக்ரதர்’` is represented conservatively as `‘Sogradhar’`, not expanded to an externally inferred title.\n- The unusual `ஆஸ்திகப்பழமாக்கியிருக்கிறார்` is represented conservatively as `made ... into an astika-pazham`; no guessed doctrinal normalization is inserted.\n- `ஜாடை` is retained as `jadai` because the verified source wording is source-sensitive; the surrounding English conveys the sentence without claiming a more specific lexical emendation.\n- `சபைன்` is retained as `Sabain`; no external identification is imported.\n- The final source `*` is retained."
+    }
+   ]
+  }
+ },
+ "readingUnits": [
+  {
+   "order": 1,
+   "slug": "01",
+   "kind": "scene",
+   "headingTa": "காட்சி—1.",
+   "headingEn": "Scene 1",
+   "titleTa": "காட்சி—1.",
+   "titleEn": "Scene 1",
+   "settingTa": "சாக்ரடீசின் வீட்டு வாயில்",
+   "settingEn": "Entrance to Socrates' House",
+   "sourceScans": [
+    29,
+    30,
+    31
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(தெருவில் மக்கள் அங்குமிங்கும் போய்க்கொண்டிருக்கிறார்கள். சாக்ரடீஸ் சப்தமிட்டு அவர்களை அழைக்கிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்ரடீஸ்",
+      "speakerSeparator": " : ",
+      "text": "ஏற்றமிகு ஏதென்சு நகரத்து எழில் மிக்க வாலிபர்களே! நாற்றமெடுத்த சமுதாயத்தில் நறுமணம் கமழ்விக்க—இதோ சாக்ரடீஸ் அழைக்கிறேன்; ஓடிவாருங்கள்! பச்சை ரத்தம் பாய்ந்தோடக் கச்சைக்கட்டிக் களம் செல்லும் காளையரே! உங்களைத்தான் கூவி அழைக்கிறேன்.... கூட்டம் கூட்டமாகச் சூழ்ந்து வாருங்கள்! வீரம் விலை போகாது, விவேகம் துணைக்கு வராவிட்டால்! தீட்டிய வாளும், தின வெடுத்த தோள்களிலே தூக்கிய ஈட்டியும்மாத்திரம் போதாது தீரர்களே! இதோ நான் தரும் ஆயுதத்தை எடுத்துக் கொள்ளுங்கள்! அறிவாயுதம்! அறிவாயுதம்!! இருட்டுமேனியும் குருட்டுமதியும் கொண்ட மடமைப் பைசாசத்தை ஒரே நொடியில் ஒழித்துக்கட்டும் புதிய போர்க்கருவி! புறங் காணா வீரர்களின் அகங்காட்டும் புரட்சிக் கருவி! புலிநிகர் பருவ இளைஞர்களே! என்னோடு-புறப்படுங்கள்! பகைவன் நம் நாட்டுக்குள்ளே புகுந்துவிட்டான்—படை எதுவுமின்றி!..... பாமரரின் உள்ளத்தைக் கொள்ளை அடித்து விட்டான்..... அறியாமை அந்தகாரத்திலே ஏதென்சு நகரத்தை மூழ்கடித்து விட்டான், மூடநம்பிக்கை எனும் அந்தப்பகைவன்! எழில் மிகுந்த ஏதென்சு அறிவுப் பொழிலாக மாற, ஆற்றல் நிறை தோழர்களே, அணிவகுத்துப் புறப்படுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(வாலிபர்கள், போர்வீரர்கள் சூழ்ந்து நின்று சாக்ரடீசின் உபதேசத்தைக் கேட்கின்றனர். சாக்ரடீசின் மனைவி எக்ஸேந்திபி என்பவள் கணவனின் போக்கிலே கசப்புக் கொண்டு வீட்டு வாயிற்படியிலிருந்த படியே வெறுப்புடன் பார்த்து நிற்கிறாள்........ சாக்ரடீசின் நண்பன், வயதான தோழன் கிரிட்டோ வருகிறான். அவனைக் கண்டதும்........)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "கிரிட்டோ! வந்துவிட்டாயா? வா, வா!....இதோ வயதான காலத்திலே வாலிபர்களை நல்வழிக்கு அழைத்துச்செல்லும் கடமையிலே விரைந்து நடக்கிறேன் நான்!.... எனக்கு வாய்த்த இளம் மனைவி, இரண்டாம்தாரம்....எக்ஸேந்திபி, எத்துணை ஆத்திரத்தோடு என்னைத் தடுக்கிறாள் பார்! பார்! பார்! அவள் கனல் பொழியும் விழிகளைப் பார்! விழிகளா அவைகள் ?.... பயங்கரமான மின்னலப்பா ; மின்னல்!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எக்ஸேந்திபி",
+      "speakerSeparator": " : ",
+      "text": "(கோபமாக) ஆமாம்; மின்னல்தான் ......இந்தக் கிண்ணாரக் கிழவருக்கு மனைவியின் கண்கள் மின்னலாகத் தான் தெரியும்....!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "என் செய்வது ..? நானோர் கற்பனைக் கவியாக இருந்தால், உன் பருத்த இடையைப் பார்த்து ஆகா, மின்னல் இடை என்பேன்!.... கிரிட்டோ....சாக்ரடீஸ்தான் பொய் சொல்ல மாட்டானே; உண்மை சொல்கிறேன்... மின்னலின் ஒளியை என் மனைவியின் கண்களில் காண்பதால் ! ........இல்லையா நண்பா ....!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எக்ஸ்",
+      "speakerSeparator": ": ",
+      "text": "போதும் ! போதும் ! .... வீதியிலே போகிறவர் வருகிறவர்களோடு இருக்கட்டும், உமது விவாதங்களும், விளக்கங்களும், விளக்கெண்ணெய்த் தத்துவங்களும்! உமது முதல் மனைவி மிர்டோ, அவளைப் பிடித்த நல்ல காலம் செத்து விட்டாள் ! நானிருக்கிறேன் இப்படிக் கஷ்டப்பட ........ குடும்பம் — குடும்பத்திலே மனைவி — மூன்று பிள்ளைகள் இருக்கிறார்கள் என்ற கவலை வேண்டாமா மனிதனுக்கு ?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "(சூழ்ந்துள்ள இளைஞர்களைக் காட்டி.........) இதோ, இந்தப் பிள்ளைகளுக்கும் சேர்த்துத்தான் நான் பாடுபடுகிறேன்.... அன்புள்ளவளே!... சூரியன், பூமிக்கும் அதைச் சுற்றியிருக்கும் கடலுக்கும், அவைகளிலே வாழுகின்ற எல்லா உயிர்களுக்கும் கடமையைச் செய்து வருகிறான் !....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எக்ஸ்",
+      "speakerSeparator": ": ",
+      "text": "இப்படி விண்ணைப் பற்றியும் மண்ணைப் பற்றியும் பேசிக்கொண்டு, உம்மை நம்பி வந்த பெண்ணை நட்டாற்றில் விட்டுவிடும்....(தனக்குத்தானே கோபமாக) அடி, எக்ஸேந்திபி உனக்கு ஏண்டி இந்த வம்பு !....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எப்படியாவது கெட்டுத் தொலை! .... ஒழிந்து போ! .... இந்த தரித்திரம் பிடித்த வீட்டைவிடச் சுடுகாடு எவ்வளவோ மேல் !....இந்தத் தர்க்கவாதியைக் கட்டிக்கொண்டு அழுவதைவிடக் கழுத்தில் ஒரு சுருக்குக் கயிற்றைக் கட்டிக்கொண்டு சாகலாம் ! சாகலாம் ! .... சாகலாம் ! ....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(பேரிரைச்சல் போட்டபடி உள்ளே போகிறாள். அவள் போனதும் சாக்ரடீஸ் சிரித்துக் கொண்டே, மற்றவர்களைப் பார்த்து....)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "அப்பாடா, இடி இடித்து ஓய்ந்தது... மின்னல் வரும்போதே தெரியும், இப்படி இடி இடிக்கும் என்று!....இளைஞர்களே!.... இலட்சியவாதிகளுக்கு இப்படி எத்தனையோ இடையூறுகள்!... வீட்டிலே இதுபோல்! .... நாட்டிலோ, கேட்கத் தரமில்லை ! அரசியல்வாதி அனிடஸ் தன் அக்கிரமங்களைச் சுட்டிக் காட்டும் சூழ்நிலை எதுவுமே முளைக்கக் கூடாது எனக் கருதுகிறான். கற்பனை உலகத்தைச் சிருஷ்டித்துக் களிப்படையும் மெலிடஸ்; கற்களிலே, உலோகங்களிலே சிலைகளை வடித்துக் காட்டிச் சிறப்படையும் லைகன்—இவர்களெல்லாம் எனது அறிவுப் பிரச்சாரத்தால் அஸ்திவாரமே ஆட்டங் கொடுக்கிறதென ஆத்திரப்படுகிறார்கள்........ கிரேக்கத்தின் கீர்த்தி, புவனமறியாததல்ல ! அதற்காக இங்கு விழுந்திருக்கும் கீறல்களை மறைத்திட முயல்வது, புண்ணுக்குப் புனுகு தடவும் வேலையைப் போன்றது ! ....... அதனால்தான் தோழர்களே ! சிந்திக்கக் கற்றுக்கொள்ளுங்கள் எனச் சிரந்தாழ்த்தி உங்களை அழைக்கிறேன். அறிவு ! அகிலத்தின் எந்த மூலையிலிருந்தாலும் அதைத் தேடிப் பெறுவதற்காக உங்களை அழைக்கிறேன்!.... “உன்னையே நீ அறிவாய்!” இந்த உபதேசத்தின் உண்மையை உணர்வதற்காக என் உயிரினுமினியவர்களே! உங்களை எல்லாம் அழைக்கிறேன்....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அப்போது எக்ஸேந்திபி ஒரு பாத்திரத்திலே தண்ணீரைக் கொண்டுவந்து, சாக்ரடீசின் தலையில் கொட்டுகிறாள்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரிட்டோ",
+      "speakerSeparator": " : ",
+      "text": "ஆ ! என்ன இது ? என்ன இது ?....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "பதறாதே கிரிட்டோ ! .... ஒன்றுமில்லை !.... முதலில் மின்னல் கண்டாய்; பிறகு இடி இடித்தது, மழையும் பெய்கிறது..... அவ்வளவுதான் !.....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(இளைஞர்களும் கிரிட்டோவும் சிரிக்கிறார்கள். எக்ஸேந்திபி கோபத்தோடு உள்ளே போகிறாள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[People are moving here and there along the street. Socrates calls out loudly to them.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Socrates",
+      "speakerSeparator": " : ",
+      "text": "Handsome young men of lofty Athens! To spread fragrance through a society that has begun to stink—here is Socrates calling you; come running! Young bulls who tie up your waistcloth and go to the field while fresh blood races through you! It is you I am calling.... Come and gather around me in crowds! Courage will fetch no value if wisdom does not come to its aid! A sharpened sword and a spear raised upon shoulders hardened by daily exertion are not enough, heroes! Take up the weapon I give you! The weapon of knowledge! The weapon of knowledge!! A new instrument of war that will destroy in a single instant the demon of stupidity with its dark body and blind mind! A revolutionary weapon that reveals the inner world of warriors who never show their backs! Tiger-like young men in the prime of life! Set out with me! The enemy has entered our country—without any army!..... He has robbed the hearts of ordinary people..... He has drowned the city of Athens in the darkness of ignorance—that enemy called superstition! Strong comrades, form ranks and set out, so that beautiful Athens may become a grove of knowledge!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Young men and warriors gather around and listen to Socrates' teaching. Socrates' wife Xanthippe, embittered by her husband's conduct, stands at the threshold looking on with disgust........ Socrates' friend, his elderly companion Crito, arrives. On seeing him........]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Crito! You have come? Come, come!.... Here I am, in my old age, hurrying along in the duty of leading young men toward a good path!.... Look at the young wife I got, my second wife....Xanthippe; see how furiously she tries to stop me! Look! Look! Look at those eyes pouring fire! Are they eyes?.... Terrible lightning, man; lightning!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Xanthippe",
+      "speakerSeparator": " : ",
+      "text": "[Angrily] Yes; lightning indeed...... To this kinnara old man, his wife's eyes can only look like lightning....!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "What can I do..? If I were a poet of imagination, seeing your broad waist I would exclaim, ah, a lightning waist!.... Crito....Socrates will not lie, will he? I speak the truth... because I see the light of lightning in my wife's eyes! ........Isn't that so, friend....!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Xan.",
+      "speakerSeparator": " : ",
+      "text": "Enough! Enough!.... Let your arguments, explanations and lamp-oil philosophies stay with the people coming and going in the street! Your first wife Myrto—the good fortune that held on to her died with her! I remain here to suffer like this........ A family—a wife in the family—three children—shouldn't a man have some concern for them?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "[Pointing to the young men around him.........] See, I labour for these children too.... My dear! The sun performs its duty for the earth, for the sea surrounding it, and for all the living creatures that live in them!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Xan.",
+      "speakerSeparator": " : ",
+      "text": "Talking like this about the sky and the earth, you leave the woman who trusted you stranded in midstream.... [Angrily to herself] Hey, Xanthippe, why did you need this trouble!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Go to ruin somehow!.... Get lost!.... A cremation ground is far better than this poverty-stricken house!.... Rather than tie myself to this debater and weep, I could tie a noose around my neck and die! Die!.... die!.... die!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[She goes inside making a tremendous noise. After she leaves, Socrates laughs and turns to the others....]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Ah, at last, the thunder has thundered itself out... The moment the lightning appeared, I knew there would be thunder like this!.... Young men!.... Idealists face so many obstacles like these! At home, like this!.... In the country—one cannot even bear to hear of them! The politician Anytus thinks that no situation should ever sprout in which his injustices can be pointed out. Meletus, who delights in creating an imaginary world; Lycon, who earns distinction by shaping statues out of stone and metal—all of them are enraged that the very foundations are shaking because of my campaign for knowledge........ The fame of Greece is not unknown to the world! But trying to hide the cracks that have appeared here for that reason is like smearing civet perfume on a wound!....... That is why, comrades, I bow my head and call upon you: learn to think. Knowledge! I call you to seek it and obtain it from whatever corner of the world it may be found!.... “Know thyself!” My dear ones, dearer than my own life, I call all of you to understand the truth of this teaching....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[At that moment Xanthippe brings a vessel of water and pours it over Socrates' head.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "Ah! What is this? What is this?....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Don't panic, Crito!.... It is nothing!.... First you saw the lightning; then the thunder thundered, and now the rain is falling..... That is all!.....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[The young men and Crito laugh. Xanthippe goes inside angrily.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/01.md`; no wording from the 2009 published-English witness was consulted.\n- `அறிவாயுதம்` is rendered as `weapon of knowledge`, preserving the martial rhetoric that runs through the opening address.\n- `மடமைப் பைசாசம்` is rendered as `demon of stupidity`; the supernatural image is retained rather than flattened to `ignorance`.\n- `புறங் காணா வீரர்களின் அகங்காட்டும் புரட்சிக் கருவி` is rendered conservatively as a revolutionary weapon revealing the inner world of warriors who never show their backs.\n- The verified source form `இந்தக் கிண்ணாரக் கிழவருக்கு` is not silently normalized; `kinnara old man` retains the unusual lexical form rather than inventing a smoother Tamil reading.\n- `விளக்கெண்ணெய்த் தத்துவங்கள்` remains the comic `lamp-oil philosophies`.\n- `நட்டாற்றில்`, `சுடுகாடு`, the lightning/thunder/rain joke, the attack on superstition, and `உன்னையே நீ அறிவாய்!` are all retained in the dramatic flow.\n- The source-printed final `*` is retained."
+     }
+    ]
+   }
+  },
+  {
+   "order": 2,
+   "slug": "02",
+   "kind": "scene",
+   "headingTa": "காட்சி—2.",
+   "headingEn": "Scene 2",
+   "titleTa": "காட்சி—2.",
+   "titleEn": "Scene 2",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    32
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அனிடஸ், மெலிடஸ், லைகன் மூவரும் ஆழ்ந்த யோசனையில் ஈடுபட்டிருக்கிறார்கள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனிடஸ்",
+      "speakerSeparator": " : ",
+      "text": "குமுறும் எரிமலை! கொந்தளிக்கும் கடல்! இவைகளை விடப் பயங்கரமானவன் சாக்ரடீஸ்!.....அறிவாயுதமாம்..... அனைத்துலகும் அடிபணியும் அஸ்திரமாம்!.....அந்த ஆயுதம் கிரேக்கத்தில் தயாராகுமானால், நாம் தலைதூக்கவே முடியாது மெலிடஸ்! என்ன சொல்கிறாய், லைகன்?.....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "லைகன்",
+      "speakerSeparator": ": ",
+      "text": "நான் கல்லுக்குக் கடவுள் உருவம் தரும் சிற்பி!..... ஒரு காலத்திலே இந்த சாக்ரடீசும் என்னைப்போலச் சிற்பிதான்! இப்போதோ அவன் சிந்தனைச் சிற்பியாக மாறிவிட்டான்....பரவாயில்லை. கல்லைக் கடவுளாக்கும், நானும் கற்பனை மூட்டைகளுக்குத் தெய்வீக மெருகு தரும் கவிஞனாம் மெலிடசும், அரசியல் நிபுணனாம் நீயும் ஒன்றுசேர்ந்து விட்ட பிறகு.... சாக்ரடீஸ்—சமுத்திரத்துத் துரும்புதானே; அனிடஸ்.....!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலிடஸ்",
+      "speakerSeparator": " : ",
+      "text": "சபாஷ் லைகன், சபாஷ்.....! பொதுமக்கள் கழுதைகளாயிருந்தால்தான் நாம் தூக்கி வைக்கும் பொய்மூட்டைகளைச் சுமப்பார்கள்! குருடர்களாய் இருந்தால்தான் நாம் காட்டுகிற வழியிலே நடப்பார்கள்! நாம் கீறிய கோட்டைத் தாண்டாத கிரேக்க மக்களுக்கு அந்தக் கிழவன் அறிவுக்கண் வழங்குவதற்குள் அவனை நாம் அழித்துவிட வேண்டும்........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(மூவரும் ஒரு முடிவோடு புறப்படுகிறார்கள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Anytus, Meletus and Lycon are absorbed in deep thought.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anytus",
+      "speakerSeparator": " : ",
+      "text": "A rumbling volcano! A raging sea! Socrates is more dangerous than these!..... A weapon of knowledge, he says..... a missile before which the whole world will bow, he says!..... If that weapon is manufactured in Greece, we will never be able to raise our heads, Meletus! What do you say, Lycon?.....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Lycon",
+      "speakerSeparator": " : ",
+      "text": "I am a sculptor who gives a god's form to stone!..... At one time this Socrates too was a sculptor like me! But now he has become a sculptor of thought.... Never mind. Once I, who turn stone into god, Meletus—who is a poet who gives divine polish to bundles of imagination—and you, who are a political expert, have joined together.... Socrates is only a straw in the ocean, isn't he, Anytus.....!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Meletus",
+      "speakerSeparator": " : ",
+      "text": "Bravo, Lycon, bravo.....! Only if the common people remain donkeys will they carry the bundles of lies we load on them! Only if they remain blind will they walk along the path we show them! Before that old man gives the eye of knowledge to the Greek people who have never crossed the line we drew, we must destroy him........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[The three leave with a decision.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/02.md`; the 2009 published-English witness was not consulted.\n- The user-directed lexical controls `கவிஞனாம் மெலிடசும்` and `அரசியல் நிபுணனாம் நீயும்` are reflected directly as `Meletus—who is a poet` and `you, who are a political expert`; no withdrawn assistant wording is reintroduced.\n- `சாக்ரடீஸ்—சமுத்திரத்துத் துரும்பு` is kept as the deliberately belittling `Socrates is only a straw in the ocean`.\n- `பொய்மூட்டைகள்` remains `bundles of lies`; the donkey/blindness imagery and conspiracy structure are not softened.\n- The source-printed final `*` is retained."
+     }
+    ]
+   }
+  },
+  {
+   "order": 3,
+   "slug": "03",
+   "kind": "scene",
+   "headingTa": "காட்சி—3.",
+   "headingEn": "Scene 3",
+   "titleTa": "காட்சி—3.",
+   "titleEn": "Scene 3",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    33
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சந்தை வெளியிலே சாக்ரடீஸ் பேசிக்கொண்டிருக்கிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "சந்தையிலே பொருள் வாங்கும்....விந்தை மனிதர்காள்! அங்கெல்லாம் கிடைக்காத அரும்பொருள், நானொன்று வைத்திருக்கிறேன். விலை மதிக்கவொண்ணா வைரம்! ஆராய்ச்சி என்னும் ஆழ்கடலில் குளித்தெடுக்கும் ஒளி முத்து! அங்காடிக் கடையிலே அகப்படாத பொருள்! அறிவு! அறிவு! இந்த அதிமதுரப் பொருளை வாங்க வாரீர்! வாரீர்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(கிரேக்கத்துச் சிப்பாய் வருகிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிப்பாய்",
+      "speakerSeparator": " : ",
+      "text": "நிறுத்து உன் பிர சங்கத்தை!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "நான் நிறுத்தினாலும் அதைத் தொடர்ந்து நடத்த என் தோழர்கள் பலர் இருக்கிறார்களே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிப்",
+      "speakerSeparator": " : ",
+      "text": "தெகிடுதத்தம் பேசாதே! நீ வாலிபர்களைக் கெடுக்கிறாய்; நடுத்தெருவில் பைத்தியம்போல் புலம்புகிறாய்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "உன்னை, என்னிடம் அனுப்பியவர்களிடம் போய்ச்சொல்.... ஆடு மேய்ந்து அழிந்துவிடும் அருகம்புல் அல்ல, புத்துலகு சமைப்போரின் போதனை என்பதை! கருத்தொளி காட்டுக் குதிரையல்ல தம்பி, அதிகாரக் கடிவாளமிட்டதும் அடங்கி ஒடுங்கிவிட!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சிப்",
+      "speakerSeparator": " : ",
+      "text": "அதிகப்பிரசங்கியாரே! உமது பேச்சை நாளை நீதிமன்றம் கேட்கட்டும்! வாரும் என்னோடு, இப்போது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(இழுக்கிறான், சாக்ரடீசை)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": " : ",
+      "text": "இது என்ன அக்கிரமம்! எங்கு இழுத்துச் செல்கிறாய், தள்ளாத வயதில்....எங்கள் அறிவுத் தங்கத்தை — விடு வீரனே, விடு!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "வேண்டாம் நண்பனே, வேண்டாம் ...! நான் எங்கே போகிறேன்?நீதிமன்றத்திற்குத்தானே! கொலைக்களத்திற்கு அல்லவே!....என்னைப் போகவிடு! கருத்திலே தெளிவும் கொள்கையிலே வலிவும் இருக்கும்வரை விசாரணைக்கும் வழக்கிற்கும் விவேகிகள் பயப்படத் தேவையில்லை. போகிறேன். அறிவுப்பாதை காட்டுவோரை அழிவுப்பாதைக்கு விரட்டும் அநியாயக்காரர்களை நேரடியாகச் சந்தித்துப் போர் தொடுக்கப் போகிறேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சிப்பாய், சாக்ரடீசை இழுத்துச் செல்கிறான்.)",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Socrates is speaking in the marketplace.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "O wondrous people who come to the market to buy goods! I have a rare thing that cannot be found in any of those places. A diamond whose price cannot be measured! A pearl of light drawn from bathing in the deep sea called inquiry! A commodity not found in any market stall! Knowledge! Knowledge! Come and buy this supremely sweet commodity! Come! Come!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[A Greek soldier enters.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soldier",
+      "speakerSeparator": " : ",
+      "text": "Stop your sermon!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Even if I stop, I have many comrades to continue it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Sold.",
+      "speakerSeparator": " : ",
+      "text": "Don't talk gibberish! You are corrupting the young; you rave like a madman in the middle of the street!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Go and tell those who sent you to me.... that this is not arugam grass for goats to graze down and destroy, but the teaching of those who build a new world! The light of thought is not a wild horse, brother, to become meek and submissive the moment the bridle of authority is put on it!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Sold.",
+      "speakerSeparator": " : ",
+      "text": "O over-preacher! Let the court hear your speech tomorrow! Come with me now!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[He pulls Socrates away.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "What injustice is this! Where are you dragging him, at such an advanced age.... our gold of knowledge—let him go, soldier, let him go!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "No, friend, no...! Where am I going? Only to the court, isn't it? Not to the killing field!.... Let me go! So long as there is clarity in one's thought and strength in one's principle, people of wisdom need not fear inquiry or prosecution. I am going. I am going to meet directly those unjust men who drive those who show the path of knowledge toward the path of destruction, and begin battle with them.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[The soldier drags Socrates away.]",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/03.md`; no 2009 published-English wording was consulted.\n- `அறிவு` is repeatedly retained as `Knowledge`, preserving the marketplace-as-knowledge-market metaphor.\n- `அருகம்புல்` is retained as `arugam grass` rather than replaced with an unrelated generic plant.\n- `கருத்தொளி` is `the light of thought`; the wild-horse / authority-bridle image is retained.\n- The soldier's `அதிகப்பிரசங்கியாரே!` is rendered as `O over-preacher!` to retain its mocking force rather than smoothing it into a neutral address.\n- The final contrast between `அறிவுப்பாதை` and `அழிவுப்பாதை` is retained as `path of knowledge` versus `path of destruction`."
+     }
+    ]
+   }
+  },
+  {
+   "order": 4,
+   "slug": "04",
+   "kind": "scene",
+   "headingTa": "காட்சி — 4",
+   "headingEn": "Scene 4",
+   "titleTa": "காட்சி — 4",
+   "titleEn": "Scene 4",
+   "settingTa": "நீதிமன்றம்",
+   "settingEn": "Court",
+   "sourceScans": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நீதிமன்றம் (ஐநூறு பேர் கொண்ட ஏதெனிய நீதிமன்றம் கூடியிருக்கிறது. மரத்தினால் செய்யப்பட்ட பெஞ்சுகளில் நீதிபதிகள் அமர்ந்திருக்கிறார்கள். ஒரு சில பலகைகள் பாயினால் மூடப்பட்டிருக்கின்றன, நீதிபதிகளும் பொது மக்களும் இடையிலே அமைக்கப்பட்டுள்ள சிறுசிறு கம்புகள் பிரிக்கின்றன. மன்றத்தின் வலது புறத்திலே நீதி மன்றத் தலைவரின் ஆசனம் இருக்கிறது. அதன் பக்கத்திலே ஒரு ஆசனம். அதில்தான் இரண்டு கட்சிக்காரர்களும் பேச வேண்டியபோது வந்து பேச வேண்டும். இடதுபுறத்தில் தனித்தனியே உள்ள இரண்டு ஆசனங்களில் கட்சிக்காரர்களும் — அவர்களின் சாட்சிகளும் காட்சி தருகிறார்கள். 'Hedge Log' என்ற பெட்டியிலேயுள்ள முத்திரை உடைக்கப்பட்டு, குற்றப்பத்திரிகைகள் கொட்டப்படுகின்றன. குற்றப் பத்திரிகைகளைக் குமாஸ்தா படிக்கிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“பித்தன்ஸ்பேட்டைச் சேர்ந்த மெலிடயசின் குமாரன் மெலிடயஸ், அலோபிசில் உள்ள சோபரன்னிஸ்கோவின் குமாரன் சாக்ரடஸ் மீது கீழ்க்கண்டவிதமாகக் குற்றம் சாட்டுகிறான். இந்த நாடும் இந்த அரசாங்கமும் ஒத்துக் கொண்ட கடவுள்களை சாக்ரடஸ் ஒத்துக்கொள்வதில்லை. இளைஞர்களை உபதேசம் செய்து கெடுக்க முயலுகிறான். கெடுத்தும் வருகிறான். அவனுக்கு மரண தண்டனை அளிக்க வேண்டும்.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அனிடஸ், லைகன் இருவரும் மெலிடசைப் போலவே சாக்ரடஸ் மீது குற்றம் சுமத்துகிறார்கள்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனி",
+      "speakerSeparator": " : ",
+      "text": "சாக்ரடஸ்!....நாட்டில் நடமாடக்கூடாத ஓர் ஆத்மா!..... ஜனநாயக அரசாங்கத்தைக் குறை கூறும் அந்த ஜந்து, உடல் முழுவதும் விஷங்கொண்டது!........ கேட்டார்ப் பிணிக்கும் சொற்களால்—கேளாரும் வேட்ப மொழியும் வார்த்தைகளால்—சேடுமலியும் கருத்துக்களை அள்ளி வழங்கி அரசாங்கத்திற்கு விரோதமாக, சட்டத்திற்கு விரோதமாக இளைஞர்களைத் தூண்டிவிடும் இழிகுணக்கிழவன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சாக்ரடஸ் சிரிக்கிறான், கலகலவென்று.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "நீதிமன்றத் தலைவர்",
+      "speakerSeparator": " : ",
+      "text": "என்ன சிரிப்பு? என்ன காரணம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "ஒன்றுமில்லை, தலைவ!....... ஆத்திரத்திலே அனிடஸ் — தன்னை மறந்து என்னைப் பார்த்துக் கிழவன் எனக் கேலி புரிகிறார். அதை நினைத்தேன்—சிரித்தேன்! கடல்நுரை போல் நரை விழுந்துவிட்ட தலை, எனக்கும்—அனிடசுக்கும்!....இல்லையா, சபையோர்களே!....என்ன அனிடஸ், உண்மைதானே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "சாக்ரடீஸ்!....வழக்கும் விசாரணையும் உங்கள் இருவரின் தலையைப் பற்றி அல்ல! ...அதை ஞாபகப்படுத்த விரும்புகிறேன்,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "மிகவும் நன்றி, மெலிடஸ்!....ஆனால் ஒன்று!....எண்சாண் உடம்பிற்குத் தலையே பிரதானம் போல்....இந்த வழக்கிற்கும் தலையே பிரதானம்! என் தலையிலேயிருந்து சுடர் விட்டுக் கிளம்பும் அறிவு—அதை அழிக்க உன் தலையிலேயிருந்து புறப்படும் அர்த்தமற்றக் கற்பனைகள்-அனிடசின் தலையிலேயிருந்து பீறிட்டெழும் அரசியல் ஆணவம்—இந்த மூன்றுக்குமிடையே நடைபெறும் மும்முனைப் போராட்டம்—அதன் விளைவுதான் மெலிடஸ், இந்த வழக்கு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "நீதி",
+      "speakerSeparator": " : ",
+      "text": "சாக்ரடீஸ்! உம்மீது சாட்டப்பட்டுள்ள குற்றங்களுக்கு நீர் சொல்லும் சமாதானமென்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சார்",
+      "speakerSeparator": " : ",
+      "text": "என் சமாதானங்களைக் கேட்டு இளகாத சட்டம் கூட இரக்கம் காட்டலாம்—ஆனால், இந்தச் சபை எனக்காக இரங்குமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "அனி",
+      "speakerSeparator": " : ",
+      "text": "பார்த்தீர்களா, கட்டத்தையும் சபையையும் அவமதிக்கிறான்! இப்படித்தான் இளைஞர்களையெல்லாம் கெடுத்தான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "இளைஞர்களை ஒரு கிழவன், எப்படியப்பா கெடுக்க முடியும் ?....நானென்ன, வாலிபர்க்கு வலை வீசும் விலை மாதா ?.... பருவ விருந்தளிக்கும் பாவையா ?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "மாதரிடம் இல்லாத மயக்குமொழி....வாலிபர்க்கு வலை வீசும் வனிதையரும் பெற்றிடாத வசீகரச் சொல் அலங்காரம்—வார்த்தை ஜாலம்—அடுக்குத் தொடர்—இப்படிப்பல மாயங்கள் கற்றவர் நீர்!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "மந்திரவாதி என்றுகூடச் சொல்வாய் !........அன்புள்ள இளைஞனே!....இளைஞர்களை நான் செடுக்கிறேனா? இல்லை அவர்களாக வந்து கெடுகிறார்களா ?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "நீரே வலியச் சென்று கெடுக்கிறீர்!........சந்தை கூடும் இடங்களிலே, சந்து முனைகளிலே, சாலையோரங்களிலே, நடுத்தெருக்களிலே, நாலுபேர் சேருகிற மர நிழல்களிலே உமது பிரசங்கம் நடைபெறாத நேரமே கிடையாது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "ஏதென்சு நகரத்திலே நான் ஒருவன்தான் இளைஞர்களைக் கெடுக்கிறேன்....இல்லையா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "நீ கெடுக்கவில்லை?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "இல்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "அனிடஸ்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "இல்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "சிற்பி லைகன்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "இல்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "இந்த நீதிபதிகள்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "இல்லை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "யாருமே இளைஞர்களைக் கெடுக்கவில்லை; எல்லாரும் இளைஞர்களுக்கு நன்மையே செய்கிறார்கள், என்னைத் தவிர!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்—ஆமாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "இவ்வளவு பேரும்—ஏன்—ஏதென்சு நகரமே இளைஞர்களைத் திருத்தும்போது, நான் ஒருவன் அவர்கள் பாதையைத் திருப்பிவிட முடியுமா?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "மெலி",
+      "speakerSeparator": " : ",
+      "text": "ஒரு குடம் பாலுக்கு ஒரு துளி விஷம்!... ....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "ஏன், இப்படியும் சொல்லலாமே....இருண்ட வீட்டுக்கு ஓர் ஒளிவிளக்கு!.... என்ன மெலிடஸ் திகைக்கிறாய்? அனிடசின் அரசியல் மேதாவிலாசத்தாலும் உன்னுடைய அளவுக்கு மீறிய கற்பனைக் கவிதைகளாலும் கவர முடியாத காளைகளை நான் கவருகிறேன் என்றால்—அந்தப் பெருமை எனக்கல்ல; என்னையும் ஏதென்சு நகரத்தையும் வாழ்விக்கத் தகுந்த அந்தக் கொள்கைகளுக்கே அந்தப் பெருமை!.... சபையோர்களே!.... வாலிபர்கள் என்னைச் சுற்றி வானம் பாடிகள் போல் வட்டமிடக் காரணம், என்னுடைய வார்த்தை அலங்காரம் அல்ல! வளங்குறையாத கருத்துக்கள் — தரங்குறையாத கொள்கைகள் — இந்தத் தரணிக்குத் தேவையான தங்கம்நிகர் எண்ணங்கள்!........ அழகு மொழியால், அலங்கார அடுக்குகளால், அரும்பு உள்ளங்களை மயக்குகிறேன் என்கிறார்களே, அவர்களைக் கேட்கிறேன், அந்த மொழி எனக்கு மட்டும் சொந்தமல்லவே—அனிடசும்; மெலிடசும் அதைப் பேசக்கூடாது என்று நான் தடைபோட்டது கிடையாதே! பேசிப் பார்க்கட்டுமே அவர்களும்—பாவம், பேசித் தோற்றவர்கள்! மொழியிலே அழகு குறைந்ததால் அல்ல—எண்ணத்தில் இழுக்கு நிறைந்துவிட்டதால்! இருள் படிந்துவிட்டதால்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நாட்டிலே நீண்டநாட்களாகச் சூழ்ந்திருக்கும் இருளை விலக்க முயல்கிறேன், குறுகிய காலத்தில்! அதற்குப் பரிசு, ‘சாக்ரடீஸ் தீமை செய்பவன்—விண்ணிலும் மண்ணிலும் என்ன இருக்கிறது என்று தேடிப் பார்க்கும் நாத்திகன்—பொய்களை உண்மையாக்கும் புரட்டன்—இப்படியெல்லாம் பட்டங்கள்—குற்றச்சாட்டுகள்! பரவாயில்லை! எழுபது வயதுக்குமேல் முதன்முதலாகக் குற்றவாளிக் கூண்டிலே நிற்கும் எனக்கு; எப்படியும் மரண தண்டனை அளித்துவிட வேண்டுமென்று மெலிடஸ், அனிடஸ் போன்றவர்கள் துடியாய்த் துடிக்கிறார்கள். இன்னும சில வருடங்களில்—சில மாதங்களில்—அவர்களது ஆசை தானாகவே நிறைவேறி விடலாம்! அவ்வளவு கிழவனாகிவிட்டேன் நான்! அதற்குள் அவசரப்பட்டு, சாக்ரடீசைக் கொன்றோம்என்ற அநியாயப் பழியை ஏன் தேடிக்கொள்கிறார்களோ, தெரியவில்லை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "நீதி",
+      "speakerSeparator": " : ",
+      "text": "சாக்ரடீஸ், பேச்சை நிறுத்தும்! மரண தண்டனை—சிறைவாசம்—நாடு கடத்தல்—அபராதம் வசூலித்தல்—இப்படிப் பல தண்டனைகள் உமக்குத் தரப்படலாம். அவைகளில் நீர் எதை விரும்புகிறீர்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": " : ",
+      "text": "நான் சாவதாக இருந்தால் ஏதென்ஸ் நகரத்திலே, முப்பது பேர் கொண்ட சபையின் ஆட்சி நடைபெற்றதே—அதில் நான் ஒரு நிர்வாக அங்கத்தினனாகப் பதவிவகித்து, ஆர்ஜீனா போர்க்களத்தில் மாண்டவீரர்களின் சவங்களையும், உடைந்த போர்க்கப்பல்களையும் எடுத்து வராத குற்றத்திற்காகத் தளபதிகள் விசாரணை செய்யப்பட்டபோது அந்தச் சபையின் அநீதியைக் கண்டித்து வெளியேறினேனே அன்றே கொல்லப்பட்டிருப்பேன்! அதைத் தொடர்ந்து, லீனான் என்பவனைக் கொலைசெய்துவர என்னையும் மற்ற மூவரையும் சபை அனுப்பியபோது, அதை மறுத்து வீட்டுக்குப் போய் விட்டேன்; அப்படி மறுத்ததற்கே எனக்கு மரண தண்டனை கிடைத்திருக்கும், அப்போதே! நல்லவேளை அந்தச் சபை கிரேக்க நாட்டு நீதிமன்றம், சாக்ரடீஸின் பிணத்தைக் காண வேண்டுமென்று விரும்பினால், அதற்கு நான் தடையாக இருக்க முடியாது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சிறைவாசம் அனுபவிக்கிறேன் எனக்கேட்கலாம்—அதிகாரிகளின் நிரந்தர அடிமையாகச் சிறையில் கிடப்பதை விடச் செத்து மடிவது மேல்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அபராதம் கட்டினால் விட்டுவிடுவீர்கள்! ஆனால், அந்த அளவுக்கு நான் பணக்காரனாக இருந்திருந்தால், அபராதங் கட்டக்கூடிய பணவசதி உள்ள அளவுக்குப் போதுமான குற்றங்களைச் செய்திருப்பேன்! நாடு கடத்தலை ஏற்கலாம்—வேறு நாட்டில் சுதந்திரமாகத் திரியலாம்—ஆனால், என்னுடைய கொள்கைகளை என்னுடைய.சொந்த நாடே ஏற்க மறுக்கும்போது பிற நாடுகளில் வரவேற்பார்கள் என்று என்ன நிச்சயம்? இதனால், எனதருமை ஏதென்ஸ் நகரத்தும் பெருமக்களே! நான் செய்த காரியங்களுக்குத் தண்டனையாக ஒலிம்பியாவில் நடக்கும் குதிரை ரதப் போட்டியில் ஜெயித்தவனுக்கு வீரமானியம் கொடுப்பதுபோல் எனக்கும் கொடுத்து, என்னை ஆனந்தமாக வாழ விடுங்கள்! என் இலட்சியப் பிரச்சாரத்திற்குத் தேவையான வசதிகளை இடைவிடாது செய்து தாருங்கள்! அதுதான் நீங்கள் எனக்கும் என் கொள்கைக்கும் காட்டுகிற மரியாதையாகும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சபையோர் திகைப்பு)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "நீதி",
+      "speakerSeparator": ": ",
+      "text": "அலட்சியமான பேச்சு!....அவமதிப்பு!....வாக்கெடுப்பு நடைபெறட்டும்! சாக்ரடீசுக்கு மரணமா?........மன்னிப்பா?........ என்று சங்குகள் மூலம் வாக்களியுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(வாதியிடம் உள்ள பலகையிலும், பிரதிவாதிக்கு நேரே உள்ள பலகையிலும் நீதிமன்றத்தினர் தங்கள் இஷ்டப்படி “சங்கு”களை அடுக்குகிறார்கள். வாக்கெடுப்பு முடிகிறது, “சங்கு”கள் எண்ணப்படுகின்றன. ‘மரணம்’ என்று 281 சங்குகளும், ‘மன்னிப்பு’ என்று 220 சங்குகளும் கணக்கிடப்படுகின்றன. சபை, சாக்ரடீஸின் முகத்தைப் பார்க்கிறது. அவனது கண்களிலே புதிய ஒளி பிறக்கிறது.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "நீதி",
+      "speakerSeparator": ": ",
+      "text": "மன்னிக்கும்படி 220 வாக்குகள்! மரண தண்டனை அளிக்கும்படி 281 வாக்குகள்! வாக்கெடுப்பின்படி, சாக்ரடீசுக்கு விஷம் தரப்பட்டு, மரண தண்டனை நிறைவேற்றப்பட வேண்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "ஏதென்ஸ் நகரத்து நீதிமன்றம் பெருமைக்குரிய தீர்ப்பை அளித்து மௌனப் புன்னகை புரிகிறது! உலக சரித்திரத்திலே இடம் பெறுகிற இந்த ஏதென்சுத் தீர்ப்புக்கு ஆளாகி விட்ட பெருமை முதன்முதலாக எனக்குக் கிடைத்திருக்கிறது! ‘அறிவு விளக்கைக் கையிலே ஏந்து, என்று கூறியதற்கு அழிவைப் பரிசாகத் தரும் புண்ணிய காரியத்தை நிறைவேற்றி விட்டர்கள் ! 281—220!........முப்பத்தொரு வாக்குகள், இப்படித் திரும்பி விழுந்திருந்தால் சாக்ரடீஸ் காப்பாற்றப்பட்டிருக்கலாம்! அந்த வாக்குகளும் ஆயிரக்கணக்கான நாணயங்கள் செலவிடப்பட்டு வாங்கப்பட்டவை என்பதைக் கூறாமலிருக்க முடியாது! கவலையில்லை! இந்த மன்றத்தின் முறைப்படிப் பேசி வாழ்வதைக் காட்டிலும், என் முறைப்படிப் பேசிச் சாவது எவ்வளவோ மேன்மையானது!........ எனக்குத் தெரியும்; ஒரு மனிதன்—எதையும் பேசி, எதுவும் செய்து, மன்னிப்புக் கேட்கத் தயாராயிருந்தால் இதுபோன்ற தண்டனைகளிலேயிருந்து நிச்சயம் மீளலாம்! களத்தில் எதிரியின் காலில் விழுகிற போர் வீரனாக மாறிவிட நான் நினைத்ததில்லை. அதனால் மரணத்தைப் பரிசாகப் பெற்றிருக்கிறேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[The Athenian court of five hundred has assembled. Judges are seated on wooden benches. A few boards are covered with mats. Small rails set between the judges and the general public separate them. On the right side of the hall is the seat of the president of the court. Beside it is another seat. Both parties must come there and speak when it is their turn. On the left are two separate seats where the parties—and their witnesses—are seen. The seal on the box called `Hedge Log` is broken, and the charge sheets are poured out. The clerk reads the charge sheets.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Meletus, son of Melidayas of Pithanspettai, charges Socradas, son of Sobarannisko of Alopis, as follows. Socradas does not accept the gods accepted by this country and this government. He tries to corrupt the young through his teaching. He has been corrupting them. He must be given the death penalty.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Anytus and Lycon, like Meletus, also bring charges against Socradas.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anytus",
+      "speakerSeparator": " : ",
+      "text": "Socradas!.... A soul that must not be allowed to move about in the country!..... That creature who finds fault with the democratic government has poison throughout his body!........ With words that bind those who hear—with speech that makes even those who have not heard desire to listen—with ideas poured out in profusion, this low-natured old man incites the young against the government and against the law!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Socradas laughs aloud.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "President of the Court",
+      "speakerSeparator": " : ",
+      "text": "Why are you laughing? What is the reason?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Nothing, leader!....... In his anger Anytus—forgets himself and mocks me as an old man. I thought of that—and laughed! A head on which grey has fallen like sea-foam, for me—and for Anytus too!.... Isn't that so, members of the assembly!.... What, Anytus, isn't it true?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "Socrates!.... This case and inquiry are not about the heads of the two of you! ...I wish to remind you of that,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Thank you very much, Meletus!.... But one thing!.... Just as the head is chief for this eight-span body....the head is chief for this case too! The knowledge that flashes out from my head—the meaningless imaginations that set out from your head to destroy it—the political arrogance that bursts forth from Anytus' head—the three-cornered struggle taking place among these three—that, Meletus, is what has produced this case!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Court",
+      "speakerSeparator": " : ",
+      "text": "Socrates! What answer do you give to the charges laid against you?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Sar",
+      "speakerSeparator": " : ",
+      "text": "Even a law that does not soften after hearing my answers may show mercy—but will this assembly feel pity for me?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Anytus",
+      "speakerSeparator": " : ",
+      "text": "Did you see? He insults the dock and the assembly! This is exactly how he corrupted all the young men!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "How can an old man corrupt the young, man?.... Am I a woman for hire who casts a net for young men?.... A maiden who offers the feast of youth?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "A seductive speech not found even among women.... a captivating ornament of words not possessed even by women who cast nets for young men—word-magic—layer upon layer—these and many such tricks are arts you have mastered!........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "You may even call me a magician!........ Dear young man!.... Do I *sedukkirēn* the young? Or do they come and become corrupted on their own?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "You yourself go out deliberately and corrupt them!........ In marketplaces, at street corners, by the roadside, in the middle of streets, beneath trees where four people gather—there is hardly a time when your sermon does not take place!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "In the city of Athens I alone corrupt the young....is that so?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "Yes.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "You do not corrupt them?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "No!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Anytus?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "No!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "The sculptor Lycon?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "No!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "These judges?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "No!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "No one corrupts the young; everyone does only good to the young, except me!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "Yes—yes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "When all these people—why, when the whole city of Athens—is reforming the young, can I alone turn them away from their path?........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Mel.",
+      "speakerSeparator": " : ",
+      "text": "One drop of poison in a pot of milk!......",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Why, one could say it this way too.... One lamp in a dark house!.... What is it, Meletus, are you bewildered? If I attract the young bulls whom Anytus' display of political genius and your excessive imaginative poetry cannot attract—that distinction is not mine; it belongs to the principles capable of giving life to me and to the city of Athens!.... Members of the assembly!.... The reason the young circle around me like skylarks is not my ornamentation of words! Ideas whose abundance does not diminish—principles whose quality does not decline—thoughts like gold needed by this earth!........ They say I bewitch budding hearts with beautiful language and ornamental sequences. I ask them: that language does not belong to me alone—have I ever forbidden Anytus and Meletus from speaking it? Let them try speaking too—poor fellows, they spoke and lost! Not because their language lacked beauty—but because crookedness filled their thought! Because darkness settled over it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "I am trying, in a short time, to remove the darkness that has surrounded the country for many years! My reward for that is titles and accusations: ‘Socrates is an evildoer—an atheist who searches to find what is in the heavens and on the earth—a distorter who turns lies into truths’—all this! Never mind! I am over seventy, and for the first time I stand in the accused's dock; people such as Meletus and Anytus are desperately eager to have the death penalty imposed on me somehow. In some more years—some months—their wish may come true by itself! I have become that old! Before then, why they hurry to seek the unjust blame of ‘we killed Socrates’, I do not know.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Court",
+      "speakerSeparator": " : ",
+      "text": "Socrates, stop speaking! Death—imprisonment—banishment—collection of a fine—many punishments such as these may be given to you. Which of them do you prefer?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "If I were to die, I could have been killed on the very day when the Council of Thirty ruled Athens—when I held office as one of its administrative members, and when the commanders were tried for failing to recover the bodies of the warriors who died on the Arjeena battlefield and the broken warships, I condemned the injustice of that council and walked out! After that, when the council sent me and three others to kill a man called Leenan, I refused and went home; for that refusal alone I could have received the death penalty then itself! Fortunately, if that assembly, the court of Greece, wishes to see Socrates' corpse, I cannot stand in its way!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "You may ask me to undergo imprisonment—it is better to die than to lie in prison as the permanent slave of officials!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "If I pay a fine, you will let me go! But if I had been rich enough to possess the means to pay such fines, I would have committed enough crimes to match that wealth! I can accept banishment—I can move freely in another country—but when my own.country refuses to accept my principles, what certainty is there that other countries will welcome them? Therefore, my dear great people of the city of Athens! As punishment for the things I have done, just as the winner of the horse-chariot race at Olympia is given a hero's grant, give one to me too and allow me to live happily! Continually provide the facilities needed for my campaign for ideals! That is the respect you should show to me and to my principles!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[The members of the assembly are stunned.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Court",
+      "speakerSeparator": " : ",
+      "text": "Insolent speech!.... Contempt!.... Let the vote take place! Death for Socrates?........Pardon?........ Cast your votes with conch-shells!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[On the board by the accuser and on the board facing the defendant, the members of the court place their “conch-shells” as they wish. The voting ends. The “conch-shells” are counted. 281 shells are counted for ‘death’ and 220 for ‘pardon’. The assembly looks at Socrates' face. A new light is born in his eyes.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Court",
+      "speakerSeparator": " : ",
+      "text": "220 votes for pardon! 281 votes for the death penalty! According to the vote, Socrates must be given poison and the death sentence must be carried out!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "The court of the city of Athens gives a glorious judgment and smiles in silence! For the first time I have received the honour of becoming the object of this Athenian judgment, which will take its place in world history! For telling people, ‘Carry the lamp of knowledge in your hand,’ you have accomplished the holy deed of giving destruction as the reward! 281—220!........ If thirty-one votes had fallen the other way like this, Socrates might have been saved! I cannot refrain from saying that those votes too were bought by spending thousands of coins! No matter! How much greater it is to die speaking in my own way than to live by speaking in the manner of this court!........ I know: if a man is ready to say anything, do anything and ask forgiveness, he can certainly escape punishments like these! I never wished to become a warrior who falls at the enemy's feet on the battlefield. And so I have received death as my reward.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/04.md` and, where needed, its verified page records; the 2009 published-English `Socrates` witness was not consulted.\n- The source's `Hedge Log` is retained exactly as printed rather than corrected from external historical knowledge.\n- The charge paragraph's source name variants are represented conservatively as `Melidayas`, `Pithanspettai`, `Sobarannisko`, `Alopis`, and `Socradas`; no external classical-Greek normalization is imported.\n- The verified speaker label `சார் :` is represented as `Sar :` rather than silently regularized to `Soc.` or another speaker.\n- The locked unusual source verb `செடுக்கிறேனா` is represented visibly as `sedukkirēn`; its first occurrence is not silently replaced by the expected neighbouring verb `கெடுக்க`.\n- Locked source forms such as `இன்னும`, `கொன்றோம்என்ற`, `எனக்கேட்கலாம்`, `அபராதங்`, `என்னுடைய.சொந்த`, `எனதருமை ஏதென்ஸ் நகரத்தும்`, and `விட்டர்கள்` remain untouched in the Tamil archive; the English conveys their immediate sentence sense without claiming a Tamil emendation.\n- The source explicitly says `முப்பத்தொரு வாக்குகள்` (`thirty-one votes`) despite the printed totals `281—220`; the English retains the source's thirty-one rather than correcting the arithmetic.\n- `சங்கு` voting is retained as `conch-shells`, preserving the source's courtroom mechanism.\n- The repeated martial, political and knowledge/light imagery is kept explicit, and the final source `*` is retained."
+     }
+    ]
+   }
+  },
+  {
+   "order": 5,
+   "slug": "05",
+   "kind": "scene",
+   "headingTa": "காட்சி—5.",
+   "headingEn": "Scene 5",
+   "titleTa": "காட்சி—5.",
+   "titleEn": "Scene 5",
+   "settingTa": "சிறைச்சாலை",
+   "settingEn": "Prison",
+   "sourceScans": [
+    40,
+    41,
+    42,
+    43
+   ],
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சிறைச்சாலை",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சாக்ரடீஸ் காலிலே சங்கிலி பூட்டப்பட்டுச் சிறிய இடத்திலே அங்குமிங்கும் உலவிக்கொண்டிருக்கிறான். கதவு திறக்கப்படுகிறது—கிரிட்டோ வருகிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "கிரிட்டோ! என் அருமை நண்பா! வா வா........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(வெளியே வந்து பார்த்து).... ....அது யார்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": " : ",
+      "text": "உன் மனைவி....குழந்தைகள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(பெரிய குழந்தைகள் இருவரும், கைக்குழந்தையை ஏந்திய படி எக்ஸேந்திபியும் உள்ளே வருகிறார்கள் கண்ணீர் வடித்தபடி........)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": ": !........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அவள் அழுகிறாள், குழந்தைகள் அழுகிறார்கள், பச்சைக் குழந்தையும் வீறிட்டு அழுகிறது.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "அன்புள்ளவளே!........பார்த்தாயா?.... ....பயனற்ற தத்துவ விசாரணையில் காலத்தைக் கழிக்கிறேன்; தர்க்கவாதம் புரிந்து தொல்லைப்படுகிறேன் என்றெல்லாம் கோபித்துக் கொண்டாயே; இப்போது பார், உன் கணவன் அகிலம் புகழும் வீரனாக, தேசம் புகழும் தியாகியாக மாறிவிட்டான்!....எக்ஸேந்திபி! நீ பாக்கியசாலிதான்! படை பலம் பண பலம் அத்தனை பலத்தையும் எதிர்த்து நின்று, யாருக்கும் பணியாத பெருமையோடு, விழிகளைக் கடைசியாக மூடப்போகும் கர்மவீரனுக்கு நீ மனைவி!....குழந்தைகளைப் பத்திரமாகப் பார்த்துக்கொள்! அவர்கள் பெரியவர்களாக மாறி, நேர்மை தவறி நடந்தால், நான் உங்களைத் திருத்த முயன்றதுபோல், நீங்களும் அவர்களைத் திருத்த முயலுங்கள்; போ....நேரமாகிறது....காவலர்கள் கோபிப்பர்!........ கிரிட்டோ, இவர்களை அனுப்பி வை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(கிரிட்டோ; அவர்களை வெளியே அழைத்துச் செல்கிறான். பிறகு,கிரிட்டோ மட்டும் உள்ளே வருகிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "கிரிட்டோ! உனக்குத் தெரியுமல்லவா?.... ....முப்பதுநாள் சிறைவாழ்வு இன்றோடு முடிவடைகிறது! நீதிமன்றத்தின் தீர்ப்பின்படி....விஷம் சாப்பிட்டுச் சாகவேண்டிய நன்னாள் இன்றுதான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": " : ",
+      "text": "சாக்ரடீஸ்! தத்துவ வாதங்களால் அழிக்க முடியாத உன்னை, விஷம் அழிக்கப்போகிறது!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஒரு யோசனை நண்பா!........இன்னும் நேரமிருக்கிறது; என்னிடமோ மின்னும் தங்கமிருக்கிறது! காவலர்களை வசப்படுத்திக்கொண்டு எப்படியாவது தப்பிவிட்டால்....?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "வெட்கப்படுகிறேன் கிரிட்டோ!........சாக்ரடீஸ் சாவுக்குப் பயந்தவனல்ல........நீதிமன்றம் விதித்த நிபந்தனைகளைப் பற்றி நான் சர்ச்சை செய்ததும், அபராதங்கட்டத் தயாராக இருப்பதாகக் கூறியதும். தேசப் பிரஷ்ட உத்திரவு பற்றி வியாக்யானம் கூறியதும், என் பிரச்சாரத்தின் நோக்கம் பற்றிப் பெரியதோர் பிரசங்கம் செய்ததும்—மரணத்திற்கு பயந்து அல்ல! இவ்வளவுக்கும் தயாராக இருந்தும், கிரேக்க நாட்டு நீதிமன்றம் வீணாக சாக்ரடீசை அழித்துவிடும் வெறிச்செயலில் ஈடுபட்டது என்பதை நிரூபிப்பதற்காகத்தான்! அதை வைத்து நான் சாவுக்கு அஞ்சுகிறேன் என்று கணக்கிட்டுவிடாதே கிரிட்டோ!........ பிளேட்டோ, கிரிட்டோ, அப்போலடோரஸ் முதலிய நண்பர்களையும்; மனைவி மக்களையும், எனதருமை ஏதென்ஸ் நகரத்தையும் விட்டுப் பிரியும் நேரம் நெருங்கிக்கொண்டேயிருக்கிறது! உள்ளே எனக்காக விஷம் தயாராகிக் கொண்டேயிருக்கிறது! இன்னும் கால் நாழிகையில் காவலன் வந்து விடுவான், கடும் விஷத்தோடு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": " : ",
+      "text": "அருமை நண்பா! மலை குலைந்தாலும் மனங்குலையாமாவீர உன் ஒளிவீசும் சுழற்கண்களை, துடிக்கும் அகன்ற புருவங்களை தொகை தொகையாகப் பகைவரினும் துவளாது! தத்துவ விளக்கம் கொட்டும் உணர்ச்சி மிக்க உதடுகளை இனி ஒரு சாக்ரடீஸ் உருவத்திலே நான் காணப் போகிறேனா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "அழாதே நண்பா! அதோ வந்து விட்டது அமுதம்! அறிவு படைக்கு இந்த அரசாங்கம் வைக்கும் விருந்து! தள்ளாத கிழவனுக்கு இந்தப் பொல்லாத நாடு தரும் பரிசு! அதோ வந்துவிட்டது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(காவலன் விஷக் கிண்ணத்துடன் வருகிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "சிறைக்காவல! இதை என்ன செய்யவேண்டும்? முறைகளைக் சொல்லு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "காவ",
+      "speakerSeparator": ": ",
+      "text": "(சாக்ரடீசின் விலங்குகளை அவிழ்த்துவிட்டு அழுதபடி) பெரியவரே! விஷத்தை முழுவதும் குடிக்க வேண்டும்........ பிறகு இங்குமங்கும் நடந்து கொண்டேயிருக்க வேண்டும்! கால்கள் மரத்துப்போகும் வரையிலே அப்படி நடக்க வேண்டும்....பிறகு உட்காரலாம்....கொஞ்சம் கொஞ்சமாக உடம்பு சில்லிட்டுக் கொண்டே வரும். பிறகு படுத்து விடலாம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "ஆனந்தமான நித்திரை ! கனவு மங்கையாலும் கலைக்க முடியாத நித்திரை!...காவல! கொடு இப்படி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(விஷக் கிண்ணத்தை வாங்குகிறான்.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": ": ",
+      "text": "நண்பா! ....சிறிது நேரம் பொறுத்துக்கூடச் சாப்பிடலாம்! சிறைச்சாலையிலே அதற்கு அனுமதி உண்டு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "கிரிட்டோ! உனக்கு மிகவும் அற்ப ஆசை! விஷத்தை இன்னும் இரண்டு நாழிகை கழித்துச் சாப்பிடுவதாக வைத்துக்கொள்! அதற்குள் திடீர் என்று இருதயம் வெடித்து நான் இறந்துவிட்டால்... கிரேக்க நாட்டு நீதிமன்றத்தின் தண்டனையை எப்படி நிறைவேற்றுவது?...புதிய சாக்ரடீசா பிறந்து வருவான்? கூடாது; கூடாது...இப்போதே சாப்பிடுகிறேன்...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": ": ",
+      "text": "நண்ப! கடைசியாக எனக்கு ஏதாவது சொல்லு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "புதிதாக என்ன சொல்லப் போகிறேன் — உன்னையே நீ அறிந்து கொள்!’’ எதையும் ஏன், எப்படி எதற்காக என்று கேள்! அப்படிக் கேட்டால்தான் சிலைவடிக்கும் இந்தச்சிற்பி சிந்தனைச் சிற்பியாக மாறினேன். “அவர் சொன்னார்; இவர் சொன்னார் என்று நம்பி அறிவிழந்து தடுமாற்றம் அடைய வேண்டாம் — எவர் சொன்ன சொல்லானாலும் அதனை உந்தன் இயல்பான பகுத்த றிவால் எண்ணிப் பார்ப்பாய்’’ இதைத்தான் உனக்கும், இந்த உலகத்திற்கும் சொல்ல விரும்புகிறேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கிரி",
+      "speakerSeparator": ": ",
+      "text": "ஏதென்சின் எழுச்சிமிக்க சிங்கமே! எங்கள் தங்கமே!.... கிரேக்கப் பெரியாரே! எம்மையும் உம்மையும் இந்த விஷம் பிரிக்கப் போகிறதா?... அய்யகோ, நினைக்கவே நெஞ்சு நடுங்குகிறதே! சாக்ரடீஸ் ... உனது சவத்தை எப்படி அடக்கம் செய்யவேண்டும்?...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "புதைப்பதாயிருந்தால், இந்த நாட்டில் உலவும் புளுகு மூட்டைகளையும் என்னோடு போட்டுப் புதைத்து விடு!..... எரிப்பதாயிருந்தால், ஏமாற்றுக்காரர்களின் சுவடிகளையும் என்னோடு சேர்த்துச் சுட்டுச் சாம்பலாக்கித் தண்ணீரில் கரைத்து விடு!.... விடை கொடு. விஷம் அழைக்கிறது!.... என் தேசத்துப் பெருமக்களிடம் விடை பெற்றுக்கொள்ளப் போகிறேன்.... எனதருமை ஏதென்சு நகரத்துப் பெருமக்களே! இதோ சாச்ரடீஸ் சந்தோஷமாகச் சாகப் போகிறான்!... கிரேக்க நாட்டு நீதிமன்றம், கூடைக்கணக்கிலே அவன்மீது குற்றங்களைக் கொட்டிக் கோப்பை நிறைய நஞ்சையும் நிறைத்துப் பருகடா இந்த உயிர் பருகும் பாயாசத்தை என்று உத்திரவிட்டிருக்கிறது!... விஷக் கோப்பையின் விளிம்பிலே, உபதேசங்களை உதிர்த்த சாக்ரடீசின் உதடுகள் பதியப்போகின்றன! இன்னும் ஓரிரு விநாடிகள்! அதன் பிறகு சாக்ரடீசின் உடல், உயிர் எல்லாமே அதனதன் தொடர்பை அறுத்துக் கொண்டு, வாழ்க்கைத் தொடர்கதைக்கு முற்றுப்புள்ளி வைத்து விடும்!- வருகிறேன் கிரேக்கமே! .......வருகிறேன்! என தருமைஏதென்ஸ் நகரமே, வருகிறேன்!.....நான் ஆடியோடி ஆவேசமாகப் பேசுவதற்குத் துணைபுரிந்த ஏதென்சு நகரத்து எழில் வீதிகளே! வீதியோரத்து மர நிழல்களே! வீட்டோரத்து திண்ணைகளே! உங்கள் அனைவரிடமிருந்தும் இந்தக் கிழவன் விடைபெறுகிறான்! பீடுநடையும் பெருமித நோக்கும் கொண்ட இளைஞர்களே! நாடுகாக்கும் நல்லதம்பிகளே! பேரன்பு கொண்டோரே! பெரியோரே பெற்ற தாய்மாரே! நல்இளஞ்சிங்கங்காள்! உங்கள் அனைவருக்கும் சாக்ரடீசின் இறுதி வணக்கம் உரித்தாகுக ! இந்தக் கிழவன் கிரேக்க இளைஞர்களைக் கெடுத்ததாக யாராவது உண்மையாக உளமார நினைத்தால் அவர்கள் என்னை மன்னித்து விடட்டும்! மன்னித்து விடட்டும்! வருகிறேன். வணக்கம், வணக்கம். சிந்திக்கத் தவறாதே! ஏ, ஜெகமே! சிந்திக்கத் தவறாதே! உன்னையே நீ அறிவாய்! அறிவாய்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(சாக்ரடீஸ் விஷத்தைச் சாப்பிட்டு முடிக்கிறான். கால்கள் தடுமாறுகிற வரையில் நடக்கிறான். பிறகு படுக்கிறான். உடல் ஜில்லிட்டுப் போகிறது! காவலன், போர்வையை இழுத்துச் சாக்ரடீசின் முகத்தை மூடுகிறான், சில வினாடிகளுக்குப்பின், சாக்ரடீஸ் போர்வையை முகத்திலிருந்து விலக்கி)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சாக்",
+      "speakerSeparator": ": ",
+      "text": "கிரிட்டோ! ஒன்று சொல்ல மறந்தேன்...பக்கத்து வீட்டு அங்கிளிப்பியசுக்கு ஒரு கோழிக் குஞ்சு கடன் கொடுக்க வேண்டும். அதை மறக்காமல் கொடுத்துவிடு...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(அத்துடன் கிரேக்கப் பெரியவரின் மூச்சு நின்றது. கிரிட்டோ அழுதான். சின்னாள் சென்று கிரேக்கம் அவன் கல்லறையைக் கண்ணீரால் குளிப்பாட்டியது.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Socrates, his feet chained, is walking back and forth in a small space. The door opens—Crito enters.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Crito! My dear friend! Come, come........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[He comes forward and looks outside].... ....Who is that?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "Your wife....the children!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[The two older children enter, and Xanthippe enters carrying the baby, all shedding tears........]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": ": !........",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[She weeps; the children weep; even the infant cries out loudly.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "My dear!........Did you see?.... ....You used to grow angry saying that I waste my time in useless philosophical inquiry and trouble myself with argument; now look—your husband has become a hero praised by the whole world, a martyr praised by the country!.... Xanthippe! You are indeed fortunate! You are the wife of a hero of action who stood against military strength, money strength, every kind of strength, bowed to no one, and is now about to close his eyes for the last time with that pride!.... Take good care of the children! When they grow up, if they stray from honesty, just as I tried to correct you all, you too must try to correct them. Go....it is getting late....the guards will grow angry!........ Crito, see them off!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Crito leads them outside. Then Crito alone comes back in.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Crito! You know, don't you?.... ....My thirty days of prison life end today! According to the court's judgment....today is the auspicious day on which I must drink poison and die!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "Socrates! Poison is going to destroy you, whom philosophical argument could not destroy!....",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "One thought, friend!........There is still time; and I have glittering gold! If we win over the guards somehow and escape....?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "I am ashamed, Crito!........Socrates is not one who fears death........ When I argued about the conditions imposed by the court, said that I was prepared to pay a fine, explained the order of banishment, and gave a great speech about the purpose of my campaign—it was not because I feared death! It was only to prove that, even when I was ready for all this, the court of Greece still engaged in the frenzy of destroying Socrates for nothing! Do not calculate from that that I fear death, Crito!........ The moment draws nearer when I must part from friends such as Plato, Crito and Apollodorus; from my wife and children; and from my dear city of Athens! Inside, poison is being prepared for me! In another quarter-nazhigai the guard will arrive, with deadly poison!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "Dear friend! O hero whose mind does not tremble even if a mountain collapses! Those shining, revolving eyes of yours; those broad, throbbing eyebrows; those feeling-filled lips that pour out philosophical explanation without wilting even before enemies in ranks upon ranks—am I ever again going to see them in the form of a Socrates?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Do not cry, friend! There—the nectar has arrived! The feast this government offers to the army of knowledge! The gift this wicked country gives to an old man who can barely stand! There, it has arrived!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[A guard enters with a cup of poison.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Prison guard! What must I do with this? Tell me the procedure!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Guard",
+      "speakerSeparator": " : ",
+      "text": "[Removing Socrates' shackles and weeping] Great sir! You must drink all of the poison........ Then you must keep walking here and there! You must walk like that until your legs become numb.... Then you may sit.... Little by little the body will grow cold. Then you may lie down.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "A blissful sleep! A sleep that even the maiden of dreams cannot disturb!... Guard! Give it here!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[He takes the cup of poison.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "Friend!.... You may wait a little while before drinking it! The prison permits that!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Crito! What a petty desire you have! Suppose I decide to drink the poison two more nazhigai later! If, before then, my heart suddenly bursts and I die... how will the court of Greece carry out its punishment?... Will a new Socrates be born and come here? No; no... I shall drink it now...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "Friend! Tell me something, one last time!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "What new thing am I going to say—“Know thyself!” Ask of everything: why, how, and for what purpose! Only by asking in that way did this sculptor who carved statues become a sculptor of thought. “Do not lose your reason and stumble by believing merely because this man said it or that man said it—whatever words anyone speaks, examine them with your own natural rational faculty.” This is what I wish to say to you, and to this world.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Crito",
+      "speakerSeparator": " : ",
+      "text": "O lion of Athens filled with awakening! Our treasure of gold!.... Great man of Greece! Is this poison going to separate us from you?... Alas, my heart trembles even to think of it! Socrates... how should we bury your body?...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "If you bury me, throw into the grave with me the bundles of lies that roam this country and bury them too!..... If you burn me, burn the manuscripts of deceivers together with me, reduce them to ash and dissolve them in water!.... Bid me farewell. The poison is calling!.... I am going to take leave of the great people of my country.... My dear great people of Athens! Here Sasrates is going to die happily!... The court of Greece has poured charges upon him by the basketful and filled a cup to the brim with poison, ordering: drink this life-drinking payasam!... The lips of Socrates, which shed teachings, are about to touch the rim of the poison cup! Only another second or two! After that the body and life of Socrates will cut their ties with one another and place a full stop at the end of life's continuing story!—I am coming, Greece!.......I am coming! My dear Athens, I am coming!..... Beautiful streets of Athens that helped me run about and speak with passion! Roadside tree-shades! Verandas beside the houses! This old man takes leave of all of you! Young men with proud gait and proud gaze! Good brothers who guard the country! Beloved people! Elders! Mothers who bore us! Good young lions! May Socrates' final salutation belong to all of you! If anyone truly, sincerely thinks that this old man corrupted the youth of Greece, let them forgive me! Let them forgive me! I am coming. Salutations, salutations. Do not fail to think! O world! Do not fail to think! Know thyself! Know!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[Socrates finishes drinking the poison. He walks until his legs begin to falter. Then he lies down. His body grows cold! The guard pulls the cloak over Socrates' face. A few seconds later Socrates moves the cloak away from his face.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Soc.",
+      "speakerSeparator": " : ",
+      "text": "Crito! I forgot to tell you one thing... We owe a chick to Angilipiyas in the neighbouring house. Do not forget to give it to him...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "square",
+      "text": "[With that, the breath of the great Greek stopped. Crito wept. After some days, Greece bathed his grave in tears.]",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "ornament",
+      "text": "*",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Immediate authority: verified Tamil `../../scenes/05.md`; no wording from the 2009 published-English `Socrates` witness was consulted.\n- The bare source line `: !........` is retained as an unassigned structural line. It is not silently assigned to Xanthippe or another speaker.\n- `தேசப் பிரஷ்ட உத்திரவு` is rendered as `order of banishment`; the Tamil source form remains untouched.\n- The traditional time unit `நாழிகை` is retained as `nazhigai` rather than converted to a modern clock value not supplied by the source.\n- The maxims `உன்னையே நீ அறிந்து கொள்!` and the instruction to test any person's words through one's natural `பகுத்த றிவு` are rendered directly as `Know thyself` and `natural rational faculty`.\n- The verified assembled source form `சாச்ரடீஸ்` is represented visibly as `Sasrates` at its occurrence in the farewell speech; it is not silently regularized to `Socrates` there.\n- The final creditor name `அங்கிளிப்பியசு` is retained as `Angilipiyas`; no external classical identification or famous alternative wording is imported.\n- The source irony of poison as `amudham` / nectar and as a government feast for the `army of knowledge` is retained.\n- The final source `*` is retained."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -112,11 +112,19 @@ function loadNovelSectionSlugs(slug: string): string[] {
 }
 
 /** Scene slugs come from the generated play data, so the sitemap can never drift from the routes. */
-function loadPlaySceneSlugs(slug: string): string[] {
+/**
+ * A play's public READING-UNIT routes, from its generated data.
+ *
+ * Renamed from `loadPlaySceneSlugs`: not every reading unit is a scene. Silappathikaram's closing
+ * tableau is not one, and பரதாயணம் is a continuous work the source never divides into scenes at
+ * all. Keeping "scene" in the name would have made the sitemap assert a structure the source does
+ * not print.
+ */
+function loadPlayReadingUnitSlugs(slug: string): string[] {
   try {
     const p = path.join(process.cwd(), "public/data/plays", slug, "play.json");
-    const play = JSON.parse(fs.readFileSync(p, "utf8")) as { scenes: { slug: string }[] };
-    return play.scenes.map((s) => s.slug);
+    const play = JSON.parse(fs.readFileSync(p, "utf8")) as { readingUnits: { slug: string }[] };
+    return play.readingUnits.map((s) => s.slug);
   } catch {
     return [];
   }
@@ -284,7 +292,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...PLAY_SLUGS.flatMap((slug) => [
       { url: `${BASE}/plays/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.7 },
       { url: `${BASE}/plays/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
-      ...loadPlaySceneSlugs(slug).map((x) => ({
+      ...loadPlayReadingUnitSlugs(slug).map((x) => ({
         url: `${BASE}/plays/${slug}/${x}`,
         lastModified: now,
         changeFrequency: "yearly" as const,

@@ -20,9 +20,16 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const play = loadPlay(params.slug);
   if (!play) return {};
+  // The description states the structure the SOURCE actually prints. A continuous work has no
+  // scenes to count, and only one edition prints a closing tableau, so neither is asserted globally.
+  const parts: string[] = [];
+  if (play.structureKind === "continuous-play") parts.push("one continuous dramatic text with no scene division");
+  else parts.push(`${play.sceneCount} scenes`);
+  if (play.closingTableauCount > 0) parts.push("a closing tableau");
+  if (play.openingNote) parts.push(`${play.openingNote.labelEn.toLowerCase()}`);
   return {
     title: `${play.title.ta} — ${play.title.en} | Kalaignar Digital Library`,
-    description: `${play.descriptor.en} by ${play.author.en} — ${play.sceneCount} scenes and a closing tableau, from the printed edition.`,
+    description: `${play.descriptor.en} by ${play.author.en} — ${parts.join(", ")}, from the printed edition.`,
   };
 }
 
