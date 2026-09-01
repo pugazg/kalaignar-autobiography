@@ -82,6 +82,25 @@ function loadTirumbippaarSceneSlugs(): string[] {
   }
 }
 
+/**
+ * Film Songs lyric slugs, from the SAME generated registry that drives the route's
+ * `generateStaticParams`. Reading the registry here rather than reconstructing slugs from the
+ * current 1–54 numbering keeps the sitemap tied to the routes that actually exist. The numbering is
+ * consecutive today, but that is a property of this release, not the sitemap's authority: a gap, a
+ * renumbering or any other change to the released route set would leave a numeric loop describing
+ * pages the router no longer generates. Deriving from the registry cannot drift that way — and
+ * material the archive excludes, having no entry there, cannot reach the sitemap through it either.
+ */
+function loadThiraiIsaiPaadalgalSongSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/thirai-isai-paadalgal/index.json");
+    const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { songs: { slug: string }[] };
+    return idx.songs.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
 function loadNovelSectionSlugs(slug: string): string[] {
   try {
     const p = path.join(process.cwd(), "public/data/novels", slug, "novel.json");
@@ -191,6 +210,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/cinema/tirumbippaar/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
     ...loadTirumbippaarSceneSlugs().map((slug) => ({
       url: `${BASE}/cinema/tirumbippaar/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    // Cinema Writing — கலைஞர் திரை இசைப் பாடல்கள் (Phase E4). The fourth cinema work, ordered after
+    // Tirumbippaar to match the catalogue shelf's onboarding order. Its shape differs from the three
+    // above in two ways that are deliberate, not oversights:
+    //
+    //   * NO /source entry. This is the one cinema work with no public provenance route — its
+    //     archival apparatus is kept outside the served tree — so emitting one would advertise a
+    //     page that intentionally does not exist.
+    //   * NO per-film entries. The 23 films are grouping anchors on the landing, not routes, and a
+    //     sitemap lists pages rather than fragments.
+    //
+    // That leaves exactly the routes the reader actually has: the landing and one page per lyric.
+    { url: `${BASE}/cinema/thirai-isai-paadalgal`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    ...loadThiraiIsaiPaadalgalSongSlugs().map((slug) => ({
+      url: `${BASE}/cinema/thirai-isai-paadalgal/${slug}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,
