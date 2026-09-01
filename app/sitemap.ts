@@ -84,10 +84,12 @@ function loadTirumbippaarSceneSlugs(): string[] {
 
 /**
  * Film Songs lyric slugs, from the SAME generated registry that drives the route's
- * `generateStaticParams`. Reading it here rather than enumerating `song-001`…`song-054` is what
- * keeps the sitemap and the router from drifting apart: the numbering is consecutive today, but the
- * registry is the authority, and one item named in the 2024 front matter has no numbered lyric and
- * is deliberately absent from it. A numeric loop would happily invent a URL for it.
+ * `generateStaticParams`. Reading the registry here rather than reconstructing slugs from the
+ * current 1–54 numbering keeps the sitemap tied to the routes that actually exist. The numbering is
+ * consecutive today, but that is a property of this release, not the sitemap's authority: a gap, a
+ * renumbering or any other change to the released route set would leave a numeric loop describing
+ * pages the router no longer generates. Deriving from the registry cannot drift that way — and
+ * material the archive excludes, having no entry there, cannot reach the sitemap through it either.
  */
 function loadThiraiIsaiPaadalgalSongSlugs(): string[] {
   try {
