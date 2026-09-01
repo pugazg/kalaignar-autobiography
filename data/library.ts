@@ -885,6 +885,65 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/speeches/2006-08-23-industries-debate/source",
   },
   {
+    // Digital Library Phase 3 — Speeches. Speech Benchmark #4, appended as the 14th Speech work:
+    // the first catalogue work whose controlling witness is an AUDIO RECORDING rather than a
+    // printed booklet or scan. Several absences below are deliberate decisions, not gaps:
+    //
+    //  * `subtype` stays "public-speech". Audio versus print is a SOURCE FORM, carried in the
+    //    speech data where the reader and provenance page actually need it; it is not a catalogue
+    //    subtype, and no "audio-speech" subtype exists. `LibraryWork` gains no media discriminator.
+    //  * The exact speech date is UNKNOWN — the recording states none — so the description carries
+    //    only the source-established event and venue. No year is inferred from secondary
+    //    chronology, and the card shows no date.
+    //  * `edition` is UNSET: the controlling witness is a recording, and a filename, duration or
+    //    source URL is not a publication edition.
+    //  * `unitCount` is UNSET: the archive's 12 timestamps are APPROXIMATE NAVIGATION MARKERS, not
+    //    source-authored sections, chapters or speech units. A "12 sections" badge would convert
+    //    archival navigation into source structure.
+    //  * `sourceCommit` deliberately remains the historical reviewed release pin. Live
+    //    public-speeches main is advancing for a SEPARATE archive
+    //    (speeches/kalaivanar-nsk-memorial-day-audio-06/); this benchmark stays pinned to the
+    //    reviewed, unchanged state of speeches/kalaivanar-nsk-memorial-day/.
+    id: "kalaivanar-nsk-memorial-day",
+    slug: "kalaivanar-nsk-memorial-day",
+    titleTa: "கலைவாணர் என். எஸ். கிருஷ்ணன் நினைவு நாள் விழாவில் கலைஞர் உரை",
+    titleEn: "Kalaivanar N. S. Krishnan Memorial-Day Speech",
+    shelf: "speeches",
+    subtype: "public-speech",
+    readerStructure: "speech",
+    href: "/speeches/kalaivanar-nsk-memorial-day",
+    state: "published",
+    descTa:
+      "கலைவாணர் அரங்கில் நடைபெற்ற கலைவாணர் நினைவு நாள் விழா பொது உரை — கட்டுப்படுத்தும் ஒலிப்பதிவிலிருந்து சரிபார்க்கப்பட்டது",
+    descEn:
+      "Public speech at the Kalaivanar Memorial Day function, Kalaivanar Arangam, Chennai — verified from the controlling audio recording",
+    sourceRepo: "pugazg/kalaignar-public-speeches",
+    sourcePath: "speeches/kalaivanar-nsk-memorial-day",
+    sourceCommit: "1ef73a709a343390befe55dcdfb029427f527bf4",
+    tamil: "complete",
+    english: "complete",
+    // Project-created: made from the frozen verified Tamil transcription under the archive's own
+    // translate-then-verify gates (E2 fidelity review and E3 final verification both passed), NOT
+    // translated independently from the recording and not a separately published translation.
+    englishKind: "project-created",
+    // The catalogue work is Kalaignar's underlying authored Tamil SPEECH — not the recording of it.
+    // Nationalisation is scoped accordingly: the source MP3, its master and the third-party
+    // production that made it are separate rights this project does not establish, and the
+    // project-created English keeps its own provenance. The provenance page carries the fuller
+    // recording-rights statement.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil speech; it does not extend to the project-created English translation or to the source audio recording, recording master, or third-party recording production. Rights in the recording itself are not established by this catalogue entry.",
+    },
+    provenanceHref: "/speeches/kalaivanar-nsk-memorial-day/source",
+  },
+  {
     // Digital Library Phase 4 — Poetry. First benchmark, and the first work on the கவிதைகள் shelf.
     // Owner-directed move to a new category: Phase 3 (Speeches) is ACTIVE but PAUSED after three
     // benchmarks. A poem gets its OWN reader structure ("poem") — verse is not speech prose — while
