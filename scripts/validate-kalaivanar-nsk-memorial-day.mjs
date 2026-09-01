@@ -297,9 +297,58 @@ check(/Source facts \(the printed publication\)/.test(SOURCE_COMP) && /\{s && \(
 // 63. the sitemap was NOT modified for this work — publication is automatic through SPEECH_SLUGS
 check(/SPEECH_SLUGS\.flatMap/.test(SITEMAP) && !new RegExp(SLUG).test(SITEMAP), "63. app/sitemap.ts names no work-specific route — the two URLs come from SPEECH_SLUGS");
 
-// 64. the catalogue is untouched: this speech has no /read card in A1
+// 64. A2 catalogue onboarding is now part of the durable released state, so this assertion
+// proves the catalogue POINTS BACK to this exact released speech rather than proving the
+// catalogue is absent. (It previously encoded the temporary A1 phase boundary — that catalogue
+// exposure was not yet part of A1 — which A2 deliberately makes false.) The check is bounded to
+// the single Kalaivanar LibraryWork: the entry is sliced out of data/library.ts first, so a
+// neighbouring work's `edition` or `unitCount` can never satisfy or break it. What it holds
+// durably is that the catalogue keeps this speech's identity and its historical source pin, does
+// not drift into a print-shaped record (`edition`), does not flatten the archive's approximate
+// audio navigation markers into catalogue units (`unitCount`), does not grow a catalogue-level
+// media discriminator (`sourceForm`), and keeps nationalisation scoped off the recording.
 const LIBRARY = fs.readFileSync(path.join(process.cwd(), "data/library.ts"), "utf8");
-check(!new RegExp(SLUG).test(LIBRARY), "64. data/library.ts carries no entry for this speech — catalogue exposure is not part of A1");
+// Isolate exactly this entry: from its `id:` line to the start of the next top-level entry.
+const entryStart = LIBRARY.indexOf(`id: "${SLUG}"`);
+const nextEntry = entryStart === -1 ? -1 : LIBRARY.indexOf("\n  {", entryStart);
+const ENTRY = entryStart === -1 ? "" : LIBRARY.slice(entryStart, nextEntry === -1 ? LIBRARY.length : nextEntry);
+const has = (s) => ENTRY.includes(s);
+const catalogueIdentity =
+  entryStart !== -1 &&
+  // exactly one such entry exists in the catalogue
+  LIBRARY.split(`id: "${SLUG}"`).length === 2 &&
+  has(`slug: "${SLUG}"`) &&
+  has('titleTa: "கலைவாணர் என். எஸ். கிருஷ்ணன் நினைவு நாள் விழாவில் கலைஞர் உரை"') &&
+  has('titleEn: "Kalaivanar N. S. Krishnan Memorial-Day Speech"') &&
+  has('shelf: "speeches"') &&
+  has('subtype: "public-speech"') &&
+  has('readerStructure: "speech"') &&
+  has(`href: "/speeches/${SLUG}"`) &&
+  has('state: "published"');
+const cataloguePin =
+  has('sourceRepo: "pugazg/kalaignar-public-speeches"') &&
+  has(`sourcePath: "${SOURCE_PATH}"`) &&
+  has(`sourceCommit: "${PIN}"`);
+const catalogueCoverage =
+  has('tamil: "complete"') &&
+  has('english: "complete"') &&
+  has('englishKind: "project-created"') &&
+  has(`provenanceHref: "/speeches/${SLUG}/source"`);
+// Absences that are DECISIONS, checked inside this entry only.
+const catalogueAbsences = !/\bedition:/.test(ENTRY) && !/\bunitCount\b/.test(ENTRY) && !/\bsourceForm\b/.test(ENTRY);
+const catalogueRights =
+  has('rightsStatus: "nationalised-by-tamil-nadu-government"') &&
+  has("governmentOrderNumber: null") &&
+  has("governmentOrderDate: null") &&
+  has('governmentOrderHandoverDate: "2024-12-22"') &&
+  has("source audio recording") &&
+  has("recording master") &&
+  has("third-party recording production") &&
+  has("does not extend to the project-created English translation");
+check(
+  catalogueIdentity && cataloguePin && catalogueCoverage && catalogueAbsences && catalogueRights,
+  "64. A2 catalogue entry is present with the durable speech identity, historical source pin, coverage, provenance route, rights scope, and no edition/unitCount/sourceForm",
+);
 
 console.log();
 console.log("RESULT:", fails.length === 0 ? "ALL PASS" : `${fails.length} FAILURE(S)`);
