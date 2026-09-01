@@ -137,11 +137,24 @@ function sourceBodyEn(text) {
   }
   return { texts: out, heads };
 }
-/** A page record's `## Printed text` paragraphs, verbatim. */
+/**
+ * A page record's `## Printed text` paragraphs, verbatim — extracted INDEPENDENTLY of the importer.
+ *
+ * This previously used the same whitespace-delimited pattern the importer did. Both terminated at
+ * the blank line under the heading and returned nothing, so the "verbatim" comparison below became
+ * `[] === []` and certified a section the source demonstrably fills. The boundary is now the next
+ * H2 (or EOF), and `expectNonEmpty` makes an empty extraction a failure rather than an answer.
+ */
 function pageRecordText(file) {
   const t = readText(file);
-  const m = /^## Printed text\n([\s\S]*?)(?=^## |\s*$)/m.exec(t.slice(/^---\n[\s\S]*?\n---\n/.exec(t)[0].length));
-  return m[1].split("\n\n").map((x) => x.replace(/^\n+/, "").replace(/\s+$/, "")).filter((x) => x.trim());
+  const body = t.slice(/^---\n[\s\S]*?\n---\n/.exec(t)[0].length);
+  const HEAD = "## Printed text";
+  const at = body.indexOf(HEAD);
+  if (at === -1) return [];
+  const after = body.slice(at + HEAD.length);
+  const nextH2 = after.search(/^## /m);
+  const section = nextH2 === -1 ? after : after.slice(0, nextH2);
+  return section.split("\n\n").map((x) => x.replace(/^\n+/, "").replace(/\s+$/, "")).filter((x) => x.trim());
 }
 /** The rendered text of a unit list, for verbatim comparison. */
 const unitText = (u) => (u.kind === "dialogue" && u.speakerAsPrinted !== null ? u.speakerAsPrinted + u.speakerSeparator + u.text : u.text);
@@ -230,9 +243,38 @@ for (const W of WORKS) {
     check(play.sceneCount === 5, "the scene count stays 5 — the note is not counted as a sixth");
     check(!play.readingUnits.some((u) => u.slug === "00-introduction" || u.slug === "00"), "the note has NO reading route of its own");
     check(!/Introduction scene|Scene 0\b/.test(JSON.stringify(play)), "no 'Introduction scene' or 'Scene 0' is invented");
-    // Verbatim against the verified page records.
-    const src = W.introPages.flatMap((n) => pageRecordText(path.join(dir, "pages", `${String(n).padStart(4, "0")}.md`)));
-    eq("the Tamil note is verbatim from the verified page records", play.openingNote.tamil.units.map(unitText), src);
+
+    // ── ANTI-EMPTY GATE ────────────────────────────────────────────────────────────────────────
+    // A validator must never be able to certify `[] === []` as "verbatim complete" for a source
+    // section that demonstrably contains text. Each side is proved non-empty BEFORE they are
+    // compared, and the per-page counts are asserted individually so a half-empty extraction
+    // cannot hide inside a matching total either.
+    const perPage = W.introPages.map((n) => pageRecordText(path.join(dir, "pages", `${String(n).padStart(4, "0")}.md`)));
+    perPage.forEach((paras, i) => check(paras.length > 0, `source page ${W.introPages[i]} '## Printed text' extracts NON-EMPTY (${paras.length} paragraphs)`));
+    const src = perPage.flat();
+    check(src.length > 0, `the source-derived Tamil introductory note is NON-EMPTY (${src.length} paragraphs)`);
+    const got = play.openingNote.tamil.units.map(unitText);
+    check(got.length > 0, `the generated Tamil introductory note is NON-EMPTY (${got.length} units)`);
+    eq("generated intro unit count equals the source-derived paragraph count", got.length, src.length);
+    eq("the Tamil note is verbatim from the verified page records", got, src);
+
+    // Source-sensitive spot guards, on BOTH sides.
+    const OPENING = "ஃ சாக்ரடீஸ் கிரேக்கம் தந்த தத்துவாசிரியன்";
+    check(nfc(src[0]).trimStart().startsWith(nfc(OPENING)), "the SOURCE intro opens with the expected printed form");
+    check(nfc(got[0]).trimStart().startsWith(nfc(OPENING)), "the GENERATED intro opens with the expected printed form");
+    check(src[src.length - 1].trim() === "*", "the SOURCE intro ends with the printed ornament *");
+    const lastUnit = play.openingNote.tamil.units[play.openingNote.tamil.units.length - 1];
+    check(lastUnit.kind === "ornament" && lastUnit.text.trim() === "*", "the GENERATED intro ends with the printed ornament *");
+    const bracket = play.openingNote.tamil.units.filter((u) => u.kind === "stage-direction" && u.delimiter === "square");
+    eq("the bracketed scan-28 setup is carried as one square stage-direction", bracket.length, 1);
+    check(/முதற்காட்சி/.test(bracket[0]?.text ?? ""), "that bracketed setup is the source's own முதற்காட்சி description");
+    // The archive reverted assistant substitutions to these readings; none may be normalised.
+    const introText = nfc(got.join("\n"));
+    for (const form of ["மார்க்சும், எஞ்சல்சும்", "ஹெகல்", "‘ஜாடை’ காட்டினான்", "தூசு நிகர் காரணங்களைக்கொண்டு", "‘சோக்ரதர்’", "ஆஸ்திகப்பழமாக்கியிருக்கிறார்", "நானோ", "சபைன்"]) {
+      check(introText.includes(nfc(form)), `protected source form retained in the intro: ${form}`);
+    }
+    // The printed line structure is preserved, not assembled away.
+    check(play.openingNote.tamil.units.some((u) => u.hasLineBreaks), "the intro keeps the source's printed line structure (no wraps joined)");
   } else if (W.slug === "cheran-senguttuvan") {
     check(!!play.openingNote, "the printed pre-scene framing is carried");
     eq("it is attached to scene 1", play.openingNote.attachedTo, "01");
@@ -320,6 +362,20 @@ for (const W of WORKS) {
   results.push(cur);
 }
 
+// ── BATCH-WIDE OPENING-NOTE GATE ─────────────────────────────────────────────────────────────────
+cur = { slug: "batch opening notes", n: 0, fails: [] };
+console.log("\nBATCH OPENING NOTES");
+for (const W of WORKS) {
+  const play = JSON.parse(readText(path.join(DATA, W.slug, "play.json")));
+  if (!play.openingNote) { check(true, `${W.titleEn}: prints no pre-dramatic material — none invented`); continue; }
+  // Applies to EVERY work, not just the one that failed: an opening note that exists must carry
+  // text in both layers, or it is a silent loss of source material.
+  check(play.openingNote.tamil.units.length > 0, `${W.titleEn}: Tamil opening note is NON-EMPTY (${play.openingNote.tamil.units.length} units)`);
+  check(play.openingNote.english.units.length > 0, `${W.titleEn}: English opening note is NON-EMPTY (${play.openingNote.english.units.length} units)`);
+  check(play.openingNote.sourceScans.length > 0, `${W.titleEn}: the opening note cites its source scans`);
+}
+results.push(cur);
+
 // ── SITEMAP / ROUTE CONTRACT ─────────────────────────────────────────────────────────────────────
 cur = { slug: "batch route contract", n: 0, fails: [] };
 console.log("\nBATCH ROUTE CONTRACT");
@@ -339,7 +395,8 @@ let failed = 0;
 for (const r of results) {
   const ok = r.fails.length === 0;
   if (!ok) failed++;
-  const name = r.slug === "batch preconditions" || r.slug === "batch route contract" ? r.slug : WORKS.find((w) => w.slug === r.slug).titleEn;
+  const w = WORKS.find((x) => x.slug === r.slug);
+  const name = w ? w.titleEn : r.slug;
   console.log(`${name.toUpperCase().padEnd(24)} ${ok ? "PASS" : "FAIL"}  (${r.n} assertions, ${r.fails.length} failed)`);
   for (const f of r.fails) console.log(`    ✗ ${f}`);
 }

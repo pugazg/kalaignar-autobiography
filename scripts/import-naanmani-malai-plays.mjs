@@ -273,6 +273,31 @@ function parseAssembled(text, file, { english }) {
 }
 
 /**
+ * The paragraphs of a page record's `## Printed text` section.
+ *
+ * THE SECTION IS BOUNDED BY THE NEXT H2, NOT BY WHITESPACE. An earlier version delimited it with
+ * `/^## Printed text\n([\s\S]*?)(?=^## |\s*$)/m`, and the `\s*$` alternative matched immediately at
+ * the blank line that follows the heading — so the reluctant capture stopped there and the section
+ * came back EMPTY. Because the validator used the same pattern, its "verbatim" comparison reduced
+ * to `[] === []` and passed while Socrates' entire verified Tamil introductory note was missing
+ * from the published data. The boundary is therefore located structurally, and an empty result is
+ * now an error rather than a silently accepted answer.
+ */
+function printedTextParagraphs(body, file) {
+  const HEAD = "## Printed text";
+  const at = body.indexOf(HEAD);
+  if (at === -1) throw new Error(`${file}: no '${HEAD}' section`);
+  const after = body.slice(at + HEAD.length);
+  const nextH2 = after.search(/^## /m);
+  const section = nextH2 === -1 ? after : after.slice(0, nextH2);
+  const paras = section.split("\n\n").map((x) => x.replace(/^\n+/, "").replace(/\s+$/, "")).filter((x) => x.trim());
+  if (paras.length === 0) {
+    throw new Error(`${file}: '${HEAD}' extracted as EMPTY — the section boundary is wrong, or the source page carries no printed text`);
+  }
+  return paras;
+}
+
+/**
  * Parse a VERIFIED PAGE RECORD's `## Printed text` section.
  *
  * Used only for சாக்ரடீஸ்' introductory note, which the archive verifies at page-record level but
@@ -284,9 +309,7 @@ function parseAssembled(text, file, { english }) {
 function parsePageRecordPrintedText(text, file) {
   const { fm, body } = frontMatter(text, file);
   if (fm.status !== "verified") throw new Error(`${file}: page record is not verified — refusing to import`);
-  const m = /^## Printed text\n([\s\S]*?)(?=^## |\s*$)/m.exec(body);
-  if (!m) throw new Error(`${file}: no '## Printed text' section`);
-  const paras = m[1].split("\n\n").map((x) => x.replace(/^\n+/, "").replace(/\s+$/, "")).filter((x) => x.trim());
+  const paras = printedTextParagraphs(body, file);
   const units = paras.map((p) => {
     const t = p.trim();
     if (ORNAMENT.test(t)) return { kind: "ornament", text: t, hasLineBreaks: false };
@@ -549,13 +572,38 @@ for (const W of WORKS) {
     // ── சாக்ரடீஸ்' introductory note (scans 27–28) ────────────────────────────────────────────
     if (W.introPages) {
       const taUnits = [];
+      const introPageCounts = [];
       for (const n of W.introPages) {
         const f = `${W.slug}/pages/${String(n).padStart(4, "0")}.md`;
         const rec = parsePageRecordPrintedText(readText(path.join(dir, "pages", `${String(n).padStart(4, "0")}.md`)), f);
         if (rec.fm.section !== "introductory-note") throw new Error(`${f}: expected section introductory-note, got ${rec.fm.section}`);
         if (rec.fm.scene !== "null") throw new Error(`${f}: introductory note carries a scene number — refusing to import`);
+        if (rec.units.length === 0) throw new Error(`${f}: printed text extracted as EMPTY`);
+        introPageCounts.push(`scan ${n}: ${rec.units.length}`);
         taUnits.push(...rec.units);
       }
+      // FAIL-CLOSED SOURCE-FIDELITY GUARDS. The previous release shipped this note EMPTY because a
+      // faulty section boundary returned nothing and nothing downstream objected. These assertions
+      // make that failure mode impossible to repeat silently: the text must be there, it must
+      // start where the source starts, and the readings the archive deliberately protected must
+      // survive unmodified.
+      if (taUnits.length === 0) throw new Error(`${W.slug}: the Tamil introductory note extracted as EMPTY — refusing to publish a work whose verified source text is missing`);
+      const introText = taUnits.map((u) => u.text).join("\n");
+      const OPENING = "ஃ சாக்ரடீஸ் கிரேக்கம் தந்த தத்துவாசிரியன்";
+      if (!nfc(taUnits[0].text).trimStart().startsWith(nfc(OPENING))) {
+        throw new Error(`${W.slug}: the Tamil introductory note does not begin with the source opening "${OPENING}"`);
+      }
+      // Readings the archive reverted assistant substitutions back to; none may be normalised here.
+      for (const form of ["மார்க்சும், எஞ்சல்சும்", "ஹெகல்", "‘ஜாடை’ காட்டினான்", "தூசு நிகர் காரணங்களைக்கொண்டு", "‘சோக்ரதர்’", "ஆஸ்திகப்பழமாக்கியிருக்கிறார்", "நானோ", "சபைன்"]) {
+        if (!nfc(introText).includes(nfc(form))) throw new Error(`${W.slug}: protected source form "${form}" is missing from the imported Tamil introductory note`);
+      }
+      if (!taUnits.some((u) => u.kind === "stage-direction" && u.delimiter === "square")) {
+        throw new Error(`${W.slug}: the bracketed introductory stage description from scan 28 is missing`);
+      }
+      if (taUnits[taUnits.length - 1].kind !== "ornament" || taUnits[taUnits.length - 1].text.trim() !== "*") {
+        throw new Error(`${W.slug}: the source's final ornament * is missing from the introductory note`);
+      }
+
       const enIntroFile = `${W.slug}/translations/en/00-introduction.md`;
       const enIntro = parseAssembled(readText(path.join(dir, "translations/en/00-introduction.md")), enIntroFile, { english: true });
       checkEnglishGates(enIntro.fm, enIntroFile);
@@ -774,6 +822,9 @@ for (const { W, play, provenance, out } of summaries) {
   console.log(`  reading units: ${play.readingUnits.length} [${play.readingUnits.map((u) => u.slug).join(", ")}] | scans ${provenance.source.bodyScans}`);
   console.log(`  Tamil units ${d.tamilUnits} (dialogue ${d.tamilDialogue}, directions ${d.tamilStageDirections}, verse ${d.tamilVerse}) | English units ${d.englishUnits}`);
   console.log(`  distinct speaker labels ${d.distinctSpeakerLabels} | unlabelled ${d.unlabelledDialogueUnits} | translation notes ${d.translationNotes} | interpretive ${d.interpretiveNotes}`);
+  if (play.openingNote) {
+    console.log(`  opening note: Tamil ${play.openingNote.tamil.units.length} units / English ${play.openingNote.english.units.length} units | scans ${play.openingNote.sourceScans.join(", ")} | attached to ${play.openingNote.attachedTo}`);
+  }
   console.log(`  play.json ${sha(path.join(out, "play.json"))}`);
   console.log(`  provenance.json ${sha(path.join(out, "provenance.json"))}`);
 }
