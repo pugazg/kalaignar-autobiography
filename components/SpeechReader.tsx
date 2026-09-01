@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, Calendar, Home, Info, Landmark, MapPin, Mic, Minus, Plus } from "lucide-react";
+import { ArrowLeft, AudioLines, BookOpen, Calendar, Home, Info, Landmark, MapPin, Mic, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
 import type { Speech, SpeechBlock } from "@/data/speeches";
 import { useLang } from "@/lib/i18n";
@@ -35,6 +35,10 @@ export default function SpeechReader({ slug }: { slug: string }) {
 
   const sizes = ["text-base", "text-lg", "text-xl"];
   const blocks = speech ? (showEn ? speech.english.blocks : speech.tamil.blocks) : [];
+  // SOURCE FORM, not subtype. An audio-recorded speech is still a public speech; what changes is
+  // which witness controls it, and therefore which evidence claims the page may make. Absent means
+  // print, so every already-released speech keeps exactly its current rendering.
+  const audio = speech?.sourceForm === "audio";
 
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
@@ -76,6 +80,11 @@ export default function SpeechReader({ slug }: { slug: string }) {
               ? ta ? "பொது உரை" : "Public speech"
               : ta ? "சட்டமன்ற உரை" : "Assembly speech"
             : ta ? "உரை" : "Speech"}
+          {audio && (
+            <span className="ml-1 inline-flex items-center gap-1 text-ink/40 dark:text-night-text/40">
+              <AudioLines className="h-3.5 w-3.5" aria-hidden /> <span lang={lang}>{ta ? "ஒலிப்பதிவு மூலம்" : "Audio source"}</span>
+            </span>
+          )}
         </p>
         <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
           {speech?.title.ta ?? (ta ? "ஏற்றப்படுகிறது…" : "Loading…")}
@@ -138,13 +147,21 @@ export default function SpeechReader({ slug }: { slug: string }) {
             </div>
 
             <p className={cn("mt-4 rounded-xl border border-dashed px-4 py-2.5 text-xs leading-relaxed", showEn ? "border-marina/40 bg-marina/[0.06] text-ink/70 dark:text-night-text/70" : "border-ink/15 bg-ink/[0.02] text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60")} lang={lang}>
-              {showEn
-                ? ta
-                  ? "இது மூலத் தமிழுடன் இணைக்கப்பட்ட, சரிபார்க்கப்பட்ட நம்பகமான ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
-                  : "A verified, source-linked faithful English reading translation. The Tamil original remains authoritative."
-                : ta
-                  ? "கீழே அச்சிட்ட நூலின்படி சரிபார்க்கப்பட்ட மூல தமிழ் உரை — மாற்றமின்றி; அச்சுத் தலைப்புகளும் பக்க எல்லைகளும் தக்கவைக்கப்பட்டுள்ளன."
-                  : "Below is the verified original Tamil, faithful to the printed source booklet — printed section headings and source-page boundaries preserved."}
+              {audio
+                ? showEn
+                  ? ta
+                    ? "உறையவைக்கப்பட்ட, சரிபார்க்கப்பட்ட தமிழ் எழுத்தாக்கத்திலிருந்து உருவாக்கப்பட்ட ஆங்கில வாசிப்பு மொழிபெயர்ப்பு — ஒலிப்பதிவிலிருந்து தனியாக மொழிபெயர்க்கப்பட்டதல்ல. தமிழ் எழுத்தாக்கமே சான்றுநிலை; பேசப்பட்ட தமிழுக்குக் கட்டுப்படுத்தும் சாட்சி ஒலிப்பதிவே."
+                    : "A verified English reading translation made from the frozen, verified Tamil transcription — not translated independently from the recording. The Tamil transcription remains the authoritative layer, and the audio recording remains the controlling witness for the spoken Tamil."
+                  : ta
+                    ? "கீழே கட்டுப்படுத்தும் ஒலிப்பதிவுடன் நேரடியாக ஒப்பிட்டுச் சரிபார்க்கப்பட்ட தமிழ் எழுத்தாக்கம். நேரக்குறிகள் தோராயமான வழிசெலுத்தல் குறிகள்; சொல்-அளவிலான துல்லிய நேரங்கள் அல்ல."
+                    : "Below is the verified Tamil transcription, checked directly against the controlling audio recording. Timestamps are approximate navigation markers, not frame-accurate word timings."
+                : showEn
+                  ? ta
+                    ? "இது மூலத் தமிழுடன் இணைக்கப்பட்ட, சரிபார்க்கப்பட்ட நம்பகமான ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
+                    : "A verified, source-linked faithful English reading translation. The Tamil original remains authoritative."
+                  : ta
+                    ? "கீழே அச்சிட்ட நூலின்படி சரிபார்க்கப்பட்ட மூல தமிழ் உரை — மாற்றமின்றி; அச்சுத் தலைப்புகளும் பக்க எல்லைகளும் தக்கவைக்கப்பட்டுள்ளன."
+                    : "Below is the verified original Tamil, faithful to the printed source booklet — printed section headings and source-page boundaries preserved."}
             </p>
           </>
         )}
@@ -164,9 +181,13 @@ export default function SpeechReader({ slug }: { slug: string }) {
         {/* Provenance / source note. */}
         {speech && (
           <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
-            {ta
-              ? `${provenanceLine(speech, true)} அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
-              : `${provenanceLine(speech, false)} Transcribed and verified against the printed source. `}
+            {audio
+              ? ta
+                ? `${provenanceLine(speech, true)} கட்டுப்படுத்தும் ஒலிப்பதிவுடன் நேரடியாக ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
+                : `${provenanceLine(speech, false)} Transcribed and verified directly against the controlling audio recording. `
+              : ta
+                ? `${provenanceLine(speech, true)} அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
+                : `${provenanceLine(speech, false)} Transcribed and verified against the printed source. `}
             <Link href={`/speeches/${slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
               {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
             </Link>
@@ -240,6 +261,11 @@ function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
       i++;
       continue;
     }
+    if (b.kind === "time-marker") {
+      out.push(<TimeMarker key={i} start={b.start} end={b.end} first={out.length === 0} ta={ta} />);
+      i++;
+      continue;
+    }
     // A stray unresolved-break (shouldn't occur outside a group) → neutral marker.
     if (b.kind === "unresolved-break") {
       out.push(<PageRule key={i} toPage={b.toPage} note={b.note} ta={ta} />);
@@ -278,6 +304,23 @@ function PageRule({ toPage, note, ta }: { toPage: number; note?: string; ta: boo
     <div className="my-4 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" title={note} data-print="hide" role="separator" aria-label={ta ? `மூலப் பக்கம் ${toPage} எல்லை — அச்சுப் பத்தி உறவு தீர்மானிக்கப்படவில்லை` : `source page ${toPage} boundary — printed paragraph relationship unresolved`}>
       <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
       <span className="font-body normal-case tracking-normal" aria-hidden>{ta ? `மூலப் பக்கம் ${toPage}` : `source p. ${toPage}`}</span>
+      <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+    </div>
+  );
+}
+
+// An audio navigation marker. Deliberately NOT an <h2>: the source archive states these
+// timestamps are approximate navigation aids, so rendering them with heading weight and colour
+// would present an archive aid as a source-authored section title. They get the same subdued
+// treatment as the source-page rule — small, monospace, greyed, with a hairline — and the
+// accessible name says in words what they are. The times come from the data, never from the UI.
+function TimeMarker({ start, end, first, ta }: { start: string; end: string | null; first: boolean; ta: boolean }) {
+  const label = ta
+    ? `ஒலிப்பதிவு ${start}${end ? `–${end}` : ""} — தோராயமான வழிசெலுத்தல் குறி`
+    : `recording ${start}${end ? `–${end}` : ""} — approximate navigation marker`;
+  return (
+    <div className={cn("mb-3 flex items-center gap-2", first ? "mt-0" : "mt-7")} role="separator" aria-label={label} title={label}>
+      <span className="font-body text-[11px] tabular-nums text-ink/40 dark:text-night-text/40" aria-hidden>{start}</span>
       <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
     </div>
   );
@@ -377,6 +420,23 @@ function absentFactsNote(s: Speech, ta: boolean): string | null {
   const noDate = !s.date;
   const noVenue = s.subtype === "public-speech" && !s.venue;
   if (!noDate && !noVenue) return null;
+  // An audio source is not an "examined source" in the print sense — the sentence names the
+  // recording, which is what was actually examined and what states no date.
+  if (s.sourceForm === "audio") {
+    if (noDate && noVenue) {
+      return ta
+        ? "இவ்வுரையின் தேதியையோ இடத்தையோ ஒலிப்பதிவு குறிப்பிடவில்லை."
+        : "The speech date and venue are not stated in the recording.";
+    }
+    if (noDate) {
+      return ta
+        ? "இவ்வுரையின் தேதியை ஒலிப்பதிவு குறிப்பிடவில்லை."
+        : "The speech date is not stated in the recording.";
+    }
+    return ta
+      ? "இவ்வுரையின் இடத்தை ஒலிப்பதிவு குறிப்பிடவில்லை."
+      : "The speech venue is not stated in the recording.";
+  }
   if (noDate && noVenue) {
     return ta
       ? "இவ்வுரையின் தேதியையோ இடத்தையோ பரிசோதிக்கப்பட்ட மூலம் குறிப்பிடவில்லை."

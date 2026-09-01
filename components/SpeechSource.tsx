@@ -1,14 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, BookOpen, FileCheck2, Home, Info, Landmark, ShieldCheck } from "lucide-react";
+import { ArrowLeft, AudioLines, BookOpen, ExternalLink, FileCheck2, Home, Info, Landmark, ShieldCheck } from "lucide-react";
 import type { SpeechProvenance } from "@/data/speeches";
 import { useLang } from "@/lib/i18n";
 
 export default function SpeechSource({ slug, prov }: { slug: string; prov: SpeechProvenance }) {
   const { lang } = useLang();
   const ta = lang === "ta";
+  // EXACTLY ONE source-facts branch is present. `source` is the printed publication / scan;
+  // `audioSource` is a controlling recording. They are rendered as separate sections with their
+  // own wording — an audio source is never described with print apparatus it does not have, and a
+  // print source is never relabelled into generic media language that would lose its precision.
   const s = prov.source;
+  const au = prov.audioSource;
   const pr = prov.projectRights;
   const ad = prov.archiveDerived;
   // TWO BOUNDARY-EVIDENCE MODELS. `boundaryAudit` means every Tamil page transition was examined
@@ -19,7 +24,7 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
   // The two archive eras write the SAME fact under different keys — verified as the same concept,
   // not assumed from the similar name: in both, the speech's printed range where it differs from
   // the scan range. Resolved once here so every printed-range rendering agrees.
-  const printedPages = s.printedSpeechPages ?? s.speechPrintedPages;
+  const printedPages = s ? s.printedSpeechPages ?? s.speechPrintedPages : undefined;
   const joinPolicy = prov.crossPageJoinPolicy;
 
   const Row = ({ label, children, mono }: { label: string; children: React.ReactNode; mono?: boolean }) => (
@@ -42,17 +47,139 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             </Link>
           </div>
           <h1 className="mt-5 font-display text-3xl font-medium tracking-tight">{ta ? "மூலமும் சான்றும்" : "Source & provenance"}</h1>
-          <p className="mt-1 font-tamil text-lg text-marina/80 dark:text-marina-light/80" lang="ta">{s.publicationTitleTa}</p>
+          <p className="mt-1 font-tamil text-lg text-marina/80 dark:text-marina-light/80" lang="ta">{au ? au.titleTa : s?.publicationTitleTa}</p>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
-            {ta
-              ? "இப்பக்கம் மூல உண்மைகளையும் (அச்சிட்ட நூல்/scan) காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது."
-              : "This page separates source facts (the printed publication / scan) from the archive-derived reading structure."}
+            {au
+              ? ta
+                ? "இப்பக்கம் மூல உண்மைகளையும் (கட்டுப்படுத்தும் ஒலிப்பதிவு) காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது."
+                : "This page separates source facts (the controlling audio recording) from the archive-derived reading structure."
+              : ta
+                ? "இப்பக்கம் மூல உண்மைகளையும் (அச்சிட்ட நூல்/scan) காப்பகத்தால் உருவாக்கப்பட்ட அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது."
+                : "This page separates source facts (the printed publication / scan) from the archive-derived reading structure."}
           </p>
         </div>
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
-        {/* SOURCE FACTS */}
+        {/* SOURCE FACTS — AUDIO. A recording's identity is its bytes and its decoded stream, so
+            those are the rows; there is deliberately no publication, scan, page or front/back
+            matter row, because this source has none of them. The original URL is an ordinary
+            external provenance link: the recording is NOT hosted, embedded, proxied or played
+            here, and no media binary is vendored. */}
+        {au && (
+          <section className="rounded-2xl border border-ink/10 bg-white/50 p-5 dark:border-white/10 dark:bg-night-surface/50">
+            <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
+              <AudioLines className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூல உண்மைகள் (ஒலிப்பதிவு)" : "Source facts (audio recording)"}
+            </h2>
+            <dl className="mt-3">
+              <Row label={ta ? "மூல வகை" : "Source type"}>{ta ? "தமிழ் பொது உரை — ஒலிப்பதிவு" : "Tamil public speech — audio recording"}</Row>
+              <Row label={ta ? "கோப்புப் பெயர்" : "Source filename"} mono>{au.filename}</Row>
+              <Row label={ta ? "மூல முகவரி" : "Original source URL"} mono>
+                <a
+                  href={au.originalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  className="focus-ring inline-flex items-start gap-1 rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light"
+                >
+                  <span className="break-all">{au.originalUrl}</span>
+                  <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" aria-hidden />
+                </a>
+                <span className="mt-1 block font-body text-[11px] not-italic text-ink/45 dark:text-night-text/45" lang={lang}>
+                  {ta
+                    ? "வெளி மூலம். ஒலிக்கோப்பு இம்மின்னூலகத்தில் சேமிக்கப்படவில்லை; இங்கு இயக்கப்படவும் இல்லை."
+                    : "External source. The audio file is not vendored here and is not played on this site."}
+                </span>
+              </Row>
+              <Row label="SHA-256" mono>{au.sha256}</Row>
+              <Row label={ta ? "கோப்பு அளவு" : "File size"}>{au.fileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>
+              <Row label={ta ? "நீளம் (decode செய்தபடி)" : "Decoded duration"}>
+                {au.durationDisplay} <span className="text-ink/45 dark:text-night-text/45">({au.durationSeconds}s)</span>
+              </Row>
+              <Row label={ta ? "Codec" : "Codec"}>{au.codec}</Row>
+              <Row label={ta ? "மாதிரி வீதம்" : "Sample rate"}>{au.sampleRateHz.toLocaleString("en-US")} Hz</Row>
+              <Row label={ta ? "தடங்கள் / அமைப்பு" : "Channels / layout"}>{au.channels} · {au.channelLayout}</Row>
+              {au.averageBitRateBps != null && (
+                <Row label={ta ? "சராசரி bitrate" : "Average bitrate"}>{au.averageBitRateBps.toLocaleString("en-US")} bps</Row>
+              )}
+              <Row label={ta ? "ஒலிக்கோப்பு சேமிக்கப்பட்டதா?" : "Audio binary vendored?"}>{ta ? "இல்லை" : "No"}</Row>
+            </dl>
+
+            {/* BOUNDARY + DIRECT-LISTENING AUDIT. The archive keeps direct listening strictly
+                separate from textual precheck and machine-aided (ASR) pre-audit; only this class
+                counts as auditory verification, so only it is reported under this label. The
+                truncation row states a POSITIVE finding: an earlier abrupt-ending claim was
+                withdrawn after a direct tail re-audit, and the corrected finding is what stands. */}
+            <div className="mt-4 rounded-xl border border-ink/10 bg-ink/[0.02] p-3 dark:border-white/10 dark:bg-white/[0.03]">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-night-text/50" lang={lang}>
+                {ta ? "பதிவு எல்லையும் நேரடி-கேட்பு தணிக்கையும்" : "Recording boundary and direct-listening audit"}
+              </p>
+              <dl className="mt-2">
+                <Row label={ta ? "தொடக்கம்" : "Beginning"}>
+                  <span lang="en">{au.recordingBoundary.start}</span>
+                  {au.recordingBoundary.verified && (
+                    <span className="ml-2 text-ink/45 dark:text-night-text/45">{ta ? "— சரிபார்க்கப்பட்டது" : "— verified"}</span>
+                  )}
+                </Row>
+                <Row label={ta ? "முடிவு" : "Ending"}>
+                  <span lang="en">{au.recordingBoundary.end}</span>
+                  {au.recordingBoundary.verified && (
+                    <span className="ml-2 text-ink/45 dark:text-night-text/45">{ta ? "— சரிபார்க்கப்பட்டது" : "— verified"}</span>
+                  )}
+                </Row>
+                <Row label={ta ? "பதிவு துண்டிக்கப்பட்டதா?" : "Recording truncated?"}>{ta ? "இல்லை" : "No"}</Row>
+                <Row label={ta ? "நேரடி-கேட்பு தணிக்கை" : "Direct-listening audit"} mono>{au.directListeningAudit.status}</Row>
+                <Row label={ta ? "பகுதிகள்: பரிசோதிக்கப்பட்டவை / தேர்ச்சி" : "Segments checked / passed"}>
+                  {au.directListeningAudit.segmentsChecked} / {au.directListeningAudit.segmentsPassed}
+                </Row>
+                <Row label={ta ? "தீர்மானிக்கப்படாத வாசிப்புகள்" : "Open uncertainties"}>{au.directListeningAudit.openUncertainties}</Row>
+                <Row label={ta ? "கட்டுப்படுத்தும் திருத்தப் பதிவு" : "Controlling correction record"} mono>{au.directListeningAudit.controllingRecord}</Row>
+              </dl>
+            </div>
+
+            {/* TIME MAP. Source navigation apparatus — approximate ranges, never word timings. */}
+            <div className="mt-4 rounded-xl border border-ink/10 bg-ink/[0.02] p-3 dark:border-white/10 dark:bg-white/[0.03]">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-night-text/50" lang={lang}>
+                {ta ? "மூல நேர வரைபடம் (தோராயமானது)" : "Source time map (approximate)"}
+              </p>
+              <ul className="mt-2 grid gap-x-6 gap-y-1 sm:grid-cols-2">
+                {au.timeMap.map((seg) => (
+                  <li key={seg.segment} className="flex items-baseline gap-2 text-xs text-ink/70 dark:text-night-text/70">
+                    <span className="w-5 shrink-0 text-right tabular-nums text-ink/40 dark:text-night-text/40">{seg.segment}</span>
+                    <span className="font-mono tabular-nums">{seg.start}–{seg.end}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang="en">{au.timeMarkerNote}</p>
+            </div>
+
+            <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
+              {ta
+                ? `கட்டுப்படுத்தும் மூலம் ${au.durationDisplay} நீளமுள்ள ஒலிப்பதிவு. அதன் அடையாளம் முகவரி, கோப்புப் பெயர், SHA-256, அளவு, நீளம் மற்றும் stream விவரங்களால் பாதுகாக்கப்படுகிறது; ஒலிக்கோப்பு இங்கு சேமிக்கப்படவில்லை.`
+                : `The controlling source is a ${au.durationDisplay} audio recording. Its identity is preserved through the source URL, filename, SHA-256, size, decoded duration and stream properties; the audio file itself is not vendored here.`}
+            </p>
+            {au.speechFactsNotStated?.length ? (
+              <div className="mt-3 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-4 py-2.5 dark:border-white/25 dark:bg-white/[0.03]">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-night-text/50" lang={lang}>
+                  {ta ? "மூலம் குறிப்பிடாத உரை விவரங்கள்" : "Speech facts not stated in the examined source"}
+                </p>
+                <ul className="mt-1.5 space-y-1 text-xs leading-relaxed text-ink/65 dark:text-night-text/65">
+                  {au.speechFactsNotStated.map((f, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span aria-hidden className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ink/30 dark:bg-white/30" />
+                      <span lang="en">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                {au.speechFactsNoteEn && (
+                  <p className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang="en">{au.speechFactsNoteEn}</p>
+                )}
+              </div>
+            ) : null}
+          </section>
+        )}
+
+        {/* SOURCE FACTS — PRINT */}
+        {s && (
         <section className="rounded-2xl border border-ink/10 bg-white/50 p-5 dark:border-white/10 dark:bg-night-surface/50">
           <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
             <Landmark className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூல உண்மைகள் (அச்சிட்ட நூல்)" : "Source facts (the printed publication)"}
@@ -120,6 +247,7 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             </p>
           )}
         </section>
+        )}
 
         {/* ARCHIVE-DERIVED */}
         <section className="mt-4 rounded-2xl border border-brass/30 bg-brass/[0.04] p-5">
@@ -130,7 +258,21 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             {ad.sectionHeadings != null && <Row label={ta ? "அச்சுத் தலைப்புகள்" : "Printed section headings"}>{prov.archiveDerived.sectionHeadings}</Row>}
             {ad.tamilResolvedParagraphs != null && <Row label={ta ? "தீர்மானிக்கப்பட்ட வாசிப்புப் பத்திகள் (த/ஆ)" : "Resolved paragraphs (Ta/En)"}>{prov.archiveDerived.tamilResolvedParagraphs} / {prov.archiveDerived.englishParagraphs}</Row>}
             {ad.tamilSourceTextSegments != null && <Row label={ta ? "மூலப் பக்கத் துண்டுகள் (த/ஆ)" : "Source-page text segments (Ta/En)"}>{prov.archiveDerived.tamilSourceTextSegments} / {prov.archiveDerived.englishSourceTextSegments}</Row>}
-            {ad.sourcePagesCovered != null && <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>}
+            {ad.sourcePagesCovered != null && s && <Row label={ta ? "மூலப் பக்கங்கள்" : "Source pages covered"}>{prov.archiveDerived.sourcePagesCovered} ({s.speechScanPages})</Row>}
+
+            {/* Audio counts. A recording has no pages, so the archive reports its navigation
+                markers and its reading paragraphs. `timeMarkers` is NOT labelled as sections or
+                chapters: the source establishes them as approximate navigation aids only. */}
+            {ad.timeMarkers != null && (
+              <Row label={ta ? "நேரக்குறிகள் (தோராயமான வழிசெலுத்தல்)" : "Time markers (approximate navigation)"}>
+                {ad.timeMarkers}
+              </Row>
+            )}
+            {ad.tamilAudioParagraphs != null && (
+              <Row label={ta ? "வாசிப்புப் பத்திகள் (த/ஆ)" : "Reading paragraphs (Ta/En)"}>
+                {ad.tamilAudioParagraphs} / {ad.englishAudioParagraphs}
+              </Row>
+            )}
 
             {/* Anthology counts. Reported under their OWN labels: they are not the legacy metrics under a
 
@@ -272,6 +414,16 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
                 : "Section headings are printed in the source. A source-page boundary is not a paragraph boundary, and paragraph relationships are NOT inferred from punctuation — every transition is classified in an explicit source-audited table. English paragraph structure is the translator's own; its source-page anchors are provenance only."}
             </p>
           )}
+          {/* The AUDIO structure note. It makes no page/boundary claim at all, because an audio
+              source has no page boundaries to adjudicate — and it restates, at the point where a
+              reader meets the marker count, that the timestamps are navigation aids. */}
+          {au && (
+            <p className="mt-2 text-xs leading-relaxed text-ink/60 dark:text-night-text/60" lang={lang}>
+              {ta
+                ? "இவ்வுரையின் கட்டுப்படுத்தும் மூலம் ஒலிப்பதிவு; எனவே அச்சுப் பக்கங்களோ பக்க எல்லைகளோ இல்லை. நேரக்குறிகள் மூலக் காப்பகத்தின் தோராயமான வழிசெலுத்தல் குறிகளே — அவை பேச்சாளரோ அச்சகமோ உருவாக்கிய தலைப்புகள் அல்ல; சொல்-அளவிலான துல்லிய நேரங்களும் அல்ல. நிறுத்தற்குறிகளும் பத்திப் பிரிப்பும் மூலக் காப்பகத்தால் உறையவைக்கப்பட்ட பதிப்பாசிரியர் துணைக்கருவிகள்; பேச்சு வடிவம் மாற்றப்படவில்லை."
+                : "The controlling source for this speech is a recording, so it has no printed pages and no page boundaries to classify. The timestamps are the source archive's approximate navigation markers — not headings authored by the speaker or a printer, and not word-level timings. Punctuation and paragraphing are editorial aids frozen in the source archive; the spoken wording is unchanged."}
+            </p>
+          )}
           {/* Both blocker classes, explicitly and separately surfaced. */}
           {/* Blocker presentation. Two things must reach the reader: WHAT is unresolved
               (`detail`) and HOW it can legitimately be resolved (`resolution`) — the durable
@@ -353,6 +505,21 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
                 ? "நாட்டுடைமையாக்கல் கலைஞரின் அடிப்படை தமிழ் உரைக்கு மட்டுமே. இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு, தனித்தனியே வெளியிடப்பட்ட மொழிபெயர்ப்புகள், அல்லது பிறர் பங்களிப்புகளுக்கு இது நீட்டிக்கப்படவில்லை."
                 : "The nationalisation covers Kalaignar's underlying Tamil speech only. It does not extend to the project-created English translation, separately published translations, or third-party contributions, which retain their own provenance."}
             </p>
+            {/* RECORDING RIGHTS ARE A SEPARATE QUESTION. Shown wherever the archive records the
+                distinction, so a nationalisation section on an audio-sourced speech can never be
+                read as a claim that the source recording itself is nationalised. */}
+            {pr.sourceRecordingNote && (
+              <p className="mt-2 rounded-xl border border-dashed border-ink/25 bg-ink/[0.03] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:border-white/25 dark:bg-white/[0.03] dark:text-night-text/70" lang={lang}>
+                {ta && (
+                  <span className="block">
+                    நாட்டுடைமை நிலை கலைஞர் ஆற்றிய அடிப்படைத் தமிழ் உரைக்கு மட்டுமே பொருந்தும். மூல ஒலிப்பதிவு, அதன் master, அல்லது அதைத் தயாரித்த மூன்றாம் தரப்பு — இவற்றின் உரிமைகளை இது தீர்மானிக்கவும் இல்லை, கோரவும் இல்லை.
+                  </span>
+                )}
+                <span className={ta ? "mt-1.5 block text-ink/50 dark:text-night-text/50" : undefined} lang="en">
+                  {pr.sourceRecordingNote}
+                </span>
+              </p>
+            )}
           </section>
         )}
 
