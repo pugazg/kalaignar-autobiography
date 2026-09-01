@@ -1,0 +1,167 @@
+{
+ "workId": "kalaivanar-nsk-memorial-day",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/kalaivanar-nsk-memorial-day",
+ "sourceCommit": "1ef73a709a343390befe55dcdfb029427f527bf4",
+ "sourceForm": "audio",
+ "audioSource": {
+  "sourceForm": "audio",
+  "titleTa": "கலைவாணர் என். எஸ். கிருஷ்ணன் நினைவு நாள் விழாவில் கலைஞர் உரை",
+  "filename": "05.Kalaivanar N.S.Krishnan Ninnaivu Naal Vizha vil Kalaigar Speech.mp3",
+  "originalUrl": "https://tamildigitallibrary.in/kalaignar/audio/05.Kalaivanar%20N.S.Krishnan%20Ninnaivu%20Naal%20Vizha%20vil%20Kalaigar%20Speech.mp3",
+  "sha256": "7457004d3c3ee87722edfe6814e830d3521b834dcf29b4de45bb7174a2278148",
+  "fileSizeBytes": 7087106,
+  "durationSeconds": 443.559,
+  "durationDisplay": "00:07:23.559",
+  "codec": "mp3",
+  "sampleRateHz": 44100,
+  "channels": 2,
+  "channelLayout": "stereo",
+  "averageBitRateBps": 128114,
+  "binaryCommitted": false,
+  "binaryNote": "The MP3 is not committed. Identity is preserved through the source URL, filename, checksum, size, duration, and technical metadata.",
+  "recordingBoundary": {
+   "start": "brief leading silence before speech",
+   "end": "complete closing sentence; no abrupt truncation",
+   "verified": true,
+   "truncated": false
+  },
+  "directListeningAudit": {
+   "status": "complete-after-tail-correction",
+   "segmentsChecked": 12,
+   "segmentsPassed": 12,
+   "openUncertainties": 0,
+   "controllingRecord": "t2-batches/batch-07-tail-correction-06-53-07-23.md"
+  },
+  "timeMap": [
+   {
+    "segment": 1,
+    "start": "00:00",
+    "end": "00:18",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 2,
+    "start": "00:18",
+    "end": "00:55",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 3,
+    "start": "00:55",
+    "end": "01:11",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 4,
+    "start": "01:11",
+    "end": "02:21",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 5,
+    "start": "02:21",
+    "end": "02:51",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 6,
+    "start": "02:51",
+    "end": "03:15",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 7,
+    "start": "03:15",
+    "end": "04:00",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 8,
+    "start": "04:00",
+    "end": "04:44",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 9,
+    "start": "04:44",
+    "end": "05:42",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 10,
+    "start": "05:42",
+    "end": "06:02",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 11,
+    "start": "06:02",
+    "end": "06:53",
+    "boundaryStatus": "direct-listening-reviewed-approximate"
+   },
+   {
+    "segment": 12,
+    "start": "06:53",
+    "end": "07:23.559",
+    "boundaryStatus": "direct-listening-reviewed-and-tail-corrected-approximate"
+   }
+  ],
+  "timeMarkerNote": "The timestamps are the source archive's approximate navigation markers. They are not source-authored section titles, chapters or printed headings, and they are not frame-accurate or word-accurate timings; the archive establishes no word-level synchronisation.",
+  "speechFactsNotStated": [
+   "The recording does not state the date of the speech; no date is inferred from secondary chronology, from the filename, or from the file's embedded timestamps.",
+   "The recording establishes no separate audience or organiser beyond the memorial-day function it is addressed to."
+  ],
+  "speechFactsNoteEn": "Venue and event are carried exactly as the source archive establishes them from direct listening; nothing is expanded from outside historical knowledge. The exact speech date remains unresolved, which is a source fact rather than pending work."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_audio": true,
+  "method": "transcribed from the controlling audio recording and audited by strict direct listening (T1-T3), replaying every segment against the source; frozen",
+  "direct_listening_audit": "complete-after-tail-correction",
+  "segments_checked": 12,
+  "segments_passed": 12,
+  "open_uncertainties": 0,
+  "note": "Tamil is the authoritative frozen layer. Spoken wording, repetition and source-supported forms are preserved; punctuation, paragraphing and the timestamp markers are editorial aids. The recording is complete: the closing passage runs through 07:23.559 and was restored and verified by a direct tail re-audit, which superseded an earlier incomplete reading of the ending."
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation",
+  "language": "en",
+  "from": "frozen verified-complete Tamil transcription (transcription-ta.md)",
+  "verified": true,
+  "review_complete": true,
+  "final_verification_complete": true,
+  "note": "Project-created and source-linked. Made from the frozen verified Tamil, NOT translated independently from the recording; all 12 timestamp correspondences are preserved. E2 fidelity review and E3 continuous final verification both passed with 0 omissions, 0 additions and 0 reversals."
+ },
+ "archiveDerived": {
+  "timeMarkers": 12,
+  "tamilAudioParagraphs": 19,
+  "englishAudioParagraphs": 19,
+  "note": "The controlling source is a recording, so there are no printed pages, no source-page mapping and no page boundaries to classify. The 12 timestamps are the archive's approximate navigation markers, carried as time-marker blocks rather than headings. Paragraphing follows the released canonical files exactly and is not re-derived here."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The source recording's own production, publication and cataloguing are third-party facts, distinct from and not a statement of the present rights of Kalaignar's underlying Tamil speech.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored speech. It does not extend to the project-created English translation, to the source audio recording, or to third-party material, which retain their own provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created) with its own distinct provenance.",
+  "sourceRecordingNote": "The project's nationalisation position applies to Kalaignar's underlying authored Tamil speech. It does not determine or claim rights in the source audio recording itself, in the recording master, or in the third-party production that made it. Those rights are not established by this archive.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is an audio recording, not a printed publication. Its identity is preserved through the source URL, filename, SHA-256, byte size, decoded duration and stream properties. The MP3 is not committed to the source archive and is not vendored, streamed, proxied or played here.",
+  "The recording does not state the speech date, so date and year are null. The source archive records secondary chronology as context and expressly forbids substituting it for the speech date; no year is inferred here, in the reader, in the catalogue or in page metadata.",
+  "Venue (கலைவாணர் அரங்கம், சென்னை) and event (கலைவாணர் நினைவு நாள் விழா) are established by the archive from direct listening and are carried exactly as stated, with no expansion from outside historical knowledge.",
+  "The 12 timestamps are approximate navigation markers from the source archive — not source-authored section titles, chapters or printed headings, and not word-level timings. The Tamil markers, the English markers and metadata.json's time map are required to be identical in order; any divergence fails the import closed.",
+  "Tamil is the frozen verified-complete transcription, audited by strict direct listening across 12/12 segments with 0 open uncertainties and both boundaries verified. English is the verified-complete translation made from that frozen Tamil, with E2 fidelity review and E3 final verification both passed. Neither was edited during import.",
+  "The recording is complete and is not truncated. An earlier audit reached an incomplete reading of the ending; that finding was withdrawn after a direct tail re-audit restored the full closing passage through 07:23.559, which is part of the canonical speech. The controlling correction record is t2-batches/batch-07-tail-correction-06-53-07-23.md.",
+  "The project's nationalisation position covers Kalaignar's underlying Tamil speech only. It does not determine or claim rights in the source recording, and it does not extend to the project-created English translation."
+ ]
+}

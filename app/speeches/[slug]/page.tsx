@@ -27,13 +27,23 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   // Description is built ONLY from source-established facts. A speech whose source states no date
   // or venue must never be described as "the <year> speech" or "speech at undefined": the date and
   // place clauses are simply omitted, and a publication/edition date is never used as a speech date.
+  //
+  // The date clause is what supplies the NOUN ("<date> speech"). A source that establishes a place
+  // but no date therefore used to leave the possessive dangling straight onto the preposition —
+  // "Kalaignar M. Karunanidhi's at Kalaivanar Arangam, Chennai". No released speech had reached
+  // that combination before, so the defect was latent; the audio speech, whose recording
+  // establishes a venue and states no date, is the first case to expose it. The fix supplies the
+  // missing noun in exactly that case, and does NOT invent a date to avoid it.
+  const place: string[] = [];
+  if (s.subtype === "public-speech") {
+    if (s.venue) place.push(`at ${s.venue.en}`);
+  } else {
+    place.push(`at ${s.legislature.nameEn}${s.event?.en ? ` (${s.event.en})` : ""}`);
+  }
   const clauses: string[] = [];
   if (s.date) clauses.push(`${s.date} speech`);
-  if (s.subtype === "public-speech") {
-    if (s.venue) clauses.push(`at ${s.venue.en}`);
-  } else {
-    clauses.push(`at ${s.legislature.nameEn}${s.event?.en ? ` (${s.event.en})` : ""}`);
-  }
+  else if (place.length) clauses.push(s.subtype === "public-speech" ? "public speech" : "speech");
+  clauses.push(...place);
   const what = clauses.length
     ? `Kalaignar M. Karunanidhi's ${clauses.join(" ")}`
     : `a verified ${s.subtype === "public-speech" ? "public speech" : "speech"} by Kalaignar M. Karunanidhi`;

@@ -138,6 +138,10 @@ jobs:
               "speeches/udhaya-kathir": { repo: "kalaignar-assembly-speeches" },
               "speeches/poonthottam": { repo: "kalaignar-public-speeches" },
               "speeches/arappor": { repo: "kalaignar-public-speeches" },
+              // Shares the public-speeches checkout with Poonthottam and Arappor: all three pin
+              // the SAME commit, so one directory serves them and the same-directory/same-pin
+              // guard below keeps its meaning. It is deliberately NOT given a directory of its own.
+              "speeches/kalaivanar-nsk-memorial-day": { repo: "kalaignar-public-speeches" },
               "poems/idhayathai-thanthidu-anna": { repo: "kalaignar-poems" },
               "essays/sakkaravarththiyin-thirumagan": { repo: "kalaignar-essays" },
               "novels/balipeedam-nokki": { repo: "kalaignar-novels" },
@@ -208,6 +212,10 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-arappor.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches"
+      - name: Kalaivanar NSK Memorial Speech
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-kalaivanar-nsk-memorial-day.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches"
       - name: Idhayathai Thanthidu Anna
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
