@@ -70,8 +70,23 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
 
         <Card icon={ScrollText} title={ta ? "காப்பகத்திலிருந்து பெறப்பட்ட அமைப்பு" : "Structure derived from the archive"}>
           <dl className="mt-3">
+            {/* A continuous work prints no scenes at all; reporting "0 numbered scenes" beside a
+                "1 continuous body" row is the honest shape, and a closing-tableau row belongs only
+                to the one edition that prints one. */}
             <Row label={ta ? "காட்சிகள்" : "Numbered scenes"}>{d.scenes}</Row>
-            <Row label={ta ? "நிறைவுக் காட்சி" : "Closing tableau"}>{d.closingTableau} — {ta ? "தனியானது; காட்சி-39 அல்ல" : "separate; never Scene 39"}</Row>
+            {d.continuousBodies ? (
+              <Row label={ta ? "தொடர் நாடகப் பகுதி" : "Continuous dramatic body"}>
+                {d.continuousBodies} — {ta ? "மூலம் காட்சிகளாகப் பிரிக்கவில்லை" : "the source prints no scene division"}
+              </Row>
+            ) : null}
+            {d.openingNotes ? (
+              <Row label={ta ? "அச்சிட்ட முன்குறிப்பு" : "Printed opening material"}>
+                {d.openingNotes} — {ta ? "காட்சி அல்ல; எண்ணிக்கையில் இல்லை" : "not a scene; not counted among them"}
+              </Row>
+            ) : null}
+            {d.closingTableau > 0 && (
+              <Row label={ta ? "நிறைவுக் காட்சி" : "Closing tableau"}>{d.closingTableau} — {ta ? "தனியானது; காட்சி-39 அல்ல" : "separate; never Scene 39"}</Row>
+            )}
             <Row label={ta ? "தமிழ் அலகுகள்" : "Tamil units"}>
               {d.tamilUnits} · {d.tamilDialogue} {ta ? "உரையாடல்" : "dialogue"} · {d.tamilStageDirections} {ta ? "அரங்கக் குறிப்புகள்" : "stage directions"} · {d.tamilVerse} {ta ? "மேற்கோள் பாடல்" : "quoted verse"}
             </Row>
@@ -79,27 +94,37 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
             <Row label={ta ? "பேச்சாளர் பெயர்கள்" : "Distinct printed speaker labels"}>{d.distinctSpeakerLabels}</Row>
             <Row label={ta ? "பெயரிடப்படாத பேச்சுகள்" : "Unlabelled speeches"}>{d.unlabelledDialogueUnits}</Row>
             <Row label={ta ? "பல ஸ்கேன் காட்சிகள்" : "Scenes spanning several scans"}>{d.multiScanScenes}</Row>
-            <Row label={ta ? "அச்சுப் பக்க எண்கள்" : "Printed folios"}>
-              {d.printedPageNumbersPresent} {ta ? "உள்ளன" : "present"} · {d.printedPageNumbersAbsent} {ta ? "இல்லை (ஊகிக்கப்படவில்லை)" : "absent (never inferred)"}
-            </Row>
+            {d.printedPageNumbersPresent != null && (
+              <Row label={ta ? "அச்சுப் பக்க எண்கள்" : "Printed folios"}>
+                {d.printedPageNumbersPresent} {ta ? "உள்ளன" : "present"} · {d.printedPageNumbersAbsent} {ta ? "இல்லை (ஊகிக்கப்படவில்லை)" : "absent (never inferred)"}
+              </Row>
+            )}
             <Row label={ta ? "அமைவிடம் இல்லாத காட்சிகள்" : "Scenes printing no setting"}>{d.scenesWithoutPrintedSetting}</Row>
           </dl>
+          {/* Each structural note renders only for a work that actually has that structure. */}
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{d.speakerNote}</p>
-          <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{s.twoColumnNote}</p>
-          <p className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{s.closingTableauNote}</p>
+          {[s.continuousStructureNote, s.openingNoteNote, s.twoColumnNote, s.closingTableauNote, s.collectionNote]
+            .filter((x): x is string => !!x)
+            .map((x, i) => (
+              <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{x}</p>
+            ))}
         </Card>
 
-        <Card icon={AlertTriangle} title={ta ? "தீர்க்கப்படாத மூலப் பகுதி" : "Unresolved source area"}>
-          {prov.unresolved.map((u, i) => (
-            <div key={i} className="mt-3">
-              <p className="text-sm text-ink/80 dark:text-night-text/80" lang="en">
-                <span className="font-mono text-xs">{ta ? "ஸ்கேன்" : "scan"} {u.scan}</span> — {u.description}
-              </p>
-              <p className="mt-2 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang="en">{u.policy}</p>
-              <p className="mt-2 font-mono text-[11px] text-ink/50 dark:text-night-text/50">{u.marker}</p>
-            </div>
-          ))}
-        </Card>
+        {/* Shown ONLY where the archive actually records unresolved material. An empty card would
+            imply a problem the archive does not report. */}
+        {prov.unresolved && prov.unresolved.length > 0 && (
+          <Card icon={AlertTriangle} title={ta ? "தீர்க்கப்படாத மூலப் பகுதி" : "Unresolved source area"}>
+            {prov.unresolved.map((u, i) => (
+              <div key={i} className="mt-3">
+                <p className="text-sm text-ink/80 dark:text-night-text/80" lang="en">
+                  <span className="font-mono text-xs">{ta ? "ஸ்கேன்" : "scan"} {u.scan}</span> — {u.description}
+                </p>
+                <p className="mt-2 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang="en">{u.policy}</p>
+                <p className="mt-2 font-mono text-[11px] text-ink/50 dark:text-night-text/50">{u.marker}</p>
+              </div>
+            ))}
+          </Card>
+        )}
 
         <Card icon={Info} title={ta ? "ஆங்கில அடுக்கு" : "The English layer"}>
           <dl className="mt-3">
@@ -129,7 +154,9 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
             <Row label={ta ? "அரசாணை எண்" : "G.O. number"}>{r.governmentOrderNumber ?? (ta ? "சரிபார்க்கப்படவில்லை" : "not verified")}</Row>
             <Row label={ta ? "அரசாணை நாள்" : "G.O. date"}>{r.governmentOrderDate ?? (ta ? "சரிபார்க்கப்படவில்லை" : "not verified")}</Row>
           </dl>
-          {[r.distinctionNote, r.thirdPartyNote, r.publishedWitnessNote, r.projectTranslationNote, r.archivalStatusNote, r.evidencePending].map((n, i) => (
+          {[r.distinctionNote, r.thirdPartyNote, r.publishedWitnessNote, r.projectTranslationNote, r.archivalStatusNote, r.evidencePending]
+            .filter((x): x is string => !!x)
+            .map((n, i) => (
             <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{n}</p>
           ))}
         </Card>

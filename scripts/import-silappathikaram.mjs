@@ -305,6 +305,10 @@ for (const file of sceneFiles) {
   scenes.push({
     order,
     slug: file.replace(/\.md$/, ""),
+    // The closing tableau is a DIFFERENT KIND of reading unit, not a scene with a flag. Carrying
+    // that as `kind` lets the shared Play model describe this edition, a continuous work and any
+    // future form with one field instead of a growing set of booleans.
+    kind: isTableau ? "closing-tableau" : "scene",
     headingTa: h1(taHeads),
     headingEn: h1(enHeads),
     titleTa: ta.fm.title,
@@ -313,14 +317,13 @@ for (const file of sceneFiles) {
     settingTa: ta.fm.setting === "null" || !ta.fm.setting ? null : ta.fm.setting,
     settingEn: h3(enHeads),
     sourceScans: ta.declaredScans,
-    isClosingTableau: isTableau,
     tamil: { units: ta.units },
     english: { units: en.units, notes: en.notes },
   });
 }
 
-const numbered = scenes.filter((s) => !s.isClosingTableau);
-const tableaux = scenes.filter((s) => s.isClosingTableau);
+const numbered = scenes.filter((s) => s.kind === "scene");
+const tableaux = scenes.filter((s) => s.kind === "closing-tableau");
 if (numbered.length !== 38) throw new Error(`expected 38 numbered scenes, got ${numbered.length}`);
 if (tableaux.length !== 1) throw new Error(`expected exactly 1 closing tableau, got ${tableaux.length}`);
 if (numbered.map((s) => s.order).join(",") !== Array.from({ length: 38 }, (_, i) => i + 1).join(",")) {
@@ -358,10 +361,17 @@ const play = {
   sourceRepo: "pugazg/kalaignar-stage-plays",
   sourcePath: `works/${SLUG}`,
   sourceCommit: SRC_COMMIT,
+  // This edition prints numbered scenes, so it is a scene sequence. The field is explicit rather
+  // than inferred, because a continuous work published later must be distinguishable from a
+  // one-scene play by the data alone.
+  structureKind: "scene-sequence",
   sceneCount: numbered.length,
   closingTableauCount: tableaux.length,
+  // The assembled source marks scan boundaries INSIDE the text, so each unit's own scan span is
+  // known and carried.
+  scanProvenance: "per-unit",
   bodyScans,
-  scenes,
+  readingUnits: scenes,
 };
 
 const provenance = {
@@ -408,6 +418,8 @@ const provenance = {
     ornaments: count((s) => [...s.tamil.units, ...s.english.units].filter((u) => u.kind === "ornament").length),
     distinctSpeakerLabels: speakers.size,
     unlabelledDialogueUnits: count((s) => s.tamil.units.filter((u) => u.kind === "dialogue" && u.speakerAsPrinted === null).length),
+    continuousBodies: 0,
+    openingNotes: 0,
     scenesWithoutPrintedSetting: scenes.filter((s) => s.settingTa === null).length,
     multiScanScenes: scenes.filter((s) => s.sourceScans.length > 1).length,
     printedPageNumbersPresent: [...printedPageByScan.values()].filter((v) => v !== null).length,

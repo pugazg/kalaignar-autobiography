@@ -146,6 +146,15 @@ jobs:
               "essays/sakkaravarththiyin-thirumagan": { repo: "kalaignar-essays" },
               "novels/balipeedam-nokki": { repo: "kalaignar-novels" },
               "plays/silappathikaram-nataka-kappiyam": { repo: "kalaignar-stage-plays" },
+              // The four நான்மணி மாலை plays pin the stage-plays archive at a DIFFERENT, later
+              // commit than Silappathikaram, so they get their own checkout directory — the same
+              // pattern the three cinema works already use. Sharing one directory would make the
+              // same-directory/same-pin guard below fire, and weakening that guard to accommodate
+              // them would remove the protection it exists to give.
+              "plays/bharathayanam": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
+              "plays/anarkali": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
+              "plays/socrates": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
+              "plays/cheran-senguttuvan": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
               "thirukkural": { repo: "kalaignar-literary-commentary" },
             };
             const seen = new Map();
@@ -232,6 +241,12 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-silappathikaram.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays"
+      # ONE coherent released batch, ONE validation step. The script itself prints a PASS/FAIL line
+      # per work, so a failure still names the play rather than just the batch.
+      - name: Naanmani Malai Plays — 4-work Drama batch
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-naanmani-malai-plays.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-naanmani-malai"
       - name: Thirukkural
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
