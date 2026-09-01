@@ -73,7 +73,11 @@ export type ReaderStructure =
   // each unit pairs a poet's couplet with a separate commentator's prose on it. Deliberately
   // distinct from "commentary-unit", whose units are free-standing prose without that hierarchy and
   // without a second authorial voice to keep apart.
-  | "kural-commentary";
+  | "kural-commentary"
+  // Cinema songs — a collection of lyrics grouped by the FILM each belongs to, with a page per
+  // lyric. The spine is film → song, not a single printed work read straight through, which is why
+  // it is not "scene": the three cinema works before it are each one booklet.
+  | "film-song";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
 // merely "every unit currently vendored happens to have this language". A work whose
@@ -455,6 +459,59 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     // does, nothing is claimed rather than something wrong. The 1953 printed `உரிமையுடையது.` notice
     // is a historical source statement and stays on /cinema/tirumbippaar/source, not here.
     provenanceHref: "/cinema/tirumbippaar/source",
+  },
+  {
+    // CINEMA WRITING — Phase E3. The FOURTH work on the திரை எழுத்து shelf, and the first that is
+    // not a single booklet: 54 lyrics drawn from 23 films, so its reader spine is `film-song`
+    // (film → lyric) rather than the `scene` model the other three share. Appended after
+    // திரும்பிப்பார்! because this shelf lists works in ONBOARDING order, not by year.
+    //
+    // The reader shipped in E2; this entry only makes it discoverable from /read.
+    //
+    // TWO DECISIONS A LATER MAINTAINER COULD EASILY FLATTEN:
+    //
+    // 1. AUTHORSHIP IS NOT UNIFORM ACROSS THIS WORK. The archive establishes Kalaignar's authorship
+    //    for 48 of the 54 lyrics. The six அம்மையப்பன் lyrics 013–018 remain individually
+    //    UNRESOLVED — the 2024 compiler printed all of that film's songs and stated he could not
+    //    confirm which were his. They are displayed, they are not claimed, and they carry a
+    //    source-controlled notice on the reader. So the card's `unitCount` of 54 is a CORPUS count,
+    //    and neither description may say "54 songs Kalaignar wrote".
+    //
+    // 2. `rights` is deliberately ABSENT, for a sharper reason than on Parasakthi or Tirumbippaar.
+    //    Those are composite publications; this one is a collection in which six specific items are
+    //    of unresolved authorship. Applying `nationalised-by-tamil-nadu-government` to the whole
+    //    54-song work would silently convert those six into Kalaignar-authored material for rights
+    //    purposes — an authorship finding the evidence does not support, arrived at through a
+    //    rights field. Display eligibility, authorship certainty and rights are three separate
+    //    things here, and they must stay separate.
+    //
+    // No source/provenance fields and no provenanceHref: unlike the other three cinema works, this
+    // one has NO public source page by design. Its archival apparatus — compiler, publisher, scan
+    // hashes, page mappings, credits — lives outside the served tree in
+    // data/internal/thirai-isai-paadalgal/provenance.json, and duplicating the pin here would
+    // reintroduce on the catalogue card exactly what that boundary keeps off the public surface.
+    id: "kalaignar-thirai-isai-paadalgal",
+    slug: "thirai-isai-paadalgal",
+    titleTa: "கலைஞர் திரை இசைப் பாடல்கள்",
+    // The editorial English presentation title carried by the released data, used verbatim rather
+    // than a second one invented here.
+    titleEn: "Kalaignar Film Songs",
+    shelf: "cinema-writing",
+    subtype: "film-song-collection",
+    readerStructure: "film-song",
+    href: "/cinema/thirai-isai-paadalgal",
+    state: "published",
+    // Says what the collection contains and how it is arranged. It does NOT say who wrote the
+    // songs — six of them are unresolved, and the card is not the place to litigate that. The
+    // collection title itself is the established public title of the work.
+    descTa: "திரைப்படம் வாரியாகத் தொகுக்கப்பட்ட பாடல் வரிகள் — மூல தமிழும் இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில வாசிப்பும்",
+    descEn: "Film-grouped lyrics in the original Tamil with a project-created English reading",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // A corpus count: the 54 numbered lyrics the released data carries and the reader displays.
+    // Not an authorship count — 48 of them are established as Kalaignar's, six are unresolved.
+    unitCount: { value: 54, labelTa: "பாடல்கள்", labelEn: "songs" },
   },
   {
     // Digital Library Phase 3 — Speeches. First benchmark: a fully-released, verified Assembly
