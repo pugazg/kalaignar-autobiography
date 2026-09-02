@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ArrowLeft, BookOpen, Home, Info, Newspaper } from "lucide-react";
 import type { EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
+import { Fragment } from "react";
+import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel } from "@/lib/essay-source-facts";
 
 // The publication landing: title, author, source-edition context and the source-numbered table of
 // contents. The publication is ONE catalog work; its 14 articles are reading units inside it.
@@ -35,17 +37,21 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
             {ta ? pub.author.ta : pub.author.en}
           </p>
 
-          {/* EDITION CONTEXT — the first edition and the CONTROLLING scanned edition are shown as
-              two distinct facts. The integrated source is the 2018 reprint; it is never presented
-              as a 1956 scan, and the 1956 history is never dropped. */}
-          <dl className="mt-4 grid gap-1 text-xs text-ink/55 dark:text-night-text/55 sm:grid-cols-[auto_1fr] sm:gap-x-3">
-            <dt>{ta ? "முதற்பதிப்பு" : "First edition"}</dt>
-            <dd className="font-tamil sm:mb-0" lang="ta">{pub.firstEdition.statementTa}</dd>
-            <dt>{ta ? "பயன்படுத்திய பதிப்பு" : "Edition used here"}</dt>
-            <dd className="font-tamil" lang="ta">
-              {pub.controllingEdition.statementTa} · {pub.controllingEdition.publisherLineTa}
-            </dd>
-          </dl>
+          {/* EDITION CONTEXT — source-form aware. Where the publication was reprinted, the first
+              edition and the CONTROLLING scanned edition are shown as two distinct facts so the
+              reprint is never read as a scan of the original. Where the controlling scan IS the
+              first edition — every Wave-3 pamphlet — exactly one row is shown, and the publication
+              is never described as following a reprint it does not have. */}
+          {editionRows(pub, ta).length > 0 && (
+            <dl className="mt-4 grid gap-1 text-xs text-ink/55 dark:text-night-text/55 sm:grid-cols-[auto_1fr] sm:gap-x-3">
+              {editionRows(pub, ta).map((row) => (
+                <Fragment key={row.label}>
+                  <dt>{row.label}</dt>
+                  <dd className="font-tamil sm:mb-0" lang="ta">{row.value}</dd>
+                </Fragment>
+              ))}
+            </dl>
+          )}
 
           <div className="mt-5 flex flex-wrap items-center gap-3">
             <Link
@@ -63,10 +69,16 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
         <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
-          {ta ? `பொருளடக்கம் — ${pub.articleCount} கட்டுரைகள்` : `Contents — ${pub.articleCount} articles`}
+          {pub.articleCount === 1
+            ? (ta ? "கட்டுரை" : "The essay")
+            : ta
+              ? `பொருளடக்கம் — ${pub.articleCount} கட்டுரைகள்`
+              : `Contents — ${pub.articleCount} articles`}
         </h2>
-        {/* Article numbers 1–14 are shown because the PRINTED contents page numbers them; this is
-            source-supported publication ordering, not archive-created navigation numbering. */}
+        {/* The ordinals shown here are printed contents-page numbers for one publication and the
+            archive's reading ordinals for the Wave-3 pamphlets, which print no contents page. The
+            note says which, so an archive ordinal is never read as a printed one. */}
+        <p className="mt-1 text-[11px] text-ink/45 dark:text-night-text/45">{articleNumberingNote(pub, ta)}</p>
         <ol className="mt-3">
           {pub.articles.map((a) => (
             <li key={a.slug} className="border-b border-ink/5 last:border-0 dark:border-white/5">
@@ -80,8 +92,10 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
                     {a.titleTa}
                   </span>
                   <span className="mt-0.5 block text-sm text-ink/55 dark:text-night-text/55">{a.titleEn}</span>
+                  {/* Printed pagination where the source shows it; the scan coverage otherwise.
+                      Never an empty or fabricated range. */}
                   <span className="mt-0.5 block text-[11px] text-ink/40 dark:text-night-text/40">
-                    {ta ? "அச்சுப் பக்கம்" : "printed"} {a.printedPages.from}–{a.printedPages.to}
+                    {printedPagesLabel(a.printedPages, ta) ?? scanRunsLabel(a, ta)}
                   </span>
                 </span>
               </Link>

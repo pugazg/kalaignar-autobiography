@@ -26,18 +26,23 @@
   "year": 2018,
   "publisherLineTa": "திராவிடர் கழக (இயக்க) வெளியீடு"
  },
+ "controllingIsFirstEdition": false,
  "printedPageCount": 80,
  "articles": [
   {
    "number": 1,
+   "numberSource": "printed-contents",
    "slug": "sakkaravarththiyin-thirumagan",
    "titleTa": "சக்கரவர்த்தியின் திருமகன்",
    "titleEn": "Chakravarthi's Son",
-   "scanPages": {
-    "from": 9,
-    "to": 15
-   },
+   "scanRuns": [
+    {
+     "from": 9,
+     "to": 15
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 7,
     "to": 13
    },
@@ -1404,14 +1409,18 @@
   },
   {
    "number": 2,
+   "numberSource": "printed-contents",
    "slug": "thegamum-unarvum",
    "titleTa": "தேகமும் உணர்வும்",
    "titleEn": "Body and Feeling",
-   "scanPages": {
-    "from": 16,
-    "to": 21
-   },
+   "scanRuns": [
+    {
+     "from": 16,
+     "to": 21
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 14,
     "to": 19
    },
@@ -2414,14 +2423,18 @@
   },
   {
    "number": 3,
+   "numberSource": "printed-contents",
    "slug": "sathi-nirupikkappadugirathu",
    "titleTa": "சதி நிரூபிக்கப்படுகிறது",
    "titleEn": "The Conspiracy Is Proven",
-   "scanPages": {
-    "from": 22,
-    "to": 25
-   },
+   "scanRuns": [
+    {
+     "from": 22,
+     "to": 25
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 20,
     "to": 23
    },
@@ -3017,14 +3030,18 @@
   },
   {
    "number": 4,
+   "numberSource": "printed-contents",
    "slug": "kamarajan-aadkonda-dasaratharajan",
    "titleTa": "காமராஜன் ஆட்கொண்ட தசரதராஜன்!",
    "titleEn": "Dasaratha Raja in the Grip of Kama-Raja!",
-   "scanPages": {
-    "from": 26,
-    "to": 29
-   },
+   "scanRuns": [
+    {
+     "from": 26,
+     "to": 29
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 24,
     "to": 27
    },
@@ -4025,15 +4042,19 @@
   },
   {
    "number": 5,
+   "numberSource": "printed-contents",
    "slug": "paraththuvaja-aasramama-paris-nagarathu-para",
    "titleTa": "பரத்துவாஜா ஆஸ்ரமமா - பாரிஸ் நகரத்து ‘பாரா’?",
    "contentsTitleTa": "பரத்துவாஜர் ஆஸ்ரமமா - பாரீஸ் நகரத்து ‘பாரா’?",
    "titleEn": "Bharadvaja's Ashram—or a Paris 'Bar'?",
-   "scanPages": {
-    "from": 30,
-    "to": 37
-   },
+   "scanRuns": [
+    {
+     "from": 30,
+     "to": 37
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 28,
     "to": 35
    },
@@ -6341,14 +6362,18 @@
   },
   {
    "number": 6,
+   "numberSource": "printed-contents",
    "slug": "iraman-kaattegiyathu-en-rishiyin-saabama-kaikeyi-kobama",
    "titleTa": "இராமன் காட்டேகியது ஏன்? ரிஷியின் சாபமா? கைகேயி கோபமா?",
    "titleEn": "Why Did Rama Go to the Forest? A Rishi's Curse? Kaikeyi's Anger?",
-   "scanPages": {
-    "from": 38,
-    "to": 42
-   },
+   "scanRuns": [
+    {
+     "from": 38,
+     "to": 42
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 36,
     "to": 40
    },
@@ -7309,14 +7334,18 @@
   },
   {
    "number": 7,
+   "numberSource": "printed-contents",
    "slug": "vibishanarukku-vidai-yalippom",
    "titleTa": "விபீஷணருக்கு விடை யளிப்போம்!",
    "titleEn": "Let Us Answer Vibhishana!",
-   "scanPages": {
-    "from": 43,
-    "to": 49
-   },
+   "scanRuns": [
+    {
+     "from": 43,
+     "to": 49
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 41,
     "to": 47
    },
@@ -8747,14 +8776,18 @@
   },
   {
    "number": 8,
+   "numberSource": "printed-contents",
    "slug": "naadaanda-mannan-naathiyatru-seththaan",
    "titleTa": "நாடாண்ட மன்னன் நாதியற்று செத்தான்",
    "titleEn": "The King Who Ruled the Land Died with No One to Tend Him",
-   "scanPages": {
-    "from": 50,
-    "to": 54
-   },
+   "scanRuns": [
+    {
+     "from": 50,
+     "to": 54
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 48,
     "to": 52
    },
@@ -9519,14 +9552,18 @@
   },
   {
    "number": 9,
+   "numberSource": "printed-contents",
    "slug": "thanthai-maganum-tharumam-thavariyavargal",
    "titleTa": "தந்தை மகனும் தருமம் தவறியவர்கள்!",
    "titleEn": "Father and Son—Both Strayed from Dharma!",
-   "scanPages": {
-    "from": 55,
-    "to": 60
-   },
+   "scanRuns": [
+    {
+     "from": 55,
+     "to": 60
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 53,
     "to": 58
    },
@@ -10470,14 +10507,18 @@
   },
   {
    "number": 10,
+   "numberSource": "printed-contents",
    "slug": "vishnu-avatharam-enbathum-ramanidam",
    "titleTa": "விஷ்ணு அவதாரம் எனப்படும் ராமனிடம்!",
    "titleEn": "To Rama, Who Is Said to Be Vishnu's Incarnation!",
-   "scanPages": {
-    "from": 61,
-    "to": 64
-   },
+   "scanRuns": [
+    {
+     "from": 61,
+     "to": 64
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 59,
     "to": 62
    },
@@ -11211,14 +11252,18 @@
   },
   {
    "number": 11,
+   "numberSource": "printed-contents",
    "slug": "nadappathellam-narayanan-seyala",
    "titleTa": "நடப்பதெல்லாம் நாராயணன் செயலா?",
    "titleEn": "Is Everything That Happens Narayana's Doing?",
-   "scanPages": {
-    "from": 65,
-    "to": 70
-   },
+   "scanRuns": [
+    {
+     "from": 65,
+     "to": 70
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 63,
     "to": 68
    },
@@ -12703,14 +12748,18 @@
   },
   {
    "number": 12,
+   "numberSource": "printed-contents",
    "slug": "maarisanai-thuraththi-sendra-ramanidam",
    "titleTa": "மாரீசனைத் துரத்திச் சென்ற ராமனிடம்",
    "titleEn": "To Rama Who Went Chasing Maricha",
-   "scanPages": {
-    "from": 71,
-    "to": 73
-   },
+   "scanRuns": [
+    {
+     "from": 71,
+     "to": 73
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 69,
     "to": 71
    },
@@ -13311,14 +13360,18 @@
   },
   {
    "number": 13,
+   "numberSource": "printed-contents",
    "slug": "thurogigal-santhippu",
    "titleTa": "துரோகிகள் சந்திப்பு!",
    "titleEn": "Traitors Meet!",
-   "scanPages": {
-    "from": 74,
-    "to": 78
-   },
+   "scanRuns": [
+    {
+     "from": 74,
+     "to": 78
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 72,
     "to": 76
    },
@@ -14016,15 +14069,19 @@
   },
   {
    "number": 14,
+   "numberSource": "printed-contents",
    "slug": "kaariyamaagum-varaiyil-kaalai-pidi",
    "titleTa": "காரியமாகும் வரையில் காலைப் பிடி !",
    "contentsTitleTa": "காரியமாகும் வரையில் காலைப் பிடி!",
    "titleEn": "Hold Their Feet Until Your Purpose Is Achieved!",
-   "scanPages": {
-    "from": 79,
-    "to": 82
-   },
+   "scanRuns": [
+    {
+     "from": 79,
+     "to": 82
+    }
+   ],
    "printedPages": {
+    "kind": "range",
     "from": 77,
     "to": 80
    },

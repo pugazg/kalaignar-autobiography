@@ -1,0 +1,1621 @@
+{
+ "workId": "thiraavida-sampaththu",
+ "slug": "thiraavida-sampaththu",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/thiraavida-sampaththu",
+ "sourceCommit": "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+ "shelf": "essays-articles",
+ "readerStructure": "article",
+ "subtype": "reconstructed-pamphlet",
+ "title": {
+  "ta": "திராவிட சம்பத்து",
+  "en": "Dravidian Wealth"
+ },
+ "author": {
+  "ta": "கலைஞர் மு. கருணாநிதி",
+  "en": "Kalaignar M. Karunanidhi"
+ },
+ "firstEdition": {
+  "statementTa": "முதல பதிப்பு, செப்டம்பர் 1951",
+  "monthTa": "செப்டம்பர்",
+  "year": 1951,
+  "publisherTa": "அறிவு மன்றம், சென்னை-1",
+  "priceTa": "விலை அணா மூன்று"
+ },
+ "controllingIsFirstEdition": true,
+ "readingOrder": [
+  1,
+  2,
+  9,
+  10,
+  5,
+  6,
+  13,
+  14,
+  15,
+  16,
+  7,
+  8,
+  11,
+  12,
+  3,
+  4
+ ],
+ "articles": [
+  {
+   "number": 1,
+   "numberSource": "archive-ordinal",
+   "slug": "thiraavida-sampaththu",
+   "titleTa": "திராவிட சம்பத்து",
+   "titleEn": "Dravidian Wealth",
+   "scanRuns": [
+    {
+     "from": 5,
+     "to": 6
+    },
+    {
+     "from": 13,
+     "to": 16
+    }
+   ],
+   "printedPages": {
+    "kind": "none",
+    "note": "The pamphlet shows no printed page numerals. Pencil folio marks on alternating scans are physical-copy marks, not printed pagination."
+   },
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "*"
+       }
+      ],
+      "text": "*",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "அரசியல் நோயாளிகள்"
+       }
+      ],
+      "text": "அரசியல் நோயாளிகள்",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "கண்னை மூடிக்கொண்டே படுத்திருப்பார்கள். திடுக்கென கத்துவார்கள் 'அய்யோ அப்பா' என்று! இப்படி சில அரசியல் நோயாளிகள் இருக்கிறார்கள். நான் நோயாளி என்கிறேன்; அதை அவர்கள் 'ஸ்டண்ட்' என்பார்கள், வாயை மூடி வாலைச்சுருட்டி உட்கார்ந்திருப்பது. எதிர்பாராத நேரத்தில் எழுந்து பாய்வது. அந்தப் பாய்ச்சலிலே பயன் இருந்தால் மேலும் மேலும் தாவுவது, இல்லாவிட்டால் பழைய படியே மரக்கிளையில் தொங்குவது. இது நமது அக்கிரஹாரத்தின் பிரதிநிதி—அம்மாமிகளின் அபிமானச் செல்வன் ஆனந்தவிகடனுக்குப் பழக்கமான சமாச்சாரம்."
+       }
+      ],
+      "text": "கண்னை மூடிக்கொண்டே படுத்திருப்பார்கள். திடுக்கென கத்துவார்கள் 'அய்யோ அப்பா' என்று! இப்படி சில அரசியல் நோயாளிகள் இருக்கிறார்கள். நான் நோயாளி என்கிறேன்; அதை அவர்கள் 'ஸ்டண்ட்' என்பார்கள், வாயை மூடி வாலைச்சுருட்டி உட்கார்ந்திருப்பது. எதிர்பாராத நேரத்தில் எழுந்து பாய்வது. அந்தப் பாய்ச்சலிலே பயன் இருந்தால் மேலும் மேலும் தாவுவது, இல்லாவிட்டால் பழைய படியே மரக்கிளையில் தொங்குவது. இது நமது அக்கிரஹாரத்தின் பிரதிநிதி—அம்மாமிகளின் அபிமானச் செல்வன் ஆனந்தவிகடனுக்குப் பழக்கமான சமாச்சாரம்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "வால் ஆடுகிறது"
+       }
+      ],
+      "text": "வால் ஆடுகிறது",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "தென்னாட்டுச் செல்வங்களைப் பற்றி எழுத ஆரம்பித்தது, நம்மீது ஒரு"
+       }
+      ],
+      "text": "தென்னாட்டுச் செல்வங்களைப் பற்றி எழுத ஆரம்பித்தது, நம்மீது ஒரு",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "பாய்ச்சல் பாய்ந்திருக்கிறது. திராவிட சம்பத்து! என்று தலைப்பு—அதிலே விகடனின் வால் விநோதமாக—விசித்திரமாக—விபரீதமாக ஆடுகிறது,"
+       }
+      ],
+      "text": "பாய்ச்சல் பாய்ந்திருக்கிறது. திராவிட சம்பத்து! என்று தலைப்பு—அதிலே விகடனின் வால் விநோதமாக—விசித்திரமாக—விபரீதமாக ஆடுகிறது,",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "\"மகிஷாசுர மர்த்தனியின் கதை ஒரு பழைய திராவிடக் கதையாக இருந்து புராணம் புகுந்திருக்கும் என ஊகிப்பது தவறாகாது\""
+       }
+      ],
+      "text": "\"மகிஷாசுர மர்த்தனியின் கதை ஒரு பழைய திராவிடக் கதையாக இருந்து புராணம் புகுந்திருக்கும் என ஊகிப்பது தவறாகாது\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "இப்படி எழுதியிருக்கிறது முதலில். எனக்கு ஆச்சரியமாகப் போய்விட்டது. நாம் படிப்பது ஆனந்தவிகடன் தானே என்று திருப்பித் திருப்பிப் பார்த்துக்கொண்டேன்."
+       }
+      ],
+      "text": "இப்படி எழுதியிருக்கிறது முதலில். எனக்கு ஆச்சரியமாகப் போய்விட்டது. நாம் படிப்பது ஆனந்தவிகடன் தானே என்று திருப்பித் திருப்பிப் பார்த்துக்கொண்டேன்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "'திராவிடக் கதைகளில் புராணம் புகுந்துவிட்டது' இதைச் சொல்வது சாதாரண விஷயமா? அதுவும் விகடன், வேத விற்பன்னர்களின் ஏகக்குரல்—அது எழுதுமா இப்படி? எழுதியிருக்கிறது, எனவே வியப்படைந்தேன்,"
+       }
+      ],
+      "text": "'திராவிடக் கதைகளில் புராணம் புகுந்துவிட்டது' இதைச் சொல்வது சாதாரண விஷயமா? அதுவும் விகடன், வேத விற்பன்னர்களின் ஏகக்குரல்—அது எழுதுமா இப்படி? எழுதியிருக்கிறது, எனவே வியப்படைந்தேன்,",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "'திராவிடக் கதைகளில் புராணம் புகுந்துவிட்டது' எவ்வளவு அற்புதமான உண்மை இதைச் சொன்னதற்காக எவ்வளவு கஷ்டப்பட்டிருக்கிறோம். நாம்."
+       }
+      ],
+      "text": "'திராவிடக் கதைகளில் புராணம் புகுந்துவிட்டது' எவ்வளவு அற்புதமான உண்மை இதைச் சொன்னதற்காக எவ்வளவு கஷ்டப்பட்டிருக்கிறோம். நாம்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "புராணம் புகுந்து விட்டது"
+       }
+      ],
+      "text": "புராணம் புகுந்து விட்டது",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "திராவிடக் கதைகளில் புராணம் புகுந்துவிட்டது. ஆமாம்; ராமாயணம் திராவிடக் கதை, ராமனுக்கும் ராவணனுக்கும் நடந்த போர் பற்றி எழுந்த திராவிடக் கதை, அதில் புராணம் புகுந்துவிட்டது என்று"
+       }
+      ],
+      "text": "திராவிடக் கதைகளில் புராணம் புகுந்துவிட்டது. ஆமாம்; ராமாயணம் திராவிடக் கதை, ராமனுக்கும் ராவணனுக்கும் நடந்த போர் பற்றி எழுந்த திராவிடக் கதை, அதில் புராணம் புகுந்துவிட்டது என்று",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "கூறினோம். அதை எதிர்த்த கள்; இப்போது விகடன் கூறுகிறது... மகிஷாசுரமர்த்தனி என்ற திராவிடக் கதையில் புராணம் புகுந்துவிட்டது என்று!"
+       }
+      ],
+      "text": "கூறினோம். அதை எதிர்த்த கள்; இப்போது விகடன் கூறுகிறது... மகிஷாசுரமர்த்தனி என்ற திராவிடக் கதையில் புராணம் புகுந்துவிட்டது என்று!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "நன்றி தெரிவித்துக்கொள்ளுகிறோம்; தாமதமாகவாவது புத்தி வந்ததே என்று! ஆனால் விகடன் அவ்வளவு பைத்தியக்காரனல்லவே......பழைய பழக்கத்தை அறவே விட்டுவிடவில்லை, கட்டுரையின் முடிவிலே கொஞ்சம் விஷத்தையல்லவா .கக்கியிருக்கிறான்."
+       }
+      ],
+      "text": "நன்றி தெரிவித்துக்கொள்ளுகிறோம்; தாமதமாகவாவது புத்தி வந்ததே என்று! ஆனால் விகடன் அவ்வளவு பைத்தியக்காரனல்லவே......பழைய பழக்கத்தை அறவே விட்டுவிடவில்லை, கட்டுரையின் முடிவிலே கொஞ்சம் விஷத்தையல்லவா .கக்கியிருக்கிறான்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "விஷம வேலை"
+       }
+      ],
+      "text": "விஷம வேலை",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "எங்கே திராவிடக் கதை என்று கூறுவதால் 'திராவிட நாடு!' பிரச்சினைக்கு இடங் கொடுத்துவிடுவோமோ என்று பயந்துகொண்டு \"திராவிட சம்பத்து என்றால் அப்படி ஒரு இனம் இருந்ததாகவோ இருக்கிறதாகவோ நாம் ஒப்புக் கொள்ளவில்லை.\""
+       }
+      ],
+      "text": "எங்கே திராவிடக் கதை என்று கூறுவதால் 'திராவிட நாடு!' பிரச்சினைக்கு இடங் கொடுத்துவிடுவோமோ என்று பயந்துகொண்டு \"திராவிட சம்பத்து என்றால் அப்படி ஒரு இனம் இருந்ததாகவோ இருக்கிறதாகவோ நாம் ஒப்புக் கொள்ளவில்லை.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "விகடனின் விஷமத்தைப் பாருங்கள். \"இனவெறிக்கொள்கை, ஒரு மித் (Myth) அதாவது புராணக் கற்பனை என்கிறார்கள் இன்றைய விஞ்ஞான அறிஞர்களும் ஆராய்ச்சியாளரும்.\""
+       }
+      ],
+      "text": "விகடனின் விஷமத்தைப் பாருங்கள். \"இனவெறிக்கொள்கை, ஒரு மித் (Myth) அதாவது புராணக் கற்பனை என்கிறார்கள் இன்றைய விஞ்ஞான அறிஞர்களும் ஆராய்ச்சியாளரும்.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "விஞ்ஞான அறிஞரை, ஆராய்ச்சியாளரை எதற்குப் பயன்படுத்துகிறார் கவனியுங்கள், விகடனார்! இனவெறிக்கொள்கை ஆகாதென்கிறார்களாம் அறிஞர்கள். இந்த வார்த்தைகளை வைத்துக்கொண்டு நம் இனமுழக்கத்தைப் பாழாக்கக் கனவு காண்கிறார் நகைச்சுவை குரங்கார்!"
+       }
+      ],
+      "text": "விஞ்ஞான அறிஞரை, ஆராய்ச்சியாளரை எதற்குப் பயன்படுத்துகிறார் கவனியுங்கள், விகடனார்! இனவெறிக்கொள்கை ஆகாதென்கிறார்களாம் அறிஞர்கள். இந்த வார்த்தைகளை வைத்துக்கொண்டு நம் இனமுழக்கத்தைப் பாழாக்கக் கனவு காண்கிறார் நகைச்சுவை குரங்கார்!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "இனவெறி—இனப்பற்று"
+       }
+      ],
+      "text": "இனவெறி—இனப்பற்று",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "இனவெறி கூடாதுதான் அதைத்தான் ஆரிய இனத்துக்கு அடிக்கடி சுட்டிக்காட்டி வருகிறோம். மனிதனைத் தொடக்கூடாது என்ற மமதையை—மகேஸ்வரனை நீதான் பூஜை செய்யவேண்டும் என்ற மண்டைத் திமிரை—இனவெறியை—விட்டுவிடு என்று கூறுகிறோம், நமக்கு ஏற்பட்டிருப்பது இனவெறியல்ல இனப்பற்று. இனவெறி...இன்னொரு இனத்தை அழித்து, அடக்கி தன் இனத்தை வளர்ப்பது. இனப்பற்று..தன் இனத்தைப் பாதுகாத்து இன எழுச்சி ஏற்படுத்துவது."
+       }
+      ],
+      "text": "இனவெறி கூடாதுதான் அதைத்தான் ஆரிய இனத்துக்கு அடிக்கடி சுட்டிக்காட்டி வருகிறோம். மனிதனைத் தொடக்கூடாது என்ற மமதையை—மகேஸ்வரனை நீதான் பூஜை செய்யவேண்டும் என்ற மண்டைத் திமிரை—இனவெறியை—விட்டுவிடு என்று கூறுகிறோம், நமக்கு ஏற்பட்டிருப்பது இனவெறியல்ல இனப்பற்று. இனவெறி...இன்னொரு இனத்தை அழித்து, அடக்கி தன் இனத்தை வளர்ப்பது. இனப்பற்று..தன் இனத்தைப் பாதுகாத்து இன எழுச்சி ஏற்படுத்துவது.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "முன்னது ஆரிய முறை. பின்னது திராவிடர் முறை. நம் முறை."
+       }
+      ],
+      "text": "முன்னது ஆரிய முறை. பின்னது திராவிடர் முறை. நம் முறை.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "விஷமம் செய்ய எண்ணிய ஆரிய ஆஞ்சநேயர் முன்னுக்குப்பின் முரணில்லாமலாவது எழுதினாரா என்றால் அதுவுமில்லை."
+       }
+      ],
+      "text": "விஷமம் செய்ய எண்ணிய ஆரிய ஆஞ்சநேயர் முன்னுக்குப்பின் முரணில்லாமலாவது எழுதினாரா என்றால் அதுவுமில்லை.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "ஆப்பசைத்த குரங்கு"
+       }
+      ],
+      "text": "ஆப்பசைத்த குரங்கு",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "முதலில் திராவிடக் கதையில் புராணம் புகுந்தது என்று நமது குரலில் பேசினார்."
+       }
+      ],
+      "text": "முதலில் திராவிடக் கதையில் புராணம் புகுந்தது என்று நமது குரலில் பேசினார்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "பிறகு இனவெறிக் கொள்கை கூடாது என்று அவர் மொழியில் கர்ச்சித்தார்."
+       }
+      ],
+      "text": "பிறகு இனவெறிக் கொள்கை கூடாது என்று அவர் மொழியில் கர்ச்சித்தார்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "இறுதியில் அதற்கு ஆக்கந்தேடுவதற்காகப் புறப்பட்டு ஆப்பசைத்த குரங்காகிறார், பாபம்! \"திராவிட"
+       }
+      ],
+      "text": "இறுதியில் அதற்கு ஆக்கந்தேடுவதற்காகப் புறப்பட்டு ஆப்பசைத்த குரங்காகிறார், பாபம்! \"திராவிட",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "சம்பத்து என்றா"
+       }
+      ],
+      "text": "சம்பத்து என்றா",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "ழி வழங்கும் பிரதேசத்\nதில் போற்றிப் பாது"
+       }
+      ],
+      "text": "ழி வழங்கும் பிரதேசத்\nதில் போற்றிப் பாது",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "தக்க பெருஞ்செல்வம்\nஎன்றுதான் பொருள்.\""
+       }
+      ],
+      "text": "தக்க பெருஞ்செல்வம்\nஎன்றுதான் பொருள்.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "விகடரின் விளக்கம் போகும் போக்கு இப்படி! திராவிட இனத்தை மறுத்தவர்—அப்படி ஒரு இனம் இருந்ததில்லை என்றவர்—திராவிட மொழியை ஒத்துக்கொண்டு அது வழங்கிய பிரதேசத்தையும் ஒத்துக்கொண்டிருக்கிறார்."
+       }
+      ],
+      "text": "விகடரின் விளக்கம் போகும் போக்கு இப்படி! திராவிட இனத்தை மறுத்தவர்—அப்படி ஒரு இனம் இருந்ததில்லை என்றவர்—திராவிட மொழியை ஒத்துக்கொண்டு அது வழங்கிய பிரதேசத்தையும் ஒத்துக்கொண்டிருக்கிறார்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "குப்பை மேட்டுக் குயில்கள்"
+       }
+      ],
+      "text": "குப்பை மேட்டுக் குயில்கள்",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "ஆங்கில மொழி வழங்கிய இடம் ஆங்கிலநாடு, பிரஞ்சு மொழி வழங்கிய நாடு பிரான்சு நாடு. திராவிட மொழி வழங்கிய நாடு திராவிட நாடு என்பது ஏனோ தெரியவில்லை ஆனந்தவிகடருக்கு? தெரியாமலில்லை. தெரிந்தும் அதை மறைக்கும் தைரியம் இன்னும் கொஞ்சம் ஒட்டிக்கொண்டிருக்கிறது அவருக்கு!"
+       }
+      ],
+      "text": "ஆங்கில மொழி வழங்கிய இடம் ஆங்கிலநாடு, பிரஞ்சு மொழி வழங்கிய நாடு பிரான்சு நாடு. திராவிட மொழி வழங்கிய நாடு திராவிட நாடு என்பது ஏனோ தெரியவில்லை ஆனந்தவிகடருக்கு? தெரியாமலில்லை. தெரிந்தும் அதை மறைக்கும் தைரியம் இன்னும் கொஞ்சம் ஒட்டிக்கொண்டிருக்கிறது அவருக்கு!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "பிரதேசம், நாடு, இவற்றை விட்டுவிடுவோம். திராவிட மொழி பேசியவர்கள் திராவிடராய்த்தானே இருக்கவேண்டும் விகடரே, கிரேக்க மொழி பேசியவர்கள் கிரேக்கர் என்பது போல விகடரே! விஷமத்தனத்தால் உண்மைகளை விஷமாக்குவது உமது பரம்பரை வேலை. இப்போது நான் தந்த விளக்கத்தால் நீர் நாளைக்கே மரத்தைவிட்டு இறங்கிவிடுவீர் என்று நிச்சயமாக நினைக்கவில்லை. திராவிடம், திராவிட"
+       }
+      ],
+      "text": "பிரதேசம், நாடு, இவற்றை விட்டுவிடுவோம். திராவிட மொழி பேசியவர்கள் திராவிடராய்த்தானே இருக்கவேண்டும் விகடரே, கிரேக்க மொழி பேசியவர்கள் கிரேக்கர் என்பது போல விகடரே! விஷமத்தனத்தால் உண்மைகளை விஷமாக்குவது உமது பரம்பரை வேலை. இப்போது நான் தந்த விளக்கத்தால் நீர் நாளைக்கே மரத்தைவிட்டு இறங்கிவிடுவீர் என்று நிச்சயமாக நினைக்கவில்லை. திராவிடம், திராவிட",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "மொழி. திராவிட"
+       }
+      ],
+      "text": "மொழி. திராவிட",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "லலாம் கற்பனைக்\nகோட்டை என்று கத்"
+       }
+      ],
+      "text": "லலாம் கற்பனைக்\nகோட்டை என்று கத்",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "கள; அந்த குப்பை\nமேட்டு குயில்களின் பேச்சுல பொதுமக்கள் ஏமாந்து விடக் கூடாதே என்பதற்குத்தான் இதைச் சொல்ல நேரிட்டது. நீங்கள் போகலாம் வாலைச் சுருட்டிக் கொண்டு!"
+       }
+      ],
+      "text": "கள; அந்த குப்பை\nமேட்டு குயில்களின் பேச்சுல பொதுமக்கள் ஏமாந்து விடக் கூடாதே என்பதற்குத்தான் இதைச் சொல்ல நேரிட்டது. நீங்கள் போகலாம் வாலைச் சுருட்டிக் கொண்டு!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printed": null
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "*"
+       }
+      ],
+      "text": "*",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Political Patients"
+       }
+      ],
+      "text": "Political Patients",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "They lie there, eyes shut. Suddenly they cry out, 'Oh, father!' There are some political patients like this. I call them patients; they call it a 'stunt'—mouth shut, tail tucked in. Suddenly getting up and pouncing. If the pounce pays, they leap farther and farther; if not, they hang from the tree branch as before. This is a familiar affair for Ananda Vikatan, the representative of our agraharam—the beloved child of the ammamis."
+       }
+      ],
+      "text": "They lie there, eyes shut. Suddenly they cry out, 'Oh, father!' There are some political patients like this. I call them patients; they call it a 'stunt'—mouth shut, tail tucked in. Suddenly getting up and pouncing. If the pounce pays, they leap farther and farther; if not, they hang from the tree branch as before. This is a familiar affair for Ananda Vikatan, the representative of our agraharam—the beloved child of the ammamis.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "The Tail Is Wagging"
+       }
+      ],
+      "text": "The Tail Is Wagging",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "It began writing about the wealth of the South and has"
+       }
+      ],
+      "text": "It began writing about the wealth of the South and has",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 5,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "pounced at us. The title: Dravidian Wealth!—and in it Vikatan's tail is wagging strangely—oddly—perversely,"
+       }
+      ],
+      "text": "pounced at us. The title: Dravidian Wealth!—and in it Vikatan's tail is wagging strangely—oddly—perversely,",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "\"It would not be wrong to infer that the story of Mahishasura Mardini was an old Dravidian story into which mythology entered.\""
+       }
+      ],
+      "text": "\"It would not be wrong to infer that the story of Mahishasura Mardini was an old Dravidian story into which mythology entered.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "That is how it begins. I was astonished. I turned it over and over to see whether what we were reading really was Ananda Vikatan."
+       }
+      ],
+      "text": "That is how it begins. I was astonished. I turned it over and over to see whether what we were reading really was Ananda Vikatan.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "'Mythology has entered Dravidian stories'—is that an ordinary thing to say? And that too Vikatan, the sole voice of the Vedic savants—would it write like this? It has written it. So I was amazed,"
+       }
+      ],
+      "text": "'Mythology has entered Dravidian stories'—is that an ordinary thing to say? And that too Vikatan, the sole voice of the Vedic savants—would it write like this? It has written it. So I was amazed,",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "'Mythology has entered Dravidian stories'—what a marvellous truth! How much we have suffered for saying this. We have."
+       }
+      ],
+      "text": "'Mythology has entered Dravidian stories'—what a marvellous truth! How much we have suffered for saying this. We have.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Mythology Has Entered"
+       }
+      ],
+      "text": "Mythology Has Entered",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Mythology has entered Dravidian stories. Yes; the Ramayana is a Dravidian story, a Dravidian story that arose about the war between Rama and Ravana, and we said that mythology entered it, we"
+       }
+      ],
+      "text": "Mythology has entered Dravidian stories. Yes; the Ramayana is a Dravidian story, a Dravidian story that arose about the war between Rama and Ravana, and we said that mythology entered it, we",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 6,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "said. Those who opposed it ...; now Vikatan says... that mythology entered the Dravidian story called Mahishasura Mardini!"
+       }
+      ],
+      "text": "said. Those who opposed it ...; now Vikatan says... that mythology entered the Dravidian story called Mahishasura Mardini!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "We give thanks—wisdom has dawned, even if late! But Vikatan isn't such a madman after all......he has not completely abandoned his old habit; at the end of the article, hasn't he spat out a little poison?"
+       }
+      ],
+      "text": "We give thanks—wisdom has dawned, even if late! But Vikatan isn't such a madman after all......he has not completely abandoned his old habit; at the end of the article, hasn't he spat out a little poison?",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Poisonous Work"
+       }
+      ],
+      "text": "Poisonous Work",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Afraid that, by calling it a Dravidian story, it might give room to the 'Dravida Nadu!' question, it says: \"By Dravidian Wealth, we do not accept that such a race ever existed or exists.\""
+       }
+      ],
+      "text": "Afraid that, by calling it a Dravidian story, it might give room to the 'Dravida Nadu!' question, it says: \"By Dravidian Wealth, we do not accept that such a race ever existed or exists.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Look at Vikatan's poison. \"The doctrine of racial hatred is a mit (Myth), that is, a mythological imagination, say today's scientific scholars and researchers.\""
+       }
+      ],
+      "text": "Look at Vikatan's poison. \"The doctrine of racial hatred is a mit (Myth), that is, a mythological imagination, say today's scientific scholars and researchers.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Look what he uses scientific scholars and researchers for, Vikatanar! The scholars, it seems, say the doctrine of racial hatred is wrong. With these words, the Comedy Monkey dreams of ruining our racial clarion call!"
+       }
+      ],
+      "text": "Look what he uses scientific scholars and researchers for, Vikatanar! The scholars, it seems, say the doctrine of racial hatred is wrong. With these words, the Comedy Monkey dreams of ruining our racial clarion call!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Racial Hatred—Attachment to One's Race"
+       }
+      ],
+      "text": "Racial Hatred—Attachment to One's Race",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Racial hatred is indeed wrong. That is exactly what we keep pointing out to the Aryan race. We say: give up the arrogance that a human being must not be touched—the thick-headed conceit that you alone must worship Maheswaran—give up racial hatred. What we have is not racial hatred but attachment to our race. Racial hatred...destroying and suppressing another race and developing one's own. Attachment to one's race..protecting one's own race and creating a racial awakening."
+       }
+      ],
+      "text": "Racial hatred is indeed wrong. That is exactly what we keep pointing out to the Aryan race. We say: give up the arrogance that a human being must not be touched—the thick-headed conceit that you alone must worship Maheswaran—give up racial hatred. What we have is not racial hatred but attachment to our race. Racial hatred...destroying and suppressing another race and developing one's own. Attachment to one's race..protecting one's own race and creating a racial awakening.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "The former is the Aryan way. The latter is the Dravidian way. Our way."
+       }
+      ],
+      "text": "The former is the Aryan way. The latter is the Dravidian way. Our way.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Did the Aryan Anjaneyar who meant to make mischief at least manage to write without contradicting himself from beginning to end? Not even that."
+       }
+      ],
+      "text": "Did the Aryan Anjaneyar who meant to make mischief at least manage to write without contradicting himself from beginning to end? Not even that.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "The Wedge-Meddling Monkey"
+       }
+      ],
+      "text": "The Wedge-Meddling Monkey",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "First he spoke in our voice, saying that mythology had entered a Dravidian story."
+       }
+      ],
+      "text": "First he spoke in our voice, saying that mythology had entered a Dravidian story.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Then he roared in his own language that the doctrine of racial hatred must not exist."
+       }
+      ],
+      "text": "Then he roared in his own language that the doctrine of racial hatred must not exist.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Finally, he sets out to find support for it—and becomes the wedge-meddling monkey. Poor thing! \"Dravidian"
+       }
+      ],
+      "text": "Finally, he sets out to find support for it—and becomes the wedge-meddling monkey. Poor thing! \"Dravidian",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Wealth mea—"
+       }
+      ],
+      "text": "Wealth mea—",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "...[damaged fragment] in the region where it prevails\nto cherish and protec—"
+       }
+      ],
+      "text": "...[damaged fragment] in the region where it prevails\nto cherish and protec—",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "...a great treasure worthy...\nthat alone is the meaning.\""
+       }
+      ],
+      "text": "...a great treasure worthy...\nthat alone is the meaning.\"",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "See where Vikatar's explanation goes! He denied the Dravidian race—said no such race had ever existed—yet he accepts the Dravidian language and the region where it prevailed."
+       }
+      ],
+      "text": "See where Vikatar's explanation goes! He denied the Dravidian race—said no such race had ever existed—yet he accepts the Dravidian language and the region where it prevailed.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "subheading",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Cuckoos of the Garbage Heap"
+       }
+      ],
+      "text": "Cuckoos of the Garbage Heap",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "The place where the English language prevailed is England; the country where the French language prevailed is France. Why, then, is it that Ananda Vikatar does not know that the country where the Dravidian language prevailed is Dravida Nadu? It isn't that he doesn't know. He knows—and still has a little courage left to conceal it!"
+       }
+      ],
+      "text": "The place where the English language prevailed is England; the country where the French language prevailed is France. Why, then, is it that Ananda Vikatar does not know that the country where the Dravidian language prevailed is Dravida Nadu? It isn't that he doesn't know. He knows—and still has a little courage left to conceal it!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Let us leave aside region and country. Those who spoke the Dravidian language must have been Dravidians, mustn't they, Vikatar? Just as those who spoke Greek were Greeks, Vikatar! Poisoning truths through malice is your hereditary occupation. I certainly don't imagine that, merely because of the explanation I've given, you'll climb down from the tree tomorrow itself. Dravidam, Dravidian"
+       }
+      ],
+      "text": "Let us leave aside region and country. Those who spoke the Dravidian language must have been Dravidians, mustn't they, Vikatar? Just as those who spoke Greek were Greeks, Vikatar! Poisoning truths through malice is your hereditary occupation. I certainly don't imagine that, merely because of the explanation I've given, you'll climb down from the tree tomorrow itself. Dravidam, Dravidian",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "language. Dravidian"
+       }
+      ],
+      "text": "language. Dravidian",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "...all are castles of imagination, shou—"
+       }
+      ],
+      "text": "...all are castles of imagination, shou—",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "...; I had to say this only so that the public would not be deceived by the pechchul of those cuckoos of the garbage heap. You may go, with your tail tucked in!"
+       }
+      ],
+      "text": "...; I had to say this only so that the public would not be deceived by the pechchul of those cuckoos of the garbage heap. You may go, with your tail tucked in!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 16,
+        "printed": null
+       }
+      ]
+     }
+    ],
+    "notes": []
+   },
+   "pageTransitions": [
+    {
+     "fromScan": 5,
+     "toScan": 6,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 6,
+     "toScan": 13,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 13,
+     "toScan": 14,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 14,
+     "toScan": 15,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 15,
+     "toScan": 16,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "numberSource": "archive-ordinal",
+   "slug": "aiyar-arivikkirar",
+   "titleTa": "ஐயர் அறிவிக்கிறார்!",
+   "titleEn": "Iyer Announces!",
+   "scanRuns": [
+    {
+     "from": 12,
+     "to": 12
+    },
+    {
+     "from": 3,
+     "to": 3
+    }
+   ],
+   "printedPages": {
+    "kind": "none",
+    "note": "The pamphlet shows no printed page numerals. Pencil folio marks on alternating scans are physical-copy marks, not printed pagination."
+   },
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "சென்னைக் கடற்கரையிலே நின்று கொண்டிருக்கிறார் அந்த ஐயர் போவார். வருவாரெல்லாம் அவரைப் பார்த்துப் போகிறார்கள். பூணூல் அணிந்தவர்தான். போட்டிருக்கும் சட்டைக்குள்ளே நூல் மறைந்திருக்கிறது அவ்வளவுதான், கடற்கரைப்பக்கம் வருகிறவர்களைப் பார்த்து, அவர், \"நாட்டினரே; நாட்டினரே ஒரு சேதி என்கிறார். அதோடு விடுவதில்லை அவர். \"திராவிடம் என்றொரு சொல் உண்டு; அது தித்திக்கும் தேன் மொழி கற்கண்டு\" என்று பாடுகிறார். ஆச்சரியப் படுவீர்கள் நீங்கள்."
+       }
+      ],
+      "text": "சென்னைக் கடற்கரையிலே நின்று கொண்டிருக்கிறார் அந்த ஐயர் போவார். வருவாரெல்லாம் அவரைப் பார்த்துப் போகிறார்கள். பூணூல் அணிந்தவர்தான். போட்டிருக்கும் சட்டைக்குள்ளே நூல் மறைந்திருக்கிறது அவ்வளவுதான், கடற்கரைப்பக்கம் வருகிறவர்களைப் பார்த்து, அவர், \"நாட்டினரே; நாட்டினரே ஒரு சேதி என்கிறார். அதோடு விடுவதில்லை அவர். \"திராவிடம் என்றொரு சொல் உண்டு; அது தித்திக்கும் தேன் மொழி கற்கண்டு\" என்று பாடுகிறார். ஆச்சரியப் படுவீர்கள் நீங்கள்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "அய்யராவது திராவிடத்தை ஒத்துக் கொள்வதாவது என்று திடுக்கிடுவீர்கள். உண்மை நண்பர்களே உண்மை! அன்றைக்கு ஒரு நாள் நானும் என் நண்பர்களும் கடற்கரையில் அந்த அய்யரைச் சந்தித்தோம். மேலே சொன்ன பாடலை அவர் பாடினார் 'திராவிடம் திராவிடம்' என்று கூவினார் திராவிடம் என்றாலே தீயை மிதித்ததுபோலத் துள்ளும் \"ஏனோதானோ\" கட்சிக்காரர் ஒருவரும் அந்த அய்யரின் முழக்கத்தைக் கேட்டு விட்டுத் தலைகுனிந்துபோய் விட்டார்."
+       }
+      ],
+      "text": "அய்யராவது திராவிடத்தை ஒத்துக் கொள்வதாவது என்று திடுக்கிடுவீர்கள். உண்மை நண்பர்களே உண்மை! அன்றைக்கு ஒரு நாள் நானும் என் நண்பர்களும் கடற்கரையில் அந்த அய்யரைச் சந்தித்தோம். மேலே சொன்ன பாடலை அவர் பாடினார் 'திராவிடம் திராவிடம்' என்று கூவினார் திராவிடம் என்றாலே தீயை மிதித்ததுபோலத் துள்ளும் \"ஏனோதானோ\" கட்சிக்காரர் ஒருவரும் அந்த அய்யரின் முழக்கத்தைக் கேட்டு விட்டுத் தலைகுனிந்துபோய் விட்டார்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "நீங்கள் உடனே சென்னைக் கடற்கரைக்குச் செல்லுங்கள். பிரசிடென்சி கல்லூரி வாயிலிலே நின்று"
+       }
+      ],
+      "text": "நீங்கள் உடனே சென்னைக் கடற்கரைக்குச் செல்லுங்கள். பிரசிடென்சி கல்லூரி வாயிலிலே நின்று",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "கொண்டிருக்கிறார் அந்த அயம் நான் சொன்னது உண்மையா அல்லவா என்பது தெரியும். தெரிந்த"
+       }
+      ],
+      "text": "கொண்டிருக்கிறார் அந்த அயம் நான் சொன்னது உண்மையா அல்லவா என்பது தெரியும். தெரிந்த",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "பிறகு அந்த ஏனோதானோக்கள்--எங்கேயோ கிடந்தது கள்—இடந்தேடிகள் ஆகியவர்களிடம் சொல்லுங்கள் போய்ப்பார்க்கும்படி - அதோடு கீழுள்ளவற்றையும் கவனமாய்ப் படியுங்கள்."
+       }
+      ],
+      "text": "பிறகு அந்த ஏனோதானோக்கள்--எங்கேயோ கிடந்தது கள்—இடந்தேடிகள் ஆகியவர்களிடம் சொல்லுங்கள் போய்ப்பார்க்கும்படி - அதோடு கீழுள்ளவற்றையும் கவனமாய்ப் படியுங்கள்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "சென்னைக் கடற்கரையில் பிரசிடென்சி கல்லுரி வாயிலில் இருக்கும் டாக்டர் உ. வே சாமிநாதய்யர் சிலையின் கீழே எழுதப்பட்டிருக்கும் வாசகங்கள்."
+       }
+      ],
+      "text": "சென்னைக் கடற்கரையில் பிரசிடென்சி கல்லுரி வாயிலில் இருக்கும் டாக்டர் உ. வே சாமிநாதய்யர் சிலையின் கீழே எழுதப்பட்டிருக்கும் வாசகங்கள்.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "\"மகா மகோபாத்யாய திராவிட வித்ய பூஷண டாக்டர் சாமிநாத அய்யர்\" என்பவை!"
+       }
+      ],
+      "text": "\"மகா மகோபாத்யாய திராவிட வித்ய பூஷண டாக்டர் சாமிநாத அய்யர்\" என்பவை!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "There stands that Iyer on Chennai's seashore. All who come and go look at him as they pass. He does wear the sacred thread. The thread is only hidden beneath his shirt—that is all. To those coming toward the beach, he says, \"Countrymen; countrymen, a message.\" And he doesn't stop there. \"There is a word called Dravidam; it is sweet-tasting honey, language sugar-candy,\" he sings. You will be astonished."
+       }
+      ],
+      "text": "There stands that Iyer on Chennai's seashore. All who come and go look at him as they pass. He does wear the sacred thread. The thread is only hidden beneath his shirt—that is all. To those coming toward the beach, he says, \"Countrymen; countrymen, a message.\" And he doesn't stop there. \"There is a word called Dravidam; it is sweet-tasting honey, language sugar-candy,\" he sings. You will be astonished.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "An Ayyar accepting Dravidam? You will be startled. True, friends, true! One day, my friends and I met that Ayyar on the beach. He sang the song above. He cried, 'Dravidam, Dravidam'. Even one member of the \"Enothano\" party—one who, at the very word Dravidam, leaps as though he has stepped on fire—heard that Ayyar's cry and went away, head bowed."
+       }
+      ],
+      "text": "An Ayyar accepting Dravidam? You will be startled. True, friends, true! One day, my friends and I met that Ayyar on the beach. He sang the song above. He cried, 'Dravidam, Dravidam'. Even one member of the \"Enothano\" party—one who, at the very word Dravidam, leaps as though he has stepped on fire—heard that Ayyar's cry and went away, head bowed.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "Go at once to Chennai's seashore. At the gate of Presidency College stands"
+       }
+      ],
+      "text": "Go at once to Chennai's seashore. At the gate of Presidency College stands",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 12,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "that ayam. You will know whether what I said is true or not. Once you know—"
+       }
+      ],
+      "text": "that ayam. You will know whether what I said is true or not. Once you know—",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "then tell those Enothanos—those things that lay somewhere—those place-seekers—to go and see. And along with that, read carefully what follows below."
+       }
+      ],
+      "text": "then tell those Enothanos—those things that lay somewhere—those place-seekers—to go and see. And along with that, read carefully what follows below.",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "The words written beneath the statue of Dr. U. Ve. Saminathayyar at the gate of Presidency kalluri on Chennai's seashore:"
+       }
+      ],
+      "text": "The words written beneath the statue of Dr. U. Ve. Saminathayyar at the gate of Presidency kalluri on Chennai's seashore:",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "segments": [
+       {
+        "kind": "authored-text",
+        "text": "\"Maha Mahopadhyaya Dravida Vidya Bhushana Dr. Saminatha Ayyar\"—those are the words!"
+       }
+      ],
+      "text": "\"Maha Mahopadhyaya Dravida Vidya Bhushana Dr. Saminatha Ayyar\"—those are the words!",
+      "mixedVoice": false,
+      "sourcePages": [
+       {
+        "scan": 3,
+        "printed": null
+       }
+      ]
+     }
+    ],
+    "notes": []
+   },
+   "pageTransitions": [
+    {
+     "fromScan": 12,
+     "toScan": 3,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
+  }
+ ],
+ "articleCount": 2
+}

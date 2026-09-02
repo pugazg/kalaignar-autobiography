@@ -1026,6 +1026,78 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/essays/sakkaravarththiyin-thirumagan/source",
   },
   {
+    // ── BULK ONBOARDING WAVE 3 — three Essays & Articles publications from one frozen source
+    // release of `pugazg/kalaignar-essays`. They are appended after சக்கரவர்த்தியின் திருமகன், which
+    // keeps its own EARLIER source pin and is untouched by this wave.
+    //
+    // Deliberate absences, none of them oversights:
+    //   * NO `edition`. Each pamphlet's own edition statement is a source fact recorded on its
+    //     provenance page; none of them was reprinted, and none establishes a catalogue-level
+    //     edition claim of the kind the reference work's 1956/2018 split supports.
+    //   * NO `unitCount`. Articles are reading units inside one catalogue work, and the source
+    //     prints no contents page to number them — the ordinals are archive reading ordinals.
+    //   * NO `rights`. No publication-specific rights determination is established for these
+    //     three works, so none is claimed. See each provenance page.
+    id: "kayittril-thongiya-kanapathi",
+    slug: "kayittril-thongiya-kanapathi",
+    titleTa: "கயிற்றில் தொங்கிய கணபதி",
+    titleEn: "Ganapathi Who Hung from the Rope",
+    shelf: "essays-articles",
+    subtype: "essay",
+    readerStructure: "article",
+    href: "/essays/kayittril-thongiya-kanapathi",
+    state: "published",
+    descTa: "1949 சிறுநூல் — ஒரே கட்டுரை, அச்சு ஸ்கேன்கள் 6–15",
+    descEn: "A 1949 pamphlet carrying a single essay, from source scans 6–15",
+    sourceRepo: "pugazg/kalaignar-essays",
+    sourcePath: "publications/kayittril-thongiya-kanapathi",
+    sourceCommit: "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    provenanceHref: "/essays/kayittril-thongiya-kanapathi/source",
+  },
+  {
+    id: "unarchchimaalai",
+    slug: "unarchchimaalai",
+    titleTa: "உணர்ச்சிமாலை",
+    titleEn: "Garland of Emotion",
+    shelf: "essays-articles",
+    subtype: "essay",
+    readerStructure: "article",
+    href: "/essays/unarchchimaalai",
+    state: "published",
+    descTa: "1951 தொகுப்பு — 10 கட்டுரைகள், அச்சு ஸ்கேன்கள் 6–49",
+    descEn: "A 1951 collection of 10 articles, from source scans 6–49",
+    sourceRepo: "pugazg/kalaignar-essays",
+    sourcePath: "publications/unarchchimaalai",
+    sourceCommit: "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    provenanceHref: "/essays/unarchchimaalai/source",
+  },
+  {
+    id: "thiraavida-sampaththu",
+    slug: "thiraavida-sampaththu",
+    titleTa: "திராவிட சம்பத்து",
+    titleEn: "Dravidian Wealth",
+    shelf: "essays-articles",
+    subtype: "essay",
+    readerStructure: "article",
+    href: "/essays/thiraavida-sampaththu",
+    state: "published",
+    descTa: "1951 சிறுநூல் — 2 கட்டுரைகள்; சேதமடைந்த பிரதி, மீட்டமைக்கப்பட்ட வாசிப்பு வரிசை",
+    descEn: "A 1951 pamphlet of 2 articles — a damaged copy whose reading order was reconstructed",
+    sourceRepo: "pugazg/kalaignar-essays",
+    sourcePath: "publications/thiraavida-sampaththu",
+    sourceCommit: "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    provenanceHref: "/essays/thiraavida-sampaththu/source",
+  },
+  {
     // Fiction — first novel benchmark, and the first work on the புனைகதை shelf. ONE continuous
     // novel in three assembled reading sections. `ராயசம் வெங்கண்ணா` is an INTERNAL cinematic
     // sequence of this novel — the source archive states so explicitly — so it gets no catalog

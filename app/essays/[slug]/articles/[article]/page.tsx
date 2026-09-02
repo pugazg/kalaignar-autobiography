@@ -5,6 +5,7 @@ import path from "node:path";
 import ArticleReader from "@/components/ArticleReader";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayPublication } from "@/data/essays";
+import { printedPagesLabel, publicationMetaSentence, scanRunsLabel } from "@/lib/essay-source-facts";
 
 function loadPublication(slug: string): EssayPublication | null {
   try {
@@ -27,10 +28,16 @@ export function generateMetadata({ params }: { params: { slug: string; article: 
   const a = pub?.articles.find((x) => x.slug === params.article);
   if (!pub || !a) return { title: "Article — கட்டுரை | Kalaignar Digital Library" };
   const title = `${a.titleTa} — ${a.titleEn} | ${pub.title.en} | Kalaignar Digital Library`;
+  // Source-form aware. Printed pagination is quoted only where the source shows it, and the edition
+  // clause comes from the publication's own facts — a 1949 pamphlet is never described as following
+  // a reprint, and an article with no printed numerals never emits an empty range.
+  const where = printedPagesLabel(a.printedPages, false) ?? scanRunsLabel(a, false);
+  const position = pub.articleCount === 1
+    ? `The essay in ${pub.title.en}`
+    : `Article ${a.number} of ${pub.articleCount} in ${pub.title.en}`;
   const description =
-    `Article ${a.number} of ${pub.articleCount} in ${pub.title.en} by Kalaignar M. Karunanidhi — printed pages ` +
-    `${a.printedPages.from}–${a.printedPages.to} of the ${pub.controllingEdition.year} reprint (first published May ${pub.firstEdition.year}). ` +
-    `Verified Tamil source text with a project-created English translation.`;
+    `${position} by Kalaignar M. Karunanidhi — ${where}. ` +
+    `${publicationMetaSentence(pub)}`;
   return { title, description, openGraph: { title, description }, twitter: { title: a.titleEn, description } };
 }
 

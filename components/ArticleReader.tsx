@@ -7,6 +7,7 @@ import ShareButtons from "@/components/ShareButtons";
 import type { Article, ArticleBlock, EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { hasComplexScanCoverage, printedPagesLabel, printedPagesNote, scanRunsLabel } from "@/lib/essay-source-facts";
 
 // One article of the publication. An article is ordinary prose — paragraphs, quoted passages and
 // source-printed subheadings — so it gets a prose reader, not the speech, poem or scene reader.
@@ -74,9 +75,20 @@ export default function ArticleReader({
             <span className="font-tamil not-italic" lang="ta">{article.contentsTitleTa}</span>
           </p>
         )}
+        {/* SOURCE COVERAGE — printed pagination where the source shows it, the scan runs otherwise.
+            A publication with no printed numerals says so in the source's own words rather than
+            emitting an empty range, and non-contiguous coverage is shown in its real order. */}
         <p className="mt-2 text-xs text-ink/50 dark:text-night-text/50" lang={ta ? "ta" : "en"}>
-          {ta ? "அச்சுப் பக்கம்" : "Printed pages"} {article.printedPages.from}–{article.printedPages.to}
+          {printedPagesLabel(article.printedPages, ta) ?? scanRunsLabel(article, ta)}
+          {hasComplexScanCoverage(article) && printedPagesLabel(article.printedPages, ta) && (
+            <span className="text-ink/40 dark:text-night-text/40"> · {scanRunsLabel(article, ta)}</span>
+          )}
         </p>
+        {printedPagesNote(article.printedPages) && (
+          <p className="mt-1 text-[11px] leading-relaxed text-ink/45 dark:text-night-text/45">
+            {printedPagesNote(article.printedPages)}
+          </p>
+        )}
 
         <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
           <ShareButtons title={`${article.titleTa} · ${article.titleEn}`} path={`/essays/${pub.slug}/articles/${article.slug}`} />
@@ -172,14 +184,16 @@ function renderBlocks(blocks: ArticleBlock[], article: Article, ta: boolean) {
     const last = b.sourcePages[b.sourcePages.length - 1];
     const nextFirst = blocks[i + 1]?.sourcePages[0];
     const t = last && nextFirst && nextFirst.scan === last.scan + 1 ? unresolved.get(last.scan) : undefined;
-    if (t) out.push(<PageRelationRule key={`u${i}`} toPrinted={t.toPrinted} ta={ta} />);
+    if (t) out.push(<PageRelationRule key={`u${i}`} toPrinted={t.toPrinted} toScan={t.toScan} ta={ta} />);
   });
   return out;
 }
 
 // A restrained, prose-appropriate marker for an unresolved cross-page block relation. It is NOT
 // authored text and is excluded from the reading measure by being a separator, not a paragraph.
-function PageRelationRule({ toPrinted, ta }: { toPrinted: number; ta: boolean }) {
+// `toPrinted` is NULLABLE: a source that prints no page numeral still has a real page transition,
+// and the marker must name it by the scan rather than emitting "printed page null".
+function PageRelationRule({ toPrinted, toScan, ta }: { toPrinted: number | null; toScan: number; ta: boolean }) {
   const label = ta
     ? "மூலப் பக்க மாற்றம் — தொகுதித் தொடர்பு தீர்மானிக்கப்படவில்லை"
     : "Source page transition — block relationship unresolved";
@@ -192,7 +206,9 @@ function PageRelationRule({ toPrinted, ta }: { toPrinted: number; ta: boolean })
     >
       <span className="article-page-relation-rule h-px w-5 bg-ink/10 dark:bg-white/10" aria-hidden />
       <span className="article-page-relation-label font-body normal-case tracking-normal" aria-hidden>
-        {ta ? `அச்சுப் பக்கம் ${toPrinted}` : `printed page ${toPrinted}`}
+        {toPrinted !== null
+          ? (ta ? `அச்சுப் பக்கம் ${toPrinted}` : `printed page ${toPrinted}`)
+          : (ta ? `மூல ஸ்கேன் ${toScan}` : `source scan ${toScan}`)}
         {/* Print-only: on paper there is no hover title or accessible name to explain the marker. */}
         <span className="article-page-relation-note">
           {ta ? " · தொகுதித் தொடர்பு தீர்மானிக்கப்படவில்லை" : " · block relation unresolved"}

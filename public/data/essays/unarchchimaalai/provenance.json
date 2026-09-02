@@ -1,0 +1,159 @@
+{
+ "workId": "unarchchimaalai",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/unarchchimaalai",
+ "sourceCommit": "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+ "sourceTree": "f49d77a0733ca75f7a96fb6a1cf4631e375b05d0",
+ "source": {
+  "titleTa": "உணர்ச்சிமாலை",
+  "titleEn": "Garland of Emotion",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0063821_உணர்ச்சிமாலை.pdf",
+  "scanSha256": "d2d45de049505218fd612bf71949135e34ecb317ffb5d003dfe59a3a0608461d",
+  "scanFileSizeBytes": 79471633,
+  "scanTotalPages": 50,
+  "physicalVerification": "50 / 50 physical page records",
+  "strictFidelityReview": "P5 strict visual text fidelity — 50 / 50 PASS",
+  "articleAssemblies": "10 / 10 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற்பதிப்பு—1951",
+   "விலை அணா 8"
+  ],
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "உணர்ச்சி மாலை",
+    "titleEn": "Garland of Emotion",
+    "scanPages": "6–9",
+    "printedPages": "6–8; scan 6 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "புரட்சி வளர்ந்த கதை",
+    "titleEn": "The Story of How the Revolution Grew",
+    "scanPages": "10–15",
+    "printedPages": "10–14; scan 10 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "போகிறான்;போகிறான்..!",
+    "titleEn": "He Goes; He Goes..!",
+    "scanPages": "16–18",
+    "printedPages": "16–17; scan 16 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "இராவணன் நம் பாட்டன்",
+    "titleEn": "Ravana Is Our Grandfather",
+    "scanPages": "19–29",
+    "printedPages": "scan 19 (the article opening) shows no printed numeral; scan 20 shows a page-position witness `1` only. The archive does not infer `19`, and neither does this integration.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 5,
+    "titleTa": "இங்கல்ல! இரஷ்யாவில்",
+    "titleEn": "Not Here! In Russia",
+    "scanPages": "30–32",
+    "printedPages": "30–31; scan 30 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 6,
+    "titleTa": "3, 57, 90.",
+    "titleEn": "3, 57, 90.",
+    "scanPages": "33–38",
+    "printedPages": "33–37; scan 33 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 7,
+    "titleTa": "30-1-1948",
+    "titleEn": "30-1-1948",
+    "scanPages": "39–41",
+    "printedPages": "39–40; scan 39 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 8,
+    "titleTa": "பத்தினியே உன்போல்...!",
+    "titleEn": "O Chaste Woman, Like You...!",
+    "scanPages": "42–44",
+    "printedPages": "42–43; scan 42 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 9,
+    "titleTa": "அன்னை நாகம்மையார்!",
+    "titleEn": "Mother Nagammaiyar!",
+    "scanPages": "45–47",
+    "printedPages": "45–46; scan 45 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 10,
+    "titleTa": "கவிதையல்ல - கண்ணீர்க்கடல் !",
+    "titleEn": "Not a Poem — an Ocean of Tears!",
+    "scanPages": "48–49",
+    "printedPages": "48–48; scan 48 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The publication prints NO contents page. `indexes/contents.md` is an editorial, scan-derived map and is not a printed source witness, so the article ordinals here are archive reading ordinals.",
+   "The archive's user-governed lexical baseline is controlling for wording; 18 source/baseline conflicts are documented upstream and retained, not silently resolved here."
+  ],
+  "lockedExclusions": [
+   "scans 1–5 — front matter",
+   "scan 50 — independent மணமகள் back-cover advertisement",
+   "the printed publication-source note and printer imprint below the end of Article 10 on scan 49"
+  ]
+ },
+ "english": {
+  "releaseTitle": "Garland of Emotion",
+  "kind": "project-created",
+  "articlesVerified": "10 / 10 verified",
+  "consistencyReview": "E6 publication-wide English consistency review — PASS",
+  "releaseCloseout": "E7 English release closeout — PASS",
+  "releaseGate": "PUBLICATION_COMPLETION_REVIEW.md — E6 PASS, E7 PASS, English COMPLETE / RELEASED / FROZEN",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 10,
+  "tamilBlocks": 190,
+  "englishBlocks": 192,
+  "tamilSubheadings": 0,
+  "englishSubheadings": 0,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 42,
+  "englishMixedVoiceParagraphs": 47,
+  "tamilQuotedSegments": 77,
+  "englishQuotedSegments": 87,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 34,
+  "relationUnknown": 34,
+  "printedPageWitnessNotes": [
+   "scan 19: source-recovered Gemini omission",
+   "scan 20: page-position witness visible `1` only; no printed page number inferred"
+  ],
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source."
+ },
+ "notes": [
+  "Bulk Onboarding Wave 3. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "This publication prints no contents page; article ordinals are archive reading ordinals."
+ ]
+}
