@@ -142,6 +142,19 @@ body {
   /* images shouldn't overflow the page */
   img, svg { max-width: 100% !important; height: auto !important; }
 
+  /* THE WHOLE CATALOGUE MUST STILL PRINT.
+     /read defers each shelf's works past the sixth into a native <details>. On screen that is the
+     point; on paper a closed <details> would silently drop most of the library — printing the
+     Reading Room would produce a catalogue missing 41 of its 71 works, which reads as a shorter
+     archive rather than a collapsed control. The summary is an interactive affordance and goes,
+     like the rest of the print chrome; its contents stay.
+     Two mechanisms, because engines hide that content differently: newer ones apply
+     `content-visibility` to the ::details-content pseudo-element, older ones hide the slotted
+     children outright. Both are overridden so the rule does not depend on which one is in use. */
+  details.library-shelf-overflow > summary { display: none !important; }
+  details.library-shelf-overflow::details-content { content-visibility: visible !important; }
+  details.library-shelf-overflow:not([open]) > *:not(summary) { display: block !important; }
+
   /* POETRY PROVENANCE ON PAPER.
      An unresolved cross-page stanza relationship must survive Print → Save as PDF: if the marker
      vanished, the source lines on either side would read as silently continuous, asserting a
