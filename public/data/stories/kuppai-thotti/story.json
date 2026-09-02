@@ -1,0 +1,682 @@
+{
+ "workId": "kuppai-thotti",
+ "slug": "kuppai-thotti",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kuppai-thotti",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "குப்பைத்தொட்டி",
+  "en": "Kuppai Thotti"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 5,
+  "printedPages": {
+   "first": 30,
+   "last": 37
+  },
+  "sourceScans": {
+   "first": 39,
+   "last": 46
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "குப்பைத்தொட்டி",
+    "sourceScan": 39,
+    "printedPage": 30
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீதியோரத்தில் அந்த மாடி வீட்டுக்குக் கீழேதான் நான் நீண்ட நாட்களாகத் தவம் செய்து கொண்டிருக்கிறேன். என்னுடைய தவம் எந்தக் கடவுளையும் வரவழைத்து அவர்களிடம் ஏதாவது அபூர்வமான வரங்கள் வாங்கவேண்டும் என்பதற்காக அல்ல! அகிலத்தைக் கட்டியாள வேண்டுமென்று அரசர்கள் பலர் தவமிருந்தும் தன்னை அழிப்பார் யாருமிலர் என்ற நிலை ஏற்பட வேண்டுமென்று அசுரர்கள் கொடிய தவங்களை மேற்கொண்டதும்; சாபங்களின் மூலம் பகைவர்களைப் பழிவாங்குகிற வரங்களைப் பெறுவதற்கு முனிவர்கள் தவத்தில் மூழ்ந்ததும் எனக்கு நேற்றுத்தான் விவரமாகத் தெரிந்தது. தவம் என்றால் ஒரே நினைவுடன் வேறு எதையும் பற்றிய சிந்தனையும் இல்லாமல் ஒரே இடத்தில் அமர்ந்து அன்ன ஆகாரமின்றி ஆண்டவனைக் காணத் துடிப்பது; அவன் வந்தபிறகு தேவையைக் கேட்பது! என்னைப் பொருத்த வரையில் ஒரே இடத்தில் அசையாமல் அமர்ந்து இருப்பது ஒன்றைத் தவிர; தவத்துக்குரிய வேறு அடையாளங்கள் எதுவுமே இல்லை.",
+      "sourceScan": 39,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படித் தவத்தில் ஈடுபட்டவர்களே கூட ஒரே நிலையில் நினைவைச் செலுத்த முடியாமல் கஷ்டப்பட்டிருக்கிறார்கள். யார்; எங்கே; எப்பொழுது தவம் செய்கிறார்கள் என்று அலந்து திரிந்து கண்டுபிடித்து அவர்களது தவத்தைக் கெடுப்பதற்காகவே தேவலோகத்தில் ஒரு பெண்கள் படை தயாராக இருக்கிறது. அதில் குறிப்பிடத்தக்க நட்சத்திரங்கள் மேனகை,",
+      "sourceScan": 39,
+      "printedPage": 30,
+      "joinToNext": "space"
+     },
+     {
+      "text": "ரம்பை, ஊர்வசி, திலோத்தமை ஆகியோர். தவமிருப்பவர்களோ அவர்கள் தான் போய்க் கெடுப்பார்களோ அல்லது அவர்கள் தங்களைக் கெடுக்க வரட்டும் என்று எதிர்பார்த்து இவர்கள் தான் தவம் செய்வார்களோ—இரண்டும் ஆராய்வதற்குரிய விஷயங்கள் தாம்!",
+      "sourceScan": 40,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஏதேதோ வந்துவிழுந்து கொண்டிருந்த என் வயிற்றில் நேற்று ஒரு பழைய புராணம் வந்து விழுந்தது. புத்தக உருவில் அது இல்லை. அங்கொன்றும் இங்கொன்றுமாகச் சில ஏடுகள்! பாதிக்குமேல் செல்லரித்து விட்டிருந்தது! அதில்தான் தவத்தைப் பற்றிய விளக்கங்களையும் கதைகளையும் படித்துத் தெரிந்து கொண்டேன். விசுவாமித்திரர் தவத்தைக் கெடுக்க வந்த மேனகையின் சாகசங்களையும்; அவளது வலையில் முனிவர் விழுந்த பிறகு, அவள் புரிந்த சரசங்களையும்; கானகத்து அருவியோரங்களில் அவர்கள் நடத்திய காதல் கேளிக்கைகளையும்; கடவுளை நினைக்கும் தவக்கூடம் காமவேள் நடனசாலையாகக் காட்சியளித்ததையும்; மகேஸ்வரன் வருவதற்கு முன்பு மலர் மாரன் வருகை தந்து மாமுனிவரை மங்கையின் மடியிலும் காலடியிலும் உருட்டி உருட்டி மகிழ்ந்ததையும்; ஜெபமாலை இருந்த கையில் மேனகையின் துடையிடை சிக்கித் தவித்ததையும்; மறைந்துள்ள முனிவரின் துடித்த உதடுகள் மேனகையின் மெல்லிதழ்த்தேன் பருகிடத் துடித்த விந்தையையும் வெகு சுவையுடன் நான் படித்துக்கொண்டிருக்கும் போதுதானு அந்தக் குப்பை வண்டிக்காரன் வந்து தொலைய வேண்டும்.",
+      "sourceScan": 40,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வந்தவன் மனமனவென்று என் வயிற்றைக் காலிசெய்து அந்தக் கிழிந்த புராணத்தையும் தூக்கி வண்டியிலே போட்டுக் கொண்டு போய்விட்டான். சிலநாட்கள் என் வயிறு உப்பி நான் திக்குமுக்காடிக் கொண்டிருப்பேன்; அப்போதெல்லாம் நாலு நாள் ஐந்துநாள் என்று இந்தப் பக்கம் தலைகாட்டாத நகரசபைக் குப்பை வண்டி என் புராணப் படிப்பில் இப்படி மண்ணைப் போடுமென்று நான் எதிர்பார்க்கவே இல்லை. யாரோ புது ஆபீசர் இந்தப் பக்கம் வந்திருக்கிறாரோ என்னவோ தெரியவில்லை. இரண்டு மூன்று நாட்களாகத் தெருவைச் சுத்தம் செய்வதில் தீவிரம் காணப்படுகிறது. இதுவும் எத்தனை நாளைக்கு? “வந்தாற் போல் மாமியார் பந்தடித்தாள்; வரவர மாமியார் கழுதைபோல் ஆனாள்” என்று பழமொழி சொல்வார்களே; அதுபோலத்தான் ஆகிவிடும்.",
+      "sourceScan": 40,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நானிருக்குமிடத்திற்கு நாலைந்து வீடு தள்ளி ஒரு பஜனை மடம். அந்த மடத்தில் அடிக்கடி புராணப் பிரசங்கங்கள் நடைபெறும். ஒலிபெருக்கியின் மூலமாகக் கேட்டுக்கொண்டிருப்பேன். பாகவதர்கள் பல விஷயங்களைப் பூசிமெழுகிப் பேசியிருக்கிறார்கள் என்பது அந்தப் பழைய புராணத்தைப் பார்த்தபிறகுதான் தெரிந்தது. கணவனில்லாத சமயம் வீடுபுகுந்து தன்னைக் கற்பழித்தவன் இந்திரன் என்று தெரிந்த பிறகும் “ஆகா! இது வல்லவா இன்பம்! இதுநாள் வரையில் எங்கிக் கிடந்த சுவைமிகு விருந்தை இன்றல்லவா கண்டேன்” என்று மனநிறைவுடன் அவனைத் தழுவிக்கிடந்தாள் அகலிகை என்பதை நான் படித்தல்லவா தெரிந்துகொண்டேன்.",
+      "sourceScan": 41,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாருகாவனத்துத் தபோதனர்கள் ஆயிரத்துக்கு மேற்பட்டோர்! அவர்தம் பத்தினிகளோ பத்தரை மாற்றுத் தங்கங்கள் மேனியின் பளபளப்பில்! பறிக்கப்படாத பாரிஜாத மலர்கள்! தழுவத்துடிக்கும் பருவக்கொடிகள்! அவர்தம் இளமையின் பூரிப்பு இறைவனையே தூண்டில் போட்டு இழுத்தது. ஒன்று இரண்டு? ஓராயிரம் பூஜை மலர்களைக் கசக்கி எறிந்தார்! வரம் கோரும் முனிவர்களின் பத்தினிகள்! வரம் தரவேண்டிய பரமன்! கரம் சிவக்குமட்டும் கட்டித் தழுவினர்! கண் சிவக்குமட்டும் காமச்சேட்டை புரிந்தார்! இந்தக் காரணகரமான கதையைப் பஜனை மடத்துப் பாகவதர் எவ்வளவு நாசுக்காகச் சொன்னார் தெரியுமா?",
+      "sourceScan": 41,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாருகாவனத்து ரிஷிபத்தினிகளுக்குப் பரமசிவன் அருள் பாலித்து ஆட்கொண்டார் என்று அவர் கூறியதைக் கேட்டு, ஆகா! ஆகா!! என ரசனையை வெளிப்படுத்திவிட்டுப் பிரசாதங்கள் அருந்தி, இலைகள் என் வயிற்றுக்குள்ளே வீசி எறிந்துவிட்டுப் போயினர் பஜனை கோஷ்டியினர். அப்படி வீசி எறிந்த பக்தர்களில் ஒருவர், பிரசாதம் சாப்பிட இலை கிடைக்காத காரணத்தால் ஒரு புத்தகத்தின் தாள் ஒன்றை உபயோகித்தார் போலும். கசங்கிப்போய்ச் சோற்றுக்கறை படிந்த அந்தத்தாளை உற்றுப் பார்த்தேன். எனக்கே வெட்கமாக இருந்தது. ஏதோ ஒரு உணர்ச்சி என்னை வளர்த்துக்கொண்டது. குப்பைத்தொட்டி என்றால் உணர்ச்சிகள் இருக்காதா; என்ன? அப்படியென்ன அந்தத்தாளில் இருந்தது என்று அறிய உங்களுக்கும் ஆவல் இருக்கத்தான் செய்யும். அதையும் சொல்லி விடுகிறேனே! குத்து விளக்குச் சுடர் எரிந்து கொண்டிருக்கிறது. அதிலிருந்து நேரம்",
+      "sourceScan": 41,
+      "printedPage": 32,
+      "joinToNext": "space"
+     },
+     {
+      "text": "இரவாகத்தானிருக்குமென முடிவுகட்டி விடலாம். இரவு நேரத்தில் நிகழ்ந்த ஒரு நிகழ்ச்சியை வர்ணித்து அந்த நிகழ்ச்சித் தலைவனைப் பிரார்த்தனை செய்கிறாள் ஒரு அம்மை! பெண்ணின் பிரார்த்தனையில் இரவு நேரத்து விரசங்கள் எதுவும் இருக்காது என்றுதான் நினைப்போம். ஆனால் நாம் ஏமாந்து விடுகிற அளவுக்கும் பிரார்த்தனையின் ரசம் மேலோங்கி நிற்கிறது. மறுபடியும் வர்ணனையைக் கவனிப்போம். குத்துவிளக்கின் ஒளியில் கட்டில் ஒன்று தெரிகிறது. கட்டில் என்றால் சும்மாவா? அதன்மீது மெத்தென்ற பஞ்சம்! மல்லிகை, முல்லை, ரோஜா மலர்கள் தூவப்பட்ட பஞ்சம்! விளக்கு—கட்டில்—மலர் பஞ்சம் மட்டும் இருந்தால் காட்சி ரசிக்குமா? பல்லாயிரம் நட்சத்திரங்கள் இருந்தாலும் பால் நிலவு இல்லையேல் வானத்திற்கு அழகேது? அந்தப் பால் நிலவாக ஒரு மங்கை; அந்தப் படுக்கையில் இருக்கிறாள். அவள் கொத்தலர் பூங்குழல் கொண்ட கோதை! பெயரோ நப்பின்னை!",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கட்டிலும் மெத்தையும் கவினுறு மங்கையும் இருந்து விட்டால் பூரணத்துவம் பெற்றதாக முடியாதே! அந்த மங்கையின் மாங்கனியன்ன மார்பகத்தின் மீது தனது மார்பகத்தை வைத்தவாறு பிரார்த்தனைக்குரிய ஆடவன் படுத்திருக்கிறான். யார் அந்த ஆடவன்? ஆடவனா? அல்ல; அல்ல—ஆண்டவன்! அந்த ஆண்டவனைப் பிரார்த்திப்பதோ ஆண்டாள் அம்மை! “மலர்மார்பா வாய்திறந்து எனக்கருள்வாய்”! என்று ஆண்டவனை அழைத்திட விரும்புகிற ஆண்டாள் அம்மையார்; அவனைத் தன் இருப்பிடத்திற்கு அழைக்காமல் அவனது பள்ளியறைக்குள்ளேயே போய் விடுகிறாள். போனதும் கண்ட காட்சி தான் குத்து விளக்கு எரிகின்ற அறையின் கோலாகலக் காட்சி!",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“குத்துவிளக்கெரியக் கோட்டுக்கால் கட்டிலின்மேல்\nமெத்தென்ற பஞ்ச சயனத்தின் மேலேறிக்\nகொத்தலர் பூங்குழல் நப்பின்னை கொங்கை மேல்\nவைத்துக்கிடந்த மலர்மார்பா வாய் திறவாய்”",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தப் பாடலைத்தான் அந்தக் கசங்கிய தாளில் நான் படித்துப் பார்த்தேன். அய்யோ நான் அமர்ந்திருக்கும் இந்தச் சாக்கடை யோரம் அப்படியே சபரகூட மஞ்சமாகி விடக்கூடாதா? எனக்குப் பக்கத்திலே ஒரு பெண் குப்பைத் தொட்டிவந்து சேரக்",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கூடாதா? அப்படி ஒரு அதிர்ஷ்டம் வந்தால் அவளோடு நான் எவ்வளவு இன்பமாக இருப்பேன்! புதிய புதிய காதல் மொழிகள் எல்லாம் பேசுவேன். “கண்மணி”! என்று அழைப்பதற்குப் பதில் அவளைக் “குப்பைமணி” என்று அழைத்து அணைத்துக் கொள்வேன். அவளோடு ஊர்க்கதையெல்லாம் பேசுவேன். பிறகு எங்களுக்குப் பொழுது போவதே தெரியாது. இப்படி யெல்லாம் காதல் நினைவுகளை ஆண்டாளின் கவிதை, என் நெஞ்சில் உருவாக்கியது. பாவம்; ஆண்டாள் யார்பெற்ற பெண்ணோ பெற்றவர்கள் தூக்கியெறிந்துவிட்டுப் போய் விட்டார்கள்; யாரோ ஒரு ஆழ்வார் எடுத்து வளர்த்தாராம்! அந்த அம்மையார்; கடவுளைக் தொழுவதில் இவ்வளவு காமரசத்தை ஏன் தான் கலந்தாரோ; தெரியவில்லை. ஒரு பாட்டுப் படித்து விட்டே இந்தப் பாடுபடுகிறேனே; எல்லாப் பாட்டும் கிடைத்தால் என்னைப் பைத்தியக்கார விடுதியின் ஓரத்தில் கொண்டுபோய் வைக்க வேண்டியதுதான்.",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்போதுமா இப்படிப்பட்ட தாள்கள், நூல்கள் கிடைக்கின்றன! பெரும்பாலும் எச்சில் இலை; வாழைப்பழத் தோல்; ஆரஞ்சு, கமலா தோல்; இப்படித்தான் ஏதாவது வந்து கொண்டிருக்கும். சில நேரங்களில் செத்துப்போன எலிகளே என் வயிற்றுக்குள் போடுவார்கள். முனிசிபாலிடி வண்டி எப்போது வரும் என்று மூக்கைப் பிடித்துக்கொண்டு உட்கார்ந்திருப்பேன். தெருக்கோடியில் ஒரு வீட்டிலிருந்து இரவு 12 மணிக்கு மேல் வேலைக்காரப் பையன் என்னருகே வருவான்.",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுற்றுமுற்றும் பார்த்துவிட்டு விஸ்கி, பிராந்தி முதலிய மதுப் புட்டிகளின் மூடிகளை என்னிடம் வீசிவிட்டு விருவிரு என்று போய்விடுவான். எனக்கு இரவெல்லாம் உடம்பு நடுங்கும்; எங்கே போலீசார் என்மீது சந்தேகப்பட்டு என்னைக் கொண்டு போய் மதுவிலக்குச் சட்டப்படி உள்ளே போட்டு விடுவார்களோ என்று! பிறகு எனக்கு நானே ஆறுதல் கூறிக்கொள்வேன்; குப்பைத்தொட்டி எங்கேயிருந்தால் என்ன வென்று!",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருநாள் மூன்றாவது வீட்டிலிருந்து என் பக்கமாகக் காரில் போன ஒருவர் சட்டைப் பையிலிருந்த ஒரு கடிதத்தைக் கிழித்து என்னிடம் போட்டு விட்டுப் போய்விட்டார். பரபரப்புடன் அதைப் படித்தேன். ஒழுங்கற்ற முறையில் அது கிழிந்து போயிருந்ததால் தொடர்ச்சியாகப் படிக்கமுடியவில்லை. யாருக்கோ வாத்தியாரம்மா வேலை வாங்கித்தருவதாக வாக்களித்து இதற்குக் கைமாறாக முன்",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கூட்டியே மூன்றூறு ரூபாய் வாங்கிக் கொண்டு ஏமாற்றி விட்டானும்; எவனோ ஒரு எத்தன். அவன் பெயரும் தெரியவில்லை. அந்தப் பெண்ணின் பெயரும் தெரியவில்லை. இருவரின் பெயரும் அதில் இல்லை. அவை கிழிந்து போய்விட்டன. யாராயிருந்தால் என்ன; எங்கள் “டிபார்ட்மெண்ட்” விஷயம் என்பதை மட்டும் புரிந்துகொண்டேன். யாரிடம் முறையிட்டுப் பட்டதோ அவரும் அதனைப் பொருட்படுத்தவில்லை என்பதற்கு அடையாளமாக அந்த மடல் என்னிடம் தூக்கி எறிந்து விட்டுப் போய்விட்டார். அந்தோ! பரிதாபம்! அந்தப் பெண் என்ன ஆனாளோ! அவளை நான் பார்க்காமலே இருக்க விரும்புகிறேன். அவளைப் போன்ற அபலைகள் மட்டுமல்ல; பொதுவாக மனிதர்களைப் பார்ப்பது என்றாலே எனக்கு வரவர வெறுப்பாகி விட்டது. அவர்கள் பொறுமையற்றவர்கள்—அவசரியப் புத்தி படைத்தவர்கள்—வெறிகொண்டவர்கள்—விவேகத்தின் விரோதிகள் என்றெல்லாம் சொல்லத் தோன்றுகிறது. என்னுடைய நிழலிலேயே வாழ்ந்து கொண்டிருந்த நன்றிமறந்த ஒரு மனிதனைப்பற்றி நினைத்தாலே எனக்குக் கோபம் பொங்குகிறது. எங்கிருந்தோ ஒரு நாள் வந்தான்; சரியாக நடக்கமுடியவில்லை. உடம்பெல்லாம் நடுங்கிக்கொண்டிருந்தது. என்னையும் மீறி அவன் மீது ஒரே தூராற்றம்! போனால் போகிறது என்று சகித்துக் கொண்டு “யாரப்பா?” என்று கேட்டேன் “பார்த்தாலே தெரியவில்லை... இந்த நாட்டு மன்னர்களிலே ஒருவன்; உன் பக்கமிருந்து ராஜ்ய பரிபாலனம் செய்ய வந்திருக்கிறேன். கொஞ்சம் நிழல் கொடுப்பாயா?” என்று அவன் என்னைப் பார்த்தான். “நிழல் தருகிற அளவுக்கு நான் என்ன அவ்வளவு வளர்ந்து வளமாகவா இருக்கிறேன். வேண்டுமானால் என் மறைவில் ஒதுங்கியிருந்து ராஜ்ஜியம் செய்வாயாக!” என்றேன். அவனும் பத்து நாட்கள் என் மறைவிலேயே உட்கார்ந்தான்—படுத்தான்—தூங்கினான்—சாப்பிட்டான்! அங்கிருந்தவாறே அவன் சர்க்கார் நடந்தது. போகிறவர்களிடம் பல்லைக்காட்டி அவனது அரசாங்கத்திற்குத் தேவையான வரிகளைக் காசாகவோ பணமாகவோ வாங்கிக் கொண்டிருந்தான்.",
+      "sourceScan": 44,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்துநாள் எனக்கும் அவனோடு நல்ல பொழுது போயிற்று. அவன் பாடுகிற சினிமாப் பாட்டுகள் நாடோடிப்பாட்டுகள்—இவைகளில் நான் என்னை மறந்து ரசித்துக் கொண்டிருந்தேன். ஒருநாள் இரவு இந்தப் பரதேசி மகாராஜா ஒரு பெண்ணைத் தன்னுடன் அழைத்துக்கொண்டுவந்தார். நான் தூங்குவதுபோல்",
+      "sourceScan": 44,
+      "printedPage": 35,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நடித்து நடப்பவைகளைக் கவனித்துக்கொண்டிருந்தேன். அவள் வரும்போதே சிக்கிரம் போகணும் என்று முனகிக்கொண்டு வந்தாள், “அட; பறக்காதே; இந்தா பணம்!” என்று ஒரு எட்டணாவை அவளிடம் கொடுத்தார் மகாராஜா! நான் கண்களை இறுக மூடிக்கொண்டு காதை மட்டும் நீட்டிவைத்துக் கொண்டிருந்தேன்.",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘கண்ணு!’",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘என் மூக்கு!’",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘அய்யோ என் மன்மதராஜா!’",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிச் சில கொஞ்சுதல் வார்த்தைகள் கரகரத்த தொண்டையிலிருந்து வெளிப்பட்டன. அந்தப் பாவி மகாராஜனுக்கு நான் ஒருவன் அவனுடைய நண்பன் அருகே இருக்கிறேனே என்று நாணம் கூடக்கிடையாது! சிறிதுநேரம் கழித்துக் கண்ணை விழித்துப் பார்த்தேன். என் நண்பன் சுருண்டு படுத்துக் கொண்டிருந்தான். மன்னிக்கவும்; இந்நாட்டு மன்னர் துயில் கொண்டிருந்தார். மகாராணியைக் காணவில்லை. அவள் அடுத்த ராஜ்யத்துக்குப் போயிருக்கக்கூடும். மறுநாள் காலையில் இரண்டு மூன்று போலீஸ்காரர்கள் என் நண்பனிடம் பேசிக் கொண்டிருந்தார்கள். தொலைவில் பேசிக்கொண்டிருந்ததால் எதுவும் புரிகிற அளவுக்குக் காதில் விழவில்லை. பிறகு, என் நண்பன் என்னருகேவந்து; ‘போலீசாரைக் கண்டு பயப்படாதே! அவர்கள் என்னைக் கைது செய்ய வந்ததாக நினைக்காதே! வெளிநாட்டிலேயிருந்து யாரோ பெரிய மந்திரி வருகிறாராம்; அவரைப் பார்க்க இந்த ராஜாவை அழைக்கிறார்கள்’ என்றான்.",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் வியப்புடன்; ‘அப்படியா? அந்த மந்திரியை எங்கே போய்ச் சந்திப்பாய்?’ என்று கேட்டேன்.",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘நான் போய் எனது வழக்கமான ஜெயில் மாளிகையில் இருப்பேன். அவர் வந்து என்னைச் சந்திப்பார். நீ கூட அவரைப் பார்க்கக்கூடும். ஏனென்றால் இந்தப்பக்கம்தான் அவர் ஊர்வலம் வருகிறார்’.",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று கூறிக்கொண்டே அவன் போலீசார் கொண்டு வந்த பெரிய காரில் ஏறிப்போய்விட்டான். அவன் சொன்னபடி மறுநாள் வெளிநாட்டு மந்திரி நான் இருக்கும் வீதிப்பக்கம் வந்து உண்மைதான். ஆனால் அந்த நண்பன் மட்டும் என்னைத் திரும்ப வந்து பார்க்கவேயில்லை. இந்நாட்டு மன்னர்களிலே ஒருவனல்லவா,",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "space"
+     },
+     {
+      "text": "எந்தக் குப்பைத்தொட்டி மறைவுக்குப் போனேனோ; தெரிய வில்லை! நன்றி கெட்டவன்.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்னமோ போங்கள்......சத்தற்ற என் வாழ்க்கையில் எல்லாவற்றையும் சந்தித்தாகிவிட்டது. நான் படித்த கல்யாணப் பத்திரிகைகள் எத்தனை—நான் அருந்திய விருந்துகள் எத்தனை—மங்கல காரிய அழைப்புக்களும்; அமங்கல காரிய அழைப்புக்களும்—எவ்வளவு, எவ்வளவு! காதலன்-காதலிகள் கிழித்துப் போட்ட திருட்டுத்தனமான கடிதங்கள் எத்தனை—நான் படித்துப் பார்த்து அவர்களை நினைத்துச் சிரித்திருக்கிறேன். ஒதுக்கப்பட்டவைகள், ஒளிக்கப்பட்டவைகள் எல்லாமே என்னுடைய இருகரங்களால் அன்போடு வரவேற்கப்பட்டிருக்கின்றன.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எதையும் பொறுத்துக்கொண்டு புன்னகை காட்டுகிற தூய்மையான துறவிகளைவிட நான் ஒரு படி மேலான பொறுமைசாலி.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நாட்டில் எத்தனையோ மக்கள் வயிறாச் சோறின்றி வாடுகிறார்கள். என் வயிறே; காலியாகக் காலியாக நிரம்பிக் கொண்டே யிருக்கிறது. அய்யோ; உங்களோடு பேசிக்கொண்டிருக்கும்போது யாரோ ஒரு பெண் பதுங்கிப் பதுங்கி வருகிறாளே; சற்று மறைந்து கொள்கிறாள்; ஆம்; அவளுடைய கையில் ஒரு குழந்தை யிருக்கிறது. பச்சைக் குழந்தை! இப்போது தான் பிறந்திருக்கிறது. அடடா; அதன் கழுத்தெல்லாம் ரத்தம்! குழந்தை தூங்குகிறதா? இல்லை; செத்துவிட்டது.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கழுத்து முறிக்கப்பட்டிருக்கிறது—சரிதான் அவள்தான் குழந்தையின் தாய்! குழந்தையை என் வயிற்றுக்குள் போட்டுப் போகிறாள்—போட்டேவிட்டாள்; அவள் ஓடுகிறாள்; என்னைப் போலீஸ் வரையிலே மாட்டி விட்டு அவள் ஓடுகிறாள்—ஏன் ஓடுகிறாள்? புரிகிறது! புரிகிறது! அவள் கழுத்தில் தாலியைக் காணோம்.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kuppai Thotti",
+    "sourceScan": 39,
+    "printedPage": 30
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I have been doing penance for a long time by the roadside, right beneath that upstairs house. My penance is not meant to summon any god and obtain some extraordinary boon! Only yesterday did I learn in detail how many kings performed penance so they could rule the whole world; how demons undertook terrible austerities so that no one would be able to destroy them; and how sages plunged into penance to win boons with which they could avenge themselves on enemies through curses. Penance means sitting in one place with a single thought, thinking of nothing else, longing to see God without food or sustenance, and then, when he appears, asking for what one needs! As far as I am concerned, other than sitting unmoving in one place, I possess none of the other marks of penance.",
+      "sourceScan": 39,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even those who truly undertook penance found it difficult to keep their minds fixed in one state. In the celestial world there is an entire women's battalion ready for the sole purpose of wandering about, finding out who is doing penance, where and when, and ruining that penance. Its notable stars are Menaka,",
+      "sourceScan": 39,
+      "printedPage": 30,
+      "joinToNext": "space"
+     },
+     {
+      "text": "Rambha, Urvashi and Tilottama. Whether those women go and spoil the ascetics, or whether the ascetics themselves perform penance expecting those women to come and spoil them—both are matters worthy of investigation!",
+      "sourceScan": 40,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yesterday, into my belly, where all sorts of things keep falling, there fell an old purana. It was not in book form. A few leaves here and there! More than half had been eaten away by insects! It was from those pages that I read and learned the explanations and stories about penance: Menaka's exploits when she came to ruin Viswamitra's austerities; the amorous play she performed after the sage fell into her net; the games of love they carried on by forest waterfalls; how the hermitage meant for thinking of God came to look like the dancing hall of Kama; how, before Maheswara arrived, the flower-arrowed god came and delighted in rolling the great sage about in the woman's lap and at her feet; how the hand that had held a rosary became trapped between Menaka's thighs; and how the sage's trembling lips yearned to drink the honey of Menaka's soft lips. I was reading all this with great relish when, just then, that garbage-cart man had to come and spoil everything.",
+      "sourceScan": 40,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The fellow came, went *mana-mana*, emptied my belly, picked up that torn purana too, threw it into his cart and carried it away. For days at a time my belly will be swollen and I will sit there struggling; at such times the municipal garbage cart will not show its face on this side for four or five days. I never expected it to throw dirt on my purana-reading like this. Perhaps some new officer has come this way; I do not know. For the past two or three days there has been unusual zeal about cleaning the street. How long will that last? There is a proverb: “When the mother-in-law first arrived she played ball; as time went on the mother-in-law became like a donkey.” It will end up just like that.",
+      "sourceScan": 40,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Four or five houses away from where I stand is a bhajan hall. Purana discourses are often held there. I listen through the loudspeaker. Only after seeing that old purana did I realize that the Bhagavatars had been coating over and smoothing out many things in their telling. I learned by reading it that Ahalya, even after discovering that the man who entered her house in her husband's absence and violated her was Indra, embraced him in contentment, saying, “Ah! So this is pleasure! Only today have I found the delicious feast of delight for which I have longed all this time.”",
+      "sourceScan": 41,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There were more than a thousand ascetics in the Daruka forest! Their wives were ten-and-a-half-touch gold in the gleam of their bodies! Unplucked parijata blossoms! Young vines longing to be embraced! The fullness of their youth hooked even God and drew him in. One or two? He crushed and cast away a thousand flowers of worship! The wives of sages asking for boons! The Supreme One who had to grant them! They embraced until their arms reddened! He played at desire until his eyes reddened! Do you know how delicately the Bhagavatar at the bhajan hall narrated this remarkable source tale?",
+      "sourceScan": 41,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He said that Paramasivan had bestowed grace upon the wives of the Daruka-forest sages and taken possession of them. The bhajan group listened, expressed their appreciation with “Ah! Ah!!”, ate the prasadam, and then threw their used leaves into my belly. One of those devotees, perhaps unable to find a leaf on which to eat his prasadam, seems to have used a page from a book. I looked closely at that crumpled page, stained with rice and curry. Even I felt ashamed. Some emotion began to grow within me. Does being a garbage bin mean I have no feelings? You too must be curious to know what was on that page. I shall tell you! A brass lamp is burning. From that, the time",
+      "sourceScan": 41,
+      "printedPage": 32,
+      "joinToNext": "space"
+     },
+     {
+      "text": "may be concluded to be night. A woman is praying to the central man in an event that happened at night! We normally imagine that a woman's prayer would contain none of the indecencies of the night. But the flavour of this prayer rises high enough to deceive us. Let us look again at the description. In the light of the brass lamp, a bed appears. And what a bed! Upon it, a soft mattress! A mattress strewn with jasmine, mullai and rose blossoms! Would the scene be enjoyable if there were only lamp, bed and flower-strewn mattress? Even if there are thousands of stars, what beauty has the sky without the milk-white moon? As that milk-white moon, there lies a woman upon the bed. She is a maiden with flower-laden tresses! Her name is Nappinnai!",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even bed, mattress and lovely maiden are not enough to make the picture complete! With his chest resting upon that maiden's mango-like breasts lies the man to whom the prayer is addressed. Who is that man? A mere man? No, no—the Lord! And the woman praying to that Lord is Andal! Andal, wishing to call to him, “O flower-chested one, open your mouth and grant me grace!”, does not call him to where she is; she goes straight into his bedchamber. And what she sees there is the festive scene in the room lit by the brass lamp!",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“While the brass lamp burns, upon the cot with carved legs,  \non the soft, fivefold bed,  \nwith flower-tressed Nappinnai's breasts beneath you,  \nO flower-chested one lying there, open your mouth!”",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That is the verse I read on the crumpled page. Alas, could not this drain-side where I sit suddenly become a *sabarakooda* couch? Could not a female garbage bin come and join me here? If such luck came, how happily I would live with her! I would speak all kinds of new words of love. Instead of calling her “darling,” I would embrace her and call her “garbage-darling.” I would gossip about the whole town with her. Then we would never know how time passed. Andal's poem created all these romantic thoughts in my heart. Poor Andal—whose daughter was she? They say the parents who bore her threw her away, and some Alvar picked her up and raised her! Why that lady mixed so much erotic flavour into worship of God, I do not know. One song alone has put me through all this; if I got all her songs, they would have to take me and leave me beside an asylum.",
+      "sourceScan": 42,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Do I always get such pages and books? Most of the time it is a used food-leaf, a banana peel, orange peel, kamala-orange peel—something of that sort keeps coming. Sometimes they even throw dead rats into my belly. I sit holding my nose and waiting for the municipality cart to come. After midnight, a servant boy from a house at the end of the street comes near me.",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He looks all around, throws into me the caps from whisky, brandy and other liquor bottles, and hurries away. All night my body trembles: what if the police suspect me, carry me off and put me inside under the Prohibition Act? Then I console myself: after all, what does it matter where a garbage bin is!",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day a man who drove past me in a car from the third house tore up a letter from his shirt pocket, threw it into me and went away. I read it eagerly. It had been torn irregularly, so I could not read it continuously. Some cheat had promised to get a woman a schoolteacher's job, taken in advance as payment for it",
+      "sourceScan": 43,
+      "printedPage": 34,
+      "joinToNext": "space"
+     },
+     {
+      "text": "three hundred rupees, and cheated her. I did not know his name. I did not know the woman's name either. Neither name remained in the letter; those parts had been torn away. Whoever they were, I understood one thing: it was business belonging to our “department.” The person to whom she had appealed also seems not to have cared; as proof, he had thrown the letter away to me. Alas! What misery! What became of that woman? I would rather never see her. Not only helpless women like her; more and more, I have begun to hate the very sight of human beings. They are impatient—possessed of hasty minds—frenzied—enemies of reason: I feel like saying all this. Merely thinking of one ungrateful man who lived in my own shelter makes anger boil in me. One day he came from somewhere; he could barely walk. His whole body trembled. In spite of myself I felt an overpowering *thoorattram* toward him! Thinking, let it go, I tolerated it and asked, “Who are you, man?” He looked at me and said, “Can't you tell by looking? I am one of the kings of this country. I have come to administer my kingdom from beside you. Will you give me a little shade?” I said, “Am I so grown and prosperous that I can give shade? If you like, take shelter behind me and rule your kingdom!” And so for ten days he sat—lay down—slept—ate behind me! From there his government ran. Showing his teeth to passers-by, he collected the taxes his government required, in coins or cash.",
+      "sourceScan": 44,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For ten days I too passed the time well with him. I forgot myself enjoying the cinema songs and folk songs he sang. One night this wandering Maharaja brought a woman with him. I pretended to sleep",
+      "sourceScan": 44,
+      "printedPage": 35,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and watched what happened. As she came, she kept muttering that she had to leave quickly. “Hey, don't fly away; here, take the money!” said the Maharaja, giving her an eight-anna coin. I shut my eyes tight and kept only my ears stretched open.",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Darling!’",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘My nose!’",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Oh, my king of love!’",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A few such words of endearment came out of that hoarse throat. That wretched Maharaja had not even the shame to remember that I, his friend, was right beside him! A little later I opened my eyes. My friend lay curled up asleep. Forgive me—the king of this country was in royal slumber. The Maharani was nowhere to be seen. Perhaps she had gone to the next kingdom. The next morning two or three policemen were talking with my friend. They were speaking at a distance, so nothing reached my ears clearly enough to understand. Afterwards my friend came near me and said, “Don't be afraid on seeing the police! Don't think they have come to arrest me! Some great minister from abroad is coming, it seems; they are calling this king to meet him.”",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In astonishment I asked, “Is that so? Where will you go to meet that minister?”",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I will go and stay in my usual jail-palace. He will come and meet me there. You too may even see him, because his procession is coming along this very side.”",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Saying this, he climbed into the big car the police had brought and went away. As he had said, the next day the foreign minister did indeed come along the street where I stand. But that friend never came back to see me. One of the kings of this country, after all—",
+      "sourceScan": 45,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I do not know behind which garbage bin he went to take shelter! Ungrateful fellow.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What can I say... In my lifeless life I have encountered everything. How many wedding invitations have I read—how many feasts have I consumed—how many invitations to auspicious events and inauspicious events! How many secret letters torn up and thrown away by lovers—I have read them and laughed thinking of them. Everything rejected, everything hidden, has been lovingly welcomed by my two arms.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I am one step more patient than the pure ascetics who endure everything with a smile.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So many people in this country suffer without even a bellyful of rice. My belly, the more it is emptied, keeps filling again. Oh! While I am talking to you, some woman is coming furtively; she hides herself for a moment; yes, there is a child in her hand. A newborn baby! It has only just been born. Alas, its neck is all blood! Is the child sleeping? No—it is dead.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Its neck has been broken—yes, she is the child's mother! She is putting the child into my belly and leaving—she has thrown it in; she is running away; she has left me to get caught by the police and is running—why is she running? I understand! I understand! There is no *thali* around her neck.",
+      "sourceScan": 46,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46
+ ]
+}

@@ -58,9 +58,13 @@ export default function StoryReader({ story }: { story: Story }) {
         {/* The form label the BOOKLET prints under its own title — the source's own word for what this
             is. It stays in Tamil in both views: the booklet prints no English form label, and one is
             not invented. */}
-        <p className="font-tamil text-xs uppercase tracking-[0.18em] text-marina dark:text-marina-light" lang="ta">
-          {story.formLabel.ta}
-        </p>
+        {/* An ANTHOLOGY story prints no form label, so nothing is rendered rather than a fabricated
+            one; its collection placement is stated below the title instead. */}
+        {story.formLabel ? (
+          <p className="font-tamil text-xs uppercase tracking-[0.18em] text-marina dark:text-marina-light" lang="ta">
+            {story.formLabel.ta}
+          </p>
+        ) : null}
 
         <h1 className="mt-3 font-tamil text-3xl font-semibold leading-snug text-ink dark:text-night-text" lang="ta">
           {story.title.ta}
@@ -68,9 +72,24 @@ export default function StoryReader({ story }: { story: Story }) {
         <p className="mt-1.5 font-display text-lg text-ink/60 dark:text-night-text/60">{story.title.en}</p>
 
         {/* The authorship line VERBATIM as the booklet prints it, not a reconstructed byline. */}
-        <p className="mt-4 font-tamil text-sm text-ink/65 dark:text-night-text/65" lang="ta">
-          {story.author.printedAuthorshipLineTa}
-        </p>
+        {/* The anthology credits its author once, on the book's own title page, and prints no
+            per-story byline — so an anthology story shows the author's name and the collection it was
+            printed in, neither of which pretends to be a line set in type above this story. */}
+        {story.author.printedAuthorshipLineTa ? (
+          <p className="mt-4 font-tamil text-sm text-ink/65 dark:text-night-text/65" lang="ta">
+            {story.author.printedAuthorshipLineTa}
+          </p>
+        ) : (
+          <p className="mt-4 font-tamil text-sm text-ink/65 dark:text-night-text/65" lang="ta">
+            {story.author.nameTa}
+            {story.anthology ? (
+              <span className="text-ink/50 dark:text-night-text/50">
+                {" · "}
+                {story.anthology.collectionTitleTa}
+              </span>
+            ) : null}
+          </p>
+        )}
 
         {/* The same pill toggle the other bilingual Reading Rooms use. Hidden from print: paper has
             no toggle, and what prints is the language on screen. */}

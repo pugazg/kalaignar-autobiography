@@ -1,0 +1,965 @@
+{
+ "workId": "abagya-chinthamani",
+ "slug": "abagya-chinthamani",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/abagya-chinthamani",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "அபாக்ய சிந்தாமணி",
+  "en": "Abagya Chinthamani"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 26,
+  "printedPages": {
+   "first": 172,
+   "last": 179
+  },
+  "sourceScans": {
+   "first": 181,
+   "last": 188
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "அபாக்ய சிந்தாமணி",
+    "sourceScan": 181,
+    "printedPage": 172
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதோ தெருவிலே பிச்சை எடுத்துக்கொண்டிருக்கிறாளே; அவள் யார் தெரியுமா? **“அவள் பரம்பரைப் பிச்சைக்காரியல்ல; பணக்காரியாகத்தான் வாழ்ந்தாள்; காலத்தின் சுழற்சியால் இந்தக் கதிக்கு ஆளாகிவிட்டாள்”** என்று அவளுடைய பழைய கதையைச் சொல்லி உங்கள் பொறுமையைச் சோதிக்கப் போகிறேன் என்று எண்ணாதீர்கள். அவள் பரம்பரைப் பிச்சைக்காரியேதான். அதாவது அவளது பாட்டிகூட ஒரு பிச்சைக்காரிதான்! நீங்கள் பார்க்கிற இந்தப் பிச்சைக்காரிக்கு வயது என்ன இருக்கும் என்று நினைக்கிறீர்கள்? சுமார் நாற்பது இருக்கும் என்று கூறுகிறீர்கள் அல்லவா? அல்ல அல்ல; சரியாகவே சொல்லுகிறேனே; அவள் வயது முப்பத்தைந்துதான்! ஆள் அப்படி மதிக்கத் தோன்றுது. நாற்பது ஐம்பதுதான் மதிக்கத்தோன்றும். இந்தக் காலத்தில் ஐம்பது அறுபது ஆனதுகள் பன்னிராட்டைப் பிராயத்துப் பருவச் சிட்டுகள் போலப் பற்களைப் பூட்டிக்கொண்டு, பவுடரால் முகப் பள்ளங்களை மூடிக்கொண்டு, சாயத்தால் கொவ்வை இதழும் மையால் பிறைப் புருவமும் அமைத்துக்கொண்டு, நாகரிகத்தின் எவரெஸ்டை எட்டிப்பிடித்து எக்களிக்கும் காட்சிகளை நாம் காண்கிறோம். இந்த ஏழைப் பிச்சைக்காரி அப்படி யெல்லாம் தன்னுடைய வயதை மாற்றிக்கொள்ள விரும்பவில்லை. விரும்பினாலும் பணமில்லை. ஆகையினால், பருவக் காற்றில் படிந்த முதுமைத் தூசுகளை மேனியிலே சுமந்தவளாய் அவள் திருவாரூர்த் தெருவிலே அலைந்துகொண்டிருக்கிறாள்.",
+      "sourceScan": 181,
+      "printedPage": 172,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீட்டுக்கு வீடு வாயிலிலே நின்று கரகரத்த குரலிலே பாடுகிறாளே; அந்தப் பாட்டு என்ன பாட்டு என்று புரிகிறதா? புரியாவிட்டால் என்னைக் கேளுங்கள் சொல்லுகிறேன்.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏற்பதிகழ்ச்சியென்ற\n**எங்கள் ஒளவைப் பாட்டிதான்**\nஐயமிட்டுண் என்றும் பாடியிருக்காளே!”",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிச்சைபுகினும் கற்கை நன்றே\nஎச்சில் இலையாவது போடுதல் நன்றே!”",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படி வசனத்தையே, அவள் கண்டுபிடித்த புதியதொரு ராகத்திலே தேவையப்பட்ட பிர்க்காக்களைப் போட்டுக்கொண்டு வீட்டுக்குத் தகுந்தாற்போலப் பாடுகிறாள்.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளைப்பற்றி உனக்கென்ன இவ்வளவு விவரம் புரிகிறது என்று என்னைக் கேட்கிறீர்களா? ஒரு நாள் எங்கள் வீட்டில் இவளது சங்கீதக் குரல் கேட்டது. அவள் யார் என்று தெரிந்து கொள்ள வேண்டுமென்ற ஆசையால் பலநாள் காத்திருந்த நான், அன்றைய தினம் அவளது வரலாற்றைக் கேட்க ஆரம்பித்தேன். அவளும் ஆரம்பித்து அரைமணி நேரத்திற்குப் பிறகுமுடித்தாள். அந்தக் கதையைக்கேட்ட பிறகும் அவளுக்குப் பிச்சை போடாமல் இருப்பது யாராலும் முடியாத காரியம்தான். எங்கள் வீட்டில் என் தங்கை நினைவு நாள் வேறு அன்று! அதனால் அவளுக்குப் பாயசம் வடையுடன் நல்ல சாப்பாடு கிடைத்தது. “மகராஜனிருக்கணும் சாமி” என்று வாழ்த்திவிட்டு அவள் விடைபெற்றுக் கொண்டாள்.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாதாரண மனுஷனாயிருக்கும் போதே சங்கடமும் சலசலப்பும் தாங்கவில்லை; இன்னும் மகராஜனாக வேறே போய் மாட்டிக்கொண்டு விழிக்க வேண்டுமா என்று மனத்திலே நினைத்துக்கொண்டு, அவளை வழியனுப்பினேன். அந்தப் பிச்சைக்காரியின் சொந்த ஊர்—இல்லை—மன்னிக்கவேண்டும்; அவள் பிறந்த ஊர் திருச்சிக்குப் பக்கத்திலேயுள்ள சிந்தாமணி என்ற பகுதி.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதனால் அவளுக்கும் அவள் தாயார் சிந்தாமணி என்றே பெயர் வைத்துவிட்டாள் போலும்! பிச்சைக்காரியின் வயிற்றிலே இந்த அபாக்கிய சிந்தாமணி அவதரித்து, நாளொரு வியாதியும், பொழுதொரு கண்டமுமாக வளர்ந்து, தாய்க்கு ஒத்தாசையாகப் பிச்சையெடுக்கிற வேலையிலும் ஈடுபட்டாள். சிந்தாமணிக்குப்",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பத்து வயது நிரம்பியபோது, அவளுடைய தாயார் நோய்வாய்ப்பட்டாள். சிந்தாமணிப் பகுதியில் உள்ள ரோடு ஓரத்து ஐந்தடியிலேதான் சிந்தாமணியின் தாயார் மரணத்தோடு போராடும் களம் அமைக்கப்பட்டிருந்தது. தாய்க்குக் கஞ்சி காய்ச்சி ஊற்றித் தானும் வயிற்றுப் புயலை அடக்கிக் கொள்ள வேண்டிய சமாளிக்க இயலாத பிரச்சினை, அந்தப் பத்து வயதுப் பசலையின் தலையிலே வந்து விழுந்தது. இரண்டொரு நாட்கள் எப்படியோ கஷ்டப்பட்டு வெளியேறத் துடிக்கும் தாயாரின் மூச்சை இழுத்து நிறுத்தி, அவள் ஆயுள் அணைந்து விடாமல் அருகிலிருந்து பாதுகாத்தாள் சிந்தாமணி.",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிச்சைக்காரப் பெண்ணுக்குத் தாய்ப் பாசம் இருக்காதா என்ன? பிச்சைக்காரத் தாயாருக்குத்தான் மகளின் எதிர்காலத்தைப் பற்றிய ஏக்கம் பிறக்காமல் இருக்க முடியுமா?",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மகளே, இனிமேல் என்னை நம்பாதே கண்ணே! என் காலம் ஒரு வழியாக முடிந்துவிட்டது! பல் காட்டியவனுக்கெல்லாம் சம்மதப்பட்டுப் பாழும் உடலே வளர்த்தேன். அதோ சாக்கடையிலே சொறிபிடித்த உடலில் எடுக்கும் எரிச்சலை அடக்க விழுந்து புரளுகிறதே நாய்; அதைப் போலவே வெறிபிடித்த நாய்கள், மனித உருவிலே என்னை நெருங்கி நாசப்படுத்தி விட்டார்கள். என் கண்ணே! நீயும் என்னைப்போல ஆகிவிடாதேயம்மா! நமது குடும்பம் பிச்சைக்காரக் குடும்பம்தான்; ஆனாலும் உனது பாட்டி, மிகக் கெளரவமாக வாழ்க்கை நடத்தினாள். என்னையும் பிச்சைக்காரியாக்காமல், வாழும் சமுதாயத்திலே ஒரு அங்கத்தினராக ஆக்கிவிடப் பெருமுயற்சி செய்தாள். என்னைப் படிக்க வைத்தாள். ஒரு பெரிய மனிதரின் தயவை நாடிப் படித்தேன்.",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் கண்ணே, என் தாய் கண்ணை மூடியதும், என் கண்களும் மூடப்பட்டு விட்டன. பிச்சைக்காரி மகள்தானே என்று பள்ளிக் கூடத்து மாணவர்கள் என்னை வட்டமிட்டார்கள். எவ்வளவு அழகாக நானிருந்தால் இவர்கள் என்னை வட்டமிட வேண்டும் என்று நான் கர்வமடைந்தேன். மாணவர்களிடம் பெரியதொரு யுத்தமே ஏற்படவேண்டும் என் பொருட்டு என்று எதிர்பார்த்தேன். தேன்கூட்டை நாடும் கரடிகள் போல அந்தக் காளைகள் கூடினார்கள். மெய்ம்மறந்தேன். உணர்விழந்தேன். பெண்களுக்குப் படிப்பு கூடாது என்று கூறும் பித்தர் மொழிக்கு இந்தப் பழிகாரியும் ஒரு எடுத்துக்காட்டாக ஆனேன். படித்துறையிலே ஒரு முறை வழுக்கினால், அடுத்த படியிலே காலே",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அழுத்தமாக ஊன்றி தப்பி விடலாமென்று நினைக்கக்கூட நேரமிருக்காதே! அதற்குள் குளத்தின் அடித் தளத்திற்கல்லவா போய்ச் சேரவேண்டும். அதுவும் என்னைப்போல நீந்தத் தெரியாதவர்கள் கதி? சமுதாயத்தின் பாசி படிந்த பாழுங்குளத்திலே சருக்கி விழுந்தேன். நாயைக் குளிப்பாட்டி நடுக்கூடத்தில் சேர்க்கலாமா என்று வசைமாரி பொழிந்தபடி, பெரிய மனிதர், என்னை வீட்டைவிட்டு துரத்தினர். தாயாரின் வேலையை மேற்கொண்டேன். பிச்சை எடுத்தேன் என் வயிற்றுக்கு! பிச்சையும் கொடுத்தேன் வாலிபர்களின் வெறிச் செயலுக்கு! இப்படி நடந்த என் வாழ்விலேதான்—நட்சத்திரமே, நீ உதயமானாய்! நீயும் என்னைப்போல ஆகிவிடாமல் உன் பாட்டியைப் போலக் கெளரவமாக மானத்தோடு வாழம்மா!”",
+      "sourceScan": 184,
+      "printedPage": 175,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று மரண முகப்பிலே அனுபவ சரிதியோடு கலந்த சோக கீதத்தை இசைத்துவிட்டு, மங்களம் பாடித் தன் கச்சேரியை முடித்துக்கொண்டாள் சிந்தாமணியின் தாய்!",
+      "sourceScan": 184,
+      "printedPage": 175,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாயுமற்ற அனாதையாகிவிட்ட சிந்தாமணி பிச்சைக்காரச் சிறுமியாகச் சில நாள் அலைந்தாள். திடீரென்று அவளுக்கு ஒரு “அதிர்ஷ்டம்” அடித்தது. அனாதைச் சிறுவர்களைப் பாதுகாத்துக் கல்வி வழங்கும் ராமலிங்கசாமி குருகுலத்திலே அவளுக்கும் ஒரு இடம் கிடைத்தது. அந்தக் குருகுலத்தின் பிரதம ஆசிரியர் பழுத்த ராமலிங்க பக்தர். ராமலிங்க சிவானந்தம் என்பது அவரது பெயர். வயது ஐம்பதுக்கு மேலிருக்கும். ராமலிங்கருடைய அருட்பாக்கள் அவருக்கு மனப்பாடம். தேவார, திருவாசகங்களில் அவர் புலி. “எம்மதமும் சம்மதமே—தென்னுடைய சிவனே போற்றி!” என்று வார்த்தைகள் அவர் முணுமுணுக்காத நேரமே கிடையாது. அவரது பார்வையிலே பட்ட அனாதைச் சிறுமியை அவர்தான் குருகுலத்தில் கொண்டுவந்து சேர்த்தார். சிந்தாமணியும் நன்கு கல்வி பயின்று தேர்ச்சி பெற்றாள். சிவானந்தரின் மூத்த மகன், ஜோதியானந்தம் மேல்நாட்டுப் படிப்புப் படிப்பதற்காக அமெரிக்கா போயிருந்தான். அவன் படிப்பை முடித்துக்கொண்டு ஊர் வந்து சேர்ந்தான். அவனது கருத்தைக் கிளறும் சந்திப்பு ஒன்று குருகுலத்திலே நிகழ்ந்தது. அதுதான், சிந்தாமணியின் சந்திப்பு! சிந்தாமணி—ஜோதியானந்தம் இருவரும் காதலராயினர். அந்தக் காதல் கட்டத்தை வர்ணிக்க வேண்டுமா என்ன? அந்தக் கட்டங்களைக் கண்டுகண்டு, கேட்டுக் கேட்டு அலுத்துப் போயிருக்கும் உங்களிடம், அதை",
+      "sourceScan": 184,
+      "printedPage": 175,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வேறு நினைவுபடுத்திப் பிரம்மச்சாரிகளுக்குப் பெரும் வேதனையையும், பெருங் குடும்பிகளுக்குப் பெரிய வேதாந்த நினைவுகளையும் உண்டு பண்ணுவானேன்!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஜோதியானந்தத்தின் இருதய ஜோதியாகச் சிந்தாமணி ஆகிவிட்டாள் என்பதை அருட்பெருஞ் ஜோதியின் பக்தர் சிவானந்தம் கேள்விப்பட்டார்.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எம்மதமும் சம்மதமே!” என்று முணுமுணுத்த அவரது வாய், மகனை வசை பாட ஆரம்பித்தது! “காதலாம் காதல்! நாயைக் கொண்டுவந்து நடுவீட்டில் வைத்தால் அது இப்படித்தான் ஆகும்” என்று கத்தினார். உண்மையிலேயே சிந்தாமணி நாயல்ல!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிந்தாமணியின் தாயாரைப் பார்த்து அவளுக்கு உதவிய பெரிய மனிதர்—**நாயைக் குளிப்பாட்டி நடுவுள்ளே வைத்தால்...** என்று திட்டினாரே, அதற்கும் இப்போது ராமலிங்க சிவானந்தர் திட்டுவதற்கும் வித்தியாசமிருக்கிறது!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொதுமக்களிடம் புகழ் பெறுவதற்காக, குருகுலத்தார் அளிக்கும் பாராட்டு மாலைகளைச் சுமப்பதற்காக, சிவானந்தர் சிந்தாமணிக்கு அபயம் அளித்தது என்னவோ உண்மை!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்காக அவள் தனக்கே மருமகளாக வர வேண்டுமென்று ஆசைகொண்டால் அதை அவரால் அனுமதிக்க முடியுமா?",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மகனைக் கண்டித்தார். சிந்தாமணியைப்பற்றி அவதூறுகள் கூறினார். காதல் என்பது ஒரு போலி வார்த்தை என்பதற்கு ஆயிரமாயிரம் ஆதாரங்கள் தேடினார்.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கூடு கண்ட பூனை, பாலப் பாஷாணம் என்று தானப்பா கூறும்” என்று ஜோதி பதில் தந்தான். அவரோ கேட்கவில்லை. குரு குலத்திலிருந்து சிந்தாமணி விரட்டப்பட்டாள், விபசாரக் குற்றம் சாட்டப்பட்டு! தன்னால் ஜோதியின் குடும்பம் குலையக் கூடாது என்று எண்ணிய சிந்தாமணி, ஜோதிக்கு எவ்வளவோ எடுத்துச் சொல்லி, அவன் தன்னை மறந்துவிடவேண்டும் என்று மன்றாடினாள். அவனோ கேட்கவில்லை. அவளைப் பின்தொடர்ந்தான்.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிச் சில நாட்கள், துன்பத்திலும் இன்பங்கண்டாள் அவள். ஜோதியின் தந்தை பைத்தியமாக மாறிவிட்டார். மகனின் போக்கு அவர் மூளையைக் குழப்பிவிட்டது.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் குடும்பமே தத்தளித்தது. ஜோதியின் தாயாரும் ஜோதியின் சகோதரிகளும் சிந்தாமணியிடம் வந்து தங்கள் குடும்பத்தைக் காப்பாற்ற “ஜோதியைத் திரும்பக் கொடு!” என்று “மடிப்பிச்சை” கேட்டார்கள். “குடும்பத் தலைவன் ஜோதிதான். அவனும் போய்விட்டால் பைத்தியக்காரராகிவிட்ட தந்தையுடன் எப்படியம்மா இந்தக் குடும்பம் நல்ல நிலைமைக்கு வரும்? எங்கள் மீது இரக்கம் காட்டம்மா” என்று புலம்பினர்கள்.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அனாதையாகக் கிடந்த உன்னை ஆதரித்து, இவ்வளவு நாள் பராமரித்தவரான உன் தந்தை போன்ற சிவானந்தருக்கு, இப்படியாவது ஒரு நன்றி காட்டக் கூடாதா?” என்று குருகுலத்துத் தோழிகள் அவளுக்குப் புத்தி கூறினர்கள். சிந்தாமணி யாருக்கும் பதில் சொல்லாமல் மெளனமாகப் போய்விட்டாள்.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வெளியூர் சென்றிருந்த ஜோதி சிந்தாமணியின் வீட்டுக்கு வந்தான். ஒரு சிறு ஓலை வீடு அது; அவர்கள் குடும்பம் நடத்தக் கட்டிக்கொண்ட தற்காலிக மாளிகை. கதவைத் தட்டினன். கதவு தானே திறந்தது; உள்ளே எட்டிப் பார்த்தான். இருளில் மங்கலான வெளிச்சம் தெரிந்தது. “கதவைத் தாழிடாமலே தூங்கி விட்டாளே” என்று கூறிக்கொண்டே, “சிந்தாமணி!” என்று குரல் கொடுத்தான். பதில் இல்லை. படுக்கையைப் பார்த்தான், திடுக்கிட்டான். அலறியே விட்டான்! என்ன நினைக்கிறீர்கள்? சிந்தாமணி போய்விட்டாள் என்றா? அல்லது தற்கொலை செய்து கொண்டாள் என்றா? தற்கொலை செய்து கொண்டிருந்தால் அவள் என்னிடம் கதையைச் சொல்லியிருக்க முடியாதே—அதனால் அவள் ஓடித்தான் போய்விட்டாள் என்று முடிவு கட்டுகிறீர்களா? அதுதான் இல்லை!",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஜோதி கண்ட காட்சி அது அல்ல. ஒரு கட்டு மஸ்தான் தேக்குமுள்ள வாலிபனின் மேனியை இறுக அணைத்தபடி சிந்தாமணி தூக்கத்தில் ஆழ்ந்திருந்தாள். அவளது மெல்லிய கன்னங்களிலே அந்த வாலிபனின் முகம் புதைந்திருந்தது.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அடிப் பாவி” என்று ஜோதி கத்தினன். சிந்தாமணி எழுந்தாள்!",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் கழுத்தை நெறிக்க ஜோதி துடித்தான். அதை அந்த வாலிபன் தடுத்தான்.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இது பல நாளாய் நடக்கிறது” என்று சிந்தாமணி விளக்கம் பேசினாள். ஜோதி தன் தலையில் அடித்துக்கொண்டு, வீட்டுக்குத் திரும்பினன். “விபச்சாரி! விபச்சாரி!” என்று அவன் வாய் உளறிக்கொண்டேயிருந்தது. அப்படி அவன் விபச்சாரியாக வாவது கருதித் தன்னை மறந்துவிட்டால் போதும் என்பதற்காகவே சிந்தாமணி அந்தக் கொடிய செயலில் இறங்கினள் என்று உண்மை அவனுக்குத் தெரியாது.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் எண்ணியிருக்கிறான் அவள் விபச்சாரி என்று!",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளை விபச்சாரியாக்கியது அவளது ஆசைப் பெருவெள்ளமல்ல!",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஜோதியின் குடும்பத்திற்கு ஆறுதல் அளிக்கவேண்டும் என்பதற்காகவே அவள் அந்த முடிவுக்கு வந்தாள் என்பது அவளுக்கு மட்டுமே தெரியும்.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விபச்சாரி என்று பெயர் எடுத்தாலும் பரவாயில்லை.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குடும்பத்தைக் கெடுத்த பழிகாரி, சண்டாளி, என்று பெயர்களைச் சுமக்க அவள் விரும்பவில்லை, அனைவருக்கும் வரவேற்பு வழங்கும் மண்டபமாக அந்தக் குடிசையை அமைத்துக் கொள்ளவில்லை.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொள்கை நிறைவேறியதும், அந்த ஊரைவிட்டு வெளியேறினாள். “என் அம்மா ஒழுங்காக வாழச் சூழ்நிலையிருந்தும் ஒழுங்காக வாழவில்லை. நானே ஒழுங்காக வாழ எண்ணங்கொண்டும் சூழ்நிலை என்னை ஒழுங்காக வாழ விடவில்லை!”",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதுதான் அந்தப் பிச்சைக்காரி தன் கதைக்குத் தந்த முடிவுரை. “ஜோதியின் தகப்பனார் என்ன ஆனார்?” என்று கேட்டேன். அவருக்குப் பைத்தியம் தெளிந்து விட்டது-ஆனால் அவரது மகன் ஜோதிக்குப் பைத்தியம் பிடித்துக் கடைசியில் இறந்தே விட்டான்” என்று அவள் அழுதுகொண்டே சொன்னாள்.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்—ஜோதி உன்னை மறக்க வேண்டுமானால், நீ தற்கொலை செய்து கொண்டிருக்கலாமே—அதற்காக இப்பெரும் பழிக்கு ஆளாக வேண்டியதில்லையே?” என்று நான் அவளைக் கேட்டேன். அதற்கு அவள் தேம்பும் குரலில் சொன்ன பதில் இதுதான்:—",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தற்கொலை செய்து கொள்ளத்தான் நினைத்தேன். ஆனால் ஜோதியின் அன்புச் சின்னம் என் வயிற்றிலே மூன்று மாதம் வளர்ந்திருந்தது. அதை அழிக்க நான் விரும்பவில்லை. அதற்",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "space"
+     },
+     {
+      "text": "காகவே தகாத தந்திரத்தைக் கையாண்டு, ஜோதியின் மனத்தை மாற்றினேன். ஆனால் நான் எதற்காக உயிர் வாழ இச்சித்தேனோ, அந்த ஆசை நாசமாகி விட்டது. போஷாக்கில்லாத நிலையில் பிறந்த ஆண் மகவு இந்த உலகத்தைப் பார்க்க விருப்பமில்லாமல் பிரேதமாகவே பிறந்துவிட்டது.” இதைச் சொல்லிவிட்டு, அவள் ஒரு பெருமூச்சோடு எழுந்தாள்.",
+      "sourceScan": 188,
+      "printedPage": 179,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "துயரத்தின் சாயல், அவளது ஒவ்வொரு வார்த்தையிலும் வெளிப்பட்டது. அதோ அந்த வீட்டுக்கெதிரே பாடுகிறாள் பாருங்கள்; அந்தச் சோக கதத்தில் கூட ஏழ்மையின் பிரதி பலிப்பு இல்லையே! காதலின் தோல்விதானே எதிரொலிக்கிறது!",
+      "sourceScan": 188,
+      "printedPage": 179,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Abagya Chinthamani",
+    "sourceScan": 181,
+    "printedPage": 172
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There—do you see the woman begging in the street? Do you know who she is? Do not imagine that I am going to test your patience by telling you an old story such as **“She was not born into a line of beggars; she lived as a wealthy woman; the wheel of time reduced her to this state.”** She is indeed a hereditary beggar. That is to say, even her grandmother was a beggar! How old do you think the beggar you see here might be? You say about forty, do you not? No, no; I am telling you exactly—she is only thirty-five! She simply looks that old. She might even be taken for forty or fifty. In these times we see people of fifty and sixty locking in their teeth like twelve-year-old youthful birds, filling the hollows of their faces with powder, fashioning kovvai-red lips with colour and crescent brows with kohl, climbing to the Everest of civilization and crowing in triumph. This poor beggar has no wish to change her age that way. Even if she wished to, she has no money. And so, carrying on her body the dust of age settled by the winds of youth, she wanders through the streets of Thiruvarur.",
+      "sourceScan": 181,
+      "printedPage": 172,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She stands at doorway after doorway and sings in a rasping voice. Do you understand what song she sings? If not, ask me; I will tell you.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Erpathigazhchiyendra\n**our grandmother Avvai herself**\nalso sang, Aiyamittun!”",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Even if one must beg, learning is good;\neven giving a leftover leaf is good!”",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus she takes mere spoken lines, sets them to a new raga she herself has discovered, adds the needed brikkaas, and sings them differently to suit each house.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Do you ask how I know so much about her? One day her musical voice was heard at our house. Having waited many days for a chance to learn who she was, I began asking for her history that day. She began, and finished half an hour later. After hearing that story, it would be impossible for anyone not to give her alms. It happened also to be the memorial day for my younger sister at our house! So she received a good meal with payasam and vadai. “May you live like a Maharaja, sami,” she blessed me and took her leave.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When even being an ordinary man brings enough difficulty and commotion, why go and get trapped as a Maharaja and suffer still more? Thinking that to myself, I saw her off. That beggar woman’s native place—no—pardon me, her birthplace was the Chinthamani area near Tiruchirappalli.",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Perhaps that was why her mother too named her Chinthamani! This unfortunate Chinthamani was born from the womb of a beggar, grew with a disease a day and a danger every moment, and began helping her mother in the work of begging. When Chinthamani—",
+      "sourceScan": 182,
+      "printedPage": 173,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "completed ten years of age, her mother fell ill. The roadside five-foot strip in the Chinthamani area became the battlefield where Chinthamani’s mother fought with death. The impossible problem of boiling gruel and feeding her mother while somehow quieting the storm in her own stomach fell upon the head of that ten-year-old tender girl. For a day or two Chinthamani somehow struggled to hold back the breath that was trying to escape from her mother and stayed beside her, protecting the little life that had not yet gone out.",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Would a beggar girl have no love for her mother? And could a beggar mother be without anxiety about her daughter’s future?",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My daughter, do not depend on me any longer, my dear! My time is more or less over! I consented to every man who showed his teeth and merely kept this ruined body alive. Look at that dog in the gutter, rolling about to soothe the itching of its mange-covered body; just like that, rabid dogs in human form came near me and ruined me. My dear! Do not become like me! Ours is indeed a beggar family; yet your grandmother lived with great dignity. She made a tremendous effort not to let me become a beggar, but to make me a member of the society in which we live. She educated me. I studied by depending on the favour of a great man.",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“But, my dear, when my mother closed her eyes, my eyes too were closed. The schoolboys surrounded me because I was a beggar woman’s daughter. I grew proud, thinking how beautiful I must be for them to circle me so. I even expected some great war to break out among the students over me. Those bulls gathered like bears seeking a honeycomb. I lost myself. I lost awareness. This sinner became an example for the madmen who say women should not be educated. If one slips once on the bathing steps, there is not even time to think that one can plant one’s foot firmly on the next step—",
+      "sourceScan": 183,
+      "printedPage": 174,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "and escape! Before that, must one not reach the bottom of the pond? And what is the fate of those like me who do not know how to swim? I slipped into the moss-covered ruined pond of society. Raining a vasai-maari—‘Can a dog be bathed and brought into the middle hall?’—the great man drove me out of the house. I took up my mother’s work. I begged for my stomach! I also gave alms to the lustful acts of young men! It was in such a life of mine that—you, my star, rose! Do not become like me. Live honourably, with dignity, like your grandmother, my child!”",
+      "sourceScan": 184,
+      "printedPage": 175,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At the doorway of death, after singing this sorrowful song mingled with the history of her experience, Chinthamani’s mother sang the mangalam and ended her concert.",
+      "sourceScan": 184,
+      "printedPage": 175,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Now motherless and orphaned, Chinthamani wandered for some days as a little beggar girl. Suddenly a stroke of “luck” came to her. She too found a place in the Ramalingasami Gurukulam, which sheltered orphan children and gave them education. The head teacher of that gurukulam was a seasoned devotee of Ramalingar. His name was Ramalinga Sivanandam. He was over fifty. Ramalingar’s Arutpa verses were committed to his memory. He was a tiger in the Thevaram and Thiruvasagam. There was hardly a moment when he did not mutter, “All religions are acceptable—praise to the Southern Lord Siva!” It was he who saw the orphan girl and brought her into the gurukulam. Chinthamani studied well and passed her examinations. Sivanandam’s eldest son, Jothiyanandam, had gone to America for higher studies. He completed his studies and returned home. An encounter that stirred his mind took place in the gurukulam. That encounter was Chinthamani! Chinthamani and Jothiyanandam became lovers. Need I describe that stage of love? Why remind you, who are already tired of seeing and hearing such scenes, of it—",
+      "sourceScan": 184,
+      "printedPage": 175,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "and thereby cause great pain to bachelors and great Vedantic reflections in large family men!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sivanandam, the devotee of the Arutperum Jothi, heard that Chinthamani had become the light in Jothiyanandam’s heart.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The mouth that used to mutter “All religions are acceptable!” began abusing his son. “Love, is it—love! If you bring a dog and keep it in the middle of the house, this is what will happen,” he shouted. Chinthamani truly was no dog!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There was a difference between the great man who had once helped Chinthamani’s mother and abused her with **“If a dog is bathed and placed in the middle of the house...”**, and Ramalinga Sivanandam abusing Chinthamani now!",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is true that Sivanandam gave Chinthamani refuge in order to gain public fame and to carry the garlands of praise offered by the people of the gurukulam.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But if she wished to become his own daughter-in-law for that reason, could he permit it?",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He rebuked his son. He spread slanders about Chinthamani. He searched for thousands upon thousands of proofs that love was a false word.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A cat that has found the pot will itself call the milk paala-pashaanam, appa,” Jothi replied. He would not listen. Chinthamani was expelled from the gurukulam, accused of prostitution. Thinking that Jothi’s family must not be ruined because of her, Chinthamani explained again and again and begged him to forget her. He did not listen. He followed her.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For some days in this way, she found joy even amid suffering. Jothi’s father became insane. His son’s course had disturbed his mind.",
+      "sourceScan": 185,
+      "printedPage": 176,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The whole family floundered. Jothi’s mother and sisters came to Chinthamani and, to save their family, begged her for a “madippichai”: “Give Jothi back!” “Jothi is the head of the family. If he too goes away, how can this family ever return to a good condition with a father who has gone mad? Show us mercy, amma,” they lamented.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Could you not at least in this way show some gratitude to Sivanandam, who supported you when you were an orphan, cared for you all these years, and was like a father to you?” her friends from the gurukulam advised. Chinthamani gave no answer to anyone and went away silently.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Jothi, who had been out of town, came to Chinthamani’s house. It was a small thatched hut, the temporary palace they had built for their household. He knocked. The door opened by itself; he looked inside. A dim light showed in the darkness. Saying, “She has fallen asleep without even bolting the door,” he called, “Chinthamani!” No answer. He looked toward the bed, started, and cried out! What do you imagine? That Chinthamani had gone away? Or that she had killed herself? Had she killed herself, how could she have told me this story—so do you conclude that she must simply have run away? That too is wrong!",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What Jothi saw was not that. Chinthamani was deep asleep, tightly embracing the body of a kattu-masthaan, teak-like young man. The young man’s face was buried in her soft cheeks.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You sinner!” Jothi shouted. Chinthamani awoke.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Jothi sprang to throttle her neck. The young man stopped him.",
+      "sourceScan": 186,
+      "printedPage": 177,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“This has been going on for many days,” Chinthamani explained. Jothi struck his own head and returned home. “Prostitute! Prostitute!” his mouth kept babbling. He did not know the truth—that Chinthamani had entered upon that cruel act only so that, thinking her a prostitute, he would forget her.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He thinks she is a prostitute!",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was not a great flood of desire that made her a prostitute!",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Only she knew that she had come to that decision in order to give relief to Jothi’s family.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It did not matter if she acquired the name of prostitute.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She did not want to carry the names of vengeful woman and chandala who destroyed a family; nor had she turned that hut into a hall welcoming everyone.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Once her purpose was fulfilled, she left that town. “My mother had the circumstances to live properly, yet did not live properly. I myself wished to live properly, yet circumstance did not allow me to live properly!”",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That was the conclusion the beggar woman gave to her story. “What became of Jothi’s father?” I asked. “His madness cleared—but his son Jothi went mad and finally died,” she said through tears.",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes—but if Jothi had to forget you, you could have killed yourself. Why did you need to incur such a great disgrace?” I asked. In a sobbing voice she gave this answer:—",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I did think of killing myself. But Jothi’s token of love had been growing in my womb for three months. I did not want to destroy it. For that—",
+      "sourceScan": 187,
+      "printedPage": 178,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "reason alone I used that improper stratagem and changed Jothi’s mind. But the desire for which I wished to remain alive was destroyed. The male child born in a state without nourishment had no wish to see this world and was born already a corpse.” Saying this, she rose with a deep sigh.",
+      "sourceScan": 188,
+      "printedPage": 179,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The shade of sorrow showed in every one of her words. Look—there she is singing opposite that house; even in that sad cadence, is there no reflection of poverty? Is it not the failure of love that echoes?",
+      "sourceScan": 188,
+      "printedPage": 179,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  181,
+  182,
+  183,
+  184,
+  185,
+  186,
+  187,
+  188
+ ]
+}

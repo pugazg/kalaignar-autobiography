@@ -1,0 +1,1230 @@
+{
+ "workId": "vazha-mudiyathavargal",
+ "slug": "vazha-mudiyathavargal",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/vazha-mudiyathavargal",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "வாழ முடியாதவர்கள்",
+  "en": "Vazha Mudiyathavargal"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 25,
+  "printedPages": {
+   "first": 164,
+   "last": 171
+  },
+  "sourceScans": {
+   "first": 173,
+   "last": 180
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "வாழ முடியாதவர்கள்",
+    "sourceScan": 173,
+    "printedPage": 164
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘டாண் டாண்’ என்று மணிக்கூண்டு கடிகாரம் பத்து ஒலிகளை முழங்கிற்று. நட்சத்திர டாக்கீசின் கதவுகள் திறக்கப்பட்டன. ‘திலோத்தமா’ படம் முடிந்து விடுதலை பெற்ற சிவப்பு, பச்சை, நீலம், மஞ்சள் வண்ணங்கள்—திடீரெனச் சிரித்த பாதரச விளக்குகளால் சோபையிழந்தன. அந்தச் சோபையிலும் சொகுசு மின்னிடுவதாகத் தொடர்ந்து வந்த வாலிபப் பட்டாளம் ‘கம்ப ரசம்’ பாடிற்று.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பெண்களுக்குச் சுதந்திரம் அளிப்பதாயிருந்தால் முதலில் இந்த ஆண்கள் எல்லாம் அரபிக்கடலில் தூக்கி எறியவேண்டும்” என்றாள் ஒருத்தி; சிவப்புச் சேலைக்காரி.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உலகம் அழிந்துபோக உன்னை யோசனை கேட்டால் அப்போது சொல்லடி இந்த அபிப்பிராயத்தை” எனப் பதில் வீசினாள் பச்சைச் சேலைக்காரி.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“திலோத்தமா எப்படியடா?” என்றான் ஒரு இருபத்து நாலு வயது.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“படத்தைக் கேட்கிறயா?...அல்லது” என்று இழுத்தான் ஒரு மைனர்.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“படம் சுமார். டைரக்ஷன் பரவாயில்ல. கதை தான் பிடித்தமில்லே” என்ற விமர்சனத்தை ஒரு மேதை, பேச்சில் நுழைத்தார்.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன சார் உங்களுக்குக் கதை பிடிக்கவில்லே?” சினிமாப் பைத்தியம் ஒன்று இடையே குறுக்கிட்டது.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிரம்மாவைப் போட்டு கவாட்டா செய்கிறான் சார்” ஒருவர் இப்படி அனுதாபப்பட்டார்.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“புராணக் கதையை......அப்படியே எடுத்திருக்கான்.”",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிரம்மா...மும்மூர்த்திகளில் ஒருவர். அவர் சிருஷ்டித்தார் திலோத்தமையை! அவளையே அவர் காதலிப்பதென்றால்.... தகப்பன் மகள்...சேச்சே!...அபத்தம்!!”",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பொறுங்கள், வாந்தியெடுத்து விடாதீர்கள்” கிண்டல்காரன் பேச்சை முடித்தான் இவ்விதமாக. திலோத்தமை பட விமர்சனங்களோடு அந்தக் கூட்டம் நகர்ந்தும்-சிதறியும்-வர வரக் குறைந்தும்-தேய்ந்துங் கொண்டிருந்தது. அந்த நடக்கும் பொன்வண்டுகள் ......பறக்கும் பட்டுப் பூச்சிகளாயின. ‘காலேஜ் வேடர்’ களும் வேறு பக்கம் திரும்பினர்.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் கூட்டத்தில் கலந்து கொள்ளாமல் ஓரமாக ஒதுங்கி சின்னச்சாமியும் காந்தாவும் வந்துகொண்டிருந்தார்கள். காந்தாவின் கண்கள் கலங்கரை விளக்கு போலச் சுற்றியபடி யிருந்தன.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்......பார்த்து நட!” சின்னச்சாமி அதட்டினான்.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னச்சாமி போலீஸ்காரர். வயது நாற்பது இருக்கும். வலுவேறிய உடம்பு. வாட்ட மற்ற நடை. திரண்டுருண்ட தோள்கள். நிமிர்ந்த நெஞ்சு. கம்பீரமான தோற்றம். கண்களிலே எப்போதும் சிவப்பு நிறம். கறுப்புக் குல்லாத மீசைகள்.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காந்தா அவனுடைய வேகமான நடையோடு போட்டி போட்ட முடியாமல் திணறித் திணறிப் பின் தொடர்ந்தாள். நீண்ட சாலையின் ஓரத்தில் நெடுக நிழல் தரும் மரங்கள் நின்றிருந்தன. அங்கே ஒரு பெரிய புளியமரம். மனித நடமாட்டத்தில் அதன் கிளைகளில் இருந்த பறவைகள் அடிக்கடி சிறகை படித்துக் கொண்டன. அந்த மரத்தின் பக்கமாகச் சின்னசாமி சாலையிலிருந்து இறங்கினான். சாலைக்குக் கீழ்ப்புறமாகச் சிறிது தூரம் சென்றால், ‘போலீஸ் லைன்.’ அங்கே 18-வது எண்ணுள்ள வீடு சின்னச்சாமியுடையது.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காந்தா! கீழே பார்த்து வா. பூச்சி பொட்டு இருக்கும்.”",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதச் சொல்லியபடிக் கொஞ்சம் மெதுவாக நடந்தான், பின்னால் திரும்பிப் பார்த்தபடி. வீட்டையடைந்ததும் சின்னச்சாமி பூட்டைத் திறந்துவிட்டு, நெருப்புக் குச்சியைக் கொளுத்தினன். காந்தா விளக்கை ஏற்றிக்கொண்டு அடுக்களைப் பக்கம் சென்றாள். போலீஸ் லைன் வீடுதான் நமக்குத் தெரியுமே; குருவிக்கூடு! அடுக்களை படுக்கையறை எல்லாம் ஒன்றுதான்.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னச்சாமி செருப்புகளைக் கழற்றிவிட்டு, ஒரு பீடியைப் பற்ற வைத்தபடி வாயிலில் உட்கார்ந்தான். பீடியின் சுருள் புகையோடு அவன் சிந்தனையும் ஒரு சுற்றுச் சுற்றியது. அதற்குள்,",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பா! சோறு போட்டுவிட்டேன்” என்ற காந்தாவின் அழைப்பு கிடைத்தபடியால் பாதி பீடியை அணைத்துத் தீப்பெட்டியில் போட்டுக்கொண்டு உள்ளே சென்றான் சின்னச்சாமி.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மார்கழி மாதக் குளிருக்கேற்ற நல்ல பழைய சோறு; விறுவிறுப்பாகச் சுண்டக்குழம்பு. சாப்பாடு முடிந்தது.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ சாப்பிடம்மா” என்று சொல்லிவிட்டுச் சின்னச்சாமி மீதி பீடியை வாயில் வைத்தபடி வெளிப்பக்கம் வந்தான். வயிற்றின் ஜீலு ஜீலுப்பைப் பீடிப்புகை சிறிது மாற்றிக்கொண்டிருந்தது.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காந்தாவின் சாப்பாடு முடிந்ததும் பாத்திரங்களைக் கழுவி விட்டுப் படுக்கிற இடத்தைக் கூட்டினாள். இரண்டு கிழிந்த பாய்களை எடுத்து விரித்து, எண்ணெய் வாசனை வீசுவது மட்டுமன்றி, உறை தேவையில்லே என்கிற அளவுக்கு நிறத்தைக் கறுப்பாக மாற்றிக் கொண்ட தலையணைகள் எடுத்துப் போட்டாள்.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பா, நான் படுக்கட்டுமா?”",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒரு டம்ளர் வெந்நீர் கொடு. இருக்கா?”",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பச்சத் தண்ணிதான் இருக்கு. வெந்நீர் போட விறகு ஏது?” முணு முணுத்தபடி ஒரு குவளைத் தண்ணீரைக் கொடுத்து விட்டுப் படுக்கையில் படுத்தாள்.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தெருப்பக்கம் உட்கார்ந்திருந்த சின்னச்சாமியின் உதட்டில் இன்னொரு பீடி அமர்ந்து கொண்டது. பீடியைப் புகைத்தவாறு நிமிர்த்திய தலையைத் தாழ்த்தாமலே உட்கார்ந்திருந்த அவனிடம்,",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வான வெளியில் மேகத்தைத் தொட்டுத் தொட்டு விளையாடிய சந்திரன் பேசுவது போலிருந்ததோ என்னவோ; அவன் வைத்த விழியை எடுக்காமல் அசைவற்றிருந்தான்.",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சந்திரன்! சின்னச்சாமியின் மனைவியின் பெயர்கூடச் சந்திராதான். அவள் மண்ணோடு கலந்து பத்து வருடமாகிறது. சின்னச்சாமியின் முப்பதாவது வயதில் சந்திரா பத்து வயது நிரம்பப் பெறாத காந்தாவைத் தாயில்லாப் பிள்ளையாக்கி விட்டுப் போய் விட்டாள். தகப்பனார் உயிரோடிருந்த காலத்தில் சின்னச்சாமிக்குச் சந்திராவை எப்படியோ கல்யாணம் செய்துவைத்துப் பார்த்துக் கண்ணை மூடினார். இடையே சாவு தன் கொடிய கரங்களை நீட்டிச் சந்திராவின் கழுத்தை நெரித்தது மட்டுமன்றி காந்தாவைக் காப்பாற்ற வேண்டிய பெரும் பொறுப்பை அந்தப் பரிதாபத்துக்குரிய போலீஸ்காரருக்குக் கொடுத்துச் சென்றது. மறு கல்யாணம் செய்துகொள்ள எத்தனையோ முறை முயன்று பார்த்தான். முன்னூறு ரூபாய் கூட இல்லாமல் எப்படி கல்யாணம் பண்ணுவது! கஷ்டப்படும் போது—கண்ணீர் விடும்போது—கதியில்லையே எனக் கதறும் போது—கைகொடுக்க வராத உறவினர்கள் கல்யாணமென்றால் நாக்கைத் தட்டிக்கொண்டு வருவார்கள். பத்திரிகை தராவிட்டால் பல்லைக் கடிப்பார்கள். இந்த நிலையில் ஏழைக்குக் கல்யாண எழவா?......",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போதைய போலீஸ் சம்பளத்தைத்தான் கேட்கவேண்டிய தில்ல; அன்றாடம் சாப்பாட்டுக்கே கஷ்டம். இதில் நோய் நொடிகள் ஏற்பட்டால், டாக்டர் தர்மவானை மாறவேண்டும். காலில் முள் குத்திவிட்டால், முறிந்துவிட்டால், வண்டிக்காரன் பயந்தவனாக இருக்க வேண்டும். என்னதான் மேல் வரும்படி வந்தாலும் காப்பி, தேத்தண்ணீருக்குத்தான் சரியாக இருக்கும். கல்யாணம் செய்துகொள்கிற அளவுக்குச் சாதாரண போலீஸ் காரருக்குக் ‘கிம்பள சான்ஸ்’ கிடைக்குமா?",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மனைவி இறந்துபோன துக்கம் மறைந்து, அடுத்த கல்யாணம் கிடையாதா என்ற கேள்வி ஏக்கமாக வளர்ந்து, சின்னச்சாமியின் இருதயத்தைத் துரட்டிப்போட்டு இழுக்க ஆரம்பித்தது. வைகாசி-ஆவணி-தை-இப்படி மாதக் கணக்குகள் புரண்டு இந்த வருடம் அடுத்த வருடம் என்று ஒத்திப்போடப்பட்டு அவனுக்காகப் பார்த்த பெண்கள் எல்லாம் கல்யாணம் செய்துகொண்டு பிள்ளையும் பெற்றுவிட்டார்கள். அவன் கதிதான் இப்படி என்றால், பருவ",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மடைந்து ஆறு வருடமாக வீட்டிலிருக்கும் காந்தாவுக்கும் கணவன் வரவில்ல. காந்தா விகாரமில்ல; சுமாரான அழகி. கறுப்புதான். கவின் பெறு முகமும் எடுப்பான தோற்றமும் வாய்ந்த திராட்சைக்கொடி அவள். பெண் பிடிக்கவில்ல என்று யாரும் சொல்லவில்ல; ‘சீர்வரிசை என்ன செய்வார்கள்? கல்யாணச் செலவு பெண் வீட்டாருடையதுதானே?’ இந்தக் கேள்விகளுக்குப் பதில் சொல்ல முடியாமலேயே காந்தா அரும்புப் பருவம் அழியாமலிருந்தாள். சின்னச்சாமியின் இருதயம் நைந்து விட்டது. **சின்னச்சாமி வாழமுடியாதவன். காந்தா அவனால் வாழவைக்கப்பட முடியாதவள்.**",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன அலைகளால் மயங்கிப் போயிருந்த அந்தத் துயர உருவம் திடீரென விரலில் சுட்ட பீடியின் நெருப்பால் உணர்ச்சி பெற்றுத் திடுக்கிட்டது. நிலாவும் மேகத்தில் மறைந்து கொள்ளவே சின்னச்சாமி ஒரு பெரு மூச்சோடு எழுந்தான். கதவைத் தாழிட்டுவிட்டு, விளக்கைக் கொஞ்சமாக அடக்கிவிட்டு, அந்தக் கிழிந்த பாயில் படுத்துக் கொண்டான். அவன் கண்களில் சோகம் படர்ந்திருந்தது. காந்தா உடம்பை நெளித்துக்கொண்டு சோம்பல் முறித்ததிலிருந்து அவளுடைய இருதயத்திலும் ஒரு பெரும் போராட்டம் நடந்திருக்கத்தான் வேண்டும் என்பது தெளிவாகத் தெரிகிறது.",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வாழ்நாளின் வனப்பு மிக்க ஒரு பகுதி வீணே கழிவதென்றால்?...கொஞ்சு மொழியும் கோலாகலமும் அனுபவிக்க வேண்டிய பருவத்தில் ஊமையாக முடங்கிக் கிடப்பதென்றால்?... காதல் கீதத்திற்கேற்ற இன்பக் கேளிக்கையாடவேண்டிய இளமை நாட்கள், நொண்டியாகி விடுவதென்றால்?...எந்தப் பெண்ணுல்தான் தாங்கிக்கொள்ள இயலும் அந்த வேதனையை!",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த இருண்ட உலகில் ஒரு மனித ஜந்துவின் வீடு. அங்கே இரண்டு கிழிந்த பாய்கள். பாயைவிட அதிகமாகக் கிழிந்துபோன இரண்டு உள்ளங்கள்! தகப்பன்-மகள். தணலில் தவிக்கும் புழு! தாங்கொணா வேதனைப் புயலில் சிக்கிய தளிர்!",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காந்தாவின் நீண்ட பெரு மூச்சும், அந்த மூச்சைத் தொடர்ந்து முனகிக்கொண்டே கிளம்பிய சின்னச்சாமியின் அசைவும்! அந்தோ...பரிதாபமான நிலைமை.",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அட பாழாய்ப்போன கடவுளே! அவர்கள் என்ன பங்களாவா கேட்கிறார்கள்? பட்டு மெத்தையும், பவளக் கட்டி",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "space"
+     },
+     {
+      "text": "யும், பன்னீர்க் குளியலும், பாதம் பருப்பும், பசும்பாலுமா அவர்கள் கேட்டது? பணக்காரனின் இருதயப் பசிக்கு எத்தனை எத்தனை இளம் பெண்கள் பலியிடப்படுகிறார்கள்! காசை வீசி எறிந்து நினைத்த இடத்தில் இந்திரனாக மாறும் மனித மகாவிஷ்ணுக்களையும்; வயிற்றையும் நெஞ்சையும் உடலுணர்ச்சிகளையும் உவரப்போட்டு வற்றலாக்கிக் கொண்ட வறுமை உருவங்களையும் **“ஆண்டவன் படைப்பு”** என்று சொல்ல மனித அறிவு அவ்வளவு மழுங்கியா விட்டது”—அந்தச் சிறிய வீடு இதைத்தான் உரத்த குரலில் அகட்டிப் பேசுவது போலிருந்தது.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னச்சாமியின் மனம் தொடர்ந்து பேசத் துவங்கிற்று:—",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பணமில்லையென்றால் அவனுக்கு வாழ்வு கிடையாதா? உணர்ச்சி கிடையாதா? கடவுளே! ஏழைகளுக்கு வயிற்றையும் நெஞ்சையும் ஏன் உண்டாக்கினாய்? உனக்குப் படைப்புத் தொழிலில் தேர்ச்சியிருந்தால் ஏழைகளை வெறும் நடமாடும் பொம்மைகளாக அல்லவா சிருஷ்டித்து, முதலாளிகளுக்கு வேலை செய்யும் இயந்திரங்களாக ஆக்கியிருக்க வேண்டும்?",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காட்டில் திரியும் மிருகங்களுக்குக்கூடச் சந்தோஷமுண்டே! ஜோடிப் புறாக்கள்—ஓடி விளையாடும் மான்கள்—பாடிப் பறக்கும் குயில்கள்—அவைகளே விடவா ஏழைகள் குறைந்துவிட்டார்கள்! நான் என்ன பாவம் செய்தேன்? உன் பக்தியில் குறைச்சலா? உனக்குப் பயந்து நடக்கவில்லையா? ஏன் இந்தச் சோதனை?”",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த மாஜி மனிதனின் அழுத்தமான கேள்விகளுக்குப் பதில் சொல்ல எந்த ஆண்டவனும் தயாராயில்ல. அவன் சோகக் குமுறல் காந்தாவின் உள்ளமும் ஒப்பாரியாக்கி விம்மிக்கொண்டிருந்தது. அவள் கண்களில் நீர் தேங்கி வழிந்து, கன்னத்தின் குழியில் காய்ந்துவிட்டது.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னச்சாமியின் தொண்டையில் ஒன்றுமே அடைக்கவில்ல; ஆனாலும் லேசாகக் கனைத்துக் கொண்டான்.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எம்மாடி!” காந்தாவும் தூக்க அசதியில் அலுத்துக்கொண்டதுபோல் இந்த வார்த்தையோடு உடம்பை வளைத்துப் புரண்டு படுத்தாள்.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஏதோ ஒரு பயங்கரமான முடிவால், அவன் முகத்தில் அசடு வழிவதை அந்த மங்கலான விளக்கின் வெளிச்சம் எடுத்துக்",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "space"
+     },
+     {
+      "text": "காட்டிற்று. சரியாகப் படுத்துக்கொண்டான். முகத்தை வேறு பக்கம் திருப்பிக்கொண்டான். கண்களைக் கொஞ்சமாக மூடிக் கொண்டான்.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சின்னச்சாமி!....சின்ன புத்திக்காரா!.......",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்ன காரியமடா...கசடனே!”",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று ஒரு பயங்கரமான குரல் அவன் நெஞ்சுக்குள்ளேயே கிளம்பியது.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நிமிடம் அமைதி. அப்போ! அந்த ஒரு நிமிடத்தில் அவன் இரத்த ஓட்டத்தில் எவ்வளவு கொதிப்பு! நரம்புகள் எல்லாம் நடுங்கின. நாவில் நீரில்ல. உதடுகள் வறண்டு விட்டன. கையை மெதுவாக எடுத்தான். உள்ளங்கையில் வியர்வை கொட்டிற்று. வேட்டியில் துடைத்துக்கொண்டு, கையைக் காந்தாவின் மேல் மெதுவாகப் போட்டான். அவள் ஆயாச மூச்சோடு நகர்ந்து படுத்தாள்.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏய்!....பாதகா!....பரம சண்டாளா!....மகளடா மகள்!....\nநீ பெற்ற மகள்!....மகா பாதகத்தைச் செய்யாதேடா மடையா!....\nமண்டை வெறி பிடித்தவனே!......”",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் தலையில் ஆயிரம் சம்மட்டி அடிகள். ஆங்காரமான குத்துக்கள். கொடூரமான அரிவாள் வெட்டுக்கள். சின்னச்சாமியின் மார்பு படபடவென்று அடித்துக்கொண்டது. ஈரமற்ற நாக்கால் உலர்ந்துபோன உதடுகளை ஒரு முறை நக்கிக்கொண்டு பேசாமல் படுத்திருந்தான். சற்று அமைதி. அந்த அமைதியும் மின்னலாய் மறைந்தது. விஷமேறி நடுங்கும் அவன் ஈர விரல்கள் மீண்டும் காந்தாவின் முகத்தில் விழுந்து, நத்தைகள் ஊர்வது போல நகர்ந்துகொண்டிருந்தன. அந்த விரல்களைக் காந்தாவின் நடுங்கும் கரம், லேசாகப் பற்றியது.....பற்றியது மட்டுமா? மெதுவாக அழுக்கியது.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இடிகள் பல இடிப்பதுபோல...மின்னல்கள் பல மின்னுவது போலத்...திடீரெனப் புயல் கிளம்பிப் பூகம்பம் ஏற்பட்டுக் கடல்கள் குமுறி எழுந்தது போலத்...தடதடவென்று ஆட ஆரம்பித்தன இரண்டு இரத்த பாசமுள்ள உடல்கள். கால் பக்கமிருந்த விளக்கைச் சின்னச்சாமி உதைத்தான். அது கீழே சாய்ந்து அணைந்துபோய், எண்ணெய் தரையில் கொட்டியபடி உருண்டது.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடவுள்—அந்தக் கற்பினைக் பெயரால் ஏற்பட்ட தீவிதி—தீவிதிக்காளான சமுதாயம்—அந்தச் சமுதாயத்திற்கேற்பட்ட சட்டம்—அந்தச் சட்டத்தை முறை தெரியாமல் உடைத்தெறிந்த இரு சண்டாளர்கள்—வாழ முடியாதவர்கள்!",
+      "sourceScan": 180,
+      "printedPage": 171,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொழுது சரியாக விடியவில்ல. மங்கலான வெளிச்சம் வீட்டுக்குள் நுழைந்தது. சின்னச்சாமி விழித்துக்கொண்டு, காந்தாவின் முகத்தைப் பார்க்கத் திரும்பினான். அவன் கண்கள் அவனையறியாமல் மூடிக்கொண்டன. காந்தா அயர்ந்து தூங்கிக் கொண்டிருந்தாள். வேகமாக எழுந்து வெளியே வந்த சின்னச்சாமி நிற்கவேயில்ல; பைத்தியக்காரனைப் போல நடந்து கொண்டேயிருந்தான்.",
+      "sourceScan": 180,
+      "printedPage": 171,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காலையில் ஒன்பது மணியிருக்கும்; காந்தா கன்னத்தில் கைவைத்துக்கொண்டு வாயிற்படியில் சாய்ந்திருந்தாள். ‘திலோத்தமா’ சினிமாப் பட விளம்பர வண்டி தெருவில் போய்க்கொண்டிருந்தது.",
+      "sourceScan": 180,
+      "printedPage": 171,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Vazha Mudiyathavargal",
+    "sourceScan": 173,
+    "printedPage": 164
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Daan, daan’—the tower clock struck ten times. The doors of Natchathira Talkies opened. The red, green, blue and yellow colours released when the film ‘Thilothama’ ended lost their splendour under the sudden laughter of the mercury lamps. A troop of young people came streaming out, their own luxury still glittering even in that light, singing ‘Kamba rasam’.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If women are to be given freedom, first all these men must be picked up and thrown into the Arabian Sea,” said one woman, the one in the red sari.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“When the world is about to be destroyed and they ask you for advice, tell them this opinion then,” shot back the woman in the green sari.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“How was Thilothama, da?” asked a twenty-four-year-old.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Are you asking about the film?...or...” drawled a minor.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The film is average. Direction is all right. It is the story I didn’t like,” inserted one intellectual into the conversation.",
+      "sourceScan": 173,
+      "printedPage": 164,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What, sir, you didn’t like the story?” a cinema-mad fellow interrupted.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“They have made Brahma do kavaattaa, sir,” one man said in sympathy.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“They have taken the puranic story......just as it is.”",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Brahma...one of the Trimurthis. He created Thilothama! If he himself falls in love with her....father and daughter...chee, chee!...absurd!!”",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hold on, don’t vomit,” said the mocker, ending the exchange that way. With reviews of the Thilothama film, the crowd moved on—scattered—grew smaller and smaller—wore away. Those walking golden beetles......became flying silk moths. The ‘college vedar’ group too turned another way.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Keeping apart instead of joining that crowd, Chinnachami and Kantha walked along. Kantha’s eyes kept circling like a lighthouse beam.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hmm......watch where you’re going!” Chinnachami snapped.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chinnachami was a policeman, about forty. A strong body. A vaatta-matra stride. Broad, rounded shoulders. An upright chest. A dignified appearance. His eyes were always red. Black, kullaatha moustaches.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Unable to match his fast pace, Kantha struggled after him. Along the edge of the long road stood trees casting shade. There was a large tamarind tree. Because of the movement of people, the birds in its branches often padithu their wings. By that tree Chinnasami stepped down from the road. A little distance below the road lay the ‘Police Line’. House number 18 there belonged to Chinnachami.",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Kantha! Look down as you come. There may be insects and such.”",
+      "sourceScan": 174,
+      "printedPage": 165,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Saying this, he walked a little more slowly, turning to look behind him. On reaching the house, Chinnachami opened the lock and struck a match. Kantha lit the lamp and went toward the adukkalai. We know what a Police Line house is—a sparrow’s nest! Kitchen and bedroom are all one.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chinnachami took off his sandals, lit a beedi and sat at the doorway. Along with the curling beedi smoke, his thoughts too made a circuit. Just then,",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Appa! I’ve served the rice,” Kantha called, and Chinnachami put out the half-smoked beedi, placed it in the matchbox and went inside.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Good old rice suited to the Margazhi cold; sharp sundakkuzhambu. The meal was over.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You eat, ma,” said Chinnachami, and he came outside with the rest of the beedi in his mouth. The beedi smoke slightly changed the jeelu-jeeluppu of his stomach.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After Kantha finished eating, she washed the vessels and swept the place where they slept. She spread two torn mats and placed pillows that not only smelled of oil but had turned so black that they seemed to need no covers.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Appa, shall I go to sleep?”",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Give me a tumbler of hot water. Is there any?”",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Only cold water is there. Where is the firewood to heat water?” she muttered, gave him a cup of water and lay down.",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Another beedi settled on the lips of Chinnachami, who sat facing the street. Smoking, he sat without lowering his raised head, and to him,",
+      "sourceScan": 175,
+      "printedPage": 166,
+      "joinToNext": "space"
+     },
+     {
+      "text": "perhaps the moon in the open sky, playing as it touched the clouds, seemed to be speaking; he remained still without taking his eyes away.",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The moon! Even Chinnachami’s wife had been named Chandra. Ten years had passed since she became one with the earth. When Chinnachami was thirty, Chandra died, leaving Kantha—who had not yet completed ten years—motherless. While his father was alive, he had somehow arranged Chinnachami’s marriage to Chandra and then closed his eyes. In between, death stretched out its cruel hands, strangled Chandra’s neck, and left that pitiable policeman with the great responsibility of protecting Kantha. Many times he tried to remarry. How could he marry without even three hundred rupees! Relatives who would not lend a hand when he suffered—when he wept—when he cried that he had no refuge—would come smacking their tongues when there was a wedding. If no invitation was given, they would grind their teeth. In such a state, can a poor man have the extravagance of a marriage?......",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is no need even to ask about a policeman’s salary in those days; daily food itself was difficult. If illness came, the doctor would have to turn into a dharmavaan. If a thorn pierced the foot or something broke, the cart-driver would have to be a frightened man. Whatever extra income came would barely cover coffee and tea-water. Would an ordinary policeman get a ‘kimbala chance’ large enough to marry?",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As the grief over his wife’s death faded, the question “Will there be no next marriage?” grew into longing and began dragging Chinnachami’s heart. Vaikasi—Avani—Thai—months rolled over; this year, next year, it kept being postponed, and all the women once considered for him had married and even borne children. If this was his fate, Kantha too, who had reached womanhood",
+      "sourceScan": 176,
+      "printedPage": 167,
+      "joinToNext": "space"
+     },
+     {
+      "text": "six years earlier and remained at home, had found no husband. Kantha was not disfigured; she was moderately pretty. She was dark. She was a grapevine with a pleasing face and striking form. No one said they disliked the girl; “What will they give as seervarisai? The wedding expense belongs to the girl’s family, doesn’t it?” Unable to answer those questions, Kantha’s budding youth remained unspent. Chinnachami’s heart withered. **Chinnachami was one who could not live. Kantha was one whom he could not enable to live.**",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That sorrowful figure, dazed by waves of thought, suddenly came to himself when the beedi ember burned his finger. The moon hid in the clouds. Chinnachami rose with a deep sigh, bolted the door, lowered the lamp a little and lay down on the torn mat. Sorrow spread across his eyes. From the way Kantha stretched and twisted her body in weariness, it was clear that a great struggle must have been taking place in her heart too.",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What if a beautiful part of one’s lifetime simply goes to waste?... What if, at the age meant for tender words and celebration, one remains shut away in silence?... What if the youthful days meant for the pleasures fitting a love-song become crippled?... What woman could bear that pain!",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In this dark world, the house of a human creature. There, two torn mats. Two hearts torn worse than the mats! Father—daughter. A worm suffering in embers! A tender shoot caught in an unbearable storm of pain!",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kantha’s long sigh, and after that sigh Chinnachami’s movement as he rose with a groan! Alas...a pitiable condition.",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“O ruined God! Are they asking for a bungalow? Silk mattresses, coral கட்டி—",
+      "sourceScan": 177,
+      "printedPage": 168,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—and rosewater baths, almond paste and fresh milk—is that what they asked for? How many young women are sacrificed to the hunger of a rich man’s heart! Men who can throw money and become Indras wherever they wish; and forms of poverty that have salted dry their stomachs, hearts and bodily desires—has human intelligence become so dull that both are called **‘God’s creation’**?” The little house seemed to be shouting this aloud.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chinnachami’s mind continued speaking:—",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If a man has no money, does he have no life? No feelings? God! Why did you create stomachs and hearts for the poor? If you had skill in the work of creation, should you not have created the poor merely as walking dolls, machines to work for capitalists?",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Even animals roaming in the forest have happiness! Paired pigeons—deer running and playing—cuckoos singing and flying—are the poor lower even than they are? What sin did I commit? Was there any shortcoming in my devotion to you? Did I fail to live in fear of you? Why this trial?”",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "No god was ready to answer the former man’s pressing questions. His sorrowful anguish made Kantha’s heart too into an oppari and it sobbed. Tears gathered in her eyes, ran down and dried in the hollows of her cheeks.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nothing was caught in Chinnachami’s throat; even so, he lightly cleared it.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Emmadi!” Kantha too bent and rolled over with that word, as though tired in sleep.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The dim lamp showed an indecent resolve flowing across his face. He lay down properly. Turned his face the other way. Closed his eyes a little.",
+      "sourceScan": 178,
+      "printedPage": 169,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chinnachami!....small-minded man!.......",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What are you doing...wretch!”",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A terrifying voice rose inside his own chest.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A minute of silence. Appo! In that one minute, what boiling ran through his blood! All his nerves trembled. There was no moisture on his tongue. His lips dried. Slowly he lifted his hand. Sweat poured into his palm. He wiped it on his veshti and gently placed his hand on Kantha. With a weary breath, she shifted in her sleep.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey!....sinner!....utter chandala!....she is your daughter, da, your daughter!....\nYour own daughter!....do not commit this great sin, fool!....\nMadman whose head has gone wild!......”",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A thousand sledgehammer blows struck his head. Furious punches. Cruel sickle-cuts. Chinnachami’s chest thudded. With a moistureless tongue he licked his dried lips once and lay without speaking. A little silence. Even that silence vanished like lightning. His damp fingers, trembling as though poisoned, fell again upon Kantha’s face and moved like crawling snails. Kantha’s trembling hand lightly caught those fingers.....Was that all? It slowly azhukkiyathu them.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As though many thunders crashed...as though many lightnings flashed...as though a sudden storm rose, an earthquake struck and the seas roared upward...two bodies bound by blood began to shake violently. Chinnachami kicked the lamp near their feet. It toppled, went out, and rolled as oil spilled across the floor.",
+      "sourceScan": 179,
+      "printedPage": 170,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "God—the theevithi created in the name of chastity—the society made victim to that theevithi—the law shaped for that society—the two chandalas who, without knowing the proper way, shattered that law—people unable to live!",
+      "sourceScan": 180,
+      "printedPage": 171,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Dawn had not properly broken. Dim light entered the house. Chinnachami woke and turned to look at Kantha’s face. His eyes closed without his knowing it. Kantha was sleeping exhausted. Chinnachami rose quickly and came outside; he did not stop, but kept walking like a madman.",
+      "sourceScan": 180,
+      "printedPage": 171,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It must have been about nine in the morning. Kantha sat leaning at the doorway with her cheek in her hand. The advertising van for the film ‘Thilothama’ was passing along the street.",
+      "sourceScan": 180,
+      "printedPage": 171,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  173,
+  174,
+  175,
+  176,
+  177,
+  178,
+  179,
+  180
+ ]
+}

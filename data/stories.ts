@@ -33,6 +33,30 @@
 // prevent.
 export type StoryJoin = "space" | "none" | "unknown" | "end";
 
+// ── TWO SOURCE FORMS, ONE READER ────────────────────────────────────────────────────────────────────
+// Wave 2 (the 1977 anthology `கலைஞர் கருணாநிதியின் சிறுகதைகள்`) added 37 stories that are NOT booklets.
+// They are printed inside one 260-scan collection, and they simply do not have several facts the
+// standalone booklet has: no printed form label under the title, no per-story authorship line, no
+// story-specific physical publication, no publisher errata, and no scan whose printed page is unknown.
+//
+// The honest fix is a DISCRIMINATOR plus optional blocks — not fabricating booklet facts for anthology
+// stories to satisfy a type. A field that exists only because one source prints it must never be
+// invented for a source that does not.
+export type StorySourceForm = "standalone-booklet" | "anthology-story";
+
+/**
+ * Where an anthology story sits in its collection. This is the story's own placement — its printed order
+ * and its own scan/page extent — NOT a restatement of collection-wide facts, which live in provenance.
+ */
+export type StoryAnthologyPlacement = {
+  collectionSlug: string;
+  collectionTitleTa: string;
+  /** Printed order within the anthology, 1-based. Read from the completion register, never re-derived. */
+  order: number;
+  printedPages: { first: number; last: number };
+  sourceScans: { first: number; last: number };
+};
+
 // One per-scan fragment of a logical paragraph.
 //
 // `printedPage` is NULLABLE and that is load-bearing: scan 7 of `kizhavan-kanavu` carries no printed
@@ -76,16 +100,38 @@ export type Story = {
   readerStructure: "story";
   title: { ta: string; en: string };
   /**
+   * Which source form this story is.
+   *
+   * OPTIONAL because `kizhavan-kanavu` was generated before this discriminator existed and its data is
+   * deliberately left byte-identical — adding a field to it would weaken the regression evidence for no
+   * gain. ABSENT therefore means `"standalone-booklet"`, the original form. Consumers that need to
+   * branch should test the shape they actually need (`anthology`, `formLabel`) rather than assume this
+   * field is present.
+   */
+  sourceForm?: StorySourceForm;
+  /**
    * The form label the BOOKLET ITSELF prints under the title (`கற்பனையுரை`). It is the source's own word
    * for what this piece is, so it is carried as source text, not as a catalogue category. There is no
    * `en` here: the booklet prints no English form label, and one is not invented.
+   *
+   * OPTIONAL, and that is load-bearing: the 1977 anthology prints no form label above any of its 37
+   * stories, so they carry none. `கற்பனையுரை` belongs to `kizhavan-kanavu` alone and must never be
+   * copied onto an anthology story to fill this field.
    */
-  formLabel: { ta: string };
+  formLabel?: { ta: string };
   author: {
     nameTa: string;
-    /** The printed authorship line, verbatim: `தீட்டியவர்: மு. கருணாநிதி.` */
-    printedAuthorshipLineTa: string;
+    /**
+     * The printed authorship line, verbatim: `தீட்டியவர்: மு. கருணாநிதி.`
+     *
+     * OPTIONAL: the anthology credits its author once, on the book's own title page, and prints no
+     * per-story byline. Synthesising one from the collection credit would assert a line the story page
+     * does not carry.
+     */
+    printedAuthorshipLineTa?: string;
   };
+  /** Present exactly when `sourceForm` is `"anthology-story"`. */
+  anthology?: StoryAnthologyPlacement;
   /** The authoritative source transcription. */
   tamil: { blocks: StoryBlock[] };
   /** The project-created English reading translation. The Tamil remains authoritative. */
@@ -102,7 +148,8 @@ export type Story = {
 
 export type StoryProvenanceSource = {
   printedTitleTa: string;
-  printedAuthorshipLineTa: string;
+  /** Booklet-only: the anthology prints no per-story authorship line. */
+  printedAuthorshipLineTa?: string;
   editionStatementTa: string;
   scanFilename: string;
   scanSha256: string;
@@ -228,20 +275,64 @@ export type StoryEnglishProvenance = {
  */
 export type StoryReviewQueue = { exists: boolean; file: string; note: string };
 
+/**
+ * The anthology this story is printed in. Collection-level facts stay HERE, at collection level: the
+ * 260-scan total, the shared SHA-256, the 37-story count. None of them is a fact about one story, and
+ * the provenance page has to keep the two apart the same way the booklet's `physicalPublication` is
+ * kept apart from `storyScope`.
+ */
+export type StoryAnthologyProvenance = {
+  collectionSlug: string;
+  collectionTitleTa: string;
+  editionStatementTa: string;
+  publisherTa: string;
+  storiesInCollection: number;
+  storyOrder: number;
+  collectionScanTotal: number;
+  storyBearingScans: string;
+  backCoverScan: number;
+  scanToPrintedPageRelation: string;
+  note: string;
+};
+
+/**
+ * A story whose table-of-contents title and story-opening heading DIFFER in the source. Two stories in
+ * the 1977 anthology do. Both witnesses are recorded and neither is normalised away; the canonical
+ * display title follows the archive's own decision, which is the opening heading in both cases.
+ */
+export type StoryTitleWitness = {
+  tocTitleTa: string;
+  openingHeadingTa: string;
+  canonicalFollows: "opening-heading" | "toc-title";
+  note: string;
+};
+
+/** The archive's per-story visual-fidelity closure. */
+export type StoryVisualFidelity = { result: string; note: string };
+
 export type StoryProvenance = {
   workId: string;
   sourceRepo: string;
   sourcePath: string;
   sourceCommit: string;
+  sourceTree: string;
   source: StoryProvenanceSource;
   storyScope: StoryScope;
-  physicalPublication: StoryPhysicalPublication;
-  printedPageUncertainty: StoryPrintedPageUncertainty;
-  errata: StoryErrata;
+  /** Booklet-only. A story printed inside a collection has no physical publication of its own. */
+  physicalPublication?: StoryPhysicalPublication;
+  /** Booklet-only. Every anthology story page carries its printed page number. */
+  printedPageUncertainty?: StoryPrintedPageUncertainty;
+  /** Booklet-only. No anthology story has a publisher's erratum list. */
+  errata?: StoryErrata;
   tamilAssembly: StoryTamilAssembly;
   crossScanJoinPolicy: StoryCrossScanJoinPolicy;
   english: StoryEnglishProvenance;
   reviewQueue: StoryReviewQueue;
+  /** Anthology-only. */
+  anthology?: StoryAnthologyProvenance;
+  /** Present only where the source's two title witnesses differ. */
+  titleWitness?: StoryTitleWitness;
+  visualFidelity?: StoryVisualFidelity;
 };
 
 // Integrated story slugs (build/import authority; the public catalogue entry lives in data/library.ts and
@@ -249,5 +340,49 @@ export type StoryProvenance = {
 // is the single list a future sitemap integration reads — the Phase-A lesson: a route family whose slugs
 // live in one exported registry is wired into the sitemap once and stays correct for every work added
 // after.
-export const STORY_SLUGS = ["kizhavan-kanavu"] as const;
+export const STORY_SLUGS = [
+  // Phase 8 Benchmark B — the standalone booklet. It is NOT part of the 1977 anthology and keeps its
+  // own source pin; Bulk Wave 2 deliberately left it untouched.
+  "kizhavan-kanavu",
+  // ── Bulk Onboarding Wave 2 — the 37 stories of the 1977 anthology கலைஞர் கருணாநிதியின் சிறுகதைகள்,
+  // in the anthology's own printed order (scans 10–259, printed pages 1–250). They share one controlling
+  // scan and one historical source pin, which is NOT the kizhavan-kanavu pin.
+  "pugazhendhi",
+  "nalayini",
+  "sabalam",
+  "aattakkavadi",
+  "kuppai-thotti",
+  "santhana-kinnam",
+  "sangilichami",
+  "gangaiyin-kadhal",
+  "thaaymai",
+  "thappivittargal",
+  "thappavillai",
+  "aatharikkirar",
+  "iragasiyam",
+  "munnuru-rupai",
+  "ezhai",
+  "originalil-ullapadi",
+  "panangulai",
+  "seththaval-kathai",
+  "pretha-visaranai",
+  "kandathum-kadhal-ozhiga",
+  "aalamarathup-puraakkal",
+  "thothukkili",
+  "kadhal-kaditham",
+  "kannadakkam",
+  "vazha-mudiyathavargal",
+  "abagya-chinthamani",
+  "palaivana-roja",
+  "puratchip-padam",
+  "thidukkidum-kathai",
+  "kadaisi-kattam",
+  "ayyo-raja",
+  "visham-inidhu",
+  "veniyin-kadhalan",
+  "amirthamathi",
+  "sumanthaval",
+  "siddharthan-silai",
+  "nunikkarumbu",
+] as const;
 export type StorySlug = (typeof STORY_SLUGS)[number];

@@ -1,0 +1,1324 @@
+{
+ "workId": "kandathum-kadhal-ozhiga",
+ "slug": "kandathum-kadhal-ozhiga",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kandathum-kadhal-ozhiga",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கண்டதும் காதல் ஒழிக!",
+  "en": "Kandathum Kadhal Ozhiga!"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 20,
+  "printedPages": {
+   "first": 137,
+   "last": 141
+  },
+  "sourceScans": {
+   "first": 146,
+   "last": 150
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கண்டதும் காதல் ஒழிக!",
+    "sourceScan": 146,
+    "printedPage": 137
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முறுக்கு மசால்வடை!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கரம் சாயா!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாதன் சோடா, கலர், ஆரஞ்சு!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ரொட்டி, பிஸ்கத், வெத்திலை பாக்கு, அசோகா!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எலிபெண்டு சிகரெட், தாஜ்மகால் பீடி!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏய் சாயா! ஒரு சிங்கிள் கொடுடா!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காலணு பீடி கொடு!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மா..எனக்கு ரொட்டி!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பா..சோடா வாங்கித் தா!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சும்மா இருடா கழுதே! ராத்திரியிலே சோடா செரிக்காது.”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏய்! ஆரம்பிக்கிறியா இல்லையா?”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆரம்பிக்கலேன்னு....டிக்கட்டை வாபஸ் பண்ணுடா!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அர்த்த ராத்திரியிலே ஆட்டம் போடவானுபோலிருக்கு.”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காவிப் பசங்கள்!....எல்லோரும் விடாமல் கை தட்டுங்கப்பா....அப்பதான் சீன் தூக்குவான்.”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏய்! விசிலடிக்கத் தெரியுமா?”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நல்லாத் தெரியும். அதுக்குத்தானே நான் டிராமாவுக்கு வர்றது.”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்ப..ஆரம்பிச்சிடு.”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஷ் ஷ் ஷ்..ஷ்.....”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஓகோ கோ கோ கோ உஷ்...”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேவி கான சபையில் “திரெளபதி வஸ்திராபஹரணம்” நாடக ஆரம்ப தினத்தன்று நாடக நேரம் தவறி நாழிகை நகர நகர நாலாபக்கங்களிலுமிருந்து கிளம்பிய பேரொலிகள் ஒன்றோடொன்று மோதித் தெறித்து அந்தக் கீற்றுக் கொட்டகையையே நடுங்க வைத்தன.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடக சம்பந்தமான ஒத்திகைகள் பார்ப்பதில் சுறுசுறுப்புத் தேவையில்லை என்ற கொள்கையுடைய நாடக முதலாளி, நடிகர்கள் அலங்காரம் செய்து கொண்டிருக்கும்போதுதான் காட்சி ஒத்திகைகள் நடத்திக்கொண்டிருந்தார். அந்த அலட்சியத்தை அவர், தம் தொழில் மேதாவித்தனத்தைக் காட்டுகிறது என நம்பினார்.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இனிச் சமாளிக்க முடியாது என்ற ஆபத்தான கட்டத்தில் நாடக மணி ஒலித்தது. முதற் காட்சி பஞ்ச பாண்டவர் ஆலோசனை மண்டபம். அவசரத்தில் அர்ச்சுனன் ‘கதை’யையும், வீமசேனன் வில்லையும் தூக்கிக் கொண்டு வந்து நின்றார்கள்.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வீமசேனா” என்று தருமர் அழைக்கவும், வில் வைத்த ஆசாமி அண்ணா என வணங்கவும், கொட்டகை பூகம்பத்தால் ஆடுவது போலச் சிரிப்பு முழங்கிற்று. திரை சட்டக்கென விழுந்தது. ஆயுதங்களே அவர்கள் சரிப்படுத்திக் கொண்ட பின் மீண்டும் திரை சுருண்டது. திரெளபதி குலுக்கு நடை போட்டுக் கொண்டு பிரவேசித்தாள்—கொட்டகையில் அமைதி.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆள்..நல்ல அழகப்பா!”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்! பாத்திரத்திற்கேற்ற முக வெட்டு”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அலட்சியச் சிரிப்பு அப்படியே வழியுது பார்”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வழியும் வழியும்!”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னடா கிண்டல்?”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கிண்டல் இல்ல..குமார்! நாடகக்காரி மேலேயே இப்படி பெண்ணுரல்....?”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாடகக்காரி பெண்ணுரல் மட்டுமா? நளினம், நாகரிகம், பாவ உணர்ச்சி எல்லாம் அவளுக்கு அடிமை. வாழ்க்கையில் சுவை வற்றிப் போகாமலிருக்க இவள் போன்ற கலையரசிகளின் காதல்தான் பெறவேண்டும்.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்படியானால்—காதல் ஆரம்பமாகி விட்டதுன்னு சொல்லு.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்! கன்னி யொருத்தியைக் கண்டதும், உள்ளம் களவு போவதுதானே காதல்?”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னடா கவிதை பொழிகிறாய்?”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காதல் மழையடா செவிடு!”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி பைத்தியம்....முற்றி விட்டது.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யார் பைத்தியம்? முட்டாள்! இது, கண்டதும் காதல்!”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“குமார்!”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நடராஜ்! என்னைத் தொந்தரவு செய்யாதே. உன்பேச்சைக் கேட்க நேரமில்லை. அவள் வாய் திறக்கப்போகிறாள்.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்த எழுத்தாளர்களே இப்படித்தான்” முணுமுணுப்போடு நடராஜ் நாடகத்தைக் கவனித்தான்.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குமார், புயலும் படகுமானான்.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்த முட்டாள் தருமன் ஒரு மரக்கட்டை மகாராஜா! தங்க விக்கிரகம் வந்து நிற்கிறது; தழுவிடாமல் தர்பார் நடத்துகிறானே” என ஏளன மொழி பேசிற்று அவன் உள்ளம்.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் மட்டும் தருமனுய்; தருமன் என்ன, சகாதேவனுய் நடித்தால்கூடப் போதும்........இந்நேரம் இந்தச் சிங்கார மயிலே!.....” குமார் சுரக்கும் உமிழ் நீரை உறிஞ்சிக் கொண்டான்.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி, நாளைக்கே இந்தச் சபாவில் ஒரு நடிகனைச் சேர்ந்து விடுவது!” மகோன்னத முடிவைக் கண்டுபிடித்ததுபோல அவன் தலை நிமிர்ந்து கொண்டது.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீமசேனனிடம் வசனம் முடிந்த பிறகு, தருமர் திரெளபதியை நோக்கினார். திரெளபதி வணங்கி நின்றாள். மலர்ந்த முகத்தோடு தருமர் அவளைப் பார்த்து, **“அன்பே! சீதா! அருகில் வா!”** என்று",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "space"
+     },
+     {
+      "text": "முடிக்கவில்லை; கொட்டகை “சே! உள்ளே போடா!” என்று சிரித்தது.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதல் நாள் நடந்த **“ராமாயணம்”** நாடக வசனத்தை தருமர் வேடம் போட்டவர் இப்போது தவறிச் சொல்லிவிட்டார் என்று யாரும் மன்னிக்கத் தயாராயில்லை. கொட்டகை, தருமருக்குத் தடையுத்தரவு போட்டதும், அவர் மெளன விரதம் ஆரம்பித்து விட்டார். மிரள மிரள விழித்தபடி திரெளபதி நின்றாள். தருமர் வசனத்தை நாமாவது பேசுவோ மென்று அர்ச்சுனன் வேஷக்காரன் “அன்பே திரெளபதி அருகில் வா! என தம்பி அர்ச்சுனன் திக்விஜயம் செய்யப் போகிறானாம்....” என்று ஆரம்பித்தான்.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏய்! நீயும் உள்ளே போ!” கொட்டகை ஆத்திரத்தோடு உத்தரவிட்டது.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடக முதலாளி புஷ்பராகம் பிள்ளை மேடைக்கு ஓடிவந்து... “சகோதரர்களே” என்று எடுத்தார்.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அஞ்சு சகோதரர்கள் அசையாமல் நிக்கிறுங்கோ...அவங்க கிட்டே பேசப்பா!” என்று குரல் கொடுத்தது கொட்டகை.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஐவரும் உள்ளே ஓடினர். “ஏய் பஞ்சபாண்டவர் ஓட்டம். திரெளபதி தனியா நிற்கிறாள். பிடி பிடி!” கொட்டகையில் கெக்கலிப்பு.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திரெளபதியும் உள்ளே ஓடினள். திரை விழுந்தது. கொட்டகையில் யாரும் உட்கார்ந்திருக்கவில்லை. முன் திரையில் காட்சியளித்துக்கொண்டிருந்த காளிகாதேவியின் முகத்தில் ஒரு கல் வந்து விழுந்தது. “குய்யோ முறையோ” வெனக் கூவியபடி பெண்கள் திசைகெட்டு ஓடினர்கள்.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கீற்றுகளைக் கிழித்துக்கொண்டு கற்கள் உள்ளே நுழைந்து கொண்டிருந்தன. நாடக முதலாளி ஒலி பெருக்கி மூலமாக உள்ளிருந்தபடி கத்தினார்; பயனில்லை. நீங்களெல்லாம் மனிதர்கள் தானே? என்று ஒலிபெருக்கி கேள்வி போட்டது. அதற்கும் பதில் வரவில்லை. ஆனால் ஒலிபெருக்கி மட்டும் உடைந்து விழுந்தது. காவற்காரர்களுக்கும் பொதுமக்களுக்கும் கைகலப்பு.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“டேய் பாரத யுத்தம்!” என்றான் ஒரு கிண்டற்கார தடியன். இதற்குள் யாரோ ஒருவன் நெருப்புக் குச்சிக்கும் வேலை கொடுத்து விட்டான். “லங்கா தகனம்” நாடகம் ஆரம்பமாயிற்று. தீ",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வளர்ந்து, தாவியது. முதலாளியைக் காணவில்லை. காளிதேவி திரை தீப்பிடித்துக் கொண்டது. கொட்டகை முறிந்து எரிந்தபடி சாய்ந்தது. பக்கத்திலிருந்த வயற்புறத்தை நோக்கி நடிகர்கள் சிதறினர். ‘நடராஜ்’ ‘நடராஜ்’ என்று கத்திப்பார்த்தான் குமார். தன் உள்ளக் கோயில்கொண்ட அந்தக் குயில், வெந்து கருகிவிடுமோ என்ற குமுறல் எழுந்தது அவனுக்கு! என் கோமளவல்லி எங்கேயென ஓடினன். அப்போதுதான் திரெளபதி சிங்காரிப்பு அறையை விட்டுப் பறந்து கொண்டிருந்தாள். குமாரும் தொடர்ந்தான்...கொட்டகையில் தீ! குமாரின் இதய மெல்லாம் தீ!—அந்தத் தீ—தீங்கனியாக மாறப் போகிறதென்ற ஆசை அவனைக் காற்றுக்கிற்று. ஓடிக்கொண்டே யிருந்த திரெளபதி ஒரு வரப்பில் தடுக்கி விழுந்தாள். அவனும் விழுந்தான். அவன் இதயராணிக்குப் பேச்சு மூச்சில்லை. குமார் அவளைத் தன் மடியில் சாய்த்துக்கொண்டு அவள் கன்னங்களைத் தடவிக் கொடுத்தான். துண்டை எடுத்து முகத்தில் விசிறினான். நெஞ்சைத் தடவிக் கொடுத்தான். சில நிமிடங்கள் ஆனந்த மெளனம்.",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கண்ணே!”",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கட்டுமீறி யெழுந்த அந்த வார்த்தை...ஒரு பெரு மூச்சுடன் கலந்து கொண்டது. அவன் கலையரசியின் தலையை மெதுவாக உலுக்கினான். திரெளபதி தெளிவு பெற்று விழித்தாள். எழுந்து உட்கார்ந்தாள். வெகு தூரத்தில் எரிந்துகொண்டிருந்த கொட்டகையின் செந்நிற ஒளியில், தன் காதலியின் தங்கமேனி மெருகேறுவதை ரசித்தபடியே குமார் அசைவற்று விட்டான்!",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் நன்றுக நிதானம் பெற்றுவிட்டாள். குமாரின் குதூகலம் கொள்ளிடத்து வெள்ளமாயிற்று. “கண்மணி!” என்று அவளைக் கட்டியணைத்தான்...",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திரெளபதி சிரித்துக்கொண்டே, தன் தலையில் கை வைத்து ‘டோபா’ முடியை எடுத்தான்!",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kandathum Kadhal Ozhiga!",
+    "sourceScan": 146,
+    "printedPage": 137
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Murukku! Masala vadai!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hot tea!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nathan soda, colour, orange!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Bread, biscuit, betel and areca, Ashoka!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Elipendu cigarette, Taj Mahal beedi!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey, tea! Give me a single!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Give me a quarter-anna beedi!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Amma...I want bread!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Appa...buy me a soda!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Keep quiet, donkey! Soda won’t digest at night.”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! Are you starting or not?”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If you’re not starting...refund the ticket!”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Looks as though they’ll stage the show at midnight.”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You saffron fellows!....Everybody keep clapping....only then will he raise the scene.”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! Do you know how to whistle?”",
+      "sourceScan": 146,
+      "printedPage": 137,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I know very well. Isn’t that why I come to the drama?”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Then...start.”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Shh shh shh..shh.....”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Oho ho ho ho hush...”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "On the opening night of the play “Thirelapathi Vasthirabharanam” at the Devi Gana Sabha, the performance was late. As the time dragged on, the great noises rising from all four sides struck one another and scattered, making even that thatched theatre shed tremble.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The drama proprietor believed there was no need for briskness in rehearsing stage business. He conducted scene rehearsals only while the actors were putting on their costumes. He believed that very carelessness displayed his professional genius.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At the dangerous point when the audience could no longer be managed, the drama bell rang. The first scene was the council hall of the five Pandavas. In their hurry, Arjuna came carrying the mace, while Bhimasena came carrying the bow.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When Dharmar called, “Bhimasena,” and the man holding the bow bowed saying, “Anna,” laughter thundered as though the shed were shaking in an earthquake. The curtain dropped with a snap. After they corrected even their weapons, the curtain rolled up again. Thirelapathi entered with a swaying gait—the shed fell silent.",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“She’s...really beautiful!”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes! A face cut perfectly suited to the role.”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Look, that careless smile just flows!”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Flows and flows!”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What, are you mocking?”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No mockery...Kumar! Even over a stage actress, this much pennural....?”",
+      "sourceScan": 147,
+      "printedPage": 138,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is pennural all a stage actress has? Grace, refinement, emotional expression—everything is her slave. If life is not to lose its flavour, one must receive the love of queens of art like her.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Then say it—the love has begun.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes! When one sees a maiden and the heart is stolen at once—isn’t that love?”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What, are you raining poetry?”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It’s a rain of love, deaf fellow!”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, madness...it has become complete.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Who is mad? Fool! This is love at first sight!”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Kumar!”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nataraj! Don’t disturb me. I have no time to listen to you. She is about to open her mouth.”",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“These writers are all like this,” Nataraj muttered and turned back to the play.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kumar became both storm and boat.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“This fool Dharman is a wooden Maharaja! A golden idol comes and stands before him, and instead of embracing it he is holding court!” his mind mocked.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If only I were Dharman—why Dharman, even if I were acting Sahadevan...by now, this lovely peacock!.....” Kumar swallowed the saliva gathering in his mouth.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Right, tomorrow itself I must join this sabha as an actor!” His head rose as though he had discovered a sublime resolution.",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After finishing his lines to Bhimasena, Dharmar turned toward Thirelapathi. Thirelapathi stood bowing. Looking at her with a blossoming face, Dharmar began, **“Beloved! Sita! Come near!”** and—",
+      "sourceScan": 148,
+      "printedPage": 139,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—did not finish; the shed laughed, “Che! Go inside!”",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "No one was prepared to forgive the actor playing Dharmar on the ground that he had accidentally repeated a line from the previous day’s **“Ramayanam”** play. Once the shed imposed a restraining order on Dharmar, he began a vow of silence. Thirelapathi stood blinking in alarm. Thinking he might speak Dharmar’s line himself, the actor playing Arjuna began, “Beloved Thirelapathi, come near! My younger brother Arjuna is apparently going on digvijayam....”",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! You go inside too!” the shed ordered angrily.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The drama proprietor Pushparagam Pillai ran onto the stage and began, “Brothers—”",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Five brothers are standing there without moving...go talk to them!” shouted the shed.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "All five ran inside. “Hey, the five Pandavas are running! Thirelapathi is standing alone. Catch her! Catch her!” The shed roared with laughter.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thirelapathi too ran inside. The curtain fell. No one in the shed remained seated. A stone struck the face of Kali Devi painted on the front curtain. Crying “Kuyyo! Muraiyo!” the women ran in all directions.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Stones tore through the thatch and flew inside. The drama proprietor shouted from within over the loudspeaker; it was useless. “Are you all human beings?” the loudspeaker demanded. There was no reply to that either. Only the loudspeaker itself was smashed and fell. The guards and the public came to blows.",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey, Bharata war!” cried one mocking thug. By then someone had put a matchstick to work. The play “Lanka Dahanam” began. The fire—",
+      "sourceScan": 149,
+      "printedPage": 140,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—grew and leapt. The proprietor was nowhere to be seen. The Kali Devi curtain caught fire. The shed collapsed, burning as it fell. The actors scattered toward the fields nearby. Kumar shouted, “Nataraj! Nataraj!” He was tormented by the thought that the cuckoo enshrined in his heart might be burnt and charred. “Where is my Komalavalli?” he cried and ran. Just then Thirelapathi flew out of the dressing room. Kumar followed...fire in the shed! Fire all through Kumar’s heart!—and desire drove him on, imagining that fire would turn into a sweet fruit. Running on, Thirelapathi stumbled on a field ridge and fell. He too fell. His queen of the heart neither spoke nor breathed. Kumar laid her across his lap and stroked her cheeks. He took his towel and fanned her face. He rubbed her chest. A few minutes of blissful silence.",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Darling!”",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The word that burst beyond restraint mingled with a deep breath. He gently shook the head of his queen of art. Thirelapathi regained consciousness and opened her eyes. She sat up. In the red glow of the theatre shed burning far away, Kumar remained motionless, admiring the golden body of his beloved gleaming brighter.",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thirelapathi had now regained full steadiness. Kumar’s delight became a flood of the Kollidam. Crying, “My jewel!” he embraced Thirelapathi...",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thirelapathi laughed, put a hand to the head, and took off the ‘dopa’ wig!",
+      "sourceScan": 150,
+      "printedPage": 141,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  146,
+  147,
+  148,
+  149,
+  150
+ ]
+}

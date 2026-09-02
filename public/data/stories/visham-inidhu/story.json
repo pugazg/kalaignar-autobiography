@@ -1,0 +1,1492 @@
+{
+ "workId": "visham-inidhu",
+ "slug": "visham-inidhu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/visham-inidhu",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "விஷம் இனிது",
+  "en": "Visham Inidhu"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 32,
+  "printedPages": {
+   "first": 209,
+   "last": 215
+  },
+  "sourceScans": {
+   "first": 218,
+   "last": 224
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "விஷம் இனிது",
+    "sourceScan": 218,
+    "printedPage": 209
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஜெகவீரா, சத்தியவதியின் போக்கு எனக்குப் பிடிக்கவில்லை மகனே!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மா!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆம் செல்வனே, சத்தியவதி பருவப் பெண், பட்டத்து ராணி, அவள் இஷ்டப்படி வேற்றுவர்களோடு பேசுவது தகாது, தீக்குளித்த திலகங்களைப் பெற்றெடுத்த ராஜபுத்ர வம்சத்துக்கே அது அவமானம்!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மா, என்ன சொல்கிறீர்கள்? சத்தியவதி என்ன செய்தாள்? யாரோடு சரசம் செய்தாள்? சொல்லுங்கள்!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆத்திரப்படாதே! நேத்திரத்தைப் போல நீ அவளை நேசிக்கிறாய் என்பது எனக்குத் தெரியும். ஆனாலும்....!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னம்மா ஆனாலும்...?”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன் தம்பியும் அவளும் அடிக்கடி தனித்து உரையாடுவது எனக்குப் பிடிக்கவில்லை ஜெகவீரா! நீ கொஞ்சம் கண்டித்தால் அவள் கட்டுப்பட்டுவிடுவாள் என்றுதான் சொல்கிறேன்.”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தம்பி அர்தோலைப் பற்றி அப்படி யெல்லாம் தப்பாகச் சொல்லாதீர்கள் அம்மா! அவன் ஒரு சொக்கத் தங்கம்—சுடர் மணி விளக்கு!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஜெகவீரா! நீயோ டெல்லிக்குப் போகிறாய். வர நாள் பிடிக்கும். இப்போதே எச்சரித்துவிட்டேன். நான் சத்தியவதியை",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தவறு கூறுகிறேன் என்று கருதாதே. தவறான பாதைக்கு அவள் சென்றுவிடக்கூடாது என்பதுதான் என் எண்ணம்.”",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரியம்மா; கவனித்துக்கொள்ளுங்கள் எல்லாவற்றையும் நல்லவிதமாக! நான் புறப்படுகிறேன்.”",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஜெகவீரசிம்மன், ஒரு காலத்தில் ஒரிசா மக்களின் இதய விளக்கு. பதினேழாம் நூற்றாண்டில் அந்த மண்டலத்து மாந்தர்களின் மட்டற்ற செல்வாக்கைப் பெற்ற யுவராஜன். சக்கரவர்த்தி ஷாஜகானுக்கு முடிசூட்டுவிழா டில்லியில். அன்பழைப்பு வந்திருக்கிறது ஜெகவீரனுக்கு. வீரர் ஆயிரவருடன் அவன் டெல்லிப் பயணம் புறப்படும்போதுதான் அவனது தாய் அமிர்தராணி அங்குவந்து மருமகள் சத்தியவதியைப் பற்றிய புகார்களைக் கூறினாள். விடைபெற்றுச் செல்ல வந்த வேந்தன் தாக்குண்டான் சொல் வேலால்! புள்ளிமான்களுக்குப் பாய்ந்து அவன் பிணமாக்கியுள்ள புலிகளுக்குக் கணக்கில்லை. களத்தில் குதித்துவிட்டால் கண் மூடித் திறப்பதற்குள் கணக்கற்றோர் பிணமாவர் அவன் கத்தி வீச்சால்! அத்தகைய மாவீரனை அன்னையின் சொல்லம்புகள் சுருளவைத்து விட்டன. தன் இன்ப வாழ்வில் ஏதோ ஒரு இழுக்கு படர ஆரம்பித்துவிட்டது என்பதால்தான் அம்மா அந்த எச்சரிக்கைக் கணையைத் தொடுத்திருக்கிறாள் என்று எண்ணினான். அதனால் ஏங்கினான். டெல்லிக்குப் பயணமானான், வாடிய முகத்தோடு!",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் இருதயத்தை அரித்திடும் பிரச்சினையாகி விட்ட சத்தியவதி அவனது ஆசை ராணி. ஒரிசாவின் புதிய மீராபாய் இவள்தான் என்று சொல்லக்கூடிய அளவுக்குக் கடவுளிடத்திலே பக்திகொண்டவள். கணவன் ஜெகவீரனிடத்திலே பிரேமையும், தன் தேசத்தினிடத்திலே அன்பும் கொண்ட அந்த ராணிக்கு ஒரே ஒரு குறை மட்டும் இருந்துவந்தது. அக் குறையைத் தீர்த்துவிடச் சமயத்தை எதிர்நோக்கியிருந்தாள் சத்தியவதி. ஜெகவீரனின் தந்தையும், அவனது மாமனருமான வீரசிம்ம வேந்தர், புலி யொன்றினால் தாக்கப்பட்டு உயிர்விடும் தருணம், தன் மகன் ஜெகவீரனிடத்திலும் சத்தியவதியிடத்திலும் தனது இளைய மகன் அர்தோலை ஒப்புவித்துப் பாதுகாக்கும்படிச் சொன்னதோடு, தன் நினைவாக—“இராமபிரான் கோயில்” ஒன்று கட்ட வேண்டும் என்றும் கேட்டுக்கொண்டார். அப்போது தந்தையின் உத்திரவை நிறைவேற்றுவதாக ஜெகவீரன் வாக்களித்தான். தந்தையின் நினைவாகக் கட்டும் ஆலயம் மிகச் சிறப்புடையதாயிருக்க",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வேண்டும்; அதற்கு ஏராளமான பொன் வேண்டும்—பொக்கிஷ நிலை சரியில்லாத இந்தச் சமயத்தில் எப்படி அந்த ஆலயத்தை நிர்மாணிப்பது என்று தயங்கினாள். சத்தியவதியோ மாமனருக்கு அளித்த வாக்கை எப்படியும் நிறைவேற்ற வேண்டுமென்று துடித்துக்கிடந்தாள். மாமன் ஆசைப்படி அவரது இளைய செல்வன் அர்தோல் நன்கு பாதுகாத்தாள். அதன் காரணமாக அர்தோல், அவளைத் தன் சொந்த அன்னை போலவே பாவித்தான். ஆண்டவனுக்கு ஆலயம் விரைவில் கட்டியாகவேண்டும் என்ற ஆசையைச் சத்தியவதி, அடிக்கடி அர்தோலிடம் தெரிவித்து வந்தாள்.",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அர்தோல்! அரசர் டில்லியிலிருந்து திரும்ப நாளாகுமல்லவா?”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆம் அம்மா! நான்கு மாதங்களாவது பிடிக்கும்.”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதற்குள் ராமன் ஆலயத்தை நாம் எப்படியும் கட்டி முடித்துவிட்டால் அவர் திரும்பி வந்ததும் எவ்வளவு மகிழ்ச்சி அடைவார் தெரியுமா?”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தாயே! அது உண்மைதான். தேவாலயத்தை நாளைக்கே எழுப்பிவிடலாம். அதற்கான பொருள் கருவூலத்தில் இல்லையே!”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எங்கேயோ வைரச் சுரங்கம் இருப்பதாகச் சொன்னாயே; அது என்ன ஆயிற்று அர்தோல்?”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம் இருக்கிறது. நாட்டு மக்களின் வரிப்பளுவைத் தடுக்க அந்த வைரங்களைப் பயன்படுத்தலாமென எண்ணினேன்.”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முதலில் என் மனப் பளு தீரவேண்டும் அர்தோல்! ராமனின் ஆலயம் அமைந்துவிட்டால் நாட்டிலே எக்கேடும் கிளம்பாது. இருக்கும் தீமைகளும் அழிந்துபடும். ஆகையால் முதலில் கோயில் திருப்பணியைக் கவனி!”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வைரச் சுரங்கத்திலிருந்து மிக ரகசியமாக வைரங்களைச் சேமிக்க வேண்டும். சுரங்கம் நம் நாட்டில் இருப்பது தெரிந்தால் உடனே சுரண்டும் டெல்லி, சூறாவளி வேகத்தில் புறப்பட்டு வரும் வைரம் எங்கே என்று வாயைப் பிளந்தபடி!”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி அர்தோல்; டெல்லியில்தான் விழாவும் வேடிக்கையுமாக இருக்கிறதே; இந்த நல்ல நேரத்தில் நாம் வைரங்களை ரகசியமாகச்",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "space"
+     },
+     {
+      "text": "சேமித்து, வைகுந்த நாதனின் கோயிலைக் கட்டி முடித்து விடுவோம்!”",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கட்டளை தாயே!”",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சத்தியவதியின் எண்ணத்தை நிறைவேற்ற அர்தோல் புறப்பட்டுவிட்டான்.",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முடிசூட்டு விழாவுக்கு முன்கூட்டியே அழைக்கப்பட்டிருந்தும் ஜெகவீரனுக்கு அங்கு மனம் இருப்புக் கொள்ளவில்லை. சத்தியவதி சாகசக்காரியா? அல்லது பெற்றெடுத்த மாதா பொய்க்குற்றம் சுமத்துகிறாளா? அல்லது தம்பி அர்தோல் தான் துரோகம் புரிகிறானா? என்ற மனப்போராட்டம் அவன் உள்ளத்தில் குமுறி எழுந்தது. அந்தப்போரின் உச்சக் கட்டமாக, அவனுக்கு ஒரிசாவிலிருந்து ஓர் ஓலையும் வந்து சேர்ந்தது. பிரித்துப் படித்தான்; மீண்டும் கண்ணை விரித்துப் படித்தான். ஆம்—அவனது அன்னை எழுதிய கடிதம்தான் அது.",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அன்புச் செல்வா! அன்றே சொன்னேன், வெள்ளம் வருவதற்கு முன்பே! கண்டெடுக்கிறேன் என்றாய் அப்போது. இப்போது விளைவு விபரீதமாகி விட்டது. ஒவ்வொரு அர்த்த ராத்திரியிலும் அர்தோலைச் சந்திக்கச் சத்தியவதி புறப்பட்டு விடுகிறாள். இதை என்னால் மெய்ப்பிக்க முடியும். கேட்டால் சொல்லுகிறாள்: கோயில் கட்டத் திட்டம் போடுகிறோம் என்று! சுரங்கம் நமது வம்சத்தை அழித்து விடுவதற்கு முன்பு நீ புறப்பட்டு வா!",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உன் அன்னை",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**அமிர்த ராணி”**",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஓலையைக்கண்ட ஜெகவீரன் தலசுழன்றது. டில்லி பாதுஷாவின் பட்டாபிஷேக மண்டபத்திலே அமுத வீணையின் இன்ப நாதம்! வீரசிம்மனின் மனக்குகையில் அறுந்த நரம்புகளின் முறுக்குப் பிரியும் ஜீவனற்ற ‘கீச்’ ஒலி! அங்கே முரசின் முழக்கம், இங்கே ஒரிசா அரசின் கலக்கம். உடனே புறப்பட்டுவிட்டான் தன்னகம் நோக்கி!",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரவுநேரம். வைரம் நிறைந்த பேழை. அந்தப் பேழைதான் ராமருக்குக் கோயிலாக உருவெடுக்கப் போகிறது. கோயில் கட்டுவதற்கு முன்பே கோயிலில் வைக்க விக்கிரகம் தயாராகிவிட்டது. அதன் முன்னே அமர்ந்து ராமகீர்த்தனை பாடிக்கொண்டிருக்",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கிறாள் சத்தியவதி. தன் மாமனரின் அன்புக் கட்டளை நிறைவேறப் போகிறது. மனைவன் திரும்பிவரப் போகிறான். வந்ததும் ஆலயத்தைக் கண்டு அதிசயத்தால் மகிழப்போகிறான். நாடு சுக மடைய இந்த ராமபிரான் கோயில்கொள்ளப்போகிறான். இப்படியெல்லாம் எண்ண அலைகள் எழும்பிடச் சத்தியவதி பூஜையில் ஈடுபட்டிருந்தாள். பூஜை முடிந்தது. வைரங்களை எடுத்து மறைவாக வைப்பதற்காகச் சத்தியவதி அர்தோலை அழைத்தாள்.",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அர்தோல்! அர்தோல்!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதோ வந்து விட்டேனடி கள்ளி!” என்று கூறியபடி அங்கே நுழைந்தான் ஜெகவீரன். சத்தியவதி திடுக்கிட்டுத் திரும்பினாள்.",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிரபு!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எட்டி நில்! கண்ணுக்கு அழகு தரும் காஞ்சரங் கனியே! இந்த மண்ணுக்கே அவமானம் விளைத்த மாபாதகி! எட்டி நில்!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன சொல்லுகிறீர்கள்?”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எங்கே உன் ஆசைநாயகன் அர்தோல்?”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ! அப்படிச் சொல்லாதீர்கள் பிரபு! அர்தோல் எனக்கு மகன்போல!—அவன் என் ஆசைச் செல்வன்.”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மகனேதான் நடு ராத்திரியிலே—தனியிடத்திலே—அடிக்கடி சந்தித்துப் பேசுகிறாய்க்கும்?”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்—அதில் என்ன தவறு! ஆண்டவனுக்கு ஆலயம் அமைக்க அர்தோலுடன் பேசினேன். திட்டங்கள் தீட்டினோம். திருப்பணி ஆரம்பமாகிவிட்டது!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தீயே! போதும் நிறுத்து—”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதோ இந்த வைரங்களைப் பாருங்கள் பிரபு! ராமர் ஆலயம் கட்டுவதற்குச் சேர்த்தவை. இப்போதாவது நம்புங்கள்.”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆலயம் கட்ட அல்லடி வைரம்! அர்தோல் உன் ஆலிங்கனத்துக்குத் தந்த பரிசு இது! தெரியும் எனக்கு!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யோ! அய்யோ!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏனடி காதை மூடிக்கொள்ளுகிறாய்? கண்ணை மூடிக் கொண்டு காமக்கடலில் விழுந்துவிட்டு, ஊரை ஏமாற்ற ராமக் கடவுளைப் பூசிப்பவளே! பாசாங்கு செய்யாதே!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிரபு! என் கற்பை இகழாதீர்கள். என் இருதயத்தின் சாபத்துக்கு இரையாகாதீர்கள்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னடி நீலி! அர்தோல்மீது உனக்குக் கள்ளக் காதல் இல்லையானால் இதோ இந்த விஷத்தை உன் கையாலேயே அவனுக்குக் கொடு பார்ப்போம்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவனுக்கா; வேண்டாம்! நானே சாப்பிட்டுச் சாகிறேன்!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முடியாது! அர்தோல் உன் கையால் விஷம் அருந்த வேண்டும்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்படியே ஆகட்டும்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சத்தியவதி விஷத்தை வாங்கிக்கொண்டு ஓடுகிறாள்.",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேவாலயத் திட்டங்களைப் போட்டவாறு இருந்த அர்தோல் அயர்ந்து தூங்கிவிட்டான். அப்போதுதான் கையில் விஷக் கோப்பையுடன் அங்கே சத்தியவதி நுழைந்தாள்.",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அர்தோல்!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னம்மா?”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தா—இந்தப் பாலைக்குடி!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பாலா? இந்நேரத்திலா?”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்—என்னைப் பத்தினியென நிரூபிக்க நீ இந்தப் பாஷாணம் கலந்த பாலைக் சாப்பிடவேண்டுமாம்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன?—தாங்கள்—?”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன் ஆசை நாயகியெனக் குற்றம் சாட்டிவிட்டார் அரசர்—இல்லை யென்பதை நிரூபிக்க, என் கையாலேயே நீ விஷம் சாப்பிட வேண்டுமாம்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ! அம்மா! யார் கட்டிவிட்ட பழி இது? அரசரா நம்பினார் இதை? என் அண்ணை, இந்த வீண் புகார்களை நம்பி, தம்பியைத் தகாப் போக்குடையோன் எனக் கூறவும் துணிந்து விட்டாரா? அண்ண! அண்ண என் மனம் புண்ணாகும்படி என் அண்ண அப்படிப் பேசினீர்கள்? அய்யோ! அம்மா! என்னால் தாங்க முடியவில்லையே!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பேசநேரமில்லை அர்தோல்! என் அன்புமகனே, நீ விஷத்தைச் சாப்பிட்டால்தான் ராஜபுத்ர வம்சத்தின் மானமே காப்பாற்றப்படும்.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சாப்பிடுகிறேன். ஏ விஷமே! நீ தான் என் அண்ணையை அவதூறிலிருந்துகாப்பாற்றுகிறாய். ராமருக்குக் கோயில் கட்டிடத் துவங்கினோம்—ராமர் சிலையும் அழகாகச் செதுக்கினோம்—அந்த ராமரோ—அவர் பரிவாரமோ வந்து என் அண்ணையின் தூய்மையை என் அண்ணனிடம் சொல்லத் துணிந்திடவில்லை! தாயின்மீது, புரியாதார் சுமத்தும் பழியை—விஷமே—நீயாவது துடைக்க வந்தாயே! உனக்கு நன்றி! விஷம் இனிது! விஷம் மிக இனிது! ஆண்டவனைவிட இனிது! நம்பினோருக்குக் கை கொடுக்காத ராமபிரானைவிட இந்த விஷம் இனிது” என்று கூறியபடி சத்தியவதியின் கையிலிருந்த விஷத்தை வாங்கிக் குடித்தான்—வீழ்ந்தான் இறந்தான்.",
+      "sourceScan": 224,
+      "printedPage": 215,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சத்தியவதி கண்ணீரால் அவனைக் குளிப்பாட்டினாள். தன் தவற்றைப் பிறகு தானே உணர்ந்து கொண்டான் ஜெகவீரன்! அமிர்தராணியும் பிறகு அழுதாள். எல்லோரும் காரியம் முடிந்த பிறகு கண்ணீர் வடித்துப் புலம்பினர்கள். அப்படிப் புலம்பாமலிருக்க, அய்யன் ராமபிரான் ஜெகவீரனிடம் வந்து, சத்தியவதியின் தூய்மையை எடுத்துக் கூறியிருக்கலாம்! எப்படிக் கூறமுடியும்? கூறியிருந்தால் அர்தோல் **ஆண்டவனை விட ஆலஹாலம் இனிது** என்று கூறியிருக்கமாட்டானே!",
+      "sourceScan": 224,
+      "printedPage": 215,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "◆ ◆ ◆",
+      "sourceScan": 224,
+      "printedPage": 215,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Visham Inidhu",
+    "sourceScan": 218,
+    "printedPage": 209
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Jegaveera, I do not like Sathyavathi’s conduct, my son!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mother!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes, my dear. Sathyavathi is a young woman and the crowned queen. It is not proper for her to speak with other men as she pleases. It is a disgrace to the very Rajput lineage that gave birth to women of distinction who entered the fire!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mother, what are you saying? What has Sathyavathi done? With whom has she dallied? Tell me!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not get angry! I know that you love her as you love your own eyes. Even so....!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is this ‘even so,’ Mother...?”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I do not like the way your younger brother and she often talk alone, Jegaveera. I only say that if you rebuke her a little, she will keep within bounds.”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mother, do not speak wrongly like that about my younger brother Arthol! He is pure gold—a lamp of radiant light!”",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Jegaveera! You are going to Delhi. It will take time for you to return. I have warned you now itself. Do not think that I am finding fault with Sathyavathi—",
+      "sourceScan": 218,
+      "printedPage": 209,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—I only want to see that she does not stray onto a wrong path.”",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, Mother. Take good care of everything. I am leaving.”",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Jegaveerasimman had once been the lamp of the hearts of the people of Orissa. In the seventeenth century he was the crown prince who enjoyed immeasurable influence among the people of that region. Emperor Shah Jahan’s coronation was to take place in Delhi. An affectionate invitation had come to Jegaveera. It was just as he was setting out for Delhi with a thousand warriors that his mother, Amirtharani, came and laid these complaints about her daughter-in-law Sathyavathi before him. The king who had come to take leave was struck by the spear of her words. There was no count of the tigers that had become corpses when he sprang upon them like spotted deer. Once he leapt into the battlefield, countless men would fall dead in the blink of an eye beneath the sweep of his sword. Yet such a mighty warrior was made to curl inward by his mother’s arrows of speech. He thought that she must have fired that warning shaft because some stain had begun to spread across his happy married life. He grieved over it. With a withered face he set out for Delhi.",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sathyavathi, who had now become the problem gnawing at his heart, was his beloved queen. So deep was her devotion to God that she could be called the new Mirabai of Orissa. The queen, who loved her husband Jegaveera and also loved her country, had only one unfulfilled concern. She had been waiting for the right time to remove it. Jegaveera’s father—and Sathyavathi’s father-in-law—King Veerasimman had been attacked by a tiger. As he lay dying, he entrusted his younger son Arthol to Jegaveera and Sathyavathi and asked them to protect him. He also requested, as a memorial to himself, that a temple to Lord Rama be built. Jegaveera promised then that he would fulfil his father’s command. The temple raised in his father’s memory had to be splendid—",
+      "sourceScan": 219,
+      "printedPage": 210,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—it would require a great deal of gold. With the treasury in poor condition at that time, Sathyavathi wondered how such a temple could be built. Yet she longed somehow to fulfil the promise made to her father-in-law. In keeping with his wish, she carefully protected his younger son Arthol. Because of that, Arthol regarded her exactly as his own mother. Sathyavathi repeatedly told Arthol of her desire to see the temple for the Lord built quickly.",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Arthol! The king will take a long time to return from Delhi, won’t he?”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes, Mother. It will take at least four months.”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If we somehow complete Rama’s temple before then, do you know how happy he will be when he returns?”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mother, that is true. We could raise the temple tomorrow itself. But there is no money for it in the treasury!”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You once said there was a diamond mine somewhere. What became of that, Arthol?”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes, there is one. I thought we could use those diamonds to spare the people the burden of taxation.”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“First the burden on my mind must be lifted, Arthol! Once Rama’s temple is built, no evil will arise in the country, and the evils already there will be destroyed. So attend first to the temple work!”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“We must gather diamonds from the mine in utmost secrecy. If Delhi learns that the mine is in our country, it will set out at cyclone speed, mouth wide open, asking where the diamonds are!”",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, Arthol. In Delhi there are festivals and celebrations now. In this favourable time, let us secretly—",
+      "sourceScan": 220,
+      "printedPage": 211,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—collect the diamonds and finish building the temple of Vaikunta Nathan!”",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Your command, Mother!”",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Arthol left to carry out Sathyavathi’s wish.",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Though he had been invited well in advance for the coronation, Jegaveera could find no rest for his mind there. Was Sathyavathi an adventuress? Or was the mother who had borne him making a false accusation? Or was it his brother Arthol who was betraying him? This battle raged inside him. At the very height of that inner war, a palm-leaf message arrived for him from Orissa. He opened it and read it; he widened his eyes and read it again. Yes—it was a letter from his mother.",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My dear son! I warned you that day, before the flood came! You said then that you would find out. Now the result has turned disastrous. Every midnight Sathyavathi sets out to meet Arthol. I can prove it. If questioned, she says, ‘We are drawing up plans to build the temple!’ Before the mine destroys our lineage, set out and come back!",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Your mother",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Amirtha Rani”**",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At the sight of the palm leaf, Jegaveera’s head spun. In the coronation hall of the Badshah of Delhi, the sweet resonance of the veena! In Veerasimman’s mental cave, the lifeless screech of snapped nerves twisting apart! There the roar of drums; here the turmoil of the Orissa king. At once he set out toward his own land.",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was night. A chest full of diamonds. That chest was to become a temple for Rama. Before the temple itself had been built, the image that would be installed in it was already ready. Before it sat Sathyavathi, singing hymns to Rama—",
+      "sourceScan": 221,
+      "printedPage": 212,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—while her thoughts rose in waves. Her father-in-law’s loving command was about to be fulfilled. Her husband was about to return. When he came and saw the temple, how happy he would be in astonishment! For the country to prosper, this Lord Rama was about to take residence in a temple. With such thoughts, Sathyavathi immersed herself in worship. The worship ended. To take the diamonds away and place them in hiding, Sathyavathi called Arthol.",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Arthol! Arthol!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here I am, you sly woman!” Jegaveera said as he entered. Sathyavathi turned with a start.",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My lord!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Stand back! O kanjarang fruit that gives beauty to the eye! Great sinner who has brought shame upon this very earth! Stand back!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What are you saying?”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Where is your lover Arthol?”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! Do not say that, my lord! Arthol is like a son to me—he is my beloved child.”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A son, is he? Is that why you meet him alone at midnight and talk with him again and again?”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes—what is wrong in that? I spoke with Arthol about raising a temple for the Lord. We drew up plans. The sacred work has already begun!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Fire! Enough—stop!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Look at these diamonds, my lord! They were gathered to build Rama’s temple. At least now believe me.”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Those diamonds are not for building a temple, woman! They are a gift Arthol gave you for your embrace. I know!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayyo! Ayyo!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Why do you cover your ears? You shut your eyes, fall into the sea of lust, and worship the god Rama to deceive the town. Do not pretend!”",
+      "sourceScan": 222,
+      "printedPage": 213,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My lord! Do not insult my chastity. Do not become prey to the curse of my heart.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What, you deceiver! If you have no illicit love for Arthol, then take this poison in your own hand and give it to him. Let us see.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“To him? No! I myself will eat it and die!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No! Arthol must drink the poison from your hand.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Let it be so.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sathyavathi took the poison and ran.",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Arthol, who had been working out the temple plans, had fallen asleep from exhaustion. It was then that Sathyavathi entered with a cup of poison in her hand.",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Arthol!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is it, Mother?”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here—drink this milk!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Milk? At this hour?”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes. To prove that I am a chaste wife, they say that you must drink this milk mixed with pashaanam from my hand.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What? You—?”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The king has accused me of being your lover. To prove that it is not so, you are to eat poison from my very hand.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! Mother! Who tied this slander upon us? Did the king believe it? My elder brother—believing these empty complaints, did he even dare to call his younger brother one of improper conduct? Brother! Brother, why did my brother speak so as to wound my heart? Ayyo! Mother! I cannot bear it!”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“There is no time to talk, Arthol! My beloved son, only if you consume the poison will the honour of the Rajput lineage be saved.”",
+      "sourceScan": 223,
+      "printedPage": 214,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I will drink it. O poison! You are the one who saves my elder brother from slander. We began building a temple for Rama—we had even carved a beautiful image of Rama. Yet that Rama—or his retinue—did not dare come and tell my brother of my purity! Poison, at least you have come to wipe away the stain that those who do not understand have cast upon Mother! Thank you! Poison is sweet! Poison is very sweet! Sweeter than God! This poison is sweeter than Lord Rama, who does not extend a hand to those who trust him.” Saying this, he took the poison from Sathyavathi’s hand, drank it, fell—and died.",
+      "sourceScan": 224,
+      "printedPage": 215,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sathyavathi bathed him in her tears. Only afterwards did Jegaveera himself realise his mistake. Amirtharani too wept afterwards. Everyone shed tears and lamented after the deed was done. To prevent such lamentation, Lord Rama could have come to Jegaveera and explained Sathyavathi’s purity! But how could he? Had he done so, Arthol would not have said that **Aalahalam is sweeter than God**!",
+      "sourceScan": 224,
+      "printedPage": 215,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "◆ ◆ ◆",
+      "sourceScan": 224,
+      "printedPage": 215,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  218,
+  219,
+  220,
+  221,
+  222,
+  223,
+  224
+ ]
+}

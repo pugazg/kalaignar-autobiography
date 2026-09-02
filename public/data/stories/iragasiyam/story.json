@@ -1,0 +1,937 @@
+{
+ "workId": "iragasiyam",
+ "slug": "iragasiyam",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/iragasiyam",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "இரகசியம்!",
+  "en": "Iragasiyam!"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 13,
+  "printedPages": {
+   "first": 99,
+   "last": 102
+  },
+  "sourceScans": {
+   "first": 108,
+   "last": 111
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "இரகசியம்!",
+    "sourceScan": 108,
+    "printedPage": 99
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் கவிஞன், பொன்னும் மணியும் மின்னும் வைரமும் பூட்டி மகிழ்வான் தமிழ்த்தாய்க்கு! தங்கத்தால் ஆன கட்டிலிலே சந்தனத் தொட்டிலிலே தமிழ்க் குழவியைச் சீராட்டிப் பாராட்டுவான். கண்ணே! முத்தே! தமிழ்ப்பண்ணே! என்றெல்லாம் கவிதைக் காதலியோடு கொஞ்சுவான். அவன் புகழ், குன்றின் மேல் ஜோதியாயிற்று.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எழுத்தின் வேந்தர் என்றனர் அவனை.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கருத்தின் செல்வன் எனக் கவி பாடினர் மக்கள்.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பழுத்த அனுபவம். கொழுத்த சொற்கள். இவைகளை வைத்துக் கொண்டு அவன் தமிழுலகில் நிமிர்ந்து நின்றான்.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**ஏடுகள்...**அவன் எழுதுக்கோவை இல்லாவிட்டால் இனிக்காது!",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**நாடகம்...**அவன் பாடல் ஒலிக்காவிட்டால் சோபிக்காது!",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**திரை உலகம்...**அவன் கீதங்கள் முழங்காவிடில் சுவைக்காது! இப்படி வளர்ந்தான் அவன்.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஏழைகளை ஊக்குவிப்பான்! கோழைகளை வீரராக்குவான்!",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தாழையின் முள்ளும் வாழையின் குருத்தும் சேருமோ?” எனக்கேட்டுத் “தமிழர் பண்பும் ஆரியர் கலையும் ஒட்டாது; கிழிந்துவிடும்” என்பதற்கு விளக்கம் தருவான். அவனைப் பாராட்டிப் பலர் எழுதினர்.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கவிஞனே! கலைவாணனே! கருத்துச் செல்வமே! கண்டேன் உமது கவிதையை. விதவைத்துயர் பற்றி வேதனை நிரம்பிய கீதம் அமைத்தீரே; அதுகண்டு விம்மியே நீர் பெருக்கினேன். இத்தகைய பெருமை மிகுந்த உம்முடன் இருந்து பணி செய்ய விழைகிறேன். விருப்பம் நிறைவேறுமோ? விடுத்திடுவாய் பதில். இங்கனம் வில்லவன்.”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**இப்படி ஒரு மடல்!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏட்டிலே பாட்டு கண்டேன்; எழுத்தின் வித்தகனே! என் இதயம் கவர்ந்தவனே! ஏழை நான். எனக்கோர் உதவி செய்வாயோ? கவிதை எழுதுவதில் அடியேன் திறமை யுடையவன். என் கவிதைத் தொகுப்புகளைப் புத்தகமாக்கும் பணியை மேற்கொள்வாயேல் என் ஆசை நிறைவேறும். உடன் பதில் தருவாய்! காத்திருப்பேன். இப்படிக்கு இன்மொழியான்.”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**இப்படி ஒரு முடங்கல் வரும்!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கடல் மடை திறந்தாற்போல் கருத்து மழை பொழியும் கவிஞர் ஏறே! கடையேன் கண்ணப்பனின் கண்ணீரைத் துடைப்பீர்! எனக்குக் கவிதை எழுதப் பல நாட்களாய்ப் பேரவா! அந்த எண்ணத்தை ஈடேற்றுவீராக!”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**இப்படி ஒரு கடிதம்!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாடகத்தில் உமது சொற்றிறன் போற்றற்குரியது. கதாநாயகனும் கதாநாயகியும் பாத்திரத்தால் உயர்வு பெற்றதைவிட உமது பாட்டால் அதிகம் மதிப்புப் பெற்றனர். உமது பாட்டை இசைக்கும் பெரும் வாய்ப்பு எனக்குக் கிட்டுமோ? உம் நாடக மேடை எனக்கு எட்டுமோ? தாயார் காட்சியில் சாமரம் ஏந்தினாலும் சரி; உமது பாட்டொலிக்கும் அரங்கில் அரிதாரம் பூசி நின்றேன் அடியேன் என்ற புகழ் வந்தால் போதும்; புண்ணியனே! கண்ணியனே! புலியே! சிங்கமே! புனிதனே! பொற்புடன் எனக்கோர் புதுப்பணி தருவீர்! வணக்கம், வணங்காமுடி.”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**இப்படி ஒரு தாள்!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“திரையுலக ஜோதியே! ஆதியே! நீதியே! வீதியே கதியென்று கிடக்கும் இந்த வீணன் கலையுலகில் காலெடுத்து வைக்கக் கனவு காண்கிறேன். கடலில் செல்லக் கட்டுமரம் வேண்டுமென்பார்கள். காசாசைக்காக அல்ல; கலையுலகத்துப் பணிபுரிய—",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதுவும் உன் கவிதைகளைப் பாடித் தொண்டாற்றத்—தோழனே தொல்லைப்படும் நான் எல்லையில்லா ஆவல் கொள்கிறேன், துணை புரிவாய்! இங்கனம் தாய்மணி.”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**இப்படி ஓர் அஞ்சல்!**",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏழைகளைப்பற்றி எழுதும் என் அய்யனே! என் கதை சோகம் நிறைந்தது. எனக்கோர் வழிகாட்டு!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாடகத்தில் ஒரு வேடம்”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“திரையுலகில் ஒரு காட்சி”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ எழுதும் ஏட்டினிலே ஒரு வாய்ப்பு”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பணமல்ல எனக்குத் தேவை! பணிபுரிவேன் கலைத் துறைக்கு”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன் பாட்டில் என் வாயால் பாடவேண்டும்”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரியென்று சொல். இல்லையேல் என் சாவை ஏற்றுக் கொள்”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பல முடங்கல் எழுதினேன்—பதிலில்லையே; ஏன்?”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“‘வேலையில்லை’ என எழுதிவிட்டீர் வேதனை தாங்கவில்லை”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாடக மேடை!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“திரை உலகம்!!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பத்திரிகை அலுவலகம்!!!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆயிரக்கணக்கிலே அவன் புகழ்பாடிக் கடிதங்கள் குவிந்தன. புகழ் பாடும் கடிதங்கள் எல்லாம் அவன் உதவியை நாடி நின்றன. அவன் வளர்ச்சிக்கு அளவே இல்லை. வளர்ந்தான்; வளர்ந்தான்; வளர்ந்து கொண்டே போனான்!",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நாள் திடீரென அவன் இல்லத்தில் ஒப்பாரி கேட்டது! அலறல் வந்தது கேட்டு அனைவரும் ஓடினர். ஊரே திரண்டு ஓடியது! அவன் இறந்துவிட்டான். இறவாப் புகழ்பெற்ற அந்தக் கவிஞன் இறந்துவிட்டான். அதுவும் தற்கொலை செய்து கொண்டு இறந்துவிட்டான். கோழைகளை வீரராக்கிடப் பாடிய அந்தக் கோமான் இறந்துவிட்டான். தற்கொலை செய்து கொண்டான், தமிழ்த் தாய்க்குச் சிலம்பு பூட்டிச் சிங்கார அணிகள் சூட்டி மகிழ்ந்தவன்.",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உத்திரத்திலே தொங்கிக்கொண்டிருந்து அந்த உத்தமனின் பிணம்!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஊர் கேட்டது ‘என் வலுவில் உயிர்விட்டான்?’ என்று!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உலகமே வியந்தது; ஒரு குறைவுமில்லாதவன் உயிர்விட்டுக் கொள்ள யாது காரணமென அறியாமல்! அவனே நிம்மதியாகத் தொங்கிக் கொண்டிருந்தான். போலீசார் வந்தனர். பிரேதத்தைப் பரிசோதித்தனர். கவிஞனின் சட்டைப் பையிலே ஒரு காகிதத் துணுக்கைக் கண்டனர். அதில் அவன் எழுதியிருந்தான்—",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**“என் சாவுக்குக் காரணம்; என் காலடி யிலே உள்ள பெட்டிதான்”**—என்று!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போலீசார் பெட்டியைத் திறந்து பார்த்தனர். பொது மக்களும் ஆவலோடு கவனித்தனர். பெட்டி திறக்கப்பட்டது. அதில் ஆயிரக்கணக்கான **சிபாரிசுக் கடிதங்கள்** இருந்தன; “எனக்கு வேலை கொடு”—“நான் பாடுவேன். திரையுலகில் வாய்ப்பு வேண்டும்” என்பது போல!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**இப்போது புரிந்துவிட்டது எல்லோருக்கும்  \nஅவன் ஏன் செத்துக்காட்டினான் என்று!**",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Iragasiyam!",
+    "sourceScan": 108,
+    "printedPage": 99
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He was a poet. He delighted in adorning Mother Tamil with gold and gems and glittering diamonds! On a bed of gold, in a cradle of sandal, he would fondle and praise the Tamil child. “My eye! My pearl! My Tamil melody!”—with such words he would caress his beloved of poetry. His fame became a beacon upon a hill.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They called him the king of writing.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The people sang of him as a treasure of thought.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ripened experience. Rich, weighty words. With these he stood upright in the Tamil world.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Periodicals...** without his garland of writing, they would not taste sweet!",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Drama...** without his song sounding, it would not shine!",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**The world of cinema...** without his songs resounding, it would have no flavour! Thus he grew.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He would encourage the poor! He would turn cowards into heroes!",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Can the thorn of the screw-pine and the tender shoot of the plantain join together?” he would ask, and explain that “Tamil culture and Aryan art will not adhere; they will tear apart.” Many wrote praising him.",
+      "sourceScan": 108,
+      "printedPage": 99,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“O poet! Lord of art! Treasure of thought! I have seen your poem. You composed a song filled with anguish about the sorrow of widows; on seeing it I sobbed and shed floods of tears. I long to work beside one of such greatness. Will my desire be fulfilled? Send me a reply. Thus, Villavan.”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**A letter like this!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I saw your song in the journal, master of writing! One who has captured my heart! I am poor. Will you do me a favour? This humble one has talent in writing poetry. If you will undertake the task of publishing my poetry collections as a book, my wish will be fulfilled. Send a reply at once! I shall wait. Yours, Inmozhiyaan.”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**A mudangal like this would arrive!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“O lion among poets, who pours a rain of thought as though a sea-sluice had opened! Wipe the tears of this lowly Kannappan! For many days I have had a great longing to write poetry! Fulfil that thought for me!”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**A letter like this!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Your skill with words in drama deserves praise. The hero and heroine gained greater esteem from your song than from the roles themselves. Might I receive the great opportunity to sing your song? Might your dramatic stage come within my reach? Even if I merely hold the chamaram in the mother’s scene, that is enough; if I gain the fame that this humble one stood wearing stage make-up in the theatre where your song resounds, that is enough. O virtuous one! O honourable one! Tiger! Lion! Holy one! Grant me a new task with splendour! Greetings, Vanangamudi.”",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**A sheet like this!**",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“O light of the cinema world! Origin! Justice! This useless fellow, whose fate is to lie in the street, dreams of setting foot in the world of art. They say one needs a catamaran to go to sea. Not from greed for money; to serve in the world of art—",
+      "sourceScan": 109,
+      "printedPage": 100,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—and that too to serve by singing your poems—friend, I who suffer hold limitless longing; help me! Thus, Thaaymani.”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**A postal letter like this!**",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My lord who writes about the poor! My story is filled with sorrow. Show me a way!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A role in a play”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A scene in the cinema world”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“An opportunity in the journal you write”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Money is not what I need! I will serve the field of art”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My mouth must sing in your song”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Say yes. Otherwise accept my death”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I wrote many mudangal—there is no reply; why?”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“‘There is no work,’ you wrote; I cannot bear the pain”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The dramatic stage!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The cinema world!!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The newspaper office!!!”",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Letters praising him piled up by the thousands. Every letter that sang his fame stood seeking his help. There was no limit to his growth. He grew; he grew; he went on growing!",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day, suddenly, the sound of lamentation rose from his house! Hearing the cries, everyone ran there. The whole town gathered and rushed in. He had died. That poet who had won undying fame had died. And he had died by suicide. That lord who had sung to make cowards into heroes had died. He had killed himself—the man who delighted in fastening anklets on Mother Tamil and decking her in beautiful ornaments.",
+      "sourceScan": 110,
+      "printedPage": 101,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The body of that noble man hung from the roof-beam!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The town asked, “By what force did he give up his life?”",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The whole world wondered, unable to understand why a man lacking nothing had taken his own life. He himself hung there peacefully. The police came. They examined the body. In the poet’s shirt pocket they found a scrap of paper. On it he had written—",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**“The reason for my death is the box lying at my feet”**—thus!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The police opened the box. The public too watched eagerly. The box was opened. Inside were thousands of **recommendation letters**: “Give me a job”—“I can sing. I want a chance in cinema”—and so on!",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Now everyone understood  \nwhy he had shown them his death!**",
+      "sourceScan": 111,
+      "printedPage": 102,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  108,
+  109,
+  110,
+  111
+ ]
+}

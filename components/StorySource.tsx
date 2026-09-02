@@ -33,11 +33,17 @@ import type { StoryProvenance } from "@/data/stories";
 export default function StorySource({ slug, prov }: { slug: string; prov: StoryProvenance }) {
   const s = prov.source;
   const scope = prov.storyScope;
+  // BOOKLET-ONLY blocks. An anthology story has no physical publication of its own, no scan whose
+  // printed page is unknown, and no publisher erratum list, so these are undefined for those works and
+  // each section below is omitted rather than rendered empty or filled with collection-level facts.
   const book = prov.physicalPublication;
   const pp = prov.printedPageUncertainty;
-  const join = prov.crossScanJoinPolicy;
   const errata = prov.errata;
+  const join = prov.crossScanJoinPolicy;
   const en = prov.english;
+  // ANTHOLOGY-ONLY.
+  const anthology = prov.anthology;
+  const titleWitness = prov.titleWitness;
 
   // `machineId` marks the rows that are opaque identifiers rather than language. Those may break at
   // any character, because a 64-character hash has no word boundaries to break at and would
@@ -45,7 +51,9 @@ export default function StorySource({ slug, prov }: { slug: string; prov: StoryP
   // break only between words — `break-all` on a name splits `கருணாநிதி` mid-syllable.
   const identity: { label: string; value: string; machineId?: true }[] = [
     { label: "அச்சுத் தலைப்பு", value: s.printedTitleTa },
-    { label: "தீட்டியவர்", value: s.printedAuthorshipLineTa },
+    // The anthology prints no per-story authorship line, so the row is absent for those stories
+    // rather than filled from the collection's title-page credit.
+    ...(s.printedAuthorshipLineTa ? [{ label: "தீட்டியவர்", value: s.printedAuthorshipLineTa }] : []),
     { label: "பதிப்பு", value: s.editionStatementTa },
     { label: "கோப்பு", value: s.scanFilename, machineId: true },
     { label: "SHA-256", value: s.scanSha256, machineId: true },
@@ -118,34 +126,38 @@ export default function StorySource({ slug, prov }: { slug: string; prov: StoryP
       </section>
 
       {/* ── 2b. THE WHOLE COPY — a different figure about a different thing ──────────────────────── */}
-      <section aria-label="முழு நூலின் நிலை" className="mt-12">
-        <SectionHeading>முழு நூலின் நிலை</SectionHeading>
-        <Prose>
-          இது கதையைப் பற்றிய கூற்று அல்ல; அச்சிடப்பட்ட நூல் முழுவதைப் பற்றியது. மொத்தம்{" "}
-          {book.totalScans} ஸ்கேன் பதிவுகளில் {book.verified} சரிபார்க்கப்பட்டுள்ளன. சரிபார்க்கப்படாத{" "}
-          {book.blocked} ஸ்கேன்களும் — ஸ்கேன் {book.blockedScans.join(", ")} — கதைக்கு வெளியே உள்ள
-          முன்னுரைப் பகுதிச் சேர்க்கைகள். எனவே இந்த எண் கதை முழுமையடையவில்லை என்பதைக் குறிக்காது: கதை{" "}
-          {scope.verified}/{scope.storyScanCount} சரிபார்க்கப்பட்டது.
-        </Prose>
-        <dl className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Figure label="ஸ்கேன் பதிவுகள்" value={String(book.totalScans)} />
-          <Figure label="சரிபார்க்கப்பட்டவை" value={`${book.verified}/${book.totalScans}`} />
-          <Figure label="தடைபட்டவை" value={book.blockedScans.join(", ")} />
-          <Figure label="வகைப்பாடு" value={book.blockedClassification} />
-        </dl>
-        <ArchiveNote>{book.note}</ArchiveNote>
-      </section>
+      {book ? (
+        <section aria-label="முழு நூலின் நிலை" className="mt-12">
+          <SectionHeading>முழு நூலின் நிலை</SectionHeading>
+          <Prose>
+            இது கதையைப் பற்றிய கூற்று அல்ல; அச்சிடப்பட்ட நூல் முழுவதைப் பற்றியது. மொத்தம்{" "}
+            {book.totalScans} ஸ்கேன் பதிவுகளில் {book.verified} சரிபார்க்கப்பட்டுள்ளன. சரிபார்க்கப்படாத{" "}
+            {book.blocked} ஸ்கேன்களும் — ஸ்கேன் {book.blockedScans.join(", ")} — கதைக்கு வெளியே உள்ள
+            முன்னுரைப் பகுதிச் சேர்க்கைகள். எனவே இந்த எண் கதை முழுமையடையவில்லை என்பதைக் குறிக்காது: கதை{" "}
+            {scope.verified}/{scope.storyScanCount} சரிபார்க்கப்பட்டது.
+          </Prose>
+          <dl className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <Figure label="ஸ்கேன் பதிவுகள்" value={String(book.totalScans)} />
+            <Figure label="சரிபார்க்கப்பட்டவை" value={`${book.verified}/${book.totalScans}`} />
+            <Figure label="தடைபட்டவை" value={book.blockedScans.join(", ")} />
+            <Figure label="வகைப்பாடு" value={book.blockedClassification} />
+          </dl>
+          <ArchiveNote>{book.note}</ArchiveNote>
+        </section>
+      ) : null}
 
       {/* ── 3. PRINTED-PAGE UNCERTAINTY ──────────────────────────────────────────────────────────── */}
-      <section aria-label="அச்சுப் பக்க நிச்சயமின்மை" className="mt-12">
-        <SectionHeading>அச்சுப் பக்க நிச்சயமின்மை</SectionHeading>
-        <Prose>
-          ஸ்கேன் {pp.scan}-க்கு அச்சுப் பக்க எண் எதுவும் மூலத்தில் காணப்படவில்லை; எனவே இங்கு எதுவும்
-          தரப்படவில்லை. அச்சுப் பக்க எண் மூலத்திலிருந்து வாசிக்கப்பட வேண்டும் — அடுத்த பக்கத்திலிருந்து
-          கணிக்கப்படக் கூடாது.
-        </Prose>
-        <ArchiveNote>{pp.note}</ArchiveNote>
-      </section>
+      {pp ? (
+        <section aria-label="அச்சுப் பக்க நிச்சயமின்மை" className="mt-12">
+          <SectionHeading>அச்சுப் பக்க நிச்சயமின்மை</SectionHeading>
+          <Prose>
+            ஸ்கேன் {pp.scan}-க்கு அச்சுப் பக்க எண் எதுவும் மூலத்தில் காணப்படவில்லை; எனவே இங்கு எதுவும்
+            தரப்படவில்லை. அச்சுப் பக்க எண் மூலத்திலிருந்து வாசிக்கப்பட வேண்டும் — அடுத்த பக்கத்திலிருந்து
+            கணிக்கப்படக் கூடாது.
+          </Prose>
+          <ArchiveNote>{pp.note}</ArchiveNote>
+        </section>
+      ) : null}
 
       {/* ── 4. CROSS-SCAN JOIN POLICY ────────────────────────────────────────────────────────────── */}
       <section aria-label="ஸ்கேன் எல்லை இணைப்புக் கொள்கை" className="mt-12">
@@ -168,66 +180,109 @@ export default function StorySource({ slug, prov }: { slug: string; prov: StoryP
       </section>
 
       {/* ── 5. ERRATUM WITNESS ───────────────────────────────────────────────────────────────────── */}
-      <section aria-label="வெளியீட்டாளர் பிழைத்திருத்தச் சான்று" className="mt-12">
-        <SectionHeading>வெளியீட்டாளர் பிழைத்திருத்தச் சான்று</SectionHeading>
-        <Prose>
-          ஸ்கேன் {errata.printedOnScan}-இல் வெளியீட்டாளரின் பிழைத்திருத்தப் பட்டியல்{" "}
-          {errata.correctionCount} உள்ளீடுகளுடன் அச்சிடப்பட்டுள்ளது. அவை ஒரே வரிக்கான இரண்டாவது சான்று;
-          வாசிப்புப் பகுதியில் அவை பயன்படுத்தப்படவில்லை. வாசிப்புப் பகுதி பக்கப் பதிவின் வாசிப்பையே
-          தக்கவைக்கிறது.
-        </Prose>
+      {errata ? (
+        <section aria-label="வெளியீட்டாளர் பிழைத்திருத்தச் சான்று" className="mt-12">
+          <SectionHeading>வெளியீட்டாளர் பிழைத்திருத்தச் சான்று</SectionHeading>
+          <Prose>
+            ஸ்கேன் {errata.printedOnScan}-இல் வெளியீட்டாளரின் பிழைத்திருத்தப் பட்டியல்{" "}
+            {errata.correctionCount} உள்ளீடுகளுடன் அச்சிடப்பட்டுள்ளது. அவை ஒரே வரிக்கான இரண்டாவது சான்று;
+            வாசிப்புப் பகுதியில் அவை பயன்படுத்தப்படவில்லை. வாசிப்புப் பகுதி பக்கப் பதிவின் வாசிப்பையே
+            தக்கவைக்கிறது.
+          </Prose>
 
-        {/* The one place the two witnesses substantively disagree, shown side by side. */}
-        <div className="mt-5 rounded-xl border border-ink/10 p-4 dark:border-white/10">
-          <p className="font-tamil text-xs text-ink/50 dark:text-night-text/50" lang="ta">
-            அச்சுப் பக்கம் {errata.demonstrativeCase.printedPage} · ஸ்கேன் {errata.demonstrativeCase.sourceScan}
-          </p>
-          <dl className="mt-3 space-y-2">
-            <div className="grid grid-cols-[9rem_1fr] gap-3">
-              <dt className="font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">வாசிப்புப் பகுதி</dt>
-              <dd className="font-tamil text-sm font-semibold text-ink dark:text-night-text" lang="ta">
-                {errata.demonstrativeCase.archivalReadingTa}
-              </dd>
-            </div>
-            <div className="grid grid-cols-[9rem_1fr] gap-3">
-              <dt className="font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">பிழைத்திருத்தச் சான்று</dt>
-              <dd className="font-tamil text-sm text-ink/70 dark:text-night-text/70" lang="ta">
-                {errata.demonstrativeCase.publisherErratumTa}
-              </dd>
-            </div>
-          </dl>
-          <p className="mt-3 font-tamil text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang="ta">
-            வாசிப்புப் பகுதியில் மாற்றப்படவில்லை.
-          </p>
-          <ArchiveNote>{errata.demonstrativeCase.note}</ArchiveNote>
-        </div>
+          {/* The one place the two witnesses substantively disagree, shown side by side. */}
+          <div className="mt-5 rounded-xl border border-ink/10 p-4 dark:border-white/10">
+            <p className="font-tamil text-xs text-ink/50 dark:text-night-text/50" lang="ta">
+              அச்சுப் பக்கம் {errata.demonstrativeCase.printedPage} · ஸ்கேன் {errata.demonstrativeCase.sourceScan}
+            </p>
+            <dl className="mt-3 space-y-2">
+              <div className="grid grid-cols-[9rem_1fr] gap-3">
+                <dt className="font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">வாசிப்புப் பகுதி</dt>
+                <dd className="font-tamil text-sm font-semibold text-ink dark:text-night-text" lang="ta">
+                  {errata.demonstrativeCase.archivalReadingTa}
+                </dd>
+              </div>
+              <div className="grid grid-cols-[9rem_1fr] gap-3">
+                <dt className="font-tamil text-sm text-ink/50 dark:text-night-text/50" lang="ta">பிழைத்திருத்தச் சான்று</dt>
+                <dd className="font-tamil text-sm text-ink/70 dark:text-night-text/70" lang="ta">
+                  {errata.demonstrativeCase.publisherErratumTa}
+                </dd>
+              </div>
+            </dl>
+            <p className="mt-3 font-tamil text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang="ta">
+              வாசிப்புப் பகுதியில் மாற்றப்படவில்லை.
+            </p>
+            <ArchiveNote>{errata.demonstrativeCase.note}</ArchiveNote>
+          </div>
 
-        {/* All ten entries. Scrolls inside itself on a narrow viewport; the page never scrolls sideways. */}
-        <div className="mt-5 overflow-x-auto">
-          <table className="w-full min-w-[26rem] border-collapse text-left font-body text-xs">
-            <thead>
-              <tr className="border-b border-ink/15 text-ink/50 dark:border-white/15 dark:text-night-text/50">
-                <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">அச்சுப் பக்கம்</span></th>
-                <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">ஸ்கேன்</span></th>
-                <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">வரி</span></th>
-                <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">பிழைத்திருத்தம்</span></th>
-                <th scope="col" className="py-2 font-normal"><span className="font-tamil" lang="ta">பக்கப் பதிவு</span></th>
-              </tr>
-            </thead>
-            <tbody className="text-ink/80 dark:text-night-text/80">
-              {errata.corrections.map((c, i) => (
-                <tr key={i} className="border-b border-ink/8 dark:border-white/8">
-                  <td className="py-2 pr-3 tabular-nums">{c.printedPage}</td>
-                  <td className="py-2 pr-3 tabular-nums">{c.sourceScan}</td>
-                  <td className="py-2 pr-3 tabular-nums">{c.line}</td>
-                  <td className="py-2 pr-3 font-tamil" lang="ta">{c.printedCorrection}</td>
-                  <td className="break-all py-2 text-ink/50 dark:text-night-text/50">{c.pageRecord}</td>
+          {/* All ten entries. Scrolls inside itself on a narrow viewport; the page never scrolls sideways. */}
+          <div className="mt-5 overflow-x-auto">
+            <table className="w-full min-w-[26rem] border-collapse text-left font-body text-xs">
+              <thead>
+                <tr className="border-b border-ink/15 text-ink/50 dark:border-white/15 dark:text-night-text/50">
+                  <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">அச்சுப் பக்கம்</span></th>
+                  <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">ஸ்கேன்</span></th>
+                  <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">வரி</span></th>
+                  <th scope="col" className="py-2 pr-3 font-normal"><span className="font-tamil" lang="ta">பிழைத்திருத்தம்</span></th>
+                  <th scope="col" className="py-2 font-normal"><span className="font-tamil" lang="ta">பக்கப் பதிவு</span></th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+              </thead>
+              <tbody className="text-ink/80 dark:text-night-text/80">
+                {errata.corrections.map((c, i) => (
+                  <tr key={i} className="border-b border-ink/8 dark:border-white/8">
+                    <td className="py-2 pr-3 tabular-nums">{c.printedPage}</td>
+                    <td className="py-2 pr-3 tabular-nums">{c.sourceScan}</td>
+                    <td className="py-2 pr-3 tabular-nums">{c.line}</td>
+                    <td className="py-2 pr-3 font-tamil" lang="ta">{c.printedCorrection}</td>
+                    <td className="break-all py-2 text-ink/50 dark:text-night-text/50">{c.pageRecord}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── ANTHOLOGY PLACEMENT — COLLECTION facts, kept apart from the story's own ───────── */}
+      {anthology ? (
+        <section aria-label="தொகுப்பில் இடம்" className="mt-12">
+          <SectionHeading>தொகுப்பில் இடம்</SectionHeading>
+          <Prose>
+            இக்கதை {anthology.collectionTitleTa} என்ற தொகுப்பில் {anthology.storiesInCollection} கதைகளுள்{" "}
+            {anthology.storyOrder}-ஆவதாக அச்சிடப்பட்டுள்ளது. கீழ்க்கண்ட எண்கள் தொகுப்பைப் பற்றியவை;
+            இக்கதையின் சொந்த எல்லை மேலே “கதையின் எல்லை” பகுதியில் உள்ளது.
+          </Prose>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <Figure label="தொகுப்பு ஸ்கேன்கள்" value={String(anthology.collectionScanTotal)} />
+            <Figure label="கதைப் பகுதி" value={anthology.storyBearingScans} />
+            <Figure label="பின் அட்டை" value={String(anthology.backCoverScan)} />
+            <Figure label="வரிசை" value={`${anthology.storyOrder}/${anthology.storiesInCollection}`} />
+          </div>
+          <Prose className="mt-4">
+            பதிப்பு: {anthology.editionStatementTa} — இது தொகுப்பின் பதிப்புக் குறிப்பு; இக்கதைக்குத்
+            தனியான முதற்பதிப்பு எதுவும் மூலத்தில் நிறுவப்படவில்லை. வெளியீட்டாளர்:{" "}
+            {anthology.publisherTa}. பக்க உறவு: {anthology.scanToPrintedPageRelation}.
+          </Prose>
+          <ArchiveNote>{anthology.note}</ArchiveNote>
+        </section>
+      ) : null}
+
+      {/* ── TITLE WITNESSES — two printed forms, neither normalised away ───────────────────── */}
+      {titleWitness ? (
+        <section aria-label="தலைப்புச் சான்றுகள்" className="mt-12">
+          <SectionHeading>தலைப்புச் சான்றுகள்</SectionHeading>
+          <Prose>
+            இக்கதையின் தலைப்பு தொகுப்பின் பொருளடக்கத்திலும் கதையின் தொடக்கத் தலைப்பிலும் வெவ்வேறு
+            வடிவங்களில் அச்சிடப்பட்டுள்ளது. இரண்டும் மூலச் சான்றுகள்; எதுவும் மற்றொன்றாக
+            மாற்றப்படவில்லை.
+          </Prose>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <Figure label="பொருளடக்கம்" value={titleWitness.tocTitleTa} />
+            <Figure label="கதைத் தொடக்கம்" value={titleWitness.openingHeadingTa} />
+          </div>
+          <ArchiveNote>{titleWitness.note}</ArchiveNote>
+        </section>
+      ) : null}
 
       {/* ── 6. TAMIL ASSEMBLY ────────────────────────────────────────────────────────────────────── */}
       <section aria-label="தமிழ் வாசிப்பு உருவாக்கம்" className="mt-12">

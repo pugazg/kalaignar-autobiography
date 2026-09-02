@@ -1,0 +1,2137 @@
+{
+ "workId": "seththaval-kathai",
+ "slug": "seththaval-kathai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/seththaval-kathai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "செத்தவள் கதை",
+  "en": "Seththaval Kathai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 18,
+  "printedPages": {
+   "first": 122,
+   "last": 130
+  },
+  "sourceScans": {
+   "first": 131,
+   "last": 139
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "செத்தவள் கதை",
+    "sourceScan": 131,
+    "printedPage": 122
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முன்னயிட்ட தீ முப்புரத்திலே!  \nபின்னயிட்ட தீ தென்னிலங்கையிலே!  \nஅன்னயிட்ட தீ அண்ணந்த அடுப்பிலே!  \nயானுமிட்ட தீ யானுமார்க் சிகரெட்டிலே!  \nமூள்க மூள்கவே!”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யாரப்பா ‘நவீன பட்டினத்தார்’ என்று கேட்கத் தூண்டும்.",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பட்டினத்தாருமல்ல......கிட்டினத்தாருமல்ல......எல்லப்பன் தயாரித்த வேடிக்கை விருந்து.",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிகரெட்டில் புகை கிளம்புவதற்குள் செல்லாயி கலகலவெனச் சிரித்துவிட்டாள். முதல் நாள் இரவுதான் அவள் பட்டினத்தார் படம் பார்த்து விட்டு வந்தாள்.",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னங்க! என்னவோ பேசறீங்களே. ஓட்டப்பம் வீட்டைச் சுடும் அப்படின்னு ஆப்பத்தை வீசி எறிந்தாரு...... உடனே வீடு எரிய ஆரம்பிச்சுட்டது.”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எரியும்......எரியும்.........நாடகத்தைவிடச் சினிமாவிலே நல்லா எரியும்.”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பட்டினத்தாரு அப்படி எரிக்காமலா......படம் எடுத்துக் காட்டுறுங்க?”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பாஸ்பரசுன்னு ஒரு சாமான் இருக்கு. அதை ஆப்பத்திலே வச்சு வீசியிருப்பாரு. வீடு பஸ்பமாகி இருக்கும்.”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி! அதுதான் ஆப்பத்திலே வச்சு எரிச்சாரு. சுடுகாட்டிலே தாயார்மேலே வாழை மட்டையை அடுக்கி...ஒரு பாட்டுப் பாடி எரிச்சாரே...அது எப்படி?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எல்லாம் அப்படித்தான்! பேசாமல் கிட. நீ படம் பார்க்கப்போறதும், நான் உன்கிட்டே அடிபட்டு முழிக்கிறதும்...இதுவே பெருந் தொல்லையாப் போச்சு!”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் இனிமேல் படம் பார்க்கப்போறது இல்லேன்னு வைராக்கியம் வச்சுட்டேனே.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதென்ன கூத்து? அப்பன்னு மானம் கவிழ்ந்து மழையா ஊத்துமே!”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்த ஆம்பிளைகள் இருக்கிறவரையிலும்...பொம்பிளைங்க வெளியே கிளம்ப லாயக்கு இருக்கா?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி சரி!......ஆம்பிளையெல்லாம் சாகச் சொல்றியாக்கும்.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பொம்பிளைங்க வெளியிலே கிளம்புவதாயிருந்தால் பெட்டியிலே வச்சிப் பூட்டிக்கொண்டு போகணும். இல்லேன்னு...ஆம்பிளைங்க அத்தனை பேரும் கண்ணை இறுக்கக் கட்டிக்கிட்டு வெளியிலே புறப்படணும்.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்லாயி!...செல்லாயி!...என்னமோ செல்லாத சட்டமெல்லாம் போடுறியே!......என்ன நடந்துச்சு? விவரமாகச் சொல்லு.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னத்த நடக்க! தெருவிலே நடக்கமுடியலே! வாசலில் வந்து நிற்க வகையில்லே! சினிமாவுக்குப் போனால் அங்கே சிங்காரிச்சுட்டு நடை போடறான்”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யாரு?......யாரு?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவன்தான் கோடி வீட்டுக் கோவிந்தன். கொட்டாப்புளித் தடியன் மாதிரி...ஒரு மீசை முளைச்சவன் பெஞ்சாதிங்கிறதையும் மறந்துட்டு, என்னைப் பார்த்துக் கொட்டாவி விடுகிறான்.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்!...அப்புறம்”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீங்க—இப்ப மீசையிலே கை போடுறீங்க பாருங்க—அது மாதிரி—அவனும் மீசையை முறுக்கிக் காட்டுகிறான். புன்சிரிப்பு வழங்குகிறான். சிகரெட்டும் பத்தவைக்கிறான். நான் போற இடமெல்லாம் வருகிறான்.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்லாயி! இது சகஜம். கல்யாணமாகாத பயல்! அதிலும் நீ கறுப்பாயிருந்தாலும் கண்ணைப் பறிக்குறுப்பிலே இருக்கிறே! சதா உன்னைப் பார்த்துக்கிட்டே இருக்கிற எனக்கே....உன்னைப் பார்க்கும்போது ஒரு புது உயிரு வராப்புலே இருக்குது!”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி...சரி...நெறுத்துங்க!...இதான் வேல.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயி சட்டென எழுந்து அடுக்கினுக்குள் நுழைந்தாள். பேச்சுச் சுவையில் அணைந்துபோயிருந்த ‘சிகரெட்’டை மீண்டும் கொளுத்திக்கொண்டு எல்லப்பனும் வெளியே கிளம்பினான்.",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன உடம்புடா? என்ன உடம்புடா!....”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவ...சிரிக்கும்போது பாத்தியா...பால் வழியிற மாதிரி!”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யாரையாவது மதிச்சுப் பேசுறளா?...அச்சம், நாச்சம், கூச்சம் எதாவது இருக்கா?”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பட்டாளத்துக்காரன் மாதிரியல்லவா நடக்கிறாள்”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நம்ப...வீரையா செட்டியார், இந்தப் பக்கம் குடி வந்திருக்கிற விஷயம் இப்பத்தான் புரியுது.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அது என்னடா?”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவளே எப்படியாவது மயக்கி...”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நடக்காது தம்பி நடக்காது”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செட்டியார் பணக்காரன் பாரு; பணத்தாசை காட்டி....”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பணமாவது கிணமாவது, பொம்பிளைக்குப் புருஷன் பிடிக்கலேன்னுத்தான்....அந்த வல்லியெல்லாம் நடக்கும். குபேரனாயிருந்தாலும் மனசுக்குப் பிடிக்காதவனாயிருந்தால்...பொம்பிளைங்க மனசும் மாறிடும்.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்லாயி புருஷன் அசல் அர்ஜுனராஜன் மாதிரி இருக்கான். அவனைப் பிடிக்காமல் இந்தக் கோணங்கிச் செட்டியின் பணத்துக்கா...?”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எல்லப்பன் மாத்திரம் அதிஷ்டக்காரன்டா! ஆயிரம் பத்தாயிரம் செலவழிச்சு கல்யாணம் பண்றவனுக் கெல்லாம் கண்ணு சொத்தையும், காது ஒட்டையுமாகப் பெண்டாட்டி வாய்க்குது. இவனுக்குப் பாரு, கடைஞ்சு எடுத்த பம்பரம் போலப் பெண்ணு அமைஞ்சிருக்கு.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஜோடி சரியான பொருத்தம். நீலப்புறா மாதிரி அவளும்...அவளுக்கேற்ற அவனும்.”",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எல்லப்பன்—செல்லாயி தம்பதிகளைப் பற்றி “வாலிபர் மாநாட்டு விமர்சனங்கள்” மேலே திட்டியவை.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரவு உணவு முடிந்தது. செல்லாயிக்குத் தூக்கம் வரவில்லை. அன்று மாலை கட்டாயம் திரும்புவதாகச் சொல்லிவிட்டு வெளியூர் சென்ற எல்லப்பன் ஏனோ வரவில்லை. நாலைந்து தடவை கதவைத் திறந்து கொண்டு வெளியே வந்து வழி பார்த்தாள். தெருவில் நடமாடுகிற கிழவர்களின் உருவங்கள்கூடச் செல்லாயிக்குத் தெளிவு பிறக்கும்வரையில்....எல்லப்பனைத் தோன்றி ஏமாற்றிக் கொண்டிருந்தன. கோபுரத்துச் சிலைபோல் கூரை வீட்டின் முகப்பைப் பிடித்துக் கொண்டு நிலாவின் வெள்ளிச் சிரிப்பில் கண்களை நீட்டுவதும்....பிறகு அவைகளை வாங்கி வழியில் வைப்பதுமாக நின்றாள்....நின்றாள்....நின்றாள்....காலோடிய நின்றாள்! நிலவொளி பட்டு ஒரு நிழலாடிற்று. அது எல்லப்பனே தான் என்ற மகிழ்ச்சி போலும்....தன் வைரச் சிரிப்பால் நிலாவைக் கொன்று விட்டுத் துள்ளியோடி வீட்டிற் புகுந்தாள்.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் தெருவழியாக, அவள் வீட்டில் போட்ட விழிகளை எடுக்காமல் கோவிந்தன் போய்க்கொண்டிருந்தான்.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கோடி வீட்டுக் கோவிந்தன்” செல்லாயியினுடைய இதயத்தில் இந்த ஒலி சிதறி ஓய்ந்தது. ஏமாற்றத்தின் பிரதிபலிப்பாகச் செல்லாயி வீட்டுக் கதவு, சபத்தோடு சாத்திக் கொண்டது.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கல் பட்டு விழும் கனிபோல அவள் தரையில் படுத்துக் கொண்டாள். அவள் படுத்த வேகத்தில் விரிக்காதிருந்த படுக்கைப் பாயைச் சுரண்டி விளையாடிய பூனைக்குட்டி பயந்து பறந்தது.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சற்று நேரத்திற்கெல்லாம் செல்லாயியின் மூச்சில் கனம் ஏற்பட்டது; அவள் அயர்ந்து தூங்கி விட்டாள்.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கீற்று இடுக்குகளின் வழியாக உள்ளே எட்டிப் பார்த்துக் கொண்டிருந்த நிலவு சாயச் சாயக் கூரையின் ஓட்டையால் வார்க்கப்பட்ட ஓர் ஒளிக்கம்பி தெருக்கதவின் தாழ்ப்பாளுக்கு வெளிச்ச வட்டம் போட்டது. தாழ்ப்பாளின் அடிப்புறமாகத் திமிரென்று முனைத்ததுபோல், ஒரு சிறு இரும்புக் கம்பி ஆடிக்",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கொண்டிருந்தது. பல கோணங்களிலும் அந்தக் கம்பி ஆடிய பிறகு தாழ்ப்பாளை மேலே தூக்கி எதிர்ப் புறமாகச் சுற்றித் தள்ளிவிட்டுத் தானிருந்த துவாரத்தின் வழியாகவே பின்வாங்கி மறைந்தது.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கதவு சந்தடியின்றி மெதுவாகத் திறக்கப்பட்டது. அவன் உள்ளே வந்தான். ஆம்...கோடி வீட்டுக் கோவிந்தன்.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் கையிலே ஆரஞ்சுப்பழத் தோல்கள், அரை குறையாகச் சாப்பிட்டிருந்த அல்வா, ஒரு தாளில் சில காராபூந்தித் துண்டுகள்! அவைகளை ஒருமுறை பார்த்துக்கொண்டான்.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயி தன்னைக் கண்டு அலறிவிட்டால் ஊரார் ஓடி வருவார்கள். உயிரை எடுத்து விடுவார்கள். அந்தப் பயங்கரத்திலிருந்து தப்ப, தான்கொண்டு வந்த சாமான்கள் தக்க அரண்கள்! வருகிறவர்களைப் பார்த்து “வருணையா வாரும்! இவள் பத்தினிபோல் பாசாங்கு ஆடுகிறாள். இந்தப் பழங்களை நாங்களிருவருமே தின்றோம். அல்வாவை நான்தான் அவளுக்கு ஊட்டினேன். இந்தக் காராபூந்தியில் பாதியை அவள் என் வாயில் கொட்டினாள். யார்மேல் குற்றம்? ஏதோ...வேறு விஷயத்திற்காக ஏற்பட்ட சச்சரவால் அவள் கத்தினாள் என்பதற்காக நீங்கள் அலறி அடித்து ஓடி வருகிறீர்களே! பேசாமல் போய்த் தூங்குங்கள்” என்று துரத்தி அடித்துவிடலாம். அல்லது இவ்வளவு பெரிய முன்னேற்பாட்டோடு வந்திருக்கிறேன் என்று செல்லாயியிடம் கூறிப் பழத்தோலையும் பாதாம் அல்வாவில் பாதியையும் காட்டினால் அவளும் பயப்படுவாள். நம் காரியமும் பழுதில்லாமலே முடியும்.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோவிந்தனது உதடுகளின் துடிப்பிலே இத்தனை கொடுமையான எண்ணங்களும் கோரத் தாண்டவமாடின.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயி தூங்கிக்கொண்டிருந்தாள். அவளுடைய முகத்தைப் பார்த்தபடியே கோவிந்தன் பக்கத்தில் உட்கார்ந்தான். கைகளை மெதுவாக எடுத்து அவள் கன்னங்களைக் கிள்ளினான். அயர்ந்த உறக்கம் அவளுக்கு. கன்னங்களைத் தடவிக்கொண்டு வேறு பக்கம் திரும்பிப் படுத்தாள். கோவிந்தன் துடித்தான். உதடுகளைக் கடித்துக் கொண்டான்.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்லாயி! செல்லாயி!” வறண்ட நாக்கிலிருந்து கிளம்பிய உளறல் மொழிகள்! வார்த்தையின் ஒவ்வொரு எழுத்தும்",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நடுங்கின. அவளுடைய நீண்ட கூந்தல்; அதைக் கோதினன்! மீண்டும் கன்னத்தில் கிள்ளினான். செல்லாயி திடுக்கிட்டெழுந்தாள்.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆங்!” இந்தக் கூச்சலில் எவ்வளவு ஆவேசமிருந்தது என்பதை கோவிந்தனின் கன்னத்தில் விழுந்த அடி சொல்லிற்று. செல்லாயியின் வாய் மூடப்பட்டது.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஓர் ஊமைப் போர்க்களம் செல்லாயியின் குடிசையில்! கடைசியில் செல்லாயி வெற்றி பெறவில்லை. தோற்றுவிட்டாள். கோவிந்தனின் கன்னங்களில்—கண் இமைகளில்—கழுத்தின் ஓரத்தில்—கைகளில்—இரத்தம் கசிந்துகொண்டிருந்தது.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயியின் வாய் இப்போது கட்டுப்பட்டிருக்கவில்லை. ஆனாலும் ஊமையாக இருந்தாள்.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தப் பாரு!...நடந்தது நடந்துட்டது; உன் புருஷன் வந்தா விளம்பரம் பண்ணி உன் பேரைக் கெடுத்துக்காதே! அவ்வளவுதான் நான் சொல்லுவேன்.”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயியின் கண்களில் அரும்பிக் கொண்டிருந்த கண்ணீர்த் துளிகளைக் கூடக் கவனிக்காமல் கோவிந்தன் கிளம்பி விட்டான்.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முன்னே யிட்ட தீ முப்புரத்திலே!  \nபின்னேயிட்ட தீ தென்னிலங்கையிலே!!  \nஎன்னுடைய மனைவியிட்ட தீ மங்காத மானத்திலே!!!”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று எல்லப்பன் பாடுவதுபோல் அந்த வீட்டுக் கூரையின் ஓலைகள் ஓலமிட்டிசைத்தன.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காலையில் எல்லப்பன் வந்தான். அதற்கு முன்பாகவே அவள், வீட்டில் இறைந்து கிடந்த பழத்தோல்களைப் பொறுக்கி எறிந்து விட்டாள்.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏன் ஒரு மாதிரி இருக்கிறாய்?”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒன்றுமில்லை; தலை வலிக்கிறது.”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தா...இந்தத் தைலத்தைப் போட்டுக்கோ!”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயி விஷயத்தை மறைத்தே விட்டாள் கணவனுக்கு. “அந்த இரவு” பற்றித் தெரிந்தால் கலங்கமடைந்த கண்ணோடு குடும்பம் நடத்துவானே என்ற சந்தேகம். நாட்கள் ஓடின.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோவிந்தன் செல்லாயி வீட்டுப் பக்கம் ஒரு நாளைக்கு ஆயிரம் தடவை நடந்தான், பலப்பல அலங்காரங்களில்; பலப்பல உடைகளில்! ஒரு நாள் செல்லாயி வாயிற்படியருகே நின்று கொண்டிருந்தாள். கோவிந்தன் தெருவழியே நடந்து கொண்டிருந்தான். செல்லாயியின் காலடியில் ஒரு ‘தாள் முடிச்சு’ வந்து விழுந்தது. எல்லப்பன் வருவதற்குள் அதிலிருந்த ‘ஜீவே’யைத் தின்றுவிட்டு இலையையும் தாளையும் கொல்லையில் எறிந்து விட்டாள். பின் ஒருநாள் தெருவில் சென்ற கோவிந்தன் சிரித்தான். செல்லாயியும் சிரித்தாள். மற்றொரு நாள் ஒரு பொட்டலம் அவள் முன் விழுந்தது. அதை எடுத்தாள். அதில் பத்து வெள்ளி ரூபாய்கள். பத்திரமாகப் பெட்டியில் வைத்துக்கொண்டாள்.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அன்று எல்லப்பன் வெளியூர் போயிருந்தான். அன்று நிலா இல்லை; அமாவாசை.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நள்ளிரவு முடிந்து விட்டது. உதயசூரியனை எதிர் நோக்கி உலகம் உருண்டபடி இருந்தது. எல்லப்பன் வீடு நோக்கி வந்து கொண்டிருந்தான். செல்லாயியைச் சந்திக்கவேண்டுமென்ற ஆவல், அவன் ஒவ்வொரு அசைவிலும் நர்த்தனமாடிற்று.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கதவு தட்டப்பட்டது. முதலில் மெதுவாக—பிறகு வேகமாக—பிறகு உரத்த சப்தத்தில்! கதவு திறக்கப்படவில்லை.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பாவம் அசந்து தூங்குகிறாள்—பகலெல்லாம் வேல—என்ன செய்வாள்? இந்த நேரந்தவிர அவள் வாழ்க்கைக்கு வேறு ஓய்வேது?” இதை எண்ணிக்கொண்டே வீட்டுக் கூரையைச் சுற்றிப் பார்த்து விட்டுக் கடைசியில் ஒரு கம்பியை எடுத்தான். கதவின் சிறு துவாரத்தில் கம்பி நுழைந்தது; உள் தாழ்ப்பாள் சற்றிச் சுழன்று திறந்து கொண்டது—முன்பு கோவிந்தன் திறந்தது போல்!",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கதவைத் தள்ளிக்கொண்டு எல்லப்பன் உள்ளே சென்றான். விளக்கு மங்கலாக எரிந்து கொண்டிருந்தது. “செல்லாயி” என்று அன்பொழுக அழைத்துக்கொண்டு வந்து படுக்கையில் அவளைத் தொட்டான்.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யார் அது?”",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வாரிச் சுருட்டிக் கொண்டு செல்லாயி எழுந்தாள். எல்லப்பன் பேசவே இல்லை; கோவிந்தன் கதவு வரையில் நடந்தான். பிறகு பறந்து விட்டான்.",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மண்ணிச்சுடுங்க” செல்லாயி அழுதாள்.",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அழாதே! ஏன் அழுகிறாய். உலகத்திலே அழுவதற்கு அர்த்தமே தெரியலையே. விபசாரியும் அழுகிறாள். பத்தினியும் அழுகிறாள். நல்லவனும் அழுகிறான். கெட்டவனும் அழுகிறான். பணக்காரனும் அழுகிறான். பாட்டாளியும் அழுகிறான்.”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் அழுது”......செல்லாயி முடிக்கவில்லை.",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தெரியும்; குற்றம் செய்து விட்டோமே என்று அழவில்லை நீ! செய்த குற்றம் தெரிஞ்சு விட்டதேன்னு அழுகிறாய், செல்லாயி! உலகத்திலே விபசாரம் நடப்பதற்கு என்னென்னவோ காரணங்கள் சொல்றுங்களே! சமுதாயக் கோளாறுன்னு சங்க நாதம் செய்றுங்களே! இப்ப உன் விஷயத்துக்கு என்ன சொல்லப்போறுங்க! விதவைங்க—இளமையிலே அறுத்துப் போன பெண்ணுங்க—கிழவனுக்கு வாழ்க்கைப்பட்ட கன்னிங்க—இவங்க எல்லாரோடு—உன்னைப்போன்ற பேராசைப் பேய்களையும் சேர்த்துக் கொள்ளவேணும். நீ ஏன் இந்த விபசார வேலையில் ஈடுபட்டாய் சொல்லு; ஏன் இந்த துரோகம் செய்தாய்? சொல்லு எதாச்சும் ஒரு காரணம்.”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் தலவிதிதான்!”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தலவிதி! தப்பித்துக் கொள்வதற்குச் சரியான தந்திரம்! யாராவது பக்தர் கிட்டே போய்ச் சொல்லு.”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் புத்தி கெட்டதனம்!”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்! ஆசைப்பட்ட புருஷன் கிடைக்காவிட்டால் பொம்பிளைங்க வாழ்க்கை பொசுங்கிவிடும் என்பாங்க. வாலிபனில்லாட்டா வாழ்க்கை வதங்கிடும் என்பாங்க. எல்லாம் உன் மனசுப்படி இருந்தும் நீ கெட்டதற்கு காரணம் என்ன சொல்லுவாங்களோ தெரியலையே! மரத்துக்கு மரம் தாவுகிற குரங்கு என்பாங்களா?”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்லாயி!...உன்னைப் பற்றி நான் எவ்வளவு மேன்மையாக நினைச்சு இருந்தேன். வெளியூருக்குப் போன வீட்டைப் பத்தியே நினைப்பு. வேற பெண்களைக் கண்ணெடுத்தும் பார்க்க மாட்டேன். என் நெஞ்சிலே உன்னைப் ‘போட்டோ’ படமாக்கி",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வச்சிருந்தேன்! எல்லாத்தையும் ஒரே அடியில் உடைச்சு எறிஞ்சுட்டாயே!”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்லாயி! நீ சாக்கடையில் மிதக்கிற புழுவை விடக் கேவலமானவள். ஆடம்பரத்திலே மயங்கி, அறிவைக் கொலை செய்துகொண்ட அற்பமான வீட்டில் பூச்சி நீ! ஒரு விஷயம் தெரிஞ்சுகிட்டேன். பொம்பிளைகள் குரங்கு மனசாலும் கெடுவதுண்டு. எல்லாருக்கும் சமுதாயம் பொறுப்பாக முடியவே முடியாது.”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பேச்சால் என்னைக் குத்திக் குடைய வேண்டாம்; வேணும்னு என்னைக் கொன்று போடுங்க.”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கொல்லத்தான் போகிறேன். நாளைக்குக் கோவிந்தன் முகத்திலே ஒரு ‘கோசா’ வாக முழிக்கமாட்டேன். ஒரு கொலைகாரனாகத்தான் தரிசனம் கொடுப்பேன். செல்லாயி நீ செத்தால் நானும் சாவேன் என்று எத்தனையோ தடவை, இந்தப் படுக்கையிலேயே சொல்லியிருக்கேன். இப்ப உன்னைச் சாக அடித்துவிட்டு நான் வாழப்போகிறேன்.”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பேச்சு முடிவதற்குள் எல்லப்பன் பாய்ந்தான்.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ அய்யோ......ஹ்......ஹ்”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயி சுருண்டு கீழே விழுந்தாள். அவள் தொண்டைக் குழியில் அழுத்தியிருந்த பெருவிரலை எல்லப்பன் எடுத்தான்.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயியின் சவம் சுடலையில்! எல்லப்பன் கையால் தீ மூட்டப்பட்டது.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தங்கமான பெண். கணலாகப் போகிறாள்”\nதெருவினொப்பாரி.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தங்கமல்ல. மெருகு பூசிய மட்டைப் பித்தளை”\nஎல்லப்பனின் இதய இடிகள்!",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செல்லாயி எரிந்தாள்.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முன்னயிட்ட தீ முப்புரத்திலே!  \nபின்னயிட்ட தீ தென்னிலங்கையிலே!  \nஎன்மனைவியிட்ட தீ மங்காத மானத்திலே!  \nயானுமிட்ட தீ விபசாரக் கோட்டையில் மூள்க மூள்கவே!”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எல்லப்பன் பாடவில்லை.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**‘செத்தவள் கதை’**க்கு அவன் மனத்தில் அலை மோதிய ‘மங்களம்’ இது.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Seththaval Kathai",
+    "sourceScan": 131,
+    "printedPage": 122
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The fire first set—in the three cities!\nThe fire set later—in southern Lanka!\nThe fire set that day—in the gaping hearth!\nThe fire I too set—in my Yaanumark cigarette!\nBlaze, blaze away!”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It would make anyone ask, “Who is this ‘modern Pattinathar’?”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Neither Pattinathar......nor Kittinathar......It was a comic feast prepared by Ellappan.",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Before smoke could rise from the cigarette, Sellayi burst into laughter. Only the previous night she had returned after seeing the film Pattinathar.",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is it, dear! You are saying something or other. He threw the appam saying, ‘The ottappam will burn the house’......and immediately the house began to burn.”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It will burn......it will burn.........It burns better in cinema than in drama.”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Would they make a film showing Pattinathar burning it like that if he hadn’t really done it?”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“There is a substance called phosphorus. They must have put it in the appam and thrown it. The house would have been reduced to baspam.”",
+      "sourceScan": 131,
+      "printedPage": 122,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right! So that is how he put it in the appam and burned the house. But at the cremation ground he stacked banana sheaths over his mother...sang a song and burned her...how was that done?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Everything is like that! Lie quiet. You going to see films and me getting beaten by your questions...this itself has become a great nuisance!”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I’ve taken a vow that I won’t go to see films anymore.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What kind of performance is that? Then the sky itself will overturn and pour rain!”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“As long as these men exist...is it fit for women to go outside?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, all right!......So you want all men to die.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If women are to go outside, they must be locked in a box and carried. Otherwise...all the men must tie their eyes tight before they go out.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sellayi!...Sellayi!...You are laying down all sorts of laws that won’t pass!......What happened? Tell me in detail.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is there to happen! I can’t walk in the street! I can’t even stand at the doorway! If I go to the cinema, there he is, all dressed up, parading about.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Who?......Who?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“That Govindan from the house at the end of the street. Like a thick kottaappuli cudgel...a fellow with a sprouting moustache, forgetting that I am another man’s wife, yawning at me.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hm!...Then?”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You see how you are putting your hand on your moustache now—just like that—he twists his moustache at me. He gives me a smile. He lights a cigarette too. Wherever I go, he comes.”",
+      "sourceScan": 132,
+      "printedPage": 123,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sellayi! That is natural. An unmarried fellow! And though you are dark, you are in a form that steals the eye! Even for me, who sees you all the time....when I look at you, it feels as though a new life comes into me!”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right...all right...stop it!...This is your only work.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi rose abruptly and went inside the adukkin. Ellappan relit the ‘cigarette’ that had gone out in the pleasure of conversation and went outside.",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What a body, man? What a body!....”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Did you see her when she laughs...as if milk is flowing!”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Does she speak to anyone with respect?...Does she have any fear, modesty, shyness?”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“She walks like a soldier.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Now I understand why our...Veeraiya Chettiar has moved into this side of town.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is that, man?”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“To somehow enchant her...”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It won’t happen, brother, it won’t.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chettiar is rich, see; if he shows her money....”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Money or whatever—only if a woman dislikes her husband....will all that happen. Even if a man is Kubera himself, if she does not like him...a woman’s mind can change.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sellayi’s husband looks exactly like Arjuna Raja. Would she dislike him and go after the money of that crooked Chettiar...?”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Only Ellappan is a lucky fellow, man! Men spend a thousand, ten thousand on marriage and end up with a wife whose eyes are diseased and ears are pierced through. Look at him—he has got a woman shaped like a top freshly turned on a lathe.”",
+      "sourceScan": 133,
+      "printedPage": 124,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A perfectly matched pair. She is like a blue dove...and he suits her.”",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The above were the “young men’s conference reviews” about the couple Ellappan and Sellayi.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The night meal was over. Sellayi could not sleep. Ellappan, who had gone out of town saying he would certainly return that evening, had for some reason not come. Four or five times she opened the door, came outside and looked down the road. Even the shapes of old men walking along the street kept deceiving Sellayi by appearing to be Ellappan....until clarity came. Like a statue on a temple tower, she held the front of the thatched house and stretched her eyes into the moon’s silver smile....then drew them back and placed them again on the road. She stood....stood....stood....stood until her legs were spent! A shadow moved in the moonlight. Perhaps she rejoiced thinking it was Ellappan....With her diamond smile she killed the moon and bounded into the house.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But it was Govindan walking along the street without taking his eyes off her house.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Govindan from the house at the end of the street.” That sound scattered through Sellayi’s heart and died away. As the reflection of disappointment, the door of Sellayi’s house slammed shut with a bang.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Like a fruit knocked down by a stone, she lay down on the floor. In the speed with which she dropped down, the kitten that had been scratching at the still-unspread sleeping mat fled in fright.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Before long Sellayi’s breathing grew heavy; she fell into deep sleep.",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As the moon that had been peeping through the gaps in the thatch sank lower and lower, a beam of light poured through a hole in the roof and made a circle around the bolt of the street door. Beneath the bolt, as though thrust forward with arrogance, a small iron rod moved—",
+      "sourceScan": 134,
+      "printedPage": 125,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "about. After moving at many angles, the rod lifted the bolt upward, turned it to the other side and pushed it away, then withdrew through the same hole from which it had come and disappeared.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The door opened slowly without a sound. He came inside. Yes...Govindan from the house at the end of the street.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In his hand were orange peels, half-eaten halwa, and a few pieces of kara-boondi in a paper! He looked at them once.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If Sellayi saw him and screamed, the people of the street would run in. They would take his life. The things he had brought were proper shields against that danger! He could look at those who came and say, “Varunaiyaa vaarum! She is pretending to be a chaste woman. The two of us ate these fruits. I myself fed her the halwa. She poured half this kara-boondi into my mouth. Who is at fault? You have come running and shouting merely because she screamed over some quarrel that arose for some other reason! Go back quietly and sleep,” and chase them away. Or, if he told Sellayi that he had come with such elaborate preparation and showed her the fruit peels and half the badam halwa, she too would be frightened. His purpose could then be completed without trouble.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "All these cruel thoughts danced a terrible dance in the trembling of Govindan’s lips.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi was asleep. Looking at her face, Govindan sat beside her. He slowly raised his hands and pinched her cheeks. She was in deep sleep. Rubbing her cheeks, she turned and lay on the other side. Govindan trembled. He bit his lips.",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sellayi! Sellayi!” Words of muttering rose from his dry tongue! Every letter of the words—",
+      "sourceScan": 135,
+      "printedPage": 126,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "trembled. Her long hair—he stroked it! Again he pinched her cheek. Sellayi woke with a start.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Aah!” How much fury was in that cry was told by the slap that landed on Govindan’s cheek. Sellayi’s mouth was closed.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A mute battlefield inside Sellayi’s hut! In the end Sellayi did not win. She was defeated. Blood was seeping from Govindan’s cheeks—from his eyelids—from the side of his neck—from his hands.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi’s mouth was no longer being held shut. Yet she remained mute.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Look here!...What happened has happened; when your husband comes, don’t advertise it and ruin your own name! That is all I will tell you.”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Without even noticing the tears budding in Sellayi’s eyes, Govindan left.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The fire first set—in the three cities!\nThe fire set later—in southern Lanka!!\nThe fire my wife set—in honour that will not fade!!!”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The thatch of the house wailed and sang as though Ellappan were singing these lines.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ellappan came in the morning. Before that she had picked up and thrown away the fruit peels scattered in the house.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Why do you look strange?”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nothing; my head hurts.”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here...apply this oil!”",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi completely hid the matter from her husband. A doubt held her back: if he learned about “that night,” would he not live with her thereafter with troubled eyes? Days passed.",
+      "sourceScan": 136,
+      "printedPage": 127,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Govindan walked past Sellayi’s house a thousand times a day, in many decorations and many clothes! One day Sellayi was standing near the doorway. Govindan was walking along the street. A ‘paper bundle’ fell at Sellayi’s feet. Before Ellappan came, she ate the quoted ‘jeevey’ that was inside and threw the leaf and paper into the backyard. On another day Govindan, passing along the street, smiled. Sellayi smiled too. Another day a packet fell before her. She picked it up. Inside were ten silver rupees. She kept them safely in a box.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That day Ellappan had gone out of town. There was no moon that night; it was new moon.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Midnight had passed. The world was turning toward the rising sun. Ellappan was coming home. The eagerness to see Sellayi danced in every movement of his body.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The door was knocked. First softly—then quickly—then with a loud noise! The door did not open.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Poor thing, she must be sleeping heavily—she works all day—what can she do? Apart from this time, what rest is there in her life?” Thinking this, he looked around the roof of the house and finally took up a rod. The rod went through the little hole in the door; the inner bolt turned slightly and opened—just as Govindan had opened it before!",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Pushing the door, Ellappan went inside. The lamp was burning dimly. Calling “Sellayi” with affection overflowing, he came to the bed and touched her.",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Who is that?”",
+      "sourceScan": 137,
+      "printedPage": 128,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi sprang up, gathering herself. Ellappan did not speak at all; Govindan walked as far as the door. Then he flew away.",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Forgive me,” Sellayi cried.",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don’t cry! Why are you crying? In this world no one seems to know what crying means. The prostitute cries. The chaste woman cries. The good man cries. The bad man cries. The rich man cries. The labourer cries.”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I am crying because”......Sellayi did not finish.",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I know; you are not crying because you committed a wrong! You are crying because the wrong you committed has been discovered, Sellayi! People give all sorts of reasons for prostitution in this world! They sound the conch saying it is a defect in society! What are they going to say about your case now! Widows—women cut off from married life while still young—young women married to old men—along with all these, they must also add greedy demons like you. Tell me why you entered this prostitution work; why did you commit this betrayal? Give me some reason.”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It is my fate!”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Fate! A perfect trick for escaping blame! Go tell that to some devotee.”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My mind went bad!”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hm! They say that if a woman does not get the husband she desires, her life will shrivel. They say that without a young man life will wither. Everything was according to your heart’s wish, yet I do not know what reason they will give for your going bad! Will they say a monkey’s mind jumps from tree to tree?”",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sellayi!...How highly I thought of you. When I went out of town, I thought only of home. I would not raise my eyes to look at other women. In my heart I had made you into a ‘photo’ picture—",
+      "sourceScan": 138,
+      "printedPage": 129,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "and kept you there! You have smashed and thrown away everything in a single blow!”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sellayi! You are lower than a worm floating in a sewer. Drunk on show and luxury, you are a miserable household insect that murdered its own sense! I learned one thing. Women too can go bad because of a monkey mind. Society cannot be responsible for everyone.”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don’t stab and gouge me with words; if you want, kill me.”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I am going to kill you. Tomorrow I will not show myself before Govindan’s face as some ‘gosaa’. I will appear before him as a murderer. Sellayi, I have told you so many times on this very bed that if you died, I too would die. Now I am going to beat you to death and continue living.”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Before the words were finished, Ellappan sprang upon her.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah, ayyo......hh......hh”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi crumpled to the floor. Ellappan removed the great thumb that had been pressed into the hollow of her throat.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi’s corpse was at the cremation ground! Ellappan lit the fire with his own hand.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A woman of gold. She is going away as embers.”\nThe street’s lament.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not gold. Merely base brass with polish on it.”\nThe thunder in Ellappan’s heart!",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sellayi burned.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The fire first set—in the three cities!\nThe fire set later—in southern Lanka!\nThe fire my wife set—in honour that will not fade!\nThe fire I too set—in the fortress of prostitution—blaze, blaze away!”",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ellappan did not sing.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This was the ‘mangalam’ that surged like waves in his mind for the ‘Story of the Dead Woman’.",
+      "sourceScan": 139,
+      "printedPage": 130,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  131,
+  132,
+  133,
+  134,
+  135,
+  136,
+  137,
+  138,
+  139
+ ]
+}
