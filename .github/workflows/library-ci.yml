@@ -68,6 +68,9 @@ jobs:
       - name: Daily Kural determinism
         run: npm run test:daily-kural
 
+      - name: Reading Room shelf disclosure
+        run: npm run test:shelf-disclosure
+
   validate:
     # Source-integrity gate. Each published work has a validator that derives its expectations from
     # the SOURCE ARCHIVE at the exact commit the released data is pinned to — so this job proves the

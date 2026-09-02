@@ -1,0 +1,5 @@
+{
+  "// why": "Scripts run through tsx, outside Next's compiler. The app's tsconfig sets jsx=preserve because Next does its own JSX transform; a standalone tsx run then falls back to the classic runtime and every component fails on a missing React global. This override selects the automatic runtime for script runs only. It changes nothing about how the app is built.",
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "jsx": "react-jsx" }
+}
