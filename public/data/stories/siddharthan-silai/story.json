@@ -1,0 +1,497 @@
+{
+ "workId": "siddharthan-silai",
+ "slug": "siddharthan-silai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/siddharthan-silai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சித்தார்த்தன் சிலை",
+  "en": "Siddharthan Silai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 36,
+  "printedPages": {
+   "first": 241,
+   "last": 243
+  },
+  "sourceScans": {
+   "first": 250,
+   "last": 252
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சித்தார்த்தன் சிலை",
+    "sourceScan": 250,
+    "printedPage": 241
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கெண்டை விழி. கரு வண்டு நிகர் கூந்தல். குங்கும வண்ணத்தின் குறுநகையைச் சிந்துகின்ற அந்த வானத்துச் சிவப்பெல்லாம் அவள் இதழில்...கன்னத்தில்! தாங்குமோ அன்றித் தளர்ந்து வளையுமோ என்றெண்ணத் தோன்றும் வகையினிலே இடையழகும் இளமைப் பேரழகும் போட்டியிடும் பொற்பாவை. அலைதோறும் அலைதோறும் வருகின்ற நுரை போல அவள் உதிர்க்கின்ற சொல் எல்லாம் சுவை மணக்கும் தேன் துளிகள். நிலம் நோகும் என அஞ்சும் அவள் நெஞ்சம் நடைபழகில் தெளிவாகும். சிப்பியிலே முத்து விளைகின்ற உண்மையினைப் பொய்யாக்கும் அவள் சிரிக்கின்றபோது தெறிக்கின்ற நிலவின் ஒளி!, யாழினிலே குழலினிலே இனிய இசைதான் எழும் என்போர் மறைந்திருந்து அவள் பாட்டைக் கேட்டு “யார் சொன்னார்; யாழ் குழலில் பாட்டும் உண்டு” எனக் கருத்தை மாற்றிக்கொள்வர்.",
+      "sourceScan": 250,
+      "printedPage": 241,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் பெற்ற பேறே அரும்பேறு என வாழ்த்தியது அவளைப் பெற்றவனே-உலகம்! “உனைப் பெற்றவரை வணங்குகின்றேன். தமிழே! உயிரே! ஓவியமே! உனைப் பிரிந்து ஒருக்கணமும் நில்லாது என்றன் கூடு!” என உறுதி எடுத்துக் கொண்டு அருகிருந்தான். இலக்கியத்து எழிலெல்லாம் காவியத்துச் சுவையெல்லாம் அவளோடு வாழ்வதிலே காண்கின்றேன் எனப் பெருமை கொண்டிருந்தான்.",
+      "sourceScan": 250,
+      "printedPage": 241,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அத்தகையோன் எப்படித்தான் அவளைப் பிரிந்தான் என்று ஊரெல்லாம் வியப்பினிலே மூழ்கிவிட—அவள் விழிகள் நீருற்றுப் மாறிவிட—நிலைமையொன்று உருவாகித் தனியானாள்.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேன்முகம் தெவிட்டியதோ? வான்முக வதனத்தை மறந்தானோ? என் கிளியே உனக்கிந்த இன்னலென்று ஊர்ப் பெண்கள் கேள்வி போட்டார்.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உள்ளத்தை ஒப்படைத்தேன். உயிர் மூச்சு அவரென்று எண்ணிக் கிடந்தேன், பனித் துளியால் சுகம் பெற்ற மலர் மீது பாலைவனக் கடுங்காற்று வீசுமென்று நினைக்கவில்லை. இரு கிழமை அவர் உள்ளம் நிலையாக இருக்கவில்லை. அதனை அவர் பேச்சாலே உணர்ந்து கொண்டேன். இப்படியாகுமென்று அப்போது தெரியாது தோழி!” என அழுதாள் தமிழ்ப்பாவை.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கலங்காதே! கண்ணீர் சிந்தாதே! வழியொன்று சொல்கின்றேன் கேள்! ஆற்றுக்குத் தென்புறத்தில் அழகான சோலையிடையிருக்கின்ற புத்தரது கோயிலுக்குச் சென்று குறை சொல்லி முறையிட்டால் கொழுநன் திரும்பிடுவான். நிற்காதே போ!” என்றாள் உயிர்த்தோழி.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அங்ஙனமே அவள் சென்றாள். “அருள் வடிவே! அன்பின் பிழம்பே! செயற்கரிய செய்திட்ட சித்தார்த்தப் பெருமானே! போதி நிழலிலே உலகுக்குக் குளிர் தந்தாய்! இன்று உன் நிழலால் என் துயரம் போக்கிடுவாய். அழகரசன், என் ஆளன், உயிர்த் துணைவன், பிரிவு எனும் வேதனையைத் தரமாட்டேன் எனச் சொன்ன என் அத்தான்—அவரில்ல என்னிடத்தில் இப்போது! எங்குற்றார்? ஏன் சென்றார்? என்ற சேதி தெரியாது இவ்வேழைக்கு! தூயவனே; என் துன்பம் துடைத்திடுவாய்! காசினியோர் வாழ்வதற்கு வழி சொன்ன பெரியவனே! கருணைக் கடலே! அலைக் கரத்தால் இவ்வறண்ட கரையை நனைத்துவிடு. என் மனத்தை மகிழவைப்பாய்!”",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—என அழுதாள். தொழுதாள். விளக்கேற்றி வைத்து விழிநீரைச் சிலைமுன்பு சிந்தி நின்றாள். சிலை பேசிற்று. கண் மூடிக்கொண்டு அதைக் கேட்டாள்:",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பெண்பாவாய்! கணவன் பிரிந்துவிட்ட கவலையதன் என்னிடத்தில் உரைக்க வந்தாய். என்ன மதி உன்றனுக்கு? அழகு மின்னாட்டி—அவளருகே உறங்குகின்ற அருமைச்",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "space"
+     },
+     {
+      "text": "செல்வன்—இருவரையும் ஏங்கவிட்டு “அன்பு” போதிக்கத் துறவு பூண்டவன் நான். அவனிக்கு நான் தந்த படிப்பு...அன்பு!...அன்பு!...அன்பு!...ஆனாலும் அந்த அன்புதான் எனை நம்பி வாழ்ந்திட்ட துணவியிடம், அவள் பெற்ற பிள்ளையிடம் காட்டாமல் வெளிவந்தவன் நான், கணவனைப் பிரிந்த உன் கவலையைப் புரிந்து கொள்ளும் சக்தி எனக்கில்லை போ—போ!”",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குரல் கேட்டாள், “அய்யோ பகவானே!” என அழுதாள்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிரிப்பொலி கேட்டது. விழி திறந்தாள், சிலைக்குப் பின்னிருந்து அவள் கணவன் வந்திட்டான்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அத்தான்” எனப் பாய்ந்தாள்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அணைத்தபடி “ஆருயிரே! விளையாடிப் பார்த்தேன் உன்னோடு! அதற்குள் நீ வேதனை உருவாகி விட்டாயே! வா வா போவோம்!” என்றான்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சித்தார்த்தன் அருள்!” என்றாள்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவர் அருளியது உலகை வாழ்விக்கும் உயர் கொள்கை. உன்னையும் என்னையும் சேர்த்து வைக்க-உலகோரின் பிரார்த்தனைகளை நிறைவேற்றிக் காணிக்கைக் கூலி பெற—அவரில்லை; அந்தோ! அவரைக் கடவுளாக ஆக்கிவிட்டார்—தீமை! தீமை!!” என்றான்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பின்னர், பேசியது யார்?” என்றாள்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சிலையல்ல; நானே!” என்றான்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தழுவிக்கொண்டான்.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "◆ ◆ ◆",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Siddharthan Silai",
+    "sourceScan": 250,
+    "printedPage": 241
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Eyes like the kendai fish. Hair like a black beetle. All the redness of a sky that spills a little vermilion smile seemed gathered on her lips...on her cheeks! Her slender waist and the vast beauty of youth competed with each other in a golden doll so delicate that one wondered whether she could bear her own form or bend beneath it. Like foam arriving wave after wave, every word she shed was a drop of honey fragrant with taste. Her fear that even the earth might be hurt became clear in the way she walked. When she laughed, the moonlight that scattered from her smile seemed to make false the truth that pearls are born in shells! Those who said sweet music could arise only from the yazh and the flute would hide away, listen to her song, and change their opinion: “Who said so? There is song in the yazh and flute too.”",
+      "sourceScan": 250,
+      "printedPage": 241,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The world itself congratulated the man who had fathered her: what a rare fortune he had received! “I bow to those who gave birth to you. Tamil! My life! My painting! My body shall not remain even a moment apart from you!” Taking such a vow, he stayed beside her. He took pride in saying that all the beauty of literature and all the taste of epic poetry could be found in living with her.",
+      "sourceScan": 250,
+      "printedPage": 241,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "How could such a man ever leave her? The whole town sank into astonishment. Her eyes filled with water; a situation arose in which she was left alone.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Has he tired of that honeyed face? Has he forgotten that heavenly countenance? My parrot, why has this sorrow come to you?” the women of the town asked.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I gave him my heart. I lay believing that he was my very breath of life. I never imagined that a desert’s scorching wind would blow upon a flower that had known the comfort of dew. For two weeks his mind was not steady. I understood it from his speech. I did not know then that it would come to this, friend!” cried the Tamil maiden.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not grieve! Do not shed tears! I will tell you a way—listen! South of the river, in a beautiful grove, there is a temple of the Buddha. Go there and pour out your grievance; your husband will return. Do not stand here—go!” said her dearest friend.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So she went.",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Form of grace! Flame of love! Great Siddhartha who did what was hard to do! Under the shade of the Bodhi tree you gave coolness to the world. Today, by your shade, drive away my grief. My handsome lord, my master, my life-companion, my beloved who said he would never give me the pain of separation—he is not with me now! Where is he? Why did he go? This poor woman does not know! Pure one, wipe away my sorrow! Great one who showed the people of the world a way to live! Ocean of compassion! With the hand of your wave, wet this parched shore. Make my heart happy!”",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She wept. She worshipped. She lit a lamp and stood before the statue shedding tears. The statue spoke. She closed her eyes and listened:",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Woman! You have come to tell me of the grief caused by your husband leaving you. What sense have you? A beautiful lightning-like woman—and the dear",
+      "sourceScan": 251,
+      "printedPage": 242,
+      "joinToNext": "space"
+     },
+     {
+      "text": "son sleeping beside her—I left both of them longing and took up renunciation in order to preach ‘love’. The lesson I gave the world...love!...love!...love!... Yet I myself came away without showing that very love to the companion who lived trusting me, or to the child she bore. I have no power to understand your grief at being separated from your husband. Go—go!”",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She heard the voice and cried, “Ayyo, Bhagavan!”",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She heard laughter. She opened her eyes. Her husband stepped out from behind the statue.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Beloved!” she cried and sprang toward him.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Embracing her, he said, “My life! I only played a little game with you! And already you have become the very form of suffering! Come, come, let us go.”",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Siddhartha’s grace!” she said.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What he bestowed was a lofty principle that can help the world live. He is not there to bring you and me together, fulfil the prayers of the world and collect offerings as wages. Alas! They have made him into a god—evil! Evil!!” he said.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Then who was speaking?” she asked.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not the statue. I was!” he said.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He embraced her.",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "◆ ◆ ◆",
+      "sourceScan": 252,
+      "printedPage": 243,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  250,
+  251,
+  252
+ ]
+}

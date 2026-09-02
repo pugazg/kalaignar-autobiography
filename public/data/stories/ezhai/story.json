@@ -1,0 +1,394 @@
+{
+ "workId": "ezhai",
+ "slug": "ezhai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/ezhai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஏழை",
+  "en": "Ezhai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 15,
+  "printedPages": {
+   "first": 106,
+   "last": 109
+  },
+  "sourceScans": {
+   "first": 115,
+   "last": 118
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஏழை",
+    "sourceScan": 115,
+    "printedPage": 106
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வழக்கம்போல் பானுவின் தள்ளு வண்டி ‘பார்க்’ நோக்கிப் புறப்பட்டது. பானுவின் சின்னஞ் சிறு வாயிலிருந்து சிதறிக் கொண்டேயிருக்கும் மழலை மொழிகட்குப் பதில் பேசியவாறு வண்டியைத் தள்ளிக்கொண்டு போனாள் பார்வதி. பானுவுக்கு வயது ஆறு கூட ஆகவில்லை. வீட்டில் ‘துரு துரு’ என்று சும்மா இருப்பதில்லை. முக்கியமாக அப்பா அம்மாவைப் பேச விடுவதில்லை யென்றால் பாருங்களேன்! காலையிலிருந்து கிராமக் கணக்கு வழக்கு, குத்தகைதார் பணம் பட்டுவாடா, கிசான் தொல்லை, வியாபாரப் பிரச்சினை இவ்வளவையும் கவனித்துவிட்டு, மாலை ஆறு மணிக்கு மேல்தான் நல்லக்கண்ணுப் பிள்ளைக்கு ஓய்வு. அந்த ஓய்வு நேரத்தில் ஒரு வினாடிகூட வீணைப் போய்விடக் கூடாது என்பது பிள்ளையின் நோக்கம். ஆறு மணி எப்பொழுது வரும் என்று எதிர்பார்த்திருக்கும் கருணாம்பாள்—ஆமாம் அவரது மனைவி—அந்த அம்மையாரும் அந்த ஓய்வு உல்லாசத்தைத்தான் விரும்பினார்கள். அவர்களின் இனிய பொழுதை—அந்தத் தீராத விளையாட்டுப் பிள்ளை தொடர்ச்சி கெடுக்கும்படி நடு நடுவே அறுத்துவிடும். என்னதான் புத்திர பாசமிருந்தாலும் சற்று நேரம் யாருடைய தொந்தரவுமின்றி இருக்கத்தான் கருணாம்பாளின் மனம் விரும்பியது. அதுவுமென்ன; அந்தத் தம்பதிகள் ஏழைகளா—இன்பம் என்ன நிறம் என்று கேட்க? குடிசை மன்னர்களுக்கும் ராணிகளுக்கும்தான் தங்கள் வறுமை ராஜ்யத்தில் இன்பத்துக்காக ஒரு சில நிமிடங்கள் கூட ஒதுக்க",
+      "sourceScan": 115,
+      "printedPage": 106,
+      "joinToNext": "space"
+     },
+     {
+      "text": "முடியவில்லை. கடன்காரர் படையெடுப்பு; தயிர்க்காரி முற்றுகை; இவ்வளவையும் சமாளித்து விட்டு, இரவு கருணை கூர்ந்து தருகிற சில மணி நேரங்களில் காம வீணையை மீட்டதும் புலம்பவும் கடவுளை எண்ணி அழவும் போதுபோக, மிச்ச நேரத்தை எப்போதாவது பயன்படுத்திக் கொள்ளலாம். அதுவும் ஏழை சாம்ராஜ்யத்தில் பிரஜைகள் அதிகம். எடுபட்டுக் குழந்தைகளுக்குக் குறையாது. ஏழாவது குழந்தை, முதல் குழந்தையை விட ஆறு வயதுதான் இளையதாயிருக்கும். கருணாம்பாளைப் போலக் காசைத் தூசாக மதித்துக் காப்பப் பையை மாற்றிப் போட்ட வசதியா படைத்திருக்கிறார்கள் அந்தப் பரிதாப ஜந்துக்கள்!",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இளமை தேயாதவன்—எழில் குறையாதவன்—இப்பேர்ப்பட்டவன்தான் பார்வதி கணவனைப் பெற்றிருந்தாள். அவன் ‘மில்’ வேலை முடிந்து ஐந்து மணிக்கெல்லாம் வீட்டுக்கு வந்திருப்பான். அவனை வரவேற்று உபசரிக்க அவளுக்கு வேலை ஒழியவில்லை. எஜமானுக்கும் எஜமானிக்கும் தேவையான ஓய்வுக்காக—அந்த ஏழையின் இளம் மனைவி பார்வதி தன் பருவ உணர்ச்சியைக் கட்டுப்படுத்திக் கொண்டு பானுவைப் ‘பார்க்கு’க்கு அழைத்துச் சென்றாள். ஒருநாள் மட்டுமா? இல்லை. நாள்தோறும். அவள் பெண்ணல்ல; இந்த உலகத்தில் ஒரு மாடு பகல் முழுவதும் எலும்பு முறிய உழைப்பதுபோல வீட்டு வேலைகள். அவளுக்கு எஜமான் மாளிகைதானே வீடு. மாலையில் சூரியனுக்குக்கூட வேலை முடிகிறது, ஆனால் பார்வதிக்கு...? இதை அவளால் நினைக்கத்தான் முடியவில்லை. நெஞ்சைத்தான் படைத்தானே அந்த நேரமையற்றவன், வயிற்றையும் ஏன் படைத்தான்?",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யார்....யாரைக் கேட்டது?",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பூஞ்செடிகளின் அசைவைப் பூங்கொத்துகளின் அழகைப் பானுவுக்குக் காட்டித் தானும் ரசித்துக்கொண்டிருக்கையில்..... வானம் கறுத்துக் கொண்டு வருவதைக் கண்டாள். மாதம் முடிந்து சம்பளம் கேட்கும்போது, அதைவிட அதிகமான கறுப்பை எஜமானின் முகத்தில் பார்வதி அடிக்கடி பார்த்திருக்கிறாள். பழகிப்போனபடியால் வானத்தின் மாற்றத்தை லட்சியம் செய்யாமலே வீடு நோக்கி நடந்தாள். அவள் மன அலைகள் எல்லாம் அன்று...அத்தான்...முக்குத்தி...முத்தப் போட்டி...இவைகளிலே மோதிக்கொண்டிருந்தன. இன்பக்",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கனவு இல்லாவிட்டால் அவள் உலர்ந்த உதடுகளில் புன்னகை திலகமிட்டிருக்காதல்லவா? சுவையான கனவு என்பதால்தான் கண்கள் அப்படி மின்னிக்கொண்டிருக்க வேண்டும். அத்தான் முத்தம் தருவது போன்ற கனவோ—அல்லது முதல்நாள் தந்த நினைவோ—அவள் கன்னங்கூடக் குப்பென்று சிவந்து விட்டது.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒன்றுமில்லை; முக்குத்தி வாங்கி வருகிறான் அத்தான். பல நாளாகச் சேர்த்த காசு முக்குத்தியாக உருவெடுக்கிறது. துடைப்பக் குச்சியை எடுத்துத் தூர எறிந்துவிட்டுப் பார்வதியின் மூக்கில் அவனே அந்த ஆபரணத்தை அணிவிக்கிறான். கறுத்த மேனியில் அந்த வெள்ளை முக்குத்தி பளிச்சிடுவது, நீல வானத்தில் நிலா கிளம்புவதை நினைவூட்டுகிறது. “பார்வதி...எங்கே?” என்று அத்தான் தன் உதடுகளை மொக்காக ஆக்குகிறான். பார்வதியின் இதழ்களும் குவிகின்றன. மொட்டுகள் மோதி மலர்ந்துவிடுகின்றன. ‘சஞ்சீவி பர்வதத்தின் சாரல்’—ஒரு முக்கிய பகுதி நடந்தேறுகிறது.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கனவு மங்கலம் பாடுகிறது. பார்வதி சுய நினைவு பெறுகிறாள். வண்டியில் பானு “மழை வருது மழை வருது” என்று பாட ஆரம்பித்து விடுகிறது. இரண்டு கனமான மழைத்துளிகள் பார்வதியின் முகத்தில் விழுந்து சிதறின.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உலகை அதிரச் செய்யும் இடிகள்—வான மனிதனின் அகோரச் சிரிப்பு பயங்கர மின்னீச்சு—கடலைக் கவிழ்த்து விட்டதுபோல மழை—இமயம் உருண்டு விந்தியத்தில் மோதுவது போன்ற அதிர்ச்சி.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பார்வதிக்கு பானு நனைந்து விடுவாளே என்று பயந்தான். பாவம்—அந்த ஏழைக்கு எஜமான் வீட்டில்—இல்லை, இல்லை குழந்தையின் மேல்—அவ்வளவு பாசம். மனித வர்க்கம் என்பது ஏழைக்கும்பல்தானே! பணக்கார மனிதர், மிருகக் கூட்டம். அதில் மனிதர்களும் தவறிப் பிறப்பதுண்டு. ஏழை மனிதர் குழுவில் துன்பம் தாங்கமாட்டாமல் மிருக வளர்ச்சியடைவோர் உண்டு. அந்த வளர்ச்சி இன்னும் பார்வதியைப் பிடிக்கவில்லை. இதெல்லாம் அவருக்கு ரஷ்யப் பேச்சு என்பார் நல்லக்கண்ணுப் பிள்ளை. ரஷ்யா என்றால் அவருக்கு விஷம் சாப்பிடுகிற மாதிரி.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பார்வதி நன்றாக நனைந்து விட்டாள். குழந்தைக்கு ஒரே பயம்; அழ ஆரம்பித்துவிட்டது. மரத்தடியில் நின்றுவிட்டாள்",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பார்வதி. அவ்வளவு கஷ்டத்திலும், பயங்கரத்திலும் வரப்போகிற அந்த இன்ப வரவு அவள் முகத்தில் தனித் தெளிவை அதிகப்படுத்தியபடி இருந்தது.",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரென்று அந்த மரத்தின் ஒரு பெரிய கிளை முறிந்து விழுந்தது. மழை நின்று விட்டது; புயல் ஓய்ந்துவிட்டது.",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நல்லக்கண்ணுப் பிள்ளையின் மோட்டார் வெகு வேகமாகச் சாலையில் பறந்து வந்தது.",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முறிந்து கிடக்கும் அந்த மரத்தடியில்....‘பானு’ என்று சப்தம் போட்டபடி இறங்கினார் பிள்ளை. பானு மயக்கமாய்க் கிடந்தது. தூக்கி மூர்ச்சை தெளிவித்தார். ‘அப்பா’ என்று கண் விழித்தது குழந்தை. காரில் குழந்தையோடு ஏறி உட்கார்ந்தார். கார் புறப்பட்டு விட்டது—டாக்டர் வீட்டை நோக்கி!",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மரத்தடியில் கிடந்த இன்னொரு உருவம் கண் விழித்தது “அத்தான் அய்யோ...” நீண்ட பெருமூச்சு. கண்கள் மூடிக் கொண்டன. யார் அது? “ஏழை”!",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Ezhai",
+    "sourceScan": 115,
+    "printedPage": 106
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As usual, Banu’s push-cart set out toward the ‘park’. Parvathi pushed the cart along, answering the baby words that kept scattering from Banu’s tiny mouth. Banu was not even six. At home she never stayed quiet; she was always ‘thuru-thuru’, darting about. Most of all, she would not let father and mother talk—just imagine! From morning onward Nallakkannu Pillai had to attend to village accounts, payments from tenants, kisan troubles and business problems. Only after six in the evening did he get any rest. Pillai’s aim was that not even a second of that leisure should be wasted. Karunambal—yes, his wife—waited for six o’clock too, and that lady desired the same pleasure of leisure. Their sweet time would be cut in the middle again and again by that endlessly playful child, breaking its continuity. However strong her parental affection, Karunambal’s heart wanted at least a little while without anyone’s disturbance. And what of it—were that couple poor, to ask what colour pleasure was? It is the kings and queens of huts who, in their kingdom of poverty, cannot set aside even a few minutes for pleasure—",
+      "sourceScan": 115,
+      "printedPage": 106,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They cannot. An invasion by creditors; a siege by the curd-seller; after managing all that, in the few hours that night mercifully grants, once the veena of desire has been played, time goes in lamenting and crying to God, and perhaps whatever remains may sometimes be used. Besides, the poor empire has many subjects. There is no shortage of children arriving one after another. The seventh child may be only six years younger than the first. Have those pitiable creatures been granted Karunambal’s kind of comfort—treating money as dust and changing the kaappa bag!",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Young, his youth unworn—handsome, his beauty undiminished—such was the husband Parvathi had got. He would return home by five after finishing his mill work. Yet she had no release from work in order to welcome and attend to him. For the rest required by master and mistress—the poor young wife Parvathi restrained the feelings of her own youth and took Banu to the ‘park’. Was it only for one day? No. Every day. She was no woman; she was like a cow in this world, doing housework all day until her bones seemed to break. Was not the master’s mansion itself her home? Even the sun’s work ends in the evening, but Parvathi’s...? She could not even bear to think of it. That untimely creator made a heart—why did he also make a stomach?",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Who....asked whom?",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She was showing Banu the swaying flower plants and the beauty of the clusters, enjoying them herself, when she noticed the sky growing dark. At the end of the month when Parvathi asked for her wages, she had often seen an even deeper darkness on the master’s face. Being used to it, she paid no attention to the change in the sky and walked toward home. All the waves of her mind that day were striking against...aththaan...nose-stud...a contest of kisses... A sweet—",
+      "sourceScan": 116,
+      "printedPage": 107,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—dream must have been there; otherwise a smile would not have placed its tilak on her dry lips. Only because the dream was delicious could her eyes have been shining like that. Perhaps it was a dream of aththaan giving her a kiss—or the memory of the first day—even her cheeks suddenly flushed red.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nothing more: aththaan was bringing her a nose-stud. Money saved for many days was taking the form of a nose-stud. Throwing the broomstick far away, he himself placed the ornament on Parvathi’s nose. The white nose-stud flashing on her dark complexion called to mind the moon rising in a blue sky. “Parvathi...where?” aththaan said, shaping his lips into a bud. Parvathi’s lips too gathered. The buds struck and blossomed. ‘The drizzle on Sanjeevi Parvatham’—an important part was enacted.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The dream sang its mangalam. Parvathi regained ordinary awareness. In the cart Banu began singing, “Rain is coming, rain is coming.” Two heavy raindrops fell on Parvathi’s face and burst apart.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thunder that made the world tremble—the dreadful flash of lightning, the monstrous laughter of the man in the sky—rain as though the sea had overturned—the shock of the Himalaya rolling down and colliding with the Vindhyas.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Parvathi feared that Banu would get drenched. Poor woman—that poor servant had such affection for the master’s house—no, no, for the child! Humanity is the crowd of the poor, is it not? Rich humans are a herd of animals. Even among them, humans are sometimes born by mistake. Among the group of poor humans too, there are those who, unable to bear suffering, grow into beasts. That growth had not yet seized Parvathi. Nallakkannu Pillai would call all this Russian talk. Russia tasted to him like eating poison.",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Parvathi was thoroughly drenched. The child was terrified and began to cry. Parvathi stopped beneath a tree—",
+      "sourceScan": 117,
+      "printedPage": 108,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even in all that hardship and terror, the coming arrival of that happiness continued to give her face a special brightness.",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suddenly a large branch of the tree broke and fell. The rain stopped; the storm subsided.",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nallakkannu Pillai’s motor car flew rapidly along the road.",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At the foot of the fallen tree....Pillai got down calling, ‘Banu!’ Banu lay unconscious. He lifted the child and revived her. “Appa,” the child said as her eyes opened. He got into the car with the child. The car drove away—toward the doctor’s house!",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Another figure lying beneath the tree opened its eyes. “Aththaan, ayyo...” A long sigh. The eyes closed. Who was it? **“The poor woman”!**",
+      "sourceScan": 118,
+      "printedPage": 109,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  115,
+  116,
+  117,
+  118
+ ]
+}

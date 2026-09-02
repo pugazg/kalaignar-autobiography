@@ -1,0 +1,418 @@
+{
+ "workId": "kadaisi-kattam",
+ "slug": "kadaisi-kattam",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kadaisi-kattam",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கடைசிக் கட்டம்",
+  "en": "Kadaisi Kattam"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 30,
+  "printedPages": {
+   "first": 196,
+   "last": 201
+  },
+  "sourceScans": {
+   "first": 205,
+   "last": 210
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கடைசிக் கட்டம்",
+    "sourceScan": 205,
+    "printedPage": 196
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கனம் நீதிபதி அவர்களே! கூண்டிலே நிறுத்தப்பட்டிருக்கும் நான் கொலைகாரன் என்பது குற்றச் சாட்டு! நானும் அதை ஒத்துக்கொள்ளத்தான் போகிறேன். அதற்கான தண்டனையையும் ஏற்கத் தயாராகவே இங்கு நிற்கிறேன். ஏற்க மறுத்தால்தான் என்ன; நீங்கள் எங்கே விட்டுப்போகிறீர்கள்? என் கழுத்தை இறுக்குவதற்காகத் தூக்குக் கயிறும், மூச்சடங்கிய என் உடல் மூடிக்கொள்வதற்காகச் சிறைச்சாலைக்குப் பக்கத்திலே ஒரு சிறு குழியும் தயாராக இருக்கும் என்பதை நான் அறியாமலில்லை. கொலைகாரன்—அதுவும் ஆசைநாயகியைக் கொலை செய்தவன்—சொந்தக் கணவனை ஏமாற்றிவிட்டு உள்ளத்திலேயே கள்ளக் காதலனுக்கு இடங்கொடுத்த பிரியமுள்ள பெண்ணொருத்தியைப் பிணமாக்கியவன்—என்றெல்லாம் ஊர் என்னைச் சபிக்கும்; உற்றார் உறவினர் தூற்றுவர்; மண்மூடி மறைந்துவிடும் என் உடல் அவர்கள் கண்களுக்குக் கிடைக்காவிட்டாலும், **டாக்டர் பாபு** என்ற என்னுடைய பெயரின் மீது அவர்கள் காறி உமிழ்வார்கள் என்பதும் எனக்குத் தெரியும். என்னுடைய இந்த அற்பமான சரித்திரம் மற்றவர்களுக்காவது ஒரு பாடமாக இருக்கட்டும் என்பதற்காகக் கொலைக்கான காரணங்களை உங்களிடம் விளக்க விரும்புகிறேன்.",
+      "sourceScan": 205,
+      "printedPage": 196,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காரணங்களைக் கூறி விடுதலை பெறலாம் என்ற ஆசை எனக்குக் கிடையாது! ஏனெனில் நான் கூறும் காரணங்கள் எதுவுமே என்னை நிரபராதி என்று கூறும் சக்தி படைத்தவை",
+      "sourceScan": 205,
+      "printedPage": 196,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அல்ல! எனது கள்ளக் காதலி **மஞ்சுளாவை** நான் தான் கொன்றேன்.",
+      "sourceScan": 206,
+      "printedPage": 197,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வெறியில் கொல்லவில்லை. என்னை அறியாத நிலையில் கொன்று விட்டேன். நான் ஒரு டாக்டர். கோபாலபுரத்திலே குடியிருந்து கொண்டு, டாக்டர் தொழில் நடத்திவந்தேன். நான் குடியிருந்த வீடு பெரிய மாடி வீடு. மாடியிலேதான் வைத்தியசாலையும் எனது குடும்பமும். கீழேயுள்ள வீட்டில்தான் மஞ்சுளா தனது தந்தையுடன் வசித்து வந்தாள். என் மனைவி கோகிலாவுக்கும் மஞ்சுளாவுக்கும் மிகுந்த நட்பு! அந்த வீட்டுக்குக் குடிபோன சில நாட்களுக்குள்ளாகவே இருவரும் இணைபிரியாத் தோழிகளாகி விட்டனர். என் துணைவி கோகிலா, பத்தினிகளின் பரம்பரையிலே வந்தவள். காலையிலே படுக்கை விட்டெழும்போது என் கால்களில் தொட்டுக் கும்பிடாமல் அறையைவிட்டு வெளியேறுவதில்லை. பகலானாலும், இரவானாலும், எவ்வளவு மணி நேரமானாலும் நான் சாப்பிட்ட பிறகே அவள் சாப்பிடுவாள். என் பெயர் பாபு என்பதற்காக—“பா” என்கிற முதல் எழுத்து வரும் எந்த வார்த்தைகளையும் அவள் உச்சரிக்கவே மாட்டாள். என் மீது அளவு கடந்த அன்பும், மரியாதையும், பக்தியும் கொண்டவள். கொஞ்சம் கர்நாடகமாயிருந்தாலும், கணவனைத் தெய்வமாகக் கொண்ட மனைவியாயிருக்கிறாளே என்ற எண்ணம், அவள் மீது எனக்கு அளவில்லாத பாசத்தை உண்டாக்கியிருந்தது.",
+      "sourceScan": 206,
+      "printedPage": 197,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கீழ் வீட்டிலேயிருந்த மஞ்சுளா திருமணமானவள். அவள் கணவன் டில்லியிலே இருந்தான். கணவனுக்கும் மஞ்சுளாவுக்கும் ஏதோ சிறு தகராறு ஏற்பட்டு அது பெரிதாக முற்றி, கோபித்துக் கொண்டு, மஞ்சுளா தகப்பன் வீட்டுக்கு வந்திருந்தாள். மஞ்சுளா நல்ல அழகி. நாகரீக நாரீமணி. அவளது நீலக்குறு நயனங்கள் ஆனவரையும் வசீகரிக்கும் தன்மை வாய்ந்தவை. நான் அடிக்கடி வெளியிலே சென்றுவிட்டு வீட்டுக்கு வரும்போது கீழ் வீட்டைக் கடந்துதான் மாடிக்குப் போகவேண்டும். அத்தகைய சந்தர்ப்பங்கள் நானும் மஞ்சுளாவும் அடிக்கடி சந்திக்கும் நிலையை ஏற்படுத்தின. “நீ என்னைக் காதலிக்கிறாயா?” என்று ஒரு பெண்ணிடம் கேட்டா தெரிந்துகொள்ளவேண்டும்! பார்த்தே தெரிந்துகொள்ளலாமே! அதுவும் மஞ்சுளாவின் அந்த விழி அசைவு என் இருதயத்தையே அடியோடு அசைத்துவிட்டது. ஒரு நாள் நான் வீட்டுக்கு இரவு ஒன்பது மணிக்குத் திரும்பினேன். கீழ் வீட்டு வாயிற்புறத்தில் மஞ்சுளா உட்கார்ந்திருந்தாள்.",
+      "sourceScan": 206,
+      "printedPage": 197,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்போதும் கோகிலாவும் மஞ்சுளாவும் அரட்டை அடித்துக் கொண்டிருப்பார்கள். அன்று கோகிலாவைக் காணவில்லை. நான் மஞ்சுளாவிடம் “அப்பா இல்லையா” என்று கேட்டேன். “இல்ல ஊருக்குப் போயிருக்கிறார்” என்று கூறினாள். “கோகிலாகூட தூங்க வரவில்லையா?” என்று கேட்டுக்கொண்டே நின்றேன். “இவ்வளவு நேரம் பேசிக்கொண்டிருந்தாள்—தலை வலிக்கிறது என்று தூங்கப் போய்விட்டாள்” என்று மஞ்சுளா கூச்சத் தோடு பதில் சொன்னாள். நான் மாடியில் போய்ப் பார்த்தேன்—கோகிலா நன்றாகத் தூங்கிக்கொண்டிருந்தாள். மெதுவாக நடந்து கீழ் வீட்டுத் தாழ்வாரத்துக்கு வந்தேன். மஞ்சுளா, தெருக் கதவைத் தாழ்போட்டுவிட்டுத் திரும்பியவள் என்னைப் பார்த்துத் திடுக்கிட்டுவிட்டாள்! தலையைக் குனிந்துகொண்டு நின்றாள். அருகே சென்றேன். அவள் அசையவில்லை. தொட்டேன், “கோகிலா தூங்கிவிட்டாளா?” என்று கேட்டாள். “சம்மதம்” என்பதற்கு அறிகுறி இந்தக் கேள்வி! பிறகு சமயம் கிடைத்த போதெல்லாம் நானும் மஞ்சுளாவும் காதல் கீதம் பாட ஆரம்பித்தோம். இந்த விஷயம் என் மனைவி கோகிலாவுக்குத் தெரிந்துவிட்டது. அவள் என்னிடம் எவ்வளவோ கெஞ்சினாள் மன்றாடினாள். நானோ மஞ்சுளாவின் மயக்கத்திலே அவள் புலம்பல் லட்சியம் செய்யாமலிருந்தேன். பற்பல அறிவுரைகள் கூறிக் கோகிலா என்னைத் தடுத்தாள்.",
+      "sourceScan": 207,
+      "printedPage": 198,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோகிலாவுக்கும் மஞ்சுளாவுக்கும் விரோதம் வளர்ந்தது. எனக்கும் மஞ்சுளாவுக்கும் தொடர்பு வளர்ந்தது. கோகிலாவோடு நான் சரியாகவே பேசுவது கிடையாது. சதா சர்வகாலமும் மஞ்சுளாவைப் பற்றிய நினைவுகள். அவளைப் பற்றிய கனவுகள்! அவளுடைய தகப்பனார் எங்களின் சந்திப்புகளுக்கு ஒரு தடையாக இருந்தார். அந்தத் தடையை மீறுவது எங்களுக்கு ஒரு புது இன்பத்தையே அளித்தது. கோகிலா ஒரு நாள் என்னிடம் வந்து, “நான் தற்கொலை செய்துகொள்ளப் போகிறேன்” என்று பயமுறுத்தினாள். நான் “தாராளமாகச் செய்துகொள், எனக் கொன்றும் ஆட்சேபணை இல்லை” என்று கூறிவிட்டேன். கோகிலாவுக்கு வீட்டுக் குலதெய்வத்தின் அறையிலே முறையிட்டுக் கதறுவதே வேலையாகப் போய்விட்டது! தெய்வம் விட்ட வழியில் நடக்கட்டும் என்று அதன் காலில் விழுந்து கதறினாள்.",
+      "sourceScan": 207,
+      "printedPage": 198,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நாள் திடீரென்று டில்லியிலேயிருந்து மஞ்சுளாவின் கணவன் கோபால் வந்துவிட்டான். மஞ்சுளாவைச் சமாதானப்",
+      "sourceScan": 207,
+      "printedPage": 198,
+      "joinToNext": "space"
+     },
+     {
+      "text": "படுத்தி அழைத்துச் செல்வதற்காகக் கோபாலின் சென்னை விஜயம் நடைபெற்றது. மஞ்சுளாவின் கோபம் தணியாத காரணத்தால் மாமனாரின் யோசனைப்படி கோபால் அங்கே ஒரு மாத காலம் தங்கவும் முடிவு செய்துவிட்டான். நானும் மஞ்சுளாவும் இப்போது வெகு கஷ்டப்பட்டுச் சந்தித்தோம். மஞ்சுளா டில்லிக்குப் போகக்கூடாது என்று நான் வேண்டினேன். அவளும் என்னைப்போலவே முடிவு செய்திருந்தாள். மஞ்சுளா டில்லிக்குப் போய்விடுவாள், பிறகு தன் வாழ்வில் நிம்மதி ஏற்படும் என்று எண்ணியிருந்த கோகிலாவுக்கு, மஞ்சுளா டில்லிக்குப் போகப் போவதில்லை என்ற செய்தி இடியாக விழுந்தது! கோபாலோ எப்படியும் மனைவியைச் சமாதானப்படுத்திவிடலாம் என்ற தைரியத்தில் தங்கியிருந்தான்.",
+      "sourceScan": 208,
+      "printedPage": 199,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோபாலுக்கும் எனக்கும் நட்பு ஏற்பட்டது. அவனுக்குத் தெரியாது எனக்கும் அவன் மனைவிக்கும் நட்பு என்பது! ஒரு மாதம்—இரண்டு மாதம்—மூன்று மாதம்—கோபால் தங்கி இருந்தான் சென்னையிலேயே! கடைசியாகக் கோபாலும் மஞ்சுளாவும் டில்லிக்குப் போகப்போகிறார்கள் என்ற செய்தி எனக்குக் கிடைத்தது. மஞ்சுளாவிடம் கேட்டேன். அவளும் ‘ஆமாம்’ என்று தலையசைத்துவிட்டு ஓடிவிட்டாள். அவள் என்னைக் கிண்டல் செய்வதற்காக அப்படிச் சொன்னாள் என்பது எனக்குத் தெரியாது. எனக்கு ஒரே ஆத்திரம் பிறந்துவிட்டது! மஞ்சுளா டில்லியிலே சென்று வாழ்வதா? நான் சென்னையில் அவளை நினைத்து ஏங்குவதா? என்று பெருமூச்சுவிட்டேன்.",
+      "sourceScan": 208,
+      "printedPage": 199,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளைக் கொன்று யாருக்கும் பயன்படாமல் செய்துவிட வேண்டுமென்று துடித்தேன், அன்று வெளியிலே சென்றிருந்த நான், ‘ரிவால்வர்’ சகிதம் வீட்டுக்குத் திரும்பினேன், மஞ்சுளாவைக் கொலை செய்து, அவள் டில்லிப் பயணத்தைத் தடுக்க வேண்டுமென்று முடிவுகட்டிக்கொண்டு வீட்டுக்குள் நுழைந்தேன். கீழ் வீட்டில் வேலைக்காரச் சிறுமி நின்று கொண்டிருந்தாள். அவளிடம், “கோபால் எங்கே?” என்று கேட்டேன். “அவர் ஊருக்குப் போய் விட்டாராம்” என்று பதில் கூறிவிட்டு அவள் வேகமாகப் போய்விட்டாள். கீழ் வீட்டில் மஞ்சுளாவைத் தேடினேன்; காணவில்லை! சரி, அவளும் போய் விட்டாள் என்ற ஏமாற்றத்தோடு மாடிக்குப் போனேன். அங்கே என் மனைவி கோகிலாவைக் காணவில்லை. மேஜைமீது ஒரு கடிதம் இருந்தது. பிரித்துப் பார்த்தேன்.",
+      "sourceScan": 208,
+      "printedPage": 199,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அன்புள்ள பாபு! உம்மிடமிருந்து விடுதலை பெறுகிறேன். என்னை மன்னிக்க வேண்டுகிறேன். நீங்கள் செய்த தவறுகளுக்காக நானும் தவறு செய்வதா என்று எண்ணினேன். இது முறையல்ல என்று உலகம் சொல்லும்; அறிவாளிகளும் சொல்லுவார்கள்; ஆனால் உம்மைப் போன்றவர்கள் சீர்திருந்து நடக்க, என் ஒருத்தியின் முடிவு ஒரு பாடமாக இருக்கட்டும். உமது உள்ளங் கவர்ந்த பெண்ணை உம்மிடம் விட்டுச் செல்லுகிறேன். இனி என் வாழ்க்கை கோபாலுடன் டில்லியில் நடைபெறும். நமஸ்காரம்.”",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "<u>உமது</u> மனைவி  \nகோகிலா",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யார்; கோகிலாவா? என் மனைவி கோகிலாவா? அவள் கோபாலுடன் போய்விட்டாளா? என்று அலறினேன். என்னையே நான் மறந்தேன். நிலைதடுமாறி நின்றேன். அப்போது, என் எதிரே மஞ்சுளா வந்திருக்கிறாள். எனக்குச் சரியாகக் கண் தெரியவில்லை. மஞ்சுளா எனக்குக் கோகிலா போலத் தோன்றினாள். இமைப்பதற்குள் ரிவால்வரை ஓங்கினேன். சுட்டேன். சுட்டேன்—சுட்டுக்கொண்டே யிருந்தேன்! வெறி அடங்கியது. பிறகுதான் மஞ்சுளாவைக் கொன்றுவிட்டதாக உணர்ந்தேன். கைது செய்யப்பட்டேன். இப்போது இந்தக் கூண்டிலே நிற்கிறேன்”",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று குற்றவாளி, தன்னுடைய உரையை முடித்தான். நீதிபதி கேட்டார் “கொலையாளி என்பதை ஒப்புக்கொள்கிறீர் அல்லவா?” என்று!",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்; நான் கொலைகாரன்தான், கொலைகாரன்தான்!” என்று டாக்டர் பாபு முகத்திலே பல முறை அறைந்து கொண்டார். அப்போது அவரது மீசை கீழே விழுந்தது! டாக்டர் பாபு அந்த மீசையை எடுத்து அவசரமாக ஒட்டிக்கொண்டார். கோர்ட் காட்சியைப் பார்த்துக்கொண்டிருந்த மக்கள் சிரித்து விட்டனர். வக்கீல்களும் சிரிப்பை அடக்க முடியாமல் தவித்தனர். நீதிபதி, கீழே ஆத்திரத்தோடு இறங்கிவந்து குற்றவாளியைப் பார்த்து, “உனக்கு இப்போதே தண்டனை விதிக்கிறேன். அலட்சிய சுபாவத்தோடு, மீசையைக்கூட சரியாக ஒட்டிக் கொள்ளாமல், ஆயிரக்கணக்கான மக்களுக்கு நேராக, நடிப்ப",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தற்கு வந்துவிட்ட நீ, இந்த நாடகக் கம்பெனிக்கே தகுதியில்லை! இப்போதே இந்தக் கம்பெனியிலிருந்து உன்னை டிஸ்மிஸ் செய்கிறேன். ‘மேக்கப்பை’ அழித்துவிட்டு வெளியேறு!” என்று அதிகாரத்தோடு கத்தினார்! திரை விழுந்தது, டாக்டர் பாபு வேஷம் போட்ட நடிகர் எவ்வளவுதான் கெஞ்சியும் கூட, அவருக்கு நீதிபதி வேஷம் போட்ட கம்பெனி முதலாளியிடமிருந்து மன்னிப்புக் கிடைக்கவில்லை.",
+      "sourceScan": 210,
+      "printedPage": 201,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kadaisi Kattam",
+    "sourceScan": 205,
+    "printedPage": 196
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Honourable Judge! The charge against me, standing here in the dock, is that I am a murderer! And I am going to admit it. I stand here ready to accept the punishment for it too. What if I refuse to accept it—where are you going to let me escape? I am not unaware that a hanging rope will be ready to tighten around my neck, and beside the prison a small pit will be ready to cover my body once its breath has stopped. Murderer—and not merely that, a man who murdered his mistress—a man who turned into a corpse a beloved woman who deceived her own husband and gave a place in her heart to a secret lover—the town will curse me in all these ways; kith and kin will revile me. Even if my body, covered by earth, is no longer before their eyes, I know they will spit on the name **Doctor Babu**. I wish to explain to you the reasons for the murder so that at least this petty history of mine may serve as a lesson to others.",
+      "sourceScan": 205,
+      "printedPage": 196,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I have no hope that by giving reasons I can win release! For none of the reasons I am about to give has the power to declare me innocent—",
+      "sourceScan": 205,
+      "printedPage": 196,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—No! I myself killed my illicit lover **Manjula**.",
+      "sourceScan": 206,
+      "printedPage": 197,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I did not kill her in a frenzy. I killed her in a state in which I did not know myself. I am a doctor. I lived in Gopalapuram and practised medicine there. The house I lived in was a large two-storeyed house. My clinic and my family were upstairs. In the house below, Manjula lived with her father. My wife Kokila and Manjula were very close friends! Within a few days of our moving into that house, the two had become inseparable companions. My wife Kokila came from a lineage of devoted wives. When she rose from bed in the morning, she would never leave the room without touching my feet and bowing. Day or night, whatever the hour, she ate only after I had eaten. Because my name was Babu, she would not utter any word beginning with the first syllable ‘baa’. Her love, respect and devotion toward me were beyond measure. Though she was somewhat old-fashioned, the thought that she was a wife who regarded her husband as a god had created immeasurable affection for her in me.",
+      "sourceScan": 206,
+      "printedPage": 197,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Manjula, who lived downstairs, was married. Her husband was in Delhi. Some small quarrel had arisen between husband and wife, grown serious, and in anger Manjula had returned to her father’s house. Manjula was very beautiful, a fashionable woman. Her small blue eyes had the power to fascinate anyone. Whenever I returned home after going out, I had to pass the lower house to reach the upper floor. Such occasions caused Manjula and me to meet often. Must one ask a woman, ‘Do you love me?’ in order to know? Can it not be known merely by looking? That movement of Manjula’s eyes shook my heart from its roots. One night I returned home at nine. Manjula was sitting at the entrance of the lower house.",
+      "sourceScan": 206,
+      "printedPage": 197,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Kokila and Manjula would usually sit chatting together. That day Kokila was nowhere to be seen. I asked Manjula, ‘Is your father not here?’ ‘No, he has gone out of town,’ she said. ‘Didn’t Kokila come down to sleep either?’ I asked, lingering there. ‘She was talking with me until just now—then said she had a headache and went to sleep,’ Manjula replied shyly. I went upstairs and looked—Kokila was sleeping soundly. I walked quietly back to the veranda of the lower house. Manjula had bolted the street door and, turning around, was startled to see me. She stood with her head lowered. I went near her. She did not move. I touched her. ‘Has Kokila gone to sleep?’ she asked. That question was the sign of ‘consent’! After that, whenever we found an opportunity, Manjula and I began singing our song of love. My wife Kokila came to know of it. She pleaded with me and begged me many times. But in my intoxication with Manjula I paid no attention to Kokila’s lament. Kokila tried to stop me with many words of advice.",
+      "sourceScan": 207,
+      "printedPage": 198,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hostility grew between Kokila and Manjula. The relationship between Manjula and me grew too. I hardly spoke properly to Kokila. At all times there were thoughts of Manjula—dreams of her! Her father stood as an obstacle to our meetings. Overcoming that obstacle gave us a new kind of pleasure. One day Kokila came to me and threatened, ‘I am going to commit suicide.’ I said, ‘Go ahead and do it; I have no objection whatsoever.’ It became Kokila’s work to go to the room of the household deity, complain and cry. She fell at its feet and wept that things might happen as the deity willed.",
+      "sourceScan": 207,
+      "printedPage": 198,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“One day Manjula’s husband Gopal suddenly arrived from Delhi. Gopal’s visit to Chennai was made in order to pacify Manjula—",
+      "sourceScan": 207,
+      "printedPage": 198,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—and take her back. Since Manjula’s anger did not subside, on his father-in-law’s advice Gopal decided to stay there for a month. Manjula and I now met only with great difficulty. I begged her not to go to Delhi. She too had made the same decision as I had. Kokila had believed that if Manjula went to Delhi peace would return to her own life; the news that Manjula was not going fell on her like thunder. Gopal, meanwhile, stayed on in the confidence that he could somehow reconcile with his wife.",
+      "sourceScan": 208,
+      "printedPage": 199,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Gopal and I became friends. He did not know that I and his wife were ‘friends’ too! One month—two months—three months—Gopal remained in Chennai. At last I heard that Gopal and Manjula were going to Delhi. I asked Manjula. She nodded ‘yes’ and ran away. I did not know that she had said it merely to tease me. A single fury rose in me! Was Manjula to go and live in Delhi while I remained in Chennai longing for her? I groaned.",
+      "sourceScan": 208,
+      "printedPage": 199,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I burned to kill her so that she would be of use to no one. That day I had been outside; I returned home with a ‘revolver’, having decided to murder Manjula and prevent her journey to Delhi. A servant girl stood in the lower house. I asked her, ‘Where is Gopal?’ ‘They say he has gone back to his town,’ she replied and hurried away. I searched the lower house for Manjula. She was not there. Thinking in disappointment that she too had gone, I went upstairs. My wife Kokila was not there either. A letter lay on the table. I opened it and read.",
+      "sourceScan": 208,
+      "printedPage": 199,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Dear Babu! I am freeing myself from you. I ask you to forgive me. I wondered whether I too should do wrong because of the wrongs you committed. The world will say this is not proper; wise people will say so too. But let the decision of this one woman become a lesson so that people like you may reform and live rightly. I leave with you the woman who captured your heart. From now on my life will be with Gopal in Delhi. Namaskaram.”",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "<u>Your</u> wife  \nKokila",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Who—Kokila? My wife Kokila? Had she gone away with Gopal?” I screamed. I forgot myself. I stood reeling. At that moment Manjula had come before me. I could not see clearly. Manjula looked like Kokila to me. In the blink of an eye I raised the revolver. I fired. Fired—and kept firing! The frenzy subsided. Only then did I realize that I had killed Manjula. I was arrested. Now I stand here in this dock.”",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With that, the accused finished his speech. The judge asked, “You admit that you are the killer, do you not?”",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes; I am a murderer, I am a murderer!” Doctor Babu cried, striking his face several times. At that moment his moustache fell off! Doctor Babu picked up the moustache and hurriedly pasted it back on. The people watching the court scene burst out laughing. Even the lawyers struggled to suppress their laughter. The judge came down angrily and shouted with authority at the accused: “I sentence you right now. With such a careless nature, unable even to paste your moustache on properly, you have come here to act before thousands of people—",
+      "sourceScan": 209,
+      "printedPage": 200,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—you are not fit for this drama company at all! I dismiss you from this company at once. Wipe off the ‘make-up’ and get out!” The curtain fell. However much the actor playing Doctor Babu pleaded, he received no pardon from the company proprietor who was playing the judge.",
+      "sourceScan": 210,
+      "printedPage": 201,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  205,
+  206,
+  207,
+  208,
+  209,
+  210
+ ]
+}

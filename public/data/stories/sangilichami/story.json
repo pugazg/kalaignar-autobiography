@@ -1,0 +1,3619 @@
+{
+ "workId": "sangilichami",
+ "slug": "sangilichami",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/sangilichami",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சங்கிலிச்சாமி",
+  "en": "Sangilichami"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 7,
+  "printedPages": {
+   "first": 48,
+   "last": 59
+  },
+  "sourceScans": {
+   "first": 57,
+   "last": 68
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சங்கிலிச்சாமி",
+    "sourceScan": 57,
+    "printedPage": 48
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சங்கிலியானந்த சாமிக்கு ஜே!”",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சங்கிலியானந்த சாமிக்கு ஜே! ஜே! ஜே!”",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பக்தர்கள் குதித்தார்கள்; பரவசத்தால் நர்த்தனமாடினார்கள்; பரமானந்த கீதம் பாடினார்கள்.",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அஷ்டமா சித்துபுரி ஜயனே போற்றி! துஷ்டர் தம் துடுக் கடக்கும் தாயனே போற்றி! கஷ்டங்கள் தீர்த்திடும் எங்கள் கண்கண்ட தெய்வமே போற்றி! போற்றி!!”",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தப் பாடலில், சாமியாரின் சிஷ்யன், சம்பந்தம் உருக்கப் பாடினான். சம்பந்தத்தின் முக விகாரங்கள்...தானே வரவழைத்துக் கொண்ட அங்க சேஷ்டைகள்... போற்றிப் பாடலுக்குப் புது மெருகு கொடுத்துப் பக்தர் கூட்டத்தைப் புளகாங்கிதத்தில் ஆழ்த்தின.",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘நமப்பார்வதி படே’ ஒரே பேரொலி; திடீரென அமைதி. சின்னப்பண்ணை முதலியார் சாமியாரின் பாதங்களைத் தொட்டுக் கும்பிட்டு மலர்களைத் தூவினர். பக்தர்களும்....பண்ணையாரைப் பின்பற்றிப் பாத பூஜை செய்து...மலர்...காசு...பணம்...இவைகளால் அர்ச்சித்து நின்றனர். ‘ஓம் சங்கரா சிவ’ இந்த முணு முணுப்போடு சங்கிலிச்சாமி தம்மை வணங்கி எழுந்தவர்களுக்கு ஆசீர்வாதம் வழங்கினர்.",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பக்தர்கள் பலப்பல வகைகள்; கோரிய வரங்கள் பலப்பல ரகங்கள்.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வழக்கில் வெற்றி பெறவேண்டும்”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வாத நோய் தீரவேண்டும்”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிள்ளையில்ல....அருள் தேவை”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கொள்ளை போய்விட்டது; கள்ளனைக் காட்டுக!”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எல்லாவற்றுக்கும் ஒரே மருந்து......விபூதி; அதைச் சாமியார் தர, பக்தகோடிகள் வாங்கிக்கொண்ட காட்சியில் ஒரே பக்தி வெள்ளம்.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘சம்பந்தம்!’ என்றார் சாமியார்.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘ஸ்வாமி’ என்று அலறி விழுந்தான் சிஷ்யன், அதற்குள் சின்னப்பண்ணை முதலியார் கைகட்டி வாய்புதைத்துக் காதுகளைக் கூர்மையாக்கிக்கொண்டார்.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சங்கரன் உத்தரவிடுகிறான்; இன்றைய அருள் போதுமாம்” சங்கிலிச்சாமியாரின் இனிப்பான பேச்சு இது!",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்படியே சரி ஐயனே!” இது சம்பந்தம்.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சாமி சயனிக்கப் போகிறது....ஜனங்களெல்லாம் செல்லலாம்” இது முதலியார்.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவரைப் பாரு!....அப்படியே தேவலோகத்திலிருந்து குதிச்ச வந்தவரு மாதிரி இருக்கார்.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செக்கச் செவேன்னு....சிவபெருமான் மாதிரி! அடடா! என்ன அருள்! என்ன அருள்! அந்தக் காவி ஆடைக்கும்....கருணை வழியும் முகத்திற்கும் கைலாசபதி வந்ததுபோல் இருக்கிறதப்பா!”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பொம்பளைப் பக்கம் அவரு பார்த்துப் பேசும்போது அவரு வாயெல்லாம் புன்சிரிப்புடி! ஆஹா...எலுமிச்சம்பழம் மாதிரி, கொழுகொழுன்னு இருக்கார். எல்லாம் தெய்வப் பொறப்புடி, தெய்வப் பொறப்பு!”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நம்மாத்துக்காரருந்தான் இருக்கார், நாலு வார்த்தை இப்படி அழகாப் பேசுவாரா?”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பேய்....தீராத வினையெல்லாம் இவுரு விபூதியினாலே தீரும்டா.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆள் சாமான்யமா? ஆயிரம் ஜனங்கள் ஆபத்திலேயிருந்து காப்பாற்றினவரப்பா!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதென்ன ஆபத்து?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இது தெரியாதா?....இவருக்கு ஏன் சங்கிலிச்சாமின்னு பேரு தெரியுமா?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சங்கிலிக் கருப்பன் பூஜை செய்வார்.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அட மூடம், அதில்லை. ஒருநாள் மெட்ராஸ் மெயிலு....வெகுவேகமாக மெயில்மாதிரி போச்சாம்.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எந்த ஊருக்கு?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மெட்ராசுக்கப்பா.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்; சொல்லு?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நம்ப சாமியும் அதிலே இருந்திருக்கு. சாமி....இருந்தாப்போல இருந்து....”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மறைஞ்சுட்டுதா?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்லப்பா....ரயிலில் இருக்கிற அபாய அறிவிப்புச் சங்கிலியைப் பிடிச்சு இழுத்திருக்கு.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உடனே ரயில் நின்று இருக்குமே!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்; ரயில் நின்றதும்....கார்டு வந்து ‘யாரப்பா ரயிலை நிறுத்தியது?’ அப்படின்னு கேட்டிருக்காரு.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சாது என்னு சொன்னது?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் தானப்பா! தண்டவாளத்தில் ஆபத்தப்பா! உடனே போய்ப்பாரப்பா—என்று சொல்லியிருக்கு சாமி.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆஹாஹா....என்ன சக்தி! என்ன சக்தி!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எல்லோரும் போய்த் தண்டவாளத்தைக் கவனித்துப் பார்த்தா....தண்டவாளத்தை வெட்டி....ரயிலைக் கவிழ்க்கச் சூழ்ச்சி பண்ணியிருக்கு.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அடடா!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உடனே ஜனங்களெல்லாம்...சாமி காலில் சாஷ்டாங்கமாய் நமஸ்காரம் பண்ணி எங்களைக் காப்பாத்தின கடவுளேன்னு கட்டிப்பிடிச்சுக்கிட்டாங்களாம்.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“த்ச்! த்ச்!..சாக்ஷாத் கடவுளே அவதாரம்! என்னமோ! இந்தக் கலிகாலத்திலே நமக்கெல்லாம் காணக் கொடுத்து வச்சிருக்கு.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதிலேருந்துதான் சங்கிலிச்சாமின்னு பேரு! நம்ப சின்னப்பண்ணை முதலியாரும்....அதே ரயிலில் இருந்திருக்காரு. அவருக்குச் சாமிமேலே....ஒரு மோகம் விழுந்துடுத்து.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஓ....அதான்....முதலியார் இவ்வளவு தடபுடல் பண்ணுறார்!....இல்லேன்னு....இந்தக் கருமி....இப்படிக் காசு செலவு பண்ணமாட்டாரே!”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னப்பண்ணையின் மேல் மாடியில் பட்டு மெத்தை ஒன்றில் சங்கிலியானந்தசாமி சயனித்திருக்க....சம்பந்தம் அடிவருட....பண்ணைக்காரர்...‘பங்கா’ போட்டுக்கொண்டிருந்தார். இன்னொரு மெத்தையில் பண்ணைக்காரரின் குஞ்சுநாய் படுத்துக் கிடந்தது.",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘ஓம்....சங்கராசிவ’—சாமியாரின் வாயிலிருந்து கால் மணி நேரத்துக் கொருமுறை வெளிக்கிளம்பும் வார்த்தைகள் இவை!...",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன முதலியார்!...நமது பயணம் விரைவில் நடைபெற வேண்டுமென்று பரமன் ஆணையிடுகிறானே.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆண்டவன் ஆணையா?....அவசியம் புறப்படவேண்டும்”—சம்பந்தம் துடித்தான்.",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலியார் எழுந்து நின்று, “ஸ்வாமி நாளைக் காலையில் முழுவதும் வந்துவிடும். பிறகு அவ்விடத்துப் பிரயாணத்தை ஆரம்பித்தால்....” என்று முடிப்பதற்குள்,",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆகாது....ஆகாது; எம்பெருமான் சாமிகளைக் கோபிப்பார். அற்ப விஷயத்துக்காகச் சாமிக்கும், சாக்ஷாத் பரமேஸ்வரனுக்கும் மனத்தாங்கல் ஏற்பட்டக்கூடாது.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் தத்தோமென ஆடினான்; அவனைச் சாமியார் கையமர்த்தி, “சம்பந்தம்!...பொறு! முதலியார் நம்பால் காட்டும் அன்புக்கு நாம் அவரை ஏமாற்றக்கூடாது. சரி...சங்கரனிடம் ஒருநாள் தவணை கேட்கிறேன். முதலியாரே! இன்றுவரை எவ்வளவு கிடைத்திருக்கிறது?”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலியாரின் முகத்தில் களை உதயமாகிறது.",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஸ்வாமி....ஆயிர ரூபாய் எடைதான் வெள்ளி கிடைத்திருக்கிறது. காலையில் ஆயிர ரூபாய் எடை வரும்.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்தோஷம். மொத்தம் இரண்டாயிர ரூபாய் எடை. எல்லாவற்றையும் தங்கமாக்கிவிட்டால்...போதுமல்லவா?”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலியார் கோணச் சிரித்துக்கொண்டே தலையசைத்துப் பல் இளித்தார்.",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாமியாரின் நெற்றியில் சில சுருக்கங்கள் மின்னி மறைந்தன.",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சம்பந்தம்!”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஸ்வாமி!”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாளைக் கால பூஜை முடிந்ததும் யாரும் மேல் மாடிக்கு வரக்கூடாது.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உத்தரவு.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீயுந்தான்.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆகட்டும்.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இரவு முழுவதும் நான் தனித்திருந்து சிவபூஜை செய்ய வேண்டும்.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆகட்டும் ஸ்வாமி”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முதலியார்.....”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஸ்வாமி.....”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தெரிந்ததா?”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆஹா...”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இரவு பூஜை முடிந்து—மறுநாள் உதயமானதும்....நீர் மாடிக்கு வரவேண்டும்....உமது விருப்பம் நிறைவேறியிருக்கும்....நீர் கேட்டது தங்கந்தானே?”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்....அதைவிட உயர்ந்ததாய் ஆக்கமுடிந்தாலும்......”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கவலைப்படோம்....வைரப் பாளமாகக்கூட ஆக்க முடியும், சிவனருள் எப்படி இருக்கிறதோ....!”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலியார் ஒரு கிண்ணம் பாலச் சாமியிடம் நீட்டினர். அதைச் சிஷ்யன் சம்பந்தம் வாங்கிச் சாமியின் உதட்டில் வைத்தான்....",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுநாட் காலையில் வழக்கம்போல் பூசையெல்லாம் முடிந்து...வெள்ளிக் கட்டிகளும் வந்து சேர்ந்தன. சாமியார் அந்த வெள்ளிப் பாளங்களைக் கண் குளிரப் பார்த்து “மூடாத்மா ஞானத்மாவாக மாறுவது போல்—நாஸ்திகன் ஆஸ்திகனாய் மாறுவது போல் ‘ஏ’ வெள்ளியே! நீ தங்கமாகப் போகிறாய்!”",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதைச் சாமியார் சொல்லும் பொழுது சம்பந்தம் தலையாட்ட....முதலியார் முகமும் அகமும் மலர்ந்த காட்சி வெகு ரம்மியமாயிருந்தது.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாமியார் பூஜை செய்ய உட்கார்ந்தார். சாம்பிராணிப் புகைச்சல், ஊதுபத்தியின் மணம்.........அரைத்த சந்தனத்தின் வாடை......மல்லிகை மாலைகள் தந்த குளிர்ந்த வாசனை.....",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மாடியில் ஒரு சொர்க்கலோகத்தையே சாமி உண்டாக்கிவிட்டது” என்றார் முதலியார்.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சொர்க்கலோகம் இருந்தால்தானே சொக்கநாதன் வருவான்” என்றான் சம்பந்தம்.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலியாருக்கு இரவெல்லாம் ஒரே கனவு. தங்கமாக மாறிய வெள்ளிக் கட்டிகளின் பிரகாசம், அந்தத் தங்கக் கட்டிகளை உடைத்து வெளியூர் சென்று வியாபாரம் செய்வது, நல்ல விலைக்கு விற்ற பிறகு.....பெரிய குபேரனாவது. குபேரன் ஆனதும் உள்ளூர்ப் பெரிய பண்ணையை ஏலம் செய்வது, இந்தக்கனவுகளில் புரண்டுகொண்டிருந்தார். தங்கத்தை வியாபாரம் செய்யப்போன இடத்தில்....போலீஸ்காரர் கையில் சிக்கி விட்டதாக ஒரு பயங்கரக்கனவால்...பண்ணையார் பதறியடித்து எழுந்தார். கண்களே நம்பமுடியாமல் கசக்கிக்கொண்டார். பொழுது விடிந்தது. தங்கத்தைப் பார்ப்பதற்காக சம்பந்தத்தையும் அழைத்துக்கொண்டு மேல் மாடிக்கு ஓடினர்.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாம்பிராணி வாடை நிரந்தரமாகப் பரவி...முதலியாருக்கு உற்சாகமான வரவேற்புக் கொடுத்தபடி இருந்தது. மாடியில் நுழைந்த முதலியார் ‘சாமி...சாமி..’ என்று கத்தினர். அவ்வளவுதான்; மூர்ச்சையாகி விட்டார்.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் முதலியாரைத் தூக்கித் தேற்ற ஆரம்பித்தான். மாடியிலிருந்து தோட்டத்துப் பக்கம் தொங்கிக்கொண்டிருந்த அழுத்தமான கயிறு காற்றில் அசைந்தது. முதலியார் மூர்ச்சை தெளிந்து—சம்பந்தத்தை உற்றுப் பார்த்தார். அந்தப் பார்வையில் ‘ஹே சம்பந்தம்! இரண்டாயிர ரூபாய் எடை வெள்ளி போச்சே!’ என்ற சோகம் பிரதிபலித்தது.",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பேராசை பெருநஷ்டம்” என்பது போலிருந்து சம்பந்தத்தின் பதில் பார்வை.",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சம்பந்தம்! கருவாடு களவு கொடுத்த பாப்பாத்தி கதையாக அல்லவா என் கதை முடிந்துவிட்டது.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்....வெளியில் சொன்னால் வெட்கக்கேடு.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஜெயிலுக்குப் போகவேண்டுமப்பா.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்....இந்தச் சண்டாளன் இப்படிப் பண்ணி விட்டானே!”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சம்பந்தம்....நீயும் இந்தச் சதிகாரனுக்கு உடந்தையா?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முதலியார்!...என்னை மன்னித்து விடுங்கள். நானும் உடந்தையாகத் தானிருந்தேன். அந்தப் படுபாவி என்னையும் ஏமாற்றிவிட்டான்.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பரம பக்தர்கள் போல் நடித்தீர்களே!”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நடிக்காவிட்டால் நீங்கள் நம்புவீர்களா?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அட பாவி...ரயிலில் அவனைப் பார்த்தது முதல் என்னைச் சனியன் பிடித்துக்கொண்டதே.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சனியனல்ல! சரியான ஆசை பிடித்துக் கொண்டது. முதலியாரே! ஆசையால் விளைவதுதானே ஆபத்துக்கள்.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“போதுமப்பா வேதாந்தம். உங்கள் வேதாந்தத்தைக் கேட்டுத்தான் இவ்வளவு விபரீதம்.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இனி நான் வேதாந்தம் பேசமாட்டேன். அந்தச் சூதனைத் தொலைக்க வழி தேடுவேன்.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கடலில் போன என் சொத்து—இனிக் கரையேறுமா?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சம்பந்தத்தின் கப்பல்—ஒரு துரும்பு விடாமல் அரித்துக் கொண்டு வந்துவிடும். கலங்காதீர் முதலியாரே!”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வெள்ளிக் கட்டிகளப்பா...வெள்ளிக் கட்டிகள்!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வைரக் கட்டிகளாகத் தருகிறேன். வியாகூலப் படாதீர்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏன்...உனக்கு ஏதாவது தங்கக் கட்டி வேண்டுமோ?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தவறுக என்னை மதிக்காதீர்...முதலியாரே!...என் கதையைக் கேட்டால் என் மீது பரிதாபப்படுவீர்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எந்த இழவையாவது சொல்லித் தொலை.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் ஒரு சாதாரண மனிதன்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதுதான் தெரியுமே...”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சங்கிலிச்சாமியும் ஒரு சாதாரண மனிதன்...”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யார் இல்லை யென்றது?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ரயில் விபத்திலிருந்து மக்களைக் காப்பாற்றினரே....”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதில்தானே நானும் மயங்கி விட்டேன்!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீங்கள் மட்டுமென்ன உலகமே மயங்கி விட்டது!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஜால வித்தைக்காரன், என்னமோ மந்திரம் பண்ணி மயக்கி விட்டான்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மந்திரமல்ல...மகா பெரிய தந்திரம்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தந்திரமா?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம், தண்டவாளத்தைப் பெயர்த்து வைத்தது யார் தெரியுமா?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அந்தத் தடியன் தானு?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்ல...நான் தான் முதலியாரே! இரவெல்லாம் கஷ்டப்பட்டுத் தண்டவாளத்தை உடைத்தேன். அவன் சங்கிலியைப் பிடித்து இழுத்துச் சாமியாராகிவிட்டான்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிழைப்பதற்கு வழி...பிரமாதமாகத்தான் கண்டு பிடித்திருக்கிறீர்கள்.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வழி பிரமாதந்தான்! அந்த வஞ்சகப் பயல் என் வாயிலும் மண்ணைப் போட்டுவிட்டானே!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சம்பந்தம்...பேச நேரமில்லை. அவனைப் பழிவாங்க வேண்டும். என்ன யோசனை?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முதலியார்...அருமையான யோசனை. இப்பொழுதே மேல் மாடிக் கதவை மூடிவிடுங்கள்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏன்?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஜனங்கள் வந்து...சாமியார் எங்கே? என்பார்கள். சாமி மேல் மாடியில் யோகானந்தம் புரிகிறது. கடவுளோடு பேசுகிறது. கதவை திறக்க முடியாது என்று கூறிவிடுவோம்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதைச் செய்தால் என் வெள்ளி வந்துவிடுமா?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வெள்ளியாலேயே நீர் வீடு கட்ட நான் வழி செய்கிறேன். நான் சொல்வதை முதலில் கேட்கவேண்டும்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி...கேட்கிறேன்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்தோஷம்! நான் இப்பொழுதே புறப்படுகிறேன்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ எங்கே போகிறாய் சம்பந்தம்?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் போகுமிடம் எனக்கே தெரியாது. ஒருவாரத்தில் உமக்கு ஒரு பார்சல் வரும். அதை யாருக்கும் தெரியாமல் மேல் மாடியில் கொண்டுபோய் உடைத்துப் பாரும்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் இழந்த வெள்ளிக் கட்டிகளின் பார்சலா?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம். நான் வருகிறேன். பார்சல் வரும் வரையில் மேல் மாடி திறக்கப்படக்கூடாது.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் மறைந்து விடுகிறான். முதலியார் முகத்தில் சிந்தனைக் கீறல்கள்! சங்கிலிச்சாமியார் நிஷ்டையில் இருப்பது ஊரெங்கும் பரவி விட்டது.",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சாமி கடவுளோடு பேசுகிறது.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒரு வேளை சொர்க்கத்துக்குப் போனாலும் போய்விடும்!”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சிவனோடு பேசுகிறாரோ? விஷ்ணுவோடு பேசுகிறாரோ? யார் கண்டது?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சக்தி பூஜைக்காரரப்பா! தேவியோடுதான் பேசுவார்.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னப்பண்ணை முதலியாருக்கு ஒரு நாள் ரயில்வே பார்சலில் ஒரு பெட்டி வந்துவிட்டது.",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலியார் ஆவலோடு பெட்டியை வீட்டில் இறக்கச் சொன்னார்.",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பெட்டியின் மேல் ‘வாசனைப் பொருள்’ என்ற எழுத்துக்கள் தீட்டப்பட்டிருந்தன.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரவு எப்பொழுது வரும் என்று முதலியார் ஏங்கிக் கிடந்தார்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சில மணி நேரங்களில் இரவும் வந்து விட்டது.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேலைக்காரர்கள் எல்லாம் அன்று சீக்கிரம் வீட்டுக்கு அனுப்பப்பட்டார்கள்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பார்சலில் இருந்து ‘கமகம’ வென்று வாசனை வந்து கொண்டிருந்தது.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரென்று சம்பந்தமும் வந்து சேர்ந்தான்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சம்பந்தம்! எல்லாம் வெள்ளிக்கட்டி தானே!!” என்றார் ஆவலாக முதலியார்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் தலையாட்டிக் கொண்டே “ஆமாம் தூக்குங்கள்” என்று கூறினன் ஆணையிடும் தோரணையில்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இருவரும் பார்சலைத் தூக்கினார்கள். உழைப்பு என்பது என்னவென்று தெரியாத முதலியார்...பெட்டியின் கனத்திலிருந்து ஒருவாறு தெரிந்து கொண்டிருப்பார். வியர்வைத் துளிகள் சொட்டச் சொட்ட...மேல் மூச்சு வாங்க...‘அப்பாடா’ என்று பார்சல் மாடியில் இறக்கினர். “வேலையின் கஷ்டம் தெரிகிறது” என்றான் சம்பந்தம் கிண்டலாக.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வெள்ளியின் கஷ்டமப்பா!” என்று முதலியார் முணு முணுத்துக் கொண்டார்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் பார்சலை உடைக்க ஆரம்பித்தான். அவசரந் தாங்காத “முதலியார், அப்பா சம்பந்தம்! அது வெள்ளிதானே?” என்று துடித்தார்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்”—சம்பந்தம் பெட்டியை உடைத்து விட்டான். முதலியார் மூர்ச்சை போட்டு விழுந்து விட்டார். பிறகு எழுந்தார். அவர் அலறிவிடாமல் வாயைப் பொத்தி விட்டான் சம்பந்தம்.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பெட்டிக்குள் புழுப்போலச் சுருண்டு கிடந்தது ஒரு மனித உருவம்!",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆமாம்—சங்கிலிச்சாமியாரின் சடலந்தான் அது!",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னடா சம்பந்தம்?” முதலியார் பதை பதைத்துத் துடித்தார். “என் வெள்ளியும் போனதுமல்லாமல் என்னையும் கொலைகாரனுக்கிவிட்டாயே....அய்யய்யோ!”",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்ல...நாம் கொலைகாரரல்ல, ஆண்டவன் அடிமைகள்; பக்தாதி பக்தர்கள்.”",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் இதைச் சொல்லிக் கொண்டே சங்கிலிச்சாமியின் பிணத்தை எடுத்து நிஷ்டையில் இருப்பதுபோல் நீட்டி மடக்கிப் படுக்க வைத்தான். பக்கத்திலிருந்த விளக்கை ஏற்றி வைத்தான். முதலியாரை இழுத்துக் கொண்டு வெளியே வந்து மாடிக் கதவையும் மூடினான். முதலியார் மிரள மிரள விழித்தார்.",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சம்பந்தம் மெதுவாகச் சொன்னான்:—“முதலியாரே! அஞ்சாதீர்! இரண்டாயிர ரூபாய் எடை வெள்ளியை நீர் இழந்தீர். இருபதாயிர ரூபாய் எடை நான் தருகிறேன்.”",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காலம் மலர்ந்தது. சாமியார் நிஷ்டை கலையப் போகிறதாம். கதவைத் திறக்கப் போகிறார்களாம். கனவில் பண்ணை முதலியாரிடம் கதவு திறக்க உத்தரவாகிவிட்டதாம். இந்த விளம்பரத்தையொட்டி முதலியார் வீட்டின் முன் ஒரே ஜனத்திரள்! கதவு திறக்கப்பட்டது. எல்லோரும் மேல் மாடிக்குச் சென்றார்கள். சம்பந்தம் கோவெனக் கதறினான். முதலியாரும் அழுதார்...இருவரும் நாடகத்தைத் திறம்பட நடித்தார்கள்.",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அங்கே ஒரு கடிதம் கிடந்தது. அதில்,",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாம் இனி இந்த நாற்ற உடலுடன் வாழ விரும்பவில்லை. ஆவியாக இருந்து அருள் புரிவோம். மக்கள் என் சமாதியை வழிபட்டுச் சகல சம்பத்தும் பெறுவார்களாக!",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்ஙனம்,",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**சங்கிலிச்சாமி**",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று எழுதியிருந்தது. சம்பந்தம் அதைப் படித்துக் காட்டினன்.",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஏக ஆடம்பரமாகச் சங்கிலிச்சாமியின் சமாதி விழா நடைபெறுகிறது. சமாதியில் மக்கள் இறைத்த பணம் அன்றைக்கே",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "space"
+     },
+     {
+      "text": "ஆயிரம் ரூபாய்! அடுத்த ஆண்டு சங்கிலியானந்த சாமி குருபூஜை!",
+      "sourceScan": 68,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாமிகளுக்கு மாபெரும் மடம், சம்பந்தம் மடத்தின் சாமி! முதலியார் மடத்தின் சொந்தக்காரர்! இரண்டாயிர ரூபாய் எடை வெள்ளிக்கட்டி நஷ்டம்!",
+      "sourceScan": 68,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால்...இருபதாயிரம் ரூபாய் எடை வெள்ளிக் கட்டி லாபம்! அதுவும் வளர்கிற லாபம்!....மக்களிடம் மடமை இருக்கும் வரை அந்த லாபம் குறையாது.",
+      "sourceScan": 68,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Sangilichami",
+    "sourceScan": 57,
+    "printedPage": 48
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Victory to Sangiliyananda Swami!”",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Victory to Sangiliyananda Swami! Victory! Victory! Victory!”",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The devotees leapt about; they danced in ecstasy; they sang songs of supreme bliss.",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Praise to Ashtama Siddhupuri Jayanē! Praise to the father who curbs the insolence of the wicked! Praise to our visible god who dispels our troubles! Praise! Praise!!”",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The swami’s disciple, Sambandham, sang this hymn with melting emotion. Sambandham’s facial contortions...the bodily gestures he deliberately summoned...gave fresh lustre to the song of praise and plunged the crowd of devotees into rapture.",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A single mighty cry of ‘Namap-Parvati Padē’; then sudden silence. Chinnapannai Mudaliar touched the swami’s feet in worship and showered flowers upon them. The devotees too...following the landlord, performed worship at his feet...and stood offering flowers...coins...money. With the murmured chant ‘Om Sankara Siva’, Sangilichami blessed those who rose after bowing to him.",
+      "sourceScan": 57,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The devotees were of many kinds; the boons they sought were of many kinds too.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I must win my court case.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My rheumatic illness must be cured.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No child....I need grace.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I have been robbed; show me the thief!”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For everything there was one medicine......sacred ash. The swami gave it, and the multitudes of devotees received it in a veritable flood of devotion.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Sambandham!’ said the swami.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Swami!’ cried the disciple, collapsing before him. By then Chinnapannai Mudaliar stood with folded hands and covered mouth, sharpening his ears to catch every word.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sankaran commands that today’s grace is enough,” came Sangilichami’s sweet declaration.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Exactly so, my lord!” said Sambandham.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The swami is going to repose....all the people may leave,” said Mudaliar.",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Look at him!....He looks as though he has jumped straight down from the celestial world.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ruddy red....just like Lord Siva! Ah! What grace! What grace! With that saffron robe....and that face flowing with compassion, it is as though the Lord of Kailasa himself has come!”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“When he looks toward the women and talks, his whole mouth is smiling, girl! Ah...he is plump and glowing like a lemon. A divine birth, girl, a divine birth!”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My own man is there at home—could he speak even four words this beautifully?”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ghosts....even afflictions that never go away are cured by this man’s sacred ash, da.”",
+      "sourceScan": 58,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is he an ordinary man? He saved a thousand people from danger!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What danger was that?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don’t you know?....Do you know why he is called Sangilichami?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“He worships Sangili Karuppan.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You fool, not that. One day the Madras Mail....was racing along at tremendous speed, like a mail train.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“To which town?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“To Madras, appa.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hmm; go on?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Our swami was in it too. The swami....was sitting there as usual....”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Did he vanish?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No, appa....he grabbed the emergency-warning chain in the train and pulled it.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The train must have stopped at once!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes; as soon as it stopped....the guard came and asked, ‘Who stopped the train?’”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What did the sadhu say?”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“‘I did, appa! There is danger on the track, appa! Go and look at once, appa’—that is what the swami said.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ahaha....what power! What power!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“When everyone went and inspected the track....they found the rails cut....a plot had been made to overturn the train.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Good heavens!”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Immediately all the people....fell full-length at the swami’s feet, saying, ‘God who saved us!’ and embraced him, it seems.”",
+      "sourceScan": 59,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Tch! Tch!..God incarnate himself! Somehow, in this Kali age, we have been blessed enough to see him.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“That is how he got the name Sangilichami! Our Chinnapannai Mudaliar....was on that same train. From then on he developed....a fascination for the swami.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Oh....so that’s why....Mudaliar is making such a grand show!....Otherwise....would that miser ever spend money like this?”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Upstairs in Chinnapannai’s house, Sangiliyananda Swami reclined on a silk mattress....Sambandham massaged his feet....and the landlord worked the ‘pankha’. On another mattress lay the landlord’s little dog.",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Om....Sankara Siva’—these were the words that emerged from the swami’s mouth once every quarter-hour!...",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What, Mudaliar!...Paramesan commands that our journey must take place soon.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A command from the Lord?....Then we must certainly leave”—Sambandham trembled with fervour.",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mudaliar stood up. “Swami, by tomorrow morning all of it will have come. After that, if we begin the journey to that place....” Before he could finish,",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No....no; our Lord will be angry with the swami. For a trivial matter, there must not arise ill feeling between the swami and the manifest Parameswaran.”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham danced about crying “thaththom”; the swami stilled him with a hand and said, “Sambandham!...Wait! We must not deceive Mudaliar, who shows us such affection. Very well...I shall ask Sankaran for one day’s extension. Mudaliar! How much has come in so far?”",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A glow rose on Mudaliar’s face.",
+      "sourceScan": 60,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Swami....only a thousand rupees’ weight of silver has come. Another thousand rupees’ weight will come in the morning.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Good. Two thousand rupees’ weight in all. If we turn all of it into gold...that will be enough, won’t it?”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mudaliar twisted his face into a grin, nodded, and bared his teeth.",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A few wrinkles flashed on the swami’s forehead and vanished.",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sambandham!”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Swami!”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“After tomorrow morning’s puja is over, no one must come upstairs.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Command accepted.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You too.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“So be it.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I must remain alone all night and perform Siva puja.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“So be it, Swami.”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mudaliar.....”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Swami.....”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Understood?”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ahaha...”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“After the night puja is complete—and the next day dawns....you must come upstairs....your wish will have been fulfilled....what you asked for was gold, was it not?”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes....and if it can be made into something still more valuable......”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not worry....it can even be made into a slab of diamond, depending on how Siva’s grace manifests....!”",
+      "sourceScan": 61,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mudaliar held out a bowl of milk to the swami. The disciple Sambandham took it and held it to the swami’s lips....",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next morning, after the usual worship was completed...the silver ingots too arrived. The swami gazed at those slabs of silver to his heart’s content and declared, “As a mūḍātmā becomes a jñānātmā—as an atheist becomes a believer—O silver! You are going to become gold!”",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As the swami said this, Sambandham nodded....and the sight of Mudaliar’s face and heart blooming was exceedingly delightful.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The swami sat down to perform puja. Clouds of benzoin smoke, the scent of incense.........the fragrance of ground sandal......the cool perfume of jasmine garlands.....",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The swami has created a whole heavenly world upstairs,” said Mudaliar.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Only if there is a heavenly world will Sokkanathan come,” said Sambandham.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "All night Mudaliar dreamed only one dream after another: the brilliance of the silver ingots transformed into gold; breaking up those gold bars and going elsewhere to trade them; after selling them for a good price.....becoming a great Kubera; after becoming Kubera, buying the great local estate at auction. He tossed about in these dreams. Then, in a terrifying dream, he was caught by the police where he had gone to trade the gold....Mudaliar sprang awake in panic. He rubbed his eyes as though unable to believe them. Dawn had come. Eager to see the gold, he called Sambandham and ran upstairs.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The smell of benzoin lingered everywhere....as though offering Mudaliar an enthusiastic welcome. Entering the upper floor, Mudaliar shouted, ‘Swami...Swami..’ That was all; he fainted.",
+      "sourceScan": 62,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham lifted Mudaliar and began reviving him. A heavy rope hanging from the upper floor toward the garden swayed in the breeze. Mudaliar recovered from his faint and stared at Sambandham. His look reflected the grief: ‘Hey, Sambandham! Two thousand rupees’ weight of silver is gone!’",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham’s answering look seemed to say, “Great greed, great loss.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sambandham! Hasn’t my story ended like the tale of the Brahmin woman whose dried fish was stolen?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes....it would be shameful if this became known outside.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I’ll have to go to jail, appa.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hmm....that wretch has done this to us!”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sambandham....were you also an accomplice of this conspirator?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mudaliar!...forgive me. I too was indeed his accomplice. That great sinner deceived me as well.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You acted like supreme devotees!”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If we had not acted, would you have believed us?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You sinner...from the moment I saw him on the train, Saturn seized me.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not Saturn! Proper greed seized you. Mudaliar! Are not dangers born from desire?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Enough of philosophy, appa. It was listening to your philosophy that brought all this calamity.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I will speak no more philosophy. I will find a way to destroy that rogue.”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My property has gone into the sea—will it ever come ashore again?”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sambandham’s ship will scrape up every last splinter and bring it back. Do not be troubled, Mudaliar!”",
+      "sourceScan": 63,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My silver ingots, appa...my silver ingots!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I will return them as diamond ingots. Do not grieve.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Why...do you want a gold bar for yourself too?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not judge me wrongly...Mudaliar!...If you hear my story, you will pity me.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Tell me whatever damned thing it is and be done with it.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I am an ordinary man.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“That much is obvious...”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sangilichami too is an ordinary man...”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Who said he wasn’t?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“He saved the people from that railway disaster....”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“That is exactly what fooled me too!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not only you—the whole world was fooled!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A conjurer; somehow he cast a spell and bewitched us.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not magic...a magnificent trick.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A trick?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes. Do you know who removed the railway track?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Was it that brute?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No...it was I, Mudaliar! I struggled all night and broke the track. He pulled the chain and became a swami.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You certainly found an extraordinary way to make a living.”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“An extraordinary way indeed! Yet that treacherous fellow has thrown dust into my mouth too!”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sambandham...there is no time for talk. We must take revenge on him. What is your plan?”",
+      "sourceScan": 64,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mudaliar...an excellent plan. Shut the upstairs door this very moment.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Why?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“People will come and ask...‘Where is the swami?’ We shall say the swami is upstairs in yogic bliss, speaking with God, and that the door cannot be opened.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Will doing this bring back my silver?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I will make it possible for you to build a house out of silver itself. First you must do what I say.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right...I’ll listen.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Good! I am leaving at once.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Where are you going, Sambandham?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I myself do not know where I am going. Within a week a parcel will come for you. Without anyone knowing, take it upstairs, break it open, and look.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A parcel containing the silver ingots I lost?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes. I will return. Until the parcel arrives, the upstairs room must not be opened.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham disappeared. Lines of thought scored Mudaliar’s face! The news spread all over town that Sangilichami was in nishta.",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The swami is speaking with God.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Perhaps he may even go off to heaven!”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is he talking with Siva? With Vishnu? Who knows?”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“He is a worshipper of Sakti, appa! He must be talking with the Goddess.”",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day a box arrived for Chinnapannai Mudaliar as a railway parcel.",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mudaliar eagerly ordered the box to be unloaded at his house.",
+      "sourceScan": 65,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The words ‘Perfumed Goods’ had been painted on the box.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mudaliar lay longing for night to come.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Within a few hours night arrived.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "All the servants were sent home early that day.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A rich ‘kamakam’ fragrance kept wafting from the parcel.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suddenly Sambandham too arrived.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sambandham! It is all silver ingots, isn’t it!!” Mudaliar asked eagerly.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nodding, Sambandham said, “Yes, lift it,” in a commanding tone.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The two lifted the parcel. Mudaliar, who had never known what labour meant...must somehow have learned it from the weight of that box. Sweat dripped and dripped...he panted for breath...and with an ‘appaadaa’ they lowered the parcel upstairs. “Now you know the hardship of work,” Sambandham mocked.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The hardship of silver, appa!” Mudaliar muttered.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham began breaking open the parcel. Unable to bear the suspense, Mudaliar trembled: “Appa Sambandham! It is silver, isn’t it?”",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes”—Sambandham broke open the box. Mudaliar fainted and fell. Then he came to. Sambandham clapped a hand over his mouth to stop him from screaming.",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Inside the box lay a human form curled up like a worm!",
+      "sourceScan": 66,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yes—it was Sangilichami’s corpse!",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is this, Sambandham?” Mudaliar shook and trembled. “Not only is my silver gone—you have made me into a murderer too....Ayyo!”",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No...we are not murderers; we are servants of God, devotees among devotees.”",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As he said this, Sambandham took Sangilichami’s corpse and stretched and folded it into a pose as though he were sitting in nishta. He lit the lamp beside it. Then he pulled Mudaliar outside and shut the upstairs door. Mudaliar stared wildly.",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham said softly:—“Mudaliar! Do not fear! You lost two thousand rupees’ weight of silver. I shall give you twenty thousand rupees’ weight.”",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Time blossomed. Word went out that the swami’s nishta was about to end. They were going to open the door. The swami had supposedly appeared in Mudaliar’s dream and ordered the door opened. Following this publicity, a huge crowd gathered before Mudaliar’s house! The door was opened. Everyone went upstairs. Sambandham wailed aloud. Mudaliar too wept...the two performed the drama expertly.",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A letter was found there. It read,",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We no longer wish to live in this foul-smelling body. We shall remain as spirit and bestow grace. May the people worship my samadhi and obtain every prosperity!",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus,",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Sangilichami**",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sambandham read it aloud.",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sangilichami’s samadhi festival was conducted with immense pomp. The money people poured into the samadhi that very day came to",
+      "sourceScan": 67,
+      "printedPage": 58,
+      "joinToNext": "space"
+     },
+     {
+      "text": "one thousand rupees! The following year: Sangiliyananda Swami Guru Puja!",
+      "sourceScan": 68,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A grand mutt for the swami; Sambandham the swami of the mutt! Mudaliar the owner of the mutt! Loss: two thousand rupees’ weight of silver ingots!",
+      "sourceScan": 68,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But...profit: twenty thousand rupees’ weight of silver! And a profit that keeps growing!....As long as foolishness remains among the people, that profit will not diminish.",
+      "sourceScan": 68,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68
+ ]
+}

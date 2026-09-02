@@ -1,0 +1,1048 @@
+{
+ "workId": "nalayini",
+ "slug": "nalayini",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nalayini",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நளாயினி",
+  "en": "Nalayini"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 2,
+  "printedPages": {
+   "first": 7,
+   "last": 14
+  },
+  "sourceScans": {
+   "first": 16,
+   "last": 23
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நளாயினி",
+    "sourceScan": 16,
+    "printedPage": 7
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகான பெண். ஒளிமுகம் படைத்த உருக்குலையா மங்கை. வெள்ளை உடையாள் அவள் அன்ன நடைக்கு அழகு சேர்க்கிறாள். சிவந்த கழுத்திலே ஒரு கறுப்பு மணிமாலை. அந்தக் கோதி முடித்த கூந்தலையுடைய கோதை—கையில் ஒரு கூடையுடன் தெருவிலே போகிறாள். அப்பழுக்கற்ற பெண்ணத்தின் தனித் தன்மை வாய்ந்த அழகு ஊர்வலம்! இருள் படிந்த தெருவிலே அவள் நடந்து செல்வது—வையத்து மண்ணுக்கு வரவிழைந்த வானத்துத் தாரகைதான் வந்துற்றதோ என எண்ணத் தோன்றியது!",
+      "sourceScan": 16,
+      "printedPage": 7,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த ஜோதி மழை பொழியும் சொர்ணச் சிலையின் தலையிலே கூடை; கூடையிலோ துர்வாடை! ஆமாம்—அழகியின் தலையில் ஓர் அழுகிய உருவம். கூடையின் அடிப்புறத்தைத் தாங்கியிருக்கும் அவள் இளங்கரங்கள் சுமை தாங்காமல் நடுங்கிக் கொண்டிருக்கின்றன. ஆனாலும் அந்தச் சுந்தரவல்லி போய்க்கொண்டு தானிருக்கிறாள். சோகத்திலும் ஒரு சோபிதம் இருக்கிறது என்பதை அவளது எழில் வதனம் கவிஞர்கட்குக் காட்சியாக்கிக் கொண்டிருக்கிறது. கூடையிலே அமர்ந்துள்ள அழுகிய உருவமோ புன்னகை புரிந்தவண்ணமிருக்கிறது. அந்தப் புன்னகை எதையோ ஓர் இன்பத்தை எதிர்பார்த்து மலரும் புன்னகை. புன்னகையில் விசாரத்தைக் காண வேண்டுமா? ஆசைப்படுவோர் அந்த உருவத்தின் இனிப்பைப் பார்த்துக் கொள்ளலாம். கூடையிலே இருந்த அந்த உருவம் ஆண். தனக்கென உரிய உடலில் கால்",
+      "sourceScan": 16,
+      "printedPage": 7,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பாகத்துக்குமேல் இழந்துவிட்ட மனிதன்; மகரிஷி! மெளத் கல்யர் என்னும் பெயருடைய மகான்.",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘பெரிய’ மனிதன், ‘பெரிய’ ஆள், ‘பெரிய’ செல்வந்தன், ‘பெரிய’ பண்ணையார் என்பதுபோலப் ‘பெரிய’ வியாதி என்று ஒன்றுண்டே! அந்தப் பெருவியாதியால் பீடிக்கப்பட்டவர் அந்தப் பெரிய மகான். அவர்தான் தன்னுடைய அழகான மனைவியின் தலையில் ஏறிக்கொண்டு தெருவில் போகிறார்.",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“போடி வேகமாக!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“போய்க்கொண்டுதானேயிருக்கிறேன், பிராணபதி!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நளாயினி! நட வேகமாக! அதற்காக என்னைக் கீழே போட்டுவிடாதே! நீ விழுந்தாலும் பரவாயில்லை!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் தெய்வமே! என்னே ஏன் இப்படிச் சோதிக்கிறீர்கள்? என் கூடவிட்டு ஆவி போனாலும் கூடையைக் கீழே போடமாட்டேன். கூடையிலென்ன வியாபாரப் பொருளா இருக்கிறது? வீட்டுச் சாமானு தூக்கிச் செல்கிறேன்? வில மதிக்க வொண்ணா என் ரத்தினமல்லவா தாங்கள்! தங்களையா கீழே போட்டு விடுவேன்? அபச்சாரம்! அபச்சாரம்!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குஷ்டரோகக் கணவனைக் கூடையில் சுமந்து—கோமானத் தாமரையெனும் முகத்திலே சோகத்தைச் சுமந்து—அந்த நடக்கும் பொன்வண்டு நளாயினி போய்க்கொண்டிருக்கிறாள். எங்கே போகிறாள்? தீர்த்தமாடவும், சேஷத்ராடனம் செய்யவும் கணவன் விரும்புகிறான்; அந்தப் பக்திப் பசியைத் தீர்த்துவைக்க வேண்டும் என்பதற்காகவா அந்த ஏந்திழையாள்—இந்த வேலையை மேற்கொண்டிருக்கிறாள்? இல்லை! இல்லை! பின் என்ன? பர்ணசாலையை விட்டுப் பர்ணசாலைக்கு மாறுவதற்காகவா அந்தப் பயணம் நடைபெறுகிறது—பாவையை வாகனமாகக் கொண்டு? அதுவும் இல்லை! பின் எங்கே தான் போகிறார்கள்? தவம் புரியவு மல்ல! தவம் காணவுமல்ல! பிறகு எங்கே போகிறார் தபோதனர்? தாசிவீட்டுக்குப் போகிறார்! ஏன்? “வேசித்தொழில் கூடாது! தாசிநாதீனத்தொழு!” என்று போதனை புரிவதற்காகவா? அதற்காகவும் செல்லவில்லை, அந்தக் குஷ்டரோகி. பரத்தையின் வீட்டைப் பக்திக் கூடமாக்க அல்ல! பகவான் பற்றிய விளக்க முறைக்க அல்ல! கமண்டலமேந்தியார் செல்வது கண்ணிகையின் கட்டிலறைக்கு! முனிவரின் மோகம் முக்கண்ணனைக் காண அல்ல! நான்கு கண்களும் சந்திக்க—அந்த நயனவல்லித்ததை வந்திக்க!",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொருளுக்குச் சுகம் வழங்குவாளின் அகம் நாடிப் புருஷனைக் கொண்டு செல்லும் நளாயினி—பூத்திருக்கும் ரோஜா! அந்த ரோஜா, அழுகிப்போன வண்டை கருகிப்போன ஒரு மலரிடம் எடுத்துச் செல்கிறது! அதோ, கணிகையர் தெருவும் வந்து விட்டது! நளாயினியின் உடல்வலியும் தீர்ந்தது. அவள் கணவனின் உள்ள வெறியும் கொஞ்சம் அடங்கியது. தேடிய இடத்துக்கு வந்து விட்டனர். கூடையை இறக்கி வைத்தாள். வலிக்குந்த உடம்பை ஒருமுறை நெளித்து வளைத்துக் கொண்டாள்.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வானவில்லோ!” என்பர் வண்ணேயாளர் அருகே இருந்தால்! “மான் துள்ளுமா இப்படி!” என்பர் எடெமுது வோர்! “ஒரு விநாடி அப்படியே வளைந்து நில், போதும். உலகை விலையாகக் கேட்டும் ஓவியம் தீட்டுகிறேன்” என்பான் சித்திரக் காரன் அருகே நின்றால்! அத்தகைய தோகைமயிலாள், தன் துணைவனுக்கு இரவுத்துணை தேடி எழுந்து விட்டாள் இழி மகளின் இல்லத்துக்கு.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அலங்காரக் கரங்களால் அந்த வீட்டின் கதவைத் தட்டினாள். தட்டுவதற்கு முன் திறக்கப்பட்டது வீடு. திறப்பதற்குமுன் எட்டிப்பார்த்தது ஓர் முகம். அந்த முகம் கண்டார் மெளத்கல்யர். “சுகம் கண்டேன்! சுகம் கண்டேன்!” என்று சுருதிவிட்ட வித்துவான்போல் கூவினார். சுருக்கம் விழுந்த முகத்திலே பயங்கரமான ஒளி! ரத்தங் கசியும் கன்னங்களிலே புன்னகை உண்டாக்கிய ஆழமான பள்ளம்! சீறிக் கிடக்கும் உதடுகளிலேயே காமக்கிறுக்கு வெளிப்பட்டது. விரலற்ற கரம் நீட்டி அந்த வேசிப் பெண்ணை ஆசையுடன் வாழ்த்தினார். குஷ்டரோகியின் கும்மாளங்கண்ட இல்லத்துக்காரி “விஷயம் என்ன?” என்றாள். “எல்லாம் நம் சொந்த விஷயமே!” என்றார் ரிஷிஸ்வரர்.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நளாயினி பேச ஆரம்பித்தாள்.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பெண் பாவாய்! இவர் என் கணவர். நான் பதி சொல் தவறாத பாவை. உன்னகம் நாடி வரவேண்டு மென்றார். அவர் மனங் கோணாமல் நடந்து கொள்ளடி மாதரசி!”",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாசிப்பெண், நளாயினியின் வார்த்தை கேட்டுத் திடுக்கிட்டாள். ‘கணவனைத் தாசி வீட்டுக்கு அழைத்துவரும் மனைவியை இன்றுதான் முதன் முதலாகப் பார்க்கிறேன்!’ என்று தனக்குத்",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தானே ஆச்சரியப்பட்டுக் கொண்டாள். அந்த அதிசயத்துடனே அந்தக் குஷ்டரோகியின் அவலட்சணமான முகத்தை வெறுப்புடன் ஏறிட்டுப் பார்த்தாள். அவள் ஒரு முடிவுக்கு வருவதற்கு முன்பாகவே, நளாயினி ஒரு பொன் முடிப்பை அவள் முன்னே நீட்டினாள். “சம்மதம்” என்று தாசி மகளும் கண்ணாடை காட்டினாள். கூடையிலிருந்த குஷ்டரோக மகானைத் தாசிப்பெண் அன்போடு அண்டெடுத்து அம்சதூளிகா மஞ்சத்துக்குப் போய் விட்டாள்.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பெருமூச்சுடன் அந்த வீட்டைவிட்டுக் கிளம்பினாள் நளாயினி. கையிலேயிருந்த கூடையை வாசலிலே வைத்து விட்டுக் “காலையில் வருகிறேன்” என்று காவலாளியிடம் கூறிவிட்டுப் போய்விட்டாள்.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புழுதி படிந்த பூச்செண்டுபோல் போகும் நளாயினியை ஒரு குரல் தடுத்து நிறுத்துகிறது. “நளாயினி, அன்புள்ள தோழி! கொஞ்சம் நில்லேன்!” என்று கூறியபடி ஒரு பெண்மணி ஓடி வருகிறாள். பக்கத்து ஆசிரமத்தில் உள்ளவள் அந்த அழகி, “உலகா, நீயா! இந்நேரத்தில் எங்கேயடி வந்தாய்?” என்று வழியும் கண்ணீரைத் துடைத்தபடி கேட்கிறாள் நளாயினி. “சோலைப்பக்கம் போனேன்—நீ வருவதைப் பார்த்ததும் வந்தேன்; ஆமாம்—நளாயினி! உன்னை ஒன்று கேட்கிறேன் கோபித்துக் கொள்ளமாட்டாயே!” என்று பீடிகையுடன் ஆரம்பிக்கிறாள் உலகா. “என்னடி உலகா! தாராளமாகக் கேள்” என்று சிரிப்பை வரவழைக்க முயல்கிறாள் நளாயினி.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எவ்வளவுதான் புருஷனிடத்திலே அன்பும் பக்தியும் இருந்தாலும், அவனைத் தாசி வீட்டுக்குக் கொண்டுபோய் நீயே விட்டு வருவது என்பது.. எனக்கு அவ்வளவாக....”",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உலகா! போதும் நிறுத்து—பெண்களுக்குக் கணவனே தெய்வம். கணவனின் ஆசைகளே நிறைவேற்றுவதே கற்புக் கரசியின் லட்சணம். என் கணவர் பிணி கொண்டவராயிருக்கலாம். ஆனால் அவர் எனக்குத் தேன்கனி, தெரியுமா உனக்கு! புருஷனிடம் எப்படி நடக்கவேண்டும் என்று நீ எனக்குப் புத்தி சொல்லாதே! என்னைப் பார்த்து நீயும் திருந்திக்கொள்.”",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நளாயினி! என்னை மன்னித்துவிடு! உன்னுடைய அன்பையும்—பதி பக்தியையும் தவறாக நினைத்து விட்டேன்,",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "space"
+     },
+     {
+      "text": "க்ஷமித்துவிடு நளாயினி! உன்போன்ற வைராக்கியமுள்ள புண்ய வதியையும்—பத்தினியையும் ஈரேழு பதினாலு உலகிலும் காண முடியாது. நீ பத்தினி—நீ பத்தினி!”",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உலகா நீ என்னை உணர்ந்து கொண்டால் போதும்—நான் உன்னை மன்னிக்க வேண்டாம். நீ என்போல் கற்புக்கரசியாக இரு! என் போன்ற பத்தினிகளைப் பின்பற்று! நான் வருகிறேன்.”",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதைக் சொல்லிவிட்டு நளாயினி தன் ஆசிரமம் நோக்கிப் போனாள். உலகாவும் தன் தவற்றை உணர்ந்து, “நளாயினி பத்தினி” என்று தோத்திரம் செய்தவாறு அதைவிட்டு நகருகிறாள். அப்போது ஒரு வாலிபன் ஓடிவந்து உலகாவின் கண்களைப் பொத்துகிறான். இருவரும் அங்குள்ள சோலைப் பக்கம் போய்விடுகிறார்கள், சிரிப்பைக் கொட்டியபடியே!",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விம்மி விம்மி அழுதபடி ஆசிரமத்துக்குள்ளே நுழைந்து தரையில் குப்புற விழுகிறாள் நளாயினி. அவளது நீலத் திருவிழிகளிலேயிருந்து நீர்வீழ்ச்சிகள் புறப்படுகின்றன. முழு நிலவை மறைக்கும் முகிலென அவள் முகத்தை மறைக்கிறது விரிந்து கிடக்கும் கருங்கூந்தல்.",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சோலையின் பக்கமிருந்து ஒரு கீதம் ஆசிரமத்துக்குள்ளே கேட்கிறது. அழுது கொண்டேயிருக்கும் நளாயினி அந்தக் கீதத்தைக் கவனிக்கிறாள். ஆம்—உலகாவின் குரல் அது! அதோடு இன்னொரு ஆண் குரலும் கீதமிசைக்கிறது! ‘என்னைப் பத்தினியென ஒத்துக்கொண்டு—என் கரங்களைக் கண்ணிலே ஒத்திக்கொண்ட உலகா தன் காதலனுடன்—கள்ளக் காதலுடன் கனி மரச் சோலையில் இன்ப கீதம் பாடுகிறாள். என் வயதுதான் அவளுக்கும்; அவளைவிட அழகி நான். நானே இங்கே நாதியற்றுக் கிடக்கிறேன். “தேனே! மானே!” என்று அவளை வர்ணித்துக் கொண்டிருப்பான் அவள் காதலன்.’",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படி எண்ணுதெல்லாம் எண்ணுகிறாள் நளாயினி. மீண்டும் அழுகிறாள். ஆசிரமத்துக் கதவு திறக்கப்படுகிறது. அழுகையை நிறுத்தினாள். ஆனால் கண்களைத் துடைக்கவில்லை; கதவைத் திறந்து கொண்டு ஒரு பெண் உள்ளே வருகிறாள். ஏறத்தாழ நளாயினியும் அவளும் ஒரே மாதிரி காணப்படு",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கிறார்கள். இருவரும் சேர்ந்து நின்றால், “யார் நளாயினி?” என்று கண்டு பிடிப்பதே கஷ்டமாகிவிடும். வந்த பெண், நளாயினி அருகில் உட்காருகிறாள். நளாயினியும் எழுந்து உட்காருகிறாள். “வா, இதயா வா!” என்று தேம்பியபடி வரவேற்கிறாள் நளாயினி.",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நளா! என்னம்மா இப்படி எப்போதும் அழுது கொண்டேயிருக்கிறாய்?”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காரணமா கேட்கிறாய்; இதயா! தணலிற் புழுவாய்த் தவிக்கிறேன் நான் என்பதை நீ அறிய மாட்டாயா? அதோ ஜோடியாகக் கூவும் பறவைகளின் சங்கீதத்தைக் கேட்கிறாயா நீயும்! சோலைப்புறமிருந்து காதலர் மீட்டும் வீணகானம் எத்தகைய விரகதாபத்தை ஒரு பருவ மங்கைக்கு எழுப்பும் என்பதை நீ அறியமாட்டாயா! அறிவாய்! இதயா! அனைத்தும் அறிவாய்! அறிந்தும்—எனக்கு ஆறுதல் கூறுவதற்காக இப்படி மெளனம் சாதிக்கிறாய்—இல்லையா!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உண்மைதான் நளாயினி! உலகா உன்னைப் பத்தினி என வாழ்த்தினாள்; அதையும் மறைந்து நின்று கேட்டேன். அந்தப் புகழ் வெளிச்சம் மட்டுமே போதுமென்று திருப்தி அடைய வேண்டியதுதான்!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதயா! உண்மையாகச் சொல்! நான் பத்தினியா? எப்படி? எப்படி?”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்! குஷ்டரோகம்பிடித்த கணவனைத் தாசி வீட்டுக்கு அனுப்பியிருக்கிறாயே!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கிண்டல் செய்யாதே—இதயா! குஷ்டரோகம்பிடித்தவனோடு கூடிக் கிடக்க எனக்கு விருப்பமில்லை. அவனோ என்னை ஆசையோடு அழைக்கிறான். அணைக்கவோ என் கை நடுங்குகிறது. ஆகவேதான் அவனைத் தாசி வீட்டுக்கு அனுப்பினேன். என் அழகுக்கு ஆபத்து வராமல் அவன் ஆவல் தீர்ந்தால் சரியென்று எண்ணினேன். இந்தத் தந்திரம் உனக்குத் தெரியாதா, இதயா!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நானறியாதது ஒன்றுண்டா நளாயினி! ஆனாலும், உலகா நம்பியிருக்கிறாள்; உன் பதி பக்தியை! குஷ்டரோகியைத் தாசி வீட்டுக்குத் தலையிலே தூக்கிக் கொண்டு போனதைப் பெரிய பதிபக்தி என உலகா எண்ணுகிறாள்.”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தலையில் தூக்கிக்கொண்டு போனேன் என்கிறாயே நீயும்! திருத்திக்கொள்! கூடையில் வைத்துத் தலையில் தூக்கிக்கொண்டு போனேன். குஷ்டரோகியைக் கையால் தொட்டுத் தலையில் தூக்கிப்போக எனக்கென்ன பைத்தியமா? அதெல்லாம் ஜாக்கிரதையாகக் கூடையில் வைத்துத்தான் கொண்டு போனேன்.”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நளா! உன் கணவன் எவ்வளவு கடுமொழிகள் கூறினாலும்—எதிர்த்து ஒரு சொல் கூறாத கற்பரசி என நேற்றுக் கூட உலகா என்னிடம் உன்னைப் புகழ்ந்தாள்.”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கணவன் திட்டினால்—நான் மறுமொழி பேசவில்லை; உண்மைதான்! குஷ்டரோகிதானே திட்டுகிறான் என்று அலட்சியப் படுத்தினேன். நானும் அவனுடன் பேசினால் பேச்சு வளரும். அந்த வார்த்தின் காரணமாக அவனோடு நெருங்கி நின்று வார்த்தையாட வேண்டும். அதற்காகத்தானடி, அந்தக் குட்டம் பிடித்தவன் குறைத்துக்கொண்டிருக்கட்டும் என்று விட்டு விட்டேன்!”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்...எப்படியோ பத்தினி என்று பட்டம் பெற்று விட்டாய்! பார் புகழும் பதிவிரதை—பதிபக்தி மிகுந்தவள் என்றெல்லாம் உலகா புகழ்ந்துவிட்டாள் உன்னை!”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உலகாவுக்கு என்னடி தெரியும் என் உள்ளத்தில் இருக்கும் எரிமலை? பத்தினிப் பட்டம் போதுமா பருவக்கனி சொட்டும் இந்தப் பரிதாபத்துக்குரியவளுக்கு? சொல்லடி இதயா! சொல்லு! சுகவாழ்வுக்கு வழி சொல்லு!”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வழி சொல்லுகிறேன்—நளாயினி! நான் ஒரு புதிய வரம் தருகிறேன். இந்த ஜென்மத்தைச் சீக்கிரம் கழித்துவிட்டு விரைவில் அடுத்த ஜென்மம் எடு! அந்த ஜென்மத்தில் நீ திரெளபதியாகப் பிறக்கப் போகிறாய்! ஒரு கணவன் இருந்தும் உனக்கு உற்சாகமில்லை, உல்லாசமில்லை. உள்ளமோ வேதனைக் களமாயிருக்கிறது உனக்கு! ஆகவே அடுத்த பிறப்பில் ஐந்து கணவரோடு ஆனந்த வாழ்வு வாழ அருமையான வரம் தருகிறேன்.”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதயா! இது உண்மையா?”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பொய் இல்லை! புது வாழ்வு ஆரம்பமாகிறது, உனக்கு! புது வாழ்வு—புனர் ஜென்மம்—இரண்டும் பொருளில் ஒன்று தான்! அதைப் புரிந்து கொள்ளடி, என் தோழி!”",
+      "sourceScan": 23,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“புரிந்துகொண்டேன்!” என்று பூரிப்புடன் துள்ளியபடி நளாயினி, இதயாவைத் தழுவிக்கொள்கிறாள். சோகக் கண்ணீர், ஆனந்தக் கண்ணீராக மாறிவிட்டது அவளுக்கு! அந்த ஆசிரமத்தில் இன்பகீதம் ஆரம்பமாயிற்று!",
+      "sourceScan": 23,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**குறிப்பு :—புராணக் கதைப்படி நளாயினிதான் திரெளபதையாகப் பிறந்திருக்கிறாளாம்.**",
+      "sourceScan": 23,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Nalayini",
+    "sourceScan": 16,
+    "printedPage": 7
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A beautiful woman. A radiant-faced young woman whose form had not withered. Clad in white, she added grace to her swan-like gait. Around her reddish neck hung a black-bead necklace. That maiden, her hair combed and tied, was walking down the street with a basket in her hand. A procession of the distinctive beauty of spotless womanhood! As she walked through the darkened street, one was tempted to wonder whether a star of the heavens, longing to come to the earth below, had descended there!",
+      "sourceScan": 16,
+      "printedPage": 7,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "On the head of that golden statue showering light was a basket; inside the basket, a foul odour! Yes—upon the beauty's head sat a decaying figure. Her young hands, supporting the underside of the basket, trembled under the weight. Yet that lovely woman kept walking. Her beautiful face offered poets a vision of how even sorrow can possess a radiance. The decaying figure seated in the basket, meanwhile, wore a smile. It was a smile blossoming in expectation of some pleasure. Want to see concern in that smile? Those who wish may look at the sweetness of that figure. The figure in the basket was a man—a man who had lost more than the leg portion of the body that had once been his own;",
+      "sourceScan": 16,
+      "printedPage": 7,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "a maharishi! A great man named **Maut Kalyar**.",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Just as there are “great” men, “great” persons, “great” rich men and “great” landlords, there is also such a thing as a “great” disease! That great sage had been afflicted by that great disease. And there he was, riding upon the head of his beautiful wife as he travelled down the street.",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Go on, woman—faster!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I am going, my lord!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nalayini! Walk faster! But don't drop me for that! It doesn't matter if you fall!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My god! Why do you test me like this? Even if the life leaves my body, I will not lower this basket. Is there merchandise in this basket? Am I carrying household goods? Are you not my priceless jewel! Would I ever put you down? Sacrilege! Sacrilege!”",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Bearing her leprous husband in a basket—and bearing sorrow upon a face like a lordly lotus—that walking golden beetle, Nalayini, went on. Where was she going? Did her husband wish to bathe in holy waters and undertake sacred pilgrimage, and had that slender woman taken on this task to satisfy his hunger for devotion? No! No! Then what? Was this journey being made to move from one hermitage to another, with the maiden herself serving as the vehicle? Not that either! Then where were they going? Not to perform penance! Not to witness penance! Then where was the ascetic going? To a courtesan's house! Why? To preach, “Prostitution must not exist! Dāsi-nāthīna-thozhu!”? Not even for that was the leper going. Not to turn the courtesan's house into a hall of devotion! Not to expound upon God! The bearer of the water-pot was going to the courtesan's bedchamber! The sage's desire was not to behold the three-eyed god! It was for four eyes to meet—to pay homage to that Nayanavalli-thathai!",
+      "sourceScan": 17,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nalayini, carrying her husband in search of the house of a woman who gives pleasure for money—a blooming rose! That rose was carrying a decaying beetle to a withered flower! There—the courtesans' street had arrived! Nalayini's bodily strain ended. Her husband's inner frenzy subsided a little. They had reached the place they sought. She lowered the basket. Once, she arched and stretched her aching body.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A rainbow!” a colour-loving connoisseur nearby might have cried. “Could even a deer leap like that!” another might have said. “Stand bent like that for just one second; that is enough. Even if you ask the whole world as the price, I will paint it,” a painter nearby might have declared! Such a peacock-like woman rose to seek a companion for her husband for the night and approached the house of the fallen woman.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With ornamented hands she knocked on the door. The house opened before she had finished knocking. A face peered out even before it opened. **Mautkalyar** saw that face. “I have found pleasure! I have found pleasure!” he cried like a musician who had found his pitch. A terrible glow came over his wrinkled face! Deep hollows formed by a smile on cheeks that oozed blood! Lust-madness showed itself even on his snarling lips. Stretching out a fingerless hand, he greeted the prostitute with desire. Seeing the leper's excitement, the woman of the house asked, “What is the matter?” “It is all our own private matter!” replied the revered sage.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nalayini began to speak.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Woman! This is my husband. I am a wife who never disobeys her husband's word. He wished to come to your house. Queen among women, conduct yourself so that his heart is not disappointed!”",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The courtesan was startled by Nalayini's words. ‘This is the first time in my life I have seen a wife bring her own husband to a courtesan's house!’ she marvelled to herself.",
+      "sourceScan": 18,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Still astonished, she raised her eyes and looked with disgust at the leper's ugly face. Before she could reach a decision, Nalayini held out a bundle of gold before her. The courtesan signalled “I agree” with a glance. Lovingly taking up the leprous sage from the basket, she carried him away to an **Amsa-thoolika** couch.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With a deep sigh, Nalayini left the house. She placed the basket at the entrance and told the guard, “I will come in the morning,” and went away.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A voice stopped Nalayini as she walked like a dust-covered bouquet. “Nalayini, dear friend! Wait a moment!” A woman came running toward her. She was the beauty from the neighbouring hermitage. Wiping away the tears streaming down her face, Nalayini asked, “Ulaga, is that you! Where have you come from at this hour?”",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I went toward the grove. When I saw you coming, I came over. Yes—Nalayini! I want to ask you something. You won't be angry, will you?” Ulaga began cautiously.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is it, Ulaga? Ask freely,” said Nalayini, trying to summon a smile.",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“However much love and devotion one may have for one's husband, to take him yourself to a courtesan's house and leave him there... I don't quite...”",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ulaga! Enough—stop. For women, the husband is god. Fulfilling the husband's desires is the mark of a queen of chastity. My husband may be diseased. But to me he is a honey-sweet fruit, do you understand! Don't teach me how I should behave toward my husband! Look at me and reform yourself.”",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nalayini! Forgive me! I misunderstood your love—and your devotion to your husband,",
+      "sourceScan": 19,
+      "printedPage": 10,
+      "joinToNext": "space"
+     },
+     {
+      "text": "forgive me, Nalayini! Nowhere in all the twice-seven, fourteen worlds could one find a holy woman of such renunciation—a devoted wife like you. You are a chaste wife—you are a chaste wife!”",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ulaga, it is enough if you understand me—I have nothing to forgive you for. Be a queen of chastity like me! Follow wives like me! I am going.”",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Saying this, Nalayini went toward her hermitage. Ulaga too, realizing her mistake, moved away chanting, “Nalayini is a chaste wife.” At that moment a young man ran up and covered Ulaga's eyes from behind. Laughing freely, the two of them disappeared toward the grove nearby!",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sobbing uncontrollably, Nalayini entered the hermitage and fell face-down upon the ground. Waterfalls poured from her deep blue sacred eyes. Her loosened black hair spread over her face like a cloud hiding the full moon.",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A song from the direction of the grove drifted into the hermitage. Still crying, Nalayini listened. Yes—it was Ulaga's voice! Along with it another male voice was singing! ‘Ulaga, who accepted me as a chaste wife—who pressed my hands to her eyes—is in the fruit grove with her lover, with her illicit love, singing a song of pleasure. She is my age; I am more beautiful than she is. Yet I lie here with no one of my own. Her lover must be describing her as “honey! deer!”’",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nalayini thought all that could be thought in this way. Again she wept. The hermitage door opened. She stopped crying, but did not wipe her eyes. A woman opened the door and entered. Nalayini and the newcomer looked almost exactly alike;",
+      "sourceScan": 20,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "if they stood together, it would be difficult to decide, “Which one is Nalayini?” The woman who had come in sat beside Nalayini. Nalayini too sat up. “Come, Idhaya, come!” she welcomed her between sobs.",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nala! Why do you keep crying like this all the time?”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You ask for the reason, Idhaya! Don't you know that I suffer like a worm in burning embers? Can you too hear the music of those birds calling in pairs? Don't you know what pangs of separation a lover's veena-song from the grove can awaken in a young woman in the bloom of life! You know! Idhaya! You know everything! Even though you know, you remain silent like this only to console me—isn't that so!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It is true, Nalayini! Ulaga praised you as a chaste wife; I too heard it while standing hidden. You must be content with the light of that fame alone!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Idhaya! Tell me truthfully! Am I a chaste wife? How? How?”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes! You sent your leprosy-stricken husband to a courtesan's house!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don't mock me, Idhaya! I have no desire to lie with a man afflicted by leprosy. Yet he calls me to him with desire. My hand trembles even to embrace him. That is why I sent him to a courtesan's house. I thought it would be enough if his desire were satisfied without danger coming to my beauty. Don't you know this trick, Idhaya!”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is there anything I do not know, Nalayini! But Ulaga believes in your devotion to your husband! She thinks carrying the leper on your head to a courtesan's house was supreme devotion to one's husband.”",
+      "sourceScan": 21,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You too say I carried him on my head! Correct yourself! I put him in a basket and carried the basket on my head. Am I mad, to touch a leper with my hands and carry him on my head? I was careful to put him in the basket before carrying him.”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nala! Even when your husband uses the harshest words, Ulaga was praising you to me just yesterday as a queen of chastity who never answers back.”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“When my husband abused me, I did not reply—that is true! I dismissed it, thinking, ‘It is only a leper who is abusing me.’ If I too spoke to him, the conversation would grow. Because of those words, I would have to stand close to him and talk. That is why, girl, I let that diseased fellow go on ranting!”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hmm... somehow you have earned the title of chaste wife! Ulaga has praised you as a wife renowned throughout the world—as one overflowing with devotion to her husband!”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What does Ulaga know about the volcano inside my heart? Is the title ‘chaste wife’ enough for this pitiable woman whose youth is dripping ripe? Tell me, Idhaya! Tell me! Show me a path to a life of pleasure!”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I will show you a path, Nalayini! I grant you a new boon. Finish this birth quickly and take another birth soon! In that birth you are going to be born as Draupadi! Though you have one husband now, you have neither excitement nor delight. Your heart has become a field of pain! So in your next birth I grant you the wonderful boon of living a joyful life with five husbands.”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Idhaya! Is this true?”",
+      "sourceScan": 22,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No lie! A new life is beginning for you! New life—rebirth—both mean the same thing! Understand that, my friend!”",
+      "sourceScan": 23,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I understand!” cried Nalayini, leaping with delight as she embraced Idhaya. Her tears of sorrow had turned into tears of joy! In that hermitage, a song of pleasure began!",
+      "sourceScan": 23,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Note:—According to the mythological story, it is said that Nalayini herself was born as Draupadi.**",
+      "sourceScan": 23,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23
+ ]
+}

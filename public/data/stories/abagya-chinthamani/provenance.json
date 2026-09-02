@@ -1,0 +1,76 @@
+{
+ "workId": "abagya-chinthamani",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/abagya-chinthamani",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "sourceTree": "ba2ac25f5e45629ac02d43e13625e51b50353de2",
+ "source": {
+  "printedTitleTa": "அபாக்ய சிந்தாமணி",
+  "editionStatementTa": "முதல் பதிப்பு: 1977",
+  "scanFilename": "TVA_BOK_0064142_கலைஞர்_கருணாநிதியின்_சிறுகதைகள்.pdf",
+  "scanSha256": "853032661482eaccb26c083a38d7aa75c081362d33c963c63e37d088bf20acb3",
+  "scanFileSizeBytes": 268486609,
+  "scanTotalPages": 260,
+  "controllingSourceNote": "Scan identity (filename, SHA-256, byte size, page count) is carried as the source archive records it for the whole anthology. The controlling PDF is not vendored into this repository and is never fetched at runtime."
+ },
+ "storyScope": {
+  "storyScans": "181–188",
+  "storyScanCount": 8,
+  "verified": 8,
+  "blocked": 0,
+  "unresolvedReadings": 0,
+  "complete": true,
+  "conclusionTa": "தையிலும் வெளிப்பட்டது. அதோ அந்த வீட்டுக்கெதிரே பாடுகிறாள் பாருங்கள்; அந்தச் சோக கதத்தில் கூட ஏழ்மையின் பிரதி பலிப்பு இல்லையே! காதலின் தோல்விதானே எதிரொலிக்கிறது!",
+  "boundaryNote": "The story occupies anthology scans 181–188 (printed pages 172–179). Scan 189 belongs to the next anthology item and no text from it enters this story."
+ },
+ "tamilAssembly": {
+  "authority": "stories/abagya-chinthamani/pages/",
+  "derivedAssembly": "stories/abagya-chinthamani/sections/abagya-chinthamani.md",
+  "reconciled": true,
+  "note": "The page records are the archival textual authority and are what this reading text is built from. The assembled section file is a derived reading convenience; its per-scan marker style is not uniform across the anthology, so it is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry. The archive records no per-boundary adjudication for this story.",
+  "individualAdjudication": false,
+  "transitions": 7,
+  "appliedBoundaries": 4,
+  "unresolvedBoundaries": 0,
+  "note": "This is a RULE applied across the batch, not a set of individually inspected boundaries. A policy applied uniformly is weaker evidence than a boundary someone looked at, and the two are not presented as the same thing."
+ },
+ "english": {
+  "titleEn": "Abagya Chinthamani",
+  "sourceScans": "181–188",
+  "scanAnchors": 8,
+  "blockedSourceLocations": 0,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "archiveStatus": {
+   "statusAsRecorded": "translation-review PASS",
+   "note": "The label is the source archive's own, recorded with its wording. It does not establish that a human editorial review was completed, and no human-review claim is made here."
+  },
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "reviewQueue": {
+  "exists": true,
+  "file": "stories/abagya-chinthamani/POSSIBLE_ERRORS_FOR_REVIEW.md",
+  "note": "A forward-looking recheck queue. An entry there is a place worth looking at again — not a known error, not a downgrade of the story's verified status, and not evidence that a human review has been completed."
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "editionStatementTa": "முதல் பதிப்பு: 1977",
+  "publisherTa": "தமிழ்க்கனி பதிப்பகம், சென்னை-28",
+  "storiesInCollection": 37,
+  "storyOrder": 26,
+  "collectionScanTotal": 260,
+  "storyBearingScans": "10–259",
+  "backCoverScan": 260,
+  "scanToPrintedPageRelation": "scan = printed story page + 9",
+  "note": "These are COLLECTION-level facts. The 260-scan total, the shared SHA-256 and the 37-story count describe the anthology, not this story; the story's own extent is in storyScope. The edition statement முதல் பதிப்பு: 1977 is the ANTHOLOGY's, and is not a standalone first-edition statement for this story."
+ },
+ "visualFidelity": {
+  "result": "PASS",
+  "note": "Story-local visual-fidelity closure as recorded by the source archive."
+ }
+}

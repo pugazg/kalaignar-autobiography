@@ -1,0 +1,748 @@
+{
+ "workId": "pugazhendhi",
+ "slug": "pugazhendhi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/pugazhendhi",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "புகழேந்தி",
+  "en": "Pugazhendhi"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 1,
+  "printedPages": {
+   "first": 1,
+   "last": 6
+  },
+  "sourceScans": {
+   "first": 10,
+   "last": 15
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புகழேந்தி",
+    "sourceScan": 10,
+    "printedPage": 1
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விஞ்ஞான ஆராய்ச்சியிலே அவனுக்கு நிகர் யாருமில்லை. இந்தியாவின் ஈன்ஸ்டன் என்று உபகண்டம் பாராட்டுப் படித்தது. சரித்திர ஆராய்ச்சியின் கரையைக் கண்டவன் அவன். சார்லஸ் ஆண்டபோது நடந்ததைக் கூற வேண்டுமா? ஷாஜகானின் குணதிசயங்களை ஒன்றுவிடாமல் சொல்ல வேண்டுமா? நாசர் காலமா? சீசர் வீரமா? எல்லாமே அவனுக்கு மனப்பாடம்! சுருங்கச் சொன்னால் அவனே ஒரு சரித்திரப் புத்தகம்!",
+      "sourceScan": 10,
+      "printedPage": 1,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இலக்கியத்திலே எதுபற்றி அவனிடம் விவாதிக்க வேண்டும்? எதற்கும் தயார்! கவிதைத் துறையிலே கம்பனா? ஷெல்லியா? காளிதாசனா? டென்னிசனா? பைரனா? பாரதியா? யாரைப் பற்றியும் கருத்துரைகள் வழங்குவதிலே அவனுக்கு நிகர் யாருமில்லை என்பது மட்டுமல்ல; அந்தக் கவிதா மண்டலத்தோடு போட்டியிடவும் திறமை பெற்றவன். பொருளாதாரம் பற்றி விளக்கம் தேவையா? காரல்மார்க்ஸ் அனுப்பிவைத்த தூதுபோலத் தொடங்கி விடுவான், பொருளாதாரப் பிரசங்கத்தை. அமெரிக்காவின் ஆஸ்தி என்ன? ரஷ்யாவின் ரகசியமென்ன? இது போன்ற விவரங்கள் மிக எளிதில் கற்றுத்தர வல்லோன்! கணிதத்திலோ மேதை! பூகோளத்துப் புலி! அரசியலிலே அவனோர் பிடேல்டோ! சமுதாயத்திலே சாக்ரட்டீஸ்! எழுத்திலே பெர்னாட்ஷா—ஷேக்ஸ்பியர் இருவரின் கூட்டு! பேச்சிலே டெமாஸ்தனிஸ்—இங்கர்சால் இருவரின் கலப்பு! இத்தகைய மேதை! புதிய பாதை வகுத்தவன்! அவனது பெயர் கூறவே",
+      "sourceScan": 10,
+      "printedPage": 1,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மக்கள் தயங்குவர்—பெயரைக்கூறுவது அவன் பெருமையை இழிவு படுத்துமோ என்ற சந்தேகத்தால்! ஆகவே அவனை மேதை என்றே அழைத்தது இந்த மேதினி.",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சில புலவர்கள் கூட அழகாகச் சொல்லுவார்கள் அவனது பெயரைப் பற்றி. “மே” என்பது உலகத் தொழிலாளரின் உற்சவதினம்; “தை” என்பது தமிழரின் உழைப்பு வெற்றி தினம்; ஆகவே இரண்டு பெருந் திருநாட்களும் சேர்ந்தமைந்த பொருத்தமான பட்டம் ‘மேதை’ என்று! நமது சிந்தை கவர்ந்தவனுக்குச் சிறப்பான பெயர் அமைந்துவிட்டது என்று கூறி மகிழ்வார் பலபேர். வயதோ முப்பது நிறையவில்லை; வாலிபத் தென்றல்! அதற்குள்ளாக அவனுக்கு வந்து குவிந்த புகழோ பெருங்குன்றம்!",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவனைச் சுற்றி வாழ்த்துப் பாடியபடி எந்நேரமும் இருப்பார் மாணவரும், தொழிலாளரும், பண்டிதரும், பாமரரும்! தனக்கு எத்துணைப் பெருமை வளர்ந்திருக்கிறது என எண்ணும்போது, மணக்கும் அவன் நெஞ்சம். புகழ் கண்டு பூரிப்படைவான். ஆனாலும் அவன் உள்ளம் புகையும் எரிமலை போல இருந்ததை அவனால் மறைக்க முடியவில்லை. மறைப்பதற்கு மிகவும் கஷ்டப்பட்டான்.",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**புகழ்!     புகழ்!!     புகழ்!!!**",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யாருக்கு வேண்டும் இந்தப் புகழ்? சரித்திர விற்பன்னன்—ஜகம் புகழும் பூகோள மேதை—கணித நிபுணன்—கவிஞருக்கு மன்னன்—எழுத்து வேந்தன் என்றெல்லாம் உலகம் உளறுகிறது அவனைப் பற்றி! ஆனால், அவனோ துடித்துக் கிடக்கிறான். “தொலையாதோ இந்தப் புகழ்” என்று மனம் வெடித்துச் சாகிறான். காரணம் அவனால் தனியே எங்கும் போகமுடியாது. மாலை நேரத்தில் கடற்கரையில் உலவி வரலாமா? முடியாது. கூடாது என்று தடையல்ல; அவன் போக முடியாதபடி புகழ் அவனைத் தடுத்தது. நூறு, ஆயிரம் என்று மக்கள் சூழ்ந்து கொள்வர். “மேதை வந்துவிட்டார்” என்று செய்தி எங்கும் பரவும். தனிமையை நாடி வந்த அவன் புகழ்தரும் தீவலி தாங்காமல் ஓட்டமாக ஓடி வீட்டுக்குப் போய்விடுவான். ரயிலில் போகமுடியாது. கடைத் தெருப்பக்கம் தலைகாட்ட இயலாது. கண்காட்சிசாலைகளில் காலடிவைக்க முடியாது. புகழ்—புகழ்—புகழ்—எங்கும் புகழ்! அந்த மேதையின் நற்பண்புகள் பற்றிப் பேசாதார் இல்லை.",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘காதலனும் காதலியும் கொஞ்சிடும் அந்த அழகான நந்தவனத்தைப் பற்றி உணர்ச்சி பொங்கிட வர்ணித்திருக்கிறேனே; அந்த ஒய்யார வனத்திலே உல்லாச கீதம் பாடும் ஜீவஜோடிகளை யாரும் சித்திரிக்காத வண்ணம் சித்திரித்து எழுதி இருக்கிறேனே; படிக்கும் போதே நமக்கு ஒரு போதை தோன்றுகிறதே; அதை எழுதும்போது அவன் நிலை எப்படி இருந்திருக்கும்!—இப்படி யெல்லாம் எழுதுவது போன்ற கற்பனையை வாழ்நாளில் தத்தரூபமாகச் சந்திக்க வேண்டுமென்று அவன் விரும்பமாட்டானா? அந்த இன்ப விருப்பத்தை நிறைவேற்றிக் கொள்ள முடியாமல் தவித்திருக்க மாட்டானா? அந்தத் தவிப்பின்போது ரோஜா கிடைக்காவிட்டால் ஒரு கனகாம்பரம் என்ற அளவுக்குத் தன் ஆசையை விரித்திருக்க மாட்டானா?’",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்றெல்லாம் அவனைப்பற்றிப் பேசினர்.",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆச்சரியம்தான்! நீ நினைக்கிறபடியோ, சந்தேகங் கொள்கிறபடியோ, அந்த மேதை, வழுக்கி விழுந்து விடுகிறவனல்லன்! நிச்சயம் அத்தகைய வழியில் அவன் இறங்கமாட்டான்!” என்று உறுதியோடும் பலர் பதிலுரைத்தனர்.",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நல்லொழுக்க சீலன் என எப்படி நவில முடியும்? நாடு பல சுற்றியிருக்கிறான்?”",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏடு பல கற்றிருக்கிறான்—ஏன் அவன் சற்குணனாய் இருக்க முடியாது?” இப்படிக் கேள்வியும் பதிலும் மாறி மாறி!",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தான் எதிர்பார்த்து நடைபெறும், அந்த இலட்சியம் கைகூடும் வரையில்—உலகத்திற்கு அந்த ஒப்பற்ற பரிசை வழங்கும் வரையில்—அவன் திருமணமே செய்துகொள்ள மாட்டானும்!”",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தப் பிரச்சாரமும் பரவியது. அவன் அப்படிச் சொன்னே இல்லையோ—எல்லோரும் அப்படித்தான் நம்பிக்கொண்டிருந்தனர். அவன் சொல்லாததை யெல்லாம் மக்கள் சொல்லுவர். அதைப் பற்றிப் புகழ்வார்; அவனும் வேறு வழியின்றி, “ஆமாம், சொன்னேன்” என்று ஒத்துக்கொள்வான்.",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இலட்சியம் கைகூடும் வரையில் உறங்கவும் மாட்டாராம்!” இப்படிப் பிரச்சாரம் நடைபெறும். அன்பின் மிகுதியால் கிளம்பும் வதந்தி. அவனைப் போய்க் கேட்டார், “உங்கள் இலட்சியம்",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கைகூடும் வரையில் உறங்கமாட்டீர்களாமே! ஆகா, என்ன உறுதி! என்ன உறுதி” எனப் புகழ் பாடியபடியே!",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்லை, இல்லை—எனக்கு அப்படியெல்லாம் இலட்சியத்தில் மோகமில்லை!” என்று அவனால் சொல்லமுடியும்? முடியாது. ஆகவே, “ஆமாம் உறங்கமாட்டேன்” என்பான், அதற்காகத் தன்னைச் சுற்றியிருப்போர் தூங்கிய பிறகு நாற்காலியில் உட்கார்ந்தபடியே—எதையோ சிந்திப்பதுபோலத் தூங்கிக் கொண்டிருப்பான். பாவம்! அதுவும் அமைதியற்ற அரைத் தூக்கம்.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நமது மேதை—நல்ல வேட்டி சட்டைகூட உடுத்துவதில்லை—அவருடைய எண்ணமெல்லாம் உலகத்திற்கு ஒரு புதிய வழி காண வேண்டுமென்பதிலேயே வயித்துக்கிடக்கிறது” என்பர் சிலர்.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்லை, இல்லை—நான் ஆடம்பரமாக உடை உடுத்துவேன்” என்று அவன் கூறமுடியும்? முடியாதே; பாவம்! அதற்காக நாற்றத்தையும் தாங்கிக்கொண்டு அழுக்கு ஆடைகள் உடுத்துவான்.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பெரிய மகானுக்கும் நமது மேதைக்கும் என்ன வேறுபாடு? ஒன்றுமில்லை—பெண் என்றால் திரும்பியும் பார்ப்பதில்லையே இவர்!” என்று அதிசயமாகப் பேசுவர் பலர்.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம்—பெண்ணாவது மண்ணாவது!” என்று மேதையும் அவர்களோடு சேர்ந்து பேசுவான். பேசத்தானே வேண்டும் அவனுடைய பெருமையைக் காப்பாற்றிக்கொள்ள!",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மேதை ஒருநாள் வெளியூருக்கு அழைக்கப்பட்டிருந்தான்—கல்லூரி ஒன்றிலே ‘விஞ்ஞான அறிவு’ என்ற தலைப்பிலே சொற்பொழிவு நிகழ்த்துவதற்காக! கல்லூரித் தலைவர் வீட்டிலேயே தங்கியிருந்தான். யாரும் தொந்தரவு கொடுக்காமல் விருப்பத்திற்காகத் தனியாக மேல் மாடியில் மேதைக்கு இடவசதி செய்து கொடுத்திருந்தார் கல்லூரித் தலைவர். கல்லூரியில் மேதையின் சொற்பொழிவு நடைபெற்றது. விஞ்ஞானத்தின் பெருமைகள் அவனுக்கே உரிய அழகு நடையில் அவனால் மட்டுமே விளக்கமுடியும் என்ற அத்தனைப் பெரிய கருத்துக்களை மாணவரிடையே வாரியிறைத்தான் மேதை.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கூட்டத்திலே மாணவிகளும் அதிகமிருந்தனர். அந்த முல்லைக் கொல்லையின் நடுவே அழகு ரோஜா ஒன்றும் இருந்தது. மேதையின் பேச்சையும், அவனது கட்டுக் குலையா மேனியின் அழகையும் அந்த ரோஜாப்பூ தன்னிரு செவிகளாலும், விழிகளாலும் முறையே விழுங்கிக்கொண்டிருந்தது. மேதையின் பார்வையும் இரண்டொரு முறை அந்த அழகியின் மீது பாய்ந்தது. ஆனால் பாய்ந்த வேகத்தில் மீண்டது. அவன் அவளை லட்சியம் செய்ததாகக் காட்டிக்கொள்ளவில்லை. சொற்பொழிவு முடிவுற்றது. மேதையை மாணவர் சூழ்ந்துகொண்டனர். அனைவரிடமும் பேசிவிட்டு மேதை கல்லூரித் தலைவரின் வீட்டுக்குப் புறப்பட்டான்.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உணவு முடிந்த பின்னர் அமைதியை விரும்பி, மேதை மாடிக்குப் போனான். மாடியில் உலவிக்கொண்டிருந்தான். நல்ல நிலவு! உலவிக்கொண்டிருந்தவனுக்குக் கால் வலி எடுக்கவே நாற்காலியில் அமர்ந்தான். மேதையைக் கவனிப்பதற்காக அமர்த்தப்பட்டிருந்த பையன் ஓடிவந்து, மேதையின் கால்களை அமுக்கி விட்டான். மேதையின் வலி கண்ட கால்கள் பையனின் பணிவிடையால் சுகம் பெற்றன.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மேதையின் கண்கள் கட்டவிழ்த்துக்கொண்டு இங்குமங்கும் திரிந்தன. எதிர்த்த வீட்டு மாடியிலே, கல்லூரியிலே கண்ட அந்த ரோஜா நின்றுகொண்டிருந்தாள். அவள் மேதையையே பார்த்துக்கொண்டுமிருந்தாள். அவள் கண்களிலேயிருந்து புறப்படும் அந்தக் காதற் கண்கள் எவ்வளவு சக்தி வாய்ந்தவை! ஆனால் அவைகள் மேதையை அசைக்கவும் முடியாதவை என எண்ணித் தவித்தாள் அந்த ரோஜா! மேதைக்குக் கால் அழுத்தி விட்ட பையன் வேலை முடிந்து வெளியே போனான். போனவன் எதிர்த்த வீட்டு மாடிக்கு எப்படிப் போனானோ தெரியவில்லை, அந்த மாடியைப் பார்த்துக்கொண்டிருந்த மேதையின் கண்களிலே ஒரு காட்சி தெரிந்தது.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தனக்குக் கால் பிடித்த பையன் எதிர்த்த வீட்டிலே அந்தக் கல்லூரி ரோஜாவுடன் ஏதோ பேசுகிறான். அவளும் மெதுவாக ஏதோ கூறுகிறாள். பிறகு அந்தப் பையனுடைய கைகளை எடுத்துக் கண்களிலே ஒத்திக்கொள்கிறாள்.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் காட்சியை மேதை கண்டான். “லட்சியம் ஈடேறும் வரையில் பெண்களைத் திரும்பியும் பாரார்! திருமணமும்",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வேண்டார்!” என்று ஊரார்—உலகத்தார் பேசிய புகழ் உரைகள் அவன் காதில் ஒலித்தபடியிருந்தன.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுநாள் காலையில் பையன் வந்தான், அவனுக்குக் கால்ப் பணிவிடைகள் புரிவதற்காக! அப்போது மேதை அவனிடம் கேட்டான், “நேற்றிரவு அந்தப் பெண் உன் கைகளை கண்களில் ஒத்திக்கொண்டாளே, ஏன்?” என்று. “நான் உங்கள் கால்களைப் பிடித்தேனல்லவா? அதனால் என் கைகள் மிகவும் பாக்கியம் செய்த கைகளாம்; அதனால் என் கரங்களை அவள் கண்களில் ஒத்திக்கொண்டாள்!” என்று பையன் நிலைமையை விளக்கினான்.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மேதை ஒன்றும் பதில் சொல்லவில்லை. நினைத்துக்கொண்டான், “நான் அவள் கால்களையே கண்களில் ஒத்திக்கொள்ளத் தயாராயிருக்கிறேன். அவளோ, என் காலில் பட்ட உன் கரங்கள் முத்தமிடுகிறாள்! நல்ல புகழப்பா இது! பொல்லாத புகழ்—என்னைக் கொல்லாமல் கொல்லுகிறது!” என்று அவன் ஆயிரம் முறை தனக்குள்ளாகவே முணுமுணுத்துக்கொண்டான்!",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்குள்ளாக அந்தப் பெண்ணும், எதிர்வீட்டு மாடியில் உதயமானாள். மேதையை வழியனுப்புவதற்காக ஐம்பது மாணவரும், ஆசிரியர் பத்துப் பேரும் மாடிக்கு வந்துவிட்டார்கள். மேதை, எதிர்வீட்டு மாடியை ஏறெடுத்தும் பாராமல் காரியங்களை முடித்துக்கொண்டு ஊருக்குப் புறப்பட்டார்.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மேதை வாழ்க!” என்ற முழக்கத்துடன் மாணவர்களும் ஆசிரியர்களும் கிளம்பினார்கள்.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Pugazhendhi",
+    "sourceScan": 10,
+    "printedPage": 1
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "No one could match him in scientific research. The subcontinent hailed him as the Einstein of India. He had reached the very shore of historical research. Want to know what happened when Charles ruled? Want every trait of Shah Jahan recounted without leaving out a single one? Nasser's era? Caesar's valour? He knew it all by heart! In short, he himself was a book of history!",
+      "sourceScan": 10,
+      "printedPage": 1,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Literature—what was there to debate with him? He was ready for anything! In the realm of poetry: Kamban? Shelley? Kalidasa? Tennyson? Byron? Bharathi? Not only was he unmatched in offering opinions about any of them; he had the talent to compete with that whole realm of poets. Need an explanation of economics? He would launch into an economic sermon like an envoy sent by Karl Marx. What was America's wealth? What was Russia's secret? He could teach such matters with the greatest ease! A genius at mathematics! A tiger in geography! In politics, a Pideldō! In society, a Socrates! In writing, Bernard Shaw and Shakespeare combined! In speech, Demosthenes and Ingersoll blended together! Such a genius! A man who had laid out a new path! People hesitated even to utter his name—",
+      "sourceScan": 10,
+      "printedPage": 1,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—wondering whether saying it might diminish his greatness! And so this world called him simply “Genius.”",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Some poets would even explain his name beautifully. “Mē” is the festival day of the workers of the world; “Thai” is the day of the Tamils' triumph of labour; therefore, they said, the fitting title formed by joining those two great festival days was “Mēthai”—“Genius”! Many rejoiced that a splendid name had been found for the man who had captured their thoughts. He was not yet thirty; a breeze of youth! Yet by then the fame that had come piling upon him was a great mountain!",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Students, workers, scholars and ordinary folk surrounded him at all times, singing his praises! When he thought of how much greatness had grown around him, his heart seemed to grow fragrant. He swelled with delight at his fame. Yet he could not hide the fact that his inner being was like a smoking volcano. He struggled greatly to conceal it.",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Fame!     Fame!!     Fame!!!**",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Who wanted this fame? The world babbled about him as a master historian—a world-famed genius of geography—a mathematical expert—a king among poets—a sovereign of letters! But he lay writhing. “Will this fame never leave me?” he cried inwardly, his heart bursting. The reason was that he could go nowhere alone. Could he stroll along the beach in the evening? No. It was not that anyone had forbidden it; fame itself stopped him from going. Hundreds, thousands would gather around him. News would spread everywhere: “The genius has come!” Having come seeking solitude, unable to bear the torment that fame brought, he would flee home at a run. He could not travel by train. He could not show his face in the bazaar. He could not set foot in exhibition halls. Fame—fame—fame—fame everywhere! There was no one who did not speak of the noble qualities of that genius.",
+      "sourceScan": 11,
+      "printedPage": 2,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘He has written, overflowing with feeling, about that beautiful garden where lovers exchange affection; he has depicted the living couples singing songs of delight in that graceful grove in a way no one else has pictured them; merely reading it makes us feel intoxicated—what must his state have been while writing it! Would he not have wished, at least once in his life, to encounter in living form the fantasy he wrote about? Would he not have suffered because he could not fulfil that longing? And in that suffering, if a rose were unavailable, would he not have widened his wish at least to a kanakambaram flower?’",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That was how they spoke of him.",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Amazing! However you imagine it, whatever suspicions you harbour, that genius is not a man who will slip and fall! He will certainly never descend to such a path!” many replied with conviction.",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“How can you say he is a man of impeccable conduct? Has he not travelled through many lands?”",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“He has read many books—why can he not be a man of good character?” And so question and answer went back and forth!",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Until the ideal he awaits is fulfilled—until he bestows that incomparable gift upon the world—he would not even marry, they say!”",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This story too spread. He may never have said any such thing—yet everyone believed it. People would put into his mouth all sorts of things he had never said. They would praise him for them; and with no other way out, he would agree: “Yes, I said it.”",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“They say he will not even sleep until his ideal is fulfilled!” So the publicity went on. A rumour born of excessive affection. Someone would go up to him, praising him as he asked, “Until your ideal—",
+      "sourceScan": 12,
+      "printedPage": 3,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—is fulfilled, you will not sleep, they say! Ah, what determination! What determination!”",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Could he say, “No, no—I have no such obsession with my ideal”? He could not. So he would say, “Yes, I will not sleep.” To keep that up, after everyone around him had fallen asleep, he would remain seated in a chair and sleep as though he were thinking about something. Poor fellow! Even that was a restless half-sleep.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Our genius—he does not even wear a decent veshti and shirt—all his thoughts lie lodged in the desire to find a new path for the world,” some would say.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Could he say, “No, no—I like to dress grandly”? Of course not; poor man! So he wore dirty clothes, putting up even with the stench.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What difference is there between a great saint and our genius? None at all—he does not even turn to look if he sees a woman!” many would marvel.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hmm—women, earth, what does it matter!” the genius too would say along with them. He had to speak that way, did he not, to preserve his greatness!",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day the genius had been invited out of town—to deliver a lecture at a college on “Scientific Knowledge”! He was staying at the college principal's house. The principal had arranged a place for him alone upstairs, for his comfort, so that no one would disturb him. The genius delivered his lecture at the college. He poured out before the students vast ideas on the wonders of science—ideas that, they believed, only he could explain in his own beautiful style.",
+      "sourceScan": 13,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There were many female students in the gathering. Amid that jasmine grove there was one beautiful rose. With her two ears and her eyes, that rose drank in, respectively, the genius's speech and the beauty of his well-formed body. The genius's gaze too darted toward the young woman once or twice. But it withdrew as swiftly as it had darted. He did not show that he had noticed her. The lecture ended. Students surrounded the genius. After speaking to everyone, he left for the college principal's house.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After his meal, craving quiet, the genius went upstairs. He walked about on the terrace. A fine moon! When his legs began to ache from walking, he sat in a chair. The boy assigned to attend to the genius ran over and massaged his legs. The genius's aching legs found comfort in the boy's service.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The genius's eyes broke free and wandered here and there. On the terrace of the house opposite stood the very rose he had seen at the college. She too was gazing at the genius. How powerful were those eyes of love streaming from her eyes! Yet the rose suffered, thinking that even they were incapable of moving the genius! The boy who had massaged the genius's legs finished his work and went out. How he got to the terrace of the opposite house, no one knew; but the genius, still looking toward that terrace, saw something.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The boy who had held his legs was talking about something with that college rose in the house opposite. She too said something softly. Then she took the boy's hands and pressed them reverently to her eyes.",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The genius saw the scene. “He will not even turn to look at women until his ideal is achieved! He will not marry—",
+      "sourceScan": 14,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—either!” The words of praise spoken by townspeople and by the world rang in his ears.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next morning the boy came to attend to his feet. The genius asked him, “Last night that young woman pressed your hands to her eyes. Why?” “Didn't I hold your feet? She said my hands were greatly blessed hands because of that; that is why she pressed my hands to her eyes!” the boy explained.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The genius said nothing. He thought, “I am ready to press even her feet to my eyes. And she kisses your hands because they touched my feet! What wonderful fame this is! Cursed fame—it kills me without killing me!” A thousand times he muttered this to himself!",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "By then the young woman too appeared on the terrace of the house opposite. Fifty students and ten teachers had come up to the terrace to see the genius off. Without even lifting his eyes toward the opposite terrace, the genius finished what he had to do and left for home.",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The students and teachers departed with the cry, **“Long live the genius!”**",
+      "sourceScan": 15,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ]
+}

@@ -1,0 +1,554 @@
+{
+ "workId": "panangulai",
+ "slug": "panangulai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/panangulai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "பனங்குலை",
+  "en": "Panangulai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 17,
+  "printedPages": {
+   "first": 117,
+   "last": 121
+  },
+  "sourceScans": {
+   "first": 126,
+   "last": 130
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பனங்குலை",
+    "sourceScan": 126,
+    "printedPage": 117
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன் அப்பா-அம்மா இருக்கிறார்களா?”",
+      "sourceScan": 126,
+      "printedPage": 117,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்ல. அம்மா இறந்து விட்டாங்க! அப்பா உயிரோடே இருக்கிறாரோ இல்லையோ எனக்குத் தெரியாது. என் தாயாரு வயத்திலே நான் இருக்கும்போதே அப்பா மேலே ஒரு அபாண்டமான கொலைக்குற்றம் சுமத்தப்பட்டு, அவரு எங்கேயோ கண் காணாத சீமைக்கு ஓடிப்போயிட்டாராம். எனக்கு மூத்தது ஆண் பிள்ளையாம். அதுவும் ரெண்டு வயசிலே காணாமப் போயிட்டதாம். குடும்ப சுகத்து மேல் விழுந்த இடியை நினைச்சு அழுது அழுது எங்கம்மாவும் கண் மூடிட்டாங்க! இப்ப நான் அனாதை!”",
+      "sourceScan": 126,
+      "printedPage": 117,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அனாதை யென்று சொல்லாதே! நேற்று வரையில் அப்படி! இன்று முதல் அந்த வார்த்தைக்கே இடமில்லை; கமலம்! ஏறத் தாழ என் வாழ்வும் உன் வாழ்வும் ஒரே மாதிரிதான்! நீயாவது தாயின் அரவணைப்பிலே வளர்ந்தாய். அன்னையின் முகத்தைக் கண்டு, அவர்கள் பொழியும் அன்பை உண்டு, செழித்து வளர்ந்திருக்கிறாய். தாயின் மடியில், தந்தையின் தோளில் கிடைக்கின்ற சுகம் எப்படிப்பட்டது என்பதையே நான் அறியமாட்டேன். அவர்கள் முகத்தைக் கண்டதாகக்கூட எனக்கு ஞாபகமில்லை. அனாதை விடுதியொன்றின் கடுமைக் கரங்கள்தாம் என்னை வளர்த்து ஆளாக்கிவிட்டன. இன்று இரு அனாதைகளும் கூடிவோம். அனாதை என்ற அடைமொழிக்கு வேலையில்லாமல் விரட்டிவிட்டோம்!”—என்றவாறு அவன் கமலத்தைத் தழுவிக் கொண்டான்.",
+      "sourceScan": 126,
+      "printedPage": 117,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் கண்கள் நீரைப் பொழிந்தன. எத்தனையோ நாட்களாக எதிர்பார்த்த இன்பம்—இருவருக்கும் அப்போது கிடைத்தது. கமலத்தின் தாயார் காலத்திற்கும் இடத்திற்கும் ஏற்றபடி இட்லிக் கடை, அங்காடி வியாபாரம், இளநீர், பனை நுங்கு இப்படிப் பற்பல வியாபாரங்களைச் செய்து தன் மகளைக் காப்பாற்றி வந்தாள். அவள் இறந்து போன பிறகு, கமலம் தாயாரின் தொழில்களையே மேற்கொள்ள நேரிட்டது. ‘பனை நுங்கு’ பருவமாதலால் கமலம் அந்த வியாபாரத்தில் ஈடுபட்டிருந்தாள். பனங்காய் மொத்தமாக விலை பேசி வாங்கி, அவைகளை விற்றுவரும் சிறிய லாபத்தைக் கொண்டு வயிறு கழுவிக் கொள்ள வேண்டிய நிலைமை.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போதுதான் ஒருநாள் அவளிடம் ‘பனை நுங்கு’ வாங்க வந்தான் வேலன். ஒரு நாள் வந்தவன் மறு நாளும் வந்தான். அடிக்கடி வந்தான். அவன் வந்து ‘பனை நுங்கு’ வாங்கா விட்டால் அவளுக்கும் அன்று வியாபாரம் நடந்ததாகவே தெரியாது. வியாபாரத்தில் பெரிய நஷ்டம் வந்தது போலவே முகத்தை வைத்துக் கொண்டு வீட்டுக்குத் திரும்புவாள். ஒரு நாள் அவன் அவளைக் கேட்டான்,",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்த வியாபாரத்தில் என்ன லாபம் வரும்?” என்று.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் விவரம் சொன்னாள். “நாளை முதல் நானே பனங் குலைகள் கொண்டு வருகிறேன். வெட்டி வியாபாரம் செய். நிறைய லாபம் கிடைக்கும்” என்றான். “அதெல்லாம் வேண்டாம்” என்று தலையசைத்து விட்டு, வீட்டுக்குத் திரும்பிச் சென்றாள் கமலம்.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுநாள், நாலைந்து பனங் குலைகளைத் தூக்கிக் கொண்டு வேலன் வந்தான். “எது இவைகள்?” என்று கமலம் கேட்டாள். “நானே பனை மரத்தில் ஏறி வெட்டிக் கொண்டு வந்தேன்” என்று பூரிப்போடு பதில் கூறி அவளது முகத்தையே நோக்கிக்கொண்டு நின்றான். “உங்களுக்குச் சொந்தமான மரமா?” என்று அவள் கேட்டாள். “புறம்போக்கிலே இருக்கிற மரம் யாருக்குச் சொந்தம்? எல்லோருக்கும் சொந்தந்தானே!” என்று அவன் கூறி முடிப்பதற்குள், “அடேய்! திருட்டுப்பயலே! யாருடைய மரத்திலேடா திருடுகிறாய்? என்ன யாருன்னு நினைச்சே?” என்றவாறு ஒரு முரட்டு மனிதன் வேலனின் தலையில் பெரிய தடியொன்றால் தாக்கினான்.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேலன் சுருண்டு வீழ்ந்தான். கமலம் வேலனைக் கவனிக்க ஓடினாள். முரடன் அங்கு கிடந்த பனங்குலைகளையெல்லாம் தூக்கிக் கொண்டு, “குட்டி ஆசைக்குப் பயல் பனங்காய் திருடுகிறு? அதுவும் என்கிட்ட?” என்று கேலி செய்தவாறு அதை விட்டு நடந்தான். நடந்தவன் நின்றான். கமலத்தின் பரபரப்பைக் கவனித்தான். அங்குமிங்கும் ஓடி அவள் வேலனின் முகத்தில் தண்ணீர் தெளிப்பதையும், முன்தானையால் விசிறுவதையும் கண்டான். முரடன் முகத்தில் சபலக் குறி தல காட்டியது. கமலத்திடம் திரும்பி வந்தான்.",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தா குட்டி! பனங்காய் வேணும்னு, என்னைக் கேட்டா தரமாட்டேன்? இந்த மாதிரிப் பயலுகள் நம்பலாமா? இந்தா எல்லாத்தியும் வச்சுக்க! உனக்கு ஏன் இள வயசிலே இந்த வியாபாரம்! என்னைக் கேட்டிருந்தா நம்ப நாடகக் கம்பெனியிலே ஆயிரம் ஸ்திரீ பார்ட்டா ஆக்கியிருப்பேனே...” என்றவாறு முரடன் பல் இளித்தான்.",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரிதான் போய்யா, வேலையைப் பார்த்துகிட்டு!” என்றவாறு வேலனைக் கவனிப்பதில் முழுமூச்சாக ஈடுபட்டாள் கமலம். முரடன் தலையை அசைத்தவாறு ஏதோ முடிவுடன் அதை விட்டகன்றான். முருகானந்த மோகனகான சபாவின் உரிமையாளர் மோக வினாயகம்பிள்ளைதான் அந்த முரட்டு மனிதன் என்பது கமலத்துக்குத் தெரியாமல் இல்லை. அவர் ஊர் சொத்தைத் திருடி வாயில் போட்டுக் கொள்ளும் பெருச்சாளி என்பதும் அவளுக்குத் தெரியும். புறம்போக்கு நிலத்தில் உள்ள பனை மரங்களுக்கு அவரே பாத்தியதை கொண்டாடி வருகிறார் என்பது மட்டுமே அவளுக்குத் தெரியும். விரைவில் கமலத்துக்கும் தானே பாத்தியதை கொண்டாடப் போகிறார் என்பது யாருக்கும் தெரியாது.",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடிபட்டு வீழ்ந்த வேலனுக்கு மயக்கம் தெளிந்ததும் அவனைத் தன் குடிசைக்கு அழைத்துச் சென்றாள் கமலம். தேவையான சிகிச்சைகளுக்குப் பிறகு, அவன் அவளுக்கு நன்றி தெரிவித்துவிட்டுப் புறப்படும்போது கமலம் விடையளிக்க மறுத்து விட்டாள். அவனும் காரணம் புரிந்து கொண்டான். இருவரும் தங்கள் பிறப்பு வளர்ப்புகளைப் பற்றிப் பேசிக்கொண்டார்கள். இருவருமே அனாதைகளாய்ச் சந்தித்தார்கள். இருவரையும் விட்டு அனாதைப் பட்டம் ஓடிவிட்டது. ஆரத் தழுவினர்; ஆனந்தங் கொண்டனர். அன்றைய இரவு இன்ப கீதம் பாடி, மெல்ல மெல்ல",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நகர்ந்தது. அவர்கள் தடுத்தும் கேளாமல் சேவல் கூவிற்று. சேவல் கூவா விட்டாலும் நான் உதித்தே தீருவேன் என்றது கதிர். வாழ்விலே புதிய களிப்பு! உற்சாகம்! தனியொரு பெண்ணின் பெரு மூச்சுக்களை எதிரொலித்துக் கொண்டிருந்த அந்தக் குடிசை, காதல் பாடல்கள் எதிரொலித்து மகிழ்ந்தது.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நாளிரவு—பல நாட்களுக்குப் பிறகு! நடுநிசி. காதலர் அயர்ந்து தூங்கிக் கொண்டிருந்தனர். கதவு தட்டப்பட்டது. கமலம் சென்று திறந்தாள். வாட்ட சாட்டமாக வளர்ந்து, ஆணில் வயதேறிக் காணப்படும் வெண்தாடிக் கிழவன் ஒருவன் எதிரே நின்றான்.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யார் நீங்கள்?” கமலம் கேட்டாள். அதற்குள் வேலனும் எழுந்து வந்தான்.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னை யாரென்று கேட்கிறாய்? மகளே! கமலம்! என்னைத் தெரியவில்லையா உனக்கு? தெரியாதுதான்; இந்தப் பாவியைத் தெரியாதுதான்! வயிறும் வாயுமாக உன் தாய் மீனாட்சியைத் தனியே விட்டுவிட்டு ஓடிய இந்தப் படுபாதகன் உனக்குத் தெரியாதுதான்! அம்மா மகளே! நான்தானம்மா உன் அப்பன் அய்யாச்சாமி!”",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ! அப்பா! என் அப்பா!....” கமலம் கதறினாள். கிழவரைக் கட்டிக்கொண்டு தேம்பித் தேம்பி அழுதாள்.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதுதான் உன் அண்ணன் வேலனு?—வேலா என் ஆசை மகனே! அருமந்தச் செல்வனே! உன்னை இரண்டு வயதிலேயே நானும் என் மீனாட்சியும் இழந்துவிட்டு வடித்த கண்ணீர் கொஞ்சமா? அப்பா தம்பி! இதுவரை எப்படியடா வாழ்ந்தாய்! உன் தங்கை கமலத்தை எப்போதடா பார்த்தாய்? தலைமறைவாகப் போலீசுக்குப் பயந்து திரிந்து கொண்டிருந்த நான் நேற்றுத் தான் வந்து, நீ வளர்ந்த அனாதை விடுதியிலே விசாரித்தேன். அவர்கள் விவரம் எல்லாம் சொன்னார்கள். உன்னைப் பறி கொடுத்ததாக நினைத்துக்கொண்டிருந்தேன். பிறகு என் நண்பன் ஒருவன் சொன்னான்; நீ அனாதை விடுதியில் வளர்வதாக! அங்கு போனேன். நீ உயிரோடு இருப்பதையும், வளமாக வளர்ந்திருப்பதையும் அறிந்து கொண்டேன். குழந்தைப் பருவத்தில் உன்னை யாரடா திருடியது? ஞாபகமிருக்கிறதா மகனே! திருடியவர்கள் என் விரோதிகளாம். அவர்கள் போலீசுக்குப் பயந்து உன்னை நடுப்பாதையிலே போட்டுவிட்டுப் போய்விட்டார்களாம். அதன்",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பிறகே, அனாதை இல்லம் உன்னை எடுத்து வளர்த்ததாம். ஆகா... என் மகன் எவ்வளவு பெரியவனாகி விட்டான்—தம்பி! நீ எப்படி உன் தங்கையைத்:தேடிப் பிடித்து இங்கு வந்தாய்?”",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிழவர் பேசிக்கொண்டேயிருந்தார்; பூரிப்பு தாங்காமல்!—வேலன், “அய்யோ! அப்பா!” என்று கத்தினான். அவ்வளவுதான், எங்கேயோ ஓட ஆரம்பித்தான். ஓடினான்; ஓடினான்—இருளில் ஓடி மறைந்தான். கமலம் பிரக்ஞையற்றுக் கீழே விழுந்தாள். “கமலம்! கமலம்!!” என்று கிழவர் கூப்பிட்டார். அவளைத் தூக்கித் தன் மடியில் வைத்துக் கொண்டார். இறுக அணைத்துக் கொண்டார். அவள் கன்னங்களில் மாறிமாறி முத்தமிட்டார். இதழ்களை இதழ்களால் பற்றியிழுத்தார். ஏதோ ஓர் உணர்வு கிழவருக்கு! கமலத்தைக் கீழே படுக்க வைத்தார். கால்களைத் தொட்டுப் பார்த்தார். ஜில்லிட்டு விட்டது. கமலம், போய் விட்டாள். கிழவர், விரக்தியுடன் எழுந்தார். அவர் மனம் பேசிற்று.",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சே! நினைத்தது ஒன்று, நடந்தது ஒன்று! அண்ணன் தங்கையென்று அபாண்டம் சுமத்தி இருவரையும் பிரித்து விட்டால் அவன் ஓடிவிடுவான்—இவளைக் தட்டிக் கொண்டு போகலாம் எனத்திட்டமிட்டேன். வேஷம் பலித்தது; ஆனால் வெள்ளாட்டுக் குட்டி கிட்டவில்லையே!”",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிழவர் பெருமூச்சுடன் தாடி மீசைகளைக் களைந்தார். முரட்டு மோக வினாயகம் பிள்ளையாக அந்தக் குடிசையை விட்டு வெளியேறினார். அவர் உரிமை கொண்டாடும் புறம் போக்கு நிலத்தின் வழியே வீடு திரும்பினார். ஒரு மரத்திலிருந்து ஏதோ தொப்பென்று வீழ்ந்தது. பனங்குலையை யாரோ வெட்டுகிறார்கள் என்று, “யாரடா திருட்டுப்பயல்?” என்று கர்ச்சித்தவாறு மரத்தடிக்குப் போனார். மரத்திலிருந்து விழுந்தது; பனங்குலையல்ல!—வீழ்ந்தவன் வேலன்! தீக்குச்சியைக் கிழித்து உற்றுப் பார்த்தார். தலை சிதறிவிட்டது, குலை சிதறுவதுபோல! குடும்பத்தைச் சிதற அடித்த அந்தக் குணாளர் எந்தவிதச் சலனமும் உள்ளத்தில் மோதாமல் சாதாரணமாக வீட்டுக்குப்போய் நிம்மதியாகத் தூங்க ஆரம்பித்தார்.",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படியும் பல பிறவிகள் உண்டு உலகத்தில்!",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Panangulai",
+    "sourceScan": 126,
+    "printedPage": 117
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Are your father and mother alive?”",
+      "sourceScan": 126,
+      "printedPage": 117,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No. Mother died! I don’t know whether Father is alive or not. They say that while I was still in my mother’s womb, a baseless murder charge was laid on Father and he ran away somewhere to a land beyond sight. They say there was a boy older than me. He too disappeared when he was two. Thinking of the thunderbolt that fell on our family happiness, my mother cried and cried until she too closed her eyes! Now I am an orphan!”",
+      "sourceScan": 126,
+      "printedPage": 117,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don’t say ‘orphan’! That was true only until yesterday! From today there is no place for that word, Kamalam! More or less, my life and yours are alike! At least you grew in a mother’s embrace. You saw your mother’s face, received the love she poured out, and grew up nourished by it. I do not even know what the comfort of lying in a mother’s lap or on a father’s shoulder is like. I do not even remember having seen their faces. The harsh hands of an orphanage raised me and made me a man. Today two orphans have come together. We have driven away the very label ‘orphan’ and left it without work!”—saying this, he embraced Kamalam.",
+      "sourceScan": 126,
+      "printedPage": 117,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Tears poured from her eyes. The happiness they had both awaited for so many days was theirs at that moment. According to season and circumstance, Kamalam’s mother had kept her daughter alive by running an idli stall, doing petty-market trade, selling tender coconuts, panai nungu and many such things. After her mother died, Kamalam had to take up the same trades. Since it was the season for ‘panai nungu’, Kamalam was engaged in that business. She had to buy palmyra fruit wholesale, sell it, and wash her stomach with the small profit that came from it.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was then that one day Velan came to buy ‘panai nungu’ from her. The man who came one day came again the next. He came often. If he did not come and buy ‘panai nungu’, even she felt that no business had taken place that day. She would return home with a face as though she had suffered a great loss in trade. One day he asked her,",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What profit can you make in this business?”",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She explained the details. “From tomorrow I myself will bring panangulai. Cut them and sell them. You will make plenty of profit,” he said. “No, I don’t want all that,” Kamalam said, shaking her head, and went home.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next day Velan came carrying four or five panangulai. “What are these?” Kamalam asked. “I climbed the palmyra tree myself, cut them and brought them,” he replied proudly, standing there looking only at her face. “Is it your own tree?” she asked. “Who owns a tree that stands on poramboke land? Doesn’t it belong to everyone?” Before he could finish, a rough man shouted, “Hey, thieving fellow! Whose tree are you stealing from? Who do you think I am?” and struck Velan on the head with a large staff.",
+      "sourceScan": 127,
+      "printedPage": 118,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Velan crumpled and fell. Kamalam ran to attend to him. The brute gathered up all the panangulai lying there and walked away, mocking him: “The little fellow steals palmyra fruit for a girl he fancies? And from me?” The man who had started walking stopped. He watched Kamalam’s agitation. He saw her running here and there, sprinkling water on Velan’s face and fanning him with the end of her sari. A mark of lust showed itself on the brute’s face. He came back to Kamalam.",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here, little one! If you wanted palmyra fruit, wouldn’t I give it if you asked me? Can fellows like this be trusted? Here, keep all of it! Why are you doing this business at such a young age? If you had asked me, I would have made you a grand stree-part performer in our drama company...” The brute bared his teeth.",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, go mind your own work!” Kamalam said, devoting herself wholly to tending Velan. The brute shook his head and left with some decision in mind. Kamalam knew very well that the rough man was Moga Vinayagampillai, owner of the Murugananda Mohanagana Sabha. She also knew that he was a great bandicoot who swallowed the town’s property. She knew only that he had been claiming rights over the palmyra trees on poramboke land. No one knew that very soon he intended to claim rights over Kamalam herself.",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When Velan, who had fallen from the blow, regained consciousness, Kamalam took him to her hut. After the necessary treatment, when he thanked her and tried to leave, Kamalam refused to give him leave. He understood the reason. They spoke about their births and how they had been raised. The two had met as orphans. The title ‘orphan’ fled from both of them. They embraced fully and rejoiced. That night sang a song of pleasure and moved slowly, slowly—",
+      "sourceScan": 128,
+      "printedPage": 119,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "onward. Though they tried to stop it, the cock crowed. Even if the cock did not crow, the sun said, “I will rise anyway.” A new delight in life! Excitement! The hut that had echoed the sighs of a solitary woman now rejoiced, echoing songs of love.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One night—many days later! Midnight. The lovers were sleeping in exhaustion. Someone knocked at the door. Kamalam went and opened it. Before her stood a strongly built, white-bearded old man who looked well advanced in years.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Who are you?” Kamalam asked. By then Velan too had risen and come out.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You ask who I am? Daughter! Kamalam! Don’t you know me? Of course you do not; you would not know this sinner! You would not know the wretch who ran away leaving your mother Meenakshi alone, burdened and with child! Amma, daughter! I am your father, Ayyasami!”",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! Father! My father!....” Kamalam cried out. She clung to the old man and sobbed.",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is this your elder brother Velan?—Velan, my beloved son! My precious treasure! Do you know how many tears Meenakshi and I shed after losing you when you were only two? Appa, thambi! How have you lived all these years! When did you find your younger sister Kamalam? I have been moving in hiding, afraid of the police. Only yesterday I came and made enquiries at the orphanage where you were raised. They told me everything. I had thought we had lost you forever. Later a friend of mine told me that you were growing up in an orphanage! I went there. I learned that you were alive and had grown well. Who stole you when you were a child? Do you remember, son! They say the people who took you were my enemies. Afraid of the police, they apparently left you in the middle of the road and went away. Only after that—",
+      "sourceScan": 129,
+      "printedPage": 120,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "did the orphanage take you in and raise you. Ah...how big my son has grown—thambi! How did you seek:out your sister and come here?”",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The old man kept talking, unable to contain his joy!—Velan cried, “Ayyo! Father!” That was all. He began running somewhere. He ran; he ran—ran into the darkness and disappeared. Kamalam fell unconscious. “Kamalam! Kamalam!!” the old man called. He lifted her and placed her on his lap. He held her tightly. He kissed her cheeks again and again. He seized her lips with his own. Some feeling came over the old man! He laid Kamalam down. He touched her feet. They had gone cold. Kamalam was gone. The old man rose in frustration. His mind spoke.",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Che! I planned one thing and another happened! I thought that if I falsely declared them brother and sister and separated them, he would run away—and I could carry her off. The disguise worked; but the little she-goat slipped away!”",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With a long sigh the old man removed his beard and moustache. As the rough Moga Vinayagam Pillai, he left the hut. He went home through the poramboke land over which he claimed rights. Something fell from a tree with a thud. Thinking someone was cutting down a panangulai, he roared, “Who is that thieving fellow?” and went to the foot of the tree. What had fallen from the tree was not a panangulai!—it was Velan! He struck a match and looked closely. The head was shattered, like a cluster broken apart! That noble fellow who had smashed a family to pieces went home in an ordinary way, without the slightest movement in his heart, and began to sleep peacefully.",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There are many such births in this world!",
+      "sourceScan": 130,
+      "printedPage": 121,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  126,
+  127,
+  128,
+  129,
+  130
+ ]
+}

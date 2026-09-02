@@ -1,0 +1,746 @@
+{
+ "workId": "sabalam",
+ "slug": "sabalam",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/sabalam",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சபலம்",
+  "en": "Sabalam"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 3,
+  "printedPages": {
+   "first": 15,
+   "last": 21
+  },
+  "sourceScans": {
+   "first": 24,
+   "last": 30
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சபலம்",
+    "sourceScan": 24,
+    "printedPage": 15
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காற்றைக் கிழித்துக்கொண்டு ‘இந்தோ சிலோன் எக்ஸ்பிரஸ்’ திருச்சி நோக்கிப் பறந்து கொண்டிருந்தது. சென்னையில் இரவு 8 மணிக்கு வண்டியில் ஏறியவர்கள் அப்போதும், குளிரோடும் போராடிக் கொண்டு முதுகை வளைத்துக் கொண்டே அமர்ந்திருந்தனர். சென்னை ரயில் நிலையத்தில் இடம் வாடகைக்கு விடும் பொடிப்பயல்கள் பலருண்டு. அவர்கள் தங்கள் வாழ்க்கையை இப்படியே நடத்திப் பழகிக் கொள்ளுகிறார்கள்.",
+      "sourceScan": 24,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வண்டியில் ஏறியோ—அல்லது எழும்பூர் ரயில் மேடையைச் சுற்றிக்கொண்டோ இடம் அகப்படுமா என்று தவித்துக் கொண்டிருப்பவர்களிடம், கதைகளில் பகவான் ‘பிரத்யட்சமாவது போல’ ஒரு பொடியன் வந்து நிற்பான். “சாமி, இங்கே வாங்க நல்ல இடம்” என்பான். அவன் கூடச் சென்றால் போதும்; வண்டிக்குள் அருமையான இடத்தைக் காட்டிப் பலகையில் அவன் விரித்திருந்த ‘பட்டு மெத்தை’யை எடுத்து முண்டாசு கட்டிக் கொள்வான். அந்த இடத்தில் தூங்குவதற்கு—டிக்கட் பணம் போக—அவனுக்கு ஒரு நாலணா வாடகை. இப்படிப் பல பையன்கள் வாடகை வியாபாரம் நடத்துவார்கள். அவர்கள் கண்ணில் அகப்பட்டுக் கருணைக்குப் பாத்திரமான பிரயாணிகள் கண்ணயர்ந்து தூங்கிக் கொண்டிருந்தனர். அந்தப் பாக்கியம் கிடைக்காத பலர் கண்ணுக்குள் நுழைந்து இமைகளேப் பிடித்திழுத்து மூடும் உறக்கத்தை எதிர்க்கத் துணிவற்று ஒருவரோ டொருவர் மோதிக் கொண்டிருந்தனர். கழுத்தில் நிற்கச் சக்தி",
+      "sourceScan": 24,
+      "printedPage": 15,
+      "joinToNext": "space"
+     },
+     {
+      "text": "யிழந்து தொங்கும் தலையை முழங்காலிலோ—பக்கத்திலிருப்பவர் தோள் பட்டையிலோ—அல்லது ஜன்னல் கட்டையிலோ முட்டுக் கொடுத்துக்கொண்டு அமர்ந்திருந்த காட்சி பரிதாபமாயிருந்தது.",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தக் ‘கும்பகர்ண லோக’த்தில் கொட்டை கொட்டையாக விழித்துக் கொண்டிருந்தவர்களும் இல்லாமலில்லை. நூற்றுக்கு ஒருவராவது இருக்கத்தான் செய்தனர். வண்டியில் ஆறாவது பெட்டியில் ஜன்னல் வழியாகக்கூடக் கால்களை வெளியே சிறிது நீட்டிக் கொண்டு கஷ்டப்பட்டுப் பலர் குறட்டை விட்டுக் கொண்டிருந்தனர். நீண்ட ஒரு பலகையின் மூலையில் உட்கார்ந்திருந்த ஒருவன், அவ்வப்போது பற்றிய அக்கறைகள் எதுவுமில்லாமல் ஏதோ ஓர் உணர்ச்சியில் அங்குமிங்கும் பார்ப்பதும், பலகைக்குக் கீழே கவனிப்பதுமாயிருந்தான். அவனுக்கு எதிரில் மற்றொரு பலகையில் மற்றொரு வாலிபன், கண்களை மூடிக் கொண்டு உட்கார்ந்திருந்தான். அவன் விழிகள் மூடி இருந்தனவே தவிர—அவன் தூங்கவில்லை என்பது தெளிவாயிற்று. விழிகளும் முக்கால் பாகந்தான் அடைபட்டிருந்தன. கால்பாகத்தின் வழியாக அவன் பார்வை எதிரில் உட்கார்ந்திருக்கும் வாலிபனையும் பலகைக்குக் கீழே படுத்திருக்கும் ஒரு பெண்ணையும் மாறி மாறிப் பார்த்துக் கொண்டிருந்தன.",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவனும் சந்திராவும் தங்கள் குழந்தையுடன் சென்னையில் தான் ஏறினார்கள். அவர்கள் ஏறி உட்கார்ந்த சிறிது நேரத்துக்கெல்லாம் எதிர்ப் பக்கத்தில் அந்தத் தூங்காத வாலிபன் வந்து உட்கார்ந்தான். வந்தவன் எதிர்பாராதவிதமாக அங்கு வந்து அமரவில்லை. எல்லாப் பெட்டிகளையும் ஒரு முறைக்கு இரண்டு முறையாகக் கவனித்துவிட்டுக் கடைசியில் இங்கு வந்து ஏறிக் கொண்டான்.",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சந்திராவின் கையிலிருந்த குழந்தை அருகிலிருந்த ஒரு கிழவியின் நரைமயிரைத் தன் தளிர்க்கரங்களால் பிடித்திழுக்கவே—கிழவி பொக்கைவாய்ச் சிரிப்பை உதிர்த்துக் கொண்டே அந்த மழலையிடமிருந்து தலையை விடுவித்துக் கொண்டாள். இதோடு கிழவி சும்மாயிருக்கவில்லை. கிழவிகளின் குணமே—நல்லதோ கெட்டதோ ஏதாவது பேசிக்கொண்டிருக்க வேண்டுமல்லவா?......அதுவும் குழந்தையென்றால் கேட்க வேண்டுமா? “என்னடி கண்ணு! உன் பேரு என்ன?” என்று கிழவி கொஞ்சினாள். “மூர்த்தி” என்று கணீரென்று உச்சரித்தது",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "space"
+     },
+     {
+      "text": "குழந்தை. “உங்க அப்பா பேரு?” என்றாள் கிழவி. “எங்கப்பா பேரு குமரேஸ். உன் பேரு என்ன?” என்று குழந்தை கேட்டவுடன்—கிழவிக்கு ஆனந்தம் தாங்கவில்லை. குமரேசும்—சந்திராவும் ஒருவரையொருவர் பார்த்துச் சிரித்துக்கொண்டார்கள். அப்போது எதிர்ப் பலகையிலிருந்தும் ஒரு சிரிப்பு வெடித்தது. அதைச் சந்திரா கவனித்தாள். சிரித்தவனும் சிரிப்பினூடே, சந்திராவைத்தான் உற்றுப் பார்த்தான்.",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவனைப் பார்த்த சந்திரா திடுக்கிட்டு அப்படியே ஸ்தம்பித்து விட்டாள். ஆனாலும் திடப்படுத்திக்கொண்டு குழந்தையின் விளையாட்டைக் கவனித்தாள். இடையிடையே அவள் நீலக் குறு விழிகள் மட்டும் எதிர்ப்பக்கத்திலுள்ள அந்த வாலிபனையே அடிக்கடி விழுங்கிக்கொண்டிருந்தன. அந்த வாலிபன் நல்ல அழகன். விசாலமான கண்கள்; அரும்பு மீசைகள்; அழகை அதிகப்படுத்த பளபளப்பான பட்டுச்சட்டை; அவனது பெரிய கண்கள் சந்திராவைப் பார்க்கும்போதெல்லாம் போதையேறிக் காணப்பட்டன. சந்திராவும் தனக்குப் பக்கத்திலேயே கணவன் இருப்பதையும் மறந்தவள்போல, அவனை அடிக்கடி பார்க்கும் வேலையில் ஈடுபட்டிருந்தாள். இதைக் குமரேசும் ஜாடையாகப் புரிந்துகொண்டான். வண்டி ஓடிக்கொண்டிருந்தது. சந்திரா தன் கணவனோடு ஏதாவது பேசுவதும், குழந்தைக்கு விளையாட்டுக் காட்டுவதும், அதே நேரத்தில் எதிரே உள்ளவனைக் காணுவதுமாயிருந்தாள். குமரேசுக்கு ஏதாவது சொல்லிவிட வேண்டுமென்று மனம் குமுறியது. தன் மனைவி—தனக்கருகில் உட்கார்ந்துகொண்டே இன்னொருவனின் அழகை ரசிப்பதென்றால்....இதை அவனால் நினைக்கவே முடியவில்லை.",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகுக்காகத்தான் சந்திராவை அவன் மணம்புரிந்தான். அவள் வீட்டுக்கு வந்தபிறகு அறிவும் நிரம்பியவள் என்பது கண்டு மகிழ்ச்சிகொண்டான். குதூகலமாக ஓடிக்கொண்டிருந்த அவர்களின் குடும்ப வாழ்க்கைக்கு அந்த ரயில் பிரயாணம் முட்டுக் கட்டையாகத்தான் வாய்த்தது. இவன் நெஞ்சிலே இந்தப் போராட்டம்—ஆனால் சந்திராவோ எதிர்ப் பலகைக்கு வீசும் கண்களை நிறுத்தியபாடில்லை. குமரேஸ் கொந்தளித்தான். முழுதும் கவனித்து ஒரு முடிவு கட்டிவிட வேண்டுமென்று தீர்மானம்—அவனை அமைதிப்படுத்தியது.",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குழந்தை நன்றாகத் தூங்கிவிட்டது. வண்டியும் விழுப்புரத்தை நெருங்கிக் கொண்டிருந்தது. அந்தப் பெட்டியில்",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "space"
+     },
+     {
+      "text": "இருந்தவர்கள் தூக்க மயக்கத்தில் தள்ளாடிக் கொண்டிருந்தார்கள்.",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மூர்த்திக்கு ரயிலில் கிடைத்த புதுப் பாட்டியின் வாயிலிருந்து ‘புஸ் புஸ்’ என்று மூச்சு வந்துகொண்டிருந்தது. சந்திரா, குழந்தையைக் கீழே போட்டுத் தூங்க வைப்பதற்காக முயன்றாள். குமரேசின் தோளிலிருந்த துண்டை எடுத்துப் பலகைக்குக் கீழே விரித்துத் தானும் கீழேயே படுத்துக்கொண்டாள். குழந்தையையும் பக்கத்தில் படுக்கவைத்துக்கொண்டாள். அவள் படுக்கும் போதே குமரேசைப் பார்த்து வழக்கமான புன்சிரிப்பைக் கொட்டிவிட்டுச் சாய்ந்தாள். ஆனால் குமரேஸ் பதிலுக்குச் சிரிக்கவில்லை. அவன் நெஞ்சு குமுறுவது அவளுக்கு எப்படித் தெரியும்?",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எதிரேயிருந்தவனுக்கு இப்போது தலையைக் குனிய வேண்டிய வேலை ஏற்பட்டது. கண்களை மூடிக்கொண்டு தூங்க முயலும் சந்திராவின் முகத்தில் அவன் எந்தத் தனியழகைக் கண்டானோ தெரியவில்லை. ஒரே ரசனைதான்! அவனுக்கு இருப்புக்கொள்ளவில்லை. வயிறு காய்ந்து வாடுபவனுக்கு எதிரே வட்டில் நிறையப் பொங்கலே வைத்தால்....? அந்த நிலைபெற்றான். அவன் உணர்வு ஒரு நிலையில் இல்லை என்பது அவன் அசைவுகளிலேயே பளிச் பளிச்சென மின்னிக்கொண்டிருந்தது. சந்திராவின் தனிப்பார்வை வேறு அவனைப் பம்பரமாக ஆட்டிவைத்திருந்தது. அவனுக்கு அன்று ஒரு நல்ல வாய்ப்புதான். எத்தனையோ பெட்டிகளைத் துருவிப்பார்த்து இதுபோன்ற ஒரு நல்ல இடம் கிடைக்காமல் கடைசியில்—நடசத்திரத்துக்குக் குறிவைத்தபோது சந்திரனே விழுந்து விட்டதுபோல—கிடைத்த இடமல்லவா இந்த இடம்? தூங்கும் சந்திராவை இவன், ரசித்தான்—ரசித்தான்—அப்படி ரசித்தான்!",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த ரசமான கட்டத்தில்தான், குமரேஸ் முக்கால் கண்ணை மூடிக்கொண்டு நடப்பவைகளைப் பார்த்துக்கொண்டிருந்தான். சந்திரா எப்படியும் கையுங்களவுமாகப் பிடிபட்டுவிடுவாள் என்று துடித்துக்கொண்டிருந்தான். எதிரே இருந்தவன் குமரேசை அடிக்கடி பார்ப்பதும் தன் கால்களால் அவள் கையை மெதுவாகத் தீண்டுவதும் மீண்டும் சுற்றுமுற்றும் பார்த்துச் சும்மாயிருப்பதுமே வேலையாயிருந்தான்.",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வண்டி நெல்லிக்குப்பத்தைத் தாண்டிவிட்டது. சந்திரா அயர்ந்து தூங்கிக்கொண்டிருந்தாள். அவள் பொற்கரம் குழந்தை மூர்த்தியை அணைத்தபடி இருந்தது. அந்த வாலிபன் ஏதோ ஒரு புதுத் துணிவுடன் பெருமூச்சுவிட்டான். குமரேசையும் கூர்ந்து நோக்கிக்கொண்டான். குமரேஸ் தன் துப்பறியும் வேலைக்குத் தயாராகத்—தூக்கத்தால் துவண்டிருப்பவன்போல இருந்தான். வாலிபனின் கைகள் சந்திராவின் கன்னத்தை வருடின. சந்திரா விழித்துக்கொண்டாள். வாலிபன், நடுங்கிய படிக் கைகளை எடுத்துக்கொண்டான். சந்திரா விழித்த வேகத்தில் குழந்தையும் சிணுங்கியது. சந்திரா மேலே நிமிர்ந்து தன் கணவனைப் பார்த்தாள். அவன் தூங்கி வழிந்துகொண்டிருந்தான். அவளோ ஒரு முடிவுகட்டுவதற்காக இமைகளின் இடுக்கில் ஒளிந்துகொண்டிருந்த அந்தப் பயங்கர விழிகளை அவள் பார்க்கவில்லை. கணவனைப் பார்த்த கண்களோடு அந்த வாலிபனையும் பார்த்தாள். அவன் உமிழ்நீர் விழுங்கினான். சிணுங்கிடும் குழந்தைக்கு ஒரு முத்தம் கொடுத்துவிட்டு அதைத் தட்டிக் கொடுத்தபடித் தூங்கிவிட்டாள்.",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எத்தனையோ முறை, அழுதிடும் குழந்தைக்கு அவள் முத்தமிட்டுப் பிறகு தூங்கவைப்பதைக் குமரேஸ் பார்த்திருந்தாலும் கூட, இந்த முத்தம் அவன் நெருப்பில் தள்ளி எண்ணெயை ஊற்றுவதாகயிருந்தது.",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிறிது நேரம் கழிந்தது. வாலிபனின் கரங்கள் மீண்டும் சந்திராவின் கன்னத்தைத் தொட்டன. சந்திரா விழித்தாள். விழித்தவள் குழந்தையைத் தட்டியபடி மறுபடியும் கண்களை மூடிக்கொண்டாள். குமரேசால் அங்கு உட்கார முடியாத நிலைமை ஏற்பட்டுவிட்டது. எரிமலையாகிவிட்டான்! பூகம்பமானது அவன் உள்ளம்! பயங்கரமான ஒரு முடிவுடன் எழுந்தான். குழந்தையைக் கையில் தூக்கினான்; குழந்தை அழுதது. சந்திரா விழித்துப் பார்த்துத் தன் கணவன் கையில் குழந்தையைக் கண்டு—தூங்கத் துவங்கினாள். குழந்தையுடன் குமரேஸ் ஐந்தாறு பலகைகளைத் தாண்டி அப்பால் போனான். வாலிபனுக்கு மகிழ்ச்சி பெருக்கெடுத்தது.",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ரயில் வண்டி புயல் வேகத்தில் பெருமூச்சு விட்டு ஓடிக் கொண்டிருந்தது. குமரேஸ் சுற்றுமுற்றும் பார்த்தான்; கையிலிருந்த குழந்தையை அந்த அந்தகாரமான இருளில் ஜன்னல்",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வழியே வீசியெறிந்தான். அந்தப் பசலை எந்தக் காட்டில் விழுந்ததோ? எந்தப் பாறையில் விழுந்து சுக்கு நூறானதோ?",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குமரேசின் மனம் சிறிது சாந்திபெற்றது. ‘ஒரு விபச்சாரியின் தொடர்பு இன்றோடு ஒழிந்தது. என் பெயரைச் சொல்லி வருங்காலத்தை வீணாக்காமலிருக்கக் குழந்தையும் ஒழிந்தது. இனிமேல் நான் தனி ஆள். இந்தத் தாசி அவனோடு போகட்டும்!’ என்று அவன் மனம் பேசிற்று. வண்டி நிற்கும் ஸ்டேஷனை எதிர்பார்த்துக் கொண்டிருந்தான்.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்குள் அவன் பார்வை, முன் உட்கார்ந்திருந்த இடத்தில் பாய்ந்தது. வாலிபனின் கரங்கள் இப்போது நடுக்கமின்றிச் சந்திராவின் கன்னத்திடம் சென்றன. அடக்க முடியாத ஆவலுடன் அவன் கன்னக் கதுப்பை விரல்களால் அழுத்தினான். சந்திரா திடுக்கிட்டு விழித்தாள். அவன் இப்போது சிரித்தான். “ஈ!” என்ற பெரிய சப்தத்துடன் சந்திரா துள்ளிக் கிளம்பினாள். வாலிபனின் கன்னத்தில் அவள் கரங்கள் மாறி மாறி விளையாடின. எல்லோரும் விழித்துக் கொண்டார்கள். குமரேசும் அருகே வந்து விட்டான். அவனுக்கு மயக்கம் வருவது போலிருந்தது. “அத்தான்!” என்று அவனைக் கட்டிக் கொண்டாள் சந்திரா.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆரம்பத்திலிருந்து நீ பார்த்த பார்வை.........” என்னவோ ஆத்திரமாகச் சொல்லப்போனான் குமரேஸ்.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் சிறு வயதில் இறந்துபோன அண்ணன் மாதிரி இருந்தது......பார்த்தேன்...இந்தப் பாவி.........” என்று விம்மி விம்மியழுதாள். பெட்டியிலிருந்தவர்கள் அவனைத் திட்டித் தீர்த்தார்கள்.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடலூர் ஸ்டேஷன் வந்தது. அந்தச் சபலம் பிடித்த மைனர் இறங்கிப் போய்விட்டான். “இதற்காகவே இந்தப் பயல்கள் ரயிலில் ஏறுவது” என்று ஒரு குரல் கிளம்பிற்று.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரென ஏற்பட்ட அதிர்ச்சியில் குழந்தையைக்கூட மறந்திருந்த சந்திரா, “குழந்தை எங்கே அத்தான்?” என்று ஆவலோடு கேட்டாள்.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பக்கத்தில்தான் இருக்கிறது; இங்கேயே இறங்கு” என்றான் குமரேஸ், அவன் முகம் கறுத்துவிட்டது.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏன்?” என்றாள் அவள்.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இறங்கேன்—சொல்லுகிறேன்!” என்று மூட்டை முடிச்சுகளைக் தூக்கிக்கொண்டு புறப்பட்டான் குமரேஸ். அவளும் இறங்கினாள். இறங்கியவுடன் கேட்டாள்—“எங்கே குழந்தை?” என்று.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணீர் வழிந்தோட அவன் சொன்ன பதில்: “இரண்டு மைல்களுக்கு அப்பால் இருக்கிறது” என்பதுதான்.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏ! அவசரக்காரக் குமரேசா!”",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆத்திரக்கார முட்டாளே!”",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்ற ஒலி, நாலா புறமிருந்தும் அவன் காதில் சாட்டை ஒலியாய் ஒலித்தது.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘இந்தோ சிலோன் எக்ஸ்பிரஸ்’ கடலூரிலிருந்து புறப்பட்டது.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Sabalam",
+    "sourceScan": 24,
+    "printedPage": 15
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Cutting through the wind, the ‘Indo Ceylon Express’ was flying toward Tiruchirappalli. Those who had boarded the train in Chennai at eight o'clock that night were still sitting hunched over, fighting the cold. At the Chennai railway station there were many little boys who rented out places to sit or sleep. They had grown accustomed to making their living that way.",
+      "sourceScan": 24,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To those who had boarded the train—or were wandering around the Egmore platform wondering whether they might find a place—a little fellow would appear, like God becoming manifest in a story. “Sir, come here—there's a good place,” he would say. Follow him and that was enough: he would show you a fine place inside the carriage, pick up the ‘silk mattress’ he had spread on the bench, and tie it around his head as a turban. To sleep in that place—apart from the ticket fare—you paid him four annas in rent. Many such boys ran this rental business. Passengers who had fallen into their eyes and become objects of their mercy were sleeping soundly. Many who had not received that blessing, unable to resist the sleep that entered their eyes and tugged at their eyelids to close them, kept bumping against one another. With no strength left in the neck to hold them upright,",
+      "sourceScan": 24,
+      "printedPage": 15,
+      "joinToNext": "space"
+     },
+     {
+      "text": "their hanging heads rested against their knees, the shoulder of the person beside them, or the window frame. It was a pitiable sight.",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even in this ‘world of Kumbhakarna’, there were a few who remained wide awake. At least one in a hundred could be found. In the sixth compartment, many were snoring with difficulty, some even stretching their legs a little out through the windows. At the end of a long bench sat a man who, without concern for anything around him, kept looking this way and that in some strange agitation and glancing under the bench. Opposite him, on another bench, sat another young man with his eyes closed. His eyes were closed, but it was clear that he was not asleep. Even his eyelids were only three-quarters shut. Through the remaining quarter his gaze moved back and forth between the young man sitting opposite and a woman lying under the bench.",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He and Chandira had boarded in Chennai with their child. A short while after they sat down, the sleepless young man came and sat opposite them. He had not happened upon that place by chance. He had inspected every carriage once, then a second time, before finally boarding here.",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The child in Chandira's arms seized the grey hair of an old woman nearby with its tender little hands. The old woman freed her head from the child, scattering a toothless smile. Nor did she stop there. It is the nature of old women, is it not, to keep talking about something—good or bad? And if it is a child, need one even ask? “What is your name, dear?” the old woman cooed. “Moorthi,” the",
+      "sourceScan": 25,
+      "printedPage": 16,
+      "joinToNext": "space"
+     },
+     {
+      "text": "child pronounced in a ringing voice. “What's your father's name?” asked the old woman. “My father's name is Kumares. What's your name?” the child asked. The old woman's delight knew no bounds. Kumares and Chandira looked at each other and smiled. At that moment a laugh burst from the opposite bench too. Chandira noticed it. Even while smiling, the man who had laughed was staring straight at her.",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The moment Chandira saw him, she started and froze. But she steadied herself and turned her attention to the child's play. Yet from time to time her small blue eyes kept swallowing the young man opposite. He was handsome. Wide eyes; a budding moustache; a gleaming silk shirt that added to his looks. Whenever his large eyes looked at Chandira, they seemed intoxicated. Chandira too, as though forgetting that her husband sat right beside her, kept looking at him again and again. Kumares understood this from the signs. The train went on. Chandira talked now and then with her husband, played with the child, and at the same time kept looking at the man opposite. Kumares's heart seethed with the urge to say something. His wife—sitting right beside him—admiring another man's beauty... he could scarcely bear the thought.",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was for her beauty that he had married Chandira. After she came to his home, he had rejoiced to discover that she was also full of intelligence. Their family life had been running along happily; this train journey alone had come like an obstacle in its path. Such was the battle in his heart. But Chandira did not stop casting glances at the opposite bench. Kumares boiled inside. His decision to watch everything to the end and come to a conclusion was what kept him quiet.",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The child had fallen fast asleep. The train was nearing Villupuram. The people in that compartment",
+      "sourceScan": 26,
+      "printedPage": 17,
+      "joinToNext": "space"
+     },
+     {
+      "text": "were swaying in drowsiness.",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "From the mouth of Moorthi's new railway grandmother came a ‘poos, poos’ breathing sound. Chandira tried to put the child down to sleep. She took the towel from Kumares's shoulder, spread it under the bench, and lay down there herself. She placed the child beside her. Even as she lay down, she gave Kumares her usual gentle smile before settling. But Kumares did not smile back. How could she know what was raging in his heart?",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The man opposite now had to lower his head. What special beauty he saw in Chandira's face as she tried to sleep with her eyes closed, no one knew. He simply drank in the sight! He could not sit still. What would happen if a plate heaped with pongal were placed before a man starving with hunger...? That was his state. The fact that his mind had no steadiness flashed plainly in every movement. Chandira's occasional glance had already spun him like a top. That day had brought him a fine opportunity indeed. He had searched carriage after carriage and found nothing like this; and now, as though he had aimed at a star and the moon itself had fallen into his hands, he had found this place. He admired the sleeping Chandira—admired her—admired her without end!",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At this very stage, Kumares was watching everything with three-quarters of his eye closed. He waited feverishly for Chandira to be caught red-handed. The man opposite kept looking at Kumares, gently touching her hand with his foot, then looking all around and sitting still again.",
+      "sourceScan": 27,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The train had passed Nellikuppam. Chandira was sleeping deeply. Her golden arm lay around the child Moorthi. The young man let out a deep breath with some newfound courage. He looked sharply at Kumares too. Ready for his detective work, Kumares pretended to be overcome by sleep. The young man's hands stroked Chandira's cheek. Chandira woke. Trembling, he withdrew his hands. The speed with which Chandira woke made the child whimper too. Chandira raised herself and looked at her husband. He appeared to be sleeping heavily. She did not see the terrible eyes hidden in the narrow slit between his eyelids, waiting to reach a conclusion. With the same eyes that had looked at her husband, she looked at the young man. He swallowed. She kissed the whimpering child, patted it, and went back to sleep.",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kumares had seen her kiss the crying child and put it to sleep countless times before. Yet this kiss was like pouring oil into the fire consuming him.",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A little time passed. The young man's hands touched Chandira's cheek again. Chandira woke. Still patting the child, she closed her eyes once more. Kumares could no longer remain seated there. He had become a volcano! His heart became an earthquake! He rose with a terrible decision. He lifted the child into his arms; the child cried. Chandira woke, saw the child in her husband's arms, and began to drift back to sleep. Carrying the child, Kumares moved five or six benches away. The young man's joy overflowed.",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The train ran on with the speed of a storm, breathing heavily. Kumares looked all around. Into that dense darkness, through the window,",
+      "sourceScan": 28,
+      "printedPage": 19,
+      "joinToNext": "space"
+     },
+     {
+      "text": "he flung the child from his hands. In what forest did that tender little one fall? On what rock did it strike and break into a hundred pieces?",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kumares's mind became a little calmer. ‘My connection with an adulterous woman ends today. So that the child will not carry my name and waste the future, the child too is gone. From now on I am alone. Let this courtesan go with him!’ his mind said. He waited for the next station where the train would stop.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Meanwhile his eyes went back to where he had been sitting. The young man's hands now moved toward Chandira's cheek without trembling. With uncontrollable desire he pressed the fullness of her cheek with his fingers. Chandira woke with a start. Now he smiled. With a loud cry of “Ee!” Chandira sprang up. Her hands played back and forth across the young man's cheeks. Everyone woke. Kumares too came near. He felt as though he would faint. “Aththaan!” Chandira cried, embracing him.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“From the beginning, the way you kept looking...” Kumares began angrily, meaning to say something more.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“He looked like my elder brother who died when I was little... that is why I looked... this sinner...” she sobbed. The people in the compartment cursed the young man thoroughly.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Cuddalore station arrived. That young ‘minor’, seized by sabalam, got down and left. “These fellows board trains only for this,” a voice remarked.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the sudden shock Chandira had even forgotten the child. “Where is the child, aththaan?” she asked anxiously.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It is nearby; get down here,” said Kumares. His face had darkened.",
+      "sourceScan": 29,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Why?” she asked.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Get down—I'll tell you!” Kumares said, lifting the bundles and setting off. She too got down. The moment she did, she asked, “Where is the child?”",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With tears streaming down his face, he answered only this: “It is two miles behind us.”",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! Hasty Kumares!”",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hot-headed fool!”",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Those cries rang in his ears like the crack of whips from all four directions.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The ‘Indo Ceylon Express’ departed from Cuddalore.",
+      "sourceScan": 30,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30
+ ]
+}

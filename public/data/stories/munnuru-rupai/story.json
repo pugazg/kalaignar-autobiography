@@ -1,0 +1,293 @@
+{
+ "workId": "munnuru-rupai",
+ "slug": "munnuru-rupai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/munnuru-rupai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "முந்நூறு ரூபாய்",
+  "en": "Munnuru Rupai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 14,
+  "printedPages": {
+   "first": 103,
+   "last": 105
+  },
+  "sourceScans": {
+   "first": 112,
+   "last": 114
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "முந்நூறு ரூபாய்",
+    "sourceScan": 112,
+    "printedPage": 103
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மாவுக்குக் கண் தெரியாது; அப்பா நடமாட முடியாதவர். ஒரு வருடமாகப் பக்கவாதம்—அக்காள் ஒருத்தி; விதவை. ஒரு குழந்தையை விட்டு விட்டுச் செத்து விட்டாள்.",
+      "sourceScan": 112,
+      "printedPage": 103,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“குடும்பத்தைத் தாங்கும் தூண் நான். வெற்றிலை பாக்குக் கடை யொன்றில் பத்து ரூபாய் சம்பளத்தில் வேலை; அதுவும் போய்விட்டது. வேலையிருந்தபோதே வீட்டில் இரண்டு வேளைப் பட்டினி. இப்போது கேட்க வேண்டுமா? நீங்கள் ஏதாவது வழி செய்யுங்கள்; இல்லாவிட்டால் ஒரு முழக் கயிறுதான் செலவு!” என்று கூறிக் கண்ணீர் வடித்தான் அந்த ஏழை வாலிபன். பெயர் மாத்திரம் லக்ஷ்மிநாராயணன். ஆளே தரித்திர நாராயணனைத் துடித்தான்.",
+      "sourceScan": 112,
+      "printedPage": 103,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் வேலை கேட்ட இடமோ...பெரிய ஆபீஸ் அல்ல; அல்லது மில் முதலாளியிடமுமல்ல; மாதம் நூற்றைம்பது ரூபாய் வருமானமுள்ள ஒரு பள்ளிக்கூட ஆசிரியரிடம். தங்கப்பன் உயர்நிலைப் பள்ளியில் கணித ஆசிரியர். நூற்றைம்பதைக் கொண்டு தன் பெரிய குடும்பத்தையே நடத்தக் கஷ்டப்படும்போது, லக்ஷ்மிநாராயணனைக் காப்பாற்ற எப்படி துணிய முடியும்? தங்கப்பன் இளகிய மனமுடையவர். சீர்திருத்தக்காரர். சீர்திருத்த உலகில் அவரது புனைப்பெயர் மார்க்ஸ். மேடையில் ஏறுகிறார் என்றாலே மக்களிடையே ஒரு புத்துணர்ச்சி ஏற்படும். அவ்வளவு சிறந்த பேச்சாளி. ஏழை, ஈவு, இரக்கம் என்றெல்லாம் பேசுகிறாரே—நாமும் கொஞ்சம் கை நீட்டிப் பார்க்கலாமே என்று எத்தனையோ",
+      "sourceScan": 112,
+      "printedPage": 103,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பேர் தங்கப்பன் யாசகம் கேட்டிருக்கிறார்கள். தன் சம்பளத்தில் அவர்களுக்கென ஒரு பகுதியைச் செலவழித்துக் கொண்டிருந்தார் தங்கப்பன். அவர்களில் ஒருவன்தான் லக்ஷ்மிநாராயணன். அவன் கதை தங்கப்பனால் கேட்க முடியவில்லை—அவ்வளவு வேதனையடைந்தார்.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பத்து நாள் வீட்டிலேயே சாப்பிட்டுக் கொண்டிரு; எங்கேயாவது, வேலை தேடிப் பார்க்கிறேன்” என்று உறுதியளித்தார். எழுபட்டு நாட்களாகி விட்டன. இன்னும் வேலை கிடைத்தபாடில்லை.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நாள் தங்கப்பனுக்கு, அவரிடம் ஆறுமாதத்துக்கு முன் கடன் வாங்கியிருந்த ஒரு தோழரால் அனுப்பப்பட்ட, ரூபாய் முந்நூறு மணி ஆர்டர் வந்தது. போன பணம் திரும்பி வந்த ஆனந்தத்தில் அதைப் பெட்டியில்கூட எடுத்துவைக்காமல் மேசை மேல் வைத்தபடியே மறந்துவிட்டுப் பள்ளிக்கூடத்திற்குச் சென்றுவிட்டார். பாடம் நடந்து கொண்டிருக்கும்போது பணத்தின் நினைவு வந்தது. லக்ஷ்மிநாராயணன் மேல் திடீரெனச் சந்தேகமும் பிறந்தது. பாடத்தைச் சீக்கிரம் முடித்துவிட்டு வீட்டுக்குப் புறப்பட்டார். வரும் வழியிலே யெல்லாம் நல்ல உயிர் இல்லை. “என்னதான் நல்லவனாயிருந்தாலும் ரூபாய் முந்நூறு அல்லவா?” என்று எண்ணியவாறு நடந்தார். வீட்டுக்கு வந்தார். வாசலில் உட்கார்ந்திருக்கும் லக்ஷ்மிநாராயணனைக் காணவில்லை. உள்ளே போனார்; பணத்தையும் காணவில்லை. வீட்டில் விசாரித்தார்....பணம் போய்விட்டது. தங்கப்பன் ஒரு அலட்சியமான புன்சிரிப்புடன் மீண்டும் பள்ளிக்குத் திரும்பினார்.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சேலம் ரயிலடியில் பிற்பகலே வண்டியைப் பிடித்து ஈரோடு வந்து சேர்ந்தான் லக்ஷ்மிநாராயணன். ஈரோட்டில் ரெடிமேடு கடையில் நுழைந்து வெளியே வரும்போது மைனராய் மாறி வந்தான். அவன் மனம் ஏதோ பேசிக் கொண்டிருந்தது. “முந்நூறு ரூபாய்க்கு ஒரு வெற்றிலைப் பாக்குக் கடை; நானே முதலாளி” என்று திரும்பத் திரும்பப் பேசிற்று. கடைத் தெருவில் ஒரு பொடிப் பையன், எலும்புந் தோலுமாய் அழுக்கு மயமாய் நின்றுகொண்டு ‘ஐயா’ என்றான்.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "லக்ஷ்மிநாராயணன் அவனைப் பார்த்ததுமே ஏதோ யோசனை செய்துவிட்டான். “டேய் பையா! என்னோடு வருகிறாயா? என் வெற்றிலைப் பாக்குக் கடையில் வியாபாரம் செய்ய முடியுமா?”",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று அவனைக் கேட்டான். பையன் சந்தோஷமாய்த் தலையாட்டினான். அவனைத் தன்னோடு கூட்டிக்கொண்டான். முதலாளி நடை தானாகவே வந்துவிட்டது. 10-30 மணிக்கு ஈரோட்டில் வண்டி. ஒன்றரை டிக்கெட் எடுத்துக்கொண்டு இருவருமே ரயில் ஏறினார்கள். அந்த ஏழைச் சிறுவனுக்கு ஒரே மகிழ்ச்சி. லக்ஷ்மிநாராயணன் பிளேயர்ஸ் சிகரெட்டைப் புகைத்தவாறு கம்பீரமாக ரயிலில் உட்கார்ந்திருந்தான். வண்டியும் திருச்சியை நோக்கி ஓடிக்கொண்டிருந்தது.",
+      "sourceScan": 114,
+      "printedPage": 105,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "லக்ஷ்மிநாராயணன் வெற்றிலை பாக்குக்கடை துவக்க விழா, குதாகலமாய் நடைபெற்றது. முதலாளி ஸ்தானத்தில் லக்ஷ்மிநாராயணன். வேலைக்காரனாய்—ஓடும்பிள்ளையாய் அந்தப் பொடிப் பயல். என்ன சுறுசுறுப்பாய் வேலை செய்கிறான் தெரியுமா? வெற்றிலைப் பாக்குக்கடையும் வியாபாரச் செழிப்பில் வளர்ந்தது. திருச்சியில் இந்தக் கடைக்குத்தான் அபார மதிப்பு,",
+      "sourceScan": 114,
+      "printedPage": 105,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "லக்ஷ்மிநாராயணன் கண்ணை விழித்துப் பார்த்தான். திருச்சி ஜங்ஷனில் வண்டி நின்றது—மணி நான்கு. பக்கத்திலிருந்த பையலைப் பார்த்தான்—காணவில்லை. பையைப் பார்த்தான்; பணமில்லை. ஒரு பெருமூச்சு—தங்கப்பன் எதிரே வந்து நின்று சிரிப்பது போலிருந்தது. நல்லவேளை வெளியே செல்ல டிக்கெட்டாவது இருந்தது!",
+      "sourceScan": 114,
+      "printedPage": 105,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Munnuru Rupai",
+    "sourceScan": 112,
+    "printedPage": 103
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My mother is blind; my father cannot move about. For a year now he has had paralysis—one elder sister; a widow. She died leaving behind a child.",
+      "sourceScan": 112,
+      "printedPage": 103,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I am the pillar that supports the family. I worked in a betel-and-areca shop for a salary of ten rupees; that too is gone. Even when I had the job, there were two meals of hunger at home. Need I tell you what it is like now? Please find me some way; otherwise the only expense left is a cubit of rope!” said the poor young man, shedding tears. His name alone was Lakshminarayanan. In person he throbbed like Daridra Narayanan himself.",
+      "sourceScan": 112,
+      "printedPage": 103,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The place where he asked for work was not some big office...nor was it with a mill owner; it was with a schoolteacher earning one hundred and fifty rupees a month. Thangappan was a mathematics teacher at a high school. When it was difficult to run his own large family on one hundred and fifty, how could he dare undertake the rescue of Lakshminarayanan? Thangappan was soft-hearted. A reformer. In the world of reform his pen-name was Marx. The moment he mounted a platform, a fresh energy would arise among the people. He was that fine an orator. Because he spoke of the poor, charity and compassion, so many people had stretched out a hand and begged Thangappan for help—",
+      "sourceScan": 112,
+      "printedPage": 103,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thangappan used to spend a portion of his salary on them. Lakshminarayanan was one among those people. Thangappan could not bear to hear his story—he was so deeply pained.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Eat at my house for ten days; I’ll look somewhere and try to find you a job,” he promised. Seventy-something days had passed. Still no job had been found.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day Thangappan received a money order for three hundred rupees, sent by a friend who had borrowed money from him six months earlier. Delighted that the money he had given away had returned, he did not even put it in the box; he left it on the table, forgot about it and went to school. While teaching, he suddenly remembered the money. A suspicion about Lakshminarayanan also arose. He ended the lesson quickly and set out for home. All along the road his life felt anything but good. “However good a man he may be, it is three hundred rupees, after all,” he thought as he walked. He reached home. Lakshminarayanan, who usually sat at the doorway, was not there. He went inside; the money too was gone. He asked around at home....the money had disappeared. Thangappan returned to school with a faint, careless smile.",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Lakshminarayanan caught an afternoon train at Salem railway station and reached Erode. He went into a readymade-clothes shop in Erode and came out transformed into a minor. His mind kept talking to itself. “A betel-and-areca shop for three hundred rupees; I myself will be the proprietor,” it repeated again and again. In the bazaar a little boy, nothing but skin and bones and covered in dirt, stood there saying, “Ayya.”",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The moment Lakshminarayanan saw him, he seemed to form some plan. “Hey, boy! Will you come with me? Can you work in my betel-and-areca shop?”",
+      "sourceScan": 113,
+      "printedPage": 104,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "he asked him. The boy nodded happily. Lakshminarayanan took him along. The proprietor’s gait came to him by itself. At 10-30 there was a train from Erode. Buying one and a half tickets, the two boarded. The poor boy was full of joy. Lakshminarayanan sat grandly in the train smoking a Players cigarette. The train too went racing toward Tiruchchi.",
+      "sourceScan": 114,
+      "printedPage": 105,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The opening ceremony of Lakshminarayanan’s betel-and-areca shop took place in great kuthagalam. Lakshminarayanan sat in the proprietor’s place. The little fellow was the worker—the errand boy. Do you know how briskly he worked? The betel-and-areca shop too grew in commercial prosperity. In Tiruchchi, this was the shop held in extraordinary esteem,",
+      "sourceScan": 114,
+      "printedPage": 105,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Lakshminarayanan opened his eyes. The train stood at Tiruchchi Junction—it was four o’clock. He looked at the boy who had been beside him—he was gone. He looked at the bag; the money was gone. One long sigh—Thangappan seemed to be standing before him and laughing. Fortunately, at least he still had a ticket with which to get out!",
+      "sourceScan": 114,
+      "printedPage": 105,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  112,
+  113,
+  114
+ ]
+}

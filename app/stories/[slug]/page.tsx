@@ -23,11 +23,17 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const story = loadStory(params.slug);
   if (!story) return { title: "Short story — சிறுகதை | Kalaignar Digital Library" };
   const title = `${story.title.ta} — ${story.title.en} | Kalaignar Digital Library`;
-  // Only source-established facts. `கற்பனையுரை` is the booklet's own form label, so it is quoted as
-  // such rather than restated as a genre claim of this website.
+  // Only source-established facts. A booklet's own form label (`கற்பனையுரை`) is quoted as the source's
+  // word, never restated as a genre claim of this website — and an anthology story, which prints no
+  // form label at all, gets its collection placement instead of an invented one.
+  const placement = story.formLabel
+    ? `printed under the form label ${story.formLabel.ta}`
+    : story.anthology
+      ? `printed in the 1977 anthology ${story.anthology.collectionTitleTa}`
+      : "printed in the verified source edition";
   const description =
-    `${story.title.en} (${story.title.ta}) — a short story by Kalaignar M. Karunanidhi, printed under the ` +
-    `form label ${story.formLabel.ta}. The verified Tamil source text with a project-created English translation.`;
+    `${story.title.en} (${story.title.ta}) — a short story by Kalaignar M. Karunanidhi, ${placement}. ` +
+    `The verified Tamil source text with a project-created English translation.`;
   return { title, description, openGraph: { title, description }, twitter: { title: story.title.en, description } };
 }
 

@@ -156,6 +156,30 @@ jobs:
               "plays/socrates": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
               "plays/cheran-senguttuvan": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
               "thirukkural": { repo: "kalaignar-literary-commentary" },
+              // ── BULK ONBOARDING WAVE 2 ──────────────────────────────────────────────────────
+              // The 37 stories of the 1977 anthology pin the short-stories archive at ONE commit,
+              // which is NOT the earlier pin `kizhavan-kanavu` uses. They therefore get their own checkout
+              // directory rather than sharing one — the same reason the நான்மணி மாலை plays are kept
+              // apart from Silappathikaram above. Sharing a directory across two different historical
+              // pins would make the same-directory/same-pin guard below fire, and loosening that guard
+              // would remove exactly the protection it exists to give.
+              ...Object.fromEntries(
+                [
+                "pugazhendhi", "nalayini", "sabalam", "aattakkavadi",
+                "kuppai-thotti", "santhana-kinnam", "sangilichami", "gangaiyin-kadhal",
+                "thaaymai", "thappivittargal", "thappavillai", "aatharikkirar",
+                "iragasiyam", "munnuru-rupai", "ezhai", "originalil-ullapadi",
+                "panangulai", "seththaval-kathai", "pretha-visaranai", "kandathum-kadhal-ozhiga",
+                "aalamarathup-puraakkal", "thothukkili", "kadhal-kaditham", "kannadakkam",
+                "vazha-mudiyathavargal", "abagya-chinthamani", "palaivana-roja", "puratchip-padam",
+                "thidukkidum-kathai", "kadaisi-kattam", "ayyo-raja", "visham-inidhu",
+                "veniyin-kadhalan", "amirthamathi", "sumanthaval", "siddharthan-silai",
+                "nunikkarumbu",
+                ].map((s) => [
+                  `stories/${s}`,
+                  { repo: "kalaignar-short-stories", dir: "kalaignar-short-stories-1977-anthology" },
+                ]),
+              ),
             };
             const seen = new Map();
             for (const [p, spec] of Object.entries(works)) {
@@ -247,6 +271,13 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-naanmani-malai-plays.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-naanmani-malai"
+      # ONE coherent released batch, ONE validation step — the 37 stories of the 1977 anthology.
+      # The script prints a PASS/FAIL line per story, so a failure names the story, not just the
+      # batch, and any single story failing fails the whole job.
+      - name: 1977 Short-Story Anthology — 37-work Fiction batch
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-1977-short-stories.mjs "$KDL_SOURCES_DIR/kalaignar-short-stories-1977-anthology"
       - name: Thirukkural
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

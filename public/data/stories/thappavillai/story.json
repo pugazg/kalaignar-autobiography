@@ -1,0 +1,1258 @@
+{
+ "workId": "thappavillai",
+ "slug": "thappavillai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thappavillai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தப்பவில்லை",
+  "en": "Thappavillai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 11,
+  "printedPages": {
+   "first": 83,
+   "last": 92
+  },
+  "sourceScans": {
+   "first": 92,
+   "last": 101
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தப்பவில்லை",
+    "sourceScan": 92,
+    "printedPage": 83
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணாடித் துண்டுகளின் வேல் போன்ற கூரிய முனைகள் மேல் நோக்கியவாறு புதைக்கப்பட்டிருந்தன, அந்த நெடிய சுவரின் நெற்றியில்! அதனையொட்டி மின்சாரம் பாய்ச்சப்பட்ட கம்பிகள் அமைக்கப்பட்டிருந்தன. பார்த்தாலே மலைப்புத் தட்டுமளவுக்கு உயர்ந்திருந்த பெருஞ் சுவரின் கம்பீரத்தை உற்று நோக்கியவாறு விழிகளில் மின்னுகின்ற கண்ணீரையும் துடைக்காமல் கிணற்றடியில் உட்கார்ந்திருந்தான், அந்தக் கைதி! மரப் பலகைகளால் மூடப்பட்ட அந்தக் கிணற்றின் ஆழம் வெளியே தெரியாதது போலவே அவன் உள்ளத்தின் ஆழத்தில் ஊறுகின்ற உணர்ச்சி மிக்க எண்ணங்களும் தெரியாமலே போய்விட வேண்டும் என்று ஆசைப்பட்டான் போலும்!",
+      "sourceScan": 92,
+      "printedPage": 83,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கட்டுடலும், கவர்ச்சிகரமான முகமும், எடுப்பான மீசையும் கொண்ட அந்த வாலிபனின் முகத்திலேயுள்ள புத்தொளி, சிறைவாசத்தால் முழுதும் மங்கி விடவில்லை. அவனையும் உலகத்தையும் பிரித்து ஆணவமாக நின்றுகொண்டிருக்கும் அந்தக் கனமான சுவரினைச் சபிப்பதுபோல் உதடுகளை அசைத்துக் கொண்டிருந்தான்.",
+      "sourceScan": 92,
+      "printedPage": 83,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பெரிய பெரிய ராஜ்ஜியங்களின் தலைநகரங்களையும், மாமன்னர்களையும் பாதுகாப்பதற்கு எழுந்த வானளாவிய கோட்டை கொத்தளங்கள் பொடிப் பொடியாகப் போய்விட்ட சரித்திரங்களை அவன் படித்தானோ இல்லையோ; அதுபோல இந்தக் கோட்டையையும் சரித்துத் தகர்த்துவிட்டால் என்ன என்று",
+      "sourceScan": 92,
+      "printedPage": 83,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மனக்கோட்டை கட்ட அவன் தவறவில்லை. பிரான்சு நாட்டில் ‘பாஸ்டிலி’ சிறையை உடைத்து ஒரே நாளில் புரட்சித் தலைவர்களை மீட்டார்கள் என்ற வரலாற்று உண்மை அவனுக்குத் தெரியாமலேகூட இருக்கலாம். ஆனால் அவன் எண்ணினான்—யாராவது இந்தச் சுவரைத் துளைத்துத் தன்னை மீட்டுக் கொண்டு போய்விட மாட்டார்களா என்று!",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படி அவன் எதிர்பார்ப்பதிலே விடுதலைத் துடிப்பு இருக்க முடியுமே தவிர, நிச்சயமாக அர்த்தமிருக்க வழியில்லைதான்! ஏனெனில் அவன் அரசியல் கைதி அல்லன்! ஆள் தூக்கிச் சட்டம், தடுப்புக்காவல் சட்டம்—இன்ன பிற அடக்குமுறைச் சட்டங்கள் கட்டவிழ்த்து விடப்பட்டுப் போலீசார் தங்கள் கித்தாப்பை விளம்பரப்படுத்திக் கொள்வதற்காக, நாட்டிலே அமளியை அவர்களாகவே தூண்டிவிட்டு, அதற்கெனவே முன்கூட்டிச் சிறையில் அடைக்கிறோம் இவர்களையென்று கைது செய்யப்பட்ட விடுதலை இயக்க முன்னணி வீரர்களிலே ஒருவனல்லன் அவன்! ‘தங்கம் நிகர் தலைவர்களைக் காராக்கிரகத்தில் தள்ளி, நாட்டிலே இருளை மேய விடுபவர்கள் யாராயிருப்பினும் அவர்களைத் துச்சமெனக் கருதித் தூளாக்குவோம் சிறைக் கோட்டத்தை’ என எழுந்த பெரும் புரட்சிகள் உலக வரலாற்று நூலில் காணப்படாத ஏடுகள் அல்ல!",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவை எதனையும் அந்தக் கைதியின் நிலையோடு ஒப்பிட்டுப் பார்க்க இயலாத அளவில் அவன் குற்றம் சாட்டப்பெற்றுத் தண்டனை பெற்றிருக்கிறான். அதனாலேயே குமுறல் எழுந்து எழுந்து சோகப் பின்னணி போல அடங்கிவிடுகிறது. அப்படித் தீ அணையும் போதெல்லாம் ஒரு நீண்ட பெருமூச்சு அவனது மூக்கின் நுனியைக் கருக்கிக்கொண்டு வெளிப்படுகிறது.",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீட்டின் வாயிற்புறத்துத் திண்ணையில் பனை நாரினால் பின்னப்பட்ட மூங்கில் கழிக் கட்டிலில் அவன் படுத்துத் தூங்கிக் கொண்டிருந்தான். தூங்காத நேரங்களில் துள்ளிப் பாயும் எண்ணங்கள் காட்சிகளாக வடிவெடுக்கும் கனவுலகில் ஆடிப் பாடி மகிழ்ந்தான்...",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவனுடைய ஏழைப் பெற்றோர், தங்கள் ஒரே மகனுக்குத் திருமணம் நடத்திவிடத் தீர்மானித்துப் பல இடங்களில் பெண் தேடி இறுதியில் இலட்சணவதியான ஒருத்தியை மணமகளாகத்",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தேர்ந்தெடுக்கிறார்கள். அவளது சிவப்பு நிறத்தையும், சேல் கெண்டை விழியையும், சேவல் கொண்டை நிறமொத்த இதழ்களையும் அவன் பார்த்துப் பார்த்துப் பரவசமடைகிறான். மணம் நிறைவேறுகிறது.",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதல் இரவுக்கான ஏற்பாடுகள் செய்யப்படுகின்றன. ஓலை வேய்ந்த வீட்டின் ஒரு மூலையில் பனை ஓலைத் தட்டியொன்று மறைக்கப்பட்டு அதுவே முதல் இரவுக்கான பள்ளியறையாகத் திகழ்கிறது. ஒரு தட்டில் கொய்யாப்பழம்; ஒரு தட்டில் மலை வாழைப்பழம்; எருமைப் பால் ஒரு சிறிய கலயத்தில்; புதிய கோரைப் பாய்கள்; தேங்காய் நார் அடைக்கப்பட்ட தோல் தலையணைகள்.",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் வருகிறாள். நாணிக் கோணி நிற்கிறாள். சிறிது நேரம் அவளையே விழுங்குகிறான்—பார்வையால்! “தங்கம்” என்கிறான்; நா குழறுகிறது. உதடுகள் உலர்ந்துவிடுகின்றன. நடுங்கும் கரங்களால் அவள் கையைப் பற்றுகிறான். அவள் நகர்கிறாள். எழுகிறான். தோள் தழுவுகிறான். இருவரும் அமர்கிறார்கள். அவள் அவன் பிடியிலிருந்து நழுவ முயல்கிறாள், அவன் விடவில்லை. அந்த இன்ப வம்பில் அகல் விளக்கு கீழே சாய்கிறது. அறை இருளாகிறது...",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் விழித்துப் பார்க்கிறான். கண்டதெல்லாம் கனவு. எதிரே போலீசார் நிற்கிறார்கள். கண்கள் நன்றாகத் துடைத்துக்கொண்டு பார்க்கிறான். ஆம்; போலீசார்தான்! ‘அய்யோ!’ என அலற நினைக்கிறான். தொண்டை அடைத்துக் கொள்கிறது.",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“டேய்! பண்ணையார் கொலை சம்பந்தமாக உன்னைக் கைது செய்கிறோம்” என்று பயங்கரமாகக் கூச்சல் எழுப்புகிறார் சப் இன்ஸ்பெக்டர். அவனிடமிருந்து பதில் இல்லை. கைகளில் விலங்கு மாட்டப்படுகிறது. இழுத்துச் செல்லப்படுகிறான். கல்யாணக் கனவை நினைத்துப் பார்த்து ஏங்கவோ அல்லது இன்பமடையவோ கூட அவனுக்கு நேரமில்லை. ‘லாக் அப்’பில் போட்டு அடைத்து விடுகிறார்கள். பரந்த வெளியில் வீசுகின்ற விலையில்லாத தென்றலை அனுபவித்துக் கொண்டிருந்தவனை அடிமையாக்கிப் புனுகுப் பூனைக் கூண்டு போன்ற அசுத்தமான ஓர் அறையில் தள்ளிவிடுகிறார்கள். மறுநாள் ‘ரிமாண்டு’ எனச் சொல்லப்பட்டு, சப்ஜெயிலில் பதினைந்து நாள் இருக்கவேண்டுமென்று உத்திரவு!",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பண்ணையாரை அவன்தான் கொலை செய்தானா? அவன் இரவு—பகல் “இல்லை; இல்லை” யென்றே ஓலமிட்டுக் கொண்டிருந்தான். அவனது முதிர்ந்த பெற்றோர்கள் ஒரே ஒரு மகனைக் கூண்டிலே போட்டுத் தங்களிடமிருந்து வேறுபடுத்திவிட்ட கொடுமையினை நினைத்து நினைத்துப் புலம்பிக் கொண்டிருந்தனர்.",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யோ! எங்கள் பிள்ளை தங்கமாச்சே—வைரமாச்சே! ஊர் வம்புக்குப் போகாத ராஜாவாச்சே! பண்ணைக்காரரைக் கொலை செய்ய ஊரிலே எத்தனையோ பேருக்கு ஆத்திரம்! உத்தண்டிக் கோனாரின் வயல் வரப்புகளையெல்லாம் அநியாயமாக அபகரித்துக்கொண்ட சண்டாளனே, பண்ணையார். அதனால் அந்த உத்தண்டிக்கு ஆத்திரம் வந்திருக்கக் கூடாதா என்ன? சிவராமன் தங்கச்சி ஓடைக்குப் போனபோது உபத்திரவம் பண்ணின அயோக்கியப் பெரிய மனுஷன்—அந்தச் சிவராமனுக்கு அரிவாள் தூக்கத் தெரியாதா என்ன? அபின் வியாபாரத்திலே கூட்டுச் சேர்ந்துகிட்டு இந்தத் துரைபாண்டியை ஏமாத்திட்டான்னு ஊரே பேசுது—அந்தத் துரைபாண்டி துண்டிச்சிருக்கக் கூடாதோ அந்தத் துரோகியின் தலையை? எல்லாத்தியும் விட்டு விட்டு, நிலத்தை விட்டு வெளியேற்றப்பட்ட எங்க மகன்தானா வஞ்சம் தீர்த்திருக்கணும்? அய்யோ கடவுளே! ஏழை பாழைங்கதானா இந்த உலகத்திலே இளிச்சவாயனுங்க? இந்த வருஷம் எப்பாடுபட்டாவது தை மாசத்திலே அவன் காலிலே ஒரு கட்டையைக் கட்டிப் போடணும்னு தவங்கிடந்தோமே; அவன் கதி இப்படி முடிஞ்சுதே! நாங்க என்ன செய்வோம்!”",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எந்நேரமும் அழுது புழுங்கினர் தாயும் தந்தையும்! சப் ஜெயிலில் ரிமாண்டில் வைக்கப்பட்டிருந்த அவனுக்கு ஒரு நம்பிக்கை மட்டும் இருந்தது. நிரபராதிகள் தண்டிக்கப்படமாட்டார்கள் என்பதே அது!",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ரிமாண்டுக் காலமான அந்தப் பதினைந்து நாட்களில் சோகமயமான அவன் உள்ளத்தில் ஒரு சொட்டுத் தேன் விழுந்தது போன்ற ஒரு நிகழ்ச்சியும் நடைபெற்று விட்டது. அவனிருந்த சப் ஜெயில் கொட்டடியில் அவன் அடைக்கப்பட்டிருந்த கூண்டுக்கு அருகில் நாலைந்து பெண்கள் அடைக்கப்பட்டிருந்தார்கள்.",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்களில் ஒருத்தி, ஏறத்தாழ அவன் கனவில் கண்ட அந்த மங்கை போலவே இருந்தாள். விசாரித்ததில் அவள் பெயர்",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தங்கமில்லாவிட்டாலும், அதனையொட்டிய ‘பொன்னு’ என்பது தான் என அறிந்து பெரு வியப்படைந்தான். அந்தப் பெண்ணின் முகத்திலே களங்கத்தின் நிழல்கூட இல்லை. இருபது இருபத்திரண்டு வயதுதானிருக்கும். இளமையின் பெருமிதம் அவள் அங்கமனைத்திலும் பூரித்துப் பொங்கிக்கொண்டிருந்தது. ‘அவள் யார்? அவள் ஏன் சிறையில் வாடுகிறாள்? ஒரு வேளை அவளும் கொலைக் குற்றம் சாட்டப்பட்டவளா?’ கேள்விகள் குடைந்தன. மெல்ல விசாரித்தான்—மற்றவர்களை! கேள்விக்குக் கிடைத்த முதல் பதில் அவனுக்குப் பெரிய திருப்தியை ஏற்படுத்தியது. அவள் திருமணமாகாதவள்! என்னவோ சப் ஜெயிலிலேயே சிறை அதிகாரி மூலம் திருமணப் பேச்சை முடித்து, நிச்சயதார்த்தம் செய்து கொள்வது போலக் கற்பனை செய்து கொண்டு, மகிழ்ச்சி அடைந்தான்.",
+      "sourceScan": 96,
+      "printedPage": 87,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கள்ளச் சாராய வழக்கில் ஈடுபடுத்தப்பட்டவள் அவள். இரண்டாவதாக அவளைப்பற்றி அவனுக்குக் கிடைத்த தகவல் இது! அவனால் நம்ப முடியவில்லை. அப்படியே சாராய வழக்கில் அவள் கைது செய்யப்பட்டிருந்தாலும் அதை அவன் கேவலமாகக் கருதவில்லை. அவளைப் போலவே சிறு குழந்தைகளுடன் சிறைக் கம்பியை எண்ணிக் கொண்டிருந்த ஏழைத் தாய்மார்கள் சிலரைப் பற்றியும் அவன் தவறாகக் கருதவில்லை. மாறாக அனுதாபப்பட்டான்.",
+      "sourceScan": 96,
+      "printedPage": 87,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேசத்தில் பிழைக்க எந்த வழியும் இல்லை. வழியில்லாத காரணத்தால் வயிறு காய்கிறது. மனைவி—மக்கள் பட்டினி கிடக்கிறார்கள். அந்தக் கொடுமையைச் சகிக்க முடியவில்லை, குடும்பத் தலைவனால்! பெரிய மனிதர்கள், ‘பர்மிட்’ வாங்கிக் கொண்டு குடிக்கிறார்கள். அதற்கு ஒரு தனி கெளரவமே சமுதாயத்தில் அளிக்கப்படுகிறது. கவலையைத் தீர்க்கக் கள்ளச் சாராயம் அருந்தும் ஏழைகளும், அந்த ஏழைகளை நம்பிக் கள்ளச் சாராயம் காய்ச்சும் பரம ஏழை வியாபாரிகளும் பரவுகிறார்கள். குடும்பத் தலைவர்களுக்கு அது சுலபமானதும்—அதைத் தவிர வேறில்லாததுமான பிழைக்கும் வழியாகத் தென்படுகிறது. போலீசில் பிடிபடும் வரையில் குடிசைத் தொழிலில் ஈடுபடுகிறார்கள். பாவம் அவர்களுக்குப் பெண்டாகவும், பிள்ளையாகவும், பெண்ணாகவும் வாய்த்தவர்கள் என்ன செய்ய முடியும்? தொழிலில் பங்கு கொள்ளத்தான் நேரிடுகிறது. எண்ணெய் வியாபாரி வீட்டில் இருக்கும் பெண்ணுக்கும் பிள்ளைக்கும் செக்கு ஓட்டத் தெரியும்.",
+      "sourceScan": 96,
+      "printedPage": 87,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுருட்டுக் கம்பெனி நடத்துகிறவர் குடும்பத்தினர் அனைவருமே சுருட்டு செய்யும் பயிற்சி பெறுகிறார்கள். அதுபோலவே கள்ளச் சாராயத் தொழிலும் பல பகுதிகளில் குடிசைத் தொழிலாக உருவெடுத்து வருகிறது. பங்குப் பணமும், வியாபார லாப நஷ்டக் கணக்கில் ஏற்படுகிற தகராறும் தலைமை நிர்வாகிகளைக் கூண்டிலே அடைபடச் செய்கிறதே தவிர, நீதியும்—நேர்மையும்—சட்டமும் அமுல் நடத்தப்படுகின்றன என்று யாரும் பெருமைப்பட்டுக் கொள்ள வழியே இல்லை.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த நிலையில் கூண்டுக் கிளி ஆனவள்தான் பொன்னு! குடிசைத் தொழிலில் கூட்டு வியாபாரம் செய்த குள்ளனின் ஆசைக்கு இணங்க மறுத்தாள். அதன் விளைவாகச் சாராயக் குடத்துடன் ஓர் இரவு போலீசாரிடம் காட்டிக் கொடுக்கப்பட்டாள்.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பண்ணையாரைக் கொலை செய்ததாகக் குற்றம் சாட்டப்பட்டு ரிமாண்டில் இருக்கும் முத்துவுக்கு அவளைப் பார்ப்பதிலே ஓர் ஆறுதல்! அவளுக்கும் கூட அப்படித்தான் என்பது இரண்டொரு நாட்களில் அவனுக்குப் புரிந்துவிட்டது. சிறைச்சாலையில் தனிக் கூண்டுகளில் அடைக்கப்பட்டு, வார்டர்களின் கவனிப்பும் இருப்பதால் ஒருவரையொருவர் சந்தித்துப் பேசி அளவளாவ இயலாது என்பது உண்மை. விழிகளுக்குத் திரைபோட—வெண் பற்கள் சிந்துகின்ற சிரிப்புக்கு அணை போட யார் இருக்கிறார்கள் அங்கே?",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மாலையில் கூண்டிலே அடைக்கப்படும் முத்து, காலையில் சிறைக் கம்பிகளுக்கு அருகில் உட்கார்ந்து கொண்டு வானம் வெளுப்பதைப் பார்த்துக் கொண்டிருப்பான். அப்போது, பெண்களுக்குத் தனிச் சலுகை என்ற முறையில் முதலில் திறந்துவிடப்பட்டுக் கிணற்றங்கரைப் பக்கம் போகும் பொன்னு, முத்து அடைபட்டிருக்கும் கூண்டினை ஆவலுடன் பார்ப்பாள். அவனும் பார்ப்பான். இருவர் விழிகளும் ஏதேதோ பேசி முடிவெடுக்கும்.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப் பதினைந்து நாட்கள் நடைபெற முடியவில்லை. காரணம், பொன்னுவின் மீது போடப்பட்ட வழக்கு தள்ளுபடி செய்யப்பட்டு, அவள் திடீரென விடுதலையாகி விட்டாள். விடுதலையாகிற நாளன்று அவள் துணிந்து, முத்துவிடம் “போய் வருகிறேன்” என்று விடைபெற்றுக்கொண்டாள்.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் போனதும் அவன் மீண்டும் சிறைக் கொடுமையை அனுபவிக்கும் கஷ்டத்திற்குள்ளானான். இதுவரையில், தன் மீது கூறப்பட்ட பழியிலிருந்து தப்பவும், தன் தாய் தந்தை மனம் குளிரவும் எப்படியாவது விடுதலையாகிவிட வேண்டுமென்று பிரார்த்தனை செய்துகொண்டிருந்த அவனுக்கு, விடுதலைக்கான புதிய காரணமும் தோன்றி விட்டது. அதுதான் அவள்! அவளை எப்படியாவது மீண்டும் சந்திக்கவேண்டும் என்று எண்ணித் துடித்தான் முத்து!",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘ரிமாண்டு’ முடிந்தது. வழக்கு விசாரணைகள் தொடர்ந்தன. செஷன்ஸ் கோர்ட்டுக்கு வழக்கு சென்றது. தீர்ப்பு கூறப்பட்டது, பண்ணையாரை அவன்தான் கொலை செய்தான் என்று நீதி மன்றம் முடிவு செய்தது. முத்து தூக்குத் தண்டனையிலிருந்து தப்பினான், ஆயுள் தண்டனை விதிக்கப்பட்டது அவனுக்கு! மத்திய சிறைச்சாலையில் கடுங்காவல் தண்டனையை அனுபவிக்கத் தள்ளப்பட்டான். பதினான்கு ஆண்டுகள் சிறைவாசம்! ஆனால் அவன் நடந்துகொள்வதைப் பொறுத்தும், விடுமுறைகளைப் பொறுத்தும்—ஏறத் தாழ எட்டு ஆண்டுகளுக்குள் அவன் வெளி உலகைக் காண இயலும். அய்யோ—அதுவரையில் அவன் பெற்றோர்கள் கதி? அவன் காதலித்த அந்த அழகி பொன்னு அதுவரையில் காத்திருப்பாளா என்ன? உயர்ந்த சுவரை வெறித்த கண்களால் பார்த்துக்கொண்டு உட்கார்ந்திருந்தான் முத்து.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னப்பா, முத்து!” என்று முதுகில் தட்டியவாறு அவன் சிறைச்சாலை நண்பர்கள் சூழ்ந்தனர்.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ என்னடா முத்து! முட்டாளாயிருக்கிறே! இதபார்... எனக்குச் செஷன்சில் தூக்குத் தண்டனை கிடைச்சுது... ஹைகோர்ட்டில் அப்பீல் செஞ்சேன்; ஆயுள் தண்டனையா குறைஞ்சுது. அதேமாதிரி...நீயும் அப்பீல் பண்ணினா... தண்டனை குறையும்—இல்லே, விடுதலையே ஆயிடுவே!”",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு கைதி, பிரசங்கம் செய்ய ஆரம்பித்தான். அவன் மட்டுமல்ல; சிறையில் உள்ள எல்லாக் கைதிகளுமே அவனை ‘அப்பீல்’ செய்து கொள்ளுமாறு தூண்டினர். முத்து யோசித்தான். தன் இளமைக்காலத்தின் ஒரு பகுதி சிறையிலேயே சீரழிவதா? அப்பா, அம்மா வெளியில் அழுது புலம்புவதா? காதலியைக் காணாது வாடுவதா? தனக்குத் தானே கேட்டுக்கொண்டான்.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்பீல் செய்ய வசதி வேண்டாமா? முத்துவின் இந்தக் கேள்விக்குப் பதில் கூற யாரும் முன் வரவில்லை.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருநாள் முத்துவைப் பார்க்க யாரோ வந்திருப்பதாக அழைப்பு வந்தது. ‘இண்டர் வியூ’ அறைக்குச் சென்றான். என்ன திடுக்கிடும் நிகழ்ச்சி! பொன்னுவும் அவளுடன் ஒரு கிழவனும் நின்றுகொண்டிருந்தார்கள். கிழவன் பேசினான். பொன்னு கண்கலங்க நின்றுகொண்டிருந்தாள்.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தம்பீ! எனக்கு எல்லாம் தெரியும். என் மகள் பொன்னு எல்லாம் சொன்னது! உனக்காக உசிரை விடக்கூட என் மகள் தயாராயிருக்கு. அப்பீல் பண்ணுனா கட்டாயம் உனக்கு விடுதலை கிடைக்கும்னு எல்லாரும் சொல்றாங்க. நீ விடுதலை ஆயி வந்துட்டா அடுத்த வாரமே உங்க கல்யாணம்!”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பீலாவது ஒண்ணாவது! அதுக்கெல்லாம் பணம் வேண்டாமா?”—முத்து அங்கலாய்த்துக்கொண்டான்.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பணத்தைப்பத்திக் கவலைப்படாதே தம்பீ!....ஏதோ இந்த உலகத்திலே ‘அகடு பகடு’ பண்ணி ரெண்டு காசு சம்பாதிச்சுருக்கேன். கெட்ட வழியிலே வந்த பணம் இப்படி நல்ல வழியிலே பயன்பட்டுப் போகட்டும் தம்பீ!”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீங்க நினைக்கிறபடி அப்பீல்ல விடுதலை ஆகலேன்னா பத்து வருஷம் கழிச்சுப் பொன்னு என்னைக் கல்யாணம் பண்ணிக்குமா? அதுக்குத் தயாரா?”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தக் கேள்விக்குப் பொன்னுவே பதில் கூறினாள்.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தயாராயிருக்கேன்னு சொல்லுங்கப்பா!”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முத்து கண்களில் நீர் கலங்கியது—அது ஆனந்தக் கண்ணீரே தான்!",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முத்து, தன் கைதி நண்பர்களிடம் செய்தியைக் கூறினான். அவர்களும் அவனுக்கு நல்ல காலம் பிறந்ததாக வாழ்த்துக் கூறினர். இவர்களில் ஒரு ஜோசியக்கார கைதி, முத்துவைப் பிடித்திருந்த ஏழரைநாட்டான் சனி அன்றோடு விலகியதாக சாஸ்திர ரீதியாக எடுத்துக் கூறினான்.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**நாட்கள் ஓடின...**",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உயர் நீதி மன்றத்தில் ‘அப்பீல்’ வழக்கு நடைபெற்றுக் கொண்டிருந்தது. முத்துவின் கனவுகள் அவனுக்குப் புதிய பரபரப்பைத் தந்தன. அன்றொரு நாள் போலீசாரால் கைது செய்யப்பட்டபொழுது அவன் கண்ட இன்பக் கனவை மீண்டும் கண்டவாறு சிறைச்சாலையில் ஒரு மேடையில் தூங்கிக்கொண்டிருந்தான். அழகி பொன்னுவுடன் முதல் இரவைச் சுவைக்கும் கட்டம். இருவரும் சப் ஜெயிலில் சந்தித்ததை—விழிகளால் பேசியதை—திருமண முடிவைத் தங்கள் மனத்திற்குள் செய்ததை—ஒருவருக்கொருவர் பேசி மகிழ்கின்றனர்.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன் விரல்கள் நினைத்துக் கொண்டு சிறைக் கம்பிகளைத் தடவிக்கொண்டே யிருந்தேன்” என்கிறான் முத்து!",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவ்வளவு முரட்டு விரலா எனக்கு?” எனக் கேட்டுச் சிரிக்கிறாள் பொன்னு!",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கேலியால் வெல்லப்பட்ட முத்து அவள் உதடுகளைத் தன் உதடுகளால் மூடுகிறான்.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கனவுதானே! விழித்துக்கொள்கிறான். இன்னும் சிறையிலே தானிருக்கிறோம்—என்பதை உணருகிறான். அப்பீல் என்ன ஆகுமோ என்று எண்ணுகிறான். எதிரே சிறை அதிகாரி வருகிறார்; வார்டர்களும் வருகிறார்கள்.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வா முத்து!” என அழைக்கிறார் அதிகாரி! அவர்களோடு அவன் போகிறான். அதிகாரியின் முகக் குறிப்பிலேயிருந்து அவன் எதையும் கண்டுபிடிக்க முடியவில்லை. ரசம் பூசப்படாத கண்ணாடிபோல சில அதிகாரிகளின் முகங்கள் காட்சியளிக்கும். அப்படிப்பட்ட முகமே அந்த அதிகாரிக்கு!",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தனக்கு அப்பீலில் வெற்றி கிடைத்திருக்குமா என்ற ஆவல் அவனை ஆட்டிப் படைக்கிறது. அதிகாரி, தூக்குமேடைக் கைதிகள் அடைத்துப் போடும் கொட்டடிக்குள் நுழைகிறார். கூண்டு திறக்கப்படுகிறது. முத்து உள்ளே தள்ளப்படுகிறான். கூண்டு பூட்டப்படுகிறது. முத்துவுக்கு ஒன்றுமே புரியவில்லை. விழிக்கிறான்.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யா! அய்யா! என்ன இது?” என்று கத்துகிறான்.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பீல் செய்துகொண்டாயே; அதில் ஏற்பட்ட முடிவு இது!”",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யோ எனக்கு விடுதலை இல்லையா?” என்கிறான்.",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“விடுதலைதான்! அப்பீலில் கிடைத்த விடுதலை இது! உலக விடுதலை! செஷன்ஸ் கோர்ட் தண்டனை போதாதென்று ஹைகோர்ட் கொடுத்த தண்டனை இது!”",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனக் கூறி, கதவை மூடிப் பூட்டிவிட்டுச் சிறை அதிகாரி போய்விடுகிறார்.",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நிரபராதிகள் தண்டிக்கப்படமாட்டார்கள்!” என்று யாரோ ஓர் உபதேசி கூறிய வாசகம் அவன் கண்ணெதிரே எழுத்து உருப்பெற்று அவனைப் பார்த்துக் கேலி செய்தபடியே இருந்தது.",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Thappavillai",
+    "sourceScan": 92,
+    "printedPage": 83
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sharp spear-like points of broken glass had been embedded facing upward along the brow of that tall wall! Beside them ran wires charged with electricity. Sitting near the covered well, without even wiping the tears glinting in his eyes, the prisoner stared at the majesty of the massive wall, so high that merely looking at it was enough to make one reel. Just as the depth of the well, covered by wooden planks, could not be seen from outside, perhaps he wished that the emotion-laden thoughts seeping through the depths of his heart too would remain unseen.",
+      "sourceScan": 92,
+      "printedPage": 83,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The fresh brightness on the face of that young man—with his sturdy body, attractive face and prominent moustache—had not been wholly dimmed by prison life. He kept moving his lips as though cursing the heavy wall that stood arrogantly between him and the world.",
+      "sourceScan": 92,
+      "printedPage": 83,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Whether or not he had read the histories of sky-high forts and ramparts raised to protect the capitals of great kingdoms and mighty emperors being shattered to dust, he did not fail to build a castle in his mind around the thought: why should this fortress too not be brought crashing down—",
+      "sourceScan": 92,
+      "printedPage": 83,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He may not even have known the historical fact that in France the Bastille prison was broken open and revolutionary leaders freed in a single day. But he wondered: would no one pierce this wall and rescue him too?",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There could certainly be a thirst for freedom in such an expectation, but there could hardly be any real hope in it. For he was no political prisoner! He was not one of the front-line fighters of a freedom movement arrested under man-snatching laws, preventive-detention laws and other repressive laws—laws let loose while the police themselves stirred up disorder merely to advertise their own kithaappu and then claimed they were imprisoning people in advance to prevent it. World history is not without pages recording great revolutions that rose declaring, ‘Whoever thrusts leaders worth their weight in gold into prison and lets darkness graze over the land—let us count them as nothing and reduce the prison fortress to dust!’",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "His position could not be compared with any of these, for he had been accused of a crime and sentenced. That was why each surge of anguish would rise and then subside like a sorrowful background refrain. Whenever that fire died down, a long sigh came out as though scorching the tip of his nose.",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He lay asleep on the front veranda of his house, on a bamboo-strip cot woven with palmyra fibre. When awake, the thoughts that leapt within him took shape as scenes, and in the world of dreams he danced and sang in delight...",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "His poor parents, resolving to arrange the marriage of their only son, searched for a bride in many places and at last selected a graceful young woman as the bride—",
+      "sourceScan": 93,
+      "printedPage": 84,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They chose her. He looked again and again at her fair complexion, her sel-kendai eyes and her lips the colour of a cockerel’s comb, and was transported with delight. The marriage took place.",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Arrangements were made for the wedding night. In one corner of the thatched house a palmyra-leaf screen was set up, and that itself became the bridal chamber. Guavas on one plate; hill bananas on another; buffalo milk in a small pot; new korai mats; leather pillows stuffed with coconut fibre.",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She came. She stood shrinking with shyness. For a while he simply devoured her—with his eyes! “Thangam,” he said; his tongue faltered. His lips dried. With trembling hands he held hers. She moved. He rose. He embraced her shoulders. They sat down together. She tried to slip from his grasp; he would not let go. In that sweet tussle the earthen lamp tipped over. The room went dark...",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He opened his eyes. Everything he had seen was a dream. Policemen stood before him. He rubbed his eyes thoroughly and looked. Yes—the police! He tried to cry, ‘Ayyo!’ His throat closed up.",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! We are arresting you in connection with the murder of the pannaiyar,” the sub-inspector shouted menacingly. There was no answer from him. Handcuffs were put on his wrists. He was dragged away. He had not even a moment to pine over the marriage dream or take pleasure in remembering it. They locked him in the lock-up. A man who had been enjoying the priceless breeze blowing across the open world was made a slave and thrown into a filthy room like a civet-cat cage. The next day came the word ‘remand’, and an order that he must remain in the sub-jail for fifteen days!",
+      "sourceScan": 94,
+      "printedPage": 85,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Had he really killed the pannaiyar? Night—day he kept crying, “No; no.” His aged parents wept again and again at the cruelty of having their one and only son shut in a cage and separated from them.",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayyo! Our boy was pure gold—diamond! A king who never went looking for village quarrels! So many people in the village had reason to be furious with the pannaiyar! The chandalan pannaiyar unjustly seized all of Uththandi Konar’s field bunds—couldn’t Uththandi have become angry? That shameless great man harassed Sivaraman’s younger sister when she went to the stream—doesn’t Sivaraman know how to lift a sickle? The whole village says he joined an opium business and cheated this Durai Pandi—couldn’t Durai Pandi have chopped off that traitor’s head? Leaving all of them aside, must it have been our son, driven from his land, who took revenge? Ayyo, God! Are the poor and ruined the only easy fools in this world? This year we had been longing somehow to tie the marriage-block to his leg in the month of Thai; and now his fate has ended like this! What are we to do?”",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mother and father spent every hour weeping and wasting away. Muthu, held on remand in the sub-jail, had only one hope: that the innocent would not be punished.",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "During those fifteen days of remand, something happened that was like a drop of honey falling into his grief-filled heart. In the sub-jail enclosure, close to the cage in which he was confined, four or five women were held.",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One of them looked almost exactly like the young woman he had seen in his dream. On asking around, he learned that though her name was not Thangam—",
+      "sourceScan": 95,
+      "printedPage": 86,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—it was the closely related name ‘Ponnu’, and he was greatly astonished. There was not even the shadow of a stain on the young woman’s face. She might have been twenty or twenty-two. The pride of youth swelled and overflowed through every part of her. ‘Who is she? Why is she wasting away in prison? Could she too be accused of murder?’ Questions bored into him. Quietly he asked the others. The first answer he received gave him enormous satisfaction: she was unmarried! He delighted himself by imagining that right there in the sub-jail, through the prison officer, he might finish the marriage talks and become engaged to her.",
+      "sourceScan": 96,
+      "printedPage": 87,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She had been implicated in an illicit-liquor case. That was the second piece of information he learned about her. He could not believe it. Even if she had really been arrested in a liquor case, he did not consider it disgraceful. Nor did he think badly of several poor mothers who, like her, were counting prison bars with small children beside them. Instead he pitied them.",
+      "sourceScan": 96,
+      "printedPage": 87,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is no way to make a living in the country. Because there is no way, the stomach burns with hunger. Wife and children starve. The head of the family cannot endure that cruelty! Important men obtain ‘permits’ and drink, and society even grants that a special respectability. Poor people who drink illicit liquor to ease their worries, and the utterly poor traders who distil illicit liquor depending on those poor customers, spread everywhere. To household heads it appears an easy means of livelihood—and the only one available. Until the police catch them, they engage in it as a cottage trade. What can those born as their wives, children and daughters do? They too are forced to take part in the trade. The woman and children in an oil merchant’s house know how to work the oil press.",
+      "sourceScan": 96,
+      "printedPage": 87,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Likewise, every member of the family of someone who runs a cigar company learns to roll cigars. In the same way, the illicit-liquor trade too is becoming a cottage industry in many regions. Disputes over partnership money and business profit-and-loss accounts may land the chief operators in cages, but they give no one reason to boast that justice, fairness and law are being enforced.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was in such circumstances that Ponnu became a caged bird. She had refused to yield to the desire of the short man with whom she conducted the cottage-trade partnership. As a result, one night she was handed over to the police along with a pot of liquor.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For Muthu, remanded on the accusation that he had murdered the pannaiyar, looking at her brought some consolation. Within a day or two he understood that she too felt the same. It was true that, locked in separate cages inside the jail and watched by warders, they could not meet, talk and converse freely. But who was there to draw a curtain over their eyes—or build a dam against the smiles shed by their white teeth?",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Locked into his cage in the evening, Muthu would sit near the bars in the morning and watch the sky turn pale. Then Ponnu, under the special privilege given to the women, would be released first to go toward the well and would eagerly look at the cage in which Muthu was held. He too would look. The eyes of the two would speak and reach all sorts of decisions.",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This could not continue for all fifteen days. The reason was that the case against Ponnu was dismissed and she was suddenly released. On the day of her release she gathered courage and took leave of Muthu, saying, “I’ll go and come back.”",
+      "sourceScan": 97,
+      "printedPage": 88,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Once she left, he again fell into the suffering of prison life. Until then he had prayed to be freed somehow in order to escape the accusation against him and cool the hearts of his mother and father. Now a new reason for freedom had appeared. It was she! Muthu throbbed with the desire to meet her again somehow.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The remand ended. The trial continued. The case went to the Sessions Court. Judgment was delivered: the court decided that he had murdered the pannaiyar. Muthu escaped the death sentence; he was sentenced to life imprisonment! He was sent to the central prison to undergo rigorous imprisonment. Fourteen years in prison! Yet depending on his conduct and remissions, he might see the outside world in roughly eight years. Ayyo—what would become of his parents by then? Would that beauty Ponnu, whom he had come to love, wait until then? Muthu sat staring with burning eyes at the high wall.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is it, Muthu?” his prison friends asked, patting his back as they gathered around him.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What kind of fool are you, Muthu! Look here...I got a death sentence in Sessions Court...I appealed in the High Court; it was reduced to life imprisonment. In the same way...if you appeal too...your sentence may be reduced—or you might even be released!”",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One prisoner began preaching. Not only he; all the prisoners urged Muthu to file an appeal. Muthu thought. Should a part of his youth rot away inside prison? Should his father and mother weep outside? Should he waste away without seeing his beloved? He asked himself.",
+      "sourceScan": 98,
+      "printedPage": 89,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But did he not need the means to file an appeal? No one came forward with an answer to Muthu’s question.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day word came that someone had arrived to see Muthu. He went to the ‘interview’ room. What a startling sight! Ponnu stood there with an old man. The old man spoke. Ponnu stood with tears in her eyes.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Thambi! I know everything. My daughter Ponnu told me everything! My daughter is ready even to give her life for you. Everyone says that if you appeal you will certainly get released. Once you come out, your marriage will be the very next week!”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Appeal or whatever else! Doesn’t all that need money?” Muthu lamented.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don’t worry about the money, thambi! Somehow in this world I’ve done a little ‘agadu-bagadu’ and earned a few coins. Let money earned by a bad road be used on a good road like this, thambi!”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If I don’t get released on appeal the way you expect, will Ponnu marry me even after ten years? Is she ready for that?”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ponnu herself answered the question.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Tell him I am ready, appa!”",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Tears gathered in Muthu’s eyes—but they were tears of joy!",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Muthu told the news to his prisoner friends. They too congratulated him that good times had begun. Among them an astrologer-prisoner explained, according to shastra, that the seven-and-a-half-year Saturn that had held Muthu had departed that very day.",
+      "sourceScan": 99,
+      "printedPage": 90,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**Days passed...**",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The appeal was being heard in the High Court. Muthu’s dreams filled him with fresh excitement. One day, sleeping on a platform in the prison, he again saw the happy dream he had seen when the police first arrested him. The scene was the wedding night with the beautiful Ponnu. They spoke happily about how they had met in the sub-jail—how they had spoken with their eyes—how each had made the marriage decision within their own hearts.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I kept stroking the prison bars thinking they were your fingers,” Muthu said.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Are my fingers really that rough?” Ponnu asked with a laugh.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Defeated by her teasing, Muthu covered her lips with his own.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was a dream, after all! He woke. He realized that he was still in prison. He wondered what had happened to the appeal. The prison officer approached; warders came with him.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Come, Muthu!” the officer called. Muthu went with them. He could read nothing from the officer’s facial expression. Some officials’ faces look like glass without silvering. That was the kind of face the officer had.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The longing to know whether he had won the appeal tossed him about. The officer entered the enclosure where prisoners for the gallows were shut in. A cage was opened. Muthu was pushed inside. The cage was locked. Muthu understood nothing. He stared.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayya! Ayya! What is this?” he cried.",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You filed an appeal, didn’t you? This is the result!”",
+      "sourceScan": 100,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayyo, am I not being released?” he asked.",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You are being released! This is the release you got on appeal! Release from the world! The Sessions Court sentence was not enough, so this is the sentence the High Court has given you!”",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Having said this, the prison officer shut and locked the door and went away.",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The saying, “The innocent will not be punished!”—spoken by some preacher—seemed to take the form of letters before his eyes and mock him.",
+      "sourceScan": 101,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101
+ ]
+}

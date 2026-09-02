@@ -1,0 +1,2085 @@
+{
+ "workId": "thaaymai",
+ "slug": "thaaymai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thaaymai",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தாய்மை",
+  "en": "Thaaymai"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 9,
+  "printedPages": {
+   "first": 64,
+   "last": 74
+  },
+  "sourceScans": {
+   "first": 73,
+   "last": 83
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தாய்மை",
+    "sourceScan": 73,
+    "printedPage": 64
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரசத்தாலும் சாகசத்தாலும் எப்படியோ அரசியின் மீது அரசனுக்கு இருந்த அன்பை அழித்து விட்டேன். அரசனது இருதயத்திலே அழியாத சித்திரமாக அமர்ந்திருந்தாள் அந்தக் கோப்பெருந்தேவி! அந்தக் கலையாத ஓவியத்தைக் கரிகொண்டு மெழுகிவிட்டேன்.",
+      "sourceScan": 73,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மன்னரின் மன மாளிகையில் ஜோதி விளக்கு அவள், ஒரு காலத்தில்! அந்த ஜோதி விளக்கு இன்று வீதியிலே வீசப்பட்டு விட்டது. தோழிகள் புடை சூழ—தோகை மயில்கள் ஆடும் நந்தவனத்தில் மலரால் நடைபாதை அமைத்து, அவளும் அரசரும் ஆனந்த பவனிகள் நடத்தினரே—அது அந்தக் காலம்.",
+      "sourceScan": 73,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இப்போது வேந்தரின் இருதயத்தில் இந்த சுழற் கண்ணியின் சுந்தர ரூபம் பூஜை அறைப் படம்போல ஜோடித்து வைக்கப்பட்டிருக்கிறது. வேந்தரின் மடியும், மலர்த்தோளும் அவளுக்குச் சொந்தம் ஒரு காலத்தில்! இன்றோ என் சொல்லுக்குச் சூழலும் ‘மாயப் பதுமை’யாகி விட்டார், மணிமுடி வீரர்! இது எனக்கு வெற்றிதான்—ஆனாலும் என் மனம் அமைதியடையவில்லை. அரசரின் பாசத்தையும் நேசத்தையும் இழந்தாள் எனினும் பட்டத்து ராணி என்ற மதிப்பை இழந்தாள் இல்லை. அவளது மகன்தான் கீர்த்தத்துக்குச் சொந்தக்காரன் என்ற பாத்தியதையைப் பறி கொடுத்தாள் இல்லை.”",
+      "sourceScan": 73,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்த நிலையில் எனக்கு நிம்மதி ஏது மைத்துனரே! ஊரெல்லாம் அவள் பக்கம் அனுதாபம் காட்டுகிறது. அரசரும் அவளும் பிரிந்திருப்பது நாட்டுக்கு ஏற்பட்ட எதிர்பாராத கேடு என்று புலம்புகிறது மக்கள் மன்றம். என்னுடைய குணதிசயங்களைக் கொற்றவன் சரியாகப் புரிந்து கொள்ளவில்லை. அதனால் என் வலையில் விழுந்து விட்டார் என்று மந்திரிகளின் குழு மாரடித்து அழுது கொண்டிருக்கிறது. இளையராணி நான்—என்கிற மதிப்பைக்கூடத் தர மறுக்கிறது அரண்மனை வட்டாரம்.",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அரசரின் மஞ்சத்து ராணியாக மட்டுமன்றி, வெஞ்சமரில் வாளெடுத்து வேலெடுத்துப் போர் புரியும் வீராங்கனையுமன்றோ கோப்பெருந்தேவி—அவள் எங்கே? வளையொலியால் மல்லிகர்த்தவரை வளைத்து விட்ட இவளெங்கே?—என்று வீரர்களின் பாசறைகளில் பேசப்படுகிறது. இத்தனை எதிர்ப்புக்களையும் சமாளிப்பதற்கு நான் தயாராகிக் கொண்டிருக்கிறேன். ஆனால் மைத்துனரே! அவள் மகன் இன்பசாகரன் வளர்ந்து, இளவரசு மகுடத்தைத் தலையில் தூக்குவதற்குள் அழிக்கப்பட்டுவிட வேண்டும். சுந்தரபுரி, சுழற்கண்ணியின் சொத்தாக மாற வேண்டும். என வயிற்றிலே வளர்ந்துகொண்டிருக்கும் சிசு இந்த நாட்டுச் செங்கோலுக்கு உரிமை பாராட்டவேண்டும். அதற்குத் தடை அவளது அருமருந்தன்ன மகன்! தடை இடப்பட்ட ஒரு வழி கூறும் மைத்துனரே! உமது உதவியோடுதான் நான் ஜெயக் கொடி நாட்டவேண்டும்.",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மைத்துனரே! உமது மறைவிலே நின்றுகொண்டுதான் என் ஜீவ லட்சியத்தை நிறைவேற்ற வேண்டும். என் மெளனமாக இருக்கிறீர்—பேசும்; விலகி நின்று பேசுகிறீரே என்ற கோபமா? வேந்தர் வரும் நேரமாயிற்றே என்றுதான் பயந்தேன். இதோ...மூடிக் கிடக்கும் உமது முரட்டு உதடுகள் எனது ரோஜா இதழ்களால் திறக்கிறேன்... ‘இச்!... இச்!’ போதுமா? நீண்ட விருந்து மற்றொரு நாளைக்கு! மைத்துனரே! சுந்தரபுரியின் ராணி சுழற்கண்ணி—அவள் குழந்தைக்கு இந்த நாடு உரியது—இப்படி ஒரு நல்ல எதிர்காலம் தோன்றுமா? அதற்கான திட்டம், உமது திட்டசனயமிக்க மூளையிலே இப்போதே உதயமாகுமா?”",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கவலைப்படாதே சுழற்கண்ணி! இந்த திட்டசனயன் இருக்கும்போது திட்டங்களுக்கா குறைவு? தித்திக்கும் முத்தங்களை நீ தந்ததுபோல், சித்திக்கும் யோசனைகளைத் தரவும்",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நான் தயங்கமாட்டேன். அரசரின் இளைய ராணியாவதற்கு அபூர்வமான ஆலோசனை வழங்கினேனே—அதை மறந்தாயா! அதைப் போலவே இளவரசன் இன்பசாகரனை வாழ்க்கைப் புதரிலிருந்து பறித்துப் போடச் சரியான வழி கண்டு பிடிக்கிறேன். இன்பசாகரன் இளம் அரும்பு! அந்த அரும்பை விரலால்கூட நசக்கி எறிந்துவிட முடியும்—நான் நினைத்தால்! ஆனால், அந்த அரும்பு இருக்குமிடமோ அரண்மனைத் தோட்டம். வேலியற்ற கொல்லையல்ல, வேந்தன் வீட்டு முள்ளு மொக்கு இருக்குமிடம்! சாவஜாக்கிரதையாகச் சதியை நிறைவேற்றவேண்டும். இளவரசன் சாக வேண்டும். ஆனால் நாம் கொன்றதாகத் தெரியக்கூடாது—கொலை செய்யப்பட்டதாகவே செய்தி வருதல் கூடாது. இயற்கையாக இறந்தான் என்று நாடும், நாட்டாளும் மன்னனும் நம்ப வேண்டும். அதற்கு வழிசொல்லுகிறேன்!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சொல்லும் மைத்துனரே சீக்கிரம்!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இன்னொன்று கொடு, சொல்லுகிறேன்!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதோ! ஒன்றென்ன; ஒன்பது!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆகாகா! சுழல்! சொக்கி விட்டேன்—சொக்கிவிட்டேன்! முத்தப்போதையிலே மூளை வேலை நிறுத்தம் செய்து விட்டது. நாளை விடியற்கால திட்டத்தோடு வந்து உன்னைச் சந்திக்கிறேன்.”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வேந்தர் பள்ளியறையை விட்டுப் போன பிறகு வாரும்.”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவர் இருக்கும்போது வர எனக்குப் பைத்தியமா?”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி! திட்டம் நேர்த்தியாக இருக்க வேண்டும்!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன்னைப் போல?”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இல்ல; நம் உண்மைக் காதலைப் போல!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கைக்காரியடி சுழற்கண்ணி நீ! கட்டிலறையிலே அரசனிடம் கூட இப்படித்தானே கதையளப்பாய்?”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எனக்கு இரண்டு இருக்கிறது அத்தான் இருதயம்! ஒன்றில் உமது ஆசை; மற்றொன்றில் சுந்தரபுரியின் சிம்மாசனத்தைப் பற்றிய கனவு! இரண்டாவது இருதயத்தால்தான் அரசனைப் புகழ்கிறேன்—ஆராதிக்கிறேன்—ஆனந்தம் பொழிகிறேன்!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சுழல்! நேரமாகிறது வருகிறேன்! அதோ அரசர் வருவது போல் தெரிகிறது!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“விடியற்காலை—திட்டம்—மறந்து விடாதீர்!”",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“விருந்து—அதையும் நீ மறந்து விடாதே!”",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுழற்கண்ணி, அவன் பேச்சை ஆமோதிப்பதுபோலத் தலை யசைத்துக்கொண்டு புன்னகை சிந்தினாள். திட்டசனயனே அந்தச் சிரிப்பை ரசித்தவாறு அந்த இடத்திலிருந்து நகர்ந்தான். துடித்த உதடுகள் அழுத்தமான நாவினால் தடவியபடி ஏதோ ஓர் இன்பச் சுவையை அனுபவித்தவாறு அந்த முரடன் சுழற்கண்ணியின் பார்வையிலிருந்து மறைவதற்கும்—“சுந்தர்” என்றவாறு சுவைக் காவியம் படிப்பதற்கு அரசன் வருவதற்கும் சரியாக இருந்தது.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன்னன் வந்தான். திட்டசனயனிடத்திலே அவள் கூறியவை அனைத்தும் உண்மையே என்பதை நிரூபிப்பது போல் அவள் மடியில் சாய்ந்தான்—பிடியில் சிக்கினான்.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுழற்கண்ணி சுந்தரபுரி மன்னனின் இளைய ராணி. அவளுக்கு மைத்துனன் திட்டசனயன். தூரத்து உறவு. அரண்மனையிலே அவனுக்கு மெய்க்காப்பாளன் வேலை. அரசனது மெய் காக்கவும்—ஓய்வு கிடைத்து, நேரம் வாய்க்கும்போது சுழற்கண்ணியின் மெய் தழுவிக் கிடக்கவும்—ஆகிய இரண்டு வேலைகளும் மாறிமாறி வந்து கொண்டிருந்தன அவனுக்கு! கனிரசம் பருகக் கசக்குமா? அதிலும் அவன் கரடித் திருமனியன்! தேன் கூடு போலச் சுழற்கண்ணி, வலிய வலிய வருகிறாள். கொம்பு வளைந்து தேனைக் கொட்டிக் குடிக்குப் பசி தீர்ப்பது போலக் கற்பனை கூடச் செய்ய முடியாது. சுந்தரபுரி அரண்மனையிலோ இது நித்திய நிகழ்ச்சியாக இருந்தது. பாருங்கல்லில் ஒத்த கரடு முரடான அவனது மார்பகத்தில் பச்சைக்கிளி போன்றவள் தொத்திக் கிடந்தாள்.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவனே, “என் இச்சைக்கினியவளே! இனிப்பு தரும் இன்னமுதே!” எனப் பழுத்த குரலெடுத்துப் பாடிக் கொண்டிருந்தான். திரைமறைவில் நடக்கும் இந்த அவமானகரமான அநியாயத்தின் அடையாளமும் தெரியாமல் அரசருக்கரசன் அவளை நோக்கி, “உத்தமியே! உயர்ந்தவளே! உல்லாசி! ஊர்வசி!” எனப் புகழாரம் தொடுத்துக் கொண்டிருந்தான்.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுந்தரபுரி சாம்ராஜ்யத்தைச் சுடுகாடாக்க வந்த ‘வசந்த சேனை’ சுழற்கண்ணியின் உருவத்திலே உலவுகிறாள் என்பது அந்த ராஜ ரசிகனுக்குப் புரியாமல்தான் போய்விட்டது!",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரசனின் அந்தப்புர மயிலாக, ஆலோசனை வழங்கும் அமைச்சராகக் களம்புகு நேரத்தில் பின் தொடரும் மறத்தியாகச் சுந்தரபுரி மக்களின் சுகத்தைக் கவனிக்கும் பாசமுள்ள தாயாக அந்த மாளிகையிலே சுடர்விட்டுக் கொண்டிருந்த மாணிக்கமாம் கோப்பெருந்தேவியாரைக் கொந்தளிக்கும் கடலாக மாற்ற வந்து சேர்ந்தது கொடுமையான புயல், சுழற்கண்ணி என்ற பெயரில்!",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன்னனுக்கு ராணியாக இருந்த தேவி, இன்பசாகரனுக்குத் தாயாகவும் மாறிய நேரந்தான், சுழற்கண்ணியின் படையெடுப்புக்கு ஏற்ற நேரமாகி விட்டது. முற்றுகையிட்டாள், முடிசூடியை; உடனே வெள்ளைக் கொடியைப் பறக்கவிட்டான் வேந்தன்! ஆயிரந்தோர்—ஐயாயிரம் காலாள்—ஆனைப்படை—புரவிச்சேனை அத்தனையும் தாக்கினாலும் அசைக்க முடியாது அவன் அரண்மனைக் கோட்டைச் சுவரை. அவளோ, ஒரு விழி வீச்சில், அவனது மனக் கோட்டையைச் சுக்கு நூறாக்கி, நொறுங்கிப்போன ஒவ்வொரு அணுவிலும் நின்றுகொண்டு வெறியூட்டும் நர்த்தனம் புரிந்தாள்.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேவி இன்பசாகரனோடு தாய்க்குலத்தின் பெருமையைத் தரணிக்கு அறிவித்துக்கொண்டிருந்தாள்.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேவனோ “திராட்சையினும் இனியது இந்த ரசம்” என இதழ் பருகிக்கொண்டு கிடந்தான், இளையவளோடு! அதுவும் அவனுக்குப் புதியவளோடு!",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கதிர் மறைந்த உலகிற்கு இருள் நீக்கும் நிலவு போலக் கோப்பெருந்தேவியின் கவலை படிந்த வாழ்விற்கு வாட்டம் தவிர்க்கும் வைரமாக இன்பசாகரன் திகழ்ந்தான்.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பல கனிப் பார்வையாளர் மீது நிலவு, ஒளி மழையையாவது பெய்கிறது; அதுவும் கிடைக்கவில்லை அந்த ‘அபாக்கியவதிக்கு’!",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்பசாகரன் மட்டுமே அவளுக்கு ஆறுதல் பொருளானான். அந்தப் பொருளையும் பூமியிலே புதைத்துவிடத் துடித்துக் கொண்டிருந்தாள் சுழற்கண்ணி. அதற்கான திட்டத்தையும் திட்டசனயன் தயாரித்து விட்டான்.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தச் சதியில் ஜெயம் நமக்கே!” என்று ஒருவரை ஒருவர் தழுவியபடி உரக்கக் கூவி மகிழ்ந்தனர்—ஊர் கெடுக்க வந்த ஜாலக்காரர்கள்.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திட்டத்தின் முதற் கட்டம் மிகத் தீவிரமாக அமுலுக்குக் கொண்டு வரப்பட்டது.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரெனச் சுழற்கண்ணி இளவரசன் இன்பசாகரன் மீது அன்பு மழை பொழிய ஆரம்பித்தாள். “அக்காளுக்கும் என்னைப்போலத்தானே ஆசையிருக்கும். அவளோடும் பேசி மகிழ்ந்து, கூடிக் குலவியிருப்பதுதானே தங்கையைப் போன்ற தர்மம் தவறாதவர்களுக்குத் தகுதியான காரியம்!” என்று உபதேசம் செய்ய ஆரம்பித்தாள் மன்னனிடம்!",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தேவி! நான் எப்படியோ விதியின் மாயையால் உங்கள் வாழ்வில் குறுக்கிட்டு விட்டேன். என்னை மன்னித்து விடுங்கள். இனி நான் எங்கே போவேன்? தங்கள் தங்கையாக எண்ணிக் கருதி எனக்கு வாழ்வு அளியுங்கள்” என்று கோப்பெருந்தேவியின் பாதங்களில் கண்ணீரைச் சொரிந்தாள்.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன்னன்—மகாராணி—இளவரசன் அனைவருமே அவளது மாயமாலத்தில் மயங்கினர்.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அரண்மனையில் புதிய இன்பம்! சந்தோஷமான திருப்பம்! அரசரும் அரசியும் ஒற்றுமைப்பட்டு விட்டனர். சுழற்கண்ணி, தன் தவறுகளை உணர்ந்து திருந்தி விட்டாள். அப்பப்பா! இளையராணி இப்போது இன்பசாகரனை எப்படிக் கவனிக்கிறாள் தெரியுமா! பெற்ற தாய்கூட இவ்வளவு அன்பு காட்ட முடியாது!” என்று சுந்தரபுரி முழுதும் குரல் கிளம்பியது.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இளவரசன் இப்பொழுதெல்லாம் தாயிடம் கூட அவ்வளவு அதிகமாகத் தங்குவதில்லை. இளைய ராணியின் மாளிகையிலே விளையாடிக் கிடக்கிறான். அவள் கையால்தான் அவனுக்கு உணவு தரவேண்டும். அவள் சொன்னால்தான் எதையும் கேட்பான். இது கண்டு அரண்மனையே அதிசயித்தது. அரசரும் சுழற்கண்ணியின் மீது புதிய பாசம் கொண்டார். அரசியும் அவளைத் தன் அருமைத் தங்கைபோல நடத்தினாள். தங்கையின் நெஞ்சிலே புகையும் நெருப்பை அவள் எங்கே கண்டாள்?",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருநாள் சுழற்கண்ணியின் மாளிகையில் இன்பசாகரன் குழல் வாத்தியக் கருவியுடன் நுழைந்தான். தெரியாதவள்போல",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அவள், “ஏது இந்தக் குழல் வாத்தியம்?” என்று கேட்டு வைத்தாள்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“திட்டசனயன் கொடுத்தானம்மா!” என்று கூறியபடி அதை ஊதிக்கொண்டு கூத்தாடினான், இன்பசாகரன்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சதித்திட்டம் இரண்டாவது கட்டத்தை அடைந்து விட்டது. இனி ஆரம்பிக்க வேண்டியதுதான் நமது வேலையை என்ற முடிவோடு, அவள் அவனைத் தழுவி யெடுத்துத் தன் மஞ்சத்தின் பக்கம் உட்கார வைத்து முத்தங்களால் அவன் முகத்தைச் சிவக்க வைத்தாள்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தின்பதற்காக ரோஜாப் பூவைப் பறிப்பவர்கள் அதன் மென்மையையும் வண்ணத்தையும் வியந்து கொண்டா இருப்பார்கள்! இதழ்களைக் கிள்ளி வாயில் போட்டுக்கொண்டே கடைசியில் அந்தக் காம்பை எறிந்து விடுவார்கள்!",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படித்தானிருந்தது, அவள் அந்த மலரொத்த இளைய மன்னனை எடுத்து முத்தமிட்டதும், அருகே உட்காரவைத்துக் கொண்டதும்!",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கண்மணி! உனக்கு ஓர் அருமையான பண் கற்றுத் தருகிறேன். அதை இந்தக் குழலில் நீ ஊதினால் பிரமாதமாக இருக்கும்!” என்று பேச்சை ஆரம்பித்தாள் வயதில் இளமையும், வஞ்சகத்தில் முதுமையுங் கொண்ட அந்த வடிவழகி.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கற்றுக் கொடம்மா!” என்று குழலை அவளிடம் கொடுத்தான் இளவல்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளும் குழல் மூலம் பண் எழுப்பினள். “இனிமை! இனிமை!!” எனப் பாராட்டினர் தோழியர்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பண் பாலகனின் மனத்தையும் கொள்ளை கொண்டது. தானும் அதைக் கற்றுக்கொள்ள வேண்டுமென்ற ஆர்வம் இளம் நெஞ்சில் கொழுந்து விட்டது.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எப்படியாவது எனக்கு இந்தப் பண்ணைக் கற்றுக் கொடம்மா?” எனப் பிடிவாதம் செய்தான்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளும் அந்த வேண்டுகோளுக்குத்தானே அந்தப் பிஞ்சு மனத்திலேயிருந்து எதிர்பார்க்கிறாள்.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரண்டு நாள் சிரமம் எடுத்துக்கொண்டான் இளவரசன்—பண், பாடமாகிவிட்டது!",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அருமை தம்பி! அருமை! நான் வாசித்ததைவிட நீ வாசிக்கும்போது, பண்ணிலே மழலையின் இனிமை மறைந்து திருக்கிறது! பெருமையை அதிகமாக்குகிறது. ஆகா! இந்தக் கீதத்தை அரண்மனை நந்தவனத்திலே உட்கார்ந்து வாசித்தால் மயில்கள் எல்லாம் தாமே வந்து எதிரே நின்று ஆடும்!” என்று சாகசப் பேச்சைத் தாய்க் குரலிலே கலந்து தந்தாள் சுழற்கண்ணி!",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதோ இப்போதே போய்த் தோட்டத்தில் வாசிக்கிறேன். தோகை மயில்கள் ஆடுகின்றனவா என்று பார்க்கிறேன்” எனக் குழலுடன் ஓட்டம் பிடித்தான் இளவரசன்.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுழலியின் கண்கள் அகல விரிந்தன. அவள் முகத்தில் புதிய தேஜஸ் காணப்பட்டது. “வெற்றி! வெற்றி!” எனத் தனக்குள் முணுமுணுத்துக் கொண்டாள், மகிழ்ச்சியோடு!",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரண்மனைத் தோட்டம்—அடுக்குமல்லிகைப் புதரின் ஓரம்—அழகே உருவெடுத்த அரசிளங்குமரன் ஆர்ப்பித்து விட்டான் குழல் வாத்தியத்தை! இளையவன் கற்றுத் தந்த பண்ணை மாறி மாறி ஊதினான். பாவம்; அவனுக்கென்ன தெரியும்—அவன் கற்றுத்தந்த கீதம் பாம்புகளை அருகே வரவழைக்கும் கீதமென்று!",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பண்ணை அவனுக்குப் பாடமாக்க வேண்டும். அவன் அதை ஊதிக்கொண்டிருக்கும்போது தோட்டத்தில் தொலைவிலே விஷப் பாம்பை விட்டுவிட வேண்டும். குழலோசை கேட்டுப் பாம்பு அவனருகே வந்து படமெடுத்து ஆடும். பண்ணை அவன் நிறுத்தினால்; உடனே பாம்பு அவன் மீது சீறிப் பாய்ந்துவிடும்.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படியொரு திட்டத்தைத் திட்டசனயன் தீட்டித் தந்து, அதற்கு வெகுமதியாக அவளிடம் பெற வேண்டியதைப் பெற்று, அவளும் இளவரசனை அரண்மனைத் தோட்டத்திற்கு அனுப்பி விட்டாள். இன்பசாகரனின் குழலோசை குளிர்ச்சியை மொண்டு மொண்டு ஊற்றியது! ஆனந்தத் தென்றல் வந்து ஆரத் தழுவுவது போன்ற உணர்ச்சியைத் தந்தது!",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மகுடியிலும் இல்லாத மயக்க உணர்வை அந்தக் குழலிலேயிருந்து புறப்பட்ட பண் கிளப்பியது.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நேரம் பார்த்துக்கொண்டிருந்த கோர மனிதன் திட்டசனயன், தான் பிடித்து வைத்திருந்த பாம்பை இளவரசனுக்கு அருகேயுள்ள புதரின் பக்கமாகக் கீழே விட்டான். விடுபட்ட பாம்பு, குழலோசை நோக்கி நகர்ந்தது. தன்னை நோக்கி ஆபத்து ஊர்ந்து வருகிறது என்பதை அறியாத அந்த அழகுப் பிறை நிலவு,",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "space"
+     },
+     {
+      "text": "சின்னம்மா கற்றுத்தந்த பண்ணை விடாமல் ஊதிக்கொண்டே இருந்தது.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்னும் சிறிது நாழிகையில் மயில்கள் எல்லாம் வந்து தன் முன்னே ஆடப்போகின்றன என்ற நினைவோடு, இன்னும்—இன்னும் அதிக உற்சாகத்தோடு குழல் ஒலி புறப்பட்டது!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நகர்ந்து வந்த நாகம், படமெடுத்தபடி பாலகனின் எதிரே மயங்கி நின்றது. அதைப் பார்க்காத இளவரசன் குழலூதும் கவனத்தில் கண்களை மூடிக்கொண்டு உட்கார்ந்திருந்தான்.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்கள் மூடிக்கொண்டே குழல் ஊதுவது—திடீரெனத் திறந்து பார்த்தால் எதிரே மயில்கள் ஆடும்—அதைப் பார்த்து மகிழ்வது! இப்படி ஓர் இன்பக் கனவோடு அவன் இசை முழக்கம் செய்து கொண்டிருந்தான்.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் என்ன கண்டான்—எதிரே உயிர் வாங்கும் பாம்பு பல்லிலே விஷம் தேக்கியபடி ஆடிக்கொண்டிருக்கிறது என்பதை!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மயங்கி நிற்கிறது நாகம்! மயக்கம் தெளிந்தால் இளவரசன் அதற்கு இரையாவான்!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இசை நின்றால், உடனே பாம்பின் மயக்கமும் தெளிந்து விடும்!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்ன நடக்கப்போகிறது என்பதை உப்பரிகையில் இருந்தபடியே இளையவள் பார்த்துக் கொண்டிருந்தாள்.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புதரின் மறைவில் இருந்தபடியே திட்டசனயன் புன்னகை சிந்திக் கொண்டிருந்தான்.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் கொடுமையைக் காண்பதற்குக் கோப்பெருந்தேவியும் அங்கு வந்து சேர்ந்தாள். கீதம் அவளைக் கவர்ந்தது. எங்கிருந்து வருகிறது எனக் கவனித்தாள். இன்பநாதம் எழுப்புவது தன் மகன் எனக் கண்டாள். மகிழ்ந்தாள். அடுத்த கணம் மகிழ்ச்சி மறைந்தது. சுந்தரபுரியின் எதிர்கால மன்னன்—அவனெதிரே சாவின் நர்த்தனம்!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வயிற்றிலே கிடந்த வைடூரியம்! அதை விஷத்தால் குளிப்பாட்டி வேகவைக்க எதிரே மரணத்தின் மயக்கம் நிறைந்த சதிராட்டம்!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யய்யோ—என்ன செய்வேன்!” என நிமிர்ந்தாள். இளையவள்—திட்டசனயன் இருவரும் இருப்பதை உணர்ந்தாள்.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் பார்க்காதவள்போல் பாலகன் பின்னே வந்தாள். அவளுக்குப் புரிந்து விட்டது—சதி பற்றிய விளக்கம். குழலோசை நின்றால், பின் குமரனைப் பாம்பு தீண்டிவிடும் என்பதையும் தெரிந்து கொண்டாள். அவளது தாய் உள்ளம் தணலிவிட்ட புழுவாயிற்று.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எந்தத் தாய்க்குத்தான் சகிக்கும்! தான் பெற்ற தங்க விக்ரகத்தின் மேனியெங்கும் நீலம் பாய்ந்து, அலங்கோலமாக விழப்போவதை எந்த அன்னைக்குத்தான் தாங்கிக் கொள்ள முடியும்!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இன்பசாகரா!” என்று சப்தம் போட்டால் அவன் திடீரெனக் குழல் வாசிப்பதை நிறுத்தி விடுவான்—உடனே நாகம் தன் வேலையை முடித்து விடும். என் செய்வாள் தாய்? கத்தினாள். எப்படி? “இன்ப சாகரா!...வாத்தியத்தை நிறுத்தாதே! நிறுத்தாதே! ஊதிக்கொண்டேயிரு!” என்று அலறினாள். தாயின் குரல் அந்த இளவலின் காதிலே ஒலித்தது. கண்ணைத் திறந்தான். எதிரே பாம்பு! நடுக்கம் தாங்க முடியவில்லை. எழ முடியாதபடி ஆகி விட்டான்!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாயோ தொடர்ந்து சப்தமிட்டுக் கொண்டேயிருந்தாள்:  \n**“நிறுத்தாதே! ஊது!! ஊது!” என்று.**",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவனும் ஊதிக்கொண்டேயிருந்தான், ஏன் எதற்கு என்று புரியாத நிலையிலே!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஊது! ஊது!!” என்று கூவிக்கொண்டே தாய் அவனருகே வந்து கொண்டிருந்தாள்.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குழலோசை உச்சக் கட்டத்தை அடைந்தது. நாகமும் இன்னும் மேலே உயர்ந்து படந்தாக்கி ஆடியது.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நிறுத்தாதே! ஊது! ஊது!”—தொடர்ந்து அலறல்! அதையொட்டி “ஆ!” என்ற சப்தம்!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆம்; கோப்பெருந்தேவி, ‘தடா’வென்று அந்தப் பாம்பின் முன்னே விழுந்தாள்.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "படமெடுத்திருந்த பாம்பு அவள் மீது பாய்ந்தது—அவள் உடலில் விஷம் பரவியது. இனியென்ன? பாம்பு ஓடியது. ஓடுகிற பாம்பை வாளால் வீசிக் கொன்று விட்டு அங்கு ஓடிவந்து விழுந்தான் மன்னவன்.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிரபு! பிரபு!”",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோப்பெருந்தேவி அழுதாள்.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செல்வத்தை ஜாக்கிரதையாகப் பார்த்துக் கொள்ளுங்கள்!” என்று இன்பசாகரனை இழுத்து அரசனின் கையிலே ஒப்புவித்தாள்.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மா!” என ஓலமிட்டான் இளவரசன்.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாய்மை தன் கடமையைச் செய்து விட்டுக் கண்ணை மூடிக் கொண்டது.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரசன் இளைய ராணியையும் திட்டசனயனையும் வெறித்துப் பார்த்தான். அவர்கள் அங்கிருந்து ஓட்டம் பிடித்துக் கொண்டிருந்தனர்.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“விடாதீர்கள், அவர்களை!” என்று கத்தினன்.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யோ! ஒரு வினாடி தவறி விட்டது—இல்லையேல் நாகத்தை வாளால் நறுக்கிவிட்டு, மனைவி, மகன் இருவரையுமே காப்பாற்றியிருப்பேன்!” என அங்கலாய்த்துக் கொண்டான் அரசன்.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என் செய்வது? தாய்மையின் மதிப்பு தரணிக்குத் தெரிய வேண்டுமே—அதனால்தான் போலும் அவன் சிறிது தாமதமாக அங்கு வர நேர்ந்தது!",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Thaaymai",
+    "sourceScan": 73,
+    "printedPage": 64
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Through dalliance and daring, somehow I have destroyed the king’s love for the queen. That great queen had sat in the king’s heart like an indelible portrait! I have smeared charcoal over that imperishable painting.",
+      "sourceScan": 73,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“She was once the lamp of radiance in the palace of the king’s mind! Today that lamp has been cast out into the street. Surrounded by her companions, with a path of flowers laid through the pleasure garden where peacocks spread their plumes and danced, she and the king once went on joyous promenades—that was in those days.",
+      "sourceScan": 73,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Now the beautiful form of this Suzhar-kanni has been set in the monarch’s heart like an image in a shrine. Once the king’s lap and flower-soft shoulders belonged to her! Today, at my word, the crowned warrior has become a ‘magic doll’ that moves as I wish! This is indeed a victory for me—yet my mind has found no peace. Though she has lost the king’s affection and love, she has not lost the honour of being the chief queen. Nor has she surrendered the right by which her son is heir to the crown.”",
+      "sourceScan": 73,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“In this situation, what peace can there be for me, brother-in-law? The whole town sympathizes with her. The people’s assembly laments that the separation of the king and queen is an unforeseen calamity for the country. The ministers beat their breasts and cry that the sovereign failed to understand my nature properly, and therefore fell into my net. Even the palace circle refuses to grant me the respect due to me as the younger queen.",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not merely the king’s queen upon his couch, was not Kopperunthevi also a warrior woman who took up sword and spear and fought in fierce battle? Where is she—and where am I, who have bent Malligarthavarai with the music of my bangles?—so they speak in the soldiers’ camps. I am preparing myself to face all this opposition. But, brother-in-law! Before her son Inbasagaran grows up and lifts the prince’s crown onto his head, he must be destroyed. Sundarapuri must become the property of Suzhar-kanni. The child growing in my womb must claim the sceptre of this land. The obstacle is her precious, life-giving son! Tell me a way to remove that obstacle, brother-in-law! Only with your help must I plant the flag of victory.",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Brother-in-law! Only by standing behind your protection can I fulfil the purpose of my life. Why are you silent—speak! Are you angry because I asked you to stand away and speak? I was only afraid that it was nearly time for the king to come. Here...I shall open those rough lips of yours, shut tight, with my rose petals... ‘Kiss!... Kiss!’ Is that enough? The long feast another day! Brother-in-law! Suzhar-kanni as queen of Sundarapuri—and this land belonging to her child—will such a fine future arise? Will a plan for it dawn right now in that thittasanayam-filled brain of yours?”",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not worry, Suzhar-kanni! When this thittasanayan is here, can there be any shortage of schemes? Just as you gave me sweet kisses, I will not hesitate to give you schemes that will succeed—",
+      "sourceScan": 74,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I once gave you the rare counsel that made you the king’s younger queen—have you forgotten? In the same way I shall find the proper means to pluck Prince Inbasagaran out of the thicket of life. Inbasagaran is a tender bud! If I wished, I could crush that bud even with my fingers and throw it away! But the bud grows in the palace garden. This is no unfenced field; the thorn-bud belongs to the king’s house! The conspiracy must be carried out with the utmost saava-jaakkirathai. The prince must die. But it must not appear that we killed him—it must not even be reported that he was murdered. The country, the ruler, and the king himself must believe that he died naturally. I shall tell you the way!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Tell me quickly, brother-in-law!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Give me one more, and I will tell you!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here! Why one? Nine!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Aha! Suzhal! I am intoxicated—utterly intoxicated! In the drunkenness of kisses my brain has gone on strike. At dawn tomorrow I shall come to meet you with the plan.”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Come after the king has left the bedchamber.”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do you think I am mad enough to come while he is here?”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Good! The plan must be perfect!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Like you?”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“No; like our true love!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What a clever one you are, Suzhar-kanni! Is this how you spin tales even to the king in the bedchamber?”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I have two hearts, aththaan! In one is my desire for you; in the other is my dream of Sundarapuri’s throne! It is only with that second heart that I praise the king—worship him—pour delight upon him!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Suzhal! It is getting late. I am going! Look, it seems the king is coming!”",
+      "sourceScan": 75,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Dawn—the plan—do not forget!”",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The feast—you do not forget that either!”",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suzhar-kanni nodded as though agreeing with him and scattered a smile. Thittasanayan moved away, still savouring that smile. Running his throbbing lips over his heavy tongue as though relishing some sweet taste, the brute disappeared from Suzhar-kanni’s sight at precisely the moment the king arrived, calling “Sundar,” to read his poem of pleasure.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king came. As if to prove that everything she had told Thittasanayan was true, he leaned into her lap—and fell into her grasp.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suzhar-kanni was the younger queen of the king of Sundarapuri. Thittasanayan was her brother-in-law, a distant relation. He had a post in the palace as a bodyguard. He had two duties in turn: to guard the king’s body—and, whenever there was leisure and opportunity, to lie embracing Suzhar-kanni’s body! Would fruit-nectar taste bitter to drink? And he was a karadi thirumaniyan besides! Suzhar-kanni was like a honeycomb, coming to him of her own accord, again and again. One need not even imagine bending a branch and pouring out its honey to satisfy one’s hunger. In the Sundarapuri palace, this had become an everyday event. The green-parrot-like woman clung to his rock-hard, rough chest.",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He himself would sing in a ripened voice, “My sweet one who delights my desire! My ambrosia that gives sweetness!” Behind the curtain, while this shameful injustice went on, the king of kings, unaware even of its trace, would gaze at her and string garlands of praise: “Noble one! Exalted one! Pleasure-giver! Urvashi!”",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The royal connoisseur simply failed to understand that the ‘Vasantha Sena’ who had come to turn the Sundarapuri empire into a cremation ground was roaming there in the form of Suzhar-kanni!",
+      "sourceScan": 76,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kopperunthevi was the jewel who had shone in that palace—as the peacock of the king’s inner chambers, as the minister who offered counsel, as the warrior woman who followed him when it was time to enter the field, and as the loving mother who watched over the welfare of the people of Sundarapuri. The cruel storm that came to turn that jewel into a raging sea bore the name Suzhar-kanni!",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The very time when the queen, already the king’s wife, became mother to Inbasagaran was the time most favourable for Suzhar-kanni’s invasion. She besieged the crowned one; at once the monarch raised the white flag! A thousand warriors, five thousand infantry, elephant corps and cavalry together could not shake the fortress wall of his palace. But with a single sweep of her eyes she shattered the fortress of his mind into a hundred pieces, and standing upon every broken particle, performed a frenzy-filled dance.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The queen, with Inbasagaran, was proclaiming to the earth the greatness of motherhood.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king meanwhile lay with the younger woman—new to him too—drinking from her lips and saying, “This nectar is sweeter than grapes.”",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As the moon relieves the darkness of a world after the sun has vanished, Inbasagaran shone like a diamond that dispelled the sorrow-clouded life of Kopperunthevi.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The moon at least rains light upon pala-kani onlookers; even that was denied to that ‘unfortunate woman’!",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Inbasagaran alone became her source of consolation. Suzhar-kanni was yearning to bury even that treasure beneath the earth. Thittasanayan had already prepared the plan for it.",
+      "sourceScan": 77,
+      "printedPage": 68,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Victory in this conspiracy will be ours!” they shouted joyously, embracing each other—the conjurers who had come to ruin the land.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The first stage of the plan was put into effect with great intensity.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suddenly Suzhar-kanni began to shower affection upon Prince Inbasagaran. She began preaching to the king: “Would not elder sister have desires just as I do? Speaking happily with her, spending time in companionship with her—is that not the proper conduct for one who, like a younger sister, does not stray from dharma?”",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Devi! Somehow, by the illusion of fate, I came between you and your life. Forgive me. Where can I go now? Think of me as your younger sister and grant me a life,” she said, pouring tears at Kopperunthevi’s feet.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king—the chief queen—the prince—all were bewildered by her maaya-maalam.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“New happiness in the palace! A joyful turn! The king and queen have become united again. Suzhar-kanni has realised her mistakes and reformed. Good heavens! Do you know how the younger queen cares for Inbasagaran now? Even his own mother could not show so much affection!”—so the whole of Sundarapuri began to say.",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "These days the prince did not stay even with his mother for very long. He played in the younger queen’s mansion. She herself had to feed him. Only when she told him something would he listen. The whole palace marvelled at it. The king developed a new affection for Suzhar-kanni. The queen treated her like a beloved younger sister. How could she see the fire smouldering in that sister’s heart?",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day Inbasagaran entered Suzhar-kanni’s mansion carrying a flute-like instrument. Pretending not to know,",
+      "sourceScan": 78,
+      "printedPage": 69,
+      "joinToNext": "space"
+     },
+     {
+      "text": "she asked, “What is this flute?”",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Thittasanayan gave it to me, amma!” said Inbasagaran, blowing it as he danced about.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The conspiracy had reached its second stage. With the resolve that now only their work had to begin, she embraced him, lifted him, seated him near her couch and reddened his face with kisses.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When people pluck a rose in order to eat it, do they keep marvelling at its softness and colour? They pluck off the petals and put them into their mouths, and in the end throw away the stalk!",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So it was when she took that flower-like young prince, kissed him, and seated him beside her!",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Darling! I shall teach you a wonderful paṇ. If you play it on this flute, it will sound magnificent!” began that beauty who was young in age but old in deceit.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Teach me, amma!” said the boy, handing her the flute.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She too raised the paṇ through the flute. “Sweet! Sweet!!” praised the companions.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That melody captured the child’s mind as well. The desire to learn it himself sprang up in his young heart.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Somehow you must teach me this paṇ, amma!” he insisted.",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Was not that request exactly what she had been waiting to hear from that tender mind?",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The prince struggled for two days—the paṇ had become learned!",
+      "sourceScan": 79,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Wonderful, little brother! Wonderful! When you play, more than when I played it, the sweetness of infancy seems hidden within the paṇ! It adds still more beauty. Ah! If you sit in the palace pleasure garden and play this song, all the peacocks will come of their own accord and stand before you dancing!” Suzhar-kanni mixed adventurous deception into a motherly voice.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Then I will go to the garden right now and play it. I shall see whether the peacocks dance!” said the prince, running off with the flute.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suzhali’s eyes widened. A new radiance appeared on her face. “Victory! Victory!” she murmured to herself in delight.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The palace garden—beside the thick jasmine bush—the young prince, beauty itself embodied, burst forth upon the flute! Again and again he played the paṇ the younger woman had taught him. Poor child; what did he know—that the melody she had taught him was one that drew snakes near!",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The paṇ had to become familiar to him. While he was playing it, a venomous snake was to be released some distance away in the garden. Hearing the flute, the snake would come near him, raise its hood and dance. If he stopped the paṇ, the snake would immediately hiss and spring upon him.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thittasanayan had devised this plan, received from her the reward due to him for it, and she had sent the prince into the palace garden. Inbasagaran’s flute poured coolness in great draughts! It gave the sensation of a blissful breeze coming to embrace him fully!",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The paṇ issuing from that flute awakened an enchantment that even a magudi could not produce.",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Watching for the right moment, the cruel man Thittasanayan released the snake he had been holding near a bush close to the prince. Freed, the snake moved toward the sound of the flute. Unaware that danger was crawling toward him, that lovely crescent moon,",
+      "sourceScan": 80,
+      "printedPage": 71,
+      "joinToNext": "space"
+     },
+     {
+      "text": "continued without stopping the paṇ his chinnamma had taught him.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thinking that in a little while all the peacocks would come and dance before him, the flute rang out with still greater enthusiasm!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The advancing cobra raised its hood and stood entranced before the child. The prince, not seeing it, sat with his eyes closed, absorbed in playing.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To play the flute with closed eyes—to open them suddenly and see peacocks dancing before him—to rejoice at the sight! With such a pleasant dream, he continued making music.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What did he see—before him, a life-taking snake dancing with venom stored in its fangs!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The cobra stood entranced! If the trance broke, the prince would become its prey!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If the music stopped, the snake’s trance would immediately clear!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "From the upper pavilion, the younger woman watched what was about to happen.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Hidden behind the bush, Thittasanayan smiled.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kopperunthevi too came there to witness that cruelty. The melody attracted her. She listened for where it came from. She discovered that the sweet music was being made by her own son. She rejoiced. The next instant her joy vanished. The future king of Sundarapuri—and before him, the dance of death!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The vaiduriyam that had lain in her womb! Before it, a dance filled with death’s intoxication, ready to bathe it in poison and cook it!",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayyo! What shall I do?” she cried, rising. She sensed the presence of the younger queen and Thittasanayan.",
+      "sourceScan": 81,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Pretending not to see them, she came up behind the boy. She understood—the conspiracy had become clear to her. She also knew that if the flute stopped, the snake would bite the prince. Her mother’s heart became like a worm cast into burning embers.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What mother could bear it? What mother could endure seeing the body of the golden idol she bore turn blue all over and fall in ruin!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If she shouted “Inbasagara!” he would suddenly stop playing—and at once the cobra would finish its work. What could the mother do? She shouted. How? “Inba Sagara!...Do not stop the instrument! Do not stop! Keep playing!” she screamed. The mother’s voice reached the young boy’s ears. He opened his eyes. A snake before him! He could not contain his trembling. He became unable even to rise!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The mother continued to shout:  \n**“Do not stop! Blow!! Blow!”**",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He too kept playing, not understanding why or for what!",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Blow! Blow!!” the mother cried as she came toward him.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The flute reached its highest pitch. The cobra rose still higher and danced with its hood spread wide.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not stop! Blow! Blow!”—the cry continued! Following it came a shout: “Ah!”",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yes; with a thud, Kopperunthevi fell before the snake.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The hooded cobra sprang upon her—the poison spread through her body. What then? The snake fled. The king came running, flung his sword at the fleeing snake and killed it, then rushed to the spot and collapsed there.",
+      "sourceScan": 82,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Prabhu! Prabhu!”",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kopperunthevi wept.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Take careful care of the treasure!” she said, drawing Inbasagaran forward and placing him in the king’s hands.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Amma!” wailed the prince.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Motherhood had done its duty and closed its eyes.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king glared at the younger queen and Thittasanayan. They were fleeing from the place.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not let them escape!” he shouted.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayyo! I was late by a single second—otherwise I would have cut the cobra down with my sword and saved both my wife and my son!” the king lamented.",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What can be done? Perhaps he was made to arrive a little late so that the earth might learn the worth of motherhood!",
+      "sourceScan": 83,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83
+ ]
+}

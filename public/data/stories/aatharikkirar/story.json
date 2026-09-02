@@ -1,0 +1,935 @@
+{
+ "workId": "aatharikkirar",
+ "slug": "aatharikkirar",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/aatharikkirar",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஆதரிக்கிறார்",
+  "en": "Aatharikkirar"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 12,
+  "printedPages": {
+   "first": 93,
+   "last": 98
+  },
+  "sourceScans": {
+   "first": 102,
+   "last": 107
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஆதரிக்கிறார்",
+    "sourceScan": 102,
+    "printedPage": 93
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புண்யகோடி என்பது அவருக்குப் பெயர். அவர் ஈடுபடாத பொதுப் பணிகளே கிடையாது. அகில உலகப் புகழ் பெறவிட்டாலும், அனைத்திந்தியப் பெயர் கிடைக்காவிட்டாலும், தமிழக மெங்கணும் அவரை அறிவார்கள் என்ற நிலை பிறக்காவிட்டாலும், அவரது சொந்த நகரத்திலே அவரைச் சுற்றிப் பலர் சூழ்ந்தபடி இருப்பார்கள். நகரசுத்தித் தொழிலாளர்கள் வேலை நிறுத்தம் என்ற ஒரு செய்தி கிளம்பும். செய்திக்கு முன்பாக இவர் கிளம்புவார்; “நகரசுத்தியாளர்களே! தயாராகுங்கள். ரத்தம் சிந்துவோம். எத்தர்களை விரட்டுவோம்” என்று முரசு கொட்டுவார்.",
+      "sourceScan": 102,
+      "printedPage": 93,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தத் தொழிலாளர்களின் தலைவர்களால்கூட அப்படிக் கர்ச்சனை செய்ய முடியாது; இவர் அவ்வளவு பிரமாதமாகச் சங்கநாதம் செய்வார். அந்தக் கிளர்ச்சி அடியோடு செத்துச் சுடுகாடு போகிற வரையிலே தூங்கமாட்டார். தோல்விக்கு இவரே பல காரணங்கள் எடுத்துச் சொல்லிவிட்டு, அடுத்த போராட்டம் என்ன துவக்கலாம் என்று மூக்கில் விரல் வைத்துக்கொண்டு யோசிப்பார். நகரசுத்தியாளருக்கு அதுவரையிலே கிடைத்துவந்த சலுகைகள் சிலவும் புண்யகோடியின் பிரவேசத்தால் குறைந்துபோகும்.",
+      "sourceScan": 102,
+      "printedPage": 93,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படிக் குறைந்தால்தான் ஆத்திர உணர்ச்சி அதிகமாகப் பெருக்கெடுக்கும் என்று புது விளக்கம் தந்துவிட்டுப் பொதுக் கூட்டத்திலே விழுகிற மாலைகளிலே ரோஜா மலர்கள் இருக்கின்றனவா; இருந்தால் எத்தனை நாளைக்குக் காப்பி போடலாம் என்று கணக்குப் போடுவார்.",
+      "sourceScan": 102,
+      "printedPage": 93,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரென ஒருநாள் நகரசபையார் ஆயிரம் பிராமணர்களுக்கு அன்னதானம் என்று அறிவிப்பு விடுவார்கள்.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம், செய்யவேண்டியதுதான். அந்தணர் மனங் குளிர்ந்தால்தான் ஆண்டவன் மனங்குளிரும்” என்று அதற்கும் வியாக்யானம் தருவார்.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிராமண போஜனத்திலே புண்யகோடி ஆற்றிய பணிதான் தலைசிறந்து நிற்கும். வயிறு புடைக்கத் தின்று ஏப்பமிடும் கூட்டத்தினரும் நகரசபைத் தலைவரை வாழ்த்துவதைவிட அதிகமாகப் புண்யகோடியை வாழ்த்துவார்கள்.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நகரசபைத் தலைவர் வெள்ளையப்ப பிள்ளை பெயருக்கேற்றபடி மிகவும் வெள்ளை இதயமுள்ளவராயில்லாவிட்டாலும், அதிகக் கெட்டவரல்ல. நகரத்தின் முன்னேற்றத்திலே சிறிது நாட்டங் கொண்டவர்தான். சிரமங்கள் ஏற்றுச் செல்வக் குவியலிலே ஒரு பகுதியைக் கரைத்து எப்படியும் நகரசபைத் தலைவராக வந்துவிட வேண்டுமென்று கங்கணம் கட்டி வெற்றி பெற்றவர். அவருக்கு புண்யகோடியின் மீது பற்றும் பாசமும் உண்டு, புண்யகோடிக்குப் பொதுமக்களிடத்திலே ஏற்பட்டிருக்கிற ஆதரவும்—சேர்மன் வெள்ளையப்ப பிள்ளைக்கு அவர்பால் அன்பு உண்டாக்க ஒரு காரணமாயிருந்தது. அதேநேரத்தில் வெள்ளையப்பருக்கு வரவேண்டிய புகழையெல்லாம் புண்யகோடி புத்தி கூர்மையுடன் தன் பக்கம் திருப்பிக்கொள்வதை வெள்ளையப்பர் அறிய முடியவில்லை. அறிந்தாலும் அதுபற்றிக் கவலைப்படப் போகிறவரில்லை. அவருக்கு வேண்டியதெல்லாம் உயர்ந்த பதவி. அவர் உயர்ந்த பதவியென்று கருதுவதெல்லாம் நகரசபைத் தலைவர் பதவிதான். ஆகவே, யார் பக்கம் பொதுமக்கள் இருந்தாலும், புகழ் தேங்கி இருந்தாலும் அவர் கவலைப்படுவதில்லை. தேர்தல் நேரத்திலே பொது மக்களின் எஜண்டை கைக்குள் போட்டுக்கொண்டால் போதும் என்று எண்ணுகிறார். அதற்கென்ன, அதிக சிரமமா வேண்டும்? பணத்தால் அடித்தால் சுருண்டு விழக்கூடிய பொது நலவாதி புண்யகோடி பக்கத்திலே இருக்கும்போது!",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தரங்கத்திலே அந்தஸ்து படைத்தவர்களின் அடிமையாகவும், அம்பலத்திலே பொதுநலத் தொண்டராகவும் புண்யகோடி உலவிக் கொண்டிருந்தார்.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆகா, எவ்வளவு நல்ல மனிதரப்பா! ஏழைகள் துடித்தால் அவரும் துடிக்கிறாரே! அவரல்லவா ஏழைப் பங்காளர்” என்று ஏற்றிப்போற்றினர், குடிசைவீட்டுக்காரர்கள்.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆற்றிலே வெள்ளம்—அணைபோட மக்கள் பட்டாளம் திரளும். உழைப்பாளர்கள், யார்யாரோ! நகரசபை, பணம் செலவழிக்கும். அங்கே தளபதியாக நின்று அதிகாரக்குரல் எழுப்புவார் நமது புண்யகோடி. தேகம் வாடாமல்—வியர்வை சிந்தாமல்—‘ஆற்று வெள்ளத்தைத் தடுத்த தலைவன் புண்யகோடி’ என்ற பட்டத்தைச் சுலபமாகப் பெற்றுக்கொண்டு போய் விடுவார்.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகான வீடு—அருமையான வாழ்வு—பலபலப்புக் கெடாத பொதுநலத் தொண்டு—பகட்டு வெளிப்படாத அளவுக்குத் தந்திர மிக்க வாழ்வு—புண்யகோடியின் சக்கரம் அப்படி உருண்டு கொண்டிருந்தது.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நகரசபையிலே ஒரு நல்ல தீர்மானம் நிறைவேறியது தேர்தல் நெருங்கிவிட்ட காரணத்தால் நன்மை பயக்கும் தீர்மானங்கள் சிலவற்றினுள் பொதுமக்களைக் கவரவேண்டிய நிலைமை ஏற்பட்டது பதவியிலிருக்கும் வெள்ளையப்பருக்கு!",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீதிகளையெல்லாம் தார் போட்டவைகளாக்க வேண்டும். ஒரே ஒழுங்காகத் தெருக்கள் அமைய வேண்டும். அதற்கான வேலையை உடனடியாகத் துவங்க வேண்டும் என்று ஒரு தீர்மானம் நிறைவேறியது.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுத்தபடியாக நகரசபைக் கட்டிடத்தைப் புதுப்பிக்க வேண்டும் என்று ஒரு அவசரத் தீர்மானமும் கொண்டுவரப்பட்டது.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கட்டிடம் புதுப்பிக்கப்படும் வரையிலே, நகரசபை அலுவலகத்தை எங்கே வைத்துக்கொள்வது என்ற பிரச்சினை கிளம்பியது. அப்போது பொதுநலத் தொண்டர் புண்யகோடி புறப்பட்டார். மக்கள் நலனுக்காக என் வீடுகளில் ஒன்றைத் தற்காலிகமாக நகரசபை அலுவலகத்திற்கு வாடகையில்லாமல் தருகிறேன் என்று தம்பட்டமடித்தார்.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஊரெல்லாம் பேசியது அவரது உதார குணத்தை மெச்சி!",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நகரசபைக் கட்டிட வேலை துவங்கியது. புண்யகோடியின் வீட்டிலே அலுவலகம் பணியாற்றியது.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புதிய கட்டிடத்தின் திறப்புவிழா நடைபெற்றது. திறப்பு விழாவிலே தற்காலிக அலுவலகத்திற்குத் தன் வீட்டைத் தாராள",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மாகத் தந்த தங்கை புண்யகோடி என்று வாழ்த்திப் போற்றினார்கள், நகரசபையார்—விழாத் தலைவர்—விரிவுரையாளர்கள்—அனைவருமே!",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொதுமக்கள் அரங்கிலே புண்யகோடிக்கு நல்ல பெயர் வந்துவிட்டது. இனி அவருக்கு வேண்டியது பணமல்லவா? அதுதானே புண்யகோடியின் இலட்சியம், அதற்கான முயற்சிலே ஈடுபட்டார். நகரசபைக்கு ஒரு ரகசிய விண்ணப்பம் அனுப்பினார். அதில்,",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் சொந்த வேலைகளைக்கூடக் கவனியாமல், என் சொந்த வசதிகளைக்கூட எதிர்பார்க்காமல், பலர் எதிர்த்துங்கூடப் பொருட்படுத்தாமல், என் வீட்டை நகரசபை அலுவலகத்திற்கென இதுவரை கொடுத்திருந்தேன். அதனால் என் வீட்டிலே ஏற்பட்டிருக்கிற பழுதுகளை மீண்டும் புதுப்பிக்கப் பத்தாயிரம் ரூபாய் தேவைப்படுகிறது. அந்தப் பத்தாயிரத்தை எனக்கு நஷ்ட ஈடாகத் தரும்படியாகக் கேட்டுக் கொள்கிறேன்.”",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்பதாகக் குறிப்பிட்டிருந்தார் அந்த விண்ணப்பம் நகரசபைத் தலைவரின் பார்வைக்குப் போவதற்கு முன்பே நகரசபைத் தலைவர் வெள்ளையப்பர், தேர்தல் வேலைகளிலே ஈடுபட வேண்டியதாயிற்று, பலத்த போட்டி. பணம் நீராக ஓடியது. முடிவு பரிதாபகரமாக மாறிவிட்டது. வெள்ளையப்பர் கவுன்சிலராகக் கூட வர முடியவில்லை!",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புண்யகோடிக்கு உள்ள வருத்தமெல்லாம் அந்தப் பத்தாயிரம் வரவேண்டியது போய்விட்டதே என்பதுதான்.",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொதுநலத் தொண்டன் என்ற பெயர்மட்டுந்தானு மிச்சம் என்று பெருமூச்சுவிட்டார்.",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நகரசபையில் குறிப்பிடத்தக்க மாறுதல் ஏற்பட்டது. வெள்ளையப்பரின் ஆதிக்கம் அறவே ஒழிக்கப்பட்டு, அந்த ஊரில் அப்போது பிரபலமடைந்த மஞ்சள் கட்சி என்ற புதுக் கட்சி பதவி ஏற்றது. அந்தக் கட்சியின் தலைவர்தான்—நகரசபைத் தலைவராகப் பதவியேற்ற **ராஜ நிலையத்தார்** என்பவர். அவருக்கும் நமது புண்யகோடிக்கும் ஒற்றுமை கிடையாது. இவ்வளவு சீக்கிரம் தேர்தல் வரப்போகிறது; அதில் ராஜ நிலையத்தார் ஜெயிக்கப் போகிறார் என்று முன்கூட்டியே தெரிந்திருந்தால், புண்யகோடி அவர் பக்கம் சேர்ந்துகொண்டு பொதுப்பணியாற்றியிருப்பார். இப்போதும் ஒன்றும் முழுகி",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "space"
+     },
+     {
+      "text": "விடவில்லை; ஒரு கை பார்ப்போம் என்று வேட்டியை வரிந்து கட்டிக்கொண்டு புண்யகோடி புறப்பட்டார்.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புதிய நகரசபைத் தலைவரின் பார்வைக்குத் தனது பழைய விண்ணப்பத்தை அனுப்பிப் பத்தாயிரத்தைக் கேட்டார். புதிய தலைவர் “இதெல்லாம் பழைய சமாச்சாரம்—வெள்ளையப்பரையே கேட்டுக்கொள்ளும்” என்று பதில் எழுதிவிட்டார்.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அம்மாமி ஆட்டுக்கறியைக் களவு கொடுத்த கதையாகப் புண்யகோடி மனத்துக்குள்ளேயே புலம்பினார். வெளியில் சொன்னால் மக்கள் சிரிப்பார்கள், “இனாமாகத் தந்த இடத்துக்கு இவ்வளவு ரூபாய் கேட்கிறானே” என்று!",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கிளர்ச்சி கிளர்ச்சி” என்று ஒலி கிளம்பியது. புண்யகோடி உண்டாக்கிய புயல்தான் அது! ஆனால் அந்தப் புயல்களெல்லாம் புஸ்வாணமாகிவிட்டன. புதிய தலைவரை இழித்தும் பழித்தும் பேசிப் பொதுஜன செல்வாக்கைத் திரட்டிக்கொண்டே இருந்தார், புண்யகோடி. அதன் விளைவாக ராஜ நிலையத்தார், புண்யகோடியின் மீது வழக்குத் தொடர்ந்தார். நகரசபையின் மீது மானநஷ்டமுண்டாக்கியதாகக் கூறப்பட்டுப், புண்யகோடி பத்தாயிரம் ரூபாய் நஷ்ட ஈடு தர வேண்டுமென்று தீர்ப்புத் தரப்பட்டது, நீதிமன்றத்திலே.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புண்யகோடியின் வயிறு எரிந்தது. பொதுமேடைகளிலே முழக்கினார். பொதுமக்கள் நன்கொடைகள் வசூலித்தனர். பத்தாயிரம் ரூபாயைப் பொதுமக்களே தந்தனர். நஷ்ட ஈட்டைப் புண்யகோடி கட்டினார்.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொதுத்தொண்டு சிங்கம் புண்யகோடி பூரிப்போடு உலவினர்—பொதுமக்களின் இருதயங்களை மிதித்துக்கொண்டு!",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மீண்டும் நகரசபைத் தேர்தல் வந்தது. இந்தத் தேர்தலிலே புண்யகோடி ராஜ நிலையத்தாரை மூர்க்கமாக எதிர்த்தார். ராஜ நிலையத்தார் மட்டுமே தோற்றார். மஞ்சள் கட்சி உறுப்பினர்கள் பலர் வெற்றி பெற்றுவிட்டார்கள். அதன் காரணமாகத் தலைவர் பதவிதான் மாறியதே தவிர, நகரசபை எதிர்க்கட்சியினரிடமே இருந்துவிட்டது. நகரசபைக்குத் தலைவராக இந்த முறை வந்தவர் மிகவும் கொடியவர். நகரத்துக்கே நாசம் விளைவிப்பவர் என்று எல்லாரும் கருதினர். புண்யகோடியிடம் வந்து புலம்பினர். “இவ்வளவு கஷ்டப்பட்டார்களே; கடைசியில் அந்தக் காதகன்",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நகரசபைத் தலைவனுக வந்துவிட்டானே” என்று அலறினார். புண்யகோடியும் கண்ணீர் விட்டார்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மாதங்கள் சில உருண்டன. புதிய நகரசபைத் தலைவரின் அட்டகாசம் தாங்க முடியவில்லை. பொதுமக்கள் குமுறும் எரிமலைகளாகி விட்டனர். அப்போது, புண்யகோடி புதிய தலைவரைப் பற்றி ஒரு மேடையில் பேசப்போவதாக விளம்பரம் செய்தார். மக்கள் திரண்டு வந்தனர். முதலில் புண்யகோடியின் காரியதரிசி பேசினார். புதிய தலைவரைக் காரசாரமாகத் தாக்கினார். மக்கள் குதூகலித்தனர். அடுத்துப் புண்யகோடி எழுந்தார். பொதுமக்கள் ஆவல் ததும்பியபடி அவர் பேச்சை எதிர்நோக்கினர்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புண்யகோடி பேசினார். “நண்பர்களே! நான் புதிய தலைவரை ஆதரிக்கிறேன்” என்று கூறிவிட்டு மேடையிலிருந்து கீழே இறங்கினார்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொதுமக்கள் வாயடைத்துப் போயினர்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காரியதரிசி கர்ச்சிக்கிறார்; புண்யகோடி இப்படிப் பேசுகிறார். என்ன ஆச்சரியம்!” என்று நகரமே வியந்தது.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ தாக்கு, நான் ஆதரிக்கிறேன்” என்று திட்டம் போட்டிருக்கிறார்கள் என்றனர் சிலர்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“புதிய தலைவருக்கும் புண்யகோடிக்கும் ஏதோ பேச்சு நடந்திருக்கிறது” என்றனர் சிலர்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எல்லாம் நன்மைக்குத்தான்” என்றனர் புண்யகோடியின் பரம்பரைப் பக்தர்கள்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாவம்; அவர்களுக்கெல்லாம் தெரியாது—புண்யகோடி, மீண்டும் அனுப்பிய பழைய விண்ணப்பத்தைப் புதிய சேர்மன் கவனித்துப் பத்தாயிர ரூபாயை வீடு பழுது பார்க்கத் தந்து விட்டார் என்ற சேதியும்—புண்யகோடியிடம் பழைய நகரசபை நஷ்ட ஈடாகப் பெற்ற பத்தாயிரத்தைத் திருப்பிக் கொடுத்து விட்டார் என்ற தகவலும். எல்லாம் எப்படியோ மறைக்கப்பட்டு விட்டன. **புண்யகோடி பொதுஜனத் தொண்டர்போல்தான் உலவுகிறார்;** இதை மட்டும் அவர் காரியதரிசி சொல்கிறார்.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Aatharikkirar",
+    "sourceScan": 102,
+    "printedPage": 93
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "His name was Punyakodi. There was hardly any public activity in which he did not involve himself. Even if he failed to win worldwide fame, even if he did not acquire an all-India name, even if no state arose in which everyone throughout Tamilagam knew him, in his own town there would always be many people gathered around him. News would arise that the municipal sanitation workers were going on strike. Before the news itself could get going, he would be off: “Sanitation workers! Get ready. We shall shed blood. We shall drive out the cheats!” he would thunder like a drum.",
+      "sourceScan": 102,
+      "printedPage": 93,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even the leaders of those workers could not roar like that; he would sound the conch with such splendour. Until the agitation was completely dead and sent to the cremation ground, he would not sleep. Then he himself would produce several explanations for the defeat and, placing a finger against his nose, begin thinking about what struggle to start next. Some of the concessions the sanitation workers had enjoyed until then would even be reduced because of Punyakodi’s intervention.",
+      "sourceScan": 102,
+      "printedPage": 93,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Only then, he would offer a new explanation, would their anger swell more fiercely. And while garlands fell on him at public meetings, he would calculate whether they contained roses and, if so, for how many days they might be used to make coffee.",
+      "sourceScan": 102,
+      "printedPage": 93,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day, suddenly, the municipality would announce an annadanam for a thousand Brahmins.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes, of course it must be done. Only when the hearts of the Brahmins are cooled will the heart of God be cooled,” he would say, supplying a vyaakhyaanam for that too.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the Brahmin feast, the service rendered by Punyakodi would stand foremost. Even the crowd who ate until their bellies bulged and belched would praise Punyakodi more than they praised the municipal chairman.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The municipal chairman, Vellaiyappa Pillai, though not quite as white-hearted as his name might suggest, was not excessively bad. He did have some concern for the town’s progress. He had taken on hardships, melted away a portion of his heap of wealth, bound himself by a vow to become municipal chairman somehow, and succeeded. He had affection and attachment toward Punyakodi. The public support that Punyakodi had acquired was also one reason Chairman Vellaiyappa Pillai felt affection for him. At the same time, Vellaiyappa could not recognize how cleverly Punyakodi diverted toward himself all the fame that ought to have gone to Vellaiyappa. Even if he had recognized it, he was not one to worry. All he wanted was high office. And the only office he considered high was that of municipal chairman. So he did not care on whose side the public stood or where fame accumulated. At election time, he thought, it was enough to get the public’s agent into his pocket. Was that so difficult? Not while the public-welfare man Punyakodi, who would curl up and fall when struck with money, stood beside him!",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In private, Punyakodi moved as the servant of men of status; in public, as a worker for the common good.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah, what a good man! When the poor suffer, he too suffers! Isn’t he truly the poor man’s partner?” praised the residents of the huts.",
+      "sourceScan": 103,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A flood would rise in the river—a battalion of people would gather to build the embankment. The labourers would be all sorts of people! The municipality would spend the money. There our Punyakodi would stand like a commander and raise the voice of authority. Without his body withering—without shedding sweat—he would easily carry away the title, ‘Punyakodi, the leader who stopped the river flood.’",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A beautiful house—an excellent life—public service whose polish never faded—a life so cunning that its showiness never became obvious—thus did Punyakodi’s wheel keep rolling.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A good resolution was passed in the municipality. Because the election was approaching, Chairman Vellaiyappa, who was in office, had reached a stage where he needed to attract the public with some useful resolutions.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Every street should be tarred. The streets should be laid out in proper order. The work must begin immediately. A resolution to this effect was passed.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Next, an urgent resolution was introduced that the municipal building should be renovated.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Until the renovation was complete, a problem arose: where should the municipal office function? At once public servant Punyakodi stepped forward. Beating the drum about his generosity, he declared that for the people’s welfare he would give one of his houses temporarily to the municipality free of rent.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The whole town spoke in praise of his generous nature!",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Work on the municipal building began. The office functioned from Punyakodi’s house.",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The new building’s opening ceremony was held. At the ceremony, the municipal authorities, the presiding dignitary and the speakers—all of them—praised the magnanimous Punyakodi who had so freely given his house as the temporary office—",
+      "sourceScan": 104,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus they praised ‘the generous Punyakodi who gave’ it. In the public arena Punyakodi had acquired a fine name. Now what he needed was money, was it not? That was Punyakodi’s ideal, after all. He began the effort toward it. He sent a secret petition to the municipality. In it he wrote:",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Without even attending to my own work, without even looking to my own comforts, and without caring that many opposed me, I have until now given my house for use as the municipal office. To restore the damage that has thereby occurred to my house, ten thousand rupees is required. I request that this ten thousand rupees be paid to me as compensation.”",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Before that petition could reach the municipal chairman’s attention, Chairman Vellaiyappa had to immerse himself in election work. The contest was fierce. Money flowed like water. The result turned pitiable. Vellaiyappa could not even become a councillor!",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Punyakodi’s only sorrow was that the ten thousand rupees he was supposed to receive had now slipped away.",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He sighed deeply that only the name ‘public servant’ was left to him.",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A notable change took place in the municipality. Vellaiyappa’s dominance was completely wiped out, and a new party then famous in the town—the Yellow Party—came to office. The leader of that party was **Raja Nilaiyaththar**, who became municipal chairman. He and our Punyakodi had no unity between them. Had Punyakodi known beforehand that elections would come so soon and Raja Nilaiyaththar would win, he would have joined his side and performed public service there. Even now, he thought, nothing had completely sunk—",
+      "sourceScan": 105,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—let us try one move. Hitching up his dhoti, Punyakodi set out.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He sent his old petition to the new municipal chairman and asked for the ten thousand. The new chairman replied, “All that is old business—ask Vellaiyappa himself.”",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Like the tale of the ammammi whose mutton was stolen, Punyakodi lamented only within his heart. If he said it aloud, the public would laugh: “He gave the place free and now asks this many rupees for it!”",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Agitation! Agitation!” arose the cry. It was a storm created by Punyakodi. But all those storms became pusvaanam. He kept gathering public influence by speaking abusively and contemptuously of the new chairman. As a result Raja Nilaiyaththar filed a case against Punyakodi. The court ruled that Punyakodi had caused loss of reputation to the municipality and must pay ten thousand rupees as damages.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Punyakodi’s stomach burned. He thundered from public platforms. The public collected donations. The public themselves gave the ten thousand rupees. Punyakodi paid the damages.",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The lion of public service, Punyakodi, moved about swelling with pride—treading upon the hearts of the public!",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Another municipal election came. In this election Punyakodi fiercely opposed Raja Nilaiyaththar. Raja Nilaiyaththar alone was defeated. Many Yellow Party members won. As a result only the chairmanship changed; the municipality itself remained with the opposing side. The man who became chairman this time was regarded by everyone as extremely cruel, a man who would bring ruin upon the town. People came to Punyakodi and lamented. “After struggling this much, in the end that villain—",
+      "sourceScan": 106,
+      "printedPage": 97,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—has become municipal thalaivanuga!” they cried. Punyakodi too shed tears.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Several months rolled by. The new municipal chairman’s excesses became unbearable. The public turned into rumbling volcanoes. Then Punyakodi advertised that he would speak on a platform about the new chairman. People gathered. First Punyakodi’s secretary spoke. He attacked the new chairman fiercely. The crowd rejoiced. Then Punyakodi rose. The public, brimming with eagerness, waited for his speech.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Punyakodi spoke. “Friends! I support the new chairman,” he said, and stepped down from the platform.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The public were struck speechless.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The secretary roars; Punyakodi speaks like this. What a wonder!” the town marvelled.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Perhaps they have made a plan: ‘You attack, I will support,’” said some.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Something must have been discussed between the new chairman and Punyakodi,” said others.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It is all for the good,” said Punyakodi’s hereditary devotees.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Poor people; none of them knew that the new chairman had considered Punyakodi’s resubmitted old petition and given him ten thousand rupees to repair the house—or that he had returned to Punyakodi the ten thousand rupees previously collected from him as municipal damages. Somehow everything had been hidden. **Punyakodi continues to move about as though he were a servant of the public;** this alone his secretary says.",
+      "sourceScan": 107,
+      "printedPage": 98,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  102,
+  103,
+  104,
+  105,
+  106,
+  107
+ ]
+}

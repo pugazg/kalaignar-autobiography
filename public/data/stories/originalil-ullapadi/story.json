@@ -1,0 +1,1443 @@
+{
+ "workId": "originalil-ullapadi",
+ "slug": "originalil-ullapadi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/originalil-ullapadi",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஒரிஜினலில் உள்ளபடி",
+  "en": "Originalil Ullapadi"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 16,
+  "printedPages": {
+   "first": 110,
+   "last": 116
+  },
+  "sourceScans": {
+   "first": 119,
+   "last": 125
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஒரிஜினலில் உள்ளபடி",
+    "sourceScan": 119,
+    "printedPage": 110
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதைப் பெரிய டைப்பில் போடு”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி சார்”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கதா காலட்சேபம்!....உம். என்னப்பா! ‘கேஷ்’ என்று போட்டாமல் ‘டேஷ்’ போட்டுத் தொலைக்கிறாய்? ஒரிஜினலில் உள்ளபடிதானே உன்னைக் கம்போஸ் பண்ணச் சொன்னது?”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“....................”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மன் ‘பிளாக்’கை இப்படி நடுவில் போடு. இந்த ஓரத்தில் அழகாய் ‘பார்டர்’ கட்டிச் செட்டியார் ‘பிளாக்’கைப் போடு!”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி சார்”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உம், ஆமாம். என்ன புரியுதா? உன் சுத்தத் தமிழை யெல்லாம் இதிலே காட்டாதே. ஒரிஜினலில் உள்ளபடி போடு!”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“....................”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செட்டியார் பொல்லாத கோபக்காரர். உன் செந்தமிழ் நடையைக் காட்டினால் நம்ப அச்சாபீஸ் கடையைக் கட்ட வேண்டியதுதான்.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதான் ஒரு தடவை சொன்னீங்களே சார்!—ஒரிஜினலில் உள்ளபடியே கம்போஸ் பண்றேன் சார்.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உனக்குத்தான் மறதி ஜாஸ்தியாச்சே! உம் போ.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கம்பாசிட்டர் கந்தசாமி, வேதாந்தி பிரஸ் மானேஜர் வேலாயுதம் பிள்ளையிடம் ‘தான் அச்சுக் கோத்த’ ஒரு ‘நோட்டீஸ்’ மாதிரித்தாளைக் காட்டியபோது நடந்த உரையாடல்!",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கந்தசாமி, மானேஜரால் குற்றம் சொல்லப்பட்ட மாதிரித் தாளைக் கிழித்தெறிந்து விட்டு, ஒரிஜினலை எடுத்து ஒரு முறை படித்தான்.",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மணி மணியான எழுத்துக்கள். கந்தசாமியின் முகத்திலே ஒரு பரிதாபம் பிரதிபலித்தது.",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**“திரெளபதி அம்மன் கோவில் மகா கும்பாபிஷேகம்”** விளம்பரத்தின் தலைப்பு இது. நிகழ்ச்சி நிரல் என்ற பகுதியில் **“ஸ்ரீ ஜகத் யோகானந்த சுவாமிகள் பாஞ்சாலி சுயம்வரம் என்பது பற்றி உபன்யாசிப்பார்கள்”** என்ற குறிப்பு இருந்தது. கந்தசாமி உதடுகளைக் கடித்துக் கொண்டான். ஒரு எளனம் பிடுங்கும் குட்டிச் சிரிப்பும், அதைத் தொடர்ந்து ஓர் ஆபாசமான பெரு மூச்சும் வெளிக் கிளம்பின.",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நானும் இந்தப் பிரசுக்கு வந்து ஐந்து வருஷமாயிற்று. இந்த ஆபாசம் பிடித்த புராணக் குப்பைக்கு அச்சுக் கோப்பதை விடத் தூக்கு மாட்டிக் கொள்வது எவ்வளவோ மேல்! அட தமிழ் எழுத்துக்களே! மலர்களே, மகாகாளிக்குக் காவு கொடுக்கும் ஆட்டுக் குட்டிக்குப் போடும் மாலையாகவும் கட்டுகிறார்கள்; மணமாலையாகவும் தொடுக்கிறார்கள். அதே போல் நீங்களும் தேன் சுவைக் கவிதைகளை—வாழ்வுக்கு வழி வகுக்கும் வசன நடைகளைப்—புத்தக வடிவில் பின்னுகிறீர்கள். பொய்ம்மை, பித்தலாட்டம், புளுகு சுருட்டு பொங்கி வழியும் புராணங்களும் உங்கள் சிருஷ்டியாகின்றன. ஆமாம்—மனிதர் கையில் அலக் கழியும் மலர்க் கூட்டம் போலத்தான் இந்த எழுத்துக் கூட்டமும்!”",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் இதய அலைகள் ஓய்ந்தன. எதையோ கண்டுபிடித்து விட்டவன்போலக் கந்தசாமி கண்கள் விசாலமாய்த் திறந்தான். மீண்டும் கையில் இருந்த ‘ஒரிஜினலை’ ஒரு முறை பார்த்தான். அதில் ஒவ்வோர் எழுத்தும் அவனை உற்றுப் பார்த்தன; அவன் உள்ளத்தில் ஊடுருவிப் பாய்ந்தன. வாய்க்குள் உளறின. “மகாகும்பாபிஷேகம்..........ம்......மட உலகம்......” அலட்சியம்",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நிறைந்த வெறுப்பு அவன் முகத்தில் கோடுகளைக் கிழித்தது. மீண்டும் தனக்குள் பேசிக் கொண்டான்.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கொள்ளையடிக்கிற செட்டியார் செய்கிறாராம் கும்பாபிஷேகம்!......கும்பாளம் போட்டு ஊரைக் குட்டிச் சுவராக்குகிறான். இந்தக் குருடர்களும் நம்புகிறார்கள். எனக்குத் தெரியுமே...இவன் ஏகாம்பரம் மனைவியைக் கற்பழித்த கதை! பெரியண்ணப் படையாச்சி பிராணவஸ்தையில் இருக்கும்போது அவர் வீட்டுப் பணப்பெட்டியை அமுக்கியதில்தானே இவன் வீட்டுக்குப் ‘பெரிய பண்ணை’ பட்டம் கிடைத்தது! வேதாளபுரம், வெங்கடாசலபதி கீர்த்தின் வைரங்களைப் பெயர்த்து விற்றதில்தானே விசாலமான வீடு கட்டினை! இவற்றை யெல்லாம் மறைக்கக் கும்பாபிஷேகம் செய்து விட்டால் போதுமா?......அடப் படுபாவி! நரகம் என்று ஒன்று இருந்தால் உன் நரம்புக்கு நரம்பு ஒரு நாகப்பாம்பை விட்டுக் கடிக்கச் சொல்லணுமேடா!....நீ கோயில் கட்ட வந்து விட்டாய்—கோயில்! ராமநாதன் செட்டியாரே, இரு! இரு!—ஒரு கை பார்க்கிறேன். உயிர் போனாலும் கவலையில்லை.”",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கந்தசாமியின் தலை கம்பீரமாய் நிமிர்ந்தது; எதிரே நிற்கும் படைத் தலைவனைப் பார்த்து “எடு வாளை” என இறுமாந்து உரைக்கும் பண்டைய திராவிடப் போர்வீரன்போலக் கந்தசாமி நின்றான். அவனுக்கெதிரே ராமநாதன் செட்டியார் நிற்பதாக அவன் நினைவு!...பிறகு மளமளவென்று அச்சுக் கோக்க ஆரம்பித்தான். அவன் வாய் முணுமுணுத்துக் கொண்டேயிருந்தது.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்று கம்பாசிட்டர், ஆச்சா?” என்று அதட்டினார் மானேஜர்!",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அச்சுக்கோத்த மாதிரித் தாளை எடுத்து நீட்டினான் கந்தசாமி.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அருமையான கட்டம், அழகான முறை. அந்த விளம்பரத் தாளின் அமைப்பே அலாதியாக இருந்தது.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அச்சு நிலையத்து வாயிலில் கார் வந்து நின்றது. ராமநாதன் செட்டியார் இறங்கிவந்தார். “ஆச்சா?” என்றார்; ஆவல் பார்வையுடன். சில்க் சட்டையில் நிற்காமல், வழுக்கிக் கீழே விழுந்த வெண்பட்டு ஆடையை எடுத்துச் செட்டியாரின் தோளில்",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "space"
+     },
+     {
+      "text": "போட்டுவிட்டான். பின்னால் வந்த வேலைக்காரன்! அந்த அடிமையின் நிலைகண்ட கந்தசாமியின் தொண்டைக்குழி விம்மிற்று. செட்டியார் வாயிலிருந்து எப்படி விமர்சனம் வரப்போகிறதோ என்று வாய்பிளந்தபடி நின்றார் மானேஜர்.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பேஷ், ஜோராயிருக்கு; பத்தாயிரம் நோட்டீஸ் போடுங்க”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எஸ்” மானேஜர் கூனன்போல் நின்றுகொண்டிருந்தார்.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செட்டியார் வேலைக்காரனைப் பார்த்து, “டேய்! ரத்தினம் இங்கேயே இருந்து நோட்டீசை யெல்லாம்...வாங்கி...”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சுவத்திலே ஒட்டி விடுகிறேனுங்கோ”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அடமடையா!......இது ‘வால்போஸ்டர்’ இல்லேடா, தெருவுக்குத் தெரு கொண்டுபோய்க் கொடுடா; பத்தாயிரம் நோட்டீசும் சாயந்திரத்திற்குள்ளே செலவாகி விடணும்...ஆமாம்”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உத்தரவு எஜமான்”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மானேஜர் தலை வணங்கிக் கும்பிட்டு வழியனுப்ப, ராமநாதன் செட்டியாரின் கார் பறந்தது.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஓய்! மிஷின்மேன்! பத்தாயிரம் ‘நோட்டீஸ்’ உடனே போடு. ‘புளூ’ மையில் போடு...ம்...ஓய்! கம்பாசிட்டர்!...நோட்டீசைத் தயாராக்கிக் கொடு...சீக்கிரம்”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மானேஜர் அவசரத்தால் குதித்துவிட்டுச் சாப்பாட்டுக்குப் புறப்பட்டார். கந்தசாமி, மாதிரித்தாளுடன் உள்ளே சென்றான். அச்சுக் கோவையை எடுத்து இரும்புச் சட்டத்தில் பொருத்தினான். அப்போது அவன் கைகளில் சிறிய நடுக்கம் காணப்பட்டது. அவன் முதலில் கோத்திருந்த சில எழுத்துக்களைப் பிடுங்கினான். வேறு எழுத்துக்களைப் பொறுக்கி......அந்தக் காலி இடங்களில் அமைத்தான்.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அச்சு இயந்திரத்தில் இரும்புச் சட்டம் ஏறிற்று. ஒன்று....இரண்டு......மூன்று...நாறு........ஆயிரம்.......பத்தாயிரம்.......... ‘நோட்டீஸ்’கள் அடித்து முடிந்தன. கந்தசாமியே அதை எடுத்துக் கட்டிக் கொடுத்தான். வேலைக்கார ரத்தினம், விளம்பரச் சுமையோடு நடையைக் கட்டினான். செட்டியார் உத்தரவுப்",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "space"
+     },
+     {
+      "text": "படி ‘பத்தாயிரம் நோட்டீசை’யும் ஊரெங்கும் பரப்பி விட்டுத் தான் உட்கார்ந்தது அந்த அடிமை.",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுநாள் கும்பாபிஷேகம். தாங்க முடியாத கூட்டம். செட்டியார் சர்வாலங்கார பூஷிதராய் தம் சகாக்களுடன் காரில் வந்து இறங்கினர். மற்றொரு காரில் ஒரு மங்கையர் கூட்டம் வந்து இறங்கிற்று. கூட்டத்தை ஒரு முறை பார்த்தார். “**எல்லாம் என்** பெருமை” என்று அவருடைய நிமிர்ந்த தலை சொல்லிற்று. ஓர் அலட்சியமான புன்னகை—வேண்டுமென்றே வரவழைத்துக் கொண்டது! அகம்பாவம் தெறிக்கும் கண்கள் அகலமாகிக் கொண்டன.",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கூட்டம் அவரைப் பார்த்து விட்டது. ஒரே ஆரவாரம்!......“எய் காமநாதன் செட்டியார்......காமநாதன் செட்டியார்”....இப்படி ஒரு பேரிரைச்சல் கிளம்பி விட்டது. அனாவசியமான கைதட்டல். ஒரே நையாண்டிச் சிரிப்பு. இடையே, “காமநாதன் செட்டியாரே! போகானந்த சுவாமிகள் எங்கே?” என்ற கேள்விகள்! “பொருத்தமான பெயர்களப்பா......காமநாதன்—போகானந்தர்...” இப்படி ஒரு விமர்சனம். மீண்டும் கைதட்டலும் சிரிப்பும். “கண்ட பெண்களைக் கற்பழிக்கும் காமநாதன் செட்டியாருக்கு” என ‘ஒற்றைக்குரல்’. இதைத் தொடர்ந்து ‘ஜே ஜே’ கோஷம். இதற்குள் ஒன்றும் புரியாத சிறுவர்கள் ‘திரு திரு’ வென விழிக்கும் செட்டியாரைப் பணக்காரப் பைத்தியமென்றெண்ணி வீசிய சிறுசிறு கற்கள். எல்லாம் சேர்ந்து பெரிய குழப்பத்தில்—போலீசாரின் குண்டாந்தடிப் பிரயோகம் வரையில்—கொண்டு வந்து விட்டன. செட்டியாரின் முகத்தில் விளக்கெண்ணெய் வடிந்தது. “கும்பாபிஷேகமும் வேண்டாம்; எழவும் வேண்டாம்; திருப்புடா காரை” என்று கர்ஜித்தார். கார்கள் கல் மாரியோடு திரும்பின. செட்டியார் தோற்றோடுகிறாரென்ற நினைப்பில் மீண்டும் பலத்த கரகோஷம்!......",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘லக்னம்’ தவறக்கூடாது என்ற சாஸ்திரிகளின் முடிவுப்படி, செட்டியார் இல்லாமலேயே கும்பாபிஷேகம் நடைபெற்றது. நிகழ்ச்சி நிரலில் கண்டவாறு யோகானந்த சுவாமிகள் உபன்யாசத்திற்காகச் செட்டியார் வீட்டில் வந்து இறங்கினர். செட்டியார் சோக உருவமாகச் சாய்ந்திருந்தார். யோகானந்த சுவாமிகள் முகத்திலும் எள்ளும் கொள்ளும் வெடித்தன.",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செட்டியார்வாள்...என்னை அவமானப்படுத்த எத்தனை நாள் எண்ணியிருந்தீர்?” என்று ஆத்திரத்தோடு அள்ளிக் கொட்டினார் சுவாமிகள்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன சாமி!...புரியாமல் பேசுது!” என்றார் சாவதானமாகச் செட்டியார்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதோ பாரும்”",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யோகானந்த சுவாமிகள் விளம்பரத் தாளை எடுத்துச் செட்டியாரிடம் வீசினார்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“திரெளபதி அம்மன் கோயில் மகா கும்பாபிஷேகம்” செட்டியார் படித்தார்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதற்கென்ன சுவாமி!”",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முழுதும் படியும் ஐயா”",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செட்டியார் படிக்க ஆரம்பித்தார்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஸ்ரீஜகத் போகானந்த சுவாமிகள் பாஞ்சாலி விபசாரம் என்பது பற்றி உடன் யாசிப்பார்கள்”......“அடடா!.... யோகானந்தர் போகானந்தர் ஆகியிருக்கு! பாஞ்சாலி சுயம்வரம்—பாஞ்சாலி விபச்சாரம் என்று மாறியிருக்கு. உபன்யாசிப்பார்கள் என்பது உடன் யாசிப்பார்கள் என்று இருக்கு!...... இது எந்த அயோக்கியன் செய்த வேலை?” செட்டியார் சிம்மம்போல் உறுமினார். யோகானந்த சுவாமிகளுக்கு வாய் பேசாமலேயே கையும் காலும் ஆடின. அப்போது எதையோ புதிதாகக் கண்டுபிடித்த கணக்குப்பிள்ளை “இதோ பாருங்க இதோ பாருங்க” என்று ‘நோட்டீசை’க் காட்டினார்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இப்படிக்கு அம்பாள் ஊழியர் காமநாதன் செட்டியார்” என்ற கொட்டை எழுத்துக்கள் அவை! ராமநாதன் செட்டியார் எழுந்து அகோர நர்த்தனத்தை ஆரம்பித்து விட்டார். பல்லைப் படபடவென்று கடித்துக் கொண்டார்.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அச்சாபீஸ்காரன் உண்மையைத்தான் போட்டிருக்கிறான்” என்று (சொல்லவில்லை) தனக்குள் எண்ணிக்கொண்டார் கணக்குப்பிள்ளை.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எய் டிரைவர் காரை எடு”—செட்டியார் உத்தரவு.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேதாந்தி பிரசின் முன்னே கார் நின்றது. மானேஜர் ரூம், யானைகள் புகுந்த வெங்கலக் கடையாயிற்று.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எய் கம்பாசிட்டர்! டேய்” என்று ரௌத்திராகாரமாக அழைத்தார் மானேஜர் வேலாயுதம் பிள்ளை.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கம்பாசிட்டர் கந்தசாமி வந்து நின்றான்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஓங்கி ஓர் அறை—கந்தசாமி மானேஜரால் தாக்கப்பட்டான்; அடிபட்ட கந்தசாமி அழவுமில்லை; ஆத்திரப்படவுமில்லை; சிரித்தான்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னடா சிரிக்கிறய...தடிப்பயலே?” மானேஜர் நோட்டீசை அவன் முகத்தில் எறிந்தார்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒன்றுமில்லை சார். ஒரிஜினலில் உள்ளபடியே அச்சுக் கோத்திருக்கிறேன்.”",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒரிஜினலா? எதுடா ஒரிஜினல்! ஒரிஜினலில் பாஞ்சாலி விபச்சாரம் என்றுதான் போட்டிருக்கோ?”",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம்....இதற்கு உண்மையான ஒரிஜினல் பாரதம். இந்தக் கையெழுத்து நோட்டீஸ் அல்ல!....பாரத ஒரிஜினலில், ஐவருக்கும் தேவியாகவும், ஆறாவது புருஷனைக் கர்ணன் மேல் ஆசை கொண்டவளாகவும் தான் பாஞ்சாலி சித்தரிக்கப்பட்டிருக்கிறள். அந்த லட்சணப்படி பாஞ்சாலி சுயம்வரத்தைவிடப் பாஞ்சாலி விபச்சாரம் என்று போடுவதுதான் எனக்குச் சரியான ஒரிஜினலாகத் தெரிந்தது.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதுமட்டுமல்ல....இந்தச் செட்டியார், காமக் காண்டா மிருகம்! அதுதான் இவர் வாழ்க்கை வரலாற்றின் ஒரிஜினல்! அதன்படி காமநாதன் செட்டியார் என்று ‘கம்போஸ்’ செய்தேன்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உபன்யாசத்திற்கு வரும் சாமியார் ஒரு போகப் பூனை. அவன் பகலில் பரம பக்தன். இரவில் பரம பாதகன். இந்த உண்மை ஒரிஜினலே நான் மாற்ற விரும்பாமல், போகானந்த சுவாமிகள் என்று போட்டேன். இது குற்றமா?”—கந்தசாமி கலகலவென்று சிரித்தான்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ!”—மானேஜர் வாயைப் பிளந்தார்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பொறும். நீர்தானே சொன்னீர், ஒரிஜினலில் உள்ளபடி போடு என்று!” கந்தசாமி மீண்டும் சிரித்துக் கொண்டே வேதாந்தி பிரசை விட்டு வெளியேறினான்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செட்டியாரும் மானேஜரும் ஒருவரை யொருவர் பார்த்துக் கொண்டனர்.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Originalil Ullapadi",
+    "sourceScan": 119,
+    "printedPage": 110
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Put this in large type.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, sir.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Katha kalakshepam!....Hm. What is this, man! Instead of putting ‘cash’, why have you gone and put a ‘dash’? Didn’t I tell you to compose it exactly as in the original?”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“....................”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Put the Amman ‘block’ like this in the middle. Make a nice ‘border’ along this side and put the Chettiar ‘block’ there!”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, sir.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hm, yes. Do you understand? Don’t display all your pure Tamil in this. Put it exactly as in the original!”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“....................”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chettiar is a terribly short-tempered man. If you show off your classical-Tamil style, we will have to shut down our printing shop.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You already told me that once, sir!—I’ll compose it just as it is in the original, sir.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You are the one whose forgetfulness has become too much! Hm, go.”",
+      "sourceScan": 119,
+      "printedPage": 110,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That was the conversation that took place when compositor Kandasami showed Vedanthi Press manager Velayutham Pillai a specimen sheet of a ‘notice’ he had typeset!",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kandasami tore up the proof sheet that the manager had found fault with, took the original and read it once more.",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Pearl-like letters. A look of pity showed on Kandasami’s face.",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "**“Thirelapathi Amman Temple Maha Kumbabhishekam”**—this was the heading of the advertisement. Under the programme was the line: **“Sri Jagath Yogananda Swamigal will deliver a discourse on Panchali Suyamvaram.”** Kandasami bit his lips. A little mocking laugh was pulled out of him, followed by an ugly deep sigh.",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I have been in this press for five years now. Rather than setting type for this obscene heap of puranic rubbish, it would be far better to hang myself! Ah, Tamil letters! Flowers are strung into garlands for the goat-kid sacrificed to Mahakali; they are also woven into wedding garlands. In the same way, you too weave honey-sweet poems and prose that shows the way to life into the form of books. And puranas overflowing with falsehood, trickery and bundles of lies also become your creations. Yes—the gathering of letters is just like a gathering of flowers that is handled and worn away in human hands!”",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The waves in his heart subsided. Kandasami’s eyes opened wide, as though he had discovered something. Once again he looked at the ‘original’ in his hand. Every letter in it stared at him; they pierced into his heart. He muttered under his breath: “Maha kumbabhishekam..........hm......foolish world......” Contempt",
+      "sourceScan": 120,
+      "printedPage": 111,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and disgust scored lines across his face. Again he spoke to himself.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A thieving Chettiar is going to conduct a kumbabhishekam!......He gathers his gang and reduces the town to ruin. And these blind people believe him. I know...I know the story of how he raped Ekambaram’s wife! Wasn’t it by laying hands on Periyanna Padaiyachi’s cash-box while the man was at death’s door that his house acquired the title ‘Periya Pannai’? Wasn’t it by prying out and selling the diamonds of Vedalapuram Venkatachalapathi’s keerthi that he built that enormous house! Is it enough to hide all this by conducting a kumbabhishekam?......You hardened sinner! If there is such a thing as hell, a cobra ought to be set upon every nerve in your body!....And now you have come to build a temple—a temple! Ramanathan Chettiar, wait! Wait!—I will settle this with you. I do not care even if my life goes.”",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kandasami’s head rose proudly. He stood like an ancient Dravidian warrior who, facing the commander of the opposing army, declares with pride, “Take up your sword.” In his mind Ramanathan Chettiar stood before him!...Then he rapidly began setting type. His mouth kept muttering.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is it done, compositor?” the manager barked.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kandasami took the proof sheet he had typeset and held it out.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A fine frame, a beautiful arrangement. The very design of the advertisement sheet was distinctive.",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A car stopped at the entrance of the press. Ramanathan Chettiar got out. “Done?” he asked with an eager look. The white silk cloth that had slipped down instead of staying on his silk shirt was picked up and placed back on Chettiar’s shoulder",
+      "sourceScan": 121,
+      "printedPage": 112,
+      "joinToNext": "space"
+     },
+     {
+      "text": "by the servant who came behind him! Seeing the condition of that slave-like servant, Kandasami’s throat tightened. The manager stood with his mouth open, waiting to hear what criticism might come from Chettiar.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Besh! It looks grand; print ten thousand notices.”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes.” The manager stood bent like a hunchback.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chettiar looked at his servant. “Hey! Rathinam, stay here and take all the notices...and...”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I’ll paste them on the walls, master.”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You fool!......This isn’t a ‘wall poster’. Take them street by street and distribute them; all ten thousand notices must be gone by this evening...yes.”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Your order, master.”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The manager bowed his head and sent him off; Ramanathan Chettiar’s car flew away.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! Machineman! Print ten thousand ‘notices’ at once. Use ‘blue’ ink...hm...Hey! Compositor!...Get the notice ready...quickly.”",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The manager, jumping about in his haste, left for his meal. Kandasami went inside with the proof sheet. He took the composed type and fixed it into the iron frame. A slight tremor could be seen in his hands. He pulled out a few of the letters he had first set. He picked other letters......and fitted them into the empty spaces.",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The iron frame went into the printing machine. One....two......three...naaru........a thousand.......ten thousand..........The ‘notices’ were finished. Kandasami himself gathered and bundled them. The servant Rathinam set off carrying the load of advertisements. Under Chettiar’s order—",
+      "sourceScan": 122,
+      "printedPage": 113,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "only after distributing all ‘ten thousand notices’ throughout the town did that servant sit down.",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next day was the kumbabhishekam. An unbearable crowd. Chettiar, decked in full ceremonial splendour, arrived by car with his companions. A group of women arrived in another car. He looked once at the crowd. “**All this is my** greatness,” said his raised head. A dismissive smile—one he deliberately summoned! His eyes, spraying arrogance, widened.",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The crowd had seen him. A great roar!......“Hey, Kamanathan Chettiar......Kamanathan Chettiar”....Such a tremendous noise arose. Unnecessary applause. A single wave of mocking laughter. In between came questions: “Kamanathan Chettiar! Where is Bogananda Swamigal?” “What fitting names, man......Kamanathan—Boganandar...” Such commentary. Again applause and laughter. “For Kamanathan Chettiar, who rapes whatever women he sees”—came a lone voice. It was followed by cries of “Jai! Jai!” By then, children who understood nothing took the blinking, bewildered Chettiar for a rich madman and threw little stones at him. All of it together grew into a great disturbance—until the police resorted to a baton charge. Chettiar’s face seemed to drip lamp oil. “I don’t want the kumbabhishekam or anything else; turn the car around!” he roared. The cars turned back under a rain of stones. Thinking Chettiar was fleeing in defeat, the crowd broke into even louder applause!......",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "According to the priests’ decision that the ‘lagnam’ must not be missed, the kumbabhishekam took place even without Chettiar. As listed in the programme, Yogananda Swamigal arrived at Chettiar’s house for the discourse. Chettiar lay there as the very image of sorrow. Yogananda Swamigal’s face too was exploding with fury.",
+      "sourceScan": 123,
+      "printedPage": 114,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chettiar-vaal...how many days have you been planning to humiliate me?” the Swamigal poured out in anger.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What, Swami!...You are speaking without making yourself understood,” Chettiar replied calmly.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Look at this.”",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yogananda Swamigal took out the advertisement sheet and flung it at Chettiar.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Thirelapathi Amman Temple Maha Kumbabhishekam.” Chettiar read it.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is wrong with this, Swami?”",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Read all of it, sir.”",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chettiar began to read.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“‘Sri Jagath Bogananda Swamigal will immediately beg on the subject of Panchali vibasaaram’......Ayyo!....Yoganandar has become Boganandar! Panchali Suyamvaram has become Panchali vibachaaram! ‘Will deliver a discourse’ has become ‘will immediately beg’!......Which scoundrel did this?” Chettiar growled like a lion. Yogananda Swamigal’s hands and legs shook even though his mouth could not speak. At that moment the accountant, looking as though he had discovered something new, cried, “Look here, look here,” and showed them the ‘notice’.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Thus, servant of Ambal, Kamanathan Chettiar”—those were the block letters! Ramanathan Chettiar sprang up and began a terrible dance of rage. He ground his teeth rapidly.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The printing-office fellow has printed only the truth,” the accountant thought to himself—he did not say it.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey, driver, bring the car!” Chettiar ordered.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The car stopped in front of Vedanthi Press. The manager’s room became like a brassware shop into which elephants had charged.",
+      "sourceScan": 124,
+      "printedPage": 115,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey, compositor! You!” manager Velayutham Pillai called in a fury.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Compositor Kandasami came and stood before him.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A mighty slap—Kandasami was struck by the manager. Kandasami, who had been hit, neither cried nor grew angry; he laughed.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What are you laughing at, you thick-headed fellow?” The manager threw the notice at his face.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nothing, sir. I have set it exactly as in the original.”",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Original? What original, man! Does the original say ‘Panchali vibachaaram’?”",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes....The true original for this is the Bharatham. Not this handwritten notice!....In the Bharatham original, Panchali is portrayed as the wife of five men and as a woman who desired Karna as a sixth husband. Going by that description, ‘Panchali vibachaaram’ seemed to me a truer original than ‘Panchali Suyamvaram’.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“And that is not all....This Chettiar is a beast of lust—a kaandaa mirugam! That is the original of his life history! So I composed his name as Kamanathan Chettiar.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The Swami coming to deliver the discourse is a boga-poona, a cat of pleasure. By day he is the supreme devotee. By night he is the supreme sinner. I did not wish to alter this true original either, so I printed Bogananda Swamigal. Is that a crime?”—Kandasami laughed loudly.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah!”—the manager’s mouth fell open.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Wait. Weren’t you the one who told me to put it exactly as in the original?” Kandasami laughed again and walked out of Vedanthi Press.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chettiar and the manager looked at each other.",
+      "sourceScan": 125,
+      "printedPage": 116,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125
+ ]
+}

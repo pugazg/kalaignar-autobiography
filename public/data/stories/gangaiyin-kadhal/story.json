@@ -1,0 +1,653 @@
+{
+ "workId": "gangaiyin-kadhal",
+ "slug": "gangaiyin-kadhal",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/gangaiyin-kadhal",
+ "sourceCommit": "76135e1b5d504128c15be6bf59937716e5517d78",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கங்கையின் காதல்",
+  "en": "Gangaiyin Kadhal"
+ },
+ "author": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி"
+ },
+ "anthology": {
+  "collectionSlug": "1977-kalaignar-karunanidhiyin-sirukathaigal",
+  "collectionTitleTa": "கலைஞர் கருணாநிதியின் சிறுகதைகள்",
+  "order": 8,
+  "printedPages": {
+   "first": 60,
+   "last": 63
+  },
+  "sourceScans": {
+   "first": 69,
+   "last": 72
+  }
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கங்கையின் காதல்",
+    "sourceScan": 69,
+    "printedPage": 60
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கைலாயத்தில் சிவபெருமான் நன்றாகத் தூங்கிக்கொண்டிருந்தார். கழுத்திலிருந்த பாம்பு கீழே இறங்கி மான் குட்டியோடு விளையாடிக்கொண்டிருந்தது. அருகில் ஆழ்ந்த நித்திரையிலிருந்த பார்வதி தேவிக்குத் தன் பாதங்களை காள மாடு சொரசொரப்பான நாக்கால் நக்கிக்கொண்டிருந்ததுகூடத் தெரியவில்லை. தேவலோகத்துப் பெண்களுக்கே தூக்கத்தில் இடி விழுந்தாலும் தெரியாது போலிருக்கிறது; இல்லாவிட்டால் சீதா பிராட்டி தூங்கும்போது அவள் மேனியை இந்திரன் மகன் காக்கை உருவில் ரசித்திருக்க முடியுமா? பார்வதியின் முகத்தில் வியர்வை அரும்பு கட்டி இருந்தது. பரமசிவனின் உடலும் தூக்கத்தில் அசை வற்றுக் கிடந்தது. மகேஸ்வரனுக்கு ஐந்து தலைகள் அல்லவா? நான்கு தலைகளைக் கழற்றி மான் தோலில் சுருட்டி ஒரு மூலையில் வைத்திருந்தார், இல்லாவிட்டால் தூங்குவதற்கு வசதிப்படாதே!",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆழ்ந்த உறக்கம்—அமைதி—அந்த அமைதியைக் கிழித்துக் கொண்டு கிளம்பும் சிவன் தம்பதிகளின் பெரிய மூச்சுக்கள்.",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிவனின் தலையிலே ஒரு ஜடை சற்று வேகமாக அசைந்தது. அந்த அசைவைத் தொடர்ந்து கங்கா நடந்துகொண்டிருந்தாள். பூனையைப் போன்ற பஞ்சுப் பாதங்களைச் சிவனின் தலையில் வெகு லாவகமாக வைத்து சற்று முற்றும் பார்த்தபடி எங்கேயோ போய்க்கொண்டிருந்தாள்.",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு ஜடையின் அடியில் போய் நின்றுகொண்டு, தங்கக் கரங்களைக் கிளைகளில் நீட்டியபடி யாரையோ எதிர்பார்த்திருந்",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தாள். அவள் நீலக் கருவிழிகளைக் கிளைகளின் நடுவே நீண்ட இரண்டு கரங்கள் பொத்தின.",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கங்கையின் கைகள் அவளையறியாமல் அந்தக் கைகளைப் பிடித்துக்கொண்டன. அல்வித் தண்டில் ரோஜா மலரைப் பொருத்தி வைத்தது போலிருந்தது அந்தக் கைகலப்பு.",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்திரா!” தேனுண்ட மயக்கத்தில் கிளப்புற்ற வண்டின் கீழ்ஸ்தாயி ரீங்காரம் போலிருந்தது அந்த அழைப்பு.",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சந்திரா....ஆம், சந்திரன்தான். சிவனின் தலையில் குடியிருக்கும் அந்த வாலிபன்தான். பஞ்சோடு நெருப்பை வைத்திடலாகாது என்பார்கள். முருகனின் மயிலோடு...பாம்பை வைத்திருப்பவர்தானே பரமேஸ்வரன். கங்கையைத் தலையில் கொண்டவர் சந்திரனைக் காலிலாவது வைத்திருக்கலாம்; என்னவோ ‘பாவம்’ அவர் தலை எழுத்து!",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கங்கா! கண்ணே!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்திரா!.....சல்லாப ரூபா!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அன்பே!.....நேற்று ஏண்டி வரவில்லை?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நேற்று என் முறை; இன்று பார்வதி முறை.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மெதுவாகப் பேசு....சிவன் விழித்துவிடப்போகிறார்.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நல்லவேளை....தலையில் கண்ணில்லை; விழித்தாலும் பயமில்லை....”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ கிண்டல்காரி கங்காய்!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ மட்டும் என்னவாம்!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கங்கா....! உனக்கு அந்தக் கிழவனோடு பேசப்பிடிக்கிறதா?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிடித்திருந்தால்....சந்திரனை ஏன் தேடுகிறேன்....?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தாரை பேசுகிற மெட்டில் பேசுகிறாயே.......அவளும் இப்படித்தான்; அவள் புருஷன் தாடியும் மீசையுமாய்த் தள்ளாத காலத்தில் அவளைக் கஷ்டப்படுத்துகிறானாம்.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எங்களைப்போலத் தாரையும் கங்கையும் தள்ளாத கிழவன்களுக்கு வந்து சேர்ந்தால், உன்னைப்போலச் சந்திரர்களுக்கு வேட்டைதான்.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன இருந்தாலும் நாம் செய்வது பாவந்தான்.... இல்லையா?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்திரா....! பூலோகத்தில் பாவம் செய்தால் கைலாசத்துக்கு வரமுடியாது. நாம்தான் கைலாசத்திலேயே இருக்கிறோமே. இதைவிடப் பெரிய பாவம் இருந்தாலும் கண்டுபிடிக்கவேண்டும் தெரியுமா? இந்த பாபத்துக்கெல்லாம் நாமா பொறுப்பாளி? தாரை உன்னை நேசித்தாள். கணவனுக்கு துரோகம் செய்தாள் என்றார்கள் மூடர்கள். தாரைக்கு நெஞ்சம்—அதில் ஆவல்—ஆனந்த வாழ்க்கைச் சுவைக்கும் துடிப்பு—இவற்றையெல்லாம் உண்டாக்கிவிட்டு....அவளை விபச்சாரி என்றால் யார் கேட்டது? நீ குருபத்தினியைக் கூடியது பாபமாம். பைத்தியக்காரனின் உளறல். குருவுக்குச் செய்ய வேண்டிய தொண்டு, அவர் மனைவியின் கவலையைப் போக்கினாலே அது பெரிய தொண்டல்லவா?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான்தான் என்ன செய்துவிட்டேன்! ஆகாயத்திலிருந்து என்னைப் பகீரதன் கூப்பிட்டான். பகீரதனுடைய அழுகைக் கண்டு என் மேனி குலுங்கிற்று. மேனி மட்டுமா? இதயமே குலுங்கிற்று, அந்தக் காம தாகத்தை வர்ணிக்க என்னால் முடியாது சந்திரா....! கம்பன் பிறந்து வர வேண்டும்; அவ்வளவு எல்லை மீறிவிட்டது என் உணர்ச்சி. ஒரு நாட்டு மன்னன்; சகல போக போக்கியமுள்ள சக்கரவர்த்தி; அவனோடு சரச சல்லாபமாடி....ஜென்ம சாபல்யமடையலாம் என்று கனவு கண்டேன். ஆனால் அந்தக் கையாலாகாதவன்....என்னை இந்தக் கைலாசக் கிழவனிடம் தள்ளிவிட்டான். இவனே கிழவன்....கிழவன் மட்டுமா....தாருகாவனத்து ரிஷிகளின் மனைவிகளுக்காக......உடலையே தேய்த்துவிட்ட எலும்புக்கூடு. அதுமட்டுமா சந்திரா!....பக்கத்திலே பார்வதி. இன்பக் கேளிக்கைக்குக் கால அட்டவணை, ஒருத்திக்கு ஒரு நாள் முறை. என்னால் முடியுமா?....என் போன்ற யுவதிகளால் முடியுமா?....என்..பார்வதியால் தான் முடிந்ததா?....பிரமாவையல்லவா கேட்கவேண்டும் அந்தக் கதையை. சந்திரா! தினந்தினம் பூலோகத்துக்குப் போகிறாயே.....அந்த மக்களிடம் இந்த ஒரு வார்த்தையை உபதேசம் செய்வாயா?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன கங்கா?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கிழவனுக்குப் பெண் கொடுக்காதே! இருதார மணத்துக்கு இணங்காதே! இதைச் சொல்வாயா?....என்பொருட்டுச் சொல்",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "space"
+     },
+     {
+      "text": "....என் போன்ற பெண்கள் இனியும் தோன்றுமலிருக்க இதைச் சொல்.....?”",
+      "sourceScan": 72,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆகட்டும் கண்ணே....வா—பிடரிப் பக்கம் போவோம். அங்கேதான் இருட்டாயிருக்கும்.”",
+      "sourceScan": 72,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சந்திரனும் கங்காவும் மறைந்துவிட்டார்கள். சற்று நேரத்தில் எம்பெருமான் திடுக்கிட்டு விழித்தார், பக்கத்தில் பார்வதி அசைவற்று உறங்கிக்கொண்டிருந்தாள், தலையைத் தொட்டுப் பார்த்தார். அப்போதுதான் அவசர அவசரமாகக் கங்கா ஓடி வந்து அங்கே உட்கார்ந்தாள்.",
+      "sourceScan": 72,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Gangaiyin Kadhal",
+    "sourceScan": 69,
+    "printedPage": 60
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In Kailasa, Lord Siva was sleeping soundly. The snake around his neck had climbed down and was playing with the fawn. Nearby, Goddess Parvati lay in deep sleep, unaware even that the bull was licking her feet with its rough tongue. It seems that even the women of the celestial world would not know if thunder fell while they slept; otherwise, could Indra's son, in the form of a crow, have admired Sita Piratti's body while she slept? Beads of sweat had formed on Parvati's face. Parama Siva's body too lay motionless in sleep. Does not Maheswaran have five heads? He had removed four of them, wrapped them in deerskin, and put them away in a corner; otherwise sleeping would hardly have been convenient!",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Deep sleep—silence—and, tearing through that silence, the heavy breathing of the divine couple.",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One lock of hair on Siva's head moved a little faster. Following that movement, Ganga was walking along. Placing her soft, catlike feet with great ease upon Siva's head, she looked cautiously around and went somewhere.",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She stopped beneath one of the locks, stretching her golden arms among the branches, waiting",
+      "sourceScan": 69,
+      "printedPage": 60,
+      "joinToNext": "space"
+     },
+     {
+      "text": "for someone. Two long arms reached through the branches and covered her blue-black eyes.",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Without thinking, Ganga's hands caught hold of those hands. The joining of their hands looked like a rose fixed upon an alvi stalk.",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chandra!” The call sounded like the low-register hum of a bee stirred into rapture after drinking honey.",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chandra....yes, the Moon himself. That young man who lives upon Siva's head. They say one should not place fire beside cotton. Yet Parameswaran is the one who keeps a snake beside Murugan's peacock. A man who kept Ganga on his head might at least have kept Chandra at his feet; what can one say—‘poor man’, such was his fate!",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ganga! My dear!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chandra!.....O sallapa rupa!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My love!.....Why didn't you come yesterday?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yesterday was my turn; today is Parvati's turn.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Speak softly....Siva may wake up.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Luckily....he has no eye on his head; even if he wakes, there is nothing to fear....”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You are a tease, Ganga!”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“And what are you?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ganga....! Do you like talking with that old man?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If I liked it....why would I go looking for Chandra....?”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You speak in Tara's very tune.......She says the same sort of thing; her husband, with his beard and moustache, troubles her in his advanced age.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If women like Tara and Ganga end up with old men who have reached that age, Chandras like you will have a fine hunt.”",
+      "sourceScan": 70,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Whatever the case, what we are doing is a sin....isn't it?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chandra....! If people commit sin on earth, they cannot come to Kailasa. But we are already in Kailasa. We ought to discover whether there is any sin greater than this, don't you think? Are we the ones responsible for all this sin? Tara loved you. Fools said she betrayed her husband. They created a heart in Tara—desire within it—a longing to taste the joy of a happy life—and after creating all that....who asked them to call her a prostitute? They say your union with your guru's wife was a sin. The babbling of madmen. If relieving his wife's sorrow is service to the guru, is that not great service?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What did I do, after all! Bhagiratha called me from the sky. Seeing Bhagiratha weep, my body trembled. My body alone? My very heart trembled. I cannot describe that thirst of desire, Chandra....! Kamban would have to be born again; so far beyond all bounds had my feeling gone. A king of a country; an emperor possessed of every pleasure and luxury; I dreamed that by exchanging amorous delights with him....I might attain the fulfilment of this birth. But that helpless fellow....pushed me into the hands of this old man of Kailasa. He is old....and not merely old....a skeleton who wore his very body away for the wives of the sages of Darukavana. Is that all, Chandra!....Parvati is beside him too. There is a timetable for pleasure: one woman's turn each day. Can I bear that?....Can young women like me bear it?....Could it be done only by my..Parvati?....One should ask Brahma for that story. Chandra! You go to earth every day.....will you teach those people this one message?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is it, Ganga?”",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not give a woman in marriage to an old man! Do not consent to a two-wife marriage! Will you tell them this?....Say it for my sake",
+      "sourceScan": 71,
+      "printedPage": 62,
+      "joinToNext": "space"
+     },
+     {
+      "text": "....Say it so that women like me may not arise again.....?”",
+      "sourceScan": 72,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“So be it, my dear....come—let us go toward the nape. It will be dark there.”",
+      "sourceScan": 72,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chandra and Ganga disappeared. A little while later, the Lord suddenly awoke. Beside him Parvati was still sleeping motionless. He touched his head. Only then did Ganga come running back in great haste and sit there.",
+      "sourceScan": 72,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  69,
+  70,
+  71,
+  72
+ ]
+}
