@@ -158,7 +158,7 @@ jobs:
               "thirukkural": { repo: "kalaignar-literary-commentary" },
               // ── BULK ONBOARDING WAVE 2 ──────────────────────────────────────────────────────
               // The 37 stories of the 1977 anthology pin the short-stories archive at ONE commit,
-              // which is NOT `kizhavan-kanavu`'s earlier pin. They therefore get their own checkout
+              // which is NOT the earlier pin `kizhavan-kanavu` uses. They therefore get their own checkout
               // directory rather than sharing one — the same reason the நான்மணி மாலை plays are kept
               // apart from Silappathikaram above. Sharing a directory across two different historical
               // pins would make the same-directory/same-pin guard below fire, and loosening that guard
