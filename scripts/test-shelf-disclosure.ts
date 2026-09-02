@@ -121,7 +121,18 @@ eq(summaryCount, detailsCount, "every <details> has exactly one <summary>");
 ok(!/aria-expanded/.test(html), "no hand-written aria-expanded duplicating native <details> state");
 ok(!/\shidden(=|\s|>)/.test(html), "no `hidden` attribute — that would stay hidden without JavaScript");
 
-// ── 8. Phase 0 stays Phase 0 ─────────────────────────────────────────────────────────────────────
+// ── 8. The disclosure's dark-mode text stays above the AA floor ──────────────────────────────────
+// `dark:text-marina-light` is #1B7F87 on the #0C1116 Reading Room: 4.00:1, under the 4.5:1 WCAG AA
+// minimum for text this size. The class is correct elsewhere in the app on other backgrounds, which
+// is exactly why a reviewer could reinstate it here without noticing. This pins the decision.
+const summaries = /<summary[^>]*class="([^"]*)"/.exec(html);
+ok(!!summaries, "the disclosure summary carries a class list");
+ok(!!summaries && !summaries[1].includes("dark:text-marina-light"),
+   "the summary does not use dark:text-marina-light (4.00:1, below AA)");
+ok(!!summaries && summaries[1].includes("dark:text-night-text/70"),
+   "the summary uses the accessible dark class dark:text-night-text/70 (7.88:1)");
+
+// ── 9. Phase 0 stays Phase 0 ─────────────────────────────────────────────────────────────────────
 // A guard, not a feature test: the collection architecture is a separately authorized phase, and
 // this file is the cheapest place to notice it arriving early.
 const root = path.join(process.cwd());

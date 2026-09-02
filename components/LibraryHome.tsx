@@ -149,8 +149,15 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
                 // keeps the closed cards out of the tab order for free.
                 <details className="library-shelf-overflow group/disclosure mt-3">
                   {/* min-h-11 is a 44px touch target. It is padding, not weight: the control stays a
-                      small line of marina text, and the extra height is invisible on the page. */}
-                  <summary className="focus-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded py-2 text-xs text-marina dark:text-marina-light">
+                      small line of text, and the extra height is invisible on the page.
+
+                      DARK MODE IS NOT `marina-light` HERE. The readers' <summary> elements use
+                      `dark:text-marina-light`, but that is #1B7F87 on the #0C1116 Reading Room, which
+                      measures 4.00:1 — under the 4.5:1 WCAG AA floor for text this size. Rather than
+                      change a token shared with the whole app, this one control uses
+                      `dark:text-night-text/70`, already used a few lines above for the shelf label:
+                      #A9A7A0 on #0C1116, 7.88:1. Light mode keeps marina at 7.10:1. */}
+                  <summary className="focus-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded py-2 text-xs text-marina dark:text-night-text/70">
                     {/* `display:inline-flex` suppresses the native triangle, so the affordance is drawn
                         explicitly — the same compensation the readers' <summary> elements already make.
                         It flips instantly on open; no transition. The group is NAMED: the work cards
