@@ -1,0 +1,104 @@
+{
+ "workId": "thiraavida-sampaththu",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/thiraavida-sampaththu",
+ "sourceCommit": "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+ "sourceTree": "fe0f6ea0482ac2cd0e8c4558edd3b452e249dbdd",
+ "source": {
+  "titleTa": "திராவிட சம்பத்து",
+  "titleEn": "Dravidian Wealth",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0064196_திராவிட_சம்பத்து.pdf",
+  "scanSha256": "09d567abb30a0beacc1efd1e1fb757f01da93968f5582c9b1b8859b87dac2165",
+  "scanFileSizeBytes": 26071193,
+  "scanTotalPages": 16,
+  "physicalVerification": "16 / 16 physical page records",
+  "strictFidelityReview": "P5 strict visual text fidelity — 16 / 16 PASS",
+  "articleAssemblies": "2 / 2 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதல பதிப்பு, செப்டம்பர் 1951",
+   "அறிவு மன்றம், சென்னை-1",
+   "விலை அணா மூன்று"
+  ],
+  "physicalCondition": {
+   "conditionTa": "damaged pamphlet — paper torn away in several places",
+   "reconstructionPolicy": "Text physically lost to tearing is NOT reconstructed from context. Where the source is torn the archive records the damage and leaves the gap; this integration carries that decision unchanged and adds nothing."
+  },
+  "readingOrderNote": "The PDF is not in publication reading order. The archive records a reading_order on every physical page; the reconstructed reading sequence is 1 → 2 → 9 → 10 → 5 → 6 → 13 → 14 → 15 → 16 → 7 → 8 → 11 → 12 → 3 → 4. Numeric scan order is NOT the reading order and must never replace it.",
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "திராவிட சம்பத்து",
+    "titleEn": "Dravidian Wealth",
+    "scanPages": "5–6, 13–16",
+    "printedPages": "The pamphlet shows no printed page numerals. Pencil folio marks on alternating scans are physical-copy marks, not printed pagination.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "ஐயர் அறிவிக்கிறார்!",
+    "titleEn": "Iyer Announces!",
+    "scanPages": "12, 3",
+    "printedPages": "The pamphlet shows no printed page numerals. Pencil folio marks on alternating scans are physical-copy marks, not printed pagination.",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The publication prints NO contents page, so the article ordinals here are archive reading ordinals rather than printed numbers.",
+   "The PDF is not in publication reading order; the reading sequence was reconstructed from the physical scans and is recorded explicitly."
+  ],
+  "lockedExclusions": [
+   "publisher / imprint matter",
+   "the printed advertisement"
+  ]
+ },
+ "english": {
+  "releaseTitle": "Dravidian Wealth",
+  "kind": "project-created",
+  "articlesVerified": "2 / 2 verified",
+  "consistencyReview": "E6 publication-wide English consistency review — PASS",
+  "releaseCloseout": "E7 English release closeout — PASS",
+  "releaseGate": "PUBLICATION_COMPLETION_REVIEW.md — E6 PASS, E7 PASS / RELEASE COMPLETE",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 2,
+  "tamilBlocks": 43,
+  "englishBlocks": 43,
+  "tamilSubheadings": 7,
+  "englishSubheadings": 7,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 0,
+  "englishMixedVoiceParagraphs": 0,
+  "tamilQuotedSegments": 0,
+  "englishQuotedSegments": 0,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 6,
+  "relationUnknown": 6,
+  "sourceDamageNotes": [
+   "SOURCE DAMAGE: paper is torn away inside the quotation; no missing words reconstructed.",
+   "SOURCE DAMAGE: torn continuation.",
+   "SOURCE DAMAGE: large torn area removes the continuation; no reconstruction from context.",
+   "SOURCE DAMAGE: torn text.",
+   "SOURCE DAMAGE: torn continuation; no missing words reconstructed.",
+   "SOURCE DAMAGE: torn text; no missing words reconstructed."
+  ],
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source."
+ },
+ "notes": [
+  "Bulk Onboarding Wave 3. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "This publication prints no contents page; article ordinals are archive reading ordinals."
+ ]
+}

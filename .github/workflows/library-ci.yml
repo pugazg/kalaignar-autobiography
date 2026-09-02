@@ -144,6 +144,16 @@ jobs:
               "speeches/kalaivanar-nsk-memorial-day": { repo: "kalaignar-public-speeches" },
               "poems/idhayathai-thanthidu-anna": { repo: "kalaignar-poems" },
               "essays/sakkaravarththiyin-thirumagan": { repo: "kalaignar-essays" },
+              // ── BULK ONBOARDING WAVE 3 ──────────────────────────────────────────────────────
+              // These three publications pin the essays archive at a LATER commit than
+              // sakkaravarththiyin-thirumagan above, so they get their own checkout directory. Sharing
+              // one directory across two different historical pins would make the same-directory/
+              // same-pin guard below fire, and loosening that guard would remove the protection it
+              // exists to give. The essays repository also advances constantly for ina-muzhakkam,
+              // which is NOT part of this batch.
+              "essays/kayittril-thongiya-kanapathi": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
+              "essays/unarchchimaalai": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
+              "essays/thiraavida-sampaththu": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
               "novels/balipeedam-nokki": { repo: "kalaignar-novels" },
               "plays/silappathikaram-nataka-kappiyam": { repo: "kalaignar-stage-plays" },
               // The four நான்மணி மாலை plays pin the stage-plays archive at a DIFFERENT, later
@@ -257,6 +267,13 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-sakkaravarththiyin-thirumagan.mjs "$KDL_SOURCES_DIR/kalaignar-essays"
+      # ONE coherent released batch, ONE validation step — the three Wave-3 publications. The
+      # script prints a PASS/FAIL line per publication, so a failure names the work, and any
+      # single publication failing fails the whole job.
+      - name: Wave 3 Essays — 3-publication batch
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave3-essays.mjs "$KDL_SOURCES_DIR/kalaignar-essays-wave3"
       - name: Balipeedam Nokki
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

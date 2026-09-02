@@ -5,6 +5,7 @@ import path from "node:path";
 import ArticleSource from "@/components/ArticleSource";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayProvenance } from "@/data/essays";
+import { sourcePageMetaDescription } from "@/lib/essay-source-facts";
 
 function loadProvenance(slug: string): EssayProvenance | null {
   try {
@@ -19,11 +20,16 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  return {
-    title: `Source & provenance — ${params.slug} | Kalaignar Digital Library`,
-    description:
-      "Provenance for the publication: the controlling scan, the first-edition vs reprint distinction, verification state, the 14-article map, title-witness distinctions, body exclusions, the cross-page structural audit, and rights.",
-  };
+  // Derived from the publication's OWN provenance record, never a template. An earlier revision
+  // hard-coded the reference publication's facts here — "the first-edition vs reprint distinction,
+  // the 14-article map, and rights" — which are all false for a 1949 single-article pamphlet with no
+  // reprint and no rights determination. `sourcePageFacts` emits a clause only where the record
+  // actually carries the fact.
+  const prov = loadProvenance(params.slug);
+  if (!prov) return { title: "Source & provenance | Kalaignar Digital Library" };
+  const title = `Source & provenance — ${prov.source.titleTa} · ${prov.source.titleEn} | Kalaignar Digital Library`;
+  const description = sourcePageMetaDescription(prov);
+  return { title, description, openGraph: { title, description }, twitter: { title: prov.source.titleEn, description } };
 }
 
 export default function EssaySourcePage({ params }: { params: { slug: string } }) {

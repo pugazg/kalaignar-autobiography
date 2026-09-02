@@ -344,12 +344,18 @@ for (let i = 0; i < 14; i++) {
 
   articles.push({
     number: num,
+    // This publication DOES print a contents page numbering its articles 1–14, so the ordinal is a
+    // printed source fact here. The Wave-3 publications print no contents page and use
+    // "archive-ordinal"; the two must never be described in the same words.
+    numberSource: "printed-contents",
     slug: taFiles[i].replace(/^\d\d-/, "").replace(/\.md$/, ""),
     titleTa: ta.fm.title_ta,
     ...(contentsTitle && contentsTitle !== ta.fm.title_ta ? { contentsTitleTa: contentsTitle } : {}),
     titleEn: en.fm.title_en,
-    scanPages: { from: sf, to: st },
-    printedPages: { from: pf, to: pt },
+    // Every article here is ONE ascending contiguous run, fully paginated — the simple case of the
+    // generalized model, written out explicitly rather than special-cased.
+    scanRuns: [{ from: sf, to: st }],
+    printedPages: { kind: "range", from: pf, to: pt },
     tamil: { blocks: taBlocks },
     english: { blocks: enBlocks, notes: en.notes.map((t) => ({ kind: "translator-note", text: t, notPartOfAuthoredText: true })) },
     pageTransitions: transitions,
@@ -404,6 +410,10 @@ const publication = {
   author: { ta: "கலைஞர் மு.கருணாநிதி", en: "Kalaignar M. Karunanidhi" },
   firstEdition: { statementTa: "முதற்பதிப்பு மே 1956 (வேலூர் திராவிடன் பதிப்பகம்)", year: 1956, monthTa: "மே", publisherTa: "வேலூர் திராவிடன் பதிப்பகம்" },
   controllingEdition: { statementTa: "மறு பதிப்பு - 2018", year: 2018, publisherLineTa: "திராவிடர் கழக (இயக்க) வெளியீடு" },
+  // The scan integrated here is the 2018 REPRINT, not the 1956 first edition. That distinction is
+  // real for this publication and is why the field exists; the Wave-3 pamphlets set this true
+  // because their controlling scan IS the first edition.
+  controllingIsFirstEdition: false,
   printedPageCount: PRINTED_PAGE_COUNT,
   articles,
   articleCount: articles.length,
@@ -436,8 +446,9 @@ const provenance = {
       titleTa: a.titleTa,
       ...(a.contentsTitleTa ? { contentsTitleTa: a.contentsTitleTa } : {}),
       titleEn: a.titleEn,
-      scanPages: `${a.scanPages.from}–${a.scanPages.to}`,
+      scanPages: a.scanRuns.map((r) => (r.from === r.to ? `${r.from}` : `${r.from}–${r.to}`)).join(", "),
       printedPages: `${a.printedPages.from}–${a.printedPages.to}`,
+      numberSource: a.numberSource,
     })),
     titleWitnessNotes: [
       "Article 5 — contents-page witness `பரத்துவாஜர் ஆஸ்ரமமா - பாரீஸ் நகரத்து ‘பாரா’?` differs from the verified heading-page witness `பரத்துவாஜா ஆஸ்ரமமா - பாரிஸ் நகரத்து ‘பாரா’?`. Both are retained; the reader shows the heading witness.",

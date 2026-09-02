@@ -103,7 +103,11 @@ eq("article slugs are unique", new Set(pub.articles.map((a) => a.slug)).size, 14
   pub.articles.forEach((a, i) => {
     const t = fm(readText(path.join(PUB_DIR, "articles", taFiles[i])));
     const e = fm(readText(path.join(PUB_DIR, "translations/en", enFiles[i])));
-    const scan = `${a.scanPages.from}-${a.scanPages.to}`;
+    // Wave-3 generalization: coverage is an ordered list of runs. THIS publication must still be
+    // one ascending contiguous run per article, and still fully paginated.
+    if (a.scanRuns.length !== 1) throw new Error(`article ${a.number}: expected exactly one scan run`);
+    if (a.printedPages.kind !== "range") throw new Error(`article ${a.number}: expected a printed range`);
+    const scan = `${a.scanRuns[0].from}-${a.scanRuns[0].to}`;
     const printed = `${a.printedPages.from}-${a.printedPages.to}`;
     if (t.scan_pages !== scan || t.printed_pages !== printed) { ok = false; bad.push(`art ${a.number} Tamil range`); }
     if (e.source_scan_pages !== scan || e.source_printed_pages !== printed) { ok = false; bad.push(`art ${a.number} English range`); }
@@ -127,7 +131,10 @@ eq("article slugs are unique", new Set(pub.articles.map((a) => a.slug)).size, 14
     if (`${row[1]}–${row[2]}` !== a.scanPages || `${row[3]}–${row[4]}` !== a.printedPages) { ok = false; bad.push(`article ${a.number} mapping`); }
   }
   check("article scan/printed map matches the source metadata table", ok, bad.join("; "));
-  eq("articles span scans 9–82", [pub.articles[0].scanPages.from, pub.articles[13].scanPages.to], [9, 82]);
+  check("every article is ONE ascending contiguous run", pub.articles.every((a) => a.scanRuns.length === 1 && a.scanRuns[0].to >= a.scanRuns[0].from));
+  check("every article keeps a printed RANGE witness", pub.articles.every((a) => a.printedPages.kind === "range"));
+  check("every article ordinal is a PRINTED contents number", pub.articles.every((a) => a.numberSource === "printed-contents"));
+  eq("articles span scans 9–82", [pub.articles[0].scanRuns[0].from, pub.articles[13].scanRuns[0].to], [9, 82]);
   eq("articles span printed 7–80", [pub.articles[0].printedPages.from, pub.articles[13].printedPages.to], [7, 80]);
 }
 
@@ -200,7 +207,7 @@ function releasedUnits(text, markerRe) {
   eq("Tamil subheadings match the source's printed subheadings", taSub, srcTaSub);
   eq("English subheadings match the released subheadings", enSub, srcEnSub);
   check("every block carries at least one printed page", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => b.sourcePages.length >= 1 && b.sourcePages.every((p) => p && p.scan && p.printed))));
-  check("block pages stay inside the article's scan range", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => b.sourcePages.every((p) => p.scan >= a.scanPages.from && p.scan <= a.scanPages.to))));
+  check("block pages stay inside the article's scan range", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => b.sourcePages.every((p) => p.scan >= a.scanRuns[0].from && p.scan <= a.scanRuns[0].to))));
   check("block kinds are legal (source structure only)", pub.articles.every((a) => [...a.tamil.blocks, ...a.english.blocks].every((b) => ["paragraph", "subheading", "attribution"].includes(b.kind))));
 
   // ── VOICE: independently re-segment every block from its own released text ─────────────────────
@@ -326,7 +333,7 @@ function releasedUnits(text, markerRe) {
   const bad = [];
   let dSame = 0, dBound = 0, dUnknown = 0;
   for (const a of pub.articles) {
-    eq(`article ${a.number} transition count`, a.pageTransitions.length, a.scanPages.to - a.scanPages.from);
+    eq(`article ${a.number} transition count`, a.pageTransitions.length, a.scanRuns[0].to - a.scanRuns[0].from);
     for (const t of a.pageTransitions) {
       const names = new RegExp(`scan ${t.toScan}\\b|scan ${t.fromScan}\\b|தொடக்க|Opening|first line|இறுதி|Final`, "i");
       const lines = `${recs.get(t.fromScan).note}\n${recs.get(t.toScan).note}`.split("\n").filter((l) => names.test(l));
@@ -344,7 +351,7 @@ function releasedUnits(text, markerRe) {
   eq("independently derived block-boundary count", prov.archiveDerived.relationBlockBoundary, dBound);
   eq("independently derived unknown count", prov.archiveDerived.relationUnknown, dUnknown);
   eq("relation counts sum to the audited transitions", prov.archiveDerived.relationSameBlock + prov.archiveDerived.relationBlockBoundary + prov.archiveDerived.relationUnknown, prov.archiveDerived.pageTransitionsAudited);
-  eq("audited transitions equal the in-article page edges", prov.archiveDerived.pageTransitionsAudited, pub.articles.reduce((n, a) => n + (a.scanPages.to - a.scanPages.from), 0));
+  eq("audited transitions equal the in-article page edges", prov.archiveDerived.pageTransitionsAudited, pub.articles.reduce((n, a) => n + (a.scanRuns[0].to - a.scanRuns[0].from), 0));
   check("relations are legal values", pub.articles.every((a) => a.pageTransitions.every((t) => ["same-block", "block-boundary", "unknown"].includes(t.relation))));
 
   // NEGATIVE TEST 1 — deleting a continuation citation must NOT yield a boundary; it yields unknown.
@@ -494,7 +501,7 @@ check("English title marked as project-created, not printed in the source", prov
     check(`scan-83 promotional fragment ${JSON.stringify(frag)} exists in the source back cover`, backCover.includes(frag));
   }
   check("article 12 body does not absorb the back-cover excerpt's distinctive fragment", !a12.includes("அறி குறி?"));
-  eq("article 12 covers scans 71–73 only", [pub.articles[11].scanPages.from, pub.articles[11].scanPages.to], [71, 73]);
+  eq("article 12 covers scans 71–73 only", [pub.articles[11].scanRuns[0].from, pub.articles[11].scanRuns[0].to], [71, 73]);
 }
 
 // ── 12. RECORDED COUNTS MATCH GENERATED DATA ─────────────────────────────────────────────────────

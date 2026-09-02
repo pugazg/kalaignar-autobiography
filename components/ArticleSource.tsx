@@ -69,24 +69,51 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
             <Row label={ta ? "கண்பார்வை உரைச் சரிபார்ப்பு" : "Strict text fidelity"}>{s.strictFidelityReview}</Row>
             <Row label={ta ? "கட்டுரைத் தொகுப்புகள்" : "Article assemblies"}>{s.articleAssemblies}</Row>
             <Row label={ta ? "தீர்க்கப்படாத தமிழ் சிக்கல்கள்" : "Unresolved Tamil fidelity items"}>{s.unresolvedTamilFidelityItems}</Row>
-            <Row label={ta ? "அச்சுப் பக்கங்கள்" : "Printed page count"}>{s.printedPageCount}</Row>
+            {/* Optional: three Wave-3 pamphlets establish no publication-wide printed page count,
+                and a physical scan count is a different fact that must never stand in for it. */}
+            {s.printedPageCount !== undefined && (
+              <Row label={ta ? "அச்சுப் பக்கங்கள்" : "Printed page count"}>{s.printedPageCount}</Row>
+            )}
             <Row label={ta ? "மூல PDF" : "Source PDF"}>{ta ? "இந்தக் களஞ்சியத்திற்குள் சேமிக்கப்படவில்லை" : "not vendored into this repository"}</Row>
           </dl>
-          {/* EDITION DISTINCTION — kept explicit so the controlling 2018 reprint is never read as a
-              1956 scan, and the 1956 first-edition history is never erased. */}
+          {/* EDITION — a reprint DISTINCTION is shown only where the source establishes one. The
+              reference publication was reprinted in 2018 and that must never be read as a scan of
+              the 1956 original; the Wave-3 pamphlets have no reprint at all, and are shown as the
+              single edition they are rather than being described as following one. */}
           <div className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
-            <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "பதிப்பு வேறுபாடு" : "Edition distinction"}</p>
-            <p className="mt-1">
-              {ta ? "முதற்பதிப்பு: " : "First edition: "}<span className="font-tamil" lang="ta">{s.firstEditionTa}</span>
+            <p className="font-semibold text-ink/80 dark:text-night-text/80">
+              {s.controllingEditionTa
+                ? (ta ? "பதிப்பு வேறுபாடு" : "Edition distinction")
+                : (ta ? "பதிப்பு" : "Edition")}
             </p>
-            <p className="mt-1">
-              {ta ? "இங்கே பயன்படுத்திய கட்டுப்படுத்தும் பதிப்பு: " : "Controlling edition integrated here: "}
-              <span className="font-tamil" lang="ta">{s.controllingEditionTa}</span> · <span className="font-tamil" lang="ta">{s.titlePagePublisherTa}</span>
-            </p>
+            {s.firstEditionTa && (
+              <p className="mt-1">
+                {s.controllingEditionTa
+                  ? (ta ? "முதற்பதிப்பு: " : "First edition: ")
+                  : (ta ? "பதிப்பு: " : "Edition: ")}
+                <span className="font-tamil" lang="ta">{s.firstEditionTa}</span>
+              </p>
+            )}
+            {s.editionWitnessesTa && s.editionWitnessesTa.length > 0 && (
+              <p className="mt-1 font-tamil" lang="ta">{s.editionWitnessesTa.join(" · ")}</p>
+            )}
+            {s.controllingEditionTa && (
+              <p className="mt-1">
+                {ta ? "இங்கே பயன்படுத்திய கட்டுப்படுத்தும் பதிப்பு: " : "Controlling edition used here: "}
+                <span className="font-tamil" lang="ta">{s.controllingEditionTa}</span>
+                {s.titlePagePublisherTa && (
+                  <> · <span className="font-tamil" lang="ta">{s.titlePagePublisherTa}</span></>
+                )}
+              </p>
+            )}
             <p className="mt-1.5 italic">
-              {ta
-                ? "இந்த ஒருங்கிணைப்பு 2018 மறுபதிப்பின் scan-ஐ அடிப்படையாகக் கொண்டது; இது 1956 அச்சுப் பிரதியின் scan அல்ல."
-                : "This integration is based on the 2018 reprint scan; it is not a scan of the 1956 physical edition."}
+              {s.controllingEditionTa
+                ? (ta
+                    ? "இந்த ஒருங்கிணைப்பு கட்டுப்படுத்தும் மறுபதிப்பின் scan-ஐ அடிப்படையாகக் கொண்டது; இது முதற்பதிப்பின் scan அல்ல."
+                    : "This integration is based on the controlling reprint scan; it is not a scan of the first physical edition.")
+                : (ta
+                    ? "இந்நூலுக்கு மறுபதிப்பு எதுவும் இல்லை. இங்கே ஒருங்கிணைக்கப்பட்ட scan இந்தப் பதிப்பினுடையதே."
+                    : "This publication has no reprint. The scan integrated here is that edition itself.")}
             </p>
           </div>
         </Card>
@@ -123,10 +150,17 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               </tbody>
             </table>
           </div>
+          {/* Whether these ordinals are PRINTED numbers or the archive's reading ordinals is a
+              source fact that differs by publication, so it is read from the data rather than
+              asserted. A publication with no contents page never claims printed numbering. */}
           <p className="mt-3 text-[11px] leading-relaxed text-ink/50 dark:text-night-text/50" lang={ta ? "ta" : "en"}>
-            {ta
-              ? "1–14 என்ற எண்கள் அச்சிடப்பட்ட பொருளடக்கத்தில் உள்ளவை; ஒவ்வொரு கட்டுரை எல்லையும் அதன் தலைப்புப் பக்கத்துடன் ஒப்பிட்டு உறுதிப்படுத்தப்பட்டது. இவை காப்பகம் உருவாக்கிய வழிசெலுத்தல் எண்கள் அல்ல."
-              : "The numbers 1–14 are printed in the publication's own contents page, and every article boundary was verified against its heading page. They are source-supported publication ordering, not archive-created navigation numbering."}
+            {s.articleMap.every((a) => a.numberSource === "printed-contents")
+              ? (ta
+                  ? "இந்த எண்கள் நூலின் சொந்த அச்சிடப்பட்ட பொருளடக்கப் பக்கத்தில் உள்ளவை; ஒவ்வொரு கட்டுரை எல்லையும் மூலத்தில் சரிபார்க்கப்பட்டது."
+                  : "These numbers are printed in the publication's own contents page, and every article boundary was verified against the source.")
+              : (ta
+                  ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை. இந்த எண்கள் காப்பகத்தின் வாசிப்பு வரிசை எண்கள் — அச்சிடப்பட்டவை அல்ல."
+                  : "This publication prints no contents page. These numbers are the archive's reading ordinals — they are not printed in the publication.")}
           </p>
           <div className="mt-3 space-y-1.5">
             {s.titleWitnessNotes.map((n, i) => (
@@ -214,24 +248,44 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
           </Card>
         )}
 
+      {/* RIGHTS — OPTIONAL. The reference publication carries a project-rights record its own
+          source and project evidence support. The Wave-3 pamphlets carry NONE: no
+          publication-specific rights determination was established for them, and inheriting a
+          block that was never made for a work would claim more than the evidence allows. The
+          page states the absence rather than leaving a silent gap. */}
+      {pr ? (
+          <Card icon={ShieldCheck} title={ta ? "உரிமை நிலை" : "Rights"}>
+            <dl className="mt-3">
+              <Row label={ta ? "பொருந்துவது" : "Applies to"}>{pr.appliesTo}</Row>
+              <Row label={ta ? "நிலை" : "Status"}>{pr.rightsStatus}</Row>
+              <Row label={ta ? "அதிகாரம்" : "Authority"}>{pr.rightsAuthority} · {pr.rightsAction}</Row>
+              <Row label={ta ? "அறிவிப்பு" : "Announced"}>{pr.rightsAnnouncementDate}</Row>
+              <Row label={ta ? "அரசாணை எண்" : "GO number"}>{pr.governmentOrderNumber ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}</Row>
+              <Row label={ta ? "அரசாணை வெளியீட்டுத் தேதி" : "GO issue date"}>{pr.governmentOrderDate ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}</Row>
+              <Row label={ta ? "அரசாணை ஒப்படைப்பு" : "GO handover"}>{pr.governmentOrderHandoverDate}</Row>
+            </dl>
+            <div className="mt-3 space-y-2 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang="en">
+              <p>{pr.distinctionNote}</p>
+              <p>{pr.thirdPartyNote}</p>
+              <p>{pr.projectTranslationNote}</p>
+              <p>{pr.quotedThirdPartyNote}</p>
+              <p className="italic">{pr.evidencePending}</p>
+            </div>
+          </Card>
+      ) : (
         <Card icon={ShieldCheck} title={ta ? "உரிமை நிலை" : "Rights"}>
-          <dl className="mt-3">
-            <Row label={ta ? "பொருந்துவது" : "Applies to"}>{pr.appliesTo}</Row>
-            <Row label={ta ? "நிலை" : "Status"}>{pr.rightsStatus}</Row>
-            <Row label={ta ? "அதிகாரம்" : "Authority"}>{pr.rightsAuthority} · {pr.rightsAction}</Row>
-            <Row label={ta ? "அறிவிப்பு" : "Announced"}>{pr.rightsAnnouncementDate}</Row>
-            <Row label={ta ? "அரசாணை எண்" : "GO number"}>{pr.governmentOrderNumber ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}</Row>
-            <Row label={ta ? "அரசாணை வெளியீட்டுத் தேதி" : "GO issue date"}>{pr.governmentOrderDate ?? (ta ? "இன்னும் சரிபார்க்கப்படவில்லை" : "not yet verified")}</Row>
-            <Row label={ta ? "அரசாணை ஒப்படைப்பு" : "GO handover"}>{pr.governmentOrderHandoverDate}</Row>
-          </dl>
-          <div className="mt-3 space-y-2 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang="en">
-            <p>{pr.distinctionNote}</p>
-            <p>{pr.thirdPartyNote}</p>
-            <p>{pr.projectTranslationNote}</p>
-            <p>{pr.quotedThirdPartyNote}</p>
-            <p className="italic">{pr.evidencePending}</p>
-          </div>
+          <p className="mt-3 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : "en"}>
+            {ta
+              ? "இந்த வெளியீட்டுக்கெனத் தனியான உரிமை முடிவு எதுவும் மூலத்திலோ திட்டப் பதிவுகளிலோ நிறுவப்படவில்லை. எனவே இங்கு உரிமை நிலை எதுவும் கூறப்படவில்லை — வேறு நூலின் உரிமைப் பதிவு இதற்குப் பொருத்தப்படவில்லை."
+              : "No publication-specific rights determination is established for this work in either the source archive or the project records. No rights status is therefore claimed here, and no other work's rights record has been applied to it."}
+          </p>
+          <p className="mt-2 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : "en"}>
+            {ta
+              ? "ஆங்கில மொழிபெயர்ப்பு திட்டத்தால் உருவாக்கப்பட்டது; தமிழே சான்றுநிலை. கட்டுரைக்குள் மேற்கோள் காட்டப்படும் பிறர் உரை கலைஞரின் சொந்த உரையிலிருந்து தனியாகவே வைக்கப்படுகிறது."
+              : "The English is a project-created translation and the Tamil remains authoritative. Quoted third-party material inside an article is kept separate from Kalaignar's own text."}
+          </p>
         </Card>
+      )}
 
         <Card icon={Info} title={ta ? "குறிப்புகள்" : "Notes"}>
           <ul className="mt-3 space-y-2 text-sm leading-relaxed text-ink/80 dark:text-night-text/80">

@@ -1,0 +1,84 @@
+{
+ "workId": "kayittril-thongiya-kanapathi",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/kayittril-thongiya-kanapathi",
+ "sourceCommit": "6814e979fd3c2cefa14cbeb17eeec28164ce28f5",
+ "sourceTree": "ca1c92591b9389e60d44b9683af849e3a682e528",
+ "source": {
+  "titleTa": "கயிற்றில் தொங்கிய கணபதி",
+  "titleEn": "Ganapathi Who Hung from the Rope",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0064013_கயிற்றில்_தொங்கிய_கணபதி.pdf",
+  "scanSha256": "927d05fb27a2545d6732acd9bf8bde04dba2d22546d171b502703a773b40f45a",
+  "scanFileSizeBytes": 26750146,
+  "scanTotalPages": 17,
+  "physicalVerification": "17 / 17 physical page records",
+  "strictFidelityReview": "P5 strict visual text fidelity — 17 / 17 PASS",
+  "articleAssemblies": "1 / 1 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "ஜூலை 1949",
+   "அறிவுப்பண்ணை",
+   "விலை அணா 3"
+  ],
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "கயிற்றில் தொங்கிய கணபதி",
+    "titleEn": "Ganapathi Who Hung from the Rope",
+    "scanPages": "6–15",
+    "printedPages": "6–14; scan 6 (the article opening) shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "Cover (scan 1) prints the author as `மு.கருணாநிதி`; the title page (scan 2) prints `மு. கருணாநிதி` followed by `எழுதியது`. The spacing difference is source-visible and both witnesses are kept."
+  ],
+  "lockedExclusions": [
+   "scans 1–3 — cover / title-publisher / imprint",
+   "scan 4 — பதிப்புரை",
+   "scan 5 — blank physical scan",
+   "scans 16–17 — independent printed advertisements / promotional matter"
+  ]
+ },
+ "english": {
+  "releaseTitle": "Ganapathi Who Hung from the Rope",
+  "kind": "project-created",
+  "articlesVerified": "1 / 1 verified",
+  "consistencyReview": "E6 publication-wide English consistency review — PASS",
+  "releaseCloseout": "E7 English release closeout — PASS",
+  "releaseGate": "translations/en/RELEASE_REPORT.md — E7 PASSED, English release gate closed",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 1,
+  "tamilBlocks": 34,
+  "englishBlocks": 34,
+  "tamilSubheadings": 0,
+  "englishSubheadings": 0,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 6,
+  "englishMixedVoiceParagraphs": 7,
+  "tamilQuotedSegments": 12,
+  "englishQuotedSegments": 14,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 9,
+  "relationUnknown": 9,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source."
+ },
+ "notes": [
+  "Bulk Onboarding Wave 3. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "This publication prints no contents page; article ordinals are archive reading ordinals."
+ ]
+}
