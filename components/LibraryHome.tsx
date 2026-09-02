@@ -156,8 +156,16 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
                       measures 4.00:1 — under the 4.5:1 WCAG AA floor for text this size. Rather than
                       change a token shared with the whole app, this one control uses
                       `dark:text-night-text/70`, already used a few lines above for the shelf label:
-                      #A9A7A0 on #0C1116, 7.88:1. Light mode keeps marina at 7.10:1. */}
-                  <summary className="focus-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded py-2 text-xs text-marina dark:text-night-text/70">
+                      #A9A7A0 on #0C1116, 7.88:1. Light mode keeps marina at 7.10:1.
+
+                      THE FOCUS RING NEEDS THE SAME LOCAL TREATMENT. `.focus-ring` draws ring-marina
+                      in both themes; in dark that is #0E5D63 against the #0C1116 offset and page,
+                      2.5:1 — under the 3:1 that WCAG 1.4.11 (Level AA) asks of an author-supplied
+                      focus indicator. The shared utility is left alone for the whole app and this
+                      one control overrides only its dark ring colour, to the same night-text/70 the
+                      label uses: 7.88:1. Light mode keeps marina on paper at 7.10:1 and is
+                      untouched. Geometry is unchanged — still ring-2 with ring-offset-2. */}
+                  <summary className="focus-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded py-2 text-xs text-marina dark:text-night-text/70 dark:focus-visible:ring-night-text/70">
                     {/* `display:inline-flex` suppresses the native triangle, so the affordance is drawn
                         explicitly — the same compensation the readers' <summary> elements already make.
                         It flips instantly on open; no transition. The group is NAMED: the work cards

@@ -131,6 +131,11 @@ ok(!!summaries && !summaries[1].includes("dark:text-marina-light"),
    "the summary does not use dark:text-marina-light (4.00:1, below AA)");
 ok(!!summaries && summaries[1].includes("dark:text-night-text/70"),
    "the summary uses the accessible dark class dark:text-night-text/70 (7.88:1)");
+// Same reasoning for the focus indicator: .focus-ring draws ring-marina, which is 2.5:1 against the
+// dark offset and page — under the 3:1 WCAG 1.4.11 (AA) asks of an author-supplied focus indicator.
+// The shared utility stays as it is for the rest of the app; this control overrides its dark ring.
+ok(!!summaries && summaries[1].includes("dark:focus-visible:ring-night-text/70"),
+   "the summary overrides its dark focus ring to night-text/70 (7.88:1, not marina's 2.5:1)");
 
 // ── 9. Phase 0 stays Phase 0 ─────────────────────────────────────────────────────────────────────
 // A guard, not a feature test: the collection architecture is a separately authorized phase, and
