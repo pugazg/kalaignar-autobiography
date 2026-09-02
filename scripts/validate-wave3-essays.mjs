@@ -378,7 +378,92 @@ group("CATALOGUE AND ROUTES");
      WORKS.filter((w) => sitemap.includes(w.slug)).length, 0);
 }
 
-// ── 4. REFERENCE REGRESSION ─────────────────────────────────────────────────────────────────────────
+// ── 4. /source PAGE METADATA ────────────────────────────────────────────────────────────────────────
+// Independent review found the `/source` route's generateMetadata() still hard-coded to the reference
+// publication — it told every publication it had "the first-edition vs reprint distinction, the
+// 14-article map, and rights". The visible component had been generalized; the route metadata had not,
+// and a green build proved nothing about it.
+//
+// These assertions bind to the SAME path the route uses: the route must call the shared helper (so it
+// cannot quietly go back to a literal), and the description is then recomputed here from each
+// publication's own provenance with this file's own implementation.
+group("SOURCE-PAGE METADATA");
+{
+  const routePath = path.join(process.cwd(), "app/essays/[slug]/source/page.tsx");
+  const routeRaw = read(routePath);
+  // Judge the CODE, not the prose about it. A comment explaining why the old hard-coded wording was
+  // wrong necessarily quotes that wording, and flagging it would punish the explanation rather than
+  // the defect.
+  const route = routeRaw.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+  check("the /source route derives its description from the shared helper",
+        route.includes("sourcePageMetaDescription"));
+  const metaBody = (/export function generateMetadata[\s\S]*?\n\}/.exec(route) || [""])[0];
+  check("the /source route loads the publication's own provenance for metadata",
+        metaBody.includes("loadProvenance("));
+  check("the /source route does not return a literal description",
+        !/description:\s*"/.test(metaBody));
+  const REFERENCE_ONLY = ["14-article", "14 articles", "2018 reprint", "first-edition vs reprint"];
+  for (const bad of REFERENCE_ONLY) {
+    check(`the /source route hard-codes no reference-only wording: ${bad}`, !route.includes(bad));
+  }
+
+  const helper = read(path.join(process.cwd(), "lib/essay-source-facts.ts"));
+  check("the helper gates the rights clause on an actual rights record",
+        /prov\.projectRights/.test(helper));
+  check("the helper gates the reprint clause on an actual controlling edition",
+        /s\.controllingEditionTa/.test(helper));
+
+  // Independent re-derivation — deliberately not importing the helper.
+  const describe = (prov) => {
+    const s = prov.source;
+    const f = [];
+    f.push(`the controlling scan ${s.scanFilename}`);
+    f.push(`${s.scanTotalPages} physical scans`);
+    const n = s.articleMap.length;
+    f.push(n === 1 ? "the publication's single article" : `the ${n}-article map`);
+    if (s.physicalVerification) f.push(s.physicalVerification.toLowerCase());
+    if (s.strictFidelityReview) f.push("strict visual text-fidelity review");
+    if (s.controllingEditionTa) f.push("the first-edition and controlling-reprint distinction");
+    else if (s.firstEditionTa || (s.editionWitnessesTa && s.editionWitnessesTa.length)) f.push("the printed edition statement");
+    if (s.physicalCondition) f.push("the recorded physical damage, which is not reconstructed");
+    if (s.readingOrderNote) f.push("the reconstructed physical reading order");
+    if (s.titleWitnessNotes && s.titleWitnessNotes.length) f.push("source-witness distinctions");
+    if (s.lockedExclusions && s.lockedExclusions.length) f.push("the material excluded from the article bodies");
+    f.push("the project-created English release state");
+    if (prov.projectRights) f.push("the established rights record");
+    return `Source and provenance for ${s.titleEn} (${s.titleTa}): ${f.slice(0, -1).join(", ")} and ${f[f.length - 1]}.`;
+  };
+
+  const EXPECT = { "kayittril-thongiya-kanapathi": 1, "unarchchimaalai": 10, "thiraavida-sampaththu": 2 };
+  for (const w of WORKS) {
+    const prov = JSON.parse(read(path.join(DATA, w.slug, "provenance.json")));
+    const d = describe(prov);
+    check(`${w.slug}: metadata names the publication itself`, d.includes(prov.source.titleTa));
+    const n = EXPECT[w.slug];
+    check(`${w.slug}: metadata states its OWN article count (${n})`,
+          n === 1 ? d.includes("single article") : d.includes(`the ${n}-article map`));
+    for (const bad of REFERENCE_ONLY) {
+      check(`${w.slug}: metadata does not claim "${bad}"`, !d.includes(bad));
+    }
+    check(`${w.slug}: metadata asserts NO rights status`, !d.includes("rights"));
+    check(`${w.slug}: metadata asserts NO reprint`, !d.includes("reprint"));
+    if (w.readingOrder) {
+      check(`${w.slug}: metadata carries the reconstructed reading order`, d.includes("reconstructed physical reading order"));
+      check(`${w.slug}: metadata carries the recorded damage`, d.includes("physical damage"));
+    }
+  }
+
+  // The reference publication's real facts must survive.
+  const refProv = JSON.parse(read(path.join(DATA, REFERENCE, "provenance.json")));
+  const refDesc = describe(refProv);
+  check("reference metadata still states its 14-article map", refDesc.includes("the 14-article map"));
+  check("reference metadata still states the first-edition/reprint distinction",
+        refDesc.includes("first-edition and controlling-reprint distinction"));
+  check("reference metadata still states its established rights record",
+        refDesc.includes("the established rights record"));
+}
+
+// ── 5. REFERENCE REGRESSION ─────────────────────────────────────────────────────────────────────────
 group("SAKKARAVARTHTHIYIN THIRUMAGAN REGRESSION");
 {
   const pub = JSON.parse(read(path.join(DATA, REFERENCE, "publication.json")));

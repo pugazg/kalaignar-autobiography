@@ -8,7 +8,7 @@
 // The rule these helpers exist to enforce: NEVER render an invented fact, and never render an empty
 // one. A source with no printed pagination says so; it does not emit `printed pages undefined–undefined`.
 
-import type { Article, ArticlePrintedPages, EssayPublication } from "@/data/essays";
+import type { Article, ArticlePrintedPages, EssayProvenance, EssayPublication } from "@/data/essays";
 
 /**
  * How an article's printed pagination should read, or `null` when the source establishes none.
@@ -114,4 +114,55 @@ export function articleNumberingNote(pub: EssayPublication, ta: boolean): string
   return ta
     ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை; இந்த எண்கள் காப்பகத்தின் வாசிப்பு வரிசை எண்கள், அச்சிடப்பட்டவை அல்ல."
     : "This publication prints no contents page. These numbers are the archive's reading ordinals — they are not printed in the publication.";
+}
+
+/**
+ * The facts a publication's `/source` page may honestly advertise, derived from its OWN provenance
+ * record rather than from a template.
+ *
+ * This exists because the `/source` route's metadata was hard-coded to the reference publication and
+ * described every publication as having "the first-edition vs reprint distinction, the 14-article
+ * map, and rights". For a 1949 single-article pamphlet with no reprint and no rights determination,
+ * all three of those claims are false. Every clause below is emitted ONLY when the provenance record
+ * actually carries the fact.
+ */
+export function sourcePageFacts(prov: EssayProvenance): string[] {
+  const s = prov.source;
+  const facts: string[] = [];
+
+  facts.push(`the controlling scan ${s.scanFilename}`);
+  facts.push(`${s.scanTotalPages} physical scans`);
+
+  const articles = s.articleMap.length;
+  facts.push(articles === 1 ? "the publication's single article" : `the ${articles}-article map`);
+
+  if (s.physicalVerification) facts.push(s.physicalVerification.toLowerCase());
+  if (s.strictFidelityReview) facts.push("strict visual text-fidelity review");
+
+  // A reprint distinction is only real where the source establishes a controlling edition that is
+  // NOT the first. Otherwise the publication is described as the single edition it is.
+  if (s.controllingEditionTa) facts.push("the first-edition and controlling-reprint distinction");
+  else if (s.firstEditionTa || (s.editionWitnessesTa && s.editionWitnessesTa.length)) {
+    facts.push("the printed edition statement");
+  }
+
+  if (s.physicalCondition) facts.push("the recorded physical damage, which is not reconstructed");
+  if (s.readingOrderNote) facts.push("the reconstructed physical reading order");
+  if (s.titleWitnessNotes && s.titleWitnessNotes.length) facts.push("source-witness distinctions");
+  if (s.lockedExclusions && s.lockedExclusions.length) facts.push("the material excluded from the article bodies");
+
+  facts.push("the project-created English release state");
+
+  // Rights are advertised ONLY where a rights record exists. Three Wave-3 pamphlets have none.
+  if (prov.projectRights) facts.push("the established rights record");
+
+  return facts;
+}
+
+/** The `/source` page description, built from `sourcePageFacts` — never a template. */
+export function sourcePageMetaDescription(prov: EssayProvenance): string {
+  const facts = sourcePageFacts(prov);
+  const last = facts[facts.length - 1];
+  const head = facts.slice(0, -1).join(", ");
+  return `Source and provenance for ${prov.source.titleEn} (${prov.source.titleTa}): ${head} and ${last}.`;
 }
