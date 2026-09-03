@@ -26,7 +26,13 @@ const HANG_EM = 1.15;
 
 // Render the ordered element stream. Consecutive lines are grouped into an unlabelled verse run
 // (a plain <div>, never an <h*> and never announced as a "stanza"); boundaries render between runs.
-function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
+//
+// Exported for testing. The reader fetches its payload in an effect, so a server render of the
+// component shows no verse at all — and a test that could not see the verse could not prove that
+// four structurally different poems render correctly. This function is the verse: pure, taking the
+// element stream and the language, so the tests exercise the real rendering path rather than a
+// re-implementation of it.
+export function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
   const out: ReactNode[] = [];
   let run: ReactNode[] = [];
   let key = 0;

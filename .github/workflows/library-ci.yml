@@ -74,6 +74,8 @@ jobs:
         run: npm run test:poetry-architecture
       - name: Reading Room shelf disclosure
         run: npm run test:shelf-disclosure
+      - name: Standalone poem UI across all four works
+        run: npm run test:standalone-poem-ui
 
   validate:
     # Source-integrity gate. Each published work has a validator that derives its expectations from
@@ -150,6 +152,16 @@ jobs:
               // guard below keeps its meaning. It is deliberately NOT given a directory of its own.
               "speeches/kalaivanar-nsk-memorial-day": { repo: "kalaignar-public-speeches" },
               "poems/idhayathai-thanthidu-anna": { repo: "kalaignar-poems" },
+              // ── WAVE 4 P1 — the three standalone poems ──────────────────────────────────────
+              // These pin the poems archive at the Wave-4 freeze, a LATER commit than
+              // idhayathai-thanthidu-anna above, whose own work tree never moved and which is
+              // therefore not repinned. Same repository, two historical pins, so they get their own
+              // checkout directory — the pattern the Wave-3 essays and the நான்மணி மாலை plays
+              // already use. Sharing one directory would make the same-directory/same-pin guard
+              // below fire, and loosening that guard would remove the protection it exists to give.
+              "poems/anaiya-vilakku-anna": { repo: "kalaignar-poems", dir: "kalaignar-poems-wave4" },
+              "poems/marathi": { repo: "kalaignar-poems", dir: "kalaignar-poems-wave4" },
+              "poems/thennan-kathai": { repo: "kalaignar-poems", dir: "kalaignar-poems-wave4" },
               "essays/sakkaravarththiyin-thirumagan": { repo: "kalaignar-essays" },
               // ── BULK ONBOARDING WAVE 3 ──────────────────────────────────────────────────────
               // These three publications pin the essays archive at a LATER commit than
@@ -270,6 +282,14 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-idhayathai-thanthidu-anna.mjs "$KDL_SOURCES_DIR/kalaignar-poems"
+      # ONE coherent batch, ONE validation step — the four standalone poems. It takes BOTH
+      # checkouts: the three new works are verified against the Wave-4 freeze, and the existing
+      # poem's pin is verified in the clone that actually contains it, since each is fetched
+      # --depth 1 by SHA and neither contains the other's commit.
+      - name: Wave 4 P1 — standalone poems
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave4-p1-standalone-poems.mjs "$KDL_SOURCES_DIR/kalaignar-poems-wave4" "$KDL_SOURCES_DIR/kalaignar-poems"
       - name: Sakkaravarththiyin Thirumagan
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
