@@ -100,8 +100,12 @@ function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta:
   return (
     <Link
       href={collection.href}
+      // dark:focus-visible:ring-night-text/70 for the same reason the Phase-0 disclosure needed it:
+      // .focus-ring draws ring-marina, which is 2.5:1 against the dark page and offset — under the 3:1
+      // WCAG 1.4.11 asks of an author-supplied focus indicator. The shared utility is untouched; this
+      // new control overrides only its dark ring colour.
       className={cn(
-        "focus-ring group flex flex-col rounded-2xl border bg-white/60 p-4 transition sm:col-span-2 dark:bg-night-surface/60",
+        "focus-ring group flex flex-col rounded-2xl border bg-white/60 p-4 transition sm:col-span-2 dark:bg-night-surface/60 dark:focus-visible:ring-night-text/70",
         a.border,
       )}
     >
@@ -111,8 +115,13 @@ function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta:
           {ta ? "தொகுப்பு" : "Collection"}
         </span>
       </span>
-      <span className="mt-2 font-tamil text-[17px] font-medium" lang="ta">
-        <span className={a.title}>{collection.titleTa}</span>
+      {/* NOT `a.title`. accentFor()'s hover is `dark:group-hover:text-marina-light`, and #1B7F87 on
+          this card's dark surface is 3.8:1 — under 4.5:1 for a title this size. accentFor() is shared
+          with all 71 work cards and is not this PR's to change, so the hover is written locally: marina
+          in light (7.1:1), and in dark the title stays at full night-text while the border carries the
+          interaction cue. */}
+      <span className="mt-2 font-tamil text-[17px] font-medium group-hover:text-marina" lang="ta">
+        {collection.titleTa}
       </span>
       <span className="mt-0.5 text-xs text-ink/65 dark:text-night-text/65">{collection.titleEn}</span>
       <span className="mt-1.5 text-xs tabular-nums text-ink/65 dark:text-night-text/65">
@@ -213,7 +222,10 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
                     The collection tally is appended where one exists, because "39 works" over three
                     cards would otherwise leave a reader wondering where the other 36 stories went.
                     Internal vocabulary — "discovery entries" — never reaches the page. */}
-                <span className="ml-auto shrink-0 font-normal tabular-nums text-ink/40 dark:text-night-text/40">
+                {/* ink/65 rather than ink/40: this span now also carries Phase-1's "· 1 collection",
+                    and at /40 that new copy measured 2.53:1 light and 3.32:1 dark. One span cannot hold
+                    two contrast levels, so the shelf work count rises with it. */}
+                <span className="ml-auto shrink-0 font-normal tabular-nums text-ink/65 dark:text-night-text/65">
                   {ta
                     ? `${works.length} ${works.length === 1 ? "படைப்பு" : "படைப்புகள்"}`
                     : `${works.length} ${works.length === 1 ? "work" : "works"}`}

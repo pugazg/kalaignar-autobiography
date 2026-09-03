@@ -204,21 +204,53 @@ export function collectionById(id: string): LibraryCollection | undefined {
 // ── Derived reverse lookup ──────────────────────────────────────────────────────────────────────────
 // Built once from the canonical rosters. This is the ONLY work → collection direction: nothing is
 // stored on `LibraryWork`, so the two directions cannot drift apart.
-const WORK_TO_COLLECTION: ReadonlyMap<string, LibraryCollection> = new Map(
-  LIBRARY_COLLECTIONS.flatMap((c) => c.members.map((m) => [m.workId, c] as const)),
-);
+//
+// THE VALUE IS A LIST, NOT A SINGLE COLLECTION, AND THAT IS LOAD-BEARING. A `Map<string, Collection>`
+// would encode "a work belongs to at most one collection", which the archive does not promise: the
+// source model already allows a canonical work found in a second publication to be registered there as
+// a further edition/witness rather than duplicated as a new work. With a singular map the second
+// collection would silently overwrite the first and one of them would quietly lose the member. Phase 1
+// declares exactly one collection, so nothing here changes today — the point is that the shape cannot
+// lose data tomorrow.
+const WORK_TO_COLLECTIONS: ReadonlyMap<string, readonly LibraryCollection[]> = (() => {
+  const m = new Map<string, LibraryCollection[]>();
+  for (const c of LIBRARY_COLLECTIONS) {
+    for (const member of c.members) {
+      const list = m.get(member.workId);
+      if (list) list.push(c);
+      else m.set(member.workId, [c]);
+    }
+  }
+  return m;
+})();
 
-/** The collection a work belongs to, or undefined for a standalone work. */
-export function collectionForWork(workId: string): LibraryCollection | undefined {
-  return WORK_TO_COLLECTION.get(workId);
+/** Every collection a work belongs to, in declaration order. Empty for a standalone work. */
+export function collectionsForWork(workId: string): readonly LibraryCollection[] {
+  return WORK_TO_COLLECTIONS.get(workId) ?? [];
 }
 
-/** Member works resolved against the live catalogue, in the collection's printed ordinal order. */
+/**
+ * Member works resolved against the live catalogue, in the collection's printed ordinal order.
+ *
+ * FAILS CLOSED. An earlier version filtered unresolved members away, which would have turned a
+ * declaration of 37 works into a clean-looking 36-row page — the most dangerous kind of wrong, because
+ * nothing on screen says anything is missing. A declared member that does not resolve is a defect in
+ * the declaration or the catalogue, and it stops the build rather than quietly shrinking the archive.
+ */
 export function collectionMemberWorks(c: LibraryCollection): Array<{ member: CollectionMember; work: LibraryWork }> {
   return [...c.members]
     .sort((a, b) => (a.ordinal ?? 0) - (b.ordinal ?? 0))
-    .map((member) => ({ member, work: LIBRARY_WORKS.find((w) => w.id === member.workId) }))
-    .filter((x): x is { member: CollectionMember; work: LibraryWork } => Boolean(x.work));
+    .map((member) => {
+      const work = LIBRARY_WORKS.find((w) => w.id === member.workId);
+      if (!work) {
+        throw new Error(
+          `collection "${c.id}" declares member "${member.workId}", which resolves to no LibraryWork. ` +
+            `A declared member is never dropped silently: fix the roster in data/collections.ts or the ` +
+            `catalogue entry in data/library.ts.`,
+        );
+      }
+      return { member, work };
+    });
 }
 
 // ── Discovery ───────────────────────────────────────────────────────────────────────────────────────
@@ -262,7 +294,9 @@ export function discoveryShelves(): ShelfDiscovery[] {
       const entries: DiscoveryEntry[] = [
         ...collections.map((collection) => ({ kind: "collection" as const, key: collection.id, collection })),
         ...works
-          .filter((w) => !collectionForWork(w.id))
+          // Membership is tested without assuming singularity — a work in two collections is still
+          // simply "not standalone", and this stays correct if that ever happens.
+          .filter((w) => collectionsForWork(w.id).length === 0)
           .map((work) => ({ kind: "work" as const, key: work.id, work })),
       ];
       return { shelf, works, entries, collections };

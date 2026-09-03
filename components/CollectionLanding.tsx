@@ -41,11 +41,18 @@ export default function CollectionLanding({
 
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
-      <header className="border-b border-ink/10 bg-mist/40 dark:border-white/10 dark:bg-night-surface/40">
+      {/* `collection-landing-header` is a print hook: the global print stylesheet hides every <header>,
+          which on this page would drop the collection's title, edition, publisher and count and print a
+          bare numbered list. The identity block is archival content here, not chrome. */}
+      <header className="collection-landing-header border-b border-ink/10 bg-mist/40 dark:border-white/10 dark:bg-night-surface/40">
         <div className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
           <Link
             href="/read"
-            className="focus-ring inline-flex min-h-11 items-center gap-1.5 rounded py-2 text-xs text-ink/60 hover:text-marina dark:text-night-text/60"
+            data-print="hide"
+            // hover:text-marina would win over dark:text-night-text/60 in dark mode and land at
+            // 2.6:1, so the dark hover is stated locally; the dark focus ring gets the same local
+            // override as every other new Phase-1 control.
+            className="focus-ring inline-flex min-h-11 items-center gap-1.5 rounded py-2 text-xs text-ink/60 hover:text-marina dark:text-night-text/60 dark:hover:text-night-text dark:focus-visible:ring-night-text/70"
           >
             <ChevronLeft className="h-3.5 w-3.5" aria-hidden /> {ta ? "மின்னூலகம்" : "Digital Library"}
           </Link>
@@ -107,7 +114,8 @@ export default function CollectionLanding({
           <span className="font-tamil text-sm normal-case tracking-normal text-ink/70 dark:text-night-text/70" lang="ta">
             பொருளடக்கம்
           </span>
-          <span>Contents</span>
+          {/* The <h2> sets ink/50, which measures 3.38:1 — this new English label states its own. */}
+          <span className="text-ink/65 dark:text-night-text/65">Contents</span>
           <span className="ml-auto shrink-0 font-normal tracking-normal tabular-nums text-ink/65 dark:text-night-text/65">
             {members.length}
           </span>
@@ -120,7 +128,7 @@ export default function CollectionLanding({
             <li key={m.workId}>
               <Link
                 href={m.href}
-                className="focus-ring group flex items-baseline gap-3 rounded-xl border border-marina/25 bg-white/60 px-4 py-3 transition hover:border-marina/60 dark:bg-night-surface/60"
+                className="focus-ring group flex items-baseline gap-3 rounded-xl border border-marina/25 bg-white/60 px-4 py-3 transition hover:border-marina/60 dark:bg-night-surface/60 dark:focus-visible:ring-night-text/70"
               >
                 {m.ordinal !== undefined && (
                   <span className="w-6 shrink-0 tabular-nums text-xs text-ink/65 dark:text-night-text/65">
@@ -129,7 +137,7 @@ export default function CollectionLanding({
                 )}
                 <span className="min-w-0 flex-1">
                   <span
-                    className="block font-tamil text-[15px] font-medium group-hover:text-marina dark:group-hover:text-marina-light"
+                    className="block font-tamil text-[15px] font-medium group-hover:text-marina"
                     lang="ta"
                   >
                     {m.titleTa}

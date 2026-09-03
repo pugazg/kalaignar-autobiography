@@ -28,7 +28,7 @@ import {
   COLLECTION_IDS,
   LIBRARY_COLLECTIONS,
   collectionById,
-  collectionForWork,
+  collectionsForWork,
   collectionMemberWorks,
   discoveryShelves,
 } from "../data/collections";
@@ -125,12 +125,55 @@ const fictionHeading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(fictionSection);
 ok(!!fictionHeading && /\b39\b/.test(fictionHeading[1]), "the Fiction heading states 39 works, not 3");
 ok(!!fictionHeading && /\b1\b/.test(fictionHeading[1]), "the Fiction heading states its 1 collection");
 
-// ── 3. Reverse lookup is derived, not stored ─────────────────────────────────────────────────────
-for (const m of c.members) ok(collectionForWork(m.workId)?.id === BENCHMARK, `reverse lookup resolves ${m.workId}`);
-ok(!collectionForWork("kizhavan-kanavu"), "kizhavan-kanavu belongs to no collection");
-ok(!collectionForWork("balipeedam-nokki"), "balipeedam-nokki belongs to no collection");
+// ── 3. Reverse lookup is derived, plural, and not stored ─────────────────────────────────────────
+for (const m of c.members) {
+  const found = collectionsForWork(m.workId);
+  eq(found.map((x) => x.id), [BENCHMARK], `reverse lookup resolves ${m.workId} to a one-item list`);
+}
+eq(collectionsForWork("kizhavan-kanavu").length, 0, "kizhavan-kanavu belongs to no collection");
+eq(collectionsForWork("balipeedam-nokki").length, 0, "balipeedam-nokki belongs to no collection");
+ok(Array.isArray(collectionsForWork("pugazhendhi")), "the reverse lookup returns a list, not one collection");
 const libSrc = fs.readFileSync(path.join(process.cwd(), "data/library.ts"), "utf-8");
 ok(!libSrc.includes("collectionId"), "LibraryWork stores no collectionId — one direction only");
+
+// MULTIPLICITY, proved without inventing production data. A second synthetic collection sharing a
+// member must yield BOTH, not silently overwrite the first — which is exactly what a
+// Map<string, Collection> would have done.
+{
+  const shared = "pugazhendhi";
+  const synthetic = { ...c, id: "synthetic-second-collection", members: [{ workId: shared, ordinal: 1 }] };
+  const map = new Map<string, (typeof c)[]>();
+  for (const col of [c, synthetic]) {
+    for (const m of col.members) {
+      const list = map.get(m.workId);
+      if (list) list.push(col as typeof c);
+      else map.set(m.workId, [col as typeof c]);
+    }
+  }
+  eq(
+    map.get(shared)!.map((x) => x.id),
+    [BENCHMARK, "synthetic-second-collection"],
+    "the derivation keeps both collections for a work that appears in two",
+  );
+}
+
+// ── 3b. Member resolution fails closed ───────────────────────────────────────────────────────────
+// A declared member that resolves to nothing must stop the build, never quietly shrink the page from
+// 37 rows to 36 — the failure mode where nothing on screen says anything is missing.
+{
+  const broken = { ...c, members: [...c.members, { workId: "no-such-work", ordinal: 38 }] };
+  let threw = false;
+  let message = "";
+  try {
+    collectionMemberWorks(broken);
+  } catch (e) {
+    threw = true;
+    message = e instanceof Error ? e.message : String(e);
+  }
+  ok(threw, "an unresolved declared member throws rather than being filtered away");
+  ok(message.includes("no-such-work"), "the error names the unresolved workId");
+  ok(message.includes(c.id), "the error names the collection");
+}
 
 // ── 4. Collection page ───────────────────────────────────────────────────────────────────────────
 const ordered = collectionMemberWorks(c);
@@ -178,6 +221,41 @@ ok(decoded.includes(c.publisherTa!), "the page shows the printed publisher impri
 // The page is a navigation surface, not a second reader.
 ok(!/<article/.test(pageHtml), "the collection page renders no article body");
 ok(pageHrefs.includes("/read"), "the page links back to the Reading Room");
+
+// ── 4b. Accessibility guards for the new Phase-1 controls ────────────────────────────────────────
+// These pin decisions that were measured, so a later edit cannot quietly reintroduce a token that
+// fails on this surface. The classes are the record of the measurement.
+// JUDGE THE CODE, NOT THE PROSE ABOUT IT. A comment explaining why `dark:group-hover:text-marina-light`
+// is wrong here necessarily quotes it, and scanning raw source would flag the explanation instead of
+// the defect — the same trap the Wave-3 metadata validator hit.
+const stripComments = (s: string) => s.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+const homeSrc = stripComments(fs.readFileSync(path.join(process.cwd(), "components/LibraryHome.tsx"), "utf-8"));
+const landingSrc = stripComments(fs.readFileSync(path.join(process.cwd(), "components/CollectionLanding.tsx"), "utf-8"));
+const collectionCardSrc = homeSrc.slice(homeSrc.indexOf("function CollectionCard("), homeSrc.indexOf("function DiscoveryCard("));
+
+ok(collectionCardSrc.includes("dark:focus-visible:ring-night-text/70"), "the collection card overrides its dark focus ring");
+ok(!collectionCardSrc.includes("dark:group-hover:text-marina-light"), "the collection card title has no marina-light dark hover (3.8:1)");
+ok(!collectionCardSrc.includes("a.title"), "the collection card does not reuse accentFor()'s shared hover");
+ok(landingSrc.includes("dark:focus-visible:ring-night-text/70"), "the collection page overrides its dark focus rings");
+eq(
+  (landingSrc.match(/dark:focus-visible:ring-night-text\/70/g) ?? []).length,
+  2,
+  "both the back link and the member rows carry the dark focus override",
+);
+ok(!landingSrc.includes("dark:group-hover:text-marina-light"), "member titles have no marina-light dark hover");
+ok(landingSrc.includes("dark:hover:text-night-text"), "the back link states an accessible dark hover");
+ok(/<span className="text-ink\/65 dark:text-night-text\/65">Contents<\/span>/.test(landingSrc), "the Contents label states an accessible token");
+ok(!/text-ink\/40|dark:text-night-text\/40/.test(landingSrc), "no /40 text remains on the collection page");
+const shelfCount = /className="ml-auto shrink-0 font-normal tabular-nums ([^"]*)"/.exec(homeSrc);
+ok(!!shelfCount && shelfCount[1].includes("text-ink/65"), "the shelf work/collection count uses an accessible token");
+
+// Print: the identity block is exempted, the Back link is not.
+const css = fs.readFileSync(path.join(process.cwd(), "app/globals.css"), "utf-8");
+const printBlock = css.slice(css.indexOf("@media print"));
+ok(/header\.collection-landing-header\s*\{\s*display:\s*block\s*!important/.test(printBlock), "print exempts the collection identity header");
+ok(printBlock.indexOf("header.collection-landing-header") > printBlock.indexOf("nav, header, footer"), "the exemption comes after the generic header rule");
+ok(landingSrc.includes("collection-landing-header"), "the collection page carries the print hook class");
+ok(/data-print="hide"/.test(landingSrc), "the Back link is hidden in print");
 
 // ── 5. Member identity regression ────────────────────────────────────────────────────────────────
 for (const m of c.members) {

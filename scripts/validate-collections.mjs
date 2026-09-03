@@ -89,14 +89,16 @@ function tsxDump(body) {
 }
 
 function loadDeclaration() {
-  const r = tsxDump(`import { LIBRARY_COLLECTIONS, COLLECTION_IDS, collectionForWork } from "./data/collections";
+  const r = tsxDump(`import { LIBRARY_COLLECTIONS, COLLECTION_IDS, collectionsForWork } from "./data/collections";
 import { publishedWorks } from "./data/library";
 const works = publishedWorks().map((w) => ({ id: w.id, href: w.href, shelf: w.shelf, unitCount: w.unitCount ?? null }));
 console.log("@@JSON@@" + JSON.stringify({
   collections: LIBRARY_COLLECTIONS,
   ids: COLLECTION_IDS,
   works,
-  reverse: works.filter((w) => collectionForWork(w.id)).map((w) => [w.id, collectionForWork(w.id)!.id]),
+  reverse: works
+    .map((w) => [w.id, collectionsForWork(w.id).map((c) => c.id)])
+    .filter(([, ids]) => (ids as string[]).length > 0),
 }));
 `);
   if (r.error) {
@@ -311,7 +313,16 @@ eq(
   decl.reverse.map(([w]) => w).sort(),
   c.members.map((m) => m.workId).sort(),
 );
-ok("every reverse entry points at this collection", decl.reverse.every(([, id]) => id === COLLECTION_ID));
+// The reverse value is a LIST. A singular map would silently drop a member the day a work appears in
+// a second publication, so the shape is asserted, not just the contents.
+ok("each reverse entry is a list of collection ids", decl.reverse.every(([, ids]) => Array.isArray(ids)));
+ok("every reverse entry names this collection", decl.reverse.every(([, ids]) => ids.includes(COLLECTION_ID)));
+ok("no reverse entry is empty", decl.reverse.every(([, ids]) => ids.length > 0));
+const declSrcForShape = fs.readFileSync(path.join(process.cwd(), "data/collections.ts"), "utf8");
+ok("the reverse map stores a list, not one collection per work",
+   /ReadonlyMap<string,\s*readonly LibraryCollection\[\]>/.test(declSrcForShape));
+ok("member resolution fails closed rather than filtering unresolved members",
+   /throw new Error\(/.test(declSrcForShape) && !/\.filter\(\(x\): x is/.test(declSrcForShape));
 
 // ── F. No inference from presentation prose ─────────────────────────────────────────────────────────
 startGroup("NO INFERENCE");
