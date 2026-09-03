@@ -78,34 +78,39 @@ eq(
 );
 
 // ── 2. Exactly the authorized delta is published ─────────────────────────────────────────────────
-// P0's guard here was "nothing new is published". P1 IS the authorized publication of three
-// standalone poems, so the guard MOVES rather than being deleted: it now pins the exact delta, and
-// still holds the line at everything P1 was NOT authorized to do. A guard that merely counted would
-// pass on three different works, so the registry is compared by slug, not by length alone.
-const P1_ADDED = ["anaiya-vilakku-anna", "marathi", "thennan-kathai"];
-const STANDALONE = [...P1_ADDED, EXISTING].sort();
+// The guard MOVES with each authorized phase rather than being deleted, and it pins the exact delta
+// while holding the line at everything the phase was NOT authorized to do. P1 published three
+// standalone poems; P2 publishes ONE poetry publication with 58 internal items — one new work and
+// one new discovery entry, NOT 58 works and not a collection.
+const STANDALONE = ["anaiya-vilakku-anna", "marathi", "thennan-kathai", EXISTING].sort();
+const PUBLICATION = "kaalap-pezhaiyum-kavithai-saaviyum";
 eq(POEM_SLUGS.length, 4, "exactly four standalone poem slugs");
 eq([...POEM_SLUGS].sort(), STANDALONE, "the standalone registry is the existing poem plus exactly the three P1 works");
-eq(POETRY_PUBLICATION_SLUGS.length, 0, "no poetry publication is published in P1");
-eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared in P1");
+eq([...POETRY_PUBLICATION_SLUGS], [PUBLICATION], "exactly the one P2 publication is registered");
+eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared (P3 lands those)");
 
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 74, "the catalogue holds 74 works (71 + the three P1 poems)");
+eq(works.length, 75, "the catalogue holds 75 works (74 + the one P2 publication)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 38, "38 discovery entries (35 + the three P1 poems)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 39, "39 discovery entries (38 + the one P2 publication)");
 ok(!!poetry, "the Poetry shelf is present");
-eq(poetry!.works.length, 4, "Poetry holds exactly 4 works");
-// A standalone poem is its own discovery entry: these are works, not members of a collection, so
-// works and entries move together here — unlike Fiction, where 39 works stand behind 3 entries.
-eq(poetry!.entries.length, 4, "Poetry shows exactly 4 discovery entries");
-eq(poetry!.works.map((w) => w.href).sort(), STANDALONE.map((s) => `/poems/${s}`).sort(), "every Poetry route is a standalone poem route");
-eq(poetry!.works.map((w) => w.provenanceHref).sort(), STANDALONE.map((s) => `/poems/${s}/source`).sort(), "every Poetry work has its own source route");
+eq(poetry!.works.length, 5, "Poetry holds exactly 5 works (4 standalone + 1 publication)");
+// The publication is ONE discovery entry even though it holds 58 items — it is one work with reading
+// units, so works and entries still move together on the Poetry shelf (unlike Fiction's 39/3).
+eq(poetry!.entries.length, 5, "Poetry shows exactly 5 discovery entries");
+eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE, PUBLICATION].sort(), "the Poetry shelf's works are the four standalones plus the publication");
 {
   const existing = poetry!.works.find((w) => w.slug === EXISTING)!;
   eq(existing.href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");
   eq(existing.provenanceHref, `/poems/${EXISTING}/source`, "the existing Poetry source route is unchanged");
+  const publication = poetry!.works.find((w) => w.slug === PUBLICATION)!;
+  eq(publication.href, `/poems/${PUBLICATION}`, "the publication landing route");
+  eq(publication.provenanceHref, `/poems/${PUBLICATION}/source`, "the publication source route");
+  eq(publication.unitCount?.value, 58, "the publication carries unitCount 58");
+  ok(!("memberCount" in publication), "the publication carries no memberCount");
+  ok(publication.state === "published", "the publication is published");
 }
 
 // ── 3. The generalization is real, not cosmetic ──────────────────────────────────────────────────
@@ -299,20 +304,29 @@ ok(poemsSrc.includes("publicationEstablished?:"), "the type supports an establis
 ok(poemsSrc.includes("publicationNotEstablished?:"), "the type supports an unestablished publication");
 ok(poemsSrc.includes("sourceTypeLabel?:"), "the source-type label is work-driven and optional");
 
-// ── 5. Scope: P0 adds no route and no unauthorized surface ───────────────────────────────────────
+// ── 5. Scope: exactly the P2 route surface, and no unauthorized item-route shape ─────────────────
 const sitemapSrc = fs.readFileSync(path.join(process.cwd(), "app/sitemap.ts"), "utf-8");
-ok(!sitemapSrc.includes("POETRY_PUBLICATION_SLUGS"), "P0 wires no publication routes into the sitemap");
-ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/page.tsx")), "the standalone poem route still exists");
+// P2 DOES wire the publication into the sitemap, driven by the registry. What must stay absent is
+// the forbidden route shapes: no /items/<ordinal> family, and the item route is a direct dynamic
+// child /poems/<slug>/<item-slug>, not an ordinal alias.
+ok(sitemapSrc.includes("POETRY_PUBLICATION_SLUGS"), "P2 wires the publication into the sitemap from the registry");
+ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/page.tsx")), "the poem landing route still exists");
+ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/[item]/page.tsx")), "the publication item route exists as a direct dynamic child");
 ok(
   !fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/items")),
-  "no publication item route exists",
+  "no /items/<ordinal> route family exists",
 );
-// The vendored payloads are exactly the four standalone works. This is where P2/P3 preloading would
+{
+  const itemRoute = fs.readFileSync(path.join(process.cwd(), "app/poems/[slug]/[item]/page.tsx"), "utf-8");
+  ok(/export const dynamicParams = false/.test(itemRoute), "the item route fails closed on unknown children (so a standalone poem gets no item routes)");
+}
+// The vendored payloads are exactly the four standalone works plus the one P2 publication. This is
+// where P3 preloading would
 // show up first — a publication roster or an anthology's items appearing before they are authorized.
 eq(
   fs.readdirSync(path.join(process.cwd(), "public/data/poems")).sort(),
-  STANDALONE,
-  "exactly the four standalone poems are vendored, and nothing else",
+  [...STANDALONE, PUBLICATION].sort(),
+  "exactly the four standalone poems and the one publication are vendored, and nothing else",
 );
 ok(!fs.existsSync(path.join(process.cwd(), "public/data/poetry")), "no publication payload is vendored");
 

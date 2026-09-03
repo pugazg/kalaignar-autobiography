@@ -79,6 +79,8 @@ jobs:
       # proof can only run here.
       - name: Standalone poem UI across all four works
         run: npm run test:standalone-poem-ui
+      - name: Poetry publication UI (Wave 4 P2)
+        run: npm run test:publication-ui
 
   validate:
     # Source-integrity gate. Each published work has a validator that derives its expectations from
@@ -293,6 +295,10 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-wave4-p1-standalone-poems.mjs "$KDL_SOURCES_DIR/kalaignar-poems-wave4" "$KDL_SOURCES_DIR/kalaignar-poems"
+      - name: Wave 4 P2 — Kaalap Pezhai publication
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave4-p2-kaalap-pezhai.mjs "$KDL_SOURCES_DIR/kalaignar-poems-wave4"
       - name: Sakkaravarththiyin Thirumagan
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

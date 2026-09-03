@@ -119,7 +119,13 @@ eq(
 
 // ── 4. Standalone workspace coverage is exactly 4/4 ──────────────────────────────────────────────
 const dataDirs = fs.readdirSync(DATA_ROOT, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort();
-eq("public/data/poems holds exactly the four standalone works", dataDirs, ALL_SLUGS);
+// The four standalone works are each vendored as a directory. Since Wave 4 P2 the poems tree also
+// holds ONE poetry publication (a directory with publication.json rather than poem.json), so this
+// asserts the four standalones are present and are the only STANDALONE payloads — not that the tree
+// holds nothing else.
+for (const slug of ALL_SLUGS) check(`public/data/poems holds the standalone work ${slug}`, dataDirs.includes(slug));
+const standaloneDirs = dataDirs.filter((d) => fs.existsSync(path.join(DATA_ROOT, d, "poem.json")));
+eq("the standalone payloads (poem.json) are exactly the four standalone works", standaloneDirs.sort(), ALL_SLUGS);
 const registrySlugs = arrayLiteral(poemsTs, "POEM_SLUGS");
 eq("POEM_SLUGS holds exactly the four standalone works", [...(registrySlugs ?? [])].sort(), ALL_SLUGS);
 
@@ -133,8 +139,10 @@ for (const slug of ALL_SLUGS) {
   eq(`${slug} (${label}): one payload directory`, dataDirs.filter((d) => d === slug).length, 1);
 }
 
-// ── 7. No poetry publication is published in P1 ──────────────────────────────────────────────────
-eq("POETRY_PUBLICATION_SLUGS is still empty", arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS"), []);
+// ── 7. None of the four standalone poems is a publication ────────────────────────────────────────
+// P1's guard was "no publication exists at all"; P2 published one, so the invariant narrows to what
+// P1 actually owns: none of the FOUR standalone poems may be modelled as a publication.
+for (const slug of ALL_SLUGS) check(`${slug} is not registered as a poetry publication`, !(arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS") ?? []).includes(slug));
 check("no poetry-publication route exists", !fs.existsSync(path.join(process.cwd(), "app/poetry")));
 check("no poetry-publication payloads are vendored", !fs.existsSync(path.join(process.cwd(), "public/data/poetry")));
 
@@ -407,7 +415,7 @@ check(
   // Both routes must be driven by the registry, so a work cannot exist in one and not the other.
   for (const f of ["app/poems/[slug]/page.tsx", "app/poems/[slug]/source/page.tsx"]) {
     const src = readText(path.join(process.cwd(), f));
-    check(`${f} generates its params from POEM_SLUGS`, /POEM_SLUGS\.map\(\(slug\) => \(\{ slug \}\)\)/.test(src));
+    check(`${f} generates its params from POEM_SLUGS`, /POEM_SLUGS/.test(src) && /generateStaticParams/.test(src));
   }
 }
 
@@ -581,9 +589,8 @@ for (const [file, expected] of Object.entries(IDHAYATHAI_HASHES)) {
   eq(`${EXISTING_SLUG}: ${file} is byte-identical to the integrated payload`, sha256(readText(path.join(DATA_ROOT, EXISTING_SLUG, file))), expected);
 }
 
-// ── 23–24. Publication and witness registries remain empty ───────────────────────────────────────
-eq("publication registry remains empty", arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS"), []);
-check("no publication roster is vendored", !fs.existsSync(path.join(process.cwd(), "public/data/poetry")));
+// ── 23–24. The witness registry remains empty; no standalone poem is a publication ───────────────
+check("no standalone poem is registered as a publication", ALL_SLUGS.every((slug) => !(arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS") ?? []).includes(slug)));
 check("witness registry remains empty", /POETRY_WITNESS_RELATIONS: PoetryWitnessRelation\[\] = \[\];/.test(poemsTs));
 
 // ── 25. No second collection ─────────────────────────────────────────────────────────────────────
@@ -604,12 +611,12 @@ check("witness registry remains empty", /POETRY_WITNESS_RELATIONS: PoetryWitness
     const urls = [...readText(built).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
     check(`sitemap is non-trivial (${urls.length} URLs)`, urls.length > 100);
     eq("sitemap has no duplicate URLs", urls.length - new Set(urls).size, 0);
+    // Restricted to the four STANDALONE poems: since P2, /poems/ also holds the publication's own
+    // 60-route family, which is the P2 validator's concern, not this one.
     const poemUrls = urls.filter((u) => u.includes("/poems/"));
-    eq("sitemap carries exactly two URLs per standalone poem", poemUrls.length, ALL_SLUGS.length * 2);
     eq("sitemap poem URLs are unique", new Set(poemUrls).size, poemUrls.length);
     for (const slug of ALL_SLUGS) {
-      check(`sitemap carries /poems/${slug}`, poemUrls.some((u) => u.endsWith(`/poems/${slug}`)));
-      check(`sitemap carries /poems/${slug}/source`, poemUrls.some((u) => u.endsWith(`/poems/${slug}/source`)));
+      eq(`sitemap carries exactly two URLs for ${slug}`, poemUrls.filter((u) => u.endsWith(`/poems/${slug}`) || u.endsWith(`/poems/${slug}/source`)).length, 2);
     }
   } else {
     // The registry the sitemap is derived FROM must still be duplicate-free even without a build.

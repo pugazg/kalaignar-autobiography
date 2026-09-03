@@ -40,6 +40,7 @@ const eq = <T,>(a: T, b: T, label: string) => {
   if (JSON.stringify(a) !== JSON.stringify(b)) failures.push(`${label}\n     expected ${JSON.stringify(b)}\n     actual   ${JSON.stringify(a)}`);
 };
 
+const BASE = "https://nenjukkuneethi.org";
 const DATA = path.join(process.cwd(), "public/data/poems");
 const read = <T,>(slug: string, file: string): T => JSON.parse(fs.readFileSync(path.join(DATA, slug, file), "utf-8"));
 
@@ -322,8 +323,11 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
 // ── 10. The catalogue and the payloads agree ─────────────────────────────────────────────────────
 {
   const poetry = publishedWorks().filter((x) => x.shelf === "poetry");
-  eq(poetry.length, 4, "the Poetry shelf publishes four works");
-  eq(poetry.map((x) => x.slug).sort(), [...POEM_SLUGS].sort(), "the shelf's works are exactly the registry's");
+  // The Poetry shelf now also holds the P2 publication, so the STANDALONE works are a subset: every
+  // POEM_SLUGS entry is on the shelf, and the shelf additionally carries the publication.
+  const standaloneOnShelf = poetry.filter((x) => (POEM_SLUGS as readonly string[]).includes(x.slug));
+  eq(standaloneOnShelf.length, 4, "the four standalone poems are on the Poetry shelf");
+  eq(standaloneOnShelf.map((x) => x.slug).sort(), [...POEM_SLUGS].sort(), "the standalone works are exactly the registry's");
   for (const w of works) {
     const entry = poetry.find((x) => x.slug === w.slug)!;
     ok(!!entry, `${w.slug}: has a catalogue entry`);
@@ -556,8 +560,11 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
     while ((m = re.exec(xml)) !== null) urls.push(m[1]);
     ok(urls.length > 100, `the built sitemap is non-trivial (${urls.length} URLs)`);
     eq(urls.length - new Set(urls).size, 0, "the built sitemap has no duplicate URLs");
+    // Restrict to the STANDALONE poems: the P2 publication also lives under /poems/ but has its own
+    // 60-route family (landing + source + 58 items), validated by the P2 validator, not here.
+    const standaloneUrls = POEM_SLUGS.flatMap((slug) => [`${BASE}/poems/${slug}`, `${BASE}/poems/${slug}/source`]);
+    for (const url of standaloneUrls) ok(urls.includes(url), `the built sitemap carries ${url.replace(BASE, "")}`);
     const poemUrls = urls.filter((u) => /\/poems\//.test(u));
-    eq(poemUrls.length, POEM_SLUGS.length * 2, "the built sitemap carries exactly two URLs per standalone poem");
     eq(new Set(poemUrls).size, poemUrls.length, "the built sitemap's poem URLs are unique");
     for (const slug of POEM_SLUGS) {
       ok(poemUrls.some((u) => u.endsWith(`/poems/${slug}`)), `the built sitemap carries /poems/${slug}`);
