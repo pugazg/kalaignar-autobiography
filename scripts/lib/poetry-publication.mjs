@@ -305,9 +305,23 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // explicitly logical name and never used as a line's visible printedPage.
     const logicalPrintedPages = secFm.printed_pages ? parseRuns(secFm.printed_pages) : undefined;
     const scans = runsToScans(physicalScans);
-    // VISIBLE printed numerals, read per scan from the frozen page records — never scan − 1.
-    const visiblePrinted = new Map(scans.map((sc) => [sc, loadPageRecord(workDir, sc, decl.slug).printedPage]));
-    const printedFor = (scan) => visiblePrinted.get(scan);
+    // Page records — read once per scan, verified, and reused for BOTH the visible numeral and the
+    // section-identity guard so a scan is parsed a single time.
+    const records = new Map(scans.map((sc) => [sc, loadPageRecord(workDir, sc, decl.slug)]));
+    // SECTION IDENTITY. A page record must belong to the current ITEM, not merely the correct work.
+    // The first scan's section is the item's identity; it must name this canonical ordinal, and every
+    // scan the item consumes must carry exactly that same section id — a source-side section change
+    // inside one item would be a real defect, so it fails the import rather than being tolerated.
+    const sectionId = records.get(scans[0]).section;
+    const expectedPrefix = `item-${String(ord).padStart(2, "0")}-`;
+    if (!sectionId) throw new Error(`item ${ord}: page record for scan ${scans[0]} carries no section id`);
+    if (!sectionId.startsWith(expectedPrefix)) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} does not identify ordinal ${ord} (expected prefix ${JSON.stringify(expectedPrefix)})`);
+    for (const sc of scans) {
+      const sid = records.get(sc).section;
+      if (sid !== sectionId) throw new Error(`item ${ord}: scan ${sc} page record section ${JSON.stringify(sid)} != the item's section ${JSON.stringify(sectionId)}`);
+    }
+    // VISIBLE printed numerals, from those same records — never scan − 1.
+    const printedFor = (scan) => records.get(scan).printedPage;
 
     const ta = parseLayer(secBody, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: false, printedPageFor: printedFor });
     if (JSON.stringify(ta.seenScans) !== JSON.stringify(scans)) {
@@ -341,12 +355,18 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // (its structural pagination rule), and every VISIBLE numeral, where a line carries one, must sit
     // inside it. A null visible page (an item's title scan) is fine and is not required to appear.
     if (logicalPrintedPages) {
-      const expectedFirst = scans[0] - 1;
-      const expectedLast = scans[scans.length - 1] - 1;
-      const gotFirst = logicalPrintedPages[0].first;
-      const gotLast = logicalPrintedPages[logicalPrintedPages.length - 1].last;
-      if (gotFirst !== expectedFirst || gotLast !== expectedLast) {
-        throw new Error(`item ${ord}: reconciled logical pages ${JSON.stringify(secFm.printed_pages)} do not match scan − 1 (${expectedFirst}–${expectedLast})`);
+      // Run-by-run, not endpoints only: PageRun[] exists so a non-contiguous mapping cannot be
+      // flattened while keeping the same outer endpoints, so each logical run must correspond to its
+      // physical run with each boundary − 1.
+      if (logicalPrintedPages.length !== physicalScans.length) {
+        throw new Error(`item ${ord}: reconciled logical pages have ${logicalPrintedPages.length} runs but physical scans have ${physicalScans.length}`);
+      }
+      for (let r = 0; r < physicalScans.length; r++) {
+        const phys = physicalScans[r];
+        const log = logicalPrintedPages[r];
+        if (log.first !== phys.first - 1 || log.last !== phys.last - 1) {
+          throw new Error(`item ${ord}: logical run ${r} (${log.first}–${log.last}) does not correspond to physical run (${phys.first}–${phys.last}) with each boundary − 1`);
+        }
       }
       const inRuns = (pp) => logicalPrintedPages.some((r) => pp >= r.first && pp <= r.last);
       for (const e of [...ta.layer.elements, ...en.layer.elements]) {

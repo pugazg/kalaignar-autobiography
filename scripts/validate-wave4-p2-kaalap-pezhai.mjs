@@ -42,7 +42,29 @@ function pageRecord(scan) {
     work: (get("work") ?? "").replace(/^"|"$/g, ""),
     status: (get("status") ?? "").replace(/^"|"$/g, ""),
     printedPage: rawPP === "null" ? null : /^\d+$/.test(rawPP ?? "") ? Number(rawPP) : undefined,
+    section: (get("section") ?? "").replace(/^"|"$/g, "") || null,
   };
+}
+
+// An independent PageRun parser — a different implementation from the engine's parseRuns, so the two
+// cannot share a bug. Parses "10–11" / "213–219, 221" into [{first,last}, ...].
+function parseRunsV(spec) {
+  const out = [];
+  for (const part of String(spec).split(",")) {
+    const t = part.trim();
+    if (!t) continue;
+    const m = /^(\d+)\s*[–-]\s*(\d+)$/.exec(t) || /^(\d+)$/.exec(t);
+    if (!m) throw new Error(`unparseable run ${JSON.stringify(part)}`);
+    out.push({ first: Number(m[1]), last: m[2] !== undefined ? Number(m[2]) : Number(m[1]) });
+  }
+  return out;
+}
+// Independent read of a section's frontmatter fields.
+function sectionFrontmatter(ord) {
+  const t = readText(path.join(WORK, `sections/${String(ord).padStart(2, "0")}.md`));
+  const fm = /^---\n([\s\S]*?)\n---/.exec(t)?.[1] ?? "";
+  const get = (k) => new RegExp(`^${k}:\\s*(.*)$`, "m").exec(fm)?.[1]?.trim() ?? null;
+  return { physical_scans: (get("physical_scans") ?? "").replace(/^"|"$/g, ""), printed_pages: (get("printed_pages") ?? "").replace(/^"|"$/g, "") };
 }
 
 let pass = 0;
@@ -220,6 +242,7 @@ let taLinesTotal = 0;
 let enLinesTotal = 0;
 const allScans = new Set();
 let pageRecordsRead = 0;
+const sectionOwner = new Map();
 for (const it of pub.items) {
   const ta = streamFromLayer(it.tamil);
   const taSrc = reconstructTamil(it.ordinal);
@@ -243,20 +266,17 @@ for (const it of pub.items) {
     check(`item ${it.ordinal}: scan ${sc} is claimed by no other item`, !allScans.has(sc));
     allScans.add(sc);
   }
-  // RECONCILED LOGICAL pagination is the section's own range, and equals scan − 1 for this
-  // publication — but that is structural, NOT a claim any numeral is printed.
-  check(`item ${it.ordinal}: reconciled logical pages present`, Array.isArray(it.logicalPrintedPages) && it.logicalPrintedPages.length > 0);
-  eq(`item ${it.ordinal}: reconciled logical range is scan − 1`, [it.logicalPrintedPages[0].first, it.logicalPrintedPages.at(-1).last], [scans[0] - 1, scans.at(-1) - 1]);
-  check(`item ${it.ordinal}: payload carries no ambiguous printedPages field`, !("printedPages" in it));
-
   // VISIBLE printedPage per line/heading must equal the frozen page record's printed_page EXACTLY —
   // never scan − 1. Every consumed scan must have a verified page record (fail closed, no fallback).
+  const itemSections = new Set();
   for (const sc of scans) {
     const rec = pageRecord(sc);
     check(`item ${it.ordinal}: page record exists for scan ${sc}`, rec !== null);
     if (!rec) continue;
     pageRecordsRead++;
     eq(`item ${it.ordinal}: page record scan ${sc} identity`, [rec.scanPage, rec.work, rec.status], [sc, SLUG, "verified"]);
+    check(`item ${it.ordinal}: page record scan ${sc} carries a non-empty section id`, typeof rec.section === "string" && rec.section.length > 0);
+    itemSections.add(rec.section);
     check(`item ${it.ordinal}: page record scan ${sc} printed_page parses`, rec.printedPage === null || typeof rec.printedPage === "number");
     // Source-internal: where a numeral is visible it equals the reconciled scan − 1; null where absent.
     if (rec.printedPage !== null) eq(`item ${it.ordinal}: visible numeral on scan ${sc} equals scan − 1`, rec.printedPage, sc - 1);
@@ -266,6 +286,32 @@ for (const it of pub.items) {
       }
     }
   }
+
+  // SECTION IDENTITY: every consumed scan shares one section id that names this ordinal, and no two
+  // items share a section id (checked globally after the loop).
+  eq(`item ${it.ordinal}: all consumed scans share ONE page-record section`, itemSections.size, 1);
+  const itemSection = [...itemSections][0];
+  check(`item ${it.ordinal}: section id names ordinal ${it.ordinal}`, (itemSection ?? "").startsWith(`item-${String(it.ordinal).padStart(2, "0")}-`));
+  if (itemSection) {
+    check(`item ${it.ordinal}: section id is used by no earlier item`, !sectionOwner.has(itemSection));
+    sectionOwner.set(itemSection, it.ordinal);
+  }
+
+  // RECONCILED LOGICAL pagination equals the SOURCE section's printed_pages exactly — run-by-run —
+  // and physicalScans equals the source physical_scans exactly. Endpoints-only would let a
+  // non-contiguous mapping be flattened; the full run list is compared.
+  const secFm = sectionFrontmatter(it.ordinal);
+  const srcPhysical = parseRunsV(secFm.physical_scans);
+  const srcLogical = parseRunsV(secFm.printed_pages);
+  eq(`item ${it.ordinal}: payload physicalScans equals the source physical_scans run list`, it.physicalScans, srcPhysical);
+  check(`item ${it.ordinal}: reconciled logical pages present`, Array.isArray(it.logicalPrintedPages) && it.logicalPrintedPages.length > 0);
+  eq(`item ${it.ordinal}: payload logicalPrintedPages equals the source printed_pages run list`, it.logicalPrintedPages, srcLogical);
+  // Only THEN the publication-specific structural relationship: each logical run is its physical run − 1.
+  eq(`item ${it.ordinal}: logical runs correspond to physical runs, each boundary − 1`,
+    it.logicalPrintedPages,
+    it.physicalScans.map((r) => ({ first: r.first - 1, last: r.last - 1 })));
+  check(`item ${it.ordinal}: payload carries no ambiguous printedPages field`, !("printedPages" in it));
+
 }
 eq("numbered-item scans total 290", allScans.size, 290);
 check("provenance roster uses the reconciled-logical name, not the ambiguous one", prov.itemRoster.every((r) => !("printedPages" in r)));
@@ -280,6 +326,9 @@ eq("numbered-item scans are exactly 10..299", [...allScans].sort((a, b) => a - b
     }
     return "no-line";
   };
+  // Section-identity regression: two consecutive scans of item 1 belong to the same item-01 section.
+  eq("item 1 scan 10 and scan 11 share one section id", [pageRecord(10).section, pageRecord(11).section].filter((s, i, a) => a.indexOf(s) === i).length, 1);
+  eq("item 1 section id names ordinal 01", pageRecord(10).section?.startsWith("item-01-"), true);
   eq("scan 10 page record prints no numeral", pageRecord(10).printedPage, null);
   eq("scan 10 payload lines carry printedPage null (not 9)", visibleFor(10), null);
   eq("scan 11 page record prints 10", pageRecord(11).printedPage, 10);
@@ -293,6 +342,7 @@ eq("numbered-item scans are exactly 10..299", [...allScans].sort((a, b) => a - b
   eq("but no scan-10 line claims a visible 9", visibleFor(10), null);
 }
 eq("a verified page record was read for every one of the 290 numbered scans", pageRecordsRead, 290);
+eq("no two items share a page-record section id", sectionOwner.size, 58);
 check("Tamil total is substantial", taLinesTotal > 5000);
 check("English total is substantial", enLinesTotal > 5000);
 
