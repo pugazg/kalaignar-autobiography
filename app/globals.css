@@ -142,6 +142,15 @@ body {
   /* images shouldn't overflow the page */
   img, svg { max-width: 100% !important; height: auto !important; }
 
+  /* A COLLECTION'S IDENTITY IS CONTENT, NOT CHROME.
+     The rule above hides every <header>, which is right for site chrome. On a collection landing the
+     header holds the publication itself — Tamil and English titles, printed edition statement,
+     publisher imprint, member count — so hiding it would print a bare numbered list of 37 stories with
+     nothing saying which book they came from. That is a materially incomplete archival page, so this
+     one header is exempted. The Back link inside it is genuine navigation and still goes, via the
+     existing data-print="hide" convention. */
+  header.collection-landing-header { display: block !important; }
+
   /* THE WHOLE CATALOGUE MUST STILL PRINT.
      /read defers each shelf's works past the sixth into a native <details>. On screen that is the
      point; on paper a closed <details> would silently drop most of the library — printing the

@@ -2,9 +2,10 @@
 
 import type { ReactNode } from "react";
 
-import { BookOpen, BookText, ChevronDown, Clapperboard, Feather, Flower2, Home, Mail, Mic, Newspaper, Theater } from "lucide-react";
+import { BookOpen, BookText, ChevronDown, Clapperboard, Feather, Flower2, Home, Library, Mail, Mic, Newspaper, Theater } from "lucide-react";
 import Link from "next/link";
-import { visibleShelves, type LibraryWork, type ShelfId } from "@/data/library";
+import { type LibraryWork, type ShelfId } from "@/data/library";
+import { discoveryShelves, type DiscoveryEntry, type LibraryCollection } from "@/data/collections";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 
@@ -81,6 +82,91 @@ function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
 }
 
 /**
+ * A collection's discovery card — the same card family as a work, one step heavier.
+ *
+ * It has to read as a DIFFERENT KIND of thing without becoming a different design: it spans the grid,
+ * carries a stacked-books icon, and states its own member count and printed edition. None of that is
+ * colour-only — the "Collection" label and the count line carry the distinction in text, so the card
+ * still reads as a collection with colour unavailable.
+ *
+ * `1977` appears here because `முதல் பதிப்பு: 1977` is the anthology's own printed edition statement.
+ * It is a fact about the PUBLICATION and is never pushed down onto a member story as its own first
+ * publication date, which the source records deliberately keep apart.
+ */
+function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta: boolean }) {
+  const a = accentFor(collection.shelf);
+  const desc = ta ? collection.descTa : collection.descEn;
+  const count = collection.memberCount;
+  return (
+    <Link
+      href={collection.href}
+      // dark:focus-visible:ring-night-text/70 for the same reason the Phase-0 disclosure needed it:
+      // .focus-ring draws ring-marina, which is 2.5:1 against the dark page and offset — under the 3:1
+      // WCAG 1.4.11 asks of an author-supplied focus indicator. The shared utility is untouched; this
+      // new control overrides only its dark ring colour.
+      className={cn(
+        "focus-ring group flex flex-col rounded-2xl border bg-white/60 p-4 transition sm:col-span-2 dark:bg-night-surface/60 dark:focus-visible:ring-night-text/70",
+        a.border,
+      )}
+    >
+      <span className="flex items-center gap-2">
+        <Library className={cn("h-5 w-5 shrink-0", a.icon)} aria-hidden />
+        <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink/65 dark:text-night-text/65">
+          {ta ? "தொகுப்பு" : "Collection"}
+        </span>
+      </span>
+      {/* NOT `a.title`. accentFor()'s hover is `dark:group-hover:text-marina-light`, and #1B7F87 on
+          this card's dark surface is 3.8:1 — under 4.5:1 for a title this size. accentFor() is shared
+          with all 71 work cards and is not this PR's to change, so the hover is written locally.
+
+          BOTH HALVES ARE STATED. `group-hover:text-marina` alone is not a light-mode rule — it applies
+          in dark too, where it would override the inherited night-text and hover the title down to
+          #0E5D63 on a #10171E card. The dark half is therefore explicit: marina in light (7.10:1),
+          full night-text in dark (14.66:1), with the border hover carrying the cue in both. */}
+      <span
+        className="mt-2 font-tamil text-[17px] font-medium group-hover:text-marina dark:group-hover:text-night-text"
+        lang="ta"
+      >
+        {collection.titleTa}
+      </span>
+      <span className="mt-0.5 text-xs text-ink/65 dark:text-night-text/65">{collection.titleEn}</span>
+      <span className="mt-1.5 text-xs tabular-nums text-ink/65 dark:text-night-text/65">
+        {collection.editionStatementTa && (
+          <>
+            <span className="font-tamil" lang="ta">
+              {collection.editionStatementTa}
+            </span>
+            {" \u00b7 "}
+          </>
+        )}
+        {count.value}{" "}
+        {ta ? (
+          <span className="font-tamil" lang="ta">
+            {count.labelTa}
+          </span>
+        ) : (
+          count.labelEn
+        )}
+      </span>
+      {desc && (
+        <span className="mt-1.5 text-xs leading-snug text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : undefined}>
+          {desc}
+        </span>
+      )}
+    </Link>
+  );
+}
+
+/** One discovery entry: a collection standing in for its members, or a work standing for itself. */
+function DiscoveryCard({ entry, ta }: { entry: DiscoveryEntry; ta: boolean }) {
+  return entry.kind === "collection" ? (
+    <CollectionCard collection={entry.collection} ta={ta} />
+  ) : (
+    <WorkCard work={entry.work} ta={ta} />
+  );
+}
+
+/**
  * `dailyKural` arrives as a rendered server component from app/read/page.tsx. It is a prop rather
  * than an import because this file is a client component and the panel must resolve its date on
  * the server. It sits at the top of <main>, immediately after the banner — deliberately NOT inside
@@ -89,7 +175,7 @@ function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
 export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) {
   const { lang } = useLang();
   const ta = lang === "ta";
-  const shelves = visibleShelves();
+  const shelves = discoveryShelves();
 
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
@@ -116,11 +202,17 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-10 sm:px-6">
         {dailyKural}
 
-        {shelves.map(({ shelf, works }) => {
-          // Presentation only: the same array, split. Declaration order from LIBRARY_WORKS is
-          // preserved across both halves, so a work never moves shelf position by being deferred.
-          const initial = works.slice(0, INITIAL_WORKS_PER_SHELF);
-          const overflow = works.slice(INITIAL_WORKS_PER_SHELF);
+        {shelves.map(({ shelf, works, entries, collections }) => {
+          // Presentation only: the same array, split. Declaration order is preserved across both
+          // halves, so an entry never moves shelf position by being deferred.
+          //
+          // THE CAP APPLIES TO DISCOVERY ENTRIES, NOT WORKS — and that is the whole Phase-1 mechanism.
+          // Fiction still holds 39 works, but they now arrive as 3 entries (the anthology plus two
+          // standalone works), which is below the cap, so its disclosure simply does not render. No
+          // shelf id appears anywhere in this logic: Speeches still has 14 entries and still gets its
+          // disclosure, by exactly the same rule.
+          const initial = entries.slice(0, INITIAL_WORKS_PER_SHELF);
+          const overflow = entries.slice(INITIAL_WORKS_PER_SHELF);
           return (
             <section key={shelf.id} aria-labelledby={`shelf-${shelf.id}`} className="mb-10">
               <h2
@@ -131,15 +223,27 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
                   {shelf.ta}
                 </span>
                 <span>{shelf.en}</span>
-                <span className="ml-auto shrink-0 font-normal tabular-nums text-ink/40 dark:text-night-text/40">
+                {/* THE SHELF COUNT IS THE WORK COUNT, ALWAYS. Fiction reads "39 works" even though
+                    it renders 3 cards: the catalogue did not shrink, only the discovery density did.
+                    The collection tally is appended where one exists, because "39 works" over three
+                    cards would otherwise leave a reader wondering where the other 36 stories went.
+                    Internal vocabulary — "discovery entries" — never reaches the page. */}
+                {/* ink/65 rather than ink/40: this span now also carries Phase-1's "· 1 collection",
+                    and at /40 that new copy measured 2.53:1 light and 3.32:1 dark. One span cannot hold
+                    two contrast levels, so the shelf work count rises with it. */}
+                <span className="ml-auto shrink-0 font-normal tabular-nums text-ink/65 dark:text-night-text/65">
                   {ta
                     ? `${works.length} ${works.length === 1 ? "படைப்பு" : "படைப்புகள்"}`
                     : `${works.length} ${works.length === 1 ? "work" : "works"}`}
+                  {collections.length > 0 &&
+                    (ta
+                      ? ` \u00b7 ${collections.length} ${collections.length === 1 ? "தொகுப்பு" : "தொகுப்புகள்"}`
+                      : ` \u00b7 ${collections.length} ${collections.length === 1 ? "collection" : "collections"}`)}
                 </span>
               </h2>
               <div className="grid gap-3 sm:grid-cols-2">
-                {initial.map((w) => (
-                  <WorkCard key={w.id} work={w} ta={ta} />
+                {initial.map((e) => (
+                  <DiscoveryCard key={e.key} entry={e} ta={ta} />
                 ))}
               </div>
               {overflow.length > 0 && (
@@ -177,8 +281,8 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
                       : `Show ${overflow.length} more ${overflow.length === 1 ? "work" : "works"}`}
                   </summary>
                   <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                    {overflow.map((w) => (
-                      <WorkCard key={w.id} work={w} ta={ta} />
+                    {overflow.map((e) => (
+                      <DiscoveryCard key={e.key} entry={e} ta={ta} />
                     ))}
                   </div>
                 </details>

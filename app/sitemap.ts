@@ -10,6 +10,7 @@ import { ESSAY_SLUGS } from "@/data/essays";
 import { NOVEL_SLUGS } from "@/data/novels";
 import { PLAY_SLUGS } from "@/data/plays";
 import { STORY_SLUGS } from "@/data/stories";
+import { LIBRARY_COLLECTIONS } from "@/data/collections";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -287,6 +288,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${BASE}/stories/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
       { url: `${BASE}/stories/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
     ]),
+    // Collections (Reading Room Wayfinding Phase 1). A collection landing is ADDITIVE: a real public
+    // surface with its own archival content, so it is indexed — and every member work keeps its own
+    // reader and provenance URLs above, because being discoverable through a collection is not a
+    // reason to stop being independently addressable. Driven by the declarations, so the sitemap
+    // cannot list a collection that has no page.
+    ...LIBRARY_COLLECTIONS.map((c) => ({
+      url: `${BASE}${c.href}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    })),
     // Drama. The play landing, its provenance page and one stable route per printed scene, plus the
     // separate unnumbered closing tableau. No /plays or /drama collection landing is added.
     ...PLAY_SLUGS.flatMap((slug) => [
