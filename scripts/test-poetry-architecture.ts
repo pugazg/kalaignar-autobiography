@@ -77,23 +77,36 @@ eq(
   "the existing poem keeps its historical imported source commit",
 );
 
-// ── 2. Nothing new is published ──────────────────────────────────────────────────────────────────
-eq(POEM_SLUGS.length, 1, "still exactly one standalone poem slug");
-eq([...POEM_SLUGS], [EXISTING], "the standalone registry is unchanged");
-eq(POETRY_PUBLICATION_SLUGS.length, 0, "no poetry publication is published in P0");
-eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared in P0");
+// ── 2. Exactly the authorized delta is published ─────────────────────────────────────────────────
+// P0's guard here was "nothing new is published". P1 IS the authorized publication of three
+// standalone poems, so the guard MOVES rather than being deleted: it now pins the exact delta, and
+// still holds the line at everything P1 was NOT authorized to do. A guard that merely counted would
+// pass on three different works, so the registry is compared by slug, not by length alone.
+const P1_ADDED = ["anaiya-vilakku-anna", "marathi", "thennan-kathai"];
+const STANDALONE = [...P1_ADDED, EXISTING].sort();
+eq(POEM_SLUGS.length, 4, "exactly four standalone poem slugs");
+eq([...POEM_SLUGS].sort(), STANDALONE, "the standalone registry is the existing poem plus exactly the three P1 works");
+eq(POETRY_PUBLICATION_SLUGS.length, 0, "no poetry publication is published in P1");
+eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared in P1");
 
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 71, "the catalogue still holds 71 works");
+eq(works.length, 74, "the catalogue holds 74 works (71 + the three P1 poems)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 35, "still 35 discovery entries");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 38, "38 discovery entries (35 + the three P1 poems)");
 ok(!!poetry, "the Poetry shelf is present");
-eq(poetry!.works.length, 1, "Poetry still holds exactly 1 work");
-eq(poetry!.entries.length, 1, "Poetry still shows exactly 1 discovery entry");
-eq(poetry!.works[0].href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");
-eq(poetry!.works[0].provenanceHref, `/poems/${EXISTING}/source`, "the existing Poetry source route is unchanged");
+eq(poetry!.works.length, 4, "Poetry holds exactly 4 works");
+// A standalone poem is its own discovery entry: these are works, not members of a collection, so
+// works and entries move together here — unlike Fiction, where 39 works stand behind 3 entries.
+eq(poetry!.entries.length, 4, "Poetry shows exactly 4 discovery entries");
+eq(poetry!.works.map((w) => w.href).sort(), STANDALONE.map((s) => `/poems/${s}`).sort(), "every Poetry route is a standalone poem route");
+eq(poetry!.works.map((w) => w.provenanceHref).sort(), STANDALONE.map((s) => `/poems/${s}/source`).sort(), "every Poetry work has its own source route");
+{
+  const existing = poetry!.works.find((w) => w.slug === EXISTING)!;
+  eq(existing.href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");
+  eq(existing.provenanceHref, `/poems/${EXISTING}/source`, "the existing Poetry source route is unchanged");
+}
 
 // ── 3. The generalization is real, not cosmetic ──────────────────────────────────────────────────
 // Optionality has to be visible in the type source: the point of P0 is that the NEXT work can omit
@@ -292,13 +305,16 @@ ok(!sitemapSrc.includes("POETRY_PUBLICATION_SLUGS"), "P0 wires no publication ro
 ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/page.tsx")), "the standalone poem route still exists");
 ok(
   !fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/items")),
-  "P0 creates no publication item route",
+  "no publication item route exists",
 );
+// The vendored payloads are exactly the four standalone works. This is where P2/P3 preloading would
+// show up first — a publication roster or an anthology's items appearing before they are authorized.
 eq(
   fs.readdirSync(path.join(process.cwd(), "public/data/poems")).sort(),
-  [EXISTING],
-  "P0 vendors no new poem data",
+  STANDALONE,
+  "exactly the four standalone poems are vendored, and nothing else",
 );
+ok(!fs.existsSync(path.join(process.cwd(), "public/data/poetry")), "no publication payload is vendored");
 
 // ── Report ───────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {

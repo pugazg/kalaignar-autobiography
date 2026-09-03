@@ -2,10 +2,18 @@
 
 import Link from "next/link";
 import { ArrowLeft, BookOpen, FileCheck2, Home, Info, Landmark, Radio, ShieldCheck } from "lucide-react";
-import type { PoemProvenance } from "@/data/poems";
+import type { PoemEditorialException, PoemProvenance } from "@/data/poems";
 import { useLang } from "@/lib/i18n";
 
-export default function PoemSource({ slug, prov }: { slug: string; prov: PoemProvenance }) {
+export default function PoemSource({
+  slug,
+  prov,
+  exceptions,
+}: {
+  slug: string;
+  prov: PoemProvenance;
+  exceptions?: PoemEditorialException[];
+}) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const s = prov.source;
@@ -59,7 +67,10 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
           </div>
           <h1 className="mt-5 font-display text-3xl font-medium tracking-tight">{ta ? "மூலமும் சான்றும்" : "Source & provenance"}</h1>
           <p className="mt-1 font-tamil text-lg text-brass" lang="ta">{s.titleTa}</p>
-          <p className="font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</p>
+          {/* Only where a translated title actually exists — see englishTitleNote below. */}
+          {s.titleEn !== s.titleTa && (
+            <p className="font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</p>
+          )}
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
             {/* "booklet" was this work's form, not every work's. A 1955 பொங்கல் மலர் is an annual
                 issue; the label is the work's own where it states one, and generic otherwise. */}
@@ -75,8 +86,22 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
         <Card icon={Landmark} title={ta ? `மூல உண்மைகள் (${sourceTypeTa})` : `Source facts (the ${sourceTypeEn})`}>
           <dl className="mt-3">
             <Row label={ta ? "படைப்பு" : "Work"}>
-              <span className="font-tamil" lang="ta">{s.titleTa}</span> · {s.titleEn}
+              <span className="font-tamil" lang="ta">{s.titleTa}</span>
+              {s.titleEn !== s.titleTa && <> · {s.titleEn}</>}
             </Row>
+            {s.englishTitleNote && (
+              <Row label={ta ? "ஆங்கிலத் தலைப்பு" : "English title"}>
+                {/* "upstream" is the SOURCE REPOSITORY here, so the Tamil names it. An earlier
+                    revision read `மேலோட்டமாக அங்கீகரிக்கப்படவில்லை`, which says "not approved
+                    superficially" — a statement about how carefully something was reviewed, not
+                    about where approval is absent. The row label already reads ஆங்கிலத் தலைப்பு, so
+                    the value does not repeat it. */}
+                <span className="font-medium">
+                  {ta ? "மூலக் களஞ்சியத்தில் இறுதியாக அங்கீகரிக்கப்படவில்லை" : "none approved upstream"}
+                </span>
+                <span className="mt-1 block text-xs leading-relaxed text-ink/60 dark:text-night-text/60">{s.englishTitleNote}</span>
+              </Row>
+            )}
             <Row label={ta ? "ஆசிரியர்" : "Author"}>
               <span className="font-tamil" lang="ta">{s.authorTa}</span> · {s.authorEn}
             </Row>
@@ -174,6 +199,40 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
           </Card>
         )}
 
+        {/* EDITORIAL EXCEPTIONS — what was deliberately left out of the TEXT, by whose direction.
+            Kept separate from "Locked exclusions" below on purpose: that card lists non-verse matter
+            that was never part of the poem, and listing an owner-directed omission there would both
+            misdescribe it and let a reader believe the transcription is diplomatic throughout. */}
+        {exceptions && exceptions.length > 0 && (
+          <Card icon={Info} title={ta ? "பதிப்பாசிரியர் விதிவிலக்கு (உரிமையாளர் அறிவுறுத்தல்)" : "Editorial exception (owner-directed)"}>
+            {s.editorialExceptionNote && (
+              <p className="mt-3 text-sm leading-relaxed text-ink/80 dark:text-night-text/80">{s.editorialExceptionNote}</p>
+            )}
+            {exceptions.map((x, i) => (
+              <div
+                key={i}
+                className="mt-3 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/70"
+                lang={lang}
+              >
+                <p className="font-semibold text-ink/80 dark:text-night-text/80">
+                  {ta ? `மூல ஸ்கேன் ${x.scan}` : `Source scan ${x.scan}`}
+                </p>
+                <p className="mt-1">{x.summary}</p>
+                <p className="mt-2">{x.consequence}</p>
+                <p className="mt-2">{x.restoration}</p>
+                <ul className="mt-2 space-y-1">
+                  {x.citations.map((c, j) => (
+                    <li key={j} className="flex gap-2">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-brass" aria-hidden />
+                      <span className="break-words font-mono text-[11px]">{c}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </Card>
+        )}
+
         {/* VERIFICATION */}
         <Card icon={FileCheck2} title={ta ? "சரிபார்ப்பு நிலை" : "Verification state"}>
           <dl className="mt-3">
@@ -188,6 +247,9 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
 
         {/* ARCHIVE-DERIVED STRUCTURE — the two dimensions kept strictly apart. */}
         <Card icon={BookOpen} title={ta ? "காப்பகத்தால் உருவான அமைப்பு" : "Archive-derived reading structure"}>
+          {s.sourceHeadingNote && (
+            <p className="mt-3 text-sm leading-relaxed text-ink/80 dark:text-night-text/80">{s.sourceHeadingNote}</p>
+          )}
           <dl className="mt-3">
             <Row label={ta ? "தமிழ்" : "Tamil"}>
               {d.tamilLines} {ta ? "மூல வரிகள்" : "source lines"} · {d.tamilInPageStanzaBreaks} {ta ? "பக்கத்திற்குள் பத்தி இடைவெளிகள்" : "in-page stanza breaks"} · {d.tamilVerseRuns} {ta ? "பாடல் தொகுதிகள்" : "verse runs"} · {d.tamilIndentedLines} {ta ? "இடைவெளியிட்ட வரிகள்" : "indented lines"}

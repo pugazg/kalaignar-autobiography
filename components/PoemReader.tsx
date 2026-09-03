@@ -24,9 +24,148 @@ const INDENT_EM = 1.6;
 // untouched: a wrapped line is still ONE PoemLine.
 const HANG_EM = 1.15;
 
+// ── Markdown emphasis across source lines ────────────────────────────────────────────────────────
+// The released English of one work opens a strong-emphasis span on one source line and closes it on
+// the next:
+//
+//     **Autonomy for the states;
+//     federalism at the Centre!**
+//
+// The previous line-local renderer could not pair those, so both delimiters were visible. The DATA is
+// correct and stays byte-exact — this is a rendering concern only, and it is resolved here rather
+// than by rewriting released text.
+//
+// The pairing is deliberately narrow, because a permissive one would silently emphasise the rest of
+// a poem after any stray asterisk:
+//
+//   * only inside ONE VERSE RUN — a maximal run of consecutive lines. A run ends at a stanza break,
+//     a page transition, a source heading or the end of the poem, and a span never crosses one.
+//   * only when a matching close of the SAME length appears on a LATER line of that run, so
+//     existing same-line rendering is untouched.
+//   * flanking rules, as Markdown has them: an opener must be followed by a non-space character and
+//     a closer preceded by one. A lone `*` on its own line is therefore neither — which is what
+//     keeps மறத்தி's literal `*` ornament literal instead of pairing it with unrelated later text.
+//   * anything left unmatched stays literal, exactly as it does today.
+//
+// One DOM line wrapper per source line is preserved throughout: emphasis wraps the text INSIDE each
+// line, never across the wrappers, so lineation is unaffected.
+type EmphTag = "em" | "strong";
+type Piece = { text: string; tag: EmphTag | null };
+type Delim = { line: number; start: number; end: number; len: number; canOpen: boolean; canClose: boolean; role: "open" | "close" | "literal" };
+type Span = { start: number; end: number; innerStart: number; innerEnd: number; tag: EmphTag };
+
+const BALANCED_RE = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+
+/** Same-line balanced matches, and the `*` runs left over outside them. */
+function scanLine(text: string, lineIndex: number): { spans: Span[]; delims: Delim[] } {
+  const spans: Span[] = [];
+  BALANCED_RE.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = BALANCED_RE.exec(text)) !== null) {
+    const strong = m[1] !== undefined;
+    const d = strong ? 2 : 1;
+    spans.push({ start: m.index, end: m.index + m[0].length, innerStart: m.index + d, innerEnd: m.index + m[0].length - d, tag: strong ? "strong" : "em" });
+  }
+  const inSpan = (i: number) => spans.some((sp) => sp.start <= i && i < sp.end);
+  const delims: Delim[] = [];
+  for (let i = 0; i < text.length; ) {
+    if (text[i] !== "*" || inSpan(i)) {
+      i++;
+      continue;
+    }
+    let j = i;
+    while (j < text.length && text[j] === "*" && !inSpan(j)) j++;
+    const after = text[j];
+    const before = text[i - 1];
+    delims.push({
+      line: lineIndex,
+      start: i,
+      end: j,
+      len: j - i,
+      canOpen: after !== undefined && after !== " ",
+      canClose: before !== undefined && before !== " ",
+      role: "literal",
+    });
+    i = j;
+  }
+  return { spans, delims };
+}
+
+/**
+ * Resolve one verse run into per-line pieces, each carrying the emphasis tag in force.
+ * Returns one entry per input line, so the caller emits one wrapper per source line.
+ */
+function resolveRun(texts: string[]): Piece[][] {
+  const scanned = texts.map((t, i) => scanLine(t, i));
+  const all = scanned.flatMap((s) => s.delims);
+  // Pair leftovers, opener first, close on a LATER line only.
+  let open: Delim | null = null;
+  for (let k = 0; k < all.length; k++) {
+    const d = all[k];
+    if (open === null) {
+      if (!d.canOpen || d.len > 2) continue;
+      const close = all.slice(k + 1).find((c) => c.len === d.len && c.canClose && c.line > d.line);
+      if (!close) continue;
+      d.role = "open";
+      open = d;
+    } else if (d.len === open.len && d.canClose && d.line > open.line) {
+      d.role = "close";
+      open = null;
+    }
+  }
+
+  const out: Piece[][] = [];
+  let carry: EmphTag | null = null;
+  texts.forEach((text, i) => {
+    const { spans, delims } = scanned[i];
+    const features = [
+      ...spans.map((sp) => ({ at: sp.start, end: sp.end, span: sp as Span | null, delim: null as Delim | null })),
+      ...delims.map((d) => ({ at: d.start, end: d.end, span: null as Span | null, delim: d as Delim | null })),
+    ].sort((a, b) => a.at - b.at);
+    const pieces: Piece[] = [];
+    const push = (t: string, tag: EmphTag | null) => {
+      if (!t) return;
+      const last = pieces[pieces.length - 1];
+      if (last && last.tag === tag) last.text += t;
+      else pieces.push({ text: t, tag });
+    };
+    let idx = 0;
+    for (const f of features) {
+      push(text.slice(idx, f.at), carry);
+      if (f.span) push(text.slice(f.span.innerStart, f.span.innerEnd), f.span.tag);
+      else if (f.delim!.role === "open") carry = f.delim!.len === 2 ? "strong" : "em";
+      else if (f.delim!.role === "close") carry = null;
+      else push(text.slice(f.at, f.end), carry); // unmatched: literal, exactly as before
+      idx = f.end;
+    }
+    push(text.slice(idx), carry);
+    out.push(pieces);
+  });
+  return out;
+}
+
+function piecesToNodes(pieces: Piece[]): ReactNode {
+  if (pieces.length === 1 && pieces[0].tag === null) return pieces[0].text;
+  return pieces.map((p, i) =>
+    p.tag === "strong" ? (
+      <strong key={i} className="font-semibold">{p.text}</strong>
+    ) : p.tag === "em" ? (
+      <em key={i}>{p.text}</em>
+    ) : (
+      <span key={i}>{p.text}</span>
+    ),
+  );
+}
+
 // Render the ordered element stream. Consecutive lines are grouped into an unlabelled verse run
 // (a plain <div>, never an <h*> and never announced as a "stanza"); boundaries render between runs.
-function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
+//
+// Exported for testing. The reader fetches its payload in an effect, so a server render of the
+// component shows no verse at all — and a test that could not see the verse could not prove that
+// four structurally different poems render correctly. This function is the verse: pure, taking the
+// element stream and the language, so the tests exercise the real rendering path rather than a
+// re-implementation of it.
+export function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
   const out: ReactNode[] = [];
   let run: ReactNode[] = [];
   let key = 0;
@@ -40,18 +179,48 @@ function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
       run = [];
     }
   };
-  elements.forEach((el, i) => {
-    if (el.kind === "line") {
+  // Lines are buffered rather than emitted one at a time, because an emphasis span may open on one
+  // line and close on the next and the pairing is only decidable once the whole run is known. The
+  // buffer is flushed at every boundary, which is exactly what confines a span to one verse run.
+  let pending: { el: Extract<PoemElement, { kind: "line" }>; i: number }[] = [];
+  const flushLines = () => {
+    if (!pending.length) return;
+    const resolved = resolveRun(pending.map((p) => p.el.text));
+    pending.forEach((p, n) => {
       run.push(
-        <span key={"l" + i} className="block leading-[1.85] text-ink/90 dark:text-night-text/90" style={lineStyle(el.indent)}>
-          {inline(el.text)}
+        <span key={"l" + p.i} className="block leading-[1.85] text-ink/90 dark:text-night-text/90" style={lineStyle(p.el.indent)}>
+          {piecesToNodes(resolved[n])}
         </span>,
       );
+    });
+    pending = [];
+  };
+  elements.forEach((el, i) => {
+    if (el.kind === "line") {
+      pending.push({ el, i });
       return;
     }
+    flushLines();
     if (el.kind === "stanza-break") {
       // Source-established: a blank line inside one printed page. A full stanza gap is warranted.
       flush("mb-7");
+      return;
+    }
+    if (el.kind === "source-heading") {
+      // A heading the SOURCE prints inside the poem. It is marked up as a heading rather than styled
+      // to look like one, so it reaches assistive technology as the structure it is — and it is
+      // rendered smaller and quieter than the poem's own title, which stays the page's h1, so the
+      // reader can tell a heading inside the work from the name of the work.
+      flush("mb-7");
+      out.push(
+        <h2
+          key={"h" + i}
+          className="mb-5 font-display text-lg text-ink/80 dark:text-night-text/80"
+          data-source-heading={el.sourceScan}
+        >
+          {el.text}
+        </h2>,
+      );
       return;
     }
     // A physical page transition. Only a source-ESTABLISHED same-stanza relation may close up
@@ -68,6 +237,7 @@ function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
     flush("mb-2");
     out.push(<PageTransitionRule key={"p" + i} toScan={el.toScan} ta={ta} />);
   });
+  flushLines();
   flush("");
   return out;
 }
@@ -110,28 +280,6 @@ function PageTransitionRule({ toScan, ta }: { toScan: number; ta: boolean }) {
       <span className="poem-page-transition-rule h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
     </div>
   );
-}
-
-// The released English marks transliterated Tamil terms and cited titles with Markdown emphasis
-// (*Muttamil*, *purappāṭṭu*, *Kalingattu Parani* …) — release typography, not literal asterisks in
-// the poem. The DATA keeps every line verbatim, including the markers, so the validator's
-// reconstruction stays byte-exact; only the RENDERING resolves them to <em>, exactly as the speech
-// reader does. The Tamil layer carries no markup at all, so this is a no-op there.
-function inline(text: string): ReactNode {
-  if (!text.includes("*")) return text;
-  const nodes: ReactNode[] = [];
-  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
-  let last = 0;
-  let m: RegExpExecArray | null;
-  let k = 0;
-  while ((m = re.exec(text)) !== null) {
-    if (m.index > last) nodes.push(text.slice(last, m.index));
-    if (m[1] !== undefined) nodes.push(<strong key={k++} className="font-semibold">{m[1]}</strong>);
-    else nodes.push(<em key={k++}>{m[2]}</em>);
-    last = m.index + m[0].length;
-  }
-  if (last < text.length) nodes.push(text.slice(last));
-  return nodes;
 }
 
 function lineStyle(indent: number): React.CSSProperties {
@@ -223,7 +371,15 @@ export default function PoemReader({ slug }: { slug: string }) {
         </h1>
         {poem && (
           <>
-            <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{poem.title.en}</p>
+            {/* The secondary title is a TRANSLATED title, so it renders only where one exists. Where
+                the frozen release approves no English title, `title.en` falls back to the canonical
+                Tamil title, and repeating it here would present the Tamil title as its own English
+                translation. The equality test is the condition precisely because it is a fact about
+                the data rather than a list of slugs: any work whose English title is unestablished
+                behaves the same way, with no per-work branch to keep in sync. */}
+            {poem.title.en !== poem.title.ta && (
+              <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{poem.title.en}</p>
+            )}
             <p className="mt-2 text-sm text-ink/60 dark:text-night-text/60" lang={lang}>
               {ta ? poem.author.nameTa : poem.author.nameEn}
             </p>
@@ -258,7 +414,7 @@ export default function PoemReader({ slug }: { slug: string }) {
             )}
 
             <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
-              <ShareButtons title={`${poem.title.ta} · ${poem.title.en}`} path={`/poems/${slug}`} />
+              <ShareButtons title={poem.title.en === poem.title.ta ? poem.title.ta : `${poem.title.ta} · ${poem.title.en}`} path={`/poems/${slug}`} />
               <div className="inline-flex overflow-hidden rounded-full border border-brass/50 text-xs font-medium">
                 <button onClick={() => setShowEn(false)} className={cn("focus-ring px-3 py-1 transition", !showEn ? "bg-brass text-paper" : "text-brass hover:bg-brass/10")} aria-pressed={!showEn} lang="ta">
                   தமிழ்
