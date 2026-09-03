@@ -64,7 +64,7 @@ function sourceHtml(w: (typeof works)[number], ta: boolean): string {
 }
 const sourcePages = new Map(works.map((w) => [w.slug, { ta: sourceHtml(w, true), en: sourceHtml(w, false) }]));
 /** Assert a bilingual card's presence (or absence) in both languages at once. */
-const inBoth = (slug: string, labels: { ta: string; en: string }) => {
+const inBoth = (slug: (typeof POEM_SLUGS)[number], labels: { ta: string; en: string }) => {
   const p = sourcePages.get(slug)!;
   return { ta: p.ta.includes(labels.ta), en: p.en.includes(labels.en) };
 };

@@ -84,8 +84,11 @@ eq(
 const html = renderToStaticMarkup(createElement(LibraryHome));
 const entries = shelves.flatMap((s) => s.entries);
 
-eq(works.length, 71, "the catalogue still holds 71 published works");
-eq(entries.length, 35, "the page holds 35 discovery entries");
+// Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
+// so both numbers move by the same three — which is exactly what distinguishes this from adding
+// members to a collection, where works move and entries do not.
+eq(works.length, 74, "the catalogue holds 74 published works");
+eq(entries.length, 38, "the page holds 38 discovery entries");
 eq(entries.filter((e) => e.kind === "collection").length, 1, "exactly one collection entry across all shelves");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
