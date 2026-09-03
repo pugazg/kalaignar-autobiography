@@ -1,0 +1,1998 @@
+{
+ "workId": "marathi",
+ "slug": "marathi",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/marathi",
+ "sourceCommit": "969823195ea8943a67fad4286ab1bc7f1c876d56",
+ "shelf": "poetry",
+ "readerStructure": "poem",
+ "subtype": "poem",
+ "title": {
+  "ta": "மறத்தி",
+  "en": "The Valiant Woman"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "publicationYear": null,
+ "editionStatement": null,
+ "factsNotStated": [
+  "publication-year",
+  "edition-statement",
+  "printed-page-numbers",
+  "cross-page-stanza-relationships"
+ ],
+ "transcriptionStatus": "verified source assembly — REVIEWED PASS (4/4 source pages in the work range accounted, 3/3 poem pages visual-reviewed)",
+ "translationStatus": "RELEASE-COMPLETE project-created translation — batch 01 reviewed PASS, editorial review PASS",
+ "tamil": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "காவிரிதந்த தமிழகத்துப் புது மணலில்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "களம் அமைத்துச் சேரசோழ பாண்டிமன்னர்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கோபுரத்துக் கலசத்தில் யார்கொடிதான் பறப்பதென்று,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இன்றுபோல் ...",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "போர்தொடுத்துக் கொண்டிருந்த காலமது; அந்நாளில்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஓர் களத்தில்,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தாய்நாடுகாக்கத் தாவிப்பாய்ந்து செத்தார்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தந்தை என்ற சேதிகேட்டு, தணல்வீழ் மெழுகானாள்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தமிழகத்துக் கிளியொருத்தி!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "அனல்போலும் கண்ணுடனே, அயலூர் சென்றிருந்த,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அவள்கணவனும் வந்திட்டான்!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புனல் போக்கும் விழியாலே அவள் போர்ச்செய்தி",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தந்திட்டாள்!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "தந்தை களம்பட்ட செய்திக்கோ தவித்தாய் என்றான்.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இல்லை அன்பா!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "முல்லைசூழ் இந்நாட்டுப் படையிலோர் வீரர் குறைந்திட்டால்.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நல்ல உடையிலோர் கிழிசல் வந்தது போலன்றோ?",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இனித் தடையின்றி நுழைவரே பகைவர் என எண்ணினேன்;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அடைபட்ட கண்ணீர், அணை உடைத்ததாம் என்றாள்.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "அவன்,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "குகைவிட்டுக் கிளம்பும் ஒரு புலியென,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புகைவிட்டுக் குமுறும் எரிமலையென,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பகைவெட்டிச் சாய்க்கும் வாளெடுத்தான்;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சூளுரைத்தான் சுடர்முகம் தூக்கினான்;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சுக்குநூறுதான் சூழ்ந்துவரும் பகை என்றான்.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நாடு மீட்காமல், வீடு திரும்பேன் என்றான்!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "நங்கையோ,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நகைமுழக்கம் செய்து நடந்திடுக கண்ணே என்றாள்!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "திரும்பி வருவேனோ இல்லையோ",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "எதற்கும் இப்போது ஒருமுத்தம்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இந்தா திரும்பு என்றான்!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கொடுத்தான் - பின்தொடுத்தான்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பகைவர்மீது பாணம்!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "போர்! போர் ! போர் ! எனவே",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "முழங்கிற்று முரச ஒலி!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பார்! பார்! பார்! அந்தப் பைங்கிளியின்",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உரிமையாளன் - பகைவர்மீது பாய்ந்து",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கொல்லும் வீரம்பார்! - என்று",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பட்டாளத்துத் தோழரெல்லாம் வியந்துரைத்தார் !",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 59,
+    "toScan": 60,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "translations/en/batches/batch-01.md: scan 59 → 60 narrative continuity preserved: **PASS**"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "அந்தக் கட்டாணிமுத்தாளும் கண்வழியே சிரித்திட்டாள்,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "களத்தினிலே அத்தானுக்கு",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அடுக்கடுக்காய் குவிந்துவரும் வெற்றிகளைக் கேட்டுவிட்டு!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "கோட்டைகள் விடுபட்டன ! எதிரியின்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "*",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "குதிரைக் கால்கள் உடைபட்டன!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வேழப்படை முறிபட்டது! வேல்கள் பொடிபட்டன!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "எம், கொற்றவன் படைகள் கொட்டும் பேரிகை",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கோடையிடியெனக் கேட்குது ! கேட்குது ! எனக்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "குதித்திட்டாள் - புதுப்பண் அமைத்திட்டாள்!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "வீரர்கள் வந்தனர் -வெற்றிஉன் கணவனுக்கே என்றனர்!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வேந்தனின் தூதுவர் வந்தனர் ! வாழ்த்துகள் வழங்கினர் !",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வீட்டோரத்துத் தோழிகள் வந்தனர் - வெற்றி",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நீட்டோலை வாசித்து மகிழ்ந்தனர் ! அந்த அழகி,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆனந்தக்கண்ணீர் பொழிந்தாள் - அப்போது,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஏனந்த மனிதன் வந்தானோ?",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இழவுச் சேதி சொல்வதற்கு !-",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என்னருமைப் பெண்பாவாய்!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கண்ணல்ல - - கலங்காதே!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "களச் சேதி, கடைசிச் சேதி கேள் என்றான் -",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "அந்தோ!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மாவிலைத் தோரணங்கட்டி, மணவிழா மேடைதன்னில்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வாழ்விலே ஒன்றானோம் என்றுசொன்ன கண்ணாளன்-",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மார்பிலே வேல்தாங்கி நல்ல சாவிலே வீழ்ந்துவிட்டான் -",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆவிதான் போனபின்னும் உயிர்வாழும் ஆரணங்கு",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அச்சடித்த தமிழ்ப் பதுமை -",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கூவி அழுதாள்- கொத்தான மலர்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இந்தக் குடும்பம்!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அதைக் கொத்தாமல் கொத்திவிட்ட",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கொடும்சாவைப் பழித்தாள்- இழித்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "துரைத்தாள்! \"இனி என்ன மிச்சம்!\"",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என்றும், கனி அழுகிப் போனதென்றும்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கதறி அழுதாள்!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "பனி வெல்லும் விழிகாட்டி,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பனவெல்ல மொழி உரைத்து,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பள்ளியறைக் கவிபாடும்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நாளெல்லாம் மண்தானோ?",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இனி, இது, தூங்காத கண்தானோ?",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என அழுதாள்! அத்தான் பிணம்",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கிடக்கும் களம் நோக்கித் தொழுதாள்!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 60,
+    "toScan": 61,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "சோகத்தால் வீழ்ந்துவிட்ட அவள் காதில், வெற்றி",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வேகத்தால் பகைவர் தட்டும் போர்முரசம்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பட்டதுதான் தாமதம்;",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கெட்டதுதான் கெட்டது நம்குடி- முழுவதுமே",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பட்டொழிந்து போகட்டும் எனஎழுந்தாள் !",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மட்டில்லாப் புகழ்கொண்ட நாட்டுக்கே அன்றி",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வீட்டுக்கோ வாழ்வேன் என்றாள் -",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 61
+   },
+   {
+    "kind": "line",
+    "text": "வட்டிலினால் நாழிபார்க்கும் விதங்கண்ட தமிழ்நாட்டு மாதரசி,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தொட்டிலிலே இட்டு, தான் வளர்த்த தூயசெல்வன்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அட்டியின்றிக் கல்வி கற்க, ஆலமரத்தடி",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆசானிடம் சென்றிருக்கும் நினைவு கொண்டாள்!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அங்கு சென்றாள் - அம்மா எனப் பாய்ந்தான்,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அழகுமிகும் மழலைமொழி அன்புத் தங்கம்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அப்பா, தாத்தா,ஊர் திரும்பினாரோ என்றான் -",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "திரும்பிவந்து சாவூர் சென்றுவிட்டார்-",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கரும்பே - நீயும்வா என்றழைத்தாள்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"என்ன வாங்கிவந்தார்\" என்றான்!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மானம்!மானம்!அழியாத மான மென்றாள் -",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மகனே ! அதைச் சுவைக்க நீயும் வருக என்றாள்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 61
+   },
+   {
+    "kind": "line",
+    "text": "வந்துவிட்டான் - குலக்கொழுந்து!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "குடும்பவிளக்கு எரிந்துகொண்டே, கூறுகின்றாள்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "எதிரிகளின் படையெடுப்பால் - நம் குடும்பம் தழை",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உதிர்த்துவிட்ட மரமாகப் போனதடா தம்பீ!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கவலையில்லை - களம்சென்றார்; மாண்டார்!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆனாலும் இந்த,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நிலம் உள்ளவரையில் 'மானங்காத்தார்' என்ற பெயர் பூண்டார்!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என்மகனே! நீயும் தோளில்,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பலம் உள்ளவரையில் பகையைச் சாடு!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பரணிபாடு ! இதுஉன்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தாய்த் திருநாடு !-உடனேஓடு ! எனத்,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தாவி அணைத்துத் தளிர் மகன்தன்னை,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சீவிமுடித்துச் சிங்காரித்து, ரத்தக்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காவிபடிந்த வாள்கொடுத்து,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"சென்றுவா மகனே.. செருமுனை நோக்கி!\"",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என வாழ்த்திவிட்ட திருவிடத்துக்",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காட்சிதனை - போற்றிப் பாடாதார் உண்டோ !--",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "திருமகளே! இந்தப் பூவுலகில் ?",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 124,
+  "inPageStanzaBreaks": 14,
+  "verseRuns": 17,
+  "sourceEstablishedStanzas": 13,
+  "pageTransitions": 2,
+  "unresolvedStanzaRelations": 2
+ },
+ "english": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "On the new sands of Tamil land, gifted by the Kaveri,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "when the Chera, Chola and Pandya kings had set the field,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "asking whose flag should fly atop the temple finial,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "as even today ...",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "war was being waged; in those days,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "in one such field,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "her father had leapt forth to guard the motherland and died.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Hearing that news, like wax falling into flame,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "a little parrot of Tamil land melted!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "With eyes like fire, her husband,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "who had been away in another town, returned!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "With eyes that poured like streams,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "she gave him the news of the war!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "\"Is it because your father fell in battle that you grieve?\" he asked.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"No, my love!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "If one warrior is lost from the army of this jasmine-girdled land,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "is it not like a tear in a fine garment?",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "I thought: now the enemy will enter without hindrance;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the tears held back within me broke their dam,\" she said.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "He,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "like a tiger leaving its cave,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "like a volcano roaring out smoke,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "took up the sword that would hew the enemy down;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he swore his oath, lifted his radiant face;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Even if the enemy comes round us in hundreds, I will smash them to dust,\" he said.",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Without winning back the land, I will not return home!\"",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "The maiden,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "with a ringing laugh, said, \"Go on, my dear!\"",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Whether I return or not,",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "for whatever may come, give me one kiss now —",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "here, turn this way,\" he said!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "She gave it — and then he sent",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his arrow against the enemy!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 59
+   },
+   {
+    "kind": "line",
+    "text": "War! War! War! —",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "so thundered the sound of the war-drum!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Look! Look! Look! — that green parrot's",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "beloved is springing upon the enemy;",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "look at the valour with which he kills! —",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "so all his comrades in the army cried in wonder!",
+    "indent": 0,
+    "sourceScan": 59,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 59,
+    "toScan": 60,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "translations/en/batches/batch-01.md: scan 59 → 60 narrative continuity preserved: **PASS**"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "That pearl among women smiled through her eyes,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "hearing, one after another,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "of the victories gathering to her man on the battlefield!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "Forts were freed! The enemy's",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "*",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "horses' legs were broken!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The elephant corps was shattered! Spears were smashed to powder!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The great drum-beat poured out by our victorious king's armies",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "sounds like thunder in summer! It sounds! It sounds! —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and she leapt for joy and made a new tune!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "★",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "Warriors came — \"Victory belongs to your husband!\" they said!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The king's messengers came! They offered their congratulations!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Women from the neighbourhood came — they read aloud",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the long victory scroll and rejoiced! That beauty",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "shed tears of joy — then,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "why did that man come?",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "To tell the news of death! —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"My precious woman!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "My dear — do not be shaken!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Hear the news from the field, the final news,\" he said —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "Alas!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The man who, beneath mango-leaf festoons, on the wedding dais,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "said, \"We have become one in life\" —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "took a spear in his chest and fell in a good death —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "that woman who must live on though the life-breath has gone,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "that Tamil lotus cast in type —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "cried aloud — \"A cluster of flowers,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "this family!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Cruel death has plucked it",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "without sparing the cluster!\" She reviled it —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "spoke bitterly of it! \"What remains for me now!\"",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "she cried, and cried that the fruit",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "had rotted away!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 60
+   },
+   {
+    "kind": "line",
+    "text": "Showing eyes that could shame the dew,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "speaking words sweet as syrup,",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "singing poems in the bridal chamber —",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "are all those days now only earth?",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "From now on, are these eyes never to sleep?",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "So she wept! Toward the field",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "where her husband's body lay, she bowed!",
+    "indent": 0,
+    "sourceScan": 60,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 60,
+    "toScan": 61,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "Collapsed in grief, she heard in her ears",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the war-drum beaten by the enemy in the speed of victory —",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and that was enough;",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Ruined is ruined — let our whole clan",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "be wiped out if it must!\"",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "she rose and said.",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"I shall live for the land of measureless fame,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "not for the house!\"",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 61
+   },
+   {
+    "kind": "line",
+    "text": "Queen among the women of Tamil land, who knew",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to measure time with the water clock,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "she remembered the pure treasure she had raised in the cradle,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "who had gone to learn, without fail,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "from the teacher beneath the banyan tree!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "She went there — \"Amma!\" he cried and sprang toward her,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "that gold of love with his beautiful child's speech.",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Have Appa and Thatha returned home?\" he asked —",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"They returned — and have gone on to the town of death.",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Sugarcane-sweet one — you too, come,\" she called.",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"What did they bring back?\" he asked!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Honour! Honour! Undying honour,\" she said —",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"My son! You too must come and taste it,\" she said.",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 61
+   },
+   {
+    "kind": "line",
+    "text": "He came — the tender shoot of the clan!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The lamp of the household still burning, she told him:",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Because of the enemy's invasion, our family has become,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "little brother, a tree that has shed its leaves!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "No sorrow — they went to the field; they died!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "And yet, as long as this earth remains,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "they have taken the name 'those who guarded honour'!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "My son! As long as strength remains in your shoulders,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "strike the enemy!",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Sing a Parani! This is your",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "sacred motherland! — run at once!\" Thus,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "she sprang, embraced her tender son,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "combed and dressed him, placed in his hand",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "a sword stained saffron-red with blood,",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and blessed him:",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "\"Go, my son.. toward the battle-front!\"",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Who is there that would not praise and sing",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "that scene from the sacred Tamil land —",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "O noble woman! — in this flower-world?",
+    "indent": 0,
+    "sourceScan": 61,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 127,
+  "inPageStanzaBreaks": 14,
+  "verseRuns": 17,
+  "sourceEstablishedStanzas": 13,
+  "pageTransitions": 2,
+  "unresolvedStanzaRelations": 2
+ },
+ "poemScans": [
+  59,
+  60,
+  61
+ ]
+}

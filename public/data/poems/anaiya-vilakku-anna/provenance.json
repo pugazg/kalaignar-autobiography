@@ -1,0 +1,206 @@
+{
+ "workId": "anaiya-vilakku-anna",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/anaiya-vilakku-anna",
+ "sourceCommit": "969823195ea8943a67fad4286ab1bc7f1c876d56",
+ "source": {
+  "titleTa": "அணையா விளக்கு அண்ணா",
+  "titleEn": "Anna, the Unquenchable Lamp",
+  "authorTa": "மு. கருணாநிதி",
+  "authorEn": "M. Karunanidhi",
+  "scanFilename": "TVA_BOK_0065770_அணையா_விளக்கு_அண்ணா(1).pdf",
+  "scanSha256": "f68ec53dc87f3b331397fe3c6d686613fb22fcb0af717b022513867cf6d030f4",
+  "scanFileSizeBytes": 109709692,
+  "scanTotalPages": 19,
+  "physicalVerification": "19 / 19 verified",
+  "poemScanPages": "7–17",
+  "poemVerification": "11 / 11 verified",
+  "printedPageMapping": "none — the page map records no visibly printed page number on any of the 19 scans",
+  "unnumberedScanNote": "No scan in this booklet carries a visible printed page number: the page map records `—` for all 19 and states that no printed page number is recorded unless physically visible in the scan, and that sequence position is not treated as printed pagination. Scan numbers here are PHYSICAL scan positions and are never presented as printed page numbers.",
+  "sourcePdfCommitted": false,
+  "publicationNotEstablished": "The scan establishes NO publication year and no edition statement, so publicationYear and editionStatement are null. The cover's visible bottom imprint identifies a தி.மு.க. தலைமைக் கழக வெளியீடு — an issuing body, carrying no year — and it is recorded here as the cover fact it is rather than promoted into an edition statement. The `15-9-2008` closing date line visible on scan 17 beneath the text body is preserved by the archive only in the source role where it appears; per the source's own policy it is not silently promoted into a publication or edition year, and it is not surfaced as one here.",
+  "sourceHeadingNote": "The printed source carries one structural heading inside the poem, `முடிவுரை`, on scan 16. The Tamil assembly stores it as an ordinary line inside the fenced block, so it is NOT inferred from position or length: it is carried as a heading because the pinned archive states it — ASSEMBLY_REVIEW.md records that `scan 16 ★ ★ ★ and முடிவுரை are retained`, indexes/page-map.md records the scan-16 `★ ★ ★` / `முடிவுரை` structure as preserved, and the released translation renders it as a heading, its translator note stating that this preserves the visible structural heading rather than silently absorbing it into the poem. The `★ ★ ★` ornament on the same scan is carried exactly as both layers present it, as a line, because no source statement gives it any other structural role.",
+  "lockedExclusions": [
+   "scans 1–6 front matter: cover with its title, attribution, price mark and publisher imprint; the frontispiece photo-quote; the commemorative graphic; the captioned photographs; and the title photo page",
+   "scan 17 closing event caption and the `15-9-2008` date line printed beneath the text body",
+   "scans 18–19 closing visual/back matter: the captioned photograph, the Anna quotation, the Kalaignar speech attribution with its printed date `15 - 9 - 1987`, and the building/statue photograph",
+   "the repeated decorative `அணையா விளக்கு அண்ணா` scroll-style page heading printed on scans 7–17",
+   "translator notes, batch reviews and the 2026-09-01 targeted reconciliation prose from the translation batches",
+   "the Markdown explanatory prose surrounding both released assemblies"
+  ]
+ },
+ "verification": {
+  "tamilAssembly": "PASS — 11/11 page blocks, 0 missing, 0 duplicate",
+  "tamilDiscrepancies": 0,
+  "englishRelease": "RELEASE-COMPLETE",
+  "englishBatches": "01–04 reviewed/reconciled PASS; 4/4 present exactly once; 11/11 poem scans represented",
+  "englishOmissions": 0,
+  "englishDuplications": 0,
+  "fullPoemVoiceReview": "PASS — editorial consistency review across the reconciled batches and the rebuilt assembly"
+ },
+ "archiveDerived": {
+  "tamilLines": 348,
+  "tamilInPageStanzaBreaks": 55,
+  "tamilVerseRuns": 65,
+  "tamilSourceEstablishedStanzas": 45,
+  "tamilIndentedLines": 0,
+  "englishLines": 386,
+  "englishInPageStanzaBreaks": 58,
+  "englishVerseRuns": 68,
+  "englishSourceEstablishedStanzas": 48,
+  "englishIndentedLines": 0,
+  "sourceHeadings": 1,
+  "pageTransitionsAudited": 10,
+  "stanzaRelationSameStanza": 0,
+  "stanzaRelationStanzaBoundary": 0,
+  "stanzaRelationUnresolved": 10,
+  "textualContinuations": 8,
+  "textualNonContinuations": 0,
+  "textualNotRecorded": 2,
+  "transitions": [
+   {
+    "fromScan": 7,
+    "toScan": 8,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "stanzaEvidence": [],
+    "textualEvidence": []
+   },
+   {
+    "fromScan": 8,
+    "toScan": 9,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/batches/batch-01.md: scan 8 → 9 continuity (`அண்ணனே! ...` → `இனமானக் கோவே! ...`): **PASS**;"
+    ]
+   },
+   {
+    "fromScan": 9,
+    "toScan": 10,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/SOURCE_MAP.md: Scan 9 ends in the historical claim that Tamil people came to understand their full history after Anna's arrival. Scan 10 continues the cultural/political-historical movement beginning with the transformation of `வருஷங்கள்` into `ஆண்டுகள்` and Tamil New Year rhetoric."
+    ]
+   },
+   {
+    "fromScan": 10,
+    "toScan": 11,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/SOURCE_MAP.md: Scan 10 ends with the claim that Anna gave **us** the strength to condemn the removal of Kannagi's statue. Scan 11 turns directly to Tolkappiyam's classification of forms of knowledge and Kalaignar's rationalist exposition. Preserve the continuity of Anna as the enabling intellectual/political presence."
+    ]
+   },
+   {
+    "fromScan": 11,
+    "toScan": 12,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0011.md: the final line continues onto scan 12; no continuation text has been invented here.",
+     "pages/0012.md: the opening continues directly from scan 11's final line; no bridging text has been invented;",
+     "indexes/page-map.md: | 11 | — | poem | verified | second-pass source recheck completed; corrected readings retained; final line continues into scan 12 |"
+    ]
+   },
+   {
+    "fromScan": 12,
+    "toScan": 13,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0012.md: the final line continues onto scan 13 and is deliberately left open.",
+     "pages/0013.md: opening continues directly from scan 12's final line `வறிஞன் செல்வன் என்று`; no bridging text has been invented;",
+     "indexes/page-map.md: | 12 | — | poem | verified | second-pass source recheck completed; `வழக்கறிஞனும்`, `வறிஞன்` corrected; continues into scan 13 |",
+     "translations/en/batches/batch-02.md: `வறிஞன் செல்வன்` is rendered as **one as poor and another as rich**, following the source contrast and its continuation into scan 13 rather than treating `வறிஞன்` as a proper name.",
+     "translations/en/batches/batch-02.md: scan 12 → 13 continuation handled without inventing closure: **PASS**;",
+     "translations/en/batches/batch-03.md: scan 12 → 13 continuation and `வறிஞன் / செல்வன்` contrast: **PASS**;",
+     "translations/en/SOURCE_MAP.md: This is a direct continuation and crosses Batch 02 → Batch 03. Batch 03 must reread scan 12's final unit before drafting."
+    ]
+   },
+   {
+    "fromScan": 13,
+    "toScan": 14,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0013.md: the final sentence continues onto scan 14 and is deliberately left open.",
+     "indexes/page-map.md: | 13 | — | poem | verified | second-pass source recheck completed; `பேருழைப்பால்`, `பல்லாயிரம்` corrected; final sentence continues into scan 14 |",
+     "translations/en/SOURCE_MAP.md: Scan 14 continues the personal/movement memory with Kalaignar's Palayamkottai imprisonment and Anna's response. Preserve the remembered-speech/memory sequence."
+    ]
+   },
+   {
+    "fromScan": 14,
+    "toScan": 15,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "stanzaEvidence": [],
+    "textualEvidence": []
+   },
+   {
+    "fromScan": 15,
+    "toScan": 16,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "translations/en/batches/batch-04.md: scan 15 → 16 reaction/quotation continuity checked: **PASS**;",
+     "translations/en/SOURCE_MAP.md: The quoted passage has closed, but the satirical political reaction continues. This boundary also crosses Batch 03 → Batch 04."
+    ]
+   },
+   {
+    "fromScan": 16,
+    "toScan": 17,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "stanzaEvidence": [],
+    "textualEvidence": [
+     "pages/0016.md: the final line `மத நல்லிணக்கம் விரும்பிப் போற்றி` continues onto scan 17 and is deliberately left open.",
+     "translations/en/batches/batch-04.md: scan 16 → 17 grammatical continuation preserved: **PASS**;",
+     "translations/en/SOURCE_MAP.md: Scan 17 continues:"
+    ]
+   }
+  ],
+  "boundaryNote": "TEXTUAL/RHETORICAL continuity and TYPOGRAPHIC stanza relation are separate dimensions and are recorded separately. The source archive records cross-page textual continuations (a line or a sentence running on), but a sentence can run on across a printed stanza break, so those records do not establish the stanza relation. Marker-adjacent blank-line formatting does not by itself establish the cross-page stanza relationship either: in the Tamil assembly each page is a separate fenced block, which structurally cannot express a blank line across the page edge, and in the English release every hidden marker is written with blank-line padding on both sides. Blank lines wholly inside one source page ARE source-established stanza structure and are preserved as such.",
+  "provenanceGranularity": "Line-level scan provenance in BOTH layers. Tamil lines carry the scan of their assembly block; English lines carry the scan marked in the reviewed batch files, whose verse is proved byte-identical to the released assembly. No printed page number is recorded for any line, because the source establishes none anywhere in the booklet.",
+  "terminologyNote": "A maximal run of lines between two boundaries is a VERSE RUN, not a stanza: where a run is bounded by a page transition whose relation is unresolved, the printed stanza it belongs to is simply not established. Only runs delimited on both sides by source-established stanza structure are counted as source-established stanzas. No derived run count is reported as a printed stanza count.",
+  "note": "Derived structure only. The Tamil assembly is the authoritative source layer; the English is the RELEASE-COMPLETE project-created translation. Neither was retranslated, modernized, re-lineated or normalized during import: line text, line order, in-page stanza gaps, indentation, punctuation, quotation marks, ellipses and repetition are carried exactly as released."
+ },
+ "blockers": [
+  {
+   "item": "cross-page-stanza-relationship",
+   "count": 10,
+   "detail": "10 physical page transitions for which the pinned source repository records no printed stanza relation: it establishes neither that the printed stanza continues nor that a new one begins. Encoded as stanzaRelation \"unknown\" (neither same-stanza nor stanza-boundary) and rendered as a neutral source-page transition marker. The relation is never inferred from punctuation, sentence completion, rhetorical meaning, indentation, the fact that the text flows, or the absence of a blank line at a fenced page edge. The archive's cross-page TEXTUAL continuity records are preserved separately and are not read as typographic evidence.",
+   "resolution": "Resolution requires an UPSTREAM source-archive visual/source review of the controlling scan TVA_BOK_0065770_அணையா_விளக்கு_அண்ணா(1).pdf (poem scans 7–17) that explicitly records the printed stanza relationship at each physical page transition. The source PDF is not vendored here, and this Digital Library integration does not establish those typographic facts independently."
+  }
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying poem. The booklet's own issuing imprint is an edition fact, not a statement about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored poem. It does NOT extend to the photographs and their printed captions, the commemorative graphic, the frontispiece quotation, the back matter with its 1987 speech attribution, or the cover/design — each of which retains its own distinct provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created) with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan map.",
+  "The poem body is scans 7–17 (11 scans). Scans 1–6 (cover, frontispiece, commemorative graphic, photographs, title photo) and scans 18–19 (closing photograph and back matter) are outside the poem.",
+  "The printed source carries one structural heading inside the poem, `முடிவுரை` on scan 16. It is represented as a heading rather than as a line of verse, on the archive's own explicit statements, and its `★ ★ ★` neighbour is carried exactly as both layers present it.",
+  "The archive records no context note printed above this poem, so no date, venue or occasion is carried. The `15-9-2008` line on scan 17 and the `15 - 9 - 1987` date in the back matter are source-role facts about those pages and are never surfaced as this poem's publication or edition year.",
+  "Cross-page structure is resolved only from explicit source evidence: of 10 physical page transitions, 0 are recorded same-stanza, 0 stanza-boundary, and 10 are unresolved and stay unresolved.",
+  "A source line remains one logical line. Indentation is carried as a source fact so it survives without <pre> styling, and a long line may wrap visually on a narrow viewport without ever becoming two poetic lines."
+ ]
+}

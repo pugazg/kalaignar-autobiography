@@ -46,7 +46,13 @@ export function assertSourcePin(srcRepo, srcCommit) {
 // the printed stanza/verse-group relation ACROSS a page edge. Statements about stanza structure
 // WITHIN a page are not cross-page evidence and are excluded by requiring the sentence to name the
 // transition.
-const STANZA_WORDS = /\b(stanza|verse group|verse-group|verse paragraph)\b|பத்தி/i;
+// `\b` is meaningless against Tamil script, and `பத்தி` (stanza/paragraph) is a common SUBSTRING —
+// it sits inside `பத்தினிகளிடம்`, "to the wives", which has nothing to do with stanzas. Without an
+// explicit Tamil-letter boundary that word would be cited in published provenance as typographic
+// stanza evidence. The classifier stayed fail-closed and the relation stayed `unknown`, so no
+// payload was ever wrong, but the CITATION would have been, so the boundary is required here.
+const TA = "\\u0B80-\\u0BFF";
+const STANZA_WORDS = new RegExp(`\\b(stanza|verse group|verse-group|verse paragraph)\\b|(?<![${TA}])பத்தி(?![${TA}])`, "i");
 // The TEXTUAL vocabulary follows the words the source archives themselves use for this dimension
 // ("continues onto scan 14", "closes the quotation begun at the bottom of scan 22", "cadence
 // preserved", "flows directly", "must remain continuous"). It is broader than the typographic
@@ -62,8 +68,8 @@ const COMMENT = /^<!--[\s\S]*-->$/;
 // fail-closed: ambiguous typographic wording stays `unknown` rather than being guessed.
 function classifyStanza(evidence) {
   const joined = evidence.join(" ");
-  const sameStanza = /same stanza|one stanza|single stanza|stanza continues|continues the stanza|ஒரே பத்தி/i.test(joined);
-  const boundary = /new stanza|stanza break|stanza boundary|separate stanza|begins a stanza|புதிய பத்தி/i.test(joined);
+  const sameStanza = new RegExp(`same stanza|one stanza|single stanza|stanza continues|continues the stanza|ஒரே பத்தி(?![${TA}])`, "i").test(joined);
+  const boundary = new RegExp(`new stanza|stanza break|stanza boundary|separate stanza|begins a stanza|புதிய பத்தி(?![${TA}])`, "i").test(joined);
   if (sameStanza && !boundary) return "same-stanza";
   if (boundary && !sameStanza) return "stanza-boundary";
   return "unknown";
@@ -170,6 +176,26 @@ function auditTransitions(workDir, decl, batchEdge) {
     });
   }
   return rows;
+}
+
+// ── Inline Markdown markup in the released English (DISCLOSED, NOT REWRITTEN) ────────────────────
+// The Tamil assemblies are literal text. The released English assemblies are Markdown, and some of
+// them use inline emphasis INSIDE the verse — `*tangu sani vēl*` in one work, `**…**` in another,
+// one of which even runs across a line break. Those delimiters are carried into the reading layer
+// exactly as released, which means a reader currently sees the asterisks.
+//
+// That is a real presentation defect, and it is deliberately NOT repaired here. Repairing it means
+// deciding how emphasis renders across the whole Poetry shelf and rewriting the text of a work whose
+// payload is already published — neither is in this scope, and doing it silently inside a change
+// that must prove byte-identity would hide it. So the engine MEASURES it instead: `markupCensus`
+// counts the released verse lines carrying inline markup, per layer, and the count is asserted by
+// the validator so it can never grow unnoticed while the question is open. Nothing is written into
+// the payload, so a work imported before this census existed is byte-identical to one imported now.
+const INLINE_MARKUP = /\*\*|(?<!\*)\*(?!\*)|`|\[[^\]]*\]\([^)]*\)/;
+
+export function markupCensus(built) {
+  const count = (layer) => layer.elements.filter((e) => e.kind === "line" && INLINE_MARKUP.test(e.text)).length;
+  return { tamil: count(built.ta), english: count(built.en) };
 }
 
 // ── Shared line construction ─────────────────────────────────────────────────────────────────────
@@ -636,6 +662,8 @@ export function reportStandalonePoem(outDir, built) {
   console.log("  stanza relation  — same-stanza", relCount("same-stanza"), "/ stanza-boundary", relCount("stanza-boundary"), "/ UNRESOLVED", relCount("unknown"));
   console.log("  textual relation — continuation", txtCount("source-established-continuation"), "/ non-continuation", txtCount("source-established-non-continuation"), "/ not recorded", txtCount("not-specifically-recorded"));
   for (const t of TRANSITIONS) console.log(`   ${t.fromScan}->${t.toScan}  stanza=${t.stanzaRelation.padEnd(8)} textual=${t.textualRelation.padEnd(34)} evidence: stanza ${t.evidence.stanza.length} / textual ${t.evidence.textual.length}`);
+  const census = markupCensus(built);
+  console.log("inline Markdown markup carried verbatim into verse — tamil", census.tamil, "/ english", census.english);
   console.log("poem.json sha256:", sha256(readText(path.join(outDir, "poem.json"))));
   console.log("provenance.json sha256:", sha256(readText(path.join(outDir, "provenance.json"))));
 }
