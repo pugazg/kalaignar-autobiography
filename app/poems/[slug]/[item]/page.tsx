@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import PublicationItemReader from "@/components/PublicationItemReader";
 import { POETRY_PUBLICATION_SLUGS } from "@/data/poems";
+import { resolveWitnessLinks } from "@/lib/witness";
 import type { PoetryPublication } from "@/data/poems";
 
 // FAIL CLOSED on unknown children. A standalone poem (/poems/marathi) has no items, so
@@ -50,6 +51,7 @@ export default function PublicationItemPage({ params }: { params: { slug: string
       total={pub.items.length}
       prev={brief(pub.items[idx - 1])}
       next={brief(pub.items[idx + 1])}
+      witnessLinks={resolveWitnessLinks(pub.slug, item.slug)}
     />
   );
 }

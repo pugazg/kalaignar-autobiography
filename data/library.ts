@@ -1147,6 +1147,44 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/poems/kaalap-pezhaiyum-kavithai-saaviyum/source",
   },
   {
+    // Digital Library Wave 4 P3 — Poetry. கலைஞரின் கவிதைகள் is ONE publication whose printed contents
+    // are 77 numbered poems in 5 source-established anthology groups. Same shape as காலப் பேழை (one
+    // work, many reading units), the second caller of the shared publication architecture. The group
+    // dividers are publication structure, never items and never a collection; unitCount is 77.
+    id: "kalaignarin-kavithaigal",
+    slug: "kalaignarin-kavithaigal",
+    titleTa: "கலைஞரின் கவிதைகள்",
+    titleEn: "Kalaignar's Poems",
+    shelf: "poetry",
+    subtype: "poetry-publication",
+    readerStructure: "poetry-publication",
+    href: "/poems/kalaignarin-kavithaigal",
+    state: "published",
+    descTa: "ஐந்து தொகுதிகளில் 77 கவிதைகள் — கவியரங்கம் முதல் மலர்த் தோட்டம் வரை",
+    descEn: "77 poems in five groups — from the poetry assembly to the Flower Garden",
+    sourceRepo: "pugazg/kalaignar-poems",
+    sourcePath: "poems/kalaignarin-kavithaigal",
+    sourceCommit: "969823195ea8943a67fad4286ab1bc7f1c876d56",
+    edition: "நான்காம் பதிப்பு: மார்ச் 1995 — பாரதி பதிப்பகம்",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // 77 poems arranged in 5 source-established groups. These are internal reading UNITS of one
+    // publication, never memberCount of a collection of works.
+    unitCount: { value: 77, labelTa: "கவிதைகள்", labelEn: "poems" },
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil poems; it does not extend to the project-created English translation, to publisher/edition matter, cover/design or the anthology's editorial apparatus, nor to third-party texts quoted inside the poems.",
+    },
+    provenanceHref: "/poems/kalaignarin-kavithaigal/source",
+  },
+  {
     // Digital Library Phase 5 — Essays & Articles. First benchmark, and the first work on the
     // கட்டுரைகள் shelf. This is ONE catalog publication containing 14 source-numbered articles —
     // never 14 catalog works. An article is ordinary prose, so it gets the `article` reader

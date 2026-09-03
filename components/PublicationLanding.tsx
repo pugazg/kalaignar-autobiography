@@ -15,6 +15,13 @@ export type PublicationItemBrief = {
   scanLast: number;
 };
 
+export type PublicationGroupBrief = {
+  ordinal: number;
+  titleTa: string;
+  titleEn?: string;
+  itemOrdinals: number[];
+};
+
 export type PublicationBrief = {
   slug: string;
   titleTa: string;
@@ -25,7 +32,57 @@ export type PublicationBrief = {
   publicationYear: number | null;
   itemCount: number;
   items: PublicationItemBrief[];
+  groups?: PublicationGroupBrief[];
 };
+
+function ItemRow({ slug, it }: { slug: string; it: PublicationItemBrief }) {
+  return (
+    <li>
+      <Link href={`/poems/${slug}/${it.slug}`} className="focus-ring group flex items-baseline gap-3 rounded-lg px-2 py-3 hover:bg-ink/[0.03] dark:hover:bg-white/[0.04]">
+        <span className="w-7 shrink-0 text-right font-body text-sm tabular-nums text-ink/40 dark:text-night-text/40">{it.ordinal}</span>
+        <span className="min-w-0">
+          <span className="block font-tamil text-[15px] text-ink/85 group-hover:text-marina dark:text-night-text/85 dark:group-hover:text-night-text" lang="ta">{it.titleTa}</span>
+          <span className="mt-0.5 block text-xs text-ink/50 dark:text-night-text/50">{it.titleEn}</span>
+        </span>
+      </Link>
+    </li>
+  );
+}
+
+function renderGroupedItems(pub: PublicationBrief, ta: boolean) {
+  const byOrdinal = new Map(pub.items.map((i) => [i.ordinal, i]));
+  // No groups, or a single trivial group covering everything: one flat list.
+  if (!pub.groups || pub.groups.length <= 1) {
+    return (
+      <ol className="divide-y divide-ink/8 dark:divide-white/8">
+        {pub.items.map((it) => (
+          <ItemRow key={it.slug} slug={pub.slug} it={it} />
+        ))}
+      </ol>
+    );
+  }
+  return (
+    <div className="space-y-8">
+      {pub.groups.map((g) => (
+        <section key={g.ordinal} aria-labelledby={`group-${g.ordinal}`}>
+          {/* A one-item group (here, group 1 shares its only poem) needs no divider heading. */}
+          {g.itemOrdinals.length > 1 && (
+            <h2 id={`group-${g.ordinal}`} className="mb-2 border-b border-brass/25 pb-1.5 font-tamil text-lg font-medium text-ink/80 dark:text-night-text/80" lang="ta">
+              {g.titleTa}
+              {g.titleEn && <span className="ml-2 font-display text-sm font-normal text-ink/50 dark:text-night-text/50">{g.titleEn}</span>}
+            </h2>
+          )}
+          <ol className="divide-y divide-ink/8 dark:divide-white/8">
+            {g.itemOrdinals.map((o) => {
+              const it = byOrdinal.get(o);
+              return it ? <ItemRow key={it.slug} slug={pub.slug} it={it} /> : null;
+            })}
+          </ol>
+        </section>
+      ))}
+    </div>
+  );
+}
 
 /** The publication landing: source-backed publication info and all reading items, in canonical order. */
 export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
@@ -64,19 +121,11 @@ export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 py-8 sm:px-6">
-        <ol className="divide-y divide-ink/8 dark:divide-white/8">
-          {pub.items.map((it) => (
-            <li key={it.slug}>
-              <Link href={`/poems/${pub.slug}/${it.slug}`} className="focus-ring group flex items-baseline gap-3 rounded-lg px-2 py-3 hover:bg-ink/[0.03] dark:hover:bg-white/[0.04]">
-                <span className="w-7 shrink-0 text-right font-body text-sm tabular-nums text-ink/40 dark:text-night-text/40">{it.ordinal}</span>
-                <span className="min-w-0">
-                  <span className="block font-tamil text-[15px] text-ink/85 group-hover:text-marina dark:text-night-text/85 dark:group-hover:text-night-text" lang="ta">{it.titleTa}</span>
-                  <span className="mt-0.5 block text-xs text-ink/50 dark:text-night-text/50">{it.titleEn}</span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ol>
+        {/* Source-established anthology groups, where the publication has them. A group is a divider
+            in the printed book — publication structure, not a poem — so it renders as a heading over
+            its items, never as a link or an item itself. A publication with no groups renders one
+            flat list. */}
+        {renderGroupedItems(pub, ta)}
       </main>
     </div>
   );

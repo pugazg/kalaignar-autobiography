@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import fs from "node:fs";
 import path from "node:path";
 import PoemReader from "@/components/PoemReader";
+import { resolveWitnessLinks } from "@/lib/witness";
 import PublicationLanding from "@/components/PublicationLanding";
 import type { PublicationBrief } from "@/components/PublicationLanding";
 import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
@@ -46,6 +47,7 @@ function publicationBrief(pub: PoetryPublication): PublicationBrief {
       scanFirst: i.physicalScans[0].first,
       scanLast: i.physicalScans[i.physicalScans.length - 1].last,
     })),
+    groups: pub.groups?.map((g) => ({ ordinal: g.ordinal, titleTa: g.titleTa, titleEn: g.titleEn, itemOrdinals: g.itemOrdinals })),
   };
 }
 
@@ -109,5 +111,5 @@ export default function PoemPage({ params }: { params: { slug: string } }) {
   }
   if (!(POEM_SLUGS as readonly string[]).includes(params.slug)) notFound();
   if (!loadPoem(params.slug)) notFound();
-  return <PoemReader slug={params.slug} />;
+  return <PoemReader slug={params.slug} witnessLinks={resolveWitnessLinks(params.slug)} />;
 }

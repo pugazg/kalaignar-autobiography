@@ -4,6 +4,8 @@ import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Calendar, Feather, Home, Info, Minus, Plus, Radio } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
+import WitnessNote from "@/components/WitnessNote";
+import type { WitnessLink } from "@/lib/witness";
 import type { Poem, PoemElement, PoemLayer } from "@/data/poems";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -287,7 +289,7 @@ function lineStyle(indent: number): React.CSSProperties {
   return { paddingLeft: `${base + HANG_EM}em`, textIndent: `-${HANG_EM}em` };
 }
 
-export default function PoemReader({ slug }: { slug: string }) {
+export default function PoemReader({ slug, witnessLinks = [] }: { slug: string; witnessLinks?: WitnessLink[] }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const [poem, setPoem] = useState<Poem | null>(null);
@@ -436,6 +438,8 @@ export default function PoemReader({ slug }: { slug: string }) {
             </p>
           </>
         )}
+
+        {poem && <WitnessNote links={witnessLinks} />}
 
         {!poem && !error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "கவிதை ஏற்றப்படுகிறது…" : "Opening the poem…"}</p>}
         {error && <p className="mt-8 text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்தக் கவிதையை ஏற்ற முடியவில்லை." : "This poem could not be loaded."}</p>}
