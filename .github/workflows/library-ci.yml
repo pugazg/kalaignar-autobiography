@@ -68,6 +68,8 @@ jobs:
       - name: Daily Kural determinism
         run: npm run test:daily-kural
 
+      - name: Reading Room collections
+        run: npm run test:collections
       - name: Reading Room shelf disclosure
         run: npm run test:shelf-disclosure
 
@@ -298,6 +300,14 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-1977-short-stories.mjs "$KDL_SOURCES_DIR/kalaignar-short-stories-1977-anthology"
+      # Reading Room Wayfinding Phase 1. Proves the catalogue-facing collection declaration equals the
+      # collection the SOURCE ARCHIVE registers — a different question from the 1977 batch validator
+      # above, which proves the 37 released stories against the same frozen pin. Same checkout, same
+      # pin, different witness.
+      - name: Collections — 1977 anthology declaration
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-collections.mjs "$KDL_SOURCES_DIR/kalaignar-short-stories-1977-anthology"
       - name: Thirukkural
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
