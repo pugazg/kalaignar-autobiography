@@ -13,6 +13,22 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
   const d = prov.archiveDerived;
   const pr = prov.projectRights;
 
+  // ── Work-driven source-page values ──────────────────────────────────────────────────────────────
+  // The source's own word for what it is, where it says one. The defaults are deliberately generic:
+  // calling a 1955 பொங்கல் மலர் a "printed booklet" would state a form the source never claimed.
+  const sourceTypeTa = s.sourceTypeLabel?.ta ?? "அச்சிட்ட மூலம்";
+  const sourceTypeEn = s.sourceTypeLabel?.en ?? "printed source";
+  // The context card exists only if the work's source establishes something to put in it.
+  // TWO DIMENSIONS, TWO CONDITIONS. What a source prints ABOVE THE POEM and what it establishes about
+  // its PUBLICATION are different kinds of evidence, and one must never stand in for the other. A
+  // single condition covering both would let publication facts open a card headed "printed above the
+  // poem" — which for தென்னவன் காதை would place `முரசொலி-பொங்கல் மலர்`, 1956 under a claim its own
+  // source does not make about where those words appear.
+  const hasSourceContext = Boolean(
+    s.contextNoteTa || s.contextDatePrinted || s.contextVenueTa || s.contextOccasionTa,
+  );
+  const hasPublicationEvidence = Boolean(s.publicationEstablished || s.publicationNotEstablished);
+
   const Row = ({ label, children, mono }: { label: string; children: React.ReactNode; mono?: boolean }) => (
     <div className="grid gap-0.5 border-b border-ink/5 py-2.5 last:border-0 dark:border-white/5 sm:grid-cols-[minmax(0,11rem)_1fr] sm:gap-4">
       <dt className="text-xs text-ink/45 dark:text-night-text/45">{label}</dt>
@@ -45,16 +61,18 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
           <p className="mt-1 font-tamil text-lg text-brass" lang="ta">{s.titleTa}</p>
           <p className="font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</p>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
+            {/* "booklet" was this work's form, not every work's. A 1955 பொங்கல் மலர் is an annual
+                issue; the label is the work's own where it states one, and generic otherwise. */}
             {ta
-              ? "இப்பக்கம் மூல உண்மைகளையும் (அச்சிட்ட நூல்/scan) காப்பகத்தால் உருவாக்கப்பட்ட வாசிப்பு அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது."
-              : "This page separates source facts (the printed booklet / scan) from the archive-derived reading structure."}
+              ? `இப்பக்கம் மூல உண்மைகளையும் (${sourceTypeTa}/scan) காப்பகத்தால் உருவாக்கப்பட்ட வாசிப்பு அமைப்பையும் வேறுபடுத்திக் காட்டுகிறது.`
+              : `This page separates source facts (the ${sourceTypeEn} / scan) from the archive-derived reading structure.`}
           </p>
         </div>
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
         {/* WORK + SOURCE FACTS */}
-        <Card icon={Landmark} title={ta ? "மூல உண்மைகள் (அச்சிட்ட நூல்)" : "Source facts (the printed booklet)"}>
+        <Card icon={Landmark} title={ta ? `மூல உண்மைகள் (${sourceTypeTa})` : `Source facts (the ${sourceTypeEn})`}>
           <dl className="mt-3">
             <Row label={ta ? "படைப்பு" : "Work"}>
               <span className="font-tamil" lang="ta">{s.titleTa}</span> · {s.titleEn}
@@ -75,29 +93,86 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
             <Row label={ta ? "அச்சுப் பக்க எண்கள்" : "Printed pages"}>{s.printedPageMapping}</Row>
             <Row label={ta ? "மூல PDF" : "Source PDF"}>{ta ? "இந்தக் களஞ்சியத்திற்குள் சேமிக்கப்படவில்லை" : "not vendored into this repository"}</Row>
           </dl>
-          <p className="mt-3 rounded-xl border border-dashed border-brass/40 bg-brass/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
-            {ta ? "scan 26: அச்சிடப்பட்ட பக்க எண் எதுவும் தெரியவில்லை. " : "Scan 26: no visible printed page number. "}
-            {s.unnumberedScanNote}
-          </p>
+          {/* Only where the work HAS an unnumbered scan. The "Scan 26" literal is gone: it named one
+              work's scan in shared UI, and the note itself already says which scan it is — the prefix
+              was duplicating it. The heading is generic; the fact comes from the work. */}
+          {s.unnumberedScanNote && (
+            <p className="mt-3 rounded-xl border border-dashed border-brass/40 bg-brass/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
+              <span className="font-semibold">{ta ? "அச்சு எண் இல்லாத scan — " : "Unnumbered scan — "}</span>
+              {s.unnumberedScanNote}
+            </p>
+          )}
         </Card>
 
-        {/* SOURCE CONTEXT — carefully separated from publication metadata. */}
-        <Card icon={Radio} title={ta ? "மூலச் சூழல் (கவிதைக்கு மேலே அச்சிட்டது)" : "Source context (printed above the poem)"}>
-          <p className="mt-3 whitespace-pre-line rounded-xl border-l-2 border-brass/50 bg-brass/[0.05] py-3 pl-4 pr-4 font-tamil text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang="ta">
-            {s.contextNoteTa}
-          </p>
-          <dl className="mt-3">
-            <Row label={ta ? "அச்சிட்ட தேதி" : "Date as printed"}>{s.contextDatePrinted} <span className="text-ink/45 dark:text-night-text/45">({s.contextDateIso})</span></Row>
-            <Row label={ta ? "இடம்" : "Venue"}><span className="font-tamil" lang="ta">{s.contextVenueTa}</span> · {s.contextVenueEn}</Row>
-            <Row label={ta ? "நிகழ்வு" : "Occasion"}><span className="font-tamil" lang="ta">{s.contextOccasionTa}</span> · {s.contextOccasionEn}</Row>
-          </dl>
-          {/* THE PUBLICATION RULE, stated plainly on the public page. */}
-          <div className="mt-4 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/70" lang={lang}>
-            <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "வெளியீட்டுத் தேதி — நிறுவப்படவில்லை" : "Publication date — NOT established"}</p>
-            <p className="mt-1">{s.publicationNotEstablished}</p>
-            <p className="mt-2">{s.forewordDateNote}</p>
-          </div>
-        </Card>
+        {/* SOURCE CONTEXT — carefully separated from publication metadata.
+            The whole card, and every row inside it, appears only where the work's source establishes
+            that fact. A poem printing no context note renders no card; a note establishing a date but
+            no venue renders the date row alone. Nothing here is assumed of the next work. */}
+        {hasSourceContext && (
+          <Card icon={Radio} title={ta ? "மூலச் சூழல் (கவிதைக்கு மேலே அச்சிட்டது)" : "Source context (printed above the poem)"}>
+            {s.contextNoteTa && (
+              <p className="mt-3 whitespace-pre-line rounded-xl border-l-2 border-brass/50 bg-brass/[0.05] py-3 pl-4 pr-4 font-tamil text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang="ta">
+                {s.contextNoteTa}
+              </p>
+            )}
+            {(s.contextDatePrinted || s.contextVenueTa || s.contextOccasionTa) && (
+              <dl className="mt-3">
+                {s.contextDatePrinted && (
+                  <Row label={ta ? "அச்சிட்ட தேதி" : "Date as printed"}>
+                    {s.contextDatePrinted}
+                    {s.contextDateIso && <span className="text-ink/45 dark:text-night-text/45"> ({s.contextDateIso})</span>}
+                  </Row>
+                )}
+                {s.contextVenueTa && (
+                  <Row label={ta ? "இடம்" : "Venue"}>
+                    <span className="font-tamil" lang="ta">{s.contextVenueTa}</span>
+                    {s.contextVenueEn && <> · {s.contextVenueEn}</>}
+                  </Row>
+                )}
+                {s.contextOccasionTa && (
+                  <Row label={ta ? "நிகழ்வு" : "Occasion"}>
+                    <span className="font-tamil" lang="ta">{s.contextOccasionTa}</span>
+                    {s.contextOccasionEn && <> · {s.contextOccasionEn}</>}
+                  </Row>
+                )}
+              </dl>
+            )}
+
+          </Card>
+        )}
+
+        {/* PUBLICATION EVIDENCE — its own surface, deliberately not inside the context card.
+            The heading claims only that this is what the source establishes about the publication, and
+            says nothing about where on the page those words appear. A work whose source names its
+            publication says so; a work whose scan establishes none says that instead, and carries its
+            foreword-date note here — a foreword date is publication-adjacent evidence, never a reason
+            to assert something was printed above the poem. Neither state is assumed and only one
+            renders. */}
+        {hasPublicationEvidence && (
+          <Card icon={BookOpen} title={ta ? "வெளியீட்டுச் சான்று" : "Publication evidence"}>
+            {s.publicationEstablished && (
+              <div className="mt-3 rounded-xl border border-dashed border-brass/40 bg-brass/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
+                <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "வெளியீடு" : "Publication"}</p>
+                <p className="mt-1">
+                  <span className="font-tamil" lang="ta">{s.publicationEstablished.publicationTa}</span>
+                  {s.publicationEstablished.publicationEn && <> · {s.publicationEstablished.publicationEn}</>}
+                </p>
+                {(s.publicationEstablished.editionStatement || s.publicationEstablished.year !== undefined) && (
+                  <p className="mt-1">
+                    {s.publicationEstablished.editionStatement ?? String(s.publicationEstablished.year)}
+                  </p>
+                )}
+              </div>
+            )}
+            {!s.publicationEstablished && s.publicationNotEstablished && (
+              <div className="mt-3 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/70" lang={lang}>
+                <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "வெளியீட்டுத் தேதி — நிறுவப்படவில்லை" : "Publication date — NOT established"}</p>
+                <p className="mt-1">{s.publicationNotEstablished}</p>
+                {s.forewordDateNote && <p className="mt-2">{s.forewordDateNote}</p>}
+              </div>
+            )}
+          </Card>
+        )}
 
         {/* VERIFICATION */}
         <Card icon={FileCheck2} title={ta ? "சரிபார்ப்பு நிலை" : "Verification state"}>

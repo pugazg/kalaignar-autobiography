@@ -70,6 +70,8 @@ jobs:
 
       - name: Reading Room collections
         run: npm run test:collections
+      - name: Poetry architecture (Wave 4 P0)
+        run: npm run test:poetry-architecture
       - name: Reading Room shelf disclosure
         run: npm run test:shelf-disclosure
 
