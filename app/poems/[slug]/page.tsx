@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import fs from "node:fs";
 import path from "node:path";
 import PoemReader from "@/components/PoemReader";
-import { POEM_SLUGS } from "@/data/poems";
-import type { Poem } from "@/data/poems";
+import PublicationLanding from "@/components/PublicationLanding";
+import type { PublicationBrief } from "@/components/PublicationLanding";
+import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
+import type { Poem, PoetryPublication } from "@/data/poems";
 
 function loadPoem(slug: string): Poem | null {
   try {
@@ -14,11 +16,51 @@ function loadPoem(slug: string): Poem | null {
   }
 }
 
+function loadPublication(slug: string): PoetryPublication | null {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/poems", slug, "publication.json"), "utf-8"));
+  } catch {
+    return null;
+  }
+}
+const isPublication = (slug: string) => (POETRY_PUBLICATION_SLUGS as readonly string[]).includes(slug);
+
+/** The lightweight landing brief — the roster without the heavy per-item reading layers. */
+function publicationBrief(pub: PoetryPublication): PublicationBrief {
+  return {
+    slug: pub.slug,
+    titleTa: pub.title.ta,
+    titleEn: pub.title.en,
+    authorTa: pub.author.nameTa,
+    authorEn: pub.author.nameEn,
+    editionStatement: pub.editionStatement,
+    publicationYear: pub.publicationYear,
+    itemCount: pub.itemCount,
+    items: pub.items.map((i) => ({
+      ordinal: i.ordinal,
+      slug: i.slug,
+      titleTa: i.titleTa,
+      contentsTitleTa: i.contentsTitleTa,
+      titleEn: i.titleEn,
+      printedOrdinal: i.printedOrdinal,
+      scanFirst: i.physicalScans[0].first,
+      scanLast: i.physicalScans[i.physicalScans.length - 1].last,
+    })),
+  };
+}
+
 export function generateStaticParams() {
-  return POEM_SLUGS.map((slug) => ({ slug }));
+  return [...POEM_SLUGS, ...POETRY_PUBLICATION_SLUGS].map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  if (isPublication(params.slug)) {
+    const pub = loadPublication(params.slug);
+    if (!pub) return { title: "Poetry — கவிதை | Kalaignar Digital Library" };
+    const title = `${pub.title.ta} — ${pub.title.en} | Kalaignar Digital Library`;
+    const description = `${pub.title.en} — ${pub.itemCount} poems by Kalaignar M. Karunanidhi${pub.editionStatement ? `, ${pub.editionStatement}` : ""}. The verified Tamil source text with a release-complete English translation, each poem read on its own page.`;
+    return { title, description, openGraph: { title, description }, twitter: { title: pub.title.en, description } };
+  }
   const p = loadPoem(params.slug);
   if (!p) return { title: "Poem — கவிதை | Kalaignar Digital Library" };
   // Where no English title is approved upstream, `title.en` falls back to the canonical Tamil
@@ -60,6 +102,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function PoemPage({ params }: { params: { slug: string } }) {
+  if (isPublication(params.slug)) {
+    const pub = loadPublication(params.slug);
+    if (!pub) notFound();
+    return <PublicationLanding pub={publicationBrief(pub)} />;
+  }
   if (!(POEM_SLUGS as readonly string[]).includes(params.slug)) notFound();
   if (!loadPoem(params.slug)) notFound();
   return <PoemReader slug={params.slug} />;

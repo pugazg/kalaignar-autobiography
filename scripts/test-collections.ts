@@ -87,8 +87,8 @@ const entries = shelves.flatMap((s) => s.entries);
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
-eq(works.length, 74, "the catalogue holds 74 published works");
-eq(entries.length, 38, "the page holds 38 discovery entries");
+eq(works.length, 75, "the catalogue holds 75 published works");
+eq(entries.length, 39, "the page holds 39 discovery entries");
 eq(entries.filter((e) => e.kind === "collection").length, 1, "exactly one collection entry across all shelves");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");

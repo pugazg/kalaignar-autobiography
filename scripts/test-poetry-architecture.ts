@@ -78,34 +78,39 @@ eq(
 );
 
 // ── 2. Exactly the authorized delta is published ─────────────────────────────────────────────────
-// P0's guard here was "nothing new is published". P1 IS the authorized publication of three
-// standalone poems, so the guard MOVES rather than being deleted: it now pins the exact delta, and
-// still holds the line at everything P1 was NOT authorized to do. A guard that merely counted would
-// pass on three different works, so the registry is compared by slug, not by length alone.
-const P1_ADDED = ["anaiya-vilakku-anna", "marathi", "thennan-kathai"];
-const STANDALONE = [...P1_ADDED, EXISTING].sort();
+// The guard MOVES with each authorized phase rather than being deleted, and it pins the exact delta
+// while holding the line at everything the phase was NOT authorized to do. P1 published three
+// standalone poems; P2 publishes ONE poetry publication with 58 internal items — one new work and
+// one new discovery entry, NOT 58 works and not a collection.
+const STANDALONE = ["anaiya-vilakku-anna", "marathi", "thennan-kathai", EXISTING].sort();
+const PUBLICATION = "kaalap-pezhaiyum-kavithai-saaviyum";
 eq(POEM_SLUGS.length, 4, "exactly four standalone poem slugs");
 eq([...POEM_SLUGS].sort(), STANDALONE, "the standalone registry is the existing poem plus exactly the three P1 works");
-eq(POETRY_PUBLICATION_SLUGS.length, 0, "no poetry publication is published in P1");
-eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared in P1");
+eq([...POETRY_PUBLICATION_SLUGS], [PUBLICATION], "exactly the one P2 publication is registered");
+eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared (P3 lands those)");
 
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 74, "the catalogue holds 74 works (71 + the three P1 poems)");
+eq(works.length, 75, "the catalogue holds 75 works (74 + the one P2 publication)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 38, "38 discovery entries (35 + the three P1 poems)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 39, "39 discovery entries (38 + the one P2 publication)");
 ok(!!poetry, "the Poetry shelf is present");
-eq(poetry!.works.length, 4, "Poetry holds exactly 4 works");
-// A standalone poem is its own discovery entry: these are works, not members of a collection, so
-// works and entries move together here — unlike Fiction, where 39 works stand behind 3 entries.
-eq(poetry!.entries.length, 4, "Poetry shows exactly 4 discovery entries");
-eq(poetry!.works.map((w) => w.href).sort(), STANDALONE.map((s) => `/poems/${s}`).sort(), "every Poetry route is a standalone poem route");
-eq(poetry!.works.map((w) => w.provenanceHref).sort(), STANDALONE.map((s) => `/poems/${s}/source`).sort(), "every Poetry work has its own source route");
+eq(poetry!.works.length, 5, "Poetry holds exactly 5 works (4 standalone + 1 publication)");
+// The publication is ONE discovery entry even though it holds 58 items — it is one work with reading
+// units, so works and entries still move together on the Poetry shelf (unlike Fiction's 39/3).
+eq(poetry!.entries.length, 5, "Poetry shows exactly 5 discovery entries");
+eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE, PUBLICATION].sort(), "the Poetry shelf's works are the four standalones plus the publication");
 {
   const existing = poetry!.works.find((w) => w.slug === EXISTING)!;
   eq(existing.href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");
   eq(existing.provenanceHref, `/poems/${EXISTING}/source`, "the existing Poetry source route is unchanged");
+  const publication = poetry!.works.find((w) => w.slug === PUBLICATION)!;
+  eq(publication.href, `/poems/${PUBLICATION}`, "the publication landing route");
+  eq(publication.provenanceHref, `/poems/${PUBLICATION}/source`, "the publication source route");
+  eq(publication.unitCount?.value, 58, "the publication carries unitCount 58");
+  ok(!("memberCount" in publication), "the publication carries no memberCount");
+  ok(publication.state === "published", "the publication is published");
 }
 
 // ── 3. The generalization is real, not cosmetic ──────────────────────────────────────────────────
@@ -163,7 +168,7 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
       { first: 230, last: 236 },
       { first: 238, last: 238 },
     ],
-    printedPages: [
+    logicalPrintedPages: [
       { first: 213, last: 219 },
       { first: 221, last: 221 },
     ],
@@ -179,7 +184,7 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
       { first: 237, last: 237 },
       { first: 239, last: 244 },
     ],
-    printedPages: [
+    logicalPrintedPages: [
       { first: 220, last: 220 },
       { first: 222, last: 227 },
     ],
@@ -187,12 +192,12 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
     english: { lines: [], elements: [] } as unknown as PoetryItem["english"],
   };
 
-  eq(item23.printedPages!.length, 2, "item 23 keeps its printed pages as two runs, not one");
+  eq(item23.logicalPrintedPages!.length, 2, "item 23 keeps its logical printed pages as two runs, not one");
   eq(item24.physicalScans.length, 2, "item 24 keeps its scans as two runs, not one");
 
   const covers = (runs: PageRun[]) => runs.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
-  const p23 = covers(item23.printedPages!);
-  const p24 = covers(item24.printedPages!);
+  const p23 = covers(item23.logicalPrintedPages!);
+  const p24 = covers(item24.logicalPrintedPages!);
   ok(!p23.includes(220), "item 23's printed pages exclude 220 — the gap is not swallowed");
   ok(!p24.includes(221), "item 24's printed pages exclude 221 — the gap is not swallowed");
   eq(p23.length, 8, "item 23 covers exactly 8 printed pages (213–219, 221)");
@@ -208,10 +213,13 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
   ok(flatLast - flatFirst + 1 !== p23.length, "flattening item 23 to 213–221 would claim a page it does not occupy");
 }
 
-// The type source must not have regressed to a single printed-page range.
-ok(/printedPages\?: PageRun\[\]/.test(poemsSrc), "printedPages is an ordered list of runs");
+// The type source must not have regressed to a single printed-page range, and the RECONCILED logical
+// pagination must be named as such — distinct from a line's visible printedPage numeral.
+ok(/logicalPrintedPages\?: PageRun\[\]/.test(poemsSrc), "logicalPrintedPages is an ordered list of runs");
 ok(/physicalScans: PageRun\[\]/.test(poemsSrc), "physicalScans is an ordered list of runs");
-ok(!/printedPages\?: \{ first: number; last: number \};/.test(poemsSrc), "printedPages is not a single range");
+ok(!/logicalPrintedPages\?: \{ first: number; last: number \};/.test(poemsSrc), "logicalPrintedPages is not a single range");
+// PoemLine.printedPage stays the VISIBLE numeral, nullable, never the reconciled range.
+ok(/The VISIBLE printed page number, or null where the source shows none\. Never inferred\./.test(poemsSrc), "PoemLine.printedPage remains the visible numeral only");
 
 // ── 4c. The source page carries no work's facts and both publication states exist ────────────────
 const sourceSrc = fs
@@ -299,20 +307,29 @@ ok(poemsSrc.includes("publicationEstablished?:"), "the type supports an establis
 ok(poemsSrc.includes("publicationNotEstablished?:"), "the type supports an unestablished publication");
 ok(poemsSrc.includes("sourceTypeLabel?:"), "the source-type label is work-driven and optional");
 
-// ── 5. Scope: P0 adds no route and no unauthorized surface ───────────────────────────────────────
+// ── 5. Scope: exactly the P2 route surface, and no unauthorized item-route shape ─────────────────
 const sitemapSrc = fs.readFileSync(path.join(process.cwd(), "app/sitemap.ts"), "utf-8");
-ok(!sitemapSrc.includes("POETRY_PUBLICATION_SLUGS"), "P0 wires no publication routes into the sitemap");
-ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/page.tsx")), "the standalone poem route still exists");
+// P2 DOES wire the publication into the sitemap, driven by the registry. What must stay absent is
+// the forbidden route shapes: no /items/<ordinal> family, and the item route is a direct dynamic
+// child /poems/<slug>/<item-slug>, not an ordinal alias.
+ok(sitemapSrc.includes("POETRY_PUBLICATION_SLUGS"), "P2 wires the publication into the sitemap from the registry");
+ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/page.tsx")), "the poem landing route still exists");
+ok(fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/[item]/page.tsx")), "the publication item route exists as a direct dynamic child");
 ok(
   !fs.existsSync(path.join(process.cwd(), "app/poems/[slug]/items")),
-  "no publication item route exists",
+  "no /items/<ordinal> route family exists",
 );
-// The vendored payloads are exactly the four standalone works. This is where P2/P3 preloading would
+{
+  const itemRoute = fs.readFileSync(path.join(process.cwd(), "app/poems/[slug]/[item]/page.tsx"), "utf-8");
+  ok(/export const dynamicParams = false/.test(itemRoute), "the item route fails closed on unknown children (so a standalone poem gets no item routes)");
+}
+// The vendored payloads are exactly the four standalone works plus the one P2 publication. This is
+// where P3 preloading would
 // show up first — a publication roster or an anthology's items appearing before they are authorized.
 eq(
   fs.readdirSync(path.join(process.cwd(), "public/data/poems")).sort(),
-  STANDALONE,
-  "exactly the four standalone poems are vendored, and nothing else",
+  [...STANDALONE, PUBLICATION].sort(),
+  "exactly the four standalone poems and the one publication are vendored, and nothing else",
 );
 ok(!fs.existsSync(path.join(process.cwd(), "public/data/poetry")), "no publication payload is vendored");
 

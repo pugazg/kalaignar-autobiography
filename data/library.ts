@@ -56,6 +56,8 @@ export type ReaderStructure =
   | "volume-chapter"
   | "letter"
   | "commentary-unit"
+  // One publication whose reading units are numbered poems (Poetry, Wave 4 P2+):
+  | "poetry-publication"
   // Future reader types (no published works yet; kept for the shared envelope):
   | "scene"
   | "poem"
@@ -1100,6 +1102,49 @@ export const LIBRARY_WORKS: LibraryWork[] = [
       note: "Nationalisation applies to Kalaignar's underlying Tamil poem; it does not extend to the project-created English translation, nor to the surrounding 1956 முரசொலி-பொங்கல் மலர் — its other items, its illustrations, its layout and its cover.",
     },
     provenanceHref: "/poems/thennan-kathai/source",
+  },
+  {
+    // Digital Library Wave 4 P2 — Poetry. காலப் பேழையும் கவிதைச் சாவியும் is ONE publication whose
+    // printed contents are 58 numbered poems (the numbered first part). It is the Essays shape — one
+    // work with many reading units — NOT the Fiction shape of many independent works behind one
+    // collection: the 58 poems exist only as sections inside one publication workspace under one
+    // controlling scan, so `unitCount` describes internal reading units and there is no second
+    // LibraryCollection. Its 58 items live at /poems/<slug>/<item-slug>; the shelf still shows it as
+    // ONE discovery entry.
+    id: "kaalap-pezhaiyum-kavithai-saaviyum",
+    slug: "kaalap-pezhaiyum-kavithai-saaviyum",
+    titleTa: "காலப் பேழையும் கவிதைச் சாவியும்",
+    titleEn: "The Casket of Time and the Key of Poetry",
+    shelf: "poetry",
+    subtype: "poetry-publication",
+    readerStructure: "poetry-publication",
+    href: "/poems/kaalap-pezhaiyum-kavithai-saaviyum",
+    state: "published",
+    descTa: "வரலாறு முழுதும் பயணிக்கும் 58 கவிதைகள் — முதல் பாகம்",
+    descEn: "58 poems travelling the length of history — the numbered first part",
+    sourceRepo: "pugazg/kalaignar-poems",
+    sourcePath: "poems/kaalap-pezhaiyum-kavithai-saaviyum",
+    sourceCommit: "969823195ea8943a67fad4286ab1bc7f1c876d56",
+    // The publication's own printed edition line, source-established in the preliminaries.
+    edition: "முதல் பதிப்பு: ஜூன் 2006 — தமிழ்க்கனி பதிப்பகம் / பூம்புகார் பதிப்பகம், சென்னை",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // 58 poems NUMBERED IN THE PRINTED CONTENTS PAGES, every boundary certified against its title
+    // scan — source-supported publication ordering, not archive-created navigation. These are
+    // internal reading UNITS of one publication, never `memberCount` of a collection of works.
+    unitCount: { value: 58, labelTa: "கவிதைகள்", labelEn: "poems" },
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil poems; it does not extend to the project-created English translation, to publisher/edition matter, cover/design or library marks, nor to the third-party texts (Sangam and other quotations, glossaries, source citations) quoted inside the items.",
+    },
+    provenanceHref: "/poems/kaalap-pezhaiyum-kavithai-saaviyum/source",
   },
   {
     // Digital Library Phase 5 — Essays & Articles. First benchmark, and the first work on the

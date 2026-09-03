@@ -448,16 +448,30 @@ export interface PoetryItem {
    */
   contentsTitleTa?: string;
   titleEn: string;
+  /**
+   * The item number the title PAGE prints, where it disagrees with the canonical sequence position.
+   *
+   * `காலப் பேழையும் கவிதைச் சாவியும்` item 37 prints `36` on its title page though the certified
+   * contents make it item 37. Absent when the printed number matches the ordinal (the normal case);
+   * present, it records a source anomaly and never shifts `ordinal` or any neighbour.
+   */
+  printedOrdinal?: number;
   /** Physical scan runs, in source order. Non-contiguous runs are preserved, never flattened. */
   physicalScans: PageRun[];
   /**
-   * Printed page runs, in source order, where the source prints page numbers; absent where it does not.
+   * RECONCILED LOGICAL printed-page runs, in source order — the section's `printed_pages:` mapping.
    *
-   * A LIST for the same reason as `physicalScans`: an interleaved item's printed pages carry the same
+   * This is the STRUCTURAL pagination (for this publication, physical scan − 1), NOT a claim that a
+   * numeral is visibly printed on every page. The VISIBLE numeral lives on each `PoemLine.printedPage`
+   * and is `null` wherever the scan prints none — 58 item-opening title pages here do exactly that.
+   * The two dimensions are deliberately never collapsed: a reconciled range is not a witness that its
+   * numbers appear.
+   *
+   * A LIST for the same reason as `physicalScans`: an interleaved item's logical pages carry the same
    * gap its scans do, and collapsing `213–219, 221` to `213–221` would assert page 220 — which belongs
    * to a different item.
    */
-  printedPages?: PageRun[];
+  logicalPrintedPages?: PageRun[];
   tamil: PoemLayer;
   english: PoemLayer;
 }
@@ -497,8 +511,88 @@ export interface PoetryPublication {
   groups?: PoetryPublicationGroup[];
 }
 
-/** Registry, empty until P2/P3 declare the two publications. Routes are driven from it. */
-export const POETRY_PUBLICATION_SLUGS = [] as const;
+/**
+ * The `/source` manifest for a poetry publication (provenance.json).
+ *
+ * Mirrors the standalone PoemProvenance in spirit — controlling scan identity, verification, rights,
+ * notes — but carries the two things a MULTI-ITEM publication adds: the full item roster (so the
+ * source page can list what was published without re-parsing 58 reading layers) and the title-witness
+ * register (the 14 items whose contents and title-page witnesses differ, kept as separate witnesses).
+ */
+export interface PoetryPublicationProvenance {
+  workId: string;
+  sourceRepo: string;
+  sourcePath: string;
+  sourceCommit: string;
+  sourceTree: string;
+  source: {
+    titleTa: string;
+    titleEn: string;
+    authorTa: string;
+    authorEn: string;
+    scanFilename: string;
+    scanSha256: string;
+    scanFileSizeBytes: number;
+    scanTotalPages: number;
+    sourcePdfCommitted: false;
+    sourceTypeLabel?: PoemBilingualText;
+    publicationEstablished?: {
+      publicationTa: string;
+      publicationEn?: string;
+      editionStatement?: string;
+      year?: number;
+    };
+    paginationNote: string;
+    boundaryNote: string;
+    lockedExclusions: string[];
+  };
+  verification: {
+    tamilFinalClearance: string;
+    canonicalItems: string;
+    englishRelease: string;
+    englishItems: string;
+    englishBatches: string;
+    numberedItemScans: string;
+    unresolved: number;
+  };
+  itemRoster: {
+    ordinal: number;
+    slug: string;
+    titleTa: string;
+    contentsTitleTa?: string;
+    titleEn: string;
+    printedOrdinal?: number;
+    physicalScans: PageRun[];
+    logicalPrintedPages?: PageRun[];
+    tamilLines: number;
+    englishLines: number;
+  }[];
+  titleWitnesses: {
+    count: number;
+    note: string;
+    items: { ordinal: number; titlePageWitness: string; contentsWitness: string }[];
+  };
+  itemNumberingAnomalies: { ordinal: number; printedNumber: number; note: string }[];
+  projectRights: {
+    appliesTo: string;
+    rightsStatus: string;
+    rightsAuthority: string;
+    rightsAction: string;
+    rightsAnnouncementDate: string;
+    governmentOrderNumber: string | null;
+    governmentOrderDate: string | null;
+    governmentOrderHandoverDate: string | null;
+    distinctionNote: string;
+    thirdPartyNote: string;
+    projectTranslationNote: string;
+    evidencePending: string;
+  };
+  notes: string[];
+}
+
+/** Registry: exactly the P2 publication. P3 will add கலைஞரின் கவிதைகள். Routes are driven from it. */
+export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum"] as const;
+export type PoetryPublicationSlug = (typeof POETRY_PUBLICATION_SLUGS)[number];
 
 /**
  * Rules every publication item slug must satisfy, enforced by the Wave-4 validator.
