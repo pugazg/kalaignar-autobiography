@@ -204,9 +204,30 @@ export type PoemProvenance = {
     contextVenueEn?: string;
     contextOccasionTa?: string;
     contextOccasionEn?: string;
+    /**
+     * Which publication the source establishes, where it establishes one.
+     *
+     * BOTH STATES ARE REAL AND A WORK HAS EXACTLY ONE OF THEM. இதயத்தைத் தந்திடு அண்ணா's scan
+     * establishes no publication at all, and says so through `publicationNotEstablished`.
+     * தென்னவன் காதை's source states its publication outright — `முரசொலி-பொங்கல் மலர்`, 1956 — and
+     * forcing that work through a "NOT established" schema would print a falsehood on its own source
+     * page. Whichever field is present is the one the page renders.
+     */
+    publicationEstablished?: {
+      publicationTa: string;
+      publicationEn?: string;
+      editionStatement?: string;
+      year?: number;
+    };
     /** Publication metadata NOT established by the scan — recorded explicitly. */
-    publicationNotEstablished: string;
+    publicationNotEstablished?: string;
     forewordDateNote?: string;
+    /**
+     * What KIND of printed source this is, in the source's own terms — a booklet, a magazine or annual
+     * issue, a collected edition. Optional: absent, the page says "printed source" rather than calling
+     * a 1955 பொங்கல் மலர் a booklet.
+     */
+    sourceTypeLabel?: PoemBilingualText;
     /** Non-verse material locked out of the poem body. */
     lockedExclusions: string[];
   };
@@ -296,6 +317,17 @@ export type PoemSlug = (typeof POEM_SLUGS)[number];
 // exist before the first item slug is ever minted.
 
 /**
+ * An inclusive run of consecutive pages or scans.
+ *
+ * A LIST of these is the only honest shape for either axis. `கலைஞரின் கவிதைகள்` interleaves works —
+ * item 23 occupies scans 230–236 and 238 while item 24 takes 237 and 239–244 — so both its scan
+ * coverage AND its printed pages (213–219, 221 / 220, 222–227) are genuinely non-contiguous. A single
+ * {first,last} would have to swallow the gap and claim pages the item does not occupy, which is a
+ * fabricated page range rather than a rounding. The runs stay ordered and separate.
+ */
+export type PageRun = { first: number; last: number };
+
+/**
  * One numbered poem/item inside a publication.
  *
  * `ordinal` is the source's own `item:` number and is a POSITION, never an identity: it orders the
@@ -316,9 +348,15 @@ export interface PoetryItem {
   contentsTitleTa?: string;
   titleEn: string;
   /** Physical scan runs, in source order. Non-contiguous runs are preserved, never flattened. */
-  physicalScans: { first: number; last: number }[];
-  /** Printed page range where the source prints page numbers; absent where it does not. */
-  printedPages?: { first: number; last: number };
+  physicalScans: PageRun[];
+  /**
+   * Printed page runs, in source order, where the source prints page numbers; absent where it does not.
+   *
+   * A LIST for the same reason as `physicalScans`: an interleaved item's printed pages carry the same
+   * gap its scans do, and collapsing `213–219, 221` to `213–221` would assert page 220 — which belongs
+   * to a different item.
+   */
+  printedPages?: PageRun[];
   tamil: PoemLayer;
   english: PoemLayer;
 }

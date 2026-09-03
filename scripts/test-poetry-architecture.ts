@@ -23,6 +23,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves } from "../data/collections";
+import type { PageRun, PoetryItem } from "../data/poems";
 import {
   POEM_SLUGS,
   POETRY_ITEM_SLUG_RULES,
@@ -133,6 +134,92 @@ for (const bad of ["", "Give-Me", "give_me", "-leading", "trailing-", "double--d
 for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
   ok(pattern.test(reserved), `reserved segment ${reserved} is otherwise slug-shaped — hence reserved`);
 }
+
+// ── 4b. Page runs are ordered lists on BOTH axes, and gaps survive ───────────────────────────────
+// The frozen source interleaves works: கலைஞரின் கவிதைகள் item 23 occupies scans 230–236 and 238 while
+// item 24 takes 237 and 239–244, and their PRINTED pages carry the same gap. A single {first,last}
+// would have to swallow it and claim a page belonging to the other item. These two real items are
+// constructed here so the shape is proved representable, and the flattened form is proved wrong.
+{
+  const item23: PoetryItem = {
+    ordinal: 23,
+    slug: "annan-oru-kaviyarangam",
+    titleTa: "அண்ணன் ஒரு கவியரங்கம்",
+    titleEn: "Annan, a Poetry Assembly",
+    physicalScans: [
+      { first: 230, last: 236 },
+      { first: 238, last: 238 },
+    ],
+    printedPages: [
+      { first: 213, last: 219 },
+      { first: 221, last: 221 },
+    ],
+    tamil: { lines: [], elements: [] } as unknown as PoetryItem["tamil"],
+    english: { lines: [], elements: [] } as unknown as PoetryItem["english"],
+  };
+  const item24: PoetryItem = {
+    ordinal: 24,
+    slug: "tamil-valara-vazhinadai-payanam",
+    titleTa: "தமிழ் வளர வழிநடைப் பயணம்",
+    titleEn: "A Walking Journey for Tamil to Flourish",
+    physicalScans: [
+      { first: 237, last: 237 },
+      { first: 239, last: 244 },
+    ],
+    printedPages: [
+      { first: 220, last: 220 },
+      { first: 222, last: 227 },
+    ],
+    tamil: { lines: [], elements: [] } as unknown as PoetryItem["tamil"],
+    english: { lines: [], elements: [] } as unknown as PoetryItem["english"],
+  };
+
+  eq(item23.printedPages!.length, 2, "item 23 keeps its printed pages as two runs, not one");
+  eq(item24.physicalScans.length, 2, "item 24 keeps its scans as two runs, not one");
+
+  const covers = (runs: PageRun[]) => runs.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
+  const p23 = covers(item23.printedPages!);
+  const p24 = covers(item24.printedPages!);
+  ok(!p23.includes(220), "item 23's printed pages exclude 220 — the gap is not swallowed");
+  ok(!p24.includes(221), "item 24's printed pages exclude 221 — the gap is not swallowed");
+  eq(p23.length, 8, "item 23 covers exactly 8 printed pages (213–219, 221)");
+  eq(p24.length, 7, "item 24 covers exactly 7 printed pages (220, 222–227)");
+  // The two interleaved items must not claim the same page as each other.
+  eq(p23.filter((n) => p24.includes(n)), [], "the interleaved items overlap on no printed page");
+  const s23 = covers(item23.physicalScans);
+  ok(!s23.includes(237), "item 23's scans exclude 237 — which belongs to item 24");
+
+  // A flattened single range would be WRONG, and this states exactly how.
+  const flatFirst = Math.min(...p23);
+  const flatLast = Math.max(...p23);
+  ok(flatLast - flatFirst + 1 !== p23.length, "flattening item 23 to 213–221 would claim a page it does not occupy");
+}
+
+// The type source must not have regressed to a single printed-page range.
+ok(/printedPages\?: PageRun\[\]/.test(poemsSrc), "printedPages is an ordered list of runs");
+ok(/physicalScans: PageRun\[\]/.test(poemsSrc), "physicalScans is an ordered list of runs");
+ok(!/printedPages\?: \{ first: number; last: number \};/.test(poemsSrc), "printedPages is not a single range");
+
+// ── 4c. The source page carries no work's facts and both publication states exist ────────────────
+const sourceSrc = fs
+  .readFileSync(path.join(process.cwd(), "components/PoemSource.tsx"), "utf-8")
+  .replace(/\/\*[\s\S]*?\*\//g, "")
+  .replace(/^\s*\/\/.*$/gm, "");
+for (const literal of ["Scan 26", "scan 26"]) {
+  ok(!sourceSrc.includes(literal), `the shared source page hard-codes no work-specific scan: ${literal}`);
+}
+ok(!sourceSrc.includes("printed booklet"), "the source page does not call every source a printed booklet");
+ok(sourceSrc.includes("s.unnumberedScanNote &&"), "the unnumbered-scan notice is conditional");
+ok(sourceSrc.includes("hasContextCard &&"), "the source-context card is conditional");
+for (const row of ["s.contextDatePrinted &&", "s.contextVenueTa &&", "s.contextOccasionTa &&"]) {
+  ok(sourceSrc.includes(row), `the context row is conditional: ${row}`);
+}
+ok(sourceSrc.includes("s.forewordDateNote &&"), "the foreword note is conditional");
+ok(sourceSrc.includes("s.publicationEstablished &&"), "an established publication renders");
+ok(sourceSrc.includes("!s.publicationEstablished && s.publicationNotEstablished &&"), "a not-established publication renders");
+ok(poemsSrc.includes("publicationEstablished?:"), "the type supports an established publication");
+ok(poemsSrc.includes("publicationNotEstablished?:"), "the type supports an unestablished publication");
+ok(poemsSrc.includes("sourceTypeLabel?:"), "the source-type label is work-driven and optional");
 
 // ── 5. Scope: P0 adds no route and no unauthorized surface ───────────────────────────────────────
 const sitemapSrc = fs.readFileSync(path.join(process.cwd(), "app/sitemap.ts"), "utf-8");
