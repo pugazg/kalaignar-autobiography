@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import fs from "node:fs";
 import path from "node:path";
 import PoemSource from "@/components/PoemSource";
-import { POEM_SLUGS } from "@/data/poems";
-import type { Poem, PoemProvenance } from "@/data/poems";
+import PublicationSource from "@/components/PublicationSource";
+import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
+import type { Poem, PoemProvenance, PoetryPublicationProvenance } from "@/data/poems";
 
 function load<T>(slug: string, file: string): T | null {
   try {
@@ -14,8 +15,10 @@ function load<T>(slug: string, file: string): T | null {
   }
 }
 
+const isPublication = (slug: string) => (POETRY_PUBLICATION_SLUGS as readonly string[]).includes(slug);
+
 export function generateStaticParams() {
-  return POEM_SLUGS.map((slug) => ({ slug }));
+  return [...POEM_SLUGS, ...POETRY_PUBLICATION_SLUGS].map((slug) => ({ slug }));
 }
 
 // DERIVED, never written. A literal description here would state facts about ONE work: three of the
@@ -23,6 +26,14 @@ export function generateStaticParams() {
 // exception and the others do not, and only one establishes a publication. So each sentence below is
 // emitted only when this work's own provenance carries the thing it describes.
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  if (isPublication(params.slug)) {
+    const prov = load<PoetryPublicationProvenance>(params.slug, "provenance.json");
+    if (!prov) return { title: "Source & provenance | Kalaignar Digital Library" };
+    return {
+      title: `Source & provenance — ${prov.source.titleTa} / ${prov.source.titleEn} | Kalaignar Digital Library`,
+      description: `Provenance for the publication: the controlling scan and its verified identity, verification state, the publication boundary, the ${prov.titleWitnesses.count} title-witness items, locked exclusions and rights.`,
+    };
+  }
   const prov = load<PoemProvenance>(params.slug, "provenance.json");
   if (!prov) return { title: "Source & provenance | Kalaignar Digital Library" };
   const s = prov.source;
@@ -47,6 +58,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function PoemSourcePage({ params }: { params: { slug: string } }) {
+  if (isPublication(params.slug)) {
+    const prov = load<PoetryPublicationProvenance>(params.slug, "provenance.json");
+    if (!prov) notFound();
+    return <PublicationSource slug={params.slug} prov={prov} />;
+  }
   if (!(POEM_SLUGS as readonly string[]).includes(params.slug)) notFound();
   const prov = load<PoemProvenance>(params.slug, "provenance.json");
   if (!prov) notFound();

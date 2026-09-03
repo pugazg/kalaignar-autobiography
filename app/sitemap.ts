@@ -5,7 +5,7 @@ import type { MetadataRoute } from "next";
 import { chapterIndex } from "@/data/references";
 import type { MurasoliIndex, MurasoliLettersIndex } from "@/data/murasoli";
 import { SPEECH_SLUGS } from "@/data/speeches";
-import { POEM_SLUGS } from "@/data/poems";
+import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import { ESSAY_SLUGS } from "@/data/essays";
 import { NOVEL_SLUGS } from "@/data/novels";
 import { PLAY_SLUGS } from "@/data/plays";
@@ -159,6 +159,21 @@ function loadEssayArticleSlugs(slug: string): string[] {
   }
 }
 
+/**
+ * A poetry publication's item slugs, from the SAME generated publication.json its item routes read,
+ * so the sitemap can never list an item the router does not generate. Deriving from the frozen
+ * roster (rather than from 1..N) is what keeps the two tied: a source reordering moves neither.
+ */
+function loadPublicationItemSlugs(slug: string): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/poems", slug, "publication.json");
+    const pub = JSON.parse(fs.readFileSync(p, "utf-8")) as { items: { slug: string }[] };
+    return pub.items.map((i) => i.slug);
+  } catch {
+    return [];
+  }
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const idx = murasoliIndex as MurasoliIndex;
@@ -250,6 +265,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...POEM_SLUGS.flatMap((slug) => [
       { url: `${BASE}/poems/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
       { url: `${BASE}/poems/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ]),
+    // Poetry publications (Phase 4, Wave 4 P2+). ONE catalogue work whose contents are numbered
+    // poems: the landing, its provenance page, and one stable deep-linkable route per item — the
+    // Essays shape. The landing carries the higher 0.7 priority as a multi-unit hub; the items carry
+    // 0.5, like every other reading unit. Driven by the frozen roster in publication.json, so the
+    // sitemap lists exactly the item routes the router generates.
+    ...POETRY_PUBLICATION_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/poems/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.7 },
+      { url: `${BASE}/poems/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+      ...loadPublicationItemSlugs(slug).map((item) => ({
+        url: `${BASE}/poems/${slug}/${item}`,
+        lastModified: now,
+        changeFrequency: "yearly" as const,
+        priority: 0.5,
+      })),
     ]),
     // Essays & Articles (Phase 5). The publication landing, its provenance page and one stable
     // deep-linkable route per source-numbered article. No /essays collection landing is added.
