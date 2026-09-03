@@ -107,15 +107,15 @@ function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta:
     >
       <span className="flex items-center gap-2">
         <Library className={cn("h-5 w-5 shrink-0", a.icon)} aria-hidden />
-        <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink/45 dark:text-night-text/45">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink/65 dark:text-night-text/65">
           {ta ? "தொகுப்பு" : "Collection"}
         </span>
       </span>
       <span className="mt-2 font-tamil text-[17px] font-medium" lang="ta">
         <span className={a.title}>{collection.titleTa}</span>
       </span>
-      <span className="mt-0.5 text-xs text-ink/50 dark:text-night-text/50">{collection.titleEn}</span>
-      <span className="mt-1.5 text-xs tabular-nums text-ink/55 dark:text-night-text/55">
+      <span className="mt-0.5 text-xs text-ink/65 dark:text-night-text/65">{collection.titleEn}</span>
+      <span className="mt-1.5 text-xs tabular-nums text-ink/65 dark:text-night-text/65">
         {collection.editionStatementTa && (
           <>
             <span className="font-tamil" lang="ta">
@@ -134,7 +134,7 @@ function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta:
         )}
       </span>
       {desc && (
-        <span className="mt-1.5 text-xs leading-snug text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : undefined}>
+        <span className="mt-1.5 text-xs leading-snug text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : undefined}>
           {desc}
         </span>
       )}
