@@ -54,6 +54,23 @@ function renderElements(elements: PoemElement[], ta: boolean): ReactNode[] {
       flush("mb-7");
       return;
     }
+    if (el.kind === "source-heading") {
+      // A heading the SOURCE prints inside the poem. It is marked up as a heading rather than styled
+      // to look like one, so it reaches assistive technology as the structure it is — and it is
+      // rendered smaller and quieter than the poem's own title, which stays the page's h1, so the
+      // reader can tell a heading inside the work from the name of the work.
+      flush("mb-7");
+      out.push(
+        <h2
+          key={"h" + i}
+          className="mb-5 font-display text-lg text-ink/80 dark:text-night-text/80"
+          data-source-heading={el.sourceScan}
+        >
+          {el.text}
+        </h2>,
+      );
+      return;
+    }
     // A physical page transition. Only a source-ESTABLISHED same-stanza relation may close up
     // without a marker; an established boundary gets the stanza gap; anything unresolved gets the
     // neutral marker, which asserts neither.

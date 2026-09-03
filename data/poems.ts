@@ -33,7 +33,7 @@ export type PoemLine = {
   indent: number;
   /** The physical scan page this line is printed on. */
   sourceScan: number;
-  /** The VISIBLE printed page number, or null where the source shows none (scan 26). Never inferred. */
+  /** The VISIBLE printed page number, or null where the source shows none. Never inferred. */
   printedPage: number | null;
 };
 
@@ -68,8 +68,25 @@ export type PoemBoundary =
       evidence: { stanza: string[]; textual: string[] };
     };
 
-// One ordered element of a language layer: a source line, or a boundary between lines.
-export type PoemElement = ({ kind: "line" } & PoemLine) | PoemBoundary;
+/**
+ * A structural heading PRINTED IN THE SOURCE, inside the poem — அணையா விளக்கு அண்ணா prints `முடிவுரை`
+ * on scan 16.
+ *
+ * It is a third element kind rather than a line, because it is neither. Treating it as verse would
+ * silently absorb a heading into the poem; dropping it would delete printed matter. Nothing infers
+ * one: the Tamil assembly gives it no markup at all, so a heading is carried only where the pinned
+ * archive states that the printed page shows one, and the two reading layers must agree on how many
+ * there are or the import fails.
+ */
+export type PoemSourceHeading = {
+  kind: "source-heading";
+  text: string;
+  sourceScan: number;
+  printedPage: number | null;
+};
+
+// One ordered element of a language layer: a source line, a printed heading, or a boundary.
+export type PoemElement = ({ kind: "line" } & PoemLine) | PoemSourceHeading | PoemBoundary;
 
 // TERMINOLOGY. A maximal run of consecutive lines with no boundary between them is a VERSE RUN,
 // not a "stanza": where a run is bounded by a page transition whose relation is unknown, the
@@ -91,10 +108,52 @@ export type PoemLayer = {
   pageTransitions: number;
   /** Page transitions whose typographic stanza relation the source does not establish. */
   unresolvedStanzaRelations: number;
+  /**
+   * Structural headings the SOURCE prints inside the poem.
+   *
+   * Absent — not zero — on a work whose source prints none, so a payload built before this key
+   * existed is byte-identical to one built after it. Absence means "this work has no printed
+   * heading", which is exactly what the source says.
+   */
+  sourceHeadings?: number;
 };
 
 export type PoemBilingualText = { ta: string; en: string };
 export type PoemBilingualName = { nameTa: string; nameEn: string };
+
+/**
+ * A documented EDITORIAL EXCEPTION applied upstream to the archival transcription itself.
+ *
+ * தென்னவன் காதை carries one: on scan 151 a single caste-based slur is omitted without replacement,
+ * at the source repository owner's explicit direction, and the omitted term is not reproduced
+ * anywhere in the archive.
+ *
+ * This is deliberately NOT modelled as a locked exclusion. A locked exclusion names non-verse matter
+ * that was never part of the poem — a printer's imprint, a caption, translator prose. An editorial
+ * exception is the opposite case: verse matter that the owner directed be left out. Recording one as
+ * the other would misdescribe both, and would quietly claim the transcription is diplomatic where it
+ * is not. A work carrying an exception says so, on the work, in both reading layers.
+ *
+ * The omitted material is never reproduced, transliterated, paraphrased, reconstructed or
+ * substituted here, and the omission is not "repaired" downstream: it is reversed only if the source
+ * repository owner changes the instruction upstream.
+ */
+export type PoemEditorialException = {
+  /** The physical scan the exception applies to. */
+  scan: number;
+  kind: "owner-directed-omission";
+  appliesTo: "both-reading-layers";
+  summary: string;
+  replacement: "none";
+  /** Always false. The exception is described; the omitted material is never shown. */
+  omittedTermReproduced: false;
+  /** What the exception means for the completeness claim of this transcription. */
+  consequence: string;
+  /** Under what conditions the omission would be reversed — upstream, never here. */
+  restoration: string;
+  /** Verbatim citations from the pinned source repository documenting the direction. */
+  citations: string[];
+};
 
 // The source/context note printed ABOVE the poem (scan 13). It is METADATA, never verse: it is
 // carried here so the reader can present the source-established occasion without inserting a single
@@ -143,15 +202,23 @@ export type Poem = {
    */
   sourceContext?: PoemSourceContext;
 
-  // PUBLICATION metadata is deliberately NULLABLE and, for this work, NULL. The controlling scan
-  // carries no standalone publication-year or edition statement. The 15.9.2008 foreword date is an
-  // internal foreword date and is NEVER promoted to a publication/edition year. A field is left
-  // unset rather than filled merely because the type allows it.
+  // PUBLICATION metadata is deliberately NULLABLE, and null is a statement rather than a gap: the
+  // controlling scan carries no standalone publication-year or edition statement. Three of the four
+  // standalone poems are in that position; தென்னவன் காதை is not, because its archive states
+  // முரசொலி-பொங்கல் மலர், 1956 in its own prose. A date that appears in some other role — a foreword's
+  // internal date, a year inside the controlling PDF's filename — is NEVER promoted here. A field is
+  // left unset rather than filled merely because the type allows it.
   publicationYear: number | null;
   editionStatement: string | null;
 
   /** Which source facts the examined scan does NOT establish (source facts, not defects). */
   factsNotStated: string[];
+
+  /**
+   * Documented editorial exceptions applied upstream to the transcription. Absent on a work that has
+   * none — which is most of them — so absence is not a claim that one was suppressed.
+   */
+  editorialExceptions?: PoemEditorialException[];
 
   transcriptionStatus: string;
   translationStatus: string;
@@ -161,7 +228,7 @@ export type Poem = {
   /** RELEASE-COMPLETE project-created English translation layer. */
   english: PoemLayer;
 
-  /** Scans the poem body covers (13–26). */
+  /** Scans the poem body covers. */
   poemScans: number[];
 };
 
@@ -228,6 +295,10 @@ export type PoemProvenance = {
      * a 1955 பொங்கல் மலர் a booklet.
      */
     sourceTypeLabel?: PoemBilingualText;
+    /** How the archive establishes a structural heading the source prints inside the poem. */
+    sourceHeadingNote?: string;
+    /** How a documented editorial exception is recorded, and why it is not a locked exclusion. */
+    editorialExceptionNote?: string;
     /** Non-verse material locked out of the poem body. */
     lockedExclusions: string[];
   };
@@ -251,7 +322,9 @@ export type PoemProvenance = {
     englishVerseRuns: number;
     englishSourceEstablishedStanzas: number;
     englishIndentedLines: number;
-    /** Physical page transitions inside the poem body (13→14 … 25→26). */
+    /** Structural headings the source prints inside the poem; absent where it prints none. */
+    sourceHeadings?: number;
+    /** Physical page transitions inside the poem body. */
     pageTransitionsAudited: number;
     /** TYPOGRAPHIC dimension — resolved only from explicit source evidence. */
     stanzaRelationSameStanza: number;
@@ -300,8 +373,14 @@ export type PoemProvenance = {
 };
 
 // Integrated STANDALONE poem slugs (build/import authority; the public catalog entry lives in
-// data/library.ts). One poem today; Wave 4 P1 adds three more standalone works to this list.
-export const POEM_SLUGS = ["idhayathai-thanthidu-anna"] as const;
+// data/library.ts). Each slug generates two static routes, /poems/<slug> and /poems/<slug>/source,
+// and the sitemap follows from this list rather than from a second hand-maintained one.
+export const POEM_SLUGS = [
+  "anaiya-vilakku-anna",
+  "idhayathai-thanthidu-anna",
+  "marathi",
+  "thennan-kathai",
+] as const;
 export type PoemSlug = (typeof POEM_SLUGS)[number];
 
 // ── Poetry publications — Wave 4 foundation ─────────────────────────────────────────────────────────

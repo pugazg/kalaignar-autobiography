@@ -985,6 +985,118 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     provenanceHref: "/poems/idhayathai-thanthidu-anna/source",
   },
   {
+    // Digital Library Wave 4 P1 — Poetry. அணையா விளக்கு அண்ணா, a கலைஞர் கவிதை issued as a standalone
+    // booklet of 19 scans, of which 7–17 are the poem body. `edition` is deliberately UNSET: the
+    // cover's visible bottom imprint names an ISSUING BODY and carries no year, and the `15-9-2008`
+    // line printed on scan 17 beneath the text body is a source-role fact about that page which the
+    // archive's own policy forbids promoting into a publication or edition year.
+    id: "anaiya-vilakku-anna",
+    slug: "anaiya-vilakku-anna",
+    titleTa: "அணையா விளக்கு அண்ணா",
+    titleEn: "Anna, the Unquenchable Lamp",
+    shelf: "poetry",
+    subtype: "poem",
+    readerStructure: "poem",
+    href: "/poems/anaiya-vilakku-anna",
+    state: "published",
+    descTa: "அண்ணாவைப் பற்றிய கலைஞர் கவிதை — தி.மு.க. தலைமைக் கழக வெளியீடு",
+    descEn: "A Kalaignar poem on Anna, issued as a DMK headquarters publication",
+    sourceRepo: "pugazg/kalaignar-poems",
+    sourcePath: "poems/anaiya-vilakku-anna",
+    sourceCommit: "969823195ea8943a67fad4286ab1bc7f1c876d56",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // unitCount intentionally UNSET — the source prints no numbered poem divisions. The one printed
+    // heading inside the poem (`முடிவுரை`, scan 16) divides the text but numbers nothing, and a
+    // derived line or run count must never be presented as printed source structure.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil poem; it does not extend to the project-created English translation, nor to third-party material in the booklet (the photographs and their printed captions, the commemorative graphic, the frontispiece quotation, the back matter with its 1987 speech attribution, cover/design).",
+    },
+    provenanceHref: "/poems/anaiya-vilakku-anna/source",
+  },
+  {
+    // Digital Library Wave 4 P1 — Poetry. மறத்தி, carried inside a scanned periodical: the work
+    // occupies four pages of a 248-page issue, of which three are the poem body. `edition` is
+    // deliberately UNSET — the pinned archive states no publication title, edition statement or year
+    // for this work anywhere in its own prose. The controlling scan's FILENAME names a 1955 holding,
+    // and that is the identity of that FILE, recorded on the provenance page as such. Promoting a
+    // filename into a catalogue edition would be an invented fact.
+    id: "marathi",
+    slug: "marathi",
+    titleTa: "மறத்தி",
+    titleEn: "The Valiant Woman",
+    shelf: "poetry",
+    subtype: "poem",
+    readerStructure: "poem",
+    href: "/poems/marathi",
+    state: "published",
+    descTa: "அச்சிட்ட இதழொன்றில் மூன்று பக்கங்களில் விரியும் கலைஞர் கவிதை",
+    descEn: "A Kalaignar poem spanning three pages of a scanned periodical",
+    sourceRepo: "pugazg/kalaignar-poems",
+    sourcePath: "poems/marathi",
+    sourceCommit: "969823195ea8943a67fad4286ab1bc7f1c876d56",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // unitCount intentionally UNSET — the source prints no numbered poem divisions.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil poem; it does not extend to the project-created English translation, nor to the surrounding periodical — its other items, its illustrations, its layout and its cover.",
+    },
+    provenanceHref: "/poems/marathi/source",
+  },
+  {
+    // Digital Library Wave 4 P1 — Poetry. தென்னவன் காதை is the ONLY one of the four standalone poems
+    // whose pinned archive states a publication and a year in its own prose, so it is the only one
+    // that sets `edition`. It also carries one documented OWNER-DIRECTED editorial omission on scan
+    // 151, recorded on the work and surfaced on the provenance page: the transcription is complete
+    // and verified everywhere else, and is deliberately not diplomatic at that single location.
+    id: "thennan-kathai",
+    slug: "thennan-kathai",
+    titleTa: "தென்னவன் காதை",
+    titleEn: "The Lay of the Southern King",
+    shelf: "poetry",
+    subtype: "poem",
+    readerStructure: "poem",
+    href: "/poems/thennan-kathai",
+    state: "published",
+    descTa: "முரசொலி-பொங்கல் மலர், 1956-இல் வெளிவந்த கலைஞர் கவிதை",
+    descEn: "A Kalaignar poem published in the 1956 முரசொலி-பொங்கல் மலர்",
+    sourceRepo: "pugazg/kalaignar-poems",
+    sourcePath: "poems/thennan-kathai",
+    sourceCommit: "969823195ea8943a67fad4286ab1bc7f1c876d56",
+    edition: "முரசொலி-பொங்கல் மலர், 1956",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // unitCount intentionally UNSET — the source prints no numbered poem divisions.
+    rights: {
+      rightsStatus: "nationalised-by-tamil-nadu-government",
+      rightsAuthority: "Government of Tamil Nadu",
+      rightsAction: "nationalisation",
+      rightsAnnouncementDate: "2024-08-22",
+      governmentOrderNumber: null,
+      governmentOrderDate: null,
+      governmentOrderHandoverDate: "2024-12-22",
+      note: "Nationalisation applies to Kalaignar's underlying Tamil poem; it does not extend to the project-created English translation, nor to the surrounding 1956 முரசொலி-பொங்கல் மலர் — its other items, its illustrations, its layout and its cover.",
+    },
+    provenanceHref: "/poems/thennan-kathai/source",
+  },
+  {
     // Digital Library Phase 5 — Essays & Articles. First benchmark, and the first work on the
     // கட்டுரைகள் shelf. This is ONE catalog publication containing 14 source-numbered articles —
     // never 14 catalog works. An article is ordinary prose, so it gets the `article` reader
