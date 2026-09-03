@@ -106,7 +106,7 @@ eq("the frozen work tree is what the freeze carries", git("rev-parse", `${FREEZE
 }
 
 // ── PUBLICATION IDENTITY ─────────────────────────────────────────────────────────────────────────
-eq("POETRY_PUBLICATION_SLUGS is exactly the P2 publication", arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS"), [SLUG]);
+check("POETRY_PUBLICATION_SLUGS registers the P2 publication", (arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS") ?? []).includes(SLUG));
 eq("payload slug", pub.slug, SLUG);
 eq("readerStructure is poetry-publication", pub.readerStructure, "poetry-publication");
 eq("itemCount is 58", pub.itemCount, 58);
@@ -398,10 +398,14 @@ check("English total is substantial", enLinesTotal > 5000);
 }
 
 // ── ARCHITECTURE GUARDS ──────────────────────────────────────────────────────────────────────────
-check("POETRY_WITNESS_RELATIONS remains empty", /POETRY_WITNESS_RELATIONS: PoetryWitnessRelation\[\] = \[\];/.test(poemsTs));
-check("no P3 publication is vendored", !fs.existsSync(path.join(process.cwd(), "public/data/poems/kalaignarin-kavithaigal")));
-check("no P3 declaration exists", !fs.existsSync(path.join(process.cwd(), "scripts/publication-declarations/kalaignarin-kavithaigal.mjs")));
-check("no P3 slug in the registry", !(arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS") ?? []).includes("kalaignarin-kavithaigal"));
+// P3 has since landed the second publication and the two witness relations; what remains P2's OWN
+// concern is that NO witness relation names Kaalap Pezhai — its poems have no established alternate
+// witness — and that Kaalap is registered and vendered.
+{
+  const relBlock = /export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation\[\] = \[([\s\S]*?)\n\];/.exec(poemsTs)?.[1] ?? "";
+  check("no witness relation targets Kaalap Pezhai", !relBlock.includes(SLUG));
+}
+check("the P2 publication is vendored", fs.existsSync(path.join(process.cwd(), "public/data/poems", SLUG, "publication.json")));
 {
   const m = /export const LIBRARY_COLLECTIONS:[^=]*=\s*\[([\s\S]*?)\n\];/.exec(collectionsTs);
   eq("exactly one LibraryCollection is defined", (m?.[1].match(/^ {2}\{$/gm) ?? []).length, 1);

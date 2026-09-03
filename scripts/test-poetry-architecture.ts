@@ -84,23 +84,32 @@ eq(
 // one new discovery entry, NOT 58 works and not a collection.
 const STANDALONE = ["anaiya-vilakku-anna", "marathi", "thennan-kathai", EXISTING].sort();
 const PUBLICATION = "kaalap-pezhaiyum-kavithai-saaviyum";
+const PUBLICATION_P3 = "kalaignarin-kavithaigal";
+const PUBLICATIONS = [PUBLICATION, PUBLICATION_P3];
 eq(POEM_SLUGS.length, 4, "exactly four standalone poem slugs");
 eq([...POEM_SLUGS].sort(), STANDALONE, "the standalone registry is the existing poem plus exactly the three P1 works");
-eq([...POETRY_PUBLICATION_SLUGS], [PUBLICATION], "exactly the one P2 publication is registered");
-eq(POETRY_WITNESS_RELATIONS.length, 0, "no witness relation is declared (P3 lands those)");
+eq([...POETRY_PUBLICATION_SLUGS], PUBLICATIONS, "exactly the two publications (P2, P3) are registered");
+eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations are declared (P3)");
+{
+  // Both relations link a standalone poem to a kalaignarin-kavithaigal item; neither touches Kaalap.
+  const eps = POETRY_WITNESS_RELATIONS.flatMap((r) => [r.a, r.b]);
+  ok(eps.some((e) => e.slug === "idhayathai-thanthidu-anna") && eps.some((e) => e.slug === "thennan-kathai"), "relations cover both standalone counterparts");
+  ok(eps.filter((e) => e.slug === PUBLICATION_P3 && e.itemSlug).length === 2, "both counterpart endpoints are P3 items");
+  ok(!eps.some((e) => e.slug === PUBLICATION), "no relation targets Kaalap Pezhai");
+}
 
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 75, "the catalogue holds 75 works (74 + the one P2 publication)");
+eq(works.length, 76, "the catalogue holds 76 works (75 + the one P3 publication)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 39, "39 discovery entries (38 + the one P2 publication)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 40, "40 discovery entries (39 + the one P3 publication)");
 ok(!!poetry, "the Poetry shelf is present");
-eq(poetry!.works.length, 5, "Poetry holds exactly 5 works (4 standalone + 1 publication)");
+eq(poetry!.works.length, 6, "Poetry holds exactly 6 works (4 standalone + 2 publications)");
 // The publication is ONE discovery entry even though it holds 58 items — it is one work with reading
 // units, so works and entries still move together on the Poetry shelf (unlike Fiction's 39/3).
-eq(poetry!.entries.length, 5, "Poetry shows exactly 5 discovery entries");
-eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE, PUBLICATION].sort(), "the Poetry shelf's works are the four standalones plus the publication");
+eq(poetry!.entries.length, 6, "Poetry shows exactly 6 discovery entries");
+eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE, ...PUBLICATIONS].sort(), "the Poetry shelf's works are the four standalones plus the two publications");
 {
   const existing = poetry!.works.find((w) => w.slug === EXISTING)!;
   eq(existing.href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");
@@ -328,8 +337,8 @@ ok(
 // show up first — a publication roster or an anthology's items appearing before they are authorized.
 eq(
   fs.readdirSync(path.join(process.cwd(), "public/data/poems")).sort(),
-  [...STANDALONE, PUBLICATION].sort(),
-  "exactly the four standalone poems and the one publication are vendored, and nothing else",
+  [...STANDALONE, ...PUBLICATIONS].sort(),
+  "exactly the four standalone poems and the two publications are vendored, and nothing else",
 );
 ok(!fs.existsSync(path.join(process.cwd(), "public/data/poetry")), "no publication payload is vendored");
 
