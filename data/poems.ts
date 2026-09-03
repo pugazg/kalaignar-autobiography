@@ -486,6 +486,8 @@ export interface PoetryPublicationGroup {
   ordinal: number;
   titleTa: string;
   contentsTitleTa?: string;
+  /** The English group title the released assembly assigns in its `## <ta> — <en>` divider header. */
+  titleEn?: string;
   itemOrdinals: number[];
 }
 
@@ -572,6 +574,15 @@ export interface PoetryPublicationProvenance {
     note: string;
     items: { ordinal: number; titlePageWitness: string; contentsWitness: string }[];
   };
+  groups?: {
+    ordinal: number;
+    titleTa: string;
+    contentsTitleTa?: string;
+    titleEn?: string;
+    itemCount: number;
+    firstItem: number;
+    lastItem: number;
+  }[];
   itemNumberingAnomalies: { ordinal: number; printedNumber: number; note: string }[];
   projectRights: {
     appliesTo: string;
@@ -591,7 +602,7 @@ export interface PoetryPublicationProvenance {
 }
 
 /** Registry: exactly the P2 publication. P3 will add கலைஞரின் கவிதைகள். Routes are driven from it. */
-export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum"] as const;
+export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum", "kalaignarin-kavithaigal"] as const;
 export type PoetryPublicationSlug = (typeof POETRY_PUBLICATION_SLUGS)[number];
 
 /**
@@ -639,5 +650,46 @@ export interface PoetryWitnessRelation {
   publicNote: PoemBilingualText;
 }
 
-/** Empty until P3 lands the two relationships in the same PR as the publication that needs them. */
-export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [];
+/**
+ * The two established relationships, landed with P3 because both counterparts are now public.
+ *
+ * Each says only that another SOURCE WITNESS of the same canonical poem exists — never that the two
+ * texts agree (they do not: item 01's English is "Give Me Your Heart, Anna", the standalone's is
+ * "Lend Me Your Heart, Anna"; the standalone தென்னவன் காதை carries a scan-151 editorial exception the
+ * anthology item does not). Neither supersedes the other; neither is corrected from the other.
+ */
+export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
+  {
+    relation: "same-canonical-poem-alternate-witness",
+    a: { slug: "idhayathai-thanthidu-anna" },
+    b: { slug: "kalaignarin-kavithaigal", itemSlug: "give-me-your-heart-anna" },
+    publicNote: {
+      ta: "இதே கவிதையின் மற்றொரு மூல ஆதாரப் பதிப்பும் கிடைக்கிறது.",
+      en: "Another source witness of this same poem is available.",
+    },
+  },
+  {
+    relation: "same-canonical-poem-alternate-witness",
+    a: { slug: "thennan-kathai" },
+    b: { slug: "kalaignarin-kavithaigal", itemSlug: "the-tale-of-the-southerner" },
+    publicNote: {
+      ta: "இதே கவிதையின் மற்றொரு மூல ஆதாரப் பதிப்பும் கிடைக்கிறது.",
+      en: "Another source witness of this same poem is available.",
+    },
+  },
+];
+
+/**
+ * The witness relationships in which (slug, itemSlug?) is one endpoint, each paired with its
+ * COUNTERPART endpoint and the public note. Registry-driven so the cross-witness UI needs no
+ * hard-coded slug conditions, and so a page renders a link only where a relation actually exists.
+ */
+export function witnessCounterparts(slug: string, itemSlug?: string): { counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] {
+  const matches = (e: PoetryWitnessEndpoint) => e.slug === slug && (e.itemSlug ?? undefined) === (itemSlug ?? undefined);
+  const out: { counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] = [];
+  for (const r of POETRY_WITNESS_RELATIONS) {
+    if (matches(r.a)) out.push({ counterpart: r.b, note: r.publicNote });
+    else if (matches(r.b)) out.push({ counterpart: r.a, note: r.publicNote });
+  }
+  return out;
+}
