@@ -324,16 +324,29 @@ for (const slug of ALL_SLUGS) {
     eq(`${slug}: no unapproved-title note where a title IS declared`, payload[slug].prov.source.englishTitleNote, undefined);
     check(`${slug}: the English title is not named as an unstated fact`, !payload[slug].poem.factsNotStated.includes("english-title"));
   } else {
-    // No approved title upstream. The label shown must be disclosed as project-supplied.
+    // NO APPROVED TITLE UPSTREAM ⇒ NO ENGLISH TITLE IS PUBLISHED. A note describing an invented
+    // title as "project-supplied" does not make the title surfaces truthful — the reader's secondary
+    // title, the share text, the catalogue card and the OpenGraph/Twitter metadata all present
+    // `title.en` as the work's English title, unqualified. So the canonical Tamil title stands in
+    // the English slot and nothing translated or transliterated is invented to fill it.
+    const canonical = payload[slug].poem.title.ta;
+    eq(`${slug}: the published English title falls back to the canonical Tamil title`, poemTitle, canonical);
+    eq(`${slug}: provenance carries the same fallback`, provTitle, canonical);
+    check(`${slug}: the catalogue carries the same fallback`, libraryTs.includes(`titleEn: "${canonical}",`));
     check(`${slug}: the release declares no English title, and the work says so`, payload[slug].poem.factsNotStated.includes("english-title"));
     check(`${slug}: an unapproved-title note is recorded`, typeof payload[slug].prov.source.englishTitleNote === "string");
+    const note = payload[slug].prov.source.englishTitleNote ?? "";
+    check(`${slug}: the note states that no final English title is approved upstream`, /NO FINAL ENGLISH TITLE IS APPROVED UPSTREAM/.test(note));
+    check(`${slug}: the note states the TRANSLATION is release-complete`, /RELEASE-COMPLETE/.test(note));
+    check(`${slug}: the note states an approved title would replace the fallback`, /replaces this fallback/.test(note));
+    check(`${slug}: the note cites the upstream statement`, note.includes("SOURCE_MAP.md"));
+    // The upstream statement it cites must actually be there, at the frozen commit.
+    const srcMap = readText(path.join(SRC_REPO, "poems", slug, "translations/en/SOURCE_MAP.md"));
     check(
-      `${slug}: the note states the label is project-supplied, not source-established`,
-      /project-supplied reading label/.test(payload[slug].prov.source.englishTitleNote ?? ""),
+      `${slug}: the frozen SOURCE_MAP records that no final English title is approved`,
+      /translates poem body only unless a final English title is separately approved/.test(srcMap),
     );
-    // Fail closed against a future "approval" invented downstream: the label must NOT appear in the
-    // pinned source, because if it did, it would be declared and this branch would be wrong.
-    check(`${slug}: the reading label is not present in the frozen release`, !asm.includes(poemTitle));
+    check(`${slug}: the frozen release declares no english_title frontmatter`, !/^english_title:/m.test(asm));
   }
 }
 // The one work this rule was written for must actually be exercised by it.
@@ -346,6 +359,41 @@ check(
   "the superseded invented title appears nowhere in the implementation",
   !libraryTs.includes("Unquenchable") && !JSON.stringify(payload).includes("Unquenchable"),
 );
+// The second rejected label — a translated title this project invented for a work whose release
+// approves none. It may survive in PR and commit history explaining WHY it was rejected; it may not
+// survive in anything that is generated, catalogued, or served.
+{
+  const REJECTED = "The Lay of the Southern King";
+  check("the rejected translated title is absent from every payload", !JSON.stringify(payload).includes(REJECTED));
+  check("the rejected translated title is absent from the catalogue", !libraryTs.includes(REJECTED));
+  for (const dir of ["app", "components", "data", "scripts/poem-declarations"]) {
+    const root = path.join(process.cwd(), dir);
+    const walk = (d) => {
+      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+        const abs = path.join(d, e.name);
+        if (e.isDirectory()) walk(abs);
+        else if (/\.(ts|tsx|mjs|json)$/.test(e.name)) {
+          check(`${path.relative(process.cwd(), abs)} does not carry the rejected title`, !readText(abs).includes(REJECTED));
+        }
+      }
+    };
+    if (fs.existsSync(root)) walk(root);
+  }
+  // And nowhere in the built output, when there is one.
+  const appOut = path.join(process.cwd(), ".next/server/app");
+  if (fs.existsSync(appOut)) {
+    const hits = [];
+    const walk = (d) => {
+      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+        const abs = path.join(d, e.name);
+        if (e.isDirectory()) walk(abs);
+        else if (/\.(html|rsc|body)$/.test(e.name) && readText(abs).includes(REJECTED)) hits.push(abs);
+      }
+    };
+    walk(appOut);
+    eq("the rejected title is absent from every prerendered page", hits, []);
+  }
+}
 
 // ── 11–12. Routes: no collision, exactly one landing and one /source per work ────────────────────
 {

@@ -1068,7 +1068,12 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     id: "thennan-kathai",
     slug: "thennan-kathai",
     titleTa: "தென்னவன் காதை",
-    titleEn: "The Lay of the Southern King",
+    // NO APPROVED ENGLISH TITLE UPSTREAM. The frozen release declares none and its SOURCE_MAP
+    // states the batch translates the poem body only unless a final English title is separately
+    // approved. The canonical Tamil title therefore stands in the English slot rather than an
+    // invented translation, and the card suppresses the duplicate line. See the work's
+    // provenance.englishTitleNote.
+    titleEn: "தென்னவன் காதை",
     shelf: "poetry",
     subtype: "poem",
     readerStructure: "poem",

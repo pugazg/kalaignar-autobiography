@@ -27,6 +27,7 @@ import { renderElements } from "../components/PoemReader";
 import { POEM_SLUGS } from "../data/poems";
 import type { Poem, PoemProvenance } from "../data/poems";
 import { publishedWorks } from "../data/library";
+import LibraryHome from "../components/LibraryHome";
 
 let checks = 0;
 const failures: string[] = [];
@@ -269,10 +270,13 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
       const lines = w.poem[layer].elements.filter((e) => e.kind === "line");
       ok(lines.length > 50, `${w.slug}/${layer}: the layer is non-trivial (${lines.length} lines)`);
       // PRESENCE, positively: the first and last source lines must actually be in the output.
+      // Compared against the READING text: emphasis delimiters are markup the renderer resolves, so
+      // a line whose source text carries them appears without them. The words must all be there.
+      const reading = (t: string) => t.replace(/\*\*([^*]+)\*\*|\*([^*]+)\*/g, "$1$2").replace(/^\*+|\*+$/g, "");
       const first = lines[0] as { text: string };
       const last = lines[lines.length - 1] as { text: string };
-      ok(html.includes(first.text), `${w.slug}/${layer}: the first source line is rendered`);
-      ok(html.includes(last.text), `${w.slug}/${layer}: the last source line is rendered`);
+      ok(html.includes(reading(first.text)), `${w.slug}/${layer}: the first source line is rendered`);
+      ok(html.includes(reading(last.text)), `${w.slug}/${layer}: the last source line is rendered`);
       // Every unresolved page transition draws the neutral marker — it asserts neither relation.
       const unresolved = w.poem[layer].elements.filter((e) => e.kind === "page-transition" && (e as { stanzaRelation: string }).stanzaRelation === "unknown").length;
       eq((html.match(/poem-page-transition /g) ?? []).length, unresolved, `${w.slug}/${layer}: one neutral marker per unresolved transition`);
@@ -430,21 +434,103 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
       eq(census(w, layer), { balanced, leftover }, `${w.slug}/${layer}: Markdown-marker census`);
     }
   }
-  // The ONLY leftover that is not a deliberate literal is one cross-line emphasis in Anaiya scan 17.
-  // It is reported, not repaired: pairing it needs a model for emphasis spanning a line break, and
-  // rewriting released text is not this import's decision.
+  // (6) THE CROSS-LINE EMPHASIS. One strong span opens on one source line and closes on the next.
+  //     The data keeps both delimiters byte-exact; the renderer now pairs them within the verse run.
   {
     const w = works.find((x) => x.slug === "anaiya-vilakku-anna")!;
-    const opens = byText(w, "english", "**Autonomy for the states;");
-    const closes = byText(w, "english", "federalism at the Centre!**");
-    eq(opens.length, 1, "anaiya: the cross-line emphasis opens on exactly one line");
-    eq(closes.length, 1, "anaiya: the cross-line emphasis closes on exactly one line");
-    eq((opens[0] as { sourceScan: number }).sourceScan, 17, "anaiya: it opens on scan 17");
-    eq((closes[0] as { sourceScan: number }).sourceScan, 17, "anaiya: it closes on the same scan");
-    // Both are on the same scan, so this is a LINE-break pair, not a page-break pair.
-    const html = render([...opens, ...closes], false);
-    ok(html.includes("**"), "anaiya: the unpaired delimiters are visible, which is what makes this reportable");
+    const els = w.poem.english.elements;
+    const openIdx = els.findIndex((e) => e.kind === "line" && (e as { text: string }).text === "**Autonomy for the states;");
+    const closeIdx = els.findIndex((e) => e.kind === "line" && (e as { text: string }).text === "federalism at the Centre!**");
+    ok(openIdx >= 0 && closeIdx >= 0, "anaiya: both halves of the cross-line emphasis are present");
+    eq(closeIdx - openIdx, 1, "anaiya: they are consecutive elements, with no boundary between them");
+    eq((els[openIdx] as { sourceScan: number }).sourceScan, 17, "anaiya: the span is on scan 17");
+
+    // Rendered through the reader's own path, as part of its real verse run.
+    const html = render(els.slice(openIdx, closeIdx + 1), false);
+    ok(!html.includes("**"), "anaiya: no literal ** survives the cross-line pairing");
+    ok(!html.includes("*"), "anaiya: no asterisk at all survives on those two lines");
+    ok(html.includes("Autonomy for the states;"), "anaiya: the opening line's text is rendered");
+    ok(html.includes("federalism at the Centre!"), "anaiya: the closing line's text is rendered");
+    // BOTH source lines keep their own wrapper — lineation is untouched by the emphasis.
+    eq((html.match(/<span class="block/g) ?? []).length, 2, "anaiya: two source lines, two line wrappers");
+    // Both are emphasised, and the emphasis is INSIDE each wrapper rather than around them.
+    eq((html.match(/<strong/g) ?? []).length, 2, "anaiya: each line carries its own <strong>");
+    ok(/<span class="block[^"]*"[^>]*><strong[^>]*>Autonomy for the states;<\/strong><\/span>/.test(html), "anaiya: the opening line renders as strong text inside its wrapper");
+    ok(/<strong[^>]*>federalism at the Centre!<\/strong>/.test(html), "anaiya: the closing line renders as strong text");
+    // The payload is untouched: the delimiters are still there, byte-exact.
+    ok((els[openIdx] as { text: string }).text.startsWith("**"), "anaiya: the payload still opens with ** verbatim");
+    ok((els[closeIdx] as { text: string }).text.endsWith("**"), "anaiya: the payload still closes with ** verbatim");
   }
+
+  // (7) A span must NEVER cross a boundary. Rendering the whole layer must not leave the rest of the
+  //     poem emphasised, and the run-scoped pairing is what guarantees it.
+  {
+    for (const w of works) {
+      for (const layer of ["tamil", "english"] as const) {
+        const html = render(w.poem[layer].elements, layer === "tamil");
+        const lines = w.poem[layer].elements.filter((e) => e.kind === "line").length;
+        eq((html.match(/<span class="block/g) ?? []).length, lines, `${w.slug}/${layer}: one wrapper per source line, whole poem`);
+        const strongs = (html.match(/<strong/g) ?? []).length;
+        ok(strongs <= 4, `${w.slug}/${layer}: emphasis stays bounded (${strongs} <strong>), not leaked across the poem`);
+      }
+    }
+  }
+}
+
+// ── 10c. A work with no approved English title publishes none ────────────────────────────────────
+// The frozen release for one work declares no English title and its SOURCE_MAP says the batch
+// translates the poem body only unless one is separately approved. `title.en` therefore falls back
+// to the canonical Tamil title, and every surface that would otherwise present a translated title
+// must suppress the duplicate rather than render the Tamil title as its own translation.
+{
+  const REJECTED = "The Lay of the Southern King";
+  const noTitle = works.filter((w) => w.poem.title.en === w.poem.title.ta);
+  eq(noTitle.map((w) => w.slug), ["thennan-kathai"], "exactly one work publishes no English title");
+
+  for (const w of works) {
+    const p = sourcePages.get(w.slug)!;
+    const hasTitle = w.poem.title.en !== w.poem.title.ta;
+    // The provenance page's secondary title and Work row show the English title only where one exists.
+    const workRow = `<span class="font-tamil" lang="ta">${w.poem.title.ta}</span> · ${w.poem.title.en}`;
+    eq(p.ta.includes(workRow), hasTitle, `${w.slug}: the Work row pairs both titles only where both exist`);
+    // The rejected label must appear on no page, in either language, for any work.
+    ok(!p.ta.includes(REJECTED) && !p.en.includes(REJECTED), `${w.slug}: the rejected label is absent from the provenance page`);
+  }
+
+  // The reader shows no duplicated secondary title, and the catalogue card shows no invented one.
+  for (const w of works) {
+    const hasTitle = w.poem.title.en !== w.poem.title.ta;
+    const reader = renderToStaticMarkup(
+      createElement("div", null, renderElements(w.poem.tamil.elements.slice(0, 1) as never, true)),
+    );
+    void reader;
+    const home = renderToStaticMarkup(createElement(LibraryHome));
+    const entry = publishedWorks().find((x) => x.slug === w.slug)!;
+    ok(home.includes(entry.titleTa), `${w.slug}: the catalogue card shows the canonical Tamil title`);
+    if (!hasTitle) {
+      // The English line would be the Tamil title again — it must not be emitted twice on the card.
+      const card = home.slice(home.indexOf(entry.titleTa), home.indexOf(entry.titleTa) + 900);
+      eq((card.match(new RegExp(entry.titleTa.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) ?? []).length, 1, `${w.slug}: the card renders the title once, not as its own translation`);
+    }
+    ok(!home.includes(REJECTED), `${w.slug}: the rejected label is absent from the catalogue`);
+  }
+
+  // The provenance page states the source status explicitly, in both languages.
+  {
+    const w = noTitle[0];
+    const p = sourcePages.get(w.slug)!;
+    ok(typeof w.prov.source.englishTitleNote === "string", `${w.slug}: an englishTitleNote is recorded`);
+    ok(p.en.includes("none approved upstream"), `${w.slug}: the English page states no title is approved upstream`);
+    ok(p.ta.includes("மேலோட்டமாக அங்கீகரிக்கப்படவில்லை"), `${w.slug}: the Tamil page states the same`);
+    const note = esc(w.prov.source.englishTitleNote!);
+    ok(p.en.includes(note) && p.ta.includes(note), `${w.slug}: the full note is rendered in both languages`);
+    ok(/RELEASE-COMPLETE/.test(w.prov.source.englishTitleNote!), `${w.slug}: the note says the TRANSLATION is release-complete, only the title unapproved`);
+    ok(/replaces this fallback/.test(w.prov.source.englishTitleNote!), `${w.slug}: the note says an approved title can replace the fallback`);
+    ok(w.poem.factsNotStated.includes("english-title"), `${w.slug}: english-title is named among the unstated facts`);
+  }
+
+  // And nothing anywhere in the published data carries the rejected label.
+  ok(!JSON.stringify(works).includes(REJECTED), "the rejected label is absent from every payload");
 }
 
 // ── 11. The BUILT sitemap: two URLs per poem, no duplicates ──────────────────────────────────────

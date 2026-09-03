@@ -5,7 +5,7 @@
  "sourceCommit": "969823195ea8943a67fad4286ab1bc7f1c876d56",
  "source": {
   "titleTa": "தென்னவன் காதை",
-  "titleEn": "The Lay of the Southern King",
+  "titleEn": "தென்னவன் காதை",
   "authorTa": "மு. கருணாநிதி",
   "authorEn": "M. Karunanidhi",
   "scanFilename": "TVA_PRL_0007090_முரசொலி.pdf",
@@ -27,7 +27,7 @@
    "editionStatement": "முரசொலி-பொங்கல் மலர், 1956",
    "year": 1956
   },
-  "englishTitleNote": "The frozen release declares NO final English title for this work. Its released assembly carries only the document heading `தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md records that the translation batch translates the poem body only unless a final English title is separately approved; no such approval exists in the pinned tree. The English title shown in this library is therefore a project-supplied reading label, not a source-established title, and it is named in factsNotStated. It must be replaced by the approved title if one is established upstream.",
+  "englishTitleNote": "NO FINAL ENGLISH TITLE IS APPROVED UPSTREAM for this work. Its released assembly carries only the document heading `தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md records that the translation batch translates the poem body only unless a final English title is separately approved; no such approval exists in the pinned source tree. The English translation itself is RELEASE-COMPLETE — it is the TITLE that is unapproved, not the translation. This library therefore publishes no English title for the work: the canonical Tamil title தென்னவன் காதை stands in every title position, and no translated or transliterated title is invented to fill the slot. If an English title is approved upstream, it replaces this fallback.",
   "editorialExceptionNote": "One owner-directed editorial omission is in force on scan 151: a single caste-based slur is omitted without replacement, on the source repository owner's explicit instruction, and the omitted term is not reproduced anywhere in the archive or here. It is recorded under the work's editorialExceptions — deliberately NOT under lockedExclusions, which names non-verse matter that was never part of the poem. This exception is the opposite case: verse matter the owner directed be left out. No substitute epithet, transliteration, paraphrase or indirect reconstruction appears in either reading layer, and the omission is not restored downstream.",
   "lockedExclusions": [
    "pages 1–144 and 153–218 of the periodical: other items entirely; page 153 positively closes this work's range",

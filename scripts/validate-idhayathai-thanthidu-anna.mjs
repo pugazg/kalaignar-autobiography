@@ -382,7 +382,16 @@ function typographicEvidenceFor(from, to) {
   // the source lines on either side as silently continuous — asserting a continuation the source
   // does not establish. These assertions lock that regression out.
   {
-    const fn = reader.slice(reader.indexOf("function PageTransitionRule"), reader.indexOf("function inline("));
+    // The slice is anchored on the NEXT top-level declaration rather than on one function's name,
+    // and it fails closed if either anchor is missing. Anchoring on a specific neighbour is what
+    // broke this check once already: when that neighbour was removed, indexOf returned -1, the slice
+    // silently widened to most of the file, and the assertion started reading unrelated code.
+    const fnStart = reader.indexOf("function PageTransitionRule");
+    check("the page-transition marker component is present to check", fnStart >= 0);
+    const rest = reader.slice(fnStart + 1);
+    const nextDecl = rest.search(/\n(?:export )?(?:function|const|type) /);
+    check("the marker component's extent can be determined", nextDecl >= 0);
+    const fn = nextDecl >= 0 ? rest.slice(0, nextDecl) : "";
     check("unresolved page-transition marker is NOT marked data-print=\"hide\"", !fn.includes('data-print="hide"'), "the marker would be deleted in print");
     check("unresolved page-transition marker carries its print class", fn.includes("poem-page-transition"));
     check("unresolved page-transition marker carries the source scan in its label", /source scan \$\{toScan\}/.test(fn) && /மூல ஸ்கேன் \$\{toScan\}/.test(fn));

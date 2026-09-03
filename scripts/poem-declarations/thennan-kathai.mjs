@@ -1,4 +1,4 @@
-// தென்னவன் காதை / "The Lay of the Southern King" — standalone poem declaration.
+// தென்னவன் காதை — standalone poem declaration.
 //
 // Published in முரசொலி-பொங்கல் மலர், 1956 — the only one of the four standalone works whose pinned
 // archive states a publication and a year in its own prose, so it is the only one that carries a
@@ -24,14 +24,24 @@ const POEM_SCANS = Array.from({ length: 8 }, (_, i) => 145 + i); // 145 … 152
 export default {
   slug: SLUG,
   poemScans: POEM_SCANS,
-  // UNRESOLVED UPSTREAM. Unlike the other three standalone poems, this work's released assembly
-  // declares NO final English title: its only heading is the document title
-  // `# தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md states that the batch
-  // "translates poem body only unless a final English title is separately approved". No such
-  // approval exists in the frozen tree. The English below is therefore a PROJECT-SUPPLIED READING
-  // LABEL, not a source-established title, and it is recorded as such in factsNotStated and in
-  // provenance.englishTitleNote rather than presented as something the archive says.
-  title: { ta: "தென்னவன் காதை", en: "The Lay of the Southern King" },
+  // NO APPROVED ENGLISH TITLE EXISTS UPSTREAM, so none is published.
+  //
+  // Unlike the other three standalone poems, this work's released assembly declares no English
+  // title: its only heading is the document heading `# தென்னவன் காதை — English Translation`, and
+  // translations/en/SOURCE_MAP.md records that the batch "translates poem body only unless a final
+  // English title is separately approved". No such approval exists in the frozen tree.
+  //
+  // `title.en` therefore falls back to the CANONICAL TAMIL TITLE rather than to a translation this
+  // project would have had to invent. A note calling an invented title "project-supplied" does not
+  // make the title surfaces truthful — the reader's secondary title, the share text, the catalogue
+  // card, the OpenGraph and Twitter metadata all present `title.en` as the work's English title,
+  // unqualified. Showing the canonical Tamil title in an English slot is the honest reading of a
+  // work whose English title is simply not established, and the UI suppresses the duplicate so it
+  // never renders as a translation of itself.
+  //
+  // This is a FALLBACK, not a decision: `english-title` stays in factsNotStated and
+  // provenance.englishTitleNote states the position, so an approved title can replace it later.
+  title: { ta: "தென்னவன் காதை", en: "தென்னவன் காதை" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },
 
   scan: {
@@ -154,7 +164,7 @@ export default {
     // ("from a printed periodical") produced "Source facts (the from a printed periodical)".
     sourceTypeLabel: { ta: "அச்சிட்ட இதழ்", en: "printed periodical" },
     englishTitleNote:
-      "The frozen release declares NO final English title for this work. Its released assembly carries only the document heading `தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md records that the translation batch translates the poem body only unless a final English title is separately approved; no such approval exists in the pinned tree. The English title shown in this library is therefore a project-supplied reading label, not a source-established title, and it is named in factsNotStated. It must be replaced by the approved title if one is established upstream.",
+      "NO FINAL ENGLISH TITLE IS APPROVED UPSTREAM for this work. Its released assembly carries only the document heading `தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md records that the translation batch translates the poem body only unless a final English title is separately approved; no such approval exists in the pinned source tree. The English translation itself is RELEASE-COMPLETE — it is the TITLE that is unapproved, not the translation. This library therefore publishes no English title for the work: the canonical Tamil title தென்னவன் காதை stands in every title position, and no translated or transliterated title is invented to fill the slot. If an English title is approved upstream, it replaces this fallback.",
     publicationEstablished: {
       publicationTa: "முரசொலி-பொங்கல் மலர்",
       editionStatement: "முரசொலி-பொங்கல் மலர், 1956",

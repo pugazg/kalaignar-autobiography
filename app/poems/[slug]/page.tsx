@@ -21,7 +21,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const p = loadPoem(params.slug);
   if (!p) return { title: "Poem — கவிதை | Kalaignar Digital Library" };
-  const title = `${p.title.ta} — ${p.title.en} | Kalaignar Digital Library`;
+  // Where no English title is approved upstream, `title.en` falls back to the canonical Tamil
+  // title; pairing it with itself would both read as a translation and publish a title the source
+  // never approved. The metadata then carries the canonical Tamil title alone.
+  const bilingual = p.title.en !== p.title.ta;
+  const title = bilingual ? `${p.title.ta} — ${p.title.en} | Kalaignar Digital Library` : `${p.title.ta} | Kalaignar Digital Library`;
 
   // SEO is built ONLY from source-established facts, and it is DERIVED rather than written, because
   // a literal here becomes a claim about every poem on the shelf. Of the four standalone poems only
@@ -42,16 +46,17 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   // The description NEVER converts a context date into a publication date, and it states a
   // publication only where the source establishes one — three of the four establish none.
   const published = p.editionStatement ? `, published in ${p.editionStatement}` : "";
+  const lead = bilingual ? p.title.en : p.title.ta;
   const opening = occasionEn
-    ? `${p.title.en} — a poem by Kalaignar M. Karunanidhi: ${occasionEn}, offered${where}${when}.`
-    : `${p.title.en} — a poem by Kalaignar M. Karunanidhi${published}.`;
+    ? `${lead} — a poem by Kalaignar M. Karunanidhi: ${occasionEn}, offered${where}${when}.`
+    : `${lead} — a poem by Kalaignar M. Karunanidhi${published}.`;
 
   // Claims stay inside the evidence: source LINEATION is preserved exactly, and stanza gaps are
   // preserved where the source establishes them (within a printed page). The description does not
   // claim complete "stanza structure", because the printed stanza relationship across the physical
   // page transitions is not established by the source.
   const description = `${opening} The verified Tamil source text with a release-complete English translation, source lineation preserved line for line.`;
-  return { title, description, openGraph: { title, description }, twitter: { title: p.title.en, description } };
+  return { title, description, openGraph: { title, description }, twitter: { title: lead, description } };
 }
 
 export default function PoemPage({ params }: { params: { slug: string } }) {

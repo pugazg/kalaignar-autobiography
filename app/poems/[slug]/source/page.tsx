@@ -37,7 +37,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     "rights",
   ];
   return {
-    title: `Source & provenance — ${s.titleTa} / ${s.titleEn} | Kalaignar Digital Library`,
+    // Same rule as the reader route: no invented English title, and no title paired with itself.
+    title:
+      s.titleEn !== s.titleTa
+        ? `Source & provenance — ${s.titleTa} / ${s.titleEn} | Kalaignar Digital Library`
+        : `Source & provenance — ${s.titleTa} | Kalaignar Digital Library`,
     description: `Provenance for the poem: ${parts.join(", ")}.`,
   };
 }

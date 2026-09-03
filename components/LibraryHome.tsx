@@ -71,7 +71,12 @@ function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
       <span className="mt-2 font-tamil text-[15px] font-medium" lang="ta">
         <span className={a.title}>{work.titleTa}</span>
       </span>
-      <span className="mt-0.5 text-xs text-ink/50 dark:text-night-text/50">{work.titleEn}</span>
+      {/* The English line is a TRANSLATED title. Where no English title is approved upstream, the
+          catalogue's English slot falls back to the canonical Tamil title rather than to an invented
+          translation, and repeating it here would render that title as its own translation. */}
+      {work.titleEn !== work.titleTa && (
+        <span className="mt-0.5 text-xs text-ink/50 dark:text-night-text/50">{work.titleEn}</span>
+      )}
       {desc && (
         <span className="mt-1.5 text-xs leading-snug text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : undefined}>
           {desc}

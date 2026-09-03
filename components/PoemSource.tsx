@@ -67,7 +67,10 @@ export default function PoemSource({
           </div>
           <h1 className="mt-5 font-display text-3xl font-medium tracking-tight">{ta ? "மூலமும் சான்றும்" : "Source & provenance"}</h1>
           <p className="mt-1 font-tamil text-lg text-brass" lang="ta">{s.titleTa}</p>
-          <p className="font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</p>
+          {/* Only where a translated title actually exists — see englishTitleNote below. */}
+          {s.titleEn !== s.titleTa && (
+            <p className="font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</p>
+          )}
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
             {/* "booklet" was this work's form, not every work's. A 1955 பொங்கல் மலர் is an annual
                 issue; the label is the work's own where it states one, and generic otherwise. */}
@@ -83,8 +86,15 @@ export default function PoemSource({
         <Card icon={Landmark} title={ta ? `மூல உண்மைகள் (${sourceTypeTa})` : `Source facts (the ${sourceTypeEn})`}>
           <dl className="mt-3">
             <Row label={ta ? "படைப்பு" : "Work"}>
-              <span className="font-tamil" lang="ta">{s.titleTa}</span> · {s.titleEn}
+              <span className="font-tamil" lang="ta">{s.titleTa}</span>
+              {s.titleEn !== s.titleTa && <> · {s.titleEn}</>}
             </Row>
+            {s.englishTitleNote && (
+              <Row label={ta ? "ஆங்கிலத் தலைப்பு" : "English title"}>
+                <span className="font-medium">{ta ? "மேலோட்டமாக அங்கீகரிக்கப்படவில்லை" : "none approved upstream"}</span>
+                <span className="mt-1 block text-xs leading-relaxed text-ink/60 dark:text-night-text/60">{s.englishTitleNote}</span>
+              </Row>
+            )}
             <Row label={ta ? "ஆசிரியர்" : "Author"}>
               <span className="font-tamil" lang="ta">{s.authorTa}</span> · {s.authorEn}
             </Row>
