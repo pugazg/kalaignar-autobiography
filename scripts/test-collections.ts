@@ -235,6 +235,10 @@ const collectionCardSrc = homeSrc.slice(homeSrc.indexOf("function CollectionCard
 
 ok(collectionCardSrc.includes("dark:focus-visible:ring-night-text/70"), "the collection card overrides its dark focus ring");
 ok(!collectionCardSrc.includes("dark:group-hover:text-marina-light"), "the collection card title has no marina-light dark hover (3.8:1)");
+// POSITIVE, not just negative. Removing the bad class is not the same as stating a good one:
+// `group-hover:text-marina` on its own applies in BOTH themes and would hover the dark title down to
+// #0E5D63 on a #10171E card. The dark half has to be present, so it is asserted.
+ok(collectionCardSrc.includes("dark:group-hover:text-night-text"), "the collection card title states an explicit dark hover");
 ok(!collectionCardSrc.includes("a.title"), "the collection card does not reuse accentFor()'s shared hover");
 ok(landingSrc.includes("dark:focus-visible:ring-night-text/70"), "the collection page overrides its dark focus rings");
 eq(
@@ -243,6 +247,12 @@ eq(
   "both the back link and the member rows carry the dark focus override",
 );
 ok(!landingSrc.includes("dark:group-hover:text-marina-light"), "member titles have no marina-light dark hover");
+ok(landingSrc.includes("dark:group-hover:text-night-text"), "member titles state an explicit dark hover");
+// An unqualified marina hover with no dark counterpart is the exact defect this pair guards against.
+ok(
+  !/group-hover:text-marina(?!-)(?![^"]*dark:group-hover:)/.test(landingSrc),
+  "no member title hovers to marina without a dark counterpart",
+);
 ok(landingSrc.includes("dark:hover:text-night-text"), "the back link states an accessible dark hover");
 ok(/<span className="text-ink\/65 dark:text-night-text\/65">Contents<\/span>/.test(landingSrc), "the Contents label states an accessible token");
 ok(!/text-ink\/40|dark:text-night-text\/40/.test(landingSrc), "no /40 text remains on the collection page");

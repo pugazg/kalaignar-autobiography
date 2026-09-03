@@ -137,7 +137,7 @@ export default function CollectionLanding({
                 )}
                 <span className="min-w-0 flex-1">
                   <span
-                    className="block font-tamil text-[15px] font-medium group-hover:text-marina"
+                    className="block font-tamil text-[15px] font-medium group-hover:text-marina dark:group-hover:text-night-text"
                     lang="ta"
                   >
                     {m.titleTa}

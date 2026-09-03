@@ -117,10 +117,16 @@ function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta:
       </span>
       {/* NOT `a.title`. accentFor()'s hover is `dark:group-hover:text-marina-light`, and #1B7F87 on
           this card's dark surface is 3.8:1 — under 4.5:1 for a title this size. accentFor() is shared
-          with all 71 work cards and is not this PR's to change, so the hover is written locally: marina
-          in light (7.1:1), and in dark the title stays at full night-text while the border carries the
-          interaction cue. */}
-      <span className="mt-2 font-tamil text-[17px] font-medium group-hover:text-marina" lang="ta">
+          with all 71 work cards and is not this PR's to change, so the hover is written locally.
+
+          BOTH HALVES ARE STATED. `group-hover:text-marina` alone is not a light-mode rule — it applies
+          in dark too, where it would override the inherited night-text and hover the title down to
+          #0E5D63 on a #10171E card. The dark half is therefore explicit: marina in light (7.10:1),
+          full night-text in dark (14.66:1), with the border hover carrying the cue in both. */}
+      <span
+        className="mt-2 font-tamil text-[17px] font-medium group-hover:text-marina dark:group-hover:text-night-text"
+        lang="ta"
+      >
         {collection.titleTa}
       </span>
       <span className="mt-0.5 text-xs text-ink/65 dark:text-night-text/65">{collection.titleEn}</span>
