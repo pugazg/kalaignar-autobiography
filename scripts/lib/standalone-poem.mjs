@@ -178,24 +178,59 @@ function auditTransitions(workDir, decl, batchEdge) {
   return rows;
 }
 
-// ── Inline Markdown markup in the released English (DISCLOSED, NOT REWRITTEN) ────────────────────
-// The Tamil assemblies are literal text. The released English assemblies are Markdown, and some of
-// them use inline emphasis INSIDE the verse — `*tangu sani vēl*` in one work, `**…**` in another,
-// one of which even runs across a line break. Those delimiters are carried into the reading layer
-// exactly as released, which means a reader currently sees the asterisks.
+// ── Inline Markdown markup in the released English (MEASURED, NOT REWRITTEN) ────────────────────
+// The Tamil assemblies are literal text. The released English assemblies are Markdown, and some use
+// inline emphasis inside the verse — `*tangu sani vēl*` in one work, `**…**` in another. Those
+// delimiters are carried into the payload EXACTLY as released, byte for byte, and nothing here
+// rewrites them.
 //
-// That is a real presentation defect, and it is deliberately NOT repaired here. Repairing it means
-// deciding how emphasis renders across the whole Poetry shelf and rewriting the text of a work whose
-// payload is already published — neither is in this scope, and doing it silently inside a change
-// that must prove byte-identity would hide it. So the engine MEASURES it instead: `markupCensus`
-// counts the released verse lines carrying inline markup, per layer, and the count is asserted by
-// the validator so it can never grow unnoticed while the question is open. Nothing is written into
-// the payload, so a work imported before this census existed is byte-identical to one imported now.
-const INLINE_MARKUP = /\*\*|(?<!\*)\*(?!\*)|`|\[[^\]]*\]\([^)]*\)/;
+// What that means for a reader is a separate question from what the payload holds, and the two must
+// not be conflated. components/PoemReader.tsx renders each line through `inline()`, which converts
+// balanced same-line `**…**` to <strong> and `*…*` to <em>. So for balanced emphasis the delimiters
+// are markup the reader resolves, not characters a reader sees.
+//
+// `markupCensus` is therefore a DATA-LAYER census: it counts released verse lines whose text
+// contains Markdown-like markers, and it says nothing on its own about visible output. It splits
+// them because only one half raises a question:
+//
+//   balanced  — markers the line-local renderer resolves into <em>/<strong>. No reader sees them.
+//   leftover  — `*` characters left outside every balanced match on that line. These reach the
+//               reader as literal characters. That is CORRECT for a genuine literal (a lone `*`
+//               standing as a mark in the source) and is the visible residue of an emphasis that
+//               opens on one line and closes on another, which a per-line renderer cannot pair.
+//
+// The counts are asserted by the tests so neither category can grow unnoticed, and any leftover is
+// reported rather than repaired: rewriting released text is not this import's decision to make.
+const BALANCED = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+const OTHER_MARKUP = /`|\[[^\]]*\]\([^)]*\)/;
 
 export function markupCensus(built) {
-  const count = (layer) => layer.elements.filter((e) => e.kind === "line" && INLINE_MARKUP.test(e.text)).length;
-  return { tamil: count(built.ta), english: count(built.en) };
+  const tally = (layer) => {
+    let balanced = 0;
+    let leftover = 0;
+    const leftoverLines = [];
+    for (const e of layer.elements) {
+      if (e.kind !== "line") continue;
+      const t = e.text;
+      if (!t.includes("*") && !OTHER_MARKUP.test(t)) continue;
+      const spans = [];
+      BALANCED.lastIndex = 0;
+      let m;
+      while ((m = BALANCED.exec(t)) !== null) spans.push([m.index, m.index + m[0].length]);
+      if (spans.length) balanced++;
+      let loose = 0;
+      for (let i = 0; i < t.length; i++) {
+        if (t[i] !== "*") continue;
+        if (!spans.some(([a, b]) => a <= i && i < b)) loose++;
+      }
+      if (loose) {
+        leftover++;
+        leftoverLines.push({ sourceScan: e.sourceScan, text: t });
+      }
+    }
+    return { balanced, leftover, leftoverLines };
+  };
+  return { tamil: tally(built.ta), english: tally(built.en) };
 }
 
 // ── Shared line construction ─────────────────────────────────────────────────────────────────────
@@ -593,6 +628,7 @@ export function buildStandalonePoem({ decl, srcRepo, srcCommit }) {
       publicationEstablished: decl.provenance.publicationEstablished,
       publicationNotEstablished: decl.provenance.publicationNotEstablished,
       forewordDateNote: decl.provenance.forewordDateNote,
+      englishTitleNote: decl.provenance.englishTitleNote,
       sourceHeadingNote: decl.provenance.sourceHeadingNote,
       editorialExceptionNote: decl.provenance.editorialExceptionNote,
       lockedExclusions: decl.provenance.lockedExclusions,
@@ -663,7 +699,11 @@ export function reportStandalonePoem(outDir, built) {
   console.log("  textual relation — continuation", txtCount("source-established-continuation"), "/ non-continuation", txtCount("source-established-non-continuation"), "/ not recorded", txtCount("not-specifically-recorded"));
   for (const t of TRANSITIONS) console.log(`   ${t.fromScan}->${t.toScan}  stanza=${t.stanzaRelation.padEnd(8)} textual=${t.textualRelation.padEnd(34)} evidence: stanza ${t.evidence.stanza.length} / textual ${t.evidence.textual.length}`);
   const census = markupCensus(built);
-  console.log("inline Markdown markup carried verbatim into verse — tamil", census.tamil, "/ english", census.english);
+  for (const [layer, c] of Object.entries(census)) {
+    if (!c.balanced && !c.leftover) continue;
+    console.log(`${layer} Markdown-marker census — ${c.balanced} line(s) with balanced emphasis the reader resolves, ${c.leftover} with leftover literal '*'`);
+    for (const l of c.leftoverLines) console.log(`    leftover on scan ${l.sourceScan}: ${JSON.stringify(l.text)}`);
+  }
   console.log("poem.json sha256:", sha256(readText(path.join(outDir, "poem.json"))));
   console.log("provenance.json sha256:", sha256(readText(path.join(outDir, "provenance.json"))));
 }

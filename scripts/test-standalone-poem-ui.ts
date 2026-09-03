@@ -191,27 +191,51 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
   }
 }
 
-// ── 5. The source TYPE is the source's own word, or a generic one — never another work's ─────────
+// ── 5. The source TYPE renders as COMPLETE, well-formed wording ──────────────────────────────────
+// `sourceTypeLabel` is a NOUN PHRASE naming the kind of printed source, because the page composes it
+// into running English: `Source facts (the ${label})` and `source facts (the ${label} / scan)`. P1
+// first shipped "from a printed periodical" here, which is a prepositional phrase, and produced
+// "Source facts (the from a printed periodical)" on two public pages.
+//
+// Asserting that the raw label "occurs somewhere" is exactly what failed to catch that — the label
+// did occur, inside broken wording. So the assertions below check the WHOLE composed string, and
+// separately check that the malformed shapes are absent.
 {
   for (const w of works) {
     const p = sourcePages.get(w.slug)!;
     const label = w.prov.source.sourceTypeLabel;
-    if (label) {
-      ok(p.ta.includes(label.ta), `${w.slug}: the source's own Tamil type word is rendered (${label.ta})`);
-      ok(p.en.includes(label.en), `${w.slug}: the source's own English type word is rendered (${label.en})`);
-    } else {
-      ok(p.ta.includes("அச்சிட்ட மூலம்"), `${w.slug}: the generic Tamil source-type word is rendered`);
-      ok(p.en.includes("printed source"), `${w.slug}: the generic English source-type word is rendered`);
+    const en = label?.en ?? "printed source";
+    const ta = label?.ta ?? "அச்சிட்ட மூலம்";
+    // The complete rendered heading and the complete rendered intro sentence, both languages.
+    ok(p.en.includes(`Source facts (the ${en})`), `${w.slug}: renders "Source facts (the ${en})"`);
+    ok(p.en.includes(`source facts (the ${en} / scan)`), `${w.slug}: renders the intro clause "(the ${en} / scan)"`);
+    ok(p.ta.includes(`மூல உண்மைகள் (${ta})`), `${w.slug}: renders "மூல உண்மைகள் (${ta})"`);
+    ok(p.ta.includes(`(${ta}/scan)`), `${w.slug}: renders the Tamil intro clause "(${ta}/scan)"`);
+    // A prepositional phrase in the label shows up as these shapes, in either language.
+    for (const bad of ["the from", "the a ", "the an ", "(the )"]) {
+      ok(!p.en.includes(bad), `${w.slug}: the English page contains no "${bad}"`);
     }
+    ok(!/\(\s*(இலிருந்து|இருந்து)/.test(p.ta), `${w.slug}: the Tamil label is not a postpositional phrase`);
     // The generic default must stay generic: a periodical is never called a booklet.
     ok(!p.en.includes("printed booklet") && !p.ta.includes("printed booklet"), `${w.slug}: no work is described as a booklet by default`);
   }
-  // The two periodical works say so; the two standalone booklets fall back to the generic word.
+  // Exactly the two periodical sources name their own type; the other two fall back to the generic
+  // noun phrase, and neither inherits the periodical label.
   eq(
     works.filter((w) => w.prov.source.sourceTypeLabel).map((w) => w.slug).sort(),
     ["marathi", "thennan-kathai"],
     "only the two periodical sources name their own type",
   );
+  for (const w of works.filter((x) => !x.prov.source.sourceTypeLabel)) {
+    const p = sourcePages.get(w.slug)!;
+    ok(!p.en.includes("printed periodical"), `${w.slug}: does not inherit the periodical label (English)`);
+    ok(!p.ta.includes("அச்சிட்ட இதழ்"), `${w.slug}: does not inherit the periodical label (Tamil)`);
+    ok(p.en.includes("Source facts (the printed source)"), `${w.slug}: renders the generic noun phrase`);
+  }
+  for (const w of works.filter((x) => x.prov.source.sourceTypeLabel)) {
+    eq(w.prov.source.sourceTypeLabel!.en, "printed periodical", `${w.slug}: English label is the noun phrase`);
+    eq(w.prov.source.sourceTypeLabel!.ta, "அச்சிட்ட இதழ்", `${w.slug}: Tamil label is the noun phrase`);
+  }
 }
 
 // ── 6. The editorial exception renders for exactly the one work that has one ─────────────────────
@@ -306,6 +330,120 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
     eq(entry.provenanceHref, `/poems/${w.slug}/source`, `${w.slug}: catalogue provenance href`);
     // `edition` is set on exactly the work whose source establishes one.
     eq(Boolean(entry.edition), Boolean(w.prov.source.publicationEstablished), `${w.slug}: catalogue edition iff publication established`);
+  }
+}
+
+// ── 10b. Markdown emphasis: what the READER sees, not what the payload holds ─────────────────────
+// These two are different questions and P1's first report conflated them, asserting that released
+// delimiters "are carried into the reading layer exactly as released, which means a reader currently
+// sees the asterisks". The payload half is true and deliberate — the text is byte-exact. The reader
+// half was false: PoemReader's `inline()` resolves balanced same-line `**…**` into <strong> and
+// `*…*` into <em>, so those delimiters never reach a reader.
+//
+// The claim was wrong because it was inferred from the JSON instead of measured on the rendered
+// output. So it is measured here, through the real `renderElements()` path, on real released lines.
+{
+  const byText = (w: (typeof works)[number], layer: "tamil" | "english", needle: string) =>
+    w.poem[layer].elements.filter((e) => e.kind === "line" && (e as { text: string }).text.includes(needle));
+  /** Render just the given elements through the reader's own renderer. */
+  const render = (els: unknown[], ta: boolean) =>
+    renderToStaticMarkup(createElement("div", null, renderElements(els as never, ta)));
+
+  // (1) An existing Idhayathai `*…*` term renders as <em>, with no delimiter left behind.
+  {
+    const w = works.find((x) => x.slug === "idhayathai-thanthidu-anna")!;
+    const els = byText(w, "english", "tangu sani");
+    eq(els.length, 1, "idhayathai: the *tangu sani vēl* line is present exactly once");
+    const html = render(els, false);
+    ok(html.includes("<em>tangu sani vēl</em>"), "idhayathai: *tangu sani vēl* renders as <em>");
+    ok(!html.includes("*"), "idhayathai: no asterisk survives into the rendered output");
+    // The payload itself is untouched — the delimiters are still in the data, byte-exact.
+    ok((els[0] as { text: string }).text.includes("*tangu sani vēl*"), "idhayathai: the payload still holds the delimiters verbatim");
+  }
+
+  // (2) Anaiya's italic work-title renders as <em>.
+  {
+    const w = works.find((x) => x.slug === "anaiya-vilakku-anna")!;
+    const els = byText(w, "english", "By the Riverbank");
+    eq(els.length, 1, "anaiya: the *By the Riverbank* line is present exactly once");
+    const html = render(els, false);
+    ok(html.includes("<em>By the Riverbank</em>"), "anaiya: *By the Riverbank* renders as <em>By the Riverbank</em>");
+    ok(!html.includes("*"), "anaiya: no asterisk survives on that line");
+  }
+
+  // (3) Anaiya's bold refrain renders as <strong>.
+  {
+    const w = works.find((x) => x.slug === "anaiya-vilakku-anna")!;
+    const els = byText(w, "english", "Kazhagam saranam gacchami");
+    eq(els.length, 1, "anaiya: the Kazhagam refrain line is present exactly once");
+    const html = render(els, false);
+    ok(/<strong[^>]*>Kazhagam saranam gacchami!<\/strong>/.test(html), "anaiya: **Kazhagam saranam gacchami!** renders as <strong>");
+    ok(!html.includes("*"), "anaiya: no asterisk survives on that line");
+  }
+
+  // (4) Marathi's genuinely literal standalone `*` stays literal and is not swallowed as emphasis.
+  //     The archive's own decorative separators are `★`; this is a different character carried
+  //     verbatim from the source, and a renderer that "cleaned it up" would delete source content.
+  {
+    const w = works.find((x) => x.slug === "marathi")!;
+    for (const layer of ["tamil", "english"] as const) {
+      const els = w.poem[layer].elements.filter((e) => e.kind === "line" && (e as { text: string }).text === "*");
+      eq(els.length, 1, `marathi/${layer}: the literal * line is present exactly once`);
+      const html = render(els, layer === "tamil");
+      ok(html.includes("*"), `marathi/${layer}: the literal * survives rendering`);
+      ok(!html.includes("<em>") && !html.includes("<strong"), `marathi/${layer}: the literal * is not read as emphasis`);
+    }
+  }
+
+  // (5) The census counts, pinned per category so neither can grow unnoticed. `balanced` is markup
+  //     the reader resolves; `leftover` is `*` the line-local renderer cannot pair — correct for a
+  //     literal, and the visible residue of an emphasis that opens on one line and closes on another.
+  const BAL = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+  const census = (w: (typeof works)[number], layer: "tamil" | "english") => {
+    let balanced = 0;
+    let leftover = 0;
+    for (const e of w.poem[layer].elements) {
+      if (e.kind !== "line") continue;
+      const t = (e as { text: string }).text;
+      if (!t.includes("*")) continue;
+      const spans: [number, number][] = [];
+      BAL.lastIndex = 0;
+      let m: RegExpExecArray | null;
+      while ((m = BAL.exec(t)) !== null) spans.push([m.index, m.index + m[0].length]);
+      if (spans.length) balanced++;
+      let loose = 0;
+      for (let i = 0; i < t.length; i++) if (t[i] === "*" && !spans.some(([a, b]) => a <= i && i < b)) loose++;
+      if (loose) leftover++;
+    }
+    return { balanced, leftover };
+  };
+  const EXPECTED: Record<string, { tamil: [number, number]; english: [number, number] }> = {
+    // slug: { layer: [balanced, leftover] }
+    "idhayathai-thanthidu-anna": { tamil: [0, 0], english: [22, 0] },
+    "anaiya-vilakku-anna": { tamil: [0, 0], english: [8, 2] },
+    marathi: { tamil: [0, 1], english: [0, 1] },
+    "thennan-kathai": { tamil: [0, 0], english: [0, 0] },
+  };
+  for (const w of works) {
+    for (const layer of ["tamil", "english"] as const) {
+      const [balanced, leftover] = EXPECTED[w.slug][layer];
+      eq(census(w, layer), { balanced, leftover }, `${w.slug}/${layer}: Markdown-marker census`);
+    }
+  }
+  // The ONLY leftover that is not a deliberate literal is one cross-line emphasis in Anaiya scan 17.
+  // It is reported, not repaired: pairing it needs a model for emphasis spanning a line break, and
+  // rewriting released text is not this import's decision.
+  {
+    const w = works.find((x) => x.slug === "anaiya-vilakku-anna")!;
+    const opens = byText(w, "english", "**Autonomy for the states;");
+    const closes = byText(w, "english", "federalism at the Centre!**");
+    eq(opens.length, 1, "anaiya: the cross-line emphasis opens on exactly one line");
+    eq(closes.length, 1, "anaiya: the cross-line emphasis closes on exactly one line");
+    eq((opens[0] as { sourceScan: number }).sourceScan, 17, "anaiya: it opens on scan 17");
+    eq((closes[0] as { sourceScan: number }).sourceScan, 17, "anaiya: it closes on the same scan");
+    // Both are on the same scan, so this is a LINE-break pair, not a page-break pair.
+    const html = render([...opens, ...closes], false);
+    ok(html.includes("**"), "anaiya: the unpaired delimiters are visible, which is what makes this reportable");
   }
 }
 

@@ -285,6 +285,68 @@ for (const slug of [EXISTING_SLUG, "marathi", "thennan-kathai"]) {
   eq(`${slug}: no printed source heading is claimed`, payload[slug].poem.tamil.sourceHeadings, undefined);
 }
 
+// ── 10b. The published English title IS the frozen release's title ──────────────────────────────
+// A translation layer is release-cleared under a title, and changing that title downstream is a
+// silent retitling of someone else's cleared work — it does not look like an error, it looks like a
+// choice. This import made exactly that mistake once, publishing "Anna, the Unquenchable Lamp" for a
+// release that says "Anna, the Inextinguishable Lamp", so the title is now pinned to the frozen
+// bytes rather than to a constant in this file, in BOTH directions:
+//
+//   * where the release declares a title — `english_title:` frontmatter, an H1, or both — the
+//     payload and the catalogue must equal it EXACTLY. Nothing is normalised, trimmed of its comma,
+//     case-folded or reinterpreted; a synonym is a mismatch.
+//   * where the release declares NONE, the work must SAY it declares none. Otherwise a
+//     project-supplied reading label would be indistinguishable from a source-established title.
+for (const slug of ALL_SLUGS) {
+  const asmPath = path.join(SRC_REPO, "poems", slug, "translations/en", `${slug}-en.md`);
+  const asm = readText(asmPath);
+  const fm = /^english_title:\s*"([^"]*)"\s*$/m.exec(asm);
+  // The work-title H1 is the first H1 that is NOT the document heading (which names the file, e.g.
+  // "<Tamil title> — English Translation"), so a document heading is never mistaken for a title.
+  const h1s = [];
+  const h1re = /^#\s+(.*\S)\s*$/gm;
+  let hm;
+  while ((hm = h1re.exec(asm)) !== null) h1s.push(hm[1]);
+  const workH1 = h1s.find((h) => !/English Translation$/.test(h));
+  const declared = fm?.[1] ?? workH1 ?? null;
+
+  const poemTitle = payload[slug].poem.title.en;
+  const provTitle = payload[slug].prov.source.titleEn;
+  if (declared !== null) {
+    check(`${slug}: the frozen release declares an English title`, declared.length > 0);
+    eq(`${slug}: poem.json English title is the released title`, poemTitle, declared);
+    eq(`${slug}: provenance English title is the released title`, provTitle, declared);
+    check(`${slug}: the catalogue English title is the released title`, libraryTs.includes(`titleEn: "${declared}",`));
+    // Both declarations, where the release carries both, must agree with each other.
+    if (fm && workH1) eq(`${slug}: the release's frontmatter and H1 titles agree`, fm[1], workH1);
+    // And the title must be BYTE-equal, not merely similar — a normalisation would hide a retitling.
+    check(`${slug}: the released title appears verbatim in the assembly`, asm.includes(declared));
+    eq(`${slug}: no unapproved-title note where a title IS declared`, payload[slug].prov.source.englishTitleNote, undefined);
+    check(`${slug}: the English title is not named as an unstated fact`, !payload[slug].poem.factsNotStated.includes("english-title"));
+  } else {
+    // No approved title upstream. The label shown must be disclosed as project-supplied.
+    check(`${slug}: the release declares no English title, and the work says so`, payload[slug].poem.factsNotStated.includes("english-title"));
+    check(`${slug}: an unapproved-title note is recorded`, typeof payload[slug].prov.source.englishTitleNote === "string");
+    check(
+      `${slug}: the note states the label is project-supplied, not source-established`,
+      /project-supplied reading label/.test(payload[slug].prov.source.englishTitleNote ?? ""),
+    );
+    // Fail closed against a future "approval" invented downstream: the label must NOT appear in the
+    // pinned source, because if it did, it would be declared and this branch would be wrong.
+    check(`${slug}: the reading label is not present in the frozen release`, !asm.includes(poemTitle));
+  }
+}
+// The one work this rule was written for must actually be exercised by it.
+eq(
+  "anaiya-vilakku-anna publishes the frozen release's English title",
+  payload["anaiya-vilakku-anna"].poem.title.en,
+  "Anna, the Inextinguishable Lamp",
+);
+check(
+  "the superseded invented title appears nowhere in the implementation",
+  !libraryTs.includes("Unquenchable") && !JSON.stringify(payload).includes("Unquenchable"),
+);
+
 // ── 11–12. Routes: no collision, exactly one landing and one /source per work ────────────────────
 {
   const hrefs = ALL_SLUGS.map((s) => `/poems/${s}`);

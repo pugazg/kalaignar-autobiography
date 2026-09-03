@@ -993,7 +993,7 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     id: "anaiya-vilakku-anna",
     slug: "anaiya-vilakku-anna",
     titleTa: "அணையா விளக்கு அண்ணா",
-    titleEn: "Anna, the Unquenchable Lamp",
+    titleEn: "Anna, the Inextinguishable Lamp",
     shelf: "poetry",
     subtype: "poem",
     readerStructure: "poem",

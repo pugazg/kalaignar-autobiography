@@ -1,8 +1,20 @@
 // Poems (கவிதைகள்) — Digital Library Phase 4. Source-faithful poetry readers built from the
 // authoritative poem source repository (pugazg/kalaignar-poems). Data-driven like the other
 // Reading Rooms: each poem is vendored to public/data/poems/<slug>/{poem.json, provenance.json}
-// by a deterministic, work-specific importer (scripts/import-<slug>.mjs) that pins the exact
-// source commit. Runtime never calls GitHub and the source PDF is never vendored.
+// by a deterministic importer that pins the exact source commit. Runtime never calls GitHub and the
+// source PDF is never vendored.
+//
+// Since Wave 4 P1 that importer is ONE SHARED ENGINE rather than a script per work, because the four
+// standalone poems' source trees are genuinely heterogeneous — two Tamil assembly conventions, three
+// batch-filename schemes, per-batch verse boundaries, and two works whose released English carries no
+// hidden markers at all. Copies of one script would have encoded that heterogeneity once per work:
+//
+//   scripts/lib/standalone-poem.mjs        the engine — everything algorithmic
+//   scripts/poem-declarations/<slug>.mjs   one declaration per work — everything its source states
+//   scripts/import-standalone-poem.mjs     the CLI: <clone> <source-commit> <slug>
+//
+// The engine supplies no default for any per-work fact, because a default is how one work's evidence
+// silently becomes another work's assertion; it fails closed on anything it was not told.
 //
 // A POEM IS NOT SPEECH PROSE. The governing Digital Library rule — ONE coherent library, MULTIPLE
 // source-faithful reader types — means poetry gets its own reader and its own narrow model rather
@@ -295,6 +307,16 @@ export type PoemProvenance = {
      * a 1955 பொங்கல் மலர் a booklet.
      */
     sourceTypeLabel?: PoemBilingualText;
+    /**
+     * Present when the frozen release does NOT declare a final English title for the work.
+     *
+     * Three of the four standalone poems have their English title stated in the released assembly —
+     * in its `english_title` frontmatter, its H1, or both — and the validator pins the published
+     * title to those bytes so it can never drift. Where the release declares none, the English shown
+     * is a project-supplied reading label pending upstream approval, and saying so is the difference
+     * between a label and a claim.
+     */
+    englishTitleNote?: string;
     /** How the archive establishes a structural heading the source prints inside the poem. */
     sourceHeadingNote?: string;
     /** How a documented editorial exception is recorded, and why it is not a locked exclusion. */

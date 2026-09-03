@@ -24,6 +24,13 @@ const POEM_SCANS = Array.from({ length: 8 }, (_, i) => 145 + i); // 145 … 152
 export default {
   slug: SLUG,
   poemScans: POEM_SCANS,
+  // UNRESOLVED UPSTREAM. Unlike the other three standalone poems, this work's released assembly
+  // declares NO final English title: its only heading is the document title
+  // `# தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md states that the batch
+  // "translates poem body only unless a final English title is separately approved". No such
+  // approval exists in the frozen tree. The English below is therefore a PROJECT-SUPPLIED READING
+  // LABEL, not a source-established title, and it is recorded as such in factsNotStated and in
+  // provenance.englishTitleNote rather than presented as something the archive says.
   title: { ta: "தென்னவன் காதை", en: "The Lay of the Southern King" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },
 
@@ -103,7 +110,7 @@ export default {
   sourceContext: undefined,
   publicationYear: 1956,
   editionStatement: "முரசொலி-பொங்கல் மலர், 1956",
-  factsNotStated: ["printed-page-numbers", "cross-page-stanza-relationships"],
+  factsNotStated: ["english-title", "printed-page-numbers", "cross-page-stanza-relationships"],
 
   // Recorded on the WORK, so it travels with the reading layers rather than only with the archival
   // record. The omitted term is not reproduced, reconstructed or substituted anywhere.
@@ -142,7 +149,12 @@ export default {
     printedPageMapping: "none — the page map records no visible printed page number on any of the eight poem pages",
     unnumberedScanNote:
       "No poem page carries a visible printed page number: the page map's 'Visible printed page' column records `—` for all eight. The numbers 145–152 are PDF page positions inside the periodical and are never presented as printed page numbers.",
-    sourceTypeLabel: { ta: "அச்சிட்ட இதழிலிருந்து", en: "from a printed periodical" },
+    // A NOUN PHRASE naming the KIND of printed source, because the source page composes it as
+    // `the ${sourceTypeEn}` and `Source facts (the ${sourceTypeEn})`. A prepositional phrase here
+    // ("from a printed periodical") produced "Source facts (the from a printed periodical)".
+    sourceTypeLabel: { ta: "அச்சிட்ட இதழ்", en: "printed periodical" },
+    englishTitleNote:
+      "The frozen release declares NO final English title for this work. Its released assembly carries only the document heading `தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md records that the translation batch translates the poem body only unless a final English title is separately approved; no such approval exists in the pinned tree. The English title shown in this library is therefore a project-supplied reading label, not a source-established title, and it is named in factsNotStated. It must be replaced by the approved title if one is established upstream.",
     publicationEstablished: {
       publicationTa: "முரசொலி-பொங்கல் மலர்",
       editionStatement: "முரசொலி-பொங்கல் மலர், 1956",

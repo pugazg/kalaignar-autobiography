@@ -19,14 +19,15 @@
   "unnumberedScanNote": "No poem page carries a visible printed page number: the page map's 'Visible printed page' column records `—` for all eight. The numbers 145–152 are PDF page positions inside the periodical and are never presented as printed page numbers.",
   "sourcePdfCommitted": false,
   "sourceTypeLabel": {
-   "ta": "அச்சிட்ட இதழிலிருந்து",
-   "en": "from a printed periodical"
+   "ta": "அச்சிட்ட இதழ்",
+   "en": "printed periodical"
   },
   "publicationEstablished": {
    "publicationTa": "முரசொலி-பொங்கல் மலர்",
    "editionStatement": "முரசொலி-பொங்கல் மலர், 1956",
    "year": 1956
   },
+  "englishTitleNote": "The frozen release declares NO final English title for this work. Its released assembly carries only the document heading `தென்னவன் காதை — English Translation`, and translations/en/SOURCE_MAP.md records that the translation batch translates the poem body only unless a final English title is separately approved; no such approval exists in the pinned tree. The English title shown in this library is therefore a project-supplied reading label, not a source-established title, and it is named in factsNotStated. It must be replaced by the approved title if one is established upstream.",
   "editorialExceptionNote": "One owner-directed editorial omission is in force on scan 151: a single caste-based slur is omitted without replacement, on the source repository owner's explicit instruction, and the omitted term is not reproduced anywhere in the archive or here. It is recorded under the work's editorialExceptions — deliberately NOT under lockedExclusions, which names non-verse matter that was never part of the poem. This exception is the opposite case: verse matter the owner directed be left out. No substitute epithet, transliteration, paraphrase or indirect reconstruction appears in either reading layer, and the omission is not restored downstream.",
   "lockedExclusions": [
    "pages 1–144 and 153–218 of the periodical: other items entirely; page 153 positively closes this work's range",

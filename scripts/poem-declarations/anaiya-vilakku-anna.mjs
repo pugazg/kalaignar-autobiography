@@ -1,4 +1,4 @@
-// அணையா விளக்கு அண்ணா / "Anna, the Unquenchable Lamp" — standalone poem declaration.
+// அணையா விளக்கு அண்ணா / "Anna, the Inextinguishable Lamp" — standalone poem declaration.
 //
 // A கலைஞர் கவிதை issued as a standalone booklet: 19 physical scans, of which 7–17 are the poem body,
 // 1–6 front matter and 18–19 closing visual/back matter. Those boundaries are source-derived and
@@ -16,7 +16,11 @@ const POEM_SCANS = Array.from({ length: 11 }, (_, i) => 7 + i); // 7 … 17
 export default {
   slug: SLUG,
   poemScans: POEM_SCANS,
-  title: { ta: "அணையா விளக்கு அண்ணா", en: "Anna, the Unquenchable Lamp" },
+  // The English title is NOT a naming decision available to this import. The frozen release states it
+  // outright — `english_title: "Anna, the Inextinguishable Lamp"` in the assembly's frontmatter, and
+  // the same words as its H1 — so anything else here would be a silent retitling of a release-cleared
+  // translation layer. The validator reads both of those and fails closed on any divergence.
+  title: { ta: "அணையா விளக்கு அண்ணா", en: "Anna, the Inextinguishable Lamp" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },
 
   scan: {

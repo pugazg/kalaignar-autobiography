@@ -81,7 +81,10 @@ export default {
     printedPageMapping: "none — the page map records no visibly printed page number on any poem page",
     unnumberedScanNote:
       "No poem page carries a visible printed page number in the page map, and the archive states that printed page numbers are not inferred and that sequence position is not treated as printed pagination. The PDF page numbers 59–61 are SCAN positions inside the periodical, never printed page numbers.",
-    sourceTypeLabel: { ta: "அச்சிட்ட இதழிலிருந்து", en: "from a printed periodical" },
+    // A NOUN PHRASE naming the KIND of printed source, because the source page composes it as
+    // `the ${sourceTypeEn}` and `Source facts (the ${sourceTypeEn})`. A prepositional phrase here
+    // ("from a printed periodical") produced "Source facts (the from a printed periodical)".
+    sourceTypeLabel: { ta: "அச்சிட்ட இதழ்", en: "printed periodical" },
     publicationNotEstablished:
       "The pinned source repository states no publication title, edition statement or publication year for this work in its own prose, so publicationYear and editionStatement are null. The controlling scan's FILENAME names a 1955 periodical holding; a filename is the scan's identity, and it is recorded as such under scanFilename rather than promoted to a publication statement about the poem.",
     lockedExclusions: [
