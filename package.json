@@ -12,6 +12,7 @@
     "test:daily-kural": "tsx scripts/test-daily-kural.ts",
     "test:shelf-disclosure": "tsx --tsconfig tsconfig.scripts.json scripts/test-shelf-disclosure.ts",
     "test:collections": "tsx --tsconfig tsconfig.scripts.json scripts/test-collections.ts",
+    "test:poetry-architecture": "tsx --tsconfig tsconfig.scripts.json scripts/test-poetry-architecture.ts",
     "test:validator-contract": "node scripts/test-validator-contract.mjs \"${KDL_SOURCES_DIR:-.sources}\"",
     "build:features": "tsx pipeline/builders/export-feature-data.ts",
     "build:app-data": "npm run build:features && python3 pipeline/builders/build_app_manifest.py"

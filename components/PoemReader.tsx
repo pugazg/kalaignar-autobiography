@@ -149,6 +149,25 @@ export default function PoemReader({ slug }: { slug: string }) {
   // RELEASE-COMPLETE English translation is one toggle away.
   const [showEn, setShowEn] = useState(false);
 
+  // ── Work-driven context values ──────────────────────────────────────────────────────────────────
+  // Each is undefined/empty where the work's own source establishes nothing, so a poem printing no
+  // context note simply renders no date, venue or occasion. Nothing here is specific to one poem.
+  //
+  // The Tamil date is the source's own printed form, verbatim. The English date is formatted from
+  // the ISO date the source establishes — never re-parsed from the printed Tamil string, whose
+  // format is a property of that edition rather than a date encoding.
+  const ctx = poem?.sourceContext;
+  const dateLabel = ta
+    ? ctx?.datePrinted
+    : ctx?.dateIso
+      ? new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(
+          new Date(`${ctx.dateIso}T00:00:00Z`),
+        )
+      : ctx?.datePrinted;
+  const venueClause = ctx?.venue ? ` · ${ta ? ctx.venue.ta : ctx.venue.en}` : "";
+  const dateClause = dateLabel ? `, ${dateLabel}` : "";
+  const scans = poem?.poemScans.length ?? 0;
+
   useEffect(() => {
     setPoem(null);
     setError(false);
@@ -211,18 +230,32 @@ export default function PoemReader({ slug }: { slug: string }) {
 
             {/* SOURCE CONTEXT — what the note printed above the poem establishes. It is metadata:
                 not one word of it appears in the verse below. A publication/edition year is NOT
-                shown, because the controlling scan establishes none. */}
-            <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-ink/55 dark:text-night-text/55">
-              <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5" aria-hidden />
-                <span lang={lang}>{ta ? "9.2.1969" : "9 February 1969"}</span>
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Radio className="h-3.5 w-3.5" aria-hidden />
-                <span lang={lang}>{ta ? poem.sourceContext.venue.ta : poem.sourceContext.venue.en}</span>
-              </span>
-              <span lang={lang}>{ta ? poem.sourceContext.occasion.ta : poem.sourceContext.occasion.en}</span>
-            </div>
+                shown, because the controlling scan establishes none.
+
+                EVERY PART IS CONDITIONAL, AND NONE OF IT IS THIS WORK'S. The date, venue and occasion
+                were literals here while Poetry held one poem, which meant the next poem would have
+                silently inherited 9.2.1969 and Chennai Radio. They are now read from the work's own
+                source context, and each renders only where its own source establishes it. A poem
+                whose scan prints no context note renders no row at all. */}
+            {poem.sourceContext && (dateLabel || poem.sourceContext.venue || poem.sourceContext.occasion) && (
+              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-ink/55 dark:text-night-text/55">
+                {dateLabel && (
+                  <span className="inline-flex items-center gap-1.5">
+                    <Calendar className="h-3.5 w-3.5" aria-hidden />
+                    <span lang={lang}>{dateLabel}</span>
+                  </span>
+                )}
+                {poem.sourceContext.venue && (
+                  <span className="inline-flex items-center gap-1.5">
+                    <Radio className="h-3.5 w-3.5" aria-hidden />
+                    <span lang={lang}>{ta ? poem.sourceContext.venue.ta : poem.sourceContext.venue.en}</span>
+                  </span>
+                )}
+                {poem.sourceContext.occasion && (
+                  <span lang={lang}>{ta ? poem.sourceContext.occasion.ta : poem.sourceContext.occasion.en}</span>
+                )}
+              </div>
+            )}
 
             <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
               <ShareButtons title={`${poem.title.ta} · ${poem.title.en}`} path={`/poems/${slug}`} />
@@ -283,9 +316,12 @@ export default function PoemReader({ slug }: { slug: string }) {
         {/* Provenance / source note. */}
         {poem && (
           <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic leading-relaxed text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={lang}>
+            {/* Venue, date and scan count are the WORK'S, not this component's. The venue and date
+                clauses appear only where the source establishes them; the scan count is counted from
+                the work's own scan list rather than written out, so it can never disagree with it. */}
             {ta
-              ? `${poem.author.nameTa} · ${poem.sourceContext.venue.ta}, 9.2.1969. அச்சிட்ட மூலத்துடன் ஒப்பிட்டு 14/14 கவிதைப் பக்கங்களும் சரிபார்க்கப்பட்டன. `
-              : `${poem.author.nameEn} · ${poem.sourceContext.venue.en}, 9 February 1969. All 14 poem scans verified against the printed source. `}
+              ? `${poem.author.nameTa}${venueClause}${dateClause}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டு ${scans}/${scans} கவிதைப் பக்கங்களும் சரிபார்க்கப்பட்டன. `
+              : `${poem.author.nameEn}${venueClause}${dateClause}. All ${scans} poem scans verified against the printed source. `}
             <Link href={`/poems/${slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-brass">
               {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
             </Link>
