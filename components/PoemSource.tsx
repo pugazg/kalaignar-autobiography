@@ -19,14 +19,15 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
   const sourceTypeTa = s.sourceTypeLabel?.ta ?? "அச்சிட்ட மூலம்";
   const sourceTypeEn = s.sourceTypeLabel?.en ?? "printed source";
   // The context card exists only if the work's source establishes something to put in it.
-  const hasContextCard = Boolean(
-    s.contextNoteTa ||
-      s.contextDatePrinted ||
-      s.contextVenueTa ||
-      s.contextOccasionTa ||
-      s.publicationEstablished ||
-      s.publicationNotEstablished,
+  // TWO DIMENSIONS, TWO CONDITIONS. What a source prints ABOVE THE POEM and what it establishes about
+  // its PUBLICATION are different kinds of evidence, and one must never stand in for the other. A
+  // single condition covering both would let publication facts open a card headed "printed above the
+  // poem" — which for தென்னவன் காதை would place `முரசொலி-பொங்கல் மலர்`, 1956 under a claim its own
+  // source does not make about where those words appear.
+  const hasSourceContext = Boolean(
+    s.contextNoteTa || s.contextDatePrinted || s.contextVenueTa || s.contextOccasionTa,
   );
+  const hasPublicationEvidence = Boolean(s.publicationEstablished || s.publicationNotEstablished);
 
   const Row = ({ label, children, mono }: { label: string; children: React.ReactNode; mono?: boolean }) => (
     <div className="grid gap-0.5 border-b border-ink/5 py-2.5 last:border-0 dark:border-white/5 sm:grid-cols-[minmax(0,11rem)_1fr] sm:gap-4">
@@ -107,7 +108,7 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
             The whole card, and every row inside it, appears only where the work's source establishes
             that fact. A poem printing no context note renders no card; a note establishing a date but
             no venue renders the date row alone. Nothing here is assumed of the next work. */}
-        {hasContextCard && (
+        {hasSourceContext && (
           <Card icon={Radio} title={ta ? "மூலச் சூழல் (கவிதைக்கு மேலே அச்சிட்டது)" : "Source context (printed above the poem)"}>
             {s.contextNoteTa && (
               <p className="mt-3 whitespace-pre-line rounded-xl border-l-2 border-brass/50 bg-brass/[0.05] py-3 pl-4 pr-4 font-tamil text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang="ta">
@@ -137,11 +138,20 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
               </dl>
             )}
 
-            {/* THE PUBLICATION RULE, stated plainly on the public page — in whichever direction the
-                source actually points. A work whose source names its publication says so; a work whose
-                scan establishes none says that instead. Neither state is assumed. */}
+          </Card>
+        )}
+
+        {/* PUBLICATION EVIDENCE — its own surface, deliberately not inside the context card.
+            The heading claims only that this is what the source establishes about the publication, and
+            says nothing about where on the page those words appear. A work whose source names its
+            publication says so; a work whose scan establishes none says that instead, and carries its
+            foreword-date note here — a foreword date is publication-adjacent evidence, never a reason
+            to assert something was printed above the poem. Neither state is assumed and only one
+            renders. */}
+        {hasPublicationEvidence && (
+          <Card icon={BookOpen} title={ta ? "வெளியீட்டுச் சான்று" : "Publication evidence"}>
             {s.publicationEstablished && (
-              <div className="mt-4 rounded-xl border border-dashed border-brass/40 bg-brass/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
+              <div className="mt-3 rounded-xl border border-dashed border-brass/40 bg-brass/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={lang}>
                 <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "வெளியீடு" : "Publication"}</p>
                 <p className="mt-1">
                   <span className="font-tamil" lang="ta">{s.publicationEstablished.publicationTa}</span>
@@ -155,7 +165,7 @@ export default function PoemSource({ slug, prov }: { slug: string; prov: PoemPro
               </div>
             )}
             {!s.publicationEstablished && s.publicationNotEstablished && (
-              <div className="mt-4 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/70" lang={lang}>
+              <div className="mt-3 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/70" lang={lang}>
                 <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "வெளியீட்டுத் தேதி — நிறுவப்படவில்லை" : "Publication date — NOT established"}</p>
                 <p className="mt-1">{s.publicationNotEstablished}</p>
                 {s.forewordDateNote && <p className="mt-2">{s.forewordDateNote}</p>}

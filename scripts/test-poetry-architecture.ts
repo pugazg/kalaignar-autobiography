@@ -210,7 +210,72 @@ for (const literal of ["Scan 26", "scan 26"]) {
 }
 ok(!sourceSrc.includes("printed booklet"), "the source page does not call every source a printed booklet");
 ok(sourceSrc.includes("s.unnumberedScanNote &&"), "the unnumbered-scan notice is conditional");
-ok(sourceSrc.includes("hasContextCard &&"), "the source-context card is conditional");
+// ── The two evidence dimensions must stay apart ─────────────────────────────────────────────────
+// "Printed above the poem" is a claim about WHERE words appear. Publication evidence is a claim about
+// WHICH publication the source establishes. Folding them into one condition would let the second open
+// a card asserting the first — which for தென்னவன் காதை would put `முரசொலி-பொங்கல் மலர்`, 1956 under a
+// heading its own source never justifies.
+ok(sourceSrc.includes("hasSourceContext &&"), "the source-context card is conditional");
+ok(sourceSrc.includes("hasPublicationEvidence &&"), "publication evidence has its own conditional surface");
+ok(!sourceSrc.includes("hasContextCard"), "the conflated context/publication condition is gone");
+
+// The context condition must reference ONLY context fields.
+const ctxCond = /const hasSourceContext = Boolean\(([\s\S]*?)\);/.exec(sourceSrc);
+ok(!!ctxCond, "the source-context condition is declared");
+if (ctxCond) {
+  const body = ctxCond[1];
+  for (const field of ["contextNoteTa", "contextDatePrinted", "contextVenueTa", "contextOccasionTa"]) {
+    ok(body.includes(field), `the context condition tests ${field}`);
+  }
+  // The heart of this repair: neither publication field may appear in it.
+  ok(!body.includes("publicationEstablished"), "publicationEstablished alone cannot open the context card");
+  ok(!body.includes("publicationNotEstablished"), "publicationNotEstablished alone cannot open the context card");
+  ok(!body.includes("forewordDateNote"), "a foreword date alone cannot open the context card");
+}
+
+// The publication condition must reference ONLY publication fields.
+const pubCond = /const hasPublicationEvidence = Boolean\(([\s\S]*?)\);/.exec(sourceSrc);
+ok(!!pubCond, "the publication-evidence condition is declared");
+if (pubCond) {
+  const body = pubCond[1];
+  ok(body.includes("publicationEstablished"), "the publication condition tests publicationEstablished");
+  ok(body.includes("publicationNotEstablished"), "the publication condition tests publicationNotEstablished");
+  for (const field of ["contextNoteTa", "contextDatePrinted", "contextVenueTa", "contextOccasionTa"]) {
+    ok(!body.includes(field), `context field ${field} does not open the publication surface`);
+  }
+}
+
+// Behavioural proof on the two shapes that matter, evaluated the way the component evaluates them.
+{
+  const contextOf = (s: Record<string, unknown>) =>
+    Boolean(s.contextNoteTa || s.contextDatePrinted || s.contextVenueTa || s.contextOccasionTa);
+  const publicationOf = (s: Record<string, unknown>) =>
+    Boolean(s.publicationEstablished || s.publicationNotEstablished);
+
+  // தென்னவன் காதை's shape: a source-established publication, no context printed above the poem.
+  const thennan = { publicationEstablished: { publicationTa: "முரசொலி-பொங்கல் மலர்", year: 1956 } };
+  ok(!contextOf(thennan), "an established publication alone shows NO `printed above the poem` card");
+  ok(publicationOf(thennan), "an established publication shows the publication surface");
+
+  // A work stating only that publication is not established.
+  const notEstablished = { publicationNotEstablished: "the scan establishes no publication" };
+  ok(!contextOf(notEstablished), "a not-established statement alone shows NO context card");
+  ok(publicationOf(notEstablished), "a not-established statement shows the publication surface");
+
+  // A foreword note is publication-adjacent evidence and never a context trigger.
+  ok(!contextOf({ forewordDateNote: "a foreword-internal date" }), "a foreword note alone shows no context card");
+
+  // The existing poem has BOTH, and both surfaces render — separately.
+  const existing = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "public/data/poems", EXISTING, "provenance.json"), "utf-8"),
+  ).source;
+  ok(contextOf(existing), "the existing poem still renders its source-context card");
+  ok(publicationOf(existing), "the existing poem still renders its publication evidence");
+  ok(
+    Boolean(existing.contextNoteTa && existing.contextDatePrinted && existing.contextVenueTa && existing.contextOccasionTa),
+    "the existing poem's note, date, venue and occasion all remain present in its data",
+  );
+}
 for (const row of ["s.contextDatePrinted &&", "s.contextVenueTa &&", "s.contextOccasionTa &&"]) {
   ok(sourceSrc.includes(row), `the context row is conditional: ${row}`);
 }
