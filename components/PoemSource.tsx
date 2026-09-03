@@ -91,7 +91,14 @@ export default function PoemSource({
             </Row>
             {s.englishTitleNote && (
               <Row label={ta ? "ஆங்கிலத் தலைப்பு" : "English title"}>
-                <span className="font-medium">{ta ? "மேலோட்டமாக அங்கீகரிக்கப்படவில்லை" : "none approved upstream"}</span>
+                {/* "upstream" is the SOURCE REPOSITORY here, so the Tamil names it. An earlier
+                    revision read `மேலோட்டமாக அங்கீகரிக்கப்படவில்லை`, which says "not approved
+                    superficially" — a statement about how carefully something was reviewed, not
+                    about where approval is absent. The row label already reads ஆங்கிலத் தலைப்பு, so
+                    the value does not repeat it. */}
+                <span className="font-medium">
+                  {ta ? "மூலக் களஞ்சியத்தில் இறுதியாக அங்கீகரிக்கப்படவில்லை" : "none approved upstream"}
+                </span>
                 <span className="mt-1 block text-xs leading-relaxed text-ink/60 dark:text-night-text/60">{s.englishTitleNote}</span>
               </Row>
             )}

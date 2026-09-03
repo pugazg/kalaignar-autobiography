@@ -520,8 +520,14 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
     const w = noTitle[0];
     const p = sourcePages.get(w.slug)!;
     ok(typeof w.prov.source.englishTitleNote === "string", `${w.slug}: an englishTitleNote is recorded`);
+    // The Tamil must say WHERE approval is absent — the source repository — rather than describing
+    // the quality of a review. `மேலோட்டமாக அங்கீகரிக்கப்படவில்லை` said "not approved superficially",
+    // which is a different claim entirely, so its absence is asserted as well as the correct wording
+    // being present: proving the bad string is gone is not the same as proving the good one is there.
     ok(p.en.includes("none approved upstream"), `${w.slug}: the English page states no title is approved upstream`);
-    ok(p.ta.includes("மேலோட்டமாக அங்கீகரிக்கப்படவில்லை"), `${w.slug}: the Tamil page states the same`);
+    ok(p.ta.includes("மூலக் களஞ்சியத்தில் இறுதியாக அங்கீகரிக்கப்படவில்லை"), `${w.slug}: the Tamil page names the source repository as where approval is absent`);
+    ok(!p.ta.includes("மேலோட்டமாக"), `${w.slug}: the Tamil page does not say "superficially"`);
+    ok(!p.en.includes("மேலோட்டமாக"), `${w.slug}: the superseded Tamil wording is absent in English mode too`);
     const note = esc(w.prov.source.englishTitleNote!);
     ok(p.en.includes(note) && p.ta.includes(note), `${w.slug}: the full note is rendered in both languages`);
     ok(/RELEASE-COMPLETE/.test(w.prov.source.englishTitleNote!), `${w.slug}: the note says the TRANSLATION is release-complete, only the title unapproved`);
