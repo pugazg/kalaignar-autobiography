@@ -70,10 +70,13 @@ jobs:
 
       - name: Reading Room collections
         run: npm run test:collections
-      - name: Poetry architecture (Wave 4 P0)
+      - name: Poetry architecture and scope
         run: npm run test:poetry-architecture
       - name: Reading Room shelf disclosure
         run: npm run test:shelf-disclosure
+      # Runs AFTER the build above, so it can check the sitemap and prerendered pages the build
+      # actually emitted — the archival-validators job never builds, so that half of the sitemap
+      # proof can only run here.
       - name: Standalone poem UI across all four works
         run: npm run test:standalone-poem-ui
 

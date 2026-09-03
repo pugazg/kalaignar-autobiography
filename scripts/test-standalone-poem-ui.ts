@@ -309,6 +309,40 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
   }
 }
 
+// ── 11. The BUILT sitemap: two URLs per poem, no duplicates ──────────────────────────────────────
+// This proof lives here rather than in the P1 validator because it needs build output. The validator
+// runs in the archival-validators job, which fetches source clones but never builds, so its own
+// sitemap check falls back to proving the registry it derives from is duplicate-free. This job DOES
+// build before it runs tests, so the actual emitted sitemap is checked here and the strongest form
+// of the proof runs in CI rather than only on a developer's machine.
+{
+  const body = path.join(process.cwd(), ".next/server/app/sitemap.xml.body");
+  if (fs.existsSync(body)) {
+    // exec loop rather than [...matchAll]: the app's tsconfig target predates downlevelIteration.
+    const urls: string[] = [];
+    const re = /<loc>([^<]+)<\/loc>/g;
+    const xml = fs.readFileSync(body, "utf-8");
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(xml)) !== null) urls.push(m[1]);
+    ok(urls.length > 100, `the built sitemap is non-trivial (${urls.length} URLs)`);
+    eq(urls.length - new Set(urls).size, 0, "the built sitemap has no duplicate URLs");
+    const poemUrls = urls.filter((u) => /\/poems\//.test(u));
+    eq(poemUrls.length, POEM_SLUGS.length * 2, "the built sitemap carries exactly two URLs per standalone poem");
+    eq(new Set(poemUrls).size, poemUrls.length, "the built sitemap's poem URLs are unique");
+    for (const slug of POEM_SLUGS) {
+      ok(poemUrls.some((u) => u.endsWith(`/poems/${slug}`)), `the built sitemap carries /poems/${slug}`);
+      ok(poemUrls.some((u) => u.endsWith(`/poems/${slug}/source`)), `the built sitemap carries /poems/${slug}/source`);
+    }
+    // Every prerendered poem page exists on disk — a sitemap URL with no page behind it is a 404.
+    for (const slug of POEM_SLUGS) {
+      ok(fs.existsSync(path.join(process.cwd(), ".next/server/app/poems", `${slug}.html`)), `${slug}: the landing page is prerendered`);
+      ok(fs.existsSync(path.join(process.cwd(), ".next/server/app/poems", slug, "source.html")), `${slug}: the source page is prerendered`);
+    }
+  } else {
+    console.log("  (note: no build output — the built-sitemap checks were skipped; run `npm run build` first)");
+  }
+}
+
 // ── Report ───────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {
   console.error(`standalone-poem-ui — ${checks} checks, ${failures.length} FAILED\n`);
