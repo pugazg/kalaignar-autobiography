@@ -26,6 +26,25 @@ const readText = (p) => fs.readFileSync(p, "utf8");
 const sha256 = (s) => crypto.createHash("sha256").update(s).digest("hex");
 const git = (...a) => execFileSync("git", ["-C", SRC_REPO, ...a], { encoding: "utf8" }).trim();
 
+// Independent read of a frozen page record's VISIBLE printed numeral. Deliberately a different parse
+// from the engine's (a targeted frontmatter scan, no shared helper), so the two cannot share a bug.
+function pageRecord(scan) {
+  const rel = `pages/${String(scan).padStart(4, "0")}.md`;
+  const abs = path.join(WORK, rel);
+  if (!fs.existsSync(abs)) return null;
+  const t = readText(abs);
+  const fm = /^---\n([\s\S]*?)\n---/.exec(t);
+  const get = (k) => (fm ? (new RegExp(`^${k}:\\s*(.*)$`, "m").exec(fm[1])?.[1]?.trim() ?? null) : null);
+  const rawPP = get("printed_page");
+  return {
+    exists: true,
+    scanPage: Number(get("scan_page")),
+    work: (get("work") ?? "").replace(/^"|"$/g, ""),
+    status: (get("status") ?? "").replace(/^"|"$/g, ""),
+    printedPage: rawPP === "null" ? null : /^\d+$/.test(rawPP ?? "") ? Number(rawPP) : undefined,
+  };
+}
+
 let pass = 0;
 const failures = [];
 const check = (label, cond) => (cond ? pass++ : failures.push(label));
@@ -200,6 +219,7 @@ const batchBodies = batchItemBodies();
 let taLinesTotal = 0;
 let enLinesTotal = 0;
 const allScans = new Set();
+let pageRecordsRead = 0;
 for (const it of pub.items) {
   const ta = streamFromLayer(it.tamil);
   const taSrc = reconstructTamil(it.ordinal);
@@ -223,14 +243,56 @@ for (const it of pub.items) {
     check(`item ${it.ordinal}: scan ${sc} is claimed by no other item`, !allScans.has(sc));
     allScans.add(sc);
   }
-  // printedPages present and printed page = scan − 1.
-  check(`item ${it.ordinal}: printed pages present`, Array.isArray(it.printedPages) && it.printedPages.length > 0);
-  for (const e of it.tamil.elements) {
-    if (e.kind === "line") check(`item ${it.ordinal}: line printedPage = scan − 1`, e.printedPage === e.sourceScan - 1);
+  // RECONCILED LOGICAL pagination is the section's own range, and equals scan − 1 for this
+  // publication — but that is structural, NOT a claim any numeral is printed.
+  check(`item ${it.ordinal}: reconciled logical pages present`, Array.isArray(it.logicalPrintedPages) && it.logicalPrintedPages.length > 0);
+  eq(`item ${it.ordinal}: reconciled logical range is scan − 1`, [it.logicalPrintedPages[0].first, it.logicalPrintedPages.at(-1).last], [scans[0] - 1, scans.at(-1) - 1]);
+  check(`item ${it.ordinal}: payload carries no ambiguous printedPages field`, !("printedPages" in it));
+
+  // VISIBLE printedPage per line/heading must equal the frozen page record's printed_page EXACTLY —
+  // never scan − 1. Every consumed scan must have a verified page record (fail closed, no fallback).
+  for (const sc of scans) {
+    const rec = pageRecord(sc);
+    check(`item ${it.ordinal}: page record exists for scan ${sc}`, rec !== null);
+    if (!rec) continue;
+    pageRecordsRead++;
+    eq(`item ${it.ordinal}: page record scan ${sc} identity`, [rec.scanPage, rec.work, rec.status], [sc, SLUG, "verified"]);
+    check(`item ${it.ordinal}: page record scan ${sc} printed_page parses`, rec.printedPage === null || typeof rec.printedPage === "number");
+    // Source-internal: where a numeral is visible it equals the reconciled scan − 1; null where absent.
+    if (rec.printedPage !== null) eq(`item ${it.ordinal}: visible numeral on scan ${sc} equals scan − 1`, rec.printedPage, sc - 1);
+    for (const e of [...it.tamil.elements, ...it.english.elements]) {
+      if ((e.kind === "line" || e.kind === "source-heading") && e.sourceScan === sc) {
+        eq(`item ${it.ordinal}: scan ${sc} line visible printedPage equals the page record`, e.printedPage, rec.printedPage);
+      }
+    }
   }
 }
 eq("numbered-item scans total 290", allScans.size, 290);
+check("provenance roster uses the reconciled-logical name, not the ambiguous one", prov.itemRoster.every((r) => !("printedPages" in r)));
 eq("numbered-item scans are exactly 10..299", [...allScans].sort((a, b) => a - b), Array.from({ length: 290 }, (_, i) => i + 10));
+// ── VISIBLE-vs-LOGICAL PAGINATION — explicit regressions ─────────────────────────────────────────
+// These pin the exact defect this repair fixed: an item title scan prints no numeral (null), while
+// the scans around it do. A universal "scan − 1" cannot satisfy all three at once.
+{
+  const visibleFor = (scan) => {
+    for (const it of pub.items) for (const e of [...it.tamil.elements, ...it.english.elements]) {
+      if ((e.kind === "line" || e.kind === "source-heading") && e.sourceScan === scan) return e.printedPage;
+    }
+    return "no-line";
+  };
+  eq("scan 10 page record prints no numeral", pageRecord(10).printedPage, null);
+  eq("scan 10 payload lines carry printedPage null (not 9)", visibleFor(10), null);
+  eq("scan 11 page record prints 10", pageRecord(11).printedPage, 10);
+  eq("scan 11 payload lines carry printedPage 10", visibleFor(11), 10);
+  eq("scan 69 page record prints 68", pageRecord(69).printedPage, 68);
+  eq("scan 69 payload lines carry printedPage 68", visibleFor(69), 68);
+  // Logical never overwrites visible: item 1's logical range starts at 9, but its scan-10 title page
+  // shows no visible 9.
+  const it1 = pub.items[0];
+  eq("item 1 reconciled logical range starts at 9", it1.logicalPrintedPages[0].first, 9);
+  eq("but no scan-10 line claims a visible 9", visibleFor(10), null);
+}
+eq("a verified page record was read for every one of the 290 numbered scans", pageRecordsRead, 290);
 check("Tamil total is substantial", taLinesTotal > 5000);
 check("English total is substantial", enLinesTotal > 5000);
 

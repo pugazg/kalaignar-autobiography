@@ -168,7 +168,7 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
       { first: 230, last: 236 },
       { first: 238, last: 238 },
     ],
-    printedPages: [
+    logicalPrintedPages: [
       { first: 213, last: 219 },
       { first: 221, last: 221 },
     ],
@@ -184,7 +184,7 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
       { first: 237, last: 237 },
       { first: 239, last: 244 },
     ],
-    printedPages: [
+    logicalPrintedPages: [
       { first: 220, last: 220 },
       { first: 222, last: 227 },
     ],
@@ -192,12 +192,12 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
     english: { lines: [], elements: [] } as unknown as PoetryItem["english"],
   };
 
-  eq(item23.printedPages!.length, 2, "item 23 keeps its printed pages as two runs, not one");
+  eq(item23.logicalPrintedPages!.length, 2, "item 23 keeps its logical printed pages as two runs, not one");
   eq(item24.physicalScans.length, 2, "item 24 keeps its scans as two runs, not one");
 
   const covers = (runs: PageRun[]) => runs.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
-  const p23 = covers(item23.printedPages!);
-  const p24 = covers(item24.printedPages!);
+  const p23 = covers(item23.logicalPrintedPages!);
+  const p24 = covers(item24.logicalPrintedPages!);
   ok(!p23.includes(220), "item 23's printed pages exclude 220 — the gap is not swallowed");
   ok(!p24.includes(221), "item 24's printed pages exclude 221 — the gap is not swallowed");
   eq(p23.length, 8, "item 23 covers exactly 8 printed pages (213–219, 221)");
@@ -213,10 +213,13 @@ for (const reserved of POETRY_ITEM_SLUG_RULES.reservedSegments) {
   ok(flatLast - flatFirst + 1 !== p23.length, "flattening item 23 to 213–221 would claim a page it does not occupy");
 }
 
-// The type source must not have regressed to a single printed-page range.
-ok(/printedPages\?: PageRun\[\]/.test(poemsSrc), "printedPages is an ordered list of runs");
+// The type source must not have regressed to a single printed-page range, and the RECONCILED logical
+// pagination must be named as such — distinct from a line's visible printedPage numeral.
+ok(/logicalPrintedPages\?: PageRun\[\]/.test(poemsSrc), "logicalPrintedPages is an ordered list of runs");
 ok(/physicalScans: PageRun\[\]/.test(poemsSrc), "physicalScans is an ordered list of runs");
-ok(!/printedPages\?: \{ first: number; last: number \};/.test(poemsSrc), "printedPages is not a single range");
+ok(!/logicalPrintedPages\?: \{ first: number; last: number \};/.test(poemsSrc), "logicalPrintedPages is not a single range");
+// PoemLine.printedPage stays the VISIBLE numeral, nullable, never the reconciled range.
+ok(/The VISIBLE printed page number, or null where the source shows none\. Never inferred\./.test(poemsSrc), "PoemLine.printedPage remains the visible numeral only");
 
 // ── 4c. The source page carries no work's facts and both publication states exist ────────────────
 const sourceSrc = fs

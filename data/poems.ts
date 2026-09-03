@@ -459,13 +459,19 @@ export interface PoetryItem {
   /** Physical scan runs, in source order. Non-contiguous runs are preserved, never flattened. */
   physicalScans: PageRun[];
   /**
-   * Printed page runs, in source order, where the source prints page numbers; absent where it does not.
+   * RECONCILED LOGICAL printed-page runs, in source order — the section's `printed_pages:` mapping.
    *
-   * A LIST for the same reason as `physicalScans`: an interleaved item's printed pages carry the same
+   * This is the STRUCTURAL pagination (for this publication, physical scan − 1), NOT a claim that a
+   * numeral is visibly printed on every page. The VISIBLE numeral lives on each `PoemLine.printedPage`
+   * and is `null` wherever the scan prints none — 58 item-opening title pages here do exactly that.
+   * The two dimensions are deliberately never collapsed: a reconciled range is not a witness that its
+   * numbers appear.
+   *
+   * A LIST for the same reason as `physicalScans`: an interleaved item's logical pages carry the same
    * gap its scans do, and collapsing `213–219, 221` to `213–221` would assert page 220 — which belongs
    * to a different item.
    */
-  printedPages?: PageRun[];
+  logicalPrintedPages?: PageRun[];
   tamil: PoemLayer;
   english: PoemLayer;
 }
@@ -557,7 +563,7 @@ export interface PoetryPublicationProvenance {
     titleEn: string;
     printedOrdinal?: number;
     physicalScans: PageRun[];
-    printedPages?: PageRun[];
+    logicalPrintedPages?: PageRun[];
     tamilLines: number;
     englishLines: number;
   }[];

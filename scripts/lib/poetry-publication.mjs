@@ -88,6 +88,36 @@ export function parseRuns(spec) {
 }
 const runsToScans = (runs) => runs.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
 
+/**
+ * The VISIBLE printed-page numeral for one physical scan, read from the frozen page record.
+ *
+ * This is the crux of the visible-vs-logical distinction. The publication's structural rule is
+ * "logical printed page = physical scan − 1", but that is reconciled pagination, not a claim that a
+ * numeral is printed: 58 scans (every item-opening title page) print no page number at all and record
+ * `printed_page: null`. `PoemLine.printedPage` is the VISIBLE numeral, so it must come from here — the
+ * page record — never from scan − 1. A missing or malformed record fails the import; nothing falls
+ * back to scan − 1, null, or the section's logical range.
+ */
+function loadPageRecord(workDir, scan, slug) {
+  const rel = `pages/${String(scan).padStart(4, "0")}.md`;
+  const abs = path.join(workDir, rel);
+  if (!fs.existsSync(abs)) throw new Error(`missing page record ${rel} for scan ${scan} — the import will not fall back to scan − 1`);
+  const { fm } = stripFrontmatter(readText(abs));
+  if (Number(fm.scan_page) !== scan) throw new Error(`${rel}: scan_page ${fm.scan_page} != ${scan}`);
+  if (fm.work !== slug) throw new Error(`${rel}: work ${JSON.stringify(fm.work)} != ${JSON.stringify(slug)}`);
+  if (fm.status !== "verified") throw new Error(`${rel}: status ${JSON.stringify(fm.status)} is not "verified"`);
+  const raw = (fm.printed_page ?? "").trim();
+  let printedPage;
+  if (raw === "null") printedPage = null;
+  else if (/^\d+$/.test(raw)) printedPage = Number(raw);
+  else throw new Error(`${rel}: unparseable printed_page ${JSON.stringify(fm.printed_page)} — expected a number or null`);
+  // Source-internal consistency: where a numeral IS visible, it must equal the reconciled scan − 1.
+  if (printedPage !== null && printedPage !== scan - 1) {
+    throw new Error(`${rel}: visible printed_page ${printedPage} disagrees with the reconciled rule (scan − 1 = ${scan - 1})`);
+  }
+  return { printedPage, section: fm.section ?? null };
+}
+
 // ── Line construction ────────────────────────────────────────────────────────────────────────────
 // Leading indentation is carried as a source fact (`indent` = exact leading-space count), never
 // normalized. Unlike the four standalone poems, this publication's verse uses free-width indentation
@@ -270,13 +300,14 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
       throw new Error(`item ${ord}: contents-title witness ${JSON.stringify(contentsTitleTa)} != declared ${JSON.stringify(d.contentsTitleTa)}`);
     }
     const physicalScans = parseRuns(secFm.physical_scans);
-    const printedPages = secFm.printed_pages ? parseRuns(secFm.printed_pages) : undefined;
+    // The section's `printed_pages:` frontmatter is the RECONCILED LOGICAL range (scan − 1 across the
+    // block). It is NOT proof that every numeral is visibly printed, so it is stored under an
+    // explicitly logical name and never used as a line's visible printedPage.
+    const logicalPrintedPages = secFm.printed_pages ? parseRuns(secFm.printed_pages) : undefined;
     const scans = runsToScans(physicalScans);
-    const printedFor = (scan) => {
-      // printed page = physical scan − 1 across the numbered block (source-established rule); the
-      // per-item printed_pages range is the witness this is checked against below.
-      return scan - 1;
-    };
+    // VISIBLE printed numerals, read per scan from the frozen page records — never scan − 1.
+    const visiblePrinted = new Map(scans.map((sc) => [sc, loadPageRecord(workDir, sc, decl.slug).printedPage]));
+    const printedFor = (scan) => visiblePrinted.get(scan);
 
     const ta = parseLayer(secBody, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: false, printedPageFor: printedFor });
     if (JSON.stringify(ta.seenScans) !== JSON.stringify(scans)) {
@@ -306,12 +337,21 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
       if (a[i] !== b[i]) throw new Error(`item ${ord}: English item file diverges from the reader-facing assembly at stream line ${i + 1}:\n  item:     ${a[i]}\n  assembly: ${b[i]}`);
     }
 
-    // printed-page witness: every line's printedPage must fall inside the declared printed_pages runs.
-    if (printedPages) {
-      const inRuns = (p) => printedPages.some((r) => p >= r.first && p <= r.last);
+    // The reconciled logical range must equal [first scan − 1 .. last scan − 1] for this publication
+    // (its structural pagination rule), and every VISIBLE numeral, where a line carries one, must sit
+    // inside it. A null visible page (an item's title scan) is fine and is not required to appear.
+    if (logicalPrintedPages) {
+      const expectedFirst = scans[0] - 1;
+      const expectedLast = scans[scans.length - 1] - 1;
+      const gotFirst = logicalPrintedPages[0].first;
+      const gotLast = logicalPrintedPages[logicalPrintedPages.length - 1].last;
+      if (gotFirst !== expectedFirst || gotLast !== expectedLast) {
+        throw new Error(`item ${ord}: reconciled logical pages ${JSON.stringify(secFm.printed_pages)} do not match scan − 1 (${expectedFirst}–${expectedLast})`);
+      }
+      const inRuns = (pp) => logicalPrintedPages.some((r) => pp >= r.first && pp <= r.last);
       for (const e of [...ta.layer.elements, ...en.layer.elements]) {
         if ((e.kind === "line" || e.kind === "source-heading") && e.printedPage != null && !inRuns(e.printedPage)) {
-          throw new Error(`item ${ord}: derived printed page ${e.printedPage} (scan ${e.sourceScan}) is outside the declared printed pages ${JSON.stringify(secFm.printed_pages)}`);
+          throw new Error(`item ${ord}: visible printed page ${e.printedPage} (scan ${e.sourceScan}) is outside the reconciled logical range ${JSON.stringify(secFm.printed_pages)}`);
         }
       }
     }
@@ -329,7 +369,7 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
       titleEn: d.titleEn,
       ...(secFm.printed_item_number ? { printedOrdinal: Number(secFm.printed_item_number) } : {}),
       physicalScans,
-      ...(printedPages ? { printedPages } : {}),
+      ...(logicalPrintedPages ? { logicalPrintedPages } : {}),
       tamil: ta.layer,
       english: en.layer,
     };
@@ -418,7 +458,7 @@ function buildProvenance({ decl, srcCommit, sourceTree, items, asmSlices }) {
       titleEn: i.titleEn,
       printedOrdinal: i.printedOrdinal,
       physicalScans: i.physicalScans,
-      printedPages: i.printedPages,
+      logicalPrintedPages: i.logicalPrintedPages,
       tamilLines: i.tamil.lineCount,
       englishLines: i.english.lineCount,
     })),
