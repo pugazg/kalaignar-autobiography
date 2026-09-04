@@ -16,6 +16,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import PublicationLanding from "../components/PublicationLanding";
 import type { PublicationBrief } from "../components/PublicationLanding";
 import PublicationItemReader from "../components/PublicationItemReader";
+import PublicationSource from "../components/PublicationSource";
 import WitnessNote from "../components/WitnessNote";
 import { LangProvider } from "../lib/i18n";
 import { resolveWitnessLinks } from "../lib/witness";
@@ -30,6 +31,8 @@ const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 
 const SLUG = "kalaignarin-kavithaigal";
 const pub: PoetryPublication = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/poems", SLUG, "publication.json"), "utf-8"));
+import type { PoetryPublicationProvenance } from "../data/poems";
+const prov: PoetryPublicationProvenance = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/poems", SLUG, "provenance.json"), "utf-8"));
 const bi = (el: React.ReactElement) => ({ ta: renderToStaticMarkup(createElement(LangProvider, null, el)), en: renderToStaticMarkup(el) });
 
 // ── 1. Landing: 77 items in 5 groups, canonical order, group headings ────────────────────────────
@@ -124,6 +127,24 @@ function readerHtml(ord: number, witnessLinks = resolveWitnessLinks(SLUG, pub.it
   const a = lineText(it02.tamil.elements as unknown as { kind: string; text?: string }[]);
   const b = lineText(standalone.tamil.elements as { kind: string; text?: string }[]);
   ok(a !== b, "the two witnesses are not byte-identical");
+}
+
+// ── 6. Title-witness provenance surface does not misrepresent 29 as the whole ────────────────────
+{
+  const html = bi(createElement(PublicationSource, { slug: SLUG, prov }));
+  for (const lang of ["ta", "en"] as const) {
+    const h = html[lang];
+    ok(h.includes("81"), `source (${lang}): the overall total 81 is shown`);
+    ok(h.includes("51"), `source (${lang}): 51 exact is shown`);
+    ok(h.includes("30"), `source (${lang}): 30 source-valid variants is shown`);
+    // The card title must NOT present 29 as the overall count.
+    ok(!/Title witnesses \(29\)/.test(h), `source (${lang}): does not title the card "Title witnesses (29)"`);
+    // The group-only variant renders as its own section, showing both witnesses.
+    ok(h.includes(esc("கண்ணீர்க் கவிதை")) && h.includes(esc("கண்ணீர்த் துளிகள்")), `source (${lang}): the group-4 variant shows both witnesses`);
+  }
+  eq(prov.titleWitnesses.overall, { total: 81, exact: 51, variants: 30, unresolved: 0 }, "provenance overall totals");
+  eq(prov.titleWitnesses.count, 29, "29 item variants");
+  eq(prov.titleWitnesses.groupVariants?.count, 1, "1 group-only variant");
 }
 
 if (failures.length) {

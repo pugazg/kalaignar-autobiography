@@ -319,7 +319,9 @@ eq("no two items share a canonical-title section id", sectionOwner.size, 77);
     const structural = [];
     const sm = /(\d+)\s*[–-]\s*(\d+)/.exec(scanCell);
     if (sm && !/item 01|within item/i.test(scanCell)) for (let n = Number(sm[1]); n <= Number(sm[2]); n++) structural.push(n);
-    srcRows.set(Number(m[1]), { contents: unq(cells[0]), canonical: unq(cells[1]), itemFirst: Number(rr[1]), itemLast: rr[2] !== undefined ? Number(rr[2]) : Number(rr[1]), structural, sharesItem01: /item 01|within item/i.test(scanCell) });
+    const shares = /item 01|within item/i.test(scanCell);
+    const range = sm ? Array.from({ length: Number(sm[2]) - Number(sm[1]) + 1 }, (_, i) => Number(sm[1]) + i) : [];
+    srcRows.set(Number(m[1]), { contents: unq(cells[0]), canonical: unq(cells[1]), itemFirst: Number(rr[1]), itemLast: rr[2] !== undefined ? Number(rr[2]) : Number(rr[1]), structural: shares ? [] : structural, sharesItem01: shares, sharedScans: shares ? range : [], sharedItemOrdinal: shares ? Number(rr[1]) : null });
   }
   eq("source group table has exactly 5 rows", srcRows.size, 5);
 
@@ -351,8 +353,54 @@ eq("no two items share a canonical-title section id", sectionOwner.size, 77);
   for (const sc of uniqStructural) check(`structural scan ${sc} is not in the 439 item scans`, !itemScans.has(sc));
   eq("group 4 retains a distinct contents witness (கண்ணீர்க் கவிதை / கண்ணீர்த் துளிகள்)", [srcRows.get(4).contents, srcRows.get(4).canonical], ["கண்ணீர்க் கவிதை", "கண்ணீர்த் துளிகள்"]);
   check("group 4 payload keeps both witnesses", pub.groups.find((g) => g.ordinal === 4)?.contentsTitleTa === "கண்ணீர்க் கவிதை" && pub.groups.find((g) => g.ordinal === 4)?.titleTa === "கண்ணீர்த் துளிகள்");
-  check("group 1 shares item 01 (item 01 begins at scan 18)", srcRows.get(1).sharesItem01 && pub.items[0].physicalScans[0].first === 18);
-  check("group 1's scans 18–19 are inside item 01, not counted as pure structural", itemScans.has(18) && itemScans.has(19) && !uniqStructural.includes(18) && !uniqStructural.includes(19));
+  // BLOCKER 2: the source names group 1's EXACT shared run 18–19, inside item 01, not structural.
+  {
+    const g1 = srcRows.get(1);
+    check("group 1 source row states item-01 sharing", g1.sharesItem01);
+    eq("group 1 shared scans are exactly [18, 19]", g1.sharedScans, [18, 19]);
+    eq("group 1 shares item ordinal 1", g1.sharedItemOrdinal, 1);
+    const it01Scans = new Set(pub.items[0].physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i)));
+    check("both shared scans 18 and 19 are inside item 01's own physical scans", it01Scans.has(18) && it01Scans.has(19));
+    check("group 1's shared scans are NOT among the 8 pure structural scans", !uniqStructural.includes(18) && !uniqStructural.includes(19));
+    check("group 1 contributes no pure structural scans", g1.structural.length === 0);
+  }
+}
+
+// ── TITLE-WITNESS ACCOUNTING (Gate 3, independently verified) ─────────────────────────────────────
+{
+  // Independent parse of the frozen Gate-3 evidence.
+  const g3 = readText(path.join(WORK, "PHASE3_TITLE_WITNESS_RECONCILIATION.md"));
+  const num = (label) => Number(new RegExp(`${label}[^\\d]*\\*\\*(\\d+)\\*\\*`).exec(g3)?.[1]);
+  const total = Number(/title\/group witnesses inventoried[^*]*\*\*(\d+)\*\*/.exec(g3)?.[1]);
+  const exact = Number(/exact title-string matches[^*]*\*\*(\d+)\*\*/.exec(g3)?.[1]);
+  const variants = Number(/source-valid variant relationships[^*]*\*\*(\d+)\*\*/.exec(g3)?.[1]);
+  const unresolved = /unresolved title witness:\s*\*\*none\*\*/i.test(g3) ? 0 : -1;
+  void num;
+  eq("source Gate-3 total witnesses is 81", total, 81);
+  eq("source Gate-3 exact matches is 51", exact, 51);
+  eq("source Gate-3 source-valid variants is 30", variants, 30);
+  eq("source Gate-3 unresolved is 0", unresolved, 0);
+  eq("total = exact + variants", total, exact + variants);
+
+  // Independent count of the variant-inventory rows (must be 30), and the group-only row (group 4).
+  const vsec = g3.slice(g3.indexOf("## Variant inventory"));
+  const vend = vsec.indexOf("\n## ", 1);
+  const vrows = (vend < 0 ? vsec : vsec.slice(0, vend)).split("\n").filter((l) => /^\|\s*\d+\s*\|/.test(l));
+  eq("Gate-3 variant inventory has exactly 30 rows", vrows.length, 30);
+  // Row 1 is the group-1/item-01 relationship (one row, both divider-18 and opening-20) — counted once.
+  check("group 1's variant is a single Gate-3 row spanning divider and opening (not two)", /divider scan 18 and opening scan 20/.test(vrows[0]));
+
+  // Payload accounting: overall totals present and consistent; 29 item variants + 1 group-only = 30.
+  const tw = prov.titleWitnesses;
+  eq("provenance overall totals equal the source", tw.overall, { total: 81, exact: 51, variants: 30, unresolved: 0 });
+  eq("provenance records 29 item title variants", tw.count, 29);
+  eq("provenance records exactly 1 group-only variant", tw.groupVariants?.count, 1);
+  eq("the group-only variant is group 4 (கண்ணீர்க் கவிதை / கண்ணீர்த் துளிகள்)", tw.groupVariants?.groups, [{ ordinal: 4, canonicalWitness: "கண்ணீர்த் துளிகள்", contentsWitness: "கண்ணீர்க் கவிதை" }]);
+  eq("29 item variants + 1 group-only variant = 30", tw.count + (tw.groupVariants?.count ?? 0), 30);
+  // Group 1 is NOT double-counted as a group-only variant: its pair equals item 01's.
+  check("group 1 is not a group-only variant (item 01 already carries it)", !(tw.groupVariants?.groups ?? []).some((g) => g.ordinal === 1));
+  const it01 = pub.items.find((i) => i.ordinal === 1);
+  check("item 01 carries the group-1 variant pair", it01.contentsTitleTa === "இதயத்தைத் தந்திடு அண்ணா!" && it01.titleTa === "இதயத்தைத் தந்திடு அண்ணா");
 }
 
 // ── WITNESS RELATIONS (exactly two) ──────────────────────────────────────────────────────────────

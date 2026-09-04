@@ -1631,7 +1631,7 @@
  ],
  "titleWitnesses": {
   "count": 29,
-  "note": "Gate 3 reconciled 81 contents/group/item title witnesses (51 exact, 30 source-valid variants, 0 unresolved). Canonical-title authority belongs to the dedicated divider/title/opening witness; the contents-page wording remains a separate source witness. No hybrid or normalized third title is created, and no witness is corrected from the other.",
+  "note": "Gate 3 reconciled 81 contents/group/item title witnesses: 51 exact, 30 source-valid variants (29 at item level, 1 at group level — group 4), 0 unresolved. Canonical-title authority belongs to the dedicated divider/title/opening witness; the contents-page wording remains a separate source witness. No hybrid or normalized third title is created, and no witness is corrected from the other.",
   "items": [
    {
     "ordinal": 1,
@@ -1778,7 +1778,23 @@
     "titlePageWitness": "சில நாடுகள் இருக்கின்றன!",
     "contentsWitness": "சில நாடுகள் இருக்கின்றன"
    }
-  ]
+  ],
+  "overall": {
+   "total": 81,
+   "exact": 51,
+   "variants": 30,
+   "unresolved": 0
+  },
+  "groupVariants": {
+   "count": 1,
+   "groups": [
+    {
+     "ordinal": 4,
+     "canonicalWitness": "கண்ணீர்த் துளிகள்",
+     "contentsWitness": "கண்ணீர்க் கவிதை"
+    }
+   ]
+  }
  },
  "groups": [
   {

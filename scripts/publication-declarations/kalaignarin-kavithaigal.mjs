@@ -83,8 +83,13 @@ export default {
     unresolved: 0,
   },
 
+  // Gate-3 source totals, independently verified against PHASE3_TITLE_WITNESS_RECONCILIATION.md. The
+  // 30 source-valid variants split into 29 item variants (item 01 included) and 1 group-only variant
+  // (group 4). Group 1's variant is item 01's own and is never double-counted.
+  titleWitnessTotals: { total: 81, exact: 51, variants: 30, unresolved: 0 },
+
   titleWitnessNote:
-    "Gate 3 reconciled 81 contents/group/item title witnesses (51 exact, 30 source-valid variants, 0 unresolved). Canonical-title authority belongs to the dedicated divider/title/opening witness; the contents-page wording remains a separate source witness. No hybrid or normalized third title is created, and no witness is corrected from the other.",
+    "Gate 3 reconciled 81 contents/group/item title witnesses: 51 exact, 30 source-valid variants (29 at item level, 1 at group level — group 4), 0 unresolved. Canonical-title authority belongs to the dedicated divider/title/opening witness; the contents-page wording remains a separate source witness. No hybrid or normalized third title is created, and no witness is corrected from the other.",
 
   itemNumberingNote: "",
 
@@ -93,7 +98,7 @@ export default {
   // each declared English group title against the assembly's  divider header. Group 1
   // shares item 01 and has no separate English divider title.
   groups: [
-    { ordinal: 1, titleTa: "இதயத்தைத் தந்திடு அண்ணா", contentsTitleTa: "இதயத்தைத் தந்திடு அண்ணா!", itemOrdinals: [1] },
+    { ordinal: 1, titleTa: "இதயத்தைத் தந்திடு அண்ணா", contentsTitleTa: "இதயத்தைத் தந்திடு அண்ணா!", itemOrdinals: [1], sharesItemOrdinal: 1, sharedScans: [18, 19] },
     { ordinal: 2, titleTa: "இனமான ஏந்தல்கள்", titleEn: "Bearers of Dignity", itemOrdinals: [2, 3, 4, 5] },
     { ordinal: 3, titleTa: "கவியரங்கக் கவிதைகள்", titleEn: "Poetry-Assembly Poems", itemOrdinals: Array.from({ length: 33 }, (_, i) => 6 + i) },
     { ordinal: 4, titleTa: "கண்ணீர்த் துளிகள்", contentsTitleTa: "கண்ணீர்க் கவிதை", titleEn: "Tear-Drops", itemOrdinals: [39, 40, 41, 42, 43, 44] },

@@ -570,9 +570,21 @@ export interface PoetryPublicationProvenance {
     englishLines: number;
   }[];
   titleWitnesses: {
+    /** ITEM title variants (present for every publication). */
     count: number;
     note: string;
     items: { ordinal: number; titlePageWitness: string; contentsWitness: string }[];
+    /**
+     * Source-established Gate-3 totals, where the source records them: total = exact + variants;
+     * variants = item variants (`count`) + `groupVariants.count`. Absent on a publication whose
+     * source establishes no such overall accounting.
+     */
+    overall?: { total: number; exact: number; variants: number; unresolved: number };
+    /** Group-only title variants (a group variant not already represented by an item variant). */
+    groupVariants?: {
+      count: number;
+      groups: { ordinal: number; canonicalWitness: string; contentsWitness: string }[];
+    };
   };
   groups?: {
     ordinal: number;

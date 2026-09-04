@@ -111,17 +111,21 @@ function parseSourceGroupTable(text) {
     const rangeCell = cells[2].replace(/[`]/g, "").trim();
     const rr = /^(\d+)\s*[–-]\s*(\d+)$/.exec(rangeCell) || /^(\d+)$/.exec(rangeCell);
     const scanCell = cells[3];
-    const structural = [];
     const sm = /(\d+)\s*[–-]\s*(\d+)/.exec(scanCell);
-    if (sm && !/item 01|within item/i.test(scanCell)) for (let n = Number(sm[1]); n <= Number(sm[2]); n++) structural.push(n);
+    const range = sm ? Array.from({ length: Number(sm[2]) - Number(sm[1]) + 1 }, (_, i) => Number(sm[1]) + i) : [];
+    const sharesItem01 = /shares item 01|within item 01/i.test(scanCell);
+    // Item-01-sharing rows retain their EXACT shared scan run (18–19); every other row's run is pure
+    // structural. Neither is discarded — the source's numeric statement is carried for verification.
     rows.push({
       ordinal: Number(m[1]),
       contents: unq(cells[0]),
       canonical: unq(cells[1]),
       itemFirst: Number(rr[1]),
       itemLast: rr[2] !== undefined ? Number(rr[2]) : Number(rr[1]),
-      structural,
-      sharesItem01: /shares item 01|within item 01/i.test(scanCell),
+      structural: sharesItem01 ? [] : range,
+      sharesItem01,
+      sharedScans: sharesItem01 ? range : [],
+      sharedItemOrdinal: sharesItem01 ? Number(rr[1]) : null,
     });
   }
   return rows;
@@ -157,7 +161,7 @@ function loadPageRecord(workDir, scan, slug, logicalOffset) {
   if (typeof logicalOffset === "number" && printedPage !== null && printedPage !== scan - logicalOffset) {
     throw new Error(`${rel}: visible printed_page ${printedPage} disagrees with the reconciled rule (scan − ${logicalOffset} = ${scan - logicalOffset})`);
   }
-  return { printedPage, section: fm.section ?? null };
+  return { printedPage, section: fm.section ?? null, pageType: fm.page_type ?? null };
 }
 
 // ── Line construction ────────────────────────────────────────────────────────────────────────────
@@ -518,7 +522,7 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
         const row = srcRows.get(g.ordinal);
         if (!row) throw new Error(`group ${g.ordinal}: not present in the source group table`);
         if (row.canonical !== g.titleTa) throw new Error(`group ${g.ordinal}: source canonical title ${JSON.stringify(row.canonical)} != declared ${JSON.stringify(g.titleTa)}`);
-        // The contents witness is distinct only where the source records a difference (group 4).
+        // The contents witness is distinct where the source records a difference (groups 1 and 4).
         const declContents = g.contentsTitleTa ?? g.titleTa;
         if (row.contents !== declContents) throw new Error(`group ${g.ordinal}: source contents witness ${JSON.stringify(row.contents)} != declared ${JSON.stringify(declContents)}`);
         if (row.itemFirst !== g.itemOrdinals[0] || row.itemLast !== g.itemOrdinals[g.itemOrdinals.length - 1]) {
@@ -528,12 +532,29 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
           if (itemScanSet.has(sc)) throw new Error(`group ${g.ordinal}: structural divider scan ${sc} is wrongly claimed by an item's physical scans`);
           allStructural.push(sc);
         }
-        // Group 1 shares item 01; its title-page scans stay inside item 01 and are NOT counted as
-        // pure structural scans.
+        // Group 1 shares item 01: the source names the EXACT retained run (18–19). Prove both scans
+        // belong to the shared item's own physical scans and neither is counted as pure structural.
         if (row.sharesItem01) {
-          const it01 = items.find((it) => it.ordinal === 1);
-          const first = it01?.physicalScans[0].first;
-          if (first !== 18) throw new Error(`group 1: item 01 does not begin at scan 18 (got ${first})`);
+          const shared = items.find((it) => it.ordinal === row.sharedItemOrdinal);
+          if (!shared) throw new Error(`group ${g.ordinal}: shared item ${row.sharedItemOrdinal} not found`);
+          const sharedScanSet = new Set(shared.physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i)));
+          if (!row.sharedScans.length) throw new Error(`group ${g.ordinal}: source states item sharing but names no shared scan run`);
+          // The SOURCE row's shared run must equal the declaration's frozen anchor, and name the same
+          // item — so a source-side change to the exact shared range (e.g. 18–19 → 18–20) fails here,
+          // not merely a generic item-coverage check.
+          if (g.sharedScans === undefined || JSON.stringify(row.sharedScans) !== JSON.stringify(g.sharedScans)) {
+            throw new Error(`group ${g.ordinal}: source shared scans ${JSON.stringify(row.sharedScans)} != the declared anchor ${JSON.stringify(g.sharedScans)}`);
+          }
+          if (row.sharedItemOrdinal !== (g.sharesItemOrdinal ?? null)) {
+            throw new Error(`group ${g.ordinal}: source shared item ${row.sharedItemOrdinal} != declared ${g.sharesItemOrdinal}`);
+          }
+          for (const sc of row.sharedScans) {
+            if (!sharedScanSet.has(sc)) throw new Error(`group ${g.ordinal}: shared scan ${sc} is not inside item ${row.sharedItemOrdinal}'s physical scans`);
+            // A shared scan is a divider/verso page, never a poem-body page — that is what keeps it a
+            // shared structural page rather than absorbed verse.
+            const pt = loadPageRecord(workDir, sc, decl.slug, logicalOffset).pageType;
+            if (pt && pt === "poem") throw new Error(`group ${g.ordinal}: shared scan ${sc} is a poem-body page, not a shared divider/verso page`);
+          }
         }
       }
       return {
@@ -609,6 +630,12 @@ function sliceAssembly(asm) {
 
 function buildProvenance({ decl, srcCommit, sourceTree, items, groups }) {
   const witnessItems = items.filter((i) => i.contentsTitleTa);
+  // GROUP-ONLY variants: a group whose contents/canonical witnesses differ AND whose (contents,
+  // canonical) pair is NOT already an item variant. Group 1's variant string equals item 01's, so it
+  // is an ITEM variant, never double-counted here; group 4's pair matches no item, so it is the one
+  // group-only variant. Source total = item variants + group-only variants.
+  const itemPairs = new Set(witnessItems.map((i) => `${i.contentsTitleTa}\u0000${i.titleTa}`));
+  const groupOnly = (groups ?? []).filter((g) => g.contentsTitleTa && g.contentsTitleTa !== g.titleTa && !itemPairs.has(`${g.contentsTitleTa}\u0000${g.titleTa}`));
   return {
     workId: decl.slug,
     sourceRepo: decl.sourceRepo,
@@ -644,10 +671,20 @@ function buildProvenance({ decl, srcCommit, sourceTree, items, groups }) {
       tamilLines: i.tamil.lineCount,
       englishLines: i.english.lineCount,
     })),
+    // `count`/`items` are the ITEM title variants (present for every publication, so காலப் பேழை is
+    // byte-identical). Where the source establishes overall Gate-3 totals and group-level variants,
+    // those are ADDED: `overall` = {total, exact, variants, unresolved}, and `groupVariants` are
+    // group-only variants (a group whose contents/canonical differ and whose pair is not already an
+    // item variant — so group 1, whose variant equals item 01's, is never double-counted). The
+    // source total is item variants + group-only variants.
     titleWitnesses: {
       count: witnessItems.length,
       note: decl.titleWitnessNote,
       items: witnessItems.map((i) => ({ ordinal: i.ordinal, titlePageWitness: i.titleTa, contentsWitness: i.contentsTitleTa })),
+      ...(decl.titleWitnessTotals ? { overall: decl.titleWitnessTotals } : {}),
+      ...(groupOnly.length || decl.titleWitnessTotals
+        ? { groupVariants: { count: groupOnly.length, groups: groupOnly.map((g) => ({ ordinal: g.ordinal, canonicalWitness: g.titleTa, contentsWitness: g.contentsTitleTa })) } }
+        : {}),
     },
     groups: groups
       ? groups.map((g) => ({ ordinal: g.ordinal, titleTa: g.titleTa, contentsTitleTa: g.contentsTitleTa, titleEn: g.titleEn, itemCount: g.itemOrdinals.length, firstItem: g.itemOrdinals[0], lastItem: g.itemOrdinals[g.itemOrdinals.length - 1] }))
