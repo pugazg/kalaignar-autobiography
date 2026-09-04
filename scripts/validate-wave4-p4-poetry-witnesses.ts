@@ -132,7 +132,12 @@ for (const r of POETRY_WITNESS_RELATIONS) {
 // ---- PUBLIC NOTE SEMANTICS: no forbidden implication, in either language -------------------------
 {
   const FORBIDDEN = /identical|same text|exact copy|corrected|definitive|\boriginal\b|replacement|supersed|preferred/i;
-  const TA_FORBIDDEN = /ஒரே\s*உரை|அச்சொப்பு|திருத்த|மேலான|முந்து|மாற்றிடு/;
+  // Tamil forbidden semantics. Bans "same text" (அதே/ஒரே உரை), "original version" (அசல் பதிப்பு),
+  // "definitive/final version" (இறுதியான பதிப்பு), "corrected version" (சரிசெய்யப்பட்ட பதிப்பு),
+  // byte-copy (அச்சொப்பு), correction (திருத்த) and superiority/supersession terms — while leaving the
+  // legitimate "source witness/version" phrase (மூல ஆதாரப் பதிப்பு) intact.
+  const TA_FORBIDDEN = /அதே\s*உரை|ஒரே\s*உரை|அசல்\s*பதிப்பு|இறுதியான\s*பதிப்பு|சரிசெய்யப்பட்ட\s*பதிப்பு|அச்சொப்பு|திருத்த|மேலான|முந்து|மாற்றிடு/;
+  check("the legitimate 'source witness/version' phrase is not itself forbidden", !TA_FORBIDDEN.test("மூல ஆதாரப் பதிப்பு"));
   for (const r of POETRY_WITNESS_RELATIONS) {
     check(`relation ${r.id}: English note claims no identity/supersession`, !FORBIDDEN.test(r.publicNote.en));
     check(`relation ${r.id}: Tamil note claims no identity/supersession`, !TA_FORBIDDEN.test(r.publicNote.ta));
@@ -190,22 +195,36 @@ for (const r of POETRY_WITNESS_RELATIONS) {
   check("anthology item 02 payload carries no editorial-exception language", !/editorialException|owner-directed|omitted without replacement/i.test(JSON.stringify(item02)));
 }
 
-// ---- PAYLOAD REGRESSION PINS: P4 changes no generated content ------------------------------------
+// ---- PAYLOAD REGRESSION PINS: every approved Poetry artifact stays byte-identical ----------------
+// Each SHA-256 is the exact P3-close byte content of the released artifact. A hard equality pin — not
+// a presence/length check — so any accidental cross-witness or content mutation of an already-approved
+// payload fails here. P4 itself must never edit a payload or update a pin to accommodate a change.
 {
   const pins: [string, string][] = [
+    // Standalone — Anaiya
+    ["public/data/poems/anaiya-vilakku-anna/poem.json", "22b26e59323a7ea1b6ca78b866178da76246e4ea3fc00423224ef9fa04f47fee"],
+    ["public/data/poems/anaiya-vilakku-anna/provenance.json", "8501373910610499fac48822c922e8e941461403863b7dd6444eedf8f50299e7"],
+    // Standalone — Idhayathai
     ["public/data/poems/idhayathai-thanthidu-anna/poem.json", "6833738340243833b712479e017f25294bb0e45b701d66d060a77f634c3e64f7"],
     ["public/data/poems/idhayathai-thanthidu-anna/provenance.json", "d06a664052178762372d42727c95620a3c3a88159f85b56e43a095e8a401e930"],
+    // Standalone — Marathi
+    ["public/data/poems/marathi/poem.json", "bd2f1f48e76b4a419dd0d86859b2c6dd8e43bb0ba3949242817d206b3eb3c0ed"],
+    ["public/data/poems/marathi/provenance.json", "e18bdbda5919bf8839581a0216cf6fafb797565f48ec769ac83e7777522eb3a7"],
+    // Standalone — Thennan
+    ["public/data/poems/thennan-kathai/poem.json", "9d26512203004d794d9a859fc22905601714b6f84094d763294054c4dd8fb53b"],
+    ["public/data/poems/thennan-kathai/provenance.json", "2add1819a2309bbdb7a482f3ff8cff0150978e9e9ce11bdf58409edb34b13bf7"],
+    // P2 publication — Kaalap Pezhai
+    ["public/data/poems/kaalap-pezhaiyum-kavithai-saaviyum/publication.json", "d013e047922d9840a226eb1f2d08c7898758dea811bb9f9cac2f314fa3fb0b78"],
+    ["public/data/poems/kaalap-pezhaiyum-kavithai-saaviyum/provenance.json", "6a655ee198269d27ffcb90f0c4d9784d4d4180bf61a64569643dd7bbc821710c"],
+    // P3 publication — Kalaignarin Kavithaigal
+    ["public/data/poems/kalaignarin-kavithaigal/publication.json", "5b2a8fba7cd80e9082f51fd78459a8008dcb18232ddd4046435d1ffa74e95418"],
+    ["public/data/poems/kalaignarin-kavithaigal/provenance.json", "3321205441bdd2d6b5a86ffda2409dd5b74bc54ac14bea4fc7cd33f386a33dfa"],
   ];
-  for (const [p, h] of pins) eq(`${p} byte-identical`, sha(p), h);
-  for (const p of [
-    "public/data/poems/anaiya-vilakku-anna/poem.json",
-    "public/data/poems/marathi/poem.json",
-    "public/data/poems/thennan-kathai/poem.json",
-    "public/data/poems/kaalap-pezhaiyum-kavithai-saaviyum/publication.json",
-    "public/data/poems/kaalap-pezhaiyum-kavithai-saaviyum/provenance.json",
-    "public/data/poems/kalaignarin-kavithaigal/publication.json",
-    "public/data/poems/kalaignarin-kavithaigal/provenance.json",
-  ]) check(`${p} exists and is readable`, fs.existsSync(path.join(ROOT, p)) && sha(p).length === 64);
+  eq("exactly twelve approved Poetry artifacts are pinned", pins.length, 12);
+  for (const [p, h] of pins) {
+    check(`${p} exists`, fs.existsSync(path.join(ROOT, p)));
+    eq(`${p} is byte-identical to its approved P3-close content`, sha(p), h);
+  }
 }
 
 if (failures.length) {

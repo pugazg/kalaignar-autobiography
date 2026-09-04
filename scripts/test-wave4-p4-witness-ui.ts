@@ -30,6 +30,11 @@ const bi = (slug: string, itemSlug?: string) => {
 };
 
 const FORBIDDEN = /identical|same text|exact copy|corrected|definitive|\boriginal\b|replacement|supersed|preferred/i;
+// Tamil-specific rendered-note guard: same forbidden semantics as the registry validator — "same text"
+// (அதே/ஒரே உரை), "original version" (அசல் பதிப்பு), "definitive/final version" (இறுதியான பதிப்பு),
+// "corrected version" (சரிசெய்யப்பட்ட பதிப்பு), byte-copy (அச்சொப்பு), correction (திருத்த) and
+// superiority/supersession terms. The legitimate மூல ஆதாரப் பதிப்பு phrase is deliberately not banned.
+const TA_FORBIDDEN = /அதே\s*உரை|ஒரே\s*உரை|அசல்\s*பதிப்பு|இறுதியான\s*பதிப்பு|சரிசெய்யப்பட்ட\s*பதிப்பு|அச்சொப்பு|திருத்த|மேலான|முந்து|மாற்றிடு/;
 const KAALAP = "kaalap-pezhaiyum-kavithai-saaviyum";
 
 // The four public directions and the counterpart each must link to.
@@ -52,10 +57,14 @@ for (const [slug, itemSlug, expectedHref] of directions) {
     eq(anchors, [expectedHref], `${at}: renders exactly one link, to ${expectedHref}`);
     ok(!anchors.some((h) => h === `/poems/${slug}` || h === `/poems/${slug}/${itemSlug ?? ""}`), `${at}: does not render a self-link`);
     ok(!anchors.some((h) => h.includes(KAALAP)), `${at}: renders no Kaalap link`);
-    ok(!FORBIDDEN.test(lang), `${at}: no forbidden identity/supersession wording`);
   }
+  // Language-specific forbidden-semantics guards on the actual rendered markup.
+  ok(!FORBIDDEN.test(en), `${at}: English render has no forbidden identity/supersession semantics`);
+  ok(!TA_FORBIDDEN.test(ta), `${at}: Tamil render has no forbidden identity/supersession semantics`);
+  // The current approved weak witness wording still renders in both languages.
   ok(en.includes("Another source witness"), `${at}: English note present`);
   ok(ta.includes("மற்றொரு மூல ஆதாரப் பதிப்பும்"), `${at}: Tamil note present`);
+  ok(!TA_FORBIDDEN.test("மூல ஆதாரப் பதிப்பு"), `${at}: legitimate 'source witness/version' phrase is not banned`);
   // The rendered link carries the stable relation id as its React key (kept in the payload markup).
   ok(links[0].id.length > 0 && !/^\d+$/.test(links[0].id), `${at}: link carries a stable, non-index relation id`);
 }
