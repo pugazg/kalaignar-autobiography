@@ -5,6 +5,10 @@ import path from "node:path";
 import RajaRaniReaderView from "@/components/RajaRaniReader";
 import type { RajaRaniReader } from "@/data/raja-rani";
 
+// Fail closed: only the slugs generateStaticParams emits exist; any other param is a hard 404,
+// never rendered on demand.
+export const dynamicParams = false;
+
 const DIR = "public/data/cinema/raja-rani";
 function loadReader(): RajaRaniReader | null {
   try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), DIR, "reader.json"), "utf-8")); } catch { return null; }
