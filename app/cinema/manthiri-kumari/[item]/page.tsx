@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import ManthiriKumariReader from "@/components/ManthiriKumariReader";
 import type { ManthiriReader } from "@/data/manthiri-kumari";
+import { manthiriItemSlugs } from "@/lib/cinema-wave5-routes";
 
 // Fail closed: only the slugs generateStaticParams emits exist; any other param is a hard 404,
 // never rendered on demand.
@@ -13,20 +14,15 @@ const DIR = "public/data/cinema/manthiri-kumari";
 function loadReader(): ManthiriReader | null {
   try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), DIR, "reader.json"), "utf-8")); } catch { return null; }
 }
-// Registry-driven route set: the story summary plus one slug per performance in source order. Never a
-// naked 1..15 numeric range.
-function slugs(r: ManthiriReader): string[] {
-  return ["story-summary", ...r.performances.map((p) => `performance-${String(p.sourceOrder).padStart(2, "0")}`)];
-}
 
 export function generateStaticParams() {
   const r = loadReader();
-  return r ? slugs(r).map((item) => ({ item })) : [];
+  return r ? manthiriItemSlugs(r).map((item) => ({ item })) : [];
 }
 
 export function generateMetadata({ params }: { params: { item: string } }): Metadata {
   const r = loadReader();
-  if (!r || !slugs(r).includes(params.item)) return { title: "Manthiri Kumari — மந்திரி குமாரி | Kalaignar Digital Library" };
+  if (!r || !manthiriItemSlugs(r).includes(params.item)) return { title: "Manthiri Kumari — மந்திரி குமாரி | Kalaignar Digital Library" };
   let heading = r.storySummary.titleTa, en = "Story summary";
   if (params.item !== "story-summary") {
     const ord = Number(params.item.replace("performance-", ""));
@@ -40,6 +36,6 @@ export function generateMetadata({ params }: { params: { item: string } }): Meta
 
 export default function ManthiriKumariItemPage({ params }: { params: { item: string } }) {
   const r = loadReader();
-  if (!r || !slugs(r).includes(params.item)) notFound();
+  if (!r || !manthiriItemSlugs(r).includes(params.item)) notFound();
   return <ManthiriKumariReader reader={r} slug={params.item} />;
 }
