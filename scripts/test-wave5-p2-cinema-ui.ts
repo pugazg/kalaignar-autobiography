@@ -122,7 +122,8 @@ const RP = load("raja-rani", "provenance.json");
   const src = ta(createElement(RajaRaniSource, { reader: R, prov: RP }));
   ok(src.includes(RP.pdf.sha256) && src.includes("TVA_BOK_0017188"), "raja source shows frozen scan identity");
   ok(src.includes(RP.sourceCommit) && src.includes(RP.workTree), "raja source shows the frozen pins");
-  ok(!src.includes("K. N. சங்கரன்") === true, "raja source names the stamp only as excluded, never as text"); // page mentions exclusion generically
+  ok(!src.includes("K. N. சங்கரன்"), "raja source does not reproduce the PDF-74 stamp text");
+  ok(deleted.every((d) => !src.includes(d)), "raja source names no literal deleted T055 id");
 }
 
 if (failures.length) {
