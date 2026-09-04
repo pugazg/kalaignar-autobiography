@@ -84,6 +84,28 @@ function renderGroupedItems(pub: PublicationBrief, ta: boolean) {
   );
 }
 
+/**
+ * A source-grounded one-line description of the publication's shape, derived ONLY from its own
+ * already-approved structure — its item count and whether the source establishes reading groups —
+ * never from a hard-coded per-title claim. The count is always `pub.itemCount`, so it agrees with the
+ * badge above it and can never drift (e.g. காலப் பேழை… 58, கலைஞரின் கவிதைகள் 77). A grouped anthology
+ * reports its source-established section count and must NEVER inherit a flat publication's wording, nor
+ * a flat publication inherit the grouped "sections" wording. Group detection matches `renderGroupedItems`:
+ * a single trivial group is treated as flat.
+ */
+function describePublication(pub: PublicationBrief, ta: boolean): string {
+  const n = pub.itemCount;
+  const sections = pub.groups && pub.groups.length > 1 ? pub.groups.length : 0;
+  if (sections > 0) {
+    return ta
+      ? `இந்த நூலின் மூலத்தில் நிறுவப்பட்ட ${sections} பிரிவுகளாக அமைந்த ${n} கவிதைகள். ஒவ்வொன்றும் தனித்தனியே வாசிக்கலாம்; கீழே நூலின் வரிசைப்படி பட்டியலிடப்பட்டுள்ளன.`
+      : `The ${n} poems of this book, arranged in its ${sections} source-established sections. Each can be read on its own; they are listed below in the book's order.`;
+  }
+  return ta
+    ? `இந்த நூலில் உள்ள ${n} கவிதைகள். ஒவ்வொன்றும் தனித்தனியே வாசிக்கலாம்; கீழே நூலின் வரிசைப்படி பட்டியலிடப்பட்டுள்ளன.`
+    : `The ${n} poems of this book. Each can be read on its own; they are listed below in the book's order.`;
+}
+
 /** The publication landing: source-backed publication info and all reading items, in canonical order. */
 export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
   const { lang } = useLang();
@@ -108,9 +130,7 @@ export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
             {pub.editionStatement && <span lang="ta">{pub.editionStatement}</span>}
           </div>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>
-            {ta
-              ? "இந்த நூலின் எண்ணிடப்பட்ட முதல் பாகத்தில் உள்ள 58 கவிதைகள். ஒவ்வொன்றும் தனித்தனியே வாசிக்கலாம்; கீழே வரிசைப்படி பட்டியலிடப்பட்டுள்ளன."
-              : "The 58 poems of this book's numbered first part. Each can be read on its own; they are listed below in the book's order."}
+            {describePublication(pub, ta)}
           </p>
           <p className="mt-4 text-xs text-ink/50 dark:text-night-text/50" data-print="hide">
             <Link href={`/poems/${pub.slug}/source`} className="focus-ring rounded underline decoration-dotted underline-offset-2 hover:text-marina dark:hover:text-marina-light">

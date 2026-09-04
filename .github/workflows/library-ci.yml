@@ -83,6 +83,8 @@ jobs:
         run: npm run test:publication-ui
       - name: Poetry publication + witness UI (Wave 4 P3)
         run: npm run test:p3-publication-ui
+      - name: Poetry publication landing copy (post-Wave-4 regression)
+        run: npm run test:publication-landing-copy
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.

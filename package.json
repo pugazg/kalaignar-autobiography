@@ -16,6 +16,7 @@
     "test:standalone-poem-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-standalone-poem-ui.ts",
     "test:publication-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-publication-ui.ts",
     "test:p3-publication-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-p3-publication-ui.ts",
+    "test:publication-landing-copy": "tsx --tsconfig tsconfig.scripts.json scripts/test-publication-landing-copy.ts",
     "test:p4-witness-integrity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave4-p4-poetry-witnesses.ts",
     "test:p4-witness-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave4-p4-witness-ui.ts",
     "test:validator-contract": "node scripts/test-validator-contract.mjs \"${KDL_SOURCES_DIR:-.sources}\"",
