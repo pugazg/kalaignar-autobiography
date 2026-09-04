@@ -1,0 +1,81 @@
+{
+  "slug": "raja-rani",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourceCommit": "75b22046490f92df3bbf641a69a59fcad7b91bde",
+  "repoTree": "43d28d85587294279e4d7fe901b143f5ec469194",
+  "workTree": "abbc5cb8890e67ad2b18e0ab50e5af6f678bbd06",
+  "sourcePath": "works/raja-rani",
+  "pdf": {
+    "filename": "TVA_BOK_0017188_ராஜா_ராணி.pdf",
+    "sha256": "26ecc026b89deafac94bb3b107ee7c5f361c68796c4a1cdf4d01ad7c1c0d31a4",
+    "pages": 80,
+    "canonicalSourcePages": 79
+  },
+  "readingRoomPayloadSha256": "ab1058cb5a22ba78e68938f50efc586cc53eb07ef544bdf3919bb3c4b8c46c9b",
+  "payloadMode": "source-linked-composition",
+  "integrationQaStatus": "payload-complete-verified",
+  "englishProvenance": {
+    "status": "complete-verified",
+    "kind": "project-created",
+    "titleEnIsEditorial": true
+  },
+  "counts": {
+    "scenes": 58,
+    "sourceNumberedScenes": 0,
+    "screenplayUnits": 1236,
+    "immutableDialogueLinks": 1071,
+    "sourceUnlabelledSpokenUnits": 19,
+    "crossPageScreenplayUnits": 15,
+    "numberedSongs": 11,
+    "songSections": 67,
+    "songLineCues": 181,
+    "crossPageNumberedSongs": 4,
+    "songAnthologyAttributed": 5,
+    "songUnresolved": 6,
+    "songPerformanceLinksVerified": 3,
+    "songPerformanceLinksReview": 1,
+    "unitKinds": {
+      "dialogue": 1090,
+      "stage-direction": 137,
+      "performance-cue": 4,
+      "written-text": 5
+    }
+  },
+  "authorship": {
+    "anthologyAttributed": 5,
+    "unresolved": 6,
+    "rule": "song authorship tiers are frozen; the reader must not upgrade either tier"
+  },
+  "structuralExceptions": [
+    {
+      "id": "archival-scene-navigation-not-source-numbering",
+      "rule": "the booklet prints no numbered screenplay scenes; the 58 scene segments are archival/editorial navigation only"
+    },
+    {
+      "id": "deleted-t055-duplicate-ids",
+      "rule": "dialogue ids s055-d026..s055-d030 were deleted duplicates and must never return",
+      "ids": [
+        "s055-d026",
+        "s055-d027",
+        "s055-d028",
+        "s055-d029",
+        "s055-d030"
+      ]
+    },
+    {
+      "id": "pdf-74-ownership-stamp-excluded",
+      "rule": "the PDF-74 K. N. சங்கரன் ownership/library stamp is not canonical screenplay text"
+    },
+    {
+      "id": "scene-58-song-11-review-level",
+      "rule": "the scene-58 to song-11 performance link remains review-level and must not be upgraded"
+    }
+  ],
+  "rights": {
+    "publicationYear": null,
+    "editionStatement": null,
+    "rightsStatus": null,
+    "note": "no year/edition/rights promoted from the source"
+  },
+  "readerSha256": "f1c28efe2a3be14a7a4e379ac7f7ebd41d080ebd59566074854fffe12e7c4acf"
+}
