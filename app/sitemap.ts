@@ -11,6 +11,9 @@ import { NOVEL_SLUGS } from "@/data/novels";
 import { PLAY_SLUGS } from "@/data/plays";
 import { STORY_SLUGS } from "@/data/stories";
 import { LIBRARY_COLLECTIONS } from "@/data/collections";
+import { manthiriItemSlugs, rajaSectionSlugs } from "@/lib/cinema-wave5-routes";
+import type { ManthiriReader } from "@/data/manthiri-kumari";
+import type { RajaRaniReader } from "@/data/raja-rani";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -97,6 +100,29 @@ function loadThiraiIsaiPaadalgalSongSlugs(): string[] {
     const p = path.join(process.cwd(), "public/data/cinema/thirai-isai-paadalgal/index.json");
     const idx = JSON.parse(fs.readFileSync(p, "utf-8")) as { songs: { slug: string }[] };
     return idx.songs.map((s) => s.slug);
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Wave 5 cinema child slugs, from the SAME frozen reader registries that drive the routes'
+ * generateStaticParams (via lib/cinema-wave5-routes). Never a reconstructed numeric range: the exact
+ * set — Manthiri's story summary + 15 performance blocks, Raja's 58 archival scene segments + 11
+ * source-numbered songs — comes from the released reader.json.
+ */
+function loadManthiriKumariItemSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/manthiri-kumari/reader.json");
+    return manthiriItemSlugs(JSON.parse(fs.readFileSync(p, "utf-8")) as ManthiriReader);
+  } catch {
+    return [];
+  }
+}
+function loadRajaRaniSectionSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/raja-rani/reader.json");
+    return rajaSectionSlugs(JSON.parse(fs.readFileSync(p, "utf-8")) as RajaRaniReader);
   } catch {
     return [];
   }
@@ -252,6 +278,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/cinema/thirai-isai-paadalgal`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     ...loadThiraiIsaiPaadalgalSongSlugs().map((slug) => ({
       url: `${BASE}/cinema/thirai-isai-paadalgal/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    // Cinema Writing — மந்திரி குமாரி (Wave 5). Fifth cinema work in onboarding order. The reader and
+    // routes shipped in P2; this block exposes exactly them: landing, /source, the story-summary
+    // surface and one page per performance block — 18 URLs, from the frozen registry, never a 1..15
+    // loop.
+    { url: `${BASE}/cinema/manthiri-kumari`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/cinema/manthiri-kumari/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    ...loadManthiriKumariItemSlugs().map((slug) => ({
+      url: `${BASE}/cinema/manthiri-kumari/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    // Cinema Writing — ராஜா ராணி (Wave 5). Sixth cinema work. Landing, /source, one page per archival
+    // scene segment and one per source-numbered song — 71 URLs, from the frozen registry. The 58
+    // segment slugs are archival navigation, not source scene numbers; the 11 song slugs are the
+    // booklet's own numbering.
+    { url: `${BASE}/cinema/raja-rani`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/cinema/raja-rani/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    ...loadRajaRaniSectionSlugs().map((slug) => ({
+      url: `${BASE}/cinema/raja-rani/${slug}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,

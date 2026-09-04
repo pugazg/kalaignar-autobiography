@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import RajaRaniReaderView from "@/components/RajaRaniReader";
 import type { RajaRaniReader } from "@/data/raja-rani";
+import { rajaSectionSlugs } from "@/lib/cinema-wave5-routes";
 
 // Fail closed: only the slugs generateStaticParams emits exist; any other param is a hard 404,
 // never rendered on demand.
@@ -13,23 +14,15 @@ const DIR = "public/data/cinema/raja-rani";
 function loadReader(): RajaRaniReader | null {
   try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), DIR, "reader.json"), "utf-8")); } catch { return null; }
 }
-// Registry-driven route set: one slug per archival scene segment plus one per source-numbered song.
-// Never a naked numeric range — the exact set comes from the frozen registries.
-function slugs(r: RajaRaniReader): string[] {
-  return [
-    ...r.screenplayScenes.map((s) => `scene-${String(s.archivalSceneOrdinal).padStart(3, "0")}`),
-    ...r.numberedSongs.map((s) => `song-${String(s.numberedSongNumber).padStart(2, "0")}`),
-  ];
-}
 
 export function generateStaticParams() {
   const r = loadReader();
-  return r ? slugs(r).map((section) => ({ section })) : [];
+  return r ? rajaSectionSlugs(r).map((section) => ({ section })) : [];
 }
 
 export function generateMetadata({ params }: { params: { section: string } }): Metadata {
   const r = loadReader();
-  if (!r || !slugs(r).includes(params.section)) return { title: "Raja Rani — ராஜா ராணி | Kalaignar Digital Library" };
+  if (!r || !rajaSectionSlugs(r).includes(params.section)) return { title: "Raja Rani — ராஜா ராணி | Kalaignar Digital Library" };
   let heading: string, en: string;
   if (params.section.startsWith("song-")) {
     const n = Number(params.section.replace("song-", ""));
@@ -46,6 +39,6 @@ export function generateMetadata({ params }: { params: { section: string } }): M
 
 export default function RajaRaniSectionPage({ params }: { params: { section: string } }) {
   const r = loadReader();
-  if (!r || !slugs(r).includes(params.section)) notFound();
+  if (!r || !rajaSectionSlugs(r).includes(params.section)) notFound();
   return <RajaRaniReaderView reader={r} slug={params.section} />;
 }

@@ -79,7 +79,12 @@ export type ReaderStructure =
   // Cinema songs — a collection of lyrics grouped by the FILM each belongs to, with a page per
   // lyric. The spine is film → song, not a single printed work read straight through, which is why
   // it is not "scene": the three cinema works before it are each one booklet.
-  | "film-song";
+  | "film-song"
+  // Cinema film booklet — a compact film book that is NOT a screenplay: a continuous story summary
+  // plus separately printed song/performance blocks (Manthiri Kumari, Wave 5). Deliberately distinct
+  // from "scene" (the screenplay-dialogue model) and from "film-song" (a film-grouped lyric
+  // collection): this is one booklet with a summary and its own numbered performance blocks.
+  | "film-booklet";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
 // merely "every unit currently vendored happens to have this language". A work whose
@@ -514,6 +519,82 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     // A corpus count: the 54 numbered lyrics the released data carries and the reader displays.
     // Not an authorship count — 48 of them are established as Kalaignar's, six are unresolved.
     unitCount: { value: 54, labelTa: "பாடல்கள்", labelEn: "songs" },
+  },
+  {
+    // CINEMA WRITING — Wave 5. The FIFTH work on the திரை எழுத்து shelf. Its reader (P2) is already
+    // live; this entry only makes it discoverable from /read. Appended after Film Songs because the
+    // shelf lists works in ONBOARDING order, not by year.
+    //
+    // A FILM STORY-AND-SONG BOOKLET, NOT A SCREENPLAY. The booklet prints a continuous prose story
+    // summary and 15 separately headed song/performance blocks — it prints no screenplay scenes, so
+    // its reader model is `film-booklet`, not `scene`. Two things this card must not flatten:
+    //   1. AUTHORSHIP. The printed cover credit is `கதை, வசனம்` — story and dialogue by Kalaignar.
+    //      That is NOT a lyric credit: all 15 performance-block item-level lyricists remain
+    //      UNRESOLVED, and block 11's single confirmed anthology witness (kalaignar-song-001) is a
+    //      cross-witness fact on the source page, not a catalogue authorship claim. So the description
+    //      says story and dialogue, never "15 songs by Kalaignar".
+    //   2. `rights` is deliberately ABSENT, exactly as on Parasakthi, Tirumbippaar and Film Songs: a
+    //      composite cinema publication whose song authorship is unresolved cannot be nationalised as
+    //      a whole without claiming unresolved work as his. No year/edition is printed, so `edition`
+    //      is unset — no film release date is inferred as a publication year.
+    id: "manthiri-kumari",
+    slug: "manthiri-kumari",
+    titleTa: "மந்திரி குமாரி",
+    titleEn: "Manthiri Kumari",
+    shelf: "cinema-writing",
+    subtype: "film-story-song-booklet",
+    readerStructure: "film-booklet",
+    href: "/cinema/manthiri-kumari",
+    state: "published",
+    descTa: "கலைஞரின் கதை–வசனம் — கதைச்சுருக்கமும் 15 பாடல்/நடனக் காட்சிகளும் கொண்ட திரைப்படப் புத்தகம்",
+    descEn: "Kalaignar's story and dialogue — a film booklet: a story summary and 15 song/performance blocks",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/manthiri-kumari",
+    sourceCommit: "75b22046490f92df3bbf641a69a59fcad7b91bde",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // A corpus count of the booklet's song/performance blocks — NOT a screenplay scene count and NOT
+    // an authorship count (all 15 item-level lyricists are unresolved).
+    unitCount: { value: 15, labelTa: "பாடல்/நடனக் காட்சிகள்", labelEn: "song/performance blocks" },
+    provenanceHref: "/cinema/manthiri-kumari/source",
+  },
+  {
+    // CINEMA WRITING — Wave 5. The SIXTH work on the திரை எழுத்து shelf. Reader live from P2; this
+    // entry makes it discoverable. Appended after Manthiri Kumari in onboarding order.
+    //
+    // A DIALOGUE / SCREENPLAY BOOKLET with 11 numbered songs, so its reader model is `scene` — the
+    // cinema screenplay-dialogue model Manohara also uses with archive-created navigation. Two facts
+    // this card must not flatten:
+    //   1. THE 58 SCREENPLAY DIVISIONS ARE ARCHIVAL/EDITORIAL NAVIGATION, NOT SOURCE-NUMBERED SCENES —
+    //      the booklet prints no scene numbers. The 11 SONG numbers, by contrast, ARE the booklet's
+    //      own numbering. The description says "archive segments" and "source-numbered songs", never
+    //      "58 numbered scenes".
+    //   2. SONG AUTHORSHIP. Five songs are later-anthology attributed to Kalaignar; six remain
+    //      unresolved. The card does not flatten the 11 into Kalaignar's lyrics, and the review-level
+    //      segment-58/song-11 relation is a source-page fact, never upgraded here.
+    // `rights` absent and no year/edition inferred, for the same composite-publication reason.
+    id: "raja-rani",
+    slug: "raja-rani",
+    titleTa: "ராஜா ராணி",
+    titleEn: "Raja Rani",
+    shelf: "cinema-writing",
+    subtype: "dialogue-screenplay",
+    readerStructure: "scene",
+    href: "/cinema/raja-rani",
+    state: "published",
+    descTa: "கலைஞரின் கதை–வசனம் — வசன நூல்: 58 களஞ்சியப் பகுதிகளும் மூல எண்ணிடப்பட்ட 11 பாடல்களும்",
+    descEn: "Kalaignar's story and dialogue — a dialogue screenplay: 58 archive segments and 11 source-numbered songs",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/raja-rani",
+    sourceCommit: "75b22046490f92df3bbf641a69a59fcad7b91bde",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    // A corpus count of the archival screenplay segments — archive navigation, NOT source-numbered
+    // scenes. The 11 source-numbered songs are separate and live in the reader/source page.
+    unitCount: { value: 58, labelTa: "களஞ்சியப் பகுதிகள்", labelEn: "archive segments" },
+    provenanceHref: "/cinema/raja-rani/source",
   },
   {
     // Digital Library Phase 3 — Speeches. First benchmark: a fully-released, verified Assembly
