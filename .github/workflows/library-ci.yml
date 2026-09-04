@@ -160,6 +160,11 @@ jobs:
                 dir: "kalaignar-cinema-works-thirai-isai-paadalgal",
                 provenance: "data/internal/thirai-isai-paadalgal/provenance.json",
               },
+              // Wave 5 P1 — Manthiri Kumari and Raja Rani pin the SAME cinema commit, so they share
+              // one checkout directory; the same-directory/same-pin guard below keeps its meaning
+              // because both provenance records name that one commit.
+              "cinema/manthiri-kumari": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave5" },
+              "cinema/raja-rani": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave5" },
               "speeches/udhaya-kathir": { repo: "kalaignar-assembly-speeches" },
               "speeches/poonthottam": { repo: "kalaignar-public-speeches" },
               "speeches/arappor": { repo: "kalaignar-public-speeches" },
@@ -278,6 +283,14 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-thirai-isai-paadalgal.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-thirai-isai-paadalgal"
+      - name: Manthiri Kumari (Wave 5 P1)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-manthiri-kumari.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-wave5"
+      - name: Raja Rani (Wave 5 P1)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-raja-rani.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-wave5"
       - name: Udhaya Kathir
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

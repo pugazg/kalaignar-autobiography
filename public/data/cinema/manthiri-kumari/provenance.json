@@ -1,0 +1,63 @@
+{
+  "slug": "manthiri-kumari",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourceCommit": "75b22046490f92df3bbf641a69a59fcad7b91bde",
+  "repoTree": "43d28d85587294279e4d7fe901b143f5ec469194",
+  "workTree": "225662fc8f93d91daff0005b348948da6372840b",
+  "sourcePath": "works/manthiri-kumari",
+  "pdf": {
+    "filename": "TVA_BOK_0026144_மந்திரி_குமாரி.pdf",
+    "sha256": "a64ac0b5ff4adca75d0860d9d52c5324f93f55da3b060cecb43743d0bbc696ee",
+    "pages": 14
+  },
+  "readingRoomPayloadSha256": "20a0db293b936757e7d01def336252f28543337f319dfae6ad7bf5ae886bab43",
+  "payloadMode": "source-linked-composition",
+  "integrationQaStatus": "payload-complete-verified",
+  "englishProvenance": {
+    "status": "complete-verified",
+    "kind": "project-created",
+    "titleEnIsEditorial": true
+  },
+  "counts": {
+    "storySummaryRecords": 1,
+    "storySummaryUnits": 13,
+    "storySummaryCrossPageUnits": 1,
+    "performanceBlocks": 15,
+    "performanceSections": 52,
+    "performanceLineCues": 234,
+    "crossPagePerformanceBlocks": 7,
+    "confirmedAnthologyWitnesses": 1,
+    "sourceOnlyInAnthology": 14,
+    "lyricistsVerified": 0,
+    "lyricistsUnresolved": 15
+  },
+  "authorship": {
+    "verified": 0,
+    "unresolved": 15,
+    "rule": "story/dialogue credit does not establish item-level lyricists"
+  },
+  "crossWitness": {
+    "confirmed": 1,
+    "sourceOnly": 14,
+    "confirmedBlock": 11,
+    "confirmedAnthologyRecordId": "kalaignar-song-001",
+    "rule": "later anthology text must not repair this booklet"
+  },
+  "structuralExceptions": [
+    {
+      "id": "perf-13-heading-label-anomaly",
+      "rule": "performance 13 keeps printed heading பார்த்திபன்—மந்திரிகுமாரி while internal turn labels stay பார்த்திபன் / அமுதவல்லி; do not normalize into one identity"
+    },
+    {
+      "id": "no-source-numbered-scenes",
+      "rule": "performance ordinals 1-15 are archival source-order navigation; the booklet prints no screenplay scene numbers"
+    }
+  ],
+  "rights": {
+    "publicationYear": null,
+    "editionStatement": null,
+    "rightsStatus": null,
+    "note": "no year/edition/rights promoted from the source"
+  },
+  "readerSha256": "ebdbf54fde3031a5027eb0bd61874c2c606a4c765676d2b2f2802082c965bffe"
+}
