@@ -587,9 +587,10 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     state: "published",
     // NEUTRAL description, NO role-specific credit. Unlike Manthiri Kumari — whose booklet prints the
     // explicit role line `கதை, வசனம் : மு. கருணாநிதி` — Raja Rani establishes no equivalent frozen
-    // role-credit record (its cover carries `முழு வசனம், கதை` / `பாடல்கள்` presentation, which the
-    // archive already treats cautiously and does not turn into itemised authorship). So the card
-    // describes the publication's shape only and infers no Kalaignar story/dialogue role.
+    // role-credit record. Its front matter presents `மு. கருணாநிதி` with `முழு வசனம்` / `பாடல்கள்`
+    // on PDF 1, while PDF 2 separately prints `முழுவசனம், கதை` / `பூராப்பாடல்கள்`; the archive treats
+    // those layouts cautiously and does not turn them into itemised role or song-authorship claims.
+    // So the card describes the publication's shape only and infers no Kalaignar story/dialogue role.
     descTa: "வசன நூல்: 58 களஞ்சியப் பகுதிகளும் மூல எண்ணிடப்பட்ட 11 பாடல்களும்",
     descEn: "Dialogue screenplay publication: 58 archive segments and 11 source-numbered songs",
     sourceRepo: "pugazg/kalaignar-cinema-works",
