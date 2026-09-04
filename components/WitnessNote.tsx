@@ -25,7 +25,7 @@ export default function WitnessNote({ links }: { links: WitnessLink[] }) {
             ? l.workTitleTa
             : l.workTitleEn;
         return (
-          <p key={i} className={i > 0 ? "mt-2 text-sm" : "text-sm"} lang={lang}>
+          <p key={l.id} className={i > 0 ? "mt-2 text-sm" : "text-sm"} lang={lang}>
             <GitCompareArrows className="mr-1.5 inline h-3.5 w-3.5 text-marina dark:text-marina-light" aria-hidden />
             <span className="text-ink/70 dark:text-night-text/70">{ta ? l.noteTa : l.noteEn} </span>
             <Link href={l.href} className="focus-ring rounded font-medium text-marina underline decoration-dotted underline-offset-2 hover:text-marina/80 dark:text-marina-light" lang={l.itemTitleTa && !ta ? undefined : "ta"}>

@@ -342,6 +342,19 @@ eq(
 );
 ok(!fs.existsSync(path.join(process.cwd(), "public/data/poetry")), "no publication payload is vendored");
 
+// ── P3 catalogue descriptor is source-faithful (repair 1) ─────────────────────────────────────────
+// The public P3 description must name FIVE SOURCE-ESTABLISHED GROUPS, not "five volumes"
+// (`ஐந்து தொகுதிகளில்`), and must not imply the anthology opens with the poetry assembly (which is
+// group 3, not group 1).
+{
+  const lib = fs.readFileSync(path.join(process.cwd(), "data/library.ts"), "utf-8");
+  const entry = lib.slice(lib.indexOf('id: "kalaignarin-kavithaigal"'), lib.indexOf('provenanceHref: "/poems/kalaignarin-kavithaigal/source"'));
+  ok(!entry.includes("ஐந்து தொகுதிகளில்"), "P3 descriptor does not call the groups five volumes");
+  ok(!entry.includes("from the poetry assembly"), "P3 descriptor does not open at the poetry assembly (group 3)");
+  ok(/five source-established groups/.test(entry), "P3 English descriptor names five source-established groups");
+  ok(/ஐந்து பிரிவுகள/.test(entry), "P3 Tamil descriptor names five source groups");
+}
+
 // ── Report ───────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {
   console.error(`poetry-architecture — ${checks} checks, ${failures.length} FAILED\n`);

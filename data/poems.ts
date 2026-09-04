@@ -639,6 +639,13 @@ export interface PoetryWitnessEndpoint {
 }
 
 export interface PoetryWitnessRelation {
+  /**
+   * A stable, declaration-authored identifier for this relationship record.
+   *
+   * Semantic and hand-written, never generated from an array index or derived by matching titles, so
+   * it survives reordering and carries no poem text. Used as the React key for the cross-witness UI.
+   */
+  id: string;
   relation: "same-canonical-poem-alternate-witness";
   a: PoetryWitnessEndpoint;
   b: PoetryWitnessEndpoint;
@@ -660,6 +667,7 @@ export interface PoetryWitnessRelation {
  */
 export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
   {
+    id: "idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01",
     relation: "same-canonical-poem-alternate-witness",
     a: { slug: "idhayathai-thanthidu-anna" },
     b: { slug: "kalaignarin-kavithaigal", itemSlug: "give-me-your-heart-anna" },
@@ -669,6 +677,7 @@ export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
     },
   },
   {
+    id: "thennan-kathai--kalaignarin-kavithaigal--item-02",
     relation: "same-canonical-poem-alternate-witness",
     a: { slug: "thennan-kathai" },
     b: { slug: "kalaignarin-kavithaigal", itemSlug: "the-tale-of-the-southerner" },
@@ -684,12 +693,12 @@ export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
  * COUNTERPART endpoint and the public note. Registry-driven so the cross-witness UI needs no
  * hard-coded slug conditions, and so a page renders a link only where a relation actually exists.
  */
-export function witnessCounterparts(slug: string, itemSlug?: string): { counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] {
+export function witnessCounterparts(slug: string, itemSlug?: string): { id: string; counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] {
   const matches = (e: PoetryWitnessEndpoint) => e.slug === slug && (e.itemSlug ?? undefined) === (itemSlug ?? undefined);
-  const out: { counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] = [];
+  const out: { id: string; counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] = [];
   for (const r of POETRY_WITNESS_RELATIONS) {
-    if (matches(r.a)) out.push({ counterpart: r.b, note: r.publicNote });
-    else if (matches(r.b)) out.push({ counterpart: r.a, note: r.publicNote });
+    if (matches(r.a)) out.push({ id: r.id, counterpart: r.b, note: r.publicNote });
+    else if (matches(r.b)) out.push({ id: r.id, counterpart: r.a, note: r.publicNote });
   }
   return out;
 }

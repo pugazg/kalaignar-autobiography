@@ -38,7 +38,13 @@ export default {
 
   itemCount: 77,
 
-  // Page records identify an item by its canonical Tamil title; the anthology has no constant
+  // The authoritative Tamil/structural group table is proved against this source document; the group
+  // English titles are separately proved against the released assembly's divider headers.
+  groupMapFile: "indexes/canonical-source-map.md",
+  // The 4 pure divider/verso pairs (groups 2–5) total 8 scans; group 1 shares item 01 and adds none.
+  expectedStructuralScans: 8,
+
+    // Page records identify an item by its canonical Tamil title; the anthology has no constant
   // scan→page offset (Roman I–XVI on scans 2–17, Arabic 1–447 on scans 18–464, plus divider scans).
   sectionIdentity: "canonical-title",
   logicalPageOffset: null,
@@ -87,7 +93,7 @@ export default {
   // each declared English group title against the assembly's  divider header. Group 1
   // shares item 01 and has no separate English divider title.
   groups: [
-    { ordinal: 1, titleTa: "இதயத்தைத் தந்திடு அண்ணா", itemOrdinals: [1] },
+    { ordinal: 1, titleTa: "இதயத்தைத் தந்திடு அண்ணா", contentsTitleTa: "இதயத்தைத் தந்திடு அண்ணா!", itemOrdinals: [1] },
     { ordinal: 2, titleTa: "இனமான ஏந்தல்கள்", titleEn: "Bearers of Dignity", itemOrdinals: [2, 3, 4, 5] },
     { ordinal: 3, titleTa: "கவியரங்கக் கவிதைகள்", titleEn: "Poetry-Assembly Poems", itemOrdinals: Array.from({ length: 33 }, (_, i) => 6 + i) },
     { ordinal: 4, titleTa: "கண்ணீர்த் துளிகள்", contentsTitleTa: "கண்ணீர்க் கவிதை", titleEn: "Tear-Drops", itemOrdinals: [39, 40, 41, 42, 43, 44] },

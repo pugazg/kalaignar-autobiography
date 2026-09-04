@@ -93,6 +93,41 @@ export function parseRuns(spec) {
 }
 const runsToScans = (runs) => runs.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
 
+// Parse the authoritative `## Anthology group structure` table from a source group-map document.
+// Columns: ordinal | contents witness | canonical authority | item range | separate structural scans.
+// A `code`-quoted witness is unwrapped; the structural-scan cell yields the explicit scan numbers it
+// names (an "N–M" run or an "N–M" pair), or [] when it only describes item-01 sharing.
+function parseSourceGroupTable(text) {
+  const start = text.indexOf("## Anthology group structure");
+  if (start < 0) throw new Error("group map: no `## Anthology group structure` section");
+  const section = text.slice(start, text.indexOf("\n## ", start + 1) < 0 ? text.length : text.indexOf("\n## ", start + 1));
+  const rows = [];
+  for (const line of section.split("\n")) {
+    const m = /^\|\s*(\d+)\s*\|(.+)\|\s*$/.exec(line);
+    if (!m) continue;
+    const cells = m[2].split("|").map((c) => c.trim());
+    if (cells.length < 4) continue;
+    const unq = (c) => c.replace(/^`|`$/g, "");
+    const rangeCell = cells[2].replace(/[`]/g, "").trim();
+    const rr = /^(\d+)\s*[–-]\s*(\d+)$/.exec(rangeCell) || /^(\d+)$/.exec(rangeCell);
+    const scanCell = cells[3];
+    const structural = [];
+    const sm = /(\d+)\s*[–-]\s*(\d+)/.exec(scanCell);
+    if (sm && !/item 01|within item/i.test(scanCell)) for (let n = Number(sm[1]); n <= Number(sm[2]); n++) structural.push(n);
+    rows.push({
+      ordinal: Number(m[1]),
+      contents: unq(cells[0]),
+      canonical: unq(cells[1]),
+      itemFirst: Number(rr[1]),
+      itemLast: rr[2] !== undefined ? Number(rr[2]) : Number(rr[1]),
+      structural,
+      sharesItem01: /shares item 01|within item 01/i.test(scanCell),
+    });
+  }
+  return rows;
+}
+
+
 /**
  * The VISIBLE printed-page numeral for one physical scan, read from the frozen page record.
  *
@@ -191,9 +226,10 @@ function layerOf(elements) {
 // ── Per-item reading-layer parse ──────────────────────────────────────────────────────────────────
 // Both layers share a structure: a title H1, HTML comments, and scan-delimited blocks of verse with
 // blank-line stanza breaks inside a block and a page transition between blocks. The Tamil marker is
-// `<!-- scan_page: N -->`; the English marker is `<!-- scan N -->`. Only the English carries the
-// occasional Markdown structural heading (item 14's `### Scene 1`), which the Tamil renders as an
-// ordinary content line — a real cross-layer asymmetry that is preserved rather than reconciled.
+// `<!-- scan_page: N -->`; the English marker is `<!-- scan N -->`. EITHER layer may carry Markdown
+// structural headings the release establishes: காலப் பேழை has them only in English (item 14's
+// `### Scene 1`, an asymmetry preserved rather than reconciled), while கலைஞரின் கவிதைகள் reprints an
+// item's title as a `###` heading in BOTH layers. `allowHeadings` is set per layer by the caller.
 function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
   const lines = body.split("\n");
   const els = [];
@@ -319,9 +355,12 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
       throw new Error(`item ${ord}: contents-title witness ${JSON.stringify(contentsTitleTa)} != declared ${JSON.stringify(d.contentsTitleTa)}`);
     }
     const physicalScans = parseRuns(secFm.physical_scans);
-    // The section's `printed_pages:` frontmatter is the RECONCILED LOGICAL range (scan − 1 across the
-    // block). It is NOT proof that every numeral is visibly printed, so it is stored under an
-    // explicitly logical name and never used as a line's visible printedPage.
+    // The section's `printed_pages:` frontmatter is the source-established RECONCILED LOGICAL page
+    // run list. It is taken from the source EXACTLY (run count, order and every boundary), never
+    // derived: காலப் பேழை happens to satisfy logical = scan − 1 and verifies that constant offset
+    // separately, while கலைஞரின் கவிதைகள் has a Roman/Arabic split and divider scans and so has no
+    // constant offset. Either way this is NOT proof a numeral is visibly printed, so it is stored
+    // under an explicitly logical name and never used as a line's visible printedPage.
     const logicalPrintedPages = secFm.printed_pages ? parseRuns(secFm.printed_pages) : undefined;
     const scans = runsToScans(physicalScans);
     // Page records — read once per scan, verified, and reused for BOTH the visible numeral and the
@@ -460,10 +499,42 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     if (JSON.stringify(flat) !== JSON.stringify(expected)) {
       throw new Error(`groups do not partition items 1..${decl.itemCount} in order: got ${JSON.stringify(flat)}`);
     }
+    // No item may belong to two groups (the partition above already guarantees order and completeness).
+    if (new Set(flat).size !== flat.length) throw new Error(`an item belongs to two groups: ${JSON.stringify(flat)}`);
+
+    // TWO SOURCE WITNESSES for the group structure. The Tamil/structural facts come from the
+    // authoritative `## Anthology group structure` table in the declared group-map file; the English
+    // group titles come from the released assembly's divider headers. Every declared group is proved
+    // against BOTH, and no fact is inferred.
+    const srcRows = decl.groupMapFile ? new Map(parseSourceGroupTable(readText(path.join(workDir, decl.groupMapFile))).map((r) => [r.ordinal, r])) : null;
+    const itemScanSet = new Set(items.flatMap((it) => it.physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i))));
+    const allStructural = [];
     groups = decl.groups.map((g) => {
       const groupEn = groupTitles.get(g.titleTa);
       if (g.titleEn !== undefined && g.titleEn !== groupEn) {
         throw new Error(`group ${g.ordinal} (${g.titleTa}): declared English ${JSON.stringify(g.titleEn)} != the assembly divider English ${JSON.stringify(groupEn)}`);
+      }
+      if (srcRows) {
+        const row = srcRows.get(g.ordinal);
+        if (!row) throw new Error(`group ${g.ordinal}: not present in the source group table`);
+        if (row.canonical !== g.titleTa) throw new Error(`group ${g.ordinal}: source canonical title ${JSON.stringify(row.canonical)} != declared ${JSON.stringify(g.titleTa)}`);
+        // The contents witness is distinct only where the source records a difference (group 4).
+        const declContents = g.contentsTitleTa ?? g.titleTa;
+        if (row.contents !== declContents) throw new Error(`group ${g.ordinal}: source contents witness ${JSON.stringify(row.contents)} != declared ${JSON.stringify(declContents)}`);
+        if (row.itemFirst !== g.itemOrdinals[0] || row.itemLast !== g.itemOrdinals[g.itemOrdinals.length - 1]) {
+          throw new Error(`group ${g.ordinal}: source item range ${row.itemFirst}–${row.itemLast} != declared ${g.itemOrdinals[0]}–${g.itemOrdinals[g.itemOrdinals.length - 1]}`);
+        }
+        for (const sc of row.structural) {
+          if (itemScanSet.has(sc)) throw new Error(`group ${g.ordinal}: structural divider scan ${sc} is wrongly claimed by an item's physical scans`);
+          allStructural.push(sc);
+        }
+        // Group 1 shares item 01; its title-page scans stay inside item 01 and are NOT counted as
+        // pure structural scans.
+        if (row.sharesItem01) {
+          const it01 = items.find((it) => it.ordinal === 1);
+          const first = it01?.physicalScans[0].first;
+          if (first !== 18) throw new Error(`group 1: item 01 does not begin at scan 18 (got ${first})`);
+        }
       }
       return {
         ordinal: g.ordinal,
@@ -473,6 +544,12 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
         itemOrdinals: g.itemOrdinals,
       };
     });
+    if (srcRows && decl.expectedStructuralScans !== undefined) {
+      const uniq = [...new Set(allStructural)].sort((a, b) => a - b);
+      if (uniq.length !== decl.expectedStructuralScans) {
+        throw new Error(`expected ${decl.expectedStructuralScans} pure structural scans, source table names ${uniq.length}: ${JSON.stringify(uniq)}`);
+      }
+    }
   }
 
   const publication = {

@@ -90,6 +90,14 @@ function readerHtml(ord: number, witnessLinks = resolveWitnessLinks(SLUG, pub.it
 // ── 4. Both relationships resolve in BOTH directions ─────────────────────────────────────────────
 {
   eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations");
+  const ids = POETRY_WITNESS_RELATIONS.map((r) => r.id);
+  eq(ids.length, 2, "two relation ids");
+  eq(new Set(ids).size, 2, "relation ids are unique");
+  ok(ids.includes("idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01"), "stable id A");
+  ok(ids.includes("thennan-kathai--kalaignarin-kavithaigal--item-02"), "stable id B");
+  // The resolved link carries its stable relation id (used as the render key).
+  const la = resolveWitnessLinks("idhayathai-thanthidu-anna");
+  eq(la[0]?.id, "idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01", "resolved link carries the stable relation id");
   const dirs: [string, string | undefined, string][] = [
     ["idhayathai-thanthidu-anna", undefined, "/poems/kalaignarin-kavithaigal/give-me-your-heart-anna"],
     ["kalaignarin-kavithaigal", "give-me-your-heart-anna", "/poems/idhayathai-thanthidu-anna"],

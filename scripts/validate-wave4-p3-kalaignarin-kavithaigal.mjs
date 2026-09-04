@@ -289,22 +289,70 @@ eq("no two items share a canonical-title section id", sectionOwner.size, 77);
   check("item 24 does not claim page 221 (item 23's)", !it24.logicalPrintedPages.some((r) => 221 >= r.first && 221 <= r.last));
 }
 
-// ── GROUPS / DIVIDERS ────────────────────────────────────────────────────────────────────────────
+// ── GROUPS / DIVIDERS — independently source-verified ────────────────────────────────────────────
+// The Tamil/structural group facts are re-parsed here from the authoritative source group table by a
+// DIFFERENT implementation than the engine's, and the English group titles from the released
+// assembly — two independent source witnesses.
 {
-  check("the publication carries groups", Array.isArray(pub.groups) && pub.groups.length === 5);
+  check("the publication carries 5 groups", Array.isArray(pub.groups) && pub.groups.length === 5);
   const flat = pub.groups.flatMap((g) => g.itemOrdinals);
   eq("groups partition items 1..77 in order", flat, Array.from({ length: 77 }, (_, i) => i + 1));
+  eq("no item belongs to two groups", new Set(flat).size, flat.length);
   eq("total grouped items equals itemCount (no divider counted as an item)", flat.length, pub.itemCount);
-  // Each group's English title matches the assembly's `## <ta> — <en>` divider header.
+  eq("provenance records the 5 groups", prov.groups?.length, 5);
+
+  // Independent parse of the `## Anthology group structure` table.
+  const map = readText(path.join(WORK, "indexes/canonical-source-map.md"));
+  const secStart = map.indexOf("## Anthology group structure");
+  const secEnd = map.indexOf("\n## ", secStart + 1);
+  const section = map.slice(secStart, secEnd < 0 ? map.length : secEnd);
+  const srcRows = new Map();
+  for (const line of section.split("\n")) {
+    const m = /^\|\s*(\d+)\s*\|(.+)\|\s*$/.exec(line);
+    if (!m) continue;
+    const cells = m[2].split("|").map((c) => c.trim());
+    if (cells.length < 4) continue;
+    const unq = (c) => c.replace(/^`|`$/g, "");
+    const rangeCell = cells[2].replace(/`/g, "").trim();
+    const rr = /^(\d+)\s*[–-]\s*(\d+)$/.exec(rangeCell) || /^(\d+)$/.exec(rangeCell);
+    const scanCell = cells[3];
+    const structural = [];
+    const sm = /(\d+)\s*[–-]\s*(\d+)/.exec(scanCell);
+    if (sm && !/item 01|within item/i.test(scanCell)) for (let n = Number(sm[1]); n <= Number(sm[2]); n++) structural.push(n);
+    srcRows.set(Number(m[1]), { contents: unq(cells[0]), canonical: unq(cells[1]), itemFirst: Number(rr[1]), itemLast: rr[2] !== undefined ? Number(rr[2]) : Number(rr[1]), structural, sharesItem01: /item 01|within item/i.test(scanCell) });
+  }
+  eq("source group table has exactly 5 rows", srcRows.size, 5);
+
   const asmGroups = new Map();
   for (const line of asm) {
     const g = /^##\s+(.*\S)\s+—\s+(.*\S)\s*$/.exec(line);
     if (g && !/^Item\s+\d+$/.test(g[1]) && g[2] !== "English Translation") asmGroups.set(g[1], g[2]);
   }
+
+  const itemScans = new Set(pub.items.flatMap((it) => it.physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i))));
+  const allStructural = [];
   for (const g of pub.groups) {
+    const row = srcRows.get(g.ordinal);
+    check(`group ${g.ordinal}: present in the source table`, !!row);
+    if (!row) continue;
+    eq(`group ${g.ordinal}: canonical title equals the source authority`, g.titleTa, row.canonical);
+    eq(`group ${g.ordinal}: contents witness equals the source table`, g.contentsTitleTa ?? g.titleTa, row.contents);
+    eq(`group ${g.ordinal}: item range equals the source table`, [g.itemOrdinals[0], g.itemOrdinals.at(-1)], [row.itemFirst, row.itemLast]);
     if (g.titleEn) eq(`group ${g.ordinal}: English title matches the assembly divider`, g.titleEn, asmGroups.get(g.titleTa));
+    for (const sc of row.structural) {
+      check(`group ${g.ordinal}: structural scan ${sc} is excluded from every item's scans`, !itemScans.has(sc));
+      allStructural.push(sc);
+    }
   }
-  eq("provenance records the 5 groups", prov.groups?.length, 5);
+  // The 8 pure structural scans, and group-specific witness facts.
+  const uniqStructural = [...new Set(allStructural)].sort((a, b) => a - b);
+  eq("exactly 8 pure structural divider scans", uniqStructural.length, 8);
+  eq("the 8 structural scans are 32,33,70,71,372,373,392,393", uniqStructural, [32, 33, 70, 71, 372, 373, 392, 393]);
+  for (const sc of uniqStructural) check(`structural scan ${sc} is not in the 439 item scans`, !itemScans.has(sc));
+  eq("group 4 retains a distinct contents witness (கண்ணீர்க் கவிதை / கண்ணீர்த் துளிகள்)", [srcRows.get(4).contents, srcRows.get(4).canonical], ["கண்ணீர்க் கவிதை", "கண்ணீர்த் துளிகள்"]);
+  check("group 4 payload keeps both witnesses", pub.groups.find((g) => g.ordinal === 4)?.contentsTitleTa === "கண்ணீர்க் கவிதை" && pub.groups.find((g) => g.ordinal === 4)?.titleTa === "கண்ணீர்த் துளிகள்");
+  check("group 1 shares item 01 (item 01 begins at scan 18)", srcRows.get(1).sharesItem01 && pub.items[0].physicalScans[0].first === 18);
+  check("group 1's scans 18–19 are inside item 01, not counted as pure structural", itemScans.has(18) && itemScans.has(19) && !uniqStructural.includes(18) && !uniqStructural.includes(19));
 }
 
 // ── WITNESS RELATIONS (exactly two) ──────────────────────────────────────────────────────────────
@@ -313,6 +361,13 @@ eq("no two items share a canonical-title section id", sectionOwner.size, 77);
   check("POETRY_WITNESS_RELATIONS is declared", !!relBlock);
   const count = (relBlock?.[1].match(/relation: "same-canonical-poem-alternate-witness"/g) ?? []).length;
   eq("exactly two witness relations are declared", count, 2);
+  // Stable, unique, declaration-authored ids (never index-based, never title-derived).
+  const ids = [...(relBlock?.[1].matchAll(/id:\s*"([^"]+)"/g) ?? [])].map((m) => m[1]);
+  eq("exactly two relation ids are declared", ids.length, 2);
+  eq("the two relation ids are unique", new Set(ids).size, 2);
+  eq("relation id A is the expected stable id", ids.includes("idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01"), true);
+  eq("relation id B is the expected stable id", ids.includes("thennan-kathai--kalaignarin-kavithaigal--item-02"), true);
+  for (const id of ids) check(`relation id ${JSON.stringify(id)} is non-empty and semantic`, id.length > 0 && !/^\d+$/.test(id));
   // Relation A: idhayathai ↔ item 01; Relation B: thennan ↔ item 02.
   const body = relBlock?.[1] ?? "";
   check("relation A links idhayathai to item give-me-your-heart-anna", /slug: "idhayathai-thanthidu-anna"/.test(body) && /itemSlug: "give-me-your-heart-anna"/.test(body));

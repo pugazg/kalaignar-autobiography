@@ -6,6 +6,8 @@ import { publishedWorks } from "@/data/library";
 
 /** One resolved cross-witness link, ready for a reader to render. Registry-driven. */
 export type WitnessLink = {
+  /** The stable relation record id, used as the render key. */
+  id: string;
   href: string;
   workTitleTa: string;
   workTitleEn: string;
@@ -33,10 +35,11 @@ function loadPublication(slug: string): PoetryPublication | null {
 export function resolveWitnessLinks(slug: string, itemSlug?: string): WitnessLink[] {
   const works = publishedWorks();
   const out: WitnessLink[] = [];
-  for (const { counterpart, note } of witnessCounterparts(slug, itemSlug)) {
+  for (const { id, counterpart, note } of witnessCounterparts(slug, itemSlug)) {
     const work = works.find((w) => w.slug === counterpart.slug);
     if (!work) continue; // a relation to a work that is not published renders nothing
     const link: WitnessLink = {
+      id,
       href: counterpart.itemSlug ? `/poems/${counterpart.slug}/${counterpart.itemSlug}` : `/poems/${counterpart.slug}`,
       workTitleTa: work.titleTa,
       workTitleEn: work.titleEn,
