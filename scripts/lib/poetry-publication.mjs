@@ -64,7 +64,12 @@ function stripFrontmatter(text) {
     const mm = /^([A-Za-z0-9_]+):\s*(.*)$/.exec(line);
     if (!mm) continue;
     let v = mm[2].trim();
-    if (v.startsWith('"') && v.endsWith('"')) v = v.slice(1, -1);
+    if (v.startsWith('"') && v.endsWith('"')) {
+      // Double-quoted YAML scalar: unescape \" and \\ so an embedded straight quote (items 36/37
+      // here) matches its unescaped form in the reader-facing assembly header. Curly quotes (காலப்
+      // பேழை) carry no backslash and are unaffected.
+      v = v.slice(1, -1).replace(/\\(["\\])/g, "$1");
+    }
     fm[mm[1]] = v;
   }
   return { fm, body: text.slice(m[0].length) };
@@ -88,6 +93,45 @@ export function parseRuns(spec) {
 }
 const runsToScans = (runs) => runs.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
 
+// Parse the authoritative `## Anthology group structure` table from a source group-map document.
+// Columns: ordinal | contents witness | canonical authority | item range | separate structural scans.
+// A `code`-quoted witness is unwrapped; the structural-scan cell yields the explicit scan numbers it
+// names (an "N–M" run or an "N–M" pair), or [] when it only describes item-01 sharing.
+function parseSourceGroupTable(text) {
+  const start = text.indexOf("## Anthology group structure");
+  if (start < 0) throw new Error("group map: no `## Anthology group structure` section");
+  const section = text.slice(start, text.indexOf("\n## ", start + 1) < 0 ? text.length : text.indexOf("\n## ", start + 1));
+  const rows = [];
+  for (const line of section.split("\n")) {
+    const m = /^\|\s*(\d+)\s*\|(.+)\|\s*$/.exec(line);
+    if (!m) continue;
+    const cells = m[2].split("|").map((c) => c.trim());
+    if (cells.length < 4) continue;
+    const unq = (c) => c.replace(/^`|`$/g, "");
+    const rangeCell = cells[2].replace(/[`]/g, "").trim();
+    const rr = /^(\d+)\s*[–-]\s*(\d+)$/.exec(rangeCell) || /^(\d+)$/.exec(rangeCell);
+    const scanCell = cells[3];
+    const sm = /(\d+)\s*[–-]\s*(\d+)/.exec(scanCell);
+    const range = sm ? Array.from({ length: Number(sm[2]) - Number(sm[1]) + 1 }, (_, i) => Number(sm[1]) + i) : [];
+    const sharesItem01 = /shares item 01|within item 01/i.test(scanCell);
+    // Item-01-sharing rows retain their EXACT shared scan run (18–19); every other row's run is pure
+    // structural. Neither is discarded — the source's numeric statement is carried for verification.
+    rows.push({
+      ordinal: Number(m[1]),
+      contents: unq(cells[0]),
+      canonical: unq(cells[1]),
+      itemFirst: Number(rr[1]),
+      itemLast: rr[2] !== undefined ? Number(rr[2]) : Number(rr[1]),
+      structural: sharesItem01 ? [] : range,
+      sharesItem01,
+      sharedScans: sharesItem01 ? range : [],
+      sharedItemOrdinal: sharesItem01 ? Number(rr[1]) : null,
+    });
+  }
+  return rows;
+}
+
+
 /**
  * The VISIBLE printed-page numeral for one physical scan, read from the frozen page record.
  *
@@ -98,7 +142,7 @@ const runsToScans = (runs) => runs.flatMap((r) => Array.from({ length: r.last - 
  * page record — never from scan − 1. A missing or malformed record fails the import; nothing falls
  * back to scan − 1, null, or the section's logical range.
  */
-function loadPageRecord(workDir, scan, slug) {
+function loadPageRecord(workDir, scan, slug, logicalOffset) {
   const rel = `pages/${String(scan).padStart(4, "0")}.md`;
   const abs = path.join(workDir, rel);
   if (!fs.existsSync(abs)) throw new Error(`missing page record ${rel} for scan ${scan} — the import will not fall back to scan − 1`);
@@ -111,11 +155,13 @@ function loadPageRecord(workDir, scan, slug) {
   if (raw === "null") printedPage = null;
   else if (/^\d+$/.test(raw)) printedPage = Number(raw);
   else throw new Error(`${rel}: unparseable printed_page ${JSON.stringify(fm.printed_page)} — expected a number or null`);
-  // Source-internal consistency: where a numeral IS visible, it must equal the reconciled scan − 1.
-  if (printedPage !== null && printedPage !== scan - 1) {
-    throw new Error(`${rel}: visible printed_page ${printedPage} disagrees with the reconciled rule (scan − 1 = ${scan - 1})`);
+  // Source-internal consistency: where a CONSTANT reconciliation offset holds (காலப் பேழை, offset 1)
+  // a visible numeral must equal scan − offset. Where no constant offset applies (கலைஞரின் கவிதைகள்),
+  // the visible numeral is trusted as read and checked instead against the item's logical range.
+  if (typeof logicalOffset === "number" && printedPage !== null && printedPage !== scan - logicalOffset) {
+    throw new Error(`${rel}: visible printed_page ${printedPage} disagrees with the reconciled rule (scan − ${logicalOffset} = ${scan - logicalOffset})`);
   }
-  return { printedPage, section: fm.section ?? null };
+  return { printedPage, section: fm.section ?? null, pageType: fm.page_type ?? null };
 }
 
 // ── Line construction ────────────────────────────────────────────────────────────────────────────
@@ -184,9 +230,10 @@ function layerOf(elements) {
 // ── Per-item reading-layer parse ──────────────────────────────────────────────────────────────────
 // Both layers share a structure: a title H1, HTML comments, and scan-delimited blocks of verse with
 // blank-line stanza breaks inside a block and a page transition between blocks. The Tamil marker is
-// `<!-- scan_page: N -->`; the English marker is `<!-- scan N -->`. Only the English carries the
-// occasional Markdown structural heading (item 14's `### Scene 1`), which the Tamil renders as an
-// ordinary content line — a real cross-layer asymmetry that is preserved rather than reconciled.
+// `<!-- scan_page: N -->`; the English marker is `<!-- scan N -->`. EITHER layer may carry Markdown
+// structural headings the release establishes: காலப் பேழை has them only in English (item 14's
+// `### Scene 1`, an asymmetry preserved rather than reconciled), while கலைஞரின் கவிதைகள் reprints an
+// item's title as a `###` heading in BOTH layers. `allowHeadings` is set per layer by the caller.
 function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
   const lines = body.split("\n");
   const els = [];
@@ -246,16 +293,22 @@ function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
 // Reconstruct the raw verse/heading/marker stream of a released English body, for the byte-equality
 // proof against the reader-facing assembly. Blank lines and the title H1 are dropped; scan markers,
 // headings and verse lines are kept verbatim.
-function englishBodyStream(body) {
+function englishBodyStream(body, validScans) {
   const out = [];
   let sawTitle = false;
   for (const raw of body.split("\n")) {
     const t = raw.trim();
     if (t === "") continue;
-    if (COMMENT.test(t)) {
-      if (/^<!--\s*scan\s+\d+\s*-->$/.test(t)) out.push(t);
+    const m = /^<!--\s*scan\s+(\d+)\s*-->$/.exec(t);
+    if (m) {
+      // In the reader-facing assembly a group-divider scan marker can trail an item's region before
+      // the next group header. Truncate at the first scan marker that is NOT one of this item's own
+      // scans, so divider structure is never compared as item verse.
+      if (validScans && !validScans.has(Number(m[1]))) break;
+      out.push(t);
       continue;
     }
+    if (COMMENT.test(t)) continue;
     if (!sawTitle && /^#\s/.test(t)) {
       sawTitle = true;
       continue;
@@ -284,10 +337,16 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
   // headers. This is a DIFFERENT artifact from the per-item files the reading layer is built from,
   // so proving each item file equals its slice ties the two released English witnesses together.
   const asm = readText(path.join(workDir, decl.english.assemblyFile));
-  const asmSlices = sliceAssembly(asm);
+  const { slices: asmSlices, groupTitles } = sliceAssembly(asm);
 
   const items = [];
   const seenSlugs = new Set();
+  const sectionOwner = new Map();
+  // Reconciled logical page = physical scan − offset, applied run-by-run WHEN a constant offset
+  // holds (காலப் பேழை, offset 1). கலைஞரின் கவிதைகள் has a Roman/Arabic split and divider scans, so
+  // no constant offset applies there; it declares `logicalPageOffset: null` and the logical pages
+  // are proved against the source printed_pages and the visible numerals instead.
+  const logicalOffset = decl.logicalPageOffset === undefined ? 1 : decl.logicalPageOffset;
   for (const d of decl.items) {
     const ord = d.ordinal;
     // Tamil section
@@ -300,30 +359,47 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
       throw new Error(`item ${ord}: contents-title witness ${JSON.stringify(contentsTitleTa)} != declared ${JSON.stringify(d.contentsTitleTa)}`);
     }
     const physicalScans = parseRuns(secFm.physical_scans);
-    // The section's `printed_pages:` frontmatter is the RECONCILED LOGICAL range (scan − 1 across the
-    // block). It is NOT proof that every numeral is visibly printed, so it is stored under an
-    // explicitly logical name and never used as a line's visible printedPage.
+    // The section's `printed_pages:` frontmatter is the source-established RECONCILED LOGICAL page
+    // run list. It is taken from the source EXACTLY (run count, order and every boundary), never
+    // derived: காலப் பேழை happens to satisfy logical = scan − 1 and verifies that constant offset
+    // separately, while கலைஞரின் கவிதைகள் has a Roman/Arabic split and divider scans and so has no
+    // constant offset. Either way this is NOT proof a numeral is visibly printed, so it is stored
+    // under an explicitly logical name and never used as a line's visible printedPage.
     const logicalPrintedPages = secFm.printed_pages ? parseRuns(secFm.printed_pages) : undefined;
     const scans = runsToScans(physicalScans);
     // Page records — read once per scan, verified, and reused for BOTH the visible numeral and the
     // section-identity guard so a scan is parsed a single time.
-    const records = new Map(scans.map((sc) => [sc, loadPageRecord(workDir, sc, decl.slug)]));
+    const records = new Map(scans.map((sc) => [sc, loadPageRecord(workDir, sc, decl.slug, logicalOffset)]));
     // SECTION IDENTITY. A page record must belong to the current ITEM, not merely the correct work.
-    // The first scan's section is the item's identity; it must name this canonical ordinal, and every
-    // scan the item consumes must carry exactly that same section id — a source-side section change
-    // inside one item would be a real defect, so it fails the import rather than being tolerated.
+    // The first scan's section is the item's identity and EVERY scan the item consumes must carry
+    // exactly that same section — a source-side section change inside one item fails the import. How
+    // the section VALUE identifies the item is declaration-driven, because the two publications label
+    // it differently: காலப் பேழை uses `item-NN-slug`, கலைஞரின் கவிதைகள் uses the item's canonical
+    // Tamil title. Uniqueness across items is enforced globally below.
+    const sectionMode = decl.sectionIdentity ?? "ordinal-slug";
     const sectionId = records.get(scans[0]).section;
-    const expectedPrefix = `item-${String(ord).padStart(2, "0")}-`;
     if (!sectionId) throw new Error(`item ${ord}: page record for scan ${scans[0]} carries no section id`);
-    if (!sectionId.startsWith(expectedPrefix)) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} does not identify ordinal ${ord} (expected prefix ${JSON.stringify(expectedPrefix)})`);
+    if (sectionMode === "ordinal-slug") {
+      const expectedPrefix = `item-${String(ord).padStart(2, "0")}-`;
+      if (!sectionId.startsWith(expectedPrefix)) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} does not identify ordinal ${ord} (expected prefix ${JSON.stringify(expectedPrefix)})`);
+    } else if (sectionMode === "canonical-title") {
+      if (sectionId !== d.titleTa) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} != the item's canonical title ${JSON.stringify(d.titleTa)}`);
+    } else {
+      throw new Error(`unknown sectionIdentity mode ${JSON.stringify(sectionMode)}`);
+    }
     for (const sc of scans) {
       const sid = records.get(sc).section;
       if (sid !== sectionId) throw new Error(`item ${ord}: scan ${sc} page record section ${JSON.stringify(sid)} != the item's section ${JSON.stringify(sectionId)}`);
     }
+    if (sectionOwner.has(sectionId)) throw new Error(`item ${ord}: section ${JSON.stringify(sectionId)} is already used by item ${sectionOwner.get(sectionId)}`);
+    sectionOwner.set(sectionId, ord);
     // VISIBLE printed numerals, from those same records — never scan − 1.
     const printedFor = (scan) => records.get(scan).printedPage;
 
-    const ta = parseLayer(secBody, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: false, printedPageFor: printedFor });
+    // allowHeadings is true for BOTH layers: 8 items reprint their title as a `###` source heading at
+    // the top of the poem body (in both the Tamil section and the English item). காலப் பேழை's Tamil
+    // has no such heading, so this does not change its output.
+    const ta = parseLayer(secBody, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: true, printedPageFor: printedFor });
     if (JSON.stringify(ta.seenScans) !== JSON.stringify(scans)) {
       throw new Error(`item ${ord}: Tamil scans ${JSON.stringify(ta.seenScans)} != declared physical scans ${JSON.stringify(scans)}`);
     }
@@ -331,7 +407,13 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // English per-item file
     const enPath = path.join(workDir, "translations/en/items", `${String(ord).padStart(2, "0")}-${d.slug}-en.md`);
     const enRaw = readText(enPath);
-    const { fm: enFm, body: enBody } = stripFrontmatter(enRaw);
+    const { fm: enFm, body: enBodyRaw } = stripFrontmatter(enRaw);
+    // The per-item English file ends with translator/source apparatus under a LEVEL-2 header
+    // (`## Translator notes`, `## Source note`, …). That apparatus is not verse and the reader-facing
+    // assembly keeps it out of the item body, so it is cut here before the reading layer is built.
+    // Level-3 headers (`### Conclusion`, `### Love or Valour?`) are source structure and are kept.
+    const apparatusAt = enBodyRaw.search(/\n## \S/);
+    const enBody = apparatusAt >= 0 ? enBodyRaw.slice(0, apparatusAt) : enBodyRaw;
     if (Number(enFm.item) !== ord) throw new Error(`item ${ord}: English item file declares item ${enFm.item}`);
     if (enFm.title_en !== d.titleEn) throw new Error(`item ${ord}: English title ${JSON.stringify(enFm.title_en)} != declared ${JSON.stringify(d.titleEn)}`);
     if (enFm.title_ta !== d.titleTa) throw new Error(`item ${ord}: English file title_ta ${JSON.stringify(enFm.title_ta)} != declared ${JSON.stringify(d.titleTa)}`);
@@ -344,8 +426,9 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     const slice = asmSlices.get(ord);
     if (!slice) throw new Error(`item ${ord}: no assembly slice found`);
     if (slice.titleEn !== d.titleEn) throw new Error(`item ${ord}: assembly header title ${JSON.stringify(slice.titleEn)} != declared ${JSON.stringify(d.titleEn)}`);
-    const a = englishBodyStream(enBody);
-    const b = englishBodyStream("# x\n" + slice.body); // assembly slice has no per-item H1; add a dummy so both strip one
+    const scanSet = new Set(scans);
+    const a = englishBodyStream(enBody, scanSet);
+    const b = englishBodyStream("# x\n" + slice.body, scanSet); // assembly slice has no per-item H1; add a dummy so both strip one
     if (a.length !== b.length) throw new Error(`item ${ord}: English item file has ${a.length} stream lines but the assembly slice has ${b.length}`);
     for (let i = 0; i < a.length; i++) {
       if (a[i] !== b[i]) throw new Error(`item ${ord}: English item file diverges from the reader-facing assembly at stream line ${i + 1}:\n  item:     ${a[i]}\n  assembly: ${b[i]}`);
@@ -355,19 +438,23 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // (its structural pagination rule), and every VISIBLE numeral, where a line carries one, must sit
     // inside it. A null visible page (an item's title scan) is fine and is not required to appear.
     if (logicalPrintedPages) {
-      // Run-by-run, not endpoints only: PageRun[] exists so a non-contiguous mapping cannot be
-      // flattened while keeping the same outer endpoints, so each logical run must correspond to its
-      // physical run with each boundary − 1.
-      if (logicalPrintedPages.length !== physicalScans.length) {
-        throw new Error(`item ${ord}: reconciled logical pages have ${logicalPrintedPages.length} runs but physical scans have ${physicalScans.length}`);
-      }
-      for (let r = 0; r < physicalScans.length; r++) {
-        const phys = physicalScans[r];
-        const log = logicalPrintedPages[r];
-        if (log.first !== phys.first - 1 || log.last !== phys.last - 1) {
-          throw new Error(`item ${ord}: logical run ${r} (${log.first}–${log.last}) does not correspond to physical run (${phys.first}–${phys.last}) with each boundary − 1`);
+      // When a constant reconciliation offset holds, prove it run-by-run (not endpoints only, so a
+      // non-contiguous mapping cannot be flattened while keeping the same outer endpoints).
+      if (logicalOffset !== null) {
+        if (logicalPrintedPages.length !== physicalScans.length) {
+          throw new Error(`item ${ord}: reconciled logical pages have ${logicalPrintedPages.length} runs but physical scans have ${physicalScans.length}`);
+        }
+        for (let r = 0; r < physicalScans.length; r++) {
+          const phys = physicalScans[r];
+          const log = logicalPrintedPages[r];
+          if (log.first !== phys.first - logicalOffset || log.last !== phys.last - logicalOffset) {
+            throw new Error(`item ${ord}: logical run ${r} (${log.first}–${log.last}) does not correspond to physical run (${phys.first}–${phys.last}) with each boundary − ${logicalOffset}`);
+          }
         }
       }
+      // Always: every VISIBLE numeral on this item's scans must fall inside its reconciled logical
+      // range. This ties the section's printed_pages to the page records' actual printed_page values
+      // — an independent source layer — and holds for both publications without a constant offset.
       const inRuns = (pp) => logicalPrintedPages.some((r) => pp >= r.first && pp <= r.last);
       for (const e of [...ta.layer.elements, ...en.layer.elements]) {
         if ((e.kind === "line" || e.kind === "source-heading") && e.printedPage != null && !inRuns(e.printedPage)) {
@@ -404,6 +491,88 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
   }
   if (items.length !== decl.itemCount) throw new Error(`assembled ${items.length} items but declared itemCount ${decl.itemCount}`);
 
+  // ── Anthology groups (optional) ─────────────────────────────────────────────────────────────────
+  // Source-established divider structure carried as PUBLICATION STRUCTURE. Dividers are NOT items and
+  // never count toward itemCount. The declared groups must PARTITION the roster 1..N in order (no
+  // gap, no overlap, no reordering), and any group English title must be the one the source assigns
+  // in the reader-facing assembly's `## <ta> — <en>` divider header.
+  let groups;
+  if (decl.groups) {
+    const flat = decl.groups.flatMap((g) => g.itemOrdinals);
+    const expected = Array.from({ length: decl.itemCount }, (_, i) => i + 1);
+    if (JSON.stringify(flat) !== JSON.stringify(expected)) {
+      throw new Error(`groups do not partition items 1..${decl.itemCount} in order: got ${JSON.stringify(flat)}`);
+    }
+    // No item may belong to two groups (the partition above already guarantees order and completeness).
+    if (new Set(flat).size !== flat.length) throw new Error(`an item belongs to two groups: ${JSON.stringify(flat)}`);
+
+    // TWO SOURCE WITNESSES for the group structure. The Tamil/structural facts come from the
+    // authoritative `## Anthology group structure` table in the declared group-map file; the English
+    // group titles come from the released assembly's divider headers. Every declared group is proved
+    // against BOTH, and no fact is inferred.
+    const srcRows = decl.groupMapFile ? new Map(parseSourceGroupTable(readText(path.join(workDir, decl.groupMapFile))).map((r) => [r.ordinal, r])) : null;
+    const itemScanSet = new Set(items.flatMap((it) => it.physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i))));
+    const allStructural = [];
+    groups = decl.groups.map((g) => {
+      const groupEn = groupTitles.get(g.titleTa);
+      if (g.titleEn !== undefined && g.titleEn !== groupEn) {
+        throw new Error(`group ${g.ordinal} (${g.titleTa}): declared English ${JSON.stringify(g.titleEn)} != the assembly divider English ${JSON.stringify(groupEn)}`);
+      }
+      if (srcRows) {
+        const row = srcRows.get(g.ordinal);
+        if (!row) throw new Error(`group ${g.ordinal}: not present in the source group table`);
+        if (row.canonical !== g.titleTa) throw new Error(`group ${g.ordinal}: source canonical title ${JSON.stringify(row.canonical)} != declared ${JSON.stringify(g.titleTa)}`);
+        // The contents witness is distinct where the source records a difference (groups 1 and 4).
+        const declContents = g.contentsTitleTa ?? g.titleTa;
+        if (row.contents !== declContents) throw new Error(`group ${g.ordinal}: source contents witness ${JSON.stringify(row.contents)} != declared ${JSON.stringify(declContents)}`);
+        if (row.itemFirst !== g.itemOrdinals[0] || row.itemLast !== g.itemOrdinals[g.itemOrdinals.length - 1]) {
+          throw new Error(`group ${g.ordinal}: source item range ${row.itemFirst}–${row.itemLast} != declared ${g.itemOrdinals[0]}–${g.itemOrdinals[g.itemOrdinals.length - 1]}`);
+        }
+        for (const sc of row.structural) {
+          if (itemScanSet.has(sc)) throw new Error(`group ${g.ordinal}: structural divider scan ${sc} is wrongly claimed by an item's physical scans`);
+          allStructural.push(sc);
+        }
+        // Group 1 shares item 01: the source names the EXACT retained run (18–19). Prove both scans
+        // belong to the shared item's own physical scans and neither is counted as pure structural.
+        if (row.sharesItem01) {
+          const shared = items.find((it) => it.ordinal === row.sharedItemOrdinal);
+          if (!shared) throw new Error(`group ${g.ordinal}: shared item ${row.sharedItemOrdinal} not found`);
+          const sharedScanSet = new Set(shared.physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i)));
+          if (!row.sharedScans.length) throw new Error(`group ${g.ordinal}: source states item sharing but names no shared scan run`);
+          // The SOURCE row's shared run must equal the declaration's frozen anchor, and name the same
+          // item — so a source-side change to the exact shared range (e.g. 18–19 → 18–20) fails here,
+          // not merely a generic item-coverage check.
+          if (g.sharedScans === undefined || JSON.stringify(row.sharedScans) !== JSON.stringify(g.sharedScans)) {
+            throw new Error(`group ${g.ordinal}: source shared scans ${JSON.stringify(row.sharedScans)} != the declared anchor ${JSON.stringify(g.sharedScans)}`);
+          }
+          if (row.sharedItemOrdinal !== (g.sharesItemOrdinal ?? null)) {
+            throw new Error(`group ${g.ordinal}: source shared item ${row.sharedItemOrdinal} != declared ${g.sharesItemOrdinal}`);
+          }
+          for (const sc of row.sharedScans) {
+            if (!sharedScanSet.has(sc)) throw new Error(`group ${g.ordinal}: shared scan ${sc} is not inside item ${row.sharedItemOrdinal}'s physical scans`);
+            // A shared scan is a divider/verso page, never a poem-body page — that is what keeps it a
+            // shared structural page rather than absorbed verse.
+            const pt = loadPageRecord(workDir, sc, decl.slug, logicalOffset).pageType;
+            if (pt && pt === "poem") throw new Error(`group ${g.ordinal}: shared scan ${sc} is a poem-body page, not a shared divider/verso page`);
+          }
+        }
+      }
+      return {
+        ordinal: g.ordinal,
+        titleTa: g.titleTa,
+        ...(g.contentsTitleTa ? { contentsTitleTa: g.contentsTitleTa } : {}),
+        ...(g.titleEn ? { titleEn: g.titleEn } : {}),
+        itemOrdinals: g.itemOrdinals,
+      };
+    });
+    if (srcRows && decl.expectedStructuralScans !== undefined) {
+      const uniq = [...new Set(allStructural)].sort((a, b) => a - b);
+      if (uniq.length !== decl.expectedStructuralScans) {
+        throw new Error(`expected ${decl.expectedStructuralScans} pure structural scans, source table names ${uniq.length}: ${JSON.stringify(uniq)}`);
+      }
+    }
+  }
+
   const publication = {
     workId: decl.slug,
     slug: decl.slug,
@@ -420,33 +589,53 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     editionStatement: decl.editionStatement,
     itemCount: decl.itemCount,
     items,
+    ...(groups ? { groups } : {}),
   };
 
-  const provenance = buildProvenance({ decl, srcCommit, sourceTree, items, asmSlices });
+  const provenance = buildProvenance({ decl, srcCommit, sourceTree, items, groups });
   return { publication, provenance, asmSlices };
 }
 
-// Split the reader-facing assembly into per-item slices on `## Item N — <title>` headers.
+// Split the reader-facing assembly into per-item slices, and capture the anthology's group English
+// titles. An item slice is the lines after its `## Item N — <title>` header up to the NEXT
+// second-level `## ` header of ANY kind — the next item, a `## <groupTa> — <groupEn>` divider, or a
+// `## Translator notes` block — so nothing between items leaks into an item's verse. The group
+// divider headers give the group English titles the source assigns.
 function sliceAssembly(asm) {
   const lines = asm.split("\n");
   const slices = new Map();
+  const groupTitles = new Map(); // group Tamil title -> group English title
   let cur = null;
   for (const raw of lines) {
-    const m = /^##\s+Item\s+(\d+)\s+—\s+(.*\S)\s*$/.exec(raw);
-    if (m) {
-      cur = { ordinal: Number(m[1]), titleEn: m[2], lines: [] };
+    const item = /^##\s+Item\s+(\d+)\s+—\s+(.*\S)\s*$/.exec(raw);
+    if (item) {
+      cur = { ordinal: Number(item[1]), titleEn: item[2], lines: [] };
       slices.set(cur.ordinal, cur);
+      continue;
+    }
+    if (/^##\s/.test(raw)) {
+      // Any other second-level header ends the current item slice. A `<ta> — <en>` one (that is not
+      // the document's own `<title> — English Translation` header) is a group divider.
+      cur = null;
+      const g = /^##\s+(.*\S)\s+—\s+(.*\S)\s*$/.exec(raw);
+      if (g && g[2] !== "English Translation") groupTitles.set(g[1], g[2]);
       continue;
     }
     if (cur) cur.lines.push(raw);
   }
   const out = new Map();
-  for (const [ord, s] of slices) out.set(ord, { titleEn: s.titleEn, body: s.lines.join("\n") });
-  return out;
+  for (const [ord, sl] of slices) out.set(ord, { titleEn: sl.titleEn, body: sl.lines.join("\n") });
+  return { slices: out, groupTitles };
 }
 
-function buildProvenance({ decl, srcCommit, sourceTree, items, asmSlices }) {
+function buildProvenance({ decl, srcCommit, sourceTree, items, groups }) {
   const witnessItems = items.filter((i) => i.contentsTitleTa);
+  // GROUP-ONLY variants: a group whose contents/canonical witnesses differ AND whose (contents,
+  // canonical) pair is NOT already an item variant. Group 1's variant string equals item 01's, so it
+  // is an ITEM variant, never double-counted here; group 4's pair matches no item, so it is the one
+  // group-only variant. Source total = item variants + group-only variants.
+  const itemPairs = new Set(witnessItems.map((i) => `${i.contentsTitleTa}\u0000${i.titleTa}`));
+  const groupOnly = (groups ?? []).filter((g) => g.contentsTitleTa && g.contentsTitleTa !== g.titleTa && !itemPairs.has(`${g.contentsTitleTa}\u0000${g.titleTa}`));
   return {
     workId: decl.slug,
     sourceRepo: decl.sourceRepo,
@@ -482,11 +671,24 @@ function buildProvenance({ decl, srcCommit, sourceTree, items, asmSlices }) {
       tamilLines: i.tamil.lineCount,
       englishLines: i.english.lineCount,
     })),
+    // `count`/`items` are the ITEM title variants (present for every publication, so காலப் பேழை is
+    // byte-identical). Where the source establishes overall Gate-3 totals and group-level variants,
+    // those are ADDED: `overall` = {total, exact, variants, unresolved}, and `groupVariants` are
+    // group-only variants (a group whose contents/canonical differ and whose pair is not already an
+    // item variant — so group 1, whose variant equals item 01's, is never double-counted). The
+    // source total is item variants + group-only variants.
     titleWitnesses: {
       count: witnessItems.length,
       note: decl.titleWitnessNote,
       items: witnessItems.map((i) => ({ ordinal: i.ordinal, titlePageWitness: i.titleTa, contentsWitness: i.contentsTitleTa })),
+      ...(decl.titleWitnessTotals ? { overall: decl.titleWitnessTotals } : {}),
+      ...(groupOnly.length || decl.titleWitnessTotals
+        ? { groupVariants: { count: groupOnly.length, groups: groupOnly.map((g) => ({ ordinal: g.ordinal, canonicalWitness: g.titleTa, contentsWitness: g.contentsTitleTa })) } }
+        : {}),
     },
+    groups: groups
+      ? groups.map((g) => ({ ordinal: g.ordinal, titleTa: g.titleTa, contentsTitleTa: g.contentsTitleTa, titleEn: g.titleEn, itemCount: g.itemOrdinals.length, firstItem: g.itemOrdinals[0], lastItem: g.itemOrdinals[g.itemOrdinals.length - 1] }))
+      : undefined,
     itemNumberingAnomalies: items
       .filter((i) => i.printedOrdinal !== undefined && i.printedOrdinal !== i.ordinal)
       .map((i) => ({ ordinal: i.ordinal, printedNumber: i.printedOrdinal, note: decl.itemNumberingNote })),

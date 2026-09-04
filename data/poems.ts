@@ -486,6 +486,8 @@ export interface PoetryPublicationGroup {
   ordinal: number;
   titleTa: string;
   contentsTitleTa?: string;
+  /** The English group title the released assembly assigns in its `## <ta> — <en>` divider header. */
+  titleEn?: string;
   itemOrdinals: number[];
 }
 
@@ -568,10 +570,31 @@ export interface PoetryPublicationProvenance {
     englishLines: number;
   }[];
   titleWitnesses: {
+    /** ITEM title variants (present for every publication). */
     count: number;
     note: string;
     items: { ordinal: number; titlePageWitness: string; contentsWitness: string }[];
+    /**
+     * Source-established Gate-3 totals, where the source records them: total = exact + variants;
+     * variants = item variants (`count`) + `groupVariants.count`. Absent on a publication whose
+     * source establishes no such overall accounting.
+     */
+    overall?: { total: number; exact: number; variants: number; unresolved: number };
+    /** Group-only title variants (a group variant not already represented by an item variant). */
+    groupVariants?: {
+      count: number;
+      groups: { ordinal: number; canonicalWitness: string; contentsWitness: string }[];
+    };
   };
+  groups?: {
+    ordinal: number;
+    titleTa: string;
+    contentsTitleTa?: string;
+    titleEn?: string;
+    itemCount: number;
+    firstItem: number;
+    lastItem: number;
+  }[];
   itemNumberingAnomalies: { ordinal: number; printedNumber: number; note: string }[];
   projectRights: {
     appliesTo: string;
@@ -591,7 +614,7 @@ export interface PoetryPublicationProvenance {
 }
 
 /** Registry: exactly the P2 publication. P3 will add கலைஞரின் கவிதைகள். Routes are driven from it. */
-export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum"] as const;
+export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum", "kalaignarin-kavithaigal"] as const;
 export type PoetryPublicationSlug = (typeof POETRY_PUBLICATION_SLUGS)[number];
 
 /**
@@ -628,6 +651,13 @@ export interface PoetryWitnessEndpoint {
 }
 
 export interface PoetryWitnessRelation {
+  /**
+   * A stable, declaration-authored identifier for this relationship record.
+   *
+   * Semantic and hand-written, never generated from an array index or derived by matching titles, so
+   * it survives reordering and carries no poem text. Used as the React key for the cross-witness UI.
+   */
+  id: string;
   relation: "same-canonical-poem-alternate-witness";
   a: PoetryWitnessEndpoint;
   b: PoetryWitnessEndpoint;
@@ -639,5 +669,48 @@ export interface PoetryWitnessRelation {
   publicNote: PoemBilingualText;
 }
 
-/** Empty until P3 lands the two relationships in the same PR as the publication that needs them. */
-export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [];
+/**
+ * The two established relationships, landed with P3 because both counterparts are now public.
+ *
+ * Each says only that another SOURCE WITNESS of the same canonical poem exists — never that the two
+ * texts agree (they do not: item 01's English is "Give Me Your Heart, Anna", the standalone's is
+ * "Lend Me Your Heart, Anna"; the standalone தென்னவன் காதை carries a scan-151 editorial exception the
+ * anthology item does not). Neither supersedes the other; neither is corrected from the other.
+ */
+export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
+  {
+    id: "idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01",
+    relation: "same-canonical-poem-alternate-witness",
+    a: { slug: "idhayathai-thanthidu-anna" },
+    b: { slug: "kalaignarin-kavithaigal", itemSlug: "give-me-your-heart-anna" },
+    publicNote: {
+      ta: "இதே கவிதையின் மற்றொரு மூல ஆதாரப் பதிப்பும் கிடைக்கிறது.",
+      en: "Another source witness of this same poem is available.",
+    },
+  },
+  {
+    id: "thennan-kathai--kalaignarin-kavithaigal--item-02",
+    relation: "same-canonical-poem-alternate-witness",
+    a: { slug: "thennan-kathai" },
+    b: { slug: "kalaignarin-kavithaigal", itemSlug: "the-tale-of-the-southerner" },
+    publicNote: {
+      ta: "இதே கவிதையின் மற்றொரு மூல ஆதாரப் பதிப்பும் கிடைக்கிறது.",
+      en: "Another source witness of this same poem is available.",
+    },
+  },
+];
+
+/**
+ * The witness relationships in which (slug, itemSlug?) is one endpoint, each paired with its
+ * COUNTERPART endpoint and the public note. Registry-driven so the cross-witness UI needs no
+ * hard-coded slug conditions, and so a page renders a link only where a relation actually exists.
+ */
+export function witnessCounterparts(slug: string, itemSlug?: string): { id: string; counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] {
+  const matches = (e: PoetryWitnessEndpoint) => e.slug === slug && (e.itemSlug ?? undefined) === (itemSlug ?? undefined);
+  const out: { id: string; counterpart: PoetryWitnessEndpoint; note: PoemBilingualText }[] = [];
+  for (const r of POETRY_WITNESS_RELATIONS) {
+    if (matches(r.a)) out.push({ id: r.id, counterpart: r.b, note: r.publicNote });
+    else if (matches(r.b)) out.push({ id: r.id, counterpart: r.a, note: r.publicNote });
+  }
+  return out;
+}

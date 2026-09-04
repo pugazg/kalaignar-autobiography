@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, Feather, Home, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
+import WitnessNote from "@/components/WitnessNote";
+import type { WitnessLink } from "@/lib/witness";
 import { renderElements } from "@/components/PoemReader";
 import type { PoetryItem } from "@/data/poems";
 import { useLang } from "@/lib/i18n";
@@ -18,6 +20,7 @@ export default function PublicationItemReader({
   total,
   prev,
   next,
+  witnessLinks = [],
 }: {
   pubSlug: string;
   pubTitleTa: string;
@@ -26,6 +29,7 @@ export default function PublicationItemReader({
   total: number;
   prev: { slug: string; titleTa: string } | null;
   next: { slug: string; titleTa: string } | null;
+  witnessLinks?: WitnessLink[];
 }) {
   const { lang } = useLang();
   const ta = lang === "ta";
@@ -83,6 +87,8 @@ export default function PublicationItemReader({
             <span className="font-tamil text-ink/80 dark:text-night-text/80">{item.contentsTitleTa}</span>
           </p>
         )}
+
+        <WitnessNote links={witnessLinks} />
 
         <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
           <ShareButtons title={`${item.titleTa} · ${item.titleEn}`} path={`/poems/${pubSlug}/${item.slug}`} />

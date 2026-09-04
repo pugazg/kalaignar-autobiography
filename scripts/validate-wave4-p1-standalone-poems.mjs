@@ -150,7 +150,9 @@ check("no poetry-publication payloads are vendored", !fs.existsSync(path.join(pr
 {
   const m = /export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation\[\] = \[([\s\S]*?)\];/.exec(poemsTs);
   check("POETRY_WITNESS_RELATIONS is declared", !!m);
-  check("POETRY_WITNESS_RELATIONS is still empty", !!m && m[1].trim() === "");
+  // P3 has landed two witness relations; they reference standalone poems as endpoints but must not
+  // require any standalone PAYLOAD change — the byte-identity checks below prove that.
+  check("witness relations reference only registry endpoints (no inline poem text)", !!m && !/tamil|english|elements/.test(m[1]));
 }
 
 // ── Independent reconstruction ───────────────────────────────────────────────────────────────────
@@ -589,9 +591,9 @@ for (const [file, expected] of Object.entries(IDHAYATHAI_HASHES)) {
   eq(`${EXISTING_SLUG}: ${file} is byte-identical to the integrated payload`, sha256(readText(path.join(DATA_ROOT, EXISTING_SLUG, file))), expected);
 }
 
-// ── 23–24. The witness registry remains empty; no standalone poem is a publication ───────────────
+// ── 23–24. No standalone poem is a publication; witness relations touch no standalone payload ────
 check("no standalone poem is registered as a publication", ALL_SLUGS.every((slug) => !(arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS") ?? []).includes(slug)));
-check("witness registry remains empty", /POETRY_WITNESS_RELATIONS: PoetryWitnessRelation\[\] = \[\];/.test(poemsTs));
+check("witness relations encode no poem text (registry-only)", !/POETRY_WITNESS_RELATIONS[\s\S]*?elements:/.test(poemsTs));
 
 // ── 25. No second collection ─────────────────────────────────────────────────────────────────────
 {

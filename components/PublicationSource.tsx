@@ -101,8 +101,43 @@ export default function PublicationSource({ slug, prov }: { slug: string; prov: 
           </dl>
         </Card>
 
-        <Card icon={ListOrdered} title={ta ? `தலைப்புச் சான்றுகள் (${prov.titleWitnesses.count})` : `Title witnesses (${prov.titleWitnesses.count})`}>
+        <Card
+          icon={ListOrdered}
+          title={
+            prov.titleWitnesses.overall
+              ? ta
+                ? `தலைப்புச் சான்றுகள் — மூல மொத்தம் ${prov.titleWitnesses.overall.total}`
+                : `Title witnesses — ${prov.titleWitnesses.overall.total} in source`
+              : ta
+                ? `தலைப்புச் சான்றுகள் (${prov.titleWitnesses.count})`
+                : `Title witnesses (${prov.titleWitnesses.count})`
+          }
+        >
+          {/* The overall Gate-3 accounting, where the source records it, so the item table below is
+              never mistaken for the whole. total = exact + variants; variants = item + group. */}
+          {prov.titleWitnesses.overall && (
+            <p className="mt-3 rounded-lg border border-dashed border-brass/40 bg-brass/[0.06] px-3 py-2 text-xs text-ink/75 dark:text-night-text/75" lang={lang}>
+              {ta
+                ? `${prov.titleWitnesses.overall.total} சான்றுகள் · ${prov.titleWitnesses.overall.exact} சரியொப்பு · ${prov.titleWitnesses.overall.variants} மூல மாறுபாடுகள் (${prov.titleWitnesses.count} கவிதை + ${prov.titleWitnesses.groupVariants?.count ?? 0} பிரிவு) · ${prov.titleWitnesses.overall.unresolved} தீர்க்கப்படாதவை`
+                : `${prov.titleWitnesses.overall.total} witnesses · ${prov.titleWitnesses.overall.exact} exact · ${prov.titleWitnesses.overall.variants} source-valid variants (${prov.titleWitnesses.count} item + ${prov.titleWitnesses.groupVariants?.count ?? 0} group) · ${prov.titleWitnesses.overall.unresolved} unresolved`}
+            </p>
+          )}
           <p className="mt-3 text-sm leading-relaxed text-ink/80 dark:text-night-text/80" lang={lang}>{prov.titleWitnesses.note}</p>
+          {prov.titleWitnesses.groupVariants && prov.titleWitnesses.groupVariants.count > 0 && (
+            <div className="mt-3">
+              <h3 className="text-xs font-medium text-ink/55 dark:text-night-text/55">{ta ? `பிரிவுத் தலைப்பு மாறுபாடு (${prov.titleWitnesses.groupVariants.count})` : `Group title variant (${prov.titleWitnesses.groupVariants.count})`}</h3>
+              {prov.titleWitnesses.groupVariants.groups.map((g) => (
+                <p key={g.ordinal} className="mt-1 text-xs" lang="ta">
+                  <span className="font-tamil text-ink/70 dark:text-night-text/70">{g.contentsWitness}</span>
+                  <span className="mx-1.5 text-ink/40 dark:text-night-text/40">↔</span>
+                  <span className="font-tamil text-ink/85 dark:text-night-text/85">{g.canonicalWitness}</span>
+                </p>
+              ))}
+            </div>
+          )}
+          <h3 className="mt-4 text-xs font-medium text-ink/55 dark:text-night-text/55">
+            {prov.titleWitnesses.overall ? (ta ? `கவிதைத் தலைப்பு மாறுபாடுகள் (${prov.titleWitnesses.count})` : `Item title variants (${prov.titleWitnesses.count})`) : ""}
+          </h3>
           <div className="mt-3 overflow-x-auto">
             <table className="w-full text-left text-xs">
               <thead className="text-ink/45 dark:text-night-text/45">
