@@ -83,6 +83,13 @@ jobs:
         run: npm run test:publication-ui
       - name: Poetry publication + witness UI (Wave 4 P3)
         run: npm run test:p3-publication-ui
+      # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
+      # expectations from the witness registry + resolver + already-vendored payloads (no source
+      # clone), so they run here in the build/UI job rather than the source-integrity job below.
+      - name: Poetry witness relations — integrity (Wave 4 P4)
+        run: npm run test:p4-witness-integrity
+      - name: Poetry witness relations — UI regression (Wave 4 P4)
+        run: npm run test:p4-witness-ui
 
   validate:
     # Source-integrity gate. Each published work has a validator that derives its expectations from
