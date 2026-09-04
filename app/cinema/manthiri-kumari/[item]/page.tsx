@@ -1,0 +1,41 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import fs from "node:fs";
+import path from "node:path";
+import ManthiriKumariReader from "@/components/ManthiriKumariReader";
+import type { ManthiriReader } from "@/data/manthiri-kumari";
+
+const DIR = "public/data/cinema/manthiri-kumari";
+function loadReader(): ManthiriReader | null {
+  try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), DIR, "reader.json"), "utf-8")); } catch { return null; }
+}
+// Registry-driven route set: the story summary plus one slug per performance in source order. Never a
+// naked 1..15 numeric range.
+function slugs(r: ManthiriReader): string[] {
+  return ["story-summary", ...r.performances.map((p) => `performance-${String(p.sourceOrder).padStart(2, "0")}`)];
+}
+
+export function generateStaticParams() {
+  const r = loadReader();
+  return r ? slugs(r).map((item) => ({ item })) : [];
+}
+
+export function generateMetadata({ params }: { params: { item: string } }): Metadata {
+  const r = loadReader();
+  if (!r || !slugs(r).includes(params.item)) return { title: "Manthiri Kumari — மந்திரி குமாரி | Kalaignar Digital Library" };
+  let heading = r.storySummary.titleTa, en = "Story summary";
+  if (params.item !== "story-summary") {
+    const ord = Number(params.item.replace("performance-", ""));
+    const p = r.performances.find((x) => x.sourceOrder === ord);
+    if (p) { heading = p.headingTa; en = p.headingEn; }
+  }
+  const title = `${heading} · ${r.work.titleTa} | Kalaignar Digital Library`;
+  const description = `${en} — ${r.work.titleEn} (${r.work.titleTa}), the printed film story-and-song booklet. Original Tamil with a project-created English reading layer.`;
+  return { title, description, openGraph: { title, description }, twitter: { title: `${r.work.titleEn} — ${en}`, description } };
+}
+
+export default function ManthiriKumariItemPage({ params }: { params: { item: string } }) {
+  const r = loadReader();
+  if (!r || !slugs(r).includes(params.item)) notFound();
+  return <ManthiriKumariReader reader={r} slug={params.item} />;
+}
