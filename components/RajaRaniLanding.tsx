@@ -31,7 +31,7 @@ export default function RajaRaniLanding({ reader }: { reader: RajaRaniReader }) 
         <p className="mt-6 font-tamil text-sm leading-[1.9] text-ink/70 dark:text-night-text/70" lang="ta">
           அச்சிடப்பட்ட வசன நூலின் {scenes.length} களஞ்சியப் பகுதிகளும், மூலத்தில் எண்ணிடப்பட்ட {songs.length} பாடல்களும் —
           மூல தமிழில், உடன் இத்திட்டத்திற்காக உருவாக்கப்பட்ட ஆங்கில வாசிப்பும். நூல் திரைக்காட்சிகளை எண்ணிடவில்லை;
-          கீழுள்ள பகுதி எண்கள் களஞ்ச வழிசெலுத்தலுக்கானவை மட்டுமே.
+          கீழுள்ள பகுதி எண்கள் களஞ்சிய வழிசெலுத்தலுக்கானவை மட்டுமே.
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3" data-print="hide">

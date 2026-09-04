@@ -29,6 +29,9 @@ const eq = <T,>(a: T, b: T, label: string) => { checks++; if (JSON.stringify(a) 
 const load = (slug: string, file: string) => JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/cinema", slug, file), "utf-8"));
 const ta = (el: React.ReactElement) => renderToStaticMarkup(createElement(LangProvider, null, el)); // Tamil default
 const strip = (s: string) => s.replace(/<[^>]+>/g, "");
+// The value rendered in the அடையாளம் (archive identifier) definition-list row, so the test proves the
+// FIELD itself is correct rather than that the id appears anywhere in the markup.
+const idField = (src: string) => /அடையாளம்<\/dt>\s*<dd[^>]*>([^<]+)<\/dd>/.exec(src)?.[1] ?? null;
 
 const M: ManthiriReader = load("manthiri-kumari", "reader.json");
 const MP = load("manthiri-kumari", "provenance.json");
@@ -73,8 +76,16 @@ const RP = load("raja-rani", "provenance.json");
   // Source page: frozen identity.
   const src = ta(createElement(ManthiriKumariSource, { reader: M, prov: MP }));
   ok(src.includes(MP.pdf.sha256) && src.includes("TVA_BOK_0026144"), "manthiri source shows frozen scan identity");
+  eq(idField(src), "TVA_BOK_0026144", "manthiri source அடையாளம் field is the full archive id");
+  ok(idField(src) !== "TVA", "manthiri source அடையாளம் is not the truncated 'TVA'");
   ok(src.includes(MP.sourceCommit) && src.includes(MP.workTree), "manthiri source shows the frozen pins");
   ok(src.includes(M.work.storyDialogueCreditAsPrinted), "manthiri source shows the printed credit");
+  // Tamil is the CONTROLLING text, not an "official" edition.
+  ok(src.includes("மூல தமிழே ஆளும் உரை"), "manthiri source states Tamil is the controlling text");
+  ok(!src.includes("மூல தமிழே அதிகாரபூர்வமானது"), "manthiri source makes no 'official Tamil' claim");
+  // Performance blocks are archive navigation — the witness relation is not a printed scene number.
+  ok(src.includes("களஞ்சிய வரிசை 11"), "manthiri source describes the witness as archive-order 11");
+  ok(!/காட்சி\s*11/.test(src), "manthiri source does not call the relation plain காட்சி 11");
   ok(!/\b(19|20)\d\d\b/.test(strip(src).replace(/SHA-256|256/g, "")), "manthiri source asserts no publication year");
 }
 
@@ -121,7 +132,16 @@ const RP = load("raja-rani", "provenance.json");
   // Source page: frozen identity + exclusions.
   const src = ta(createElement(RajaRaniSource, { reader: R, prov: RP }));
   ok(src.includes(RP.pdf.sha256) && src.includes("TVA_BOK_0017188"), "raja source shows frozen scan identity");
+  eq(idField(src), "TVA_BOK_0017188", "raja source அடையாளம் field is the full archive id");
+  ok(idField(src) !== "TVA", "raja source அடையாளம் is not the truncated 'TVA'");
   ok(src.includes(RP.sourceCommit) && src.includes(RP.workTree), "raja source shows the frozen pins");
+  ok(src.includes("மூல தமிழே ஆளும் உரை"), "raja source states Tamil is the controlling text");
+  ok(!src.includes("மூல தமிழே அதிகாரபூர்வமானது"), "raja source makes no 'official Tamil' claim");
+  // The 58 segments are archival navigation — never labelled as printed scene numbers.
+  ok(src.includes("களஞ்சியப் பகுதி 58"), "raja source uses archive-segment 58 for the review relation");
+  ok(src.includes("களஞ்சியப் பகுதி 55"), "raja source uses archive-segment 55 for the deleted-record note");
+  ok(!/காட்சி\s*58/.test(src) && !/காட்சி\s*55/.test(src), "raja source uses no plain காட்சி 58 / காட்சி 55 ordinal wording");
+  ok(src.includes("raja-rani-song-perf-004") || src.includes("review"), "raja source keeps the review relation review-level");
   ok(!src.includes("K. N. சங்கரன்"), "raja source does not reproduce the PDF-74 stamp text");
   ok(deleted.every((d) => !src.includes(d)), "raja source names no literal deleted T055 id");
 }

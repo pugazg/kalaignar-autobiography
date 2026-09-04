@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "மூலமும் சான்றும் — Raja Rani source & provenance | Kalaignar Digital Library",
   description:
     "The controlling scan, page census, screenplay/song structure, frozen song-authorship tiers, the " +
-    "review-level scene-58/song-11 relation and the deleted-record and stamp exclusions behind the " +
+    "review-level archival-segment-58/song-11 relation and the deleted-record and stamp exclusions behind the " +
     "Digital Library's ராஜா ராணி edition.",
 };
 

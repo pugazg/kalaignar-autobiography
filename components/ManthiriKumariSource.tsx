@@ -19,6 +19,13 @@ type Prov = {
   rights: { publicationYear: null | number; editionStatement: null | string; rightsStatus: null | string; note: string };
 };
 
+/** The archive identifier is the leading `TVA_<LETTERS>_<digits>` of the filename. Extract it
+ *  deterministically; if the filename shape is unexpected, show the whole filename rather than a wrong
+ *  truncation. */
+function archiveId(filename: string): string {
+  return /^(TVA_[A-Z]+_\d+)/.exec(filename)?.[1] ?? filename;
+}
+
 export default function ManthiriKumariSource({ reader, prov }: { reader: ManthiriReader; prov: Prov }) {
   const c = reader.counts;
   return (
@@ -35,7 +42,7 @@ export default function ManthiriKumariSource({ reader, prov }: { reader: Manthir
       <Section label="ஆளும் மூலம்">
         <Prose>அச்சிடப்பட்ட திரைப்படப் புத்தகத்தின் ஸ்கேன் நகலே இப்பதிப்பின் ஆளும் மூலம். மூல PDF இந்த இணையதளத்திலோ மூலக் களஞ்சியத்திலோ சேர்க்கப்படவில்லை; கீழ்க்காணும் SHA-256 கைரேகை அதை அடையாளப்படுத்துகிறது.</Prose>
         <Facts rows={[
-          ["அடையாளம்", prov.pdf.filename.replace(/_.*$/, "")],
+          ["அடையாளம்", archiveId(prov.pdf.filename)],
           ["கோப்பு", prov.pdf.filename],
           ["ஸ்கேன் SHA-256", prov.pdf.sha256],
           ["PDF பக்கங்கள்", String(prov.pdf.pages)],
@@ -58,7 +65,7 @@ export default function ManthiriKumariSource({ reader, prov }: { reader: Manthir
           ["பிரிவுகள்", String(c.performanceSections)],
           ["தமிழ்/ஆங்கில வரி இணைகள்", `${c.performanceLineCues} / ${c.performanceLineCues}`],
           ["பக்கம் தாண்டிய காட்சிகள்", String(c.crossPagePerformanceBlocks)],
-          ["மூலத்தில் எண்ணிடப்பட்ட காட்சிகள்", "0 — காட்சி வரிசை களஞ்சிய வழிசெலுத்தல் மட்டுமே"],
+          ["மூலத்தில் எண்ணிடப்பட்ட காட்சிகள்", "0 — வரிசை களஞ்சிய வழிசெலுத்தல் மட்டுமே"],
         ]} />
       </Section>
 
@@ -72,10 +79,10 @@ export default function ManthiriKumariSource({ reader, prov }: { reader: Manthir
 
       <Section label="குறுக்கு-சான்று நிலை">
         <Facts rows={[
-          ["உறுதிப்படுத்தப்பட்ட தற்போதைய தொகுப்புச் சான்று", `${prov.crossWitness.confirmed} — காட்சி ${prov.crossWitness.confirmedBlock} ↔ ${prov.crossWitness.confirmedAnthologyRecordId}`],
+          ["உறுதிப்படுத்தப்பட்ட தற்போதைய தொகுப்புச் சான்று", `${prov.crossWitness.confirmed} — களஞ்சிய வரிசை ${prov.crossWitness.confirmedBlock} ↔ ${prov.crossWitness.confirmedAnthologyRecordId}`],
           ["மூலத்தில் மட்டும் உள்ளவை", String(prov.crossWitness.sourceOnly)],
         ]} />
-        <Prose className="mt-3">காட்சி 11 (மாட்டுக்கார பையன்) மட்டுமே தற்போதைய தொகுப்பில் உறுதிப்படுத்தப்பட்ட ஒரு சான்று-தொடர்பைக் கொண்டுள்ளது. இது ஒரே உரை என்பதற்கோ, இந்நூலைத் தொகுப்பு உரையால் மாற்றுவதற்கோ, நூல் நிலைப் பாடலாசிரியப் பொறுப்பை உயர்த்துவதற்கோ சான்று அன்று.</Prose>
+        <Prose className="mt-3">களஞ்சிய வரிசை 11 (மாட்டுக்கார பையன்) மட்டுமே தற்போதைய தொகுப்பில் உறுதிப்படுத்தப்பட்ட ஒரு சான்று-தொடர்பைக் கொண்டுள்ளது. இது ஒரே உரை என்பதற்கோ, இந்நூலைத் தொகுப்பு உரையால் மாற்றுவதற்கோ, நூல் நிலைப் பாடலாசிரியப் பொறுப்பை உயர்த்துவதற்கோ சான்று அன்று.</Prose>
       </Section>
 
       <Section label="ஆங்கில அடுக்கு">
@@ -83,7 +90,7 @@ export default function ManthiriKumariSource({ reader, prov }: { reader: Manthir
           ["நிலை", prov.englishProvenance.status],
           ["வகை", prov.englishProvenance.kind],
         ]} />
-        <Prose className="mt-3">ஆங்கிலம் இத்திட்டத்திற்காக உருவாக்கப்பட்ட, மூலத்துடன் இணைக்கப்பட்ட வாசிப்பு அடுக்கு. இது அதிகாரபூர்வ வரலாற்று வெளியீட்டு மொழிபெயர்ப்பு அன்று. மூல தமிழே அதிகாரபூர்வமானது.</Prose>
+        <Prose className="mt-3">ஆங்கிலம் இத்திட்டத்திற்காக உருவாக்கப்பட்ட, மூலத்துடன் இணைக்கப்பட்ட வாசிப்பு அடுக்கு. இது அதிகாரபூர்வ வரலாற்று வெளியீட்டு மொழிபெயர்ப்பு அன்று. மூல தமிழே ஆளும் உரை.</Prose>
       </Section>
 
       <Section label="ஒருமைப்பாட்டுக் கைரேகைகள்">

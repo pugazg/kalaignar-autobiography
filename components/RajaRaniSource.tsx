@@ -16,6 +16,12 @@ type Prov = {
   rights: { publicationYear: null | number; editionStatement: null | string; rightsStatus: null | string; note: string };
 };
 
+/** Leading `TVA_<LETTERS>_<digits>` archive id; whole filename (never a wrong truncation) if the shape
+ *  is unexpected. */
+function archiveId(filename: string): string {
+  return /^(TVA_[A-Z]+_\d+)/.exec(filename)?.[1] ?? filename;
+}
+
 export default function RajaRaniSource({ reader, prov }: { reader: RajaRaniReader; prov: Prov }) {
   const c = reader.counts;
   const attributedNumbers = reader.numberedSongs.filter((s) => s.authorshipStatus === "anthology-attributed").map((s) => s.numberedSongNumber).join(", ");
@@ -34,7 +40,7 @@ export default function RajaRaniSource({ reader, prov }: { reader: RajaRaniReade
       <Section label="ஆளும் மூலம்">
         <Prose>அச்சிடப்பட்ட வசன நூலின் ஸ்கேன் நகலே இப்பதிப்பின் ஆளும் மூலம். மூல PDF இணையதளத்திலோ மூலக் களஞ்சியத்திலோ சேர்க்கப்படவில்லை; SHA-256 கைரேகை அதை அடையாளப்படுத்துகிறது.</Prose>
         <Facts rows={[
-          ["அடையாளம்", prov.pdf.filename.replace(/_.*$/, "")],
+          ["அடையாளம்", archiveId(prov.pdf.filename)],
           ["கோப்பு", prov.pdf.filename],
           ["ஸ்கேன் SHA-256", prov.pdf.sha256],
           ["PDF பக்கங்கள்", String(prov.pdf.pages)],
@@ -72,17 +78,17 @@ export default function RajaRaniSource({ reader, prov }: { reader: RajaRaniReade
         <Prose className="mt-3">பிற்கால தொகுப்புச் சான்று மூல நூலின் தனி நிலைப் பாடலாசிரியப் பொறுப்பை நிறுவாது. எந்த அடுக்கும் உயர்த்தப்படவில்லை; தீர்க்கப்படாத நிலை “கலைஞர் அல்லாதவர்” என்று பொருள்படாது.</Prose>
       </Section>
 
-      <Section label="காட்சி 58 ↔ பாட்டு 11 தொடர்பு">
-        <Prose>காட்சி 58-க்கும் பாட்டு 11-க்கும் இடையிலான நிகழ்ச்சித் தொடர்பு (raja-rani-song-perf-004) “மறு ஆய்வுக்குரியது” (review) நிலையிலேயே உள்ளது. இது உறுதிப்படுத்தப்பட்டதாக உயர்த்தப்படவில்லை.</Prose>
+      <Section label="களஞ்சியப் பகுதி 58 ↔ பாட்டு 11 தொடர்பு">
+        <Prose>களஞ்சியப் பகுதி 58-க்கும் பாட்டு 11-க்கும் இடையிலான நிகழ்ச்சித் தொடர்பு (raja-rani-song-perf-004) “மறு ஆய்வுக்குரியது” (review) நிலையிலேயே உள்ளது. இது உறுதிப்படுத்தப்பட்டதாக உயர்த்தப்படவில்லை.</Prose>
       </Section>
 
       <Section label="விலக்கப்பட்டவை">
-        <Prose>PDF 74-இல் உள்ள உரிமையாளர்/நூலக முத்திரை மூல வசன உரையின் பகுதியன்று; அது வாசிப்பில் தோன்றாது. காட்சி 55-இல் தவறாக இரட்டித்திருந்த ஐந்து T055 நகல் உரையாடல் பதிவுகள் நீக்கப்பட்டவை; அவை வாசிப்பில் மீண்டும் தோன்றா.</Prose>
+        <Prose>PDF 74-இல் உள்ள உரிமையாளர்/நூலக முத்திரை மூல வசன உரையின் பகுதியன்று; அது வாசிப்பில் தோன்றாது. களஞ்சியப் பகுதி 55-இல் தவறாக இரட்டித்திருந்த ஐந்து T055 நகல் உரையாடல் பதிவுகள் நீக்கப்பட்டவை; அவை வாசிப்பில் மீண்டும் தோன்றா.</Prose>
       </Section>
 
       <Section label="ஆங்கில அடுக்கு">
         <Facts rows={[["நிலை", prov.englishProvenance.status], ["வகை", prov.englishProvenance.kind]]} />
-        <Prose className="mt-3">ஆங்கிலம் இத்திட்டத்திற்காக உருவாக்கப்பட்ட, மூலத்துடன் இணைக்கப்பட்ட வாசிப்பு அடுக்கு. அதிகாரபூர்வ வரலாற்று வெளியீட்டு மொழிபெயர்ப்பு அன்று; மூல தமிழே அதிகாரபூர்வமானது.</Prose>
+        <Prose className="mt-3">ஆங்கிலம் இத்திட்டத்திற்காக உருவாக்கப்பட்ட, மூலத்துடன் இணைக்கப்பட்ட வாசிப்பு அடுக்கு. அதிகாரபூர்வ வரலாற்று வெளியீட்டு மொழிபெயர்ப்பு அன்று; மூல தமிழே ஆளும் உரை.</Prose>
       </Section>
 
       <Section label="ஒருமைப்பாட்டுக் கைரேகைகள்">
