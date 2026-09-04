@@ -83,7 +83,9 @@ export type ReaderStructure =
   // Cinema film booklet — a compact film book that is NOT a screenplay: a continuous story summary
   // plus separately printed song/performance blocks (Manthiri Kumari, Wave 5). Deliberately distinct
   // from "scene" (the screenplay-dialogue model) and from "film-song" (a film-grouped lyric
-  // collection): this is one booklet with a summary and its own numbered performance blocks.
+  // collection): this is one booklet with a summary and 15 separately headed performance blocks in
+  // source order — the booklet prints no scene-numbering system, and the ordinals are archival
+  // navigation.
   | "film-booklet";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
@@ -583,8 +585,13 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     readerStructure: "scene",
     href: "/cinema/raja-rani",
     state: "published",
-    descTa: "கலைஞரின் கதை–வசனம் — வசன நூல்: 58 களஞ்சியப் பகுதிகளும் மூல எண்ணிடப்பட்ட 11 பாடல்களும்",
-    descEn: "Kalaignar's story and dialogue — a dialogue screenplay: 58 archive segments and 11 source-numbered songs",
+    // NEUTRAL description, NO role-specific credit. Unlike Manthiri Kumari — whose booklet prints the
+    // explicit role line `கதை, வசனம் : மு. கருணாநிதி` — Raja Rani establishes no equivalent frozen
+    // role-credit record (its cover carries `முழு வசனம், கதை` / `பாடல்கள்` presentation, which the
+    // archive already treats cautiously and does not turn into itemised authorship). So the card
+    // describes the publication's shape only and infers no Kalaignar story/dialogue role.
+    descTa: "வசன நூல்: 58 களஞ்சியப் பகுதிகளும் மூல எண்ணிடப்பட்ட 11 பாடல்களும்",
+    descEn: "Dialogue screenplay publication: 58 archive segments and 11 source-numbered songs",
     sourceRepo: "pugazg/kalaignar-cinema-works",
     sourcePath: "works/raja-rani",
     sourceCommit: "75b22046490f92df3bbf641a69a59fcad7b91bde",

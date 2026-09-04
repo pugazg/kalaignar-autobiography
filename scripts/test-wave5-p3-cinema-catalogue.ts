@@ -70,8 +70,11 @@ eq(cinemaHrefs, [
   "/cinema/manohara", "/cinema/parasakthi", "/cinema/tirumbippaar",
   "/cinema/thirai-isai-paadalgal", "/cinema/manthiri-kumari", "/cinema/raja-rani",
 ], "Cinema shelf order is manohara · parasakthi · tirumbippaar · film-songs · manthiri · raja");
-// Only over-cap shelves get a disclosure; adding 2 cinema works (6 ≤ cap) adds none.
-eq(shelves.filter((s) => s.entries.length > CAP).length, 1, "exactly one shelf over the cap (Fiction), unchanged by P3");
+// Only over-cap shelves get a disclosure. Speeches (14 discovery entries) is the sole over-cap shelf;
+// Fiction has 39 works but only 3 discovery entries (its 37-story anthology is one collection entry),
+// so it is BELOW the cap. Cinema moving 4 → 6 stays exactly at the cap and adds no disclosure.
+eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["speeches"], "Speeches remains the sole over-cap shelf");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 3, "Fiction has 3 discovery entries (below the cap) despite 39 works");
 
 // ── SITEMAP ─────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
@@ -83,11 +86,21 @@ const rajaUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/raja-rani`));
 eq(manUrls.length, 18, "18 Manthiri sitemap URLs");
 eq(rajaUrls.length, 71, "71 Raja Rani sitemap URLs");
 eq(manUrls.length + rajaUrls.length, 89, "89 Wave-5 cinema URLs added");
-// Exact expected sets from the frozen registries.
-const expMan = new Set([`${origin}/cinema/manthiri-kumari`, `${origin}/cinema/manthiri-kumari/source`, ...manthiriItemSlugs(M).map((s) => `${origin}/cinema/manthiri-kumari/${s}`)]);
-const expRaja = new Set([`${origin}/cinema/raja-rani`, `${origin}/cinema/raja-rani/source`, ...rajaSectionSlugs(R).map((s) => `${origin}/cinema/raja-rani/${s}`)]);
-eq(new Set(manUrls), expMan, "Manthiri sitemap set == registry (landing + source + summary + 15 performances)");
-eq(new Set(rajaUrls), expRaja, "Raja sitemap set == registry (landing + source + 58 segments + 11 songs)");
+// EXACT set equality from the frozen registries. Compared as SORTED ARRAYS, not as Sets: a Set
+// serialises to "{}" under JSON.stringify, so `eq(new Set(a), new Set(b))` would false-pass for ANY
+// two sets. Sorted arrays make a missing URL, an extra URL, or a same-sized-but-different set all fail.
+const expMan = [`${origin}/cinema/manthiri-kumari`, `${origin}/cinema/manthiri-kumari/source`, ...manthiriItemSlugs(M).map((s) => `${origin}/cinema/manthiri-kumari/${s}`)];
+const expRaja = [`${origin}/cinema/raja-rani`, `${origin}/cinema/raja-rani/source`, ...rajaSectionSlugs(R).map((s) => `${origin}/cinema/raja-rani/${s}`)];
+const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
+const uniq = (a: string[]) => Array.from(new Set(a));
+eq(uniqSorted(manUrls), uniqSorted(expMan), "Manthiri sitemap set == registry (landing + source + summary + 15 performances)");
+eq(uniqSorted(rajaUrls), uniqSorted(expRaja), "Raja sitemap set == registry (landing + source + 58 segments + 11 songs)");
+// Belt-and-braces set-difference: nothing missing, nothing extra, in either direction.
+const diff = (a: string[], b: string[]) => a.filter((x) => !b.includes(x));
+eq(diff(uniq(manUrls), expMan), [], "no Manthiri sitemap URL outside the registry");
+eq(diff(expMan, uniq(manUrls)), [], "no registry Manthiri URL missing from the sitemap");
+eq(diff(uniq(rajaUrls), expRaja), [], "no Raja sitemap URL outside the registry");
+eq(diff(expRaja, uniq(rajaUrls)), [], "no registry Raja URL missing from the sitemap");
 // Presence spot-checks.
 for (const u of ["/cinema/manthiri-kumari", "/cinema/manthiri-kumari/source", "/cinema/manthiri-kumari/story-summary", "/cinema/manthiri-kumari/performance-01", "/cinema/manthiri-kumari/performance-15",
   "/cinema/raja-rani", "/cinema/raja-rani/source", "/cinema/raja-rani/scene-001", "/cinema/raja-rani/scene-058", "/cinema/raja-rani/song-01", "/cinema/raja-rani/song-11"]) {
@@ -108,8 +121,15 @@ const rCopy = `${raja[0].titleEn} ${raja[0].descEn} ${raja[0].descTa}`;
 ok(!/\b58 (numbered )?scenes\b|numbered scenes/i.test(rCopy), "Raja card claims no 58 numbered scenes");
 ok(!/11 (songs|lyrics) by|songs by kalaignar/i.test(rCopy), "Raja card claims no blanket song authorship");
 ok(/archive segment|களஞ்சியப் பகுதி/.test(rCopy), "Raja card frames the 58 as archive segments");
+// Raja's source establishes no explicit role-specific credit line like Manthiri's printed
+// `கதை, வசனம் : மு. கருணாநிதி`, so the card uses NEUTRAL screenplay-publication wording and does NOT
+// infer a Kalaignar story/dialogue role credit.
+ok(/Dialogue screenplay publication/i.test(rCopy) || /வசன நூல்/.test(rCopy), "Raja card uses neutral screenplay-publication wording");
+ok(!/Kalaignar's story and dialogue/i.test(rCopy) && !/கலைஞரின் கதை–வசனம்/.test(rCopy), "Raja card infers no role-specific story/dialogue credit");
 ok(raja[0].edition === undefined, "Raja card asserts no edition/year");
 ok(raja[0].rights === undefined, "Raja card asserts no rights status");
+// Manthiri's story/dialogue credit IS source-backed (printed கதை, வசனம் : மு. கருணாநிதி) and remains.
+ok(/Kalaignar's story and dialogue/i.test(mCopy) && /கலைஞரின் கதை–வசனம்/.test(mCopy), "Manthiri card keeps its source-backed story/dialogue credit");
 
 if (failures.length) {
   console.error(`\nwave5-p3-cinema-catalogue — ${checks} checks, ${failures.length} FAILED\n`);
