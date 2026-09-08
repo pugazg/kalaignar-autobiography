@@ -89,6 +89,14 @@ jobs:
         run: npm run test:wave5-p2-cinema-ui
       - name: Cinema catalogue/discovery/sitemap (Wave 5 P3)
         run: npm run test:wave5-p3-cinema-catalogue
+      # Wave 5 P4 — Cinema cross-work integrity + public-semantics hardening. No source clone: both
+      # gates consume the vendored approved payloads and the real in-repo structures. Placed AFTER the
+      # build so the integrity gate's build-output boundary (prerender-manifest routes, .html count,
+      # Wave-5 routes present / invalid absent) reads the real .next artifacts from the Build step above.
+      - name: Cinema cross-work integrity (Wave 5 P4)
+        run: npm run test:wave5-p4-cinema-integrity
+      - name: Cinema cross-work UI regression (Wave 5 P4)
+        run: npm run test:wave5-p4-cinema-ui
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
