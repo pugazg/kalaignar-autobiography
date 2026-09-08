@@ -97,6 +97,17 @@ jobs:
         run: npm run test:wave5-p4-cinema-integrity
       - name: Cinema cross-work UI regression (Wave 5 P4)
         run: npm run test:wave5-p4-cinema-ui
+      # Wave 6 Batch 1 — Ammayappan direct readers/routes (P1–P3). Consumes the vendored frozen payload
+      # and the real route registry; placed AFTER the build so its build-route boundary reads the real
+      # .next artifacts. Proves the 65-route set, fail-closed slugs, render semantics, and that the work
+      # is NOT yet in the sitemap or catalogue (P4 not authorized).
+      - name: Cinema Ammayappan direct readers/routes (Wave 6 B1)
+        run: npm run test:wave6-b1-ammaiyappan
+      # Wave 6 P1–P3 global build-boundary — owns the whole-build delta that Wave-5 P4 A7 shed:
+      # build == frozen pre-Wave-6 baseline + cumulative Wave-6 P3 route manifest, and every Wave-6
+      # route stays out of sitemap/catalogue/discovery. Runs after Build.
+      - name: Wave 6 P1–P3 global build boundary
+        run: npm run test:wave6-p3-build
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -177,6 +188,9 @@ jobs:
               // because both provenance records name that one commit.
               "cinema/manthiri-kumari": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave5" },
               "cinema/raja-rani": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave5" },
+              // Wave 6 Batch 1 — Ammayappan pins the cinema archive at its own later commit (its
+              // Reading Room payload postdates the Wave-5 freeze), so it gets its own checkout directory.
+              "cinema/ammaiyappan": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave6" },
               "speeches/udhaya-kathir": { repo: "kalaignar-assembly-speeches" },
               "speeches/poonthottam": { repo: "kalaignar-public-speeches" },
               "speeches/arappor": { repo: "kalaignar-public-speeches" },
@@ -303,6 +317,10 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-raja-rani.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-wave5"
+      - name: Ammayappan (Wave 6 B1)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-ammaiyappan.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-wave6"
       - name: Udhaya Kathir
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

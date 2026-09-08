@@ -259,17 +259,32 @@ eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 3, "A5 Fiction
 eq(urls.length, 3351, "A6 sitemap holds 3351 URLs");
 eq(new Set(urls).size, urls.length, "A6 sitemap has 0 duplicate URLs");
 
-// ── A7. Build-output boundary (uses REAL Next artifacts; runs after a build) ──────────────────────
-// Honest degradation: without a build there is no prerender manifest to read, so rather than restate
-// constants (a fake proof) we skip with a visible note. In CI this step runs AFTER `npm run build`,
-// so the artifacts are present and the assertions execute.
+// ── A7. Build-output boundary — SCOPED TO THE SIX FROZEN WAVE-5 CINEMA FAMILIES ────────────────────
+// CONTRACT TRANSFER (introduced in Wave 6 Batch 1). Wave 5 originally closed when the WHOLE production
+// build's /cinema/ route set exactly equalled the sitemap's, and A7 also pinned whole-build totals
+// (prerender-manifest 3360, .html 3355). Wave 6 P1–P3 then introduced AUTHORIZED direct-but-undiscovered
+// readers (e.g. /cinema/ammaiyappan/…) that ARE prerendered in the build but are intentionally absent
+// from the sitemap/catalogue/discovery until P4. So "whole build /cinema/ == sitemap /cinema/" is no
+// longer a valid invariant, and the whole-build totals now legitimately grow with each authorized batch.
+// A7 therefore proves exact build↔sitemap equality for the SIX FROZEN WAVE-5 CINEMA FAMILIES ONLY. The
+// global authorized-undiscovered build growth and the whole-build delta are now owned by the Wave-6 P3
+// build validator (scripts/validate-wave6-p3-build.ts). This is a RESPONSIBILITY TRANSFER, not a
+// weakening: the six Wave-5 families stay pinned at exactly their 346 routes, and no Wave-5 route may be
+// substituted or drift from the sitemap. Do not re-broaden A7 to every future /cinema/ route.
 const manifestPath = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(manifestPath)) {
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8")) as { routes: Record<string, unknown> };
   const routeKeys = Object.keys(manifest.routes);
-  eq(routeKeys.length, 3360, "A7 prerender-manifest routes = 3360");
-  const htmlCount = countHtml(path.join(root, ".next/server/app"));
-  eq(htmlCount, 3355, "A7 prerendered .html files = 3355");
+  // The six frozen Wave-5 Cinema families (from A4's registry-derived EXPECT_FAMILY) — NOT every /cinema/.
+  const wave5Slugs = EXPECT_FAMILY.map((f) => f.slug);
+  const inWave5Cinema = (p: string) => wave5Slugs.some((slug) => p === `/cinema/${slug}` || p.startsWith(`/cinema/${slug}/`));
+  const buildWave5Cinema = uniqSorted(routeKeys.filter(inWave5Cinema));
+  const sitemapWave5Cinema = uniqSorted(cinemaUrls.map((u) => u.replace(BASE, "")));
+  eq(buildWave5Cinema.length, 346, "A7 build prerenders exactly 346 frozen Wave-5 Cinema routes");
+  eq(sitemapWave5Cinema.length, 346, "A7 sitemap holds exactly 346 frozen Wave-5 Cinema routes");
+  eq(buildWave5Cinema, sitemapWave5Cinema, "A7 frozen Wave-5 build Cinema set == sitemap Cinema set (exact)");
+  eq(diff(buildWave5Cinema, sitemapWave5Cinema), [], "A7 no build-only frozen Wave-5 Cinema route");
+  eq(diff(sitemapWave5Cinema, buildWave5Cinema), [], "A7 no sitemap-only frozen Wave-5 Cinema route");
   // The Wave-5 routes exist in the build; representative invalid children do not.
   const present = ["/cinema/manthiri-kumari", "/cinema/manthiri-kumari/story-summary", "/cinema/manthiri-kumari/performance-15",
     "/cinema/raja-rani", "/cinema/raja-rani/scene-058", "/cinema/raja-rani/song-11"];
@@ -277,34 +292,8 @@ if (fs.existsSync(manifestPath)) {
   for (const r of ["/cinema/manthiri-kumari/performance-16", "/cinema/raja-rani/scene-059", "/cinema/raja-rani/song-12", "/cinema/raja-rani/scene-000"]) {
     ok(!routeKeys.includes(r), `A7 build does NOT prerender invalid ${r}`);
   }
-  // Build-vs-sitemap same-size drift gap: prove the WHOLE Cinema route set the production build
-  // actually prerenders equals the Cinema route set the sitemap advertises — as EXACT sets, so a
-  // same-sized substitution (a build route not in the sitemap, or vice versa) cannot hide behind a
-  // matching 346 count. The manifest routes are pathnames; convert the sitemap Cinema URLs likewise.
-  // (Empirically the manifest represents every Cinema route — landings, /source and children — as a
-  // /cinema/… key, so this comparison is truthful; if a future Next release changed that
-  // representation the equality would surface it rather than being silently weakened.)
-  const buildCinema = uniqSorted(routeKeys.filter((k) => k.startsWith("/cinema/")));
-  const sitemapCinemaPaths = uniqSorted(cinemaUrls.map((u) => u.replace(BASE, "")));
-  eq(buildCinema.length, 346, "A7 build prerenders exactly 346 Cinema routes");
-  eq(buildCinema, sitemapCinemaPaths, "A7 build Cinema route set == sitemap Cinema route set (exact)");
-  eq(diff(buildCinema, sitemapCinemaPaths), [], "A7 no build-only Cinema route");
-  eq(diff(sitemapCinemaPaths, buildCinema), [], "A7 no sitemap-only Cinema route");
 } else {
   console.error("  · A7 build-output boundary SKIPPED — no .next/prerender-manifest.json (run `npm run build` first; CI runs this step after build).");
-}
-
-function countHtml(dir: string): number {
-  let n = 0;
-  const walk = (d: string) => {
-    for (const ent of fs.readdirSync(d, { withFileTypes: true })) {
-      const full = path.join(d, ent.name);
-      if (ent.isDirectory()) walk(full);
-      else if (ent.name.endsWith(".html")) n++;
-    }
-  };
-  try { walk(dir); } catch { /* no build tree */ }
-  return n;
 }
 
 // ── Report ──────────────────────────────────────────────────────────────────────────────────────
