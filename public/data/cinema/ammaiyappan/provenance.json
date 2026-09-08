@@ -1,0 +1,72 @@
+{
+  "slug": "ammaiyappan",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourceCommit": "c33eb41db3670b097d1f318f66352dde672b5f37",
+  "repoTree": "c244bba49161277e7cbeec535b1d6a49777dc20b",
+  "workTree": "31d0d1219f76f6dc0cb068f8926d644d0cfd5573",
+  "sourcePath": "works/ammaiyappan",
+  "pdf": {
+    "filename": "TVA_BOK_0064230_அம்மையப்பன்.pdf",
+    "sha256": "eda6468a57022b418f44851a0013b090469bc6f4be44a682487800658771720d",
+    "pages": 111,
+    "mainTextPdfPages": "5-109"
+  },
+  "readingRoomPayloadSha256": "f00efb816edf08b43702a3a1a9d71ed9cc54fd1a803b8881bc6e2c6466de1f8c",
+  "payloadMode": "source-linked-composition",
+  "integrationQaStatus": "payload-complete-verified",
+  "englishProvenance": {
+    "status": "complete-verified",
+    "kind": "project-created",
+    "titleEnIsEditorial": true
+  },
+  "counts": {
+    "scenes": 63,
+    "sourceNumberedScenes": 0,
+    "englishUnits": 1210,
+    "dialogueSourceLinks": 1025,
+    "stageActionUnits": 181,
+    "songReferenceUnits": 3,
+    "japaUnits": 1,
+    "crossPageUnits": 28,
+    "occurrenceIdentities": 5,
+    "occurrenceSourceSpanLinks": 7,
+    "unitKinds": {
+      "dialogue": 1025,
+      "stage-direction": 181,
+      "song-reference": 3,
+      "japa": 1
+    }
+  },
+  "printedSourceWitnesses": {
+    "titlePageCredit": {
+      "roleTa": "கதை வசனம்",
+      "nameTa": "மு. கருணாநிதி"
+    },
+    "edition": "முதற் பதிப்பு",
+    "publicationMonthYear": "செப்டம்பர், 1954",
+    "price": "விலை எட்டணா",
+    "publisher": "முரசொலி பதிப்பகம்",
+    "rightsLine": "[ உரிமை பதிவு செய்யப் பட்டிருக்கிறது ]"
+  },
+  "structuralExceptions": [
+    {
+      "id": "archival-scene-navigation-not-source-numbering",
+      "rule": "the booklet prints no numbered screenplay scenes; the 63 scene segments are archival/editorial navigation only"
+    },
+    {
+      "id": "not-the-film-songs-anthology",
+      "rule": "this is the full Ammayappan screenplay/dialogue booklet (TVA_BOK_0064230); it is distinct from the Kalaignar Film Songs anthology and must not be conflated with it"
+    },
+    {
+      "id": "retained-song-occurrences-not-lyric-authorship",
+      "rule": "the 5 retained song/performance occurrences (ammaiyappan-song-001..005) are in-scene occurrence references, not standalone Kalaignar-authored lyrics; do not upgrade"
+    }
+  ],
+  "rights": {
+    "publicationYear": null,
+    "editionStatement": null,
+    "rightsStatus": null,
+    "note": "no year/edition/rights promoted from the source; the printed 1954 credit and copyright line are source witnesses only"
+  },
+  "readerSha256": "6b8ba6fcb1a005244f1dcf2c376ae85a6174b4f1c9d0919a5c98f4f62364ed33"
+}
