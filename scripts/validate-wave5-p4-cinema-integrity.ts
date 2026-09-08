@@ -168,36 +168,67 @@ const raja = byId("raja-rani");
   eq(verified, ["3@4", "5@16", "8@40"], "A3 Raja's three verified relations are 3@4 / 5@16 / 8@40");
 }
 
-// ── A4. Exact Cinema route-family census (from the REAL sitemap; no numeric reconstruction) ────────
+// ── A4. Exact Cinema route-set coverage — ALL SIX families (from the REAL sitemap vs the released
+// registries; no numeric reconstruction). Every family is proven by EXACT MEMBERSHIP, not by count
+// alone: a same-sized route substitution inside any family must fail. Each expected set is derived
+// INDEPENDENTLY from that work's own released registry:
+//   * legacy four — the generated index.json child registry (segments/scenes/songs), NOT a 1..N range
+//     (Parasakthi never prints headings 23/34; Film Songs has no /source route);
+//   * Wave-5 two — the frozen reader.json via lib/cinema-wave5-routes (unchanged in principle).
 const urls = sitemap().map((e) => e.url);
 const fam = (slug: string) => urls.filter((u) => u === `${BASE}/cinema/${slug}` || u.startsWith(`${BASE}/cinema/${slug}/`));
-const EXPECT_FAMILY: Record<string, number> = {
-  manohara: 59, parasakthi: 48, tirumbippaar: 95, "thirai-isai-paadalgal": 55, "manthiri-kumari": 18, "raja-rani": 71,
-};
-for (const [slug, n] of Object.entries(EXPECT_FAMILY)) eq(fam(slug).length, n, `A4 ${slug} route family = ${n}`);
+const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
+const diff = (a: string[], b: string[]) => a.filter((x) => !b.includes(x));
+
+// Independently-derived child slugs for the four legacy families, straight from the released registry.
+const legacyChildSlugs = (slug: string, key: "segments" | "scenes" | "songs"): string[] =>
+  (readJson<Record<string, { slug: string }[]>>(`public/data/cinema/${slug}/index.json`)[key]).map((x) => x.slug);
+const withBase = (slug: string, children: string[], withSource: boolean): string[] => [
+  `${BASE}/cinema/${slug}`,
+  ...(withSource ? [`${BASE}/cinema/${slug}/source`] : []),
+  ...children.map((c) => `${BASE}/cinema/${slug}/${c}`),
+];
+const M = readJson<ManthiriReader>("public/data/cinema/manthiri-kumari/reader.json");
+const R = readJson<RajaRaniReader>("public/data/cinema/raja-rani/reader.json");
+
+// Expected exact URL set per family + the pinned family size. The size constant pins BOTH the sitemap
+// AND the registry to the same count, so a registry that itself drifted is also caught.
+const EXPECT_FAMILY: { slug: string; count: number; expected: string[] }[] = [
+  { slug: "manohara", count: 59, expected: withBase("manohara", legacyChildSlugs("manohara", "segments"), true) },
+  { slug: "parasakthi", count: 48, expected: withBase("parasakthi", legacyChildSlugs("parasakthi", "scenes"), true) },
+  { slug: "tirumbippaar", count: 95, expected: withBase("tirumbippaar", legacyChildSlugs("tirumbippaar", "scenes"), true) },
+  { slug: "thirai-isai-paadalgal", count: 55, expected: withBase("thirai-isai-paadalgal", legacyChildSlugs("thirai-isai-paadalgal", "songs"), false) },
+  { slug: "manthiri-kumari", count: 18, expected: withBase("manthiri-kumari", manthiriItemSlugs(M), true) },
+  { slug: "raja-rani", count: 71, expected: withBase("raja-rani", rajaSectionSlugs(R), true) },
+];
+for (const { slug, count, expected } of EXPECT_FAMILY) {
+  const actual = fam(slug);
+  // 0. the registry itself is the expected size (guards a registry that drifted its own count).
+  eq(expected.length, count, `A4 ${slug} registry-derived family size == ${count}`);
+  // 1. sitemap family length == expected length.
+  eq(actual.length, count, `A4 ${slug} sitemap family length == ${count}`);
+  // 5. no duplicate URL within the family.
+  eq(new Set(actual).size, actual.length, `A4 ${slug} family has no duplicate URL`);
+  // 2. sorted exact URL arrays equal.
+  eq(uniqSorted(actual), uniqSorted(expected), `A4 ${slug} sitemap set == released registry (exact membership)`);
+  // 3 + 4. bidirectional set-difference empty (no substitution can hide in a same-sized set).
+  eq(diff(actual, expected), [], `A4 ${slug} has no sitemap URL outside its registry`);
+  eq(diff(expected, actual), [], `A4 ${slug} has no registry URL missing from the sitemap`);
+}
+
+// Global Cinema invariants.
 const cinemaUrls = urls.filter((u) => u.startsWith(`${BASE}/cinema/`));
 eq(cinemaUrls.length, 346, "A4 Cinema route total = 346");
 eq(new Set(cinemaUrls).size, cinemaUrls.length, "A4 no duplicate Cinema URL");
-// No cross-family collision: every Cinema URL belongs to exactly one of the six families.
-const families = Object.keys(EXPECT_FAMILY);
+// Every Cinema URL belongs to exactly one of the six families (no cross-family collision).
+const familySlugs = EXPECT_FAMILY.map((f) => f.slug);
 for (const u of cinemaUrls) {
-  const owners = families.filter((slug) => u === `${BASE}/cinema/${slug}` || u.startsWith(`${BASE}/cinema/${slug}/`));
+  const owners = familySlugs.filter((slug) => u === `${BASE}/cinema/${slug}` || u.startsWith(`${BASE}/cinema/${slug}/`));
   ok(owners.length === 1, `A4 ${u} belongs to exactly one Cinema family (got ${owners.length})`);
 }
-// Wave-5 EXACT membership from the frozen registry (sorted arrays + bidirectional set-difference — NOT
-// the JSON.stringify(Set) trap, which would false-pass for any two sets).
-const M = readJson<ManthiriReader>("public/data/cinema/manthiri-kumari/reader.json");
-const R = readJson<RajaRaniReader>("public/data/cinema/raja-rani/reader.json");
-const expMan = [`${BASE}/cinema/manthiri-kumari`, `${BASE}/cinema/manthiri-kumari/source`, ...manthiriItemSlugs(M).map((s) => `${BASE}/cinema/manthiri-kumari/${s}`)];
-const expRaja = [`${BASE}/cinema/raja-rani`, `${BASE}/cinema/raja-rani/source`, ...rajaSectionSlugs(R).map((s) => `${BASE}/cinema/raja-rani/${s}`)];
-const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
-const diff = (a: string[], b: string[]) => a.filter((x) => !b.includes(x));
-eq(uniqSorted(fam("manthiri-kumari")), uniqSorted(expMan), "A4 Manthiri sitemap set == registry");
-eq(uniqSorted(fam("raja-rani")), uniqSorted(expRaja), "A4 Raja sitemap set == registry");
-eq(diff(fam("manthiri-kumari"), expMan), [], "A4 no Manthiri URL outside the registry");
-eq(diff(expMan, fam("manthiri-kumari")), [], "A4 no registry Manthiri URL missing from the sitemap");
-eq(diff(fam("raja-rani"), expRaja), [], "A4 no Raja URL outside the registry");
-eq(diff(expRaja, fam("raja-rani")), [], "A4 no registry Raja URL missing from the sitemap");
+// The six exact families partition the whole Cinema route set — nothing else lives under /cinema/.
+const allExpectedCinema = uniqSorted(EXPECT_FAMILY.flatMap((f) => f.expected));
+eq(uniqSorted(cinemaUrls), allExpectedCinema, "A4 the six families exactly partition the Cinema route set");
 eq(fam("manthiri-kumari").length + fam("raja-rani").length, 89, "A4 Wave-5 subset is exactly 18 + 71 = 89");
 
 // ── A5. Global Reading Room invariants ────────────────────────────────────────────────────────────
@@ -246,6 +277,19 @@ if (fs.existsSync(manifestPath)) {
   for (const r of ["/cinema/manthiri-kumari/performance-16", "/cinema/raja-rani/scene-059", "/cinema/raja-rani/song-12", "/cinema/raja-rani/scene-000"]) {
     ok(!routeKeys.includes(r), `A7 build does NOT prerender invalid ${r}`);
   }
+  // Build-vs-sitemap same-size drift gap: prove the WHOLE Cinema route set the production build
+  // actually prerenders equals the Cinema route set the sitemap advertises — as EXACT sets, so a
+  // same-sized substitution (a build route not in the sitemap, or vice versa) cannot hide behind a
+  // matching 346 count. The manifest routes are pathnames; convert the sitemap Cinema URLs likewise.
+  // (Empirically the manifest represents every Cinema route — landings, /source and children — as a
+  // /cinema/… key, so this comparison is truthful; if a future Next release changed that
+  // representation the equality would surface it rather than being silently weakened.)
+  const buildCinema = uniqSorted(routeKeys.filter((k) => k.startsWith("/cinema/")));
+  const sitemapCinemaPaths = uniqSorted(cinemaUrls.map((u) => u.replace(BASE, "")));
+  eq(buildCinema.length, 346, "A7 build prerenders exactly 346 Cinema routes");
+  eq(buildCinema, sitemapCinemaPaths, "A7 build Cinema route set == sitemap Cinema route set (exact)");
+  eq(diff(buildCinema, sitemapCinemaPaths), [], "A7 no build-only Cinema route");
+  eq(diff(sitemapCinemaPaths, buildCinema), [], "A7 no sitemap-only Cinema route");
 } else {
   console.error("  · A7 build-output boundary SKIPPED — no .next/prerender-manifest.json (run `npm run build` first; CI runs this step after build).");
 }
