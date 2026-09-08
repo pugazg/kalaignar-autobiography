@@ -54,7 +54,11 @@ if (head !== APPROVED_COMMIT) die(`clone HEAD ${head} != approved ${APPROVED_COM
 const workTree = execFileSync("git", ["-C", SRC, "rev-parse", "HEAD:works/ammaiyappan"], { encoding: "utf8" }).trim();
 if (workTree !== WORK_TREE) die(`work tree ${workTree} != approved ${WORK_TREE}`);
 
-const nfc = (s) => (s === null || s === undefined ? s : String(s).normalize("NFC"));
+// COPY EXACTLY — no normalization. The frozen QA-PASS source payload is authoritative; every literary
+// and presentation string is carried through byte-for-byte. NO NFC/NFD, no trim, no whitespace
+// collapse, no punctuation/quote/dash change, no Tamil/English text alteration. (The validator proves
+// generated == frozen source string-for-string.)
+const nfc = (s) => s;
 const W = path.join(SRC, "works", "ammaiyappan");
 const sha256 = (b) => crypto.createHash("sha256").update(b).digest("hex");
 const rrBuf = fs.readFileSync(path.join(W, "integrations/reading-room/reading-room.json"));

@@ -1,0 +1,9 @@
+{
+  "note": "Independently frozen pre-Wave-6 prerender-route baseline. Captured from a CLEAN production build of implementation base 632476baa40ebbe94083ec41a6c8f4a26dfec77c (detached checkout, no Wave-6 files). The route-set hash lets the Wave-6 P3 build validator prove the current build's pre-Wave-6 remainder is byte-identical to this baseline WITHOUT committing 3360 route strings. Do not edit by hand.",
+  "implementationBaselineCommit": "632476baa40ebbe94083ec41a6c8f4a26dfec77c",
+  "implementationBaselineTree": "6a4b2cd6bdcdada399cdb27247e485527813a7b2",
+  "prerenderManifestRouteCount": 3360,
+  "htmlFileCount": 3355,
+  "routeSetSha256": "cca038f3e1f3f2ea92bcd18bdf56008b7eb8224876aad49eb76cdb400698fd45",
+  "serialization": "sha256(JSON.stringify(routeKeys.sort()))"
+}

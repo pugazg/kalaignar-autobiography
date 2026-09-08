@@ -150,6 +150,49 @@ check("provenance records not-the-film-songs-anthology safeguard", prov.structur
 check("no canonical scene Tamil is empty", reader.screenplayScenes.every((s) => s.tamilText.length > 0));
 check("printed 1954 credit recorded as source witness (not promoted)", prov.printedSourceWitnesses && prov.printedSourceWitnesses.publicationYear === undefined && /1954/.test(prov.printedSourceWitnesses.publicationMonthYear || ""));
 
+// ── 8. DIRECT SOURCE → GENERATED TEXTUAL EQUALITY ──────────────────────────────
+// The independent structural/index proofs above establish raw archival layers ↔ frozen reading-room
+// payload. This section closes the third link: frozen reading-room payload ↔ generated reader, field
+// for field, with NO normalization of any kind. The frozen payload is the one hash-pinned in section 1
+// (FREEZE.readingRoomSha), so a coordinated payload+reader edit is already caught there; here we prove
+// the generated reader carries every source string exactly. camelCase implementation fields are mapped
+// from snake_case source fields, but values are compared byte-for-byte.
+const rr = readJSON(path.join(W, "integrations/reading-room/reading-room.json"));
+const src = rr.screenplay_scenes;
+eq("direct: source scene count == reader scene count", src.length, reader.screenplayScenes.length);
+// Snake→camel mappers mirror the importer exactly; no NFC/trim/whitespace/punctuation change.
+const mapUnit = (u) => ({
+  id: u.id, kind: u.kind,
+  speakerLabel: u.speaker_label === null ? null : u.speaker_label,
+  sourceRecordId: u.source_record_id ?? null,
+  sourceOccurrenceId: u.source_occurrence_id ?? null,
+  pageProvenance: u.page_provenance,
+  englishText: u.english_text,
+  englishLines: u.english_lines === null || u.english_lines === undefined ? null : u.english_lines,
+});
+const sceneHeader = (o, fromSource) => (fromSource ? {
+  sceneId: o.scene_id, archivalSceneOrdinal: o.archival_scene_ordinal, sourceSceneNumber: o.source_scene_number,
+  sourceHeadingTa: o.source_heading_ta === null || o.source_heading_ta === undefined ? null : o.source_heading_ta,
+  pdfPages: o.pdf_pages, printedPages: o.printed_pages, tamilText: o.tamil_text,
+} : {
+  sceneId: o.sceneId, archivalSceneOrdinal: o.archivalSceneOrdinal, sourceSceneNumber: o.sourceSceneNumber,
+  sourceHeadingTa: o.sourceHeadingTa, pdfPages: o.pdfPages, printedPages: o.printedPages, tamilText: o.tamilText,
+});
+let directUnitChecks = 0;
+for (let i = 0; i < src.length; i++) {
+  const s = src[i], g = reader.screenplayScenes[i];
+  // Scene-level exact equality (id, archival ordinal, source scene number, heading Tamil, Tamil body,
+  // pdf pages, printed pages) — one deep, order-sensitive comparison per scene.
+  eq(`direct: scene ${i + 1} header exact source→generated`, JSON.stringify(sceneHeader(g, false)), JSON.stringify(sceneHeader(s, true)));
+  eq(`direct: scene ${i + 1} english-unit count`, g.englishUnits.length, s.english_units.length);
+  // English-unit-level exact equality, in order, for every applicable field.
+  for (let j = 0; j < s.english_units.length; j++) {
+    eq(`direct: scene ${i + 1} unit ${j + 1} exact source→generated`, JSON.stringify(g.englishUnits[j]), JSON.stringify(mapUnit(s.english_units[j])));
+    directUnitChecks++;
+  }
+}
+check(`direct: proved ${directUnitChecks} english units exactly (== 1210)`, directUnitChecks === 1210);
+
 if (failures.length) {
   console.error(`\nammaiyappan — ${pass} checks passed, ${failures.length} FAILED\n`);
   for (const f of failures) console.error("  x " + f);

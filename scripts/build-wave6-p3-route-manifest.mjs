@@ -1,78 +1,58 @@
 #!/usr/bin/env node
-// Wave 6 P1–P3 cumulative direct-route manifest generator.
+// Wave 6 P1–P3 cumulative direct-route manifest generator — GENERIC.
 //
 //   node scripts/build-wave6-p3-route-manifest.mjs
 //
-// Emits data/internal/wave6/p3-routes.json — the authoritative, Wave-6-OWNED registry of every
-// authorized-but-undiscovered direct reader route added by the Wave 6 P1–P3 batches. It is generated
-// from the vendored, released reader payloads (public/data/cinema/<slug>/reader.json, etc.), never a
-// hand-guessed list, so it cannot drift from what the readers actually serve. Each batch is
-// `discoverable: false` / `sitemapExposed: false` until Wave 6 P4 (not authorized). Later batches extend
-// the BATCHES array below; the Wave-6 P3 build validator derives the whole-build delta from this file
-// plus the frozen pre-Wave-6 baseline — so the Wave-5 P4 A7 gate never has to change again.
+// Composes every approved per-batch route manifest under data/internal/wave6/batches/*.json into the
+// cumulative data/internal/wave6/p3-routes.json. It knows NOTHING about individual reader families
+// (cinema, drama, poetry, speeches, novels, essays, short stories): each batch owns its own
+// family-specific route derivation and commits its own manifest (the batch's route test proves that
+// manifest equals its released reader registry). A future batch just adds its own batches/*.json — this
+// generator and the global build validator never need architectural changes.
 import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
+const BATCH_DIR = path.join(root, "data/internal/wave6/batches");
+const die = (m) => { console.error(`build-wave6-p3-route-manifest: ${m}`); process.exit(1); };
 
-// ── Batch registry (extended per authorized batch) ─────────────────────────────
-// Each spec derives its exact route list from the released payload via `routesOf`.
-const BATCHES = [
-  {
-    batchId: "b1-cinema-ammaiyappan",
-    workId: "ammaiyappan",
-    readerFamily: "cinema-scene",
-    payload: "public/data/cinema/ammaiyappan/reader.json",
-    routesOf: (r) => [
-      "/cinema/ammaiyappan",
-      "/cinema/ammaiyappan/source",
-      ...r.screenplayScenes.map((s) => `/cinema/ammaiyappan/scene-${String(s.archivalSceneOrdinal).padStart(3, "0")}`),
-    ],
-  },
-];
+const files = fs.existsSync(BATCH_DIR)
+  ? fs.readdirSync(BATCH_DIR).filter((f) => f.endsWith(".json")).sort()
+  : [];
+if (files.length === 0) die(`no per-batch manifests under ${BATCH_DIR}`);
 
-const batches = BATCHES.map((b) => {
-  const reader = readJSON(b.payload);
-  const routes = b.routesOf(reader);
-  const uniq = Array.from(new Set(routes));
-  if (uniq.length !== routes.length) { console.error(`build-wave6-p3-route-manifest: duplicate route within ${b.batchId}`); process.exit(1); }
+const batches = files.map((f) => {
+  const b = JSON.parse(fs.readFileSync(path.join(BATCH_DIR, f), "utf8"));
+  for (const k of ["batchId", "workId", "readerFamily", "routes"]) if (b[k] === undefined) die(`${f} missing ${k}`);
+  if (b.discoverable !== false) die(`${f} must be discoverable:false`);
+  if (b.sitemapExposed !== false) die(`${f} must be sitemapExposed:false`);
+  if (!Array.isArray(b.routes) || b.routes.length === 0) die(`${f} has no routes`);
+  if (new Set(b.routes).size !== b.routes.length) die(`${f} has duplicate routes within the batch`);
+  if (b.routeCount !== b.routes.length) die(`${f} routeCount ${b.routeCount} != ${b.routes.length}`);
   return {
-    batchId: b.batchId,
-    workId: b.workId,
-    readerFamily: b.readerFamily,
-    discoverable: false,
-    sitemapExposed: false,
-    routeCount: routes.length,
-    routes: [...routes].sort(),
+    batchId: b.batchId, workId: b.workId, readerFamily: b.readerFamily,
+    discoverable: false, sitemapExposed: false, routeCount: b.routes.length, routes: [...b.routes].sort(),
   };
 });
 
-const cumulativeRoutes = Array.from(new Set(batches.flatMap((b) => b.routes))).sort();
-if (cumulativeRoutes.length !== batches.reduce((n, b) => n + b.routeCount, 0)) {
-  console.error("build-wave6-p3-route-manifest: cross-batch duplicate route"); process.exit(1);
+// Cross-batch disjointness.
+const seen = new Map();
+for (const b of batches) for (const r of b.routes) {
+  if (seen.has(r)) die(`route ${r} appears in both ${seen.get(r)} and ${b.batchId}`);
+  seen.set(r, b.batchId);
 }
+const cumulativeRoutes = Array.from(seen.keys()).sort();
 
 const out = {
-  note: "Wave 6 P1–P3 cumulative direct-route manifest. Authorized direct readers that are prerendered in the build but intentionally ABSENT from sitemap/catalogue/discovery until Wave 6 P4 (not authorized). Generated from released payloads; do not edit by hand.",
+  note: "Wave 6 P1–P3 CUMULATIVE direct-route manifest, composed from data/internal/wave6/batches/*.json. Authorized direct readers that are prerendered but intentionally ABSENT from sitemap/catalogue/discovery until Wave 6 P4 (not authorized). Generated; do not edit by hand — edit/add a per-batch manifest instead.",
   wave: 6,
   phase: "P1-P3",
-  frozenBaseline: {
-    implementationBaselineCommit: "632476baa40ebbe94083ec41a6c8f4a26dfec77c",
-    prerenderManifestRouteCount: 3360,
-    htmlFileCount: 3355,
-    sitemapUrls: 3351,
-    sitemapCinemaRoutes: 346,
-    catalogueWorks: 78,
-    publicCollections: 1,
-  },
-  batches,
+  frozenBaselineRef: "data/internal/wave6/frozen-baseline.json",
+  batches: batches.map((b) => ({ batchId: b.batchId, workId: b.workId, readerFamily: b.readerFamily, discoverable: b.discoverable, sitemapExposed: b.sitemapExposed, routeCount: b.routeCount })),
   cumulativeRouteCount: cumulativeRoutes.length,
   cumulativeRoutes,
 };
-
 const OUT = path.join(root, "data/internal/wave6/p3-routes.json");
-fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
 console.log(`build-wave6-p3-route-manifest — OK`);
-console.log(`  ${batches.length} batch(es) · cumulative ${cumulativeRoutes.length} direct routes · discoverable=false · sitemapExposed=false`);
+console.log(`  ${batches.length} batch(es): ${batches.map((b) => b.batchId).join(", ")} · cumulative ${cumulativeRoutes.length} routes · discoverable=false · sitemapExposed=false`);

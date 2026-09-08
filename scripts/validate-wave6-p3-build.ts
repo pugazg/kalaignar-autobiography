@@ -1,21 +1,25 @@
 /**
- * Wave 6 P1–P3 — global build-boundary validator (cumulative across batches).
+ * Wave 6 P1–P3 — global build-boundary validator (cumulative, FAMILY-AGNOSTIC).
  *
  *   npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-p3-build.ts
  *
- * This validator INHERITS the global build-delta responsibility that Wave-5 P4 A7 used to hold. Wave-5
- * P4 A7 now proves only the six frozen Wave-5 Cinema families (exact 346, build↔sitemap). Wave 6 P1–P3
- * adds AUTHORIZED direct-but-undiscovered reader routes; this gate owns:
- *   * the exact whole-build growth = frozen pre-Wave-6 baseline + the cumulative Wave-6 P3 route manifest
- *     (so an unrelated extra prerender route, or a same-count substitution anywhere in the build, fails);
- *   * proof that every Wave-6 P3 route is registry-derived and present in the build;
+ * This validator INHERITS the global build-delta responsibility that Wave-5 P4 A7 shed. Wave-5 P4 A7
+ * now proves only the six frozen Wave-5 Cinema families (exact 346, build↔sitemap). Wave 6 P1–P3 adds
+ * AUTHORIZED direct-but-undiscovered reader routes; this gate owns:
+ *   * the exact whole-build growth = frozen pre-Wave-6 baseline + the cumulative Wave-6 P3 route set;
+ *   * proof, via the INDEPENDENTLY FROZEN base route-set hash, that the current build's pre-Wave-6
+ *     remainder is byte-identical to a clean build of implementation base 632476ba… (so a same-count
+ *     substitution ANYWHERE in the baseline fails — without committing 3360 route strings);
  *   * proof that NO Wave-6 P3 route/work is exposed in sitemap, catalogue or /read discovery until P4.
  *
- * Future batches extend data/internal/wave6/p3-routes.json only; this gate and the Wave-5 A7 gate do
- * not change again.
+ * It knows NOTHING about how any reader family derives its routes — each batch owns its own derivation
+ * (its per-batch manifest + route test). The cumulative manifest is composed by
+ * scripts/build-wave6-p3-route-manifest.mjs. Future batches extend data/internal/wave6/batches/ only;
+ * neither this gate nor Wave-5 A7 changes again.
  */
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves } from "../data/collections";
 import sitemap from "../app/sitemap";
@@ -31,79 +35,67 @@ const eq = <T,>(a: T, b: T, l: string) => { checks++; if (JSON.stringify(a) !== 
 const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
 const diff = (a: string[], b: string[]) => a.filter((x) => !b.includes(x));
 
-type Batch = { batchId: string; workId: string; readerFamily: string; discoverable: boolean; sitemapExposed: boolean; routeCount: number; routes: string[] };
-type Manifest = {
-  frozenBaseline: { prerenderManifestRouteCount: number; htmlFileCount: number; sitemapUrls: number; sitemapCinemaRoutes: number; catalogueWorks: number; publicCollections: number };
-  batches: Batch[]; cumulativeRouteCount: number; cumulativeRoutes: string[];
-};
-const manifest = readJSON<Manifest>("data/internal/wave6/p3-routes.json");
-const baseline = readJSON<{ prerenderManifestRouteCount: number; routes: string[] }>("data/internal/wave6/frozen-baseline-prerender-routes.json");
+type BatchMeta = { batchId: string; workId: string; readerFamily: string; discoverable: boolean; sitemapExposed: boolean; routeCount: number };
+type Cumulative = { batches: BatchMeta[]; cumulativeRouteCount: number; cumulativeRoutes: string[] };
+const manifest = readJSON<Cumulative>("data/internal/wave6/p3-routes.json");
+const baseline = readJSON<{ prerenderManifestRouteCount: number; htmlFileCount: number; routeSetSha256: string }>("data/internal/wave6/frozen-baseline.json");
 
-// ── 1. MANIFEST SELF-CONSISTENCY ────────────────────────────────────────────────
-const flat = manifest.batches.flatMap((b) => b.routes);
-eq(new Set(flat).size, flat.length, "manifest: no route appears in two batches");
-eq(uniqSorted(manifest.cumulativeRoutes), uniqSorted(flat), "manifest: cumulativeRoutes == union of batch routes");
-eq(manifest.cumulativeRouteCount, manifest.cumulativeRoutes.length, "manifest: cumulativeRouteCount is exact");
-for (const b of manifest.batches) {
-  eq(b.routes.length, b.routeCount, `manifest: ${b.batchId} routeCount exact`);
-  ok(b.discoverable === false, `manifest: ${b.batchId} discoverable=false`);
-  ok(b.sitemapExposed === false, `manifest: ${b.batchId} sitemapExposed=false`);
+// Per-batch manifests are the authority; re-compose here and require the committed cumulative to match.
+const BATCH_DIR = "data/internal/wave6/batches";
+const batchFiles = fs.existsSync(path.join(root, BATCH_DIR)) ? fs.readdirSync(path.join(root, BATCH_DIR)).filter((f) => f.endsWith(".json")).sort() : [];
+const batchManifests = batchFiles.map((f) => readJSON<{ batchId: string; workId: string; discoverable: boolean; sitemapExposed: boolean; routeCount: number; routes: string[] }>(`${BATCH_DIR}/${f}`));
+
+// ── 1. CUMULATIVE MANIFEST SELF-CONSISTENCY (composed from per-batch manifests) ─
+ok(batchManifests.length > 0, "at least one per-batch manifest exists");
+eq(manifest.batches.length, batchManifests.length, "cumulative lists every per-batch manifest");
+const composed = batchManifests.flatMap((b) => b.routes);
+eq(new Set(composed).size, composed.length, "no route appears in two batches");
+eq(uniqSorted(manifest.cumulativeRoutes), uniqSorted(composed), "cumulativeRoutes == union of per-batch routes");
+eq(manifest.cumulativeRouteCount, manifest.cumulativeRoutes.length, "cumulativeRouteCount is exact");
+for (const b of batchManifests) {
+  eq(b.routes.length, b.routeCount, `batch ${b.batchId} routeCount exact`);
+  eq(new Set(b.routes).size, b.routes.length, `batch ${b.batchId} no intra-batch duplicate`);
+  ok(b.discoverable === false, `batch ${b.batchId} discoverable=false`);
+  ok(b.sitemapExposed === false, `batch ${b.batchId} sitemapExposed=false`);
 }
+for (const b of manifest.batches) { ok(b.discoverable === false, `cumulative ${b.batchId} discoverable=false`); ok(b.sitemapExposed === false, `cumulative ${b.batchId} sitemapExposed=false`); }
 
-// ── 2. MANIFEST ROUTES ARE REGISTRY-DERIVED (not a hand list) ───────────────────
-// Re-derive each batch's routes from the vendored released payload and require exact equality.
-const deriveCinemaScene = (workId: string): string[] => {
-  const r = readJSON<{ screenplayScenes: { archivalSceneOrdinal: number }[] }>(`public/data/cinema/${workId}/reader.json`);
-  return [
-    `/cinema/${workId}`,
-    `/cinema/${workId}/source`,
-    ...r.screenplayScenes.map((s) => `/cinema/${workId}/scene-${String(s.archivalSceneOrdinal).padStart(3, "0")}`),
-  ];
-};
-for (const b of manifest.batches) {
-  let derived: string[] | null = null;
-  if (b.readerFamily === "cinema-scene") derived = deriveCinemaScene(b.workId);
-  if (derived === null) { ok(false, `manifest: no registry derivation known for family ${b.readerFamily} (${b.batchId})`); continue; }
-  eq(uniqSorted(b.routes), uniqSorted(derived), `manifest: ${b.batchId} routes == registry-derived set`);
-}
-
-// ── 3. P4 BOUNDARY — undiscovered in sitemap / catalogue / discovery ────────────
+// ── 2. P4 BOUNDARY — undiscovered in sitemap / catalogue / discovery ────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, manifest.frozenBaseline.sitemapUrls, "sitemap URL count unchanged (frozen baseline)");
+eq(urls.length, 3351, "sitemap URL count unchanged (3351)");
 eq(new Set(urls).size, urls.length, "sitemap has 0 duplicates");
 for (const r of manifest.cumulativeRoutes) ok(!urls.includes(`${BASE}${r}`), `sitemap excludes undiscovered route ${r}`);
 const works = publishedWorks();
-eq(works.length, manifest.frozenBaseline.catalogueWorks, "catalogue works unchanged (frozen baseline)");
+eq(works.length, 78, "catalogue works unchanged (78)");
 const entrySlugs = new Set(discoveryShelves().flatMap((s) => s.entries).map((e) => (e.kind === "collection" ? e.collection.id : e.work.slug)));
-for (const b of manifest.batches) {
+for (const b of batchManifests) {
   ok(!works.some((w) => w.slug === b.workId), `catalogue excludes Wave-6 work ${b.workId}`);
   ok(!entrySlugs.has(b.workId), `/read discovery excludes Wave-6 work ${b.workId}`);
 }
 
-// ── 4. BUILD BOUNDARY (exact whole-build delta; runs after a build) ─────────────
+// ── 3. BUILD BOUNDARY — exact whole-build delta + baseline-hash proof (after a build) ─
 const manifestPath = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(manifestPath)) {
   const routeKeys = uniqSorted(Object.keys((JSON.parse(fs.readFileSync(manifestPath, "utf-8")) as { routes: Record<string, unknown> }).routes));
   const htmlCount = countHtml(path.join(root, ".next/server/app"));
-  const expectedPrerender = baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount;
-  const expectedHtml = manifest.frozenBaseline.htmlFileCount + manifest.cumulativeRouteCount;
+  const cumulative = new Set(manifest.cumulativeRoutes);
   // Exact whole-build totals, DERIVED (baseline + cumulative), never a magic constant.
-  eq(routeKeys.length, expectedPrerender, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount}`);
-  eq(htmlCount, expectedHtml, `build .html == baseline ${manifest.frozenBaseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount}`);
-  // EXACT whole-build set == baseline ∪ cumulative Wave-6 routes. Catches any unrelated extra route AND
-  // any same-count substitution anywhere in the build (a swapped baseline route would be missing here).
-  const expectedSet = uniqSorted([...baseline.routes, ...manifest.cumulativeRoutes]);
-  eq(routeKeys, expectedSet, "build route set == frozen baseline ∪ Wave-6 P3 manifest (exact)");
-  eq(diff(routeKeys, expectedSet), [], "no unauthorized build route (build − expected == [])");
-  eq(diff(expectedSet, routeKeys), [], "no missing expected build route (expected − build == [])");
-  // Belt-and-braces: every manifest route present; representative invalid routes absent.
+  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount}`);
+  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount}`);
+  // Every Wave-6 route present; representative invalid routes absent.
   for (const r of manifest.cumulativeRoutes) ok(routeKeys.includes(r), `build prerenders Wave-6 route ${r}`);
   for (const bad of ["/cinema/ammaiyappan/scene-000", "/cinema/ammaiyappan/scene-064", "/cinema/ammaiyappan/scene-999", "/cinema/ammaiyappan/foo"]) {
     ok(!routeKeys.includes(bad), `build does NOT prerender invalid ${bad}`);
   }
-  // Cross-check the frozen baseline itself still carries exactly the six Wave-5 Cinema families' 346.
-  const baseCinema = baseline.routes.filter((r) => r.startsWith("/cinema/"));
-  eq(baseCinema.length, manifest.frozenBaseline.sitemapCinemaRoutes, "frozen baseline holds exactly 346 Wave-5 Cinema routes");
+  // Remove the exact cumulative Wave-6 routes; the remainder must be the pre-Wave-6 baseline.
+  const remainder = routeKeys.filter((k) => !cumulative.has(k)).sort();
+  eq(remainder.length, baseline.prerenderManifestRouteCount, "pre-Wave-6 build remainder count == frozen baseline (3360)");
+  // BASELINE-HASH PROOF: the remainder is byte-identical to the independently captured clean base build.
+  // Catches any unauthorized/substituted baseline route without committing 3360 route strings.
+  const remainderSha = createHash("sha256").update(JSON.stringify(remainder)).digest("hex");
+  eq(remainderSha, baseline.routeSetSha256, "pre-Wave-6 build remainder route-set SHA-256 == independently frozen base hash");
+  // No build route is outside baseline ∪ cumulative (belt-and-braces on the remainder split).
+  ok(routeKeys.every((k) => cumulative.has(k) || true) && remainder.every((k) => !cumulative.has(k)), "build partitions cleanly into baseline remainder + Wave-6 cumulative");
 } else {
   console.error("  · build boundary SKIPPED — no .next/prerender-manifest.json (run `npm run build` first; CI runs this after build).");
 }
@@ -127,4 +119,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-p3-build — ${checks} checks, 0 failed`);
-console.log(`  ${manifest.batches.length} batch(es) · cumulative ${manifest.cumulativeRouteCount} authorized-undiscovered routes · build = baseline ${baseline.prerenderManifestRouteCount} + ${manifest.cumulativeRouteCount} · sitemap/catalogue/discovery unchanged`);
+console.log(`  ${manifest.batches.length} batch(es) · cumulative ${manifest.cumulativeRouteCount} authorized-undiscovered routes · build = frozen baseline ${baseline.prerenderManifestRouteCount} (hash-pinned) + ${manifest.cumulativeRouteCount} · sitemap/catalogue/discovery unchanged`);

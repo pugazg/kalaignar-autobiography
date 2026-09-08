@@ -1,20 +1,11 @@
 {
-  "note": "Wave 6 P1–P3 CUMULATIVE direct-route manifest, composed from data/internal/wave6/batches/*.json. Authorized direct readers that are prerendered but intentionally ABSENT from sitemap/catalogue/discovery until Wave 6 P4 (not authorized). Generated; do not edit by hand — edit/add a per-batch manifest instead.",
-  "wave": 6,
-  "phase": "P1-P3",
-  "frozenBaselineRef": "data/internal/wave6/frozen-baseline.json",
-  "batches": [
-    {
-      "batchId": "b1-cinema-ammaiyappan",
-      "workId": "ammaiyappan",
-      "readerFamily": "cinema-scene",
-      "discoverable": false,
-      "sitemapExposed": false,
-      "routeCount": 65
-    }
-  ],
-  "cumulativeRouteCount": 65,
-  "cumulativeRoutes": [
+  "batchId": "b1-cinema-ammaiyappan",
+  "workId": "ammaiyappan",
+  "readerFamily": "cinema-scene",
+  "discoverable": false,
+  "sitemapExposed": false,
+  "routeCount": 65,
+  "routes": [
     "/cinema/ammaiyappan",
     "/cinema/ammaiyappan/scene-001",
     "/cinema/ammaiyappan/scene-002",

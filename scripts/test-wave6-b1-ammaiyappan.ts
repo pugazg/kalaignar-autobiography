@@ -56,6 +56,15 @@ eq(sectionSlugs[62], "scene-063", "last segment slug scene-063");
 for (const bad of ["scene-000", "scene-064", "scene-1", "scene-099", "foo", ""]) {
   ok(!sectionSlugs.includes(bad), `invalid slug rejected by registry: ${bad || "(empty)"}`);
 }
+// Batch 1 OWNS cinema-scene route derivation: the per-batch manifest must equal the reader-registry-
+// derived route set exactly (the family-agnostic global validator does not know how to derive these).
+const uniqSort = (a: string[]) => Array.from(new Set(a)).sort();
+const batch = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/batches/b1-cinema-ammaiyappan-routes.json"), "utf-8")) as { workId: string; discoverable: boolean; sitemapExposed: boolean; routes: string[] };
+eq(uniqSort(batch.routes), uniqSort(routes), "Batch-1 route manifest == reader-registry-derived routes (exact set)");
+eq(batch.routes.filter((r) => !routes.includes(r)), [], "no manifest route outside the registry");
+eq(routes.filter((r) => !batch.routes.includes(r)), [], "no registry route missing from the manifest");
+eq(batch.workId, "ammaiyappan", "Batch-1 manifest workId");
+ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-1 manifest: discoverable=false, sitemapExposed=false");
 
 // ── 3. P3 BOUNDARY — NOT in sitemap, NOT in catalogue/discovery ─────────────────
 const urls = sitemap().map((e) => e.url);
