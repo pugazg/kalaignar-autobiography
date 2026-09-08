@@ -6,7 +6,10 @@
   "batches": [
     {
       "batchId": "b1-cinema-ammaiyappan",
-      "workId": "ammaiyappan",
+      "workIds": [
+        "ammaiyappan"
+      ],
+      "collectionIds": [],
       "readerFamily": "cinema-scene",
       "discoverable": false,
       "sitemapExposed": false,
