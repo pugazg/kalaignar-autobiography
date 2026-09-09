@@ -301,6 +301,33 @@ function parseTamil(workDir, decl, pageTransition) {
     if (b.scan !== decl.poemScans[i]) throw new Error(`Tamil block ${i} is scan ${b.scan}, expected ${decl.poemScans[i]}`);
   });
 
+  // NON-VERSE OPENING LINES the source prints on the first scan but that are NOT poem body — the
+  // decorated work title, and (in some works) the printed author attribution. The released ENGLISH
+  // assembly already excludes these from its verse region (the title sits as an H1 or attribution
+  // before the first scan marker), but the newer Tamil assemblies place the scan marker first and
+  // then transcribe the page top-down, so those same lines land INSIDE the first block. They are
+  // dropped here, exactly and in order, so the two reading layers agree and no title/attribution is
+  // ever carried as verse. The title travels as `poem.title`, the attribution as `poem.author`;
+  // nothing is inferred. Opt-in and fail-closed: a work that does not declare `dropLeadingLines` is
+  // byte-identical to before, and a declared line that is not present in position is an error.
+  const drop = decl.tamil.dropLeadingLines ?? [];
+  if (drop.length) {
+    const b0 = blocks[0];
+    const kept = b0.lines.map((raw) => raw.replace(/\s+$/, ""));
+    const skipBlank = () => { while (kept.length && kept[0].trim() === "") kept.shift(); };
+    for (const d of drop) {
+      skipBlank();
+      if (!kept.length || kept[0] !== d) {
+        throw new Error(
+          `dropLeadingLines: expected non-verse opening line ${JSON.stringify(d)} at the start of the first Tamil block (scan ${b0.scan}), found ${JSON.stringify(kept[0] ?? "<end of block>")}`,
+        );
+      }
+      kept.shift();
+    }
+    skipBlank();
+    b0.lines = kept;
+  }
+
   const headingLines = decl.tamil.headingLines ?? [];
   const els = [];
   blocks.forEach((b, bi) => {

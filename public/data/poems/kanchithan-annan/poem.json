@@ -1,0 +1,357 @@
+{
+ "workId": "kanchithan-annan",
+ "slug": "kanchithan-annan",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/kanchithan-annan",
+ "sourceCommit": "188d49cd4dcf2c6bbe2e9633841ff402b9959d08",
+ "shelf": "poetry",
+ "readerStructure": "poem",
+ "subtype": "poem",
+ "title": {
+  "ta": "காஞ்சிதான் அண்ணன்",
+  "en": "Kanchi Is Anna"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "publicationYear": 1970,
+ "editionStatement": "காஞ்சி — பொங்கல் மலர், 1970",
+ "factsNotStated": [
+  "printed-page-numbers",
+  "cross-page-stanza-relationships"
+ ],
+ "transcriptionStatus": "verified source assembly — Phase 3 Gates 1–6 PASS / Tamil FINAL-CLEARED, 1/1 poem page, 0 missing, 0 duplicated, 0 discrepancies",
+ "translationStatus": "RELEASE-COMPLETE project-created translation — Phase 4 Batch 01 / assembly / editorial / release-integrity PASS",
+ "tamil": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "‘காஞ்சி’",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அண்ணன் நமக்கு அளித்துச் சென்ற படைக்கலம்—",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அவரது உணர்ச்சிகளுக்கு ஒரு நிலக்களன்.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வாராவாரம் எழுதுவார்......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அதற்காக நாம் வாரம் முழுதும் காத்திருப்போம்!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "எழுத்தென்றால் ஒவ்வொன்றும் பொன்னெழுத்து!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஏடென்றால் ஒவ்வொன்றும் பொன்னேடு!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அழகு தமிழ் கொஞ்சும்......கலை ஆற்றொழுக்கை மிஞ்சும்......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பழகி வந்த நடை......பகுத்தறிவுப் பேரணிக்கு",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பாதை அமைத்த நடை......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஒன்றைப் படித்தால் சிரிப்பு வரும்.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மற்றொன்றைப் படித்தால் சிந்தனை எழும்!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "‘தம்பி’ என்றழைத்துத் தொடங்குவார்......அந்த",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கம்பீரம் வேறு எதிலுண்டு......கனிவு, வேறு எதிலிருக்கும்?",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கலைகள் வளர்ந்த ‘காஞ்சி’ நகருண்டு.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கண்ணியத் தலைவனின் ‘காஞ்சி’யும் அங்கு உண்டு.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆனால் அண்ணன் எங்கே?",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "‘காஞ்சி’ தான் அண்ணன்......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அண்ணன் தான் ‘காஞ்சி’......!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பொங்கல் மலர்......பொன்போன்ற மலர்......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காஞ்சிப் பொங்கலின் சுவையினைப் பருகிட",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காத்திருப்பவர்களில் நானும் ஒருவன்!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 22,
+  "inPageStanzaBreaks": 0,
+  "verseRuns": 1,
+  "sourceEstablishedStanzas": 1,
+  "pageTransitions": 0,
+  "unresolvedStanzaRelations": 0
+ },
+ "english": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "“Kanchi” —",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the weapon Anna left us—",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "an arena for his feelings.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "He would write week after week......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and for it we would wait the whole week!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Every letter—a golden letter!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Every issue—a golden issue!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Lovely Tamil would charm......its artistry would outdo a river’s flow......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "A style that had grown familiar......a style that laid the road",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "for the procession of rationalism......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Read one, and laughter would come.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Read another, and thought would arise!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "He would begin by calling “Thambi”......where else",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "could there be such grandeur......where else such tenderness?",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "There is the city “Kanchi,” where the arts flourished.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "There too is the “Kanchi” of our dignified leader.",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "But where is Anna?",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“Kanchi” is Anna......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Anna is “Kanchi”......!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The Pongal *Malar*......a flower like gold......",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "To savour the flavour of Kanchi’s Pongal,",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "I too am one among those who wait!",
+    "indent": 0,
+    "sourceScan": 16,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 22,
+  "inPageStanzaBreaks": 0,
+  "verseRuns": 1,
+  "sourceEstablishedStanzas": 1,
+  "pageTransitions": 0,
+  "unresolvedStanzaRelations": 0
+ },
+ "poemScans": [
+  16
+ ]
+}

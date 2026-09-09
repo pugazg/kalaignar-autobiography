@@ -1,0 +1,388 @@
+{
+ "workId": "poomudi",
+ "slug": "poomudi",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/poomudi",
+ "sourceCommit": "188d49cd4dcf2c6bbe2e9633841ff402b9959d08",
+ "shelf": "poetry",
+ "readerStructure": "poem",
+ "subtype": "poem",
+ "title": {
+  "ta": "பூமுடி",
+  "en": "Flower Crown"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "publicationYear": 1965,
+ "editionStatement": "முரசொலி-அண்ணா மலர், 1965",
+ "factsNotStated": [
+  "printed-page-numbers",
+  "cross-page-stanza-relationships"
+ ],
+ "transcriptionStatus": "verified source assembly — Phase 3 FINAL-CLEARED, 1/1 poem page, 0 missing, 0 duplicated, 0 discrepancies, opening/closing boundaries PASS/PASS, internal joins 0",
+ "translationStatus": "RELEASE-COMPLETE project-created translation — Phase 4 Batch 01 REVIEWED/PASS, editorial consistency and release-integrity review PASS",
+ "tamil": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "அறிவுமணங் கமழுகின்ற அண்ணன் தலைமீது",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பொன்வைத்தால் நோகுமென்று",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பூவாலே முடி வைத்தார்.",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பூவிதழின் மென்மையினும் மென்மையான",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புனித உள்ளம் — அன்பு உள்ளம் —",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அரவணைக்கும் அண்ணன் உள்ளம் — அவர்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மலர் இதழ்கள் தமிழ் பேசும் —",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மா, பலா, வாழையெனும் முக்கனியும். தோற்றுவிடும்!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "விழிமலர்கள் வேலாகும் — வாளாகும்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தீங்கொன்று தமிழ்த் தாய்க்கு வருகுதென்றால் !",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கால்மலர்கள் வாடிடினும் — அவர்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கடும்பயணம் நிற்காது !",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கைமலர்கள் பிணைத்து நிற்கும், தம்பியரை-கழகத்தை!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அம்மலரே எதிரிகளை மன்னித்து",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நெற்கதிர் போல் தலைநாணச் செய்துவிடும்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மக்களாட்சி மலர் குலுங்க,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சமதர்மப் பூ மணக்க,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தாய்மொழி தமிழே வாழ்வுப் பொழிலாக,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆடிவரும் தென்றல்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நாடிவரும் பூ முடியே ! புகழ்முடியே ! உமைத்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தேடிவரும் வாழ்த்துக் குவியலிலே தினம்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பாடிவரும் வண்டாக நான் பறப்பேன்...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உனைக்காக்க எனைத் துறப்பேன்.",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "மு.கருணாநிதி",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 24,
+  "inPageStanzaBreaks": 1,
+  "verseRuns": 2,
+  "sourceEstablishedStanzas": 2,
+  "pageTransitions": 0,
+  "unresolvedStanzaRelations": 0
+ },
+ "english": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "Upon Anna's head, fragrant with the scent of wisdom,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "thinking gold itself would hurt him,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "they placed a crown of flowers.",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Softer than the softness of flower petals,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "a sacred heart — a loving heart —",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Anna's embracing heart — his",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "flower-petals speak Tamil —",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "mango, jackfruit, banana—the three fruits. Even they would be defeated!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The flowers of his eyes become spears — become swords",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "if any harm should come to Mother Tamil!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Though the flowers of his feet may wither — his",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "arduous journey will not stop!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The flowers of his hands hold together the younger brothers—the Kazhagam!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Those very flowers forgive enemies",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and make their heads bow like ripened ears of paddy.",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "As democracy's flower sways,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "as the flower of social equality spreads fragrance,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "with Tamil, the mother tongue, as life's garden,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "O flower crown sought by the dancing breeze! O crown of fame! Among",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the heaps of greetings that seek you, each day",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "I shall fly as a bee that comes singing...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "To guard you, I shall give myself up.",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "M. Karunanidhi",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 23,
+  "inPageStanzaBreaks": 1,
+  "verseRuns": 2,
+  "sourceEstablishedStanzas": 2,
+  "pageTransitions": 0,
+  "unresolvedStanzaRelations": 0
+ },
+ "poemScans": [
+  4
+ ]
+}
