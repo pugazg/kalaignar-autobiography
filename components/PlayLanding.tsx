@@ -17,6 +17,7 @@ export default function PlayLanding({ play }: { play: Play }) {
   const ta = lang === "ta";
   const first = play.readingUnits[0];
   const continuous = play.structureKind === "continuous-play";
+  const sru = play.structureKind === "editorial-sru-sequence";
 
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
@@ -56,13 +57,22 @@ export default function PlayLanding({ play }: { play: Play }) {
               <dd className="font-tamil text-ink/80 dark:text-night-text/80" lang="ta">{play.edition.priceTa}</dd>
             </div>
           )}
-          {/* The edition prints no year. Saying so is more honest than leaving a blank field. */}
-          <div className="flex gap-2">
-            <dt className="shrink-0 text-ink/50 dark:text-night-text/50">{ta ? "பதிப்பாண்டு" : "Year"}</dt>
-            <dd className="text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
-              {ta ? "இப்பதிப்பில் அச்சிடப்படவில்லை — ஊகிக்கப்படவில்லை" : "not printed in this edition — not inferred"}
-            </dd>
-          </div>
+          {/* Where the scan prints an edition statement it is shown verbatim as a WITNESS; it is
+              never promoted to a catalogue publication year. Where the scan prints none, saying so is
+              more honest than leaving a blank field. */}
+          {play.edition.editionStatementTa ? (
+            <div className="flex gap-2">
+              <dt className="shrink-0 text-ink/50 dark:text-night-text/50">{ta ? "பதிப்பு (அச்சுச் சான்று)" : "Edition (as printed)"}</dt>
+              <dd className="font-tamil text-ink/80 dark:text-night-text/80" lang="ta">{play.edition.editionStatementTa}</dd>
+            </div>
+          ) : (
+            <div className="flex gap-2">
+              <dt className="shrink-0 text-ink/50 dark:text-night-text/50">{ta ? "பதிப்பாண்டு" : "Year"}</dt>
+              <dd className="text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+                {ta ? "இப்பதிப்பில் அச்சிடப்படவில்லை — ஊகிக்கப்படவில்லை" : "not printed in this edition — not inferred"}
+              </dd>
+            </div>
+          )}
         </dl>
 
         <div className="mt-7 flex flex-wrap gap-3">
@@ -78,20 +88,26 @@ export default function PlayLanding({ play }: { play: Play }) {
           <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/45 dark:text-night-text/45">
             {continuous
               ? ta ? "தொடர் நாடகப் பகுதி" : "Continuous dramatic text"
-              : ta ? `காட்சிகள் — ${play.sceneCount}` : `Scenes — ${play.sceneCount}`}
+              : sru
+                ? ta ? `மூல அமைப்பு அலகுகள் — ${play.readingUnits.length}` : `Source-representation units — ${play.readingUnits.length}`
+                : ta ? `காட்சிகள் — ${play.readingUnits.length}` : `Scenes — ${play.readingUnits.length}`}
           </h2>
           <p className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : "en"}>
             {continuous
               ? ta
                 ? "இந்நூலை மூலம் காட்சிகளாகப் பிரிக்கவில்லை; ஒரே தொடர்ச்சியான நாடகப் பகுதியாகவே அச்சிட்டுள்ளது. எனவே இங்கு காட்சி எண்ணும் இல்லை, “காட்சி 1”-உம் இல்லை."
                 : "The edition prints this work as one continuous dramatic text, with no scene division at all. It therefore has no scene numbers and no “Scene 1”."
-              : play.closingTableauCount > 0
+              : sru
                 ? ta
-                  ? `இந்நூல் ${play.sceneCount} எண்ணிடப்பட்ட காட்சிகளையும், அதன்பின் எண்ணிடப்படாத ஒரு நிறைவுக் காட்சியையும் கொண்டது. அந்நிறைவுக் காட்சி காட்சி-39 அல்ல.`
-                  : `The edition prints ${play.sceneCount} numbered scenes, followed by one unnumbered closing tableau. That tableau is not Scene 39.`
-                : ta
-                  ? `இந்நூலில் மூலம் அச்சிட்ட ${play.sceneCount} காட்சிகள் உள்ளன.`
-                  : `The edition prints ${play.sceneCount} numbered scenes.`}
+                  ? `இந்நூலின் மூலம் காட்சி எண்களையோ அங்கங்களையோ அச்சிடவில்லை. இழப்பின்றித் தொகுக்க ${play.readingUnits.length} தொகுப்பு அலகுகள் (SRU) மூல அமைப்பின்படி வரையறுக்கப்பட்டுள்ளன; அவை வழிசெலுத்தலுக்கானவை, காட்சி எண்கள் அல்ல.`
+                  : `The source prints no scene numbers or acts. For lossless assembly it is divided into ${play.readingUnits.length} editorial source-representation units (SRUs) defined by the source's own transitions — navigation, not scene numbers.`
+                : play.closingTableauCount > 0
+                  ? ta
+                    ? `இந்நூல் ${play.sceneCount} எண்ணிடப்பட்ட காட்சிகளையும், அதன்பின் எண்ணிடப்படாத ஒரு நிறைவுக் காட்சியையும் கொண்டது. அந்நிறைவுக் காட்சி காட்சி-39 அல்ல.`
+                    : `The edition prints ${play.sceneCount} numbered scenes, followed by one unnumbered closing tableau. That tableau is not Scene 39.`
+                  : ta
+                    ? `இந்நூலில் மூலம் அச்சிட்ட காட்சிகள்; சில இடங்களில் மூலம் காட்சிகளைத் தொகுத்தோ (எ.கா. 2–5) எண்ணின்றியோ அச்சிட்டுள்ளது — அவ்வாறே பிரதிபலிக்கப்பட்டுள்ளது.`
+                    : `The scenes the edition itself prints; where the source compresses scenes (e.g. 2–5) or heads one without a number, that is mirrored exactly — no scene is invented.`}
           </p>
           {/* Printed pre-dramatic material is announced here, but it is NOT a list entry: it has no
               route, no number, and is never counted among the scenes. It reads at the head of the
@@ -126,6 +142,25 @@ export default function PlayLanding({ play }: { play: Play }) {
                       <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
                         <Drama className="h-3 w-3 text-marina" aria-hidden />
                         {ta ? "காட்சிப் பிரிவின்றி ஒரே தொடர் பகுதி" : "one continuous text — the source prints no scenes"}
+                      </span>
+                    )}
+                    {s.kind === "compressed-scene-range" && (
+                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+                        <Drama className="h-3 w-3 text-marina" aria-hidden />
+                        {ta ? `மூலம் தொகுத்த காட்சிகள் ${s.sceneRange?.join(", ")}` : `source-compressed scenes ${s.sceneRange?.join(", ")}`}
+                      </span>
+                    )}
+                    {s.kind === "unnumbered-scene" && (
+                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+                        <Drama className="h-3 w-3 text-marina" aria-hidden />
+                        {ta ? "எண்ணிடப்படாத காட்சி — காட்சி 22/23 அல்ல" : "unnumbered scene — not Scene 22/23"}
+                      </span>
+                    )}
+                    {s.kind === "source-representation-unit" && (
+                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+                        <Drama className="h-3 w-3 text-marina" aria-hidden />
+                        {ta ? `மூல அமைப்பு அலகு ${s.editorialUnitId} — காட்சி எண் அல்ல` : `${s.editorialUnitId} — an editorial unit, not a scene number`}
+                        {s.assembledFromVerifiedPages === false && (ta ? " · மூலச் சேதக் குறிகள் உள்ளன" : " · carries source-loss markers")}
                       </span>
                     )}
                     <span className="mt-0.5 block text-[11px] text-ink/40 dark:text-night-text/40">

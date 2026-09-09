@@ -24,6 +24,7 @@ if (files.length === 0) die(`no per-batch manifests under ${BATCH_DIR}`);
 const batches = files.map((f) => {
   const b = JSON.parse(fs.readFileSync(path.join(BATCH_DIR, f), "utf8"));
   for (const k of ["batchId", "workIds", "collectionIds", "readerFamily", "routes"]) if (b[k] === undefined) die(`${f} missing ${k}`);
+  if (typeof b.batchId !== "string" || b.batchId.length === 0) die(`${f} batchId must be a non-empty string`);
   if (b.workId !== undefined) die(`${f} uses the retired singular workId; use workIds:[...] and collectionIds:[...]`);
   if (b.discoverable !== false) die(`${f} must be discoverable:false`);
   if (b.sitemapExposed !== false) die(`${f} must be sitemapExposed:false`);
@@ -42,6 +43,13 @@ const batches = files.map((f) => {
     discoverable: false, sitemapExposed: false, routeCount: b.routes.length, routes: [...b.routes].sort(),
   };
 });
+
+// Cross-batch batchId uniqueness — every batch has a distinct, non-empty identity.
+const seenBatch = new Map();
+for (const b of batches) {
+  if (seenBatch.has(b.batchId)) die(`duplicate batchId ${b.batchId} in ${seenBatch.get(b.batchId)} and ${files.find((f) => JSON.parse(fs.readFileSync(path.join(BATCH_DIR, f), "utf8")).batchId === b.batchId)}`);
+  seenBatch.set(b.batchId, b.batchId);
+}
 
 // Cross-batch disjointness of routes, workIds and collectionIds — no identity or route may recur.
 const seen = new Map();

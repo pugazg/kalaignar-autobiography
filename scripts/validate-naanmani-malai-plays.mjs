@@ -80,9 +80,17 @@ check(regMeta.includes("No standalone publication year has been established"), "
 check(/Status:\s*\*\*PASS \/ COMPLETE\*\*/.test(coverage), "composite 54-scan coverage audit is PASS / COMPLETE");
 check(/Status:\s*\*\*PASS \/ COMPLETE\*\*/.test(englishClosure), "composite English-phase closure audit is PASS / COMPLETE");
 check(/Count:\s*\*\*4 \/ 4 independent English translations COMPLETE\*\*/.test(regReadme), "composite registry reports 4/4 independent English translations complete");
-// The batch must never absorb the work whose source processing is still active upstream.
-check(fs.existsSync(path.join(SRC_REPO, "works/manimagudam")), "மணிமகுடம் exists upstream (so its exclusion is a real exclusion)");
-check(!fs.existsSync(path.join(DATA, "manimagudam")), "மணிமகுடம் is NOT imported — its source processing is still active");
+// மணிமகுடம் was held out of THIS composite while its upstream processing was still active. The
+// Wave-6 P0 census now lists it READY, and Wave 6 Batch 2 onboards it SEPARATELY — its own source
+// pin, an undiscovered direct reader — so it must never be ABSORBED into the நான்மணி மாலை composite:
+// exactly like Silappathikaram (also in this repo), it keeps its own different pin, and it stays out
+// of this batch's four-play roster, out of PLAY_SLUGS, and out of the catalogue (below).
+check(fs.existsSync(path.join(SRC_REPO, "works/manimagudam")), "மணிமகுடம் exists upstream (so its separation from this composite is a real one)");
+if (fs.existsSync(path.join(DATA, "manimagudam"))) {
+  const mmPin = JSON.parse(readText(path.join(DATA, "manimagudam/play.json"))).sourceCommit;
+  check(mmPin !== PIN, `மணிமகுடம், now onboarded separately, keeps its own pin (${String(mmPin).slice(0, 8)}) — not the நான்மணி மாலை composite pin`);
+}
+check(!WORKS.some((w) => w.slug === "manimagudam"), "மணிமகுடம் is not one of the four நான்மணி மாலை composite plays");
 check(!new RegExp('"manimagudam"').test(PLAYS_TS), "மணிமகுடம் is not registered in PLAY_SLUGS");
 check(!new RegExp('"manimagudam"').test(LIBRARY), "மணிமகுடம் has no catalogue entry");
 check(!/works\/manimagudam\//.test(importerSrc), "the importer reads no file inside மணிமகுடம் — it only probes that the directory exists, to prove the exclusion is real");

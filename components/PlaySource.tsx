@@ -103,7 +103,7 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
           </dl>
           {/* Each structural note renders only for a work that actually has that structure. */}
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{d.speakerNote}</p>
-          {[s.continuousStructureNote, s.openingNoteNote, s.twoColumnNote, s.closingTableauNote, s.collectionNote]
+          {[s.continuousStructureNote, s.openingNoteNote, s.sruStructureNote, s.compressedSceneNote, s.unnumberedSceneNote, s.intertitleNote, s.printedClosureNote, s.sourceConditionNote, s.twoColumnNote, s.closingTableauNote, s.collectionNote]
             .filter((x): x is string => !!x)
             .map((x, i) => (
               <p key={i} className="mt-2 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">{x}</p>
@@ -121,6 +121,50 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
                 </p>
                 <p className="mt-2 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang="en">{u.policy}</p>
                 <p className="mt-2 font-mono text-[11px] text-ink/50 dark:text-night-text/50">{u.marker}</p>
+              </div>
+            ))}
+          </Card>
+        )}
+
+        {/* Performance-history evidence VISIBLE IN THE SCAN, kept strictly apart from any user-supplied
+            catalogue claim the scan does not itself establish. */}
+        {((prov.performanceWitnesses && prov.performanceWitnesses.length > 0) || (prov.userSuppliedContext && prov.userSuppliedContext.length > 0)) && (
+          <Card icon={ScrollText} title={ta ? "அரங்கேற்ற வரலாறு" : "Performance history"}>
+            {prov.performanceWitnesses && prov.performanceWitnesses.length > 0 && (
+              <>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-ink/45 dark:text-night-text/45" lang={ta ? "ta" : "en"}>
+                  {ta ? "ஸ்கேனில் காணப்படும் சான்றுகள்" : "Evidence visible in the scan"}
+                </p>
+                <dl className="mt-2">
+                  {prov.performanceWitnesses.map((w, i) => (
+                    <Row key={i} label={w.date}><span lang="en">{w.place !== "—" ? `${w.place} — ` : ""}{w.detail}</span></Row>
+                  ))}
+                </dl>
+              </>
+            )}
+            {prov.userSuppliedContext && prov.userSuppliedContext.length > 0 && prov.userSuppliedContext.map((c, i) => (
+              <p key={i} className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang="en">
+                <span className="font-semibold">{ta ? "பயனர் வழங்கிய பட்டியல் சூழல்" : "User-supplied catalogue context"}:</span> “{c.claim}” — {c.status}
+              </p>
+            ))}
+          </Card>
+        )}
+
+        {/* Documented terminal physical source-condition holds, carried verbatim and visibly, never
+            reconstructed. Present only for a work accepted READY WITH QUALIFICATION. */}
+        {prov.sourceConditionHolds && prov.sourceConditionHolds.length > 0 && (
+          <Card icon={AlertTriangle} title={ta ? "மூல நிலை நிறுத்தங்கள் (ஆவணப்படுத்தப்பட்டவை)" : "Documented source-condition holds"}>
+            <p className="mt-3 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : "en"}>
+              {ta
+                ? "கீழ்க்காணும் இடங்களில் அச்சு/காகிதச் சேதம் காரணமாக மூல எழுத்துகள் மீட்க இயலவில்லை. குறிகள் மூலத்தின்படியே வாசிப்பில் காட்டப்படுகின்றன; எதுவும் மீட்டமைக்கப்படவில்லை."
+                : "At these points printed/paper damage left characters unrecoverable. The markers are shown verbatim in the reading text; nothing is reconstructed."}
+            </p>
+            {prov.sourceConditionHolds.map((h, i) => (
+              <div key={i} className="mt-3">
+                <p className="text-sm text-ink/80 dark:text-night-text/80" lang="en">
+                  <span className="font-mono text-xs">{ta ? "ஸ்கேன்" : "scan"} {h.scan}</span> · <span className="font-mono text-xs">{h.unit}</span> · <span className="font-mono text-xs">{h.marker}</span>
+                </p>
+                <p className="mt-1 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang="en">{h.policy}</p>
               </div>
             ))}
           </Card>

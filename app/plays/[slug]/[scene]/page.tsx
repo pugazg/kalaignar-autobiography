@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PlayReader from "@/components/PlayReader";
 import { PLAY_SLUGS, type Play } from "@/data/plays";
+import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
 
 function loadPlay(slug: string): Play | null {
   const p = path.join(process.cwd(), "public/data/plays", slug, "play.json");
@@ -11,8 +12,10 @@ function loadPlay(slug: string): Play | null {
   return JSON.parse(fs.readFileSync(p, "utf8")) as Play;
 }
 
+// Wave 6 P3: discovered PLAY_SLUGS PLUS the undiscovered Wave-6 Drama works, each `[scene]` set
+// derived from its own released registry (play.json.readingUnits). Prerendered but undiscovered.
 export function generateStaticParams() {
-  return PLAY_SLUGS.flatMap((slug) => {
+  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].flatMap((slug) => {
     const play = loadPlay(slug);
     return play ? play.readingUnits.map((s) => ({ slug, scene: s.slug })) : [];
   });

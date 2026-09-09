@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PlayLanding from "@/components/PlayLanding";
 import { PLAY_SLUGS, type Play } from "@/data/plays";
+import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
 
 // NOTE: helpers here are intentionally NOT exported — a Next.js page module may only export
 // reserved names.
@@ -13,8 +14,11 @@ function loadPlay(slug: string): Play | null {
   return JSON.parse(fs.readFileSync(p, "utf8")) as Play;
 }
 
+// Wave 6 P3: the discovered PLAY_SLUGS PLUS the authorized-but-undiscovered Wave-6 Drama works. The
+// latter are prerendered (URL-addressable) but stay out of the catalogue, `/read` and the sitemap,
+// which are driven by PLAY_SLUGS / data/library.ts alone until Wave 6 P4 (NOT authorized).
 export function generateStaticParams() {
-  return PLAY_SLUGS.map((slug) => ({ slug }));
+  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

@@ -103,6 +103,12 @@ jobs:
       # is NOT yet in the sitemap or catalogue (P4 not authorized).
       - name: Cinema Ammayappan direct readers/routes (Wave 6 B1)
         run: npm run test:wave6-b1-ammaiyappan
+      # Wave 6 Batch 2 — Drama direct readers/routes (P1–P3): the 83-route set derived from the three
+      # released play registries, fail-closed slugs, render semantics (compressed range / unnumbered
+      # காட்சி / 47 scenes / 7 SRUs / intertitle / source-condition holds / 1962 not promoted), and
+      # that none of the three works is yet in the sitemap or catalogue (P4 not authorized).
+      - name: Drama direct readers/routes (Wave 6 B2)
+        run: npm run test:wave6-b2-drama
       # Wave 6 P1–P3 global build-boundary — owns the whole-build delta that Wave-5 P4 A7 shed:
       # build == frozen pre-Wave-6 baseline + cumulative Wave-6 P3 route manifest, and every Wave-6
       # route stays out of sitemap/catalogue/discovery. Runs after Build.
@@ -231,6 +237,14 @@ jobs:
               "plays/anarkali": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
               "plays/socrates": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
               "plays/cheran-senguttuvan": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-naanmani-malai" },
+              // Wave 6 Batch 2 — Drama. The three plays pin the stage-plays archive at a LATER commit
+              // than Silappathikaram and the நான்மணி மாலை plays, so they get their own checkout
+              // directory; all three share ONE pin (recorded in each provenance file), so the
+              // same-directory/same-pin guard keeps its meaning. (No apostrophes in this embedded
+              // node script — a literal quote would close the shell string wrapping it.)
+              "plays/kagithapoo": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave6" },
+              "plays/manimagudam": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave6" },
+              "plays/thiruvalar-desiyampillai": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave6" },
               "thirukkural": { repo: "kalaignar-literary-commentary" },
               // ── BULK ONBOARDING WAVE 2 ──────────────────────────────────────────────────────
               // The 37 stories of the 1977 anthology pin the short-stories archive at ONE commit,
@@ -382,6 +396,10 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-naanmani-malai-plays.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-naanmani-malai"
+      - name: Drama batch (Wave 6 B2)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-drama-wave6.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave6"
       # ONE coherent released batch, ONE validation step — the 37 stories of the 1977 anthology.
       # The script prints a PASS/FAIL line per story, so a failure names the story, not just the
       # batch, and any single story failing fails the whole job.

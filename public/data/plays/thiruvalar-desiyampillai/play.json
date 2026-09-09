@@ -1,0 +1,3559 @@
+{
+ "workId": "thiruvalar-desiyampillai",
+ "slug": "thiruvalar-desiyampillai",
+ "title": {
+  "ta": "திருவாளர் தேசீயம்பிள்ளை",
+  "en": "Thiruvalar Desiyampillai"
+ },
+ "descriptor": {
+  "ta": "நாடகம்",
+  "en": "A Play"
+ },
+ "author": {
+  "ta": "கலைஞர் மு. கருணாநிதி",
+  "en": "Kalaignar M. Karunanidhi"
+ },
+ "edition": {
+  "publisherTa": "K. R. நாராயணன்",
+  "placeTa": "131, பிராட்வே, சென்னை-1",
+  "copyrightLineTa": "முத்தமிழ்ச் செல்வி அச்சகம், 1/65, பிராட்வே",
+  "editionStatementTa": "இரண்டாம் பதிப்பு — நவம்பர் 1965",
+  "year": null
+ },
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/thiruvalar-desiyampillai",
+ "sourceCommit": "61c0f410fd24b1419779532a4a1b049cdff10bf7",
+ "structureKind": "editorial-sru-sequence",
+ "sceneCount": 0,
+ "closingTableauCount": 0,
+ "scanProvenance": "per-unit-group",
+ "bodyScans": {
+  "from": 7,
+  "to": 48
+ },
+ "readingUnits": [
+  {
+   "order": null,
+   "slug": "sru-01-yama-court",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Yama court / Desiyampillai entrance",
+   "titleEn": "Yama court / Desiyampillai entrance",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "editorialUnitId": "SRU-01",
+   "assembledFromVerifiedPages": false,
+   "tamil": {
+    "units": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "திருவாளர்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "தேசீயம் பிள்ளை",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமதர்ம ராஜனுடைய தர்பார் [paper loss]கிறது. எலும்பு அங்கிகளே அணிந்த வீரர்கள் இரு [paper loss]ங்களிலும் அணிவகுத்து நிற்கிறார்கள். கபால ஓ[paper loss]களில் தோரண விளக்குகள் கொலுமண்டப மெங்கும் ஏற்றி வைக்கப்பட்டு ஒளி மங்கி விடாமல் தூண்டி விடுவதற்காக அடிக்கடி மனிதக் கொழுப்பு வார்க்கப்பட்டு நரம்புத் திரிகளும் இடப்படுகின்றன. ஒரு பயங்கரமான உருவம் தலையை மேலே தூக்கி விழி பிதுங்குவது போல உரத்த குரலெடுத்து ‘அய்யோ! அய்யோ!!,’ என்று கத்துகிறது. அது தான் சபைக்கு மன்னன் வருவதை அறிவிக்கும் ஒலிக் குறிப்பு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அந்த ஒலியை அடுத்து நான்கு எருமை மாடுகள் பட்டுத் துணிகளால் அலங்கரிக்கப்பட்டு நடைபோட்டு வருகின்றன. அதற்கடுத்து, எமதர்மன் இரண்டு மூடர்களின் தோள்மீது உட்கார்ந்து கொண்டு பிரேதங்களால் அமைக்கப்பட்ட ஆசனத்தின் பக்கம் வந்து இறங்குகிறான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சபையில் ஒரே ஆரவாரம்— ‘அய்யோ’ என்ற மகிழ்ச்சிகரமான வரவேற்பு ஆஸ்தானப் புலவர்; கவிஞர் ஒப்பாரி எழுந்து வாழ்த்துக் கீதம் வழங்குகிறார். அடுத்தாற்போல் கொள்லிச்சட்டி நடனம் ஆரம்பமாகிறது. வடிவழகிவாய்க்கரிசி தலைமை ராஜநர்த்தகியாக நடனத்தில் பங்கு கொள்கிறாள். ரத்தத்தால் சிவப்பாக்கப்பட்ட உதடுகளையும் மீறிக் கொண்டு வெளியே தல நீட்டியிருக்கும் ஆனத் தந்தம் போன்ற பற்களின் ஒளி[paper loss]மென், உள்ளத்தைப் பறிகொடுக்கிறான். நடன[paper loss]ர் ஒவ்வொருவரையும் பாசக் கயிற்றால் பிணை[paper loss] கழுவிப் பரிசளித்து அனுப்பி வைக்கிறான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "கொலுமண்டபத்து நித்திய நிகழ்ச்சிகள் துவங்கப்படுகின்றன,— என்று சித்திராபுத்திரன் அறிவிக்கிறான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "மன்றத்து பிரதானியர் அனைவரும் தங்கள் தங்கள் பாடையில் பேசுகிறார்கள். (பாடை என்பது இங்கே பாஷையைக் குறிக்கும்)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமலோகத்தின் பல பகுதிகளிலிருந்து வந்திருப்போர் தங்கள் குறைகளைத் தெரிவித்து கொண்டு போது எமதர்ம ராஜன் சற்றுக் கண்ணயர்ந்துவிடவே அருகேயுள்ள சித்திராபுத்திரன் அவனை எழுப்பிவிட்டு அவையினரின் பாராட்டைப் பெறுகிறான். மன்னனின் விசாரணை ஆரம்பமாகிறது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "இதுவரையில் மன்றத்துப் பிரதிநிதிகளின் பேச்சுக்களைக் கேட்டேன். சுடுகாட்டில் இருக்க வேண்டிய நீங்கள் இந்தச் சபைக்கு வந்து ஏன் என் உயிரை வாங்குகிறீர்கள்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ஒருபிரதிநிதி",
+      "speakerSeparator": ": ",
+      "text": "ஒழுங்குப் பிரச்சினை! சபாநாயகர் அவர்களே! உயிர் வாங்கும் வேலை மன்னருக்குத்தான் உரியதே தவிர எங்களுக்கல்ல.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எல்லோரும் சபாநாயகரின் இருப்பிடத்தைப் பார்க்கிறார்கள். அவர் அன்று சபைக்குத் தாமதமாகத்தான் வருவார் என்று சித்திராபுத்திரன் அறிவித்து விட்டவே ஒழுங்குப் பிரச்சினை கைவிடப்படுகிறது. மீண்டும் எமனின் விசாரணை தொடர்கிறது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "நான் பேசும்போது யாராவது குறுக்கே பேசினால் மீண்டும் உங்களுக் கெல்லாம் உயிர் கொடுத்து, பசி, பிணி, கஷ்டம், துக்கம் முதலிய உணர்ச்சிகளை உண்டாக்கி விடுவேன். எமலோகத்திலே குடியேறியிருக்கிற உங்களை யெல்லாம் மறுபடியும் பூலோகத்துக்குத் துரத்தி அங்கு கஷ்டப்படாமல் காப்பாற்றி வருகிறேனே, அந்தக் காவாவது நீங்கள் எனக்கு அடங்கி நடக்க வேண்டாமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ஒரு குரல்",
+      "speakerSeparator": ": ",
+      "text": "ஒருவாறு அடங்கி நடப்பது என்பது சர்வாதிகாரமல்லவா? எங்கே ஜனநாயக[paper loss] எங்கே ஜனநாயகம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமன் மிகவும் ஆத்திரத்துடன் எழுந்து ஒரு பிரதிநிதியின் தலையை நறநறவென்று மென்று தின்றுவிட்டு ஏப்பம் விட்டவாறு,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "யாரடா அது; தடுத்தும் கேளாமல் தகாத வார்த்தை பேசுவது? ஒழுங்காக யிருக்கிறீர்களா? அல்லது உயிர்கொடுத்து உங்கள் தாய் உலகத்துக்குத் திருப்பி அனுப்பிவிடவா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எல்லோரும்",
+      "speakerSeparator": ": ",
+      "text": "வேண்டாம்பிரபு! ஒழுங்காயிருக்கிறோம்!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "உங்களைச் சொல்லிக் குற்றமில்லை. நீங்கள் எல்லாம் குடியேறியவர்கள் என்பதை மறந்துவிட்டு இந்த நாட்டிலேயுள்ள பேய்களும் பிசாசுகளும் உங்களுக்கு பொதுத் தேர்தலிலே ஓட்டுப் போட்டுத் தேர்ந்தெடுத்து இங்கே அனுப்பி வைத்திருக்கிறார்களே, அவர்களைச் சொல்ல வேண்டும். போகட்டும் சித்திராபுத்திரரே! இந்த ஆண்டு நிதி நிலை அறிக்கையைச் சபையின் முன்னே படித்துத் தொலையும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "சித்ரா",
+      "speakerSeparator": ": ",
+      "text": "படித்துத் தொலைக்கிறேன் மன்னவா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ஒரு பிரதிநிதி",
+      "speakerSeparator": ": ",
+      "text": "(நடுக்கத்தோடு எழுந்து) தாம்பிரபு! நிதிநிலை அறிக்கையின் பிரதிகள் எங்களுக்கு தரப்பட்டிருக்கிற காரணத்தால் நாங்களே படித்துத் தெரிந்து கொள்கிறோம். சித்திராபுத்திரரைப் படிக்கச்சொல்லி நேரத்தை வீணக்க வேண்டாம் என்பது எங்கள் தாழ்மையான விண்ணப்பம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "சரி! உருப்படியான யோசனை! ஏற்றுக் கொண்டேன். நிதிநிலை அறிக்கையின் முக்கியக் குறிப்புகள் மட்டும் உங்களிடம் சுருக்கமாகச் சொல்லுகிறேன். சென்ற ஆண்டு நமது நாட்டில் உயிர் ஏற்றுமதி சற்றுத் தாராளமாக இருந்தது. இந்த ஆண்டு இந்தியத் துணைக் கண்டத்திலும் குடும்பக் கட்டுப்பாடு அமுலாக்கப்பட்டு விட்டதால் இங்கு தேங்கிக் கிடக்கும் உயிர்களை அதிக அளவு ஏற்றுமதி செய்ய இயலவில்லை. இதனால் அரசினருக்குச் சொல்ல முடியாத நஷ்டம் ஏற்பட்டிருக்கிறது; இந்த நஷ்டத்தை ஈடுசெய்ய வழி காண வேண்டும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ஒரு பிரதிநிதி",
+      "speakerSeparator": ": ",
+      "text": "இனியும் உயிர்கள் மேலும் மேலும் கொண்டு வராமல் இருந்தால் என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "நல்ல கேள்விதான். ஆனால் கேள்வி கேட்கும் உறுப்பினர் பிரம்மச்சாரி மட்டுமல்ல; அவருக்குப் பூவுலகில் உற்றார் உறவினர், அக்காள் தங்கை, அண்ணன் தம்பி, யாருமே இல்லை. தாயும் தந்தையும் மட்டும்தான். அவர்கள் முன்னமே இங்கு வந்து விட்டார்கள். ஆனால் மற்ற உறுப்பினர்கள் அப்படி அல்லவே! எங்கள் சொந்தக்காரர்களை எப்படியாவது அழைத்து வந்து விடுங்கள் என்று பலமான சிபார்சுகளுடன் விண்ணப்பம் போட்ட வண்ணமிருக்கிறார்களே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இந்த நிலையில் நமது ராச்சியத்துக்கு ஏற்படும் நஷ்டத்தைத் தவிர்க்க என்ன செய்யலாம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "ஒரு குரல்",
+      "speakerSeparator": ": ",
+      "text": "வரிபோடலாம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "யாரது? வரிபோடுவதா? இதுவரையில் அப்படி ஒரு வார்த்தையை இந்தச் சபை கேட்டதே கிடையாதே. வரி! வரி!! வரி!!! புதுமையான வார்த்தை! இந்த வார்த்தையைச் சொன்னவர் யார்? எழுந்து நில்லுங்கள் பார்க்கலாம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(ஒரு பெரிய உருவம் கதராடையும் கதர்க்குல்லாயும் அணிந்து எழுந்து நிற்கிறது)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "நீ யார்? இந்தச் சபைக்கு எப்படி வந்தாய்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "கதர் உருவம்",
+      "speakerSeparator": ": ",
+      "text": "என் பெயர் தேசீயம்பிள்ளை! மேலே பார்வையாளனாக வந்து உட்கார்ந்திருந்தேன்! நீங்கள், நாட்டுப் பொருளாதாரம் செழிக்க வழி கேட்டதும் உணர்ச்சி வசப்பட்டு கீழே குதித்து விட்டேன்; மன்னிக்கவும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "சபையின் கெளரவத்தையே குலைத்திருக்கிறாய் அதுமட்டுமல்ல; என் உத்திரவில்லாமல்—எங்கள் நாட்டு அனுமதிச் சீட்டுப் பெறாமல் எம் ராச்சியத்தில் அத்து மீறிப் பிரவேசித்திருக்கிறாய்! ஒரு வேளை நீ கள்ளத் தோணியிலேதான் வந்திருக்க வேண்டும்! உன்னைச் சும்மா விட்டுப்போவதில்லை “வரி” என்ற வார்த்தைக்கு அர்த்தம் சொல்லித் தீர வேண்டும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீயம் பிள்ளை",
+      "speakerSeparator": ": ",
+      "text": "பிரபு! நீங்கள் என்னைச் சாதாரணமாகக் கருதக் கூடாது—உங்களுக்கு எருமை வாகனமென்றால் எனக்குக் காளைமாட்டு வாகனம்— ஏறத்தாழ இருவரும் ஒரே மாதிரி! அது மட்டுமல்ல; நான் பிறந்த வருஷம் 1885! இத்தனை ஆண்டுகளாக இங்கு வந்து தங்களைப் பார்த்துவிட்டுப் போகலாமென்று எத்தனையோ முறை முயன்றேன்; முடியவில்லை, இதோ—அதோ இன்றைக்கு நாளைக்கு என்று ‘கெடு’ கூட வைத்துவிடுவேன். திடீரெனக் கடைசி நேரத்தில் எப்படியோ பயணம் ரத்தாகிவிடும். நான் செய்த பாக்கியம் தங்கள் தரிசனம் கிடைத்தது. அய்யன்மீர்! என் சிறிய தந்தை மகாத்மா காந்தி இங்கே வந்தாராமே; அவர் இப்போது எங்கே இருக்கிறார்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "ஓகோ, நீ காந்திக்கு மகன் முறையா? அந்தக் காந்தி நம்மை அவமதித்துப் பேசிய காரணத்தால் ‘சொர்க்கம்’ என்னும் படுபாதாளச் சிறையில் போட்டுப் பூட்டிவைத்திருக்கிறேன். அவரை நீ இப்போது பார்க்க முடியாது! இதோ உன்னையும் கைது செய்து என் அரசாங்கப் பாதுகாப்பு கைதியாக—மரியாதைகள் எதுவும் குறையாமல் என் மாளிகை விருந்து விடுதியில் தங்கவைக்கப் போகிறேன். நாளைய தினம் நமது பேட்டி. அப்போது ‘வரி’ என்ற வார்த்தையைப் பற்றி விவாதிப்போம். அதன் பிறகு உனக்குரிய தண்டனை வழங்கப்படும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீயம் பிள்ளை",
+      "speakerSeparator": ": ",
+      "text": "தண்டனையா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "ஆமாம்—நமது நீதிமன்றத்தில் விசாரிக்கப்பட்டு பெரும்பான்மையோர் கருத்துப்படி தண்டனை வழங்கப்படும்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீயம் பிள்ளை",
+      "speakerSeparator": ": ",
+      "text": "ஓகோ, இங்கும் ஜனநாயக ஆட்சி தானா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "கிட்டத்தட்ட உங்கள் நாட்டைப் போலத்தான், எல்லாம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உங்கள் நாட்டில் சபாநாயகர் குறித்த காலத்தில் வரவேண்டும். எங்கள் ராச்சியத்தில் வந்தாலும் வரலாம்—வராவிட்டாலும் பரவாயில்லை மற்றபடி எல்லாம் ஒரே மாதிரி ஜனநாயகம்தான்! உங்களிடமிருந்து நாங்கள் கற்றுக்கொள்ளாத ஒரே ஒரு விஷயம் “வரி” என்றுமே அதுதான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீயம் பிள்ளை",
+      "speakerSeparator": ": ",
+      "text": "அதையும் நாளைக்கு விளக்கி விடுகிறேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "சந்தோஷம்! காவலர்களே! இந்த உயிர் பிராணியைக் கைது செய்து நமது உல்லாச மண்டபத்தில் பாதுகாப்பில் வை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீயம் பிள்ளை",
+      "speakerSeparator": ": ",
+      "text": "உல்லாச மண்டபமா? அப்படியானால் உதகை மண்டலமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": ": ",
+      "text": "அதே போலத்தான்! உங்கள் உதகை மண்டலத்தில் பனிக்காற்று வீசும்! இங்கே நறுமணமிக்க பிணக்காற்று வீசும்! அனுபவித்துப் பாரும்! இரண்டுக்கு முள்ள வித்தியாசம் தெரியும்—எய்! அழைத்துப்போ! நாளைக்கு சந்திக்கிறேன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(தேசீயம் பிள்ளை அழைத்துச் செல்லப்படுகிறார். சபாநாயகர் வருகிறார். சபை மறுநாள் காலைவரை ஒத்தி வைக்கப்படுகிறது)",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "Thiruvalar",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "Desiyam Pillai",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama Dharma Raja's durbar [paper loss]. Warriors clad in garments of bone stand in formation on both [paper loss]. In skull [paper loss], festoon lamps are lit throughout the court hall, and to keep their light from dimming, human fat is poured into them from time to time and nerve-wicks are inserted. A terrifying figure raises its head, its eyes bulging, and cries in a loud voice, “Ayyo! Ayyo!!” That is the sound signal announcing the king's arrival in the assembly!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Following that sound, four buffaloes, decorated with silk cloths, come walking in. Behind them comes Yama Dharma, seated on the shoulders of two fools; he descends beside a seat made of corpses.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The assembly erupts in a single roar—the joyous welcome of “Ayyo!” The court poet, Poet Oppari, rises and offers a song of praise. Next begins the *kollisatti* dance. Vadivazhagi-Vaikkarisi, the chief royal dancer, takes part in the dance. The gleam of teeth like elephant tusks, thrust out beyond blood-reddened lips, [paper loss], and he loses his heart. Each dance[paper loss] is bound with a noose, [paper loss], rewarded, and sent away.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“The daily proceedings of the court hall are beginning,” announces Chitraputhiran.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "All the chief members of the assembly speak in their respective *padai*. (Here *padai* means *bhasha*, that is, language.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "As those who have come from various parts of Yamaloka are presenting their grievances, Yama Dharma Raja begins to doze a little. Chitraputhiran, who is nearby, wakes him and wins the praise of the assembly. The king's inquiry begins.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "So far I have listened to the speeches of the assembly representatives. You are supposed to be in the cremation ground; why have you come into this assembly and started taking my life?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "OneRepresentative",
+      "speakerSeparator": ": ",
+      "text": "Point of order! Mr. Speaker! The work of taking lives belongs only to the king, not to us.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Everyone looks toward the Speaker's seat. Chitraputhiran announces that the Speaker will be late to the assembly that day, and the point of order is dropped. Yama's inquiry resumes.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "If anyone interrupts while I am speaking, I will give all of you life again and bring back feelings such as hunger, disease, hardship, and sorrow. I have been protecting all of you who have settled in Yamaloka, keeping you from having to suffer again in the earthly world. Shouldn't you at least obey me in return for that protection?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "A Voice",
+      "speakerSeparator": ": ",
+      "text": "Isn't being made to submit in this way dictatorship? Where is democra[paper loss] Where is democracy?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama rises in a fury, crunches and eats the head of one representative, and, after letting out a belch,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Who is that fellow, speaking improper words even after being warned? Are you going to behave properly? Or shall I give you life and send you back to your mother-world?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "All",
+      "speakerSeparator": ": ",
+      "text": "No, Your Majesty! We will behave properly!!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "It isn't your fault. You have forgotten that you are all settlers here, while the ghosts and demons of this country voted for you in a general election, elected you, and sent you here. They are the ones to blame. Never mind, Chitraputhiran! Read this year's financial statement before the assembly and be done with it.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Chitra",
+      "speakerSeparator": ": ",
+      "text": "I shall read it and be done with it, my king!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "One Representative",
+      "speakerSeparator": ": ",
+      "text": "(rising nervously) Your Majesty! Since copies of the financial statement have been given to us, we shall read them and understand it ourselves. Our humble request is that time not be wasted by making Chitraputhiran read it aloud.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "All right! A useful suggestion! Accepted. I shall give you only a brief account of the main points in the financial statement. Last year the export of souls from our country was fairly liberal. This year, family planning has been implemented even in the Indian subcontinent, so we have not been able to export in large numbers the souls that have accumulated here. This has caused the government an indescribable loss; we must find a way to make up that loss.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "One Representative",
+      "speakerSeparator": ": ",
+      "text": "What if we simply stop bringing in more and more souls from now on?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "A good question. But the member asking it is not merely a bachelor; in the earthly world he has no close relatives at all—no elder or younger sister, no elder or younger brother. Only his mother and father, and they have already come here. The other members are not like that! They keep submitting petitions, with powerful recommendations, asking us somehow to bring their own relatives here!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "In this situation, what can we do to avoid the loss our realm is suffering?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "A Voice",
+      "speakerSeparator": ": ",
+      "text": "We can impose a tax?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Who said that? Impose a tax? Until now this assembly has never even heard such a word. Tax! Tax!! Tax!!! What a novel word! Who uttered it? Stand up, let us see you!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(A large figure wearing khadi clothes and a khadi cap rises and stands.)",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Who are you? How did you get into this assembly?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Khadi Figure",
+      "speakerSeparator": ": ",
+      "text": "My name is Desiyampillai! I had come as a spectator and was sitting upstairs! When you asked for a way to make the country's economy prosper, I became carried away by emotion and jumped down here; forgive me.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "You have undermined the dignity of the assembly. And that is not all; without my order—without obtaining an entry permit for our country—you have trespassed into my realm! Perhaps you came here in an illicit boat! I am not going to let you off easily. You must explain the meaning of the word “tax.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desiyam Pillai",
+      "speakerSeparator": ": ",
+      "text": "My lord! You must not consider me an ordinary man—if your vehicle is a buffalo, mine is a bullock vehicle; the two of us are almost alike! And that is not all; I was born in 1885! For all these years I have tried so many times to come here, see you, and leave; I could never manage it. I would even set a “kedu”—today, tomorrow—but somehow, at the very last moment, the journey would suddenly be cancelled. It is my good fortune that I have received your darshan. Sir! I heard that my younger father, Mahatma Gandhi, came here; where is he now?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Oh-ho, are you related to Gandhi as a son? Because that Gandhi spoke insultingly of us, I have locked him up in the utterly subterranean prison called “Heaven.” You cannot see him now! And now I am going to arrest you too and keep you, as a government protective detainee—with no shortage of honours—in my palace guesthouse. Our interview is tomorrow. Then we shall discuss the word “tax.” After that, the punishment due to you will be given.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desiyam Pillai",
+      "speakerSeparator": ": ",
+      "text": "Punishment?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Yes—our court will inquire into the matter, and punishment will be given according to the opinion of the majority.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desiyam Pillai",
+      "speakerSeparator": ": ",
+      "text": "Oh-ho, so there is democratic rule here too?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Almost exactly like your country.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "In your country the Speaker has to arrive at the appointed time. In our realm, he may come if he likes—or if he does not, it does not matter. Apart from that, it is all the same kind of democracy! There is only one thing we have not learned from you: “tax.” That alone!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desiyam Pillai",
+      "speakerSeparator": ": ",
+      "text": "I shall explain that tomorrow too.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Glad to hear it! Guards! Arrest this living creature and place him under protection in our Pleasure Pavilion!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desiyam Pillai",
+      "speakerSeparator": ": ",
+      "text": "Pleasure Pavilion? Then is it Udhagai Mandalam?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": ": ",
+      "text": "Almost the same! In your Udhagai Mandalam a cold breeze blows! Here a fragrant corpse-breeze blows! Experience it and see! You will understand the difference between the two—hey! Take him away! I will see you tomorrow!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "stage-direction",
+      "delimiter": "round",
+      "text": "(Desiyam Pillai is taken away. The Speaker arrives. The assembly is adjourned until the next morning.)",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- The translation follows only the reviewed Tamil SRU and retains all **7** `[paper loss]` markers; no missing wording is reconstructed.\n- `Thiruvalar` is retained as the source title/honorific rather than normalized to an English honorific.\n- Source speaker-label variation is kept visible: `OneRepresentative:` reflects source `ஒருபிரதிநிதி:` while `One Representative:` reflects the later spaced form `ஒரு பிரதிநிதி:`; `Chitra:` reflects source `சித்ரா:`.\n- Underworld/funerary names and wordplay such as *Oppari*, *kollisatti*, and Vadivazhagi-Vaikkarisi are transliterated rather than silently replaced with explanatory prose.\n- The source explicitly glosses *padai* through *bhasha*; both terms are retained so the source's wordplay remains traceable.\n- `kedu` and `darshan` are retained where a single smooth English substitute would erase the source's register or joke.\n- `Udhagai Mandalam` is retained in the Pleasure Pavilion exchange because the source's sound/wordplay depends on the Tamil place-name form."
+     }
+    ]
+   }
+  },
+  {
+   "order": null,
+   "slug": "sru-02-guesthouse",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Guesthouse / military-commandant hospitality",
+   "titleEn": "Guesthouse / military-commandant hospitality",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "editorialUnitId": "SRU-02",
+   "assembledFromVerifiedPages": true,
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nஎமதர்ம ராஜனின் மாளிகையிலுள்ள விருந்து விடுதியில் தேசீயம்பிள்ளை பாதுகாப்பில் வைக்கப்பட்டிருக்கிறார்.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உல்லாச மண்டபம் என்றாரே; இதற்குப் பெயர் தானா உல்லாச மண்டபம்? என்று ஆச்சரியத்தோடு தேசீயம்பிள்ளை மிரள மிரள விழித்துச் சுற்றுமுற்றும் பார்க்கிறார். சின்னஞ்சிறு குழந்தையின் பிஞ்சுத் தலைகள் அப்படிக் குவிக்கப்பட்டிருக்கின்றன.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அய்யோ! இதுவா உல்லாச மாளிகை?—தேசீயம்பிள்ளை கத்திவிடுகிறார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்! இதுதான் உல்லாச மாளிகை! கொட்டிக் கிடக்கும் இவைகள் என்னவென்று கருதினாய்? இவைதான் எங்கள் நாட்டு உருளைக் கிழங்கு! எங்கள் உல்லாச மாளிகையைச் சுற்றி விளையும் பொருள் இதுதான்!—எனச் சிரித்தபடி ஓர் உருவம் எதிரே வந்தது. அந்த உருவம் தான் எமலோகத்தில் ராணுவ தளபதி பதவியிலே இருக்கும் “ஸ்ரீ மயானம்”!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "மயானத்தின் இஷ்டப்படிதான் எமதர்மனின் நிகழ்ச்சி நிரல்கள் வகுக்கப்படும். அதன்படி வகுக்கப்பட்ட நிகழ்ச்சியையொட்டி எமனுக்கு முன்னதாக தேசீயம்பிள்ளையைப் பேட்டி காணவே ராணுவத் தளபதி அங்கு வந்தது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்னய்யா! குழந்தைகளின் தலைகள் அறுத்துக் கொட்டிவிட்டு இந்த இடத்திற்குப் பெயர் உல்லாச மண்டபம் என்கிறீர்கள்? என்று சோகமும் வேகமும் போட்டியிடக் கேட்டார் தேசீயம்பிள்ளை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எங்கள் நாட்டில் உல்லாச மண்டபத்துக்குள்ளேயே இப்படிக் குழந்தைத் தலைகள் கொட்டப்பட்டிருக்கும்; ஆனால் உங்கள் நாட்டில் உல்லாச மண்டபத்துக்கு வெளியே குழந்தைகளின் தலைகளைப் பொறுக்கலாமாம்! இரண்டுக்கும் பெரிய வித்தியாசம் ஒன்றுமில்லையே!—தளபதி கேலியாகப் பதில் சொன்னான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அபத்தம்! அபாண்டம்!! யார் சொன்னது அப்படி? பொய்! பொய்!!—தேசீயம்பிள்ளை கத்தினார்,",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இதுவரையில் இங்கு குடியேறிய எல்லோரும் ஒத்துக் கொண்ட உண்மையை நீர் மறுக்கிறீர்! இதோ பொறுக்கிக் குவிக்கப்பட்டுள்ள அத்தனை தலைகளும் உங்கள் நாட்டிலேயிருந்து கொண்டு வரப்பட்டவைதான்! இவைகளில் பல கல்யாணமாகாத பெண்களின் கருவிலே உதித்தவை! பல விதவைகளின் வயிற்றிலே விளைந்தவை! ஆயிரக்கணக்கானவை ஆற்றிலும் குளத்திலும் மிதந்தவை! ஏராளமான தலைகள் வறுமை வயவில் பொறுக்கப்பட்டவை! சில குழந்தைகளின் நெற்றியில் அவமானச் சின்னம் குத்தப்பட்டிருக்கும். சிலவற்றின் கழுத்தில் தாயின் கட்டைவிரல் ரேகைகள் அழுத்தமாகப் பதிந்திருக்கும். அந்த ரேகைகளே ஆராய்ச்சி செய்ததில் ஈவு இரக்கமுள்ள பெண்களின் ரேகைதான் அவையென்றும் எங்கள் ஆஸ்தான ரேகை நிபுணர்கள் முடிவு கூறி இருக்கிறார்கள். சில குழந்தைகளின் கருவிழிகள் வட்ட வடிவமான அசோகச் சக்கரங்கள் போலவே அமைந்திருப்பதையும் கண்டோம். அதுபற்றிய ஆராய்ச்சியை எமது விஞ்ஞான மேதை ஒருவரிடம் ஒப்படைத்திருக்கிறோம். இன்னும் முடிவு வெளிவரவில்லை. இப்போது என்ன சொல்லுகிறீர்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ராணுவத் தளபதியின் ஆத்திரங் கலந்த பேச்சைக் கேட்டுத் தேசீயம்பிள்ளை தலைகுனிந்தவாறு நின்றார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அப்போது ஐந்தாறு பெண்கள் கையில் கிண்ணங்கள் ஏந்தியவாறு அவர் எதிரே வந்து நின்றனர். பெண்களா அவர்கள்? பிள்ளை அவர்கள் உற்றுப் பார்த்தார். ஆமாம்; பெண்களேதான்! முடிவு கட்டிக் கொண்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ம்! குருதி பானம் அருந்தும்!—தளபதி உபசரித்தார். கிண்ணங்களைப் பார்த்தார் தேசீயம்பிள்ளை! அய்யோ! கண்கள் சுழன்றன—எல்லாக்கிண்ணங்களிலும் பொங்கி வழியும் ரத்தம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ரத்தபானமா?—தேசீயம்பிள்ளை அலறிவிட்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்—இது கல்லக்குடி பானம்! அது தூத்துக் குடிச்சாறு! இது சேலத்து ரசம்! அது வால்பாறையில் பிழிந்தெடுத்தது!—என அடுக்கிக் கொண்டே போனான் தளபதி. தேசீயம்பிள்ளையால் நிற்க முடியவில்லை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தளபதி கலகலவெனச் சிரித்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என் திகைக்கிறீர்? எல்லாப் பானங்களுமே உமது நாட்டில் தயாரித்ததுதானே! வெளிநாட்டுச்சரக்கு என்று எண்ணுகிறீரா? இல்லை; உமது சொந்த நாட்டுச் சரக்குதான்! சிறுதுளிகளாவது அருந்தும்!—தளபதி மிகவும் பிடிவாதப்படுத்தினான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வேண்டாம் பூமாதேவியைக் குளிப்பாட்டுவதற்காகத் தயாரித்த புண்ணிய தீர்த்தம் இது! இதை இங்கே பானமாக அருந்துவது என்றால் எப்படி முடியும்?—தேசீயம்பிள்ளை கொஞ்சம் கோபத்தோடு பதில் கூறினார். தளபதி விடவில்லை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமலோகத்தில் நடைபெறும் உபசாரத்தை சரிவர ஏற்றுக் கொள்ளாதவர்களுக்கு என்ன தண்டனை தெரியுமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தேசீயம்பிள்ளை விழித்தார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பூலோகத்தில் ஆரம்ப ஆசிரியர்களாகப் பிறக்க வேண்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வேண்டாம்—வேண்டாம்! உபசாரத்தை மறுக்காமல் ஏற்றுக்கொள்கிறேன். கொடுங்கள் கிண்ணங்களே! தேசீயம்பிள்ளை சிறு மயக்கத்தோடு அமர்ந்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆகாஷவாணி எங்கே?—என்று அதட்டிக் கேட்டான் தளபதி.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இதோ வந்தேன்!—என்று அரை நிர்வாணமாக ஒரு பேருருவப் பெண் ஓடிவந்தாள். நிலக்கரியை அரைத்துப் பூசினாற் போன்ற மேனி! நெருஞ்சி முட்கள் நிறைந்த தரை போன்ற முகம்! அவள்தான் எமலோகத்து இசைக்குயில்! அந்த ஆகாஷவாணி முகாரி ராகத்தில் பாட ஆரம்பித்தாள்; பாட்டைக் கேட்டதும் தேசீயம்பிள்ளைக்கு புதுத் தெம்பு உண்டாயிற்று. ஆகாஷவாணியின் முகத்தையே கண்கொட்டாமல் பார்த்துக் கொண்டிருந்தார். அவளும் அவரையே வைத்த விழி வாங்காமல் பார்த்தாள். இருவரிடையே விவரிக்க முடியாத ஒரு உணர்ச்சி கொந்தளித்து எழுந்துவிட்டது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அழகுப் பதுமையே! ஆரணங்கே! தேடக் கிடைக்காத திரவியமே! தேன்மொழியே! தித்திக்கும் கனியே! தெள்ளமுதே! அருகே வா!—என மயக்கத்தில் உளறினார். அவளும் அருகே வந்தாள். இருவரும் தழுவிக் கொண்டனர். ராணுவத் தளபதி கண்களை மூடிக்கொண்டு வேறுபக்கம் திரும்பிக் கொண்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இசை நின்றது. இன்பப் போதையில் தேசீயம் பிள்ளை மிதந்தார். நெடுநேரங் கழித்து ஆகாஷவாணி பிரியமுடியாமல் பிரிந்து சென்றாள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "திடீரென தாரை தப்பட்டை சங்குகளின் முழக்கம் கேட்டது. அதனைத் தொடர்ந்து எமதர்மன் விருந்து மாளிகைக்குள் நுழைந்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்ன தேசீயம்பிள்ளை! உபசரிப்புக்கள் எல்லாம் சரிவர நடந்ததல்லவா?—எமன் கேட்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆகா! நன்றாக நடந்தது. உபசரிப்பின் உச்ச கட்டமே ஆகாஷவாணியின் பிரவேசம்தான்! ஆகா! ஆகா! வர்ணிக்கவே முடியாது!—தேசீயம்பிள்ளை உற்சாகத்தோடு பதில் கூறினார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உம்மோடு நீண்டநேரம் பேட்டிக்கு ஏற்பாடு செய்திருந்தும் நிறைவேற இயலாது போய்விட்டது. குறுகிய காலத்திலேயே நமது பேட்டி முடியும்!—எனக் கூறிய எமன், தளபதியைப் பார்த்து, நீர் உடனே சென்று இன்று நமது சபை கூடுவதற்கு வசதியில்லை; ஏனெனில் “வரி”யைப்பற்றிய விளக்கம் தெரியாமல் கூடிப் பயனில்லை—ஆகவே, நாளைக் காலையில்தான் சபை கூடும் என்று அறிவித்துவிடும்—என ஆணையிட்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தளபதியும் உடனடியாக சிரசாசனம் செய்து வணக்கம் தெரிவித்துவிட்டு அகன்றான்.",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nDesiyampillai is being held under guard in the guesthouse within Yama Dharma Raja's palace.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He called it a Pleasure Pavilion; is this what is called a Pleasure Pavilion? Desiyampillai looks around in astonishment, his eyes darting in alarm. The tender heads of tiny children are piled up everywhere.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Ayyo! Is this a pleasure palace?—Desiyampillai cries out.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yes! This is the pleasure palace! What did you think these things lying here in heaps were? These are the potatoes of our country! This is what grows around our pleasure palace!—laughing as he spoke, a figure appeared before him. That figure was “Sri Mayanam,” who holds the post of military commander in Yamaloka!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama Dharma's programme of events is arranged according to Mayanam's wishes. In keeping with that programme, the military commander had come there to interview Desiyampillai before Yama did.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "What is this, sir! You cut off children's heads, heap them here, and call this place a Pleasure Pavilion? Desiyampillai asked, grief and anger competing in his voice.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "In our country, children's heads like these are piled inside the Pleasure Pavilion itself; but in your country, it seems, children's heads can be picked up outside the Pleasure Pavilion! There is not much difference between the two!—the commander replied mockingly.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Absurd! Slander!! Who told you that? Lies! Lies!!—Desiyampillai shouted.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "You deny a truth accepted by everyone who has settled here so far! Look—every one of these heads gathered in heaps was brought from your country! Many of them came from the wombs of unmarried women! Many grew in the bellies of widows! Thousands floated in rivers and ponds! Countless heads were picked up in the field of poverty! On the foreheads of some children a mark of shame has been branded. Around the necks of some, the impressions of their mothers' thumbs are deeply stamped. After studying those impressions, our court fingerprint experts have concluded that they are indeed the prints of compassionate women. We have also found that the pupils of some children are shaped just like circular Ashoka Chakras. We have entrusted research on that to one of our scientific geniuses. The result has not yet come out. What do you say now?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Hearing the military commander's angry speech, Desiyampillai stood with his head bowed.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "At that moment five or six women came and stood before him, carrying bowls in their hands. Were they women? Pillai looked at them closely. Yes; they were women indeed! He came to a conclusion.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Mm! Have a blood drink!—the commander offered. Desiyampillai looked at the bowls! Ayyo! His eyes reeled—blood was brimming and overflowing from every bowl!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "A blood drink?—Desiyampillai screamed.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yes—this is Kallakudi drink! That is Thoothukudi juice! This is Salem extract! That one was squeezed at Valparai!—the commander went on, listing them one after another. Desiyampillai could no longer remain standing.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The commander laughed loudly.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Why are you so startled? All these drinks were made in your own country, were they not! Do you think they are foreign goods? No; they are goods from your own country! Have at least a few drops!—the commander insisted stubbornly.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "No! This is holy water prepared to bathe Mother Earth! How can one drink it here as a beverage?—Desiyampillai answered with some anger. The commander would not relent.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Do you know what punishment is given to those who fail to accept Yamaloka's hospitality properly?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Desiyampillai stared wide-eyed!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "They must be born in the earthly world as elementary-school teachers!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "No—no! I will not refuse the hospitality; I accept it. Give me the bowls! Desiyampillai sat down in a slight daze.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Where is Akashvani?—the commander demanded sharply.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Here I am!—a gigantic, half-naked woman came running in. A body like one smeared with ground coal! A face like ground covered in nerunji thorns! She was Yamaloka's songbird! That Akashvani began singing in the Mukhari raga; as soon as he heard the song, Desiyampillai gained fresh energy. He gazed without blinking at Akashvani's face. She too kept her eyes fixed on him. An indescribable emotion surged up between the two of them.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "O lotus of beauty! O divine maiden! O treasure impossible to find! O honey-tongued one! O sweet fruit! O clear nectar! Come closer!—he babbled in his intoxication. She too came closer. The two embraced. The military commander closed his eyes and turned the other way.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The music stopped. Desiyam Pillai floated in an intoxication of pleasure. After a long while, Akashvani, unable to bear parting, parted from him and left.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Suddenly came the blare of *tharai*, *tappattai* drums, and conches. Following it, Yama Dharma entered the guest palace.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Well, Desiyampillai! All the hospitality was properly carried out, wasn't it?—Yama asked.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Ah! It went very well. The very peak of the hospitality was Akashvani's entrance! Ah! Ah! It cannot even be described!—Desiyampillai replied enthusiastically.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Though I had arranged a long interview with you, it has become impossible to carry it out. Our interview will have to be completed in a short time!—saying this, Yama looked at the commander and ordered: Go at once and announce that it is not possible for our assembly to meet today; without knowing the explanation of “tax,” there is no use in meeting—therefore the assembly will meet only tomorrow morning.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The commander immediately performed a headstand in salute and withdrew.",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- This English artifact is translated only from the reviewed Tamil `SRU-02`; no OCR, PDF text, later edition, web text, or secondary English witness was used.\n- `Pleasure Pavilion` renders source `உல்லாச மண்டபம்`; `pleasure palace` is retained separately where the Tamil source uses `உல்லாச மாளிகை`.\n- `Sri Mayanam`, Akashvani, Mukhari, *tharai*, *tappattai*, and *nerunji* are retained by transliteration where substitution would erase source register or wordplay.\n- The source-anomalous assembled phrase `வறுமை வயவில்` is rendered conservatively as “in the field of poverty”; this translation does not alter the closed Tamil reading.\n- The Kallakudi / Thoothukudi / Salem / Valparai beverage sequence is kept close to the source's place-name-and-drink wordplay rather than replaced with explanatory political prose.\n- No source scene number, act number, curtain cue, or other structure has been added."
+     }
+    ]
+   }
+  },
+  {
+   "order": null,
+   "slug": "sru-03-eman-interview",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Eman–Desiyampillai interview",
+   "titleEn": "Eman–Desiyampillai interview",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "editorialUnitId": "SRU-03",
+   "assembledFromVerifiedPages": true,
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nஎமன், தேசீயம்பிள்ளை பேட்டி துவங்குகிறது.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "உமது தந்தையின் பெயர் என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீயம் பிள்ளை",
+      "speakerSeparator": " : ",
+      "text": "இது தெரியாதா? ஹியூம் என்ற பிரசித்திபெற்ற ஆங்கிலேயப் பிரபுதான் என் தந்தை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "ஆங்கிலேயரின் மகனா நீ? பிறகு எப்படி உனக்குத் தேசீயம் பிள்ளை என்று பெயர் வந்தது?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "மகாத்மா காந்தி என்னை எடுத்து வளர்த்தார். அவர் வைத்த பெயர் தேசீயம் பிள்ளை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "உங்கள் நாட்டில் கீரிப்பிள்ளை என்பது யார்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அது ஒரு பிராணி! பாம்புக்கு விரோதி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "நீரும் பிள்ளைதானே; நீர் யாருக்கு விரோதி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "ஹி ஹி ஹி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "தென்னம்பிள்ளை கூட உங்கள் ராச்சியத்தில் உண்டல்லவா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்; அதுதான் பூலோகக் கற்பகவிருட்சம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "ஒரு பிள்ளை பிராணி; இன்னொரு பிள்ளை, மரம்! சரி; போகட்டும்—அணில்பிள்ளை என்பது என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அதுவா? அதுதான் ராமருக்காகப் பாலம் கட்டிய ஜந்து.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "ஓ! உங்க நாட்டிலே அணில்கூட பாலம் கட்டும்! அரசாங்கம் கட்டாதோ?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "ஹி ஹி ஹி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "இருக்கட்டும்! கிளிப்பிள்ளை என்றால் என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அதுவா; அது சொன்னதையே சொல்லும் ஒரு பறவை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "என்ன சொல்லும்—ஆகட்டும்; பார்க்கலாம்! ஆகட்டும்; பார்க்கலாம்!—என்று தானே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "ஹி ஹி ஹி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "தேசீயம் பிள்ளை என்கிறீரே; நீர் இந்த நான்கு பிள்ளைகளைவிட எந்த விதத்தில் உயர்ந்தவர்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "நான் உயர்திணை; அவைகள் அஃறிணைப் பிராணிகள்! வெறும் உயிர்கள்! பகுத்தறிவு இல்லாத ஜந்துக்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "பகுத்தறிவு என்றால் என்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "சிக்கலான கேள்வி! பூலோகத்திலே அந்த கழகத்துக்காரர்கள் என்னைப் பார்த்துக் கேட்கும் கேள்வியைத் தாங்களும் கேட்கிறீர்கள்—செத்தும் விடவில்லையே எனக்குச் சங்கடம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "செத்துவிட்டமா? யார் சொன்னது அப்படி? பொய் சொல்லாதீர்! வெறும் பார்வையாளராகத்தான் இந்த நாட்டுக்கு வந்திருக்கிறீர். இந்த நாட்டு பிரஜையாக உம்மை யாரும் அங்கீகரிக்கவில்லை! உம்முடைய நடவடிக்கைகளையும் பூர்வோத்திரத்தையும் பார்த்துதான் உம்மை இந்நாட்டு பிரஜையாக்குகிற விவகத்தைச் சபையிலே கொண்டுவர வேண்டும்! அதிருக்கட்டும்; முதலில் வரியைப் பற்றிய விளக்கத்தைச் சொல்லும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "‘வரி’ என்றால் எங்கள் ராச்சியத்தில் காங்கிரஸ் என்று அர்த்தம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "காங்கிரஸ் என்றால்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "தியாகம் என்று அர்த்தம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "தியாகம் என்றால்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "பதவி, பர்மிட், லைசென்ஸ் இப்படிப் பல அர்த்தங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "‘வரி’ என்பது கருப்பு நிறமா? சிவப்பு நிறமா? அதன் உண்மை நிறமென்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "வரிக்கு ஒரு நிறமா? இரு நிறமா? அது பஞ்ச வர்ணங் கொண்டதல்லவா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "பஞ்சம் என்றால் தரித்திரம் என்பார்களே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "ஆமாம்—அதே நிறந்தான் வரியின் நிறமும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "சரி—வரியினால் என்ன நன்மை?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "மக்கள் பெருக்கம் குறையும்; நாட்டில் ஜன நெருக்கம் தேய்ந்து கலகலப்பாக இருக்கும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "அப்படிப்பட்ட வரியை எமலோகத்திலும் அமுலுக்குக் கொண்டுவந்தால்......?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "இங்கும் நெருக்கடி குறைய வழி ஏற்படும்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "உங்கள் ராச்சியத்தில் வரிபோடுவதில் வல்லவர்கள் யார்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "நானேதான்! நான்தான் இங்கு வந்துவிட்டேனே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "குறிப்பாக எந்தெந்தப் பொருள்கள்மீது வரி போடலாம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அழுகும் பொருள்களின் மீது வரி போடுவது காலஞ்சிறந்தது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "எங்கள் நாட்டில் அழுகும் பொருள்கள் என்ன? (யோசித்து) ஓ! பிணங்கள்! பிணங்கள்! வரிபோடலாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "உங்கள் நாட்டு அழுகும் பொருள்களான பிணங்களுக்கு வரிபோடுகிறேன் என்கிறீர்களே; அதில் எதிர்ப்பு ஒன்றும் ஏற்படாதே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "எதிர்ப்பா? வரிபோட்டால் எதிர்ப்புக்கூட ஏற்படுமா? எமதர்மன் ராச்சியத்தில் எதிர்ப்பவர்களுக்கு என்ன தண்டனை தெரியுமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "என்ன தண்டனை?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "உடனடியாக அவர்கள் வெளியேற்றப்படுவார்கள்; அதோடு முடியாது, தண்டனை; பூலோகத்தில் மீண்டும் பிறந்தாக வேண்டும். அதுமட்டுமல்ல; அவர்கள் தேர்தலில் அபேட்சகர்களாக நின்று பணம் கொடுத்து ஓட்டு வாங்கித் தங்கள் தோல்வியைக் காப்பாற்றிக் கொண்டாக வேண்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "சரி; எங்கள் நாட்டில் போட்டியில்லாமல் சிலபேர் தேர்ந்தெடுக்கப்படுகிறார்களே; அவர்கள் எல்லாம் தங்கள் தண்டனை பெறுதவர்களா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "அவர்கள் கட்டவேண்டிய காணிக்கையை இங்கேயே கட்டிவிட்டார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "தாங்கள் குறிப்பிடும் அபேட்சகர்கள் காங்கிரஸ் அபேட்சகர்களா? அல்லது வேறு கட்சியா? அல்லது சுயேச்சையா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "சுயேச்சைகளைப்பற்றி ஏனய்யா இங்கு பேசுகிறீர்? அந்த சுயேச்சைகளுக்குத்தான் குடி, சொரணை, நன்றி, விசுவாசம் எதுவுமே கிடையாதே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அய்யய்யோ.........எல்லா சுயேச்சைகளுமா அப்படி? இல்லை! இல்லை! ஏதோ... ஒன்றிரண்டு... கும்பகோணம் போலிருந்தால்...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "போகட்டும். பிண வரிக்குப் பிறகு எந்த வரி போடலாம்? அந்த யோசனையையும் சொல்லும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "எங்கள் தேசத்தில் போடாமல் இருக்கிற வரிகளை மட்டுமே விரல்விட்டுச் சொல்லமுடியும். போட்டிருக்கிற வரிகளின் பட்டியலில் ஞாபகப்படுத்திக் கூறுவது மிகவும் சிரமம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "அப்படி வரி போடப்படாத பொருள்கள் என்னென்ன?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அத்திப் பூ! குதிரைக் கொம்பு! சேவல் முட்டை! இதுபாதி பொருள்களுக்கு எங்கள் நாட்டில் வரி விலக்குச் செய்யப்பட்டிருக்கிறது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "சபாஷ்! அவைகளுக்கும் சேர்த்து நான் இங்கே வரிபோட்டுவிடுகிறேன், தேசீயம் பிள்ளை! மிகவும் நன்றி! இன்றைய நமது பேட்டி எமலோகத்தின் முன்னேற்றத் திட்டங்களுக்குப் பயன்பட்டதற்காக மகிழ்ச்சி அடைகிறேன். ஒன்று கேட்க மறந்துவிட்டேனே; உங்கள் ராச்சியத்தில் “ஐந்தாண்டுத் திட்டம்” என்ற ஒரு பெரிய மந்திரவாதி இருக்கிறாராமே; அவர் மிகவும் கெட்டிக்காரர்தானா? அவரை இங்கு அழைத்து வரலாமென்று பொதுவாகவே ஒரு அபிப்ராயம் உலவுகிறது—அழைத்துவரத் தகுதி உடையவர்தானா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அவர் இன்னும் இங்கு வரவில்லையா? எனக்கு முன்பே இங்கு வந்துவிட்டார் என்று கேள்விப்பட்டேன்...!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "இல்லை! இல்லை! உம்மைக் கேட்டுக்கொண்டுதான் அழைத்து வரலாமென்று எண்ணம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "பெரிய மந்திரவாதிதான்! பெயரைக் கேட்டத்தான் பயமாயிருக்குமே தவிர, ஆளைப் பார்த்தே மானால் தேவாங்குமாதிரி இளைத்துப் போயிருப்பார்! அவருக்கு யானைப் பசி வியாதி வேறு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆயிரக்கணக்கில்—நூற்றுக்கணக்கில் எதையும் சாப்பிடுவது இல்லை. எல்லாம் கோடிக்கணக்கில்தான் வயிற்றில் போட்டு அடைப்பார். அவர் எங்கள் ராச்சியத்தில் ஆஸ்தான மந்திரவாதியாக இருப்பதால் ஊழல் என்னும் தொத்து வியாதி எங்கும் பரவுகிறதே தவிர, பயன் ஒன்றும் கிடையாது. தயவு செய்து அவரை இங்கு அழைத்துக்கொள்ளுமாறு நான் பலத்த சிபாரிசு செய்கிறேன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "ஊழல் வியாதிக்காரரா? அடடே இதுவரை தெரியாமல் போனதே! வரியினால் ஜன நெருக்கடியைக் குறைப்பதைக் காட்டிலும் ஊழல் வியாதியினால் கணிசமான அளவுக்கு ஜன நெருக்கடியைக் குறைக்கலாமே...! பலே! பலே! நாளைக்கே நான் அவருக்கு ஆள் அனுப்புகிறேன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "அனுப்புங்கள்! ஒருவர் வந்தாலும் மற்றபடி ஊரைப் பார்த்துக்கொள்ள அவர் குடும்பத்தில் வரிசையாக குழந்தைகள் இருக்கிறார்கள். இரண்டாவது, மூன்றாவது என்று ஐந்தாண்டுத் திட்டக் குட்டி மாயவிகள் ஏராளமாக இருக்கிறார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "இன்றைய நமது பேட்டி இனிது முடியட்டும்—உமக்கு ஏதாவது தேவைகளிருந்தால் தெரிவிக்கலாம்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "தேவை யொன்றும் பிரமாதமில்லை. என்னை இந்த உல்லாச மண்டபத்திலிருந்து விடுவிக்க வேண்டும். அடுத்தபடியாக நான் மகாத்மா காந்தியைச் சந்திப்பதற்கு சந்தர்ப்பம் தர வேண்டும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "அவசியம் காந்தியைப் பார்த்தாகவேண்டுமா? அவர் சொர்க்கமெனும் பாதாளச் சிறையில் அல்லவா கிடக்கிறார்? அந்த மூன்றாம் வகுப்புக் கைதியை நாகலோகத்து முதல் வகுப்புக் கைதியாகிய நீர் சந்திப்பது இயலாத காரியமாயிற்றே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "எப்படியோ கிருபை செய்ய வேண்டும்—காந்தி மகானை நான் பார்த்தால் தான் ஆவல் தீரும்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "எமன்",
+      "speakerSeparator": " : ",
+      "text": "சரி; ஏற்பாடு செய்கிறேன்!—புறப்படும் என்னோடு",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "தேசீ",
+      "speakerSeparator": " : ",
+      "text": "மாலைதானே...வாங்கிக் கொள்ளலாம்...",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nThe interview between Yama and Desiyampillai begins.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "What is your father's name?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desiyam Pillai",
+      "speakerSeparator": " : ",
+      "text": "Don't you know? The famous English lord Hume is my father!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "You are an Englishman's son? Then how did you get the name Desiyam Pillai?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Mahatma Gandhi took me in and brought me up. He gave me the name Desiyam Pillai!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "In your country, what is a *keeripillai*?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "It is an animal! An enemy of snakes!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "You too are a *pillai*, aren't you; whose enemy are you?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Hee hee hee!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "There is also a *thennampillai* in your realm, isn't there?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Yes; that is the wish-fulfilling tree of the earthly world!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "One *pillai* is an animal; another *pillai* is a tree! All right, never mind—what is an *anilpillai*?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "That? That is the creature that built a bridge for Rama.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Oh! In your country even a squirrel builds bridges! Doesn't the government build them?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Hee hee hee!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Never mind! What does *kilippillai* mean?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "That? It is a bird that repeats whatever it is told!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "What does it say—“All right, let's see! All right, let's see!”—isn't that it?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Hee hee hee!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "You call yourself Desiyam Pillai; in what way are you higher than these four *pillais*?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "I belong to *uyarthinai*; they are *ahrinai* creatures! Mere living beings! Creatures without rational sense!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "What is rational sense?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "A difficult question! You too are asking me the same question those Kazhagam people ask me in the earthly world—what a nuisance that even death has not freed me from it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Dead? Who said that? Don't lie! You have come to this country only as a spectator. No one has recognized you as a citizen of this country! Only after looking into your conduct and antecedents can the matter of making you a citizen of this country be brought before the assembly! Never mind that; first explain tax to me!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "In our realm, “tax” means Congress!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "What does Congress mean?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "It means sacrifice!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "What does sacrifice mean?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Office, permit, licence—there are many meanings like that!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Is “tax” black in colour? Red in colour? What is its true colour?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Does tax have one colour? Two colours? Doesn't it have *pancha-varnam*—five colours?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "But *pancham* means famine, they say?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Yes—that is the very colour of tax too!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "All right—what good does tax do?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Population growth will fall; crowding in the country will thin out, and things will be nice and open!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "If we introduced such a tax in Yamaloka too......?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "There would be a way to reduce congestion here too?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "In your realm, who are the experts at imposing taxes?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "I am, of course! Haven't I myself come here now?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "On what things in particular can a tax be imposed?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Taxing things that decay is the best thing to do!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "What things decay in our country? (thinking) Oh! Corpses! Corpses! We can tax them!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "You say you will tax the decaying things of your country—the corpses; won't that provoke any opposition?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Opposition? Does imposing a tax even produce opposition? Do you know what punishment awaits those who oppose things in Yama Dharma's realm?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "What punishment?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "They will be expelled immediately; and it does not end there. The punishment is this: they must be born again in the earthly world. Not only that; they must stand as candidates in elections, pay money to obtain votes, and somehow save themselves from defeat!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "All right; in our country some people are elected without a contest. Are all of them people receiving their punishment?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "They have already paid the offering they were required to pay—right here!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Are the candidates you mention Congress candidates? Or from some other party? Or independents?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Why, man, are you talking about independents here? Those independents have no *kudi*, no *soranai*, no gratitude, no loyalty—nothing at all!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Ayyo, ayyo.........are all independents like that? No! No! Perhaps... one or two... if they were like Kumbakonam...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Never mind. After the corpse tax, what tax can we impose? Tell me that idea too!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "I can count on my fingers only the things that have not been taxed in our country. It is very difficult to recall and recite the list of taxes that have been imposed!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Then what are the things that have not been taxed?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Fig flowers! Horses' horns! Roosters' eggs! Things like these have been exempted from tax in our country.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Sabash! I shall tax those here as well, Desiyam Pillai! Thank you very much! I am delighted that today's interview has proved useful to Yamaloka's development plans. Ah, I forgot to ask you one thing. I hear that in your realm there is a great magician called the “Five-Year Plan.” Is he really such a clever fellow? There is a general opinion here that he ought to be brought over—would he be a worthy person to bring here?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Hasn't he come here yet? I heard he had arrived even before me...!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "No! No! I thought I should ask you first and then bring him.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "He is certainly a great magician! His name alone sounds frightening, but if you look at the man, he will be wasted thin like a *devangu*! He also suffers from elephant-hunger!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He never eats anything by the thousands or the hundreds. Everything he stuffs into his stomach is counted only in crores. Since he is the court magician in our realm, the contagious disease called corruption spreads everywhere; apart from that, there is no benefit at all. I strongly recommend that you kindly bring him here!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "A man afflicted with the disease of corruption? Good heavens, how did I not know this until now! Rather than reduce congestion through taxes, we could reduce crowding by a considerable amount through the disease of corruption...! Excellent! Excellent! I shall send someone for him tomorrow itself!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Do send someone! Even if he comes, there are children lined up in his family to look after things back home. There are plenty of second, third, and so on—little Five-Year-Plan magicians!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Let today's interview come to a pleasant end—if you have any needs, you may tell me.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "My needs are nothing extraordinary. I must be released from this Pleasure Pavilion. Next, I must be given an opportunity to meet Mahatma Gandhi!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "Must you absolutely see Gandhi? Isn't he lying in the subterranean prison called Heaven? It has become impossible for you, a first-class prisoner of Nagaloka, to meet that third-class prisoner!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "Somehow, you must show me grace—only if I see the great Gandhi will my longing be satisfied!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Yama",
+      "speakerSeparator": " : ",
+      "text": "All right; I shall arrange it!—Come away with me.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": "Desi",
+      "speakerSeparator": " : ",
+      "text": "A garland, right...we can buy one...",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Drafted and reviewed only against the complete reviewed Tamil SRU; no OCR, PDF substitute, later edition, web text, or secondary English witness was used.\n- The repeated *pillai* sequence is central wordplay. `keeripillai`, `thennampillai`, `anilpillai`, and `kilippillai` are therefore transliterated in the relevant setup lines rather than flattened into unrelated English nouns; where the source immediately supplies the referent, the English follows it.\n- *uyarthinai* / *ahrinai* are retained because the joke depends on Tamil grammatical classification; the surrounding English supplies the source's rational/non-rational contrast without replacing the terms.\n- *pancha-varnam* / *pancham* is retained to preserve the sound-based five-colours/famine joke.\n- `kudi` / `soranai` are retained in the independent-candidate satire because the paired source terms do not have a safely exact one-word English equivalent here; `gratitude` and `loyalty` are translated directly where the source is clear.\n- The Kumbakonam reference is retained without explanatory reconstruction because the SRU itself gives no further gloss.\n- The proverbial impossible objects—fig flowers, horses' horns, and roosters' eggs—are translated literally so the tax-exemption joke remains visible.\n- The Five-Year Plan is translated as a personified “great magician” throughout. *devangu* is retained as the source comparison rather than replaced with an uncertain animal identification.\n- The assembled Tamil contains the source-supported but syntactically unusual continuation `ஆளைப் பார்த்தே மானால்`; the English renders only the transparent dramatic sense of that clause and does not use it to revise the Tamil archival layer.\n- `crores` is retained as the source scale term.\n- `Nagaloka`, `Yamaloka`, and `Heaven` preserve the source's mythological/political register.\n- The source's closing `மாலைதானே...வாங்கிக் கொள்ளலாம்...` is rendered conservatively as “A garland, right...we can buy one...” and remains the final line of this SRU; the following travel prose belongs to SRU-04."
+     }
+    ]
+   }
+  },
+  {
+   "order": null,
+   "slug": "sru-04-gandhi-journey",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Journey, Nandan and Gandhi / சொர்க்கச் சிறை",
+   "titleEn": "Journey, Nandan and Gandhi / Sorgach Chirai",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ],
+   "editorialUnitId": "SRU-04",
+   "assembledFromVerifiedPages": false,
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nஇருவரும் எழுந்து காந்தியைக் காணப் பயணம் படுகிறார்கள். போகும் வழியில் பூக்கடைகள் ஏராளமாக இருக்கின்றன. அழகான மாலைகள் கட்டித் தொங்கவிடப்பட்டிருக்கின்றன. எந்தக் கடையிலும் வியாபாரம் செய்கிற ஆளைக் காணவில்லை. தேசீயம் பிள்ளை எமனிடம் கேட்டார்; என்ன ஆச்சரியம்? ஆளில்லாத கடைகள்! என்று!",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆட்கள் ஆவியுருவத்திலே மிதக்கிறார்கள். உமது கண்ணுக்குத் தெரியமாட்டார்கள், பூவின் மீது வரிபோட்டு உங்கள் ராச்சியத்தில் உள்ள மந்திரிகள் இவர்களது சதை, எலும்புகளை எல்லாம் கரைத்து உருக்கிவிட்டார்களாம். அதனால்தான் ஆவிகள், பூக்கடைகளோடு இங்கு வந்துவிட்டன. இந்தச் சேதி இப்போதுதான் நமக்குத் தந்தி மூலம் கிடைத்தது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இந்த விஷயத்தை எமன் மிகச் சாதாரணமாக தேசீயம் பிள்ளையிடம் கூறினான். தேசீயம் பிள்ளை நூறு நயா பைசாக்களை அள்ளி நீட்டினார். அதை யாரோ வாங்கிக்கொண்டார்கள். காசுகள் மறைந்துவிட்டன. ஒரு ரோஜா மாலை தேசீயம் பிள்ளையின் கையில் தரப்பட்டது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அவர் அதை மரியாதையாக வாங்கிக்கொண்டு, எமனைத் தொடர்ந்து நடக்கலானார். மல்லிகை, முல்லை முதலிய மலர்களின் மென்மையான மணம் “கம கம” வென்று வீசிக்கொண்டிருந்தது. ஊதுவத்திகளின் வாசம் உள்ளத்திற்குப் பூரிப்பை அளித்தது. தகதகவென ஜொலிக்கும் தங்கம் பூசிய படிக்கட்டுகள், இடையிடையே வைரக் கற்கள் பொருத்தப்பட்டு ஒளி மழை பொழிந்து கொண்டிருந்தன. நவரத்தினங்கள் இழைத்த பெரிய கதவொன்றின் அருகே எமன் போய் நின்று, “நந்தா! நந்தா!!” என்று அழைத்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "கண்ணங்கருத்த மேனியும் கட்டுடலும் கவர்ச்சியுமான தோற்றமும்கொண்ட ஒரு வாலிபன் வந்து எமனருகில் நின்றான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமன் அவனது கைகளைக் குலுக்கித் தழுவிக் கொண்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்ன நந்தா! சுகந்தானே? என்று எமன் குசலம் விசாரித்துவிட்டு, தேசீயம் பிள்ளையை அறிமுகப்படுத்திவைத்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நந்தன் தேசீயம் பிள்ளையை வரவேற்றுக் கைகுலுக்கக் கையை நீட்டினான். தேசீயம் பிள்ளை கையை இழுத்துக்கொண்டு முகத்திலே வெறுப்பை நிறைத்துக்கொண்டு நின்றார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நெருப்பிலே குளித்து வந்தவனய்யா நான்! சாதாரண தண்ணீரிலே குளித்தால் சாதியென்னும் அழுக்கு போகாதென்று தீயிலே கருகி வந்த வாலிபனய்யா! சும்மா தொடும் என்னை! என்று கூச்சலிட்டவாறு நந்தன், தேசீயம் பிள்ளையைத் தழுவிக் கொண்டான். தேசீயம் பிள்ளைக்கு அதிர்ச்சியினால் மயக்கம் வந்துவிட்டது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பிறகு நந்தன் தண்ணீர் கொண்டுவந்து கொடுத்தான். “ஆபத்திற்குப் பாபமில்லை” என்று கூறியவாறு தேசீயம் பிள்ளை அதைக் குடித்து மயக்கம் தெளிந்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நந்தனிடம் அனுமதிச்சீட்டு வாங்கிக்கொண்டு தேசீயம் பிள்ளையும் எமனும் காந்தியைப் பார்க்க சொர்க்கச் சிறைக்குள் நுழைந்தார்கள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வரிசை வரிசையாக விளக்குகள் எரிந்துகொண்டிருந்தன. இனிமையான இசை எங்கும் பரவியிருந்தது. நடன மாதர்கள் ஆங்காங்கு ஆடிக் கொண்டிருந்தனர். கண்ணைப் பறிக்கும் விதத்தில் எழில் ததும்பும் சிங்கார மண்டபமொன்று! அதன் நடுவே விலைமதிக்க முடியாத நவரத்தின சிம்மாசனம்! அந்த ஆசனத்தில் ஒரு மகாராஜா அமர்ந்திருந்தார். மகாராஜாவின் உடைதானா? அல்லது வானத்து நட்சத்திரங்களோடு எடுத்துப் போர்த்திக் கொண்டிருக்கிறாரா என ஐயப்படும் வகையில் மணிகள் மின்னிக் கொண்டிருந்தன. தேசீயம் பிள்ளை உற்றுப் பார்த்தார் அவர் நிர்வாணப் பரதேசி—அகிம்சாமூர்த்தி—ஏழைப் பங்காளர்—பாட்டாளியின் தோழர்—எளிய வாழ்வின் எடுத்துக்காட்டு—என்றெல்லாம் போற்றப்பட்ட போப்பந்தர் மகான்தான் பொன்னும் மணியும் மின்னும் வைரமும் பூட்டியவாறு பூரிப்போடு அமர்ந்திருக்கிறார் என்பதை உணர்ந்து கொண்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அய்யனே! இது என்ன கோலம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இந்த அலங்கோலம்தான் நான் பூலோகத்தில் புரிந்த தீமைகளுக்குத் தரப்பட்ட தண்டனையப்பா என்றார் காந்தி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தேசீயம் பிள்ளை, கையிலுள்ள மாலையை காந்தியின் கழுத்திலே அணிவிக்க முன்வந்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நிறுத்து! நிறுத்து! போடாதே மாலையை! என்று கை நீட்டித் தடுத்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஏன் அய்யனே தடுக்கிறீர்?—என்று பதறிப் போய் கேட்டார் தேசீயம் பிள்ளை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "காங்கிரசைக் கழுத்து விட்டு வந்து எனக்கு மாலை போடுங்கள் என்று அப்போதே சொன்னேன். அதைச் செய்யாமல் மாலை மட்டும் போட்டு என்னை மயக்கப் பார்க்கிறாயா?—காந்தி ஆத்திரப்பட்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "மாலையா இது? மகாபாதகர்களே! மாலையா இது? நன்றாகப் பாருங்கள்! எலும்புத் துண்டுகளைப் பொறுக்கி அரும்பு மாலையென எனக்குப் போட வந்துவிட்டார்களா? நிரபராதிகளின் ரத்தத்திலே தோய்ந்த வெள்ளை மலர்களை எடுத்து ரோஜா மலரெனத் தொடுத்து என் கழுத்திலே தொங்கவிடப் புறப்பட்டீர்களா? இதோ! எனக்கு ராஜா உடை போட்டு ராஜபோகங்களோடு வாழ வைத்து என் மன நிம்மதியைக் குலைத்து என்னை இந்தச் சிறைச்சாலையில் சித்திரவதை செய்து கொண்டிருக்கிறானே எமன்; இந்த—எமனே விடக் கொடியவர்கள் நீங்கள்! என் முன்னே நில்லாதீர்கள்! போய்விடுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அப்படி என்ன அபச்சாரம் செய்தோம் தங்களுக்கு?—தேசீயம் பிள்ளை திடீரென கேட்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இன்னுமா அபச்சாரம் செய்யவேண்டும்? எமன் என்னை அரசனா ஆக்கினான்—நீங்கள் என்னை ஆண்டவனா ஆக்கிவிட்டீர்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அது உங்களுக்குப் பெருமைதானே?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எனக்குப் பெருமைதான்! ஆனால் அது உங்கள் வயிற்றுப் பிழைப்புக்கு வழி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்ன மகாத்மா சொல்லுகிறீர்கள்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "கோயில்களிலே இருக்கிற கடவுள் சிலைகள் மீது அபார பக்தியுள்ளவனைப்போல் நடிப்பான் பூசாரி! பூசாரிக்கு அந்தச் சிலைகளின் மீது கடவுட்பற்று இல்லாவிட்டாலும் சிலைப்பற்றுகூடக் கிடையாது! சிலை மீது பூசாரிக்கு அதிக மரியாதை யென்று மக்கள் எண்ணிக்கொள்வார்கள். அதனால் பூசாரிக்கும் மதிப்பு தருவார்கள்! சுட்ட செங்கல்லில் ஈரத் துணியால் மூடிச் சுடச் சுட ‘பொங்கல் நைவேத்தியம்’ செய்வதுபோல் பாசாங்கு செய்வான் அந்தப் படுபாவி! “ஆகா, என்னே பூசாரியின் பக்தி!” என்று வாய்பிளந்து நிற்பார்கள் பக்தர்கள். இந்த வழியில் பூசாரி, பக்தர்களை ஏமாற்றிக் கொண்டிருப்பான். பக்தர்கள் ஏமாறுகிற வரையில் பூசாரிக்கு கொண்டாட்டந்தானே! கடவுளுக்கு செங்கல் படையல்தான் மிச்சம்! ஊரிலே உத்தமன் என்று பூசாரிக்குப் பட்டம்! இப்படித்தானப்பா பூலோகத்திலே சில கட்சிகள் இருக்கின்றன. கட்சித் தலைவர்கள் கடவுளை போல செங்கல்லில் மட்டுமே காணுகிறார்கள்...... பூசாரிகள் பூரிப்போடு வாழ்கிறார்கள்......அந்த ரகத்தில் முதல்தரமான கட்சி காங்கிரஸ்! முதல்தரமான பூசாரி நீ! முதல்தரமான கட்சி ஏமாளி; கடவுள், நான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "காந்தி கண் கலங்கினார்! தேசீயம் பிள்ளை பதில் சொல்ல முடியாமல் திணறினார். எமன் எருமை மாட்டைத் தடவிக் கொடுத்தான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "காந்தி தழுதழுத்த குரலில் பேசலானார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்னை இங்கே அனுப்பி வைப்பதற்கு நீங்கள் எல்லாம் பட்டபாடு கொஞ்சமா? உங்களோடு இருந்தால் நீங்கள் செய்கிற அக்கிரமங்களைத் தட்டிக்கேட்கிறேன்—தடுத்து நிறுத்தப் பார்க்கிறேன் என்ற வெறுப்பில் என்னைப் பாதுகாப்பதற்குக்கூட அக்கறை எடுத்துக்கொள்ள நாதியில்லை. வெள்ளைக்காரன் வைத்துவிட்டுப் போன பலமான ராணுவம் இருந்தது. அதுவும் போதாதென்று படைபலத்தைக் கோடி கோடியாய்ச் செலவிட்டுப் பெருக்கினீர்கள். எத்தனை இருந்தென்ன; பொட்டென்று முடித்துவிட்டான் காரியத்தை! இங்கே “சொர்க்கத்திலே” சொல்லவொணா வேதனையில் உழன்று கொண்டிருக்கிறேன்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்னைத் துரத்தினீர்களே; பாவிகளே! என்னுடைய ஆசைக்கும் அன்புக்குமுரிய உடைமைகளைக் கூடக் கொள்ளைக்காரனிடம் ஒப்படைத்து விட்டார்களாமே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நான் வாழ்ந்த குடிசையை எழில் மிகுந்த இருட்டு மண்டபமாக மாற்றிக்கட்டி அந்த மண்டபத்திற்குள்ளே வெளவால்களைத் தோரணமாகத் தொங்கவிட்டிருக்கிறார்களாம்! பணக்காரப் பச்சோந்திகளைத் தாழ்வாரமெங்கும் விளையாட விட்டிருக்கிறார்களாம்! ‘வான்கோழி’களை மண்டபத்து முற்றத்திலே ஆடவிட்டு, கொள்கையற்ற கோட்டான்களின் இசை முழங்கச் செய்திருக்கிறார்களாம்! கொம்பு மாடெனக் [unresolved glyph cluster] மட்டும் வளர்த்து ஒன்றிரண்டு முட்டிக்கொண்டு மண்டபத்தைப் போர்க்களமாக ஆக்கியிருக்கிறார்களாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அட பாவிகளே; நான் நவகாளிப் பயணத்தின்போது ஊன்றிக்கொண்டு நடந்த அருமை மிகு கைத்தடி, “மோஸஸ்” கதையிலே வருவதைப் போல் பாம்பாக மாறி பாட்டாளி மக்களைக் கடித்துக்கொல்லுகிறதாம்! அப்படியொரு மந்திரத்தைப் போட்டு விட்டார்களாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என் இடுப்பிலேயிருந்து எடுப்பாகத் தொங்கிக் கொண்டிருக்கும் சின்னஞ்சிறு கடிகாரம், உங்களால் பத்திரப்படுத்தப்பட்டிருக்கும் என்று எதிர்பார்த்தேன். அந்தக் கடிகாரத்தைக் கள்ளமார்க்கெட் காரர்களுக்கு உரிமையாக்கி நேரம் பார்த்துக் கொள்ளும்படிக் சொல்லிவிட்டார்களாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என் காலணி பட்டுச் சின்னஞ்சிறு ஜீவன்கள் கூட செத்துவிடக் கூடாதேயென்று நான் எங்குவேன் இப்போது அந்தக் காலணியை நீங்கள் ஒவ்வொருவரும் ஆளுக்கு ஆள் மாட்டிக் கொண்டு ஆயிரக்கணக்கான மக்களை அடக்கி மிதித்து, துவைத்து செருக்குகிறீர்களாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இத்தனை சொத்துக்களையும் கெடுத்தீர்கள். என் வீட்டையும் பாழாக்கினீர்கள். தொலையட்டும், எல்லாமே போகட்டும். என் மூக்குப் போன்றதும், என் இருதயம் போன்றதுமான என் அன்புக் குழந்தையாம் “ஹரிஜன நலம்” என்ற செல்வத்தையாவது ஒழுங்காகப் பாதுகாத்திருக்கிறீர்களா? என் இன்பக் குழந்தை, “சவலைப் பிள்ளை” போலல்லவா காட்சி தருகிறது. சளி பொழுகும் மூக்கு, [unresolved descriptive cluster] வாய், தள்ளிய வயிறு, கும்பிப் போன கால், கைகள், [unresolved descriptive cluster] விடுவது போன்ற இழுப்பு மூச்சு, இவ்வண்ணம் தள்ளாடித் தள்ளாடித் தடுமாறும் நிலையில் அல்லவா நான் பெற்ற மாணிக்கத்தை நடுத்தெருவில், சாக்கடையோரத்தில், புழுதி மேட்டில் நிர்க்கதியாக விட்டுவிட்டார்கள்! அந்தச் செல்வம் ஒன்றையாவது காப்பாற்றியிருக்கக் கூடாதா? அதைக் காப்பாற்றுவதற்காக வெளிவேஷம் போட்டு மகானத்துக்கு ஓர் “ஆயாக் கிழவி”யை நியமித்திருக்கிறீர்களாம். அந்தக் கிழவிகள் எல்லாம் கண்ணனைக் கொல்ல வந்த “பூதகி” போலக் காட்சி தருகிறார்களாம். என் குழந்தை ஆதரிக்க ஆளின்றித் தவிக்கிறதாம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இந்த லட்சணத்தில் உன் அழுக்கேறிய கைகளால் எனக்கு மாலையை போட வந்துவிட்டாயா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "போ! போ! என் முன் நில்லாதே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—காந்தியின் கோபம் எல்லைமீறிவிட்டது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அப்போது ஒரு ஆள் வேகமாக ஓடிவந்து எமனின் காதில் ஏதோ ரகசியமாகச் சொன்னான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமன் “ஆ!” என்று அலறிவிட்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“என்ன? என்ன?” என்று கேட்டார் காந்தி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இதோ இந்த தேசீயம் பிள்ளை, ஸ்ரீரங்கத்தில் ஸ்வாமி ரங்கநாதரைத் தீயில் போட்டுவிட்டு இங்கு ஓடிவந்துவிட்டானும்!—எமன் கூச்சல் போட்டான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“ஆ! ரங்கநாதரைத் தீயில் போட்டானு? விபரமாகச் சொல்லுங்கள்! விபரமாகச் சொல்லுங்கள்!”—காந்தி பதை பதைக்கக் கேட்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்! இவன் செய்த அக்கிரமங்கள் பொறுக்கமாட்டாமல் ரங்கநாதர் தனக்குத்தானே பற்றி எரிந்துவிட்டாராம்! அந்தத் தீ விபத்துக்குக் காரணம் இந்தத் தேசீயம் பிள்ளைதான் என்று கண்டுபிடிக்கப்பட்டுவிட்டதாம். அங்கேயிருந்தால் ஆபத்து என்று இங்கே ஓடிவந்திருக்கிறான்!—என்றவாறு எமன் தேசீயம் பிள்ளையை நோக்கித் தன் கதாயுதத்தை ஓங்கினான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தேசீயம் பிள்ளை, காந்தியின் கால்களைப் பிடித்துக் கொண்டு அய்யோ! அய்யா! அய்யா! என்னைக் காப்பாற்றுங்கள்! என்று கண்ணீர் வடித்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எழுந்திரு! எழுந்திரு! என் கால்களைத் தொடாதே! உன் கையிலுள்ள ரத்தக்கறை என் கால்களில் ஒட்டிக் கொள்ளப் போகிறது! என்றவாறு கைகளை உதறிவிட்டு காந்தி எழுந்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆண்டவனின் கோபத்துக்கு ஆளாகி, அவருக்கே உடம்பு எரிச்சலே உண்டாக்கிவிட்டு தீ விபத்துக்குக் காரணமாகிவிட்ட பரம பாதகனாகிய உனக்கு நாகத்திலும் இடமில்லை! எங்கும் இடமில்லை! உன்னை எப்படி மன்னிக்கமுடியும்! எமதர்ம ராஜனே! தயவு செய்து இவனை அழைத்துப் போங்கள்! கொள்வாய்ப் பிசாசு போன்ற இவன் முகத்தைப் பார்க்கவே எனக்குப் பிடிக்கவில்லை. என் இஷ்ட தெய்வமான ரங்கநாதரையே தீயில் வேகவைத்த அநியாய ஆட்சிக்காரனைப் பார்ப்பது மகாபாபம்! உடனே இழுத்துச் செல்லுங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—காந்தி எமனிடம் இந்த வேண்டுகோளை வெளியிட்டவாறு நந்தனை அழைத்துக்கொண்டு வேகமாக உள்ளே போய்விட்டார். தேசீயம் பிள்ளை எமனையே பார்த்துக்கொண்டு நின்றார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "எமன் “ம் நட! நட!” என்றான். எருமைமாடு, தேசீயம் பிள்ளையின் முதுகில் ஒரு முட்டு முட்டித் தள்ளியது.",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nThe two of them rise and set out to see Gandhi. Along the way there are many flower shops. Beautiful garlands have been tied and hung up. There is no one to be seen doing business in any of the shops. Desiyam Pillai asks Yama, “What a wonder! Shops with no people!”",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“The people are floating about in spirit-form. Your eyes cannot see them. It seems the ministers in your realm, by taxing flowers, dissolved and melted away all their flesh and bones. That is why the spirits have now come here along with the flower shops. We received this news only just now by telegram.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama tells Desiyam Pillai this as though it were the most ordinary matter. Desiyam Pillai scoops out and holds forward one hundred naya paise. Someone takes them. The coins disappear. A rose garland is placed in Desiyam Pillai's hand.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He receives it respectfully and begins walking behind Yama. The soft fragrance of jasmine, mullai and other flowers wafts “kama kama” through the air. The scent of incense fills the heart with delight. Gold-plated steps glitter brilliantly; diamonds set here and there shower light. Yama stops beside a great door inlaid with the nine gems and calls, “Nanda! Nanda!!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "A young man with a dark complexion, a sturdy body, and an attractive appearance comes and stands beside Yama.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama shakes his hands and embraces him.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What, Nanda! Are you well?” Yama asks after his welfare and introduces Desiyam Pillai.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Nandan stretches out his hand to welcome Desiyam Pillai with a handshake. Desiyam Pillai pulls his hand back and stands with disgust filling his face.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“I am a man who came through a bath of fire, ayya! I am the young man who burned in fire because ordinary water could not wash away the dirt called caste! Just touch me!” Nandan cries, and embraces Desiyam Pillai. The shock makes Desiyam Pillai faint.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Then Nandan brings him water. Saying, “In danger there is no sin,” Desiyam Pillai drinks it and recovers from his faint.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "After obtaining an entry permit from Nandan, Desiyam Pillai and Yama enter the prison called Heaven to see Gandhi.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Rows upon rows of lamps are burning. Sweet music spreads everywhere. Dancing women are performing here and there. A splendid pavilion overflowing with beauty enough to dazzle the eye! In its centre, a priceless throne of the nine gems! A maharaja is seated upon it. Gems flash so brightly that one might wonder whether this is the maharaja's clothing or whether he has wrapped himself in the stars of the sky. Desiyam Pillai looks closely. He realizes that the great *Poppanthar* who had been praised as a naked mendicant, embodiment of non-violence, partner of the poor, friend of the worker, and example of simple living is now sitting there in delight, clothed in gold, gems and glittering diamonds.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Ayya! What is this spectacle?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“This grotesque spectacle is the punishment given to me for the evils I committed in the earthly world, appa,” says Gandhi.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Desiyam Pillai moves to place the garland in his hand around Gandhi's neck.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Stop! Stop! Do not put that garland on me!” Gandhi says, stretching out his hand to prevent him.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Why do you stop me, ayya?” Desiyam Pillai asks in alarm.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“I told you even then: first get Congress off your neck and then come put a garland on me. Without doing that, are you trying to daze me by putting only a garland on me?” Gandhi becomes angry.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“A garland, is this? Great sinners! A garland, is this? Look properly! Have you picked up pieces of bone and come to put them on me as though they were a garland of buds? Have you taken white flowers soaked in the blood of innocents, strung them as though they were roses, and set out to hang them around my neck? Look! Yama has dressed me in royal clothes, made me live amid royal luxuries, destroyed my peace of mind, and is torturing me in this prison; you are crueler even than this Yama! Do not stand before me! Go away!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What sacrilege have we committed against you?” Desiyam Pillai suddenly asks.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Must you commit still more sacrilege? Yama made me a king—you have made me a god!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Isn't that an honour for you?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“It is an honour for me! But it is a means for you to fill your stomach!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What are you saying, Mahatma?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“In temples, a priest acts as though he has extraordinary devotion to the idols of the gods. Even if the priest has no devotion to the god represented by those idols, he does not even have attachment to the idol itself! People imagine that the priest has enormous reverence for the idol. So they give respect to the priest too. That great sinner will cover a fired brick with a wet cloth and pretend to offer piping-hot ‘Pongal naivedyam.’ ‘Ah! What devotion this priest has!’ the devotees will stand open-mouthed. In this way the priest goes on deceiving the devotees. As long as the devotees remain deceived, it is a festival for the priest! All that remains for the god is the brick-offering! And in the town the priest wins the title of a virtuous man! There are some parties in the earthly world just like this, appa. Party leaders see their god only in a brick...... the priests live in delight...... In that category, the first-class party is Congress! The first-class priest is you! The first-class party-dupe; the god—me!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Gandhi's eyes fill with tears. Desiyam Pillai struggles, unable to reply. Yama strokes the buffalo.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Gandhi begins speaking in a trembling, tear-choked voice.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Was the trouble all of you took to send me here a small thing? When I was with you, I questioned the injustices you committed and tried to stop them; because you resented that, there was no one even to take care to protect me. There was the powerful army the white man had left behind. As though even that were not enough, you spent crores upon crores increasing military strength. What did all that matter? He finished the job in an instant! Here in ‘Heaven’ I am suffering indescribable agony.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“You drove me away, sinners! I hear that even the possessions dear to my desire and affection have been handed over to the robber!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“They have rebuilt the hut in which I lived as a splendid hall of darkness and hung bats inside it as festoons! They have let wealthy chameleons play all along the verandahs! They have let ‘turkeys’ dance in the courtyard of the hall and made the music of principle-less *kottaans* resound! Like horned cattle, they have grown only [unresolved glyph cluster], and one or two keep butting each other and have turned the hall into a battlefield!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Ah, sinners! The precious walking stick on which I leaned during my Navakali journey has, I hear, been transformed into a snake like the one in the story of ‘Moses’ and is biting working people to death! They have cast such a spell upon it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“I expected that the tiny watch that used to hang neatly from my waist would have been kept safe by you. I hear that they have handed that watch over to black-marketeers and told them to use it to tell the time!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“I used to grieve that even tiny living creatures should not die from contact with my footwear. Now, I hear, each of you wears those very sandals in turn and uses them to suppress, trample and crush thousands of people!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“You ruined all these possessions. You destroyed my home too. Let them go; let everything go. Have you at least properly protected the treasure that is my beloved child, ‘Harijan Welfare,’ which was like my nose and like my heart? Does not my dear child now look like a ‘savalai pillai’? A nose running with mucus, a [unresolved descriptive cluster] mouth, a protruding belly, bent legs and arms, breath dragging as though [unresolved descriptive cluster]—is it not in just such a state, staggering and stumbling, that they have left the jewel I brought forth destitute in the middle of the street, beside the drain, on a mound of dust! Could you not have protected at least that one treasure? I hear that, merely as an outward show of protecting it, you have appointed an ‘old ayah’ for the great man. Those old women, they say, look like ‘Poothaki,’ who came to kill Kannan. My child, they say, suffers with no one to support it!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“In this condition, have you come to put a garland on me with your dirt-stained hands?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Go! Go! Do not stand before me!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—Gandhi's anger crosses all bounds.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "At that moment a man runs in quickly and whispers something secretly into Yama's ear.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama cries out, “Ah!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What? What?” Gandhi asks.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Here—this Desiyam Pillai, it seems, set Swami Ranganatha on fire at Srirangam and then ran here!” Yama shouts.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Ah! He set Ranganatha on fire? Tell me in detail! Tell me in detail!” Gandhi asks in agitation.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Yes! Unable to bear the injustices this man committed, Ranganatha himself, it seems, caught fire and burned! They have discovered that this Desiyam Pillai was the cause of that fire accident. He has run here because it would be dangerous for him to stay there!” Saying this, Yama raises his mace toward Desiyam Pillai.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Desiyam Pillai grabs Gandhi's feet and weeps, “Ayyo! Ayya! Ayya! Save me!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Get up! Get up! Do not touch my feet! The bloodstain on your hand will stick to my feet!” Gandhi says, shaking off his hands and rising.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“You have incurred the Lord's anger, caused even his own body to burn, and become the supreme sinner responsible for the fire. There is no place for you even in *nagam*! There is no place for you anywhere! How can I forgive you? Yama Dharma Raja! Please take him away! I do not even like looking at the face of this man, like a devouring demon. It is a great sin to look upon the unjust ruler who roasted in fire Ranganatha himself, my chosen deity! Drag him away at once!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—Having made this plea to Yama, Gandhi calls Nandan and quickly goes inside with him. Desiyam Pillai remains standing, looking only at Yama.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Yama says, “Mm, walk! Walk!” The buffalo gives Desiyam Pillai a butt in the back and pushes him forward.",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Drafted and reviewed only from the complete reviewed Tamil SRU; no OCR/PDF substitute, later edition, web text, general-knowledge reconstruction, or secondary English witness was used.\n- The exact source-provenance markers are retained in place: **1** `[unresolved glyph cluster]` and **2** `[unresolved descriptive cluster]`. No wording is supplied inside or around them to resolve the missing Tamil.\n- `Sorgach Chirai` in the editorial label refers to the source phrase `சொர்க்கச் சிறை`; in the body the source's satirical prison-name is rendered as `the prison called Heaven` / `Heaven`.\n- The source's `கம கம` fragrance sound-expression is retained as `kama kama` rather than silently dropped.\n- Nandan's fire/caste passage is translated directly without supplying outside legend or commentary.\n- The source form `போப்பந்தர்` is retained as *Poppanthar* rather than silently corrected or replaced from general knowledge.\n- `naya paise`, `mullai`, `naivedyam`, `appa`, `ayya`, `crores`, `Navakali`, `Harijan Welfare`, `savalai pillai`, `Poothaki`, `Kannan`, and `nagam` are retained where replacing them with a confident modern gloss would alter the historical/source register or resolve ambiguity the Tamil SRU leaves open.\n- The compressed source clause `முதல்தரமான கட்சி ஏமாளி; கடவுள், நான்!` is kept deliberately compressed in English rather than expanded into a more certain relationship than the Tamil supports.\n- The source-period term `Harijan Welfare` is retained as historical wording; the translation does not substitute a present-day term.\n- The phrase `மகானத்துக்கு ஓர் “ஆயாக் கிழவி”` is rendered conservatively as `an “old ayah” for the great man`; no external identification or institutional gloss is supplied.\n- The party/priest/idol analogy, Congress satire, military/assassination passage, and later political allegory are translated without ideological softening or external explanatory expansion.\n- The phrase containing `எங்குவேன்` in the footwear passage is semantically unusual in the locked Tamil SRU; the English is deliberately conservative and does not alter the Tamil source reading.\n- `கோட்டான்` is retained as *kottaan* because an exact intended English referent is not securely established by the reviewed SRU alone.\n- `நாகத்திலும்` is retained conservatively as *nagam* rather than silently emended to another Tamil word or inferred realm.\n- The final buffalo push is the end of SRU-04. No later stair-fall material from SRU-05 is pulled into this artifact."
+     }
+    ]
+   }
+  },
+  {
+   "order": null,
+   "slug": "sru-05-stairfall-dream-exit",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Stair-fall and dream exit",
+   "titleEn": "Stair-fall and dream exit",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    39,
+    40
+   ],
+   "editorialUnitId": "SRU-05",
+   "assembledFromVerifiedPages": true,
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nஎப்பாடி! என்றவாறு தேசீயம் பிள்ளை படிக்கட்டுகளில் உருண்டார்.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உருளுகிறீர்! உருளுகிறீர்! பல படிக்கட்டுகளில் உருளுகிறீர்—உருண்டு கொண்டேயிருக்கிறீர்!—எமன், அவர் உருளுவதைப் பார்த்துக் கலகலவென சிரிக்கிறான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அவர் உருண்ட முதல் படி கோவைப் படி—அந்தப் படியிலேயே சரியான அடி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சமாளித்து எழப்பார்த்தார்—அடுத்த படி ஆம்பூர் படி. அதில் மிகவும் பலத்த அடி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "குடந்தை படியிலும் மோசமான இடி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஒரு கயிற்றைப் பிடித்து நிமிர்ந்தார்! எழ முடியவில்லை. மீண்டும் உருளுகிறார்—உருண்டுகொண்டேயிருக்கிறார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உருண்டு கொண்டிருக்கும் தேசீயம் பிள்ளையின் மூக்கு சப்பையாகப் போகும் அளவுக்குப் பலமான இடி கொடுக்கிறது, மதுரைப்படி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அம்மாவோ! வலி தாங்க முடியவில்லையே! என்று கதறுகிறார். வாயை மூடுவதற்குள் உடுமலைப் படியில் உருளுகிறீர். திறந்திருந்த வாயில் உதட்டுக்கு முன் நீட்டிக் கொண்டிருந்த இரண்டொரு பற்கள் கீழே விழுகின்றன.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பணப்பெட்டியொன்றில் கையை ஊன்றி ஆகா! தப்பினேன். கோபிப்படி—என்று பெருமூச்சு விடுகிறார். அடுத்தது பாசிப்படி! பெரிய வழுக்கல்! விழுந்தார்—விழுந்தார்—விருதுநகர் படியில்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தலையிலிருந்து ரத்தம் குபுகுபுவெனக் கிளப்பிற்று......கால் முறிந்தது! உடம்பெல்லாம் ஊமைக் காயங்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "திருச்சிப் படியில் உருண்டவாறு—அந்த இடத்தைத் திரும்பிப் பார்த்தார். நெஞ்சில் முட்டியது தஞ்சைப் படி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பிரக்ஞை தவறிவிட்டது. கைகால்கள் செயலிழந்துவிட்டன. இருதயம் நின்றுவிடும் போல் தோன்றியது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—மிக்க கஷ்டப்பட்டுக் கண்களைத் திறக்க முயற்சி செய்தார். விழித்துப் பார்த்தார். பலகணி வழியாக ‘உதய சூரியன்’ ஒளிக் கரங்களே நீட்டினான். “கண்டதெல்லாம் கனவு” என முணுமுணுத்துக் கொண்டார். “கனவு பலித்துவிடுமோ?” என்று சந்தேகம் வேறு; சுற்றும் முற்றும் பார்த்தார்.",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "verse",
+      "text": "\n“Eppadi!” cries Desiyam Pillai as he tumbles down the steps.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“You are rolling! Rolling! You are rolling down so many steps—you just keep on rolling!” Yama laughs heartily as he watches him tumble.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The first step he rolls over is the Kovai-padi—and on that very step he receives a proper blow!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He tries to recover and get up—the next is the Ambur-padi. There he takes an even harder blow!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "A terrible thump on the Kudanthai-padi too!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He catches hold of a rope and tries to straighten himself! He cannot get up. Again he rolls—keeps on rolling!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "The Madurai-padi strikes the rolling Desiyam Pillai so hard that his nose is flattened.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Amma! I cannot bear the pain!” he cries. Before he can close his mouth—down the Udumalai-padi you roll. Two teeth that had been jutting out in front of his lips from his open mouth fall down.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Bracing his hand on a cash-box, he gasps, “Ah! I escaped. Gobi-padi—” Next comes the Paasi-padi! A great slip! He falls—falls—on the Virudhunagar-padi!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Blood gushes from his head...... His leg is broken! His whole body is covered in bruises!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Rolling on the Trichy-padi, he turns to look back at that place. The Thanjai-padi strikes him in the chest!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "He loses consciousness. His arms and legs cease to function. It feels as though his heart is about to stop.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—With great difficulty he tries to open his eyes. He wakes and looks. Through the window, the “Rising Sun” stretches out arms of light. “Everything I saw was a dream,” he murmurs. Then another doubt: “What if the dream comes true?” He looks all around him.",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Drafted and reviewed only against the complete reviewed Tamil SRU; no OCR/PDF substitute, later edition, web text, general-knowledge reconstruction, or secondary English witness was used.\n- The repeated `படி` sequence is the governing wordplay of the unit. The English therefore retains the source place-name compounds as `Kovai-padi`, `Ambur-padi`, `Kudanthai-padi`, `Madurai-padi`, `Udumalai-padi`, `Gobi-padi`, `Paasi-padi`, `Virudhunagar-padi`, `Trichy-padi`, and `Thanjai-padi` rather than flattening every occurrence to ordinary “step.”\n- Opening `எப்பாடி!` is retained as `Eppadi!` because translating it as an ordinary exclamation would erase its sound relationship with the repeated `படி` sequence.\n- The source suddenly uses second-person `உருளுகிறீர்` in the Udumalai-padi sentence; the English preserves that person-shift as `you roll` rather than silently regularizing it to third person.\n- `உதய சூரியன்` is rendered as “Rising Sun” while preserving the simultaneous literal dawn/political-symbol resonance supplied by the Tamil SRU.\n- The artifact stops before the wife enters with morning coffee; that material belongs to SRU-06."
+     }
+    ]
+   }
+  },
+  {
+   "order": null,
+   "slug": "sru-06-domestic-election-argument",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Waking domestic election argument",
+   "titleEn": "Waking domestic election argument",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "editorialUnitId": "SRU-06",
+   "assembledFromVerifiedPages": true,
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nஅவரது மனைவி காலைக் காப்பியுடன் எதிரே வந்து நின்றாள்.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்ன ஒரு மாதிரியிருக்கிறார்கள். முகமெல்லாம் மாறியிருக்கிறது! ஏதோ பீதி அடைந்தது போல் தெரிகிறதே? என்று கேட்ட தன் மனைவியின் கையைப் பிடித்துக் கட்டிலில் உட்கார வைத்தவாறு, காப்பியை வாங்கிச் சுடச்சுட அருந்தினார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "சூடான காப்பி அளித்த சுறுசுறுப்புக்குப்பின் ஆண்டவனே! நான் கண்டதெல்லாம் கனவாகவே முடிய வேண்டும்! எதுவும் நடந்துவிடக் கூடாது என்னப்பனே! என்று அங்கு மாட்டப்பட்டிருந்த பிள்ளையார் படத்தைப் பார்த்துக் கரங்கூப்பித் தொழுதார். வேலைக்காரச் சிறுமி அன்றைய தினசரிப் பத்திரிகைகளுடன் ஓடிவந்தாள். தேசீயம் பிள்ளை அவசர அவசரமாக அப்பத்திரிகைகளைப் பிரித்துப் பார்த்தார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அய்யோ!—அறியாமலே அலறிவிட்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்ன? என்ன? யாராவது செத்துவிட்டார்களா?—அவரது மனைவி ஆவலோடு கேட்டாள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இல்ல! கோவை, மதுரை, விருதை, எல்லா இடங்களிலும் காங்கிரஸ் படுதோல்வி! படுதோல்வி! வெட்கக்கேடு! வெட்கக்கேடு!! என்று நாத்தழுதழுக்கப் புலம்பினார் தேசீயம் பிள்ளை.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நல்லாத்தோற்றுப் போகணும்! செம்மையா அடி வாங்கணும் உங்களது காங்கிரஸ்! என்று மகிழ்ச்சிபொங்கக் கூறினாள் மனைவி.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஏண்டி உனக்குப் பொறாமை? ஏன் தோற்க வேண்டும் காங்கிரஸ்? சொல்லடி, சொல்லு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உங்க காங்கிரஸ் ஆட்சியிலே படி அரிசி என்னவிலை? காய்கறிக்குக்கூட கிராக்கி வந்த காலம் எப்போதாவது உண்டா! அரையணா செலவிலே ஏழை பாழைகளுக்கு உற்சாகம் தருகிற வெற்றிலைப் பாக்குக்குக்கூடப் பஞ்சம் வந்துவிட்டதே, பாவிகள் ஆட்சியில்! நோயாளிகளுக்குப் பழம் கிடைக்கவில்லை! கிடைத்தாலும் ஒன்றுக்கு மூன்று விலை! எல்லாவற்றுக்கும் வரியைப் போட்டுத் தீட்டி விட்டார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "யாருக்கடி வரி போட்டிருக்கிறோம். வியாபாரிகளுக்கு வரிப்போட்டால் உனக்கேண்டி கஷ்டம்—கவலை எல்லாம்?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வியாபாரிகளுக்கு வரிபோட்டால் மொத்தவியாபாரி சில்லறை வியாபாரி தலையிலும். சில்லறை வியாபாரி வாங்குகிறவர்கள் தலையிலுந்தானே அந்த வரியைக் கட்டி விடுகிறார்கள். இதுகூடத் தெரியாமல் ஆளவந்து விட்டீர்களே; ஆள—",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வரிப்போடாமல் ஆள முடியுமா! எந்த நாட்டிலாவது எந்த சர்க்காராவது வரிப்போடாமல் ஆளுகிறதா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "வரிப்போட வேண்டாமென்று சொல்லவில்லை. கவர்னருக்கு வருஷந்தோறும் கொட்டிக் கொடுக்கிற ஒன்பது லட்சத்தையும், ஊட்டியில் செய்கிற ஊதாரிச் செலவையும் குறைத்துக் கொண்டால் எவ்வளவோ குறைக்கலாமே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அடியே, அடியே! இதெல்லாம் எப்போதடி பேசக் கற்றுக் கொண்டாய்...? ம் யார் கற்றுக் கொடுத்தது!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "யாரும் கற்றுக் கொடுக்கல்லே! எனக்கே புரியுது! போதும்; போதாதற்கு... பட்டணத்திலே எலக்ஷன் நடக்கிறதும் போதும்; அரசியலே இப்ப நம்பவீட்டு வாசலுக்கே வந்துவிட்டதே! மந்திரிகளே நம்ப பார்க்க முடியுமானு இருந்தேன். மந்திரிகளே நம்ப வீட்டுதேடி வந்தாங்களே! நம்ப வீட்டுக் கல்யாணங் காட்சிக்கு கூப்பிட்டால் இந்த மந்திரிகள் வருவாங்களா! தேர்தல்னு எல்லாரும் வரிசை வரிசையா வர்றாங்களென்று பக்கத்துத் தெருவிலே குடிசையிலே யிருக்கிற பெண்கள் எல்லாம் பேசிக்கொள்கிறார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பேசுவாங்க—பேசுவாங்க! அவங்க பேசினாலும் பேசாவிட்டாலும் நீ பேசுவே! கொஞ்ச நாளாக நீ ஒரு மாதிரிதான் இருக்கிறே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இருந்தாலும் போங்க—உங்க புத்தி வரவர மோசமாகப் போய் விட்டது. “தமிழ் வாழ்க!” அதை போய்க் கிழித்து எறிகிறீர்களாமே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்! ஆபாசத் தடை சட்டத்தை மீறி கண்டபடி சுவர்களில் ஒட்டலாமா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தமிழ் வாழ்க—என்பது ஆபாசமா!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அது ஆபாசமில்லை! அப்படி சுவரில் எழுதுவது ஆபாசம்! ஒட்டுவது ஆபாசம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆபாசம் என்பதற்கே உங்களுக்கு அர்த்தம் புரியவில்லை! “தமிழ்” என்று சொல்லியே நீங்கள் ஆபாசமாகக் கருதுவதால்தான் இந்த நாட்டுக்குத் ‘தமிழ்நாடு’ என்று பெயர் வைக்கவே நீங்கள் தயங்குகிறீர்கள் என்கிறேன் நான்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்—அப்படித்தான் நினைத்துக் கொள்ளேன் -இந்த பாரு: இப்ப என்னிடம் பேசிக் கோபத்தைக் கிளப்பாதே! லட்ச லட்சமாகப் பணம் பாழாகி, முடிவு என்னமோ மூலையில் உட்கார வேண்டிய அளவுக்கு ஆகியிருக்கிறது...",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "உங்க வீட்டுப் பணமா செலவழிந்தது? ஊருக்கு ஊர் ஆலை முதலாளி, பஸ் முதலாளி. நிலப்பிரபு ஜமீன்தார்-இப்படி எத்தனையோ அப்பாவிகள் கிடைக்கிறார்கள். அவர்கள் பணத்தை வாங்கித் தேர்தல் வாண வேடிக்கை நடத்துறீங்க!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இவ்வளவு பணம் செலவழிச்சு இந்தத் தடவை தோற்றவனும், அல்லது தோற்றவனைப் பார்த்தவனும், அடுத்த தேர்தலில் நிற்பதற்கே துணிய மாட்டானே என்பதை நினைத்தால் எதிர்காலம் ஒரே இருட்டாயிருக்கிறதடி!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இருக்கட்டும்! இருக்கட்டும்!! இருட்டைப் போக்க ‘உதயசூரியன்’ வருவான்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்னது! உதய சூரியனு! ஓகோகோ! நேற்று அந்தத் தி.மு.க. கூட்டம் இந்தத் தெருவிலே நடந்ததா! அதைக் கேட்டுவிட்டுத்தான் தலைகீழாய் நிற்கிறாயா! புரியுது! புரியுது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நான்மட்டுமா! தெருவே தலைகீழா மாறிப்போச்சு. எல்லா ஓட்டுமே உதயசூரியனுக்குத்தானே!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "நீயே ஓட்டு சேகரிக்கிறாயா! .... அடியே... இப்படியெல்லாம் பேசினால் என்னை மறந்துட வேண்டியதுதான்! உன் கணவனுக்கு அவமானம் ஏற்பட வேண்டுமென்று நினைத்தால் நீ உதய சூரியனுக்கு ஓட்டுப்போடு!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "கணவனுக்கு அவமானம் வரக்கூடாது என்பது சரிதான்! அதே நேரம் என் மகனுக்கு அவமானம் வரலாமா?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "என்னது? என்னது?",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஆமாம்-நம்ப பிள்ளையாண்டான், ‘உதயசூரியனு’க் குத்தானே வேலை செய்கிறான்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அய்யய்யோ! குடும்பமே என்னை எதிர்க்கிறதா! நேற்று நடத்திய ஒரு கூட்டத்திலே அந்தப் பயல்கள் இதுபோல பல குடும்பங்களைக் கலைத்திருப்பார்களே—சரி, சரி! இப்போதே போய் இன்று காங்கிரஸ் கூட்டத்துக்கு ஏற்பாடு செய்கிறேன்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "காங்கிரசுக்குப் பேச யார் வருகிறார்கள்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "பேசுவதா! பேச்சு எதற்காக! அந்தத் தி. மு. க பசங்களை மனமாறத் திட்டித் தீர்த்தால் போதும்! இரண்டு பேச்சாளர்! நாலு குண்டர்கள்! இன்றைக்குப் பார்த்து விடுகிறேன் ஒரு கை!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—என்றவாறு, தேசீயம் பிள்ளை பரபரப்பாக எழுந்து வெளியே புறப்பட்டார். அவரது மனைவி, கணவனின் ஆத்திரத்தைப் பார்த்துக் கேலியாகச் சிரித்துக் கொண்டாள்.",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nHis wife comes and stands before him with the morning coffee.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“You look strange. Your whole face has changed! You look as though something has frightened you?” she asks. Taking his wife's hand, he seats her on the cot, takes the coffee, and drinks it piping hot.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Revived by the hot coffee, he folds his hands before the picture of Pillaiyar hanging there and prays: “O Lord! Everything I saw must turn out to have been only a dream! Nothing must happen, my lord!” The servant girl runs in with that day's newspapers. Desiyam Pillai hurriedly separates them and looks through them.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Ayyo!”—he cries out without realizing it.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What? What? Has somebody died?” his wife asks eagerly.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“No! Kovai, Madurai, Virudhai—everywhere Congress has suffered a crushing defeat! A crushing defeat! Shame! Shame!!” Desiyam Pillai laments, his voice trembling.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Good! They ought to lose properly! Your Congress deserves a thorough beating!” his wife says, overflowing with delight.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Why, woman, are you so jealous? Why should Congress lose? Tell me, tell me!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Under your Congress rule, what is the price of a padi of rice? Was there ever a time when even vegetables became scarce? Under this sinners' rule, even betel leaf and areca nut, which give poor people a little cheer for half an anna, have become scarce! Sick people cannot get fruit! Even when they can, it costs three times as much! They have slapped taxes on everything!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Whom have we taxed, woman? If we tax traders, why should you suffer—why all this worry?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“If you tax the traders, the wholesaler puts it on the retailer's head. And the retailer puts that tax on the heads of the people who buy from him, doesn't he? You came to govern without even knowing this; govern—”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Can anyone govern without taxes! Is there any government in any country that rules without imposing taxes?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“I am not saying there should be no taxes. If you cut the nine lakhs poured out every year for the Governor, and the wasteful spending in Ooty, you could reduce so much!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Woman, woman! When did you learn to talk like this...? Hm? Who taught you?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Nobody taught me! I understand it myself! As though that were not enough... once elections started happening in the city, politics itself came right up to the doorstep of our house! I used to wonder whether people like us could even see ministers. The ministers themselves came looking for our house! Would these ministers come if we invited them to a wedding function at our house? But when it is election time, they all come one after another—that is what all the women living in the huts on the next street are saying!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“They'll talk—they'll talk! Whether they talk or not, you will! For some days now you've been acting differently!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Even so, go on—your sense is getting worse and worse. I hear you people go and tear down ‘Long Live Tamil!’”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Yes! Can people paste things all over walls however they like, violating the anti-obscenity law?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Is ‘Long Live Tamil’ obscene?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“That is not obscene! Writing it on walls like that is obscene! Pasting it is obscene!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“You do not even understand what obscenity means! I say it is because you regard the very word ‘Tamil’ as obscene that you hesitate even to name this country ‘Tamil Nadu.’”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Yes—think whatever you like. Look here: don't talk to me now and make me angry! Lakhs upon lakhs of money have been wasted, and in the end things have come to the point where we may have to sit in a corner...”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Was it money from your own house that was spent? In every town there are mill owners, bus owners, landlords and zamindars—so many innocent souls like that. You take their money and stage an election fireworks-show!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“When I think that the man who lost this time after spending so much money—or even anyone who watched him lose—will not dare stand in the next election, the whole future looks dark, woman!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Let it be! Let it be!! To dispel the darkness, the ‘Rising Sun’ will come!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What! Rising Sun! Oh-ho-ho! Was that DMK meeting held in this street yesterday? Is it after listening to that that you've turned upside down? I understand! I understand.”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Only me? The whole street has turned upside down. Aren't all the votes for the Rising Sun?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Are you collecting votes yourself! ... Woman... if you talk like this, you had better forget me! If you want your husband to be humiliated, then vote for the Rising Sun!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“It is right that a husband should not be humiliated! But at the same time, may my son be humiliated?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What? What?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Yes—our boy is working for the ‘Rising Sun,’ isn't he?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Ayyo, ayyo! Is the whole family opposing me? In the one meeting those fellows held yesterday, they must have broken up many families like this—fine, fine! I am going right now to arrange today's Congress meeting!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Who is coming to speak for Congress?”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Speak? What is there to speak about! It is enough to curse those DMK boys to our hearts' content! Two speakers! Four goondas! Today I'll show them a thing or two!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—Saying this, Desiyam Pillai rises in agitation and goes out. His wife laughs mockingly at her husband's anger.",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Drafted and reviewed only against the complete reviewed Tamil SRU; no OCR/PDF substitute, later edition, web text, general-knowledge reconstruction, or secondary English witness was used.\n- The source has no speaker labels in this domestic exchange; the English preserves the paragraph-by-paragraph turn order instead of inventing labels.\n- `padi` (rice measure), `anna`, Pillaiyar, Kovai, Madurai, source-form `Virudhai`, Ooty, and `Tamil Nadu` are retained where they carry period or source-specific meaning.\n- The source colloquial `நம்ப` is rendered contextually as “our/us”; the translation does not normalize the Tamil archival layer.\n- `தமிழ் வாழ்க!` is rendered directly as “Long Live Tamil!” and `உதய சூரியன்` as “Rising Sun,” preserving the political slogan/symbol register.\n- `தி. மு. க` is rendered as `DMK`; no outside political explanation is inserted.\n- `ஆலை முதலாளி / பஸ் முதலாளி / நிலப்பிரபு / ஜமீன்தார்` is translated as mill owners / bus owners / landlords / zamindars, retaining the source's social-political list.\n- `இரண்டு பேச்சாளர்! நாலு குண்டர்கள்!` is kept as the abrupt “Two speakers! Four goondas!” rather than smoothed into neutral prose.\n- The source's sustained colloquial syntax is rendered in colloquial English where possible; this is a translation choice only and does not revise the locked Tamil wording.\n- The artifact ends with Desiyam Pillai leaving and his wife laughing; the front-yard/Kamala material belongs to SRU-07."
+     }
+    ]
+   }
+  },
+  {
+   "order": null,
+   "slug": "sru-07-udayasuriyan-kolam-close",
+   "kind": "source-representation-unit",
+   "headingTa": null,
+   "headingEn": null,
+   "titleTa": "Front yard, Kamala, உதயசூரியன் கோலம், close",
+   "titleEn": "Front yard, Kamala, Udayasuriyan kolam, close",
+   "settingTa": null,
+   "settingEn": null,
+   "sourceScans": [
+    47,
+    48
+   ],
+   "editorialUnitId": "SRU-07",
+   "assembledFromVerifiedPages": true,
+   "tamil": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nதேசீயம்பிள்ளை வாயிற்புறம் வந்தார். டிரைவரைக் கூப்பிட்டு அவசரமாகக் காரை எடுக்கச் சொன்னார். கார் வந்து நின்றது. அவரது மகள் தெருவிலே கோலம் போட்டுக் கொண்டிருந்தாள்.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "கமலா! கமலா இன்று மாலைப் பொதுக்கூட்டத்தில் நீ பாடவேண்டும்!-என்று உரக்கச் சொன்னார்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "ஓ பாடுகிறேன்—எந்தக் கூட்டத்திலப்பா! என்று குனிந்திருந்த கமலா நிமிர்ந்தாள். வாசலில் அவள் போட்ட கோலம் தேசீயம் பிள்ளையின் கண்ணில்பட்டது. வழக்கமாகக் கமலா போடும் கோலமல்ல அது! புதிய கோலம்!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "உதயசூரியன் கோலம்",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "தேசீயம்பிள்ளை திகைத்து நின்றுவிட்டார்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "அம்மாவிடம் சொல்லிவிடு, அப்பா ஊட்டிக்குப் போகிறார் என்று!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "இதைக் கூறிவிட்டு அவர் காரில் ஏறி உட்கார்ந்தார். கார் புறப்பட்டது.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "கோலத்தைப் பார்த்துக்கொண்டே கமலா நின்றாள். அம்மா வெளியே வந்தாள் மகள், தந்தை சொன்ன செய்தியைச் சொன்னாள்.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“என்ன செய்வது மகளே! காங்கிரஸ் கட்சி மலையேறும் காலம் வந்துவிட்டது!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—என்று தேசீயம் பிள்ளையின் மனைவி, பதில் கூறிவிட்டு கார் போன திக்கு நோக்கி நீண்டநேரம் நின்றுகொண்டிருந்தாள்.",
+      "hasLineBreaks": false
+     }
+    ]
+   },
+   "english": {
+    "units": [
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "\nDesiyampillai comes out to the front entrance. He calls the driver and tells him to bring the car around quickly. The car comes and stops. His daughter is drawing a kolam in the street.",
+      "hasLineBreaks": true
+     },
+     {
+      "kind": "verse",
+      "text": "“Kamala! Kamala! You must sing at this evening's public meeting!” he calls out loudly.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Oh, I'll sing—which meeting, appa?” Kamala, who had been bent over, straightens up. The kolam she has drawn at the entrance catches Desiyam Pillai's eye. It is not the kolam Kamala usually draws! A new kolam!",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Rising Sun Kolam",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Desiyampillai stands stunned.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“Tell your mother that father is going to Ooty!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Having said this, he gets into the car. The car leaves.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "Kamala stands looking at the kolam. Her mother comes outside. The daughter tells her what her father said.",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "verse",
+      "text": "“What can we do, daughter! The time has come for the Congress Party to climb the hill!”",
+      "hasLineBreaks": false
+     },
+     {
+      "kind": "dialogue",
+      "speakerAsPrinted": null,
+      "speakerSeparator": null,
+      "text": "—Desiyam Pillai's wife gives this reply and stands for a long time looking in the direction the car has gone.",
+      "hasLineBreaks": false
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translation-note",
+      "text": "- Drafted and reviewed only against the complete reviewed Tamil SRU; no OCR/PDF substitute, later edition, web text, general-knowledge reconstruction, or secondary English witness was used.\n- `kolam` is retained as the source cultural term instead of being flattened to a generic “drawing” or “decoration.”\n- The source-visible centered `உதயசூரியன் கோலம்` remains an internal standalone intertitle and is rendered as `Rising Sun Kolam`; it is not promoted to a source scene title.\n- Source-form variation between `தேசீயம்பிள்ளை` and `தேசீயம் பிள்ளை` remains traceable as `Desiyampillai` / `Desiyam Pillai` rather than being used to normalize the Tamil layer.\n- `ஊட்டி` is rendered as Ooty.\n- The final `காங்கிரஸ் கட்சி மலையேறும் காலம் வந்துவிட்டது!` is translated literally enough to preserve its hill/climbing wordplay with the departure for Ooty; no outside explanation is inserted into the body.\n- The source has no printed `முற்றும்` after the closing sentence. No `The End`, curtain cue, or equivalent closure is added."
+     }
+    ]
+   }
+  }
+ ]
+}

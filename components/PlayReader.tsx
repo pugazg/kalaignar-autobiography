@@ -35,6 +35,7 @@ export default function PlayReader({
     play.openingNote && play.openingNote.attachedTo === scene.slug ? play.openingNote : null;
   const openingUnits = openingNote ? (showEn ? openingNote.english.units : openingNote.tamil.units) : [];
   const continuous = scene.kind === "continuous-body";
+  const srIndex = scene.kind === "source-representation-unit" ? play.readingUnits.findIndex((u) => u.slug === scene.slug) + 1 : 0;
   const notes = scene.english.notes;
   const heading = showEn ? scene.headingEn ?? scene.headingTa : scene.headingTa;
   const title = showEn ? scene.titleEn : scene.titleTa;
@@ -87,6 +88,16 @@ export default function PlayReader({
         </blockquote>
       );
     }
+    if (u.kind === "heading") {
+      // A printed heading that appears INSIDE the reading body — a setting line, a work-title line,
+      // or a centred descriptive intertitle (`உதயசூரியன் கோலம்`). It is carried in source order and
+      // set apart, but never as a scene number or a scene title.
+      return (
+        <p key={i} className="my-6 text-center font-semibold tracking-wide text-ink/75 dark:text-night-text/75">
+          {withObstruction(u.text)}
+        </p>
+      );
+    }
     // Dialogue.
     return (
       <p key={i} className="my-4 leading-relaxed">
@@ -131,7 +142,13 @@ export default function PlayReader({
               // A continuous work has no scene number and no "of N" — the source prints no scenes,
               // so there is nothing to count and nothing to be the first of.
               ? ta ? "தொடர் நாடகப் பகுதி" : "Continuous dramatic text"
-              : ta ? `காட்சி ${scene.order} / ${play.sceneCount}` : `Scene ${scene.order} of ${play.sceneCount}`}
+              : scene.kind === "compressed-scene-range"
+                ? ta ? `காட்சிகள் ${scene.sceneRange?.join(", ")}` : `Scenes ${scene.sceneRange?.join(", ")}`
+                : scene.kind === "unnumbered-scene"
+                  ? ta ? "எண்ணிடப்படாத காட்சி" : "Unnumbered scene"
+                  : scene.kind === "source-representation-unit"
+                    ? ta ? `மூல அமைப்பு அலகு ${srIndex} / ${play.readingUnits.length}` : `Source-representation unit ${srIndex} of ${play.readingUnits.length}`
+                    : ta ? `காட்சி ${scene.order} / ${play.sceneCount}` : `Scene ${scene.order} of ${play.sceneCount}`}
         </p>
 
         {heading && (
@@ -166,6 +183,44 @@ export default function PlayReader({
               {ta
                 ? "மூலம் இவ்வாக்கத்தைக் காட்சிகளாகப் பிரிக்கவில்லை — ஒரே தொடர்ச்சியான நாடகப் பகுதியாகவே அச்சிட்டுள்ளது. இந்த முகவரிப் பெயர் வழிசெலுத்தலுக்கானது; அது மூலத்தின் காட்சி எண் அல்ல."
                 : "The source prints this work without any scene division — one continuous dramatic text. This page's URL slug is navigation, not a source scene number."}
+            </span>
+          </p>
+        )}
+
+        {scene.kind === "compressed-scene-range" && (
+          <p className="mt-3 inline-flex items-start gap-1.5 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+            <Drama className="mt-0.5 h-3.5 w-3.5 shrink-0 text-marina" aria-hidden />
+            <span>
+              {ta
+                ? `மூலம் காட்சிகள் ${scene.sceneRange?.join(", ")}-ஐ ஒரே தொகுக்கப்பட்ட பகுதியாக அச்சிட்டுள்ளது; தனித் தனிக் காட்சி உரை இல்லை. புதிதாக எந்தக் காட்சியும் உருவாக்கப்படவில்லை.`
+                : `The edition prints Scenes ${scene.sceneRange?.join(", ")} together as one block, with no separate scene text. No separate scene is reconstructed or invented.`}
+            </span>
+          </p>
+        )}
+
+        {scene.kind === "unnumbered-scene" && (
+          <p className="mt-3 inline-flex items-start gap-1.5 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+            <Drama className="mt-0.5 h-3.5 w-3.5 shrink-0 text-marina" aria-hidden />
+            <span>
+              {ta
+                ? "மூலம் இதை எண்ணின்றி `காட்சி,` என்றே தலைப்பிட்டு அச்சிட்டுள்ளது (காட்சி 21-க்கும் காட்சி 24-க்கும் இடையில்). காட்சி 22/23 என்று எந்த எண்ணும் வழங்கப்படவில்லை."
+                : "The edition heads this unit `காட்சி,` with no numeral (between Scene 21 and Scene 24). No Scene 22 or 23 number is assigned."}
+            </span>
+          </p>
+        )}
+
+        {scene.kind === "source-representation-unit" && (
+          <p className="mt-3 inline-flex items-start gap-1.5 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+            <Drama className="mt-0.5 h-3.5 w-3.5 shrink-0 text-marina" aria-hidden />
+            <span>
+              {ta
+                ? "இந்நூலின் மூலம் காட்சி எண்களையோ அங்கங்களையோ அச்சிடவில்லை. இப்பகுதி மூல அமைப்பை பிரதிபலிக்கும் தொகுப்பு அலகு (SRU) — வழிசெலுத்தலுக்கானது; மூலத்தின் காட்சி எண் அல்ல."
+                : "The source prints no scene numbers or acts. This is an editorial source-representation unit (SRU) — navigation, never a source scene number."}
+              {scene.assembledFromVerifiedPages === false && (
+                ta
+                  ? " இப்பகுதி ஆவணப்படுத்தப்பட்ட மூலச் சேதத்தைக் கொண்டுள்ளது; `[paper loss]` / `[unresolved …]` குறிகள் மூலத்தின்படியே காட்டப்படுகின்றன; எதுவும் மீட்டமைக்கப்படவில்லை."
+                  : " This unit carries documented source-condition loss; the `[paper loss]` / `[unresolved …]` markers are shown exactly as in the source, and nothing is reconstructed."
+              )}
             </span>
           </p>
         )}
