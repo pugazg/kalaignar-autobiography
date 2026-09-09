@@ -5,6 +5,10 @@ import path from "node:path";
 import SpeechSource from "@/components/SpeechSource";
 import { SPEECH_SLUGS } from "@/data/speeches";
 import type { SpeechProvenance } from "@/data/speeches";
+import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
+
+// Wave 6 P3: discovered SPEECH_SLUGS PLUS the undiscovered Wave-6 speeches' `/source` pages.
+const ALL_SPEECH_SLUGS: readonly string[] = [...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS];
 
 function loadProvenance(slug: string): SpeechProvenance | null {
   try {
@@ -17,7 +21,7 @@ function loadProvenance(slug: string): SpeechProvenance | null {
 }
 
 export function generateStaticParams() {
-  return SPEECH_SLUGS.map((slug) => ({ slug }));
+  return ALL_SPEECH_SLUGS.map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -36,7 +40,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function SpeechSourcePage({ params }: { params: { slug: string } }) {
-  if (!(SPEECH_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_SPEECH_SLUGS.includes(params.slug)) notFound();
   const prov = loadProvenance(params.slug);
   if (!prov) notFound();
   return <SpeechSource slug={params.slug} prov={prov} />;

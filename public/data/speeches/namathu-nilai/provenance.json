@@ -1,0 +1,76 @@
+{
+ "workId": "namathu-nilai",
+ "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+ "sourcePath": "speeches/1971/1971-namathu-nilai",
+ "sourceCommit": "10ccbf4f18b82d078b818892b9c4a745e2eb30d7",
+ "source": {
+  "publicationTitleTa": "நமது நிலை",
+  "coverAttributionTa": "தமிழக முதல்வர் கலைஞர் மு.கருணாநிதி",
+  "publicationDate": "1971-05-22",
+  "publisherTa": "செய்தி-விளம்பரத் துறை, தமிழ்நாடு அரசு",
+  "publisherLocationTa": "சென்னை",
+  "scanFilename": "ACL-CPL_01726_நமது_நிலை.pdf",
+  "scanTotalPages": 60,
+  "frontMatterScanPages": "1-2",
+  "speechScanPages": "3-60",
+  "scanSha256": "5cfbf0e5d01a9cedb252a12168e9e6a14a9a2061c7d78848dde692d5fa241acb",
+  "onlyTextualAuthority": true,
+  "externalLegislativeTextImported": false,
+  "externalLegislativeWordingImported": false,
+  "speechFactsNotStated": [
+   "date"
+  ],
+  "speechFactsNoteEn": "The source is an edited two-House booklet compilation of replies across two debates; it establishes no single Assembly/Council speech date. The 1971-05-22 booklet publication date is not a speech date."
+ },
+ "transcription": {
+  "status": "complete",
+  "verifiedAgainstScan": true,
+  "note": "The frozen Tamil transcript is the authoritative textual layer, verified-complete against the supplied scan; source spelling, punctuation, spacing and unusual/historical forms are preserved. It is copied verbatim here — never re-transcribed, modernised or normalised."
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation",
+  "language": "en",
+  "from": "the frozen verified-complete Tamil transcript",
+  "englishKind": "project-created",
+  "note": "Project-created, source-linked English. It is NOT a source-published English edition and is never represented as one."
+ },
+ "archiveDerived": {
+  "readingUnits": "two editorial units (a two-House compilation)",
+  "sectionHeadings": 78,
+  "englishHeadings": 78,
+  "tamilResolvedParagraphs": 266,
+  "englishParagraphs": 266,
+  "tamilSourceTextSegments": 266,
+  "englishSourceTextSegments": 266,
+  "sourcePagesCovered": 58,
+  "pageBasis": "scan",
+  "note": "Printed section/unit headings are preserved in source order as heading blocks; page markers are provenance only and never enter the reading text. Editorial navigation is never presented as source-numbered scenes/sections."
+ },
+ "semantics": {
+  "dateNull": true,
+  "twoHouseWitness": true,
+  "legislatureScopeNote": "The source booklet is an edited two-House compilation; this entry preserves the booklet witness rather than reconstructing separate House transcripts.",
+  "eventTa": "ஆளுநர் உரைக்கு நன்றி தெரிவிக்கும் தீர்மானம் மற்றும் 1971-72 இடைக்கால நிதிநிலை அறிக்கை விவாதங்களுக்கான பதிலுரைகளின் தொகுப்பு",
+  "eventEn": "Edited compilation of replies to the Governor-address Motion of Thanks debate and the 1971-72 Interim Budget debate",
+  "note": "An edited two-House booklet witness: `date` is null (the source is not a single dated Assembly/Council transcript), the legislature name carries both Houses with the source scope note, no single speech date or venue is invented, and the two editorial units are kept distinct rather than collapsed into one homogeneous event. Official Report wording is NOT used as the textual authority — the source states the booklet transcription is the only textual authority."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The booklet's own publisher/edition/printer data is a source/edition fact, distinct from the present rights of Kalaignar's underlying speech.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned booklet; it is NOT vendored. Its identity travels as filename + SHA-256 + size + page map.",
+  "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from that Tamil. Neither is edited, modernised or normalised during import.",
+  "Only the canonical assembled transcript/translation layer is read; audit, progress, handover and batch logs are never parsed as literary text."
+ ]
+}
