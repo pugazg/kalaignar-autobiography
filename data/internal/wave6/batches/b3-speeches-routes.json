@@ -1,0 +1,21 @@
+{
+  "batchId": "b3-speeches",
+  "workIds": [
+    "idhaya-perikai",
+    "namathu-nilai",
+    "palli-vazhkkai"
+  ],
+  "collectionIds": [],
+  "readerFamily": "speech",
+  "discoverable": false,
+  "sitemapExposed": false,
+  "routeCount": 6,
+  "routes": [
+    "/speeches/idhaya-perikai",
+    "/speeches/idhaya-perikai/source",
+    "/speeches/namathu-nilai",
+    "/speeches/namathu-nilai/source",
+    "/speeches/palli-vazhkkai",
+    "/speeches/palli-vazhkkai/source"
+  ]
+}

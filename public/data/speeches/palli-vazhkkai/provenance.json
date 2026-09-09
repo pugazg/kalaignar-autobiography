@@ -1,0 +1,86 @@
+{
+ "workId": "palli-vazhkkai",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/palli-vazhkkai",
+ "sourceCommit": "b7b0933cdd68c3fea6f237a4c63fd9a100efc74f",
+ "source": {
+  "publicationTitleTa": "பள்ளி வாழ்க்கை",
+  "documentType": "printed-speech-compilation-booklet",
+  "editionTa": "முதற்பதிப்பு மார்ச்சு 1952",
+  "publicationDate": "1952",
+  "publisherTa": "அறிவு மன்றம்",
+  "publisherLocationTa": "சென்னை",
+  "coverPriceTa": "விலை ரூ. 1-0-0",
+  "printerTa": "Vinodan Press, 33, Jones St. G. T. Madras.",
+  "scanFilename": "TVA_BOK_0064116_பள்ளி_வாழ்க்கை.pdf",
+  "scanSha256": "e20bf80e8e5b65abbfdb5bcefbdaf85b8e5385112f6de8efcc0e733ed3aceea3",
+  "scanFileSizeBytes": 101096930,
+  "scanTotalPages": 81,
+  "speechScanPages": "6-81",
+  "printedSpeechPages": "5-80",
+  "speechFactsNotStated": [
+   "date",
+   "venue",
+   "event",
+   "occasion",
+   "audience"
+  ],
+  "speechFactsNoteEn": "The source describes multiple speeches rather than a single event. It names திருவாரூர் நகராண்மைக் கழக உயர்நிலைப்பள்ளி and also says வேறு சில இடங்களிலும், but gives no component-speech dates or a single venue/event/occasion/audience. These single-event fields therefore remain null."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verifiedAgainstScan": true,
+  "note": "The frozen Tamil transcript is the authoritative textual layer, verified-complete against the supplied scan; source spelling, punctuation, spacing and unusual/historical forms are preserved. It is copied verbatim here — never re-transcribed, modernised or normalised."
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation",
+  "language": "en",
+  "from": "the frozen verified-complete Tamil transcript",
+  "englishKind": "project-created",
+  "note": "Project-created, source-linked English. It is NOT a source-published English edition and is never represented as one."
+ },
+ "archiveDerived": {
+  "readingUnits": "a printed compilation of component speeches",
+  "sectionHeadings": 1,
+  "englishHeadings": 1,
+  "tamilResolvedParagraphs": 396,
+  "englishParagraphs": 418,
+  "tamilSourceTextSegments": 396,
+  "englishSourceTextSegments": 418,
+  "sourcePagesCovered": 76,
+  "pageBasis": "printed",
+  "note": "Printed section/unit headings are preserved in source order as heading blocks; page markers are provenance only and never enter the reading text. Editorial navigation is never presented as source-numbered scenes/sections."
+ },
+ "semantics": {
+  "dateNull": true,
+  "venueNull": true,
+  "eventNull": true,
+  "occasionNull": true,
+  "audienceNull": true,
+  "sourceNote": "The source describes multiple speeches rather than a single event. It names திருவாரூர் நகராண்மைக் கழக உயர்நிலைப்பள்ளி and also says வேறு சில இடங்களிலும், but gives no component-speech dates or a single venue/event/occasion/audience. These single-event fields therefore remain null.",
+  "documentTypeNote": "PDF page 5 explicitly describes the booklet as a compilation of speeches by M. Karunanidhi delivered at the Tiruvarur municipal high school and other places, compiled by தோழர் மு. நமச்சிவாயம். It is archived as one source unit without inferring a single original speech event.",
+  "compiler": "மு. நமச்சிவாயம்",
+  "namedVenueTa": "திருவாரூர் நகராண்மைக் கழக உயர்நிலைப்பள்ளி",
+  "otherVenuesSourceText": "வேறு சில இடங்களிலும்",
+  "note": "A printed public booklet with NO source-established single speech date, venue, event, occasion or audience — all five stay null. Internal historical dates/places/events in the prose are NOT promoted into these bibliographic fields, and the publication/edition year is never substituted for a speech date. Component boundaries are preserved; no per-component date or venue is manufactured."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The booklet's own publisher/edition/printer data is a source/edition fact, distinct from the present rights of Kalaignar's underlying speech.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned booklet; it is NOT vendored. Its identity travels as filename + SHA-256 + size + page map.",
+  "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from that Tamil. Neither is edited, modernised or normalised during import.",
+  "Only the canonical assembled transcript/translation layer is read; audit, progress, handover and batch logs are never parsed as literary text."
+ ]
+}

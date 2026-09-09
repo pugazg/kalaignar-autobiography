@@ -5,6 +5,12 @@ import path from "node:path";
 import SpeechReader from "@/components/SpeechReader";
 import { SPEECH_SLUGS } from "@/data/speeches";
 import type { Speech } from "@/data/speeches";
+import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
+
+// Wave 6 P3: the discovered SPEECH_SLUGS PLUS the authorized-but-undiscovered Wave-6 speeches. The
+// latter are prerendered (URL-addressable) but stay out of the catalogue, `/read` and the sitemap,
+// which are driven by SPEECH_SLUGS / data/library.ts alone until Wave 6 P4 (NOT authorized).
+const ALL_SPEECH_SLUGS: readonly string[] = [...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS];
 
 function loadSpeech(slug: string): Speech | null {
   try {
@@ -17,7 +23,7 @@ function loadSpeech(slug: string): Speech | null {
 }
 
 export function generateStaticParams() {
-  return SPEECH_SLUGS.map((slug) => ({ slug }));
+  return ALL_SPEECH_SLUGS.map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -52,7 +58,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function SpeechPage({ params }: { params: { slug: string } }) {
-  if (!(SPEECH_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_SPEECH_SLUGS.includes(params.slug)) notFound();
   const s = loadSpeech(params.slug);
   if (!s) notFound();
   return <SpeechReader slug={params.slug} />;

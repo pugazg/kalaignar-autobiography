@@ -27,9 +27,22 @@
       "discoverable": false,
       "sitemapExposed": false,
       "routeCount": 83
+    },
+    {
+      "batchId": "b3-speeches",
+      "workIds": [
+        "idhaya-perikai",
+        "namathu-nilai",
+        "palli-vazhkkai"
+      ],
+      "collectionIds": [],
+      "readerFamily": "speech",
+      "discoverable": false,
+      "sitemapExposed": false,
+      "routeCount": 6
     }
   ],
-  "cumulativeRouteCount": 148,
+  "cumulativeRouteCount": 154,
   "cumulativeRoutes": [
     "/cinema/ammaiyappan",
     "/cinema/ammaiyappan/scene-001",
@@ -178,6 +191,12 @@
     "/plays/thiruvalar-desiyampillai/sru-04-gandhi-journey",
     "/plays/thiruvalar-desiyampillai/sru-05-stairfall-dream-exit",
     "/plays/thiruvalar-desiyampillai/sru-06-domestic-election-argument",
-    "/plays/thiruvalar-desiyampillai/sru-07-udayasuriyan-kolam-close"
+    "/plays/thiruvalar-desiyampillai/sru-07-udayasuriyan-kolam-close",
+    "/speeches/idhaya-perikai",
+    "/speeches/idhaya-perikai/source",
+    "/speeches/namathu-nilai",
+    "/speeches/namathu-nilai/source",
+    "/speeches/palli-vazhkkai",
+    "/speeches/palli-vazhkkai/source"
   ]
 }

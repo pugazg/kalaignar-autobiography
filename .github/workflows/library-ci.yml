@@ -109,6 +109,11 @@ jobs:
       # that none of the three works is yet in the sitemap or catalogue (P4 not authorized).
       - name: Drama direct readers/routes (Wave 6 B2)
         run: npm run test:wave6-b2-drama
+      # Wave 6 Batch 3 — Speeches direct readers/routes (P1–P3): the 6-route set (2 per work — reader
+      # + source), fail-closed slugs, rendered source semantics (date/venue null, two-House witness,
+      # 7-section booklet, compilation), and that none of the three is in the sitemap or catalogue.
+      - name: Speeches direct readers/routes (Wave 6 B3)
+        run: npm run test:wave6-b3-speeches
       # Wave 6 P1–P3 global build-boundary — owns the whole-build delta that Wave-5 P4 A7 shed:
       # build == frozen pre-Wave-6 baseline + cumulative Wave-6 P3 route manifest, and every Wave-6
       # route stays out of sitemap/catalogue/discovery. Runs after Build.
@@ -204,6 +209,13 @@ jobs:
               // the SAME commit, so one directory serves them and the same-directory/same-pin
               // guard below keeps its meaning. It is deliberately NOT given a directory of its own.
               "speeches/kalaivanar-nsk-memorial-day": { repo: "kalaignar-public-speeches" },
+              // Wave 6 Batch 3 — Speeches. namathu-nilai pins the assembly-speeches archive and
+              // idhaya-perikai + palli-vazhkkai pin the public-speeches archive, each at a LATER commit
+              // than the works above, so they get their OWN checkout directories. idhaya/palli share
+              // one public-speeches-wave6 pin, so the same-directory/same-pin guard keeps its meaning.
+              "speeches/namathu-nilai": { repo: "kalaignar-assembly-speeches", dir: "kalaignar-assembly-speeches-wave6" },
+              "speeches/idhaya-perikai": { repo: "kalaignar-public-speeches", dir: "kalaignar-public-speeches-wave6" },
+              "speeches/palli-vazhkkai": { repo: "kalaignar-public-speeches", dir: "kalaignar-public-speeches-wave6" },
               "poems/idhayathai-thanthidu-anna": { repo: "kalaignar-poems" },
               // ── WAVE 4 P1 — the three standalone poems ──────────────────────────────────────
               // These pin the poems archive at the Wave-4 freeze, a LATER commit than
@@ -400,6 +412,10 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-drama-wave6.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave6"
+      - name: Speeches batch (Wave 6 B3)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-speeches-wave6.mjs "$KDL_SOURCES_DIR/kalaignar-assembly-speeches-wave6" "$KDL_SOURCES_DIR/kalaignar-public-speeches-wave6"
       # ONE coherent released batch, ONE validation step — the 37 stories of the 1977 anthology.
       # The script prints a PASS/FAIL line per story, so a failure names the story, not just the
       # batch, and any single story failing fails the whole job.

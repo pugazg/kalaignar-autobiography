@@ -358,6 +358,14 @@ export type SpeechProvenance = {
     releaseReady?: boolean;
     note: string;
   };
+
+  /**
+   * Governance SEMANTICS surfaced on the provenance page for a work whose archival structure the
+   * reader must make understandable without pretending to metadata the source does not establish:
+   * an edited two-House witness, a multi-section booklet, or a printed compilation. Present only for
+   * such works (the Wave-6 Batch-3 speeches); a free-shape record carried verbatim from the importer.
+   */
+  semantics?: Record<string, unknown>;
 };
 
 // Lightweight catalog of integrated speech slugs (build/import authority; the public catalog

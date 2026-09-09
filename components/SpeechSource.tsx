@@ -532,6 +532,32 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           </dl>
         </section>
 
+        {/* Source structure & governance semantics — surfaced only where the source's archival
+            structure needs making understandable without asserting metadata the source does not
+            establish (an edited two-House witness, a multi-section booklet, or a compilation). */}
+        {prov.semantics && (
+          <section className="mt-4 rounded-2xl border border-ink/10 bg-white/40 p-5 dark:border-white/10 dark:bg-night-surface/40">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50">{ta ? "மூல அமைப்பு" : "Source structure"}</h2>
+            {typeof prov.semantics.note === "string" && (
+              <p className="mt-3 text-sm leading-relaxed text-ink/70 dark:text-night-text/70" lang="en">{prov.semantics.note as string}</p>
+            )}
+            {[
+              ["legislatureScopeNote", prov.semantics.legislatureScopeNote],
+              ["sourceNote", prov.semantics.sourceNote],
+              ["documentTypeNote", prov.semantics.documentTypeNote],
+              ["printerUnresolvedNote", prov.semantics.printerUnresolvedNote],
+            ].filter(([, v]) => typeof v === "string").map(([k, v]) => (
+              <p key={k as string} className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang="en">{v as string}</p>
+            ))}
+            {typeof prov.semantics.compiler === "string" && (
+              <p className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang="en">
+                Compiled by {prov.semantics.compiler as string}
+                {typeof prov.semantics.namedVenueTa === "string" ? ` — ${prov.semantics.namedVenueTa as string}${typeof prov.semantics.otherVenuesSourceText === "string" ? ` ${prov.semantics.otherVenuesSourceText as string}` : ""}` : ""}
+              </p>
+            )}
+          </section>
+        )}
+
         {/* Notes — omitted entirely when the archive records none for this speech. */}
 
 

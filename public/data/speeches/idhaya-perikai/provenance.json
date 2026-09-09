@@ -1,0 +1,84 @@
+{
+ "workId": "idhaya-perikai",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/idhaya-perikai",
+ "sourceCommit": "b7b0933cdd68c3fea6f237a4c63fd9a100efc74f",
+ "source": {
+  "publicationTitleTa": "இதய பேரிகை",
+  "documentType": "printed-multi-section-booklet",
+  "editionTa": "முதற்பதிப்பு—டிசம்பர் 1951",
+  "publicationDate": "1951",
+  "publisherTa": "கலைப்பூங்கா",
+  "publisherLocationTa": "திருவாரூர்",
+  "coverPriceTa": "விலை அணா எட்டு.",
+  "printerTa": null,
+  "scanFilename": "TVA_BOK_0016120_இதய_பேரிகை(1).pdf",
+  "scanSha256": "4217717379b028de17ed9830dac4bdfd54ae7256705b891c207d646707640b9d",
+  "scanFileSizeBytes": 21135384,
+  "scanTotalPages": 36,
+  "speechScanPages": "4-35",
+  "printedSpeechPages": "3-34",
+  "speechFactsNotStated": [
+   "date",
+   "venue",
+   "event",
+   "occasion",
+   "audience"
+  ],
+  "speechFactsNoteEn": "The scan does not establish a single speech date, venue, event, occasion, or audience as bibliographic metadata. Internal historical dates, meetings, places, and event references in the prose are not promoted into these fields without explicit source evidence."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verifiedAgainstScan": true,
+  "note": "The frozen Tamil transcript is the authoritative textual layer, verified-complete against the supplied scan; source spelling, punctuation, spacing and unusual/historical forms are preserved. It is copied verbatim here — never re-transcribed, modernised or normalised."
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation",
+  "language": "en",
+  "from": "the frozen verified-complete Tamil transcript",
+  "englishKind": "project-created",
+  "note": "Project-created, source-linked English. It is NOT a source-published English edition and is never represented as one."
+ },
+ "archiveDerived": {
+  "readingUnits": "7 printed sections",
+  "sectionHeadings": 7,
+  "englishHeadings": 7,
+  "tamilResolvedParagraphs": 144,
+  "englishParagraphs": 157,
+  "tamilSourceTextSegments": 144,
+  "englishSourceTextSegments": 157,
+  "sourcePagesCovered": 32,
+  "pageBasis": "printed",
+  "note": "Printed section/unit headings are preserved in source order as heading blocks; page markers are provenance only and never enter the reading text. Editorial navigation is never presented as source-numbered scenes/sections."
+ },
+ "semantics": {
+  "dateNull": true,
+  "venueNull": true,
+  "eventNull": true,
+  "occasionNull": true,
+  "audienceNull": true,
+  "sourceNote": "The scan does not establish a single speech date, venue, event, occasion, or audience as bibliographic metadata. Internal historical dates, meetings, places, and event references in the prose are not promoted into these fields without explicit source evidence.",
+  "documentTypeNote": "The title page does not explicitly label the work as பேச்சு. The supplied booklet contains seven separately titled sections and is archived here as one source unit without inferring a single original speech event.",
+  "printerUnresolvedNote": "On PDF page 3 the printer line begins அச்சிட்டது:. A later library stamp obscures part of the printer name. The visible ending includes (பவர்) and அச்சகம், திருவாரூர். The obscured wording is intentionally unresolved rather than reconstructed.",
+  "note": "A printed public booklet with NO source-established single speech date, venue, event, occasion or audience — all five stay null. Internal historical dates/places/events in the prose are NOT promoted into these bibliographic fields, and the publication/edition year is never substituted for a speech date. Component boundaries are preserved; no per-component date or venue is manufactured."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "The booklet's own publisher/edition/printer data is a source/edition fact, distinct from the present rights of Kalaignar's underlying speech.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned booklet; it is NOT vendored. Its identity travels as filename + SHA-256 + size + page map.",
+  "Tamil is the frozen verified-complete source transcription; English is the verified-complete faithful reading translation made only from that Tamil. Neither is edited, modernised or normalised during import.",
+  "Only the canonical assembled transcript/translation layer is read; audit, progress, handover and batch logs are never parsed as literary text."
+ ]
+}
