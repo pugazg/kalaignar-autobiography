@@ -18,6 +18,17 @@ export default function PlayLanding({ play }: { play: Play }) {
   const first = play.readingUnits[0];
   const continuous = play.structureKind === "continuous-play";
   const sru = play.structureKind === "editorial-sru-sequence";
+  // A scene sequence is MIXED only when the released registry actually carries a compressed range or
+  // an unnumbered scene — derived from the data model, never asserted by slug. An ordinary scene-only
+  // work (and a numbered-scenes-plus-closing-tableau work) must NOT inherit the mixed-structure copy.
+  const mixedSceneStructure = play.readingUnits.some((u) => u.kind === "compressed-scene-range" || u.kind === "unnumbered-scene");
+  const fmtRange = (nums: number[]) => {
+    const s = [...nums].sort((a, b) => a - b);
+    return s.length > 1 && s.every((n, i) => i === 0 || n === s[i - 1] + 1) ? `${s[0]}–${s[s.length - 1]}` : s.join(", ");
+  };
+  const numberedCount = play.readingUnits.filter((u) => u.kind === "scene").length;
+  const compressedRanges = play.readingUnits.filter((u) => u.kind === "compressed-scene-range").map((u) => fmtRange(u.sceneRange ?? []));
+  const unnumberedCount = play.readingUnits.filter((u) => u.kind === "unnumbered-scene").length;
 
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
@@ -100,7 +111,14 @@ export default function PlayLanding({ play }: { play: Play }) {
               ? ta ? "தொடர் நாடகப் பகுதி" : "Continuous dramatic text"
               : sru
                 ? ta ? `மூல அமைப்பு அலகுகள் — ${play.readingUnits.length}` : `Source-representation units — ${play.readingUnits.length}`
-                : ta ? `காட்சிகள் — ${play.readingUnits.length}` : `Scenes — ${play.readingUnits.length}`}
+                : mixedSceneStructure
+                  // A mixed work's reading units are NOT all individually numbered scenes, so count
+                  // reading units, not scenes.
+                  ? ta ? `வாசிப்பு அலகுகள் — ${play.readingUnits.length}` : `Reading units — ${play.readingUnits.length}`
+                  // Ordinary scene-only work, and the numbered-scenes-plus-closing-tableau precedent:
+                  // count the source-numbered scenes (never readingUnits.length, which would add the
+                  // separate closing tableau).
+                  : ta ? `காட்சிகள் — ${play.sceneCount}` : `Scenes — ${play.sceneCount}`}
           </h2>
           <p className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : "en"}>
             {continuous
@@ -111,13 +129,21 @@ export default function PlayLanding({ play }: { play: Play }) {
                 ? ta
                   ? `இந்நூலின் மூலம் காட்சி எண்களையோ அங்கங்களையோ அச்சிடவில்லை. இழப்பின்றித் தொகுக்க ${play.readingUnits.length} தொகுப்பு அலகுகள் (SRU) மூல அமைப்பின்படி வரையறுக்கப்பட்டுள்ளன; அவை வழிசெலுத்தலுக்கானவை, காட்சி எண்கள் அல்ல.`
                   : `The source prints no scene numbers or acts. For lossless assembly it is divided into ${play.readingUnits.length} editorial source-representation units (SRUs) defined by the source's own transitions — navigation, not scene numbers.`
-                : play.closingTableauCount > 0
+                : mixedSceneStructure
+                  // MIXED scene sequence — built from the actual reading-unit kinds, never asserted
+                  // for every scene-sequence play. (Kagithapoo: 21 numbered scenes + one compressed
+                  // Scenes 2–5 block + one unnumbered scene.)
                   ? ta
-                    ? `இந்நூல் ${play.sceneCount} எண்ணிடப்பட்ட காட்சிகளையும், அதன்பின் எண்ணிடப்படாத ஒரு நிறைவுக் காட்சியையும் கொண்டது. அந்நிறைவுக் காட்சி காட்சி-39 அல்ல.`
-                    : `The edition prints ${play.sceneCount} numbered scenes, followed by one unnumbered closing tableau. That tableau is not Scene 39.`
-                  : ta
-                    ? `இந்நூலில் மூலம் அச்சிட்ட காட்சிகள்; சில இடங்களில் மூலம் காட்சிகளைத் தொகுத்தோ (எ.கா. 2–5) எண்ணின்றியோ அச்சிட்டுள்ளது — அவ்வாறே பிரதிபலிக்கப்பட்டுள்ளது.`
-                    : `The scenes the edition itself prints; where the source compresses scenes (e.g. 2–5) or heads one without a number, that is mirrored exactly — no scene is invented.`}
+                    ? `இந்நூலின் மூலம் கலப்பு அமைப்பை அச்சிடுகிறது: ${numberedCount} தனித்தனி எண்ணிடப்பட்ட காட்சிகள்${compressedRanges.map((r) => `, மூலம் தொகுத்த காட்சிகள் ${r} ஒரே அலகாக`).join("")}${unnumberedCount > 0 ? `, மேலும் எண்ணிடப்படாத ${unnumberedCount === 1 ? "ஒரு காட்சி" : `${unnumberedCount} காட்சிகள்`}` : ""}. மூலம் அச்சிட்டபடியே — எதுவும் மீட்டமைக்கப்படவில்லை, மறு எண்ணிடப்படவில்லை.`
+                    : `The edition prints a mixed structure: ${numberedCount} individually numbered scenes${compressedRanges.map((r) => `, one source-compressed Scenes ${r} block`).join("")}${unnumberedCount > 0 ? `, and ${unnumberedCount === 1 ? "one unnumbered scene" : `${unnumberedCount} unnumbered scenes`}` : ""}. That is exactly what the source prints — nothing is reconstructed or renumbered.`
+                  : play.closingTableauCount > 0
+                    ? ta
+                      ? `இந்நூல் ${play.sceneCount} எண்ணிடப்பட்ட காட்சிகளையும், அதன்பின் எண்ணிடப்படாத ஒரு நிறைவுக் காட்சியையும் கொண்டது. அந்நிறைவுக் காட்சி காட்சி-39 அல்ல.`
+                      : `The edition prints ${play.sceneCount} numbered scenes, followed by one unnumbered closing tableau. That tableau is not Scene 39.`
+                    // ORDINARY scene-only work — plain source-numbered scenes, no compression/unnumbered claim.
+                    : ta
+                      ? `இந்தப் பதிப்பு ${play.sceneCount} மூலம் எண்ணிடப்பட்ட காட்சிகளை அச்சிடுகிறது.`
+                      : `The edition prints ${play.sceneCount} source-numbered scenes.`}
           </p>
           {/* Printed pre-dramatic material is announced here, but it is NOT a list entry: it has no
               route, no number, and is never counted among the scenes. It reads at the head of the

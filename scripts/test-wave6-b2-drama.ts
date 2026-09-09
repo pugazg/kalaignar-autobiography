@@ -19,6 +19,7 @@ import PlayLanding from "../components/PlayLanding";
 import PlayReader from "../components/PlayReader";
 import PlaySource from "../components/PlaySource";
 import type { Play, PlayProvenance } from "../data/plays";
+import { PLAY_SLUGS } from "../data/plays";
 import { WAVE6_DRAMA_SLUGS, wave6DramaSceneSlugs } from "../lib/drama-wave6-routes";
 import { playLandingDescription, playSceneDescription } from "../lib/play-metadata";
 import sitemap from "../app/sitemap";
@@ -189,6 +190,54 @@ for (const slug of WAVE6_DRAMA_SLUGS) {
   // Provenance / Source retains the same qualification.
   ok(prov.notes.some((n) => /user-supplied catalogue metadata at intake/i.test(n) && /does not itself print an author line/i.test(n)), "kagithapoo source/provenance retains the authorship qualification");
   ok(play.authorAttribution?.printedInSelectedSourceRange === false, "kagithapoo authorAttribution: selected source range does not print the author line");
+}
+
+// ── 3d. SHARED PlayLanding STRUCTURAL EXPLANATION (must respond to the data model) ─
+// These exercise the RENDERED PlayLanding, separate from the metadata-helper test above.
+const landingHtml = (slug: string) => ({
+  taHtml: ta(createElement(PlayLanding, { play: load(slug).play })),
+  enHtml: en(createElement(PlayLanding, { play: load(slug).play })),
+});
+{
+  // Manimagudam — ordinary scene-only: 47 source-numbered scenes, NO compression/unnumbered copy.
+  const { enHtml, taHtml } = landingHtml("manimagudam");
+  ok(/47/.test(enHtml) && /The edition prints 47 source-numbered scenes/.test(enHtml), "manimagudam rendered landing: ordinary 47 source-numbered scenes");
+  ok(/Scenes — 47/.test(enHtml), "manimagudam rendered landing heading is 'Scenes — 47'");
+  ok(!/Scenes 2–5/.test(enHtml) && !/2–5/.test(enHtml), "manimagudam rendered landing has no 'Scenes 2–5' / '2–5'");
+  ok(!/unnumbered scene/.test(enHtml), "manimagudam rendered landing has no 'unnumbered scene'");
+  ok(!/compress/i.test(enHtml), "manimagudam rendered landing does not claim the source compresses scenes");
+  ok(!/2–5/.test(taHtml) && !/எண்ணிடப்படாத/.test(taHtml) && !/தொகுத்த காட்சிகள்/.test(taHtml), "manimagudam Tamil landing claims no compression / unnumbered scene");
+}
+{
+  // Kagithapoo — mixed: heading 'Reading units — 23', compressed + unnumbered wording, authorship qualification.
+  const { enHtml, taHtml } = landingHtml("kagithapoo");
+  ok(/Reading units — 23/.test(enHtml), "kagithapoo rendered landing heading is 'Reading units — 23' (not 'Scenes — 23')");
+  ok(!/Scenes — 23/.test(enHtml), "kagithapoo rendered landing heading is NOT 'Scenes — 23'");
+  ok(/source-compressed Scenes 2–5 block/.test(enHtml), "kagithapoo rendered landing states the compressed Scenes 2–5 block");
+  ok(/one unnumbered scene/.test(enHtml), "kagithapoo rendered landing states the unnumbered scene");
+  ok(!/\bScene 22\b|\bScene 23\b/.test(enHtml.replace(/not Scene 22\/23/g, "")), "kagithapoo rendered landing invents no Scene 22/23");
+  ok(/user-supplied catalogue metadata/i.test(enHtml) && /does not itself print an author line/i.test(enHtml), "kagithapoo rendered landing keeps the authorship qualification");
+  ok(/வாசிப்பு அலகுகள் — 23/.test(taHtml), "kagithapoo Tamil landing heading is 'வாசிப்பு அலகுகள் — 23'");
+}
+{
+  // Thiruvalar — SRU heading unchanged.
+  const { enHtml } = landingHtml("thiruvalar-desiyampillai");
+  ok(/Source-representation units — 7/.test(enHtml) && !/\b0 scenes\b/.test(enHtml), "thiruvalar rendered landing: 7 SRUs, never '0 scenes'");
+}
+// Regression-protect ALL FIVE existing discovered Drama plays: none may inherit Kagithapoo-specific
+// mixed-structure copy unless its OWN registry carries a compressed range / unnumbered scene.
+for (const slug of PLAY_SLUGS) {
+  const play = load(slug).play;
+  const isMixed = play.readingUnits.some((u) => u.kind === "compressed-scene-range" || u.kind === "unnumbered-scene");
+  const { enHtml } = landingHtml(slug);
+  if (!isMixed) {
+    ok(!/Scenes 2–5/.test(enHtml), `existing play ${slug}: rendered landing has no 'Scenes 2–5'`);
+    ok(!/compress/i.test(enHtml), `existing play ${slug}: rendered landing does not claim source compression`);
+    ok(!/unnumbered scene/.test(enHtml), `existing play ${slug}: rendered landing has no 'unnumbered scene'`);
+  }
+  // Established special-case wordings must survive.
+  if (play.structureKind === "continuous-play") ok(/Continuous dramatic text/.test(enHtml), `${slug}: continuous-play wording retained`);
+  if (play.closingTableauCount > 0) ok(new RegExp(`Scenes — ${play.sceneCount}\\b`).test(enHtml) && /closing tableau/.test(enHtml), `${slug}: closing-tableau wording + 'Scenes — ${play.sceneCount}' retained`);
 }
 
 // ── 4. BUILD BOUNDARY (only if a production build tree is present) ───────────────
