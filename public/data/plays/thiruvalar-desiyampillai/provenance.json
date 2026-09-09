@@ -46,7 +46,38 @@
   "speakerNote": "Speaker labels are rendered EXACTLY as printed, including inconsistent abbreviations. They are source data and are never expanded or unified.",
   "unlabelledNote": "Dialogue units with `speakerAsPrinted: null` are places where the edition prints no label. Absence of a label is recorded as absence, never resolved into an attribution.",
   "sourceRepresentationUnits": 7,
-  "sourceConditionHolds": 5
+  "bodySourceConditionHolds": 5
+ },
+ "pageLayerQualification": {
+  "physicalScans": 49,
+  "processedPageRecords": 49,
+  "verifiedPageRecords": 40,
+  "needsReviewPageRecords": 9,
+  "needsReviewScans": [
+   1,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   35,
+   36
+  ],
+  "frontMatterHoldScans": [
+   1,
+   3,
+   4,
+   5
+  ],
+  "dramaticBodyHoldScans": [
+   7,
+   8,
+   9,
+   35,
+   36
+  ],
+  "unresolvedVisualClusters": 3
  },
  "sourceConditionHolds": [
   {

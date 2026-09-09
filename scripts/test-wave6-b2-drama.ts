@@ -20,6 +20,7 @@ import PlayReader from "../components/PlayReader";
 import PlaySource from "../components/PlaySource";
 import type { Play, PlayProvenance } from "../data/plays";
 import { WAVE6_DRAMA_SLUGS, wave6DramaSceneSlugs } from "../lib/drama-wave6-routes";
+import { playLandingDescription, playSceneDescription } from "../lib/play-metadata";
 import sitemap from "../app/sitemap";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
@@ -118,6 +119,76 @@ eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
   const srcEn = en(createElement(PlaySource, { play, prov }));
   ok(/Documented source-condition holds/i.test(srcEn), "thiruvalar source shows the documented-holds card");
   ok(/1965/.test(en(createElement(PlayLanding, { play }))), "thiruvalar landing shows the 2nd-edition/1965 witness");
+}
+
+// ── 3b. STRUCTURE-AWARE NEXT.JS METADATA (the exact helper the pages call) ───────
+{
+  // காகிதப்பூ landing — must state the real mixed structure, never merely "21 scenes".
+  const { play } = load("kagithapoo");
+  const landing = playLandingDescription(play);
+  ok(/source-compressed Scenes 2–5 block/.test(landing), "kagithapoo landing metadata mentions the compressed Scenes 2–5 block");
+  ok(/unnumbered scene/.test(landing), "kagithapoo landing metadata mentions the unnumbered scene");
+  ok(/23 source-visible dramatic reading units/.test(landing), "kagithapoo landing metadata states 23 source-visible reading units");
+  ok(!/^A One-Act Play by .* — 21 scenes/.test(landing) && !/\b21 scenes\b/.test(landing), "kagithapoo landing metadata does NOT reduce the work to '21 scenes'");
+  // Authorship must be qualified — no unqualified "by Kalaignar M. Karunanidhi".
+  ok(!/by Kalaignar M\. Karunanidhi/.test(landing), "kagithapoo landing metadata does NOT use the unqualified 'by Kalaignar M. Karunanidhi'");
+  ok(/Catalogue attribution to Kalaignar M\. Karunanidhi is user-supplied/.test(landing) && /does not itself print an author line/.test(landing), "kagithapoo landing metadata qualifies authorship as user-supplied catalogue");
+
+  // காகிதப்பூ compressed child — source-compressed 2–5, no "Scene null", no invented Scene 2.
+  const comp = play.readingUnits.find((u) => u.kind === "compressed-scene-range")!;
+  const compMeta = playSceneDescription(play, comp);
+  ok(/Source-compressed Scenes 2–5, preserved as one reading unit/.test(compMeta), "kagithapoo compressed child metadata says source-compressed 2–5, one reading unit");
+  ok(!/Scene null/.test(compMeta) && !/Scene 2 of/.test(compMeta), "kagithapoo compressed child metadata never says 'Scene null' or 'Scene 2 of …'");
+
+  // காகிதப்பூ unnumbered child — unnumbered, no 22/23 assignment, no "Scene null".
+  const un = play.readingUnits.find((u) => u.kind === "unnumbered-scene")!;
+  const unMeta = playSceneDescription(play, un);
+  ok(/unnumbered scene between Scene 21 and Scene 24/.test(unMeta), "kagithapoo unnumbered child metadata locates it between Scene 21 and Scene 24");
+  ok(/no Scene 22 or 23 number is assigned/.test(unMeta), "kagithapoo unnumbered child metadata states no Scene 22/23 assignment");
+  ok(!/Scene null/.test(unMeta), "kagithapoo unnumbered child metadata never says 'Scene null'");
+
+  // காகிதப்பூ ordinary source-numbered scene — mixed work, prefer 'Source-numbered Scene N'.
+  const sc1 = play.readingUnits.find((u) => u.kind === "scene" && u.order === 1)!;
+  ok(/Source-numbered Scene 1/.test(playSceneDescription(play, sc1)) && !/Scene 1 of 21/.test(playSceneDescription(play, sc1)), "kagithapoo numbered child metadata says 'Source-numbered Scene 1', not 'Scene 1 of 21'");
+}
+{
+  // மணிமகுடம் — 47 source-numbered scenes; child Scene 1 of 47.
+  const { play } = load("manimagudam");
+  ok(/47 source-numbered scenes/.test(playLandingDescription(play)), "manimagudam landing metadata states 47 source-numbered scenes");
+  ok(/Scene 1 of 47/.test(playSceneDescription(play, play.readingUnits[0])), "manimagudam Scene 1 child metadata says 'Scene 1 of 47'");
+}
+{
+  // திருவாளர் — 7 editorial SRUs; never "0 scenes", never "Scene null", never "Scene 1".
+  const { play } = load("thiruvalar-desiyampillai");
+  const landing = playLandingDescription(play);
+  ok(/7 editorial source-representation units/.test(landing), "thiruvalar landing metadata states 7 editorial source-representation units");
+  ok(/the source prints no scene numbers or acts/.test(landing), "thiruvalar landing metadata says the source prints no scene numbers or acts");
+  ok(!/\b0 scenes\b/.test(landing), "thiruvalar landing metadata never says '0 scenes'");
+  const sruMeta = playSceneDescription(play, play.readingUnits[0]);
+  ok(/Source-representation unit 1 of 7 — editorial navigation, not a source scene number/.test(sruMeta), "thiruvalar SRU child metadata says 'Source-representation unit 1 of 7', not a scene");
+  ok(!/Scene null/.test(sruMeta) && !/\bScene 1\b/.test(sruMeta) && !/Scene 1 of 0/.test(sruMeta), "thiruvalar SRU child metadata never says 'Scene null' / 'Scene 1' / 'Scene 1 of 0'");
+}
+// Global: no Wave-6 Drama child metadata ever emits "Scene null" or "Scene N of 0".
+for (const slug of WAVE6_DRAMA_SLUGS) {
+  const { play } = load(slug);
+  for (const u of play.readingUnits) {
+    const m = playSceneDescription(play, u);
+    ok(!/Scene null/.test(m), `${slug}/${u.slug} metadata has no 'Scene null'`);
+    ok(!/Scene \d+ of 0\b/.test(m), `${slug}/${u.slug} metadata has no 'Scene N of 0'`);
+  }
+}
+
+// ── 3c. AUTHORSHIP-BOUNDARY (rendered landing + source) ──────────────────────────
+{
+  const { play, prov } = load("kagithapoo");
+  const landingTa = ta(createElement(PlayLanding, { play }));
+  const landingEn = en(createElement(PlayLanding, { play }));
+  ok(/கலைஞர் மு\. கருணாநிதி/.test(landingTa), "kagithapoo landing renders the attribution");
+  ok(/பயனர் வழங்கிய பட்டியல் தகவல்/.test(landingTa), "kagithapoo landing labels the attribution user-supplied catalogue (TA)");
+  ok(/user-supplied catalogue metadata/i.test(landingEn) && /does not itself print an author line/i.test(landingEn), "kagithapoo landing labels the attribution user-supplied and notes no printed author line (EN)");
+  // Provenance / Source retains the same qualification.
+  ok(prov.notes.some((n) => /user-supplied catalogue metadata at intake/i.test(n) && /does not itself print an author line/i.test(n)), "kagithapoo source/provenance retains the authorship qualification");
+  ok(play.authorAttribution?.printedInSelectedSourceRange === false, "kagithapoo authorAttribution: selected source range does not print the author line");
 }
 
 // ── 4. BUILD BOUNDARY (only if a production build tree is present) ───────────────

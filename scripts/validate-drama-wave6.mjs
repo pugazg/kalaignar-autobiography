@@ -36,7 +36,7 @@ const WORKS = {
   kagithapoo: {
     subtree: "ac924511710eb07df1dac748f3718505b4465714",
     scanSha: "b0a6499ba072a7346f8c2544a8a61c2363d83a60cad5227482008043cd310ec1",
-    playSha: "fbb3d5f6c59d3332aa97c7859fa3b3f696f0211d66570d5914e32cbfaf8755cf",
+    playSha: "1c0e1ace5a33be990b844360c1e495a266aa22620adbe3c60d32a8dfb341f3a3",
     provSha: "637318aa581d41dc67890343574e4a0ce2c910772ec20be3a37f358b3b49b8c7",
     titleFrom: "first-heading", structureKind: "scene-sequence", readingUnits: 23,
   },
@@ -51,7 +51,7 @@ const WORKS = {
     subtree: "368cd37e6469b6ea94099cff7c065dfd293935af",
     scanSha: "b336bbebb326803badecbaa93de4ca4d63d80f68137fe70673b07a884c4910eb",
     playSha: "9d791c755448405e6b3042bc29b53bd49a465ac0d7a3fe0cbaea7465594261da",
-    provSha: "c044afb079778186add944d9228048c1629952ac698a3dab6694607675e41339",
+    provSha: "d41c1347b8d2926d841ecc2d8221b8b72fa6366bf0cc06a6a003828a118108bf",
     titleFrom: "editorial-label", structureKind: "editorial-sru-sequence", readingUnits: 7,
   },
 };
@@ -154,6 +154,12 @@ const loadProv = (slug) => JSON.parse(fs.readFileSync(path.join(root, "public/da
   const lastTa = p.readingUnits[p.readingUnits.length - 1].tamil.units.map((u) => u.text).join("\n");
   ok(/முற்றும்/.test(lastTa), "kagithapoo carries the printed `(முற்றும்)` closure the source prints on scan 131");
   ok(pr.notes.some((n) => /author attribution is user-supplied/i.test(n)), "kagithapoo records author attribution as user-supplied (not promoted)");
+  // Structured authorship-evidence qualification: the selected source range prints no author line.
+  const aa = p.authorAttribution;
+  ok(!!aa, "kagithapoo carries a structured authorAttribution");
+  eq(aa?.basis, "user-supplied-catalogue", "kagithapoo authorAttribution.basis is user-supplied-catalogue");
+  eq(aa?.printedInSelectedSourceRange, false, "kagithapoo authorAttribution: the selected source range does not print an author line");
+  eq(aa?.attribution, p.author.en, "kagithapoo authorAttribution.attribution == the attributed author");
 }
 
 // மணிமகுடம்
@@ -186,9 +192,49 @@ const loadProv = (slug) => JSON.parse(fs.readFileSync(path.join(root, "public/da
   ok(!p.readingUnits.flatMap((u) => u.tamil.units).some((u) => isClosure(u.text)), "thiruvalar carries NO invented `முற்றும்` closure");
   const sru7 = p.readingUnits.find((u) => u.slug === "sru-07-udayasuriyan-kolam-close");
   ok(!!sru7 && sru7.tamil.units.some((u) => u.kind === "heading" && u.text.trim() === "உதயசூரியன் கோலம்"), "thiruvalar preserves the scan-47 `உதயசூரியன் கோலம்` intertitle inside SRU-07 (never a scene title)");
-  ok((pr.sourceConditionHolds ?? []).length === 5, "thiruvalar records its 5 documented source-condition holds");
+  ok((pr.sourceConditionHolds ?? []).length === 5, "thiruvalar records its 5 documented DRAMATIC-BODY source-condition holds");
   ok(!!pr.source.sruStructureNote && !!pr.source.intertitleNote && !!pr.source.printedClosureNote, "thiruvalar provenance records the SRU / intertitle / no-முற்றும் safeguards");
   ok(!!p.edition.editionStatementTa && /1965/.test(p.edition.editionStatementTa), "thiruvalar carries the printed 2nd-edition/1965 statement as a witness");
+
+  // ── PAGE-LAYER QUALIFICATION, independently derived from the frozen audit ─────────────────────
+  // The whole point of this block is that the WORK-LEVEL 9 needs-review page records are never
+  // collapsed to the 5 dramatic-body holds. Everything below is re-derived from the audit Markdown,
+  // then the generated provenance is required to reproduce it exactly.
+  const audit = fs.readFileSync(path.join(SRC_REPO, "works/thiruvalar-desiyampillai/PAGE_LAYER_COMPLETION_AUDIT.md"), "utf8");
+  const num = (re, l) => { const m = re.exec(audit); ok(!!m, `audit records: ${l}`); return m ? Number(m[1]) : NaN; };
+  const scanList = (re, l) => { const m = re.exec(audit); ok(!!m, `audit records: ${l}`); return m ? m[1].split(",").map((x) => Number(x.trim())).filter((x) => Number.isInteger(x)) : []; };
+  const auditPhysical = num(/physical scans registered:\s*\*\*(\d+)\s*\/\s*\d+\*\*/, "physical scans registered");
+  const auditProcessed = num(/direct source processing complete:\s*\*\*(\d+)\s*\/\s*\d+\*\*/, "49/49 processed");
+  const auditVerified = num(/visually verified page records:\s*\*\*(\d+)\s*\/\s*\d+\*\*/, "verified page records");
+  const auditNeedsReview = num(/`needs-review`:\s*\*\*(\d+)\s*\/\s*\d+\*\*/, "needs-review count");
+  const auditNeedsScans = scanList(/`needs-review`:\s*\*\*\d+\s*\/\s*\d+\*\*\s*\(`([0-9,\s]+)`\)/, "the 9 needs-review scans");
+  const auditClusters = num(/unresolved visual\/source clusters:\s*\*\*(\d+)\*\*/, "unresolved visual clusters");
+  const auditFrontMatter = scanList(/### Front-matter physical-source holds\s*\n\s*\nScans\s*\*\*([0-9,\s]+)\*\*/, "front-matter hold scans");
+  // Independently: the audit says 49/49 processed, 40/49 verified, 9/49 needs-review, 3 clusters,
+  // front-matter holds 1,3,4,5 — and the body holds are the needs-review scans that are NOT front-matter.
+  eq(auditPhysical, 49, "audit: 49 physical scans");
+  eq(auditProcessed, 49, "audit: 49 / 49 PROCESSED");
+  eq(auditVerified, 40, "audit: 40 / 49 verified");
+  eq(auditNeedsReview, 9, "audit: 9 / 49 needs-review");
+  eq(auditNeedsScans, [1, 3, 4, 5, 7, 8, 9, 35, 36], "audit: the exact 9 needs-review scans");
+  eq(auditFrontMatter, [1, 3, 4, 5], "audit: the exact 4 front-matter hold scans");
+  eq(auditClusters, 3, "audit: 3 unresolved visual clusters");
+  const auditBodyHolds = auditNeedsScans.filter((s) => !auditFrontMatter.includes(s));
+  eq(auditBodyHolds, [7, 8, 9, 35, 36], "audit: the exact 5 dramatic-body hold scans (needs-review minus front-matter)");
+  // Now the generated provenance must reproduce that qualification EXACTLY.
+  const q = pr.pageLayerQualification;
+  ok(!!q, "thiruvalar provenance carries the pageLayerQualification");
+  eq(q?.physicalScans, auditPhysical, "provenance physicalScans == audit");
+  eq(q?.processedPageRecords, auditProcessed, "provenance processedPageRecords == audit (49)");
+  eq(q?.verifiedPageRecords, auditVerified, "provenance verifiedPageRecords == audit (40)");
+  eq(q?.needsReviewPageRecords, auditNeedsReview, "provenance needsReviewPageRecords == audit (9) — NOT the 5 body holds");
+  eq([...(q?.needsReviewScans ?? [])].sort((a, b) => a - b), auditNeedsScans, "provenance needsReviewScans == audit");
+  eq([...(q?.frontMatterHoldScans ?? [])].sort((a, b) => a - b), auditFrontMatter, "provenance frontMatterHoldScans == audit (4)");
+  eq([...(q?.dramaticBodyHoldScans ?? [])].sort((a, b) => a - b), auditBodyHolds, "provenance dramaticBodyHoldScans == audit (5)");
+  eq(q?.unresolvedVisualClusters, auditClusters, "provenance unresolvedVisualClusters == audit (3)");
+  // The archive-derived count is the BODY holds only (5), explicitly not the 9 page records.
+  eq(pr.archiveDerived.bodySourceConditionHolds, 5, "archiveDerived.bodySourceConditionHolds == 5 (renamed; not the 9 page-layer records)");
+  ok(q && q.needsReviewPageRecords !== q.dramaticBodyHoldScans.length, "9 page-level review holds are NOT collapsed to the 5 body-hold scans");
 }
 
 if (failures.length) {

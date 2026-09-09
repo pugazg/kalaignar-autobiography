@@ -240,6 +240,21 @@ export type PlayStructureKind =
    */
   | "editorial-sru-sequence";
 
+/**
+ * How the work's authorship is EVIDENCED. Present only where the basis needs qualifying — a work
+ * whose author line is NOT printed in the selected source range (காகிதப்பூ), so the attribution is
+ * user-supplied catalogue metadata rather than a source-printed fact. Absent where the scan itself
+ * prints the author (the reader may then present authorship without a caveat).
+ */
+export type PlayAuthorAttribution = {
+  /** The attributed author, exactly as carried. */
+  attribution: string;
+  /** e.g. "user-supplied-catalogue" — never overstated as source-verified. */
+  basis: string;
+  /** Whether the SELECTED source range itself prints an author line. */
+  printedInSelectedSourceRange: boolean;
+};
+
 export type Play = {
   workId: string;
   slug: string;
@@ -247,6 +262,12 @@ export type Play = {
   /** The source's own descriptor for the work's form. */
   descriptor: { ta: string; en: string };
   author: { ta: string; en: string };
+  /**
+   * Authorship-evidence qualification, present only where the selected source range does not itself
+   * print an author line (காகிதப்பூ). The reader and metadata must not present a user-supplied
+   * catalogue attribution as if it were source-verified.
+   */
+  authorAttribution?: PlayAuthorAttribution;
   /**
    * Edition facts, each present ONLY where the scan prints one. A composite volume prints its
    * publisher, place and price once in shared front matter and prints no year at all, so `year`
@@ -348,6 +369,24 @@ export type PlayProvenance = {
    * carried verbatim in the reading text and never reconstructed. Present only for a qualified work.
    */
   sourceConditionHolds?: { scan: number; unit: string; marker: string; policy: string }[];
+  /**
+   * The controlling page-layer audit's WORK-LEVEL coverage qualification, carried verbatim from the
+   * frozen `PAGE_LAYER_COMPLETION_AUDIT.md`. It is deliberately kept distinct from the body-level
+   * `sourceConditionHolds` list above: `needsReviewPageRecords` (9) counts every page record left
+   * `needs-review`, of which `frontMatterHoldScans` (4) do NOT affect dramatic assembly and
+   * `dramaticBodyHoldScans` (5) do — so 9 page-level review holds must never be collapsed to the 5
+   * body holds. Present only for a work carrying this qualification (திருவாளர் தேசீயம்பிள்ளை).
+   */
+  pageLayerQualification?: {
+    physicalScans: number;
+    processedPageRecords: number;
+    verifiedPageRecords: number;
+    needsReviewPageRecords: number;
+    needsReviewScans: number[];
+    frontMatterHoldScans: number[];
+    dramaticBodyHoldScans: number[];
+    unresolvedVisualClusters: number;
+  };
   english: {
     kind: "project-created";
     status: string;
@@ -370,8 +409,13 @@ export type PlayProvenance = {
     unnumberedScenes?: number;
     /** Printed headings carried inside the reading body (settings, work-title lines, intertitles). */
     inBodyHeadings?: number;
-    /** Documented physical source-condition holds carried verbatim (paper loss / unresolved clusters). */
-    sourceConditionHolds?: number;
+    /**
+     * Count of DRAMATIC-BODY source-condition holds carried verbatim (paper loss / unresolved
+     * clusters). Deliberately NOT the count of all page-layer `needs-review` records — see
+     * `pageLayerQualification.needsReviewPageRecords`, which is larger because it also counts
+     * front-matter holds that do not affect dramatic assembly.
+     */
+    bodySourceConditionHolds?: number;
     tamilUnits: number;
     englishUnits: number;
     tamilDialogue: number;

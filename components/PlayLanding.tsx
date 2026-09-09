@@ -32,7 +32,17 @@ export default function PlayLanding({ play }: { play: Play }) {
         <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">
           {play.title.en} — {play.descriptor.en}
         </p>
-        <p className="mt-3 font-tamil text-sm text-ink/70 dark:text-night-text/70" lang="ta">{play.author.ta}</p>
+        {play.authorAttribution && play.authorAttribution.basis === "user-supplied-catalogue" ? (
+          // The selected source range prints no author line — never present a user-supplied catalogue
+          // attribution as if it were source-verified.
+          <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+            {ta
+              ? `ஆசிரியர் — ${play.author.ta} (பயனர் வழங்கிய பட்டியல் தகவல்; தேர்ந்தெடுக்கப்பட்ட மூலப்பகுதியில் ஆசிரியர் வரி அச்சிடப்படவில்லை)`
+              : `Author attribution: ${play.author.en} — user-supplied catalogue metadata; the selected source range does not itself print an author line.`}
+          </p>
+        ) : (
+          <p className="mt-3 font-tamil text-sm text-ink/70 dark:text-night-text/70" lang="ta">{play.author.ta}</p>
+        )}
 
         <dl className="mt-6 space-y-1.5 text-sm">
           {/* A composite volume prints its collection title once, in shared front matter. Naming it

@@ -140,6 +140,18 @@ const WORKS = [
     expect: { readingUnits: 7, numberedScenes: 0, sourceRepresentationUnits: 7 },
     intertitleTa: "உதயசூரியன் கோலம்",
     printedClosure: "The source closes on scan 48 with NO printed `முற்றும்` marker; none is added.",
+    // The controlling PAGE_LAYER_COMPLETION_AUDIT.md work-level qualification, carried verbatim. The 9
+    // needs-review page records (4 front-matter + 5 body) must never be collapsed to the 5 body holds.
+    pageLayerQualification: {
+      physicalScans: 49,
+      processedPageRecords: 49,
+      verifiedPageRecords: 40,
+      needsReviewPageRecords: 9,
+      needsReviewScans: [1, 3, 4, 5, 7, 8, 9, 35, 36],
+      frontMatterHoldScans: [1, 3, 4, 5],
+      dramaticBodyHoldScans: [7, 8, 9, 35, 36],
+      unresolvedVisualClusters: 3,
+    },
     sourceConditionHolds: [
       { scan: 7, unit: "sru-01-yama-court", marker: "[paper loss]", policy: "front/opening paper-loss covered characters are carried as `[paper loss]` verbatim and never reconstructed." },
       { scan: 8, unit: "sru-01-yama-court", marker: "[paper loss]", policy: "paper-loss carried verbatim; scan-9's first `எங்கே ஜனநாயக…` is NOT completed from the later intact line." },
@@ -360,6 +372,10 @@ function buildWork(cfg) {
   const play = {
     workId: cfg.slug, slug: cfg.slug,
     title: cfg.title, descriptor: cfg.descriptor, author: cfg.author,
+    // Authorship-evidence qualification, only where the selected source range prints no author line.
+    ...(cfg.authorAttribution === "user-supplied-at-intake"
+      ? { authorAttribution: { attribution: cfg.author.en, basis: "user-supplied-catalogue", printedInSelectedSourceRange: false } }
+      : {}),
     edition: { ...cfg.edition, year: null },
     sourceRepo: "pugazg/kalaignar-stage-plays", sourcePath: `works/${cfg.slug}`, sourceCommit: SRC_COMMIT,
     structureKind: cfg.structureKind,
@@ -393,7 +409,7 @@ function buildWork(cfg) {
   if (cfg.expect.sourceRepresentationUnits) d.sourceRepresentationUnits = readingUnits.filter((u) => u.kind === "source-representation-unit").length;
   if (cfg.expect.compressedRanges) d.compressedSceneRanges = readingUnits.filter((u) => u.kind === "compressed-scene-range").length;
   if (cfg.expect.unnumberedBareCaatchi) d.unnumberedScenes = readingUnits.filter((u) => u.kind === "unnumbered-scene").length;
-  if (cfg.sourceConditionHolds) d.sourceConditionHolds = cfg.sourceConditionHolds.length;
+  if (cfg.sourceConditionHolds) d.bodySourceConditionHolds = cfg.sourceConditionHolds.length;
 
   const provenance = {
     sourceRepo: play.sourceRepo, sourcePath: play.sourcePath, sourceCommit: SRC_COMMIT,
@@ -423,6 +439,7 @@ function buildWork(cfg) {
     archiveDerived: d,
     ...(cfg.performanceWitnesses ? { performanceWitnesses: cfg.performanceWitnesses } : {}),
     ...(cfg.userSuppliedContext ? { userSuppliedContext: cfg.userSuppliedContext } : {}),
+    ...(cfg.pageLayerQualification ? { pageLayerQualification: cfg.pageLayerQualification } : {}),
     ...(cfg.sourceConditionHolds ? { sourceConditionHolds: cfg.sourceConditionHolds } : {}),
     lockedExclusions: [
       "the assembled layer's archival apparatus — assembly notes/provenance and per-scene review files",
@@ -457,7 +474,7 @@ function buildWork(cfg) {
   const sha = (f) => execFileSync("shasum", ["-a", "256", path.join(OUT, f)], { encoding: "utf8" }).split(" ")[0];
   console.log(`\n${cfg.slug}: ${play.readingUnits.length} reading units (${d.scenes} numbered${d.sourceRepresentationUnits ? `, ${d.sourceRepresentationUnits} SRUs` : ""}${d.compressedSceneRanges ? `, ${d.compressedSceneRanges} compressed range` : ""}${d.unnumberedScenes ? `, ${d.unnumberedScenes} unnumbered காட்சி` : ""})`);
   console.log(`  TA units ${d.tamilUnits} (dialogue ${d.tamilDialogue} / stage ${d.tamilStageDirections} / verse ${d.tamilVerse}) · headings ${d.inBodyHeadings} · speakers ${d.distinctSpeakerLabels} · unlabelled ${d.unlabelledDialogueUnits}`);
-  console.log(`  EN units ${d.englishUnits} · translation notes ${d.translationNotes}${d.sourceConditionHolds ? ` · source-condition holds ${d.sourceConditionHolds}` : ""}`);
+  console.log(`  EN units ${d.englishUnits} · translation notes ${d.translationNotes}${d.bodySourceConditionHolds ? ` · body source-condition holds ${d.bodySourceConditionHolds}` : ""}`);
   console.log(`  play.json ${sha("play.json")}`);
   console.log(`  provenance.json ${sha("provenance.json")}`);
   return { slug: cfg.slug, readingUnits: play.readingUnits.length };

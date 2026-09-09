@@ -150,6 +150,37 @@ export default function PlaySource({ play, prov }: { play: Play; prov: PlayProve
           </Card>
         )}
 
+        {/* The controlling page-layer audit's WORK-LEVEL coverage qualification. It is deliberately
+            distinct from the body holds below: 9 page records remain needs-review, of which 4 are
+            front-matter holds that do NOT affect dramatic assembly and 5 affect the dramatic body. */}
+        {prov.pageLayerQualification && (() => {
+          const q = prov.pageLayerQualification;
+          return (
+            <Card icon={ScrollText} title={ta ? "பக்க அடுக்கு தணிக்கை நிலை" : "Page-layer coverage qualification"}>
+              <dl className="mt-3">
+                <Row label={ta ? "மொத்த ஸ்கேன்கள்" : "Physical scans"}>{q.physicalScans}</Row>
+                <Row label={ta ? "செயலாக்கப்பட்ட பக்கப் பதிவுகள்" : "Page records processed"}>{q.processedPageRecords} / {q.physicalScans}</Row>
+                <Row label={ta ? "சரிபார்க்கப்பட்டவை" : "Verified"}>{q.verifiedPageRecords} / {q.physicalScans}</Row>
+                <Row label={ta ? "மறுபரிசீலனை தேவை" : "Needs-review"}>
+                  {q.needsReviewPageRecords} / {q.physicalScans} — {ta ? "பௌதிக மூல வரம்புகளால்" : "owing to physical-source limitations"} ({ta ? "ஸ்கேன்" : "scans"} {q.needsReviewScans.join(", ")})
+                </Row>
+                <Row label={ta ? "முன்பக்க நிறுத்தங்கள்" : "Front-matter holds"}>
+                  {q.frontMatterHoldScans.length} ({q.frontMatterHoldScans.join(", ")}) — {ta ? "நாடகத் தொகுப்பை பாதிக்காது" : "do not affect dramatic assembly"}
+                </Row>
+                <Row label={ta ? "நாடக உடல் நிறுத்தங்கள்" : "Dramatic-body holds"}>
+                  {q.dramaticBodyHoldScans.length} ({q.dramaticBodyHoldScans.join(", ")}) — {ta ? "வாசிப்புரையில் அப்படியே காட்டப்படுகின்றன" : "propagated verbatim in the reading text"}
+                </Row>
+                <Row label={ta ? "தீர்க்கப்படாத காட்சிக் கொத்துகள்" : "Unresolved visual clusters"}>{q.unresolvedVisualClusters}</Row>
+              </dl>
+              <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70" lang={ta ? "ta" : "en"}>
+                {ta
+                  ? `${q.needsReviewPageRecords} பக்க அளவிலான மறுபரிசீலனை நிறுத்தங்கள் ≠ ${q.dramaticBodyHoldScans.length} நாடக உடல் நிறுத்த ஸ்கேன்கள். எந்த விடுபட்ட சொல்லும் மீட்டமைக்கப்படவில்லை.`
+                  : `${q.needsReviewPageRecords} page-level review holds ≠ ${q.dramaticBodyHoldScans.length} dramatic-body hold scans. No missing wording is reconstructed.`}
+              </p>
+            </Card>
+          );
+        })()}
+
         {/* Documented terminal physical source-condition holds, carried verbatim and visibly, never
             reconstructed. Present only for a work accepted READY WITH QUALIFICATION. */}
         {prov.sourceConditionHolds && prov.sourceConditionHolds.length > 0 && (

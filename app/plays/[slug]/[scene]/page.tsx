@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import PlayReader from "@/components/PlayReader";
 import { PLAY_SLUGS, type Play } from "@/data/plays";
 import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
+import { playSceneDescription } from "@/lib/play-metadata";
 
 function loadPlay(slug: string): Play | null {
   const p = path.join(process.cwd(), "public/data/plays", slug, "play.json");
@@ -27,14 +28,9 @@ export function generateMetadata({ params }: { params: { slug: string; scene: st
   if (!play || !scene) return {};
   return {
     title: `${scene.titleTa} — ${scene.titleEn} | ${play.title.ta} | Kalaignar Digital Library`,
-    // NEVER "Scene 1" for a continuous work: the source prints no scenes, so the metadata must
-    // not manufacture one.
-    description:
-      scene.kind === "closing-tableau"
-        ? `The unnumbered closing tableau of ${play.title.en} — not Scene 39.`
-        : scene.kind === "continuous-body"
-          ? `${play.title.en} — the complete continuous dramatic text, which the source prints without any scene division.`
-          : `Scene ${scene.order} of ${play.sceneCount} — ${scene.titleEn}.`,
+    // Structure-aware per reading-unit kind — never "Scene N" for a continuous body or an SRU, never
+    // "Scene null" for a compressed range / unnumbered scene, never "Scene N of 0". See lib/play-metadata.
+    description: playSceneDescription(play, scene),
   };
 }
 
