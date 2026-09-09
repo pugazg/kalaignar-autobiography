@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PlaySource from "@/components/PlaySource";
 import { PLAY_SLUGS, type Play, type PlayProvenance } from "@/data/plays";
+import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
 
 function load(slug: string): { play: Play; prov: PlayProvenance } | null {
   const dir = path.join(process.cwd(), "public/data/plays", slug);
@@ -16,8 +17,9 @@ function load(slug: string): { play: Play; prov: PlayProvenance } | null {
   };
 }
 
+// Wave 6 P3: discovered PLAY_SLUGS PLUS the undiscovered Wave-6 Drama works' `/source` pages.
 export function generateStaticParams() {
-  return PLAY_SLUGS.map((slug) => ({ slug }));
+  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

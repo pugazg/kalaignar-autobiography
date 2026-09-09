@@ -84,6 +84,11 @@ eq(
   "cumulative batch metadata == recomposed per-batch metadata (batchId/workIds/collectionIds/readerFamily/routeCount/flags)",
 );
 
+// Batch identity hygiene: every batchId is a non-empty string and unique across manifests.
+for (const b of batchManifests) ok(typeof b.batchId === "string" && b.batchId.length > 0, `batch ${b.batchId} has a non-empty batchId`);
+const allBatchIds = batchManifests.map((b) => b.batchId);
+eq(new Set(allBatchIds).size, allBatchIds.length, "no batchId appears in two manifests");
+
 // Cross-batch identity disjointness: no workId or collectionId may appear in two batches.
 const allWorkIds = batchManifests.flatMap((b) => b.workIds);
 eq(new Set(allWorkIds).size, allWorkIds.length, "no workId appears in two batches");

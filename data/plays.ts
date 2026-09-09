@@ -96,7 +96,23 @@ export type PlayOrnament = {
   sourcePages?: PlaySourcePage[];
 };
 
-export type PlayUnit = PlayStageDirection | PlayDialogue | PlayVerse | PlayOrnament;
+/**
+ * A printed heading that appears INSIDE the reading body rather than as the unit's own title —
+ * a setting line the edition prints mid-column (`இடம்: ரோடு.`, `காவேரி வீடு`), the work-title
+ * lines a source prints at the head of its opening unit (திருவாளர் / தேசீயம் பிள்ளை), or a
+ * centred descriptive intertitle (`உதயசூரியன் கோலம்`). It is carried in source order as its own
+ * unit so the archive's placement survives, and it is NEVER promoted to a scene number or title.
+ * `level` is the source Markdown heading level, recorded rather than normalised.
+ */
+export type PlayHeading = {
+  kind: "heading";
+  level: number;
+  text: string;
+  hasLineBreaks: boolean;
+  sourcePages?: PlaySourcePage[];
+};
+
+export type PlayUnit = PlayStageDirection | PlayDialogue | PlayVerse | PlayOrnament | PlayHeading;
 
 /**
  * Apparatus released WITH the English layer and held strictly outside the reading body.
@@ -123,12 +139,35 @@ export type PlayNote = {
  *                        assembles a single `continuous-play` file). Its route slug is editorial
  *                        NAVIGATION; it is not, and must never be presented as, "Scene 1".
  */
-export type PlayReadingUnitKind = "scene" | "closing-tableau" | "continuous-body";
+export type PlayReadingUnitKind =
+  | "scene"
+  | "closing-tableau"
+  | "continuous-body"
+  /**
+   * A source-visible scene RANGE the edition compresses into a single printed block — காகிதப்பூ
+   * prints `காட்சிகள்: 2, 3, 4, 5.` with one performance note and no separate Scene-2/3/4/5 text.
+   * It is one reading unit for the range; no separate scene is invented, and `order` stays `null`.
+   */
+  | "compressed-scene-range"
+  /**
+   * A dramatic unit the edition heads WITHOUT a scene number — காகிதப்பூ prints `காட்சி,` (a bare
+   * `காட்சி` with a comma and no numeral) between Scene 21 and Scene 24. `order` stays `null`; no
+   * Scene 22 or 23 is ever assigned.
+   */
+  | "unnumbered-scene"
+  /**
+   * An editorial SOURCE-REPRESENTATION UNIT (SRU) over a source that prints NO scene numbers,
+   * acts, or `காட்சி` headings at all (திருவாளர் தேசீயம்பிள்ளை). The seven SRUs are lossless
+   * editorial navigation defined by the source's own prose/stage transitions; `SRU-01` is a
+   * repository identifier, never a source scene number, and `order` stays `null`.
+   */
+  | "source-representation-unit";
 
 export type PlayReadingUnit = {
-  /** Printed scene number. `null` wherever the source numbers nothing — tableau, continuous body. */
+  /** Printed scene number. `null` wherever the source numbers nothing — tableau, continuous body,
+   *  a compressed range, an unnumbered `காட்சி`, or an editorial SRU. Never invented. */
   order: number | null;
-  /** Source filename stem — "01".."38", "closing-tableau", "continuous-play". Never re-derived. */
+  /** Source filename stem — "01".."38", "02-05", "unnumbered-between-21-and-24", "sru-01-…". Never re-derived. */
   slug: string;
   kind: PlayReadingUnitKind;
   /** `# காட்சி-N` exactly as printed; `null` where the source heads the unit differently or not at all. */
@@ -140,6 +179,18 @@ export type PlayReadingUnit = {
   settingTa: string | null;
   settingEn: string | null;
   sourceScans: number[];
+  /** The scene numbers a `compressed-scene-range` unit collectively represents (e.g. [2,3,4,5]). */
+  sceneRange?: number[];
+  /** The source heading EXACTLY as printed for an `unnumbered-scene` (e.g. `காட்சி,`). */
+  sourceHeadingTa?: string;
+  /** An SRU's repository identifier (e.g. "SRU-01"); NEVER a source scene number. */
+  editorialUnitId?: string;
+  /**
+   * `false` where the archive marks this unit assembled from pages that still carry documented
+   * physical source-condition holds (paper loss / unresolved clusters), carried verbatim in the
+   * text. Absent where the unit is assembled entirely from verified pages.
+   */
+  assembledFromVerifiedPages?: boolean;
   tamil: { units: PlayUnit[] };
   english: { units: PlayUnit[]; notes: PlayNote[] };
 };
@@ -178,7 +229,31 @@ export type PlaySourceJoinNote = { scan: number; note: string };
  * or from a null order. A continuous work is a different printed thing from a one-scene play, and
  * the difference has to survive in the data rather than live in undocumented reader behaviour.
  */
-export type PlayStructureKind = "scene-sequence" | "continuous-play";
+export type PlayStructureKind =
+  | "scene-sequence"
+  | "continuous-play"
+  /**
+   * The source prints NO scene numbers, acts or `காட்சி` headings, and the work is published as a
+   * sequence of editorial SOURCE-REPRESENTATION UNITS (திருவாளர் தேசீயம்பிள்ளை). It is neither a
+   * numbered scene sequence nor one undivided continuous body: the SRUs are editorial navigation
+   * over a continuous source, and the reader must never present them as `காட்சி N`.
+   */
+  | "editorial-sru-sequence";
+
+/**
+ * How the work's authorship is EVIDENCED. Present only where the basis needs qualifying — a work
+ * whose author line is NOT printed in the selected source range (காகிதப்பூ), so the attribution is
+ * user-supplied catalogue metadata rather than a source-printed fact. Absent where the scan itself
+ * prints the author (the reader may then present authorship without a caveat).
+ */
+export type PlayAuthorAttribution = {
+  /** The attributed author, exactly as carried. */
+  attribution: string;
+  /** e.g. "user-supplied-catalogue" — never overstated as source-verified. */
+  basis: string;
+  /** Whether the SELECTED source range itself prints an author line. */
+  printedInSelectedSourceRange: boolean;
+};
 
 export type Play = {
   workId: string;
@@ -187,6 +262,12 @@ export type Play = {
   /** The source's own descriptor for the work's form. */
   descriptor: { ta: string; en: string };
   author: { ta: string; en: string };
+  /**
+   * Authorship-evidence qualification, present only where the selected source range does not itself
+   * print an author line (காகிதப்பூ). The reader and metadata must not present a user-supplied
+   * catalogue attribution as if it were source-verified.
+   */
+  authorAttribution?: PlayAuthorAttribution;
   /**
    * Edition facts, each present ONLY where the scan prints one. A composite volume prints its
    * publisher, place and price once in shared front matter and prints no year at all, so `year`
@@ -199,7 +280,14 @@ export type Play = {
     copyrightLineTa?: string;
     /** The collection a composite-source work was printed inside, where there is one. */
     collectionTitleTa?: string;
-    /** No publication year is printed in these scans; none is ever inferred. */
+    /**
+     * The edition statement EXACTLY as the scan prints it, where it prints one
+     * (`இரண்டாம் பதிப்பு, நவம்பர் 1965`; `ஆறாம் பதிப்பு, மே 2010`). It is a printed WITNESS carried
+     * verbatim; it is not promoted to a catalogue publication year — `year` stays `null` regardless.
+     * Absent where the scan prints no edition statement.
+     */
+    editionStatementTa?: string;
+    /** No publication year is promoted to the catalogue; a printed statement lives in `editionStatementTa`. */
     year: null;
   };
   sourceRepo: string;
@@ -253,6 +341,51 @@ export type PlayProvenance = {
     continuousStructureNote?: string;
     /** Printed pre-dramatic material and why it is not counted as a scene. */
     openingNoteNote?: string;
+    /** An editorial-SRU work's structural note — the source prints no scenes/acts; SRUs are navigation. */
+    sruStructureNote?: string;
+    /** A compressed scene range the edition prints as one block — no separate scenes reconstructed. */
+    compressedSceneNote?: string;
+    /** An unnumbered `காட்சி` the edition heads without a numeral — no Scene 22/23 assigned. */
+    unnumberedSceneNote?: string;
+    /** A centred descriptive intertitle preserved inside its unit and never promoted to a scene title. */
+    intertitleNote?: string;
+    /** Whether the source prints a closing `முற்றும்` — recorded as printed, or its absence never repaired. */
+    printedClosureNote?: string;
+    /** Documented physical source-condition holds carried verbatim in the reading text; never reconstructed. */
+    sourceConditionNote?: string;
+  };
+  /**
+   * Performance-history evidence VISIBLE IN THIS SCAN, kept strictly apart from any user-supplied
+   * catalogue claim. Present only for a work whose scan prints staging evidence (மணிமகுடம்).
+   */
+  performanceWitnesses?: { date: string; place: string; detail: string }[];
+  /**
+   * A catalogue claim supplied by the user that the inspected scan does NOT itself establish, recorded
+   * as context and explicitly NOT promoted to a source fact (மணிமகுடம்'s 1962 Madurai claim).
+   */
+  userSuppliedContext?: { claim: string; status: string }[];
+  /**
+   * Documented terminal physical source-condition holds (paper loss / unresolved clusters), each
+   * carried verbatim in the reading text and never reconstructed. Present only for a qualified work.
+   */
+  sourceConditionHolds?: { scan: number; unit: string; marker: string; policy: string }[];
+  /**
+   * The controlling page-layer audit's WORK-LEVEL coverage qualification, carried verbatim from the
+   * frozen `PAGE_LAYER_COMPLETION_AUDIT.md`. It is deliberately kept distinct from the body-level
+   * `sourceConditionHolds` list above: `needsReviewPageRecords` (9) counts every page record left
+   * `needs-review`, of which `frontMatterHoldScans` (4) do NOT affect dramatic assembly and
+   * `dramaticBodyHoldScans` (5) do — so 9 page-level review holds must never be collapsed to the 5
+   * body holds. Present only for a work carrying this qualification (திருவாளர் தேசீயம்பிள்ளை).
+   */
+  pageLayerQualification?: {
+    physicalScans: number;
+    processedPageRecords: number;
+    verifiedPageRecords: number;
+    needsReviewPageRecords: number;
+    needsReviewScans: number[];
+    frontMatterHoldScans: number[];
+    dramaticBodyHoldScans: number[];
+    unresolvedVisualClusters: number;
   };
   english: {
     kind: "project-created";
@@ -268,6 +401,21 @@ export type PlayProvenance = {
     continuousBodies?: number;
     /** 1 where the source prints pre-dramatic material, otherwise 0. Never counted as a scene. */
     openingNotes?: number;
+    /** Editorial source-representation units, for a work whose source prints no scene numbers. */
+    sourceRepresentationUnits?: number;
+    /** Source-visible scene RANGES compressed into one printed block (e.g. காட்சிகள் 2–5). */
+    compressedSceneRanges?: number;
+    /** Dramatic units the edition heads without a scene number. */
+    unnumberedScenes?: number;
+    /** Printed headings carried inside the reading body (settings, work-title lines, intertitles). */
+    inBodyHeadings?: number;
+    /**
+     * Count of DRAMATIC-BODY source-condition holds carried verbatim (paper loss / unresolved
+     * clusters). Deliberately NOT the count of all page-layer `needs-review` records — see
+     * `pageLayerQualification.needsReviewPageRecords`, which is larger because it also counts
+     * front-matter holds that do not affect dramatic assembly.
+     */
+    bodySourceConditionHolds?: number;
     tamilUnits: number;
     englishUnits: number;
     tamilDialogue: number;
