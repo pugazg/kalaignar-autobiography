@@ -1,0 +1,2803 @@
+{
+ "workId": "gunanayagar-nehru",
+ "slug": "gunanayagar-nehru",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/gunanayagar-nehru",
+ "sourceCommit": "188d49cd4dcf2c6bbe2e9633841ff402b9959d08",
+ "shelf": "poetry",
+ "readerStructure": "poem",
+ "subtype": "poem",
+ "title": {
+  "ta": "குணநாயகர் நேரு",
+  "en": "Nehru, the Noble Leader"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "publicationYear": null,
+ "editionStatement": null,
+ "factsNotStated": [
+  "publication-year",
+  "edition-statement",
+  "cross-page-stanza-relationships"
+ ],
+ "transcriptionStatus": "verified source assembly — Phase 2 10/10, Phase 3 Gates 1–6 PASS / Tamil FINAL-CLEARED, canonical verse scans 3–7 = 5/5, scan-7 performance note excluded, 0 unresolved",
+ "translationStatus": "RELEASE-COMPLETE project-created translation — Phase 4 T1 COMPLETE, T2/T3/T4 PASS, editorial-consistency review PASS; drafted independently from the FINAL-CLEARED Tamil (source-English scans 8–9 are secondary witness only)",
+ "tamil": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "முன்னை இருள் விலக்குதற்கு",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "முயல்கின்ற தமிழ் அரசு",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "முதுபெரியோன் காந்தியாரின்",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "முத்த பிள்ளை நேருவுக்கு...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "முத்தமிழால் கவி தொடுக்கும்,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "புவியரங்கில் புகழ்குவித்த பண்டிதர்க்குக்",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "கவியரங்கில் மாலை சூட்டும்...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "பூத்திருக்கும் தோட்டத்தில் புகுந்துவிட்ட என்னுக்குக்",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "காத்திருந்த காட்சியொன்றைக் கவியாக்கித் தருகின்றேன்,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "சிரிக்கின்ற மல்லிகையின் காதுகளில் செண்பகந்தான்",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "ஏதோ சேதி தனைக் சொல்ல;",
+    "indent": 8,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "சேர்ந்திருவர் சாமந்தியிடம் ஓடி...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "அவள் செவியில் வாய் வைத்தார்...",
+    "indent": 8,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "பின்னர்",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 3
+   },
+   {
+    "kind": "line",
+    "text": "மூவருமே முல்லையிடம் முனகிவிட்டு",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "அவளோடு",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "நால்வருமே நந்தவனம் முழுவதும்",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "நடைபோடத் தொடங்கி விட்டார்",
+    "indent": 8,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "யாரைத்தான் தேடுகின்றார் பூப்பெண்கள்?",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "கட்டுதற்கு",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "நாரைத்தான் தேடியலைகின்றாரோ-என எண்ணி",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "நான் வியந்தேன் ...",
+    "indent": 32,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "தென்றலிலே மணம் பரப்பித் தேடுகின்றார்",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "தேடுகின்றார்",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "தெரியவில்லை யாரை என்று...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "“முழங்காலை வலிக்குதடி”. என்றாள் முல்லை",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "“சிவந்ததடி என் பாதம்” எனச் செண்பகம் இளித்தாள் பல்லை ...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 3,
+    "toScan": 4,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 3 closes inside the flower-grove narrative after the flower women search and complain of aching feet. Scan 4 continues the same scene immediately with `சாமந்தி மல்லிகை இருவர்க்கும் பெருந்தொல்லை—` and the group moving toward the heard lament. No repeated terminal/opening lines and no missing physical scan are present."
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "சாமந்தி மல்லிகை இருவர்க்கும் பெருந்தொல்லை—",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "பூங்காவின் மூலையொன்றில் புலம்பல் ஒலி கேட்டவுடன்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "பூப்பெண்கள் “அதோ, அதோ!” எனச் சொல்லி",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "அந்த இடம் பறந்திட்டார் ...",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "“பூமானே! புகழ்க்குன்றே! போனாயோ என் தலைவா?",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "கோமானே! கொள்கை வேந்தே! உன்னைக்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "கொள்ளையிட்ட கூற்றெங்கே?",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "எனையெடுத்து முத்தமிட்டு இதயத்தில் ஏற்றிக் கொண்டாய் —இன்று",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "எனைவிடுத்து நீ மட்டும் நெடுந்தொலைவு போய்விட்டாய் ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "என்ன நியாயம்?",
+    "indent": 48,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "இதழுக்குத் தேன் தருவாய்-பதிலுக்கு",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "நான் தருவேன் ... மறந்தா விட்டாய்?",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மார்பகத்தில் அணைத்திருப்பாய்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மகிழ்ச்சி வெள்ளம் கரைபுரளும்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மங்கையென்னைப் பிரிவதற்கு உன் மனந்தான் கல்லோ?”",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "எனக் கதறும் ஒலி கேட்டு",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "இனிய நறும் பூப்பெண்கள் அருகே சென்றார் ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மடை திறந்த வெள்ளம் போல் கண்ணீர் கொட்டி",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மயங்கிவிழும் நிலையிலே ரோஜா நின்றாள் ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மல்லிகை முல்லை அருகே சென்று—",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "“என்னடி ரோஜா இன்னமும் அழுகை?",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "நல்லவர் இருந்தார் நானிலம் வாழ ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "வல்லவர் இருந்தார் வாரி அணைக்க ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "போனது வருமோ? புலம்பலை நிறுத்து!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "பூக்களின் ராணி! புன்னகை காட்டு!”",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "ஆறுதல் கூறினர், அழகு ரோஜா",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "தேறுதல் பெறாமல் தேம்பி யழுதாள்.",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "“இரவு உமிழும் எச்சில் என்பேன் பனித்துளியை-என்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "இறைவனது இதழ் முத்தம் அமுதம் என்பேன் ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "அன்றுமுதல் தந்தெனக்கு ஆசை காட்டி ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "இன்றென்னை எச்சில் பனித்துளியில்",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "நனைத்து விட்டார்; என் செய்வேன்?",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "முடிசூடா மன்னவர் இனி என்னைத் தொடார்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "என நினைக்கும் போதெல்லாம்",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "முள்ளாகக் குத்துதடி மேனியெல்லாம்!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "வாழ்வில் சிரிப்பில்லா எனக்கு இந்தச் சிவப்பெதற்கு?",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "மனத்தில் மகிழ்வில்லா எனக்கு நறு மணந்தான் எதற்கு? ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "இந்தியச் சிம்மாசனத்தில் அவர் இருந்தார்—அவர்",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "இதயச் சிம்மாசனத்தில் நானிருந்தேன் ...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 4,
+    "toScan": 5,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 4 closes inside Rose's lament with `இந்தியச் சிம்மாசனத்தில் அவர் இருந்தார்—அவர் / இதயச் சிம்மாசனத்தில் நானிருந்தேன் ...`. Scan 5 continues the same Rose speech with `உறங்குகின்றார் விழித்தெழுவார்; படி ...` and later closes that quoted lament before shifting into the narrator's Nehru praise. No omission or duplication is evidenced at the boundary."
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "உறங்குகின்றார் விழித்தெழுவார்; படி",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "இறங்கி வந்து பாவையென அழைப்பதற்குள் .... அவர் நெஞ்சு",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "அரங்குதனில் ஆடுதற்குச் சிவப்பாடை புனைந்து நின்றேன்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "அதற்குள் காலக்",
+    "indent": 48,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "குரங்கின் கை ‘மாலை’யாக ஆக்கிவிட்டார் என் வாழ்வை",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "போய்விடுங்கள் எனை விடுத்துத் தனியாக",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "புனிதனவன் பிறந்த நாளில் கண்ணீரை அவன்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "காலடிக்குக் காணிக்கை யாக்குதலே",
+    "indent": 8,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "என் கடமை” ....",
+    "indent": 8,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "ரோஜாவின் சொற்கேட்டுச் சோர்ந்து போனேன் ... தன்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "ராஜாவின் பிரிவாலே வாடுகின்ற அவளை பெண்ணினிப்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "பேசாமல் திரும்பி விட்டேன், இன்றென்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "மனைவி கூந்தல் மணம் விசாமல் போகட்டுமென்று",
+    "indent": 8,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "மலர் எதுவும் பறிக்காமல் வந்துவிட்டேன்-இன்று",
+    "indent": 8,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "மலர் பறித்தால், அது மாவீரன் நேருவுக்கு மாலை தொடுத்திடவே! .... நம்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "மடி பறித்துச் சுதந்திரத்தை அபகரித்த வெள்ளையரின்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "கொடி பறித்து விடுதலைக் கொடி பிடித்த கொள்ளை வீரன்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "அடி கொடுத்தால் வாங்கிக் கொண்டு",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "அடக்குமுறை தாங்கிக் கொள்ள",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "அண்ணல் வகுத்த வழி",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "அயராதுழைத்த சிங்கம்!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "இளமையின் எழிலே",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "இருட்டுச் சிறையில்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "கழித்த தியாகி!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "எண்ணெயிட்ட கடுகாய் வெடிக்கும் கோபம்-எனினும்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "எண்ணெயிட்டார் விடுதலை வேள்விக்கென்போம்!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "பணமலைக்கிடையே பிறந்தார் எனினும் ஏழையை அணைக்கும்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "குணமலையாகத் திகழ்ந்தார் என்போம்!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "பணியின் விரைவைப் பம்பரம் என்பர்;",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "பண்டிதர் பணியோ பம்பரம் தோற்கும்—",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "இடி இடிக்கும் பேச்சில்-இளமை",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "துடி துடிக்கும் எழுத்தில்-தேன் ஒரு",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "படி இனிக்கும் பண்பில்-அதிர்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "வெடி முழக்கும் செயலில்-விடாப்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "பிடி இருக்கும் குணத்தில்-விடுதலைக்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "கொடியிருக்கும் கையில்-கொஞ்சம்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "முடியிருக்கும் தலையில்",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "(இங்கென்ன வாழ்கிறதோ? எனக் கேட்டார் எனைப் பார்த்து!)",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 5,
+    "toScan": 6,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 5 ends after the biographical/praise sequence and its source-visible parenthetical aside `(இங்கென்ன வாழ்கிறதோ? எனக் கேட்டார் எனைப் பார்த்து!)`. Scan 6 begins a new rhetorical sequence with `நீதிக்கு எதிரானவற்றையெல்லாம்`. This is a source-supported stanza/rhetorical transition across a physical page boundary; continuity does not require a sentence fragment to cross the join. No duplicate or missing verse block is present."
+     ],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 5 ends after the biographical/praise sequence and its source-visible parenthetical aside `(இங்கென்ன வாழ்கிறதோ? எனக் கேட்டார் எனைப் பார்த்து!)`. Scan 6 begins a new rhetorical sequence with `நீதிக்கு எதிரானவற்றையெல்லாம்`. This is a source-supported stanza/rhetorical transition across a physical page boundary; continuity does not require a sentence fragment to cross the join. No duplicate or missing verse block is present."
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "நீதிக்கு எதிரானவற்றையெல்லாம்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நேர் நின்று எதிர்த்ததாலே நேருவானார்...இந்திய",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நீள் எல்லைக்கோடு தன்னைப் பெரும்பகைவர் கடந்தபோது-என்ன",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நேருமோ என்றேங்கி இருந்த மக்கள்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நெஞ்சின் துயர் துடைத்து, எதுவும்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நேராது நான் இருக்குமட்டும் எனச் சொல்லி நேரு வானார்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "துணிவிருந்தால் உள்ளத் தூய்மையிருந்தால்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "துன்பம் நேருமா? எனக் கேட்டார் குழந்தையிடம்—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "இன்பமே நேரும் மாமா என்று பிஞ்சும் பூவும்—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "இதனால் ‘நேரு மாமா’ வானார்...",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "மதம் கடவுள் நம்பிக்கை, இவைகளிலே",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "அவர் கொள்கை தனி எனினும்-பிறர்",
+    "indent": 8,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "மனம் புண்படாமல் நல்வழியில் ஆட்சி செய்தார்-தன்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "மரணத்தின் பின்னாலே மதச் சடங்கு வேண்டாமெனத்தக்க",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "தருணத்தில் உயிலெழுதி உலகிற்கு ஒளி செய்தார்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நடுநிலைத் தன்மை நலமெனக் கொண்டு",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "நாளிலும் போற்ற நமது பூங்குன்றனார் நவின்ற—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "“யாதும் ஊரே யாவரும் கேளிர்” என்ற மொழிக்குத்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "தோதாய்க் கொள்கை தொகுத்துச் சொன்னார்.",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "காலத்தின் கோலம் காட்டுக்கு ராஜாவாய்க் கர்த்தபம் ஆகும்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "ஏலத்தில் சில பேர் கோபுர உச்சியில் குந்திக் கொள்வர்; இந்திய",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "ஞாலத்தின் தலைவராய் ஜவகர் ஆனது இவ்வித மல்ல!- அவர்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "சேலத்து மாம்பழம் - சென்னைக் கடற்கரை -",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "கொற்கை முத்து - கொள்ளேகால் பட்டு -",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "தஞ்சைக் கோயில் - தண்புனல் காவிரி -",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "தரையில் காஞ்சி - தடந்தோள் பாண்டியன் -",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "கருத்தில் மாறுதல் இருந்த போதிலும்-",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "காலமானார் நேரு என்றதும்- கண்ணீர் உகுத்தார் கலங்கி அழுதார்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "காராக்கிரகம் கிடந்த அண்ணா ...",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "கண்ணிய அரசியலைப் போற்றிடும் நாட்டில்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "கண் நிகர் நேருவைப் புகழ்வோம் பாட்டில்!",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "படை துள்ளி வரும் - பகை",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "அள்ளி வரும் - எரி",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "கொள்ளி வரும் - கரும்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "புள்ளி வரும் - சீனக்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "கள்ளி வரும் - எனச் சிலர்",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "எள்ளி வரும்போது - விடி",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "வெள்ளி வரும் எனப் - பகை",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 6,
+    "toScan": 7,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "கிள்ளி எறிந்தான் ... இன்று திருப்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "பள்ளி அயர்ந்தான் - நேரு -",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "திருப்பள்ளி அயர்ந்தான்!",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "‘வாய் மடித்துக் கிடந்த தலைமகனை நோக்கி",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "மணியதரத் தேதேனும் வரவேண்டாவோ?” எனத்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "தாய் அடித்து மோதி அழும் காட்சிகளைப்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "பேய் ஆட்டம் போடுகின்ற போர் முகத்தை",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "நாய் நரிகள் தின்று தின்னும் கொடுமைக் கூத்தைக்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "காய், பழம், பூ பிஞ்சு, சாய்ந்து விழும் சமர்க்களத்தை - நம்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "கலிங்கத்துப் பரணி சொல்லும்; அந்தக்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "கலிங்கத்தில் அமைதி பூண்ட அசோக மன்னன்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "கண்டெடுத்த அறவழியில் உலகு காக்க நேரு பிரான்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "கழுகுகளின் இறக்கை வெட்டி வெண்புறாவைப் பறக்க விட்டார்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "விண்ணின் மேலே! ...",
+    "indent": 48,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "“தலையாகிய அறமே புரி",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "சரி நீதி உதவுவாய்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "சமமே பொருள் ஜனநாயகம்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "எனவே முரசறைவாய்” இது",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "அலை மோதிடும் புதுவையின்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "கலைமேவிய பாவலன் - நம்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "நிலை மாற்றிப் பாடிய காவியம்!",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "ஜனநாயகம் ஜனநாயகமென",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "ஜவகரும் முழங்கிடச்-சிலர்தம்",
+    "indent": 8,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "தனிநாயகம் சிறந்திடச் செயல்பட்டதை மறந்திடோம்-",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "பணநாயகம் கணநாழியில் தகர்ந்திடக்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "குணநாயகர் நேருவும் உடன் முனைந்திடக்",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "காலந்தான் போதவில்லை",
+    "indent": 8,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "காலமுமே பொறுக்கவில்லை!",
+    "indent": 8,
+    "sourceScan": 7,
+    "printedPage": 6
+   }
+  ],
+  "lineCount": 170,
+  "inPageStanzaBreaks": 11,
+  "verseRuns": 16,
+  "sourceEstablishedStanzas": 8,
+  "pageTransitions": 4,
+  "unresolvedStanzaRelations": 4
+ },
+ "english": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "To Nehru,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "the cherished son of the venerable Gandhi,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "the Tamil government that strives",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "to drive away the darkness of old",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "strings a poem in threefold Tamil;",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "in this arena of poetry",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "it places a garland upon the Pandit",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "who gathered fame upon the world stage...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 3
+   },
+   {
+    "kind": "line",
+    "text": "I entered a garden heavy with bloom,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "and there a scene awaited me;",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "I turn that scene into verse for you.",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "Champak leaned to the ears of laughing Jasmine",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "and whispered some news;",
+    "indent": 8,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "the two ran together to Samanthi...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "and put their mouths to her ear...",
+    "indent": 8,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "then",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 3
+   },
+   {
+    "kind": "line",
+    "text": "all three murmured something to Mullai,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "and with her",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "all four flower-women began to walk",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "through the whole pleasure-garden.",
+    "indent": 8,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "Whom were these flower-women seeking?",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "Were they wandering",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "for fibre to bind a garland?",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "I stood wondering...",
+    "indent": 32,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "Spreading fragrance upon the breeze, they searched,",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "searched on;",
+    "indent": 48,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "I could not tell whom they sought...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "“My knee is aching, girl,” said Mullai.",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "line",
+    "text": "“My foot has gone red,” said Champak, baring her teeth in a grin...",
+    "indent": 0,
+    "sourceScan": 3,
+    "printedPage": 2
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 3,
+    "toScan": 4,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 3 closes inside the flower-grove narrative after the flower women search and complain of aching feet. Scan 4 continues the same scene immediately with `சாமந்தி மல்லிகை இருவர்க்கும் பெருந்தொல்லை—` and the group moving toward the heard lament. No repeated terminal/opening lines and no missing physical scan are present."
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "For Samanthi and Jasmine too, it became a great ordeal—",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "then, from one corner of the garden, came the sound of lament.",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "“There! There!” cried the flower-women,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "and flew toward that place...",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "“O king of the earth! O mountain of fame! Have you gone, my leader?",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "O sovereign! O king of principle!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Where is Death that robbed you from me?",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "You lifted me, kissed me, and took me to your heart—today",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "you have left me alone and gone a vast distance...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "What justice is this?",
+    "indent": 48,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "You would give honey to my petals—in return",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "I would give you... Have you forgotten?",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "You would hold me against your chest,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "and a flood of joy would overflow its banks;",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "is your heart stone, that you should part from me, a maiden?”",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "Hearing that anguished cry,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "the sweet, fragrant flower-women went near...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Pouring tears like a flood through an opened sluice,",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Rose stood there, almost fainting...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Jasmine and Mullai went close and said—",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "“Rose, girl, why are you still weeping?",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "A good man lived so that the world might live...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "A mighty man lived to gather us into his embrace...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Will what is gone ever return? End your lament!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Queen of flowers! Show us a smile!”",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "They tried to console her, but beautiful Rose,",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "finding no comfort, sobbed and wept.",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 4
+   },
+   {
+    "kind": "line",
+    "text": "“I would call the dew the spittle spat out by night—",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "but the kiss from my lord's lips I would call nectar...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "From that first day he showed me love...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "and today he has left me drenched",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "in this spittle-dew; what shall I do?",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "Whenever I think that the uncrowned king",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "will never touch me again,",
+    "indent": 8,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "my whole body is pierced as though by thorns!",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "What use is this red to me when there is no smile in my life?",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "What use is fragrance to me when there is no joy in my heart?...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "He sat upon the throne of India—",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "line",
+    "text": "and I sat upon the throne of his heart...",
+    "indent": 0,
+    "sourceScan": 4,
+    "printedPage": 3
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 4,
+    "toScan": 5,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 4 closes inside Rose's lament with `இந்தியச் சிம்மாசனத்தில் அவர் இருந்தார்—அவர் / இதயச் சிம்மாசனத்தில் நானிருந்தேன் ...`. Scan 5 continues the same Rose speech with `உறங்குகின்றார் விழித்தெழுவார்; படி ...` and later closes that quoted lament before shifting into the narrator's Nehru praise. No omission or duplication is evidenced at the boundary."
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "“He is asleep; he will wake and rise;",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "before he could step down and call me his maiden...",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "I stood dressed in red, ready to dance",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "in the arena of his heart—",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "but before that,",
+    "indent": 48,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "the monkey-hand of Time made my life",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "into a ‘garland’ in its grasp.",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "Go away. Leave me here alone.",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "On the holy man's birthday,",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "to make my tears an offering",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "at his feet—",
+    "indent": 8,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "that is my duty...”",
+    "indent": 8,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "Hearing Rose's words, I drooped in sorrow...",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "Seeing her wither at the loss of her king,",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "I turned away without speaking further.",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "Let my wife's hair go without fragrance today;",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "I came back without plucking a single flower—",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "for if I pluck a flower today,",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "it shall only be to string a garland for the great hero Nehru!...",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "A formidable hero who tore down",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "the flag of the white men who had torn into our fold and seized our freedom,",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "and took up the flag of liberation;",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "a lion who laboured without tiring",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "along the path laid down by the Mahatma—",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "to take the blows that came",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "and endure repression!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "A man of sacrifice",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "who spent the beauty of his youth",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "inside a dark prison!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "His anger could burst like mustard seed dropped in hot oil—yet",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "we shall say he poured oil into the sacrificial fire of freedom!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "Though born amid mountains of wealth,",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "he stood as a mountain of virtue that embraced the poor!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "People compare the speed of work to a spinning top;",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "the Pandit's work would make even the spinning top lose—",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "Thunder cracking in his speech—youth",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "throbbing in his writing—character",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "sweeter by a measure than honey—deeds",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "roaring like an exploding charge—an unyielding",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "grip in his nature—the flag of freedom",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "in his hand—and only a little",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "line",
+    "text": "hair upon his head!",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 5
+   },
+   {
+    "kind": "line",
+    "text": "(“Then what is living here?” he asked, looking at me!)",
+    "indent": 0,
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 5,
+    "toScan": 6,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 5 ends after the biographical/praise sequence and its source-visible parenthetical aside `(இங்கென்ன வாழ்கிறதோ? எனக் கேட்டார் எனைப் பார்த்து!)`. Scan 6 begins a new rhetorical sequence with `நீதிக்கு எதிரானவற்றையெல்லாம்`. This is a source-supported stanza/rhetorical transition across a physical page boundary; continuity does not require a sentence fragment to cross the join. No duplicate or missing verse block is present."
+     ],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: Scan 5 ends after the biographical/praise sequence and its source-visible parenthetical aside `(இங்கென்ன வாழ்கிறதோ? எனக் கேட்டார் எனைப் பார்த்து!)`. Scan 6 begins a new rhetorical sequence with `நீதிக்கு எதிரானவற்றையெல்லாம்`. This is a source-supported stanza/rhetorical transition across a physical page boundary; continuity does not require a sentence fragment to cross the join. No duplicate or missing verse block is present."
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "Because he stood straight and opposed",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "everything that stood against justice,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "he became Nehru...",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "When a powerful foe crossed India's long border,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "the people feared, “What will happen?”",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "He wiped the grief from their hearts and said,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "“Nothing will happen as long as I am here”—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "and thus he became Nehru.",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "“If you have courage and purity of heart,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "will suffering befall you?” he asked a child—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "“Only happiness will come, Uncle,” answered the tender flower-bud of a child;",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "and thus he became “Uncle Nehru”...",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "On religion, God and belief,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "his own convictions were distinct; yet",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "without wounding the minds of others,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "he governed along a good path.",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "He wrote in his will that after his death",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "there should be no religious rites,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "and by that act gave light to the world.",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "Holding non-alignment to be a good principle,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "he shaped a policy fitting the words",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "our Pungundranar gave us to praise through the ages:",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "“Every town is ours; everyone is kin.”",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "By a turn of time,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "a donkey may become king of the forest;",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "in an auction, some may squat upon a tower's summit.",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "But Jawahar did not become leader of the Indian world in any such way!",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "He was a Salem mango—the Chennai seashore—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "a Korkai pearl—Kollegal silk—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "a Thanjavur temple—the cool-watered Kaveri—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "Kanchi upon the earth—a broad-shouldered Pandyan!",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "Though their ideas differed,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "when the news came that Nehru had died,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "Anna, then confined in prison,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "shed tears and wept in grief...",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "In a land that honours dignified politics,",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "let us praise in song Nehru, precious as the eye!",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 6
+   },
+   {
+    "kind": "line",
+    "text": "“The army will come bounding—the foe will surge in—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "a firebrand will come—a black mark will come—",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "the Chinese thorn will come,” some mocked.",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "line",
+    "text": "“The morning star will rise,” he said—and the foe",
+    "indent": 0,
+    "sourceScan": 6,
+    "printedPage": 5
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 6,
+    "toScan": 7,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "he plucked out and flung away...",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "Today he lies in sacred sleep—Nehru—",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "lies in sacred sleep!",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "> “Looking upon the beloved son",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> lying with his lips folded shut,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> a mother beats herself and throws herself about, crying,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> ‘Will no honey ever come to those jewel-like lips?’",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> The face of war where ghosts perform their dance,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> the cruel spectacle where dogs and jackals feed and feed,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> the battlefield where unripe fruit, ripe fruit,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> flower and bud all fall together—”",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "Our *Kalingattu Parani* tells of such a field;",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "yet in that very Kalinga, King Ashoka embraced peace.",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "Along the path of virtue that Ashoka found there,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "Nehru, to safeguard the world,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "clipped the wings of the vultures",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "and set the white dove flying",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "high in the sky!...",
+    "indent": 48,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "> “Practise the foremost virtue;",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> render justice true and right;",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> equality is the substance of democracy—",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "> therefore beat the drum and proclaim it!”",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "This is the poem sung to change our condition",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "by the art-rich poet",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "of wave-beaten Puduvai!",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 7
+   },
+   {
+    "kind": "line",
+    "text": "“Democracy! Democracy!”",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "Jawahar too thundered;",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "we shall not forget that some among us",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "worked instead to make their own autocracy flourish.",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "For the rule of money to be shattered in an instant,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "and for Nehru, the Noble Leader, to press forward too,",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "time itself was not enough—",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "line",
+    "text": "time itself would not wait!",
+    "indent": 0,
+    "sourceScan": 7,
+    "printedPage": 6
+   }
+  ],
+  "lineCount": 185,
+  "inPageStanzaBreaks": 21,
+  "verseRuns": 26,
+  "sourceEstablishedStanzas": 18,
+  "pageTransitions": 4,
+  "unresolvedStanzaRelations": 4
+ },
+ "poemScans": [
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}

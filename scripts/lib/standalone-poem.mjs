@@ -287,10 +287,11 @@ function parseTamil(workDir, decl, pageTransition) {
     for (const h of hits) {
       const body = src.slice(h.bodyStart, h.end);
       const lines = body.split("\n").filter((raw) => !COMMENT.test(raw.trim()));
-      if (decl.printedPageFor(h.scan) !== null) {
-        throw new Error(`scan ${h.scan}: the plain-marker convention carries no printed-page label, but the declaration claims printed page ${decl.printedPageFor(h.scan)}`);
-      }
-      blocks.push({ scan: h.scan, printed: null, lines });
+      // The plain-marker Tamil assembly carries no inline printed-page label. Most plain-marker works
+      // show no printed numeral at all (printedPageFor returns null); where a work's pinned page map
+      // records a VISIBLE printed page for a scan, it is taken from the declaration (which encodes
+      // that page map) rather than inferred. Existing null-returning works are byte-identical.
+      blocks.push({ scan: h.scan, printed: decl.printedPageFor(h.scan), lines });
     }
   } else {
     throw new Error(`unknown Tamil assembly convention ${JSON.stringify(decl.tamil.convention)}`);
@@ -394,6 +395,12 @@ function parseEnglish(workDir, decl, pageTransition) {
 
   // 1. batch files → per-scan regions
   const regions = []; // { scan, batch, runs: string[][] }
+  // NON-VERSE OPENING LINES that follow the FIRST scan marker in the reviewed English — a repeated
+  // work title and a printed author line at the head of the poem. They are the English counterpart of
+  // the Tamil `dropLeadingLines`: the released reader-facing assembly holds the same two lines (its
+  // `assembly.startAfter` skips past them), so dropping them here keeps the batch-derived stream equal
+  // to the assembly verse region and keeps title/attribution out of the verse. Opt-in and fail-closed.
+  const dropQueue = [...(en.dropLeadingLinesFirstScan ?? [])];
   for (const b of en.batches) {
     const label = b.file;
     const src = readText(path.join(workDir, b.file));
@@ -417,6 +424,16 @@ function parseEnglish(workDir, decl, pageTransition) {
       }
       if (!cur) {
         if (t !== "") throw new Error(`${label}: verse appears before any scan marker`);
+        continue;
+      }
+      // Consume the declared non-verse opening lines in the FIRST scan region only, skipping the
+      // blank lines around them; fail closed if a declared line is not present in position.
+      if (dropQueue.length && cur === regions[0]) {
+        if (t === "") continue;
+        if (raw.replace(/\s+$/, "") !== dropQueue[0]) {
+          throw new Error(`${label}: expected non-verse opening line ${JSON.stringify(dropQueue[0])} after the first scan marker, found ${JSON.stringify(raw)}`);
+        }
+        dropQueue.shift();
         continue;
       }
       if (t === "") {
