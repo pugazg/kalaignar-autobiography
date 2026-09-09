@@ -93,12 +93,13 @@ function sourceReading(text, W, layer) {
   }
   const out = [];
   const pages = new Set();
+  const markers = [];
   let page = null, stoppedAt = null;
   for (let i = start; i < lines.length; i++) {
     const rawLine = lines[i];
     const probe = rawLine.replace(/\s+$/, "");
     const pm = isPageMarker(probe);
-    if (pm) { page = pageOf(pm); pages.add(page); continue; }
+    if (pm) { page = pageOf(pm); pages.add(page); markers.push(W.pageMarker === "html-comment" ? { scanPage: Number(pm[1]) } : { pdfPage: Number(pm[1]), printedPage: Number(pm[2]) }); continue; }
     if (probe.trim() === "") continue;
     if (/^-{3,}$/.test(probe)) { if (page === W.pages.to) { stoppedAt = page; break; } continue; }
     if (/^<!--[\s\S]*-->$/.test(probe)) continue;
@@ -107,7 +108,15 @@ function sourceReading(text, W, layer) {
     out.push(rawLine);
   }
   const sorted = [...pages].sort((a, b) => a - b);
-  return { text: out.join("\n"), first: sorted[0] ?? null, last: sorted[sorted.length - 1] ?? null, count: sorted.length, stoppedAt };
+  return { text: out.join("\n"), markers, first: sorted[0] ?? null, last: sorted[sorted.length - 1] ?? null, count: sorted.length, stoppedAt };
+}
+
+// Expand a frozen "A-B" page-range string into the inclusive integer sequence [A..B].
+function rangeSeq(spec) {
+  const m = /^(\d+)\s*[-–—]\s*(\d+)$/.exec(String(spec).trim());
+  if (!m) return null;
+  const from = Number(m[1]), to = Number(m[2]);
+  return to < from ? null : Array.from({ length: to - from + 1 }, (_, k) => from + k);
 }
 // Generated reading text: the same ordered reading strings, reconstructed from speech.json blocks.
 function generatedReadingText(stream) {
@@ -157,6 +166,28 @@ for (const [slug, W] of Object.entries(WORKS)) {
   }
   eq(speech.sourcePages, Array.from({ length: W.pages.count }, (_, k) => W.pages.from + k), `${slug}: generated sourcePages == exact contiguous body range ${W.pages.from}–${W.pages.to}`);
   if (W.printedSections) eq(speech.tamil.blocks.filter((b) => b.kind === "heading").length, W.printedSections, `${slug}: exactly ${W.printedSections} printed section headings`);
+
+  // ── DUAL-COORDINATE MARKER PROOF — independently derived from the frozen source metadata.json ──
+  // For pdf-printed sources this proves BOTH the PDF and the printed coordinate, paired and in order
+  // (the printed-only coverage above cannot detect a PDF-coordinate drift); for the scan source it
+  // proves the scan sequence. Expectations come from metadata, so a stale constant cannot diverge.
+  const meta = JSON.parse(fs.readFileSync(path.join(W.repo, W.sourcePath, "metadata.json"), "utf8"));
+  let expectedMarkers;
+  if (W.pageMarker === "pdf-printed") {
+    const pdfSeq = rangeSeq(meta.structure.body_pdf_pages);
+    const printedSeq = rangeSeq(meta.structure.printed_body_pages);
+    ok(!!pdfSeq && !!printedSeq, `${slug}: metadata body_pdf_pages / printed_body_pages parse`);
+    eq(pdfSeq.length, meta.structure.body_pdf_page_count, `${slug}: metadata body_pdf_page_count matches its PDF range`);
+    eq(printedSeq.length, pdfSeq.length, `${slug}: metadata printed range length matches PDF range length`);
+    expectedMarkers = pdfSeq.map((pdfPage, i) => ({ pdfPage, printedPage: printedSeq[i] }));
+  } else {
+    const scanSeq = rangeSeq(meta.source.speech_scan_pages);
+    ok(!!scanSeq, `${slug}: metadata source.speech_scan_pages parse`);
+    expectedMarkers = scanSeq.map((scanPage) => ({ scanPage }));
+  }
+  eq(expectedMarkers.length, W.pages.count, `${slug}: metadata-derived marker count == ${W.pages.count}`);
+  eq(taSrc.markers, expectedMarkers, `${slug}: Tamil raw page-marker sequence == metadata-derived sequence (dual-coordinate, ordered, no dup/omission/mispair)`);
+  eq(enSrc.markers, expectedMarkers, `${slug}: English raw page-marker sequence == metadata-derived sequence (dual-coordinate, ordered, no dup/omission/mispair)`);
 }
 
 // ── PER-WORK SEMANTIC SAFEGUARDS ─────────────────────────────────────────────────────────────────

@@ -117,6 +117,7 @@ function parseLayer(text, cfg, layer) {
 
   const blocks = [];
   const pages = new Set();
+  const markers = []; // full ordered page-marker sequence, BOTH coordinates for pdf-printed
   let page = null;
   let para = null; // { lines: [] }
   const flush = () => {
@@ -134,7 +135,13 @@ function parseLayer(text, cfg, layer) {
     const rawLine = lines[i];
     const probe = rawLine.replace(/\s+$/, "");
     const pm = isPageMarker(probe);
-    if (pm) { flush(); page = pageOf(pm); pages.add(page); continue; }
+    if (pm) {
+      flush(); page = pageOf(pm); pages.add(page);
+      // Retain the FULL marker: both PDF and printed coordinates for pdf-printed sources, the scan
+      // coordinate for html-comment sources. This is the coverage evidence proved against metadata.
+      markers.push(cfg.pageMarker === "html-comment" ? { scanPage: Number(pm[1]) } : { pdfPage: Number(pm[1]), printedPage: Number(pm[2]) });
+      continue;
+    }
     if (probe.trim() === "") { flush(); continue; }        // structural blank separator
     if (/^-{3,}$/.test(probe)) {
       // A horizontal rule AFTER the final expected body page terminates the reading body — it is the
@@ -160,7 +167,16 @@ function parseLayer(text, cfg, layer) {
   }
   flush();
   const sorted = [...pages].sort((a, b) => a - b);
-  return { blocks, pages: sorted, firstPage: sorted[0] ?? null, lastPage: sorted[sorted.length - 1] ?? null, stoppedAt };
+  return { blocks, pages: sorted, markers, firstPage: sorted[0] ?? null, lastPage: sorted[sorted.length - 1] ?? null, stoppedAt };
+}
+
+// Expand a frozen "A-B" page-range string into the inclusive integer sequence [A..B].
+function rangeSeq(spec, label) {
+  const m = /^(\d+)\s*[-–—]\s*(\d+)$/.exec(String(spec).trim());
+  if (!m) die(`${label}: unparseable page range ${JSON.stringify(spec)}`);
+  const from = Number(m[1]), to = Number(m[2]);
+  if (to < from) die(`${label}: inverted page range ${spec}`);
+  return Array.from({ length: to - from + 1 }, (_, k) => from + k);
 }
 
 const finalizeBlocks = (blocks) => blocks; // already in model shape
@@ -196,6 +212,28 @@ function buildWork(cfg) {
     if (parsed.lastPage !== P.to) die(`${cfg.slug}/${layer}: last source page ${parsed.lastPage} != expected ${P.to} (canonical body not fully consumed)`);
     if (parsed.pages.length !== P.count) die(`${cfg.slug}/${layer}: ${parsed.pages.length} source pages != expected ${P.count}`);
     if (parsed.stoppedAt !== null && parsed.stoppedAt !== P.to) die(`${cfg.slug}/${layer}: a trailing-apparatus stop fired at page ${parsed.stoppedAt} BEFORE the final body page ${P.to}`);
+  }
+
+  // DUAL-COORDINATE MARKER PROOF — derived from the FROZEN source metadata, not implementation
+  // constants. For a pdf-printed source both PDF and printed coordinates are proved, paired and in
+  // order; for the html-comment (scan) source the scan sequence is proved. This binds coverage to the
+  // source contract so a stale constant can never silently diverge.
+  let expectedMarkers;
+  if (cfg.pageMarker === "pdf-printed") {
+    const pdfSeq = rangeSeq(meta.structure.body_pdf_pages, `${cfg.slug} structure.body_pdf_pages`);
+    const printedSeq = rangeSeq(meta.structure.printed_body_pages, `${cfg.slug} structure.printed_body_pages`);
+    if (pdfSeq.length !== meta.structure.body_pdf_page_count) die(`${cfg.slug}: body_pdf_page_count ${meta.structure.body_pdf_page_count} != PDF range length ${pdfSeq.length}`);
+    if (printedSeq.length !== pdfSeq.length) die(`${cfg.slug}: printed range length ${printedSeq.length} != PDF range length ${pdfSeq.length}`);
+    expectedMarkers = pdfSeq.map((pdfPage, i) => ({ pdfPage, printedPage: printedSeq[i] }));
+  } else {
+    const scanSeq = rangeSeq(meta.source.speech_scan_pages, `${cfg.slug} source.speech_scan_pages`);
+    expectedMarkers = scanSeq.map((scanPage) => ({ scanPage }));
+  }
+  if (expectedMarkers.length !== P.count) die(`${cfg.slug}: metadata-derived marker count ${expectedMarkers.length} != expected ${P.count}`);
+  for (const [layer, parsed] of [["ta", ta], ["en", en]]) {
+    if (JSON.stringify(parsed.markers) !== JSON.stringify(expectedMarkers)) {
+      die(`${cfg.slug}/${layer}: raw page-marker sequence does not equal the metadata-derived expected sequence (dual-coordinate coverage)`);
+    }
   }
 
   const headings = (b) => b.blocks.filter((x) => x.kind === "heading");
