@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 export default function PublicationItemReader({
   pubSlug,
   pubTitleTa,
+  readingUnitKind = "poem",
   item,
   index,
   total,
@@ -24,6 +25,7 @@ export default function PublicationItemReader({
 }: {
   pubSlug: string;
   pubTitleTa: string;
+  readingUnitKind?: "poem" | "section";
   item: PoetryItem;
   index: number;
   total: number;
@@ -33,6 +35,10 @@ export default function PublicationItemReader({
 }) {
   const { lang } = useLang();
   const ta = lang === "ta";
+  // A verse-novel's units are SECTIONS; an ordinary publication's are poems.
+  const unitLabel = readingUnitKind === "section"
+    ? ta ? `பிரிவு ${item.ordinal} / ${total}` : `Section ${item.ordinal} of ${total}`
+    : ta ? `கவிதை ${item.ordinal} / ${total}` : `Poem ${item.ordinal} of ${total}`;
   const [font, setFont] = useState(1);
   const [showEn, setShowEn] = useState(false);
   const sizes = ["text-base", "text-lg", "text-xl"];
@@ -64,7 +70,7 @@ export default function PublicationItemReader({
       <article className="mx-auto max-w-2xl px-5 py-10 sm:px-6">
         <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-brass">
           <Feather className="h-3.5 w-3.5" aria-hidden />
-          {ta ? `கவிதை ${item.ordinal} / ${total}` : `Poem ${item.ordinal} of ${total}`}
+          {unitLabel}
           {/* The title page's printed item number, where it disagrees with the canonical sequence —
               carried as a source anomaly, never a correction of the ordinal. */}
           {item.printedOrdinal !== undefined && item.printedOrdinal !== item.ordinal && (

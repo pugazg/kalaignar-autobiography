@@ -31,6 +31,10 @@ export type PublicationBrief = {
   editionStatement: string | null;
   publicationYear: number | null;
   itemCount: number;
+  /** "poem" (default) for a poetry publication; "section" for a verse-novel whose units are sections. */
+  readingUnitKind?: "poem" | "section";
+  /** Optional source-visible work-form label (e.g. the verse-novel's `ஓவியக் கவிதை நாவல்`). */
+  workForm?: { ta: string; en: string };
   items: PublicationItemBrief[];
   groups?: PublicationGroupBrief[];
 };
@@ -95,6 +99,13 @@ function renderGroupedItems(pub: PublicationBrief, ta: boolean) {
  */
 function describePublication(pub: PublicationBrief, ta: boolean): string {
   const n = pub.itemCount;
+  // A verse-novel is ONE continuous work read in its source-established SECTIONS — never described as
+  // independent poems.
+  if (pub.readingUnitKind === "section") {
+    return ta
+      ? `இது ஒரே தொடர்ச்சியான படைப்பு; அதன் மூலத்தில் அமைந்த ${n} பிரிவுகளாக இங்கு வாசிக்கலாம். கீழே நூலின் வரிசைப்படி பட்டியலிடப்பட்டுள்ளன.`
+      : `This is one continuous work, read here in its ${n} source-established sections. They are listed below in the book's order.`;
+  }
   const sections = pub.groups && pub.groups.length > 1 ? pub.groups.length : 0;
   if (sections > 0) {
     return ta
@@ -110,6 +121,13 @@ function describePublication(pub: PublicationBrief, ta: boolean): string {
 export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
   const { lang } = useLang();
   const ta = lang === "ta";
+  // A verse-novel (readingUnitKind "section") is labelled by its work form and counts SECTIONS, never
+  // poems; an ordinary poetry publication keeps "Poetry collection" / "N poems".
+  const isSection = pub.readingUnitKind === "section";
+  const kindLabel = isSection ? (ta ? pub.workForm?.ta ?? "தொடர் நூல்" : pub.workForm?.en ?? "Continuous work") : ta ? "கவிதைத் தொகுப்பு" : "Poetry collection";
+  const unitBadge = isSection
+    ? ta ? `${pub.itemCount} பிரிவுகள்` : `${pub.itemCount} sections`
+    : ta ? `${pub.itemCount} கவிதைகள்` : `${pub.itemCount} poems`;
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
       <header className="border-b border-ink/10 dark:border-white/10">
@@ -120,13 +138,13 @@ export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
             </Link>
           </div>
           <p className="mt-5 flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-brass">
-            <Feather className="h-3.5 w-3.5" aria-hidden /> {ta ? "கவிதைத் தொகுப்பு" : "Poetry collection"}
+            <Feather className="h-3.5 w-3.5" aria-hidden /> {kindLabel}
           </p>
           <h1 className="mt-3 font-tamil text-3xl font-semibold leading-snug text-ink dark:text-night-text sm:text-4xl" lang="ta">{pub.titleTa}</h1>
           <p className="mt-1 font-display text-xl text-ink/65 dark:text-night-text/65">{pub.titleEn}</p>
           <p className="mt-2 text-sm text-ink/60 dark:text-night-text/60" lang={lang}>{ta ? pub.authorTa : pub.authorEn}</p>
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-ink/55 dark:text-night-text/55">
-            <span className="inline-flex items-center gap-1.5"><Layers className="h-3.5 w-3.5" aria-hidden />{ta ? `${pub.itemCount} கவிதைகள்` : `${pub.itemCount} poems`}</span>
+            <span className="inline-flex items-center gap-1.5"><Layers className="h-3.5 w-3.5" aria-hidden />{unitBadge}</span>
             {pub.editionStatement && <span lang="ta">{pub.editionStatement}</span>}
           </div>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink/65 dark:text-night-text/65" lang={lang}>

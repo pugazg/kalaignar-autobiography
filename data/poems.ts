@@ -502,6 +502,17 @@ export interface PoetryPublication {
   shelf: "poetry";
   readerStructure: "poetry-publication";
   subtype: "poetry-publication";
+  /**
+   * SEMANTIC reading-unit kind. Absent ⇒ `"poem"` — a normal poetry publication whose items are
+   * independently-authored poems (both frozen Wave-4 publications; their payloads carry no such key
+   * and are byte-identical). `"section"` marks ONE continuous work — a verse-novel — whose reading
+   * units are source-established SECTIONS, not independent poems; the reader must say "N sections",
+   * never "N poems". This is a shared-model fact set by the declaration, never by a source adapter.
+   */
+  readingUnitKind?: "poem" | "section";
+  /** Optional source-visible work-form label (e.g. the verse-novel's `ஓவியக் கவிதை நாவல்`), for
+   *  truthful landing copy. Absent on the frozen publications. */
+  workForm?: PoemBilingualText;
   title: PoemBilingualText;
   author: PoemBilingualName;
   /** Nullable and left null unless the publication's own source states it. Never inferred. */

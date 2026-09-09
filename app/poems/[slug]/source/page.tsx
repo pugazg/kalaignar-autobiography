@@ -6,6 +6,12 @@ import PoemSource from "@/components/PoemSource";
 import PublicationSource from "@/components/PublicationSource";
 import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import type { Poem, PoemProvenance, PoetryPublicationProvenance } from "@/data/poems";
+import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
+
+// Wave-6 Batch-4 direct readers extend the /source prerender set and its fail-closed guard only; the
+// discovered registries and the sitemap are untouched (see app/poems/[slug]/page.tsx).
+const ALL_POEM_SLUGS = [...POEM_SLUGS, ...WAVE6_POEM_SLUGS] as readonly string[];
+const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
 
 function load<T>(slug: string, file: string): T | null {
   try {
@@ -15,10 +21,10 @@ function load<T>(slug: string, file: string): T | null {
   }
 }
 
-const isPublication = (slug: string) => (POETRY_PUBLICATION_SLUGS as readonly string[]).includes(slug);
+const isPublication = (slug: string) => ALL_PUBLICATION_SLUGS.includes(slug);
 
 export function generateStaticParams() {
-  return [...POEM_SLUGS, ...POETRY_PUBLICATION_SLUGS].map((slug) => ({ slug }));
+  return [...ALL_POEM_SLUGS, ...ALL_PUBLICATION_SLUGS].map((slug) => ({ slug }));
 }
 
 // DERIVED, never written. A literal description here would state facts about ONE work: three of the
@@ -63,7 +69,7 @@ export default function PoemSourcePage({ params }: { params: { slug: string } })
     if (!prov) notFound();
     return <PublicationSource slug={params.slug} prov={prov} />;
   }
-  if (!(POEM_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_POEM_SLUGS.includes(params.slug)) notFound();
   const prov = load<PoemProvenance>(params.slug, "provenance.json");
   if (!prov) notFound();
   // The editorial-exception record lives on the WORK, because it applies to both reading layers
