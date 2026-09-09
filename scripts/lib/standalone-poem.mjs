@@ -275,6 +275,20 @@ function parseTamil(workDir, decl, pageTransition) {
       }
       blocks.push({ scan, printed, lines: m[3].split("\n") });
     }
+  } else if (decl.tamil.convention === "fenced-scan-page") {
+    // `<!-- scan_page: N / printed_page: M -->` (M a number or the literal `null`) followed by a
+    // ```text fence. The printed page comes from the marker itself and is cross-checked against the
+    // declaration's page map, exactly like the fenced-labelled convention checks its label.
+    const re = /<!-- scan_page:\s*(\d+)\s*\/\s*printed_page:\s*(null|\d+)\s*-->\n```text\n([\s\S]*?)\n```/g;
+    let m;
+    while ((m = re.exec(src)) !== null) {
+      const scan = Number(m[1]);
+      const printed = m[2] === "null" ? null : Number(m[2]);
+      if (printed !== decl.printedPageFor(scan)) {
+        throw new Error(`scan ${scan}: fenced marker printed page ${printed} disagrees with the page map ${decl.printedPageFor(scan)}`);
+      }
+      blocks.push({ scan, printed, lines: m[3].split("\n") });
+    }
   } else if (decl.tamil.convention === "plain-marker") {
     // Everything before the first scan marker is Markdown front matter of the assembly FILE, not the
     // poem; the poem region begins at the first declared scan marker, exactly as the English
