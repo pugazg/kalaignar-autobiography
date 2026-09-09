@@ -60,7 +60,7 @@ const WORKS = [
     titleTa: "நமது நிலை", titleEn: "Our Position",
     sectionTitleTa: "தமிழ் மூல உரை", sectionTitleEn: "English translation",
     pageBasis: "scan",
-    expect: { editorialUnits: 2, dateNull: true },
+    expect: { editorialUnits: 2, dateNull: true, pages: { from: 3, to: 60, count: 58 } },
   },
   {
     slug: "idhaya-perikai", repo: () => PS_REPO, commit: PS_COMMIT,
@@ -72,7 +72,7 @@ const WORKS = [
     titleTa: "இதய பேரிகை", titleEn: "Idhaya Perikai",
     sectionTitleTa: "தமிழ் மூல உரை", sectionTitleEn: "English translation",
     pageBasis: "printed",
-    expect: { printedSections: 7, dateNull: true },
+    expect: { printedSections: 7, dateNull: true, pages: { from: 3, to: 34, count: 32 } },
   },
   {
     slug: "palli-vazhkkai", repo: () => PS_REPO, commit: PS_COMMIT,
@@ -84,7 +84,7 @@ const WORKS = [
     titleTa: "பள்ளி வாழ்க்கை", titleEn: "Palli Vazhkkai",
     sectionTitleTa: "தமிழ் மூல உரை", sectionTitleEn: "English translation",
     pageBasis: "printed",
-    expect: { compilation: true, dateNull: true },
+    expect: { compilation: true, dateNull: true, pages: { from: 5, to: 80, count: 76 } },
   },
 ];
 
@@ -126,26 +126,41 @@ function parseLayer(text, cfg, layer) {
     }
     para = null;
   };
+  let stoppedAt = null; // the page a trailing-apparatus stop fired at (for coverage proof)
   for (let i = start; i < lines.length; i++) {
-    const l = lines[i].replace(/\s+$/, "");
-    const pm = isPageMarker(l);
+    // rawLine is the EXACT source bytes (split has removed only the "\n"). Structural recognition
+    // uses a trailing-whitespace-tolerant PROBE, but literary content — paragraph text and heading
+    // content after the marker — is taken from rawLine verbatim: never trimmed, collapsed or NFC'd.
+    const rawLine = lines[i];
+    const probe = rawLine.replace(/\s+$/, "");
+    const pm = isPageMarker(probe);
     if (pm) { flush(); page = pageOf(pm); pages.add(page); continue; }
-    if (l.trim() === "" ) { flush(); continue; }
-    if (/^-{3,}$/.test(l)) { flush(); continue; }
-    if (/^<!--[\s\S]*-->$/.test(l)) { continue; } // stray HTML comment (non-page) — apparatus, dropped
-    const h = HEADING_RE.exec(l);
-    if (h) {
+    if (probe.trim() === "") { flush(); continue; }        // structural blank separator
+    if (/^-{3,}$/.test(probe)) {
+      // A horizontal rule AFTER the final expected body page terminates the reading body — it is the
+      // separator before a trailing workflow/status footer (idhaya's `**Stage … complete**` block),
+      // which is process apparatus, never literary speech. Before the final page it is an ordinary
+      // in-body separator (e.g. namathu's rule between its two editorial units), so it just flushes.
+      if (page === cfg.expect.pages.to) { flush(); stoppedAt = page; break; }
+      flush(); continue;
+    }
+    if (/^<!--[\s\S]*-->$/.test(probe)) { continue; }         // stray HTML comment (non-page) — apparatus
+    const hm = /^(#{1,6})[ \t]+/.exec(rawLine);               // Markdown heading marker (syntax only)
+    if (hm) {
       // Trailing-apparatus stop: in the pdf-printed works the reading-body page markers are H2/H3
       // and printed section headings are H3/H4, so a bare level-2 heading that is NOT a page marker
       // (e.g. `## English workflow progress`) marks the end of the reading body. namathu's body ends
-      // at EOF (no trailing apparatus) and its printed sections are H2, so it uses no such stop.
-      if (cfg.pageMarker === "pdf-printed" && h[1].length === 2) { flush(); break; }
-      flush(); blocks.push({ kind: "heading", text: h[2], sourcePage: page }); continue;
+      // at EOF (no trailing apparatus) and its printed sections are H2, so it uses no such stop. The
+      // coverage assertions below independently prove this stop never truncated a canonical body.
+      if (cfg.pageMarker === "pdf-printed" && hm[1].length === 2) { flush(); stoppedAt = page; break; }
+      // Heading CONTENT after the marker+separator is kept exactly (trailing whitespace included).
+      flush(); blocks.push({ kind: "heading", text: rawLine.slice(hm[0].length), sourcePage: page }); continue;
     }
-    (para ||= { lines: [] }).lines.push(l);
+    (para ||= { lines: [] }).lines.push(rawLine);            // EXACT literary line
   }
   flush();
-  return { blocks, pages: [...pages].sort((a, b) => a - b) };
+  const sorted = [...pages].sort((a, b) => a - b);
+  return { blocks, pages: sorted, firstPage: sorted[0] ?? null, lastPage: sorted[sorted.length - 1] ?? null, stoppedAt };
 }
 
 const finalizeBlocks = (blocks) => blocks; // already in model shape
@@ -162,6 +177,26 @@ function buildWork(cfg) {
   // Governance: date must be null for every Batch-3 work.
   const metaDate = cfg.subtype === "assembly-speech" ? meta.date : meta.speech.date;
   if (metaDate !== null) die(`${cfg.slug}: source metadata date is not null (${metaDate}) — refusing to import`);
+
+  // Namathu textual-authority contract, taken DIRECTLY from source metadata (never inferred from
+  // prose). Fail closed if the source does not satisfy it: the booklet transcription must be the
+  // only textual authority and no Assembly/Council Official-Report text/wording may be imported.
+  if (cfg.slug === "namathu-nilai") {
+    if (meta.source.only_textual_authority !== true) die("namathu: source.only_textual_authority is not true");
+    if (meta.transcription.external_legislative_text_imported !== false) die("namathu: transcription.external_legislative_text_imported is not false");
+    if (meta.translation.external_legislative_wording_imported !== false) die("namathu: translation.external_legislative_wording_imported is not false");
+  }
+
+  // COVERAGE: prove the whole canonical body was consumed and a trailing-apparatus stop (if any) did
+  // not truncate it. The expected page range/count comes from the frozen source metadata; both layers
+  // must reach the final expected body page, and any pdf-printed stop must fire only AT that page.
+  const P = cfg.expect.pages;
+  for (const [layer, parsed] of [["ta", ta], ["en", en]]) {
+    if (parsed.firstPage !== P.from) die(`${cfg.slug}/${layer}: first source page ${parsed.firstPage} != expected ${P.from}`);
+    if (parsed.lastPage !== P.to) die(`${cfg.slug}/${layer}: last source page ${parsed.lastPage} != expected ${P.to} (canonical body not fully consumed)`);
+    if (parsed.pages.length !== P.count) die(`${cfg.slug}/${layer}: ${parsed.pages.length} source pages != expected ${P.count}`);
+    if (parsed.stoppedAt !== null && parsed.stoppedAt !== P.to) die(`${cfg.slug}/${layer}: a trailing-apparatus stop fired at page ${parsed.stoppedAt} BEFORE the final body page ${P.to}`);
+  }
 
   const headings = (b) => b.blocks.filter((x) => x.kind === "heading");
   const paragraphs = (b) => b.blocks.filter((x) => x.kind === "paragraph");
@@ -219,7 +254,11 @@ function buildWork(cfg) {
           frontMatterScanPages: meta.source.front_matter_scan_pages,
           speechScanPages: meta.source.speech_scan_pages,
           scanSha256: meta.source.sha256,
-          onlyTextualAuthority: meta.source.only_textual_authority === true,
+          // Machine-readable textual-authority facts copied directly from the source metadata — the
+          // authority evidence for "no Official-Report wording imported", NOT a prose scan.
+          onlyTextualAuthority: meta.source.only_textual_authority,
+          externalLegislativeTextImported: meta.transcription.external_legislative_text_imported,
+          externalLegislativeWordingImported: meta.translation.external_legislative_wording_imported,
           // The booklet is an edited two-House compilation; the source establishes NO single speech date.
           speechFactsNotStated: ["date"],
           speechFactsNoteEn: "The source is an edited two-House booklet compilation of replies across two debates; it establishes no single Assembly/Council speech date. The 1971-05-22 booklet publication date is not a speech date.",

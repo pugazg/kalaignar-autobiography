@@ -1916,19 +1916,6 @@
     "sourcePages": [
      34
     ]
-   },
-   {
-    "kind": "paragraph",
-    "segments": [
-     {
-      "text": "**Stage T1 complete:** all 32 body pages (PDF 4–35 / printed 3–34) have a first-pass Tamil transcription.\n**Stage T2 complete:** all 32 body pages have passed strict visual comparison and confirmed corrections have been consolidated.\n**Stage T3 complete:** consolidation, stale-reading and page-boundary review passed; the Tamil layer was frozen as `verified-complete` on 2026-08-14.\n**Next gate:** Stage E1 English translation from the verified Tamil layer only.\n**English translation:** ready-not-started.",
-      "sourcePage": 34,
-      "joinToNext": "end"
-     }
-    ],
-    "sourcePages": [
-     34
-    ]
    }
   ]
  },
@@ -3215,7 +3202,7 @@
     "kind": "paragraph",
     "segments": [
      {
-      "text": "> “Kongars, Kalingars, fierce Karunadars,\n> Bangalars, Gangars, the many Kattiyars,\n> with the northern Aryans, in the tumult of flourishing Tamil,\n> `கடமலை வேட்டமென் கட்டபுலம்பிரியாது`\n> [untranslated: syntax unresolved in this printed edition],\n> through the fierce flood of the great Ganges,\n> on the day our daughter was bathed there,\n> before two hundred and fifty Aryan kings,\n> you alone opened your battle-fierce eyes—\n> what they saw was cruel-eyed Death.”",
+      "text": "> “Kongars, Kalingars, fierce Karunadars,  \n> Bangalars, Gangars, the many Kattiyars,  \n> with the northern Aryans, in the tumult of flourishing Tamil,  \n> `கடமலை வேட்டமென் கட்டபுலம்பிரியாது`  \n> [untranslated: syntax unresolved in this printed edition],  \n> through the fierce flood of the great Ganges,  \n> on the day our daughter was bathed there,  \n> before two hundred and fifty Aryan kings,  \n> you alone opened your battle-fierce eyes—  \n> what they saw was cruel-eyed Death.”",
       "sourcePage": 19,
       "joinToNext": "end"
      }
@@ -3990,19 +3977,6 @@
     "segments": [
      {
       "text": "—it must do so. Yet our government has only now, in the weavers’ righteous struggle, left a ten-year-old boy floating in blood. Will this government come forward to protect children? Will it give fresh blossoming to the buds being scorched?",
-      "sourcePage": 34,
-      "joinToNext": "end"
-     }
-    ],
-    "sourcePages": [
-     34
-    ]
-   },
-   {
-    "kind": "paragraph",
-    "segments": [
-     {
-      "text": "**Stage E1 complete:** all 32 body pages (PDF 4–35 / printed 3–34) have a first-pass English translation from the frozen verified Tamil layer.\n**Stage E2 fidelity review complete:** all 32 body pages have passed independent Tamil→English review and all **19 / 19 confirmed corrections** have been consolidated.\n**Stage E3 final Tamil→English verification complete:** all 32 body pages were compared end-to-end against the frozen Tamil; the English layer is **`verified-complete`**.",
       "sourcePage": 34,
       "joinToNext": "end"
      }

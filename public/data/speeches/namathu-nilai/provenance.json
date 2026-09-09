@@ -15,6 +15,8 @@
   "speechScanPages": "3-60",
   "scanSha256": "5cfbf0e5d01a9cedb252a12168e9e6a14a9a2061c7d78848dde692d5fa241acb",
   "onlyTextualAuthority": true,
+  "externalLegislativeTextImported": false,
+  "externalLegislativeWordingImported": false,
   "speechFactsNotStated": [
    "date"
   ],

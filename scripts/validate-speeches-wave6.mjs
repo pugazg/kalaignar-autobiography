@@ -39,18 +39,20 @@ const WORKS = {
     repo: AS_REPO, sourcePath: "speeches/1971/1971-namathu-nilai", subtree: "6aafbb1e5573ceb4561e6d5e27413396de635144",
     scanSha: "5cfbf0e5d01a9cedb252a12168e9e6a14a9a2061c7d78848dde692d5fa241acb",
     speechSha: "5d15a03c11831812ae7e48028c3b367a0ed962b18264d1135c7d830c73cf0faa",
-    provSha: "2d0250a018a12053fa1997423944524d02eada7150e678927511266181e943bc",
+    provSha: "e771c069326e06662570548eebffd279a9007790dbfa1826a4191261bc14316f",
     files: { ta: "transcript.md", en: "translation.md" }, pageMarker: "html-comment",
     wrapperTa: /^#\s+தமிழ்\s*மூல\s*உரை\s*$/, wrapperEn: /^#\s+English translation\s*$/,
     subtype: "assembly-speech",
+    pages: { from: 3, to: 60, count: 58 },
   },
   "idhaya-perikai": {
     repo: PS_REPO, sourcePath: "speeches/idhaya-perikai", subtree: "065a6354d0215762509b109ded4f7951d617ca60",
     scanSha: "4217717379b028de17ed9830dac4bdfd54ae7256705b891c207d646707640b9d",
-    speechSha: "9bec7fa17dc101a8550d7932b0be47b68c2546ecfcb7fdaf451ff0b23fec531f",
-    provSha: "15c68776c9c38eb4b6f944838454ac88741543c1d81015a6e4dfa37e01c1a530",
+    speechSha: "80c3f6c2f1a75acc03d6dbfc35c982fac5a5ab4b70ce7f934e9414dff7b969db",
+    provSha: "f292bcb4bfe07ac923524a41f3e33110fc0bd720bb75d1d9f239d3e62e288d70",
     files: { ta: "transcription-ta.md", en: "translation-en.md" }, pageMarker: "pdf-printed",
     subtype: "public-speech",
+    pages: { from: 3, to: 34, count: 32 }, printedSections: 7,
   },
   "palli-vazhkkai": {
     repo: PS_REPO, sourcePath: "speeches/palli-vazhkkai", subtree: "46d49f25d0c2d6543a4888034d77f637cd654382",
@@ -59,6 +61,7 @@ const WORKS = {
     provSha: "12d64c29c14b48cf1e8891aa054e8669b7f34aba163a250a4e3c3061e1a6d546",
     files: { ta: "transcription-ta.md", en: "translation-en.md" }, pageMarker: "pdf-printed",
     subtype: "public-speech",
+    pages: { from: 5, to: 80, count: 76 },
   },
 };
 
@@ -73,10 +76,15 @@ const HEADING_RE = /^(#{1,6})\s+(.+?)\s*$/;
 // INDEPENDENT source reading text: the ordered reading strings (heading texts and paragraph texts)
 // drawn straight from the raw transcript/translation, joined by "\n". Apparatus, page markers and
 // heading markers are the only things removed; literary text is untouched.
-function sourceReadingText(text, W, layer) {
+// This re-derivation is INDEPENDENT of the importer: it re-reads the RAW source and preserves every
+// literary byte (paragraph text and heading content) EXACTLY — a trailing-whitespace-tolerant probe is
+// used for structural recognition only, never applied to the literary strings themselves. It returns
+// the reading text plus page coverage so the coverage gate can prove the whole body was consumed.
+function sourceReading(text, W, layer) {
   const lines = text.split("\n");
   const isPageMarker = (l) => (W.pageMarker === "html-comment" ? HTML_PAGE_RE.exec(l) : PDF_PAGE_RE.exec(l));
-  let start = 0;
+  const pageOf = (m) => (W.pageMarker === "html-comment" ? Number(m[1]) : Number(m[2]));
+  let start;
   if (W.pageMarker === "html-comment") {
     const wrap = layer === "ta" ? W.wrapperTa : W.wrapperEn;
     start = lines.findIndex((l) => wrap.test(l.replace(/\s+$/, ""))) + 1;
@@ -84,16 +92,22 @@ function sourceReadingText(text, W, layer) {
     start = lines.findIndex((l) => isPageMarker(l.replace(/\s+$/, "")));
   }
   const out = [];
+  const pages = new Set();
+  let page = null, stoppedAt = null;
   for (let i = start; i < lines.length; i++) {
-    const l = lines[i].replace(/\s+$/, "");
-    if (isPageMarker(l)) continue;
-    if (l.trim() === "" || /^-{3,}$/.test(l)) continue;
-    if (/^<!--[\s\S]*-->$/.test(l)) continue;
-    const h = HEADING_RE.exec(l);
-    if (h) { if (W.pageMarker === "pdf-printed" && h[1].length === 2) break; out.push(h[2]); continue; }
-    out.push(l);
+    const rawLine = lines[i];
+    const probe = rawLine.replace(/\s+$/, "");
+    const pm = isPageMarker(probe);
+    if (pm) { page = pageOf(pm); pages.add(page); continue; }
+    if (probe.trim() === "") continue;
+    if (/^-{3,}$/.test(probe)) { if (page === W.pages.to) { stoppedAt = page; break; } continue; }
+    if (/^<!--[\s\S]*-->$/.test(probe)) continue;
+    const hm = /^(#{1,6})[ \t]+/.exec(rawLine);
+    if (hm) { if (W.pageMarker === "pdf-printed" && hm[1].length === 2) { stoppedAt = page; break; } out.push(rawLine.slice(hm[0].length)); continue; }
+    out.push(rawLine);
   }
-  return out.join("\n");
+  const sorted = [...pages].sort((a, b) => a - b);
+  return { text: out.join("\n"), first: sorted[0] ?? null, last: sorted[sorted.length - 1] ?? null, count: sorted.length, stoppedAt };
 }
 // Generated reading text: the same ordered reading strings, reconstructed from speech.json blocks.
 function generatedReadingText(stream) {
@@ -125,10 +139,24 @@ for (const [slug, W] of Object.entries(WORKS)) {
   // ── THE FIDELITY GATE ────────────────────────────────────────────────────────────────────────
   const taRaw = fs.readFileSync(path.join(W.repo, W.sourcePath, W.files.ta), "utf8");
   const enRaw = fs.readFileSync(path.join(W.repo, W.sourcePath, W.files.en), "utf8");
-  eq(generatedReadingText(speech.tamil), sourceReadingText(taRaw, W, "ta"), `${slug}: Tamil source→generated reading text byte-identical`);
-  eq(generatedReadingText(speech.english), sourceReadingText(enRaw, W, "en"), `${slug}: English source→generated reading text byte-identical`);
+  const taSrc = sourceReading(taRaw, W, "ta");
+  const enSrc = sourceReading(enRaw, W, "en");
+  eq(generatedReadingText(speech.tamil), taSrc.text, `${slug}: Tamil source→generated reading text byte-identical`);
+  eq(generatedReadingText(speech.english), enSrc.text, `${slug}: English source→generated reading text byte-identical`);
   // Verbatim spot-proof: every generated heading text exists verbatim in the raw source.
   for (const b of speech.tamil.blocks.filter((x) => x.kind === "heading")) ok(taRaw.includes(b.text), `${slug}: Tamil heading "${b.text.slice(0, 24)}…" verbatim in source`);
+
+  // ── COVERAGE: the whole canonical body was consumed; a trailing-apparatus stop (HR after the final
+  // page, or a non-page H2) fired only AT the final expected body page, never earlier. Independently
+  // derived from raw source and cross-checked against the generated payload's own sourcePages.
+  for (const [layer, src] of [["ta", taSrc], ["en", enSrc]]) {
+    eq(src.first, W.pages.from, `${slug}/${layer}: reading body starts at source page ${W.pages.from}`);
+    eq(src.last, W.pages.to, `${slug}/${layer}: reading body reaches the final source page ${W.pages.to}`);
+    eq(src.count, W.pages.count, `${slug}/${layer}: exactly ${W.pages.count} source body pages`);
+    ok(src.stoppedAt === null || src.stoppedAt === W.pages.to, `${slug}/${layer}: any trailing-apparatus stop fired only at the final body page (not early)`);
+  }
+  eq(speech.sourcePages, Array.from({ length: W.pages.count }, (_, k) => W.pages.from + k), `${slug}: generated sourcePages == exact contiguous body range ${W.pages.from}–${W.pages.to}`);
+  if (W.printedSections) eq(speech.tamil.blocks.filter((b) => b.kind === "heading").length, W.printedSections, `${slug}: exactly ${W.printedSections} printed section headings`);
 }
 
 // ── PER-WORK SEMANTIC SAFEGUARDS ─────────────────────────────────────────────────────────────────
@@ -145,7 +173,16 @@ const loadProv = (s) => JSON.parse(fs.readFileSync(path.join(root, "public/data/
   const eu = s.tamil.blocks.filter((b) => b.kind === "heading" && /^Editorial unit\s+\d/i.test(b.text));
   eq(eu.length, 2, "namathu keeps the two editorial units distinct");
   ok(pr.semantics.twoHouseWitness === true && !!pr.semantics.legislatureScopeNote, "namathu provenance records the two-House witness + scope note");
-  ok(!/only Assembly transcript|Official Report/i.test(JSON.stringify(s.tamil.blocks)) || true, "namathu does not import Official Report wording as textual authority"); // structural note-level guard
+  // TEXTUAL-AUTHORITY GATE (replaces the removed always-passing tautology). Read the frozen Namathu source
+  // metadata independently and require the machine-readable authority facts, then require the generated
+  // provenance to reproduce them EXACTLY. This is provenance evidence, not a prose scan for a phrase.
+  const nnMeta = JSON.parse(fs.readFileSync(path.join(WORKS["namathu-nilai"].repo, WORKS["namathu-nilai"].sourcePath, "metadata.json"), "utf8"));
+  eq(nnMeta.source.only_textual_authority, true, "namathu SOURCE: only_textual_authority === true");
+  eq(nnMeta.transcription.external_legislative_text_imported, false, "namathu SOURCE: transcription.external_legislative_text_imported === false");
+  eq(nnMeta.translation.external_legislative_wording_imported, false, "namathu SOURCE: translation.external_legislative_wording_imported === false");
+  eq(pr.source.onlyTextualAuthority, true, "namathu provenance reproduces onlyTextualAuthority === true");
+  eq(pr.source.externalLegislativeTextImported, false, "namathu provenance reproduces externalLegislativeTextImported === false");
+  eq(pr.source.externalLegislativeWordingImported, false, "namathu provenance reproduces externalLegislativeWordingImported === false");
 }
 
 // இதய பேரிகை — multi-section booklet
