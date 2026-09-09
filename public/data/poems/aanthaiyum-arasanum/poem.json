@@ -1,0 +1,3456 @@
+{
+ "workId": "aanthaiyum-arasanum",
+ "slug": "aanthaiyum-arasanum",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/aanthaiyum-arasanum",
+ "sourceCommit": "188d49cd4dcf2c6bbe2e9633841ff402b9959d08",
+ "shelf": "poetry",
+ "readerStructure": "poem",
+ "subtype": "poem",
+ "title": {
+  "ta": "ஆந்தையும் அரசனும்!",
+  "en": "Andhai and the King!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "publicationYear": 1965,
+ "editionStatement": "முரசொலி-பொங்கல் மலர், 1965",
+ "factsNotStated": [
+  "printed-page-numbers",
+  "cross-page-stanza-relationships"
+ ],
+ "transcriptionStatus": "verified source assembly — Phase 1 8/8, Phase 2 PASS 8/8, Phase 3 Gates 1–6 PASS / Tamil FINAL-CLEARED, source-completeness 8/8, 0 unresolved",
+ "translationStatus": "RELEASE-COMPLETE project-created translation — Phase 4 Batch 01 REVIEWED/PASS, editorial-consistency and release-integrity review PASS",
+ "tamil": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "மு.கருணாநிதி",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 18
+   },
+   {
+    "kind": "line",
+    "text": "தாழியில் உடலைப் புதைக்கும் நாளில்",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆழி சூழ் தென்னக மண்ணின் மீது",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கோழியூர் என்பது உறையூர் பெயராம்",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வாழிய செந்தமிழ் என்றே மன்னர்",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 18,
+    "toScan": 19,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: | 18 → 19 | **PASS — direct poetic continuation** | scan 18 ends `வாழிய செந்தமிழ் என்றே மன்னர்`; scan 19 begins `வாளை உருவிக் காத்தனர் முன்னே—`; the poetic sentence continues across the physical page break with no inserted heading/separator |"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "வாளை உருவிக் காத்தனர் முன்னே—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஓலையில் இலக்கியம் யாத்தனர் பின்னே!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சோழியர் குடுமி ஆடுதல் போலே",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மேழிச் செல்வர் வீட்டுக்கோழி",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆட்டும் தலையை! வாட்டும் பகையை!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "பூனைக்குப் பகை நாய் என்போம்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புலிக்குப் பகை வேடரென்போம்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புறாப்பகை வல்லூ றென்போம்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "யானைக்குப் பகை கோழியென்று படித்ததுண்டோ?",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உறையூரில் ஒருகோழி யானையிடம்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உறுபகையை முடித்த தென்று",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வடித்ததுண்டு இலக்கியமும்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தடித்த துண்டுக் கரும்பு போல்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இனித்ததுண்டு அக்கதையும்!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உறைந்தது மண்ணெலாம் வீரம் என்பதால்",
+    "indent": 4,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உறையூர் என்றே உரைத்தது மன்பதை!",
+    "indent": 4,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வாள் இருக்குமிடம் ஓர் உறையென வழங்கும்.",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வாளொத்தவீரர் இருக்குமிடம் உறையூரென—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "முழங்கும்.",
+    "indent": 32,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "★                                 ★",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "அந்நகர் ஆண்ட ஆற்றல் மறவன்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பொன்தமிழ் சிந்தும் புலவர் நண்பன்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "யாப்பும் அணியும் பிறழாக் கவிஞன்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கோப்பெருஞ்சோழப் பெருந்தமிழ் அறிஞன்.",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பூதநாதர், புல்லாற்றூர் எயிற்றியனார்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புகழார்ந்த நத்தத்தன், பொத்தியார்,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பூவரசு போற்றுகின்ற நாவரசு பிசிராந்தை",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இந்தப்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பொங்கு மொழிப் புலவரெலாம்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தங்கு மெழில் மண்டபந்தான்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தார் வேந்தன் நெஞ்சகமாம்!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "★                                 ★",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "தேனில் வளர்ந்து தேனில் மலர்ந்து",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தேனில் நனைந்து தேனைப் பிழிற்றும்",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தேன் பூ போலே......",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தமிழ் இல் பிறந்து தமிழால் வளர்ந்து",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தமிழ் இழை கொண்டு தமிழ் உடை தந்த",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தக்கோர் வாழ்ந்தனர் தணியாநட்புடன்!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 19,
+    "toScan": 20,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "கருவூர் சதுக்கப் பூதநாதர்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தருநிழல் போன்ற தமிழ்மொழியதனை",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அரும் பொருள் கொண்டு அள்ளித்தந்தார்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வரும் பொருள் உரைக்கும் அமைச்சருடையோன்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நறுமண மிக்க மலரிற் சேர்ந்த நாரே ஆவேன்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நட்பால் என்னைப்பிணைப்பீர் என்றே அணைத்துக்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கொண்டான்",
+    "indent": 34,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பூதநாதர் பூரிப் படைந்தார்!",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பூ மிதக்கும் அருவிபோலப்",
+    "indent": 4,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புறப்பாட்டுப் பாடுகின்ற",
+    "indent": 4,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புல்லலூர் எயிற்றியனார் நண்பரானார்.",
+    "indent": 4,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புலவர்களைக் காணுவதும்—பேணுவதும்—",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புலமைதனைப் பாடுவதும் பொழுதெல்லாம்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இனிக்குதென்று புகன்றுவந்தான்—நட்பைப்",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புகழ்ந்து உவந்தான்!",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 20
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 20
+   },
+   {
+    "kind": "line",
+    "text": "நட்பு என்பது நஞ்சு கலப்பது",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நல்லவர் இதயம் நோக மிதிப்பது",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கட்புலன் தாண்டிக் கயமை உரைப்பது—இந்த",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அற்புத மனைத்தும் இன்று நடப்பது!",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பொற்புடைத் தமிழர் வாழ்வினில் அன்று",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கற்புடை நட்பு மிளிர்ந்தது நன்று.",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 20,
+    "toScan": 21,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "கண்டு கேட்டுண்டுயிர்த்து—பூச்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "செண்டு தமிழை அளித்த கவிகள்—மன்னன்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நண்பர் களானது விந்தையுமல்ல ;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காணாமல் ஓர் புலவர்—சோழக்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காவலனின் நண்பரானார்—அன்புத்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தேனாறு பெருக்கெடுத்து—அந்த",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இருவரிடை பாய்ந்த தம்மா!",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மீனார்ந்த பாண்டி நாட்டுக் கொடி நிழலில்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மிளிருகின்ற ஊர் ஒன்று;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பிசிர் என்று அழைக்கின்ற மூதூர்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பெரும்புலவர் ஆந்தையார் பிறந்திட்ட பேரூர்.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பெற்றோர் இட்ட பெயர் ஆந்தையார் என்பர்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பேரும் ஊரும் சேர்ந்து பிசிராந்தையுமானார்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கற்றோர் பலரும் களித்து மகிழ்ந்திட",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நற்றாய்த் தமிழை நாட்டில் பரப்பினார்.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மற்றோர் சொல்ல சோழனும் கேட்டு,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உற்றார் உறவை மிஞ்சிடும் வண்ணம்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வற்றா அன்பைப் பொழிந்தான் அவர் மேல்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 21
+   },
+   {
+    "kind": "line",
+    "text": "கவியரசன் கண்டதில்லைப் புவியரசை",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புவியரசன் கண்டதில்லை கவியரசை",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காணாமலே ஈரரசும் காதல் கொண்டார்",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கடைசிவரை அப்படியே காலம்சென்றார்.",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 21
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 21
+   },
+   {
+    "kind": "line",
+    "text": "கொழிக்கின்ற கோழியூரின் சிறப்பையெல்லாம்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பழிக்கின்ற பான்மையிலே நிகழ்ச்சியொன்று—",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அறிவை",
+    "indent": 40,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அழிக்கின்ற தீயவரின் அனலுரையால்—கண்கள்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "விழிக்கின்ற திறனற்றார் அரசமைந்தர்.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "துளிர்க்கின்ற போதெல்லாம் தோள்மீதும் மார்மீதும்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தளிர்க் கரத்தால் சுகமீந்து வளர்த்திட்ட",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஒளிக்குன்றாம் தந்தை மேல் படையெடுத்தார்.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தன் படைப்பே தன்னுயிரை அழிப்பதற்கு",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "முனைதல் கண்டான்",
+    "indent": 32,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புண் படைத்த நெஞ்சத்தோடு போர்வாளைத்",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தூக்கிக் கொண்டான்.",
+    "indent": 32,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கண்படைத்த குற்றமோ இக்காட்சி காணல்—சோழ",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மண்படைத்த பெரும்பேறு போயிற்றென்று",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தண்மதியின் உளங்கொண்ட சான்றோரெல்லாம்—",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "போர்ப்",
+    "indent": 36,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பண்பாட வேண்டாமென இருதரப்பும் இறைஞ்சி",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நின்றார்.",
+    "indent": 36,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 21,
+    "toScan": 22,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "“வண்டாடும் பூப்போன்ற மாதரிடம்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கொண்டோடும் அறிவுரையை!",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "திண்டோள்கள் விம்முகின்ற போர்மறவர்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கொண்டாடும் கொலை விழாவைத் தடுக்காதீர்!”",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "எனக்கூறி மறுத்துவிட்டார்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மகன் தந்தை அன்புதனை அறுத்துவிட்டார்.",
+    "indent": 4,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இருபடையும் மோதிக் கொள்ளப்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பெரு முரசம் ஆர்த்த தங்கே!",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உறுபகையும் ஓங்கிற்று;",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "செருமுனையும் ஏங்கிற்று!",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இறுதிவரை அமைதிக்கு முயற்சிக்க",
+    "indent": 4,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உறுதியுடன் ஒருபுலவர் புறப்பட்டார்.",
+    "indent": 4,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "போர் முனையின் படைவரிசை கீறிச் சென்று",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புல்லாற்றூர் எயிற்றியனார் புகுந்துவிட்டார்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நகுதற் பொருட்டன்று நட்டல்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மேற்சென்று இடித்தல் பொருட் டெனும்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தமிழ்க் குரலை மெய்ப்பிக்கத்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தலைநிமிர்த்தித் தார்வேந்தன் பக்கல் சேர்ந்தார்.",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“இமிழ் கடல் வேலித் தமிழ் நிலந்தன்னில்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சிமிழ்போல் மைந்தர் சிரங்கள் வீழ்த்திக்",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கமழ்ந்திடும் வெற்றி, களிப்பைத் தருமோ?",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 22,
+    "toScan": 23,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: | 22 → 23 | **PASS — quotation carry-over** | scan 22 opens `“இமிழ் கடல் வேலித் தமிழ் நிலந்தன்னில்...` and ends `கமழ்ந்திடும் வெற்றி, களிப்பைத் தருமோ?` without closing the quotation; scan 23 continues `கொற்றவனே!...` and closes the same quotation at `உண்மையிது உணர்க!”`; no quote mark may be inserted at the physical join |"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "கொற்றவனே! நீ பெற்றபிள்ளை செத்தபின்னர்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கோட்டை அரண் வாழ்வதற்கும் கோழியூர்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆள்வதற்கும்",
+    "indent": 32,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உற்றவர் தான் யார் என்று எண்ணுகின்றாய்?",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உன்மைந்தர் வென்றாலும் உனைச் சூழும் அவமானம்!",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உன்மைந்தர் மாண்டாலும் உறையூரை",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆள்வதற்குப் பிள்ளையில்லை",
+    "indent": 24,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உண்மையிது உணர்க!” என்றே உருகிநின்றார்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கருகுகின்ற மனத்துடனே காவலனும்—கண்ணில்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அருவியென நீர் பொழிந்து களம்பிரிந்தான்.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "மானம் வரின் சாதல் நன்றாம்—எனும்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மனம் படைத்த மரபில் வந்தோன்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஊனம் விளைந்தது—வீரம் அழிந்தது—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வானம் பழித்தது! இனி வாழ்தல் நன்றா?",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சோகம் கப்பிய கேள்வி எழுப்பி,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வேகம் குறைத்து வடக்கே சென்றான்.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "வடக்கிருத்தல் எனும் ஒரு வழக்கம்—உயிர்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வறுத்திட மன்னர் கைக்கொளும் பழக்கம்.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உண்ணா நோன்பால் வாடி மெலிந்து,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மண்மேல் சடலம் வீழ்ந்திடும் வரையில்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இன்பம் அதுவென இருந்தே தீர்வர்—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இதுதான் வடக்கே இருத்தல் என்பர்.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "கோப்பெருஞ் சோழனது வடக்கிருத்தல்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மாப்புகழ்கொண்டிலங்கு தமிழகத்தில்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மூப்பிலார் முதியோர் மற்றும் மொட்டனையர்—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உள்ளமெலாம்",
+    "indent": 40,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காப்பிலா தொழிந்ததே நாடு என்ற கவலை மூட்டும்.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நட்பாலே பிணைந்து விட்ட நாவலர்கள்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அப்பாலே போகாமல் அருகிருந்தார்.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "முப்பாலும் உணர்ந்திட்ட பெருவேந்தன்—முடிவு",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "தப்பாமல் நெருங்கிற்று—தளர் வுற்றான்",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“எப்போதும் உளமிருந்த பிசிராந்தை",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இப்போது வருவாரா காண்பதற்கு?”",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 23,
+    "toScan": 24,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: | 23 → 24 | **PASS — sentence carry-over** | scan 23 ends the quoted question `“எப்போதும் உளமிருந்த பிசிராந்தை / இப்போது வருவாரா காண்பதற்கு?”`; scan 24 begins `எனக் கேட்டார் அருகிருந்தோர்.`; the speech tag continues the sentence across the page break, so no separator belongs between them |"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "எனக் கேட்டார் அருகிருந்தோர்.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வரமாட்டார் எனச் சொன்னார்—இவர்",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வடக்கிருத்தல் சேதி அவர் அறியார் என்றார்.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆந்தையார் ஊர் அதிகத் தொலைவில் என்றார்.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அதனாலே வருவது இயலாதென்றார்.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இதுகேட்டு",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இயலரசன் இடித்துச் சொல்வான்",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“என்பெயரைத் தனக்கிட்டு அழைத்துக் கொள்ளும்",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "இனிய நண்பரவர்—நற்பண்பின் ஊற்று.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நான் வடக்கிருக்கும் செய்திகேட்டு",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நாளையோ இன்றே வந்தே சேர்வார்—ஒரு",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வேளையும் என்னை மறவார் என்பேன்.”",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கவிமன்னர் ஆந்தைமீது",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காணாமல் காதல் கொண்ட",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புவிமன்னர் பேச்சுக்கேட்டு",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஊமையானார் உழுவலன்பர்.",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 24
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 24,
+    "toScan": 25,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "புலவர் பொத்தியாரும் வந்துவிட்டார்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "புனித நண்பனுடன் வடக்கிருக்க!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வளவனவன் தடுத்துச் சொன்னான்;",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நிலவுமுக நின் மனைவி நிறைமாதக்காரி—அவள்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "குலவு மொழிப்பிள்ளை பெற்றபின்னர் வந்து",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "உடன் இருப்பீர் என்று கூறப் பொத்தியார் ஒப்பிச்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சென்றார்!",
+    "indent": 32,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 25
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 25
+   },
+   {
+    "kind": "line",
+    "text": "அன்பும் அறமும் நிறைந்த மன்னன்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என்பும் தோலும் இளைத்தது மென்மேல்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கண்கள் இருண்டன",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கால்கள் சுருண்டன",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கைகள் ஓய்ந்தன",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "காதொலி மாய்ந்தது",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பேச்சும் நின்றது",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மூச்சும் திகைத்தது",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "எண்ணம் மட்டும் எங்கோ அலைந்தது.",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மன்னன் மனதில் ஆந்தையின் நினைவு—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "வண்ணப் புலவர் வருவார், வருவார்—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கன்னல் தமிழைத் தருவார்—தருவார்—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "என்றே கருதி",
+    "indent": 4,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "அடைந்தான் இறுதி!",
+    "indent": 4,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "கலைந்தது சுருதி!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "குலைந்தது இசையும்!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "சுடுசொல் அறியாச் சோழ வேந்தன்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நடுகல் ஆனான் நாட்டோர் புகழ!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பலகல் தாண்டிப் பாவின் வேந்தர்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "பாண்டியநாட்டு ஆந்தையும் வந்தார்.",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மாண்ட மன்னர் கல்லைக் கண்டார்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "மீண்டும் வாழ விரும்பேன் என்றார்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஈண்டு எனக்கோர் இடம் உளதென்று",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆண்டு களைத்த அரசின் கல்முன்",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "நீண்டு படுத்து வடக்கிருந்தாரே",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "ஆண்டுகள் கோடி வாழ்கின்றாரே!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 215,
+  "inPageStanzaBreaks": 21,
+  "verseRuns": 29,
+  "sourceEstablishedStanzas": 16,
+  "pageTransitions": 7,
+  "unresolvedStanzaRelations": 7
+ },
+ "english": {
+  "elements": [
+   {
+    "kind": "line",
+    "text": "M. Karunanidhi",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 18
+   },
+   {
+    "kind": "line",
+    "text": "In the age when bodies were buried in great urns,",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "on the southern land ringed by the sea,",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Kozhiyur was another name for Uraiyur;",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "crying, “Long live noble Tamil!” the kings—",
+    "indent": 0,
+    "sourceScan": 18,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 18,
+    "toScan": 19,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: | 18 → 19 | **PASS — direct poetic continuation** | scan 18 ends `வாழிய செந்தமிழ் என்றே மன்னர்`; scan 19 begins `வாளை உருவிக் காத்தனர் முன்னே—`; the poetic sentence continues across the physical page break with no inserted heading/separator |"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "drew their swords and stood guard in the forefront—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "then shaped literature upon palm leaves!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Like the swaying tuft of the Cholas,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the house-cock of the plough-rich farmer",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "shakes its head! Torments its foe!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "We say the dog is the cat's enemy,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the hunter the tiger's enemy,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the vulture the pigeon's enemy;",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "have you ever read that a rooster is an elephant's enemy?",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "There is literature that tells how, in Uraiyur,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "one rooster brought its mighty feud with an elephant to an end;",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and that tale has indeed tasted sweet,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "like a thick-cut piece of sugarcane!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Because valour had settled through all the soil,",
+    "indent": 4,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the people called it Uraiyur!",
+    "indent": 4,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The place where a sword rests is called its urai—its sheath.",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The place where sword-like warriors dwell is Uraiyur—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "so it resounds.",
+    "indent": 32,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "★                                 ★",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "The valiant warrior who ruled that city,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "friend of poets who poured out golden Tamil,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "a poet who strayed from neither metre nor ornament—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Kopperuncholan, a great scholar of Tamil.",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Boothanathar; Pullarrur Eyitriyanar;",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the renowned Nathathan; Poththiyar;",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Pisirandhai, sovereign of speech, praised by Poovarasu—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the heart of the garlanded king",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "was the lovely hall where",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "all these poets of surging language",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "came to dwell!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "★                                 ★",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 19
+   },
+   {
+    "kind": "line",
+    "text": "Grown in honey, blossomed in honey,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "soaked in honey, squeezing forth honey,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "like a flower of honey......",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "born in Tamil, raised by Tamil,",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "threaded with Tamil, clothed in Tamil—",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the worthy ones lived in friendship that never cooled!",
+    "indent": 0,
+    "sourceScan": 19,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 19,
+    "toScan": 20,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "Karuvur Chathukka Boothanathar",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "gave in abundance the Tamil tongue,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "shade-giving as a tree,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "with meanings rare and rich.",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The king whose ministers spoke of matters to come said,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“I shall be the fibre joined to a fragrant flower;",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "bind me to you in friendship,”",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and embraced him;",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Boothanathar swelled with joy!",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Like a waterfall bearing floating flowers,",
+    "indent": 4,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Pullalur Eyitriyanar,",
+    "indent": 4,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "who sang Puram songs, became his friend.",
+    "indent": 4,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“To see poets—to cherish them—",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to sing of learning—is sweet at every hour,”",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he would say; praising friendship,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he rejoiced!",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 20
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 20
+   },
+   {
+    "kind": "line",
+    "text": "Friendship is mixing poison,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "trampling until the good heart aches,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "speaking baseness beyond the eye's reach—",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "all these wonders happen today!",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "But in the adorned life of Tamils of old,",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "unsullied friendship shone nobly.",
+    "indent": 0,
+    "sourceScan": 20,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 20,
+    "toScan": 21,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "Poets who saw, heard, tasted, breathed—",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "who offered Tamil as a bouquet—becoming",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the king's friends was no wonder;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "but a poet he had never seen became",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the Chola guardian's friend—and a river",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "of honeyed love rose in flood",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and ran between the two!",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Under the shade of the fish-bearing Pandya flag",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "there gleamed a town;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Pisir was the ancient town,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the great poet Andhaiyar's birthplace.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "His parents had given him the name Andhaiyar;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "joining name and town, he became Pisirandhaiyar.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "So that learned people might delight and rejoice,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he spread nurturing Tamil through the land.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Others spoke of him; the Chola heard,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and poured upon him an unfailing love",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "that surpassed the bond of kin.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 21
+   },
+   {
+    "kind": "line",
+    "text": "The king of verse had never seen the king of earth;",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the king of earth had never seen the king of verse;",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "yet unseen, the two sovereigns came to love each other,",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and to the end their time passed so.",
+    "indent": 4,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 21
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 21
+   },
+   {
+    "kind": "line",
+    "text": "Then, in flourishing Kozhiyur,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "an event of shameful nature arose—",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "through counsel",
+    "indent": 40,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "that destroyed wisdom, words of fire from evil men;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the royal sons had eyes, yet lacked the power to awaken.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Whenever they had sprouted, upon shoulder and chest,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "with tender hands giving comfort, he had raised them;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "now they marched against their father, a mountain of light.",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Seeing his own creation advance",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to destroy his own life,",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "with a wounded heart he lifted",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the sword of war.",
+    "indent": 32,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Was having eyes itself a crime, to witness this sight?",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“The Chola land's great fortune is gone,”",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "thought all the wise whose hearts were cool as the moon;",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "they stood pleading with both sides:",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“Let not",
+    "indent": 36,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "war be waged.”",
+    "indent": 0,
+    "sourceScan": 21,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 21,
+    "toScan": 22,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "“Take your counsel and run with it",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to flower-like women around whom bees dance!",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Do not stop the festival of killing",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "celebrated by broad-shouldered warriors!”",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "So he refused them;",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "son and father cut through the bond of love.",
+    "indent": 4,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "As the two armies moved to clash,",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the great war-drum thundered there!",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The bitter feud swelled;",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the battlefront itself groaned!",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Determined to strive for peace to the very end,",
+    "indent": 4,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "one poet set out.",
+    "indent": 4,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Cutting through the ranks at the battlefront,",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Pullarrur Eyitriyanar entered.",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“Friendship is not for laughter;",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "it is for stepping forward and rebuking”—",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to make that Tamil utterance true,",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he held his head high and approached the garlanded king.",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“In this Tamil land fenced by the roaring sea,",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "if the heads of your sons fall like seed-pods,",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "will such fragrant victory bring you joy?",
+    "indent": 0,
+    "sourceScan": 22,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 22,
+    "toScan": 23,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: | 22 → 23 | **PASS — quotation carry-over** | scan 22 opens `“இமிழ் கடல் வேலித் தமிழ் நிலந்தன்னில்...` and ends `கமழ்ந்திடும் வெற்றி, களிப்பைத் தருமோ?` without closing the quotation; scan 23 continues `கொற்றவனே!...` and closes the same quotation at `உண்மையிது உணர்க!”`; no quote mark may be inserted at the physical join |"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "O king! After the sons you fathered are dead,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "who then is left to live within the fortress",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and rule Kozhiyur?",
+    "indent": 32,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "If your sons win, disgrace will surround you!",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "If your sons die, there will be no child",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to rule Uraiyur.",
+    "indent": 24,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "This is the truth—understand it!” he said, melting with feeling.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The guardian, his heart burning,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "poured water from his eyes like a waterfall",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and left the battlefield.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "“When honour is threatened, death is good”—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he came from a tradition of such a mind.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Dishonour had arisen—valour had perished—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "heaven itself reproached him! “Is living now good?”",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he asked,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "a question wrapped in grief;",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "slowing his pace, he went north.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "There is a custom called sitting facing north—a custom",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "kings take up to consume their own life.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Fasting without food, wasting and growing thin,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "until the body falls upon the earth,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "they remain there, accepting it as bliss—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "this is what is called sitting facing north.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "Kopperuncholan's northern fast,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "in Tamilakam radiant with great fame,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "made the hearts of the young, the old,",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and those still like buds",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "feel that the land had been left without a protector;",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "grief flared everywhere.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The poets bound to him by friendship",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "would not go away; they remained nearby.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 23
+   },
+   {
+    "kind": "line",
+    "text": "The great king who had understood the Three Parts—his end",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "came unfailingly near—he weakened.",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“Pisirandhai, who has always lived in my heart—",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "will he come now to see me?”",
+    "indent": 0,
+    "sourceScan": 23,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 23,
+    "toScan": 24,
+    "stanzaRelation": "unknown",
+    "textualRelation": "source-established-continuation",
+    "evidence": {
+     "stanza": [],
+     "textual": [
+      "PHASE3_BOUNDARY_JOIN_AUDIT.md: | 23 → 24 | **PASS — sentence carry-over** | scan 23 ends the quoted question `“எப்போதும் உளமிருந்த பிசிராந்தை / இப்போது வருவாரா காண்பதற்கு?”`; scan 24 begins `எனக் கேட்டார் அருகிருந்தோர்.`; the speech tag continues the sentence across the page break, so no separator belongs between them |"
+     ]
+    }
+   },
+   {
+    "kind": "line",
+    "text": "he asked those around him.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“He will not come,” they said—“he does not know",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the news of your northern fast.”",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“Andhaiyar's town is very far away,” they said.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“So coming here is impossible,” they said.",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Hearing this,",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "the king of letters struck back with his words:",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“My dear friend, who even takes my name for his own—",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "a spring of noble character—",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "when he hears that I am sitting facing north,",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "tomorrow—or today itself—he will come and join me;",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "not for a single moment will he forget me, I say.”",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Hearing the earth-king speak",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "of love, without ever seeing him,",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "for Andhai, king among poets,",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his intimate companions fell mute.",
+    "indent": 4,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 24
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 24,
+    "printedPage": null
+   },
+   {
+    "kind": "page-transition",
+    "fromScan": 24,
+    "toScan": 25,
+    "stanzaRelation": "unknown",
+    "textualRelation": "not-specifically-recorded",
+    "evidence": {
+     "stanza": [],
+     "textual": []
+    }
+   },
+   {
+    "kind": "line",
+    "text": "The poet Poththiyar too had come,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "to sit facing north beside his sacred friend!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The Chola stopped him and said:",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“Your moon-faced wife is full with child—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "when she has borne the child of babbling speech,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "then come and stay beside me.”",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Poththiyar agreed",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and went!",
+    "indent": 32,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 25
+   },
+   {
+    "kind": "line",
+    "text": "*                                      *",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "stanza-break",
+    "evidence": "source-blank-line",
+    "sourceScan": 25
+   },
+   {
+    "kind": "line",
+    "text": "The king, filled with love and righteousness—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his bone and skin grew thinner and thinner;",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his eyes darkened,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his legs curled,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his hands fell still,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his hearing faded,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his speech ceased,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "his breath faltered;",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "only thought wandered somewhere.",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "In the king's mind was the thought of Andhai—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“The radiant poet will come, will come—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he will give me sugarcane-sweet Tamil, will give it”—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "thinking only this,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he reached his end!",
+    "indent": 4,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Pitch dissolved!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Music itself collapsed!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "The Chola king, who knew no scorching word,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "became a hero-stone, praised by the people!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Crossing many miles, the king of verse,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "Andhai of the Pandya land, arrived.",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "He saw the stone of the dead king.",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“I do not wish to live again,” he said.",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "“There is a place for me here,” he said;",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "before the stone of the king wearied by rule,",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "he stretched himself out and sat facing north—",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   },
+   {
+    "kind": "line",
+    "text": "and through countless ages they live on!",
+    "indent": 0,
+    "sourceScan": 25,
+    "printedPage": null
+   }
+  ],
+  "lineCount": 217,
+  "inPageStanzaBreaks": 21,
+  "verseRuns": 29,
+  "sourceEstablishedStanzas": 16,
+  "pageTransitions": 7,
+  "unresolvedStanzaRelations": 7
+ },
+ "poemScans": [
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25
+ ]
+}
