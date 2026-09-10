@@ -164,7 +164,18 @@ for (const w of WORKS) {
 
   // Per-work semantic guards
   if (w.printedRange) { eq([pub.articles[0].printedPages.from, pub.articles[0].printedPages.to], w.printedRange, `${w.slug}: printed range ${w.printedRange.join("–")}`); }
-  if (w.noEdition) { check(!pub.firstEdition && !pub.controllingEdition, `${w.slug}: NO edition/year fabricated`); }
+  if (w.noEdition) {
+    // The source establishes NO edition — represented explicitly, never overloaded onto `false`, and
+    // never rendered as "no reprint". Prove all four conditions and fail closed on any regression.
+    check(pub.controllingIsFirstEdition === null, `${w.slug}: controllingIsFirstEdition === null (not true/false)`);
+    check(pub.controllingIsFirstEdition !== true, `${w.slug}: controllingIsFirstEdition is NOT true`);
+    check(pub.controllingIsFirstEdition !== false, `${w.slug}: controllingIsFirstEdition is NOT false`);
+    check(pub.firstEdition === undefined, `${w.slug}: NO fabricated firstEdition`);
+    check(pub.controllingEdition === undefined, `${w.slug}: NO fabricated controllingEdition`);
+    eq(prov.source.editionStatus, "not-established", `${w.slug}: provenance editionStatus === "not-established"`);
+    check(prov.source.editionWitnessesTa === undefined, `${w.slug}: no edition-witness list fabricated`);
+    check(prov.source.controllingEditionTa === undefined, `${w.slug}: no controlling-edition witness fabricated`);
+  }
   if (w.notFirstEdition) { check(pub.controllingIsFirstEdition === false && !!pub.controllingEdition, `${w.slug}: first/controlling edition distinction present`); eq(prov.source.scanSha256, null, `${w.slug}: unsplit SHA null (never fabricated)`); eq((prov.source.transferParts || []).length, w.transferParts, `${w.slug}: ${w.transferParts} transfer parts`); }
   if (w.message) {
     // A public message (செய்தி), positively classified as such and NOT as a speech.
@@ -186,12 +197,12 @@ const HASH_PINS = {
   "ina-muzhakkam/provenance.json": "8fc38e33660c0a9a0d634e290dd3bec7c096eb710472cb35173f9a1a569f8511",
   "kolaikkalam/publication.json": "e67bc41b2304aa776fa9362f127bced6a485ea614633bc2c60afe455c956a91d",
   "kolaikkalam/provenance.json": "614474d3c8d348213c64daf551b050ddb2ffe5425c47ae96616d7719a97b6236",
-  "kudumbaththin-nalvilakku/publication.json": "7a61c9c4f3b9b61187d24292954573b986a0726bb6307509f40851c0d398233d",
-  "kudumbaththin-nalvilakku/provenance.json": "bdd9524c52d4262322f7b29daf0c2df83f24b97a6fd6ccd4fd6417d3893266e3",
+  "kudumbaththin-nalvilakku/publication.json": "e5cfb05014621317ece43e10196e582dc963e7efd9fa8ff2ff49f772da60fb96",
+  "kudumbaththin-nalvilakku/provenance.json": "144f666fa91ad7a91045ab6cd9e048e649d4634d498583ec2eb19289c31f93c3",
   "sinthanaiyum-seyalum/publication.json": "51735ae409cecf4b27d68409d0a0cb601a59e5c449124d255816b97c752b34ca",
   "sinthanaiyum-seyalum/provenance.json": "b27e8d8c93efabe542c6833c3425f285b4268dfde28ddd09eee841e31915e987",
-  "vedhanai-ch-siraiyinindrum-viduthalai-pera/publication.json": "eb1eb00fcd2d05965e305b51f5cc855ee0835911985d5a796ef4488d69cad96b",
-  "vedhanai-ch-siraiyinindrum-viduthalai-pera/provenance.json": "1189ee729d63807a4ce48dc2365b997a94f2058aaacb1d211f33602d7682fe24",
+  "vedhanai-ch-siraiyinindrum-viduthalai-pera/publication.json": "8769db6deb5ef5fe8938263cb17d297d31af24647cecfa4f4689c261c8cc29e5",
+  "vedhanai-ch-siraiyinindrum-viduthalai-pera/provenance.json": "3425458465e0a1613d03bf0d6a2c0da08082c6b850c11e28fa91b8f248424fe0",
 };
 for (const rel of Object.keys(HASH_PINS)) {
   const h = sha256(read(path.join(DATA, rel)));

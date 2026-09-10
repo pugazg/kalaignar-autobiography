@@ -82,7 +82,7 @@ const WORKS = [
     scanFilename: "TVA_BOK_0065602_குடும்பத்தின்_நல்விளக்கு.pdf", scanSha256: "1c3389ec76507b0c6f2ae294a4523633e81084d570a1443c7b730ac899e15971",
     scanBytes: 34464808, scanTotal: 16, acceptedArticleStatus: ["strict-reviewed"], articleCount: 1,
     authorTaOverride: "முதல்வர் டாக்டர் கலைஞர் மு. கருணாநிதி",
-    controllingIsFirstEdition: true, // no reprint distinction is visible in the scans
+    controllingIsFirstEdition: null, // the source establishes NO edition witness — not "no reprint"
     noEditionEstablished: true,
     exclusions: [
       "scans 1–3 — cover / title page / author portrait",
@@ -129,7 +129,7 @@ const WORKS = [
     titleTa: "வேதனைச் சிறையினின்றும் விடுதலை பெற", titleEn: "To Win Release from the Prison of Suffering", subtype: "single-article-pamphlet",
     scanFilename: "TVA_BOK_0064064_வேதனைச்_சிறையினின்றும்_விடுதலை_பெற.pdf", scanSha256: "d6429304ca8e53324e41fbe6695a31d1411b12ec5e04bf5a35d8cc8a51d06651",
     scanBytes: 11408976, scanTotal: 8, acceptedArticleStatus: ["strict-reviewed"], articleCount: 1,
-    controllingIsFirstEdition: true,
+    controllingIsFirstEdition: null, // the source establishes NO edition witness — not "no reprint"
     noEditionEstablished: true,
     // CRITICAL SEMANTIC SAFEGUARD: a government public MESSAGE (செய்தி), NOT a delivered speech.
     publicationForm: "government public message (`செய்தி`) issued to the people — NOT a delivered speech; no speech event, venue or exact issue date is stated by the source",
@@ -430,6 +430,9 @@ for (const w of WORKS) {
       strictFidelityReview: w.acceptedArticleStatus.includes("verified") ? `P5 strict visual text fidelity — ${w.scanTotal} / ${w.scanTotal} PASS` : `Tamil strict-reviewed / frozen — ${w.scanTotal} / ${w.scanTotal}`,
       articleAssemblies: `${w.articleCount} / ${w.articleCount} frozen`,
       unresolvedTamilFidelityItems: 0,
+      // `editionStatus` is emitted ONLY where the source establishes NO edition witness, so the three
+      // works that DO establish an edition keep their existing provenance byte-for-byte.
+      ...(w.noEditionEstablished ? { editionStatus: "not-established" } : {}),
       ...(editionWitnessesTa ? { editionWitnessesTa } : {}),
       ...(w.controllingEdition ? { controllingEditionTa: w.controllingEdition.statementTa } : {}),
       sourcePdfCommitted: false,

@@ -69,9 +69,26 @@ const vs = renderTa(createElement(ArticleSource, { slug: "vedhanai-ch-siraiyinin
 ok(/செய்தி|message/.test(vs), "vedhanai source: shows the செய்தி / public-message form");
 ok(!/\bspeech was delivered\b|delivered speech at|at the .* meeting/i.test(vs), "vedhanai source: no fabricated speech event/venue");
 ok(/began on 15 December 1975/.test(vs) && !/(issued|published)[^.]{0,20}on 15 December 1975/i.test(vs), "vedhanai source: 15 Dec 1975 only as fortnight-start, not an exact issue date");
-// kudumbaththin: no invented year/edition.
+// kudumbaththin: no invented year/edition; explicit "edition status not established"; NOT "no reprint".
 const ks = renderTa(createElement(ArticleSource, { slug: "kudumbaththin-nalvilakku", prov: prov("kudumbaththin-nalvilakku") }));
-ok(!/1949|1951|1956|edition:/i.test(ks) || !/பதிப்பு:/.test(ks), "kudumbaththin source: no fabricated edition/year");
+// (renderTa server-renders in Tamil, the site's primary language — assert Tamil wording.)
+const NOT_ESTABLISHED_TA = /பதிப்பு நிலை/; // "Edition status" banner
+const NOT_CONFIRMED_TA = /உறுதிப்படுத்தப்படவில்லை/; // "not established/confirmed"
+const NO_REPRINT_TA = /மறுபதிப்பு எதுவும் இல்லை/; // the false "has no reprint" claim
+const THAT_EDITION_TA = /இங்கே ஒருங்கிணைக்கப்பட்ட scan இந்தப் பதிப்பினுடையதே/; // false "that edition itself"
+ok(!/1949|1951|1956/.test(ks), "kudumbaththin source: no fabricated year");
+ok(NOT_ESTABLISHED_TA.test(ks) && NOT_CONFIRMED_TA.test(ks), "kudumbaththin source: shows edition status NOT established");
+ok(!NO_REPRINT_TA.test(ks) && !/This publication has no reprint/.test(ks), "kudumbaththin source: does NOT claim 'no reprint'");
+ok(!THAT_EDITION_TA.test(ks) && !/The scan integrated here is that edition itself/.test(ks), "kudumbaththin source: does NOT claim 'that edition itself'");
+// vedhanai: same three edition-status checks (plus the செய்தி safeguard above).
+ok(NOT_ESTABLISHED_TA.test(vs) && NOT_CONFIRMED_TA.test(vs), "vedhanai source: shows edition status NOT established");
+ok(!NO_REPRINT_TA.test(vs) && !/This publication has no reprint/.test(vs), "vedhanai source: does NOT claim 'no reprint'");
+ok(!THAT_EDITION_TA.test(vs) && !/The scan integrated here is that edition itself/.test(vs), "vedhanai source: does NOT claim 'that edition itself'");
+// The no-edition works carry controllingIsFirstEdition === null (never true/false).
+ok(pub("kudumbaththin-nalvilakku").controllingIsFirstEdition === null, "kudumbaththin: controllingIsFirstEdition null");
+ok(pub("vedhanai-ch-siraiyinindrum-viduthalai-pera").controllingIsFirstEdition === null, "vedhanai: controllingIsFirstEdition null");
+// Existing single-edition Essay works still legitimately say 'no reprint' — the fix must not regress them.
+ok(!NOT_ESTABLISHED_TA.test(renderTa(createElement(ArticleSource, { slug: "sinthanaiyum-seyalum", prov: prov("sinthanaiyum-seyalum") }))), "sinthanaiyum source: edition IS established (no not-established banner)");
 // sinthanaiyum: transfer parts + first/controlling edition distinction render.
 const ss = renderTa(createElement(ArticleSource, { slug: "sinthanaiyum-seyalum", prov: prov("sinthanaiyum-seyalum") }));
 ok(/part 1|part 5|transfer/i.test(ss), "sinthanaiyum source: five transfer PDF parts shown");
