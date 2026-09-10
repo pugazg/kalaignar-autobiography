@@ -120,6 +120,12 @@ jobs:
       # verse-novel rendered as SECTIONS not poems, and that none of the eight is in sitemap/catalogue.
       - name: Poetry direct readers/routes (Wave 6 B4)
         run: npm run test:wave6-b4-poetry
+      # Wave 6 Batch 5 — Novels direct readers/routes: the exact 63-route set (Periya 9 + Pudhaiyal
+      # 54) registry+payload-derived, fail-closed slugs, Periya rendered as archive reading divisions
+      # and Pudhaiyal as an Introduction + numbered source chapters, no Balipeedam facts leaking, and
+      # neither work in sitemap/catalogue/discovery.
+      - name: Novels direct readers/routes (Wave 6 B5)
+        run: npm run test:wave6-b5-novels
       # Wave 6 P1–P3 global build-boundary — owns the whole-build delta that Wave-5 P4 A7 shed:
       # build == frozen pre-Wave-6 baseline + cumulative Wave-6 P3 route manifest, and every Wave-6
       # route stays out of sitemap/catalogue/discovery. Runs after Build.
@@ -257,6 +263,15 @@ jobs:
               "essays/unarchchimaalai": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
               "essays/thiraavida-sampaththu": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
               "novels/balipeedam-nokki": { repo: "kalaignar-novels" },
+              // Wave 6 Batch 5 — Novels. Periya Idathup Pen and Pudhaiyal pin the novels archive at a
+              // LATER commit than Balipeedam (the novels repo has since advanced for the unrelated
+              // Vellikkizhamai work), so they get their OWN checkout directory; both share ONE pin
+              // (recorded in each provenance file), so the same-directory/same-pin guard keeps its
+              // meaning. Sharing the Balipeedam directory would fire that guard, and these two works
+              // do not even exist at the earlier Balipeedam historical pin. (No apostrophes in this
+              // embedded node script — a literal quote would close the shell string wrapping it.)
+              "novels/periya-idathup-pen": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave6" },
+              "novels/pudhaiyal": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave6" },
               "plays/silappathikaram-nataka-kappiyam": { repo: "kalaignar-stage-plays" },
               // The four நான்மணி மாலை plays pin the stage-plays archive at a DIFFERENT, later
               // commit than Silappathikaram, so they get their own checkout directory — the same
@@ -416,6 +431,12 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-balipeedam-nokki.mjs "$KDL_SOURCES_DIR/kalaignar-novels"
+      # Wave 6 Batch 5 — Novels. ONE coherent released batch, ONE validation step; the script prints
+      # a per-work summary and runs the adversarial battery A–F.
+      - name: Novels Wave 6 Batch 5 — Periya Idathup Pen + Pudhaiyal
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-novels-wave6.mjs "$KDL_SOURCES_DIR/kalaignar-novels-wave6"
       - name: Silappathikaram Nataka Kappiyam
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

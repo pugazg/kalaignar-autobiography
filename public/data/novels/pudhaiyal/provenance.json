@@ -1,0 +1,742 @@
+{
+ "workId": "pudhaiyal",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/pudhaiyal",
+ "sourceCommit": "a99f135467dd38e294faff31088a937994790a47",
+ "source": {
+  "titleTa": "புதையல்",
+  "titleEn": "Treasure",
+  "authorTa": "கலைஞர் மு. கருணாநிதி, எம். எல். ஏ.",
+  "scanFilename": "TVA_BOK_0064097_புதையல்.pdf",
+  "scanSha256": null,
+  "scanSha256Note": "The source explicitly records the full-PDF SHA-256 as pending exact byte-level calculation; it is NOT invented here. The source PDF is not vendored.",
+  "scanFileSizeBytes": 502895096,
+  "scanFileSizeNote": "Previously-recorded attached full-source size, carried verbatim from the source metadata.",
+  "scanTotalPages": 448,
+  "pageRecordsVerified": "448 / 448 canonical page records; 446 verified/completed, 2 needs-review (scans 223–224 physical loss)",
+  "sourceAudit": "assembled Tamil narrative continuous through scan 447 / printed 443; two Part-005 physical-loss qualifications (scans 223–224)",
+  "assembledLayer": "assembled Tamil reading layer derived only from the audited page records",
+  "sourcePdfCommitted": false,
+  "publisherTa": "அன்புப் பதிப்பகம், பொறையார் :: தஞ்சை மாவட்டம்",
+  "printerTa": "அன்பு அச்சகம், பொறையார்",
+  "printedPageNumbering": "Printed page numbers are recorded only where a scan shows one; where none is printed the page map records `—` and this integration carries `printedPage: null`. A number is never inferred from sequence.",
+  "bodyScans": "7–447",
+  "structureNote": "A continuous novel of an Introduction (அறிமுகம், scans 7–12) followed by 51 source-printed chapters, ending at scan 447 / printed 443. Scan 448 is a separately printed printer colophon (back matter). There is NO embedded film-sequence in this work.",
+  "paratextExcluded": {
+   "note": "Canonical paratext kept OUT of the literary [section] namespace but represented here so it is never silently dropped.",
+   "frontMatter": {
+    "file": "sections/front-matter.md",
+    "sourceScans": "1-6",
+    "contains": "cover/title/publication matter, publisher note, and the copy-specific Meykandar-style gift inscription; not one of the novel's literary reading sections"
+   },
+   "printerColophon": {
+    "file": "sections/99-printer-colophon.md",
+    "sourceScans": "448",
+    "ta": "அன்பு அச்சகம்,  \nபொறையார்.",
+    "en": "Anbu Press,  \nPoraiyar.",
+    "note": "scan 448 back matter; represented as source/back-matter provenance, never a literary [section]"
+   },
+   "checkpoints": {
+    "count": 3,
+    "note": "provenance witnesses only; never literary reader text or routes"
+   },
+   "englishApparatus": "translations/en/RELEASE_REPORT.md, PROGRESS.md, PART_*_REVIEW.md, PART_*_ENGLISH_CHECK.md, TRANSLATION_PLAN.md, TRANSLATION_REVIEW.md, GLOSSARY.md, README.md — release/audit/workflow evidence only; never literary reader text or routes"
+  },
+  "lockedExclusions": [
+   "sections/front-matter.md (scans 1–6) — cover, title, publication and publisher-note matter and the copy-specific gift inscription",
+   "sections/99-printer-colophon.md (scan 448) — separately printed printer colophon, back matter",
+   "sections/checkpoints/** — provenance witnesses only",
+   "the English translations/en release/audit/workflow documentation (RELEASE_REPORT.md and the PART_* review/check files, PROGRESS, PLAN, GLOSSARY, README)",
+   "the assembled layer's own provenance comments; the English layer's labelled translator's-note and source-damage-provenance blockquotes (carried outside the reading body)"
+  ]
+ },
+ "english": {
+  "kind": "project-created",
+  "status": "whole-work English VERIFIED",
+  "batches": "Parts 001–010 reviewed; per-part English checks recorded",
+  "bodyCoverage": "English body-text coverage complete for the Introduction and 51 chapters (scans 7–447)",
+  "bilingualAlignment": "final bilingual review recorded per part; two Part-005 physical-loss spans (scans 223–224) explicitly qualified",
+  "releaseReadiness": "RELEASE-READY WITH TWO PART-005 PHYSICAL-LOSS QUALIFICATIONS (an editorial/archival status, not a rights determination)",
+  "translatorNotesSeparated": "English translator's-note and source-damage-provenance blockquotes are carried OUTSIDE the reading body and rendered in a separate, clearly-labelled area — never as Kalaignar's prose."
+ },
+ "archiveDerived": {
+  "sections": 52,
+  "literaryUnits": {
+   "introduction": 1,
+   "chapters": 51
+  },
+  "tamilBlocks": 2289,
+  "englishBlocks": 2588,
+  "tamilParagraphs": 2235,
+  "englishParagraphs": 2534,
+  "tamilHeadings": 54,
+  "englishHeadings": 54,
+  "printedHeadingsInSource": [],
+  "sectionsWithArchiveOnlyTitle": 0,
+  "ornaments": 0,
+  "tamilBlocksWithLineBreaks": 5,
+  "englishBlocksWithLineBreaks": 5,
+  "translatorNotes": 1,
+  "tamilBlocksWithPerBlockScan": 1033,
+  "englishBlocksWithPerBlockScan": 916,
+  "perBlockScanNote": "Per-block scan provenance is carried wherever the assembled layer places a per-run `<!-- source: scan N … -->` marker; otherwise a block's `sourcePages` is left empty and the section's front-matter scan range remains authoritative. No scan is inferred.",
+  "sourceEstablishedJoins": 90,
+  "joins": [
+   {
+    "fromScan": 8,
+    "toScan": 9,
+    "evidence": "source join: scan 8 ends `அடை`; scan 9 begins `யாளமாக`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 11,
+    "toScan": 12,
+    "evidence": "source join: scan 11 ends `கனவு`; scan 12 begins `காண்பவர்களின்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 16,
+    "toScan": 17,
+    "evidence": "source join: scan 16 ends `படபடப்பை`; scan 17 begins `உண்டாக்கியது`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 20,
+    "toScan": 21,
+    "evidence": "source join: scan 20 ends `அந்தப் பயலும்`; scan 21 begins `சிறுக்கியும்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 32,
+    "toScan": 33,
+    "evidence": "source join: scan 32 ends `காலைத்`; scan 33 begins `தளிரில்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 34,
+    "toScan": 35,
+    "evidence": "source join: scan 34 ends `அந்த`; scan 35 begins `உண்மை`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 35,
+    "toScan": 36,
+    "evidence": "source join: scan 35 ends `பேச்சின்`; scan 36 begins `பாதியிலேயே`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 38,
+    "toScan": 39,
+    "evidence": "source join: scan 38 ends `யாரும்`; scan 39 begins `எதிர்பாராமலே`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 40,
+    "toScan": 41,
+    "evidence": "source join: scan 40 ends `காற்றுத் திசைக்கு`; scan 41 begins `ஏற்றாற்போல`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 44,
+    "toScan": 45,
+    "evidence": "source join: scan 44 ends `இந்திரன்`; scan 45 begins `மகன்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 45,
+    "toScan": 46,
+    "evidence": "source join: scan 45 ends `ஆழ்ந்து`; scan 46 begins `பார்க்கப்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 47,
+    "toScan": 48,
+    "evidence": "source join: scan 47 ends `சந்தோஷ`; scan 48 begins `மாக`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 48,
+    "toScan": 49,
+    "evidence": "source join: scan 48 ends `எப்படிப்`; scan 49 begins `யாவது`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 52,
+    "toScan": 53,
+    "evidence": "source join: scan 52 ends `அந்த`; scan 53 begins `வீட்டிற்கு`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 54,
+    "toScan": 55,
+    "evidence": "source join: scan 54 ends `போயி`; scan 55 begins `யைப்பாரு`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 56,
+    "toScan": 57,
+    "evidence": "source join: scan 56 ends `பிறகு`; scan 57 begins `பாடினாள்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 57,
+    "toScan": 58,
+    "evidence": "source join: scan 57 ends `ஆசைப்`; scan 58 begins `படுகிறோம்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 64,
+    "toScan": 65,
+    "evidence": "source join: scan 64 ends `மோகினிப் பிசாசு`; scan 65 begins `இப்படி யெல்லாம்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 67,
+    "toScan": 68,
+    "evidence": "source join: scan 67 ends `அந்த உண்மையை`; scan 68 begins `தாண்டவனிடம்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 70,
+    "toScan": 71,
+    "evidence": "source join: scan 70 ends `அவன்`; scan 71 begins `மிகவும்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 73,
+    "toScan": 74,
+    "evidence": "source join: scan 73 ends `நன்றாகத்`; scan 74 begins `தூங்கிக்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 74,
+    "toScan": 75,
+    "evidence": "source join: scan 74 ends `ஒரு`; scan 75 begins `முரட்டுக் கிழவன்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 75,
+    "toScan": 76,
+    "evidence": "source join: scan 75 ends `ஊராத்துரை லைட்`; scan 76 begins `ஹவுஸ்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 76,
+    "toScan": 77,
+    "evidence": "source join: scan 76 ends `இலங்கை போன`; scan 77 begins `பிறகும்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 78,
+    "toScan": 79,
+    "evidence": "source join: scan 78 ends `விழுந்து`; scan 79 begins `விட`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 79,
+    "toScan": 80,
+    "evidence": "source join: scan 79 ends `அந்தக்`; scan 80 begins `கல்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 82,
+    "toScan": 83,
+    "evidence": "source join: scan 82 ends `ஆக்ரமிப்ப`; scan 83 begins `தற்கும்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 84,
+    "toScan": 85,
+    "evidence": "source join: scan 84 ends `வாடிக்கிடந்தது`; scan 85 begins `அவள் வதனம்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 85,
+    "toScan": 86,
+    "evidence": "source join: scan 85 ends `தூக்கிக்கொண்டு`; scan 86 begins `போவது`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 86,
+    "toScan": 87,
+    "evidence": "source join: scan 86 ends `தூக்கிக் கொண்டுபோய்`; scan 87 begins `மனோராவின்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 87,
+    "toScan": 88,
+    "evidence": "source join: scan 87 ends `நினைவுச் சுருள்`; scan 88 begins `கள்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 96,
+    "toScan": 97,
+    "evidence": "source join: scan 96 ends `துரையை அணைத்துக் கொண்டு,`; scan 97 begins `பொங்கி`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 106,
+    "toScan": 107,
+    "evidence": "source join: scan 106 `இழுத்` → scan 107 `துப்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 107,
+    "toScan": 108,
+    "evidence": "source join: scan 107 `கடை` → scan 108 `யாக`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 111,
+    "toScan": 112,
+    "evidence": "source join: scan 111 `எத்த` → scan 112 `கைய`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 121,
+    "toScan": 122,
+    "evidence": "source join: scan 121 `விடு` → scan 122 `றேன்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 128,
+    "toScan": 129,
+    "evidence": "source join: scan 128 `பல` → scan 129 `மணி நேரங்கள் கழிந்தன.`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 137,
+    "toScan": 138,
+    "evidence": "source join: scan 137 `வாழ்` → scan 138 `விலே`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 141,
+    "toScan": 142,
+    "evidence": "source join: scan 141 `பழு` → scan 142 `மாகப்`",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 245,
+    "toScan": 246,
+    "evidence": "source split: scan 245 / printed 241 → scan 246 / printed 242",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 247,
+    "toScan": 248,
+    "evidence": "source split: scan 247 / printed 243 → scan 248 / printed 244 inside “இன்னும்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 248,
+    "toScan": 249,
+    "evidence": "source split: scan 248 / printed 244 → scan 249 / printed 245 inside “அவதாரம்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 257,
+    "toScan": 258,
+    "evidence": "source split: scan 257 / printed 253 → scan 258 / printed 254 inside “வெள்ளியம்பலம்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 260,
+    "toScan": 261,
+    "evidence": "source split: scan 260 / printed 256 → scan 261 / printed 257",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 261,
+    "toScan": 262,
+    "evidence": "source split: scan 261 / printed 257 → scan 262 / printed 258 inside “விடிந்ததும்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 262,
+    "toScan": 263,
+    "evidence": "source split: scan 262 / printed 258 → scan 263 / printed 259",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 266,
+    "toScan": 267,
+    "evidence": "source split: scan 266 / printed 262 → scan 267 / printed 263",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 269,
+    "toScan": 270,
+    "evidence": "source split: scan 269 / printed 265 → scan 270 / printed 266; same sentence",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 272,
+    "toScan": 273,
+    "evidence": "source split: scan 272 / printed 268 → scan 273 / printed 269; same sentence",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 273,
+    "toScan": 274,
+    "evidence": "source split: scan 273 / printed 269 → scan 274 / printed 270 inside “மறுபடியும்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 275,
+    "toScan": 276,
+    "evidence": "source split: scan 275 / printed 271 → scan 276 / printed 272; same sentence",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 277,
+    "toScan": 278,
+    "evidence": "source split: scan 277 / printed 273 → scan 278 / printed 274 inside “விடலாமென்று”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 279,
+    "toScan": 280,
+    "evidence": "source split: scan 279 / printed 275 → scan 280 / printed 276 inside Gemini lexical “அதிபதியாக”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 282,
+    "toScan": 283,
+    "evidence": "source split: scan 282 / printed 278 → scan 283 / printed 279; one sentence",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 284,
+    "toScan": 285,
+    "evidence": "source split: scan 284 / printed 280 → scan 285 / printed 281; dialogue continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 285,
+    "toScan": 286,
+    "evidence": "source split: scan 285 / printed 281 → scan 286 / printed 282 inside Gemini lexical “பரிமளாவையும்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 287,
+    "toScan": 288,
+    "evidence": "source split: scan 287 / printed 283 → scan 288 / printed 284 inside Gemini lexical “எப்படியாவது”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 288,
+    "toScan": 289,
+    "evidence": "source boundary: scan 288 / printed 284 → scan 289 / printed 285; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 289,
+    "toScan": 290,
+    "evidence": "source split: scan 289 / printed 285 “பட்டுக்” → scan 290 / printed 286 “கோட்டை”; assembled place-name join",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 291,
+    "toScan": 292,
+    "evidence": "source split: scan 291 / printed 287 “காப்” → scan 292 / printed 288 “பாத்துங்க!” inside Gemini lexical “காப்பாத்துங்க!”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 292,
+    "toScan": 293,
+    "evidence": "source split: scan 292 / printed 288 “ஓடி” → scan 293 / printed 289 “விட்டான்.”; sentence continuation",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 293,
+    "toScan": 294,
+    "evidence": "source split: scan 293 / printed 289 “படுகுழியொன்” → scan 294 / printed 290 “றில்” inside Gemini lexical “படுகுழியொன்றில்”",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 294,
+    "toScan": 295,
+    "evidence": "Part 006→007 source split: scan 294 / printed 290 “லாக்” → scan 295 / printed 291 “அப்’பில்”; assembled phrase continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 297,
+    "toScan": 298,
+    "evidence": "source boundary: scan 297 / printed 293 → scan 298 / printed 294; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 300,
+    "toScan": 301,
+    "evidence": "source boundary: scan 300 / printed 296 → scan 301 / printed 297; dialogue continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 301,
+    "toScan": 302,
+    "evidence": "source boundary: scan 301 / printed 297 → scan 302 / printed 298; quoted thought continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 302,
+    "toScan": 303,
+    "evidence": "source split: scan 302 / printed 298 “பெற்” → scan 303 / printed 299 “றான்”; assembled lexical word",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 307,
+    "toScan": 308,
+    "evidence": "source boundary: scan 307 / printed 303 → scan 308 / printed 304; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 308,
+    "toScan": 309,
+    "evidence": "source boundary: scan 308 / printed 304 → scan 309 / printed 305; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 309,
+    "toScan": 310,
+    "evidence": "source boundary: scan 309 / printed 305 → scan 310 / printed 306; dialogue continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 310,
+    "toScan": 311,
+    "evidence": "source split: scan 310 / printed 306 “போவ” → scan 311 / printed 307 “தென்று”; assembled lexical word",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 311,
+    "toScan": 312,
+    "evidence": "source boundary: scan 311 / printed 307 → scan 312 / printed 308; phrase continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 313,
+    "toScan": 314,
+    "evidence": "source boundary: scan 313 / printed 309 → scan 314 / printed 310; phrase continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 315,
+    "toScan": 316,
+    "evidence": "source split: scan 315 / printed 311 “அவர்” → scan 316 / printed 312 “கள்”; assembled lexical word",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 316,
+    "toScan": 317,
+    "evidence": "source boundary: scan 316 / printed 312 → scan 317 / printed 313; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 317,
+    "toScan": 318,
+    "evidence": "source boundary: scan 317 / printed 313 → scan 318 / printed 314; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 318,
+    "toScan": 319,
+    "evidence": "source boundary: scan 318 / printed 314 → scan 319 / printed 315; dialogue continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 319,
+    "toScan": 320,
+    "evidence": "source split: scan 319 / printed 315 “நாடகத்” → scan 320 / printed 316 “துக்கு”; assembled lexical word",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 320,
+    "toScan": 321,
+    "evidence": "source boundary: scan 320 / printed 316 → scan 321 / printed 317; supplied lexical spacing retained",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 321,
+    "toScan": 322,
+    "evidence": "source boundary: scan 321 / printed 317 → scan 322 / printed 318; dialogue continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 324,
+    "toScan": 325,
+    "evidence": "source boundary: scan 324 / printed 320 → scan 325 / printed 321; phrase continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 325,
+    "toScan": 326,
+    "evidence": "source boundary: scan 325 / printed 321 → scan 326 / printed 322; phrase continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 327,
+    "toScan": 328,
+    "evidence": "source boundary: scan 327 / printed 323 → scan 328 / printed 324; quoted sound continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 328,
+    "toScan": 329,
+    "evidence": "source boundary: scan 328 / printed 324 → scan 329 / printed 325; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 329,
+    "toScan": 330,
+    "evidence": "source boundary: scan 329 / printed 325 → scan 330 / printed 326; reporting clause continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 333,
+    "toScan": 334,
+    "evidence": "source boundary: scan 333 / printed 329 → scan 334 / printed 330; thought continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 335,
+    "toScan": 336,
+    "evidence": "source boundary: scan 335 / printed 331 → scan 336 / printed 332; phrase continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 336,
+    "toScan": 337,
+    "evidence": "source boundary: scan 336 / printed 332 → scan 337 / printed 333; sentence continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 337,
+    "toScan": 338,
+    "evidence": "source split: scan 337 / printed 333 → scan 338 / printed 334; supplied lexical spacing retained",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   },
+   {
+    "fromScan": 339,
+    "toScan": 340,
+    "evidence": "source boundary: scan 339 / printed 335 → scan 340 / printed 336; dialogue continues",
+    "evidenceKind": "narrative-continuity",
+    "hasInlineMarker": true
+   }
+  ],
+  "embeddedSequenceSections": 0,
+  "note": "Derived structure only. The 448 canonical `pages/` records remain the controlling archival text; this integration reads the archive's own assembled reading layer. Paragraph and chapter structure are carried verbatim — never re-split, never merged — and no source wording, punctuation, spacing or historical spelling was normalized (byte-faithful).",
+  "joinNote": "Cross-page continuities recorded by the assembled layer are carried verbatim as join provenance and stripped from display text; this integration never invents a join.",
+  "provenanceGranularity": "Block-level scan provenance from the assembled layer's own trailing `<!-- source: … -->` markers where present; section-level scan coverage from each unit's front matter otherwise."
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying novel. The edition's own publisher and printer lines are edition facts, not statements about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored novel. It does NOT extend to the edition's publisher/imprint matter, the printer's material, or the library's stamps and accession marks.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked translation (englishKind: project-created) with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "archivalStatusNote": "The source repository's release-readiness status is an editorial/archival judgement about transcription and translation completeness. It is NOT, by itself, a copyright, public-domain or republication-rights determination.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. The source records its full-PDF SHA-256 as pending, so no hash is asserted; identity travels as filename + previously-recorded byte size + scan count.",
+  "This is ONE continuous novel of an Introduction and 51 source-printed chapters. There is NO embedded film-sequence and NO separate work.",
+  "Front matter (scans 1–6) and the printer colophon (scan 448) are canonical paratext, kept OUT of the literary [section] namespace and represented only as source/provenance; checkpoints and the English release/audit/workflow files are apparatus and are never reader text.",
+  "The body covers scans 7–447 (printed through 443). Two Part-005 spans (scans 223–224) contain physically missing source regions and remain explicitly qualified in the source; that source state is reported, not altered."
+ ]
+}

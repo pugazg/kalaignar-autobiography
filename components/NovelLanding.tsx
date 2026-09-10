@@ -34,15 +34,34 @@ export default function NovelLanding({ novel }: { novel: Novel }) {
             {ta ? novel.author.ta : novel.author.en}
           </p>
 
-          {/* Edition facts exactly as the scan prints them. */}
-          <dl className="mt-4 grid gap-1 text-xs text-ink/55 dark:text-night-text/55 sm:grid-cols-[auto_1fr] sm:gap-x-3">
-            <dt>{ta ? "பதிப்பு" : "Edition"}</dt>
-            <dd className="font-tamil" lang="ta">{novel.edition.statementTa}</dd>
-            <dt>{ta ? "பதிப்பகம்" : "Publisher"}</dt>
-            <dd className="font-tamil" lang="ta">{novel.edition.publisherTa}, {novel.edition.placeTa} ({novel.edition.districtTa})</dd>
-            <dt>{ta ? "தொடர்" : "Series"}</dt>
-            <dd className="font-tamil" lang="ta">{novel.edition.seriesTa}</dd>
-          </dl>
+          {/* Edition facts exactly as the scan prints them — each row shown only where the source
+              prints that fact, so no work is described with another edition's lines. */}
+          {novel.edition && (
+            <dl className="mt-4 grid gap-1 text-xs text-ink/55 dark:text-night-text/55 sm:grid-cols-[auto_1fr] sm:gap-x-3">
+              {(novel.edition.statementTa || novel.edition.editionOrdinalTa) && (
+                <>
+                  <dt>{ta ? "பதிப்பு" : "Edition"}</dt>
+                  <dd className="font-tamil" lang="ta">{novel.edition.statementTa ?? novel.edition.editionOrdinalTa}</dd>
+                </>
+              )}
+              {novel.edition.publisherTa && (
+                <>
+                  <dt>{ta ? "பதிப்பகம்" : "Publisher"}</dt>
+                  <dd className="font-tamil" lang="ta">
+                    {novel.edition.publisherTa}
+                    {novel.edition.placeTa ? `, ${novel.edition.placeTa}` : ""}
+                    {novel.edition.districtTa ? ` (${novel.edition.districtTa})` : ""}
+                  </dd>
+                </>
+              )}
+              {novel.edition.seriesTa && (
+                <>
+                  <dt>{ta ? "தொடர்" : "Series"}</dt>
+                  <dd className="font-tamil" lang="ta">{novel.edition.seriesTa}</dd>
+                </>
+              )}
+            </dl>
+          )}
 
           <div className="mt-5 flex flex-wrap items-center gap-3">
             <Link href={`/novels/${novel.slug}/${first.slug}`} className="focus-ring inline-flex items-center gap-1.5 rounded-full bg-marina px-4 py-1.5 text-sm font-medium text-paper hover:bg-marina/90">
@@ -60,9 +79,13 @@ export default function NovelLanding({ novel }: { novel: Novel }) {
           {ta ? `பகுதிகள் — ${novel.sectionCount}` : `Sections — ${novel.sectionCount}`}
         </h2>
         <p className="mt-2 text-xs leading-relaxed text-ink/55 dark:text-night-text/55" lang={ta ? "ta" : "en"}>
-          {ta
-            ? "இது ஒரே தொடர்ச்சியான படைப்பு. கீழுள்ள பகுதிகளும் அவற்றின் தலைப்புகளும் மூலக் காப்பகத்தின் வாசிப்புத் தொகுப்பின் பிரிவுகளும் விளக்கக் குறிப்புகளுமே; 1947 பதிப்பின் அத்தியாயங்களோ அச்சுத் தலைப்புகளோ அல்ல."
-            : "This is one continuous work. The sections below — and their titles — are the source archive's own assembled reading divisions and descriptive labels, not chapters or printed headings of the 1947 edition."}
+          {novel.structure
+            ? ta
+              ? novel.structure.noteTa
+              : novel.structure.noteEn
+            : ta
+              ? "இது ஒரே தொடர்ச்சியான படைப்பு. கீழுள்ள பகுதிகளும் அவற்றின் தலைப்புகளும் மூலக் காப்பகத்தின் வாசிப்புத் தொகுப்பின் பிரிவுகளும் விளக்கக் குறிப்புகளுமே; 1947 பதிப்பின் அத்தியாயங்களோ அச்சுத் தலைப்புகளோ அல்ல."
+              : "This is one continuous work. The sections below — and their titles — are the source archive's own assembled reading divisions and descriptive labels, not chapters or printed headings of the 1947 edition."}
         </p>
         <ol className="mt-3">
           {novel.sections.map((s) => (

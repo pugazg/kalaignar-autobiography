@@ -97,8 +97,32 @@ export type NovelSection = {
    */
   titleIsPrintedHeading: boolean;
   carriesArchiveSectionLabel: boolean;
+  // ── Wave-6 Batch-5 additions (optional; absent on the first benchmark, which is unchanged) ───────
+  // A work whose units are SOURCE chapters (புதையல்) carries the source chapter number and a leading
+  // Introduction flag, so the reader can label them truthfully as chapters — not as archive divisions.
+  // A work whose units are archive reading divisions (பெரிய இடத்துப் பெண்) leaves these unset.
+  sourceOrder?: number;
+  chapterNumber?: number | null;
+  unitNumberTa?: string | null;
+  unitNumberEn?: string | null;
+  isIntroduction?: boolean;
   tamil: { blocks: NovelBlock[] };
   english: { blocks: NovelBlock[]; notes: NovelNote[] };
+};
+
+// Narrow, data-driven structure metadata so the reader UI states each work's TRUTH without any
+// hardcoded per-work prose. `unitNoun*` labels a reading unit ("section" / "Chapter"); `note*` is the
+// landing/contents explanation; `unitKind*` says whether the units are source chapters or archive
+// reading divisions. Absent on the first benchmark, which keeps its original wording.
+export type NovelStructure = {
+  unitKindTa: string;
+  unitKindEn: string;
+  unitNounTa: string;
+  unitNounEn: string;
+  introUnitTa?: string;
+  introUnitEn?: string;
+  noteTa: string;
+  noteEn: string;
 };
 
 export type Novel = {
@@ -112,19 +136,32 @@ export type Novel = {
   subtype: "novel";
   title: NovelBilingualText;
   author: NovelBilingualText;
-  /** Edition facts exactly as the scan shows them; nothing inferred. */
-  edition: {
-    statementTa: string;
-    year: number;
-    monthTa: string;
-    publisherTa: string;
-    placeTa: string;
-    districtTa: string;
-    seriesTa: string;
-    priceTa: string;
-    printerTa: string;
-    printedCode: string;
+  /**
+   * Edition facts exactly as the scan shows them; nothing inferred. Every field is optional because
+   * editions differ — the first benchmark's 1947 edition prints a series line and a printed code;
+   * பெரிய இடத்துப் பெண் is an eighth edition (1953) with no series line; புதையல் prints publisher and
+   * printer but no visible year or price. A field is present only where the source prints it.
+   */
+  edition?: {
+    statementTa?: string;
+    year?: number;
+    monthTa?: string;
+    editionOrdinalTa?: string;
+    publisherTa?: string;
+    placeTa?: string;
+    districtTa?: string;
+    seriesTa?: string;
+    priceTa?: string;
+    printerTa?: string;
+    printedCode?: string;
   };
+  /** Data-driven reader wording; absent on the first benchmark (which keeps its original prose). */
+  structure?: NovelStructure;
+  /** One-line edition descriptor for page metadata and the reader footer, derived from the source. */
+  editionSummaryTa?: string;
+  editionSummaryEn?: string;
+  /** "archive-division" (assembled reading divisions) | "source-chapters" (source-printed chapters). */
+  readingUnitKind?: "archive-division" | "source-chapters";
   sections: NovelSection[];
   sectionCount: number;
   /** Scans the body covers. */
@@ -141,25 +178,32 @@ export type NovelProvenance = {
     titleEn: string;
     authorTa: string;
     scanFilename: string;
-    scanSha256: string;
+    /** null where the source records the full-PDF hash as pending; never invented. */
+    scanSha256: string | null;
+    scanSha256Note?: string;
     scanFileSizeBytes: number;
+    scanFileSizeNote?: string;
     scanTotalPages: number;
     pageRecordsVerified: string;
     sourceAudit: string;
     assembledLayer: string;
     sourcePdfCommitted: false;
-    editionTa: string;
-    publisherTa: string;
-    placeTa: string;
-    seriesTa: string;
-    priceTa: string;
-    printerTa: string;
-    printedCode: string;
+    editionTa?: string;
+    publisherTa?: string;
+    placeTa?: string;
+    seriesTa?: string;
+    priceTa?: string;
+    printerTa?: string;
+    printedCode?: string;
     printedPageNumbering: string;
     bodyScans: string;
-    /** The embedded-sequence rule, stated as the source states it. */
-    embeddedSequenceNote: string;
-    sourceContinuity: string[];
+    /** Work-structure statement (Wave-6 works). */
+    structureNote?: string;
+    /** The embedded-sequence rule (first benchmark only). */
+    embeddedSequenceNote?: string;
+    sourceContinuity?: string[];
+    /** Canonical paratext kept out of the literary [section] namespace but represented (Wave-6). */
+    paratextExcluded?: Record<string, unknown>;
     lockedExclusions: string[];
   };
   english: {
@@ -190,6 +234,11 @@ export type NovelProvenance = {
     sourceEstablishedJoins: number;
     joins: NovelSourceJoin[];
     embeddedSequenceSections: number;
+    /** Wave-6 additions (optional). */
+    literaryUnits?: { introduction: number; chapters: number };
+    tamilBlocksWithPerBlockScan?: number;
+    englishBlocksWithPerBlockScan?: number;
+    perBlockScanNote?: string;
     note: string;
     joinNote: string;
     provenanceGranularity: string;
