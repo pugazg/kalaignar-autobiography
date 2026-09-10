@@ -1,0 +1,79 @@
+{
+ "workId": "kudumbaththin-nalvilakku",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/kudumbaththin-nalvilakku",
+ "sourceCommit": "564add708b8bd942fa9d5f505b083955248873d0",
+ "sourceTree": "1d1001992ff376056da5cba8d54f7dd79901566b",
+ "source": {
+  "titleTa": "குடும்பத்தின் நல்விளக்கு",
+  "titleEn": "The Good Lamp of the Family",
+  "authorTa": "முதல்வர் டாக்டர் கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0065602_குடும்பத்தின்_நல்விளக்கு.pdf",
+  "scanSha256": "1c3389ec76507b0c6f2ae294a4523633e81084d570a1443c7b730ac899e15971",
+  "scanFileSizeBytes": 34464808,
+  "scanTotalPages": 16,
+  "physicalVerification": "16 / 16 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 16 / 16",
+  "articleAssemblies": "1 / 1 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "குடும்பத்தின் நல்விளக்கு",
+    "titleEn": "The Family's Lamp of Well-Being",
+    "scanPages": "4–13",
+    "printedPages": "2–9; scan 4, 13 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "No edition statement or publication year is visibly established in the supplied scans; internal dates in the body are NOT publication-date evidence and none is inferred.",
+   "The publication prints NO contents page; the single article is an archive reading unit.",
+   "Visible printed numerals are 2–9 on scans 5–12; scans 4 and 13 are unnumbered. Printed pages 1 and 10 are NOT invented."
+  ],
+  "lockedExclusions": [
+   "scans 1–3 — cover / title page / author portrait",
+   "scans 14–16 — back matter"
+  ]
+ },
+ "english": {
+  "releaseTitle": "The Good Lamp of the Family",
+  "kind": "project-created",
+  "articlesVerified": "1 / 1 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "PUBLICATION_COMPLETION_REVIEW.md — P0–P5 COMPLETE / PASS (16/16); English 1/1 verified",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 1,
+  "tamilBlocks": 24,
+  "englishBlocks": 24,
+  "tamilSubheadings": 0,
+  "englishSubheadings": 0,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 3,
+  "englishMixedVoiceParagraphs": 3,
+  "tamilQuotedSegments": 3,
+  "englishQuotedSegments": 3,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 9,
+  "relationUnknown": 9,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

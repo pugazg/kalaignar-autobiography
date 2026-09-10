@@ -63,9 +63,23 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
             <Row label={ta ? "மூலப் பாதை" : "Source path"} mono>{prov.sourcePath}</Row>
             <Row label={ta ? "மூல commit" : "Source commit"} mono>{prov.sourceCommit}</Row>
             <Row label={ta ? "கட்டுப்படுத்தும் scan" : "Controlling scan"} mono>{s.scanFilename}</Row>
-            <Row label="SHA-256" mono>{s.scanSha256}</Row>
-            <Row label={ta ? "அளவு" : "Size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>
+            <Row label="SHA-256" mono>{s.scanSha256 ?? (ta ? "தனிக் கோப்பு இல்லை — கீழே பரிமாற்றப் பகுதிகள்" : "no single-file hash — see transfer parts below")}</Row>
+            <Row label={ta ? "அளவு" : "Size"}>{s.scanFileSizeBytes != null ? `${s.scanFileSizeBytes.toLocaleString("en-US")} ${ta ? "பைட்டுகள்" : "bytes"}` : (ta ? "— (பரிமாற்றப் பகுதிகள்)" : "— (transfer parts)")}</Row>
             <Row label={ta ? "மொத்த scan பக்கங்கள்" : "Physical scans"}>{s.scanTotalPages} · {s.physicalVerification}</Row>
+            {s.publicationForm && (
+              <Row label={ta ? "மூல வடிவம்" : "Source form"}>{s.publicationForm}</Row>
+            )}
+            {s.transferParts && s.transferParts.length > 0 && (
+              <Row label={ta ? "பரிமாற்ற PDF பகுதிகள்" : "Transfer PDF parts"}>
+                <span className="block space-y-1">
+                  {s.transferParts.map((tp) => (
+                    <span key={tp.part} className="block break-all font-mono text-[10px] leading-relaxed">
+                      {ta ? "பகுதி" : "part"} {tp.part} · {ta ? "ஸ்கேன்" : "scans"} {tp.globalScans} · {tp.sha256}
+                    </span>
+                  ))}
+                </span>
+              </Row>
+            )}
             <Row label={ta ? "கண்பார்வை உரைச் சரிபார்ப்பு" : "Strict text fidelity"}>{s.strictFidelityReview}</Row>
             <Row label={ta ? "கட்டுரைத் தொகுப்புகள்" : "Article assemblies"}>{s.articleAssemblies}</Row>
             <Row label={ta ? "தீர்க்கப்படாத தமிழ் சிக்கல்கள்" : "Unresolved Tamil fidelity items"}>{s.unresolvedTamilFidelityItems}</Row>

@@ -1,0 +1,519 @@
+{
+ "workId": "sinthanaiyum-seyalum",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/sinthanaiyum-seyalum",
+ "sourceCommit": "564add708b8bd942fa9d5f505b083955248873d0",
+ "sourceTree": "488cd61fa8df5aafa5a9a505001ce417b2892e90",
+ "source": {
+  "titleTa": "சிந்தனையும் செயலும்",
+  "titleEn": "Thought and Action",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0065568_சிந்தனையும்_செயலும்_2010 (five transfer PDFs)",
+  "scanSha256": null,
+  "scanFileSizeBytes": null,
+  "scanTotalPages": 226,
+  "transferParts": [
+   {
+    "part": 1,
+    "filename": "TVA_BOK_0065568_சிந்தனையும்_செயலும்_2010_part_001_pages_1-55.pdf",
+    "globalScans": "1–55",
+    "pdfPages": 55,
+    "bytes": 139200528,
+    "sha256": "55b55a445972248515c549c3c18223412f784220baf3e959367fe8d0a7f7c53d"
+   },
+   {
+    "part": 2,
+    "filename": "TVA_BOK_0065568_சிந்தனையும்_செயலும்_2010_part_002_pages_56-109.pdf",
+    "globalScans": "56–109",
+    "pdfPages": 54,
+    "bytes": 137950874,
+    "sha256": "f8f98c948b1c0bba3960905350a97bd6e68a5eeef9107bc0dd9dcf9ea03e578a"
+   },
+   {
+    "part": 3,
+    "filename": "TVA_BOK_0065568_சிந்தனையும்_செயலும்_2010_part_003_pages_110-164.pdf",
+    "globalScans": "110–164",
+    "pdfPages": 55,
+    "bytes": 138370584,
+    "sha256": "c05d1a108bff78d018ef542a0afadea62f9802ab7e982b0cf4d97cb789b702cd"
+   },
+   {
+    "part": 4,
+    "filename": "TVA_BOK_0065568_சிந்தனையும்_செயலும்_2010_part_004_pages_165-219.pdf",
+    "globalScans": "165–219",
+    "pdfPages": 55,
+    "bytes": 138940454,
+    "sha256": "7bcb93642b2291a575c82a10b08800ce8892e894e1807040da50d830102b60bc"
+   },
+   {
+    "part": 5,
+    "filename": "TVA_BOK_0065568_சிந்தனையும்_செயலும்_2010_part_005_pages_220-226.pdf",
+    "globalScans": "220–226",
+    "pdfPages": 7,
+    "bytes": 18787263,
+    "sha256": "d587cc69c41db3c8c2c34a8e4e41e28ef34fe47b7b5c0379df898ef603cf3228"
+   }
+  ],
+  "physicalVerification": "226 / 226 physical page records",
+  "strictFidelityReview": "P5 strict visual text fidelity — 226 / 226 PASS",
+  "articleAssemblies": "50 / 50 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற்பதிப்பு : ஜூன், 2006"
+  ],
+  "controllingEditionTa": "மூன்றாம் பதிப்பு : ஜனவரி, 2010",
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "பாசியும் - தூசியும்!",
+    "titleEn": "Moss and Dust!",
+    "scanPages": "18–23",
+    "printedPages": "18–22; scan 18 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "அதிக உயரம் தாண்டுவதற்கு",
+    "titleEn": "To Clear a Greater Height",
+    "scanPages": "24–27",
+    "printedPages": "24–26; scan 24 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "என் பெயர் புரட்சி!",
+    "titleEn": "My Name Is Revolution!",
+    "scanPages": "28–32",
+    "printedPages": "28–31; scan 28 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "குருகுலம்!",
+    "titleEn": "Gurukulam!",
+    "scanPages": "33–35",
+    "printedPages": "33–34; scan 33 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 5,
+    "titleTa": "ஜனநாயக நெறி",
+    "titleEn": "The Way of Democracy",
+    "scanPages": "36–38",
+    "printedPages": "36–37; scan 36 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 6,
+    "titleTa": "வாக்குச்சீட்டின் வலிமை",
+    "titleEn": "The Power of the Ballot",
+    "scanPages": "39–41",
+    "printedPages": "39–40; scan 39 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 7,
+    "titleTa": "சுயமரியாதைத் திருமணம்",
+    "titleEn": "Self-Respect Marriage",
+    "scanPages": "42–45",
+    "printedPages": "42–44; scan 42 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 8,
+    "titleTa": "மனிதனின் மறுபக்கம்",
+    "titleEn": "The Other Side of Man",
+    "scanPages": "46–48",
+    "printedPages": "46–47; scan 46 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 9,
+    "titleTa": "விண்ணைத் தொட்டு மண்ணில் புதைவதா?",
+    "titleEn": "Touching the Sky, Buried in the Earth?",
+    "scanPages": "49–51",
+    "printedPages": "49–50; scan 49 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 10,
+    "titleTa": "மனிதனும் மறுபிறவியும்",
+    "titleEn": "Man and Rebirth",
+    "scanPages": "52–55",
+    "printedPages": "52–54; scan 52 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 11,
+    "titleTa": "வெற்றி தோல்வி!",
+    "titleEn": "Victory and Defeat!",
+    "scanPages": "56–58",
+    "printedPages": "56–57; scan 56 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 12,
+    "titleTa": "அழுக்காறு",
+    "titleEn": "Azhukkaaru",
+    "scanPages": "59–61",
+    "printedPages": "59–60; scan 59 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 13,
+    "titleTa": "மிகுதிக்கண்...",
+    "titleEn": "When the Limit Is Crossed...",
+    "scanPages": "62–65",
+    "printedPages": "62–64; scan 62 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 14,
+    "titleTa": "வலிவும், பொலிவும்!",
+    "titleEn": "Strength and Radiance!",
+    "scanPages": "66–68",
+    "printedPages": "66–67; scan 66 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 15,
+    "titleTa": "இன்பமும் துன்பமும்!",
+    "titleEn": "Joy and Sorrow!",
+    "scanPages": "69–74",
+    "printedPages": "69–73; scan 69 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 16,
+    "titleTa": "ஒழுக்கம்",
+    "titleEn": "Conduct",
+    "scanPages": "75–77",
+    "printedPages": "75–76; scan 75 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 17,
+    "titleTa": "வசிய மருந்து",
+    "titleEn": "The Enchantment Drug",
+    "scanPages": "78–81",
+    "printedPages": "78–80; scan 78 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 18,
+    "titleTa": "சோதிட சோகம்!",
+    "titleEn": "Astrological Sorrow!",
+    "scanPages": "82–84",
+    "printedPages": "82–83; scan 82 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 19,
+    "titleTa": "ஆன்மிக ஆழ்கடல்",
+    "titleEn": "A Deep Ocean of Spirituality",
+    "scanPages": "85–89",
+    "printedPages": "85–88; scan 85 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 20,
+    "titleTa": "தேனில் குழைத்துக் கொடுத்தாலும்...!",
+    "titleEn": "Even If Mixed with Honey...!",
+    "scanPages": "90–93",
+    "printedPages": "90–92; scan 90 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 21,
+    "titleTa": "வியாதிக்கு விருந்தா?",
+    "titleEn": "A Feast for Disease?",
+    "scanPages": "94–97",
+    "printedPages": "94–96; scan 94 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 22,
+    "titleTa": "விளையாட்டு",
+    "titleEn": "Sport",
+    "scanPages": "98–100",
+    "printedPages": "98–99; scan 98 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 23,
+    "titleTa": "தன்னை வெல்வான்",
+    "titleEn": "He Who Conquers Himself",
+    "scanPages": "101–103",
+    "printedPages": "101–102; scan 101 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 24,
+    "titleTa": "இட்லர்",
+    "titleEn": "Hitler",
+    "scanPages": "104–108",
+    "printedPages": "104–107; scan 104 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 25,
+    "titleTa": "இங்கர்சால்",
+    "titleEn": "Ingersoll",
+    "scanPages": "109–111",
+    "printedPages": "109–110; scan 109 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 26,
+    "titleTa": "மகளிர் இட ஒதுக்கீடு!",
+    "titleEn": "Women's Reservation!",
+    "scanPages": "112–116",
+    "printedPages": "112–115; scan 112 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 27,
+    "titleTa": "தியானம்???",
+    "titleEn": "Meditation???",
+    "scanPages": "117–122",
+    "printedPages": "117–121; scan 117 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 28,
+    "titleTa": "விபத்து",
+    "titleEn": "Accident",
+    "scanPages": "123–125",
+    "printedPages": "123–124; scan 123 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 29,
+    "titleTa": "சின்னத்திரை “செல்வி”",
+    "titleEn": "The Small-Screen “Selvi”",
+    "scanPages": "126–129",
+    "printedPages": "126–128; scan 126 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 30,
+    "titleTa": "மருந்தென ஒன்று!",
+    "titleEn": "A Thing Called Medicine!",
+    "scanPages": "130–133",
+    "printedPages": "130–132; scan 130 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 31,
+    "titleTa": "சிறிய நூல்தான்",
+    "titleEn": "Only a Small Book",
+    "scanPages": "134–138",
+    "printedPages": "134–137; scan 134 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 32,
+    "titleTa": "மண்டேலா",
+    "titleEn": "Mandela",
+    "scanPages": "139–144",
+    "printedPages": "139–143; scan 139 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 33,
+    "titleTa": "தொண்டுள்ளம்",
+    "titleEn": "Spirit of Service",
+    "scanPages": "145–147",
+    "printedPages": "145–146; scan 145 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 34,
+    "titleTa": "மகளிர் பேரணி!",
+    "titleEn": "Women's Rally!",
+    "scanPages": "148–151",
+    "printedPages": "148–150; scan 148 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 35,
+    "titleTa": "திரிகடுகம்",
+    "titleEn": "Thirikadugam",
+    "scanPages": "152–154",
+    "printedPages": "152–153; scan 152 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 36,
+    "titleTa": "தீக்குச்சி தேடாதீர்!",
+    "titleEn": "Don't Look for a Matchstick!",
+    "scanPages": "155–158",
+    "printedPages": "155–157; scan 155 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 37,
+    "titleTa": "சிலம்பும் மணியும்!",
+    "titleEn": "The Anklet and the Gem!",
+    "scanPages": "159–162",
+    "printedPages": "159–161; scan 159 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 38,
+    "titleTa": "செய்ந்நன்றி",
+    "titleEn": "Gratitude for Help Received",
+    "scanPages": "163–166",
+    "printedPages": "163–165; scan 163 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 39,
+    "titleTa": "பகுத்தறிவுப் பாதை!",
+    "titleEn": "The Path of Rationalism!",
+    "scanPages": "167–172",
+    "printedPages": "167–171; scan 167 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 40,
+    "titleTa": "பெண்ணியப் புரட்சி!",
+    "titleEn": "A Feminist Revolution!",
+    "scanPages": "173–177",
+    "printedPages": "173–176; scan 173 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 41,
+    "titleTa": "வலி அறிவிக்கும் வாயில்லா மொழி!",
+    "titleEn": "The Mute Language That Tells of Pain!",
+    "scanPages": "178–181",
+    "printedPages": "178–180; scan 178 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 42,
+    "titleTa": "வருமுன் காப்பதா? வந்தபின் காப்பதா?",
+    "titleEn": "Protect Before It Comes? Or After It Comes?",
+    "scanPages": "182–187",
+    "printedPages": "182–186; scan 182 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 43,
+    "titleTa": "எங்கே சொர்க்கம்? எங்கே சொர்க்கம்?",
+    "titleEn": "Where Is Heaven? Where Is Heaven?",
+    "scanPages": "188–191",
+    "printedPages": "188–190; scan 188 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 44,
+    "titleTa": "குரு பீடமும்; குறள் பீடமும்!",
+    "titleEn": "The Guru Peedam and the Kural Peedam!",
+    "scanPages": "192–194",
+    "printedPages": "192–193; scan 192 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 45,
+    "titleTa": "இறையனார் குறளும்; இனியவை நாற்பதும்!",
+    "titleEn": "Iraiyanar's Kural and Iniyavai Narpathu!",
+    "scanPages": "195–198",
+    "printedPages": "195–197; scan 195 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 46,
+    "titleTa": "படகுக்கு ஒரு கணக்கு; நாட்டுக்கு ஒரு கணக்கா?",
+    "titleEn": "One Calculation for a Boat; Another for a Country?",
+    "scanPages": "199–203",
+    "printedPages": "199–202; scan 199 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 47,
+    "titleTa": "கலசங்கள், கலங்கரை விளக்கங்களாகலாம்!",
+    "titleEn": "Finials Can Become Lighthouses!",
+    "scanPages": "204–209",
+    "printedPages": "204–208; scan 204 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 48,
+    "titleTa": "நல்வழிக்கு நாட்டாரய்யாவின் உரை!",
+    "titleEn": "Nattarayya's Commentary on Nalvazhi!",
+    "scanPages": "210–213",
+    "printedPages": "210–212; scan 210 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 49,
+    "titleTa": "அந்தாதி பாடிய அருதகுட்டி நாடார்",
+    "titleEn": "Aruthakutti Nadar Who Sang an Anthathi",
+    "scanPages": "214–220",
+    "printedPages": "214–219; scan 214 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 50,
+    "titleTa": "சிந்தனை செய் மனமே",
+    "titleEn": "Think, O Mind",
+    "scanPages": "221–225",
+    "printedPages": "221–224; scan 221 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The controlling scan is the third edition (ஜனவரி 2010); the first edition (ஜூன் 2006) is a distinct fact and the two are never merged.",
+   "Source-witness title distinctions are preserved verbatim and never flattened for consistency (including Units 3, 6, 9, 11, 15, 19, 41 and 48).",
+   "The frozen English `Udanpirappē` rendering policy is preserved as released; English is carried verbatim from the frozen release.",
+   "The original unsplit-PDF SHA-256 is not available and is never fabricated; each of the five transfer PDFs carries its own SHA-256."
+  ],
+  "lockedExclusions": [
+   "scans 1–17 — cover / front matter / contents / internal title / blank witnesses",
+   "scan 226 — back-cover / promotional witness",
+   "printed marginal witnesses excluded from prose"
+  ]
+ },
+ "english": {
+  "releaseTitle": "Thought and Action",
+  "kind": "project-created",
+  "articlesVerified": "50 / 50 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "PUBLICATION_COMPLETION_REVIEW.md — RELEASE COMPLETE / FROZEN; P2 226/226, P3 50/50, scoped P4/P5 50/50; English 50/50 verified",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 50,
+  "tamilBlocks": 1355,
+  "englishBlocks": 1245,
+  "tamilSubheadings": 1,
+  "englishSubheadings": 1,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 216,
+  "englishMixedVoiceParagraphs": 218,
+  "tamilQuotedSegments": 407,
+  "englishQuotedSegments": 424,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 158,
+  "relationUnknown": 158,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

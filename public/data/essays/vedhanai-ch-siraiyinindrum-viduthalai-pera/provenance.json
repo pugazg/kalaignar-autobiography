@@ -1,0 +1,80 @@
+{
+ "workId": "vedhanai-ch-siraiyinindrum-viduthalai-pera",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/vedhanai-ch-siraiyinindrum-viduthalai-pera",
+ "sourceCommit": "564add708b8bd942fa9d5f505b083955248873d0",
+ "sourceTree": "f3c43511240df098b175b9d39cdcc6f4318f2230",
+ "source": {
+  "titleTa": "வேதனைச் சிறையினின்றும் விடுதலை பெற",
+  "titleEn": "To Win Release from the Prison of Suffering",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0064064_வேதனைச்_சிறையினின்றும்_விடுதலை_பெற.pdf",
+  "scanSha256": "d6429304ca8e53324e41fbe6695a31d1411b12ec5e04bf5a35d8cc8a51d06651",
+  "scanFileSizeBytes": 11408976,
+  "scanTotalPages": 8,
+  "publicationForm": "government public message (`செய்தி`) issued to the people — NOT a delivered speech; no speech event, venue or exact issue date is stated by the source",
+  "physicalVerification": "8 / 8 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 8 / 8",
+  "articleAssemblies": "1 / 1 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "வேதனைச் சிறையினின்றும் விடுதலை பெற",
+    "titleEn": "Freedom from the Prison of Suffering",
+    "scanPages": "3–7",
+    "printedPages": "4–7; scan 3 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The source identifies this text as a government public `செய்தி` (message) issued to the people by the Tamil Nadu Chief Minister during the `குடும்ப நலத்திட்ட இருவார விழா`. It is NOT a delivered speech and is never classified as one; no speech event or venue is invented.",
+   "The family-welfare fortnight began on 15 December 1975; the exact date the message itself was issued is NOT separately stated and is never turned into a message/publication date.",
+   "No separate edition statement, printed price or stand-alone publication date is visible in the eight scans; none is inferred."
+  ],
+  "lockedExclusions": [
+   "scans 1–2 — cover / title page",
+   "scan 8 — back matter"
+  ]
+ },
+ "english": {
+  "releaseTitle": "To Win Release from the Prison of Suffering",
+  "kind": "project-created",
+  "articlesVerified": "1 / 1 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "SOURCE_COMPLETENESS_AUDIT.md — P4 PASS (8/8 scans, single canonical assembly); English 1/1 verified",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 1,
+  "tamilBlocks": 46,
+  "englishBlocks": 46,
+  "tamilSubheadings": 1,
+  "englishSubheadings": 1,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 0,
+  "englishMixedVoiceParagraphs": 0,
+  "tamilQuotedSegments": 0,
+  "englishQuotedSegments": 0,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 4,
+  "relationUnknown": 4,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

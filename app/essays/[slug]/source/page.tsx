@@ -5,6 +5,8 @@ import path from "node:path";
 import ArticleSource from "@/components/ArticleSource";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayProvenance } from "@/data/essays";
+import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
+const ALL_ESSAY_SLUGS: readonly string[] = [...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS];
 import { sourcePageMetaDescription } from "@/lib/essay-source-facts";
 
 function loadProvenance(slug: string): EssayProvenance | null {
@@ -16,7 +18,7 @@ function loadProvenance(slug: string): EssayProvenance | null {
 }
 
 export function generateStaticParams() {
-  return ESSAY_SLUGS.map((slug) => ({ slug }));
+  return ALL_ESSAY_SLUGS.map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -33,7 +35,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function EssaySourcePage({ params }: { params: { slug: string } }) {
-  if (!(ESSAY_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_ESSAY_SLUGS.includes(params.slug)) notFound();
   const prov = loadProvenance(params.slug);
   if (!prov) notFound();
   return <ArticleSource slug={params.slug} prov={prov} />;

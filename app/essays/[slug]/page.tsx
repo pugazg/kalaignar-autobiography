@@ -6,6 +6,11 @@ import EssayLanding from "@/components/EssayLanding";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayPublication } from "@/data/essays";
 import { publicationMetaSentence } from "@/lib/essay-source-facts";
+import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
+
+// Discovered Essay publications PLUS the Wave-6 Batch-6 direct-only publications. The Wave-6 set is
+// prerendered here (URL-addressable) but stays out of ESSAY_SLUGS, the catalogue and the sitemap.
+const ALL_ESSAY_SLUGS: readonly string[] = [...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS];
 
 // Not exported: a Next.js page module may only export the framework's own reserved names.
 function loadPublication(slug: string): EssayPublication | null {
@@ -17,7 +22,7 @@ function loadPublication(slug: string): EssayPublication | null {
 }
 
 export function generateStaticParams() {
-  return ESSAY_SLUGS.map((slug) => ({ slug }));
+  return ALL_ESSAY_SLUGS.map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -33,7 +38,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function EssayPublicationPage({ params }: { params: { slug: string } }) {
-  if (!(ESSAY_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_ESSAY_SLUGS.includes(params.slug)) notFound();
   const pub = loadPublication(params.slug);
   if (!pub) notFound();
   return <EssayLanding pub={pub} />;

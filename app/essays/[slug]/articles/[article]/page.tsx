@@ -5,6 +5,8 @@ import path from "node:path";
 import ArticleReader from "@/components/ArticleReader";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayPublication } from "@/data/essays";
+import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
+const ALL_ESSAY_SLUGS: readonly string[] = [...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS];
 import { printedPagesLabel, publicationMetaSentence, scanRunsLabel } from "@/lib/essay-source-facts";
 
 function loadPublication(slug: string): EssayPublication | null {
@@ -17,7 +19,7 @@ function loadPublication(slug: string): EssayPublication | null {
 
 // Stable, deep-linkable route per article — one static page each, no query-string navigation.
 export function generateStaticParams() {
-  return ESSAY_SLUGS.flatMap((slug) => {
+  return ALL_ESSAY_SLUGS.flatMap((slug) => {
     const pub = loadPublication(slug);
     return (pub?.articles ?? []).map((a) => ({ slug, article: a.slug }));
   });
@@ -42,7 +44,7 @@ export function generateMetadata({ params }: { params: { slug: string; article: 
 }
 
 export default function ArticlePage({ params }: { params: { slug: string; article: string } }) {
-  if (!(ESSAY_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_ESSAY_SLUGS.includes(params.slug)) notFound();
   const pub = loadPublication(params.slug);
   const i = pub?.articles.findIndex((x) => x.slug === params.article) ?? -1;
   if (!pub || i < 0) notFound();

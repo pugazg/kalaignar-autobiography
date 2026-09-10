@@ -161,10 +161,11 @@ eq("the authorized batch is exactly 3 publications", WORKS.length, 3);
 eq("no duplicate slug", new Set(WORKS.map((w) => w.slug)).size, 3);
 eq("source clone HEAD is exactly the reviewed pin", head, PIN);
 check("the reference publication is NOT in this batch", !WORKS.some((w) => w.slug === REFERENCE));
-check("ina-muzhakkam is NOT in this batch", !WORKS.some((w) => w.slug === "ina-muzhakkam"));
-check("ina-muzhakkam exists upstream but is untouched here",
-      fs.existsSync(path.join(SRC_REPO, "publications", "ina-muzhakkam")) &&
-      !fs.existsSync(path.join(DATA, "ina-muzhakkam")));
+check("ina-muzhakkam is NOT in this Wave-3 batch", !WORKS.some((w) => w.slug === "ina-muzhakkam"));
+// ina-muzhakkam exists upstream and is NOT a Wave-3 work here. (It is onboarded separately by Wave-6
+// Batch 6; whether it is vendored under public/data/essays is therefore not this batch's concern.)
+check("ina-muzhakkam exists upstream and is not a Wave-3 work",
+      fs.existsSync(path.join(SRC_REPO, "publications", "ina-muzhakkam")));
 for (const w of WORKS) {
   eq(`${w.slug}: frozen source tree unchanged`, git("rev-parse", `${PIN}:publications/${w.slug}`), w.tree);
 }

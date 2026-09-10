@@ -126,6 +126,12 @@ jobs:
       # neither work in sitemap/catalogue/discovery.
       - name: Novels direct readers/routes (Wave 6 B5)
         run: npm run test:wave6-b5-novels
+      # Wave 6 Batch 6 — Essays direct readers/routes: the exact 74-route set (5 landings + 5 /source +
+      # 64 article routes), fail-closed slugs, vedhanai rendered as a message (never a speech),
+      # kudumbaththin with no invented year, sinthanaiyum as 50 articles across five transfer PDFs, and
+      # none of the five in sitemap/catalogue/discovery.
+      - name: Essays direct readers/routes (Wave 6 B6)
+        run: npm run test:wave6-b6-essays
       # Wave 6 P1–P3 global build-boundary — owns the whole-build delta that Wave-5 P4 A7 shed:
       # build == frozen pre-Wave-6 baseline + cumulative Wave-6 P3 route manifest, and every Wave-6
       # route stays out of sitemap/catalogue/discovery. Runs after Build.
@@ -262,6 +268,16 @@ jobs:
               "essays/kayittril-thongiya-kanapathi": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
               "essays/unarchchimaalai": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
               "essays/thiraavida-sampaththu": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave3" },
+              // Wave 6 Batch 6 — Essays. The five publications pin the essays archive at a LATER commit
+              // than the Wave-3 essays (the essays repo advances constantly for ina-muzhakkam and other
+              // unrelated work), so they get their OWN checkout directory; all five share ONE pin
+              // (recorded in each provenance file), so the same-directory/same-pin guard keeps its
+              // meaning. (No apostrophes in this embedded node script.)
+              "essays/ina-muzhakkam": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave6" },
+              "essays/kolaikkalam": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave6" },
+              "essays/kudumbaththin-nalvilakku": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave6" },
+              "essays/sinthanaiyum-seyalum": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave6" },
+              "essays/vedhanai-ch-siraiyinindrum-viduthalai-pera": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave6" },
               "novels/balipeedam-nokki": { repo: "kalaignar-novels" },
               // Wave 6 Batch 5 — Novels. Periya Idathup Pen and Pudhaiyal pin the novels archive at a
               // LATER commit than Balipeedam (the novels repo has since advanced for the unrelated
@@ -427,6 +443,12 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-wave3-essays.mjs "$KDL_SOURCES_DIR/kalaignar-essays-wave3"
+      # Wave 6 Batch 6 — Essays. ONE coherent released batch, ONE validation step; the script prints a
+      # per-work summary and runs the adversarial battery (source/generated).
+      - name: Essays Wave 6 Batch 6 — 5-publication batch
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-essays-wave6.mjs "$KDL_SOURCES_DIR/kalaignar-essays-wave6"
       - name: Balipeedam Nokki
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

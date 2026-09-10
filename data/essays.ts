@@ -176,6 +176,12 @@ export type EssayPublication = {
    * reading order had to be reconstructed. The form is a source fact, not a catalogue category.
    */
   subtype: "essay-collection" | "single-article-pamphlet" | "reconstructed-pamphlet";
+  /**
+   * The source FORM in the source's own words, where it is more specific than the subtype — e.g.
+   * `வேதனைச் சிறையினின்றும் விடுதலை பெற` is a government public message (`செய்தி`), NOT a delivered
+   * speech. Optional; absent on the earlier publications. It is a source fact, never a reclassification.
+   */
+  publicationForm?: string;
   title: ArticleBilingualText;
   author: ArticleBilingualText;
   /**
@@ -232,9 +238,19 @@ export type EssayProvenance = {
     titleEn: string;
     authorTa: string;
     scanFilename: string;
-    scanSha256: string;
-    scanFileSizeBytes: number;
+    /** null where the source supplies no single controlling-PDF SHA (e.g. a split multi-part transfer
+     *  whose original unsplit hash is explicitly "not available; never fabricate it"). */
+    scanSha256: string | null;
+    scanFileSizeBytes: number | null;
     scanTotalPages: number;
+    /**
+     * Present where the controlling scan was supplied as several non-overlapping transfer PDFs rather
+     * than one file (`சிந்தனையும் செயலும்` — five parts). Each part's own SHA-256 is recorded; the
+     * unsplit original hash is deliberately absent and never fabricated. Optional.
+     */
+    transferParts?: { part: number; filename: string; globalScans: string; pdfPages: number; bytes: number; sha256: string }[];
+    /** The source FORM (e.g. a government public `செய்தி`), where the source states one. Optional. */
+    publicationForm?: string;
     physicalVerification: string;
     strictFidelityReview: string;
     articleAssemblies: string;
