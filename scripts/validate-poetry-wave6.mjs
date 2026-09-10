@@ -103,11 +103,17 @@ const STANDALONE = {
   "kanchithan-annan": { taFile: "sections/01.md", conv: "plain", taHead: ["காஞ்சிதான் அண்ணன்", "முதலமைச்சர், கலைஞர், மு. கருணாநிதி"], enHead: [] },
 };
 
-// ── TOKEN MODEL ─────────────────────────────────────────────────────────────────────────────────
-const T_SCAN = (scan, printed) => `SCAN ${scan} p=${printed === null || printed === undefined ? "-" : printed}`;
-const T_LINE = (indent, text) => `LINE i=${indent} |${text}`;
-const T_HEAD = (text) => `HEAD |${text}`;
-const T_BREAK = "BREAK";
+// ── TOKEN MODEL (element-level attribution) ───────────────────────────────────────────────────────
+// Every content token carries its own scan and printed page; scan boundaries are explicit PAGE tokens
+// (fromScan→toScan). The SOURCE stream derives these from the raw markers + frozen page records; the
+// GENERATED stream derives them ONLY from the payload element fields (never from pagePrinted). Exact
+// stream equality therefore proves per-element sourceScan, printedPage, fromScan and toScan.
+const P = (printed) => (printed === null || printed === undefined ? "-" : printed);
+const T_SCAN = (scan) => `SCAN ${scan}`;
+const T_PAGE = (from, to) => `PAGE ${from}->${to}`;
+const T_LINE = (scan, printed, indent, text) => `LINE s=${scan} p=${P(printed)} i=${indent} |${text}`;
+const T_HEAD = (scan, printed, text) => `HEAD s=${scan} p=${P(printed)} |${text}`;
+const T_BREAK = (scan) => `BREAK s=${scan}`;
 
 // Independent VISIBLE printed page for a scan, read from the frozen page record (never scan−N).
 function pagePrinted(slug, scan) {
@@ -140,11 +146,17 @@ function srcTokensPlain(slug, file, { head = [], headings = [], dropRun = null }
   const headingSet = new Set(headings);
   const headQ = [...head];
   const tokens = [];
-  let scan = null, emitted = 0, pendingBlank = false, started = false;
+  let scan = null, printed = null, emitted = 0, pendingBlank = false, started = false;
   for (const rawLine of lines) {
     const t = rawLine.trim();
     const mk = /^<!--\s*scan_page:\s*(\d+)\s*(?:\/\s*printed_page:\s*(?:null|\d+)\s*)?-->$/.exec(t);
-    if (mk) { scan = Number(mk[1]); tokens.push(T_SCAN(scan, pagePrinted(slug, scan))); emitted = 0; pendingBlank = false; started = tokens.some((x) => x.startsWith("LINE") || x.startsWith("HEAD")); continue; }
+    if (mk) {
+      const s = Number(mk[1]);
+      if (scan === null) tokens.push(T_SCAN(s)); else tokens.push(T_PAGE(scan, s));
+      scan = s; printed = pagePrinted(slug, s); emitted = 0; pendingBlank = false;
+      started = tokens.some((x) => x.startsWith("LINE") || x.startsWith("HEAD"));
+      continue;
+    }
     if (scan === null) continue;
     if (/^<!--/.test(t) || /^```/.test(t)) continue;
     if (t === "") { if (emitted > 0) pendingBlank = true; continue; }
@@ -152,11 +164,11 @@ function srcTokensPlain(slug, file, { head = [], headings = [], dropRun = null }
     const matchText = hm ? hm[2] : rstrip(rawLine);
     if (!started && headQ.length && matchText === headQ[0]) { headQ.shift(); continue; }
     started = true;
-    if (pendingBlank) { tokens.push(T_BREAK); pendingBlank = false; }
-    if (headingSet.has(matchText)) { tokens.push(T_HEAD(matchText)); emitted++; continue; }
+    if (pendingBlank) { tokens.push(T_BREAK(scan)); pendingBlank = false; }
+    if (headingSet.has(matchText)) { tokens.push(T_HEAD(scan, printed, matchText)); emitted++; continue; }
     const rstr = rstrip(rawLine);
     const indent = rstr.length - rstr.trimStart().length;
-    tokens.push(T_LINE(indent, rawLine.slice(indent))); // literal text (trailing whitespace preserved)
+    tokens.push(T_LINE(scan, printed, indent, rawLine.slice(indent))); // literal text (trailing whitespace preserved)
     emitted++;
   }
   if (headQ.length) throw new Error(`${slug}/${file}: head-contract not fully matched, remaining ${JSON.stringify(headQ)}`);
@@ -170,41 +182,73 @@ function srcTokensFenced(slug, file, { headings = [] } = {}) {
   const headingSet = new Set(headings);
   const re = /<!--\s*scan_page:\s*(\d+)\s*\/\s*printed_page:\s*(?:null|\d+)\s*-->\n```text\n([\s\S]*?)\n```/g;
   const tokens = [];
-  let m;
+  let m, prevScan = null;
   while ((m = re.exec(raw)) !== null) {
     const scan = Number(m[1]);
-    tokens.push(T_SCAN(scan, pagePrinted(slug, scan)));
+    if (prevScan === null) tokens.push(T_SCAN(scan)); else tokens.push(T_PAGE(prevScan, scan));
+    prevScan = scan;
+    const printed = pagePrinted(slug, scan);
     let emitted = 0, pendingBlank = false;
     for (const rawLine of m[2].split("\n")) {
       if (rawLine.trim() === "") { if (emitted > 0) pendingBlank = true; continue; }
-      if (pendingBlank) { tokens.push(T_BREAK); pendingBlank = false; }
+      if (pendingBlank) { tokens.push(T_BREAK(scan)); pendingBlank = false; }
       const matchText = rstrip(rawLine);
-      if (headingSet.has(matchText)) { tokens.push(T_HEAD(matchText)); emitted++; continue; }
+      if (headingSet.has(matchText)) { tokens.push(T_HEAD(scan, printed, matchText)); emitted++; continue; }
       const indent = rstrip(rawLine).length - rstrip(rawLine).trimStart().length;
-      tokens.push(T_LINE(indent, rawLine.slice(indent)));
+      tokens.push(T_LINE(scan, printed, indent, rawLine.slice(indent)));
       emitted++;
     }
   }
   return tokens;
 }
 
-// GENERATED token stream — from the payload layer, independent of the importer.
-function genTokens(slug, layer) {
+// GENERATED token stream — attribution derived ONLY from the payload element fields (sourceScan,
+// printedPage, indent, text, fromScan, toScan). It NEVER calls pagePrinted(): a wrong generated
+// printedPage or sourceScan can no longer be masked by the source page record. Fail-closed attribution
+// inconsistencies are pushed into `errors` (a wrong fromScan, or a line/heading/break attributed to a
+// scan other than the current generated scan).
+function genTokens(layer, errors) {
   const tokens = [];
-  let started = false;
+  let cur = null;
   for (const e of layer.elements) {
-    if (e.kind === "page-transition") { tokens.push(T_SCAN(e.toScan, pagePrinted(slug, e.toScan))); continue; }
-    if (!started && (e.kind === "line" || e.kind === "source-heading" || e.kind === "stanza-break")) {
-      tokens.push(T_SCAN(e.sourceScan, pagePrinted(slug, e.sourceScan)));
-      started = true;
+    if (e.kind === "page-transition") {
+      if (cur !== null && e.fromScan !== cur) errors.push(`page-transition fromScan ${e.fromScan} != current generated scan ${cur}`);
+      tokens.push(T_PAGE(e.fromScan, e.toScan));
+      cur = e.toScan;
+      continue;
     }
-    if (e.kind === "line") tokens.push(T_LINE(e.indent || 0, e.text));
-    else if (e.kind === "source-heading") tokens.push(T_HEAD(e.text));
-    else if (e.kind === "stanza-break") tokens.push(T_BREAK);
+    if (cur === null) { cur = e.sourceScan; tokens.push(T_SCAN(cur)); }
+    else if (e.sourceScan !== cur) errors.push(`${e.kind} attributed to scan ${e.sourceScan} != current generated scan ${cur}`);
+    const printed = e.printedPage === undefined ? null : e.printedPage;
+    if (e.kind === "line") tokens.push(T_LINE(e.sourceScan, printed, e.indent || 0, e.text));
+    else if (e.kind === "source-heading") tokens.push(T_HEAD(e.sourceScan, printed, e.text));
+    else if (e.kind === "stanza-break") tokens.push(T_BREAK(e.sourceScan));
   }
   return tokens;
 }
-const scanSeqOf = (tokens) => tokens.filter((x) => x.startsWith("SCAN ")).map((x) => Number(x.split(" ")[1]));
+// Independent printed-page attribution: every generated line/heading printedPage == the frozen page
+// record for that element's OWN sourceScan; null stays null (no backfilled numeral).
+function checkPrintedPages(slug, layer, label) {
+  for (const e of layer.elements) {
+    if (e.kind !== "line" && e.kind !== "source-heading") continue;
+    const want = pagePrinted(slug, e.sourceScan);
+    const got = e.printedPage === undefined ? null : e.printedPage;
+    eq(got, want, `${label}: ${e.kind} on scan ${e.sourceScan} printedPage == frozen page record`);
+  }
+}
+// A full S===G proof for one layer: internal generated attribution consistency + exact token equality.
+function proveLayer(slug, layer, srcTokens, label) {
+  const errors = [];
+  const gen = genTokens(layer, errors);
+  ok(errors.length === 0, `${label}: generated element attribution internally consistent${errors.length ? " — " + errors.join("; ") : ""}`);
+  eq(gen, srcTokens, `${label}: INDEPENDENT token-stream S===G (bytes, order, indent, headings, per-element scan+printed, breaks, page transitions)`);
+  checkPrintedPages(slug, layer, label);
+}
+const scanSeqOf = (tokens) => {
+  const seq = [];
+  for (const x of tokens) { if (x.startsWith("SCAN ")) seq.push(Number(x.slice(5))); else if (x.startsWith("PAGE ")) seq.push(Number(x.split("->")[1])); }
+  return seq;
+};
 
 // ── 0. TREE PINS + identity ─────────────────────────────────────────────────────────────────────
 eq(rev("HEAD"), SRC_COMMIT, "source clone HEAD == frozen Batch-4 source commit");
@@ -226,7 +270,14 @@ function checkReleaseEvidence(slug, prov) {
   ok(/FINAL-CLEARED/.test(doc), `${slug}: authoritative source document records Tamil FINAL-CLEARED`);
   ok(/RELEASE-CLEARED|RELEASE-COMPLETE|RELEASE COMPLETE|PHASE 4 COMPLETE|Phase 4[^\n]*COMPLETE|Phase 4[^\n]*RELEASE-CLEARED/.test(doc), `${slug}: authoritative source document records English RELEASE-CLEARED/COMPLETE`);
   ok(/unresolved[^\n]*\b0\b|\bunresolved[^\n]*\*\*0\*\*|0[^\n]*unresolved|\*\*0\*\*[^\n]*unresolved/i.test(doc), `${slug}: source document records 0 unresolved release issues`);
+  // Source-side evidence for the PROJECT-TRANSLATION lane: the frozen workspace itself carries the
+  // governing translations/en release artifacts. Only then is the generated provenance required to
+  // label the layer project-created (and never source-published).
+  const enDir = `poems/${slug}/translations/en`;
+  const relArtifacts = ["RELEASE_REPORT.md", "RELEASE_INTEGRITY_REVIEW.md", "EDITORIAL_CONSISTENCY_REVIEW.md", "ASSEMBLY.md", "README.md"];
+  ok(relArtifacts.some((f) => fs.existsSync(path.join(SRC, enDir, f))), `${slug}: frozen source carries a translations/en release artifact (project-translation lane evidence)`);
   ok(/project-created/.test(prov.projectRights.projectTranslationNote), `${slug}: provenance records English authority = project-created`);
+  ok(!/source-published|source published/i.test(prov.projectRights.projectTranslationNote), `${slug}: provenance does NOT claim a source-published English edition`);
 }
 
 // ── HASH integrity pins (Blocker 4) ─────────────────────────────────────────────────────────────
@@ -250,13 +301,11 @@ for (const slug of Object.keys(STANDALONE)) {
     ? srcTokensFenced(slug, c.taFile, { headings: c.taHeadings || [] })
     : srcTokensPlain(slug, c.taFile, { head: c.taHead, headings: c.taHeadings || [] });
   const srcEn = srcTokensPlain(slug, `translations/en/${slug}-en.md`, { head: c.enHead, headings: c.enHeadings || [] });
-  const genTa = genTokens(slug, poem.tamil);
-  const genEn = genTokens(slug, poem.english);
-  eq(genTa, srcTa, `${slug}: Tamil INDEPENDENT token-stream S===G (bytes, order, indent, headings, scans, breaks)`);
-  eq(genEn, srcEn, `${slug}: English INDEPENDENT token-stream S===G`);
+  proveLayer(slug, poem.tamil, srcTa, `${slug} Tamil`);
+  proveLayer(slug, poem.english, srcEn, `${slug} English`);
   // Independent source marker sequence == generated poemScans (NOT taken from poemScans).
   eq(poem.poemScans, scanSeqOf(srcTa), `${slug}: generated poemScans == independently-derived source scan sequence`);
-  ok(genTa.some((x) => x.startsWith("LINE")) && genEn.some((x) => x.startsWith("LINE")), `${slug}: non-empty reading text both layers`);
+  ok(srcTa.some((x) => x.startsWith("LINE")) && srcEn.some((x) => x.startsWith("LINE")), `${slug}: non-empty reading text both layers`);
   if (poem.publicationYear !== null) ok(readSrc(`poems/${slug}/metadata/source.md`).includes(String(poem.publicationYear)), `${slug}: publicationYear ${poem.publicationYear} is source-stated`);
 }
 
@@ -282,8 +331,8 @@ for (const slug of Object.keys(STANDALONE)) {
     const titleRun = it.titleTa.split(" / ");
     const srcTa = srcTokensPlain(slug, `sections/${nn}.md`, { dropRun: titleRun });
     const srcEn = srcTokensPlain(slug, `translations/en/sections/${nn}.md`, { head: [] });
-    eq(genTokens(slug, it.tamil), srcTa, `${slug} item ${it.ordinal}: Tamil token-stream S===G`);
-    eq(genTokens(slug, it.english), srcEn, `${slug} item ${it.ordinal}: English token-stream S===G`);
+    proveLayer(slug, it.tamil, srcTa, `${slug} item ${it.ordinal} Tamil`);
+    proveLayer(slug, it.english, srcEn, `${slug} item ${it.ordinal} English`);
     // Independent per-item Tamil marker sequence == item physical scans.
     const scans = it.physicalScans.flatMap((r) => Array.from({ length: r.last - r.first + 1 }, (_, i) => r.first + i));
     eq(scanSeqOf(srcTa), scans, `${slug} item ${it.ordinal}: independent Tamil marker sequence == physical scans`);
@@ -335,8 +384,8 @@ for (const slug of Object.keys(STANDALONE)) {
     const nn = String(it.ordinal).padStart(2, "0");
     const srcTa = srcTokensPlain(slug, `sections/${nn}.md`, { head: [], headings: [] });
     const srcEn = srcTokensPlain(slug, `translations/en/sections/${nn}.md`, { head: [], headings: ["One-Sided Love", "Source explanation"] });
-    eq(genTokens(slug, it.tamil), srcTa, `${slug} section ${it.ordinal}: Tamil token-stream S===G`);
-    eq(genTokens(slug, it.english), srcEn, `${slug} section ${it.ordinal}: English token-stream S===G`);
+    proveLayer(slug, it.tamil, srcTa, `${slug} section ${it.ordinal} Tamil`);
+    proveLayer(slug, it.english, srcEn, `${slug} section ${it.ordinal} English`);
     // English release marks scans a SUBSET of the Tamil (coarser granularity) — represent honestly.
     const taScanSeq = scanSeqOf(srcTa), enScanSeq = scanSeqOf(srcEn);
     ok(enScanSeq.every((s) => taScanSeq.includes(s)) && enScanSeq.length >= 1, `${slug} section ${it.ordinal}: English marker sequence is a subset of the Tamil source markers (honest coarser marking)`);
