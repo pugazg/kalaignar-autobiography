@@ -1,0 +1,229 @@
+{
+ "workId": "oruthalaik-kathal",
+ "sourceRepo": "pugazg/kalaignar-poems",
+ "sourcePath": "poems/oruthalaik-kathal",
+ "sourceCommit": "188d49cd4dcf2c6bbe2e9633841ff402b9959d08",
+ "sourceTree": "08e18927af57319cb7771ef99081dbc92aeb064b",
+ "source": {
+  "titleTa": "ஒருதலைக் காதல்",
+  "titleEn": "One-Sided Love",
+  "authorTa": "மு. கருணாநிதி",
+  "authorEn": "M. Karunanidhi",
+  "scanFilename": "TVA_BOK_0065554_ஒருதலைக்_காதல்.pdf",
+  "scanSha256": "a9b0ff45820155a4775074f630e791a8304073a90e5e36ab793bdf702ec33184",
+  "scanFileSizeBytes": 200800237,
+  "scanTotalPages": 101,
+  "sourcePdfCommitted": false,
+  "sourceTypeLabel": {
+   "ta": "அச்சிட்ட நூல்",
+   "en": "printed book"
+  },
+  "publicationEstablished": {
+   "publicationTa": "ஒருதலைக் காதல்",
+   "publicationEn": "One-Sided Love",
+   "editionStatement": "முதற் பதிப்பு: டிசம்பர் 1998 — திருமகள் நிலையம்",
+   "year": 1998
+  },
+  "paginationNote": "Gate-1 pagination: scan 1 is the front cover; scans 2–5 the Roman front matter; scans 6–100 the main work (logical Arabic pages 1–95, logical = scan − 5); scan 101 the back cover. The main work suppresses the visible numeral on 22 scans (11 section-opening pages and 11 full-page illustration pages) and prints it on the remaining 73/95; the page-layer printed_page field is strictly source-visible and never backfilled. Reconciled logical pages and visible numerals are kept as separate dimensions.",
+  "boundaryNote": "The work is the main-work sequence scans 6–100 = 95/95 in 11 source sections: 84 text-bearing scans and 11 full-page illustration scans (8, 16, 22, 32, 40, 48, 58, 66, 76, 84, 94), each accounted exactly once. Illustration scans carry a source marker and NO verse; no verse line is fabricated for them. Section order and boundaries are exact and contiguous. Scan 100 closes the work with the source `(முற்றும்)` and the three-diamond ornament; scan 101 is the back cover, outside the work. Scans 1–5 (cover + Roman front matter, incl. `பதிப்புரை`) are outside the work.",
+  "lockedExclusions": [
+   "scan 1 (front cover) and scans 2–5 (Roman front matter: title page, publication/edition details, `பதிப்புரை`, publisher tribute) — outside the main work",
+   "scan 101 (back cover) — outside the main work",
+   "each section's `# ஒருதலைக் காதல் — N` / `# One-Sided Love — N` H1 title, carried as the section title and never as verse",
+   "the full-page illustration scans' image content — non-verse source-layout material; the scan is accounted but contributes no verse line",
+   "translator notes and batch-review prose from the reviewed batches and the reader-facing assembly's between-section notes"
+  ]
+ },
+ "verification": {
+  "tamilFinalClearance": "FINAL-CLEARED — Phase 1 101/101, Phase 2 101/101 verified, Phase 3 Gates 1–6 PASS; 11/11 canonical sections; main-work scans 6–100 = 95/95",
+  "canonicalItems": "11/11 sections",
+  "englishRelease": "RELEASE-CLEARED — Phase 4 COMPLETE (6/6 batches reviewed PASS; EDITORIAL_CONSISTENCY / RELEASE_REPORT PASS)",
+  "englishItems": "11/11 sections",
+  "englishBatches": "6/6 reviewed PASS",
+  "numberedItemScans": "95/95 main-work scans (84 text + 11 illustration)",
+  "unresolved": 0
+ },
+ "itemRoster": [
+  {
+   "ordinal": 1,
+   "slug": "section-1",
+   "titleTa": "ஒருதலைக் காதல் — 1",
+   "titleEn": "One-Sided Love — 1",
+   "physicalScans": [
+    {
+     "first": 6,
+     "last": 13
+    }
+   ],
+   "tamilLines": 172,
+   "englishLines": 203
+  },
+  {
+   "ordinal": 2,
+   "slug": "section-2",
+   "titleTa": "ஒருதலைக் காதல் — 2",
+   "titleEn": "One-Sided Love — 2",
+   "physicalScans": [
+    {
+     "first": 14,
+     "last": 20
+    }
+   ],
+   "tamilLines": 146,
+   "englishLines": 188
+  },
+  {
+   "ordinal": 3,
+   "slug": "section-3",
+   "titleTa": "ஒருதலைக் காதல் — 3",
+   "titleEn": "One-Sided Love — 3",
+   "physicalScans": [
+    {
+     "first": 21,
+     "last": 30
+    }
+   ],
+   "tamilLines": 205,
+   "englishLines": 234
+  },
+  {
+   "ordinal": 4,
+   "slug": "section-4",
+   "titleTa": "ஒருதலைக் காதல் — 4",
+   "titleEn": "One-Sided Love — 4",
+   "physicalScans": [
+    {
+     "first": 31,
+     "last": 38
+    }
+   ],
+   "tamilLines": 145,
+   "englishLines": 196
+  },
+  {
+   "ordinal": 5,
+   "slug": "section-5",
+   "titleTa": "ஒருதலைக் காதல் — 5",
+   "titleEn": "One-Sided Love — 5",
+   "physicalScans": [
+    {
+     "first": 39,
+     "last": 45
+    }
+   ],
+   "tamilLines": 125,
+   "englishLines": 133
+  },
+  {
+   "ordinal": 6,
+   "slug": "section-6",
+   "titleTa": "ஒருதலைக் காதல் — 6",
+   "titleEn": "One-Sided Love — 6",
+   "physicalScans": [
+    {
+     "first": 46,
+     "last": 55
+    }
+   ],
+   "tamilLines": 206,
+   "englishLines": 232
+  },
+  {
+   "ordinal": 7,
+   "slug": "section-7",
+   "titleTa": "ஒருதலைக் காதல் — 7",
+   "titleEn": "One-Sided Love — 7",
+   "physicalScans": [
+    {
+     "first": 56,
+     "last": 63
+    }
+   ],
+   "tamilLines": 154,
+   "englishLines": 187
+  },
+  {
+   "ordinal": 8,
+   "slug": "section-8",
+   "titleTa": "ஒருதலைக் காதல் — 8",
+   "titleEn": "One-Sided Love — 8",
+   "physicalScans": [
+    {
+     "first": 64,
+     "last": 73
+    }
+   ],
+   "tamilLines": 200,
+   "englishLines": 240
+  },
+  {
+   "ordinal": 9,
+   "slug": "section-9",
+   "titleTa": "ஒருதலைக் காதல் — 9",
+   "titleEn": "One-Sided Love — 9",
+   "physicalScans": [
+    {
+     "first": 74,
+     "last": 82
+    }
+   ],
+   "tamilLines": 199,
+   "englishLines": 238
+  },
+  {
+   "ordinal": 10,
+   "slug": "section-10",
+   "titleTa": "ஒருதலைக் காதல் — 10",
+   "titleEn": "One-Sided Love — 10",
+   "physicalScans": [
+    {
+     "first": 83,
+     "last": 92
+    }
+   ],
+   "tamilLines": 221,
+   "englishLines": 229
+  },
+  {
+   "ordinal": 11,
+   "slug": "section-11",
+   "titleTa": "ஒருதலைக் காதல் — 11",
+   "titleEn": "One-Sided Love — 11",
+   "physicalScans": [
+    {
+     "first": 93,
+     "last": 100
+    }
+   ],
+   "tamilLines": 163,
+   "englishLines": 178
+  }
+ ],
+ "titleWitnesses": {
+  "count": 0,
+  "note": "The sections carry no distinct contents-page title witness; each section's title is its exact `#` H1 (`ஒருதலைக் காதல் — N` / `One-Sided Love — N`), and the work-title reprint appears at `## One-Sided Love` in the reviewed section and `### One-Sided Love` in the released assembly — a source-declared heading-level equivalence scoped to that exact text.",
+  "items": []
+ },
+ "itemNumberingAnomalies": [],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying verse-novel. The 1998 first edition's own publisher/imprint matter is an edition fact, not a statement about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored verse-novel. It does NOT extend to the publisher/imprint matter, the cover/design or the full-page illustrations, each of which retains its own distinct provenance.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked faithful translation (englishKind: project-created), release-cleared in the source archive, with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned 1998 first-edition book PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "This is ONE verse-novel (ஓவியக் கவிதை நாவல்) with 11 internal SECTIONS — not 11 independent poems and not a collection. The sections are the source's own numbered divisions of one continuous narrative.",
+  "Main-work coverage is scans 6–100 = 95/95: 84 text-bearing scans and 11 full-page illustration scans that carry a marker but no verse. No verse line is fabricated for an illustration scan; section order and boundaries are exact.",
+  "Each section's English reading layer is the released per-section file proved byte-equal to the reader-facing assembly. The work-title reprint's `##`/`###` heading-level difference between the two released artifacts is a source-declared equivalence scoped to exactly that title text; no literary line text is normalized.",
+  "Scan 100 closes the work with the source `(முற்றும்)`; scans 1–5 (front matter) and scan 101 (back cover) are outside the work."
+ ]
+}

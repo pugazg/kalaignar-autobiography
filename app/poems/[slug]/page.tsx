@@ -8,6 +8,14 @@ import PublicationLanding from "@/components/PublicationLanding";
 import type { PublicationBrief } from "@/components/PublicationLanding";
 import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import type { Poem, PoetryPublication } from "@/data/poems";
+import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
+
+// The DISCOVERED registries (POEM_SLUGS / POETRY_PUBLICATION_SLUGS) drive the catalogue, /read and the
+// sitemap. The Wave-6 Batch-4 works are authorized as DIRECT readers only (P3): they extend the route
+// family's prerender set and its fail-closed guard, but never the discovered registries or the
+// sitemap. Combining here — and only here — keeps them URL-addressable yet undiscovered until P4.
+const ALL_POEM_SLUGS = [...POEM_SLUGS, ...WAVE6_POEM_SLUGS] as readonly string[];
+const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
 
 function loadPoem(slug: string): Poem | null {
   try {
@@ -24,7 +32,7 @@ function loadPublication(slug: string): PoetryPublication | null {
     return null;
   }
 }
-const isPublication = (slug: string) => (POETRY_PUBLICATION_SLUGS as readonly string[]).includes(slug);
+const isPublication = (slug: string) => ALL_PUBLICATION_SLUGS.includes(slug);
 
 /** The lightweight landing brief — the roster without the heavy per-item reading layers. */
 function publicationBrief(pub: PoetryPublication): PublicationBrief {
@@ -37,6 +45,8 @@ function publicationBrief(pub: PoetryPublication): PublicationBrief {
     editionStatement: pub.editionStatement,
     publicationYear: pub.publicationYear,
     itemCount: pub.itemCount,
+    readingUnitKind: pub.readingUnitKind ?? "poem",
+    workForm: pub.workForm,
     items: pub.items.map((i) => ({
       ordinal: i.ordinal,
       slug: i.slug,
@@ -52,7 +62,7 @@ function publicationBrief(pub: PoetryPublication): PublicationBrief {
 }
 
 export function generateStaticParams() {
-  return [...POEM_SLUGS, ...POETRY_PUBLICATION_SLUGS].map((slug) => ({ slug }));
+  return [...ALL_POEM_SLUGS, ...ALL_PUBLICATION_SLUGS].map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -109,7 +119,7 @@ export default function PoemPage({ params }: { params: { slug: string } }) {
     if (!pub) notFound();
     return <PublicationLanding pub={publicationBrief(pub)} />;
   }
-  if (!(POEM_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_POEM_SLUGS.includes(params.slug)) notFound();
   if (!loadPoem(params.slug)) notFound();
   return <PoemReader slug={params.slug} witnessLinks={resolveWitnessLinks(params.slug)} />;
 }

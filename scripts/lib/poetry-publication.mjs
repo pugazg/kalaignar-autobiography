@@ -60,10 +60,31 @@ function stripFrontmatter(text) {
   const m = /^---\n([\s\S]*?)\n---\n?/.exec(text);
   if (!m) return { fm: {}, body: text };
   const fm = {};
-  for (const line of m[1].split("\n")) {
-    const mm = /^([A-Za-z0-9_]+):\s*(.*)$/.exec(line);
+  const lines = m[1].split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const mm = /^([A-Za-z0-9_]+):\s*(.*)$/.exec(lines[i]);
     if (!mm) continue;
     let v = mm[2].trim();
+    // YAML BLOCK SCALAR (`|`, `|-`, `|+`): the value is the following more-indented lines with the
+    // block's common indent stripped, joined by newlines. Multi-line source-heading titles (the 1975
+    // publication's items 01–02) use this. Works whose front matter has no block scalar are entirely
+    // unaffected, so the two frozen publications stay byte-identical.
+    if (v === "|" || v === "|-" || v === "|+") {
+      const block = [];
+      let indent = null;
+      let j = i + 1;
+      for (; j < lines.length; j++) {
+        if (lines[j].trim() === "") { block.push(""); continue; }
+        const lead = lines[j].length - lines[j].trimStart().length;
+        if (lead === 0) break; // a dedented key-line ends the block
+        if (indent === null) indent = lead;
+        block.push(lines[j].slice(indent));
+      }
+      while (block.length && block[block.length - 1] === "") block.pop(); // `|-` strips the final newline(s)
+      fm[mm[1]] = block.join("\n");
+      i = j - 1;
+      continue;
+    }
     if (v.startsWith('"') && v.endsWith('"')) {
       // Double-quoted YAML scalar: unescape \" and \\ so an embedded straight quote (items 36/37
       // here) matches its unescaped form in the reader-facing assembly header. Curly quotes (காலப்
@@ -169,11 +190,15 @@ function loadPageRecord(workDir, scan, slug, logicalOffset) {
 // normalized. Unlike the four standalone poems, this publication's verse uses free-width indentation
 // rather than a 4-space step, so no multiple-of-N rule is imposed: the count is whatever the released
 // source line carries, and a tab — which would make an indent count meaningless — is refused.
-function line(raw, scan, printedPage) {
-  const text = raw.replace(/\s+$/, "");
-  if (/^\s*\t/.test(text)) throw new Error(`tab indentation on scan ${scan}, refusing to guess a width: ${JSON.stringify(raw)}`);
-  const indent = text.length - text.trimStart().length;
-  return { kind: "line", text: text.slice(indent), indent, sourceScan: scan, printedPage };
+function line(raw, scan, printedPage, literal) {
+  const rstripped = raw.replace(/\s+$/, "");
+  if (/^\s*\t/.test(rstripped)) throw new Error(`tab indentation on scan ${scan}, refusing to guess a width: ${JSON.stringify(raw)}`);
+  const indent = rstripped.length - rstripped.trimStart().length;
+  // literal mode preserves trailing whitespace exactly (Wave-6 Batch-4); the default rstrips so the
+  // two frozen Wave-4 publication payloads stay byte-identical. Width is always measured on the
+  // rstripped probe, so `indent` is identical in both modes.
+  const base = literal ? raw : rstripped;
+  return { kind: "line", text: base.slice(indent), indent, sourceScan: scan, printedPage };
 }
 
 const neutralTransition = (fromScan, toScan) => ({
@@ -234,7 +259,7 @@ function layerOf(elements) {
 // structural headings the release establishes: காலப் பேழை has them only in English (item 14's
 // `### Scene 1`, an asymmetry preserved rather than reconciled), while கலைஞரின் கவிதைகள் reprints an
 // item's title as a `###` heading in BOTH layers. `allowHeadings` is set per layer by the caller.
-function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
+function parseLayer(body, { markerRe, allowHeadings, printedPageFor, literal }) {
   const lines = body.split("\n");
   const els = [];
   let scan = null;
@@ -261,7 +286,10 @@ function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
       continue;
     }
     if (scan === null) {
-      if (t !== "") throw new Error(`verse appears before any scan marker: ${JSON.stringify(raw)}`);
+      // Nothing before the first scan marker is verse: blank lines and the item's title/subtitle
+      // headings (a single `# title` in the Wave-4 dialect; `# title` + `## subtitle` [+ `### …`] in
+      // the Wave-6 multi-line-title dialect) are skipped. Only genuine text before a marker is an error.
+      if (t !== "" && !/^#{1,6}\s/.test(t)) throw new Error(`verse appears before any scan marker: ${JSON.stringify(raw)}`);
       continue;
     }
     if (t === "") {
@@ -284,7 +312,7 @@ function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
       els.push({ kind: "stanza-break", evidence: "source-blank-line", sourceScan: scan });
       pendingBlank = false;
     }
-    els.push(line(raw, scan, printed));
+    els.push(line(raw, scan, printed, literal));
     emittedInBlock++;
   }
   return { layer: layerOf(els), seenScans };
@@ -293,34 +321,158 @@ function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
 // Reconstruct the raw verse/heading/marker stream of a released English body, for the byte-equality
 // proof against the reader-facing assembly. Blank lines and the title H1 are dropped; scan markers,
 // headings and verse lines are kept verbatim.
-function englishBodyStream(body, validScans) {
+function englishBodyStream(body, validScans, markerRe, headingEquiv, literal) {
   const out = [];
-  let sawTitle = false;
+  let beforeFirstMarker = true;
   for (const raw of body.split("\n")) {
     const t = raw.trim();
     if (t === "") continue;
-    const m = /^<!--\s*scan\s+(\d+)\s*-->$/.exec(t);
+    const m = markerRe.exec(t);
     if (m) {
       // In the reader-facing assembly a group-divider scan marker can trail an item's region before
       // the next group header. Truncate at the first scan marker that is NOT one of this item's own
       // scans, so divider structure is never compared as item verse.
       if (validScans && !validScans.has(Number(m[1]))) break;
+      beforeFirstMarker = false;
       out.push(t);
       continue;
     }
     if (COMMENT.test(t)) continue;
-    if (!sawTitle && /^#\s/.test(t)) {
-      sawTitle = true;
-      continue;
+    // The item title (and, in the multi-line-title dialect, its `## subtitle` / `### …` parts) sit
+    // before the first scan marker and are not verse — skip every heading there. In-block `###`
+    // source-heading reprints (after the first marker) are kept. For the Wave-4 dialect only a single
+    // `# title` precedes the marker, so this matches the previous single-title skip byte-for-byte.
+    if (beforeFirstMarker && /^#{1,6}\s/.test(t)) continue;
+    // A SOURCE-DECLARED heading-level equivalence, scoped to exactly the named heading text(s): the
+    // reviewed section and the released assembly may reprint the work title at `##` vs `###`. Only
+    // those exact texts are level-normalised; every other heading is compared at its literal level,
+    // and verse line text is never normalised. Empty for the Wave-4 dialects (byte-identical).
+    if (headingEquiv && headingEquiv.size) {
+      const hm = HEADING.exec(t);
+      if (hm && headingEquiv.has(hm[2])) { out.push("EQ-HEADING" + hm[2]); continue; }
     }
-    out.push(raw.replace(/\s+$/, ""));
+    out.push(literal ? raw : raw.replace(/\s+$/, ""));
   }
   return out;
+}
+
+// ── Source dialects (adapters) ──────────────────────────────────────────────────────────────────
+// A dialect configures ONLY how a frozen source workspace is READ — file paths, ordinal roster shape,
+// how a multi-line/subtitle title is parsed, how the assembly is sliced. It governs no semantics and
+// invents no fact. The default `wave4-items` dialect is the two frozen publications' format and MUST
+// reproduce them byte-identically; `wave6-sections` reads the Wave-6 `sections/NN.md` +
+// `translations/en/sections/NN.md` layout with multi-line source-heading titles and (optionally)
+// non-contiguous source ordinals.
+// The first `# ` H1 line's text, used where a source layer states the reading-unit title as an H1
+// rather than a front-matter field (the verse-novel sections).
+function firstH1(body) {
+  for (const raw of body.split("\n")) {
+    const m = /^#\s+(.*\S)\s*$/.exec(raw.trim());
+    if (m) return m[1];
+  }
+  throw new Error("no H1 title line found in the section body");
+}
+
+const DIALECTS = {
+  "wave4-items": {
+    englishItemPath: (workDir, ord, slug) => path.join(workDir, "translations/en/items", `${String(ord).padStart(2, "0")}-${slug}-en.md`),
+    englishMarkerRe: /^<!--\s*scan\s+(\d+)\s*-->$/,
+    itemNumberFromFm: (fm) => Number(fm.item),
+    itemTitleTa: (secFm /*, secBody */) => secFm.title,
+    itemTitleEn: (enFm /*, enBody */) => enFm.title_en,
+    verifyEnglishFm: (enFm, decl, d) => {
+      if (enFm.title_ta !== d.titleTa) throw new Error(`English file title_ta ${JSON.stringify(enFm.title_ta)} != declared ${JSON.stringify(d.titleTa)}`);
+    },
+    tamilTitleDropLines: () => [],
+    contiguousOrdinals: true,
+    multiPartTitleHeaders: false,
+    assemblyItemHeaderRe: /^##\s+Item\s+(\d+)\s+—\s+(.*\S)\s*$/,
+    assemblySliceHasTitle: true,
+    headingEquivalentTexts: [],
+    apparatusHeaderRe: /\n## \S/,
+  },
+  "wave6-sections": {
+    englishItemPath: (workDir, ord /*, slug */) => path.join(workDir, "translations/en/sections", `${String(ord).padStart(2, "0")}.md`),
+    englishMarkerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/,
+    itemNumberFromFm: (fm) => Number(fm.item),
+    // A multi-line source-heading title (YAML block scalar) is joined with " / " to match the
+    // released English `title_ta` / `title_en` witnesses, which use the same join.
+    itemTitleTa: (secFm /*, secBody */) => secFm.title.split("\n").map((s) => s.trim()).join(" / "),
+    itemTitleEn: (enFm /*, enBody */) => enFm.title_en,
+    verifyEnglishFm: (enFm, decl, d) => {
+      if (enFm.title_ta !== d.titleTa) throw new Error(`English file title_ta ${JSON.stringify(enFm.title_ta)} != declared ${JSON.stringify(d.titleTa)}`);
+    },
+    // The exact source title lines to drop from the item's Tamil block — they are the item title,
+    // reproduced under the opening scan and excluded from the English verse region too.
+    tamilTitleDropLines: (secFm) => secFm.title.split("\n").map((s) => s.trim()),
+    contiguousOrdinals: false,
+    multiPartTitleHeaders: true,
+    assemblyItemHeaderRe: /^##\s+Item\s+(\d+)\s+—\s+(.*\S)\s*$/,
+    assemblySliceHasTitle: true,
+    headingEquivalentTexts: [],
+    apparatusHeaderRe: /\n## \S/,
+  },
+  // A single continuous work (verse-novel) whose reading units are source-established SECTIONS. Its
+  // per-section identity comes from a `section:` front-matter number, its title from the section's `#`
+  // H1 (`# ஒருதலைக் காதல் — N` / `# One-Sided Love — N`), its page records from `section-NN`, and the
+  // reader-facing assembly delimits sections with `## Section N`. The section's title reprint appears
+  // at `##` in the reviewed section and `###` in the assembly — a source-declared heading-level
+  // equivalence, scoped to exactly the work title text. This dialect governs ONLY parsing; that the
+  // work is a verse-novel and its units are sections is the declaration's `readingUnitKind`/`workForm`.
+  "wave6-versenovel": {
+    englishItemPath: (workDir, ord /*, slug */) => path.join(workDir, "translations/en/sections", `${String(ord).padStart(2, "0")}.md`),
+    englishMarkerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/,
+    itemNumberFromFm: (fm) => Number(fm.section),
+    itemTitleTa: (secFm, secBody) => firstH1(secBody),
+    itemTitleEn: (enFm, enBody) => firstH1(enBody),
+    verifyEnglishFm: (enFm, decl /*, d */) => {
+      if (enFm.english_title !== decl.title.en) throw new Error(`English file english_title ${JSON.stringify(enFm.english_title)} != work title ${JSON.stringify(decl.title.en)}`);
+      if (enFm.tamil_title !== decl.title.ta) throw new Error(`English file tamil_title ${JSON.stringify(enFm.tamil_title)} != work title ${JSON.stringify(decl.title.ta)}`);
+    },
+    tamilTitleDropLines: () => [], // the section title is an H1, which parseLayer already skips
+    // The released English may mark scans more coarsely than the Tamil: a trailing embedded quotation
+    // and its glossary printed on the last scans are grouped under the section's last verse scan. The
+    // Tamil layer proves full per-scan coverage; the English scans are validated as a subset.
+    englishScansSubsetOk: true,
+    contiguousOrdinals: true, // sections are 1..11
+    multiPartTitleHeaders: false,
+    assemblyItemHeaderRe: /^##\s+Section\s+(\d+)\s*$/,
+    assemblySliceHasTitle: false, // the `## Section N` header carries no title; it is proved via the H1
+    // ONLY the work-title reprint may appear at `##` (reviewed section) or `###` (assembly); every
+    // other heading is compared at its exact Markdown level.
+    headingEquivalentTexts: ["One-Sided Love"],
+    // No trailing `## ` apparatus: the section's `## One-Sided Love` reprint sits after the marker and
+    // is reading content, and the source glossary is a kept `### Source explanation`. The section↔
+    // assembly byte-equality proof is the safety net against any content leak.
+    apparatusHeaderRe: null,
+  },
+};
+
+// Remove the item's title lines (an exact contiguous run) from a Tamil section body, wherever they
+// sit in the opening region — item 01's title leads the block; item 02's title follows a printed date
+// line. Fail closed if the exact run is not present. Only the declared title lines are removed; the
+// printed date / event-heading / venue and all verse are untouched.
+function dropTitleRun(body, dropLines, ord) {
+  if (!dropLines.length) return body;
+  const lines = body.split("\n");
+  const norm = (s) => s.replace(/\s+$/, "");
+  const want = dropLines.map(norm);
+  for (let i = 0; i + want.length <= lines.length; i++) {
+    let hit = true;
+    for (let k = 0; k < want.length; k++) if (norm(lines[i + k]) !== want[k]) { hit = false; break; }
+    if (hit) {
+      lines.splice(i, want.length);
+      return lines.join("\n");
+    }
+  }
+  throw new Error(`item ${ord}: could not find the exact title run to drop from the Tamil section: ${JSON.stringify(dropLines)}`);
 }
 
 // ── Build one publication ─────────────────────────────────────────────────────────────────────────
 export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
   const workDir = path.join(srcRepo, decl.sourcePath);
+  const adapter = DIALECTS[decl.sourceDialect ?? "wave4-items"];
+  if (!adapter) throw new Error(`unknown sourceDialect ${JSON.stringify(decl.sourceDialect)}`);
 
   // Source identity, asserted against the workspace's own metadata record.
   const meta = readText(path.join(workDir, "metadata/source.md"));
@@ -337,7 +489,7 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
   // headers. This is a DIFFERENT artifact from the per-item files the reading layer is built from,
   // so proving each item file equals its slice ties the two released English witnesses together.
   const asm = readText(path.join(workDir, decl.english.assemblyFile));
-  const { slices: asmSlices, groupTitles } = sliceAssembly(asm);
+  const { slices: asmSlices, groupTitles } = sliceAssembly(asm, adapter);
 
   const items = [];
   const seenSlugs = new Set();
@@ -352,9 +504,13 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // Tamil section
     const secRaw = readText(path.join(workDir, `sections/${String(ord).padStart(2, "0")}.md`));
     const { fm: secFm, body: secBody } = stripFrontmatter(secRaw);
-    if (Number(secFm.item) !== ord) throw new Error(`item ${ord}: sections/${String(ord).padStart(2, "0")}.md declares item ${secFm.item}`);
-    if (secFm.title !== d.titleTa) throw new Error(`item ${ord}: section title ${JSON.stringify(secFm.title)} != declared ${JSON.stringify(d.titleTa)}`);
-    const contentsTitleTa = secFm.contents_title !== secFm.title ? secFm.contents_title : undefined;
+    if (adapter.itemNumberFromFm(secFm) !== ord) throw new Error(`item ${ord}: sections/${String(ord).padStart(2, "0")}.md declares number ${adapter.itemNumberFromFm(secFm)}`);
+    const tamilTitle = adapter.itemTitleTa(secFm, secBody);
+    if (tamilTitle !== d.titleTa) throw new Error(`item ${ord}: section title ${JSON.stringify(tamilTitle)} != declared ${JSON.stringify(d.titleTa)}`);
+    // A literal YAML `null` (`contents_title: null`, the 1975 sections) means "no distinct contents
+    // witness", the same as omitting the key. Existing sections omit it, so they are unaffected.
+    const rawContents = secFm.contents_title === "null" ? undefined : secFm.contents_title;
+    const contentsTitleTa = rawContents !== undefined && rawContents !== secFm.title ? rawContents : undefined;
     if ((contentsTitleTa ?? null) !== (d.contentsTitleTa ?? null)) {
       throw new Error(`item ${ord}: contents-title witness ${JSON.stringify(contentsTitleTa)} != declared ${JSON.stringify(d.contentsTitleTa)}`);
     }
@@ -384,6 +540,12 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
       if (!sectionId.startsWith(expectedPrefix)) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} does not identify ordinal ${ord} (expected prefix ${JSON.stringify(expectedPrefix)})`);
     } else if (sectionMode === "canonical-title") {
       if (sectionId !== d.titleTa) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} != the item's canonical title ${JSON.stringify(d.titleTa)}`);
+    } else if (sectionMode === "new-item-number") {
+      const expected = `new-item-${String(ord).padStart(2, "0")}`;
+      if (sectionId !== expected) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} != expected ${JSON.stringify(expected)}`);
+    } else if (sectionMode === "section-number") {
+      const expected = `section-${String(ord).padStart(2, "0")}`;
+      if (sectionId !== expected) throw new Error(`item ${ord}: page-record section ${JSON.stringify(sectionId)} != expected ${JSON.stringify(expected)}`);
     } else {
       throw new Error(`unknown sectionIdentity mode ${JSON.stringify(sectionMode)}`);
     }
@@ -399,36 +561,60 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // allowHeadings is true for BOTH layers: 8 items reprint their title as a `###` source heading at
     // the top of the poem body (in both the Tamil section and the English item). காலப் பேழை's Tamil
     // has no such heading, so this does not change its output.
-    const ta = parseLayer(secBody, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: true, printedPageFor: printedFor });
+    const secBodyForParse = dropTitleRun(secBody, adapter.tamilTitleDropLines(secFm), ord);
+    const ta = parseLayer(secBodyForParse, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: true, printedPageFor: printedFor, literal: decl.literalWhitespace });
     if (JSON.stringify(ta.seenScans) !== JSON.stringify(scans)) {
       throw new Error(`item ${ord}: Tamil scans ${JSON.stringify(ta.seenScans)} != declared physical scans ${JSON.stringify(scans)}`);
     }
 
     // English per-item file
-    const enPath = path.join(workDir, "translations/en/items", `${String(ord).padStart(2, "0")}-${d.slug}-en.md`);
+    const enPath = adapter.englishItemPath(workDir, ord, d.slug);
     const enRaw = readText(enPath);
     const { fm: enFm, body: enBodyRaw } = stripFrontmatter(enRaw);
     // The per-item English file ends with translator/source apparatus under a LEVEL-2 header
     // (`## Translator notes`, `## Source note`, …). That apparatus is not verse and the reader-facing
     // assembly keeps it out of the item body, so it is cut here before the reading layer is built.
     // Level-3 headers (`### Conclusion`, `### Love or Valour?`) are source structure and are kept.
-    const apparatusAt = enBodyRaw.search(/\n## \S/);
+    // The search begins AFTER the first scan marker, so a multi-line title's `## subtitle` (which sits
+    // before the marker in the Wave-6 dialect) is never mistaken for trailing apparatus.
+    let apparatusAt = -1;
+    if (adapter.apparatusHeaderRe) {
+      const markerAnywhere = new RegExp(adapter.englishMarkerRe.source.replace(/^\^/, "").replace(/\$$/, ""));
+      const firstMarkerIdx = enBodyRaw.search(markerAnywhere);
+      const searchFrom = firstMarkerIdx >= 0 ? firstMarkerIdx : 0;
+      const rel = enBodyRaw.slice(searchFrom).search(adapter.apparatusHeaderRe);
+      apparatusAt = rel >= 0 ? searchFrom + rel : -1;
+    }
     const enBody = apparatusAt >= 0 ? enBodyRaw.slice(0, apparatusAt) : enBodyRaw;
-    if (Number(enFm.item) !== ord) throw new Error(`item ${ord}: English item file declares item ${enFm.item}`);
-    if (enFm.title_en !== d.titleEn) throw new Error(`item ${ord}: English title ${JSON.stringify(enFm.title_en)} != declared ${JSON.stringify(d.titleEn)}`);
-    if (enFm.title_ta !== d.titleTa) throw new Error(`item ${ord}: English file title_ta ${JSON.stringify(enFm.title_ta)} != declared ${JSON.stringify(d.titleTa)}`);
-    const en = parseLayer(enBody, { markerRe: /^<!--\s*scan\s+(\d+)\s*-->$/, allowHeadings: true, printedPageFor: printedFor });
-    if (JSON.stringify(en.seenScans) !== JSON.stringify(scans)) {
+    if (adapter.itemNumberFromFm(enFm) !== ord) throw new Error(`item ${ord}: English item file declares number ${adapter.itemNumberFromFm(enFm)}`);
+    const enTitle = adapter.itemTitleEn(enFm, enBody);
+    if (enTitle !== d.titleEn) throw new Error(`item ${ord}: English title ${JSON.stringify(enTitle)} != declared ${JSON.stringify(d.titleEn)}`);
+    try { adapter.verifyEnglishFm(enFm, decl, d); } catch (e) { throw new Error(`item ${ord}: ${e.message}`); }
+    const en = parseLayer(enBody, { markerRe: adapter.englishMarkerRe, allowHeadings: true, printedPageFor: printedFor, literal: decl.literalWhitespace });
+    if (adapter.englishScansSubsetOk) {
+      // The English marks a subset of the item's physical scans (see the dialect note): require a
+      // non-empty, strictly-ascending subset drawn from the item's own scans. Full per-scan coverage
+      // is proved by the Tamil layer above; the English↔assembly proof below ties the release together.
+      const scanSet = new Set(scans);
+      if (!en.seenScans.length) throw new Error(`item ${ord}: English carries no scan markers`);
+      for (let i = 0; i < en.seenScans.length; i++) {
+        if (!scanSet.has(en.seenScans[i])) throw new Error(`item ${ord}: English scan ${en.seenScans[i]} is not one of the item's physical scans ${JSON.stringify(scans)}`);
+        if (i > 0 && en.seenScans[i] <= en.seenScans[i - 1]) throw new Error(`item ${ord}: English scans ${JSON.stringify(en.seenScans)} are not strictly ascending`);
+      }
+    } else if (JSON.stringify(en.seenScans) !== JSON.stringify(scans)) {
       throw new Error(`item ${ord}: English scans ${JSON.stringify(en.seenScans)} != declared physical scans ${JSON.stringify(scans)}`);
     }
 
     // PROVE the per-item English body equals the reader-facing assembly slice, line for line.
     const slice = asmSlices.get(ord);
     if (!slice) throw new Error(`item ${ord}: no assembly slice found`);
-    if (slice.titleEn !== d.titleEn) throw new Error(`item ${ord}: assembly header title ${JSON.stringify(slice.titleEn)} != declared ${JSON.stringify(d.titleEn)}`);
+    // Where the assembly item header carries the title (`## Item N — title`) it is checked; the
+    // verse-novel's `## Section N` header carries none, so the title is proved via the section H1 above.
+    if (adapter.assemblySliceHasTitle && slice.titleEn !== d.titleEn) throw new Error(`item ${ord}: assembly header title ${JSON.stringify(slice.titleEn)} != declared ${JSON.stringify(d.titleEn)}`);
     const scanSet = new Set(scans);
-    const a = englishBodyStream(enBody, scanSet);
-    const b = englishBodyStream("# x\n" + slice.body, scanSet); // assembly slice has no per-item H1; add a dummy so both strip one
+    const headingEquiv = new Set(adapter.headingEquivalentTexts);
+    const a = englishBodyStream(enBody, scanSet, adapter.englishMarkerRe, headingEquiv, decl.literalWhitespace);
+    const b = englishBodyStream("# x\n" + slice.body, scanSet, adapter.englishMarkerRe, headingEquiv, decl.literalWhitespace); // assembly slice has no per-item H1; add a dummy so both strip one
     if (a.length !== b.length) throw new Error(`item ${ord}: English item file has ${a.length} stream lines but the assembly slice has ${b.length}`);
     for (let i = 0; i < a.length; i++) {
       if (a[i] !== b[i]) throw new Error(`item ${ord}: English item file diverges from the reader-facing assembly at stream line ${i + 1}:\n  item:     ${a[i]}\n  assembly: ${b[i]}`);
@@ -483,11 +669,23 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     items.push(item);
   }
 
-  // Ordinals are exactly 1..N in order.
+  // Ordinal roster. The default dialect requires exactly 1..N in order. A dialect that allows
+  // non-contiguous SOURCE ordinals (the 1975 publication's 01, 02, 04 — intake 03 is the excluded
+  // non-Kalaignar Rajaji poem, a source-backed declaration fact proved separately) requires the
+  // ordinals to be strictly ascending and to equal the declared roster exactly.
   const ordinals = items.map((i) => i.ordinal);
-  const expected = Array.from({ length: decl.items.length }, (_, i) => i + 1);
-  if (JSON.stringify(ordinals) !== JSON.stringify(expected)) {
-    throw new Error(`item ordinals ${JSON.stringify(ordinals)} are not exactly 1..${decl.items.length} in order`);
+  if (adapter.contiguousOrdinals) {
+    const expected = Array.from({ length: decl.items.length }, (_, i) => i + 1);
+    if (JSON.stringify(ordinals) !== JSON.stringify(expected)) {
+      throw new Error(`item ordinals ${JSON.stringify(ordinals)} are not exactly 1..${decl.items.length} in order`);
+    }
+  } else {
+    for (let i = 1; i < ordinals.length; i++) {
+      if (ordinals[i] <= ordinals[i - 1]) throw new Error(`item ordinals ${JSON.stringify(ordinals)} are not strictly ascending`);
+    }
+    if (JSON.stringify(ordinals) !== JSON.stringify(decl.items.map((d) => d.ordinal))) {
+      throw new Error(`assembled ordinals ${JSON.stringify(ordinals)} != the declared roster ${JSON.stringify(decl.items.map((d) => d.ordinal))}`);
+    }
   }
   if (items.length !== decl.itemCount) throw new Error(`assembled ${items.length} items but declared itemCount ${decl.itemCount}`);
 
@@ -583,6 +781,14 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     shelf: "poetry",
     readerStructure: "poetry-publication",
     subtype: "poetry-publication",
+    // SEMANTIC reading-unit kind: absent (⇒ "poem") for a normal poetry publication, "section" for a
+    // single continuous work whose reading units are source-established sections (the oruthalaik-kathal
+    // verse-novel). Absent on every existing publication, so their payloads stay byte-identical. This
+    // is a shared-model FACT set by the declaration, never by a source-reading adapter.
+    ...(decl.readingUnitKind ? { readingUnitKind: decl.readingUnitKind } : {}),
+    // Optional work-form label (a shared-model FACT from the declaration), e.g. the verse-novel's
+    // `ஓவியக் கவிதை நாவல்`. Absent on every existing publication, so their payloads stay byte-identical.
+    ...(decl.workForm ? { workForm: decl.workForm } : {}),
     title: decl.title,
     author: decl.author,
     publicationYear: decl.publicationYear,
@@ -601,30 +807,46 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
 // second-level `## ` header of ANY kind — the next item, a `## <groupTa> — <groupEn>` divider, or a
 // `## Translator notes` block — so nothing between items leaks into an item's verse. The group
 // divider headers give the group English titles the source assigns.
-function sliceAssembly(asm) {
+function sliceAssembly(asm, adapter) {
+  const multi = adapter?.multiPartTitleHeaders;
   const lines = asm.split("\n");
   const slices = new Map();
   const groupTitles = new Map(); // group Tamil title -> group English title
   let cur = null;
   for (const raw of lines) {
-    const item = /^##\s+Item\s+(\d+)\s+—\s+(.*\S)\s*$/.exec(raw);
+    const item = adapter.assemblyItemHeaderRe.exec(raw);
     if (item) {
-      cur = { ordinal: Number(item[1]), titleEn: item[2], lines: [] };
+      cur = { ordinal: Number(item[1]), titleParts: item[2] ? [item[2]] : [], lines: [], inTitle: true };
       slices.set(cur.ordinal, cur);
       continue;
     }
+    // MULTI-PART TITLE (wave6): a `##`/`###` heading immediately after the item header, before any
+    // body line, continues that item's title (e.g. `## At the Poetry Gathering` / `### Chief Minister
+    // …`). Only in a multi-part-title dialect and only while still in the title region.
+    if (multi && cur && cur.inTitle && /^#{2,6}\s/.test(raw)) {
+      cur.titleParts.push(/^#{2,6}\s+(.*\S)\s*$/.exec(raw)[1]);
+      continue;
+    }
     if (/^##\s/.test(raw)) {
-      // Any other second-level header ends the current item slice. A `<ta> — <en>` one (that is not
-      // the document's own `<title> — English Translation` header) is a group divider.
+      // A level-2 header ends the current item slice (unchanged from the original). A `<ta> — <en>`
+      // one (that is not the document's own `<title> — English Translation` header) is a group divider.
       cur = null;
       const g = /^##\s+(.*\S)\s+—\s+(.*\S)\s*$/.exec(raw);
       if (g && g[2] !== "English Translation") groupTitles.set(g[1], g[2]);
       continue;
     }
-    if (cur) cur.lines.push(raw);
+    if (cur) {
+      // While still collecting a multi-part title, skip the blank lines between its parts so they do
+      // not leak into the body; the first non-heading, non-blank line ends the title region.
+      if (cur.inTitle) {
+        if (raw.trim() === "") continue;
+        cur.inTitle = false;
+      }
+      cur.lines.push(raw);
+    }
   }
   const out = new Map();
-  for (const [ord, sl] of slices) out.set(ord, { titleEn: sl.titleEn, body: sl.lines.join("\n") });
+  for (const [ord, sl] of slices) out.set(ord, { titleEn: sl.titleParts.join(" / "), body: sl.lines.join("\n") });
   return { slices: out, groupTitles };
 }
 

@@ -237,11 +237,19 @@ export function markupCensus(built) {
 // A source line stays ONE logical line. Leading indentation is carried as a source fact (`indent`)
 // rather than baked into the text, so the reader can preserve it without forcing <pre> styling and a
 // long line can still wrap visually on a narrow viewport without becoming a new poetic line.
-function line(raw, scan, printed, indentUnit) {
-  const text = raw.replace(/\s+$/, "");
-  const indent = text.length - text.trimStart().length;
+// LEADING indentation is measured and carried as `indent`; TRAILING whitespace is the literary
+// question. In the historical (default) mode the trailing whitespace is stripped — the four frozen
+// Wave-4 standalone payloads were built that way and must stay byte-identical. In `literal` mode
+// (opted into by every Wave-6 Batch-4 declaration) the trailing whitespace is PRESERVED exactly, so
+// a Markdown hard-break or any other source-significant trailing space survives into the payload.
+// Structural width is always measured from the rstripped copy (a probe), so the `indent` value and
+// the indentation-guard are identical in both modes; only the emitted text differs.
+function line(raw, scan, printed, indentUnit, literal) {
+  const rstripped = raw.replace(/\s+$/, "");
+  const indent = rstripped.length - rstripped.trimStart().length;
   if (indent % indentUnit !== 0) throw new Error(`unexpected indentation width ${indent} on scan ${scan}: ${JSON.stringify(raw)}`);
-  return { text: text.slice(indent), indent, sourceScan: scan, printedPage: printed };
+  const base = literal ? raw : rstripped;
+  return { text: base.slice(indent), indent, sourceScan: scan, printedPage: printed };
 }
 
 // ── Tamil: the reviewed source assembly ──────────────────────────────────────────────────────────
@@ -275,6 +283,20 @@ function parseTamil(workDir, decl, pageTransition) {
       }
       blocks.push({ scan, printed, lines: m[3].split("\n") });
     }
+  } else if (decl.tamil.convention === "fenced-scan-page") {
+    // `<!-- scan_page: N / printed_page: M -->` (M a number or the literal `null`) followed by a
+    // ```text fence. The printed page comes from the marker itself and is cross-checked against the
+    // declaration's page map, exactly like the fenced-labelled convention checks its label.
+    const re = /<!-- scan_page:\s*(\d+)\s*\/\s*printed_page:\s*(null|\d+)\s*-->\n```text\n([\s\S]*?)\n```/g;
+    let m;
+    while ((m = re.exec(src)) !== null) {
+      const scan = Number(m[1]);
+      const printed = m[2] === "null" ? null : Number(m[2]);
+      if (printed !== decl.printedPageFor(scan)) {
+        throw new Error(`scan ${scan}: fenced marker printed page ${printed} disagrees with the page map ${decl.printedPageFor(scan)}`);
+      }
+      blocks.push({ scan, printed, lines: m[3].split("\n") });
+    }
   } else if (decl.tamil.convention === "plain-marker") {
     // Everything before the first scan marker is Markdown front matter of the assembly FILE, not the
     // poem; the poem region begins at the first declared scan marker, exactly as the English
@@ -287,10 +309,11 @@ function parseTamil(workDir, decl, pageTransition) {
     for (const h of hits) {
       const body = src.slice(h.bodyStart, h.end);
       const lines = body.split("\n").filter((raw) => !COMMENT.test(raw.trim()));
-      if (decl.printedPageFor(h.scan) !== null) {
-        throw new Error(`scan ${h.scan}: the plain-marker convention carries no printed-page label, but the declaration claims printed page ${decl.printedPageFor(h.scan)}`);
-      }
-      blocks.push({ scan: h.scan, printed: null, lines });
+      // The plain-marker Tamil assembly carries no inline printed-page label. Most plain-marker works
+      // show no printed numeral at all (printedPageFor returns null); where a work's pinned page map
+      // records a VISIBLE printed page for a scan, it is taken from the declaration (which encodes
+      // that page map) rather than inferred. Existing null-returning works are byte-identical.
+      blocks.push({ scan: h.scan, printed: decl.printedPageFor(h.scan), lines });
     }
   } else {
     throw new Error(`unknown Tamil assembly convention ${JSON.stringify(decl.tamil.convention)}`);
@@ -300,6 +323,33 @@ function parseTamil(workDir, decl, pageTransition) {
   blocks.forEach((b, i) => {
     if (b.scan !== decl.poemScans[i]) throw new Error(`Tamil block ${i} is scan ${b.scan}, expected ${decl.poemScans[i]}`);
   });
+
+  // NON-VERSE OPENING LINES the source prints on the first scan but that are NOT poem body — the
+  // decorated work title, and (in some works) the printed author attribution. The released ENGLISH
+  // assembly already excludes these from its verse region (the title sits as an H1 or attribution
+  // before the first scan marker), but the newer Tamil assemblies place the scan marker first and
+  // then transcribe the page top-down, so those same lines land INSIDE the first block. They are
+  // dropped here, exactly and in order, so the two reading layers agree and no title/attribution is
+  // ever carried as verse. The title travels as `poem.title`, the attribution as `poem.author`;
+  // nothing is inferred. Opt-in and fail-closed: a work that does not declare `dropLeadingLines` is
+  // byte-identical to before, and a declared line that is not present in position is an error.
+  const drop = decl.tamil.dropLeadingLines ?? [];
+  if (drop.length) {
+    const b0 = blocks[0];
+    const kept = b0.lines.map((raw) => raw.replace(/\s+$/, ""));
+    const skipBlank = () => { while (kept.length && kept[0].trim() === "") kept.shift(); };
+    for (const d of drop) {
+      skipBlank();
+      if (!kept.length || kept[0] !== d) {
+        throw new Error(
+          `dropLeadingLines: expected non-verse opening line ${JSON.stringify(d)} at the start of the first Tamil block (scan ${b0.scan}), found ${JSON.stringify(kept[0] ?? "<end of block>")}`,
+        );
+      }
+      kept.shift();
+    }
+    skipBlank();
+    b0.lines = kept;
+  }
 
   const headingLines = decl.tamil.headingLines ?? [];
   const els = [];
@@ -318,11 +368,13 @@ function parseTamil(workDir, decl, pageTransition) {
         els.push({ kind: "stanza-break", evidence: "source-blank-line", sourceScan: b.scan });
         pendingBlank = false;
       }
-      const built = line(raw, b.scan, b.printed, decl.indentUnit ?? 4);
+      const built = line(raw, b.scan, b.printed, decl.indentUnit ?? 4, decl.literalWhitespace);
       // A structural heading PRINTED IN THE SOURCE is not a line of verse. The Tamil assembly gives
       // it no markup, so it is recognised only from an explicit declaration citing the source
-      // statement that establishes it — never from position, length or capitalisation.
-      els.push(headingLines.includes(built.text) ? { kind: "source-heading", text: built.text, sourceScan: b.scan, printedPage: b.printed } : { kind: "line", ...built });
+      // statement that establishes it — never from position, length or capitalisation. Recognition
+      // uses a trailing-trimmed probe (structural), while the emitted text keeps whatever the literal
+      // mode produced.
+      els.push(headingLines.includes(built.text.replace(/\s+$/, "")) ? { kind: "source-heading", text: built.text, sourceScan: b.scan, printedPage: b.printed } : { kind: "line", ...built });
       emittedInBlock++;
     });
   });
@@ -367,6 +419,12 @@ function parseEnglish(workDir, decl, pageTransition) {
 
   // 1. batch files → per-scan regions
   const regions = []; // { scan, batch, runs: string[][] }
+  // NON-VERSE OPENING LINES that follow the FIRST scan marker in the reviewed English — a repeated
+  // work title and a printed author line at the head of the poem. They are the English counterpart of
+  // the Tamil `dropLeadingLines`: the released reader-facing assembly holds the same two lines (its
+  // `assembly.startAfter` skips past them), so dropping them here keeps the batch-derived stream equal
+  // to the assembly verse region and keeps title/attribution out of the verse. Opt-in and fail-closed.
+  const dropQueue = [...(en.dropLeadingLinesFirstScan ?? [])];
   for (const b of en.batches) {
     const label = b.file;
     const src = readText(path.join(workDir, b.file));
@@ -390,6 +448,16 @@ function parseEnglish(workDir, decl, pageTransition) {
       }
       if (!cur) {
         if (t !== "") throw new Error(`${label}: verse appears before any scan marker`);
+        continue;
+      }
+      // Consume the declared non-verse opening lines in the FIRST scan region only, skipping the
+      // blank lines around them; fail closed if a declared line is not present in position.
+      if (dropQueue.length && cur === regions[0]) {
+        if (t === "") continue;
+        if (raw.replace(/\s+$/, "") !== dropQueue[0]) {
+          throw new Error(`${label}: expected non-verse opening line ${JSON.stringify(dropQueue[0])} after the first scan marker, found ${JSON.stringify(raw)}`);
+        }
+        dropQueue.shift();
         continue;
       }
       if (t === "") {
@@ -431,18 +499,20 @@ function parseEnglish(workDir, decl, pageTransition) {
           els.push({ kind: "source-heading", text: h[2], sourceScan: r.scan, printedPage: decl.printedPageFor(r.scan), raw: raw.trim() });
           continue;
         }
-        els.push({ kind: "line", ...line(raw, r.scan, decl.printedPageFor(r.scan), decl.indentUnit ?? 4) });
+        els.push({ kind: "line", ...line(raw, r.scan, decl.printedPageFor(r.scan), decl.indentUnit ?? 4, decl.literalWhitespace) });
       }
     });
   });
 
-  // 3. prove the batch-derived stream IS the released assembly, line for line
+  // 3. prove the batch-derived stream IS the released assembly, line for line. In literal mode the
+  // assembly lines are compared WITH their trailing whitespace (matching the literal batch lines);
+  // in the historical mode both sides are rstripped, so the frozen payloads are byte-identical.
   const asmSrc = readText(path.join(workDir, en.assembly.file));
   const asmRegion = sliceRegion(asmSrc, en.assembly.file, en.assembly);
   const asmLines = asmRegion
     .split("\n")
     .filter((raw) => raw.trim() !== "" && !COMMENT.test(raw.trim()))
-    .map((raw) => raw.replace(/\s+$/, ""));
+    .map((raw) => (decl.literalWhitespace ? raw : raw.replace(/\s+$/, "")));
   const built = els
     .filter((e) => e.kind === "line" || e.kind === "source-heading")
     .map((e) => (e.kind === "source-heading" ? e.raw : " ".repeat(e.indent) + e.text));

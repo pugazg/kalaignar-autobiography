@@ -30,6 +30,7 @@ import {
   POETRY_PUBLICATION_SLUGS,
   POETRY_WITNESS_RELATIONS,
 } from "../data/poems";
+import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "../lib/poems-wave6-routes";
 
 const EXISTING = "idhayathai-thanthidu-anna";
 
@@ -332,13 +333,16 @@ ok(
   const itemRoute = fs.readFileSync(path.join(process.cwd(), "app/poems/[slug]/[item]/page.tsx"), "utf-8");
   ok(/export const dynamicParams = false/.test(itemRoute), "the item route fails closed on unknown children (so a standalone poem gets no item routes)");
 }
-// The vendored payloads are exactly the four standalone works plus the one P2 publication. This is
-// where P3 preloading would
-// show up first — a publication roster or an anthology's items appearing before they are authorized.
+// The vendored payloads are exactly the Wave-4 works (four standalone + two publications) PLUS the
+// eight authorized Wave-6 Batch-4 direct-reader works (six standalone + two publications), and NOTHING
+// else. This is where an unauthorized payload would show up first; the Batch-4 works are admitted only
+// through their frozen Wave-6 registries, so the original "no stray payload" contract is preserved and
+// merely extended by exactly the authorized set. (Wave-6 discovery/sitemap exposure is separately
+// forbidden and proved by scripts/validate-wave6-p3-build.ts.)
 eq(
   fs.readdirSync(path.join(process.cwd(), "public/data/poems")).sort(),
-  [...STANDALONE, ...PUBLICATIONS].sort(),
-  "exactly the four standalone poems and the two publications are vendored, and nothing else",
+  [...STANDALONE, ...PUBLICATIONS, ...WAVE6_POEM_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS].sort(),
+  "exactly the Wave-4 poems + the eight authorized Wave-6 Batch-4 works are vendored, and nothing else",
 );
 ok(!fs.existsSync(path.join(process.cwd(), "public/data/poetry")), "no publication payload is vendored");
 

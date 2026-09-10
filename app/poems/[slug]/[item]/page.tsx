@@ -6,6 +6,11 @@ import PublicationItemReader from "@/components/PublicationItemReader";
 import { POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import { resolveWitnessLinks } from "@/lib/witness";
 import type { PoetryPublication } from "@/data/poems";
+import { WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
+
+// The discovered + Wave-6-undiscovered publications. Child item/section routes come only from each
+// publication's own frozen item registry (never `1..N`); the sitemap and discovery are untouched.
+const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
 
 // FAIL CLOSED on unknown children. A standalone poem (/poems/marathi) has no items, so
 // /poems/marathi/anything must 404 rather than render. Only the pairs enumerated below exist.
@@ -20,7 +25,7 @@ function loadPublication(slug: string): PoetryPublication | null {
 }
 
 export function generateStaticParams() {
-  return POETRY_PUBLICATION_SLUGS.flatMap((slug) => {
+  return ALL_PUBLICATION_SLUGS.flatMap((slug) => {
     const pub = loadPublication(slug);
     return (pub?.items ?? []).map((i) => ({ slug, item: i.slug }));
   });
@@ -46,6 +51,7 @@ export default function PublicationItemPage({ params }: { params: { slug: string
     <PublicationItemReader
       pubSlug={pub.slug}
       pubTitleTa={pub.title.ta}
+      readingUnitKind={pub.readingUnitKind ?? "poem"}
       item={item}
       index={idx}
       total={pub.items.length}
