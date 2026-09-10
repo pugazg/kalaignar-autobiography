@@ -60,18 +60,18 @@ export default function NovelSource({ slug, prov }: { slug: string; prov: NovelP
             <Row label={ta ? "மூலப் பாதை" : "Source path"} mono>{prov.sourcePath}</Row>
             <Row label={ta ? "மூல commit" : "Source commit"} mono>{prov.sourceCommit}</Row>
             <Row label={ta ? "கட்டுப்படுத்தும் scan" : "Controlling scan"} mono>{s.scanFilename}</Row>
-            <Row label="SHA-256" mono>{s.scanSha256}</Row>
+            <Row label="SHA-256" mono>{s.scanSha256 ?? (ta ? "நிலுவையில் — மூலத்தில் இன்னும் கணக்கிடப்படவில்லை" : "pending — not yet computed by the source")}</Row>
             <Row label={ta ? "அளவு" : "Size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>
             <Row label={ta ? "மொத்த scan பக்கங்கள்" : "Physical scans"}>{s.scanTotalPages} · {s.pageRecordsVerified}</Row>
             <Row label={ta ? "மூல தணிக்கை" : "Source audit"}>{s.sourceAudit}</Row>
             <Row label={ta ? "தொகுக்கப்பட்ட அடுக்கு" : "Assembled layer"}>{s.assembledLayer}</Row>
             <Row label={ta ? "நூல் பகுதி" : "Body scans"}>{s.bodyScans}</Row>
-            <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span></Row>
-            <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}, {s.placeTa}</span></Row>
-            <Row label={ta ? "தொடர்" : "Series"}><span className="font-tamil" lang="ta">{s.seriesTa}</span></Row>
-            <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.priceTa}</span></Row>
-            <Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}</span></Row>
-            <Row label={ta ? "அச்சிட்ட குறியீடு" : "Printed code"} mono>{s.printedCode}</Row>
+            {s.editionTa && <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span></Row>}
+            {s.publisherTa && <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}{s.placeTa ? `, ${s.placeTa}` : ""}</span></Row>}
+            {s.seriesTa && <Row label={ta ? "தொடர்" : "Series"}><span className="font-tamil" lang="ta">{s.seriesTa}</span></Row>}
+            {s.priceTa && <Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.priceTa}</span></Row>}
+            {s.printerTa && <Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}</span></Row>}
+            {s.printedCode && <Row label={ta ? "அச்சிட்ட குறியீடு" : "Printed code"} mono>{s.printedCode}</Row>}
             <Row label={ta ? "மூல PDF" : "Source PDF"}>{ta ? "இந்தக் களஞ்சியத்திற்குள் சேமிக்கப்படவில்லை" : "not vendored into this repository"}</Row>
           </dl>
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
@@ -79,26 +79,73 @@ export default function NovelSource({ slug, prov }: { slug: string; prov: NovelP
           </p>
         </Card>
 
-        {/* THE EMBEDDED-SEQUENCE RULE — the most important structural fact about this work. */}
-        <Card icon={Film} title={ta ? "உள்ளமைந்த திரைப்படக் காட்சி" : "The embedded sequence"}>
-          <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/75 dark:text-night-text/75" lang="en">
-            {s.embeddedSequenceNote}
-          </p>
-          <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/45 dark:text-night-text/45">
-            {ta ? "மூலத் தொடர்ச்சி" : "Source continuity"}
-          </p>
-          <ul className="mt-2 space-y-1.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
-            {s.sourceContinuity.map((x, i) => (
-              <li key={i} className="flex gap-2">
-                <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-marina" aria-hidden />
-                <span lang="en">{x}</span>
-              </li>
+        {/* Work structure. The first benchmark carries an EMBEDDED-SEQUENCE rule; the Wave-6 works
+            carry a plain structure statement (no embedded film). Only what the work actually has is
+            shown — a work is never described with another's structural facts. */}
+        {s.embeddedSequenceNote ? (
+          <Card icon={Film} title={ta ? "உள்ளமைந்த திரைப்படக் காட்சி" : "The embedded sequence"}>
+            <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/75 dark:text-night-text/75" lang="en">
+              {s.embeddedSequenceNote}
+            </p>
+            {s.sourceContinuity && s.sourceContinuity.length > 0 && (
+              <>
+                <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/45 dark:text-night-text/45">
+                  {ta ? "மூலத் தொடர்ச்சி" : "Source continuity"}
+                </p>
+                <ul className="mt-2 space-y-1.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
+                  {s.sourceContinuity.map((x, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-marina" aria-hidden />
+                      <span lang="en">{x}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <dl className="mt-3">
+              <Row label={ta ? "உள்ளமைந்த பகுதிகள்" : "Embedded-sequence sections"}>{d.embeddedSequenceSections} {ta ? "(தனி நூல் அல்ல)" : "(never a separate work)"}</Row>
+            </dl>
+          </Card>
+        ) : s.structureNote ? (
+          <Card icon={BookOpen} title={ta ? "நூல் அமைப்பு" : "Work structure"}>
+            <p className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/75 dark:text-night-text/75" lang="en">
+              {s.structureNote}
+            </p>
+            {s.sourceContinuity && s.sourceContinuity.length > 0 && (
+              <ul className="mt-3 space-y-1.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
+                {s.sourceContinuity.map((x, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-marina" aria-hidden />
+                    <span lang="en">{x}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Card>
+        ) : null}
+
+        {/* Additional NON-controlling printed witnesses registered from the source. Shown on the
+            provenance page only — never in the reading body — and never presented as controlling. */}
+        {(prov.additionalWitnesses ?? []).length > 0 && (
+          <Card icon={Info} title={ta ? "கூடுதல் சான்று (கட்டுப்படுத்தாதது)" : "Additional witness (non-controlling)"}>
+            {prov.additionalWitnesses!.map((w, i) => (
+              <div key={i} className="mt-3">
+                <dl>
+                  <Row label={ta ? "இடம்பெறுவது" : "Appears in"}>{w.appearsIn}</Row>
+                  <Row label={ta ? "தொகுப்புக் கோப்பு" : "Compilation file"} mono>{w.compilationFilename}</Row>
+                  <Row label="SHA-256" mono>{w.compilationSha256}</Row>
+                  <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{w.compilationEditionTa}</span></Row>
+                  <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{w.compilationPublisherTa}</span></Row>
+                  <Row label={ta ? "சான்று ஸ்கேன்கள்" : "Witness scans"}>{w.witnessPhysicalScans} ({w.witnessScanCount})</Row>
+                  <Row label={ta ? "நிலை" : "Status"}>{ta ? "கட்டுப்படுத்தும் மூலம் அல்ல" : "not the controlling source"}</Row>
+                </dl>
+                <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
+                  {w.comparisonStatus} — {w.authorizes}
+                </p>
+              </div>
             ))}
-          </ul>
-          <dl className="mt-3">
-            <Row label={ta ? "உள்ளமைந்த பகுதிகள்" : "Embedded-sequence sections"}>{d.embeddedSequenceSections} {ta ? "(தனி நூல் அல்ல)" : "(never a separate work)"}</Row>
-          </dl>
-        </Card>
+          </Card>
+        )}
 
         <Card icon={FileCheck2} title={ta ? "ஆங்கில வெளியீடு" : "English release"}>
           <dl className="mt-3">
@@ -126,18 +173,23 @@ export default function NovelSource({ slug, prov }: { slug: string; prov: NovelP
             <Row label={ta ? "அச்சு அலங்காரங்கள்" : "Printed ornaments"}>{d.ornaments}</Row>
             <Row label={ta ? "மொழிபெயர்ப்பாளர் குறிப்புகள்" : "Translator notes"}>{d.translatorNotes} ({ta ? "உரைக்கு வெளியே" : "held outside the body"})</Row>
             <Row label={ta ? "மூலத்தால் நிறுவப்பட்ட இணைப்புகள்" : "Source-established joins"}>{d.sourceEstablishedJoins}</Row>
-            <Row label={ta ? "அச்சிடப்பட்ட தலைப்புகள்" : "Headings the edition prints"}>
-              {d.printedHeadingsInSource.map((h) => `${h.text} (${ta ? "ஸ்கேன்" : "scan"} ${h.scans.join(", ")})`).join(" · ")}
-            </Row>
+            {d.printedHeadingsInSource.length > 0 && (
+              <Row label={ta ? "அச்சிடப்பட்ட தலைப்புகள்" : "Headings the edition prints"}>
+                {d.printedHeadingsInSource.map((h) => `${h.text} (${ta ? "ஸ்கேன்" : "scan"} ${h.scans.join(", ")})`).join(" · ")}
+              </Row>
+            )}
           </dl>
 
-          {/* Section titles are the archive's labels. Only a heading the 1947 edition actually
-              prints is carried in the reading body, and only cited to the scan that prints it. */}
-          <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang={ta ? "ta" : "en"}>
-            {ta
-              ? `பகுதித் தலைப்புகள் மூலக் காப்பகத்தின் வாசிப்புப் பிரிவுகளுக்கான விளக்கக் குறிப்புகள். அச்சிடப்பட்ட தலைப்பு எதுவோ அதுமட்டுமே — அதை அச்சிட்ட ஸ்கேன் மேற்கோளுடன் — வாசிப்பு உரையில் இடம்பெறுகிறது. ${d.sectionsWithArchiveOnlyTitle} பகுதியின் தலைப்பு அச்சில் இல்லாததால் அது உரையிலிருந்து விலக்கப்பட்டு, எந்தப் பக்கச் சான்றும் அதற்குக் கூறப்படவில்லை.`
-              : `Section titles are the archive's descriptive labels for its reading divisions. Only a heading the edition actually prints is carried in the reading body, and only cited to the scan that prints it. ${d.sectionsWithArchiveOnlyTitle} section's label is printed nowhere in the edition, so it was kept out of the body and no page provenance is claimed for it.`}
-          </p>
+          {/* Section titles are the archive's labels — shown only for archive-division works, where a
+              printed heading is carried in the body cited to the scan that prints it. A source-chapter
+              work (whose chapters ARE printed in the source) shows no such note. */}
+          {d.printedHeadingsInSource.length > 0 && (
+            <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang={ta ? "ta" : "en"}>
+              {ta
+                ? `பகுதித் தலைப்புகள் மூலக் காப்பகத்தின் வாசிப்புப் பிரிவுகளுக்கான விளக்கக் குறிப்புகள். அச்சிடப்பட்ட தலைப்பு எதுவோ அதுமட்டுமே — அதை அச்சிட்ட ஸ்கேன் மேற்கோளுடன் — வாசிப்பு உரையில் இடம்பெறுகிறது.${d.sectionsWithArchiveOnlyTitle > 0 ? ` ${d.sectionsWithArchiveOnlyTitle} பகுதியின் தலைப்பு அச்சில் இல்லாததால் அது உரையிலிருந்து விலக்கப்பட்டு, எந்தப் பக்கச் சான்றும் அதற்குக் கூறப்படவில்லை.` : ""}`
+                : `Section titles are the archive's descriptive labels for its reading divisions. Only a heading the edition actually prints is carried in the reading body, and only cited to the scan that prints it.${d.sectionsWithArchiveOnlyTitle > 0 ? ` ${d.sectionsWithArchiveOnlyTitle} section's label is printed nowhere in the edition, so it was kept out of the body and no page provenance is claimed for it.` : ""}`}
+            </p>
+          )}
           <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
             {d.joinNote}
           </p>

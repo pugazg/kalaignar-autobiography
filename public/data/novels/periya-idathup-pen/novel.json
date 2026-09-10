@@ -1,0 +1,3202 @@
+{
+ "workId": "periya-idathup-pen",
+ "slug": "periya-idathup-pen",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/periya-idathup-pen",
+ "sourceCommit": "a99f135467dd38e294faff31088a937994790a47",
+ "shelf": "fiction",
+ "readerStructure": "novel",
+ "subtype": "novel",
+ "title": {
+  "ta": "பெரிய இடத்துப் பெண்",
+  "en": "The Woman of the Great House"
+ },
+ "author": {
+  "ta": "மு. கருணாநிதி",
+  "en": "M. Karunanidhi"
+ },
+ "edition": {
+  "statementTa": "எட்டாம் பதிப்பு: ஜூலை 1953",
+  "year": 1953,
+  "monthTa": "ஜூலை",
+  "editionOrdinalTa": "எட்டாம் பதிப்பு",
+  "publisherTa": "திராவிடன் பதிப்பகம்",
+  "placeTa": "வேலூர் (வ. ஆ.)",
+  "priceTa": "விலை 0—8—0",
+  "printerTa": "ஸ்ரீமகள் அச்சகம், சென்னை-1"
+ },
+ "structure": {
+  "unitKindTa": "மூலக் காப்பகத்தின் வாசிப்புப் பிரிவுகள்",
+  "unitKindEn": "source-archive assembled reading divisions",
+  "unitNounTa": "பகுதி",
+  "unitNounEn": "section",
+  "noteTa": "இது ஒரே தொடர்ச்சியான படைப்பு. கீழுள்ள ஏழு பகுதிகளும் அவற்றின் தலைப்புகளும் மூலக் காப்பகத்தின் வாசிப்புத் தொகுப்பின் பிரிவுகளும் விளக்கக் குறிப்புகளுமே; அச்சிடப்பட்ட அத்தியாயங்களோ தலைப்புகளோ அல்ல. ஆறு பாத்திரப்பெயர்த் தலைப்புகள் அந்த ஒரே தொடர்ச்சியான உரைக்குள் மூலத்தில் அச்சிடப்பட்டவை.",
+  "noteEn": "This is one continuous work. The seven sections below — and their titles — are the source archive's own assembled reading divisions and descriptive labels, not printed chapters. The six character-name headings are printed inside that single continuous narrative in the source itself."
+ },
+ "editionSummaryTa": "எட்டாம் பதிப்பு (ஜூலை 1953, திராவிடன் பதிப்பகம், வேலூர்)",
+ "editionSummaryEn": "eighth edition, July 1953 (Dravidian Pathippagam, Vellore)",
+ "readingUnitKind": "archive-division",
+ "sections": [
+  {
+   "order": 1,
+   "slug": "opening",
+   "titleTa": "தொடக்கம்",
+   "titleEn": "The Woman of the Great House",
+   "sourceScansTa": "8-15 (through pre-உத்தண்டி transition)",
+   "sourceScansEn": "8-15 (before Uthandi heading)",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": false,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": null,
+   "unitNumberEn": null,
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "பெரிய இடத்துப் பெண்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "ornament",
+      "text": "★",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“குமுதா! அவளுக்கு அவன்தான் அமுதா?” என்று நினைத்தவாறே என்னவோ ஊஞ்சலில் அமர்ந்தார் உலகநாதர். “ஏன், வேலை யெல்லாம் முடிந்ததா?” என்று கேட்டபடி கண்ணம்மா பக்கத்தில் வந்து உட்கார்ந்தாள். ஊஞ்சல் வேகமாக ஆடிற்று. உலகநாதரின் உள்ளத்தின் அசைவை அது வெற்றி கொண்டதாக அவருக்குத் தோன்றவில்லை. கண்ணம்மாவின் கரங்கள் உலகநாதரின் உடலில் நகர்ந்துகொண்டிருந்தன. அவள் அவரது தோள்களை அணிச்சக் கைகளால் அழுத்திப் பிடித்தபோதுகூட ஆனந்த ஒளி இதயப் படுதாவில் விழவில்லை. உலகநாதரின் எண்ணங்கள் ஊர்க் கடைசியிலுள்ள குப்பத்தில் சஞ்சரித்துக்கொண்டிருந்தன; கண்ணம்மா அவருக்குப் பொன்னம்மாளாக விளங்குவாள். அவளது மிருதுவான ஸ்பரிசம், அவரது சிந்தனையைச் சிதறடிக்கும் சிரிப்பு, அவரைச் சொர்க்க லோகத்திற்கு இட்டுச் செல்லும் சொகுசான லீலைகள்—இவைகளில் சொக்கிக் கிடப்பார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆனால், அவர் அன்று கண்ட காட்சி மட்டும் அவருக்கு வேப்பங்காயாக இருந்தது. “என் பொன்னம்மா ............ இருக்கீங்க?” என்று கேட்டுக்கொண்டே உலகநாதரின் முகத்தைத் திருப்பினாள் கண்ணம்மா.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கண்ணம்மாவின் விரல் பட்ட மாத்திரத்தில் காந்தத் தோடு தொடரும் இரும்புபோலக் கழுத்தைத் திருப்பும் உலகநாதர் அன்று முரட்டுத்தனமாக, முகத்தை அசைக்காமலேயே இருந்துவிட்டார். கடைசி வரையில் பார்த்துவிடுவதென்ற முடிவில் கண்ணம்மா ஊஞ்சலை விட்டுக் கீழே இறங்கினள். உலகநாதரின் உந்தலினால் ஆடிக்கொண்டிருந்த ஊஞ்சல் கண்ணம்மாளைக் கீழே தள்ளிற்று. கண்ணம்மாள் கீழே விழுந்தாள். அடி அவ்வளவாக இல்லை. ஆனாலும் எவரெஸ்ட் சிகரத்திலிருந்து வழுக்கி விழுந்தவள்போல வேதனையைக் கொட்டினள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதருக்குக் கருணை பிறந்தது. “கண்ணம்மா! கண்ணம்மா!” என்று கூவிக்கொண்டே அவளைத் தூக்கினார். மீண்டும் ஊஞ்சல் ஆட ஆரம்பித்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதரும் கண்ணம்மாவும் இன்பபுரிப் பிரயாணத்தை ஆரம்பித்தனர். உலகநாதர், ஆமாம்! ‘மண்டிக்கடை மன்னர்’ என்று கூடப் பட்டஞ் சூட்டுவார்கள் மாநாடு கூட்டினால். அவ்வளவு பெருத்த வியாபாரி. கண்ணம்மா—அவள் குடும்பமும் அவருக்குச் சினேகத் தல்ல? செல்வமும் செல்வமும் கைகோர்த்துக்கொண்டன. பணமும் பணமும் உராய்ந்துகொண்டன. நான்கு வருடங்கள்! உலகநாதர்—கண்ணம்மா திருமணமாகிக் கழிந்த ஆண்டுகள் அவை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதர் சற்று தடித்த தோல்! ரோஷமில்லாக் காரணத்தாலல்ல; உடற்கூறுதான் அப்படி! கண்ணம்மா ரோஜா மலர்! அவளை இவருக்குக் கட்டினர்கள் அதைப் பற்றி உலகம் பேசாமலில்லை. பணக்காரர் வீட்டுப் படிக்கட்டுமேல் பாமர் பேச்சு ஏறுமா? கண்ணம்மாளுக்கு வாழ்க்கை கசப்பாகத்தா னிருந்தது. ஆனால், அவளாகத் தயாரித்துக்கொண்ட திட்டம். ஒடிந்த வாழ்க்கை உயர்த்திற்று; கூனிலே நிமிர்த்தியது. உலகநாதர் வீட்டு வண்டிக்கார வீரன் கட்டழகன். கண்ணம்மாவின் விழியில் வீரன் மாட்டினான். இது அவன் குற்றமா? அல்லது உலகநாதரின் வெம்பிப் போன அழகின் குற்றமா? இந்த விசாரணைக்கு வீரன் போகவில்லை. உதட்டில் தடவப்பட்ட தேன் நக்கினன்; சுவைத்தான்; தேனடையைத் தேடினன். ருசி கண்ட பூனை உறியைத் தாவாமலிருக்குமா? கண்ணம்மா ‘கற்போடு நடக்க வேண்டுமே’ என்று குழம்பிக்கொண்டிருந்தபோது, “சாகும்போது என்ன சங்கார வேண்டியிருக்கு!” என்றான். உலகநாதருக்கு உபசரிப்பு குறையவில்லை. அன்பை அவருக்கு அர்ப்பணிப்பதாகக் கண்ணம்மா கூறினள். அந்த நாடகத்தில் உலகநாதரின் ராஜபார்ட் கம்பீரங் கொண்டது. ஆனால் ஸ்திரீபார்ட் போட்டிருப்பது ஆண் என்று கூட ஐயமுறத் நிலை அவருக்கு! கண்ணம்மாவின் கன்னங்களிலே சுவைக்க நேரமிருந்தது அவருக்கு! கருத்தைச் சோதிக்கநினைப்பதில்லை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சீமான் வீட்டுச் செல்வி சின்னப்புத்திக்காரியாக இருப்பாள் என்று அவர் கருதத்தானில்லை. வீரனுக்கல்லவா தெரியும் அவளின் விரகதாபம்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதருக்கு மஞ்சம் உண்டு! கொஞ்சல் உண்டு! ஆனால், அவ்வளவும் வீரனுக்குப்போக எஞ்சியதுதான்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதரிடம் நடனமுண்டு! நெளிவு உண்டு! ஆனால் அந்தக் கேளிக்கைக்கு வாடிக்கைக்காரன் வண்டிக்கார வீரன்தான்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதரிடம் ஊடல் உண்டு! கூடல் உண்டு! பாடல் உண்டு! ஆனால் அப்போதும் கண்ணம்மாவுக்கு வீரனைக் காணவில்லையே என்ற வாடல் உண்டு!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதரிடம் உல்லாசம் பரிமாறுவதுண்டு! சல்லாபம் உண்டு! எல்லாமுண்டு! ஆனால், வீரனிடம் நடிப்பதற்கு இவை ஒத்திகைகள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வண்டிக்கார வீரன் பலே ஆள்; கட்டுமஸ்தான உடல்; உழைத்து உழைத்துப் பக்குவம் பெற்ற உடற் கட்டு. முகத்திலே எப்பொழுதும் ஓர் அலாதியான தேஜஸ்! ‘ஹை’ என்று அவன் மாடுகளை அதட்டுவதே ஒரு சங்கீதமாயிருக்கும். அலட்சியமாகப் பார்வையைச் சிந்தும்போது அவன் ஒரு பாட்டாளி என்பதையே மறந்துவிடுவான். அவனது சிரிப்பிலே ஒரு தனி அழகு தாண்டவமாடும். அரும்பிய சிறு மீசைகள்! அவசரத்தையே காட்டிக்கொண்டிருக்கும் அசைவுகள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கண்ணம்மாவின் கருத்தைக் கிளற இவை போதாதா? கண்ணம்மா கற்போடு நடக்க வேண்டும் என்றுதான் முதலில் கருதினள். ஆனால், உலகநாதரின் விகார ரூபம் அவள் பிடிவாதத்தை உடைத்தெறிந்தது. வீரனின் ‘கண்’ என்ற அதட்டல் காளை மாடுகளை அதிரச் செய்தன. அதே சமயத்தில் அந்த ஒலி கண்ணம்மாவுக்குக் கீதமாக இருந்தது. வண்டிக்காரனின் முறைப்பு, வெறித்த வண்டி மாடுகளுக்கு வெதறலைத் தந்தது. அதே சமயத்தில் கண்ணம்மாவுக்கு அது கம்பீரப் பார்வையாக இருந்தது. அவனது சவுக்கடிகள் மாடுகளுக்கு மனவேதனையைக் கொடுத்தன. அந்தச் சப்தத்தில் அவனது ஆற்றல் ஒளிந்து கிடப்பதாகக் கண்ணம்மாள் கருதினள். கண்ணம்மாவின் அணைப்பு வீரனுக்கு ஆனந்தமாகத்தா னிருந்தது. ஆனால், அவன் ஆண்ட வாழ்க்கையல்லவா? சுவைக்காத கைச் சுவைத்தான்; கிடைக்காது கிடைத்தது; முடியாது முடிந்தது; எஜமானியின் ஆசைக்குரியவன் தான்! வீரனுக்கும் கண்ணம்மாவுக்கும் இருந்த தொடர்பு விவகார தாட்சண்யமாக மாறிற்று. உறியில் தாவும்போது பயப்படாத பூனை உறியை அடைந்ததும் பயப்பட்டதுபோல - சுவரைத் துளைத்தபோது அஞ்சாத திருடன் வீட்டில் நுழைந்தவுடன் அஞ்சுவதுபோல—வீரன் கண்ணம்மாவின் கட்டில் அகப்பட்ட பிறகு நடுங்கினன் ஊருக்காக! உலகநாதர் வீட்டு விஷயம் ஊரில் பரவிற்று. ஊர் தூற்றுமோ? எஜமான் அறிந்தால் என்ன ஆகுமோ? என்ற கேள்விகள் வீரனத்திக்கு முக்காட வைத்தன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வண்டியுடன் மாடுகளுண்டு. வண்டிக்காரன் வீரனுண்டு, என்ற நிலை ஏற்பட்டது பின்னால்! கண்ணம்மாவைக் கண்டாலே முகத்தைத் திருப்பிக்கொண்டு போய் விடுவான். முகாந்திரம் தெரியாமல் கண்ணம்மா விழித்தாள். கடிதம் எழுதலாம் என நினைத்தாள்! நினைப்பு இருந்தது, நேரமிருந்தது, தாள் இருந்தது, பேனா இருந்தது, ஆனால், வீரனுக்குக் கல்வி வாடை இல்லையே! கண்ணம்மா கலங்கிய உள்ளத்துடனே காலத்தைக் கடத்தினள். வீரனின் ஊடல் தீரும் வரை உலகநாதரிடம் உல்லாச நாடகத்தின் ஒத்திகைகளே நடத்தி வந்தாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அப்போதுதான் ஒருநாள்! உலகநாதர்-கண்ணம்மா ஊஞ்சல் ஆட்டம் நடைபெற்றது. கண்ணம்மா கிளறிக் கிளறிக் கேட்ட பிறகு உலகநாதர் வாயைத் திறந்தார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதர் பண்ணையில் வேலை பார்க்கும் உத்தண்டி என்ற தலையாரி ஒரு கிழவன். அவனது மகள் குமுதா. குமுதம் என்ற பெயரின் சுருக்கம் குமுதா. உத்தண்டியின் தங்கை மகன்தான் வீரன். குமுதாவின் அத்தான். குமுதாவும் வீரனும் குலவிக் கொண்டிருந்ததை உலகநாதர் கண்ட அன்று தான் ஊஞ்சல் உரையாடல் நிகழ்ந்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உத்தண்டியின் மகளிடம் உலகநாதருக்கு மோகம். கண்ணம்மா தரும் காதல் ரசத்தையவிடக் குமுதாவின் கொவ்வை இதழ்களில் கசியும் இன்பம் அதிக விலை என்று புள்ளி போட்டார். இவ்வளவுக்கும் அந்த மகானுபாவன் மாதிரி பார்க்கக்கூட இல்லை. கண்ணம்மா போனால் போகட்டும், கட்டிய புருஷனல்லவா என்று, ஊருக்குப் பயந்தோ அல்லது சொத்துக்கு ஆசைப் பட்டோ உலகநாதரிடம் ஆசை காட்டி வாழ்ந்ததை, அவர் அன்பின் சிகரம் என்று நினைத்துவிட்டார். தமது அழகில் ஈடுபட்ட மயக்கம் என முடிவுகட்டிவிட்டார். கண்ணம்மா தம்மையே கடவுளாக நினைத்துவிட்டதாகக் கனவு கண்டார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கடவுளுக்கு நைவேத்தியம் என்று கூறிப்'பொங்கல் பள்ளயம் பாவாடை' போட்டு, அதைக் கருத்துக் கேற்ற கனகசுந்தரிகளுக்கு ஊட்டுகின்ற பூசாரியைப் போலவே, கண்ணம்மாவும் தன்னைக் கணவனுக்கு நைவேத்தியம் செய்து இன்பத்தை வீரனுக்கு வழங்கி வந்தாள். இதை அந்த இளித்தவாயர் அறியவில்லை. பாவம்! கடவுளாவது கற்சிலை; கண்ணில்லாதவர்! இந்தக் கணவனுக்கோ கருத்துமில்லை; கவனிப்புமில்லை!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்தக் கடவுளுக்குக் காட்டப்பட்ட பிரசாதத்திற்கு வீரன் நாக்கை நீட்டிக்கொண்டிருந்தான். அது ஒரு காலம்! ஆனால், அதே வீரன் அத்தை மகள் குமுதாவிடம் எஜமானியம்மாள் கற்பித்த பாடங்களை நடத்த நாள் எண்ணி வந்தான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       },
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதாவிடம் ஆவலைக் கொட்டியிருந்த உலகநாதர் உள்ளம் வெதும்பினார், உடல் இளைத்தார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       },
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா குடியானவன் வீட்டுப் பெண்தான். அலங்காரமில்லாவிட்டாலும் அழகி. 'மேக்கப்' இல்லாவிட்டாலும் மேனியில் ஒரு லளித களை. சுருக்கமாகக் கூற வேண்டுமானால், குமுதா ஒரு குளிர்த் தென்றல்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       },
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அவள் வீரனுக்குக் கிடைக்க அவனுக்கு உரிமை இருந்தது. அத்தான் என்ற முறையின் காரணமாக மட்டுமல்ல; அவன்தான் அவளுக்கும் சத்தான பொருள். வீரன் எஜமானியம்மாளின் இஷ்டத்திற் குரியவன் என்ற செய்தி குமுதாவுக்குத் தெரியாது. கொழுந்துப் பெண் தானே அவள்! வீரனை நம்பினள். வீரனும் வாழ்க்கையின் துணையாக அவளை ஏற்றுக்கொள்ளத் துணிந்தான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       },
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இதற்கிடையில் உலகநாதர் நின்றார். குமுதாவை ருசி பார்க்கக் குள்ள நரியா? 'குமுதா எப்படியும் கிட்ட வேண்டும்'—இந்த எண்ணத்தைக் கண்ணம்மாவிடம் கக்கிவிட்டார். ஆம்! ஊஞ்சலில் உட்கார்ந்திருந்தபோது தான் உள்ளத்தைத் திறந்தார். ஒளித்து வைத்திருந்ததை எடுத்து நீட்டினார். “கண்ணம்மா என் கண்ணல்ல.. நான் உன்னை அலட்சியப்படுத்துவதாக நினைக்காதே! எப்படியாவது ஒருநாள்....குமுதா என் படுக்கையை அலங்கரிக்க வேண்டும்....இதை நீதான் செய்ய வேண்டும்....தயவு செய்! உன் காலைப் பிடிக்கிறேன். இரங்கமாட்டாயா?” என்று வேண்டினார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       },
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அதற்குப் பிறகு நடந்தது என்ன? அந்த வரலாற்றை ஒவ்வொருவரும் கூறுகிறார்கள், கேளுங்கள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 14,
+        "printedPage": 13
+       },
+       {
+        "scan": 15,
+        "printedPage": 14
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 1,
+      "text": "The Woman of the Great House",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "ornament",
+      "text": "★",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Kumudha! Is he her very nectar?” Lost in that thought, Ulaganathar sat on the swing. “Why, is all the work finished?” Kannamma asked as she came and sat beside him. The swing moved fast. Yet it did not seem to Ulaganathar to have outdone the agitation within his heart. Kannamma's hands moved over Ulaganathar's body. Even when she pressed his shoulders with her ornamented hands, no light of delight fell upon the curtain of his heart. Ulaganathar's thoughts wandered through the slum at the far end of the village; Kannamma would shine before him as his golden woman. Her gentle touch, the laughter that scattered his thoughts, the luxurious amorous play that carried him to heaven—he would lie enthralled by all of it.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "But the sight he had seen that day alone was bitter as neem to him. “My dear ………… what's with you?” Kannamma asked, turning Ulaganathar's face toward her.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 8,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "At the mere touch of Kannamma's finger, Ulaganathar would normally turn his neck like iron drawn by a magnet. That day he remained stubbornly still, without moving his face. Determined to see it through to the end, Kannamma got down from the swing. The swing, still moving from Ulaganathar's push, knocked Kannammal down. Kannammal fell. The blow was not much. Even so, she poured out pain as though she had slipped from the summit of Everest.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Compassion arose in Ulaganathar. “Kannamma! Kannamma!” he cried as he lifted her. The swing began to move again.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar and Kannamma began their journey through the land of pleasure. Ulaganathar—yes! If a convention were called, they might even confer on him the title “King of the Mandi Shop.” He was that great a merchant. And Kannamma—was her family not close to his? Wealth joined hands with wealth. Money rubbed against money. Four years! Those were the years that had passed since Ulaganathar and Kannamma were married.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar was somewhat thick-skinned! Not because he lacked pride; his body was simply made that way! Kannamma was a rose! They married her to him, and the world did not fail to talk about it. Can the chatter of common folk climb the steps of a rich man's house? Kannamma's life had indeed been bitter. But the plan she fashioned for herself lifted her broken life and straightened its hunch. Ulaganathar's cartman, Veeran, was a handsome man. Veeran caught Kannamma's eye. Was that his fault? Or was it the fault of Ulaganathar's withered looks? Veeran did not pursue that inquiry. He licked the honey smeared on his lips; he tasted it; he went looking for the honeycomb. Would a cat that had acquired the taste keep from leaping at the hanging pot? While Kannamma was troubled by the thought that she ought to live in chastity, he said, “Why all this ceremony when we're going to die!” Her attentions to Ulaganathar did not diminish. Kannamma said she was offering him her love. In that drama Ulaganathar's king's part carried grandeur. Yet he was in such a state that he might even wonder whether a man was playing the female part! He had time to taste Kannamma's cheeks! He never thought to test her mind.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "He never imagined that a daughter of a wealthy gentleman's house could be small-minded. Veeran alone knew the pangs of her longing!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar had a bed! There were caresses! But all of it was merely what remained to be passed on to Veeran!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "With Ulaganathar there was dancing! There was swaying! But the customer for that entertainment was the cartman Veeran!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 9,
+        "printedPage": 8
+       },
+       {
+        "scan": 10,
+        "printedPage": 9
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "With Ulaganathar there were lovers' quarrels! Union! Song! Yet even then Kannamma had the ache of not seeing Veeran!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Pleasure was exchanged with Ulaganathar! There was dalliance! Everything was there! But these were rehearsals for the performance with Veeran.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Veeran the cartman was quite a man; solidly built, with a body seasoned by hard work. There was always a distinctive radiance on his face! Even the way he shouted “Hai!” at the cattle sounded like music. When he cast a casual glance, one could forget that he was a labourer. A distinct beauty danced in his smile. A small budding moustache! Movements that always seemed to be in a hurry!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Was this not enough to stir Kannamma's mind? At first Kannamma thought she must live in chastity. But Ulaganathar's grotesque form shattered her resolve. Veeran's bark of “Kan!” made the bullocks quake. To Kannamma, that same sound was a song. The cartman's glare made the maddened cart-bullocks shudder; to Kannamma it looked like a majestic gaze. His whip-strokes gave the bullocks pain. In that sound Kannamma thought his strength lay hidden. Kannamma's embrace was bliss to Veeran. But had he not become the master of that life? What had never been his to taste, he tasted; what could not be obtained was obtained; what could not be done was done; he had become the object of the lady of the house's desire! The connection between Veeran and Kannamma turned into an affair of discretion. Like a cat that shows no fear while leaping for the hanging pot but becomes afraid once it reaches it—like a thief who is unafraid while boring through a wall but grows afraid after entering the house—Veeran, once caught in Kannamma's bed, began to tremble for fear of the village! News from Ulaganathar's house spread through the village. Would the village revile them? What if the master learned of it? Those questions put a veil over Veeran's daring.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "After that, things came to this: there were bullocks with the cart; there was Veeran the cartman! Whenever he saw Kannamma, he would turn his face away and leave. Unable to understand the reason, Kannamma stared in bewilderment. She could write a letter, she thought! She had the thought, she had the time, she had paper, she had a pen—but Veeran did not have even the scent of an education! Kannamma passed the time with a troubled heart. Until Veeran's estrangement ended, she continued to stage only rehearsals of the pleasure-drama with Ulaganathar.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Then, one day, the Ulaganathar–Kannamma swing episode took place. Only after Kannamma pressed and pressed him with questions did Ulaganathar open his mouth.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 11,
+        "printedPage": 10
+       },
+       {
+        "scan": 12,
+        "printedPage": 11
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "An old man named Uthandi worked as a **talaiyari** on Ulaganathar's estate. His daughter was Kumudha. Kumudha was a shortened form of the name Kumudam. Veeran was Uthandi's sister's son—Kumudha's **Aththan**, her cross-cousin and prospective husband. It was on the day Ulaganathar saw Kumudha and Veeran together in intimacy that the conversation on the swing took place.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar lusted after Uthandi's daughter. He put a higher price on the pleasure dripping from Kumudha's kovvai-fruit lips than on the nectar of love Kannamma gave him. For all that, this great soul was not even much to look at. He mistook as the summit of love the affection Kannamma showed him—whether because she thought, “Whatever else, he is the husband I was married to,” or because she feared the village, or desired the property. He concluded that it was enchantment with his beauty. He dreamed that Kannamma regarded him as God.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Like a priest who, saying that an offering is for God, lays out “pongal, pallayam, pavadai” and feeds it to golden beauties who suit his fancy, Kannamma too offered herself as **naivedyam**, a ritual offering, to her husband and gave the pleasure to Veeran. That gullible fellow knew none of it. Poor man! God at least is a stone idol—without eyes! This husband had neither sense nor attention!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 13,
+        "printedPage": 12
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Veeran had once held out his tongue for the **prasadam** shown to this god. That was then! But now the same Veeran counted the days until he could put into practice, with his aunt's daughter Kumudha, the lessons the lady of the house had taught him.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar's heart burned and his body grew thin, so much desire had he poured toward Kumudha.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Kumudha was only a girl from a cultivator's household. Even without adornment she was beautiful. Even without “make-up,” her body had a graceful charm. In short, Kumudha was a cool breeze!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Veeran had a right to have her as his. Not merely because he was her Aththan; he was also a sound match for her. Kumudha did not know that Veeran was the lady of the house's favourite. She was a tender young girl, after all! She trusted Veeran. Veeran too dared to accept her as his companion in life.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Into this stood Ulaganathar. A little fox eager to taste Kumudha? “I must somehow have Kumudha”—he spat that thought out to Kannamma. Yes! It was while sitting on the swing that he opened his heart. He took out what he had hidden and held it before her. “Kannamma, my darling.. Don't think I am neglecting you.... Somehow, one day.... Kumudha must adorn my bed.... You must do this.... Please! I'll clasp your feet. Won't you take pity on me?” he pleaded.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "What happened after that? Each of them tells that history. Listen!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. The canonical Tamil page records remain authoritative. The English preserves the work's source-printed character accounts, rhetoric, colloquial language and historical-period vocabulary without silently modernising the Tamil. The canonical pages remain under the project's separate verification freeze."
+     }
+    ]
+   }
+  },
+  {
+   "order": 2,
+   "slug": "uthandi",
+   "titleTa": "உத்தண்டி",
+   "titleEn": "Uthandi",
+   "sourceScansTa": "15 (from உத்தண்டி heading)-19 (through pre-கண்ணம்மா text)",
+   "sourceScansEn": "15 (from Uthandi heading)-19 (before Kannamma heading)",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": true,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": "2",
+   "unitNumberEn": "2",
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "உத்தண்டி",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பல் முளைத்த நாள் முதல் நான் பண்ணைக்காரர் வீட்டில்தான் அடிமை வேலை பார்க்கிறேன். பரம்பரை பரம்பரையாக என் பாட்டன் பூட்டன் எல்லோருமே அடிமைகள்தான். என் தகப்பனுக்கு என்னைச் சுதந்திர மனிதனாக ஆக்க எங்கிருந்து புத்தித் தோன்றும்? உலகநாத முதலியார் என்னைவிட எத்தனையோ வயது இளையவர். நான் அந்தப் பண்ணையில் மாடு மேய்க்கும்போது அவர் பிறக்கக்கூட இல்லை. இப்போது உலகநாதர் என்றுமே அடிவயிற்றில் 'பசீர்' என்கிறது. இத்தனைக்கும் மண்டிக்கடை ஆசாமிதான். ஆனால், லட்சுமி அங்கு விளையாடுகிறாள். அங்கேயே வாசம் செய்கிறாள். அவர் பார்த்து ஒழிக்க வேண்டுமென்றால் ஒழித்துக் கட்டிவிடலாம். என் வீடு, மண், தோட்டம் எல்லாம் அவரிடம் அடமானம். அந்தத் தைரியத்தில்தான் அவர் என் நெஞ்சத்தைக் குத்திக் கிளறிவிட்டார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அவருக்கு நான் பட்டிருக்கும் கடன் 500 ரூபாய். உலோபி மனுஷன் நம்மை நம்பி எப்படிக் கடன் கொடுத்தார் என்று நினைத்தேன். அவருடைய தாராள புத்தியின் சரியான காரணம் இப்பொழுதுதான் தெரிந்தது. குமுதா என் பெண்; ஆசை மகள். அவள் அம்மா சாகும்போது குமுதாவை என்னிடம் ஒப்படைத்தாள். குமுதாவுக்கு வாழ்க்கையில் துன்பம் தோன்றவே கூடாதென்று எண்ணினேன். ஆனால், கடவுள் அப்படி நினைக்கவில்லை. உலகநாதரையல்லவா எனக்கு அனுப்பியிருந்தான் பாழும் கடவுள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அன்று உலகநாதர் என்னைக் கூப்பிட்டு அனுப்பினார். ஏதோ சாகுபடி விஷயம் என்று நானும் போனேன். “வா, உத்தண்டி!” என்று அவர் அழைக்கும்போதே அவரது முகத்தில் ஆவல் ததும்பிக்கொண்டிருந்தது. நாங்கள் பேசிக்கொண்டிருந்த இடத்தில் யாருமே இல்லை, “என்னடா உத்தண்டி!” என்று அதிகாரத் தோரணையில் கூப்பிடும் அவர் அன்று பரிவோடு என்னை அழைத்தார். அகம்பாவமாகவே என்னிடம் நடந்துகொள்ளும் அவர் சில நாட்களாக அன்பு வார்த்தைகளையே உபயோகித்தார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“என் எஜமான் கூப்பிட்டீங்களாம்” என்று கேட்டுக் குனிந்து நின்றேன். “கடன் வளர்த்துக் கொண்டே போகிறாயே, வட்டி வளருதே, தெரியலியா?” என்று கேட்டார். அஸ்திவாரத்தைப் பலமாகப் போட்டுக்கொண்டார். நான் அவர் கருத்தை முதலில் அறியவில்லை; பேசாமல் நின்றேன். “உன் மகளுக்குக் கல்யாணம், காட்சி நடக்கவில்லையா?” என்று அடுத்த கேள்வியைப் போட்டார். அதையும் நான் விகற்பமாகக் கருதவில்லை. பண்ணையாள் குடும்பத்திலே அய்யாவுக்கு அவ்வளவு அக்கறை என்று சந்தோஷப்பட்டுக்கொண்டேன். ஆனால், அதை அவர் நீடிக்க விடவில்லை. நம் வீட்டு அண்ணிக்கு வேலைக்காரி ஒருத்தி வேண்டுமாம். “கல்யாணம் ஆகிற வரையிலே உன் மகளை இங்கே விட்டு வையேன்” என்றார். நான் அப்போதுதான் தடுமாறினேன். “அவள் குழந்தைங்கோ. தனியா இங்கே இருக்க பயப்படுவாளே” என்று பல்லைக் காட்டினேன். உன் மகளைக் காட்டிலா கொண்டு வந்து விட்டுப் போகிறாய்! அட பைத்தியக்கார மனுஷா?” என்று ஏளனம் செய்தார் உலகநாதர். எனக்கு என்ன சொல்வதென்றே புரியவில்லை. “எப்போதும் இங்கேதான் இருக்கணுமா?” என்று ஒரு கேள்வியைப் போட்டு வைத்தேன். “அட ஒரு இரண்டு மூணு மாசத்துக்கு இருக்கட்டுமே. என்ன உன் பெண் தேய்ந்தா போய் விடுகிறாள்! கண்ணம்மாவோடு இருந்து பழகினால் குடும்ப விஷயமும் புரியும், வேறு ஒரு புருஷன் வீட்டுக்குப் போனாலும் நல்ல குடித்தனக்காரியென்று பெயரெடுப்பாள்” என்று பிரசங்கம் செய்ய ஆரம்பித்தார். என்னால் மறுக்கவே முடியவில்லை; மறுக்கத் தைரியமும் இல்லை. மறுத்திருந்தால் மறுநாளே அவருடைய கடன் அடைத்தாக வேண்டும். நான் 500 ரூபாய்க்கு அப்பொழுது எங்கு போவேன். இந்தப் பாழும் தெய்வங்கள் என்னை அப்படியா வைத்திருந்தன? அவைகளுக்குத்தான் என்னைப் பற்றிக் கவலையே கிடையாதே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“உன் மகள் குமுதத்துக்கு மாசம் 20 ரூபாய் சம்பளம் கொடுக்கிறேன். கவலைப்படாதே. அவளுக்கு இங்கு ஒரு கஷ்டமும் இருக்காது. கண்ணம்மாவோடு குஷாலா இருக்கலாம். வேலையும் அதிகமில்லை” என்று மறுபடியும் உலகநாதர் உபந்யாசத்தை ஆரம்பித்தார். கிராமத்திலே பணத்தைக் கண்டால் பகவானைக் கண்டது போலத்தானே! அதுவும் என்போன்ற தலையாரிகளுக்குக் கேட்கவா வேண்டும்! கோபாலகிருஷ்ண பிள்ளை மகள் பள்ளிக்கூடத்திலே 10 கிளாஸ் படிச்சுப்பிட்டு வாத்தியாரம்மா வேலை பார்த்து மாதம் 20 ரூபாய் சம்பாதிக்கிறாள். ஒன்றுமில்லாமல் என் குமுதாவுக்கு 20 ரூபாய் சம்பளம் என்றதும் எனக்குச் சபலம் தட்டிற்று; சிறிது ஆசையும் ஏற்பட்டது. அவளுக்கு மாதா மாதம் வரும் இருபது ரூபாயை அப்படியே மீத்துப் புருஷன் வீட்டுக்குப் போகும்போது சீதனமாகக் கொடுத்தனுப்பலாமென்று திட்டங்கள் போட்டு விட்டேன். உலகநாதரின் உத்தரவுக்குக் கீழ்ப்படிந்தேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்த அபிப்பிராயத்தை என் குமுதாவிடம் கூறினேன். குமுதா குழந்தை மனம் படைத்தவள் அல்லவா? என்னைப் பிரிந்து வேறு ஒரு வீட்டில் வேலை செய்யத் தயங்கினள். “இந்த ஊர்தானே அம்மா! ஏன் பயப்படுகிறாய்? நான் உன்னை அடிக்கடி எஜமான் வீட்டிலே வந்து பார்க்கிறேன். பயப்படாதே” என்று சப்பைக்கட்டுகள் கட்டினேன். அவளும் உலகநாதர் வீட்டுக்கு வேலைக்காரியாகப் போகச் சம்மதித்தாள். அதன்படி அங்குச் சென்று வேலையிலும் அமர்ந்தாள். பிறகுதான் நான் செய்தவற்றை உணர்ந்தேன். குமுதாவைக் குழியில் போட்டுப் புதைத்த குருட்டுப் புத்திக்காரனேன். இன்னும் சொல்லட்டுமா? குமுதா ஒரு நாள் உலகநாதர் வீட்டுக் கொல்லைப்புறத்தில் உட்கார்ந்திருந்தாள். நான் திடீரென்று அங்குப் பிரவேசித்தேன். குமுதா கண்களைத் துடைத்துக்கொண்டு அவசரமாக எழுந்து, “அப்பா!” என்று கூவிக்கொண்டு என்னிடம் ஓடிவந்தாள். “ஏன் குமுதா, அழுகிறாய்?” என்றேன். என் மனம் பட்டபாட்டை ஈசன்தான் அறிவான். குமுதா தேம்பினள். அழுது அழுது அவள் முகம் வீங்கியிருந்தது. கண்கள் செக்கச் செவேலென்றேதோன்றின. என் கால்கள் நடுங்கின. கைகள் உதறலெடுத்தன. குமுதா பேசத் தொடங்கினள். ஆனால், வாய் குளறிற்று. சில வார்த்தைகள் சொன்னாள். அவைகள் என் காதில் ஈட்டிகளாய்ப் பாய்ச்சின. அதற்குள் எஜமானி கண்ணம்மா, குமுதா! குமுதா! என்று அழைத்தாள். குமுதா ஓடிவிட்டாள். நான் வீடு திரும்பினேன். அன்றிரவு முழுவதும் எனக்குத் தூக்கம் இல்லை. “குமுதா! குமுதா!” என்று புலம்பினேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "என் தங்கை மகன் வீரனுக்காக என் அருமைக் குமுதாவை வைத்திருந்தேன். வீரனையும் குமுதாவையும் மணக்கோலத்தோடு பார்க்க எண்ணியிருந்தேன். ஆனால் அதற்குமுன் அவர்கள் ஜோடியாகி விட்டார்கள். கல்யாணத்தை முடித்துவிடலாமென்று இருந்தேன்; இந்த கபோதியிடம் காசு ஏது? காசில்லாக் கஷ்டத்தால்தானே நான் உலகநாதர் உத்தரவுக்கு இணங்கி என் குமுதாவை வேலைக்காரியாக அனுப்பினேன்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்தக் கண்ணம்மா இவ்வளவு கைகாரி என்று எனக்குத் தெரியாதே! என் வயிற்றை எரிய விட்டு விட்டாளே! அடி விபசாரி.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Uthandi",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ever since my teeth first came in, I have worked in servile labour in the estate owner's household. Generation after generation, my grandfather and his forefathers were all slaves. Where would my father ever have got the idea of making me a free man? Ulaganatha Mudaliar is many years younger than I am. When I was grazing cattle on that estate, he had not even been born. Yet now Ulaganathar's lower belly is forever going “paseer.” For all that, he is only a Mandi Shop man. But Lakshmi plays there; she has made the place her home. If he chooses to ruin me, he can finish me off. My house, my land, my garden—everything is mortgaged to him. It is with that confidence that he has stabbed into my heart and stirred it up.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I owe him 500 rupees. I used to wonder how such a miserly man could have trusted us enough to lend me money. Only now did I understand the real reason for his generosity. Kumudha is my girl, my beloved daughter. When her mother died, she entrusted Kumudha to me. I thought no suffering should ever touch Kumudha's life. But God did not think so. That wretched God sent me Ulaganathar instead.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "That day Ulaganathar sent for me. I thought it must be something about cultivation, so I went. “Come, Uthandi!” he called, and desire was already overflowing from his face. There was no one else where we were talking. A man who usually summoned me in a tone of command—“Hey, Uthandi!”—called me with affection that day. He had always treated me arrogantly, but for several days he had been using only kind words with me.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Master, I heard you called me,” I said, standing bent before him. “You keep letting the debt grow; the interest keeps growing too. Don't you know that?” he asked. He laid the foundation firmly. At first I did not understand what he had in mind; I stood there silently. “Isn't it time for your daughter's marriage and all its ceremonies?” came his next question. I did not find that strange either. I was happy that Ayya cared so much about an estate labourer's family. But he did not let that thought last. Our house's **Anni** needed a maid, he said. “Why don't you leave your daughter here until she gets married?” he said. Only then did I begin to falter. “She's only a child, sir. She'll be afraid to stay here alone,” I said with a nervous grin. “Are you leaving your daughter in a forest? You madman!” Ulaganathar mocked. I did not know what to say. “Does she have to stay here all the time?” I ventured. “Oh, let her stay for a month or two or three. Is your girl going to wear away or something! If she stays with Kannamma and learns from her, she'll understand household matters too; even when she goes to another man's house, she'll earn a name as a good housewife,” he began to sermonise. I could not refuse; I did not have the courage to refuse. If I had refused, I would have had to repay his debt the very next day. Where could I have found 500 rupees then? Had these wretched gods left me in any other condition? They had no concern for me at all!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“I'll pay your daughter Kumudam twenty rupees a month. Don't worry. She won't have any hardship here. She can live comfortably with Kannamma. There isn't much work either,” Ulaganathar began his sermon again. In a village, seeing money is like seeing God, isn't it! And for talaiyaris like me, need one even ask? Gopalakrishna Pillai's daughter studied through the tenth class, works as a schoolmistress and earns twenty rupees a month. When my Kumudha, with none of that, was offered twenty rupees a month, temptation struck me; a little desire rose in me too. I made plans to save the twenty rupees she would receive every month and send her to her husband's house with it as dowry. I obeyed Ulaganathar's order.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I told my Kumudha what I thought. Wasn't Kumudha child-hearted? She hesitated to leave me and work in another house. “It's only in this same village, child! Why are you afraid? I'll come to the master's house often and see you. Don't be afraid,” I said, patching together hollow reassurances. She too agreed to go to Ulaganathar's house as a maid. Accordingly, she went there and began the work. Only afterwards did I understand what I had done. Blind fool that I was, I had thrown Kumudha into a pit and buried her. Shall I tell you more? One day Kumudha was sitting in the backyard of Ulaganathar's house. I suddenly entered there. Wiping her eyes, Kumudha sprang up and ran to me crying, “Appa!” “Why, Kumudha, are you crying?” I asked. Only God knows what my heart went through. Kumudha sobbed. Her face was swollen from crying and crying. Her eyes looked a vivid raw red. My legs trembled. My hands began to shake. Kumudha started to speak. But her mouth faltered. She said a few words. They shot into my ears like spears. Before she could say more, the lady of the house, Kannamma, called, “Kumudha! Kumudha!” Kumudha ran off. I returned home. I did not sleep that entire night. “Kumudha! Kumudha!” I lamented.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I had kept my dear Kumudha for Veeran, my sister's son. I had dreamed of seeing Veeran and Kumudha in their wedding finery. But before that, they had already become a pair. I had been thinking of getting the marriage completed; but where would a poor wretch like me get the money? Wasn't it precisely the hardship of having no money that made me obey Ulaganathar's order and send my Kumudha to work as a maid!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I never knew that Kannamma was such a schemer! She has left my insides burning! You adulteress.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 15,
+        "printedPage": 14
+       },
+       {
+        "scan": 19,
+        "printedPage": 18
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. The canonical Tamil page records remain authoritative. The English preserves the work's source-printed character accounts, rhetoric, colloquial language and historical-period vocabulary without silently modernising the Tamil. The canonical pages remain under the project's separate verification freeze."
+     }
+    ]
+   }
+  },
+  {
+   "order": 3,
+   "slug": "kannamma-first",
+   "titleTa": "கண்ணம்மா — முதல் உரை",
+   "titleEn": "Kannamma",
+   "sourceScansTa": "19 (from கண்ணம்மா heading)-31",
+   "sourceScansEn": "19 (from Kannamma heading)-31",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": false,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": "3",
+   "unitNumberEn": "3",
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "கண்ணம்மா",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆம்! நான் விபசாரிதான். அது என் குற்றமா! என் மனதுக் கேற்றவனோ மனம் முடித்திருந்தால் என்னிலே இப்படி ஆகி இருக்குமா? நான் சிறுமியா இருக்கும்போது, எவ்வளவோ நல்லவளாகத்தான் இருந்தேன். ஊரில் கண்ணம்மா என்றாலே தனிப் பிரியந்தான் காட்டினார்கள். எனக்குக் கடவுளிடத்தில் அபார பக்தி இருந்தது. கிழமை தவறினும் தவறும், என்னுடைய விரதங்கள் தவறு. அம்பிகைக்குப் படையல் செய்து விட்டுத்தான் சாப்பிடுவேன். எதிர்காலத்தில் ஒரு பெரிய ‘பக்திமணி’யாக வேண்டுமென்ற பேராசையால் என் நெஞ்சம் நிரப்பப்பட்டிருந்தது. சதா சர்வ காலமும் தெய்வத்தின் திரு நாமங்களையே உச்சரித்துக்கொண்டிருப்பேன். இப்பொழுதுதான் என்ன? எப்பொழுதும் ஆண்டவனைத் துதித்த வண்ணமேதான் இருக்கிறேன். குற்றம் செய்தவர்கள்தானே மன்னிப்புக் கேட்டுக் கொள்ள வேண்டும்! நான் செய்த விஷமகரமான விபரீதச் செயல்களுக்குக் கடவுளிடம் மன்னிப்புக் கேட்டுக் கொள்ளத்தானே வேண்டும்! ஆனால் ஒன்று. அதை யாரும் கவனியாது விட்டு விடாதீர்கள்! பகவானிடம் மன்னிப்புப் பெற்றுவிடலாமென்ற தைரியத்தில் நான் இன்னும் என்னுடைய ஊறிப்போன செய்கைகளை விட்டு விடாமல்தான் இருக்கிறேன்; அதை ஏன் கேட்கிறீர்கள்! விபசாரி வேதாந்தம் பேசுகிறாள் என்று கூறுவீர்கள், விவேகமொழி கூறுகிறாள் என்று ஏளனம் செய்வீர்கள். என்னைப்பற்றி நீங்கள் நன்றாகத் தெரிந்து கொள்ள வேண்டுமா? இதோ பதில்! கண்ணம்மா ஒரு விபசாரி! கண்ணம்மா ஒரு பக்த சிரோன்மணி! போதுமா? இன்னும் வேண்டுமானாலும் இதோ விளக்கம். கேளுங்கள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "என் தகப்பனார் நல்ல செல்வந்தர். என் தாயார் என்னை வெகு அருமையாக வளர்த்தாள். நானும் நன்றாகத்தான் வளர்ந்தேன். எப்படியோ எனக்குத் தெரியாது; ஒருநாள் உலகநாதரின் திருஷ்டியில் பட்டு விட்டேன். ‘ஆண்கள் இருக்கும் பக்கத்தில் போகக் கூடாது’ என்று என் அன்னை அடிக்கடி கூறித்தான் வந்தாள். ஆனால் கால வித்தியாசம், அவரது கழுகுப் பார்வைக்கு இரையானேன். இடுக்கி; கால்களின் இரும்புப் பிடியில் எலிகளைத் தூக்கிச் செல்லும் கழுகைப் போலவே, உலகநாதர் என்னை அடைந்துவிட்டார். அந்த வயிற்றெரிச்சலே வர்ணிப்பானேன்! உலகநாதருக்கும் எனக்கும் திருமணம் நடந்தது. ஆமாம், வாழ்க்கையை ஒப்பந்தம் செய்து வைக்கப்பட்டேன். அதன் பெயர் திருமணமா? கண்ணைக் கட்டிக் காட்டில் விட்டுக் கரடியோடு கொஞ்சு என்று கட்டளை இடுவதற்குப் பெயர்தான் ‘திருமணம்’ என்றால், எனக்கு நடந்ததும் திருமணம்தான். விஷத்தை வேலில் தடவி விழியில் சொருகுவதற்குப் பெயர்தான் ‘வாழ்க்கை ஒப்பந்தம்’ என்றால் எனக்கு நடந்ததும் வாழ்க்கை ஒப்பந்தந்தான்! உலகநாதர் எனக்குக் காண்டாமிருகமாகத் தோன்றினாரே பொழியக் கணவனுக்குக் காட்சியளிக்கவில்லை. உலகத்தின் விகாரமே உருப்பெற்றெழுந்ததுதான் உலகநாதர். நான் என்ன செய்வேன்; அவருக்கு என்னவோ இளமை இருந்தது உண்மை. ஆனால், என் இதயத்தைக் கவரும் இன்முகம் கிடையாதே! அவர் வாலிப முறுக்குள்ளவர்தான். ஆனால், அந்த வடிவம் வாராகத்தைப் பழிப்பது போலவா இருக்க வேண்டும்? இவைகள் நான் பொறுத்துக்கொள்ளக் கூடாதா என்று நீங்கள் கேட்பீர்கள். ‘புல்லென்றாலும் புருஷன், கல்லென்றாலும் கணவன்’ என்று புராணக் காலக்ஷேபங்கூட நடத்துவீர்கள். என் நிலையில் நீங்கள் இருந்து பார்த்தால் அப்படிப் பேசமாட்டீர்கள். உலகநாதரின் குரூபப்பற்றி ஒரே ஒரு வார்த்தை, வாயைத் திறந்தாலே போதும், வாந்தியெடுப்பவனுக்கு வயிற்றிலிருந்து கிளம்புவது போன்ற வறட்டுச் சப்தம். அதைக் கோகிலத் தொனி என்று தான் கூறிக்கொள்ள வேண்டுமா? நீங்கள் தான் தீர்ப்புக் கூறுங்களேன். என்னைப் பற்றி நானே கூறிக்கொள்வதாக எண்ணாதீர்கள். ஒரு பணக்கார வீட்டுப்பெண், போதுமான அழகுடையவள். இளமையின் எழுச்சியில், இன்பத்தின் அடிவாரத்தில் உலாவத் தொடங்குபவள், ‘எண்ணத் எண்ணங்கள் எண்ணியவள்’ எதிர்காலத்தைப் பற்றி எட்டாத பேராசைக் “கோட்டைகள் கட்டியவள்,” “கண்ணம்மாளா? கட்டழகி யாயிற்றே! கட்டுடல் வாய்ந்தவளாயிற்றே!” என்று ஊராரின் மதிப்புரையைப் பெற்றவள் கடைசியில் ஒரு கண்ராவியான மனிதனைக் கட்டிக்கொள்ள தென்றால், அது நியாயமா? பச்சிளங் குழந்தையும் பரிகாசஞ் செய்யுமே! தோழிகள் ‘தூ’ என்று துப்புவார்களே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இது என்ன, வாராகாவதாரத்தைக் கண்டு பூமா தேவி விரகதாபங்கொண்ட காலமா? அதுவுமில்லையே! என்ன விபசாரி என்று கூறுகிறீர்களே; எனக்கு அந்த வாழ்வை அமைத்துக் கொடுத்தது உங்கள் வைதீக உலகந்தானே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வாழ்வில் கோணல் ஏற்பட்டு விட்டதே என்று வாடினேன்; வதங்கினேன். ஆனால் அதை உலகநாதரிடம் காட்டிக்கொள்ளவில்லை. என் தாய் தந்தையரைச் சபித்துக்கொண்டிருந்தேன், என் சாபங்களுக்கு மட்டும் சக்தி இருந்திருக்குமானால். இந்த உலகமே அழிந்து போயிருக்கும். என் தாயகத்திலிருந்து சீதனங்கள் வந்து குவிந்தன. கட்டில்களென்ன, கம்மல்களென்ன, ஏதேதோ வழங்கினார்கள். வழக்கத்தைவிடாமல் செய்து விட்டார்கள்; அவ்வளவுதான்! அவர்கள் அள்ளி அள்ளிக் கொடுத்த அவ்வளவும் எனக்குத் தேவையில்லை. என் கருத்துக் கேற்றவரைத் தேடித்தராத அந்தப் ‘பெற்ற பேய்கள்’ எனக்கு எதை வாரிக்கொடுத்தால்தான் என்ன? ஓர் ஆண்மகனை மட்டும் எனக்குத் துணையாகச் செய்திருந்தால் போதுமே! சீதனமா வேண்டும், எனக்குச் சீதனம்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பார்த்தேன். வண்டிக்கார வீரன் வாட்டத்தைப் போக்க முன்வந்தேன். வெற்றி பெற்ற வீராப்பில் பெருமூச்சுவிட்டேன். அகழ் பல கடந்து, அரும்பாடு பட்டு அந்நியனுடைய கோட்டையைக் கைப்பற்றியது போல ஆனந்தங் கொண்டேன். இதய வீதியில் எண்ணப்பட்டாளம் ஜெயபேரிகை முழங்கிச் சென்றது. குனிந்து கிடந்த என் இளமை கொக்கரித்துக் கொடியேந்திப் புறப்பட்டது. “என்னடி வேசி! அளக்க ஆரம்பித்துவிட்டாய்” என்று ஆத்திரப் படுகிறீர்களா? சற்றுப் பொறுங்கள். இதோ பாருங்கள், வீரனுக்கும் உலகநாதருக்கும் உள்ள வித்தியாசங்களே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதரிடம் இளமை மட்டுமிருந்தது, வீரனிடம் அந்த இளமைக்கேற்ற அழகு இருந்தது! உலகநாதர் உருட்டுச் சட்டிப் பொம்மை; வீரன் வடிவழகன்! உலகநாதர் உன்மத்தர்; வீரன் விவேகி! உலகநாதரிடம் செல்வமிருந்தது; சிங்காரமில்லை! வீரன் ஏழைதான் ஆனால், எழில் மிக்கவன் எனக்கு வேண்டியது. அது தானே! உலகநாதரின் குரலில் ஒரே கரகரப்பு, வீரனின் தொனியில் வீணை கிளப்பும் ஒலி! உலகநாதரின் கண்களுக்கு ஆந்தை அருமையான உதாரணம்; வீரனின் கண்களோ என் விலாவைக் குத்தி வேதனைக் கிளப்பிய வேல்கள்! உலகநாதரின் பல்வரிசை பார்க்கப் பயங்கரம்; வீரனின் பற்களோ முத்துக் கோவை!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அவ்வளவு ஏன்? வீரன் என்னை இந்திர விமானத்தில் இட்டுச் சென்றான். இன்பபுரியில் சுற்றுப் பிரயாணம் செய்ய.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீரனுக்கும் எனக்கும் தொடர்பு இருப்பதை உலகநாதர் அறியவே இல்லை. அவர் அறியாதபடியே நான் நடந்துகொண்டேன். அவரது ஆசை மனைவிபோல நடந்தேன். அவரைக் கடவுளாகக் கருதுவதாகக் கூறினேன். பாதங்களைக் கண்களில் ஒத்திக்கொண்டேன். பாசமுள்ள பத்தினிமேல் பாசாங்கு செய்தேன். உலகநாதர் என்னை நம்பியே இருந்தார். இவ்வளவு நாடகமும் நான் ஆடாவிட்டால் அவர் என்னை நம்புவாரா? தலையை வலிக்கிறது என்று சொல்வார்; எனக்கே வலி ஏற்பட்டதாக வருத்தத்தை வரவழைத்துக் கொள்வேன், அவர் நன்றாக ஏமாந்து விடுவார். ஏமாற்றட்டுமே! எனக்கென்ன!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீரன் என் வலையில் சாதாரணமாக விழுவேன் என்றானா? அப்பப்பா! எவ்வளவு கஷ்டம்? எஜமானி அம்மாள் அழைக்கிறதே என்று முதலில் பார்த்தான். பெரிய இடத்து விஷயமாயிற்றே என்று கலங்கினான். ‘ஒய்யாரக் கொண்டையாம் தாழம்பூவாம் உள்ளே இருக்குமாம் ஈரும் பேனும்’ என்பதை அவன் எப்படி அறிவான். பாவம்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எப்படியோ காரியம் கைகூடிற்று. என் கணவர் அடிக்கடி வெளியூர் சென்றுவிடுவார். வாசலில் கை கட்டி நிற்கும் வண்டிக்காரனுக்கு ரயிலுக்கு வண்டி கொண்டு போகும் வேலை மட்டுந்தானா? என்னை வட்டமிடும் வேலையும் வந்து சேர்ந்தது. உலகநாதர் ஊரிலே! நானும் வீரனும் உல்லாசபுரியிலே! அவர் காட்டிலோ மேட்டிலோ அல்லவா. அதைப் பற்றிக் கவலையில்லை நாங்கள் கட்டிலிலே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீரனுக்கு முதலில் என்னைத் தீண்டுவதற்குப் பயம்! தீண்டிய பிற்பாடு அய்யா பார்த்துவிடுவாரோ என்ற அச்சம்! சங்கதி பரவிவிடுமோ என்ற சந்தேகம்! கடைசியில் அவர் எப்பொழுது வெளியூர் செல்வார் என்ற ஏக்கம்! இந்த நிலையிலே எங்கள் காதல் வளர்ந்தது. மாதங்கள் ஒன்று இரண்டு இப்படிப் பல மாதங்கள்! ஏன் இரண்டு மூன்று வருடங்களும் ஆகிவிட்டன. இதில் இன்னொரு பயங்கரமும் நடந்துவிட்டது. நானும் வீரனும் சேர்ந்து கொலையும் செய்துவிட்டோம். என் வயிற்றில் வளர்ந்த இரண்டரை மாதச் சிசுவை யம லோகத்திற்கு அனுப்பினோம். அதற்கு வீரன்தான் மருந்து வாங்கிக்கொண்டுவந்து கொடுத்தான். பிறக்கும் குழந்தை வீரனைப்போல் இருந்துவிட்டால் என்ன செய்வது என்ற பயமே கொலைக்குக் காரணம். இப்பொழுது நீங்கள் சொல்லுங்கள் கண்ணம்மா ஒரு கொலைகாரி என்று. அதைப்பற்றி எனக்குக் கவலையில்லை. என் உடம்பில் ஏதாவது கூச்சம் இருந்தால் தானே! என் மனசுதான் மறத்துப் போய்விட்டதே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குழந்தையை அழித்த சில நாட்களுக்குப் பிறகு வீரனுக்கும் எனக்கும் நடுவே ஒரு தொய்வு ஏற்பட்டது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "திடீரென்று வீரன் என்னுடன் பேசுவதை நிறுத்திவிட்டான். என்னைக் கண்டாலே பிடிக்காதவன் போல் நடந்துகொண்டான். நான் ஏதாவது கேட்டால் ‘வெடுக்’கென்று பதிலச் சொல்லிவிட்டு நகர்ந்துவிடுவான். எத்தனையோ முறை உலகநாதர் வெளியூர் சென்று வந்தார். நான் அந்த நேரங்களெல்லாம் தனியாகவே கழித்து வந்தேன். பலமுறை வீரனுக்கு ஆள் அனுப்பிப் பார்த்தேன். அவசரச் செய்தி என்று கூப்பிட்டேன். ஒன்றுக்கும் அவன் அசையவில்லை. காரணந் தெரியாது விழித்தேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "என்னுடைய கலக்கத்தைக் கண்டு என் கணவர், “என்ன கண்ணம்மா வருத்தம்?” என்று கேட்டார். “ஒன்றுமில்லை; உடம்பு சரியில்லை” என்பேன். உடனே அவர் எனக்குச் சிகிச்சைகள் செய்ய ஆரம்பிப்பார். அவர் அறிந்துகொள்ள முடியாத நோய் எனக்கு! அதை நீக்க அவர் கொண்டுவந்து தரமுடியாத மருந்து ஒன்று இருந்தது. அதை அவர் எப்படி அறிவார், பாவம்! இந்த நிலையிலே ஒரு சில மாதங்கள் ஓடின.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "என்னுடன் பட்சமாயிருந்த உலகநாதரும் திடீரென்று மாறிவிட்டார். எப்பொழுதும் சிந்தனை; எப்பொழுதும் வெறுப்பு; எப்பொழுதும் கடுகடுப்பு!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "சாதாரண வேளையிலேயே என் நாயகரைப் பார்க்க ஆயிரங் கண்கள் வேண்டும். அதுவும் இந்த நிலையிலேயே எப்படி இருப்பார் என்று நான் சொல்லவும் வேண்டுமா! அவர் இப்படி ஒரேயடியாக மாறிவிட்டதற்கு எனக்குக் காரணம் புரியவில்லை. ஒருவேளை வீரனுக்கும் எனக்கும் உள்ள “இரகசியம்” அம்பலமாகி விட்டதோ என்று நடுக்கமுற்றேன். அல்லது வேறு ஏதாவது புதுவித வியாதியோ என்று ஐயமுற்றேன். நான் எந்த முடிவுக்கும் வர முடியவில்லை. ஒரு பக்கம் வீரனில்லா வாழ்வு! இன்னொரு பக்கம் உலகநாதர் பற்றிய ஆராய்ச்சி! இரண்டிற்கும் நடுவில் நின்று தவித்தேன். உலகநாதரிடம் எவ்வளவோ கேட்டுப் பார்த்தேன். அவர் மெளனமே சாதித்தார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஒரு நாள் இரவு 9 மணிக்கு இருக்கும். உலகநாதர் எங்கேயோ போய்விட்டு வீட்டுக்கு வந்தார். ஊஞ்சலில் உட்கார்ந்தார். நானும் அவர் அருகில் அமர்ந்தேன். அவருடைய முகத்தைக் காணச் சகிக்கவில்லை. அந்த அகண்ட சச்சிதானந்த விழிகளைப் புருவத்தின் பக்கம் ஏற்றி எங்கேயோ யோசனையை ஒட்டிக்கொண்டிருந்தார். நான் நடிக்க ஆரம்பித்தேன். ஊஞ்சலிலிருந்து கீழே விழுந்துவிட்டேன். உண்மையாக அல்ல, உலகநாதரை ஏமாற்ற. உலகநாதர் என்னை வாரியெடுத்துத் தடவிக் கொடுத்தார். அந்த ஸ்பரிசத்தால் என் வலி நீங்குமென்று அவர் எண்ணியிருக்கலாம். ‘வீரனிருக்க வேண்டிய இடத்தில் இந்த வீணன்’ என்று என் மனம் துடித்துக்கொண்டதை அவர் எப்படி அறிவார்? மறுபடியும் ஊஞ்சலில் உட்கார்ந்தோம். ஊஞ்சல் அசைந்தது; உலகநாதரும் பேச்சை ஆரம்பித்தார்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "(எங்கள் பண்ணையிலே தலையாரி உத்தண்டி என்று ஒரு கிழவன் வேலை பார்த்து வந்தான். அவனுக்கு ஒரு மகள். அவள் பெயர் குமுதம். அந்தக் குமுதம் அழகிதான். அந்தக் குமுதத்தின் மேல் என் பிராணபதிக்கு மோகம் ஏற்பட்டுவிட்டது. என்னைத் திருப்திபடுத்த முடியாத அந்த அழகு துரை குமுதத்தின் மேல் பாய்ந்துவிட்டார். பணக்கார நல்லவர்? பார்த்த பெண்கள் யெல்லாம் காதலிப்பதுதானே பணக்காரத் தத்துவம்!) ‘குமுதத்தோடு கொஞ்சவேண்டு’ மென்று என்னிடம் கூறினார் தாராளமாகச் செய்வதுதானே, என்று என் விருப்பத்தை வெளியிட்டேன். அதற்கு ஒரு தடங்கல் இருக்கிறதென்றார். என்ன தடை? என்று நான் கேட்டேன். அவர் அதைச் சொன்னார். வீரன் என்னை மறந்து விட்டதன் இரகசியத்தை அப்பொழுதுதான் தெரிந்து கொண்டேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதர் விரும்பிய குமுதாவுக்கு ஓர் அத்தான் உண்டு. அவன்தான் என்னை அடிமை கொண்ட அன்பன் வீரன். “குமுதாவுக்கும் வீரனுக்கும் காதலாம். இருவரும் கல்யாணம் செய்துகொள்ள முடிவு செய்து விட்டார்களாம். கல்யாணமும் சீக்கிரம் முடியப் போகிறது” என்று உலகநாதர் கூறினார். அந்தச் சமயத்தில் என் முகத்தில் தோன்றிய சிறல்களே உலகநாதர் பார்த்திருந்தால் ஆச்சரியப்பட்டிருப்பார். நான் இறந்து போய் விட்டதாகவே கருதினேன். ஆத்திரத்தை அடக்கிக்கொண்டு, “வீரனுக்கும் குமுதாவுக்கும் காதல் என்று உங்களுக்கு எப்படித் தெரியும்?” என்று கேட்டேன். (குடியானவர் தெரு கொல்லைப்புறத்து வாய்க்கால் ஓரத்தில் இருவரும் இரகசியம் பேசிக்கொண்டிருந்ததைத் தாம் கண்டதாக என் கணவர் கூறினார்.) அதோடு உலகநாதர் நிற்கவில்லை. “கண்ணம்மா! என் கண்ணல்ல.....நான் உன்னை அலட்சியப் படுத்துவதாக நினைக்காதே....எப்படியாவது ஒருநாள் ....குமுதா என் படுக்கையை அலங்கரிக்க வேண்டும். இதை நீதான் செய்யவேண்டும். தயவுசெய்! உன் தாளைப் பிடிக்கிறேன். இரங்கமாட்டாயா?” என்று கெஞ்சினார்; கதறினார், பல்லைக் காட்டிப் பிச்சைக் கேட்டார். எனக்கும் ஒரேயோசனை தோன்றிற்று; அது மிகவும் அருமையான யோசனையாகத்தான் முடிந்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதாவையும் வீரனையும் பிரித்து விட்டால் மீண்டும் வீரன் என்னை நெருங்குவான் என்று தீர்மானித்தேன். குமுதாவை உலகநாதரிடம் அளித்துவிட்டால் அவளிடமே குவலிக் கிடப்பார். வீரனும் நானும் வேறு அந்தப்புரம் அமைத்துக் கொள்ளலாம், அவர் அதைக் கவனிக்க முன்னமாட்டார் என்று முடிவு கட்டினேன். ஆகவே, குமுதாவை என் கணவருக்குக் கூட்டிவைக்க யோசனை சொல்லிக் கொடுத்தேன். குமுதாவை ஒரு விபசாரி ஆக்குவதன் மூலம் இழந்த வீரனை இழுத்து விடலாமென்ற தைரியம் எனக்கு! “அடி துரோகி! நீ கெட்டதோடு இருக்கக் கூடாதா? குமுதாவையுமா அப்படிச் செய்ய வேண்டும்?” என்று கேட்கிறீர்களா? அதற்கு நான் என்ன செய்வேன்? என் வீரனை அடைய வேறு வழி ஏது? குமுதா வேண்டுமானால் தன் கற்பின் திறமையைக் காட்டுவதுதானே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மறுநாள் பொழுது விடிந்தது, என் யோசனைப்படி உலகநாதர் உத்தண்டிக் கிழவனைக் கூப்பிட்டனுப்பினார், ‘குமுதா வீட்டில் வேலை செய்யவேண்டும்’ என்றும், ‘கண்ணம்மாவுக்குத் துணையாகச் சில நாட்களுக்கு இருக்க வேண்டுமென்றும் சொன்னார். கிழவன் சிரித்து தடுமாறினன். குமுதாவுக்கு மாதச் சம்பளம் இருபது ரூபாய் என்று குறிப்பிட்டார். கிழவன் ஏமாந்துவிட்டான். பணத்தைப் பார்க்காதவன் தானே! அந்தப் பஞ்சை! குமுதாவை எங்கள் வீட்டுக்கு வேலைக்காரியாக அனுப்பிவிட்டான். குமுதாவை நான் இரண்டு வருடங்களுக்கு முன்பு பார்த்தது. ஆனால், இப்பொழுது குமுதா பருவமடைந்த மங்கை. அவளுடைய லாவகமான நடையும், முகத்தின் களையும் பெண்ணை என்னையே ஆசைப்பட வைத்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா வீட்டுக்கு வந்தது முதல் மிகவும் மரியாதையாகவே பழகினள், அவளுடைய சிந்தனை மட்டும் எங்கேயோ இருந்தது. அதை அவளால் மறைத்துக் கொள்ள முடியவில்லை. அடிக்கடி வாசல் பக்கம் செல்வாள். எங்கேயோ சுற்றுமுற்றும் பார்ப்பாள். எனக்கெல்லவா தெரியும், அவள் யாரைப் பார்க்கிறாளென்று! அந்தச் சிறுமி வீரனிடம் கொண்டிருந்த கள்ளங் கபடமற்ற காதலில் நான் நச்சுப் பொடித் தூவ தயாராய் இருந்தேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா வீட்டிற்கு வந்து இரண்டு நாட்கள் கழிந்தன. ஒருநாள் இரவு நான் அவளோடு சம்பாஷணை துவக்கினேன். இதற்குள் என் கணவர் பட்டபாட்டை நினைத்துக்கொண்டு நானே சிரித்தேன், குமுதா தன் வீட்டுக் கதைகளை யெல்லாம் சொன்னாள். நான் அவள் பேச்சில் என் பச்சப் வார்த்தைகளைப் பின்னிக் கொண்டே வந்தேன். எங்கெங்கோ ஆரம்பித்துக் கடைசியில் உலகநாதர் குமுதாவிடம் கொண்டிருக்கும் ஆசை வரையில் கூறிவிட்டேன். குமுதா ஒன்றும் பேசவில்லை. பேசாமற் போய்ப் படுத்துக் கொண்டாள். சற்று நேரத்திற்குப் பிறகு குமுதா விம்மி விம்மி அழுத சப்தம் மட்டும் எனக்குக் கேட்டது. அன்றிரவு அதோடு முடிந்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மறுநாள் காலை கொல்லைப்புறத் தோட்டத்தில் குமுதா தன் தகப்பனுடன் பேசிக்கொண்டிருந்தாள். குட்டி தப்பித்துக் கொள்வாளோ என்ற பயம் எனக்கு. “குமுதா! குமுதா!” என்று அதட்டலாகக் கூப்பிட்டேன். ஓடிவந்துவிட்டாள். எனக்குத் தெரியாமல் அவள் கண்களைத் துடைத்துக் கொண்டதை நான் பார்க்காமலில்லை. வீரனை நான் மறுபடியும் அடையும் பொருட்டு நான் குமுதாவை என்ன செய்தால்தான் என்ன? என்னை வந்தடையும் பழி பாவங்களுக்கு நான் பொறுப்பாளி? ‘எண்ணியபடி எதுவும் நடக்காது’ என்ற சட்டமும், ‘அவனன்றி ஓர் அணுவும் அசையாது’ என்ற உறுதியும் இருக்கிற உலகத்திலே நான் ஒரு குற்றமற்றவள் தானே! இந்தத் தைரியத்தில்தான் குமுதாவின் நல்வாழ்வில் நஞ்சைக் கலந்தேன். அந்தக் காரியத்தைச் செய்யும்பொழுது என் உடல் பதறவில்லை தான். தோட்டத்தில் உத்தண்டியைச் சந்தித்து குமுதா பேசிய அன்றிரவேதான் நான் அந்தச் சதியைச் செய்தேன். உங்கள் பாஷைப்படி அது ‘சதி’யாக இருக்கலாம். ஆனால், அந்தக் காரியந்தான் என் தலை விதியைத் தீவிழியாக மாற்றிய மாபெரும் புரட்சி! என் சுயநலத்துக்காகக் குமுதாவைக் கொலை செய்தால்தான் என்ன?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Kannamma",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Yes! I am an adulteress. Is that my fault? If I had been married to the man who suited my heart, would I have become like this? When I was a little girl, I was very good indeed. In the village, the very name Kannamma drew a special affection. I had immense devotion to God. Even if an appointed day slipped, my vows did not. I would eat only after making an offering to Ambikai. My heart was filled with the great ambition of becoming, in the future, a mighty “jewel of devotion.” At all times I would utter only the holy names of the deity. And what is different now? I am still always praising the Lord. Those who have done wrong must ask forgiveness, must they not! For the poisonous, disastrous things I have done, must I not ask God's forgiveness! But there is one thing. Do not let anyone pass over it without noticing! It is precisely because I have the courage that Bhagavan will forgive me that I still have not given up my deeply ingrained ways; why ask me about it! You will say, “An adulteress is preaching Vedanta,” and mock me for uttering words of wisdom. Do you want to know me properly? Here is the answer! Kannamma is an adulteress! Kannamma is a crown-jewel among devotees! Is that enough? If you want still more, here is the explanation. Listen!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "My father was a wealthy man. My mother raised me with great tenderness. I too grew up well enough. I do not know how it happened; one day I fell under Ulaganathar's gaze. “Do not go where men are,” my mother had often warned me. But the times were otherwise, and I became prey to his eagle-eye. Like an eagle lifting rats in the iron grip of its pincer-like feet, Ulaganathar seized me. How can I describe that burning anguish! Ulaganathar and I were married. Yes, I was bound into a contract called life. Was that a marriage? If blindfolding someone, leaving her in a forest and ordering her to fondle a bear is called “marriage,” then what happened to me was marriage too. If smearing poison on a spear and driving it into the eye is called a “life-contract,” then mine too was a life-contract! Ulaganathar appeared to me as a rhinoceros, not as a husband. He was the ugliness of the world risen into bodily form. What could I do? It is true that he had youth. But he had no pleasant face that could capture my heart! He had the vigour of youth, yes. But did that form have to put even a boar to shame? You will ask whether I should not have endured all this. You will even conduct Puranic discourses saying, “Even if he is grass, he is the husband; even if he is stone, he is the husband.” If you were in my place, you would not speak so. As for Ulaganathar's ugliness, one word is enough: when he opened his mouth, it was a dry sound like something rising from the stomach of a man about to vomit. Must I call that the voice of a cuckoo? You give the verdict. Do not think I am praising myself. I was a girl from a rich house, with enough beauty; a girl just beginning to roam at the foot of pleasure in the surge of youth, one who had “thought thoughts upon thoughts,” who had built “castles” of unreachable hopes about the future, who had earned the village verdict, “Kannammal? Why, she has become a fine beauty! What a shapely body!” If in the end such a girl had to marry a hideous man, was that just? Even a tiny child would mock it! Her friends would spit “thu!”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Was this the age when Bhuma Devi burned with longing on seeing the Varaha incarnation? It was not even that! You call me an adulteress; was it not your Vaidika world that fashioned that life for me!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I grieved that a crookedness had entered my life; I withered. But I did not show it to Ulaganathar. I kept cursing my mother and father; if only my curses had had power, this whole world would have been destroyed. Dowry goods poured in from my parental home. Beds, earrings—what did they not give! They simply followed custom; that was all! I needed none of the things they poured out in heaps. Those “parent-demons” who would not find me the man who suited my heart—what use was anything they gave me? If only they had given me one man as a companion! Dowry, indeed! Was dowry what I needed!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I looked. I stepped forward to let the cartman Veeran drive away my anguish. I sighed in the pride of victory. I rejoiced as though, after crossing many moats and suffering great hardship, I had captured a foreigner's fort. Along the street of my heart marched an army of thoughts to the thunder of victory drums. My youth, which had lain bent down, crowed, raised its flag and set forth. Are you angry and saying, “You whore! Have you started boasting?” Wait a little. Look here at the differences between Veeran and Ulaganathar!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar had only youth; Veeran had beauty worthy of that youth! Ulaganathar was a round pot-doll; Veeran was handsome in form! Ulaganathar was a madman; Veeran a man of sense! Ulaganathar had wealth, but no charm! Veeran was poor, but what I wanted was a man rich in beauty. Was that not it! Ulaganathar's voice was nothing but a rasp; Veeran's tone carried the sound of a veena! An owl was a fine comparison for Ulaganathar's eyes; Veeran's eyes were spears that stabbed my ribs and raised pain! Ulaganathar's row of teeth was frightening to behold; Veeran's teeth were a string of pearls!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Why say more? Veeran carried me aboard Indra's vimana, to make a pleasure-tour through the city of delight.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar never knew that Veeran and I had a relationship. I behaved so that he would not know. I behaved like his loving wife. I told him I regarded him as God. I pressed his feet to my eyes. I put on the pretence of a loving, chaste wife. Ulaganathar continued to trust me. If I had not played out all this drama, would he have trusted me? He would say his head hurt; I would summon up grief as though the pain were mine, and he would be thoroughly deceived. Let him be deceived! What was it to me!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Did Veeran fall into my net easily? Oh, no! What difficulty! At first he looked at me as though to say, “The lady of the house is calling me?” He was troubled that this was a matter of a great house. How was he to know the saying, “A graceful coiffure, thazhampoo and all; inside it, lice and nits”? Poor man!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Somehow the thing succeeded. My husband would often go out of town. Was taking the cart to the railway station the only job of the cartman who stood at the gate with folded hands? The work of circling around me was added to it. Ulaganathar was away in town! Veeran and I were in Pleasure-Town! Was he not off in some forest or upland? We had no worry about that—we were in bed!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "At first Veeran was afraid to touch me! After touching me, fear that Ayya might see! Suspicion that word might spread! In the end, longing for the time when he would go out of town! In this state our love grew. One month, two months, then many months! Why, two or three years passed. In the midst of this another dreadful thing happened. Veeran and I together committed a killing too. We sent the two-and-a-half-month-old foetus growing in my womb to Yama's realm. Veeran bought the medicine and brought it to me. The fear that the child, if born, might resemble Veeran was the reason for the killing. Now you may say Kannamma is a murderess. I do not care. As though there were any shame left in my body! My mind had become numb!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "A few days after destroying the child, a slackening arose between Veeran and me.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Suddenly Veeran stopped speaking to me. Whenever he saw me, he behaved as though he disliked me. If I asked him anything, he would snap out an answer and move away. Ulaganathar went out of town and returned any number of times. I spent all those periods alone. Many times I sent people to fetch Veeran. I summoned him saying there was urgent news. He would not move for any of it. I stared, not knowing the reason.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Seeing my agitation, my husband asked, “What is it, Kannamma? What troubles you?” “Nothing; my body is not well,” I would say. At once he would begin treating me. I had an illness he could not understand! There was one medicine he could never bring me to cure it. How could he know, poor man! A few months passed in this state.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar, who had been affectionate toward me, suddenly changed too. Always thinking; always disgusted; always irritable!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Even at an ordinary time one needed a thousand eyes to look at my lord. In this state, need I tell you what he looked like! I did not understand why he had changed so completely. I trembled, wondering whether the “secret” between Veeran and me had been exposed. Or perhaps it was some new kind of illness, I thought. I could reach no conclusion. On one side, life without Veeran! On the other, the investigation of Ulaganathar! I stood between the two and suffered. I asked Ulaganathar again and again. He achieved only silence.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It must have been around nine one night. Ulaganathar came home from somewhere and sat on the swing. I sat beside him. I could hardly bear to look at his face. He had raised those vast sat-chit-ananda eyes toward his brows and fastened his thought somewhere far away. I began to act. I fell from the swing. Not truly—to deceive Ulaganathar. Ulaganathar scooped me up and stroked me. He may have thought his touch would remove my pain. How could he know that my heart was crying, “This useless fellow where Veeran ought to be!” We sat on the swing again. The swing moved; Ulaganathar began to speak.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "(An old man named Uthandi, a talaiyari, worked on our estate. He had a daughter. Her name was Kumudam. That Kumudam was beautiful. My lord and master had become infatuated with her. That “lord of beauty,” who could not satisfy me, had pounced upon Kumudam. A rich good man? Is it not the philosophy of the rich to fall in love with every woman they see!) He told me openly, “I want to dally with Kumudam.” I expressed my willingness: “Why not go ahead freely?” He said there was one obstacle. “What obstacle?” I asked. He told me. Only then did I understand the secret of why Veeran had forgotten me.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The Kumudha Ulaganathar desired had an Aththan. That man was Veeran, the beloved who had enslaved me. “They say Kumudha and Veeran are in love. They have decided to marry. The marriage too is going to happen soon,” Ulaganathar said. If Ulaganathar had seen the changes that appeared on my face at that moment, he would have been astonished. I felt as though I had died. Controlling my anger, I asked, “How do you know that Veeran and Kumudha are in love?” (My husband said he had seen the two of them talking secretly beside the canal behind the cultivators' street.) Ulaganathar did not stop there. “Kannamma! My darling..... Don't think I am neglecting you.... Somehow, one day.... Kumudha must adorn my bed. You must do this.... Please! I clasp your feet. Won't you take pity on me?” he begged; he wailed; baring his teeth, he pleaded like a beggar. One thought came to me too; and it turned out to be a very fine thought indeed.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I decided that if I separated Kumudha and Veeran, Veeran would come near me again. If I handed Kumudha over to Ulaganathar, he would remain sunk in her. Veeran and I could build another inner chamber of our own, and he would not come forward to notice it. So I gave him the idea of bringing Kumudha to my husband. I had the courage to think that by making Kumudha an adulteress I could draw back the Veeran I had lost! Are you asking, “You traitor! Was it not enough that you were ruined? Must you do that to Kumudha too?” What could I do? What other way was there for me to reach my Veeran? Kumudha could show the strength of her chastity if she wished!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The next day dawned. Following my idea, Ulaganathar sent for the old man Uthandi and told him that “Kumudha should work in the house” and “stay for a few days as company for Kannamma.” The old man smiled and faltered. Ulaganathar specified a monthly wage of twenty rupees for Kumudha. The old man was deceived. He had never seen money, after all—the poor wretch! He sent Kumudha to our house as a maid. I had seen Kumudha two years earlier. But now Kumudha was a young woman come of age. Her graceful walk and the radiance of her face made even me, a woman, desire her.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "From the day Kumudha came to the house she behaved with great respect, but her thoughts were somewhere else. She could not hide that. She often went toward the doorway. She would look all around somewhere. Did I not know whom she was looking for! I was ready to sprinkle poison into the innocent love that little girl bore Veeran.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Two days passed after Kumudha came to the house. One night I began a conversation with her. Meanwhile I laughed to myself thinking of the state my husband had been in. Kumudha told me all the stories of her home. I kept weaving my suggestive words into her speech. Beginning here and there, I finally told her of the desire Ulaganathar had for her. Kumudha said nothing. Without speaking, she went and lay down. After a while, all I could hear was the sound of Kumudha sobbing and sobbing. That night ended there.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The next morning, in the backyard garden, Kumudha was talking with her father. I feared the little one might escape. “Kumudha! Kumudha!” I called sharply. She came running. I did not fail to see her wipe her eyes without wanting me to notice. If it was so that I might get Veeran back again, what did it matter what I did to Kumudha? Was I responsible for the blame and sin that came to me? In a world where there is a law that “nothing happens as one intends” and a certainty that “not an atom moves without Him,” was I not an innocent woman! With that courage I mixed poison into Kumudha's good life. My body did not tremble while I did it. It was on the very night after Kumudha had met Uthandi in the garden that I carried out that plot. In your language it may be a “plot.” But that very act was the great revolution that turned my fate into a blaze! What if I killed Kumudha for my own selfish interest?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 19,
+        "printedPage": 18
+       },
+       {
+        "scan": 31,
+        "printedPage": 30
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. The canonical Tamil page records remain authoritative. The English preserves the work's source-printed character accounts, rhetoric, colloquial language and historical-period vocabulary without silently modernising the Tamil. The canonical pages remain under the project's separate verification freeze."
+     }
+    ]
+   }
+  },
+  {
+   "order": 4,
+   "slug": "kumudha",
+   "titleTa": "குமுதா",
+   "titleEn": "Kumudha",
+   "sourceScansTa": "32-37",
+   "sourceScansEn": "32-37",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": true,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": "4",
+   "unitNumberEn": "4",
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "குமுதா",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வேண்டுமானால் என்னைக் கொலை செய்திருக்கலாம். சந்தோஷத்தோடு செத்திருப்பேன். ஆறிலும் சாவுதான், நூறிலும் சாவுதான். ஆனால், எனக்கு வாழ்க்கையிலே ஆசை ஏற்பட்ட பிறகு சாகத் துணிவது சாமான்யமாகத் தோன்றாமல்தான் இருந்தது. கண்ணம்மா செய்த வேலை என்னை ஒரு வீராங்கனையாக்கிவிட்டது. சாவோடு விளையாடத் தயாராகி விட்டேன். “ஏன் இந்த முடிவுக்கு வந்தாள் குமுதா?” என்று நீங்கள் சந்தேகப்படுவீர்கள். முதலில் என்னைப் பற்றிய குறிப்பைப் படியுங்கள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "நான் உத்தண்டியின் மகள். குழந்தையாக இருக்கும் பொழுதே தாயார் இறந்துவிட்டாள். என் குலத்திலே இல்லாத வழக்கமாக எனக்கு ஐந்தாவது வகுப்பு வரையில் கல்வி கற்றுக் கொடுக்கப்பட்டது. அந்த ஆரம்பப் படிப்பை வைத்துக்கொண்டுதான் இந்தக் கடிதத்தை எழுதுகிறேன். ஆனால் எனக்கு ஒரு வருத்தம். இந்தக் கடிதத்தை என் அத்தான் படிக்காவிட்டாலும் யார் கையிலாவது அகப்பட்டு நான் குற்றமற்ற நிரபராதி என்பது ருசுவாகி விட்டால் போதும். உலகத்திலே ஒருவராவது ‘குமுதா குற்றமில்லாத பெண்’ என்று கூறமாட்டார்களா?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "நான் படித்த பெண்தான். படித்திருந்தாலும் படிந்த மனப்பான்மை உள்ளவள். நாகரிகத்தின் நாசக் வேலைகளால் உள்ளத்தைக் குரங்கைப்போல ஆக்கிக் கொண்ட பெண்களின் இனத்தைச் சேர்ந்தவள் நானல்ல என்பதை நீங்கள் கட்டாயம் நம்பவேண்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இந்த உலகத்திலே எத்தனையோ குமரிகள் தங்கள் வாழ்க்கையைத் தாங்களாகவே வீணாக்கிக் கொள்கிறார்கள். எனக்கு ஏற்பட்ட நிலைமை நானாகத் தேடிக் கொண்டதல்ல.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வீரன் என் அத்தை மகன். அத்தான் பிடிக்காத ஆள். ஆனால், என் வாழ்க்கைத் துணைவராக இருப்பதற்கு லாயக்குள்ளவர். அவரோடு ஆனந்தமாகக் காலத்தைக் கடத்தலாம் என்று நம்பினேன். நான் நினைத்ததிலே தவறில்லை. நம்பியதுதான் முட்டாள் தனமாகிவிட்டது. என் தகப்பனார் என்னை வீரனுக்கு மணமுடிப்பதாகக் கூறிய பின்னரே நான் அவரோடு பழக ஆரம்பித்தேன். அதுவரை என் சிந்தனையில் எந்த தூர் எண்ணங்களும் இடம் பெறவில்லை. அத்தானுடைய அழகுகளைப் பற்றி நான் கூறவே தேவையில்லை. அவருக்கு நான் அடிமையாகி விட்டேன் என்றால், அந்த ஒரு வார்த்தை போதாதா? அத்தான் என் மேல் வைத்த ஆசை மாறக்கூடாதே என்பதற்கு வேண்டுமானால் நான் என்னைச் சிங்காரித்துக் கொள்வதுண்டு. வைர ஜோடிப்புகளா எனக்கு இருந்தது? கொல்லையில் கிடைக்கும் முல்லையும், தோட்டத்துத் தாழம்பூவுமே எனக்கு ஆபரணங்கள். கண்ணாடி வளையல்களைத்தான் என் கைகள் அறியும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எப்படியோ நானும் அத்தானும் ஒன்றுபட்டு விட்டோம். அவர் என்னை உண்மையாகவே காதலித்தார். அவருக்குக் காதல் என்றால் இன்னதென்று தெரியுமோ தெரியாதோ! என்னை அடிமையாக்கிக் கொள்ள மட்டும் அவரிடம் ஒரு சக்தி இருந்தது. சதா என் இருதயப் பீடத்திலே அத்தானை அமரவைத்துப் பூஜித்துக்கொண்டிருந்தேன். அந்த இடத்திலே யாரும் எட்டிப் பார்க்கவும் முடியாது. அப்படி இருந்த அதே குமுதாதான் வெட்க மில்லாமல் இந்தக் கடிதத்தை எழுதுகிறாள். நான் கடிதமா எழுதுகிறேன். இல்லை கத்துகிறேன்! கடிதமா இது! இல்லை, கண்ணீர்த் தேக்கம்! எழுத்துக்களா இவைகள்! இல்லை, இதயத்தைப் பொத்துக்கொண்டு பீறிட்டுக் கிளம்பிய இரத்தத் துளிகள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அன்றிரவு........அய்யோ.........அதை நினைத்தாலே குலை நடுங்குகிறதே! என் தகப்பன் ஆசையைக் கெடுக்காமல் உலகநாதர் வீட்டுக்கு வேலைக்காரியாகச் சென்றேன். கண்ணம்மா என்னை அவருக்கு வெள்ளாட்டியாக்க முயன்றாள். ஒருநாள் இரவு அந்தப் பேச்சை எடுத்தாள். புருஷனுக்குப் பெண் தேடும் அவசியம் அவளுக்கு ஏன் ஏற்பட்டதோ எனக்குத் தெரியாது. என்னென்னவோ தளுக்குமொழிகள் பேசினாள். நாசுக்காக என்னை நடத்தினாள். வெட்டப்போகிற கிடாவுக்கு மஞ்சள் தெளித்து மாலை போடுகிறாள் என்பதை நான் முதலில் புரிந்துகொள்ளவில்லை. விஷயத்தை உணர்ந்து விம்மினேன். வீரனிடம் அதைச் சொல்லித் தப்பித்துக் கொள்ள திட்டம் போட்டேன். வீரனைக் காணவே இல்லை. அப்பா வந்தார். அவரிடம் விஷயத்தை முழுவதும் சொல்ல முடியவில்லை. அதற்குள் எஜமானி கண்ணம்மா கூப்பிட்டுவிட்டாள்; காரியம் மிஞ்சி விட்டது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அன்றிரவு மணி பத்து இருக்கும். உலகநாதர் ஊரில் இல்லை என்று கண்ணம்மாள் சொன்னாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எனக்குச் சற்று நிம்மதியாக இருந்தது. காலையில் எப்படியாவது என் வீட்டுக்கு ஓடிவிடலாமென்று தீர்மானித்துச் சந்தோஷப்பட்டேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கண்ணம்மா அப்பொழுது எனக்கு ஒரு கட்டளையிட்டாள். சாதாரண வேலையுதான்; அதுதான் சதியாக முடிந்தது. புலியின் அகண்ட வாய்க்குள்ளே ஒரு பிள்ளையைத் தவழ்ந்து செல்லும்படி ஆணை பிறந்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“வெள்ளிக்கோப்பை அந்த அறையிலே இருக்கிறது. அதை எடுத்துவா குமுதா!” என்றுதான் கண்ணம்மா கூறினாள். நான் அதை எடுத்துவர அறையில் நுழைந்தேன். திடீரெனக் கதவுகள் மூடிக்கொண்டன. திரும்பிப் பார்த்தேன்; உலகநாதர் நின்றார்; நின்றது மட்டுமல்ல; கலகலவெனச் சிரித்தார். “தோற்றாய் குமுதா, தோற்றாய்” என்று ஒரு பிசாசு அலறுவது போல் இருந்தது. என் நிலைமை தவறிவிட்டது. உலகமே கிறுகிறுவெனச் சுழன்றது. ஆகாய வெளியில் ஒரு பயங்கரச் சப்தம் கேட்டதுபோல் தெரிந்தது. பல மின்னல்கள்! இடி முழக்கங்கள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அதற்குப் பிறகு என்ன நடந்தது என்றே எனக்குத் தெரியாது. கண்ணை விழித்துப் பார்த்தேன். கட்டிலில் படுத்திருப்பதாக உணர்ந்தேன். அருகில் உலகநாதர் சயனித்திருந்தார். ஏதோ சூரிய மண்டலத்தையே சுற்றி வந்துவிட்டவர் போலச் சிரித்தார்; என்னென்னவோ பேசினார். எதுவும் என் காதில் விழவில்லை. காமாந்தகாரப் பூதத்தின் இரத்தந் தோய்ந்த நகங்களால் என் இதயம் கிழிக்கப்பட்டு விட்டது. அதனுடைய கடைவாய்ப் பற்களின் கூர்மை என்னைப் பிளந்தெறிந்தது. நான் இப்பொழுது ஒரு வேசி! விபசாரி! குமுதாவின் உடலில் ஒருவன் ருசிபார்த்து விட்டான். என் உள்ளத்தை அந்த உன்மத்தன் அடிமைப்படுத்தவில்லை; அதற்காக நான் பரிசுத்த மனுஷி என்று பறை சாற்றிக்கொள்ள முடியுமா?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இராமாயணத்திலே சீதை, “ராமப்ரபு! இராவணன் என் உடலில் தீண்டினானே தவிர உள்ளத்தைத் தீண்டவில்லை” என்று கூறி தப்பித்துக் கொண்டாளாம். அதுபோல நான் வீரனிடம் நல்ல பெயர் வாங்க நினைக்கவில்லை. இன்னொருவன் தொட்ட குமுதாவைக் கபடமற்ற வீரன் தொடுவதா? அன்னியனுடைய எச்சில் அத்தானுக்கு வழங்குவதா? பக்கத்திலே இருந்தான்; பார்த்தேன். வெற்றிச்சிரிப்பு சிரித்தான்; நான் வெகுளவில்லை. அணைத்தான்; அடங்கி விட்டேன். பலாத்காரச் செயல்தான்! தடுக்கும் தைரியம் எனக்கு வரவே இல்லை. “என்னடி குமுதா! உன்னை மீறியா ஒன்று நடந்துவிடும்?” என்று கேட்பீர்கள்; உண்மைதான். ஆனால், நடந்துவிட்டதே, என்ன செய்வேன்?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "புளிப்புக் கலந்த பாலாகி விட்டேன்; விஷங்கலந்த உணவாகி விட்டேன். ஆனால் நான் விபசாரியாக வாழ நினைக்கவில்லையே! அதற்காக நீங்கள் இரங்கலாகாதா? என்னை மன்னிக்கக் கூடாதா? என் கடிதத்தை மறு முறையும் படித்துப் பாருங்கள். கண்ணம்மா என்னை வஞ்சித்தாள்! ‘பெரிய இடத்துப் பெண்மணி’ இந்த வேலை செய்தாள்; செல்வர் வீட்டுச் சீமாட்டி சதி புரிந்தாள், தன் கணவனைத் தாசி வீட்டுக்குத் தூக்கிச் சென்றதாக நான் நளாயினி கதை படித்ததுண்டு. இந்தக் கலியுக நளாயினி என்னையே அவள் கணவனுக்குக் காணிக்கை யாக்குவாள் என்று நான் கருதவில்லை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இனி இந்த விபசாரிக்கு என் வாழ்வு! வைர நகை போட்டறியாத குமுதா வைரத்தையே பொடி செய்து சாப்பிட்டு விட்டாள். ஆம், எஜமானியம்மாளின் வைர மூக்குத்தியைத் தூள் செய்து சாப்பிட்டுவிட்டேன். எந்த எஜமானி என்னை அவளது கணவனின் கட்டிலறைக்கு அனுப்பினாளோ, அதே எஜமானியின் மூக்குத்தி என்னைக் கைலாசத்திற்கு அனுப்பட்டும்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அத்தான்! என்னை மன்னித்து விடுங்கள். குமுதா அழுக்குப்பட்டவள்; களங்க மடைந்தாள். அவளை மறந்து விடுங்கள்!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மனித சமூகமே! நீ இனிமேலாவது உலகநாதர்களை உற்பத்தி செய்யாமல் இருக்கமாட்டாயா! கண்ணம்மாக்களைக் காசினிக்கு அனுப்பாமல் இருக்கமாட்டாயா? அந்த வேண்டுகோளின்மீது என் உயிரை உனக்கு அர்ப்பணிக்கிறேன். என் உடலை மண்ணுக்குகிறேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அத்தான்! அத்தான்!!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இப்படிக்கு",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இறக்கப் போகும்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Kumudha",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "They could have killed me if they wished. I would have died happily. Death at six, death at a hundred—death is death. But after desire for life had arisen in me, finding the courage to die no longer seemed an ordinary thing. What Kannamma did turned me into a woman of courage. I became ready to play with death. You will wonder, “Why did Kumudha come to this decision?” First read this account of me.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I am Uthandi's daughter. My mother died when I was still a child. In a way not customary in my community, I was educated up to the fifth standard. It is with that elementary education that I am writing this letter. But I have one sorrow. Even if my Aththan does not read this letter, let it fall into someone's hands and let it establish that I am innocent and without guilt. Will there not be at least one person in the world who will say, “Kumudha was a blameless woman”?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I am an educated woman. Yet, though educated, I am a woman of deeply ingrained ways. You must believe that I am not one of those women whose minds have been turned into monkeys by the destructive works of “civilisation.”",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 32,
+        "printedPage": 31
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "So many maidens in this world ruin their own lives by their own doing. The condition that befell me was not something I sought out for myself.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Veeran is my aunt's son. Aththan was not a man I disliked. He was fit to be my companion in life. I believed I could pass my days happily with him. There was no mistake in what I thought. It was trusting him that turned out to be foolish. Only after my father said he would give me in marriage to Veeran did I begin to associate with him. Until then no improper thoughts had entered my mind. I need not speak of Aththan's charms. If I say that I had become his slave, is that one word not enough? If only to make sure Aththan's desire for me did not change, I would sometimes adorn myself. Did I have diamond ornaments? The jasmine growing in the backyard and the thazhampoo from the garden were my ornaments. My hands knew only glass bangles.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Somehow Aththan and I became one. He truly loved me. Whether he knew what love was or not, I do not know! But he had the power to enslave me. Always I had seated Aththan upon the altar of my heart and worshipped him. No one could even look into that place. It is that same Kumudha who now shamelessly writes this letter. Am I writing a letter? No, I am screaming! Is this a letter? No, a reservoir of tears! Are these letters of the alphabet? No, drops of blood bursting out after breaking open my heart!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "That night........ Ayyo......... even thinking of it makes my body tremble! So as not to spoil my father's wish, I went to Ulaganathar's house as a maid. Kannamma tried to make me a sacrificial goat for him. One night she brought up that subject. I do not know why she felt the need to find a woman for her husband. She spoke all manner of coaxing words. She treated me with studied delicacy. At first I did not understand that she was sprinkling turmeric and garlanding the goat that was about to be slaughtered. When I understood the matter, I sobbed. I planned to tell Veeran and escape. I could not find Veeran at all. Appa came. I could not tell him the whole matter. Before I could, the lady of the house, Kannamma, called me; the moment had passed.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It must have been ten that night. Kannammal said Ulaganathar was not in town.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 33,
+        "printedPage": 32
+       },
+       {
+        "scan": 34,
+        "printedPage": 33
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I felt a little relieved. I decided that somehow, in the morning, I would run back to my own house, and I was happy.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Kannamma then gave me an order. It was an ordinary task; that was what ended as the plot. An order had been issued for a child to crawl into the wide-open jaws of a tiger.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“The silver cup is in that room. Bring it, Kumudha!” was all Kannamma said. I entered the room to fetch it. Suddenly the doors closed. I turned around; Ulaganathar stood there. He did not merely stand; he laughed loudly. It sounded as though a demon were shrieking, “You have lost, Kumudha, you have lost.” My state collapsed. The whole world spun round and round. It seemed as if a terrible sound rang through the open sky. Many flashes of lightning! Roars of thunder!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I do not know what happened after that. I opened my eyes and looked around. I realised I was lying on a bed. Ulaganathar lay beside me. He smiled as though he had just gone around the very orbit of the sun; he said all kinds of things. None of it reached my ears. The blood-soaked claws of a demon of lust-darkness had torn my heart apart. The sharpness of its back teeth had split me open. I was now a whore! An adulteress! A man had tasted Kumudha's body. That madman had not enslaved my inner self; but could I therefore proclaim myself a pure woman?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "In the Ramayana, they say Sita escaped by saying, “Rama Prabhu! Ravana touched only my body; he did not touch my heart.” I did not think of winning a good name from Veeran that way. Should the guileless Veeran touch the Kumudha whom another man had touched? Should I offer Aththan another man's leftovers? He was beside me; I looked. He smiled a smile of victory; I did not rage. He embraced me; I submitted. It was an act of force, a violation! I had no courage at all to resist. You will ask, “What, Kumudha! Could anything happen against your will?” It is true. But it happened—what can I do?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I had become milk mixed with sourness; food mixed with poison. But I did not intend to live as an adulteress! Can you not pity me for that? Can you not forgive me? Read my letter once again. Kannamma deceived me! The “woman of the great house” did this; the lady of a wealthy house plotted it. I had read the story of Nalayini, who carried her husband to a courtesan's house. I never imagined that this Kali-age Nalayini would make me an offering to her own husband.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "What life is left now for this adulteress! Kumudha, who had never worn a diamond jewel, ground a diamond itself into powder and ate it. Yes, I crushed the diamond from the lady of the house's nose-stud and swallowed it. Let the nose-stud of the very lady who sent me to her husband's bedchamber send me to Kailasa.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Aththan! Forgive me. Kumudha has become soiled; she has been stained. Forget her!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Human society! Will you not, at least from now on, stop producing Ulaganathars! Will you not stop sending Kannammas into the world? On that plea, I offer my life to you. I give my body to the earth.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Aththan! Aththan!!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Yours,",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The one who is about to die,",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Kumudha",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 37,
+        "printedPage": null
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. The canonical Tamil page records remain authoritative. The English preserves the work's source-printed character accounts, rhetoric, colloquial language and historical-period vocabulary without silently modernising the Tamil. The canonical pages remain under the project's separate verification freeze."
+     }
+    ]
+   }
+  },
+  {
+   "order": 5,
+   "slug": "veeran",
+   "titleTa": "வீரன்",
+   "titleEn": "Veeran",
+   "sourceScansTa": "38-44",
+   "sourceScansEn": "38-44",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": true,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": "5",
+   "unitNumberEn": "5",
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "வீரன்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "அத்தான்! அத்தான்! என்ன வேண்டியிருக்கு. அத்தான்! அந்தப் பாதகி என்னை அப்படியா வஞ்சிப்பது? படிக்காத முட்டாள்தானே என்று எண்ணமா அவளுக்கு! குழந்தையிலிருந்து குமுதா என்றால் எனக்கு அலாதிப் பிரியம். அவளும் அப்படித்தான்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“அப்படிப்பட்ட குமுதாவை எண்டா வீரா பாதகி என்று கூறுகிறாய்?” என்று நீங்கள் கேட்பது சகஜம். அதற்குமுன் என் வரலாற்றைக் கேளுங்கள். என் வரலாறு வேடிக்கையானது. வண்டி போகும் பாதையைப்போல வளைவுகள் நிரம்பியது. மேடுபள்ளங்கள், குண்டு குழிகள் ஏராளம்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உத்தண்டி மாமா உலகநாதர் பண்ணைத் தலையாரி, அவருடைய மகள்தான் குமுதம். குமுதத்தை எனக்குக் கட்டிக்கொடுப்பதாக உத்தண்டி மாமா உறுதி கூறியிருந்தார். நான் குமுதாவைக் கல்யாணம் செய்து கொள்வதாக இருந்தால் ஏதாவது சம்பாதிக்கும் வழியைத் தேட வேண்டாமா என்று யோசித்தேன். அதற்காக என் உத்தண்டி மாமா சிபாரிசு செய்தார். உலகநாதர் வீட்டு வண்டிக்காரனாக அமர்ந்தேன். வண்டிக்கார உத்தியோகத்திற்கு ஊதியம் மாதம் ரூபாய் ஐந்து. உலகநாதர் வீட்டிலேயே சாப்பாடு. வண்டிக்காரனுக்கு வாய்க்காத சுகம் வலுவில் வந்தது. அடிக்கடி எஜமானர் ஊருக்குப் போவார். எஜமானர் ஊருக்குப் போய்விட்டால் கண்ணம்மா எனக்குச் செய்யும் உபசாரங்கள் பலமாயிருக்கும். வெகுநாள் வரையில் எனக்கு அது ஏன் என்று புரியவில்லை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஒருநாள் கண்ணம்மா, உலகநாதருக்கு வீட்டைப் பற்றிய கவலையே இல்லை என்று குறைப்படலம் ஆரம்பித்தாள். “ஆமாங்க அண்ணி” என்று நான் தலையசைத்தேன். இன்னொருநாள், “உலகநாதர் நடத்தையே சரியில்லை வீரா!” என்று கண்ணம்மா கூறினாள். அதற்கும் ஆமாம் போட்டுவிட்டு நகர்ந்தேன். “உட்காரு வீரா! அவரும் ஊரிலில்லை. ஏதாவது ஊர்க் கதை இருந்தால் சொல்லு!” என்று வற்புறுத்தினாள். இரவு பத்து மணி வரையில் என்னென்னவோ வம்பளந்தாள். பிறகு வீட்டுக்குத் திரும்பிவிட்டேன். எனக்கு வீடு எது? மாமன் வீட்டுத் திண்ணையில்தான் படுக்கை.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மற்றொருநாள், “உலகநாதரைக் கண்டாலே எனக்குப் பிடிக்கிறதில்லை. சுத்த அசடு!” என்று கண்ணம்மா கதையைத் துவக்கினாள். நானும் உட்கார்ந்து கதையைக் கேட்டுக்கொண்டிருந்தேன். “உலகநாதரோடு வாழ்க்கை நடத்துவதே கசப்பாக இருக்கிறது” என்று முடித்தாள். “எல்லாம் சரியாகிவிடும் அம்மா” என்று சொல்லிவிட்டு எழுந்தேன். “என்னப்பா அவசரம்!” என்று என் துண்டைப் பிடித்து இழுத்தாள் கண்ணம்மா. எனக்குத் தூக்கிவாரிப் போட்டது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "பெரிய இடத்துப் பெண்ணுடன், அதுவும் இளம் வயதுள்ள பெண்ணுடன்; உட்கார்ந்து பேசிக்கொண்டிருப்பதே எனக்குப் பயத்தைக் கொடுத்து வந்தது. நிலைமை இப்படி விபரீதமாகிவிட்ட பிறகு என்னால் என்ன செய்ய முடியும்? “விடுங்கள் அம்மா” என்று கூற வாயைத் திறந்தேன். வாயில் நீரில்லை; வற்றிவிட்டது. நாக்கை அசைக்கவும் முடியவில்லை. ஈரமில்லாத தொண்டைக் குழியில் ஏதோ ஒரு தொந்தரவு ஏற்பட்டதுபோல் இருந்தது. அதற்குள் நான் மெய்மறந்துவிட்டேன். கண்ணம்மாவின் கரங்கள் என் தலையைக் கோதிக்கொண்டிருந்தன. என் ‘முண்டாசு’ அவிழ்ந்து விழுந்து விட்டதையும் அப்பொழுதுதான் பார்த்தேன். ஒரு நல்ல இடத்து ஸ்திரீ இவ்வளவு கேவலமாகப் போய்விட்டாளே என்ற ஆச்சரியத்தால் என் இருதயம் வாயு வேகத்தில் அடித்துக்கொண்டிருந்தது. உலகநாதர் பண்ணையைப் பற்றி ஊரிலே எவ்வளவு புகழ்! அந்த வீட்டு அம்மாள் சாதாரண ஒரு கூலிக்காரனுக்கு ஆசை நாயகியாக ஆவதென்றால் எவ்வளவு மட்டரகமான தன்மை என்பதை முதலில் சிந்தித்தேன். சிந்தனை நீண்டநேரம் நிற்கவில்லை. சிசுப் பருவத்திலேயே சிதைந்துவிட்டது. எஜமானி யம்மாளுக்கு விரோதமாக நடக்கவோ, விருப்பத்தை மறுக்கவோ எனக்கு மனம் வரவில்லை. தாட்சண்யத்திற்காகத் தலையசைத்துவிட்டேன். குமுதாவின் மேலிருந்த அன்பைக்கூட கொஞ்சநாள் ஒத்திப்போட்டிருந்தேன். எனக்கும் கண்ணம்மாவுக்கும்—பிறகு கேட்கவேண்டியதில்லை. உலகநாதரைவிட என் பதவி ஒருபடி உயர்ந்ததாக மாறிவிட்டது. காலம் போனதே தெரியவில்லை. மகாராணியின் அன்பை ஒரு குதிரைக்காரன் பெற்றதாக ‘ராஜாபர்த்ருஹரி’ கதையிலே பார்த்திருக்கிறேன். அவனுக்கும் எனக்கும் என்ன வித்தியாசம்? உண்மையாகவே உலகநாதருக்கும் கண்ணம்மாவுக்குந்தான் பொருத்த வித்தியாசம். வண்டியிலே ‘சண்டி’ மாட்டையும், ‘ஜாதி’ மாட்டையும் ஒன்றுக்குக் கட்டி ஓட்ட முடியுமா? எப்படியோ கண்ணம்மாவுக்கு நான் தேவையான பொருளாகிவிட்டேன். அவள் எனது பாதங்களில் விழுந்து கிடந்தாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஒருநாள் கண்ணம்மா என்னிடம் ஒரு துண்டுக் காகிதத்தைக் கொடுத்தாள். அதில் என்ன எழுதியிருக்கிறது என்று அவளை நான் கேட்டேன். “ஒரு மருந்து” என்றாள். அதோடு நிற்கவில்லை; “எல்லாம் உன்னால்தான்” என்று கூறி உடம்பை லாகவமாக அசைத்தாள். “புரியவில்லையே” என்று சொல்லி நான் விழித்தேன். பிறகு விவரத்தைச் சொன்னாள். கார்க்குச்சியால் உடம்பில் ‘சுவீர்’ என்று குத்தியதுபோல் இருந்தது எனக்கு. அவளுக்குக் குழந்தை பிறந்தால் என்னைப் போலப் பிறந்துவிடும் என்ற பயம். இங்கிலீஷ் மருந்துக்கடையில் நான் அந்த மருந்தை வாங்கிவந்தேன். அதைக் கொடுக்கும்போது கடைக்காரர் என்னை வெறித்துப் பார்த்தார். நான் திரும்பிப் பார்க்காமலே வந்துவிட்டேன். கண்ணம்மா அதை சாப்பிட்டாள். கர்ப்பத்தைக் கருவோடு தொலைத்துவிட்டோம்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "இருந்தாற்போலிருந்து என் மனதில் ஏதோ ஒரு புயல் வீச ஆரம்பித்தது. வாழ்க்கை வண்டி பெரிய தொரு பள்ளத்தில் சிக்கிக் கவிழ்வதுபோல் தெரிந்தது. கண்ணம்மாவினையும் என்னையும் பற்றி ஊரில் ஏதேதோ பேசிக்கொள்வதாகக் காதில் விழுந்தது. பிறகு கண்ணம்மாவுடன் பேசுவதை நிறுத்திவிட்டேன். அவள் நிமிர்ந்து பார்ப்பதுகூடக் கிடையாது.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எனது ஆசைகள் எல்லாம் குமுதாவிடம் திரும்பின— குமுதாவைக் கல்யாணம் செய்துகொள்ளும் நாளை எதிர்பார்த்துக் கிடந்தேன். தை மாதத்தில் கல்யாணத்தை முடிக்கப் போவதாக உத்தண்டி மாமா கூறினார்; எனக்கு அடக்க முடியாத ஆனந்தம்! நான் குமுதாவை மனப்பூர்வமாக நம்பினேன். என்னை ஏமாற்றமாட்டாளென்று எண்ணிக்கிடந்தேன். ஆனால், இலவு காத்த கிளியாக ஆகிவிட்டேன். குமுதா உலகநாதர் வீட்டுக்கு வேலைக்காரியாகப் போனாள். போகும்போதுகூட நானும் அவளும் வெகுநேரம் பேசிக்கொண்டிருந்தோம். அடிக்கடி தன்னைச் சந்திக்கும்படி கூறினாள். இரண்டு சொட்டுக் கண்ணீர்கூட விட்டாள். எல்லாம் பசப்பு என்பது எனக்கு அப்போது புரியவில்லை. நான் அவளை நம்பி எஜமானியையே புறக்கணித்து வந்தேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஆனால்....அன்றிரவு.........அடாடா.... அதை நினைத்தாலே இரத்தங் கொதிக்கிறது. வண்டி மாடுகளுக்குத் தீனி வைத்துவிட்டு வீட்டுக்குப் புறப்பட்டுக் கொண்டிருந்தேன். கண்ணம்மா ஓடிவந்தாள். என்னைப் பரபர வென்று இழுத்துக்கொண்டு வீட்டுக்குள் போனாள். எனக்கு ஒன்றுமே தோன்றவில்லை. திமிர்க்கொண்டு போகவும் முடியவில்லை. என்ன இருந்தாலும் பழைய கண்ணம்மா தானே! வீட்டின் தாழ்வாரத்திலுள்ள அறைப் பக்கம் இழுத்துச் சென்றாள். அறையின் ஜன்னலிலுள்ள துவாரத்தின் வழியாக என்னை உள்ளே பார்க்கச் சொன்னாள். பார்த்தேன். அதைப் பார்த்த போது என் மனம் பட்ட பாட்டை எப்படி வர்ணிக்க முடியும்? கண்ணம்மா மட்டும் என்னை உடனே இழுத்துக்கொண்டுபோய் விடாவிட்டால் அந்த அறை தூள் தூளாகியிருக்கும். குமுதா என் கையால் இறந்திருப்பாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“உன் ஆசைக் காதலி குமுதாவின் போக்கியதைப் பார்த்தாயா?” என்று கேட்டாள் கண்ணம்மா!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "நான் என்ன சொல்லுவது! குனிந்த தலை நிமிரவில்லை. என் உடல் சூடேறிப் போய்விட்டது. கண்ணம்மா மட்டும் என்னை அவளுடைய அறைக்கு அழைத்துச் சென்றிராவிட்டால் இரத்தக் கொதிப்பால் மாண்டிருப்பேன். என்னிடம் உயிரை வைத்திருப்பதாகக் கூறிக்கொண்டு இருந்த குமுதா உலகநாதருடன் உல்லாசமாயிருப்பதை என் கண்களால் கண்டேன். சத்தியமாகச் சொல்கிறேன்; குமுதா ஒரு விபசாரி!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "எந்தக் கண்கள் குமுதாவைக் கனிவோடு பார்த்தனவோ! அந்தக் கண்கள் இரத்த நிறமாக மாறிவிட்டன. எந்தக் கரங்கள் அவளது மேனியைத் தொட்டுத் துடித்தனவோ! அந்தக் கரங்களே அவளை ஒடித் தெரியத் துடித்தன.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "கண்ணம்மாவின் சமாதானத்தில் அடங்கினேன். கண்ணம்மாவுக்கு என் வாழ்க்கையைப்பற்றி இருக்கும் அக்கறை அந்தக் குமுதாவுக்கு இல்லையே! இல்லாவிட்டாலும் பரவாயில்லை. என்னை இளிச்சவாயனாக ஆக்கிவிட்டாளே! இனிக் குமுதாவைவிட ஒரு வேசி உலகத்திலே பிறப்பாளா? பிறக்க முடியுமா? எனக்கு உயிரை அர்ப்பணிப்பேன் என்றாளே! உலகநாதருக்கு உடல் விற்றதை நான் நேரில் கண்டேனே! அதற்கு இனிச் சாட்சியா வேண்டும்?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "மறுநாள் காலையில் குமுதாவுக்குச் சரியான தண்டன் கிடைத்தது. அவள் செய்த குற்றத்தைக் கடவுள் பொறுப்பாரா? தெய்வமே சகிக்காத தவறை அல்லவா அவள் செய்தாள்! அதற்குத் தெய்வம் தந்த தண்டனை சரியான தண்டனை. குமுதாவுக்குக் காலரா கண்டுவிட்டது. வாந்தி பேதிக்கு இலக்கானாள். அந்த வஞ்சகி! கருப்பு மனம் படைத்த அந்தத் தாசியின் ஆபாச வாழ்க்கை அழிந்தது, என் சாபம் என்ன சாமான்யமானதா? ஏமாந்து போனவன் கொடுத்த சாபமல்லவா? கைவிடப்பட்ட வீரனின் கோபாக்கினிக்கு அந்தக் கொலைகாரி இரையாக வேண்டியதுதானே நியாயம்! அவள் சாகும்போது நான் அருகில்தான் இருந்தேன். என்னை இரண்டு மூன்று முறை பார்த்தாள். நான் அந்த இராக்ஷசியின் முகத்தில் விழிப்பதே பாபம் என்று கருதி அந்த இடத்தை விட்டுப் போய் விட்டேன். பொழுது போவதற்குள் குமுதா போய்விட்டாள்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "என்னைக் கல்யாணம் செய்துகொண்டு ஊர்வலம் போகப் போகிறதாகச் சொல்லி, அதிலே தனக்கு ஆசையிருப்பதாக நடித்த அந்த நாசக்காரி பாடையில் பவனி போனாள். அதைப் பார்த்து நான் மகிழ்ந்தேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "உத்தண்டி மாமா கதறினார். தெருவில் புரண்டார். பாவம், பெற்ற தோஷம்; புலம்பினார். அந்த விபசாரியை இவர் ஏன் பெற்றார்?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா இறந்துபோன அன்றிரவே நானும் கண்ணம்மாவும் ஒரு திட்டம் தயாரித்தோம். அதை அமுலுக்குக் கொண்டுவர அதுவே ஏற்ற நாளாயிற்று. அந்தத் திட்டந்தான் என்னை இவ்வளவு பெரிய அதிர்ஷ்டக்காரனாக ஆக்கிவிட்டது. இப்பொழுது என்னைப் பாருங்கள்! நான் வண்டிக்கார வீரனா?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Veeran",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Aththan! Aththan! What more is there to want? Aththan! Could that wicked woman deceive me like that? Did she think I was only an uneducated fool! From childhood I had a special affection for Kumudha. She was the same toward me.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "You will naturally ask, “Why, Veera, do you call such a Kumudha a wicked woman?” Before that, listen to my history. My history is a strange one. It is full of bends like the road a cart travels. There are plenty of rises and hollows, pits and ruts.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Uncle Uthandi was a talaiyari on Ulaganathar's estate; Kumudam was his daughter. Uncle Uthandi had promised to give Kumudam to me in marriage. I thought that if I was going to marry Kumudha, should I not find some way to earn a living? Uncle Uthandi recommended me for that. I took a job as the cartman in Ulaganathar's house. The cartman's job paid five rupees a month. Food was in Ulaganathar's house itself. Pleasures beyond a cartman's lot came thrust upon me. The master would often go out of town. Whenever the master was away, Kannamma's attentions to me would be many. For a long time I did not understand why.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 38,
+        "printedPage": 37
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "One day Kannamma began a whole chapter of complaint about how Ulaganathar had no concern for the house. “Yes, Anni,” I said, nodding. Another day Kannamma said, “Ulaganathar's conduct itself is not right, Veera!” I agreed to that too and moved away. “Sit down, Veera! He isn't in town either. If you have any village stories, tell me!” she insisted. Until ten at night she chattered about all sorts of gossip. Then I went back home. What home did I have? My bed was on my uncle's front veranda.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Another day Kannamma began the story by saying, “I cannot stand even the sight of Ulaganathar. A complete fool!” I too sat and listened. “Living with Ulaganathar itself has become bitter,” she concluded. “Everything will become all right, Amma,” I said and rose. “Why the hurry?” Kannamma said, catching hold of the cloth on my shoulder and pulling it. I was startled out of my wits.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Merely sitting and talking with a woman of a great house—and that too a young woman—had always frightened me. After the situation became this extreme, what could I do? I opened my mouth to say, “Let me go, Amma.” There was no moisture in my mouth; it had dried up. I could not even move my tongue. In my dry throat it felt as though some obstruction had arisen. Before I knew it, I lost awareness of myself. Kannamma's hands were stroking my head. Only then did I see that my **mundasu**, my headcloth, had come loose and fallen. My heart beat at the speed of wind in amazement that a woman of a respectable house could have fallen so low. What a reputation Ulaganathar's estate had in the village! At first I thought how degrading it was that the lady of that house should become the lover of an ordinary wage labourer. That thought did not last long. It was shattered in its infancy. I did not have the heart either to oppose the lady of the house or refuse her wish. Out of deference, I yielded. For a while I even set aside my love for Kumudha. After that, there is no need to ask about Kannamma and me. My position became one step higher than Ulaganathar's. I did not notice time passing. I had read in the story of **Rajabhartruhari** that a horseman won a queen's love. What difference was there between him and me? In truth, it was Ulaganathar and Kannamma who were mismatched. Can one yoke a “sandi” bullock and a “jati” bullock together to the same cart? Somehow I had become something Kannamma needed. She lay at my feet.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "One day Kannamma gave me a scrap of paper. I asked her what was written on it. “A medicine,” she said. She did not stop there; swaying her body lightly, she said, “It's all because of you.” “I don't understand,” I said, staring. Then she explained. It felt as though a **karkkuchi** had stabbed into my body with a “sveer.” She feared that if she had a child it might be born looking like me. I bought that medicine from an English medicine shop and brought it. When he gave it to me, the shopkeeper stared at me. I came away without looking back. Kannamma took it. We got rid of the pregnancy, root and all.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "All of a sudden, a storm began to blow in my mind. It seemed as though the cart of my life had become trapped in a great pit and overturned. I heard that people in the village were saying all kinds of things about Kannamma and me. After that I stopped speaking with Kannamma. I would not even look up at her.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "All my desires turned back to Kumudha—I waited for the day I would marry her. Uncle Uthandi said the marriage would be held in the month of Thai; I was unable to contain my joy. I trusted Kumudha with all my heart. I believed she would not deceive me. But I became like the parrot waiting for the ilavu fruit. Kumudha went to Ulaganathar's house as a maid. Even when she left, she and I spoke for a long time. She told me to meet her often. She even shed two drops of tears. At the time I did not understand that it was all pretence. Trusting her, I had been neglecting even the lady of the house.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "But.... that night......... Ah!.... My blood boils even when I think of it. I had fed the cart-bullocks and was about to leave for home. Kannamma came running. She dragged me hurriedly into the house. Nothing occurred to me. I could not even swagger away. Whatever else, was she not the old Kannamma! She pulled me toward a room off the veranda. Through an opening in the room's window she told me to look inside. I looked. How can I describe what happened to my mind when I saw it? If Kannamma had not immediately pulled me away, that room would have been smashed to pieces. Kumudha would have died by my hand.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 41,
+        "printedPage": 40
+       },
+       {
+        "scan": 42,
+        "printedPage": 41
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "“Did you see the conduct of your beloved Kumudha?” Kannamma asked!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "What could I say! My bowed head would not rise. My body burned hot. If Kannamma had not taken me to her room, I would have died from the boiling of my blood. With my own eyes I had seen Kumudha, who had said she had placed her life in me, enjoying herself with Ulaganathar. I swear: Kumudha is an adulteress!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Those eyes that had once looked tenderly at Kumudha had turned the colour of blood. Those hands that had trembled to touch her body now ached to tear her apart.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "I submitted to Kannamma's consoling words. Kannamma had concern for my life, while that Kumudha had none! Even if she had none, let it be. But she had made a fool of me! Could a worse whore than Kumudha ever be born in this world? Could one even be born? Had she not said she would offer her life to me! I had seen with my own eyes that she sold her body to Ulaganathar! What further witness was needed?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "The next morning Kumudha received the proper punishment. Would God tolerate the wrong she had done? Had she not committed a fault that even the divine could not bear! The punishment God gave was the proper punishment. Kumudha came down with cholera. She was struck by vomiting and diarrhoea. That deceiver! The obscene life of that black-hearted harlot came to an end. Was my curse an ordinary one? Was it not the curse of a man who had been deceived? Was it not right that that murderess should become prey to the fire of the abandoned Veeran's rage! I was near her when she was dying. She looked at me two or three times. I considered even looking into that demoness's face a sin and left the place. Before the day was out, Kumudha was gone.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "That destroyer who had said she wished to marry me and go in a wedding procession went instead in procession on a funeral bier. I rejoiced at the sight.",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Uncle Uthandi wailed. He rolled in the street. Poor man—the curse of having begotten her; he lamented. Why did he ever give birth to that adulteress?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "On the very night Kumudha died, Kannamma and I prepared a plan. That was the perfect day to put it into effect. That plan is what has made me so very fortunate now. Look at me now! Am I still Veeran the cartman?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": null
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. The canonical Tamil page records remain authoritative. The English preserves the work's source-printed character accounts, rhetoric, colloquial language and historical-period vocabulary without silently modernising the Tamil. The canonical pages remain under the project's separate verification freeze."
+     }
+    ]
+   }
+  },
+  {
+   "order": 6,
+   "slug": "ulaganathar",
+   "titleTa": "உலகநாதர்",
+   "titleEn": "Ulaganathar",
+   "sourceScansTa": "45",
+   "sourceScansEn": "45",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": true,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": "6",
+   "unitNumberEn": "6",
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "உலகநாதர்",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": 44
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "வண்டிக்காரவீரன்தான்! என் உப்பைத்தின்றவன்தான் இந்த வேலை செய்துவிட்டான். அவனைக் கோபித்துக்கொண்டு பயன் என்ன? எல்லாம் அந்தத் தடவை செய்த வேலை. கண்ணம்மா. என்னைக் கடவுளாகப் பாவிப்பதாகச் சொன்னாளே! அவளா இந்த வேலை செய்துவிட்டாள்? விபசாரி! வீரனுக்கும் கண்ணம்மாவுக்கும் எத்தனை நாள் தொடர்பு? ஒரு வேளை நான் குமுதாவைக் காதலித்தது அவளுக்குப் பிடிக்கவில்லையா? அதை என்னிடம் நேரில் சொல்லியிருக்கலாமே! நான் என்ன உலகத்திலே இல்லாத தவறு செய்துவிட்டேன்? ஊரார் மெச்ச வாழ்ந்த என் குடும்பத்தின் பரம்பரைப் புகழுக்கு இழுக்கு வந்து விட்டதே! அட கடவுளே!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": 44
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஒருவேளை என்னைவிட வீரன் அழகு என்பது கண்ணம்மாவின் எண்ணமா? விகாரமாயிருப்பதற்காக நான் என்ன செய்ய முடியும்? நான் அழகு இல்லாதவன்தான்; ஒத்துக் கொள்கிறேன். எனக்கு உணர்ச்சி இல்லை என்று யாராவது கூறமுடியுமா? கண்ணம்மா! உன்னை நம்பி இருந்தேனே! பெண் பிசாசே! பாம்பின் விஷத்தையும் நம்பலாம்; உன் பசப்பு வார்த்தையை நம்ப முடியாதபடி என்னை உனக்குப் பிடிக்கவில்லையானால் அப்பொழுதே என்னிடம் சொல்லி இருக்கலாமல்லவா கள்ளி! பாசமுள்ளவள்போல் நாடகம் ஆடியே, பத்திர காளி! உனக்குத் தெய்வம் நல்லது காட்டுமா?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": 44
+       }
+      ]
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Ulaganathar",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": 44
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "It was Veeran the cartman! The very man who ate my salt has done this. What use is there in being angry with him? It is all the result of what was done that time. Kannamma. She said she regarded me as a god! Was it she who did this? Adulteress! How long have Veeran and Kannamma been involved? Could it be that she did not like my loving Kumudha? She could have told me directly! What unprecedented wrong have I committed? The hereditary honour of my family, which had lived earning the village's praise, has been stained! Oh God!",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": 44
+       }
+      ]
+     },
+     {
+      "kind": "paragraph",
+      "text": "Could Kannamma think Veeran is more handsome than I am? What can I do about being ugly? I admit I am not handsome. Can anyone say I have no feelings? Kannamma! I trusted you! Woman-devil! One may even trust a snake's venom; your false words cannot be trusted. If you did not like me, could you not have told me then, you deceitful woman! You acted as though you were full of affection—Bhadrakali! Will God ever show you any good?",
+      "hasLineBreaks": false,
+      "sourcePages": [
+       {
+        "scan": 45,
+        "printedPage": 44
+       }
+      ]
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. Ulaganathar's accusations, wounded pride, self-justification and limited knowledge remain his viewpoint. They are not corrected inside this section using Kumudha's preceding testimony or Kannamma's later conclusion. Canonical Tamil remains authoritative and stays under the separate verification freeze."
+     }
+    ]
+   }
+  },
+  {
+   "order": 7,
+   "slug": "kannamma-conclusion",
+   "titleTa": "கண்ணம்மா — முடிவு",
+   "titleEn": "Kannamma",
+   "sourceScansTa": "46-49",
+   "sourceScansEn": "46-49",
+   "isEmbeddedSequence": false,
+   "titleIsPrintedHeading": false,
+   "carriesArchiveSectionLabel": false,
+   "unitNumberTa": "7",
+   "unitNumberEn": "7",
+   "tamil": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "கண்ணம்மா",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "தெய்வம் காட்டிய வழிப்படித்தான் நான் நடக்கிறேன். அகல்யை செய்ததைவிட நான் என்ன அதிக அக்கிரமம் செய்துவிட்டேன்? தாரை செய்ததைவிட நான் செய்த தவறு பெரிதா? அப்பேர்ப்பட்ட பார்வதியே பிரம்மாவிடம் ஏமாந்து விட்டாளே, உலகத்திலே நடக்கும் அத்தனை அக்கிரமங்களும் தெய்வங்கள் காட்டிய வழிகள் தானே.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "உலகநாதர் என்னைக் கோபித்துக் கொண்டிருப்பார். என்னைத் துரோகி என்று கூறுவார்; விபசாரி என்று சொல்வார், எது வேண்டுமானாலும் சொல்லிக்கொள்ளட்டுமே! நான் வருந்தலாகச் செய்யாத காரியத்தை இப்பொழுது என்ன புதிதாகச் செய்துவிட்டேன்? வீரனுடன் வெளியூருக்குப் புறப்பட்டு விட்டேன் வேண்டுமானால் புதிய காரியம் என்று சொல்லலாம். உலகநாதர் ஒழுங்காக நடந்து கொண்டாரா, நான் நடந்துகொள்ள? நான் ஒருத்தி இருக்கும்பொழுது இவருக்கு ஏன் குமுதா மேல் ஆசையும் மோகமும்?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "அவர்களுக்கு துரோகம் செய்ய நானா ஆள்? வீட்டிலேயே இருந்து கொண்டு உலகநாதருக்கு மனைவியாக நடித்துக்கொண்டு வீரன் விருந்தில் நாளைக் கடத்த நான் எண்ணியதுண்டு. அதை கெடுத்தது என் கணவர்தானே! கணவன் என்ற பொம்மையாகாவது அவர் இருந்திருக்கலாம். குமுதாவைக் கோரியதால் அந்தப் பதவியையும் இழந்து விட்டார், பாவம்! எனக்கு உலகநாதர் மேல் இரக்கம் எப்படிப் பிறக்கும்? பெண்ணினத்தைச் சேர்ந்த குமுதாவின் சாவுக்கே நான் தானே காரணமாயிருந்தேன்! குமுதாவை நான் அந்தப் பாடு படுத்தாவிட்டால் வீரனின் விருந்து கிடைக்குமா? குமுதா இறந்த காரணம் உங்களுக்குத் தெரியுமா?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "அன்றிரவு அவள் கற்பழிக்கப்பட்டாள். உலகநாதரின் வெறியின் முன் அவள் ஒரு பெட்டிப் பாம்பானாள். குமுதாவையும் வீரனையும் பிரிக்க நான் செய்த சூழ்ச்சியில் வெற்றி பெற்றேன். உலகநாதரும் குமுதாவும் ஒரே அறையில் இருந்ததை வீரன் பார்த்தான்—பார்க்கும்படி நான் செய்தேன். மறுநாள் காலையில் குமுதா வக்குப் பேதி கண்டது. காலரா என்று எல்லோரும் சொன்னார்கள். அவள் அவமானந் தாங்கமாட்டாது வைரத்தைத் தின்றுவிட்டாள் என்பது எனக்கும் அவளுக்குமே தெரியும். எனக்கு எப்படித் தெரியும் என்று கேட்டீர்கள். என் வைர மூக்குத்தி தூளாகப் பட்டுக் கிடந்தது; அதிலுள்ள வைரத்தைக் காணவில்லை, நான் அந்தச் செய்தியை அப்படியே மறைத்து விட்டேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா சாயங்காலம் இறந்துவிட்டாள். அப்பொழுதும் கல்மனங் கரையவில்லை. வீரன் குமுதா மேல் ஆத்திரமாக இருந்தானே தவிர, கொஞ்சங்கூடக் கவலைப்படவில்லை. அவனைக் கவலைப்பட நான் விட வேணா?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "வண்டிக் கொட்டகையில் ஒரு கடிதம் சொருகியிருந்தது. இது வீரனுக்குக் குமுதாவினால் எழுதப்பட்ட கடிதம். அதைக் கடிதம் என்று கூடச் சொல்லமுடியாது. குமுதாவின் வாழ்க்கைக் குறிப்பை அப்படியே தீட்டியிருந்தாள். பிறந்தது முதல், வைரத்தைச் சாப்பிட்டுச் சாகத் துணிந்தது வரை ஒன்றுவிடாமல் எழுதியிருந்தாள். அதை நான் எடுத்துப் படித்தேன். கிழித்து எறிந்ததோடு விடவில்லை. அடுப்பில் போட்டுச் சாம்பலாக்கி விட்டேன். வீரன் கண்ணில் அந்தக் கடிதம் அகப்பட்டிருந்தது, அதிலுள்ள விஷயத்தை அவன் அறிந்திருந்தால் என்னைச் சித்திரவதை செய்திருப்பான். ஆனால், இப்பொழுது நான்தான் என் சிரிப்பால் அவனைச் சித்திரவதை செய்கிறேன்.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "நானும் வீரனும் இப்பொழுது எங்கிருக்கிறோம் தெரியுமா? கல்கத்தாவில் நடக்கிறது எங்கள் வாழ்க்கை. குமுதா இறந்துபோன அன்று மாலையில் என் கணவர் கடை சம்பந்தமான வேலையில் எங்கேயோ போய்விட்டார். குமுதா இறந்துபோன கவலை வேறு அவருக்கு! அன்றிரவே நானும் வீரனும் வீட்டை விட்டுப் புறப்பட்டுவிட்டோம். நான் வரும்போது சுமார் பத்தாயிரம் ரூபாய் வரையில் எடுத்துக்கொண்டுதான் புறப்பட்டேன். இரவே எங்கள் கிராமத்துக்கு அருகிலுள்ள ரயிலடிக்கு வந்துவிட்டோம். ரயிலடிக்கு வீரன்தான் வண்டியோட்டி வந்தான். அதோடு அவன் வண்டியோட்டும் தொழிலுக்கு முற்றுப்புள்ளி வைக்கப்பட்டது. என்னுடைய வேசின் வாழ்வும் தொலைந்தது.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "அந்த நடு நிசியில் வீரன் வண்டியை வெகு வேகமாகத்தான் ஓட்டிச் சென்றான். நான் அவனது தோளில் சாய்ந்திருந்தேன். குமுதா இந்தப் பாழும் சமுதாயப் பலி பீடத்திலே தன் உயிரைத் தத்தம் செய்த அதே நாளில் நாங்கள் எங்கள் இன்ப யாத்திரையை நடத்தினோம். எங்களுக்கு என்ன கவலை வந்து கிடக்கிறது.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "வண்டி ஊரின் எல்லையைத் தாண்டிக்கொண்டிருந்தது. ஒரே இருள். அந்த இருளில் ஒரு பெரிய ஜோதி நிரந்தரமாக நின்று எரிந்துகொண்டிருந்தது. “அது என்ன வீரா?” என்று கேட்டேன். “குமுதாவின் பிணம் சுடுகாட்டில் எரிகிறது” என்று அலட்சியமாக அவன் பதில் சொன்னான். குமுதாவிடத்தில் அவனுக்கு எவ்வளவு அன்பு இருந்தது! நான்தான் அவனுக்கு மோட்ச சாம்ராஜ்யமாகி விட்டேனே! பாவம்!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "அத்தானுக்காகச் சுமந்துகொண்டிருந்த உடல் அழுக்குப்பட்டு விட்டது. அதைத் தீயில் குளிப்பாட்டிக் கொண்டிருந்தாள் குமுதா. குமுதா உலகத்திலிருந்து மட்டுமல்ல; அவள் நம்பியிருந்த அத்தானின் இதயத்திலிருந்தும் பிரிந்துவிட்டாள். பரிதாபத்திற்குரிய சிறுமி!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "எங்கள் வண்டி ‘கடகட’வென ரயில் நிலையத்தை நோக்கி ஓடிற்று; குமுதா எரிந்துகொண்டிருந்த இடத்தை விட்டு வெகு தூரம் போய்விட்டது",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஒரு நரியின் பயங்கரமான ஊளை சோகத்தின் உச்ச ஸ்தாயியை எட்டிற்று. இந்த உலகத்தில் குமுதாவுக்காக அந்த ஒரு ஜீவன்தான் அப்பொழுது அழுது போலும்!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "குமுதா கிடக்கிறாள்; இனி எங்களைப் பற்றிக் கேளுங்கள். நாங்கள் ஏறிய ரயில் கல்கத்தாவை நோக்கிக் கிளம்பிற்று.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "எங்கள் கல்கத்தா வாழ்க்கையைப்பற்றி ஒரு வார்த்தை! பக்தர்கள், சுத்த முடர்கள்; இந்திர லோகத்தைக் காண எங்கேயோ போகவேண்டு மென்னிருக்கலே, அசடுகள்! வந்து பார்க்கட்டும், கல்கத்தாவிலே எங்கள் வீடு இந்திர லோகமா யிருப்பதை! நான் இந்திராணி! வீரன் இந்திரன்! ரதியும் மன்மதனும் பாடங் கற்றுக் கொள்ள எங்களிடம் வரவேண்டும், தெரியுமா?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "ஸ்ரீமகள் அச்சகம், சென்னை-1",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     }
+    ]
+   },
+   "english": {
+    "blocks": [
+     {
+      "kind": "heading",
+      "level": 2,
+      "text": "Kannamma",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "I am only following the path shown by the gods. What greater wickedness have I committed than Ahalya did? Is what I did worse than what Tara did? Even a woman such as Parvati was deceived by Brahma; are not all the wrongs that happen in the world paths shown by the gods themselves?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Ulaganathar must be angry with me. He will call me a traitor; he will call me an adulteress—let him say whatever he likes! What new thing have I done now that I had not already done without remorse? If anything can be called new, it is that I have left town with Veeran. Did Ulaganathar conduct himself properly, that I should conduct myself properly? When I was there as his wife, why did he need desire and lust for Kumudha?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Am I the sort to betray him? I had once intended to remain in the house, pretend to be Ulaganathar's wife, and spend my days at Veeran's feast. It was my husband who ruined that arrangement! He might at least have remained a doll called a husband. By desiring Kumudha he lost even that position, poor man! How could I feel pity for Ulaganathar? I myself had been the cause of the death of Kumudha, a woman of my own sex!  If I had not put Kumudha through all that, would I have had Veeran's feast? Do you know why Kumudha died?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "That night she was raped. Before Ulaganathar's frenzy she became like a snake shut in a box. I succeeded in the scheme I had devised to separate Kumudha and Veeran. Veeran saw Ulaganathar and Kumudha in the same room—I made sure he saw them. The next morning Kumudha came down with *vakkup-bethi*. Everyone said it was cholera. Only she and I knew that, unable to bear the humiliation, she had swallowed the diamond. You ask how I knew. My diamond nose-stud was lying there ground to powder; the diamond in it was missing. I concealed that fact completely.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Kumudha died that evening. Even then my stone heart did not melt. Veeran was angry with Kumudha, but he did not grieve even a little. Would I let him grieve?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "A letter had been tucked into the cart shed. It was a letter written by Kumudha to Veeran. It could hardly be called merely a letter. She had set down the story of her life just as it was, leaving out nothing from her birth to her decision to swallow the diamond and die.  I took it and read it. I did not stop with tearing it up and throwing it away; I put it into the stove and burned it to ash. If that letter had fallen into Veeran's hands, and if he had learned what it contained, he would have tortured me. But now it is I who torture him with my smile.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Do you know where Veeran and I are now? We are living our life in Calcutta. On the evening Kumudha died, my husband had gone somewhere on business connected with the shop. Kumudha's death was another worry for him! That very night Veeran and I left the house. When I left I took nearly ten thousand rupees with me. That night itself we reached the railway station near our village. Veeran drove the cart there. With that, a full stop was put to his profession as a cartman. My life as a whore, too, was left behind.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "In the middle of that night Veeran drove the cart very fast. I leaned on his shoulder. On the very day Kumudha offered up her life on the sacrificial altar of this wretched society, we set out on our journey of pleasure. What worry had we to trouble us?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "The cart was crossing the boundary of the village. It was pitch dark. In that darkness a great flame burned steadily.  “What is that, Veera?” I asked. “Kumudha's corpse is burning in the cremation ground,” he answered indifferently. How much love he had once had for Kumudha! Had I not become his very empire of moksha? Poor man!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "The body she had borne for Aththan had been soiled. Kumudha was bathing it in fire. Kumudha had parted not only from the world, but also from the heart of the Aththan she had trusted. Poor girl!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Our cart rattled “kadakada” toward the railway station; it had gone far away from the place where Kumudha was burning.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "The terrifying howl of a jackal reached the highest pitch of sorrow. It seemed that, in this world, that one living creature alone was crying for Kumudha then!",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Kumudha lies there; now hear about us. The train we boarded set off toward Calcutta.",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "One word about our Calcutta life! Devotees are complete fools. Why think one must go somewhere to see Indra's realm, idiots! Let them come and see that our house in Calcutta is an Indra-world! I am Indrani! Veeran is Indra! Rati and Manmatha should come to us for lessons, you know?",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     },
+     {
+      "kind": "paragraph",
+      "text": "Sri Magal Press, Chennai-1",
+      "hasLineBreaks": false,
+      "sourcePages": []
+     }
+    ],
+    "notes": [
+     {
+      "kind": "translator-note",
+      "heading": "Translator's note",
+      "text": "**Translator's note:** This translation follows the source-audited Tamil preserved in this repository. Kannamma's final explanation, self-justification, admissions and mockery remain her viewpoint. They are not used to rewrite the earlier narrators inside their own sections. Canonical Tamil remains authoritative and stays under the separate verification freeze."
+     }
+    ]
+   }
+  }
+ ],
+ "sectionCount": 7,
+ "bodyScans": {
+  "from": 8,
+  "to": 49
+ }
+}

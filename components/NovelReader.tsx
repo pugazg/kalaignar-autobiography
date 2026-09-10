@@ -31,6 +31,25 @@ export default function NovelReader({
   const blocks = showEn ? section.english.blocks : section.tamil.blocks;
   const notes = section.english.notes;
 
+  // Data-driven reading-position label. A source-chapter work (புதையல்) says "Chapter N" / the
+  // Introduction; an archive-division work (பெரிய இடத்துப் பெண்) says "section N"; the first benchmark,
+  // which carries no `structure`, keeps its original "Part N of M".
+  const posEyebrow = (() => {
+    if (!novel.structure) return ta ? `பகுதி ${section.order} / ${novel.sectionCount}` : `Part ${section.order} of ${novel.sectionCount}`;
+    const noun = ta ? novel.structure.unitNounTa : novel.structure.unitNounEn;
+    let label: string;
+    if (section.isIntroduction) label = ta ? novel.structure.introUnitTa ?? noun : novel.structure.introUnitEn ?? noun;
+    else if (section.unitNumberEn) label = `${noun} ${ta ? section.unitNumberTa : section.unitNumberEn}`;
+    else label = `${noun} ${section.order}`;
+    return ta ? `${label} · ${section.order} / ${novel.sectionCount}` : `${label} · ${section.order} of ${novel.sectionCount}`;
+  })();
+  // Edition descriptor for body prose and footer, from the work's own data — never another work's.
+  const editionEn = novel.editionSummaryEn ?? (novel.edition?.year ? `first edition April ${novel.edition.year}` : "source edition");
+  const editionTaFooter = novel.editionSummaryTa ?? (novel.edition?.statementTa ?? "");
+  // The "archive descriptive label, not a printed heading" note applies only where the units are
+  // archive reading divisions — never to a source-chapter work, whose chapters ARE printed.
+  const unitsAreArchiveDivisions = !novel.readingUnitKind || novel.readingUnitKind === "archive-division";
+
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
       <header className="sticky top-0 z-30 border-b border-ink/10 bg-paper/90 backdrop-blur dark:border-white/10 dark:bg-night/90">
@@ -58,7 +77,7 @@ export default function NovelReader({
       <article className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
         <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-marina dark:text-marina-light">
           <BookOpen className="h-3.5 w-3.5" aria-hidden />{" "}
-          {ta ? `பகுதி ${section.order} / ${novel.sectionCount}` : `Part ${section.order} of ${novel.sectionCount}`}
+          {posEyebrow}
         </p>
         <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
           {section.titleTa}
@@ -69,11 +88,11 @@ export default function NovelReader({
             not a heading the 1947 edition prints. Where the edition does print a heading, that
             heading appears in the body below, cited to the scan that prints it. Saying so here keeps
             an archival label from being read as Kalaignar's own chapter title. */}
-        {!section.titleIsPrintedHeading && (
+        {unitsAreArchiveDivisions && !section.titleIsPrintedHeading && (
           <p className="mt-2 text-xs leading-relaxed text-ink/45 dark:text-night-text/45" lang={ta ? "ta" : "en"}>
             {ta
-              ? "இத்தலைப்பு மூலக் காப்பகத்தின் வாசிப்புப் பிரிவுக்கான விளக்கக் குறிப்பே; 1947 பதிப்பில் அச்சிடப்பட்ட தலைப்பு அல்ல."
-              : "This title is the source archive's descriptive label for its reading division — not a heading printed in the 1947 edition."}
+              ? "இத்தலைப்பு மூலக் காப்பகத்தின் வாசிப்புப் பிரிவுக்கான விளக்கக் குறிப்பே; அச்சிடப்பட்ட தலைப்பு அல்ல."
+              : "This title is the source archive's descriptive label for its reading division — not a heading printed in the source edition."}
           </p>
         )}
 
@@ -112,8 +131,12 @@ export default function NovelReader({
               ? "இது திட்டத்தால் உருவாக்கப்பட்ட, சரிபார்க்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
               : "The project-created, verified English translation, carried exactly as released. The Tamil original remains authoritative."
             : ta
-              ? "கீழே 1947 முதற்பதிப்பின்படி சரிபார்க்கப்பட்ட தமிழ் உரை — சொற்கள், நிறுத்தக் குறிகள், வரலாற்று எழுத்துமுறை அனைத்தும் மூலத்தின்படியே."
-              : "The verified Tamil text of the 1947 first edition — wording, punctuation and historical spelling exactly as the source has them."}
+              ? novel.structure
+                ? "கீழே மூலப் பதிப்பின்படி சரிபார்க்கப்பட்ட தமிழ் உரை — சொற்கள், நிறுத்தக் குறிகள், வரலாற்று எழுத்துமுறை அனைத்தும் மூலத்தின்படியே."
+                : "கீழே 1947 முதற்பதிப்பின்படி சரிபார்க்கப்பட்ட தமிழ் உரை — சொற்கள், நிறுத்தக் குறிகள், வரலாற்று எழுத்துமுறை அனைத்தும் மூலத்தின்படியே."
+              : novel.structure
+                ? "The verified Tamil text as printed in the source edition — wording, punctuation and historical spelling exactly as the source has them."
+                : "The verified Tamil text of the 1947 first edition — wording, punctuation and historical spelling exactly as the source has them."}
         </p>
 
         {/* THE NOVEL. Paragraph structure comes from the archive's own assembled reading layer and is
@@ -163,8 +186,8 @@ export default function NovelReader({
 
         <p className="mt-8 text-xs italic leading-relaxed text-ink/45 dark:text-night-text/45" lang={ta ? "ta" : "en"}>
           {ta
-            ? `${novel.author.ta} · ${novel.title.ta}, ${novel.edition.statementTa}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
-            : `${novel.author.en} · ${novel.title.en}, first edition April ${novel.edition.year}. Verified against the printed source. `}
+            ? `${novel.author.ta} · ${novel.title.ta}${editionTaFooter ? `, ${editionTaFooter}` : ""}. அச்சிட்ட மூலத்துடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்டது. `
+            : `${novel.author.en} · ${novel.title.en}, ${editionEn}. Verified against the printed source. `}
           <Link href={`/novels/${novel.slug}/source`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
             {ta ? "மூலமும் சான்றும்" : "Source & provenance"}
           </Link>
