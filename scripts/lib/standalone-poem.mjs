@@ -237,11 +237,19 @@ export function markupCensus(built) {
 // A source line stays ONE logical line. Leading indentation is carried as a source fact (`indent`)
 // rather than baked into the text, so the reader can preserve it without forcing <pre> styling and a
 // long line can still wrap visually on a narrow viewport without becoming a new poetic line.
-function line(raw, scan, printed, indentUnit) {
-  const text = raw.replace(/\s+$/, "");
-  const indent = text.length - text.trimStart().length;
+// LEADING indentation is measured and carried as `indent`; TRAILING whitespace is the literary
+// question. In the historical (default) mode the trailing whitespace is stripped — the four frozen
+// Wave-4 standalone payloads were built that way and must stay byte-identical. In `literal` mode
+// (opted into by every Wave-6 Batch-4 declaration) the trailing whitespace is PRESERVED exactly, so
+// a Markdown hard-break or any other source-significant trailing space survives into the payload.
+// Structural width is always measured from the rstripped copy (a probe), so the `indent` value and
+// the indentation-guard are identical in both modes; only the emitted text differs.
+function line(raw, scan, printed, indentUnit, literal) {
+  const rstripped = raw.replace(/\s+$/, "");
+  const indent = rstripped.length - rstripped.trimStart().length;
   if (indent % indentUnit !== 0) throw new Error(`unexpected indentation width ${indent} on scan ${scan}: ${JSON.stringify(raw)}`);
-  return { text: text.slice(indent), indent, sourceScan: scan, printedPage: printed };
+  const base = literal ? raw : rstripped;
+  return { text: base.slice(indent), indent, sourceScan: scan, printedPage: printed };
 }
 
 // ── Tamil: the reviewed source assembly ──────────────────────────────────────────────────────────
@@ -360,11 +368,13 @@ function parseTamil(workDir, decl, pageTransition) {
         els.push({ kind: "stanza-break", evidence: "source-blank-line", sourceScan: b.scan });
         pendingBlank = false;
       }
-      const built = line(raw, b.scan, b.printed, decl.indentUnit ?? 4);
+      const built = line(raw, b.scan, b.printed, decl.indentUnit ?? 4, decl.literalWhitespace);
       // A structural heading PRINTED IN THE SOURCE is not a line of verse. The Tamil assembly gives
       // it no markup, so it is recognised only from an explicit declaration citing the source
-      // statement that establishes it — never from position, length or capitalisation.
-      els.push(headingLines.includes(built.text) ? { kind: "source-heading", text: built.text, sourceScan: b.scan, printedPage: b.printed } : { kind: "line", ...built });
+      // statement that establishes it — never from position, length or capitalisation. Recognition
+      // uses a trailing-trimmed probe (structural), while the emitted text keeps whatever the literal
+      // mode produced.
+      els.push(headingLines.includes(built.text.replace(/\s+$/, "")) ? { kind: "source-heading", text: built.text, sourceScan: b.scan, printedPage: b.printed } : { kind: "line", ...built });
       emittedInBlock++;
     });
   });
@@ -489,18 +499,20 @@ function parseEnglish(workDir, decl, pageTransition) {
           els.push({ kind: "source-heading", text: h[2], sourceScan: r.scan, printedPage: decl.printedPageFor(r.scan), raw: raw.trim() });
           continue;
         }
-        els.push({ kind: "line", ...line(raw, r.scan, decl.printedPageFor(r.scan), decl.indentUnit ?? 4) });
+        els.push({ kind: "line", ...line(raw, r.scan, decl.printedPageFor(r.scan), decl.indentUnit ?? 4, decl.literalWhitespace) });
       }
     });
   });
 
-  // 3. prove the batch-derived stream IS the released assembly, line for line
+  // 3. prove the batch-derived stream IS the released assembly, line for line. In literal mode the
+  // assembly lines are compared WITH their trailing whitespace (matching the literal batch lines);
+  // in the historical mode both sides are rstripped, so the frozen payloads are byte-identical.
   const asmSrc = readText(path.join(workDir, en.assembly.file));
   const asmRegion = sliceRegion(asmSrc, en.assembly.file, en.assembly);
   const asmLines = asmRegion
     .split("\n")
     .filter((raw) => raw.trim() !== "" && !COMMENT.test(raw.trim()))
-    .map((raw) => raw.replace(/\s+$/, ""));
+    .map((raw) => (decl.literalWhitespace ? raw : raw.replace(/\s+$/, "")));
   const built = els
     .filter((e) => e.kind === "line" || e.kind === "source-heading")
     .map((e) => (e.kind === "source-heading" ? e.raw : " ".repeat(e.indent) + e.text));

@@ -43,6 +43,8 @@ const CONTEXT_NOTE_TA = `சென்னையில் உலகத் தம�
 
 export default {
   slug: SLUG,
+  // Wave-6 Batch-4: preserve source literary trailing whitespace exactly (fidelity mode).
+  literalWhitespace: true,
   poemScans: POEM_SCANS,
   title: { ta: "அண்ணா கவியரங்கம்", en: "Anna Kaviyarangam" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },

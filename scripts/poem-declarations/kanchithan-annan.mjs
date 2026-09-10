@@ -17,6 +17,8 @@ const POEM_SCANS = [16];
 
 export default {
   slug: SLUG,
+  // Wave-6 Batch-4: preserve source literary trailing whitespace exactly (fidelity mode).
+  literalWhitespace: true,
   poemScans: POEM_SCANS,
   title: { ta: "காஞ்சிதான் அண்ணன்", en: "Kanchi Is Anna" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },

@@ -190,11 +190,15 @@ function loadPageRecord(workDir, scan, slug, logicalOffset) {
 // normalized. Unlike the four standalone poems, this publication's verse uses free-width indentation
 // rather than a 4-space step, so no multiple-of-N rule is imposed: the count is whatever the released
 // source line carries, and a tab — which would make an indent count meaningless — is refused.
-function line(raw, scan, printedPage) {
-  const text = raw.replace(/\s+$/, "");
-  if (/^\s*\t/.test(text)) throw new Error(`tab indentation on scan ${scan}, refusing to guess a width: ${JSON.stringify(raw)}`);
-  const indent = text.length - text.trimStart().length;
-  return { kind: "line", text: text.slice(indent), indent, sourceScan: scan, printedPage };
+function line(raw, scan, printedPage, literal) {
+  const rstripped = raw.replace(/\s+$/, "");
+  if (/^\s*\t/.test(rstripped)) throw new Error(`tab indentation on scan ${scan}, refusing to guess a width: ${JSON.stringify(raw)}`);
+  const indent = rstripped.length - rstripped.trimStart().length;
+  // literal mode preserves trailing whitespace exactly (Wave-6 Batch-4); the default rstrips so the
+  // two frozen Wave-4 publication payloads stay byte-identical. Width is always measured on the
+  // rstripped probe, so `indent` is identical in both modes.
+  const base = literal ? raw : rstripped;
+  return { kind: "line", text: base.slice(indent), indent, sourceScan: scan, printedPage };
 }
 
 const neutralTransition = (fromScan, toScan) => ({
@@ -255,7 +259,7 @@ function layerOf(elements) {
 // structural headings the release establishes: காலப் பேழை has them only in English (item 14's
 // `### Scene 1`, an asymmetry preserved rather than reconciled), while கலைஞரின் கவிதைகள் reprints an
 // item's title as a `###` heading in BOTH layers. `allowHeadings` is set per layer by the caller.
-function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
+function parseLayer(body, { markerRe, allowHeadings, printedPageFor, literal }) {
   const lines = body.split("\n");
   const els = [];
   let scan = null;
@@ -308,7 +312,7 @@ function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
       els.push({ kind: "stanza-break", evidence: "source-blank-line", sourceScan: scan });
       pendingBlank = false;
     }
-    els.push(line(raw, scan, printed));
+    els.push(line(raw, scan, printed, literal));
     emittedInBlock++;
   }
   return { layer: layerOf(els), seenScans };
@@ -317,7 +321,7 @@ function parseLayer(body, { markerRe, allowHeadings, printedPageFor }) {
 // Reconstruct the raw verse/heading/marker stream of a released English body, for the byte-equality
 // proof against the reader-facing assembly. Blank lines and the title H1 are dropped; scan markers,
 // headings and verse lines are kept verbatim.
-function englishBodyStream(body, validScans, markerRe, headingEquiv) {
+function englishBodyStream(body, validScans, markerRe, headingEquiv, literal) {
   const out = [];
   let beforeFirstMarker = true;
   for (const raw of body.split("\n")) {
@@ -345,9 +349,9 @@ function englishBodyStream(body, validScans, markerRe, headingEquiv) {
     // and verse line text is never normalised. Empty for the Wave-4 dialects (byte-identical).
     if (headingEquiv && headingEquiv.size) {
       const hm = HEADING.exec(t);
-      if (hm && headingEquiv.has(hm[2])) { out.push(" EQ-HEADING " + hm[2]); continue; }
+      if (hm && headingEquiv.has(hm[2])) { out.push("EQ-HEADING" + hm[2]); continue; }
     }
-    out.push(raw.replace(/\s+$/, ""));
+    out.push(literal ? raw : raw.replace(/\s+$/, ""));
   }
   return out;
 }
@@ -558,7 +562,7 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     // the top of the poem body (in both the Tamil section and the English item). காலப் பேழை's Tamil
     // has no such heading, so this does not change its output.
     const secBodyForParse = dropTitleRun(secBody, adapter.tamilTitleDropLines(secFm), ord);
-    const ta = parseLayer(secBodyForParse, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: true, printedPageFor: printedFor });
+    const ta = parseLayer(secBodyForParse, { markerRe: /^<!--\s*scan_page:\s*(\d+)\s*-->$/, allowHeadings: true, printedPageFor: printedFor, literal: decl.literalWhitespace });
     if (JSON.stringify(ta.seenScans) !== JSON.stringify(scans)) {
       throw new Error(`item ${ord}: Tamil scans ${JSON.stringify(ta.seenScans)} != declared physical scans ${JSON.stringify(scans)}`);
     }
@@ -586,7 +590,7 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     const enTitle = adapter.itemTitleEn(enFm, enBody);
     if (enTitle !== d.titleEn) throw new Error(`item ${ord}: English title ${JSON.stringify(enTitle)} != declared ${JSON.stringify(d.titleEn)}`);
     try { adapter.verifyEnglishFm(enFm, decl, d); } catch (e) { throw new Error(`item ${ord}: ${e.message}`); }
-    const en = parseLayer(enBody, { markerRe: adapter.englishMarkerRe, allowHeadings: true, printedPageFor: printedFor });
+    const en = parseLayer(enBody, { markerRe: adapter.englishMarkerRe, allowHeadings: true, printedPageFor: printedFor, literal: decl.literalWhitespace });
     if (adapter.englishScansSubsetOk) {
       // The English marks a subset of the item's physical scans (see the dialect note): require a
       // non-empty, strictly-ascending subset drawn from the item's own scans. Full per-scan coverage
@@ -609,8 +613,8 @@ export function buildPublication({ decl, srcRepo, srcCommit, sourceTree }) {
     if (adapter.assemblySliceHasTitle && slice.titleEn !== d.titleEn) throw new Error(`item ${ord}: assembly header title ${JSON.stringify(slice.titleEn)} != declared ${JSON.stringify(d.titleEn)}`);
     const scanSet = new Set(scans);
     const headingEquiv = new Set(adapter.headingEquivalentTexts);
-    const a = englishBodyStream(enBody, scanSet, adapter.englishMarkerRe, headingEquiv);
-    const b = englishBodyStream("# x\n" + slice.body, scanSet, adapter.englishMarkerRe, headingEquiv); // assembly slice has no per-item H1; add a dummy so both strip one
+    const a = englishBodyStream(enBody, scanSet, adapter.englishMarkerRe, headingEquiv, decl.literalWhitespace);
+    const b = englishBodyStream("# x\n" + slice.body, scanSet, adapter.englishMarkerRe, headingEquiv, decl.literalWhitespace); // assembly slice has no per-item H1; add a dummy so both strip one
     if (a.length !== b.length) throw new Error(`item ${ord}: English item file has ${a.length} stream lines but the assembly slice has ${b.length}`);
     for (let i = 0; i < a.length; i++) {
       if (a[i] !== b[i]) throw new Error(`item ${ord}: English item file diverges from the reader-facing assembly at stream line ${i + 1}:\n  item:     ${a[i]}\n  assembly: ${b[i]}`);

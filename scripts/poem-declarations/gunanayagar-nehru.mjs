@@ -24,6 +24,8 @@ const PRINTED = { 3: 2, 4: 3, 5: 4, 6: 5, 7: 6 };
 
 export default {
   slug: SLUG,
+  // Wave-6 Batch-4: preserve source literary trailing whitespace exactly (fidelity mode).
+  literalWhitespace: true,
   poemScans: POEM_SCANS,
   title: { ta: "குணநாயகர் நேரு", en: "Nehru, the Noble Leader" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },

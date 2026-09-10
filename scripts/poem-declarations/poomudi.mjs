@@ -17,6 +17,8 @@ const POEM_SCANS = [4];
 
 export default {
   slug: SLUG,
+  // Wave-6 Batch-4: preserve source literary trailing whitespace exactly (fidelity mode).
+  literalWhitespace: true,
   poemScans: POEM_SCANS,
   title: { ta: "பூமுடி", en: "Flower Crown" },
   author: { nameTa: "மு. கருணாநிதி", nameEn: "M. Karunanidhi" },

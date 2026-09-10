@@ -17,6 +17,8 @@ const POEM_SCANS = [18, 19, 20, 21, 22, 23, 24, 25];
 
 export default {
   slug: SLUG,
+  // Wave-6 Batch-4: preserve source literary trailing whitespace exactly (fidelity mode).
+  literalWhitespace: true,
   poemScans: POEM_SCANS,
   // This work aligns some wrapped words with deep indents (4, 24, 32, 34, 36, 40 source spaces); the
   // 34-space alignment is not a multiple of 4, so the indentation-width guard runs at unit 2 (all

@@ -38,6 +38,8 @@ const SECTIONS = [
 
 export default {
   slug: SLUG,
+  // Wave-6 Batch-4: preserve source literary trailing whitespace exactly (fidelity mode).
+  literalWhitespace: true,
   sourceRepo: "pugazg/kalaignar-poems",
   sourcePath: `poems/${SLUG}`,
   reservedSegments: ["source", "items"],
