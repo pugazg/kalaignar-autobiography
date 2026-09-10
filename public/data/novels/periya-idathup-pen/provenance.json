@@ -2,7 +2,9 @@
  "workId": "periya-idathup-pen",
  "sourceRepo": "pugazg/kalaignar-novels",
  "sourcePath": "works/periya-idathup-pen",
- "sourceCommit": "a99f135467dd38e294faff31088a937994790a47",
+ "sourceCommit": "d6679e46051ab93de8da6361413c39e7db468cfe",
+ "literarySnapshotCommit": "a99f135467dd38e294faff31088a937994790a47",
+ "literarySnapshotNote": "The assembled reading layer (sections/, pages/, translations/en/) is byte-identical at the literary-freeze commit and at the revised active anchor; the anchor differs only by metadata/source.md and the added metadata/witness-arumbu-1978.md. novel.json is therefore pinned to the literary-freeze commit and is byte-unchanged by this provenance correction.",
  "source": {
   "titleTa": "பெரிய இடத்துப் பெண்",
   "titleEn": "The Woman of the Great House",
@@ -38,6 +40,26 @@
    "the English layer's translator's-note blockquotes, carried outside the reading body"
   ]
  },
+ "additionalWitnesses": [
+  {
+   "kind": "additional-non-controlling-witness",
+   "appearsIn": "1978 four-story compilation `அரும்பு`",
+   "compilationFilename": "TVA_BOK_0064361_அரும்பு.pdf",
+   "compilationSha256": "04a3013e1f58a1800867acc5d2f159976c47994a64478036e6fe0201edf120bc",
+   "compilationFileSizeBytes": 117270339,
+   "compilationScans": 92,
+   "compilationEditionTa": "முதற் பதிப்பு — 1978",
+   "compilationPublisherTa": "தமிழ்க்கனி பதிப்பகம், சென்னை-28",
+   "witnessPhysicalScans": "49–74",
+   "witnessScanCount": 26,
+   "printedPageMarkers": "scan 49 title/opening (no clearly visible printed number); scan 50 printed 47; scan 74 printed 72",
+   "sourcePdfCommitted": false,
+   "controlling": false,
+   "comparisonStatus": "no line-by-line 1953↔1978 comparison has been performed; the 1978 text is not assumed identical, complete, abridged, corrected or authoritative relative to the 1953 controlling source",
+   "authorizes": "nothing — registering this witness does NOT authorize edits to canonical Tamil, assembled Tamil or English, and does not change the canonical verification freeze",
+   "note": "The controlling source for this archival package remains the 1953 eighth-edition scan. This is an additional witness only."
+  }
+ ],
  "english": {
   "kind": "project-created",
   "status": "whole-work English VERIFIED",

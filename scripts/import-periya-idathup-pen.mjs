@@ -16,12 +16,19 @@ import path from "node:path";
 import { readText, sha256, nfc, assertSourceHead, parseSection, literalBlocks } from "./lib/novel-assembled.mjs";
 
 const SRC_REPO = process.argv[2];
-const SRC_COMMIT = process.argv[3];
-if (!SRC_REPO || !SRC_COMMIT) {
-  console.error("usage: node scripts/import-periya-idathup-pen.mjs <kalaignar-novels-clone> <source-commit>");
+// The REVISED, adjudicated Batch-5 source anchor (registers the 1978 அரும்பு witness). Written to
+// provenance.json and used as the clone HEAD the literary + witness facts are read from.
+const ACTIVE_ANCHOR = process.argv[3];
+// The literary-freeze commit written to novel.json. The assembled sections/, pages/ and English
+// translations/ are BYTE-IDENTICAL at the literary freeze and at the revised anchor (the revised
+// anchor differs only by Periya's `metadata/source.md` + the added `metadata/witness-arumbu-1978.md`),
+// so novel.json — the reader/literary payload — stays byte-stable across the provenance correction.
+const LITERARY_FREEZE = process.argv[4] || "a99f135467dd38e294faff31088a937994790a47";
+if (!SRC_REPO || !ACTIVE_ANCHOR) {
+  console.error("usage: node scripts/import-periya-idathup-pen.mjs <kalaignar-novels-clone> <active-anchor-commit> [<literary-freeze-commit>]");
   process.exit(1);
 }
-assertSourceHead(SRC_REPO, SRC_COMMIT);
+assertSourceHead(SRC_REPO, ACTIVE_ANCHOR);
 
 const SLUG = "periya-idathup-pen";
 const WORK_DIR = path.join(SRC_REPO, "works", SLUG);
@@ -49,6 +56,30 @@ for (const [label, needle] of [
 ]) {
   if (!meta.includes(nfc(needle))) throw new Error(`source identity mismatch: metadata/source.md lacks the expected ${label} (${needle})`);
 }
+// source.md must register the additional witness and keep the 1953 edition controlling.
+if (!meta.includes(nfc("witness-arumbu-1978.md"))) throw new Error("source metadata no longer registers the 1978 அரும்பு witness — refusing to import");
+if (!meta.includes(nfc("This witness is **not** the controlling source"))) throw new Error("source metadata no longer states the 1978 printing is a non-controlling witness — refusing to import");
+
+// ── Additional (non-controlling) 1978 witness, read verbatim from the source ─────────────────────
+const wmeta = nfc(readText(path.join(WORK_DIR, "metadata/witness-arumbu-1978.md")));
+const wgrab = (re, label) => { const m = re.exec(wmeta); if (!m) throw new Error(`witness metadata lacks ${label}`); return m[1]; };
+const WIT_FILENAME = wgrab(/compilation filename:\s*`(.+?)`/, "compilation filename");
+const WIT_SHA256 = wgrab(/compilation SHA-256:\s*`(.+?)`/, "compilation SHA-256");
+const WIT_SIZE = wgrab(/compilation size:\s*\*\*([\d,]+)\s*bytes\*\*/, "compilation size");
+const WIT_SCANS = Number(wgrab(/compilation scans:\s*\*\*(\d+)\*\*/, "compilation scans"));
+const WIT_EDITION = wgrab(/compilation edition:\s*\*\*(.+?)\*\*/, "compilation edition");
+const WIT_PUBLISHER = wgrab(/publisher:\s*\*\*(.+?)\*\*/, "witness publisher");
+const WIT_RANGE = wgrab(/witness physical scans:\s*\*\*(.+?)\*\*/, "witness scan range");
+const WIT_COUNT = Number(wgrab(/witness scan count:\s*\*\*(\d+)\*\*/, "witness scan count"));
+if (WIT_FILENAME !== "TVA_BOK_0064361_அரும்பு.pdf") throw new Error(`unexpected witness filename ${WIT_FILENAME}`);
+if (WIT_RANGE !== "49–74" && WIT_RANGE !== "49-74") throw new Error(`unexpected witness scan range ${WIT_RANGE}`);
+if (WIT_COUNT !== 26) throw new Error(`unexpected witness scan count ${WIT_COUNT}`);
+// The source must NOT claim any line-by-line comparison; the importer refuses to invent one.
+if (!wmeta.includes(nfc("No line-by-line comparison has yet been performed"))) throw new Error("witness metadata no longer states that no line-by-line comparison exists — refusing to import");
+if (!wmeta.includes(nfc("The existing 1953 eighth-edition scan remains the controlling source"))) throw new Error("witness metadata no longer states the 1953 edition is controlling — refusing to import");
+// Guard against inventing weekly-magazine serialization: the source describes அரும்பு as a 1978
+// four-story compilation, never a magazine; refuse if magazine/issue/serialization terms are present.
+if (/\b(weekly|magazine|இதழ்|serial|serialis|serializ|வார)\b/i.test(wmeta)) throw new Error("witness metadata unexpectedly contains magazine/serialization terms — refusing to import a fabricated claim");
 
 // ── Printed headings, derived from the CANONICAL page records ─────────────────────────────────────
 // A heading is admitted to the reading body only if a body page record actually prints it. Apparatus
@@ -193,7 +224,9 @@ const novel = {
   slug: SLUG,
   sourceRepo: "pugazg/kalaignar-novels",
   sourcePath: `works/${SLUG}`,
-  sourceCommit: SRC_COMMIT,
+  // The literary payload is pinned to the literary-freeze commit; the assembled reading layer is
+  // byte-identical there and at the revised active anchor, so this reader payload stays byte-stable.
+  sourceCommit: LITERARY_FREEZE,
   shelf: "fiction",
   readerStructure: "novel",
   subtype: "novel",
@@ -222,7 +255,12 @@ const provenance = {
   workId: SLUG,
   sourceRepo: novel.sourceRepo,
   sourcePath: novel.sourcePath,
-  sourceCommit: SRC_COMMIT,
+  // Provenance records the REVISED, adjudicated active source anchor (the snapshot that registers the
+  // 1978 அரும்பு witness). The literary payload's freeze commit is recorded separately below.
+  sourceCommit: ACTIVE_ANCHOR,
+  literarySnapshotCommit: LITERARY_FREEZE,
+  literarySnapshotNote:
+    "The assembled reading layer (sections/, pages/, translations/en/) is byte-identical at the literary-freeze commit and at the revised active anchor; the anchor differs only by metadata/source.md and the added metadata/witness-arumbu-1978.md. novel.json is therefore pinned to the literary-freeze commit and is byte-unchanged by this provenance correction.",
   source: {
     titleTa: novel.title.ta,
     titleEn: novel.title.en,
@@ -260,6 +298,29 @@ const provenance = {
       "the English layer's translator's-note blockquotes, carried outside the reading body",
     ],
   },
+  // Additional (NON-controlling) printed witnesses of this work, registered from the source but NOT
+  // used to alter any canonical Tamil, assembled Tamil or English. Read verbatim from
+  // metadata/witness-arumbu-1978.md at the revised anchor.
+  additionalWitnesses: [
+    {
+      kind: "additional-non-controlling-witness",
+      appearsIn: "1978 four-story compilation `அரும்பு`",
+      compilationFilename: WIT_FILENAME,
+      compilationSha256: WIT_SHA256,
+      compilationFileSizeBytes: Number(WIT_SIZE.replace(/,/g, "")),
+      compilationScans: WIT_SCANS,
+      compilationEditionTa: WIT_EDITION,
+      compilationPublisherTa: WIT_PUBLISHER,
+      witnessPhysicalScans: WIT_RANGE,
+      witnessScanCount: WIT_COUNT,
+      printedPageMarkers: "scan 49 title/opening (no clearly visible printed number); scan 50 printed 47; scan 74 printed 72",
+      sourcePdfCommitted: false,
+      controlling: false,
+      comparisonStatus: "no line-by-line 1953↔1978 comparison has been performed; the 1978 text is not assumed identical, complete, abridged, corrected or authoritative relative to the 1953 controlling source",
+      authorizes: "nothing — registering this witness does NOT authorize edits to canonical Tamil, assembled Tamil or English, and does not change the canonical verification freeze",
+      note: "The controlling source for this archival package remains the 1953 eighth-edition scan. This is an additional witness only.",
+    },
+  ],
   english: {
     kind: "project-created",
     status: "whole-work English VERIFIED",

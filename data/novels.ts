@@ -168,11 +168,38 @@ export type Novel = {
   bodyScans: { from: number; to: number };
 };
 
+// An additional, NON-controlling printed witness of the work, registered from the source but never
+// used to alter canonical Tamil, assembled Tamil or English (Wave-6 Batch-5, optional).
+export type NovelWitness = {
+  kind: string;
+  appearsIn: string;
+  compilationFilename: string;
+  compilationSha256: string;
+  compilationFileSizeBytes: number;
+  compilationScans: number;
+  compilationEditionTa: string;
+  compilationPublisherTa: string;
+  witnessPhysicalScans: string;
+  witnessScanCount: number;
+  printedPageMarkers: string;
+  sourcePdfCommitted: false;
+  controlling: false;
+  comparisonStatus: string;
+  authorizes: string;
+  note: string;
+};
+
 export type NovelProvenance = {
   workId: string;
   sourceRepo: string;
   sourcePath: string;
+  /** The revised active source anchor (the snapshot this provenance describes). */
   sourceCommit: string;
+  /** The commit at which the literary payload (novel.json) is byte-frozen; optional (Wave-6 B5). */
+  literarySnapshotCommit?: string;
+  literarySnapshotNote?: string;
+  /** Additional non-controlling witnesses registered from the source (optional). */
+  additionalWitnesses?: NovelWitness[];
   source: {
     titleTa: string;
     titleEn: string;

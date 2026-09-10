@@ -124,6 +124,29 @@ export default function NovelSource({ slug, prov }: { slug: string; prov: NovelP
           </Card>
         ) : null}
 
+        {/* Additional NON-controlling printed witnesses registered from the source. Shown on the
+            provenance page only — never in the reading body — and never presented as controlling. */}
+        {(prov.additionalWitnesses ?? []).length > 0 && (
+          <Card icon={Info} title={ta ? "கூடுதல் சான்று (கட்டுப்படுத்தாதது)" : "Additional witness (non-controlling)"}>
+            {prov.additionalWitnesses!.map((w, i) => (
+              <div key={i} className="mt-3">
+                <dl>
+                  <Row label={ta ? "இடம்பெறுவது" : "Appears in"}>{w.appearsIn}</Row>
+                  <Row label={ta ? "தொகுப்புக் கோப்பு" : "Compilation file"} mono>{w.compilationFilename}</Row>
+                  <Row label="SHA-256" mono>{w.compilationSha256}</Row>
+                  <Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{w.compilationEditionTa}</span></Row>
+                  <Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{w.compilationPublisherTa}</span></Row>
+                  <Row label={ta ? "சான்று ஸ்கேன்கள்" : "Witness scans"}>{w.witnessPhysicalScans} ({w.witnessScanCount})</Row>
+                  <Row label={ta ? "நிலை" : "Status"}>{ta ? "கட்டுப்படுத்தும் மூலம் அல்ல" : "not the controlling source"}</Row>
+                </dl>
+                <p className="mt-3 rounded-xl border border-dashed border-ink/15 bg-ink/[0.02] px-4 py-2.5 text-xs leading-relaxed text-ink/65 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/65" lang="en">
+                  {w.comparisonStatus} — {w.authorizes}
+                </p>
+              </div>
+            ))}
+          </Card>
+        )}
+
         <Card icon={FileCheck2} title={ta ? "ஆங்கில வெளியீடு" : "English release"}>
           <dl className="mt-3">
             <Row label={ta ? "வகை" : "Kind"}>{e.kind}</Row>

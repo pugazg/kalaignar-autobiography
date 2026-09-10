@@ -2,7 +2,9 @@
  "workId": "pudhaiyal",
  "sourceRepo": "pugazg/kalaignar-novels",
  "sourcePath": "works/pudhaiyal",
- "sourceCommit": "a99f135467dd38e294faff31088a937994790a47",
+ "sourceCommit": "d6679e46051ab93de8da6361413c39e7db468cfe",
+ "literarySnapshotCommit": "a99f135467dd38e294faff31088a937994790a47",
+ "literarySnapshotNote": "Pudhaiyal's target subtree is byte-identical at the literary-freeze commit and at the revised active anchor; novel.json is pinned to the literary-freeze commit and is byte-unchanged by this provenance correction. The active anchor moves in provenance only, to keep the Batch-5 anchor consistent across both novels.",
  "source": {
   "titleTa": "புதையல்",
   "titleEn": "Treasure",

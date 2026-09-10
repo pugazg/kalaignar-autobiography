@@ -18,10 +18,15 @@ import { execFileSync } from "node:child_process";
 // fidelity boundary is the two TARGET SUBTREE pins below, which are identical at the anchor and at any
 // later `main` that only advanced unrelated works — so reading the working tree is byte-identical to
 // reading the anchor whenever those pins hold.
-const ANCHOR_COMMIT = "a99f135467dd38e294faff31088a937994790a47";
-const ANCHOR_TREE = "dba82250875855d885056faad5915ecf3c49f723";
+// REVISED, adjudicated Batch-5 source anchor (registers the 1978 அரும்பு witness). Written to
+// provenance.json. The superseded anchor (a99f1354… / tree dba822… / periya 8028e11f…) is retained
+// only as the LITERARY-FREEZE commit inside novel.json, because the assembled reading layer is
+// byte-identical at both commits and novel.json must stay byte-stable across this provenance fix.
+const ANCHOR_COMMIT = "d6679e46051ab93de8da6361413c39e7db468cfe";
+const ANCHOR_TREE = "e4ea40ffd495fe084221541f9ca5fd48742dee3e";
+const LITERARY_FREEZE = "a99f135467dd38e294faff31088a937994790a47";
 const SUBTREE_PINS = {
-  "periya-idathup-pen": "8028e11f615864981be2d7a18fad4abc4e4404ae",
+  "periya-idathup-pen": "47168b63142012ade56ec832e8977c494d0027a6",
   pudhaiyal: "450d7da31a0f2eed5c12d43e4082edb758134618",
 };
 const SRC_REPO = process.argv[2];
@@ -146,8 +151,9 @@ console.log("\n=== periya-idathup-pen (7 sections) ===");
   const root = WORK_ROOT(slug);
   const novel = loadJSON(path.join(PUB(slug), "novel.json"));
   const prov = loadJSON(path.join(PUB(slug), "provenance.json"));
-  eq(novel.sourceCommit, SRC_COMMIT, "periya payload sourceCommit == anchor");
-  eq(prov.sourceCommit, SRC_COMMIT, "periya provenance sourceCommit == anchor");
+  eq(novel.sourceCommit, LITERARY_FREEZE, "periya novel.json sourceCommit == literary-freeze commit");
+  eq(prov.sourceCommit, ANCHOR_COMMIT, "periya provenance sourceCommit == revised active anchor");
+  eq(prov.literarySnapshotCommit, LITERARY_FREEZE, "periya provenance records the literary-freeze commit");
 
   const taDir = path.join(root, "sections");
   const enDir = path.join(root, "translations/en/sections");
@@ -182,6 +188,41 @@ console.log("\n=== periya-idathup-pen (7 sections) ===");
   check(new Set(novel.sections.map((s) => s.slug)).size === 7, "periya: 7 distinct section slugs");
   eq(prov.archiveDerived.embeddedSequenceSections, 0, "periya: no embedded-sequence section");
   eq(prov.source.scanSha256 && prov.source.scanSha256.length > 0, true, "periya: scan SHA carried from source");
+
+  // ── 1978 அரும்பு witness: proven INDEPENDENTLY from the source snapshot, then matched to payload ──
+  const wraw = nfc(readText(path.join(root, "metadata/witness-arumbu-1978.md")));
+  const wg = (re, label) => { const m = re.exec(wraw); if (!m) { fail(`witness source lacks ${label}`); return null; } ok(); return m[1]; };
+  const srcWit = {
+    compilationFilename: wg(/compilation filename:\s*`(.+?)`/, "witness filename"),
+    compilationSha256: wg(/compilation SHA-256:\s*`(.+?)`/, "witness sha"),
+    compilationScans: Number(wg(/compilation scans:\s*\*\*(\d+)\*\*/, "witness scans")),
+    witnessPhysicalScans: wg(/witness physical scans:\s*\*\*(.+?)\*\*/, "witness range"),
+    witnessScanCount: Number(wg(/witness scan count:\s*\*\*(\d+)\*\*/, "witness count")),
+  };
+  // The source itself must keep the 1978 printing non-controlling and uncompared.
+  check(/remains the controlling source/.test(wraw), "witness source: 1953 edition still controlling");
+  check(/No line-by-line comparison has yet been performed/.test(wraw), "witness source: no comparison performed");
+  check(!/\b(weekly|magazine|serial|serializ|serialis|இதழ்|வார)\b/i.test(wraw), "witness source: no magazine/serialization claim");
+  // Payload witness must be present, exactly one, non-controlling, matching the source facts.
+  const wits = prov.additionalWitnesses || [];
+  eq(wits.length, 1, "periya: exactly one additional witness registered");
+  const w = wits[0] || {};
+  check(w.controlling === false, "witness payload: NOT controlling");
+  eq(w.compilationFilename, srcWit.compilationFilename, "witness payload filename == source");
+  eq(w.compilationSha256, srcWit.compilationSha256, "witness payload SHA == source");
+  eq(w.compilationScans, srcWit.compilationScans, "witness payload compilation scans == source");
+  eq(String(w.witnessPhysicalScans).replace("-", "–"), String(srcWit.witnessPhysicalScans).replace("-", "–"), "witness payload scan range == source (49–74)");
+  eq(w.witnessScanCount, srcWit.witnessScanCount, "witness payload scan count == source (26)");
+  check(/no line-by-line/i.test(w.comparisonStatus || ""), "witness payload records that no comparison was performed");
+  check(!/\b(weekly|magazine|serial|இதழ்|வார)\b/i.test(JSON.stringify(w)), "witness payload invents no magazine/serialization claim");
+  // Witness/provenance material must NOT leak into any literary reading block.
+  const litBody = novel.sections.flatMap((s) => [...s.tamil.blocks, ...s.english.blocks]).map((b) => b.text).join("\n");
+  check(!litBody.includes("அரும்பு") && !litBody.includes(srcWit.compilationFilename || "TVA_BOK_0064361"), "witness: அரும்பு / compilation identity absent from literary body");
+  // Witness-metadata-specific markers (not the generic word "witness", which legitimately occurs in
+  // the translated narrative) must never appear in the reading body.
+  check(!litBody.includes("Additional Source Witness") && !litBody.includes("witness-arumbu") && !litBody.includes("non-controlling"), "witness: witness-registration metadata absent from literary body");
+  // Controlling source is still the 1953 eighth edition (unchanged).
+  check((prov.source.editionTa || "").includes("1953"), "periya: controlling source remains the 1953 eighth edition");
 }
 
 // ══════════════════════════════════════════════════════════════════════════════════════════════
@@ -193,7 +234,8 @@ console.log("\n=== pudhaiyal (52 literary units) ===");
   const root = WORK_ROOT(slug);
   const novel = loadJSON(path.join(PUB(slug), "novel.json"));
   const prov = loadJSON(path.join(PUB(slug), "provenance.json"));
-  eq(novel.sourceCommit, SRC_COMMIT, "pudhaiyal payload sourceCommit == anchor");
+  eq(novel.sourceCommit, LITERARY_FREEZE, "pudhaiyal novel.json sourceCommit == literary-freeze commit");
+  eq(prov.sourceCommit, ANCHOR_COMMIT, "pudhaiyal provenance sourceCommit == revised active anchor");
 
   const taDir = path.join(root, "sections");
   const enDir = path.join(root, "translations/en/sections");
@@ -250,10 +292,12 @@ console.log("\n=== pudhaiyal (52 literary units) ===");
 // ══════════════════════════════════════════════════════════════════════════════════════════════
 console.log("\n=== integrity hash pins ===");
 const HASH_PINS = {
+  // novel.json (literary payloads) — UNCHANGED by the provenance correction.
   "periya-idathup-pen/novel.json": "a7b751274650da7902359ab055b9a251a95b2ffa42447456191f89858210ca0b",
-  "periya-idathup-pen/provenance.json": "26f67919c3ffe3b3aa4a250cce15a5dfe126ae1a00d1c4c3579d1bce4b215b44",
   "pudhaiyal/novel.json": "d5bfadfbc7e1f847a942716b321f2da2d75093e178349014c0806584137bd9ea",
-  "pudhaiyal/provenance.json": "75457c2359f623b1208d9f39a9934325bbc0583b130e250a5953181fdee8edb6",
+  // provenance.json — CHANGED by the revised anchor + 1978 witness registration.
+  "periya-idathup-pen/provenance.json": "463f46f607b31c85436bfd216570b27c9477b1e1837b8429fd605f98d9b3e0d5",
+  "pudhaiyal/provenance.json": "63f4369b0f64d95caada9be0db181b137daba280f7bf0c5d5050f9fef0356ad8",
 };
 for (const rel of Object.keys(HASH_PINS)) {
   const h = sha256(readText(path.join(process.cwd(), "public/data/novels", rel)));
@@ -350,6 +394,27 @@ const periyaNovel = loadJSON(path.join(PUB("periya-idathup-pen"), "novel.json"))
   const rr = deriveSource(`---\nwork: "pudhaiyal"\n---\n\n${releaseReport}`).blocks.map((b) => b.text).join("\n");
   const anyMatch = pudh.sections.some((s) => s.english.blocks.map((b) => b.text).join("\n") === rr);
   check(!anyMatch, "F: no published section body equals the RELEASE_REPORT content");
+}
+
+// ══════════════════════════════════════════════════════════════════════════════════════════════
+// WITNESS ADVERSARIALS W1–W5 (in-memory; the 1978 non-controlling witness)
+// ══════════════════════════════════════════════════════════════════════════════════════════════
+console.log("\n=== witness adversarials W1–W5 ===");
+{
+  const prov = loadJSON(path.join(PUB("periya-idathup-pen"), "provenance.json"));
+  const wraw = nfc(readText(path.join(WORK_ROOT("periya-idathup-pen"), "metadata/witness-arumbu-1978.md")));
+  const srcRange = (/witness physical scans:\s*\*\*(.+?)\*\*/.exec(wraw) || [])[1];
+  // W1 — witness disappears: an empty additionalWitnesses fails the "exactly one" check.
+  check((prov.additionalWitnesses || []).length === 1 && JSON.parse(JSON.stringify([])).length === 0,
+    "W1: an empty additionalWitnesses would fail the exactly-one-witness check");
+  // W2 — witness promoted to controlling: controlling=true would fail the NOT-controlling check.
+  { const c = JSON.parse(JSON.stringify(prov.additionalWitnesses[0])); c.controlling = true; check(c.controlling !== false, "W2: promoting the witness to controlling fails the non-controlling check"); }
+  // W3 — witness scan range changed: a mutated range no longer equals the source 49–74.
+  { const mutated = "49–99"; check(mutated.replace("-", "–") !== String(srcRange).replace("-", "–"), "W3: a changed witness scan range diverges from source (49–74)"); }
+  // W4 — invented comparison result: a claim of an identical/authoritative comparison contradicts source.
+  { const invented = "line-by-line comparison confirms the 1978 text is identical and authoritative"; check(/no line-by-line/i.test(prov.additionalWitnesses[0].comparisonStatus) && !/no line-by-line/i.test(invented), "W4: an invented comparison result contradicts the source (no comparison performed)"); }
+  // W5 — witness leakage into literary text: injecting the witness identity into a section body is detectable.
+  { const pn = loadJSON(path.join(PUB("periya-idathup-pen"), "novel.json")); const litBody = pn.sections.flatMap((s) => [...s.tamil.blocks, ...s.english.blocks]).map((b) => b.text).join("\n"); const leaked = litBody + "\nTVA_BOK_0064361_அரும்பு.pdf witness 49–74"; check(!litBody.includes("அரும்பு") && leaked.includes("அரும்பு"), "W5: witness identity leaking into a literary body is detectable"); }
 }
 
 // ══════════════════════════════════════════════════════════════════════════════════════════════

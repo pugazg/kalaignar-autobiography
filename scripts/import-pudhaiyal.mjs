@@ -24,12 +24,17 @@ import path from "node:path";
 import { readText, sha256, nfc, assertSourceHead, parseSection, literalBlocks, frontMatter } from "./lib/novel-assembled.mjs";
 
 const SRC_REPO = process.argv[2];
-const SRC_COMMIT = process.argv[3];
-if (!SRC_REPO || !SRC_COMMIT) {
-  console.error("usage: node scripts/import-pudhaiyal.mjs <kalaignar-novels-clone> <source-commit>");
+// Revised, adjudicated Batch-5 source anchor (shared with periya-idathup-pen) → provenance.json.
+const ACTIVE_ANCHOR = process.argv[3];
+// Literary-freeze commit → novel.json. Pudhaiyal's target subtree is UNCHANGED between the freeze and
+// the revised anchor, so its literary payload is byte-stable; the anchor moves only in provenance for
+// Batch-5 consistency (the CI same-directory/same-pin guard requires both novels to share one pin).
+const LITERARY_FREEZE = process.argv[4] || "a99f135467dd38e294faff31088a937994790a47";
+if (!SRC_REPO || !ACTIVE_ANCHOR) {
+  console.error("usage: node scripts/import-pudhaiyal.mjs <kalaignar-novels-clone> <active-anchor-commit> [<literary-freeze-commit>]");
   process.exit(1);
 }
-assertSourceHead(SRC_REPO, SRC_COMMIT);
+assertSourceHead(SRC_REPO, ACTIVE_ANCHOR);
 
 const SLUG = "pudhaiyal";
 const WORK_DIR = path.join(SRC_REPO, "works", SLUG);
@@ -187,7 +192,7 @@ const novel = {
   slug: SLUG,
   sourceRepo: "pugazg/kalaignar-novels",
   sourcePath: `works/${SLUG}`,
-  sourceCommit: SRC_COMMIT,
+  sourceCommit: LITERARY_FREEZE,
   shelf: "fiction",
   readerStructure: "novel",
   subtype: "novel",
@@ -212,7 +217,11 @@ const provenance = {
   workId: SLUG,
   sourceRepo: novel.sourceRepo,
   sourcePath: novel.sourcePath,
-  sourceCommit: SRC_COMMIT,
+  // Revised, adjudicated active Batch-5 source anchor (shared with periya-idathup-pen).
+  sourceCommit: ACTIVE_ANCHOR,
+  literarySnapshotCommit: LITERARY_FREEZE,
+  literarySnapshotNote:
+    "Pudhaiyal's target subtree is byte-identical at the literary-freeze commit and at the revised active anchor; novel.json is pinned to the literary-freeze commit and is byte-unchanged by this provenance correction. The active anchor moves in provenance only, to keep the Batch-5 anchor consistent across both novels.",
   source: {
     titleTa: novel.title.ta,
     titleEn: novel.title.en,
