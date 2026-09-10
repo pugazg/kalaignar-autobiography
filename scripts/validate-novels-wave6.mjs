@@ -322,9 +322,12 @@ console.log("\n=== route manifest ===");
   }
   eq(JSON.stringify([...b5.routes].sort()), JSON.stringify([...expected].sort()), "b5-novels routes == derived from payload sections exactly");
   const cum = loadJSON(path.join(process.cwd(), "data/internal/wave6/p3-routes.json"));
-  eq(cum.cumulativeRouteCount, 247, "cumulative P3 route count 247");
+  // The cumulative grand total grows as later batches land; Batch-5 asserts its OWN contribution and
+  // that all its routes are present, not the moving total.
+  check(cum.cumulativeRouteCount >= 247, "cumulative P3 route count is at least 247 (through Batch 5)");
   const b = cum.batches.find((x) => x.batchId === "b5-novels");
   check(!!b && b.routeCount === 63, "cumulative manifest includes b5-novels=63");
+  check(expected.every((r) => cum.cumulativeRoutes.includes(r)), "cumulative manifest contains every Batch-5 route");
 }
 
 // ══════════════════════════════════════════════════════════════════════════════════════════════

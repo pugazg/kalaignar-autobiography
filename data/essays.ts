@@ -176,6 +176,12 @@ export type EssayPublication = {
    * reading order had to be reconstructed. The form is a source fact, not a catalogue category.
    */
   subtype: "essay-collection" | "single-article-pamphlet" | "reconstructed-pamphlet";
+  /**
+   * The source FORM in the source's own words, where it is more specific than the subtype — e.g.
+   * `வேதனைச் சிறையினின்றும் விடுதலை பெற` is a government public message (`செய்தி`), NOT a delivered
+   * speech. Optional; absent on the earlier publications. It is a source fact, never a reclassification.
+   */
+  publicationForm?: string;
   title: ArticleBilingualText;
   author: ArticleBilingualText;
   /**
@@ -191,8 +197,14 @@ export type EssayPublication = {
   firstEdition?: EssayEdition;
   /** Present ONLY when the controlling scan is a different edition from the first. */
   controllingEdition?: EssayEdition;
-  /** True when the scan integrated here IS the first edition — no reprint distinction exists. */
-  controllingIsFirstEdition: boolean;
+  /**
+   * `true`  — the scan integrated here IS the first edition; no reprint distinction exists.
+   * `false` — a reprint distinction exists (the controlling scan is a later edition; see `controllingEdition`).
+   * `null`  — the source establishes NO edition witness at all, so neither is known. `null` must NOT be
+   *           read as "no reprint" — that inference (absence of evidence → evidence of absence) is the
+   *           bug this field prevents. See `EssayProvenance.source.editionStatus`.
+   */
+  controllingIsFirstEdition: boolean | null;
   /**
    * Printed page count recorded in the source's own நூல் குறிப்பு. OPTIONAL: three Wave-3 sources
    * establish no publication-wide printed page count, and a physical scan count is a different fact
@@ -232,9 +244,27 @@ export type EssayProvenance = {
     titleEn: string;
     authorTa: string;
     scanFilename: string;
-    scanSha256: string;
-    scanFileSizeBytes: number;
+    /** null where the source supplies no single controlling-PDF SHA (e.g. a split multi-part transfer
+     *  whose original unsplit hash is explicitly "not available; never fabricate it"). */
+    scanSha256: string | null;
+    scanFileSizeBytes: number | null;
     scanTotalPages: number;
+    /**
+     * Present where the controlling scan was supplied as several non-overlapping transfer PDFs rather
+     * than one file (`சிந்தனையும் செயலும்` — five parts). Each part's own SHA-256 is recorded; the
+     * unsplit original hash is deliberately absent and never fabricated. Optional.
+     */
+    transferParts?: { part: number; filename: string; globalScans: string; pdfPages: number; bytes: number; sha256: string }[];
+    /** The source FORM (e.g. a government public `செய்தி`), where the source states one. Optional. */
+    publicationForm?: string;
+    /**
+     * Whether the source establishes an edition/reprint at all — kept DISTINCT from "no reprint":
+     *   "established"     — the source states an edition (and, where a reprint exists, the distinction);
+     *   "not-established" — the source explicitly establishes NO edition statement or year. The public
+     *                       provenance page then shows an absence-of-evidence statement, never "no reprint".
+     * Optional; the earlier publications omit it and keep their established behaviour.
+     */
+    editionStatus?: "established" | "not-established";
     physicalVerification: string;
     strictFidelityReview: string;
     articleAssemblies: string;

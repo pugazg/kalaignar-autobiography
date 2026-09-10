@@ -63,9 +63,23 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
             <Row label={ta ? "மூலப் பாதை" : "Source path"} mono>{prov.sourcePath}</Row>
             <Row label={ta ? "மூல commit" : "Source commit"} mono>{prov.sourceCommit}</Row>
             <Row label={ta ? "கட்டுப்படுத்தும் scan" : "Controlling scan"} mono>{s.scanFilename}</Row>
-            <Row label="SHA-256" mono>{s.scanSha256}</Row>
-            <Row label={ta ? "அளவு" : "Size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>
+            <Row label="SHA-256" mono>{s.scanSha256 ?? (ta ? "தனிக் கோப்பு இல்லை — கீழே பரிமாற்றப் பகுதிகள்" : "no single-file hash — see transfer parts below")}</Row>
+            <Row label={ta ? "அளவு" : "Size"}>{s.scanFileSizeBytes != null ? `${s.scanFileSizeBytes.toLocaleString("en-US")} ${ta ? "பைட்டுகள்" : "bytes"}` : (ta ? "— (பரிமாற்றப் பகுதிகள்)" : "— (transfer parts)")}</Row>
             <Row label={ta ? "மொத்த scan பக்கங்கள்" : "Physical scans"}>{s.scanTotalPages} · {s.physicalVerification}</Row>
+            {s.publicationForm && (
+              <Row label={ta ? "மூல வடிவம்" : "Source form"}>{s.publicationForm}</Row>
+            )}
+            {s.transferParts && s.transferParts.length > 0 && (
+              <Row label={ta ? "பரிமாற்ற PDF பகுதிகள்" : "Transfer PDF parts"}>
+                <span className="block space-y-1">
+                  {s.transferParts.map((tp) => (
+                    <span key={tp.part} className="block break-all font-mono text-[10px] leading-relaxed">
+                      {ta ? "பகுதி" : "part"} {tp.part} · {ta ? "ஸ்கேன்" : "scans"} {tp.globalScans} · {tp.sha256}
+                    </span>
+                  ))}
+                </span>
+              </Row>
+            )}
             <Row label={ta ? "கண்பார்வை உரைச் சரிபார்ப்பு" : "Strict text fidelity"}>{s.strictFidelityReview}</Row>
             <Row label={ta ? "கட்டுரைத் தொகுப்புகள்" : "Article assemblies"}>{s.articleAssemblies}</Row>
             <Row label={ta ? "தீர்க்கப்படாத தமிழ் சிக்கல்கள்" : "Unresolved Tamil fidelity items"}>{s.unresolvedTamilFidelityItems}</Row>
@@ -81,40 +95,56 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               the 1956 original; the Wave-3 pamphlets have no reprint at all, and are shown as the
               single edition they are rather than being described as following one. */}
           <div className="mt-3 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-4 py-3 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
-            <p className="font-semibold text-ink/80 dark:text-night-text/80">
-              {s.controllingEditionTa
-                ? (ta ? "பதிப்பு வேறுபாடு" : "Edition distinction")
-                : (ta ? "பதிப்பு" : "Edition")}
-            </p>
-            {s.firstEditionTa && (
-              <p className="mt-1">
-                {s.controllingEditionTa
-                  ? (ta ? "முதற்பதிப்பு: " : "First edition: ")
-                  : (ta ? "பதிப்பு: " : "Edition: ")}
-                <span className="font-tamil" lang="ta">{s.firstEditionTa}</span>
-              </p>
-            )}
-            {s.editionWitnessesTa && s.editionWitnessesTa.length > 0 && (
-              <p className="mt-1 font-tamil" lang="ta">{s.editionWitnessesTa.join(" · ")}</p>
-            )}
-            {s.controllingEditionTa && (
-              <p className="mt-1">
-                {ta ? "இங்கே பயன்படுத்திய கட்டுப்படுத்தும் பதிப்பு: " : "Controlling edition used here: "}
-                <span className="font-tamil" lang="ta">{s.controllingEditionTa}</span>
-                {s.titlePagePublisherTa && (
-                  <> · <span className="font-tamil" lang="ta">{s.titlePagePublisherTa}</span></>
+            {s.editionStatus === "not-established" ? (
+              // The source establishes NO edition witness at all. Absence of an edition witness must
+              // never be rendered as "no reprint / this is that edition" — that would infer a fact the
+              // source does not state. Show the absence of evidence, distinct from evidence of absence.
+              <>
+                <p className="font-semibold text-ink/80 dark:text-night-text/80">{ta ? "பதிப்பு நிலை" : "Edition status"}</p>
+                <p className="mt-1.5 italic">
+                  {ta
+                    ? "பதிப்பு நிலை: கிடைத்த மூலச் சான்றுகளில் பதிப்போ வெளியீட்டு ஆண்டோ உறுதிப்படுத்தப்படவில்லை. இது ‘மறுபதிப்பு இல்லை’ என்று பொருள் அல்ல — பதிப்புச் சான்றே இல்லை என்பதே."
+                    : "Edition status: not established from the available source evidence. This is not a claim that the publication had no reprint — the source simply establishes no edition witness at all."}
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="font-semibold text-ink/80 dark:text-night-text/80">
+                  {s.controllingEditionTa
+                    ? (ta ? "பதிப்பு வேறுபாடு" : "Edition distinction")
+                    : (ta ? "பதிப்பு" : "Edition")}
+                </p>
+                {s.firstEditionTa && (
+                  <p className="mt-1">
+                    {s.controllingEditionTa
+                      ? (ta ? "முதற்பதிப்பு: " : "First edition: ")
+                      : (ta ? "பதிப்பு: " : "Edition: ")}
+                    <span className="font-tamil" lang="ta">{s.firstEditionTa}</span>
+                  </p>
                 )}
-              </p>
+                {s.editionWitnessesTa && s.editionWitnessesTa.length > 0 && (
+                  <p className="mt-1 font-tamil" lang="ta">{s.editionWitnessesTa.join(" · ")}</p>
+                )}
+                {s.controllingEditionTa && (
+                  <p className="mt-1">
+                    {ta ? "இங்கே பயன்படுத்திய கட்டுப்படுத்தும் பதிப்பு: " : "Controlling edition used here: "}
+                    <span className="font-tamil" lang="ta">{s.controllingEditionTa}</span>
+                    {s.titlePagePublisherTa && (
+                      <> · <span className="font-tamil" lang="ta">{s.titlePagePublisherTa}</span></>
+                    )}
+                  </p>
+                )}
+                <p className="mt-1.5 italic">
+                  {s.controllingEditionTa
+                    ? (ta
+                        ? "இந்த ஒருங்கிணைப்பு கட்டுப்படுத்தும் மறுபதிப்பின் scan-ஐ அடிப்படையாகக் கொண்டது; இது முதற்பதிப்பின் scan அல்ல."
+                        : "This integration is based on the controlling reprint scan; it is not a scan of the first physical edition.")
+                    : (ta
+                        ? "இந்நூலுக்கு மறுபதிப்பு எதுவும் இல்லை. இங்கே ஒருங்கிணைக்கப்பட்ட scan இந்தப் பதிப்பினுடையதே."
+                        : "This publication has no reprint. The scan integrated here is that edition itself.")}
+                </p>
+              </>
             )}
-            <p className="mt-1.5 italic">
-              {s.controllingEditionTa
-                ? (ta
-                    ? "இந்த ஒருங்கிணைப்பு கட்டுப்படுத்தும் மறுபதிப்பின் scan-ஐ அடிப்படையாகக் கொண்டது; இது முதற்பதிப்பின் scan அல்ல."
-                    : "This integration is based on the controlling reprint scan; it is not a scan of the first physical edition.")
-                : (ta
-                    ? "இந்நூலுக்கு மறுபதிப்பு எதுவும் இல்லை. இங்கே ஒருங்கிணைக்கப்பட்ட scan இந்தப் பதிப்பினுடையதே."
-                    : "This publication has no reprint. The scan integrated here is that edition itself.")}
-            </p>
           </div>
         </Card>
 

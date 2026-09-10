@@ -1,0 +1,123 @@
+{
+ "workId": "kolaikkalam",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/kolaikkalam",
+ "sourceCommit": "564add708b8bd942fa9d5f505b083955248873d0",
+ "sourceTree": "e1eff4df14bd56e37575f15651e400f87b332ff0",
+ "source": {
+  "titleTa": "கொலைக்களம்!",
+  "titleEn": "The Killing Field",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0063657_கொலைக்களம்.pdf",
+  "scanSha256": "674a534f6c29e5abed9c7ebf52c3cfd143f494d6a21341b5d0624871c187a96c",
+  "scanFileSizeBytes": 55495728,
+  "scanTotalPages": 40,
+  "physicalVerification": "40 / 40 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 40 / 40",
+  "articleAssemblies": "6 / 6 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற் பதிப்பு-52",
+   "முன்னேற்றப் பண்ணை",
+   "விலை அணா எட்டு"
+  ],
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "கொலைக்களம்!",
+    "titleEn": "The Killing Field!",
+    "scanPages": "5–9",
+    "printedPages": "6–9; scan 5 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "‘அஸ்தி’ கரையட்டும்!",
+    "titleEn": "Let the ‘Ashes’ Dissolve!",
+    "scanPages": "10–16",
+    "printedPages": "11–16; scan 10 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "பலியை நிறுத்துங்கள்!",
+    "titleEn": "Stop the Sacrifice!",
+    "scanPages": "17–22",
+    "printedPages": "18–22; scan 17 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "விழலுக்கு நீர் இறைத்து...",
+    "titleEn": "Watering the Weeds...",
+    "scanPages": "23–27",
+    "printedPages": "24–27; scan 23 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 5,
+    "titleTa": "சோதனை!",
+    "titleEn": "Search!",
+    "scanPages": "28–33",
+    "printedPages": "29–33; scan 28 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 6,
+    "titleTa": "வீரமுழக்கஞ் செய்திடுவீர்!",
+    "titleEn": "Raise the Heroic Cry!",
+    "scanPages": "34–40",
+    "printedPages": "35–40; scan 34 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The publication prints NO contents page; the article ordinals here are archive reading ordinals.",
+   "The printed edition witness is only `52` and is carried verbatim; it is deliberately NOT expanded to a four-digit year."
+  ],
+  "lockedExclusions": [
+   "scans 1–4 — cover / title-publisher / copyright-edition-price / front matter",
+   "the separate printer witness on scan 40 — not part of the literary prose"
+  ]
+ },
+ "english": {
+  "releaseTitle": "The Killing Field",
+  "kind": "project-created",
+  "articlesVerified": "6 / 6 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "PUBLICATION_COMPLETION_REVIEW.md — P0–P4 PASS; post-P2 lexical reconciliation COMPLETE; English 6/6 verified",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 6,
+  "tamilBlocks": 228,
+  "englishBlocks": 226,
+  "tamilSubheadings": 1,
+  "englishSubheadings": 1,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 13,
+  "englishMixedVoiceParagraphs": 15,
+  "tamilQuotedSegments": 21,
+  "englishQuotedSegments": 27,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 30,
+  "relationUnknown": 30,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

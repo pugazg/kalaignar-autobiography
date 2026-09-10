@@ -1,0 +1,124 @@
+{
+ "workId": "ina-muzhakkam",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/ina-muzhakkam",
+ "sourceCommit": "564add708b8bd942fa9d5f505b083955248873d0",
+ "sourceTree": "4e6a28cb93a1eb2b8f376a1abebc938a1d7f8ef9",
+ "source": {
+  "titleTa": "இன முழக்கம்",
+  "titleEn": "The Clarion Call of the Race",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0063958_இன_முழக்கம்.pdf",
+  "scanSha256": "f57e4070051d7bc77ab78d5d393dbefbe47791efcc3203c594c5f3949ef0dfbf",
+  "scanFileSizeBytes": 68109788,
+  "scanTotalPages": 50,
+  "physicalVerification": "50 / 50 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 50 / 50",
+  "articleAssemblies": "6 / 6 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற் பதிப்பு: செப்டம்பர் 1951",
+   "முன்னேற்றப் பண்ணை",
+   "விலை அணா 0-8-0"
+  ],
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "இன முழக்கம்",
+    "titleEn": "The Clarion Call of the Race",
+    "scanPages": "6–13",
+    "printedPages": "6–12; scan 6 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "சொர்க்க லோகத்தில்",
+    "titleEn": "In the Heavenly Realm",
+    "scanPages": "14–24",
+    "printedPages": "14–23; scan 14 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "முரசறைவாய்",
+    "titleEn": "Beat the Drum",
+    "scanPages": "25–29",
+    "printedPages": "25–28; scan 25 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "பழிக்குப் பழி",
+    "titleEn": "Revenge for Revenge",
+    "scanPages": "30–37",
+    "printedPages": "30–36; scan 30 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 5,
+    "titleTa": "ஆரியம் பேசுகிறது",
+    "titleEn": "Aryanism Speaks",
+    "scanPages": "38–39",
+    "printedPages": "38–38; scan 38 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 6,
+    "titleTa": "கவிதைகள்",
+    "titleEn": "Poems",
+    "scanPages": "41–49",
+    "printedPages": "40–48",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The publication prints a contents witness (page references 4, 13, 24, 29, 37, 40); the article ordinals here are archive reading ordinals, not printed article numbers."
+  ],
+  "lockedExclusions": [
+   "scans 1–5 — cover / title-page / front matter",
+   "scan 40 — `கவிதைகளைப் பற்றி` + `மதிப்புரை` review/front-matter material; it is NOT a seventh article",
+   "scan 50 — catalogue / advertisement",
+   "scan-24 and scan-37 promotional matter"
+  ]
+ },
+ "english": {
+  "releaseTitle": "The Clarion Call of the Race",
+  "kind": "project-created",
+  "articlesVerified": "6 / 6 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "PUBLICATION_COMPLETION_REVIEW.md — P0–P5 COMPLETE / PASS; Tamil STRICT-REVIEWED / FROZEN; English 6/6 verified",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 6,
+  "tamilBlocks": 219,
+  "englishBlocks": 219,
+  "tamilSubheadings": 11,
+  "englishSubheadings": 11,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 29,
+  "englishMixedVoiceParagraphs": 31,
+  "tamilQuotedSegments": 49,
+  "englishQuotedSegments": 66,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 37,
+  "relationUnknown": 37,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

@@ -57,10 +57,11 @@ eq(batch.routeCount, 63, "Batch-5 routeCount 63");
 eq(uniqSort(batch.routes), uniqSort(routes), "Batch-5 route manifest == registry+payload-derived routes (exact set)");
 ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-5 manifest: discoverable=false, sitemapExposed=false");
 
-// ── 2. CUMULATIVE MANIFEST 247 ────────────────────────────────────────────────────────────────────
-const cum = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/p3-routes.json"), "utf8")) as { cumulativeRouteCount: number; batches: { batchId: string; routeCount: number }[] };
-eq(cum.cumulativeRouteCount, 247, "cumulative P3 route count 247 (184 + 63)");
+// ── 2. CUMULATIVE MANIFEST — Batch-5 contributes 63 (the grand total grows as later batches land) ──
+const cum = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/p3-routes.json"), "utf8")) as { cumulativeRouteCount: number; cumulativeRoutes: string[]; batches: { batchId: string; routeCount: number }[] };
 ok(cum.batches.some((b) => b.batchId === "b5-novels" && b.routeCount === 63), "cumulative includes b5-novels=63");
+ok(cum.cumulativeRouteCount >= 247, "cumulative P3 route count is at least 247 (184 + Batch-5's 63)");
+for (const r of routes) ok(cum.cumulativeRoutes.includes(r), `cumulative manifest contains Batch-5 route ${r}`);
 
 // ── 3. STRUCTURE MODEL — periya archive divisions vs pudhaiyal source chapters ────────────────────
 const periya = novelOf("periya-idathup-pen");
