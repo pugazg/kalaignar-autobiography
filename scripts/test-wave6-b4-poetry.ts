@@ -54,8 +54,8 @@ for (const s of WAVE6_POEM_SLUGS) routes.push(`/poems/${s}`, `/poems/${s}/source
 for (const s of WAVE6_POETRY_PUBLICATION_SLUGS) { routes.push(`/poems/${s}`, `/poems/${s}/source`); for (const it of pub(s).items) routes.push(`/poems/${s}/${it.slug}`); }
 eq(routes.length, 30, "exactly 30 Batch-4 direct routes");
 eq(new Set(routes).size, routes.length, "no duplicate route");
-for (const s of WAVE6_POEM_SLUGS) ok(!(POEM_SLUGS as readonly string[]).includes(s), `${s} NOT in discovered POEM_SLUGS`);
-for (const s of WAVE6_POETRY_PUBLICATION_SLUGS) ok(!(POETRY_PUBLICATION_SLUGS as readonly string[]).includes(s), `${s} NOT in discovered POETRY_PUBLICATION_SLUGS`);
+for (const s of WAVE6_POEM_SLUGS) ok((POEM_SLUGS as readonly string[]).includes(s), `${s} IS in discovered POEM_SLUGS (P4 promoted)`);
+for (const s of WAVE6_POETRY_PUBLICATION_SLUGS) ok((POETRY_PUBLICATION_SLUGS as readonly string[]).includes(s), `${s} IS in discovered POETRY_PUBLICATION_SLUGS (P4 promoted)`);
 
 const batch = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/batches/b4-poetry-routes.json"), "utf8")) as { batchId: string; workIds: string[]; collectionIds: string[]; readerFamily: string; discoverable: boolean; sitemapExposed: boolean; routeCount: number; routes: string[] };
 eq(batch.batchId, "b4-poetry", "Batch-4 batchId");
@@ -71,14 +71,15 @@ eq(pub("kalaignarin-kaviyaranga-kavithaigal-1975").items.map((i) => i.ordinal), 
 ok(!routes.some((r) => /\/poems\/kalaignarin-kaviyaranga-kavithaigal-1975\/(3|03)$/.test(r)), "no /…/03 route for the 1975 publication");
 ok(!routes.some((r) => /\/poems\/[^/]+\/\d+$/.test(r)), "no numeric-alias child route exists");
 
-// ── 2. P3/P4 BOUNDARY — not in sitemap, catalogue or discovery ──────────────────
+// ── 2. P4 EXPOSURE — now in sitemap, catalogue and discovery ────────────────────
+// (P4 published these works; the exhaustive set-equality proof lives in the P4 validator.)
 const urls = sitemap().map((e) => e.url);
-for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 0, `ZERO sitemap URLs for ${r} (P3, not P4)`);
+for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 78, "catalogue still 78 works (no P4 exposure)");
-for (const s of [...WAVE6_POEM_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS]) ok(!works.some((w) => w.slug === s), `${s} is NOT in the catalogue`);
+eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+for (const s of [...WAVE6_POEM_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS]) ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
 const poetryEntries = discoveryShelves().find((s) => s.shelf.id === "poetry")!.entries;
-eq(poetryEntries.length, 6, "Poetry discovery still 6 entries (no Wave-6 card)");
+eq(poetryEntries.length, 14, "Poetry discovery is 14 entries (8 Wave-6 cards added)");
 eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
 
 // ── 3. RENDER SEMANTICS (Tamil render — the SSR primary language) ────────────────
@@ -117,13 +118,15 @@ eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
   ok(tt.title.en !== tt.title.ta, "thalaikettan carries an approved (non-fallback) English title");
 }
 
-// ── 4. EXISTING SIX POETRY WORKS UNAFFECTED (no Batch-4 wording / semantics leak) ─
-for (const s of POETRY_PUBLICATION_SLUGS) {
+// ── 4. EXISTING (pre-P4) POETRY WORKS UNAFFECTED (no Batch-4 wording / semantics leak) ─
+// P4 promoted the two Wave-6 publications into POETRY_PUBLICATION_SLUGS; they legitimately
+// carry readingUnitKind/workForm, so the byte-frozen invariant applies only to the rest.
+for (const s of POETRY_PUBLICATION_SLUGS.filter((x) => !(WAVE6_POETRY_PUBLICATION_SLUGS as readonly string[]).includes(x))) {
   const p = pub(s);
   ok(p.readingUnitKind === undefined, `existing publication ${s} carries no readingUnitKind (byte-frozen)`);
   ok(p.workForm === undefined, `existing publication ${s} carries no workForm`);
 }
-for (const s of POEM_SLUGS) ok(fs.existsSync(path.join(process.cwd(), "public/data/poems", s, "poem.json")), `existing standalone ${s} still present`);
+for (const s of POEM_SLUGS) ok(fs.existsSync(path.join(process.cwd(), "public/data/poems", s, "poem.json")), `standalone ${s} payload present`);
 
 // ── 5. BUILD BOUNDARY (only if a production build tree is present) ───────────────
 const manifestPath = path.join(process.cwd(), ".next/prerender-manifest.json");
@@ -143,4 +146,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b4-poetry — ${checks} checks, 0 failed`);
-console.log("  8 works · 30 direct routes (registry-derived, fail-closed) · verse-novel renders as 11 sections · 1975 [1,2,4] no invented 03 · catalogue 78 · Poetry discovery 6 · 0 sitemap URLs");
+console.log("  8 works · 30 direct routes (registry-derived, fail-closed) · verse-novel renders as 11 sections · 1975 [1,2,4] no invented 03 · P4: catalogue 100 · Poetry discovery 14 · 30 sitemap URLs");

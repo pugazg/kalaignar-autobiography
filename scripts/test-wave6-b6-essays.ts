@@ -47,7 +47,7 @@ eq(pub("kolaikkalam").articles.length, 6, "kolaikkalam 6 articles");
 eq(pub("kudumbaththin-nalvilakku").articles.length, 1, "kudumbaththin 1 article");
 eq(pub("sinthanaiyum-seyalum").articles.length, 50, "sinthanaiyum 50 articles");
 eq(pub("vedhanai-ch-siraiyinindrum-viduthalai-pera").articles.length, 1, "vedhanai 1 article");
-for (const s of WAVE6_ESSAY_SLUGS) ok(!(ESSAY_SLUGS as readonly string[]).includes(s), `${s} NOT in discovered ESSAY_SLUGS`);
+for (const s of WAVE6_ESSAY_SLUGS) ok((ESSAY_SLUGS as readonly string[]).includes(s), `${s} IS in discovered ESSAY_SLUGS (P4 promoted)`);
 
 const batch = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/batches/b6-essays-routes.json"), "utf8")) as { batchId: string; workIds: string[]; collectionIds: string[]; readerFamily: string; discoverable: boolean; sitemapExposed: boolean; routeCount: number; routes: string[] };
 eq(batch.batchId, "b6-essays", "Batch-6 batchId");
@@ -98,18 +98,20 @@ renderTa(createElement(EssayLanding, { pub: pub("kudumbaththin-nalvilakku") }));
 renderTa(createElement(ArticleReader, { pub: pub("ina-muzhakkam"), article: pub("ina-muzhakkam").articles[0], prev: null, next: pub("ina-muzhakkam").articles[1] }));
 ok(true, "Essay landing + article reader render for Batch-6 works without error");
 
-// ── 4. P4 BOUNDARY (adversarials 11–14) — sitemap / catalogue / discovery exclude Batch-6 ─────────
+// ── 4. P4 EXPOSURE (adversarials 11–14 flipped) — sitemap / catalogue / discovery now include Batch-6 ─
+// (P4 published these works; the exhaustive set-equality proof lives in the P4 validator.)
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
-for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 0, `A13: ZERO sitemap URLs for Batch-6 route ${r}`);
+for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `A13: route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 78, "A11: catalogue still exactly 78 works (no Batch-6 exposure)");
+eq(works.length, 100, "A11: catalogue is 100 works (P4 published the 22 Wave-6 works)");
 eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
 const essaysShelf = discoveryShelves().find((s) => s.shelf.id === "essays-articles");
 ok(!!essaysShelf, "Essays & Articles discovery shelf present");
 const essayEntries = essaysShelf ? essaysShelf.entries : [];
+eq(essayEntries.length, 9, "A12: Essays & Articles discovery is 9 entries (4 existing + 5 Wave-6 cards)");
 for (const s of WAVE6_ESSAY_SLUGS) {
-  ok(!works.some((w) => w.slug === s), `A11: ${s} is NOT in the catalogue`);
-  ok(!essayEntries.some((e) => (e as { slug?: string; work?: { slug?: string } }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `A12: ${s} is NOT an Essays discovery entry`);
+  ok(works.some((w) => w.slug === s), `A11: ${s} IS in the catalogue`);
+  ok(essayEntries.some((e) => (e as { slug?: string; work?: { slug?: string } }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `A12: ${s} IS an Essays discovery entry`);
 }
 // A14: exactly the 74 derived routes — no unrelated extra direct route in the batch manifest.
 eq(batch.routes.length, 74, "A14: no unrelated extra direct route (exactly 74)");

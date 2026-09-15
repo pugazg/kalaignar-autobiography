@@ -68,14 +68,15 @@ eq(batch.collectionIds, [], "Batch-1 manifest collectionIds == exactly [] (regis
 ok((batch as unknown as { workId?: unknown }).workId === undefined, "Batch-1 manifest does not use the retired singular workId");
 ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-1 manifest: discoverable=false, sitemapExposed=false");
 
-// ── 3. P3 BOUNDARY — NOT in sitemap, NOT in catalogue/discovery ─────────────────
+// ── 3. P4 EXPOSURE — ammaiyappan now in sitemap, catalogue and discovery ─────────
+// (P4 published this work; the exhaustive set-equality proof lives in the P4 validator.)
 const urls = sitemap().map((e) => e.url);
-eq(urls.filter((u) => u.startsWith(`${BASE}/cinema/ammaiyappan`)).length, 0, "ZERO ammaiyappan URLs in the sitemap (P3, not P4)");
+eq(urls.filter((u) => u.startsWith(`${BASE}/cinema/ammaiyappan`)).length, 65, "65 ammaiyappan URLs in the sitemap (landing + /source + 63 scenes)");
 const works = publishedWorks();
-eq(works.length, 78, "catalogue still 78 works (no P4 exposure)");
-ok(!works.some((w) => w.slug === "ammaiyappan"), "ammaiyappan is NOT in the catalogue");
+eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+ok(works.some((w) => w.slug === "ammaiyappan"), "ammaiyappan IS in the catalogue");
 const cinemaEntries = discoveryShelves().find((s) => s.shelf.id === "cinema-writing")!.entries;
-eq(cinemaEntries.length, 6, "Cinema discovery still 6 entries (no ammaiyappan card)");
+eq(cinemaEntries.length, 7, "Cinema discovery is 7 entries (ammaiyappan card added)");
 
 // ── 4. RENDERED SEMANTICS ───────────────────────────────────────────────────────
 const strip = (s: string) => s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -130,4 +131,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b1-ammaiyappan — ${checks} checks, 0 failed`);
-console.log("  63 archival scenes · 65 direct routes (registry-derived, fail-closed) · archive-segment semantics · not-Film-Songs · song occurrences not upgraded · 0 sitemap URLs · catalogue still 78");
+console.log("  63 archival scenes · 65 direct routes (registry-derived, fail-closed) · archive-segment semantics · not-Film-Songs · song occurrences not upgraded · P4: 65 sitemap URLs · catalogue 100 · Cinema discovery 7");
