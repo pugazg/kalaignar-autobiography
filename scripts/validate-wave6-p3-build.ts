@@ -1,16 +1,22 @@
 /**
- * Wave 6 P1–P3 — global build-boundary validator (cumulative, FAMILY-AGNOSTIC).
+ * Wave 6 — cumulative manifest + global build-boundary validator (FAMILY-AGNOSTIC).
  *
  *   npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-p3-build.ts
  *
  * This validator INHERITS the global build-delta responsibility that Wave-5 P4 A7 shed. Wave-5 P4 A7
- * now proves only the six frozen Wave-5 Cinema families (exact 346, build↔sitemap). Wave 6 P1–P3 adds
- * AUTHORIZED direct-but-undiscovered reader routes; this gate owns:
- *   * the exact whole-build growth = frozen pre-Wave-6 baseline + the cumulative Wave-6 P3 route set;
+ * now proves only the six frozen Wave-5 Cinema families (exact 346, build↔sitemap). Wave 6 P1–P3 added
+ * the 321 reader routes recorded in the cumulative manifest; this gate owns:
+ *   * cumulative-manifest self-consistency: the committed data/internal/wave6/p3-routes.json is exactly
+ *     the disjoint union of the per-batch manifests (route/work/collection identity, field-for-field);
+ *   * the exact whole-build growth = frozen pre-Wave-6 baseline + the cumulative Wave-6 route set;
  *   * proof, via the INDEPENDENTLY FROZEN base route-set hash, that the current build's pre-Wave-6
  *     remainder is byte-identical to a clean build of implementation base 632476ba… (so a same-count
- *     substitution ANYWHERE in the baseline fails — without committing 3360 route strings);
- *   * proof that NO Wave-6 P3 route/work is exposed in sitemap, catalogue or /read discovery until P4.
+ *     substitution ANYWHERE in the baseline fails — without committing 3360 route strings).
+ *
+ * The route/build boundary is phase-agnostic: P4 exposes these same 321 routes via catalogue, /read
+ * discovery and sitemap but creates ZERO new routes, so the build totals below are unchanged by P4.
+ * Public exposure (the inverse of the old "hidden until P4" assertions that once lived here) is now
+ * proven by scripts/validate-wave6-p4-integration.ts.
  *
  * It knows NOTHING about how any reader family derives its routes — each batch owns its own derivation
  * (its per-batch manifest + route test). The cumulative manifest is composed by
@@ -20,11 +26,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
-import { publishedWorks } from "../data/library";
-import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
-import sitemap from "../app/sitemap";
 
-const BASE = "https://nenjukkuneethi.org";
 const root = process.cwd();
 const readJSON = <T,>(p: string): T => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
 
@@ -95,35 +97,10 @@ eq(new Set(allWorkIds).size, allWorkIds.length, "no workId appears in two batche
 const allCollectionIds = batchManifests.flatMap((b) => b.collectionIds);
 eq(new Set(allCollectionIds).size, allCollectionIds.length, "no collectionId appears in two batches");
 
-// ── 2. P4 BOUNDARY — undiscovered in sitemap / catalogue / discovery ────────────
-const urls = sitemap().map((e) => e.url);
-eq(urls.length, 3351, "sitemap URL count unchanged (3351)");
-eq(new Set(urls).size, urls.length, "sitemap has 0 duplicates");
-for (const r of manifest.cumulativeRoutes) ok(!urls.includes(`${BASE}${r}`), `sitemap excludes undiscovered route ${r}`);
-const works = publishedWorks();
-eq(works.length, 78, "catalogue works unchanged (78)");
-const entrySlugs = new Set(discoveryShelves().flatMap((s) => s.entries).map((e) => (e.kind === "collection" ? e.collection.id : e.work.slug)));
-for (const b of batchManifests) {
-  for (const wid of b.workIds) {
-    ok(!works.some((w) => w.slug === wid), `catalogue excludes Wave-6 work ${wid}`);
-    ok(!entrySlugs.has(wid), `/read discovery excludes Wave-6 work ${wid}`);
-  }
-}
-
-// Public collection registry stays frozen through P3: exactly ONE public collection exists, and no
-// Wave-6 collectionId is registered in LIBRARY_COLLECTIONS, surfaced in /read discovery, or in the
-// sitemap. Batch 1 declares collectionIds:[] so the registry must remain exactly 1.
-eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry frozen at exactly 1 (no Wave-6 collection registered)");
-const registeredCollectionIds = new Set(LIBRARY_COLLECTIONS.map((c) => c.id));
-for (const b of batchManifests) {
-  for (const cid of b.collectionIds) {
-    ok(!registeredCollectionIds.has(cid), `LIBRARY_COLLECTIONS excludes Wave-6 collection ${cid}`);
-    ok(!entrySlugs.has(cid), `/read discovery excludes Wave-6 collection ${cid}`);
-    ok(!urls.some((u) => u.includes(`/collection/${cid}`) || u.endsWith(`/${cid}`)), `sitemap excludes Wave-6 collection ${cid}`);
-  }
-}
-
-// ── 3. BUILD BOUNDARY — exact whole-build delta + baseline-hash proof (after a build) ─
+// ── 2. BUILD BOUNDARY — exact whole-build delta + baseline-hash proof (after a build) ─
+// Phase-agnostic: P4 exposes these routes but adds none, so these totals are unchanged from P3.
+// (The former "P4 remains hidden" sitemap/catalogue/discovery assertions moved, inverted, to
+//  scripts/validate-wave6-p4-integration.ts.)
 const manifestPath = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(manifestPath)) {
   const routeKeys = uniqSorted(Object.keys((JSON.parse(fs.readFileSync(manifestPath, "utf-8")) as { routes: Record<string, unknown> }).routes));
@@ -167,4 +144,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-p3-build — ${checks} checks, 0 failed`);
-console.log(`  ${manifest.batches.length} batch(es) · cumulative ${manifest.cumulativeRouteCount} authorized-undiscovered routes · build = frozen baseline ${baseline.prerenderManifestRouteCount} (hash-pinned) + ${manifest.cumulativeRouteCount} · sitemap/catalogue/discovery unchanged`);
+console.log(`  ${manifest.batches.length} batch(es) · cumulative ${manifest.cumulativeRouteCount} reader routes · build = frozen baseline ${baseline.prerenderManifestRouteCount} (hash-pinned) + ${manifest.cumulativeRouteCount} · public exposure proven by validate-wave6-p4-integration`);
