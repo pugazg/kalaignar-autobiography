@@ -70,7 +70,15 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     const pub = loadPublication(params.slug);
     if (!pub) return { title: "Poetry — கவிதை | Kalaignar Digital Library" };
     const title = `${pub.title.ta} — ${pub.title.en} | Kalaignar Digital Library`;
-    const description = `${pub.title.en} — ${pub.itemCount} poems by Kalaignar M. Karunanidhi${pub.editionStatement ? `, ${pub.editionStatement}` : ""}. The verified Tamil source text with a release-complete English translation, each poem read on its own page.`;
+    // Reading-unit-kind aware, so the metadata never advertises a work's units as the wrong form.
+    // Absent ⇒ "poem": a normal poetry publication of independently-authored poems (the wording is
+    // unchanged). "section": ONE continuous work — a verse-novel — whose units are source-established
+    // SECTIONS, never independent poems; name the work-form where the payload supplies it.
+    const editionSuffix = pub.editionStatement ? `, ${pub.editionStatement}` : "";
+    const description =
+      (pub.readingUnitKind ?? "poem") === "section"
+        ? `${pub.title.en} — ${pub.workForm?.en ? `a ${pub.workForm.en}` : "a work"} by Kalaignar M. Karunanidhi${editionSuffix}, arranged here as ${pub.itemCount} source sections. The verified Tamil source text with a release-complete English translation, each section read on its own page.`
+        : `${pub.title.en} — ${pub.itemCount} poems by Kalaignar M. Karunanidhi${editionSuffix}. The verified Tamil source text with a release-complete English translation, each poem read on its own page.`;
     return { title, description, openGraph: { title, description }, twitter: { title: pub.title.en, description } };
   }
   const p = loadPoem(params.slug);

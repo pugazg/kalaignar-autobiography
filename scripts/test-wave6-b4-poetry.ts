@@ -23,6 +23,8 @@ import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "../data/poems";
 import type { Poem, PoetryPublication } from "../data/poems";
 import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "../lib/poems-wave6-routes";
 import sitemap from "../app/sitemap";
+import { generateMetadata as poemLandingMetadata } from "../app/poems/[slug]/page";
+import { generateMetadata as poemItemMetadata } from "../app/poems/[slug]/[item]/page";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 
@@ -95,6 +97,34 @@ eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
   const reader = renderTa(createElement(PublicationItemReader, { pubSlug: p.slug, pubTitleTa: p.title.ta, readingUnitKind: "section", item: it as never, index: 0, total: p.items.length, prev: null, next: { slug: p.items[1].slug, titleTa: p.items[1].titleTa } }));
   ok(/பிரிவு 1 \/ 11/.test(reader), "oruthalaik item reader says 'பிரிவு 1 / 11' (Section 1 of 11)");
   ok(!/கவிதை 1 \/ 11/.test(reader), "oruthalaik item reader does NOT say 'கவிதை 1 / 11' (Poem)");
+}
+// ── 3b. ROUTE METADATA is reading-unit-kind aware (generateMetadata, not just the rendered card) ──
+// The verse-novel's public SEO metadata must describe SECTIONS of a verse-novel, never 11 poems.
+{
+  const p = pub("oruthalaik-kathal");
+  const landingDesc = String((poemLandingMetadata({ params: { slug: "oruthalaik-kathal" } }) as { description?: string }).description ?? "");
+  ok(/verse-novel/i.test(landingDesc), "oruthalaik landing metadata names the verse-novel work form");
+  ok(/\bsection(s)?\b/i.test(landingDesc), "oruthalaik landing metadata uses section/sections wording");
+  ok(/11 source sections/.test(landingDesc), "oruthalaik landing metadata says '11 source sections'");
+  ok(!/\d+\s+poems\b/i.test(landingDesc) && !/11 poems/.test(landingDesc), "oruthalaik landing metadata NEVER claims 11 (independent) poems");
+  ok(/each section is read on its own page|each section read on its own page/i.test(landingDesc), "oruthalaik landing metadata says each section is read on its own page");
+  const childDesc = String((poemItemMetadata({ params: { slug: "oruthalaik-kathal", item: p.items[0].slug } }) as { description?: string }).description ?? "");
+  ok(/\bsection 1 of 11\b/.test(childDesc), "oruthalaik child metadata says 'section 1 of 11'");
+  ok(!/\bpoem 1 of 11\b/i.test(childDesc) && !/\bpoem \d+ of \d+/i.test(childDesc), "oruthalaik child metadata NEVER says 'poem N of 11'");
+  eq(p.workForm?.en, "verse-novel", "oruthalaik workForm remains verse-novel");
+}
+// The ordinary poetry publications keep poem/poems wording — no regression from the section branch.
+{
+  for (const slug of ["kalaignarin-kaviyaranga-kavithaigal-1975"]) {
+    const p = pub(slug);
+    const landingDesc = String((poemLandingMetadata({ params: { slug } }) as { description?: string }).description ?? "");
+    ok(new RegExp(`${p.itemCount} poems by Kalaignar`).test(landingDesc), `${slug} landing metadata still says 'N poems by Kalaignar'`);
+    ok(/each poem read on its own page/.test(landingDesc), `${slug} landing metadata still says each poem read on its own page`);
+    ok(!/\bsection(s)?\b/i.test(landingDesc), `${slug} landing metadata uses no section wording`);
+    const childDesc = String((poemItemMetadata({ params: { slug, item: p.items[0].slug } }) as { description?: string }).description ?? "");
+    ok(/\bpoem 1 of \d+\b/i.test(childDesc), `${slug} child metadata still says 'poem 1 of N'`);
+    ok(!/\bsection \d+ of \d+/i.test(childDesc), `${slug} child metadata uses no section wording`);
+  }
 }
 {
   // 1975 publication — poems (கவிதைகள்), not sections.

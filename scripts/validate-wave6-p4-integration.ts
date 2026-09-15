@@ -29,6 +29,8 @@ import { createHash } from "node:crypto";
 import { publishedWorks, LIBRARY_WORKS } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import sitemap from "../app/sitemap";
+import { generateMetadata as poemLandingMetadata } from "../app/poems/[slug]/page";
+import { generateMetadata as poemItemMetadata } from "../app/poems/[slug]/[item]/page";
 import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "../data/poems";
 import { PLAY_SLUGS } from "../data/plays";
 import { SPEECH_SLUGS } from "../data/speeches";
@@ -253,6 +255,16 @@ const has = (s: string | undefined, re: RegExp) => !!s && re.test(s);
   eq(w.subtype, "poetry-publication", "oruthalaik-kathal stays a poetry-publication");
   eq(w.unitCount?.value, 11, "oruthalaik 11 sections");
   ok(has(w.descEn, /not 11 independent poems/i), "oruthalaik copy: 11 sections, not 11 poems");
+  // The generic Poetry route metadata must be reading-unit-kind aware — never advertise the
+  // verse-novel's source sections as independent poems.
+  const oruLanding = String((poemLandingMetadata({ params: { slug: "oruthalaik-kathal" } }) as { description?: string }).description ?? "");
+  ok(/verse-novel/i.test(oruLanding) && /source sections/i.test(oruLanding), "oruthalaik landing metadata: verse-novel arranged as source sections");
+  ok(!/\d+\s+poems\b/i.test(oruLanding), "oruthalaik landing metadata: never 'N poems'");
+  const oruChild = String((poemItemMetadata({ params: { slug: "oruthalaik-kathal", item: "section-1" } }) as { description?: string }).description ?? "");
+  ok(/\bsection 1 of 11\b/.test(oruChild) && !/\bpoem \d+ of \d+/i.test(oruChild), "oruthalaik child metadata: 'section 1 of 11', never 'poem N of 11'");
+  // A normal poetry publication keeps poem/poems wording (no regression).
+  const normalLanding = String((poemLandingMetadata({ params: { slug: "kalaignarin-kaviyaranga-kavithaigal-1975" } }) as { description?: string }).description ?? "");
+  ok(/\bpoems by Kalaignar\b/.test(normalLanding) && !/\bsection(s)?\b/i.test(normalLanding), "normal publication landing metadata still uses poem/poems wording");
 }
 {
   const w = W("periya-idathup-pen");

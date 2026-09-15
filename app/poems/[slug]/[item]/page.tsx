@@ -37,7 +37,10 @@ export function generateMetadata({ params }: { params: { slug: string; item: str
   const it = pub?.items.find((i) => i.slug === params.item);
   if (!pub || !it) return { title: "Poem — கவிதை | Kalaignar Digital Library" };
   const title = `${it.titleTa} — ${it.titleEn} | ${pub.title.ta} | Kalaignar Digital Library`;
-  const description = `${it.titleEn} — poem ${it.ordinal} of ${pub.itemCount} in ${pub.title.en} by Kalaignar M. Karunanidhi. Verified Tamil source with a release-complete English translation.`;
+  // Reading-unit-kind aware: a "section" publication (a verse-novel) numbers its units as SECTIONS,
+  // never poems. Absent ⇒ "poem" leaves the normal-publication wording unchanged.
+  const unitNoun = (pub.readingUnitKind ?? "poem") === "section" ? "section" : "poem";
+  const description = `${it.titleEn} — ${unitNoun} ${it.ordinal} of ${pub.itemCount} in ${pub.title.en} by Kalaignar M. Karunanidhi. Verified Tamil source with a release-complete English translation.`;
   return { title, description, openGraph: { title, description }, twitter: { title: it.titleEn, description } };
 }
 
