@@ -64,14 +64,15 @@ eq(batch.routes.filter((r) => !routes.includes(r)), [], "no manifest route outsi
 eq(routes.filter((r) => !batch.routes.includes(r)), [], "no registry route missing from the manifest");
 ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-2 manifest: discoverable=false, sitemapExposed=false");
 
-// ── 2. P3 BOUNDARY — NOT in sitemap, catalogue or discovery ─────────────────────
+// ── 2. P4 EXPOSURE — now in sitemap, catalogue and discovery ─────────────────────
+// (P4 published these works; the exhaustive set-equality proof lives in the P4 validator.)
 const urls = sitemap().map((e) => e.url);
-for (const slug of WAVE6_DRAMA_SLUGS) eq(urls.filter((u) => u === `${BASE}/plays/${slug}` || u.startsWith(`${BASE}/plays/${slug}/`)).length, 0, `ZERO ${slug} URLs in the sitemap (P3, not P4)`);
+for (const slug of WAVE6_DRAMA_SLUGS) ok(urls.filter((u) => u === `${BASE}/plays/${slug}` || u.startsWith(`${BASE}/plays/${slug}/`)).length > 0, `${slug} URLs present in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 78, "catalogue still 78 works (no P4 exposure)");
-for (const slug of WAVE6_DRAMA_SLUGS) ok(!works.some((w) => w.slug === slug), `${slug} is NOT in the catalogue`);
+eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+for (const slug of WAVE6_DRAMA_SLUGS) ok(works.some((w) => w.slug === slug), `${slug} IS in the catalogue`);
 const dramaEntries = discoveryShelves().find((s) => s.shelf.id === "drama")!.entries;
-eq(dramaEntries.length, 5, "Drama discovery still 5 entries (no Wave-6 card)");
+eq(dramaEntries.length, 8, "Drama discovery is 8 entries (3 Wave-6 cards added)");
 eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
 
 // ── 3. RENDERED SEMANTICS ───────────────────────────────────────────────────────
@@ -262,4 +263,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b2-drama — ${checks} checks, 0 failed`);
-console.log("  3 Drama works · 83 direct routes (registry-derived, fail-closed) · compressed range / unnumbered காட்சி / 47 scenes / 7 SRUs / intertitle / holds · 0 sitemap URLs · catalogue 78 · Drama discovery 5");
+console.log("  3 Drama works · 83 direct routes (registry-derived, fail-closed) · compressed range / unnumbered காட்சி / 47 scenes / 7 SRUs / intertitle / holds · P4: catalogue 100 · Drama discovery 8");

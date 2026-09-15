@@ -8,9 +8,10 @@ import { resolveWitnessLinks } from "@/lib/witness";
 import type { PoetryPublication } from "@/data/poems";
 import { WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
 
-// The discovered + Wave-6-undiscovered publications. Child item/section routes come only from each
-// publication's own frozen item registry (never `1..N`); the sitemap and discovery are untouched.
-const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
+// Wave 6 P4: POETRY_PUBLICATION_SLUGS now includes the Wave-6 publications; this union is deduplicated
+// (a `Set`). Child item/section routes come only from each publication's own frozen item registry
+// (never `1..N`).
+const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 
 // FAIL CLOSED on unknown children. A standalone poem (/poems/marathi) has no items, so
 // /poems/marathi/anything must 404 rather than render. Only the pairs enumerated below exist.
@@ -36,7 +37,10 @@ export function generateMetadata({ params }: { params: { slug: string; item: str
   const it = pub?.items.find((i) => i.slug === params.item);
   if (!pub || !it) return { title: "Poem — கவிதை | Kalaignar Digital Library" };
   const title = `${it.titleTa} — ${it.titleEn} | ${pub.title.ta} | Kalaignar Digital Library`;
-  const description = `${it.titleEn} — poem ${it.ordinal} of ${pub.itemCount} in ${pub.title.en} by Kalaignar M. Karunanidhi. Verified Tamil source with a release-complete English translation.`;
+  // Reading-unit-kind aware: a "section" publication (a verse-novel) numbers its units as SECTIONS,
+  // never poems. Absent ⇒ "poem" leaves the normal-publication wording unchanged.
+  const unitNoun = (pub.readingUnitKind ?? "poem") === "section" ? "section" : "poem";
+  const description = `${it.titleEn} — ${unitNoun} ${it.ordinal} of ${pub.itemCount} in ${pub.title.en} by Kalaignar M. Karunanidhi. Verified Tamil source with a release-complete English translation.`;
   return { title, description, openGraph: { title, description }, twitter: { title: it.titleEn, description } };
 }
 

@@ -1,0 +1,111 @@
+{
+  "note": "Wave 6 P4 — durable integration record. P4 publishes the 22 works of Batches 1–6 (already prerendered as direct readers through P1–P3) to the public catalogue, the /read discovery surface and the sitemap. P4 creates ZERO new reader routes: it exposes exactly the 321 routes recorded in data/internal/wave6/p3-routes.json. This file is a SEPARATE record and does NOT rewrite the frozen P3 manifest (whose per-batch discoverable/sitemapExposed flags remain false as P3-phase history). Hand-authored alongside the P4 change; validated by scripts/validate-wave6-p4-integration.ts.",
+  "wave": 6,
+  "phase": "P4",
+  "integrationBase": {
+    "commit": "d6621b71256ae99b1c89b4f2091513dcc5f96626",
+    "tree": "55823ff9742969e6868741312740aec06ebfd4ff",
+    "ref": "refs/heads/main"
+  },
+  "frozenP3ManifestRef": "data/internal/wave6/p3-routes.json",
+  "frozenBaselineRef": "data/internal/wave6/frozen-baseline.json",
+  "batches": [
+    { "batchId": "b1-cinema-ammaiyappan", "readerFamily": "cinema-scene", "workCount": 1, "workIds": ["ammaiyappan"], "shelf": "cinema-writing", "routeCount": 65, "collectionsAdded": 0 },
+    { "batchId": "b2-drama", "readerFamily": "drama", "workCount": 3, "workIds": ["kagithapoo", "manimagudam", "thiruvalar-desiyampillai"], "shelf": "drama", "routeCount": 83, "collectionsAdded": 0 },
+    { "batchId": "b3-speeches", "readerFamily": "speech", "workCount": 3, "workIds": ["idhaya-perikai", "namathu-nilai", "palli-vazhkkai"], "shelf": "speeches", "routeCount": 6, "collectionsAdded": 0 },
+    { "batchId": "b4-poetry", "readerFamily": "poetry", "workCount": 8, "workIds": ["aanthaiyum-arasanum", "anna-kaviyarangam", "gunanayagar-nehru", "kalaignarin-kaviyaranga-kavithaigal-1975", "kanchithan-annan", "oruthalaik-kathal", "poomudi", "thalaikettan-thambi"], "shelf": "poetry", "routeCount": 30, "collectionsAdded": 0 },
+    { "batchId": "b5-novels", "readerFamily": "novels", "workCount": 2, "workIds": ["periya-idathup-pen", "pudhaiyal"], "shelf": "fiction", "routeCount": 63, "collectionsAdded": 0 },
+    { "batchId": "b6-essays", "readerFamily": "essays", "workCount": 5, "workIds": ["ina-muzhakkam", "kolaikkalam", "kudumbaththin-nalvilakku", "sinthanaiyum-seyalum", "vedhanai-ch-siraiyinindrum-viduthalai-pera"], "shelf": "essays-articles", "routeCount": 74, "collectionsAdded": 0 }
+  ],
+  "workCount": 22,
+  "routesExposed": 321,
+  "newRoutesCreated": 0,
+  "collectionsAdded": 0,
+  "catalogue": {
+    "before": 78,
+    "after": 100,
+    "delta": 22,
+    "shelfCensusAfter": {
+      "life-writing": 1,
+      "letters": 1,
+      "fiction": 41,
+      "poetry": 14,
+      "drama": 8,
+      "cinema-writing": 7,
+      "speeches": 17,
+      "essays-articles": 9,
+      "literary-commentary": 2
+    },
+    "shelfCensusTotal": 100,
+    "nonEmptyShelves": 9
+  },
+  "collections": {
+    "before": 1,
+    "after": 1,
+    "note": "Exactly the 1977 short-story anthology. No Batch 1–6 work becomes a LibraryCollection."
+  },
+  "discovery": {
+    "before": 42,
+    "after": 64,
+    "delta": 22,
+    "initiallyVisible": 39,
+    "disclosureCap": 6,
+    "capConstant": "INITIAL_WORKS_PER_SHELF",
+    "perShelfAfter": {
+      "life-writing": 1,
+      "letters": 1,
+      "fiction": 5,
+      "poetry": 14,
+      "drama": 8,
+      "cinema-writing": 7,
+      "speeches": 17,
+      "essays-articles": 9,
+      "literary-commentary": 2
+    },
+    "overCapShelves": ["poetry", "drama", "cinema-writing", "speeches", "essays-articles"],
+    "note": "Fiction stays at 5 discovery entries (the 1977 anthology collapses to 1 entry; the 2 Wave-6 novels add 2). Each of the 22 works contributes exactly one discovery entry."
+  },
+  "sitemap": {
+    "before": 3351,
+    "after": 3672,
+    "delta": 321,
+    "duplicates": 0,
+    "setEqualToP3CumulativeRoutes": true,
+    "proof": "The set of Wave-6 routes now present in the sitemap equals p3-routes.json.cumulativeRoutes exactly: 0 missing, 0 extra, 0 duplicate."
+  },
+  "build": {
+    "prerenderRoutes": 3681,
+    "htmlFiles": 3676,
+    "derivation": "baseline 3360 prerender / 3355 html (frozen-baseline.json) + 321 Wave-6 routes",
+    "unchangedByP4": true,
+    "note": "P4 exposes the 321 P1–P3 routes but adds none, so the build route boundary is identical to P3."
+  },
+  "registryPromotions": {
+    "POEM_SLUGS": 6,
+    "POETRY_PUBLICATION_SLUGS": 2,
+    "PLAY_SLUGS": 3,
+    "SPEECH_SLUGS": 3,
+    "NOVEL_SLUGS": 2,
+    "ESSAY_SLUGS": 5,
+    "cinemaDedicatedLoader": ["ammaiyappan"],
+    "note": "Each promoted slug now occurs exactly once across the public + Wave-6 route unions (route unions de-duplicated so generateStaticParams emits each slug once). The Wave-6 helper registries remain for classification but do not double-count at runtime."
+  },
+  "literaryPayloadDelta": 0,
+  "semanticRestraint": {
+    "note": "Catalogue metadata preserves the source-faithful qualifications established in P1–P3; no source-numbering or facts were invented for discovery/catalogue copy.",
+    "invariants": [
+      "Ammaiyappan archival scenes are not presented as printed/source scene numbers.",
+      "Kagithapoo carries no invented Scene 22/23.",
+      "Thiruvalar keeps its qualification; no numbered scenes.",
+      "Namathu-nilai date stays null.",
+      "Idhaya-perikai / Palli-vazhkkai carry no invented date or venue.",
+      "Poetry publications remain publications (not upgraded).",
+      "1975 Rajaji publication ordinal 03 stays absent (ordinals [1,2,4]).",
+      "Oruthalaik-kathal is 11 sections, not 11 poems.",
+      "Periya-idathup-pen is 7 sections, not 18.",
+      "Pudhaiyal is 52 literary units, not '54 sections'.",
+      "Kudumbaththin-nalvilakku carries no invented edition or year.",
+      "Vedhanai is a government செய்தி / message, not a speech; no fabricated date or venue."
+    ]
+  }
+}

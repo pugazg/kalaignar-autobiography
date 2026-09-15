@@ -1,8 +1,8 @@
 // Cinema Writing — அம்மையப்பன் / Ammayappan (Wave 6 P1–P3, Batch 1). Types for the generated
 // reader data under public/data/cinema/ammaiyappan/, produced by scripts/import-ammaiyappan.mjs from
 // a pinned commit of pugazg/kalaignar-cinema-works. Runtime never calls GitHub. This is a direct
-// reader/route onboarding only: the work is NOT yet in data/library.ts, /read discovery or the sitemap
-// (that is Wave 6 P4, not authorized).
+// reader/route data. Wave 6 P4 published the work: it now has an entry in data/library.ts (the
+// cinema-writing shelf), a /read discovery card and sitemap URLs (its dedicated sitemap loader block).
 //
 // ── A PRINTED SCREENPLAY / DIALOGUE BOOKLET ──────────────────────────────────
 // Facts the reader must never flatten:

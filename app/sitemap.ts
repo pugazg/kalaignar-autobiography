@@ -200,6 +200,16 @@ function loadPublicationItemSlugs(slug: string): string[] {
   }
 }
 
+function loadAmmaiyappanSectionSlugs(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/cinema/ammaiyappan/reader.json");
+    const r = JSON.parse(fs.readFileSync(p, "utf-8")) as { screenplayScenes: { archivalSceneOrdinal: number }[] };
+    return r.screenplayScenes.map((s) => `scene-${String(s.archivalSceneOrdinal).padStart(3, "0")}`);
+  } catch {
+    return [];
+  }
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const idx = murasoliIndex as MurasoliIndex;
@@ -302,6 +312,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/cinema/raja-rani/source`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
     ...loadRajaRaniSectionSlugs().map((slug) => ({
       url: `${BASE}/cinema/raja-rani/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
+    // Wave 6 P4 — Cinema Batch 1: Ammayappan (dedicated route folder). Landing + source + 63 archival
+    // screenplay scene routes, from the released reader.json.
+    { url: `${BASE}/cinema/ammaiyappan`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${BASE}/cinema/ammaiyappan/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ...loadAmmaiyappanSectionSlugs().map((slug) => ({
+      url: `${BASE}/cinema/ammaiyappan/${slug}`,
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.5,

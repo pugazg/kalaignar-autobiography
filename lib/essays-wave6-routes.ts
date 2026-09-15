@@ -1,11 +1,11 @@
-// Wave 6 (Batch 6: Essays & Articles) undiscovered Essay publication slugs.
+// Wave 6 (Batch 6: Essays & Articles) Essay publication slugs — Wave-6 helper registry.
 //
-// These five publications are authorized for DIRECT reader routes only (Wave 6 P3). They are
-// deliberately NOT in `ESSAY_SLUGS` (data/essays.ts) — the DISCOVERED registry that drives the
-// sitemap — and they have NO entry in data/library.ts (the catalogue) or any `/read` shelf/collection.
-// Keeping the Wave-6 slugs here — and only here — lets the generic `/essays/[slug]` route family
-// prerender them (so they are URL-addressable) while they stay absent from discovery / catalogue /
-// sitemap until Wave 6 P4 (NOT authorized).
+// These five publications were onboarded as DIRECT reader routes in Wave 6 P3 and PUBLISHED in Wave 6
+// P4: they are now promoted into `ESSAY_SLUGS` (data/essays.ts) — the discovered registry that drives
+// the sitemap — and each has a published entry in data/library.ts (the essays-articles shelf) surfaced
+// in `/read` discovery. This Wave-6 registry is retained for classification and route-union composition;
+// the generic `/essays/[slug]` route family unions it with `ESSAY_SLUGS` under a de-duplicating `Set`,
+// so each slug prerenders exactly once.
 //
 // Route shapes (proved exactly by the Batch-6 route test against these registries and each work's own
 // frozen public/data/essays/<slug>/publication.json):

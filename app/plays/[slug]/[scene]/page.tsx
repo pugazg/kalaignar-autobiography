@@ -13,10 +13,11 @@ function loadPlay(slug: string): Play | null {
   return JSON.parse(fs.readFileSync(p, "utf8")) as Play;
 }
 
-// Wave 6 P3: discovered PLAY_SLUGS PLUS the undiscovered Wave-6 Drama works, each `[scene]` set
-// derived from its own released registry (play.json.readingUnits). Prerendered but undiscovered.
+// Wave 6 P4: PLAY_SLUGS now includes the Wave-6 Drama works; the union is deduplicated (a `Set`) so
+// each `[scene]` param prerenders once. Each `[scene]` set is derived from the work's own released
+// registry (play.json.readingUnits). WAVE6_DRAMA_SLUGS is retained as a helper registry.
 export function generateStaticParams() {
-  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].flatMap((slug) => {
+  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).flatMap((slug) => {
     const play = loadPlay(slug);
     return play ? play.readingUnits.map((s) => ({ slug, scene: s.slug })) : [];
   });

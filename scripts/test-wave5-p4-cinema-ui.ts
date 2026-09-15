@@ -3,8 +3,9 @@
  *
  *   npx tsx --tsconfig tsconfig.scripts.json scripts/test-wave5-p4-cinema-ui.ts
  *
- * Renders the REAL /read catalogue component (LibraryHome) in both languages and proves the six Cinema
- * cards keep their distinct public semantics side by side. It is deliberately NOT the 443-check P2
+ * Renders the REAL /read catalogue component (LibraryHome) in both languages and proves the six frozen
+ * Wave-5 Cinema cards keep their distinct public semantics side by side (Wave 6 P4 added ammaiyappan as
+ * the 7th cinema card, which pushes the shelf over the disclosure cap). It is deliberately NOT the 443-check P2
  * reader test (which renders each work's reader/source) nor the P3 data-layer catalogue test: it
  * asserts what the SHELF actually renders across all six works — order, per-card copy, and disclosure —
  * so a shared shelf/reader-structure or a shared card component cannot flatten one work into another.
@@ -62,14 +63,17 @@ const cinemaEn = sectionHtml(htmlEn, "cinema-writing");
 const cinemaTa = sectionHtml(htmlTa, "cinema-writing");
 ok(cinemaEn.length > 0 && cinemaTa.length > 0, "Cinema Writing section renders in both languages");
 
-// ── 1. Six Cinema cards in EXACT onboarding order (rendered hrefs) ────────────────────────────────
+// ── 1. Cinema cards in EXACT onboarding order (rendered hrefs) ────────────────────────────────────
+// Wave 6 P4 published ammaiyappan (Wave-6 Batch 1), the 7th cinema-writing card; it renders last
+// (inside the shelf's disclosure, since the shelf is now over the cap — see section 4).
 const ORDER = [
   "/cinema/manohara", "/cinema/parasakthi", "/cinema/tirumbippaar",
   "/cinema/thirai-isai-paadalgal", "/cinema/manthiri-kumari", "/cinema/raja-rani",
+  "/cinema/ammaiyappan",
 ];
-eq(hrefsIn(cinemaEn), ORDER, "six Cinema cards render in onboarding order (EN)");
-eq(hrefsIn(cinemaTa), ORDER, "six Cinema cards render in onboarding order (TA)");
-ok(!hrefsIn(cinemaEn).some((h) => !ORDER.includes(h)), "no accidental seventh Cinema card (EN)");
+eq(hrefsIn(cinemaEn), ORDER, "seven Cinema cards render in onboarding order (EN)");
+eq(hrefsIn(cinemaTa), ORDER, "seven Cinema cards render in onboarding order (TA)");
+ok(!hrefsIn(cinemaEn).some((h) => !ORDER.includes(h)), "no Cinema card outside the seven (EN)");
 
 // ── 2. Per-card distinct public semantics, as actually rendered ───────────────────────────────────
 const en = (href: string) => textOf(cardHtml(cinemaEn, href));
@@ -118,15 +122,17 @@ for (const href of ["/cinema/manthiri-kumari", "/cinema/raja-rani"]) {
   ok(!/rights|nationalis|உரிமை/i.test(both), `${href} card renders no rights claim`);
 }
 
-// ── 4. Cinema renders WITHOUT disclosure; Speeches carries the SOLE disclosure ────────────────────
-ok(cinemaEn.indexOf("<details") === -1, "Cinema section renders no <details> disclosure (at the cap)");
+// ── 4. Over-cap shelves render a disclosure ───────────────────────────────────────────────────────
+// Wave 6 P4 pushed Cinema (7), Poetry (14), Drama (8), Essays & Articles (9) over the cap alongside
+// Speeches (17); each renders one <details>. (Fiction stays at 5 — at/under the cap — so no disclosure.)
+ok(cinemaEn.indexOf("<details") !== -1, "Cinema section now renders a disclosure (7 entries, over the cap)");
 const speechesEn = sectionHtml(htmlEn, "speeches");
 ok(speechesEn.indexOf("<details") !== -1, "Speeches section carries a disclosure");
 const totalDetails = (htmlEn.match(/<details/g) ?? []).length;
-eq(totalDetails, 1, "exactly one disclosure on the whole page (Speeches)");
+eq(totalDetails, 5, "five disclosures on the whole page (the five over-cap shelves)");
 // Cross-check the rendered disclosure count matches the derived over-cap shelf set.
 const overCap = discoveryShelves().filter((s) => s.entries.length > CAP).map((s) => s.shelf.id);
-eq(overCap, ["speeches"], "the sole over-cap shelf is Speeches");
+eq(overCap, ["poetry", "drama", "cinema-writing", "speeches", "essays-articles"], "the five over-cap shelves (post Wave-6 P4)");
 
 // ── Report ──────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {
@@ -135,5 +141,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`\nwave5-p4-cinema-ui — ${checks} checks, 0 failed`);
-  console.log("  6 Cinema cards in onboarding order · per-work semantics distinct · Manthiri credit kept · Raja neutral · no year/edition/rights · Cinema no disclosure · Speeches sole disclosure");
+  console.log("  7 Cinema cards in onboarding order (+ammaiyappan via Wave-6 P4) · per-work semantics distinct · Manthiri credit kept · Raja neutral · no year/edition/rights · Cinema now over-cap · 5 disclosures");
 }

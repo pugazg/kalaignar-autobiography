@@ -46,7 +46,7 @@ eq(routes.length, 63, "exactly 63 Batch-5 direct routes");
 eq(new Set(routes).size, routes.length, "no duplicate route");
 eq(novelOf("periya-idathup-pen").sections.length, 7, "periya 7 sections → 9 routes");
 eq(novelOf("pudhaiyal").sections.length, 52, "pudhaiyal 52 sections → 54 routes");
-for (const s of WAVE6_NOVEL_SLUGS) ok(!(NOVEL_SLUGS as readonly string[]).includes(s), `${s} NOT in discovered NOVEL_SLUGS`);
+for (const s of WAVE6_NOVEL_SLUGS) ok((NOVEL_SLUGS as readonly string[]).includes(s), `${s} IS in discovered NOVEL_SLUGS (P4 promoted)`);
 
 const batch = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/batches/b5-novels-routes.json"), "utf8")) as { batchId: string; workIds: string[]; collectionIds: string[]; readerFamily: string; discoverable: boolean; sitemapExposed: boolean; routeCount: number; routes: string[] };
 eq(batch.batchId, "b5-novels", "Batch-5 batchId");
@@ -105,24 +105,26 @@ const periyaSource = renderTa(createElement(NovelSource, { slug: "periya-idathup
 ok(!/உள்ளமைந்த திரைப்படக் காட்சி/.test(periyaSource), "periya source: no embedded-sequence CARD");
 ok(/நூல் அமைப்பு/.test(periyaSource), "periya source: shows the Work-structure card");
 
-// ── 5. P4 BOUNDARY — sitemap / catalogue / discovery exclude Batch-5 ──────────────────────────────
+// ── 5. P4 EXPOSURE — sitemap / catalogue / discovery now include Batch-5 ──────────────────────────
+// (P4 published these works; the exhaustive set-equality proof lives in the P4 validator.)
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
-for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 0, `ZERO sitemap URLs for Batch-5 route ${r}`);
+for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 78, "catalogue still exactly 78 works (no P4 exposure)");
+eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
 eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
 const fiction = discoveryShelves().find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "fiction discovery shelf present");
 const fictionEntries = fiction ? fiction.entries : [];
+eq(fictionEntries.length, 5, "Fiction discovery is 5 entries (2 Wave-6 novels added; the 1977 anthology stays 1 entry)");
 for (const s of WAVE6_NOVEL_SLUGS) {
-  ok(!works.some((w) => w.slug === s), `${s} is NOT in the catalogue`);
-  ok(!fictionEntries.some((e) => (e as { work?: { slug?: string }; slug?: string }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `${s} is NOT a Fiction discovery entry`);
+  ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
+  ok(fictionEntries.some((e) => (e as { work?: { slug?: string }; slug?: string }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `${s} IS a Fiction discovery entry`);
 }
-// balipeedam-nokki (the discovered novel) is UNAFFECTED and still discovered.
+// balipeedam-nokki (the previously discovered novel) is UNAFFECTED and still discovered.
 ok((NOVEL_SLUGS as readonly string[]).includes("balipeedam-nokki"), "balipeedam-nokki still in discovered NOVEL_SLUGS");
 ok(urls.includes(`${BASE}/novels/balipeedam-nokki`), "balipeedam-nokki still in sitemap");
 ok(works.some((w) => w.slug === "balipeedam-nokki"), "balipeedam-nokki still in catalogue");
-console.log(`  (fiction discovery entries: ${fictionEntries.length} — Batch-5 adds none)`);
+console.log(`  (fiction discovery entries: ${fictionEntries.length} — Batch-5 adds its 2 novels)`);
 
 console.log(`\nWave-6 Batch-5 novels route/UI test: ${checks} checks, ${failures.length} failures.`);
 if (failures.length) { for (const f of failures) console.error("  ✗", f); process.exit(1); }

@@ -38,7 +38,7 @@ eq([...WAVE6_SPEECH_SLUGS], ["namathu-nilai", "idhaya-perikai", "palli-vazhkkai"
 const routes = WAVE6_SPEECH_SLUGS.flatMap((slug) => [`/speeches/${slug}`, `/speeches/${slug}/source`]);
 eq(routes.length, 6, "6 direct routes (3 readers + 3 source pages)");
 eq(new Set(routes).size, routes.length, "no duplicate route");
-for (const slug of WAVE6_SPEECH_SLUGS) ok(!(SPEECH_SLUGS as readonly string[]).includes(slug), `${slug} is NOT in the discovered SPEECH_SLUGS`);
+for (const slug of WAVE6_SPEECH_SLUGS) ok((SPEECH_SLUGS as readonly string[]).includes(slug), `${slug} IS in the discovered SPEECH_SLUGS (P4 promoted)`);
 
 const batch = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave6/batches/b3-speeches-routes.json"), "utf8")) as { batchId: string; workIds: string[]; collectionIds: string[]; readerFamily: string; discoverable: boolean; sitemapExposed: boolean; routes: string[] };
 eq(batch.batchId, "b3-speeches", "Batch-3 batchId");
@@ -49,14 +49,15 @@ eq(batch.readerFamily, "speech", "Batch-3 readerFamily");
 eq(uniqSort(batch.routes), uniqSort(routes), "Batch-3 route manifest == registry-derived routes (exact set)");
 ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-3 manifest: discoverable=false, sitemapExposed=false");
 
-// ── 2. P3 BOUNDARY — NOT in sitemap, catalogue or discovery ─────────────────────
+// ── 2. P4 EXPOSURE — now in sitemap, catalogue and discovery ─────────────────────
+// (P4 published these works; the exhaustive set-equality proof lives in the P4 validator.)
 const urls = sitemap().map((e) => e.url);
-for (const slug of WAVE6_SPEECH_SLUGS) eq(urls.filter((u) => u === `${BASE}/speeches/${slug}` || u.startsWith(`${BASE}/speeches/${slug}/`)).length, 0, `ZERO ${slug} URLs in the sitemap (P3, not P4)`);
+for (const slug of WAVE6_SPEECH_SLUGS) ok(urls.filter((u) => u === `${BASE}/speeches/${slug}` || u.startsWith(`${BASE}/speeches/${slug}/`)).length > 0, `${slug} URLs present in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 78, "catalogue still 78 works (no P4 exposure)");
-for (const slug of WAVE6_SPEECH_SLUGS) ok(!works.some((w) => w.slug === slug), `${slug} is NOT in the catalogue`);
+eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+for (const slug of WAVE6_SPEECH_SLUGS) ok(works.some((w) => w.slug === slug), `${slug} IS in the catalogue`);
 const speechEntries = discoveryShelves().find((s) => s.shelf.id === "speeches")!.entries;
-eq(speechEntries.length, 14, "Speeches discovery still 14 entries (no Wave-6 card)");
+eq(speechEntries.length, 17, "Speeches discovery is 17 entries (3 Wave-6 cards added)");
 eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
 
 // ── 3. DATA SEMANTICS + RENDERED /source ────────────────────────────────────────
@@ -116,4 +117,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b3-speeches — ${checks} checks, 0 failed`);
-console.log("  3 speeches · 6 direct routes (registry-derived, fail-closed) · two-House / 7-section / compilation semantics · date:null · 0 sitemap URLs · catalogue 78 · Speeches discovery 14");
+console.log("  3 speeches · 6 direct routes (registry-derived, fail-closed) · two-House / 7-section / compilation semantics · date:null · P4: 6 sitemap URLs · catalogue 100 · Speeches discovery 17");

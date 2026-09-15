@@ -1,10 +1,10 @@
-// Wave 6 (Batch 2: Drama) undiscovered play slugs.
+// Wave 6 (Batch 2: Drama) play slugs — Wave-6 helper registry.
 //
-// These three plays are authorized for DIRECT reader routes only (Wave 6 P3). They are deliberately
-// NOT in `PLAY_SLUGS` (data/plays.ts), which is the DISCOVERED drama registry that drives the
-// catalogue, `/read` discovery and the sitemap. Keeping them here — and only here — makes the generic
-// `/plays/[slug]` route prerender them (so they are URL-addressable) while they stay absent from
-// discovery/catalogue/sitemap until Wave 6 P4 (NOT authorized).
+// These three plays were onboarded as DIRECT reader routes in Wave 6 P3 and PUBLISHED in Wave 6 P4:
+// they are now promoted into `PLAY_SLUGS` (data/plays.ts) — the discovered drama registry that drives
+// the catalogue, `/read` discovery and the sitemap. This Wave-6 registry is retained for classification
+// and route-union composition; the generic `/plays/[slug]` route unions it with `PLAY_SLUGS` under a
+// de-duplicating `Set`, so each slug prerenders exactly once (no double-counted generateStaticParams).
 //
 // Each play's `[scene]` route set is derived from its RELEASED registry (`play.json.readingUnits`),
 // never from a reconstructed numeric range — the same released-registry-is-the-authority rule the

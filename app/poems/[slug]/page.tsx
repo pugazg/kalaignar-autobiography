@@ -10,12 +10,12 @@ import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import type { Poem, PoetryPublication } from "@/data/poems";
 import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
 
-// The DISCOVERED registries (POEM_SLUGS / POETRY_PUBLICATION_SLUGS) drive the catalogue, /read and the
-// sitemap. The Wave-6 Batch-4 works are authorized as DIRECT readers only (P3): they extend the route
-// family's prerender set and its fail-closed guard, but never the discovered registries or the
-// sitemap. Combining here — and only here — keeps them URL-addressable yet undiscovered until P4.
-const ALL_POEM_SLUGS = [...POEM_SLUGS, ...WAVE6_POEM_SLUGS] as readonly string[];
-const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
+// Wave 6 P4: the Wave-6 Batch-4 works are now promoted into POEM_SLUGS / POETRY_PUBLICATION_SLUGS, so
+// these unions are deduplicated (a `Set`) to keep exactly one prerender param per slug. The WAVE6_*
+// registries are retained as helpers; unioning them here is harmless because the `Set` collapses the
+// now-overlapping membership.
+const ALL_POEM_SLUGS = Array.from(new Set<string>([...POEM_SLUGS, ...WAVE6_POEM_SLUGS])) as readonly string[];
+const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 
 function loadPoem(slug: string): Poem | null {
   try {
@@ -70,7 +70,15 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     const pub = loadPublication(params.slug);
     if (!pub) return { title: "Poetry — கவிதை | Kalaignar Digital Library" };
     const title = `${pub.title.ta} — ${pub.title.en} | Kalaignar Digital Library`;
-    const description = `${pub.title.en} — ${pub.itemCount} poems by Kalaignar M. Karunanidhi${pub.editionStatement ? `, ${pub.editionStatement}` : ""}. The verified Tamil source text with a release-complete English translation, each poem read on its own page.`;
+    // Reading-unit-kind aware, so the metadata never advertises a work's units as the wrong form.
+    // Absent ⇒ "poem": a normal poetry publication of independently-authored poems (the wording is
+    // unchanged). "section": ONE continuous work — a verse-novel — whose units are source-established
+    // SECTIONS, never independent poems; name the work-form where the payload supplies it.
+    const editionSuffix = pub.editionStatement ? `, ${pub.editionStatement}` : "";
+    const description =
+      (pub.readingUnitKind ?? "poem") === "section"
+        ? `${pub.title.en} — ${pub.workForm?.en ? `a ${pub.workForm.en}` : "a work"} by Kalaignar M. Karunanidhi${editionSuffix}, arranged here as ${pub.itemCount} source sections. The verified Tamil source text with a release-complete English translation, each section read on its own page.`
+        : `${pub.title.en} — ${pub.itemCount} poems by Kalaignar M. Karunanidhi${editionSuffix}. The verified Tamil source text with a release-complete English translation, each poem read on its own page.`;
     return { title, description, openGraph: { title, description }, twitter: { title: pub.title.en, description } };
   }
   const p = loadPoem(params.slug);

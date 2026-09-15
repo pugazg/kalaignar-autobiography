@@ -290,5 +290,5 @@ export type NovelProvenance = {
 
 // Integrated novel slugs (build/import authority; the public catalog entry lives in
 // data/library.ts). This benchmark integrates exactly one novel.
-export const NOVEL_SLUGS = ["balipeedam-nokki"] as const;
+export const NOVEL_SLUGS = ["balipeedam-nokki", "periya-idathup-pen", "pudhaiyal"] as const;
 export type NovelSlug = (typeof NOVEL_SLUGS)[number];

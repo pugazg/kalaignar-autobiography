@@ -8,9 +8,9 @@ import type { EssayPublication } from "@/data/essays";
 import { publicationMetaSentence } from "@/lib/essay-source-facts";
 import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
 
-// Discovered Essay publications PLUS the Wave-6 Batch-6 direct-only publications. The Wave-6 set is
-// prerendered here (URL-addressable) but stays out of ESSAY_SLUGS, the catalogue and the sitemap.
-const ALL_ESSAY_SLUGS: readonly string[] = [...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS];
+// Wave 6 P4: ESSAY_SLUGS now includes the Wave-6 Batch-6 publications, so this union is deduplicated
+// (a `Set`) to prerender each landing page once. WAVE6_ESSAY_SLUGS is retained as a helper registry.
+const ALL_ESSAY_SLUGS: readonly string[] = Array.from(new Set<string>([...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS]));
 
 // Not exported: a Next.js page module may only export the framework's own reserved names.
 function loadPublication(slug: string): EssayPublication | null {

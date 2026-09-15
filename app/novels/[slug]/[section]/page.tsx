@@ -7,7 +7,7 @@ import { NOVEL_SLUGS } from "@/data/novels";
 import type { Novel } from "@/data/novels";
 import { WAVE6_NOVEL_SLUGS } from "@/lib/novels-wave6-routes";
 
-const ALL_NOVEL_SLUGS: readonly string[] = [...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS];
+const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS]));
 
 function loadNovel(slug: string): Novel | null {
   try {

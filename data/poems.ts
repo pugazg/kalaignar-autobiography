@@ -402,6 +402,13 @@ export const POEM_SLUGS = [
   "idhayathai-thanthidu-anna",
   "marathi",
   "thennan-kathai",
+  // ── Wave 6 P4 — promoted from the direct-only Wave-6 registry into the discovered public registry ──
+  "thalaikettan-thambi",
+  "aanthaiyum-arasanum",
+  "poomudi",
+  "anna-kaviyarangam",
+  "gunanayagar-nehru",
+  "kanchithan-annan",
 ] as const;
 export type PoemSlug = (typeof POEM_SLUGS)[number];
 
@@ -625,7 +632,7 @@ export interface PoetryPublicationProvenance {
 }
 
 /** Registry: exactly the P2 publication. P3 will add கலைஞரின் கவிதைகள். Routes are driven from it. */
-export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum", "kalaignarin-kavithaigal"] as const;
+export const POETRY_PUBLICATION_SLUGS = ["kaalap-pezhaiyum-kavithai-saaviyum", "kalaignarin-kavithaigal", "kalaignarin-kaviyaranga-kavithaigal-1975", "oruthalaik-kathal"] as const;
 export type PoetryPublicationSlug = (typeof POETRY_PUBLICATION_SLUGS)[number];
 
 /**
