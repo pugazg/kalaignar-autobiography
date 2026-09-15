@@ -87,9 +87,13 @@ const STANDALONE = ["anaiya-vilakku-anna", "marathi", "thennan-kathai", EXISTING
 const PUBLICATION = "kaalap-pezhaiyum-kavithai-saaviyum";
 const PUBLICATION_P3 = "kalaignarin-kavithaigal";
 const PUBLICATIONS = [PUBLICATION, PUBLICATION_P3];
-eq(POEM_SLUGS.length, 4, "exactly four standalone poem slugs");
-eq([...POEM_SLUGS].sort(), STANDALONE, "the standalone registry is the existing poem plus exactly the three P1 works");
-eq([...POETRY_PUBLICATION_SLUGS], PUBLICATIONS, "exactly the two publications (P2, P3) are registered");
+// Wave 6 P4 promoted the six standalone Batch-4 poems and the two Batch-4 publications into the public
+// registries, so the discovered Poetry world grew from 4+2 to 10+4.
+const STANDALONE_ALL = [...STANDALONE, ...WAVE6_POEM_SLUGS].sort();
+const PUBLICATIONS_ALL = [...PUBLICATIONS, ...WAVE6_POETRY_PUBLICATION_SLUGS];
+eq(POEM_SLUGS.length, 10, "ten standalone poem slugs (4 + six Wave-6 Batch-4 poems)");
+eq([...POEM_SLUGS].sort(), STANDALONE_ALL, "the standalone registry is the pre-P4 four plus the six Wave-6 poems");
+eq([...POETRY_PUBLICATION_SLUGS].sort(), [...PUBLICATIONS_ALL].sort(), "four publications registered (P2, P3 + two Wave-6 Batch-4)");
 eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations are declared (P3)");
 {
   // Both relations link a standalone poem to a kalaignarin-kavithaigal item; neither touches Kaalap.
@@ -102,15 +106,15 @@ eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations are declar
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 78, "the catalogue holds 78 works (76 + the two Wave-5 cinema works)");
+eq(works.length, 100, "the catalogue holds 100 works (post Wave-6 P4)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 42, "42 discovery entries (40 + the two Wave-5 cinema works)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 64, "64 discovery entries (post Wave-6 P4)");
 ok(!!poetry, "the Poetry shelf is present");
-eq(poetry!.works.length, 6, "Poetry holds exactly 6 works (4 standalone + 2 publications)");
-// The publication is ONE discovery entry even though it holds 58 items — it is one work with reading
-// units, so works and entries still move together on the Poetry shelf (unlike Fiction's 39/3).
-eq(poetry!.entries.length, 6, "Poetry shows exactly 6 discovery entries");
-eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE, ...PUBLICATIONS].sort(), "the Poetry shelf's works are the four standalones plus the two publications");
+eq(poetry!.works.length, 14, "Poetry holds 14 works (10 standalone + 4 publications, post Wave-6 P4)");
+// Each publication is ONE discovery entry even though it holds many items — one work with reading
+// units, so works and entries still move together on the Poetry shelf (unlike Fiction's 41/5).
+eq(poetry!.entries.length, 14, "Poetry shows 14 discovery entries (post Wave-6 P4)");
+eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE_ALL, ...PUBLICATIONS_ALL].sort(), "the Poetry shelf's works are the ten standalones plus the four publications");
 {
   const existing = poetry!.works.find((w) => w.slug === EXISTING)!;
   eq(existing.href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");

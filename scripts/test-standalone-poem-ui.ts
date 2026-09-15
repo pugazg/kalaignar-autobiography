@@ -44,13 +44,18 @@ const BASE = "https://nenjukkuneethi.org";
 const DATA = path.join(process.cwd(), "public/data/poems");
 const read = <T,>(slug: string, file: string): T => JSON.parse(fs.readFileSync(path.join(DATA, slug, file), "utf-8"));
 
-const works = POEM_SLUGS.map((slug) => ({
+// This Wave-4 P1 test proves the provenance/rendering semantics of the FOUR original standalone poems.
+// Wave 6 P4 promoted six more standalone poems into POEM_SLUGS; their semantics are covered by the
+// Batch-4 test, so this suite stays scoped to its original four. (The sitemap/prerender coverage below
+// deliberately iterates the full POEM_SLUGS, since every discovered standalone must be routable.)
+const ORIGINAL_STANDALONE = ["anaiya-vilakku-anna", "idhayathai-thanthidu-anna", "marathi", "thennan-kathai"] as const;
+const works = ORIGINAL_STANDALONE.map((slug) => ({
   slug,
   poem: read<Poem>(slug, "poem.json"),
   prov: read<PoemProvenance>(slug, "provenance.json"),
 }));
 
-eq(works.length, 4, "all four standalone poems are under test");
+eq(works.length, 4, "all four original standalone poems are under test");
 
 /**
  * The provenance page for one work, in BOTH languages.
@@ -323,11 +328,11 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
 // ── 10. The catalogue and the payloads agree ─────────────────────────────────────────────────────
 {
   const poetry = publishedWorks().filter((x) => x.shelf === "poetry");
-  // The Poetry shelf now also holds the P2 publication, so the STANDALONE works are a subset: every
-  // POEM_SLUGS entry is on the shelf, and the shelf additionally carries the publication.
-  const standaloneOnShelf = poetry.filter((x) => (POEM_SLUGS as readonly string[]).includes(x.slug));
-  eq(standaloneOnShelf.length, 4, "the four standalone poems are on the Poetry shelf");
-  eq(standaloneOnShelf.map((x) => x.slug).sort(), [...POEM_SLUGS].sort(), "the standalone works are exactly the registry's");
+  // The Poetry shelf holds publications and (post Wave-6 P4) ten standalone poems. This test's four
+  // original standalones are a subset: each must have its own catalogue entry on the shelf.
+  const originalOnShelf = poetry.filter((x) => (ORIGINAL_STANDALONE as readonly string[]).includes(x.slug));
+  eq(originalOnShelf.length, 4, "the four original standalone poems are on the Poetry shelf");
+  eq(originalOnShelf.map((x) => x.slug).sort(), [...ORIGINAL_STANDALONE].sort(), "the four original standalones each have a shelf entry");
   for (const w of works) {
     const entry = poetry.find((x) => x.slug === w.slug)!;
     ok(!!entry, `${w.slug}: has a catalogue entry`);

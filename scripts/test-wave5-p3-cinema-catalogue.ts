@@ -28,7 +28,7 @@ const R = readerOf<RajaRaniReader>("raja-rani");
 
 // ── CATALOGUE ───────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 78, "catalogue holds 78 published works");
+eq(works.length, 100, "catalogue holds 100 published works (post Wave-6 P4)");
 const man = LIBRARY_WORKS.filter((w) => w.slug === "manthiri-kumari");
 const raja = LIBRARY_WORKS.filter((w) => w.slug === "raja-rani");
 eq(man.length, 1, "exactly one Manthiri Kumari work record");
@@ -41,13 +41,13 @@ eq(man[0]?.state, "published", "Manthiri is published");
 eq(raja[0]?.state, "published", "Raja is published");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
-eq(byShelf["cinema-writing"], 6, "Cinema Writing holds 6 works");
-// Every OTHER shelf unchanged from the pre-P3 baseline.
-eq(byShelf["poetry"], 6, "Poetry unchanged (6)");
-eq(byShelf["fiction"], 39, "Fiction unchanged (39)");
-eq(byShelf["drama"], 5, "Drama unchanged (5)");
-eq(byShelf["speeches"], 14, "Speeches unchanged (14)");
-eq(byShelf["essays-articles"], 4, "Essays & Articles unchanged (4)");
+// Post Wave-6 P4 census (this Wave-5 P3 test's baseline moves with the published world).
+eq(byShelf["cinema-writing"], 7, "Cinema Writing holds 7 works (post Wave-6 P4: +ammaiyappan)");
+eq(byShelf["poetry"], 14, "Poetry 14 (post Wave-6 P4)");
+eq(byShelf["fiction"], 41, "Fiction 41 (post Wave-6 P4)");
+eq(byShelf["drama"], 8, "Drama 8 (post Wave-6 P4)");
+eq(byShelf["speeches"], 17, "Speeches 17 (post Wave-6 P4)");
+eq(byShelf["essays-articles"], 9, "Essays & Articles 9 (post Wave-6 P4)");
 eq(byShelf["literary-commentary"], 2, "Literary Commentary unchanged (2)");
 eq(byShelf["life-writing"], 1, "Life Writing unchanged (1)");
 eq(byShelf["letters"], 1, "Letters unchanged (1)");
@@ -57,29 +57,29 @@ eq(LIBRARY_COLLECTIONS.length, 1, "collections remain 1");
 // ── DISCOVERY ─────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 42, "42 discovery entries");
+eq(entries.length, 64, "64 discovery entries (post Wave-6 P4)");
 const initiallyVisible = shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0);
-eq(initiallyVisible, 34, "34 initially visible discovery entries");
+eq(initiallyVisible, 39, "39 initially visible discovery entries (post Wave-6 P4)");
 const cinema = shelves.find((s) => s.shelf.id === "cinema-writing")!;
-eq(cinema.entries.length, 6, "Cinema Writing renders 6 discovery entries");
-ok(cinema.entries.length <= CAP, "Cinema Writing is within the cap — no disclosure control");
+eq(cinema.entries.length, 7, "Cinema Writing renders 7 discovery entries (post Wave-6 P4: +ammaiyappan)");
+ok(cinema.entries.length > CAP, "Cinema Writing is now over the cap — disclosure control active");
 const cinemaHrefs = cinema.entries.map((e) => (e.kind === "collection" ? e.collection.href : e.work.href));
-ok(cinemaHrefs.includes("/cinema/manthiri-kumari") && cinemaHrefs.includes("/cinema/raja-rani"), "both new works resolve in Cinema discovery");
-// Deterministic onboarding order (LIBRARY_WORKS declaration order).
+ok(cinemaHrefs.includes("/cinema/manthiri-kumari") && cinemaHrefs.includes("/cinema/raja-rani"), "both Wave-5 works resolve in Cinema discovery");
+// Deterministic onboarding order (LIBRARY_WORKS declaration order); ammaiyappan is the Wave-6 7th.
 eq(cinemaHrefs, [
   "/cinema/manohara", "/cinema/parasakthi", "/cinema/tirumbippaar",
-  "/cinema/thirai-isai-paadalgal", "/cinema/manthiri-kumari", "/cinema/raja-rani",
-], "Cinema shelf order is manohara · parasakthi · tirumbippaar · film-songs · manthiri · raja");
-// Only over-cap shelves get a disclosure. Speeches (14 discovery entries) is the sole over-cap shelf;
-// Fiction has 39 works but only 3 discovery entries (its 37-story anthology is one collection entry),
-// so it is BELOW the cap. Cinema moving 4 → 6 stays exactly at the cap and adds no disclosure.
-eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["speeches"], "Speeches remains the sole over-cap shelf");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 3, "Fiction has 3 discovery entries (below the cap) despite 39 works");
+  "/cinema/thirai-isai-paadalgal", "/cinema/manthiri-kumari", "/cinema/raja-rani", "/cinema/ammaiyappan",
+], "Cinema shelf order is manohara · parasakthi · tirumbippaar · film-songs · manthiri · raja · ammaiyappan");
+// Post Wave-6 P4, five shelves are over the cap: poetry, drama, cinema-writing, speeches, essays-articles.
+// Fiction has 41 works but only 5 discovery entries (its anthology is one collection entry), so it stays
+// at/under the cap. Cinema moved 6 → 7 and is now over the cap.
+eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "poetry", "speeches"], "the five over-cap shelves (post Wave-6 P4)");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 5, "Fiction has 5 discovery entries (at/under the cap) despite 41 works");
 
 // ── SITEMAP ─────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
 const origin = new URL(urls[0]).origin;
-eq(urls.length, 3351, "sitemap holds 3351 URLs");
+eq(urls.length, 3672, "sitemap holds 3672 URLs (post Wave-6 P4)");
 eq(new Set(urls).size, urls.length, "sitemap has 0 duplicate URLs");
 const manUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/manthiri-kumari`));
 const rajaUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/raja-rani`));
@@ -137,4 +137,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave5-p3-cinema-catalogue — ${checks} checks, 0 failed`);
-console.log("  78 works · Cinema Writing 6 · discovery 42 / visible 34 · collections 1 · sitemap 3351 (+89, 0 dup) · deterministic order · no overclaims");
+console.log("  post Wave-6 P4: 100 works · Cinema Writing 7 · discovery 64 / visible 39 · collections 1 · sitemap 3672 (0 dup) · Wave-5 89=18+71 intact · deterministic order · no overclaims");

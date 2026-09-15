@@ -87,18 +87,18 @@ const entries = shelves.flatMap((s) => s.entries);
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
-eq(works.length, 78, "the catalogue holds 78 published works");
-eq(entries.length, 42, "the page holds 42 discovery entries");
+eq(works.length, 100, "the catalogue holds 100 published works (post Wave-6 P4)");
+eq(entries.length, 64, "the page holds 64 discovery entries (post Wave-6 P4)");
 eq(entries.filter((e) => e.kind === "collection").length, 1, "exactly one collection entry across all shelves");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "the Fiction shelf is rendered");
-eq(fiction!.works.length, 39, "Fiction still holds 39 works");
-eq(fiction!.entries.length, 3, "Fiction shows 3 discovery entries");
+eq(fiction!.works.length, 41, "Fiction holds 41 works (post Wave-6 P4: +2 novels)");
+eq(fiction!.entries.length, 5, "Fiction shows 5 discovery entries (the collection collapses; 4 standalone novels)");
 eq(
   fiction!.entries.map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)),
-  [BENCHMARK, "balipeedam-nokki", "kizhavan-kanavu"],
-  "Fiction shows the collection, then the two standalone works",
+  [BENCHMARK, "balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal"],
+  "Fiction shows the collection, then the standalone works (incl. the 2 Wave-6 novels)",
 );
 
 // The collection appears once; no member appears as its own card.
@@ -118,14 +118,16 @@ for (const s of shelves.filter((x) => x.shelf.id !== "fiction")) {
   eq(s.entries.length, s.works.length, `${s.shelf.en}: every work is still its own entry`);
 }
 const speeches = shelves.find((s) => s.shelf.id === "speeches");
-eq(speeches!.entries.length, 14, "Speeches still has 14 entries");
+eq(speeches!.entries.length, 17, "Speeches has 17 entries (post Wave-6 P4)");
 ok(/<details/.test(html), "the Speeches disclosure survives Phase 1");
-eq((html.match(/<details/g) ?? []).length, 1, "Fiction's disclosure is gone; only Speeches keeps one");
+// Fiction (5 entries) is at/under the cap, so it has no disclosure. Post Wave-6 P4 the five over-cap
+// shelves — poetry, drama, cinema-writing, speeches, essays-articles — each render one <details>.
+eq((html.match(/<details/g) ?? []).length, 5, "Fiction has no disclosure; the five over-cap shelves each keep one");
 
 // The shelf heading states works, never entries.
 const fictionSection = html.slice(html.indexOf('aria-labelledby="shelf-fiction"'));
 const fictionHeading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(fictionSection);
-ok(!!fictionHeading && /\b39\b/.test(fictionHeading[1]), "the Fiction heading states 39 works, not 3");
+ok(!!fictionHeading && /\b41\b/.test(fictionHeading[1]), "the Fiction heading states 41 works, not 5");
 ok(!!fictionHeading && /\b1\b/.test(fictionHeading[1]), "the Fiction heading states its 1 collection");
 
 // ── 3. Reverse lookup is derived, plural, and not stored ─────────────────────────────────────────
