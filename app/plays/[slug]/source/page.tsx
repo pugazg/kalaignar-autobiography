@@ -17,7 +17,8 @@ function load(slug: string): { play: Play; prov: PlayProvenance } | null {
   };
 }
 
-// Wave 6 P3: discovered PLAY_SLUGS PLUS the undiscovered Wave-6 Drama works' `/source` pages.
+// Wave 6 P4: PLAY_SLUGS now includes the Wave-6 Drama works; the union is deduplicated (a `Set`) so
+// each `/source` page prerenders exactly once. WAVE6_DRAMA_SLUGS is retained as a helper registry.
 export function generateStaticParams() {
   return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).map((slug) => ({ slug }));
 }

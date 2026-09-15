@@ -1,11 +1,10 @@
-// Wave 6 (Batch 4: Poetry) undiscovered Poetry slugs.
+// Wave 6 (Batch 4: Poetry) Poetry slugs — Wave-6 helper registry.
 //
-// These eight works are authorized for DIRECT reader routes only (Wave 6 P3). They are deliberately
-// NOT in `POEM_SLUGS` / `POETRY_PUBLICATION_SLUGS` (data/poems.ts), which are the DISCOVERED Poetry
-// registries that drive the catalogue, `/read` discovery and the sitemap. Keeping the Wave-6 slugs
-// here — and only here — lets the generic `/poems/[slug]` route family prerender them (so they are
-// URL-addressable) while they stay absent from discovery/catalogue/sitemap until Wave 6 P4 (NOT
-// authorized).
+// These eight works were onboarded as DIRECT reader routes in Wave 6 P3 and PUBLISHED in Wave 6 P4:
+// they are now promoted into `POEM_SLUGS` / `POETRY_PUBLICATION_SLUGS` (data/poems.ts) — the discovered
+// Poetry registries that drive the catalogue, `/read` discovery and the sitemap. This Wave-6 registry
+// is retained for classification and route-union composition; the generic `/poems/[slug]` route family
+// unions it with the public registries under a de-duplicating `Set`, so each slug prerenders once.
 //
 // Route shapes (proved exactly by the Batch-4 route test against these registries):
 //   * six standalone poems — landing (`/poems/<slug>`) + `/source`;

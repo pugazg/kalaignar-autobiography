@@ -8,8 +8,8 @@ import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import type { Poem, PoemProvenance, PoetryPublicationProvenance } from "@/data/poems";
 import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
 
-// Wave-6 Batch-4 direct readers extend the /source prerender set and its fail-closed guard only; the
-// discovered registries and the sitemap are untouched (see app/poems/[slug]/page.tsx).
+// Wave 6 P4: the Wave-6 Batch-4 slugs are now in POEM_SLUGS / POETRY_PUBLICATION_SLUGS; these unions
+// are deduplicated (a `Set`) so each /source page prerenders once (see app/poems/[slug]/page.tsx).
 const ALL_POEM_SLUGS = Array.from(new Set<string>([...POEM_SLUGS, ...WAVE6_POEM_SLUGS])) as readonly string[];
 const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 

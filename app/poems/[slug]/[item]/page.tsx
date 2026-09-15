@@ -8,8 +8,9 @@ import { resolveWitnessLinks } from "@/lib/witness";
 import type { PoetryPublication } from "@/data/poems";
 import { WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
 
-// The discovered + Wave-6-undiscovered publications. Child item/section routes come only from each
-// publication's own frozen item registry (never `1..N`); the sitemap and discovery are untouched.
+// Wave 6 P4: POETRY_PUBLICATION_SLUGS now includes the Wave-6 publications; this union is deduplicated
+// (a `Set`). Child item/section routes come only from each publication's own frozen item registry
+// (never `1..N`).
 const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 
 // FAIL CLOSED on unknown children. A standalone poem (/poems/marathi) has no items, so

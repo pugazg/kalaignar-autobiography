@@ -10,10 +10,10 @@ import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "@/data/poems";
 import type { Poem, PoetryPublication } from "@/data/poems";
 import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
 
-// The DISCOVERED registries (POEM_SLUGS / POETRY_PUBLICATION_SLUGS) drive the catalogue, /read and the
-// sitemap. The Wave-6 Batch-4 works are authorized as DIRECT readers only (P3): they extend the route
-// family's prerender set and its fail-closed guard, but never the discovered registries or the
-// sitemap. Combining here — and only here — keeps them URL-addressable yet undiscovered until P4.
+// Wave 6 P4: the Wave-6 Batch-4 works are now promoted into POEM_SLUGS / POETRY_PUBLICATION_SLUGS, so
+// these unions are deduplicated (a `Set`) to keep exactly one prerender param per slug. The WAVE6_*
+// registries are retained as helpers; unioning them here is harmless because the `Set` collapses the
+// now-overlapping membership.
 const ALL_POEM_SLUGS = Array.from(new Set<string>([...POEM_SLUGS, ...WAVE6_POEM_SLUGS])) as readonly string[];
 const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 

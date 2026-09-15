@@ -29,6 +29,7 @@
     "test:wave6-b6-essays": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave6-b6-essays.ts",
     "build:wave6-p3-route-manifest": "node scripts/build-wave6-p3-route-manifest.mjs",
     "test:wave6-p3-build": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-p3-build.ts",
+    "test:wave6-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-p4-integration.ts",
     "test:p4-witness-integrity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave4-p4-poetry-witnesses.ts",
     "test:p4-witness-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave4-p4-witness-ui.ts",
     "test:validator-contract": "node scripts/test-validator-contract.mjs \"${KDL_SOURCES_DIR:-.sources}\"",

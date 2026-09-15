@@ -100,43 +100,50 @@ jobs:
       # Wave 6 Batch 1 — Ammayappan direct readers/routes (P1–P3). Consumes the vendored frozen payload
       # and the real route registry; placed AFTER the build so its build-route boundary reads the real
       # .next artifacts. Proves the 65-route set, fail-closed slugs, render semantics, and that the work
-      # is NOT yet in the sitemap or catalogue (P4 not authorized).
+      # is published to the sitemap, catalogue and /read discovery (Wave 6 P4).
       - name: Cinema Ammayappan direct readers/routes (Wave 6 B1)
         run: npm run test:wave6-b1-ammaiyappan
       # Wave 6 Batch 2 — Drama direct readers/routes (P1–P3): the 83-route set derived from the three
       # released play registries, fail-closed slugs, render semantics (compressed range / unnumbered
       # காட்சி / 47 scenes / 7 SRUs / intertitle / source-condition holds / 1962 not promoted), and
-      # that none of the three works is yet in the sitemap or catalogue (P4 not authorized).
+      # that all three works are published to the sitemap, catalogue and /read discovery (Wave 6 P4).
       - name: Drama direct readers/routes (Wave 6 B2)
         run: npm run test:wave6-b2-drama
       # Wave 6 Batch 3 — Speeches direct readers/routes (P1–P3): the 6-route set (2 per work — reader
       # + source), fail-closed slugs, rendered source semantics (date/venue null, two-House witness,
-      # 7-section booklet, compilation), and that none of the three is in the sitemap or catalogue.
+      # 7-section booklet, compilation), and that all three are published to sitemap/catalogue/discovery.
       - name: Speeches direct readers/routes (Wave 6 B3)
         run: npm run test:wave6-b3-speeches
       # Wave 6 Batch 4 — Poetry direct readers/routes (P1–P3): the 30-route set (6 standalone
       # landing+source; the 1975 publication landing+source + 3 source items 01/02/04, no invented 03;
       # the oruthalaik-kathal verse-novel landing+source + 11 section routes), fail-closed slugs, the
-      # verse-novel rendered as SECTIONS not poems, and that none of the eight is in sitemap/catalogue.
+      # verse-novel rendered as SECTIONS not poems, and that all eight are published to sitemap/catalogue/discovery.
       - name: Poetry direct readers/routes (Wave 6 B4)
         run: npm run test:wave6-b4-poetry
       # Wave 6 Batch 5 — Novels direct readers/routes: the exact 63-route set (Periya 9 + Pudhaiyal
       # 54) registry+payload-derived, fail-closed slugs, Periya rendered as archive reading divisions
       # and Pudhaiyal as an Introduction + numbered source chapters, no Balipeedam facts leaking, and
-      # neither work in sitemap/catalogue/discovery.
+      # both works published to sitemap/catalogue/discovery (Wave 6 P4).
       - name: Novels direct readers/routes (Wave 6 B5)
         run: npm run test:wave6-b5-novels
       # Wave 6 Batch 6 — Essays direct readers/routes: the exact 74-route set (5 landings + 5 /source +
       # 64 article routes), fail-closed slugs, vedhanai rendered as a message (never a speech),
       # kudumbaththin with no invented year, sinthanaiyum as 50 articles across five transfer PDFs, and
-      # none of the five in sitemap/catalogue/discovery.
+      # all five published to sitemap/catalogue/discovery (Wave 6 P4).
       - name: Essays direct readers/routes (Wave 6 B6)
         run: npm run test:wave6-b6-essays
-      # Wave 6 P1–P3 global build-boundary — owns the whole-build delta that Wave-5 P4 A7 shed:
-      # build == frozen pre-Wave-6 baseline + cumulative Wave-6 P3 route manifest, and every Wave-6
-      # route stays out of sitemap/catalogue/discovery. Runs after Build.
-      - name: Wave 6 P1–P3 global build boundary
+      # Wave 6 cumulative-manifest + global build-boundary — owns the whole-build delta that Wave-5 P4
+      # A7 shed: build == frozen pre-Wave-6 baseline + cumulative Wave-6 route manifest (3681/3676).
+      # Phase-agnostic: P4 exposes those 321 routes but adds none, so the build totals are unchanged.
+      # Public exposure is proven separately by the Wave 6 P4 integration step below. Runs after Build.
+      - name: Wave 6 cumulative-manifest + build boundary
         run: npm run test:wave6-p3-build
+      # Wave 6 P4 public integration — catalogue 78→100 (exact 9-shelf census, 22 works once, no
+      # Batch-7 leakage), collections still 1, /read discovery 42→64 (39 visible, 5 over-cap shelves),
+      # sitemap 3351→3672 (0 dup, Wave-6 URL set == p3-routes.json exactly), 0 new routes (build
+      # 3681/3676 unchanged), registry-promotion uniqueness, and source-faithful catalogue copy. After Build.
+      - name: Wave 6 P4 public integration (catalogue/discovery/sitemap)
+        run: npm run test:wave6-p4-integration
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.

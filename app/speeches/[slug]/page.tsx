@@ -7,9 +7,9 @@ import { SPEECH_SLUGS } from "@/data/speeches";
 import type { Speech } from "@/data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
 
-// Wave 6 P3: the discovered SPEECH_SLUGS PLUS the authorized-but-undiscovered Wave-6 speeches. The
-// latter are prerendered (URL-addressable) but stay out of the catalogue, `/read` and the sitemap,
-// which are driven by SPEECH_SLUGS / data/library.ts alone until Wave 6 P4 (NOT authorized).
+// Wave 6 P4: the Wave-6 speeches are now promoted into SPEECH_SLUGS, so this union is deduplicated
+// (a `Set`) to keep exactly one prerender param per slug. WAVE6_SPEECH_SLUGS is retained as a helper
+// registry; unioning it here is harmless because the `Set` collapses the now-overlapping membership.
 const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS]));
 
 function loadSpeech(slug: string): Speech | null {

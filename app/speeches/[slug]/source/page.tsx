@@ -7,7 +7,8 @@ import { SPEECH_SLUGS } from "@/data/speeches";
 import type { SpeechProvenance } from "@/data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
 
-// Wave 6 P3: discovered SPEECH_SLUGS PLUS the undiscovered Wave-6 speeches' `/source` pages.
+// Wave 6 P4: SPEECH_SLUGS now includes the Wave-6 speeches; the union is deduplicated (a `Set`) so
+// each `/source` page prerenders exactly once. WAVE6_SPEECH_SLUGS is retained as a helper registry.
 const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS]));
 
 function loadProvenance(slug: string): SpeechProvenance | null {

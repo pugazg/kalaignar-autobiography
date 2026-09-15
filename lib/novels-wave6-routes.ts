@@ -1,11 +1,11 @@
-// Wave 6 (Batch 5: Novels) undiscovered novel slugs.
+// Wave 6 (Batch 5: Novels) novel slugs — Wave-6 helper registry.
 //
-// These two novels are authorized for DIRECT reader routes only (Wave 6 P3). They are deliberately
-// NOT in `NOVEL_SLUGS` (data/novels.ts) — the DISCOVERED novel registry that drives the sitemap —
-// and they have NO entry in data/library.ts (the catalogue) or any `/read` shelf/collection. Keeping
-// the Wave-6 slugs here — and only here — lets the generic `/novels/[slug]` route family prerender
-// them (so they are URL-addressable) while they stay absent from discovery / catalogue / sitemap /
-// shelf / collection until Wave 6 P4 (NOT authorized).
+// These two novels were onboarded as DIRECT reader routes in Wave 6 P3 and PUBLISHED in Wave 6 P4:
+// they are now promoted into `NOVEL_SLUGS` (data/novels.ts) — the discovered novel registry that drives
+// the sitemap — and each has a published entry in data/library.ts (the fiction shelf) surfaced in
+// `/read` discovery. This Wave-6 registry is retained for classification and route-union composition;
+// the generic `/novels/[slug]` route family unions it with `NOVEL_SLUGS` under a de-duplicating `Set`,
+// so each slug prerenders exactly once.
 //
 // Route shapes (proved exactly by the Batch-5 route test against these registries and each work's own
 // frozen public/data/novels/<slug>/novel.json):

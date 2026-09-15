@@ -15,9 +15,9 @@ function loadPlay(slug: string): Play | null {
   return JSON.parse(fs.readFileSync(p, "utf8")) as Play;
 }
 
-// Wave 6 P3: the discovered PLAY_SLUGS PLUS the authorized-but-undiscovered Wave-6 Drama works. The
-// latter are prerendered (URL-addressable) but stay out of the catalogue, `/read` and the sitemap,
-// which are driven by PLAY_SLUGS / data/library.ts alone until Wave 6 P4 (NOT authorized).
+// Wave 6 P4: the Wave-6 Drama works are now promoted into PLAY_SLUGS, so this union is deduplicated
+// (a `Set`) to keep exactly one prerender param per slug. WAVE6_DRAMA_SLUGS is retained as a helper
+// registry; unioning it here is harmless because the `Set` collapses the now-overlapping membership.
 export function generateStaticParams() {
   return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).map((slug) => ({ slug }));
 }
