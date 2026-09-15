@@ -78,7 +78,9 @@ eq("the frozen work tree is what the freeze carries", git("rev-parse", `${FREEZE
 }
 
 // ── PUBLICATION IDENTITY ─────────────────────────────────────────────────────────────────────────
-eq("POETRY_PUBLICATION_SLUGS holds both publications", arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS"), ["kaalap-pezhaiyum-kavithai-saaviyum", SLUG]);
+// Wave 6 P4 promoted the two Batch-4 publications into POETRY_PUBLICATION_SLUGS, so the registry now
+// holds four (compared order-independently).
+eq("POETRY_PUBLICATION_SLUGS holds the P2/P3 + two Wave-6 Batch-4 publications", [...(arrayLiteral(poemsTs, "POETRY_PUBLICATION_SLUGS") ?? [])].sort(), ["kaalap-pezhaiyum-kavithai-saaviyum", SLUG, "kalaignarin-kaviyaranga-kavithaigal-1975", "oruthalaik-kathal"].sort());
 eq("payload slug", pub.slug, SLUG);
 eq("readerStructure is poetry-publication", pub.readerStructure, "poetry-publication");
 eq("itemCount is 77", pub.itemCount, 77);
@@ -91,9 +93,9 @@ eq("exactly one catalogue entry", (libraryTs.match(new RegExp(`\\n    id: "${SLU
   check("catalogue assigns no memberCount field", !/memberCount\s*:/.test(block));
   check("catalogue is a poetry-publication", block.includes('readerStructure: "poetry-publication"'));
 }
-// Poetry top-level count is 6; collections still 1.
+// Poetry top-level count is 14 (post Wave-6 P4: 6 + eight Batch-4 poetry works); collections still 1.
 {
-  eq("six top-level Poetry works", (libraryTs.match(/\n    shelf: "poetry",/g) ?? []).length, 6);
+  eq("fourteen top-level Poetry works (post Wave-6 P4)", (libraryTs.match(/\n    shelf: "poetry",/g) ?? []).length, 14);
   const m = /export const LIBRARY_COLLECTIONS:[^=]*=\s*\[([\s\S]*?)\n\];/.exec(collectionsTs);
   eq("exactly one LibraryCollection is defined", (m?.[1].match(/^ {2}\{$/gm) ?? []).length, 1);
 }

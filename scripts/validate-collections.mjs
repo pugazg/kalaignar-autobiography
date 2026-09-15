@@ -297,7 +297,9 @@ if (released) {
 const fictionWorks = decl.works.filter((w) => w.shelf === "fiction");
 ok("the Fiction shelf still holds more works than the collection has members", fictionWorks.length > c.members.length);
 const nonMemberFiction = fictionWorks.filter((w) => !declBySlug.has(w.id)).map((w) => w.id).sort();
-eq("exactly the two standalone Fiction works remain outside the collection", nonMemberFiction, ["balipeedam-nokki", "kizhavan-kanavu"]);
+// Post Wave-6 P4, two Batch-5 novels (periya-idathup-pen, pudhaiyal) are also standalone Fiction works
+// outside the 1977 anthology collection.
+eq("exactly the standalone Fiction works remain outside the collection", nonMemberFiction, ["balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal"]);
 
 // ── E. Count semantics ──────────────────────────────────────────────────────────────────────────────
 startGroup("COUNT SEMANTICS");

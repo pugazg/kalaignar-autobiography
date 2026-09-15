@@ -128,15 +128,16 @@ const standaloneDirs = dataDirs.filter((d) => fs.existsSync(path.join(DATA_ROOT,
 // Since Wave 6 Batch 4 the poems tree also holds eight AUTHORIZED direct-reader works (six standalone
 // poems + two publications) from the frozen b4-poetry manifest. The four Wave-4 standalones remain the
 // only Wave-4 standalone payloads; this assertion is extended by exactly the Batch-4 standalone set
-// (derived from the manifest — a slug whose payload is a poem.json) and nothing else. The DISCOVERED
-// POEM_SLUGS registry is still exactly the four Wave-4 works — proved immediately below.
+// (derived from the manifest — a slug whose payload is a poem.json) and nothing else. Wave 6 P4 then
+// PROMOTED those six Batch-4 standalones into the discovered POEM_SLUGS registry, so POEM_SLUGS is now
+// exactly the four Wave-4 works + the six Batch-4 standalones — proved immediately below.
 const B4_MANIFEST = path.join(process.cwd(), "data/internal/wave6/batches/b4-poetry-routes.json");
 const b4Standalone = fs.existsSync(B4_MANIFEST)
   ? JSON.parse(readText(B4_MANIFEST)).workIds.filter((s) => fs.existsSync(path.join(DATA_ROOT, s, "poem.json")))
   : [];
 eq("the standalone poem.json payloads are exactly the four Wave-4 works + the authorized Batch-4 standalones", standaloneDirs.sort(), [...ALL_SLUGS, ...b4Standalone].sort());
 const registrySlugs = arrayLiteral(poemsTs, "POEM_SLUGS");
-eq("POEM_SLUGS holds exactly the four standalone works", [...(registrySlugs ?? [])].sort(), ALL_SLUGS);
+eq("POEM_SLUGS holds the four Wave-4 standalones + the six Batch-4 standalones (Wave 6 P4)", [...(registrySlugs ?? [])].sort(), [...ALL_SLUGS, ...b4Standalone].sort());
 
 // ── 5–6. Each slug exists exactly once, in every place that names it ─────────────────────────────
 for (const slug of ALL_SLUGS) {
