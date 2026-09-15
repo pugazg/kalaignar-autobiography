@@ -10,7 +10,7 @@ import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
 // Wave 6 P3: the discovered SPEECH_SLUGS PLUS the authorized-but-undiscovered Wave-6 speeches. The
 // latter are prerendered (URL-addressable) but stay out of the catalogue, `/read` and the sitemap,
 // which are driven by SPEECH_SLUGS / data/library.ts alone until Wave 6 P4 (NOT authorized).
-const ALL_SPEECH_SLUGS: readonly string[] = [...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS];
+const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS]));
 
 function loadSpeech(slug: string): Speech | null {
   try {

@@ -378,5 +378,11 @@ export const ESSAY_SLUGS = [
   "kayittril-thongiya-kanapathi",
   "unarchchimaalai",
   "thiraavida-sampaththu",
+  // ── Wave 6 P4 — promoted from the direct-only Wave-6 registry into the discovered public registry ──
+  "ina-muzhakkam",
+  "kolaikkalam",
+  "kudumbaththin-nalvilakku",
+  "sinthanaiyum-seyalum",
+  "vedhanai-ch-siraiyinindrum-viduthalai-pera",
 ] as const;
 export type EssaySlug = (typeof ESSAY_SLUGS)[number];

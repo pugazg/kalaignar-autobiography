@@ -19,7 +19,7 @@ function load(slug: string): { play: Play; prov: PlayProvenance } | null {
 
 // Wave 6 P3: discovered PLAY_SLUGS PLUS the undiscovered Wave-6 Drama works' `/source` pages.
 export function generateStaticParams() {
-  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].map((slug) => ({ slug }));
+  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

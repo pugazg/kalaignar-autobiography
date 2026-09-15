@@ -6,7 +6,7 @@ import ArticleSource from "@/components/ArticleSource";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayProvenance } from "@/data/essays";
 import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
-const ALL_ESSAY_SLUGS: readonly string[] = [...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS];
+const ALL_ESSAY_SLUGS: readonly string[] = Array.from(new Set<string>([...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS]));
 import { sourcePageMetaDescription } from "@/lib/essay-source-facts";
 
 function loadProvenance(slug: string): EssayProvenance | null {

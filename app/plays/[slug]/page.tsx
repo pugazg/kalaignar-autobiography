@@ -19,7 +19,7 @@ function loadPlay(slug: string): Play | null {
 // latter are prerendered (URL-addressable) but stay out of the catalogue, `/read` and the sitemap,
 // which are driven by PLAY_SLUGS / data/library.ts alone until Wave 6 P4 (NOT authorized).
 export function generateStaticParams() {
-  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].map((slug) => ({ slug }));
+  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

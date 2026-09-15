@@ -10,7 +10,7 @@ import { WAVE6_NOVEL_SLUGS } from "@/lib/novels-wave6-routes";
 // Discovered novels PLUS the Wave-6 Batch-5 direct-only novels. The Wave-6 set is prerendered here
 // (so its landing pages are URL-addressable) but stays out of NOVEL_SLUGS, the catalogue and the
 // sitemap. Any slug outside this union fails closed with notFound().
-const ALL_NOVEL_SLUGS: readonly string[] = [...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS];
+const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS]));
 
 // Not exported: a Next.js page module may only export the framework's own reserved names.
 function loadNovel(slug: string): Novel | null {

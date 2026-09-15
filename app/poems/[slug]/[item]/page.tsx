@@ -10,7 +10,7 @@ import { WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wave6-routes";
 
 // The discovered + Wave-6-undiscovered publications. Child item/section routes come only from each
 // publication's own frozen item registry (never `1..N`); the sitemap and discovery are untouched.
-const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
+const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 
 // FAIL CLOSED on unknown children. A standalone poem (/poems/marathi) has no items, so
 // /poems/marathi/anything must 404 rather than render. Only the pairs enumerated below exist.

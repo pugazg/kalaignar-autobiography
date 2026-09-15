@@ -392,5 +392,9 @@ export const SPEECH_SLUGS = [
   "1999-04-29-industries-debate",
   "2000-05-08-industries-debate",
   "2006-08-23-industries-debate",
+  // ── Wave 6 P4 — promoted from the direct-only Wave-6 registry into the discovered public registry ──
+  "idhaya-perikai",
+  "namathu-nilai",
+  "palli-vazhkkai",
 ] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];

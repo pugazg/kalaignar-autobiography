@@ -479,5 +479,9 @@ export const PLAY_SLUGS = [
   "anarkali",
   "socrates",
   "cheran-senguttuvan",
+  // ── Wave 6 P4 — promoted from the direct-only Wave-6 registry into the discovered public registry ──
+  "kagithapoo",
+  "manimagudam",
+  "thiruvalar-desiyampillai",
 ] as const;
 export type PlaySlug = (typeof PLAY_SLUGS)[number];

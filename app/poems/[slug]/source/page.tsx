@@ -10,8 +10,8 @@ import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wa
 
 // Wave-6 Batch-4 direct readers extend the /source prerender set and its fail-closed guard only; the
 // discovered registries and the sitemap are untouched (see app/poems/[slug]/page.tsx).
-const ALL_POEM_SLUGS = [...POEM_SLUGS, ...WAVE6_POEM_SLUGS] as readonly string[];
-const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
+const ALL_POEM_SLUGS = Array.from(new Set<string>([...POEM_SLUGS, ...WAVE6_POEM_SLUGS])) as readonly string[];
+const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 
 function load<T>(slug: string, file: string): T | null {
   try {

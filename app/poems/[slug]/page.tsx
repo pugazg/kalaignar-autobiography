@@ -14,8 +14,8 @@ import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "@/lib/poems-wa
 // sitemap. The Wave-6 Batch-4 works are authorized as DIRECT readers only (P3): they extend the route
 // family's prerender set and its fail-closed guard, but never the discovered registries or the
 // sitemap. Combining here — and only here — keeps them URL-addressable yet undiscovered until P4.
-const ALL_POEM_SLUGS = [...POEM_SLUGS, ...WAVE6_POEM_SLUGS] as readonly string[];
-const ALL_PUBLICATION_SLUGS = [...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS] as readonly string[];
+const ALL_POEM_SLUGS = Array.from(new Set<string>([...POEM_SLUGS, ...WAVE6_POEM_SLUGS])) as readonly string[];
+const ALL_PUBLICATION_SLUGS = Array.from(new Set<string>([...POETRY_PUBLICATION_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS])) as readonly string[];
 
 function loadPoem(slug: string): Poem | null {
   try {

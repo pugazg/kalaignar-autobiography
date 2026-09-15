@@ -16,7 +16,7 @@ function loadPlay(slug: string): Play | null {
 // Wave 6 P3: discovered PLAY_SLUGS PLUS the undiscovered Wave-6 Drama works, each `[scene]` set
 // derived from its own released registry (play.json.readingUnits). Prerendered but undiscovered.
 export function generateStaticParams() {
-  return [...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS].flatMap((slug) => {
+  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).flatMap((slug) => {
     const play = loadPlay(slug);
     return play ? play.readingUnits.map((s) => ({ slug, scene: s.slug })) : [];
   });
