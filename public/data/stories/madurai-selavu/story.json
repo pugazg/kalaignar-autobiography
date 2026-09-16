@@ -607,23 +607,6 @@
       "text": "“பேரன்புடையவரே! தங்கள் அடிதொழுது வணங்குகின்றேன். பெற்றோர்க்குப் பணி புரியாமல்--உற்ற மனைவிக்கும் தீங்குசெய்து",
       "sourceScan": 24,
       "printedPage": 20,
-      "joinToNext": "space"
-     },
-     {
-      "text": "Scan 25 / printed page 21 is an illustrated non-story magazine page inserted between story scans 24 and 26.",
-      "sourceScan": 25,
-      "printedPage": 21,
-      "joinToNext": "end"
-     }
-    ]
-   },
-   {
-    "kind": "paragraph",
-    "segments": [
-     {
-      "text": "It is preserved in the physical map but **must not be transcribed into or assembled with `மதுரைச் செலவு`**.",
-      "sourceScan": 25,
-      "printedPage": 21,
       "joinToNext": "end"
      }
     ]
@@ -1668,7 +1651,6 @@
   22,
   23,
   24,
-  25,
   26
  ]
 }

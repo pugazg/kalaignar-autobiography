@@ -180,10 +180,16 @@ for (const g of manifest.groups) {
     // Tamil pages
     const pageFiles = fs.readdirSync(path.join(WORK, "pages")).filter((f) => f.endsWith(".md")).sort();
     if (!pageFiles.length) die(`${slug}: no page records`);
-    const pages = pageFiles.map((f) => pageBlocks(read(path.join(WORK, "pages", f)), `${slug}/pages/${f}`)).sort((a, b) => a.scan - b.scan);
+    // A page whose page_type marks it a non-story leaf (e.g. "intervening-non-story", a magazine
+    // illustration interleaf) contributes NO reading text; the source documents it as excluded from the
+    // canonical assembly. Skip it so its classification note never enters the literary stream.
+    const pages = pageFiles.map((f) => pageBlocks(read(path.join(WORK, "pages", f)), `${slug}/pages/${f}`))
+      .filter((p) => !/non-story/i.test(p.pageType || ""))
+      .sort((a, b) => a.scan - b.scan);
     const scans = pages.map((p) => p.scan);
-    // contiguous scan span
-    for (let i = 1; i < scans.length; i++) if (scans[i] !== scans[i - 1] + 1) die(`${slug}: non-contiguous scans at ${scans[i - 1]}→${scans[i]}`);
+    // Strictly ascending, unique. A gap is legitimate where a documented non-story interleaf scan was
+    // excluded (e.g. madurai-selavu scan 25); disorder or a duplicate scan is a defect.
+    for (let i = 1; i < scans.length; i++) if (scans[i] <= scans[i - 1]) die(`${slug}: scans not strictly ascending at ${scans[i - 1]}→${scans[i]}`);
     const scanLo = scans[0], scanHi = scans[scans.length - 1];
     const printedVals = pages.map((p) => p.printedPage).filter((x) => x !== null);
     const pageLo = printedVals.length ? Math.min(...printedVals) : null;
@@ -205,7 +211,10 @@ for (const g of manifest.groups) {
     // only that every English anchor is a real, in-range, ascending-unique source scan of this story —
     // not that the two streams share identical anchor density.
     for (let i = 0; i < enScans.length; i++) {
-      if (!scans.includes(enScans[i])) die(`${slug}: English scan anchor ${enScans[i]} is not a page-record scan of this story`);
+      // Anchor must fall within the story's scan RANGE — not necessarily be one of the Tamil page scans:
+      // the translation may resume at an excluded non-story interleaf scan (e.g. madurai-selavu scan 25,
+      // where the English carries the continuation of the story text).
+      if (enScans[i] < scanLo || enScans[i] > scanHi) die(`${slug}: English scan anchor ${enScans[i]} outside story scan range ${scanLo}–${scanHi}`);
       if (i && enScans[i] <= enScans[i - 1]) die(`${slug}: English scan anchors not strictly ascending: ${enScans}`);
     }
 
