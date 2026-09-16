@@ -35,6 +35,7 @@
     "test:wave6-b7-short-stories": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-short-stories.ts",
     "test:wave6-b7-p2-fidelity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-p2-fidelity.ts",
     "test:wave6-b7-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave6-b7-p2-render.ts",
+    "test:wave6-b7-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-p3-routes.ts",
     "test:p4-witness-integrity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave4-p4-poetry-witnesses.ts",
     "test:p4-witness-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave4-p4-witness-ui.ts",
     "test:validator-contract": "node scripts/test-validator-contract.mjs \"${KDL_SOURCES_DIR:-.sources}\"",

@@ -4,7 +4,13 @@ import fs from "node:fs";
 import path from "node:path";
 import StoryReader from "@/components/StoryReader";
 import { STORY_SLUGS } from "@/data/stories";
+import { WAVE6_B7_STORY_SLUGS } from "@/lib/stories-wave6-routes";
 import type { Story } from "@/data/stories";
+
+// Wave 6 Batch 7 P3: the discovered STORY_SLUGS PLUS the 116 hidden Batch-7 slugs. The latter are
+// prerendered (URL-addressable) but stay out of catalogue / /read / sitemap until Batch 7 P4. Deduped
+// so each slug prerenders exactly once.
+const ALL_STORY_SLUGS: readonly string[] = Array.from(new Set<string>([...(STORY_SLUGS as readonly string[]), ...WAVE6_B7_STORY_SLUGS]));
 
 // Not exported: a Next.js page module may only export the framework's own reserved names.
 function loadStory(slug: string): Story | null {
@@ -16,7 +22,7 @@ function loadStory(slug: string): Story | null {
 }
 
 export function generateStaticParams() {
-  return STORY_SLUGS.map((slug) => ({ slug }));
+  return ALL_STORY_SLUGS.map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -38,7 +44,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function StoryPage({ params }: { params: { slug: string } }) {
-  if (!(STORY_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_STORY_SLUGS.includes(params.slug)) notFound();
   const story = loadStory(params.slug);
   if (!story) notFound();
   return <StoryReader story={story} />;

@@ -15,7 +15,8 @@
  *                   no duplicate LibraryWork implied by any plural membership.
  *   HIDDEN GATE   — P1 changed none of STORY_SLUGS / LIBRARY_WORKS / LIBRARY_COLLECTIONS / COLLECTION_IDS /
  *                   /read discovery / sitemap; public boundary unchanged (catalogue 100, collections 1,
- *                   discovery 64/39, Fiction 41, sitemap 3672/0-dup, build 3681/3676 when a build tree exists).
+ *                   discovery 64/39, Fiction 41, sitemap 3672/0-dup). Route/.html counts belong to the
+ *                   phase validators (P3: validate-wave6-b7-p3-routes.ts); this one asserts only the data surface.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -216,24 +217,13 @@ const urls = sitemap().map((e) => e.url);
 eq(urls.length, 3672, "sitemap still 3672 URLs");
 eq(urls.length - new Set(urls).size, 0, "sitemap still 0 duplicates");
 for (const slug of allSlugs) ok(!urls.some((u) => u.endsWith(`/stories/${slug}`) || u.includes(`/stories/${slug}/`)), `${slug} not exposed in sitemap`);
-// build boundary (only when a build tree is present)
-const pm = path.join(root, ".next/prerender-manifest.json");
-if (fs.existsSync(pm)) {
-  const routeKeys = Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes);
-  eq(routeKeys.length, 3681, "build prerender routes still 3681 (0 new routes)");
-  for (const slug of allSlugs) ok(!routeKeys.includes(`/stories/${slug}`), `${slug} has no prerendered reader route`);
-  const htmlCount = countHtml(path.join(root, ".next/server/app"));
-  eq(htmlCount, 3676, "build .html files still 3676");
-} else {
-  console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
-}
-
-function countHtml(dir: string): number {
-  let n = 0;
-  const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) n++; } };
-  try { walk(dir); } catch { /* no tree */ }
-  return n;
-}
+// Build boundary: this validator owns only the DATA surface (manifest, payloads, and the public
+// in-memory surfaces asserted above). It deliberately makes NO assertion about prerendered-route or
+// .html counts: from P3 onward the 116 Batch-7 reader/source routes are prerendered on purpose (direct-
+// addressable but still undiscovered), so a P1-era "0 new routes / 3681 / 3676" snapshot would be a
+// false negative once P3 or P4 shares the build tree. The route-level boundary is proved by the phase
+// validators that own it — scripts/validate-wave6-b7-p3-routes.ts (3913 / 3908, still off every public
+// surface) and, at publication, scripts/validate-wave6-b7-p4-integration.ts.
 
 if (fail.length) {
   console.error(`\nwave6-b7-short-stories — ${checks} checks, ${fail.length} FAILED\n`);
