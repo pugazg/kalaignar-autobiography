@@ -26,17 +26,6 @@
     "kind": "paragraph",
     "segments": [
      {
-      "text": "> Source-layout note: the illustrated title block `சீரழித்த சிரிப்பு! — மு. கருணாநிதி` occupies the centre of the printed page. The story text flows around it in magazine columns. The sequence below follows the direct physical reading order rather than the scrambled baseline order.",
-      "sourceScan": 101,
-      "printedPage": 91,
-      "joinToNext": "end"
-     }
-    ]
-   },
-   {
-    "kind": "paragraph",
-    "segments": [
-     {
       "text": "“இளவரசே! தங்களது கரம் பிடிக்கப்போகும் கரோலின் இளவரசி, கடல் மார்க்கமாய் ஜெர்மானியத்திலிருந்து வந்து கொண்டிருக்கிறார். இந்த நேரத்தில் கப்பல் கவிழ்ந்தது போல் கவலையாய்—மனமொடிந்து உட்கார்ந்திருக்கிறீர்களே?”",
       "sourceScan": 101,
       "printedPage": 91,
@@ -284,17 +273,6 @@
       "printedPage": 91,
       "joinToNext": "space"
      },
-     {
-      "text": "> Source-layout note: the boxed `முகப்பில்:` verse at the top of scan 102 is separate magazine matter and is excluded from the story assembly. The story resumes below it with the continuation of scan 101's final split word.",
-      "sourceScan": 102,
-      "printedPage": 92,
-      "joinToNext": "end"
-     }
-    ]
-   },
-   {
-    "kind": "paragraph",
-    "segments": [
      {
       "text": "சிலையானாள். ஒரு நாள், இளவரசர். “உன்னை எனக்குப் பிடிக்கவில்லை” என்று எழுதியே கொடுத்துவிட்டார்.",
       "sourceScan": 102,

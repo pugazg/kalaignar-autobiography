@@ -70,6 +70,11 @@ function pageBlocks(raw, file) {
     const line = chunk.trim();
     if (!line) continue;
     if (line.startsWith("<!--")) continue; // source ornament / marker comments are not reading text
+    // A Markdown blockquote (`> …`) in these page records is ALWAYS archival/source apparatus —
+    // source-layout notes, per-page historical-glyph gate / final-source-visual verification lines,
+    // non-story illustration/title-page notes — never printed literary text (the source itself says so,
+    // e.g. "excluded from the story assembly"). Skip it, exactly as the English stream already does.
+    if (/^>\s?/.test(line)) continue;
     if (/^#\s+/.test(line)) { blocks.push({ kind: "heading", level: 1, text: line.replace(/^#\s+/, "").trim() }); continue; }
     if (/^##\s+/.test(line)) { blocks.push({ kind: "heading", level: 2, text: line.replace(/^##\s+/, "").trim() }); continue; }
     if (/^#{3,}\s+/.test(line)) die(`${file}: unexpected heading level in story text: ${line.slice(0, 40)}`);

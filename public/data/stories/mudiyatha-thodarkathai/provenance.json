@@ -31,7 +31,7 @@
  "crossScanJoinPolicy": {
   "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
   "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
-  "appliedBoundaries": 0
+  "appliedBoundaries": 25
  },
  "english": {
   "titleEn": "The Never-Ending Story",
