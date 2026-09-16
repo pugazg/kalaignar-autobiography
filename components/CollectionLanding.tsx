@@ -18,7 +18,10 @@ export type CollectionMemberRow = {
   titleTa: string;
   titleEn: string;
   href: string;
-  printedPages?: { first: number; last: number };
+  /** This member's printed-page extent WITHIN this publication, as a display label; absent if unestablished. */
+  pages?: string;
+  /** This member's scan span within this publication, as a display label; absent if unestablished. */
+  scans?: string;
 };
 
 /**
@@ -144,9 +147,10 @@ export default function CollectionLanding({
                   </span>
                   <span className="mt-0.5 block text-xs text-ink/65 dark:text-night-text/65">{m.titleEn}</span>
                 </span>
-                {m.printedPages && (
-                  <span className="shrink-0 tabular-nums text-xs text-ink/65 dark:text-night-text/65">
-                    {ta ? "பக்." : "pp."} {m.printedPages.first}–{m.printedPages.last}
+                {(m.pages || m.scans) && (
+                  <span className="shrink-0 text-right text-xs text-ink/65 dark:text-night-text/65">
+                    {m.pages && <span className="block tabular-nums">{ta ? "பக்." : "pp."} {m.pages}</span>}
+                    {m.scans && <span className="block tabular-nums">{ta ? "ஸ்கேன்" : "scans"} {m.scans}</span>}
                   </span>
                 )}
               </Link>

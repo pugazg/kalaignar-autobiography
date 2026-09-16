@@ -31,6 +31,8 @@
 // `kizhavan-kanavu` uses only "space" and "end". The other two are part of the model because a reader
 // that does not handle them would have to guess, and guessing is the failure this vocabulary exists to
 // prevent.
+import { WAVE6_B7_STORY_SLUGS_IN_ORDER } from "./wave6-b7-catalogue";
+
 export type StoryJoin = "space" | "none" | "unknown" | "end";
 
 // ── TWO SOURCE FORMS, ONE READER ────────────────────────────────────────────────────────────────────
@@ -381,7 +383,7 @@ export type StoryProvenanceB7 = {
 // is the single list a future sitemap integration reads — the Phase-A lesson: a route family whose slugs
 // live in one exported registry is wired into the sitemap once and stays correct for every work added
 // after.
-export const STORY_SLUGS = [
+const PUBLISHED_STORY_SLUGS_38 = [
   // Phase 8 Benchmark B — the standalone booklet. It is NOT part of the 1977 anthology and keeps its
   // own source pin; Bulk Wave 2 deliberately left it untouched.
   "kizhavan-kanavu",
@@ -426,4 +428,12 @@ export const STORY_SLUGS = [
   "siddharthan-silai",
   "nunikkarumbu",
 ] as const;
-export type StorySlug = (typeof STORY_SLUGS)[number];
+
+// Wave 6 Batch 7 P4 — the 38 already-published stories PLUS the 116 canonical short stories promoted at
+// publication (→ 154 unique). The Batch-7 slugs were direct-addressable (P3) via a Set-union in the route
+// pages; promoting them here makes them discovered works and adds their 232 URLs to the sitemap, which is
+// driven by STORY_SLUGS. `Array.from(new Set(...))` keeps the list unique regardless of ordering.
+export const STORY_SLUGS: readonly string[] = Array.from(
+  new Set<string>([...PUBLISHED_STORY_SLUGS_38, ...WAVE6_B7_STORY_SLUGS_IN_ORDER]),
+);
+export type StorySlug = string;
