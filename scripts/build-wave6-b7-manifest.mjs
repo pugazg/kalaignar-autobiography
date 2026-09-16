@@ -3,7 +3,7 @@
 //   node scripts/build-wave6-b7-manifest.mjs "<path-to-kalaignar-short-stories checkout>"
 //
 // Deterministic. Reads ONLY a frozen source checkout (no runtime GitHub fetch). Writes
-// data/internal/wave6/batches/b7-short-stories.json — the durable, hidden P1 identity + provenance +
+// data/internal/wave6/b7-short-stories.json — the durable, hidden P1 identity + provenance +
 // owner-decided future-collection plan for the single combined Batch 7 (116 canonical short stories).
 // Records discoverable:false / sitemapExposed:false / publicCollectionExposed:false / directRouteCount:0.
 // It does NOT publish anything: no data/library.ts, no data/collections.ts, no routes, no sitemap.
@@ -129,7 +129,7 @@ const manifest = {
   separatelyImplemented: { note: "Already implemented and NOT part of Batch 7", the1977Anthology: members1977.size, kizhavanKanavu: true },
 };
 
-const OUT = path.join(process.cwd(), "data/internal/wave6/batches/b7-short-stories.json");
+const OUT = path.join(process.cwd(), "data/internal/wave6/b7-short-stories.json");
 fs.writeFileSync(OUT, JSON.stringify(manifest, null, 1) + "\n");
 console.log(`b7 manifest written: ${OUT}`);
 console.log(`  works ${manifest.workCount} | groups ${groupsOut.length} | future collections ${manifest.futurePublicCollections.count}`);

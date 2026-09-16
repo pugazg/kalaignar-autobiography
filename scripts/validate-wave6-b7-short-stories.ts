@@ -34,7 +34,7 @@ const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
 
 type Group = { group: string; newCanonicalCount: number; publicCollectionPlanned: boolean; plannedCollectionMemberCount: number; plannedCollectionMembers: string[]; collectionSubtreePin: string | null; slugs: { slug: string; subtreePin: string }[] };
 type Manifest = { batch: number; batchId: string; sourceRepo: string; sourceCommit: string; sourceTree: string; workCount: number; discoverable: boolean; sitemapExposed: boolean; publicCollectionExposed: boolean; directRouteCountP1: number; groups: Group[]; witnesses: Record<string, { newCanonicals: number; witnessOnly: number; witnessIds: string[] }>; };
-const manifest: Manifest = JSON.parse(fs.readFileSync(path.join(root, "data/internal/wave6/batches/b7-short-stories.json"), "utf8"));
+const manifest: Manifest = JSON.parse(fs.readFileSync(path.join(root, "data/internal/wave6/b7-short-stories.json"), "utf8"));
 
 // ── 1. IDENTITY ────────────────────────────────────────────────────────────────────────────────────
 const groupExpect: Record<string, number> = { "2008": 40, "2004": 34, "1987": 23, "2009": 5, "1982": 6, periodical: 3, "1976": 2, "1969": 1, "1953-thappivittargal": 1, "1997": 1 };

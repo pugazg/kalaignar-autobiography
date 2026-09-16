@@ -24,7 +24,7 @@ const read = (p) => nfc(fs.readFileSync(p, "utf8"));
 const SRC = process.argv[2] || `${process.env.KDL_SOURCES_DIR || ".sources"}/kalaignar-short-stories`;
 if (!fs.existsSync(path.join(SRC, "stories"))) die(`source checkout not found at ${SRC}`);
 
-const manifest = JSON.parse(read(path.join(process.cwd(), "data/internal/wave6/batches/b7-short-stories.json")));
+const manifest = JSON.parse(read(path.join(process.cwd(), "data/internal/wave6/b7-short-stories.json")));
 const SOURCE_COMMIT = manifest.sourceCommit;
 const OUT_ROOT = path.join(process.cwd(), "public/data/stories");
 
