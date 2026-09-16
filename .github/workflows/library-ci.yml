@@ -144,6 +144,14 @@ jobs:
       # 3681/3676 unchanged), registry-promotion uniqueness, and source-faithful catalogue copy. After Build.
       - name: Wave 6 P4 public integration (catalogue/discovery/sitemap)
         run: npm run test:wave6-p4-integration
+      # Wave 6 Batch 7 P1 — HIDDEN short-story data foundation (116 works). Runs after Build so its
+      # zero-new-routes gate reads the real .next artifacts: proves 116 canonical / unique / group
+      # arithmetic, 116 hidden payload sets, witness non-inflation, the owner-decided future-collection
+      # plan, and that NOTHING leaked into STORY_SLUGS / LIBRARY_WORKS / LIBRARY_COLLECTIONS / /read /
+      # sitemap (catalogue 100, collections 1, discovery 64/39, Fiction 41, sitemap 3672/0, build
+      # 3681/3676 unchanged). Live source-pin recheck runs in the source-integrity job below.
+      - name: Wave 6 Batch 7 P1 hidden short-story foundation
+        run: npm run test:wave6-b7-short-stories
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -338,6 +346,46 @@ jobs:
                   { repo: "kalaignar-short-stories", dir: "kalaignar-short-stories-1977-anthology" },
                 ]),
               ),
+              // ── WAVE 6 BATCH 7 — Short stories (hidden P1). 116 works pin the short-stories
+              // archive at a LATER commit (7205a108…) than the 1977 anthology and kizhavan-kanavu,
+              // so they get their OWN checkout dir; all 116 share ONE pin (each provenance file),
+              // keeping the same-directory/same-pin guard meaningful.
+              ...Object.fromEntries(
+                [
+                "antha-naal-vanthilai", "appadithan-sirippen", "aththiri-paachaa", "edukkavo-kokkavo",
+                "ezhuchikku-adaiyaalam", "ice-katti", "idhayam-pesugirathu", "idikkup-pin-mazhai",
+                "iramanai-patri-iraman", "jaadi-kutti-poduma", "kadamai-kanniyam-kattuppadu", "kaniyum-kanaiyum",
+                "kannil-kaal", "kazhuthaiyin-kathai", "koottani", "maanum-perumaanum",
+                "mamiyar-udaithaal-mattum-manchattiya", "mayil-ravanan", "naakkuth-tamil-manakkum", "nadakkuma-nadakkatha",
+                "nalvazhiyum-nalla-vazhiyum", "nandri-sollum-neram", "neethi-devathaiye", "onnu-kuduma",
+                "paarur-pola", "panithuliyil-panai-maram", "panthalile-paagarkai", "porumaikku-saandru",
+                "pulivaal", "saavi-thaan-illai", "seera-vendama", "seruppodu-iru",
+                "thalaiyil-malai", "thalaiyum-nuniyum", "thamizan-endru-sollada", "theriyatha-pechu",
+                "thum-pam-theem-thom", "unakku-vayathenna", "vennai-uruguthu-veyilil", "verum-kai-muzham-podum",
+                "aabasame-aabasam", "aadik-kaatre", "aandavan-dharisanam-kodutha-oor", "adutha-piraviyil-aindhu-kanavan",
+                "anthak-kaalathile", "aval-sonnaal", "ilamai-kaalam", "ilangai-mannar-parambarai",
+                "iruvarum-koodiyiruppathu-aathi-maalaithaan", "kadalai-thoorppathu-miga-elithu", "kaithiyin-kathai", "kalliyum-rojavum",
+                "kazhuthile-oru-mudichu-atharku-oru-kathai", "kizhavanin-manaivi", "kollappada-vendiyathu-puli-aanaal", "kootruvan-eppadip-mariththaan",
+                "krishnanaiyum-vidaatha-saathi", "kuruvi-rameswaram", "malaiyai-thookkuven", "manaivi-sonna-vilakkam",
+                "muthiyavar-theerppu", "naatham-ezhaathu-narambuthaan-arum", "neeyum-kaithi-naanum-kaithi", "pengalukku-en-meesai-thadiyillai",
+                "pudhir", "pugazhe-nee-oru-pudhir", "sirai-kodiyathu", "sorgaththirku-vandhathu-eppadi",
+                "thalaivanin-parisu", "uyirukku-vilai-aimbathu-latcham", "valluvar-sonna-poi", "veeran-thalai-kavizhnthathu-en",
+                "veeravadi", "vignaanikku-thondraathu", "agaththinai-anbu", "buddhar-unarththiya-unmai",
+                "hajrath-aliyum-yuthanum", "iru-nigazhvugal", "jayathrathanin-veezhchi", "kadu-sendra-kumanan",
+                "kajini-mugamathuvum-kavignar-pardosiyum", "kurikkol", "kuzhanthaiyum-kiliyum", "mana-maatram",
+                "mannanum-kuruviyum", "mooli-mookkukkaran", "narayana-narayana", "paalum-thanneerum",
+                "pugazhendhip-pulavar-kathai", "samiyarum-pookkariyum", "sorgaththirku-senruvantha-azhagi", "thenaliraman-kathai",
+                "thenaliraman-poonai", "thennai-marathil-pul", "thuraviyum-seedargalum", "valvil-ori",
+                "yasodhara-kaviyam", "anil-kunju", "ezhuthalar-ekalaivan", "gandhi-desam",
+                "kollaipuram", "malaravillai", "petra-pillaiyai-vitra-thaai", "kaasa-lesa",
+                "seemaan-veettu-seekkaali", "nandiyur-nariyappan", "nariyur-nandiyappan", "mudiyatha-thodarkathai",
+                "seerazhitha-sirippu", "madurai-selavu", "kondru-varuga", "naattiya-kalarani",
+                "maanam", "neruppu", "vilaiyal-vangalaiyo", "nanbana",
+                ].map((s) => [
+                  `stories/${s}`,
+                  { repo: "kalaignar-short-stories", dir: "kalaignar-short-stories-wave6-b7" },
+                ]),
+              ),
             };
             const seen = new Map();
             for (const [p, spec] of Object.entries(works)) {
@@ -507,6 +555,35 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-thirukkural.mjs "$KDL_SOURCES_DIR/kalaignar-literary-commentary"
+      # Wave 6 Batch 7 short stories (hidden P1) — SOURCE-PIN FREEZE against the frozen short-stories
+      # checkout: repo/commit/tree, per-work subtree pins, 1977-anthology disjointness. The build-boundary
+      # portion of this validator is exercised in the build/UI job (which has the .next tree); here it
+      # verifies the source side. Same validator, complementary evidence in the two jobs.
+      - name: Wave 6 Batch 7 short stories — source-pin freeze (+ frozen-control set equality when reachable)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env:
+          KDL_SOURCES_DIR: "${{ runner.temp }}/sources"
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Best-effort read-only checkout of the EXACT control commit that authorized this Batch-7
+          # population (kalaignar-tribute @ ceccd2a5, merged via PR #32) — the frozen artifact to prove
+          # set-equal to, never moving control main. The control repo is PRIVATE, so anonymous CI fetch
+          # cannot reach it; attempt a token-authenticated fetch, and if the private control artifact is
+          # not reachable from this repo's CI token, run the validator WITHOUT it. The source-pin freeze,
+          # collection-pin, identity, payload, witness, collection-plan and hidden-boundary gates all
+          # still run here; the pinned-control set-equality is additionally proven locally and in the
+          # independent immutable-head review (which has control access). The commit is also recorded in
+          # the manifest's controlAuthority.
+          CTRL="$RUNNER_TEMP/b7-control"; CTRL_ARG=""
+          git init -q "$CTRL"
+          git -C "$CTRL" remote add origin "https://x-access-token:${GH_TOKEN}@github.com/pugazg/kalaignar-tribute.git"
+          if git -C "$CTRL" fetch -q --depth 1 origin ceccd2a5cf506a6f46ad6ec8baf892abf9c17a70 2>/dev/null; then
+            git -C "$CTRL" checkout -q FETCH_HEAD && CTRL_ARG="$CTRL"
+            echo "pinned control artifact reachable — running frozen-control set equality."
+          else
+            echo "::notice::Pinned control repo not reachable from this CI token (private); frozen-control set-equality is proven locally and in independent review."
+          fi
+          npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-short-stories.ts "$KDL_SOURCES_DIR/kalaignar-short-stories-wave6-b7" $CTRL_ARG
 
       # Proves the migrated validators still obey docs/VALIDATOR_CONTRACT.md — that corrupted data
       # exits 1 naming the difference, and an unusable source exits 2. Runs last, after the sources

@@ -1,0 +1,164 @@
+{
+ "workId": "nalvazhiyum-nalla-vazhiyum",
+ "slug": "nalvazhiyum-nalla-vazhiyum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nalvazhiyum-nalla-vazhiyum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நல்வழியும் நல்ல வழியும்",
+  "en": "Nalvazhiyum Nalla Vazhiyum"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நல்வழியும் நல்ல வழியும்",
+    "sourceScan": 76,
+    "printedPage": 74
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நல் வழியிலே ஒரு பாட்டு உண்டு",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நெட்டிருப்புப் பாறைக்கு நெக்கு விடாப் பாறை பசுமரத்தின் வேருக்கு நெக்கு விடும்” என்பதாகும்.",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதற்கு என்ன பொருள் என்றால், பாறையை உடைக்க கடப்பாரையை பயன்படுத்துகிறோம். பாறையை உடைக்க கடப்பாரையை பயன்படுத்தினாலும்கூட இரண்டு மூன்று தடவை அந்தக் கடப்பாரையின் கூர் மழுங்குகிறது. தீட்டிக் கொண்டு கடப்பாரையால் பாறையை உடைக்கிறோம். இப்படி நல்ல நீளமான, அழுத்தமான இரும்பால் செய்யப்",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பட்ட கடப்பாரை கூட மழுங்குகிற அளவுக்கு பாறை இருக்கிறது. அப்படித்தான் பாறையை உடைக்க வேண்டியிருக்கிறது.",
+      "sourceScan": 77,
+      "printedPage": 75,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் அதே பாறையில் ஒரு சின்னச் செடியினுடைய வேர் இருக்கிறதே அது இண்டு இடுக்கெல்லாம் புகுந்து சந்து பொந்தெல்லாம் புகுந்து அந்த பாறைக்குள்ளே முளைத்து வேர்விட்டு மரமாகி பாறையை பிளந்து விடுகிறது. எனவே பாறையை பிளக்க கடப்பாரையை பயன்படுத்துவதா? அல்லது அந்த பசுமரத்தின் வேரைப் போல் பக்குவமாக பாறையை உடைப்பதா? என்ற அந்த கலையை அண்ணாவிடத்திலே கற்றவன் என்ற முறையில் என்னுடைய தம்பிமார்களுக்கும் சொல்லிக் கொள்ள நான் கடமைப்பட்டிருக்கிறேன்.",
+      "sourceScan": 77,
+      "printedPage": 75,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 77,
+      "printedPage": 75,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Nalvazhiyum Nalla Vazhiyum",
+    "sourceScan": 76,
+    "printedPage": 74
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is a verse in *Nal Vazhi*:",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A rock that does not yield to a long iron bar yields to the root of a green tree.”",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What does this mean? We use a crowbar to break a rock. Even when we use a crowbar to break rock, after two or three blows its sharp edge becomes blunt. We sharpen it and then break the rock with it. Such a crowbar, made of good long, heavy iron,",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "space"
+     },
+     {
+      "text": "can itself be blunted by the rock. That is how hard the rock is to break.",
+      "sourceScan": 77,
+      "printedPage": 75,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But the root of a small plant in that very rock enters every crevice and gap, works its way into every opening, sprouts and takes root within the rock, grows into a tree and splits the rock apart. So should one use a crowbar to split the rock? Or should one break the rock with the maturity and subtlety of that green tree's root? Having learned that art from Anna, I consider it my duty to tell it to my younger brothers as well.",
+      "sourceScan": 77,
+      "printedPage": 75,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 77,
+      "printedPage": 75,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  76,
+  77
+ ]
+}

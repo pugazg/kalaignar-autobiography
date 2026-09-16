@@ -1,0 +1,98 @@
+{
+ "workId": "thalaiyum-nuniyum",
+ "slug": "thalaiyum-nuniyum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thalaiyum-nuniyum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தலையும் நுனியும்",
+  "en": "Thalaiyum Nuniyum"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தலையும் நுனியும்",
+    "sourceScan": 72,
+    "printedPage": 70
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருமுறை துரோணர், தன்னிடத்திலே பயிலுகின்ற மாணவர்களையெல்லாம் அழைத்து ஒரு மரத்தைக் காட்டி “அந்த மரத்திலே ஒரு கிளி அமர்ந்திருக்கிறது. அந்தக் கிளியை நீங்கள் குறி பார்த்து அம்பை எய்தி அதனுடைய கழுத்தை அறுக்க வேண்டும்” என்று சொல்லி துரியோதனனையும்",
+      "sourceScan": 72,
+      "printedPage": 70,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மற்ற மாணவர்களையும் அழைத்து மரத்தையும் கிளியையும் காட்டி “என்ன தெரிகின்றது” என்று ஒவ்வொருவராக கேட்டார். அத்தனை பேரும், “மரம் தெரிகிறது, கிளை தெரிகிறது” என்று சொன்னார்கள். அவர்களையெல்லாம் சரியில்லை என்று ஒதுக்கி விட்டார். இளைஞன் அர்ச்சுனனை அழைத்து, “உனக்கு என்ன தெரிகிறது” என்று கேட்டார். “எனக்கு எதுவுமே தெரியவில்லை. அம்பின் நுனியும், கிளியின் தலையும் தான் தெரிகிறது” என்று சொன்னான். எந்தக் கிளி வீழ்த்தப்பட வேண்டும் என்று காண்டீபன் கருதினானோ, அந்தக் கிளியின் தலையும் அம்பின் நுனியும் தான் அவனுக்குத் தெரிந்தது. எனவே “நீ தான் குறி பார்ப்பதில் வல்லவன், வெற்றி பெறக் கூடியவன்” என்று துரோணர் தட்டிக் கொடுத்தார் என்று கதை கூறுகின்றது.",
+      "sourceScan": 73,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 73,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Thalaiyum Nuniyum",
+    "sourceScan": 72,
+    "printedPage": 70
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Once Drona called all the students studying under him, pointed to a tree and said, “A parrot is sitting on that tree. You must aim at the parrot, shoot an arrow and cut its neck.” He then called Duryodhana and",
+      "sourceScan": 72,
+      "printedPage": 70,
+      "joinToNext": "space"
+     },
+     {
+      "text": "the other students, showed them the tree and the parrot, and asked each one in turn, “What do you see?” All of them said, “I see the tree; I see the branch.” He dismissed them all as not being right. He called the young Arjuna and asked, “What do you see?” Arjuna said, “I see nothing else. I see only the tip of the arrow and the parrot's head.” Of the parrot that Gandiban intended to bring down, he saw only its head and the tip of the arrow. The story says that Drona patted him in approval and said, “You are the one skilled at taking aim, the one capable of victory.”",
+      "sourceScan": 73,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 73,
+      "printedPage": 71,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  72,
+  73
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "workId": "krishnanaiyum-vidaatha-saathi",
+ "slug": "krishnanaiyum-vidaatha-saathi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/krishnanaiyum-vidaatha-saathi",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கிருஷ்ணனையும் விடாத சாதி",
+  "en": "Caste Did Not Spare Even Krishna"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கிருஷ்ணனையும் விடாத சாதி",
+    "sourceScan": 41,
+    "printedPage": 40
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யாதவர்களுடைய கடவுளான கிருஷ்ணனைப் பற்றிக் கூட ஒரு கதை சொல்வார்கள். அவன் திறமை படைத்தவன், பெரிய ராஜதந்திரி என்றெல்லாம் புராணம் சொல்கிறது. ஆனால் அவன் யாதவ வகுப்பைச் சேர்ந்தவன். ஆகவே க்ஷத்திரியர்கள்தான் நாட்டை ஆளலாம் என்று சொல்லி, அவனுக்கு ஆளும் உரிமை இல்லை என்று கூறிவிட்டார்கள்.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதனால்தான் உத்தரப் பிரதேசத்தில் பிறந்த கிருஷ்ணன் இங்கே ராஜ்யத்தை அமைக்க முடியாமல், குஜராத்திற்குச் சென்று அங்கே ‘துவாரகா’ என்று புதிய ராஜ்யத்தை அமைத்தான். ஆக சாதி வித்தியாசம் கிருஷ்ணன் என்ற அவதாரத்தையும் விடவில்லை.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Caste Did Not Spare Even Krishna",
+    "sourceScan": 41,
+    "printedPage": 40
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They tell a story even about Krishna, the god of the Yadavas. Myth says that he was a man of great ability, a great statesman and so on. But he belonged to the Yadava class. Therefore, they said that only Kshatriyas could rule a country and declared that he had no right to rule.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That is why, the story says, Krishna, though born in Uttar Pradesh, could not establish a kingdom here and went to Gujarat, where he founded a new kingdom called ‘Dwaraka’. Thus caste difference did not spare even the avatar called Krishna.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  41
+ ]
+}

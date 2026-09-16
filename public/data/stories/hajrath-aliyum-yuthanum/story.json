@@ -1,0 +1,155 @@
+{
+ "workId": "hajrath-aliyum-yuthanum",
+ "slug": "hajrath-aliyum-yuthanum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/hajrath-aliyum-yuthanum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஹஜ்ரத் அலியும் யூதனும்",
+  "en": "Hazrat Ali and the Jew"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஹஜ்ரத் அலியும் யூதனும்",
+    "sourceScan": 25,
+    "printedPage": 24
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருமுறை நபிகள் நாதரின் (ஸல்) மருமகனுமொன்றுவிட்ட சகோதரரும், வாரிசுமான ஹஜ்ரத் அலி (ரலி) அவர்கள் முன் ஒரு மைந்தன் இஸ்லாத்தையும் இறைவனையும், மார்க்கத்தையும் நிந்தித்துப் பேசினான். உடனே அலி (ரலி) அவர்கள் பாய்ந்து அவனைக் கீழே தள்ளி நெஞ்சின் மீது ஏறி உட்கார்ந்து கொண்டார்கள். யூதனுக்கு தான்",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கொல்லப்படுவோம் என்ற பயம் ஏற்பட்டு விட்டது. தப்பிப்போம் என்ற நம்பிக்கை சிறிதும் இல்லாமல் அலி (ரலி) அவர்கள் முகத்தில் காறி உமிழ்ந்தான்.",
+      "sourceScan": 26,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுப்பிலேற்றப்பட்ட பால் நிறைந்த ஒரு பாத்திரம் கொதிப்பேற்பட்டுப் பொங்கும்போது சிறிது குளிர்ந்த நீரை அதன்மீது தெளித்தவுடன் எப்படி அடங்கி விடுகிறது என்பதைப் பார்த்திருப்பீர்கள். அந்நிலை போன்றே அந்த யூதன் துப்பியதும் ஆச்சரியகரமாக அலி (ரலி)யின் கடுஞ்சினம் தணிந்து விட்டது. யூதனை ஒன்றுஞ் செய்யாது விட்டுவிட்டு அகன்று சென்றுவிட்டார். இந்த எதிர்பாராத திருப்பத்தைக் கண்டு வியப்படைந்த அந்த யூதன் அலி (ரலி) யின் பின்னால் ஓடோடியும் சென்று அவரைப் பிடித்து நிறுத்தி “நீங்கள் கொண்டபோக்கு மிக்க விந்தையாயுள்ளதே நான் கூறிய ஒரு வார்த்தைக்காக என்னைக் கீழேதள்ளிக் கொல்லவும் எத்தனித்தீர்கள். நான் நம்பிக்கை இழந்த நிலையில் உம் முகத்தில் துப்பியபோது என்னை ஒன்றுஞ் செய்யாதுவிட்டு அப்பால் சென்றீர்களே. ஏன் ?” என வினவினான்.",
+      "sourceScan": 26,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ எங்கள் இறைவனை நிந்தித்தாய் அதன் காரணமாக உன்னைக் கொல்ல நினைத்தேன். ஆனால் என்மீது நீ துப்பிய போது என் சொந்த விஷயத்துக்காகவே நான் கோபங் கொள்வதாகிறது தனிப்பட்ட துவேஷத்தைப் பொதுநலத் தொண்டோடு பொருத்துதல் முறையல்ல. அல்லாஹ்வுக்காக நான் உயிர் கொல்லலாமேதவிர அலிக்காக நான்கொலையாளியாக மாறக் கூடாது” என்று பதிலளித்தார். கனவான்களே நாங்கள் இருவரும் (சவுக்கத் அலியும், முகம்மதலியும்) அந்தக்",
+      "sourceScan": 26,
+      "printedPage": 25,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கண்ணியத்துக்குரிய அலி என்னும் நாமத்தைக் கொண்டிருக்கிறோம். என்று அந்த அலி அவர்களோடு தங்களை ஒப்பிட்டுக் காட்டிக் கொண்டு எங்களுடைய கொள்கை இகழப்பட்டால் நாங்கள் நெஞ்சில் ஏற்றிருக்கிற தத்துவம் இகழப்பட்டால் எதற்கும் கூடத் துணிந்து விடுவோம். ஆனால் தனிப்பட்ட முறையில் முகத்தில் காறித் துப்பினால் கூட அவன் இகழ்ந்தது கொள்கையை அல்ல; மார்க்கத்தை அல்ல; இறைவனை அல்ல தனிப்பட்ட என்னை இகழ்ந்தான் ஆகவே காறித்துப்பினாலும் பரவாயில்லை என்று அன்று அலி சகோதரர்கள் சொன்னார்கள்",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைத்தான் எங்கள் அண்ணன் ‘மறப்போம், மன்னிப்போம்’ என்று கூறியதை இப்போது எங்கள் மீது காறித் துப்புகிறவர்களைப் பார்க்கும்போது எண்ணிக் கொள்கிறேன்.",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Hazrat Ali and the Jew",
+    "sourceScan": 25,
+    "printedPage": 24
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Once, before Hazrat Ali (rali), the Prophet's (sal) son-in-law, cousin and heir, a young man spoke insultingly of Islam, God and the faith. At once Ali (rali) sprang at him, pushed him down, climbed onto his chest and sat there. The Jew became afraid that he was",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "space"
+     },
+     {
+      "text": "going to be killed. With not the slightest hope of escape, he spat in Ali's (rali) face.",
+      "sourceScan": 26,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You may have seen how a vessel full of milk, when it boils and rises on the stove, subsides as soon as a little cold water is sprinkled over it. In the same way, as soon as the Jew spat, Ali's (rali) fierce anger astonishingly subsided. Without doing anything to the Jew, he got up and went away. Astonished by this unexpected turn, the Jew ran after Ali (rali), stopped him, and asked: “Your conduct is very strange. For one word I spoke, you knocked me down and even tried to kill me. When, having lost all hope, I spat in your face, you left without doing anything to me. Why?”",
+      "sourceScan": 26,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You insulted our God. For that reason I thought of killing you. But when you spat on me, if I became angry it would be for a personal matter of my own. It is not right to combine personal hatred with public service. I may take a life for Allah, but I must not become a killer for Ali,” he replied. Gentlemen, both of us—Shaukat Ali and Muhammad Ali—bear that honorable",
+      "sourceScan": 26,
+      "printedPage": 25,
+      "joinToNext": "space"
+     },
+     {
+      "text": "name of Ali. Comparing themselves with that Ali, those Ali brothers said that if our policy is insulted, if the philosophy we have taken into our hearts is insulted, we will dare anything. But even if someone spits in our face personally, what he has insulted is not the policy, not the faith, not God; he has insulted me personally. So even if he spits, never mind—that is what the Ali brothers said then.",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That is what I remember now, when I see people spitting at us: what our Anna said, “Let us forget; let us forgive.”",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  25,
+  26,
+  27
+ ]
+}

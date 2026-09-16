@@ -1,0 +1,350 @@
+{
+ "workId": "iruvarum-koodiyiruppathu-aathi-maalaithaan",
+ "slug": "iruvarum-koodiyiruppathu-aathi-maalaithaan",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/iruvarum-koodiyiruppathu-aathi-maalaithaan",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "இருவரும் கூடியிருப்பது ஆத்தி மாலைதான்",
+  "en": "What Unites the Two Is the Aathi Garland"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "இருவரும் கூடியிருப்பது ஆத்தி மாலைதான்",
+    "sourceScan": 15,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோவூர் கிழார் என்ற சங்ககாலப் புலவர் நலங்கிள்ளி, நெடுங்கிள்ளி என்ற இரண்டு சோழர்களுக்கும் நண்பர். ஒரு நாள் நெடுங்கிள்ளியின் பால், நலங்கிள்ளியின் அவைக்களப் புலவர் இளந்தத்தன் என்பான் வருகிறான்.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நெடுங்கிள்ளி, ‘இவன் புலவன் அல்லன். நலங்கிள்ளியால் அனுப்பி வைக்கப்பட்ட ஒற்றன்’ என்று சந்தேகப்படுகிறான்.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே கோவூர்கிழார் தலையிட்டு, “அல்ல அல்ல நெடுங்கிள்ளி! அவசரப்படாதே, இவன் புலவன்தான்! நலங்கிள்ளியின் கொழு மண்டபத்தில் பணியாற்றுகின்ற புலவன்தான் இந்த இளந்தத்தன்” என்று சொல்லி அவனைக் காப்பாற்றுகிறார்.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுத்த கட்டம் - உறையூரில் இருந்த சோழன் நெடுங்கிள்ளிமீது, சோழன் நலங்கிள்ளி போர் தொடுக்கின்றான். அந்தப் போரில் கோவூர்கிழார் பங்கு என்ன தெரியுமா?",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிருஷ்ணனைப் போல - பாண்டவருக்காகத் தூது சென்ற கிருஷ்ணன் போல் - அதைக் கொடு, இதைக் கொடு என்று கேட்கவில்லை.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரண்டு மன்னர்களுக்கிடையே நின்று பாடுகிறார். என்ன பாடுகிறார்?",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நின்ன கண்ணியும் மார்பிடைந்தன்றே நின்னொடு பொருவோன் கண்ணியும் மார்பிடைந்தன்றே”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதாவது, “சோழனே, நெடுங்கிள்ளியே, நீ அணிந்திருப்பதும் ஆத்திதான்; நலங்கிள்ளியும் ஆத்திதான் சூடியிருக்கிறான்; இருவருமே சோழ வம்சத்தைச் சேர்ந்தவர்கள்.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒருவீர் தோற்பினும் தோற்ப துங்குடியே”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரண்டு பேரில் யார் தோற்றாலும் சோழர் குடிதான் தோற்பது என்று சரித்திரத்தில் வரும்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இருவீர் வேறல் இயற்கையு மன்றே”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இருவரும் வெற்றி பெறுவது என்பது இயற்கையல்ல. அதனால்,",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“குடி பொருளன்று நுஞ்செய்தி”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே உங்களுடைய செயல் குடிப் பெருமைக்கு ஏற்றதல்ல- என்று பாடுகிறார்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "What Unites the Two Is the Aathi Garland",
+    "sourceScan": 15,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kovur Kizhar, a Sangam-age poet, was a friend of the two Cholas Nalangilli and Nedungilli. One day Ilanthathan, Nalangilli's court poet, comes to Nedungilli.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nedungilli suspects, ‘He is not a poet. He is a spy sent by Nalangilli.’",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kovur Kizhar immediately intervenes. “No, no, Nedungilli! Do not be hasty. He is indeed a poet! This Ilanthathan is a poet who works in Nalangilli's *kozhu mandapam*,” he says, and saves him.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next stage — Chola Nalangilli wages war on Chola Nedungilli, who was in Uraiyur. Do you know what part Kovur Kizhar plays in that war?",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Like Krishna — like Krishna who went as an envoy for the Pandavas — he does not ask, give this, give that.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He stands between the two kings and sings. What does he sing?",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Your garland upon your breast is the same; The garland upon the breast of the one who fights you is the same.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That is: “O Chola, Nedungilli, what you wear is Aathi; Nalangilli too wears Aathi; both of you belong to the Chola lineage.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If either one of you loses, it is your clan that loses.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "History says that whichever of the two loses, it is the Chola clan that loses.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“For both of you to win is not in the nature of things.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is not natural for both of them to emerge victorious. Therefore,",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What you are doing does not befit the honour of your clan.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus he sings that their action is not worthy of the dignity of their clan.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  15,
+  16
+ ]
+}

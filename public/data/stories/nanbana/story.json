@@ -1,0 +1,380 @@
+{
+ "workId": "nanbana",
+ "slug": "nanbana",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nanbana",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நண்பனா?",
+  "en": "Nanbana?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நண்பனா?",
+    "sourceScan": 104,
+    "printedPage": 94
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அன்புள்ள சேகர்! என் திருமண அழைப்புக் கிடைத்திருக்கும் உனக்கு. நிச்சயம் வருவாய் என்று எதிர்பார்த்தேன்; ஏமாற்றமடைந்தேன். உன் திருமணத்திற்கு நான் வரவில்லை என்பதற்குப் பழிவாங்கி விட்டாய். அதில் என் குற்றம் ஒன்றுமில்லை என்பதை அறிவாய். ஆனால் உன் மணவிழா நடைபெற்ற ஐந்தாண்டுக் காலம் ஓடிவிட்ட போதிலும், இன்னும் நான் உன்னைச் சந்தித்து மண வாழ்த்துக் கூறாதது என் தவறுதான். சூழ் நிலைகள் சதி செய்து விட்டன. வயிற்றுப் பிழைப்பு உன்னையும் என்னையும் நெடுந்தொலைவுக்குப் பிரித்து விட்டது. டெல்லி மாநகரில் உத்தியோகம் பார்க்கும் ஒரு பெண்ணையே நீ மணந்து கொண்டதால் பொருளாதாரத் துறையில் குடும்பம் ஆட்டங்கொடுக்காமல் ஓடிக்கொண்டிருக்கும். உனக்கென்னப்பா, கொடுத்து வைத்தவன். எனக்குக் கிடைத்திருப்பவளும் டெல்லியில் வாழ்ந்தவள் தான். சென்னையில் கம்பெனியொன்றில் வேலை பார்க்கிறாள். அவள் வாயிலாக மாதம் முந்நூறு ரூபாய் கிடைக்கும். என்னடா, பயல் பரவாயில்லையே என்று சொல்லத் தோன்றுகிறதா உனக்கு?",
+      "sourceScan": 104,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "டே, சேகர்! தம்பதிகள் படமாவது அனுப்பி வையேன் டா! இத்தனை நாள் சும்மாவா இருந்திருப்பாய்? ‘இருமலர் ஓர் அரும்பு’ என்ற தலைப்பிட்டு",
+      "sourceScan": 104,
+      "printedPage": 94,
+      "joinToNext": "space"
+     },
+     {
+      "text": "உன் குடும்பப் படத்தை அனுப்பி வை! அரும்பு ஒன்று தானே! ஒருவேளை ஐந்தாறோ?",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதைப் படிக்கும்போது நீ எப்படிக் கோபிக்கிறாய் என்பது எனக்குத் தெரியாமலில்லை. திருமணத்திற்கு வராதவன்; வராதது மட்டுமல்ல, இத்தனை நாள் இருக்கிறேனா, செத்தேனா என்றுகூட விசாரிக்காதவன் இன்று அவன் ஒரு கட்டையைக் கட்டிக்கொண்டதும் மிகக் குடும்பப் பொறுப்பும், நட்புணர்வும் வந்தவனைப் போல நடிக்கிறானே என்றெல்லாம் உன் முரட்டு உதடுகள் முணுமுணுப்பது என் காதில் விழாமல் இல்லை. நீ போன முறை சென்னை வந்தபோது நான் இலங்கை போயிருந்தேன். நீ வந்திருக்கிறாய் என்று கேள்விப்பட்டதும், என் வேலைகளைக் கூட அவசர அவசரமாக முடித்துக்கொண்டு இலங்கையிலிருந்து ஓடோடி வந்தேன்.",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீ அதற்குள் தமிழ்நாட்டில் நடந்த இந்தி எதிர்ப்புக் கிளர்ச்சிகளைப் பார்த்துப் பயந்து ஓடோடி விட்டாயாம் டெல்லிக்கு! உடனே கடிதம் எழுதினேன். உன் வீரத்தைப் புகழ்ந்து நான் எழுதிய அந்த மடல், புறநானூற்றுப் பாடல்களின் வரிசையிலே சேர்க்கப்பட வேண்டிய ஒன்றாகும். அதை நீ தவற விட்டிருந்தால் தயவு செய்து உன் பழைய குப்பைகளைக் கிளறிப் பார்.",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கலியாணமே கூடாது! அது ஒரு கால் விலங்கு! மனித உரிமைகளைப் பறிக்கும் சிறை! மகிழ்ச்சிக்குப் பூட்டு! மாணலோகச் சீட்டு!”",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்றெல்லாம் வெறுப்புடன் பேசிக் கொண்டிருந்த உன் ஆருயிர் நண்பனாகிய நான், மனந்திருந்திக் கலியாண வாசற்படியில் கால்வைத்து, குடும்பமெனும்",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தாழ்வாரத்தில் நுழைந்திருக்கிறேனே அதைப் பார்த்துக் கேலி செய்யவாவது நீ என் மணவிழாவுக்கு வந்திருக்கக் கூடாதா? ‘எப்படியடா இந்த மாற்றம் ஏற்பட்டது?’ என்று என்னைக் கேட்டு விபரம் அறியும் ஆவல் கூடவா உனக்கு இல்லாமற் போய் விட்டது?",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘இன்னா செய்தாரை ஒறுத்தல் அவர்நாண நன்னயஞ் செய்துவிடல்’",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்ற குறள் மொழியை டெல்லிக்குச் சென்றதும் மறந்துவிட்டாயா? பிறகேன் நண்பா, என்னை இப்படிப் பழிவாங்கினாய்? வரத்தான் முடியவில்லை, ஒரு வாழ்த்தாவது அனுப்பக் கூடாதா? என்மீது தான் கோபம்! என் மனைவி—அதாவது உன் தங்கைக்காவது மணவாழ்த்து அனுப்பியிருக்கக் கூடாதா? போகட்டும். இதற்காவது பதில் எழுது.",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அன்பு நண்பன் பாபு",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "□ □ □",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சேகரிடமிருந்து, பாபுவுக்கு இரண்டொரு நாட்களில் பதில் வந்தது. அது:",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அன்புள்ள பாபு! மணமகளின் நிழற்படத்துடன் நீ அனுப்பிய மணமடல் கிடைத்தது. அதனைத் தொடர்ந்து உன் கடிதமும் வந்தது. தங்கைக்காவது வாழ்த்து அனுப்பக்கூடாதா என்று கேட்டிருக்கிறாய்! எப்படியடா அனுப்புவது? என்னை விவாகரத்து செய்து கொண்ட சாரதா, உடனே எனக்குத் தங்கை முறை ஆகிவிடுவாளா?",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உன் நண்பன் சேகர்",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "□",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Nanbana?",
+    "sourceScan": 104,
+    "printedPage": 94
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Dear Sekar! You must have received my wedding invitation. I expected you to come for certain; I was disappointed. You have taken revenge on me for not attending your wedding. You know there was no fault of mine in that. But even though five years have passed since your wedding, it is indeed my fault that I still have not met you and offered my congratulations. Circumstances conspired against us. The struggle to earn a living separated you and me by a great distance. Since you married a woman employed in the city of Delhi, your family must be moving along without being shaken on the economic front. You lucky fellow! The woman I have got also once lived in Delhi. She works for a company in Chennai. Through her, three hundred rupees come in every month. Are you thinking, “Not bad at all, the rascal!”?",
+      "sourceScan": 104,
+      "printedPage": 94,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Hey, Sekar! At least send me a photograph of the two of you! You cannot have been sitting idle all these years, can you? Put the caption ‘Two Blossoms, One Bud’ on it",
+      "sourceScan": 104,
+      "printedPage": 94,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and send me your family photograph! Only one bud, right? Or perhaps five or six?",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I know very well how angry you must be while reading this. “The fellow who did not come to my wedding—not only that, the fellow who did not even bother all these years to ask whether I was alive or dead—now that he has tied a log to himself, he acts as though he has suddenly acquired a great sense of family responsibility and friendship!” I can almost hear your rough lips muttering all that. The last time you came to Chennai, I was in Sri Lanka. The moment I heard that you had come, I hurriedly finished even my work and came rushing back from Sri Lanka.",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But by then, it seems, you had seen the anti-Hindi agitations taking place in Tamil Nadu, become frightened, and rushed away to Delhi! I wrote to you at once. That letter I wrote praising your bravery deserves a place among the poems of the Purananuru. If you missed it, please rummage through your old rubbish and look for it.",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Marriage should not exist! It is a shackle on the leg! A prison that snatches away human rights! A lock on happiness! A ticket to Maanalogam!”",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I, your dearest friend who used to speak so bitterly in that fashion, have changed my mind and set foot on the threshold of marriage, heading toward the place called family—",
+      "sourceScan": 105,
+      "printedPage": 95,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I have entered its corridor. Could you not at least have come to my wedding just to make fun of me for that? Did you not even have the curiosity to ask me, “How on earth did this change come about?” and hear the details?",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“To punish those who have done you harm, do them good, so that they are shamed.”",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Did you forget this Kural saying as soon as you went to Delhi? Then why, my friend, did you take revenge on me like this? If you could not come, could you not at least have sent a greeting? Your anger is with me! Could you not have sent wedding wishes at least to my wife—that is, to your younger sister? Let it go. At least write a reply to this.",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Your loving friend Babu",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "□ □ □",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Within a day or two, a reply came from Sekar to Babu. It said:",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Dear Babu! I received the wedding invitation you sent with the bride’s photograph. Your letter followed it. You ask whether I could not at least have sent wishes to my younger sister! How am I supposed to send them? Does Saradha, who divorced me, immediately become my younger sister?",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Your friend Sekar",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "□",
+      "sourceScan": 106,
+      "printedPage": 96,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  104,
+  105,
+  106
+ ]
+}

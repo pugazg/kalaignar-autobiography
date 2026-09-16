@@ -1,0 +1,120 @@
+{
+ "workId": "pulivaal",
+ "slug": "pulivaal",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/pulivaal",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "புலிவால்",
+  "en": "The Tiger's Tail"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புலிவால்",
+    "sourceScan": 44,
+    "printedPage": 42
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மலையாள மொழியில் இலக்கியங்கள் மாத்திர மல்ல, குத்தலான, கேலியான கிண்டல்களே கூட உண்டு. ‘சுருக்’ கென்று தைக்கக்கூடிய கேலி மொழிகள், மலையாளத்திலே நிரம்ப உண்டு. அருமை நண்பர் எம்.ஜி.ஆரோடு பழகிய நேரத்தில் - நான் நீண்ட காலம் அவரோடு பழகியது உங்களுக்குத் தெரியும். இளம் வயதிலே பழகிய போது நான் அவரிடம் கேட்பேன். மலையாளத்தில் மிக சிறப்பான ‘சுருக்’ கென்று குத்தக்கூடிய கேலி மொழி எது? என்று கேட்டபோது - ‘நாயர் புடிச்ச",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "space"
+     },
+     {
+      "text": "புலிவால்’ என்று சொன்னார். அதற்கு தமிழிலே பழமொழி ஒன்று இருக்கிறதாம். என்னவென்றால், ‘உடும்பு வேண்டாம் கையை விட்டால் போதும்’ என்று சொல்வோம். அதாவது உடும்பைப் பிடிக்க ஒருவன் போனான். உடும்புஅவன் கையைப் பிடித்து விட்டது. உடும்பு தனக்கு வேண்டாம். கையை விட்டால் போதும் என்று கெஞ்சினான் என்று தமிழிலே சொல்வோம்.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால், ‘நாயர் புடிச்ச புலிவால்’ என்பது ஒரு நல்ல கதையைக்கூட நமக்கு எடுத்துக்காட்டும். நாயர் புலிவாலை பிடித்து விடுகிறார். புலி, நாயருக்குப் பயந்து ஓடிக் கொண்டிருக்கிறது. நாயர், புலி வாலை பிடித்துக் கொண்டே இருக்கின்றார். என்ன கஷ்டம் என்றால் - புலிவாலை நாயர் விட்டால் புலி, நாயர் மீது பாய்ந்து விடும். நாயர் விடாத காரணத்தால் புலி ஓடிக் கொண்டேயிருக்கிறது. நாயர் புடிச்ச புலி வால் - இன்னதற்காக பொருத்தமாக இருக்கிறது பாருங்கள். (கைதட்டல்) புலி வாலை நாயர் புடிச்சாரோ இல்லையோ, நம் நாடு புலி வாலை பிடித்துக் கொண்டு இன்று பாடுபாடு பட்டுக் கொண்டு இருக்கிறது. (கைதட்டல்)",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Tiger's Tail",
+    "sourceScan": 44,
+    "printedPage": 42
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Malayalam language has not only literature but also sharp, mocking jibes. Malayalam is full of taunting expressions that can sting with a quick “suruk.” During the time I was close to my dear friend M.G.R.—you know that I was close to him for a long time—when we were young I would ask him, “What is the finest, sharply piercing expression of mockery in Malayalam?” When I asked him that, he said, “Nair pudicha",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "space"
+     },
+     {
+      "text": "pulivaal.” There is said to be a Tamil proverb corresponding to it. We say, “I don't want the monitor lizard; it is enough if it lets go of my hand.” That is, a man went to catch a monitor lizard. The monitor lizard caught his hand. He did not want the monitor lizard anymore; he begged that it would be enough if it simply let go of his hand. That is how we say it in Tamil.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But “Nair pudicha pulivaal” also gives us a good story. A Nair catches hold of a tiger's tail. The tiger keeps running because it is afraid of the Nair. The Nair keeps holding on to the tiger's tail. The difficulty is this: if the Nair lets go of the tiger's tail, the tiger will leap on him. Because the Nair does not let go, the tiger keeps running. Look at what situations this “tiger's tail caught by the Nair” can fit. (Applause) Whether or not a Nair ever caught a tiger's tail, our country has caught hold of a tiger's tail and is suffering today. (Applause)",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  44,
+  45
+ ]
+}

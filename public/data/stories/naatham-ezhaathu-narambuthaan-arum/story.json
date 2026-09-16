@@ -1,0 +1,98 @@
+{
+ "workId": "naatham-ezhaathu-narambuthaan-arum",
+ "slug": "naatham-ezhaathu-narambuthaan-arum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/naatham-ezhaathu-narambuthaan-arum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நாதம் எழாது - நரம்புதான் அறும்",
+  "en": "No Music Will Rise — Only the String Will Snap"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நாதம் எழாது - நரம்புதான் அறும்",
+    "sourceScan": 14,
+    "printedPage": 13
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தர் ஒரு வாலிபனைச் சந்தித்தார். அந்த வாலிபனிடத்தில் புத்தர் சொன்னார் :- “ஓ வாலிபனே! வீணையினுடைய நரம்பை மேலும் அதிகமாக முடுக்கினாலும் அல்லது அதிகம் தளர்த்திவிட்டாலும் நல்ல இசையைக் கேட்க முடியாது.”",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வீணை நரம்பில் இனிய நாதம் - இன்ப நாதம் - எழிலிசை கிளம்ப வேண்டுமானால் நரம்பு எந்த அளவுக்கு முடுக்கப்பட வேண்டுமோ அந்த அளவுக்கு முடுக்கப்பட வேண்டும். ‘நான்",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "space"
+     },
+     {
+      "text": "இப்படித்தான் முடுக்குவேன்’ என்று முடுக்கினால் நாதம் எழுவதற்குப் பதிலாக நரம்பே அறுந்துவிடும்.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "No Music Will Rise — Only the String Will Snap",
+    "sourceScan": 14,
+    "printedPage": 13
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Buddha met a young man. Buddha said to that young man:— “O young man! If the veena's string is tightened too much, or loosened too much, good music cannot be heard.”",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If sweet resonance — joyful resonance — beautiful music is to arise from the veena's string, the string must be tightened only to the degree required. ‘I",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "space"
+     },
+     {
+      "text": "will tighten it only this way,’ if it is tightened like that, instead of music arising, the string itself will snap.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  14,
+  15
+ ]
+}

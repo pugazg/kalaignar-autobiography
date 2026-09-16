@@ -1,0 +1,53 @@
+{
+ "workId": "mamiyar-udaithaal-mattum-manchattiya",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/mamiyar-udaithaal-mattum-manchattiya",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "34b28ede66f630daf1625dc9163dbf580b99b1f9",
+ "batch": 7,
+ "validationGroup": "2008",
+ "source": {
+  "printedTitleTa": "மாமியார் உடைத்தால் மட்டும் மண்சட்டியா?",
+  "collectionTa": null,
+  "editionStatementTa": "Second Edition, December 2008",
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065857_கலைஞர்_சொன்ன_கதைகள்.pdf",
+  "scanSha256": "1b2bf86892717776b1b3dc7fcb18dc146d5bfd0d60986509dc9cbbf5f235444b",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "54–60",
+  "storyScanCount": 7,
+  "printedPages": "52–58",
+  "verifiedPages": 7,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/mamiyar-udaithaal-mattum-manchattiya/pages/",
+  "derivedAssembly": "stories/mamiyar-udaithaal-mattum-manchattiya/sections/mamiyar-udaithaal-mattum-manchattiya.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 3
+ },
+ "english": {
+  "titleEn": "Is It an Earthen Pot Only When the Mother-in-Law Breaks It?",
+  "scanAnchors": 7,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "PASS"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

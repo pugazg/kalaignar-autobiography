@@ -1,0 +1,125 @@
+{
+ "workId": "manaivi-sonna-vilakkam",
+ "slug": "manaivi-sonna-vilakkam",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/manaivi-sonna-vilakkam",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "மனைவி சொன்ன விளக்கம்",
+  "en": "Manaivi Sonna Vilakkam"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "மனைவி சொன்ன விளக்கம்",
+    "sourceScan": 13,
+    "printedPage": 12
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்று மாலை 3 மணிக்கு நான் வாலிப நாடகம் ஒன்றைக் கேட்டேன். அந்த நாடகத்தில் சந்தனா என்னும் ஒரு பெண் - சந்தை ஒன்றில் விலை கூறி விற்கப்படுகிறாள். மிக அழகான பெண் அற்புதமான பேரழகி... ஒரு பெரிய செல்வச் சீமான், அந்தப் பெண்ணை விலைக்கு வாங்கி, தன்னுடைய ஊருக்கு அழைத்துச் செல்கிறான். ஊருக்குச் சென்றதும், நந்தவனத்தில் இருக்கின்ற",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மனைவியை அழைத்து, “என்னுடைய ஆருயிர் மனைவியே!” ஓர் அழகான அடிமையை விலைக்கு வாங்கி வந்திருக்கிறேன்” என்று சொல்கிறான். தனக்கு ஒரு வேலைக்காரி கிடைத்த மகிழ்ச்சியில் ‘அவளுடைய முகத்திரையை நீக்குங்கள் பார்க்கலாம்’ என்றாள் மனைவி.",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதன்படி முகத்திரை நீக்கப்பட்டதும் அவள் பேரழகியாக இருப்பதைப் பார்க்கிறாள். அந்தச் சீமான் தன் மனைவியிடம், “இவளைப் பார்த்துக் கொள்; நான் சற்று வியாபார வேலைகளைப் பார்த்துவிட்டு வருகிறேன்” என்று கூறிவிட்டு வெளியூர் போகிறான். அவன் போனதும், அவன் மனைவி நினைக்கிறாள் - ‘இவர் இந்த அழகியை வேலைக்காக வாங்கி வரவில்லை. தன்னுடைய இச்சையைத் தீர்த்துக் கொள்ளத்தான் அழைத்து வந்திருக்கிறார். ஆகவே, அவர் வருவதற்குள்ளாக இந்த அழகியை விகாரமாக ஆக்கிவிட வேண்டும்’ என்று எண்ணி முடி திருத்துபவனை அழைத்து வரச் சொல்லி - அவளுடைய கூந்தலை கோணல் மாணலாக வெட்டச் சொல்கிறாள். முகத்தில் சுட்டுக் கோணல் கோடுகளைக் கிழித்துக் கோர ரூபமாக அவளை ஆக்குகிறாள்!",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்குக் காரணமாக அவள், ‘என் கணவன் அவளைக் காதலித்து விடுவார். ஆகவேதான் இதைச் செய்கிறேன்’ என்று சொல்கிறாள்!",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Manaivi Sonna Vilakkam",
+    "sourceScan": 13,
+    "printedPage": 12
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This afternoon at 3 o'clock I listened to a *vaaliba naadagam*. In that drama a woman named Chandana is put up for sale in a market, with a price called out. A very beautiful woman, an extraordinary beauty... A great wealthy gentleman buys the woman and takes her to his town. On reaching the town, he calls the one who is in the pleasure garden—",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "his wife—and says, “My dearest wife! I have bought and brought home a beautiful slave.” Delighted that she has got a servant, the wife says, ‘Remove her veil; let me see.’",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When the veil is removed accordingly, she sees that the woman is extraordinarily beautiful. The gentleman tells his wife, “Look after her; I shall attend to some business matters and return,” and leaves for another town. After he goes, his wife thinks: ‘He has not bought this beauty for work. He has brought her to satisfy his own desire. So, before he returns, I must make this beauty ugly.’ She has a barber summoned, tells him to cut the woman's hair crookedly and unevenly, and has crooked lines burned and scored across her face, making her grotesque!",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As her reason, she says, ‘My husband will fall in love with her. That is why I am doing this!’",
+      "sourceScan": 14,
+      "printedPage": 13,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  13,
+  14
+ ]
+}

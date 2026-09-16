@@ -1,0 +1,663 @@
+{
+ "workId": "seerazhitha-sirippu",
+ "slug": "seerazhitha-sirippu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/seerazhitha-sirippu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "title": {
+  "ta": "சீரழித்த சிரிப்பு!",
+  "en": "The Laugh That Ruined Her!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சீரழித்த சிரிப்பு!",
+    "sourceScan": 101,
+    "printedPage": 91
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Source-layout note: the illustrated title block `சீரழித்த சிரிப்பு! — மு. கருணாநிதி` occupies the centre of the printed page. The story text flows around it in magazine columns. The sequence below follows the direct physical reading order rather than the scrambled baseline order.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இளவரசே! தங்களது கரம் பிடிக்கப்போகும் கரோலின் இளவரசி, கடல் மார்க்கமாய் ஜெர்மானியத்திலிருந்து வந்து கொண்டிருக்கிறார். இந்த நேரத்தில் கப்பல் கவிழ்ந்தது போல் கவலையாய்—மனமொடிந்து உட்கார்ந்திருக்கிறீர்களே?”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மனம் ஒடிந்துதான் போயிற்று! உடல் தளர்ந்துதான் போயிற்று; இளவரசியின் வருகை அறிந்து!”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏன், கரோலின் இளவரசிக்கு அழகில்லையா?”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இருக்கலாம். அவள் அழகு தேவதையாக இருக்கலாம். ஆனால் நண்பா, எப்போதுமே திணிக்கப்படுவது ஜீரணிக்கப்படுவதில்லை.”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன: புரிய வில்லையே”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் தனிப்பட்ட முறையில் கடன்காரனாம்; என் கடனைத் தீர்க்க ஜெர்மன் நாட்டுப் பணக்காரியான கரோலினை நான் ஏற்க வேண்டுமாம் குறையையும் சுட்டிக் காட்டி பளுவையும் சுமத்தும்போது மனம் ஒடிந்து விடுகிறது.”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கரோலின் உங்களுக்கு நெருங்கிய சொந்தம் என்கிறார்களே...”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நெருங்கிய சொந்தத்திலிருந்து தானே மிகப் பெரிய தகராறுகள் முளைக்கின்றன.”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேல்ஸ் இளவரசரின் இந்தப் பதிலைக் கேட்டு அவர் நண்பன் இடிந்து போனான்.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி; கரோலினை வரவேற்பதற்குரிய வேளை நெருங்கிவிட்டது. விழாவுக்குரிய ஆடைகளை அணிவிக்கட்டுமா?”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ம்! உடல் இருக்கிறது; அழகு படுத்து! உள்ளம் தனியாக இருக்கட்டுமே; அதை அழவிடு!”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சாரட்டு வண்டி வந்து நின்றது’ வெள்ளையுடை அணிந்து அதற்கேற்ற வண்ண மேலாடை பூண்டு, அளவுக்கு மீறிய கலகலப்பான சிரிப்புடன் கரோலின் இறங்கினாள். வேல்ஸ் இளவரசருக்கு அருகில் வந்ததும் முழங்காலிட்டு வணங்கினாள்.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எழுந்திரு அன்பே!” என்று உணர்ச்சியற்ற சொற்களை உதிர்த்த இளவரசர், அவளைத்தூக்கி மார்போடு அணைத்து வரவேற்றார். பிறகு, தனது தனியறை நோக்கி வேல்ஸ் இளவரசர் நடைபோட்டார்.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எனக்குக் காட்டிய படத்தில் இருப்பதுபோல் இளவரசர் நேரில் பார்க்கும்போது அவ்வளவு அழகாக இல்லையே; பரவாயில்லை — அழகு இல்லாவிட்டால் என்ன? அவர் அன்பு செலுத்தினால் நான் அன்பு செலுத்துவேன். பிறகு சரியாகப் போய் விடும்...ஹி...ஹி...ஹி!”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று சிரித்தாள் கரோலின் இளவரசி. அரச குடும்பத்திற் கேற்ற சிரிப்பாக அது இல்லாதது கண்டு அரண்மனைத் தோழிகள் திகைத்தனர்.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இளவரசி! இன்று இரவு விருந்துக்கு நீங்கள் தயாராக வேண்டும்” என்றாள் தோழி.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“விருந்தா? எனக்கு ரொம்பப் பிடிக்கும். சாப்பாட்டை நான் சொல்லவில்லை. அங்கு பல்வேறு பெரிய மனிதர்கள் வருவார்கள் அல்லவா? அவர்களிடம் பழகும் வாய்ப்பு எனக்குக் கிடைக்குமே! ஹி! ஹி! ஹி!”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இளவரசியை விடப் பெரிய மனிதர்களா? இது என்ன விசித்திரமான பேச்சு!” திடுக்கிட்டுப்போன தோழி, கரோலினுக்கு விருந்து உடை அணிவித்துக்கொண்டே, மெள்ளச் சொன்னாள்;",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அரண்மனைப் பணிப் பெண்களே அதிகம் சிரிக்காமல் அடக்கமாகப் பழகும்போது, அரசாளப் போகும் வேல்ஸ் இளவரசரின் வருங்கால மனைவி, இப்படி எதற்கெடுத்தாலும் சிரிப்பது நல்லதல்லவே!” என்று!",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்கும் ஒரு ஹி ஹிஹி...தான் கரோலின் இளவரசியின் பதிலாக இருந்தது.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேல்ஸ் இளவரசர், மூன்றாம் ஜார்ஜ் மன்னரின் புதல்வர். கரோலின் தந்தை வழியில் சொந்தக்காரி. சாதாரணக் குடும்பத்திலிருந்து வந்தாள். அவளது நடையுடை பாவனைகளும் அர்த்தமற்ற பல் இளிப்பும், அரசருக்கும் அரசிக்கும் மனவேதனையைத் தந்தன. எனினும்; எப்படியும் மருமகளாகப் போகிறவள் என்ற ஆசையில் அவளைத் திருத்துவதற்கான எல்லா வழிகளையும் கையாண்டுப் பயிற்சிகளை அளித்தனர். முடிவில் திருமணமும் முடிந்தது. கரோலின், விரைவில் ஒரு குழந்தைக்கும் தாயானாள். குழந்தை பிறந்த செய்தியைக் கேட்டதும் வேல்ஸ் இளவரசர், மகிழ்ச்சியால் துள்ளிக் குதித்தார்.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பாடா! அவளை மணந்ததால் எனது தனிப்பட்ட கடன் தீர்ந்தது. குழந்தை பிறந்ததால் என் பெற்றோருக்கு நான் செலுத்த வேண்டிய கடனும் தீர்ந்தது. இனி நான் பிரம்மச்சாரி” என்று தனது அருகிலிருந்த ஆசைநாயகியின் அதர பானம் அருந்திக் களித்தார் இளவரசர். கணவனும் கரோலினைக் காண்பதில்லை; குழந்தையையும் அரசி, தனிப்பட்ட முறையில் தன் பார்வையில் வளர்க்கத் தொடங்கிவிட்டாள். எடுத்ததற்கெல்லாம் சிரிப்பைக் கொட்டிக் கொண்டிருந்த கரோலின், வேதனைச்",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "space"
+     },
+     {
+      "text": "> Source-layout note: the boxed `முகப்பில்:` verse at the top of scan 102 is separate magazine matter and is excluded from the story assembly. The story resumes below it with the continuation of scan 101's final split word.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலையானாள். ஒரு நாள், இளவரசர். “உன்னை எனக்குப் பிடிக்கவில்லை” என்று எழுதியே கொடுத்துவிட்டார்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தனி மாளிகைக்குக் குடியேறினாள் கரோலின். அப்போது அந்தச் சிரிப்பும், அவளோடு சேர்ந்து அங்கு குடியேறிவிட்டது. அதன் காரணமாக அவள்மீது அபவாதங்கள் சுமத்தப்பட்டன. பிரபுக்கள் சிலருடன் கொஞ்சி மகிழ்கிறாள் என்று செய்தி பரவிற்று. அதுகேட்ட மன்னர், அதற்கான ரகசிய விசாரணை யொன்றை நடத்தினார். செய்திகள், வீண்பழிகள் என்று விசாரணையின்போது வெளியாயிற்று. மனம் நொந்த கரோலின், வெளிநாடுகளுக்கான சுற்றுப் பயணத்தை மேற்கொண்டாள், ஆறுதலுக்காக! அப்போதாவது அந்தச் சிரிப்பை விட்டு விட்டுப் போகக் கூடாதா? அழைத்துக் கொண்டே போனாள். முன்போலவே பழிவீசும் படலங்கள் தொடர்ந்தன. அவள் வெளி நாட்டில் இருந்தபோது, மூன்றாம் ஜார்ஜ் மன்னர் மறைந்து விடவே, வேல்ஸ் இளவரசர், இங்கிலாந்தின் மன்னராக முடிசூட்டிக் கொள்ள, ஏற்பாடுகள் நடைபெற்றன. இதனைக் கேள்வியுற்ற கரோலின், இங்கிலாந்துக்குத் திரும்பினாள்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தங்கள் வருங்கால ராணியை வரவேற்க மக்கள் தயாரானார்கள். அதிகாரிகள் சிலர், அதற்கான மரியாதை குண்டுகளைக்கூட வெடித்தனர்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அன்று, பாராளுமன்றத்தில் இங்கிலாந்தின் தலைமை அமைச்சர், ஒரு சட்டத்திருத்தம் கொண்டு வந்தார்...",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கரோலின் இளவரசி, வெளிநாடு சென்றிருந்தபோது, அவளது நடத்தைகள் நாட்டுக்கும் நமக்கும் வெட்கத்தை உண்டாக்கக் கூடியவைகள். எனவே கரோலின் அரசியாகாமல் தடுப்பதற்காக, அரசி பற்றிய உரிமைச் சட்டத்தைத் திருத்த வேண்டுமென அரசர் ஆணை பிறப்பித்திருக்கிறார்.”",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று அமைச்சர் விளக்க முறைத்தார். அதற்கு மறுப்பு எழவே, கரோலினை விசாரணை செய்யப் பாராளுமன்றத்திற்கு அழைத்தனர். டென்மான், என்ற வழக்கறிஞர் கரோலின் சார்பில் வாதாடினார். இளவரசியின், முன்னாள் சமையற்காரன் தியோடார் மஜோச்சி என்பான், அவளுக்கெதிராக, அவள் இதாலியில் பெர்காமி என்பவனுடன் சல்லாபம் நடத்தினாள் என்று சாட்சியம் கூறினான். அதுபற்றிய பல கேள்விக் கணைகளுக்கு அவன் பதில் அளிக்க முடியாமல் “எனக்கு நினைவில்லை” என்று மழுப்பினான். புரோகாம் என்ற உறுப்பினரின் சொல்லாற்றலால் அரசாங்கச்சட்டத்திற்கு ஆதரவு குறைய ஆரம்பித்தது. நிலையைப் புரிந்துகொண்ட பிரதமர் லிவர்பூல், சட்டத்தைத் திரும்பப் பெற்றுக் கொண்டார்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே, கரோலின், பிரதமர் மூலமாக ஒரு கடிதம் எழுதினாள்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அரசர் பட்டம் சூடும் நேரத்தில், ராணி எந்த உடையில் வரவேண்டும்? அரசர் எந்த உடையை விரும்புகிறார்?” என்பதே அக்கடிதம். அரசர் சார்பாக ஒரு பதில் வந்து “தற்போதுள்ள சூழ்நிலையில், விழாவில் அரசிக்கு எந்த இடமும் தருவதற்கில்லை” இதைக்கண்டும் கரோலின் சோர்ந்து விடவில்லை. தன் கணவன், மகுடம் புனையும் காட்சியை எப்படியும் பார்க்கிற பாக்கியமாவது தனக்குக் கிடைக்க வேண்டுமென அவள் துடித்தாள்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1821—ஆம் ஆண்டு, ஜூலை 19-ஆம் நாள்! புத்தாடை அணிந்து, அரசி கரோலின், மகுடாபிஷேக மண்டபத்திற்கு, சாதாரண பார்வையாளர்கள் இருக்கும் இடம் நோக்கி வந்தாள்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மையாரே! நுழைவுச் சீட்டு இருக்கிறதா?” காவலன், தடுத்துக் கேட்டான். திடுக்கிட்ட கரோலின் கல கலவெனச் சிரித்து விட்டாள். அப்போதும் இயல்பு போகவில்லை.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் யார் தெரியுமா?” என்றாள்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தெரியும்; நுழைவுச்சீட்டு இல்லாத பெண்!”",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே அங்கிருந்த ஒரு பிரபு: “ஏய்! வாயை அடக்கு! மன்னரின் மகுடாபிஷேகத்திற்கு அரசி, அனுமதிச்சீட்டு வாங்கியதைப்பற்றி எப்போது கேள்விப்பட்டிருக்கிறாய்?” என்று சினத்தைக் கக்கினார்.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தன் கதி இப்படி ஆகிவிட்டதே என்று வாய்விட்டுக் கோவென அழுது விட்டாள் கரோலின்! அவள் இத்தனை நாள் சிரித்த சிரிப்புக்கெல்லாம் சேர்த்து அழுதாள். இதற்குள் அரசனிடமிருந்து ஒரு ஆணைச்சீட்டு அங்கு வந்தது. அதில்; “அரசியை அனுமதிக்காதே!” என்று குறிப்பிடப்பட்டிருந்தது.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னை எல்லோரும் வாழ விடாமல் செய்து விட்டார்களே!” எனப் புலம்பிக்கொண்டே, கரோலின் மாளிகைக்கு ஓடி; படுக்கையில் விழுந்தாள். பிறகு எழவே இல்லை. அவளை வாழவிடாமல் செய்த அந்த அர்த்தமற்ற சிரிப்பு; அவளுக்கு முன்பே அவளிடம் விடை பெற்றுக் கொண்டது.",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "○",
+      "sourceScan": 102,
+      "printedPage": 92,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Laugh That Ruined Her!",
+    "sourceScan": 101,
+    "printedPage": 91
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "anguish. One day, the prince. “I do not like you,” he wrote and handed it to her.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Caroline moved into a separate residence. That laughter too took up residence there with her. Because of it, slanders were heaped upon her. News spread that she was flirting and enjoying herself with certain noblemen. On hearing it, the king conducted a secret inquiry into the matter. During the inquiry, the reports proved to be empty accusations. Deeply hurt, Caroline undertook a tour of foreign countries—for consolation! Could she not at least have left that laughter behind? She took it with her. As before, the episodes of slander continued. While she was abroad, King George III died, and arrangements were made for the Prince of Wales to be crowned King of England. Hearing of this, Caroline returned to England.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The people prepared to welcome their future queen. Some officials even fired salute shots in her honour.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That day, in Parliament, the Prime Minister of England introduced an amendment...",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“While Princess Caroline was abroad, her conduct was of a kind that could bring shame upon the country and upon us. Therefore, in order to prevent Caroline from becoming queen, the king has ordered that the law concerning the queen’s rights be amended.”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So the minister proceeded to explain. When opposition arose, Caroline was summoned before Parliament for an inquiry. Denman, a lawyer, argued on Caroline’s behalf. Theodore Majocchi, the princess’s former cook, testified against her, saying that in Italy she had carried on an affair with a man named Bergami. Unable to answer the barrage of questions put to him about it, he evaded them by saying, “I do not remember.” Because of the eloquence of a member named Brougham, support for the government’s bill began to decline. Understanding the situation, Prime Minister Liverpool withdrew the bill.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Immediately, Caroline sent a letter through the Prime Minister.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“At the time of the king’s coronation, what dress should the queen wear? What dress does the king wish her to wear?” That was what the letter asked. A reply came on the king’s behalf: “In the present circumstances, no place can be given to the queen at the ceremony.” Even after seeing this, Caroline did not lose heart. She longed at least for the good fortune of somehow witnessing her husband receive the crown.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The year was 1821—the 19th of July! Dressed in new clothes, Queen Caroline came toward the coronation hall, heading for the place where ordinary spectators were admitted.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Madam! Do you have an admission ticket?” the guard asked, stopping her. Startled, Caroline burst into a ringing laugh. Even then, her nature did not leave her.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do you know who I am?” she asked.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I do; a woman without an admission ticket!”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At once, a nobleman standing there shouted angrily: “Hey! Shut your mouth! When have you ever heard of a queen buying an admission ticket for the king’s coronation?”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thinking of how her fate had come to this, Caroline broke down and cried aloud. She wept as though making up for all the laughter she had laughed until then. Meanwhile an order from the king arrived there. It said: “Do not admit the queen!”",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Everyone has made it impossible for me to live!” Caroline lamented as she ran back to the palace and fell upon her bed. She never rose again. That meaningless laughter, which had made it impossible for her to live, left her before life itself did.",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "○",
+      "sourceScan": 101,
+      "printedPage": 91,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  101,
+  102
+ ]
+}

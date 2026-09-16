@@ -1,0 +1,108 @@
+{
+ "workId": "verum-kai-muzham-podum",
+ "slug": "verum-kai-muzham-podum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/verum-kai-muzham-podum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "வெறும் கை முழம் போடும்",
+  "en": "Verum Kai Muzham Podum"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "வெறும் கை முழம் போடும்",
+    "sourceScan": 16,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இருபதாயிரம் வராகன் பொன் கொடுத்தால் இந்திரலோகத்துப் பட்டாடை கொண்டு வருகிறேன்” என்று தெனாலிராமன் அரசரிடம் சொன்னான்.",
+      "sourceScan": 16,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவ்வாறே பொன் கொடுக்கப்பட்டது. நீண்டநாள் கழித்து தெனாலிராமன் அரசவைக்கு வந்தான். மன்னன் ஆவலுடன் “இந்திரலோகத்துப் பட்டு எங்கே?” என்று கேட்டான். “இதோ இருக்கிறது அரசே”, என்று சொல்லிக் கொண்டே பட்டாடை விரித்து அளப்பது போல் வெறுங்கை கொண்டு அளந்தவாறு, ஒரு முழம், இரண்டு முழம் என்று சொல்லிக் கொண்டே இருந்தான். அரசன் திகைத்தான். அவையோர் திகைத்தனர். “இந்தப் பட்டு கற்புடைய மனைவியைப் பெற்ற கணவர்களின் கண்களுக்கு மட்டுமே தெரியும். அரசே, தங்கள் கண்களுக்குத் தெரிகிறதா?” என்று இராமன் கேட்டான். பாவம், அரசன்! என்ன சொல்ல முடியும்? அரசனை முந்திக் கொண்டு அவையோர் அனைவரும் ஒருமித்த குரலில் “எங்கள் கண்களுக்குத் தெரிகிறது, தெரிகிறது, அற்புதமானப் பட்டு” என்றனர். அரசனும் “ஆமாம், என் கண்ணுக்கும் நன்றாகத் தெரிகிறது” என்றான். வெறுங்கையால் முழம் போடுவதற்கு இப்படியொரு பழங்கதை உண்டு.",
+      "sourceScan": 17,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 17,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Verum Kai Muzham Podum",
+    "sourceScan": 16,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If you give twenty thousand varagans of gold, I will bring silk cloth from Indra’s world,” Tenali Raman told the king.",
+      "sourceScan": 16,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Accordingly, the gold was given. After a long time, Tenali Raman came to the royal court. The king eagerly asked, “Where is the silk from Indra’s world?” “Here it is, Your Majesty,” he said, and, as though spreading out and measuring a silk cloth, he measured with empty hands, saying, “One cubit, two cubits,” again and again. The king was stunned. The courtiers were stunned. “This silk is visible only to the eyes of husbands who have chaste wives. Your Majesty, can you see it?” Raman asked. Poor king! What could he say? Before the king could respond, all the courtiers said in one voice, “We can see it, we can see it—wonderful silk.” The king too said, “Yes, I can see it clearly.” There is an old tale like this behind measuring by cubits with an empty hand.",
+      "sourceScan": 17,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 17,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  16,
+  17
+ ]
+}

@@ -1,0 +1,462 @@
+{
+ "workId": "buddhar-unarththiya-unmai",
+ "slug": "buddhar-unarththiya-unmai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/buddhar-unarththiya-unmai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "புத்தர் உணர்த்திய உண்மை",
+  "en": "The Truth Buddha Made Clear"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புத்தர் உணர்த்திய உண்மை",
+    "sourceScan": 15,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இறந்தவர்களைக் காப்பாற்றக்கூடிய மகாத்மாக்கள்— மகான்கள் இவர்கள் எல்லாம் உலகத்திலே இருந்ததாக—",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் இருப்பதாகக் கூட இன்றளவும் கற்பனை செய்து கொண்டிருப்பவர்கள் இதைச் சொல்லி மக்கள் உள்ளத்திலே ஒரு மாயை ஏற்படுத்துகின்றவர்கள் இருக்கத்தான் செய்கிறார்கள்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் உலகத்தை உண்மையாக உணரச் செய்ய வேண்டும் என்று கருதிய புத்தரைப் பற்றி அவருடைய வாழ்க்கையிலே நடைபெற்ற நிகழ்ச்சியைப் பற்றி ஒரு குறிப்பு உண்டு.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தர் ஒரு நாள் ஓர் ஊரிலே வீதியிலே நடந்து சென்ற போது கண்ணீரும் கம்பலையுமாக கையிலே ஒரு குழந்தையினுடைய சவத்தோடு ஒரு பெண்மணி ஓடோடி வந்தாள். புத்தரிடம் வந்து அழுதாள்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னம்மா உனக்கு என்ன நேர்ந்தது” என்று புத்தர் கேட்டார்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இறந்துபோன தன்னுடைய பச்சிளங் குழந்தையைப் புத்தருடைய பாதாரவிந்தங்களிலே வைத்துவிட்டு அந்தப் பாவை சொன்னாள் “இது என் குழந்தை; இந்த ஒரே குழந்தையை நான் இழந்துவிட்டேன். இதற்கு நீங்கள் தான் உயிர்தர வேண்டும்” என்று கேட்டாள்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தரை உலகமே கொண்டாடுகிறதே! அவர் மாமனிதர் என்று புகழப்படுகிறாரே! மனிதசக்திக்கு அப்பாற்பட்ட காரியங்கள் அவரால் செய்ய முடியும் என்பது அவருக்கு அவர்மீது இருந்த நம்பிக்கை.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவேதான் இறந்துபோன குழந்தையினுடைய சவத்தை புத்தருடைய காலடியில் வைத்து, “இதற்கு எப்படியாவது உயிர்கொடுத்துமீண்டும்பிழைக்கவையுங்கள்!” என்று கெஞ்சினாள்; மண்டியிட்டுக் கதறினாள்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தர் அந்தப் பெண்ணை சுலபத்திலே தேற்றிட முடியாது என்று தெரிந்து கொண்டு, “சரியம்மா! அப்படியே செய்கிறேன்” என்று சொல்லிவிட்டு, நீ ஒரு காரியம் செய்” என்றார்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பெண்மணி தன்னுடைய குழந்தை பிழைத்து விடும் என்ற நம்பிக்கையில் “எந்தக் காரியம் ஆனாலும் செய்கிறேன். சொல்லுங்கள்” என்று கேட்டாள்.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே புத்தர், “இந்த ஊரில் போய் ஒரு பிடி அரிசி வாங்கிக் கொண்டு வா” என்றார்.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இது தானா பிரமாதம்? இப்போதே வாங்கிக் கொண்டு வருகிறேன்” என்று அந்தப் பெண்மணி ஓடத் துவங்கினாள்.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தர் அந்தப் பெண்மணியைக் கைதட்டிக் கூப்பிட்டார். ஓடியவள் திகைத்துப்போய் அருகே வந்து “என்ன” என்று கேட்டாள்.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒரு பிடி அரிசி வாங்கி வா; ஆனால் அப்படி வாங்கி வருகின்ற அந்த அரிசி எந்த வீட்டிலே இருந்து வாங்கப்பட வேண்டும் தெரியுமா! யாருடைய வீட்டிலே இதுவரை யாரும் சாகாமல் இருக்கிறார்களோ அவர்களுடைய வீட்டிலே இருந்து வாங்கிவா” என்று புத்தர் சொன்னார்.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளுக்கு எப்படியும் குழந்தை பிழைக்க வேண்டும் என்ற ஆவல் அதனால் அந்த ஊர் முழுவதும் சென்று கேட்டாள்; பக்கத்து ஊருக்கு ஓடினாள்; அருகாமையில் இருக்கின்ற ஊர்களுக்கு ஓடினாள். எந்த வீட்டிலே போய் அரிசி கேட்டாலும் அரிசி கொடுப்பதற்கு தயாராக இருந்தார்கள். ஆனால் அந்த வீட்டிலே எப்பொழுதோ ஒரு சாவு ஏற்பட்டிருக்கிறது.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போன ஆண்டு ஒரு சாவு அல்லது நான்கு ஆண்டுகளுக்கு முன்பு ஒரு சாவு! பச்சிளம் பாலகன் இறந்து விட்டான்! ஒரே மகள் இறந்து விட்டாள்! கல்யாண மாப்பிள்ளை இறந்து விட்டான்! தந்தை இறந்து விட்டார்! இப்படிப்பட்ட ஒரு சாவுச் செய்தியைச் சொல்லாத வீடே கிடையாது",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திரும்பி வந்தாள் புத்தருக்கு நேராகத் தலைகுனிந்தாள். பின்புத்தரைப் பார்த்துச் சொன்னாள். “எனக்கு உங்களுடைய அறிவுரையின் மகாத்மியம் புரிந்து விட்டது நான் வருகிறேன்” என்றுஇறந்த குழந்தையை எடுத்துக் கொண்டு போனாள்.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆக சாவு நிகழாத வீடு கிடையாது! சாவு என்பது எல்லா வீட்டையும் எல்லா இடத்தையும் தொடக் கூடியது.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தர் தன்னை ‘மகான் மகிமை பொருந்தியவர்’ என்று காட்டிக் கொள்ள வேண்டுமேயானால் “அந்த ஊரில் அந்தக் குழந்தையை உயிர் கொடுத்து எழுப்பினார்! இந்த ஊரில் இந்தக் குழந்தையை உயிர்கொடுத்து எழுப்பினார்” என்றெல்லாம் கூட கதைகள் கட்டியிருக்கலாம். ஆனால் அவர்கள் அப்படிப்பட்ட கதைகள் சமுதாயத்தைச் செல்லரிக்கக் கூடியவை என்று எண்ணிய காரணத்தினாலேதான் புத்தரைப் பற்றிய வாழ்க்கைக் குறிப்பிலே இப்படிப்பட்ட நிகழ்ச்சிகளை நாம் காணமுடிகிறது.",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Truth Buddha Made Clear",
+    "sourceScan": 15,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There are people who even today imagine that mahatmas—great men—capable of saving the dead once existed in this world—",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—that they even exist now, and who, by saying so, create an illusion in people's minds.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But there is a note about an incident in the life of Buddha, who wished to make the world understand reality as it is.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day, as Buddha was walking along a street in a town, a woman came running to him, weeping and wailing, carrying the corpse of a child in her hands. She came to Buddha and cried.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What happened to you, mother?” Buddha asked.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Placing the body of her dead infant at Buddha's lotus feet, the woman said, “This is my child; I have lost this one and only child. You must give it life.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The whole world celebrates Buddha! He is praised as a great human being! She believed that he could do things beyond human power.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That was why she placed the body of her dead child at Buddha's feet and pleaded, “Somehow give this child life and make it live again!” She knelt and cried out.",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Buddha realized that the woman could not easily be consoled. “All right, mother! I will do so,” he said, and then added, “You do one thing.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Believing that her child would live again, the woman asked, “Whatever the task is, I will do it. Tell me.”",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Buddha immediately said, “Go into this town and bring me a handful of rice.”",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Is that all? I will bring it right now,” the woman said and began to run.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Buddha clapped his hands and called her back. Startled, she returned and asked, “What is it?”",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Bring a handful of rice. But do you know from which house that rice must be obtained? Bring it from a house in which no one has ever died,” Buddha said.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She was desperate for her child to live. So she went all through that town asking; she ran to the neighbouring town; she ran to nearby villages. At every house where she asked for rice, people were ready to give it. But at some time or another a death had occurred in that house.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A death last year, or a death four years earlier! An infant had died! An only daughter had died! A bridegroom had died! A father had died! There was not a single house that did not have such a story of death to tell.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She returned and stood before Buddha with her head bowed. Then she looked at him and said, “I have understood the greatness of your instruction. I am going.” She took the dead child and left.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus there is no house where death has not occurred! Death is something that can touch every house and every place.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If Buddha had wanted to present himself as “a great one, a person endowed with glory,” stories could even have been invented saying, “In that town he restored that child to life! In this town he restored this child to life.” But because they regarded such stories as things that could corrode society, it is for that reason that we find incidents of this kind in accounts of Buddha's life.",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  15,
+  16,
+  17,
+  18
+ ]
+}

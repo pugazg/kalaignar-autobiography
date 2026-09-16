@@ -1,0 +1,638 @@
+{
+ "workId": "mamiyar-udaithaal-mattum-manchattiya",
+ "slug": "mamiyar-udaithaal-mattum-manchattiya",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/mamiyar-udaithaal-mattum-manchattiya",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "மாமியார் உடைத்தால் மட்டும் மண்சட்டியா?",
+  "en": "Is It an Earthen Pot Only When the Mother-in-Law Breaks It?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "மாமியார் உடைத்தால் மட்டும் மண்சட்டியா?",
+    "sourceScan": 54,
+    "printedPage": 52
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடன்பிறப்பே....",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு கற்பனைக் கதையை முதலில் சொல்லி இந்தக் கடிதம் உனக்கு எழுதுகிறேன். என்ன கதையென்று தெரிந்து கொள்ள ஆவல் ஏற்படுகிறதல்லவா? புராணமும் தனமும் கலந்த ஒரு கதம்பக் கதை! எமலோகத்தில் தர்மராஜன் கொலு வீற்றிருக்கிறான். எமனுக்கு தர்மராஜன் என்று பெயர் ஏன் வந்தது? மனிதர்களைக் கொன்று உயிரைப் பறித்துச் செல்வவனுக்குத் தர்மராஜன் என்ற பெயரா? இப்படியெல்லாம் கேட்கத் தோன்றும்! ஆயுட்காலம் முடிந்தவுடன் அவர்களின் உயிரைக் கொண்டு செல்ல வேண்டிய தெய்வீகக் கடமையின் காரணமாகவே எமன் செயல்படுகிறானேயல்லாமல் துளியளவும் அவன் தர்மம் தவறுபவன் அல்லன் என்பதால் தர்மராஜன் என்று அழைக்கப்படுகிறான் எனப் புராணிகள் கூறுவர்.",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பதினாறு வயதில் மார்க்கண்டேயன் சாக வேண்டுமென்றிருந்தது. எனவே அவன் உயிரைப் பறிக்க எமன் எருமையிலேறி பாசக் கயிறுடன் வந்தான். மார்க்கண்டேயனோ மரணத்துக்குப் பயந்து ஓடி, திருக்கடையூரில் உள்ள கோயிலுக்குள் நுழைந்து சிவலிங்கத்தைக் கட்டிப் பிடித்துக் கொண்டான். சிவலிங்கம் வெடித்து அதிலிருந்து சிவனார் புறப்பட்டு எமனை எதிர்த்தார். எமன், தனது கடமையை நிறைவேற்ற வந்திருப்பதாகச் சொன்னான். சிவபெருமான் கட்டளைப்படியே மார்க்கண்டேயன் உயிரைப் பறிப்பது தனது பணி என்று வாதிட்டான். ஆனால் சிவபெருமான் தனது ஆணைக்கே விதிவிலக்கு அளித்து - மார்க்கண்டேயன் வாழ்வில் ‘மறுமலர்ச்சி’ ஏற்படுத்தி என்றென்றைக்கும் பதினாறாக வாழச் செய்தான். இதுவும் புராணமே! இந்தப் புராணப்படியும் எமன், தன்னை தர்ம ராஜனாகவே காட்டிக் கொண்டு, சிவனை வணங்கித் திரும்பி விடுகிறான்.",
+      "sourceScan": 55,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அத்தகைய தர்மராஜன் எனப்படும் எமன் தர்பாரில் சித்ரபுத்திரன் இரண்டு வழக்குகளை முன் வைக்கிறான். அவற்றில் முதல் வழக்கு குறித்து எம தர்மனிடம் சித்ரபுத்திரன் விளக்கும் விதம் காண்க:",
+      "sourceScan": 55,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மகாபிரபு! இதோ இந்த மனிதர், பூலோகத்தில் தொண்ணூறு வயதுக்குமேல் வாழ்ந்துவிட்டவர். பெரிய பதவிகளில் மக்களின் ஆதரவு பெற்று முதல்வராக அமர்ந்து அரசோச்சியவர். பூவுலகில் இவர் ஒரு கட்சியில் முக்கிய பொறுப்பும் வகித்தவர். ஆனால் இரண்டு மூன்று தடவை அக்கட்சியின் கட்டுப்பாட்டை மீறி, பேசியும் செயல்பட்டும் வந்த காரணத்தினால் அந்தக் கட்சியின் தலைமை இவரை எச்சரித்ததும் உண்டு. அதற்காக இவர்",
+      "sourceScan": 55,
+      "printedPage": 53,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வருத்தம் தெரிவித்துக் கொண்டதும் உண்டு. ஆனால் அப்படி வருத்தம் தெரிவித்த பிறகும், மீண்டும் மீண்டும் கட்சித் தலைமை மீது வீண் புகார்களைக் கூறத் தலைப்பட்டார். அதைப் பற்றி யெல்லாம் இவரைக் கேட்டபோது, தலைமையையே அறைகூவலுக்கு அழைத்து அறிக்கைகள் விட்டார். இப்போது இவர், தன்னைச் சொர்க்கத் தீர்த்துதான் அனுப்ப வேண்டுமென்றார். மகா பிரபுவின் தீர்ப்புக்காக இந்த மன்றமே காத்திருக்கிறது.",
+      "sourceScan": 56,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சித்ரபுத்திரனின் கூற்றைக் கேட்டதும் எமதர்ம ராஜன் சொல்வது என்னவென்றால், “ஓகோ! இவர் பெரும் பதவிகளில் இருந்தவராக இருக்கலாம். எனினும்... எனினும்... இவர் கட்சிக் கட்டுப்பாட்டை மீறியிருக்கிறார். கட்சித் தலைமையையே விமர்சித்திருக்கிறார். அது மட்டுமல்ல, முதலில் சில தவறுகளுக்கு வருத்தம் தெரிவித்து விட்டு, திரும்பவும் அதே தவறைச் செய்திருக்கிறார். இப்படிக் கட்டுப்பாடு மீறுகிற இவரை சொர்க்கம் சென்றிட அனுமதித்தால் - சொர்க்கமும் கட்டுப்பாட்டை மீறி, சுத்தமாகக் கெட்டு விடும். ஆகையினால், இவரை நரகத்திற்கு அனுப்பி வைக்குமாறு உத்தரவிடுகிறேன். பெரும் பதவியில் இருந்தவர் - கட்சிக்காக உழைத்தவர் என்பதற்காக இவரது கட்சிக் கட்டுப்பாடு மீறிய செயலை ஏற்க முடியாது. அதனால் இவர் சொர்க்கத்தைக் கனவிலும் காண முடியாதபடிக்கு நரகத்தில் தள்ளிவிடுமாறு கண்டிப்பான கட்டளை யிடுகிறேன்”",
+      "sourceScan": 56,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எமதர்மராஜன் தீர்ப்பையொட்டி, அந்த மனிதரை, சித்ரபுத்திரன் நரகலோகத்திற்குச் சில கிங்கரர்களுடன் அனுப்பி வைக்கிறான்.",
+      "sourceScan": 56,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுத்த வழக்கு எடுத்துக் கொள்ளப்படுகிறது. இப்போதும் சித்ரபுத்திரன்தான் பேசுகிறார்:",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யனே! மகாபிரபு, அடுத்து வந்துள்ள இந்த வழக்கும் ஏறத்தாழ முதல் வழக்கைப் போன்றது தான். இன்னும் சொல்லப் போனால், இவர்-முதல் வழக்கில் சம்பந்தப்பட்டு தங்களின் தீர்ப்புக்கு ஆளானவரை விட அதிகப்படியான அளவுக்கு, இவர் சார்ந்திருந்த கட்சியின் கட்டுப்பாடுகளை பேச்சால், செயலால் மீறியிருக்கிறார். முதல் வழக்கில் குறிப்பிட்டவராவது கட்சித் தலைமையைக் குறை கூறி, தலைவரை விமர்சனம் செய்தவர். ஆனால் இவரோ, கட்சியே தன்னுடையது - கொடியே தனக்குரியது - கட்சித் தலைமையை நான் விலக்கி விட்டேன் என்று தீர்மானம் போட்டு கட்சியின் சின்னத்தையே முடக்குவதற்கு வழக்குத் தொடர்ந்து, அதிலே தோற்றுப் போய் புதுக்கட்சி தொடங்கியவர். எனவே, மகாபிரபுவாகிய தாங்கள், முதல் வழக்கில் அளித்த தீர்ப்பையே இதற்கும் வழங்குவீர்கள் என எதிர்பார்த்து அமைகிறேன்.”",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சித்ரபுத்திரன், வழக்கின் விபரத்தைச் சுருக்கமாக எடுத்துச் சொன்னதும், எமதர்மராஜன், “சித்ர புத்திரரே! நீர் எடுத்துரைத்த வழக்குகள் இரண்டும் ஏறத்தாழ ஒன்று போல இருந்தாலும் என் தீர்ப்பு ஒரே மாதிரி இருக்கப் போவதில்லை. இந்த மனிதர் சொர்க்கத்தில் இருக்கலாம் என்று நான் அனுமதிக்கிறேன்.” என்று கூறிவிட்டு மளமளவென்று சிம்மாசனப் படிகளில் இறங்கி வந்து - இரண்டாவது வழக்கில் நிறுத்தப்பட்டவரைக் கட்டித் தழுவிக் கொண்டான்.",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதிர்ந்து போன சித்ரபுத்திரன் “மகாபிரபு! இது என்ன விந்தையாக இருக்கிறது! ஒரே மாதிரி குற்றம்",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "space"
+     },
+     {
+      "text": "புரிந்தவர்கள் - அதிலும் முதலில் தீர்ப்பளிக்கப்பட்ட நபரை விட, இரண்டாமவர் மேலும் தீவிரமாகக் கட்சித் தலைமைக்குக் கட்டுப்படாமல் நடந்து கொண்டவர். ஆனால் முதலாமவருக்கு நரகம் என்றும் இரண்டாமவருக்கு சொர்க்கம் என்றும் ஆணை பிறப்பித்து விட்டீர்களே, தர்மராஜனாகிய தாங்களே தடம் புரளலாமா?” என்று மிகுந்த உருக்கமுடன் எமதர்மராஜனைப் பார்த்து கேட்டான்.",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அடேய்! சித்ரபுத்திரா! என் தீர்ப்புக்கே களங்கம் கற்பிக்கிறாயா? என்னால் இதைப் பொறுத்துக் கொள்ள முடியாது. எனவே நாம் இருவரும் இதுவரையில் ஒன்றுபட்டுச் செய்யப்பட்டது போல இனியும் செய்யப்பட முடியாது”",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று காய்ச்சித்தான் எமதர்மன்!",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மகாபிரபு, கொஞ்சம் சிந்தியுங்கள்! ஒரே விதமான குற்றத்துக்கு இருவேறுவிதமான தீர்ப்பு களா?” என மீண்டும் கேள்விக்கணை விடுத்தான் சித்ரபுத்திரன்!",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உனக்கும் எனக்கும் இனி ஒட்டுமில்லை; உறவுமில்லை போ!” எனக் கூறிக்கொண்டே தர்ம ராஜன், சொர்க்கம் செல்பவனின் தோளில் கை போட்டுக் கொண்டே கொலுமண்டபத்தை விட்டு வெளியேறினான்.",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடன்பிறப்பே, நவீன புராணக்கதையை நான் முடித்து விட்டேன். நீ மார்க்சிஸ்ட் கம்யூனிஸ்ட் கட்சியின் பொலிட்பீரோ அறிவிப்பை ஒருமுறை படித்து விடு!",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கடந்த வருடம் நிருபன் சக்கரவர்த்தி மருத்துவ மனையில் சிகிச்சை பெற்றபோது, கல்கத்தா",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "space"
+     },
+     {
+      "text": "விலிருந்து வெளியாகும் வங்காள மொழிப் பத்திரிகை ஒன்றுக்கு கட்சியைப் பற்றி அவதூறாக பேட்டி அளித்திருந்தார்.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இது பற்றி கட்சியின் மத்திய கமிட்டி, தீவிர நடவடிக்கை எடுக்குமாறு கட்சியின் பொதுச் செயலாளரை கேட்டுக் கொண்டது. அதன் பேரில், விளக்கம் கேட்டபோது, எதிர்காலத்தில் இதுபோன்று நடக்காது என உறுதியளித்தார்.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுபடியும் கட்சியின் 15-ஆவது தேசிய கூட்டம் நடைபெறும் போது கட்சி மீது அவதூறு கூறினார்.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதனால் நடவடிக்கை எடுக்குமாறு கட்சியின் மத்திய கமிட்டி, பொலிட்பீரோவை கேட்டுக் கொண்டது. கம்யூனிஸ்ட் இயக்கத்திற்கு நிருபன் சக்கரவர்த்தி செய்த சேவை மற்றும் தியாகத்தைக் கருத்தில் கொண்டு, தேர்வு செய்யப்பட்ட பதவிகளில் இருந்து அவரை நீக்குவது என்றும் அவர் தன்னைத் திருத்திக் கொள்ள ஒரு வாய்ப்பு தருவது எனவும் கட்சியின் மத்திய கமிட்டி முடிவு செய்தது.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் எதிரிகள்கூட கூற முடியாத புகார்களை நிருபன் சக்கரவர்த்தி தனது தவறுகளை திருத்திக் கொள்வதற்குப் பதிலாக கட்சியின் மீதும் கட்சித் தலைவர்கள் மீதும் விஷமத்தனமான ஆதாரமற்ற குற்றச்சாட்டுகளை கூறியது வருத்தத்திற்குரியது.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எதிரிகள்கூட கூறாத புகார்களை நிருபன் சக்கரவர்த்தி கட்சியின் மீது கூறியுள்ளார். கட்சியின் ஒழுக்க விதிகளுக்கு இது முரணானது. எனவே கட்சியை விட்டு நீக்கப்படுகிறார். கட்சியைவிட எந்த உறுப்பினரும் முக்கியமானவர் அல்ல. அவர் எவ்வளவு பெரியவராக இருந்தாலும் அவர் மீது நடவடிக்கை எடுக்கப்படும்.”",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த அறிக்கை வழி நிருபன் சக்கரவர்த்தி மார்க்சிஸ்ட் கம்யூனிஸ்ட் கட்சியிலிருந்து நீக்கப்பட்டு விட்டார். இப்போது அவருடன் கூட்டணி சேருகின்ற கட்சியுடன் மார்க்சிஸ்ட் கம்யூனிஸ்ட் கட்சி கூட்டணி வைத்துக் கொள்கிறதா?",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அது என்ன; மருமகள் உடைத்தால் பொன்சட்டி; மாமியார் உடைத்தால் மட்டும் மண்சட்டி?",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Is It an Earthen Pot Only When the Mother-in-Law Breaks It?",
+    "sourceScan": 54,
+    "printedPage": 52
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Udanpirappe....",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I will first tell an imaginary story and then write this letter to you. You are eager to know what story it is, aren't you? A medley of a tale mixing puranam and thanam! In Yamaloka, Dharmarajan is seated in court. Why did Yama come to be called Dharmarajan? Is the one who kills human beings and carries away their lives to be called Dharmarajan? Such questions naturally arise! But the tellers of the puranas say that Yama is called Dharmarajan because he acts only out of the divine duty of taking away people's lives when their allotted lifespan ends, and does not deviate from dharma even by the slightest degree.",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Markandeyan was destined to die at the age of sixteen. So Yama came riding a buffalo, with his noose, to take his life. Frightened of death, Markandeyan ran into the temple at Thirukkadaiyur and embraced the Sivalingam. The Sivalingam burst open and Siva emerged from it and confronted Yama. Yama said that he had come to perform his duty. He argued that taking Markandeyan's life was his task under Lord Siva's own command. But Lord Siva granted an exception to his own order—brought about a ‘renaissance’ in Markandeyan's life—and made him remain sixteen forever. This too is a puranic story! Even according to this purana, Yama presents himself as Dharmarajan, bows to Siva, and returns.",
+      "sourceScan": 55,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the court of that Yama called Dharmarajan, Chitrabuthiran presents two cases. See how Chitrabuthiran explains the first case to Yamadharman:",
+      "sourceScan": 55,
+      "printedPage": 53,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mahaprabhu! Here is this man, who lived for more than ninety years in the earthly world. With the support of the people he held high offices, sat as Chief Minister, and ruled. In the earthly world he also held an important responsibility in a political party. But because on two or three occasions he violated that party's discipline through his speech and actions, the party leadership had warned him. For that, he had also",
+      "sourceScan": 55,
+      "printedPage": 53,
+      "joinToNext": "space"
+     },
+     {
+      "text": "expressed regret. But even after expressing such regret, he again and again began making needless complaints against the party leadership. When he was questioned about all that, he issued statements openly challenging the leadership itself. Now he says that he must be sent only to heaven. This entire court awaits Mahaprabhu's judgment.”",
+      "sourceScan": 56,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After hearing Chitrabuthiran's statement, Yamadharma Rajan says, “Oh! He may have held great offices. Nevertheless... nevertheless... he has violated party discipline. He has criticized the party leadership itself. Not only that, after first expressing regret for certain mistakes, he repeated the same mistake. If a man who violates discipline in this way is allowed to enter heaven, heaven too will violate discipline and become completely corrupted. Therefore I order that he be sent to hell. The fact that he held a high office and worked for the party cannot make his violation of party discipline acceptable. Therefore I issue a strict command that he be cast into hell so that he cannot see heaven even in his dreams.”",
+      "sourceScan": 56,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Following Yamadharmarajan's judgment, Chitrabuthiran sends the man to Narakaloka with a few kinkarars.",
+      "sourceScan": 56,
+      "printedPage": 54,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next case is taken up. Once again Chitrabuthiran speaks:",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My lord! Mahaprabhu, this next case too is almost like the first one. Indeed, this man violated the discipline of the party to which he belonged, in speech and action, to an even greater degree than the man in the first case who has just received your judgment. The man in the first case at least merely found fault with the party leadership and criticized the leader. But this man declared that the party itself was his, that the flag belonged to him, that he had removed the party leadership; he passed resolutions to that effect, filed a case seeking to freeze the party's very symbol, lost that case, and then started a new party. Therefore I expect that you, Mahaprabhu, will give him the same judgment you gave in the first case.”",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When Chitrabuthiran briefly set out the details of the case, Yamadharmarajan said, “Chitrabuthirar! Though the two cases you have explained are almost alike, my judgment is not going to be the same. I permit this man to remain in heaven.” Saying this, he rapidly descended the steps of his throne and embraced the man standing in the second case.",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Astonished, Chitrabuthiran asked Yamadharmarajan with great emotion, “Mahaprabhu! What strange thing is this! People who committed the same kind of offence—",
+      "sourceScan": 57,
+      "printedPage": 55,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "and among them the second man behaved even more intensely in refusing to submit to the party leadership than the person judged first. Yet you have ordered hell for the first and heaven for the second. Can even you, Dharmarajan, go off the path?”",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey! Chitrabuthira! Are you casting a stain even on my judgment? I cannot tolerate this. Therefore the two of us can no longer continue acting together as we have until now.”",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus Yamadharman flared up!",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mahaprabhu, think a little! Two different judgments for the same kind of offence?” Chitrabuthiran again fired his arrow of a question!",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“There is no bond or relationship between you and me anymore—go!” said Dharmarajan, and with his arm around the shoulder of the man bound for heaven, he left the royal hall.",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Udanpirappe, I have finished my modern puranic story. Now read once the Politburo statement of the Marxist Communist Party!",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Last year, when Nirupan Chakraborty was receiving treatment in hospital, he gave an interview to a Bengali-language newspaper in Calcutta",
+      "sourceScan": 58,
+      "printedPage": 56,
+      "joinToNext": "space"
+     },
+     {
+      "text": "that is published there, speaking slanderously about the party.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Regarding this, the party's Central Committee asked the party's General Secretary to take stern action. When an explanation was sought on that basis, he gave an assurance that such a thing would not happen again in the future.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Again, while the party's 15th national conference was being held, he made slanderous statements about the party.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Because of this, the party's Central Committee asked the Politburo to take action. Taking into account Nirupan Chakraborty's service and sacrifice to the Communist movement, the party's Central Committee decided to remove him from elected positions and give him an opportunity to correct himself.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But instead of correcting his mistakes, Nirupan Chakraborty's making malicious and baseless accusations against the party and against party leaders—accusations that even enemies could not make—is regrettable.",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Nirupan Chakraborty has made accusations against the party that even enemies have not made. This is contrary to the party's rules of discipline. Therefore he is expelled from the party. No member is more important than the party. However great he may be, action will be taken against him.”",
+      "sourceScan": 59,
+      "printedPage": 57,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "By this statement, Nirupan Chakraborty was expelled from the Marxist Communist Party. Is the Marxist Communist Party now entering into an alliance with the party that is entering into an alliance with him?",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What is this? If the daughter-in-law breaks it, it is a golden pot; only when the mother-in-law breaks it, is it an earthen pot?",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60
+ ]
+}

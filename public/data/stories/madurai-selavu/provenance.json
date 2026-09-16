@@ -1,0 +1,53 @@
+{
+ "workId": "madurai-selavu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/madurai-selavu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "f50288de5da9565ae68056ebab163e195b82cce0",
+ "batch": 7,
+ "validationGroup": "periodical",
+ "source": {
+  "printedTitleTa": "மதுரைச் செலவு",
+  "collectionTa": null,
+  "editionStatementTa": null,
+  "publisherTa": null,
+  "scanFilename": "TVA_PRL_0001670_முரசொலி_பொங்கல் மலர்_1960.pdf",
+  "scanSha256": "17dd13be82af5a56f164c9f9ab2f73891d8f5cb19a2bf0e18d35bfa209e0c217",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "21–26",
+  "storyScanCount": 6,
+  "printedPages": "17–22",
+  "verifiedPages": 6,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/madurai-selavu/pages/",
+  "derivedAssembly": "stories/madurai-selavu/sections/madurai-selavu.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 1
+ },
+ "english": {
+  "titleEn": "Journey to Madurai",
+  "scanAnchors": 6,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "not recorded"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

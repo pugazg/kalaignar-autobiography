@@ -1,0 +1,142 @@
+{
+ "workId": "aththiri-paachaa",
+ "slug": "aththiri-paachaa",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/aththiri-paachaa",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "அத்திரி பாச்சா",
+  "en": "Aththiri Paachaa"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "அத்திரி பாச்சா",
+    "sourceScan": 35,
+    "printedPage": 33
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பையன் ஒருவன் பக்கத்து ஊர் பாட்டி வீட்டுக்குச் சென்றிருந்தான். அங்கே பாட்டி கொழுக்கட்டை சுட்டுக் கொடுத்தாள். அதை சுவைத்துத் தின்ற பேரன், “இதுக்குப் பேர் என்ன பாட்டி?” என்று ஆவலுடன் கேட்டான். ‘இதுதான் கொழுக்கட்டை’ என்றாள் பாட்டி. “நான் ஊருக்குப் போனதும் அம்மாவிடம் சொல்லி எங்கள் வீட்டிலும் இதை செய்யச் சொல்லப் போகிறேன்” என்று கூறிய பேரன்; தனக்கு அடிக்கடி ஞாபகமறதி ஏற்படும் என்பதற்காக, ‘கொழுக்கட்டை’ ‘கொழுக்கட்டை’ என்று மந்திரம் உச்சரிப்பது போல உச்சரித்துக் கொண்டே ஊருக்கு திரும்பிக் கொண்டிருந்தான்.",
+      "sourceScan": 35,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கொழுக்கட்டை! கொழுக்கட்டை!” என்று முணு முணுத்துக் கொண்டே வந்தவனின் முன்னே, வழியில் ஒரு சிறிய வாய்க்கால் - அதை ஒரே தாண்டாகத் தாண்டினான். அப்படித் தாண்டும்போது ‘அத்திரிப் பாச்சா’ என்று அவன் கூச்சலிட்டுக் கொண்டு தாண்டியதுதான் தாமதம்; உடனே அவனுக்குக் கொழுக்கட்டை மறந்து விட்டது. ‘அத்திரிப் பாச்சா அத்திரி பாச்சா’ என்றே உச்சரித்துக் கொண்டு ஊர் போய்ச் சேர்ந்து, தாயாரிடம் ‘அம்மா’ எனக்கு ‘அத்திரி பாச்சா சுட்டுக் கொடு என்று அடம்",
+      "sourceScan": 35,
+      "printedPage": 33,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பிடித்தான். அம்மா எதுவும் புரியாமல் விழித்தாள்.",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படியொரு வேடிக்கைக் கதை சிறு வயதில் கேட்டது.",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Aththiri Paachaa",
+    "sourceScan": 35,
+    "printedPage": 33
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A boy had gone to his grandmother’s house in a neighbouring village. There, his grandmother made him kozhukattai. After tasting and eating it, the grandson eagerly asked, “What is this called, Grandma?” “This is kozhukattai,” said his grandmother. “When I get back to my village, I’m going to tell Amma and ask her to make this at our house too,” said the grandson. Because he was often forgetful, he kept repeating “kozhukattai, kozhukattai” like a mantra as he made his way back home.",
+      "sourceScan": 35,
+      "printedPage": 33,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Kozhukattai! Kozhukattai!” he kept muttering as he walked. On the way, a small channel appeared before him, and he cleared it in a single leap. As he jumped, he shouted “Aththirip Paachaa!” The moment he did so, he forgot kozhukattai. Repeating only “Aththirip Paachaa, Aththiri Paachaa,” he reached home and told his mother, “Amma, make me Aththiri Paachaa,” and began to throw a",
+      "sourceScan": 35,
+      "printedPage": 33,
+      "joinToNext": "space"
+     },
+     {
+      "text": "tantrum. His mother stared at him, unable to understand anything.",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I heard a funny story like this in my childhood.",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  35,
+  36
+ ]
+}

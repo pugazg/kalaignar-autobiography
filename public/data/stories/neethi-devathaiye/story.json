@@ -1,0 +1,152 @@
+{
+ "workId": "neethi-devathaiye",
+ "slug": "neethi-devathaiye",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/neethi-devathaiye",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நீதி தேவதையே!",
+  "en": "Neethi Devathaiye!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நீதி தேவதையே!",
+    "sourceScan": 79,
+    "printedPage": 77
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு வல்லூறு, ஒரு புறாவை துரத்தியதாம். புறா அபயம் கோரி அங்குமிங்கும் பறந்தோடி கடைசியாக சிபி சக்கரவர்த்தி கையில் வந்து விழுந்தது. அண்ணாந்து பார்த்தார். வல்லூறு வந்தது தெரிந்தது.",
+      "sourceScan": 79,
+      "printedPage": 77,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த வல்லூறைப் பார்த்து “உனக்கு என்ன வேண்டும்” என்று கேட்டார் சிபி. எனக்கு அந்தப் புறா வேண்டும் என்றது. “புறா என்னிடம் அபயம் கேட்டு வந்திருக்கிறது. எனவே அதைத் தர இயலாது. வேண்டுமானால் அதற்குப் பதிலாக என்னுடைய சதையைத் தருகிறேன்” என்றார் சிபி சக்கரவர்த்தி. “சரி கொடு” என்றதாம் வல்லூறு. அந்த புறாவை ஒரு தராசு தட்டில் வைத்து தன்னுடைய சதையை அறுத்து இன்னொரு தட்டில் வைக்கிறார் சிபி. ஆனால் புறா இருக்கும் தட்டு தாழ்ந்து கொண்டே இருக்கிறது. பிறகு சிபி தன்னுடைய உடம்பு முழுவதையும் அறுத்து வைத்துப் பார்த்தும் முடியாமல் அவரே ஏறி தராசில் அமர்ந்து “என்னையே எடுத்துக் கொள்” என்று வல்லூறுக்குச் சொன்னார். என்பது சிபி சக்கரவர்த்தியின் கதை. அதை வைத்து அப்துல் ரகுமான் ஒரு கவிதை படைத்திருக்கிறார்.",
+      "sourceScan": 79,
+      "printedPage": 77,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீதி தேவதையே உன் தராசுத் தட்டுகளைக் கொஞ்சம் கண்திறந்து பார். அங்கே- புறாவின் மாமிசத்தை சிபிகள் உண்ண ஆரம்பித்து விட்டார்கள்”",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப்பட்ட தத்துவங்களை, அழகான கற்பனைகளை, நாட்டு நிலையை, மனித சமுதாயத்தினுடைய சூழலை தன்னுடைய இயல் தமிழால் வடித்துத் தந்த ‘கவிக்கோ. அப்துல் ரகுமானுக்கு நாம் வழங்கிய இந்த விருதின் மூலமாக நாம் பெருமைப்படுகிறோம்.",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Neethi Devathaiye!",
+    "sourceScan": 79,
+    "printedPage": 77
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A vulture, it is said, chased a dove. Seeking refuge, the dove flew here and there and finally fell into the hands of Emperor Sibi. He looked up and saw the vulture coming.",
+      "sourceScan": 79,
+      "printedPage": 77,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sibi looked at the vulture and asked, “What do you want?” It said that it wanted the dove. “The dove has come to me seeking refuge. Therefore I cannot give it to you. If you wish, I will give you my own flesh in its place,” said Emperor Sibi. “All right, give it,” the vulture is said to have replied. Sibi placed the dove on one pan of a balance and cut flesh from his own body and placed it on the other. But the pan holding the dove kept sinking. Then, even after cutting flesh from his whole body and placing it on the scale, he could not balance it. So he himself climbed onto the balance and told the vulture, “Take me instead.” That is the story of Emperor Sibi. Abdul Rahman created a poem from it.",
+      "sourceScan": 79,
+      "printedPage": 77,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“O Goddess of Justice, open your eyes a little and look at the pans of your balance. There— the flesh of the dove is now being eaten by the Sibis.”",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Through this award that we have presented to ‘Kavikko. Abdul Rahman, who fashioned such philosophies, beautiful imaginings, the condition of the country and the circumstances of human society in his natural Tamil, we take pride.",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  79,
+  80
+ ]
+}

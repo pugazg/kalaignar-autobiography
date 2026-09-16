@@ -1,0 +1,164 @@
+{
+ "workId": "valvil-ori",
+ "slug": "valvil-ori",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/valvil-ori",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "வல்வில் ஓரி",
+  "en": "Valvil Ori"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "வல்வில் ஓரி",
+    "sourceScan": 39,
+    "printedPage": 38
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொள்ளிமலை வள்ளல் ஓரிக்குப் பெயர் ‘வல்வில் ஓரி’ அவன் வில்லில் அப்படி வல்லமை படைத்தவன்.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு சந்தேகம் தோன்றலாம். அம்பு எய்யும் போது— அது செல்லும் போது — யானையின் உயரம் என்ன ? யானையைத் தாக்கிய பிறகு அந்த அம்பு எப்படி யானையைவிட குறைந்த உயரம் உள்ள வேங்கையைச் சென்று தாக்க இயலும் ? பிறகு வேங்கையின் உயரத்தை விடக் குறைந்த உயரமுள்ள மான்மீது எப்படி அந்த அம்பு பாயமுடியும் ? பின் மானைவிடக் குள்ளமான பன்றியின்மீதும், தரையோடு கிடக்கும் உடும்பின் மீதும் பாயமுடியும் ?",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மலை உச்சியின் மீது இருந்து மன்னன் அம்பை எய்கிறான். மலைச் சரிவில் உள்ள யானை, வேங்கை, மான், பன்றி, உடும்பு என்று படிப்படியாக அம்பு பாய்ந்து செல்கிறது.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தியாவில் நெருக்கடிநிலை அமலில் இருந்த காலத்தில் இந்தக் கதையைச் சொல்லி விளக்கினேன்.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நெருக்கடியினால் மதயானை கொல்லப்படுகிறது என்றால் பரவாயில்லை. பாயும் வேங்கை கொல்லப்படுகிறது என்றால் பரவாயில்லை. துள்ளிஓடும் புள்ளிமானும், எதும் அறியாத உடும்பும் செத்திட வேண்டுமா என்று கேட்டேன். எதை ஒப்பிட்டுக் கேட்டேன் என்பதை விவரிக்கவேண்டியதில்லை என்று கருதுகிறேன்.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Valvil Ori",
+    "sourceScan": 39,
+    "printedPage": 38
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The generous ruler Ori of Kollimalai was called “Valvil Ori.” Such was his mastery of the bow.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What kind of mastery did he possess? If he fitted an arrow to the string and shot it from his bow, that arrow would pierce an elephant; after piercing the elephant, it would emerge from the elephant's body and strike a tiger; after bringing down the tiger, it would emerge from its body and strike a deer. Then it would emerge from the deer's body and kill the boar below. Emerging from the boar's body, it would kill a monitor lizard running along the ground.",
+      "sourceScan": 40,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A doubt may arise. When the arrow is shot—when it is travelling—what is the height of the elephant? After striking the elephant, how can the arrow go and strike a tiger that is lower than the elephant? Then how can that arrow strike a deer lower than the tiger? And then a boar shorter than the deer, and a monitor lizard lying close to the ground?",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king shoots the arrow from the top of a hill. Along the slope of the hill, the arrow passes step by step through the elephant, tiger, deer, boar and monitor lizard.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I told this story by way of explanation during the period when the Emergency was in force in India.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If a rutting elephant is killed by the Emergency, one may say never mind. If a leaping tiger is killed, one may say never mind. But must the spotted deer that bounds along, and the innocent monitor lizard, also die? I asked. I think there is no need to explain what I was comparing them with.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  39,
+  40,
+  41
+ ]
+}

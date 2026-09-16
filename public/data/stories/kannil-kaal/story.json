@@ -1,0 +1,142 @@
+{
+ "workId": "kannil-kaal",
+ "slug": "kannil-kaal",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kannil-kaal",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கண்ணில் கால்",
+  "en": "Kannil Kaal"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கண்ணில் கால்",
+    "sourceScan": 29,
+    "printedPage": 27
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணப்ப நாயனாருடைய இயற்பெயர் திண்ணன். திண்ணன் என்ற வேடன் தான் கண்ணப்பராக மாறினான். வழக்கமாக காட்டில் ஒரு சிவலிங்கத்தை பூஜை செய்து வந்தான். அந்தப் பூஜை கூட காய்கறி வைத்து நடத்திய பூஜை அல்ல. நம்முடைய மதுரை அடிகளார் அவர்கள் எந்த உணவை இப்போது தொடவும் மறுப்பாரோ, அந்த அசைவ உணவைத்தான் கண்ணப்ப நாயனார் படைத்து நாள்தோறும் வழிபட்டார்.",
+      "sourceScan": 29,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருநாள் அந்த சிவலிங்கத்தின் கண்ணில் இரத்தம் வழிந்தது. அதற்கு சிகிச்சை செய்ய ஏதேதோ மூலிகைகளையெல்லாம் முயன்று பார்த்தும் முடியவில்லை. பிறகு தன் கண்ணை ஒரு அம்பால் பெயர்த்து சிவலிங்கத்தின் கண்ணிலே அப்பினான். அப்படி கண்ணை அப்பிய காரணத்தால் தான் கண் அப்பியவன் - கண்ணப்பன் ஆனார்.",
+      "sourceScan": 29,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவைகளையெல்லாம் நம்முடைய அடிகளாரே சொல்லியிருக்க வேண்டும். நானே அடிகளாராக மாறி உங்களுக்குச் சொல்கிறேன். ஆனால் அந்த சிவலிங்கம், ஒரு கண்ணை அப்பி விட்டாரே, ஆளுக்கு ஒரு கண்ணாக இருந்து விட்டுப் போகட்டும் என்று நினைக்காமல் அவரை சோதிக்க வேண்டி இன்னொரு கண்ணிலிருந்தும் இரத்தம் வருமாறு செய்தார். உடனே வேறு வழியில்லாமல் தன்னுடைய இரண்டாவது கண்ணையும் பிடுங்கி, சிவலிங்கத்திற்கு வைக்க முற்பட்ட கண்ணப்பன், அந்தக் கண்ணையும் பிடுங்கி விட்டால் எங்கே",
+      "sourceScan": 29,
+      "printedPage": 27,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வைப்பது என்று தெரியாது என்பதற்காக அடையாளத்திற்காக சிவனுடைய பழுதுபட்ட அந்தக் கண்ணில் தனது செருப்பணிந்த காலை வைத்துக் கொண்டு மற்றொரு கண்ணைப் பிடுங்கி அப்பினான் என்பது புராணக் கதை. அவன் தான் 63 நாயன்மார்களில் ஒருவனாக ஆனான். அதற்காக ஆண்டவன் மகிழ்ச்சியடைந்து இரு கண்ணினும் அவனுக்கு ஒளிதந்தான் என்று புராணம் முற்றுப் பெறுகிறது.",
+      "sourceScan": 30,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 30,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kannil Kaal",
+    "sourceScan": 29,
+    "printedPage": 27
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kannappa Nayanar’s birth name was Thinnan. The hunter called Thinnan was the one who became Kannappar. He regularly worshipped a Sivalingam in the forest. Even that worship was not conducted by offering vegetables. The very non-vegetarian food that our Madurai Adigalar would now refuse even to touch was what Kannappa Nayanar offered and used in his daily worship.",
+      "sourceScan": 29,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day, blood flowed from the eye of that Sivalingam. He tried all kinds of herbs to treat it, but could not stop it. Then, using an arrow, he removed his own eye and placed it on the eye of the Sivalingam. Because he had thus placed an eye there, the one who had “applied an eye”—Kannappan—came to be so called.",
+      "sourceScan": 29,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "All this ought to have been told by our Adigalar himself. I am turning into Adigalar and telling it to you. But that Sivalingam, instead of thinking, “He has given one eye; let each of us remain with one eye,” wished to test him and caused blood to flow from the other eye too. With no other way left, Kannappan prepared to pluck out his second eye and place it on the Sivalingam. But if he plucked out that eye too, he would not know where",
+      "sourceScan": 29,
+      "printedPage": 27,
+      "joinToNext": "space"
+     },
+     {
+      "text": "to place it. So, as a marker, the puranic story says that he put his sandal-clad foot on that damaged eye of Siva and then plucked out his other eye and placed it there. He became one among the 63 Nayanmars. The purana concludes by saying that, pleased by this, the Lord restored light to both his eyes.",
+      "sourceScan": 30,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 30,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  29,
+  30
+ ]
+}

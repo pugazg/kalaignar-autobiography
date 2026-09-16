@@ -1,0 +1,174 @@
+{
+ "workId": "mannanum-kuruviyum",
+ "slug": "mannanum-kuruviyum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/mannanum-kuruviyum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "மன்னனும் குருவியும்!",
+  "en": "The King and the Sparrow!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "மன்னனும் குருவியும்!",
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு மாளிகையின் தாழ்வாரத்தில் மன்னன் ஒருவன் நடந்து கொண்டிருந்தான். அப்போது எங்கேயிருந்தோ ஒரு காசைத் திருடிக்கொண்டு ஒரு சின்னஞ்சிறு குருவி அந்தத் தாழ்வாரத்திலே வந்து அமர்ந்து அந்தக் காசை தன்னுடைய காலிலே வைத்துக் கொண்டு அந்த மன்னனைப் பார்த்துக் கேலியாக “என்கிட்ட ஒருகாசு இருக்கு. யாருக்கு வேணும்?” என்று மூன்றுமுறை கேட்டதாம்.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன்னன் போனவன் அப்படியே போயிருந்தால் வம்பில்லை. அவன் குருவி சொன்னதைப் பெரிதுபடுத்தி அந்தக் குருவியைப் பார்த்து “சும்மா இல்லாமல் என்ன அடிக்கடி சொல்கிறாய்! அந்தக் காசை எனக்குத்தான் கொடேன்!” என்றான்.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குருவி உடனே அந்தக்காசை மன்னனிடத்தில் கொடுத்து விட்டு “என்கிட்ட பிச்சை வாங்கின ராஜா” என்று சொல்லிக் கொண்டேயிருந்தது.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே மன்னனுக்குக் கோபம் வந்துவிட்டது....“சே! உன்னிடமா நான் பிச்சை வாங்கினேன்! இந்தா உன்காசு” என்று எறிந்தான்! அப்பொழுதும் குருவி சும்மா இல்லை “எனக்குப் பயந்து ராஜா காசை திருப்பிக் கொடுத்து விட்டான்.” என்று சொன்னதாம்.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம்வழியில் நாம்செல்வோம் என்று மன்னன் தன்வழியில் சென்றிருந்தால் கேவலம் குருவியினிடத்தில் அந்தப் பேச்சைக் கேட்டிருக்கத் தேவையில்லை அல்லவா! அவன் திரும்புவானேன்! எனக்குத்தான் கொடு என்று கேட்பானேன்! பயந்தாங்கொள்ளி பட்டத்தை குருவியிடமிருந்து வாங்கிக் கட்டிக் கொள்வானேன்!",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அ.தி.மு.க. கொள்கை பரப்புச் செயலாளர் திருமதி ஜெயலலிதா தலைவர் கலைஞரையும், முன்னணித் தலைவர்களையும் தாம் தாழ்ந்து பேசிவருவதை மனதில் வைத்து தலைவர் அந்தப் பேச்சுக்களைப் பொருட்படுத்தக் கூடாது என்பதை சுட்டிக்காட்டவே இந்தக் கதையைக் கூறினர்.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The King and the Sparrow!",
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A king was walking along the verandah of a palace. Just then, a tiny sparrow, having stolen a coin from somewhere, came and perched on that verandah, held the coin under its foot, looked at the king, and mockingly asked three times, “I’ve got a coin. Who wants it?”",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If the king had simply kept going on his way, there would have been no trouble. Instead, he made much of what the sparrow had said and, looking at it, said, “Why do you keep saying that again and again for no reason? Give that coin to me!”",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The sparrow immediately gave the coin to the king and kept saying, “The king took alms from me.”",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At once the king became angry.... “Tch! Did I take alms from you? Here, take your coin,” he said, and threw it back! Even then the sparrow would not keep quiet. “The king got frightened of me and gave the coin back,” it said.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If the king had simply gone on his own way, thinking, “Let us go our way,” there would have been no need for him to hear such words from a mere sparrow, would there! Why did he turn back! Why did he ask, “Give it to me”! Why did he go and let the sparrow pin the label of coward on him!",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Bearing in mind the way AIADMK Propaganda Secretary Mrs Jayalalithaa has been speaking disparagingly of Leader Kalaignar and the frontline leaders, the Leader told this story precisely to point out that such remarks should not be taken seriously.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  5,
+  6
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "workId": "koottani",
+ "slug": "koottani",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/koottani",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கூட்டணி",
+  "en": "Koottani"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கூட்டணி",
+    "sourceScan": 17,
+    "printedPage": 15
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எலியும்-தவளையும் “நண்பர்களாக இருப்போம்” என்று பேசிக் கொண்டதாம். நண்பர்களாக நாம் ஒருவருக்கொருவர் பேசிப் பழகினால் மாத்திரம் போதாது; நம்முடைய நட்பை உலகத்திற்கு உணர்த்த இருவரும் நம்முடைய கால்களை கட்டிக் கொண்டே வாழவேண்டும்” என்று அவைகள்",
+      "sourceScan": 17,
+      "printedPage": 15,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தங்கள் கால்களை கட்டிக் கொண்டு ஊரெல்லாம் பவனி வந்ததாம்.",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படி பவனி வந்து கொண்டிருக்கும் போது ஒரு சின்னக் குட்டை. அந்தக் குட்டையைப் பார்த்ததும் தவளையின் புத்தி போகுமா? திடீரென்று தவளை குட்டையில் குதித்து விட்டது. எலிக்கு நீந்தத் தெரியாது. எலி தண்ணீரில் மிதந்தது. எவ்வளவு நேரம் மிதக்க முடியும்? மூழ்கிப் போய் எலி செத்தது. செத்துப் போன பிறகு அந்த நேரத்தில் வானத்தில் வட்டமிட்ட பருந்துவின் கண்களுக்கு குட்டையில் செத்து மிதக்கின்ற எலி தெரிந்தது. ஆகா! நல்ல தீனி கிடைத்தது என்று பருந்து ஒரே மூச்சாக கீழே பறந்து வந்து எலியை தூக்கிக் கொண்டு போனது. எலியைத் தூக்கிக் கொண்டு போகும்போது அதனோடு சேர்ந்து தவளையும் போனது. “நாம் நினைத்தது ஒரு இரை. கிடைத்ததோ இரண்டு இரை” என்று இரண்டையும் பருந்து சாப்பிட்டது.",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Koottani",
+    "sourceScan": 17,
+    "printedPage": 15
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The mouse and the frog are said to have talked about “being friends.” It is not enough for us, as friends, merely to talk and become acquainted with one another; to make our friendship known to the world, both of us must live with our legs tied together,” they",
+      "sourceScan": 17,
+      "printedPage": 15,
+      "joinToNext": "space"
+     },
+     {
+      "text": "are said to have tied their legs together and gone in procession all over the town.",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As they were going along like this, they came upon a small pond. Once the frog saw that pond, could it forget its nature? Suddenly the frog jumped into the pond. The mouse did not know how to swim. The mouse floated in the water. How long could it stay afloat? The mouse sank and died. After it died, a hawk circling in the sky at that moment spotted the dead mouse floating in the pond. Ah! It had found a good meal. The hawk swooped down in a single rush and carried the mouse away. When it carried off the mouse, the frog tied to it went along as well. “We thought we had one prey. What we got was two prey,” and the hawk ate them both.",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  17,
+  18
+ ]
+}

@@ -1,0 +1,439 @@
+{
+ "workId": "kizhavanin-manaivi",
+ "slug": "kizhavanin-manaivi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kizhavanin-manaivi",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கிழவனின் மனைவி",
+  "en": "The Old Man's Wife"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கிழவனின் மனைவி",
+    "sourceScan": 47,
+    "printedPage": 46
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிவனின் தலையிலே ஒரு ஜடை சுற்று வேகமாக அசைந்தது. அசைவைத் தொடர்ந்து கங்கா நடந்து கொண்டிருந்தாள்.",
+      "sourceScan": 47,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பூனையைப் போன்ற பஞ்சுப் பாதங்களைச் சிவனின் தலையில் வெகு லாவகமாக வைத்துச் சுற்று முற்றும் பார்த்தபடி எங்கேயோ போய்க் கொண்டிருந்தாள்.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு ஜடையின் அடியில் போய் நின்று கொண்டு, தங்கக் கரங்களைக் கிளைகளில் நீட்டியபடி யாரையோ எதிர்பார்த்திருந்தாள். அவள் நீலக் கருவிழிகளைக் கிளைகளின் நடுவே நீண்ட இரண்டு கரங்கள் பொதித்தன.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கங்கையின் கைகள் அவளையறியாமல் அந்தக் கைகளைப் பிடித்துக் கொண்டன. அல்லித் தண்டில் ரோஜா மலரைப் பொருத்தி வைத்தது போலிருந்தது அந்தக் கை கலப்பு, “சந்திரா!” தேனுண்ட மயக்கத்தில் களைப்புற்ற வண்டின் கீழ்ஸ்தாயி ரீங்காரம் போலிருந்தது அந்த அழைப்பு.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சந்திரா... ஆம். சந்திரன் தான். சிவனாரின் தலையில் குடியிருக்கும் அந்த வாலிபன்தான், பஞ்சோடு நெருப்பை வைத்திட்டனாகாது என்பார்கள். முருகனின் மயிலோடு பாம்பை வைத்திருப்பவர்தானே பரமேஸ்வரன். கங்கையைத் தலையில் கொண்டவர், சந்திரனைக் காலிலாவது வைத்திருக்கலாம். என்னவோ ‘பாவம்’ அவர் தலை எழுத்து.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கங்கா கண்ணே!”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்திரா சல்லாப ரூபா!”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அன்பே... நேற்று ஏனடி வரவில்லை?”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நேற்று என் முறை. இன்று பார்வதி முறை”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மெதுவாகப் பேச... சிவன் விழித்துவிடப் போகிறார்”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நல்ல வேளை, தலையில் கண்ணில்லை. விழித்தாலும் பயமில்லை”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ கிண்டல்காரி கங்கா!”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ மட்டும் என்னவாம்!”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கங்கா... உனக்கு அந்தக் கிழவனோடு பேசப் பிடிக்கிறதா?”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பிடித்திருந்தால்... சந்திரனை ஏன் தேடுகிறேன்?”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தாரை பேசுகிற மெட்டில் பேசுகிறாயே... அவளும் இப்படித்தான். அவள் புருஷன் தாடியும் மீசையுமாய்த் தள்ளாத காலத்தில் அவளைக் கஷ்டப்படுத்துகிறானாம்”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எங்களைப் போலத் தாரையும், கங்கையும் தள்ளாத கிழவன்களுக்கு வந்து சேர்ந்தால் உன்னைப் போலச் சந்திரர்களுக்கு வேட்டைதான்”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முற்றும்",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Old Man's Wife",
+    "sourceScan": 47,
+    "printedPage": 46
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A coil of matted hair on Shiva’s head shook rapidly. Following that movement, Ganga walked along.",
+      "sourceScan": 47,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Placing her cotton-soft, catlike feet very lightly on Shiva’s head, she moved somewhere while looking all around.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She went and stood beneath one of the locks of hair, stretching her golden arms among the branches as though waiting for someone. Two long arms reached out from between the branches and covered her blue eyes.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Without her realizing it, Ganga’s hands caught hold of those hands. That joining of hands looked like a rose fixed onto a lily stalk. “Chandra!” The call sounded like the low-register hum of a bee exhausted in the intoxication of drinking honey.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chandra... yes. Chandra himself. That young man who lives on Shiva’s head. They say cotton and fire should not be kept together. But is not Parameswaran the one who keeps Murugan’s peacock together with a snake? A man who keeps Ganga on his head might at least have kept Chandra at his feet. What can one say? Poor man—such is the writing on his head, his fate.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My dear Ganga!”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Chandra, embodiment of dalliance!”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My love... why did you not come yesterday?”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yesterday was my turn. Today is Parvati’s turn.”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Speak softly... Shiva may wake up.”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Good thing there is no eye on his head. Even if he wakes, there is nothing to fear.”",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You are a tease, Ganga!”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“And what are you, then?”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ganga... do you like talking to that old man?”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If I liked it... why would I be looking for Chandra?”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You speak in the same tune as Tara... she is just like this too. They say her husband, with his beard and moustache, torments her in his advanced age.”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If women like Tara and Ganga end up with old men in their declining years, then it is a hunting ground for Chandras like you.”",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The End",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  47,
+  48,
+  49
+ ]
+}

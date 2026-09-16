@@ -1,0 +1,164 @@
+{
+ "workId": "kalliyum-rojavum",
+ "slug": "kalliyum-rojavum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kalliyum-rojavum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கள்ளியும் ரோஜாவும்",
+  "en": "The Cactus and the Rose"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கள்ளியும் ரோஜாவும்",
+    "sourceScan": 22,
+    "printedPage": 21
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாம் வதியும் தமிழகத்தை ஒரு பூந்தோட்டமாக நினைத்துப் பார்த்தால், சிலப்பதிகார ரோஜாவும், சீவகசிந்தாமணி எனும் செண்பகமும், குண்டலகேசிப் பூங்கொத்தும், மணிமேகலை மல்லிகையும், அகம்புறமென்ற அன்றலர்ந்த முல்லைகளும் மணம் பரப்பிடக் காணுகிறோம். அந்த மலர்களின் மணத்தை மொண்டு மொண்டு தரும் தென்றலாக பாரதியார் - பாரதிதாசன் கவிதைகளும் மிகந்திடு வதைக் காணுகிறோம். இத்தகைய சீர் குலுங்கும் நந்தவனத்திலே ஒரு",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மூலையிலே கள்ளிக்காடும் இல்லாமலில்லை. வாசமற்ற கனகாம்பரமும் வைக்கப்படாமலில்லை. மாலை வேளையிலே உல்லாசமாக உலாவல் நடத்த முடியாதபடி பயமுறுத்துகின்ற பாம்புகள் வாழும் பெரும் புற்றுக்களும் தோன்றாமலில்லை.",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கள்ளி என்கிறேன். சிலருக்குக் கடுமையாகக் கூடத் தெரியலாம். உள் நுழைந்து பார்க்காத காரணத்தால் கம்பராமாயணம் தமிழுக்குப் பூங்காவிலே கள்ளியாகத்தான் வளர்ந்துவிட்டது. கள்ளி மலரிலே அழகுண்டு. கம்பர் காதையிலே கவிதை நயம் இருப்பது போல! கள்ளி மலரிலே நறுமணம் கிடையாது. கம்பர் சித்திரத்திலே இன உணர்வு இல்லாதது போல!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "... தமிழ் உணர்ச்சிக்கு முட்டுக் கட்டை போடுவது ராமாயணம்!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலப்பதிகாரத்தை ரோஜாவென்று குறிப்பிட்டேன்; ரோஜாவுக்கு முள் இருப்பதால்.",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலப்பதிகாரத்திலே கற்பனைக்கெட்டாத சம்பவங்கள் இருக்கலாம். ஆனால் சிலம்பு ஒலிக்கும்போது செந்தமிழ்ப் பண்பு ஒலிக்கிறது. சேரனின் வீரமும், சோழனின் மனவளமும், பாண்டியனின் நேர்மையும் - மொத்தத்தில் மூவேந்தர் ஆண்ட மூன்று பெரும் நாடுகளைப் பற்றிய குறிப்புகளும் நிறைந்து கிடக்கின்றன. இளங்கோ தந்த அந்த இன்பப் புதையலிலே! சேரனின் தம்பி தயாரித்த தங்கரோஜா சிலப்பதிகாரம்!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Cactus and the Rose",
+    "sourceScan": 22,
+    "printedPage": 21
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If we imagine the Tamil land in which we live as a flower garden, we see the rose of *Silappathikaram*, the champak called *Civaka Cintamani*, the bouquet of *Kundalakesi*, the jasmine of *Manimekalai*, and the newly blossomed mullai called Akam-Puram spreading fragrance. We see the poems of Bharathiyar and Bharathidasan flourishing as the breeze that gathers and carries the fragrance of those flowers in abundance. In such a garden, rich with splendour, there is also a",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "space"
+     },
+     {
+      "text": "cactus patch in one corner. Nor is a scentless kanakambaram absent. Nor are there absent great anthills inhabited by snakes that frighten one out of taking a leisurely evening stroll.",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I call it a cactus. To some it may seem harsh. Because people have not entered and looked within, *Kamba Ramayanam* has grown as a cactus in Tamil's flower garden. The cactus flower has beauty. Just as Kambar's story has poetic grace! The cactus flower has no fragrance. Just as Kambar's picture has no ethnic consciousness!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "... *Ramayanam* is an obstacle to Tamil feeling!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I called *Silappathikaram* a rose; because the rose has thorns.",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There may be events in *Silappathikaram* beyond imagination. But when the anklet sounds, the character of classical Tamil sounds. Cheran's valour, Cholan's generosity of mind, Pandiyan's integrity — in all, references to the three great lands ruled by the three crowned kings — abound there. In that treasure of delight given by Ilango! *Silappathikaram* is the golden rose fashioned by Cheran's younger brother!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  22,
+  23
+ ]
+}

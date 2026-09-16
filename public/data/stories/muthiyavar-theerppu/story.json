@@ -1,0 +1,98 @@
+{
+ "workId": "muthiyavar-theerppu",
+ "slug": "muthiyavar-theerppu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/muthiyavar-theerppu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "முதியவர் தீர்ப்பு",
+  "en": "The Elder's Judgment"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "முதியவர் தீர்ப்பு",
+    "sourceScan": 34,
+    "printedPage": 33
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கரிகாற் பெருவளத்தான் ‘சின்னஞ் சிறுவனாக இருந்த போது நாடாளும் பொறுப்பை ஏற்க வேண்டியவனானான். அவனிடத்திலே",
+      "sourceScan": 34,
+      "printedPage": 33,
+      "joinToNext": "space"
+     },
+     {
+      "text": "முறையீடு செய்துகொள்ள இரு தரப்பார் வந்தனர். நீதிமன்றத்திலே அமர்ந்த அந்த இளைஞன் அளிக்கின்ற தீர்ப்பை இரு தரப்பாரும் ஏற்றுக் கொள்வார்களா? அவையோர்தான் அதை ஏற்பார்களா என்ற சந்தேகத்தின் மீது, இளைஞனான கரிகாற் பெருவளத்தான் கொக்கு போல வெண்மையான தாடியும் மீசையும் வைத்துக் கொண்டு நீதிமன்றத்திலே அமர்ந்து தீர்ப்பு வழங்கினான்.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவ்வளவு வயதானவர் தீர்ப்பை வழங்குகிறாரே, நல்ல தீர்ப்புத்தான் என்று அந்தத் தீர்ப்பை ஏற்றுக் கொண்டு போனார்கள்.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Elder's Judgment",
+    "sourceScan": 34,
+    "printedPage": 33
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karikaar Peruvallathan ‘when he was a very young boy had to assume the responsibility of ruling the country. To him",
+      "sourceScan": 34,
+      "printedPage": 33,
+      "joinToNext": "space"
+     },
+     {
+      "text": "came two parties to present their petitions. Would both sides accept the judgment delivered by that youth seated in the court? Would the members of the assembly accept it? Because of this doubt, the young Karikaar Peruvallathan put on a beard and moustache white as a crane and sat in the court to deliver judgment.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thinking, “Such an old man is giving the judgment; it must surely be a good judgment,” they accepted the decision and went away.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  34,
+  35
+ ]
+}

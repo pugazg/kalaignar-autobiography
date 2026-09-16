@@ -1,0 +1,151 @@
+{
+ "workId": "neeyum-kaithi-naanum-kaithi",
+ "slug": "neeyum-kaithi-naanum-kaithi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/neeyum-kaithi-naanum-kaithi",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நீயும் கைதி - நானும் கைதி",
+  "en": "Neeyum Kaithi - Naanum Kaithi"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நீயும் கைதி - நானும் கைதி",
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிறையே! வானக் கடலையின் நுரையே! பலகணி வழியே சிறைக்குள் எட்டிப் பார்த்து என்ன சிரிக்கிறாய்?",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘கைதியே!’ என்று என்னை நீ கூப்பிடுவது என் காதில் விழுகிறது. நீ மாத்திரம் என்ன? சுதந்திரத் தேரில் ஏறியா சுற்றி வருகிறாய்? கிழித்த கோட்டைத் தாண்டாமல், விழித்த கண்களை மூடாமல் சிறைச் சாலைக் காவலைப் போல நடந்து போகத்தானே உனக்கு உரிமையிருக்கிறது!",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிறைக் கோட்டைக்கு வெளியே தவித்து நிற்கும் காதலியிடம் தாவிட முடியாது என்னால். உனக்கென்ன வாழ்கிறதாம்! உன் கோட்டுக்கு அப்பால் கண் சிமிட்டும் நட்சத்திர சீமாட்டிகளை கை நீட்டித் தொட முடியாது உன்னாலும்!",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நானும் கைதி.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீயும் கைதி.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Neeyum Kaithi - Naanum Kaithi",
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Crescent! Foam of the ocean of the sky! Why do you peer into the prison through the window and laugh at me?",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I hear you calling me, ‘Prisoner!’ But what about you? Do you roam about riding a chariot of freedom? Without crossing the line drawn for you, without closing your wakeful eyes, you have only the right to keep moving like a prison guard!",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I cannot leap to the beloved who stands yearning outside the prison walls. And what kind of life do you have! You too cannot stretch out your hand and touch the starry ladies who wink beyond your boundary!",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I too am a prisoner.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You too are a prisoner.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  5
+ ]
+}

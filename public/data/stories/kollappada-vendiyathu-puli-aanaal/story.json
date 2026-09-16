@@ -1,0 +1,120 @@
+{
+ "workId": "kollappada-vendiyathu-puli-aanaal",
+ "slug": "kollappada-vendiyathu-puli-aanaal",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kollappada-vendiyathu-puli-aanaal",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கொல்லப்பட வேண்டியது புலி, ஆனால்...",
+  "en": "The Tiger Was the One to Be Killed, But..."
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கொல்லப்பட வேண்டியது புலி, ஆனால்...",
+    "sourceScan": 16,
+    "printedPage": 15
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "...கொல்லி மலையை ஒரு காலத்தில் பரிபாலித்தவன் வல்வில் ஓரி என்பான் ஆவான். கடை ஏழு வள்ளல்களில் அவனும் ஒருவன். அந்த ஒருவனுடைய பரிசினை வேண்டி வன்பரணர் என்ற புலவர் வருகிறார். வருகின்ற நேரத்தில் அந்த ஓரியைப் பற்றி ஒரு பாடல் இயற்றிக் கொண்டு வருகிறார். அந்தப் பாடலின் பொருள் என்ன தெரியுமா?",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“வல்வில் ஓரி மன்னா! உன்னுடைய கையிலே இருக்கின்ற அம்பு, யானையை வீழ்த்தத்தக்க அம்பு. அத்தகைய அம்பால் நீ ஒரு புலியை",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "space"
+     },
+     {
+      "text": "எய்தாய். அந்த அம்பு புலியின் மீது பட்டு, அதனுடைய உயிரைக் குடித்து - பிறகு புலியை விட்டுக் கிளம்பி அங்கே ஓடிக் கொண்டிருந்த மான் மீது பட்டு, அதன் உடலை ஊடுருவி அங்கே திரிந்து கொண்டிருந்த பன்றியின் உடலில் பட்டு, அந்தப் பன்றியையும் கொன்று விட்டு, கடைசியாக அந்த அம்பு ஒரு புற்றிலே படுத்திருந்த உடும்பின் உடலிலே தைத்தது” என்று அந்த அம்பின் பெருமையைச் சொல்கிறார்.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொல்லப்பட வேண்டியது புலி. ஆனால் அத்துடன் மானும் கொல்லப்பட்டது என்கிற போதுதான், நமக்கு வருத்தம் ஏற்படுகிறது.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Tiger Was the One to Be Killed, But...",
+    "sourceScan": 16,
+    "printedPage": 15
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "...Once, Valvil Ori was the ruler of the Kolli Hills. He was one of the Last Seven Great Patrons. The poet Vanparanar comes seeking a gift from that Ori. As he comes, he composes a song about Ori. Do you know the meaning of that song?",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“King Valvil Ori! The arrow in your hand is an arrow capable of bringing down an elephant. With such an arrow, a tiger is what you",
+      "sourceScan": 16,
+      "printedPage": 15,
+      "joinToNext": "space"
+     },
+     {
+      "text": "shot. That arrow struck the tiger, drank its life — then left the tiger, struck a deer that was running there, pierced its body, struck the body of a boar roaming there and killed that boar too, and finally lodged in the body of a monitor lizard lying in an anthill.” Thus he speaks of the greatness of that arrow.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The tiger was the one that had to be killed. But it is when the deer too was killed along with it that we feel sorrow.",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  16,
+  17
+ ]
+}

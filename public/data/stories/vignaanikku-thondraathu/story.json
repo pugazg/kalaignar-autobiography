@@ -1,0 +1,85 @@
+{
+ "workId": "vignaanikku-thondraathu",
+ "slug": "vignaanikku-thondraathu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/vignaanikku-thondraathu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "விஞ்ஞானிக்குத் தோன்றாது...",
+  "en": "It Wouldn't Occur to a Scientist..."
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "விஞ்ஞானிக்குத் தோன்றாது...",
+    "sourceScan": 29,
+    "printedPage": 28
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முகத்தான விஞ்ஞானி ஓர் அழகான பூனை வளர்த்தான். அது உள்ளே வந்து போவதற்காக கதவில் ஒரு பெரிய ஓட்டை செய்தான். அந்தப் பூனையும், அதன் வழியே வந்து போய்க் கொண்டிருந்தது. சில நாளில் அந்தப் பூனை ஒரு குட்டி போட்டது.",
+      "sourceScan": 29,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பெரிய விஞ்ஞானி, பெரிய துவாரத்தினருகே இன்னொரு சிறிய ஓட்டையைப் போட்டான். இது எதற்காக என்றார்கள் அவனுடைய நண்பர்கள். குட்டி வந்து போவதற்காக என்றான் அந்த விஞ்ஞானி. பூனைக்காக உள்ள பெரிய ஓட்டையிலே குட்டியும் வந்து போக முடியாதா என்று அவர்கள் கேட்ட பிறகுதான்... ஆகா இந்த யோசனை நமக்கில்லாமல் போயிற்றே என்று நினைத்தானாம் அந்த விஞ்ஞானி.",
+      "sourceScan": 29,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "It Wouldn't Occur to a Scientist...",
+    "sourceScan": 29,
+    "printedPage": 28
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A *mugaththana* scientist kept a beautiful cat. He made a large hole in the door so that it could go in and out. The cat too kept coming and going through it. A few days later the cat had a kitten.",
+      "sourceScan": 29,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That great scientist made another small hole beside the large opening. His friends asked what it was for. He said it was for the kitten to come and go. Only after they asked, “Can't the kitten also come and go through the large hole made for the cat?” did that scientist think, “Ah! This idea never occurred to me.”",
+      "sourceScan": 29,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  29
+ ]
+}

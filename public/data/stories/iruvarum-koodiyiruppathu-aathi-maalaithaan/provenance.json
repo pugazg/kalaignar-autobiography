@@ -1,0 +1,53 @@
+{
+ "workId": "iruvarum-koodiyiruppathu-aathi-maalaithaan",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/iruvarum-koodiyiruppathu-aathi-maalaithaan",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "0cedeebbeaf4df8938fce97ea9b397b4ff007b8d",
+ "batch": 7,
+ "validationGroup": "2004",
+ "source": {
+  "printedTitleTa": "இருவரும் கூடியிருப்பது ஆத்தி மாலைதான்",
+  "collectionTa": "கலைஞரின் குட்டிக் கதைகள்",
+  "editionStatementTa": "Second Edition, March 2004",
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065567_கலைஞரின்_குட்டிக்_கதைகள்_2004.pdf",
+  "scanSha256": "33bdfb4f47bc688750fff11f967a0d2b95a93a9aa09044c0467107dae583ab04",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "15–16",
+  "storyScanCount": 2,
+  "printedPages": "14–15",
+  "verifiedPages": 2,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/iruvarum-koodiyiruppathu-aathi-maalaithaan/pages/",
+  "derivedAssembly": "stories/iruvarum-koodiyiruppathu-aathi-maalaithaan/sections/iruvarum-koodiyiruppathu-aathi-maalaithaan.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 0
+ },
+ "english": {
+  "titleEn": "What Unites the Two Is the Aathi Garland",
+  "scanAnchors": 2,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "PASS"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "workId": "panithuliyil-panai-maram",
+ "slug": "panithuliyil-panai-maram",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/panithuliyil-panai-maram",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "பனித்துளியில் பனை மரம்",
+  "en": "Panithuliyil Panai Maram"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பனித்துளியில் பனை மரம்",
+    "sourceScan": 64,
+    "printedPage": 62
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கவிஞர் காலை நேரத்தில் ஒரு புல்வெளியில் நிற்கிறார். அங்கு பனி பெய்திருப்பதன் காரணமாக ஒரு புல்லின் நுனியில் ஒரு பனித்துளி ஒட்டிக் கொண்டு இருக்கிறது. கவிஞர் நிற்பதற்குப் பக்கத்",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "space"
+     },
+     {
+      "text": "திலே ஒரு பனை மரம் இருக்கிறது. அந்தப் பனை மரத்தினுடைய முழு உருவமும் புல்லின் நுனியிலே அந்தப் பனித்துளியிலே பிரதிபலிக்கிறது. கவிஞர் சொல்கிறார்: “இந்தப் பனை மரம் முழுவதும் எப்படி புல்லின் நுனியிலே இருக்கிற பனித்துளியில் பிரதிபலிக்கிறதோ, அதைப்போல உலகத்திலே இருக்கின்ற எல்லாக் கருத்துகளும் திருக்குறள் என்கிற அந்தப் பனித்துளியிலே பிரதிபலிக்கிறது” (பலத்த கைத்தட்டல்) என்று கவிஞர் மிக அழகாக வர்ணிக்கிறார்.",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Panithuliyil Panai Maram",
+    "sourceScan": 64,
+    "printedPage": 62
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A poet is standing in a meadow in the morning. Because dew has fallen there, a dewdrop clings to the tip of a blade of grass. Beside where the poet is standing there is a",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "space"
+     },
+     {
+      "text": "palm tree. The entire form of that palm tree is reflected in the dewdrop on the tip of the grass. The poet says: “Just as this whole palm tree is reflected in the dewdrop at the tip of the grass, so too all the ideas in the world are reflected in that dewdrop called the Tirukkural.” (Loud applause) Thus the poet describes it very beautifully.",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  64,
+  65
+ ]
+}

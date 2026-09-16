@@ -1,0 +1,152 @@
+{
+ "workId": "kaniyum-kanaiyum",
+ "slug": "kaniyum-kanaiyum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kaniyum-kanaiyum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கனியும் கணையும்",
+  "en": "The Fruit and the Arrow"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கனியும் கணையும்",
+    "sourceScan": 42,
+    "printedPage": 40
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சென்னை, 66ஆவது வட்டத்தில் நடைபெற்ற ஒரு பொதுக் கூட்டத்திலே நான் இவ்வாறு விளக்கினேன்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... ஆங்கிலக் கதையொன்றில் வில்லியம் டெல் என்ற ஒரு வில் வீரனுக்குச் சோதனையொன்று வந்தது. தன்னுடைய குழந்தையின் தலையில் வைக்கப்படும் ஆப்பிள் பழத்தை அவன் அம்பு எய்து பிளக்க வேண்டும் என்பதே அந்தச் சோதனை. பழத்தின் கீழே இருப்பது குழந்தை என்கிற நினைப்பு வீரனுக்கு வந்திருந்தால் அவனுடைய வில் நடுங்கியிருக்கும். நாண் நடுங்கியிருக்கும்-அம்பு நடுங்கியிருக்கும். குழந்தை மாண்டிருக்கும்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் ஆப்பிள் பழத்தைப் பிளக்க வேண்டும் என்னும் ஒரே நோக்கத்தை மட்டுமே கொண்ட வீரன் அம்பெய்கிறான் - பழம் பிளக்கப்படுகிறது - குழந்தைக்கு எதும் சேதம் ஏற்படாமல்.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இங்கே குடியரசு நாள் என்பது குழந்தை! அதன் தலையிலுள்ள நச்சுப் பழம் இந்தி; தி.மு. கழகமோ குறி பார்ப்பதில் கெட்டிக்காரக் கட்சி. குடியரசு நாளுக்கும் அவமதிப்பு வராமல் இந்தி ஏகாதிபத்தியத்தையும் பிளந்திடத் தவறாமல் தி.மு. கழகம் அம்பு எய்து வெற்றி பெறும் திறமை பெற்றது. இதைத் தி.மு. கழகம் குடியரசு நாளை அவமதிக்கிறது என்று கூறித் தூண்டிவிடும் - உசுப்பிவிடும் - உத்தமர்களுக்குக் கூறிக் கொள்கிறேன்.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Fruit and the Arrow",
+    "sourceScan": 42,
+    "printedPage": 40
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At a public meeting held in Chennai's 66th ward, I explained it this way.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... In an English story, an archer named William Tell faced a test. He had to shoot an arrow and split an apple placed on his child's head. If the thought that his child was beneath the fruit had entered the warrior's mind, his bow would have trembled. The bowstring would have trembled—the arrow would have trembled. The child would have died.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But the warrior, with the single aim of splitting the apple, shoots the arrow—the fruit is split—without any harm coming to the child.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here, Republic Day is the child! The poisonous fruit on its head is Hindi; the DMK is a party skilled at taking aim. Without bringing dishonour to Republic Day, the DMK has the skill to shoot its arrow and succeed without failing to split Hindi imperialism as well. I say this to those virtuous people who claim that the DMK is insulting Republic Day and thereby provoke and incite others.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  42,
+  43
+ ]
+}

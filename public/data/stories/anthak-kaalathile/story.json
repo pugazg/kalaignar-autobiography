@@ -1,0 +1,129 @@
+{
+ "workId": "anthak-kaalathile",
+ "slug": "anthak-kaalathile",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/anthak-kaalathile",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "அந்தக் காலத்திலே!",
+  "en": "In Those Days!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "அந்தக் காலத்திலே!",
+    "sourceScan": 17,
+    "printedPage": 16
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் காலத்திலே பாராளப் பிறந்த ராமனின் பாதுகைகளை, தம்பி பரதன் தலையிலே சுமந்து, அவற்றை அரசுக் கட்டிலிலே அமர்த்தி அதன் பிரதிநிதியாகத் தானிருந்து அரசோச்சினானே - அவனல்லவா உண்மையான தம்பி...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "...அண்ணன் பாதுகைகளைச் சுமந்து சகோதர வாஞ்சையின் எடுத்துக்காட்டாக நின்ற பரதன் வாழ்ந்த, அதே அந்தக் காலத்திலேதான், அவன் அண்ணன் அயோத்தியானுக்கு, தன் அண்ணன் இராவணனைக் காட்டிக் கொடுத்த சகோதரன் விபீஷணனும் இருந்திருக்கிறான்...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தக் கால மாணவர்கள், ஆசிரியர் நாற்காலியில் முள் வைக்கிறார்கள். அந்தக் காலத்திலே, துரோணாச்சாரியார் என்ற குருவுக்குக் கட்டை விரலைத் துண்டித்து காணிக்கையாகக் கொடுத்த ஏகலைவன் இருந்திருக்கிறானே...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "....ஆச்சாரியார் துரோணருக்குக் கட்டை விரலைத் தந்த சிஷ்ய சிரேஷ்டன் ஏகலைவன் வாழ்ந்த அந்தக் காலத்திலே தான் - குரு பத்தினி தாரையைக் கூடிய சந்திரனும் இருந்திருக்கிறான்...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "In Those Days!",
+    "sourceScan": 17,
+    "printedPage": 16
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In those days Bharata, the younger brother, bore on his head the sandals of Rama, born to rule, placed them upon the royal throne and ruled as their representative — was he not the true younger brother...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "...In those same days when Bharata, who bore his elder brother's sandals and stood as an example of brotherly affection, lived, there was also Vibhishana — the brother who betrayed his own elder brother Ravana to Bharata's elder brother, the Ayodhyan...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Students these days place thorns on the teacher's chair. In those days there was Ekalavya, who cut off his thumb and offered it as an oblation to his guru Dronacharya...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "....In those very days when Ekalavya, the foremost disciple who gave his thumb to Acharya Drona, lived — there was also Chandra, who consorted with Tara, the guru's wife...",
+      "sourceScan": 17,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  17
+ ]
+}

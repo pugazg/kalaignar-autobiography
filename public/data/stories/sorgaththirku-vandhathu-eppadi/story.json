@@ -1,0 +1,777 @@
+{
+ "workId": "sorgaththirku-vandhathu-eppadi",
+ "slug": "sorgaththirku-vandhathu-eppadi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/sorgaththirku-vandhathu-eppadi",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சொர்க்கத்திற்கு வந்தது எப்படி?",
+  "en": "How Did They Reach Heaven?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சொர்க்கத்திற்கு வந்தது எப்படி?",
+    "sourceScan": 19,
+    "printedPage": 18
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சொர்க்கலோகத்தில்... சோலை, விருந்து!",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவை எதையுமே கவனிக்காமல் புல் தரையில் ஒரு கூட்டம் அமர்ந்திருந்தது. அந்தக் கூட்டத்தினரின் தோள்பட்டையில் ஒரு மஞ்சள் நிறத் துண்டுத் துணி தொங்கிற்று. அதில் நீல வண்ணத்தில் “குடியேறியவர்” என்று குறிக்கப்பட்டிருந்தது. முகங்களைப் பார்க்கும்போது பூலோகவாசிகளே என்பது நன்றாகத் தெரிந்தது. ஆமாம்... பூலோகவாசிகள்தான்! கண்ணப்ப நாயனார், காரைக்கால் அம்மையார், நந்தனார், சிறுத்தொண்டர்... இன்னும் எல்லோரும் இருந்தனர். அவர்கள் பேசச் பெரிய விவாதமாக அமையவில்லை. ஆளுக்கு ஒரு வார்த்தை பேசினார்கள். அது அவர்கள் சொர்க்க லோகத்துக்கு வந்த விதத்தைப் பற்றி!",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னுடைய இரண்டு கண்களையும் குத்திக் கொண்ட பிறகுதான் கடவுள் கருணை கிடைத்தது”",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- கண்ணப்ப நாயனார்",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் குழந்தையைத் துண்டு போட்டுக் கறி சமைத்து, அதன் தலையை நானும் என் மனைவியுமே இழுத்து துவையல் அரைத்து அன்னமிட்டேன். அதற்குப் பிறகுதான் சிவபெருமான் சித்தமிரங்கி என்னை ஆட்கொண்டார்”",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- சிறுத்தொண்டர்",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அக்கினியிலே முழுகி தீட்டையெல்லாம் பொசுக்கிக் கொண்டு விட்டு பொன்மேனியோடு வா” என்று தீக்ஷிதர் கனவிலே தன் தயாபரன் சொல்லிவிட்டார். அந்தத் தியாகத்தை நான் செய்த பிறகுதான் தில்லையப்பனின் திருப்பாத தரிசனம் கிடைத்தது.”",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- நந்தனார்",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "space"
+     },
+     {
+      "text": "“உடலில் உள்ள சதைகளையெல்லாம் கிழித்தெறிந்து விட்டு, ரத்தத்தை வடித்துவிட்டு, எலும்பு உருவமாக - பேய் மாதிரி தலை கீழாக நடந்து வரச் சொன்னார் பீடுடைய பெருமான்! அந்தக் கஷ்டத்திற்கு ஆளான பிறகுதான் கைலாசபதி கடாக்ஷம் பாலித்தார்”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- காரைக்கால் அம்மையார்",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆலயங்களில் புல் செதுக்கினேன்; அந்தணராம் திருஞான சம்பந்தரின் பல்லக்குத் தூக்கினேன். அதையெல்லாம் செய்த பிறகுதான் அமரர் உலகம் வர அனுமதி கிடைத்தது, எனக்கு!”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- அப்பர்",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மனிதனுக்கு மானம் பெரிது; அந்த மானத்தை அடகு வைத்து, என் மனைவியை பரமசிவனோடு பள்ளியறைக்கு அனுப்பி வைத்தேன். அந்தத் தியாகத்தின் பரிசாகத்தான் இந்தப் பரமண்டல வாசத்தைப் பரமன் எனக்கு அளித்தார்”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- இயற்பகை நாயனார்",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் முழங்கையைச் சந்தனக் கட்டைக்குப் பதிலாக தேய்த்து பகவத் பூசை பண்ணினேன். அதன் பலன்தான் எனக்குச் சொர்க்க லோகம்”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- மூர்த்தி நாயனார்",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பப்பா! இந்த லோகத்திற்கு வர எத்தனை பேரைக் கொலை செய்திருக்கிறேன் தெரியுமா? சிவனைத் தூஷித்தவர்களையெல்லாம் மழுவால் வதைத்துக் கொன்று போட்டேன். அந்தப் பிணங் களையெல்லாம் பிறை சூடும் பித்தரிடம் காட்டிய பிறகுதான் இந்தப் பேரு கிடைத்தது!”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- எறிபத்த நாயனார்",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சிவனுக்காகச் சேமித்து வைத்திருந்த நெல்லைப் பஞ்ச காலத்தில் சாப்பிட்டார்கள் என்பதற்காக... பக்தியின் காரணமாக என் தாய், தந்தை, என் ஆசை மனைவி மற்றும்... நெல்லைத் தின்ற தாயின்",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பாலைக் குடித்திருக்கும் என்பதற்காக... என் அன்புக் குழந்தை ஆகியோரைக் கொடுவாளால் வீசிக் கொலை புரிந்தேன். அதன் பிறகு தான் என் குற்றத்தை மன்னித்து கொன்றையணி செஞ்சடையார் காட்சியளித்தார்”",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "- கோட்புலி நாயனார்",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப் பக்தர்கள் தங்கள் தியாகங்களைக் கூறிப்பெருமிதங் கொண்டனர். பெருமூச்சு விட்டனர்.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போது ஒரு திடீர் குரல் கேட்டு பேச வாயெடுத்த கண்ணப்பர் நிறுத்திவிட்டார். எல்லோரும் திரும்பிப் பார்த்தனர். ஒரு வாலிபம் மறைந்த மங்கையின் தோளில் கைபோட்டபடி, ஒரு பூணூல்கார அய்யர் நின்றார். எல்லா பக்த சிரோன்மணிகளும் அவர் வாயைப் பார்த்தபடி இருந்தனர். அந்த அய்யர் பேசினார்:",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீங்கள் எல்லாம் மோட்ச லோகம் வர பெரிய பெரிய தியாகம் செய்ததாகப் பெருமையடித்துக் கொள்கிறீர்களே, அதை நினைத்தால் எனக்குச் சிரிப்பு வருகிறது.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சொர்க்கலோகம் வர, சொல்ல முடியாத தொல்லைகள் அனுபவித்ததாகச் சொல்கிறீர்களே. இதோ பாருங்கள், நான் எந்தவிதமான சிரமமும் இன்றி சிவலோகம் வந்திருக்கிறேன்.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "(பக்தர்கள் ஆச்சரியத்தால் திகைத்து விட்டார்கள்)",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆச்சரியப்படாதீர்கள் அன்பர்களே! இதோ என் மேல் சாய்ந்து கொண்டிருப்பது என் தாய்.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "(கோட்புலி நாயனார் குறுக்கிட்டு) “உமது தாயாரா?”",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆமாம் என் தாய்! என்னைப் பத்து மாதம் சுமந்து பெற்ற தாய். அழகுத் தொட்டிலில் இட்டு ஆராரோ பாடிய தாய். இந்தத் தாயாரை நான் என் தாரமாகக் கொண்டிருக்கிறேன். இங்கு மட்டுமல்ல; பூலோகத்திலேயே இந்த அன்னை என் ஆசை நாயகியாக இருந்தாள்.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவள் என்னைத் தொட்டிலில் போட்டு ஆட்டினாள். நான் இவளுக்குக் கட்டிலில் இன்பமூட்டினேன். மாதாவை மனைவியாக்குவது மகா பாபமல்லவா என்பீர்கள். இதைவிட மகா பாபமாக எங்களை மஞ்சத்தில் கண்டுவிட்ட என் தகப்பனாரை உடனே கொன்று போட்டேன். உனக்கா சொர்க்கவாசல் திறந்தது என்று கேட்கிறீர்களா? ஆமாம்; எனக்குத்தான் சொர்க்கம் சுலபத்தில் வழிவிட்டது. ‘அரகா மகாதேவா’ என்றேன். அம்மையை அணைத்தபடி அப்பன் ரிடப வாகன ரூபராய் அருள் மழை பொழிந்தான். ஆனந்தமாக சொர்க்க பூமிக்கு வந்துவிட்டேன்.”",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாயன்மார்கள் ஸ்தம்பித்து விட்டார்கள். காரைக்கால் அம்மை, “இது உண்மையா?” என்றார்.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சந்தேகம் வேறா? ஐயமிருந்தால் திருவிளையாடல் புராணம் மாபாதகம் தீர்த்த படலத்தைப் பாருங்கள்” என்றார் அய்யர்.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பாபியாகிய உமக்கு மாத்திரம் இவ்வளவு சுலபத்தில் சொர்க்கலோக வாழ்வு கிடைக்கக் காரணம் என்ன?” என்று கேட்டார் சிறுத்தொண்டர்.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதுதான் காரணம்” என்று தன் பூணூலை உருவிக் காட்டினார் அய்யர்.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "How Did They Reach Heaven?",
+    "sourceScan": 19,
+    "printedPage": 18
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the world of heaven... grove, feast!",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ignoring all these, a group sat on the grass. A yellow strip of cloth hung from their shoulders. On it, in blue, was written “Immigrant.” From their faces it was quite clear that they were inhabitants of the earthly world. Yes... earth-dwellers indeed! Kannappa Nayanar, Karaikkal Ammaiyar, Nandanar, Siruthondar... all the others were there too. Their conversation did not become a great debate. Each spoke a word. It was about the way they had come to the heavenly world!",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I received God's grace only after gouging out both my eyes.”",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Kannappa Nayanar",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I cut up my child, cooked the flesh, and my wife and I pulled off its head, ground it into chutney and served a meal. Only after that did Sivaperuman relent and take me under his grace.”",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Siruthondar",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“‘Immerse yourself in fire, burn away all impurity and come with a golden body,’ the compassionate one told the Dikshitar in a dream. Only after I made that sacrifice did I receive darshan of the sacred feet of Thillaiyappan.”",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Nandanar",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "space"
+     },
+     {
+      "text": "“I tore away all the flesh on my body, drained away the blood, and the glorious lord told me to come as a skeleton — like a ghost — walking upside down! Only after undergoing that hardship did Kailasapathi bestow his grace.”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Karaikkal Ammaiyar",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I cut grass in temples; I carried the palanquin of the Brahmin Thirugnanasambandar. Only after doing all that was I permitted to come to the world of the immortals!”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Appar",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“For a human being, honour is precious; I pawned that honour and sent my wife to the bedchamber with Paramasivan. As the reward for that sacrifice, Paramar granted me this life in the supreme realm.”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Iyarpagai Nayanar",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I rubbed my elbow in place of the sandalwood block and performed worship of the Lord. The result of that is this heavenly world for me.”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Moorthi Nayanar",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! Do you know how many people I killed to come to this world? I struck down with an axe and killed all those who reviled Siva. Only after showing all those corpses to the mad one who wears the crescent did I receive this reward!”",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Eripatha Nayanar",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Because they ate the paddy that had been set aside for Siva during the famine... because of devotion, I killed my mother, father, my beloved wife and... because the mother who had eaten the paddy...",
+      "sourceScan": 20,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "...would have fed milk to my beloved child, I slashed them all to death with a curved sword. Only afterward did the red-matted-haired one adorned with konrai forgive my crime and appear before me.”",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "— Kotpuli Nayanar",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus the devotees spoke of their sacrifices with pride. They heaved deep sighs.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Then, hearing a sudden voice, Kannappar, who had opened his mouth to speak, stopped. Everyone turned and looked. A sacred-thread-wearing Iyer stood with his arm around the shoulder of a woman whose youth had faded. All the eminent devotees stared at his mouth. The Iyer spoke:",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You all boast that you made great, great sacrifices to come to the world of moksha; when I think of it, I feel like laughing.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“You say you endured unspeakable troubles to come to heaven. Look here: I have come to Sivaloka without any difficulty at all.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "(The devotees were stunned with amazement.)",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do not be surprised, friends! Here, leaning on me, is my mother.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "(Kotpuli Nayanar interrupts) “Your mother?”",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes, my mother! The mother who carried me for ten months and gave birth to me. The mother who placed me in a beautiful cradle and sang *aararo*. I have taken this mother as my wife. Not only here; even in the earthly world this mother was my beloved mistress.",
+      "sourceScan": 21,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“She rocked me in a cradle. I gave her pleasure in bed. You may say that making one's mother one's wife is a great sin. As an even greater sin, I immediately killed my father when he saw us together on the bed. You ask, did heaven's gate open for you? Yes; heaven yielded easily to me. I cried, ‘Araga Mahadeva!’ With Mother in my embrace, Father, in *Ridaba-vahana* form, showered grace. I came joyfully to the land of heaven.”",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Nayanmars were stunned. Karaikkal Ammaiyar said, “Is this true?”",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Still doubt? If you have doubts, look at the *Mapathakam Theertha Padalam* of the *Thiruvilaiyadal Puranam*,” said the Iyer.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is the reason that a sinner like you alone obtained life in heaven so easily?” asked Siruthondar.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“This is the reason,” said the Iyer, pulling out and showing his sacred thread.",
+      "sourceScan": 22,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  19,
+  20,
+  21,
+  22
+ ]
+}

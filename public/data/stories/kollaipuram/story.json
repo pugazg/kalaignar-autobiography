@@ -1,0 +1,648 @@
+{
+ "workId": "kollaipuram",
+ "slug": "kollaipuram",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kollaipuram",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கொள்ளைபுரம்",
+  "en": "Kollaipuram"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கொள்ளைபுரம்",
+    "sourceScan": 29,
+    "printedPage": 24
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சமஸ்தானாதிபதிகள் சர்வாதிகாரம் செலுத்தி வந்த காலம். உழைப்பவர்களின் வியர்வையில் குளித்துக் கொண்டு அவர்களின் இரத்தத்தை மதுபானமாக அருந்திக் கொண்டு, தங்களின் உல்லாச கேளிக்கைக்காகவும் வக்கிரமான செயல்களுக்காகவுமே இந்த உலகம் படைக்கப்பட்டதாக எண்ணிக் கொண்டு வாழ்ந்த உன்மத்தர்களின் தர்பார்தான் அந்த சமஸ்தானங்களில் கேள்வி கேட்பாரின்றி நடந்து கொண்டிருந்தது. அவற்றில் ஒரு சமஸ்தானம்தான் ‘கொள்ளைபுரம்’ சமஸ்தானம். பொருத்தமான பெயர். கொள்ளையடிப்போர் கொலுவீற்றிருந்த சமஸ்தானம். மருத்துவத்திற்கு, கல்விக்கு, சாலைவழிக்கு, குடிதண்ணீருக்கு, இப்படி மக்களுக்குத் தேவையான சகலமான வசதிகளுக்கும் அந்த சமஸ்தானத்து மக்கள் கொட்டி அழுத வரிப்பணம் முழுவதும் அந்த சமஸ்தானத்து மன்னரின் கேளிக்கைக் கூடங்களில் பஞ்சணைப் பாவைகளாயின. மகாராணியின்",
+      "sourceScan": 29,
+      "printedPage": 24,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பாதம் முதல் கேசம் வரையில் அவளது நளின உடலை அலங்கரிக்கும் நவரத்தின் அணிகளாயின. பாலிலே குளித்தனள். பழ ரசத்தில் வாய் கொப்பளித்தனள். மன்னரும், ராணியும் மட்டுமல்ல, அந்த மாளிகையில் பணிபுரிந்த அதிகாரிகள் அத்தனைபேரின் குடும்பங்களும் குதூகலமும், கொண்டாட்டமும், குடிவெறிக் கூத்தும் இல்லாத நாட்களே இல்லையெனுமளவுக்கு இன்பபுரியில் இடைவிடாத லாகிரியில் ஆழ்ந்து கிடந்தன. மாடாக உழைத்து ஓடாகத் தேய்ந்து கொண்டிருந்த அந்த மண்ணின் மாந்தர்கள், மகேசன், தம் தலையில் இப்படித்தான் எழுதியிருக்கிறான் எனத் தீர்மானித்துக் கொண்டு தீயில் புழுவெனத் துடித்துக் கிடந்தனர்.",
+      "sourceScan": 30,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பசிக்கிறது என்று கூவவோ, பட்டினி கிடக்கிறோமே என்று கதறவோ அந்த சமஸ்தானத்துப் பாமர மக்களுக்கு உரிமையில்லை. அதைப் பற்றி யாராவது பேசினாலோ, அல்லது சிந்திப்பதாகத் தெரிந்தாலோ அவர்களைப் பிடித்து ஆயுட்காலம் வரையில் சிறையில் தள்ளுவதற்காக ஒரு கடுமையான சட்டமே நடைமுறையில் இருந்தது. அந்தச் சட்டப்படி பத்தாயிரத்துக்கு மேற்பட்டவர்கள் சிறைக் கோட்டங்களில் பயங்கர தண்டனை அனுபவித்துக் கொண்டு எலும்பும் தோலுமாகக் கிடந்தனர்.",
+      "sourceScan": 30,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சமஸ்தானங்களைத் தனது ஆதிக்கத்தில் வைத்துக்கொண்டு, அவைகள் செலுத்தும் கப்பப் பணம் முறையாக ஒழுங்காக வந்து சேருகிறதா என்பதில் மட்டும் கண்ணும் கருத்துமாக இருந்த பிரிட்டிஷ் சாம்ராஜ்யம்; கொள்ளைபுரத்தில் நடைபெறும் அநியாய அக்கிரமங்களைப் பற்றிக் கவலைப்பட்டுக் கொண்டிருக்கவில்லை.",
+      "sourceScan": 30,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொத்தடிமைகளாய் உழன்று கொண்டிருந்த கொள்ளைபுரத்து மக்கள் மத்தியிலும் உயிருக்குத் துணிந்த சிலபேர்; ‘இந்தத் துன்ப துயரங்களை இன்னும் எத்தனை நாட்கள் தாங்கிக்கொண்டு பொட்டுப் பூச்சிகளாய் இருப்பது?’ என்ற கேள்விக்குறியுடன் பற்றி எரியப்போகும் புரட்சித் தீக்குப் பொறியாகக் கிளம்பினர். அவர்கள் ஆங்காங்கு மக்களைத் திரட்டி சமஸ்தானாதிபதியின் ஆட்சி அலங்கோலங்களையும் - அவற்றைக் கண்டும் காணாமல் அனுமதித்துக் கொண்டு ஆதிக்கம் நிலைத்து நீடிப்பதற்கு வழிமுறைகளை வகுத்துக் கொண்டிருந்த பிரிட்டிஷ் சாம்ராஜ்யத்தின் சூழ்ச்சித் திட்டத்தையும் பற்றிச் சிந்திக்கின்ற குறைந்தபட்ச சுதந்திரத்தை போதிக்கத் தொடங்கினர்.",
+      "sourceScan": 31,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த நெருப்பு மெல்ல மெல்ல எரியத் தொடங்கி ‘ஏன்? எதற்காக?’ என்ற கேள்விகள் அங்கிங்கெனாதபடி எங்கெங்கும் எழுந்த போதிலும் கூட, கொள்ளைபுர சமஸ்தானத்து மன்னரும், ராணியும் - மற்றும் அவர்களது அதிகாரப் பரிவாரங்களும்; அந்த நெருப்பின் சூட்டைத் தங்களின் உல்லாச சல்லாபக் குளிருக்கு ஏற்ற இன்பமான கதகதப்பாகத்தான் கருதிக் கொண்டு பழைய களியாட்டங்களின் பட்டியலில் இருந்து ஒன்றைக்கூடக் கழிக்காமல் பொழுதைப் போக்கினர். போக போக்கியங்களின் மொத்தக் குத்தகையும் ஆண்டவனால் தங்களுக்கே வழங்கப்பட்டிருப்பதாகக் கருதிக் கொண்ட ஓர் ஆணவம் அந்தக் கூட்டத்தாரிடையே தலைதூக்கி நின்றது.",
+      "sourceScan": 31,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் அந்த சமஸ்தானத்தைத் தன் பிடியில் வைத்திருந்த பிரிட்டிஷ் சாம்ராஜ்யத்தின் இந்திய மேலதிகாரிகள், அங்கு நடக்கும் நிகழ்ச்சிகளையும் - மக்களிடையே ஒரு பிரிவினர் கிளர்ச்சிக்குத் தயாராவதையும்; அதனை மேலும்",
+      "sourceScan": 31,
+      "printedPage": 26,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மேலும் அலட்சியப்படுத்தி, விட்டுக் கொண்டே போனால் - சமஸ்தான ஆதிக்கம் மட்டுமல்ல; தனது சாம்ராஜ்ய ஆதிக்கமும் சரிந்துவிட நேரிடும் என்று எதிர்காலத்தைப் பற்றி எண்ணிடத் தொடங்கினர்.",
+      "sourceScan": 32,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாம்ராஜ்யத்தின் வலிவும் குறையக் கூடாது - வளர்ச்சியும் குன்றக் கூடாது - அதே நேரத்தில் சமஸ்தானாதிபதியான கொள்ளையூர் மன்னனுக்கும் ஒரு நெருக்கடி கொடுத்து; குடிமக்களிடம் நல்ல பெயர் வாங்கிக் கொள்ள வேண்டும் - அதற்கு எப்படித் திட்டம் வகுக்கலாம் என்று ஆலோசனை நடைபெறுகிறது. அதன்படி, கொள்ளைபுரம் சமஸ்தானத்து மக்களின் குறைகள் என்னவென்று அறிந்திடவும் - அவர்கள் சமஸ்தானத்து மன்னர், மகாராணி மற்றும் பிரதானியர் மீது கூறிடும் குற்றங்கள் பற்றியும் நேர்மையான விசாரணை நடத்தி முழுமையான அறிக்கைகளைத் தயாரித்து அனுப்ப வேண்டுமென்பதற்காக கொள்ளைபுரம் சமஸ்தானத்துத் தலைநகரமான கொள்ளையூரில் ஒரு நீதிஸ்தலம் அமைக்கப்பட்டது. அந்த நீதிஸ்தலத்திற்கு பிரிட்டிஷ்காரர்களே நீதிபதிகளாகவும் நியமிக்கப்பட்டனர். முதன்மை நீதிபதி ஒருவரும் அவருக்குத் துணையாக சில நீதிபதிகளும் கொண்ட நீதிஸ்தலம் உருவானவுடன்; சமஸ்தானத்துக் குடிமக்கள் ஓர் ஆறுதல் மூச்சு விட்டுக் கொண்டனர்.",
+      "sourceScan": 32,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இனி சர்வாதிகாரச் சட்டங்களின் தேள் கொடுக்குகளால் தாங்கள் தாக்கப்பட வேண்டியதில்லையென்று ஓரளவு கவலையை விட்டொழித்தனர். சமஸ்தானத்துப் பிரதானியர்களில் யார் ஒருவர், தங்கள் மீது கடுமையாக நடந்து கொண்டாலும் உடனடியாக நீதிஸ்தலத்தில் குற்றச்சாட்டுப் புகார் கொடுத்து; நியாயத்தைப் பெறலாம் என்று நம்பி மகிழ்ந்தனர்.",
+      "sourceScan": 32,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அம்சதூளிகா மஞ்சத்தில் ஆரணங்குகளின் அரவணைப்பில் அயர்ந்து கிடப்பதே தவமிருந்து பெற்ற சுகமென மன்னன் மயங்கிக் கிடந்தாலும்; மகாராணி மட்டும் அந்த இன்ப உலகத்தில் பரிபூரணமாக அமிழ்ந்து போகாமல்; அவ்வப்போது விழித்துக் கொண்டு, அரசாங்கத்தைச் சுற்றி என்ன நடக்கிறது என்று கவனிக்கும் இயல்பு கொண்டிருந்த காரணத்தால், தங்களைச் சுற்றி அரும்புகிற ஆபத்துகளை அறிந்து கொள்ளக் கூடியவளாக இருந்தாள். எனவே, மன்னனை மது மங்கை மயக்கத்தில் வீழ்ந்து கிடக்க விட்டுவிட்டு, மாளிகைப் பிரதானியருடன் மந்திராலோசனைகளை அடிக்கடி நடத்தினாள்; அவர்களும் போதை தெளிந்திருந்த நேரமாகப் பார்த்து!",
+      "sourceScan": 33,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவளால் யூகிக்க முடிந்தது; கனன்று கிளம்பிக் கொண்டிருக்கும் மக்களின் கோபமும் - அவர்களின் அடி வயிற்றுத் தீயாக எரிந்து கொண்டிருக்கும் பசிப்பிணியும் - சமஸ்தானத்து அரசையும் அதிகாரவர்க்கத்தையும் என்றோ ஒரு நாள் சாய்த்து விடக் கூடுமென்று! கொத்தடிமை நிலையிலிருந்து கொள்ளைபுரம் விடுபட்டு மக்கள் கைக்குப் போய் விட்டால்; அப்போது தம்மைக் காத்திட தமக்கு மேலுள்ள சாம்ராஜ்யத்துக்கும் சக்தி இருக்கப் போவதில்லை; ஏன் - சாம்ராஜ்யமே கூட இல்லாமல் போய்விடக் கூடும் - ஆகவே இதனை சமாளிப்பது எப்படி என்று எண்ணங்கள் சிறகடித்தன!",
+      "sourceScan": 33,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதன் விளைவு, மாளிகையில் பிரதானியர்களுக்கடங்கிய மக்கள் படையொன்று தயாரிக்கப்பட்டது! அந்த மக்கள் படையின் வேலை; உண்மையான மக்கள் படைக்குள் ‘ஊடுருவிக்’ கலகம் ஏற்படுத்துவது! முடிந்த",
+      "sourceScan": 33,
+      "printedPage": 28,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வகையில் எல்லாம் அவர்களில் முக்கியமானவர்களை முடமாக்குவது, வாழ்வையே முடிப்பது! பிரதானியர்கள் சிலருக்கு அளிக்கப்பட்ட பணியோ மகாராணியின் தந்திரோபாயங்களிலேயே தலைசிறந்த ஒன்றாகும். நாளைக்கு நாடு நம்மை விட்டுப் போய்விட்டால்; நமக்கென்று மாடு மனை மாளிகைகள் தோட்டம் துறவுகள் நீராடும் பொய்கைகள் அந்த சமஸ்தானம் முழுவதும் பல இடங்களில் நமக்கென்றே உரிமையாக வேண்டும். அவற்றின் உடமையாளர்கள் யாராயினும் அவர்களை மிரட்டிப் பணிய வைத்து - அவர்களின் நிலம் நீச்சு எதுவாயினும் மிக மிக மலிவான விலைக்கு மன்னர் பெயராலும் மகாராணியின் பெயராலும் வளைத்துப் போட வேண்டும். ராணியாரின் இந்தக் கட்டளையை ஏற்று; களியாட்டப் பிரதானியர் அந்தக் கடமையை நிறைவேற்றக் கணத்தில் கிளம்பினர். கணக்கின்றி வளைத்தனர்.",
+      "sourceScan": 34,
+      "printedPage": 29,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதனால் பாதிக்கப்பட்டோர், புதிதாக முளைத்துள்ள நீதிஸ்தலத்திற்கு முறையீடுகளை எடுத்துச் சென்றனர். என்னதான் ஆதிக்க வாதிகளாக இருந்தாலும் பிரிட்டிஷாரில் பெரும்பான்மையோர் நீதி மன்றங்களில் சட்டப்படி தண்டனைகள் வழங்கினாலுங்கூட; நீதி நியாயப்படி நடந்து கொள்வார்கள் என்று ஒரு பெயர் இருந்தது! அது எவ்வளவு தூரம் உண்மையோ! ஆனால் கொள்ளைபுரம் சமஸ்தானத்து முதன்மை நீதிபதியாகவும் துணை நீதிபதிகளாகவும் பதவியேற்றவர்களுக்கு, கொள்ளைபுரத்து நடைமுறைகள் எல்லாமே புதுமையாக இருந்தன. ஒரு நாள் துணை நீதிபதியொருவரின் நீதிஸ்தலத்துக்கு சமஸ்தானத்துப் பிரஜையொருவர் ஒரு வழக்கைக் கொண்டு வந்தார்.",
+      "sourceScan": 34,
+      "printedPage": 29,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தனது விலையுயர்ந்த நிலம், தோட்டம், நீச்சல் குளம் ஆகியவற்றைக் குறைந்த விலைக்கு மகாராணியின் பெயருக்கு",
+      "sourceScan": 34,
+      "printedPage": 29,
+      "joinToNext": "space"
+     },
+     {
+      "text": "விற்க வேண்டுமென்று வற்புறுத்தியதாகவும் - விற்க மறுத்த காரணத்தினால்; அவற்றை ஆக்ரமிக்கப் போவதாக சமஸ்தானத்து பிரதான அதிகாரி ஒருவரிடமிருந்து தாக்கீது வந்திருப்பதாகவும்; அந்த ஆக்ரமிப்பு யோசனையை ரத்து செய்து நீதிஸ்தலம் தீர்ப்பளிக்க வேண்டுமென்றும் தொடரப்பட்ட வழக்காகும் அது! அந்த வழக்கைக் கொண்டு வந்தவரை நீதிஸ்தலத்து வாசலுக்குள்ளேயே நுழைய வொட்டாமல் மகாராணியாரின் ‘மக்கள்படை’ தடுக்க முனைந்து அதனால் பெருங்கலவரம்! சமஸ்தானத்துக்கும் சாம்ராஜ்யத்து ஆதிக்கத்துக்கும் எதிராக அணிவகுத்து நிற்கும் உண்மையான ‘மக்கள் விடுதலை வீரர்கள்’ அந்த மகாராணியின் மக்கள் படையை எதிர்த்து சமாளித்து; வழக்கு தொடுக்க வந்தவரை நீதிஸ்தலத்திற்குள் அனுமதிக்க வழி வகுத்துத் தந்தார்கள்.",
+      "sourceScan": 35,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "துணை நீதிபதி, அந்த வழக்கு விசாரணையைத் தொடங்கினார். மகாராணி சார்பிலும் மன்னர் சார்பிலும் வாதாடியவர்கள் ‘இந்த வழக்கே பொய்! வாதி குறிப்பிடுகிறபடி அரசாங்கம் ஆக்ரமிக்கத் தாக்கீது அனுப்பியது மெய்! ஆனால் அங்கே நீச்சல் குளமும் இல்லை - நில புலமும் இல்லை; எல்லாம் வெறும் மேய்ச்சல்காடு!,’ என்று திட்டவட்டமாகக் கூறினர். உடனே பதறிப்போய் வழக்கு தொடுத்தவர், நீதிபதியின் முன்னால் சென்று - நீச்சல் குளம், விளைந்திருக்கும் நிலம் - பூத்துச் செழித்திருக்கும் தோட்டம் ஆகியவற்றின் படங்களைக் காட்டி; ‘மேன்மை தங்கிய நீதிபதி அவர்கள் தயவுசெய்து நேரில் வந்து பார்த்தால் உண்மையைத் தெரிந்து கொள்ளலாம்’ என உருக்கமாகக் கூறி ஒரு சொட்டுக் கண்ணீரும் வடித்தார். அதைக் கேட்ட துணை நீதிபதி ‘மனுதாரரின் விருப்பப்படி அந்த இடங்கள் நேரில் போய் பார்க்கப்படும்’ என்று தீர்ப்புச் சொன்னதுதான் தாமதம்;",
+      "sourceScan": 35,
+      "printedPage": 30,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நீதிபதியின் மேஜையின் மீது சரமாரியாகக் கற்கள் வந்து விழுந்தன. நாலைந்து சிப்பந்திகளுக்கு இரத்தக் காயம் ஏற்பட்டது. உடன் நீதிபதி, தனது இருக்கையை விட்டுப் பரபரப்புடன் எழுந்து சமஸ்தானத்துக்காக வாதாடியவர்களைப் பார்த்து, ‘இதெல்லாம் என்ன காட்டுமிராண்டித்தனம்?’ என்று கோபமாகக் கேட்டார். அவர்களுக்குத் தெரியும் அந்தக் கற்கள் மாளிகையின் கைக்கூலிப் படையினரால் வீசப்பட்டது என்று! இருந்தாலும் சமாளித்துக் கொண்டு துணை நீதிபதியிடம் சொன்னார்கள்:",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘எங்கள் சமஸ்தானத்துக் கலாசாரமே தனியானது! கற்காலம் என ஒன்று இருந்தது; அது இப்போதும் இருக்கிறது என்று காட்டுகிற கலாசாரப் பிரசாரம் இது!’",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த மழுப்பலான பதிலைக் கேட்டு, முகம் சிவந்த துணை நீதிபதி, ‘இதைச் சும்மாவிட முடியாது! வாருங்கள் முதன்மை நீதிபதியிடம் சென்று இந்த விஷயம் பற்றி முறையிடலாம். அங்கே உங்கள் விளக்கத்தைச் சொல்லுங்கள்!’ என்று அவர்களை அழைத்துக் கொண்டு, முதன்மை நீதிபதியைச் சந்திக்கப் புறப்பட்டார்.",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதன்மை நீதிபதியின் நீதிஸ்தல அறைக்குச் செல்லும் வழியில் உள்ள தாழ்வாரத்தில் பத்து பதினைந்து ஆண்கள் நின்று கொண்டிருந்தனர். அவர்கள், தங்களின் அருகே துணை நீதிபதியும் - அவரிடம் வழக்குத் தொடுத்த வாதியும் வந்தவுடன், அவர்கள் தங்களின் ஆடைகளை அவிழ்த்துக் காட்டிக் கொண்டு! ‘டேய்! வழக்கைத் திரும்பப் பெறு!’ எனக் கூச்சலிட்டுக் குதியாட்டம் போட்டனர். துணை நீதிபதி அதிர்ச்சியடைந்து சமஸ்தானத்துக்காக வாதாடியவர்களைப் பார்த்து ‘இது என்ன ஆபாசம்? என்ன அநாகரிகம்?’ என்று",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "space"
+     },
+     {
+      "text": "சாடினார். ஆனால் அவர்கள் அமைதியாகச் சொன்னார்கள்: ‘அய்யா, துணை நீதிபதி அவர்களே! தங்கள் மேஜையில் கற்கள் விழுந்தன - அது மனித வரலாற்றில், கல் தோன்றிய காலத்தைக் குறிப்பிடும் கலாசாரமாகும்! இதோ இப்போது நீங்கள் காணுகிற கலாசாரம்; கல்தோன்றி மண்தோன்றாக் காலத்துக் கலாசாரத்தின் படப்பிடிப்பு!’ வெள்ளைக்கார நீதிபதியின் முகம் மட்டுமல்ல; உடம்பு முழுவதுமே ஆத்திரத்தால் சிவந்தது!",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போது, தனது நிலபுலங்களுக்காக வழக்குத் தொடுத்திருந்த வாதி, குறுக்கிட்டு நீதிபதியிடம் சொன்னார்:",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘மேன்மை தங்கிய துணை நீதிபதி அவர்களே! கல்தோன்றிய காலத்துக் கலாசாரத்தையும் - இப்போது; கல்தோன்றி மண்தோன்றாக் காலத்துக் கலாசாரத்தையும் கண்டீர்கள்! அடுத்து இன்னொரு தாழ்வாரத்தில் நீங்கள் காணப்போவது, ‘கல்தோன்றி மண்தோன்றாக் காலத்துக்கு முன் தோன்றி மூத்த கலாசாரமாகும்’.",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "துணை நீதிபதி துணுக்குற்று ‘அந்தக் கலாசாரம் எப்படியிருந்து தொலைக்கும்?’ என்று பதைத்தார்.",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘மாளிகைப் படையின் மகளிர் சேனை, அங்கே காத்துக் கொண்டிருக்கிறது!’ என்று பதில் வந்தது தான் தாமதம்; துணை நீதிபதி, முதன்மை நீதிபதியிடம் முறையிடச் செல்வதை விட்டுவிட்டு, திரும்பிப் பார்க்காமலே தனது நீதிஸ்தல அறையை நோக்கி ஓடினார்.",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வழக்கு தொடுத்தவர்களுக்கு வழங்கப்பட வேண்டிய நீதி மட்டுமல்ல; கொள்ளைபுரத்துக் கலாசாரத்தை எதிர்த்து வெடித்துக் கிளம்பிட நேரம் பார்த்துப் புரட்சியும் காத்திருந்தது!",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "◉ ◉ ◉ ◉ ◉",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kollaipuram",
+    "sourceScan": 29,
+    "printedPage": 24
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was a time when the rulers of princely states wielded absolute power. Bathing in the sweat of those who laboured, drinking their blood like liquor, and imagining that this world had been created solely for their pleasures and perverse pursuits, those intoxicated rulers held court in their states without anyone to question them. One such state was the princely state of “Kollaipuram.” An apt name: a state where plunderers sat enthroned. All the tax money that the people of that state had poured out in tears for medicine, education, roads, drinking water, and every other public necessity was transformed into cushioned dolls in the king’s pleasure halls, and into jewels of nine gems adorning the graceful body of the Maharani from",
+      "sourceScan": 29,
+      "printedPage": 24,
+      "joinToNext": "space"
+     },
+     {
+      "text": "foot to hair. She bathed in milk. She rinsed her mouth with fruit juice. Not only the king and queen, but the families of every official serving in that palace were sunk in such uninterrupted intoxication in that pleasure-world that hardly a day passed without merriment, celebration, and drunken revelry. The people of that soil, labouring like cattle and wearing themselves down to the bone, decided that Mahesan had written precisely such a fate upon their heads and writhed like worms in fire.",
+      "sourceScan": 30,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The ordinary people of the state had no right to cry out that they were hungry, or to lament that they were starving. If anyone spoke of it—or was even suspected of thinking about it—a harsh law existed by which they could be seized and thrown into prison for life. Under that law, more than ten thousand people lay reduced to skin and bone in prison fortresses, enduring terrible punishment.",
+      "sourceScan": 30,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The British Empire, which kept the princely states under its domination and watched only to make sure that their tribute payments arrived properly and regularly, was not concerned about the injustice and atrocities taking place in Kollaipuram.",
+      "sourceScan": 30,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yet among the people of Kollaipuram, toiling like bonded slaves, a few who were prepared to risk their lives arose as sparks for a revolutionary fire about to blaze, with the question: “How many more days are we to endure these sufferings and sorrows and remain like tiny insects?” They gathered people here and there and began to teach them at least the minimum freedom to think about the disorderly rule of the princely ruler—and about the conspiratorial designs of the British Empire, which saw those abuses, pretended not to see them, permitted them, and devised ways for domination to endure.",
+      "sourceScan": 31,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That fire slowly began to burn, and questions of “Why?” and “For what reason?” arose everywhere. Even then, the king and queen of Kollaipuram, together with their retinue of officials, treated the heat of that fire merely as a pleasant warmth suited to the chill of their amorous pleasures. They passed their time without removing even one item from their old list of revelries. An arrogance stood tall among them: they believed that God had granted them the total lease on every pleasure and luxury.",
+      "sourceScan": 31,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But the British Empire’s senior officials in India, who held that state in their grip, began to think about the future. They watched what was happening there and the fact that a section of the people was preparing for revolt; if they continued to neglect it",
+      "sourceScan": 31,
+      "printedPage": 26,
+      "joinToNext": "space"
+     },
+     {
+      "text": "further and further, they realised that not only the authority of the princely state but their own imperial authority might also collapse.",
+      "sourceScan": 32,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The strength of the Empire must not diminish; its growth must not decline. At the same time, the king of Kollaiyur, ruler of the state, had to be put under some pressure so that the Empire might earn a good name among the citizens. Consultations began on how such a plan could be devised. Accordingly, a judicial tribunal was established in Kollaiyur, the capital of Kollaipuram, to learn the grievances of the people, conduct an impartial inquiry into the accusations they made against the king, the Maharani, and the chief officials, and prepare and send complete reports. The British themselves were appointed as judges of the tribunal. When the tribunal, consisting of a chief judge and several judges assisting him, was formed, the citizens of the state breathed a sigh of relief.",
+      "sourceScan": 32,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They set aside some of their anxiety, believing that the scorpion-stings of authoritarian laws would no longer strike them. They rejoiced in the hope that if any of the state’s chief officials treated them harshly, they could immediately lodge a complaint with the tribunal and obtain justice.",
+      "sourceScan": 32,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king might lie exhausted on the Amsathoolika couch in the embraces of beautiful women, enchanted as though this were the bliss won through penance. But the Maharani did not sink completely into that world of pleasure. Because she had the habit of waking from it now and then and watching what was happening around the government, she was capable of recognising the dangers sprouting around them. So she left the king fallen under the intoxication of liquor and women and frequently held secret consultations with the palace chiefs—choosing times when their own intoxication had cleared!",
+      "sourceScan": 33,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She could foresee that the anger of the people, smouldering and rising, and the disease of hunger burning like fire in their bellies might one day bring down the princely government and its ruling class. If Kollaipuram escaped its bonded-slave condition and passed into the hands of the people, even the Empire above them would no longer have the strength to protect them. Why, the Empire itself might cease to exist. Her thoughts took wing over how this could be managed.",
+      "sourceScan": 33,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The result was that a “people’s army,” subordinate to the palace chiefs, was prepared! The task of this people’s army was to “infiltrate” the genuine people’s force and create disorder—to cripple its important members in every possible",
+      "sourceScan": 33,
+      "printedPage": 28,
+      "joinToNext": "space"
+     },
+     {
+      "text": "way, even to end their lives! The assignment given to some of the chiefs was one of the finest of the Maharani’s stratagems. If tomorrow the country slipped from their hands, they must still possess, in many places throughout the state, cattle, houses, mansions, gardens and groves, and ponds for bathing as their own property. Whoever owned such things was to be intimidated into submission; whatever land and property they had was to be seized at extremely low prices in the names of the king and Maharani. Accepting the queen’s command, the revelry-loving chiefs set out at once to perform that duty. They seized without count.",
+      "sourceScan": 34,
+      "printedPage": 29,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Those affected carried their appeals to the newly established tribunal. However much the British might be imperial rulers, there was a reputation that most of them, even when courts imposed punishments according to law, acted according to justice and fairness. How far that reputation was true was another matter! But to the chief judge and assistant judges who had taken office in Kollaipuram, all the practices of the state were strange. One day, a citizen brought a case before the tribunal of an assistant judge.",
+      "sourceScan": 34,
+      "printedPage": 29,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He complained that he had been pressured to sell his valuable land, garden, and swimming pool cheaply in the Maharani’s name,",
+      "sourceScan": 34,
+      "printedPage": 29,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and that because he had refused to sell, he had received a notice from one of the state’s senior officials saying that they would occupy them. He asked the tribunal to cancel that plan of occupation and give judgment in his favour. The Maharani’s “people’s army” tried to prevent the man bringing the case from even entering the tribunal gate, causing a major clash. The genuine “people’s liberation fighters,” who stood organised against both the state and imperial domination, confronted and overcame the Maharani’s people’s army and made a way for the plaintiff to enter the tribunal.",
+      "sourceScan": 35,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The assistant judge began hearing the case. Those arguing for the Maharani and king declared categorically: “This entire case is false! It is true that, as the plaintiff says, the government sent notice that it would occupy the property. But there is no swimming pool there, no cultivated land—everything is merely grazing ground!,” Alarmed, the plaintiff stepped before the judge and showed photographs of the swimming pool, the cultivated land, and the flourishing garden. “Your Honour, if you would kindly come and see the place in person, you can know the truth,” he pleaded emotionally, even shedding a tear. The assistant judge announced, “At the petitioner’s request, those places will be inspected in person.” No sooner had he given that ruling than—",
+      "sourceScan": 35,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "stones rained down in a barrage upon the judge’s desk. Four or five employees suffered bleeding injuries. The judge immediately sprang from his seat in agitation and angrily asked those arguing for the state, “What kind of barbarism is all this?” They knew that the stones had been thrown by the palace’s hired force. Even so, they composed themselves and told the assistant judge:",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Our state has a culture all its own! There was once something called the Stone Age. This is a cultural campaign demonstrating that it still exists today!”",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The assistant judge’s face reddened at that evasive reply. “This cannot be left alone! Come. Let us go to the chief judge and complain about this. Give him your explanation there!” he said, and set out with them to meet the chief judge.",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the corridor leading to the chief judge’s tribunal room stood ten or fifteen men. As the assistant judge and the plaintiff approached them, the men stripped off their clothes and displayed themselves, shouting, “Hey! Withdraw the case!” and leaping about. Shocked, the assistant judge turned to those arguing for the state and rebuked them: “What is this obscenity? What is this indecency?”",
+      "sourceScan": 36,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But they replied calmly:",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sir, Assistant Judge! Stones fell upon your desk—that was a culture referring to the age when stone appeared in human history! What you are seeing now is a live picture of the culture from the age ‘when stone appeared before earth appeared’!” Not only the white judge’s face but his entire body reddened with fury.",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At that moment the plaintiff, who had filed the case over his lands, interrupted and told the judge:",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Your Honour, Assistant Judge! You have seen the culture of the age when stone appeared—and now the culture of the age when ‘stone appeared before earth appeared’! In the next corridor you are going to see yet another culture: ‘the ancient culture that appeared before the age when stone appeared before earth appeared.’”",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The assistant judge flinched. “What on earth will that culture be like?” he asked in alarm.",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The women’s regiment of the palace army is waiting there!” came the reply. That was enough. The assistant judge abandoned his journey to complain to the chief judge and, without looking back, ran toward his own tribunal room.",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Not only the justice due to those who filed cases, but also the revolution waiting for its moment to erupt against Kollaipuram’s “culture,” remained waiting!",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "◉ ◉ ◉ ◉ ◉",
+      "sourceScan": 37,
+      "printedPage": 32,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37
+ ]
+}

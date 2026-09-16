@@ -1,0 +1,125 @@
+{
+ "workId": "mooli-mookkukkaran",
+ "slug": "mooli-mookkukkaran",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/mooli-mookkukkaran",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "மூளி மூக்குக்காரன்",
+  "en": "The Mutilated-Nose Man"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "மூளி மூக்குக்காரன்",
+    "sourceScan": 12,
+    "printedPage": 11
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மூக்கு மூளியாக இருந்த ஒருவன் தன்னை எல்லோரும் கேலி செய்கிறார்கள் என்பதால் ஒருநாள் கடைவீதியில் நின்று கொண்டு தன்னுடைய மூளிமூக்கை அறுத்துக் கொண்டான் அறுத்துக் கொண்டவன் “ஆகா! கடவுள் தெரிகிறார்! கடவுள் தெரிகிறார்!” என்று சத்தம் போட்டான். பக்கத்தில் இருந்தவர்கள், “கடவுள் தெரிகிறாரா? எப்படி” என்று கேட்க “நீங்களும் மூக்கை அறுத்துக் கொண்டால் உங்களுக்கும் கடவுள் தெரிவார்” என்று அவன் சொன்னான். அதைக் கேட்ட ஒருவன் தானும் மூக்கை அறுத்துக் கொண்டான். ஆனால் அவனுக்குக் கடவுள் தெரியவில்லை. அவனுக்கோ தான் மூக்கை அறுத்துக் கொண்டு போய் நின்றால் ஊரில்",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கேலி பேசுவார்களே என்று மற்றவர்களும் மூக்கை அறுத்துக் கொள்ள வேண்டும் என்பதற்காக “ஆமாம்! கடவுள் தெரிகிறார்!” என்று கூறினான். அவனை நம்பி எல்லோரும் மூக்கை அறுத்துக் கொண்டார்கள். அந்த ஊரில் இருந்த எல்லோருமே மூக்கில்லாத மூளிகளாக ஆகிவிட்டார்கள் என்பது பழைய கதை.",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அது போல—யாரோ ஒரு மந்திரவாதி எம். ஜி ஆருக்கு ஒரு கண்டம் இருப்பதாகவும், அதனால் அவர் கறுப்புச் சட்டை போட்டவேண்டும் என்று சொன்னதாகவும். தான் மாத்திரம் கறுப்புச் சட்டை போட்டால் அது கேலிக்குரியதாக ஆகிவிடும் என்பதற்காக தன் கட்சியிலே உள்ள எல்லோரும் கறுப்புச் சட்டை போட்டவேண்டும் என்று எம். ஜி. ஆர். கட்டளையிட்டு விட்டார் என்பது ஒரு நம்பகமான தகவல்.",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதன்படி மந்திரவாதியின் சொல்லைக் கேட்டு கறுப்புச் சட்டை போட்டு இரண்டு மண்டலம் அதாவது தொண்ணூற்று ஆறு நாள் கறுப்புச் சட்டை போட்டு கழற்றி விட்டார். அவருடைய தொண்டர்களும் கறுப்புச் சட்டைபோட்டு கழற்றி விட்டார்கள் இவைகளைத் தமிழர்களுக்காக அவர்கள் காட்டிய ஆர்வம் அக்கறை அவ்வளவு தான்!",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Mutilated-Nose Man",
+    "sourceScan": 12,
+    "printedPage": 11
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A man whose nose was deformed was mocked by everyone. One day, standing in the market street, he cut off his own deformed nose. The man who had cut it off shouted, “Ah! I can see God! I can see God!” Those nearby asked, “Can you see God? How?” He replied, “If you too cut off your nose, you too will see God.” Hearing this, one man cut off his own nose. But he did not see God. He thought that if he went and stood there with his nose cut off, people in the town would—",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—mock him. So, wanting others to cut off their noses too, he said, “Yes! I can see God!” Believing him, everyone cut off their noses. The old story says that everyone in that town became noseless mutilated people.",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Likewise—someone said that a magician had told M.G.R. that a danger hung over him and that therefore he should wear a black shirt. Because wearing a black shirt by himself alone would become an object of ridicule, M.G.R. ordered everyone in his party to wear a black shirt. This is reported as reliable information.",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Accordingly, listening to the magician, he wore a black shirt for two mandalams—that is, ninety-six days—and then took it off. His followers too wore black shirts and then took them off. That was the full extent of the interest and concern they showed for Tamils!",
+      "sourceScan": 13,
+      "printedPage": 12,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  12,
+  13
+ ]
+}

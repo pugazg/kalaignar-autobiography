@@ -1,0 +1,120 @@
+{
+ "workId": "ice-katti",
+ "slug": "ice-katti",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/ice-katti",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஐஸ் கட்டி",
+  "en": "Ice Katti"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஐஸ் கட்டி",
+    "sourceScan": 10,
+    "printedPage": 8
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு அரசன் தன் அமைச்சர்களை அழைத்துக் கேட்டானாம். என்னப்பா! இவ்வளவு திட்டங்களைத் தீட்டி மக்களுக்காகப் பாடுபடுகிறோம். இது மக்களுக்கு போய்ச் சேரவில்லை என்கிறார்களே, என்ன காரணம்?” என்று கேட்டானாம். ஒரு அமைச்சர் பதில் சொன்னார், வாயால் சொல்லவில்லை செய்கையால் சொன்னார்:",
+      "sourceScan": 10,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு ஐஸ்கட்டியை கொண்டு வரச் சொன்னார். அதனை அரசரின் கையிலே தரச் சொன்னார். அரசன் ஐஸ்கட்டியை வாங்கி வைத்துக் கொண்டு “என்ன செய்வது?” என்று கேட்டான். “ஒவ்வொரு அமைச்சர் கையிலும் வரிசையாகக் கொடுங்கள்” என்றார். அவ்வாறே வரிசையாக ஒவ்வொரு அமைச்சர் கையிலும் தரப்பட்டது. பிறகு பெரிய அதிகாரிகள், அடுத்து நடுநிலை அதிகாரிகள்,",
+      "sourceScan": 10,
+      "printedPage": 8,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அதற்கடுத்தபடியாக சின்ன அதிகாரிகள். இப்படியாகப் போய் கடைசியாக இருக்கின்ற கடைநிலை ஊழியர் வரை அந்த ஐஸ் கட்டி போயிற்று. அரசன் கையிலே கொடுக்கப்பட்ட ஐஸ்கட்டி இப்படிப் பல பேர் கைமாறி கடைசியாக யார் பயன் பெற வேண்டுமோ அவன் கைக்குப் போய்ச் சேரும்போது ஒரே ஒரு சொட்டு தண்ணீர் தான் மிஞ்சியது. இப்படித்தான் திட்டத்தின் பயனைப் பெறுபவன் கடைசியில் நிற்கிறான். அவனுக்குச் சேர வேண்டியது சேருவதில்லை. (பலத்த கைதட்டல்) “அரசே! இப்படித்தான் நம்முடைய திட்டங்கள் எல்லாம் போய்ச் சேருகின்றன” என்று அமைச்சர் சொன்னார். அப்படிப்பட்ட ஐஸ்கட்டிகளாக நம்முடைய திட்டங்களை யாரும் ஆக்கி விடக்கூடாது. அரசன் கையிலிருந்து நேரடியாக மக்களுக்கு அது கிடைத்தாக வேண்டும். அரசு அறிவித்தவுடனே தூங்காமல் பார்த்துக் கொண்டிருப்பேன் என்பதையும் உங்களுக்கு நான் உறுதியாகத் தெரிவித்துக் கொள்கிறேன்.",
+      "sourceScan": 11,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 11,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Ice Katti",
+    "sourceScan": 10,
+    "printedPage": 8
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A king, it is said, called his ministers and asked them. My friends! We draw up so many schemes and toil for the people. Yet they say these schemes are not reaching the people. What is the reason?” he is said to have asked. One minister gave an answer—not with words, but through an action:",
+      "sourceScan": 10,
+      "printedPage": 8,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He asked for a block of ice to be brought. He asked that it be placed in the king’s hand. The king took the block of ice and held it, then asked, “What am I to do?” “Pass it, in order, through the hands of each minister,” he said. Accordingly, it was passed from one minister’s hand to another in sequence. Then came the senior officials, next the middle-level officials,",
+      "sourceScan": 10,
+      "printedPage": 8,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and after them the junior officials. In this way, the block of ice passed along until it reached the lowest-ranking employee at the very end. The block of ice that had been placed in the king’s hand changed hands through so many people that, by the time it finally reached the hand of the person who was meant to benefit from it, only a single drop of water remained. That is how the beneficiary of a scheme stands at the very end. What ought to reach him does not reach him. (Loud applause) “Your Majesty! This is how all our schemes reach the people,” said the minister. No one should turn our schemes into blocks of ice like that. They must reach the people directly from the king’s hand. I firmly assure you that, as soon as the government announces something, I will stay awake and keep watch.",
+      "sourceScan": 11,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 11,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  10,
+  11
+ ]
+}
