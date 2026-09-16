@@ -7,12 +7,20 @@
  * page records and English layer with its OWN parser (it does not import or call the production
  * importer), builds a flat ordered (scan, kind, text) sequence, and proves the merged payload's own
  * flat segment sequence equals it — which independently proves, for all 116 works:
- *   exact title · exact Tamil block/segment ordering · exact English ordering · scan attribution ·
- *   printed-page attribution where source-established · no dropped / duplicated / reordered literary text ·
- *   no audit/progress/review apparatus, source-layout notes, or blockquote gate lines in the reading
- *   stream · no later-witness text · no unsupported normalization (whitespace-collapse only).
- * Uses the frozen source archive only. Source/subtree pins + control set-equality are proven by the P1
- * validator; this validator owns LITERARY fidelity.
+ *   exact title · exact Tamil block/segment ordering · exact English ordering · exact Tamil scan AND
+ *   printed-page attribution (null stays null; never inferred from a neighbour) · exact English scan-anchor
+ *   attribution (the English source marker's own scan, which need not be a Tamil reading page — e.g.
+ *   madurai-selavu scan 25) · no dropped / duplicated / reordered literary text · no audit/progress/review
+ *   apparatus, source-layout notes, or blockquote gate lines in the reading stream · no later-witness text.
+ *
+ * TRANSFORMATION CLAIM (precise — NOT raw-byte identity). The only source→reader transformations proven
+ * acceptable here are STRUCTURAL: remove YAML frontmatter, HTML comments, Markdown blockquote/apparatus
+ * and later-page running headers, and fold intra-paragraph whitespace RUNS to a single space (a Markdown
+ * layout-wrapping rule). NO Tamil/English spelling, punctuation, quote, dash or word character is altered:
+ * this validator proves that independently by also comparing the whitespace-stripped raw source line to the
+ * whitespace-stripped payload text (they must be identical), so the fold can only touch whitespace.
+ * Uses the frozen source archive only, with a parser structurally independent of the production importer.
+ * Source/subtree pins + control set-equality are proven by the P1 validator; this validator owns LITERARY fidelity.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -25,6 +33,8 @@ let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
 const nfc = (s: string) => s.normalize("NFC");
 const collapse = (s: string) => s.replace(/<!--[\s\S]*?-->/g, "").replace(/\s+/g, " ").trim();
+const rawLit = (s: string) => s.replace(/<!--[\s\S]*?-->/g, "").trim(); // structure removed, whitespace preserved
+const stripWs = (s: string) => s.replace(/\s+/g, ""); // for the "whitespace-only fold" proof
 
 const manifest = JSON.parse(fs.readFileSync(path.join(root, "data/internal/wave6/b7-short-stories.json"), "utf8"));
 const slugs: string[] = manifest.groups.flatMap((g: { slugs: { slug: string }[] }) => g.slugs.map((s) => s.slug));
@@ -37,7 +47,7 @@ const APPARATUS_RE = /Historical-glyph gate|SOURCE-VISUAL CLOSED|Source-layout n
 function srcTamil(slug: string) {
   const dir = path.join(SRC, "stories", slug, "pages");
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md")).sort();
-  const out: { scan: number; kind: string; text: string; printedPage: number | null }[] = [];
+  const out: { scan: number; kind: string; text: string; raw: string; printedPage: number | null }[] = [];
   const scanOf: number[] = [];
   let firstScan = Infinity;
   for (const f of files) {
@@ -56,9 +66,9 @@ function srcTamil(slug: string) {
       if (!line || line.startsWith("<!--") || /^>\s?/.test(line)) continue;
       // Only the opening (lowest-scan) page contributes the title heading; later-page H1s are source
       // running headers ("… — தொடர்ச்சி" / continued), not reading content — drop them.
-      if (/^#\s+/.test(line)) { if (scan === firstScan) out.push({ scan, kind: "h", text: line.replace(/^#\s+/, "").trim(), printedPage }); continue; }
+      if (/^#\s+/.test(line)) { if (scan === firstScan) out.push({ scan, kind: "h", text: line.replace(/^#\s+/, "").trim(), raw: rawLit(line.replace(/^#\s+/, "")), printedPage }); continue; }
       if (/^#{2,}\s+/.test(line)) continue;
-      const t = collapse(line); if (t) out.push({ scan, kind: "p", text: t, printedPage });
+      const t = collapse(line); if (t) out.push({ scan, kind: "p", text: t, raw: rawLit(line), printedPage });
     }
   }
   return { flat: out, scans: scanOf.sort((a, b) => a - b) };
@@ -75,25 +85,25 @@ function srcEnglish(slug: string) {
     const sm = inner.match(/\bscan\b\s*:?\s*(\d+)/i); if (!sm) continue;
     marks.push({ scan: Number(sm[1]), idx: m.index!, end: m.index! + m[0].length });
   }
-  const out: { scan: number; kind: string; text: string }[] = [];
-  if (title) out.push({ scan: marks[0]?.scan ?? -1, kind: "h", text: title });
+  const out: { scan: number; kind: string; text: string; raw: string }[] = [];
+  if (title) out.push({ scan: marks[0]?.scan ?? -1, kind: "h", text: title, raw: rawLit(title) });
   for (let i = 0; i < marks.length; i++) {
     const seg = body.slice(marks[i].end, i + 1 < marks.length ? marks[i + 1].idx : body.length);
     for (const chunk of seg.split(/\n{2,}/)) {
       const line = chunk.trim();
       if (!line || line.startsWith("<!--") || /^>\s?/.test(line)) continue;
       if (/^#{1,}\s+/.test(line)) continue;
-      const t = collapse(line); if (t) out.push({ scan: marks[i].scan, kind: "p", text: t });
+      const t = collapse(line); if (t) out.push({ scan: marks[i].scan, kind: "p", text: t, raw: rawLit(line) });
     }
   }
   return { flat: out, title };
 }
 function payloadFlat(slug: string, stream: "tamil" | "english") {
   const j = JSON.parse(fs.readFileSync(path.join(root, "public/data/stories", slug, "story.json"), "utf8"));
-  const out: { scan: number; kind: string; text: string }[] = [];
+  const out: { scan: number; kind: string; text: string; printedPage: number | null }[] = [];
   for (const b of j[stream].blocks) {
-    if (b.kind === "heading") out.push({ scan: b.sourceScan, kind: "h", text: b.text });
-    else for (const s of b.segments) out.push({ scan: s.sourceScan, kind: "p", text: s.text });
+    if (b.kind === "heading") out.push({ scan: b.sourceScan, kind: "h", text: b.text, printedPage: b.printedPage ?? null });
+    else for (const s of b.segments) out.push({ scan: s.sourceScan, kind: "p", text: s.text, printedPage: s.printedPage ?? null });
   }
   return { flat: out, title: j.title, scansField: j.sourceScans as number[] };
 }
@@ -110,14 +120,20 @@ for (const slug of slugs) {
   const nTa = Math.min(st.flat.length, pt.flat.length);
   for (let i = 0; i < nTa; i++) {
     const a = st.flat[i], b = pt.flat[i];
-    if (a.text !== b.text || a.scan !== b.scan || a.kind !== b.kind) { fail.push(`${slug}: Tamil unit ${i} differs from independent source (scan ${a.scan}/${b.scan})`); checks++; break; }
+    // text (collapsed) + kind + SCAN + PRINTED-PAGE attribution, all exact; null printed page stays null.
+    if (a.text !== b.text || a.scan !== b.scan || a.kind !== b.kind) { fail.push(`${slug}: Tamil unit ${i} text/scan/kind differs from independent source (scan ${a.scan}/${b.scan})`); checks++; break; }
+    if ((a.printedPage ?? null) !== (b.printedPage ?? null)) { fail.push(`${slug}: Tamil unit ${i} printed-page differs (src ${a.printedPage} vs payload ${b.printedPage})`); checks++; break; }
+    // whitespace-only-fold proof: no non-whitespace character altered.
+    if (stripWs(a.raw) !== stripWs(b.text)) { fail.push(`${slug}: Tamil unit ${i} differs by a NON-whitespace character (not a layout fold)`); checks++; break; }
   }
-  // Independent literary equality — English.
+  // Independent literary equality — English (text + kind + EXACT source-marker scan anchor).
   ok(se.flat.length === pe.flat.length, `${slug}: English block/segment count == independent source (${se.flat.length} vs ${pe.flat.length})`);
   const nEn = Math.min(se.flat.length, pe.flat.length);
   for (let i = 0; i < nEn; i++) {
     const a = se.flat[i], b = pe.flat[i];
-    if (a.text !== b.text || a.kind !== b.kind) { fail.push(`${slug}: English unit ${i} differs from independent source`); checks++; break; }
+    if (a.text !== b.text || a.kind !== b.kind) { fail.push(`${slug}: English unit ${i} text/kind differs from independent source`); checks++; break; }
+    if (a.scan !== b.scan) { fail.push(`${slug}: English unit ${i} scan-anchor differs (src marker ${a.scan} vs payload ${b.scan})`); checks++; break; }
+    if (stripWs(a.raw) !== stripWs(b.text)) { fail.push(`${slug}: English unit ${i} differs by a NON-whitespace character`); checks++; break; }
   }
   // Apparatus absence in the reading stream.
   for (const b of [...pt.flat, ...pe.flat]) ok(!APPARATUS_RE.test(b.text) && !/^\s*>/.test(b.text), `${slug}: no archival apparatus in a reading segment`);
@@ -139,4 +155,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b7-p2-fidelity — ${checks} checks, 0 failed`);
-console.log(`  116 works independently re-verified byte-for-byte against the frozen source · 0 apparatus leaks · titles/ordering/scan-attribution/endings PASS`);
+console.log(`  116 works re-verified against the frozen source by an independent parser · text identical up to whitespace-run folding (no non-ws char altered) · exact scan + printed-page attribution · exact English source-marker anchors · 0 apparatus leaks · titles/ordering/endings PASS`);

@@ -335,6 +335,47 @@ export type StoryProvenance = {
   visualFidelity?: StoryVisualFidelity;
 };
 
+/**
+ * Wave-6 Batch-7 provenance — an EXPLICIT, source-driven variant, discriminated by `batch: 7`. Batch-7
+ * short stories come from heterogeneous sources (printed anthologies, periodicals, single-story
+ * containers), so several facts the 1977 anthology / kizhavan-kanavu model treats as required are here
+ * legitimately UNKNOWN. Those fields are therefore nullable/optional and are RENDERED ONLY WHEN PRESENT —
+ * a null edition/publisher/scan-SHA means "the source does not establish it", never 0 or "undefined". This
+ * shape is intentionally NOT forced into the legacy `StoryProvenance` fields (scanFileSizeBytes,
+ * scanTotalPages, verified/blocked, conclusionTa, transitions, individualAdjudication, archiveStatus …).
+ */
+export type StoryProvenanceB7 = {
+  workId: string;
+  sourceRepo: string;
+  sourcePath: string;
+  sourceCommit: string;
+  sourceTree: string;
+  batch: 7;
+  validationGroup: string;
+  source: {
+    printedTitleTa: string;
+    collectionTa: string | null;
+    editionStatementTa: string | null;
+    publisherTa: string | null;
+    scanFilename: string | null;
+    scanSha256: string | null;
+    sourcePdfCommitted: boolean;
+    controllingSourceNote: string;
+  };
+  storyScope: {
+    storyScans: string;
+    storyScanCount: number;
+    printedPages: string | null;
+    verifiedPages: number;
+    complete: boolean;
+  };
+  tamilAssembly: { authority: string; derivedAssembly: string; note: string };
+  crossScanJoinPolicy: { policy: string; basis: string; appliedBoundaries: number };
+  english: { titleEn: string; scanAnchors: number; kind: string; kindBasis: string; reviewRecorded: string; paragraphingNote: string };
+  visualFidelity: { result: string };
+  hidden: { discoverable: boolean; sitemapExposed: boolean; publicCollectionExposed: boolean; note: string };
+};
+
 // Integrated story slugs (build/import authority; the public catalogue entry lives in data/library.ts and
 // is not part of this benchmark). This registry drives `generateStaticParams` for both story routes, and
 // is the single list a future sitemap integration reads — the Phase-A lesson: a route family whose slugs
