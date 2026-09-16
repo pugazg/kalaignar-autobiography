@@ -1,0 +1,53 @@
+{
+ "workId": "sorgaththirku-senruvantha-azhagi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/sorgaththirku-senruvantha-azhagi",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "9c0dbd138ea960e17a8211a9e6eec2c61794d239",
+ "batch": 7,
+ "validationGroup": "1987",
+ "source": {
+  "printedTitleTa": "சொர்க்கத்திற்குச் சென்றுவந்த அழகி!",
+  "collectionTa": null,
+  "editionStatementTa": null,
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065566_கலைஞர்_சொன்ன_குட்டிக்_கதைகள்_1987.pdf",
+  "scanSha256": null,
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "13–15",
+  "storyScanCount": 3,
+  "printedPages": "12–14",
+  "verifiedPages": 3,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/sorgaththirku-senruvantha-azhagi/pages/",
+  "derivedAssembly": "stories/sorgaththirku-senruvantha-azhagi/sections/sorgaththirku-senruvantha-azhagi.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 1
+ },
+ "english": {
+  "titleEn": "The Beauty Who Went to Heaven and Returned!",
+  "scanAnchors": 3,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "not recorded"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

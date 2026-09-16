@@ -1,0 +1,53 @@
+{
+ "workId": "nanbana",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nanbana",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "2e7c418d60e6614798bc902e69b685890b2cab6b",
+ "batch": 7,
+ "validationGroup": "1997",
+ "source": {
+  "printedTitleTa": "நண்பனா?",
+  "collectionTa": "திராவிட இயக்க எழுத்தாளர் சிறுகதைகள்",
+  "editionStatementTa": "முதல் பதிப்பு — டிசம்பர் 1997",
+  "publisherTa": "பூர்ணிமா பதிப்பகம், 375/8, ஆற்காடு சாலை, கோடம்பாக்கம், சென்னை 600 024",
+  "scanFilename": "TVA_BOK_0064315_திராவிட_இயக்க_எழுத்தாளர்_சிறுகதைகள்.pdf",
+  "scanSha256": "ead34f2d1e983568b79ef9d6185006844ee3e5d6443695633124975ecb77227c",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "104–106",
+  "storyScanCount": 3,
+  "printedPages": "94–96",
+  "verifiedPages": 3,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/nanbana/pages/",
+  "derivedAssembly": "stories/nanbana/sections/nanbana.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 2
+ },
+ "english": {
+  "titleEn": "Nanbana?",
+  "scanAnchors": 3,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "PASS"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

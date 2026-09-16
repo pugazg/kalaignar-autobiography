@@ -1,0 +1,300 @@
+{
+ "workId": "thamizan-endru-sollada",
+ "slug": "thamizan-endru-sollada",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thamizan-endru-sollada",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தமிழன் என்று சொல்லடா!",
+  "en": "Thamizan Endru Sollada!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தமிழன் என்று சொல்லடா!",
+    "sourceScan": 22,
+    "printedPage": 20
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழ் இயக்கத்தின்பால் தன்னுடைய உள்ளத்தை பறிகொடுத்தவர் சுகி சுப்பிரமணியம் அவர்கள். தமிழனுடைய சுய மரியாதையை என்றென்றும் விட மறுத்தவர். அத்தகைய உழைப்பாளி. திருச்சி வானொலி நிலையத்திலும், தொடர்ந்து சென்னை வானொலி நிலையத்திலும், நடிகராக, நாடக ஆசிரியராக, திறமைமிக்க எழுத்தாளராக, பல நடிகர்களை, எழுத்தாளர்களை உருவாக்கக் கூடியவராக வாழ்ந்தவர் அவர்.",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவருடைய குடும்பமே எழுத்தாளர் குடும்பம். அவரது துணைவியார், அவருடைய மகள், மகன்கள், அவருடைய மருமகள் அத்தனை பேரும் எழுத்தாளர்களாக இருக்கின்றார்கள்.",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் குடும்பத்துத் தொகுப்பு நூலில் முதல் கட்டுரைக்கு கொடுக்கப்பட்டிருக்கிற தலைப்பே 'தமிழன் என்று சொல்லடா' (தமிழன் என்று சொல்லடா, தலை நிமிர்ந்து நில்லடா! என்று சொல்லிக் கொண்டு தான் இருக்கிறோம். நிற்கிறானோ இல்லையோ) தலை நிமிர்ந்து நில்லடா என்று சொல்லாமல், அந்தக் கட்டுரைக்குத் தலைப்பு",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தமிழன் என்று சொல்லடா என்பதோடு முடித்திருக்கிறார் போலும்.",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதில் ஒரு சிறுகதை. வெள்ளையன் காலம். அந்த வெள்ளையன் காலத்தில் ஸ்டோன் என்கிற ஒரு நீதிபதி. மற்றும் ஒரு குமாஸ்தா. அவர் பெயர் குமரகுருபர். வெள்ளை நீதிபதி தமிழ்நாட்டிலே தன்னுடைய பணியை ஆற்ற வேண்டிய காரணத்தால் தமிழ்க் கற்க விரும்புகிறார். இது அவருக்கு அவசியமேர்ப்பட்டது அப்போது! எனவே தமிழ்க் கற்றார். குமாஸ்தாவாக இருந்த குமரகுருபரை தனக்கு தமிழ் ஆசிரியராக ஏற்றுக் கொண்டார். தமிழ்ப் பாடம் சொல்லிக் கொடுக்க நீதிபதியின் வீட்டிற்கு குமாஸ்தா செல்லும் போதெல்லாம் நீதிபதி எழுந்து நின்று வரவேற்று உபசரித்து சமமாக நாற்காலியைப் போட்டு அவர் எந்த அளவிற்கு பணிவோடு பாடம் கற்க வேண்டுமோ அப்படி பாடம் கற்கின்ற மாணவராக அந்த குமாஸ்தாவிடம் நீதிபதி ஸ்டோன் நடந்து கொண்டார்.",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீதிபதி ஒரு குமாஸ்தாவிடத்திலே இவ்வளவு பணிவாக நடக்கிறார் என்றால், தமிழுக்குக் கிடைத்த பெருமையல்லவா என்று அவர் மனம் களித்தார். உவகை கொண்டார். ஒருநாள் இந்தப் பாடம் சொல்லித் தரும் காட்சியை ஒரு பெட்டி கலெக்டர் பார்த்தார். அவர் தமிழர். பெயர் சாம்பசிவம்.",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவருக்கு ஒரே எரிச்சல். நீதிபதி இவ்வளவு பணிவாக பாடம் கேட்கிறார். சமமாக இந்த குமாஸ்தாவும் இந்த நாற்காலியில் உட்கார்ந்து கொண்டு பாடம் சொல்லிக் கொடுக்கிறார் என்ற பொறாமை அந்ததமிழருக்கு ஏற்பட்டது. வெள்ளைக்காரன் தமிழுக்குப் பணிந்தான். தமிழனுக்குப்",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பொறாமை. ஐயோ, தமிழனுக்குப் பணிந்து உட்கார்ந்திருக்கிறானே, என்கிற பொறாமை. எனவே அந்த பெட்டி கலெக்டர் சாம்பசிவம் தனியாக நீதிபதியை சந்தித்து, “இது நல்லதல்ல. அவரோ சாதாரண எளிய குமாஸ்தா. நீங்களோ பெருமைக்குரிய மாண்புமிகு நீதிபதி, அவர் முன்னால் நீங்கள் இவ்வளவு பணிவோடு பாடம் கற்பது தகாது. முறையல்ல” என்றார்.",
+      "sourceScan": 24,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதை நீதிபதி கேட்டுக் கொண்டார். மறுநாள் பாடம் சொல்ல குமரகுருபர் வீட்டிற்கு வருகிறார். நீதிபதி நாற்காலியில் அமர்ந்து கொண்டு குமரகுருபரை நிற்கச் சொல்லி பாடம் கற்பிக்கச் சொல்லுகிறார். குமரகுருபர், “நாற்காலி எங்கே?” என்று கேட்கிறார். “நாற்காலி கிடையாது. நீ சாதாரண குமாஸ்தா. நான் நீதிபதி. நான் உட்கார்ந்து கொண்டு பாடம் கேட்கிறேன். நீ நின்று கொண்டு பாடம் சொல்” என்றார். உடனே குமரகுருபர் சொல்கிறார் “நான் குமாஸ்தாவாக இருக்கலாம். ஆனால் தமிழ் கற்ற ஆசிரியன், தமிழன், நான் உட்காராமல் பாடம் சொல்லித் தர முடியாது” என்று வெளியேறி விடுகிறார்.",
+      "sourceScan": 24,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வெளியேறிய பிறகு நீதிபதியின் மனைவி என்ன நடந்தது என்று கேட்கிறார். இவர் சொல்லுகிறார். “இப்படி பெட்டி கலெக்டர் சொன்னார். அதைக் கேட்டு நான் நாற்காலி தர மறுத்தேன். எனவே தமிழ் ஆசிரியர் - குமாஸ்தா கோபித்துக் கொண்டு போய் விட்டார்” என்று சொன்னார். உடனே அவரது துணைவியார், “இது குமாஸ்தாவிற்குக் கிடைத்த பெருமையில்லை. தனக்கு என்ன நேர்ந்தாலும் நேரட்டும் என்கிற துணிவோடு அவர் தன்னுடைய தாய் மொழி, தமிழுக்கு பெருமை அளிக்கிற",
+      "sourceScan": 24,
+      "printedPage": 22,
+      "joinToNext": "space"
+     },
+     {
+      "text": "காரணத்தால், நீங்கள் அவருக்கு பணிந்தே தீர வேண்டும். இதுதான் நம்முடைய பண்பாடு” என்று அந்த அம்மையார் சொல்லுகிறார்.",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே நீதிபதி காரில் ஏறி குமாஸ்தாவின் வீட்டிற்குச் சென்று, அவரது காலில் விழுந்து “என்னை மன்னித்துக் கொள்ளுங்கள்” என்று மன்னிப்புக் கேட்கிறார். அப்போது தமிழன் என்று சொல்லடா.. தலைநிமிர்ந்து நில்லடா... என்று அந்த குமாஸ்தா தனக்குள் பெருமைப்பட்டுக் கொண்டதாக சுகி சுப்பிரமணியம் அந்தக் கதையை முடிக்கிறார்.",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Thamizan Endru Sollada!",
+    "sourceScan": 22,
+    "printedPage": 20
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sugi Subramaniyam was one who gave his heart to the Tamil movement. He was one who forever refused to give up the self-respect of the Tamil. Such a tireless worker! At the Tiruchirappalli radio station and later at the Chennai radio station, he lived and worked as an actor, a playwright, a gifted writer, and as one capable of developing many actors and writers.",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "His entire family is a family of writers. His wife, his daughter, his sons, and his daughter-in-law—all of them are writers.",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In that family’s collected volume, the very title given to the first article is ‘Say You Are a Tamil.’ (We keep saying, “Say you are a Tamil; stand with your head held high!” Whether he actually stands that way or not.) Without adding “stand with your head held high,” the title given to that article",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "space"
+     },
+     {
+      "text": "seems to have ended simply with ‘Say You Are a Tamil.’",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is a short story in it. The time of the white man. In that period there was a judge named Stone, and there was a clerk. His name was Kumaragurupar. Because the white judge had to carry out his duties in Tamil Nadu, he wished to learn Tamil. At that time it became necessary for him. So he learned Tamil. He accepted Kumaragurupar, who was a clerk, as his Tamil teacher. Whenever the clerk went to the judge’s house to teach Tamil, the judge would stand up, welcome him, attend to him, place a chair for him as an equal, and behave toward that clerk as a student learning with all the humility that a student ought to show.",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kumaragurupar’s heart rejoiced: if a judge behaved with such humility toward a clerk, was that not an honour received by Tamil? He was delighted. One day, a petti collector saw this scene of the lesson being taught. He was a Tamil. His name was Sambasivam.",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He was thoroughly irritated. The judge was listening to the lesson with such humility, while this clerk too sat as an equal in a chair and taught him. That Tamil man became jealous. The white man had bowed to Tamil. For the Tamil man,",
+      "sourceScan": 23,
+      "printedPage": 21,
+      "joinToNext": "space"
+     },
+     {
+      "text": "jealousy. Alas, he is sitting there submitting to a Tamil—that was his jealousy. So that petti collector, Sambasivam, met the judge privately and said, “This is not good. He is merely an ordinary, humble clerk. You are an honourable and distinguished judge. It is not fitting for you to learn with such humility before him. It is improper.”",
+      "sourceScan": 24,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The judge listened to this. The next day Kumaragurupar comes to the house to teach. The judge sits in a chair and tells Kumaragurupar to stand and teach the lesson. Kumaragurupar asks, “Where is the chair?” “There is no chair. You are an ordinary clerk. I am a judge. I will sit and listen to the lesson. You stand and teach,” he said. At once Kumaragurupar says, “I may be a clerk. But I am a teacher who has learned Tamil, a Tamil man. I cannot teach without sitting down,” and walks out.",
+      "sourceScan": 24,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After he leaves, the judge’s wife asks what happened. He tells her. “This is what the petti collector said. Listening to him, I refused to give him a chair. So the Tamil teacher—the clerk—became angry and left,” he said. At once his wife says, “This is not an honour received by the clerk. With the courage to let whatever may happen to him happen, because he gives honour to his mother tongue, Tamil,",
+      "sourceScan": 24,
+      "printedPage": 22,
+      "joinToNext": "space"
+     },
+     {
+      "text": "you must bow to him. That is our culture.”",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Immediately the judge gets into his car, goes to the clerk’s house, falls at his feet, and asks forgiveness, saying, “Please forgive me.” Sugi Subramaniyam ends the story by saying that at that moment the clerk felt proud within himself: “Say you are a Tamil.. stand with your head held high...”",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  22,
+  23,
+  24,
+  25
+ ]
+}

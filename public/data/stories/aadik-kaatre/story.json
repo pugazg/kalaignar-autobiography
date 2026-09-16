@@ -1,0 +1,85 @@
+{
+ "workId": "aadik-kaatre",
+ "slug": "aadik-kaatre",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/aadik-kaatre",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஆடிக் காற்றே!",
+  "en": "O Wind of Aadi!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஆடிக் காற்றே!",
+    "sourceScan": 24,
+    "printedPage": 23
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆடிக் காற்றே மரங்களை ஏன் இப்படி ஆட்டி வைக்கிறாய்? மந்திரவாதி பேயாட்டி வைப்பது போல ஏன் ஆட்டி வைக்கிறாய்? மந்திரிமார்கள் மக்களை ஆட்டி வைப்பது போல ஏன் ஆட்டி வைக்கிறாய்? ஏன் வாட்டி வதைக்கிறாய்? என்ன குற்றம் செய்தன அந்த மரங்கள்? செழித்தது தவறா? சீர் தந்தது தவறா? மறுமலர்ச்சி பெற்றது தவறா? மணந்தரும் பூக்களை, கிளைக் கொண்டைகளில் சூட்டி நின்று, செளந்தர்ய மோகினிகளாய்க் காட்சி தந்தது தவறா? எது தவறு? ஏன் தண்டிக்கிறாய் ஆடிக் காற்றே! அந்தக் காரணத்தைச் சொல்! சொல்லமாட்டாய்! உன்னைப் போன்று அரசாங்கமும் எங்களுக்குக் காரணம் சொல்லவில்லை! ஆடிக்காற்றே! மண்ணை அள்ளிக் கண்ணில் போட்டால் பயந்துவிடுவோமா? கண்ணீர்ப் பிரயோகத்தைவிடக் கடுமையானதா உன் கைகள் வாரியிறைக்கும் மணல் துளிகள்?",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சர்வாதிகாரிகள் உன்னைப் போலத்தான் அகோர இரைச்சல் போட்டார்கள். அராஜக வெறியாட்டம் நடத்தினார்கள். அவர்களும் நீயும் ஒரே ரகம். அந்த உண்மையை ஊளைத் தொனியில் பாடிக்காட்டும் ஆடிக்காற்றே!... ஆடி ஓய்ந்ததும் அடங்கி விடுவாய். அடங்கிய பிறகு, உன்னைப் போல் ஆட்டம் போட்ட அரசாங்க நண்பனை - அந்தரங்கத் தோழனைச் சந்திக்கப் போவாய்! அய்யோ பாவம்! அப்போது அவன் உனக்கு முன்னே பொந்துக்குள் போயிருப்பான்.",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "O Wind of Aadi!",
+    "sourceScan": 24,
+    "printedPage": 23
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "O wind of Aadi, why do you shake the trees like this? Why do you make them dance as a sorcerer makes a spirit dance? Why do you make them dance as ministers make the people dance? Why do you torment and torture them? What crime did those trees commit? Was it wrong to flourish? Was it wrong to give abundance? Was it wrong to undergo a renaissance? Was it wrong to stand like enchantresses of beauty, wearing fragrant flowers in the coiffures of their branches? What was wrong? Why do you punish them, O wind of Aadi! Tell us the reason! You will not! Like you, the government too gave us no reason! O wind of Aadi! Do you think we will be frightened if you scoop up earth and fling it into our eyes? Are the grains of sand hurled by your hands harsher than the deployment of tear gas?",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Dictators too roared hideously like you. They staged frenzies of lawlessness. You and they are of the same breed. O wind of Aadi, howl out that truth!... Once Aadi is over, you will subside. After you subside, you will go to meet the government friend who, like you, put on such a show — your intimate companion! Alas, poor fellow! By then he will have gone into a hole before you.",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  24
+ ]
+}

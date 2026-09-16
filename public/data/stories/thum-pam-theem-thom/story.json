@@ -1,0 +1,310 @@
+{
+ "workId": "thum-pam-theem-thom",
+ "slug": "thum-pam-theem-thom",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thum-pam-theem-thom",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தும் பம் தீம் தோம்",
+  "en": "Thum Pam Theem Thom"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தும் பம் தீம் தோம்",
+    "sourceScan": 73,
+    "printedPage": 71
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகழகான கவிதைகளையெல்லாம் - புரட்சிக் கவிஞர் இயற்றிய கவிதைகளையெல்லாம் பாவலரேறு பெருஞ்சித்திரனார் இங்கே பாடிக் காட்டினார். அதன் வாயிலாக ஊட்டப்படுகின்ற உணர்ச்சிகளையெல்லாம் இங்கே அள்ளித் தெளித்தார்கள். அவைகளையெல்லாம் உண்டு மகிழ்ந்து இங்கிருந்து சென்றோம், என்று இல்லாமல் அவைகளையெல்லாம் நம்முடைய உதிரத்தோடு, உணர்வோடு ஒன்றிக் கலக்கச் செய்து, தமிழினம்",
+      "sourceScan": 73,
+      "printedPage": 71,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தலை தாழா இனம் என்ற நிலையை உருவாக்குவதற்கு பாடுபட்டாக வேண்டும்; பணியாற்றிட வேண்டும்.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தத் தமிழில் எத்தனையோ புலவர் பெருமக்கள் விளையாடியிருக்கிறார்கள். நான் ஏற்கனவே சொல்லியிருக்கிறேன். பல்வேறு நிகழ்ச்சிகளிலே எடுத்துக் காட்டியிருக்கிறேன். புலவர்களுக்குள்ளே ஏற்படுகின்ற மொழிச் சண்டை, மொழியினால் ஏற்படுகிற விவாதத்தால் தமிழுக்கு எவ்வளவோ நன்மைகள் கிடைத்திருக்கின்றன.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புகழேந்தியும், ஒட்டக் கூத்தனும் சண்டை போட்டுக் கொண்டதாக ஒரு கற்பனை. அதிலே புகழேந்தி - ஒட்டக் கூத்தன் இருவருக்கும் ஏற்பட்ட சண்டை கொலு மண்டபத்திலே நடைபெறுவதாக கற்பனை.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மல்லிகையே! வெண்சங்காய் வண்டூதே...”",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்றான் புகழேந்தி. ஒட்டக்கூத்தன் கேட்டான். “அது எப்படி முடியும்? மல்லிகை மலரிலே வண்டு உட்கார்ந்திருப்பதைப் பார்த்து மல்லிகையை வெண்சங்காக ஆக்கிக் கொண்டு வண்டு அதை ஊதுவதாகச் சொல்லுகிறீர்-சங்கை பின்புறமாக ஊதுவார்களா? முன்புறமாக ஊதுவார்களா?” என்றான். அப்போது புகழேந்தி. “ஏற்கனவே மது உண்ட மயக்கத்திலே வண்டு இருக்கிற காரணத்தால் முன்புறம் எது? பின்புறம் எது? என்று தெரியாமல் ஊதுகிறது” என்று சொல்லுகிறான்.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அண்மைக் காலத்திலே ஒரு பெரிய நாடக ஆசிரியர் சங்கரதாஸ் சுவாமிகள். அவரைப் பற்றிய",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வரலாற்றுக் குறிப்புகள் சிலவற்றை நான் படித்திருக்கிறேன். பல புராணங்களையெல்லாம் அவருடைய காலத்திற்கேற்ற நாடக நடையிலே தீட்டித் தந்த பெரும் நாடகப் புலவர் சங்கரதாஸ் சுவாமிகள். அதிலே அபிமன்னன் சுந்தரி மாலை என்பது அவர் எழுதிய நாடகங்களிலே ஒன்று. அது அவருடைய குழுவினர் நாடெங்கும் நடித்த நாடகங்களில் ஒன்று.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதிலே அபிமன்யுவிற்குத்தான், தான் மனைவியாகப் போகிறோம் என்று சுந்தரி எண்ணிக் கொண்டிருக்கும்போது, “அபிமன்யுவிற்கு அல்ல, இலக்கணன் என்பவனுக்குத் தான் உன்னை மணம் முடிக்கப் போகிறார்கள்” என்ற செய்தி வருகிறது. அந்த செய்தியை கேள்விப்பட்ட சுந்தரி, அலறித் துடிக்கிறாள். அதைத் தொடர்ந்து மற்றொரு செய்தி வருகிறது. “இல்லை, இல்லை, அபிமன்யுதான் உன்னைத் திருமணம் செய்து கொள்ளப் போகிறான், இலக்கணன் துரத்தப்பட்டு விட்டான்” என்ற செய்தியும் வருகிறது.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போது சொல்கிறாள் - அந்த மணவிழா மண்டபத்தில் ஒலித்துக் கொண்டிருந்த இசைக் கருவிகளுடைய முழக்கத்தை ஒப்பிட்டுச் சொல்கிறாள். “இதுவரையிலே இங்கே பல்வேறு இசைகள் முழங்கிக் கொண்டிருந்தன. அந்த இசை எனக்குத் துன்பமாக இருந்தது. அபிமன்யுதான் தன்னுடைய கணவனாக வருகிறான் என்று கேள்விப்பட்டதும் அந்த சோக இசையெல்லாம் இப்போது மாறிவிட்டது” என்கிறாள்.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எப்படி” என்று தோழி கேட்கிறாள்.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் சொல்லுகிறாள்: “துந்துபி ‘தும் தும்’ என்று முழங்குகிறது. சங்கம் ‘பம் பம்’ என்று முழங்குகிறது. தாளங்கள் ‘தீம் தீம்’ என்று முழங்குகின்றன. எல்லாம் சேர்ந்து தும் பம் தீம் தோம் - ‘துன்பம் தீர்ந்தோம்’ என்று முழங்குகிறது” என்று சங்கரதாஸ் சுவாமிகள் ‘அபிமன்னன் சுந்தரி மாலை’ என்ற அவருடைய நாடகத்திலே எழுதிய உரையாடல் இது. (இசைக் கருவிகளை, அதனுடைய முழக்கங்களை வைத்தே துன்பம் தீர்ந்தோம் - (தும், ‘தும்’, ‘பம்’, ‘பம்’, ‘தீம்..... தீம்’) எல்லாம் சேர்ந்து தோம், தோம், துன்பம் தீர்ந்தோம். இப்படி தமிழனுடைய இசையிலேகூட அதன் புகழைப் பரப்புகிற புலவர் பெருமக்கள் வாழ்ந்த நாடு இது.",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Thum Pam Theem Thom",
+    "sourceScan": 73,
+    "printedPage": 71
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Paavalareru Perunchithiranar sang here all those beautiful poems—the poems composed by the Revolutionary Poet. Through them, all the feelings they instil were poured out here in abundance. We must not simply say that we enjoyed all of them and went away. We must make them mingle as one with our blood and our feelings, and labour so that the Tamil people become a people who",
+      "sourceScan": 73,
+      "printedPage": 71,
+      "joinToNext": "space"
+     },
+     {
+      "text": "do not bow their heads; we must work for that.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So many great poets have played with this Tamil language. I have said this before and illustrated it at many events. The verbal contests among poets, the debates arising through language, have brought Tamil many benefits.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is an imagined quarrel between Pugazhendi and Ottakoothan. In that imagination, their contest takes place in the royal assembly hall.",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“O jasmine! As a white conch, the bee blows you...”",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "said Pugazhendi. Ottakoothan asked, “How can that be? You see a bee sitting on a jasmine flower, turn the jasmine into a white conch, and say the bee blows it. Do people blow a conch from the back? Or from the front?” Pugazhendi then said, “Because the bee is already intoxicated from drinking honey, it does not know which is the front and which is the back, and so it blows it.”",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In more recent times there was a great playwright, Sankaradas Swamigal. I have read some",
+      "sourceScan": 74,
+      "printedPage": 72,
+      "joinToNext": "space"
+     },
+     {
+      "text": "historical notes about him. Sankaradas Swamigal was a great dramatic poet who fashioned many puranic stories into a theatrical style suited to his time. Among them, *Abhimannan Sundari Maalai* was one of the plays he wrote. It was one of the plays his troupe performed across the country.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In it, while Sundari believes that she is going to become Abhimanyu's wife, news arrives: “You are not going to be married to Abhimanyu; they are going to marry you to a man named Ilakkanan.” Hearing this, Sundari cries out in anguish. Then another message follows: “No, no, Abhimanyu himself is going to marry you; Ilakkanan has been driven away.”",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She then compares her feelings to the sounds of the musical instruments resounding in the wedding hall. “Until now many kinds of music were sounding here. That music was a source of sorrow to me. The moment I heard that Abhimanyu was going to become my husband, all that sorrowful music changed,” she says.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“How?” asks her friend.",
+      "sourceScan": 75,
+      "printedPage": 73,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She says: “The thundhubi resounds ‘thum thum’. The conch resounds ‘pam pam’. The cymbals resound ‘theem theem’. Together they sound thum pam theem thom—‘thunbam theerndhom’, our sorrow is over.” This is dialogue Sankaradas Swamigal wrote in his play *Abhimannan Sundari Maalai*. (Using the musical instruments and their very sounds: sorrow is over—(thum, ‘thum’, ‘pam’, ‘pam’, ‘theem..... theem’) all joining as thom, thom, thunbam theerndhom—our sorrow is over. This is a land where great poets lived who spread its glory even through the music of the Tamil people.",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 76,
+      "printedPage": 74,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  73,
+  74,
+  75,
+  76
+ ]
+}

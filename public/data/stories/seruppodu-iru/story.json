@@ -1,0 +1,136 @@
+{
+ "workId": "seruppodu-iru",
+ "slug": "seruppodu-iru",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/seruppodu-iru",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "செருப்போடு இரு",
+  "en": "Stick to the Shoe"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "செருப்போடு இரு",
+    "sourceScan": 36,
+    "printedPage": 34
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிரேக்கத்தில் ஒரு ஓவியன் இருந்தான். ரொம்ப அழகாக சித்திரங்கள் எழுதக் கூடியவன். அவனுடைய வேலை என்னவென்றால் ஒவ்வொரு நாளும் சித்திரங்களை எழுதி விட்டு வாசலில் அதைக் கொண்டு வந்து வைத்து விடுவான். அப்படி ஒரு நாள் ஒரு போர் வீரனுடைய கம்பீரமான சித்திரத்தை எழுதி அதைக் கொண்டு வந்து தன்னுடைய வீட்டு வாசலிலே வைத்திருந்தான். அதை யார் பார்த்து எப்படி ரசிக்கிறார்கள்? என்று பார்த்துக் கொண்டே இருந்தான். அந்தப் பக்கம் போன பல பேர் அதைப் பார்த்து விட்டு போர் வீரன்படம் பிரமாதமாக இருக்கிறது என்று சொல்லிக் கொண்டு போனார்கள். அப்பொழுது ஒரு செருப்பு தைக்கும் தொழிலாளி அந்தப் பக்கம் வந்தான். அவனும் அந்தப் படத்தைப் பார்த்தான். தலைவனைப் பார்த்தான். வாளைப் பார்த்தான். காலிலே இருக்கிற செருப்பைப் பார்த்தான். பார்த்து விட்டு “எங்கே இந்த படம் வரைந்த ஓவியன்?” என்று கேட்டான். உடனே அந்த ஓவியன் அங்கு வந்தான். “செருப்பை சரியாக வரையவில்லையே, இந்த செருப்புக்கும் அந்த செருப்புக்கும் வித்தியாசம் இருக்கிறதே?” என்று கேட்டான். ஓவியனும் உற்றுப் பார்த்துவிட்டு",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "space"
+     },
+     {
+      "text": "“ஆமாம் நீ சொல்வது சரிதான். என் தவறை திருத்திக் கொள்கிறேன்” என்று சொல்லி அவனுக்கு நேராகவே அந்த செருப்பை ஒழுங்காக வரைந்தான். செருப்பு தைக்கும் தொழிலாளி சரி என்று சொல்லிவிட்டுப் போய்விட்டான்.",
+      "sourceScan": 37,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுநாள் அந்த சித்திரக்காரன் ஒரு அழகான பெண்ணை வரைந்து அதே மாதிரி தெருவிலே மற்றவர்கள் பார்ப்பதற்காக காட்சியாக வைத்தான். அப்பொழுது இந்த செருப்பு தைப்பவன் அங்கே வந்தான். அவன் அதைப் பார்த்துவிட்டு சும்மா இருக்கக் கூடாதா? உடனே “ஓவியன் எங்கே?” என்று கேட்டான். அவனும் வந்தான். ஓவியனைப் பார்த்து “இந்த சித்திரம் வரைந்திருக்கிறாயே, இந்த சித்திரத்தில் இருக்கிற பெண்ணுடைய பொட்டு சரியாக வைக்கப்படவில்லையே” என்று கேட்டான். ஆனால் அந்த ஓவியக்காரன் அதை சரியாகத்தான் வைத்திருந்தான். எனவே அந்த ஓவியக்காரனுக்கு கோபம் வந்து விட்டது. அந்த செருப்பு தைப்பவனைப் பார்த்து “நீ செருப்போடு இரு, அதற்கு மேல் வராதே” என்று சொல்லிவிட்டான்.",
+      "sourceScan": 37,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 37,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Stick to the Shoe",
+    "sourceScan": 36,
+    "printedPage": 34
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There was a painter in Greece. He could make very beautiful pictures. His practice was to paint pictures every day and then bring them out and place them at his doorway. One day he painted a majestic picture of a warrior and set it at the entrance to his house. He kept watching to see who looked at it and how they appreciated it. Many people passing that way looked at it and went on saying that the picture of the warrior was splendid.",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Then a shoemaker came that way. He too looked at the picture. He looked at the warrior, looked at the sword, and looked at the shoe on the warrior's foot. Then he asked, “Where is the painter who painted this picture?” The painter immediately came over. “You haven't drawn the shoe correctly. There is a difference between this shoe and that shoe, isn't there?” the shoemaker asked. The painter too looked at it closely.",
+      "sourceScan": 36,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yes, what you say is right. I'll correct my mistake,” he said, and right there in front of him drew the shoe properly. The shoemaker said it was all right and went away.",
+      "sourceScan": 37,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next day the painter painted a beautiful woman and, in the same way, put the picture on display in the street for others to see. The shoemaker came there again. After looking at it, could he simply keep quiet? At once he asked, “Where is the painter?” The painter came. Looking at him, the shoemaker said, “You've drawn this picture, but the pottu on the woman's forehead hasn't been placed correctly.” But the painter had in fact placed it correctly. So the painter became angry. Looking at the shoemaker, he said, “You stick to the shoe. Don't go beyond that.”",
+      "sourceScan": 37,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 37,
+      "printedPage": 35,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  36,
+  37
+ ]
+}

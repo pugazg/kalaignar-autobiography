@@ -1,0 +1,151 @@
+{
+ "workId": "kootruvan-eppadip-mariththaan",
+ "slug": "kootruvan-eppadip-mariththaan",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kootruvan-eppadip-mariththaan",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கூற்றுவன் எப்படிப் மறித்தான்?",
+  "en": "How Did Kootruvan Take Him?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கூற்றுவன் எப்படிப் மறித்தான்?",
+    "sourceScan": 35,
+    "printedPage": 34
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிள்ளிவளவன் என்ற மாமன்னனுக்கு உற்ற தோழர் நப்பசலையார் என்னும் புலவர்...",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிள்ளிவளவன் இறந்துவிடுகிறான். அவன் எப்படி இறந்திருக்க முடியும் என்று கேள்வி கேட்கிறார் புலவர்.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எதிர்த்தோ, உறவாடியோ, சண்டையிட்டோ, கிள்ளிவளவனுடைய உயிரை எமனால் பறிக்க முடியாது. பிறகு எப்படிப் பறித்திருப்பான்?",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாடுநர் போலக் கைதொழுதேத்தி இரந்தன்றாகல் வேண்டும்.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எமன் ஒரு கவிஞன் வேடம் போட்டுக் கொண்டு போய்க் கிள்ளிவளவனுடைய உயிரைத் ‘தா’ என்று கேட்டிருப்பான். கிள்ளிவளவன் கூற்றுவனைப் புலவனெனக் கருதித் தனது உயிரைக் கொடுத்திருப்பான்...",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "How Did Kootruvan Take Him?",
+    "sourceScan": 35,
+    "printedPage": 34
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The poet Nappasalaiyar was a close friend of the great king Killi Valavan...",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Killi Valavan dies. The poet asks how he could possibly have died.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Neither by opposing him, nor by befriending him, nor by fighting him could Yama have taken Killi Valavan’s life. Then how could he have taken it?",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Like a singer, with hands joined in worship and praise, he must have begged for it.",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yama must have disguised himself as a poet, gone to Killi Valavan and asked him, “Give me your life.” Taking Kootruvan for a poet, Killi Valavan must have given him his life...",
+      "sourceScan": 35,
+      "printedPage": 34,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  35
+ ]
+}

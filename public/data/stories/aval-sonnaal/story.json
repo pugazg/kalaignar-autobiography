@@ -1,0 +1,85 @@
+{
+ "workId": "aval-sonnaal",
+ "slug": "aval-sonnaal",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/aval-sonnaal",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "அவள் சொன்னாள்",
+  "en": "She Said"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "அவள் சொன்னாள்",
+    "sourceScan": 15,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு பெண்ணைப் பார்த்து, ‘ஆலமரத்தடிப் பிள்ளையாரை ஆறு முறை சுற்றி வந்தால் உனக்குக் கர்ப்பம் தரிக்கும்’ என்று ஒருவன் சொன்னான்.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பெண், ‘இப்போதே எனக்கு ஆறு மாத கர்ப்பம்’ என்று சொன்னாள்.",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "She Said",
+    "sourceScan": 15,
+    "printedPage": 14
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A man said to a woman, ‘If you go around the Pillaiyar beneath the banyan tree six times, you will become pregnant.’",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The woman said, ‘I am already six months pregnant.’",
+      "sourceScan": 15,
+      "printedPage": 14,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  15
+ ]
+}

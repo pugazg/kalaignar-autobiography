@@ -1,0 +1,262 @@
+{
+ "workId": "paarur-pola",
+ "slug": "paarur-pola",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/paarur-pola",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "பாரூர் போல...",
+  "en": "Paarur Pola..."
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பாரூர் போல...",
+    "sourceScan": 65,
+    "printedPage": 63
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிள்ளி வளவன் என்ற மாமன்னனுக்கு உற்ற தோழர் நப்பசலையார் என்னும் புலவர். அவர் அந்தக் கிள்ளி வளவனைப் பற்றிப் பாடுகிறார்.",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிள்ளிவளவன் இறந்து விடுகிறான். அவன் எப்படி இறந்திருக்க முடியும்? என்று கேள்வி கேட்கிறார் புலவர். அவனை யாருமே கொல்ல முடியாது!",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பொலந்தார் மண்டமர் கடக்குந் தானைத் திண்டோர் வளவற் கொண்ட கூற்றே”",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படிப்பட்ட மாமன்னன் உயிரை எடுத்துவிட்ட கூற்றுவன் - எமன் - எப்படி அவன் உயிரைப் பறித்திருக்க முடியும் என்று கேட்கிறார். ஏன் எடுக்க முடியாதாம்?",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“செற்றன் றாயினும் செயிர்த்தன் றாயினும் உற்றன் றாயினும் உய்வின்று மாதோ!”",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எதிர்த்தோ, உறவாடியோ, சண்டையிட்டோ கிள்ளி வளவனுடைய உயிரை எமனால் பறிக்க முடியாது. பிறகு எப்படிப் பறித்திருப்பான்?",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பாடுநர் போலக் கை தொழு தேத்தி இரந்தன் றாகல் வேண்டும்”",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எமன் ஒரு கவிஞர் போல வேடம் போட்டுக் கொண்டு போய்க் கிள்ளிவளவனுடைய உயிரைத் ‘தா’ என்று கேட்டிருப்பான். கிள்ளிவளவன் கூற்றுவனைப் புலவனெனக் கருதி தனது உயிரைக் கொடுத்திருப்பான் என்கிறார்.",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் காலத்தில் அரசர்கள், புலவர்கள் மீது எத்தகைய மதிப்பு வைத்திருந்தார்கள் என்பதற்கு எடுத்துக் காட்டுதான் நப்பசலையாரின் இந்தக் கவிதையாகும்.",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Paarur Pola...",
+    "sourceScan": 65,
+    "printedPage": 63
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The poet Nappasalaiyar was a close friend of the great king Killi Valavan. He sings about that Killi Valavan.",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Killi Valavan dies. The poet asks: how could he possibly have died? No one could kill him!",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Death that took Valavan, the strong-shouldered one, whose army crossed the crowded battlefield!”",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The poet asks how Kootruvan—Yama—could have taken the life of such a great king. Why should he not have been able to take it?",
+      "sourceScan": 65,
+      "printedPage": 63,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Had he come as an enemy, had he come in anger, had he come against him, there would have been no escape!”",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yama could not have taken Killi Valavan's life by opposing him, dealing with him directly, or fighting him. Then how could he have taken it?",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Like one who sings, with joined hands praising, he must have begged and asked.”",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yama must have disguised himself as a poet, gone to Killi Valavan and asked him to “give” his life. The poet says that Killi Valavan, thinking Kootruvan was a poet, must have given him his life.",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nappasalaiyar's poem is an example of the kind of respect kings had for poets in those days.",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  65,
+  66
+ ]
+}

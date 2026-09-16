@@ -1,0 +1,98 @@
+{
+ "workId": "edukkavo-kokkavo",
+ "slug": "edukkavo-kokkavo",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/edukkavo-kokkavo",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "எடுக்கவோ கோக்கவோ",
+  "en": "Edukkavo Kokkavo"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "எடுக்கவோ கோக்கவோ",
+    "sourceScan": 61,
+    "printedPage": 59
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மேடைப் பேச்சுக்கு என்னைத் தயாராக்கிக் கொண்ட பள்ளிக்கூட சொற்போர் போட்டிகளின் முதல் பேச்சுப் பற்றி என்னால் எண்ணிப் பார்க்காமலிருக்க முடியவில்லை. முதன் முதலாக நான் மன்றத்தில் நின்று எழுப்பிய குரல் ‘நட்பு’ என்ற பொருள் பற்றித்தான்! அதில் பாரதத்தில் எல்லாம் மேற்கோள் காட்டிப் பேசினேன். கர்ணனும் துரியோதனனும் ஆகிய இரு நண்பர்கள். ஒருநாள் கர்ணனும் துரியன் மனைவியும் சதுரங்கம் ஆடிக் கொண்டிருக்கிறார்கள். அந்தச் சமயம் துரியோதனன் அங்கு வருகிறான். துணைவன் வருவதைக் கண்ட துணைவி மரியாதை காட்டுவதற்காக ஆட்டத்தை விட்டு எழுகிறாள். துரியன் வருவதைக் கவனிக்காத கர்ணன் அவள் ஆட்டத்திலிருந்து போய்விட எண்ணுகிறாளாகும் என்று கருதி,",
+      "sourceScan": 61,
+      "printedPage": 59,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அவளது முத்தாரத்தை இழுக்கவே ஆரம் சிதறிக் கீழே கொட்டுகிறது. எந்தக் களங்கமும் இல்லாமல் சிரித்துக் கொண்டே துரியோதனன் நண்பனைத் தட்டிக் கொடுத்து, “எடுக்கவோ கோக்கவோ?” என்கிறான். சிந்திய முத்துக்களை எடுத்துக் கோக்கட்டுமா எனக் கேட்கிறான். நண்பனின் பெரு மனங்கண்டு கர்ணன் பூரித்துப் போகிறான். நண்பனுக்காகச் சோதரைப் போர்க்களத்தில் சந்தித்து எதிர்த்து இறுதியில் உயிர் விடுகிறான். இந்த நிகழ்ச்சியை வில்லிப்புத்தூரார் பாரதத்திலிருந்து அழகாக எடுத்துச் சொல்லி மன்றத்தின் அமோக ஆதரவைப் பெற்றேன். அழகான தமிழில் தங்கு தடங்கலின்றிச் சொன்மாரி பொழிந்ததாக ஆசிரியர்கள் கூடப் பாராட்டினார்கள். அவர்களுக்கெல்லாம் எப்படித் தெரியும், நான் மூன்று நாள் இரவும் பகலும் அந்தப் பேச்சை எழுதி மனப்பாடம் செய்து வீட்டிலேயுள்ள தூண்களிடம் பேசிக் காட்டினேன் என்கிற ரகசியம், இப்போதல்லவா புரிகிறது, கர்ணனிடமும் துரியனிடமும் ‘நட்பு’ என்ற சிறந்த பொருள் இருந்தது - ஆனால் பிறன் மனைவியின் கழுத்திலுள்ள ஆரத்தைப் பற்றியிழுத்ததால் கர்ணனிடம் இழுக்கு மிகுந்த ஒரு பண்பும் இருந்தது.",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Edukkavo Kokkavo",
+    "sourceScan": 61,
+    "printedPage": 59
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I cannot help thinking about the first speech I gave in the school debating contests that prepared me for public speaking. The very first time I stood before an assembly and raised my voice, the subject was “Friendship”! I spoke by quoting examples from the Bharatham. Karna and Duryodhana were two friends. One day Karna and Duryodhana's wife were playing chess. At that moment Duryodhana came there. Seeing her husband arrive, his wife rose from the game as a mark of respect. Karna, who had not noticed Duryodhana's arrival, thought that she intended to leave the game and,",
+      "sourceScan": 61,
+      "printedPage": 59,
+      "joinToNext": "space"
+     },
+     {
+      "text": "when he pulled at her pearl necklace, the strand broke and the pearls scattered to the floor. Without the slightest suspicion, Duryodhana smiled, patted his friend and asked, “Shall I pick them up or string them?” He was asking whether he should gather the scattered pearls and string them together. Karna was overwhelmed by his friend's greatness of heart. For his friend, he met Sotharai on the battlefield, fought, and finally gave up his life. I narrated this episode beautifully from Villiputhurar's Bharatham and won tremendous support from the assembly. Even the teachers praised me for pouring out a rain of words in beautiful Tamil without hesitation or interruption. How could any of them have known the secret—that for three days and nights I had written the speech, memorised it, and practised delivering it to the pillars in my house? Only now does that become clear. Karna and Duryodhana possessed the great quality called “friendship” — but by seizing and pulling at another man's wife's necklace, Karna also displayed a deeply improper trait.",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  61,
+  62
+ ]
+}

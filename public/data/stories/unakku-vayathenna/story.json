@@ -1,0 +1,120 @@
+{
+ "workId": "unakku-vayathenna",
+ "slug": "unakku-vayathenna",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/unakku-vayathenna",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "உனக்கு வயதென்ன?",
+  "en": "Unakku Vayathenna?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "உனக்கு வயதென்ன?",
+    "sourceScan": 21,
+    "printedPage": 19
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "90 வயது கிழவன் ஒருவன் தோட்டத்திற்குள்ளே குழிதோண்டி ஒரு மாங்கொட்டையைப் புதைக்கும்போது. “என்ன கிழவா? உனக்கு வயதென்ன? இன்னும் இரண்டாண்டோ, ஐந்தாண்டோ? இருக்கப் போகிறாய், இந்த மாங்கொட்டையைப் புதைக்கிறாயே, என்றைக்கு இது செடியாகி, மரமாகி, கிளை விடுத்து, இலை தழைத்து, பூவாகி, காயாகி, கனியாகி, அந்தப் பழத்தை நீ சாப்பிடப் போகிறாய்?” என்று சிலர் கேட்டனராம். அப்போது அந்த கிழவன், “இப்படி என் தாத்தா எண்ணியிருந்தால் நான் அந்த மாமரத்தின் பழத்தினை சாப்பிட்டிருக்க முடியாது. எனவே எதிர்காலத்திலே என்னுடைய பேரன் பேத்திக்காக, என்னுடைய சந்ததிக்காக இதைச் செய்கிறேன்” என்று சொன்னானாம்.",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப்போல நாம், என்றைக்கு இந்தியாவில் இருக்கிற தேசிய மொழிகளெல்லாம் ஆட்சி மொழி",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "space"
+     },
+     {
+      "text": "ஆவது? அது வரையில் நாம் என்ன உயிரோடு இருக்கப் போகிறோமா? என்று கருதிச் சும்மா இருந்தால் பொது வாழ்விற்கே தகுதியற்றவர்களாகி விடுவோம்.",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Unakku Vayathenna?",
+    "sourceScan": 21,
+    "printedPage": 19
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When a ninety-year-old man was digging a pit in a garden and planting a mango seed, some people are said to have asked him, “Old man, how old are you? You may have another two years, or five years, to live. Yet you are planting this mango seed. When will it become a sapling, grow into a tree, put out branches, sprout leaves, flower, bear unripe fruit, ripen, and finally give you a fruit to eat?” The old man is said to have replied, “If my grandfather had thought that way, I could not have eaten the fruit of that mango tree. So I am doing this for my grandchildren in the future, for my descendants.”",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the same way, when will all the national languages in India become official languages",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "space"
+     },
+     {
+      "text": "? If we remain idle thinking, “Will we even be alive until then?” we will become unfit for public life itself.",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 22,
+      "printedPage": 20,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  21,
+  22
+ ]
+}

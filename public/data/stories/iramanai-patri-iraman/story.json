@@ -1,0 +1,276 @@
+{
+ "workId": "iramanai-patri-iraman",
+ "slug": "iramanai-patri-iraman",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/iramanai-patri-iraman",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "இராமனைப் பற்றி இராமன்",
+  "en": "Iramanai Patri Iraman"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "இராமனைப் பற்றி இராமன்",
+    "sourceScan": 66,
+    "printedPage": 64
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வாலி வதைப் படத்தைப் பொறுத்தவரையில் யாருமே இராமனுடைய போக்கை ஒத்துக் கொண்டவர்கள் அல்ல; இவைகள் எல்லாம் பாத்திரங்கள்",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "space"
+     },
+     {
+      "text": "என்ற உணர்வோடுதான் நாம் பார்க்கவேண்டுமே யல்லாமல், வேறு கற்பனை செய்து கொண்டு பார்ப்பது முறையல்ல; நல்லதல்ல. அந்தப் பாத்திரப் படைப்பில் வாலி வதைப் படத்தில் இராமன் மறைந்திருந்து தாக்கியது குற்றம் என்பதை நானோ மற்றவர்களோ சொல்வதை விட, இராமனே சொல்கிறான். எங்கே? வாலி வதைப் படத்திலா? அல்ல. இராவணன் மாண்டு விட்ட பிறகு சொல்கிறான். கம்பராமாயணம் படித்தவர்கள் “என்ன புதிய கதையாக இருக்கிறதே! அப்படிச் சொன்னதாகத் தெரியவில்லையே” என்று கேட்கக் கூடும்.",
+      "sourceScan": 67,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போரிலே இராவணன் மாண்டு கிடக்கிறான். அப்போது இராவணனை அவனுடைய இளவல் விபீடணனோடு வந்து இராமன் பார்க்கிறான். பார்க்கும்போது இராவணனுடைய முதுகில் ஒரு தழும்பு இருக்கிறது. அப்போது இராமன் சொல்லுகிறான்: “அடடா, முதுகிலே தழும்பு ஏற்பட்டவனையா நான் கொன்றேன்? முதுகிலே காயம் பட்டவனை; தழும்பு பட்டவனைக் கொல்வது வீரனுக்கு அழகல்லவே? முதுகிலே தழும்பு கொண்டவனையா நான் கொன்றேன்?” என்று வருத்தப்படுகிறான்.",
+      "sourceScan": 67,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மாண்டொழிந்(கு) உலகில் நிற்கும் வயங்கிசை முயங்க மாட்டா(து) ஊண் தொழில் உகந்து தெவ்வர் முறுவல் என் புகழை உண்ணப் பூண் தொழில் உடைய மார்பா? போர்ப்புறங் கொடுத்தோர் போன்ற ஆண் தொழி லோனிற் பெற்ற வெற்றியும் அபத்தம் என்றான்.”",
+      "sourceScan": 67,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்பொழுது விபீடணன் சொல்லுகின்றான் - அதாவது விபீடணனைக் கம்பர் சொல்ல வைக்கின்றார்: “அது புறமுதுகு காட்டியதால் ஏற்பட்ட தழும்பல்ல இராமா? ஏற்கனவே ஒருமுறை என்னுடைய அண்ணன் இராவணன் ஒரு யானையோடு போரிட்ட போது அந்த யானையினுடைய தந்தங்கள் அவனுடைய மார்பிலே புகுந்து ஊடுருவி முதுகுக்கு மேலே வெளிப்பட்டு விட்டன. அதனால் ஏற்பட்ட தழும்பு தான் அது” என்று.",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நாலு தலையும் ஒடி நண்ணலார்க் காண்கிலாமற் பீளு குன்றம் போலும் பெருந்திசை எல்லை யானைக் கோளு தலையும் புக்குக் கொடும் புறத் தழுந்து புண்ணின் பாளுது அன்றித் தெவ்வர் படைக்கலம் பட்டுதென் செய்யும்?”",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அப்பனை அனைத்தும் மார்புக்(கு) அணி எனக் கிடந்த; வீரக் கைப்பணை முழங்க மேனாள் அமரிடைக் கிடைத்த காலன் துப்பணை வயிர வாளி விசையிலும், காலின் தோன்றல் வப்பணை குத்தினாலும், வெரி நிலைப் போய அன்றே”",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று, இராவணனுடைய வீரத்தை வெளிப்படுத்துகின்றான் என்று கம்பர் சொல்லுகின்றார். ஆகவே இராமனே பயப்படுகிறான்.",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முதுகிலே தழும்புபெற்ற ஒருவனைக் கொன்று விட்டோமே, பழிவந்து சேருமே” என்று! வீரத்திற்கு இலக்கணம் வகுக்கிற இராமன் மறைந்திருந்து வாலியைக் கொன்றது பற்றி எவ்வளவு நாள் மனச் சங்கடப்பட்டிருப்பான் என்பதை கம்பருக்காக வாதாடுகின்றவர்கள், இராமனுக்காக வாதாடுகின்றவர்கள் எண்ணிப் பார்க்க வேண்டும் என்பதற்காகத்தான் இதைச் சொல்லுகிறேன்.",
+      "sourceScan": 69,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் இதிலும் இராமன் சார்பாகத்தான் வாதாடுகிறேன். ஏனென்றால் அவனுக்கு அவ்வளவு கஷ்டம் ஏற்படுகிறது - முதுகிலே தழும்புபெற்றவனைக் கொன்று விட்டோமே; நம்முடைய வீரம் நிலைகுலைந்து விட்டதே! பழியாகி விட்டதே என்று! அதே இராமன் வாலியை மறைந்திருந்து கொன்றோமே என்ற குற்றத்திற்காக எவ்வளவு வருந்தி இருப்பான் என்பதையும் எண்ணிப் பார்க்கத்தான் வேண்டும்.",
+      "sourceScan": 69,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 69,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Iramanai Patri Iraman",
+    "sourceScan": 66,
+    "printedPage": 64
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As far as the episode of Vali's killing is concerned, no one has accepted Rama's conduct; all these are characters",
+      "sourceScan": 66,
+      "printedPage": 64,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and must be viewed with that awareness. It is neither proper nor good to look at them by inventing something else. In that characterization, rather than I or anyone else saying that Rama's act of striking Vali from concealment was wrong, Rama himself says so. Where? In the episode of Vali's killing? No. He says it after Ravana has died. Those who have read the Kamba Ramayanam may ask, “What new story is this? I do not remember him saying that.”",
+      "sourceScan": 67,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ravana lies dead on the battlefield. Rama comes with Ravana's younger brother Vibhishana and looks at him. As he looks, he sees a scar on Ravana's back. Rama says, “Alas! Did I kill a man who had a scar on his back? It is not fitting for a warrior to kill a man wounded in the back, a man bearing such a scar. Did I kill one who had a scar on his back?” He grieves.",
+      "sourceScan": 67,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Though he died, the fame that stands in the world would not resound in splendour; my enemies, delighting in their feast, would smile and feed upon my fame. O chest made for ornaments! A victory gained over a man who seemed to have turned his back in battle— even that victory is false,” he said.",
+      "sourceScan": 67,
+      "printedPage": 65,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Then Vibhishana says—or rather, Kamban makes Vibhishana say: “Rama, that scar was not caused by showing his back in battle. Once before, when my elder brother Ravana fought an elephant, the elephant's tusks entered his chest, pierced through it and emerged above his back. That is the scar they left.”",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Four heads broken, unseen by those who came near, like a split mountain, the great elephant at the far boundary— its striking tusks entered and sank through the cruel back; that alone was the scar, not one made by an enemy's weapon—what could such weapons do?”",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All those marks upon his chest lay there like ornaments; when the warrior's mighty arm resounded in battle long ago, when Death was met amid the fight, even the diamond-hard arrow with all its force, and the thrust that came upon him, went on toward the back.”",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kamban says that Vibhishana thus reveals Ravana's valour. And so Rama himself is afraid.",
+      "sourceScan": 68,
+      "printedPage": 66,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“We have killed a man who bore a scar on his back; blame will come upon us!” Those who argue for Kamban and those who argue for Rama should think about how many days Rama—who lays down the rules of valour—must have suffered inwardly over having killed Vali from concealment. That is why I say this.",
+      "sourceScan": 69,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Here too I am arguing on Rama's side. For he suffers so much: we have killed a man who had a scar on his back; our valour has been shaken! We have incurred blame! One must also think how much that same Rama would have grieved over the fault of having killed Vali while hidden.",
+      "sourceScan": 69,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 69,
+      "printedPage": 67,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  66,
+  67,
+  68,
+  69
+ ]
+}

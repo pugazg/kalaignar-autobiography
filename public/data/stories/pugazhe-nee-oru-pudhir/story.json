@@ -1,0 +1,130 @@
+{
+ "workId": "pugazhe-nee-oru-pudhir",
+ "slug": "pugazhe-nee-oru-pudhir",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/pugazhe-nee-oru-pudhir",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "புகழே நீ ஒரு புதிர்",
+  "en": "Fame, You Are a Riddle"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புகழே நீ ஒரு புதிர்",
+    "sourceScan": 31,
+    "printedPage": 30
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புகழே! நீ ஒரு பனிக்கட்டி. உன்னைக் கைக்குள்ளேயே வைத்துக் கெட்டியாகப் பிடித்திருந்தாலும் நீராகக் கரைந்து மறைந்து விடுகிறாய்.",
+      "sourceScan": 31,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புகழே! நீ ஒரு மதுக் கலயம். உன்பால் வீழ்ந்த ஈக்கள் எழுந்ததேயில்லை.",
+      "sourceScan": 31,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புகழே! நீ ஒரு நிழல். உன்னைப் பற்றிக் கவலைப்படாதவர்களைத் தொடர்ந்து கொண்டேயிருப்பாய்.",
+      "sourceScan": 32,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புகழே! நீ ஒரு புதிர்! உன்னைப் பற்றி விளக்கவே என்னால் முடியாது.",
+      "sourceScan": 32,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Fame, You Are a Riddle",
+    "sourceScan": 31,
+    "printedPage": 30
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Fame! You are a block of ice. Even if I keep you in my hand and grip you tightly, you melt into water and disappear.",
+      "sourceScan": 31,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Fame! You are a jar of liquor. The flies that fall into you never rise again.",
+      "sourceScan": 31,
+      "printedPage": 30,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Fame! You are a shadow. You keep following those who do not care about you.",
+      "sourceScan": 32,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Fame! You are a riddle! I cannot explain you.",
+      "sourceScan": 32,
+      "printedPage": 31,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  31,
+  32
+ ]
+}

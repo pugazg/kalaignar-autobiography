@@ -1,0 +1,174 @@
+{
+ "workId": "pugazhendhip-pulavar-kathai",
+ "slug": "pugazhendhip-pulavar-kathai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/pugazhendhip-pulavar-kathai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "புகழேந்திப் புலவர் கதை",
+  "en": "The Story of Poet Pugazhendhi"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புகழேந்திப் புலவர் கதை",
+    "sourceScan": 27,
+    "printedPage": 26
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நண்பர் தாமலிங்கம் அவர்களுடைய இளைய மகள் செல்வி தேன்மொழியும் திரு. துரைசாமி அவர்களுடைய இரண்டாவது செல்வன் புகழேந்தி நம் அனைவருடைய முன்னிலையில் வாழ்க்கைத் துணைவர்களாக இல்வாழ்விலே இன்று அடியெடுத்து வைக்கிறார்கள்.",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேன் என்ற சொல்லையும், புகழேந்தி என்ற பெயரையும் நான்நினைவிற்குக் கொண்டு வந்தபோது புகழேந்திப் புலவருடைய கதை கூட என்னுடைய ஞாபகத்திற்கு வந்தது. புலவர் புகழேந்தி அரசருடைய முன்னிலையில் ஓர் அழகான பாடலைப் பாடினார்.",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மல்லிகையாம் வெண்சங்கு வண்டு ஊத” என்ற ஒரு பாடலைப் பாடி—அந்தப் பாடலை மன்னர் பாராட்ட அவையில் இருந்த அத்தனைபேரும் புகழ்ந்துரைக்க “மல்லிகையின் வெண் சங்கு வண்டூத” என்ற அந்தஅழகான சொற்றொடரை அனைவரும் சுவைத்து மகிழ்ந்த போது அங்கே ஒட்டக்கூத்தர் என்ற புலவர் “நான் அந்த பாடலை மறுக்கிறேன். இது குற்றம் வாய்ந்தது. பொருள் குற்றம் கொண்டது” என்று குறிப்பிட்டார்.",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்படி என்று மன்னர் கேட்டபோது “மல்லிகை மலரை வெண் சங்காகக் கொண்டு வண்டு ஊதுகிறது” என்று புகழேந்தி சொல்கிறார். ஆனால் நான் கேட்கிறேன் சங்கை ஊதுவதென்றால் சங்கின் பின்புறத்தில் இருந்துதான் ஊத வேண்டும். வண்டு மல்லிகை மலரின் முன்புறத்தில் அல்லவா அமர்கிறது எப்படிப் பொருந்தும்” என்று ஒட்டக்கூத்தர் கேட்டவுடன் புகழேந்தி பதில் சொன்னார். “இந்த வண்டு தேன் உண்ட மயக்கத்தில் முன்புறம் எது பின்புறம் எது என்று தெரியாமல் ஊதுகிறது” என்று சொன்னார்.",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவே, அப்படி இங்கேமணமகன் புகழேந்தியும் ‘தேன்’ அருந்தும் மயக்கத்தில் அமர்ந்து இருக்கிறார். அவர்களை நான் வாழ்த்தி தாமலிங்கம் அவர்களுடைய இல்லத்தில் நடைபெறுகின்ற விழாவில் நான் கலந்து கொள்வது என்பது ஒன்றும் வியப்பிற்குரியது அல்ல.",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம்முடைய குடும்பத்து நிகழ்ச்சியில் நீண்ட நேரம் பேசா விட்டால் கோபித்துக் கொள்ள மாட்டார்கள் என்ற உணர்வோடு மணமக்களை வாழ்வாங்கு வாழ வாழ்த்துகிறேன்.",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Story of Poet Pugazhendhi",
+    "sourceScan": 27,
+    "printedPage": 26
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our friend Thamalingam's younger daughter, Selvi Thenmozhi, and Mr Duraisamy's second son, Pugazhendhi, are today stepping into married life as life-partners in the presence of all of us.",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When I recalled the word “honey” and the name Pugazhendhi, the story of the poet Pugazhendhi also came to mind. Poet Pugazhendhi sang a beautiful verse before the king.",
+      "sourceScan": 27,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He sang a verse containing the line, “The bee blows the white conch that is the jasmine.” The king praised the song, and everyone in the court spoke in admiration. As everyone delighted in the beautiful phrase, “the bee blows the white conch of the jasmine,” a poet there named Ottakoothar said, “I reject that verse. It is faulty. It contains an error of meaning.”",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When the king asked how, Ottakoothar said, “Pugazhendhi says the bee blows the jasmine flower as though it were a white conch. But I ask: if one is to blow a conch, one must blow from its rear. Does not the bee sit on the front of the jasmine flower? How can this fit?” Pugazhendhi immediately replied, “This bee, intoxicated after drinking honey, does not know which is the front and which is the back when it blows.”",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So here too the bridegroom Pugazhendhi is seated in the intoxication of drinking “honey.” There is therefore nothing surprising in my blessing them and taking part in the celebration at Thamalingam's home.",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With the feeling that they will not be angry if I do not speak for long at a family occasion of ours, I bless the bride and groom to live a full and worthy life.",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  27,
+  28
+ ]
+}

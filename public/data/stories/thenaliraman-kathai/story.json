@@ -1,0 +1,353 @@
+{
+ "workId": "thenaliraman-kathai",
+ "slug": "thenaliraman-kathai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thenaliraman-kathai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தெனாலிராமன் கதை",
+  "en": "The Tenali Raman Story"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தெனாலிராமன் கதை",
+    "sourceScan": 37,
+    "printedPage": 36
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எம். ஜி. ஆர். முதலமைச்சராகப் பதவி ஏற்றதை அடுத்து, எதிர்க்கட்சித் தலைவர் என்ற முறையில் சட்டசபையில் கேட்டேன்; கழக ஆட்சியில் தரப்பட்டதைப் போல போனஸ், போக்குவரத்துச் செலவுக்கான 15 ரூபாய் விவசாயிகளுக்குத் தரப்படுமா ? என்று கேட்டேன். நீங்கள் கொடுத்ததைவிட அதிகமாகத்தான் தரப்படும் என்றார்.",
+      "sourceScan": 37,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படி சொல்லி இரண்டு ஆண்டு காலமாகிறது. இந்த இரண்டு ஆண்டு காலத்தில் தரப்படாமல் இப்போது 20 ரூபாய் அதிகம் கொள்முதல் நிலையம், அரசு வாங்கிக் கொள்ள ஏற்பாடு என்கிறார்.",
+      "sourceScan": 37,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போனவாரம் எட்மண்ட் சொல்லியிருக்கிறார் நெல்லை அரசாங்கம் வழங்க வழியில்லை. அப்படி வாங்குவதற்கு எங்களிடம்",
+      "sourceScan": 37,
+      "printedPage": 36,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பணம் இல்லை என்று கூறி இருக்கிறார். ஆனால் எம். ஜி. ஆர். இன்று ‘நெல்லை வாங்கிக் கொள்வேன்’ என்று சொல்லியிருக்கிறார். இது எப்படி இருக்கிறது என்றால், தெனாலிராமன் கதையைப் போல இருக்கிறது.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தெனாலிராமன் ஒரு நாள் மன்னரைச் சந்தித்தான். “தெனாலிராமா, நம்முடைய அரண்மனைக்குப் பக்கத்தில் இருக்கிற மாளிகையில் அழகான ஓவியங்களைத் தயார் செய்ய வேண்டும். அதைப் பார்த்து நான் மகிழவேண்டும்” என்றார் மன்னர்.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதென்ன மன்னா பெரியகாரியம்? நானே ஓவியங்களைத் தீட்டுகிறேன் பத்தாயிரம் பொன் கொடுங்கள்” என்கிறான்",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன்னனும் பத்தாயிரம் பொன் கொடுக்கிறான். ஆறுமாத காலத்தில் ஓவியம் தயாராகி விடும் என்று தெனாலிராமன் சொல்கிறான்.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்தாயிரம் பொன் வாங்கிக் கொண்டுபோனவன் திரும்பி வரவில்லை. ஆறுமாதங்கள் கழித்துத் திரும்பி வருகிறான் மன்னனிடம்.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஓவியம் தயாரா? பார்க்கலாமா?” என்று மன்னன் கேட்கிறான். ‘பார்க்கலாம்’ என்று தெனாலிராமன் சொல்கிறான் அதுவரையில் எந்த ஓவியமும் எழுதப்படவில்லை.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘மறுநாள் காலை ஓவியங்களைப் பார்க்கவருகிறேன்’ என்கிறான் மன்னன். எப்படி மன்னனைத் திருப்திபடுத்துவது என்று தெனாலிராமன் யோசிக்கிறான். ஒரு சட்டியில் சாணத்தைக் கரைத்து, துடைப்பத்தால் தோய்த்து எடுத்து மாளிகை",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "space"
+     },
+     {
+      "text": "யினுடைய வெள்ளைச் சுவர்களில் பல இடங்களில் கோடுகளாகக் கிழித்துக் கொண்டே போனான்.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காலையில் மன்னன் வருகிறான். மன்னனை அழைத்துச் செல்கிறான் தெனாலிராமன். ஓவியங்களைக் காணவில்லை. சாணத்தால் போடப்பட்ட பெரிய கோடுகள் தான் இருக்கின்றன. ‘இவைகள் எல்லாம் என்ன’ என்று மன்னன் ஆத்திரத்தோடு கேட்கிறான்.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தெனாலிராமன் ‘இவைகள் எல்லாம் குதிரையின் வால்கள்’ என்று சொல்கிறான். ‘குதிரைகள் எங்கே’ என்று மன்னன் கேட்கிறான். சுவருக்கு அப்பாலே இருக்கின்றன என்று தெனாலிராமன் கூறுகிறான்.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப்போல மன்னனுக்கு தெனாலிராமன் குதிரை வாலைக் காட்டியதைப்போல விவசாய பெருமக்களுக்கு எம். ஜி. ஆர். 20 ரூபாய் அதிகவிலை என்று காட்டுகிறார். நாளைய தினம் ‘குதிரைகள் எங்கே’ என்று கேட்டால் ‘சுவருக்கு பின்னால் இருக்கிறது’ என்று தெனாலிராமன் சொன்னே அதைப்போல ‘கொள்முதல் நிலையம் எங்கே, என்று கேட்டால், ‘தேர்தலுக்குப் பின்னால் வரும்’ என்றுதான் சொல்வார்.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுவருக்குப் பின்னால் இருக்கும் குதிரைகளைப் போல தேர்தலுக்குப் பின்னால் அது வரப்போவதில்லை.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Tenali Raman Story",
+    "sourceScan": 37,
+    "printedPage": 36
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After M.G.R. assumed office as Chief Minister, I asked in the Legislative Assembly in my capacity as Leader of the Opposition: “As under the Kazhagam government, will farmers be given the bonus and 15 rupees toward transport expenses?” He said that more would be given than what we had given.",
+      "sourceScan": 37,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Two years have passed since he said that. Nothing was given during these two years, and now he says there will be 20 rupees more, a procurement centre, arrangements for the government to buy, and so on.",
+      "sourceScan": 37,
+      "printedPage": 36,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Last week Edmund said that there was no way for the government to provide the paddy. “To buy it like that, we",
+      "sourceScan": 37,
+      "printedPage": 36,
+      "joinToNext": "space"
+     },
+     {
+      "text": "have no money,” he said. But today M.G.R. has said, “I will buy the paddy.” What this is like is the story of Tenali Raman.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day Tenali Raman met the king. “Tenali Rama, beautiful paintings must be prepared in the mansion beside our palace. I want to look at them and be pleased,” said the king.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What great matter is this, king? I myself will paint the pictures. Give me ten thousand gold coins,” he said.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king gave him ten thousand gold coins. Tenali Raman said the paintings would be ready in six months.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The man who took the ten thousand gold coins did not return. After six months he came back to the king.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Are the paintings ready? May I see them?” asked the king. “You may,” said Tenali Raman, though not a single painting had been made until then.",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I shall come tomorrow morning to see the paintings,” said the king. Tenali Raman wondered how to satisfy him. He mixed cow dung in a pot, dipped a broom into it, and went on drawing streaks in many places on the palace",
+      "sourceScan": 38,
+      "printedPage": 37,
+      "joinToNext": "space"
+     },
+     {
+      "text": "'s white walls.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the morning the king came. Tenali Raman took the king along. There were no paintings to be seen. There were only large streaks made with cow dung. “What are all these?” the king asked angrily.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“These are all horses' tails,” said Tenali Raman. “Where are the horses?” asked the king. Tenali Raman said they were on the other side of the wall.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Just as Tenali Raman showed the king horses' tails, M.G.R. is showing the farming people a higher price of 20 rupees. Tomorrow, if they ask, “Where are the horses?” just as Tenali Raman says, “They are behind the wall,” if they ask, “Where is the procurement centre?” he will say, “It will come after the election.”",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Like the horses behind the wall, it is not going to come after the election.",
+      "sourceScan": 39,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  37,
+  38,
+  39
+ ]
+}

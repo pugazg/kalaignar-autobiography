@@ -1,0 +1,209 @@
+{
+ "workId": "antha-naal-vanthilai",
+ "slug": "antha-naal-vanthilai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/antha-naal-vanthilai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "அந்த நாள் வந்திலை!",
+  "en": "Antha Naal Vanthilai!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "அந்த நாள் வந்திலை!",
+    "sourceScan": 62,
+    "printedPage": 60
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உங்களுக்குத் தெரியும் குமணனுடைய கதை.",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குமணனுக்கு ஒரு தம்பி, அமணன் என்று சொல்லப்படுவதுண்டு. அவன் அண்ணனுடைய",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "space"
+     },
+     {
+      "text": "நாட்டைப் பற்றிக் கொள்ள வேண்டுமென்பதற்காக அண்ணன் குமணனை காட்டிற்கு அனுப்புகின்ற சூழ்ச்சியை செய்து அனுப்பி விடுகிறான். அத்துடன் நிறுத்தவில்லை அவனுடைய வஞ்சகம்: அவனையே கொன்று விட்டால், படையெடுத்து வந்து நாட்டை மீட்டிடலாம் என்ற எண்ணத்தோடு அவனையே கொன்று விடவும் எண்ணுகிறான். அப்பொழுது வறுமையிலே வாடிய ஒரு புலவர் பெருமான் குமணனிடத்தில் கொடை வாங்க வருகிறார்.",
+      "sourceScan": 63,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் குமணன் இருக்கின்ற அவையில் அமணன் இருக்கின்றான். “கொடை பெற வந்தேன், நிதி பெற வந்தேன்” என்று புலவர் சொல்லுகின்றார். “காட்டிலிருக்கின்ற தன்னுடைய அண்ணனின் தலையை கொண்டு வருகின்றவர்களுக்கு பத்தாயிரம் பொன் பரிசளிப்பதாக பறை அறிவித்திருக்கிறாரே, தெரியாதா?” என்ற அமணன் அறிவிப்பு, புலவர் பெருமானுக்குச் சொல்லப்படுகிறது. “அப்படியா? குமணன் தலைக்கு விலையா?” என்று கேட்டு விட்டு குமணனைக் காண காட்டுக்குச் செல்கிறார். குமணன் காட்டில் நாடு துறந்த துறவியாக உலவிக் கொண்டிருக்கிறான். புலவரைப் பார்த்ததும் “வருக புலவரே” என்று வாய் மணக்க அழைக்கிறான். புலவர் அவனிடத்திலே தன்னுடைய வறுமை நிலையைச் சொல்கிறார். அப்பொழுது குமணன் “உங்கள் வறுமையைப் போக்க ஒரு வழி இருக்கிறது” என்று சொல்கிறான்.",
+      "sourceScan": 63,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அந்த நாள் வந்திலை அருங்கவிப் புலவோய்; இந்த நாள் வந்து நொந்து எனை அடைந்தீர்; தலைதனைக் கொண்டு போய் தம்பி கைக்கொடுத்து விலைதனைப் பெற்று உன் வறுமை நோய் களைவீர்”",
+      "sourceScan": 63,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என் தலையைக் கொண்டு போய் என் தம்பி கையில் கொடுத்தால் பத்தாயிரம் பொன் பரிசு வழங்குவான். அதைப் பெற்றுக் கொண்டு உங்கள் வறுமையைப் போக்கிக் கொள்ளுங்கள்” என்று சொல்கிறான். சொன்னவுடன் பதைத்துப் போன புலவர், குமணனை விட்டு நீங்கி வரும் வழியில் ஒரு வாழை மரத்தைக் கொண்டு தயாரித்து குமணன் தலையைப் போல உருவமாக்கி ரத்தம் ஒழுகுவதைப் போல செய்து, அமணனுடைய அவைக் களத்திற்கு அதைக் கொண்டு வருகிறான்.",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அமணன் அமர்ந்திருக்கிறான். வாழைத் தண்டால் செய்யப்பட்ட குமணனுடைய தலையைக் கீழே போட்டு “இதோ பார் உன் அண்ணன் குமணனுடைய தலையைக் கொண்டு வந்து விட்டேன்” என்று தலையைக் கீழே போடுகிறான். ரத்தம் ஒழுகுகின்ற தலையைப் பார்த்ததும் அமணனுக்கு, தானாடாவிடினும் தன் தசை ஆடும் என்பதைப் போல உடல் பதறுகிறது. உள்ளம் குமுறுகிறது. “அய்யோ அண்ணா!” என்று கத்துகிறான். “அண்ணனையா கொன்று விட்டீர்?” என்று அழுகிறான்.",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Antha Naal Vanthilai!",
+    "sourceScan": 62,
+    "printedPage": 60
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You know the story of Kumanan.",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kumanan had a younger brother, said to be called Amanan. In order to seize his elder brother's",
+      "sourceScan": 62,
+      "printedPage": 60,
+      "joinToNext": "space"
+     },
+     {
+      "text": "kingdom, he devised a plot and sent his elder brother Kumanan into the forest. His treachery did not stop there: thinking that Kumanan might raise an army, return and recover the country, he even planned to have him killed. At that time a great poet, suffering in poverty, came to Kumanan seeking a gift.",
+      "sourceScan": 63,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But Amanan was in the court where Kumanan had once been. “I have come seeking a gift, seeking wealth,” said the poet. Amanan's proclamation—that ten thousand pieces of gold would be awarded to whoever brought the head of his elder brother who was in the forest—was told to the poet. “Is that so? Is there a price on Kumanan's head?” he asked, and went into the forest to see Kumanan. Kumanan wandered there like an ascetic who had renounced his country. Seeing the poet, he welcomed him warmly: “Come, poet.” The poet told him of his poverty. Kumanan then said, “There is a way to end your poverty.”",
+      "sourceScan": 63,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“That day had not come, O poet of rare verse; This day you came in distress and reached me; Take my head and give it into my younger brother's hand; Receive its price and cure your sickness of poverty.”",
+      "sourceScan": 63,
+      "printedPage": 61,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“If you take my head and give it into my younger brother's hands, he will give you a reward of ten thousand pieces of gold. Take it and rid yourself of your poverty,” he said. The poet was shaken by those words. Leaving Kumanan, on his way back he fashioned a likeness of Kumanan's head from a banana plant, made it appear as though blood were flowing from it, and brought it to Amanan's court.",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Amanan was seated there. The poet threw down the head of Kumanan made from the banana stem and said, “Look, I have brought your elder brother Kumanan's head.” At the sight of the blood-dripping head, Amanan's body trembled—as in the saying that even if one does not dance, one's own flesh will dance. His heart churned. “Oh, elder brother!” he cried. “Have you killed my brother?” he wept.",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 64,
+      "printedPage": 62,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  62,
+  63,
+  64
+ ]
+}

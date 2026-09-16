@@ -1,0 +1,615 @@
+{
+ "workId": "uyirukku-vilai-aimbathu-latcham",
+ "slug": "uyirukku-vilai-aimbathu-latcham",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/uyirukku-vilai-aimbathu-latcham",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "உயிருக்கு விலை ஐம்பது லட்சம்",
+  "en": "Fifty Lakhs — The Price of a Life"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "உயிருக்கு விலை ஐம்பது லட்சம்",
+    "sourceScan": 42,
+    "printedPage": 41
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மிஸ்டர் லஞ்சய்யா, “யார் அது?” என்று அதட்டுகிறார்",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நான் தான் எமதர்மன்”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எருமை வாகனம் எங்கே?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அரசாங்க இலாகாக்களுக்கு இரவல் கொடுத்திருக்கிறேன்.”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவர்களது ஆமை வாகனம் என்ன ஆயிற்று?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அது ரிப்பேரில் இருக்கிறது”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நத்தை வாகனம் கூடவா?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதைத்தான் நகர சபைகளுக்கான நீர்வாகத்திற்கு அனுப்பி விட்டார்களே!”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஓஹோ! இலாகாக்களுக்கு எருமையையும், நத்தையையும் வைத்துக் கொண்டு, தெருவில் மனிதர்கள் மீது மோத மட்டும் மான் வாகனம், முயல் வாகனங்களை வைத்திருக்கிறார்களா?”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அது கிடக்கட்டும். வா போகலாம்”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எங்கே?”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இன்னுமா தெரியவில்லை? நீ செத்துவிட்டாய், யமலோகம் போகலாம் வா”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யமலோகமா? அங்கே பஞ்சாயத்து யூனியன்,முனிசிபாலிடி, கார்ப்பரேஷன், சட்டசபை, மேல்சபை, பார்லிமெண்ட், ராஜ்ய சபா முதலியவை உண்டா? கட்சிகள் உண்டா? தேர்தல்கள் உண்டா?”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒரு சனியனும் இல்லை. ஒரே அமைதியான உலகம்!”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘சே, சே. அமைதியான இடமே எனக்குப் பிடிக்காது. என் காரியம் நடக்க அமளி துமளி அதிகம் இருக்க வேண்டும்... உன்னுடன் வருவதற்கில்லை.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மிஸ்டர் லஞ்சய்யா! நீங்கள் அப்படிச் சொல்லக் கூடாது. பிறகு நான் கடமையிலிருந்து தவறிவிட்டேன் என்ற களங்கம் வந்து சேரும்”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஓய் எமதர்மா! உமக்குக் களங்கம் வராமல் இருக்க ஒரே வழி என்ன தெரியுமா?.... நான் உன்னோடு வருவதாக இருந்தால் ஐந்து லட்சம் ரூபாய்க்கு இப்பொழுதே செக் தரவேண்டும்.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எமதர்மனுக்குத் தலை கிறுகிறுத்தது. “சாவதற்கும் லஞ்சமா?” என்று முணுமுணுக்கிறான்.",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... அடுத்த ஜென்மம் பிறப்பதாயிருந்தால் அதற்கும் கேட்பேன் தெரியுமா....”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... அடுத்த பிறவி எடுக்க வேண்டாம், அதற்கும் சேர்த்து இப்போதே கேட்டுவிடு, கொஞ்சம் ‘கன்சஷன்’ கொடு”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“....பத்து லட்சம் கொடுத்துவிடு”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... இவனைக் காசாலேதான் சாக அடிக்க வேண்டும்” என்று ஒரு செக்கை எடுத்து எழுதுகிறான் எமன். அந்தச் செக்கை நீட்டி.",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தா காசாலேசா! நீ காசாலே சா!”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மிஸ்டர் லஞ்சய்யா செக்கைப் பார்க்கிறார். “ஐம்பது லட்சம்”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ! ஐம்பது லட்சம்!” மிஸ்டர் லஞ்சய்யா வாயைப் பிளக்கிறார்.",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிறகு வாயை மூடவே இல்லை.",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Fifty Lakhs — The Price of a Life",
+    "sourceScan": 42,
+    "printedPage": 41
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mr. Lanjayya barks, “Who is that?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It is I, Yama-Dharma.”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Where is your buffalo vehicle?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“I have lent it to the government departments.”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What happened to their tortoise vehicle?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“It is under repair.”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“The snail vehicle too?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“That one has been sent to the city councils for their water service!”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Oh! So the departments keep the buffalo and the snail, but when it comes to colliding with people in the streets they keep deer vehicles and rabbit vehicles?”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Leave that aside. Come, let us go.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Where?”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Do you still not understand? You are dead. Come, let us go to Yamaloka.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Yamaloka? Are there Panchayat Unions, municipalities, corporations, a Legislative Assembly, an Upper House, Parliament, Rajya Sabha and so on there? Are there parties? Are there elections?”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Not a single nuisance. Just one peaceful world!”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Tch, tch. I do not like peaceful places at all. For my affairs to get done there must be plenty of commotion and confusion... I am not coming with you.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mr. Lanjayya! You must not say that. Otherwise I will be stained with the charge that I failed in my duty.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey, Yama-Dharma! Do you know the one way to keep that stain from falling on you?.... If I am to come with you, you must give me a cheque for five lakh rupees right now.”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yama-Dharma’s head reeled. “A bribe even for dying?” he muttered.",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... If I am to be born in the next birth, I will ask for that too, you know....”",
+      "sourceScan": 43,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... Do not take another birth. Ask for that too right now and give me a little ‘concession’.”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... Give me ten lakhs.”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“.... This fellow can only be beaten to death with money,” Yama says, taking out a cheque and writing it. He holds out the cheque.",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here—die by cash! You, die by cash!”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mr. Lanjayya looks at the cheque. “Fifty lakhs.”",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! Fifty lakhs!” Mr. Lanjayya’s mouth falls open.",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After that, he never closes it again.",
+      "sourceScan": 44,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  42,
+  43,
+  44
+ ]
+}

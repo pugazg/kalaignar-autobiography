@@ -1,0 +1,320 @@
+{
+ "workId": "nadakkuma-nadakkatha",
+ "slug": "nadakkuma-nadakkatha",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nadakkuma-nadakkatha",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நடக்குமா நடக்காதா?",
+  "en": "Will It Happen or Not?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நடக்குமா நடக்காதா?",
+    "sourceScan": 39,
+    "printedPage": 37
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முன்பெல்லாம் நான் திருமண விழாக்களில் பேசும்போது வெளிநாட்டு சிறுகதையொன்றை எங்காவது ஒரு மண விழா நிகழ்ச்சியில் சொல்வதுண்டு. அந்தக் கதையை மிக விரிவாக மெருகேற்றி நமது தமிழ்நாட்டுக்கு ஏற்றவாறு கூறுவேன்.",
+      "sourceScan": 39,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு கணவனும் மனைவியும் ஒற்றுமையுடன் வாழ்ந்தார்கள். ஏழ்மை அவர்களைத் தாக்கியது.",
+      "sourceScan": 39,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிழைப்புக்கு வழியின்றித் தவித்தனர். ஒரு நாள் மனைவி, தன் கணவனைப் பார்த்து வீட்டில் உள்ள காளை மாட்டைக் கொண்டு போய்ச் சந்தையில் விற்று அதில் கிடைக்கும் பணத்தைக் கொண்டு ஒரு பெட்டிக்கடை வைத்தால் குடும்பத்தை நகர்த்தலாமே என்று யோசனை கூறினாள். அவனும் உடன்பட்டு மாட்டை ஓட்டிக் கொண்டு சந்தைக்குச் செல்லும் சாலையில் நடந்தான். வழியில் மாடு அங்குமிங்கும் மிரண்டு ஓடியது. அப்போது ஆடு ஒன்றை ஓட்டிக் கொண்டு வந்த ஒருவன் அவனைப் பார்த்து “ஏனப்பா! அந்த முரட்டுக் காளையுடன் சிரமப்படுகிறாய்? என்னிடம் கொடுத்து விடு - அதற்குப் பதிலாக என் ஆட்டைத் தருகிறேன்” என்றான். அறிவிற் குறைந்த அந்தக் கணவன் மாட்டைக் கொடுத்து விட்டு ஆட்டை ஓட்டிக் கொண்டு சந்தையை நோக்கிச் சென்றான்.",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எதிரேயொருவன் கையில் ஒரு பெட்டைக் கோழியுடன் வந்தான். அவன், அந்தக் கணவனை ஏமாற்றி “கோழியென்றால் கையிலேயே தூக்கிக் கொண்டு போய் விடலாம்” என்றதும், அதற்கும் அறிவிலிக் கணவன் ஒப்புக் கொண்டு ஆட்டை அவனிடம் கொடுத்து விட்டுக் கோழியை வாங்கிக் கொண்டு சந்தைக்குப் புறப்பட்டான்.",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போகும்போது ஒரு பிரியாணிக்கடை! அந்தக் கடைக்காரன் அந்தக் கோழியை வாங்கி அன்றைக்குச் சமைத்து விட்டுத் திட்டம் போட்டு அறிவிலிக் கணவனிடம் நயமாகப் பேசி, ஒரு குவளைத் தேநீருக்குக் கோழியை வாங்கிக் கொண்டான்.",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறிவிலிக் கணவன் தேநீரைக் குடிக்கும்போது அவன் வீட்டுக்குப் பக்கத்து வீட்டுக்காரன் அவனைப்",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "space"
+     },
+     {
+      "text": "பார்த்து, “அட முட்டாளே! நானும் உன்னைக் கவனித்துக் கொண்டு தான் வருகிறேன். மாட்டைக் கொடுத்து, ஆட்டை வாங்கினாய் - ஆட்டைக் கொடுத்து கோழியை வாங்கினாய் - கோழியைக் கொடுத்து தேநீர் வாங்கிச் சாப்பிடுகிறாய். இதையெல்லாம் உன் மனைவி அறிந்தால் உன்னை விட்டு ஓடியே விடுவாள்; அல்லது உன்னை அடித்துத் துரத்துவாள்” என்றான்.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறிவிலிக் கணவன், “அப்படியெல்லாம் ஒன்றும் நடக்காது” என்றான். “நடக்கும்” என்றான் பக்கத்து வீட்டுக்காரன். நடக்குமா நடக்காதா என்பதற்கு இருவரும் பந்தயம் கட்டிக் கொண்டனர். நடந்தால் அறிவிலிக் கணவன், அவனது வீட்டைப் பக்கத்து வீட்டுக்காரனுக்கு எழுதி வைத்து விட வேண்டும். நடக்காவிட்டால் பக்கத்து வீட்டுக்காரன் அவனது பெட்டிக் கடையை அறிவிலிக் கணவனுக்குத் தந்து விட வேண்டும். இப்படிப் பந்தயம் கட்டிக் கொண்டு இருவரும் வீட்டுக்குத் திரும்பினர்.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அண்டை வீட்டுக்காரன் அறிவிலியின் மனைவியிடம் அவளது கணவன் செய்த முட்டாள்தனமான காரியங்களையெல்லாம் சொல்லி, “கடையில் உன் கணவன் மாட்டோடு சென்று ஒரு கோப்பைத் தேநீருடன் திரும்பியிருக்கிறான்” என்று கேலி செய்தான். அறிவிலியின் மனைவியோ தன் கணவனைப் பார்த்து, “அந்தத் தேநீரையாவது வயிறு நிரம்பச் சாப்பிட்டீர்களா?” என்று அன்பொழுகக் கேட்டாள்.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பக்கத்து வீட்டுக்காரனுக்கு ஒரே அதிர்ச்சி. பந்தயத்தில் தோற்றுப் போய்ப் பெட்டிக்கடையை எழுதிக் கொடுத்து விட்டான்.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுநாள் அந்த அறிவிலிக் கணவனை, அவன் பார்த்து, “என்னடா? உன் மனைவி உன்னை விட மூடமாக இருக்கிறாள்?” என்று கேட்டான். “அப்படி யொன்றுமில்லை, என்னதான் அவளுக்கு என் மீது வருத்தமோ கோபமோ இருந்தாலும் அதைப் பிறர் முன்னால் காட்டிக் கொள்ள மாட்டாள், நானும் அப்படித்தான், அந்தத் தைரியத்தில் தான் உன்னிடம் பந்தயம் கட்டினேன்” என்றான் அந்த அறிவிலிக் கணவன்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தங்கள் குடும்பத்துப் பிரச்சினைகளைப் பிறர் முன்னால் பெரிதுபடுத்தக் கூடாது என்பதற்கு இந்தக் கதை எடுத்துக் காட்டு.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Will It Happen or Not?",
+    "sourceScan": 39,
+    "printedPage": 37
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In earlier days, when I spoke at weddings, I would sometimes tell a foreign short story at one wedding function or another. I would elaborate and polish that story and tell it in a way suited to our Tamil Nadu.",
+      "sourceScan": 39,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A husband and wife lived together in harmony. Poverty struck them.",
+      "sourceScan": 39,
+      "printedPage": 37,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They struggled with no means of livelihood. One day the wife suggested to her husband that if he took the bull they had at home, sold it in the market, and used the money to open a small shop, they could keep the family going. He agreed and set off along the road to the market, driving the bull. On the way the bull became frightened and ran this way and that. A man driving a goat came along and said to him, “Why struggle with that rough bull? Give it to me—in return I'll give you my goat.” The husband, lacking in sense, gave him the bull and continued toward the market driving the goat.",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A man came toward him carrying a hen. He deceived the husband by saying, “A hen can simply be carried in your hand.” The foolish husband agreed to that too, gave him the goat, took the hen, and set off again for the market.",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "On the way there was a biryani shop! The shopkeeper wanted the hen to cook that day. With a plan in mind, he spoke sweetly to the foolish husband and took the hen from him in exchange for a cup of tea.",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "While the foolish husband was drinking the tea, his next-door neighbour, who had been following him, looked at him",
+      "sourceScan": 40,
+      "printedPage": 38,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and said, “You fool! I've been watching you all along. You gave away the bull and took a goat; gave away the goat and took a hen; and now you've given away the hen and are having tea in return. If your wife learns all this, she'll either run away from you or beat you and drive you out.”",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The foolish husband said, “Nothing like that will happen.” “It will,” said the neighbour. The two made a wager over whether it would happen or not. If it happened, the foolish husband had to sign over his house to the neighbour. If it did not happen, the neighbour had to give his small shop to the foolish husband. Having made this wager, the two returned home.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The neighbour told the fool's wife all the foolish things her husband had done and mocked him: “Your husband went to the market with a bull and has come back with a cup of tea.” But the fool's wife looked at her husband and affectionately asked, “At least did you have enough of that tea to fill your stomach?”",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The neighbour was utterly shocked. He had lost the wager and signed over the small shop.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The next day he saw the foolish husband and asked, “What, man? Is your wife even more foolish than you?” The foolish husband replied, “Nothing of the sort. However much disappointment or anger she may have toward me, she will not show it in front of others. I am the same way. It was with that confidence that I made the wager with you.”",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This story is an example of why family problems should not be magnified in front of others.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  39,
+  40,
+  41,
+  42
+ ]
+}

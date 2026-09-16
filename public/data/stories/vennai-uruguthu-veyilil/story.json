@@ -1,0 +1,744 @@
+{
+ "workId": "vennai-uruguthu-veyilil",
+ "slug": "vennai-uruguthu-veyilil",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/vennai-uruguthu-veyilil",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "வெண்ணெய் உருகுது வெயிலில்",
+  "en": "Butter Melts in the Sun"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "வெண்ணெய் உருகுது வெயிலில்",
+    "sourceScan": 47,
+    "printedPage": 45
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நெருக்கடி காலக் கொடுமைகளை கழக உடன்பிறப்புகள் யாரும் அவ்வளவு எளிதில் மறக்க முடியாது. அந்த நேரத்தில் தி.மு.கழகத்தின் மீது ஏவிவிடப்பட்ட கொடுமைகளை, நடத்தப்பட்ட அக்கிரமங்களை வேறு ஒரு இயக்கம் சந்தித்திருக்குமேயானால் அந்த இயக்கமே இல்லாமற் போயிருக்கும்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கழக தளகர்த்தர்கள், முன்னணியினர் ஐநூறு பேர் மிசாக் கைதிகளாக சிறையில் வாட-எழுத்துத் தடை, பேச்சுத் தடை, உண்மைச் செய்திகளை வெளியிடவும் தடை என்று தணிக்கைக் கெடு பிடிகள் கொடி கட்டிப் பறக்க,",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தன்னந் தனியாக - தனது பேனா முனையை வைத்தே இந்த இயக்கத்தை அழிவிலிருந்து மீட்டு, தூக்கி நிறுத்திய பெருமை கலைஞருக்கு உண்டு.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டு நடப்புகளை - ஆட்சியாளர்களின் அக்கிரமச் செயல்களை கழக உடன்பிறப்புகளுக்கு விளக்க - அதே நேரத்தில் தணிக்கை அதிகாரிகளின் கெடுபிடிகளுக்கு தப்பி வெளியிடும் வகையில் அந்த நேரத்தில் கலைஞர் தீட்டிய கடிதங்கள் ஒவ்வொன்றும் காலத்தினால் அழியாத கருத்துக் கருவூலங்கள் என்பது யாராலும் மறுக்க முடியாத உண்மை.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நெருக்கடி நிலை முடிவுக்கு வந்த பின்னரும் அது ஏற்படுத்திய தாக்கங்கள் மாறாத நிலையில் 1977 ஆம் ஆண்டு ஜூன் மாதம் 24ஆம் தேதியன்று முரசொலியில் “வெண்ணெய் உருகுது வெயிலில்” என்ற தலைப்பில் கலைஞர் தீட்டிய கடிதத்தை இங்கு எடுத்து வெளியிடுவதில் பெருமையடைகிறோம்.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு பானை சோற்றுக்கு ஒரு சோறு பதம் என்பார்கள். கடிதங்கள் எழுதியே கழகத்தை காத்த கலைஞரின் எழுத்து வன்மைக்கு அசைக்க முடியாத ஆதாரமாக திகழும் அந்தக் கடிதம் இதோ:",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உடன் பிறப்பே,",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இலக்கியக் கடிதம் எழுதி எத்தனையோ நாட்கள் ஆயிற்றல்லவா, அந்தக் குறை உனக்கு உண்டு என்பதை உணர்ந்து இன்று எழுதுகிறேன்.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நெருக்கடி காலத்தில் ‘இலக்கியம்’ எவ்வளவு பெருந்துணையாக விளங்கியது நமக்கு! தணிக்கை அதிகாரிகளைத் தவிப்புக்கு உள்ளாக்கி அவர்களால் வெட்டப்பட்டது போக எஞ்சிய எழுத்துக்களும் உனக்கு இன்பமூட்டின, எழுச்சியூட்டின என்று என்னைக் காணும் போதெல்லாம் சொல்வாயே நீ! கடிதங்களில் என்னை உற்சாகப் படுத்துவாயே நீ!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆமாம்! கரும்பைப் பல துண்டுகளாக வெட்டி - அதில் ஒரு துண்டைத் தின்றாலும் சுவை",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மாறுவதில்லையே - அதைப் புரிந்து கொள்ளாமல் தான் தணிக்கை அதிகாரிகள் நான் எழுதிய இலக்கியக் கடிதங்களைத் துண்டு துண்டாக வெட்டினர். ஆனால் நீயோ ‘வெட்டியதால் கரும்பு, எட்டியாகி விடாது’ என உரைத்துச் சுவைத்து மகிழ்ந்தாய்!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘யசோதர காவியம்’ எனும் வடமொழி நூல் ஒன்றின் கதைச் சுருக்கத்தை எழுத்தில் வடித்துக் கடிதமாகத் தீட்டினேன். உனக்கு! அதைத் தீட்டியதின் நோக்கம் என்ன தெரியுமா? நல்ல தமிழ்ச் சொற்கள் பழக்குலைகள் போலக் குவிந்து கிடக்கும் போது அவற்றை விடுத்து ஆபாசச் சொற்களைத் தேடிப் பிடித்து நம்மீது அவதூறு அர்ச்சனை செய்கிறார்களே; அவர்களது இயல்பை விளக்க வேண்டுமென்பதுதான், அந்தக் கடிதத்தின் நோக்கம்! அக்கதையை இழிதன்மை கொண்டோரின் போக்கு பற்றி உரைத்துத்தான் “யசோதர காவியத்தில்” வரும் மகாராணி ஒருத்தியை அவர்களோடு ஒப்பிட்டுக் காட்டினேன்.",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் அழகி! பேரழகி! ‘அமிர்தமதி’ என்பது அவள் பெயர் மட்டுமல்ல; அவளையே அமிர்த மென அருந்தி மகிழ்ந்தான் அவளை மணந்த மன்னவன் அவனும் அவளுக்குக் குறைவான அழகு படைத்தவனல்ல! அந்த ஆண்மையாளனின் விரிந்து பரந்த மார்பகத்தில் அவள் முகம் புதைத்தால் நீலவானத்தில் நிலவு தோன்றுவது போலத்தான் இருக்கும். அவனது அகன்ற தோள்களில் அவளோர் கிள்ளை போல் தொத்திக் கொள்ள முடியும். அவளை, அவன் தன் காதல் தெய்வமாகத்தான் போற்றினான்-புகழ்ந்தான்-முகில் தழுவும் அரண்மனை உப்பரிகையின் உச்சிமாடத்தில், அம்ச தாளிகா மஞ்சத்திலே",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அவளோடு படுத்திருக்கும்போது பெற்ற நினைவு மட்டும் அங்கே இருந்ததில்லை. “இன்பமே” என்று கொஞ்சுவான். அவளோ இன்பத்தை வேறு எங்கேயோ எதிர்பார்த்தாள். தொடுவான்! துவளமாட்டான். தொலைநோக்குடன் ஆகாயத்தை வட்டமிடும் அவள் விழிகள்! “என் உயிர்மூச்சே” என்று அணைப்பான்! அவளோ, ஒரு பெருமூச்சுடன் புரண்டு படுத்துக் கொள்வாள் வேறு பக்கமாக! “துடிப்புடைய உனக்கு!” என்று தடவிக் கொடுப்பான். துடித்திடும் அவள் நெஞ்சம்! ஆனால் அவனை நினைத்து அல்ல! வேறு ஒருவனை நினைத்து!",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டின் மகாராணி - மாடமாளிகைக்குச் சொந்தக்காரி - மன்னனின் பட்டமகிஷி - கொற்றக்குடை கொண்டவனுக்குத் துணை - கொலுமண்டபத்தில் அரசனுடன் வீற்றிருந்து குடிமக்களின் குறை கேட்கும் பேரரசி!",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எந்த நேரத்திலும் இட்ட கட்டளை என்னவென்று கேட்டு ஓடிய ஏராளமானப் பணியாட்கள் உண்டு! மாற்றார் தலைகளைப் பந்தாடும் மாவீரர்களும் மண்டியிட்டுப் பணிந்து நிற்பார். அவள் மாளிகைத் தாழ்வாரத்தில் நடந்து வந்தாள். மாவீரர்களும் பணிந்து நிற்பார்.",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சீர், சிறப்பு, கூட கோபுரம், கொற்றவனின் மடியில் இடம், இத்தனையிருந்தும் அவள் இதயம், எதையோ ஒன்றைத் தீராத பசியோடு தேடிக் கொண்டு இருந்தது.",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அமிர்தமதி தந்த சுகம் போதுமென்று அரசன் அயர்ந்து தூங்கிடுவான். அதன் பிறகு அவள் மெல்ல எழுந்து பூனைப் பாதங்களால் நடைபோடுவாள். அவள் மனங்கவர்ந்த யானைப் பாகனுக்காகத் தான் இத்தனை தவிப்பு!",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரண்மனைத் தோட்டத்திலேயே அவன் காத்திருப்பான். அமிர்தமதி ஆசையுடன் அவனை நெருங்குவாள்! அந்த யானைப்பாகன், அதற்குள் தன் கையிலிருக்கும் சவுக்கால் அவளை நையப் புடைப்பான். அவள் தாமதமாக வந்ததற்காக அவன் தரும் தண்டனை அது! அந்தச் சவுக்கடிகளால் அவள் ஆடைகள் கிழிந்து நிலவொளியில் அவள் அங்கங்கள் தலைகாட்டிச் சிரிக்குமே அல்லாது அழத் தொடங்கிடாது! ‘மன்னித்து விடு என் மன்னதனே’ என்று மகாராணி அந்த யானைப்பாகனை ஆரத் தழுவி, ஆயிரம் முத்தங்களை அவன் உச்சி முதல் உள்ளங்கால் வரையில் பொழிந்திடுவாள். பின்னர் இருவரும் பசும்புற்றரையில் வீழ்ந்தவாறே ‘பரலோகப் பயணம்’ ‘சொர்க்கலோகச் சுற்றுலா’ அனைத்தையும் நடத்துவர். யானைப் பாகனின் உடலில் கசியும் சீமும் ரத்தமும் அமிர்தமதியின் தங்க மேனியில் ஆங்காங்கு படிந்திருக்கும். அது அவளுக்கு வைரமும் பவளமும் போலத்தோன்றும்! வேறொன்றும் அந்த யானைப் பாகனுக்கு நோயில்லை; தொழுநோய்தான்!",
+      "sourceScan": 51,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதுதான் உடன்பிறப்பே! அமிர்தமதியின் கதை! நல்ல கணவன்-நாடாளும் மன்னவன் - ஆண்மை யாளன் - அழகரசன் - அவனிருக்க, அவனை விடுத்து-தொழுநோய் கொண்ட யானைப் பாகனிடம், சவுக்கடிகளையும் தாங்கிக் கொண்டு சல்லாபத் தீர்க்குத் தவங்கிடந்த அந்த மகாராணியைப் போலத் தானே, சில பேர் நல்ல தமிழ் இருக்க, அதை விடுத்து நாற்றமெடுத்த குட்டையில் நனைந்த சொல் எடுத்து எழுதுகின்றார் - ஏசுகின்றார் - என வேதனைப்பட்டு எழுதியிருந்தேன்.",
+      "sourceScan": 51,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் கடிதமே, உன் கைக்குக் கிடைக்காமல் தணிக்கை அதிகாரிகள் தடுத்து விட்டனர். நீதி மன்றம் வரையிலே நடக்க வேண்டியிருந்தது. உரிமைகள் பறிக்கப்பட்டிருந்த நேரம் - ஆதனால் நமது வழக்கை எடுத்துக் கொள்ளவே யாரும் தயாராக இல்லை!",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகிய நாதனை விட்டு, அழகிய பாகனை நாடி ஓடுகிறாளே ஒருத்தி-அதைப் போல எழில்மார் தமிழ்ச் சொற்களை விட்டு, எருக்கம்பூ வார்த்தைகளைத் தேடுவது தீது என்று கூறுவதற்காக எழுதிய கடிதம், ஏதோ சந்தேகப் பார்வைக்கு ஆளாகி - அதிகாரிகளால் அறவே தடுக்கப்பட்டு விட்டது! இந்தக் கதையின் குறிப்பை ஏற்கனவே ஒரு கடிதத்தில் சுட்டிக் காட்டியிருக்கிறேன். இன்று சற்று விரிவாக எழுதி னேன்.",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முன்பு ஒரு சில எழுத்தாளர்களின் போக்கினை சுட்டிக் காட்ட நான் மேற்கோள் காட்டிய இந்தக் கதை இப்பொழுது அந்த எழுத்தாளர்களுக்கு மட்டுமல்ல, நம்மை வெறுத்து வேறிடம் சென்றுள்ளார்களே சில பேர், அவர்களுக்கும் பொருந்தும் வண்ணம் அமைந்துள்ளதன்றோ!",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காவியங்கள், கவிதைகள் எத்துணைச் சுவை கூட்டுபவைகளாக இருக்கின்றன; அதே சமயத்தில் மறைமுகமாக நாம் தெரிவிக்க வேண்டிய அரசியல் கருத்துக்களுக்கும் அவை எவ்வளவு பயன்படுகின்றன, பார்த்தாயா!",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்று உனக்குக் கடிதம் எழுதத் தொடங்குவதற்கு முன்பு ‘குறுந்தொகை’யைப் புரட்டிப் பார்த்துக் கொண்டிருந்தேன். கவிஞர் வெள்ளி வீதியார் என்பார். ஒரு பாறையை நோக்கி என்னை அழைத்துச்",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "space"
+     },
+     {
+      "text": "சென்றார். எந்தப் பாறை? எந்த ஊரில்? மணப் பாறையா? வாள்பாறையா? என்றெல்லாம் கேட்டு விடாதே! ஒரு மலைக்கருகில் உள்ள சிறிய பாறை. அதனை நோக்கி என்னை அழைத்துச் சென்று ‘அதோ பார்’ என்று சுட்டிக் காட்டினார். ஆவலுடன் நானும் பார்த்தேன். கண்ட காட்சியைச் சொல்லாமல் இருக்க முடியவில்லை. நான் சொல்லி விடுகிறேன், நீ எந்த நிகழ்ச்சியுடன் அதனைப் பொருத்திக் கொண்டாலும் பரவாயில்லை-நான் பார்த்த நிகழ்ச்சியை அப்படியே உனக்குப் படம் பிடித்துக் காட்டி விடுகிறேன்.",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிறியதோர் பாறை! அந்தப் பாறை மீது பெரியதோர் வெண்ணெய் உருண்டை இருக்கிறது! அந்த வெண்ணெய்க்கு ஒருவன் காவல் இருக்கிறான். அவனுக்கு இரண்டு கைகளும் கிடையாது. வாயும் பேச முடியாது - ஊமை! அந்த வேளையில் வெயிலும் ஏறுகிறது. வெயில் ஏற ஏற பாறை மீதுள்ள வெண்ணெய் உருகுகிறது. அதை எடுத்து வேறிடம் கொண்டு போகலாம் என்றாலோ, காவல்காரனுக்குக் கைகள் இல்லை! யாரையாவது, உதவிக்கு அழைக்கலாம் என்றாலோ, வாயும் இல்லை! வெண்ணெய் உருகிக் கொண்டேயிருக்கிறது!",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடன்பிறப்பே, கையில்லா ஊமையரிடம் வெண்ணெயைக் காவல் காத்திடுமாறு பணித்தால் என்ன ஆகும் - என்பதற்கு நான் கண்ட காட்சி, விளக்கமான பதிலாக அமைந்திருக்கிறது அல்லவா?",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதைத்தான் வெள்ளி வீதியார், குறுந்தொகையில் அழகு தமிழ் எடுத்துச் சித்திரித்துள்ளார்.",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஞாயிறு காயும் வெல் அறை மருங்கில் கையில ஊமன் கண்ணின் காக்கும் வெண்ணெய் உணங்கல் போல....”",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கையில்லா ஊமையை வெண்ணெய்க்குக் காவல் வைத்து, அதனை வெயிலிலும் வைத்து விட்டால்?",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடன்பிறப்பே! வெள்ளி வீதியார், குறுந்தொகையில் வேடிக்கையாகக் காட்டும் இந்த நிகழ்ச்சி நாட்டில் உண்மையாகவே நடந்தால் எவ்வளவு வேதனையாக மாறிவிடும். புரிகிறதா?",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Butter Melts in the Sun",
+    "sourceScan": 47,
+    "printedPage": 45
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "No comrade of the movement can so easily forget the cruelties of the Emergency period. If another movement had faced the cruelties unleashed against the DMK and the outrages committed at that time, that movement itself might have disappeared.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Five hundred of the movement's commanders and front-line members languished in prison as MISA detainees—there was a ban on writing, a ban on speaking, and even a ban on publishing truthful news, while the restrictions of censorship reigned supreme.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Standing all alone—with nothing but the point of his pen—Kalaignar has the distinction of having rescued this movement from destruction and lifted it back to its feet.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To explain the events of the country and the wrongful acts of the rulers to the movement's comrades, while at the same time getting the writing published without falling into the grip of the censorship officers, every letter Kalaignar wrote in those days became a treasury of ideas that time cannot erase. No one can deny that truth.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even after the Emergency ended, while the effects it had created still remained, on 24 June 1977 Kalaignar wrote a letter in *Murasoli* under the title “Butter Melts in the Sun.” We are proud to reproduce that letter here.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They say a single grain of cooked rice is enough to test a whole pot. Here is that letter, standing as unshakable evidence of the power of the writing with which Kalaignar protected the movement by writing letters:",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Udanpirappe,",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It has been so many days since I wrote a literary letter, hasn't it? Realizing that you feel that absence, I write today.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "During the Emergency, what a great support ‘literature’ was to us! After making the censorship officers suffer, even the words that remained after all they had cut away gave you pleasure and stirred you to rise—you would tell me so whenever you saw me! In your letters, you would encourage me!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Yes! If sugarcane is cut into many pieces—even if you eat just one piece, its taste",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "space"
+     },
+     {
+      "text": "does not change. Without understanding that, the censorship officers cut the literary letters I wrote into piece after piece. But you declared, ‘Cutting sugarcane does not turn it into something bitter,’ and enjoyed its taste!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I took the story-summary of a Sanskrit work called ‘Yasodhara Kaviyam,’ shaped it in writing and made it into a letter—for you! Do you know why I wrote it? When fine Tamil words lie heaped like bunches of fruit, some abandon them, search out obscene words and perform a ritual of slander against us. The purpose of that letter was to explain their nature! To speak about the conduct of such degraded people, I compared them with a queen who appears in ‘Yasodhara Kaviyam.’",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "She was beautiful! Supremely beautiful! ‘Amirthamathi’ was not merely her name; the king who married her drank her in as though she herself were nectar and rejoiced. He too was no less handsome than she. When she buried her face in that virile man's broad chest, it looked like the moon appearing in the blue sky. On his broad shoulders she could cling like a little parrot. He worshipped her as the goddess of his love—praised her—at the topmost floor of the cloud-touching palace terrace, on the Amsa Thalika couch,",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "space"
+     },
+     {
+      "text": "yet when he lay there with her, the feeling that should have been present was not there. “My delight,” he would coo. She expected delight somewhere else. He would touch her! She would not yield. Her eyes circled the sky, looking far away! “Breath of my life,” he would say as he embraced her. With a deep sigh she would roll over and lie facing the other way! “You who are full of life!” he would say, caressing her. Her heart would pound—but not thinking of him! Thinking of another man!",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The queen of the land—mistress of the mansions—the king's crowned queen—companion of the bearer of the victorious parasol—the great queen who sat with the king in the royal hall and heard the grievances of the people!",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At every moment there were countless servants ready to run and ask what command she had given! Great warriors who could play ball with the heads of enemies would bow and stand before her. She walked along the palace corridor. The great warriors too stood bowed before her.",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Status, splendour, halls and towers, a place in the ruler's lap—despite having all this, her heart kept searching for something with an unending hunger.",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The king, exhausted and thinking the pleasure Amirthamathi had given him was enough, would fall asleep. After that she would rise softly and walk with the steps of a cat. All this yearning was for the elephant keeper who had captured her heart!",
+      "sourceScan": 50,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He would be waiting in the palace garden itself. Amirthamathi would approach him eagerly! Before she could do so, that elephant keeper would lash her mercilessly with the whip in his hand. That was the punishment he gave her for coming late! The blows of the whip would tear her clothes, and in the moonlight her limbs would appear and laugh rather than begin to weep! “Forgive me, my king,” the queen would say, embracing that elephant keeper tightly and showering a thousand kisses from the crown of his head to the soles of his feet. Then the two, fallen together on the green grass, would undertake every ‘journey to the other world’ and ‘tour of heaven.’ Pus and blood oozing from the elephant keeper's body would be smeared here and there over Amirthamathi's golden body. To her they would look like diamonds and coral! There was no other disease that elephant keeper suffered from—it was leprosy!",
+      "sourceScan": 51,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This, Udanpirappe, is the story of Amirthamathi! With a good husband—a king who ruled the country—a virile man—a handsome ruler—beside her, she abandoned him and, enduring even whip blows from a leprous elephant keeper, longed for amorous dalliance with him. In the same way, I wrote in anguish that some people, though good Tamil is available, abandon it, take words soaked in a stinking pool and write with them—and abuse with them.",
+      "sourceScan": 51,
+      "printedPage": 49,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The censorship officers stopped even that letter from reaching your hands. We had to go as far as the court. It was a time when rights had been taken away—and because of that no one was even prepared to take up our case!",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The letter was written to say that, just as a woman leaves a handsome husband and runs in search of a handsome keeper, it is wrong to abandon beautiful Tamil words and search for erukkam-flower words. Yet it came under some suspicious gaze and was completely stopped by the authorities! I have already referred briefly to this story in an earlier letter. Today I have written it in somewhat greater detail.",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Earlier I quoted this story to point to the conduct of a few writers. Now, does it not seem to fit not only those writers but also some people who have come to hate us and gone elsewhere?",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "How much flavour epics and poems add; and at the same time, have you seen how useful they can be for the political ideas we need to convey indirectly!",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Before beginning to write today's letter to you, I was leafing through the ‘Kuruntokai.’ There is a poet called Velli Veethiyar. She took me toward a rock and",
+      "sourceScan": 52,
+      "printedPage": 50,
+      "joinToNext": "space"
+     },
+     {
+      "text": "went. Which rock? In which town? Manapparai? Vaalpaarai? Don't start asking all that! It was a small rock near a mountain. She took me toward it and pointed, saying, ‘Look there.’ I too looked eagerly. I could not remain without telling you what I saw. I will tell you; it does not matter what event you connect it with—I will show you the scene I saw exactly as though taking a picture of it for you.",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A small rock! On that rock lies a large ball of butter! A man is guarding that butter. He has no hands. His mouth cannot speak either—he is mute! At that moment the sun is rising higher. As the sun rises, the butter on the rock melts. If he wants to pick it up and move it elsewhere, the guard has no hands! If he wants to call someone for help, he has no voice! The butter keeps melting!",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Udanpirappe, if a handless mute is ordered to guard butter, what will happen? Is not the scene I saw a clear answer to that question?",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This is what Velli Veethiyar has painted in beautiful Tamil in the Kuruntokai:",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Beside the white rock scorched by the sun, watched only by the eyes of a handless mute, like butter melting away....”",
+      "sourceScan": 53,
+      "printedPage": 51,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What if a handless mute is placed as guard over butter, and the butter is then left in the sun?",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Udanpirappe! If the scene Velli Veethiyar shows playfully in the Kuruntokai were actually to happen in the country, how painful it would become. Do you understand?",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 54,
+      "printedPage": 52,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54
+ ]
+}

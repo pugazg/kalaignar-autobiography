@@ -1,0 +1,217 @@
+{
+ "workId": "panthalile-paagarkai",
+ "slug": "panthalile-paagarkai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/panthalile-paagarkai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "பந்தலிலே பாகற்காய்",
+  "en": "Panthalile Paagarkai"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பந்தலிலே பாகற்காய்",
+    "sourceScan": 81,
+    "printedPage": 79
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "துக்கத்துக்கு போன இடத்தில் ஒப்பாரி வைக்க வந்தவள்:",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பந்தலிலே பாகற்காய் பந்தலிலே பாகற்காய் தொங்குதடி அக்காடி!”",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்றபடி அழ,",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்னொருத்தி பாடினாளாம்-",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அதைப் போகும் போது பார்த்துக்கலாம் போகும் போது பார்த்துக்கலாம்” என்று",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே வீட்டு சொந்தக்காரி",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஐயோ, அதை விதைக்கல்லோ விட்டிருக்கேன் விதைக்கல்லோ விட்டிருக்கேன்” என்று",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாடினாளாம்.",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Panthalile Paagarkai",
+    "sourceScan": 81,
+    "printedPage": 79
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At a house of mourning, a woman who had come to sing an oppari lament cried:",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Bitter gourd on the pandal, Bitter gourd on the pandal, It is hanging there, sister!”",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Another woman is said to have sung:",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“We can look at it when we leave, We can look at it when we leave.”",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At once the woman of the house sang:",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ayyo, I have left that one there for seed, I have left it there for seed.”",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  81
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "workId": "idhayam-pesugirathu",
+ "slug": "idhayam-pesugirathu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/idhayam-pesugirathu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "இதயம் பேசுகிறது",
+  "en": "The Heart Speaks"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "இதயம் பேசுகிறது",
+    "sourceScan": 43,
+    "printedPage": 41
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் ஒரு ஆங்கிலக் கதை படித்தேன். அந்தக் கதையில் ஒரு தாய்க்கு மகன் ஒருவன் இருந்தான். அந்த மகனுக்கு ஒரு ஆசைநாயகி இருந்தாள். அந்த ஆசைநாயகி தனது காதலனிடம் “உனது தாயின் இதயத்தை எடுத்து எனக்குத் தா” என்று கத்தியை எடுத்துக் கையிலே கொடுத்தாள். “கண்ணே! உன் கட்டளையை மீறமாட்டேன். இக்கணமே சென்று என் தாயின் இதயத்தைக் கொண்டு வருகிறேன்” என்று சொல்லி விட்டு கத்தியை எடுத்துக் கொண்டு சென்றான். அந்த கட்டழகன் தன் காதலிக்கு காணிக்கை செலுத்த,",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மகனைப் பார்த்தவுடன் அந்தத் தாய் “வாடா மகனே சாப்பிடலாம்” என அழைத்தாள். ஆனால் அந்த மகனோ தாய்மீது கத்தியுடன் பாய்ந்து குத்தினான். நெஞ்சைப் பிளந்து இதயத்தை எடுத்தான். எடுத்துக் கொண்டு தன் காதலியின் காலடியில் வைக்க ஓடினான். ஓடிய வேகத்தில் கால் தடுக்கி கீழே விழுந்தான்.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போது அவன் கையிலிருந்த அவனது தாயின் இதயம் “என்ன மகனே! அடிபட்டதா? வலிக்கிறதா?” என்று கேட்டது.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாய் ஒருத்திக்குத்தான் அத்தகைய சிறப்பு உண்டு. தமிழை நாம் தாய்மொழியாகக் கொண்டிருக்கிறோம். அந்த தமிழைக் காக்கத்தான் நாம் போராடுகிறோம்.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Heart Speaks",
+    "sourceScan": 43,
+    "printedPage": 41
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I read an English story. In that story, a mother had a son. That son had a beloved. The beloved handed her lover a knife and said, “Bring me your mother's heart.” “My dear! I will not disobey your command. This very moment I will go and bring you my mother's heart,” he said, and left with the knife. The handsome young man went to make an offering to his beloved,",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and when the mother saw her son she called to him, “Come, son, let us eat.” But the son lunged at his mother with the knife and stabbed her. He split open her chest and took out her heart. Carrying it, he ran to place it at his beloved's feet. In the speed of his running, he stumbled and fell.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Then his mother's heart, which was in his hand, asked, “What is it, son! Did you get hurt? Does it pain?”",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Only a mother has such a special quality. We have Tamil as our mother tongue. It is to protect that Tamil that we struggle.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  43,
+  44
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "workId": "thennai-marathil-pul",
+ "slug": "thennai-marathil-pul",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thennai-marathil-pul",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தென்னை மரத்தில் புல்",
+  "en": "Grass on a Coconut Tree"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தென்னை மரத்தில் புல்",
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மக்களை ஏமாற்ற எம்.ஜி.ஆருடைய அண்ணன் எம். ஜி. சக்கரபாணி அவர்களுடைய புதல்வர்கள் அத்தனை பேரும் “நாங்கள் சாராயத் தொழிற்சாலைக்கு லைசென்ஸ் வழங்க லஞ்சம் வாங்கவில்லை. சினிமா படம் எடுப்பதற்கு பத்தே முக்கால் லட்சம் ரூபாய் கடனாக வாங்கினோம்” என்று சொல்லியிருக்கிறார்கள்.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யாருமில்லாத நேரத்தில் நள்ளிரவில் தென்னந்தோப்பில் ஒரு தென்னை மரத்தில் ஒரு திருடன் ஏறினான். தேங்காய் குலைகளைப் பறிக்க! அதை தோப்புக்குச் சொந்தக்காரர் பார்த்து விட்டார்.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இறங்கு கீழே” என்றார். இறங்கினான். ஓர் அறை கொடுத்துக் கேட்டார் ஏன் தென்னைமரத்தில் ஏறினாய் என்று! புல் பிடுங்க ஏறினேன் என்றான் அந்தத் திருடன். “தென்னை மரத்தில் ஏதடா புல்” என்றார் தோப்புக்குச் சொந்தக்காரர் “அதுதான் பார்த்தேன். புல் இல்ல இறங்கி விட்டேன்” என்றான் திருடன்.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தென்னை மரத்தில் புல் பிடுங்குகிற கதைபோல சினிமா படம் எடுக்க கடன் வாங்கினோமேயல்லாமல் லஞ்சமாக வாங்கவில்லை என்று சொல்லியிருக்கிறார்கள்.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Grass on a Coconut Tree",
+    "sourceScan": 7,
+    "printedPage": 6
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To deceive the people, all the sons of M.G.R.'s elder brother, M. G. Chakrapani, have said, “We did not take a bribe to grant a licence for an arrack factory. We borrowed ten and three-quarter lakh rupees as a loan to make a cinema film.”",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At midnight, when no one was around, a thief climbed a coconut tree in a coconut grove—to pluck bunches of coconuts! The owner of the grove saw him.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Come down,” he said. The thief came down. The owner gave him a slap and asked why he had climbed the coconut tree. The thief said he had climbed it to pull out grass. “What grass is there on a coconut tree?” the grove owner asked. “That is exactly what I checked. There was no grass, so I came down,” the thief said.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Like the story of pulling grass from a coconut tree, they have said that they merely borrowed money to make a cinema film and did not take it as a bribe.",
+      "sourceScan": 7,
+      "printedPage": 6,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  7
+ ]
+}

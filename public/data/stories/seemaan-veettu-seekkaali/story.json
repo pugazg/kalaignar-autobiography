@@ -1,0 +1,1530 @@
+{
+ "workId": "seemaan-veettu-seekkaali",
+ "slug": "seemaan-veettu-seekkaali",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/seemaan-veettu-seekkaali",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சீமான் வீட்டு சீக்காளி",
+  "en": "The Invalid in the Rich Man's House"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சீமான் வீட்டு சீக்காளி",
+    "sourceScan": 41,
+    "printedPage": 39
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யோ! அந்த உயிர் போனால் எனக்குப் பைத்தியமே பிடித்துவிடும். என் மனைவிக்கு ஏற்கனவே இருதயக் கோளாறு! இப்படி ஒரு அதிர்ச்சி ஏற்பட்டால் அவள் இருதயம் ‘பொசக்’ என்று நின்றுவிடும். ‘குயின் மேரி’யில் படித்துக் கொண்டிருக்கிறாளே என் குமாரி; அவளுக்கு எந்த வழியில் என்னால் சமாதானம் சொல்ல முடியும்? செய்தி கேள்விப்பட்டு அவள் ஓடோடியும் வருவாள். இந்த வருஷம் படிப்பு-பரீட்சை எல்லாம் பாழ்! பாழ்! பாழே தான்!”",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—இப்படி வாய் விட்டுச் சொல்லிக் கொண்டே ‘கோர்’வென அழுது கண்ணீரைக் கொட்டினார் சீமான் செங்கமலம் பிள்ளை!",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவரது மனைவி மரகதம், ஆடாமல் அசையாமல் மரம் போல் நின்று கொண்டிருந்தாள். மரங்களின் இலைகளில் தங்கிய மழைத்துளிகள் காற்றின் அசைவில் ‘சொட் சொட்’வெனக் கொட்டுவது போல் அவளது விழிகள் நீரைப் பொழிந்து கொண்டிருந்தன.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேலைக்காரப் பொன்னனுக்குக் காலும் ஓடவில்லை; கையும் ஓடவில்லை. அண்டை அயல் வீட்டாரிடமெல்லாம் சீமான் வீட்டில் ஏற்பட்டுள்ள குழறலை எடுத்துக் கூறி பெரும்படை திரட்டி வந்து விட்டான்.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தெருவாரும், ஊராரும், முக்கிய பிரமுகர்களும் சீமான் வீட்டுக்கு அவசர அவசரமாக ஓடி வந்தார்கள்.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செங்கமலம் பிள்ளையின் முகவிசாரத்தைக் கண்டு அவரோடு பேசவே நாவெழாதவர்களாய் ஒருவர் முகத்தை ஒருவர் பார்த்துக் கொண்டு சந்தடியின்றி உட்கார்ந்து நிலைமைகளைக் கவனித்தனர்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“டெலிபோன்” மணி அடித்தது. பொன்னன் ஓடிப் போய்ப் பேசினான்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அலோ! அலோ! என்னுங்க?...‘டிரங்காலு’ங்களா?—,மெட்ரா’சிலேருந்தா?...கொஞ்சம் இருங்க!”",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எஜமான்! எஜமான்! பட்டணத்திலேயிருந்து... ‘டிரங்காலு’ங்க...”",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செங்கமலம் பிள்ளை மெதுவாக எழுந்து சென்று பேசத் தொடங்கினார்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஹலோ!...ஹலோ!...நான் தான் செங்கமலம் பிள்ளை பேசுறேன்...ஓ! லலிதாவா?...என்னம்மா?...அப்படித் தான் இருக்கு!...கொஞ்சம் ‘சீரியஸ்’ தான்! காலையிலே சொன்னேனே; அதே மாதிரி தான் இப்பவும் ‘கண்டிஷன்’; டாக்டர்கள் ஒண்ணும் பயப்பட வேண்டாம்னு சொல்றாங்க! நீ வீண் கவலைப்படாதேம்மா!...எப்படியும் பிழைக்க வைக்கிறது எங்க பொறுப்பு—என் அம்மா நீ...சின்னக் குழந்தை மாதிரி அழுகிறே?...அய்யய்யோ...என்ன...போனிலேயா அழுவது?...(தானும் அழுது கொண்டே) அதெல்லாம் கடவுள் கை விடமாட்டாரம்மா!...நீ கவலைப்படாம இரு...மணிக்கு ஒரு தடவை நிலைமையை நான் உனக்கு சொல்லிக்கிட்டே இருக்கிறேன். நீங்க ரெண்டு பேரும் எனக்கு ரெண்டு கண்ணு மாதிரி!...அதிலே ஒரு கண்ணை இழக்க நான் சம்மதிப்பேனா?...அழாதே லலிதா!...‘எக்ஸ்டன்ஷன் ப்ளீஸ்’...அபாயக் கட்டம் தாண்டி நாளைக்கே உனக்கு நல்ல சேதி அனுப்புறேன். எல்லாம் நல்லாவே முடியும்.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுத்த மாதம் கல்யாணத்தை சந்தோஷமா நடத்தலாம்...உன் கல்யாணம் கண்டிப்பா அடுத்த மாசம் முடியும்ணு ஜோஸ்யர் சொல்லியிருக்கும்போது...அதுக்குள்ளே நம்ப வீட்டிலே எப்படி துக்கச் செய்தி ஏற்பட முடியும்?...பயப்படாதே...! சரி...அப்புறம் பேசுறேன். இன்னும் ஒரு மணி நேரத்துக்குப் பிறகு ‘போன்’ பண்ணு! எஸ்! எஸ்! ம்—வச்சுடு!”",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சென்னையிலுள்ள மகளுக்கு ஆறுதல் கூறிய செங்கமலம் பிள்ளை, தனக்கு ஆறுதல் கூற வல்லார் யாருமின்றி, டாக்டரின் வருகையை ஆவலோடு எதிர் பார்த்துக் கொண்டே நின்றார்.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "டாக்டரை அழைக்கப் போன இரண்டு ‘கார்’களில் ஒரு ‘காரி’ல் டாக்டர் வந்து இறங்கினார். இன்னொரு ‘காரி’ல் இருந்த ‘செதாஸ் கோப்’பை எடுத்து மாட்டிக் கொண்டு டாக்டர் பரபரப்புடன் உள்ளே நுழைந்தார். அன்று காலையிலிருந்து டாக்டர் அங்கு வருவது இது ஐந்தாவது தடவை! அப்படி வந்தும் செங்கமலம் பிள்ளைக்குத் திருப்தி இல்லை!",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“டாக்டர் சார்! நீங்கள் இங்கேயே தங்கியிருக்க வேண்; எங்களுக்கு ரொம்ப பயமாயிருக்கிறது!” என்று சீமான் கெஞ்சும் குரலில் கேட்டுக் கொண்டார்.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பயப்படாதீங்க!...நான் தான் ஒரு நாளைக்கு பத்து தடவை வர்றேனே; பக்கத்திலேயே ‘நர்சு’ வேற இருக்கிறு...பிறகென்ன பயம்?” என்று சமாதானம் கூறியவாறு உள்ளே நுழைந்தார்.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறைக்குள்ளேயிருந்த நர்சு டாக்டருக்கு வணக்கம் தெரிவித்து உள்ளே அழைத்துச் சென்றாள். செங்கமலம் பிள்ளையும் டாக்டரைத் தொடர்ந்து உள்ளே செல்ல முயன்றார். ஆனால் நர்சு, பிள்ளையை உள்ளே வர",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — source-odd `தங்கியிருக்க வேண்;` retained; final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேண்டாமென்று ஒரு புன்னகையை வீசித் தடுத்து விட்டாள்.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்போது டாக்டர் வெளியே வருவார்; என்ன செய்தி சொல்லுவார்—என எதிர்பார்த்தவாறு செங்கமலம் பிள்ளையும், மரகதமும், மற்றவர்களும் ஆவல் முகத்தில் தேக்கி நின்று கொண்டிருந்தார்கள். உள்ளேயிருந்து எந்தவிதமான தகவலும் வெளியே வரவில்லை. ஒரே அமைதி; ஆழ்ந்த அமைதி!",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரென நர்ஸ் கலகலவென வாய் விட்டுச் சிரித்த சப்தம் வெளியே எதிரொலித்தது. ‘ஒரு வேளை அது அழுகையோ? அய்யோ மோசம் போனோமோ?” என ஒரு கணம் நினைத்துப் பிறகு தானே சமாதானம் செய்து கொண்டார் செங்கமலம் பிள்ளை.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மனசு நெருப்பா எரியுது! இப்ப என்ன சிரிப்பு வேண்டியிருக்கு! இந்த டாக்டர்களே இப்படித்தான்; கல் நெஞ்சக்காரர்கள்!” என்று முணுமுணுத்துக் கொண்டே உலவினர் சிந்தை நொந்திருந்த அந்த சீமான்!",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பதினைந்து நிமிடங்களுக்குப் பிறகு டாக்டர் வெளியே வந்தார். “கொஞ்சம் சீரியஸ் தான்! சாயங்காலம் அஞ்சு மணிக்கு மேல்தான் சொல்ல முடியும். அதுவரையில் அபாயக் கட்டம் தான்! ஒரு முக்கியமான ஊசி மருந்து எழுதித் தாரேன்...அதை வாங்கி வைக்கச் சொல்லுங்க; நாலு மணிக்கு வந்து அந்த ஊசியைப் போட்டா கொஞ்சம் குணம் தெரியலாம். கடைசி முயற்சிகளை செய்து பார்த்து விடுவோம்!” என்று கூறி, மருந்தையும் எழுதிக் கொடுத்து விட்டு காரில் போய் ஏறிக் கொண்டார் டாக்டர்.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணீர் வழிந்தோட டாக்டருக்கு விடை கொடுத்தனுப்பிவிட்டு திண்ணையில் நின்றவாறு ஆகாயத்தை வெறிக்கப் பார்த்துக் கொண்டிருந்தார் சீமான்.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவரது கவனத்தைத் திடீரெனத் திருப்பும் வகையில் தெருவில் ஒரு பெருங்கூச்சல்; நாலைந்து பேர் சீமான் வீட்டை நோக்கி ஓடிவந்தனர். தலைவிரிகோலமாக! அதில் ஒருத்தி நாற்பது வயது மாது! அவள் சீமானை நோக்கிக் கதறினாள்:",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யோ எஜமான்! என் மகள் புடவையில் நெருப்பு பிடிச்சி உடம்பெல்லாம் வெந்து போச்சு! புழுவாத் துடிக்கிறு. ஆஸ்பத்திரிக்குக் கொண்டு போகணும். வழி செய்யுங்க, சாமி!”",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—அந்தத் தாய் தரையில் விழுந்து புரண்டு புரண்டு அழுதாள்.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கொஞ்சம் காரு கொடுத்தா போதும் எஜமான்! உடனே ஆஸ்பத்திரிக்குக் கொண்டுகிட்டுப் போனா உயிர் பிழைச்சுக்குவா!” என்று அலறினான் அந்தப் பெண்ணின் தகப்பன்.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காராவது—சனியனாவது!......இங்க மனுஷன் படுறபாடு தெரியலே?......வேதனையிலே துடிச்சுக் கிட்டிருக்கிறேன்......நேரம் தெரியாமல் வந்து உயிரை வாங்காதீங்க போங்க!” என்று கடிந்துரைத்து விட்டு சீமான், தன் வீட்டுக்குள்ளே நுழைந்து, இரும்புப் பெட்டியைத் திறந்து, ஒரு நூறு ரூபாய் நோட்டை எடுத்துப் பொன்னன் கையிலே தந்து, “இதை வைத்துக் கொண்டு காரிலே போய் மருந்துக் கடையில் டாக்டர் எழுதிக் கொடுத்த ஊசி மருந்தை வாங்கி வா, சீக்கிரம்!”.... என்று விரட்டினார்.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொன்னனும் காரில் புறப்பட்டான். சீமான் உதவியை நாடி வந்த அந்தத் தெரு ஏழைக் குடும்பத்",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — source-pixel `தலைவிரிகோலமாக!` retained; physical page split restored; final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தினர் தங்கள் கண்ணீரால் தாங்கள் பெற்றெடுத்த பெண்ணின் உடலைக் குளிப்பாட்டி நெருப்பால் ஏற்பட்ட எரிச்சலைத் தீர்க்கலாம் என எண்ணியோ என்னவோ வீட்டுக்குத் திரும்பினர்.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் பெயர் செல்லி! செல்லம்மா என்பது இட்ட பெயர்—“செல்லி” சுவையோடு அழைக்கும் சுருக்கமான பெயர்! அவள் தான் அந்த வீட்டுக்கே ஒளி விளக்கு! அவளது எதிர்காலத்தைப் பூமணப் பொலிவுள்ளதாக ஆக்கவே அந்தப் பெற்றோர்கள் தங்கள் மூச்சை உடலில் நிறுத்திக் கொண்டிருந்தார்கள் என்று கூறலாம். அன்றாடம் கூலி வேலை செய்து பிழைக்கும் குடும்பம்—அந்தக் குடும்பத்தில் இப்படி ஒரு பெரும் புயல்!",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுப்பில் கஞ்சி காய்ச்சிக்கொண்டிருந்த செல்லியின் சேலையில் தீ பற்றியது. நெருப்புக்குத் தேவையான அழுக்கும் எண்ணையும் செல்லியின் புடவையில் ஏராளமாக இருந்ததால் நெருப்பு வேகமாகப் பரவியது. ஆகவே செல்லியின் உடம்பு வெந்துபோயிற்று. நிற்க முடியாமல், உட்கார முடியாமல், படுக்க முடியாமல்—எதுவும் செய்ய முடியாமல் அங்குமிங்கும் ஓடியாடிக் கூச்சலிட்டவாறு துடித்தாள். சாவின் மடியில் மட்டுமே தான் அந்த எரிச்சலை அடக்கக் கூடிய குளிர்ச்சியெனும் மாமருந்து இருக்கிறது! ஆனால் அந்த மடியில் தங்கள் மகளைக் கிடத்த ஏழைப் பெற்றோர்கள் விரும்பவில்லை. எப்படி விரும்ப முடியும்? தங்கள் உடலே தீப்பட்டது போல் துடித்தனர். சீமானிடம் கெஞ்சினர். ‘கார்’ கிடைக்கவில்லை. கடவுள் தயவில் பாரத்தைப் போட்டு வாழைக் குருத்துக்கள் வெட்டிப் போட்டு அதில் செல்லியைப்",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — source-pixel `உடலைக்` retained; scan 45→46 provenance restored; final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "படுக்க வைத்துத் தங்களால் இயன்ற சிகிச்சைகளைத் தொடங்கினர்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மணி நான்கு அடித்தது!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குறிப்பிட்டபடி டாக்டர், சீமான் வீட்டுக்குள்ளே நுழைந்தார். வாங்கப்பட்ட ஊசி மருந்து அவரிடம் கொடுக்கப்பட்டது. டாக்டர் உள்ளே போனார். நர்சு, முறைப்படி எதிர் கொண்டழைத்தாள். உள்ளிருந்து என்ன செய்தி வருமோ எனக் காதையும் கண்ணையும் தீட்டிக் கொண்டு காத்திருந்தனர் சீமான் குடும்பத்தினர், பத்து நிமிடத்திற்கெல்லாம் டாக்டர் வெளியே வந்தார்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உடனே போய் ‘லேடி டாக்டர்’ ஜான்சியை அழைத்து வாருங்கள்!” என்று கூறிவிட்டு மறுபடியும் உள்ளே போனார்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உள்ளேயிருந்து முனகல் ஒலி தொடர்ந்து கேட்டது!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ! அய்யோ!......அம்மா!........”",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அது யாருடைய குரல்?",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சீமான் உன்னிப்பாகக் கவனித்தார்!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அது அந்த நர்சினுடைய குரல் தான்!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் ஏன் முனக வேண்டும்?",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சீமான் வியப்பிலாழ்ந்தார்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "லேடி டாக்டர் ஜான்சியும் வந்து சேர்ந்தாள்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவள் அறையில் நுழைந்து சில நிமிஷங்களில் டாக்டர் வெளியே வந்தார்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சீமான், “என்ன சமாச்சாரம்?” என்று ஆவலோடு கேட்டார்.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — source-odd `எதிர் கொண்டழைத்தாள்` retained; final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "டாக்டர் பதில் சொல்லவில்லை. சிரித்துக் கொண்டார். முனகல் ஒலி அதிகமாயிற்று!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வானம் இருண்டது! பயங்கர இடிகள்! மின்னல்கள்! பெருமழை! பேய்க்காற்று! எல்லாம் சிறிது நேரத்தில்!.......",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறைக்குள்ளே முனகல் நின்றது! திடுமென ஒரு புதிய குரல்!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“குவா! குவா!”",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "லேடி டாக்டர் ஜான்சி வெளியே வந்தாள்!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சுகப்பிரசவம் தான்!” என்றாள்.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யாருக்கு? என்ன விஷயம்?”——சீமான் துடிப்போடு கேட்டார்.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“யாருக்குமில்லை! இங்கே ரூமில் இருக்கும் நர்சுக்குத்தான்”—என்றார் சிரித்துக் கொண்டே டாக்டர்.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நல்லவேளையாய்ப் போச்சு! நர்சுக்குப் பிரசவம் பார்க்க என் வீடு தானா கிடைச்சுது?......டாக்டர் சார்! நீங்க வந்த வேலையைப் பாருங்க!...மணி ஐந்தாகப் போகுது! அபாயக் கட்டம் நீங்கியதா இல்லையா?”",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இதோ......இன்னும் சில நிமிஷங்களில் தெரிந்து விடும்......சரியா ஐந்து மணிக்குப் பிரக்ஞை வந்து கண்ணை விழித்தாகணும்—வாயைத் திறந்தாகணும்!”",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "டாக்டர் தைரியமாகச் சொன்னார். எல்லோரும் கடிகாரத்தின் முட்கள் நகருவதையே கவலையோடு கவனித்துக் கொண்டிருந்தார்கள்.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "டாண்! டாண்!! டாண்!!! டாண்!!!! டாண்!!!!! மணி ஐந்து அடித்தது! ....",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — final source/visual closure **PASS**; page is `verified`.",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "டாக்டர் உள்ளே போனார்!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரே அமைதி!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திடீரென ஒரு உறுமல் சப்தம்!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தொடர்ந்து “வள்! வள்!” என்ற குரைப்பு!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஆ என் செல்லி பிழைத்துக் கொண்டது!” எனக் கத்தியவாறு உள்ளே ஓடினார் சீமான். சீமான் வீட்டு ‘செல்லி’ பிழைத்துக் கொண்டது!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால்...",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தெருவிலே ஒரு பாடை போகிறது! அதில், பாட்டாளியின் மகள் செல்லி பவனி போய்க் கொண்டிருக்கிறாள்!",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "★",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "> Historical-glyph gate: **PASS** — final source/visual closure **PASS**; terminal star confirmed; page is `verified`.",
+      "sourceScan": 49,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Invalid in the Rich Man's House",
+    "sourceScan": 41,
+    "printedPage": 39
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Seeing the grief on Sengamalam Pillai’s face, they could not bring themselves to speak to him. They looked at one another, sat without a sound, and watched what was happening.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The “telephone” rang. Ponnan ran to answer it.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hello! Hello! What?... A ‘trunk call’?—,from Madras?... Just a moment!”",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Master! Master! From the city... a ‘trunk call’...”",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sengamalam Pillai slowly got up, went over, and began to speak.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hello!...Hello!...This is Sengamalam Pillai speaking...Oh! Lalitha?...What is it, dear?...It’s still the same!...A little ‘serious,’ that’s all! I told you this morning; the ‘condition’ is still the same now; the doctors say there’s nothing to be afraid of! Don’t worry needlessly, dear!...Keeping that life alive is our responsibility—my dear child...why are you crying like a little girl?...Oh dear...what...crying over the phone itself?...(weeping himself) God won’t abandon us, dear!...Don’t worry...I’ll keep telling you the condition once every hour. You two are like my two eyes!...Would I ever agree to lose one of my eyes?...Don’t cry, Lalitha!...‘Extension please’...Once the danger stage is past, I’ll send you good news tomorrow itself. Everything will turn out well.",
+      "sourceScan": 41,
+      "printedPage": 39,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Next month we can celebrate the wedding happily...When the astrologer has said that your wedding will definitely take place next month...how can news of mourning possibly arise in our house before then?...Don’t be afraid...! All right...I’ll talk later. ‘Phone’ again after another hour! Yes! Yes! Mm—hang up!”",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Having consoled his daughter in Madras, Sengamalam Pillai stood longing for the doctor’s arrival, with no one capable of consoling him.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Of the two ‘cars’ that had gone to fetch the doctor, the doctor got out of one. From the other ‘car’ he took the ‘sethascope’ that had been riding there, put it on, and hurried inside. This was the fifth time since morning that the doctor had come there! Even so, Sengamalam Pillai was not satisfied!",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Doctor sir! You must stay right here; we’re terribly frightened!” the rich man pleaded.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Don’t be afraid!...I’m coming ten times a day as it is; there’s a ‘nurse’ right nearby too...what is there to fear?” he said reassuringly as he went in.",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The nurse inside the room greeted the doctor and led him in. Sengamalam Pillai tried to follow the doctor. But the nurse stopped Pillai from coming",
+      "sourceScan": 42,
+      "printedPage": 40,
+      "joinToNext": "space"
+     },
+     {
+      "text": "inside, flashing him a smile that said he should not.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When would the doctor come out? What news would he give?—Sengamalam Pillai, Maragatham, and the others stood with anxious expectation gathered on their faces. No information came from inside. Only silence; deep silence!",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suddenly the nurse’s loud, tinkling laughter echoed outside. ‘Could that perhaps be crying? Alas, have we been ruined?’ Sengamalam Pillai thought for a moment, then reassured himself.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“My heart is burning like fire! What is there to laugh about now! These doctors are all like this—stone-hearted people!” muttered the distressed rich man as he paced about.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Fifteen minutes later the doctor came out. “It is a little serious! I can say only after five this evening. Until then it is the danger stage! I’ll write down an important injection...Tell them to buy it and keep it ready; if I come at four and give that injection, we may see some improvement. We’ll try the final measures!” The doctor wrote out the medicine, handed it over, and got into his car.",
+      "sourceScan": 43,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With tears streaming, the rich man saw the doctor off and stood on the verandah staring blankly at the sky.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A great commotion in the street suddenly drew his attention. Four or five people came running toward his house. Hair dishevelled! Among them was a woman of about forty. She cried out to the rich man:",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Alas, master! My daughter’s sari caught fire and her whole body is burnt! She’s writhing like a worm. We have to take her to the hospital. Please make some way for us, sir!”",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "—The mother fell to the ground and rolled about, weeping.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Just lend us a car, master! If we take her to the hospital at once, she’ll survive!” cried the girl’s father.",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A car? To hell with the car!......Can’t you see what a man is suffering here?......I’m writhing in agony......Don’t come at the wrong time and take my life too. Go away!” the rich man snapped. He went inside, opened his iron safe, took out a hundred-rupee note, put it in Ponnan’s hand, and ordered, “Take this, go by car to the medical shop, buy the injection the doctor wrote down, and come back quickly!”....",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ponnan left in the car. The poor street family that had come seeking the rich man’s help",
+      "sourceScan": 44,
+      "printedPage": 42,
+      "joinToNext": "space"
+     },
+     {
+      "text": "went back home, perhaps thinking that with their own tears they might bathe the body of the daughter they had borne and soothe the burning caused by the fire.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Her name was Chelli! Chellamma was the name she had been given—“Chelli” was the shorter, sweeter name by which they called her! She was the lamp that lit that whole house! One could say that those parents kept breath in their bodies only to make her future bloom with floral radiance. A family surviving on daily-wage labour—and into that family, such a great storm!",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Chelli’s sari caught fire while she was boiling gruel on the stove. Because her sari had plenty of the dirt and oil that fire needed, the flames spread quickly. Chelli’s body was badly burnt. Unable to stand, unable to sit, unable to lie down—unable to do anything—she ran here and there, screaming and writhing. Only in the lap of death lies the great cooling medicine that can quell such burning! But the poor parents did not want to lay their daughter in that lap. How could they? They writhed as though their own bodies had caught fire. They begged the rich man. No ‘car’ was available. By God’s grace, they put together a load, cut banana stems and spread them on it, and laid Chelli",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "space"
+     },
+     {
+      "text": "down on them and began whatever treatment they could manage.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The clock struck four!",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As promised, the doctor entered the rich man’s house. The purchased injection was handed to him. The doctor went inside. The nurse, as usual, received him and led him in. The rich man’s family waited with eyes and ears sharpened for whatever news might come from inside. Within ten minutes the doctor came out.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Go at once and bring Lady Doctor Jansi!” he said, then went back inside.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The sound of groaning continued from within!",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! Alas!......Mother!........”",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Whose voice was that?",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The rich man listened intently!",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was the nurse’s voice!",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Why should she be groaning?",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The rich man was lost in astonishment.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Lady Doctor Jansi arrived too.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A few minutes after she entered the room, the doctor came out.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is the matter?” the rich man asked anxiously.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The doctor did not answer. He smiled. The groaning grew louder!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The sky darkened! Terrible thunder! Lightning! Heavy rain! A ghostly gale! All within a short while!.......",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The groaning inside stopped! Suddenly, a new voice!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Kuwa! Kuwa!”",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Lady Doctor Jansi came out!",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“A normal delivery!” she said.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“For whom? What is this?”——the rich man asked with a pounding heart.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“For no one else! For the nurse in this room, of course,” the doctor said with a laugh.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Thank goodness! Was my house the only place available to deliver the nurse’s baby?......Doctor sir! Please attend to the work you came for!...It’s almost five! Has the danger stage passed or not?”",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Here......we’ll know in a few minutes......At exactly five, consciousness must return, the eyes must open—the mouth must open!”",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The doctor spoke confidently. Everyone watched the hands of the clock move with anxious attention.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Dong! Dong!! Dong!!! Dong!!!! Dong!!!!! The clock struck five! ....",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The doctor went inside!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Complete silence!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Suddenly, a growling sound!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Then a bark: “Val! Val!”",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Ah! My Chelli has survived!” cried the rich man as he ran inside. The ‘Chelli’ in the rich man’s house had survived!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But...",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A funeral bier was passing along the street! On it, Chelli, the labourer’s daughter, was going in procession!",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "★",
+      "sourceScan": 48,
+      "printedPage": 46,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49
+ ]
+}

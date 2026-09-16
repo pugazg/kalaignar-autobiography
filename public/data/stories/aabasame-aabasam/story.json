@@ -1,0 +1,108 @@
+{
+ "workId": "aabasame-aabasam",
+ "slug": "aabasame-aabasam",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/aabasame-aabasam",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஆபாசமே ஆபாசம்!",
+  "en": "Obscenity Is Obscene!"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஆபாசமே ஆபாசம்!",
+    "sourceScan": 23,
+    "printedPage": 22
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரிக்கும் அரனுக்கும் - அதாவது ஆணுக்கும் ஆணுக்கும் பிறந்தவர்தான் அய்யனார் என்பது ஆபாசமில்லையாம். அதை ஆபாசம் எனக் கூறியது ஆபாசமாம்!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாருகாவனத்து ரிஷி பத்தினிகளைச் சிவனார் கற்பழித்த கதை ஆபாசமில்லையாம். அதை ஆபாசம் எனக் கூறியது ஆபாசமாம்!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“முழு நிர்வாணமாக வந்து அன்னம் பரிமாறு” என்று அனு சுயாவைப் பார்த்து மும்மூர்த்திகளும் கோரியது ஆபாசமில்லையாம். இந்த முட்டாள்தனங்களை நம்பாதீர் என முழக்கியது ஆபாசமாம்!",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Obscenity Is Obscene!",
+    "sourceScan": 23,
+    "printedPage": 22
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That Ayyanar was born to Ari and Aran — that is, to a man and a man — is said not to be obscene. Calling it obscene is said to be obscene!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The story that Sivanar raped the wives of the rishis of Darukavana is said not to be obscene. Calling it obscene is said to be obscene!",
+      "sourceScan": 23,
+      "printedPage": 22,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Trimurtis demanding of Anu Suya, “Come completely naked and serve us food,” is said not to be obscene. Declaring that these foolish tales should not be believed is said to be obscene!",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  23,
+  24
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "workId": "aandavan-dharisanam-kodutha-oor",
+ "slug": "aandavan-dharisanam-kodutha-oor",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/aandavan-dharisanam-kodutha-oor",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "ஆண்டவன் தரிசனம் கொடுத்த ஊர்",
+  "en": "The Village Where God Gave Darshan"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "ஆண்டவன் தரிசனம் கொடுத்த ஊர்",
+    "sourceScan": 18,
+    "printedPage": 17
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“...அம்பல் திருமாரித்திலேதானே... சுந்தரமூர்த்தி நாயனார் பெரிய யாகம் செய்தார்? அந்த யாகத்திலே வேதங்களைக் கற்ற பிராமணர்கள் புரோகிதர்களாக இருந்து மந்திரம் ஜபித்தனர். அப்போது திருவாரூரில் இருந்து தியாகராஜப் பெருமான், தானும் தன் தேவியுமாக ‘புலையர்கள்’ வேடத்தில் கள்ளுக்குடம் தூக்கிக் கொண்டு செத்துப்போன கன்றுக் குட்டியையும் தோளில் போட்டுக் கொண்டு அந்த யாகத்துக்கு வந்தார்” என்று ஸ்தல புராணம் கூறுகிறது. ஆண்டவனே தாழ்த்தப்பட்ட ஜாதிக்காரராக வந்து தரிசனம் கொடுத்த ஊரல்லவா இது!",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Village Where God Gave Darshan",
+    "sourceScan": 18,
+    "printedPage": 17
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“...Was it not at Ambal Thirumariththile itself... that Sundaramurthi Nayanar performed a great yajna? In that yajna, Brahmins learned in the Vedas served as priests and chanted mantras. At that time, Thyagaraja Peruman came from Tiruvarur, he and his consort together, disguised as ‘Pulayars’, carrying a pot of liquor and bearing a dead calf on his shoulder, and came to that yajna,” says the *sthala puranam*. Is this not the town where God himself came as a person of a downtrodden caste and granted darshan!",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  18
+ ]
+}

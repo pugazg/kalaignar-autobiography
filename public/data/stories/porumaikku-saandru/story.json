@@ -1,0 +1,125 @@
+{
+ "workId": "porumaikku-saandru",
+ "slug": "porumaikku-saandru",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/porumaikku-saandru",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "பொறுமைக்கு சான்று",
+  "en": "Porumaikku Saandru"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பொறுமைக்கு சான்று",
+    "sourceScan": 60,
+    "printedPage": 58
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நபிகள் நாயகம் மிக சாதாரணமான எளிய மனிதராகத் திகழ்வார். அவர் பெரிய மேதை என்றாலும் - பெருமகனார் என்றாலும் கூட எளிய வாழ்க்கையில் பற்றும் பாசமும் கொண்டவர் என்ற காரணத்தால் ஒரு குறிப்பிட்ட தெருவிலே ஒரு நாள் நடந்து செல்லும் பொழுது அவர் மீது வெறுப்புற்ற ஒரு மங்கை மாடியிலேயிருந்து அவர் தலையிலே குப்பையைக் கொட்டுவது வழக்கம். ஒவ்வொரு நாளும் நாயகம் அங்கே வரும் பொழுது கூரையிலேயிருந்து குப்பை விழும். அதை உதறி விட்டு நபிகள் நாயகம் தன்னுடைய பாதையிலே நடந்து செல்வார்.",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நாள் அப்படி வழக்கம்பொழுது குறிப்பிட்ட அந்த வீட்டு மாடியிலேயிருந்து குப்பை கொட்டப்படவில்லை. நபிகள் நாயகத்திற்கு ஒரே ஆச்சரியம். திகைத்து நின்றார். அங்கே உள்ளவர்களைப் பார்த்து “தினந்தோறும் ஒரு அம்மையார் என் மீது",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "space"
+     },
+     {
+      "text": "குப்பை கொட்டுவார்களே! அவர்கள் எங்கே?” என்று கேட்டார். “அவருக்கு உடல் நலமில்லை. அதனால் தான் அந்தக் காரியத்தை அவரால் இன்றைக்கு செய்யவில்லை” என்றனர். உடனடியாக மாடிப்படியிலே ஏறிச் சென்று அந்த அம்மையாரிடம் உடல் நலம் விசாரித்து அவருடைய உடல் நலிவு தீர மருந்து கொடுத்தார் என்பது நபிகள் நாயகத்தினுடைய பொறுமைக்கு, அன்பு உள்ளத்திற்கு அவருடைய அறவழி நிலைக்கு ஒரு சான்றாக விளங்குகிறது.",
+      "sourceScan": 61,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 61,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Porumaikku Saandru",
+    "sourceScan": 60,
+    "printedPage": 58
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Prophet Muhammad lived as a very ordinary, simple man. Though he was a great scholar and a great person, he was attached to a simple life. One day, whenever he walked along a particular street, a woman who disliked him would pour rubbish from the upper floor onto his head. Every day, when the Prophet came that way, rubbish would fall from above. He would shake it off and continue along his path.",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day, when he came by as usual, no rubbish was poured from that house. The Prophet was greatly surprised. He stopped in wonder and asked the people there, “Every day a lady pours rubbish on me—",
+      "sourceScan": 60,
+      "printedPage": 58,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "where is she?” They said, “She is unwell. That is why she could not do that today.” At once he climbed the stairs, went to the lady, enquired after her health, and gave her medicine so that her illness might be cured. This stands as testimony to the Prophet’s patience, his loving heart and his steadfastness in the path of virtue.",
+      "sourceScan": 61,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 61,
+      "printedPage": 59,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  60,
+  61
+ ]
+}

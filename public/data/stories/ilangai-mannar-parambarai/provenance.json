@@ -1,0 +1,53 @@
+{
+ "workId": "ilangai-mannar-parambarai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/ilangai-mannar-parambarai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "870dba168d1e004bf90788a9befc8d6637f58264",
+ "batch": 7,
+ "validationGroup": "2004",
+ "source": {
+  "printedTitleTa": "இலங்கை மன்னர் பரம்பரை",
+  "collectionTa": "கலைஞரின் குட்டிக் கதைகள்",
+  "editionStatementTa": "Second Edition, March 2004",
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065567_கலைஞரின்_குட்டிக்_கதைகள்_2004.pdf",
+  "scanSha256": "33bdfb4f47bc688750fff11f967a0d2b95a93a9aa09044c0467107dae583ab04",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "25–27",
+  "storyScanCount": 3,
+  "printedPages": "24–26",
+  "verifiedPages": 3,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/ilangai-mannar-parambarai/pages/",
+  "derivedAssembly": "stories/ilangai-mannar-parambarai/sections/ilangai-mannar-parambarai.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 2
+ },
+ "english": {
+  "titleEn": "The Lineage of the Kings of Lanka",
+  "scanAnchors": 3,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "PASS"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

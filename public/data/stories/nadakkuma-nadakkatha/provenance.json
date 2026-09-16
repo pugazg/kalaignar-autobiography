@@ -1,0 +1,53 @@
+{
+ "workId": "nadakkuma-nadakkatha",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nadakkuma-nadakkatha",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "bbbbe8f3dc05a554719b98d8d880e27f2609c511",
+ "batch": 7,
+ "validationGroup": "2008",
+ "source": {
+  "printedTitleTa": "நடக்குமா நடக்காதா?",
+  "collectionTa": null,
+  "editionStatementTa": "Second Edition, December 2008",
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065857_கலைஞர்_சொன்ன_கதைகள்.pdf",
+  "scanSha256": "1b2bf86892717776b1b3dc7fcb18dc146d5bfd0d60986509dc9cbbf5f235444b",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "39–42",
+  "storyScanCount": 4,
+  "printedPages": "37–40",
+  "verifiedPages": 4,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/nadakkuma-nadakkatha/pages/",
+  "derivedAssembly": "stories/nadakkuma-nadakkatha/sections/nadakkuma-nadakkatha.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 1
+ },
+ "english": {
+  "titleEn": "Will It Happen or Not?",
+  "scanAnchors": 4,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "PASS"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

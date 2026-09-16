@@ -1,0 +1,130 @@
+{
+ "workId": "kuzhanthaiyum-kiliyum",
+ "slug": "kuzhanthaiyum-kiliyum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kuzhanthaiyum-kiliyum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "குழந்தையும் கிளியும்",
+  "en": "The Child and the Parrot"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "குழந்தையும் கிளியும்",
+    "sourceScan": 48,
+    "printedPage": 47
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாங்கள் ஒரு காலத்திலே இந்த தமிழ்நாட்டு மக்களால் தமிழ்நாட்டு அரியணையில் ஏற்றுவிக்கப்பட்டவர்கள்தான். ஒன்பதாண்டு காலம் அமைச்சர் பொறுப்பிலே இருந்தவர்கள்தான், ஏழாண்டுகாலம் முதலமைச்சராக இருந்தவன்தான். இன்றைக்கு அந்தப் பதவியில் நான் இல்லை என்பதற்காக உங்களை மறந்து விடத் தயாரில்லை. இடையில் உங்களுக்கு எங்கள்மீதேதோ ஒரு சந்தேகம்; அல்லது ஏதோஒரு கோபம். நாங்கள் தவறு செய்துவிட்டோம் என்ற தவறான கற்பனை உங்களுக்கு ஏற்பட்டிருக்கலாம்.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பல பாடத்திலே படித்ததுண்டு, ஒரு பார்ப்பனப் பெண் கிளி வளர்த்தாள் என்று அந்தக் கிளியை தன்னுடைய குழந்தைக்குப் பாதுகாப்பாக விட்டுவிட்டு அவள் வெளியே பல்வேறு வேலைகளுக்காகச் செல்வாள்,",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Child and the Parrot",
+    "sourceScan": 48,
+    "printedPage": 47
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We were once the very people whom the people of Tamil Nadu placed on Tamil Nadu's throne. We were the people who held ministerial responsibility for nine years; I was the one who served as Chief Minister for seven years. Because I do not hold that office today, I am not prepared to forget you. In the meantime, you may have developed some suspicion toward us; or some anger. You may have formed the mistaken notion that we committed a wrong.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We have read in many lessons of a Brahmin woman who reared a parrot. Leaving that parrot as a guard for her child, she would go out on various errands.",
+      "sourceScan": 48,
+      "printedPage": 47,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day, after putting the child to sleep in a cradle, that Brahmin woman left the parrot on guard, took a pot and went to the pond to draw water. Before she returned, a snake came down from above the cradle and reached the point of striking the child. The parrot saw it, immediately pounced, killed the snake and saved the child, and then ran outside to tell the victorious news that it had saved the child.",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Because it had killed the snake, the parrot's mouth was covered in blood. The woman who had gone to the pond returned home. The parrot ran out from the doorway, and she saw its mouth. She became suspicious. “Ah! The parrot I left here for protection has killed our tender child, hasn't it? That is why there is blood on its mouth,” she thought. She acted in haste. She brought the water-filled pot in her hand down on the parrot's head. She killed the parrot. When she went inside and looked, the child was lying in the cradle, smiling. The snake bitten by the parrot lay there in pieces.",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In just the same way, as that Brahmin woman misunderstood the parrot and killed it, you defeated the Dravida Munnetra Kazhagam in the last election.",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Come a little further inside and you will know! You will understand whether the reason there was blood in the parrot's mouth was really that it had bitten the infant.” Therefore we invite you to come inside. We invite you to understand the Dravida Munnetra Kazhagam; we invite you to understand the principles of the Dravida Munnetra Kazhagam.",
+      "sourceScan": 49,
+      "printedPage": 48,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  48,
+  49
+ ]
+}

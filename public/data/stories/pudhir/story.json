@@ -1,0 +1,240 @@
+{
+ "workId": "pudhir",
+ "slug": "pudhir",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/pudhir",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "புதிர்",
+  "en": "Riddle"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புதிர்",
+    "sourceScan": 41,
+    "printedPage": 40
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அம்மா பூவழகி! தானியங்களில் பதரை எளிதாகக் கண்டுபிடித்து ஒதுக்கிவிடுகிறாய். ஆனால் மக்களுக்கிடையிலும் பதர்கள் இருக்கிறார்களே, அவர்களை எப்படிக் கண்டுபிடிப்பது?”",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பூவழகி மட்டுமல்ல - அவளுடன் சேர்ந்து வேலை பார்த்த எல்லாப் பெண்களுமே திகைத்துநின்றனர். அப்போது கார்மேகத்தின் மருமகன் கண்ணாயிரம் அங்கே வந்தான். அவனைக் கண்டதும் ஓரமாக ஒதுங்கிக் கொண்டனர்.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன, சிட்டுக் குருவிகள் என்ன சொல்கின்றன? எனது மாமனாருக்கு வாய்ப்பு என்றால் வாய்ப்புத்தான். எப்போதும் இளம் புறாக்கள் ஆடி - அடடா! இந்தக் களத்து மேட்டில் ஒரே களியாட்டம் தான்!”",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணாயிரம் இப்படிச் சொன்னதும் கார்மேகம் வெகுண்டார்.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஏய், இப்படியெல்லாம் பேசாதே. எல்லோரும் நான் பெற்ற பெண்களைப் போல!”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணாயிரம் அதைக் கேட்டு உரக்கச் சிரித்தான்.",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன மாமனாரே, உலகம் தெரியாமல் பேசுகிறீர்கள்! இவர்களில் நீங்கள் யாரைத் தொட்டாலும் துவளுவார்களே! என்ன கிள்ளைகளா; நான் சொல்வது சரிதானே?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அது வரை பொறுமையாக நின்றிருந்த அந்த மகளிர் கூட்டத்திலிருந்து பூவழகி புயல் போலப் புறப்பட்டுக் கார்மேகத்தின் எதிர் வந்து நின்றாள்.",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அய்யா! மக்களில் பதர்களை எப்படிக் கண்டுபிடிப்பது என்று கேட்டீர்களே! அதற்கு அலையத் தேவையில்லை. இதோ இந்த உருவம்தான் மக்களில் பதர்” என்று சீற்றம் பொங்கச் சத்தமிட்டாள்.",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Riddle",
+    "sourceScan": 41,
+    "printedPage": 40
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Mother Poovazhagi! Among grains you easily identify the chaff and throw it aside. But there is chaff among people too. How can one identify them?”",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Not only Poovazhagi—all the women working with her stood bewildered. At that moment Kaarmegam’s son-in-law Kannaayiram came there. When they saw him, they moved aside.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is this? What are the little sparrows saying? If my father-in-law gets an opportunity, then an opportunity it is! Young doves are always dancing—ah! This threshing floor is nothing but one great revel!”",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kannaayiram said this, and Kaarmegam grew angry.",
+      "sourceScan": 41,
+      "printedPage": 40,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Hey, don’t talk like that. Every one of them is like a daughter born to me!”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Hearing this, Kannaayiram laughed aloud.",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“What is this, father-in-law? You speak without knowing the world! Whichever one of these women you touch would wilt! What, little ones; am I not right?”",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Until then Poovazhagi had stood patiently among the group of women. Now she burst out like a storm and stood before Kaarmegam.",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sir! You asked how to identify chaff among people. There is no need to go searching for it. Here—this very figure is the chaff among people!” she shouted, anger surging in her voice.",
+      "sourceScan": 42,
+      "printedPage": 41,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  41,
+  42
+ ]
+}

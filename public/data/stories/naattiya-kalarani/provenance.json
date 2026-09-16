@@ -1,0 +1,53 @@
+{
+ "workId": "naattiya-kalarani",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/naattiya-kalarani",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "d855faa21248e6a8aeb2bb907d71a83a37285ed2",
+ "batch": 7,
+ "validationGroup": "1976",
+ "source": {
+  "printedTitleTa": "நாட்டிய கலாராணி",
+  "collectionTa": "நளாயினி",
+  "editionStatementTa": "நான்காம் பதிப்பு 1976",
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065574_நளாயினி_1976.pdf",
+  "scanSha256": null,
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "25–46",
+  "storyScanCount": 22,
+  "printedPages": "25–46",
+  "verifiedPages": 22,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/naattiya-kalarani/pages/",
+  "derivedAssembly": "stories/naattiya-kalarani/sections/naattiya-kalarani.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 4
+ },
+ "english": {
+  "titleEn": "Queen of the Art of Dance",
+  "scanAnchors": 1,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "not recorded"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

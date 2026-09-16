@@ -1,0 +1,98 @@
+{
+ "workId": "sirai-kodiyathu",
+ "slug": "sirai-kodiyathu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/sirai-kodiyathu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சிறை கொடியது",
+  "en": "Prison Is Cruel"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சிறை கொடியது",
+    "sourceScan": 28,
+    "printedPage": 27
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுரைக்காய்ப் பிஞ்சின் தலையில் மிளகாய்ப் பழத்தைச் சொருகி இடையில் மல்லிகை இலைகளையும், சிறகாய்ப் பின்புறம் தாழை மடலையும் வைத்தால், பச்சைக்கிளியே!",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உன்போல் படைப்பு! உன்போல் படைப்பு! வட்டத் தலையே! சிவப்பு மூக்கே! சின்னச் சிறகே! நீண்ட வாலே! கண்ணார் கிளியே, சொன்னது பிசகே! வண்ணனை கேட்டு வாழ்த்த மறப்பாய். புகழச் சொல் கேட்டும் போற்றிடமாட்டாய்! காரணம் அறிவேன் சின்னக் கிளியே! கூண்டில் உன்னைப் போட்டதனாலே",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "space"
+     },
+     {
+      "text": "தூண்டிற் புழுவாய்த் துடிக்கிறாய் நீயும்! சிறையிலே உன்னை அடைத்து மகிழ்ந்தேன். இன்று தெளிந்தேன். சிறை மிகக் கொடியது! சிறை மிகக் கொடியது!",
+      "sourceScan": 29,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Prison Is Cruel",
+    "sourceScan": 28,
+    "printedPage": 27
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Stick a chilli fruit into the head of a tender bottle-gourd, place jasmine leaves in the middle and a screw-pine petal behind as wings — and there you have a green parrot!",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A creation like you! A creation like you! O round head! O red beak! O little wing! O long tail! Lovely-eyed parrot, what I said was wrong! When asked of Vannan, you forget to praise him. Even when told to praise, you will not extol! I know the reason, little parrot! Because I put you in a cage",
+      "sourceScan": 28,
+      "printedPage": 27,
+      "joinToNext": "space"
+     },
+     {
+      "text": "you too writhe like a worm on a hook! I rejoiced in shutting you in prison. Today I understand. Prison is very cruel! Prison is very cruel!",
+      "sourceScan": 29,
+      "printedPage": 28,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  28,
+  29
+ ]
+}

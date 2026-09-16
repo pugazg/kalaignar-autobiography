@@ -1,0 +1,120 @@
+{
+ "workId": "veeravadi",
+ "slug": "veeravadi",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/veeravadi",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "வீரவாடி",
+  "en": "Veeravadi"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "வீரவாடி",
+    "sourceScan": 18,
+    "printedPage": 17
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மன்னர்கள் காலத்தில் ‘நோக்கர்’ என்னும் குலத்தினருக்கு இனாமாக வழங்கப்பட்ட கிராமத்திற்குப் பெயர் தான் வீரவாடி. அந்தச் சிற்றாருக்கு அந்தப் பெயரைச் சூட்டியவரே பழைய காலத்து மன்னர் ஒருவர்தானாம்.",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நோக்கர் குலத்தைச் சேர்ந்தவர்கள் முதுகில் முறங்களைக் கட்டிக் கொண்டு பறக்கும் கலையைக் கற்று அதனை மிகத் திறமையாக வெளிக்காட்டி வந்தார்களாம். அவர்கள் ஒருநாள் மன்னரை அணுகித் தங்கள் திறனைக் காட்ட வாய்ப்பு வழங்குமாறு கோரினார்களாம். அதை நம்ப முடியாத மன்னர் அவர்களைப் பார்த்து “நீங்கள் முறத்தைக் கட்டிக் கொண்டு பறந்து சென்று எந்த ஊரில் இறங்குகிறீர்களோ. அந்த ஊரையே உங்கள் இனத்தவர்க்கு இனாமாக அளிக்கத் தயார்” என்றாராம்.",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த அறைகூவலை ஏற்றுக் கொண்டு நோக்கர் குலத்தினர் முறங்களைக் கட்டிக் கொண்டு பறந்து வந்து ஓர் ஊரில் இறங்கினார்களாம். மகிழ்ச்சியடைந்த மன்னர் அந்த ஊரையே அவர்களுக்கு",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மானியமாக வழங்கி, அந்த ஊருக்கும் ‘வீரவாடி’ என்ற பெயரைச் சூட்டினாராம்.",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Veeravadi",
+    "sourceScan": 18,
+    "printedPage": 17
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the days of kings, the village granted as an *inam* to the people of the community called ‘Nokkar’ came to be known as Veeravadi. It is said that an old-time king himself gave that hamlet this name.",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "People belonging to the Nokkar community would tie *muram* — winnowing trays — to their backs, learn the art of flying, and display it with great skill. One day they approached the king and asked for an opportunity to demonstrate their ability. The king, unable to believe them, said, “Tie the muram to yourselves and fly. Whichever village you land in, I am ready to grant that entire village as an inam to your community.”",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Accepting that challenge, the Nokkar people tied on the muram, flew, and landed in a village. The delighted king granted that very village to them",
+      "sourceScan": 18,
+      "printedPage": 17,
+      "joinToNext": "space"
+     },
+     {
+      "text": "as an inam, and is said to have named that village ‘Veeravadi’.",
+      "sourceScan": 19,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  18,
+  19
+ ]
+}

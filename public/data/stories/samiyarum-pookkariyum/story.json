@@ -1,0 +1,142 @@
+{
+ "workId": "samiyarum-pookkariyum",
+ "slug": "samiyarum-pookkariyum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/samiyarum-pookkariyum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சாமியாரும் பூக்காரியும்",
+  "en": "The Ascetic and the Flower Seller"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சாமியாரும் பூக்காரியும்",
+    "sourceScan": 24,
+    "printedPage": 23
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு சாமியார் கோயில்பக்கமாகச் செல்லும்போதெல்லாம் அங்கே பூ விற்றுக் கொண்டிருந்த ஒரு பெண் அந்தச்",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "space"
+     },
+     {
+      "text": "சாமியாரைப் பார்த்து “என்ன சாமியாரே ? எப்போது கல்யாணம் ?” என்று கேட்டுக் கொண்டிருப்பாள். முதல்நாள் அவள் அப்படிக் கேட்டபோது சாமியார் முறைத்துவிட்டுப் போய்விட்டாராம் இரண்டாவது நாள் அந்தப் பூக்காரி அதே கேள்வியைக் கேட்டபோது சாமியார் கொஞ்சம் கனிவாகப் பார்த்துவிட்டுப் போனார். மூன்றாவது நாள் அவள் கேட்டபோது சாமியார் கடைக்கண்ணால் பார்த்துவிட்டுப் போனார்.",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான்காவது நாள் அவள் கேட்டதும் சாமியார் “இப்போதே நான் தயார் கல்யாணத்திற்கு ! வா? இதோ தாலி!” என்று சொன்னார்.",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப்போல, யார் முதலமைச்சர்? யார் முதலமைச்சர் என்று கேட்டார்கள். அது நான்தான் முதலமைச்சர் என்று பதில் சொல்ல வேண்டிய நிலைமையை உருவாக்கியது. எனவே அந்த அவசியத்தை உருவாக்கியது எம்.ஜி.ஆர்தான்",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "(இது 1980 சட்டமன்ற தேர்தலின்போது கூறிய கதை)",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Ascetic and the Flower Seller",
+    "sourceScan": 24,
+    "printedPage": 23
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Whenever an ascetic passed by the temple, a woman selling flowers there would look at the",
+      "sourceScan": 24,
+      "printedPage": 23,
+      "joinToNext": "space"
+     },
+     {
+      "text": "ascetic and keep asking, “Well, ascetic? When is the wedding?” The first day she asked him like that, the ascetic glared and went away. The second day, when the flower seller asked the same question, the ascetic looked at her a little more kindly and went away. The third day she asked, the ascetic gave her a sidelong glance and went away.",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "On the fourth day, when she asked, the ascetic said, “I am ready for the wedding right now! Come! Here is the thaali!”",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the same way, they kept asking, “Who is the Chief Minister? Who is the Chief Minister?” That created a situation in which I had to answer that I was the Chief Minister. Therefore it was M.G.R. who created that necessity.",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "(This story was told during the 1980 Legislative Assembly election.)",
+      "sourceScan": 25,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  24,
+  25
+ ]
+}

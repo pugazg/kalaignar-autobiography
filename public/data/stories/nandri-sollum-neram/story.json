@@ -1,0 +1,103 @@
+{
+ "workId": "nandri-sollum-neram",
+ "slug": "nandri-sollum-neram",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/nandri-sollum-neram",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "நன்றி சொல்லும் நேரம்",
+  "en": "Nandri Sollum Neram"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நன்றி சொல்லும் நேரம்",
+    "sourceScan": 80,
+    "printedPage": 78
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு உழவன் தன்னுடைய வயலுக்குத் தண்ணீர் இல்லாமல், பயிர் செய்ய முடியாமல் வானத்தைப் பார்த்து ஏங்குகிறான். வானத்திலே மேகம் இல்லை. மழையும் இல்லை. மழை வராதா என்று மனக்கவலையோடு படுத்துத் தூங்குகிறான். மறுநாள் காலையிலே மழை பொழிகிறது. வயலுக்கு ஓடி வருகிறான். உழுகிறான். பயிர் செய்கிறான். அறுவடை நடத்துகிறான். உழுது பயிரிட்டு அறுவடை நடத்தி தானியங்களை வீட்டில் கொண்டு வந்து குவிக்கின்ற வரையில் மேகம் அல்லவா இந்த மழையைத் தந்தது என்று எண்ண",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அவனுக்கு நேரம் இல்லை. இவ்வளவையும் செய்து முடித்து விட்டு, ஆகா மேகத்திற்கு நன்றி கூற மறந்து விட்டோமே என்று தெருவிலே வந்து நின்று ஆகாயத்தை அண்ணாந்து பார்க்கிறான். மேகம் தன்னை மழையாகக் கரைத்துக் கொண்டு எப்பொழுதோ மறைந்து போய் விட்டது. அவன் நன்றி கூறுகிற நேரத்தில் மேகம் ஆகாயத்தில் இல்லை.",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Nandri Sollum Neram",
+    "sourceScan": 80,
+    "printedPage": 78
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A farmer has no water for his field and cannot raise a crop. He looks up at the sky in longing. There are no clouds in the sky. There is no rain either. Worried that rain may not come, he lies down and sleeps. The next morning it rains. He runs to the field. He ploughs. He cultivates the crop. He harvests it. Until he has ploughed, cultivated, harvested and brought the grain home and piled it up, to think that it was the cloud that gave him this rain—",
+      "sourceScan": 80,
+      "printedPage": 78,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "he has no time. After finishing all this, he thinks, “Ah, I forgot to thank the cloud,” comes out into the street and stands looking up at the sky. The cloud had long ago dissolved itself into rain and disappeared. By the time he thinks of giving thanks, the cloud is no longer in the sky.",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 81,
+      "printedPage": 79,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  80,
+  81
+ ]
+}

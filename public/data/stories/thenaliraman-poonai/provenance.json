@@ -1,0 +1,53 @@
+{
+ "workId": "thenaliraman-poonai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thenaliraman-poonai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "f7f4f60e77603edf5dbd0f58067369fb702618a7",
+ "batch": 7,
+ "validationGroup": "1987",
+ "source": {
+  "printedTitleTa": "தெனாலிராமன் பூனை",
+  "collectionTa": "கலைஞர் சொன்ன குட்டிக் கதைகள்",
+  "editionStatementTa": "இரண்டாம் பதிப்பு — 1987",
+  "publisherTa": null,
+  "scanFilename": "TVA_BOK_0065566_கலைஞர்_சொன்ன_குட்டிக்_கதைகள்_1987.pdf",
+  "scanSha256": "29c986812f95c43105eec4b38fa9e02c3c4f66cf3c4e8a686b81dd28c1164f0f",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "46–48",
+  "storyScanCount": 3,
+  "printedPages": "45–47",
+  "verifiedPages": 3,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/thenaliraman-poonai/pages/",
+  "derivedAssembly": "stories/thenaliraman-poonai/sections/thenaliraman-poonai.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 1
+ },
+ "english": {
+  "titleEn": "Tenali Raman's Cat",
+  "scanAnchors": 3,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "not recorded"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

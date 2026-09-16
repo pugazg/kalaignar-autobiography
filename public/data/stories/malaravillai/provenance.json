@@ -1,0 +1,53 @@
+{
+ "workId": "malaravillai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/malaravillai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "sourceTree": "7c87689241fff6fb9f77a59dc170f6018024efcd",
+ "batch": 7,
+ "validationGroup": "2009",
+ "source": {
+  "printedTitleTa": "மலரவில்லை",
+  "collectionTa": "16 கதையினிலே",
+  "editionStatementTa": "நான்காம் பதிப்பு — மார்ச் 2009",
+  "publisherTa": "திருமகள் நிலையம், சென்னை-17",
+  "scanFilename": "TVA_BOK_0065745_16_கதையினிலே.pdf",
+  "scanSha256": "21daed58600d2e927dec4341fd1e0eab597f12d50f8c444458de9bc4ad18a859",
+  "sourcePdfCommitted": false,
+  "controllingSourceNote": "Source facts are carried as the source archive records them for this work; the controlling PDF is not vendored into this repository and is never fetched at runtime. Fields the source does not establish are null, never invented."
+ },
+ "storyScope": {
+  "storyScans": "50–63",
+  "storyScanCount": 14,
+  "printedPages": "45–58",
+  "verifiedPages": 14,
+  "complete": true
+ },
+ "tamilAssembly": {
+  "authority": "stories/malaravillai/pages/",
+  "derivedAssembly": "stories/malaravillai/sections/malaravillai.md",
+  "note": "The per-scan page records are the archival textual authority the reading text is built from; the assembled section file is a derived reading convenience and is not used to attribute text to scans."
+ },
+ "crossScanJoinPolicy": {
+  "policy": "A scan-final fragment that does not close a sentence continues into the next scan's opening fragment, joined for reading with a single space.",
+  "basis": "Applied uniformly from the punctuation the page records themselves carry; the archive records no per-boundary adjudication for these stories.",
+  "appliedBoundaries": 6
+ },
+ "english": {
+  "titleEn": "Malaravillai",
+  "scanAnchors": 14,
+  "kind": "project-created",
+  "kindBasis": "An archive-produced translation derived from the project's own verified Tamil reading, not a separately published translation. The Tamil remains authoritative.",
+  "reviewRecorded": "TRANSLATION_REVIEW PASS",
+  "paragraphingNote": "The English follows the verified Tamil's paragraph structure and the same scan anchors; it does not re-divide the story."
+ },
+ "visualFidelity": {
+  "result": "PASS"
+ },
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicCollectionExposed": false,
+  "note": "Wave 6 Batch 7 P1 hidden data foundation: not in catalogue, /read, sitemap, or any public collection."
+ }
+}

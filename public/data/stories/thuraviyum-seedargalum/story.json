@@ -1,0 +1,297 @@
+{
+ "workId": "thuraviyum-seedargalum",
+ "slug": "thuraviyum-seedargalum",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/thuraviyum-seedargalum",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "துறவியும் சீடர்களும்",
+  "en": "The Ascetic and the Disciples"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "துறவியும் சீடர்களும்",
+    "sourceScan": 10,
+    "printedPage": 9
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு துறவி பல மாணவர்கள் அடங்கிய ஒரு மடத்தை நடத்திக் கொண்டிருந்தார். அந்த மடத்தின் மாணவர்களுக்கு நல்ல அறிவுரையைப் போதித்து வந்தார். மாணவர்கள் ஒரு நாள் தங்களுக்குள்ளாகவே ஒரு கலந்துரையாடல் நடத்தி “இந்த துறவி யாரோடு நீண்டகாலமாகவேநாமும் இங்கேயே தங்கி பயின்று வருகிறோம். இந்த மடத்தில் நமக்கு எல்லாம் பிடிக்கிறது. ஆனால் இந்த மடத்தில் இருக்கிற சமையல்காரன் நல்ல உணவைச் சமைப்பது இல்லை. எதற்கும் ஒரு பெண்மணி சமையல்காரியாக இங்கு வருவாளேயானால் நல்ல உணவு கிடைக்கும் என்று தீர்மானித்து எல்லா மாணவர்களும் சேர்ந்து அந்த மடத்தினுடைய குருநாதரைச் சந்தித்தனர்.",
+      "sourceScan": 10,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவரிடம் மாணவர்கள் தங்களுடைய எண்ணத்தை வெளியிட்டார்கள். உடனே அந்தத் துறவி “சமையல்காரப் பெண் ஒருத்தி இந்த மடத்திற்கு வந்து விட்டால் உங்களிலே யாருக்காவது அவள் மீது தவறான எண்ணம்-மோகம் பிறந்து விட்டால் இந்த மடத்தின் தூய்மை என்ன ஆவது? எனவே சமையற்காரப் பெண்ணை வேலைக்கு அமர்த்த நான் ஒப்புக் கொள்ள இயலாது” என்று கூறிவிட்டார்.",
+      "sourceScan": 10,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே சில மாணவர்கள் “பரவாயில்லை ஒரு கிழவியை சமையல்காரியாக அமர்த்துங்கள் அப்படி நியமித்தால் நீங்கள் சொல்லுகின்ற நிலை ஏற்படாது” என்றுசொன்னார்கள் “சரி நாளைக்கு யோசித்துச் சொல்கிறேன். இரவுச்",
+      "sourceScan": 10,
+      "printedPage": 9,
+      "joinToNext": "space"
+     },
+     {
+      "text": "சாப்பாட்டிற்கு எல்லோரும் செல்லுங்கள்” என்று சொல்லி விட்டார்.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மாணவர்களும் தங்கள் கடமைகளை முடித்துவிட்டு இரவு உணவுக்குத் தயாராக வந்துவிட்டார்கள். அதற்கு முன்பே துறவியார் சமையற்காரனை அழைத்து “இன்றைக்கு இரவு மாணவர்களுக்குப் பரிமாறும் உணவில் அளவுக்கு அதிகமாக உப்பைக் கொட்டிவிடு. அத்துடன் உணவு பரிமாறுகின்ற போது யாருக்கும் தண்ணீர் வைக்காதே” என்று உத்தரவிட்டார். துறவியார் சொன்னபடியே உப்பு அதிகமாகப் போடப்பட்ட உணவு மாணவர்களுக்குப் பரிமாறப்பட்டதுடன் யாருக்கும் தண்ணீர் வைக்கப்படவில்லை.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "துறவியும் அவர்களோடு அமர்ந்து சாப்பிட்டார். துறவிக்குப் பரிமாறப்பட்ட உணவில் உப்பு கலக்கப்படவில்லை. மாணவர்களுக்கு அது தெரியாது. துறவி உணவை வேக வேகமாகச் சாப்பிடுவதைப் பார்த்த மாணவர்கள் “துறவியே இப்படிச் சாப்பிடுகிறாரே! நமது உணவில் உப்பு அதிகம் என்று நாம் எப்படிச் சொல்வது” என்ற பயத்தோடு அத்தனை பேரும் சாப்பிட்டு முடித்தார்கள் பிறகு தாங்கள் தங்குகிற விடுதிக்குச் சென்று படுத்துவிட்டார்கள். குருநாதர் தனது அறைக்குப் போய்விட்டார். அதற்குமுன் அவர் சமையல்காரனை அழைத்து “மாணவர்கள் தூங்குகின்ற தாழ்வாரத்திற்கு அருகில் உள்ள முற்றத்தில் ஒரு பாத்திரத்தில் சாணத்தைக் கரைத்து வைத்துவிடு” என்று சொல்ல சமையற்காரனும் அப்படியே சாணத்தைக் கரைத்து வைத்துவிட்டான்.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மாணவர்களோ அதிக உப்புக் கலக்கப்பட்ட உணவைச் சாப்பிட்டதால் தாகத்தால் தவித்தார்கள். என்ன செய்வதென்று புரியவில்லை. வழக்கமாக வைக்கப்படும் தண்ணீர்ப் பானைகளும் அங்கு இல்லை. தேடித் தேடிப் பார்த்த மாணவர்கள் கடைசியாக சாணம் கரைத்து வைக்கப்பட்டிருந்த பானையைப் பார்த்தார்கள்.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு மாணவன் “கொஞ்ச நேரம் சென்றால் சாணநீர் தெளியும். அதற்குப் பிறகு நாம் அந்தத் தண்ணீரைக்",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "space"
+     },
+     {
+      "text": "குடிப்போம்” என்று சொல்லிக் காத்திருந்தான். கொஞ்சம் கொஞ்சமாகச் சாணம் தெளிந்து வர அந்த மாணவன் ஒரு குவளையை எடுத்து அந்தத் தண்ணீரை மொண்டு சாப்பிட்டான். குவளையை விட்டு மொண்டதில் சாணநீர் மறுபடியும் கலங்கி விட்டது.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் தாகம் தாங்க முடியாத மாணவர்கள் வேறு வழியின்றி அந்த சாணத் தண்ணீரையே எடுத்துக் குடித்து தாகத்தைத் தணித்துக் கொண்டார்கள்.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காலையில் துறவி வந்தார் “இங்கு இருந்த சாணத் தண்ணீர் என்ன ஆயிற்று” என்று கேட்டார். மாணவர்கள் நடந்ததைச் சொன்னார்கள். அப்பொழுது “தாகத்தில் நீங்கள் சாணத் தண்ணீரா—நல்ல தண்ணீரா என்று கூடக் கருதாமல் அந்தத் தண்ணீரைச் சாப்பிட்டிருக்கிறீர்கள். இதைப் போலத்தான் இங்கு ஒரு கிழவியை வேலைக்கு வைத்தால் கூட மோகத்தில் அவள் கிழவியா குமரியா என்று கூடப் பார்க்காமல் தவறு செய்து விடுவீர்கள்” என்று சொன்னார்.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மோகம் எவ்வளவு பொல்லாதது என்பதை விளக்க இந்தக் கதை போதும்.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "The Ascetic and the Disciples",
+    "sourceScan": 10,
+    "printedPage": 9
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "An ascetic ran a monastery with many students. He used to teach the students of the monastery good advice. One day the students held a discussion among themselves: “This ascetic—with whom?—we too have been staying here and studying for a long time. We like everything in this monastery. But the cook here does not prepare good food. In any case, if a woman were to come here as the cook, we would get good food.” Having decided this, all the students together met the head of the monastery.",
+      "sourceScan": 10,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They told him what they had in mind. The ascetic immediately said, “If a woman cook comes into this monastery and any one of you develops a wrong thought—desire—towards her, what will become of the purity of this monastery? Therefore I cannot agree to employ a woman cook.”",
+      "sourceScan": 10,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Some of the students immediately said, “Never mind. Employ an old woman as the cook. If you appoint one, the situation you speak of will not arise.” He replied, “All right, I will think about it and tell you tomorrow. Everyone go for the night—”",
+      "sourceScan": 10,
+      "printedPage": 9,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“—meal,” he said.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The students finished their duties and came ready for dinner. Before that, the ascetic called the cook and ordered him, “Tonight put far too much salt in the food served to the students. And when the food is served, do not place water for anyone.” As the ascetic had instructed, food with excessive salt was served to the students and no water was set out for anyone.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The ascetic sat down and ate with them. No salt had been mixed into the food served to him. The students did not know this. Seeing the ascetic eat quickly, they were afraid: “The ascetic himself is eating like this! How can we say there is too much salt in our food?” So every one of them finished eating and then went to the lodging where they stayed and lay down. The guru went to his room. Before that he called the cook and said, “In the courtyard near the verandah where the students sleep, leave a vessel with cow dung mixed into water.” The cook did exactly that.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Because the students had eaten heavily salted food, they were tormented by thirst. They did not know what to do. The water pots that were normally kept there were absent. After searching and searching, the students finally saw the vessel in which dung had been mixed with water.",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One student said, “After a little while the dung water will settle. After that, we shall take that water and—”",
+      "sourceScan": 11,
+      "printedPage": 10,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“—drink it,” and waited. As the dung slowly settled, the student took a cup, scooped up the water and drank it. When he scooped with the cup, the dung water became cloudy again.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But the students could not bear their thirst. With no other way, they took that very dung water, drank it, and quenched their thirst.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the morning the ascetic came and asked, “What happened to the dung water that was here?” The students told him what had happened. He then said, “In your thirst, without even considering whether it was dung water or good water, you drank it. In the same way, even if an old woman were employed here, in your desire you might commit a wrong without even looking to see whether she was an old woman or a young maiden.”",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This story is enough to explain how wicked desire can be.",
+      "sourceScan": 12,
+      "printedPage": 11,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  10,
+  11,
+  12
+ ]
+}

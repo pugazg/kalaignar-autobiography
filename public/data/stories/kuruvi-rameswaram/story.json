@@ -1,0 +1,164 @@
+{
+ "workId": "kuruvi-rameswaram",
+ "slug": "kuruvi-rameswaram",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kuruvi-rameswaram",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "குருவி ராமேஸ்வரம்",
+  "en": "Kuruvi Rameswaram"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "குருவி ராமேஸ்வரம்",
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ராமாயணத்திலே ஒரு கர்ண பரம்பரைக் கதை உண்டு. ராமர் சீதையைத் தேடி அலைந்து கொண்டிருந்த போது எங்கள் திருவாரூருக்குப் பக்கத்தில் வந்தாராம்.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படி வந்தபோது அவரை வணங்கி ஒரு குருவி, “எனக்கு ஒரு வரம் வேண்டும்” என்று கேட்டதாம். “என்ன வரம்?” என்று ராமன்",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "space"
+     },
+     {
+      "text": "கேட்டபோது “நான் ராமேஸ்வரம் செல்ல வேண்டும்” என்று அந்தக் குருவி வரம் கேட்டதாம்.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குருவியினுடைய சிறகுகள் மிகச் சிறியவை. “ராமேஸ்வரமோ தொலைவில் இருக்கின்ற ஊர். அவ்வளவு தூரம் உன்னால் பறந்து செல்ல முடியாது. எனவே குருவியே உனக்காக இங்கேயே ஒரு ராமேஸ்வரத்தை உண்டாக்குகிறேன்” என்று தன்னுடைய அம்பின் முனையால் அங்கேயே கோடுபோட்டு, ஒரு சிறிய குளத்தை உண்டாக்கி, “இதிலே குளித்தால் உனக்குப் புண்ணியம் கிடைக்கும்” என்றாராம்.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குருவியும் ராமனுடைய பேச்சைக் கேட்டு அவனுடைய அம்பால் வரையப்பட்ட அந்தக் குளத்தில் குளித்துப் புண்ணியம் பெற்றதாகக் கதை. இப்பொழுதும் அந்த ஊருக்கு குருவி ராமேஸ்வரம் என்று பெயர்.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“..... ராமேஸ்வரம் போக முடியாத எனக்கு நீங்கள் இங்கேயே ஒரு ராமேஸ்வரத்தைக் காட்டி, உலகத் தமிழ் மாநாட்டிற்குச் செல்ல முடியாவிட்டாலும் - அங்கே நான் செல்வதற்கேற்ற தன்மான உணர்வுகள் அடைக்கப்பட்டது என்ற காரணத்தினால் - குருவிக்கு ராமேஸ்வரத்தை ராமன் உருவாக்கித் தந்ததைப் போல் உனக்கும் ஒரு உலகத் தமிழ் மாநாட்டை இங்கே உருவாக்கியிருக்கிறோம்’ என்று உங்களுடைய பாசம் பொழிகின்ற இதயத்தின் சார்பாக இதை உலகத் தமிழ் மாநாடு என்று நீங்கள் சொன்னீர்கள்.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kuruvi Rameswaram",
+    "sourceScan": 5,
+    "printedPage": 4
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is an orally handed-down tale in the Ramayana. When Rama was wandering in search of Sita, he is said to have come near our Tiruvarur.",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When he came there, a sparrow bowed to him and asked, “I want a boon.” “What boon?” Rama",
+      "sourceScan": 5,
+      "printedPage": 4,
+      "joinToNext": "space"
+     },
+     {
+      "text": "asked. “I want to go to Rameswaram,” the sparrow is said to have asked as its boon.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The sparrow's wings were very small. “Rameswaram is a place far away. You cannot fly such a long distance. So, little sparrow, for your sake I shall create a Rameswaram right here,” Rama is said to have told it. With the tip of his arrow he drew a line there, made a small pond, and said, “If you bathe in this, you will receive merit.”",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The story says that the sparrow listened to Rama, bathed in the pond made there by his arrow, and gained merit. Even now that place is called Kuruvi Rameswaram.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“..... For me, unable to go to Rameswaram, you have shown a Rameswaram right here; likewise, even though I could not go to the World Tamil Conference—because the self-respect sentiments by which I could fittingly go there had been shut out—you have created a World Tamil Conference here for me, just as Rama created a Rameswaram for the sparrow,” you said, on behalf of your hearts overflowing with affection, calling this a World Tamil Conference.",
+      "sourceScan": 6,
+      "printedPage": 5,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  5,
+  6
+ ]
+}

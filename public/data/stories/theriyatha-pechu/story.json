@@ -1,0 +1,231 @@
+{
+ "workId": "theriyatha-pechu",
+ "slug": "theriyatha-pechu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/theriyatha-pechu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "தெரியாத பேச்சு",
+  "en": "Speaking Without Knowing"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "தெரியாத பேச்சு",
+    "sourceScan": 45,
+    "printedPage": 43
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சோவியத் நாட்டில் ஒரு இளைஞன் ஒரு மலை முகட்டை நோக்கி நடந்து போய்க் கொண்டிருந்தான். அவன் அப்படி நடந்தபோது எதிரே குள்ளமான உருவம் கொண்ட பெரியவர், அவன் எதிரே வந்தார்.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பெரியவர் அந்தப் பையனைப் பார்த்து கேட்டார். “ஏன் இந்த மலை முகட்டிற்கு போகிறாய்?” என்றார். அவன் சொன்னான்:",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அந்த மலைமுகட்டிலேதான் லெனினுடைய வீடு இருக்கிறது. அவருடைய வீட்டிற்குப் போகிறேன்” என்றான். “நீ அவரைப் பார்த்தது இல்லையா?” என்று பெரியவர் கேட்டார். “பார்த்ததில்லை; அதனால்தான் அவரைப் பார்ப்பதற்காக போகிறேன்” என்கிறான். “அப்படி என்ன அவரிடத்திலே விசேஷம்” என்கிறார் பெரியவர்.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அவரை மக்கள் அனைவருமே நேசிக்கிறார்கள். எனவேதான், அவரைப் பார்க்கப் போகிறேன்” என்கிறான், அந்த சின்னஞ்சிறு இளைஞன்.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘சரி போ’ என்று சொல்லிவிட்டு பெரியவர் போய் விடுகிறார்.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர் போய் கொஞ்ச நேரத்திற்கெல்லாம் அந்த சாலை ஓரத்திலே ஒரு சிறுமி அந்தப் பையனைப் பார்த்து “என்னப்பா இவ்வளவு நேரம் லெனினோடு என்ன பேசிக் கொண்டிருந்தாய்?” என்று கேட்கிறாள். அந்தப் பையனுக்கு வியப்பு! இதுவரையில் தான் பேசிக் கொண்டிருந்தது லெனினோடு தான் என்பது தெரியாது. சிறுமி சொன்ன பிறகு தான் அது தெரிகிறது. லெனினோடு பேசிக் கொண்டிருந்தேன் என்று! அவரைத் தேடி ஓடுகிறான். அதற்குள் அவர் எங்கோ விரைவாக சென்று மறைந்து விடுகிறார்.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘எனவே லெனின் என்று தெரியாமலேயே லெனினைப் பற்றி பேசிக் கொண்டிருந்தான். அதைப் போல இன்றைக்கு இந்தியாவிலே சில பேர் இந்தியா எது? என்று தெரியாமலேயே இந்தியாவைப் பற்றி பேசிக் கொண்டிருக்கிறார்கள். லெனினைப் பற்றி",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அந்தப் பையன் கொண்டிருந்த பற்று குறைத்து எடைபோட்டதற்காக அல்ல. அதைப்போல இந்தியாவைப் பற்றி பேசுகின்ற சிலபேர் கொண்டிருக்கின்ற பற்றும் குறைத்து எடை போடக் கூடியது அல்ல. ஆனாலும் லெனினைத் தெரியாமலேயே லெனினைப் பற்றிப் பேசிக் கொண்டிருந்த இளைஞனைப் போல் இந்தியாவைத் தெரியாமலே இந்தியாவைப் பற்றிப் பேசிக் கொண்டிருக்கிறார்கள். அது தான் எனக்கு வியப்புக்குரிய ஒன்றாக இருக்கிறது.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Speaking Without Knowing",
+    "sourceScan": 45,
+    "printedPage": 43
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the Soviet country, a young man was walking toward a mountain peak. As he walked, an elderly man of short stature came toward him.",
+      "sourceScan": 45,
+      "printedPage": 43,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The elder looked at the boy and asked, “Why are you going to this mountain peak?” The boy replied:",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Lenin's house is on that mountain peak. I'm going to his house.” “Haven't you seen him?” the elder asked. “No; that's why I'm going to see him,” said the boy. “What is so special about him?” asked the elder.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Everyone among the people loves him. That's why I'm going to see him,” said the very young boy.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“All right, go,” said the elder, and went away.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A short while after he had gone, a little girl by the roadside looked at the boy and asked, “What were you talking to Lenin about for so long?” The boy was astonished! Until then he had not known that the person he had been speaking with was Lenin himself. Only after the little girl said it did he realize: he had been talking with Lenin! He ran to look for him. By then the elder had hurried somewhere and disappeared.",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘Thus, without even knowing it was Lenin, he had been talking about Lenin. Likewise, today in India some people are talking about India without even knowing what India is. When it comes to Lenin,",
+      "sourceScan": 46,
+      "printedPage": 44,
+      "joinToNext": "space"
+     },
+     {
+      "text": "this is not said in order to belittle the affection that boy had for him. Likewise, the attachment held by some people who speak about India is not something to be belittled either. Yet, like the young man who spoke about Lenin without knowing Lenin, they are talking about India without knowing India. That is what I find astonishing.",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 47,
+      "printedPage": 45,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  45,
+  46,
+  47
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "workId": "seera-vendama",
+ "slug": "seera-vendama",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/seera-vendama",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சீற வேண்டாமா?",
+  "en": "Seera Vendama?"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சீற வேண்டாமா?",
+    "sourceScan": 18,
+    "printedPage": 16
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு முனிவரிடத்திலே நல்ல பாம்பு ஒன்று சென்று முறையிட்டுக் கொண்டதாம். “என்னைக் கண்டால் எல்லோரும் பயப்படுகிறார்கள். எனக்குப் பெயர் நல்ல பாம்பு என்று இருக்கிறது. ஆனாலும் என்னைக் கண்டு மக்கள் நடுங்குகிறார்கள். ஏன்?” என்று கேட்டதாம். முனிவர் சொன்னார். “நீ எல்லோரையும் கடித்து விடுகிறாய், நீ கடிக்கிற காரணத்தால் தான் நல்ல பாம்பு என்ற பெயர்",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "space"
+     },
+     {
+      "text": "இருந்தும் உன்னைக் கண்டு பயப்படுகிறார்கள். ஆகவே இனி நீ யாரையும் கடிக்காதே” என்று முனிவர் எடுத்துச் சொன்னார். பாம்பு போய் விட்டது. சில மாதங்கள் கழித்து அந்தப் பாம்பு முனிவரைக் காண வந்தது. பாம்பின் உடலெல்லாம் காயங்கள். “ஏன் இவ்வளவு காயப்பட்டு வந்திருக்கிறாய்?” என்று முனிவர் கேட்டார். பாம்பு சொன்னது “உங்கள் சொற்படி நான் யாரையும் கடிக்காமல் இருந்தேன். அதனால் என்னைப் பார்த்தவர்களெல்லாம் அடி அடியென்று அடித்தார்கள். அதனால் ஏற்பட்ட காயங்கள் தான் இவை” என்று கண்ணீர் வடித்தது. முனிவர் சொன்னாராம்: “உன்னைக் கடிக்கக் கூடாது என்றுதான் சொன்னேனே தவிர, ஒரு சீறு சீறி காட்டக்கூடாது என்றா சொன்னேன். கடிக்க வேண்டாம். அதற்காக உன்னை அடிக்க வந்தவர்களைப் பார்த்து ஒரு சீறு சீறி இருந்தால் உன்னை அடிக்காமல் இருந்திருப்பார்கள் அல்லவா, நீ கடிப்பதை மறந்து விடு. ஆனால் சீறுவதை மறந்து விடாதே” என்று முனிவர் சொன்னாராம்.",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போல நல்லவனாக இருக்கலாம். ஆனால் கோழைகளாக இருந்துவிடக் கூடாது. சாதுவாக இருக்கலாம்; பரம சாதுக்களாக இருந்துவிடக் கூடாது. தீமைகளைக் கண்டு பொங்குகின்ற இதயம் நிச்சயமாகத் தேவை.",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Seera Vendama?",
+    "sourceScan": 18,
+    "printedPage": 16
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A good snake is said to have gone to a sage and complained. “Everyone is afraid when they see me. My name is ‘good snake.’ Yet people tremble when they see me. Why?” it asked. The sage said, “You bite everyone. It is because you bite them that, even though your name is ‘good snake,’",
+      "sourceScan": 18,
+      "printedPage": 16,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "people are afraid of you. So from now on, do not bite anyone,” the sage advised. The snake went away. A few months later, the snake came to see the sage. Its whole body was covered in wounds. “Why have you come back so badly wounded?” the sage asked. The snake said, “As you told me, I did not bite anyone. So everyone who saw me beat me again and again. These are the wounds from that,” and shed tears. The sage is said to have replied: “I told you not to bite. Did I say you should not even give a hiss? Do not bite. But if, when people came to beat you, you had hissed at them once, they would not have beaten you, would they? Forget biting. But do not forget to hiss.”",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the same way, one may be good. But one must not become cowardly. One may be gentle; one must not become utterly meek. A heart that surges at the sight of evil is certainly necessary.",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  18,
+  19
+ ]
+}

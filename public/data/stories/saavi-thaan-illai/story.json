@@ -1,0 +1,142 @@
+{
+ "workId": "saavi-thaan-illai",
+ "slug": "saavi-thaan-illai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/saavi-thaan-illai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "சாவி தான் இல்லை",
+  "en": "Saavi Thaan Illai"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சாவி தான் இல்லை",
+    "sourceScan": 27,
+    "printedPage": 25
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மாநிலங்களுக்கு அதிக அதிகாரங்கள் கூடாது என்பது தான் காங்கிரசாரின் எண்ணம். மாநிலங்களுக்கு அதிக அதிகாரம் இருந்தால்தான் மாநில",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "space"
+     },
+     {
+      "text": "மக்களுக்கு நன்மைகளைச் செய்ய முடியும் என்பது தான் நம்முடைய சித்தாந்தம்.",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்கே ஒரு கதை சொல்ல வேண்டுமானால், ஒரு வீட்டு வாசலில் அந்த வீட்டு மருமகள் முழங் காலை கட்டிக் கொண்டு உட்கார்ந்திருக்கிறாள். பகல் ஒரு மணி வரை அவள் சமைக்காததைக் கண்டு, பக்கத்து வீட்டுக்காரி வந்து, ‘சமைக்க வில்லையா?’ என்று கேட்கிறாள். இவள் ‘இல்லை’ என்கிறாள். ‘ஏன் விறகு இல்லையா?’ என்கிறாள். ‘விறகு இருக்கிறது’ என்கிறாள். பிறகு, ‘தீப்பெட்டி இல்லையா?’ என்கிறாள். ‘அதுவும் இருக்கிறது’ என்று மருமகள் சொல்கிறாள். ‘அரிசி கிடையாதா?’ என்று கேட்கிறாள் பக்கத்து வீட்டுக்காரி. ‘காய்கறி தேவையா?’ என்றும் அவள் கேட்கிறாள். ‘எல்லாம் இருக்கிறது’ என்கிறாள். ‘பிறகு ஏன் சமைக்கவில்லை’ என்று பக்கத்து வீட்டுக்காரி கேட்க, “எல்லாம் இருக்கிறது. எல்லாவற்றையும் அறைக்குள் வைத்துப் பூட்டி விட்டு மாமியார் சாவியை எடுத்து இடுப்பில் வைத்துக் கொண்டு வெளியே போய்விட்டார்!” என்று மருமகள் சொன்னாள்.",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போலத்தான் நாட்டிலே எல்லாமே இருக்கிறது. அணை கட்ட, நீர்ப்பாசன வசதிகள் செய்ய, தொழிற்சாலைகள் உருவாக்க எல்லா வசதிகளுக்கும் தமிழ்நாட்டில் இருக்கிறது. ஆனால் அவைகளை செய்ய அதிகாரம் மாத்திரம் நமக்குக் கிடையாது. அது மத்திய அரசின் கையிலே இருக்கிறது. அந்த அதிகாரத்தைப் பிடுங்கி மாநில மக்களுக்கு நன்மை செய்ய வேண்டும் என்று பாடுபடுகிற இயக்கம் தான் திராவிட இயக்கம்.",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Saavi Thaan Illai",
+    "sourceScan": 27,
+    "printedPage": 25
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Congress view is that the states should not have greater powers. Our principle is that only when the states have greater authority can benefits be provided to the people of the states",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "space"
+     },
+     {
+      "text": ".",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To tell a story here: at the entrance of a house, the daughter-in-law of that household is sitting with her knees drawn up. Seeing that she has not cooked even by one in the afternoon, a woman from the neighbouring house comes and asks, ‘Haven’t you cooked?’ She says, ‘No.’ ‘Why, is there no firewood?’ she asks. ‘There is firewood,’ she says. Then, ‘Is there no matchbox?’ she asks. ‘That too is there,’ the daughter-in-law says. ‘Is there no rice?’ the neighbour asks. ‘Do you need vegetables?’ she asks as well. ‘Everything is there,’ she says. When the neighbour asks, ‘Then why haven’t you cooked?’ the daughter-in-law says, “Everything is there. My mother-in-law put everything inside the room, locked it, took the key, tucked it at her waist, and went out!”",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is just like that in the country: everything is there. Tamil Nadu has all the facilities needed to build dams, provide irrigation facilities, and establish factories. But we alone do not have the authority to do those things. It is in the hands of the Central Government. The Dravidian movement is the movement striving to wrest that authority and use it to do good for the people of the states.",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 28,
+      "printedPage": 26,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  27,
+  28
+ ]
+}

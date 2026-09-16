@@ -1,0 +1,98 @@
+{
+ "workId": "ezhuchikku-adaiyaalam",
+ "slug": "ezhuchikku-adaiyaalam",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/ezhuchikku-adaiyaalam",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "எழுச்சிக்கு அடையாளம்",
+  "en": "Ezhuchikku Adaiyaalam"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "எழுச்சிக்கு அடையாளம்",
+    "sourceScan": 71,
+    "printedPage": 69
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அபிமன்யு பற்றிய கதையை பாரதத்திலே படித்திருக்கிறோம். அவன் இளைஞன், மணமான இளைஞன். அந்த இளைஞன் பாரதப் போரில் மாண்டு விட்டான் என்றாலும்கூட, அவனுடைய",
+      "sourceScan": 71,
+      "printedPage": 69,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வீரம் மறைந்து விடவில்லை. காரணம்-யாராலும் பிளக்க முடியாத சக்கர வியூகத்தைப் பிளந்தான். அர்ச்சுனனால்கூட பிளக்க முடியாத அந்த சக்கர வியூகத்தை அபிமன்யு பிளந்தான். எனவே பாரத யுத்தத்திலேயே பீமனுடைய வீரம் பாராட்டப்பட்டாலும், பார்த்திபனுடைய வீரம் பாராட்டப்பட்டாலும், காண்டீபனுடைய வீரம் பாராட்டப்பட்டாலும், அசுவத்தாமனுடைய வீரம் பாராட்டப்பட்டாலும் அவனை வரையும் விட ஒரு படி மேலாக அந்த இளைஞன் அபிமன்யுவின் வீரம் அதிகம் பாராட்டப்படுகிறது. கரம் இழந்தான். கரத்தை இழந்த பிறகு வாளை வாயிலே கவ்விக் கொண்டு போரிட்டான். பிறகு கால்கள் துண்டிக்கப்பட்டன. முண்டமாக உருண்டு களத்திலே போரிட்டான். இறுதியாக ஜெயத்ரதன் என்ற சூழ்ச்சிக்காரன் பின்னால் இருந்து அவனைக் கொன்றான் என்பது கதை. ஆக இறுதி வரையில் வீரனாக இருந்து செத்தான் அபிமன்யு. இது இளைஞர்களுடைய எழுச்சி, புராண காலத்திலே எப்படி இருந்தது என்பதற்கு அடையாளம்.",
+      "sourceScan": 72,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 72,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Ezhuchikku Adaiyaalam",
+    "sourceScan": 71,
+    "printedPage": 69
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We have read the story of Abhimanyu in the Bharatham. He was a young man, a married young man. Even though that young man died in the Bharatha war, his",
+      "sourceScan": 71,
+      "printedPage": 69,
+      "joinToNext": "space"
+     },
+     {
+      "text": "valour did not disappear. The reason is that he broke through the chakra formation that no one could break. Abhimanyu broke through that chakra formation which even Arjuna could not break. Therefore, although Bhima's valour is praised in the Bharatha war, although Parthiban's valour is praised, although Gandiban's valour is praised, and although Ashwatthaman's valour is praised, the valour of that young man Abhimanyu is praised one step above all of them. He lost an arm. After losing the arm, he clenched a sword in his mouth and fought. Then his legs were severed. He rolled across the field as a trunk and fought. Finally, the story says that the schemer Jayadrathan killed him from behind. Thus Abhimanyu remained a warrior until the very end and died. This is a sign of what the rising spirit of youth was like in the age of the puranas.",
+      "sourceScan": 72,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 72,
+      "printedPage": 70,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  71,
+  72
+ ]
+}

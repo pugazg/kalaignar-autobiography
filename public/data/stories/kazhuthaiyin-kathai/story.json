@@ -1,0 +1,187 @@
+{
+ "workId": "kazhuthaiyin-kathai",
+ "slug": "kazhuthaiyin-kathai",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kazhuthaiyin-kathai",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கழுதையின் கதை",
+  "en": "Kazhuthaiyin Kathai"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கழுதையின் கதை",
+    "sourceScan": 19,
+    "printedPage": 17
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு அண்ணனும் தம்பியும் அவர்களுடைய தொழில் துறைக்கு ஒரு கழுதையை ஓட்டிக் கொண்டு போனார்கள். அவர்கள் சலவைத் தொழிலாளர்கள்.",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போகும்போதே இரண்டு குறும்புக்காரர்கள் வேண்டுமென்றே அவர்கள் பின்னாலேயே போய்க் கொண்டு இருந்தார்கள். “என்னய்யா இரண்டுபேரும் நடந்து போறீங்க. கழுதை சும்மாதானே போகிறது. மூத்தவனை உட்கார வைத்து இளையவன் கழுதையை ஓட்டிக் கொண்டு போகக் கூடாதா?” என்று கேட்டார்கள். உடனே மூத்தவனை கழுதை மேல் உட்கார வைத்துவிட்டு இளையவன் ஓட்டிக் கொண்டுபோனான். கொஞ்ச தூரம் போனவுடன் அந்தக் குறும்புக்காரர்கள் மீண்டும் அவர்களைப் பார்த்து “மூத்தவனாக இருக்கிறாயே உனக்கு இரக்கம் இருக்கா? இளையவனை நடக்க வைத்து விட்டு மூத்தவன் கழுதையில் அமர்ந்து போகலாமா?” என்று கேட்டார்கள். உடனே இவர்கள் “அப்படியா” என்று கேட்டு விட்டு, மூத்தவன் இறங்கிக் கொண்டு இளையவனை உட்கார வைத்துப் போனார்கள்.",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொஞ்ச தூரம் போனதும் குறும்பர்கள், மீண்டும் இவர்களைப் பார்த்து, “கழுதையினுடைய முதுகிலேதான் அதிகமாக இடம் இருக்கே! இரண்டு பேருமே ஏறிக் கொண்டு போகக்கூடாதா?” என்று கேட்டார்கள். “சரி” என்று இருவரும் கழுதை மீது ஏறிக் கொண்டு போனார்கள். கழுதை துணியைத் தான் சுமக்கும். இவர்களைச் சுமக்க முடியுமா? சுமக்க முடியாமல் படுத்து விட்டது.",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே குறும்புக்காரர்கள் “இதுவரை உங்களை கழுதை தூக்கிக் கொண்டு வந்தது. இனிமேல் நீங்கள் கழுதையை தூக்கிக் கொண்டு போங்கள்” என்று சொன்னார்களாம்.",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே அந்த இருவரும் கழுதையின் காலிலே ஒரு கம்பைக் கட்டி அதைத் தூக்கித் தோளிலே",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "space"
+     },
+     {
+      "text": "வைத்துக் கொண்டு போனார்கள். வழியிலே ஒரு பாலம் குறுக்கிட்டது. ஆற்றில் நிறையவே தண்ணீர் போய்க் கொண்டிருந்தது. கழுதையை தலைகீழாக கட்டி தூக்கிக் கொண்டு அந்தப் பாலத்திலே நடந்து போனார்கள். கழுதை சும்மா இருக்குமா? ஒரு துள்ளு துள்ளி ஆற்றிலே விழுந்தது. கடைசியில் கழுதையை இழந்தது தான் கண்ட பலன். அதுபோல போகிறவன் பேச்சையெல்லாம் கேட்டால் கழுதையை இழந்த கதைதான் நடக்கும்.",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kazhuthaiyin Kathai",
+    "sourceScan": 19,
+    "printedPage": 17
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "An elder brother and a younger brother were driving a donkey to their place of work. They were washermen.",
+      "sourceScan": 19,
+      "printedPage": 17,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As they went along, two mischief-makers deliberately followed behind them. “Why are both of you walking? The donkey is going along with nothing on it. Couldn’t the elder one sit on it while the younger one drives the donkey?” they asked. At once, they seated the elder brother on the donkey and the younger brother drove it along. After they had gone some distance, the mischief-makers looked at them again and asked, “You are the elder one—have you no compassion? Can the elder brother ride the donkey while making the younger one walk?” At once they said, “Is that so?” The elder brother got down, they seated the younger one, and continued.",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After they had gone a little farther, the mischief-makers again looked at them and asked, “There is so much room on the donkey’s back! Couldn’t both of you get on and ride?” “All right,” they said, and both climbed onto the donkey. The donkey was accustomed to carrying clothes. Could it carry them? Unable to bear the load, it lay down.",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At once the mischief-makers are said to have told them, “Until now the donkey has carried you. From now on, you carry the donkey.”",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Immediately the two men tied a pole to the donkey’s legs, lifted it, and put it on their shoulders",
+      "sourceScan": 20,
+      "printedPage": 18,
+      "joinToNext": "space"
+     },
+     {
+      "text": "and carried it along. On the way they came to a bridge. Plenty of water was flowing in the river. They had tied the donkey upside down and were carrying it across the bridge. Would the donkey keep still? It gave a sudden leap and fell into the river. In the end, all they gained was the loss of the donkey. In the same way, if one listens to everything every passer-by says, what happens is the story of losing the donkey.",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 21,
+      "printedPage": 19,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  19,
+  20,
+  21
+ ]
+}

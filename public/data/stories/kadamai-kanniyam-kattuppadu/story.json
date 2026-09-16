@@ -1,0 +1,451 @@
+{
+ "workId": "kadamai-kanniyam-kattuppadu",
+ "slug": "kadamai-kanniyam-kattuppadu",
+ "sourceRepo": "pugazg/kalaignar-short-stories",
+ "sourcePath": "stories/kadamai-kanniyam-kattuppadu",
+ "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+ "shelf": "fiction",
+ "subtype": "short-story",
+ "readerStructure": "story",
+ "sourceForm": "anthology-story",
+ "title": {
+  "ta": "கடமை கண்ணியம் கட்டுப்பாடு",
+  "en": "Kadamai Kanniyam Kattuppadu"
+ },
+ "author": {
+  "nameTa": "மு. கருணாநிதி"
+ },
+ "tamil": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கடமை கண்ணியம் கட்டுப்பாடு",
+    "sourceScan": 25,
+    "printedPage": 23
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாளையங்கோட்டையில் நான் அடைப்பட்டுக் கிடந்த சிறைப்பகுதி ‘குவாரன்டைன்’ என்று அழைக்கப்படுவதாகும். இளம் குற்றவாளிகள் பள்ளிக்கு வெளியேதான் அது அமைந்துள்ளது. அங்கே நாற்பது அறைகள் உள்ளன. அவற்றில் ஒன்று எனக்காக ஒதுக்கப்பட்டது. மற்ற முப்பத்தொன்பது முழுமையாக நிரம்பி வழிந்தது. தனிமை - வெறுமை, மனிதர்கள் அல்ல!",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காலையில் விழித்ததும் கண்ணிலே படுவது புளியமரம்- களை இழந்த இலையுதிர்ந்த புளிய மரம்!",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே கயத்தாற்றில் கட்டபொம்மன் தூக்கி விடப்பட்ட அந்தப் புளியமரமும் என் கண்ணுக்குப் படும்; புறக்கண்ணுக்கு அல்ல - அகக்கண்ணுக்கு!",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "செங்கதிரோனின் தங்கக் கதிர்கள் - கரங்கள் - தழுவி எடுக்கும் பூமிக்குழந்தையை அந்த வெளிச்சத்தின் சாயல் மெல்லப் படர்ந்து வரும். நான் இருக்கும் வெறிச்சோடிய பகுதியிலும்",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பின்னரே நான் வெளியே வரும்பொருட்டுக் கதவைத் திறந்து விடுவார்கள். சிறைக் கதவை அல்ல - அறைக் கதவை!",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சின்னஞ்சிறு கூட்டிலிருந்து சுற்றுப் பெரிய கூண்டுக்கு வந்து விட்ட உணர்வே மேலோங்கி நிற்கும்.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பகலிலோ வேக வைக்கும் வெயில்; வேகமாகப் போக மறுக்கும் பொழுது அதனால் உடல் புழுங்கும்; உள்ளமும் புழுங்கும்.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரவு ஒன்பது மணிக்கு மறுபடியும் அறைக் கதவைப் பூட்டி விடுவார்கள்; என்னை உள்ளே வைத்துத்தான்!",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பசுந்தளிர்ப் பருவத்தில் எத்தனையோ வேடிக்கையான விடுகதைகள் போட்டு மகிழ்வது எனக்கு வாழ்க்கை.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“அத்துவான காட்டில் சொக்கன் பந்தடிக்கிறான்” - என்பதும் அவற்றிலே ஒன்று. ஒருநாள் அந்தச் ‘சொக்கன்’ என் பக்கமும் பந்தடிக்க வந்து விட்டான்! ஆம்; அணில் ஒன்று நான் இருந்த சிறைக் கோட்டம் வந்து சேர்ந்தது! மனித முகம் காணாமல் மனந்தவித்துப் புழுங்கிய நான், அணில் முகத்தைக் கண்டதுமே அகங்குளிர்ந்தேன்; முகம் மலர்ந்தேன்; ஆறுதலும்மிக அடைந்தேன் அதனைக் கனிவோடு கையில் எடுத்து அறையிலே உள்ள கப்-போர்டில் படுக்க வைத்தேன்.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் பாவம். அதுவும் என்னைப் போல ஒரு நோயாளி! காக்கையோ, குருவியோ கொத்தியதால்",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "space"
+     },
+     {
+      "text": "அதன் உடலில் காயம்; என்னைப் போல உள்ளத்தில் அல்ல! காரணம் அதற்கு அரசியல் தெரியாதே!",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதன் வேதனைக்கு மருந்து போட்டேன். தின்னப்பழமும் கொடுத்தேன். ஆயினும் ‘விடுதலை’யை விட வேறெதுவும் அதற்குப் பிடிக்கவில்லை. அந்த விஷயத்தில் நானும் திரு பக்தவத்சலமாக விரும்பிடவில்லை. எனக்கு இருதயம் இருந்து தொலைக்கிறதே! அதனால் அந்த அணிலை விடுவித்துத் தோட்டத்துப் பக்கம் அனுப்பி விட்டேன்.",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அணில் என்னைப் பிரிந்து சென்று விட்டது. நான் அதனைப் பிரிந்து விட்டேன். அதற்கு என்னைப் பற்றி நினைவிருக்காது. அதன் நோய்க்கு அளித்த மருந்தோ, வாய்க்கு அளித்த கனிகளோ அதன் ஞாபகத்திற்கு வரப் போவதில்லை. ஆனால் பிரிந்திட்ட அணிலின் முதுகில் உள்ள மூன்று கோடுகள் மட்டும்,",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடமை",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கண்ணியம்",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கட்டுப்பாடு",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்னும் மூன்று சொற்களாக என் உள்ளத்தில் முழங்கிக் கொண்டிருக்கும். நான் எங்கிருந்தாலும் அந்த முழக்கம் கேட்டுக் கொண்டேயிருக்கும்.",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "english": {
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kadamai Kanniyam Kattuppadu",
+    "sourceScan": 25,
+    "printedPage": 23
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The section of the prison at Palayamkottai where I was confined was called the ‘quarantine.’ It stood outside the school for young offenders. There were forty rooms there. One of them was allotted to me. The other thirty-nine were filled to overflowing—with solitude and emptiness, not people!",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When I woke in the morning, what met my eyes was a tamarind tree—a leafless tamarind tree stripped of its greenery!",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At once, that tamarind tree at Kayathar where Kattabomman was hanged would also appear before my eyes; not to my outer eye—to my inner eye!",
+      "sourceScan": 25,
+      "printedPage": 23,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The golden rays—the hands—of the red sun would embrace and lift the child Earth, and the hue of that light would slowly spread. Even over the desolate area where I was.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Only afterward would they open the door so that I could come outside. Not the prison gate—the door of the room!",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The feeling that prevailed was that I had come from a tiny little cage into a larger cage around it.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "By day, the sun scorched; when time refused to pass quickly, the body sweltered from it, and the mind sweltered too.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At nine at night they would lock the room door again—with me inside it, of course!",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the tender-leaf days of youth, delighting in all kinds of amusing riddles was part of my life.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“Sokkan is playing ball in the open wilderness” was one of them. One day that ‘Sokkan’ came to play ball on my side too! Yes; a squirrel arrived at the prison enclosure where I was! Tormented in mind from seeing no human face, the moment I saw the squirrel’s face my heart cooled, my face blossomed, and I found great comfort. I gently picked it up in my hand and laid it down in the cupboard in the room.",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But, poor thing, it too was a patient like me! Because a crow or a sparrow had pecked it,",
+      "sourceScan": 26,
+      "printedPage": 24,
+      "joinToNext": "space"
+     },
+     {
+      "text": "there was a wound on its body; not in its heart, as with me! The reason was that it knew nothing of politics!",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I put medicine on its pain. I also gave it fruit to eat. Even so, nothing pleased it more than ‘freedom.’ In that matter, I too did not wish to act like Mr. Bhaktavatsalam. After all, I have a heart! So I released the squirrel and sent it toward the garden.",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The squirrel left me and went away. I parted from it. It will not remember me. Neither the medicine I gave for its illness nor the fruit I gave its mouth will come back to its memory. But the three stripes on the back of the squirrel that parted from me alone will keep resounding in my heart as the three words,",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Duty",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Dignity",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Discipline",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Wherever I may be, I will keep hearing that resounding call.",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "*",
+      "sourceScan": 27,
+      "printedPage": 25,
+      "joinToNext": "end"
+     }
+    ]
+   }
+  ]
+ },
+ "sourceScans": [
+  25,
+  26,
+  27
+ ]
+}
