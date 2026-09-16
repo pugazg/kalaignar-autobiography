@@ -28,6 +28,15 @@ const manifest = JSON.parse(read(path.join(process.cwd(), "data/internal/wave6/b
 const SOURCE_COMMIT = manifest.sourceCommit;
 const OUT_ROOT = path.join(process.cwd(), "public/data/stories");
 
+// ── SOURCE-FREEZE PREFLIGHT — fail closed before reading any literary material ──
+{
+  const git0 = (...a) => execFileSync("git", ["-C", SRC, ...a], { encoding: "utf8" }).trim();
+  const headCommit = git0("rev-parse", "HEAD");
+  if (headCommit !== manifest.sourceCommit) die(`checkout HEAD ${headCommit} != manifest sourceCommit ${manifest.sourceCommit}`);
+  const headTree = git0("rev-parse", "HEAD^{tree}");
+  if (headTree !== manifest.sourceTree) die(`checkout root tree ${headTree} != manifest sourceTree ${manifest.sourceTree}`);
+}
+
 // group → source form + provenance shape
 const BOOK_GROUPS = new Set(["2008", "2004", "1987", "2009", "1982", "1976", "1969", "1953-thappivittargal", "1997"]);
 

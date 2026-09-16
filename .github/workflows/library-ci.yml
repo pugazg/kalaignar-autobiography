@@ -559,10 +559,22 @@ jobs:
       # checkout: repo/commit/tree, per-work subtree pins, 1977-anthology disjointness. The build-boundary
       # portion of this validator is exercised in the build/UI job (which has the .next tree); here it
       # verifies the source side. Same validator, complementary evidence in the two jobs.
-      - name: Wave 6 Batch 7 short stories — source-pin freeze
+      - name: Wave 6 Batch 7 short stories — source-pin freeze + frozen-control set equality
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
-        run: npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-short-stories.ts "$KDL_SOURCES_DIR/kalaignar-short-stories-wave6-b7"
+        run: |
+          # Read-only checkout of the EXACT control commit that authorized this Batch-7 population
+          # (kalaignar-tribute @ ceccd2a5, merged via PR #32) — the frozen artifact to prove set-equal to,
+          # never moving control main. The commit is also recorded in the manifest's controlAuthority.
+          CTRL="$RUNNER_TEMP/b7-control"
+          git init -q "$CTRL"
+          git -C "$CTRL" remote add origin "https://github.com/pugazg/kalaignar-tribute.git"
+          if ! git -C "$CTRL" fetch -q --depth 1 origin ceccd2a5cf506a6f46ad6ec8baf892abf9c17a70; then
+            echo "::error::Could not fetch pinned control commit — Batch-7 set-equality cannot be proven."
+            exit 1
+          fi
+          git -C "$CTRL" checkout -q FETCH_HEAD
+          npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-short-stories.ts "$KDL_SOURCES_DIR/kalaignar-short-stories-wave6-b7" "$CTRL"
 
       # Proves the migrated validators still obey docs/VALIDATOR_CONTRACT.md — that corrupted data
       # exits 1 naming the difference, and an unusable source exits 2. Runs last, after the sources

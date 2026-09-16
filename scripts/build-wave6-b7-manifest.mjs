@@ -20,6 +20,20 @@ const SOURCE_REPO = "pugazg/kalaignar-short-stories";
 const SOURCE_COMMIT = "7205a10892d0b208df2617766844f480b6a2c798";
 const SOURCE_TREE = "1be34cc368fbc96ff72933a004a074ef840168ee";
 
+// The control commit that authorized this exact Batch-7 population (merged via PR #32). Pinned so the
+// implementation manifest can be proven set-equal to the frozen control artifact, not to moving main.
+const CONTROL_REPO = "pugazg/kalaignar-tribute";
+const CONTROL_COMMIT = "ceccd2a5cf506a6f46ad6ec8baf892abf9c17a70";
+const CONTROL_MANIFEST_PATH = "projects/kalaignar-digital-library/WAVE6_BATCH7_SHORT_STORIES.md";
+
+// ── SOURCE-FREEZE PREFLIGHT — fail closed before deriving any pin or writing the manifest ──
+{
+  const headCommit = git("rev-parse", "HEAD");
+  if (headCommit !== SOURCE_COMMIT) die(`checkout HEAD ${headCommit} != frozen source commit ${SOURCE_COMMIT}`);
+  const headTree = git("rev-parse", "HEAD^{tree}");
+  if (headTree !== SOURCE_TREE) die(`checkout root tree ${headTree} != frozen source tree ${SOURCE_TREE}`);
+}
+
 // ── The verified 116 canonical Batch-7 slugs, grouped by internal validation/provenance partition ──
 // (validation partitions only — Batch 7 is ONE combined implementation batch.)
 const G2008 = ["antha-naal-vanthilai","appadithan-sirippen","aththiri-paachaa","edukkavo-kokkavo","ezhuchikku-adaiyaalam","ice-katti","idhayam-pesugirathu","idikkup-pin-mazhai","iramanai-patri-iraman","jaadi-kutti-poduma","kadamai-kanniyam-kattuppadu","kaniyum-kanaiyum","kannil-kaal","kazhuthaiyin-kathai","koottani","maanum-perumaanum","mamiyar-udaithaal-mattum-manchattiya","mayil-ravanan","naakkuth-tamil-manakkum","nadakkuma-nadakkatha","nalvazhiyum-nalla-vazhiyum","nandri-sollum-neram","neethi-devathaiye","onnu-kuduma","paarur-pola","panithuliyil-panai-maram","panthalile-paagarkai","porumaikku-saandru","pulivaal","saavi-thaan-illai","seera-vendama","seruppodu-iru","thalaiyil-malai","thalaiyum-nuniyum","thamizan-endru-sollada","theriyatha-pechu","thum-pam-theem-thom","unakku-vayathenna","vennai-uruguthu-veyilil","verum-kai-muzham-podum"];
@@ -111,6 +125,12 @@ const manifest = {
   sourceRepo: SOURCE_REPO,
   sourceCommit: SOURCE_COMMIT,
   sourceTree: SOURCE_TREE,
+  controlAuthority: {
+    note: "The frozen control artifact that authorized this exact 116-work Batch-7 population (merged via kalaignar-tribute PR #32). The Batch-7 validator proves this implementation manifest is set-equal to that pinned control manifest, not to moving control main.",
+    repo: CONTROL_REPO,
+    commit: CONTROL_COMMIT,
+    manifestPath: CONTROL_MANIFEST_PATH,
+  },
   workCount: 116,
   groupSum: `40 + 34 + 23 + 5 + 6 + 3 + 2 + 1 + 1 + 1 = 116`,
   refreshedWave6CompletedPopulation: 138,

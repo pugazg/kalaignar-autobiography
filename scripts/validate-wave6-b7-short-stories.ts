@@ -32,8 +32,9 @@ const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
 const eq = <T,>(a: T, b: T, l: string) => { checks++; if (JSON.stringify(a) !== JSON.stringify(b)) fail.push(`${l}\n     expected ${JSON.stringify(b)}\n     actual   ${JSON.stringify(a)}`); };
 const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
 
-type Group = { group: string; newCanonicalCount: number; publicCollectionPlanned: boolean; plannedCollectionMemberCount: number; plannedCollectionMembers: string[]; collectionSubtreePin: string | null; slugs: { slug: string; subtreePin: string }[] };
-type Manifest = { batch: number; batchId: string; sourceRepo: string; sourceCommit: string; sourceTree: string; workCount: number; discoverable: boolean; sitemapExposed: boolean; publicCollectionExposed: boolean; directRouteCountP1: number; groups: Group[]; witnesses: Record<string, { newCanonicals: number; witnessOnly: number; witnessIds: string[] }>; };
+type Group = { group: string; newCanonicalCount: number; publicCollectionPlanned: boolean; plannedCollectionMemberCount: number; plannedCollectionMembers: string[]; collectionDir: string | null; collectionSubtreePin: string | null; slugs: { slug: string; subtreePin: string }[] };
+type ControlAuthority = { repo: string; commit: string; manifestPath: string };
+type Manifest = { batch: number; batchId: string; sourceRepo: string; sourceCommit: string; sourceTree: string; controlAuthority?: ControlAuthority; workCount: number; discoverable: boolean; sitemapExposed: boolean; publicCollectionExposed: boolean; directRouteCountP1: number; groups: Group[]; witnesses: Record<string, { newCanonicals: number; witnessOnly: number; witnessIds: string[] }>; };
 const manifest: Manifest = JSON.parse(fs.readFileSync(path.join(root, "data/internal/wave6/b7-short-stories.json"), "utf8"));
 
 // ── 1. IDENTITY ────────────────────────────────────────────────────────────────────────────────────
@@ -93,24 +94,56 @@ for (const g of manifest.groups) for (const s of g.slugs) ok(/^[0-9a-f]{40}$/.te
 const SRC = process.argv[2] || (process.env.KDL_SOURCES_DIR ? `${process.env.KDL_SOURCES_DIR}/kalaignar-short-stories` : "");
 if (SRC && fs.existsSync(path.join(SRC, "stories"))) {
   const git = (...a: string[]) => execFileSync("git", ["-C", SRC, ...a], { encoding: "utf8" }).trim();
-  const head = git("rev-parse", "HEAD");
-  eq(head, manifest.sourceCommit, "live source HEAD == frozen source commit (no drift)");
+  const treeOf = (p: string) => { const m = git("ls-tree", "HEAD", p).match(/^\d+ tree ([0-9a-f]{40})\t/); return m ? m[1] : null; };
+  // Commit AND root-tree identity, both compared to the frozen constants and the manifest (redundant by design).
+  eq(git("rev-parse", "HEAD"), manifest.sourceCommit, "live source HEAD == frozen source commit (no drift)");
+  const rootTree = git("rev-parse", "HEAD^{tree}");
+  eq(rootTree, "1be34cc368fbc96ff72933a004a074ef840168ee", "live source root tree == frozen source tree constant");
+  eq(rootTree, manifest.sourceTree, "live source root tree == manifest.sourceTree");
+  // Per-group collection subtree pins: compare the recorded pin to the ACTUAL frozen checkout tree.
   for (const g of manifest.groups) {
-    if (g.collectionSubtreePin) {
-      const dir = manifest.groups.find((x) => x.group === g.group)!;
-      void dir;
-    }
-    for (const s of g.slugs) {
-      const m = git("ls-tree", "HEAD", `stories/${s.slug}`).match(/^\d+ tree ([0-9a-f]{40})\t/);
-      ok(!!m && m[1] === s.subtreePin, `${s.slug}: source subtree pin unchanged`);
-      ok(fs.existsSync(path.join(SRC, "stories", s.slug)), `${s.slug}: source workspace exists`);
+    if (g.collectionDir && g.collectionSubtreePin) {
+      eq(treeOf(g.collectionDir), g.collectionSubtreePin, `group ${g.group}: collection subtree ${g.collectionDir} tree == recorded pin`);
+    } else {
+      ok(g.collectionDir === null && g.collectionSubtreePin === null, `group ${g.group}: no collection dir ⇒ no collection pin (periodical)`);
     }
   }
-  // 1977 anthology members disjoint from Batch 7 (read from source)
+  // Per-work subtree pins + workspace existence.
+  for (const g of manifest.groups) for (const s of g.slugs) {
+    eq(treeOf(`stories/${s.slug}`), s.subtreePin, `${s.slug}: source subtree pin unchanged`);
+    ok(fs.existsSync(path.join(SRC, "stories", s.slug)), `${s.slug}: source workspace exists`);
+  }
+  // 1977 anthology members disjoint from Batch 7 (read from source).
   const members1977 = new Set(execFileSync("bash", ["-c", `grep -rhoE 'stories/[a-z0-9-]+' ${JSON.stringify(path.join(SRC, "collections/1977-kalaignar-karunanidhiyin-sirukathaigal"))} | sed 's|stories/||' | sort -u`], { encoding: "utf8" }).trim().split(/\s+/).filter(Boolean));
   for (const s of allSlugs) ok(!members1977.has(s), `${s}: not a 1977 anthology member`);
 } else {
   console.error("  · SOURCE-FREEZE live pin recheck SKIPPED — no source checkout given (CI passes one).");
+}
+
+// ── 3b. CONTROL-MANIFEST SET EQUALITY — against the PINNED frozen control artifact (not moving main) ──
+const ca = manifest.controlAuthority;
+ok(!!ca && ca.repo === "pugazg/kalaignar-tribute" && /^[0-9a-f]{40}$/.test(ca.commit) && !!ca.manifestPath, "manifest pins the control authority (repo/commit/path)");
+const CTRL = process.argv[3] || (process.env.KDL_CONTROL_DIR ?? "");
+if (CTRL && ca && fs.existsSync(path.join(CTRL, ".git"))) {
+  const cgit = (...a: string[]) => execFileSync("git", ["-C", CTRL, ...a], { encoding: "utf8" }).trim();
+  eq(cgit("rev-parse", "HEAD"), ca.commit, "control checkout HEAD == pinned control commit");
+  const md = fs.readFileSync(path.join(CTRL, ca.manifestPath), "utf8");
+  const ctrlSlugs: string[] = [];
+  let inGroup = false;
+  for (const ln of md.split("\n")) {
+    if (/^### Group \d+ /.test(ln)) { inGroup = true; continue; }
+    if (inGroup && ln.trim().startsWith("`")) { ctrlSlugs.push(...Array.from(ln.matchAll(/`([a-z0-9-]+)`/g), (m) => m[1])); inGroup = false; }
+  }
+  eq(ctrlSlugs.length, 116, "control manifest lists exactly 116 canonical slugs");
+  eq(new Set(ctrlSlugs).size, 116, "control manifest 116 unique");
+  eq(allSlugs.length, 116, "implementation manifest 116");
+  eq(new Set(allSlugs).size, 116, "implementation manifest 116 unique");
+  eq(uniqSorted(ctrlSlugs), uniqSorted(allSlugs), "control ↔ implementation SET equality");
+  eq(ctrlSlugs, allSlugs, "control ↔ implementation ORDERED equality");
+  eq(ctrlSlugs.filter((s) => !manifestSet.has(s)), [], "0 control works missing from implementation");
+  eq(allSlugs.filter((s) => !new Set(ctrlSlugs).has(s)), [], "0 implementation works extra vs control");
+} else {
+  console.error("  · CONTROL set-equality SKIPPED — no pinned control checkout given (CI passes one via KDL_CONTROL_DIR / argv[3]).");
 }
 
 // ── 4. WITNESSES ──────────────────────────────────────────────────────────────────────────────────
