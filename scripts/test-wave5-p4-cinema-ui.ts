@@ -129,10 +129,10 @@ ok(cinemaEn.indexOf("<details") !== -1, "Cinema section now renders a disclosure
 const speechesEn = sectionHtml(htmlEn, "speeches");
 ok(speechesEn.indexOf("<details") !== -1, "Speeches section carries a disclosure");
 const totalDetails = (htmlEn.match(/<details/g) ?? []).length;
-eq(totalDetails, 5, "five disclosures on the whole page (the five over-cap shelves)");
+eq(totalDetails, 6, "six disclosures on the whole page (the six over-cap shelves; Batch-7 pushed Fiction over)");
 // Cross-check the rendered disclosure count matches the derived over-cap shelf set.
 const overCap = discoveryShelves().filter((s) => s.entries.length > CAP).map((s) => s.shelf.id);
-eq(overCap, ["poetry", "drama", "cinema-writing", "speeches", "essays-articles"], "the five over-cap shelves (post Wave-6 P4)");
+eq(overCap, ["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"], "the six over-cap shelves (post Batch-7: Fiction joined)");
 
 // ── Report ──────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {

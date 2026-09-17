@@ -263,4 +263,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b2-drama — ${checks} checks, 0 failed`);
-console.log("  3 Drama works · 83 direct routes (registry-derived, fail-closed) · compressed range / unnumbered காட்சி / 47 scenes / 7 SRUs / intertitle / holds · P4: catalogue 100 · Drama discovery 8");
+console.log("  3 Drama works · 83 direct routes (registry-derived, fail-closed) · compressed range / unnumbered காட்சி / 47 scenes / 7 SRUs / intertitle / holds · P4: catalogue 216 · Drama discovery 8");

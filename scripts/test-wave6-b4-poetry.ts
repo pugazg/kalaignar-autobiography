@@ -176,4 +176,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b4-poetry — ${checks} checks, 0 failed`);
-console.log("  8 works · 30 direct routes (registry-derived, fail-closed) · verse-novel renders as 11 sections · 1975 [1,2,4] no invented 03 · P4: catalogue 100 · Poetry discovery 14 · 30 sitemap URLs");
+console.log("  8 works · 30 direct routes (registry-derived, fail-closed) · verse-novel renders as 11 sections · 1975 [1,2,4] no invented 03 · P4: catalogue 216 · Poetry discovery 14 · 30 sitemap URLs");

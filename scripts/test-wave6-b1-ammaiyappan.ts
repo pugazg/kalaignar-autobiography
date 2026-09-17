@@ -131,4 +131,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b1-ammaiyappan — ${checks} checks, 0 failed`);
-console.log("  63 archival scenes · 65 direct routes (registry-derived, fail-closed) · archive-segment semantics · not-Film-Songs · song occurrences not upgraded · P4: 65 sitemap URLs · catalogue 100 · Cinema discovery 7");
+console.log("  63 archival scenes · 65 direct routes (registry-derived, fail-closed) · archive-segment semantics · not-Film-Songs · song occurrences not upgraded · P4: 65 sitemap URLs · catalogue 216 · Cinema discovery 7");
