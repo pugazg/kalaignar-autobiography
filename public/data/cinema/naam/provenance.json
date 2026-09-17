@@ -1,0 +1,43 @@
+{
+  "slug": "naam",
+  "wave": 7,
+  "batch": 1,
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourceCommit": "8c1fc37a089cb23173e6b8725f7d31200ea83d7b",
+  "repoTree": "8009cdfa17637e722ee10b5c9f8910211f915af3",
+  "workTree": "de8950811d438686771dd9a7f2a9bd996d66cfd6",
+  "sourcePath": "works/naam",
+  "title": {
+    "ta": "நாம்",
+    "en": "Naam",
+    "enIsEditorial": true
+  },
+  "kind": "film-screenplay-dialogue-booklet",
+  "source": {
+    "scanSha256": "0f7a54882eb6a5a8f83b29060c771ef18dee2b9e108c8797184de2b97c30b7ad",
+    "sourceIdentifier": null,
+    "publicationYearAsPrinted": null,
+    "note": "The controlling scan is recorded by SHA-256 only; the PDF is not vendored and is never fetched at runtime. Publication year is a printed source witness, not promoted to the catalogue card."
+  },
+  "readingRoomPayloadSha256": "9b97493b820ebd42c822b5fbdc53beda8dbe1d61103a1c9d2abb06a552bcf825",
+  "readingRoomPayloadBytes": 965215,
+  "payloadMode": "source-reading-room-vendored",
+  "integrationQaStatus": "payload-complete-verified",
+  "englishProvenance": {
+    "kind": "project-created",
+    "status": "complete-verified",
+    "note": "Maintained English reading layer built and verified against the controlling Tamil source; titleEn is editorial. No publication year/edition/rights is promoted to the catalogue card."
+  },
+  "counts": {
+    "scene_count": 45,
+    "english_units": 797,
+    "immutable_dialogue_links": 590,
+    "retained_performance_records": 7
+  },
+  "hidden": {
+    "discoverable": false,
+    "sitemapExposed": false,
+    "publicRoute": false,
+    "note": "Wave 7 Batch 1 P1 — vendored hidden. Not in LIBRARY_WORKS, no /cinema route, no /read discovery, no sitemap URL until P4."
+  }
+}

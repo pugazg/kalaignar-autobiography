@@ -41,7 +41,10 @@
     "test:p4-witness-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave4-p4-witness-ui.ts",
     "test:validator-contract": "node scripts/test-validator-contract.mjs \"${KDL_SOURCES_DIR:-.sources}\"",
     "build:features": "tsx pipeline/builders/export-feature-data.ts",
-    "build:app-data": "npm run build:features && python3 pipeline/builders/build_app_manifest.py"
+    "build:app-data": "npm run build:features && python3 pipeline/builders/build_app_manifest.py",
+    "import:wave7-b1-cinema": "node scripts/import-wave7-b1-cinema.mjs",
+    "test:wave7-b1-cinema": "node scripts/validate-wave7-b1-cinema.mjs",
+    "test:wave7-b1-p1": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b1-p1.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

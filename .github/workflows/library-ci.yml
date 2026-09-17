@@ -172,6 +172,11 @@ jobs:
       # source-order RE-DERIVATION of every collection runs in the source-integrity job below (needs the pin).
       - name: Wave 6 Batch 7 P4 publication integration (catalogue/collections/discovery/sitemap)
         run: npm run test:wave6-b7-p4-integration
+      # Wave 7 Batch 1 P1 — the 3 cinema works are vendored (hidden) but change NO public surface. Runs
+      # after Build so its build-boundary check reads the real .next: catalogue 216, Cinema Writing 7,
+      # /read 77/40, sitemap 3909/0, build 3918/3913 unchanged, 0 new /cinema routes; payloads load hidden.
+      - name: Wave 7 Batch 1 P1 hidden cinema foundation
+        run: npm run test:wave7-b1-p1
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -255,6 +260,12 @@ jobs:
               // Wave 6 Batch 1 — Ammayappan pins the cinema archive at its own later commit (its
               // Reading Room payload postdates the Wave-5 freeze), so it gets its own checkout directory.
               "cinema/ammaiyappan": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave6" },
+              // Wave 7 Batch 1 — Maruthanattu Ilavarasi, Vandikkaran Magan, Naam pin the SAME later
+              // cinema commit (8c1fc37a), so they share one checkout directory; the same-directory/
+              // same-pin guard holds because all three provenance records name that one commit.
+              "cinema/maruthanattu-ilavarasi": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave7-b1" },
+              "cinema/vandikkaran-magan": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave7-b1" },
+              "cinema/naam": { repo: "kalaignar-cinema-works", dir: "kalaignar-cinema-works-wave7-b1" },
               "speeches/udhaya-kathir": { repo: "kalaignar-assembly-speeches" },
               "speeches/poonthottam": { repo: "kalaignar-public-speeches" },
               "speeches/arappor": { repo: "kalaignar-public-speeches" },
@@ -471,6 +482,13 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-ammaiyappan.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-wave6"
+      # Wave 7 Batch 1 — the 3 cinema works vendored (hidden) at pin 8c1fc37a. Independent, fail-closed:
+      # re-reads the pinned source, proves each vendored reader.json is byte-identical to the source's
+      # QA-verified reading-room.json (SHA self-declared by the source manifest), and checks pins/counts.
+      - name: Wave 7 Batch 1 cinema — source-pin fidelity (3 works)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave7-b1-cinema.mjs "$KDL_SOURCES_DIR/kalaignar-cinema-works-wave7-b1"
       - name: Udhaya Kathir
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
