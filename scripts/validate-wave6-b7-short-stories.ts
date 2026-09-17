@@ -13,18 +13,18 @@
  *   COLLECTIONS   — planned future membership counts (2008 40, 2004 34, 1987 25, 1982 6, 2009 16); 1987's 2
  *                   cross-members and 2009's 11 plural members resolve to EXISTING canonical ids; 1976 planned=false;
  *                   no duplicate LibraryWork implied by any plural membership.
- *   HIDDEN GATE   — P1 changed none of STORY_SLUGS / LIBRARY_WORKS / LIBRARY_COLLECTIONS / COLLECTION_IDS /
- *                   /read discovery / sitemap; public boundary unchanged (catalogue 100, collections 1,
- *                   discovery 64/39, Fiction 41, sitemap 3672/0-dup). Route/.html counts belong to the
- *                   phase validators (P3: validate-wave6-b7-p3-routes.ts); this one asserts only the data surface.
+ *   PLAN REALIZED — the frozen manifest records P1's hidden-foundation intent; on this branch P4 has
+ *                   published it, so every planned canonical is now a published Fiction work and a
+ *                   discovered STORY_SLUGS entry, and the 5 planned collections are public. The published
+ *                   TOTALS + route/.html counts belong to the phase validators that own them
+ *                   (validate-wave6-b7-p3-routes.ts, validate-wave6-b7-p4-integration.ts).
  */
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { publishedWorks, LIBRARY_WORKS } from "../data/library";
-import { discoveryShelves, LIBRARY_COLLECTIONS, COLLECTION_IDS } from "../data/collections";
+import { publishedWorks } from "../data/library";
+import { COLLECTION_IDS } from "../data/collections";
 import { STORY_SLUGS } from "../data/stories";
-import sitemap from "../app/sitemap";
 
 const root = process.cwd();
 let checks = 0;
@@ -195,35 +195,27 @@ for (const id of plural2009) {
   ok(!manifestSet.has(id), `2009 plural member ${id} is not a new Batch-7 work`);
 }
 
-// ── 6. HIDDEN-BOUNDARY GATE ─────────────────────────────────────────────────────────────────────────
-eq(manifest.discoverable, false, "manifest discoverable=false");
-eq(manifest.sitemapExposed, false, "manifest sitemapExposed=false");
-eq(manifest.publicCollectionExposed, false, "manifest publicCollectionExposed=false");
-eq(manifest.directRouteCountP1, 0, "manifest directRouteCountP1=0");
-// none of the 116 leaked into any public surface
+// ── 6. THE FROZEN P1 MANIFEST INTENT + PUBLICATION REALIZED (P4) ─────────────────────────────────────
+// The manifest is a frozen P1 artifact, so its own recorded intent still reads "hidden foundation":
+eq(manifest.discoverable, false, "manifest records discoverable=false (frozen P1 intent)");
+eq(manifest.sitemapExposed, false, "manifest records sitemapExposed=false (frozen P1 intent)");
+eq(manifest.publicCollectionExposed, false, "manifest records publicCollectionExposed=false (frozen P1 intent)");
+eq(manifest.directRouteCountP1, 0, "manifest records directRouteCountP1=0 (frozen P1 intent)");
+// On this branch P4 has published the foundation, so the plan must be REALIZED exactly — every planned
+// canonical is now a published Fiction work AND a discovered story slug, and the 5 planned public
+// collections exist. This ties the P1 plan to the P4 result; the published TOTALS (catalogue/discovery/
+// sitemap/build) are owned by scripts/validate-wave6-b7-p4-integration.ts, not re-asserted here.
+const publishedIds = new Set(publishedWorks().map((w) => w.id));
+const storySet = new Set(STORY_SLUGS as readonly string[]);
 for (const slug of allSlugs) {
-  ok(!(STORY_SLUGS as readonly string[]).includes(slug), `${slug} not promoted into STORY_SLUGS`);
-  ok(!LIBRARY_WORKS.some((w) => w.slug === slug || w.id === slug), `${slug} not added to LIBRARY_WORKS`);
-  ok(!COLLECTION_IDS.includes(slug), `${slug} not a public collection id`);
+  ok(publishedIds.has(slug), `${slug} is now a published LibraryWork (P4 realized)`);
+  ok(storySet.has(slug), `${slug} is now a discovered STORY_SLUGS entry (P4 realized)`);
 }
-// public boundary unchanged
-eq(publishedWorks().length, 100, "catalogue still 100 works");
-eq(LIBRARY_COLLECTIONS.length, 1, "public collections still 1");
-const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, 64, "/read discovery still 64 entries");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), 39, "initially visible still 39");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.works.length, 41, "Fiction shelf still 41 works");
-const urls = sitemap().map((e) => e.url);
-eq(urls.length, 3672, "sitemap still 3672 URLs");
-eq(urls.length - new Set(urls).size, 0, "sitemap still 0 duplicates");
-for (const slug of allSlugs) ok(!urls.some((u) => u.endsWith(`/stories/${slug}`) || u.includes(`/stories/${slug}/`)), `${slug} not exposed in sitemap`);
-// Build boundary: this validator owns only the DATA surface (manifest, payloads, and the public
-// in-memory surfaces asserted above). It deliberately makes NO assertion about prerendered-route or
-// .html counts: from P3 onward the 116 Batch-7 reader/source routes are prerendered on purpose (direct-
-// addressable but still undiscovered), so a P1-era "0 new routes / 3681 / 3676" snapshot would be a
-// false negative once P3 or P4 shares the build tree. The route-level boundary is proved by the phase
-// validators that own it — scripts/validate-wave6-b7-p3-routes.ts (3913 / 3908, still off every public
-// surface) and, at publication, scripts/validate-wave6-b7-p4-integration.ts.
+const plannedCollectionIds = (manifest.groups as Array<{ publicCollectionPlanned?: boolean; collectionDir: string | null }>)
+  .filter((g) => g.publicCollectionPlanned)
+  .map((g) => String(g.collectionDir).split("/").pop());
+eq(plannedCollectionIds.length, 5, "manifest plans exactly 5 public collections");
+for (const id of plannedCollectionIds) ok(COLLECTION_IDS.includes(id as string), `planned collection ${id} is now public (P4 realized)`);
 
 if (fail.length) {
   console.error(`\nwave6-b7-short-stories — ${checks} checks, ${fail.length} FAILED\n`);
@@ -231,4 +223,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b7-short-stories — ${checks} checks, 0 failed`);
-console.log(`  116 hidden short-story payloads · groups 40+34+23+5+6+3+2+1+1+1=116 · future collections 5 (2008 40 / 2004 34 / 1987 25 / 1982 6 / 2009 16) · 0 public routes · catalogue 100 · sitemap 3672/0`);
+console.log(`  116 short-story payloads · groups 40+34+23+5+6+3+2+1+1+1=116 · 5 collections (2008 40 / 2004 34 / 1987 25 / 1982 6 / 2009 16) · P1 plan realized: all 116 published + in STORY_SLUGS`);

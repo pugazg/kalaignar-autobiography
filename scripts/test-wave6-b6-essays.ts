@@ -103,8 +103,8 @@ ok(true, "Essay landing + article reader render for Batch-6 works without error"
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `A13: route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 100, "A11: catalogue is 100 works (P4 published the 22 Wave-6 works)");
-eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
+eq(works.length, 216, "A11: catalogue is 216 works (Wave-6 P4 + Batch-7 published)");
+eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
 const essaysShelf = discoveryShelves().find((s) => s.shelf.id === "essays-articles");
 ok(!!essaysShelf, "Essays & Articles discovery shelf present");
 const essayEntries = essaysShelf ? essaysShelf.entries : [];

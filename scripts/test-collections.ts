@@ -53,8 +53,11 @@ const shelves = discoveryShelves();
 const c = collectionById(BENCHMARK);
 
 // ── 1. Registry ──────────────────────────────────────────────────────────────────────────────────
-eq(LIBRARY_COLLECTIONS.length, 1, "exactly one collection is declared in Phase 1");
-eq(COLLECTION_IDS, [BENCHMARK], "the route registry lists exactly the benchmark id");
+eq(LIBRARY_COLLECTIONS.length, 6, "six collections are declared (1977 + 5 Batch-7 short-story anthologies)");
+eq(COLLECTION_IDS, [
+  BENCHMARK, "1982-mudiyatha-thodarkathai", "1987-kalaignar-sonna-kuttik-kathaigal",
+  "2004-kalaignarin-kuttik-kathaigal", "2008-kalaignar-sonna-kathaigal", "2009-16-kathaiyinile",
+], "the route registry lists the 1977 benchmark plus the 5 Batch-7 collection ids");
 ok(!!c, "the benchmark collection resolves by id");
 if (!c) {
   console.error("collections — the benchmark collection is missing; nothing further can run");
@@ -87,18 +90,26 @@ const entries = shelves.flatMap((s) => s.entries);
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
-eq(works.length, 100, "the catalogue holds 100 published works (post Wave-6 P4)");
-eq(entries.length, 64, "the page holds 64 discovery entries (post Wave-6 P4)");
-eq(entries.filter((e) => e.kind === "collection").length, 1, "exactly one collection entry across all shelves");
+eq(works.length, 216, "the catalogue holds 216 published works (post Wave-6 P4 + Batch-7)");
+eq(entries.length, 77, "the page holds 77 discovery entries (post Wave-6 P4 + Batch-7)");
+eq(entries.filter((e) => e.kind === "collection").length, 6, "six collection entries across all shelves (1977 + 5 Batch-7)");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "the Fiction shelf is rendered");
-eq(fiction!.works.length, 41, "Fiction holds 41 works (post Wave-6 P4: +2 novels)");
-eq(fiction!.entries.length, 5, "Fiction shows 5 discovery entries (the collection collapses; 4 standalone novels)");
+eq(fiction!.works.length, 157, "Fiction holds 157 works (post Batch-7: +116 short stories)");
+eq(fiction!.entries.length, 18, "Fiction shows 18 discovery entries (6 collections collapse; 12 standalone works)");
 eq(
   fiction!.entries.map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)),
-  [BENCHMARK, "balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal"],
-  "Fiction shows the collection, then the standalone works (incl. the 2 Wave-6 novels)",
+  [
+    // Collections first, in declaration order (1977 then the 5 Batch-7), then standalone works.
+    BENCHMARK, "1982-mudiyatha-thodarkathai", "1987-kalaignar-sonna-kuttik-kathaigal",
+    "2004-kalaignarin-kuttik-kathaigal", "2008-kalaignar-sonna-kathaigal", "2009-16-kathaiyinile",
+    "balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal",
+    // The 8 Batch-7 works that belong to no collection (periodical 3, 1976 2, 1969, 1953, 1997).
+    "seerazhitha-sirippu", "madurai-selavu", "kondru-varuga", "naattiya-kalarani", "maanam",
+    "neruppu", "vilaiyal-vangalaiyo", "nanbana",
+  ],
+  "Fiction shows the 6 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7)",
 );
 
 // The collection appears once; no member appears as its own card.
@@ -120,20 +131,25 @@ for (const s of shelves.filter((x) => x.shelf.id !== "fiction")) {
 const speeches = shelves.find((s) => s.shelf.id === "speeches");
 eq(speeches!.entries.length, 17, "Speeches has 17 entries (post Wave-6 P4)");
 ok(/<details/.test(html), "the Speeches disclosure survives Phase 1");
-// Fiction (5 entries) is at/under the cap, so it has no disclosure. Post Wave-6 P4 the five over-cap
-// shelves — poetry, drama, cinema-writing, speeches, essays-articles — each render one <details>.
-eq((html.match(/<details/g) ?? []).length, 5, "Fiction has no disclosure; the five over-cap shelves each keep one");
+// Post Batch-7 Fiction (18 entries) is ALSO over the cap, so six shelves now render one <details> each:
+// fiction, poetry, drama, cinema-writing, speeches, essays-articles.
+eq((html.match(/<details/g) ?? []).length, 6, "the six over-cap shelves (incl. Fiction) each render one disclosure");
 
 // The shelf heading states works, never entries.
 const fictionSection = html.slice(html.indexOf('aria-labelledby="shelf-fiction"'));
 const fictionHeading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(fictionSection);
-ok(!!fictionHeading && /\b41\b/.test(fictionHeading[1]), "the Fiction heading states 41 works, not 5");
-ok(!!fictionHeading && /\b1\b/.test(fictionHeading[1]), "the Fiction heading states its 1 collection");
+ok(!!fictionHeading && /\b157\b/.test(fictionHeading[1]), "the Fiction heading states 157 works, not 18");
+ok(!!fictionHeading && /\b6\b/.test(fictionHeading[1]), "the Fiction heading states its 6 collections");
 
 // ── 3. Reverse lookup is derived, plural, and not stored ─────────────────────────────────────────
+// Batch 7's 2009 anthology reprints eleven 1977 stories, so those members now legitimately belong to TWO
+// collections (1977 + 2009) — real plural membership, exactly what the list-valued lookup exists for.
+const coll2009 = LIBRARY_COLLECTIONS.find((x) => x.id === "2009-16-kathaiyinile")!;
+const in2009 = new Set(coll2009.members.map((m) => m.workId));
 for (const m of c.members) {
-  const found = collectionsForWork(m.workId);
-  eq(found.map((x) => x.id), [BENCHMARK], `reverse lookup resolves ${m.workId} to a one-item list`);
+  const found = collectionsForWork(m.workId).map((x) => x.id).sort();
+  const expected = in2009.has(m.workId) ? [BENCHMARK, "2009-16-kathaiyinile"].sort() : [BENCHMARK];
+  eq(found, expected, `reverse lookup resolves ${m.workId} to its collection(s)`);
 }
 eq(collectionsForWork("kizhavan-kanavu").length, 0, "kizhavan-kanavu belongs to no collection");
 eq(collectionsForWork("balipeedam-nokki").length, 0, "balipeedam-nokki belongs to no collection");
@@ -279,7 +295,7 @@ for (const m of c.members) {
   eq(w!.href, `/stories/${m.workId}`, `${m.workId} keeps its own route`);
   ok((STORY_SLUGS as readonly string[]).includes(m.workId), `${m.workId} is still in STORY_SLUGS`);
 }
-eq(STORY_SLUGS.length, 38, "STORY_SLUGS still holds 38 slugs — 37 members plus the standalone booklet");
+eq(STORY_SLUGS.length, 154, "STORY_SLUGS holds 154 slugs (38 pre-Batch-7 + 116 Batch-7 short stories)");
 eq(
   works.map((w) => w.href).sort(),
   publishedWorks().map((w) => w.href).sort(),

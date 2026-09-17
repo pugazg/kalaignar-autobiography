@@ -73,7 +73,7 @@ ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-1 mani
 const urls = sitemap().map((e) => e.url);
 eq(urls.filter((u) => u.startsWith(`${BASE}/cinema/ammaiyappan`)).length, 65, "65 ammaiyappan URLs in the sitemap (landing + /source + 63 scenes)");
 const works = publishedWorks();
-eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+eq(works.length, 216, "catalogue is 216 works (Wave-6 P4 + Batch-7 published)");
 ok(works.some((w) => w.slug === "ammaiyappan"), "ammaiyappan IS in the catalogue");
 const cinemaEntries = discoveryShelves().find((s) => s.shelf.id === "cinema-writing")!.entries;
 eq(cinemaEntries.length, 7, "Cinema discovery is 7 entries (ammaiyappan card added)");

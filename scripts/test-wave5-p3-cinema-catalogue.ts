@@ -28,7 +28,7 @@ const R = readerOf<RajaRaniReader>("raja-rani");
 
 // ── CATALOGUE ───────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 100, "catalogue holds 100 published works (post Wave-6 P4)");
+eq(works.length, 216, "catalogue holds 216 published works (post Wave-6 P4 + Batch-7)");
 const man = LIBRARY_WORKS.filter((w) => w.slug === "manthiri-kumari");
 const raja = LIBRARY_WORKS.filter((w) => w.slug === "raja-rani");
 eq(man.length, 1, "exactly one Manthiri Kumari work record");
@@ -44,7 +44,7 @@ for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 // Post Wave-6 P4 census (this Wave-5 P3 test's baseline moves with the published world).
 eq(byShelf["cinema-writing"], 7, "Cinema Writing holds 7 works (post Wave-6 P4: +ammaiyappan)");
 eq(byShelf["poetry"], 14, "Poetry 14 (post Wave-6 P4)");
-eq(byShelf["fiction"], 41, "Fiction 41 (post Wave-6 P4)");
+eq(byShelf["fiction"], 157, "Fiction 157 (post Wave-6 P4 + Batch-7)");
 eq(byShelf["drama"], 8, "Drama 8 (post Wave-6 P4)");
 eq(byShelf["speeches"], 17, "Speeches 17 (post Wave-6 P4)");
 eq(byShelf["essays-articles"], 9, "Essays & Articles 9 (post Wave-6 P4)");
@@ -52,14 +52,14 @@ eq(byShelf["literary-commentary"], 2, "Literary Commentary unchanged (2)");
 eq(byShelf["life-writing"], 1, "Life Writing unchanged (1)");
 eq(byShelf["letters"], 1, "Letters unchanged (1)");
 eq(Object.keys(byShelf).length, 9, "exactly 9 non-empty shelves");
-eq(LIBRARY_COLLECTIONS.length, 1, "collections remain 1");
+eq(LIBRARY_COLLECTIONS.length, 6, "collections are 6 (1977 + 5 Batch-7)");
 
 // ── DISCOVERY ─────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 64, "64 discovery entries (post Wave-6 P4)");
+eq(entries.length, 77, "77 discovery entries (post Wave-6 P4 + Batch-7)");
 const initiallyVisible = shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0);
-eq(initiallyVisible, 39, "39 initially visible discovery entries (post Wave-6 P4)");
+eq(initiallyVisible, 40, "40 initially visible discovery entries (post Batch-7: Fiction over-cap)");
 const cinema = shelves.find((s) => s.shelf.id === "cinema-writing")!;
 eq(cinema.entries.length, 7, "Cinema Writing renders 7 discovery entries (post Wave-6 P4: +ammaiyappan)");
 ok(cinema.entries.length > CAP, "Cinema Writing is now over the cap — disclosure control active");
@@ -73,13 +73,13 @@ eq(cinemaHrefs, [
 // Post Wave-6 P4, five shelves are over the cap: poetry, drama, cinema-writing, speeches, essays-articles.
 // Fiction has 41 works but only 5 discovery entries (its anthology is one collection entry), so it stays
 // at/under the cap. Cinema moved 6 → 7 and is now over the cap.
-eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "poetry", "speeches"], "the five over-cap shelves (post Wave-6 P4)");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 5, "Fiction has 5 discovery entries (at/under the cap) despite 41 works");
+eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "poetry", "speeches"], "the six over-cap shelves (post Batch-7: Fiction joined)");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 18, "Fiction has 18 discovery entries despite 157 works (post Batch-7)");
 
 // ── SITEMAP ─────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
 const origin = new URL(urls[0]).origin;
-eq(urls.length, 3672, "sitemap holds 3672 URLs (post Wave-6 P4)");
+eq(urls.length, 3909, "sitemap holds 3909 URLs (post Wave-6 P4 + Batch-7)");
 eq(new Set(urls).size, urls.length, "sitemap has 0 duplicate URLs");
 const manUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/manthiri-kumari`));
 const rajaUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/raja-rani`));
@@ -137,4 +137,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave5-p3-cinema-catalogue — ${checks} checks, 0 failed`);
-console.log("  post Wave-6 P4: 100 works · Cinema Writing 7 · discovery 64 / visible 39 · collections 1 · sitemap 3672 (0 dup) · Wave-5 89=18+71 intact · deterministic order · no overclaims");
+console.log("  post Wave-6 P4 + Batch-7: 216 works · Cinema Writing 7 · discovery 77 / visible 40 · collections 6 · sitemap 3909 (0 dup) · Wave-5 89=18+71 intact · deterministic order · no overclaims");

@@ -87,8 +87,9 @@ for (const { shelf, works: shelfWorks, entries: shelfEntries } of shelves) {
   const detailsAt = s.indexOf("<details");
   const hasDisclosure = detailsAt !== -1;
 
-  // THE CAP COUNTS ENTRIES, NOT WORKS. Fiction has 39 works but 3 entries, so it must have no
-  // disclosure — and that must follow from the count, not from any test for the Fiction shelf.
+  // THE CAP COUNTS ENTRIES, NOT WORKS. Literary-commentary has 2 works and 2 entries, so it has no
+  // disclosure; Fiction has 157 works but 18 ENTRIES (six collections collapse), so it is over the cap
+  // and does — and that must follow from the entry count, not from any test for a named shelf.
   if (shelfEntries.length <= CAP) {
     ok(!hasDisclosure, `${label}: no disclosure on a shelf of ${shelfEntries.length} ≤ ${CAP} entries`);
     eq(hrefsIn(s), shelfEntries.map(entryHref), `${label}: all entries shown, in derived order`);

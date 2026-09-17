@@ -78,11 +78,11 @@ ok(!routes.some((r) => /\/poems\/[^/]+\/\d+$/.test(r)), "no numeric-alias child 
 const urls = sitemap().map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+eq(works.length, 216, "catalogue is 216 works (Wave-6 P4 + Batch-7 published)");
 for (const s of [...WAVE6_POEM_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS]) ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
 const poetryEntries = discoveryShelves().find((s) => s.shelf.id === "poetry")!.entries;
 eq(poetryEntries.length, 14, "Poetry discovery is 14 entries (8 Wave-6 cards added)");
-eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
+eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
 
 // ── 3. RENDER SEMANTICS (Tamil render — the SSR primary language) ────────────────
 {

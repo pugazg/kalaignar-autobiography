@@ -52,8 +52,13 @@ for (const slug of b7) {
 }
 
 // ── Old 38 regression — legacy components unchanged ─────────────────────────────────────────────────
+// At P4 the 116 Batch-7 slugs were promoted INTO STORY_SLUGS, so the legacy set is STORY_SLUGS minus the
+// Batch-7 slugs (a Batch-7 provenance is `batch: 7` and renders through StorySourceB7, never the legacy
+// StorySource — the route dispatches on that discriminator). Filtering keeps this the original 38.
+const b7set = new Set<string>(b7);
+const legacySlugs = (STORY_SLUGS as readonly string[]).filter((s) => !b7set.has(s));
 let regressed = 0;
-for (const slug of STORY_SLUGS as readonly string[]) {
+for (const slug of legacySlugs) {
   try {
     const story = load(slug, "story.json");
     const prov = load(slug, "provenance.json");
@@ -64,7 +69,8 @@ for (const slug of STORY_SLUGS as readonly string[]) {
   } catch (e) { fail.push(`legacy ${slug}: render threw ${(e as Error).message}`); regressed++; }
   checks++;
 }
-ok(regressed === 0, `all ${(STORY_SLUGS as readonly string[]).length} legacy stories still render (0 regressions)`);
+ok(legacySlugs.length === 38, `exactly 38 legacy stories remain after removing the 116 Batch-7 slugs (got ${legacySlugs.length})`);
+ok(regressed === 0, `all ${legacySlugs.length} legacy stories still render (0 regressions)`);
 
 if (fail.length) {
   console.error(`\nwave6-b7-p2-render — ${checks} checks, ${fail.length} FAILED\n`);
@@ -72,4 +78,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b7-p2-render — ${checks} checks, 0 failed`);
-console.log(`  116 Batch-7 reader + provenance render checks PASS · ${(STORY_SLUGS as readonly string[]).length} legacy stories regression PASS · Tamil default · English toggle · no apparatus/undefined/null in UI`);
+console.log(`  116 Batch-7 reader + provenance render checks PASS · ${legacySlugs.length} legacy stories regression PASS · Tamil default · English toggle · no apparatus/undefined/null in UI`);

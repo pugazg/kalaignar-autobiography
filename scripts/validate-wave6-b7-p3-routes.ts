@@ -3,15 +3,16 @@
  *
  *   npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-p3-routes.ts
  *
- * Proves the 116 Batch-7 short stories are DIRECT-ADDRESSABLE but STILL HIDDEN:
+ * Proves the Batch-7 ROUTE LAYER, which is phase-invariant — it holds in the P3 tree (routes hidden)
+ * and in the P4 tree (works published), so it stays green after P4 promotes the slugs:
  *   • the route helper equals the frozen P1 manifest (116 slugs);
  *   • 232 routes (reader + source per slug), unique, no missing / extra / duplicate;
- *   • both route families' generateStaticParams cover every Batch-7 slug (deduped with STORY_SLUGS);
+ *   • both route families' generateStaticParams equal the dedup union STORY_SLUGS ∪ Batch-7 (same 154
+ *     whether the 116 are unioned in at P3 or promoted into STORY_SLUGS at P4);
  *   • every payload loads and every reader (Tamil default) + provenance page renders without throwing;
- *   • NOTHING leaked: no Batch-7 slug in STORY_SLUGS / LIBRARY_WORKS / LIBRARY_COLLECTIONS / sitemap;
- *   • the public boundary is unchanged (catalogue 100, collections 1, /read 64/39, Fiction 41, sitemap 3672/0);
- *   • the P3 build boundary is 3913 prerender / 3908 HTML when a build tree is present.
- * Fail-closed: an unknown slug is not in the union, so the route returns notFound().
+ *   • the 232 reader+source routes are prerendered when a build tree is present.
+ * Fail-closed: an unknown slug is not in the union, so the route returns notFound(). The PUBLISHED public
+ * surface (catalogue/discovery/sitemap/build totals) is owned by scripts/validate-wave6-b7-p4-integration.ts.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -21,9 +22,6 @@ import { LangProvider } from "../lib/i18n";
 import StoryReader from "../components/StoryReader";
 import StorySourceB7 from "../components/StorySourceB7";
 import { STORY_SLUGS } from "../data/stories";
-import { publishedWorks, LIBRARY_WORKS } from "../data/library";
-import { discoveryShelves, LIBRARY_COLLECTIONS, COLLECTION_IDS } from "../data/collections";
-import sitemap from "../app/sitemap";
 import { WAVE6_B7_STORY_SLUGS } from "../lib/stories-wave6-routes";
 import { generateStaticParams as readerParams } from "../app/stories/[slug]/page";
 import { generateStaticParams as sourceParams } from "../app/stories/[slug]/source/page";
@@ -53,13 +51,17 @@ eq(p3.sitemapExposed, false, "P3 sitemapExposed=false");
 eq(p3.publicCollectionRoutes, 0, "P3 public collection routes 0");
 
 // ── generateStaticParams coverage (both families cover every Batch-7 slug, deduped) ──────────────────
+// PHASE-INVARIANT. At P3, STORY_SLUGS held 38 and the union added the 116; at P4 the 116 were promoted
+// INTO STORY_SLUGS, so the Set-union is the same 154 either way. This validator therefore asserts the
+// route set equals the dedup union — true in both trees — and never a hidden/published count that P4 flips.
+const union = Array.from(new Set<string>([...(STORY_SLUGS as readonly string[]), ...WAVE6_B7_STORY_SLUGS]));
 const rp = (readerParams() as { slug: string }[]).map((p) => p.slug);
 const sp = (sourceParams() as { slug: string }[]).map((p) => p.slug);
 eq(new Set(rp).size, rp.length, "reader generateStaticParams has no duplicate");
 eq(new Set(sp).size, sp.length, "source generateStaticParams has no duplicate");
 for (const s of b7) { ok(rp.includes(s), `reader route prerenders ${s}`); ok(sp.includes(s), `source route prerenders ${s}`); }
-eq(rp.length, (STORY_SLUGS as readonly string[]).length + 116, "reader params == 38 published + 116 Batch-7 (deduped)");
-eq(sp.length, (STORY_SLUGS as readonly string[]).length + 116, "source params == 38 published + 116 Batch-7 (deduped)");
+eq(uniqSorted(rp), uniqSorted(union), "reader params == dedup union of STORY_SLUGS ∪ Batch-7 slugs");
+eq(uniqSorted(sp), uniqSorted(union), "source params == dedup union of STORY_SLUGS ∪ Batch-7 slugs");
 
 // ── Payloads load + reader/provenance render ─────────────────────────────────────────────────────────
 for (const slug of b7) {
@@ -73,32 +75,14 @@ for (const slug of b7) {
   ok(src.length > 0, `${slug}: provenance page renders`);
 }
 
-// ── Hidden boundary — nothing leaked into any public surface ─────────────────────────────────────────
-for (const slug of b7) {
-  ok(!(STORY_SLUGS as readonly string[]).includes(slug), `${slug} not in STORY_SLUGS`);
-  ok(!LIBRARY_WORKS.some((w) => w.slug === slug || w.id === slug), `${slug} not a LibraryWork`);
-  ok(!COLLECTION_IDS.includes(slug), `${slug} not a public collection id`);
-}
-eq(publishedWorks().length, 100, "catalogue still 100");
-eq(LIBRARY_COLLECTIONS.length, 1, "public collections still 1");
-const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, 64, "/read discovery still 64");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), 39, "initially visible still 39");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.works.length, 41, "Fiction shelf still 41");
-const urls = sitemap().map((e) => e.url);
-eq(urls.length, 3672, "sitemap still 3672");
-eq(urls.length - new Set(urls).size, 0, "sitemap 0 duplicates");
-for (const slug of b7) ok(!urls.some((u) => u.endsWith(`/stories/${slug}`) || u.includes(`/stories/${slug}/`)), `${slug} not in sitemap`);
-
-// ── Build boundary (when a build tree is present) ────────────────────────────────────────────────────
+// ── Build boundary — the 232 Batch-7 routes are prerendered (when a build tree is present) ───────────
+// PHASE-INVARIANT: the reader+source routes exist from P3 onward, so this asserts their PRESENCE, never
+// a global total (3913 at P3, 3918 at P4) — the P4 integration validator owns the published totals and
+// the published public surface (catalogue/discovery/sitemap). See scripts/validate-wave6-b7-p4-integration.ts.
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
-  const routeKeys = Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes);
-  eq(routeKeys.length, 3913, "build prerender routes == 3913 (baseline 3681 + 232)");
-  for (const s of b7) { ok(routeKeys.includes(`/stories/${s}`), `${s}: reader route prerendered`); ok(routeKeys.includes(`/stories/${s}/source`), `${s}: source route prerendered`); }
-  let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
-  try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, 3908, "build .html == 3908 (baseline 3676 + 232)");
+  const routeKeys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
+  for (const s of b7) { ok(routeKeys.has(`/stories/${s}`), `${s}: reader route prerendered`); ok(routeKeys.has(`/stories/${s}/source`), `${s}: source route prerendered`); }
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
@@ -109,4 +93,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b7-p3-routes — ${checks} checks, 0 failed`);
-console.log(`  116 Batch-7 works · 232 direct routes (reader+source), still undiscovered · catalogue 100 · /read 64/39 · sitemap 3672/0 · build 3913/3908`);
+console.log(`  116 Batch-7 works · 232 direct routes (reader+source) derived from the manifest, fail-closed · every payload loads + renders`);
