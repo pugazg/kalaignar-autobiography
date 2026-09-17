@@ -1,0 +1,86 @@
+{
+  "note": "Wave 7 Batch 1 (Cinema) — frozen 3-work manifest. HIDDEN P1 data foundation: payloads are vendored under public/data/cinema/<slug>/ but the works are NOT in LIBRARY_WORKS, have no /cinema route, no /read discovery and no sitemap URL until P4. The source ships a QA-verified reading-room.json + manifest.json per work; the importer vendors that exact payload after verifying its source-declared SHA (fail-closed). Nothing here is fetched at runtime.",
+  "wave": 7,
+  "batch": 1,
+  "family": "cinema",
+  "shelf": "cinema-writing",
+  "sourceRepo": "pugazg/kalaignar-cinema-works",
+  "sourceCommit": "8c1fc37a089cb23173e6b8725f7d31200ea83d7b",
+  "sourceTree": "8009cdfa17637e722ee10b5c9f8910211f915af3",
+  "workCount": 3,
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoutesP1": 0,
+  "englishProvenance": {
+    "kind": "project-created",
+    "status": "complete-verified",
+    "note": "Maintained English reading layer built and verified against the controlling Tamil source; titleEn is editorial. No publication year/edition/rights is promoted to the catalogue card."
+  },
+  "works": [
+    {
+      "slug": "maruthanattu-ilavarasi",
+      "titleTa": "மருதநாட்டு இளவரசி",
+      "titleEn": "Maruthanattu Ilavarasi",
+      "kind": "film-screenplay",
+      "sourcePath": "works/maruthanattu-ilavarasi",
+      "workTree": "4075e93f7b16bcae4f5019072a5cf06816d6db28",
+      "readingRoom": {
+        "path": "works/maruthanattu-ilavarasi/integrations/reading-room/reading-room.json",
+        "sha256": "25715b161b9df7e47d158871aab56f479be226d7bde624e45e5c3f50724acbb2",
+        "bytes": 236481
+      },
+      "sourceScanSha256": "8191b345c8b82faa25b95d574287cb1510230daea63e32490284dd4482e05d2f",
+      "counts": {
+        "segments": 10,
+        "unnumbered_opening": 1,
+        "source_numbered_scenes": 9,
+        "translation_units": 228,
+        "immutable_dialogue_links": 208,
+        "retained_performance_records": 0
+      }
+    },
+    {
+      "slug": "vandikkaran-magan",
+      "titleTa": "வண்டிக்காரன் மகன்",
+      "titleEn": "Vandikkaran Magan",
+      "kind": "film-screenplay-dialogue-booklet",
+      "sourcePath": "works/vandikkaran-magan",
+      "workTree": "6b549b5a39a39a6ff0193501449322b675336f4f",
+      "readingRoom": {
+        "path": "works/vandikkaran-magan/integrations/reading-room/reading-room.json",
+        "sha256": "1d1b611c1261eac75577c8c0499123c260406005f26448bb9aac5f6df22339ba",
+        "bytes": 1610402
+      },
+      "sourceScanSha256": "03579030ad0a082062d907c1ac12cb4eb497a261836d676a8fa46cd5c0c86253",
+      "sourceIdentifier": "TVA_BOK_0062961",
+      "publicationYearAsPrinted": 1978,
+      "counts": {
+        "screenplay_scenes": 72,
+        "english_units": 1181,
+        "immutable_dialogue_links": 773,
+        "performance_occurrence_identities": 9,
+        "unresolved_item_level_lyric_authorships": 6
+      }
+    },
+    {
+      "slug": "naam",
+      "titleTa": "நாம்",
+      "titleEn": "Naam",
+      "kind": "film-screenplay-dialogue-booklet",
+      "sourcePath": "works/naam",
+      "workTree": "de8950811d438686771dd9a7f2a9bd996d66cfd6",
+      "readingRoom": {
+        "path": "works/naam/integrations/reading-room/reading-room.json",
+        "sha256": "9b97493b820ebd42c822b5fbdc53beda8dbe1d61103a1c9d2abb06a552bcf825",
+        "bytes": 965215
+      },
+      "sourceScanSha256": "0f7a54882eb6a5a8f83b29060c771ef18dee2b9e108c8797184de2b97c30b7ad",
+      "counts": {
+        "scene_count": 45,
+        "english_units": 797,
+        "immutable_dialogue_links": 590,
+        "retained_performance_records": 7
+      }
+    }
+  ]
+}
