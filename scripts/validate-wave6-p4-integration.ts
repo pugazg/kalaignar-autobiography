@@ -59,6 +59,19 @@ const manifest = readJSON<Cumulative>("data/internal/wave6/p3-routes.json");
 const baseline = readJSON<{ prerenderManifestRouteCount: number; htmlFileCount: number; routeSetSha256: string }>("data/internal/wave6/frozen-baseline.json");
 const record = readJSON<Record<string, unknown>>("data/internal/wave6/p4-integration.json");
 
+// ── Wave 6 Batch 7 contribution ───────────────────────────────────────────────────────────────────
+// This validator owns the Batches 1–6 P4 snapshot, whose durable record (p4-integration.json) is FROZEN.
+// Batch 7 later published 116 short stories + 5 collections on top of that snapshot, so the LIVE global
+// surface is now larger than the frozen record. Rather than touch the frozen record, we carry Batch-7's
+// known contribution and reconcile: absolute live totals are asserted at their post-Batch-7 values, and
+// each frozen-record cross-check compares the record to (live − Batch-7). The Batch-7 surface has its own
+// validator (scripts/validate-wave6-b7-p4-integration.ts); here it is only subtracted back out.
+const b7rec = readJSON<{ collections: { id: string }[] }>("data/internal/wave6/b7-p4-integration.json");
+const b7p3 = readJSON<{ routes: string[] }>("data/internal/wave6/b7-p3-routes.json");
+const B7 = { works: 116, collections: 5, discovery: 13, fictionDiscovery: 13, sitemap: 237, visible: 1 };
+const B7_ROUTES = new Set<string>([...b7p3.routes, ...b7rec.collections.map((c) => `/collections/${c.id}`)]);
+const withoutB7Fiction = (m: Record<string, number>, minus: number) => ({ ...m, fiction: m.fiction - minus });
+
 // The 22 Wave-6 works P4 publishes (cinema work has a dedicated loader, not a slug registry).
 const WAVE6_CINEMA_SLUGS = ["ammaiyappan"] as const;
 const WAVE6_WORK_SLUGS = [
@@ -73,22 +86,22 @@ const WAVE6_WORK_SLUGS = [
 
 // ── 1. CATALOGUE — 100 works, exact 9-shelf census, the 22 present once, no leakage ──
 const works = publishedWorks();
-eq(works.length, 100, "catalogue is exactly 100 published works");
+eq(works.length, 100 + B7.works, "catalogue is exactly 216 published works (100 Batches 1–6 + 116 Batch-7)");
 eq(WAVE6_WORK_SLUGS.length, 22, "exactly 22 Wave-6 work slugs are enumerated");
 const catBy: Record<string, number> = {};
 for (const w of works) catBy[w.shelf] = (catBy[w.shelf] ?? 0) + 1;
 eqMap(catBy, {
   "life-writing": 1,
   letters: 1,
-  fiction: 41,
+  fiction: 41 + B7.works, // 157 — Batch 7 added 116 short stories to Fiction
   poetry: 14,
   drama: 8,
   "cinema-writing": 7,
   speeches: 17,
   "essays-articles": 9,
   "literary-commentary": 2,
-}, "catalogue per-shelf census matches the P4 target");
-eq(Object.values(catBy).reduce((a, b) => a + b, 0), 100, "shelf census sums to 100");
+}, "catalogue per-shelf census matches the post-Batch-7 target");
+eq(Object.values(catBy).reduce((a, b) => a + b, 0), 100 + B7.works, "shelf census sums to 216");
 eq(Object.keys(catBy).length, 9, "exactly 9 non-empty shelves");
 const slugCount = (slug: string) => works.filter((w) => w.slug === slug).length;
 for (const s of WAVE6_WORK_SLUGS) eq(slugCount(s), 1, `Wave-6 work ${s} appears exactly once in the catalogue`);
@@ -98,9 +111,11 @@ const registrySet = new Set<string>(WAVE6_WORK_SLUGS);
 const publishedWave6 = works.map((w) => w.slug).filter((s) => registrySet.has(s));
 eq(uniqSorted(publishedWave6), uniqSorted([...WAVE6_WORK_SLUGS]), "exactly the 22 Wave-6 works are published (no Batch-7+ leakage)");
 
-// ── 2. COLLECTIONS — exactly 1 (the 1977 anthology); no Wave-6 work became a collection ──
-eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry is exactly 1");
-eq(LIBRARY_COLLECTIONS.map((c) => c.id), ["1977-kalaignar-karunanidhiyin-sirukathaigal"], "the sole collection is the 1977 short-story anthology");
+// ── 2. COLLECTIONS — 6 (the 1977 anthology + 5 Batch-7); no Batches-1–6 work became a collection ──
+eq(LIBRARY_COLLECTIONS.length, 1 + B7.collections, "public collection registry is exactly 6 (1977 + 5 Batch-7)");
+ok(LIBRARY_COLLECTIONS.some((c) => c.id === "1977-kalaignar-karunanidhiyin-sirukathaigal"), "the 1977 short-story anthology is still a collection");
+eq(uniqSorted(LIBRARY_COLLECTIONS.map((c) => c.id).filter((id) => id !== "1977-kalaignar-karunanidhiyin-sirukathaigal")),
+  uniqSorted(b7rec.collections.map((c) => c.id)), "the 5 non-1977 collections are exactly the Batch-7 collections");
 for (const s of WAVE6_WORK_SLUGS) ok(!LIBRARY_COLLECTIONS.some((c) => c.id === s), `Wave-6 work ${s} is not registered as a collection`);
 
 // ── 3. /read DISCOVERY — 64 entries, exact per-shelf census, 39 visible, expected over-cap set ──
@@ -119,25 +134,25 @@ for (const s of shelves) {
   visible += Math.min(n, CAP);
   if (n > CAP) overCap.push(s.shelf.id);
 }
-eq(discTotal, 64, "/read discovery is exactly 64 entries");
+eq(discTotal, 64 + B7.discovery, "/read discovery is exactly 77 entries (64 Batches 1–6 + 13 Batch-7)");
 eqMap(discBy, {
   "life-writing": 1,
   letters: 1,
-  fiction: 5,
+  fiction: 5 + B7.fictionDiscovery, // 18 — +5 collection cards +8 standalone new works, minus collapses
   poetry: 14,
   drama: 8,
   "cinema-writing": 7,
   speeches: 17,
   "essays-articles": 9,
   "literary-commentary": 2,
-}, "/read discovery per-shelf census matches the P4 target");
-eq(visible, 39, "39 discovery entries are initially visible under the disclosure cap");
-eq(uniqSorted(overCap), uniqSorted(["poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "exactly the five expected shelves are over the disclosure cap");
-eq(discBy.fiction, 5, "fiction discovery stays 5 (1977 anthology collapses to one entry; 2 Wave-6 novels added)");
+}, "/read discovery per-shelf census matches the post-Batch-7 target");
+eq(visible, 39 + B7.visible, "40 discovery entries are initially visible under the disclosure cap (Fiction moved over-cap)");
+eq(uniqSorted(overCap), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "exactly the six expected shelves are over the disclosure cap (Fiction joined at Batch-7)");
+eq(discBy.fiction, 5 + B7.fictionDiscovery, "fiction discovery is 18 (6 collection cards + 12 standalone works)");
 
 // ── 4. SITEMAP — 3672 URLs, 0 duplicates, Wave-6 set == p3 cumulativeRoutes EXACTLY ──
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, 3672, "sitemap has exactly 3672 URLs");
+eq(urls.length, 3672 + B7.sitemap, "sitemap has exactly 3909 URLs (3672 Batches 1–6 + 237 Batch-7)");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicate URLs");
 const urlSet = new Set(urls);
 const wave6InSitemap = manifest.cumulativeRoutes.filter((r) => urlSet.has(`${BASE}${r}`));
@@ -177,11 +192,15 @@ const manifestPath = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(manifestPath)) {
   const routeKeys = uniqSorted(Object.keys((JSON.parse(fs.readFileSync(manifestPath, "utf-8")) as { routes: Record<string, unknown> }).routes));
   const htmlCount = countHtml(path.join(root, ".next/server/app"));
-  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} (3681)`);
-  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} (3676)`);
-  const remainder = routeKeys.filter((k) => !new Set(manifest.cumulativeRoutes).has(k)).sort();
+  // Batches 1–6 added their cumulative route set; Batch 7 added B7_ROUTES (232 story + 5 collection).
+  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + B7_ROUTES.size, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${B7_ROUTES.size} (3918)`);
+  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + B7_ROUTES.size, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${B7_ROUTES.size} (3913)`);
+  // The pre-Wave-6 remainder must still be the frozen baseline once BOTH the Wave-6 cumulative routes and
+  // the Batch-7 routes are removed — proving Batch 7 added exactly its own routes and nothing else moved.
+  const wave6AndB7 = new Set<string>([...manifest.cumulativeRoutes, ...Array.from(B7_ROUTES)]);
+  const remainder = routeKeys.filter((k) => !wave6AndB7.has(k)).sort();
   eq(remainder.length, baseline.prerenderManifestRouteCount, "pre-Wave-6 build remainder count == frozen baseline");
-  eq(createHash("sha256").update(JSON.stringify(remainder)).digest("hex"), baseline.routeSetSha256, "pre-Wave-6 build remainder route-set SHA-256 == frozen base hash (no new routes)");
+  eq(createHash("sha256").update(JSON.stringify(remainder)).digest("hex"), baseline.routeSetSha256, "pre-Wave-6 build remainder route-set SHA-256 == frozen base hash (no unexpected routes)");
 } else {
   console.error("  · build boundary SKIPPED — no .next/prerender-manifest.json (run `npm run build` first; CI runs this after build).");
 }
@@ -195,16 +214,17 @@ const rec = record as {
   sitemap: { after: number; duplicates: number };
   build: { prerenderRoutes: number; htmlFiles: number };
 };
+// The record is the FROZEN Batches-1–6 snapshot, so it is cross-checked against (live − Batch-7).
 eq(rec.workCount, 22, "record workCount == 22");
 eq(rec.collectionsAdded, 0, "record collectionsAdded == 0");
-eq(rec.catalogue.after, works.length, "record catalogue.after == live catalogue count");
-eqMap(rec.catalogue.shelfCensusAfter, catBy, "record catalogue shelf census == live");
-eq(rec.collections.after, LIBRARY_COLLECTIONS.length, "record collections.after == live");
-eq(rec.discovery.after, discTotal, "record discovery.after == live");
-eq(rec.discovery.initiallyVisible, visible, "record discovery.initiallyVisible == live");
-eqMap(rec.discovery.perShelfAfter, discBy, "record discovery per-shelf census == live");
-eq(uniqSorted(rec.discovery.overCapShelves), uniqSorted(overCap), "record over-cap shelves == live");
-eq(rec.sitemap.after, urls.length, "record sitemap.after == live sitemap count");
+eq(rec.catalogue.after, works.length - B7.works, "record catalogue.after == live catalogue count − Batch-7");
+eqMap(rec.catalogue.shelfCensusAfter, withoutB7Fiction(catBy, B7.works), "record catalogue shelf census == live − Batch-7 fiction");
+eq(rec.collections.after, LIBRARY_COLLECTIONS.length - B7.collections, "record collections.after == live − Batch-7");
+eq(rec.discovery.after, discTotal - B7.discovery, "record discovery.after == live − Batch-7");
+eq(rec.discovery.initiallyVisible, visible - B7.visible, "record discovery.initiallyVisible == live − Batch-7");
+eqMap(rec.discovery.perShelfAfter, withoutB7Fiction(discBy, B7.fictionDiscovery), "record discovery per-shelf census == live − Batch-7 fiction");
+eq(uniqSorted(rec.discovery.overCapShelves), uniqSorted(overCap.filter((s) => s !== "fiction")), "record over-cap shelves == live − Batch-7 (fiction)");
+eq(rec.sitemap.after, urls.length - B7.sitemap, "record sitemap.after == live sitemap count − Batch-7");
 eq(rec.sitemap.duplicates, urls.length - new Set(urls).size, "record sitemap duplicates == live");
 eq(rec.build.prerenderRoutes, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount, "record build prerenderRoutes == baseline + Wave-6");
 eq(rec.build.htmlFiles, baseline.htmlFileCount + manifest.cumulativeRouteCount, "record build htmlFiles == baseline + Wave-6");
@@ -307,4 +327,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-p4-integration — ${checks} checks, 0 failed`);
-console.log(`  22 works published · catalogue 78→100 · discovery 42→64 (39 visible) · collections 1 · sitemap 3351→3672 (0 dup, set-equal to 321 P3 routes) · 0 new routes · build 3681/3676`);
+console.log(`  Batches 1–6: 22 works · catalogue →100 · discovery →64 · collections 1 · set-equal to 321 P3 routes (frozen record intact)`);
+console.log(`  reconciled with Batch-7 (+116 works, +5 collections, +237 routes): live catalogue 216 · discovery 77/40 · sitemap 3909/0 · build 3918/3913`);

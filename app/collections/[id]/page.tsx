@@ -6,26 +6,33 @@ import CollectionLanding, { type CollectionMemberRow } from "@/components/Collec
 import { COLLECTION_IDS, collectionById, collectionMemberWorks } from "@/data/collections";
 
 /**
- * A member's own printed extent inside the publication.
+ * A member's own printed extent inside THIS publication, as a display label.
  *
- * Read from the member work's ALREADY-VALIDATED generated record rather than copied into the collection
- * declaration: the page range is the story's fact, the roster is the collection's, and duplicating the
- * former into the latter would create a second place for it to be wrong. Absent for any member whose
- * data does not establish it — the row then simply shows no page range, and none is inferred.
+ * Precedence is deliberate. When the collection declaration carries a collection-local extent
+ * (`member.localPages` / `member.localScans`) it wins outright: a reprint such as the 2009 anthology
+ * pins its OWN pagination there, and the member work's payload records the ORIGINAL (1977) edition's
+ * pages, which must never be shown for the reprint. Otherwise the extent is read from the member work's
+ * already-validated payload — a 1977-anthology work states it as `anthology.printedPages`, a Batch-7
+ * short story as `provenance.storyScope`. Absent everywhere → the row shows no extent, and none is
+ * inferred. The page range is the work's fact and the roster is the collection's, so neither is copied
+ * into the other except for the reprint case the model exists to handle.
  *
  * Not exported: a Next.js page module may only export the framework's own reserved names.
  */
-function loadPrintedPages(href: string): { first: number; last: number } | undefined {
+function payloadExtent(href: string): { pages?: string; scans?: string } {
   const m = /^\/stories\/([^/]+)$/.exec(href);
-  if (!m) return undefined;
-  try {
-    const p = path.join(process.cwd(), "public/data/stories", m[1], "story.json");
-    const story = JSON.parse(fs.readFileSync(p, "utf-8"));
-    const pages = story?.anthology?.printedPages;
-    return typeof pages?.first === "number" && typeof pages?.last === "number" ? pages : undefined;
-  } catch {
-    return undefined;
-  }
+  if (!m) return {};
+  const read = (f: string) => {
+    try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/stories", m[1], f), "utf-8")); }
+    catch { return undefined; }
+  };
+  const story = read("story.json");
+  const ap = story?.anthology?.printedPages;
+  if (typeof ap?.first === "number" && typeof ap?.last === "number") return { pages: `${ap.first}–${ap.last}` };
+  const scope = read("provenance.json")?.storyScope;
+  const pages = typeof scope?.printedPages === "string" ? scope.printedPages : undefined;
+  const scans = typeof scope?.storyScans === "string" ? scope.storyScans : undefined;
+  return { pages, scans };
 }
 
 function rows(id: string): CollectionMemberRow[] {
@@ -33,14 +40,18 @@ function rows(id: string): CollectionMemberRow[] {
   if (!c) return [];
   // Order comes from the declaration's source-backed ordinals, never from catalogue declaration order,
   // title or page number.
-  return collectionMemberWorks(c).map(({ member, work }) => ({
-    ordinal: member.ordinal,
-    workId: work.id,
-    titleTa: work.titleTa,
-    titleEn: work.titleEn,
-    href: work.href,
-    printedPages: loadPrintedPages(work.href),
-  }));
+  return collectionMemberWorks(c).map(({ member, work }) => {
+    const payload = payloadExtent(work.href);
+    return {
+      ordinal: member.ordinal,
+      workId: work.id,
+      titleTa: work.titleTa,
+      titleEn: work.titleEn,
+      href: work.href,
+      pages: member.localPages ?? payload.pages,
+      scans: member.localScans ?? payload.scans,
+    };
+  });
 }
 
 /** Statically enumerable, declaration-driven: an id with no declaration has no page and 404s. */

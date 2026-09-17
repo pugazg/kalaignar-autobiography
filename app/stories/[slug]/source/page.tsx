@@ -3,19 +3,24 @@ import { notFound } from "next/navigation";
 import fs from "node:fs";
 import path from "node:path";
 import StorySource from "@/components/StorySource";
+import StorySourceB7 from "@/components/StorySourceB7";
 import { STORY_SLUGS } from "@/data/stories";
-import type { StoryProvenance } from "@/data/stories";
+import { WAVE6_B7_STORY_SLUGS } from "@/lib/stories-wave6-routes";
+import type { StoryProvenance, StoryProvenanceB7 } from "@/data/stories";
 
-function loadProvenance(slug: string): StoryProvenance | null {
+function loadProvenance(slug: string): StoryProvenance | StoryProvenanceB7 | null {
   try {
     return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/stories", slug, "provenance.json"), "utf-8"));
   } catch {
     return null;
   }
 }
+const isB7 = (p: StoryProvenance | StoryProvenanceB7): p is StoryProvenanceB7 => (p as { batch?: number }).batch === 7;
+// Wave 6 Batch 7 P3: STORY_SLUGS + hidden Batch-7 slugs, deduped; source page per slug, still undiscovered.
+const ALL_STORY_SLUGS: readonly string[] = Array.from(new Set<string>([...(STORY_SLUGS as readonly string[]), ...WAVE6_B7_STORY_SLUGS]));
 
 export function generateStaticParams() {
-  return STORY_SLUGS.map((slug) => ({ slug }));
+  return ALL_STORY_SLUGS.map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -27,8 +32,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function StorySourcePage({ params }: { params: { slug: string } }) {
-  if (!(STORY_SLUGS as readonly string[]).includes(params.slug)) notFound();
+  if (!ALL_STORY_SLUGS.includes(params.slug)) notFound();
   const prov = loadProvenance(params.slug);
   if (!prov) notFound();
-  return <StorySource slug={params.slug} prov={prov} />;
+  return isB7(prov) ? <StorySourceB7 slug={params.slug} prov={prov} /> : <StorySource slug={params.slug} prov={prov} />;
 }

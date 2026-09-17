@@ -295,11 +295,17 @@ if (released) {
   );
 }
 const fictionWorks = decl.works.filter((w) => w.shelf === "fiction");
-ok("the Fiction shelf still holds more works than the collection has members", fictionWorks.length > c.members.length);
-const nonMemberFiction = fictionWorks.filter((w) => !declBySlug.has(w.id)).map((w) => w.id).sort();
-// Post Wave-6 P4, two Batch-5 novels (periya-idathup-pen, pudhaiyal) are also standalone Fiction works
-// outside the 1977 anthology collection.
-eq("exactly the standalone Fiction works remain outside the collection", nonMemberFiction, ["balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal"]);
+ok("the Fiction shelf holds works outside the 1977 collection", fictionWorks.length > c.members.length);
+// This is a 1977-SPECIFIC source validator: it does NOT own the modern Fiction census. After Batch-7 P4
+// the shelf legitimately holds ~120 works outside this anthology — members of five other collections plus
+// eight standalone works — and the full census is owned by validate-wave6-b7-p4-integration.ts and
+// test-collections.ts. What stays this validator's business is a SOURCE-LOCAL negative: the specific
+// pre-existing standalone Fiction works that the 1977 source does not list must never become members.
+for (const outsider of ["kizhavan-kanavu", "balipeedam-nokki", "periya-idathup-pen", "pudhaiyal"]) {
+  ok(`${outsider} is a published Fiction work`, workById.get(outsider)?.shelf === "fiction");
+  ok(`${outsider} is not a 1977 member`, !declBySlug.has(outsider));
+  ok(`the 1977 source inventory does not list ${outsider}`, !srcBySlug.has(outsider));
+}
 
 // ── E. Count semantics ──────────────────────────────────────────────────────────────────────────────
 startGroup("COUNT SEMANTICS");
@@ -309,17 +315,29 @@ eq("memberCount.value is the source-backed member total", c.memberCount.value, i
 ok("the collection declares no unitCount of its own", !("unitCount" in c));
 const membersWithUnitCount = c.members.filter((m) => workById.get(m.workId)?.unitCount).map((m) => m.workId);
 eq("no member work gained a unitCount by joining the collection", membersWithUnitCount, []);
-// The reverse map must be derived from the roster, not stored twice.
+// The reverse map must be derived from the roster, not stored twice. The reverse relation is now GLOBAL
+// (six collections), so this 1977 validator projects it onto 1977 and proves set-equality with the roster:
+// every declared member reverse-resolves to 1977, and no non-1977 work falsely reverse-resolves to 1977.
+const reverseById = new Map(decl.reverse.map(([w, ids]) => [w, ids]));
+const reverse1977 = decl.reverse
+  .filter(([, ids]) => ids.includes(COLLECTION_ID))
+  .map(([workId]) => workId)
+  .sort();
 eq(
-  "the derived reverse lookup covers exactly the declared members",
-  decl.reverse.map(([w]) => w).sort(),
+  "the 1977 reverse relation is exactly the declared 1977 members (both directions)",
+  reverse1977,
   c.members.map((m) => m.workId).sort(),
 );
-// The reverse value is a LIST. A singular map would silently drop a member the day a work appears in
-// a second publication, so the shape is asserted, not just the contents.
+// The reverse value is a LIST. A singular map would silently drop a member the day a work appears in a
+// second publication, so the shape is asserted, not just the contents.
 ok("each reverse entry is a list of collection ids", decl.reverse.every(([, ids]) => Array.isArray(ids)));
-ok("every reverse entry names this collection", decl.reverse.every(([, ids]) => ids.includes(COLLECTION_ID)));
 ok("no reverse entry is empty", decl.reverse.every(([, ids]) => ids.length > 0));
+// PLURAL membership is real production data now, not merely a possible shape: the 1977 invariant must
+// hold for every member (its list CONTAINS 1977) while ALLOWING an additional source-established
+// collection — the 2009 anthology reprints eleven of these stories. Never require ids.length === 1.
+const memberMissing1977 = c.members.filter((m) => !(reverseById.get(m.workId) ?? []).includes(COLLECTION_ID)).map((m) => m.workId);
+eq("every 1977 member reverse-resolves to the 1977 collection (extra collections allowed)", memberMissing1977, []);
+ok("plural membership is exercised: at least one 1977 member also belongs to another collection", c.members.some((m) => (reverseById.get(m.workId) ?? []).length > 1));
 const declSrcForShape = fs.readFileSync(path.join(process.cwd(), "data/collections.ts"), "utf8");
 ok("the reverse map stores a list, not one collection per work",
    /ReadonlyMap<string,\s*readonly LibraryCollection\[\]>/.test(declSrcForShape));
@@ -350,9 +368,13 @@ console.log("@@JSON@@" + JSON.stringify(STORY_SLUGS));
 if (slugDump.value) {
   const slugs = slugDump.value;
   const notRegistered = c.members.filter((m) => !slugs.includes(m.workId)).map((m) => m.workId);
-  eq("every member is still in STORY_SLUGS", notRegistered, []);
+  eq("every 1977 member is still in STORY_SLUGS", notRegistered, []);
   ok("STORY_SLUGS still carries the standalone booklet too", slugs.includes("kizhavan-kanavu"));
-  eq("STORY_SLUGS covers the members plus the standalone booklet", slugs.length, c.members.length + 1);
+  // Source-local invariants only: this 1977 validator does NOT own the global registry size. After
+  // Batch-7 P4 the registry is 154 unique slugs (37 members + kizhavan + 116 Batch-7), and that exact
+  // total is owned by validate-wave6-b7-p4-integration.ts and test-collections.ts. Here we require only
+  // that the registry contains every 1977 member (above) + the booklet, and that it is duplicate-free.
+  eq("STORY_SLUGS has no duplicate slug", slugs.length, new Set(slugs).size);
 } else {
   ok("STORY_SLUGS could be read", false);
 }

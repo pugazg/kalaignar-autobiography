@@ -1,0 +1,651 @@
+{
+  "note": "Wave 6 Batch 7 P4 publication record — 116 short stories + 5 source-ordered collections. Separate from the frozen p4-integration.json.",
+  "wave": 6,
+  "batch": 7,
+  "family": "short-stories",
+  "sourceRepo": "pugazg/kalaignar-short-stories",
+  "sourceCommit": "7205a10892d0b208df2617766844f480b6a2c798",
+  "publish": {
+    "newWorks": 116,
+    "catalogue": {
+      "before": 100,
+      "after": 216
+    },
+    "fiction": {
+      "before": 41,
+      "after": 157
+    },
+    "storySlugs": {
+      "before": 38,
+      "after": 154
+    },
+    "collections": {
+      "before": 1,
+      "after": 6,
+      "new": [
+        {
+          "id": "1982-mudiyatha-thodarkathai",
+          "members": 6
+        },
+        {
+          "id": "1987-kalaignar-sonna-kuttik-kathaigal",
+          "members": 25
+        },
+        {
+          "id": "2004-kalaignarin-kuttik-kathaigal",
+          "members": 34
+        },
+        {
+          "id": "2008-kalaignar-sonna-kathaigal",
+          "members": 40
+        },
+        {
+          "id": "2009-16-kathaiyinile",
+          "members": 16
+        }
+      ]
+    },
+    "discovery": {
+      "before": 64,
+      "after": 77,
+      "fictionEntries": {
+        "before": 5,
+        "after": 18
+      },
+      "visible": {
+        "before": 39,
+        "after": 40
+      }
+    },
+    "sitemap": {
+      "before": 3672,
+      "after": 3909,
+      "added": {
+        "story": 232,
+        "collection": 5
+      }
+    },
+    "build": {
+      "prerender": {
+        "before": 3913,
+        "after": 3918
+      },
+      "html": {
+        "before": 3908,
+        "after": 3913
+      }
+    }
+  },
+  "pluralMembers": [
+    "jaadi-kutti-poduma",
+    "kuruvi-rameswaram"
+  ],
+  "collections": [
+    {
+      "id": "1982-mudiyatha-thodarkathai",
+      "group": "1982",
+      "memberCount": 6,
+      "collectionTree": "126630867369f525934092b40dda20e667b49ffa",
+      "members": [
+        {
+          "ordinal": 1,
+          "workId": "petra-pillaiyai-vitra-thaai"
+        },
+        {
+          "ordinal": 2,
+          "workId": "kaasa-lesa"
+        },
+        {
+          "ordinal": 3,
+          "workId": "seemaan-veettu-seekkaali"
+        },
+        {
+          "ordinal": 4,
+          "workId": "nandiyur-nariyappan"
+        },
+        {
+          "ordinal": 5,
+          "workId": "nariyur-nandiyappan"
+        },
+        {
+          "ordinal": 6,
+          "workId": "mudiyatha-thodarkathai"
+        }
+      ]
+    },
+    {
+      "id": "1987-kalaignar-sonna-kuttik-kathaigal",
+      "group": "1987",
+      "memberCount": 25,
+      "collectionTree": "c5ad6dc4caf787d79175f7a83ef3fef1c9d74fde",
+      "members": [
+        {
+          "ordinal": 1,
+          "workId": "mannanum-kuruviyum"
+        },
+        {
+          "ordinal": 2,
+          "workId": "jaadi-kutti-poduma"
+        },
+        {
+          "ordinal": 3,
+          "workId": "thennai-marathil-pul"
+        },
+        {
+          "ordinal": 4,
+          "workId": "narayana-narayana"
+        },
+        {
+          "ordinal": 5,
+          "workId": "thuraviyum-seedargalum"
+        },
+        {
+          "ordinal": 6,
+          "workId": "mooli-mookkukkaran"
+        },
+        {
+          "ordinal": 7,
+          "workId": "sorgaththirku-senruvantha-azhagi"
+        },
+        {
+          "ordinal": 8,
+          "workId": "buddhar-unarththiya-unmai"
+        },
+        {
+          "ordinal": 9,
+          "workId": "kajini-mugamathuvum-kavignar-pardosiyum"
+        },
+        {
+          "ordinal": 10,
+          "workId": "iru-nigazhvugal"
+        },
+        {
+          "ordinal": 11,
+          "workId": "kuruvi-rameswaram"
+        },
+        {
+          "ordinal": 12,
+          "workId": "samiyarum-pookkariyum"
+        },
+        {
+          "ordinal": 13,
+          "workId": "hajrath-aliyum-yuthanum"
+        },
+        {
+          "ordinal": 14,
+          "workId": "pugazhendhip-pulavar-kathai"
+        },
+        {
+          "ordinal": 15,
+          "workId": "mana-maatram"
+        },
+        {
+          "ordinal": 16,
+          "workId": "kurikkol"
+        },
+        {
+          "ordinal": 17,
+          "workId": "paalum-thanneerum"
+        },
+        {
+          "ordinal": 18,
+          "workId": "jayathrathanin-veezhchi"
+        },
+        {
+          "ordinal": 19,
+          "workId": "thenaliraman-kathai"
+        },
+        {
+          "ordinal": 20,
+          "workId": "valvil-ori"
+        },
+        {
+          "ordinal": 21,
+          "workId": "yasodhara-kaviyam"
+        },
+        {
+          "ordinal": 22,
+          "workId": "kadu-sendra-kumanan"
+        },
+        {
+          "ordinal": 23,
+          "workId": "agaththinai-anbu"
+        },
+        {
+          "ordinal": 24,
+          "workId": "thenaliraman-poonai"
+        },
+        {
+          "ordinal": 25,
+          "workId": "kuzhanthaiyum-kiliyum"
+        }
+      ]
+    },
+    {
+      "id": "2004-kalaignarin-kuttik-kathaigal",
+      "group": "2004",
+      "memberCount": 34,
+      "collectionTree": "a5d4a2005fb15b585023923bfa0f552c3e286bff",
+      "members": [
+        {
+          "ordinal": 1,
+          "workId": "valluvar-sonna-poi"
+        },
+        {
+          "ordinal": 2,
+          "workId": "neeyum-kaithi-naanum-kaithi"
+        },
+        {
+          "ordinal": 3,
+          "workId": "kuruvi-rameswaram"
+        },
+        {
+          "ordinal": 4,
+          "workId": "pengalukku-en-meesai-thadiyillai"
+        },
+        {
+          "ordinal": 5,
+          "workId": "kadalai-thoorppathu-miga-elithu"
+        },
+        {
+          "ordinal": 6,
+          "workId": "manaivi-sonna-vilakkam"
+        },
+        {
+          "ordinal": 7,
+          "workId": "naatham-ezhaathu-narambuthaan-arum"
+        },
+        {
+          "ordinal": 8,
+          "workId": "aval-sonnaal"
+        },
+        {
+          "ordinal": 9,
+          "workId": "iruvarum-koodiyiruppathu-aathi-maalaithaan"
+        },
+        {
+          "ordinal": 10,
+          "workId": "kollappada-vendiyathu-puli-aanaal"
+        },
+        {
+          "ordinal": 11,
+          "workId": "anthak-kaalathile"
+        },
+        {
+          "ordinal": 12,
+          "workId": "aandavan-dharisanam-kodutha-oor"
+        },
+        {
+          "ordinal": 13,
+          "workId": "veeravadi"
+        },
+        {
+          "ordinal": 14,
+          "workId": "sorgaththirku-vandhathu-eppadi"
+        },
+        {
+          "ordinal": 15,
+          "workId": "kalliyum-rojavum"
+        },
+        {
+          "ordinal": 16,
+          "workId": "aabasame-aabasam"
+        },
+        {
+          "ordinal": 17,
+          "workId": "aadik-kaatre"
+        },
+        {
+          "ordinal": 18,
+          "workId": "ilangai-mannar-parambarai"
+        },
+        {
+          "ordinal": 19,
+          "workId": "kazhuthile-oru-mudichu-atharku-oru-kathai"
+        },
+        {
+          "ordinal": 20,
+          "workId": "sirai-kodiyathu"
+        },
+        {
+          "ordinal": 21,
+          "workId": "vignaanikku-thondraathu"
+        },
+        {
+          "ordinal": 22,
+          "workId": "adutha-piraviyil-aindhu-kanavan"
+        },
+        {
+          "ordinal": 23,
+          "workId": "pugazhe-nee-oru-pudhir"
+        },
+        {
+          "ordinal": 24,
+          "workId": "malaiyai-thookkuven"
+        },
+        {
+          "ordinal": 25,
+          "workId": "muthiyavar-theerppu"
+        },
+        {
+          "ordinal": 26,
+          "workId": "kootruvan-eppadip-mariththaan"
+        },
+        {
+          "ordinal": 27,
+          "workId": "veeran-thalai-kavizhnthathu-en"
+        },
+        {
+          "ordinal": 28,
+          "workId": "ilamai-kaalam"
+        },
+        {
+          "ordinal": 29,
+          "workId": "thalaivanin-parisu"
+        },
+        {
+          "ordinal": 30,
+          "workId": "krishnanaiyum-vidaatha-saathi"
+        },
+        {
+          "ordinal": 31,
+          "workId": "pudhir"
+        },
+        {
+          "ordinal": 32,
+          "workId": "uyirukku-vilai-aimbathu-latcham"
+        },
+        {
+          "ordinal": 33,
+          "workId": "kaithiyin-kathai"
+        },
+        {
+          "ordinal": 34,
+          "workId": "kizhavanin-manaivi"
+        }
+      ]
+    },
+    {
+      "id": "2008-kalaignar-sonna-kathaigal",
+      "group": "2008",
+      "memberCount": 40,
+      "collectionTree": "8e1d32ca52140bd4eed7bb5efc97b2c1e7eebac5",
+      "members": [
+        {
+          "ordinal": 1,
+          "workId": "appadithan-sirippen"
+        },
+        {
+          "ordinal": 2,
+          "workId": "ice-katti"
+        },
+        {
+          "ordinal": 3,
+          "workId": "thalaiyil-malai"
+        },
+        {
+          "ordinal": 4,
+          "workId": "verum-kai-muzham-podum"
+        },
+        {
+          "ordinal": 5,
+          "workId": "koottani"
+        },
+        {
+          "ordinal": 6,
+          "workId": "seera-vendama"
+        },
+        {
+          "ordinal": 7,
+          "workId": "kazhuthaiyin-kathai"
+        },
+        {
+          "ordinal": 8,
+          "workId": "unakku-vayathenna"
+        },
+        {
+          "ordinal": 9,
+          "workId": "thamizan-endru-sollada"
+        },
+        {
+          "ordinal": 10,
+          "workId": "kadamai-kanniyam-kattuppadu"
+        },
+        {
+          "ordinal": 11,
+          "workId": "saavi-thaan-illai"
+        },
+        {
+          "ordinal": 12,
+          "workId": "kannil-kaal"
+        },
+        {
+          "ordinal": 13,
+          "workId": "mayil-ravanan"
+        },
+        {
+          "ordinal": 14,
+          "workId": "jaadi-kutti-poduma"
+        },
+        {
+          "ordinal": 15,
+          "workId": "onnu-kuduma"
+        },
+        {
+          "ordinal": 16,
+          "workId": "aththiri-paachaa"
+        },
+        {
+          "ordinal": 17,
+          "workId": "seruppodu-iru"
+        },
+        {
+          "ordinal": 18,
+          "workId": "idikkup-pin-mazhai"
+        },
+        {
+          "ordinal": 19,
+          "workId": "nadakkuma-nadakkatha"
+        },
+        {
+          "ordinal": 20,
+          "workId": "kaniyum-kanaiyum"
+        },
+        {
+          "ordinal": 21,
+          "workId": "idhayam-pesugirathu"
+        },
+        {
+          "ordinal": 22,
+          "workId": "pulivaal"
+        },
+        {
+          "ordinal": 23,
+          "workId": "theriyatha-pechu"
+        },
+        {
+          "ordinal": 24,
+          "workId": "vennai-uruguthu-veyilil"
+        },
+        {
+          "ordinal": 25,
+          "workId": "mamiyar-udaithaal-mattum-manchattiya"
+        },
+        {
+          "ordinal": 26,
+          "workId": "porumaikku-saandru"
+        },
+        {
+          "ordinal": 27,
+          "workId": "edukkavo-kokkavo"
+        },
+        {
+          "ordinal": 28,
+          "workId": "antha-naal-vanthilai"
+        },
+        {
+          "ordinal": 29,
+          "workId": "panithuliyil-panai-maram"
+        },
+        {
+          "ordinal": 30,
+          "workId": "paarur-pola"
+        },
+        {
+          "ordinal": 31,
+          "workId": "iramanai-patri-iraman"
+        },
+        {
+          "ordinal": 32,
+          "workId": "maanum-perumaanum"
+        },
+        {
+          "ordinal": 33,
+          "workId": "ezhuchikku-adaiyaalam"
+        },
+        {
+          "ordinal": 34,
+          "workId": "thalaiyum-nuniyum"
+        },
+        {
+          "ordinal": 35,
+          "workId": "thum-pam-theem-thom"
+        },
+        {
+          "ordinal": 36,
+          "workId": "nalvazhiyum-nalla-vazhiyum"
+        },
+        {
+          "ordinal": 37,
+          "workId": "naakkuth-tamil-manakkum"
+        },
+        {
+          "ordinal": 38,
+          "workId": "neethi-devathaiye"
+        },
+        {
+          "ordinal": 39,
+          "workId": "nandri-sollum-neram"
+        },
+        {
+          "ordinal": 40,
+          "workId": "panthalile-paagarkai"
+        }
+      ]
+    },
+    {
+      "id": "2009-16-kathaiyinile",
+      "group": "2009",
+      "memberCount": 16,
+      "collectionTree": "4cd568ad0cdb58698dae5671936d184cec35b807",
+      "members": [
+        {
+          "ordinal": 1,
+          "workId": "gandhi-desam",
+          "localPages": "1–13",
+          "localScans": "6–18"
+        },
+        {
+          "ordinal": 2,
+          "workId": "anil-kunju",
+          "localPages": "14–23",
+          "localScans": "19–28"
+        },
+        {
+          "ordinal": 3,
+          "workId": "kollaipuram",
+          "localPages": "24–32",
+          "localScans": "29–37"
+        },
+        {
+          "ordinal": 4,
+          "workId": "ezhuthalar-ekalaivan",
+          "localPages": "33–44",
+          "localScans": "38–49"
+        },
+        {
+          "ordinal": 5,
+          "workId": "malaravillai",
+          "localPages": "45–58",
+          "localScans": "50–63"
+        },
+        {
+          "ordinal": 6,
+          "workId": "sumanthaval",
+          "localPages": "59–76",
+          "localScans": "64–81"
+        },
+        {
+          "ordinal": 7,
+          "workId": "pugazhendhi",
+          "localPages": "77–84",
+          "localScans": "82–89"
+        },
+        {
+          "ordinal": 8,
+          "workId": "nalayini",
+          "localPages": "85–94",
+          "localScans": "90–99"
+        },
+        {
+          "ordinal": 9,
+          "workId": "kuppai-thotti",
+          "localPages": "TOC 95–104; physical through 105",
+          "localScans": "100–110"
+        },
+        {
+          "ordinal": 10,
+          "workId": "sangilichami",
+          "localPages": "TOC start 105; physical 106–120",
+          "localScans": "111–125"
+        },
+        {
+          "ordinal": 11,
+          "workId": "thappivittargal",
+          "localPages": "121–131",
+          "localScans": "126–136"
+        },
+        {
+          "ordinal": 12,
+          "workId": "thappavillai",
+          "localPages": "132–144",
+          "localScans": "137–149"
+        },
+        {
+          "ordinal": 13,
+          "workId": "ezhai",
+          "localPages": "145–149",
+          "localScans": "150–154"
+        },
+        {
+          "ordinal": 14,
+          "workId": "kannadakkam",
+          "localPages": "150–158",
+          "localScans": "155–163"
+        },
+        {
+          "ordinal": 15,
+          "workId": "vazha-mudiyathavargal",
+          "localPages": "159–168",
+          "localScans": "164–173"
+        },
+        {
+          "ordinal": 16,
+          "workId": "ayyo-raja",
+          "localPages": "169–177",
+          "localScans": "174–182"
+        }
+      ]
+    }
+  ],
+  "nonCollectionNewWorks": [
+    "seerazhitha-sirippu",
+    "madurai-selavu",
+    "kondru-varuga",
+    "naattiya-kalarani",
+    "maanam",
+    "neruppu",
+    "vilaiyal-vangalaiyo",
+    "nanbana"
+  ]
+}

@@ -106,13 +106,13 @@ eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations are declar
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 100, "the catalogue holds 100 works (post Wave-6 P4)");
+eq(works.length, 216, "the catalogue holds 216 works (post Wave-6 P4 + Batch-7)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 64, "64 discovery entries (post Wave-6 P4)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 77, "77 discovery entries (post Wave-6 P4 + Batch-7)");
 ok(!!poetry, "the Poetry shelf is present");
 eq(poetry!.works.length, 14, "Poetry holds 14 works (10 standalone + 4 publications, post Wave-6 P4)");
 // Each publication is ONE discovery entry even though it holds many items — one work with reading
-// units, so works and entries still move together on the Poetry shelf (unlike Fiction's 41/5).
+// units, so works and entries still move together on the Poetry shelf (unlike Fiction's 157/18).
 eq(poetry!.entries.length, 14, "Poetry shows 14 discovery entries (post Wave-6 P4)");
 eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE_ALL, ...PUBLICATIONS_ALL].sort(), "the Poetry shelf's works are the ten standalones plus the four publications");
 {

@@ -69,11 +69,11 @@ ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-2 mani
 const urls = sitemap().map((e) => e.url);
 for (const slug of WAVE6_DRAMA_SLUGS) ok(urls.filter((u) => u === `${BASE}/plays/${slug}` || u.startsWith(`${BASE}/plays/${slug}/`)).length > 0, `${slug} URLs present in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
+eq(works.length, 216, "catalogue is 216 works (Wave-6 P4 + Batch-7 published)");
 for (const slug of WAVE6_DRAMA_SLUGS) ok(works.some((w) => w.slug === slug), `${slug} IS in the catalogue`);
 const dramaEntries = discoveryShelves().find((s) => s.shelf.id === "drama")!.entries;
 eq(dramaEntries.length, 8, "Drama discovery is 8 entries (3 Wave-6 cards added)");
-eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
+eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
 
 // ── 3. RENDERED SEMANTICS ───────────────────────────────────────────────────────
 // காகிதப்பூ — compressed range + unnumbered காட்சி + printed முற்றும், no Scene 22/23.
@@ -263,4 +263,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b2-drama — ${checks} checks, 0 failed`);
-console.log("  3 Drama works · 83 direct routes (registry-derived, fail-closed) · compressed range / unnumbered காட்சி / 47 scenes / 7 SRUs / intertitle / holds · P4: catalogue 100 · Drama discovery 8");
+console.log("  3 Drama works · 83 direct routes (registry-derived, fail-closed) · compressed range / unnumbered காட்சி / 47 scenes / 7 SRUs / intertitle / holds · P4: catalogue 216 · Drama discovery 8");

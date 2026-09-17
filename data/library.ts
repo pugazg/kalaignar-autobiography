@@ -17,6 +17,7 @@
 // data. Do not fabricate provenance merely to fill the type.
 
 import { chapterIndex } from "./references";
+import { WAVE6_B7_WORKS } from "./wave6-b7-catalogue";
 
 // ── Shelves ──────────────────────────────────────────────────────────────────
 // Fixed public shelf taxonomy from the cross-project master handover. All nine
@@ -3035,6 +3036,10 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     unitCount: { value: 1, labelTa: "செய்தி", labelEn: "message" },
     provenanceHref: "/essays/vedhanai-ch-siraiyinindrum-viduthalai-pera/source",
   },
+  // Wave 6 Batch 7 P4 — the 116 canonical short stories, published as independent Fiction works (Fiction
+  // 41→157, catalogue 100→216). Generated from the frozen payloads and proved against source; see
+  // data/wave6-b7-catalogue.ts and scripts/validate-wave6-b7-p4-integration.ts.
+  ...WAVE6_B7_WORKS,
 ];
 
 // ── Selectors ────────────────────────────────────────────────────────────────

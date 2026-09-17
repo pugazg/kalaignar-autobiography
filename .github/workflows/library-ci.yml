@@ -152,6 +152,26 @@ jobs:
       # 3681/3676 unchanged). Live source-pin recheck runs in the source-integrity job below.
       - name: Wave 6 Batch 7 P1 hidden short-story foundation
         run: npm run test:wave6-b7-short-stories
+      # Wave 6 Batch 7 P2 — reader/provenance runtime regression (no source clone): renders all 116
+      # hidden payloads through StoryReader (Tamil default + English toggle) and StorySourceB7, proves no
+      # null/undefined/apparatus leaks in the UI, and that the 38 already-published stories still render
+      # through the legacy components unchanged. Pure component render — needs no build artifacts.
+      - name: Wave 6 Batch 7 P2 reader/provenance render regression
+        run: npm run test:wave6-b7-p2-render
+      # Wave 6 Batch 7 P3 — direct routes, still hidden. Runs after Build so it reads the real .next:
+      # proves the route helper == the 116-slug manifest, 232 reader+source routes prerendered (deduped
+      # with STORY_SLUGS, unknown slug fails closed), every payload loads and reader/provenance render,
+      # and NOTHING leaked (catalogue 100, collections 1, discovery 64/39, Fiction 41, sitemap 3672/0,
+      # build 3913/3908). The public surface is unchanged; only direct addressability is added.
+      - name: Wave 6 Batch 7 P3 direct-but-hidden routes
+        run: npm run test:wave6-b7-p3-routes
+      # Wave 6 Batch 7 P4 — the authoritative published-surface + collection gate. Runs after Build so it
+      # reads the real .next: catalogue 100→216, Fiction 41→157, STORY_SLUGS 154, 6 collections (source
+      # ordinals, plural jaadi/kuruvi, no duplicate work, 2009 reprint shows its own pages), discovery
+      # 64→77 (40 visible, Fiction over-cap), sitemap 3672→3909/0, build 3918/3913, ~18 adversarials. The
+      # source-order RE-DERIVATION of every collection runs in the source-integrity job below (needs the pin).
+      - name: Wave 6 Batch 7 P4 publication integration (catalogue/collections/discovery/sitemap)
+        run: npm run test:wave6-b7-p4-integration
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -584,6 +604,16 @@ jobs:
             echo "::notice::Pinned control repo not reachable from this CI token (private); frozen-control set-equality is proven locally and in independent review."
           fi
           npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-short-stories.ts "$KDL_SOURCES_DIR/kalaignar-short-stories-wave6-b7" $CTRL_ARG
+          # Wave 6 Batch 7 P2 — independent literary-fidelity proof against the SAME pinned source. Its own
+          # parser (does NOT import the production importer) proves title, Tamil/English flat-sequence
+          # equality, exact per-segment scan + printed-page attribution, exact English source-marker scan
+          # anchor, and that every payload↔source delta is a whitespace-only fold. Needs the source clone.
+          npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-p2-fidelity.ts "$KDL_SOURCES_DIR/kalaignar-short-stories-wave6-b7"
+          # Wave 6 Batch 7 P4 — RE-DERIVE every collection's membership + ordinals (and the 2009 reprint's
+          # own pagination) from that publication's indexes/story-inventory.md at the frozen pin, and prove
+          # the committed data equals it — the independent proof that ordering is the SOURCE printed order,
+          # not the P1 planning arrays. (Build-total checks self-skip here; they run in the build/UI job.)
+          npx tsx --tsconfig tsconfig.scripts.json scripts/validate-wave6-b7-p4-integration.ts "$KDL_SOURCES_DIR/kalaignar-short-stories-wave6-b7"
 
       # Proves the migrated validators still obey docs/VALIDATOR_CONTRACT.md — that corrupted data
       # exits 1 naming the difference, and an unusable source exits 2. Runs last, after the sources

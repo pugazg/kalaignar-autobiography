@@ -110,12 +110,12 @@ ok(/நூல் அமைப்பு/.test(periyaSource), "periya source: show
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 100, "catalogue is 100 works (P4 published the 22 Wave-6 works)");
-eq(LIBRARY_COLLECTIONS.length, 1, "public collection registry still exactly 1");
+eq(works.length, 216, "catalogue is 216 works (Wave-6 P4 + Batch-7 published)");
+eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
 const fiction = discoveryShelves().find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "fiction discovery shelf present");
 const fictionEntries = fiction ? fiction.entries : [];
-eq(fictionEntries.length, 5, "Fiction discovery is 5 entries (2 Wave-6 novels added; the 1977 anthology stays 1 entry)");
+eq(fictionEntries.length, 18, "Fiction discovery is 18 entries (post Batch-7: 6 collections + 12 standalone works)");
 for (const s of WAVE6_NOVEL_SLUGS) {
   ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
   ok(fictionEntries.some((e) => (e as { work?: { slug?: string }; slug?: string }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `${s} IS a Fiction discovery entry`);

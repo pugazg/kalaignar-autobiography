@@ -36,6 +36,7 @@
 // Naanmani Maalai is NOT modelled here. Its four plays share a scan SHA-256 and a prose note, and
 // nothing structural — under the source-first rule that is not enough to declare membership.
 import { LIBRARY_WORKS, SHELVES, publishedWorks, type LibraryWork, type Shelf, type ShelfId } from "@/data/library";
+import { WAVE6_B7_COLLECTIONS } from "@/data/wave6-b7-catalogue";
 
 export type CollectionKind = "anthology";
 
@@ -51,6 +52,18 @@ export interface CollectionMember {
    * It is never derived from array position — position is a consequence of the ordinal, not its source.
    */
   ordinal?: number;
+
+  /**
+   * This member's extent WITHIN THIS PUBLICATION, verbatim from the publication's own inventory.
+   *
+   * Load-bearing ONLY for a reprint: when a work also lives in another edition (the 2009 anthology
+   * reprints eleven 1977 stories), its own payload records the ORIGINAL edition's pages, which are not
+   * this publication's. Recording the collection-local extent on the member lets the landing page show
+   * the reprint's own pagination and never fall back to the 1977 pages. Absent for a member whose only
+   * source IS this collection — there the work payload's own `storyScope` already IS the local extent.
+   */
+  localPages?: string;
+  localScans?: string;
 }
 
 export interface LibraryCollection {
@@ -188,6 +201,10 @@ export const LIBRARY_COLLECTIONS: LibraryCollection[] = [
       { workId: "nunikkarumbu", ordinal: 37 },
     ],
   },
+  // Wave 6 Batch 7 P4 — the 5 short-story collections (2008, 2004, 1987, 2009, 1982), membership and
+  // ordinals taken from each publication's own printed order. Generated + proved against the frozen
+  // source; see data/wave6-b7-catalogue.ts and scripts/validate-wave6-b7-p4-integration.ts.
+  ...WAVE6_B7_COLLECTIONS,
 ];
 
 /**
