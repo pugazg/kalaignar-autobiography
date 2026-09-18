@@ -1,0 +1,40 @@
+{
+  "note": "Wave 7 Batch 3 P2 DECISION on the arumbu-1978 publication model. Decided from the FROZEN novel source (pugazg/kalaignar-novels @ cc5c7fe535c5fab35e87f91b8325d6801afec46c), collections/arumbu-1978 — not from assumption. This record controls the P4 collection/discovery/sitemap outcome.",
+  "outcome": "A",
+  "outcomeMeaning": "Collection model PASS — the frozen source clearly establishes the physical 1978 publication and its membership, so arumbu-1978 becomes ONE public Fiction LibraryCollection (kind 'anthology') at P4. It is NOT a fourth canonical work. The three members stay three independent LibraryWorks with independent routes, source pages and citation identity.",
+  "sourceEvidence": {
+    "sourceRepo": "pugazg/kalaignar-novels",
+    "sourceCommit": "cc5c7fe535c5fab35e87f91b8325d6801afec46c",
+    "collectionSourcePath": "collections/arumbu-1978",
+    "collectionSubtree": "851ea306fc27ba73ea1c46dbafead51c659e6ba4",
+    "publicationTitleTa": "அரும்பு",
+    "publisherTa": "தமிழ்க்கனி பதிப்பகம், சென்னை-28",
+    "editionStatementTa": "முதற் பதிப்பு : 1978",
+    "publisherNoteDate": "25-3-1978",
+    "collectionScan": { "archiveId": "TVA_BOK_0064361", "sha256": "04a3013e1f58a1800867acc5d2f159976c47994a64478036e6fe0201edf120bc", "physicalScans": 92 },
+    "printedMemberOrderByScanRange": [
+      { "titleTa": "அரும்பு", "scanRange": "6-23", "slug": "arumbu", "isCohortMember": true },
+      { "titleTa": "சாரப்பள்ளம் சாமுண்டி", "scanRange": "24-48", "slug": "sarapallam-samundi", "isCohortMember": true },
+      { "titleTa": "பெரிய இடத்துப் பெண்", "scanRange": "49-74", "slug": "periya-idathup-pen", "isCohortMember": false, "witnessNote": "This 1978 printing of பெரிய இடத்துப் பெண் is an ADDITIONAL NON-CONTROLLING WITNESS only; its controlling canonical edition is the already-published 1953 eighth edition (Wave-6 Batch-5). It is therefore NOT a member of the arumbu-1978 implementation collection; its physical presence in the 1978 volume is recorded here as provenance, not membership." },
+      { "titleTa": "நடுத்தெரு நாராயணி", "scanRange": "75-90", "slug": "nadutheru-narayani", "isCohortMember": true }
+    ],
+    "collectionParatextScans": "1-5 (cover / title / publication / publisher note) and 91-92 (publisher catalogue / back cover), 7/7 VERIFIED / CLOSED",
+    "compilationAccounting": "92/92 scans; collection verdict ARCHIVAL CLOSED"
+  },
+  "p4Plan": {
+    "collectionId": "arumbu-1978",
+    "shelf": "fiction",
+    "kind": "anthology",
+    "titleTa": "அரும்பு (1978 தொகுப்பு)",
+    "titleEn": "Arumbu (1978 compilation)",
+    "members": [
+      { "workId": "arumbu", "ordinal": null },
+      { "workId": "sarapallam-samundi", "ordinal": null },
+      { "workId": "nadutheru-narayani", "ordinal": null }
+    ],
+    "memberOrderNote": "Members are listed in the source's printed order (by scan range): arumbu, then சாரப்பள்ளம் சாமுண்டி, then நடுத்தெரு நாராயணி (பெரிய இடத்துப் பெண் sits between the latter two in the physical volume but is a witness only, not a member). The volume prints the stories in sequence but assigns NO printed story-ordinals, so `ordinal` is left UNSET (never invented as 1/2/3); the printed order is preserved by the member array sequence.",
+    "memberIndependenceNote": "Each member keeps its independent LibraryWork id, its own /novels/<slug> routes and its own /novels/<slug>/source page and citation identity. Canonical work provenance is never overwritten with collection-local pagination.",
+    "expectedPublicDelta": { "collections": "6 -> 7", "newCollectionRoutes": 1, "collectionRoute": "/collections/arumbu-1978" },
+    "notAFourthWork": "The collection is NOT a canonical work; catalogue stays 219 -> 232 (13 new works), never 14."
+  }
+}

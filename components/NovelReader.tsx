@@ -15,17 +15,20 @@ export default function NovelReader({
   section,
   prev,
   next,
+  initialShowEn,
 }: {
   novel: Novel;
   section: NovelSection;
   prev: NovelSection | null;
   next: NovelSection | null;
+  /** Test/SSR seed for the English toggle; defaults to false so the live reader is Tamil-first. */
+  initialShowEn?: boolean;
 }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const [font, setFont] = useState(1);
   // Source-first: the verified Tamil is authoritative and is the default reading layer.
-  const [showEn, setShowEn] = useState(false);
+  const [showEn, setShowEn] = useState(initialShowEn ?? false);
 
   const sizes = ["text-base", "text-lg", "text-xl"];
   const blocks = showEn ? section.english.blocks : section.tamil.blocks;

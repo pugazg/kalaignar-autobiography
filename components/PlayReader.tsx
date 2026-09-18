@@ -19,13 +19,13 @@ const OBSTRUCTION = "⟦later library stamp obscures leading letters⟧";
  * (a speech resuming after the two-column break) none is shown and none is invented.
  */
 export default function PlayReader({
-  play, scene, prev, next,
-}: { play: Play; scene: PlayReadingUnit; prev: PlayReadingUnit | null; next: PlayReadingUnit | null }) {
+  play, scene, prev, next, initialShowEn,
+}: { play: Play; scene: PlayReadingUnit; prev: PlayReadingUnit | null; next: PlayReadingUnit | null; initialShowEn?: boolean }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const [font, setFont] = useState(1);
   // Source-first: the verified Tamil is authoritative and is the default reading layer.
-  const [showEn, setShowEn] = useState(false);
+  const [showEn, setShowEn] = useState(initialShowEn ?? false);
 
   const sizes = ["text-base", "text-lg", "text-xl"];
   const units = showEn ? scene.english.units : scene.tamil.units;
