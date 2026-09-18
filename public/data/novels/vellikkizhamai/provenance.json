@@ -1,0 +1,55 @@
+{
+ "workId": "vellikkizhamai",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/vellikkizhamai",
+ "sourceCommit": "cc5c7fe535c5fab35e87f91b8325d6801afec46c",
+ "sourceTree": "1eb0681c87882e8dd1110b50a83c329016692496",
+ "wave": 7,
+ "batch": 3,
+ "shelf": "fiction",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 3 P1 hidden foundation."
+ },
+ "source": {
+  "scanFilename": "TVA_BOK_0064233_வெள்ளிக்கிழமை.pdf",
+  "scanSha256": "ac241cbfbe3d47d76f22140f43c662176ba29a91521b826a1a8f5c75cf3081d3",
+  "scanFileSizeBytes": 251126214,
+  "scanTotalPages": 179,
+  "workScans": "story body across the printed chapters",
+  "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE metadata. The controlling PDF is held outside the repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here.",
+  "publicationYearNote": "No numeric publication year is promoted to the catalogue. Any printed edition statement is carried verbatim in `edition.editionStatementTa` as a source witness only."
+ },
+ "english": {
+  "kind": "project-created",
+  "perSectionStates": [
+   "reviewed"
+  ],
+  "status": "23/23 sections (reviewed)",
+  "independence": "The reader's English is the project-created independent translation, reviewed against the audited Tamil source."
+ },
+ "derived": {
+  "sections": 23,
+  "tamilChars": 246566,
+  "englishChars": 227329
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked independent translation; it is not covered by the nationalisation of the Tamil work."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "The reading layer is a deterministic transform of the pinned assembled-reading sections: front matter and HTML-comment scan markers removed, all literary bytes preserved, 3+ newline runs folded to a paragraph break."
+ ]
+}

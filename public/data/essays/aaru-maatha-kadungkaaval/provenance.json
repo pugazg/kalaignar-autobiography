@@ -1,0 +1,107 @@
+{
+ "workId": "aaru-maatha-kadungkaaval",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/aaru-maatha-kadungkaaval",
+ "sourceCommit": "b5fd2922898a56a8b6a75bf564bdfa91cd22869a",
+ "sourceTree": "ce8c98a509d636adf60c724cf5a38ad0331c2274",
+ "wave": 7,
+ "batch": 4,
+ "shelf": "essays-articles",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 4 P1 hidden foundation."
+ },
+ "source": {
+  "titleTa": "ஆறுமாதக் கடுங்காவல்",
+  "titleEn": "Six Months of Rigorous Imprisonment",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0064140_ஆறுமாதக்_கடுங்காவல்.pdf",
+  "scanSha256": "8d4b227547144dd16a78d3f7e22edc3d955d754788ba96317c0c6ddd68d0ca69",
+  "scanFileSizeBytes": 282020019,
+  "scanTotalPages": 224,
+  "physicalVerification": "224 / 224 physical page records",
+  "strictFidelityReview": "P5 strict visual text fidelity — 224 / 224 PASS",
+  "articleAssemblies": "3 / 3 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதல் பதிப்பு, 1953",
+   "திராவிடப் பண்ணை"
+  ],
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "முரசு",
+    "titleEn": "The Drum",
+    "scanPages": "10–65",
+    "printedPages": "visible printed numerals 10, 11, 12, 13, 14, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62; scan 10 shows no printed numeral. The archive does not form a usable printed range and neither does this integration.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "களம்",
+    "titleEn": "The Battlefield",
+    "scanPages": "66–106",
+    "printedPages": "66–103; scan 66, 67, 68 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "சிறை",
+    "titleEn": "Prison",
+    "scanPages": "108–223",
+    "printedPages": "108–220; scan 108, 109, 110 shows no printed numeral",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "Article ordinals are archive reading ordinals, not printed article numbers."
+  ],
+  "lockedExclusions": [
+   "cover / title-page / front-matter scans excluded from the prose",
+   "back-cover / publisher-device scan excluded"
+  ]
+ },
+ "english": {
+  "releaseTitle": "Six Months of Rigorous Imprisonment",
+  "kind": "project-created",
+  "articlesVerified": "3 / 3 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "P4 source audit / P3 article assembly review — RELEASE-READY; Tamil verified; English verified.",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 3,
+  "tamilBlocks": 1037,
+  "englishBlocks": 1041,
+  "tamilSubheadings": 26,
+  "englishSubheadings": 29,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 155,
+  "englishMixedVoiceParagraphs": 255,
+  "tamilQuotedSegments": 248,
+  "englishQuotedSegments": 405,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 210,
+  "relationUnknown": 210,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

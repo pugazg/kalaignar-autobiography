@@ -1,0 +1,114 @@
+{
+ "workId": "thudikkum-ilamai",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/thudikkum-ilamai",
+ "sourceCommit": "b5fd2922898a56a8b6a75bf564bdfa91cd22869a",
+ "sourceTree": "b37c084977aca26a16cece1ce8f838084bbc3db6",
+ "wave": 7,
+ "batch": 4,
+ "shelf": "essays-articles",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 4 P1 hidden foundation."
+ },
+ "source": {
+  "titleTa": "துடிக்கும் இளமை",
+  "titleEn": "Restless Youth",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0063985_துடிக்கும்_இளமை.pdf",
+  "scanSha256": "309042a481db1d198d331b1c16f11ea7acce5ad0cc4ab78ee53c2a702e0ecb11",
+  "scanFileSizeBytes": 50703452,
+  "scanTotalPages": 33,
+  "physicalVerification": "33 / 33 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 33 / 33",
+  "articleAssemblies": "4 / 4 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற் பதிப்பு"
+  ],
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "துடிக்கும் இளமை",
+    "titleEn": "Throbbing Youth",
+    "scanPages": "5",
+    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "அண்ணாமலைக்கு அரோகரா!",
+    "titleEn": "Arohara to Annamalai!",
+    "scanPages": "13",
+    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "பூம்புகார்",
+    "titleEn": "Poompuhar",
+    "scanPages": "20",
+    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "வெற்றி விளக்கு!",
+    "titleEn": "Lamp of Victory!",
+    "scanPages": "25",
+    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "Article ordinals are archive reading ordinals, not printed article numbers."
+  ],
+  "lockedExclusions": [
+   "cover / front-matter scans excluded from the prose",
+   "library / ownership / bookseller stamps are not merged into the literary text"
+  ]
+ },
+ "english": {
+  "releaseTitle": "Restless Youth",
+  "kind": "project-created",
+  "articlesVerified": "4 / 4 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "Publication assembly/review — RELEASE-READY; Tamil strict-reviewed; English verified.",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 4,
+  "tamilBlocks": 72,
+  "englishBlocks": 131,
+  "tamilSubheadings": 12,
+  "englishSubheadings": 20,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 6,
+  "englishMixedVoiceParagraphs": 20,
+  "tamilQuotedSegments": 14,
+  "englishQuotedSegments": 34,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 0,
+  "relationUnknown": 0,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

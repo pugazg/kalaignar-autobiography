@@ -1,0 +1,187 @@
+{
+ "workId": "perumoochu",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/perumoochu",
+ "sourceCommit": "b5fd2922898a56a8b6a75bf564bdfa91cd22869a",
+ "sourceTree": "7e39cc529e104c6d3491db6f475eb94e0a52062c",
+ "wave": 7,
+ "batch": 4,
+ "shelf": "essays-articles",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 4 P1 hidden foundation."
+ },
+ "source": {
+  "titleTa": "பெருமூச்சு",
+  "titleEn": "The Deep Sigh",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0064124_பெருமூச்சு.pdf",
+  "scanSha256": "18947f2deb1ece71b03b59c1e52d9f483a45baa5bf436ab2c3e89a48b5f2dc38",
+  "scanFileSizeBytes": 122052025,
+  "scanTotalPages": 83,
+  "physicalVerification": "83 / 83 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 83 / 83",
+  "articleAssemblies": "13 / 13 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற் பதிப்பு—'52"
+  ],
+  "controllingEditionTa": "இரண்டாம் பதிப்பு—'53",
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "பெருமூச்சு",
+    "titleEn": "A Deep Sigh",
+    "scanPages": "7–10",
+    "printedPages": "5–8",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "மாளிகை அமைத்திட வாரீர்!",
+    "titleEn": "Come, Let Us Build the Mansion!",
+    "scanPages": "11–16",
+    "printedPages": "9–14",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "மந்திரிகள் குலை நடுக்கம்",
+    "titleEn": "Ministers Tremble in Fear",
+    "scanPages": "17–20",
+    "printedPages": "15–18",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "வாபஸ் வீரர்கள்!",
+    "titleEn": "Heroes of Retreat!",
+    "scanPages": "21–23",
+    "printedPages": "19–21",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 5,
+    "titleTa": "பொது மக்களுக்குத் தனி எச்சரிக்கை",
+    "titleEn": "A Special Warning to the Public",
+    "scanPages": "24–36",
+    "printedPages": "22–34",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 6,
+    "titleTa": "சிறுவர்கள்",
+    "titleEn": "Youngsters",
+    "scanPages": "37–40",
+    "printedPages": "35–38",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 7,
+    "titleTa": "“அஹிம்சா விலாசம்”",
+    "titleEn": "“Ahimsa Vilasam”",
+    "scanPages": "41–48",
+    "printedPages": "39–46",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 8,
+    "titleTa": "திண்டிவனம் தீரர்காள்!",
+    "titleEn": "O Heroes of Tindivanam!",
+    "scanPages": "49–52",
+    "printedPages": "47–50",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 9,
+    "titleTa": "சேவல் கூவுகிறது!",
+    "titleEn": "The Rooster Crows!",
+    "scanPages": "53–56",
+    "printedPages": "51–54",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 10,
+    "titleTa": "மாடோட்டிகள்!",
+    "titleEn": "Cattle-Drivers!",
+    "scanPages": "57–62",
+    "printedPages": "55–60",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 11,
+    "titleTa": "தேர்தல் கோவலன்!",
+    "titleEn": "Election Kovalan!",
+    "scanPages": "63–70",
+    "printedPages": "61–68",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 12,
+    "titleTa": "சிந்தித்துணர்க! சீற்றமுறாதீர்!",
+    "titleEn": "Think and Understand! Do Not Grow Angry!",
+    "scanPages": "71–76",
+    "printedPages": "69–74",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 13,
+    "titleTa": "பூம்! பூம்! பூம்!",
+    "titleEn": "Boom! Boom! Boom!",
+    "scanPages": "77–80",
+    "printedPages": "75–78",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "Both the first-edition ('52) and second-edition ('53) statements are printed in the scan and are preserved verbatim; neither is merged into the other."
+  ],
+  "lockedExclusions": [
+   "cover / front-matter scans excluded from the prose",
+   "advertisement / catalogue scans excluded"
+  ]
+ },
+ "english": {
+  "releaseTitle": "The Deep Sigh",
+  "kind": "project-created",
+  "articlesVerified": "13 / 13 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "Publication assembly/review — RELEASE-READY; Tamil strict-reviewed; English verified.",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 13,
+  "tamilBlocks": 378,
+  "englishBlocks": 296,
+  "tamilSubheadings": 39,
+  "englishSubheadings": 0,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 21,
+  "englishMixedVoiceParagraphs": 25,
+  "tamilQuotedSegments": 31,
+  "englishQuotedSegments": 37,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 61,
+  "relationUnknown": 61,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}
