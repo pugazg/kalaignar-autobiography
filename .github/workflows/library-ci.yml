@@ -444,9 +444,9 @@ jobs:
                   { repo: "kalaignar-short-stories", dir: "kalaignar-short-stories-wave6-b7" },
                 ]),
               ),
-              // ── WAVE 7 BATCHES 2-4 — Drama / Novels / Essays (hidden P1). Each shelf's works pin their
-              // source repo at the Wave-7 P0 commit, which differs from the Wave-6 pins, so each gets its
-              // OWN checkout dir (keeping the same-directory/same-pin guard meaningful).
+              // ── WAVE 7 BATCHES 2-4 — Drama / Novels / Essays (hidden P1). Each shelf pins its source
+              // repo at the Wave-7 P0 commit, which differs from the Wave-6 pins, so each gets its OWN
+              // checkout dir (keeping the same-directory/same-pin guard meaningful).
               "plays/iratha-kanneer": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave7" },
               "plays/nachuk-koppai": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave7" },
               "novels/arumbu": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave7" },
