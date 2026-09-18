@@ -1,0 +1,99 @@
+{
+ "workId": "viduthalai-kilarcci",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/viduthalai-kilarcci",
+ "sourceCommit": "b5fd2922898a56a8b6a75bf564bdfa91cd22869a",
+ "sourceTree": "763ff9e6d58ac9c7f16d232baa169571b5f62ef7",
+ "wave": 7,
+ "batch": 4,
+ "shelf": "essays-articles",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 4 P1 hidden foundation."
+ },
+ "source": {
+  "titleTa": "விடுதலைக் கிளர்ச்சி",
+  "titleEn": "The Freedom Uprising",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0064066_விடுதலைக்கிளர்ச்சி.pdf",
+  "scanSha256": "444ff76695154b5ee9d53f4647873fde72659a3d52a76aa833fdc502fb518809",
+  "scanFileSizeBytes": 101127153,
+  "scanTotalPages": 69,
+  "physicalVerification": "69 / 69 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 69 / 69",
+  "articleAssemblies": "2 / 2 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   null
+  ],
+  "controllingEditionTa": "இரண்டாம் பதிப்பு—1953",
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "வேங்கையை விரட்டும் படலம்",
+    "titleEn": "The Chapter of Driving Away the Tiger",
+    "scanPages": "4",
+    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "விடுதலைக் கிளர்ச்சி",
+    "titleEn": "Liberation Uprising",
+    "scanPages": "8",
+    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The controlling scan prints the second-edition (1953) statement; no first-edition statement is printed and none is invented."
+  ],
+  "lockedExclusions": [
+   "cover / preliminary-verse / front-matter scans excluded from the prose",
+   "printed marginal folios recorded only where visible; null where none is printed"
+  ]
+ },
+ "english": {
+  "releaseTitle": "The Freedom Uprising",
+  "kind": "project-created",
+  "articlesVerified": "2 / 2 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "Publication assembly/review — RELEASE-READY; Tamil strict-reviewed; English verified.",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 2,
+  "tamilBlocks": 351,
+  "englishBlocks": 368,
+  "tamilSubheadings": 6,
+  "englishSubheadings": 0,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 15,
+  "englishMixedVoiceParagraphs": 36,
+  "tamilQuotedSegments": 20,
+  "englishQuotedSegments": 49,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 0,
+  "relationUnknown": 0,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

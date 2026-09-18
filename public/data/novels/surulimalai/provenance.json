@@ -1,0 +1,56 @@
+{
+ "workId": "surulimalai",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/surulimalai",
+ "sourceCommit": "cc5c7fe535c5fab35e87f91b8325d6801afec46c",
+ "sourceTree": "39e5908a1fdb65737178886cd21eed3744425af6",
+ "wave": 7,
+ "batch": 3,
+ "shelf": "fiction",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 3 P1 hidden foundation."
+ },
+ "source": {
+  "scanFilename": "TVA_BOK_0064107_சுருளிமலை.pdf",
+  "scanSha256": "3d940115bed12e818b8f3cbfbdfca56def0285aef803334f8711acf27f7408ea",
+  "scanFileSizeBytes": 268529598,
+  "scanTotalPages": 198,
+  "workScans": "5–197 (front matter 1–4; back cover 198)",
+  "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE metadata. The controlling PDF is held outside the repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here.",
+  "publicationYearNote": "No numeric publication year is promoted to the catalogue. Any printed edition statement is carried verbatim in `edition.editionStatementTa` as a source witness only.",
+  "structureNote": "The source prints chapters with no chapters 6 or 7 in its own numbering; the assembled reading layer preserves that gap exactly and invents no chapter 6/7."
+ },
+ "english": {
+  "kind": "project-created",
+  "perSectionStates": [
+   "source-checked"
+  ],
+  "status": "26/26 sections (source-checked)",
+  "independence": "The reader's English is the project-created independent translation, reviewed against the audited Tamil source."
+ },
+ "derived": {
+  "sections": 26,
+  "tamilChars": 271253,
+  "englishChars": 266377
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked independent translation; it is not covered by the nationalisation of the Tamil work."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "The reading layer is a deterministic transform of the pinned assembled-reading sections: front matter and HTML-comment scan markers removed, all literary bytes preserved, 3+ newline runs folded to a paragraph break."
+ ]
+}

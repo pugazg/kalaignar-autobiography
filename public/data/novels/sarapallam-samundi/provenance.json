@@ -1,0 +1,59 @@
+{
+ "workId": "sarapallam-samundi",
+ "sourceRepo": "pugazg/kalaignar-novels",
+ "sourcePath": "works/sarapallam-samundi",
+ "sourceCommit": "cc5c7fe535c5fab35e87f91b8325d6801afec46c",
+ "sourceTree": "77532e7ad00c6ed847476f86be3279f56722d5b4",
+ "wave": 7,
+ "batch": 3,
+ "shelf": "fiction",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 3 P1 hidden foundation."
+ },
+ "source": {
+  "scanFilename": "TVA_BOK_0064361_அரும்பு.pdf",
+  "scanSha256": "04a3013e1f58a1800867acc5d2f159976c47994a64478036e6fe0201edf120bc",
+  "scanFileSizeBytes": 117270339,
+  "scanTotalPages": 92,
+  "workScans": "24–48 (25 scans)",
+  "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE metadata. The controlling PDF is held outside the repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here.",
+  "publicationYearNote": "No numeric publication year is promoted to the catalogue. Any printed edition statement is carried verbatim in `edition.editionStatementTa` as a source witness only."
+ },
+ "sourceCompilation": {
+  "collectionId": "arumbu-1978",
+  "note": "This work shares a single 1978 source publication (the அரும்பு-1978 compilation) with the other arumbu-1978 member works. They remain SEPARATE canonical works; the compilation is a source publication relationship, not another work. No collection page is created at P1."
+ },
+ "english": {
+  "kind": "project-created",
+  "perSectionStates": [
+   "verified"
+  ],
+  "status": "1/1 sections (verified)",
+  "independence": "The reader's English is the project-created independent translation, reviewed against the audited Tamil source."
+ },
+ "derived": {
+  "sections": 1,
+  "tamilChars": 44454,
+  "englishChars": 45430
+ },
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked independent translation; it is not covered by the nationalisation of the Tamil work."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "The reading layer is a deterministic transform of the pinned assembled-reading sections: front matter and HTML-comment scan markers removed, all literary bytes preserved, 3+ newline runs folded to a paragraph break."
+ ]
+}

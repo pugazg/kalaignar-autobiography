@@ -1,0 +1,291 @@
+{
+ "workId": "meesai-mulaiththa-vayathil",
+ "sourceRepo": "pugazg/kalaignar-essays",
+ "sourcePath": "publications/meesai-mulaiththa-vayathil",
+ "sourceCommit": "b5fd2922898a56a8b6a75bf564bdfa91cd22869a",
+ "sourceTree": "45deb93933b961b72e80f0fad61072441aad7075",
+ "wave": 7,
+ "batch": 4,
+ "shelf": "essays-articles",
+ "readiness": "ready",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 4 P1 hidden foundation."
+ },
+ "source": {
+  "titleTa": "மீசை முளைத்த வயதில்",
+  "titleEn": "At the Age the Moustache Sprouted",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "scanFilename": "TVA_BOK_0065746_மீசை_முளைத்த_வயதில்.pdf",
+  "scanSha256": "9054aa8ed82c68050b82ffe57d772c32fdcad0605f72d7983de490162669527d",
+  "scanFileSizeBytes": 374123900,
+  "scanTotalPages": 146,
+  "physicalVerification": "146 / 146 physical page records",
+  "strictFidelityReview": "Tamil strict-reviewed / frozen — 146 / 146",
+  "articleAssemblies": "26 / 26 frozen",
+  "unresolvedTamilFidelityItems": 0,
+  "editionWitnessesTa": [
+   "முதற் பதிப்பு: 3.6.2002"
+  ],
+  "controllingEditionTa": "இரண்டாம் பதிப்பு: அக்டோபர் 2006",
+  "sourcePdfCommitted": false,
+  "articleMap": [
+   {
+    "number": 1,
+    "titleTa": "பிறையே",
+    "titleEn": "O Crescent!",
+    "scanPages": "18",
+    "printedPages": "17–17",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 2,
+    "titleTa": "ஆடிக்காற்று",
+    "titleEn": "Aadi Wind",
+    "scanPages": "21",
+    "printedPages": "20–20",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 3,
+    "titleTa": "கருப்புப் பெண்",
+    "titleEn": "Black Woman",
+    "scanPages": "24",
+    "printedPages": "23–23",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 4,
+    "titleTa": "கடலே",
+    "titleEn": "O Sea!",
+    "scanPages": "28",
+    "printedPages": "27–27",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 5,
+    "titleTa": "ஆறு",
+    "titleEn": "River",
+    "scanPages": "31",
+    "printedPages": "30–30",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 6,
+    "titleTa": "வாழிய வைகறை",
+    "titleEn": "Hail the Dawn!",
+    "scanPages": "34",
+    "printedPages": "33–33",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 7,
+    "titleTa": "அகப்பை சித்தர்",
+    "titleEn": "The Ladle Siddhar",
+    "scanPages": "36",
+    "printedPages": "35–35",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 8,
+    "titleTa": "மலையே வாழி",
+    "titleEn": "Hail, Mountain!",
+    "scanPages": "39",
+    "printedPages": "38–38",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 9,
+    "titleTa": "தளிர்",
+    "titleEn": "Tender Shoot",
+    "scanPages": "42",
+    "printedPages": "41–41",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 10,
+    "titleTa": "விண்மீன்",
+    "titleEn": "Star",
+    "scanPages": "46",
+    "printedPages": "45–45",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 11,
+    "titleTa": "தனிமை",
+    "titleEn": "Solitude",
+    "scanPages": "49",
+    "printedPages": "48–48",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 12,
+    "titleTa": "நாடக மேடை",
+    "titleEn": "The Stage",
+    "scanPages": "55",
+    "printedPages": "54–54",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 13,
+    "titleTa": "புகழ்",
+    "titleEn": "Fame",
+    "scanPages": "57",
+    "printedPages": "56–56",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 14,
+    "titleTa": "பச்சைக்கிளி",
+    "titleEn": "Green Parrot",
+    "scanPages": "59",
+    "printedPages": "58–58",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 15,
+    "titleTa": "தமிழே",
+    "titleEn": "O Tamil!",
+    "scanPages": "62",
+    "printedPages": "61–61",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 16,
+    "titleTa": "தேனலைகள்",
+    "titleEn": "Honey Waves",
+    "scanPages": "63",
+    "printedPages": "62–62",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 17,
+    "titleTa": "தோழி",
+    "titleEn": "Friend",
+    "scanPages": "72",
+    "printedPages": "71–71",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 18,
+    "titleTa": "மருதாணி",
+    "titleEn": "Henna",
+    "scanPages": "78",
+    "printedPages": "77–77",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 19,
+    "titleTa": "அருவி",
+    "titleEn": "Waterfall",
+    "scanPages": "85",
+    "printedPages": "84–84",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 20,
+    "titleTa": "முறம்",
+    "titleEn": "Winnowing Tray",
+    "scanPages": "91",
+    "printedPages": "90–90",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 21,
+    "titleTa": "யாழ்",
+    "titleEn": "Yaazh",
+    "scanPages": "96",
+    "printedPages": "95–95",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 22,
+    "titleTa": "சிற்பி",
+    "titleEn": "The Sculptor",
+    "scanPages": "103",
+    "printedPages": "102–102",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 23,
+    "titleTa": "சேவல் சண்டை",
+    "titleEn": "Cockfight",
+    "scanPages": "115",
+    "printedPages": "114–114",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 24,
+    "titleTa": "மடல்",
+    "titleEn": "Letter",
+    "scanPages": "123",
+    "printedPages": "122–122",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 25,
+    "titleTa": "ஆண்டு விழா",
+    "titleEn": "Annual Festival",
+    "scanPages": "129",
+    "printedPages": "128–128",
+    "numberSource": "archive-ordinal"
+   },
+   {
+    "number": 26,
+    "titleTa": "மயிலிறகு",
+    "titleEn": "Peacock Feather",
+    "scanPages": "136",
+    "printedPages": "135–135",
+    "numberSource": "archive-ordinal"
+   }
+  ],
+  "titleWitnessNotes": [
+   "The controlling scan is the second edition (October 2006); the first-edition witness (3.6.2002) is a distinct printed fact and the two are never merged."
+  ],
+  "lockedExclusions": [
+   "cover / front-matter scans excluded from the prose",
+   "back-cover / promotional witness excluded"
+  ]
+ },
+ "english": {
+  "releaseTitle": "At the Age the Moustache Sprouted",
+  "kind": "project-created",
+  "articlesVerified": "26 / 26 verified",
+  "consistencyReview": "publication-wide English consistency review — PASS",
+  "releaseCloseout": "English release closeout — PASS",
+  "releaseGate": "P3 26/26 assemblies, 128/128 main-work pages — source-complete; English verified.",
+  "unresolvedTranslationQuestions": 0,
+  "releaseBlockers": 0,
+  "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
+  "labelPolicy": [
+   "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
+   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+  ]
+ },
+ "archiveDerived": {
+  "articles": 26,
+  "tamilBlocks": 607,
+  "englishBlocks": 597,
+  "tamilSubheadings": 5,
+  "englishSubheadings": 5,
+  "tamilAttributions": 0,
+  "englishAttributions": 0,
+  "tamilMixedVoiceParagraphs": 137,
+  "englishMixedVoiceParagraphs": 173,
+  "tamilQuotedSegments": 278,
+  "englishQuotedSegments": 333,
+  "translatorNotes": 0,
+  "pageTransitionsAudited": 0,
+  "relationUnknown": 0,
+  "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+ },
+ "notes": [
+  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+ ]
+}

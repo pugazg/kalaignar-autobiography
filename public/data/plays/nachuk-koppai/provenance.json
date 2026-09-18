@@ -1,0 +1,93 @@
+{
+ "sourceRepo": "pugazg/kalaignar-stage-plays",
+ "sourcePath": "works/nachuk-koppai",
+ "sourceCommit": "e3b2ea8879964ab8f5b6cfffad79aeab9a7ca26b",
+ "wave": 7,
+ "batch": 2,
+ "shelf": "drama",
+ "readiness": "ready-with-qualification",
+ "hidden": {
+  "discoverable": false,
+  "sitemapExposed": false,
+  "publicRoute": false,
+  "note": "Wave 7 Batch 2 P1 hidden foundation."
+ },
+ "source": {
+  "scanFilename": "ACL-TDD_00314_நச்சுக்_கோப்பை.pdf",
+  "scanSha256": "a2794d34304feff5618e6ac91eaa93149340f40820b334b713de588295b04bc4",
+  "scanFileSizeBytes": 18459068,
+  "scanTotalPages": 63,
+  "sourcePdfCommitted": false,
+  "scanIdentityBasis": "Scan identity (filename, SHA-256, byte size, page count) is carried AS RECORDED BY THE SOURCE ARCHIVE metadata. The controlling PDF is held outside the repositories and was not supplied to this integration, so the checksum was NOT independently recomputed here.",
+  "pageRecordsVerified": "page records for dramatic body scans 5–63 (front matter 1–4) governed by the work's page-layer audit",
+  "sourceAudit": "Tamil transcription / assembly review: PASSED (per-work assembly-reviewed layer).",
+  "assembledLayer": "18 reading unit(s) assembly-reviewed; English translation-reviewed / PASS",
+  "bodyScans": "5–63",
+  "publicationYearNote": "No numeric publication year is promoted to the catalogue. Any printed edition statement is carried verbatim in `edition.editionStatementTa` as a source witness only.",
+  "printedClosureNote": "The dramatic body's scenes run 1–18 across scans 5–63; carried as printed.",
+  "sourceConditionNote": "This work is accepted READY WITH QUALIFICATION. The documented terminal source-condition hold(s) are preserved transparently: at an unreadable locus, the source characters are NOT invented and no Unicode is supplied; the scene is otherwise complete and source-faithful. Nothing is reconstructed, inferred, modernized or silently repaired."
+ },
+ "english": {
+  "kind": "project-created",
+  "status": "18/18 reading units translation-reviewed / PASS",
+  "independence": "The reader's English is the project-created independent translation, drafted and reviewed WITHOUT any published English edition.",
+  "secondaryWitnessNote": "No secondary/published English witness was used to draft or review this translation; each source layer declares `secondary_english_witness_used: false`.",
+  "notesSeparated": "The English layer's translation notes are carried OUTSIDE the reading body in a separately labelled area."
+ },
+ "archiveDerived": {
+  "scenes": 18,
+  "closingTableau": 0,
+  "tamilUnits": 672,
+  "englishUnits": 675,
+  "tamilDialogue": 600,
+  "tamilStageDirections": 71,
+  "tamilVerse": 1,
+  "ornaments": 0,
+  "inBodyHeadings": 0,
+  "distinctSpeakerLabels": 41,
+  "unlabelledDialogueUnits": 34,
+  "scenesWithoutPrintedSetting": 18,
+  "multiScanScenes": 17,
+  "translationNotes": 18,
+  "interpretiveNotes": 0,
+  "note": "Derived structure only. The verified page records remain the controlling archival text; this integration reads the archive's own assembled scene layer built from those records. Dialogue, stage directions, speaker labels, settings and intertitles are carried verbatim — never re-split, merged, expanded or normalised.",
+  "speakerNote": "Speaker labels are rendered EXACTLY as printed, including inconsistent abbreviations. They are source data and are never expanded or unified.",
+  "unlabelledNote": "Dialogue units with `speakerAsPrinted: null` are places where the edition prints no label. Absence of a label is recorded as absence, never resolved into an attribution.",
+  "bodySourceConditionHolds": 1
+ },
+ "sourceConditionHolds": [
+  {
+   "scan": 22,
+   "unit": "05",
+   "scene": 5,
+   "markerKind": "unreadable-adjacent-clusters",
+   "locus": "two adjacent source clusters immediately after சாந்தா in the `ஏகா — பாட்டு.` line",
+   "policy": "The two adjacent clusters on scan 22 are unreadable; their character identity is NOT invented and no Unicode is supplied. Scene 5 is otherwise complete and source-faithful. This is the single terminal textual source-condition hold, carried transparently in both layers and never reconstructed, inferred, modernized or silently repaired."
+  }
+ ],
+ "lockedExclusions": [
+  "the assembled layer's archival apparatus — assembly notes/provenance and per-scene review files",
+  "the English layer's translation notes, held outside the reading body",
+  "later library/accession stamps, handwritten marks, damage and bleed-through, never merged into the literary text",
+  "decorative heading artwork, illustrations and photographs, described in page records rather than converted into dramatic text"
+ ],
+ "projectRights": {
+  "appliesTo": "underlying-work-authored-by-kalaignar",
+  "rightsStatus": "nationalised-by-tamil-nadu-government",
+  "rightsAuthority": "Government of Tamil Nadu",
+  "rightsAction": "nationalisation",
+  "rightsAnnouncementDate": "2024-08-22",
+  "governmentOrderNumber": null,
+  "governmentOrderDate": null,
+  "governmentOrderHandoverDate": "2024-12-22",
+  "distinctionNote": "This is the PRESENT project-level rights status of Kalaignar's underlying stage play. The edition's own publisher, place, price and copyright lines are edition facts, not statements about those rights.",
+  "thirdPartyNote": "Nationalisation applies to Kalaignar's underlying authored play. It does NOT extend to the edition's publisher/imprint matter, printed price, decorative artwork, illustrations and photographs, or the library's stamps and accession marks.",
+  "projectTranslationNote": "The English reading layer is a project-created, source-linked independent translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
+  "archivalStatusNote": "The source repository's completion/release status is an editorial and archival judgement about transcription and translation completeness. It is NOT, by itself, a copyright, public-domain or republication-rights determination.",
+  "evidencePending": "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here."
+ },
+ "notes": [
+  "The controlling source is the supplied scanned PDF; it is NOT committed to the source repository and is NOT vendored here. Its identity travels as filename + SHA-256 + byte size + scan count.",
+  "Speaker labels, stage-direction delimiters, settings, intertitles, repetitions, ellipsis counts, punctuation and historical spelling are carried exactly as printed. Nothing is modernised, expanded or normalised."
+ ]
+}

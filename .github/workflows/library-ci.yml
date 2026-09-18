@@ -198,6 +198,12 @@ jobs:
       # authorship, duplicate identity, omitted/invalid route).
       - name: Wave 7 Batch 1 P4 publication integration
         run: npm run test:wave7-b1-p4-integration
+      # Wave 7 combined Batches 2-4 P1 — hidden-boundary. Runs after Build so its zero-new-routes gate
+      # reads the real .next: the 13 onboarded works (2 Drama + 5 Novels + 6 Essays) change NO public
+      # surface — catalogue 219, Drama 8, Fiction 157, Essays 9, Cinema 10, /read 80/40, sitemap 4042/0,
+      # build 4051/4046 unchanged, 0 new B2-B4 routes; none of the 13 slugs is a LibraryWork or public URL.
+      - name: Wave 7 Batches 2-4 P1 hidden-boundary
+        run: npm run test:wave7-b2-b4-p1-hidden
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -438,6 +444,22 @@ jobs:
                   { repo: "kalaignar-short-stories", dir: "kalaignar-short-stories-wave6-b7" },
                 ]),
               ),
+              // ── WAVE 7 BATCHES 2-4 — Drama / Novels / Essays (hidden P1). Each shelf's works pin their
+              // source repo at the Wave-7 P0 commit, which differs from the Wave-6 pins, so each gets its
+              // OWN checkout dir (keeping the same-directory/same-pin guard meaningful).
+              "plays/iratha-kanneer": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave7" },
+              "plays/nachuk-koppai": { repo: "kalaignar-stage-plays", dir: "kalaignar-stage-plays-wave7" },
+              "novels/arumbu": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave7" },
+              "novels/nadutheru-narayani": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave7" },
+              "novels/sarapallam-samundi": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave7" },
+              "novels/surulimalai": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave7" },
+              "novels/vellikkizhamai": { repo: "kalaignar-novels", dir: "kalaignar-novels-wave7" },
+              "essays/aaru-maatha-kadungkaaval": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
+              "essays/thudikkum-ilamai": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
+              "essays/perumoochu": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
+              "essays/viduthalai-kilarcci": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
+              "essays/meesai-mulaiththa-vayathil": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
+              "essays/pesum-kalai-valarppom": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
             };
             const seen = new Map();
             for (const [p, spec] of Object.entries(works)) {
@@ -587,6 +609,14 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-drama-wave6.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave6"
+      # Wave 7 combined Batches 2-4 P1 — INDEPENDENT source/import validator over the pinned stage-plays,
+      # novels and essays checkouts: cohort 13 (2+5+6), subtree pins, scan SHAs, independent structural
+      # counts == manifest == vendored payloads, nachuk-koppai qualification retained, arumbu/nadutheru/
+      # sarapallam kept separate, no forbidden work leaked.
+      - name: Wave 7 Batches 2-4 P1 — combined source/import fidelity (13 works)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave7-b2-b4-p1.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave7" "$KDL_SOURCES_DIR/kalaignar-novels-wave7" "$KDL_SOURCES_DIR/kalaignar-essays-wave7"
       - name: Speeches batch (Wave 6 B3)
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
