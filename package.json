@@ -44,7 +44,9 @@
     "build:app-data": "npm run build:features && python3 pipeline/builders/build_app_manifest.py",
     "import:wave7-b1-cinema": "node scripts/import-wave7-b1-cinema.mjs",
     "test:wave7-b1-cinema": "node scripts/validate-wave7-b1-cinema.mjs",
-    "test:wave7-b1-p1": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b1-p1.ts"
+    "test:wave7-b1-p1": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b1-p1.ts",
+    "test:wave7-b1-p2-fidelity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b1-p2-fidelity.ts",
+    "test:wave7-b1-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b1-p2-render.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
