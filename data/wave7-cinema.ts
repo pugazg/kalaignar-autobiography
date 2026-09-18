@@ -38,6 +38,10 @@ export type Wave7CinemaUnit = {
   sourceDelimiter: string | null;
 };
 
+// The source-faithful English-text rule lives in a client-safe module (no node:fs), re-exported here so
+// server importers can keep importing it from this module. See data/wave7-cinema-text.ts.
+export { unitEnglishText } from "./wave7-cinema-text";
+
 export type Wave7CinemaScene = {
   sceneId: string;
   /** Navigation ordinal used for the section slug + display order (1-based, contiguous). */

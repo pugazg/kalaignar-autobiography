@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import type { Wave7CinemaWork, Wave7CinemaUnit } from "@/data/wave7-cinema";
+import { unitEnglishText } from "@/data/wave7-cinema-text";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -54,7 +55,7 @@ export default function Wave7CinemaScene({ work, slug }: { work: Wave7CinemaWork
         </div>
 
         <div className={cn("mt-8 break-words", showEn ? "font-body text-base" : "font-tamil text-lg")} lang={showEn ? "en" : "ta"}>
-          {showEn ? renderEnglish(scene.units) : <p className="whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90">{scene.tamilText}</p>}
+          {showEn ? renderEnglishUnits(scene.units) : <p className="whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90">{scene.tamilText}</p>}
         </div>
 
         <nav aria-label={ta ? "பகுதி வழிசெலுத்தல்" : "Section navigation"} className="mt-12 flex items-center justify-between gap-4 border-t border-ink/10 pt-6 text-sm dark:border-white/10" data-print="hide">
@@ -71,20 +72,28 @@ export default function Wave7CinemaScene({ work, slug }: { work: Wave7CinemaWork
   );
 }
 
-/** English units in source order, styled by kind. Speaker label is the exact printed Tamil, never expanded. */
-function renderEnglish(units: Wave7CinemaUnit[]): ReactNode[] {
+/**
+ * English units in source order, styled by kind — the exact code path the public English view uses (also
+ * imported by the P2 render regression, never re-implemented there). The unit's reading text is the
+ * source-faithful effective text (unitEnglishText): the non-empty `english_lines` joined with newlines
+ * when present, else `english_text`, never both. Every kind renders that text under `whitespace-pre-line`,
+ * so a lyric/chant/dialogue unit carried as a line array keeps its source lineation. Speaker labels are the
+ * exact printed Tamil, never expanded; nothing (speaker, lyric author, missing line, role) is inferred.
+ */
+export function renderEnglishUnits(units: Wave7CinemaUnit[]): ReactNode[] {
   return units.map((u) => {
+    const text = unitEnglishText(u);
     if (u.kind === "stage-direction" || u.kind === "narrative") {
-      return <p key={u.id} className="mb-5 whitespace-pre-line italic leading-loose text-ink/60 dark:text-night-text/60">{u.englishText}</p>;
+      return <p key={u.id} className="mb-5 whitespace-pre-line italic leading-loose text-ink/60 dark:text-night-text/60">{text}</p>;
     }
     if (u.kind === "structural-separator") {
-      return <p key={u.id} className="mb-5 text-center text-ink/40 dark:text-night-text/40">{u.englishText || "* * *"}</p>;
+      return <p key={u.id} className="mb-5 whitespace-pre-line text-center text-ink/40 dark:text-night-text/40">{text || "* * *"}</p>;
     }
     if (u.kind === "song" || u.kind === "performance-cue" || u.kind === "chant") {
       return (
         <p key={u.id} className="mb-5 whitespace-pre-line rounded-md border-l-2 border-marina/30 pl-3 leading-loose text-ink/70 dark:text-night-text/70">
           {u.speakerLabelTa && <span className="mr-2 font-tamil text-sm text-ink/55 dark:text-night-text/55" lang="ta">{u.speakerLabelTa}</span>}
-          {u.englishText}
+          {text}
         </p>
       );
     }
@@ -92,7 +101,7 @@ function renderEnglish(units: Wave7CinemaUnit[]): ReactNode[] {
     return (
       <p key={u.id} className="mb-5 whitespace-pre-line leading-loose text-ink/90 dark:text-night-text/90">
         {u.speakerLabelTa && <span className="mr-2 font-tamil font-medium text-marina dark:text-marina-light" lang="ta">{u.speakerLabelTa}:</span>}
-        {u.englishText}
+        {text}
       </p>
     );
   });
