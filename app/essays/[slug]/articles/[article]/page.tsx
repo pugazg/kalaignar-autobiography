@@ -6,7 +6,8 @@ import ArticleReader from "@/components/ArticleReader";
 import { ESSAY_SLUGS } from "@/data/essays";
 import type { EssayPublication } from "@/data/essays";
 import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
-const ALL_ESSAY_SLUGS: readonly string[] = Array.from(new Set<string>([...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS]));
+import { WAVE7_ESSAY_SLUGS } from "@/lib/essays-wave7-routes";
+const ALL_ESSAY_SLUGS: readonly string[] = Array.from(new Set<string>([...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS, ...WAVE7_ESSAY_SLUGS]));
 import { printedPagesLabel, publicationMetaSentence, scanRunsLabel } from "@/lib/essay-source-facts";
 
 function loadPublication(slug: string): EssayPublication | null {

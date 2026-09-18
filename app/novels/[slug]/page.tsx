@@ -6,16 +6,20 @@ import NovelLanding from "@/components/NovelLanding";
 import { NOVEL_SLUGS } from "@/data/novels";
 import type { Novel } from "@/data/novels";
 import { WAVE6_NOVEL_SLUGS } from "@/lib/novels-wave6-routes";
+import { WAVE7_NOVEL_SLUGS, isWave7Novel } from "@/lib/novels-wave7-routes";
+import { wave7NovelToNovel } from "@/lib/wave7-novels-adapter";
 
 // Wave 6 P4: NOVEL_SLUGS now includes the Wave-6 Batch-5 novels, so this union is deduplicated (a
 // `Set`) to prerender each landing page once. WAVE6_NOVEL_SLUGS is retained as a helper registry.
 // Any slug outside this union fails closed with notFound().
-const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS]));
+const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS, ...WAVE7_NOVEL_SLUGS]));
 
 // Not exported: a Next.js page module may only export the framework's own reserved names.
 function loadNovel(slug: string): Novel | null {
   try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "novel.json"), "utf-8"));
+    const raw = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "novel.json"), "utf-8"));
+    // Wave-7 B3 novels vendor a prose reading layer; adapt them into the Fiction `Novel` block model.
+    return isWave7Novel(slug) ? wave7NovelToNovel(raw) : raw;
   } catch {
     return null;
   }

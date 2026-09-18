@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import PlayReader from "@/components/PlayReader";
 import { PLAY_SLUGS, type Play } from "@/data/plays";
 import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
+import { WAVE7_DRAMA_SLUGS } from "@/lib/drama-wave7-routes";
 import { playSceneDescription } from "@/lib/play-metadata";
 
 function loadPlay(slug: string): Play | null {
@@ -17,7 +18,7 @@ function loadPlay(slug: string): Play | null {
 // each `[scene]` param prerenders once. Each `[scene]` set is derived from the work's own released
 // registry (play.json.readingUnits). WAVE6_DRAMA_SLUGS is retained as a helper registry.
 export function generateStaticParams() {
-  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).flatMap((slug) => {
+  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS, ...WAVE7_DRAMA_SLUGS])).flatMap((slug) => {
     const play = loadPlay(slug);
     return play ? play.readingUnits.map((s) => ({ slug, scene: s.slug })) : [];
   });

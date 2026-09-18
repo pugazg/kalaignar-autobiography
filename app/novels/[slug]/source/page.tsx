@@ -6,12 +6,18 @@ import NovelSource from "@/components/NovelSource";
 import { NOVEL_SLUGS } from "@/data/novels";
 import type { NovelProvenance } from "@/data/novels";
 import { WAVE6_NOVEL_SLUGS } from "@/lib/novels-wave6-routes";
+import { WAVE7_NOVEL_SLUGS, isWave7Novel } from "@/lib/novels-wave7-routes";
+import { wave7NovelToNovel, wave7NovelProvenance } from "@/lib/wave7-novels-adapter";
 
-const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS]));
+const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS, ...WAVE7_NOVEL_SLUGS]));
 
 function loadProvenance(slug: string): NovelProvenance | null {
   try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "provenance.json"), "utf-8"));
+    const raw = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "provenance.json"), "utf-8"));
+    if (!isWave7Novel(slug)) return raw;
+    // Wave-7 B3: adapt the P1 provenance into NovelProvenance, computing block counts from the adapted novel.
+    const novel = wave7NovelToNovel(JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "novel.json"), "utf-8")));
+    return wave7NovelProvenance(raw, novel);
   } catch {
     return null;
   }

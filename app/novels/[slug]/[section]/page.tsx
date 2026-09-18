@@ -6,12 +6,16 @@ import NovelReader from "@/components/NovelReader";
 import { NOVEL_SLUGS } from "@/data/novels";
 import type { Novel } from "@/data/novels";
 import { WAVE6_NOVEL_SLUGS } from "@/lib/novels-wave6-routes";
+import { WAVE7_NOVEL_SLUGS, isWave7Novel } from "@/lib/novels-wave7-routes";
+import { wave7NovelToNovel } from "@/lib/wave7-novels-adapter";
 
-const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS]));
+const ALL_NOVEL_SLUGS: readonly string[] = Array.from(new Set<string>([...NOVEL_SLUGS, ...WAVE6_NOVEL_SLUGS, ...WAVE7_NOVEL_SLUGS]));
 
 function loadNovel(slug: string): Novel | null {
   try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "novel.json"), "utf-8"));
+    const raw = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/novels", slug, "novel.json"), "utf-8"));
+    // Wave-7 B3 novels vendor a prose reading layer; adapt them into the Fiction `Novel` block model.
+    return isWave7Novel(slug) ? wave7NovelToNovel(raw) : raw;
   } catch {
     return null;
   }
