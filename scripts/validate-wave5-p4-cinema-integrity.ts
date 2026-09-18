@@ -57,17 +57,18 @@ const CINEMA_ORDER = [
   "manohara", "parasakthi", "tirumbippaar", "kalaignar-thirai-isai-paadalgal", "manthiri-kumari", "raja-rani",
 ];
 const cinema = publishedWorks().filter((w) => w.shelf === "cinema-writing");
-// Wave 6 P4 published ammaiyappan (Wave-6 Batch 1) to the cinema-writing shelf, so the shelf now holds
-// 7 works. This validator proves the SIX frozen Wave-5 works remain present and identity-clean, in
-// onboarding order among themselves, and that the sole non-Wave-5 addition is ammaiyappan. Ammaiyappan's
-// own catalogue semantics are proven by validate-wave6-p4-integration.ts and the Batch-1 test.
+// Wave 6 P4 added ammaiyappan and Wave 7 B1 added maruthanattu-ilavarasi, vandikkaran-magan, naam, so the
+// shelf now holds 10 works. This validator proves the SIX frozen Wave-5 works remain present and
+// identity-clean, in onboarding order among themselves, and that the only non-Wave-5 additions are the
+// Wave-6/Wave-7 cinema works. Those additions' own catalogue semantics are proven by their batch
+// validators (validate-wave6-p4-integration.ts, validate-wave7-b1-p4-integration.ts).
 const wave5Cinema = cinema.filter((w) => CINEMA_ORDER.includes(w.id));
-eq(cinema.length, 7, "A2 Cinema Writing holds 7 published works (6 Wave-5 + ammaiyappan via Wave-6 P4)");
+eq(cinema.length, 10, "A2 Cinema Writing holds 10 published works (6 Wave-5 + ammaiyappan + 3 Wave-7 B1)");
 eq(wave5Cinema.map((w) => w.id), CINEMA_ORDER, "A2 the six Wave-5 Cinema ids are present, in onboarding order");
 eq(new Set(cinema.map((w) => w.id)).size, cinema.length, "A2 Cinema ids are unique");
 eq(new Set(cinema.map((w) => w.slug)).size, cinema.length, "A2 Cinema slugs are unique");
 eq(new Set(cinema.map((w) => w.href)).size, cinema.length, "A2 Cinema hrefs are unique");
-eq(cinema.filter((w) => !CINEMA_ORDER.includes(w.id)).map((w) => w.id), ["ammaiyappan"], "A2 the sole non-Wave-5 Cinema work is ammaiyappan (Wave-6 P4)");
+eq(cinema.filter((w) => !CINEMA_ORDER.includes(w.id)).map((w) => w.id), ["ammaiyappan", "maruthanattu-ilavarasi", "vandikkaran-magan", "naam"], "A2 the non-Wave-5 Cinema works are ammaiyappan (Wave-6) + the 3 Wave-7 B1 works");
 const byId = (id: string): LibraryWork => cinema.find((w) => w.id === id)!;
 
 // ── A3. Preserve cross-work structural distinctions (POSITIVE assertions) ─────────────────────────
@@ -241,10 +242,12 @@ for (const u of cinemaUrls) {
 const allExpectedCinema = uniqSorted(EXPECT_FAMILY.flatMap((f) => f.expected));
 eq(uniqSorted(cinemaUrls), allExpectedCinema, "A4 the six families exactly partition the Wave-5 Cinema route set");
 eq(fam("manthiri-kumari").length + fam("raja-rani").length, 89, "A4 Wave-5 subset is exactly 18 + 71 = 89");
-// The only /cinema/ URLs outside the six Wave-5 families are ammaiyappan's (Wave-6 P4 authorized).
+// The /cinema/ URLs outside the six Wave-5 families are ammaiyappan's (Wave-6 P4) and the three Wave-7 B1
+// works' (maruthanattu-ilavarasi, vandikkaran-magan, naam), each authorized by its own batch validator.
+const NON_WAVE5_CINEMA = ["ammaiyappan", "maruthanattu-ilavarasi", "vandikkaran-magan", "naam"];
 const nonWave5Cinema = uniqSorted(allCinemaUrls.filter((u) => !ownedByWave5(u)).map((u) => u.replace(BASE, "")));
-ok(nonWave5Cinema.every((p) => p === "/cinema/ammaiyappan" || p.startsWith("/cinema/ammaiyappan/")), "A4 the only non-Wave-5 /cinema/ URLs are ammaiyappan (Wave-6 P4)");
-eq(nonWave5Cinema.length, 65, "A4 ammaiyappan contributes exactly 65 /cinema/ URLs (Wave-6 P4)");
+ok(nonWave5Cinema.every((p) => NON_WAVE5_CINEMA.some((s) => p === `/cinema/${s}` || p.startsWith(`/cinema/${s}/`))), "A4 the non-Wave-5 /cinema/ URLs are ammaiyappan (Wave-6) + the 3 Wave-7 B1 works");
+eq(nonWave5Cinema.length, 65 + 133, "A4 non-Wave-5 cinema URLs = 65 ammaiyappan + 133 Wave-7 B1 = 198");
 
 // ── A5. Global Reading Room invariants ────────────────────────────────────────────────────────────
 // UPDATED for Wave 6 P4 (the same responsibility-transfer spirit as A7 below). Wave 6 P4 published the
@@ -254,7 +257,7 @@ eq(nonWave5Cinema.length, 65, "A4 ammaiyappan contributes exactly 65 /cinema/ UR
 // now lives in scripts/validate-wave6-p4-integration.ts; A5/A6 keep these as a coherence cross-check
 // confirming the six frozen Wave-5 Cinema families still sit correctly within the larger Reading Room.
 const works = publishedWorks();
-eq(works.length, 216, "A5 published works = 216 (post Wave-6 P4 + Batch-7)");
+eq(works.length, 219, "A5 published works = 219 (post Wave-7 B1: +3 cinema)");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 // Compare as sorted [shelf, count] pairs so a change in LIBRARY_WORKS declaration order (which sets
@@ -262,22 +265,22 @@ for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 const sortedCensus = (o: Record<string, number>) => Object.entries(o).sort((a, b) => a[0].localeCompare(b[0]));
 eq(sortedCensus(byShelf), sortedCensus({
   "life-writing": 1, letters: 1, fiction: 157, poetry: 14, drama: 8,
-  "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2,
-}), "A5 shelf census (post Wave-6 P4 + Batch-7: Fiction 41→157)");
+  "cinema-writing": 10, speeches: 17, "essays-articles": 9, "literary-commentary": 2,
+}), "A5 shelf census (post Wave-7 B1: Cinema Writing 7→10)");
 eq(Object.keys(byShelf).length, 9, "A5 exactly 9 non-empty shelves");
 eq(LIBRARY_COLLECTIONS.length, 6, "A5 collections = 6 (1977 + 5 Batch-7)");
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 77, "A5 discovery entries = 77 (post Wave-6 P4 + Batch-7)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "A5 initially visible discovery entries = 40 (post Batch-7: Fiction over-cap)");
+eq(entries.length, 80, "A5 discovery entries = 80 (post Wave-7 B1: +3 cinema)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "A5 initially visible discovery entries = 40 (cinema already over-cap)");
 const cin = shelves.find((s) => s.shelf.id === "cinema-writing")!;
-eq(cin.entries.length, 7, "A5 Cinema renders 7 discovery entries (ammaiyappan added by Wave-6 P4)");
-ok(cin.entries.length > CAP, "A5 Cinema is now over the cap — disclosure control active (7 > 6)");
+eq(cin.entries.length, 10, "A5 Cinema renders 10 discovery entries (post Wave-7 B1: +3)");
+ok(cin.entries.length > CAP, "A5 Cinema is over the cap — disclosure control active (10 > 6)");
 eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "poetry", "speeches"], "A5 the six over-cap shelves (post Batch-7: Fiction joined)");
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 18, "A5 Fiction has 18 discovery entries despite 157 works (post Batch-7)");
 
 // ── A6. Sitemap boundary ────────────────────────────────────────────────────────────────────────
-eq(urls.length, 3909, "A6 sitemap holds 3909 URLs (post Wave-6 P4 + Batch-7)");
+eq(urls.length, 4042, "A6 sitemap holds 4042 URLs (post Wave-7 B1: +133 cinema)");
 eq(new Set(urls).size, urls.length, "A6 sitemap has 0 duplicate URLs");
 
 // ── A7. Build-output boundary — SCOPED TO THE SIX FROZEN WAVE-5 CINEMA FAMILIES ────────────────────
@@ -324,5 +327,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`\nwave5-p4-cinema-integrity — ${checks} checks, 0 failed`);
-  console.log("  6 frozen Wave-5 Cinema works · 4 payloads byte-pinned · route families 59/48/95/55/18/71 = 346 · Wave-5 89 = 18+71 · post Wave-6 P4 + Batch-7: 216 works · sitemap 3909/0 · +ammaiyappan (7th cinema)");
+  console.log("  6 frozen Wave-5 Cinema works · 4 payloads byte-pinned · route families 59/48/95/55/18/71 = 346 · Wave-5 89 = 18+71 · post Wave-7 B1: 219 works · Cinema 10 · sitemap 4042/0");
 }

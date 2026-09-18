@@ -172,11 +172,32 @@ jobs:
       # source-order RE-DERIVATION of every collection runs in the source-integrity job below (needs the pin).
       - name: Wave 6 Batch 7 P4 publication integration (catalogue/collections/discovery/sitemap)
         run: npm run test:wave6-b7-p4-integration
-      # Wave 7 Batch 1 P1 — the 3 cinema works are vendored (hidden) but change NO public surface. Runs
-      # after Build so its build-boundary check reads the real .next: catalogue 216, Cinema Writing 7,
-      # /read 77/40, sitemap 3909/0, build 3918/3913 unchanged, 0 new /cinema routes; payloads load hidden.
-      - name: Wave 7 Batch 1 P1 hidden cinema foundation
+      # Wave 7 Batch 1 P1 — hidden-boundary validator, RECONCILED at P4 and PHASE-AWARE. Runs after Build
+      # so its build-boundary check reads the real .next. It preserves the frozen P1 boundary (216/7/77-40/
+      # 3909/3918-3913, 0 new routes) verbatim and proves the live surface == that boundary + this batch's
+      # recorded contribution (+3 works, +133 routes) → 219/10/80-40/4042/4051-4046, and nothing else leaked.
+      - name: Wave 7 Batch 1 P1 hidden-boundary (reconciled)
         run: npm run test:wave7-b1-p1
+      # Wave 7 Batch 1 P2 — render layer. INDEPENDENT semantic fidelity (re-derives every count from the raw
+      # vendored payloads, recomputes the Reading-Room SHA, proves the normalizer loses/invents nothing) and
+      # a render regression (3 works' landing/scene/source + an Ammayappan shared-primitive witness). Pure
+      # payload + component render — no source clone, no build artifacts.
+      - name: Wave 7 Batch 1 P2 semantic fidelity
+        run: npm run test:wave7-b1-p2-fidelity
+      - name: Wave 7 Batch 1 P2 render regression
+        run: npm run test:wave7-b1-p2-render
+      # Wave 7 Batch 1 P3 — direct routes. Runs after Build so it reads the real .next: the 133 routes
+      # (landing + per-scene section + source) re-derived independently == the P3 manifest, generateStaticParams
+      # fail-closed (dynamicParams=false), routes prerendered, and the phase-appropriate discovery state.
+      - name: Wave 7 Batch 1 P3 direct routes
+        run: npm run test:wave7-b1-p3-routes
+      # Wave 7 Batch 1 P4 — the authoritative published-surface gate. Runs after Build so it reads the real
+      # .next: catalogue 216→219, Cinema 7→10, discovery 77→80/40, sitemap 3909→4042/0, build 3918→4051 /
+      # 3913→4046, plus ~10 adversarial mutation checks (workTree swap, Naam reader_json_sha256 substitution,
+      # fabricated year, collapsed unnumbered opening, removed/reordered performance identity, resolved
+      # authorship, duplicate identity, omitted/invalid route).
+      - name: Wave 7 Batch 1 P4 publication integration
+        run: npm run test:wave7-b1-p4-integration
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.

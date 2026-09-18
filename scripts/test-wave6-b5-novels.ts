@@ -110,7 +110,7 @@ ok(/நூல் அமைப்பு/.test(periyaSource), "periya source: show
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 216, "catalogue is 216 works (Wave-6 P4 + Batch-7 published)");
+eq(works.length, 219, "catalogue is 219 works (post Wave-7 B1: +3 cinema)");
 eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
 const fiction = discoveryShelves().find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "fiction discovery shelf present");

@@ -111,17 +111,22 @@ if (fs.existsSync(manifestPath)) {
   const b7p3 = readJSON<{ routes: string[] }>("data/internal/wave6/b7-p3-routes.json");
   const b7rec = readJSON<{ collections: { id: string }[] }>("data/internal/wave6/b7-p4-integration.json");
   const b7Routes = [...b7p3.routes, ...b7rec.collections.map((c) => `/collections/${c.id}`)];
-  const wave6AndB7 = new Set<string>([...manifest.cumulativeRoutes, ...b7Routes]);
-  // Exact whole-build totals, DERIVED (baseline + Wave-6 cumulative + Batch-7), never a magic constant.
-  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + b7Routes.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length}`);
-  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + b7Routes.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length}`);
+  // Wave 7 Batch 1 (3 cinema works) published its own 133 direct routes AFTER this Wave-6 manifest was
+  // frozen; recorded in wave7/b1-p3-routes.json and validated there. Carry them here too so the whole-build
+  // totals and the baseline-hash remainder stay exact.
+  const w7p3 = readJSON<{ works: { routes: string[] }[] }>("data/internal/wave7/b1-p3-routes.json");
+  const w7Routes = w7p3.works.flatMap((w) => w.routes);
+  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...b7Routes, ...w7Routes]);
+  // Exact whole-build totals, DERIVED (baseline + Wave-6 cumulative + Batch-7 + Wave-7 B1), never a constant.
+  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 ${w7Routes.length}`);
+  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 ${w7Routes.length}`);
   // Every Wave-6 route present; representative invalid routes absent.
   for (const r of manifest.cumulativeRoutes) ok(routeKeys.includes(r), `build prerenders Wave-6 route ${r}`);
   for (const bad of ["/cinema/ammaiyappan/scene-000", "/cinema/ammaiyappan/scene-064", "/cinema/ammaiyappan/scene-999", "/cinema/ammaiyappan/foo"]) {
     ok(!routeKeys.includes(bad), `build does NOT prerender invalid ${bad}`);
   }
-  // Remove the Wave-6 cumulative AND the Batch-7 routes; the remainder must be the pre-Wave-6 baseline.
-  const remainder = routeKeys.filter((k) => !wave6AndB7.has(k)).sort();
+  // Remove the Wave-6 cumulative, Batch-7 AND Wave-7 B1 routes; the remainder must be the pre-Wave-6 baseline.
+  const remainder = routeKeys.filter((k) => !laterRoutes.has(k)).sort();
   eq(remainder.length, baseline.prerenderManifestRouteCount, "pre-Wave-6 build remainder count == frozen baseline (3360)");
   // BASELINE-HASH PROOF: the remainder is byte-identical to the independently captured clean base build.
   // Catches any unauthorized/substituted baseline route without committing 3360 route strings.

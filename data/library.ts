@@ -3036,6 +3036,80 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     unitCount: { value: 1, labelTa: "செய்தி", labelEn: "message" },
     provenanceHref: "/essays/vedhanai-ch-siraiyinindrum-viduthalai-pera/source",
   },
+  // ── WAVE 7 Batch 1 P4 — 3 cinema works published (Cinema Writing 7→10, catalogue 216→219) ──────────
+  // Onboarded through Wave-7 B1 P1–P3 as vendored payloads + direct-but-hidden /cinema routes; P4 exposes
+  // those already-existing routes through the catalogue, /read discovery and the sitemap (0 new routes).
+  // Every field is derived from each work's frozen P1 provenance. rights stays null — the provenance
+  // establishes none, and (following existing cinema-catalogue policy) no publication year/edition/rights
+  // is promoted to the card; Vandikkaran's printed 1978 stays a source witness on /source only.
+  {
+    id: "maruthanattu-ilavarasi",
+    slug: "maruthanattu-ilavarasi",
+    titleTa: "மருதநாட்டு இளவரசி",
+    titleEn: "Maruthanattu Ilavarasi",
+    shelf: "cinema-writing",
+    subtype: "film-screenplay",
+    readerStructure: "scene",
+    href: "/cinema/maruthanattu-ilavarasi",
+    state: "published",
+    descTa: "திரைக்கதை: 10 காட்சிப் பகுதிகள் (9 மூல எண்ணிடப்பட்ட காட்சிகள், 1 எண்ணிடப்படாத தொடக்கம்)",
+    descEn: "Screenplay: 10 scene segments (9 source-numbered scenes and 1 unnumbered opening)",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/maruthanattu-ilavarasi",
+    sourceCommit: "8c1fc37a089cb23173e6b8725f7d31200ea83d7b",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    unitCount: { value: 10, labelTa: "காட்சிப் பகுதிகள்", labelEn: "scene segments" },
+    // `rights` is deliberately unset: the frozen P1 provenance establishes none, and (following existing
+    // cinema-catalogue policy) rights are recorded only where a work's own provenance establishes them.
+    provenanceHref: "/cinema/maruthanattu-ilavarasi/source",
+  },
+  {
+    id: "vandikkaran-magan",
+    slug: "vandikkaran-magan",
+    titleTa: "வண்டிக்காரன் மகன்",
+    titleEn: "Vandikkaran Magan",
+    shelf: "cinema-writing",
+    subtype: "film-screenplay-dialogue-booklet",
+    readerStructure: "scene",
+    href: "/cinema/vandikkaran-magan",
+    state: "published",
+    descTa: "திரைக்கதை / வசன நூல்: 72 மூல எண்ணிடப்பட்ட திரைக்காட்சிகள்",
+    descEn: "Screenplay-dialogue booklet: 72 source-numbered screenplay scenes",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/vandikkaran-magan",
+    sourceCommit: "8c1fc37a089cb23173e6b8725f7d31200ea83d7b",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    unitCount: { value: 72, labelTa: "திரைக்காட்சிகள்", labelEn: "screenplay scenes" },
+    // `rights` unset — see the note on maruthanattu-ilavarasi above. The printed 1978 stays a source
+    // witness on /cinema/vandikkaran-magan/source and is never promoted to the card.
+    provenanceHref: "/cinema/vandikkaran-magan/source",
+  },
+  {
+    id: "naam",
+    slug: "naam",
+    titleTa: "நாம்",
+    titleEn: "Naam",
+    shelf: "cinema-writing",
+    subtype: "film-screenplay-dialogue-booklet",
+    readerStructure: "scene",
+    href: "/cinema/naam",
+    state: "published",
+    descTa: "திரைக்கதை / வசன நூல்: 45 மூல எண்ணிடப்பட்ட திரைக்காட்சிகள்",
+    descEn: "Screenplay-dialogue booklet: 45 source-numbered screenplay scenes",
+    sourceRepo: "pugazg/kalaignar-cinema-works",
+    sourcePath: "works/naam",
+    sourceCommit: "8c1fc37a089cb23173e6b8725f7d31200ea83d7b",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    unitCount: { value: 45, labelTa: "திரைக்காட்சிகள்", labelEn: "screenplay scenes" },
+    // `rights` unset — see the note on maruthanattu-ilavarasi above.
+    provenanceHref: "/cinema/naam/source",
+  },
   // Wave 6 Batch 7 P4 — the 116 canonical short stories, published as independent Fiction works (Fiction
   // 41→157, catalogue 100→216). Generated from the frozen payloads and proved against source; see
   // data/wave6-b7-catalogue.ts and scripts/validate-wave6-b7-p4-integration.ts.
