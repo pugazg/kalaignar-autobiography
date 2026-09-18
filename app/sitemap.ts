@@ -12,6 +12,8 @@ import { PLAY_SLUGS } from "@/data/plays";
 import { STORY_SLUGS } from "@/data/stories";
 import { LIBRARY_COLLECTIONS } from "@/data/collections";
 import { manthiriItemSlugs, rajaSectionSlugs } from "@/lib/cinema-wave5-routes";
+import { wave7CinemaSectionSlugs } from "@/lib/cinema-wave7-routes";
+import { WAVE7_CINEMA_SLUGS } from "@/data/wave7-cinema";
 import type { ManthiriReader } from "@/data/manthiri-kumari";
 import type { RajaRaniReader } from "@/data/raja-rani";
 
@@ -326,6 +328,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly" as const,
       priority: 0.5,
     })),
+    // Wave 7 Batch 1 P4 — Cinema: maruthanattu-ilavarasi, vandikkaran-magan, naam (dedicated route
+    // folders). Landing + source + one route per source-derived scene section, from the SAME frozen
+    // payload authority (lib/cinema-wave7-routes) the routes' generateStaticParams use — never a
+    // reconstructed numeric range. 12 + 74 + 47 = 133 URLs, in catalogue onboarding order.
+    ...WAVE7_CINEMA_SLUGS.flatMap((slug) => [
+      { url: `${BASE}/cinema/${slug}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+      { url: `${BASE}/cinema/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+      ...wave7CinemaSectionSlugs(slug).map((s) => ({
+        url: `${BASE}/cinema/${slug}/${s}`,
+        lastModified: now,
+        changeFrequency: "yearly" as const,
+        priority: 0.5,
+      })),
+    ]),
     ...SPEECH_SLUGS.flatMap((slug) => [
       { url: `${BASE}/speeches/${slug}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.6 },
       { url: `${BASE}/speeches/${slug}/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },

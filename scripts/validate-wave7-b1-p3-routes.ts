@@ -109,16 +109,25 @@ for (const slug of WAVE7_CINEMA_SLUGS) {
   ok(!!loadWave7Cinema(slug), `${slug}: payload loads for the route`);
 }
 
-// ── Still hidden — public boundary unchanged at P3 ───────────────────────────────────────────────────
+// ── Discovery/publication surface — PHASE-AWARE ──────────────────────────────────────────────────────
+// The route LAYER above (manifest == derivation, generateStaticParams, fail-closed, prerendered) is
+// phase-invariant. Whether the works appear in LIBRARY_WORKS / discovery / sitemap is NOT: before P4 they
+// are hidden; at/after P4 they are published. This validator stays a live gate in both trees by asserting
+// the phase-appropriate state (CI builds the P4 tip). The authoritative published-surface proof is owned
+// by validate-wave7-b1-p4-integration.ts.
 const libIds = new Set<string>((LIBRARY_WORKS as any[]).flatMap((w) => [w.id, w.slug, w.href].filter(Boolean)));
-for (const slug of WAVE7_CINEMA_SLUGS) {
-  ok(!libIds.has(slug) && !libIds.has(`/cinema/${slug}`), `${slug}: absent from LIBRARY_WORKS`);
-}
+const publishedThisBatch = WAVE7_CINEMA_SLUGS.filter((slug) => libIds.has(slug) || libIds.has(`/cinema/${slug}`));
+const phase = publishedThisBatch.length === 0 ? "pre-P4" : "P4";
+ok(publishedThisBatch.length === 0 || publishedThisBatch.length === 3, "phase is coherent: 0 (hidden) or all 3 (published)");
 const shelfText = JSON.stringify(discoveryShelves());
-for (const slug of WAVE7_CINEMA_SLUGS) ok(!shelfText.includes(`/cinema/${slug}`), `${slug}: absent from /read discovery shelves`);
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
-for (const r of expectedTotal) ok(!sm.some((u) => u.endsWith(r)), `sitemap does NOT expose ${r}`);
-for (const slug of WAVE7_CINEMA_SLUGS) ok(!sm.some((u) => u.includes(`/cinema/${slug}`)), `${slug}: no sitemap URL mentions it`);
+for (const slug of WAVE7_CINEMA_SLUGS) {
+  const inLib = libIds.has(slug) || libIds.has(`/cinema/${slug}`);
+  eq(inLib, phase === "P4", `${slug}: LIBRARY_WORKS membership matches phase (${phase})`);
+  eq(shelfText.includes(`/cinema/${slug}`), phase === "P4", `${slug}: /read discovery presence matches phase (${phase})`);
+  eq(sm.some((u) => u.includes(`/cinema/${slug}`)), phase === "P4", `${slug}: sitemap presence matches phase (${phase})`);
+}
+for (const r of expectedTotal) eq(sm.some((u) => u.endsWith(r)), phase === "P4", `sitemap exposure of ${r} matches phase (${phase})`);
 
 // ── Build boundary — routes prerendered when a build tree is present ─────────────────────────────────
 const pm = path.join(root, ".next/prerender-manifest.json");
@@ -135,5 +144,5 @@ if (fail.length) {
   for (const f of fail.slice(0, 40)) console.error("  ✗ " + f);
   process.exit(1);
 }
-console.log(`\nwave7-b1-p3-routes — ${checks} checks, 0 failed`);
-console.log("  3 cinema works · 133 direct routes (landing + per-scene section + source) re-derived independently == manifest · generateStaticParams fail-closed (dynamicParams=false) · still absent from LIBRARY_WORKS / discovery / sitemap");
+console.log(`\nwave7-b1-p3-routes — ${checks} checks, 0 failed (phase ${phase})`);
+console.log(`  3 cinema works · 133 direct routes (landing + per-scene section + source) re-derived independently == manifest · generateStaticParams fail-closed (dynamicParams=false) · ${phase === "P4" ? "published to LIBRARY_WORKS / discovery / sitemap" : "still absent from LIBRARY_WORKS / discovery / sitemap"}`);

@@ -64,16 +64,18 @@ const cinemaTa = sectionHtml(htmlTa, "cinema-writing");
 ok(cinemaEn.length > 0 && cinemaTa.length > 0, "Cinema Writing section renders in both languages");
 
 // ── 1. Cinema cards in EXACT onboarding order (rendered hrefs) ────────────────────────────────────
-// Wave 6 P4 published ammaiyappan (Wave-6 Batch 1), the 7th cinema-writing card; it renders last
-// (inside the shelf's disclosure, since the shelf is now over the cap — see section 4).
+// Wave 6 P4 published ammaiyappan (Wave-6 Batch 1) as the 7th cinema card; Wave 7 B1 adds the 8th–10th
+// (maruthanattu · vandikkaran · naam) in manifest order. All render inside the shelf's disclosure, since
+// the shelf is over the cap — see section 4.
 const ORDER = [
   "/cinema/manohara", "/cinema/parasakthi", "/cinema/tirumbippaar",
   "/cinema/thirai-isai-paadalgal", "/cinema/manthiri-kumari", "/cinema/raja-rani",
   "/cinema/ammaiyappan",
+  "/cinema/maruthanattu-ilavarasi", "/cinema/vandikkaran-magan", "/cinema/naam",
 ];
-eq(hrefsIn(cinemaEn), ORDER, "seven Cinema cards render in onboarding order (EN)");
-eq(hrefsIn(cinemaTa), ORDER, "seven Cinema cards render in onboarding order (TA)");
-ok(!hrefsIn(cinemaEn).some((h) => !ORDER.includes(h)), "no Cinema card outside the seven (EN)");
+eq(hrefsIn(cinemaEn), ORDER, "ten Cinema cards render in onboarding order (EN)");
+eq(hrefsIn(cinemaTa), ORDER, "ten Cinema cards render in onboarding order (TA)");
+ok(!hrefsIn(cinemaEn).some((h) => !ORDER.includes(h)), "no Cinema card outside the ten (EN)");
 
 // ── 2. Per-card distinct public semantics, as actually rendered ───────────────────────────────────
 const en = (href: string) => textOf(cardHtml(cinemaEn, href));
@@ -125,7 +127,7 @@ for (const href of ["/cinema/manthiri-kumari", "/cinema/raja-rani"]) {
 // ── 4. Over-cap shelves render a disclosure ───────────────────────────────────────────────────────
 // Wave 6 P4 pushed Cinema (7), Poetry (14), Drama (8), Essays & Articles (9) over the cap alongside
 // Speeches (17); each renders one <details>. (Fiction stays at 5 — at/under the cap — so no disclosure.)
-ok(cinemaEn.indexOf("<details") !== -1, "Cinema section now renders a disclosure (7 entries, over the cap)");
+ok(cinemaEn.indexOf("<details") !== -1, "Cinema section renders a disclosure (10 entries, over the cap)");
 const speechesEn = sectionHtml(htmlEn, "speeches");
 ok(speechesEn.indexOf("<details") !== -1, "Speeches section carries a disclosure");
 const totalDetails = (htmlEn.match(/<details/g) ?? []).length;
@@ -141,5 +143,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`\nwave5-p4-cinema-ui — ${checks} checks, 0 failed`);
-  console.log("  7 Cinema cards in onboarding order (+ammaiyappan via Wave-6 P4) · per-work semantics distinct · Manthiri credit kept · Raja neutral · no year/edition/rights · Cinema now over-cap · 5 disclosures");
+  console.log("  10 Cinema cards in onboarding order (+ammaiyappan Wave-6, +3 Wave-7 B1) · per-work semantics distinct · Manthiri credit kept · Raja neutral · no year/edition/rights · Cinema over-cap · 6 disclosures");
 }
