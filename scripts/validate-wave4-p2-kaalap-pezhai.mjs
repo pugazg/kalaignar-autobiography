@@ -408,7 +408,16 @@ check("English total is substantial", enLinesTotal > 5000);
 check("the P2 publication is vendored", fs.existsSync(path.join(process.cwd(), "public/data/poems", SLUG, "publication.json")));
 {
   const m = /export const LIBRARY_COLLECTIONS:[^=]*=\s*\[([\s\S]*?)\n\];/.exec(collectionsTs);
-  eq("exactly one LibraryCollection is defined", (m?.[1].match(/^ {2}\{$/gm) ?? []).length, 1);
+  // Wave-4 introduced NO new collection; the only Wave-4-era inline collection was the 1977 anthology.
+  // Later waves add more (Wave-7 B3's arumbu-1978 inline), so reconstruct the historical Wave-4 count by
+  // excluding recognized later declarations rather than tracking a literal; Kaalap Pezhai never a collection.
+  const inlineCollectionIds = [...(m?.[1] ?? "").matchAll(/^ {4}id: "([^"]+)"/gm)].map((x) => x[1]);
+  const BENCHMARK_1977 = "1977-kalaignar-karunanidhiyin-sirukathaigal";
+  const KNOWN_LATER_COLLECTIONS = new Set(["arumbu-1978"]); // Wave-7 B3 inline declaration, later than Wave-4
+  eq("the 1977 anthology is still declared inline exactly once", inlineCollectionIds.filter((id) => id === BENCHMARK_1977).length, 1);
+  check("the Kaalap Pezhai publication did not become a LibraryCollection", !inlineCollectionIds.includes(SLUG));
+  check("no unexpected inline collection beyond 1977 + recognized later declarations", inlineCollectionIds.every((id) => id === BENCHMARK_1977 || KNOWN_LATER_COLLECTIONS.has(id)));
+  eq("Wave-4 introduced no new collection (inline count minus later-wave declarations == 1)", inlineCollectionIds.filter((id) => !KNOWN_LATER_COLLECTIONS.has(id)).length, 1);
 }
 
 // ── ROUTES ───────────────────────────────────────────────────────────────────────────────────────

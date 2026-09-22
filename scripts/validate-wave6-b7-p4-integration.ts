@@ -44,12 +44,14 @@ const root = process.cwd();
 // Batch-7-scoped ("Batch-7 brought the catalogue to 216, changed only Fiction"), so the Wave-7 B1
 // contribution is SUBTRACTED from the live surface to keep those historical claims exactly true.
 const W7 = WAVE7_B1_CONTRIBUTION;
-// Wave 7 Batches 2–4 published 13 works (2 drama + 5 novels + 6 essays) + the arumbu-1978 collection AFTER
-// this Batch-7 snapshot. Like W7 above, its contribution is SUBTRACTED from the live surface so every
-// Batch-7-scoped claim (catalogue 216, Fiction 157, 6 collections, discovery 77, sitemap 3909, …) stays
-// exactly true. fiction: +5 works, +3 discovery entries (arumbu-1978 card + 2 standalone), +1 collection
-// card, +2 standalone cards; drama +2; essays +6; +224 direct routes + 1 collection route = 225.
-const W7B = { works: 13, collections: 1, fictionCat: 5, fictionDisc: 3, fictionStandalone: 2, drama: 2, essays: 6, discovery: 11, sitemap: 225, build: 225 };
+// Wave 7 Batches 2–4 published 13 works (2 drama + 5 novels + 6 essays) + the arumbu-1978 collection (a
+// FOUR-member anthology) AFTER this Batch-7 snapshot. Like W7 above, its contribution is SUBTRACTED from
+// the live surface so every Batch-7-scoped claim (catalogue 216, Fiction 157, 6 collections, discovery 77,
+// sitemap 3909, …) stays exactly true. fiction: +5 works, +2 net discovery entries (+1 arumbu-1978 card,
+// +surulimalai +vellikkizhamai standalone, while the pre-existing பெரிய இடத்துப் பெண் standalone card
+// collapses into arumbu-1978 → +1 collection card, +1 net standalone); drama +2; essays +6; +224 direct
+// routes + 1 collection route = 225.
+const W7B = { works: 13, collections: 1, fictionCat: 5, fictionDisc: 2, fictionStandalone: 1, drama: 2, essays: 6, discovery: 10, sitemap: 225, build: 225 };
 const SRC = process.argv[2] && fs.existsSync(path.join(process.argv[2], "collections")) ? process.argv[2] : "";
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };

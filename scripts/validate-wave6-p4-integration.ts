@@ -79,14 +79,15 @@ const wave7p3 = readJSON<{ works: { routes: string[] }[] }>("data/internal/wave7
 const W7 = { works: 3, cinema: 3, discovery: 3, sitemap: 133, build: 133 };
 const W7_ROUTES = new Set<string>(wave7p3.works.flatMap((w) => w.routes));
 
-// Wave 7 Batches 2–4 published 13 works (2 drama + 5 novels + 6 essays) and 1 collection (arumbu-1978)
-// AFTER this snapshot. Identical treatment: added into the live totals, subtracted out of the frozen
-// Wave-6 record. It contributes 224 direct routes + 1 collection route = 225. On discovery: fiction +3
-// (arumbu-1978 collection card + surulimalai + vellikkizhamai standalone; the arumbu trio collapse into
-// the collection), drama +2, essays +6 = +11; all three shelves were already over-cap so it adds 0
-// initially-visible entries. Its own surface has a dedicated validator (validate-wave7-b2-b4-p4-integration).
+// Wave 7 Batches 2–4 published 13 works (2 drama + 5 novels + 6 essays) and 1 collection (arumbu-1978,
+// a FOUR-member anthology) AFTER this snapshot. Identical treatment: added into the live totals,
+// subtracted out of the frozen Wave-6 record. It contributes 224 direct routes + 1 collection route = 225.
+// On discovery: fiction +2 net — +1 arumbu-1978 collection card, +surulimalai +vellikkizhamai standalone,
+// while the arumbu trio AND the pre-existing பெரிய இடத்துப் பெண் standalone card collapse into the collection;
+// drama +2, essays +6 = +10. All three shelves were already over-cap, so it adds 0 initially-visible
+// entries. Its own surface has a dedicated validator (validate-wave7-b2-b4-p4-integration).
 const w7bp3 = readJSON<{ works: { routes: string[] }[] }>("data/internal/wave7/b2-b4-p3-routes.json");
-const W7B = { works: 13, collections: 1, discovery: 11, sitemap: 225, fictionCat: 5, fictionDisc: 3, drama: 2, essays: 6, visible: 0 };
+const W7B = { works: 13, collections: 1, discovery: 10, sitemap: 225, fictionCat: 5, fictionDisc: 2, drama: 2, essays: 6, visible: 0 };
 const W7B_ROUTES = new Set<string>([...w7bp3.works.flatMap((w) => w.routes), "/collections/arumbu-1978"]);
 // Recover the frozen Wave-6-P4 census from the live one: remove Batch-7 + Wave-7-B2-B4 fiction (passed as
 // minusFiction), Wave-7 B1 cinema, and Wave-7-B2-B4 drama & essays.
@@ -154,11 +155,11 @@ for (const s of shelves) {
   visible += Math.min(n, CAP);
   if (n > CAP) overCap.push(s.shelf.id);
 }
-eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery, "/read discovery is exactly 91 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 11 Wave-7 B2-B4)");
+eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery, "/read discovery is exactly 90 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 10 Wave-7 B2-B4)");
 eqMap(discBy, {
   "life-writing": 1,
   letters: 1,
-  fiction: 5 + B7.fictionDiscovery + W7B.fictionDisc, // 21 — Wave-7 B2-B4 +3 (arumbu-1978 card + 2 standalone)
+  fiction: 5 + B7.fictionDiscovery + W7B.fictionDisc, // 20 — Wave-7 B2-B4 +2 net (arumbu-1978 card + 2 standalone − பெரிய standalone collapsed)
   poetry: 14,
   drama: 8 + W7B.drama, // 10 — Wave-7 B2-B4 +2 dramas
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1's 3 cinema works are standalone discovery entries
@@ -168,7 +169,7 @@ eqMap(discBy, {
 }, "/read discovery per-shelf census matches the post-Wave-7-B2-B4 target");
 eq(visible, 39 + B7.visible + W7B.visible, "40 discovery entries are initially visible under the disclosure cap (all Wave-7 B2-B4 shelves already over-cap)");
 eq(uniqSorted(overCap), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "exactly the six expected shelves are over the disclosure cap (unchanged by Wave-7 B2-B4)");
-eq(discBy.fiction, 5 + B7.fictionDiscovery + W7B.fictionDisc, "fiction discovery is 21 (7 collection cards + 14 standalone works)");
+eq(discBy.fiction, 5 + B7.fictionDiscovery + W7B.fictionDisc, "fiction discovery is 20 (7 collection cards + 13 standalone works)");
 
 // ── 4. SITEMAP — 3672 URLs, 0 duplicates, Wave-6 set == p3 cumulativeRoutes EXACTLY ──
 const urls = sitemap().map((e) => e.url);
@@ -350,4 +351,4 @@ if (failures.length) {
 }
 console.log(`\nwave6-p4-integration — ${checks} checks, 0 failed`);
 console.log(`  Batches 1–6: 22 works · catalogue →100 · discovery →64 · collections 1 · set-equal to 321 P3 routes (frozen record intact)`);
-console.log(`  reconciled with Batch-7 (+116 works, +5 collections, +237 routes), Wave-7 B1 (+3 cinema, +133 routes) and Wave-7 B2-B4 (+13 works, +1 collection, +225 routes): live catalogue 232 · discovery 91/40 · sitemap 4267/0 · build 4276/4271`);
+console.log(`  reconciled with Batch-7 (+116 works, +5 collections, +237 routes), Wave-7 B1 (+3 cinema, +133 routes) and Wave-7 B2-B4 (+13 works, +1 four-member collection, +225 routes): live catalogue 232 · discovery 90/40 · sitemap 4267/0 · build 4276/4271`);

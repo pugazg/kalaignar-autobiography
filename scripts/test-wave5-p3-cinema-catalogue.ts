@@ -57,7 +57,7 @@ eq(LIBRARY_COLLECTIONS.length, 7, "collections are 7 (1977 + 5 Batch-7 + arumbu-
 // ── DISCOVERY ─────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 91, "91 discovery entries (post Wave-7 B2-B4: +11 net after arumbu-1978 trio collapse)");
+eq(entries.length, 90, "90 discovery entries (post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
 const initiallyVisible = shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0);
 eq(initiallyVisible, 40, "40 initially visible discovery entries (post Batch-7: Fiction over-cap)");
 const cinema = shelves.find((s) => s.shelf.id === "cinema-writing")!;
@@ -76,7 +76,7 @@ eq(cinemaHrefs, [
 // Fiction has 41 works but only 5 discovery entries (its anthology is one collection entry), so it stays
 // at/under the cap. Cinema moved 6 → 7 and is now over the cap.
 eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "poetry", "speeches"], "the six over-cap shelves (post Batch-7: Fiction joined)");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 21, "Fiction has 21 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4)");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction has 20 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)");
 
 // ── SITEMAP ─────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
@@ -139,4 +139,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave5-p3-cinema-catalogue — ${checks} checks, 0 failed`);
-console.log("  post Wave-7 B2-B4: 232 works · Cinema Writing 10 · discovery 91 / visible 40 · collections 7 · sitemap 4267 (0 dup) · Wave-5 89=18+71 intact · deterministic order · no overclaims");
+console.log("  post Wave-7 B2-B4: 232 works · Cinema Writing 10 · discovery 90 / visible 40 · collections 7 · sitemap 4267 (0 dup) · Wave-5 89=18+71 intact · deterministic order · no overclaims");

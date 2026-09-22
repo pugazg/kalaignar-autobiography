@@ -61,7 +61,9 @@ const add = (base: number, delta: number) => base + (phase === "P4" ? delta : 0)
 // gAdd folds their contribution into the global assertions once that cohort is live — keeping this a live
 // gate at the P4 tip without weakening any Batch-1 claim.
 const w7bPublished = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "published");
-const W7B = { works: 13, collections: 1, discovery: 11, sitemap: 225, build: 225 };
+// discovery net +10 (not +13): the arumbu trio AND the pre-existing பெரிய இடத்துப் பெண் standalone card
+// collapse into the four-member arumbu-1978 collection.
+const W7B = { works: 13, collections: 1, discovery: 10, sitemap: 225, build: 225 };
 const gAdd = (base: number, b1delta: number, w7bDelta: number) => add(base, b1delta) + (w7bPublished ? w7bDelta : 0);
 
 // ── Public surface: frozen P1 boundary (+ this batch's contribution once published) ──────────────────────

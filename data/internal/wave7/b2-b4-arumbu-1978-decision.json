@@ -1,25 +1,27 @@
 {
-  "note": "Wave 7 Batch 3 P2 DECISION on the arumbu-1978 publication model. Decided from the FROZEN novel source (pugazg/kalaignar-novels @ cc5c7fe535c5fab35e87f91b8325d6801afec46c), collections/arumbu-1978 — not from assumption. This record controls the P4 collection/discovery/sitemap outcome.",
+  "note": "Wave 7 Batch 3 P2 DECISION on the arumbu-1978 publication model, CORRECTED at immutable review. Decided from the FROZEN novel source (pugazg/kalaignar-novels @ cc5c7fe535c5fab35e87f91b8325d6801afec46c), collections/arumbu-1978 — not from assumption. This record controls the P4 collection/discovery/sitemap outcome.",
   "outcome": "A",
-  "outcomeMeaning": "Collection model PASS — the frozen source clearly establishes the physical 1978 publication and its membership, so arumbu-1978 becomes ONE public Fiction LibraryCollection (kind 'anthology') at P4. It is NOT a fourth canonical work. The three members stay three independent LibraryWorks with independent routes, source pages and citation identity.",
+  "outcomeMeaning": "Collection model PASS — the frozen source (README title 'அரும்பு — 1978 நான்கு-கதைத் தொகுப்பு' and the metadata publisher note) clearly establishes a FOUR-story physical 1978 publication, so arumbu-1978 becomes ONE public Fiction LibraryCollection (kind 'anthology') at P4 with FOUR members. It is NOT a canonical work. Each member stays an independent LibraryWork with its own routes, source page and citation identity.",
+  "reviewCorrection": "The initial decision recorded only the three Wave-7 cohort works and excluded பெரிய இடத்துப் பெண் on the grounds that its 1978 occurrence is a non-controlling witness. That conflated 'non-controlling witness' with 'not a publication member'. The frozen source establishes a four-story volume; membership records physical publication presence, not controlling-edition authority. Corrected to four members. (The Wave-7 P1 manifest's COHORT membership — the 3 new works of the 13-work cohort — is a different fact and stays 3; பெரிய இடத்துப் பெண் is a pre-existing Wave-6 Batch-5 work, not a cohort work.)",
   "sourceEvidence": {
     "sourceRepo": "pugazg/kalaignar-novels",
     "sourceCommit": "cc5c7fe535c5fab35e87f91b8325d6801afec46c",
     "collectionSourcePath": "collections/arumbu-1978",
     "collectionSubtree": "851ea306fc27ba73ea1c46dbafead51c659e6ba4",
-    "publicationTitleTa": "அரும்பு",
+    "publicationTitleTa": "அரும்பு — 1978 நான்கு-கதைத் தொகுப்பு",
     "publisherTa": "தமிழ்க்கனி பதிப்பகம், சென்னை-28",
     "editionStatementTa": "முதற் பதிப்பு : 1978",
     "publisherNoteDate": "25-3-1978",
+    "publisherNote": "The publisher note (பதிப்புரை, dated 25-3-1978) explains that the first of the FOUR Kalaignar stories gives its name to the volume.",
     "collectionScan": { "archiveId": "TVA_BOK_0064361", "sha256": "04a3013e1f58a1800867acc5d2f159976c47994a64478036e6fe0201edf120bc", "physicalScans": 92 },
     "printedMemberOrderByScanRange": [
-      { "titleTa": "அரும்பு", "scanRange": "6-23", "slug": "arumbu", "isCohortMember": true },
-      { "titleTa": "சாரப்பள்ளம் சாமுண்டி", "scanRange": "24-48", "slug": "sarapallam-samundi", "isCohortMember": true },
-      { "titleTa": "பெரிய இடத்துப் பெண்", "scanRange": "49-74", "slug": "periya-idathup-pen", "isCohortMember": false, "witnessNote": "This 1978 printing of பெரிய இடத்துப் பெண் is an ADDITIONAL NON-CONTROLLING WITNESS only; its controlling canonical edition is the already-published 1953 eighth edition (Wave-6 Batch-5). It is therefore NOT a member of the arumbu-1978 implementation collection; its physical presence in the 1978 volume is recorded here as provenance, not membership." },
-      { "titleTa": "நடுத்தெரு நாராயணி", "scanRange": "75-90", "slug": "nadutheru-narayani", "isCohortMember": true }
+      { "titleTa": "அரும்பு", "scanRange": "6-23", "slug": "arumbu", "isCohortMember": true, "isPublicationMember": true },
+      { "titleTa": "சாரப்பள்ளம் சாமுண்டி", "scanRange": "24-48", "slug": "sarapallam-samundi", "isCohortMember": true, "isPublicationMember": true },
+      { "titleTa": "பெரிய இடத்துப் பெண்", "scanRange": "49-74", "slug": "periya-idathup-pen", "isCohortMember": false, "isPublicationMember": true, "witnessNote": "This 1978 printing of பெரிய இடத்துப் பெண் is an ADDITIONAL NON-CONTROLLING WITNESS: its controlling canonical edition remains the already-published 1953 eighth edition (Wave-6 Batch-5), and its canonical reader payload/provenance is unchanged. But it IS a physical member of the four-story 1978 volume, so it is a member of the arumbu-1978 implementation collection — membership records publication presence, not controlling-edition authority. It is NOT a new/fourteenth Wave-7 work." },
+      { "titleTa": "நடுத்தெரு நாராயணி", "scanRange": "75-90", "slug": "nadutheru-narayani", "isCohortMember": true, "isPublicationMember": true }
     ],
     "collectionParatextScans": "1-5 (cover / title / publication / publisher note) and 91-92 (publisher catalogue / back cover), 7/7 VERIFIED / CLOSED",
-    "compilationAccounting": "92/92 scans; collection verdict ARCHIVAL CLOSED"
+    "compilationAccounting": "92/92 scans; four story spans 6-23 / 24-48 / 49-74 / 75-90; collection verdict ARCHIVAL CLOSED"
   },
   "p4Plan": {
     "collectionId": "arumbu-1978",
@@ -30,11 +32,14 @@
     "members": [
       { "workId": "arumbu", "ordinal": null },
       { "workId": "sarapallam-samundi", "ordinal": null },
+      { "workId": "periya-idathup-pen", "ordinal": null, "localScans": "49-74" },
       { "workId": "nadutheru-narayani", "ordinal": null }
     ],
-    "memberOrderNote": "Members are listed in the source's printed order (by scan range): arumbu, then சாரப்பள்ளம் சாமுண்டி, then நடுத்தெரு நாராயணி (பெரிய இடத்துப் பெண் sits between the latter two in the physical volume but is a witness only, not a member). The volume prints the stories in sequence but assigns NO printed story-ordinals, so `ordinal` is left UNSET (never invented as 1/2/3); the printed order is preserved by the member array sequence.",
+    "memberOrderNote": "Members are listed in the source's printed physical order (by scan range): அரும்பு (6-23), சாரப்பள்ளம் சாமுண்டி (24-48), பெரிய இடத்துப் பெண் (49-74), நடுத்தெரு நாராயணி (75-90). The volume prints the stories in sequence but assigns NO printed story-ordinals, so `ordinal` is left UNSET on every member (never invented as 1/2/3/4); the printed order is preserved by the member array sequence alone.",
+    "periyaMembershipNote": "பெரிய இடத்துப் பெண் is an EXISTING canonical work (Wave-6 Batch-5). Its controlling canonical edition remains the 1953 eighth-edition package (திராவிடன் பதிப்பகம், வேலூர்); its 1978 occurrence in this volume is an additional non-controlling witness. Recording its membership here documents publication PRESENCE, not controlling-edition authority — its canonical LibraryWork provenance, edition and reader payload are NOT modified. It carries a collection-local extent (localScans 49-74) because its canonical payload points to the 1953 edition. It is NOT a new/fourteenth Wave-7 work.",
+    "localPagesNote": "No `localPages` is recorded: the source Numbering rule states the component opening scan 49 shows no clearly visible printed page number, so a reliable printed display extent is NOT established and is not inferred.",
     "memberIndependenceNote": "Each member keeps its independent LibraryWork id, its own /novels/<slug> routes and its own /novels/<slug>/source page and citation identity. Canonical work provenance is never overwritten with collection-local pagination.",
-    "expectedPublicDelta": { "collections": "6 -> 7", "newCollectionRoutes": 1, "collectionRoute": "/collections/arumbu-1978" },
-    "notAFourthWork": "The collection is NOT a canonical work; catalogue stays 219 -> 232 (13 new works), never 14."
+    "expectedPublicDelta": { "collections": "6 -> 7", "newCollectionRoutes": 1, "collectionRoute": "/collections/arumbu-1978", "discovery": "80 -> 90 (net +10: +13 cohort works minus the arumbu trio collapse minus the pre-existing பெரிய இடத்துப் பெண் standalone card, now a collection member)", "fictionDiscovery": "18 -> 20" },
+    "notAFourthWork": "The collection is NOT a canonical work; catalogue stays 219 -> 232 (13 new cohort works), never 14. பெரிய இடத்துப் பெண் is an existing work, so adding it as a member adds no catalogue entry and no route."
   }
 }

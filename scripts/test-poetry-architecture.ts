@@ -108,7 +108,7 @@ const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
 eq(works.length, 232, "the catalogue holds 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 91, "91 discovery entries (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +11 net after arumbu-1978 trio collapse)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 90, "90 discovery entries (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +10 net — +13 works minus arumbu trio collapse minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
 ok(!!poetry, "the Poetry shelf is present");
 eq(poetry!.works.length, 14, "Poetry holds 14 works (10 standalone + 4 publications, post Wave-6 P4)");
 // Each publication is ONE discovery entry even though it holds many items — one work with reading

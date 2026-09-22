@@ -92,13 +92,13 @@ const entries = shelves.flatMap((s) => s.entries);
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
 eq(works.length, 232, "the catalogue holds 232 published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
-eq(entries.length, 91, "the page holds 91 discovery entries (post Wave-7 B2-B4: +11 net after the arumbu-1978 trio collapse)");
+eq(entries.length, 90, "the page holds 90 discovery entries (post Wave-7 B2-B4: +10 net — +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now a collection member)");
 eq(entries.filter((e) => e.kind === "collection").length, 7, "seven collection entries across all shelves (1977 + 5 Batch-7 + arumbu-1978)");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "the Fiction shelf is rendered");
 eq(fiction!.works.length, 162, "Fiction holds 162 works (post Batch-7: +116 short stories; post Wave-7 B2-B4: +5 novels)");
-eq(fiction!.entries.length, 21, "Fiction shows 21 discovery entries (7 collections collapse; 14 standalone works)");
+eq(fiction!.entries.length, 20, "Fiction shows 20 discovery entries (7 collections collapse; 13 standalone works)");
 eq(
   fiction!.entries.map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)),
   [
@@ -106,14 +106,16 @@ eq(
     BENCHMARK, "1982-mudiyatha-thodarkathai", "1987-kalaignar-sonna-kuttik-kathaigal",
     "2004-kalaignarin-kuttik-kathaigal", "2008-kalaignar-sonna-kathaigal", "2009-16-kathaiyinile",
     "arumbu-1978",
-    "balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal",
+    // பெரிய இடத்துப் பெண் is NO LONGER a standalone card — it is now a member of arumbu-1978 (its 1978 witness
+    // occurrence), so it collapses into the collection card exactly as the arumbu trio do.
+    "balipeedam-nokki", "kizhavan-kanavu", "pudhaiyal",
     // The 8 Batch-7 works that belong to no collection (periodical 3, 1976 2, 1969, 1953, 1997).
     "seerazhitha-sirippu", "madurai-selavu", "kondru-varuga", "naattiya-kalarani", "maanam",
     "neruppu", "vilaiyal-vangalaiyo", "nanbana",
     // The 2 Wave-7 B3 standalone novels (arumbu/nadutheru-narayani/sarapallam-samundi collapse into arumbu-1978).
     "surulimalai", "vellikkizhamai",
   ],
-  "Fiction shows the 7 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7 + 2 Wave-7 B3 novels)",
+  "Fiction shows the 7 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7 + 2 Wave-7 B3 novels; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)",
 );
 
 // The collection appears once; no member appears as its own card.

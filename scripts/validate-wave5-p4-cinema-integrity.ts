@@ -271,13 +271,13 @@ eq(Object.keys(byShelf).length, 9, "A5 exactly 9 non-empty shelves");
 eq(LIBRARY_COLLECTIONS.length, 7, "A5 collections = 7 (1977 + 5 Batch-7 + arumbu-1978)");
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 91, "A5 discovery entries = 91 (post Wave-7 B2-B4: +11 net after arumbu-1978 trio collapse)");
+eq(entries.length, 90, "A5 discovery entries = 90 (post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
 eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "A5 initially visible discovery entries = 40 (cinema already over-cap)");
 const cin = shelves.find((s) => s.shelf.id === "cinema-writing")!;
 eq(cin.entries.length, 10, "A5 Cinema renders 10 discovery entries (post Wave-7 B1: +3)");
 ok(cin.entries.length > CAP, "A5 Cinema is over the cap — disclosure control active (10 > 6)");
 eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "poetry", "speeches"], "A5 the six over-cap shelves (post Batch-7: Fiction joined)");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 21, "A5 Fiction has 21 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4)");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "A5 Fiction has 20 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)");
 
 // ── A6. Sitemap boundary ────────────────────────────────────────────────────────────────────────
 eq(urls.length, 4267, "A6 sitemap holds 4267 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225)");

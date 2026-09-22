@@ -35,7 +35,9 @@ const CAP = 6;
 // change only the GLOBAL totals (catalogue/discovery/sitemap/build), never the Cinema shelf or Batch-1's
 // own 133 routes, so their contribution is folded into those four absolute totals once that cohort is live.
 const w7bLive = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "published");
-const W7B = { works: 13, discovery: 11, sitemap: 225, build: 225 };
+// discovery net +10: the arumbu trio + the pre-existing பெரிய இடத்துப் பெண் standalone card collapse into the
+// four-member arumbu-1978 collection.
+const W7B = { works: 13, discovery: 10, sitemap: 225, build: 225 };
 const g = (base: number, delta: number) => base + (w7bLive ? delta : 0);
 
 const rawOf = (slug: string) => JSON.parse(fs.readFileSync(path.join(root, "public/data/cinema", slug, "reader.json"), "utf8"));

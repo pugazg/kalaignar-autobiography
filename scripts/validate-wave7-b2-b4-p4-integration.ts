@@ -9,11 +9,13 @@
  *      13 published exactly once, source-faithful card copy, evidence-based rights (drama+novels carry
  *      the nationalisation record; essays carry none — like the existing essays), nachuk-koppai discloses
  *      its terminal source hold on the card.
- *   2. COLLECTIONS 6→7: arumbu-1978 is ONE anthology of exactly 3 members (arumbu, சாரப்பள்ளம் சாமுண்டி,
- *      நடுத்தெரு நாராயணி) with UNSET ordinals; பெரிய இடத்துப் பெண் is a witness, NOT a member; the trio stay
- *      three independent LibraryWorks (never collapsed into a fourth work).
- *   3. DISCOVERY 80→91 (40 still visible), Fiction 21 / Drama 10 / Essays 15 / Cinema 10; the arumbu trio
- *      collapse into ONE collection card (never 3 standalone cards).
+ *   2. COLLECTIONS 6→7: arumbu-1978 is ONE anthology of exactly 4 members in printed physical order
+ *      (arumbu, சாரப்பள்ளம் சாமுண்டி, பெரிய இடத்துப் பெண், நடுத்தெரு நாராயணி) with UNSET ordinals — the source is a
+ *      four-story volume. பெரிய இடத்துப் பெண் is an EXISTING work; its 1978 occurrence is a member/witness, its
+ *      canonical 1953 edition/provenance unchanged, carrying the collection-local extent (scans 49-74). No
+ *      member is a new/fourteenth work; the works stay independent LibraryWorks (never collapsed into one).
+ *   3. DISCOVERY 80→90 (40 still visible), Fiction 20 / Drama 10 / Essays 15 / Cinema 10; all four members
+ *      (incl. the pre-existing பெரிய இடத்துப் பெண் standalone card) collapse into ONE collection card.
  *   4. SITEMAP 4042→4267 (0 dup): +224 direct routes (== the P3 manifest) + 1 collection route.
  *   5. BUILD 4275→4276 prerender / 4270→4271 HTML (+1 collection route) when a build tree is present.
  *   6. 18 ADVERSARIAL mutation checks — each proves a specific corruption is REJECTED.
@@ -45,7 +47,12 @@ const DRAMA = ["iratha-kanneer", "nachuk-koppai"];
 const NOVELS = ["arumbu", "nadutheru-narayani", "sarapallam-samundi", "surulimalai", "vellikkizhamai"];
 const ESSAYS = ["aaru-maatha-kadungkaaval", "thudikkum-ilamai", "perumoochu", "viduthalai-kilarcci", "meesai-mulaiththa-vayathil", "pesum-kalai-valarppom"];
 const ALL13 = [...DRAMA, ...NOVELS, ...ESSAYS];
+// The three Wave-7 cohort works that share the arumbu-1978 publication (still three separate works).
 const TRIO = ["arumbu", "nadutheru-narayani", "sarapallam-samundi"];
+// The four MEMBERS of the arumbu-1978 collection in printed physical (scan-range) order: the three cohort
+// works PLUS the pre-existing பெரிய இடத்துப் பெண் (its 1978 witness occurrence). All collapse into the card.
+const MEMBERS4 = ["arumbu", "sarapallam-samundi", "periya-idathup-pen", "nadutheru-narayani"];
+const COLLAPSED = ["arumbu", "sarapallam-samundi", "nadutheru-narayani", "periya-idathup-pen"];
 
 type Ex = { titleTa: string; titleEn: string; shelf: string; subtype: string; reader: string; hrefBase: string; unit: number; rights: boolean };
 const EXPECT: Record<string, Ex> = {
@@ -112,13 +119,26 @@ if (arumbu) {
   eq(arumbu.shelf, "fiction", "arumbu-1978 sits on the Fiction shelf");
   eq(arumbu.kind, "anthology", "arumbu-1978 kind is anthology");
   eq(arumbu.href, "/collections/arumbu-1978", "arumbu-1978 href matches the id");
-  eq(arumbu.members.map((m) => m.workId), ["arumbu", "sarapallam-samundi", "nadutheru-narayani"], "members are the 3 cohort works in printed (scan-range) order");
-  eq(arumbu.memberCount.value, 3, "memberCount states 3");
-  eq(arumbu.members.length, 3, "exactly 3 members");
+  // The frozen source is a FOUR-story volume (6-23, 24-48, 49-74, 75-90). Members are in that printed
+  // physical order; பெரிய இடத்துப் பெண் is a member via its 1978 witness occurrence.
+  eq(arumbu.members.map((m) => m.workId), MEMBERS4, "members are the 4 works in printed (scan-range) physical order");
+  eq(arumbu.memberCount.value, 4, "memberCount states 4");
+  eq(arumbu.members.length, 4, "exactly 4 members");
   eq(arumbu.members.filter((m) => m.ordinal !== undefined).map((m) => m.workId), [], "no member carries an ordinal (the volume prints no story-ordinals; never invented)");
-  ok(!arumbu.members.some((m) => m.workId === "periya-idathup-pen"), "பெரிய இடத்துப் பெண் is NOT a member (it is a non-controlling 1978 witness only)");
-  // Every member resolves to a live published work.
+  ok(arumbu.members.some((m) => m.workId === "periya-idathup-pen"), "பெரிய இடத்துப் பெண் IS a member (a physical member of the four-story 1978 volume)");
+  // Every member resolves to exactly one live published canonical LibraryWork; no duplicated identity.
   for (const m of arumbu.members) eq(bySlug.get(m.workId)?.state, "published", `arumbu-1978 member ${m.workId} is a live published work`);
+  eq(new Set(arumbu.members.map((m) => m.workId)).size, 4, "the four members are four distinct canonical works");
+  for (const m of arumbu.members) eq(LIBRARY_WORKS.filter((w) => w.id === m.workId).length, 1, `member ${m.workId} resolves to exactly one canonical LibraryWork (no duplicated identity)`);
+  // பெரிய இடத்துப் பெண்: membership records publication presence, NOT controlling-edition authority. Its
+  // canonical edition/provenance stays the 1953 eighth-edition package; it carries the 1978 collection-local
+  // extent (scans 49-74) because its canonical payload points to the 1953 edition.
+  const periyaMember = arumbu.members.find((m) => m.workId === "periya-idathup-pen")!;
+  eq(periyaMember.localScans, "49-74", "பெரிய இடத்துப் பெண் carries the 1978 collection-local extent (scans 49-74)");
+  ok(periyaMember.ordinal === undefined, "பெரிய இடத்துப் பெண் carries no invented ordinal");
+  const periyaWork = bySlug.get("periya-idathup-pen")!;
+  ok(/1953/.test(periyaWork.edition ?? "") && /கட்டுப்படுத்தும் மூலம்/.test(periyaWork.edition ?? ""), "பெரிய இடத்துப் பெண் canonical edition is unchanged (1953 controlling package)");
+  eq([periyaWork.href, periyaWork.provenanceHref, periyaWork.sourceCommit], ["/novels/periya-idathup-pen", "/novels/periya-idathup-pen/source", "a99f135467dd38e294faff31088a937994790a47"], "பெரிய இடத்துப் பெண் canonical href/provenance/sourceCommit unchanged by collection membership");
   eq(arumbu.source.collectionTree, "851ea306fc27ba73ea1c46dbafead51c659e6ba4", "arumbu-1978 pins the frozen collection tree");
 }
 // No cohort work became a collection id, and no member gained a unitCount by joining.
@@ -127,17 +147,18 @@ for (const s of ALL13) ok(!COLLECTION_IDS.includes(s), `${s} is not registered a
 // ── 3. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 91, "/read discovery is 91 entries (80 + 11 net after the arumbu-1978 trio collapse)");
+eq(entries.length, 90, "/read discovery is 90 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
 eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "40 discovery entries still visible (the three shelves were already over cap)");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 21, "Fiction renders 21 discovery entries");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction renders 20 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "drama")!.entries.length, 10, "Drama renders 10 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "essays-articles")!.entries.length, 15, "Essays & Articles renders 15 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "cinema-writing")!.entries.length, 10, "Cinema Writing unchanged at 10 discovery entries");
 eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id)), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "same six over-cap shelves");
-// The trio collapse into ONE collection card, not three standalone cards.
+// All FOUR members collapse into ONE collection card, not four standalone cards — including the
+// pre-existing பெரிய இடத்துப் பெண், whose standalone card is removed once it becomes an arumbu-1978 member.
 const fictionEntryIds = shelves.find((s) => s.shelf.id === "fiction")!.entries.map((e) => (e.kind === "collection" ? e.collection.id : e.work.id));
 ok(fictionEntryIds.includes("arumbu-1978"), "the arumbu-1978 collection card appears in Fiction discovery");
-for (const s of TRIO) ok(!fictionEntryIds.includes(s), `${s} does NOT appear as its own Fiction discovery card (collapsed into arumbu-1978)`);
+for (const s of COLLAPSED) ok(!fictionEntryIds.includes(s), `${s} does NOT appear as its own Fiction discovery card (collapsed into arumbu-1978)`);
 ok(fictionEntryIds.includes("surulimalai") && fictionEntryIds.includes("vellikkizhamai"), "the 2 standalone novels appear as their own Fiction discovery cards");
 
 // ── 4. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
@@ -163,8 +184,10 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 // ── 6. ADVERSARIAL — each corruption must be REJECTED ─────────────────────────────────────────────────
 // A1: collapse the arumbu trio into one work → the three-distinct-works guard fires.
 { const merged = new Set(TRIO.map(() => "arumbu")); ok(merged.size !== 3, "A1 collapsing the trio into one work is detected"); ok(new Set(TRIO.map((s) => bySlug.get(s)!.id)).size === 3, "A1 the LIVE catalogue keeps three distinct trio works"); }
-// A2: make பெரிய இடத்துப் பெண் a member of arumbu-1978 → membership guard fires.
-{ const bad = [...arumbu!.members.map((m) => m.workId), "periya-idathup-pen"]; ok(bad.includes("periya-idathup-pen"), "A2 an injected periya-idathup-pen membership is detectable"); ok(!arumbu!.members.some((m) => m.workId === "periya-idathup-pen"), "A2 the LIVE collection excludes periya-idathup-pen"); }
+// A2: REMOVE பெரிய இடத்துப் பெண் from arumbu-1978 → the four-member guard fires. The frozen source is a
+// four-story volume, so dropping the fourth story is a corruption, not a fix. (This is the corrected
+// direction: the earlier decision wrongly excluded it.)
+{ const reduced = arumbu!.members.filter((m) => m.workId !== "periya-idathup-pen"); ok(reduced.length !== arumbu!.members.length && reduced.length === 3, "A2 removing பெரிய இடத்துப் பெண் drops the member count below the source's four"); ok(arumbu!.members.some((m) => m.workId === "periya-idathup-pen"), "A2 the LIVE collection includes பெரிய இடத்துப் பெண் (all four source stories)"); }
 // A3: invent an ordinal for a member → the no-ordinal guard fires.
 { const bad = clone(arumbu!.members); bad[0].ordinal = 1; ok(bad.some((m) => m.ordinal !== undefined), "A3 an invented ordinal is detectable"); ok(arumbu!.members.every((m) => m.ordinal === undefined), "A3 the LIVE members carry no ordinal"); }
 // A4: fabricate a year on a trio card → no-year guard fires (the trio cards assert no standalone year).
@@ -187,16 +210,21 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 { ok(!(ESSAY_SLUGS as readonly string[]).includes("fabricated-essay") && !(NOVEL_SLUGS as readonly string[]).includes("fabricated-novel"), "A12 an unknown slug is not in any public registry (fail-closed)"); }
 // A13: collection count must be exactly 7 (arumbu-1978 added exactly once).
 { ok(LIBRARY_COLLECTIONS.length - 1 !== 7, "A13 a second arumbu-1978 would change the count away from 7"); eq(LIBRARY_COLLECTIONS.length, 7, "A13 the LIVE registry has exactly 7 collections"); }
-// A14: memberCount must equal the roster length.
-{ eq(arumbu!.memberCount.value, arumbu!.members.length, "A14 the LIVE memberCount equals the roster length"); ok(arumbu!.memberCount.value !== 4, "A14 memberCount is not inflated to include the witness"); }
-// A15: the trio must collapse — they must not each be a standalone Fiction card.
-{ for (const s of TRIO) ok(!fictionEntryIds.includes(s), `A15 ${s} is collapsed into the collection card, not a standalone Fiction card`); ok(fictionEntryIds.includes("arumbu-1978"), "A15 exactly the collection card represents the trio"); }
+// A14: memberCount must equal the roster length (4) and never be inflated to a fifth.
+{ eq(arumbu!.memberCount.value, arumbu!.members.length, "A14 the LIVE memberCount equals the roster length"); eq(arumbu!.memberCount.value, 4, "A14 memberCount is exactly 4"); ok(arumbu!.memberCount.value !== 5, "A14 memberCount is not inflated to a fifth member"); }
+// A15: all four members must collapse — none may also be a standalone Fiction card (incl. பெரிய இடத்துப் பெண்).
+{ for (const s of COLLAPSED) ok(!fictionEntryIds.includes(s), `A15 ${s} is collapsed into the collection card, not a standalone Fiction card`); ok(fictionEntryIds.includes("arumbu-1978"), "A15 exactly the collection card represents the four members"); }
 // A16: Cinema must stay 10 (this batch adds no cinema work).
 { eq(byShelf["cinema-writing"], 10, "A16 Cinema Writing is unchanged at 10 (no cinema leaked in)"); }
 // A17: a duplicated sitemap URL → the 0-duplicate guard fires.
 { const dup = [...urls, urls[0]]; ok(dup.length - new Set(dup).size === 1, "A17 a duplicated sitemap URL is detectable"); eq(urls.length - new Set(urls).size, 0, "A17 the LIVE sitemap has 0 duplicates"); }
 // A18: a promoted slug appearing twice in a registry → the once-only guard fires.
 { const dup = [...PLAY_SLUGS, "iratha-kanneer"]; ok(dup.filter((s) => s === "iratha-kanneer").length === 2, "A18 a duplicated promotion is detectable"); eq(countIn(PLAY_SLUGS, "iratha-kanneer"), 1, "A18 the LIVE PLAY_SLUGS promotes iratha-kanneer exactly once"); }
+// A19: creating a SECOND canonical பெரிய இடத்துப் பெண் for the 1978 witness must fail — the 1978 occurrence
+// is a member/witness of the EXISTING work, never a new LibraryWork. Its slug/id must appear exactly once.
+{ eq(LIBRARY_WORKS.filter((w) => w.slug === "periya-idathup-pen").length, 1, "A19 exactly one canonical பெரிய இடத்துப் பெண் exists (no 1978 duplicate work)"); eq(LIBRARY_WORKS.filter((w) => w.id === "periya-idathup-pen").length, 1, "A19 exactly one பெரிய இடத்துப் பெண் catalogue id (the 1978 witness added no work)"); const withDup = [...LIBRARY_WORKS.map((w) => w.slug), "periya-idathup-pen"]; ok(new Set(withDup).size !== withDup.length, "A19 a second பெரிய இடத்துப் பெண் canonical work would be detected as a duplicate slug"); }
+// A20: the four-story publication must not silently gain a fifth member (no over-inclusion).
+{ ok(!arumbu!.members.some((m) => !MEMBERS4.includes(m.workId)), "A20 no member outside the four source stories"); eq(arumbu!.members.length, 4, "A20 exactly the four source stories are members"); }
 
 // ── 7. BUILD boundary — 4276 / 4271 when a build tree is present ───────────────────────────────────────
 const pm = path.join(root, ".next/prerender-manifest.json");
@@ -218,4 +246,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave7-b2-b4-p4-integration — ${checks} checks, 0 failed`);
-console.log("  13 works published · catalogue 219→232 (Drama 10 · Fiction 162 · Essays 15 · Cinema 10) · collections 6→7 (arumbu-1978, 3 members, ordinals unset, periya witness-only) · discovery 80→91/40 · sitemap 4042→4267/0 · build 4275→4276 · 18 adversarials rejected");
+console.log("  13 works published · catalogue 219→232 (Drama 10 · Fiction 162 · Essays 15 · Cinema 10) · collections 6→7 (arumbu-1978, 4 members incl. பெரிய இடத்துப் பெண் witness, ordinals unset, canonical 1953 edition intact) · discovery 80→90/40 · Fiction 20 · sitemap 4042→4267/0 · build 4275→4276 · 20 adversarials rejected");

@@ -100,6 +100,35 @@ for (const slug of NOVEL_SLUGS) {
   eq(new Set(provs.map((p) => p.source.scanSha256)).size, 1, "arumbu trio: one shared publication scan SHA");
   for (const n of trio) eq(n.sourceCompilation, "arumbu-1978", `${n.slug}: tagged to arumbu-1978, not merged`);
 }
+// arumbu-1978 collection MODEL, proved directly against the frozen novel source (NOT the hand-written P2
+// decision JSON): the source establishes a FOUR-story physical volume, and பெரிய இடத்துப் பெண் (an existing
+// 1953-controlled work) is a physical member via its additional 1978 witness — so the implementation
+// collection has exactly four members, never three, never five.
+{
+  const cdir = path.join(NOVELS, "collections", "arumbu-1978");
+  ok(fs.existsSync(cdir), "arumbu-1978 collection source directory present in the frozen novels checkout");
+  const readme = read(path.join(cdir, "README.md"));
+  const srcmd = read(path.join(cdir, "metadata", "source.md"));
+  ok(/நான்கு-கதைத்\s*தொகுப்பு/.test(readme), "source README titles a FOUR-story volume (நான்கு-கதைத் தொகுப்பு)");
+  ok(/first of the four Kalaignar stories/i.test(srcmd), "source metadata: the publisher note names four Kalaignar stories");
+  // The four story spans, in printed physical order, each mapped to its member slug.
+  const SPANS = [["arumbu", "6", "23"], ["sarapallam-samundi", "24", "48"], ["periya-idathup-pen", "49", "74"], ["nadutheru-narayani", "75", "90"]];
+  for (const [slug, a, b] of SPANS) ok(new RegExp(`scans?\\s*\\*?\\*?${a}[–-]${b}`).test(srcmd), `source records the ${a}-${b} story span (${slug})`);
+  // பெரிய இடத்துப் பெண் is explicitly an ADDITIONAL / non-controlling witness, and the 1953 package is unchanged.
+  ok(/49[–-]74\s*—\s*1978\s*`?பெரிய இடத்துப் பெண்`?\s*additional witness/.test(srcmd) || /1978 `?பெரிய இடத்துப் பெண்`? witness/i.test(readme), "source marks the 49-74 பெரிய இடத்துப் பெண் span as an additional 1978 witness");
+  ok(/1953 controlling package remains unchanged/i.test(readme), "source states the 1953 controlling package remains unchanged (witness ≠ new controlling edition)");
+  // Witness membership: an additional witness is still a physical component of this volume. Extract EVERY
+  // scan RANGE the source records; excluding the 1-5 front-matter range, exactly the four story spans remain
+  // (the 91/92 back matter is recorded as singular "scan", not a range) — so there is no fifth story member.
+  const ranges = [...srcmd.matchAll(/scans?\s+(\d+)[–-](\d+)/g)].map((m) => `${m[1]}-${m[2]}`);
+  const storySpans = [...new Set(ranges.filter((r) => r !== "1-5"))].sort();
+  eq(storySpans, ["24-48", "49-74", "6-23", "75-90"].sort(), "exactly the four story spans account for the narrative scans (no fifth member; 1-5 and 91/92 are paratext)");
+  // The frozen collection source tree is the pinned one.
+  const tree = execFileSync("git", ["-C", NOVELS, "rev-parse", "HEAD:collections/arumbu-1978"], { encoding: "utf8" }).trim();
+  eq(tree, "851ea306fc27ba73ea1c46dbafead51c659e6ba4", "arumbu-1978 collection source tree == frozen pin");
+  // (The implementation collection's four-member declaration + printed order is proved against this same
+  // source in validate-wave7-b2-b4-p4-integration.ts; here we own only the SOURCE-establishes-four fact.)
+}
 
 // ══ ESSAYS ═════════════════════════════════════════════════════════════════════════════════════════
 const ESSAY_SLUGS = ["aaru-maatha-kadungkaaval", "thudikkum-ilamai", "perumoochu", "viduthalai-kilarcci", "meesai-mulaiththa-vayathil", "pesum-kalai-valarppom"];
