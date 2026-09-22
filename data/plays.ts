@@ -483,5 +483,10 @@ export const PLAY_SLUGS = [
   "kagithapoo",
   "manimagudam",
   "thiruvalar-desiyampillai",
+  // ── Wave 7 Batch 2 P4 — promoted from the direct-only Wave-7 registry (lib/drama-wave7-routes.ts).
+  // The route union already dedups these against WAVE7_DRAMA_SLUGS; listing them here is what exposes
+  // their landings in the sitemap. nachuk-koppai carries a disclosed terminal source hold.
+  "iratha-kanneer",
+  "nachuk-koppai",
 ] as const;
 export type PlaySlug = (typeof PLAY_SLUGS)[number];

@@ -384,5 +384,13 @@ export const ESSAY_SLUGS = [
   "kudumbaththin-nalvilakku",
   "sinthanaiyum-seyalum",
   "vedhanai-ch-siraiyinindrum-viduthalai-pera",
+  // ── Wave 7 Batch 4 P4 — promoted from the direct-only Wave-7 registry (lib/essays-wave7-routes.ts).
+  // Dedup against WAVE7_ESSAY_SLUGS happens in the route union; listing them here exposes their landings.
+  "aaru-maatha-kadungkaaval",
+  "thudikkum-ilamai",
+  "perumoochu",
+  "viduthalai-kilarcci",
+  "meesai-mulaiththa-vayathil",
+  "pesum-kalai-valarppom",
 ] as const;
 export type EssaySlug = (typeof ESSAY_SLUGS)[number];

@@ -290,5 +290,12 @@ export type NovelProvenance = {
 
 // Integrated novel slugs (build/import authority; the public catalog entry lives in
 // data/library.ts). This benchmark integrates exactly one novel.
-export const NOVEL_SLUGS = ["balipeedam-nokki", "periya-idathup-pen", "pudhaiyal"] as const;
+export const NOVEL_SLUGS = [
+  "balipeedam-nokki", "periya-idathup-pen", "pudhaiyal",
+  // ── Wave 7 Batch 3 P4 — promoted from the direct-only Wave-7 registry (lib/novels-wave7-routes.ts).
+  // arumbu / nadutheru-narayani / sarapallam-samundi are three SEPARATE works (never collapsed) that share
+  // the 1978 அரும்பு source publication, modelled as the arumbu-1978 collection. surulimalai preserves the
+  // source's own chapter 6/7 gap. Dedup against WAVE7_NOVEL_SLUGS happens in the route union.
+  "arumbu", "nadutheru-narayani", "sarapallam-samundi", "surulimalai", "vellikkizhamai",
+] as const;
 export type NovelSlug = (typeof NOVEL_SLUGS)[number];
