@@ -64,22 +64,31 @@ for (const s of WAVE7_ESSAY_SLUGS) { const want = derived[s].filter((r) => r.sta
 // Fail-closed: no fabricated child param exists.
 ok(!nsp.some((p) => p.slug === "surulimalai" && (p.section === "06-chapter-06" || p.section === "07-chapter-07")), "surulimalai: no invented chapter 6/7 param");
 
-// ── Still hidden — public boundary unchanged at P3 ───────────────────────────────────────────────────
+// ── Discovery / publication surface — PHASE-AWARE ────────────────────────────────────────────────────
+// The 224-route LAYER above is phase-invariant (built at P3, unchanged at P4). Whether the works appear
+// in LIBRARY_WORKS / discovery / sitemap is not: hidden before P4, published at/after P4. CI builds the
+// P4 tip, so this stays a live gate rather than asserting a permanent absence that P4 would break.
 const ALL13 = [...WAVE7_DRAMA_SLUGS, ...WAVE7_NOVEL_SLUGS, ...WAVE7_ESSAY_SLUGS];
 const libIds = new Set<string>((LIBRARY_WORKS as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
-for (const s of ALL13) ok(!libIds.has(s), `${s}: absent from LIBRARY_WORKS`);
+const publishedThisBatch = ALL13.filter((s) => libIds.has(s));
+const phase = publishedThisBatch.length === 0 ? "pre-P4" : "P4";
+ok(publishedThisBatch.length === 0 || publishedThisBatch.length === 13, "phase coherent: 0 (hidden) or all 13 (published)");
 const shelfText = JSON.stringify(discoveryShelves());
-for (const s of ALL13) ok(!shelfText.includes(`/plays/${s}`) && !shelfText.includes(`/novels/${s}`) && !shelfText.includes(`/essays/${s}`), `${s}: absent from /read discovery`);
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
-for (const r of allDerived) ok(!sm.some((u) => u.endsWith(r)), `sitemap does NOT expose ${r}`);
+for (const s of ALL13) eq(libIds.has(s), phase === "P4", `${s}: LIBRARY_WORKS membership matches phase (${phase})`);
+for (const s of ALL13) eq(shelfText.includes(`/plays/${s}`) || shelfText.includes(`/novels/${s}`) || shelfText.includes(`/essays/${s}`), phase === "P4", `${s}: /read discovery presence matches phase (${phase})`);
+for (const r of allDerived) eq(sm.some((u) => u.endsWith(r)), phase === "P4", `sitemap exposure of ${r} matches phase (${phase})`);
 
-// ── Build boundary ───────────────────────────────────────────────────────────────────────────────────
+// ── Build boundary — PHASE-AWARE ─────────────────────────────────────────────────────────────────────
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
   for (const r of allDerived) ok(keys.has(r), `route prerendered: ${r}`);
-  eq(keys.size, p3.buildDelta.afterP3.prerenderRoutes, `build prerender total == afterP3 (${p3.buildDelta.afterP3.prerenderRoutes})`);
-  eq(p3.buildDelta.afterP3, { prerenderRoutes: 4275, html: 4270 }, "afterP3 build boundary 4275/4270");
+  // The 224 direct routes are phase-invariant; at P4 publication additionally introduces exactly one
+  // collection landing (/collections/arumbu-1978), so the build grows by 1 relative to the recorded P3.
+  const collectionRoutes = phase === "P4" && keys.has("/collections/arumbu-1978") ? 1 : 0;
+  eq(keys.size, p3.buildDelta.afterP3.prerenderRoutes + collectionRoutes, `build prerender total == afterP3${collectionRoutes ? " + 1 (arumbu-1978 route)" : ""} (${p3.buildDelta.afterP3.prerenderRoutes + collectionRoutes})`);
+  eq(p3.buildDelta.afterP3, { prerenderRoutes: 4275, html: 4270 }, "afterP3 build boundary 4275/4270 (recorded P3 delta)");
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
@@ -98,5 +107,5 @@ if (fail.length) {
   for (const f of fail.slice(0, 40)) console.error("  ✗ " + f);
   process.exit(1);
 }
-console.log(`\nwave7-b2-b4-p3-routes — ${checks} checks, 0 failed`);
-console.log("  13 works · 224 direct routes (drama 83 + novels 62 + essays 79) re-derived independently == manifest · generateStaticParams fail-closed · surulimalai gap preserved · still absent from LIBRARY_WORKS / discovery / sitemap");
+console.log(`\nwave7-b2-b4-p3-routes — ${checks} checks, 0 failed (phase ${phase})`);
+console.log(`  13 works · 224 direct routes (drama 83 + novels 62 + essays 79) re-derived independently == manifest · generateStaticParams fail-closed · surulimalai gap preserved · ${phase === "P4" ? "now published in LIBRARY_WORKS / discovery / sitemap (P4)" : "still absent from LIBRARY_WORKS / discovery / sitemap"}`);

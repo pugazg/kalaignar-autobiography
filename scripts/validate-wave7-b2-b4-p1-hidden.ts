@@ -83,14 +83,16 @@ if (fs.existsSync(pm)) {
   const directBuilt = manifest.works.filter((w) => keys.includes(routeFor(w))).length; // landings prerendered
   const routesBuilt = directBuilt === 13; // all 13 direct route families present ⇒ P3 or later
   const expectedNew = routesBuilt ? P3_ROUTES : P1_FROZEN.directRoutes;
+  // At P4 publication introduces exactly one collection landing (/collections/arumbu-1978); pre-P4 none.
+  const collectionRoutes = phase === "P4" && keys.includes("/collections/arumbu-1978") ? 1 : 0;
   // Count the actual wave7 direct routes present.
   let wave7Routes = 0;
   for (const w of manifest.works) { const base = routeFor(w); wave7Routes += keys.filter((k) => k === base || k.startsWith(`${base}/`)).length; }
   eq(wave7Routes, expectedNew, `direct B2-B4 routes in build == ${expectedNew} (${routesBuilt ? "P3/P4" : "P1/P2"})`);
-  eq(keys.length, P1_FROZEN.build.prerender + expectedNew, `build prerender == 4051${expectedNew ? ` + ${expectedNew}` : ""}`);
+  eq(keys.length, P1_FROZEN.build.prerender + expectedNew + collectionRoutes, `build prerender == 4051${expectedNew ? ` + ${expectedNew}` : ""}${collectionRoutes ? ` + ${collectionRoutes} (arumbu-1978 route)` : ""}`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, P1_FROZEN.build.html + expectedNew, `build .html == 4046${expectedNew ? ` + ${expectedNew}` : ""}`);
+  eq(html, P1_FROZEN.build.html + expectedNew + collectionRoutes, `build .html == 4046${expectedNew ? ` + ${expectedNew}` : ""}${collectionRoutes ? ` + ${collectionRoutes}` : ""}`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
