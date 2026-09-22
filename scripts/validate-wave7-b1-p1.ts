@@ -56,13 +56,20 @@ ok(publishedThisBatch.length === 0 || publishedThisBatch.length === 3, "phase is
 const C = WAVE7_B1_CONTRIBUTION;
 // Expected live surface = frozen P1 boundary + (this batch's contribution IF published).
 const add = (base: number, delta: number) => base + (phase === "P4" ? delta : 0);
+// Wave 7 Batches 2–4 later published 13 works + the arumbu-1978 collection on top of this batch. They
+// touch only the GLOBAL totals (catalogue/collections/discovery/sitemap/build), never the Cinema shelf, so
+// gAdd folds their contribution into the global assertions once that cohort is live — keeping this a live
+// gate at the P4 tip without weakening any Batch-1 claim.
+const w7bPublished = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "published");
+const W7B = { works: 13, collections: 1, discovery: 11, sitemap: 225, build: 225 };
+const gAdd = (base: number, b1delta: number, w7bDelta: number) => add(base, b1delta) + (w7bPublished ? w7bDelta : 0);
 
 // ── Public surface: frozen P1 boundary (+ this batch's contribution once published) ──────────────────────
-eq(published.length, add(P1_FROZEN.catalogue, C.works), `catalogue == P1 ${P1_FROZEN.catalogue}${phase === "P4" ? ` + ${C.works}` : ""}`);
+eq(published.length, gAdd(P1_FROZEN.catalogue, C.works, W7B.works), `catalogue == P1 ${P1_FROZEN.catalogue}${phase === "P4" ? ` + ${C.works}` : ""}${w7bPublished ? ` + ${W7B.works} (Wave-7 B2-B4)` : ""}`);
 const byShelf: Record<string, number> = {};
 for (const w of published) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["cinema-writing"], add(P1_FROZEN.cinemaWorks, C.cinema), `Cinema Writing == P1 ${P1_FROZEN.cinemaWorks}${phase === "P4" ? ` + ${C.cinema}` : ""}`);
-eq(LIBRARY_COLLECTIONS.length, add(P1_FROZEN.collections, C.collections), "public collections unchanged by this cinema batch");
+eq(LIBRARY_COLLECTIONS.length, gAdd(P1_FROZEN.collections, C.collections, W7B.collections), "public collections: unchanged by this cinema batch, +1 (arumbu-1978) once Wave-7 B2-B4 is live");
 // Membership: hidden before P4, published (and NEVER a collection or a story slug) at P4.
 for (const s of slugs) {
   const isWork = LIBRARY_WORKS.some((w) => w.slug === s || w.id === s);
@@ -71,13 +78,13 @@ for (const s of slugs) {
   ok(!(STORY_SLUGS as readonly string[]).includes(s), `${s} is never a story slug`);
 }
 const shelves = discoveryShelves();
-eq(shelves.flatMap((x) => x.entries).length, add(P1_FROZEN.discovery, C.discovery), `/read discovery == P1 ${P1_FROZEN.discovery}${phase === "P4" ? ` + ${C.discovery}` : ""}`);
+eq(shelves.flatMap((x) => x.entries).length, gAdd(P1_FROZEN.discovery, C.discovery, W7B.discovery), `/read discovery == P1 ${P1_FROZEN.discovery}${phase === "P4" ? ` + ${C.discovery}` : ""}${w7bPublished ? ` + ${W7B.discovery} (Wave-7 B2-B4)` : ""}`);
 eq(shelves.reduce((n, x) => n + Math.min(x.entries.length, 6), 0), P1_FROZEN.visible, "/read initially visible still 40 (cinema already over cap)");
 eq(shelves.find((x) => x.shelf.id === "cinema-writing")!.entries.length, add(P1_FROZEN.cinemaDiscovery, C.cinema), `Cinema Writing discovery == P1 ${P1_FROZEN.cinemaDiscovery}${phase === "P4" ? ` + ${C.cinema}` : ""}`);
 
 // ── Sitemap: P1 boundary (+ this batch's URLs once published) ────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, add(P1_FROZEN.sitemap, C.sitemap), `sitemap == P1 ${P1_FROZEN.sitemap}${phase === "P4" ? ` + ${C.sitemap}` : ""}`);
+eq(urls.length, gAdd(P1_FROZEN.sitemap, C.sitemap, W7B.sitemap), `sitemap == P1 ${P1_FROZEN.sitemap}${phase === "P4" ? ` + ${C.sitemap}` : ""}${w7bPublished ? ` + ${W7B.sitemap} (Wave-7 B2-B4)` : ""}`);
 eq(urls.length - new Set(urls).size, P1_FROZEN.sitemapDup, "sitemap still 0 duplicates");
 for (const s of slugs) {
   const exposed = urls.some((u) => u.includes(`/cinema/${s}`));
@@ -88,13 +95,13 @@ for (const s of slugs) {
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes);
-  eq(keys.length, add(P1_FROZEN.build.prerender, C.build), `build prerender routes == P1 ${P1_FROZEN.build.prerender}${phase === "P4" ? ` + ${C.build}` : ""}`);
+  eq(keys.length, gAdd(P1_FROZEN.build.prerender, C.build, W7B.build), `build prerender routes == P1 ${P1_FROZEN.build.prerender}${phase === "P4" ? ` + ${C.build}` : ""}${w7bPublished ? ` + ${W7B.build} (Wave-7 B2-B4)` : ""}`);
   // At P1 there were 0 new /cinema routes; from P3 on the 133 exist. Assert the count matches the phase.
   const newCinema = keys.filter((k) => slugs.some((s) => k === `/cinema/${s}` || k.startsWith(`/cinema/${s}/`))).length;
   eq(newCinema, phase === "P4" ? C.build : P1_FROZEN.newCinemaRoutes, `new /cinema prerendered routes match phase (${phase})`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, add(P1_FROZEN.build.html, C.build), `build .html == P1 ${P1_FROZEN.build.html}${phase === "P4" ? ` + ${C.build}` : ""}`);
+  eq(html, gAdd(P1_FROZEN.build.html, C.build, W7B.build), `build .html == P1 ${P1_FROZEN.build.html}${phase === "P4" ? ` + ${C.build}` : ""}${w7bPublished ? ` + ${W7B.build} (Wave-7 B2-B4)` : ""}`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
@@ -106,5 +113,5 @@ if (fail.length) {
 }
 console.log(`\nwave7-b1-p1 — ${checks} checks, 0 failed (phase ${phase})`);
 console.log(phase === "P4"
-  ? `  frozen P1 boundary (216/7/77-40/3909/3918-3913) + this batch (+${C.works} works, +${C.sitemap} routes) == live 219/10/80-40/4042/4051-4046; only Batch-1 changed the surface`
+  ? `  frozen P1 boundary (216/7/77-40/3909/3918-3913) + Batch-1 (+${C.works} works, +${C.sitemap} routes)${w7bPublished ? ` + Wave-7 B2-B4 (+${W7B.works} works, +${W7B.sitemap} routes)` : ""} == the live surface; Cinema shelf shaped by Batch-1 alone`
   : `  frozen P1 boundary intact: catalogue 216 · Cinema 7 · /read 77/40 · sitemap 3909/0 · build 3918/3913 · 0 new /cinema routes`);

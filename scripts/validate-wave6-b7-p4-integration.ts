@@ -44,6 +44,12 @@ const root = process.cwd();
 // Batch-7-scoped ("Batch-7 brought the catalogue to 216, changed only Fiction"), so the Wave-7 B1
 // contribution is SUBTRACTED from the live surface to keep those historical claims exactly true.
 const W7 = WAVE7_B1_CONTRIBUTION;
+// Wave 7 Batches 2–4 published 13 works (2 drama + 5 novels + 6 essays) + the arumbu-1978 collection AFTER
+// this Batch-7 snapshot. Like W7 above, its contribution is SUBTRACTED from the live surface so every
+// Batch-7-scoped claim (catalogue 216, Fiction 157, 6 collections, discovery 77, sitemap 3909, …) stays
+// exactly true. fiction: +5 works, +3 discovery entries (arumbu-1978 card + 2 standalone), +1 collection
+// card, +2 standalone cards; drama +2; essays +6; +224 direct routes + 1 collection route = 225.
+const W7B = { works: 13, collections: 1, fictionCat: 5, fictionDisc: 3, fictionStandalone: 2, drama: 2, essays: 6, discovery: 11, sitemap: 225, build: 225 };
 const SRC = process.argv[2] && fs.existsSync(path.join(process.argv[2], "collections")) ? process.argv[2] : "";
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -69,10 +75,10 @@ const NEW_COLLECTION_IDS = manifest.groups.filter((g) => g.publicCollectionPlann
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length - W7.works, 216, "catalogue is 216 published works (100 + 116 Batch-7), excluding later Wave-7 B1");
+eq(works.length - W7.works - W7B.works, 216, "catalogue is 216 published works (100 + 116 Batch-7), excluding later Wave-7 B1 + B2-B4");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
-eq(byShelf.fiction, 157, "Fiction shelf is 157 works (41 + 116)");
+eq(byShelf.fiction - W7B.fictionCat, 157, "Fiction shelf is 157 works (41 + 116), excluding later Wave-7 B2-B4 novels");
 eq(Object.keys(byShelf).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "letters", "life-writing", "literary-commentary", "poetry", "speeches"], "still exactly 9 non-empty shelves");
 const bySlug = new Map(works.map((w) => [w.slug, w] as const));
 for (const slug of b7Slugs) {
@@ -95,8 +101,8 @@ eq((STORY_SLUGS as readonly string[]).filter((s) => !b7Slugs.includes(s)).length
 eq(uniqSorted([...WAVE6_B7_STORY_SLUGS]), uniqSorted(b7Slugs), "route helper still equals the 116 manifest slugs");
 
 // ── 3. COLLECTIONS ──────────────────────────────────────────────────────────────────────────────────
-eq(LIBRARY_COLLECTIONS.length, 6, "6 public collections (1977 + 5 Batch-7)");
-eq(uniqSorted(COLLECTION_IDS.filter((id) => id !== "1977-kalaignar-karunanidhiyin-sirukathaigal")), uniqSorted(NEW_COLLECTION_IDS), "the 5 non-1977 collection ids are exactly the planned Batch-7 collections");
+eq(LIBRARY_COLLECTIONS.length - W7B.collections, 6, "6 public collections (1977 + 5 Batch-7), excluding later Wave-7 B3 arumbu-1978");
+eq(uniqSorted(COLLECTION_IDS.filter((id) => id !== "1977-kalaignar-karunanidhiyin-sirukathaigal" && id !== "arumbu-1978")), uniqSorted(NEW_COLLECTION_IDS), "the 5 non-1977 (pre-Wave-7-B3) collection ids are exactly the planned Batch-7 collections");
 const groupById = new Map(manifest.groups.filter((g) => g.collectionDir).map((g) => [(g.collectionDir as string).split("/").pop()!, g] as const));
 for (const id of NEW_COLLECTION_IDS) {
   const c = collectionById(id) as LibraryCollection;
@@ -168,13 +174,13 @@ for (const id of existing2009) {
 // ── 6. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const CAP = 6;
-eq(shelves.flatMap((s) => s.entries).length - W7.discovery, 77, "/read discovery is 77 entries (excluding later Wave-7 B1)");
+eq(shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery, 77, "/read discovery is 77 entries (excluding later Wave-7 B1 + B2-B4)");
 eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "40 discovery entries initially visible");
 const fiction = shelves.find((s) => s.shelf.id === "fiction")!;
-eq(fiction.works.length, 157, "fiction discovery works 157");
-eq(fiction.entries.length, 18, "fiction discovery entries 18");
-eq(fiction.entries.filter((e) => e.kind === "collection").length, 6, "fiction shows 6 collection cards");
-eq(fiction.entries.filter((e) => e.kind === "work").length, 12, "fiction shows 12 standalone work cards");
+eq(fiction.works.length - W7B.fictionCat, 157, "fiction discovery works 157 (excluding later Wave-7 B2-B4 novels)");
+eq(fiction.entries.length - W7B.fictionDisc, 18, "fiction discovery entries 18 (excluding later Wave-7 B2-B4)");
+eq(fiction.entries.filter((e) => e.kind === "collection").length - W7B.collections, 6, "fiction shows 6 collection cards (excluding later arumbu-1978)");
+eq(fiction.entries.filter((e) => e.kind === "work").length - W7B.fictionStandalone, 12, "fiction shows 12 standalone work cards (excluding later Wave-7 B2-B4)");
 // The 8 non-collection Batch-7 works are standalone fiction entries; no Batch-7 collection member is.
 const standaloneIds = new Set(fiction.entries.filter((e) => e.kind === "work").map((e) => (e as { work: { id: string } }).work.id));
 for (const id of record.nonCollectionNewWorks) ok(standaloneIds.has(id), `${id} is a standalone Fiction discovery entry`);
@@ -184,7 +190,7 @@ eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.i
 
 // ── 7. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length - W7.sitemap, 3909, "sitemap has 3909 URLs (excluding later Wave-7 B1's 133)");
+eq(urls.length - W7.sitemap - W7B.sitemap, 3909, "sitemap has 3909 URLs (excluding later Wave-7 B1's 133 + B2-B4's 225)");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const urlSet = new Set(urls.map((u) => u.replace(/^https?:\/\/[^/]+/, "")));
 for (const s of b7Slugs) { ok(urlSet.has(`/stories/${s}`), `sitemap has /stories/${s}`); ok(urlSet.has(`/stories/${s}/source`), `sitemap has /stories/${s}/source`); }
@@ -195,10 +201,10 @@ ok(urlSet.has(`/collections/1977-kalaignar-karunanidhiyin-sirukathaigal`), "site
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size - W7.build, 3918, "build prerender routes == 3918 (excluding later Wave-7 B1's 133)");
+  eq(keys.size - W7.build - W7B.build, 3918, "build prerender routes == 3918 (excluding later Wave-7 B1's 133 + B2-B4's 225)");
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html - W7.build, 3913, "build .html == 3913 (excluding later Wave-7 B1's 133)");
+  eq(html - W7.build - W7B.build, 3913, "build .html == 3913 (excluding later Wave-7 B1's 133 + B2-B4's 225)");
   for (const s of b7Slugs) { ok(keys.has(`/stories/${s}`), `${s}: reader prerendered`); ok(keys.has(`/stories/${s}/source`), `${s}: source prerendered`); }
   for (const id of NEW_COLLECTION_IDS) ok(keys.has(`/collections/${id}`), `${id}: collection landing prerendered`);
 } else {
@@ -206,14 +212,14 @@ if (fs.existsSync(pm)) {
 }
 
 // ── 9. DURABLE RECORD cross-check ─────────────────────────────────────────────────────────────────────
-eq(record.publish.catalogue.after, works.length - W7.works, "record catalogue.after == live − Wave-7 B1");
-eq(record.publish.fiction.after, byShelf.fiction, "record fiction.after == live");
-eq(record.publish.storySlugs.after, STORY_SLUGS.length, "record storySlugs.after == live");
-eq(record.publish.collections.after, LIBRARY_COLLECTIONS.length, "record collections.after == live");
-eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery, "record discovery.after == live − Wave-7 B1");
-eq(record.publish.discovery.fictionEntries.after, fiction.entries.length, "record fiction discovery entries == live");
+eq(record.publish.catalogue.after, works.length - W7.works - W7B.works, "record catalogue.after == live − Wave-7 B1 − B2-B4");
+eq(record.publish.fiction.after, byShelf.fiction - W7B.fictionCat, "record fiction.after == live − Wave-7 B2-B4 novels");
+eq(record.publish.storySlugs.after, STORY_SLUGS.length, "record storySlugs.after == live (B2-B4 novels are not STORY_SLUGS)");
+eq(record.publish.collections.after, LIBRARY_COLLECTIONS.length - W7B.collections, "record collections.after == live − arumbu-1978");
+eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery, "record discovery.after == live − Wave-7 B1 − B2-B4");
+eq(record.publish.discovery.fictionEntries.after, fiction.entries.length - W7B.fictionDisc, "record fiction discovery entries == live − Wave-7 B2-B4");
 eq(record.publish.discovery.visible.after, shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), "record visible == live");
-eq(record.publish.sitemap.after, urls.length - W7.sitemap, "record sitemap.after == live − Wave-7 B1");
+eq(record.publish.sitemap.after, urls.length - W7.sitemap - W7B.sitemap, "record sitemap.after == live − Wave-7 B1 − B2-B4");
 eq(uniqSorted(record.pluralMembers), ["jaadi-kutti-poduma", "kuruvi-rameswaram"], "record plural members");
 for (const rc of record.collections) {
   const c = collectionById(rc.id)!;
@@ -272,8 +278,12 @@ if (SRC) {
 // ── 11. ADVERSARIAL ───────────────────────────────────────────────────────────────────────────────────
 const allSlugs = new Set(LIBRARY_WORKS.map((w) => w.slug));
 const storySlugSet = new Set(STORY_SLUGS as readonly string[]);
-// A1–A2: excluded works never entered the catalogue or the story registry.
-for (const ex of Object.keys(manifest.exclusions)) { ok(!allSlugs.has(ex), `excluded ${ex} is not a LibraryWork`); ok(!storySlugSet.has(ex), `excluded ${ex} is not in STORY_SLUGS`); }
+// A1–A2: excluded works never entered the catalogue or the story registry AS BATCH-7 STORIES. A handful
+// of Batch-7 exclusion candidates were later published by a DIFFERENT wave under the same name (e.g. the
+// Wave-7 B3 novel nadutheru-narayani), so the catalogue-absence check skips exactly those known later-wave
+// slugs; the STORY_SLUGS check stays absolute (a Batch-7 story registry never gained them).
+const W7B_LATER_SLUGS = new Set(["iratha-kanneer", "nachuk-koppai", "arumbu", "nadutheru-narayani", "sarapallam-samundi", "surulimalai", "vellikkizhamai", "aaru-maatha-kadungkaaval", "thudikkum-ilamai", "perumoochu", "viduthalai-kilarcci", "meesai-mulaiththa-vayathil", "pesum-kalai-valarppom"]);
+for (const ex of Object.keys(manifest.exclusions)) { ok(!allSlugs.has(ex) || W7B_LATER_SLUGS.has(ex), `excluded ${ex} is not a Batch-7 LibraryWork (later-wave namesakes permitted)`); ok(!storySlugSet.has(ex), `excluded ${ex} is not in STORY_SLUGS`); }
 // A3–A6: the two near-namesakes remain SEPARATE works, both in 1982 at their own ordinals.
 ok(allSlugs.has("nandiyur-nariyappan") && allSlugs.has("nariyur-nandiyappan"), "நந்தியூர் நரியப்பன் and நரியூர் நந்தியப்பன் are both distinct LibraryWorks");
 eq(storyJSON("nandiyur-nariyappan").title.ta !== storyJSON("nariyur-nandiyappan").title.ta, true, "the two namesakes have distinct printed titles");
@@ -293,12 +303,12 @@ for (const s of b7Slugs) eq(provJSON(s).batch, 7, `${s}: provenance batch === 7`
 // A11: no Batch-7 description fabricates a first-publication year (provenance-only copy).
 for (const s of b7Slugs) { const w = bySlug.get(s)!; ok(!/\b(18|19|20)\d{2}\b/.test(`${w.descTa} ${w.descEn}`), `${s}: description states no fabricated year`); }
 // A12: catalogue growth is exactly +116 over the pre-Batch-7 100 (Wave-7 B1's later +3 subtracted out).
-eq(works.length - 116 - W7.works, 100, "pre-Batch-7 catalogue was exactly 100");
+eq(works.length - 116 - W7.works - W7B.works, 100, "pre-Batch-7 catalogue was exactly 100");
 // A13: Fiction is the ONLY shelf whose census changed.
 const sortObj = (o: Record<string, number>) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
 // Subtract Batch-7's fiction AND the later Wave-7 B1 cinema works to recover the pre-Batch-7 census: this
 // proves BATCH-7 changed only Fiction (Wave-7 B1's cinema growth is a later, separate batch).
-eq(sortObj({ ...byShelf, fiction: byShelf.fiction - 116, "cinema-writing": byShelf["cinema-writing"] - W7.cinema }), sortObj({ "life-writing": 1, letters: 1, fiction: 41, poetry: 14, drama: 8, "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2 }), "Batch-7 grew only the Fiction shelf (Wave-7 B1 cinema subtracted out)");
+eq(sortObj({ ...byShelf, fiction: byShelf.fiction - 116 - W7B.fictionCat, "cinema-writing": byShelf["cinema-writing"] - W7.cinema, drama: byShelf.drama - W7B.drama, "essays-articles": byShelf["essays-articles"] - W7B.essays }), sortObj({ "life-writing": 1, letters: 1, fiction: 41, poetry: 14, drama: 8, "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2 }), "Batch-7 grew only the Fiction shelf (later Wave-7 B1 cinema + B2-B4 drama/novels/essays subtracted out)");
 // A14: the union of the 5 collections' distinct members equals 97 new + 16 (2009) − 0… i.e. new works in collections = 108.
 const inAnyCollection = new Set<string>(); for (const c of LIBRARY_COLLECTIONS.filter((x) => x.id !== "1977-kalaignar-karunanidhiyin-sirukathaigal")) for (const m of c.members) inAnyCollection.add(m.workId);
 eq(Array.from(inAnyCollection).filter((s) => b7Slugs.includes(s)).length, 108, "108 of the 116 new works belong to a Batch-7 collection (8 stand alone)");
@@ -306,8 +316,10 @@ eq(Array.from(inAnyCollection).filter((s) => b7Slugs.includes(s)).length, 108, "
 ok(!urlSet.has("/stories/not-a-real-story") && !urlSet.has("/collections/not-a-real-collection"), "sitemap contains no fabricated story/collection route");
 // A16: memberCount labels are non-empty for every Batch-7 collection.
 for (const id of NEW_COLLECTION_IDS) { const c = collectionById(id)!; ok(!!c.memberCount.labelTa && !!c.memberCount.labelEn, `${id}: memberCount labels present`); }
-// A17: every collection member is itself a discovered story (has a /stories route + STORY_SLUGS entry).
-for (const c of LIBRARY_COLLECTIONS) for (const m of c.members) ok(storySlugSet.has(m.workId), `collection member ${m.workId} is a discovered story slug`);
+// A17: every SHORT-STORY collection member is itself a discovered story (has a /stories route + STORY_SLUGS
+// entry). The Wave-7 B3 arumbu-1978 anthology is a NOVEL collection (members live on /novels, not
+// STORY_SLUGS); its membership integrity is owned by validate-wave7-b2-b4-p4-integration, so it is excluded.
+for (const c of LIBRARY_COLLECTIONS.filter((c) => c.id !== "arumbu-1978")) for (const m of c.members) ok(storySlugSet.has(m.workId), `collection member ${m.workId} is a discovered story slug`);
 // A18: no duplicate LibraryWork anywhere (plural membership never duplicated a work).
 eq(new Set(LIBRARY_WORKS.map((w) => w.id)).size, LIBRARY_WORKS.length, "LIBRARY_WORKS has no duplicate id");
 

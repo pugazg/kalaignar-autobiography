@@ -134,7 +134,12 @@ const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const routeKeys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
   for (const r of expectedTotal) ok(routeKeys.has(r), `route prerendered: ${r}`);
-  eq(routeKeys.size, p3.buildDelta.afterP3.prerenderRoutes, `build prerender total == recorded afterP3 (${p3.buildDelta.afterP3.prerenderRoutes})`);
+  // Wave 7 Batches 2–4 later added 224 direct + 1 collection route = 225 on top of this batch's afterP3
+  // total. Its own routes are proved by validate-wave7-b2-b4-*; here they are only added to the live total
+  // so this stays a live gate at the P4 tip without weakening B1's recorded afterP3 (4051).
+  const w7bLive = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "published");
+  const w7bBuild = w7bLive ? 225 : 0;
+  eq(routeKeys.size, p3.buildDelta.afterP3.prerenderRoutes + w7bBuild, `build prerender total == recorded afterP3${w7bBuild ? " + 225 (Wave-7 B2-B4)" : ""} (${p3.buildDelta.afterP3.prerenderRoutes + w7bBuild})`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
