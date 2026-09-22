@@ -300,7 +300,9 @@ ok("the Fiction shelf holds works outside the 1977 collection", fictionWorks.len
 // the shelf legitimately holds ~120 works outside this anthology — members of five other collections plus
 // eight standalone works — and the full census is owned by validate-wave6-b7-p4-integration.ts and
 // test-collections.ts. What stays this validator's business is a SOURCE-LOCAL negative: the specific
-// pre-existing standalone Fiction works that the 1977 source does not list must never become members.
+// pre-existing non-1977 Fiction works that the 1977 source does not list must never become 1977 members.
+// (பெரிய இடத்துப் பெண் is a member of the LATER Wave-7 arumbu-1978 collection via its 1978 witness occurrence —
+// still never a 1977 member — which is exactly the cross-collection independence this negative guards.)
 for (const outsider of ["kizhavan-kanavu", "balipeedam-nokki", "periya-idathup-pen", "pudhaiyal"]) {
   ok(`${outsider} is a published Fiction work`, workById.get(outsider)?.shelf === "fiction");
   ok(`${outsider} is not a 1977 member`, !declBySlug.has(outsider));

@@ -31,6 +31,15 @@ const eq = <T,>(a: T, b: T, l: string) => { checks++; if (JSON.stringify(a) !== 
 const uniqSorted = (a: string[]) => Array.from(new Set(a)).sort();
 const CAP = 6;
 
+// Wave 7 Batches 2–4 later published 13 works + the arumbu-1978 collection on top of this batch. They
+// change only the GLOBAL totals (catalogue/discovery/sitemap/build), never the Cinema shelf or Batch-1's
+// own 133 routes, so their contribution is folded into those four absolute totals once that cohort is live.
+const w7bLive = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "published");
+// discovery net +10: the arumbu trio + the pre-existing பெரிய இடத்துப் பெண் standalone card collapse into the
+// four-member arumbu-1978 collection.
+const W7B = { works: 13, discovery: 10, sitemap: 225, build: 225 };
+const g = (base: number, delta: number) => base + (w7bLive ? delta : 0);
+
 const rawOf = (slug: string) => JSON.parse(fs.readFileSync(path.join(root, "public/data/cinema", slug, "reader.json"), "utf8"));
 const provOf = (slug: string) => JSON.parse(fs.readFileSync(path.join(root, "public/data/cinema", slug, "provenance.json"), "utf8"));
 const frozen = JSON.parse(fs.readFileSync(path.join(root, "data/internal/wave7/b1-cinema.json"), "utf8")) as { works: any[] };
@@ -40,7 +49,7 @@ const NAAM_WRONG_SHA = "3043e1cd"; // reader_json_sha256 prefix — points at re
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 219, "catalogue is exactly 219 published works (216 + 3 Batch-1 cinema)");
+eq(works.length, g(219, W7B.works), `catalogue is exactly ${g(219, W7B.works)} published works (216 + 3 Batch-1 cinema${w7bLive ? " + 13 Wave-7 B2-B4" : ""})`);
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["cinema-writing"], 10, "Cinema Writing holds 10 works (7 + 3)");
@@ -72,7 +81,7 @@ for (const slug of WAVE7_CINEMA_SLUGS) {
 
 // ── 2. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, 80, "/read discovery is 80 entries (77 + 3)");
+eq(shelves.flatMap((s) => s.entries).length, g(80, W7B.discovery), `/read discovery is ${g(80, W7B.discovery)} entries (77 + 3${w7bLive ? " + 11 Wave-7 B2-B4" : ""})`);
 eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "40 discovery entries still visible (cinema already over cap)");
 eq(shelves.find((s) => s.shelf.id === "cinema-writing")!.entries.length, 10, "Cinema Writing renders 10 discovery entries");
 eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id)), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "same six over-cap shelves");
@@ -80,7 +89,7 @@ eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.i
 // ── 3. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace("https://nenjukkuneethi.org", "")));
-eq(urls.length, 4042, "sitemap has exactly 4042 URLs (3909 + 133)");
+eq(urls.length, g(4042, W7B.sitemap), `sitemap has exactly ${g(4042, W7B.sitemap)} URLs (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const p3Routes: string[] = p3.works.flatMap((w: any) => w.routes);
 eq(p3Routes.length, 133, "P3 manifest still declares 133 routes");
@@ -180,11 +189,11 @@ const clone = <T,>(x: T): T => JSON.parse(JSON.stringify(x));
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size, 4051, "build prerender routes == 4051 (3918 + 133)");
+  eq(keys.size, g(4051, W7B.build), `build prerender routes == ${g(4051, W7B.build)} (3918 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
   for (const r of p3Routes) ok(keys.has(r), `route prerendered: ${r}`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, 4046, "build .html == 4046 (3913 + 133)");
+  eq(html, g(4046, W7B.build), `build .html == ${g(4046, W7B.build)} (3913 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }

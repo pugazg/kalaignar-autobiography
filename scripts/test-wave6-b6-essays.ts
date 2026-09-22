@@ -103,12 +103,12 @@ ok(true, "Essay landing + article reader render for Batch-6 works without error"
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `A13: route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 219, "catalogue is 219 works (post Wave-7 B1: +3 cinema)");
-eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
+eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(LIBRARY_COLLECTIONS.length, 7, "public collection registry is 7 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978)");
 const essaysShelf = discoveryShelves().find((s) => s.shelf.id === "essays-articles");
 ok(!!essaysShelf, "Essays & Articles discovery shelf present");
 const essayEntries = essaysShelf ? essaysShelf.entries : [];
-eq(essayEntries.length, 9, "A12: Essays & Articles discovery is 9 entries (4 existing + 5 Wave-6 cards)");
+eq(essayEntries.length, 15, "A12: Essays & Articles discovery is 15 entries (4 existing + 5 Wave-6 cards + 6 Wave-7 B4 essays)");
 for (const s of WAVE6_ESSAY_SLUGS) {
   ok(works.some((w) => w.slug === s), `A11: ${s} IS in the catalogue`);
   ok(essayEntries.some((e) => (e as { slug?: string; work?: { slug?: string } }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `A12: ${s} IS an Essays discovery entry`);

@@ -54,11 +54,11 @@ ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-3 mani
 const urls = sitemap().map((e) => e.url);
 for (const slug of WAVE6_SPEECH_SLUGS) ok(urls.filter((u) => u === `${BASE}/speeches/${slug}` || u.startsWith(`${BASE}/speeches/${slug}/`)).length > 0, `${slug} URLs present in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 219, "catalogue is 219 works (post Wave-7 B1: +3 cinema)");
+eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
 for (const slug of WAVE6_SPEECH_SLUGS) ok(works.some((w) => w.slug === slug), `${slug} IS in the catalogue`);
 const speechEntries = discoveryShelves().find((s) => s.shelf.id === "speeches")!.entries;
 eq(speechEntries.length, 17, "Speeches discovery is 17 entries (3 Wave-6 cards added)");
-eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
+eq(LIBRARY_COLLECTIONS.length, 7, "public collection registry is 7 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978)");
 
 // ── 3. DATA SEMANTICS + RENDERED /source ────────────────────────────────────────
 for (const slug of WAVE6_SPEECH_SLUGS) eq(speech(slug).date, null, `${slug}: speech.date is null`);
@@ -117,4 +117,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b3-speeches — ${checks} checks, 0 failed`);
-console.log("  3 speeches · 6 direct routes (registry-derived, fail-closed) · two-House / 7-section / compilation semantics · date:null · P4: 6 sitemap URLs · catalogue 219 · Speeches discovery 17");
+console.log("  3 speeches · 6 direct routes (registry-derived, fail-closed) · two-House / 7-section / compilation semantics · date:null · P4: 6 sitemap URLs · catalogue 232 · Speeches discovery 17");

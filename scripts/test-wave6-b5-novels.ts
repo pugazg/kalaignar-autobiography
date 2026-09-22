@@ -24,7 +24,7 @@ import type { Novel, NovelProvenance } from "../data/novels";
 import { WAVE6_NOVEL_SLUGS } from "../lib/novels-wave6-routes";
 import sitemap from "../app/sitemap";
 import { publishedWorks } from "../data/library";
-import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
+import { discoveryShelves, LIBRARY_COLLECTIONS, collectionsForWork } from "../data/collections";
 
 const BASE = "https://nenjukkuneethi.org";
 let checks = 0;
@@ -110,16 +110,23 @@ ok(/நூல் அமைப்பு/.test(periyaSource), "periya source: show
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 219, "catalogue is 219 works (post Wave-7 B1: +3 cinema)");
-eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
+eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(LIBRARY_COLLECTIONS.length, 7, "public collection registry is 7 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978)");
 const fiction = discoveryShelves().find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "fiction discovery shelf present");
 const fictionEntries = fiction ? fiction.entries : [];
-eq(fictionEntries.length, 18, "Fiction discovery is 18 entries (post Batch-7: 6 collections + 12 standalone works)");
+eq(fictionEntries.length, 20, "Fiction discovery is 20 entries (7 collections incl. arumbu-1978 + 13 standalone: the 5 Wave-7 B3 novels add the arumbu-1978 card + surulimalai + vellikkizhamai, while arumbu/nadutheru-narayani/sarapallam-samundi AND the pre-existing பெரிய இடத்துப் பெண் collapse into the arumbu-1978 collection)");
+const isStandaloneFictionEntry = (s: string) => fictionEntries.some((e) => (e as { work?: { slug?: string }; slug?: string }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s);
 for (const s of WAVE6_NOVEL_SLUGS) {
   ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
-  ok(fictionEntries.some((e) => (e as { work?: { slug?: string }; slug?: string }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `${s} IS a Fiction discovery entry`);
 }
+// pudhaiyal remains a STANDALONE Fiction discovery card. பெரிய இடத்துப் பெண், once Wave-7 B3 published the
+// four-member arumbu-1978 collection (its 1978 witness occurrence is a member), collapses into that
+// collection card — so it is NO LONGER a standalone Fiction discovery entry, exactly like any collection
+// member. Its catalogue entry and its own /novels/periya-idathup-pen reader/route are unchanged.
+ok(isStandaloneFictionEntry("pudhaiyal"), "pudhaiyal IS a standalone Fiction discovery entry");
+ok(!isStandaloneFictionEntry("periya-idathup-pen"), "பெரிய இடத்துப் பெண் is NO LONGER a standalone Fiction discovery card (collapsed into arumbu-1978)");
+ok(collectionsForWork("periya-idathup-pen").some((c) => c.id === "arumbu-1978"), "பெரிய இடத்துப் பெண் is a member of the arumbu-1978 collection");
 // balipeedam-nokki (the previously discovered novel) is UNAFFECTED and still discovered.
 ok((NOVEL_SLUGS as readonly string[]).includes("balipeedam-nokki"), "balipeedam-nokki still in discovered NOVEL_SLUGS");
 ok(urls.includes(`${BASE}/novels/balipeedam-nokki`), "balipeedam-nokki still in sitemap");

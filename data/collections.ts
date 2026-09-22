@@ -205,6 +205,47 @@ export const LIBRARY_COLLECTIONS: LibraryCollection[] = [
   // ordinals taken from each publication's own printed order. Generated + proved against the frozen
   // source; see data/wave6-b7-catalogue.ts and scripts/validate-wave6-b7-p4-integration.ts.
   ...WAVE6_B7_COLLECTIONS,
+  // Wave 7 Batch 3 P4 — the 1978 அரும்பு compilation. Outcome A (collection-model PASS) from the frozen
+  // novel source; see data/internal/wave7/b2-b4-arumbu-1978-decision.json. The source (README title
+  // 'அரும்பு — 1978 நான்கு-கதைத் தொகுப்பு' + the publisher note) establishes a FOUR-story volume. This is
+  // NOT a canonical work: all four members stay independent LibraryWorks with their own /novels/<slug>
+  // routes, source pages and citation identity. Members are listed in the source's printed physical order
+  // (by scan range): அரும்பு 6-23, சாரப்பள்ளம் சாமுண்டி 24-48, பெரிய இடத்துப் பெண் 49-74, நடுத்தெரு நாராயணி 75-90.
+  // பெரிய இடத்துப் பெண் is an EXISTING Wave-6 B5 work whose controlling canonical edition is the 1953 eighth
+  // edition; its 1978 occurrence is an additional non-controlling witness. Membership here records physical
+  // publication PRESENCE, not controlling-edition authority — its canonical LibraryWork provenance/edition
+  // is unchanged — so it carries a collection-local extent (localScans 49-74) instead of the 1953 pages.
+  // No `localPages`: the source shows no visible printed number on the opening scan 49, so no display
+  // extent is inferred. The volume assigns no printed story-ordinals, so `ordinal` is left UNSET on every
+  // member (never invented 1/2/3/4); printed order is preserved by the array sequence alone.
+  {
+    id: "arumbu-1978",
+    shelf: "fiction",
+    titleTa: "அரும்பு (1978 தொகுப்பு)",
+    titleEn: "Arumbu (1978 compilation)",
+    kind: "anthology",
+    editionStatementTa: "முதற் பதிப்பு : 1978",
+    publisherTa: "தமிழ்க்கனி பதிப்பகம், சென்னை-28",
+    memberCount: { value: 4, labelTa: "படைப்புகள்", labelEn: "works" },
+    href: "/collections/arumbu-1978",
+    descTa: "1978 அரும்பு தொகுப்பு — ஒரே நூலில் வெளியான நான்கு தனிப் படைப்புகள், அச்சிட்ட வரிசையில்.",
+    descEn: "The 1978 அரும்பு compilation — four distinct works published in one volume, in printed order.",
+    source: {
+      repository: "pugazg/kalaignar-novels",
+      pinnedCommit: "cc5c7fe535c5fab35e87f91b8325d6801afec46c",
+      collectionPath: "collections/arumbu-1978",
+      collectionTree: "851ea306fc27ba73ea1c46dbafead51c659e6ba4",
+      scanSha256: "04a3013e1f58a1800867acc5d2f159976c47994a64478036e6fe0201edf120bc",
+    },
+    members: [
+      { workId: "arumbu" },
+      { workId: "sarapallam-samundi" },
+      // Existing 1953-controlled work; the 1978 volume is an additional witness. Its collection-local
+      // extent is the 1978 scan span, so the landing shows this publication's presence, not the 1953 pages.
+      { workId: "periya-idathup-pen", localScans: "49-74" },
+      { workId: "nadutheru-narayani" },
+    ],
+  },
 ];
 
 /**

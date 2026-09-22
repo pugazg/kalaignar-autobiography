@@ -611,9 +611,18 @@ check("witness relations encode no poem text (registry-only)", !/POETRY_WITNESS_
   // nothing about how many collections exist. The definitions themselves are counted instead.
   const m = /export const LIBRARY_COLLECTIONS:[^=]*=\s*\[([\s\S]*?)\n\];/.exec(collectionsTs);
   check("LIBRARY_COLLECTIONS is declared", !!m);
-  const defs = (m?.[1].match(/^ {2}\{$/gm) ?? []).length;
-  eq("exactly one LibraryCollection is defined", defs, 1);
-  check("COLLECTION_IDS is derived from that one list, not hand-written", /export const COLLECTION_IDS = LIBRARY_COLLECTIONS\.map/.test(collectionsTs));
+  // Wave-4 introduced NO new collection; the only Wave-4-era inline collection was the 1977 anthology.
+  // Later waves legitimately add more (Wave-7 B3's arumbu-1978 is inline; Batch-7's are a spread), so this
+  // reconstructs the historical Wave-4 invariant by excluding recognized later declarations rather than by
+  // tracking a moving global literal. An UNEXPECTED inline collection (e.g. a Wave-4 poem) still fails.
+  const inlineCollectionIds = [...(m?.[1] ?? "").matchAll(/^ {4}id: "([^"]+)"/gm)].map((x) => x[1]);
+  const BENCHMARK_1977 = "1977-kalaignar-karunanidhiyin-sirukathaigal";
+  const KNOWN_LATER_COLLECTIONS = new Set(["arumbu-1978"]); // Wave-7 B3 inline declaration, later than Wave-4
+  eq("the 1977 anthology is still declared inline exactly once", inlineCollectionIds.filter((id) => id === BENCHMARK_1977).length, 1);
+  for (const slug of ALL_SLUGS) check(`Wave-4 poem ${slug} did not become a LibraryCollection`, !inlineCollectionIds.includes(slug));
+  check("no unexpected inline collection beyond 1977 + recognized later declarations", inlineCollectionIds.every((id) => id === BENCHMARK_1977 || KNOWN_LATER_COLLECTIONS.has(id)));
+  eq("Wave-4 introduced no new collection (inline count minus later-wave declarations == 1)", inlineCollectionIds.filter((id) => !KNOWN_LATER_COLLECTIONS.has(id)).length, 1);
+  check("COLLECTION_IDS is derived from that list, not hand-written", /export const COLLECTION_IDS = LIBRARY_COLLECTIONS\.map/.test(collectionsTs));
 }
 
 // ── 26. The sitemap has no duplicates ────────────────────────────────────────────────────────────

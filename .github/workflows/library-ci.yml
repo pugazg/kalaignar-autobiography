@@ -204,6 +204,24 @@ jobs:
       # build 4051/4046 unchanged, 0 new B2-B4 routes; none of the 13 slugs is a LibraryWork or public URL.
       - name: Wave 7 Batches 2-4 P1 hidden-boundary
         run: npm run test:wave7-b2-b4-p1-hidden
+      # Wave 7 combined Batches 2-4 P2 — render layer. Proves the P1 payloads render through the EXISTING
+      # family readers (Play/Novel/Article) — generic components + the bounded novel adapter — and exercises
+      # the REAL English client-state path (initialShowEn), not just the Tamil default. Pure payload +
+      # component render; no source clone, no build artifacts.
+      - name: Wave 7 Batches 2-4 P2 render regression
+        run: npm run test:wave7-b2-b4-p2-render
+      # Wave 7 combined Batches 2-4 P3 — direct routes. Runs after Build so it reads the real .next: the 224
+      # routes (drama 83 + novels 62 + essays 79) re-derived independently == the P3 manifest,
+      # generateStaticParams fail-closed, surulimalai's 6/7 chapter gap preserved, and the phase-appropriate
+      # discovery/sitemap/build state (hidden pre-P4; published + arumbu-1978 collection route at P4).
+      - name: Wave 7 Batches 2-4 P3 direct routes
+        run: npm run test:wave7-b2-b4-p3-routes
+      # Wave 7 combined Batches 2-4 P4 — the authoritative published-surface gate. Runs after Build so it
+      # reads the real .next: catalogue 219→232 (Drama 8→10, Fiction 157→162, Essays 9→15, Cinema 10),
+      # collections 6→7 (arumbu-1978: 3 members, ordinals unset, periya witness-only, trio never collapsed),
+      # discovery 80→91/40, sitemap 4042→4267/0, build 4275→4276 / 4270→4271, plus 18 adversarial checks.
+      - name: Wave 7 Batches 2-4 P4 publication integration
+        run: npm run test:wave7-b2-b4-p4-integration
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -617,6 +635,15 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-wave7-b2-b4-p1.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave7" "$KDL_SOURCES_DIR/kalaignar-novels-wave7" "$KDL_SOURCES_DIR/kalaignar-essays-wave7"
+      # Wave 7 combined Batches 2-4 P2 — INDEPENDENT source-fidelity of the render layer: re-derives every
+      # reading unit (drama scenes, adapted novel sections, essay articles) from the pinned stage-plays,
+      # novels and essays checkouts and proves the vendored payloads lose/invent nothing, the arumbu trio
+      # stay three works sharing one publication, surulimalai's 6/7 gap is preserved and nachuk's hold is
+      # carried verbatim. Runs in the source-integrity job because it needs the cloned sources.
+      - name: Wave 7 Batches 2-4 P2 — source render fidelity (13 works)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave7-b2-b4-p2-fidelity.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave7" "$KDL_SOURCES_DIR/kalaignar-novels-wave7" "$KDL_SOURCES_DIR/kalaignar-essays-wave7"
       - name: Speeches batch (Wave 6 B3)
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

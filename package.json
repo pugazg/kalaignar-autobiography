@@ -54,7 +54,12 @@
     "import:wave7-b3-novels": "node scripts/import-wave7-b3-novels.mjs",
     "import:wave7-b4-essays": "node scripts/import-wave7-b4-essays.mjs",
     "test:wave7-b2-b4-p1": "node scripts/validate-wave7-b2-b4-p1.mjs",
-    "test:wave7-b2-b4-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p1-hidden.ts"
+    "test:wave7-b2-b4-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p1-hidden.ts",
+    "test:wave7-b2-b4-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b2-b4-p2-render.ts",
+    "test:wave7-b2-b4-p2-fidelity": "node scripts/validate-wave7-b2-b4-p2-fidelity.mjs",
+    "build:wave7-b2-b4-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave7-b2-b4-p3-routes.ts",
+    "test:wave7-b2-b4-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p3-routes.ts",
+    "test:wave7-b2-b4-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p4-integration.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

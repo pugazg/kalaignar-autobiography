@@ -53,11 +53,12 @@ const shelves = discoveryShelves();
 const c = collectionById(BENCHMARK);
 
 // ── 1. Registry ──────────────────────────────────────────────────────────────────────────────────
-eq(LIBRARY_COLLECTIONS.length, 6, "six collections are declared (1977 + 5 Batch-7 short-story anthologies)");
+eq(LIBRARY_COLLECTIONS.length, 7, "seven collections are declared (1977 + 5 Batch-7 short-story anthologies + Wave-7 B3 arumbu-1978)");
 eq(COLLECTION_IDS, [
   BENCHMARK, "1982-mudiyatha-thodarkathai", "1987-kalaignar-sonna-kuttik-kathaigal",
   "2004-kalaignarin-kuttik-kathaigal", "2008-kalaignar-sonna-kathaigal", "2009-16-kathaiyinile",
-], "the route registry lists the 1977 benchmark plus the 5 Batch-7 collection ids");
+  "arumbu-1978",
+], "the route registry lists the 1977 benchmark, the 5 Batch-7 collection ids, then arumbu-1978");
 ok(!!c, "the benchmark collection resolves by id");
 if (!c) {
   console.error("collections — the benchmark collection is missing; nothing further can run");
@@ -90,26 +91,31 @@ const entries = shelves.flatMap((s) => s.entries);
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
-eq(works.length, 219, "the catalogue holds 219 published works (post Wave-7 B1: +3 cinema)");
-eq(entries.length, 80, "the page holds 80 discovery entries (post Wave-7 B1: +3 cinema)");
-eq(entries.filter((e) => e.kind === "collection").length, 6, "six collection entries across all shelves (1977 + 5 Batch-7)");
+eq(works.length, 232, "the catalogue holds 232 published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(entries.length, 90, "the page holds 90 discovery entries (post Wave-7 B2-B4: +10 net — +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now a collection member)");
+eq(entries.filter((e) => e.kind === "collection").length, 7, "seven collection entries across all shelves (1977 + 5 Batch-7 + arumbu-1978)");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "the Fiction shelf is rendered");
-eq(fiction!.works.length, 157, "Fiction holds 157 works (post Batch-7: +116 short stories)");
-eq(fiction!.entries.length, 18, "Fiction shows 18 discovery entries (6 collections collapse; 12 standalone works)");
+eq(fiction!.works.length, 162, "Fiction holds 162 works (post Batch-7: +116 short stories; post Wave-7 B2-B4: +5 novels)");
+eq(fiction!.entries.length, 20, "Fiction shows 20 discovery entries (7 collections collapse; 13 standalone works)");
 eq(
   fiction!.entries.map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)),
   [
-    // Collections first, in declaration order (1977 then the 5 Batch-7), then standalone works.
+    // Collections first, in declaration order (1977, the 5 Batch-7, then Wave-7 B3 arumbu-1978), then standalone works.
     BENCHMARK, "1982-mudiyatha-thodarkathai", "1987-kalaignar-sonna-kuttik-kathaigal",
     "2004-kalaignarin-kuttik-kathaigal", "2008-kalaignar-sonna-kathaigal", "2009-16-kathaiyinile",
-    "balipeedam-nokki", "kizhavan-kanavu", "periya-idathup-pen", "pudhaiyal",
+    "arumbu-1978",
+    // பெரிய இடத்துப் பெண் is NO LONGER a standalone card — it is now a member of arumbu-1978 (its 1978 witness
+    // occurrence), so it collapses into the collection card exactly as the arumbu trio do.
+    "balipeedam-nokki", "kizhavan-kanavu", "pudhaiyal",
     // The 8 Batch-7 works that belong to no collection (periodical 3, 1976 2, 1969, 1953, 1997).
     "seerazhitha-sirippu", "madurai-selavu", "kondru-varuga", "naattiya-kalarani", "maanam",
     "neruppu", "vilaiyal-vangalaiyo", "nanbana",
+    // The 2 Wave-7 B3 standalone novels (arumbu/nadutheru-narayani/sarapallam-samundi collapse into arumbu-1978).
+    "surulimalai", "vellikkizhamai",
   ],
-  "Fiction shows the 6 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7)",
+  "Fiction shows the 7 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7 + 2 Wave-7 B3 novels; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)",
 );
 
 // The collection appears once; no member appears as its own card.
@@ -138,8 +144,8 @@ eq((html.match(/<details/g) ?? []).length, 6, "the six over-cap shelves (incl. F
 // The shelf heading states works, never entries.
 const fictionSection = html.slice(html.indexOf('aria-labelledby="shelf-fiction"'));
 const fictionHeading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(fictionSection);
-ok(!!fictionHeading && /\b157\b/.test(fictionHeading[1]), "the Fiction heading states 157 works, not 18");
-ok(!!fictionHeading && /\b6\b/.test(fictionHeading[1]), "the Fiction heading states its 6 collections");
+ok(!!fictionHeading && /\b162\b/.test(fictionHeading[1]), "the Fiction heading states 162 works, not 21");
+ok(!!fictionHeading && /\b7\b/.test(fictionHeading[1]), "the Fiction heading states its 7 collections");
 
 // ── 3. Reverse lookup is derived, plural, and not stored ─────────────────────────────────────────
 // Batch 7's 2009 anthology reprints eleven 1977 stories, so those members now legitimately belong to TWO

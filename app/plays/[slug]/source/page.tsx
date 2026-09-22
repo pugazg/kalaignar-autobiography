@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import PlaySource from "@/components/PlaySource";
 import { PLAY_SLUGS, type Play, type PlayProvenance } from "@/data/plays";
 import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
+import { WAVE7_DRAMA_SLUGS } from "@/lib/drama-wave7-routes";
 
 function load(slug: string): { play: Play; prov: PlayProvenance } | null {
   const dir = path.join(process.cwd(), "public/data/plays", slug);
@@ -20,7 +21,7 @@ function load(slug: string): { play: Play; prov: PlayProvenance } | null {
 // Wave 6 P4: PLAY_SLUGS now includes the Wave-6 Drama works; the union is deduplicated (a `Set`) so
 // each `/source` page prerenders exactly once. WAVE6_DRAMA_SLUGS is retained as a helper registry.
 export function generateStaticParams() {
-  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS])).map((slug) => ({ slug }));
+  return Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS, ...WAVE7_DRAMA_SLUGS])).map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

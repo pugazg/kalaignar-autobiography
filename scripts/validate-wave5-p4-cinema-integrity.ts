@@ -257,30 +257,30 @@ eq(nonWave5Cinema.length, 65 + 133, "A4 non-Wave-5 cinema URLs = 65 ammaiyappan 
 // now lives in scripts/validate-wave6-p4-integration.ts; A5/A6 keep these as a coherence cross-check
 // confirming the six frozen Wave-5 Cinema families still sit correctly within the larger Reading Room.
 const works = publishedWorks();
-eq(works.length, 219, "A5 published works = 219 (post Wave-7 B1: +3 cinema)");
+eq(works.length, 232, "A5 published works = 232 (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 // Compare as sorted [shelf, count] pairs so a change in LIBRARY_WORKS declaration order (which sets
 // the object's key order) is not mistaken for a census change.
 const sortedCensus = (o: Record<string, number>) => Object.entries(o).sort((a, b) => a[0].localeCompare(b[0]));
 eq(sortedCensus(byShelf), sortedCensus({
-  "life-writing": 1, letters: 1, fiction: 157, poetry: 14, drama: 8,
-  "cinema-writing": 10, speeches: 17, "essays-articles": 9, "literary-commentary": 2,
-}), "A5 shelf census (post Wave-7 B1: Cinema Writing 7→10)");
+  "life-writing": 1, letters: 1, fiction: 162, poetry: 14, drama: 10,
+  "cinema-writing": 10, speeches: 17, "essays-articles": 15, "literary-commentary": 2,
+}), "A5 shelf census (post Wave-7 B2-B4: Fiction 157→162, Drama 8→10, Essays 9→15)");
 eq(Object.keys(byShelf).length, 9, "A5 exactly 9 non-empty shelves");
-eq(LIBRARY_COLLECTIONS.length, 6, "A5 collections = 6 (1977 + 5 Batch-7)");
+eq(LIBRARY_COLLECTIONS.length, 7, "A5 collections = 7 (1977 + 5 Batch-7 + arumbu-1978)");
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 80, "A5 discovery entries = 80 (post Wave-7 B1: +3 cinema)");
+eq(entries.length, 90, "A5 discovery entries = 90 (post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
 eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "A5 initially visible discovery entries = 40 (cinema already over-cap)");
 const cin = shelves.find((s) => s.shelf.id === "cinema-writing")!;
 eq(cin.entries.length, 10, "A5 Cinema renders 10 discovery entries (post Wave-7 B1: +3)");
 ok(cin.entries.length > CAP, "A5 Cinema is over the cap — disclosure control active (10 > 6)");
 eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "poetry", "speeches"], "A5 the six over-cap shelves (post Batch-7: Fiction joined)");
-eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 18, "A5 Fiction has 18 discovery entries despite 157 works (post Batch-7)");
+eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "A5 Fiction has 20 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)");
 
 // ── A6. Sitemap boundary ────────────────────────────────────────────────────────────────────────
-eq(urls.length, 4042, "A6 sitemap holds 4042 URLs (post Wave-7 B1: +133 cinema)");
+eq(urls.length, 4267, "A6 sitemap holds 4267 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225)");
 eq(new Set(urls).size, urls.length, "A6 sitemap has 0 duplicate URLs");
 
 // ── A7. Build-output boundary — SCOPED TO THE SIX FROZEN WAVE-5 CINEMA FAMILIES ────────────────────
@@ -327,5 +327,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`\nwave5-p4-cinema-integrity — ${checks} checks, 0 failed`);
-  console.log("  6 frozen Wave-5 Cinema works · 4 payloads byte-pinned · route families 59/48/95/55/18/71 = 346 · Wave-5 89 = 18+71 · post Wave-7 B1: 219 works · Cinema 10 · sitemap 4042/0");
+  console.log("  6 frozen Wave-5 Cinema works · 4 payloads byte-pinned · route families 59/48/95/55/18/71 = 346 · Wave-5 89 = 18+71 · post Wave-7 B2-B4: 232 works · Cinema 10 · sitemap 4267/0");
 }
