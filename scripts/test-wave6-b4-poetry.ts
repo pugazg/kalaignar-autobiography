@@ -78,11 +78,11 @@ ok(!routes.some((r) => /\/poems\/[^/]+\/\d+$/.test(r)), "no numeric-alias child 
 const urls = sitemap().map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 219, "catalogue is 219 works (post Wave-7 B1: +3 cinema)");
+eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
 for (const s of [...WAVE6_POEM_SLUGS, ...WAVE6_POETRY_PUBLICATION_SLUGS]) ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
 const poetryEntries = discoveryShelves().find((s) => s.shelf.id === "poetry")!.entries;
 eq(poetryEntries.length, 14, "Poetry discovery is 14 entries (8 Wave-6 cards added)");
-eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
+eq(LIBRARY_COLLECTIONS.length, 7, "public collection registry is 7 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978)");
 
 // ── 3. RENDER SEMANTICS (Tamil render — the SSR primary language) ────────────────
 {
@@ -176,4 +176,4 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`\nwave6-b4-poetry — ${checks} checks, 0 failed`);
-console.log("  8 works · 30 direct routes (registry-derived, fail-closed) · verse-novel renders as 11 sections · 1975 [1,2,4] no invented 03 · P4: catalogue 219 · Poetry discovery 14 · 30 sitemap URLs");
+console.log("  8 works · 30 direct routes (registry-derived, fail-closed) · verse-novel renders as 11 sections · 1975 [1,2,4] no invented 03 · P4: catalogue 232 · Poetry discovery 14 · 30 sitemap URLs");

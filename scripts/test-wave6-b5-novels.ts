@@ -110,12 +110,12 @@ ok(/நூல் அமைப்பு/.test(periyaSource), "periya source: show
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 219, "catalogue is 219 works (post Wave-7 B1: +3 cinema)");
-eq(LIBRARY_COLLECTIONS.length, 6, "public collection registry is 6 (1977 + 5 Batch-7 short-story anthologies)");
+eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(LIBRARY_COLLECTIONS.length, 7, "public collection registry is 7 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978)");
 const fiction = discoveryShelves().find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "fiction discovery shelf present");
 const fictionEntries = fiction ? fiction.entries : [];
-eq(fictionEntries.length, 18, "Fiction discovery is 18 entries (post Batch-7: 6 collections + 12 standalone works)");
+eq(fictionEntries.length, 21, "Fiction discovery is 21 entries (7 collections incl. arumbu-1978 + 14 standalone: post Wave-7 B2-B4 the 5 novels add arumbu-1978 collection card + surulimalai + vellikkizhamai; arumbu/nadutheru-narayani/sarapallam-samundi collapse into the collection)");
 for (const s of WAVE6_NOVEL_SLUGS) {
   ok(works.some((w) => w.slug === s), `${s} IS in the catalogue`);
   ok(fictionEntries.some((e) => (e as { work?: { slug?: string }; slug?: string }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `${s} IS a Fiction discovery entry`);
