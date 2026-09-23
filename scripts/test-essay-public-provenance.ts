@@ -8,7 +8,8 @@
  *
  * Two defects, both "internal workflow state published as provenance":
  *  A. Public `notes` carried stale workflow checkpoints ("Wave 6 P1–P3 Batch 6 …", "… intentionally absent
- *     from the public catalogue … (Wave-6 P4 not authorized)") on already-published works.
+ *     from the public catalogue … (Wave-6 P4 not authorized)") on already-published works; the three Wave-3
+ *     essays carried an importer-emitted "Bulk Onboarding Wave 3." label (scripts/import-wave3-essays.mjs).
  *  B. `/essays/[slug]/source` passed the WHOLE archival provenance record to the client component
  *     `ArticleSource`, so internal fields such as the frozen Wave-7 P1 `hidden` object were serialized into
  *     the page HTML (RSC payload) although never rendered.
@@ -37,17 +38,18 @@ const en = (el: React.ReactElement) => renderToStaticMarkup(createElement(LangPr
 const visible = (h: string) => h.replace(/<[^>]*>/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#x27;/g, "'");
 
 const WAVE6_B6 = ["ina-muzhakkam", "kolaikkalam", "kudumbaththin-nalvilakku", "sinthanaiyum-seyalum", "vedhanai-ch-siraiyinindrum-viduthalai-pera"];
+const WAVE3 = ["kayittril-thongiya-kanapathi", "unarchchimaalai", "thiraavida-sampaththu"];
 const WAVE7_B4 = ["aaru-maatha-kadungkaaval", "thudikkum-ilamai", "perumoochu", "viduthalai-kilarcci", "meesai-mulaiththa-vayathil", "pesum-kalai-valarppom"];
 const ALL = fs.readdirSync(path.join(root, "public/data/essays")).filter((s) => fs.existsSync(path.join(root, "public/data/essays", s, "provenance.json"))).sort();
-ok(ALL.length === 15 && [...WAVE6_B6, ...WAVE7_B4].every((s) => ALL.includes(s)), `15 essay provenance records incl. the 5 Wave-6 B6 + 6 Wave-7 B4 (found ${ALL.length})`);
+ok(ALL.length === 15 && [...WAVE3, ...WAVE6_B6, ...WAVE7_B4].every((s) => ALL.includes(s)), `15 essay provenance records incl. the 3 Wave-3 + 5 Wave-6 B6 + 6 Wave-7 B4 (found ${ALL.length})`);
 
 // Stale workflow-state wording — never durable public provenance.
-const STALE_NOTE = /Wave[\s-]*\d|Batch\s*\d|\bP[0-9](?:[–-]P?[0-9])?\b|not authori[sz]ed|intentionally absent|absent from the public catalogue|Direct reader routes only|direct routes only|hidden foundation|\/read discovery|not (?:yet )?(?:published|discoverable|public)/i;
-const STALE_PAGE = /Wave 6 P1|Batch 6|P4 not authori[sz]ed|not authori[sz]ed|intentionally absent|absent from the public catalogue|Direct reader routes only|hidden foundation/i;
+const STALE_NOTE = /Onboarding|Wave[\s-]*\d|Batch\s*\d|\bP[0-9](?:[–-]P?[0-9])?\b|not authori[sz]ed|intentionally absent|absent from the public catalogue|Direct reader routes only|direct routes only|hidden foundation|\/read discovery|not (?:yet )?(?:published|discoverable|public)/i;
+const STALE_PAGE = /Bulk Onboarding|Onboarding Wave|Wave 6 P1|Batch 6|P4 not authori[sz]ed|not authori[sz]ed|intentionally absent|absent from the public catalogue|Direct reader routes only|hidden foundation/i;
 const PDF_NOTE = "The controlling PDF is not vendored into this repository and is never fetched at runtime.";
 
-// ── (A) PUBLIC NOTES — the five Wave-6 B6 essays (and the six Wave-7 B4 essays fixed in PR #92) ───────────
-for (const slug of [...WAVE6_B6, ...WAVE7_B4]) {
+// ── (A) PUBLIC NOTES — the three Wave-3, five Wave-6 B6 and six Wave-7 B4 essays ───────────────────────────
+for (const slug of [...WAVE3, ...WAVE6_B6, ...WAVE7_B4]) {
   const prov = load(slug);
   ok(prov.notes.every((n) => !STALE_NOTE.test(n)), `${slug}: public notes carry no workflow-state wording (${prov.notes.filter((n) => STALE_NOTE.test(n)).join(" | ")})`);
   ok(prov.notes.includes(PDF_NOTE), `${slug}: durable PDF-not-vendored note retained`);
@@ -56,6 +58,22 @@ for (const slug of [...WAVE6_B6, ...WAVE7_B4]) {
     const v = visible(h);
     ok(!STALE_PAGE.test(v), `${slug} Source & provenance (${lbl}): no stale workflow-state phrase (${(v.match(STALE_PAGE) || [])[0]})`);
     ok(v.includes(PDF_NOTE), `${slug} Source & provenance (${lbl}): PDF-not-vendored note rendered`);
+  }
+}
+
+// ── (A2) WAVE-3 — the notes are GENERATED, so the generator itself must not emit a workflow label ─────────
+{
+  const importer = fs.readFileSync(path.join(root, "scripts/import-wave3-essays.mjs"), "utf8");
+  const notesBlock = importer.match(/\n\s*notes: \[([\s\S]*?)\n\s*\],/);
+  const emitted = notesBlock ? Array.from(notesBlock[1].matchAll(/"((?:[^"\\]|\\.)*)"/g), (m) => m[1]) : [];
+  ok(emitted.length === 2 && emitted.every((n) => !STALE_NOTE.test(n)), `import-wave3-essays.mjs: emitted public notes carry no workflow label (${emitted.filter((n) => STALE_NOTE.test(n)).join(" | ")})`);
+  const CONTENTS_NOTE = "This publication prints no contents page; article ordinals are archive reading ordinals.";
+  for (const slug of WAVE3) {
+    const prov = load(slug);
+    ok(JSON.stringify(prov.notes) === JSON.stringify(emitted) && JSON.stringify(prov.notes) === JSON.stringify([PDF_NOTE, CONTENTS_NOTE]),
+      `${slug}: public notes == generator output == the two durable source facts (PDF not vendored; no printed contents page)`);
+    ok(prov.notes.every((n) => !/Bulk Onboarding|Onboarding|Wave[\s-]*3|hidden foundation|not authori[sz]ed|intentionally absent|Direct reader routes only/i.test(n)), `${slug}: no Bulk Onboarding / Wave 3 / phase wording in public notes`);
+    ok(prov.sourceCommit === "6814e979fd3c2cefa14cbeb17eeec28164ce28f5" && !!prov.source.scanFilename && /^[0-9a-f]{64}$/.test(prov.source.scanSha256 ?? ""), `${slug}: source identity (pinned commit, scan filename, scan SHA-256) retained`);
   }
 }
 
@@ -192,6 +210,20 @@ if (!fs.existsSync(APP)) {
     }
   }
 
+  // Wave-3: the three /source pages carry the durable notes and source identity, and no onboarding label.
+  const W3_BUILT = /Bulk Onboarding|Onboarding|Wave[\s-]*3\b|hidden foundation|not authori[sz]ed|intentionally absent|Direct reader routes only/i;
+  for (const slug of WAVE3) {
+    const raw = load(slug);
+    for (const ext of ["html", "rsc"]) {
+      const f = path.join(APP, slug, `source.${ext}`);
+      if (!fs.existsSync(f)) continue;
+      const body = fs.readFileSync(f, "utf8");
+      ok(body.includes(raw.sourceCommit) && body.includes(raw.source.scanFilename) && body.includes(raw.source.scanSha256 ?? "\u0000") && body.includes(PDF_NOTE),
+        `${slug}: built /source.${ext} positive control — commit, scan filename, scan SHA-256 and the durable PDF note are serialized`);
+      ok(!W3_BUILT.test(body), `${slug}: built /source.${ext} carries no onboarding / Wave-3 / phase label (${(body.match(W3_BUILT) || [])[0]})`);
+    }
+  }
+
   // The split-transfer page: non-rendered transfer-part fields are absent from the serialized payload, while the
   // rendered ones (part number, global scan range, SHA-256) are present — a meaningful positive control.
   for (const ext of ["html", "rsc"]) {
@@ -211,4 +243,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nessay-public-provenance — ${checks} checks, 0 failed`);
-console.log(`  ${ALL.length} essay /source pages · notes durable (5 Wave-6 B6 + 6 Wave-7 B4) · frozen P1 hidden records retained internally · client props == allowlist projection · built HTML/RSC free of hidden/workflow state`);
+console.log(`  ${ALL.length} essay /source pages · notes durable (3 Wave-3 + 5 Wave-6 B6 + 6 Wave-7 B4; Wave-3 generator emits no workflow label) · frozen P1 hidden records retained internally · client props == allowlist projection · built HTML/RSC free of hidden/workflow state`);

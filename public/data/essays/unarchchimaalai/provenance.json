@@ -153,7 +153,7 @@
   "note": "Archive-derived counts, recomputed at import time from the frozen source."
  },
  "notes": [
-  "Bulk Onboarding Wave 3. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+  "The controlling PDF is not vendored into this repository and is never fetched at runtime.",
   "This publication prints no contents page; article ordinals are archive reading ordinals."
  ]
 }
