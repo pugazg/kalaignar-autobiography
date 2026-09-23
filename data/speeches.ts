@@ -396,6 +396,7 @@ export type SpeechProvenance = {
 // Lightweight catalog of integrated speech slugs (build/import authority; the public catalog
 // entry lives in data/library.ts). One benchmark per subtype so far: an assembly speech
 // (udhaya-kathir) and a public speech (poonthottam).
+import { WAVE7_SPEECH_SLUGS } from "@/lib/speeches-wave7-routes";
 export const SPEECH_SLUGS = [
   "udhaya-kathir",
   "poonthottam",
@@ -421,5 +422,7 @@ export const SPEECH_SLUGS = [
   "idhaya-perikai",
   "namathu-nilai",
   "palli-vazhkkai",
+  // ── Wave 7 P4 — the 100 B5a / B5b / B6 speeches, promoted from the Wave-7 route registry ──
+  ...WAVE7_SPEECH_SLUGS,
 ] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];

@@ -37,6 +37,7 @@
 // nothing structural — under the source-first rule that is not enough to declare membership.
 import { LIBRARY_WORKS, SHELVES, publishedWorks, type LibraryWork, type Shelf, type ShelfId } from "@/data/library";
 import { WAVE6_B7_COLLECTIONS } from "@/data/wave6-b7-catalogue";
+import { WAVE7_MUTHUKKULIYAL_COLLECTIONS } from "@/data/wave7-b5-b6-k-catalogue";
 
 export type CollectionKind = "anthology";
 
@@ -246,6 +247,10 @@ export const LIBRARY_COLLECTIONS: LibraryCollection[] = [
       { workId: "nadutheru-narayani" },
     ],
   },
+  // Wave 7 P4 — the two முத்துக் குளியல் volumes (Poompuhar Pathippagam, 2000): Part I 61 and Part II 36
+  // speeches, members and printed ordinals from each volume's own contents numbering at the frozen public-speeches
+  // pin. Every member stays its own LibraryWork with /speeches/<slug> routes; the collection only groups them.
+  ...WAVE7_MUTHUKKULIYAL_COLLECTIONS,
 ];
 
 /**
