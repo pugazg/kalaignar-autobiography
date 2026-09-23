@@ -18,6 +18,7 @@ import { LangProvider } from "../lib/i18n";
 import PlayLanding from "../components/PlayLanding";
 import PlayReader from "../components/PlayReader";
 import PlaySource from "../components/PlaySource";
+import { toPublicPlayHead, toPublicPlayProvenance } from "../lib/play-public-provenance";
 import type { Play, PlayProvenance } from "../data/plays";
 import { PLAY_SLUGS } from "../data/plays";
 import { WAVE6_DRAMA_SLUGS, wave6DramaSceneSlugs } from "../lib/drama-wave6-routes";
@@ -90,14 +91,14 @@ eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "public collection registry 
   const unEn = en(createElement(PlayReader, { play, scene: un, prev: null, next: null }));
   ok(/No Scene 22 or 23 number is assigned/i.test(unEn), "kagithapoo unnumbered reader states no Scene 22/23");
   ok(!play.readingUnits.some((u) => u.order === 22 || u.order === 23), "kagithapoo assigns no reading unit the order 22 or 23");
-  const srcEn = en(createElement(PlaySource, { play, prov }));
+  const srcEn = en(createElement(PlaySource, { play: toPublicPlayHead(play), prov: toPublicPlayProvenance(prov) }));
   ok(/1967/.test(srcEn), "kagithapoo source shows the 1967 edition witness");
 }
 
 // மணிமகுடம் — 47 scenes; 1962 claim recorded as context and never in the body.
 {
   const { play, prov } = load("manimagudam");
-  const srcEn = en(createElement(PlaySource, { play, prov }));
+  const srcEn = en(createElement(PlaySource, { play: toPublicPlayHead(play), prov: toPublicPlayProvenance(prov) }));
   ok(/1962/.test(srcEn) && /User-supplied catalogue context/i.test(srcEn), "manimagudam source records the 1962 Madurai claim as user-supplied context");
   ok(/May 1956/i.test(srcEn) && /1963/.test(srcEn), "manimagudam source shows the scan's own 1956 & 1963 stagings");
   const sceneEn = en(createElement(PlayReader, { play, scene: play.readingUnits[0], prev: null, next: play.readingUnits[1] }));
@@ -119,7 +120,7 @@ eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "public collection registry 
   const sru7 = play.readingUnits.find((u) => u.slug === "sru-07-udayasuriyan-kolam-close")!;
   const sru7Ta = ta(createElement(PlayReader, { play, scene: sru7, prev: null, next: null }));
   ok(/உதயசூரியன் கோலம்/.test(sru7Ta), "thiruvalar SRU-07 renders the உதயசூரியன் கோலம் intertitle");
-  const srcEn = en(createElement(PlaySource, { play, prov }));
+  const srcEn = en(createElement(PlaySource, { play: toPublicPlayHead(play), prov: toPublicPlayProvenance(prov) }));
   ok(/Documented source-condition holds/i.test(srcEn), "thiruvalar source shows the documented-holds card");
   ok(/1965/.test(en(createElement(PlayLanding, { play }))), "thiruvalar landing shows the 2nd-edition/1965 witness");
 }

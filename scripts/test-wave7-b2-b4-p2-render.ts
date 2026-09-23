@@ -19,6 +19,7 @@ import { LangProvider } from "../lib/i18n";
 import PlayLanding from "../components/PlayLanding";
 import PlayReader from "../components/PlayReader";
 import PlaySource from "../components/PlaySource";
+import { toPublicPlayHead, toPublicPlayProvenance } from "../lib/play-public-provenance";
 import NovelLanding from "../components/NovelLanding";
 import NovelReader from "../components/NovelReader";
 import NovelSource from "../components/NovelSource";
@@ -53,7 +54,7 @@ for (const slug of ["iratha-kanneer", "nachuk-koppai"]) {
   const prov = load(`public/data/plays/${slug}/provenance.json`);
   let landing = "", source = "";
   try { landing = ta(createElement(PlayLanding, { play })); } catch (e) { fail.push(`${slug}: PlayLanding threw ${(e as Error).message}`); checks++; }
-  try { source = ta(createElement(PlaySource, { play, prov })); } catch (e) { fail.push(`${slug}: PlaySource threw ${(e as Error).message}`); checks++; }
+  try { source = ta(createElement(PlaySource, { play: toPublicPlayHead(play), prov: toPublicPlayProvenance(prov) })); } catch (e) { fail.push(`${slug}: PlaySource threw ${(e as Error).message}`); checks++; }
   ok(landing.includes(esc(play.title.ta)) && hasTamil(landing), `${slug}: PlayLanding renders Tamil title`);
   ok(!LEAK.test(landing), `${slug}: no leak on PlayLanding`);
   ok(hasTamil(source), `${slug}: PlaySource renders`);

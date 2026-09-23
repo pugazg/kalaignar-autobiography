@@ -6,6 +6,7 @@ import PlaySource from "@/components/PlaySource";
 import { PLAY_SLUGS, type Play, type PlayProvenance } from "@/data/plays";
 import { WAVE6_DRAMA_SLUGS } from "@/lib/drama-wave6-routes";
 import { WAVE7_DRAMA_SLUGS } from "@/lib/drama-wave7-routes";
+import { toPublicPlayHead, toPublicPlayProvenance } from "@/lib/play-public-provenance";
 
 function load(slug: string): { play: Play; prov: PlayProvenance } | null {
   const dir = path.join(process.cwd(), "public/data/plays", slug);
@@ -33,5 +34,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function Page({ params }: { params: { slug: string } }) {
   const d = load(params.slug);
   if (!d) notFound();
-  return <PlaySource play={d.play} prov={d.prov} />;
+  // Server → client boundary: the archival records stay on the server; only the allowlisted public
+  // projections are serialized into the page (see lib/play-public-provenance).
+  return <PlaySource play={toPublicPlayHead(d.play)} prov={toPublicPlayProvenance(d.prov)} />;
 }
