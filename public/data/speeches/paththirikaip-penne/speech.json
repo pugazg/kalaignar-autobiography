@@ -1,0 +1,531 @@
+{
+ "workId": "paththirikaip-penne",
+ "slug": "paththirikaip-penne",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/paththirikaip-penne",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1971-09-14",
+ "year": 1971,
+ "title": {
+  "ta": "பத்திரிகைப் பெண்ணே!",
+  "en": "O Woman of the Press!"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.48,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பத்திரிகைப் பெண்ணே!",
+    "sourcePage": 184
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஓர் ஏடு நடத்துவது என்பது எவ்வளவு சிக்கலானது - எவ்வளவு பிரச்சினைகளுக்குரியது - எத்தனை இடர்பாடுகளைத் தடக்க வேண்டியிருக்கிறது - என்பதைப் பற்றியெல்லாம் ஏடு நடத்தியவர்கள்தான் உண்மையிலேயே உணர முடியும். தமிழ்நாட்டிலே திராவிட முன்னேற்றக் கழகத்தினுடைய வேகமான வளர்ச்சி, நம்முடைய நாவலர் அவர்கள் குறிப்பிட்டதைப்போல - நம்மை இருட்டடிப்புச் செய்ய வேண்டும் என்று எண்ணி நடத்தப்பட்ட ஏடுகளை எல்லாம் மீறிக் கொண்டு பெற்ற வளர்ச்சியாகும்.",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்திரிகைகளைப் பற்றிப் புரட்சிக் கவிஞர் பாரதிதாசன் அழகாகப் பாடினார்.",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“காரிருள் அகத்தில் நல்ல  \nகதிரொளி நீதான்! நல்ல  \nபேரறிவாளர் நெஞ்சில்  \nபிறந்த பத்திரிகைப் பெண்ணே!”",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று. நான்கூட அவருடைய கவிதைகளை அந்தக் காலத்திலே படித்தபோது, “காரிருள் அகத்தில் நல்ல கதிரொளி நீதான்” என்று குறிப்பிட்டார். சரி! “பேரறிவாளர் நெஞ்சில் பிறந்த பத்திரிகைப் பெண்ணே!” என்று ஏன் பத்திரிகையைப் பெண்ணாகக் குறிப்பிட்டார் என்று, எனக்கு நானே கேட்டுக் கொண்ட துண்டு.",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்பொழுதுதான் அதற்கான விடை கிடைத்திருப்பதாக நான் உணர்கிறேன்! பத்திரிகைகளில் கொதிக்கும்",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எழுத்துக்கள் வருகின்றன. பத்திரிகைகளில் தாங்க முடியாத தாக்குதல்கள் வருகின்றன. எதிர்க்கட்சிகளின் கணைகள் பாய்கின்றன. பகைப்புலத்தைச் சுட்டெரிக்கும் சொல் மாரிகள் எல்லாம் கிளம்புகின்றன. ஆனாலும் புரட்சிக் கவிஞர் அவர்கள் பத்திரிகையைப் பெண்ணே என்று வர்ணித்திருப்பதற்குக் காரணம் உண்டு. வள்ளுவர் சொல்லும் பெண்ணுக்குரிய இலக்கணம் நான்கு.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தற்காத்துத் தற்கொண்டான் பேணித் தகைசான்ற  \nசொற்காத்துச் சோர்விலாள் பெண்!”",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று வள்ளுவர் பாடினார்.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்திரிகையும் முதலில் தன்னைக் காத்துக் கொள்ள வேண்டும். ஒரு பெண் எப்படித் தன்னைக் காத்துக் கொள்ள வேண்டுமோ - தன் கற்பைக் காத்துக் கொள்ள வேண்டுமோ - அதைப் போலவே ஒரு பத்திரிகையும் தன்னைக் காத்துக் கொள்ள வேண்டும்.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முதலில் தன்னைக் காத்துக் கொள்ள வேண்டும் என்றால், அந்தப் பத்திரிகையை நடத்துவதற்கு நல்ல வியாபாரத் தந்திரங்கள் தெரிந்திருக்க வேண்டும்.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்திரிகையை எப்படி மக்களிடத்திலே பரப்புவது; மக்கள் எதையெதை விரும்புவார்கள்; எந்தெந்த எண்ணங்கள் மக்களுக்குத் தருவது; எப்படி எழுத்துக்கள் எழுதுவது; எப்படி ஒரு விஷயத்தைச் சித்தரிப்பது என்பனவற்றையெல்லாம் தெரிந்து கொள்ள வேண்டும். இவைகளுக்கெல்லாம் மேலாக ஒரு பத்திரிகை தொடங்குவதற்கு முன்பு - இந்தக் காலத்தில் அதிக விளம்பரங்கள் தேவை. முதலில் பத்திரிகை நடத்துபவர்கள் தாமதம் எனும் குறைபாட்டிலிருந்து தங்களை விடுவித்துக் கொள்ள வேண்டும். இந்தக் குறைபாடு களையப்பட்டால்தான் “தற்காத்து” என்கிற அந்தப் பொருளுக்கு உண்மையானவர்களாகத் திகழ முடியும்.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடுத்து வள்ளுவர் “தற்கொண்டான் பேணி” என்றார். பெண்ணுக்குச் சொல்கிற நேரத்தில், கணவனைப் பாதுகாத்துக் - கணவனைப் பேணிக் - கணவனுக்கு காவலாக இருந்து என்று பலவாறாகப் பொருள்படுகின்ற, அளவுக்குச் சொன்னார். ஆனால் பத்திரிகை தான் சொல்கிற - சொல்லவிருக்கிற “கொள்கைகளைப் பேணிட” வேண்டும்!",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எந்தக் கொள்கைகளுக்காக இருக்கின்றோமோ - அந்தக் கொள்கைகளை மறந்துவிடாமல் பாதுகாக்க வேண்டும். அதுவே “தகைசான்ற சொற்காத்தல்.” இதுதான் பத்திரிகைகளுக்கு மிக முக்கியம். சொற்காத்து என்றால் எந்தச் சொல்லைச் சொன்னாலும் காக்க வேண்டும் என்று பொருள் வந்து விடுமோ என்று வள்ளுவர் பயந்து - “தகுதியான சொல்லைக் காப்பாற்றுவாள் பெண்” என்று குறிப்பிட்டார்.",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தகைசான்ற சொற்காத்துப் பெண்கள் இன்று நடமாடுகிறார்களா என்றால் - இல்லை; மன்னிக்கவும்; நான் குறிப்பிடுவது பத்திரிகைப் பெண்ணை!",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஓரிரு இடங்களில் காணப்படுகிறதே தவிர பத்திரிகை உலகத்தில் தகைசான்ற சொற்காத்து இருக்கின்ற பத்திரிகைப் பெண்கள் மிகமிகக் குறைவு.",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதிதாசன் பத்திரிகையைப் பெண்ணுக்கு ஒப்பிட்டதற்குக் காரணமே - ஒரு பெண்ணுக்குரிய அடக்கம் பத்திரிகைக்கு இருக்க வேண்டும் - ஒரு பெண்ணுக்குரிய அழகு பத்திரிகைக்கு இருக்க வேண்டும் என்பதற்காகத்தான்.",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடக்கம் இருக்கிறது; ஆற்றல் இருக்கிறது; அறிவு இருக்கிறது என்று சொல்லிப் பத்திரிகைகளிலே நாலு பக்கத்திலும் கரியைப் பூசி, பார் என்று சொன்னால் இதற்கு அழகில்லை என்று யாரும் மதிக்க மாட்டார்கள். ஆகவேதான் பெண்ணுக்குரிய அடக்கம், அழகு இவைகள் எல்லாம் இருக்க வேண்டும்; அதோடு",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தகைசான்ற சொற்கள் இருக்க வேண்டும். காலையிலே பத்திரிகைகளைப் பார்த்தால் - எவ்வளவு இழிதகைமையான எழுத்து - எவ்வளவு அலங்கோலச் சொற்கள் - எவ்வளவு காது கொடுத்துக் கேட்கத் தகாத வார்த்தைகள் - இன்றைக்கும் பத்திரிகைகளிலே வெளியிடப்படுகின்றன என்பதை நீங்கள் நன்றாக அறிவீர்கள்!",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதையெல்லாம் எண்ணிப் பார்த்துத்தான் பாரதிதாசன் பத்திரிகையைப் பெண் என்று சொன்னார். அதற்கு முன்பே பெண்ணுக்குரிய இலக்கணத்தை வள்ளுவர் வகுத்தார்.",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தகைசான்ற சொற்காத்து என்று சொன்னதற்குப் பிறகு சோர்விலாள் பெண் என்று சொன்னான். பத்திரிகை நடத்துவதில் சோர்வு இருக்கக்கூடாது. ஆரம்பத்தில் அதிகமாக விற்பனையாகவில்லையே என்று சோர்ந்தால் - அந்தச் சோர்வு - தொடரும். சென்ற வாரம் 10 ஆயிரம் விற்றதே; இந்த வாரம் குறைந்து விட்டதே என்று சோர்ந்தால் பத்திரிகை விற்காது. நாம் சோர்வடையாமல் இருக்க வேண்டும்!",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனக்கு நன்றாக நினைவிருக்கிறது, பெரியார் அவர்கள் குடியரசுப் பத்திரிகையை ஆரம்பித்த காலத்தில் பச்சை அட்டைப் பத்திரிகை என்று பெயர் இருந்தது. அப்போது அதை படிப்பவர்கள், மற்றவர்கள் பார்த்துவிடக் கூடாது என்பதற்காகப் படித்து முடித்து விட்டு, அதை மற்றொரு பத்திரிகையில் சுருட்டி, அதைத்தங்களுடைய பக்கத்திலே வைத்துக்கொண்டு சென்ற நிலையெல்லாம் ஒரு காலத்தில் இருந்தது.",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவன் பச்சை அட்டைப் பத்திரிகையைப் படிப்பவன் என்றெல்லாம் குறை சொல்லப்பட்ட காலம் ஒன்று இருந்தது. அப்போது பெரியார் சொல்லுவார், “நான் வெளியிடுகின்ற - நான் எழுதுகின்ற - குடியரசுப் பத்திரிகையை யாரும் வாங்கினாலும் வாங்காவிட்டாலும் கவலையில்லை; நான் ஒருவனே எழுதி, நான் ஒருவனே",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அச்சடித்து, நான் ஒருவனே படித்துக் கொள்கிறேன்” என்று! அப்படிச் சொன்ன காரணத்தினால்தான் குடியரசுப் பத்திரிகை - அந்தப் பச்சை அட்டைப் பத்திரிகை - பிறகு பல்லாயிரக்கணக்கான வாசகர்களைப் பெறுகின்ற அளவுக்கு வளர்ந்து; சுயமரியாதைக் கொள்கைகளை வளர்த்து; பெரியார் அவர்களுடைய எண்ணங்களை - எழுத்துக்களை - நாட்டுக்குத் தருகின்ற அளவுக்குப் பெரிதாக வளர்ந்தது. அதன் காரணமாக இன்றைக்கு அறிவார்ந்த அரசு - பகுத்தறிவாளர்கள் நடத்துகின்ற அரசு அமைவதற்கு அது காரணமாக இருந்தது என்பதை நாம் யாரும் மறந்துவிட முடியாது.",
+      "sourcePage": 188,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     188
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே சோர்வு இருக்கலாகாது. சோர்வு இருந்தால் - நாம் எடுத்த முயற்சி - அதுவும் பத்திரிகைத் துறையில் வீர நடை போட முடியாது.",
+      "sourcePage": 188,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     188
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1971-ஆம் ஆண்டு செப்டம்பர் 14-ஆம் நாள் ‘தி ரைசிங் சன்’ ஆங்கில வார ஏடு துவக்க விழாவில் ஆற்றிய சொற்பொழிவு.",
+    "sourcePage": 188
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "O Woman of the Press!",
+    "sourcePage": 184
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Only those who have run a journal truly know how difficult it is—the problems, obstacles and pressures involved. The DMK's growth in Tamil Nadu came despite newspapers that tried to keep us in darkness.",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Bharathidasan called the newspaper a woman born in the heart of enlightened people and a ray of light in darkness. I once wondered why he chose the image of a woman.",
+      "sourcePage": 184,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     184
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The answer, I suggest, lies in Valluvar's description of womanly virtue: self-protection, loyalty, worthy speech and freedom from weariness.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A newspaper too must first preserve itself. That requires sound management, understanding readers, presenting ideas effectively, attracting circulation and avoiding the delays and weaknesses that can destroy a publication.",
+      "sourcePage": 185,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     185
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It must also preserve the principles for which it exists. “Guarding worthy speech” means not merely defending whatever words one happens to print, but maintaining standards in what one says.",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A newspaper needs restraint, dignity and beauty as well as energy and intelligence. Vulgar language or verbal ugliness cannot be excused merely by claiming boldness.",
+      "sourcePage": 186,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     186
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A newspaper must also avoid discouragement. Sales may fall; attacks may come; but weariness cannot be allowed to defeat the publication.",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I recall the early days of Periyar's *Kudiyarasu*, once known as the green-cover paper. Some readers were so afraid of being seen with it that they hid it inside another newspaper.",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Periyar would say that even if nobody bought it, he would write it, print it and read it himself.",
+      "sourcePage": 187,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     187
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That determination helped *Kudiyarasu* grow to thousands of readers, spread Self-Respect ideas and carry Periyar's thinking across the country. It contributed to creating the rationalist political climate we see today.",
+      "sourcePage": 188,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     188
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So there can be no surrender to fatigue. A journal that gives in to discouragement cannot march boldly in the field of journalism.",
+      "sourcePage": 188,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     188
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Lecture delivered on 14 September 1971 at the launch of the English weekly *The Rising Sun*.",
+    "sourcePage": 188
+   }
+  ]
+ },
+ "sourcePages": [
+  184,
+  185,
+  186,
+  187,
+  188
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 25,
+  "total": 61
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "workId": "kannimara-pothu-noolaga-nootrandu-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/kannimara-pothu-noolaga-nootrandu-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "596–609",
+  "printedSpeechPages": "595–608",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_036_pages_585-601.pdf",
+    "scans": "585–601",
+    "sha256": "c33b0eba72daa940031d921d005f5b2d91df90092f6bca25c33878c6334626b6",
+    "bytes": 47167071
+   },
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_037_pages_602-618.pdf",
+    "scans": "602–618",
+    "sha256": "4a355bbcd0f4a77e5aaa4071c58e9b65593a22994a5d990c8186f71cacb142ce",
+    "bytes": 46450806
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 58,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ]
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "condensed English rendering (not a full translation)"
+ },
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.4,
+  "tamilBodyWords": 1886,
+  "englishBodyWords": 760,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 2,
+  "tamilResolvedParagraphs": 54,
+  "englishParagraphs": 12,
+  "sourcePagesCovered": 14
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

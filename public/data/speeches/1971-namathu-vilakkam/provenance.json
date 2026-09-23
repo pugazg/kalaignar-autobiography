@@ -1,0 +1,51 @@
+{
+ "workId": "1971-namathu-vilakkam",
+ "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+ "sourcePath": "speeches/1971/1971-namathu-vilakkam",
+ "sourceCommit": "7a7fed1d0e3eb24a396effc10854b178f32bd0cf",
+ "source": {
+  "publicationTitleTa": "நமது விளக்கம்",
+  "authorTa": "தமிழக முதல்வர் கலைஞர் மு. கருணாநிதி",
+  "publicationDate": "1971-07-21",
+  "publisherTa": "செய்தி விளம்பரத் துறை, தமிழ் நாடு அரசு",
+  "publisherLocationTa": "சென்னை",
+  "scanFilename": "ACL-CPL_01732_நமது_விளக்கம்.pdf",
+  "scanSha256": "5e646d628f30a0c0ad9b1bf63d34e309995acb7359e4c7756e108f76717bd180",
+  "scanFileSizeBytes": 17896700,
+  "scanTotalPages": 61,
+  "speechScanPages": "4-60",
+  "speechPrintedPages": "implied 3-59",
+  "frontMatterScanPages": "1-3",
+  "speechFactsNotStated": [
+   "date"
+  ],
+  "speechFactsNoteEn": "The source booklet is an edited compilation of replies in both Houses; it establishes no single speech date."
+ },
+ "transcription": {
+  "status": "verified",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation"
+ },
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.49,
+  "tamilBodyWords": 9428,
+  "englishBodyWords": 14056,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 74,
+  "tamilResolvedParagraphs": 335,
+  "englishParagraphs": 356,
+  "sourcePagesCovered": 57
+ },
+ "semantics": {
+  "note": "The source booklet explicitly compiles replies delivered in both Houses and is preserved as one edited two-House witness. Page relation: scan 5 through 60: printed page = scan page - 1; scan 4 is an unnumbered opening mapped as implied printed page 3. The Tamil keeps the booklet's printed line breaks exactly as the verified transcription records them, including words divided at a line end. Underlying sittings: 1971-06-29 (Tamil Nadu Legislative Assembly); 1971-06-30 (Tamil Nadu Legislative Council)."
+ },
+ "notes": [
+  "The controlling source is the scanned printed booklet; it is not vendored. Its identity travels as filename, SHA-256 and page map."
+ ]
+}

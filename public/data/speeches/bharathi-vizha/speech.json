@@ -1,0 +1,977 @@
+{
+ "workId": "bharathi-vizha",
+ "slug": "bharathi-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/bharathi-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1973-09-12",
+ "year": 1973,
+ "title": {
+  "ta": "பாரதி விழா",
+  "en": "Bharati Festival"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.5,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "பாரதி விழா",
+    "sourcePage": 189
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒவ்வோர் ஆண்டும் பாரதி விழாவை முன்னின்று நடத்துவதில் பெரும் ஆர்வம் காட்டிய தலைவர் அவ்வை டி.கே. சண்முகம் இந்த ஆண்டு படமாக மாறிவிட்டார்.",
+      "sourcePage": 189,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     189
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் மறைந்தவர்களுக்குப் பெருமை செலுத்துவது என்பது அவர்கள் விட்டுச் சென்ற பணிகளைத் தொடர்ந்து நிறைவேற்றுவதில்தான் அமைந்திருக்கிறது என்பதற்கேற்ப, பாரதியார் சங்கத்தினர் இந்தப் பணியை இந்த ஆண்டு நிறைவேற்றுவதோடு, வருகிற ஆண்டுகளிலும் இப்பணி சிறப்புற நடைபெறும் என்பதற்கான உரைகளை நிகழ்த்தியிருக்கிறார்கள்.",
+      "sourcePage": 189,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     189
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழா, பாரதியாரைப் போற்றுவது, புகழ்வது என்ற அளவோடு அமையாமல், பாரதியின் எழுச்சிக் கவிதைகளை மேலும் பரப்புகிற அளவுக்கு ஊக்கமும், உற்சாகமும் வழங்குகிற வகையில் அமைகிறது என்பதில் நான் மகிழ்ச்சியடைகிறேன்.",
+      "sourcePage": 189,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     189
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வரவேற்றுப் பேசிய மகாலிங்கம் அவர்கள் பாரதியின் நூறாம் ஆண்டு விழா 1982-ஆம் ஆண்டு நடைபெறவிருக்கிறது என்றும், அந்த விழாவிற்கும் நான் வந்து சிறப்பிக்க வேண்டுமென்றும் அவர் விருப்பத்தை வெளியிட்டார். இதே நிலையில் வந்து சிறப்பிப்பதா? அல்லது வேறு நிலையில் வந்து சிறப்பிப்பதா என்கிற கேள்விக்கு நான் இப்போது பதில் சொல்லாவிட்டாலும் - நிச்சயமாக எந்நிலையில் இருந்தாலும், வருகிற நிலையை மறக்க மாட்டேன் என்பது உறுதியாகும்.",
+      "sourcePage": 189,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     189
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீ மாத்திரம் வந்து கலந்து கொள்வாயா? என் சங்கதி என்ன?” என்று சிலம்புச் செல்வர் கேட்க மாட்டார் என்று நம்புகிறேன்.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடந்த ஒரு வார காலமாக நானும் சிலம்புச் செல்வரும் கலந்து கொள்கிற பல நிகழ்ச்சிகள் ஒவ்வொரு நாளும் நடைபெற்று வருகின்றன.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நேற்றைய தினம்கூட கலைவாணருடைய விழா ராஜாஜி மண்டபத்தில் நடந்து முடிந்ததும், சிலம்புச் செல்வர், “எப்போது மறுபடியும் சந்திக்கலாம்?” என்று கேட்டுப் பிறகு அவரே நினைவுபடுத்திக் கொண்டு “நாளைக்குத்தான் சந்திக்கப் போகிறோமே” என்றார்.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான், “இதே பக்கவாத்தியங்களுடன் இங்கேயும் கச்சேரி வைத்திருக்கிறோம்” என்று நகைச்சுவையாகச் சொன்னேன்.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கச்சேரி பழக்கப்பட்டதென்றாலும் பாகவதரும் பக்க வாத்தியங்களும் ஒன்றாக இருந்தாலும்கூட மக்கள் தொடர்ந்து ரசித்துக் கொண்டிருக்கிறார்களே - அதற்கு என்ன காரணம் என்றால் - அது வித்துவான்களுடைய திறமையைப் பொறுத்து அல்ல, மக்களுக்கும் கச்சேரி நடத்துகிறவர்களுக்கும் இடையே ஏற்பட்டிருக்கிற உள் உணர்வுதான் - உண்மை உணர்வுதான்! கச்சேரி தொடர்ந்து நடைபெற்றாலும், அலுப்பு சலிப்பு இல்லாமல், சென்னை மாநகர மக்கள் மாத்திரமல்ல; தமிழ்நாட்டு மக்கள் அனைவரும் இன்றைக்கு இந்தக் கருத்துக்களை ஆயிரம் தடவை சொன்னாலும், அதை அகமகிழக் கேட்கிற ஆர்வத்தைப் படைத்தவர்களாக இருக்கிறார்கள்.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதியாருடைய பாடல்களை, இசையோடு பாடுவதில் மறைந்த கலைஞர் டி.கே. சண்முகம் எவ்வளவு திறமை வாய்ந்தவரோ அதைப் போலவே, அப்பாடல்களை அவர் எழுதிய உணர்வோடு எடுத்துச் சொல்லுவதில் தலைசிறந்து விளங்குபவர் நம்முடைய சிலம்புச் செல்வர் அவர்கள் ஆவார்கள்.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் அண்ணாமலை, எட்டயபுரத்தில் பாரதி பிறந்த இல்லத்தைத் தமிழக அரசு சார்பில் விலை கொடுத்து வாங்கி, அதை வரலாற்றுச் சின்னமாக்கும் விழாவிற்குச் சென்றிருந்தேன். அக்காலத்திற்கு நடுவில், ஆலயத்தின் ஓரத்தில் அமைந்திருந்த அந்த வீட்டிற்குள் பாரதியின் இலக்கியங்கள், அவர் கைப்பட்ட எழுதியவை ஆகியன அடுக்கடுக்காக வைக்கப்பட்டிருந்த காட்சியை நான் கண்டேன். அழகாக, பொடிப்பொடியாத அச்சுக் கோர்த்தது போல் அவர் எழுதிய அந்த எழுத்துக்கள் பாதுகாக்கப்பட்டு, அப்படியே வைக்கப்பட்டுள்ளன.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதியார் பயன்படுத்திய கருவிகள், இரவு நேரத்தில் உலவப் போனால் கையில் எடுத்துச் செல்கிற ஈட்டி போன்ற மிக நீளமான வேல்கம்பு ஆகிய இவைகள் எல்லாம் அங்கே வைக்கப்பட்டிருக்கின்றன.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புரட்சியைப் பற்றிப் பாடுகிறவர்கள், பேசுகிறவர்கள் எல்லாம் புரட்சிக்காரர்களாக இருந்துவிட முடியாது. ஆனால் பாரதியார் பாடினார் - பேசினார் - உண்மையிலேயே புரட்சிக்காரராகவும் இருந்தார்.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீரர்களுக்குக் களத்திற்குத் தேவையான போர்ப் பாணிகளை எழுதி தருகிற ஆற்றல் புலவர்களுக்கு இருக்கலாம்.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கருணாகரத் தொண்டைமானின் ஆற்றலைப் பற்றி, குலோத்துங்கனின் போர்முறையைப் பற்றி, ஜெயங்கொண்டான் எழுதிய கலிங்கத்துப் பரணியைப் படிக்கிற நேரத்தில் ஒரு புதிய ஆவேசம் நமக்கு ஏற்படுகிற அளவுக்கு அவர் யாத்துத் தந்திருக்கிறார்; என்றாலும் அவர் போர்க்களம் சென்ற புலவர் அல்லர்.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் பாரதியார் ஆவேசமான கருத்துக்களை எழுத்தாக்கி, கவிதை முத்தாரமாக ஆக்கி, நமக்குத் தந்தார் என்பது மாத்திரமல்ல; அவரே களத்திலே நின்றார் என்ற பெருமையும் அவருக்கு உண்டு.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதியார் பாட்டு எழுதிக் கொடுத்து, “இவைகளைப் பாடிக் கொண்டு போர்க்களத்திற்கு நீங்கள் செல்லுங்கள்!” என்று மற்றவர்களை விட்டு ஆழம் பார்த்துத் தான் மட்டும் ஒதுங்கி விட்டவரல்லர்.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தானும் போர்க்களத்திற்குச் செல்கிற மனத் தெளிவைப் பெற்றவர் பாரதியார்.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவருடைய பாடல்களை ஆரம்பத்திலே மதிக்க மறுத்தவர்களும் உண்டு, அவர்களே பிறகு மதித்துப் பாராட்டிய செய்தியும் தமிழகத்தில் உண்டு. நான் அதைப் பற்றி விரிவாக இந்த நேரத்தில் கூறுவதால், மறைந்தவர்களுக்கு இழுக்குக் கற்பித்த குற்றத்திற்கு ஆளாவேன் என்பதால் அதை நான் விட்டு விடுகிறேன்.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படி மதிக்க மறுத்தவர்களும் - பிறகு அவரை மதித்தார்கள் என்பது பாரதியாருடைய ஆற்றலைக் காட்டுகிறதேயல்லாமல் - விமர்சித்தவர்களுடைய ஆற்றலைக் காட்டவில்லை.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதியார் அவருக்குப் பிறகு எந்த வாரிசும் இல்லை என்று தன் வாழ்வை முடித்துக் கொண்டிருப்பாரேயானால், அவர் பெருங்கவிஞர் என்று போற்றப்பட முடியாது. அவர் ஒரு பெருங்கவிஞர் என்று போற்றப்படுவதற்குரிய சிறப்புகளில் ஒன்றாகத் திகழ்வதுதான், அவரது பாரம்பரியம் ஒன்று, இன்று தமிழ்நாட்டிலே திகழ்வதாகும்.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதிதாசன், பாரதியாருடைய நேர்வாரிசாகக் கனகசுப்புரத்தினமாக இருந்து, பாரதிதாசன் என்று தன்னைத்தானே அழைத்துக் கொண்டு பாரதிதாசனாக மாறியவர்.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதியார் பற்றிப் பாரதிதாசன் பாடுகிற நேரத்தில் -",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“நீடு துயில் நீக்கப் பாடி வந்த நிலா, காடு கமழ வந்த கற்பூரச் சொற்கோ” - என்கிற இவ்வளவு அழகான தமிழ்ச் சொற்களால் பாரதியாரைப் பற்றி பாரதிதாசன் வர்ணிக்கிறார்; பாரதிக்கு இணை பாரதியேதான் என்று பாரதிதாசனே பலபடப் புகழ்ந்திருக்கிறார்.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதிதாசனுக்குப் பிறகும் பல புலவர்கள் பாரதியாருடைய நடையைப் பேணி, அவருடைய பாணியைப் பின்பற்றிப் பாமரர்களுக்கும் விளங்குகின்ற அளவிற்குப் பாடல்களை எழுதி காட்டுகிற காரணத்தால்தான் பாரதியாருடைய சிறப்பு, மேலும் மேலும் வளர்ந்து கொண்டிருக்கிறது.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விழுதுகள் இல்லாவிட்டால் ஆலமரத்திற்குப் பெருமையில்லை. அதைப்போல இப்படிப்பட்ட பாரதிக்கே பரம்பரை இல்லாமல் போயிருந்தால், பாரதிக்குப் பெருமையில்லாமல் போயிருக்கக்கூடும். ஆகவே விழுதுகளால், ஆலமரம் பெருமையடைவது போல், பாரதியாருக்குப் பிறகு ஏற்பட்டுள்ள பாரதியார் பரம்பரையால் பாரதி பெரும் பெருமை பெற்று விளங்குகிறார். பாரதியின் வரலாற்றில், எனக்கு முன்னால் பேசியவர்கள் அவருடைய கவிதைச் சிறப்புக்களைப் பற்றியெல்லாம் எடுத்துச் சொன்னார்கள்.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாஞ்சாலி சபதம் எழுதிய பாரதியார் அவர்கள் சொன்ன கருத்துக்கள் எனக்கு ஏற்புடையவைகளா இல்லையா என்பது வேறு. ஆனால் அவ்வளவு அழுத்தம் திருத்தமாக அந்தக் கருத்துக்கள் சொல்லப்பட்டன. பாரதம் எழுதியவருக்கேகூடத் தோன்றாத ஒன்றைப் பாஞ்சாலியினுடைய நாவினில் நடமாட வைத்துப் பாஞ்சாலி சபதத்தில் பாரதியார் கூறுகிறார்.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சூதாட்டத்தில் தருமன் தம்பியரை எல்லாம் வைத்து சூதாடித் தோற்றுத் தன்னையும் வைத்துச் சூதாடித் தோற்றுப் பிறகு, கடைசியாகப் பாஞ்சாலியையும் வைத்துச் சூதாடுகிறான்.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதிலும் தோற்றவுடன் பாஞ்சாலி அழைக்கப்படுகிறாள் சபைக்கு; துச்சாதனன் கூறுகிறான்.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உன் கணவன் உன்னை வைத்துத் தோற்று விட்டான். வா சபைக்கு!” என்று. அப்போதும் பாஞ்சாலி கேட்கிறாள், “தருமன் என் கணவன்தான்? சூதாட்டத்தில்",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தன்னையே தோற்றுவிட்ட பிறகு, என்னை வைத்துச் சூதாடுவதற்கு என்ன உரிமை பெற்றிருக்கிறான்?” என்று பாஞ்சாலி கேட்டதாக - அவள் கேட்டாளோ இல்லையோ - பாரதி கேட்கிறார்.",
+      "sourcePage": 194,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     194
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவ்வளவு புரட்சிகரமான கருத்தைப் பாரதம் எழுதிய அந்தப் பாவாணரும் சிந்திக்காத கருத்தைப் பாரதியார் சிந்தித்தார். அவருடைய எழுத்திலே எழுச்சி வேகம் மிடுக்கு உணர்ச்சி எல்லாம் இருப்பதைப் போலவே, அவருடைய செயலிலே வீரம், அஞ்சாமை, ஆற்றல் ஆகியவைகள் இருப்பதைப் போலவே அவருடைய வாழ்க்கையிலே பல இடங்களில் நகைச்சுவை துள்ளி விளையாடுவதைக் காணுகிறோம்.",
+      "sourcePage": 194,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     194
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருமுறை புதுவை மாநகரத்தில் அவர் கதாகாலட்சேபம் கேட்டுக் கொண்டிருந்தாராம். கதாகாலட்சேபத்தில் பாடுகின்ற பண்டிதர்கள் “அரகர நமப் பார்வதி பதயே” என்று சொன்னால் இருக்கின்ற பக்தர்கள் எல்லாம் “அரகர மகாதேவ” என்று சொல்வது வழக்கம். வைஷ்ணவ காலட்சேபத்தில் அந்தப் பாகவதார் ஒவ்வொரு முறையும் “கோபிகா காந்தஸ்மரணே” என்று சொல்வார். பக்தர்களெல்லாம் “கோவிந்தா கோவிந்தா” என்று சொல்வார்கள். பாரதி உட்கார்ந்து கேட்டுக் கொண்டிருந்தார். ஒரு ஐந்து ஆறு முறை பாகவதர் சொல்ல, பக்தர்களும் “கோவிந்தா” என்று சொன்னார்களாம். பாரதி சுற்றுமுற்றும் பார்த்துப் பக்கத்தில் இருந்த ஒருவரை அழைத்து, அவரது காதிலே ஏதோ சொல்லிவிட்டார். மறுபடியும் பாகவதர் “கோபிகா காந்தஸ்மரணே” என்று சொன்னதும் பக்தர்கள் “கோவிந்தா கோவிந்தா” என்று சொன்னபோது - கூட்டத்தின் நடுவிலிருந்த ஒருவர் எழுந்து “இங்கேதான் இருக்கிறேன்! என்னையா கூப்பிட்டீர்கள்?” என்று கேட்டாராம். அவருடைய பெயர் கோவிந்தன். இது பாரதியார் செய்த குறும்புத்தனம். இப்படியும் அவருடைய வாழ்க்கையில் பல நிகழ்ச்சிகள் உண்டு.",
+      "sourcePage": 194,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     194
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே, நகைச்சுவைக்கும் அதிபராக, நல்ல தமிழுக்கும் அதிபராக, வீராவேசத்திற்கும் அதிபராக, விடுதலை வேட்கைக்கும் அதிபராக விளங்கிய பாரதியார் இன்று இல்லை. இன்னும் ஒன்பதாண்டுக் காலத்தில் அவருக்கு நூற்றாண்டு விழாக் கொண்டாட இருக்கிறோம்.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நேரத்தில் சிலம்புச் செல்வர் அவர்கள் ஒன்றை ஞாபகப்படுத்தினார்கள்.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதியாரைப் போல தேச விடுதலைக்காக தியாகம் செய்தவர்கள் என்றென்றைக்கும் நமது நினைவில் வைத்துப் போற்றத்தக்கவர்கள் என்று எடுத்துச் சொன்னார்கள்.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவ்வை சண்முகம் அவர்கள் பெயரால் தெரு ஒன்றின் பெயர் அமைய வேண்டும் என்று சொன்னார்கள்.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் ஒருமுறை அண்ணா பாலத் திறப்பு விழாவில் சில பெயர்களைச் சொல்லிவிட்டேன். மாநகர ஆட்சி உரிமையிலே மாநில சுயாட்சி கேட்கின்ற முதலமைச்சர் இப்படித் தலையிடலாமா என்ற கேள்விக்கு ஆளானவன். ஆகவே சிலம்புச் செல்வர் கூறிய கருத்தை மாநகராட்சி மன்றத்திற்கு நான் பரிந்துரையாக வைப்பேன் என்ற உறுதியை மாத்திரம் இந்த நேரத்திலே தெரிவித்துக் கொள்கிறேன். வைக்கப்படும் என்று சொன்னால் அது உத்திரவிடுவதுபோல் ஆகிவிடும். ஆகவே பரிந்துரை செய்கிறேன். பரிந்துரை செய்தாலே அது நடைபெறும் என்கிற நம்பிக்கை இருக்கிற காரணத்தால் அது நிறைவேறும்.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீரவாஞ்சிநாதனைப் பற்றி இங்கே சொன்னார்கள். எனக்கிருக்கும் சங்கடமெல்லாம் நான் சொல்கிறேன் ஒன்றை அல்லது இந்த அரசு சொல்லுகிறது என்ற காரணத்தினாலேயே ஏற்புடையதாக இருந்தாலும், அதற்கு மறுப்புத் தர வேண்டும் என்கிற மனப்பான்மை இந்த நாட்டில் இருக்கிறது.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "72-ஆம் ஆண்டிலே டில்லிப் போருக்குத் தமிழக அரசின் சார்பிலே எழுப்பப்பட்ட கடிதத்தில் வாஞ்சிநாதன் ஆஷ்துரையைச் சுட்டுக் கொன்று தானும் சுட்டுக் கொண்ட ரயில்வே நிலையத்தை மணியாச்சி என்று அமைப்பதற்குப் பதிலாக வீர வாஞ்சி ஜங்ஷன் என்று அழைக்க வேண்டும் என எழுதப்பட்டது. அதற்கு வந்த பதில்தான் இது வட்டார தேசபக்தி. ஆகவே அதற்கு அந்தப் பெயர் வைப்பதற்கில்லை என்பதாகும்.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு விழாவில் சிலம்புச் செல்வரும், செங்கல்வராயனும் இருந்த நேரத்தில் நான் இதை வெளியிட்டேன்.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிக் கடிதம் வந்தது தவறு. உடனடியாக வீர வாஞ்சி ஜங்ஷன் என்று பெயர் வைக்க வேண்டும் என்று தமிழகத்தில் இருக்கிற எல்லாக் கட்சிக்காரர்களும் ஆதரவு தெரிவித்திருந்தால் நான் மகிழ்ச்சியடைந்திருப்பேன்.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் இந்த அரசு சொன்னது என்ற ஒரே காரணத்திற்காக அதை எதிர்க்கவர்களும் பத்திரிகைகளில் எழுதியவர்களும் உண்டு.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மணியாச்சி என்று இருந்தால்தான் அது ஆஷ்துரையை வீர வாஞ்சி சுட்டுக் கொன்ற இடம் என்று ஞாபகம் வரும். வீர வாஞ்சி நகரம் என்று பெயர் வைத்து விட்டால் ஞாபகம் போய்விடும் என்று புதிய விளக்கங்களெல்லாம் தந்தவர்கள் உண்டு.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் எல்லாம் யார் என்றால், தமிழ்நாடு என்ற பெயரே இலக்கியத்தில் கிடையாது என்று ஒரு காலத்திலே வாதித்தவர்கள். அவர்கள் இந்த அற்புதமான யோசனையை எனக்குச் சொன்னார்கள். இன்னும் சிலர் வேடிக்கையாக “உன் கையில் அதிகாரத்தை வைத்துக் கொண்டு மத்திய சர்க்காரைப் போய்க் கேட்கிறாயே! நீ மணியாச்சி என்ற ஊரின் பெயரை வீர வாஞ்சி நகரம் என்று மாற்றிவிடு. பிறகு தானே அவர்கள் ரயில்வே ஸ்டேஷனுக்குப் பெயர் வைத்து விடுவார்கள்!” என்று கூறுகிறார்கள்.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மணியாச்சி என்ற ஊரின் பெயரைக்கூட மாற்றுகிற அதிகாரம் மாநில அரசுக்குக் கிடையாது என்பதைப் புரிந்து கொள்ள வேண்டும். ஊரின் பெயரைக்கூட மாநில அரசு மாற்ற முடியாது. அதற்கான உத்தரவு மத்திய அரசிடம்தான் பெற வேண்டும். ஏனென்றால் அஞ்சலகம் போன்றவைகள் இருக்கின்றன. மணியாச்சியை வீர வாஞ்சி என்று நாமே வைத்து விட்டால் பிறகு மணியாச்சிக்கு வரும் தபால்கள் எல்லாம் குப்புசாமி, தெற்குத்தெரு, வீர வாஞ்சி நகரம் என்று வந்தால், அது எங்கேயோ அலைந்து திரிந்து அனுப்பிய முகவரிக்கே திரும்பிப் போய்ச் சேரும். எனவே மாநில அரசு பெயர் மாற்றினால் பயனில்லை. புதிதாகத் தோன்றுகிற ஊர்களுக்கு வேண்டுமானால் மாநில அரசு பெயர் வைக்க இயலுமே தவிர, இருக்கிறவைகளின் பெயரை மாற்றுகிற அதிகாரம், உரிமைகூட மாநில அரசுக்கு இல்லை. அது மத்திய அரசுக்குத்தான் இருக்கிறது; மாநில சுயாட்சிப் பிரச்சாரத்திற்குப் புதியதொரு கருவியை நான் இந்தச் செய்தியின் மூலமாகத் தருகிறேன்.",
+      "sourcePage": 197,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     197
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப்பட்ட காரியங்கள் நிறைவேற்றுகிற நேரத்திலே அரசியல் கட்சிச் சார்பற்ற முறையிலே அனைவரும் ஒன்றுகூடிப் பணியாற்றிட வேண்டும். இந்த நல்ல நோக்கங்களுக்கு ஆதரவு தர வேண்டும். இதைப் பாரதியாரின் விழாவில் நாம் ஒரு சூளுரையாக மேற்கொள்ள வேண்டும்.",
+      "sourcePage": 197,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     197
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1973-ஆம் ஆண்டு செப்டம்பர் 12-ஆம் நாள் பாரதியார் விழாவில் ஆற்றிய சிறப்புரை.",
+    "sourcePage": 197
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Bharati Festival",
+    "sourcePage": 189
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Avvai T. K. Shanmugam, who used to lead the annual Bharati festival with great enthusiasm, survives this year only in his portrait. The true way to honour the dead, however, is to continue the work they left behind. I am pleased that the Bharati Sangam is doing that and is keeping Bharati's stirring poetry before the public.",
+      "sourcePage": 189,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     189
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mahalingam mentioned that Bharati's centenary will fall in 1982 and invited me to participate. Whatever position I may occupy then, I will not forget the occasion.",
+      "sourcePage": 189,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     189
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Silambu Chelvar and I have been meeting almost daily at public functions. I joked that we keep giving concerts with the same accompanying artists, yet audiences continue to listen because what binds speakers and listeners is not novelty alone but a shared inner feeling.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Among those who can express Bharati's songs with the emotion in which they were written, Silambu Chelvar holds a distinguished place.",
+      "sourcePage": 190,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     190
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I recall visiting Bharati's birthplace at Ettayapuram after the Tamil Nadu Government purchased the house and turned it into a historical memorial. His writings and belongings were preserved there.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Many people can sing or speak of revolution without being revolutionaries. Bharati was different: he wrote revolutionary poetry and also stood in the field himself.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A poet such as Jayamkondar could create martial excitement through verse without personally entering battle. Bharati joined literary fire to lived courage.",
+      "sourcePage": 191,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     191
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He did not merely hand songs to others and tell them to march; he himself possessed the clarity to enter the struggle.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Some who initially refused to value his songs later praised them. That change demonstrates Bharati's strength.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "His greatness also lies in the succession he created. Bharathidasan, born Kanakasubburathinam, consciously made himself Bharati's heir and praised him in memorable Tamil.",
+      "sourcePage": 192,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     192
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Later poets continued Bharati's style in language ordinary people could understand. Like the aerial roots that give a banyan its vastness, this poetic lineage enlarged Bharati's fame.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In *Panchali Sabatham*, Bharati gives Panchali a striking question: after Dharman had already gambled away himself, what right remained to wager her? It is an example of Bharati placing a revolutionary thought into the epic narrative.",
+      "sourcePage": 193,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     193
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Bharati's writing carried speed, courage and feeling, and his life also contained humour.",
+      "sourcePage": 194,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     194
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I recount an incident at a religious discourse in Puducherry. When devotees repeatedly answered a chant with “Govinda, Govinda,” Bharati whispered to a man nearby. At the next response, the man stood and said, “I am right here—did you call me?” His name was Govindan. It was one of Bharati's mischievous jokes.",
+      "sourcePage": 194,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     194
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus Bharati was a master of humour, fine Tamil, heroic passion and the yearning for freedom. In nine years we will celebrate his centenary.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Silambu Chelvar reminded us that those who sacrificed for national freedom must remain in public memory. He also suggested naming a street after Avvai Shanmugam. I will place that recommendation before the municipal council rather than treat it as an executive order.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He also raised the memory of Vanchinathan and the problem of honouring him in the name of Maniyachi railway station.",
+      "sourcePage": 195,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     195
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Tamil Nadu Government had asked that Maniyachi station, where Vanchinathan shot Ashe and then himself, be renamed Veera Vanchi Junction. The reply treated the request as regional patriotism.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I regretted that, instead of supporting the proposal across party lines, some opposed it merely because this Government proposed it. Others suggested that the State simply rename the town itself.",
+      "sourcePage": 196,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     196
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But even renaming an existing town requires Central approval because postal and other Central systems are involved. The State cannot unilaterally change such names.",
+      "sourcePage": 197,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     197
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I present this too as another example in the argument for State autonomy.",
+      "sourcePage": 197,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     197
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "On matters of this kind, parties should rise above partisanship and work together for worthwhile public purposes. Let that be a pledge taken at Bharati's festival.",
+      "sourcePage": 197,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     197
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Special address delivered at the Bharati festival on 12 September 1973.",
+    "sourcePage": 197
+   }
+  ]
+ },
+ "sourcePages": [
+  189,
+  190,
+  191,
+  192,
+  193,
+  194,
+  195,
+  196,
+  197
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 26,
+  "total": 61
+ }
+}

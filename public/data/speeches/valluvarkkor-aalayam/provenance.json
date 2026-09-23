@@ -1,0 +1,61 @@
+{
+ "workId": "valluvarkkor-aalayam",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/valluvarkkor-aalayam",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "29–32",
+  "printedSpeechPages": "28–31",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_002_pages_18-33.pdf",
+    "scans": "18–33",
+    "sha256": "ec425a2314344d78a4d9fad743896356ccce6d15dace20dba0360fb743c7d861",
+    "bytes": 47901860
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 2,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ],
+  "speechFactsNoteEn": "No separate geographic venue is inferred at source-intake stage."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation"
+ },
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.57,
+  "tamilBodyWords": 411,
+  "englishBodyWords": 647,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 24,
+  "englishParagraphs": 24,
+  "sourcePagesCovered": 4
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

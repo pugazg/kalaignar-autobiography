@@ -1,0 +1,806 @@
+{
+ "workId": "yathum-oore-yavarum-kelir",
+ "slug": "yathum-oore-yavarum-kelir",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/yathum-oore-yavarum-kelir",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1973-10-28",
+ "year": 1973,
+ "title": {
+  "ta": "யாதும் ஊரே யாவரும் கேளிர்!",
+  "en": "Every Place Is Our Town; Everyone Our Kin"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.15,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "யாதும் ஊரே யாவரும் கேளிர்!",
+    "sourcePage": 204
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்று இந்த மகிழ்ச்சியான மாலை வேளையில் உங்களை எல்லாம் சந்திப்பதில் மகிழ்ச்சி அடைகிறேன்.",
+      "sourcePage": 204,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     204
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விழாத் தலைவர் நம் நாவலர் அவர்கள் புறநானூறு பாடிய பெரும் புலவன் “யாதும் ஊரே - யாவரும் கேளிர்” என்ற கருத்தை ஆயிரம் ஆண்டுகளுக்கு முன்பே எடுத்து ஓதியிருக்கிறான் என்று குறிப்பிட்டார்கள்.",
+      "sourcePage": 204,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     204
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர் அப்படிக் குறிப்பிட்டபோது ஓர் இளம் நண்பர் வேகமாக என் பின்னே ஓடிவந்து, ஒருவேளை அந்தப் புறநானூற்றுக் கவிஞன் இந்தக் கிராமத்திலே தான் பிறந்திருப்பானோ என்று என்னிடத்தில் கேட்டார்.",
+      "sourcePage": 204,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     204
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவன் இந்தக் கிராமத்தில் பிறந்தானோ இல்லையோ எனக்குத் தெரியாது. ஆனால் “யாதும் ஊரே - யாவரும் கேளிர்!” என்ற அந்த முழக்கம் தமிழ் நாட்டிலே இருந்து உலகுக்கு அறிவிக்கப்பட்டது என்பது புறநானூற்றுக் காலத்திலே மாத்திரமல்ல. அதற்குப் பிறகு பல்லாண்டு காலம் கடந்த பிறகு இப்போதும் யாதும் ஊரே யாவரும் கேளிர் என்று அறிவிப்பதும், தமிழ் நாட்டிலே இருந்துதான் என்று எண்ணுகிற நேரத்தில் நான் மிகுந்த மகிழ்ச்சி அடைகிறேன்.",
+      "sourcePage": 204,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     204
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழ்நாடு பல்வேறு உணர்ச்சிகளுக்கு, பல்வேறு உன்னதமான நிலைகளுக்கு வழிகாட்டுகிற நாடாகும்.",
+      "sourcePage": 204,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     204
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தக் கருத்தையும் தமிழ்நாட்டுக்கு வந்து, முகிழ்ந்து, அதற்குப் பிறகு எடுத்துச் சொன்னால்தான் உலகம் இதை ஒப்புக்கொள்ளும் என்று எண்ணியோ என்னவோ, வங்கத்தில் பிறந்து - பல்வேறு நாடுகளிலே தன்னுடைய",
+      "sourcePage": 204,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     204
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறிவினை மக்களுக்குத் தெரியப்படுத்திய அரவிந்தர் அவர்கள் தமிழ்ப்பகுதிக்கு வந்தாரோ என்று கூட நான் எண்ணுகிறேன்.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே வலுப்பெற்ற ஒரு கருத்து - வரவேற்கத்தக்க ஒரு கருத்து இன்றைக்கு வடிவம் பெற்று ‘ஆரோவில்’ நகரமாக நமக்கெல்லாம் காட்சிதர இருக்கின்றது.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘ஆரோவில்’ என்றால் பிரெஞ்சு மொழியில் ‘புதிய நகர்’ அல்லது ‘புதிய வாழ்வு உதயம்’ என்று பொருள்.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நண்பர் அவர்களிடத்தில் கேட்டேன். ஆரோவில் என்றால் ஒரே சொல்லா அல்லது இரண்டு சொல்லா என்று.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘ஆரோ’ என்றால் உதயம் என்றும் ‘வில்’ என்றால் வாழ்வு பொழிகின்ற ஒரு புதிய நகரம் ‘உதயம்’ என்றும் அவர்கள் குறிப்பிட்டார்கள்.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிரெஞ்சு மொழியிலே சொல்லிப் பார்த்தாலும் அது பொருத்தமாக இருக்கிறது; ஆங்கிலத்தையும் தமிழையும் இணைத்துச் சொல்லிப் பார்த்தாலும் ஒரு வகையிலே இது பொருத்தமாக இருக்கிறது.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆங்கிலத்தில் ‘ஆரோ’ என்றால் ‘அம்பு-கணை’ தமிழில் ‘வில்’ என்றால் உங்களுக்குப் பொருள் சொல்லத் தேவையில்லை. வில்லில் இருந்து அம்பு புறப்பட்டால் அதன் வேகத்தை எப்படி நாம் காண முடிகிறதோ அதைப்போல இந்த நகரத்திலே புதுவாழ்வை நோக்கிச் செயல்வீரர்கள் வில்லிலிருந்து அம்பைப் போல் பணியாற்றுகின்ற காட்சியை நான் காலையிலேயிருந்து இதுவரையிலே கண்டு களித்தேன்.",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நகரத்தில் - இன்னும் உருவாகாமல் உதயமாகிக் கொண்டிருக்கின்ற இந்த நகரத்தில் - நானும் அமைச்சர் நாவலரும் மற்ற நண்பர்களும் காலையிலே இருந்து பல இடங்களைப் பார்வையிட்டோம். பல புதிய புதிய முயற்சிகளைக் கண்டு பெருமை கொண்டிடவும்,",
+      "sourcePage": 205,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     205
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பல்வேறு நாடுகளிலேயிருந்து இங்கு வந்து பணியாற்றுகின்ற தொண்டுள்ளம் படைத்த தோழர்களை எல்லாம் சந்தித்திடவும் வாய்ப்புப் பெற்றோம்!",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உள்ளபடியே இது ஒரு மகத்தான சாதனையாகும். இந்த மகத்தான சாதனையினுடைய விளைவை உடனடியாக நாம் காண முடியுமா என்றால் - நாளைக்கோ, நாளை மறுநாளைக்கோ கண்டுவிட முடியுமா என்றால் இயலாது.",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் அதற்கு ஒரு பெரிய எதிர்காலம் இருக்கிறது என்பதை நாம் இன்றைக்கே நிச்சயித்துக் கூற முடியும். அந்த எதிர்காலத்தை இப்போதே அமைத்துக் காட்ட இயலாது.",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் அமைத்துக் காட்ட இயலும் என்பதற்கான அறிகுறிகள் இந்தப் புதிய நகரத்தில் தோன்றிக் கொண்டே இருக்கின்றன.",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆலமரம், நூற்றுக்கணக்கானவர்களுக்கு நிழல் தருகிற ஒரு மரமாக வளர்கிறது என்றாலும், அதனுடைய விதையைப் பார்த்து இது ஆல மர விதைதான் என்று உணராதவர்கள், இந்த விதை நூற்றுக்கணக்கானவர்கள் தங்குகின்ற நிழல் தரும் மரமாக வளர்கிறது என்று சொல்கிறபோது, கொஞ்சம் நம்பத்தான் தயங்குவார்கள்.",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த உண்மையை அனுபவ ரீதியாக உணர்கிற நமக்கு, இன்றைக்கு விதைப் பருவத்திலே இருக்கிற - இன்னும் சொல்லப்போனால் கொஞ்சம் துளிர்விட்டு இருக்கின்ற இந்த ‘ஆரோவில்’ நகரம் எதிர்காலத்திலே அனைத்து உலகத்திற்கும், அனைத்து உலக நாடுகளுக்கும் வழி காட்டியாக, ஓர் ஒளி விளக்காக இருக்கும் என்பதில் எனக்கு எந்தவிதச் சந்தேகமுமில்லை.",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆரம்பத்தில், இப்பகுதி மக்கள் - இந்நகரம் இங்கு உதயமாவது தங்களுக்கு வாழ்க்கையிலே ஏதாவது இடையூறு ஏற்படுத்திடுமோ? - இந்த நகரம் இங்கு எழுகின்ற காரணத்தினால் வாழ்வு பாதிக்கப்படுமோ? என்ற சந்தேகத்திற்கு ஆளானார்கள் என்பது உண்மை.",
+      "sourcePage": 206,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     206
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்போதுமே புதிய கருத்துக்கள், புதிய எண்ணங்கள் - புதிய தோற்றங்கள் - இவைகளெல்லாம் ஏற்படுகின்ற நேரத்தில் அவற்றைச் சந்தேகிப்பது - ஆயிரக்கணக்கான ஆண்டுகளாக உலகத்திலே இருந்து வருகிற ஒன்றுதான்.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உலகம் உருண்டை என்று சொன்னபோது அதை ஒத்துக் கொள்ளாதவர்கள் இருந்தார்கள். பூமி சுற்றுகிறது - அது தன்னைத்தானே சுற்றுகிறது - என்று சொன்ன போது அதை ஒத்துக் கொள்ளாதவர்கள் இருந்தார்கள்.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பட்டியலில்தான் இந்த நகரம், இந்தப் பகுதி மக்களுக்கு மாத்திரமல்லாமல், தமிழ்நாட்டிலே இருக்கிற பெரும்பாலான மக்களுக்கு மாத்திரமல்லாமல், இந்தியத் திருநாட்டிலே இருக்கிற மக்களுக்கு மாத்திரமல்லாமல், உலகத்திலே இருக்கின்ற மக்களுக்கும் வழிகாட்டத்தக்க ஒன்றாக அமையும் என்று சொன்னபோது, அதை பலர் நம்ப மறுத்தார்கள் என்பது சேர்கிறது.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புதுமையைக் கண்டு பயப்படுகிற உணர்ச்சியிலிருந்து மனிதன் இன்னும் தன்னை மீட்டுக் கொள்ளவில்லை என்பதற்கு அடையாளமாகும் இது. எனக்குக் கூட நன்றாக நினைவில் இருக்கிறது. ஒரு 40 ஆண்டுக்கு காலத்துக்கு முன்பு கிராமத்திலே தாய் தந்தையரோடு நான் வாழ்ந்து கொண்டிருந்தேன்.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என் தகப்பனாரும் - தாயாரும் பட்டிக்காட்டுச் சூழ்நிலையிலே வளர்ந்தவர்கள்.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போது ஒருநாள், கிராமங்களுக்குச் சென்று புகைப்படம் எடுத்து, அதன்மூலம் தன் வியாபாரத்தைப் பெருக்கிக் கொள்கிற ஒருவன், என் கிராமத்திலே வந்து, இருக்கிற பெரியவர்களையும், வாலிபர்களையும் பார்த்துப் புகைப்படம் எடுங்கள் என்று கேட்டுக் கொண்டார்.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலர் ஒத்துக் கொண்டார்கள். பலர் மறுத்தார்கள். அப்படி மறுத்தவர்களிலே என் தந்தையும் ஒருவர்.",
+      "sourcePage": 207,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     207
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஏனென்றால், அன்றைக்கு ஒரு நம்பிக்கை இருந்தது; ‘போட்டோ’ எடுத்துக் கொண்டால் - நம் ஆவியிலே பாதி அந்த காமிராவுக்குள்ளே நுழைந்து அந்தப் படத்திலே பதிந்து விடுகிறது! ஆகவே புகைப்படம் எடுத்துக் கொள்கிறவர்களுடைய ஆயுள் குறைந்து விடும் என்பதே அந்த நம்பிக்கை. பிறகு என் தகப்பனாரை வற்புறுத்தி உட்கார வைத்து கட்டாயப்படுத்திப் புகைப்படம் எடுத்தோம்; அதற்குப் பிறகும் பல ஆண்டுக் காலம் அவர் உயிருடன் இருந்தார்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே புதுமையைச் சொல்கிற நேரத்தில் பயப்படுகிற தன்மையிலிருந்து இன்னும் மனிதன் தன்னை மீட்டுக் கொள்ளவில்லை!",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்கு அடையாளமாகத்தான் ஆரம்பத்திலே இந்தப் பகுதி மக்கள்கூட இந்த நகரின் உதயம் தங்களைப் பாதிக்குமோ என்கிற சந்தேகத்தோடு பார்த்தார்கள்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் இன்றைய தினம் அந்த மக்களிலே பெரும்பாலானவர்கள் மிகுந்த மகிழ்ச்சியோடு இருக்கின்ற காட்சியை நான் காண்கிறேன்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதனுடைய நிர்வாகிகள், மற்றும் இங்கு பணியாற்றுகின்ற வெளிநாட்டுக்காரர்கள் அத்தனை பேரும் இங்கே இருக்கின்ற கிராமத்து மக்கள் எந்த அளவுக்குத் தங்களோடு ஒத்துழைக்கிறார்கள் என்பதை எங்களிடத்திலே பெருமையோடு சொன்னார்கள்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாவலர் குறிப்பிட்டதைப் போல நாமெல்லாம் எப்படி உறவாக - ஒன்றாக இரண்டறக் கலந்து விட்டோம் என்பதற்கான அடையாளத்தைக் காலையிலே இங்கே வந்ததுமே கண்டோம்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வெளிநாட்டு வெள்ளைக்காரர் ஒருவர் எங்களைப் போல வேட்டி அணிந்து கொண்டு சட்டை போட்டுக் கொண்டு ‘வாருங்கள்; வணக்கம்!’ என்று அழைத்தார்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழைத்தது மாத்திரமல்ல; அவர் ஆங்கிலத்திலே சில விவரங்களைக் கூறிக் கொண்டு வந்து இடையிலே தமிழில் பேசினார்.",
+      "sourcePage": 208,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     208
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அங்கிருந்த மாடு கன்றுகளை எல்லாம் காட்டி, “இது நன்றாக இருக்கிறதா?” என்று கேட்டார். நன்றாக இருக்கிறதா என்று அவ்வளவு இலக்கணமாகக் கேட்கவில்லை. ‘நல்லா இருக்கா?’ என்று கேட்டார்.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவரது தமிழை நாங்கள் சுவைக்க ஆரம்பித்ததும் ‘கண்ணுக்குட்டி பாக்க வாரீயா?’ என்று கேட்டார்.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆக இங்கு பேசப்படுகிற மக்களிடத்தில் பழக்கத்தில் இருக்கின்ற தமிழை வெள்ளைக்காரர்கள் வெளிநாட்டுக்காரர்கள் இன்று கற்றுக் கொள்கிறார்கள்.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே ஒரு இணைப்பு - அதாவது ஒரு சங்கமம் - மாநிலத்துக்கு மாநிலம் அல்ல - நாட்டுக்கு நாடு - உலகத்திலே இருக்கிற பல்வேறு நாடுகளுக்கு இடையே இங்கே உருவாகிறது.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த இணைப்புக்கு ஒரு அடையாளச் சின்னமாக விளங்குகின்ற தமிழ்நாடு அரங்க விழாவில் இன்று நாங்கள் பங்கேற்கிறோம்.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாங்கள் உலக அளவிலே கூட இணைப்பை விரும்புகிறவர்கள் - இணையாக இருக்கின்ற தன்மையை எந்த நேரத்திலும் நாங்கள் விரும்பாதவர்கள். நாங்கள் என்றைக்கும் உலக அரங்கத்தில் இணைப்பு விரும்புகிறவர்கள்.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறிக்கை படிக்கிற நேரத்தில் ‘பன்மையில் ஒருமை’ ‘ஒருமையில் பன்மை’ என்ற தொடரை அடிக்கடி சொன்னார்கள்.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருமையிலே பன்மை என்ற அந்த வார்த்தையைச் சொன்னால் - இங்கே 19 அரங்குகள் இந்தியப் பேரரங்கு என்கிற பெயரில் - பாரத் நிவாஸ் என்ற பெயரில் கட்டப்பட இருக்கின்றன.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்தொன்பதையும் ஒன்றாகச் சேர்த்து பாரத் நிவாஸ் என்று இங்கே கட்டவில்லை.",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒவ்வொரு மாநிலத்துக்கும் ஒவ்வொரு அரங்கு என்று தனித் தனியாகக் கட்டி; முடிவாக பாரத் நிவாஸ்",
+      "sourcePage": 209,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     209
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று - இந்தியப் பேரரங்கம் என்று - பெயர் வைக்கிறார்கள்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போல ஒவ்வொரு அரங்கத்திலும் அந்தந்த மாநிலத்தில் தனித் தன்மைகள் இருக்கும் என்றும் எடுத்துக் கூறியிருக்கிறார்கள்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே இப்படிப்பட்ட இணைப்பைத்தான் நாங்கள் விரும்புகிறோம். அந்த இணைப்பை - அந்தச் சங்கமத்தை - நாம் காணுகிற நேரத்தில் பெருத்த மகிழ்ச்சி அடைகிறேன்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழ்நாடு அரங்கத்திற்காகத் தமிழ்நாடு அரசின் சார்பில் ஒரு லட்சம் ரூபாய் அளிக்கப்படுகிறது என்று சொன்னார்கள்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அத்தோடு மிச்சமுள்ள ஒன்பது லட்சத்தையும் உடனடியாகக் கொடுத்துவிடும்படி என்னையும் நாவலரையும் பார்த்து இங்கே கேட்டுக் கொள்ளவும் செய்தார்கள்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் கேட்டபடி பணத்தை மட்டுமல்ல; ஒத்துழைப்பையும் தர இருக்கிறோம் நாங்கள்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த ஆரோவில் நகரம் நல்ல முறையிலே வளர்வதைத் தமிழ்நாடு அரசு தனக்குற்ற ஒரு இலட்சியமாகக் கொண்டு, ஒத்துழைப்பை எந்த அளவுக்குத் தரமுடியுமோ அந்த அளவுக்குத் தரும்.",
+      "sourcePage": 210,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     210
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1973-ஆம் ஆண்டு அக்டோபர் 28-ஆம் நாள் ஆரோவில் சர்வதேச நகரில் தமிழக அரங்கிற்கு அடிக்கல் நாட்டிப் பேசியது.",
+    "sourcePage": 210
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The speech takes the Purananuru ideal “Every place is our town; everyone our kin” as the starting point for welcoming Auroville as an experiment in international fellowship.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi describes Auroville as a new settlement whose future cannot be judged from its early stage, comparing it to the seed of a banyan tree. He recalls local suspicion of unfamiliar innovations and a childhood memory of villagers fearing photography, using both to argue that new ideas are often resisted before becoming familiar.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He praises the growing cooperation between local villagers and residents from other countries, including foreigners learning colloquial Tamil. The projected Bharat Nivas and the separate State pavilions are treated as a model of “unity in diversity”: distinct identities are preserved while forming a larger union.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He announces Tamil Nadu Government support for the Tamil Nadu pavilion and promises cooperation with Auroville's development.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered on 28 October 1973 while laying the foundation stone for the Tamil Nadu pavilion at the international city of Auroville.",
+    "sourcePage": 210
+   }
+  ]
+ },
+ "sourcePages": [
+  204,
+  205,
+  206,
+  207,
+  208,
+  209,
+  210
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 28,
+  "total": 61
+ }
+}

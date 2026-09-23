@@ -1,0 +1,1090 @@
+{
+ "workId": "kalaivanar",
+ "slug": "kalaivanar",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/kalaivanar",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1972-09-04",
+ "year": 1972,
+ "title": {
+  "ta": "கலைவாணர்",
+  "en": "Kalaivanar"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.22,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கலைவாணர்",
+    "sourcePage": 120
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்று கலைவாணர் விழா நடத்துவது போலவே, இதே குழுவினால் ஆண்டுதோறும் கலைவாணர் விழா நடத்தப்படும்!",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணரோடு நெருங்கியிருந்து - கலைப்பணி ஆற்றிய பெரியவர்கள், கலையுலகத் தோழர்கள் ஆகியோருக்கு அந்த விழாக்களில் ஏற்ற வகையில் பாராட்டும் பொற்கிழியும் அளிக்கப்படும்.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணர் அவர்கள் இந்த நாட்டில் செய்து விட்டுப்போன காரியங்கள் என்றென்றும் நம் மனத்திரையில் நிழலாடிக் கொண்டிருக்கின்றன.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உலகத் தமிழ் மாநாடு முடிந்து - ஊர்வலக் குழுவில் அங்கம் வகித்த மறைந்த பெரியவர் எஸ்.எஸ். வாசனும், திரு. ஏ.வி.எம். செட்டியாரும் என்னிடம் வந்து, “ஊர்வலக் குழுவில் மிகுதியான பணத்தை என்ன செய்வது?” என்று கேட்டார்கள்.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கலைவாணர் சிலை அமைக்கலாமே!” என்று யோசனை கூறினேன்.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்தே நாட்களில் சிலையை அற்புதமாக அவர்கள் தயாரித்தார்கள்.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“கலைவாணர் சிலையைத் திறந்து விட்டுத்தான் மறைவேன்” என்றுதான் போலும், பேரறிஞர் அண்ணா அவர்கள் கலைவாணரின் சிலை திறப்பு நிகழ்ச்சியில் கலந்து கொண்ட பிறகுதான் மறைந்தார்கள்! அவரது கடைசிப் பொதுநிகழ்ச்சி அதுதான்!",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதுபோலவே கலைவாணரும் சேலம் மாவட்டத்தில் அறிஞர் அண்ணா அவர்களது உருவப் படத்தைத் திறந்து விட்டுத்தான் மறைந்தார்! அதுதான் அவரது கடைசிப் பொது நிகழ்ச்சி!",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணர் வாழ்க்கை நிகழ்ச்சிகள் பற்றிப் பலர் கூறினார்கள்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்னுடன் தொடர்பு கொண்டுள்ள செய்திகளை நான் கூறுவது தற்பெருமைக்கு என்று எடுத்துக் கொள்ள வேண்டாம்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறைந்தவர்கள் திரும்பி வந்து இல்லையென்றா கூறப் போகிறார்கள் என்ற நினைப்பிலும் இது கூறப்படுவதல்ல!",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணர் அவர்களே தம் கைப்பட்ட எழுதிய கட்டுரையில் உள்ளதைக் கூறுகிறேன்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மணமகன்” திரைப்படம் கலைவாணரால் தயாரிக்கப்பட்டு கிருஷ்ணன் பஞ்சு ஆகியோரால் இயக்கப்பட்டது. நான்தான் உரையாடல் தீட்டியவன்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருநாள் என் அறையில் அமர்ந்து-மின் விசிறிக்கு கீழே காட்சிகளை வேக வேகமாக எழுதிக் கொண்டிருக்கிறேன்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மின்விசிறியின் வேகத்தால், எழுதப்பட்ட காகிதங்கள் கீழே பறந்து விழத் தொடங்கின. அவற்றை எடுத்து வைத்துவிட்ட பிறகு எழுத முடியாத காரணத்தால் அதைப் பற்றிக் கவனியாமல் எழுதிக் கொண்டேயிருந்தேன்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரண்டு மூன்று காட்சிகள் எழுதிவிட்டுப் பார்க்கிறேன்! கீழே பறந்து விழுந்த காகிதங்கள் ஒழுங்காக அடுக்கப்பட்டு மேசையில் வைக்கப்பட்டிருந்தன. தொடர்ந்து பின்னால் திரும்பிப் பார்த்தேன், யார் இதை அடுக்கியது என்று? கலைவாணர் நின்று கொண்டிருந்தார்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் பதறிப் போய் “நீங்கள் இதைச் செய்யலாமா?” என்று கேட்டேன்.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்கு அவர் “நீங்கள் எழுதுவதைப் பார்க்க ரொம்ப நாளாக ஆசை! இன்று இது நிறைவேறியது!” என்றார்.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நிகழ்ச்சியை அவர் ‘மணிமகுடம்’ நூறாவது நாடக விழா மலரில் கட்டுரையாக எழுதியிருக்கிறார்.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அத்தகைய பெருந்தன்மை மிக்க கலைவாணரின் ஆதரவில் இருந்து அரிய கருத்துக்களைத் தமது பாடலின் மூலம் தந்தவர் உடுமலை நாராயணக் கவிராயர் அவர்கள்! இவருக்குப் பொற்கிழி அளித்து ஊக்கப்படுத்திட வேண்டும் என்று விரும்பிய நடிப்பிசைப் புலவரை நாம் மறக்க முடியாது.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேலூர் மருத்துவமனையில் சாவோடு போராடிக் கொண்டிருந்த நடிப்பிசைப் புலவர் கே.ஆர். ராமசாமியை நான் காணச் சென்றபோது - அவர் கூறிய கடைசி ஆசைதான் இன்று இந்த நிகழ்ச்சியாக இங்கு இப்போது நடந்து கொண்டிருக்கிறது.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நமது கொள்கைகளைப் பரப்பப் பாடுபட்டோர், பணியாற்றியோர் அனைவரையும் கௌரவிக்கும் செயலை அண்ணாவின் வாரிசுகள் நிச்சயம் செய்து காட்டுவார்கள் என்பதற்கு ஓர் எடுத்துக் காட்டுத்தான் இந்த நிகழ்ச்சி!",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணரும், உடுமலை நாராயணக் கவியும் இணைந்து தமிழுக்கத்தில் ஒரு கருத்துப் புரட்சியை உண்டாக்கினார்கள்.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் காலத்து உத்தமபுத்திரன் படத்தில் கலைவாணர் அய்யராக வருவார். அவர் காதலிப்பதோ - பூங்காட்டுச் சுமக்கும் ஆதிதிராவிடப் பெண்ணை! அதனால் பல கதாறாக்கள் ஏற்பட்டுக் கடைசியில் அந்தப் பெண்ணையே உயர்ஜாதிக்காரனுக்குக் கட்டி வைக்கும் சூழ்நிலையை ஏற்படுத்திக் காட்டுவார் அந்தப் படத்தில்!",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்றைக்குச் சமூக சீர்திருத்தம் எளிதாகப் பேசி விடலாம்; ஆனால் அன்றைக்கு இதற்காகக் காட்சிகளைத் துணிந்து இணைத்தவர் கலைவாணர்!",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவரது அருமையான நகைச்சுவைக்கு இன்னொரு எடுத்துக்காட்டு.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தந்தை வெளியூர்! மகளோ அறையில்! அவளை அடைய நினைக்கும் வாலிபன் (கலைவாணர்) இடையில்!",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“உள்ளே போய் உங்கள் மகளிடம் மாங்கனி பெற்றுக் கொள்கிறேன்” என்பார் கலைவாணர்.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“சரி” - என்று தந்தை கூறிவிட்டு - உள்ளே இருக்கும் மகளிடம் “இந்தாம்மா, இவன் வருவான், ஒண்ணு கொடுத்திடு!” என்பார்.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணர் உள்ளே சென்று அந்தப் பெண்ணிடம் ஒரு முத்தம் கேட்பார்! அவள் மறுப்பாள்!",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே கலைவாணர் வெளியே எட்டிப் பார்த்து, “கொடுக்க மாட்டேன்னு என்கிறாள்; உங்கள் மகள்!” என்பார்.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தந்தையோ “ஒண்ணு குடும்மா!” என்பார் - கலைவாணர் முத்தம் பெற்றுக் கொள்வார்.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்படிப்பட்ட நகைச்சுவை? இப்படிப்பட்ட நகைச்சுவை கலைவாணர் ஒருவரின் சிந்தனையில்தான் வரும்!",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எப்பேர்ப்பட்ட புராணப் படத்தில் அவர் நடித்தாலும் - படம் பார்த்துவிட்டு வெளியே வருவோர் பக்தர்களாக வரமாட்டார்கள், பகுத்தறிவாளர்களாக வருவார்கள்! அந்த அளவுக்குக் கலைவாணரின் கருத்துக்கள் இருக்கும்!",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "‘பூம்பாவை’ படத்தில் நடிப்பிசைப் புலவர் திருஞான சம்பந்தராக வருவார். திருஞானசம்பந்தர் ஐந்து வயதிலேயே பாட்டுப் பாடினார் என்பது கதை!",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஐந்து வயதுப் பாலகன் எப்படி பாட முடியும் - என்று சிந்தித்துத் தடு எடுக்க நினைத்த கலைவாணர் அந்தப் படத்திலேயே ‘ஐந்து வயது பாலகன் பாடினான் பாட்டு, எனப் போடுகிறாயே ஒரு வேட்டு’ என்று பாடுவார்.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடுமலை நாராயணகவி அவர்களால் இயற்றப்பட்ட “மெய் கண்டானை மக்கள் மேன்மை கண்டான் தனை மேதினி போற்றுமடா!” என்னும் பகுத்தறிவுப் பாடல் அன்றைய தினம் மேடைகளில் ஒலித்தது.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்றைக்கு அவர் எழுபது வயதை அடைந்து இருந்தாலும் 18 வயது வாலிபரைப் போல காதற் பாடல்களை இயற்றுவார்.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமது இளம் (?) மனைவியுடன் வருடந்தோறும் குற்றாலம் சென்று உல்லாசம் அனுபவிப்பார் உடுமலைக் கவிராயர்.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அத்தகைய பெரியவருக்குப் பொற்கிழி தந்திருக்கிறோம். அது சாதாரணமானதுதான் என்றாலும் அதை பெரிதாகக் கருதக்கூடிய பெருந்தன்மை மிக்கவர் அவர்!",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலைவாணருக்குச் சிலை அமைத்தோம். அவரோடு பணியாற்றிய உடுமலை நாராயணக் கவிக்குப் பொற்கிழி அளித்தோம்!",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அத்தோடு - இந்தச் சிறுவர் அரங்கத்தில் எவ்வளவு பெரிய நிகழ்ச்சிகள் நடந்தாலும் - எவ்வளவு பெரியவர்கள் கலந்து கொண்டாலும் - சிறுவர் அரங்கில் நடைபெறும் விழா என்றே குறிப்பிடப்படுகிறது.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே இந்த அரங்கம் கலைவாணர் அரங்கம் என்று நாளை முதல் அழைக்கப்படும்.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1972-ஆம் ஆண்டு செப்டம்பர் 4-ஆம் நாள் சென்னை சிறுவர் அரங்கத்துக்குக் கலைவாணர் அரங்கம் என்று பெயர் சூட்டிக் கலைவாணர் விழாவில் பேசியது.",
+    "sourcePage": 124
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kalaivanar",
+    "sourcePage": 120
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Just as we are holding a Kalaivanar festival today, this same committee will conduct one every year.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At those functions, suitable honours and purses will be presented to senior artists and colleagues who worked closely with Kalaivanar.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What Kalaivanar did for this country continues to live on the screen of our memory.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After the World Tamil Conference, the late S. S. Vasan and A. V. M. Chettiar, both members of the procession committee, asked me what should be done with its surplus funds. I suggested, “Why not erect a statue of Kalaivanar?”",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Within ten days they produced the statue splendidly.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is almost as though Perarignar Anna resolved not to leave us until he had unveiled that statue: the Kalaivanar statue unveiling was his last public function.",
+      "sourcePage": 120,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     120
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Likewise, Kalaivanar's own last public function was the unveiling of Arignar Anna's portrait in Salem district.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Many speakers have recalled incidents from Kalaivanar's life.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Do not think that I recount events involving me out of self-praise, or because those who are gone cannot return to contradict me. I am referring to what Kalaivanar himself wrote in an article in his own hand.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The film *Manamagal* was produced by Kalaivanar and directed by Krishnan–Panju. I wrote its dialogue.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One day I sat in my room beneath a fan, writing scenes rapidly. The wind blew the sheets I had written onto the floor. Because stopping to retrieve them would break my writing, I kept going.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After two or three scenes I noticed that all the fallen pages had been neatly gathered and stacked on the table. I turned around to see who had done it. Kalaivanar was standing there.",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Startled, I asked, “Should you be doing this?”",
+      "sourcePage": 121,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     121
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He replied, “For a long time I have wanted to watch you write. Today that wish has been fulfilled!”",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He later recorded this incident in an article for the souvenir marking the hundredth performance of *Manimagudam*.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Under the support of such a generous Kalaivanar, Udumalai Narayana Kavi conveyed rare ideas through his songs. We cannot forget Nadippisai Pulavar K. R. Ramasamy, who wanted such a poet to be encouraged with a purse. When I visited Ramasamy as he fought for life in Vellore hospital, that was among his final wishes; today's function gives it form.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This is an example of how Anna's successors will honour those who worked to spread our principles.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Together, Kalaivanar and Udumalai Narayana Kavi produced a revolution of ideas in Tamil.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the old film *Uthamaputhiran*, Kalaivanar appears as an Iyer who falls in love with an Adi-Dravidar woman. The film uses the resulting conflict to create a situation in which she is finally married to an upper-caste man.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Social reform is easy to speak of today. Kalaivanar had the courage to insert such scenes then.",
+      "sourcePage": 122,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     122
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Here is another example of his delightful humour.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A father is away; his daughter is inside; a young man played by Kalaivanar wants to approach her.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kalaivanar tells the father that he will go inside and obtain a mango from his daughter. The father agrees and calls to his daughter, “He will come in; give him one.”",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Inside, Kalaivanar asks the young woman for a kiss. She refuses.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He calls out, “Your daughter says she won't give it!”",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The father replies, “Give him one!”—and Kalaivanar gets the kiss.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What kind of humour is this? Such humour could arise only in Kalaivanar's mind.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even when he acted in a mythological film, viewers did not leave as devotees but as rationalists; that was the force of his ideas.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In *Poompavai*, Nadippisai Pulavar appears as Thirugnanasambandar. The story says Sambandar sang at the age of five.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Wondering how a five-year-old child could sing, Kalaivanar mocked the claim in a song within the film itself.",
+      "sourcePage": 123,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     123
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The rationalist song written by Udumalai Narayana Kavi—“The world will praise the one who perceived truth and saw the greatness of the people”—once rang from public stages.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even now, though he is seventy, he can compose love songs like an eighteen-year-old.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We have presented a purse to such a senior artist. The gift may be modest, but he is generous enough to regard it as great.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We erected a statue to Kalaivanar; today we honour Udumalai Narayana Kavi, who worked with him.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "However great the events and however eminent the participants, functions here are still described merely as functions at the Children's Theatre. Therefore, from tomorrow, this hall will be called **Kalaivanar Arangam**.",
+      "sourcePage": 124,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     124
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered on 4 September 1972 at a Kalaivanar festival in Chennai, naming the Children's Theatre as Kalaivanar Arangam.",
+    "sourcePage": 124
+   }
+  ]
+ },
+ "sourcePages": [
+  120,
+  121,
+  122,
+  123,
+  124
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 16,
+  "total": 61
+ }
+}

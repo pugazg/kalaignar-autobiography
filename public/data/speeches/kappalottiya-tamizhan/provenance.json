@@ -1,0 +1,60 @@
+{
+ "workId": "kappalottiya-tamizhan",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/kappalottiya-tamizhan",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "199–204",
+  "printedSpeechPages": "198–203",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_013_pages_194-209.pdf",
+    "scans": "194–209",
+    "sha256": "5b85e25417856354772d66311503fadfef761e72768f35682cf76d281730f6bc",
+    "bytes": 48080495
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 27,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ]
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "condensed English rendering (not a full translation)"
+ },
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.48,
+  "tamilBodyWords": 753,
+  "englishBodyWords": 358,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 26,
+  "englishParagraphs": 15,
+  "sourcePagesCovered": 6
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

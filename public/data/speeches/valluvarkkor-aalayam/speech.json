@@ -1,0 +1,702 @@
+{
+ "workId": "valluvarkkor-aalayam",
+ "slug": "valluvarkkor-aalayam",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/valluvarkkor-aalayam",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1973-04-27",
+ "year": 1973,
+ "title": {
+  "ta": "வள்ளுவர்க்கோர் ஆலயம்",
+  "en": "A Temple for Valluvar"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.57,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "வள்ளுவர்க்கோர் ஆலயம்",
+    "sourcePage": 28
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பேரறிஞர் அண்ணா அவர்கள் 1967ஆம் ஆண்டில் ஆட்சியை உருவாக்கியபோது, என்னைப் பொதுப்பணி அமைச்சராகப் பணித்தார்கள். தமிழ் நாட்டிலுள்ள அரசாங்கப் பேருந்துகளிலெல்லாம் திருவள்ளுவரின் படத்தைப் போட்டுத் திருக்குறளையும் பொறிக்க வேண்டும் என்று அதனைச் செய்தோம். அப்போது சட்டமன்றத்தில் எதிர்க்கட்சி வரிசையிலிருந்த வினாயகம் அவர்கள் அண்ணாவைப் பார்த்து, “யாகாவா ராயினும் நாகாக்க” என்று பேருந்துகளில் திருக்குறள் எழுதியிருக்கிறார்களே - யாருக்காக அந்தக் குறள் எழுதப்பட்டது? டிரைவருக்காகவா? - கண்டக்டருக்காகவா? என்று கேட்டார்.",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உடனே அண்ணா அவர்கள், “யார் யாருக்கு நாக்கு இருக்கிறதோ அவர்களுக்கெல்லாம்”, என்று நவின்றார்.",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படிப்பட்ட அருமையான குறட்பாக்கள் திருக்குறளில் இருக்கின்றன.",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதுமட்டுமல்ல; தமிழ்நாட்டில் பொதுப்பணித் துறையைச் சேர்ந்த எல்லாச் சுற்றுலா மாளிகைகளிலும் - அரசாங்கச் சுற்றுலா மாளிகை - நகராட்சிப் பயணிகள் விடுதி போன்றவைகளிலெல்லாம் திருவள்ளுவரின் திருவுருவப் படத்தை வைக்க வேண்டும் என்றும் முடிவெடுத்துச் சொல்லப்பட்டது.",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பேரறிஞர் அண்ணா அவர்கள் மறைந்த பிறகு, அவரது பிறந்தநாளில், காவல் துறையைச் சேர்ந்த திறமையானவர்களுக்கு முதலவர் பதக்கம் வழங்க",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேண்டும். சிறந்த சேவைக்காகப் பொற்கிழியும், நற்சான்றிதழும் தரவேண்டும் என்று முடிவெடுத்து - அப்படிப்பட்ட பதக்கத்தில் யாருடைய திருவுருவம் பொறிக்கப்பட வேண்டும் என்ற நிலை ஏற்பட்டபோது திருவள்ளுவரின் திருவுருவத்தைத்தான் பொறித்திருக்கிறோம்.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஏனென்றால், “கடிதோச்சி மெல்ல எறிக!” என்பதை மறவாமல் இருப்பதற்காகத்தான்!",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த அளவுக்குத் திருவள்ளுவரையும், திருக்குறளையும் மக்கள் மனத்தில் பதிய வைக்க வேண்டும் என்ற முறையில் அரசு முயற்சிகளை மேற்கொண்டிருக்கிறது.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சென்னையில் உலகத்தமிழ் மாநாடு நடைபெற்ற போது, அண்ணாமலைப் பல்கலைக் கழகத்திற்கு 3 இலட்சமும், மதுரைப் பல்கலைக் கழகத்திற்கு 3 இலட்சமும், சென்னைப் பல்கலைக் கழகத்திற்கு 3 இலட்சமுமாக மொத்தம் 9 இலட்சம் ரூபாய் திருக்குறள் ஆராய்ச்சிக்காக அளிக்க முடிவு செய்து, அவற்றைத் துணைவேந்தர்களிடம் ஒப்படைக்கும் விழா கடற்கரையில் நடைபெற்று, முன்னாள் குடியரசுத் தலைவரும் அந்த விழாவில் கலந்து கொண்டிருக்கிறார்.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "துணைவேந்தர்கள், தமிழ்ப் புலவர்கள் ஆகியோரின் அக்கறையோடும், ஆர்வத்தோடும் உறுதுணையோடும் ஆராய்ச்சிகள் இப்போது நடக்கின்றன.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திருக்குறளையும் - திருவள்ளுவரையும் மக்கள் உள்ளத்தில் பதிய வைக்கவும், குறளின் பெருமையை உலகமெங்கும் பரப்பவும் அரசு பல்வேறு பணிகளில் ஈடுபட்டிருக்கிறது.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த வகையில் இந்தப் பழமையான திருவள்ளுவர் ஆலயத்தையும் திருப்பணி செய்து வரலாற்றுச் சிறப்புடையதாக ஆக்க வேண்டுமென்ற எண்ணம் எங்களுக்கு இருந்தது.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலப்பதிகாரக் கலைக்கூடம் அமைக்க வேண்டும் என்று விரும்பி - அதற்கான சிற்ப வேலைகள் மாமல்லபுரத்தில் நடந்து கொண்டிருந்தபோது, திங்களுக்கு இருமுறையாவது நான் அங்குச் செல்வதுண்டு.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அங்கே வேலை செய்து கொண்டிருந்த சிற்பக் கல்லூரி மாணவர்கள், “இந்த வேலை முடிந்த பிறகு வேறு வேலை எங்களுக்குத் தர வேண்டும்”, என்று கேட்டார்கள்.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன வேலை தருவது?” என்று ஏக்கத்தோடுதான் நான் திரும்பினேன்.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பழுதுபட்டிருக்கின்ற ஆலயங்களை எல்லாம் புதுப்பிக்க எங்களை அனுப்புங்கள்” என்றார்கள்.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பூம்புகாரில் சிலப்பதிகாரக் கலைக்கூடம் மட்டுமல்ல; மேலும் எட்டுக் கட்டங்களுக்கான அடிக்கற்களும் நாட்டப்பட்டிருக்கின்றன. அந்த எட்டுக் கட்டடங்களும் கலைமணம் கமழத் தக்கவையாகத் திகழும்.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மாமல்லபுரத்திலிருக்கின்ற மாணவர்களுக்கு அளித்த வாக்குறுதியை நிறைவேற்றவும் - திருவள்ளுவருக்கு அழியாத நினைவுச் சின்னம் அமைத்திடவும் - தமிழகத்தின் கலைவளம் கண்டு உலகத்தார் மகிழ்ந்திடவும் - சுற்றுலாத்துறை வளர்ந்து, அதே நேரத்தில் பொருளாதாரமும் வளர வேண்டும் என்ற இவ்வளவு கண்ணோட்டத்தோடும் திருவள்ளுவர் நினைவாலயம் அமைகிறது (சென்னை நுங்கம்பாக்கம் பகுதியில்).",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நினைவாலயத்தைத் திருவாரூர்த் தேர் போல அமைக்க இருக்கிறோம். பல முறை, குழுவினைக் கூட்டி இந்த முடிவை எடுத்தோம் - ஏனென்றால் இது திருவள்ளுவர் விவகாரம்; யாரும் குறை காணக்கூடாது என்பதற்காகத்தான்!",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தேர்போல அமையும் இந்த நினைவாலயம் கருங்கற்களினாலேயே அமைக்கப்பட இருக்கிறது.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1330 குறட்பாக்களும் - ஒவ்வொரு குறளையும் விளக்கும் சிற்பங்களும் வைக்க வேண்டும் என்று ஆசை! இதற்கெல்லாம் பல இலட்சம் செலவாகும்!",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரசு சார்பில் இதற்கு உதவி செய்ய வேண்டும் என்று இங்கே கூறினார்கள். இப்படிப்பட்ட காரியங்கள் யாரும் சொல்லிச் செய்வதல்ல; இந்தக் காரியத்தில் அரசுதான் முயற்சி எடுத்திருக்கிறது.",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நிச்சயம் வெகுவிரைவில் அவனியோர் பார்த்து மகிழத் திருவள்ளுவர் நினைவாலயம் அமையும்!",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரசு செய்கிறதே என்று இல்லாமல் ஆலயம் அமைய அனைவரும் ஒத்துழைக்க வேண்டும் என்று கேட்டுக் கொள்கிறேன்.",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1973-ஆம் ஆண்டு ஏப்ரல் திங்கள் 27-ஆம் நாள்\nமயிலை வள்ளுவர் நினைவாலயத் திருப்பணி\nஅடிக்கல் நாட்டு விழாவில் பேசியது.",
+    "sourcePage": 31
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "A Temple for Valluvar",
+    "sourcePage": 28
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When Perarignar Anna formed the government in 1967, he assigned me the Public Works portfolio. We arranged for Thiruvalluvar's portrait to be placed in all Tamil Nadu government buses and for a Kural to be inscribed in them. At that time, Vinayagam, who sat in the opposition benches of the Legislative Assembly, looked at Anna and asked: “You have written ‘Whatever else you may fail to guard, guard your tongue’ in the buses. For whom is that Kural written — for the driver or for the conductor?”",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Anna immediately replied: “For everyone who has a tongue.”",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Thirukkural contains such fine couplets.",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Not only that: it was also decided that portraits of Thiruvalluvar should be placed in all tourist rest houses belonging to the Public Works Department — government tourist bungalows, municipal travellers' lodges and the like.",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After Perarignar Anna passed away, it was decided that on his birthday medals should be given to outstanding members of the police force,",
+      "sourcePage": 28,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     28
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "along with cash awards and certificates for distinguished service. When the question arose whose image should be engraved on such a medal, it was Thiruvalluvar's image that we chose.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Why? So that we should not forget the counsel: “Raise the rod swiftly, but let it fall gently.”",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The government has taken steps of this kind so that Thiruvalluvar and the Thirukkural may become deeply fixed in the minds of the people.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When the World Tamil Conference was held in Chennai, it was decided to grant three lakh rupees each to Annamalai University, Madurai University and the University of Madras — nine lakh rupees in all — for Thirukkural research. A ceremony was held on the beach to hand the grants to the Vice-Chancellors, and a former President of India also participated.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Research is now proceeding with the concern, enthusiasm and support of Vice-Chancellors and Tamil scholars.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The government is engaged in various activities to fix the Thirukkural and Thiruvalluvar in people's hearts and to spread the greatness of the Kural throughout the world.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In that spirit, we wished to renovate this ancient Valluvar temple and make it a place of historical distinction.",
+      "sourcePage": 29,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     29
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When I wished to establish the Silappathikaram Art Gallery and the sculptural work for it was under way at Mamallapuram, I used to visit there at least twice a month.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The students of the sculpture college working there asked: “When this work is over, you must give us other work.”",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I returned wondering anxiously, “What work can I give them?”",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They said: “Send us to renovate all the temples that have fallen into disrepair.”",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At Poompuhar, foundations have been laid not only for the Silappathikaram Art Gallery but for eight additional structures. Those eight buildings too will become places fragrant with art.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With the aim of fulfilling the promise made to the Mamallapuram students, creating an imperishable memorial to Thiruvalluvar, enabling the world to rejoice in Tamil Nadu's artistic wealth, developing tourism and at the same time helping the economy to grow, the Thiruvalluvar memorial is being created in the Nungambakkam area of Chennai.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We intend to design this memorial in the form of the Tiruvarur temple car. We called the committee together many times before reaching this decision — because this concerns Thiruvalluvar, and no one should be able to find fault!",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This chariot-shaped memorial will be built entirely of black stone.",
+      "sourcePage": 30,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     30
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our desire is to place all 1,330 Kurals there, together with sculptures illustrating each Kural. All this will cost many lakhs of rupees.",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It was said here that the government should assist this effort. Such things are not being done because someone asked us to do them; the government itself has taken the initiative.",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Certainly, very soon the Thiruvalluvar memorial will rise for the people of the world to see and enjoy.",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I ask everyone to cooperate so that the temple may be established, rather than leaving it merely to the government.",
+      "sourcePage": 31,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     31
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered on 27 April 1973 at the foundation-stone ceremony for the renovation of the Mylapore Valluvar Memorial Temple.",
+    "sourcePage": 31
+   }
+  ]
+ },
+ "sourcePages": [
+  28,
+  29,
+  30,
+  31
+ ],
+ "venue": null,
+ "event": {
+  "ta": "மயிலை வள்ளுவர் நினைவாலயம் திருப்பணி அடிக்கல் நாட்டு விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 2,
+  "total": 61
+ }
+}

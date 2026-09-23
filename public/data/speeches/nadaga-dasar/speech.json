@@ -1,0 +1,937 @@
+{
+ "workId": "nadaga-dasar",
+ "slug": "nadaga-dasar",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/nadaga-dasar",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1972-09-08",
+ "year": 1972,
+ "title": {
+  "ta": "நாடக தாசர்",
+  "en": "Nadaga Dasar"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.94,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நாடக தாசர்",
+    "sourcePage": 125
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடக உலகில் புகழும் பெருமையை நிலைநாட்டுகிற அளவுக்கு ஏற்றமும் வெற்றியும் பெற்றிருந்து மறைந்த சங்கரதாசின் சுவாமிகளுடைய 105-வது பிறந்தநாள் விழாவினை இந்த மன்றத்தினர் உணர்வு பூர்வமாக நடத்துவதைக் காண மிகுந்த மகிழ்ச்சி அடைகிறேன்.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சங்கரதாசின் ஆவி வந்து இதைக் காணும் என்பதற்காக இந்த சங்கரதாசர் விழா நடத்தப்படவில்லை. நம்மை எதிர்காலத்தில் ஊக்கப்படுத்திக் கொள்ள, நாம் செய்ய வேண்டிய பணிகளுக்கு நம் உள்ளத்தில் தெம்பை உருவாக்கிக் கொள்ள, நம் உள்ளத்தை உறுதியாக ஆக்கிக் கொள்ள, அந்தச் சுயநலம் காரணமாகத்தான் மறைந்த பெரியவர்களைப் பாராட்டுகிறோம். அந்தப் பணியைத் தொடர்ந்து செய்ய வேண்டும்.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உள்ளபடியே எனக்கு ஆவியில் நம்பிக்கை கிடையாது. அதில் நம்பிக்கை கொண்டவர்கள் கூட இன்று அதில் வேறுபடக் கூறுகிறார்கள்.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தந்தை இறந்து விட்டால் ஆண்டுதோறும் திவசம், திதி கொடுக்க வேண்டுமென்று சொல்கிறார்கள். ஏனென்று கேட்டால், அவர்களுடைய ஆவி இருந்து, நாம் கொடுப்பதைப் பெற்றுக் கொள்கிறும் என்று சொல்கிறார்கள். அவர்களே உன்னுடைய தந்தை இன்ன பிறவியாகப் பிறந்திருக்கிறார் என்றும் சொல்கிறார்கள்.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒன்று மறுபிறவியை மறுக்க வேண்டும் அல்லது ஆவியை மறுக்க வேண்டும்.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரண்டில் ஒரு முடிவிற்கு வந்துவிட்டால் நான் ஒன்றை ஒத்துக் கொள்ளக்கூடத் தயாராக இருக்கிறேன். அதுவரை இரண்டையும் ஒத்துக் கொள்ளத் தயாராக இல்லை.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுபிறவி என்று சொன்ன பிறகு ஆவி என்று ஒன்று எப்படி இருக்க முடியும்? ஆவிக்குக் கொடுப்பதற்காகத் திவசம், திதி என்று நாம் கொடுப்பதெல்லாம் எங்கே போகிறது என்று எனக்குத் தெரியும்.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்னும்கூடச் சிலர், யாராவது இறந்து விட்டால், இன்னார் சிவலோக பதவி அடைந்து விட்டார் அல்லது வைகுண்ட பதவி அடைந்து விட்டார் என்று செய்தி போடுகிறார்கள். மனிதனுக்கு இறந்தும் பதவி ஆசை விடவில்லை என்பதற்கு இது ஓர் உதாரணம். எல்லாரையுமே இப்படிப் போட்டு விட்டால் யார்தான் நரகலோகத்திற்குப் போகிறார்கள் என்று தெரியவில்லை.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பொய் பேசுபவர்கள் நரகத்திற்குப் போவார்கள் என்று சொன்னால் பத்திரிகை போடுகிறவர்கள் தவறாக - பொய்யாக - சிவலோகத்திற்குப் போவதாகப் போடுவதே பொய். அதுவே ஒரு குற்றச்சாட்டு.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப்பட்ட குழப்பத்தில் போய் மாட்டிக் கொள்ள வேண்டாமென்றுதான் “உண்டு என்பார் சிலர், இல்லை என்பார் சிலர், நமக்கில்லை அந்தக் கவலை” என்று நாங்கள் இருக்கிறோம்.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சங்கரதாஸ் சுவாமிகள் மறைந்தும் மறையாமல் இருக்கிறார்; செத்தும் சாகாமல் இருக்கிறார்; அவருடைய எழுத்துக்களில், பாடல்களில், நாடகங்களில் அவர் வாழ்ந்து கொண்டிருக்கிறார். அவரால் உருவாக்கப்பட்ட நடிகர்களின் புகழின் இழையோடு வாழ்ந்து கொண்டிருக்கிறார்.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டிற்குப் பல்வேறு துறைகளில் பணியாற்றியவர்களை மறந்துவிடாமல் அவர்களுடைய வாரிசுகளாக நின்று அவர்களைத் தாங்களும் நினைத்து, மற்றவர்",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "களையும் நினைக்கச் செய்யும் அரும்பணியை மேற்கொள்வது என்பது சாதாரணமான ஒன்று அல்ல. அந்தப் பணியைக் கலைஞர் டி.கே. சண்முகம் அவர்களும், மற்றவர்களும் செய்து வருகிறார்கள். கலையுலகத்திலும், ஏனைய மக்கள் உள்ளத்திலும் சங்கரதாஸ் சுவாமிகள் அவர்களை நினைவுபெறச் செய்கிற அளவுக்குப் பெரும் தொண்டை டி.கே.எஸ். சகோதரர்கள் ஆற்றி வந்திருக்கிறார்கள் என்று சொன்னால் அதை மறுப்பார் யாருமில்லை.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சில ஆண்டுகளுக்கு முன்பு அவர்களுடைய பெருமுயற்சியின் காரணமாகச் சங்கரதாஸ் சுவாமி அவர்களுடைய சிலை ஒன்று மதுரையில் அமைக்கப்பட்டது. தொடர்ந்து ஆண்டுதோறும் அவர்களுடைய நினைவு நாள் விழாவினை நடத்தி வருகிறார்கள்.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப்பட்ட பெரியவர்களின் நினைவு விழாக்களில் கலந்து கொள்ள வருகிறவர்கள் யார் என்பதைப் பற்றிக் கவலைப்பட வேண்டியதில்லை. இந்த விழாக்களில் எடுத்துக் கொள்ளப்படுகிற பொருள் என்ன என்பதை எண்ணிப் பார்க்க வேண்டும். சங்கரதாஸ் அவர்களிடம் கலந்து பழகியவர்கள் சிலர் இருக்கிறார்கள். அவர்களுடைய நாடகங்களில் நடித்தவர்கள் சிலர் இருக்கிறார்கள். அவர்களைப் பற்றிக் கேள்விப்பட்டவர்கள் சிலர் இருக்கிறார்கள். பார்த்தோ அல்லது கேள்விப்பட்டாமலோகூடத் தெரிந்து கொள்ள வேண்டுமென்ற எண்ணத்தில் இங்கே சிலர் அமர்ந்திருக்கிறார்கள். அப்படிப்பட்டவர்களுடைய எண்ணிக்கை ஆண்டுக்கு ஆண்டு அதிகமாக ஆக வேண்டும் என்பதுதான் என் ஆசை.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த ஆசையை நிறைவு செய்கிற வகையில் இந்த மன்றத்தினர் தங்கள் பணியை மேலும் முழுமையாக நடத்த வேண்டும் என்றும், அதற்கு என்னால் இயன்ற உதவிகளை நிச்சயமாகச் செய்வேன் என்றும் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஐம்பது ஆண்டு காலத்திற்கு முன்பு நாடக உலகில் பெரிய புரட்சியை நவீன முறையில் அவர் செய்தார் என்று நாம் சொல்லாவிட்டாலும், அந்தக் காலத்திற்கு ஏற்ற வகையில் அந்தக் கால மக்களுக்கு என்னென்ன அறிவுரைகளை எடுத்துச் சொல்ல வேண்டுமோ அதற்கு ஏற்புடைய தளம் இது எனக் கண்டு, அந்தத் தளத்திலே களம் அமைத்து அதன் மூலம் மக்களுக்குத் தேவையான நல்லுரைகளை எடுத்துச் சொல்லி வெற்றி கண்ட பெருமகன் சங்கரதாஸ் சுவாமிகள்.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் எந்தப் பொருள் பற்றிப் பாடினார்கள் என்பதில் எனக்கும் அந்தப் பாடல்களுக்கும் இடையே கருத்து வேற்றுமை இருந்தாலும், அந்தப் பாடல்களில் கொஞ்சிக் கொண்டிருக்கிற தமிழின்பால், எழுத வேண்டும் என்று எழுந்த சுவாமிகளுடைய தமிழ் உணர்வின்பால் என்றைக்கும் மதிப்பு வைத்திருப்பவன் நான். அதனால்தான் அழைத்தவுடன் தயங்காமல் ஒப்புதல் அளித்து இந்த விழாவிற்கு வந்தேன். இந்த விழாவில் நல்ல சொற்பொழிவுகளையும் மன்றத்தினர் சேர்த்து அமைத்திருக்கிறார்கள்.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முன் காலத்தில் எல்லாம் எப்படி நாடக மேடையை அமைக்க வேண்டும். எந்த இடத்தில் அமைக்கப்பட வேண்டும், எத்தனை அடி பரப்பளவு உடையதாக இருக்க வேண்டும் என்பதைப் பற்றியெல்லாம் குறிப்பிட்டார்கள். இந்தக் காலத்தில் நாடகம் நடப்பதே அருமையாக இருக்கிறது. இப்படிப்பட்ட கடுமையான விதிமுறைகளை வைத்தால் நடக்கிற நாடகங்களும் நடக்காது. ஆனால் அந்த அளவிற்கு அறுதியிட்டு ஒவ்வொன்றையும் சிந்தித்து அந்தக் காலத்தில் நாடகக் கலையை வளர்த்திருக்கிறார்கள் என்பதை எண்ணி நாம் மகிழ்ச்சி அடையலாம்.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடக மேடை அமைக்கப்படும் இடம் இடைநிலமாக இருக்க வேண்டும். மண் கூடத் துவர்ப்பாக இருக்கக் கூடாது. இனிக்கிற மண்ணினை உடைய",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இடமாக இருக்க வேண்டும் என்று குறிப்பிட்டார்கள். கிருஷ்ணலீலா நாடகம் நடத்துவதற்கு அப்படிப்பட்ட மண் தேவையாக இருக்கலாம். அந்த நாடகத்தில் கிருஷ்ணன் மண்ணை அள்ளி வாயில் போட்டுக் கொண்டான்; உடனே தாயாரும் மற்றவர்களும் வாயைப் பிளந்து மண்ணைக் கீழே போடச் சொல்லும்போது, அந்த வாயில் அனைத்துலகமும் தெரிந்ததாகச் சொல்வார்கள். அந்த நாடகம் நடத்த வேண்டுமானால் இனிப்பான மண் இருக்கிற நாடகமேடை அமைய வேண்டுமோ, என்னவோ? இப்போது நாடக வல்லுநர்கள் மண் என்று வாயால் கூறிவிட்டுச் சர்க்கரையையே வாயில் போட்டுக்கூடும்.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடகக்கலை இன்று அழிந்து கொண்டு வருகிறது என்பதை அனைவரும் ஒப்புக் கொள்வார்கள்.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் பேசுகையில் நாடகக்கலை ஒரு சேவையைப் பெற்றது. அதுதான் திரைக்கலை. அடையாறு ஆலமரத்தைப் போல ஆளுக்கு விழுதாகத் திரைக்கலை இருப்பதாகக் குறிப்பிட்டார்கள். நான் வெளிநாடுகளுக்குச் செல்லாமல் நம்முடைய நாட்டில் மட்டும் கூறுகிறேன். நாடகக் கலைக்குச் சேயாகப் பிறந்ததாகச் சொல்லப்படுகிற திரைக்கலை இன்று ஆளுக்கு விழுதாக இல்லாமல், வாழைக்குக் கன்றாக ஆகிவிட்டது!",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பல்வேறு நாடகங்களில் நன்றாக நடிக்கும் நல்ல நடிகர்களை எல்லாம் திரைப்பட அதிபர்கள் அதிக ஊதியம் தருவதாக அழைத்துச் சென்றுவிட, அதன் காரணமாகப் பல நாடகக் குழுக்கள் மூடப்பட்டதை அனைவரும் அறிவீர்கள்! அப்படிப்பட்ட புயலுக்குத் தப்பியவர்கள் டி.கே.எஸ். சகோதரர்கள்.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு நாடகம் நாட்டு மக்களிடம் ஒரு கொள்கையைப் பரப்புவதற்கு எடுத்துக் கொள்கிற நேரத்தைவிட, ஒரு திரைப்படம் குறைவான நேரத்தை எடுத்துக் கொள்ளும். ஒரு நாடகத்தின் மூலம் ஆயிரம் பேர் பயனடைகிறார்கள் என்றால் அதே நேரத்தில் 10,000 பேர் பயனடைகிற",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அளவிற்குத் திரைப்பட வாயிலாகக் கொள்கையை எடுத்துச் சொல்ல முடியும். கொள்கையைச் சொல்கிற நாடகங்களையும் படங்களையும் நான் சொல்கிறேன். இப்போது வருகிற ஒரு சில திரைப்படங்கள் நாடகங்கள் பற்றி நான் சொல்வதில்லை. புராண நாடகமாக இருந்தாலும், சமூக நாடகமாக இருந்தாலும், அவற்றின் மூலம் ஒரு கருத்தைச் சொல்ல வேண்டுமென்ற எண்ணம் அந்தக் காலத்திலும் சில நாடக நிறுவனங்களில் இருந்தது. அப்படிப்பட்ட நிறுவனங்களில் ஒன்றாக டி.கே.எஸ். சகோதரர்கள் நிறுவனம் இருந்தது.",
+      "sourcePage": 130,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     130
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடகம், திரைப்படம் என்று பார்த்தால், உள்ளபடியே திரைப்படத்தில் நடிப்பது எளிதானது. நாடக நடிகர் ஒரு தவறு செய்துவிட்டால் தவறு தவறுதான். ஆனால் திரைப்படத்தில் அப்படியல்ல. அவர்கள் பத்து முறை தவறு செய்தாலும், அதைத் திருத்திச் சரியாக வருகிறவரை எடுக்க வசதியிருக்கிறது. முதல் நாள் மகாபாரத நாடகத்தில் நடித்த ஒருவர், மறுநாள் ராமாயண நாடகத்தில் நடிக்கும்போது, தவறி முதல்நாள் கூறிய கதாபாத்திரத்தின் பெயரைச் சொல்லிவிட்டால் அந்தத் தவற்றை நிச்சயமாகத் தீர்த்துக் கொள்ள முடியாது. உடனடியாக மக்கள் கைக்கலிப்புச் செய்து திரையை விட வேண்டிய அவசியம் ஏற்பட்டுவிடும்.",
+      "sourcePage": 130,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     130
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நவாப் ராஜமாணிக்கம் பிள்ளை நாடகத்தில், “நான் சாப்பிட்டு விட்டு வருகிறேன்”, என்று சொல்ல வேண்டுமேயானால் வாயால் சொன்னால் மட்டும் போதாது, கையால் சைகையின் மூலமும் அதைக் காட்ட வேண்டும். அப்போதுதான் கடைசி வரிசையில் உள்ளவர்களும் அதைக் தெரிந்து கொள்ள முடியும் என்று கூறுவார். ஆனால் திரைப்படத்தில் ‘குளோசப்’ என்ற அண்மைக் காட்சி மூலம் காட்டுகிற சாதனங்கள் இருக்கின்றன. எதிரிலே நடிகர் இல்லாமலேகூட அவருடன் பேசுவது",
+      "sourcePage": 130,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     130
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போல எடுக்கக்கூடிய வாய்ப்புகள் திரைப்படத்தில் இருக்கின்றன.",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாடகம் இன்று புதுமையாகப் புரட்சியாக விஞ்ஞான யுகத்திற்கு ஏற்பப் படிப்படியாக மெருகேறி வருகிறதென்றாலும் மறைந்த நாடக மாமேதை சங்கரதாஸ் சுவாமிகள் அந்தக் காலத்தில்கூடப் பழமையில் புதுமையைச் சேர்த்து நாடக உலகில் ஒரு புத்தொளியைப் பரப்பினார் என்று கொண்டால் அது மிகையாகாது.",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாட்டு எழுதுகிறவர்கள் கடைசி வரியில் தங்கள் முத்திரையைப் பதிக்காமல் இருக்க மாட்டார்கள். வேறு யாராவது அதை எடுத்துக் கையாள்ந்து விடுவார்களோ என்ற ஐயத்தில் அப்படி எழுதினார்கள். பாரதிதாசன் கூட, இப்படிப்பட்ட முத்திரை அடிகள் வைத்து முடித்திருக்கிறார். அந்தக் காலத்தில் இதற்கு விதிவிலக்காக இருந்த பெருமகன் சங்கரதாஸ் சுவாமிகள். அவர் எழுதிய பாடல்களில் தன் முத்திரையை அவர் பதிக்காமல் எழுதி இருக்கிறார். ஆனால் ஒவ்வொரு பாடலில் அவர் தன்னுடைய பெயர் வருமாறு தந்திரமாகப் புகுத்தி இருக்கிறார்.",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கே.பி. சுந்தராம்பாள் அவர்கள் பாடிய ‘ஞானப் பழத்தைப் பிழிந்து’ என்ற பாடல் பிரசித்தி பெற்றது. அந்தப் பாடலைக் கேட்கிற நேரத்தில் எல்லாம் அந்த அம்மாவின் பெயர்தான் ஞாபகத்திற்கு வரும் தவிர, எழுதியவர் ஞாபகம் நமக்கு வரவில்லை. அந்த ஓர் அருமையான பாடலின் கருத்தில் நான் நுழைந்தேனா இல்லையோ அது வேறு விஷயம்; அந்தத் தமிழில் சொக்கிப் போய் பல நேரங்களில் இதை யார் எழுதினார்கள் என்று எண்ணியதுண்டு. இன்றுதான் அந்தப் பாடலை எழுதியவர் சங்கரதாஸ் சுவாமிகள் என்ற குறிப்பைப் பார்த்தேன். அந்தப் பாட்டின் முடிவில்",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தந்திரமாக இருபொருள் படும் விதத்தில் தன்னுடைய பெயரை இணைத்து முத்திரை அடியை வைத்திருக்கிறார்.",
+      "sourcePage": 132,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     132
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்னொரு பாடலைப் பார்த்தேன். புராணங்களில், இடையிடையே கலகம் மூட்டுகிற நாரதர் பற்றிக் கதை கேட்டிருக்கிறோம். அவரைப் பற்றிக் குறிப்பிடுகையில், ‘கலகமுனி’ என்ற அழகான வார்த்தையைப் பயன்படுத்தியிருக்கிறார். இப்படி அந்தக் காலத்திலேயே நல்ல தமிழ் எடுத்துப் பாடல்களை எழுதிய அந்த மாமேதையின் புகழைத் தொடர்ந்து பாராட்ட வேண்டும்.",
+      "sourcePage": 132,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     132
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1972-ஆம் ஆண்டு செப்டம்பர் 8-ஆம் நாள் சங்கரதாஸ் சுவாமிகள் விழாவில் ஆற்றிய சொற்பொழிவு.",
+    "sourcePage": 132
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Nadaga Dasar",
+    "sourcePage": 125
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I am very happy that this forum is observing with feeling the 105th birth anniversary of Sankaradas Swamigal, who attained such distinction and success that his fame remains established in the world of drama.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We are not holding this function because Sankaradas's spirit will come and watch it. We honour the great dead for our own benefit: to inspire ourselves for the future, to create courage for the work before us, and to strengthen our minds. That work must continue.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I do not, in fact, believe in spirits. Even among those who do, there are contradictions.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When a father dies, people say annual rites must be performed because his spirit remains and receives what we offer. The same people say he has already been reborn in another birth.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One must either reject rebirth or reject the continuing spirit.",
+      "sourcePage": 125,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     125
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If people come to a conclusion between the two, I may be ready to accept one. Until then, I am not ready to accept both.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If rebirth has occurred, how can the same spirit still remain to receive annual rites? I know where those offerings actually go.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even today some notices say that a dead person has attained Sivaloka or Vaikuntha. It appears that even after death human beings cannot give up their desire for office and status. If everyone is assigned to such heavenly posts, who is left to go to hell?",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We therefore avoid such confusion and say, “Some say it exists; some say it does not; that is not our worry.”",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Sankaradas Swamigal has died and yet has not disappeared. He lives in his writings, songs and plays, and in the fame of the actors he created.",
+      "sourcePage": 126,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     126
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is no ordinary work to remember those who served the country in many fields and to make others remember them. T. K. Shanmugam and others have undertaken that rare task. No one can deny the great service of the T. K. S. brothers in keeping Sankaradas Swamigal alive in the world of art and in public memory.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Through their efforts a statue of Sankaradas Swamigal was erected in Madurai some years ago, and a memorial function has continued every year.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At such functions, what matters is not who attends but what subject and memory the function carries forward. Some people here knew Sankaradas personally, some acted in his plays, some heard about him, and some have come simply to learn. I want the number in that last group to increase year after year.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I assure this forum of my support in making that happen.",
+      "sourcePage": 127,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     127
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We need not claim that Sankaradas created a modern revolution in drama fifty years ago. It is enough to recognise that, for his time, he saw the stage as a means to convey necessary counsel to the people and used it successfully.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I may differ from some of the subjects of his songs, but I have lasting respect for the Tamil that plays through them and for the Tamil feeling that moved him to write. That is why I accepted this invitation without hesitation.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Earlier generations laid down exact rules for how a stage should be built, where it should stand and how large it should be. Today it is difficult enough simply to keep drama alive; if all those old rules were imposed, even the few remaining plays might disappear. Yet their precision shows how carefully the art was once cultivated.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "They even specified the quality of the ground on which a stage should stand.",
+      "sourcePage": 128,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     128
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Perhaps a Krishna-Leela required sweet soil, since Krishna eats earth and his mother sees the universe in his mouth! Today's stage expert can simply say “earth” and put sugar into the actor's mouth.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Everyone will agree that live theatre has declined.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Cinema was born as a child of drama. But instead of being merely a supporting offshoot, it has become a vigorous shoot of its own.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Film producers drew skilled actors from drama companies with higher salaries, and many theatre troupes closed. The T. K. S. brothers survived that storm.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A film can carry an idea to far more people in less time. If a play reaches a thousand, a film may reach ten thousand in the same period.",
+      "sourcePage": 129,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     129
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I am speaking of plays and films that try to convey ideas. Even in mythological and social drama, some companies of that period consciously used the stage to communicate principles; the T. K. S. company was one of them.",
+      "sourcePage": 130,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     130
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Acting for film is, in one sense, easier. A stage mistake cannot be retaken, whereas film can repeat a scene until it is correct. A stage actor who accidentally uses yesterday's Mahabharata character name while performing today's Ramayana has no second chance.",
+      "sourcePage": 130,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     130
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nawab Rajamanickam Pillai used to say that on stage one must not only say, “I shall eat and return,” but also gesture it clearly so the last row understands. Cinema has the close-up, and can even create the appearance of speaking to another actor who is not present.",
+      "sourcePage": 130,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     130
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Drama has gradually adapted to a scientific age. Yet even in his own time Sankaradas Swamigal brought novelty into older forms and spread a new light in theatre.",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Songwriters often placed a signature in their final line so others could not appropriate the song. Bharathidasan too used such signature lines. Sankaradas was different: he did not openly stamp his name, but cleverly wove it into the song.",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "K. B. Sundarambal made the song “Gnana Pazhathai Pizhindhu” famous. We remember her when we hear it and may forget the writer. I had often wondered who wrote those beautiful Tamil lines; only today did I learn that they were Sankaradas Swamigal's.",
+      "sourcePage": 131,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     131
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At the end he cleverly inserts his own name through a double meaning.",
+      "sourcePage": 132,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     132
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In another song he describes Narada—the trouble-maker of mythology—with the elegant Tamil expression “Kalagamuni,” the sage of discord.",
+      "sourcePage": 132,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     132
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We should continue to honour the fame of this great dramatist who could create such Tamil songs in that era.",
+      "sourcePage": 132,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     132
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Lecture delivered on 8 September 1972 at the Sankaradas Swamigal festival.",
+    "sourcePage": 132
+   }
+  ]
+ },
+ "sourcePages": [
+  125,
+  126,
+  127,
+  128,
+  129,
+  130,
+  131,
+  132
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 17,
+  "total": 61
+ }
+}

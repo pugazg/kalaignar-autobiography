@@ -1,0 +1,526 @@
+{
+ "workId": "puthandu-isaivizha",
+ "slug": "puthandu-isaivizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/puthandu-isaivizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1998-04-14",
+ "year": 1998,
+ "title": {
+  "ta": "புத்தாண்டு இசைவிழா",
+  "en": "Puthandu Isaivizha"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.49,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புத்தாண்டு இசைவிழா",
+    "sourcePage": 88
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழாவிலே எஸ்.பி. பாலசுப்பிரமணியம் கவிஞர் வைரமுத்துவின் வரிகளான “இனிய மாலைப் பொழுது” என்று பாடினாரே - அந்த இனிய மாலைப் பொழுதின் இன்பத்தை நாமெல்லாம் இந்த மன்றத்திலே அனுபவித்துக் கொண்டிருக்கிறோம். செஞ்சுரி புரொடக்ஷன்ஸ் நிறுவனத்தின் மூலம் இசை மேதைகளை - மூத்த கலையுலகப் பெருமக்களை கெளரவிக்கின்ற வகையிலே இந்த நிகழ்ச்சி ஏற்பாடு செய்யப்பட்டு - இதிலே கலந்து கொள்கின்ற வாய்ப்பை எனக்கு வழங்கியுள்ளவர்களுக்கு என் நன்றியையும் வணக்கத்தையும் புத்தாண்டு வாழ்த்துக்களையும் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தாண்டு வாழ்த்துக்கள் அவர்களுக்கு மாத்திரமல்ல - தமிழ்நாட்டு மக்களுக்கு - குறிப்பாக இந்த அரங்கில் நிரம்பி வழிந்து அமர்ந்திருக்கின்ற உங்கள் அனைவருக்கும் என் புத்தாண்டு வாழ்த்துக்களைத் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு பெரிய வியப்புக்குரிய செய்தி, நிகழ்ச்சியாக இங்கே நடைபெற்றுக் கொண்டிருக்கின்றது. பலருக்கு ஒன்றுபட்ட கருத்துக்கள் இருப்பதென்பது இயலாத ஒன்று என்பது இயற்கை. இரண்டு டாக்டர்கள் ஒரே கருத்தைக் கொண்டிருக்க மாட்டார்கள். இரண்டு புலவர்கள் ஒரே கருத்தைக் கொண்டிருக்க மாட்டார்கள்.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதற்கெல்லாம் மேலாக இரண்டு சங்கீத வித்வான்கள் ஒரே கருத்தைக் கொண்டிருந்தால் அது உலக மகா ஆச்சரியம். ஆனால் இந்த மேடையில் பல இசைவாணர்கள், இசை மேதைகள் ஒன்றாக அமர்ந்து வழக்கத்திலே இருந்த அந்த நிலைமைக்கு இந்த விழா மூலமாக விடை கொடுத்து அனுப்பியிருக்கிறார்கள் என்பதை எண்ணும்போது நான் பெருமகிழ்ச்சியடைகிறேன்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மெல்லிசை மன்னர்களிலே ஒருவரான தம்பி விஸ்வநாதன், இசைஞானி இளையராஜா, மெல்லிசை மன்னர்களிலே மற்றொருவரான ராமமூர்த்தி மற்றும் இசை அமைப்பாளர்கள், இசை அமைப்பாளர்களிலேயே ஒரு காலத்தில் புகழ்பெற்று விளங்கியவர்கள் - இன்றைக்கு அவர்கள் முதுமை நிலையிலே இருந்தாலும், அவர்கள் இசையமைத்த பாடல்கள் இளமையோடு தமிழ்நாட்டிலே உலவிக் கொண்டிருக்கின்ற அந்தக் காட்சியைக் காணும், கேட்கும் இன்புற்றிருக்கக் கூடியவர்கள் எல்லாம் இங்கே அமர்ந்திருக்கின்றார்கள்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தம்பி விஸ்வநாதன் ஒரு நிகழ்ச்சியில் குறிப்பிட்டார். ஒரு கட்டுரையிலும் மறவாமல் குறிப்பிட்டிருக்கின்றார்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறிஞர் அண்ணா அவர்களுடைய மறைவிற்குப் பிறகு நான் 75-க்கு முன்பு முதலமைச்சராகப் பொறுப்பேற்றிருந்த நேரத்தில் நம்முடைய அரசு விழாக்களிலே பாடுவதற்குத் தமிழ்த்தாய் வாழ்த்து ஒன்று தேவை என்று தேடிப்பிடித்து மனோன்மணியம் சுந்தரனார் எழுதிய “நீராரும் கடலுடுத்த நிலமடந்தைக் கெழிலொழுகும் - சீராரும் வதனமெனத் திகழ் பரத கண்டமதில்” என்கின்ற அந்தப் பாடலைத் தேர்வுத் தந்து, விஸ்வநாதன் அவர்களிடத்திலே கொடுத்து இதற்கு மெட்டமைத்துத் தர வேண்டும் என்று நான் கேட்டபோது; 26 விதமான பண்களை",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதாவது மெட்டுக்களை அவர்கள் அமைத்துக் கொடுத்தார்கள். அதிலே இறுதியாக இந்தப் பண்தான் நன்றாக இருக்கிறது என்று தேர்ந்தெடுத்து அதைப் பாடியவர்கள் - இங்கே வீற்றிருக்கின்ற மறைந்த தியாகராஜ பாகவதரை என்றென்றும் நமக்கு நினைவூட்டிக் கொண்டிருக்கின்ற டி.எம். செளந்தரராஜன் அவர்களும், சுசீலா அவர்களும் ஆவார்கள்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்களுடைய காலத்திற்குப் பிறகும், மெட்டமைத்துக் கொடுத்த விஸ்வநாதன் ராமமூர்த்தி அவர்களின் காலத்திற்குப் பிறகும், அந்தப் பாட்டு தமிழ்த்தாய் வாழ்த்தாக அமைய வேண்டுமென்று விரும்பிய என்னுடைய காலத்திற்குப் பிறகும் - எக்காலத்திலும் அந்தப் பாடல் முழங்கும் போதெல்லாம் நாங்கள் சாகாவரம் பெற்றவர்களாக அந்தப் பாட்டின் மூலம் தமிழ்நாட்டு மக்களுடைய உள்ளத்திலே ஒலித்துக் கொண்டிருப்போம். அத்தகைய அற்புதமான பண்ணை அமைத்துத் தந்த விஸ்வநாதன் ராமமூர்த்தி ஆகியோர் இந்த விழாவிலே முக்கியமான பொறுப்பேற்று பல கலைஞர்களை கெளரவிக்கின்ற இனிய நிகழ்ச்சியை நடத்திக் கொண்டிருக்கின்றார்கள்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதிலும் குறிப்பாக நவ்ஷத் அவர்கள் இங்கே அழைக்கப்பட்டிருப்பது மிகச் சிறப்புடைய ஒன்றாகும். நவ்ஷத் கலந்து கொள்கின்ற நிகழ்ச்சியிலே நான் கலந்து கொள்கிறேன்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்கே நம்முடைய ஜேசுதாஸ் அவர்கள் ஓர் இந்திப் பாடலை பாடச் செல்லும்போது தேவையில்லாமல் என்னிடத்திலே முன்கூட்டியே ஒரு மன்னிப்புக் கேட்டுக் கொண்டார்கள், நம்முடைய இசைவாணர்கள். அந்த மன்னிப்புத் தேவை இல்லை. நான் இந்தித் திணிப்புக்குத்தான் எதிரியே தவிர (பலத்த கைதட்டல்) இந்தி இசைக்கு அல்ல.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நவ்ஷத் அவர்கள் இந்தி இசையின் மூலம் தமிழ் நாட்டு மக்களை நிரம்பக் கவர்ந்தவர். அந்த இசைப் பாடல்கள் மூலமாகத் தமிழகம் அவரை என்றென்றும் மறவாமல் மனதிலே வைத்திருக்கின்ற அப்படிப்பட்ட பெரியவர் இந்த விழாவிலே கலந்து கொண்டிருக்கின்றார்.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு மலர் இங்கே வெளியிடப்பட்டது. அந்த மலரை நான் நவ்ஷத் அவர்களுக்கும் தம்பி இளையராஜா அவர்களுக்கும் உங்கள் முன்னிலையிலே வழங்கியிருக்கிறேன். அந்த மலரை முதலிலேயே என்னிடம் கொடுத்தார்கள். அதிலே ஓரிரு பக்கங்களைப் புரட்டிப் பார்த்தேன். தம்பி விஸ்வநாதனுடைய வாழ்க்கைச் சரித்திரத்தின் பல பக்கங்கள் அந்த மலரிலே இடம் பெற்றிருக்கின்றது. எவ்வளவு கெட்டிக்காரத் தம்பி விஸ்வநாதன் என்பதை ஒரு பக்கத்தைப் படித்துப் பார்த்து உணர்ந்து கொண்டேன்.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விஸ்வநாதனுடைய வயது அப்போது மூன்று. அந்த வயதிலே அவருடைய தந்தை இறந்து விடுகிறார். தந்தை இறந்த சோகத்தில் அவருடைய தாயார், மகன் விஸ்வநாதனையும் தூக்கிக் கொண்டு, புதுக்கோட்டையிலே ஒரு குளத்திலே விழுந்து இருவரும் சாகலாம், தற்கொலை செய்து கொள்ளலாம் என்று தாயார் முடிவெடுத்து - விஸ்வநாதனைத் தூக்கிக் கொண்டு வந்து தூக்கியெறிய முற்பட்டபோது - விஸ்வநாதன் முடியாது என்று மறுத்து விட்டு - தாயாரைப் பார்த்து - “என்னைத்தூக்கிப் போட்டு விட்டு நீ போய் விடுவாய். ஆகவே நீ முதலில் விழு, பிறகு நான் விழுகிறேன்” - என்று சொன்னதாக அவர் எழுதியிருக்கிறார். அவருடைய வரலாற்றில் இருக்கிறது. நான் கூறவில்லை.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நல்லவேளை, தாயார் அந்தப் பேச்சைக் கேட்காமல், அன்றைக்கு விஸ்வநாதனைத் தூக்கி குளத்திலே போட்டிருந்தால், இன்றைக்கு நமக்கு ஒரு மெல்லிசை மன்னர்",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிடைத்திருக்க மாட்டார். (கைத்தட்டல்) நமக்கெல்லாம் இசைத் தொண்டாற்றுவதற்காகவே அன்றைக்குத் தம்பி விஸ்வநாதன் தன்னுடைய தாயாரைப் பார்த்து நான் குளத்திலே விழ மாட்டேன் என்று மறுத்திருக்கிறார் என்பதை எண்ணும்போது நான் இரட்டிப்பு மகிழ்ச்சி கொள்கிறேன். அவரும் அவரைச் சார்ந்த இசைவாணர்கள் பலரும் இந்த மேடையிலே ஒருங்கிணைந்து ஒரு நல்ல மாலை நேரத்தில் நமக்கு ஓர் அருமையான இசை நிகழ்ச்சியைத் தொடர்ந்து வழங்கிக் கொண்டிருக்கின்றார்கள்.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த இசை நிகழ்ச்சியில் நானும் கலந்து கொண்டு அவர்கள் யார் யாரையெல்லாம் மறக்காமல் அவர்களுக்கெல்லாம் தங்களுடைய பாராட்டுக்களையும், தங்களுடைய அன்பையும் செலுத்தியிருக்கிறார்களோ, அவர்களுக்கெல்லாம் அன்பும் மரியாதையும் செலுத்தக்கூடிய இடத்திலே இருப்பவன்தான் நான் என்பதையும் இங்கே உணர்த்தி - பொதுவாக உலகத்தில் முன்னோர்களை, நமக்கு முன்பிருந்த நம்முடைய கலையை வளர்த்தவர்களை, நம்மையெல்லாம் ஆளாக்கியவர்களை மறந்து விடுகின்ற காலம் இந்தக் காலம். இந்தக் காலத்தில் அதுவும் கலையுலகத்தில் அவர்களையெல்லாம் நினைத்துக் கொண்டு அவர்களுக்குச் சிறப்பு செய்கின்ற மனப்பான்மை விசுவிற்கும் அவரோடிருக்கின்ற இசைக் கலைஞர்களுக்கும் ஏற்பட்டதற்காக என்னுடைய பாராட்டுதலை, வாழ்த்துக்களை அவர்களுக்கெல்லாம் தெரிவித்து இந்த இனிய நேரத்தில் உங்களையெல்லாம் சந்திக்கும் வாய்ப்பு பெற்றமைக்காக மகிழ்ச்சியையும் தெரிவித்து இந்த அளவில் உங்களிடமிருந்து விடை பெறுகிறேன்.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "14-4-98 அன்று\nபுத்தாண்டு இசைவிழாவில் ஆற்றிய உரை",
+    "sourcePage": 92
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Puthandu Isaivizha",
+    "sourcePage": 88
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At this function, S. P. Balasubrahmanyam sang the poet Vairamuthu's words, “Iniya maalai pozhuthu”—“a pleasant evening hour.” We are all experiencing in this hall the delight of that pleasant evening hour. Through Century Productions this function has been arranged to honour music maestros and senior figures of the world of art. I convey my thanks, respects and New Year greetings to those who have given me the opportunity to take part in it.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "My New Year greetings are not only to them, but to the people of Tamil Nadu—and especially to all of you who are seated here, filling this hall to overflowing.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Something that is a matter of great wonder is taking place here as an event. It is natural that it is difficult for many people to hold a single common opinion. Two doctors will not hold the same opinion. Two poets will not hold the same opinion.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Beyond all that, if two music vidwans hold the same opinion, that is a great wonder of the world. But on this stage many musicians and music masters are seated together, and when I think that through this function they have bid farewell to the situation that used to prevail, I am greatly delighted.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Brother Viswanathan, one of the Mellisai Mannargal; Isaignani Ilaiyaraaja; Ramamoorthy, the other of the Mellisai Mannargal; and music directors—those who once shone with fame among music directors—are all seated here. Though today they may be in their later years, the songs they composed move about Tamil Nadu with youthfulness, and those who have had the pleasure of seeing and hearing that sight are all seated here.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Brother Viswanathan mentioned something at one function. He has also made sure to mention it in an article.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After Arignar Anna's death, when I was serving as Chief Minister before 1975, we felt that a Tamil Thai Vazhthu was needed to be sung at our government functions. We sought one out and chose the song by Manonmaniam Sundaranar beginning, “Neerarum kadaludutha nilamadanthaik kezhilozhugum — seerarum vadanamena thigazh Bharatha kandamathil,” and gave it to Viswanathan, asking him to set it to music. He composed twenty-six different pann—",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "that is, tunes—for it. Finally, this particular pann was selected as the best, and those who sang it were T. M. Soundararajan, seated here and forever reminding us of the late Thyagaraja Bhagavathar, and Susheela.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "**Source note:** The frozen Tamil uses the difficult phrase `தேர்வுத் தந்து` on PDF 90; E2 retains the conservative sense “selected … and gave it” without altering the frozen Tamil layer.",
+    "sourcePage": 90
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even after their time, even after the time of Viswanathan and Ramamoorthy who set the tune, and even after my own time—the one who wished that song to become the Tamil Thai Vazhthu—whenever that song resounds in any age, through that song we will have attained immortality and will continue to sound in the hearts of the people of Tamil Nadu. Viswanathan and Ramamoorthy, who created such a wonderful pann, have taken an important responsibility in this function and are conducting this pleasant event honouring many artists.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is especially significant that Naushad has been invited here. I am taking part in a function in which Naushad is participating.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When our Yesudas was about to sing a Hindi song here, our musicians unnecessarily asked my forgiveness beforehand. That apology was not necessary. I am an opponent only of the imposition of Hindi (loud applause), not of Hindi music.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Naushad is someone who greatly captivated the people of Tamil Nadu through Hindi music. Through those musical songs, Tamil Nadu has kept him in its heart without ever forgetting him; such a great person is taking part in this function.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A souvenir was released here. In your presence I presented that souvenir to Naushad and brother Ilaiyaraaja. They first gave the souvenir to me. I turned through a page or two. Many pages of brother Viswanathan's life story are included in it. By reading one page I understood just how clever brother Viswanathan was.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Viswanathan was three years old then. At that age his father died. In the grief of his father's death, his mother decided that she and her son Viswanathan could fall into a pond in Pudukkottai and die—that they could commit suicide. She carried Viswanathan to the pond and, when she tried to throw him in, Viswanathan refused and told his mother, “If you throw me in, you will go away. So you jump in first; then I will jump.” He has written that this is what he said. It is in his life story. I am not the one saying it.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Fortunately, if his mother had not listened to that talk and had thrown Viswanathan into the pond that day, today we would not have had a Mellisai Mannar—",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "we would not have had him. (applause) When I think that, as though for the very purpose of rendering musical service to all of us, brother Viswanathan refused that day and told his mother, “I will not fall into the pond,” I feel doubly happy. He and many musicians associated with him have come together on this stage and are continuing to give us a wonderful musical programme on this pleasant evening.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I too have taken part in this musical programme. They have remembered all those people and offered each of them their appreciation and affection. I wish to make clear here that I too am one who stands in the place of offering love and respect to all of them. Generally in the world, this is an age in which people forget their predecessors, those who developed our arts before us, those who shaped all of us. In such an age, and especially in the world of art, I offer my appreciation and good wishes to Visu and the musicians with him for having the spirit to remember all those predecessors and honour them. I also express my happiness at having received the opportunity to meet all of you at this pleasant time, and with this I take leave of you.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered at the Puthandu Isaivizha on 14-4-98.",
+    "sourcePage": 92
+   }
+  ]
+ },
+ "sourcePages": [
+  88,
+  89,
+  90,
+  91,
+  92
+ ],
+ "venue": null,
+ "event": {
+  "ta": "புத்தாண்டு இசைவிழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-2",
+  "titleTa": "முத்துக் குளியல் — பாகம் II",
+  "titleEn": "Muthukkuliyal — Part II",
+  "ordinal": 9,
+  "total": 36
+ }
+}

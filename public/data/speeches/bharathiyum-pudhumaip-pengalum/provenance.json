@@ -1,0 +1,66 @@
+{
+ "workId": "bharathiyum-pudhumaip-pengalum",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/bharathiyum-pudhumaip-pengalum",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "240–255",
+  "printedSpeechPages": "239–254",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_015_pages_227-243.pdf",
+    "scans": "227–243",
+    "sha256": "270dc9b6c4104191388b6b62ede5e3c3f76311bc6fabcf94013190380db8e36e",
+    "bytes": 48307852
+   },
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_016_pages_244-259.pdf",
+    "scans": "244–259",
+    "sha256": "aee05e4d8562f76ae10f97c589a79345b964c0d82542467748e9b623f41c04cb",
+    "bytes": 46319510
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 33,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ]
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "condensed English rendering (not a full translation)"
+ },
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.2,
+  "tamilBodyWords": 2113,
+  "englishBodyWords": 430,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 87,
+  "englishParagraphs": 9,
+  "sourcePagesCovered": 16
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

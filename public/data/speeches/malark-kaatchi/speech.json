@@ -1,0 +1,333 @@
+{
+ "workId": "malark-kaatchi",
+ "slug": "malark-kaatchi",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/malark-kaatchi",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1971-09-25",
+ "year": 1971,
+ "title": {
+  "ta": "மலர்க் காட்சி",
+  "en": "Flower Show"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.3,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "மலர்க் காட்சி",
+    "sourcePage": 118
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சென்ற ஆண்டு மலர்க் கண்காட்சிக்கு வர இயலாத நிலைமை எனக்கு ஏற்பட்டது. அப்போது வாடிய மலர்களெல்லாம் இப்போது மலர்ந்திருக்கும் என்றே நான் நம்புகிறேன். நான் இங்கே மலர்கள் என்று குறிப்பிடுவது உங்கள் உள்ளங்களைத் தான். இந்த மலர்க் கண்காட்சி மிகவும் எழிலான முறையில் இருந்தது.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மலர்களில் மணமுள்ள மலரிருக்கும்; மணமில்லாத மலரும் இருக்கும். சில மலர்கள் அழகாக இருக்கும், மணம் இருக்காது. சில மலர்களில் மணம் இருக்கும், அழகு இருக்காது.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகும் மணமும் உள்ள மலர்களைப் பறிக்கக் கரம் நீட்டும்போது முள் குத்தும்.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நாட்டில் ஏழை - எளிய - தாழ்த்தப்பட்ட - பின்னடைந்த மக்கள் மணமில்லாத மலர்களாக இருக்கிறார்கள். ஆனால், நல்ல மனம் உள்ளவர்களாக அவர்கள் இருக்கிறார்கள். மணமில்லாத அவர்கள் வாழ்க்கையில் மணத்தை ஏற்றுகின்ற பொறுப்பை நமது அரசு ஏற்றிருக்கின்றது.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த மலர்க் கண்காட்சியைக் காணுகிறபோது இந்த நினைவுகள்தான் எனக்குத் தோன்றுகின்றன. பூக்கள் குலுங்கும் உதகை நகரில் இருந்தாலும், என்னுடைய நினைவுகள் வறண்டு கிடக்கும் இராமநாதபுரம் மாவட்டத்தையே சுற்றி வருகின்றன. அதேபோல், மாட மாளிகைகளில் - கூடகோபுரங்களில் வாழும் வசதி படைத்தவர்களைப் பார்க்கிறபோது சாலை ஓரத்தில் -",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சகதியில் - வறுமையில் வாடும் மக்களைப் பற்றிய நினைவே எனக்கு வருகிறது.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீலகிரியில் உள்ள மலைமாதா பச்சைப்புட்டாடை போர்த்து இருக்கும் இந்த நேரத்தில் - எனக்கு எப்படி இராமநாதபுரத்தின் நினைவு வருகிறதோ, அதேபோல் செல்வச் சீமான்களைப் பார்க்கிறபோது ஏழை எளியவர்களின் நினைவே வருகிறது.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீலகிரி மாவட்டம் இராமநாதபுரம் மாவட்டம் ஆக வேண்டும் என்பது நம் கொள்கை அல்ல. வறண்டு கிடக்கும் இராமநாதபுரம் வளம் கொஞ்சும் நீலகிரி ஆக வேண்டும்.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதுபோல், செழிப்புள்ள பணக்காரர்கள் ஏழைகளாகத் திரிய வேண்டும் என்பது நம் கொள்கை அல்ல! ஏழைகளும் செழிப்பான வாழ்வு பெற வேண்டும் என்பதுதான்.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்காகத்தான் அண்ணா அவர்களது வழியில் நமது அமைச்சர்களும் நண்பர்களும் தோழர்களும் நானும் பணியாற்றி வருகிறோம். அதற்கு உங்கள் ஒத்துழைப்பு மிகவும் தேவை.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1971-ஆம் ஆண்டு செப்டம்பர் 25-ஆம் நாள் உதகை மலர்க்காட்சியில் பேசியது.",
+    "sourcePage": 119
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Flower Show",
+    "sourcePage": 118
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Last year circumstances prevented me from attending the flower show. I trust that all the flowers that withered then are blooming now. When I say “flowers” here, I mean your hearts. This flower show has been arranged with great beauty.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Some flowers have fragrance; some do not. Some are beautiful without fragrance. Others have fragrance without beauty.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "And when one stretches out a hand to pluck a flower that has both beauty and fragrance, a thorn may prick it.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The poor, humble, oppressed and backward people of this country are like flowers without fragrance. Yet they possess good hearts. Our Government has assumed the responsibility of bringing fragrance into lives that have been denied it.",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "These are the thoughts that arise in me as I see this flower show. Though I am in Ooty, where flowers sway in abundance, my thoughts circle the parched district of Ramanathapuram. Likewise, when I see wealthy people living in mansions and towers, I think of those who live by the roadside—",
+      "sourcePage": 118,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     118
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "in mud and poverty.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As the Nilgiri hills stand clothed in a green sari, I remember Ramanathapuram. In the same way, seeing the affluent makes me think of the poor.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our policy is not that the Nilgiris should become like Ramanathapuram. It is that dry Ramanathapuram should become as prosperous as the Nilgiris.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Nor is our policy that the prosperous rich should become poor. It is that the poor too should gain a prosperous life.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That is why, in Anna's path, our ministers, friends, comrades and I are working. We greatly need your cooperation.",
+      "sourcePage": 119,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     119
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered at the Ooty flower show on 25 September 1971.",
+    "sourcePage": 119
+   }
+  ]
+ },
+ "sourcePages": [
+  118,
+  119
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 15,
+  "total": 61
+ }
+}

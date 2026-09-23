@@ -1,0 +1,936 @@
+{
+ "workId": "irumozhi-pothum",
+ "slug": "irumozhi-pothum",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/irumozhi-pothum",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1972-02-05",
+ "year": 1972,
+ "title": {
+  "ta": "இருமொழி போதும்",
+  "en": "Two Languages Are Enough"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.22,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "இருமொழி போதும்",
+    "sourcePage": 88
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழை வளர்க்க வேண்டும். அதனுடைய வலிமைப் பொலிவை நாடு அறியச் செய்ய வேண்டும். தமிழால் வளர்ந்தவர்கள் நாம்-தமிழால் செழித்தவர்கள் நாம் - அந்தத் தமிழை வளர்ப்பதிலும் செழிக்க வைப்பதிலும் நமக்கு நீங்காத கடமை உணர்ச்சி உண்டு என்பதற்கு எடுத்துக்காட்டாக, ஆளுகிற பொறுப்பை ஏற்றுக்கொண்ட பேரறிஞர் அண்ணா அவர்களும், அவர் மறைவுக்குப்பின் அவர் வழி நின்று அவரது பொன்னான கொள்கைகளை நிறைவேற்றச் சூளுரைத்துச் செயல்படுகின்ற நாங்களும் எங்களால் இயன்ற அளவு தமிழைத் தமிழகத்திலும், வேறு பிற இடங்களிலும் பரப்புவதற்கு முனைந்து முயற்சிகளை மேற்கொண்டிருக்கிறோம்.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்கு ஒரு சிறு எடுத்துக்காட்டாகத்தான் பல நாட்களாக ‘போர்ஷோர் எஸ்டேட்’ என்று அழைக்கப்பட்ட பகுதி பட்டினப்பாக்கம் என்ற புதிய - அல்ல அல்ல, பழைய தமிழ்ப் பெயரைப் பெற்ற நிகழ்ச்சியாகும்.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாக்கங்கள் என்பவை தமிழ்நாட்டில் பண்டை நாட்களில் மக்கள் வாழ்கின்ற குறிப்பிட்ட பகுதிக்கு வைக்கப்படுகிற பெயர்களாகும்.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குப்பங்கள் என்றும், பாக்கங்கள் என்றும் அந்த நாளில் தமிழர்கள் தாங்கள் வாழ்கிற இடங்களுக்குப் பெயர்களை அமைத்துக் கொண்டார்கள். பெரும்பாலும்",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடற்கரையோரங்களில் வாழ்கிற தமிழ்ப் பெருங்குடி மக்கள் அப்பகுதியைப் பாக்கம் என்றே அழைத்தார்கள்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காவிரிப் பூம்பட்டினத்தில் - மருவூர்ப்பாக்கம் என்ற அழகிய தமிழ்ச் சொல், அப்பகுதியில் கடற்கரையோரத்தில் மக்கள் வாழ்கிற பகுதிக்கு இடப்பட்டிருந்ததைச் சிலப்பதிகாரம் மூலம் அறியலாம்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே கடற்கரைப் பகுதியில் இருக்கிற இந்தப் பகுதிக்குப் பட்டினப்பாக்கம் என்ற பெயரை வைப்பது மிகப் பொருத்தம் என்று இந்த அரசு கருதுகிறது. பல பேர் இது புரியுமா என்று கேட்டார்கள். வாயில் நுழையுமா என்று வினா எழுப்பினார்கள். வழக்கத்திற்கு வருமா என்றார்கள்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போலவே கெல்லீஸ், கிண்டியூர் ஆகியது. பாரிஸ் பாரிமுனை ஆகியது. இவையெல்லாம் இன்று வழக்கத்திற்கு வந்துவிட்டன. இதுபோலவே மற்ற இடங்களின் பெயர்களையும் மாற்றிட வேண்டும் என்கிற எண்ணம் இன்றைய தினம் மக்களிடையே ஏற்பட்டிருப்பதைக் காண்கிறோம்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழுக்குப் பொற்காலம் ஒன்றிருந்தது. அதன் பிறகு கற்காலம் - அது நாம் தமிழைக் கவனிக்காமலிருந்த காலம். இப்போது மீண்டும் தமிழுக்குப் பொற்காலம் வந்துவிட்டது.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குழந்தையைக் கோகிலமே என்று கொஞ்சு; மழலையை மாணிக்கமே என்று கொஞ்சு; என்று தாயிடத்திலே சொல்லுவது எவ்வளவு நகைப்பிற்குரியதோ, அதே போன்றுதான் தமிழனிடம் தமிழை ஓம்பு, தமிழைக் காப்பாற்று என்று கூறுவதுமாகும்.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முத்தமிழ், முக்கடல், மும்முரசு என்றெல்லாம் பழம் பெருமையை நாம் அவனிக்குச் சொல்லிச் சொல்லி வீங்கு புகழ்பெற்ற நாடு நம்முடைய நாடு என்ற அந்தப் பழம் பெருமையை நாம் கொண்டிருக்கிறோம். ஆனால் பேசுவதோடு விட்டால் நம்முடைய தமிழ் வெறும்",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காப்பியத் தமிழாக, இலக்கியத் தமிழாக, செய்யுள் தமிழாக இந்த அளவோடு முடங்கி விட்டால் போதாது என்பதற்காகத்தான் தமிழ் பயிற்று மொழியாக வரவேண்டும் என்று நாம் கருதுகிறோம்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழில் விஞ்ஞானச் சொற்கள் வந்தாக வேண்டும். அறிவு உலகில் விரைந்து நடைபெோட்டக்கூடிய அளவில் தமிழில் புதிய புதிய சொற்கள் வளர்ந்தாக வேண்டும். அவை கண்டுபிடிக்கப்பட வேண்டாம்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆங்கிலமென்றால்-உலகத் தொடர்புக்கு-அனைத்து நாடுகளின் தொடர்புக்குத் தேவை. இதே நேரத்தில் நம்முடைய நாட்டில் நம்முடைய தாய்மொழி வளர்ந்திடல் என்பது இன்றியமையாத ஒன்று. ஆகவே தான், நாம் இருமொழிக் கொள்கையை வலியுறுத்துகிறோம்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம் மாநிலத்தில் தேவையானது தமிழ். மற்ற மாநிலத்தோடு தொடர்பு கொள்ளவும், பிறநாடுகளோடு தொடர்பு கொள்ளவும், அனைத்து உலகிற்குத் தேவையானது ஆங்கிலம்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே, இந்த இரண்டு மொழி போதும் என்கிற வலிமை! மிகுந்த வாதத்தை நாம் எடுத்துச் சொல்லி வருகிறோம்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தமிழ் நாட்டுக்குத் தமிழ் -\nஇந்தியாவிற்கு இந்தி -\nஅனைத்து உலகத்திற்கு ஆங்கிலம்”\nஎன்று சிலர் வாதிடுகிறார்கள்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வாதிடுவது சுலபம். ஏனென்றால் வாதிடுபவர்கள் அவைகளைப் புதிதாக கற்றுக் கொள்ளப் போவதில்லை. அவை இளந்தலைமுறையினரின் தலைகளில் சுமத்தப்படுவதை நாம் மறந்து விடக்கூடாது.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தியைத் தாய் மொழியாகக் கொண்டவர்கள் இரண்டு மொழிதான் படிக்க வேண்டும்.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழ்நாட்டில் இருந்துகொண்டு மொழிப் பிரச்சினையால் பதவிகளைப் பறிகொடுத்த ஒரு வயதான பெரியவர், தான் இனிமேல் படிக்கத் தேவையில்லை என்பதால், இந்தி இந்தியாவுக்கு - தமிழ் தமிழ்நாட்டுக்கு - இங்கிலீஷ் அகில உலகத் தொடர்புக்கு - என்று பேசுகிற நேரத்தில், தமிழ் நாட்டிலிருக்கிற நம் வீட்டுப் பிள்ளைகள் நம் மாநிலப் பயனுக்காகத் தமிழையும், இந்தியத் தொடர்புக்காக இந்தியையும், அகில உலகத் தொடர்புக்காக ஆங்கிலத்தையும் - ஆக மூன்று மொழிகளைப் படிக்க வேண்டிய இக்கட்டான நிலைக்கு ஆளாகிறார்கள்.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதே நேரத்தில் இந்தியைத் தாய்மொழியாகக் கொண்டிருக்கிற உத்திரப் பிரதேசத்தைச் சேர்ந்த ஒரு பிள்ளையோ - மத்தியப் பிரதேசத்தைச் சேர்ந்த ஒரு பிள்ளையோ, பீகாரைச் சேர்ந்த ஒரு பிள்ளையோ படிக்க வேண்டியது, தனது தாய் மொழியான இந்தி, அடுத்து ஆங்கிலம்! இரண்டே மொழிகள்தான். அவர்களுடைய சுமை முடிகிறது அதோடு.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம்முடைய பிள்ளைகள் மூன்று மொழிகளைப் படித்துப் பிறகு இரண்டு மொழி படித்தவர்களோடு போட்டிபோட வேண்டியிருக்கிறது.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாய்மொழியான இந்தி மொழியைப் படிக்கிறவர்களோடு நாம் பிற மாநில மொழியான இந்தியைப் படித்துப் போட்டி போட வேண்டியிருக்கிறது.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதைச் சொன்னால் அனைவருக்கும் ஆங்கிலம் இருப்பதைப்போலப் பிற மாநிலங்களோடு தொடர்பு கொள்ள இந்தி வேண்டாமா என்று கேட்கிறார்கள்.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு வேடிக்கையான கதை. ஒரு பெரிய விஞ்ஞானியின் வீட்டில் நடைபெற்றதாகச் சொல்வார்கள்.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த மகத்தான விஞ்ஞானி ஒரு அழகான பூனை வளர்த்தான். அது உள்ளே வந்து போவதற்காகச் கதவில்",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு பெரிய ஓட்டையைச் செய்தான். அந்தப் பூனையும் அதன் வழியே வந்து போய்க் கொண்டிருந்தது. சில நாளில் அந்தப் பூனை ஒரு குட்டி போட்டது.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தப் பெரிய விஞ்ஞானி, பெரிய துவாரத்திற்கு அருகே இன்னொரு சிறிய ஓட்டையைப் போட்டான். இது எதற்காக என்றார்கள் அவனுடைய நண்பர்கள். குட்டி வந்து போவதற்காக என்றான் அந்த விஞ்ஞானி. பூனைக்காக உள்ள பெரிய ஓட்டையிலேயே குட்டியும் வந்து போக முடியாதா என்று அவர்கள் கேட்ட பிறகுதான்... ஆகா, இந்த யோசனை நமக்கில்லாமல் போயிற்றே என்று நினைத்தானாம் அந்த விஞ்ஞானி!",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போல அகில உலகத் தொடர்புக்கு ஆங்கிலம் பொது மொழி என்றால், தொடர்பு மொழி என்றால், பக்கத்திலிருக்கிற மாநிலங்களோடு தொடர்பு கொள்ளவும் அந்த ஆங்கிலம் போதுமா, போதாதா?",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பூனை போகிற அந்தத் துவாரத்தில் குட்டியும் போகுமா போகாதா? இதுதான் இன்று நாம் எழுப்புகிற வாதம். இந்த வாதத்தை மற்றவர்களும் புரிந்து கொண்டிருக்கிறார்கள். ஆனால் ஏற்கெனவே சொல்லிவிட்டோமே, இந்தி இந்தியாவில் இருக்க வேண்டும் என்று; அதிலிருந்து எப்படிப் பின் வாங்குவது என்ற சங்கடம் அவர்களுக்கு.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இரண்டாவதாக, இருமொழி போதுமென்று சொல்கிறார்களே, சாதாரணமானவர்கள் சொல்லுகிறார்களே, அதைக் கேட்பது தம்முடைய கௌரவத்திற்கு இழுக்காகும் என்று நினைப்பதால்தான் இன்று மீண்டும் இந்தி நுழைக்கப்பட வேண்டும் என்று கருதுகிறார்கள். அவர்களுடைய முயற்சிகள் வலிவை பெறுவதற்கான வேலைகள் இன்று நாட்டில் நடந்து கொண்டிருக்கின்றன.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முத்தமிழ் விழா நடைபெறுகிற இடத்தில், நம்முடைய சமுதாயத்திற்கு, நம்முடைய மொழிக்கு, மொழி உரிமைக்குத் தமிழர்களுடைய எதிர்காலத்திற்கு ஏற்பட்ட",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விருக்கின்ற அந்த விபத்துக்களையெல்லாம் எண்ணிப் பார்க்க வேண்டும் என்பதற்காகத்தான் நான் இதை எல்லாம் உங்கள் காதில் போட்டு வைத்தேனல்லாமல் வேறல்ல.",
+      "sourcePage": 93,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     93
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப்பட்ட விழாக்களில் நம்முடைய பழம் பெரும் வரலாறுகளை எடுத்துக் காட்டும் வகையிலும், இலக்கியச் செல்வங்களை விளக்கும் தன்மையிலும், நம் வீரர்கள் பெற்ற வெற்றிகளை எடுத்துக் காட்டுகின்ற வகையிலும், நம் புலவர் பெருமக்கள் காட்டிய கல்வித் திறனை எல்லாம் எடுத்துச் சொல்கிற வகையிலும் நல்ல நல்ல நிகழ்ச்சிகளை ஆண்டுதோறும் ஏற்பாடு செய்ய வேண்டும் என்று கேட்டுக் கொள்கிறேன்.",
+      "sourcePage": 93,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     93
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1972-ஆம் ஆண்டு பிப்ரவரி 5-ஆம் நாள் பட்டினப்பாக்கத்தில் நடந்த முத்தமிழ் விழாவில் நிகழ்த்திய சொற்பொழிவு.",
+    "sourcePage": 93
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Two Languages Are Enough",
+    "sourcePage": 88
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Tamil must be developed. Its strength and splendour must be made known to the country. We are people who grew through Tamil and prospered through Tamil. Therefore we have an enduring duty to foster Tamil and make it flourish. Perarignar Anna, who assumed the responsibility of government, and those of us who, after his death, stand in his path and work to fulfil his cherished principles, have done all we can to spread Tamil in Tamil Nadu and elsewhere.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A small example is the area long called “Foreshore Estate,” which has now received a new—no, an old—Tamil name: Pattinappakkam.",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In ancient Tamil Nadu, settlements where people lived were often given names ending in “pakkam.”",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Tamils named their residential areas “kuppam” and “pakkam.” In particular, communities living along the coast commonly called their settlements “pakkam.”",
+      "sourcePage": 88,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     88
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "From Silappathikaram we know that the coastal residential quarter of Kaveripoompattinam was called Maruvurpakkam, a beautiful Tamil name.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Therefore this Government considered “Pattinappakkam” a fitting name for this coastal locality. Many asked: will people understand it? Will it roll easily off the tongue? Will it come into ordinary usage?",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The same doubts were raised when Kellys became Kilpauk names in Tamil usage, and when “Paris” became Parimunai. These names have entered common speech. In the same way, we now see a desire among the people to restore or Tamilise the names of other places.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Tamil once had a golden age. Then came a stone age—the age in which we failed to care for Tamil. Now a golden age has returned.",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "How laughable it would be to tell a mother, “Call your child ‘cuckoo’; call the infant ‘gem’ and cherish it.” In the same way, it ought to be unnecessary to tell a Tamil: “Protect Tamil; nurture Tamil.”",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We are a country that has repeatedly proclaimed the old glory of Muthamizh, the three seas and the three royal drums. But if we stop with speaking of old greatness, Tamil will remain merely",
+      "sourcePage": 89,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     89
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "a language of epics, literature and verse. It must not be confined there. That is why we insist that Tamil must become a medium of instruction.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Scientific terminology must arise in Tamil. New words must develop rapidly enough for Tamil to move with the world of knowledge. They must be created and established.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "English is needed for international communication and contact among countries. At the same time, in our own State our mother tongue must grow. That is why we advocate the two-language policy.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Within our State we need Tamil. For communication with other States and with countries abroad, English is sufficient.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Therefore we strongly argue that these two languages are enough.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Some say:",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "quote": true,
+    "segments": [
+     {
+      "text": "“Tamil for Tamil Nadu —  \nHindi for India —  \nEnglish for the whole world.”",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is easy to argue this way, because those who make the argument will not themselves have to learn all three afresh. We must not forget that the burden falls on the younger generation.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A Hindi-speaking child has to study only two languages.",
+      "sourcePage": 90,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     90
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "An elderly leader living in Tamil Nadu, who once lost office over the language question, no longer has to study languages himself. So he can easily say: Hindi for India, Tamil for Tamil Nadu, English for world contact. But under that scheme the children in our homes must learn Tamil for their State, Hindi for communication within India, and English for international contact—three languages.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A child in Uttar Pradesh, Madhya Pradesh or Bihar, whose mother tongue is Hindi, needs only Hindi and English. With two languages, that child’s burden ends.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our children would study three languages and then compete with those who studied only two.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We would even have to learn Hindi as another State’s language and compete with those who possess it as their mother tongue.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When we point this out, people ask: even if English serves everyone internationally, do we not need Hindi to communicate with neighbouring States?",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is a humorous story about a great scientist. He raised a beautiful cat and made a large hole in the door so that it could come and go. Later the cat had a kitten.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The scientist made a second, smaller hole beside the large one. His friends asked why. “For the kitten,” he said.",
+      "sourcePage": 91,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     91
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Only after they asked, “Can the kitten not use the same large hole made for the cat?” did the scientist realise how unnecessary the second hole was.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Likewise, if English is already the common language for international contact, can we not use that same language for contact with neighbouring States?",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If the kitten can pass through the cat’s opening, why make another opening? That is our argument. Others understand it. But they have already declared that Hindi must occupy a particular place in India, and they feel embarrassed to retreat from that declaration.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Second, because ordinary people make the argument that two languages are enough, some regard accepting it as beneath their prestige. That is why efforts continue to introduce Hindi again and strengthen its position.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At a Muthamizh festival I mention these matters because we must think about the dangers that may arise for our society, our language, our linguistic rights and the future of Tamils.",
+      "sourcePage": 92,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     92
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At functions like this we should arrange good programmes every year that present our ancient history, explain our literary wealth, recount the victories of our heroes and demonstrate the learning of our great poets.",
+      "sourcePage": 93,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     93
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Lecture delivered on 5 February 1972 at the Muthamizh festival held at Pattinappakkam.",
+    "sourcePage": 93
+   }
+  ]
+ },
+ "sourcePages": [
+  88,
+  89,
+  90,
+  91,
+  92,
+  93
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 10,
+  "total": 61
+ }
+}

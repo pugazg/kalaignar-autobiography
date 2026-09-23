@@ -1,0 +1,53 @@
+{
+ "workId": "purusai-gopalarathinam-illa-manavizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/purusai-gopalarathinam-illa-manavizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - II",
+  "firstEditionTa": "முதல் பதிப்பு 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "coverPriceTa": "ரூ. 150/-",
+  "scanFilename": "TVA_BOK_0065802_முத்துக்குளியல்_பாகம்_2.pdf",
+  "scanSha256": "48631b4fc5258df33213dbb742aec70ff6aace4fcd294f377e5750b406f5d9b2",
+  "scanFileSizeBytes": 232470104,
+  "scanTotalPages": 425,
+  "speechScanPages": "70–79",
+  "printedSpeechPages": "69–78",
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-2",
+   "ordinal": 7,
+   "total": 36
+  },
+  "speechFactsNotStated": [
+   "date",
+   "venue"
+  ],
+  "speechFactsNoteEn": "No date is stated in the contents or in the inspected constituent opening/closing note; do not infer one from internal political references. No venue is stated in the inspected constituent opening or closing note; do not infer one from body context."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation"
+ },
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.51,
+  "tamilBodyWords": 1365,
+  "englishBodyWords": 2065,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 33,
+  "englishParagraphs": 33,
+  "sourcePagesCovered": 10
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

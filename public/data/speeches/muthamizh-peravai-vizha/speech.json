@@ -1,0 +1,712 @@
+{
+ "workId": "muthamizh-peravai-vizha",
+ "slug": "muthamizh-peravai-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/muthamizh-peravai-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1998-02-03",
+ "year": 1998,
+ "title": {
+  "ta": "முத்தமிழ்ப் பேரவை விழா",
+  "en": "Muthamizh Peravai Function"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.41,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "முத்தமிழ்ப் பேரவை விழா",
+    "sourcePage": 79
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்று 23-ஆவது ஆண்டு விழா நிகழ்ச்சியை இந்த முத்தமிழ்ப் பேரவை நடத்திக் கொண்டிருக்கின்றது. 23 ஆண்டுகளாக நானும் பேரவையின் தொடக்க நிகழ்ச்சிகளில் கலந்து கொண்டு, தொடங்கி வைக்கின்ற வாய்ப்பினைப் பெற்று வருகிறேன். ஆனால் இந்த 23 ஆண்டுக் காலத்தில் எத்தனை மேதைகளை, இந்த மன்றத்திலே நான் கண்டேன் என்பதும், அவர்கள் எல்லாம் முன் வரிசையிலே அமர்ந்திருந்த காட்சி இன்னும் என் மனக்கண் முன்னால் நிழலாடிக் கொண்டிருக்கின்றது என்பதும் மறக்க முடியாதவை. இங்கே சொல்லாமல் மறைக்க முடியாதவை.",
+      "sourcePage": 79,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     79
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "முன் வரிசையிலே இந்த முத்தமிழ் பேரவையை ஊக்குவிப்பதற்காக அமர்ந்திருந்த பெரியவர்களில் ஒருவர் வழுவூர் ராமையா பிள்ளை அவர்கள். இந்த 23 ஆண்டுக் காலத்தில் நாம் இழந்த செல்வங்களிலே ஒரு செல்வம் வழுவூர் ராமையா பிள்ளை அவர்கள். இந்தப் பேரவை தொடங்குவதற்கு முனைப்பான முயற்சிகளை மேற்கொண்ட என்னுடைய அன்பிற்குரியவர் குளித்தலை பிச்சையப்பா பிள்ளை அவர்கள். இந்த மன்ற விழாக்களில் தொடர்ந்து இருந்து விழா நடைபெற முயற்சிகளைச் செய்தவர் சிதம்பரம் சி.எஸ். ஜெயராமன் அவர்கள், திருவீழிமிழலையார் அவர்கள்.",
+      "sourcePage": 79,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     79
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவர்கள் எல்லாம் இந்த முன் வரிசையில் அமர்ந்திருந்த காட்சியை நான் கண்டிருக்கிறேன். மதுரை சோமு அவர்கள், சீர்காழி அவர்கள். இவர்கள் எல்லாம் இருந்த அந்த முன்வரிசை இன்றைக்கு அவர்கள் இல்லாமல் காணப்பட்டாலுங்கூட, அவர்களின் வாரிசுகளும், அவர்களால் பயிற்றுவிக்கப்பட்ட மேதைகளும் இசைவாணர்களும் அவர்கள் விட்ட இடத்திலிருந்து இந்தக் கலைப் பணியைத் தொடர்ந்து நடத்திக் கொண்டிருக்கிறார்கள், என்ற அந்தப் பெருமையைக் கண்டு நான் சோகத்திலும் ஒரு பூரிப்புக் கொள்கிறேன்.",
+      "sourcePage": 80,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     80
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த 23 ஆண்டுக் காலத்திலே இந்த ரசிக ரஞ்சனி சபாவில் இந்தப் பேரவை சார்பாக நடைபெறுகிற இசை நிகழ்ச்சிகள், நாட்டிய நிகழ்ச்சிகள், வேறு பல கலை நிகழ்ச்சிகள் - இவைகள் எல்லாம் இசைத்துறைக்கு குறிப்பாக தமிழிசைத்துறைக்கு - ஒரு புதிய ஊக்கத்தை உற்சாகத்தை ஏற்படுத்தியிருக்கிறது என்றே சொல்ல வேண்டும்.",
+      "sourcePage": 80,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     80
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்படிப்பட்ட இந்தப் பேரவையில் இன்றைக்கு நம்முடைய அன்பிற்கினிய மூப்பனார் அவர்கள் தலைமையில் நடைபெறுகின்ற இந்த விழாவில் பந்தநல்லூர் பி. மகாலிங்கம் பிள்ளை இராஜரத்னா விருதையும், சாலமன் பாப்பையா அவர்கள் இயற்செல்வம் விருதையும், சாருமதி ராமச்சந்திரன் அவர்கள் இசைச் செல்வம் விருதையும், எம்.எஸ். இராமசாமி அவர்கள் நாட்டியச் செல்வம் விருதையும், திருப்பனந்தாள் எஸ். பாலசுப்பிரமணியம் அவர்கள் நாதஸ்வர செல்வம் விருதையும், கே.பி. சிங்காரம் பிள்ளை அவர்கள் மிருதங்கச் செல்வம் விருதையும் பெற்றிருக்கிறார்கள்.",
+      "sourcePage": 80,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     80
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவர்கள் ஒவ்வொருவரும் இந்த விருதுகளைப் பெறுவதற்கு எவ்வளவு தகுதி வாய்ந்தவர்கள் என்பதை நீங்கள் நன்றாக அறிவீர்கள். மகாலிங்கம் பிள்ளை அவர்கள் நாதஸ்வர மேதை, காலஞ்சென்ற டி.என். இராஜரத்தினம் பிள்ளை அவர்களை நினைவு கூறும் வகையில் வழங்கப்பட்டு வருகின்ற விருதைப் பெறுவதற்கு மிகவும் பொருத்தமானவர். அவர்கள் பந்தநல்லூர் பரத நாட்டிய ஆசிரியர் மாமேதை மீனாட்சி சுந்தரம் பிள்ளையிடம் வாய்ப்பாட்டு பயிற்சி பெற்றவர். இந்தக் கலையில் தனக்கென ஒரு பாணியை அமைத்துக் கொண்டு பல்வேறு இசை மன்றங்களிலே நாதஸ்வர விருந்து அளித்து வருகிறார். அவருடைய புகழுக்கு மேலும் ஒரு மகுடம் வைப்பதைப் போல ராஜரத்னா விருது இன்று வழங்கப்பட்டுள்ளது.",
+      "sourcePage": 81,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     81
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படியொரு விருது வழங்கப்பட வேண்டுமென்ற கருத்தை இந்த முத்தமிழ்ப் பேரவையில் நான் சொல்வதற்கு முன்பு - இராஜரத்னம் பிள்ளை அவர்கள் மறைந்த ஆண்டு - சி. சுப்பிரமணியம் அவர்கள் தலைமையிலே இதே மன்றத்தில் இராஜரத்னம் பிள்ளை அவர்களின் படத்திறப்பு விழா நிகழ்ச்சி நடைபெற்றது. அப்போது சி. சுப்பிரமணியம் அவர்கள் தமிழ்நாட்டு அமைச்சர்களில் ஒருவர். அந்த நிகழ்ச்சியிலே நானும் கலந்து கொண்டு உரையாற்றினேன், மறைந்த இராஜரத்னம் அவர்களின் புகழைப் போற்றி! அப்போது சி.எஸ். அவர்களிடம் இந்த வேண்டுகோளை வைத்தேன். இப்படி ஒரு பட்டம், நல்ல நாதஸ்வர வித்வான்களுக்கு இராஜரத்னா விருது வழங்கப்பட வேண்டுமென்று கேட்டுக் கொண்டேன். ஆனால் என்ன காரணத்தாலோ அது நிறைவேற்றப்படவில்லை. நானே வந்து அறிவித்து அது வழங்கப்பட வேண்டு",
+      "sourcePage": 81,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     81
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மென்று இருந்திருக்கிறது போலும் (கைத்தட்டல்). எனவே நானே முதலமைச்சராகப் பொறுப்பேற்ற பிறகு, முத்தமிழ்ப் பேரவை விழாவில் இராஜரத்னா விருதை அறிவித்து, பல ஆண்டு காலமாக அந்த விருது பல வித்வான்களுக்கு வழங்கப்பட்டு வருகிறது. அந்த வகையில் இன்று மகாலிங்கம் பிள்ளை அவர்கள் அந்த விருதைப் பெற்றிருக்கிறார். அவரை வாழ்த்துகிறேன்; பாராட்டுகிறேன்.",
+      "sourcePage": 82,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     82
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இயற்செல்வம் விருதைப் பெற்றிருப்பவர் சாலமன் பாப்பையா, இந்த விருது இதற்கு முன்பே கூட இவருக்கு வழங்கப்பட்டிருக்க வேண்டும். தாமதமாக வழங்கப்படுவதற்காக நான் இந்தப் பேரவை சார்பாக அவரிடம் வருத்தத்தைத் தெரிவித்துக் கொள்கிறேன். காரணம் சாலமன் பாப்பையாவை அறியாதவர்கள் யாருமே தமிழ்நாட்டில் இருக்க முடியாது.",
+      "sourcePage": 82,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     82
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒன்றை உங்களுக்குக் கூற விரும்புகிறேன். காலையில் 5-30 மணிக்கு நான் எழுந்து - 6-30 மணிக்கெல்லாம் என்னுடைய காலை உலா (வாக்கிங் என்பார்களே) இதனை முடித்து விட்டு வீடு திரும்பி, முரசொலி இதழுக்கு உடன்பிறப்பு கடிதம் எழுதுவதற்கு உட்காருவேன். அப்போது “சன் டி.வி.”யில் திருக்குறள் ஒலிக்கும். எழுதுகிற நேரத்தில் பக்கத்திலே எந்த ஒலியும் கேட்கக் கூடாது என்பார்கள். சில எழுத்தாளர்கள் கூறுவார்களே - அப்படியல்ல நான். எந்த ஒலி கேட்டுக் கொண்டிருந்தாலும், எழுதத் தொடங்கி விட்டால் அந்த ஒலியைப் பற்றிக் கவலைப்படாமல் எழுதிக் கொண்டிருப்பவன். ஆனால் சில ஒலிகள் என்னுடைய எழுத்திற்கு ஊக்கம் தருகின்ற ஒலிகளாக அமையும். அதுபோல ஒவ்வொரு நாளும் சாலமன் பாப்பையா அவர்களின் திருக்குறள் ஒலி - நான் எழுதுகிற நேரத்தில் எழுதுவதற்கு ஊக்கமாக அமைந்திருக்கின்றது. (கைத்தட்டல்) நான் ஏதோ இந்த அவையிலே அவரைச் சிறப்பிக்க வேண்டுமென்ப",
+      "sourcePage": 82,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     82
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தற்காகக் கூறவில்லை. என்னுடைய துணைவியாரும், வீட்டாரும் வந்திருக்கிறார்கள். அவர்களைக் கேட்டு, சாலமன் பாப்பையா நான் உண்மையிலேயே இதைச் சொன்னேனா, உபச்சாரத்திற்காகச் சொன்னேனா என்பதைத் தெரிந்து கொள்ளலாம்.",
+      "sourcePage": 83,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     83
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த அளவிற்கு ஒவ்வொரு நாளும் திருக்குறள். திருக்குறளுக்கு பலரும் உரையெழுதியிருக்கிறார்கள். நானும் கூட 1330 திருக்குறள் பாக்களுக்கும் உரையெழுதியிருக்கிறேன். குறளோவியம் தீட்டியிருக்கிறேன். 200, 300 குறள்பாக்களுக்கு சிறு சிறு கதைகளாக வடித்து, குறளை எளிதில் புரிந்து கொள்ள வேண்டுமென்பதற்காகக் குறளோவியம் எழுதியிருக்கிறேன். ஆனால் எல்லாவற்றையும் விட - மனதில் பதியத்தக்க வகையில் சிறு குழந்தைகளும் புரிந்து கொள்ளக் கூடிய வகையில் திருக்குறளை ஒவ்வொரு நாளும் - அவர் சொல்கின்ற பதவுரையில் எனக்கும் அவருக்கும் கூட கருத்து வேறுபாடு இருக்கலாம். வேறுபாடே தவிர முரண்பாடு அல்ல. வேறுபாடு என்பது வேறு; முரண்பாடு என்பது வேறு. முரண்பாடு என்பது எண்ணெயும் தண்ணீரும் போன்றது. வேறுபாடு என்பது பாலும் தண்ணீரும் போன்றது. பாலும் தண்ணீரும் வேறு வேறாக இருந்தாலும், ஊற்றி விட்டால் இரண்டும் ஒன்றாகக் கலந்து விடும். நான் ‘சென்னை’ பாஷைச் சொல்ல மாட்டேன். (பலத்த சிரிப்பு) அதைப் போல முரண்பாடு என்பது - எண்ணெயையும், தண்ணீரையும் வைத்து எவ்வளவுதான் நீங்கள் சேர்க்க நினைத்தாலும் அது தனித்தனியாகத்தான் நிற்கும். அப்படி முரண்பாடு இல்லாமல் சற்று வேறுபாடு இருந்தாலும் கூட - கேட்பதற்கு இனிமையாக - எவ்வளவு இனிமையாக குறளைச் சொல்கிறார். அதற்கான உரையைத் தருகிறார் என்பதை நான் எண்ணியெண்ணி வியந்தபடியே எழுதிக்",
+      "sourcePage": 83,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     83
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொண்டிருப்பேன். அப்படிப்பட்ட ஓர் உற்சாகத்தை அவர் எனக்குத் தந்து கொண்டிருக்கிறார். அவர் திருக்குறள் 1330 பாக்களையும் முடித்த பிறகும், மீண்டும் ஒரு முறை வரிசையாகத் தொடர வேண்டும் - நான் எழுதுவதற்காகவாவது அவர் தொடர வேண்டும் (கைத்தட்டல்) என்று கேட்டுக் கொள்கிறேன்.",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இசைச் செல்வம் விருதினை திருமதி சாருமதி ராமச்சந்திரன் அவர்கள் பெற்றிருக்கிறார்கள். இவர்கள் காலஞ்சென்ற இசை மேதை எம்.எல். வசந்தகுமாரியினுடைய சிறந்த மாணவர்களிலே ஒருவர். நாதஸ்வர செல்வம் விருது பெறும் திருப்பனந்தாள் பாலசுப்பிரமணியன் அவர்கள் திருப்பனந்தாள் காசி மடத்தின் ஆஸ்தான கலைஞராகத் திகழ்ந்த தவில வித்வான் சீனிவாசன் அவர்களுடைய மகனாவார். சிங்கப்பூர், மலேசியா போன்ற நாடுகளில் இசை நிகழ்ச்சிகளை நடத்தியவர். மயிலை கபாலீஸ்வரர் கோவில் ஆஸ்தான வித்வானாக இப்போது திகழ்கிறார். அவர்களுக்கும் என் பாராட்டுக்கள்.",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டியச் செல்வம் விருது பெறும் எம்.எஸ். இராமசாமிப் பிள்ளை வழுவூர் ராமையா பிள்ளையிடம் குருகுலவாசம் செய்து, பரத நாட்டியக் கலையில் சிறந்த கலைஞராகப் புகழ்பெற்றவர். திருமதி ஈ.வி. சரோஜா, பத்மா சுப்பிரமணியம், ஹேமமாலினி முதலியோர் இவருடைய நட்டுவாங்கத்துக்கு நடனமாடியவர்கள். மதுரை வீரன், பாக்கியவதி, கொஞ்சும் சலங்கை, மணம் ஒரு குரங்கு, துளி விஷம் ஆகிய படங்களுக்குப் பரத நாட்டிய ஆசிரியராக இவர் பணியாற்றியிருக்கிறார். அவரையும் நான் பாராட்டுகிறேன்.",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மிருதங்கச் செல்வம் விருது பெறும் கும்பகோணம் சிங்காரம் பிள்ளை அவர்கள் மிருதங்க மேதை குடந்தை",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அழகநம்பியா பிள்ளையிடம் குருகுலவாசம் செய்து மிருதங்கப் பயிற்சியைப் பெற்றவர். திருவாவடுதுறை ராஜரத்தினம் பிள்ளைக்கும், திருவெண்காடு டி.பி. சுப்பிரமணிய பிள்ளைக்கும் தம்புரா சுருதியுடன் மிருதங்கம் வாசித்துப் புகழ் பெற்றவர் இவர். விருது பெற்ற அத்தனை பேரும் இந்த விருதுக்கு உரியவர்கள் என்ற முறையில் அவர்களை நான் வாழ்த்தவும் பாராட்டவும் மீண்டும் மீண்டும் கடமைப்பட்டிருக்கிறேன்.",
+      "sourcePage": 85,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     85
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்கே இந்த நிகழ்ச்சியில் நம்முடைய நண்பர் டெக்கான் மூர்த்தி அவர்கள் ஒரு இலட்சம் ரூபாயை இங்கே கட்டிட நிதிக்காக வழங்கியிருக்கிறார்கள். இது ஒரு பணக்காரப் பேரவை அல்ல. சாதாரணமான, சாமான்யமான ஒரு பேரவைதான். 23 ஆண்டுகளாக ஒவ்வொரு ஆண்டும் நான் வருகிற நேரத்தில் எல்லாம் ஒரு கட்டிடம் தேவை என்று சொல்லி வருகிறார்கள். நானும் பார்க்கலாம், பார்க்கலாம் என்று சொல்கிறேன். நீங்கள் முயற்சி மேற்கொள்ளுங்கள். என்னால் முடிந்ததைச் செய்கிறேன் - துணை நிற்கிறேன் என்று நானும் சொல்லி வருகிறேன். 23 ஆண்டு காலமாக அவர்கள் எந்த முயற்சியிலும் ஈடுபடவில்லை. ஏதோ இந்த ஆண்டு முயற்சியில் ஈடுபட்டு, அரசு இந்தப் பேரவைக்காக ஓர் இடத்தை ஒதுக்க வேண்டுமென்று கேட்டிருக்கிறார்கள். அதற்கு ஆவன செய்யப்படும் என்று நான் உறுதியளித்திருக்கிறேன். (கைத்தட்டல்)",
+      "sourcePage": 85,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     85
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த இடம் விரைவில் ஒதுக்கப்படும் (பலத்த கைதட்டல்). அதிலே கட்டிடம் எழும்புவதற்கான அந்தப் பணியை நிறைவேற்ற நம்முடைய டெக்கான் அவர்கள் இங்கே ஒரு இலட்சம் ரூபாயை நிதியாக வழங்கியிருக்கிறார். நான் கூட எண்ணினேன் - அடுத்துப் பேசுகின்ற நம்முடைய மூப்பனார் அவர்கள் - அவருக்கு போட்டியாக (பலத்த சிரிப்பு) மூப்பனார் அவர்கள் எது",
+      "sourcePage": 85,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     85
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேண்டுமென்றாலும் எனக்காக அறிவியுங்கள் என்று கூறுகிறார்) எவ்வளவு வேண்டுமென்றாலும் அறிவிக்கும் படி மூப்பனார் கூறுகிறார். தேர்தல் நேரம். அதிகமாகச் சொல்ல விரும்பவில்லை. (பலத்த கைதட்டல்) அவரும் ஒரு இலட்ச ரூபாய் வழங்குகிறார் (பலத்த கைதட்டல்) என்பதை மகிழ்ச்சியோடு நான் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் இருவரும் வழங்குகின்ற காரணத்தால் முதலமைச்சர் நிதியிலிருந்து ஒரு இலட்சம் ரூபாய் வழங்கப்படும் என்று நான் இங்கே (பலத்த கைதட்டல்) கூறிக் கொள்கிறேன்.",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மூப்பனார் அவர்கள் இன்னொன்றையும் சொன்னார்கள். இராஜரத்தினம் அவர்களுடைய நூற்றாண்டு விழா இந்த ஆண்டு என்று குறிப்பிட்டு, அதனைச் சிறப்பாகக் கொண்டாட வேண்டுமென்று சொன்னார்கள். அந்த விழாவைக் கொண்டாடுகின்ற குழுவிற்குத் தலைவராக இருக்கக் கூடிய எல்லாவிதமான பொருத்தமும் உடையவர் மூப்பனார் அவர்கள்தான் (கைத்தட்டல்) எனவே இராஜரத்தினம் அவர்களுடைய நூற்றாண்டு விழா குழுத் தலைவராக மூப்பனார் அவர்கள் இருந்து இனிதாக எழுச்சியோடு ஏற்றத்தோடு இசை உலகிற்கு ஒரு புதிய தெம்பு உருவாகின்ற வகையிலே அவர்கள் அந்தக் குழுவின் தலைமையை ஏற்றுக் கொண்டு பணியாற்ற வேண்டுமென்று உங்கள் அனைவரின் சார்பாகவும் நான் கேட்டுக் கொள்கிறேன்.",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "குன்றக்குடி அடிகளாருக்குப் பிறகு அவர் பேசிய இனிய தமிழ் என்னவாகுமோ என்று ஏங்கியிருந்த நமக்கெல்லாம் ஓர் ஆறுதலாக குன்றக்குடி ஆதீனத்தில் இருந்து இங்கே வந்து உரையாற்றிய இளைய குன்றக்குடி அடிகளார் அவர்கள் - குன்றக்குடியின் தமிழ் குன்றி விடாது என்பதை எடுத்துக் காட்டுகின்ற வகையிலே ஒரு",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அருமையான சொற்பொழிவை இங்கே நிகழ்த்தியிருக்கிறார். எனவே ஒரு இசை நிகழ்ச்சியே இங்கே தேவையில்லை என்கின்ற அளவிற்கு அவருடைய தமிழ் இங்கே கொஞ்சி விளையாடியது. (கைத்தட்டல்) அவருக்கு நான் என்னுடைய பாராட்டுதல்களையும், வாழ்த்துக்களையும் தெரிவித்து, முத்தமிழ்ப் பேரவை இன்னும் தன்னுடைய தொண்டில் சிறந்து விளங்க வேண்டுமென்ற என்னுடைய விழைவையும் எடுத்துக்காட்டி இந்த அளவில் அமைகிறேன்.",
+      "sourcePage": 87,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     87
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "3-2-98 அன்று முத்தமிழ்ப் பேரவை\nவிழாவில் ஆற்றிய உரை",
+    "sourcePage": 87
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Muthamizh Peravai Function",
+    "sourcePage": 79
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Today this Muthamizh Peravai is conducting its 23rd anniversary function. For 23 years I too have been taking part in the Peravai's opening functions and receiving the opportunity to inaugurate them. But in these 23 years, how many great masters I have seen in this hall, and the sight of all of them seated in the front row still playing before my mind's eye—these are things that cannot be forgotten, things that cannot be left unspoken here.",
+      "sourcePage": 79,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     79
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "One of the elders who used to sit in the front row to encourage this Muthamizh Peravai was Vazhuvur Ramaiah Pillai. Among the treasures we have lost during these 23 years is Vazhuvur Ramaiah Pillai. One dear to me who took determined efforts to start this Peravai was Kulithalai Pichaiyappa Pillai. Chidambaram C. S. Jayaraman and Thiruveezhimizhalaiyar were among those who continuously attended these functions and worked to see that they were held.",
+      "sourcePage": 79,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     79
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I have seen all of them seated here in this front row—Madurai Somu, Sirkazhi and the others. Even though today that front row is seen without all those who once occupied it, their successors, the masters and musicians trained by them, are continuing this artistic work from where they left it. Seeing that distinction, I feel a sense of fulfilment even amid sorrow.",
+      "sourcePage": 80,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     80
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "During these 23 years, the music programmes, dance programmes and many other artistic events conducted by this Peravai at this Rasika Ranjani Sabha have, I must say, given new encouragement and enthusiasm to the field of music, particularly to Tamil music.",
+      "sourcePage": 80,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     80
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At this function of such a Peravai, being held today under the chairmanship of our beloved Moopanar, Pandanallur P. Mahalingam Pillai has received the Rajarathna Award; Solomon Pappiah, the Iyarselvam Award; Charumathi Ramachandran, the Isai Selvam Award; M. S. Ramasamy, the Nattiya Selvam Award; Thiruppanandal S. Balasubramaniam, the Nadaswara Selvam Award; and K. P. Singaram Pillai, the Mridanga Selvam Award.",
+      "sourcePage": 80,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     80
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You know very well how deserving each one of them is of these awards. Mahalingam Pillai is a nadaswaram maestro and is most fitting to receive the award given in memory of the late nadaswaram master T. N. Rajarathinam Pillai. He received vocal training from the great Pandanallur Bharatanatyam teacher Meenakshi Sundaram Pillai. He has developed a style of his own in this art and has been offering nadaswaram feasts in many music halls. Today the Rajarathna Award has been presented to him, like placing another crown upon his fame.",
+      "sourcePage": 81,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     81
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Before I expressed in this Muthamizh Peravai the idea that such an award should be given, in the year Rajarathinam Pillai passed away, a function unveiling his portrait was held in this very hall under the chairmanship of C. Subramaniam. At that time C. Subramaniam was one of the ministers of Tamil Nadu. I too took part in that function and spoke, praising the fame of the late Rajarathinam. At that time I placed this request before C. S.: that such a title, a Rajarathna Award, should be given to good nadaswaram vidwans. But for some reason it was not fulfilled. It seems it had to wait until I myself came, announced it, and it was to be",
+      "sourcePage": 81,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     81
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "awarded. (applause) Therefore, after I myself became Chief Minister, I announced the Rajarathna Award at a Muthamizh Peravai function, and for many years now that award has been given to many vidwans. In that line, today Mahalingam Pillai has received the award. I congratulate him; I commend him.",
+      "sourcePage": 82,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     82
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The recipient of the Iyarselvam Award is Solomon Pappiah. This award should perhaps have been given to him much earlier. On behalf of this Peravai I express my regret to him for the delay, because there can be no one in Tamil Nadu who does not know Solomon Pappiah.",
+      "sourcePage": 82,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     82
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I want to tell you one thing. I get up at 5:30 in the morning, finish my morning walk—the thing they call “walking”—by 6:30, return home, and sit down to write the Udanpirappu letter for the Murasoli newspaper. At that time the Tirukkural is broadcast on Sun TV. Some writers say that when they are writing there must not be any sound beside them. I am not like that. Whatever sound may be heard, once I begin writing I continue without worrying about it. But some sounds become sounds that encourage my writing. In that way, every day, the sound of Solomon Pappiah's Tirukkural, while I am writing, gives encouragement to my writing. (applause) I am not saying this merely in order to honour him in this gathering",
+      "sourcePage": 82,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     82
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "as a courtesy. My wife and members of my household are here. Solomon Pappiah may ask them and find out whether I have truly said this before or whether I am saying it merely out of courtesy.",
+      "sourcePage": 83,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     83
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To that extent, every day it is the Tirukkural. Many people have written commentaries on the Tirukkural. I too have written a commentary on all 1,330 Kural couplets. I have drawn Kural Oviyam. For two hundred or three hundred Kural couplets I have shaped little stories and written Kural Oviyam so that the Kural may be easily understood. But beyond all that, every day he presents the Tirukkural in a way that stays in the mind and can be understood even by small children. There may be a difference of opinion between him and me regarding the word-by-word meaning he gives. It is a difference, not a contradiction. A difference is one thing; a contradiction is another. Contradiction is like oil and water. Difference is like milk and water. Milk and water may be different, but when poured together they mingle as one. I will not speak in “Chennai” slang. (loud laughter) In the same way, however much you try to mix oil and water, they will remain separate. Thus, even where there is some difference without contradiction, how sweetly he recites the Kural, how sweetly he gives its explanation—I keep writing while marvelling at it again and again.",
+      "sourcePage": 83,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     83
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He continues to give me such encouragement. Even after he finishes all 1,330 Kural couplets, he should begin again and continue them in sequence—for my writing at least, he should continue. (applause) That is my request.",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Mrs. Charumathi Ramachandran has received the Isai Selvam Award. She is one of the finest students of the late music maestro M. L. Vasanthakumari. Thiruppanandal Balasubramanian, who receives the Nadaswara Selvam Award, is the son of Srinivasan, a tavil vidwan who served as an asthana artist of the Thiruppanandal Kasi Mutt. He has performed music programmes in countries such as Singapore and Malaysia. He now serves as an asthana vidwan of the Mylapore Kapaleeswarar Temple. My congratulations to him as well.",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "M. S. Ramasamy Pillai, who receives the Nattiya Selvam Award, lived and trained in the gurukula tradition under Vazhuvur Ramaiah Pillai and became renowned as an accomplished Bharatanatyam artist. Mrs. E. V. Saroja, Padma Subrahmanyam, Hema Malini and others have danced to his nattuvangam. He has worked as Bharatanatyam teacher for the films *Madurai Veeran*, *Bhagyavathi*, *Konjum Salangai*, *Manam Oru Kurangu* and *Thuli Visham*. I commend him too.",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kumbakonam Singaram Pillai, who receives the Mridanga Selvam Award, trained under the mridangam maestro Kudanthai",
+      "sourcePage": 84,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     84
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Azhaganambia Pillai in the gurukula tradition and learned the mridangam. He became famous for playing mridangam with tambura sruti for Thiruvavaduthurai Rajarathinam Pillai and Thiruvenkadu T. P. Subramania Pillai. Since every one of these recipients is worthy of the award, I am repeatedly duty-bound to congratulate and commend them.",
+      "sourcePage": 85,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     85
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At this function our friend Deccan Murthy has contributed one lakh rupees to the building fund. This is not a wealthy Peravai. It is an ordinary, common Peravai. For 23 years, every year when I come, they have been telling me that a building is needed. I too have been saying, “We shall see, we shall see. You undertake the effort. I will do what I can and stand by you.” For 23 years they did not engage in any such effort. Somehow this year they have taken up the effort and have asked the government to allot a site for this Peravai. I have assured them that the necessary action will be taken. (applause)",
+      "sourcePage": 85,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     85
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That site will be allotted soon. (loud applause) To carry out the work of raising a building on it, our Deccan has given one lakh rupees here. I too thought—our Moopanar, who is to speak next, in competition with him (loud laughter)—Moopanar says that whatever",
+      "sourcePage": 85,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     85
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "is needed, announce it on my behalf) Moopanar says to announce however much is needed. It is election time. I do not wish to say too much. (loud applause) I am happy to tell you that he too is giving one lakh rupees. (loud applause)",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "**Source note:** The frozen Tamil itself contains the unmatched closing parenthesis after `கூறுகிறார்)` at this PDF 87 continuation; E2 preserves it rather than silently repairing the source punctuation.",
+    "sourcePage": 86
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Since both of them are giving, I state here that one lakh rupees will be given from the Chief Minister's Fund as well. (loud applause)",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Moopanar said one more thing. He pointed out that this is the centenary year of Rajarathinam and said that it should be celebrated in a grand manner. The person with every qualification to serve as chairman of the committee conducting that celebration is Moopanar himself. (applause) Therefore, on behalf of all of you, I request that Moopanar serve as chairman of the Rajarathinam centenary celebration committee, take up its leadership, and work so that the celebration is conducted pleasantly, with vigour and distinction, bringing fresh strength to the world of music.",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After Kundrakudi Adigalar, we had wondered anxiously what would become of the sweet Tamil he spoke. As a consolation to all of us, the younger Kundrakudi Adigalar came here from the Kundrakudi Adheenam and delivered an address, demonstrating that the Tamil of Kundrakudi would not diminish, with a",
+      "sourcePage": 86,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     86
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "wonderful speech here. Indeed, his Tamil played and delighted us here to such an extent that one might say no musical programme was needed at all. (applause) I convey to him my commendation and good wishes, express my desire that the Muthamizh Peravai should continue to excel in its service, and with that I conclude.",
+      "sourcePage": 87,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     87
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered at the Muthamizh Peravai function on 3-2-98.",
+    "sourcePage": 87
+   }
+  ]
+ },
+ "sourcePages": [
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87
+ ],
+ "venue": null,
+ "event": {
+  "ta": "முத்தமிழ்ப் பேரவை விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-2",
+  "titleTa": "முத்துக் குளியல் — பாகம் II",
+  "titleEn": "Muthukkuliyal — Part II",
+  "ordinal": 8,
+  "total": 36
+ }
+}
