@@ -222,6 +222,12 @@ jobs:
       # discovery 80→91/40, sitemap 4042→4267/0, build 4275→4276 / 4270→4271, plus 18 adversarial checks.
       - name: Wave 7 Batches 2-4 P4 publication integration
         run: npm run test:wave7-b2-b4-p4-integration
+      # Essay public provenance — what every /essays/*/source page publishes. Runs after Build: it reads the
+      # generated HTML + RSC payload and proves no internal archival state (the frozen P1 `hidden` object,
+      # wave/batch/readiness markers) is serialized to the browser, that the page passes ONLY the allowlist
+      # projection to the client component, and that public notes carry no stale workflow-state wording.
+      - name: Essay public provenance (notes + serialization boundary)
+        run: npm run test:essay-public-provenance
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.

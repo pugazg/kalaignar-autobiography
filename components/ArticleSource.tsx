@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { ArrowLeft, BookOpen, FileCheck2, Home, Info, Landmark, ShieldCheck } from "lucide-react";
-import type { EssayProvenance } from "@/data/essays";
+import type { PublicEssayProvenance } from "@/lib/essay-public-provenance";
 import { useLang } from "@/lib/i18n";
 
-export default function ArticleSource({ slug, prov }: { slug: string; prov: EssayProvenance }) {
+// `prov` is the PUBLIC projection (lib/essay-public-provenance), never the archival record: this is a client
+// component, so every prop is serialized into the page HTML.
+export default function ArticleSource({ slug, prov }: { slug: string; prov: PublicEssayProvenance }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const s = prov.source;
