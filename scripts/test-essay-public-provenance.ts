@@ -24,6 +24,7 @@ import ArticleSource from "../components/ArticleSource";
 import EssaySourcePage from "../app/essays/[slug]/source/page";
 import {
   toPublicEssayProvenance, PUBLIC_TOP_KEYS, PUBLIC_SOURCE_KEYS, PUBLIC_ENGLISH_KEYS, PUBLIC_DERIVED_KEYS, PUBLIC_ARTICLE_MAP_KEYS,
+  PUBLIC_TRANSFER_PART_KEYS, PUBLIC_BLOCKER_KEYS, PUBLIC_PROJECT_RIGHTS_KEYS,
 } from "../lib/essay-public-provenance";
 import type { EssayProvenance } from "../data/essays";
 
@@ -67,15 +68,44 @@ for (const slug of WAVE7_B4) {
 
 // ── (B2) PROJECTION — allowlist only, for every essay record ─────────────────────────────────────────────
 const within = (o: object, allowed: readonly string[]) => Object.keys(o).every((k) => allowed.includes(k));
+// RECURSIVE allowlist: every object at every path of the public projection must have its OWN allowlist and
+// stay within it. An object at a path with no allowlist means a nested archival structure was forwarded
+// wholesale — a failure even if its keys look harmless today. Arrays of strings/numbers are leaf values.
+const ALLOW: Record<string, readonly string[]> = {
+  "": PUBLIC_TOP_KEYS,
+  "source": [...PUBLIC_SOURCE_KEYS, "articleMap", "transferParts"],
+  "source.articleMap[]": PUBLIC_ARTICLE_MAP_KEYS,
+  "source.transferParts[]": PUBLIC_TRANSFER_PART_KEYS,
+  "english": PUBLIC_ENGLISH_KEYS,
+  "archiveDerived": PUBLIC_DERIVED_KEYS,
+  "blockers[]": PUBLIC_BLOCKER_KEYS,
+  "projectRights": PUBLIC_PROJECT_RIGHTS_KEYS,
+};
+function allowlistViolations(v: unknown, at = "", out: string[] = []): string[] {
+  if (Array.isArray(v)) { v.forEach((x) => { if (x !== null && typeof x === "object") allowlistViolations(x, `${at}[]`, out); }); return out; }
+  if (v === null || typeof v !== "object") return out;
+  const allowed = ALLOW[at];
+  if (!allowed) { out.push(`${at || "<root>"}: object has no public allowlist`); return out; }
+  for (const [k, x] of Object.entries(v)) {
+    if (!allowed.includes(k)) out.push(`${at ? at + "." : ""}${k}: not allowlisted`);
+    else allowlistViolations(x, at ? `${at}.${k}` : k, out);
+  }
+  return out;
+}
 const INTERNAL_KEYS = ["hidden", "wave", "batch", "readiness", "shelf", "workId", "sourceTree"];
 for (const slug of ALL) {
   const raw = load(slug);
   const pub = toPublicEssayProvenance(raw);
   const json = JSON.stringify(pub);
   ok(within(pub, PUBLIC_TOP_KEYS), `${slug}: public projection top-level keys ⊆ allowlist (${Object.keys(pub).join(",")})`);
-  ok(within(pub.source, PUBLIC_SOURCE_KEYS) && within(pub.english, PUBLIC_ENGLISH_KEYS) && within(pub.archiveDerived, PUBLIC_DERIVED_KEYS)
+  ok(within(pub.source, ALLOW["source"]) && within(pub.english, PUBLIC_ENGLISH_KEYS) && within(pub.archiveDerived, PUBLIC_DERIVED_KEYS)
     && pub.source.articleMap.every((r) => within(r, PUBLIC_ARTICLE_MAP_KEYS)), `${slug}: nested public keys ⊆ allowlists`);
   ok(INTERNAL_KEYS.every((k) => !(k in pub)), `${slug}: no internal top-level field in the public projection`);
+  const viol = allowlistViolations(pub);
+  ok(viol.length === 0, `${slug}: projection is allowlisted at every nesting level (${viol.slice(0, 3).join("; ")})`);
+  ok((pub.source.transferParts ?? []).every((r) => within(r, PUBLIC_TRANSFER_PART_KEYS))
+    && (pub.blockers ?? []).every((r) => within(r, PUBLIC_BLOCKER_KEYS))
+    && (!pub.projectRights || within(pub.projectRights, PUBLIC_PROJECT_RIGHTS_KEYS)), `${slug}: transferParts / blockers / projectRights ⊆ their nested allowlists`);
   ok(!/"hidden"|hidden foundation|"discoverable"|"sitemapExposed"|"publicRoute"|"readiness"/.test(json), `${slug}: projection JSON carries no hidden/workflow state`);
   // Every rendered fact is still there — the projection drops only non-rendered fields.
   ok(pub.source.scanFilename === raw.source.scanFilename && pub.source.articleMap.length === raw.source.articleMap.length
@@ -84,6 +114,49 @@ for (const slug of ALL) {
   // Rendering the projection == rendering the full record: nothing the page shows was lost.
   ok(ta(createElement(ArticleSource, { slug, prov: pub })) === ta(createElement(ArticleSource, { slug, prov: raw as never })), `${slug}: public projection renders identically to the full record (Tamil UI)`);
   ok(en(createElement(ArticleSource, { slug, prov: pub })) === en(createElement(ArticleSource, { slug, prov: raw as never })), `${slug}: public projection renders identically to the full record (English UI)`);
+}
+
+// ── (B2b) NESTED TRANSFER PARTS — சிந்தனையும் செயலும் (the one split-transfer source) ───────────────────────
+// The archive records six facts per transfer part; the page renders three (part, global scan range, SHA-256).
+// The other three stay in the archival JSON and must not cross the client boundary.
+const TP_SLUG = "sinthanaiyum-seyalum";
+const TP_ALL = ["part", "filename", "globalScans", "pdfPages", "bytes", "sha256"];
+const TP_DROPPED = ["filename", "pdfPages", "bytes"];
+const tpRaw = (load(TP_SLUG).source.transferParts ?? []) as unknown as Record<string, unknown>[];
+{
+  const tpPub = (toPublicEssayProvenance(load(TP_SLUG)).source.transferParts ?? []) as unknown as Record<string, unknown>[];
+  ok(tpRaw.length === 5, `${TP_SLUG}: archival record has 5 transfer parts (found ${tpRaw.length})`);
+  ok(tpRaw.every((r) => TP_ALL.every((k) => r[k] !== undefined && r[k] !== null)), `${TP_SLUG}: archival transfer parts retain all six source fields (${TP_ALL.join(", ")})`);
+  ok(tpPub.length === tpRaw.length && tpPub.every((r) => Object.keys(r).sort().join() === [...PUBLIC_TRANSFER_PART_KEYS].sort().join()),
+    `${TP_SLUG}: public transfer parts carry exactly ${PUBLIC_TRANSFER_PART_KEYS.join(", ")}`);
+  ok(tpPub.every((r) => TP_DROPPED.every((k) => !(k in r))), `${TP_SLUG}: public transfer parts carry no ${TP_DROPPED.join(" / ")}`);
+  ok(tpPub.every((r, i) => r.part === tpRaw[i].part && r.globalScans === tpRaw[i].globalScans && r.sha256 === tpRaw[i].sha256),
+    `${TP_SLUG}: rendered transfer-part facts (part, global scans, SHA-256) preserved exactly`);
+  const page = ta(createElement(ArticleSource, { slug: TP_SLUG, prov: toPublicEssayProvenance(load(TP_SLUG)) }));
+  ok(tpRaw.every((r) => page.includes(String(r.sha256)) && page.includes(String(r.globalScans))), `${TP_SLUG}: every transfer part's SHA-256 and scan range still render`);
+}
+
+// ── (B2c) MUTATION — a new, non-allowlisted field at ANY depth is not forwarded ──────────────────────────────
+{
+  const SENTINEL = "__NON_ALLOWLISTED_ARCHIVAL_FIELD__";
+  const base = load(TP_SLUG);
+  const withRights = load("sakkaravarththiyin-thirumagan"); // the one record with blockers + projectRights
+  const m = JSON.parse(JSON.stringify({ ...base, blockers: withRights.blockers, projectRights: withRights.projectRights })) as Record<string, any>;
+  m.futureInternal = SENTINEL;
+  m.source.futureInternal = SENTINEL;
+  m.source.futureNested = { note: SENTINEL };
+  m.source.articleMap[0].futureInternal = SENTINEL;
+  m.source.transferParts[0].futureInternal = SENTINEL;
+  m.english.futureInternal = SENTINEL;
+  m.archiveDerived.futureInternal = SENTINEL;
+  m.blockers[0].futureInternal = SENTINEL;
+  m.projectRights.futureInternal = SENTINEL;
+  const out = toPublicEssayProvenance(m as EssayProvenance);
+  ok(!JSON.stringify(out).includes(SENTINEL), "mutation: fields injected at top/source/articleMap/transferParts/english/archiveDerived/blockers/projectRights are all dropped");
+  ok(allowlistViolations(out).length === 0 && (out.blockers?.length ?? 0) > 0 && !!out.projectRights, "mutation: projection stays allowlisted at every level (blockers + projectRights exercised)");
+  // The walker itself catches a nested structure forwarded wholesale.
+  ok(allowlistViolations({ ...out, source: { ...out.source, transferParts: tpRaw } }).some((v) => /transferParts\[\]\.(filename|pdfPages|bytes)/.test(v)),
+    "mutation: forwarding raw transfer-part rows is detected by the recursive allowlist check");
 }
 
 // ── (B3) ROUTE BOUNDARY — the real page component hands the client ONLY the projection ───────────────────
@@ -102,6 +175,7 @@ if (!fs.existsSync(APP)) {
   fail.push("no production build found (.next/server/app/essays) — run `npm run build` first; the serialized-HTML check cannot be skipped");
   checks++;
 } else {
+  const TP_LEAK = /\\?"(?:filename|pdfPages|bytes)\\?"\s*:/;
   const LEAK = /\\?"hidden\\?"\s*:|hidden foundation|\\?"discoverable\\?"\s*:|\\?"sitemapExposed\\?"\s*:|\\?"publicRoute\\?"\s*:|\\?"readiness\\?"\s*:|\\?"sourceTree\\?"\s*:/;
   for (const slug of ALL) {
     for (const ext of ["html", "rsc"]) {
@@ -116,6 +190,18 @@ if (!fs.existsSync(APP)) {
       ok(!LEAK.test(body), `${slug}: built /source.${ext} has no internal hidden/workflow state (${(body.match(LEAK) || [])[0]})`);
       ok(!STALE_PAGE.test(body), `${slug}: built /source.${ext} has no stale workflow-state note (${(body.match(STALE_PAGE) || [])[0]})`);
     }
+  }
+
+  // The split-transfer page: non-rendered transfer-part fields are absent from the serialized payload, while the
+  // rendered ones (part number, global scan range, SHA-256) are present — a meaningful positive control.
+  for (const ext of ["html", "rsc"]) {
+    const f = path.join(APP, TP_SLUG, `source.${ext}`);
+    if (!fs.existsSync(f)) continue;
+    const body = fs.readFileSync(f, "utf8");
+    ok(!TP_LEAK.test(body), `${TP_SLUG}: built /source.${ext} serializes no transfer-part filename / pdfPages / bytes (${(body.match(TP_LEAK) || [])[0]})`);
+    ok(tpRaw.every((r) => !body.includes(String(r.filename))), `${TP_SLUG}: built /source.${ext} contains no transfer-part PDF filename`);
+    ok(tpRaw.every((r) => body.includes(String(r.sha256)) && body.includes(String(r.globalScans))), `${TP_SLUG}: built /source.${ext} still carries every part's SHA-256 + global scan range`);
+    ok(tpRaw.every((r) => new RegExp(`\\\\?"part\\\\?"\\s*:\\s*${r.part}\\b`).test(body)), `${TP_SLUG}: built /source.${ext} still carries every part number`);
   }
 }
 
