@@ -629,8 +629,9 @@ for (const w of WORKS) {
     },
     // NO projectRights. Wave-3 preflight found no publication-specific rights determination for these
     // three 1949–1951 pamphlets, and the reference work's block was never established for them.
+    // Public notes are durable source facts only — no onboarding/wave/phase workflow labels.
     notes: [
-      "Bulk Onboarding Wave 3. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
+      "The controlling PDF is not vendored into this repository and is never fetched at runtime.",
       "This publication prints no contents page; article ordinals are archive reading ordinals.",
     ],
   };
