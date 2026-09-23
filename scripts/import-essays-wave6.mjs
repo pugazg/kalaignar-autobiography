@@ -477,8 +477,10 @@ for (const w of WORKS) {
       note: "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers.",
     },
     notes: [
-      "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
-      "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized).",
+      // PUBLIC notes (rendered in the Source & provenance "Notes" card): durable source facts only. Internal
+      // workflow checkpoints (wave/batch labels, phase gates, hidden/discovery state) go stale the moment a
+      // work is published and must never be published as provenance.
+      "The controlling PDF is not vendored into this repository and is never fetched at runtime.",
     ],
   };
 

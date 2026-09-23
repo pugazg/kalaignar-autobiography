@@ -9,6 +9,7 @@ import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
 import { WAVE7_ESSAY_SLUGS } from "@/lib/essays-wave7-routes";
 const ALL_ESSAY_SLUGS: readonly string[] = Array.from(new Set<string>([...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS, ...WAVE7_ESSAY_SLUGS]));
 import { sourcePageMetaDescription } from "@/lib/essay-source-facts";
+import { toPublicEssayProvenance } from "@/lib/essay-public-provenance";
 
 function loadProvenance(slug: string): EssayProvenance | null {
   try {
@@ -39,5 +40,7 @@ export default function EssaySourcePage({ params }: { params: { slug: string } }
   if (!ALL_ESSAY_SLUGS.includes(params.slug)) notFound();
   const prov = loadProvenance(params.slug);
   if (!prov) notFound();
-  return <ArticleSource slug={params.slug} prov={prov} />;
+  // Server → client boundary: only the public projection is serialized into the page. The archival record
+  // (incl. internal state such as the frozen P1 `hidden` object) stays on the server.
+  return <ArticleSource slug={params.slug} prov={toPublicEssayProvenance(prov)} />;
 }

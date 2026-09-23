@@ -18,6 +18,7 @@ import { LangProvider } from "../lib/i18n";
 import EssayLanding from "../components/EssayLanding";
 import ArticleReader from "../components/ArticleReader";
 import ArticleSource from "../components/ArticleSource";
+import { toPublicEssayProvenance } from "../lib/essay-public-provenance";
 import { ESSAY_SLUGS } from "../data/essays";
 import type { EssayPublication, EssayProvenance } from "../data/essays";
 import { WAVE6_ESSAY_SLUGS } from "../lib/essays-wave6-routes";
@@ -65,12 +66,12 @@ ok(cum.batches.some((b) => b.batchId === "b6-essays" && b.routeCount === 74), "c
 
 // ── 3. RENDER — truthful per-work wording, no cross-work fact leakage ─────────────────────────────
 // vedhanai: a government MESSAGE, never a speech; no invented date/venue.
-const vs = renderTa(createElement(ArticleSource, { slug: "vedhanai-ch-siraiyinindrum-viduthalai-pera", prov: prov("vedhanai-ch-siraiyinindrum-viduthalai-pera") }));
+const vs = renderTa(createElement(ArticleSource, { slug: "vedhanai-ch-siraiyinindrum-viduthalai-pera", prov: toPublicEssayProvenance(prov("vedhanai-ch-siraiyinindrum-viduthalai-pera")) }));
 ok(/செய்தி|message/.test(vs), "vedhanai source: shows the செய்தி / public-message form");
 ok(!/\bspeech was delivered\b|delivered speech at|at the .* meeting/i.test(vs), "vedhanai source: no fabricated speech event/venue");
 ok(/began on 15 December 1975/.test(vs) && !/(issued|published)[^.]{0,20}on 15 December 1975/i.test(vs), "vedhanai source: 15 Dec 1975 only as fortnight-start, not an exact issue date");
 // kudumbaththin: no invented year/edition; explicit "edition status not established"; NOT "no reprint".
-const ks = renderTa(createElement(ArticleSource, { slug: "kudumbaththin-nalvilakku", prov: prov("kudumbaththin-nalvilakku") }));
+const ks = renderTa(createElement(ArticleSource, { slug: "kudumbaththin-nalvilakku", prov: toPublicEssayProvenance(prov("kudumbaththin-nalvilakku")) }));
 // (renderTa server-renders in Tamil, the site's primary language — assert Tamil wording.)
 const NOT_ESTABLISHED_TA = /பதிப்பு நிலை/; // "Edition status" banner
 const NOT_CONFIRMED_TA = /உறுதிப்படுத்தப்படவில்லை/; // "not established/confirmed"
@@ -88,9 +89,9 @@ ok(!THAT_EDITION_TA.test(vs) && !/The scan integrated here is that edition itsel
 ok(pub("kudumbaththin-nalvilakku").controllingIsFirstEdition === null, "kudumbaththin: controllingIsFirstEdition null");
 ok(pub("vedhanai-ch-siraiyinindrum-viduthalai-pera").controllingIsFirstEdition === null, "vedhanai: controllingIsFirstEdition null");
 // Existing single-edition Essay works still legitimately say 'no reprint' — the fix must not regress them.
-ok(!NOT_ESTABLISHED_TA.test(renderTa(createElement(ArticleSource, { slug: "sinthanaiyum-seyalum", prov: prov("sinthanaiyum-seyalum") }))), "sinthanaiyum source: edition IS established (no not-established banner)");
+ok(!NOT_ESTABLISHED_TA.test(renderTa(createElement(ArticleSource, { slug: "sinthanaiyum-seyalum", prov: toPublicEssayProvenance(prov("sinthanaiyum-seyalum")) }))), "sinthanaiyum source: edition IS established (no not-established banner)");
 // sinthanaiyum: transfer parts + first/controlling edition distinction render.
-const ss = renderTa(createElement(ArticleSource, { slug: "sinthanaiyum-seyalum", prov: prov("sinthanaiyum-seyalum") }));
+const ss = renderTa(createElement(ArticleSource, { slug: "sinthanaiyum-seyalum", prov: toPublicEssayProvenance(prov("sinthanaiyum-seyalum")) }));
 ok(/part 1|part 5|transfer/i.test(ss), "sinthanaiyum source: five transfer PDF parts shown");
 ok(pub("sinthanaiyum-seyalum").controllingIsFirstEdition === false, "sinthanaiyum: controllingIsFirstEdition false (2010 third edition)");
 // A landing + an article reader render without throwing (smoke) for the smallest and largest works.

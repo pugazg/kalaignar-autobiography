@@ -59,7 +59,8 @@
     "test:wave7-b2-b4-p2-fidelity": "node scripts/validate-wave7-b2-b4-p2-fidelity.mjs",
     "build:wave7-b2-b4-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave7-b2-b4-p3-routes.ts",
     "test:wave7-b2-b4-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p3-routes.ts",
-    "test:wave7-b2-b4-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p4-integration.ts"
+    "test:wave7-b2-b4-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p4-integration.ts",
+    "test:essay-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-essay-public-provenance.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

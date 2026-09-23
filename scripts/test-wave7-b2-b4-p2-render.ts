@@ -25,6 +25,7 @@ import NovelSource from "../components/NovelSource";
 import EssayLanding from "../components/EssayLanding";
 import ArticleReader from "../components/ArticleReader";
 import ArticleSource from "../components/ArticleSource";
+import { toPublicEssayProvenance } from "../lib/essay-public-provenance";
 import { articleNumberingNote } from "../lib/essay-source-facts";
 import { wave7NovelToNovel, wave7NovelProvenance } from "../lib/wave7-novels-adapter";
 
@@ -86,7 +87,7 @@ for (const slug of ESSAYS) {
   const prov = load(`public/data/essays/${slug}/provenance.json`);
   let landing = "", source = "";
   try { landing = ta(createElement(EssayLanding, { pub })); } catch (e) { fail.push(`${slug}: EssayLanding threw ${(e as Error).message}`); checks++; }
-  try { source = ta(createElement(ArticleSource, { slug, prov })); } catch (e) { fail.push(`${slug}: ArticleSource threw ${(e as Error).message}`); checks++; }
+  try { source = ta(createElement(ArticleSource, { slug, prov: toPublicEssayProvenance(prov) })); } catch (e) { fail.push(`${slug}: ArticleSource threw ${(e as Error).message}`); checks++; }
   ok(landing.includes(esc(pub.title.ta)) && hasTamil(landing), `${slug}: EssayLanding renders Tamil title`);
   ok(!LEAK.test(landing), `${slug}: no leak on EssayLanding`);
   ok(hasTamil(source) && !LEAK.test(source), `${slug}: ArticleSource renders without leak`);
@@ -174,8 +175,8 @@ for (const slug of ESSAYS) {
     ok(landEn.includes(`Contents — ${N} sections`) && landTa.includes(`பொருளடக்கம் — ${N} பகுதிகள்`), `${slug}: contents heading counts sections in both languages`);
 
     // (3)/(4) SOURCE & PROVENANCE — the section map, and no public "article" wording for the sections.
-    const srcTa = ta(createElement(ArticleSource, { slug, prov }));
-    const srcEn = en(createElement(ArticleSource, { slug, prov }));
+    const srcTa = ta(createElement(ArticleSource, { slug, prov: toPublicEssayProvenance(prov) }));
+    const srcEn = en(createElement(ArticleSource, { slug, prov: toPublicEssayProvenance(prov) }));
     ok(srcEn.includes(`Section map — ${N} sections`), `${slug} source (English UI): "Section map — ${N} sections"`);
     ok(srcTa.includes(`பகுதி வரைபடம் — ${N}`), `${slug} source (Tamil UI): "பகுதி வரைபடம் — ${N}"`);
     // The shelf name "Essays & Articles" is the catalogue category, not a label for these units.
@@ -240,7 +241,7 @@ for (const slug of ESSAYS) {
     const notes: string[] = prov.notes ?? [];
     ok(notes.every((n) => !STALE_NOTE.test(n)), `${slug}: no internal workflow-state wording in public provenance notes (${notes.filter((n) => STALE_NOTE.test(n)).join(" | ")})`);
     ok(notes.includes(PDF_NOTE), `${slug}: durable "controlling PDF is not vendored / never fetched at runtime" note kept`);
-    for (const [lbl, h] of [["Tamil UI", ta(createElement(ArticleSource, { slug, prov }))], ["English UI", en(createElement(ArticleSource, { slug, prov }))]] as const) {
+    for (const [lbl, h] of [["Tamil UI", ta(createElement(ArticleSource, { slug, prov: toPublicEssayProvenance(prov) }))], ["English UI", en(createElement(ArticleSource, { slug, prov: toPublicEssayProvenance(prov) }))]] as const) {
       const v = visible(h);
       ok(!STALE_PAGE.test(v), `${slug} Source & provenance (${lbl}): no stale workflow-state phrase rendered (${(v.match(STALE_PAGE) || [])[0]})`);
       ok(v.includes(PDF_NOTE), `${slug} Source & provenance (${lbl}): PDF-not-vendored note rendered`);
