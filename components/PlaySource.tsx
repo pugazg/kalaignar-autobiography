@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { AlertTriangle, ArrowLeft, BookOpen, Info, ScrollText, Scale } from "lucide-react";
-import type { Play, PlayProvenance } from "@/data/plays";
+import type { PublicPlayHead, PublicPlayProvenance } from "@/lib/play-public-provenance";
 import { useLang } from "@/lib/i18n";
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
@@ -24,8 +24,13 @@ function Card({ icon: Icon, title, children }: { icon: typeof Info; title: strin
   );
 }
 
-/** Provenance page: what the source is, what it establishes, and what stays unresolved. */
-export default function PlaySource({ play, prov }: { play: Play; prov: PlayProvenance }) {
+/**
+ * Provenance page: what the source is, what it establishes, and what stays unresolved.
+ *
+ * Takes the PUBLIC projections only (lib/play-public-provenance) — never the archival records: this is a
+ * client component, so every prop is serialized into the page HTML.
+ */
+export default function PlaySource({ play, prov }: { play: PublicPlayHead; prov: PublicPlayProvenance }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const s = prov.source;

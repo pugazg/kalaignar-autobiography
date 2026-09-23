@@ -245,6 +245,10 @@ jobs:
         run: npm run test:wave7-b5-b6-k-p4-integration
       - name: Wave 7 B5/B6/Kuraloviyam public provenance (built HTML/RSC serialization)
         run: npm run test:wave7-b5-b6-k-public-provenance
+      # Drama /source pages: the route hands PlaySource only the recursive allowlist projection. Reads the BUILT
+      # HTML + RSC of all 10 Drama source pages; archival hidden/wave/batch/readiness stay in the JSON only.
+      - name: Drama public provenance (built HTML/RSC serialization)
+        run: npm run test:drama-public-provenance
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
