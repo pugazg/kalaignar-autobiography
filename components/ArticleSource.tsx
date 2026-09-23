@@ -9,6 +9,9 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
   const { lang } = useLang();
   const ta = lang === "ta";
   const s = prov.source;
+  // A source-sectioned work (no printed contents page, no descriptive titles) shows its reading units as
+  // numbered sections; the map is a "Section / பகுதி" column so the source-visible number appears once.
+  const sectioned = s.articleMap.length > 0 && s.articleMap.every((a) => a.numberSource === "source-section");
   const e = prov.english;
   const d = prov.archiveDerived;
   const pr = prov.projectRights;
@@ -148,14 +151,22 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
           </div>
         </Card>
 
-        <Card icon={BookOpen} title={ta ? `கட்டுரை வரைபடம் — ${s.articleMap.length}` : `Article map — ${s.articleMap.length} articles`}>
+        <Card icon={BookOpen} title={ta
+          ? `${sectioned ? "பகுதி" : "கட்டுரை"} வரைபடம் — ${s.articleMap.length}`
+          : `${sectioned ? "Section" : "Article"} map — ${s.articleMap.length} ${sectioned ? "sections" : "articles"}`}>
           <div className="mt-3 overflow-x-auto">
             <table className="w-full min-w-[36rem] border-collapse text-left text-xs">
               <thead>
                 <tr className="border-b border-ink/10 text-[10px] uppercase tracking-wider text-ink/45 dark:border-white/10 dark:text-night-text/45">
-                  <th scope="col" className="py-1.5 pr-3 font-medium">#</th>
-                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "தலைப்பு (அச்சுத் தலைப்புப் பக்கம்)" : "Title (heading page)"}</th>
-                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "ஆங்கிலம்" : "English"}</th>
+                  {sectioned ? (
+                    <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "பகுதி" : "Section"}</th>
+                  ) : (
+                    <>
+                      <th scope="col" className="py-1.5 pr-3 font-medium">#</th>
+                      <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "தலைப்பு (அச்சுத் தலைப்புப் பக்கம்)" : "Title (heading page)"}</th>
+                      <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "ஆங்கிலம்" : "English"}</th>
+                    </>
+                  )}
                   <th scope="col" className="py-1.5 pr-3 font-medium">Scan</th>
                   <th scope="col" className="py-1.5 font-medium">{ta ? "அச்சு" : "Printed"}</th>
                 </tr>
@@ -163,16 +174,23 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               <tbody>
                 {s.articleMap.map((a) => (
                   <tr key={a.number} className="border-b border-ink/5 align-top dark:border-white/5">
-                    <td className="py-1.5 pr-3 tabular-nums text-ink/60 dark:text-night-text/60">{a.number}</td>
-                    <td className="py-1.5 pr-3 font-tamil text-ink/85 dark:text-night-text/85" lang="ta">
-                      {a.numberSource === "source-section" ? `பகுதி ${a.number}` : a.titleTa}
-                      {a.contentsTitleTa && (
-                        <span className="mt-0.5 block text-[11px] italic text-ink/45 dark:text-night-text/45">
-                          {ta ? "பொருளடக்கம்: " : "contents page: "}{a.contentsTitleTa}
-                        </span>
-                      )}
-                    </td>
-                    <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70">{a.numberSource === "source-section" ? `Section ${a.number}` : a.titleEn}</td>
+                    {sectioned ? (
+                      // The source-visible section number, ONCE (no fabricated Tamil/English title columns).
+                      <td className="py-1.5 pr-3 tabular-nums text-ink/85 dark:text-night-text/85">{ta ? `பகுதி ${a.number}` : `Section ${a.number}`}</td>
+                    ) : (
+                      <>
+                        <td className="py-1.5 pr-3 tabular-nums text-ink/60 dark:text-night-text/60">{a.number}</td>
+                        <td className="py-1.5 pr-3 font-tamil text-ink/85 dark:text-night-text/85" lang="ta">
+                          {a.titleTa}
+                          {a.contentsTitleTa && (
+                            <span className="mt-0.5 block text-[11px] italic text-ink/45 dark:text-night-text/45">
+                              {ta ? "பொருளடக்கம்: " : "contents page: "}{a.contentsTitleTa}
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70">{a.titleEn}</td>
+                      </>
+                    )}
                     <td className="py-1.5 pr-3 tabular-nums text-ink/55 dark:text-night-text/55">{a.scanPages}</td>
                     <td className="py-1.5 tabular-nums text-ink/55 dark:text-night-text/55">{a.printedPages}</td>
                   </tr>

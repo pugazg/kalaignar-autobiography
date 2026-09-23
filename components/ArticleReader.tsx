@@ -71,13 +71,12 @@ export default function ArticleReader({
             : (ta ? `கட்டுரை ${article.number} / ${pub.articleCount}` : `Article ${article.number} of ${pub.articleCount}`)}
         </p>
         {/* A source-section unit shows its source-visible section number as the heading — there is no
-            descriptive title in the source and none is invented. */}
-        <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
-          {isSection(article) ? `பகுதி ${article.number}` : article.titleTa}
+            descriptive title in the source and none is invented. ONE identity, in the active language:
+            never both "பகுதி N" and "Section N" at once (that would just repeat the number). */}
+        <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang={isSection(article) ? (ta ? "ta" : "en") : "ta"}>
+          {isSection(article) ? (ta ? `பகுதி ${article.number}` : `Section ${article.number}`) : article.titleTa}
         </h1>
-        {isSection(article)
-          ? <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{`Section ${article.number}`}</p>
-          : <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{article.titleEn}</p>}
+        {!isSection(article) && <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{article.titleEn}</p>}
         {/* The printed CONTENTS-page title is a separate source witness where it differs from the
             verified heading-page title. Both are kept; neither is normalized into the other. */}
         {article.contentsTitleTa && (

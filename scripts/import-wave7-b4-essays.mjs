@@ -216,13 +216,36 @@ function parseArticle(text, english) {
   // NOTE: the full declared span is unioned into pageSeq after the parse loop below (see the coverage
   // block), which covers both no-marker articles and articles whose markers are mid-paragraph.
 
-  let buf = [], bufPage = null, inNonBody = false, quoteBuf = [], titleOpen = false;
-  const flushPara = () => { if (!buf.length) return; units.push({ kind: "text", text: buf.join("\n"), page: bufPage }); buf = []; bufPage = null; };
+  let buf = [], bufPage = null, bufPages = [], inNonBody = false, quoteBuf = [], titleOpen = false;
+  // Every source page a paragraph occupies, in reading order (a paragraph can straddle a physical page
+  // boundary — see consumeInline). The block emitted for the paragraph records ALL of them.
+  const pushBufPage = (p) => { if (!bufPages.length || bufPages[bufPages.length - 1].scan !== p.scan) bufPages.push({ scan: p.scan, printed: p.printed }); };
+  const flushPara = () => { if (!buf.length) return; units.push({ kind: "text", text: buf.join("\n"), page: bufPage, pages: bufPages.length ? bufPages : [bufPage] }); buf = []; bufPage = null; bufPages = []; };
   const flushQuote = () => {
     if (!quoteBuf.length) return;
     const t = quoteBuf.join("\n");
     if (t.includes(NOT_AUTHORED)) notes.push(t); else units.push({ kind: "blockquote", text: t, page: bufPage ?? page });
     quoteBuf = [];
+  };
+  // Consume every INLINE HTML comment inside a source line. A scan marker (`<!-- scan N -->`,
+  // `<!-- source scan: N / printed page: M -->`, `<!-- Tamil source: scan N / printed M -->`, the Tamil
+  // form, …) advances the active source page and is recorded via onPage; a SOURCE DAMAGE note is routed to
+  // the damage channel; any other project/editorial comment is dropped. In every case the comment SYNTAX
+  // is removed from the emitted literary text, joining the surrounding characters EXACTLY — a boundary
+  // marker embedded inside a word rejoins the word (`பிரச்<!-- scan 9 -->சினை` → `பிரச்சினை`). Returns the
+  // cleaned literary text; never leaves `<!--`/`-->` in the reading copy.
+  const consumeInline = (text, onPage) => {
+    const re = /<!--[\s\S]*?-->/g;
+    let out = "", last = 0, m;
+    while ((m = re.exec(text)) !== null) {
+      out += text.slice(last, m.index);
+      last = m.index + m[0].length;
+      const mk = parseMarker(m[0]);
+      if (mk) { page = { scan: mk.scan, printed: mk.printed }; noteScan(page); onPage(page); }
+      else if (isDamageNote(m[0])) damage.push(m[0].replace(/^<!--\s*/, "").replace(/\s*-->$/, ""));
+      // else: a non-scan project/editorial comment → dropped from the literary text
+    }
+    return out + text.slice(last);
   };
 
   for (const raw of body.split("\n")) {
@@ -235,7 +258,7 @@ function parseArticle(text, english) {
     if (mk) { flushPara(); flushQuote(); page = { scan: mk.scan, printed: mk.printed }; noteScan(page); continue; }
     if (isAnnotation(t)) { flushPara(); flushQuote(); if (isDamageNote(t)) damage.push(t.replace(/^<!--\s*/, "").replace(/\s*-->$/, "")); continue; }
     if (t === "") { flushPara(); flushQuote(); continue; }
-    if (t.startsWith("> ")) { if (buf.length) flushPara(); quoteBuf.push(t.slice(2)); continue; }
+    if (t.startsWith("> ")) { if (buf.length) flushPara(); quoteBuf.push(consumeInline(t.slice(2), () => {})); continue; }
     if (quoteBuf.length) flushQuote();
     if (/^#{1,6}\s/.test(t)) {
       flushPara();
@@ -246,8 +269,11 @@ function parseArticle(text, english) {
       continue;
     }
     if (titleOpen) { const title = units[units.length - 1]; title.text = `${title.text} ${t}`.replace(/\s+/g, " ").trim(); titleOpen = false; continue; }
-    if (!buf.length) bufPage = page;
-    buf.push(line);
+    // Paragraph body. Seed the paragraph's page list with the page active at its start, then consume any
+    // inline markers (which advance the page mid-paragraph and extend the list). The comment syntax is
+    // stripped from the emitted text; the block will record every contributing source page.
+    if (!buf.length) { bufPage = page; bufPages = [{ scan: page.scan, printed: page.printed }]; }
+    buf.push(consumeInline(line, pushBufPage));
   }
   flushPara(); flushQuote();
   // Authoritative COVERAGE = the front-matter declared span. Some assemblies place their `<!-- scan N -->`
@@ -298,7 +324,9 @@ function buildBlocks(units) {
     if (!u.page) die(`a unit carries no source page: ${JSON.stringify(u.text.slice(0, 60))}`);
     if (u.kind === "subheading") { blocks.push({ kind: "subheading", segments: [{ kind: "authored-text", text: u.text }], text: u.text, mixedVoice: false, sourcePages: [u.page] }); continue; }
     const kind = ATTRIBUTION.test(u.text) ? "attribution" : "paragraph";
-    blocks.push({ kind, segments: null, text: u.text, mixedVoice: false, sourcePages: [u.page] });
+    // A paragraph records EVERY source page it occupies (in reading order) — a paragraph that straddles a
+    // physical page boundary carries both pages, from the inline markers consumed while parsing it.
+    blocks.push({ kind, segments: null, text: u.text, mixedVoice: false, sourcePages: (u.pages && u.pages.length ? u.pages : [u.page]).map((p) => ({ scan: p.scan, printed: p.printed })) });
   }
   for (const b of blocks) {
     if (!b.segments) {

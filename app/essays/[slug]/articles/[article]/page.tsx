@@ -41,7 +41,7 @@ export function generateMetadata({ params }: { params: { slug: string; article: 
   const where = printedPagesLabel(a.printedPages, false) ?? scanRunsLabel(a, false);
   const position = pub.articleCount === 1
     ? `The essay in ${pub.title.en}`
-    : `Article ${a.number} of ${pub.articleCount} in ${pub.title.en}`;
+    : `${isSection ? "Section" : "Article"} ${a.number} of ${pub.articleCount} in ${pub.title.en}`;
   const description =
     `${position} by Kalaignar M. Karunanidhi — ${where}. ` +
     `${publicationMetaSentence(pub)}`;

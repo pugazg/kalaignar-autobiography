@@ -5,7 +5,7 @@ import { ArrowLeft, BookOpen, Home, Info, Newspaper } from "lucide-react";
 import type { EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
 import { Fragment } from "react";
-import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel, isSourceSectioned } from "@/lib/essay-source-facts";
+import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel, isSourceSectioned, unitNoun } from "@/lib/essay-source-facts";
 
 // The publication landing: title, author, source-edition context and the source-numbered table of
 // contents. The publication is ONE catalog work; its 14 articles are reading units inside it.
@@ -73,10 +73,10 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
         <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
           {pub.articleCount === 1
-            ? (ta ? "கட்டுரை" : "The essay")
+            ? (sectioned ? (ta ? "பகுதி" : "The section") : (ta ? "கட்டுரை" : "The essay"))
             : ta
-              ? `பொருளடக்கம் — ${pub.articleCount} கட்டுரைகள்`
-              : `Contents — ${pub.articleCount} articles`}
+              ? `பொருளடக்கம் — ${pub.articleCount} ${unitNoun(pub, true, true)}`
+              : `Contents — ${pub.articleCount} ${unitNoun(pub, false, true)}`}
         </h2>
         {/* The ordinals shown here are: printed contents-page numbers (one publication), source-visible
             section numbers (a source-sectioned work with no contents page), or the archive's reading

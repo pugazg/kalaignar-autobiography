@@ -86,7 +86,7 @@ export function publicationMetaSentence(pub: EssayPublication): string {
   parts.push(
     pub.articleCount === 1
       ? `${pub.title.en} — a single essay by Kalaignar M. Karunanidhi`
-      : `${pub.title.en} — ${pub.articleCount} articles by Kalaignar M. Karunanidhi`,
+      : `${pub.title.en} — ${pub.articleCount} ${unitNoun(pub, false, true)} by Kalaignar M. Karunanidhi`,
   );
   if (pub.firstEdition) {
     const when = [pub.firstEdition.monthTa, pub.firstEdition.year].filter(Boolean).join(" ");
@@ -137,6 +137,18 @@ export function readingUnitLabel(a: { number: number; numberSource: string; titl
 export function isSourceSectioned(pub: EssayPublication): boolean {
   return pub.articles.length > 0 && pub.articles.every((a) => a.numberSource === "source-section");
 }
+/** The reading-unit noun for public wording — "section(s)" / "பகுதி(கள்)" for a source-sectioned work,
+ *  "article(s)" / "கட்டுரை(கள்)" otherwise. Used so counts and labels read accurately per publication. */
+export function unitNoun(pub: EssayPublication, ta: boolean, plural: boolean): string {
+  const s = isSourceSectioned(pub);
+  if (ta) return s ? (plural ? "பகுதிகள்" : "பகுதி") : (plural ? "கட்டுரைகள்" : "கட்டுரை");
+  return s ? (plural ? "sections" : "section") : (plural ? "articles" : "article");
+}
+/** "Section N of M" / "பகுதி N / M" for a source-sectioned work; "Article N of M" / "கட்டுரை N / M" else. */
+export function readingUnitPosition(pub: EssayPublication, n: number, ta: boolean): string {
+  const noun = isSourceSectioned(pub) ? (ta ? "பகுதி" : "Section") : (ta ? "கட்டுரை" : "Article");
+  return ta ? `${noun} ${n} / ${pub.articleCount}` : `${noun} ${n} of ${pub.articleCount}`;
+}
 
 /**
  * The facts a publication's `/source` page may honestly advertise, derived from its OWN provenance
@@ -156,7 +168,8 @@ export function sourcePageFacts(prov: EssayProvenance): string[] {
   facts.push(`${s.scanTotalPages} physical scans`);
 
   const articles = s.articleMap.length;
-  facts.push(articles === 1 ? "the publication's single article" : `the ${articles}-article map`);
+  const sectioned = articles > 0 && s.articleMap.every((a) => a.numberSource === "source-section");
+  facts.push(articles === 1 ? "the publication's single article" : `the ${articles}-${sectioned ? "section" : "article"} map`);
 
   if (s.physicalVerification) facts.push(s.physicalVerification.toLowerCase());
   if (s.strictFidelityReview) facts.push("strict visual text-fidelity review");

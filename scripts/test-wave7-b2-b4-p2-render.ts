@@ -95,8 +95,10 @@ for (const slug of ESSAYS) {
     ok(!LEAK.test(rTa) && !LEAK.test(rEn), `${slug}/${a.slug}: no leak in article render`);
     // The reading title is rendered (whether a source heading or the source's own numbered-section label).
     if (a.numberSource === "source-section") {
+      // Tamil UI (the SSR default): the reader shows ONE section identity, "பகுதி N", and must NOT also
+      // render the English "Section N" label at the same time (no repeated-number title/subtitle).
       ok(rTa.includes(`பகுதி ${a.number}`), `${slug}/${a.slug}: source-section reader shows "பகுதி ${a.number}"`);
-      ok(rEn.includes(`Section ${a.number}`), `${slug}/${a.slug}: source-section reader shows "Section ${a.number}" in English`);
+      ok(!rTa.includes(`Section ${a.number}`), `${slug}/${a.slug}: source-section reader does not also show "Section ${a.number}" (single identity per language)`);
     } else {
       ok(rTa.includes(esc(String(a.titleTa))), `${slug}/${a.slug}: reading title present in render`);
     }
