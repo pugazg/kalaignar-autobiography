@@ -6,11 +6,13 @@ import SpeechReader from "@/components/SpeechReader";
 import { SPEECH_SLUGS } from "@/data/speeches";
 import type { Speech } from "@/data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
+import { WAVE7_SPEECH_SLUGS } from "@/lib/speeches-wave7-routes";
 
 // Wave 6 P4: the Wave-6 speeches are now promoted into SPEECH_SLUGS, so this union is deduplicated
 // (a `Set`) to keep exactly one prerender param per slug. WAVE6_SPEECH_SLUGS is retained as a helper
 // registry; unioning it here is harmless because the `Set` collapses the now-overlapping membership.
-const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS]));
+// Wave 7: the 100 B5a/B5b/B6 speeches join the union (deduplicated — each slug prerenders exactly once).
+const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS, ...WAVE7_SPEECH_SLUGS]));
 
 function loadSpeech(slug: string): Speech | null {
   try {

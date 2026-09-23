@@ -6,11 +6,13 @@ import SpeechSource from "@/components/SpeechSource";
 import { SPEECH_SLUGS } from "@/data/speeches";
 import type { SpeechProvenance } from "@/data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
+import { WAVE7_SPEECH_SLUGS } from "@/lib/speeches-wave7-routes";
 import { toPublicSpeechProvenance } from "@/lib/speech-public-provenance";
 
 // Wave 6 P4: SPEECH_SLUGS now includes the Wave-6 speeches; the union is deduplicated (a `Set`) so
 // each `/source` page prerenders exactly once. WAVE6_SPEECH_SLUGS is retained as a helper registry.
-const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS]));
+// Wave 7: the 100 B5a/B5b/B6 speeches join the union (deduplicated — each slug prerenders exactly once).
+const ALL_SPEECH_SLUGS: readonly string[] = Array.from(new Set<string>([...SPEECH_SLUGS, ...WAVE6_SPEECH_SLUGS, ...WAVE7_SPEECH_SLUGS]));
 
 function loadProvenance(slug: string): SpeechProvenance | null {
   try {
