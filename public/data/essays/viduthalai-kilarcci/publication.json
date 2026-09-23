@@ -35,7 +35,7 @@
    "scanRuns": [
     {
      "from": 4,
-     "to": 4
+     "to": 7
     }
    ],
    "printedPages": {
@@ -57,8 +57,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -75,8 +74,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -93,8 +91,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -111,8 +108,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -133,8 +129,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -151,8 +146,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -169,8 +163,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -187,8 +180,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -205,8 +197,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -223,8 +214,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -241,8 +231,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -259,8 +248,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -277,8 +265,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -295,8 +282,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -313,8 +299,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -331,8 +316,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -349,8 +333,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -367,8 +350,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -385,8 +367,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -411,8 +392,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -429,8 +409,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -447,8 +426,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -465,8 +443,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -483,8 +460,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      },
@@ -501,116 +477,7 @@
       "sourcePages": [
        {
         "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "Assembly provenance"
-       }
-      ],
-      "text": "Assembly provenance",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- scan 4 — `publications/viduthalai-kilarcci/pages/0004-vengaiyai-virattum-padalam-1.md`\n- scan 5 — `publications/viduthalai-kilarcci/pages/0005-vengaiyai-virattum-padalam-2.md`\n- scan 6 — `publications/viduthalai-kilarcci/pages/0006-vengaiyai-virattum-padalam-3.md`\n- scan 7 — `publications/viduthalai-kilarcci/pages/0007-vengaiyai-virattum-padalam-4.md`"
-       }
-      ],
-      "text": "- scan 4 — `publications/viduthalai-kilarcci/pages/0004-vengaiyai-virattum-padalam-1.md`\n- scan 5 — `publications/viduthalai-kilarcci/pages/0005-vengaiyai-virattum-padalam-2.md`\n- scan 6 — `publications/viduthalai-kilarcci/pages/0006-vengaiyai-virattum-padalam-3.md`\n- scan 7 — `publications/viduthalai-kilarcci/pages/0007-vengaiyai-virattum-padalam-4.md`",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P3 assembly audit"
-       }
-      ],
-      "text": "P3 assembly audit",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- source scans — **4–7 / 4/4 records**\n- page-record coverage — **4/4 PASS**\n- source-visible Roman page numerals **II–IV** are preserved in the page records and omitted from this reading-copy body\n- verified boundary-word joins applied — **2**\n  - scan 5→6: `யானை / யின்` → `யானையின்`\n  - scan 6→7: `நடைபெறு / வது` → `நடைபெறுவது`\n- omitted canonical P2 lexical body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**"
-       }
-      ],
-      "text": "- source scans — **4–7 / 4/4 records**\n- page-record coverage — **4/4 PASS**\n- source-visible Roman page numerals **II–IV** are preserved in the page records and omitted from this reading-copy body\n- verified boundary-word joins applied — **2**\n  - scan 5→6: `யானை / யின்` → `யானையின்`\n  - scan 6→7: `நடைபெறு / வது` → `நடைபெறுவது`\n- omitted canonical P2 lexical body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P5 strict visual-fidelity revalidation"
-       }
-      ],
-      "text": "P5 strict visual-fidelity revalidation",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- contributing scans **4–7 / 4/4** independently reopened against source pixels — **PASS**;\n- P5 corrections propagated from scan 5 — **3**;\n- page-boundary joins **யானை / யின்** and **நடைபெறு / வது** revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED**."
-       }
-      ],
-      "text": "- contributing scans **4–7 / 4/4** independently reopened against source pixels — **PASS**;\n- P5 corrections propagated from scan 5 — **3**;\n- page-boundary joins **யானை / யின்** and **நடைபெறு / வது** revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED**.",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 4,
-        "printed": null,
-        "fromFrontMatterRange": "4-7"
+        "printed": null
        }
       ]
      }
@@ -1096,7 +963,32 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 4,
+     "toScan": 5,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 5,
+     "toScan": 6,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 6,
+     "toScan": 7,
+     "fromPrinted": null,
+     "toPrinted": null,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 2,
@@ -1108,12 +1000,14 @@
    "scanRuns": [
     {
      "from": 8,
-     "to": 8
+     "to": 68
     }
    ],
    "printedPages": {
-    "kind": "none",
-    "note": "No printed page numeral is visible on any scan of this article; nothing is inferred."
+    "kind": "range",
+    "from": 8,
+    "to": 67,
+    "note": "scan 8 shows no printed numeral"
    },
    "tamil": {
     "blocks": [
@@ -1130,8 +1024,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1148,8 +1041,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1166,8 +1058,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1184,8 +1075,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1202,8 +1092,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1220,8 +1109,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1238,8 +1126,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1256,8 +1143,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1274,8 +1160,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1292,8 +1177,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1310,8 +1194,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1328,8 +1211,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1346,8 +1228,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1364,8 +1245,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1382,8 +1262,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1400,8 +1279,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1418,8 +1296,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1436,8 +1313,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1454,8 +1330,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1472,8 +1347,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1490,8 +1364,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1508,8 +1381,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1526,8 +1398,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1544,8 +1415,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1562,8 +1432,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1580,8 +1449,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1598,8 +1466,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1616,8 +1483,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1634,8 +1500,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1652,8 +1517,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1670,8 +1534,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1688,8 +1551,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1706,8 +1568,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1724,8 +1585,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1742,8 +1602,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1760,8 +1619,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1778,8 +1636,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1796,8 +1653,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1814,8 +1670,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1832,8 +1687,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1850,8 +1704,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1868,8 +1721,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1886,8 +1738,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1904,8 +1755,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1922,8 +1772,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1940,8 +1789,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1958,8 +1806,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1976,8 +1823,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -1994,8 +1840,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2012,8 +1857,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2030,8 +1874,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2048,8 +1891,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2066,8 +1908,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2084,8 +1925,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2102,8 +1942,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2120,8 +1959,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2138,8 +1976,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2156,8 +1993,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2174,8 +2010,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2192,8 +2027,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2210,8 +2044,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2228,8 +2061,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2246,8 +2078,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2264,8 +2095,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2282,8 +2112,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2300,8 +2129,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2318,8 +2146,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2336,8 +2163,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2354,8 +2180,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2372,8 +2197,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2390,8 +2214,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2408,8 +2231,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2426,8 +2248,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2444,8 +2265,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2462,8 +2282,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2480,8 +2299,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2498,8 +2316,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2516,8 +2333,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2534,8 +2350,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2552,8 +2367,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2570,8 +2384,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2588,8 +2401,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2606,8 +2418,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2624,8 +2435,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2642,8 +2452,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2660,8 +2469,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2678,8 +2486,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2696,8 +2503,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2714,8 +2520,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2732,8 +2537,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2750,8 +2554,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2768,8 +2571,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2786,8 +2588,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2804,8 +2605,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2822,8 +2622,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2840,8 +2639,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2858,8 +2656,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2880,8 +2677,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2902,8 +2698,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2924,8 +2719,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2942,8 +2736,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2960,8 +2753,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2978,8 +2770,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -2996,8 +2787,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3014,8 +2804,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3040,8 +2829,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3058,8 +2846,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3076,8 +2863,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3094,8 +2880,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3112,8 +2897,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3130,8 +2914,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3148,8 +2931,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3166,8 +2948,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3184,8 +2965,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3210,8 +2990,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3236,8 +3015,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3262,8 +3040,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3288,8 +3065,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3306,8 +3082,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3324,8 +3099,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3342,8 +3116,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3360,8 +3133,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3378,8 +3150,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3396,8 +3167,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3414,8 +3184,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3432,8 +3201,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3450,8 +3218,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3468,8 +3235,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3486,8 +3252,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3504,8 +3269,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3522,8 +3286,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3540,8 +3303,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3558,8 +3320,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3576,8 +3337,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3594,8 +3354,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3612,8 +3371,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3630,8 +3388,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3648,8 +3405,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3666,8 +3422,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3684,8 +3439,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3702,8 +3456,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3720,8 +3473,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3746,8 +3498,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3764,8 +3515,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3782,8 +3532,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3800,8 +3549,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3818,8 +3566,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3836,8 +3583,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3858,8 +3604,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3876,8 +3621,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3894,8 +3638,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3912,8 +3655,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3930,8 +3672,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3948,8 +3689,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3966,8 +3706,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -3984,8 +3723,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4002,8 +3740,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4020,8 +3757,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4038,8 +3774,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4056,8 +3791,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4074,8 +3808,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4092,8 +3825,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4110,8 +3842,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4128,8 +3859,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4146,8 +3876,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4164,8 +3893,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4182,8 +3910,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4200,8 +3927,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4218,8 +3944,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4236,8 +3961,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4262,8 +3986,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4280,8 +4003,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4298,8 +4020,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4316,8 +4037,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4334,8 +4054,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4352,8 +4071,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4370,8 +4088,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4388,8 +4105,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4406,8 +4122,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4424,8 +4139,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4442,8 +4156,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4460,8 +4173,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4478,8 +4190,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4496,8 +4207,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4514,8 +4224,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4532,8 +4241,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4550,8 +4258,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4568,8 +4275,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4586,8 +4292,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4604,8 +4309,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4622,8 +4326,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4640,8 +4343,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4658,8 +4360,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4676,8 +4377,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4694,8 +4394,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4712,8 +4411,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4730,8 +4428,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4748,8 +4445,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4766,8 +4462,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4784,8 +4479,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4802,8 +4496,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4820,8 +4513,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4838,8 +4530,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4856,8 +4547,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4874,8 +4564,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4892,8 +4581,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4910,8 +4598,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4928,8 +4615,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4946,8 +4632,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4964,8 +4649,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -4982,8 +4666,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5000,8 +4683,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5018,8 +4700,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5036,8 +4717,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5054,8 +4734,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5072,8 +4751,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5090,8 +4768,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5108,8 +4785,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5126,8 +4802,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5148,8 +4823,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5166,8 +4840,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5184,8 +4857,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5202,8 +4874,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5220,8 +4891,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5238,8 +4908,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5256,8 +4925,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5274,8 +4942,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5292,8 +4959,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5310,8 +4976,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5328,8 +4993,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5346,8 +5010,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5364,8 +5027,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5382,8 +5044,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5400,8 +5061,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5418,8 +5078,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5436,8 +5095,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5454,8 +5112,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5472,8 +5129,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5490,8 +5146,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5508,8 +5163,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5526,8 +5180,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5544,8 +5197,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5562,8 +5214,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5580,8 +5231,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5598,8 +5248,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5616,8 +5265,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5634,8 +5282,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5652,8 +5299,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5674,8 +5320,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5692,8 +5337,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5710,8 +5354,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5728,8 +5371,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5746,8 +5388,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5764,8 +5405,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5782,8 +5422,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5800,8 +5439,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5818,8 +5456,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5836,8 +5473,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5854,8 +5490,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5872,8 +5507,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5890,8 +5524,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5908,8 +5541,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5926,8 +5558,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5944,8 +5575,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5962,8 +5592,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5980,8 +5609,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -5998,8 +5626,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6016,8 +5643,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6034,8 +5660,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6052,8 +5677,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6070,8 +5694,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6088,8 +5711,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6106,8 +5728,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6124,8 +5745,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6142,8 +5762,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6160,8 +5779,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6178,8 +5796,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6196,8 +5813,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6214,8 +5830,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6232,8 +5847,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6250,8 +5864,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6268,8 +5881,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6286,8 +5898,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6304,8 +5915,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6322,8 +5932,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6340,8 +5949,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6358,8 +5966,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6376,8 +5983,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6394,8 +6000,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6412,8 +6017,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6430,8 +6034,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6448,8 +6051,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6466,8 +6068,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6484,8 +6085,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6502,8 +6102,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6520,8 +6119,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6538,8 +6136,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6556,8 +6153,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6574,8 +6170,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6592,8 +6187,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6610,8 +6204,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6628,8 +6221,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6646,8 +6238,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6664,8 +6255,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6682,8 +6272,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6700,8 +6289,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6718,8 +6306,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6736,8 +6323,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6754,8 +6340,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6772,8 +6357,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6790,8 +6374,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6808,8 +6391,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6826,8 +6408,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      },
@@ -6844,116 +6425,7 @@
       "sourcePages": [
        {
         "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "Assembly provenance"
-       }
-      ],
-      "text": "Assembly provenance",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- scan 8 — `publications/viduthalai-kilarcci/pages/0008-viduthalai-kilarcci-1.md`\n- scan 9 — `publications/viduthalai-kilarcci/pages/0009-viduthalai-kilarcci-2.md`\n- scan 10 — `publications/viduthalai-kilarcci/pages/0010-viduthalai-kilarcci-3.md`\n- scan 11 — `publications/viduthalai-kilarcci/pages/0011-viduthalai-kilarcci-4.md`\n- scan 12 — `publications/viduthalai-kilarcci/pages/0012-viduthalai-kilarcci-5.md`\n- scan 13 — `publications/viduthalai-kilarcci/pages/0013-viduthalai-kilarcci-6.md`\n- scan 14 — `publications/viduthalai-kilarcci/pages/0014-viduthalai-kilarcci-7.md`\n- scan 15 — `publications/viduthalai-kilarcci/pages/0015-viduthalai-kilarcci-8.md`\n- scan 16 — `publications/viduthalai-kilarcci/pages/0016-viduthalai-kilarcci-9.md`\n- scan 17 — `publications/viduthalai-kilarcci/pages/0017-viduthalai-kilarcci-10.md`\n- scan 18 — `publications/viduthalai-kilarcci/pages/0018-viduthalai-kilarcci-11.md`\n- scan 19 — `publications/viduthalai-kilarcci/pages/0019-viduthalai-kilarcci-12.md`\n- scan 20 — `publications/viduthalai-kilarcci/pages/0020-viduthalai-kilarcci-13.md`\n- scan 21 — `publications/viduthalai-kilarcci/pages/0021-viduthalai-kilarcci-14.md`\n- scan 22 — `publications/viduthalai-kilarcci/pages/0022-viduthalai-kilarcci-15.md`\n- scan 23 — `publications/viduthalai-kilarcci/pages/0023-viduthalai-kilarcci-16.md`\n- scan 24 — `publications/viduthalai-kilarcci/pages/0024-viduthalai-kilarcci-17.md`\n- scan 25 — `publications/viduthalai-kilarcci/pages/0025-viduthalai-kilarcci-18.md`\n- scan 26 — `publications/viduthalai-kilarcci/pages/0026-viduthalai-kilarcci-19.md`\n- scan 27 — `publications/viduthalai-kilarcci/pages/0027-viduthalai-kilarcci-20.md`\n- scan 28 — `publications/viduthalai-kilarcci/pages/0028-viduthalai-kilarcci-21.md`\n- scan 29 — `publications/viduthalai-kilarcci/pages/0029-viduthalai-kilarcci-22.md`\n- scan 30 — `publications/viduthalai-kilarcci/pages/0030-viduthalai-kilarcci-23.md`\n- scan 31 — `publications/viduthalai-kilarcci/pages/0031-viduthalai-kilarcci-24.md`\n- scan 32 — `publications/viduthalai-kilarcci/pages/0032-viduthalai-kilarcci-25.md`\n- scan 33 — `publications/viduthalai-kilarcci/pages/0033-viduthalai-kilarcci-26.md`\n- scan 34 — `publications/viduthalai-kilarcci/pages/0034-viduthalai-kilarcci-27.md`\n- scan 35 — `publications/viduthalai-kilarcci/pages/0035-viduthalai-kilarcci-28.md`\n- scan 36 — `publications/viduthalai-kilarcci/pages/0036-viduthalai-kilarcci-29.md`\n- scan 37 — `publications/viduthalai-kilarcci/pages/0037-viduthalai-kilarcci-30.md`\n- scan 38 — `publications/viduthalai-kilarcci/pages/0038-viduthalai-kilarcci-31.md`\n- scan 39 — `publications/viduthalai-kilarcci/pages/0039-viduthalai-kilarcci-32.md`\n- scan 40 — `publications/viduthalai-kilarcci/pages/0040-viduthalai-kilarcci-33.md`\n- scan 41 — `publications/viduthalai-kilarcci/pages/0041-viduthalai-kilarcci-34.md`\n- scan 42 — `publications/viduthalai-kilarcci/pages/0042-viduthalai-kilarcci-35.md`\n- scan 43 — `publications/viduthalai-kilarcci/pages/0043-viduthalai-kilarcci-36.md`\n- scan 44 — `publications/viduthalai-kilarcci/pages/0044-viduthalai-kilarcci-37.md`\n- scan 45 — `publications/viduthalai-kilarcci/pages/0045-viduthalai-kilarcci-38.md`\n- scan 46 — `publications/viduthalai-kilarcci/pages/0046-viduthalai-kilarcci-39.md`\n- scan 47 — `publications/viduthalai-kilarcci/pages/0047-viduthalai-kilarcci-40.md`\n- scan 48 — `publications/viduthalai-kilarcci/pages/0048-viduthalai-kilarcci-41.md`\n- scan 49 — `publications/viduthalai-kilarcci/pages/0049-viduthalai-kilarcci-42.md`\n- scan 50 — `publications/viduthalai-kilarcci/pages/0050-viduthalai-kilarcci-43.md`\n- scan 51 — `publications/viduthalai-kilarcci/pages/0051-viduthalai-kilarcci-44.md`\n- scan 52 — `publications/viduthalai-kilarcci/pages/0052-viduthalai-kilarcci-45.md`\n- scan 53 — `publications/viduthalai-kilarcci/pages/0053-viduthalai-kilarcci-46.md`\n- scan 54 — `publications/viduthalai-kilarcci/pages/0054-viduthalai-kilarcci-47.md`\n- scan 55 — `publications/viduthalai-kilarcci/pages/0055-viduthalai-kilarcci-48.md`\n- scan 56 — `publications/viduthalai-kilarcci/pages/0056-viduthalai-kilarcci-49.md`\n- scan 57 — `publications/viduthalai-kilarcci/pages/0057-viduthalai-kilarcci-50.md`\n- scan 58 — `publications/viduthalai-kilarcci/pages/0058-viduthalai-kilarcci-51.md`\n- scan 59 — `publications/viduthalai-kilarcci/pages/0059-viduthalai-kilarcci-52.md`\n- scan 60 — `publications/viduthalai-kilarcci/pages/0060-viduthalai-kilarcci-53.md`\n- scan 61 — `publications/viduthalai-kilarcci/pages/0061-viduthalai-kilarcci-54.md`\n- scan 62 — `publications/viduthalai-kilarcci/pages/0062-viduthalai-kilarcci-55.md`\n- scan 63 — `publications/viduthalai-kilarcci/pages/0063-viduthalai-kilarcci-56.md`\n- scan 64 — `publications/viduthalai-kilarcci/pages/0064-viduthalai-kilarcci-57.md`\n- scan 65 — `publications/viduthalai-kilarcci/pages/0065-viduthalai-kilarcci-58.md`\n- scan 66 — `publications/viduthalai-kilarcci/pages/0066-viduthalai-kilarcci-59.md`\n- scan 67 — `publications/viduthalai-kilarcci/pages/0067-viduthalai-kilarcci-60.md`\n- scan 68 — `publications/viduthalai-kilarcci/pages/0068-viduthalai-kilarcci-61.md`"
-       }
-      ],
-      "text": "- scan 8 — `publications/viduthalai-kilarcci/pages/0008-viduthalai-kilarcci-1.md`\n- scan 9 — `publications/viduthalai-kilarcci/pages/0009-viduthalai-kilarcci-2.md`\n- scan 10 — `publications/viduthalai-kilarcci/pages/0010-viduthalai-kilarcci-3.md`\n- scan 11 — `publications/viduthalai-kilarcci/pages/0011-viduthalai-kilarcci-4.md`\n- scan 12 — `publications/viduthalai-kilarcci/pages/0012-viduthalai-kilarcci-5.md`\n- scan 13 — `publications/viduthalai-kilarcci/pages/0013-viduthalai-kilarcci-6.md`\n- scan 14 — `publications/viduthalai-kilarcci/pages/0014-viduthalai-kilarcci-7.md`\n- scan 15 — `publications/viduthalai-kilarcci/pages/0015-viduthalai-kilarcci-8.md`\n- scan 16 — `publications/viduthalai-kilarcci/pages/0016-viduthalai-kilarcci-9.md`\n- scan 17 — `publications/viduthalai-kilarcci/pages/0017-viduthalai-kilarcci-10.md`\n- scan 18 — `publications/viduthalai-kilarcci/pages/0018-viduthalai-kilarcci-11.md`\n- scan 19 — `publications/viduthalai-kilarcci/pages/0019-viduthalai-kilarcci-12.md`\n- scan 20 — `publications/viduthalai-kilarcci/pages/0020-viduthalai-kilarcci-13.md`\n- scan 21 — `publications/viduthalai-kilarcci/pages/0021-viduthalai-kilarcci-14.md`\n- scan 22 — `publications/viduthalai-kilarcci/pages/0022-viduthalai-kilarcci-15.md`\n- scan 23 — `publications/viduthalai-kilarcci/pages/0023-viduthalai-kilarcci-16.md`\n- scan 24 — `publications/viduthalai-kilarcci/pages/0024-viduthalai-kilarcci-17.md`\n- scan 25 — `publications/viduthalai-kilarcci/pages/0025-viduthalai-kilarcci-18.md`\n- scan 26 — `publications/viduthalai-kilarcci/pages/0026-viduthalai-kilarcci-19.md`\n- scan 27 — `publications/viduthalai-kilarcci/pages/0027-viduthalai-kilarcci-20.md`\n- scan 28 — `publications/viduthalai-kilarcci/pages/0028-viduthalai-kilarcci-21.md`\n- scan 29 — `publications/viduthalai-kilarcci/pages/0029-viduthalai-kilarcci-22.md`\n- scan 30 — `publications/viduthalai-kilarcci/pages/0030-viduthalai-kilarcci-23.md`\n- scan 31 — `publications/viduthalai-kilarcci/pages/0031-viduthalai-kilarcci-24.md`\n- scan 32 — `publications/viduthalai-kilarcci/pages/0032-viduthalai-kilarcci-25.md`\n- scan 33 — `publications/viduthalai-kilarcci/pages/0033-viduthalai-kilarcci-26.md`\n- scan 34 — `publications/viduthalai-kilarcci/pages/0034-viduthalai-kilarcci-27.md`\n- scan 35 — `publications/viduthalai-kilarcci/pages/0035-viduthalai-kilarcci-28.md`\n- scan 36 — `publications/viduthalai-kilarcci/pages/0036-viduthalai-kilarcci-29.md`\n- scan 37 — `publications/viduthalai-kilarcci/pages/0037-viduthalai-kilarcci-30.md`\n- scan 38 — `publications/viduthalai-kilarcci/pages/0038-viduthalai-kilarcci-31.md`\n- scan 39 — `publications/viduthalai-kilarcci/pages/0039-viduthalai-kilarcci-32.md`\n- scan 40 — `publications/viduthalai-kilarcci/pages/0040-viduthalai-kilarcci-33.md`\n- scan 41 — `publications/viduthalai-kilarcci/pages/0041-viduthalai-kilarcci-34.md`\n- scan 42 — `publications/viduthalai-kilarcci/pages/0042-viduthalai-kilarcci-35.md`\n- scan 43 — `publications/viduthalai-kilarcci/pages/0043-viduthalai-kilarcci-36.md`\n- scan 44 — `publications/viduthalai-kilarcci/pages/0044-viduthalai-kilarcci-37.md`\n- scan 45 — `publications/viduthalai-kilarcci/pages/0045-viduthalai-kilarcci-38.md`\n- scan 46 — `publications/viduthalai-kilarcci/pages/0046-viduthalai-kilarcci-39.md`\n- scan 47 — `publications/viduthalai-kilarcci/pages/0047-viduthalai-kilarcci-40.md`\n- scan 48 — `publications/viduthalai-kilarcci/pages/0048-viduthalai-kilarcci-41.md`\n- scan 49 — `publications/viduthalai-kilarcci/pages/0049-viduthalai-kilarcci-42.md`\n- scan 50 — `publications/viduthalai-kilarcci/pages/0050-viduthalai-kilarcci-43.md`\n- scan 51 — `publications/viduthalai-kilarcci/pages/0051-viduthalai-kilarcci-44.md`\n- scan 52 — `publications/viduthalai-kilarcci/pages/0052-viduthalai-kilarcci-45.md`\n- scan 53 — `publications/viduthalai-kilarcci/pages/0053-viduthalai-kilarcci-46.md`\n- scan 54 — `publications/viduthalai-kilarcci/pages/0054-viduthalai-kilarcci-47.md`\n- scan 55 — `publications/viduthalai-kilarcci/pages/0055-viduthalai-kilarcci-48.md`\n- scan 56 — `publications/viduthalai-kilarcci/pages/0056-viduthalai-kilarcci-49.md`\n- scan 57 — `publications/viduthalai-kilarcci/pages/0057-viduthalai-kilarcci-50.md`\n- scan 58 — `publications/viduthalai-kilarcci/pages/0058-viduthalai-kilarcci-51.md`\n- scan 59 — `publications/viduthalai-kilarcci/pages/0059-viduthalai-kilarcci-52.md`\n- scan 60 — `publications/viduthalai-kilarcci/pages/0060-viduthalai-kilarcci-53.md`\n- scan 61 — `publications/viduthalai-kilarcci/pages/0061-viduthalai-kilarcci-54.md`\n- scan 62 — `publications/viduthalai-kilarcci/pages/0062-viduthalai-kilarcci-55.md`\n- scan 63 — `publications/viduthalai-kilarcci/pages/0063-viduthalai-kilarcci-56.md`\n- scan 64 — `publications/viduthalai-kilarcci/pages/0064-viduthalai-kilarcci-57.md`\n- scan 65 — `publications/viduthalai-kilarcci/pages/0065-viduthalai-kilarcci-58.md`\n- scan 66 — `publications/viduthalai-kilarcci/pages/0066-viduthalai-kilarcci-59.md`\n- scan 67 — `publications/viduthalai-kilarcci/pages/0067-viduthalai-kilarcci-60.md`\n- scan 68 — `publications/viduthalai-kilarcci/pages/0068-viduthalai-kilarcci-61.md`",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P3 assembly audit"
-       }
-      ],
-      "text": "P3 assembly audit",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- source scans — **8–68 / 61/61 records**\n- page-record coverage — **61/61 PASS**\n- verified boundary-word joins applied — **12**\n  - scan 8→9: `தெரிந் / தும்` → `தெரிந்தும்`\n  - scan 10→11: `விடு / தலைத்` → `விடுதலைத்`\n  - scan 11→12: `கும்பல் / களை` → `கும்பல்களை`\n  - scan 14→15: `முறியடித்துவிடலா / மென்று` → `முறியடித்துவிடலாமென்று`\n  - scan 20→21: `இரண்டா / யிரம்` → `இரண்டாயிரம்`\n  - scan 28→29: `சிந்தித்திருக்கமாட்டார் / களா` → `சிந்தித்திருக்கமாட்டார்களா`\n  - scan 34→35: `நாடோடி / களாய்த்` → `நாடோடிகளாய்த்`\n  - scan 43→44: `போக் / கிலே` → `போக்கிலே`\n  - scan 48→49: `போதை / களிலிருந்து` → `போதைகளிலிருந்து`\n  - scan 53→54: `அழைத்துச் செல்லப் / படுவான்` → `அழைத்துச் செல்லப்படுவான்`\n  - scan 57→58: `ஆண் / டவன்` → `ஆண்டவன்`\n  - scan 64→65: `நடத்தியவர் / களை` → `நடத்தியவர்களை`\n- non-word physical continuations (for example `பிரஞ்சுக் / காலனி`, `பிரிட்டிஷ் / மன்னன்`, `நாடக / மேடை`) retained as normal lexical spacing\n- omitted canonical P2 lexical body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**"
-       }
-      ],
-      "text": "- source scans — **8–68 / 61/61 records**\n- page-record coverage — **61/61 PASS**\n- verified boundary-word joins applied — **12**\n  - scan 8→9: `தெரிந் / தும்` → `தெரிந்தும்`\n  - scan 10→11: `விடு / தலைத்` → `விடுதலைத்`\n  - scan 11→12: `கும்பல் / களை` → `கும்பல்களை`\n  - scan 14→15: `முறியடித்துவிடலா / மென்று` → `முறியடித்துவிடலாமென்று`\n  - scan 20→21: `இரண்டா / யிரம்` → `இரண்டாயிரம்`\n  - scan 28→29: `சிந்தித்திருக்கமாட்டார் / களா` → `சிந்தித்திருக்கமாட்டார்களா`\n  - scan 34→35: `நாடோடி / களாய்த்` → `நாடோடிகளாய்த்`\n  - scan 43→44: `போக் / கிலே` → `போக்கிலே`\n  - scan 48→49: `போதை / களிலிருந்து` → `போதைகளிலிருந்து`\n  - scan 53→54: `அழைத்துச் செல்லப் / படுவான்` → `அழைத்துச் செல்லப்படுவான்`\n  - scan 57→58: `ஆண் / டவன்` → `ஆண்டவன்`\n  - scan 64→65: `நடத்தியவர் / களை` → `நடத்தியவர்களை`\n- non-word physical continuations (for example `பிரஞ்சுக் / காலனி`, `பிரிட்டிஷ் / மன்னன்`, `நாடக / மேடை`) retained as normal lexical spacing\n- omitted canonical P2 lexical body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P5 strict visual review"
-       }
-      ],
-      "text": "P5 strict visual review",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- every contributing physical source scan **8–68 / 61** was independently reopened under P5 — **PASS**;\n- all P5 source corrections through scan 60 remain propagated; scans **61–68** required **0 canonical body-text corrections**;\n- physical continuations **60→61 `நாடக / மேடை`** and **64→65 `நடத்தியவர் / களை`** were revalidated;\n- scan 68 terminal **`இதுதான் வேறுபாடு. தேவையான துங்கூட!`** and the closing star were revalidated;\n- current article body was reconstructed against the canonical page layer — **PASS**;\n- unresolved P5 fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN**."
-       }
-      ],
-      "text": "- every contributing physical source scan **8–68 / 61** was independently reopened under P5 — **PASS**;\n- all P5 source corrections through scan 60 remain propagated; scans **61–68** required **0 canonical body-text corrections**;\n- physical continuations **60→61 `நாடக / மேடை`** and **64→65 `நடத்தியவர் / களை`** were revalidated;\n- scan 68 terminal **`இதுதான் வேறுபாடு. தேவையான துங்கூட!`** and the closing star were revalidated;\n- current article body was reconstructed against the canonical page layer — **PASS**;\n- unresolved P5 fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN**.",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 8,
-        "printed": null,
-        "fromFrontMatterRange": "8-68"
+        "printed": null
        }
       ]
      }
@@ -12997,7 +12469,488 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 8,
+     "toScan": 9,
+     "fromPrinted": null,
+     "toPrinted": 8,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 9,
+     "toScan": 10,
+     "fromPrinted": 8,
+     "toPrinted": 9,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 10,
+     "toScan": 11,
+     "fromPrinted": 9,
+     "toPrinted": 10,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 11,
+     "toScan": 12,
+     "fromPrinted": 10,
+     "toPrinted": 11,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 12,
+     "toScan": 13,
+     "fromPrinted": 11,
+     "toPrinted": 12,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 13,
+     "toScan": 14,
+     "fromPrinted": 12,
+     "toPrinted": 13,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 14,
+     "toScan": 15,
+     "fromPrinted": 13,
+     "toPrinted": 14,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 15,
+     "toScan": 16,
+     "fromPrinted": 14,
+     "toPrinted": 15,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 16,
+     "toScan": 17,
+     "fromPrinted": 15,
+     "toPrinted": 16,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 17,
+     "toScan": 18,
+     "fromPrinted": 16,
+     "toPrinted": 17,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 18,
+     "toScan": 19,
+     "fromPrinted": 17,
+     "toPrinted": 18,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 19,
+     "toScan": 20,
+     "fromPrinted": 18,
+     "toPrinted": 19,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 20,
+     "toScan": 21,
+     "fromPrinted": 19,
+     "toPrinted": 20,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 21,
+     "toScan": 22,
+     "fromPrinted": 20,
+     "toPrinted": 21,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 22,
+     "toScan": 23,
+     "fromPrinted": 21,
+     "toPrinted": 22,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 23,
+     "toScan": 24,
+     "fromPrinted": 22,
+     "toPrinted": 23,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 24,
+     "toScan": 25,
+     "fromPrinted": 23,
+     "toPrinted": 24,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 25,
+     "toScan": 26,
+     "fromPrinted": 24,
+     "toPrinted": 25,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 26,
+     "toScan": 27,
+     "fromPrinted": 25,
+     "toPrinted": 26,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 27,
+     "toScan": 28,
+     "fromPrinted": 26,
+     "toPrinted": 27,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 28,
+     "toScan": 29,
+     "fromPrinted": 27,
+     "toPrinted": 28,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 29,
+     "toScan": 30,
+     "fromPrinted": 28,
+     "toPrinted": 29,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 30,
+     "toScan": 31,
+     "fromPrinted": 29,
+     "toPrinted": 30,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 31,
+     "toScan": 32,
+     "fromPrinted": 30,
+     "toPrinted": 31,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 32,
+     "toScan": 33,
+     "fromPrinted": 31,
+     "toPrinted": 32,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 33,
+     "toScan": 34,
+     "fromPrinted": 32,
+     "toPrinted": 33,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 34,
+     "toScan": 35,
+     "fromPrinted": 33,
+     "toPrinted": 34,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 35,
+     "toScan": 36,
+     "fromPrinted": 34,
+     "toPrinted": 35,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 36,
+     "toScan": 37,
+     "fromPrinted": 35,
+     "toPrinted": 36,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 37,
+     "toScan": 38,
+     "fromPrinted": 36,
+     "toPrinted": 37,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 38,
+     "toScan": 39,
+     "fromPrinted": 37,
+     "toPrinted": 38,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 39,
+     "toScan": 40,
+     "fromPrinted": 38,
+     "toPrinted": 39,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 40,
+     "toScan": 41,
+     "fromPrinted": 39,
+     "toPrinted": 40,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 41,
+     "toScan": 42,
+     "fromPrinted": 40,
+     "toPrinted": 41,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 42,
+     "toScan": 43,
+     "fromPrinted": 41,
+     "toPrinted": 42,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 43,
+     "toScan": 44,
+     "fromPrinted": 42,
+     "toPrinted": 43,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 44,
+     "toScan": 45,
+     "fromPrinted": 43,
+     "toPrinted": 44,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 45,
+     "toScan": 46,
+     "fromPrinted": 44,
+     "toPrinted": 45,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 46,
+     "toScan": 47,
+     "fromPrinted": 45,
+     "toPrinted": 46,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 47,
+     "toScan": 48,
+     "fromPrinted": 46,
+     "toPrinted": 47,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 48,
+     "toScan": 49,
+     "fromPrinted": 47,
+     "toPrinted": 48,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 49,
+     "toScan": 50,
+     "fromPrinted": 48,
+     "toPrinted": 49,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 50,
+     "toScan": 51,
+     "fromPrinted": 49,
+     "toPrinted": 50,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 51,
+     "toScan": 52,
+     "fromPrinted": 50,
+     "toPrinted": 51,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 52,
+     "toScan": 53,
+     "fromPrinted": 51,
+     "toPrinted": 52,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 53,
+     "toScan": 54,
+     "fromPrinted": 52,
+     "toPrinted": 53,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 54,
+     "toScan": 55,
+     "fromPrinted": 53,
+     "toPrinted": 54,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 55,
+     "toScan": 56,
+     "fromPrinted": 54,
+     "toPrinted": 55,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 56,
+     "toScan": 57,
+     "fromPrinted": 55,
+     "toPrinted": 56,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 57,
+     "toScan": 58,
+     "fromPrinted": 56,
+     "toPrinted": 57,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 58,
+     "toScan": 59,
+     "fromPrinted": 57,
+     "toPrinted": 58,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 59,
+     "toScan": 60,
+     "fromPrinted": 58,
+     "toPrinted": 59,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 60,
+     "toScan": 61,
+     "fromPrinted": 59,
+     "toPrinted": 60,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 61,
+     "toScan": 62,
+     "fromPrinted": 60,
+     "toPrinted": 61,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 62,
+     "toScan": 63,
+     "fromPrinted": 61,
+     "toPrinted": 62,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 63,
+     "toScan": 64,
+     "fromPrinted": 62,
+     "toPrinted": 63,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 64,
+     "toScan": 65,
+     "fromPrinted": 63,
+     "toPrinted": 64,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 65,
+     "toScan": 66,
+     "fromPrinted": 64,
+     "toPrinted": 65,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 66,
+     "toScan": 67,
+     "fromPrinted": 65,
+     "toPrinted": 66,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 67,
+     "toScan": 68,
+     "fromPrinted": 66,
+     "toPrinted": 67,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   }
  ],
  "articleCount": 2

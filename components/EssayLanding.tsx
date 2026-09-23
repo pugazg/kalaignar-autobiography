@@ -5,7 +5,7 @@ import { ArrowLeft, BookOpen, Home, Info, Newspaper } from "lucide-react";
 import type { EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
 import { Fragment } from "react";
-import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel } from "@/lib/essay-source-facts";
+import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel, isSourceSectioned, readingUnitLabel, unitNoun } from "@/lib/essay-source-facts";
 
 // The publication landing: title, author, source-edition context and the source-numbered table of
 // contents. The publication is ONE catalog work; its 14 articles are reading units inside it.
@@ -13,6 +13,9 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const first = pub.articles[0];
+  // A source-section work (no printed contents page, no descriptive titles) lists its reading units as
+  // "Section N" / "பகுதி N" — the source-visible number ONCE, never a bare-numeral title row.
+  const sectioned = isSourceSectioned(pub);
 
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
@@ -70,14 +73,14 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
         <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
           {pub.articleCount === 1
-            ? (ta ? "கட்டுரை" : "The essay")
+            ? (sectioned ? (ta ? "பகுதி" : "The section") : (ta ? "கட்டுரை" : "The essay"))
             : ta
-              ? `பொருளடக்கம் — ${pub.articleCount} கட்டுரைகள்`
-              : `Contents — ${pub.articleCount} articles`}
+              ? `பொருளடக்கம் — ${pub.articleCount} ${unitNoun(pub, true, true)}`
+              : `Contents — ${pub.articleCount} ${unitNoun(pub, false, true)}`}
         </h2>
-        {/* The ordinals shown here are printed contents-page numbers for one publication and the
-            archive's reading ordinals for the Wave-3 pamphlets, which print no contents page. The
-            note says which, so an archive ordinal is never read as a printed one. */}
+        {/* The ordinals shown here are: printed contents-page numbers (one publication), source-visible
+            section numbers (a source-sectioned work with no contents page), or the archive's reading
+            ordinals (Wave-3 pamphlets). The note states which, so the number is never mislabelled. */}
         <p className="mt-1 text-[11px] text-ink/45 dark:text-night-text/45">{articleNumberingNote(pub, ta)}</p>
         <ol className="mt-3">
           {pub.articles.map((a) => (
@@ -86,12 +89,27 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
                 href={`/essays/${pub.slug}/articles/${a.slug}`}
                 className="focus-ring group flex gap-3 rounded py-3 hover:text-marina dark:hover:text-marina-light"
               >
-                <span className="w-6 shrink-0 pt-0.5 text-right text-xs tabular-nums text-ink/40 dark:text-night-text/40">{a.number}</span>
+                {/* For a source-sectioned work the number is carried once, inside the "Section N" label; the
+                    margin ordinal is suppressed so the source-visible number is never shown twice. */}
+                <span className="w-6 shrink-0 pt-0.5 text-right text-xs tabular-nums text-ink/40 dark:text-night-text/40">{sectioned ? "" : a.number}</span>
                 <span className="min-w-0">
+                  {sectioned ? (
+                    // ONE label in the active UI language — the source supplies a single numbered identity and
+                    // no descriptive titles, so "பகுதி N" and "Section N" together would repeat the number.
+                    <span
+                      className={`block text-[0.98rem] leading-snug text-ink/90 dark:text-night-text/90${ta ? " font-tamil" : ""}`}
+                      lang={ta ? "ta" : "en"}
+                    >
+                      {readingUnitLabel(a, ta)}
+                    </span>
+                  ) : (
+                  <>
                   <span className="block font-tamil text-[0.98rem] leading-snug text-ink/90 dark:text-night-text/90" lang="ta">
                     {a.titleTa}
                   </span>
                   <span className="mt-0.5 block text-sm text-ink/55 dark:text-night-text/55">{a.titleEn}</span>
+                  </>
+                  )}
                   {/* Printed pagination where the source shows it; the scan coverage otherwise.
                       Never an empty or fabricated range. */}
                   <span className="mt-0.5 block text-[11px] text-ink/40 dark:text-night-text/40">

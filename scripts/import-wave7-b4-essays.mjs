@@ -101,6 +101,10 @@ const WORKS = [
   },
   {
     slug: "pesum-kalai-valarppom", tree: "976d88a074945dd7e6000c441a4e0d6c994590cc",
+    // The supplied witness prints NO contents page; the source shows numbered section openings 1–19 with no
+    // descriptive titles (indexes/contents.md). Model these as source-visible numbered SECTIONS, not archive
+    // reading ordinals and not descriptively-titled articles.
+    numberModel: "source-section",
     titleTa: "பேசும் கலை வளர்ப்போம்", titleEn: "Let Us Cultivate the Art of Speaking", subtype: "essay-collection",
     scanFilename: "TVA_BOK_0063826_பேசும்கலை_வளர்ப்போம்.pdf", scanSha256: "73972aca1b615a7cbe9d5fe4361d2312b9d4e47f9ee022b2450572807c88bbf7",
     scanBytes: 105698402, scanTotal: 82, acceptedArticleStatus: ["source-complete"], articleCount: 19,
@@ -127,7 +131,12 @@ if (WORKS.length !== 6) die(`the authorized batch is exactly 6 publications; got
 // ── SHARED PARSING CORE ─────────────────────────────────────────────────────────────────────────────
 const OPEN_Q = "“";
 const CLOSE_Q = "”";
-const NON_BODY_HEADING = /^##\s+(Source note|Assembly note|Editorial \/ source note|Translation note|Source \/ assembly note)\s*$/;
+// Non-body headings: editorial/source notes AND the archive's own project-audit sections (assembly
+// provenance + the P-phase audit/revalidation trailers). These are archive/project metadata, never
+// Kalaignar's authored text, and always appear as an end-of-file trailer after the literary body. Matching
+// them here keeps them out of the public reading body. The forms are English project vocab and can never
+// collide with a Tamil literary heading.
+const NON_BODY_HEADING = /^##\s+(Source note|Assembly note|Editorial \/ source note|Translation note|Source \/ assembly note|Assembly provenance|P\d+ assembly audit|P\d+ strict visual review|P\d+ strict visual[- ]fidelity revalidation)\s*$/;
 const NOT_AUTHORED = "not part of Kalaignar's text";
 const ATTRIBUTION = /^\*\*\(.*\)\*\*$/;
 
@@ -136,10 +145,14 @@ function parseMarker(line) {
   const body = /^<!--\s*([\s\S]+?)\s*-->$/.exec(line.trim());
   if (!body) return null;
   let inner = body[1].replace(/^Tamil source:\s*/i, "");
-  let m = /^scan\s+(\d+)\b/.exec(inner) || /^மூல ஸ்கேன் பக்கம்:\s*(\d+)/.exec(inner);
+  // Scan-marker forms the archive uses, Tamil and English: `scan 6`, `scan: 6`, `source scan: 6`,
+  // `மூல ஸ்கேன் பக்கம்: 6`. The `source scan:` / colon form is used by pesum-kalai-valarppom and
+  // meesai-mulaiththa-vayathil; without it their markers were misread as plain comments (annotations),
+  // collapsing each section's recorded coverage to a single scan. Anything else is a comment → annotation.
+  let m = /^(?:source\s+)?scan:?\s+(\d+)\b/.exec(inner) || /^மூல ஸ்கேன் பக்கம்:\s*(\d+)/.exec(inner);
   if (!m) return null; // a standalone comment that is not a scan marker → annotation
   const scan = Number(m[1]);
-  const pm = /printed(?:\s*page)?\s+(\d+)/.exec(inner); // "printed 6" / "printed page 6"
+  const pm = /printed(?:\s*page)?:?\s+(\d+)/.exec(inner); // "printed 6" / "printed page 6" / "printed page: 6"
   return { scan, printed: pm ? Number(pm[1]) : null };
 }
 const isAnnotation = (line) => /^<!--[\s\S]*-->$/.test(line.trim());
@@ -189,24 +202,50 @@ function parseArticle(text, english) {
   for (const raw of body.split("\n")) { const mk = parseMarker(raw.trim()); if (mk) { page = { scan: mk.scan, printed: mk.printed }; break; } }
   // Some publications (e.g. thudikkum-ilamai, viduthalai-kilarcci) carry NO inline scan markers — their
   // scan provenance is declared at ARTICLE LEVEL in the front matter (`source_scans` / `scan_pages`, e.g.
-  // "5-12"). Fall back to the range's first scan as the article's seed page. Inline markers are provenance
-  // only; the reading text is parsed from the body verbatim either way, so this changes no literary byte.
+  // "5-12"). Seed from the FULL declared span (not just its first scan), so the recorded coverage is the
+  // whole article, not a single page. Inline markers are provenance only; the reading text is parsed from
+  // the body verbatim either way, so this changes no literary byte.
   if (!page) {
-    const rangeStr = fm.source_scans || fm.scan_pages || "";
-    const rm = /(\d+)/.exec(String(rangeStr));
-    if (rm) page = { scan: Number(rm[1]), printed: null, fromFrontMatterRange: String(rangeStr).replace(/^"|"$/g, "") };
+    const rangeStr = String(fm.source_scans || fm.scan_pages || "").replace(/^"|"$/g, "");
+    const rm = /(\d+)/.exec(rangeStr);
+    if (rm) page = { scan: Number(rm[1]), printed: null, fromFrontMatterRange: rangeStr };
   }
   if (!page) die("article assembly carries no scan marker and no front-matter source_scans/scan_pages range");
   const noteScan = (p) => { if (!pageSeq.length || pageSeq[pageSeq.length - 1].scan !== p.scan) pageSeq.push({ scan: p.scan, printed: p.printed }); };
   noteScan(page);
+  // NOTE: the full declared span is unioned into pageSeq after the parse loop below (see the coverage
+  // block), which covers both no-marker articles and articles whose markers are mid-paragraph.
 
-  let buf = [], bufPage = null, inNonBody = false, quoteBuf = [], titleOpen = false;
-  const flushPara = () => { if (!buf.length) return; units.push({ kind: "text", text: buf.join("\n"), page: bufPage }); buf = []; bufPage = null; };
+  let buf = [], bufPage = null, bufPages = [], inNonBody = false, quoteBuf = [], titleOpen = false;
+  // Every source page a paragraph occupies, in reading order (a paragraph can straddle a physical page
+  // boundary — see consumeInline). The block emitted for the paragraph records ALL of them.
+  const pushBufPage = (p) => { if (!bufPages.length || bufPages[bufPages.length - 1].scan !== p.scan) bufPages.push({ scan: p.scan, printed: p.printed }); };
+  const flushPara = () => { if (!buf.length) return; units.push({ kind: "text", text: buf.join("\n"), page: bufPage, pages: bufPages.length ? bufPages : [bufPage] }); buf = []; bufPage = null; bufPages = []; };
   const flushQuote = () => {
     if (!quoteBuf.length) return;
     const t = quoteBuf.join("\n");
     if (t.includes(NOT_AUTHORED)) notes.push(t); else units.push({ kind: "blockquote", text: t, page: bufPage ?? page });
     quoteBuf = [];
+  };
+  // Consume every INLINE HTML comment inside a source line. A scan marker (`<!-- scan N -->`,
+  // `<!-- source scan: N / printed page: M -->`, `<!-- Tamil source: scan N / printed M -->`, the Tamil
+  // form, …) advances the active source page and is recorded via onPage; a SOURCE DAMAGE note is routed to
+  // the damage channel; any other project/editorial comment is dropped. In every case the comment SYNTAX
+  // is removed from the emitted literary text, joining the surrounding characters EXACTLY — a boundary
+  // marker embedded inside a word rejoins the word (`பிரச்<!-- scan 9 -->சினை` → `பிரச்சினை`). Returns the
+  // cleaned literary text; never leaves `<!--`/`-->` in the reading copy.
+  const consumeInline = (text, onPage) => {
+    const re = /<!--[\s\S]*?-->/g;
+    let out = "", last = 0, m;
+    while ((m = re.exec(text)) !== null) {
+      out += text.slice(last, m.index);
+      last = m.index + m[0].length;
+      const mk = parseMarker(m[0]);
+      if (mk) { page = { scan: mk.scan, printed: mk.printed }; noteScan(page); onPage(page); }
+      else if (isDamageNote(m[0])) damage.push(m[0].replace(/^<!--\s*/, "").replace(/\s*-->$/, ""));
+      // else: a non-scan project/editorial comment → dropped from the literary text
+    }
+    return out + text.slice(last);
   };
 
   for (const raw of body.split("\n")) {
@@ -219,7 +258,7 @@ function parseArticle(text, english) {
     if (mk) { flushPara(); flushQuote(); page = { scan: mk.scan, printed: mk.printed }; noteScan(page); continue; }
     if (isAnnotation(t)) { flushPara(); flushQuote(); if (isDamageNote(t)) damage.push(t.replace(/^<!--\s*/, "").replace(/\s*-->$/, "")); continue; }
     if (t === "") { flushPara(); flushQuote(); continue; }
-    if (t.startsWith("> ")) { if (buf.length) flushPara(); quoteBuf.push(t.slice(2)); continue; }
+    if (t.startsWith("> ")) { if (buf.length) flushPara(); quoteBuf.push(consumeInline(t.slice(2), () => {})); continue; }
     if (quoteBuf.length) flushQuote();
     if (/^#{1,6}\s/.test(t)) {
       flushPara();
@@ -230,10 +269,30 @@ function parseArticle(text, english) {
       continue;
     }
     if (titleOpen) { const title = units[units.length - 1]; title.text = `${title.text} ${t}`.replace(/\s+/g, " ").trim(); titleOpen = false; continue; }
-    if (!buf.length) bufPage = page;
-    buf.push(line);
+    // Paragraph body. Seed the paragraph's page list with the page active at its start, then consume any
+    // inline markers (which advance the page mid-paragraph and extend the list). The comment syntax is
+    // stripped from the emitted text; the block will record every contributing source page.
+    if (!buf.length) { bufPage = page; bufPages = [{ scan: page.scan, printed: page.printed }]; }
+    buf.push(consumeInline(line, pushBufPage));
   }
   flushPara(); flushQuote();
+  // Authoritative COVERAGE = the front-matter declared span. Some assemblies place their `<!-- scan N -->`
+  // markers MID-PARAGRAPH (embedded in a line, not on their own line), so the line-level marker scan does
+  // not observe every page — which would leave a section's recorded span disjoint (e.g. [7,7],[12,12]).
+  // The article/section front matter declares the true contiguous source span (`source_scans` /
+  // `scan_pages`, e.g. "7-12"); union it into the page sequence so coverage is the whole declared span.
+  // Additive and source-backed: it only ADDS declared-range scans (printed numerals are remapped from the
+  // page records afterwards), and it never shrinks a span or invents a scan outside the declared range.
+  {
+    const rangeStr = String(fm.source_scans || fm.scan_pages || "").replace(/^"|"$/g, "");
+    const rm = /(\d+)\s*[-–]\s*(\d+)/.exec(rangeStr);
+    if (rm) {
+      const lo = Number(rm[1]), hi = Number(rm[2]);
+      const have = new Set(pageSeq.map((p) => p.scan));
+      for (let s = lo; s <= hi; s++) if (!have.has(s)) pageSeq.push({ scan: s, printed: null });
+      pageSeq.sort((a, b) => a.scan - b.scan);
+    }
+  }
   // Guard against a two-line printed title being joined wrongly, using a NORMALIZED PROBE only
   // (trailing sentence punctuation / whitespace differences between the printed heading witness and
   // the assembly's declared title are legitimate — e.g. `ஆரியம் பேசுகிறது.` vs `ஆரியம் பேசுகிறது`).
@@ -265,7 +324,9 @@ function buildBlocks(units) {
     if (!u.page) die(`a unit carries no source page: ${JSON.stringify(u.text.slice(0, 60))}`);
     if (u.kind === "subheading") { blocks.push({ kind: "subheading", segments: [{ kind: "authored-text", text: u.text }], text: u.text, mixedVoice: false, sourcePages: [u.page] }); continue; }
     const kind = ATTRIBUTION.test(u.text) ? "attribution" : "paragraph";
-    blocks.push({ kind, segments: null, text: u.text, mixedVoice: false, sourcePages: [u.page] });
+    // A paragraph records EVERY source page it occupies (in reading order) — a paragraph that straddles a
+    // physical page boundary carries both pages, from the inline markers consumed while parsing it.
+    blocks.push({ kind, segments: null, text: u.text, mixedVoice: false, sourcePages: (u.pages && u.pages.length ? u.pages : [u.page]).map((p) => ({ scan: p.scan, printed: p.printed })) });
   }
   for (const b of blocks) {
     if (!b.segments) {
@@ -352,6 +413,18 @@ for (const w of WORKS) {
     const en = parseArticle(readText(path.join(PUB, "translations/en", enFiles[i])), true);
     damageNotes.push(...ta.damage, ...en.damage);
 
+    // SOURCE-SECTION works (e.g. pesum-kalai-valarppom): the source prints no contents page and no
+    // descriptive titles — only source-visible numbered section openings 1..N. The section NUMBER is the
+    // identity; the publication-title echo (`# <title>`) and the bare number heading (`## N` / `# N`) are
+    // structural, not authored body. Drop the number heading from the body (the `#` title echo is dropped
+    // by buildBlocks already) and assert the source-visible number matches the reading position.
+    const sourceSection = w.numberModel === "source-section";
+    const sectionNum = String(i + 1);
+    if (sourceSection && String(ta.fm.title ?? "").trim() !== sectionNum) die(`${w.slug} section ${i + 1}: front-matter title "${ta.fm.title}" is not the source-visible section number ${sectionNum}`);
+    const stripNumberHeading = (units) => sourceSection ? units.filter((u) => !(u.kind === "subheading" && u.text.trim() === sectionNum)) : units;
+    const taUnits = stripNumberHeading(ta.units);
+    const enUnits = stripNumberHeading(en.units);
+
     // AUTHORITATIVE printed numerals come from the page records, not the assembly markers (several
     // Batch-6 assemblies use bare `<!-- scan N -->` markers). Remap every block's page + the page
     // sequence to the page-record printed numeral, failing closed on any scan with no page record.
@@ -360,8 +433,8 @@ for (const w of WORKS) {
     if (!w.acceptedArticleStatus.includes(ta.fm.status)) die(`${w.slug} article ${i + 1}: Tamil status "${ta.fm.status}" not in ${JSON.stringify(w.acceptedArticleStatus)}`);
     if (en.fm.translation_status !== "verified") die(`${w.slug} article ${i + 1}: English translation_status "${en.fm.translation_status}", expected "verified"`);
 
-    const taBlocks = buildBlocks(ta.units);
-    const enBlocks = buildBlocks(en.units);
+    const taBlocks = buildBlocks(taUnits);
+    const enBlocks = buildBlocks(enUnits);
     if (!taBlocks.length) die(`${w.slug} article ${i + 1}: Tamil body EMPTY`);
     if (!enBlocks.length) die(`${w.slug} article ${i + 1}: English body EMPTY`);
     remap(taBlocks); remap(enBlocks);
@@ -379,13 +452,19 @@ for (const w of WORKS) {
     const printedArticleNumber = ta.fm.article_number != null && String(ta.fm.article_number).trim() !== "" ? Number(ta.fm.article_number) : null;
     articles.push({
       number: i + 1,
-      numberSource: "archive-ordinal",
-      sourceArticleNumberAsPrinted: Number.isFinite(printedArticleNumber) ? printedArticleNumber : null,
+      // "source-section": the number is a source-visible section number (no printed contents page, no
+      // descriptive title). "archive-ordinal": archive reading order, number not printed in the source.
+      numberSource: sourceSection ? "source-section" : "archive-ordinal",
+      // For a source-section work the source-visible number IS the section number; there is no separate
+      // printed article number. Otherwise carry the printed article-number witness where present.
+      sourceArticleNumberAsPrinted: sourceSection ? (i + 1) : (Number.isFinite(printedArticleNumber) ? printedArticleNumber : null),
       slug: taFiles[i].replace(/^\d\d-/, "").replace(/\.md$/, ""),
       // Reading title: the substantive front-matter title where present; otherwise the printed `#` heading
-      // (front matter may carry only a bare-ordinal placeholder). The heading text is the source's own.
-      titleTa: substantiveTitle(ta.fm.title_ta || ta.fm.title, ta.units),
-      titleEn: substantiveTitle(en.fm.title_en || en.fm.title, en.units),
+      // (front matter may carry only a bare-ordinal placeholder). A source-section work has NO descriptive
+      // title — the section is identified by its number alone, so the title is left empty (never the bare
+      // numeral, never the publication-title echo).
+      titleTa: sourceSection ? "" : substantiveTitle(ta.fm.title_ta || ta.fm.title, ta.units),
+      titleEn: sourceSection ? "" : substantiveTitle(en.fm.title_en || en.fm.title, en.units),
       scanRuns: runs.map((r) => ({ from: r.from, to: r.to })),
       printedPages,
       tamil: { blocks: taBlocks },
@@ -417,6 +496,11 @@ for (const w of WORKS) {
   const editionWitnessesTa = w.firstEdition
     ? [w.firstEdition.statementTa, ...(w.firstEdition.publisherTa ? [w.firstEdition.publisherTa] : []), ...(w.firstEdition.priceTa ? [w.firstEdition.priceTa] : [])]
     : undefined;
+
+  // Public reading-unit noun for provenance prose: a source-section work's units are numbered SECTIONS, not
+  // articles (every other work keeps "article", so its output is byte-identical).
+  const unit = w.numberModel === "source-section" ? "section" : "article";
+  const unitSg = unit === "section" ? "a section" : "an article";
 
   const provenance = {
     workId: w.slug, sourceRepo: "pugazg/kalaignar-essays", sourcePath: `publications/${w.slug}`,
@@ -456,7 +540,7 @@ for (const w of WORKS) {
       translatorNotesSeparated: "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
       labelPolicy: [
         "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
-        "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing.",
+        `Quoted third-party material inside ${unitSg} stays a separate voice from Kalaignar's own framing.`,
       ],
     },
     archiveDerived: {
@@ -476,13 +560,15 @@ for (const w of WORKS) {
       relationUnknown: articles.reduce((n, a) => n + a.pageTransitions.filter((t) => t.relation === "unknown").length, 0),
       ...(damageNotes.length ? { sourceDamageNotes: [...new Set(damageNotes)] } : {}),
       voiceNote: "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
-      boundaryNote: "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+      boundaryNote: `These archives record no per-edge continuation adjudication, so every in-${unit} page transition is reported as \`unknown\` rather than guessed from adjacency.`,
       provenanceGranularity: "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
-      note: "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers.",
+      note: `Archive-derived counts, recomputed at import time from the frozen source. Per-${unit} scan runs and printed-page evidence are derived from each assembly's own scan markers.`,
     },
+    // PUBLIC notes (rendered in the Source & provenance "Notes" card): durable source facts only. Internal
+    // workflow checkpoints (wave/batch labels, phase gates, hidden/discovery state) change over time and
+    // must never be published as provenance.
     notes: [
-      "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
-      "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized).",
+      "The controlling PDF is not vendored into this repository and is never fetched at runtime.",
     ],
   };
 

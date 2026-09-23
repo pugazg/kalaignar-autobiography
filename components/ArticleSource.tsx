@@ -9,6 +9,13 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
   const { lang } = useLang();
   const ta = lang === "ta";
   const s = prov.source;
+  // A source-sectioned work (no printed contents page, no descriptive titles) shows its reading units as
+  // numbered sections; the map is a "Section / பகுதி" column so the source-visible number appears once.
+  const sectioned = s.articleMap.length > 0 && s.articleMap.every((a) => a.numberSource === "source-section");
+  // Public reading-unit nouns. The data keeps its internal `article*` field names; only the presentation
+  // follows the source form, so a source-sectioned work never publicly calls its sections "articles".
+  const unitsTa = sectioned ? "பகுதிகள்" : "கட்டுரைகள்";
+  const unitsEn = sectioned ? "Sections" : "Articles";
   const e = prov.english;
   const d = prov.archiveDerived;
   const pr = prov.projectRights;
@@ -81,7 +88,7 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               </Row>
             )}
             <Row label={ta ? "கண்பார்வை உரைச் சரிபார்ப்பு" : "Strict text fidelity"}>{s.strictFidelityReview}</Row>
-            <Row label={ta ? "கட்டுரைத் தொகுப்புகள்" : "Article assemblies"}>{s.articleAssemblies}</Row>
+            <Row label={ta ? (sectioned ? "பகுதித் தொகுப்புகள்" : "கட்டுரைத் தொகுப்புகள்") : (sectioned ? "Section assemblies" : "Article assemblies")}>{s.articleAssemblies}</Row>
             <Row label={ta ? "தீர்க்கப்படாத தமிழ் சிக்கல்கள்" : "Unresolved Tamil fidelity items"}>{s.unresolvedTamilFidelityItems}</Row>
             {/* Optional: three Wave-3 pamphlets establish no publication-wide printed page count,
                 and a physical scan count is a different fact that must never stand in for it. */}
@@ -148,14 +155,22 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
           </div>
         </Card>
 
-        <Card icon={BookOpen} title={ta ? `கட்டுரை வரைபடம் — ${s.articleMap.length}` : `Article map — ${s.articleMap.length} articles`}>
+        <Card icon={BookOpen} title={ta
+          ? `${sectioned ? "பகுதி" : "கட்டுரை"} வரைபடம் — ${s.articleMap.length}`
+          : `${sectioned ? "Section" : "Article"} map — ${s.articleMap.length} ${sectioned ? "sections" : "articles"}`}>
           <div className="mt-3 overflow-x-auto">
             <table className="w-full min-w-[36rem] border-collapse text-left text-xs">
               <thead>
                 <tr className="border-b border-ink/10 text-[10px] uppercase tracking-wider text-ink/45 dark:border-white/10 dark:text-night-text/45">
-                  <th scope="col" className="py-1.5 pr-3 font-medium">#</th>
-                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "தலைப்பு (அச்சுத் தலைப்புப் பக்கம்)" : "Title (heading page)"}</th>
-                  <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "ஆங்கிலம்" : "English"}</th>
+                  {sectioned ? (
+                    <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "பகுதி" : "Section"}</th>
+                  ) : (
+                    <>
+                      <th scope="col" className="py-1.5 pr-3 font-medium">#</th>
+                      <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "தலைப்பு (அச்சுத் தலைப்புப் பக்கம்)" : "Title (heading page)"}</th>
+                      <th scope="col" className="py-1.5 pr-3 font-medium">{ta ? "ஆங்கிலம்" : "English"}</th>
+                    </>
+                  )}
                   <th scope="col" className="py-1.5 pr-3 font-medium">Scan</th>
                   <th scope="col" className="py-1.5 font-medium">{ta ? "அச்சு" : "Printed"}</th>
                 </tr>
@@ -163,16 +178,23 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               <tbody>
                 {s.articleMap.map((a) => (
                   <tr key={a.number} className="border-b border-ink/5 align-top dark:border-white/5">
-                    <td className="py-1.5 pr-3 tabular-nums text-ink/60 dark:text-night-text/60">{a.number}</td>
-                    <td className="py-1.5 pr-3 font-tamil text-ink/85 dark:text-night-text/85" lang="ta">
-                      {a.titleTa}
-                      {a.contentsTitleTa && (
-                        <span className="mt-0.5 block text-[11px] italic text-ink/45 dark:text-night-text/45">
-                          {ta ? "பொருளடக்கம்: " : "contents page: "}{a.contentsTitleTa}
-                        </span>
-                      )}
-                    </td>
-                    <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70">{a.titleEn}</td>
+                    {sectioned ? (
+                      // The source-visible section number, ONCE (no fabricated Tamil/English title columns).
+                      <td className="py-1.5 pr-3 tabular-nums text-ink/85 dark:text-night-text/85">{ta ? `பகுதி ${a.number}` : `Section ${a.number}`}</td>
+                    ) : (
+                      <>
+                        <td className="py-1.5 pr-3 tabular-nums text-ink/60 dark:text-night-text/60">{a.number}</td>
+                        <td className="py-1.5 pr-3 font-tamil text-ink/85 dark:text-night-text/85" lang="ta">
+                          {a.titleTa}
+                          {a.contentsTitleTa && (
+                            <span className="mt-0.5 block text-[11px] italic text-ink/45 dark:text-night-text/45">
+                              {ta ? "பொருளடக்கம்: " : "contents page: "}{a.contentsTitleTa}
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70">{a.titleEn}</td>
+                      </>
+                    )}
                     <td className="py-1.5 pr-3 tabular-nums text-ink/55 dark:text-night-text/55">{a.scanPages}</td>
                     <td className="py-1.5 tabular-nums text-ink/55 dark:text-night-text/55">{a.printedPages}</td>
                   </tr>
@@ -188,6 +210,10 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               ? (ta
                   ? "இந்த எண்கள் நூலின் சொந்த அச்சிடப்பட்ட பொருளடக்கப் பக்கத்தில் உள்ளவை; ஒவ்வொரு கட்டுரை எல்லையும் மூலத்தில் சரிபார்க்கப்பட்டது."
                   : "These numbers are printed in the publication's own contents page, and every article boundary was verified against the source.")
+              : s.articleMap.every((a) => a.numberSource === "source-section")
+              ? (ta
+                  ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை. இந்த எண்கள் நூலின் உட்பகுதியில் அச்சிடப்பட்டுள்ள மூல-வெளிப்படைப் பகுதி எண்கள் — காப்பகம் உருவாக்கியவை அல்ல; மூலம் தலைப்புகள் தரவில்லை, எதுவும் புனையப்படவில்லை."
+                  : "This publication has no printed contents page. These numbers are the source's own visible section numbers — not archive-created — and the source supplies no descriptive titles, so none are invented.")
               : (ta
                   ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை. இந்த எண்கள் காப்பகத்தின் வாசிப்பு வரிசை எண்கள் — அச்சிடப்பட்டவை அல்ல."
                   : "This publication prints no contents page. These numbers are the archive's reading ordinals — they are not printed in the publication.")}
@@ -203,7 +229,7 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
           <dl className="mt-3">
             <Row label={ta ? "தலைப்பு" : "Title"}>{e.releaseTitle}</Row>
             <Row label={ta ? "வகை" : "Kind"}>{e.kind}</Row>
-            <Row label={ta ? "கட்டுரைகள்" : "Articles"}>{e.articlesVerified}</Row>
+            <Row label={ta ? unitsTa : unitsEn}>{e.articlesVerified}</Row>
             <Row label={ta ? "ஒருமைப்பாட்டு மதிப்பீடு" : "Consistency review"}>{e.consistencyReview}</Row>
             <Row label={ta ? "வெளியீட்டு நிறைவு" : "Release closeout"}>{e.releaseCloseout}</Row>
             <Row label={ta ? "வெளியீட்டு வாயில்" : "Release gate"}>{e.releaseGate}</Row>
@@ -224,7 +250,7 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
 
         <Card icon={BookOpen} title={ta ? "காப்பகத்தால் உருவான அமைப்பு" : "Archive-derived reading structure"}>
           <dl className="mt-3">
-            <Row label={ta ? "கட்டுரைகள்" : "Articles"}>{d.articles}</Row>
+            <Row label={ta ? unitsTa : unitsEn}>{d.articles}</Row>
             <Row label={ta ? "தமிழ் தொகுதிகள்" : "Tamil blocks"}>
               {d.tamilBlocks} · {ta ? "துணைத்தலைப்பு" : "subheadings"} {d.tamilSubheadings} · {ta ? "மேற்கோள் சான்று" : "attributions"} {d.tamilAttributions}
             </Row>
@@ -255,7 +281,7 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
           </p>
         </Card>
 
-        <Card icon={Info} title={ta ? "கட்டுரைப் பகுதியிலிருந்து விலக்கப்பட்டவை" : "Locked exclusions from every article body"}>
+        <Card icon={Info} title={ta ? (sectioned ? "ஒவ்வொரு பகுதியின் உரையிலிருந்தும் விலக்கப்பட்டவை" : "கட்டுரைப் பகுதியிலிருந்து விலக்கப்பட்டவை") : `Locked exclusions from every ${sectioned ? "section" : "article"} body`}>
           <ul className="mt-3 space-y-1.5 text-sm text-ink/80 dark:text-night-text/80">
             {s.lockedExclusions.map((x, i) => (
               <li key={i} className="flex gap-2">
@@ -311,8 +337,8 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
           </p>
           <p className="mt-2 text-xs leading-relaxed text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : "en"}>
             {ta
-              ? "ஆங்கில மொழிபெயர்ப்பு திட்டத்தால் உருவாக்கப்பட்டது; தமிழே சான்றுநிலை. கட்டுரைக்குள் மேற்கோள் காட்டப்படும் பிறர் உரை கலைஞரின் சொந்த உரையிலிருந்து தனியாகவே வைக்கப்படுகிறது."
-              : "The English is a project-created translation and the Tamil remains authoritative. Quoted third-party material inside an article is kept separate from Kalaignar's own text."}
+              ? `ஆங்கில மொழிபெயர்ப்பு திட்டத்தால் உருவாக்கப்பட்டது; தமிழே சான்றுநிலை. ${sectioned ? "பகுதிக்குள்" : "கட்டுரைக்குள்"} மேற்கோள் காட்டப்படும் பிறர் உரை கலைஞரின் சொந்த உரையிலிருந்து தனியாகவே வைக்கப்படுகிறது.`
+              : `The English is a project-created translation and the Tamil remains authoritative. Quoted third-party material inside ${sectioned ? "a section" : "an article"} is kept separate from Kalaignar's own text.`}
           </p>
         </Card>
       )}

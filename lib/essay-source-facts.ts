@@ -86,7 +86,7 @@ export function publicationMetaSentence(pub: EssayPublication): string {
   parts.push(
     pub.articleCount === 1
       ? `${pub.title.en} — a single essay by Kalaignar M. Karunanidhi`
-      : `${pub.title.en} — ${pub.articleCount} articles by Kalaignar M. Karunanidhi`,
+      : `${pub.title.en} — ${pub.articleCount} ${unitNoun(pub, false, true)} by Kalaignar M. Karunanidhi`,
   );
   if (pub.firstEdition) {
     const when = [pub.firstEdition.monthTa, pub.firstEdition.year].filter(Boolean).join(" ");
@@ -103,7 +103,7 @@ export function publicationMetaSentence(pub: EssayPublication): string {
   return `${parts.join(". ")}.`;
 }
 
-/** How the article ordinals should be described — printed, or the archive's own reading order. */
+/** How the article ordinals should be described — printed, source-visible sections, or archive order. */
 export function articleNumberingNote(pub: EssayPublication, ta: boolean): string {
   const printed = pub.articles.every((a) => a.numberSource === "printed-contents");
   if (printed) {
@@ -111,9 +111,43 @@ export function articleNumberingNote(pub: EssayPublication, ta: boolean): string
       ? "கட்டுரை எண்கள் அச்சிடப்பட்ட பொருளடக்கப் பக்கத்தில் உள்ளவை."
       : "The article numbers are printed in the publication's own contents page.";
   }
+  // source-section: the source has no printed contents page, but the section numbers ARE visible in the
+  // source itself (not archive-created). Never describe them as archive reading ordinals.
+  const sourceSection = pub.articles.every((a) => a.numberSource === "source-section");
+  if (sourceSection) {
+    const n = pub.articleCount;
+    return ta
+      ? `இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை. 1–${n} என்ற எண்கள் நூலின் உட்பகுதியில் அச்சிடப்பட்டுள்ள பகுதி எண்கள்.`
+      : `This publication has no printed contents page. Sections 1–${n} are numbered in the source itself.`;
+  }
   return ta
     ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை; இந்த எண்கள் காப்பகத்தின் வாசிப்பு வரிசை எண்கள், அச்சிடப்பட்டவை அல்ல."
     : "This publication prints no contents page. These numbers are the archive's reading ordinals — they are not printed in the publication.";
+}
+
+/**
+ * The label for a reading unit. A source-section work has no descriptive title — its unit is identified by
+ * the source-visible section number ("பகுதி N" / "Section N"). Every other work shows its heading title.
+ */
+export function readingUnitLabel(a: { number: number; numberSource: string; titleTa: string; titleEn: string }, ta: boolean): string {
+  if (a.numberSource === "source-section") return ta ? `பகுதி ${a.number}` : `Section ${a.number}`;
+  return ta ? a.titleTa : a.titleEn;
+}
+/** True when the work numbers its reading units as source-visible sections (no descriptive titles). */
+export function isSourceSectioned(pub: EssayPublication): boolean {
+  return pub.articles.length > 0 && pub.articles.every((a) => a.numberSource === "source-section");
+}
+/** The reading-unit noun for public wording — "section(s)" / "பகுதி(கள்)" for a source-sectioned work,
+ *  "article(s)" / "கட்டுரை(கள்)" otherwise. Used so counts and labels read accurately per publication. */
+export function unitNoun(pub: EssayPublication, ta: boolean, plural: boolean): string {
+  const s = isSourceSectioned(pub);
+  if (ta) return s ? (plural ? "பகுதிகள்" : "பகுதி") : (plural ? "கட்டுரைகள்" : "கட்டுரை");
+  return s ? (plural ? "sections" : "section") : (plural ? "articles" : "article");
+}
+/** "Section N of M" / "பகுதி N / M" for a source-sectioned work; "Article N of M" / "கட்டுரை N / M" else. */
+export function readingUnitPosition(pub: EssayPublication, n: number, ta: boolean): string {
+  const noun = isSourceSectioned(pub) ? (ta ? "பகுதி" : "Section") : (ta ? "கட்டுரை" : "Article");
+  return ta ? `${noun} ${n} / ${pub.articleCount}` : `${noun} ${n} of ${pub.articleCount}`;
 }
 
 /**
@@ -134,7 +168,8 @@ export function sourcePageFacts(prov: EssayProvenance): string[] {
   facts.push(`${s.scanTotalPages} physical scans`);
 
   const articles = s.articleMap.length;
-  facts.push(articles === 1 ? "the publication's single article" : `the ${articles}-article map`);
+  const sectioned = articles > 0 && s.articleMap.every((a) => a.numberSource === "source-section");
+  facts.push(articles === 1 ? "the publication's single article" : `the ${articles}-${sectioned ? "section" : "article"} map`);
 
   if (s.physicalVerification) facts.push(s.physicalVerification.toLowerCase());
   if (s.strictFidelityReview) facts.push("strict visual text-fidelity review");

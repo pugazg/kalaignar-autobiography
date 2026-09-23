@@ -7,7 +7,13 @@ import ShareButtons from "@/components/ShareButtons";
 import type { Article, ArticleBlock, EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
-import { hasComplexScanCoverage, printedPagesLabel, printedPagesNote, scanRunsLabel } from "@/lib/essay-source-facts";
+import { hasComplexScanCoverage, printedPagesLabel, printedPagesNote, readingUnitLabel, readingUnitPosition, scanRunsLabel } from "@/lib/essay-source-facts";
+// A source-section reading unit has no descriptive title: it is identified by its source-visible number,
+// rendered ONCE in the active UI language via `readingUnitLabel` ("பகுதி N" / "Section N").
+const isSection = (a: Article) => a.numberSource === "source-section";
+// The `lang`/font of a unit label: a section label follows the UI language; a title is always Tamil.
+const unitLang = (a: Article, ta: boolean) => (isSection(a) && !ta ? "en" : "ta");
+const unitFont = (a: Article, ta: boolean) => (unitLang(a, ta) === "ta" ? "font-tamil" : "");
 
 // One article of the publication. An article is ordinary prose — paragraphs, quoted passages and
 // source-printed subheadings — so it gets a prose reader, not the speech, poem or scene reader.
@@ -46,8 +52,8 @@ export default function ArticleReader({
             <Link href="/" className="focus-ring rounded p-1.5 text-ink/60 hover:text-marina dark:text-night-text/60" aria-label="Home">
               <Home className="h-4 w-4" aria-hidden />
             </Link>
-            <p className="truncate font-tamil text-xs text-ink/60 dark:text-night-text/60" lang="ta">
-              {article.number}. {article.titleTa}
+            <p className={cn("truncate text-xs text-ink/60 dark:text-night-text/60", unitFont(article, ta))} lang={unitLang(article, ta)} data-testid="reader-sticky-unit">
+              {isSection(article) ? readingUnitLabel(article, ta) : `${article.number}. ${article.titleTa}`}
             </p>
           </div>
           <div className="flex items-center gap-1">
@@ -64,12 +70,15 @@ export default function ArticleReader({
       <article className="mx-auto max-w-3xl px-5 py-10 sm:px-6">
         <p className="flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] text-marina dark:text-marina-light">
           <Newspaper className="h-3.5 w-3.5" aria-hidden />{" "}
-          {ta ? `கட்டுரை ${article.number} / ${pub.articleCount}` : `Article ${article.number} of ${pub.articleCount}`}
+          {readingUnitPosition(pub, article.number, ta)}
         </p>
-        <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
-          {article.titleTa}
+        {/* A source-section unit shows its source-visible section number as the heading — there is no
+            descriptive title in the source and none is invented. ONE identity, in the active language:
+            never both "பகுதி N" and "Section N" at once (that would just repeat the number). */}
+        <h1 className={cn("mt-3 text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl", unitFont(article, ta))} lang={unitLang(article, ta)}>
+          {isSection(article) ? readingUnitLabel(article, ta) : article.titleTa}
         </h1>
-        <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{article.titleEn}</p>
+        {!isSection(article) && <p className="mt-1 font-display text-lg text-ink/60 dark:text-night-text/60">{article.titleEn}</p>}
         {/* The printed CONTENTS-page title is a separate source witness where it differs from the
             verified heading-page title. Both are kept; neither is normalized into the other. */}
         {article.contentsTitleTa && (
@@ -94,7 +103,7 @@ export default function ArticleReader({
         )}
 
         <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
-          <ShareButtons title={`${article.titleTa} · ${article.titleEn}`} path={`/essays/${pub.slug}/articles/${article.slug}`} />
+          <ShareButtons title={isSection(article) ? `${pub.title.ta} · ${readingUnitLabel(article, ta)}` : `${article.titleTa} · ${article.titleEn}`} path={`/essays/${pub.slug}/articles/${article.slug}`} />
           <div className="inline-flex overflow-hidden rounded-full border border-marina/40 text-xs font-medium">
             <button onClick={() => setShowEn(false)} className={cn("focus-ring px-3 py-1 transition", !showEn ? "bg-marina text-paper" : "text-marina hover:bg-marina/10 dark:text-marina-light")} aria-pressed={!showEn} lang="ta">
               தமிழ்
@@ -111,14 +120,14 @@ export default function ArticleReader({
               ? "இது திட்டத்தால் உருவாக்கப்பட்ட, முழுமையாக வெளியிடப்பட்ட ஆங்கில மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
               : "The project-created, release-complete English translation, carried exactly as released. The Tamil original remains authoritative."
             : ta
-              ? "கீழே அச்சிட்ட மூலத்தின்படி சரிபார்க்கப்பட்ட தமிழ்க் கட்டுரை — சொற்கள், நிறுத்தக் குறிகள், மேற்கோள்கள், அச்சுத் துணைத்தலைப்புகள் அனைத்தும் மூலத்தின்படியே."
-              : "The verified Tamil article, faithful to the printed source — wording, punctuation, quotations and printed subheadings exactly as the source has them."}
+              ? `கீழே அச்சிட்ட மூலத்தின்படி சரிபார்க்கப்பட்ட ${isSection(article) ? "தமிழ்ப் பகுதி" : "தமிழ்க் கட்டுரை"} — சொற்கள், நிறுத்தக் குறிகள், மேற்கோள்கள், அச்சுத் துணைத்தலைப்புகள் அனைத்தும் மூலத்தின்படியே.`
+              : `The verified Tamil ${isSection(article) ? "section" : "article"}, faithful to the printed source — wording, punctuation, quotations and printed subheadings exactly as the source has them.`}
         </p>
 
         {/* THE ARTICLE. Printed-page transitions are provenance and are deliberately invisible here:
             a block that runs across a printed page is ONE block carrying both pages, so the prose is
             never interrupted by a page marker and never silently re-paragraphed. */}
-        <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
+        <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"} data-testid="reader-body">
           {renderBlocks(blocks, article, ta)}
         </div>
 
@@ -138,11 +147,11 @@ export default function ArticleReader({
           </aside>
         )}
 
-        <nav className="mt-10 flex items-center justify-between gap-3 border-t border-ink/10 pt-5 dark:border-white/10" aria-label={ta ? "கட்டுரை வழிசெலுத்தல்" : "Article navigation"}>
+        <nav className="mt-10 flex items-center justify-between gap-3 border-t border-ink/10 pt-5 dark:border-white/10" aria-label={isSection(article) ? (ta ? "பகுதி வழிசெலுத்தல்" : "Section navigation") : (ta ? "கட்டுரை வழிசெலுத்தல்" : "Article navigation")}>
           {prev ? (
             <Link href={`/essays/${pub.slug}/articles/${prev.slug}`} className="focus-ring group inline-flex max-w-[45%] items-center gap-1.5 rounded text-sm text-ink/70 hover:text-marina dark:text-night-text/70">
               <ChevronLeft className="h-4 w-4 shrink-0" aria-hidden />
-              <span className="truncate font-tamil" lang="ta">{prev.titleTa}</span>
+              <span className={cn("truncate", unitFont(prev, ta))} lang={unitLang(prev, ta)} data-testid="reader-prev-unit">{isSection(prev) ? readingUnitLabel(prev, ta) : prev.titleTa}</span>
             </Link>
           ) : (
             <span />
@@ -152,7 +161,7 @@ export default function ArticleReader({
           </Link>
           {next ? (
             <Link href={`/essays/${pub.slug}/articles/${next.slug}`} className="focus-ring group inline-flex max-w-[45%] items-center gap-1.5 rounded text-right text-sm text-ink/70 hover:text-marina dark:text-night-text/70">
-              <span className="truncate font-tamil" lang="ta">{next.titleTa}</span>
+              <span className={cn("truncate", unitFont(next, ta))} lang={unitLang(next, ta)} data-testid="reader-next-unit">{isSection(next) ? readingUnitLabel(next, ta) : next.titleTa}</span>
               <ChevronRight className="h-4 w-4 shrink-0" aria-hidden />
             </Link>
           ) : (

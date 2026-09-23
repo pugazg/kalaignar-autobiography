@@ -36,7 +36,7 @@
     "number": 1,
     "titleTa": "வேங்கையை விரட்டும் படலம்",
     "titleEn": "The Chapter of Driving Away the Tiger",
-    "scanPages": "4",
+    "scanPages": "4–7",
     "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
     "numberSource": "archive-ordinal"
    },
@@ -44,8 +44,8 @@
     "number": 2,
     "titleTa": "விடுதலைக் கிளர்ச்சி",
     "titleEn": "Liberation Uprising",
-    "scanPages": "8",
-    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "scanPages": "8–68",
+    "printedPages": "8–67; scan 8 shows no printed numeral",
     "numberSource": "archive-ordinal"
    }
   ],
@@ -74,9 +74,9 @@
  },
  "archiveDerived": {
   "articles": 2,
-  "tamilBlocks": 351,
+  "tamilBlocks": 339,
   "englishBlocks": 368,
-  "tamilSubheadings": 6,
+  "tamilSubheadings": 0,
   "englishSubheadings": 0,
   "tamilAttributions": 0,
   "englishAttributions": 0,
@@ -85,15 +85,14 @@
   "tamilQuotedSegments": 20,
   "englishQuotedSegments": 49,
   "translatorNotes": 0,
-  "pageTransitionsAudited": 0,
-  "relationUnknown": 0,
+  "pageTransitionsAudited": 63,
+  "relationUnknown": 63,
   "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
   "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
   "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
   "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
  },
  "notes": [
-  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
-  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+  "The controlling PDF is not vendored into this repository and is never fetched at runtime."
  ]
 }

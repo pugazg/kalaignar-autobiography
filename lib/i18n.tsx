@@ -9,10 +9,10 @@ const LangContext = createContext<{ lang: Lang; setLang: (l: Lang) => void }>({
   setLang: () => {},
 });
 
-export function LangProvider({ children }: { children: React.ReactNode }) {
+export function LangProvider({ children, initialLang }: { children: React.ReactNode; /** Test/SSR seed; defaults to Tamil. */ initialLang?: Lang }) {
   // Tamil is the site's primary language: first-time visitors get Tamil;
   // an explicit choice (either way) is remembered.
-  const [lang, setLangState] = useState<Lang>("ta");
+  const [lang, setLangState] = useState<Lang>(initialLang ?? "ta");
 
   useEffect(() => {
     try {

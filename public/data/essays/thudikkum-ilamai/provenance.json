@@ -35,32 +35,32 @@
     "number": 1,
     "titleTa": "துடிக்கும் இளமை",
     "titleEn": "Throbbing Youth",
-    "scanPages": "5",
-    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "scanPages": "5–12",
+    "printedPages": "6–12; scan 5 shows no printed numeral",
     "numberSource": "archive-ordinal"
    },
    {
     "number": 2,
     "titleTa": "அண்ணாமலைக்கு அரோகரா!",
     "titleEn": "Arohara to Annamalai!",
-    "scanPages": "13",
-    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "scanPages": "13–19",
+    "printedPages": "14–19; scan 13 shows no printed numeral",
     "numberSource": "archive-ordinal"
    },
    {
     "number": 3,
     "titleTa": "பூம்புகார்",
     "titleEn": "Poompuhar",
-    "scanPages": "20",
-    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "scanPages": "20–24",
+    "printedPages": "21–24; scan 20 shows no printed numeral",
     "numberSource": "archive-ordinal"
    },
    {
     "number": 4,
     "titleTa": "வெற்றி விளக்கு!",
     "titleEn": "Lamp of Victory!",
-    "scanPages": "25",
-    "printedPages": "No printed page numeral is visible on any scan of this article; nothing is inferred.",
+    "scanPages": "25–29",
+    "printedPages": "26–29; scan 25 shows no printed numeral",
     "numberSource": "archive-ordinal"
    }
   ],
@@ -89,9 +89,9 @@
  },
  "archiveDerived": {
   "articles": 4,
-  "tamilBlocks": 72,
+  "tamilBlocks": 48,
   "englishBlocks": 131,
-  "tamilSubheadings": 12,
+  "tamilSubheadings": 0,
   "englishSubheadings": 20,
   "tamilAttributions": 0,
   "englishAttributions": 0,
@@ -100,15 +100,14 @@
   "tamilQuotedSegments": 14,
   "englishQuotedSegments": 34,
   "translatorNotes": 0,
-  "pageTransitionsAudited": 0,
-  "relationUnknown": 0,
+  "pageTransitionsAudited": 21,
+  "relationUnknown": 21,
   "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
   "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
   "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
   "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
  },
  "notes": [
-  "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
-  "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized)."
+  "The controlling PDF is not vendored into this repository and is never fetched at runtime."
  ]
 }

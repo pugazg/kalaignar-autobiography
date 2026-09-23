@@ -31,12 +31,14 @@
    "scanRuns": [
     {
      "from": 5,
-     "to": 5
+     "to": 12
     }
    ],
    "printedPages": {
-    "kind": "none",
-    "note": "No printed page numeral is visible on any scan of this article; nothing is inferred."
+    "kind": "range",
+    "from": 6,
+    "to": 12,
+    "note": "scan 5 shows no printed numeral"
    },
    "tamil": {
     "blocks": [
@@ -53,8 +55,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -79,8 +80,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -97,8 +97,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -115,8 +114,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -133,8 +131,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -151,8 +148,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -169,8 +165,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -195,8 +190,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -213,8 +207,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -231,8 +224,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      },
@@ -249,116 +241,7 @@
       "sourcePages": [
        {
         "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "Assembly provenance"
-       }
-      ],
-      "text": "Assembly provenance",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- scan 5 — `publications/thudikkum-ilamai/pages/0005-thudikkum-ilamai-1.md`\n- scan 6 — `publications/thudikkum-ilamai/pages/0006-thudikkum-ilamai-2.md`\n- scan 7 — `publications/thudikkum-ilamai/pages/0007-thudikkum-ilamai-3.md`\n- scan 8 — `publications/thudikkum-ilamai/pages/0008-thudikkum-ilamai-4.md`\n- scan 9 — `publications/thudikkum-ilamai/pages/0009-thudikkum-ilamai-5.md`\n- scan 10 — `publications/thudikkum-ilamai/pages/0010-thudikkum-ilamai-6.md`\n- scan 11 — `publications/thudikkum-ilamai/pages/0011-thudikkum-ilamai-7.md`\n- scan 12 — `publications/thudikkum-ilamai/pages/0012-thudikkum-ilamai-8.md`"
-       }
-      ],
-      "text": "- scan 5 — `publications/thudikkum-ilamai/pages/0005-thudikkum-ilamai-1.md`\n- scan 6 — `publications/thudikkum-ilamai/pages/0006-thudikkum-ilamai-2.md`\n- scan 7 — `publications/thudikkum-ilamai/pages/0007-thudikkum-ilamai-3.md`\n- scan 8 — `publications/thudikkum-ilamai/pages/0008-thudikkum-ilamai-4.md`\n- scan 9 — `publications/thudikkum-ilamai/pages/0009-thudikkum-ilamai-5.md`\n- scan 10 — `publications/thudikkum-ilamai/pages/0010-thudikkum-ilamai-6.md`\n- scan 11 — `publications/thudikkum-ilamai/pages/0011-thudikkum-ilamai-7.md`\n- scan 12 — `publications/thudikkum-ilamai/pages/0012-thudikkum-ilamai-8.md`",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P3 assembly audit"
-       }
-      ],
-      "text": "P3 assembly audit",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- source scans — **5–12 / 8/8 records**\n- page-record coverage — **8/8 PASS**\n- verified boundary-word joins applied — **4**\n  - scan 5→6: பிம்பங் + கள் = பிம்பங்கள்\n  - scan 6→7: உள் + ளங்கள் = உள்ளங்கள்\n  - scan 8→9: எழுதி + கிறான் = எழுதுகிறான்\n  - scan 11→12: துடிக் + கிறது = துடிக்கிறது\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**"
-       }
-      ],
-      "text": "- source scans — **5–12 / 8/8 records**\n- page-record coverage — **8/8 PASS**\n- verified boundary-word joins applied — **4**\n  - scan 5→6: பிம்பங் + கள் = பிம்பங்கள்\n  - scan 6→7: உள் + ளங்கள் = உள்ளங்கள்\n  - scan 8→9: எழுதி + கிறான் = எழுதுகிறான்\n  - scan 11→12: துடிக் + கிறது = துடிக்கிறது\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P5 strict visual-fidelity revalidation"
-       }
-      ],
-      "text": "P5 strict visual-fidelity revalidation",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**."
-       }
-      ],
-      "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**.",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 5,
-        "printed": null,
-        "fromFrontMatterRange": "5-12"
+        "printed": null
        }
       ]
      }
@@ -1051,7 +934,64 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 5,
+     "toScan": 6,
+     "fromPrinted": null,
+     "toPrinted": 6,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 6,
+     "toScan": 7,
+     "fromPrinted": 6,
+     "toPrinted": 7,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 7,
+     "toScan": 8,
+     "fromPrinted": 7,
+     "toPrinted": 8,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 8,
+     "toScan": 9,
+     "fromPrinted": 8,
+     "toPrinted": 9,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 9,
+     "toScan": 10,
+     "fromPrinted": 9,
+     "toPrinted": 10,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 10,
+     "toScan": 11,
+     "fromPrinted": 10,
+     "toPrinted": 11,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 11,
+     "toScan": 12,
+     "fromPrinted": 11,
+     "toPrinted": 12,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 2,
@@ -1063,12 +1003,14 @@
    "scanRuns": [
     {
      "from": 13,
-     "to": 13
+     "to": 19
     }
    ],
    "printedPages": {
-    "kind": "none",
-    "note": "No printed page numeral is visible on any scan of this article; nothing is inferred."
+    "kind": "range",
+    "from": 14,
+    "to": 19,
+    "note": "scan 13 shows no printed numeral"
    },
    "tamil": {
     "blocks": [
@@ -1085,8 +1027,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1103,8 +1044,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1121,8 +1061,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1139,8 +1078,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1157,8 +1095,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1175,8 +1112,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1217,8 +1153,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1239,8 +1174,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1257,8 +1191,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1275,8 +1208,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1293,8 +1225,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1311,8 +1242,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1329,8 +1259,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1347,8 +1276,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1365,8 +1293,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      },
@@ -1399,116 +1326,7 @@
       "sourcePages": [
        {
         "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "Assembly provenance"
-       }
-      ],
-      "text": "Assembly provenance",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- scan 13 — `publications/thudikkum-ilamai/pages/0013-annamalaikku-arogara-1.md`\n- scan 14 — `publications/thudikkum-ilamai/pages/0014-annamalaikku-arogara-2.md`\n- scan 15 — `publications/thudikkum-ilamai/pages/0015-annamalaikku-arogara-3.md`\n- scan 16 — `publications/thudikkum-ilamai/pages/0016-annamalaikku-arogara-4.md`\n- scan 17 — `publications/thudikkum-ilamai/pages/0017-annamalaikku-arogara-5.md`\n- scan 18 — `publications/thudikkum-ilamai/pages/0018-annamalaikku-arogara-6.md`\n- scan 19 — `publications/thudikkum-ilamai/pages/0019-annamalaikku-arogara-7.md`"
-       }
-      ],
-      "text": "- scan 13 — `publications/thudikkum-ilamai/pages/0013-annamalaikku-arogara-1.md`\n- scan 14 — `publications/thudikkum-ilamai/pages/0014-annamalaikku-arogara-2.md`\n- scan 15 — `publications/thudikkum-ilamai/pages/0015-annamalaikku-arogara-3.md`\n- scan 16 — `publications/thudikkum-ilamai/pages/0016-annamalaikku-arogara-4.md`\n- scan 17 — `publications/thudikkum-ilamai/pages/0017-annamalaikku-arogara-5.md`\n- scan 18 — `publications/thudikkum-ilamai/pages/0018-annamalaikku-arogara-6.md`\n- scan 19 — `publications/thudikkum-ilamai/pages/0019-annamalaikku-arogara-7.md`",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P3 assembly audit"
-       }
-      ],
-      "text": "P3 assembly audit",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- source scans — **13–19 / 7/7 records**\n- page-record coverage — **7/7 PASS**\n- verified boundary-word joins applied — **2**\n  - scan 17→18: ஆடம்பர + மான = ஆடம்பரமான\n  - scan 18→19: சுயநலத்துக் + கேற்ற = சுயநலத்துக்கேற்ற\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**"
-       }
-      ],
-      "text": "- source scans — **13–19 / 7/7 records**\n- page-record coverage — **7/7 PASS**\n- verified boundary-word joins applied — **2**\n  - scan 17→18: ஆடம்பர + மான = ஆடம்பரமான\n  - scan 18→19: சுயநலத்துக் + கேற்ற = சுயநலத்துக்கேற்ற\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P5 strict visual-fidelity revalidation"
-       }
-      ],
-      "text": "P5 strict visual-fidelity revalidation",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**."
-       }
-      ],
-      "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**.",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 13,
-        "printed": null,
-        "fromFrontMatterRange": "13-19"
+        "printed": null
        }
       ]
      }
@@ -2249,7 +2067,56 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 13,
+     "toScan": 14,
+     "fromPrinted": null,
+     "toPrinted": 14,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 14,
+     "toScan": 15,
+     "fromPrinted": 14,
+     "toPrinted": 15,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 15,
+     "toScan": 16,
+     "fromPrinted": 15,
+     "toPrinted": 16,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 16,
+     "toScan": 17,
+     "fromPrinted": 16,
+     "toPrinted": 17,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 17,
+     "toScan": 18,
+     "fromPrinted": 17,
+     "toPrinted": 18,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 18,
+     "toScan": 19,
+     "fromPrinted": 18,
+     "toPrinted": 19,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 3,
@@ -2261,12 +2128,14 @@
    "scanRuns": [
     {
      "from": 20,
-     "to": 20
+     "to": 24
     }
    ],
    "printedPages": {
-    "kind": "none",
-    "note": "No printed page numeral is visible on any scan of this article; nothing is inferred."
+    "kind": "range",
+    "from": 21,
+    "to": 24,
+    "note": "scan 20 shows no printed numeral"
    },
    "tamil": {
     "blocks": [
@@ -2283,8 +2152,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2309,8 +2177,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2327,8 +2194,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2345,8 +2211,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2363,8 +2228,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2381,8 +2245,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2399,8 +2262,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2417,8 +2279,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2435,8 +2296,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2453,8 +2313,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2471,8 +2330,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      },
@@ -2489,116 +2347,7 @@
       "sourcePages": [
        {
         "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "Assembly provenance"
-       }
-      ],
-      "text": "Assembly provenance",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- scan 20 — `publications/thudikkum-ilamai/pages/0020-poompuhar-1.md`\n- scan 21 — `publications/thudikkum-ilamai/pages/0021-poompuhar-2.md`\n- scan 22 — `publications/thudikkum-ilamai/pages/0022-poompuhar-3.md`\n- scan 23 — `publications/thudikkum-ilamai/pages/0023-poompuhar-4.md`\n- scan 24 — `publications/thudikkum-ilamai/pages/0024-poompuhar-5.md`"
-       }
-      ],
-      "text": "- scan 20 — `publications/thudikkum-ilamai/pages/0020-poompuhar-1.md`\n- scan 21 — `publications/thudikkum-ilamai/pages/0021-poompuhar-2.md`\n- scan 22 — `publications/thudikkum-ilamai/pages/0022-poompuhar-3.md`\n- scan 23 — `publications/thudikkum-ilamai/pages/0023-poompuhar-4.md`\n- scan 24 — `publications/thudikkum-ilamai/pages/0024-poompuhar-5.md`",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P3 assembly audit"
-       }
-      ],
-      "text": "P3 assembly audit",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- source scans — **20–24 / 5/5 records**\n- page-record coverage — **5/5 PASS**\n- verified boundary-word joins applied — **2**\n  - scan 20→21: வாயுணர்வின் + மாக்கள் = வாயுணர்வின்மாக்கள்\n  - scan 21→22: வெறுப் + பதில்லை = வெறுப்பதில்லை\n- quoted verse across scans 23→24 — **PRESERVED / PASS**\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**"
-       }
-      ],
-      "text": "- source scans — **20–24 / 5/5 records**\n- page-record coverage — **5/5 PASS**\n- verified boundary-word joins applied — **2**\n  - scan 20→21: வாயுணர்வின் + மாக்கள் = வாயுணர்வின்மாக்கள்\n  - scan 21→22: வெறுப் + பதில்லை = வெறுப்பதில்லை\n- quoted verse across scans 23→24 — **PRESERVED / PASS**\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P5 strict visual-fidelity revalidation"
-       }
-      ],
-      "text": "P5 strict visual-fidelity revalidation",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**."
-       }
-      ],
-      "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**.",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 20,
-        "printed": null,
-        "fromFrontMatterRange": "20-24"
+        "printed": null
        }
       ]
      }
@@ -3155,7 +2904,40 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 20,
+     "toScan": 21,
+     "fromPrinted": null,
+     "toPrinted": 21,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 21,
+     "toScan": 22,
+     "fromPrinted": 21,
+     "toPrinted": 22,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 22,
+     "toScan": 23,
+     "fromPrinted": 22,
+     "toPrinted": 23,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 23,
+     "toScan": 24,
+     "fromPrinted": 23,
+     "toPrinted": 24,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 4,
@@ -3167,12 +2949,14 @@
    "scanRuns": [
     {
      "from": 25,
-     "to": 25
+     "to": 29
     }
    ],
    "printedPages": {
-    "kind": "none",
-    "note": "No printed page numeral is visible on any scan of this article; nothing is inferred."
+    "kind": "range",
+    "from": 26,
+    "to": 29,
+    "note": "scan 25 shows no printed numeral"
    },
    "tamil": {
     "blocks": [
@@ -3189,8 +2973,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3207,8 +2990,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3225,8 +3007,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3243,8 +3024,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3261,8 +3041,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3279,8 +3058,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3297,8 +3075,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3315,8 +3092,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      },
@@ -3333,116 +3109,7 @@
       "sourcePages": [
        {
         "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "Assembly provenance"
-       }
-      ],
-      "text": "Assembly provenance",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- scan 25 — `publications/thudikkum-ilamai/pages/0025-vetri-vilakku-1.md`\n- scan 26 — `publications/thudikkum-ilamai/pages/0026-vetri-vilakku-2.md`\n- scan 27 — `publications/thudikkum-ilamai/pages/0027-vetri-vilakku-3.md`\n- scan 28 — `publications/thudikkum-ilamai/pages/0028-vetri-vilakku-4.md`\n- scan 29 — `publications/thudikkum-ilamai/pages/0029-vetri-vilakku-5.md`"
-       }
-      ],
-      "text": "- scan 25 — `publications/thudikkum-ilamai/pages/0025-vetri-vilakku-1.md`\n- scan 26 — `publications/thudikkum-ilamai/pages/0026-vetri-vilakku-2.md`\n- scan 27 — `publications/thudikkum-ilamai/pages/0027-vetri-vilakku-3.md`\n- scan 28 — `publications/thudikkum-ilamai/pages/0028-vetri-vilakku-4.md`\n- scan 29 — `publications/thudikkum-ilamai/pages/0029-vetri-vilakku-5.md`",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P3 assembly audit"
-       }
-      ],
-      "text": "P3 assembly audit",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- source scans — **25–29 / 5/5 records**\n- page-record coverage — **5/5 PASS**\n- verified boundary-word joins applied — **1**\n  - scan 28→29: என் + பதைக் = என்பதைக்\n- body→advertisement boundary scan 29→30 — **PASS**\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**"
-       }
-      ],
-      "text": "- source scans — **25–29 / 5/5 records**\n- page-record coverage — **5/5 PASS**\n- verified boundary-word joins applied — **1**\n  - scan 28→29: என் + பதைக் = என்பதைக்\n- body→advertisement boundary scan 29→30 — **PASS**\n- omitted P2 body text — **0**\n- added unsupported body text — **0**\n- modernization / paraphrase — **0**\n- unresolved assembly issues — **0**\n- result — **P3 COMPLETE / PASS**",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
-       }
-      ]
-     },
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "P5 strict visual-fidelity revalidation"
-       }
-      ],
-      "text": "P5 strict visual-fidelity revalidation",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
-       }
-      ]
-     },
-     {
-      "kind": "paragraph",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**."
-       }
-      ],
-      "text": "- all contributing source scans reopened directly at P5 — **PASS**;\n- canonical P2 page records compared word-by-word / punctuation-by-punctuation — **PASS**;\n- P5 body corrections required — **0**;\n- source wording / punctuation / historical type identity changed at P5 — **0**;\n- page-boundary joins revalidated — **PASS**;\n- unresolved fidelity discrepancies — **0**;\n- status — **STRICT-REVIEWED / FROZEN TAMIL AUTHORITY**.",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 25,
-        "printed": null,
-        "fromFrontMatterRange": "25-29"
+        "printed": null
        }
       ]
      }
@@ -3946,7 +3613,40 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 25,
+     "toScan": 26,
+     "fromPrinted": null,
+     "toPrinted": 26,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 26,
+     "toScan": 27,
+     "fromPrinted": 26,
+     "toPrinted": 27,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 27,
+     "toScan": 28,
+     "fromPrinted": 27,
+     "toPrinted": 28,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 28,
+     "toScan": 29,
+     "fromPrinted": 28,
+     "toPrinted": 29,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   }
  ],
  "articleCount": 4
