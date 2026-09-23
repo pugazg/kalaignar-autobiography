@@ -78,7 +78,10 @@ if (fs.existsSync(PM)) {
   const routes = Object.keys(JSON.parse(fs.readFileSync(PM, "utf8")).routes);
   for (const r of NEW_ROUTES) ok(routes.includes(r), `built: ${r} prerendered`);
   const html = (function count(d: string): number { return fs.readdirSync(d, { withFileTypes: true }).reduce((n, e) => n + (e.isDirectory() ? count(path.join(d, e.name)) : e.name.endsWith(".html") ? 1 : 0), 0); })(path.join(root, ".next/server/app"));
-  eq({ prerender: routes.length, html }, { prerender: BASELINE_BUILD.prerender + 510, html: BASELINE_BUILD.html + 510 }, "build totals == frozen baseline + 510");
+  // Hidden (P3): +510 direct routes. Published (P4): + the two முத்துக் குளியல் collection landings = +512.
+  const expected = 510 + (published ? 2 : 0);
+  if (published) for (const c of ["/collections/muthukkuliyal-part-1", "/collections/muthukkuliyal-part-2"]) ok(routes.includes(c), `built: ${c} prerendered`);
+  eq({ prerender: routes.length, html }, { prerender: BASELINE_BUILD.prerender + expected, html: BASELINE_BUILD.html + expected }, `build totals == frozen baseline + ${expected}`);
 } else console.log("  (no .next build present — built-route checks skipped; CI runs this after Build)");
 
 if (fail.length) {

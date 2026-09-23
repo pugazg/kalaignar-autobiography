@@ -38,6 +38,10 @@ import { STORY_SLUGS } from "../data/stories";
 import sitemap from "../app/sitemap";
 import { WAVE6_B7_STORY_SLUGS } from "../lib/stories-wave6-routes";
 import { WAVE7_B1_CONTRIBUTION } from "../lib/wave7-b1-contribution";
+// Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): 100 speeches + 1 literary commentary + the two முத்துக் குளியல்
+// speech collections. Subtracted like W7/W7B so this Batch-7 record stays exactly checkable at the P4 tip.
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
+const W7K_COLLECTION_IDS = ["muthukkuliyal-part-1", "muthukkuliyal-part-2"];
 
 const root = process.cwd();
 // Wave 7 Batch 1 published 3 cinema works AFTER this Batch-7 snapshot. This validator's claims are
@@ -77,7 +81,7 @@ const NEW_COLLECTION_IDS = manifest.groups.filter((g) => g.publicCollectionPlann
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length - W7.works - W7B.works, 216, "catalogue is 216 published works (100 + 116 Batch-7), excluding later Wave-7 B1 + B2-B4");
+eq(works.length - W7.works - W7B.works - W7K.works, 216, "catalogue is 216 published works (100 + 116 Batch-7), excluding later Wave-7 B1 + B2-B4 + B5/B6/K");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf.fiction - W7B.fictionCat, 157, "Fiction shelf is 157 works (41 + 116), excluding later Wave-7 B2-B4 novels");
@@ -103,8 +107,8 @@ eq((STORY_SLUGS as readonly string[]).filter((s) => !b7Slugs.includes(s)).length
 eq(uniqSorted([...WAVE6_B7_STORY_SLUGS]), uniqSorted(b7Slugs), "route helper still equals the 116 manifest slugs");
 
 // ── 3. COLLECTIONS ──────────────────────────────────────────────────────────────────────────────────
-eq(LIBRARY_COLLECTIONS.length - W7B.collections, 6, "6 public collections (1977 + 5 Batch-7), excluding later Wave-7 B3 arumbu-1978");
-eq(uniqSorted(COLLECTION_IDS.filter((id) => id !== "1977-kalaignar-karunanidhiyin-sirukathaigal" && id !== "arumbu-1978")), uniqSorted(NEW_COLLECTION_IDS), "the 5 non-1977 (pre-Wave-7-B3) collection ids are exactly the planned Batch-7 collections");
+eq(LIBRARY_COLLECTIONS.length - W7B.collections - W7K.collections, 6, "6 public collections (1977 + 5 Batch-7), excluding later Wave-7 B3 arumbu-1978");
+eq(uniqSorted(COLLECTION_IDS.filter((id) => id !== "1977-kalaignar-karunanidhiyin-sirukathaigal" && id !== "arumbu-1978" && !W7K_COLLECTION_IDS.includes(id))), uniqSorted(NEW_COLLECTION_IDS), "the 5 non-1977 (pre-Wave-7-B3) collection ids are exactly the planned Batch-7 collections");
 const groupById = new Map(manifest.groups.filter((g) => g.collectionDir).map((g) => [(g.collectionDir as string).split("/").pop()!, g] as const));
 for (const id of NEW_COLLECTION_IDS) {
   const c = collectionById(id) as LibraryCollection;
@@ -176,8 +180,8 @@ for (const id of existing2009) {
 // ── 6. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const CAP = 6;
-eq(shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery, 77, "/read discovery is 77 entries (excluding later Wave-7 B1 + B2-B4)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "40 discovery entries initially visible");
+eq(shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery, 77, "/read discovery is 77 entries (excluding later Wave-7 B1 + B2-B4)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible, 40, "40 discovery entries initially visible (excluding the later Literary Commentary entry)");
 const fiction = shelves.find((s) => s.shelf.id === "fiction")!;
 eq(fiction.works.length - W7B.fictionCat, 157, "fiction discovery works 157 (excluding later Wave-7 B2-B4 novels)");
 eq(fiction.entries.length - W7B.fictionDisc, 18, "fiction discovery entries 18 (excluding later Wave-7 B2-B4)");
@@ -192,7 +196,7 @@ eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.i
 
 // ── 7. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length - W7.sitemap - W7B.sitemap, 3909, "sitemap has 3909 URLs (excluding later Wave-7 B1's 133 + B2-B4's 225)");
+eq(urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap, 3909, "sitemap has 3909 URLs (excluding later Wave-7 B1's 133 + B2-B4's 225)");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const urlSet = new Set(urls.map((u) => u.replace(/^https?:\/\/[^/]+/, "")));
 for (const s of b7Slugs) { ok(urlSet.has(`/stories/${s}`), `sitemap has /stories/${s}`); ok(urlSet.has(`/stories/${s}/source`), `sitemap has /stories/${s}/source`); }
@@ -203,10 +207,10 @@ ok(urlSet.has(`/collections/1977-kalaignar-karunanidhiyin-sirukathaigal`), "site
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size - W7.build - W7B.build, 3918, "build prerender routes == 3918 (excluding later Wave-7 B1's 133 + B2-B4's 225)");
+  eq(keys.size - W7.build - W7B.build - W7K.build, 3918, "build prerender routes == 3918 (excluding later Wave-7 B1's 133 + B2-B4's 225)");
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html - W7.build - W7B.build, 3913, "build .html == 3913 (excluding later Wave-7 B1's 133 + B2-B4's 225)");
+  eq(html - W7.build - W7B.build - W7K.build, 3913, "build .html == 3913 (excluding later Wave-7 B1's 133 + B2-B4's 225)");
   for (const s of b7Slugs) { ok(keys.has(`/stories/${s}`), `${s}: reader prerendered`); ok(keys.has(`/stories/${s}/source`), `${s}: source prerendered`); }
   for (const id of NEW_COLLECTION_IDS) ok(keys.has(`/collections/${id}`), `${id}: collection landing prerendered`);
 } else {
@@ -214,14 +218,14 @@ if (fs.existsSync(pm)) {
 }
 
 // ── 9. DURABLE RECORD cross-check ─────────────────────────────────────────────────────────────────────
-eq(record.publish.catalogue.after, works.length - W7.works - W7B.works, "record catalogue.after == live − Wave-7 B1 − B2-B4");
+eq(record.publish.catalogue.after, works.length - W7.works - W7B.works - W7K.works, "record catalogue.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
 eq(record.publish.fiction.after, byShelf.fiction - W7B.fictionCat, "record fiction.after == live − Wave-7 B2-B4 novels");
 eq(record.publish.storySlugs.after, STORY_SLUGS.length, "record storySlugs.after == live (B2-B4 novels are not STORY_SLUGS)");
-eq(record.publish.collections.after, LIBRARY_COLLECTIONS.length - W7B.collections, "record collections.after == live − arumbu-1978");
-eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery, "record discovery.after == live − Wave-7 B1 − B2-B4");
+eq(record.publish.collections.after, LIBRARY_COLLECTIONS.length - W7B.collections - W7K.collections, "record collections.after == live − arumbu-1978 − 2 முத்துக் குளியல்");
+eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery, "record discovery.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
 eq(record.publish.discovery.fictionEntries.after, fiction.entries.length - W7B.fictionDisc, "record fiction discovery entries == live − Wave-7 B2-B4");
-eq(record.publish.discovery.visible.after, shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), "record visible == live");
-eq(record.publish.sitemap.after, urls.length - W7.sitemap - W7B.sitemap, "record sitemap.after == live − Wave-7 B1 − B2-B4");
+eq(record.publish.discovery.visible.after, shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible, "record visible == live − the later Literary Commentary entry");
+eq(record.publish.sitemap.after, urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap, "record sitemap.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
 eq(uniqSorted(record.pluralMembers), ["jaadi-kutti-poduma", "kuruvi-rameswaram"], "record plural members");
 for (const rc of record.collections) {
   const c = collectionById(rc.id)!;
@@ -305,12 +309,12 @@ for (const s of b7Slugs) eq(provJSON(s).batch, 7, `${s}: provenance batch === 7`
 // A11: no Batch-7 description fabricates a first-publication year (provenance-only copy).
 for (const s of b7Slugs) { const w = bySlug.get(s)!; ok(!/\b(18|19|20)\d{2}\b/.test(`${w.descTa} ${w.descEn}`), `${s}: description states no fabricated year`); }
 // A12: catalogue growth is exactly +116 over the pre-Batch-7 100 (Wave-7 B1's later +3 subtracted out).
-eq(works.length - 116 - W7.works - W7B.works, 100, "pre-Batch-7 catalogue was exactly 100");
+eq(works.length - 116 - W7.works - W7B.works - W7K.works, 100, "pre-Batch-7 catalogue was exactly 100");
 // A13: Fiction is the ONLY shelf whose census changed.
 const sortObj = (o: Record<string, number>) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
 // Subtract Batch-7's fiction AND the later Wave-7 B1 cinema works to recover the pre-Batch-7 census: this
 // proves BATCH-7 changed only Fiction (Wave-7 B1's cinema growth is a later, separate batch).
-eq(sortObj({ ...byShelf, fiction: byShelf.fiction - 116 - W7B.fictionCat, "cinema-writing": byShelf["cinema-writing"] - W7.cinema, drama: byShelf.drama - W7B.drama, "essays-articles": byShelf["essays-articles"] - W7B.essays }), sortObj({ "life-writing": 1, letters: 1, fiction: 41, poetry: 14, drama: 8, "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2 }), "Batch-7 grew only the Fiction shelf (later Wave-7 B1 cinema + B2-B4 drama/novels/essays subtracted out)");
+eq(sortObj({ ...byShelf, fiction: byShelf.fiction - 116 - W7B.fictionCat, "cinema-writing": byShelf["cinema-writing"] - W7.cinema, drama: byShelf.drama - W7B.drama, "essays-articles": byShelf["essays-articles"] - W7B.essays, speeches: byShelf.speeches - W7K.speeches, "literary-commentary": byShelf["literary-commentary"] - W7K.literaryCommentary }), sortObj({ "life-writing": 1, letters: 1, fiction: 41, poetry: 14, drama: 8, "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2 }), "Batch-7 grew only the Fiction shelf (later Wave-7 B1 cinema + B2-B4 drama/novels/essays subtracted out)");
 // A14: the union of the 5 collections' distinct members equals 97 new + 16 (2009) − 0… i.e. new works in collections = 108.
 const inAnyCollection = new Set<string>(); for (const c of LIBRARY_COLLECTIONS.filter((x) => x.id !== "1977-kalaignar-karunanidhiyin-sirukathaigal")) for (const m of c.members) inAnyCollection.add(m.workId);
 eq(Array.from(inAnyCollection).filter((s) => b7Slugs.includes(s)).length, 108, "108 of the 116 new works belong to a Batch-7 collection (8 stand alone)");
@@ -321,7 +325,7 @@ for (const id of NEW_COLLECTION_IDS) { const c = collectionById(id)!; ok(!!c.mem
 // A17: every SHORT-STORY collection member is itself a discovered story (has a /stories route + STORY_SLUGS
 // entry). The Wave-7 B3 arumbu-1978 anthology is a NOVEL collection (members live on /novels, not
 // STORY_SLUGS); its membership integrity is owned by validate-wave7-b2-b4-p4-integration, so it is excluded.
-for (const c of LIBRARY_COLLECTIONS.filter((c) => c.id !== "arumbu-1978")) for (const m of c.members) ok(storySlugSet.has(m.workId), `collection member ${m.workId} is a discovered story slug`);
+for (const c of LIBRARY_COLLECTIONS.filter((c) => c.id !== "arumbu-1978" && !W7K_COLLECTION_IDS.includes(c.id))) for (const m of c.members) ok(storySlugSet.has(m.workId), `collection member ${m.workId} is a discovered story slug`);
 // A18: no duplicate LibraryWork anywhere (plural membership never duplicated a work).
 eq(new Set(LIBRARY_WORKS.map((w) => w.id)).size, LIBRARY_WORKS.length, "LIBRARY_WORKS has no duplicate id");
 

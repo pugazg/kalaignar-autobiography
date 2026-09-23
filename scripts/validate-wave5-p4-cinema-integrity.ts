@@ -27,6 +27,7 @@ import sitemap from "../app/sitemap";
 import { manthiriItemSlugs, rajaSectionSlugs } from "../lib/cinema-wave5-routes";
 import type { ManthiriReader } from "../data/manthiri-kumari";
 import type { RajaRaniReader } from "../data/raja-rani";
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 
 const CAP = 6; // must match INITIAL_WORKS_PER_SHELF in components/LibraryHome.tsx
 const BASE = "https://nenjukkuneethi.org";
@@ -257,7 +258,7 @@ eq(nonWave5Cinema.length, 65 + 133, "A4 non-Wave-5 cinema URLs = 65 ammaiyappan 
 // now lives in scripts/validate-wave6-p4-integration.ts; A5/A6 keep these as a coherence cross-check
 // confirming the six frozen Wave-5 Cinema families still sit correctly within the larger Reading Room.
 const works = publishedWorks();
-eq(works.length, 232, "A5 published works = 232 (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(works.length, 232 + W7K.works, "A5 published works = 333 (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/K: +101)");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 // Compare as sorted [shelf, count] pairs so a change in LIBRARY_WORKS declaration order (which sets
@@ -265,14 +266,14 @@ for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 const sortedCensus = (o: Record<string, number>) => Object.entries(o).sort((a, b) => a[0].localeCompare(b[0]));
 eq(sortedCensus(byShelf), sortedCensus({
   "life-writing": 1, letters: 1, fiction: 162, poetry: 14, drama: 10,
-  "cinema-writing": 10, speeches: 17, "essays-articles": 15, "literary-commentary": 2,
-}), "A5 shelf census (post Wave-7 B2-B4: Fiction 157→162, Drama 8→10, Essays 9→15)");
+  "cinema-writing": 10, speeches: 17 + W7K.speeches, "essays-articles": 15, "literary-commentary": 2 + W7K.literaryCommentary,
+}), "A5 shelf census (post Wave-7 B2-B4: Fiction 157→162, Drama 8→10, Essays 9→15; post Wave-7 B5/B6/K: Speeches 17→117, Literary Commentary 2→3)");
 eq(Object.keys(byShelf).length, 9, "A5 exactly 9 non-empty shelves");
-eq(LIBRARY_COLLECTIONS.length, 7, "A5 collections = 7 (1977 + 5 Batch-7 + arumbu-1978)");
+eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "A5 collections = 9 (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 90, "A5 discovery entries = 90 (post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "A5 initially visible discovery entries = 40 (cinema already over-cap)");
+eq(entries.length, 90 + W7K.discovery, "A5 discovery entries = 96 (post Wave-7 B5/B6/K: +6; post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible, "A5 initially visible discovery entries = 41 (cinema already over-cap; +1 Literary Commentary under the cap)");
 const cin = shelves.find((s) => s.shelf.id === "cinema-writing")!;
 eq(cin.entries.length, 10, "A5 Cinema renders 10 discovery entries (post Wave-7 B1: +3)");
 ok(cin.entries.length > CAP, "A5 Cinema is over the cap — disclosure control active (10 > 6)");
@@ -280,7 +281,7 @@ eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), 
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "A5 Fiction has 20 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)");
 
 // ── A6. Sitemap boundary ────────────────────────────────────────────────────────────────────────
-eq(urls.length, 4267, "A6 sitemap holds 4267 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225)");
+eq(urls.length, 4267 + W7K.sitemap, "A6 sitemap holds 4779 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225; post Wave-7 B5/B6/K: +512)");
 eq(new Set(urls).size, urls.length, "A6 sitemap has 0 duplicate URLs");
 
 // ── A7. Build-output boundary — SCOPED TO THE SIX FROZEN WAVE-5 CINEMA FAMILIES ────────────────────

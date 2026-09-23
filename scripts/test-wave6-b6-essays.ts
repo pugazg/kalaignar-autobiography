@@ -25,6 +25,7 @@ import { WAVE6_ESSAY_SLUGS } from "../lib/essays-wave6-routes";
 import sitemap from "../app/sitemap";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 
 const BASE = "https://nenjukkuneethi.org";
 let checks = 0;
@@ -104,8 +105,8 @@ ok(true, "Essay landing + article reader render for Batch-6 works without error"
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 for (const r of routes) eq(urls.filter((u) => u === `${BASE}${r}`).length, 1, `A13: route ${r} present exactly once in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
-eq(LIBRARY_COLLECTIONS.length, 7, "public collection registry is 7 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978)");
+eq(works.length, 232 + W7K.works, "catalogue is 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
+eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "public collection registry is 9 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978 + 2 முத்துக் குளியல்)");
 const essaysShelf = discoveryShelves().find((s) => s.shelf.id === "essays-articles");
 ok(!!essaysShelf, "Essays & Articles discovery shelf present");
 const essayEntries = essaysShelf ? essaysShelf.entries : [];

@@ -65,7 +65,9 @@
     "test:wave7-b5-b6-k-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p1-hidden.ts",
     "test:wave7-b5-b6-k-p2-fidelity": "node scripts/validate-wave7-b5-b6-k-p2-fidelity.mjs",
     "test:wave7-b5-b6-k-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b5-b6-k-p2-render.ts",
-    "test:wave7-b5-b6-k-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p3-routes.ts"
+    "test:wave7-b5-b6-k-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p3-routes.ts",
+    "test:wave7-b5-b6-k-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p4-integration.ts",
+    "test:wave7-b5-b6-k-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b5-b6-k-public-provenance.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

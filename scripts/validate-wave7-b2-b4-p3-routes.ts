@@ -26,6 +26,9 @@ import { wave7NovelToNovel } from "../lib/wave7-novels-adapter";
 import { generateStaticParams as dramaSceneParams } from "../app/plays/[slug]/[scene]/page";
 import { generateStaticParams as novelSectionParams } from "../app/novels/[slug]/[section]/page";
 import { generateStaticParams as essayArticleParams } from "../app/essays/[slug]/articles/[article]/page";
+// Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): its derived contribution is added ONLY once it is published.
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
+const W7K = (LIBRARY_WORKS.some((w) => w.id === "kuraloviyam") ? W7K_ALL : { works: 0, collections: 0, discovery: 0, visible: 0, sitemap: 0, build: 0 });
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -87,7 +90,7 @@ if (fs.existsSync(pm)) {
   // The 224 direct routes are phase-invariant; at P4 publication additionally introduces exactly one
   // collection landing (/collections/arumbu-1978), so the build grows by 1 relative to the recorded P3.
   const collectionRoutes = phase === "P4" && keys.has("/collections/arumbu-1978") ? 1 : 0;
-  eq(keys.size, p3.buildDelta.afterP3.prerenderRoutes + collectionRoutes, `build prerender total == afterP3${collectionRoutes ? " + 1 (arumbu-1978 route)" : ""} (${p3.buildDelta.afterP3.prerenderRoutes + collectionRoutes})`);
+  eq(keys.size, p3.buildDelta.afterP3.prerenderRoutes + collectionRoutes + W7K.build, `build prerender total == afterP3${collectionRoutes ? " + 1 (arumbu-1978 route)" : ""} (${p3.buildDelta.afterP3.prerenderRoutes + collectionRoutes})`);
   eq(p3.buildDelta.afterP3, { prerenderRoutes: 4275, html: 4270 }, "afterP3 build boundary 4275/4270 (recorded P3 delta)");
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
