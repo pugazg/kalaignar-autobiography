@@ -33,6 +33,12 @@ let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
 const load = (p: string) => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
 const ta = (el: React.ReactElement) => renderToStaticMarkup(createElement(LangProvider, null, el)); // Tamil default
+// ENGLISH UI state: the real LangProvider seeded to "en" (the same context the site toggle sets) — so the
+// components' own `ta` branches are exercised, not helper strings.
+const en = (el: React.ReactElement) => renderToStaticMarkup(createElement(LangProvider, { initialLang: "en", children: el }));
+// Visible text of a render (tags stripped, entities decoded) — what a reader actually sees.
+const visible = (h: string) => h.replace(/<[^>]*>/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+const count = (h: string, re: RegExp) => (h.match(new RegExp(re.source, "g")) || []).length;
 const hasTamil = (s: string) => /[஀-௿]/.test(s);
 const hasLatin = (s: string) => /[A-Za-z]{3,}/.test(s);
 const LEAK = /\bundefined\b|>null<|\bNaN\b/;
@@ -111,11 +117,8 @@ for (const slug of ESSAYS) {
   // duplicated-numeral rows; the note says the sections are source-numbered with no printed contents page
   // and never calls them archive-created; the publication title appears once (as the page title).
   const pesum = load(`public/data/essays/pesum-kalai-valarppom/publication.json`);
-  // Both the "பகுதி N" (Tamil) and "Section N" (English) labels render in every row regardless of the
-  // active language, so the Tamil-default render carries both.
   const landTa = ta(createElement(EssayLanding, { pub: pesum }));
   ok(landTa.includes("பகுதி 1") && landTa.includes("பகுதி 19"), "pesum landing: shows பகுதி 1 … பகுதி 19");
-  ok(landTa.includes("Section 1") && landTa.includes("Section 19"), "pesum landing: shows Section 1 … Section 19");
   // No bare-numeral duplication (the "2 2 2" defect): no list row renders a bare numeral as its title.
   ok(!/>\s*2\s*<\/span>\s*<span[^>]*lang="ta"[^>]*>\s*2\s*</.test(landTa), "pesum landing: no duplicated bare-numeral title row (the '2 2 2' defect)");
   ok(/பகுதி எண்கள்|நூலின் உட்பகுதியில்/.test(landTa) && !/வாசிப்பு வரிசை எண்கள்/.test(landTa), "pesum landing note (Tamil): source-visible section numbers, not archive reading ordinals");
@@ -134,6 +137,93 @@ for (const slug of ESSAYS) {
     const rE = ta(createElement(ArticleReader, { pub: vid, article: a, prev: null, next: null, initialShowEn: true }));
     ok(!/Assembly provenance|P3 assembly audit|P5 strict visual|page-record coverage|omitted canonical/i.test(r + rE), `viduthalai/${a.slug}: no archival-control apparatus rendered in the reader`);
   }
+}
+
+// ── SOURCE-SECTION PUBLIC SEMANTICS (every source-section publication, both UI languages) ──────────────
+// The source supplies ONE numbered identity per section and no descriptive titles, so every public surface
+// shows that number ONCE, in the active UI language, and never calls a section an "article". Driven by
+// `numberSource`, not by slug, so any future source-section work is held to the same rule.
+{
+  const sectionedSlugs = ESSAYS.filter((slug) => {
+    const arts = load(`public/data/essays/${slug}/publication.json`).articles as { numberSource: string }[];
+    return arts.length > 0 && arts.every((a) => a.numberSource === "source-section");
+  });
+  ok(sectionedSlugs.includes("pesum-kalai-valarppom"), "source-section: pesum-kalai-valarppom is a source-section publication");
+  for (const slug of sectionedSlugs) {
+    const pub = load(`public/data/essays/${slug}/publication.json`);
+    const prov = load(`public/data/essays/${slug}/provenance.json`);
+    const arts = pub.articles;
+    const N = arts.length;
+    const num = (label: string, n: number) => new RegExp(`${label} ${n}(?!\\d)`);
+    // (9) No descriptive section titles are invented, in the data or the rendered map.
+    ok(arts.every((a: { titleTa: string; titleEn: string }) => !a.titleTa && !a.titleEn), `${slug}: no descriptive section titles in the data`);
+
+    // (1)/(2) CONTENTS — one label per row, in the active language; the number appears once per row.
+    const landTa = ta(createElement(EssayLanding, { pub }));
+    const landEn = en(createElement(EssayLanding, { pub }));
+    const rows = (h: string) => h.split("<li").slice(1).map((r) => visible(r.slice(r.indexOf(">") + 1, r.indexOf("</li>"))));
+    const rowsTa = rows(landTa), rowsEn = rows(landEn);
+    ok(rowsTa.length === N && rowsEn.length === N, `${slug}: contents lists ${N} rows in both UI languages`);
+    for (let i = 0; i < N; i++) {
+      const n = arts[i].number;
+      const numOnce = (r: string) => count(r.replace(/(ஸ்கேன்|scans|அச்சுப் பக்கம்|printed)\s[\d–, ]+/g, ""), new RegExp(`(?<!\\d)${n}(?!\\d)`)) === 1;
+      ok(count(rowsTa[i], num("பகுதி", n)) === 1 && !num("Section", n).test(rowsTa[i]), `${slug} contents (Tamil UI) row ${n}: "பகுதி ${n}" exactly once, no "Section ${n}"`);
+      ok(count(rowsEn[i], num("Section", n)) === 1 && !num("பகுதி", n).test(rowsEn[i]), `${slug} contents (English UI) row ${n}: "Section ${n}" exactly once, no "பகுதி ${n}"`);
+      ok(numOnce(rowsTa[i]) && numOnce(rowsEn[i]), `${slug} contents row ${n}: the source number occurs once (beside the scan/page range)`);
+    }
+    ok(landEn.includes(`Contents — ${N} sections`) && landTa.includes(`பொருளடக்கம் — ${N} பகுதிகள்`), `${slug}: contents heading counts sections in both languages`);
+
+    // (3)/(4) SOURCE & PROVENANCE — the section map, and no public "article" wording for the sections.
+    const srcTa = ta(createElement(ArticleSource, { slug, prov }));
+    const srcEn = en(createElement(ArticleSource, { slug, prov }));
+    ok(srcEn.includes(`Section map — ${N} sections`), `${slug} source (English UI): "Section map — ${N} sections"`);
+    ok(srcTa.includes(`பகுதி வரைபடம் — ${N}`), `${slug} source (Tamil UI): "பகுதி வரைபடம் — ${N}"`);
+    // The shelf name "Essays & Articles" is the catalogue category, not a label for these units.
+    const srcVisEn = visible(srcEn).replace(/Essays & Articles/g, "");
+    const srcVisTa = visible(srcTa).replace(/Essays & Articles/g, "");
+    ok(!/\barticles?\b/i.test(srcVisEn), `${slug} source (English UI): the ${N} reading units are never publicly called "article(s)"`);
+    ok(!/\barticles?\b/i.test(srcVisTa) && !/கட்டுரை/.test(srcVisTa), `${slug} source (Tamil UI): no "கட்டுரை" / "article" label for the sections`);
+    ok(/>Sections</.test(srcEn) && /Section assemblies/.test(srcEn) && /Locked exclusions from every section body/.test(srcEn), `${slug} source (English UI): section-aware row/card labels`);
+    ok(/>பகுதிகள்</.test(srcTa) && /பகுதித் தொகுப்புகள்/.test(srcTa), `${slug} source (Tamil UI): section-aware row labels`);
+
+    // (5)–(8) READER — sticky header, prev/next, navigation accessibility and explanatory prose follow
+    // the active UI language and section semantics. Checked on every interior section.
+    for (let i = 1; i < N - 1; i++) {
+      const a = arts[i], p = arts[i - 1], x = arts[i + 1];
+      const props = { pub, article: a, prev: p, next: x };
+      const rTa = ta(createElement(ArticleReader, props));
+      const rEn = en(createElement(ArticleReader, props));
+      const rTaEnLayer = ta(createElement(ArticleReader, { ...props, initialShowEn: true }));
+      const rEnEnLayer = en(createElement(ArticleReader, { ...props, initialShowEn: true }));
+      const tid = (h: string, id: string) => { const m = h.match(new RegExp(`data-testid="${id}"[^>]*>([^<]*)<`)); return m ? m[1] : null; };
+      ok(tid(rTa, "reader-sticky-unit") === `பகுதி ${a.number}` && tid(rEn, "reader-sticky-unit") === `Section ${a.number}`, `${slug}/${a.slug}: sticky header is language-aware (பகுதி / Section ${a.number})`);
+      ok(tid(rTa, "reader-prev-unit") === `பகுதி ${p.number}` && tid(rTa, "reader-next-unit") === `பகுதி ${x.number}`, `${slug}/${a.slug}: prev/next (Tamil UI) = பகுதி ${p.number} / பகுதி ${x.number}`);
+      ok(tid(rEn, "reader-prev-unit") === `Section ${p.number}` && tid(rEn, "reader-next-unit") === `Section ${x.number}`, `${slug}/${a.slug}: prev/next (English UI) = Section ${p.number} / Section ${x.number}`);
+      ok(rTa.includes('aria-label="பகுதி வழிசெலுத்தல்"') && rEn.includes('aria-label="Section navigation"'), `${slug}/${a.slug}: navigation landmark uses section semantics in both languages`);
+      ok(!/Article navigation|கட்டுரை வழிசெலுத்தல்/.test(rTa + rEn), `${slug}/${a.slug}: no "Article navigation" landmark`);
+      ok(rEn.includes(`Section ${a.number} of ${N}`) && !num("பகுதி", a.number).test(visible(rEn)), `${slug}/${a.slug}: English UI shows "Section ${a.number} of ${N}" and never "பகுதி ${a.number}"`);
+      ok(!num("Section", a.number).test(visible(rTa)), `${slug}/${a.slug}: Tamil UI never shows "Section ${a.number}"`);
+      ok(rTa.includes("சரிபார்க்கப்பட்ட தமிழ்ப் பகுதி") && rEn.includes("The verified Tamil section,"), `${slug}/${a.slug}: explanatory prose says பகுதி / section`);
+      // (8) + the shelf-label exemption: no reader CHROME (either UI language, either text layer) calls it an
+      // article. The literary body is excluded — Kalaignar's own words ("இந்தக் கட்டுரையை நான் எழுதும்போது" /
+      // "As I write this article") are verbatim source text and must never be rewritten.
+      const chrome = (h: string) => { const b = h.indexOf('data-testid="reader-body"'); return b < 0 ? h : h.slice(0, b) + h.slice(h.indexOf("<nav", b)); };
+      for (const [lbl, h] of [["ta", rTa], ["en", rEn], ["ta+EN layer", rTaEnLayer], ["en+EN layer", rEnEnLayer]] as const) {
+        ok(h.includes('data-testid="reader-body"'), `${slug}/${a.slug} (${lbl}): reader body container located`);
+        const v = visible(chrome(h)).replace(/Essays & Articles/g, "");
+        ok(!/\barticles?\b/i.test(v) && !/கட்டுரை/.test(v), `${slug}/${a.slug} (${lbl}): no "article" / "கட்டுரை" wording on the reader`);
+      }
+      // (9) The heading is the section label alone — no invented descriptive title or subtitle.
+      const h1 = (h: string) => visible((h.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || ["", ""])[1]).trim();
+      ok(h1(rTa) === `பகுதி ${a.number}` && h1(rEn) === `Section ${a.number}`, `${slug}/${a.slug}: heading is the section label only (no invented title)`);
+    }
+  }
+  // Non-sectioned works keep article semantics (the section rule is scoped by numberSource).
+  const vidPub = load("public/data/essays/viduthalai-kilarcci/publication.json");
+  const vr = en(createElement(ArticleReader, { pub: vidPub, article: vidPub.articles[0], prev: null, next: vidPub.articles[1] }));
+  ok(vr.includes('aria-label="Article navigation"') && vr.includes("The verified Tamil article,"), "viduthalai (non-sectioned): article semantics unchanged");
+  const vl = en(createElement(EssayLanding, { pub: vidPub }));
+  ok(vidPub.articles.every((a: { titleTa: string; titleEn: string }) => vl.includes(esc(a.titleTa)) && vl.includes(esc(a.titleEn))), "viduthalai (non-sectioned): contents keeps Tamil + English titles");
 }
 
 // ── NOVELS (5 works via the bounded adapter) ─────────────────────────────────────────────────────────

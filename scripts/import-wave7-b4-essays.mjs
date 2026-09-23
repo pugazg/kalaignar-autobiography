@@ -497,6 +497,11 @@ for (const w of WORKS) {
     ? [w.firstEdition.statementTa, ...(w.firstEdition.publisherTa ? [w.firstEdition.publisherTa] : []), ...(w.firstEdition.priceTa ? [w.firstEdition.priceTa] : [])]
     : undefined;
 
+  // Public reading-unit noun for provenance prose: a source-section work's units are numbered SECTIONS, not
+  // articles (every other work keeps "article", so its output is byte-identical).
+  const unit = w.numberModel === "source-section" ? "section" : "article";
+  const unitSg = unit === "section" ? "a section" : "an article";
+
   const provenance = {
     workId: w.slug, sourceRepo: "pugazg/kalaignar-essays", sourcePath: `publications/${w.slug}`,
     sourceCommit: APPROVED_SOURCE_COMMIT, sourceTree: w.tree,
@@ -535,7 +540,7 @@ for (const w of WORKS) {
       translatorNotesSeparated: "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
       labelPolicy: [
         "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
-        "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing.",
+        `Quoted third-party material inside ${unitSg} stays a separate voice from Kalaignar's own framing.`,
       ],
     },
     archiveDerived: {
@@ -555,9 +560,9 @@ for (const w of WORKS) {
       relationUnknown: articles.reduce((n, a) => n + a.pageTransitions.filter((t) => t.relation === "unknown").length, 0),
       ...(damageNotes.length ? { sourceDamageNotes: [...new Set(damageNotes)] } : {}),
       voiceNote: "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
-      boundaryNote: "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+      boundaryNote: `These archives record no per-edge continuation adjudication, so every in-${unit} page transition is reported as \`unknown\` rather than guessed from adjacency.`,
       provenanceGranularity: "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
-      note: "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers.",
+      note: `Archive-derived counts, recomputed at import time from the frozen source. Per-${unit} scan runs and printed-page evidence are derived from each assembly's own scan markers.`,
     },
     notes: [
       "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",

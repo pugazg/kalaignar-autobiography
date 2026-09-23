@@ -5,7 +5,7 @@ import { ArrowLeft, BookOpen, Home, Info, Newspaper } from "lucide-react";
 import type { EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
 import { Fragment } from "react";
-import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel, isSourceSectioned, unitNoun } from "@/lib/essay-source-facts";
+import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel, isSourceSectioned, readingUnitLabel, unitNoun } from "@/lib/essay-source-facts";
 
 // The publication landing: title, author, source-edition context and the source-numbered table of
 // contents. The publication is ONE catalog work; its 14 articles are reading units inside it.
@@ -94,10 +94,14 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
                 <span className="w-6 shrink-0 pt-0.5 text-right text-xs tabular-nums text-ink/40 dark:text-night-text/40">{sectioned ? "" : a.number}</span>
                 <span className="min-w-0">
                   {sectioned ? (
-                    <>
-                      <span className="block font-tamil text-[0.98rem] leading-snug text-ink/90 dark:text-night-text/90" lang="ta">பகுதி {a.number}</span>
-                      <span className="mt-0.5 block text-sm text-ink/55 dark:text-night-text/55">Section {a.number}</span>
-                    </>
+                    // ONE label in the active UI language — the source supplies a single numbered identity and
+                    // no descriptive titles, so "பகுதி N" and "Section N" together would repeat the number.
+                    <span
+                      className={`block text-[0.98rem] leading-snug text-ink/90 dark:text-night-text/90${ta ? " font-tamil" : ""}`}
+                      lang={ta ? "ta" : "en"}
+                    >
+                      {readingUnitLabel(a, ta)}
+                    </span>
                   ) : (
                   <>
                   <span className="block font-tamil text-[0.98rem] leading-snug text-ink/90 dark:text-night-text/90" lang="ta">

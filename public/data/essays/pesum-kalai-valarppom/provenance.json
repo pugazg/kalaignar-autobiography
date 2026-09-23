@@ -204,7 +204,7 @@
   "translatorNotesSeparated": "Translator/editorial notes released by the archive are carried OUTSIDE the authored body so they can never be read as Kalaignar's prose.",
   "labelPolicy": [
    "English is a project-created translation of the frozen Tamil; the Tamil remains authoritative.",
-   "Quoted third-party material inside an article stays a separate voice from Kalaignar's own framing."
+   "Quoted third-party material inside a section stays a separate voice from Kalaignar's own framing."
   ]
  },
  "archiveDerived": {
@@ -223,9 +223,9 @@
   "pageTransitionsAudited": 69,
   "relationUnknown": 69,
   "voiceNote": "Source block structure and voice structure are independent dimensions; a paragraph carrying both Kalaignar's framing and a quotation is never rendered wholly as a quote.",
-  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-article page transition is reported as `unknown` rather than guessed from adjacency.",
+  "boundaryNote": "These archives record no per-edge continuation adjudication, so every in-section page transition is reported as `unknown` rather than guessed from adjacency.",
   "provenanceGranularity": "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
-  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-article scan runs and printed-page evidence are derived from each assembly's own scan markers."
+  "note": "Archive-derived counts, recomputed at import time from the frozen source. Per-section scan runs and printed-page evidence are derived from each assembly's own scan markers."
  },
  "notes": [
   "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
