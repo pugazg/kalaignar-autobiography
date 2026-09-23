@@ -1,0 +1,134 @@
+{
+ "workId": "kuraloviyam",
+ "sourceRepo": "pugazg/kalaignar-literary-commentary",
+ "sourcePath": "works/kuraloviyam",
+ "sourceCommit": "d542b4cc3749bf1966e3537d1eb34d421344faf5",
+ "source": {
+  "titleTa": "குறளோவியம்",
+  "authorTa": "கலைஞர் மு. கருணாநிதி",
+  "publisherTa": "பாரதி பதிப்பகம்",
+  "priceTa": "ரூ.1200.00",
+  "editionsEn": [
+   "First Edition: February 1985",
+   "Second Edition: June 1986",
+   "Third Edition: September 1992",
+   "Fourth Edition: June 1997",
+   "Fifth Edition: December 1999",
+   "Sixth Edition: January 2004",
+   "Seventh Edition: December 2008",
+   "Eighth Edition: April 2009",
+   "Ninth Edition: February 2011",
+   "Tenth Edition: September 2018"
+  ],
+  "scanFamily": "TVA_BOK_0065733",
+  "scanTotal": 666,
+  "splits": [
+   {
+    "part": 1,
+    "filename": "TVA_BOK_0065733_குறளோவியம்_part_001_pages_1-111.pdf",
+    "scans": "1–111",
+    "pages": 111
+   },
+   {
+    "part": 2,
+    "filename": "TVA_BOK_0065733_குறளோவியம்_part_002_pages_112-222.pdf",
+    "scans": "112–222",
+    "pages": 111,
+    "sha256": "4397caf9ba405ba65f50865c85e24461ea56bd2efa3dd589d31469877c9a4bda",
+    "bytes": 93279161
+   },
+   {
+    "part": 3,
+    "filename": "TVA_BOK_0065733_குறளோவியம்_part_003_pages_223-333.pdf",
+    "scans": "223–333",
+    "pages": 111,
+    "sha256": "f07e7cdb3a6e786b0378e00bbe699a241be41c9e099c004a4faa90fa82b4239f",
+    "bytes": 93488924
+   },
+   {
+    "part": 4,
+    "filename": "TVA_BOK_0065733_குறளோவியம்_part_004_pages_334-444.pdf",
+    "scans": "334–444",
+    "pages": 111,
+    "sha256": "5b7fcc65f19dc3d2a57bebb13cdfb02d0c83f70a5ccc9e537886790908674581",
+    "bytes": 91513473
+   },
+   {
+    "part": 5,
+    "filename": "TVA_BOK_0065733_குறளோவியம்_part_005_pages_445-555.pdf",
+    "scans": "445–555",
+    "pages": 111,
+    "sha256": "082d46dc437851b37bea24c3152c2ea41b39c425628ddaa66461866a3177c235",
+    "bytes": 117049042
+   },
+   {
+    "part": 6,
+    "filename": "TVA_BOK_0065733_குறளோவியம்_part_006_pages_556-666.pdf",
+    "scans": "556–666",
+    "pages": 111,
+    "sha256": "76f5f3d9f926c148c30ae9f8b1917f4cf423134a6bc09a16ad9eea4bb766c804",
+    "bytes": 118543819
+   }
+  ],
+  "binaryVendored": false
+ },
+ "verification": {
+  "visualVerified": 666,
+  "tamilTextualVerified": 662,
+  "englishReleaseReady": 662,
+  "sourceLimitedScans": [
+   13,
+   14,
+   15,
+   19
+  ],
+  "blocked": 0
+ },
+ "sourceLimitedPages": [
+  {
+   "scan": 13,
+   "printed": "xii",
+   "pageType": "handwritten-facsimile",
+   "unit": "front-04"
+  },
+  {
+   "scan": 14,
+   "printed": "xiii",
+   "pageType": "handwritten-facsimile",
+   "unit": "front-04"
+  },
+  {
+   "scan": 15,
+   "printed": "xiv",
+   "pageType": "handwritten-facsimile",
+   "unit": "front-04"
+  },
+  {
+   "scan": 19,
+   "printed": "2",
+   "pageType": "body-prose",
+   "unit": "front-06"
+  }
+ ],
+ "english": {
+  "kind": "project-created",
+  "basis": "the audited Tamil page records"
+ },
+ "structure": {
+  "entries": 300,
+  "frontMatterSections": 7,
+  "crosswalk": {
+   "resolved": 298,
+   "partialSourceMetadata": [
+    46,
+    104
+   ]
+  },
+  "note": "Book → Iyal → Adhikaram placement is an archive-derived navigation scaffold. Adhikaram and Kural assignments are taken only from the audited pages; no missing Chapter or Kural number is filled from another edition."
+ },
+ "notes": [
+  "The controlling source is the scanned 666-page book, supplied as six physical 111-page splits. The PDFs are not vendored; their identity travels as filename, SHA-256 and page map.",
+  "Scans 13, 14, 15 and 19 are permanently source-limited: three handwritten facsimile prefaces and one page with washed-out words. Their unreadable wording is not transcribed, translated or inferred.",
+  "Illustrations, stamps and handwritten marks are described in the archive's own words and shown apart from the text."
+ ]
+}

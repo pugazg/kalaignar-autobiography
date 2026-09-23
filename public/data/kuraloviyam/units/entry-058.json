@@ -1,0 +1,297 @@
+{
+ "work": "kuraloviyam",
+ "id": "entry-058",
+ "kind": "entry",
+ "number": 58,
+ "contentsKey": "அ. அறன்கடை நின்றாருள் / ஆ. எளிதென இல்லிறப்பான்",
+ "printedSpan": [
+  133,
+  135
+ ],
+ "expectedKuralCount": 2,
+ "crosswalkStatus": "RESOLVED",
+ "assignments": [
+  {
+   "chapter": 15,
+   "titleTa": "பிறனில் விழையாமை",
+   "kurals": [
+    142,
+    145
+   ],
+   "bookTa": "அறத்துப்பால்",
+   "bookKey": "01-aram",
+   "iyalTa": "இல்லறவியல்",
+   "iyalKey": "02-illaraviyal"
+  }
+ ],
+ "scans": [
+  150,
+  151,
+  152
+ ],
+ "pages": [
+  {
+   "scan": 150,
+   "printed": "133",
+   "pageType": "body-illustrated",
+   "ta": [
+    {
+     "kind": "archival",
+     "text": "Large colour multi-scene domestic illustration showing several women and a man in linked dramatic moments."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அரண்மனையொன்றில் இரண்டு இணைபிரியா நண்பர்கள், உயர்ந்த ஊதியம் பெறும் பதவியில் இருந்தார்கள். அவர்களுடைய பெயர்கள் கற்பனைப் பெயர்கள்தான். எனினும் கதைக்காகவும் கதையின் கருத்துக்காகவும் தேவைப்படுகிற பெயர்கள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஒருவன் பெயர் ‘தெளிந்தான்.’"
+    },
+    {
+     "kind": "paragraph",
+     "text": "மற்றொருவன் பெயர் ‘நெளிந்தான்.’"
+    }
+   ],
+   "en": [
+    {
+     "kind": "archival",
+     "text": "Large colour multi-scene domestic illustration showing several women and a man in linked dramatic moments."
+    },
+    {
+     "kind": "paragraph",
+     "text": "In a palace there were two inseparable friends who held highly paid posts. Their names were imaginary. Even so, they were names needed for the story and for its central idea."
+    },
+    {
+     "kind": "paragraph",
+     "text": "One was named “Thelindhan.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "The other was named “Nelindhan.”"
+    }
+   ]
+  },
+  {
+   "scan": 151,
+   "printed": "134",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "இருவரும் திருமணமானவர்கள். தெளிந்தானின் மனைவியும் நெளிந்தானின் மனைவியும் அழகில் ஒருவரையொருவர் வெற்றி கொள்ளக்கூடிய அளவுக்குச் சிறப்புறத் திகழ்ந்தவர்கள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "மிக நெருக்கமான நட்புக்கு இடையிலேயும் நெளிந்தானின் நெஞ்சத்தில் தெளிந்தானின் மனைவியைப் பற்றிய தீய நினைவுகள் தலையெடுத்தன. தன் நண்பனின் உள்ளத்தில் இப்படியொரு நோய் வளர்ந்து வருவதைத் தெளிந்தான் உணர்ந்திடவில்லை. அதைப் போலவே அவன் துணைவியும் கள்ளம் கபடமற்றவள். நெளிந்தானின் பார்வையில் படிந்துள்ள காமக்குறிப்புக்களை அவள் கவனித்திடவில்லை. எப்படியும் ஒரு நாள், தன்னுடைய எண்ணத்தை நிறைவேற்றிக்கொள்ள வேண்டுமென்று ஏங்கித் தவித்துக் கொண்டிருந்தான் நெளிந்தான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அவன் எதிர்நோக்கியவாறு, அவன் முயற்சிக்குச் சாதகமாக ஒருநாள் அமைந்தது. அவன் நண்பன் ‘தெளிந்தான்’ அரண்மனை அலுவலாக வேற்றூர் செல்ல நேரிட்டது. அன்று நெளிந்தான், தெளிந்தானின் இல்லத்துக்குச் சென்றான். தெளிந்தானின் மனைவி அவனை வரவேற்று, முன்கூடத்தில் அமரச் சொன்னாள். “எதாவது அருந்துகிறீர்களா?” என அன்புடன் கேட்டாள் அவள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“எதுவும் இப்போது தேவையில்லை” என்றான் அவன், கண்களில் வெறி நடனமாட!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“வீட்டுக்கு வந்துவிட்டு எதுவும் பருகாமல் செல்வதா? பால் இருக்கிறது; கொண்டு வருகிறேன்.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“வேண்டாம்! வேண்டாம்! திருக்குறளில் மூன்றாவது பால் தெரியுமா உனக்கு?”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“என்ன சொல்கிறீர்கள்?”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“அதுதான் காமத்துப்பால்!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "என்று கூறியவாறு, அவளை ஓடிப் போய்த் தழுவத் தொடங்கினான். ஒரு கணம் அதிர்ச்சி அடைந்தாள். பிறகு எரிமலை- கடலின் கொந்தளிப்பு- கைகளில் வலிவு உள்ள வரையில், அவன் கன்னங்களில் அறைந்தாள். நெளிந்தான், தன் பெயருக்கேற்ப நெளிந்தான். ஓட முயன்றான். அவள், அவனைப் பார்த்து உரக்கப் பேசினாள்:"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“குறளில் மூன்றாவது பால் தெரியுமா என்றா கேட்கிறாய்? மூடனே, முதற்பால் அறத்துப்பாலைப் படித்துப் பார்! அப்போது புரியும் உனக்கு!"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "“அறன்கடை நின்றாருள் எல்லாம் பிறன்கடை  \nநின்றாரின் பேதையார் இல்.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "இந்தக் குறளுக்குப் பொருள் விளங்குகிறதா? சொல்லுகிறேன் கேள்! அறத்தை விட்டுத் தீய வழிகளில் நின்றவர்கள் எல்லாரையும்விட, பிறனுடைய மனைவியை விரும்பி அந்த வீட்டு வாயிலில் போய் நின்றவர்கள் அறிவிலிகள். ஆம்! அவர்களைப்போல் அறமொழிந்த அறிவிலிகளே இல்லை.”"
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "Both men were married. Thelindhan's wife and Nelindhan's wife were women of such beauty that each could rival the other."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Even within that intimate friendship, evil thoughts about Thelindhan's wife arose in Nelindhan's heart. Thelindhan did not realize that such a sickness was growing in his friend's mind. His wife too was innocent, without deceit or guile. She did not notice the signs of lust that had settled in Nelindhan's gaze. Nelindhan kept yearning somehow to fulfil his desire one day."
+    },
+    {
+     "kind": "paragraph",
+     "text": "As he had hoped, one day circumstances turned favourable for his attempt. His friend Thelindhan had to travel to another town on palace business. That day Nelindhan went to Thelindhan's house. Thelindhan's wife welcomed him and asked him to sit in the front hall. “Would you like something to drink?” she asked affectionately."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“I need nothing now,” he said, frenzy dancing in his eyes."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“After coming to our house, how can you leave without drinking anything? There is milk; I will bring some.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“No! No! Do you know the third paal in the Thirukkural?”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“What are you saying?”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“That is the Kamathuppaal—the Book of Love!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Saying this, he rushed at her and began to embrace her. For a moment she was stunned. Then she became a volcano—the fury of the sea—and, with all the strength in her hands, struck his cheeks again and again. Nelindhan bent and crumpled, true to his name. He tried to run. She looked at him and spoke loudly:"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“You ask whether I know the third paal of the Kural? Fool! Read the first paal, the Book of Aram! Then you will understand!"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "Among all who stand outside virtue, none are more foolish  \nthan those who stand at another man's door desiring his wife."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Do you understand the meaning of this Kural? Listen, I will tell you! Of all those who abandon virtue and stand in evil ways, the greatest fools are those who desire another man's wife and go stand at the doorway of that house. Yes! There are none so ignorant of virtue as they are.”"
+    }
+   ]
+  },
+  {
+   "scan": 152,
+   "printed": "135",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "நெளிந்தான், வாயடைத்துப் போய், வலிபெடுத்த கன்னங்களைத் தடவிக் கொண்டே, தலை குனிந்தவாறு வெளியேறினான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "மறுநாள் தன் மணாளன் தெளிந்தான் வந்ததும், ‘நெளிந்தான்’ நடந்து கொண்ட முறையைச் சொல்லிக் கதறி அழுதுவிட்டாள். தெளிந்தானுக்குச் சினம் பொங்கிற்று. நண்பனுக்குச் சரியான பாடம் கற்பிக்க வேண்டுமென்று முடிவு செய்தான். தன் மனைவி வேதனையுற்றதுபோல், அவன் மனைவியும் வேதனையுற வேண்டுமென்று எண்ணினான். தெளிந்தான் என்று பெயர் இருந்தும்கூடக் கோபத்தின் காரணமாக தேர்ந்தெடுக்கக்கூடாத ஒரு வழியைத் தேர்ந்தெடுத்தான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "நெளிந்தான் ஒரு நாள் வெளியூர் சென்றிருந்தான். அதுதான் சமயமென்று தெளிந்தான், நெளிந்தானின் வீட்டுக்குச் சென்றான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "தன் மனைவியிடம் தவறாக நடந்துகொண்டு, அவள் மனத்தைப் புண்படுத்தினான் அல்லவா நெளிந்தான்? அதற்குப் பதிலாக நெளிந்தானின் மனைவியின் மனத்தைப் புண்படுத்த வேண்டுமென்பது அவன் திட்டம்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "தெளிந்தானைக் கண்டதும், நெளிந்தானின் மனைவி, “வாருங்கள்” என்று மிக்க அன்புடன் அழைத்தாள். “பால் பருகுகிறீர்களா? கொண்டு வரட்டுமா?” எனக் கேட்டாள். “கொண்டு வா!” என்றான் கோபத்தை அடக்கிக்கொண்டு!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அவள் பால் கிண்ணத்தை அவனிடம் நீட்டினாள். அவனோ, அவளுடைய கைகளைப் பற்றிக் கொண்டான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அவள் பதறுவாள், துடிப்பாள், அழுப்பாள் என்று அவன் எதிர்பார்த்தான். அவளோ, நாணிக் கோணி, “இருங்கள்” என்றவாறு கதவை மூடுவதற்காகச் சென்றாள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அதிர்ச்சியும் மயக்கமும் அவனுக்கு! அவன் ஒரே ஓட்டமாகத் தன் வீடு போய்ச் சேர்ந்தான். நடந்ததைத் தன் மனைவியிடம் சொன்னான். துணைவனின் போக்கை அவள் கண்டித்தாள். இருப்பினும், அவன் வலையில் சிக்காமல் விடுபட்டதற்காக மகிழ்ச்சி தெரிவித்தாள். அவன் சொன்னான்:"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“எனக்கும் குறள் தெரியும் பெண்ணே!”"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "“எளிதென இல்லிறப்பான் எய்துமெஞ் ஞான்றும்  \nவிளியாது நிற்கும் பழி.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“அதாவது, இச்செயல் எளிதாக நிறைவேறும் என்ற நிலையிலேகூடப் பிறன் மனைவியிடம் நெறி தவறிச் செல்கிறவன் அழியாத பழிக்கு ஆளாவான்.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "கொழுநன் கூறிய குறளையும் விளக்கத்தையும் கேட்டு அந்தக் கார் குழலாள் களிபேருவகை எய்தினாள்."
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 15 - பிறனில் விழையாமை; பாடல்கள் - 142, 145"
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "Nelindhan was left speechless. Rubbing his aching cheeks, he went out with his head bowed."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The next day, when her husband Thelindhan returned, she told him how Nelindhan had behaved and broke down weeping. Anger surged in Thelindhan. He decided that his friend must be taught a fitting lesson. He thought that just as his own wife had suffered, Nelindhan's wife too should suffer. Though his name was Thelindhan—the clear-minded one—anger made him choose a path that ought not to have been chosen."
+    },
+    {
+     "kind": "paragraph",
+     "text": "One day Nelindhan had gone out of town. Thinking this was the opportunity, Thelindhan went to Nelindhan's house."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Nelindhan had behaved wrongly toward his wife and wounded her heart, had he not? His plan was to wound Nelindhan's wife's heart in return."
+    },
+    {
+     "kind": "paragraph",
+     "text": "When she saw Thelindhan, Nelindhan's wife welcomed him warmly: “Come in.” She asked, “Would you like some milk? Shall I bring it?” “Bring it,” he said, restraining his anger."
+    },
+    {
+     "kind": "paragraph",
+     "text": "She held out the cup of milk to him. He seized her hands."
+    },
+    {
+     "kind": "paragraph",
+     "text": "He expected her to panic, tremble and cry. Instead, she shyly drew herself in and said, “Wait,” as she went to close the door."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Shock and bewilderment seized him! He ran straight back to his own house. He told his wife what had happened. She condemned her husband's conduct. Even so, she expressed relief that he had escaped without becoming caught in his own trap. He said:"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“I too know the Kural, my dear!”"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "He who thinks it easy and transgresses into another's home  \ngains a blame that will stand forever without perishing."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“That is, even when such an act seems easy to accomplish, a man who strays from the right path toward another's wife incurs an undying disgrace.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Hearing the Kural and the explanation given by her husband, the dark-haired woman was filled with great joy."
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 15 — Not Desiring Another's Wife; Kurals 142, 145"
+    }
+   ]
+  }
+ ]
+}

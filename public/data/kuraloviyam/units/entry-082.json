@@ -1,0 +1,169 @@
+{
+ "work": "kuraloviyam",
+ "id": "entry-082",
+ "kind": "entry",
+ "number": 82,
+ "contentsKey": "கைவேல் களிற்றொடு",
+ "printedSpan": [
+  185,
+  187
+ ],
+ "expectedKuralCount": 1,
+ "crosswalkStatus": "RESOLVED",
+ "assignments": [
+  {
+   "chapter": 78,
+   "titleTa": "படைச்செருக்கு",
+   "kurals": [
+    774
+   ],
+   "bookTa": "பொருட்பால்",
+   "bookKey": "02-porul",
+   "iyalTa": "படையியல்",
+   "iyalKey": "05-padaiyal"
+  }
+ ],
+ "scans": [
+  202,
+  203,
+  204
+ ],
+ "pages": [
+  {
+   "scan": 202,
+   "printed": "185",
+   "pageType": "body-illustrated",
+   "ta": [
+    {
+     "kind": "archival",
+     "text": "Large colour battlefield illustration with an elephant and a warrior amid fallen fighters."
+    },
+    {
+     "kind": "paragraph",
+     "text": "தெற்குச் சீமை வீரத்தின் விளைநிலம். ஈட்டியின் பாய்ச்சல் கண்டு இமை கொட்டியவன் கோழை; இது தமிழர்களின் போர்க்குரல்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "இருபெரும் நாட்டு வீரர்கள் சந்தித்துப் பேசினார்கள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஒருவன் சொன்னான் பெருமையோடு, “எமது மன்னர் முதுகிலே கவசம் அணியும் பழக்கமில்லை” - என்று!"
+    }
+   ],
+   "en": [
+    {
+     "kind": "archival",
+     "text": "Large colour battlefield illustration with an elephant and a warrior amid fallen fighters."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The southern land is a field where valour grows. The man who blinks at the thrust of a spear is a coward—this is the Tamil war-cry."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Warriors of two great countries met and spoke."
+    },
+    {
+     "kind": "paragraph",
+     "text": "One said proudly, “Our king has no habit of wearing armour on his back.”"
+    }
+   ]
+  },
+  {
+   "scan": 203,
+   "printed": "186",
+   "pageType": "illustration",
+   "ta": [],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "Full-page colour battlefield illustration continuing the war-elephant vignette from scan 202, showing an elephant and a warrior amid battle."
+    }
+   ]
+  },
+  {
+   "scan": 204,
+   "printed": "187",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "வீரர்கள் இருவர் சந்திக்கும்போது விருந்து மண்டபத்திலும் விழியாலே மொழி பேசும் அரங்கிலும் தமிழகத்து வீரம் முதலிடம் பெறத் தவறியதில்லை. புறங்காட்டி ஓடுதலும் முதுகில் தழும்பு ஏற்றலும் புவி நிகர் தமிழர் வாழும் பூமிக்கு இழுக்குத் தருவன என்பதை நமது களம்புகு காதைகள் விளக்குகின்றன."
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஒரு போர்க்களம். தானைகள் மோதிக்கொள்கின்றன; யானைகள் முட்டிக் கொள்கின்றன; குருதியாறு பெருக்கெடுத்தோடுகிறது; வேலும் வாளும் விண்ணிலே மின்னி, வீரச்சிரிப்பைக் கொட்டுகின்றன; மண்ணிலே கிடக்கும் வீரர்கள் மரணத்தைப் பூரிப்போடு அணைத்து மகிழ்கிறார்கள். மார்பிலே பாய்ந்த வாளை எடுத்து முத்தமிட்டு, வீரச் சத்தமிட்டுச் சாகிறார்கள் மறவர்குடிப் பெருமக்கள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அந்தக் களத்திலே ஒரு நிகழ்ச்சி. வீரனொருவன் தன் கையிலிருந்த வேலை ஒரு யானையின்மீது எறிந்து எதிர்க்கிறான். அடுத்து இன்னொரு யானை வருகிறது; அதனை எதிர்க்க அவனிடம் ஆயுதம் இல்லை. வேலோ வாளோ தேடி அலைகிறான்; கிடைக்கவில்லை! திடீரென்று நினைவு வருகிறது, அவன் மார்பிலே ஒரு வேல் பாய்ந்திருக்கிறது. அதை எடுத்து யானை மீது எறிய முயலுகிறான். வேல் கிடைத்தமைக்காக மகிழ்கிறான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "இந்த வீரன் யார் தெரியுமா?"
+    },
+    {
+     "kind": "paragraph",
+     "text": "திருக்குறளிலே வரும் போர்க்களத்துக் ‘கதாநாயகன்.’"
+    },
+    {
+     "kind": "paragraph",
+     "text": "இதோ, வீரஞ்செறியும் குறள்:-"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "கைவேல் களிற்றொடு போக்கி வருபவன்  \nமெய்வேல் பறியா நகும்!"
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 78     -     படைச்செருக்கு;     பாடல் - 774"
+    },
+    {
+     "kind": "archival",
+     "text": "Small centred Valluvar memorial/chariot device below the chapter/song metadata."
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "When two warriors meet, whether in a banquet hall or in an arena where the eyes themselves speak, Tamil valour has never failed to take first place. Our tales of entering the battlefield show that turning one's back and fleeing, or bearing scars upon the back, bring disgrace to the land where Tamils live, peerless upon the earth."
+    },
+    {
+     "kind": "paragraph",
+     "text": "A battlefield. Armies clash; elephants collide; a river of blood surges and runs. Spears and swords flash in the sky and scatter warriors' laughter. Warriors lying upon the earth embrace death with delight. The men of the Maravar clan pull out the swords that have struck their chests, kiss them, cry out in valour and die."
+    },
+    {
+     "kind": "paragraph",
+     "text": "There, on that field, an incident occurs. A warrior hurls the spear in his hand at an elephant and confronts it. Then another elephant comes. He has no weapon with which to meet it. He searches for a spear or sword, but finds none! Suddenly he remembers: a spear has pierced his own chest. He pulls it out and tries to hurl it at the elephant. He rejoices that he has found a spear."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Do you know who this warrior is?"
+    },
+    {
+     "kind": "paragraph",
+     "text": "He is the battlefield “hero” who appears in the Thirukkural."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Here is the Kural, brimming with valour:"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "Having sent his hand-spear after an elephant, the warrior  \nlaughs as he pulls the spear from his own body!"
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 78 — Martial Pride; Kural 774"
+    },
+    {
+     "kind": "archival",
+     "text": "Small centred Valluvar memorial/chariot device below the chapter/Kural metadata."
+    }
+   ]
+  }
+ ]
+}

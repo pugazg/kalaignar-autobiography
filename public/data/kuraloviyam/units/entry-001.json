@@ -1,0 +1,286 @@
+{
+ "work": "kuraloviyam",
+ "id": "entry-001",
+ "kind": "entry",
+ "number": 1,
+ "contentsKey": "வையத்துள் வாழ்வாங்கு",
+ "printedSpan": [
+  17,
+  19
+ ],
+ "expectedKuralCount": 1,
+ "crosswalkStatus": "RESOLVED",
+ "assignments": [
+  {
+   "chapter": 5,
+   "titleTa": "இல்வாழ்க்கை",
+   "kurals": [
+    50
+   ],
+   "bookTa": "அறத்துப்பால்",
+   "bookKey": "01-aram",
+   "iyalTa": "இல்லறவியல்",
+   "iyalKey": "02-illaraviyal"
+  }
+ ],
+ "scans": [
+  34,
+  35,
+  36
+ ],
+ "pages": [
+  {
+   "scan": 34,
+   "printed": "17",
+   "pageType": "body-illustrated",
+   "ta": [
+    {
+     "kind": "archival",
+     "text": "Colour illustration showing a man and woman in the foreground against a cosmic scene of planets, stars and symbolic hands."
+    },
+    {
+     "kind": "paragraph",
+     "text": "திருவள்ளுவர் கடவுளை ஒப்புக்கொண்டாரா - இல்லையா? ஒப்புக் கொண்டார் என ஒரு வாதமும் - இல்லவே இல்லை என ஒரு வாதமும் நடைபெற்றுக் கொண்டுதானிருக்கிறது. வள்ளுவர், குறள் எழுதிய காலத்தில், கடவுள் நம்பிக்கையுள்ள மக்களே தமிழ்நிலத்தில் வாழ்ந்தார்கள் என்பதைத் தொன்மை வாய்ந்த இலக்கியங்களிலிருந்து உணர்ந்துகொள்ள முடிகிறது."
+    },
+    {
+     "kind": "paragraph",
+     "text": "எல்லையற்றது வான்வெளி! விண்வெளியின் விளிம்பு எது என்று இயற்கை கோடுபோட்டு வைக்கவில்லை. விரிந்து பரந்து கிடக்கும் இந்தப் பெருவெளியில் அந்தக்காலத்து “வானசாஸ்திரிகள்” முதற்கொண்டு, இந்தக்காலத்து விஞ்ஞான,"
+    }
+   ],
+   "en": [
+    {
+     "kind": "archival",
+     "text": "Colour illustration showing a man and woman in the foreground against a cosmic scene of planets, stars and symbolic hands."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Did Thiruvalluvar accept God—or not? One argument says that he did; another says that he did not at all, and the debate continues. From ancient literature we can understand that, in the period when Valluvar wrote the Kural, people who believed in God lived in Tamil land."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The expanse of the sky is limitless! Nature has drawn no line marking where the edge of space lies. In this vast expanse, spread wide without bounds, only the planets identified and described—from the “astronomers” of those days to the scientific—"
+    }
+   ]
+  },
+  {
+   "scan": 35,
+   "printed": "18",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "மேதைகள் வரையில் கண்டறிந்து கூறும் கோள்கள் மட்டுமே நமது எண்ணிக்கைக் கணக்கிற்கு உட்பட்டவை!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அந்தக் கோள்களைவிடப் பன்மடங்கு பெரியதான விண்மீன்கள், இலட்சோப இலட்சம் கல் தொலைவுக்கு அப்பால் சுழன்றுகொண்டு கண் சிமிட்டுகின்றன என்பதையும் நாம் அறிகிறோம். அந்த விண்மீன்கள் எத்தனை எத்தனையோ?"
+    },
+    {
+     "kind": "paragraph",
+     "text": "வெப்பமிகு கோள்களில் ஒன்றான சூரியனிலிருந்து சிதறிய ஒரு துண்டுதான் இந்தப் பூமி! நெருப்புப் பந்தாக இருந்த இந்தப் புவி, எவ்வளவோ கோடிக்கணக்கான ஆண்டுகளுக்குப் பிறகு குளிர்ச்சியடைந்து நீர்வளம், நிலவளம், மலைவளம், மரம் செடி கொடிவளம் என்றெல்லாம் வளங்களைப் பெற்று புழு, பூச்சி, கிருமிகள் போன்ற உயிரினங்கள் தோன்றக்கூடிய பக்குவத்தையும் அடைந்தது."
+    },
+    {
+     "kind": "paragraph",
+     "text": "உயிரினங்களிடையே ஏற்பட்ட உடலுறவில் விலங்கினம், பறவையினம், மனித இனம் முதலிய இனங்கள் தோன்றின."
+    },
+    {
+     "kind": "paragraph",
+     "text": "வானிலிருந்து மழை பொழிந்தது - காற்று வீசியது - இயற்கையின் அற்புதங்களையெல்லாம் கண்டு வியப்படைகிற அளவுக்கு மனிதனுக்கு மூளை வளர்ச்சியிருந்தது. இந்த வளர்ச்சி, மற்ற உயிரினங்களிலிருந்து மாறுபட்ட ஒன்றாகும். ஏதோ ஒரு சக்தியில்லாமல் இத்தனை மாற்றங்கள் புவியிலும் சரி, விண்வெளியிலும் சரி நடைபெற முடியாது என்று தீர்மானித்த மனிதன், அந்தச் சக்தியைக் கடவுள் என்று வர்ணித்தான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அதற்குக் கைகால்கள் உண்டா? அது பேசுமா? அது வரம் அருளுமா?"
+    },
+    {
+     "kind": "paragraph",
+     "text": "இந்தக் கேள்விகளுக்கு இடம் தராதவர்கள், அந்தச் சக்தியை ஒப்புக் கொண்டனர்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "எங்கே ஓர் இடத்தில் ஓர் ஆள் அமர்ந்துகொண்டு விண்ணிலும் இந்த மண்ணிலும் இத்தனை அதிசயங்களை நடத்துகிறார் என்பதை நம்பமுடியா விட்டாலும்; அண்ட பகிரண்டமும் அடங்கவொரு நிறைவாகிய ஒரு சக்தியின் இயக்கத்தால்தான் எல்லாமே அசைகிறது என்பதில் கடவுளை அறவே மறுப்பவர்களும் எதிர்க்கருத்துக் கொண்டிருக்க இயலாது!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அந்தச் சக்தியை “இறைவன்” என்றனர்! “இறை” என்று பொதுவாகக் கூறினர்! ஆணா - பெண்ணா என்று தெரியாத அளவுக்குக் “கடவுள்” என்றனர். “தெய்வம்” என்றனர்!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "மதங்கள் தோன்றியபிறகு, அவரவர்க்கு ஏற்றவாறு பெயர்களையும் சூட்டினர்!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "வள்ளுவர், தான் வாழ்ந்த காலத்து நிலையைத் தனது குறளில் வடித்துக் கொடுக்கத் தவறவில்லை. இறை அல்லது இறைவன் அல்லது தெய்வம் - இவற்றுக்குச் சொல்லப்படும் இலக்கணங்களை அவர் புறக்கணிக்காது மட்டுமல்ல; அந்த இலக்கணங்களின் வடிவமாக, மாந்தர் திகழவேண்டுமென விரும்பினார்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“கடவுள் வாழ்த்து” என்ற அதிகாரத்தில், எழுத்துக்களுக்கு ‘அகரம்’ முதல் என்பது போல, உலகிற்கு ஆதிபகவன் அடிப்படை என்றார்."
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "—thinkers of this age—are the ones that fall within our count and reckoning."
+    },
+    {
+     "kind": "paragraph",
+     "text": "We also know that stars many times larger than those planets revolve and twinkle far beyond, at distances of hundreds upon hundreds of thousands of miles. How many such stars are there?"
+    },
+    {
+     "kind": "paragraph",
+     "text": "This Earth is but a fragment thrown off from the Sun, one of the intensely hot celestial bodies. This globe, once a ball of fire, cooled only after countless crores of years, acquired the resources of water, land, mountains, trees, plants and creepers, and reached a condition in which living things such as worms, insects and microbes could emerge."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Through bodily union among living beings, the animal kind, bird kind, human kind and other kinds came into being."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Rain fell from the sky—the wind blew—and the human being possessed enough development of the brain to marvel at all the wonders of nature. This development differed from that of other living beings. Concluding that so many transformations, on Earth as well as in space, could not take place without some power, humanity described that power as God."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Does it have hands and feet? Does it speak? Does it grant boons?"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Those who did not allow room for such questions accepted that power."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Even if one cannot believe that a person sits somewhere and conducts all these wonders in the sky and on this Earth, even those who completely reject God cannot easily oppose the idea that everything moves through the operation of a power that is a fullness encompassing universe upon universe."
+    },
+    {
+     "kind": "paragraph",
+     "text": "They called that power “Iraivan.” They spoke of it generally as “Irai.” Without being able to say whether it was male or female, they called it “Kadavul.” They called it “Deivam.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "After religions arose, each gave it names according to its own manner."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Valluvar did not fail to shape into his Kural the condition of the age in which he lived. He not only did not disregard the qualities attributed to Irai, Iraivan or Deivam; he wished human beings themselves to embody those qualities."
+    },
+    {
+     "kind": "paragraph",
+     "text": "In the chapter called “Praise of God,” he said that just as the letter “A” is first among letters, the Primordial Being is the foundation of the world."
+    }
+   ]
+  },
+  {
+   "scan": 36,
+   "printed": "19",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "‘வாலறிவன்’ என்றால் தூய்மையான அறிவு வடிவாக விளங்கக்கூடியவன் எனக் கூறி, அவன் திருவடிகளைத் தொழாவிட்டால் - கற்றும் பயனில்லை என்று சுட்டிக்காட்டினார்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "‘வேண்டுதல் வேண்டாமை இலான்’ - அதாவது விருப்பு வெறுப்பு இல்லாதவனுடைய நிழலை நாடுபவர்க்குத் துன்பம் இல்லையென்று குறிப்பிட்டார்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“தனக்குவமை இல்லாதான்”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“அறவாழி அந்தணன்”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "இவ்வாறெல்லாம் கடவுள் எனப்படும் சொல்லுக்கு இலக்கணம் வகுத்தார்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "இறைவனுக்குரிய இத்தனை பெருமையும் கொண்டு ஒருவன் வையத்தில் வாழவேண்டுமென்று வள்ளுவர் கருதினார்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அதனால்தான் அவர், திட்டவட்டமாக ஒரு கருத்தை உலகிற்கு அறிவித்தார்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“தெய்வத்திற்கென எத்தனையோ அருங்குணங்கள் சொல்லப்படுகின்றன! உலகில் வாழவேண்டிய அறநெறியில் நின்று வாழ்கிறவன், வானத்தில் வாழ்வதாகச் சொல்லப்படும் தெய்வத்துக்கு இணையாக வைத்து மதிக்கப்படுவான்.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அதற்கு இதோ குறள் :"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "வையத்துள் வாழ்வாங்கு வாழ்பவன் வானுறையும்  \nதெய்வத்துள் வைக்கப் படும்"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அதிகாரம் 5 இல்வாழ்க்கை; பாடல்: 50"
+    },
+    {
+     "kind": "paragraph",
+     "text": "(குறிப்பு: ‘கடவுள் வாழ்த்து’ அதிகார விளக்கமும் இணைந்துள்ளது)"
+    },
+    {
+     "kind": "archival",
+     "text": "Small Thiruvalluvar statue illustration centred in the lower half of the page."
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "By calling him “Vaal-arivan,” Valluvar said that he is one who stands as the very form of pure knowledge, and pointed out that learning itself is of no use if one does not worship at his sacred feet."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“Venduthal vendaamai ilaan”—that is, he indicated that those who seek the shade of one who is without likes and dislikes will have no suffering."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“Tanakku uvamai illaathaan”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“Aravaazhi anthanan”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "In all these ways, he defined the qualities associated with what is called God."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Valluvar thought that a person should live in this world possessing all these excellences attributed to the divine."
+    },
+    {
+     "kind": "paragraph",
+     "text": "That is why he announced one idea to the world in unmistakable terms."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“So many rare virtues are said to belong to the divine! One who lives in this world standing in the path of virtue as life ought to be lived will be honoured as equal to the deity said to dwell in heaven.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Here is the Kural for that:"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "One who lives in this world as life ought to be lived  \nwill be placed among the gods who are said to dwell in heaven."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Chapter 5, Domestic Life; Kural: 50"
+    },
+    {
+     "kind": "paragraph",
+     "text": "(Note: the explanation of the chapter “Praise of God” is also connected here.)"
+    },
+    {
+     "kind": "archival",
+     "text": "Small Thiruvalluvar statue illustration centred in the lower half of the page."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,316 @@
+{
+ "work": "kuraloviyam",
+ "id": "entry-288",
+ "kind": "entry",
+ "number": 288,
+ "contentsKey": "ஈர்ங்கை விதிரார்",
+ "printedSpan": [
+  614,
+  615
+ ],
+ "expectedKuralCount": 1,
+ "crosswalkStatus": "RESOLVED",
+ "assignments": [
+  {
+   "chapter": 108,
+   "titleTa": "கயமை",
+   "kurals": [
+    1077
+   ],
+   "bookTa": "பொருட்பால்",
+   "bookKey": "02-porul",
+   "iyalTa": "குடியியல்",
+   "iyalKey": "07-kudiyiyal"
+  }
+ ],
+ "scans": [
+  631,
+  632
+ ],
+ "pages": [
+  {
+   "scan": 631,
+   "printed": "614",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "உருண்டு திரண்டு கருங்கல்லால் செதுக்கப்பட்டது போன்ற உருவம்; முறட்டு மீசைகள்; பாறைகளைப்போத்த தோள்கள்; கண்டோர் அஞ்சிடும் கனல் பொழியும் கண்கள்; அவனை மிஞ்சிடும் கம்பீரம் கொண்ட குதிரையொன்றில் அமர்ந்து பயணம் நடத்துகிறான். பெயர் அன்புக்கடல்! பெயருக்கும் அவனுக்கும் எவ்வளவு பொருத்தம் என்பதைக் காணத்தான் போகிறோம். அவனது தோளில் ஒரு பை தொங்குகிறது. அதன் வயிறு நிறைய வைரக்கற்கள். பயணத்தினிடையே அவன் வயிறு நிறைவதற்காக மற்றொரு பையில் உணவுப் பண்டங்கள். அந்தப் பையைக் குதிரையின் கழுத்தின் மேற்பகுதியில் கட்டியிருக்கிறான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "வழியில் ஒரு குளிர் நீரோடை! கரையில் ஒரு நிழல்! குதிரையை நிறுத்தி அங்கே இறங்கினான். வைரம் நிரம்பிய பையைக் கையுடன் எடுத்துக்கொண்டு, உணவுப் பையை அவிழ்த்தவாறு மரத்தடியில் அமர்ந்தான். குதிரையோ, பசும்புல் தரையில் படுத்துப் புரண்டு களைப்பைப் போக்கியது. அன்புக்கடலின் பசி அடங்கியது. எஞ்சிய உணவுப் பண்டத்தை மீண்டும் பையிலிட்டுக் கட்டிக் கொண்டிருந்தான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“அய்யா! குடல் எரியுது! ஒரு துளி உணவு!\nநீங்கள் மகராசனாயிருப்பீர்கள்.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "குரல் கேட்டு, அன்புக்கடல் திரும்பினான்! ஓர் ஏழை! எலும்பும் தோலுமாக எச்சம் குடி கொண்ட முகத்துடன்! இறப்புலகின் அழைப்பைப் பெற்றுள்ள நிலையில்!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“சே! பிச்சைக்காரக் கழுதை போடா! போ!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அன்புக்கடலின் சீற்றம் பொங்கியது!"
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "His body looked as though carved from a rounded block of black stone."
+    },
+    {
+     "kind": "paragraph",
+     "text": "A rough moustache. Shoulders like rocks. Eyes that scattered sparks and frightened those who saw them."
+    },
+    {
+     "kind": "paragraph",
+     "text": "He travelled seated upon a horse whose majesty surpassed even his own."
+    },
+    {
+     "kind": "paragraph",
+     "text": "His name was Anbukkadal—\"Ocean of Love.\""
+    },
+    {
+     "kind": "paragraph",
+     "text": "We are about to see how well that name suited him."
+    },
+    {
+     "kind": "paragraph",
+     "text": "A bag hung from his shoulder, its belly filled with diamonds."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Another bag held food for his own stomach during the journey. He had tied that one near the horse's neck."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Along the road he came upon a cool stream and shade upon its bank."
+    },
+    {
+     "kind": "paragraph",
+     "text": "He stopped the horse and dismounted."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Taking the diamond-filled bag with him, he untied the food bag and sat beneath a tree."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The horse rolled upon the green grass and relieved its weariness."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Anbukkadal satisfied his hunger."
+    },
+    {
+     "kind": "paragraph",
+     "text": "He was putting the remaining food back into the bag and tying it up when a voice came:"
+    },
+    {
+     "kind": "paragraph",
+     "text": "\"Sir! My stomach is burning. A morsel of food!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "May you live like a great king.\""
+    },
+    {
+     "kind": "paragraph",
+     "text": "Anbukkadal turned at the sound."
+    },
+    {
+     "kind": "paragraph",
+     "text": "A poor man stood there—nothing but skin and bone, with the look of one already summoned by death."
+    },
+    {
+     "kind": "paragraph",
+     "text": "\"Chi! You beggar donkey! Get away! Go!\""
+    },
+    {
+     "kind": "paragraph",
+     "text": "Anbukkadal's anger flared."
+    }
+   ]
+  },
+  {
+   "scan": 632,
+   "printed": "615",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "“அடப்பாவி! எச்சிற் கையால்கூட காக்கை விரட்ட மாட்டாயா?”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஏழை குமுறினான்!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“ஆமாண்டா! ஆமாம்! எதற்காக எச்சிற் கையால் காக்கையை விரட்ட வேண்டும்! அந்தக் கையிலிருந்து விழுகிற பருக்கையை காக்கைக்குத் தருவதைவிட, நானே தின்பது குற்றமா என்ன?”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“சரியான கஞ்சன்!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஏழை, இந்தச் சொல்லை உதிர்த்தவுடன், அன்புக்கடல் அவன் மீது பாய்ந்தான். ஏற்கெனவே செத்துக்கொண்டிருந்த உடல், முழுவதும் சாகாமல் கீழே சருண்டு விழுந்தது!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அப்போது மின்னல் போல ஒரு நிகழ்ச்சி! அன்புக்கடலுக்கு எதிரே அவனைவிட வலிமை கொண்ட தோற்றமுடைய ஒரு முரடன் நின்றான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "அந்த முரடனின் நீண்ட கரங்கள் வளைந்தன. வளைந்த கரங்கள், அன்புக்கடலின் கன்னத்தில் புயல் வேகத்தில் விளையாடின. அவன் அலறி விழுந்தான். அவன் தோளில் இருந்த வைரம் நிரம்பிய பையை முரடன் பறித்துக்கொண்டான். அதைத் திரும்பப் பெற அன்புக்கடல் நடத்திய போராட்டத்தில் வெற்றி கிடைக்கவில்லை. முரடனைத் துரத்திக்கொண்டு ஓடிக்கொண்டேயிருந்தான். முரடன், வெகு தொலைவு சென்று மறைந்து விட்டான். அன்புக்கடல் விட்டுச்சென்ற உணவுப் பண்டங்களைக் காக்கை குருவிகள் வயிறு புடைக்கத் தின்றுகொண்டிருந்தன."
+    },
+    {
+     "kind": "paragraph",
+     "text": "சுருண்டு கிடந்து சாகப்போகும் அந்த ஏழையின் உருவம், ஏதோ முணு முணுத்தது!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "உற்றுக் கேட்டபோது அது ஒரு திருக்குறள்!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“ஈர்ங்கை விதிரார் கயவர் கொடிறுடைக்கும்\nகூன்கையர் அல்லா தவர்க்கும்”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“தமது கன்னத்தில் குத்துவிட்டு உடைக்கிற அளவுக்குக் கையை மடக்குகிற தம்மினும் வலியோர்க்கன்றி, ஈகைக்குணமற்ற கயவர்கள் எளியோருக்காகத் தமது ஈர்க்கையையும் உதறமாட்டார்கள்.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "இது அந்தக் குறளுக்குப் பொருள்!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“ஓடப்பராயிருக்கும் ஏழையப்பர்\nஉதையப்பராகி விட்டால்-\nஓடப்பர் உதையப்பர் எல்லாம்\nஓர் நொடிக்குள்\nஒப்பப்பர் ஆகிடுவார், உணரப்பா நீ!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "என்று பாவேந்தர் பாரதிதாசன் பாடிய கருத்தினை, இரண்டாயிரம் ஆண்டுகளுக்கு முன்பு வள்ளுவர் எவ்வளவு அழகாக ஈரடிக்குள் தந்திருக்கிறார்!"
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 108     -     கயமை;          பாடல் - 1077"
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஈர்ங்கை = ஈர்க்கை          கொடிறு = கன்னம்\nவிதிரார் = உதறமாட்டார்     கூன்கை = வளைந்த கை"
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "\"You sinner! Would you not even wave away a crow with the hand from which you have eaten?\" the poor man groaned."
+    },
+    {
+     "kind": "paragraph",
+     "text": "\"Yes, yes! Why should I chase a crow away with that hand? Instead of letting a grain fall from my hand for the crow, is it a crime if I eat it myself?\""
+    },
+    {
+     "kind": "paragraph",
+     "text": "\"What a miser!\""
+    },
+    {
+     "kind": "paragraph",
+     "text": "The moment the poor man uttered that word, Anbukkadal sprang upon him."
+    },
+    {
+     "kind": "paragraph",
+     "text": "His already dying body slumped to the ground before life had fully left it."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Then something happened like lightning."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Before Anbukkadal stood a brute who looked even stronger than he was."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The brute's long arms bent."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Those bent arms played across Anbukkadal's cheek with the speed of a storm."
+    },
+    {
+     "kind": "paragraph",
+     "text": "He cried out and fell."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The brute seized the diamond-filled bag from his shoulder."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Anbukkadal fought to recover it, but failed."
+    },
+    {
+     "kind": "paragraph",
+     "text": "He chased the brute and kept running."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Far away, the man disappeared."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Meanwhile crows and sparrows ate their fill from the food Anbukkadal had abandoned."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The poor man, curled upon the ground and close to death, seemed to mutter something."
+    },
+    {
+     "kind": "paragraph",
+     "text": "Listening closely, one heard a Kural:"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "The base will not even shake food from a moist hand for another,  \nexcept for those whose bent fist can break their cheek."
+    },
+    {
+     "kind": "paragraph",
+     "text": "\"The miserly and base will not shake even their damp hand for the needy; they yield only to one stronger than themselves, whose bent hand can smash their cheek.\""
+    },
+    {
+     "kind": "paragraph",
+     "text": "That is the meaning of the Kural."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "When the poor who run become those who strike,  \nand those who run and those who strike together  \nbecome equals in a single moment—understand this!"
+    },
+    {
+     "kind": "paragraph",
+     "text": "So sang Paavendhar Bharathidasan."
+    },
+    {
+     "kind": "paragraph",
+     "text": "How beautifully, two thousand years earlier, Valluvar had given that thought within two lines!"
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 108 — Baseness; Kural 1077"
+    },
+    {
+     "kind": "paragraph",
+     "text": "ஈர்ங்கை = damp hand  \nகொடிறு = cheek  \nவிதிரார் = will not shake  \nகூன்கை = bent hand"
+    }
+   ]
+  }
+ ]
+}

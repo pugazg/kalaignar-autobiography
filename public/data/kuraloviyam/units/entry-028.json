@@ -1,0 +1,172 @@
+{
+ "work": "kuraloviyam",
+ "id": "entry-028",
+ "kind": "entry",
+ "number": 28,
+ "contentsKey": "அ. காமமும் நாணும் / ஆ. கரத்தலும் ஆற்றேன் இந் / இ. புல்லிக் கிடந்தேன்",
+ "printedSpan": [
+  72,
+  73
+ ],
+ "expectedKuralCount": 3,
+ "crosswalkStatus": "RESOLVED",
+ "assignments": [
+  {
+   "chapter": 117,
+   "titleTa": "படர்மெலிந்திரங்கல்",
+   "kurals": [
+    1163,
+    1162
+   ],
+   "bookTa": "இன்பத்துப்பால்",
+   "bookKey": "03-inbam",
+   "iyalTa": "கற்பியல்",
+   "iyalKey": "02-karpiyal"
+  },
+  {
+   "chapter": 119,
+   "titleTa": "பசப்புறுபருவரல்",
+   "kurals": [
+    1187
+   ],
+   "bookTa": "இன்பத்துப்பால்",
+   "bookKey": "03-inbam",
+   "iyalTa": "கற்பியல்",
+   "iyalKey": "02-karpiyal"
+  }
+ ],
+ "scans": [
+  89,
+  90
+ ],
+ "pages": [
+  {
+   "scan": 89,
+   "printed": "72",
+   "pageType": "illustrated-body-prose",
+   "ta": [
+    {
+     "kind": "archival",
+     "text": "Large colour illustration above the prose showing two women close together, one placing her hands on the other's shoulders, with a large male profile in the background."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“நகை தந்தார் - நகை தந்தேன்; தொட்டார் - சுட்டேன்; தழுவினார் - நழுவினேன்; தொடர்ந்தார் - படர்ந்தேன்; பிரிந்தார் - இருக்கிறேன்!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "வேதனையை விழிமூலம் விளக்கி நிற்கிறாள் அவள். இன்னொருத்தியோ இப்படியாமல் இருப்பதற்காகத் தோழியின் தோளைப் பிடித்துக் கொண்டிருக்கிறாள். உயிரைக் காவடித் தண்டாகக் கொண்டு காம நோயும் நாணமும் இரு பக்கமும் தொங்குகின்றன; நான் என் செய்வேன்? - என்று துவளுகிறாள் அந்தத் தோகை."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "காமமும் நாணும் உயிர்காவாத் தூங்குமென்  \nநோனா உடம்பின் அகத்து"
+    }
+   ],
+   "en": [
+    {
+     "kind": "archival",
+     "text": "Large colour illustration above the prose showing two women close together, one placing her hands on the other's shoulders, with a large male profile in the background."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“He gave me a smile—I gave one back; he touched me—I rebuked him; he embraced me—I slipped away; he pursued me—I yielded; he left me—and here I remain!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "She stands explaining her pain through her eyes. Another woman, trying not to become like this, holds on to her friend's shoulder. Love-sickness and modesty hang on either side, with life itself as the carrying pole—what am I to do? That peahen droops in anguish."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "Love and modesty hang on either side of life,  \nlike burdens from a carrying pole, within my suffering body."
+    }
+   ]
+  },
+  {
+   "scan": 90,
+   "printed": "73",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "அவள் குழறலை உணர்த்துகிறது இந்தக் குறள். இவர் நிலைதான் இதுவென்றால், என்றன் நிலையோ அதைவிட மோசம் - என்று மழைக் கண்களைக் காட்டுகிறாள் மற்றொருத்தி."
+    },
+    {
+     "kind": "paragraph",
+     "text": "காதலன் விடைபெற்றபோது அவள் கூறிய வார்த்தை என்ன தெரியுமா? “நீ போகவில்லையென்றால் என்னிடம் சொல்! போய்த் திரும்புகிறேன் என்று சொல்வதானால், நீ திரும்பும் வரையில் உயிரோடு இருப்பவளிடம் விடைபெற்றுப் போ!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "இப்படிச் சொல்லிக் காதலைத் திணற அடித்தவள் அவள். பாவம், அவளால் காம நோயைப் பிறர் அறியாமல் மறைக்கவும் முடியவில்லை; அந்த நோயைத் தந்த காதலனிடம், நோயின் கடுமைபற்றி விளக்கவும் வெட்கமாயிருக்கிறது. இப்படித் திண்டாடுகிறாள், அந்த வண்டாடும் மலர்க்குழலாள்."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "கரத்தலும் ஆற்றேன்இந் நோயைநோய் செய்தார்க்கு  \nஉரைத்தலும் நாணுத் தரும்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“உடலிற் பூசிய சந்தனத்தின் ஈரம் காய்வதற்குள் அவசரப்பட்டார்; பாடச் சொன்னார்; உடனே இதழ் மூடச் சொன்னார். ‘இசை கசக்கிறதோ?’ என்றேன். ‘இல்லை, இதழ் இனிக்கிறது’ என்றார். விளக்கைக் காட்டி, ‘அணையுங்கள்’ என்றேன். அணைத்தார். உயிர், அணு ஒவ்வொன்றையும் தேனில் நனைத்தார். பக்கத்தே சிறிது நகர்ந்தேன். உடனே என் உடம்பெங்கும் பசலை நிறம் பரவிவிட்டது. அந்தப் பிரிவைக்கூட என்னால் தாங்க முடியவில்லையே; இந்தப் பிரிவை எப்படியடி தாங்குவேன்?” என்று வருந்துகிறாள், அந்த வண்ணமணிச் சிலையாள்."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "புல்லிக் கிடந்தேன்; புடைபெயர்ந்தேன்; அவ்வளவில்  \nஅள்ளிக்கொள் வற்றே பசப்பு."
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 117 - படர்மெலிந்திரங்கல்; பாடல்கள் - 1163, 1162"
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 119 - பசப்புறுபருவரல்; பாடல் - 1187"
+    },
+    {
+     "kind": "archival",
+     "text": "Small printed architectural/chariot-like motif below the citation lines."
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "This Kural expresses her bewilderment. If this is her condition, another woman says, showing rain-filled eyes, “Then my state is even worse.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Do you know what she said when her lover took leave of her? “If you are not going away, tell me that! If you are going to say, ‘I will go and return,’ then take leave of the woman who will still be alive when you return!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Such were the words with which she made love itself reel. Poor woman! She cannot hide her love-sickness from others; yet she is ashamed to explain the severity of that illness to the lover who caused it. Thus that flower-haired maiden, over whom bees hover, struggles in distress."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "I cannot hide this illness; yet to tell  \nthe one who caused it brings me shame."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“There was still moisture in the sandal paste upon my body when he became impatient. He asked me to sing; at once he told me to close my lips. ‘Does the music taste bitter?’ I asked. ‘No, the lips are sweet,’ he said. Pointing to the lamp, I said, ‘Put it out.’ He did. He soaked every atom of my life in honey. I moved only a little to the side. At once pallor spread over my whole body. If I could not bear even that tiny separation, how can I bear this separation now?” laments that jewel-coloured statue of a woman."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "I lay in his embrace; I shifted slightly aside; in that instant  \npallor seemed ready to gather and seize me whole."
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 117 — Lamenting in Wasting Longing; Kurals 1163, 1162"
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 119 — Suffering from Pallor; Kural 1187"
+    },
+    {
+     "kind": "archival",
+     "text": "Small printed architectural/chariot-like motif below the citation lines."
+    }
+   ]
+  }
+ ]
+}

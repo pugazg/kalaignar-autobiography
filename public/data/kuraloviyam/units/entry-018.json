@@ -1,0 +1,180 @@
+{
+ "work": "kuraloviyam",
+ "id": "entry-018",
+ "kind": "entry",
+ "number": 18,
+ "contentsKey": "அ. காணிற் குவளை / ஆ. அனிச்சமும் அன்னத்தின் / இ. கருமணியிற் பாவாய்நீ",
+ "printedSpan": [
+  53,
+  54
+ ],
+ "expectedKuralCount": 3,
+ "crosswalkStatus": "RESOLVED",
+ "assignments": [
+  {
+   "chapter": 112,
+   "titleTa": "நலம்புனைந்துரைத்தல்",
+   "kurals": [
+    1114,
+    1120
+   ],
+   "bookTa": "இன்பத்துப்பால்",
+   "bookKey": "03-inbam",
+   "iyalTa": "களவியல்",
+   "iyalKey": "01-kalaviyal"
+  },
+  {
+   "chapter": 113,
+   "titleTa": "காதற் சிறப்புரைத்தல்",
+   "kurals": [
+    1123
+   ],
+   "bookTa": "இன்பத்துப்பால்",
+   "bookKey": "03-inbam",
+   "iyalTa": "களவியல்",
+   "iyalKey": "01-kalaviyal"
+  }
+ ],
+ "scans": [
+  70,
+  71
+ ],
+ "pages": [
+  {
+   "scan": 70,
+   "printed": "53",
+   "pageType": "illustrated-body-prose",
+   "ta": [
+    {
+     "kind": "archival",
+     "text": "Large colour illustration above the prose showing a woman in red walking before a pair of stylised eyes, with white flowers in the lower background."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "காணிற் குவளை கவிழ்ந்து நிலன்நோக்கும்  \nமாணிழை கண்ணொவ்வேம் என்று"
+    },
+    {
+     "kind": "paragraph",
+     "text": "குவளை மலர்களுக்கு மட்டும் கண்கள் இருக்குமேயானால், அந்தக் கோமளவல்லியின் கண்களைக் கண்டு, “அய்யோ! நாம், அவள் விழிகளைப்போல அவ்வளவு அழகாக இல்லையே!” என்று தலைகவிழ்ந்து பூமியை நோக்குமாம்; அத்தகைய விழியழகி அவள்."
+    }
+   ],
+   "en": [
+    {
+     "kind": "archival",
+     "text": "Large colour illustration above the prose showing a woman in red walking before a pair of stylised eyes, with white flowers in the lower background."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "If the kuvalai flowers could see her, they would bow and look to the ground,  \nsaying, “We cannot equal the eyes of this jewel-adorned maiden.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "If only the kuvalai flowers had eyes, on seeing the eyes of that delicate creeper-like maiden they would lower their heads and look at the earth, saying, “Alas! We are nowhere near as beautiful as her eyes.” Such is the beauty of her gaze."
+    }
+   ]
+  },
+  {
+   "scan": 71,
+   "printed": "54",
+   "pageType": "body-prose",
+   "ta": [
+    {
+     "kind": "paragraph",
+     "text": "மென்மை நிறைந்த அனிச்ச மலர்களைக் காம்பு களையாமல் சூடிக் கொண்டாளாம். அந்தக் காம்பின் கனம் தாங்காமல், அவளது இடை நொந்து வருந்தியதாம்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "வானத்து வெள்ளி மீன்கள், திங்களையும் அந்த வடிவழகியின் வதனத்தையும் கண்டு, ‘எது திங்கள்? எது அவள்?’ - எனக் கலங்கித் திரிந்தனவாம்! அன்னப் பறவையின் இறகு அவளது பாதங்களில் படும்போது, நெருஞ்சிப்பழம் தைப்பது போலிருக்குமாம் - அத்தகைய பட்டு ரோஜாப் பாதங்கள் அவளுக்கு!"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "அனிச்சமும் அன்னத்தின் தூவியும் மாதர்  \nஅடிக்கு நெருஞ்சிப் பழம்."
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 112 - நலம்புனைந்துரைத்தல்; பாடல்கள் - 1114, 1120"
+    },
+    {
+     "kind": "paragraph",
+     "text": "அழகின் இலக்கணமாகத் திகழும் அவளைத் தன் கண்களிலேயே குடிவைக்க விரும்புகிறான் ஒரு குமரன். விழிவீட்டில் இருப்பவரை வெளியேற்றி விட்டல்லவா எழிலரசிக்கு இடம்தர வேண்டும்? ஆகவே ‘கண்ணகத்தில் குடிக்கூலிக்கு வசிக்கும் ஆளிடம் போய், “தயவுசெய்து நீ வீட்டைக் காலி செய்துவிடு” என்று கெஞ்சுகிறான்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "வள்ளுவர் நடையில் அதைக் கேளுங்கள்."
+    },
+    {
+     "kind": "paragraph",
+     "text": "“என் கண்ணின் கருமணியில் உள்ள பாவையே! யான் விரும்புகின்ற இந்த அழகிக்கு என் கண்ணில் இருக்க இடமில்லை - ஆகவே நீ வெளியேறிவிடு!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "பார்வை தரும் பாவையைப் போகச் சொல்லிவிட்டு, முத்துக்கோவை தரும் பாவைக்குக் கண்ணில் இடமளிக்க விரும்புகிறான். அதற்குக் குறள்:"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "கருமணியிற் பாவாய்நீ போதாய் யாம்வீழும்  \nதிருநுதற்கு இல்லை இடம்."
+    },
+    {
+     "kind": "citation",
+     "text": "அதிகாரம் - 113 - காதற் சிறப்புரைத்தல்; பாடல் - 1123"
+    },
+    {
+     "kind": "archival",
+     "text": "Small decorative chariot/monument illustration centred in the lower half beneath the second Kural citation."
+    }
+   ],
+   "en": [
+    {
+     "kind": "paragraph",
+     "text": "She is said to have worn soft anicham flowers without removing their stems. Unable to bear even the weight of those stems, her slender waist suffered."
+    },
+    {
+     "kind": "paragraph",
+     "text": "The silver fish of the sky, seeing both the moon and the face of that shapely beauty, are said to have wandered in confusion asking, “Which is the moon? Which is she?” When the feather of a swan touches her feet, it is said to feel like the prick of a nerunji fruit—such are her rose-soft feet of silk."
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "The anicham flower and even the swan's feather  \nare nerunji fruit to a woman's feet."
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 112 — Praising Her Beauty; Kurals 1114, 1120"
+    },
+    {
+     "kind": "paragraph",
+     "text": "A young man wants to give her, who stands as the very definition of beauty, a home inside his own eyes. But to make room for the queen of beauty, must he not first evict the present occupant of that house of sight? So he goes to the one living “on rent” inside the eye and pleads, “Please vacate the house.”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "Hear it in Valluvar's manner:"
+    },
+    {
+     "kind": "paragraph",
+     "text": "“Little image dwelling in the dark pupil of my eye! There is no room in my eye for this beautiful woman whom I love—so you must leave!”"
+    },
+    {
+     "kind": "paragraph",
+     "text": "He asks the image that gives him sight to go, so that he may make room in his eye for the maiden who gives a string of pearls. Here is the Kural:"
+    },
+    {
+     "kind": "paragraph",
+     "quote": true,
+     "text": "O little image in the dark pupil, depart;  \nthere is no room for the fair-browed one I love."
+    },
+    {
+     "kind": "citation",
+     "text": "Chapter 113 — Declaring Love's Excellence; Kural 1123"
+    },
+    {
+     "kind": "archival",
+     "text": "Small decorative chariot/monument illustration centred in the lower half beneath the second Kural citation."
+    }
+   ]
+  }
+ ]
+}
