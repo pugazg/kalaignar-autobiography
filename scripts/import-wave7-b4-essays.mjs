@@ -564,9 +564,11 @@ for (const w of WORKS) {
       provenanceGranularity: "Every block carries the exact scan it occupies; where the source prints no page numeral the printed page is null and nothing is inferred.",
       note: `Archive-derived counts, recomputed at import time from the frozen source. Per-${unit} scan runs and printed-page evidence are derived from each assembly's own scan markers.`,
     },
+    // PUBLIC notes (rendered in the Source & provenance "Notes" card): durable source facts only. Internal
+    // workflow checkpoints (wave/batch labels, phase gates, hidden/discovery state) change over time and
+    // must never be published as provenance.
     notes: [
-      "Wave 6 P1–P3 Batch 6 — Essays & Articles. The controlling PDF is not vendored into this repository and is never fetched at runtime.",
-      "Direct reader routes only; this publication is intentionally absent from the public catalogue, /read discovery and the sitemap (Wave-6 P4 not authorized).",
+      "The controlling PDF is not vendored into this repository and is never fetched at runtime.",
     ],
   };
 

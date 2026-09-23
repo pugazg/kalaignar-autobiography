@@ -226,6 +226,28 @@ for (const slug of ESSAYS) {
   ok(vidPub.articles.every((a: { titleTa: string; titleEn: string }) => vl.includes(esc(a.titleTa)) && vl.includes(esc(a.titleEn))), "viduthalai (non-sectioned): contents keeps Tamil + English titles");
 }
 
+// ── PUBLIC PROVENANCE NOTES — durable source facts only (all six Wave-7 B4 essay publications) ───────────
+// `prov.notes` is rendered publicly in the Source & provenance "Notes" card. It must never carry internal
+// workflow checkpoints — a wrong wave/batch label, phase gates, or hidden/discovery state — which go stale
+// the moment the work is published (these said "Wave 6 … Batch 6" and "intentionally absent from the
+// public catalogue … (Wave-6 P4 not authorized)" after Wave-7 P4 had published them).
+{
+  const STALE_NOTE = /Wave[\s-]*\d|Batch\s*\d|\bP[0-9](?:[–-]P?[0-9])?\b|not authori[sz]ed|intentionally absent|absent from the public catalogue|Direct reader routes only|direct routes only|hidden foundation|\/read discovery|not (?:yet )?(?:published|discoverable|public)/i;
+  const STALE_PAGE = /Wave 6 P1|Batch 6|P4 not authori[sz]ed|not authori[sz]ed|intentionally absent|absent from the public catalogue|Direct reader routes only|hidden foundation/i;
+  const PDF_NOTE = "The controlling PDF is not vendored into this repository and is never fetched at runtime.";
+  for (const slug of ESSAYS) {
+    const prov = load(`public/data/essays/${slug}/provenance.json`);
+    const notes: string[] = prov.notes ?? [];
+    ok(notes.every((n) => !STALE_NOTE.test(n)), `${slug}: no internal workflow-state wording in public provenance notes (${notes.filter((n) => STALE_NOTE.test(n)).join(" | ")})`);
+    ok(notes.includes(PDF_NOTE), `${slug}: durable "controlling PDF is not vendored / never fetched at runtime" note kept`);
+    for (const [lbl, h] of [["Tamil UI", ta(createElement(ArticleSource, { slug, prov }))], ["English UI", en(createElement(ArticleSource, { slug, prov }))]] as const) {
+      const v = visible(h);
+      ok(!STALE_PAGE.test(v), `${slug} Source & provenance (${lbl}): no stale workflow-state phrase rendered (${(v.match(STALE_PAGE) || [])[0]})`);
+      ok(v.includes(PDF_NOTE), `${slug} Source & provenance (${lbl}): PDF-not-vendored note rendered`);
+    }
+  }
+}
+
 // ── NOVELS (5 works via the bounded adapter) ─────────────────────────────────────────────────────────
 const NOVELS = ["arumbu", "nadutheru-narayani", "sarapallam-samundi", "surulimalai", "vellikkizhamai"];
 for (const slug of NOVELS) {
