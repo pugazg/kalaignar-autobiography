@@ -192,17 +192,20 @@ for (const w of WORKS) {
 console.log("\n=== integrity hash pins ===");
 import crypto from "node:crypto";
 const sha256 = (s) => crypto.createHash("sha256").update(s).digest("hex");
+// provenance.json pins re-pinned when the importer's public `notes` dropped the stale workflow-state notes
+// ("Wave 6 P1–P3 Batch 6 …" / "… intentionally absent … (Wave-6 P4 not authorized)"); `notes` is the only
+// changed field. publication.json pins are unchanged — the literary payloads are byte-identical.
 const HASH_PINS = {
   "ina-muzhakkam/publication.json": "7b02c35486dbd5f44fad4f5eedf9f27983b21bd2ecee75e1e82b75b312ba0dc4",
-  "ina-muzhakkam/provenance.json": "8fc38e33660c0a9a0d634e290dd3bec7c096eb710472cb35173f9a1a569f8511",
+  "ina-muzhakkam/provenance.json": "14fbecf0bdfb0079c69980b220e5032dfa23718dd61a1fac2d17a15cec79053a",
   "kolaikkalam/publication.json": "e67bc41b2304aa776fa9362f127bced6a485ea614633bc2c60afe455c956a91d",
-  "kolaikkalam/provenance.json": "614474d3c8d348213c64daf551b050ddb2ffe5425c47ae96616d7719a97b6236",
+  "kolaikkalam/provenance.json": "8806968eca1936ce4c345ade500c51676a3419e63a4809309629b0d49e5a8171",
   "kudumbaththin-nalvilakku/publication.json": "e5cfb05014621317ece43e10196e582dc963e7efd9fa8ff2ff49f772da60fb96",
-  "kudumbaththin-nalvilakku/provenance.json": "144f666fa91ad7a91045ab6cd9e048e649d4634d498583ec2eb19289c31f93c3",
+  "kudumbaththin-nalvilakku/provenance.json": "689496ef37da2d51581a5f8a3650b1fcef79cd1ed609a937b810a371aa165eb6",
   "sinthanaiyum-seyalum/publication.json": "51735ae409cecf4b27d68409d0a0cb601a59e5c449124d255816b97c752b34ca",
-  "sinthanaiyum-seyalum/provenance.json": "b27e8d8c93efabe542c6833c3425f285b4268dfde28ddd09eee841e31915e987",
+  "sinthanaiyum-seyalum/provenance.json": "92bc42d7ed1d2167cf1dd8ec7e595efc747e2597943b18bc12209868127bc199",
   "vedhanai-ch-siraiyinindrum-viduthalai-pera/publication.json": "8769db6deb5ef5fe8938263cb17d297d31af24647cecfa4f4689c261c8cc29e5",
-  "vedhanai-ch-siraiyinindrum-viduthalai-pera/provenance.json": "3425458465e0a1613d03bf0d6a2c0da08082c6b850c11e28fa91b8f248424fe0",
+  "vedhanai-ch-siraiyinindrum-viduthalai-pera/provenance.json": "9e60b7b4eb25eabf03b0142485bd73d3c991f52d7253ead77362c072bf538b33",
 };
 for (const rel of Object.keys(HASH_PINS)) {
   const h = sha256(read(path.join(DATA, rel)));
