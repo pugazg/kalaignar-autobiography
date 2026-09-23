@@ -30,7 +30,11 @@ export function generateMetadata({ params }: { params: { slug: string; article: 
   const pub = loadPublication(params.slug);
   const a = pub?.articles.find((x) => x.slug === params.article);
   if (!pub || !a) return { title: "Article — கட்டுரை | Kalaignar Digital Library" };
-  const title = `${a.titleTa} — ${a.titleEn} | ${pub.title.en} | Kalaignar Digital Library`;
+  // A source-section unit has no descriptive title; it is identified by its source-visible number.
+  const isSection = a.numberSource === "source-section";
+  const unitLabel = isSection ? `பகுதி ${a.number} — Section ${a.number}` : `${a.titleTa} — ${a.titleEn}`;
+  const twitterTitle = isSection ? `Section ${a.number}` : a.titleEn;
+  const title = `${unitLabel} | ${pub.title.en} | Kalaignar Digital Library`;
   // Source-form aware. Printed pagination is quoted only where the source shows it, and the edition
   // clause comes from the publication's own facts — a 1949 pamphlet is never described as following
   // a reprint, and an article with no printed numerals never emits an empty range.
@@ -41,7 +45,7 @@ export function generateMetadata({ params }: { params: { slug: string; article: 
   const description =
     `${position} by Kalaignar M. Karunanidhi — ${where}. ` +
     `${publicationMetaSentence(pub)}`;
-  return { title, description, openGraph: { title, description }, twitter: { title: a.titleEn, description } };
+  return { title, description, openGraph: { title, description }, twitter: { title: twitterTitle, description } };
 }
 
 export default function ArticlePage({ params }: { params: { slug: string; article: string } }) {

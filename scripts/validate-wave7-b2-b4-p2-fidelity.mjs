@@ -139,15 +139,65 @@ for (const slug of ESSAY_SLUGS) {
   eq(pub.articles.length, files.length, `${slug}: payload articles == source article files`);
   pub.articles.forEach((a, i) => {
     const src = read(path.join(dir, "articles", files[i]));
-    // Reading number is the archive ordinal 1..N; the source's own printed number is a witness, not the order.
-    eq(a.number, i + 1, `${slug}/${a.slug}: reading number is archive ordinal ${i + 1}`);
-    // Title is the source's OWN first heading (a real heading, or the source's own numbered-section label);
-    // a numeric placeholder never REPLACES a substantive printed heading.
-    eq(a.titleTa, firstHeading(src), `${slug}/${a.slug}: titleTa == source article heading`);
+    // Reading number is 1..N in source order.
+    eq(a.number, i + 1, `${slug}/${a.slug}: reading number is ${i + 1}`);
+    if (a.numberSource === "source-section") {
+      // A source-section work (no printed contents page, no descriptive titles) carries NO title — its unit
+      // is identified by the source-visible section number. Assert the empty title (no invented/echoed
+      // title) and that the source itself shows this section number (front-matter `title`, e.g. "14").
+      eq(a.titleTa, "", `${slug}/${a.slug}: source-section unit carries no descriptive title`);
+      eq(a.titleEn, "", `${slug}/${a.slug}: source-section unit carries no English title`);
+      eq(String(fmv(src, "title") ?? "").trim(), String(a.number), `${slug}/${a.slug}: source front-matter records section number ${a.number}`);
+    } else {
+      // Title is the source's OWN first heading (a real heading, or the source's own numbered-section
+      // label); a numeric placeholder never REPLACES a substantive printed heading.
+      eq(a.titleTa, firstHeading(src), `${slug}/${a.slug}: titleTa == source article heading`);
+    }
     ok(a.tamil.blocks.length > 0, `${slug}/${a.slug}: has Tamil blocks`);
     ok(fs.existsSync(path.join(dir, "translations/en", files[i])), `${slug}/${a.slug}: English counterpart present`);
     ok(Array.isArray(a.scanRuns) && a.scanRuns.length > 0, `${slug}/${a.slug}: scan runs recorded`);
   });
+}
+
+// ══ WAVE-7 B4 DEFECT GUARDS — the corrected essay defects must not silently return ═══════════════════
+const span = (a) => `${a.scanRuns[0].from}-${a.scanRuns[a.scanRuns.length - 1].to}`;
+const bodyText = (a) => a.tamil.blocks.map((b) => `${b.text || ""}`).join("\n");
+const enBodyText = (a) => a.english.blocks.map((b) => `${b.text || ""}`).join("\n");
+const ARCHIVAL = /Assembly provenance|P\d+ assembly audit|P\d+ strict visual (review|-?fidelity revalidation)|source-visible Roman page numerals|source scans —|page-record coverage/i;
+{
+  // DEFECT A / A2 — விடுதலைக் கிளர்ச்சி: no archival-control text in the reading body; full 2-unit coverage.
+  const v = load("public/data/essays/viduthalai-kilarcci/publication.json");
+  eq(v.articles.length, 2, "viduthalai: exactly 2 public reading units");
+  eq(v.articles.map(span), ["4-7", "8-68"], "viduthalai: source coverage is unit1 4-7, unit2 8-68 (not collapsed to the first scan)");
+  for (const a of v.articles) {
+    ok(!a.tamil.blocks.some((b) => ARCHIVAL.test(b.text || "")), `viduthalai/${a.slug}: no archival-control heading/text in the Tamil reading body`);
+    ok(!a.english.blocks.some((b) => ARCHIVAL.test(b.text || "")), `viduthalai/${a.slug}: no archival-control heading/text in the English reading body`);
+    ok(!/publications\/viduthalai-kilarcci\/pages\//.test(bodyText(a)), `viduthalai/${a.slug}: no archival page-record file paths in the body`);
+    ok(a.english.blocks.length > 0 && enBodyText(a).trim().length > 0, `viduthalai/${a.slug}: English literary body present`);
+  }
+  // printed-page evidence is source-faithful: unit 1 has no visible printed numeral (Roman only), unit 2 is
+  // a genuine 8-67 range with scan 8 unnumbered. No arabic folio is invented for unit 1.
+  eq(v.articles[0].printedPages.kind, "none", "viduthalai unit 1: no printed arabic folio invented (Roman-only source)");
+  eq([v.articles[1].printedPages.kind, v.articles[1].printedPages.from, v.articles[1].printedPages.to], ["range", 8, 67], "viduthalai unit 2: printed pages 8-67 (source-faithful)");
+}
+{
+  // DEFECT B / B2 — பேசும் கலை வளர்ப்போம்: 19 source-numbered sections, source-section semantics, no invented
+  // titles, full spans matching the authoritative 19-row map, shared boundary scans retained.
+  const P = load("public/data/essays/pesum-kalai-valarppom/publication.json");
+  const MAP = ["7-12","12-16","16-22","22-27","27-31","31-34","34-38","38-41","42-44","45-47","48-51","51-55","55-58","59-63","64-67","67-70","70-74","75-79","79-82"];
+  eq(P.articles.length, 19, "pesum: exactly 19 source-numbered sections");
+  ok(P.articles.every((a) => a.numberSource === "source-section"), "pesum: every section is numberSource 'source-section' (never archive-ordinal)");
+  ok(P.articles.every((a) => a.titleTa === "" && a.titleEn === ""), "pesum: no invented descriptive section titles");
+  ok(P.articles.every((a) => a.titleTa !== "பேசும் கலை வளர்ப்போம்"), "pesum: the publication title is never reused as a section title");
+  ok(!P.articles.some((a) => /^\d+$/.test(a.titleTa) || /^\d+$/.test(a.titleEn)), "pesum: no bare-numeral title rows");
+  eq(P.articles.map(span), MAP, "pesum: all 19 section spans match the authoritative source map (shared boundary scans retained)");
+  for (const a of P.articles) ok(!a.tamil.blocks.some((b) => b.kind === "subheading" && /^\d+$/.test((b.text || "").trim())), `pesum/${a.slug}: the bare section-number heading is not a body block`);
+  // The source confirms there is NO printed contents page (indexes/contents.md), which is what the public
+  // note asserts. (The rendered note wording — source-visible sections, never "archive ordinals", no
+  // printed contents page — is asserted in the render regression, which can render the component.)
+  const contents = read(path.join(ESSAYS, "publications", "pesum-kalai-valarppom", "indexes", "contents.md"));
+  ok(/no printed contents page/i.test(contents), "pesum: the source itself records that there is no printed contents page");
+  ok(/descriptive titles are not invented|no descriptive section titles/i.test(contents), "pesum: the source records that descriptive titles are not supplied/invented");
 }
 
 if (fail.length) {

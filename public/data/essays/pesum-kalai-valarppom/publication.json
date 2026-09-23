@@ -28,42 +28,24 @@
  "articles": [
   {
    "number": 1,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 1,
    "slug": "section-01",
-   "titleTa": "பேசும் கலை வளர்ப்போம்",
-   "titleEn": "Let Us Develop the Art of Speaking",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 7,
-     "to": 7
+     "to": 12
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 5,
-    "to": 5
+    "to": 10
    },
    "tamil": {
     "blocks": [
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "1"
-       }
-      ],
-      "text": "1",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
-       }
-      ]
-     },
      {
       "kind": "paragraph",
       "segments": [
@@ -77,8 +59,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -99,8 +80,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -117,8 +97,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -135,8 +114,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -153,8 +131,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -179,8 +156,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -205,8 +181,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -223,8 +198,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -241,8 +215,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -259,8 +232,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -277,8 +249,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -295,8 +266,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -313,8 +283,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -331,8 +300,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -349,8 +317,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -367,8 +334,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -385,8 +351,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -403,8 +368,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -421,8 +385,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -439,8 +402,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -457,8 +419,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -475,8 +436,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -493,8 +453,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -511,8 +470,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -533,8 +491,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -551,8 +508,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -569,8 +525,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -595,8 +550,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -613,8 +567,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -631,8 +584,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -649,8 +601,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -675,8 +626,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -701,8 +651,7 @@
       "sourcePages": [
        {
         "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "printed": 5
        }
       ]
      },
@@ -718,9 +667,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 7,
-        "printed": 5,
-        "fromFrontMatterRange": "7-12"
+        "scan": 12,
+        "printed": 10
        }
       ]
      }
@@ -728,23 +676,6 @@
    },
    "english": {
     "blocks": [
-     {
-      "kind": "subheading",
-      "segments": [
-       {
-        "kind": "authored-text",
-        "text": "1"
-       }
-      ],
-      "text": "1",
-      "mixedVoice": false,
-      "sourcePages": [
-       {
-        "scan": 7,
-        "printed": 5
-       }
-      ]
-     },
      {
       "kind": "paragraph",
       "segments": [
@@ -1398,25 +1329,66 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 7,
+     "toScan": 8,
+     "fromPrinted": 5,
+     "toPrinted": 6,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 8,
+     "toScan": 9,
+     "fromPrinted": 6,
+     "toPrinted": 7,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 9,
+     "toScan": 10,
+     "fromPrinted": 7,
+     "toPrinted": 8,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 10,
+     "toScan": 11,
+     "fromPrinted": 8,
+     "toPrinted": 9,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 11,
+     "toScan": 12,
+     "fromPrinted": 9,
+     "toPrinted": 10,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 2,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 2,
    "slug": "section-02",
-   "titleTa": "2",
-   "titleEn": "2",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 12,
-     "to": 12
+     "to": 16
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 10,
-    "to": 10
+    "to": 14
    },
    "tamil": {
     "blocks": [
@@ -1441,8 +1413,7 @@
       "sourcePages": [
        {
         "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "printed": 10
        }
       ]
      },
@@ -1463,8 +1434,7 @@
       "sourcePages": [
        {
         "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "printed": 10
        }
       ]
      },
@@ -1481,8 +1451,7 @@
       "sourcePages": [
        {
         "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "printed": 10
        }
       ]
      },
@@ -1498,9 +1467,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1516,9 +1484,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1534,9 +1501,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1552,9 +1518,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1570,9 +1535,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1588,9 +1552,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1606,9 +1569,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1624,9 +1586,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1658,9 +1619,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1692,9 +1652,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1710,9 +1669,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1728,9 +1686,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1746,9 +1703,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      },
@@ -1764,9 +1720,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 12,
-        "printed": 10,
-        "fromFrontMatterRange": "12-16"
+        "scan": 13,
+        "printed": 11
        }
       ]
      }
@@ -2130,25 +2085,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 12,
+     "toScan": 13,
+     "fromPrinted": 10,
+     "toPrinted": 11,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 13,
+     "toScan": 14,
+     "fromPrinted": 11,
+     "toPrinted": 12,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 14,
+     "toScan": 15,
+     "fromPrinted": 12,
+     "toPrinted": 13,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 15,
+     "toScan": 16,
+     "fromPrinted": 13,
+     "toPrinted": 14,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 3,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 3,
    "slug": "section-03",
-   "titleTa": "3",
-   "titleEn": "3",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 16,
-     "to": 16
+     "to": 22
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 14,
-    "to": 14
+    "to": 20
    },
    "tamil": {
     "blocks": [
@@ -2165,8 +2153,7 @@
       "sourcePages": [
        {
         "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "printed": 14
        }
       ]
      },
@@ -2183,8 +2170,7 @@
       "sourcePages": [
        {
         "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "printed": 14
        }
       ]
      },
@@ -2217,8 +2203,7 @@
       "sourcePages": [
        {
         "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "printed": 14
        }
       ]
      },
@@ -2235,8 +2220,7 @@
       "sourcePages": [
        {
         "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "printed": 14
        }
       ]
      },
@@ -2252,9 +2236,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 18,
+        "printed": 16
        }
       ]
      },
@@ -2270,9 +2253,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 18,
+        "printed": 16
        }
       ]
      },
@@ -2288,9 +2270,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 18,
+        "printed": 16
        }
       ]
      },
@@ -2306,9 +2287,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 18,
+        "printed": 16
        }
       ]
      },
@@ -2324,9 +2304,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 18,
+        "printed": 16
        }
       ]
      },
@@ -2342,9 +2321,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 19,
+        "printed": 17
        }
       ]
      },
@@ -2360,9 +2338,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 19,
+        "printed": 17
        }
       ]
      },
@@ -2378,9 +2355,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 19,
+        "printed": 17
        }
       ]
      },
@@ -2396,9 +2372,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 19,
+        "printed": 17
        }
       ]
      },
@@ -2422,9 +2397,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 19,
+        "printed": 17
        }
       ]
      },
@@ -2440,9 +2414,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2458,9 +2431,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2476,9 +2448,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2494,9 +2465,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2512,9 +2482,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2530,9 +2499,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2556,9 +2524,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2582,9 +2549,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2600,9 +2566,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2618,9 +2583,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2636,9 +2600,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2654,9 +2617,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      },
@@ -2672,9 +2634,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 16,
-        "printed": 14,
-        "fromFrontMatterRange": "16-22"
+        "scan": 20,
+        "printed": 18
        }
       ]
      }
@@ -3176,25 +3137,74 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 16,
+     "toScan": 17,
+     "fromPrinted": 14,
+     "toPrinted": 15,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 17,
+     "toScan": 18,
+     "fromPrinted": 15,
+     "toPrinted": 16,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 18,
+     "toScan": 19,
+     "fromPrinted": 16,
+     "toPrinted": 17,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 19,
+     "toScan": 20,
+     "fromPrinted": 17,
+     "toPrinted": 18,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 20,
+     "toScan": 21,
+     "fromPrinted": 18,
+     "toPrinted": 19,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 21,
+     "toScan": 22,
+     "fromPrinted": 19,
+     "toPrinted": 20,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 4,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 4,
    "slug": "section-04",
-   "titleTa": "4",
-   "titleEn": "4",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 22,
-     "to": 22
+     "to": 27
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 20,
-    "to": 20
+    "to": 25
    },
    "tamil": {
     "blocks": [
@@ -3211,8 +3221,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3229,8 +3238,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3255,8 +3263,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3273,8 +3280,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3291,8 +3297,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3309,8 +3314,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3327,8 +3331,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3353,8 +3356,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3371,8 +3373,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3389,8 +3390,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3407,8 +3407,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3425,8 +3424,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3451,8 +3449,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3469,8 +3466,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3487,8 +3483,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3521,8 +3516,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3563,8 +3557,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3609,8 +3602,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3627,8 +3619,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      },
@@ -3645,8 +3636,7 @@
       "sourcePages": [
        {
         "scan": 22,
-        "printed": 20,
-        "fromFrontMatterRange": "22-27"
+        "printed": 20
        }
       ]
      }
@@ -4081,25 +4071,66 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 22,
+     "toScan": 23,
+     "fromPrinted": 20,
+     "toPrinted": 21,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 23,
+     "toScan": 24,
+     "fromPrinted": 21,
+     "toPrinted": 22,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 24,
+     "toScan": 25,
+     "fromPrinted": 22,
+     "toPrinted": 23,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 25,
+     "toScan": 26,
+     "fromPrinted": 23,
+     "toPrinted": 24,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 26,
+     "toScan": 27,
+     "fromPrinted": 24,
+     "toPrinted": 25,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 5,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 5,
    "slug": "section-05",
-   "titleTa": "5",
-   "titleEn": "5",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 27,
-     "to": 27
+     "to": 31
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 25,
-    "to": 25
+    "to": 29
    },
    "tamil": {
     "blocks": [
@@ -4116,8 +4147,7 @@
       "sourcePages": [
        {
         "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "printed": 25
        }
       ]
      },
@@ -4134,8 +4164,7 @@
       "sourcePages": [
        {
         "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "printed": 25
        }
       ]
      },
@@ -4160,8 +4189,7 @@
       "sourcePages": [
        {
         "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "printed": 25
        }
       ]
      },
@@ -4178,8 +4206,7 @@
       "sourcePages": [
        {
         "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "printed": 25
        }
       ]
      },
@@ -4200,8 +4227,7 @@
       "sourcePages": [
        {
         "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "printed": 25
        }
       ]
      },
@@ -4222,8 +4248,7 @@
       "sourcePages": [
        {
         "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "printed": 25
        }
       ]
      },
@@ -4239,9 +4264,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4257,9 +4281,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4275,9 +4298,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4293,9 +4315,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4311,9 +4332,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4329,9 +4349,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4347,9 +4366,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4365,9 +4383,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4383,9 +4400,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4401,9 +4417,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4419,9 +4434,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4437,9 +4451,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      },
@@ -4455,9 +4468,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 27,
-        "printed": 25,
-        "fromFrontMatterRange": "27-31"
+        "scan": 29,
+        "printed": 27
        }
       ]
      }
@@ -4815,25 +4827,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 27,
+     "toScan": 28,
+     "fromPrinted": 25,
+     "toPrinted": 26,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 28,
+     "toScan": 29,
+     "fromPrinted": 26,
+     "toPrinted": 27,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 29,
+     "toScan": 30,
+     "fromPrinted": 27,
+     "toPrinted": 28,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 30,
+     "toScan": 31,
+     "fromPrinted": 28,
+     "toPrinted": 29,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 6,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 6,
    "slug": "section-06",
-   "titleTa": "6",
-   "titleEn": "6",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 31,
-     "to": 31
+     "to": 34
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 29,
-    "to": 29
+    "to": 32
    },
    "tamil": {
     "blocks": [
@@ -4850,8 +4895,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4868,8 +4912,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4886,8 +4929,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4904,8 +4946,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4922,8 +4963,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4948,8 +4988,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4966,8 +5005,7 @@
       "sourcePages": [
        {
         "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "printed": 29
        }
       ]
      },
@@ -4991,9 +5029,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5009,9 +5046,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5043,9 +5079,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5061,9 +5096,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5079,9 +5113,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5097,9 +5130,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5115,9 +5147,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5149,9 +5180,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5167,9 +5197,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5185,9 +5214,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      },
@@ -5203,9 +5231,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 31,
-        "printed": 29,
-        "fromFrontMatterRange": "31-34"
+        "scan": 33,
+        "printed": 31
        }
       ]
      }
@@ -5539,25 +5566,50 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 31,
+     "toScan": 32,
+     "fromPrinted": 29,
+     "toPrinted": 30,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 32,
+     "toScan": 33,
+     "fromPrinted": 30,
+     "toPrinted": 31,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 33,
+     "toScan": 34,
+     "fromPrinted": 31,
+     "toPrinted": 32,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 7,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 7,
    "slug": "section-07",
-   "titleTa": "7",
-   "titleEn": "7",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 34,
-     "to": 34
+     "to": 38
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 32,
-    "to": 32
+    "to": 36
    },
    "tamil": {
     "blocks": [
@@ -5574,8 +5626,7 @@
       "sourcePages": [
        {
         "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "printed": 32
        }
       ]
      },
@@ -5592,8 +5643,7 @@
       "sourcePages": [
        {
         "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "printed": 32
        }
       ]
      },
@@ -5610,8 +5660,7 @@
       "sourcePages": [
        {
         "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "printed": 32
        }
       ]
      },
@@ -5628,8 +5677,7 @@
       "sourcePages": [
        {
         "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "printed": 32
        }
       ]
      },
@@ -5646,8 +5694,7 @@
       "sourcePages": [
        {
         "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "printed": 32
        }
       ]
      },
@@ -5680,8 +5727,7 @@
       "sourcePages": [
        {
         "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "printed": 32
        }
       ]
      },
@@ -5697,9 +5743,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5715,9 +5760,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5733,9 +5777,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5751,9 +5794,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5769,9 +5811,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5787,9 +5828,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5805,9 +5845,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 36,
+        "printed": 34
        }
       ]
      },
@@ -5823,9 +5862,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5841,9 +5879,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5859,9 +5896,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5877,9 +5913,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5895,9 +5930,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5913,9 +5947,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5931,9 +5964,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 37,
+        "printed": 35
        }
       ]
      },
@@ -5949,9 +5981,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 38,
+        "printed": 36
        }
       ]
      },
@@ -5975,9 +6006,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 34,
-        "printed": 32,
-        "fromFrontMatterRange": "34-38"
+        "scan": 38,
+        "printed": 36
        }
       ]
      }
@@ -6386,25 +6416,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 34,
+     "toScan": 35,
+     "fromPrinted": 32,
+     "toPrinted": 33,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 35,
+     "toScan": 36,
+     "fromPrinted": 33,
+     "toPrinted": 34,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 36,
+     "toScan": 37,
+     "fromPrinted": 34,
+     "toPrinted": 35,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 37,
+     "toScan": 38,
+     "fromPrinted": 35,
+     "toPrinted": 36,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 8,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 8,
    "slug": "section-08",
-   "titleTa": "8",
-   "titleEn": "8",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 38,
-     "to": 38
+     "to": 41
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 36,
-    "to": 36
+    "to": 39
    },
    "tamil": {
     "blocks": [
@@ -6461,8 +6524,7 @@
       "sourcePages": [
        {
         "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "printed": 36
        }
       ]
      },
@@ -6487,8 +6549,7 @@
       "sourcePages": [
        {
         "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "printed": 36
        }
       ]
      },
@@ -6505,8 +6566,7 @@
       "sourcePages": [
        {
         "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "printed": 36
        }
       ]
      },
@@ -6523,8 +6583,7 @@
       "sourcePages": [
        {
         "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "printed": 36
        }
       ]
      },
@@ -6557,8 +6616,7 @@
       "sourcePages": [
        {
         "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "printed": 36
        }
       ]
      },
@@ -6574,9 +6632,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6592,9 +6649,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6610,9 +6666,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6652,9 +6707,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6670,9 +6724,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6688,9 +6741,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6706,9 +6758,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6724,9 +6775,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6742,9 +6792,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6760,9 +6809,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6778,9 +6826,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6796,9 +6843,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6814,9 +6860,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6832,9 +6877,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6850,9 +6894,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6868,9 +6911,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6894,9 +6936,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6920,9 +6961,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      },
@@ -6938,9 +6978,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 38,
-        "printed": 36,
-        "fromFrontMatterRange": "38-41"
+        "scan": 40,
+        "printed": 38
        }
       ]
      }
@@ -7451,25 +7490,50 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 38,
+     "toScan": 39,
+     "fromPrinted": 36,
+     "toPrinted": 37,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 39,
+     "toScan": 40,
+     "fromPrinted": 37,
+     "toPrinted": 38,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 40,
+     "toScan": 41,
+     "fromPrinted": 38,
+     "toPrinted": 39,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 9,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 9,
    "slug": "section-09",
-   "titleTa": "9",
-   "titleEn": "9",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 42,
-     "to": 42
+     "to": 44
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 40,
-    "to": 40
+    "to": 42
    },
    "tamil": {
     "blocks": [
@@ -7494,8 +7558,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7528,8 +7591,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7554,8 +7616,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7572,8 +7633,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7598,8 +7658,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7616,8 +7675,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7634,8 +7692,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7652,8 +7709,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7686,8 +7742,7 @@
       "sourcePages": [
        {
         "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "printed": 40
        }
       ]
      },
@@ -7703,9 +7758,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "scan": 44,
+        "printed": 42
        }
       ]
      },
@@ -7737,9 +7791,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "scan": 44,
+        "printed": 42
        }
       ]
      },
@@ -7783,9 +7836,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "scan": 44,
+        "printed": 42
        }
       ]
      },
@@ -7801,9 +7853,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 42,
-        "printed": 40,
-        "fromFrontMatterRange": "42-44"
+        "scan": 44,
+        "printed": 42
        }
       ]
      }
@@ -8147,25 +8198,42 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 42,
+     "toScan": 43,
+     "fromPrinted": 40,
+     "toPrinted": 41,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 43,
+     "toScan": 44,
+     "fromPrinted": 41,
+     "toPrinted": 42,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 10,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 10,
    "slug": "section-10",
-   "titleTa": "10",
-   "titleEn": "10",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 45,
-     "to": 45
+     "to": 47
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 43,
-    "to": 43
+    "to": 45
    },
    "tamil": {
     "blocks": [
@@ -8182,8 +8250,7 @@
       "sourcePages": [
        {
         "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "printed": 43
        }
       ]
      },
@@ -8240,8 +8307,7 @@
       "sourcePages": [
        {
         "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "printed": 43
        }
       ]
      },
@@ -8258,8 +8324,7 @@
       "sourcePages": [
        {
         "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "printed": 43
        }
       ]
      },
@@ -8276,8 +8341,7 @@
       "sourcePages": [
        {
         "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "printed": 43
        }
       ]
      },
@@ -8354,8 +8418,7 @@
       "sourcePages": [
        {
         "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "printed": 43
        }
       ]
      },
@@ -8372,8 +8435,7 @@
       "sourcePages": [
        {
         "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "printed": 43
        }
       ]
      },
@@ -8389,9 +8451,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8463,9 +8524,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8481,9 +8541,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8499,9 +8558,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8517,9 +8575,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8551,9 +8608,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8569,9 +8625,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8595,9 +8650,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8621,9 +8675,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8663,9 +8716,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      },
@@ -8681,9 +8733,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 45,
-        "printed": 43,
-        "fromFrontMatterRange": "45-47"
+        "scan": 46,
+        "printed": 44
        }
       ]
      }
@@ -9239,25 +9290,42 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 45,
+     "toScan": 46,
+     "fromPrinted": 43,
+     "toPrinted": 44,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 46,
+     "toScan": 47,
+     "fromPrinted": 44,
+     "toPrinted": 45,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 11,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 11,
    "slug": "section-11",
-   "titleTa": "11",
-   "titleEn": "11",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 48,
-     "to": 48
+     "to": 51
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 46,
-    "to": 46
+    "to": 49
    },
    "tamil": {
     "blocks": [
@@ -9278,8 +9346,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9296,8 +9363,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9314,8 +9380,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9332,8 +9397,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9350,8 +9414,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9368,8 +9431,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9386,8 +9448,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9404,8 +9465,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9422,8 +9482,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9440,8 +9499,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9474,8 +9532,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9492,8 +9549,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9510,8 +9566,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9544,8 +9599,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9562,8 +9616,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9612,8 +9665,7 @@
       "sourcePages": [
        {
         "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "printed": 46
        }
       ]
      },
@@ -9637,9 +9689,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "scan": 51,
+        "printed": 49
        }
       ]
      },
@@ -9663,9 +9714,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 48,
-        "printed": 46,
-        "fromFrontMatterRange": "48-51"
+        "scan": 51,
+        "printed": 49
        }
       ]
      }
@@ -10066,25 +10116,50 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 48,
+     "toScan": 49,
+     "fromPrinted": 46,
+     "toPrinted": 47,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 49,
+     "toScan": 50,
+     "fromPrinted": 47,
+     "toPrinted": 48,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 50,
+     "toScan": 51,
+     "fromPrinted": 48,
+     "toPrinted": 49,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 12,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 12,
    "slug": "section-12",
-   "titleTa": "12",
-   "titleEn": "12",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 51,
-     "to": 51
+     "to": 55
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 49,
-    "to": 49
+    "to": 53
    },
    "tamil": {
     "blocks": [
@@ -10101,8 +10176,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10119,8 +10193,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10137,8 +10210,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10155,8 +10227,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10173,8 +10244,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10191,8 +10261,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10209,8 +10278,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10227,8 +10295,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10245,8 +10312,7 @@
       "sourcePages": [
        {
         "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "printed": 49
        }
       ]
      },
@@ -10262,9 +10328,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10280,9 +10345,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10310,9 +10374,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10328,9 +10391,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10346,9 +10408,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10364,9 +10425,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10382,9 +10442,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10400,9 +10459,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10418,9 +10476,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10436,9 +10493,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10454,9 +10510,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10472,9 +10527,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      },
@@ -10490,9 +10544,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 51,
-        "printed": 49,
-        "fromFrontMatterRange": "51-55"
+        "scan": 53,
+        "printed": 51
        }
       ]
      }
@@ -10893,25 +10946,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 51,
+     "toScan": 52,
+     "fromPrinted": 49,
+     "toPrinted": 50,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 52,
+     "toScan": 53,
+     "fromPrinted": 50,
+     "toPrinted": 51,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 53,
+     "toScan": 54,
+     "fromPrinted": 51,
+     "toPrinted": 52,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 54,
+     "toScan": 55,
+     "fromPrinted": 52,
+     "toPrinted": 53,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 13,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 13,
    "slug": "section-13",
-   "titleTa": "13",
-   "titleEn": "13",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 55,
-     "to": 55
+     "to": 58
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 53,
-    "to": 53
+    "to": 56
    },
    "tamil": {
     "blocks": [
@@ -10928,8 +11014,7 @@
       "sourcePages": [
        {
         "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "printed": 53
        }
       ]
      },
@@ -10946,8 +11031,7 @@
       "sourcePages": [
        {
         "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "printed": 53
        }
       ]
      },
@@ -10964,8 +11048,7 @@
       "sourcePages": [
        {
         "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "printed": 53
        }
       ]
      },
@@ -10990,8 +11073,7 @@
       "sourcePages": [
        {
         "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "printed": 53
        }
       ]
      },
@@ -11008,8 +11090,7 @@
       "sourcePages": [
        {
         "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "printed": 53
        }
       ]
      },
@@ -11026,8 +11107,7 @@
       "sourcePages": [
        {
         "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "printed": 53
        }
       ]
      },
@@ -11075,9 +11155,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11093,9 +11172,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11111,9 +11189,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11129,9 +11206,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11155,9 +11231,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11181,9 +11256,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11199,9 +11273,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11225,9 +11298,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      },
@@ -11243,9 +11315,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 55,
-        "printed": 53,
-        "fromFrontMatterRange": "55-58"
+        "scan": 57,
+        "printed": 55
        }
       ]
      }
@@ -11559,25 +11630,50 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 55,
+     "toScan": 56,
+     "fromPrinted": 53,
+     "toPrinted": 54,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 56,
+     "toScan": 57,
+     "fromPrinted": 54,
+     "toPrinted": 55,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 57,
+     "toScan": 58,
+     "fromPrinted": 55,
+     "toPrinted": 56,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 14,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 14,
    "slug": "section-14",
-   "titleTa": "14",
-   "titleEn": "14",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 59,
-     "to": 59
+     "to": 63
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 57,
-    "to": 57
+    "to": 61
    },
    "tamil": {
     "blocks": [
@@ -11594,8 +11690,7 @@
       "sourcePages": [
        {
         "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "printed": 57
        }
       ]
      },
@@ -11612,8 +11707,7 @@
       "sourcePages": [
        {
         "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "printed": 57
        }
       ]
      },
@@ -11630,8 +11724,7 @@
       "sourcePages": [
        {
         "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "printed": 57
        }
       ]
      },
@@ -11648,8 +11741,7 @@
       "sourcePages": [
        {
         "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "printed": 57
        }
       ]
      },
@@ -11666,8 +11758,7 @@
       "sourcePages": [
        {
         "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "printed": 57
        }
       ]
      },
@@ -11684,8 +11775,7 @@
       "sourcePages": [
        {
         "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "printed": 57
        }
       ]
      },
@@ -11701,9 +11791,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11719,9 +11808,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11737,9 +11825,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11755,9 +11842,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11773,9 +11859,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11791,9 +11876,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11809,9 +11893,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11827,9 +11910,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11845,9 +11927,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11863,9 +11944,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11885,9 +11965,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11903,9 +11982,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11921,9 +11999,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11939,9 +12016,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 60,
+        "printed": 58
        }
       ]
      },
@@ -11957,9 +12033,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 63,
+        "printed": 61
        }
       ]
      },
@@ -11975,9 +12050,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 59,
-        "printed": 57,
-        "fromFrontMatterRange": "59-63"
+        "scan": 63,
+        "printed": 61
        }
       ]
      }
@@ -12370,25 +12444,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 59,
+     "toScan": 60,
+     "fromPrinted": 57,
+     "toPrinted": 58,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 60,
+     "toScan": 61,
+     "fromPrinted": 58,
+     "toPrinted": 59,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 61,
+     "toScan": 62,
+     "fromPrinted": 59,
+     "toPrinted": 60,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 62,
+     "toScan": 63,
+     "fromPrinted": 60,
+     "toPrinted": 61,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 15,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 15,
    "slug": "section-15",
-   "titleTa": "15",
-   "titleEn": "15",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 64,
-     "to": 64
+     "to": 67
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 62,
-    "to": 62
+    "to": 65
    },
    "tamil": {
     "blocks": [
@@ -12405,8 +12512,7 @@
       "sourcePages": [
        {
         "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "printed": 62
        }
       ]
      },
@@ -12423,8 +12529,7 @@
       "sourcePages": [
        {
         "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "printed": 62
        }
       ]
      },
@@ -12441,8 +12546,7 @@
       "sourcePages": [
        {
         "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "printed": 62
        }
       ]
      },
@@ -12459,8 +12563,7 @@
       "sourcePages": [
        {
         "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "printed": 62
        }
       ]
      },
@@ -12477,8 +12580,7 @@
       "sourcePages": [
        {
         "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "printed": 62
        }
       ]
      },
@@ -12494,9 +12596,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12512,9 +12613,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12530,9 +12630,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12548,9 +12647,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12566,9 +12664,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12584,9 +12681,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12602,9 +12698,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12620,9 +12715,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12646,9 +12740,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12664,9 +12757,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 65,
+        "printed": 63
        }
       ]
      },
@@ -12682,9 +12774,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 64,
-        "printed": 62,
-        "fromFrontMatterRange": "64-67"
+        "scan": 67,
+        "printed": 65
        }
       ]
      }
@@ -12975,25 +13066,50 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 64,
+     "toScan": 65,
+     "fromPrinted": 62,
+     "toPrinted": 63,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 65,
+     "toScan": 66,
+     "fromPrinted": 63,
+     "toPrinted": 64,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 66,
+     "toScan": 67,
+     "fromPrinted": 64,
+     "toPrinted": 65,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 16,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 16,
    "slug": "section-16",
-   "titleTa": "16",
-   "titleEn": "16",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 67,
-     "to": 67
+     "to": 70
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 65,
-    "to": 65
+    "to": 68
    },
    "tamil": {
     "blocks": [
@@ -13010,8 +13126,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13028,8 +13143,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13046,8 +13160,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13064,8 +13177,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13082,8 +13194,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13100,8 +13211,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13118,8 +13228,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13136,8 +13245,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13154,8 +13262,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13172,8 +13279,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13190,8 +13296,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13208,8 +13313,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13226,8 +13330,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13244,8 +13347,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13262,8 +13364,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13280,8 +13381,7 @@
       "sourcePages": [
        {
         "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "printed": 65
        }
       ]
      },
@@ -13297,9 +13397,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13315,9 +13414,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13333,9 +13431,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13351,9 +13448,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13369,9 +13465,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13387,9 +13482,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13405,9 +13499,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13423,9 +13516,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13441,9 +13533,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13459,9 +13550,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13477,9 +13567,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13495,9 +13584,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13513,9 +13601,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13531,9 +13618,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13549,9 +13635,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 69,
+        "printed": 67
        }
       ]
      },
@@ -13567,9 +13652,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 70,
+        "printed": 68
        }
       ]
      },
@@ -13585,9 +13669,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 70,
+        "printed": 68
        }
       ]
      },
@@ -13603,9 +13686,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 70,
+        "printed": 68
        }
       ]
      },
@@ -13621,9 +13703,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 70,
+        "printed": 68
        }
       ]
      },
@@ -13639,9 +13720,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 70,
+        "printed": 68
        }
       ]
      },
@@ -13665,9 +13745,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 67,
-        "printed": 65,
-        "fromFrontMatterRange": "67-70"
+        "scan": 70,
+        "printed": 68
        }
       ]
      }
@@ -14315,25 +14394,50 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 67,
+     "toScan": 68,
+     "fromPrinted": 65,
+     "toPrinted": 66,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 68,
+     "toScan": 69,
+     "fromPrinted": 66,
+     "toPrinted": 67,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 69,
+     "toScan": 70,
+     "fromPrinted": 67,
+     "toPrinted": 68,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 17,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 17,
    "slug": "section-17",
-   "titleTa": "17",
-   "titleEn": "17",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 70,
-     "to": 70
+     "to": 74
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 68,
-    "to": 68
+    "to": 72
    },
    "tamil": {
     "blocks": [
@@ -14350,8 +14454,7 @@
       "sourcePages": [
        {
         "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "printed": 68
        }
       ]
      },
@@ -14368,8 +14471,7 @@
       "sourcePages": [
        {
         "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "printed": 68
        }
       ]
      },
@@ -14385,9 +14487,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14403,9 +14504,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14421,9 +14521,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14439,9 +14538,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14465,9 +14563,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14483,9 +14580,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14509,9 +14605,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14527,9 +14622,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14545,9 +14639,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14563,9 +14656,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 71,
+        "printed": 69
        }
       ]
      },
@@ -14581,9 +14673,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 73,
+        "printed": 71
        }
       ]
      },
@@ -14599,9 +14690,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 73,
+        "printed": 71
        }
       ]
      },
@@ -14617,9 +14707,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 73,
+        "printed": 71
        }
       ]
      },
@@ -14635,9 +14724,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 73,
+        "printed": 71
        }
       ]
      },
@@ -14653,9 +14741,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 73,
+        "printed": 71
        }
       ]
      },
@@ -14671,9 +14758,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 73,
+        "printed": 71
        }
       ]
      },
@@ -14689,9 +14775,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 74,
+        "printed": 72
        }
       ]
      },
@@ -14707,9 +14792,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 74,
+        "printed": 72
        }
       ]
      },
@@ -14733,9 +14817,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 74,
+        "printed": 72
        }
       ]
      },
@@ -14751,9 +14834,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 74,
+        "printed": 72
        }
       ]
      },
@@ -14777,9 +14859,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 74,
+        "printed": 72
        }
       ]
      },
@@ -14795,9 +14876,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 70,
-        "printed": 68,
-        "fromFrontMatterRange": "70-74"
+        "scan": 74,
+        "printed": 72
        }
       ]
      }
@@ -15240,25 +15320,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 70,
+     "toScan": 71,
+     "fromPrinted": 68,
+     "toPrinted": 69,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 71,
+     "toScan": 72,
+     "fromPrinted": 69,
+     "toPrinted": 70,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 72,
+     "toScan": 73,
+     "fromPrinted": 70,
+     "toPrinted": 71,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 73,
+     "toScan": 74,
+     "fromPrinted": 71,
+     "toPrinted": 72,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 18,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 18,
    "slug": "section-18",
-   "titleTa": "18",
-   "titleEn": "18",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 75,
-     "to": 75
+     "to": 79
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 73,
-    "to": 73
+    "to": 77
    },
    "tamil": {
     "blocks": [
@@ -15275,8 +15388,7 @@
       "sourcePages": [
        {
         "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "printed": 73
        }
       ]
      },
@@ -15293,8 +15405,7 @@
       "sourcePages": [
        {
         "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "printed": 73
        }
       ]
      },
@@ -15311,8 +15422,7 @@
       "sourcePages": [
        {
         "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "printed": 73
        }
       ]
      },
@@ -15329,8 +15439,7 @@
       "sourcePages": [
        {
         "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "printed": 73
        }
       ]
      },
@@ -15346,9 +15455,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 76,
+        "printed": 74
        }
       ]
      },
@@ -15364,9 +15472,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 76,
+        "printed": 74
        }
       ]
      },
@@ -15382,9 +15489,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 76,
+        "printed": 74
        }
       ]
      },
@@ -15400,9 +15506,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 76,
+        "printed": 74
        }
       ]
      },
@@ -15418,9 +15523,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 76,
+        "printed": 74
        }
       ]
      },
@@ -15436,9 +15540,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 76,
+        "printed": 74
        }
       ]
      },
@@ -15454,9 +15557,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15472,9 +15574,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15490,9 +15591,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15508,9 +15608,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15526,9 +15625,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15544,9 +15642,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15574,9 +15671,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 77,
+        "printed": 75
        }
       ]
      },
@@ -15592,9 +15688,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15610,9 +15705,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15628,9 +15722,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15654,9 +15747,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15672,9 +15764,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15690,9 +15781,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15708,9 +15798,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 78,
+        "printed": 76
        }
       ]
      },
@@ -15726,9 +15815,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 79,
+        "printed": 77
        }
       ]
      },
@@ -15744,9 +15832,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 79,
+        "printed": 77
        }
       ]
      },
@@ -15762,9 +15849,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 75,
-        "printed": 73,
-        "fromFrontMatterRange": "75-79"
+        "scan": 79,
+        "printed": 77
        }
       ]
      }
@@ -16266,25 +16352,58 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 75,
+     "toScan": 76,
+     "fromPrinted": 73,
+     "toPrinted": 74,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 76,
+     "toScan": 77,
+     "fromPrinted": 74,
+     "toPrinted": 75,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 77,
+     "toScan": 78,
+     "fromPrinted": 75,
+     "toPrinted": 76,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 78,
+     "toScan": 79,
+     "fromPrinted": 76,
+     "toPrinted": 77,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   },
   {
    "number": 19,
-   "numberSource": "archive-ordinal",
-   "sourceArticleNumberAsPrinted": null,
+   "numberSource": "source-section",
+   "sourceArticleNumberAsPrinted": 19,
    "slug": "section-19",
-   "titleTa": "19",
-   "titleEn": "19",
+   "titleTa": "",
+   "titleEn": "",
    "scanRuns": [
     {
      "from": 79,
-     "to": 79
+     "to": 82
     }
    ],
    "printedPages": {
     "kind": "range",
     "from": 77,
-    "to": 77
+    "to": 80
    },
    "tamil": {
     "blocks": [
@@ -16309,8 +16428,7 @@
       "sourcePages": [
        {
         "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "printed": 77
        }
       ]
      },
@@ -16326,9 +16444,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 80,
+        "printed": 78
        }
       ]
      },
@@ -16344,9 +16461,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 80,
+        "printed": 78
        }
       ]
      },
@@ -16362,9 +16478,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 80,
+        "printed": 78
        }
       ]
      },
@@ -16380,9 +16495,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 80,
+        "printed": 78
        }
       ]
      },
@@ -16398,9 +16512,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 80,
+        "printed": 78
        }
       ]
      },
@@ -16416,9 +16529,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16434,9 +16546,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16460,9 +16571,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16478,9 +16588,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16504,9 +16613,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16522,9 +16630,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16548,9 +16655,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16566,9 +16672,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16588,9 +16693,8 @@
       "mixedVoice": true,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      },
@@ -16606,9 +16710,8 @@
       "mixedVoice": false,
       "sourcePages": [
        {
-        "scan": 79,
-        "printed": 77,
-        "fromFrontMatterRange": "79-82"
+        "scan": 81,
+        "printed": 79
        }
       ]
      }
@@ -16931,7 +17034,32 @@
     ],
     "notes": []
    },
-   "pageTransitions": []
+   "pageTransitions": [
+    {
+     "fromScan": 79,
+     "toScan": 80,
+     "fromPrinted": 77,
+     "toPrinted": 78,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 80,
+     "toScan": 81,
+     "fromPrinted": 78,
+     "toPrinted": 79,
+     "relation": "unknown",
+     "evidence": []
+    },
+    {
+     "fromScan": 81,
+     "toScan": 82,
+     "fromPrinted": 79,
+     "toPrinted": 80,
+     "relation": "unknown",
+     "evidence": []
+    }
+   ]
   }
  ],
  "articleCount": 19

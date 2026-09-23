@@ -25,6 +25,7 @@ import NovelSource from "../components/NovelSource";
 import EssayLanding from "../components/EssayLanding";
 import ArticleReader from "../components/ArticleReader";
 import ArticleSource from "../components/ArticleSource";
+import { articleNumberingNote } from "../lib/essay-source-facts";
 import { wave7NovelToNovel, wave7NovelProvenance } from "../lib/wave7-novels-adapter";
 
 const root = process.cwd();
@@ -93,7 +94,43 @@ for (const slug of ESSAYS) {
     ok(!enText.trim() || hasLatin(rEn), `${slug}/${a.slug}: English article renders non-empty`);
     ok(!LEAK.test(rTa) && !LEAK.test(rEn), `${slug}/${a.slug}: no leak in article render`);
     // The reading title is rendered (whether a source heading or the source's own numbered-section label).
-    ok(rTa.includes(esc(String(a.titleTa))), `${slug}/${a.slug}: reading title present in render`);
+    if (a.numberSource === "source-section") {
+      ok(rTa.includes(`பகுதி ${a.number}`), `${slug}/${a.slug}: source-section reader shows "பகுதி ${a.number}"`);
+      ok(rEn.includes(`Section ${a.number}`), `${slug}/${a.slug}: source-section reader shows "Section ${a.number}" in English`);
+    } else {
+      ok(rTa.includes(esc(String(a.titleTa))), `${slug}/${a.slug}: reading title present in render`);
+    }
+  }
+}
+
+// ── UI DEFECT GUARDS (Wave-7 B4) ─────────────────────────────────────────────────────────────────────
+{
+  // DEFECT B — பேசும் கலை வளர்ப்போம்: landing lists Section 1..19 with the number shown once; no "N N N"
+  // duplicated-numeral rows; the note says the sections are source-numbered with no printed contents page
+  // and never calls them archive-created; the publication title appears once (as the page title).
+  const pesum = load(`public/data/essays/pesum-kalai-valarppom/publication.json`);
+  // Both the "பகுதி N" (Tamil) and "Section N" (English) labels render in every row regardless of the
+  // active language, so the Tamil-default render carries both.
+  const landTa = ta(createElement(EssayLanding, { pub: pesum }));
+  ok(landTa.includes("பகுதி 1") && landTa.includes("பகுதி 19"), "pesum landing: shows பகுதி 1 … பகுதி 19");
+  ok(landTa.includes("Section 1") && landTa.includes("Section 19"), "pesum landing: shows Section 1 … Section 19");
+  // No bare-numeral duplication (the "2 2 2" defect): no list row renders a bare numeral as its title.
+  ok(!/>\s*2\s*<\/span>\s*<span[^>]*lang="ta"[^>]*>\s*2\s*</.test(landTa), "pesum landing: no duplicated bare-numeral title row (the '2 2 2' defect)");
+  ok(/பகுதி எண்கள்|நூலின் உட்பகுதியில்/.test(landTa) && !/வாசிப்பு வரிசை எண்கள்/.test(landTa), "pesum landing note (Tamil): source-visible section numbers, not archive reading ordinals");
+  ok((landTa.match(/பேசும் கலை வளர்ப்போம்/g) || []).length >= 1, "pesum landing: publication title present");
+  // The English note wording (source-numbered, no printed contents page, never archive ordinals) is a pure
+  // string derived from the data; assert it directly.
+  const noteEn = articleNumberingNote(pesum, false);
+  ok(/no printed contents page/i.test(noteEn) && /numbered in the source itself/i.test(noteEn) && !/archive's reading ordinals/i.test(noteEn), "pesum note (English): no printed contents page + source-numbered, never archive ordinals");
+  const noteTa = articleNumberingNote(pesum, true);
+  ok(!/வாசிப்பு வரிசை எண்கள்/.test(noteTa) && /பகுதி எண்கள்/.test(noteTa), "pesum note (Tamil): source-visible section numbers, not archive reading ordinals");
+  // DEFECT A — விடுதலைக் கிளர்ச்சி: the reader body never renders archival-control apparatus (Tamil or English).
+  const vid = load(`public/data/essays/viduthalai-kilarcci/publication.json`);
+  for (let i = 0; i < vid.articles.length; i++) {
+    const a = vid.articles[i];
+    const r = ta(createElement(ArticleReader, { pub: vid, article: a, prev: null, next: null }));
+    const rE = ta(createElement(ArticleReader, { pub: vid, article: a, prev: null, next: null, initialShowEn: true }));
+    ok(!/Assembly provenance|P3 assembly audit|P5 strict visual|page-record coverage|omitted canonical/i.test(r + rE), `viduthalai/${a.slug}: no archival-control apparatus rendered in the reader`);
   }
 }
 

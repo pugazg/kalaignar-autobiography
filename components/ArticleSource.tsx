@@ -165,14 +165,14 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
                   <tr key={a.number} className="border-b border-ink/5 align-top dark:border-white/5">
                     <td className="py-1.5 pr-3 tabular-nums text-ink/60 dark:text-night-text/60">{a.number}</td>
                     <td className="py-1.5 pr-3 font-tamil text-ink/85 dark:text-night-text/85" lang="ta">
-                      {a.titleTa}
+                      {a.numberSource === "source-section" ? `பகுதி ${a.number}` : a.titleTa}
                       {a.contentsTitleTa && (
                         <span className="mt-0.5 block text-[11px] italic text-ink/45 dark:text-night-text/45">
                           {ta ? "பொருளடக்கம்: " : "contents page: "}{a.contentsTitleTa}
                         </span>
                       )}
                     </td>
-                    <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70">{a.titleEn}</td>
+                    <td className="py-1.5 pr-3 text-ink/70 dark:text-night-text/70">{a.numberSource === "source-section" ? `Section ${a.number}` : a.titleEn}</td>
                     <td className="py-1.5 pr-3 tabular-nums text-ink/55 dark:text-night-text/55">{a.scanPages}</td>
                     <td className="py-1.5 tabular-nums text-ink/55 dark:text-night-text/55">{a.printedPages}</td>
                   </tr>
@@ -188,6 +188,10 @@ export default function ArticleSource({ slug, prov }: { slug: string; prov: Essa
               ? (ta
                   ? "இந்த எண்கள் நூலின் சொந்த அச்சிடப்பட்ட பொருளடக்கப் பக்கத்தில் உள்ளவை; ஒவ்வொரு கட்டுரை எல்லையும் மூலத்தில் சரிபார்க்கப்பட்டது."
                   : "These numbers are printed in the publication's own contents page, and every article boundary was verified against the source.")
+              : s.articleMap.every((a) => a.numberSource === "source-section")
+              ? (ta
+                  ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை. இந்த எண்கள் நூலின் உட்பகுதியில் அச்சிடப்பட்டுள்ள மூல-வெளிப்படைப் பகுதி எண்கள் — காப்பகம் உருவாக்கியவை அல்ல; மூலம் தலைப்புகள் தரவில்லை, எதுவும் புனையப்படவில்லை."
+                  : "This publication has no printed contents page. These numbers are the source's own visible section numbers — not archive-created — and the source supplies no descriptive titles, so none are invented.")
               : (ta
                   ? "இந்நூலில் அச்சிடப்பட்ட பொருளடக்கப் பக்கம் இல்லை. இந்த எண்கள் காப்பகத்தின் வாசிப்பு வரிசை எண்கள் — அச்சிடப்பட்டவை அல்ல."
                   : "This publication prints no contents page. These numbers are the archive's reading ordinals — they are not printed in the publication.")}

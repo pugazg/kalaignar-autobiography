@@ -128,12 +128,16 @@ export type ArticlePrintedPages =
  * Where an article's ordinal comes from.
  *
  *   "printed-contents" — the publication prints a contents page that numbers the articles;
- *   "archive-ordinal"  — the publication prints NO contents page, and the number is the archive's
- *                        reading ordinal. It must never be described as printed in the publication.
+ *   "archive-ordinal"  — the publication prints NO contents page and the number is the archive's own
+ *                        reading ordinal. It must never be described as printed in the publication;
+ *   "source-section"   — the publication prints NO contents page, but the source itself shows numbered
+ *                        section openings (e.g. 1..19). The number IS source-visible — it must never be
+ *                        called an archive ordinal — yet it is not from a printed contents page, and the
+ *                        source supplies no descriptive section titles (none may be invented).
  *
  * All three Wave-3 publications are `archive-ordinal`: none has a printed contents page.
  */
-export type ArticleNumberSource = "printed-contents" | "archive-ordinal";
+export type ArticleNumberSource = "printed-contents" | "archive-ordinal" | "source-section";
 
 export type Article = {
   /**
