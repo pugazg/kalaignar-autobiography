@@ -514,7 +514,7 @@ jobs:
                     : { repo: "kalaignar-public-speeches", dir: "kalaignar-public-speeches-wave7" },
                 ]),
               ),
-              // Kuraloviyam pins the literary-commentary archive at its own Wave-7 commit (not Thirukkural's).
+              // Kuraloviyam pins the literary-commentary archive at its own Wave-7 commit (not the Thirukkural pin).
               "kuraloviyam": { repo: "kalaignar-literary-commentary", dir: "kalaignar-literary-commentary-wave7" },
             };
             const seen = new Map();
