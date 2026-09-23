@@ -15,6 +15,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { LangProvider } from "../lib/i18n";
 import SpeechSource from "../components/SpeechSource";
+import { toPublicSpeechProvenance } from "../lib/speech-public-provenance";
 import type { Speech, SpeechProvenance } from "../data/speeches";
 import { SPEECH_SLUGS } from "../data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "../lib/speeches-wave6-routes";
@@ -31,7 +32,7 @@ const uniqSort = (a: string[]) => Array.from(new Set(a)).sort();
 const strip = (s: string) => s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 const speech = (slug: string) => JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/speeches", slug, "speech.json"), "utf8")) as Speech;
 const prov = (slug: string) => JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/speeches", slug, "provenance.json"), "utf8")) as SpeechProvenance;
-const renderSourceEn = (slug: string) => strip(renderToStaticMarkup(createElement(SpeechSource, { slug, prov: prov(slug) }))); // context default = English
+const renderSourceEn = (slug: string) => strip(renderToStaticMarkup(createElement(SpeechSource, { slug, prov: toPublicSpeechProvenance(prov(slug)) }))); // context default = English
 
 // ── 1. EXACT ROUTE SET (registry-derived, fail-closed) ─────────────────────────
 eq([...WAVE6_SPEECH_SLUGS], ["namathu-nilai", "idhaya-perikai", "palli-vazhkkai"], "Wave-6 speech slugs are exactly the three batch works");

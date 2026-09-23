@@ -95,7 +95,7 @@ const stripQuote = (p) => p.split("\n").map((l) => l.replace(/^>[ ]?/, "")).join
 const isQuote = (p) => p.split("\n").every((l) => /^>/.test(l));
 
 // Tamil page → blocks.
-function tamilBlocks(rec, scan) {
+function tamilBlocks(rec, scan, limited) {
   const secs = sections(rec.body, ARCH_TA);
   const blank = rec.fm.page_type === "blank";
   const blocks = [];
@@ -104,7 +104,12 @@ function tamilBlocks(rec, scan) {
     if (s.heading && !s.archival) blocks.push({ kind: "heading", level: /^(#+)/.exec(s.heading)[1].length, text: s.heading.replace(/^#+\s+/, "") });
     let k = 0;
     for (const p of s.paras) {
-      const latin = !TA.test(p);
+      // A description may quote Tamil in backticks (e.g. a panel reading `குறளோவியம்`); the quoted span does
+      // not make it source text, so the script test ignores backtick spans.
+      const latin = !TA.test(p.replace(/`[^`]*`/g, ""));
+      // On a permanently source-limited page NOTHING inside an archival section is published: those sections
+      // hold the archive's own workflow-worded account of the page, replaced by the durable condition block.
+      if (limited && s.archival) continue;
       if ((s.archival || blank) && latin) { blocks.push({ kind: "archival", text: p }); k++; continue; }
       if (CITE_TA.test(p.trim())) { blocks.push({ kind: "citation", text: p }); continue; }
       blocks.push({ kind: "paragraph", ...(isQuote(p) ? { quote: true, text: stripQuote(p) } : { text: p }) });
@@ -115,7 +120,7 @@ function tamilBlocks(rec, scan) {
 }
 
 // English page → blocks, with archival descriptions aligned to the Tamil page's archival sections.
-function englishBlocks(rec, scan, archCounts, pageType) {
+function englishBlocks(rec, scan, archCounts, pageType, limited) {
   const secs = sections(rec.body, ARCH_EN);
   const blank = pageType === "blank"; // the audited Tamil record's page type governs both layers
   const blocks = [];
@@ -127,6 +132,7 @@ function englishBlocks(rec, scan, archCounts, pageType) {
     const limitation = /Source limitation/.test(s.heading || "");
     const k = s.archival && !limitation ? (archCounts[ai++] ?? 0) : 0;
     s.paras.forEach((p, i) => {
+      if (limited && (s.archival || limitation)) return;
       if (limitation || (s.archival && i < k) || (blank && !secs.some((x) => x.heading))) { blocks.push({ kind: "archival", text: p }); return; }
       if (CITE_EN.test(p.trim())) { blocks.push({ kind: "citation", text: p }); return; }
       blocks.push({ kind: "paragraph", ...(isQuote(p) ? { quote: true, text: stripQuote(p) } : { text: p }) });
@@ -198,8 +204,9 @@ for (const f of taFiles) {
     if (ta.fm.status !== "partial" || en.fm.status !== "source-limited") die(`${f}: non-verified page is not partial/source-limited (${ta.fm.status}/${en.fm.status})`);
     counts.sourceLimited.push(scan);
   } else if (en.fm.status !== "release-ready") die(`${f}: verified Tamil page without release-ready English (${en.fm.status})`);
-  const t = tamilBlocks(ta, scan);
-  const eb = englishBlocks(en, scan, t.archCounts, ta.fm.page_type);
+  const limitedPage = ta.fm.status !== "verified";
+  const t = tamilBlocks(ta, scan, limitedPage);
+  const eb = englishBlocks(en, scan, t.archCounts, ta.fm.page_type, limitedPage);
   let taB = t.blocks, enB = eb;
   if (limited) {
     // Keep verified source text (headings, prose with its inline gap marker); drop the archive's own
@@ -271,9 +278,11 @@ for (let p = 1; p <= 6; p++) {
 if (splits.map((s) => s.pages).reduce((a, b) => a + b, 0) !== TOTAL_SCANS) die("splits do not cover 666 scans");
 
 // ── PAYLOADS ──────────────────────────────────────────────────────────────────────────────────────────
+const spanOf = (u) => u.printedSpan ?? [pages.get(u.scans[0]).printed, pages.get(u.scans[u.scans.length - 1]).printed];
 const unitPayload = (u) => ({
   work: "kuraloviyam",
   ...u,
+  printedSpan: spanOf(u),
   pages: u.scans.map((s) => {
     const p = pages.get(s);
     return { scan: p.scan, printed: p.printed, pageType: p.pageType, ...(p.sourceLimited ? { sourceLimited: true } : {}), ta: p.ta, en: p.en };
@@ -289,7 +298,7 @@ const indexPayload = {
   entryCount: 300,
   units: units.map((u) => {
     const { scans, ...rest } = u;
-    return { ...rest, scanSpan: [scans[0], scans[scans.length - 1]], printedSpan: u.printedSpan ?? [pages.get(scans[0]).printed, pages.get(scans[scans.length - 1]).printed], ...(scans.some((s) => pages.get(s).sourceLimited) ? { sourceLimitedScans: scans.filter((s) => pages.get(s).sourceLimited) } : {}) };
+    return { ...rest, scanSpan: [scans[0], scans[scans.length - 1]], printedSpan: spanOf(u), ...(scans.some((s) => pages.get(s).sourceLimited) ? { sourceLimitedScans: scans.filter((s) => pages.get(s).sourceLimited) } : {}) };
   }),
 };
 const provenancePayload = {

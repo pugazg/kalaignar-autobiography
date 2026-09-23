@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { ArrowLeft, AudioLines, BookOpen, ExternalLink, FileCheck2, Home, Info, Landmark, ShieldCheck } from "lucide-react";
-import type { SpeechProvenance } from "@/data/speeches";
+import type { PublicSpeechProvenance } from "@/lib/speech-public-provenance";
 import { useLang } from "@/lib/i18n";
 
-export default function SpeechSource({ slug, prov }: { slug: string; prov: SpeechProvenance }) {
+// `prov` is the PUBLIC projection (lib/speech-public-provenance), never the archival record: this is a client
+// component, so every prop is serialized into the page HTML.
+export default function SpeechSource({ slug, prov }: { slug: string; prov: PublicSpeechProvenance }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   // EXACTLY ONE source-facts branch is present. `source` is the printed publication / scan;
@@ -188,10 +190,22 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
             <Row label={ta ? "நூல் தலைப்பு" : "Publication title"}><span className="font-tamil" lang="ta">{s.publicationTitleTa}</span></Row>
             {s.authorTa && <Row label={ta ? "ஆசிரியர்" : "Author"}><span className="font-tamil" lang="ta">{s.authorTa}</span></Row>}
             {(s.editionTa || s.publicationDate) && (<Row label={ta ? "பதிப்பு" : "Edition"}><span className="font-tamil" lang="ta">{s.editionTa}</span> <span className="text-ink/45 dark:text-night-text/45">({s.publicationDate})</span></Row>)}
+            {s.publicationDatePrintedTa && <Row label={ta ? "வெளியீட்டுத் தேதி (அச்சிட்டபடி)" : "Publication date (as printed)"}>{s.publicationDatePrintedTa}</Row>}
             {s.firstEditionTa && <Row label={ta ? "முதற்பதிப்பு" : "First edition"}><span className="font-tamil" lang="ta">{s.firstEditionTa}</span></Row>}
-            {s.publisherTa && (<Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}{s.publisherLocationTa ? `, ${s.publisherLocationTa}` : ""}</span></Row>)}
+            {s.publisherTa && (<Row label={ta ? "பதிப்பகம்" : "Publisher"}><span className="font-tamil" lang="ta">{s.publisherTa}{s.publisherLocationTa ? `, ${s.publisherLocationTa}` : ""}{s.publisherAddressTa ? `, ${s.publisherAddressTa}` : ""}</span></Row>)}
             {s.printerTa && (<Row label={ta ? "அச்சகம்" : "Printer"}><span className="font-tamil" lang="ta">{s.printerTa}{s.printerLocationTa ? `, ${s.printerLocationTa}` : ""}</span></Row>)}
             {s.coverPriceTa && (<Row label={ta ? "விலை (அச்சிட்டபடி)" : "Price (as printed)"}><span className="font-tamil" lang="ta">{s.coverPriceTa}</span></Row>)}
+            {/* The edition's own historical rights line — a source fact about that printing, not a present
+                rights status (none is claimed for these works). */}
+            {s.rightsNoticeTa && (<Row label={ta ? "உரிமை வரி (அச்சிட்டபடி)" : "Rights line (as printed)"}><span className="font-tamil" lang="ta">{s.rightsNoticeTa}</span></Row>)}
+            {s.collectionItem && (
+              <Row label={ta ? "தொகுப்பில் இடம்" : "Place in the collection"}>
+                <Link href={`/collections/${s.collectionItem.collectionId}`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
+                  <span className="font-tamil" lang="ta">{s.publicationTitleTa}</span>
+                </Link>
+                {ta ? ` — உரை ${s.collectionItem.ordinal} / ${s.collectionItem.total}` : ` — item ${s.collectionItem.ordinal} of ${s.collectionItem.total}`}
+              </Row>
+            )}
             <Row label={ta ? "Scan கோப்பு" : "Scan file"} mono>{s.scanFilename}</Row>
             {s.scanSha256 && <Row label={ta ? "Scan SHA-256" : "Scan SHA-256"} mono>{s.scanSha256}</Row>}
             {s.scanFileSizeBytes != null && <Row label={ta ? "Scan அளவு" : "Scan size"}>{s.scanFileSizeBytes.toLocaleString("en-US")} {ta ? "பைட்டுகள்" : "bytes"}</Row>}
@@ -203,6 +217,15 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
               {s.frontMatterScanPages ? ` · ${ta ? "முன்பகுதி" : "front"} ${s.frontMatterScanPages}` : ""}
               {s.advertisementScanPages ? ` · ${ta ? "பின்பகுதி" : "back"} ${s.advertisementScanPages}` : ""}
             </Row>
+            {/* A publication supplied as exact-range split PDFs has no single original checksum; each split
+                carrying this speech is identified by its own verified SHA-256 instead. */}
+            {s.scanSplits?.length ? (
+              <Row label={ta ? "Scan பிரிவுக் கோப்புகள்" : "Scan split files"} mono>
+                {s.scanSplits.map((x) => (
+                  <span key={x.filename} className="block">{x.filename} · {ta ? "scan" : "scans"} {x.scans} · {x.sha256}</span>
+                ))}
+              </Row>
+            ) : null}
           </dl>
           {/* Page-range wording is subtype-agnostic but PROVENANCE-honest: a printed-page range is
               named "printed" ONLY when the source actually publishes one (`printedSpeechPages` in the
@@ -476,6 +499,17 @@ export default function SpeechSource({ slug, prov }: { slug: string; prov: Speec
           <dl className="mt-3">
             <Row label={ta ? "தமிழ் படியெடுப்பு" : "Tamil transcription"}>{String(prov.transcription.status)} · {prov.transcription.verified_against_scan ? (ta ? "scan-உடன் சரிபார்க்கப்பட்டது" : "verified against scan") : "—"}</Row>
             <Row label={ta ? "ஆங்கில மொழிபெயர்ப்பு" : "English translation"}>{String(prov.translation.status)}{prov.translation.type ? ` · ${String(prov.translation.type)}` : ""}</Row>
+            {/* The English FORM is measured (English ÷ Tamil body words), not taken from a status string. A
+                condensed rendering is stated plainly, whatever status the source archive records for it. */}
+            {prov.englishForm === "condensed" && prov.englishCoverage && (
+              <Row label={ta ? "ஆங்கில வடிவம்" : "English form"}>
+                <span data-testid="english-form" lang={lang}>
+                  {ta
+                    ? `சுருக்கிய ஆங்கில வடிவம் — முழு மொழிபெயர்ப்பு அல்ல (ஆங்கிலம் / தமிழ் சொல் விகிதம் ${prov.englishCoverage.englishToTamilWordRatio}; இறக்குமதியின்போது அளக்கப்பட்டது)`
+                    : `Condensed English rendering — not a full translation (English / Tamil word ratio ${prov.englishCoverage.englishToTamilWordRatio}, measured at import)`}
+                </span>
+              </Row>
+            )}
           </dl>
         </section>
 

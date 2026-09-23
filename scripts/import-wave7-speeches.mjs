@@ -245,20 +245,26 @@ function parsePublic(text, layer, slug) {
   return { blocks, pdfPages, printedPages, hasMarkers, itemNumeral, closing, headingTexts, endedAt };
 }
 
-// The printed closing colophon, as its own source text. Archive wrappers are stripped: a surrounding
-// backtick fence, and a leading bold scan-location label such as `**PDF640 / printed p.639:**`.
-function closingText(closing) {
+// The printed closing colophon, as its own source text. Archive wrappers are stripped — a leading bold scan
+// label such as `**PDF640 / printed p.639:**` and per-line backtick fences — and the archive's own commentary
+// about the colophon is dropped: in the Tamil layer every colophon line is Tamil-script, so a Latin-only line is
+// commentary ("The closing note does not state a venue; none is inferred."); in the English layer the two
+// commentary lines begin "The closing note …" / "The source …".
+function closingText(closing, layer) {
   if (!closing || !closing.lines.length) return null;
   const out = [];
   for (const raw of closing.lines) {
     let t = raw.replace(/\s+$/, "");
     t = t.replace(/^\*\*[^*]*(PDF|printed)[^*]*:\*\*\s*/i, "");
     if (/^(>|-\s+\*\*|\*\*Status)/.test(t)) continue;
+    t = t.replace(/^`(?!`)/, "").replace(/(?<!`)`$/, "");
+    if (!t.trim()) continue;
+    // (a backtick-quoted Tamil form inside an English commentary line does not make it a colophon line)
+    if (layer === "ta" && !TAMIL.test(t.replace(/`[^`]*`/g, ""))) continue;
+    if (layer === "en" && /^(The closing note|The source)\b/.test(t)) continue;
     out.push(t);
   }
-  let s = out.join("\n").trim();
-  if (s.startsWith("`") && s.endsWith("`") && !s.startsWith("``")) s = s.slice(1, -1);
-  return s || null;
+  return out.length ? out.join("\n") : null;
 }
 
 // FROZEN SOURCE-MARKER GAPS. The one interior page the frozen Tamil layer does not mark separately:
@@ -338,8 +344,8 @@ function buildPublic(slug, collectionId) {
   const ratio = Math.round((enWords / taWords) * 100) / 100;
   const englishForm = ratio >= 1.0 ? "full-translation" : "condensed";
 
-  const taClosing = closingText(ta.closing);
-  const enClosing = closingText(en.closing);
+  const taClosing = closingText(ta.closing, "ta");
+  const enClosing = closingText(en.closing, "en");
   const titleTa = meta.title.ta ?? meta.title.contents_title_ta ?? meta.title.ta_contents;
   if (!titleTa) die(`${slug}: no Tamil title`);
   // English title: the source's own English title where it records one; otherwise the English file's

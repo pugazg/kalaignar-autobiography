@@ -4,7 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, AudioLines, BookOpen, Calendar, Home, Info, Landmark, MapPin, Mic, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
-import type { Speech, SpeechBlock } from "@/data/speeches";
+import type { Speech, SpeechBlock, SpeechBilingualText, SpeechSourceText } from "@/data/speeches";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { useReaderProgress } from "@/lib/useReaderProgress";
@@ -12,24 +12,35 @@ import { useReaderProgress } from "@/lib/useReaderProgress";
 const LAST_KEY = "speeches:last";
 const POS_PREFIX = "speeches:pos:";
 
-export default function SpeechReader({ slug }: { slug: string }) {
+export default function SpeechReader({
+  slug,
+  initialSpeech,
+  initialShowEn,
+}: {
+  slug: string;
+  /** Test/SSR seed: the speech payload. The live route passes only `slug` and fetches it. */
+  initialSpeech?: Speech;
+  /** Test/SSR seed for the English toggle; defaults to false so the live reader is Tamil-first. */
+  initialShowEn?: boolean;
+}) {
   const { lang } = useLang();
   const ta = lang === "ta";
-  const [speech, setSpeech] = useState<Speech | null>(null);
+  const [speech, setSpeech] = useState<Speech | null>(initialSpeech ?? null);
   const [error, setError] = useState(false);
   const [font, setFont] = useState(1);
   // Source-first: the verified Tamil is authoritative and shown by default; the verified
   // English reading translation is one toggle away.
-  const [showEn, setShowEn] = useState(false);
+  const [showEn, setShowEn] = useState(initialShowEn ?? false);
 
   useEffect(() => {
+    if (initialSpeech) return;
     setSpeech(null);
     setError(false);
     fetch(`/data/speeches/${slug}/speech.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d: Speech) => setSpeech(d))
       .catch(() => setError(true));
-  }, [slug]);
+  }, [slug, initialSpeech]);
 
   const { progress } = useReaderProgress({ id: slug, ready: !!speech, posPrefix: POS_PREFIX, lastKey: LAST_KEY });
 
@@ -108,10 +119,10 @@ export default function SpeechReader({ slug }: { slug: string }) {
                   {speech.venue && (
                     <span className="inline-flex items-center gap-1.5">
                       <MapPin className="h-3.5 w-3.5" aria-hidden />
-                      <span lang={lang}>{ta ? speech.venue.ta : speech.venue.en}</span>
+                      <SourceText t={speech.venue} ta={ta} />
                     </span>
                   )}
-                  {speech.event && <span lang={lang}>{ta ? speech.event.ta : speech.event.en}</span>}
+                  {speech.event && <SourceText t={speech.event} ta={ta} />}
                 </>
               ) : (
                 <>
@@ -126,6 +137,15 @@ export default function SpeechReader({ slug }: { slug: string }) {
             <p className="mt-1.5 text-xs text-ink/50 dark:text-night-text/50" lang={lang}>
               {speakerLine(speech, ta)}
             </p>
+            {/* The printed collection this speech is an item of — its own printed ordinal, never a position. */}
+            {speech.collection && (
+              <p className="mt-1 text-xs text-ink/50 dark:text-night-text/50" lang={lang} data-testid="speech-collection">
+                <Link href={`/collections/${speech.collection.id}`} className="focus-ring rounded underline decoration-ink/30 underline-offset-2 hover:text-marina dark:hover:text-marina-light">
+                  <span lang="ta" className="font-tamil">{speech.collection.titleTa}</span>
+                </Link>
+                {ta ? ` — உரை ${speech.collection.ordinal} / ${speech.collection.total}` : ` — item ${speech.collection.ordinal} of ${speech.collection.total}`}
+              </p>
+            )}
             {/* One concise source-honest line when the source states no date/venue — the provenance
                 page carries the full record, so the reading page stays undominated by absence. */}
             {absentFactsNote(speech, ta) && (
@@ -156,9 +176,11 @@ export default function SpeechReader({ slug }: { slug: string }) {
                     ? "கீழே கட்டுப்படுத்தும் ஒலிப்பதிவுடன் நேரடியாக ஒப்பிட்டுச் சரிபார்க்கப்பட்ட தமிழ் எழுத்தாக்கம். நேரக்குறிகள் தோராயமான வழிசெலுத்தல் குறிகள்; சொல்-அளவிலான துல்லிய நேரங்கள் அல்ல."
                     : "Below is the verified Tamil transcription, checked directly against the controlling audio recording. Timestamps are approximate navigation markers, not frame-accurate word timings."
                 : showEn
-                  ? ta
-                    ? "இது மூலத் தமிழுடன் இணைக்கப்பட்ட, சரிபார்க்கப்பட்ட நம்பகமான ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
-                    : "A verified, source-linked faithful English reading translation. The Tamil original remains authoritative."
+                  ? speech.englishForm === "condensed"
+                    ? condensedNote(speech, ta)
+                    : ta
+                      ? "இது மூலத் தமிழுடன் இணைக்கப்பட்ட, சரிபார்க்கப்பட்ட நம்பகமான ஆங்கில வாசிப்பு மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
+                      : "A verified, source-linked faithful English reading translation. The Tamil original remains authoritative."
                   : ta
                     ? "கீழே அச்சிட்ட நூலின்படி சரிபார்க்கப்பட்ட மூல தமிழ் உரை — மாற்றமின்றி; அச்சுத் தலைப்புகளும் பக்க எல்லைகளும் தக்கவைக்கப்பட்டுள்ளன."
                     : "Below is the verified original Tamil, faithful to the printed source booklet — printed section headings and source-page boundaries preserved."}
@@ -251,6 +273,16 @@ function renderBlocks(blocks: SpeechBlock[], ta: boolean): ReactNode[] {
           i += 2;
         }
         out.push(<UnresolvedGroup key={"g" + i} items={group} ta={ta} />);
+        continue;
+      }
+      // A quotation the speaker recites (verse, a cited passage): set apart as a quotation, words unchanged.
+      if (b.quote) {
+        out.push(
+          <blockquote key={i} className="mb-5 whitespace-pre-line border-l-2 border-marina/40 py-1 pl-4 leading-loose text-ink/80 dark:text-night-text/80">
+            {renderSegments(b.segments, ta)}
+          </blockquote>,
+        );
+        i++;
         continue;
       }
       out.push(
@@ -397,7 +429,7 @@ function speakerLine(s: Speech, ta: boolean): string {
 // venue for a public speech — or, when the source states none, the neutral speech-kind label.
 function speechContext(s: Speech, ta: boolean): string {
   if (s.subtype === "public-speech") {
-    if (s.venue) return ta ? s.venue.ta : s.venue.en;
+    if (s.venue) return ta ? s.venue.ta : (s.venue.en ?? s.venue.ta);
     return ta ? "பொது உரை" : "Public speech";
   }
   return ta ? s.legislature.nameTa : s.legislature.nameEn;
@@ -452,10 +484,26 @@ function absentFactsNote(s: Speech, ta: boolean): string | null {
     : "The speech venue is not stated in the examined source.";
 }
 
+// A source fact the source may state only in Tamil. Under English UI the Tamil is shown as written, marked
+// lang="ta" — never an invented English gloss.
+function SourceText({ t, ta }: { t: SpeechBilingualText | SpeechSourceText; ta: boolean }) {
+  if (ta || !t.en) return <span lang="ta" className="font-tamil">{t.ta}</span>;
+  return <span lang="en">{t.en}</span>;
+}
+
+// The honest label for a CONDENSED English layer. The ratio is the measured English ÷ Tamil body-word ratio.
+function condensedNote(s: Speech, ta: boolean): string {
+  const pct = Math.round((s.englishCoverage?.englishToTamilWordRatio ?? 0) * 100);
+  return ta
+    ? `இது முழு மொழிபெயர்ப்பு அல்ல — உரையைச் சுருக்கித் தரும் ஆங்கில வடிவம் (தமிழ் உரையின் நீளத்தில் சுமார் ${pct}%). முழுமையான, சான்றுநிலை உரை தமிழ் மூலமே.`
+    : `A condensed English rendering, not a full translation: it gives the speech in shortened form (about ${pct}% of the length of the Tamil). The complete, authoritative text is the Tamil original.`;
+}
+
 function formatDate(iso: string, ta: boolean) {
   const [y, m, d] = iso.split("-").map(Number);
   if (!y) return iso;
-  if (ta) return `${d}-${m}-${y}`;
+  // A source may establish only the month (e.g. `1969-04`): never print a missing day.
+  if (ta) return d ? `${d}-${m}-${y}` : `${m}-${y}`;
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   return d ? `${d} ${months[m - 1]} ${y}` : `${months[m - 1]} ${y}`;
 }

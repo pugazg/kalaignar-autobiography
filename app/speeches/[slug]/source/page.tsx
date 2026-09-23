@@ -6,6 +6,7 @@ import SpeechSource from "@/components/SpeechSource";
 import { SPEECH_SLUGS } from "@/data/speeches";
 import type { SpeechProvenance } from "@/data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
+import { toPublicSpeechProvenance } from "@/lib/speech-public-provenance";
 
 // Wave 6 P4: SPEECH_SLUGS now includes the Wave-6 speeches; the union is deduplicated (a `Set`) so
 // each `/source` page prerenders exactly once. WAVE6_SPEECH_SLUGS is retained as a helper registry.
@@ -44,5 +45,7 @@ export default function SpeechSourcePage({ params }: { params: { slug: string } 
   if (!ALL_SPEECH_SLUGS.includes(params.slug)) notFound();
   const prov = loadProvenance(params.slug);
   if (!prov) notFound();
-  return <SpeechSource slug={params.slug} prov={prov} />;
+  // Server → client boundary: only the public projection is serialized into the page (see
+  // lib/speech-public-provenance); the archival record stays on the server.
+  return <SpeechSource slug={params.slug} prov={toPublicSpeechProvenance(prov)} />;
 }
