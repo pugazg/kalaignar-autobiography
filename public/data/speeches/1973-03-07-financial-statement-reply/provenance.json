@@ -1,0 +1,49 @@
+{
+ "workId": "1973-03-07-financial-statement-reply",
+ "sourceRepo": "pugazg/kalaignar-assembly-speeches",
+ "sourcePath": "speeches/1973/1973-03-07-financial-statement-reply",
+ "sourceCommit": "7a7fed1d0e3eb24a396effc10854b178f32bd0cf",
+ "source": {
+  "publicationTitleTa": "இருளும் ஒளியும்",
+  "authorTa": "தமிழக முதல்வர் டாக்டர் மு. கருணாநிதி",
+  "publicationDate": "1973-03-16",
+  "publicationDatePrintedTa": "16-3-1973",
+  "publisherTa": "செய்தி, மக்கள் தொடர்புத்துறை, தமிழ்நாடு அரசு",
+  "publisherLocationTa": "சென்னை",
+  "printerTa": "தமிழரசு அச்சகம்",
+  "scanFilename": "TVA_BOK_0064058_இருளும்_ஒளியும்.pdf",
+  "scanSha256": "0330e70d6d7a62e2c84d712966a8436b91956d722134bc71ca0b2329283f8694",
+  "scanFileSizeBytes": 101602456,
+  "scanTotalPages": 64,
+  "speechScanPages": "4-40",
+  "speechPrintedPages": "3-39"
+ },
+ "transcription": {
+  "status": "verified-after-crop-recovery",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified",
+  "type": "faithful reading translation"
+ },
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.38,
+  "tamilBodyWords": 7058,
+  "englishBodyWords": 9737,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 22,
+  "tamilResolvedParagraphs": 147,
+  "englishParagraphs": 195,
+  "sourcePagesCovered": 37
+ },
+ "semantics": {
+  "note": "Source crop condition: all legacy gutter-loss pages recovered and individually page-level revalidated on scans 4-5, 10-11, 20-21, 25-27 and 34-35; scan 13 smaller cartoon labels remain separately unresolved. The Tamil keeps the booklet's printed line breaks exactly as the verified transcription records them, including words divided at a line end. Speech-date evidence: 7-3-1973 in source பதிப்புரை on scan p.3."
+ },
+ "notes": [
+  "The controlling source is the scanned printed booklet; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "இருளும் ஒளியும் (1973) is the publication that prints this speech; the 7 and 8 March 1973 replies are two separate speeches, each preserved from its own pages."
+ ]
+}

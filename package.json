@@ -60,7 +60,14 @@
     "build:wave7-b2-b4-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave7-b2-b4-p3-routes.ts",
     "test:wave7-b2-b4-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p3-routes.ts",
     "test:wave7-b2-b4-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b2-b4-p4-integration.ts",
-    "test:essay-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-essay-public-provenance.ts"
+    "test:essay-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-essay-public-provenance.ts",
+    "test:wave7-b5-b6-k-p1": "node scripts/validate-wave7-b5-b6-k-p1.mjs",
+    "test:wave7-b5-b6-k-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p1-hidden.ts",
+    "test:wave7-b5-b6-k-p2-fidelity": "node scripts/validate-wave7-b5-b6-k-p2-fidelity.mjs",
+    "test:wave7-b5-b6-k-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b5-b6-k-p2-render.ts",
+    "test:wave7-b5-b6-k-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p3-routes.ts",
+    "test:wave7-b5-b6-k-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p4-integration.ts",
+    "test:wave7-b5-b6-k-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b5-b6-k-public-provenance.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

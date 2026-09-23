@@ -1,0 +1,416 @@
+{
+ "workId": "indiya-suvishesha-thiruchabai-vizha",
+ "slug": "indiya-suvishesha-thiruchabai-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/indiya-suvishesha-thiruchabai-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1998-01-16",
+ "year": 1998,
+ "title": {
+  "ta": "இந்திய சுவிசேஷத் திருச்சபை விழா",
+  "en": "Indian Evangelical Church Function"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.54,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "இந்திய சுவிசேஷத் திருச்சபை விழா",
+    "sourcePage": 49
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நானும் மக்கள் தலைவர் மூப்பனார் அவர்களும் மற்றவர்களும் பேச வேண்டிய நேரத்தையெல்லாம் எடுத்துக் கொண்டு நம்முடைய, பேராயர் அவர்கள் இடையிடையே அரிய சொற்பொழிவுகளை நடத்தி நம்மையெல்லாம் அகமகிழ வைத்திருக்கிறார். அவருடைய சீரிய சிறந்த முயற்சியினால் எழுச்சியோடும் எழிலார்ந்த முறையிலும் இந்த ஐம்பெரும் விழா இங்கே நடைபெற்றுக் கொண்டிருக்கின்றது.",
+      "sourcePage": 49,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     49
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழாவிலே கலந்து கொண்டு உரையாற்றுகின்ற நேரத்தில் பேராயர் அவர்கள் அவருடைய உள்ளக் கிடக்கையை எப்படியாவது வெளிப்படுத்தியே தீர வேண்டுமென்ற உணர்வோடு இடையிடையே அதை வெளிப்படுத்தியும் காட்டினார். அதிலே எனக்கும், மூப்பனார் அவர்களுக்கும் பீட்டர் அல்போன்சுக்கும் மற்றவர்களுக்கும் ஒருவகையிலே மகிழ்ச்சிதான். என்ன இருந்தாலும் குமரி அனந்தன் - தான் இலக்கியச் செல்வர் என்பதை நிலைநாட்டுகின்ற வகையில் வார்த்தைகளைத் தேடி மக்கள் மன்றத்திலே அதையும் புகுத்துவதில் ‘கை’ தேர்ந்தவர் என்பதை நிரூபிக்கும் வகையிலே உரையாற்றியதை நான் பாராட்டாமல் இருக்க முடியாது.",
+      "sourcePage": 49,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     49
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதுபோன்ற வாதங்கள்தான் - விவாதங்கள்தான் நாகரிகமாக நடைபெற வேண்டிய விவாதங்கள்தான்",
+      "sourcePage": 49,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     49
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அரசியலுக்குத் தேவை என்பதை நான் மிக மிக விரும்புகிறவன். அந்த வகையிலே இங்கே இவ்வளவு பேர் இருந்தாலுங்கூட, நம்முடைய இலக்கியச் செல்வர் குமரி அனந்தன் அவர்கள் தான் கொண்டிருக்கின்ற கொள்கை - கொள்‘கை’யிலும் ‘கை’ இருக்கிறது. (பலத்த சிரிப்பு) அதனை நிலைநாட்ட வேண்டும் என்பதிலே உறுதியாக இருந்ததை நான் பாராட்டுகிறேன்.",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொள்கைக்காக - தான் கொண்ட கொள்கைக்காக உயிரையே தரத் துணிந்தவர் ஏசுபிரான். ஆனால் இன்றைக்கு நாட்டில் பல பேர் உயிர் வாழ்வதற்காகக் கொள்கையையே விட்டுத் தருவதற்குத் தயாராக இருக்கிறார்கள். (பலத்த சிரிப்பு) ஏசுபிரானை நினைத்து திருச்சபையின் விழாவை நாம் நடத்திக் கொண்டிருக்கிறோம். எனக்கு முன்னால் பேசியவர்கள் எல்லாம் எடுத்துக்காட்டியதைப் போல, இந்த நல்ல விழாவில் நல்ல மனம் படைத்த மக்கள் எந்த நல்ல காரியத்தைச் செய்ய வேண்டுமோ அந்த நல்ல காரியத்தைச் செய்வோம் என்பதற்கு அடையாளமாக ஏழை எளியோர்க்குத் தங்குகின்ற வீடுகளை வழங்குதல், அவர்களுக்குத் தேவையான சைக்கிள் வழங்குதல், இலவசமாக எளியோர்க்கு வேட்டி, சேலைகள் வழங்குதல் போன்ற அரிய நிகழ்ச்சிகளை இணைத்திருப்பதற்கு என்னுடைய இதயார்ந்த பாராட்டுக்களைத் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த துணைக் கண்டத்தில் கல்வி ஒரு பெரும் வளர்ச்சிக்குரியதாக இன்றைக்கு அமைந்திருக்கிறதென்றால், அந்தக் கல்வித் துறையிலே பெரும் தொண்டாற்றிய சமுதாயம் கிறித்துவ சமுதாயம் என்பதை நான் என்றைக்கும் மறக்க மாட்டேன்.",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆங்கிலேயர்களுடைய ஆதிக்கத்திற்கு இடையிலே கூட - அந்த ஆதிக்கத்திற்கு அப்பாற்பட்ட நிலையில் -",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆன்மீகத் துறையில், மதத்துறையில், சமய வாதங்களுக்கு அப்பாற்பட்டு, இந்திய பூபாகம் முழுதும் அறிவு வளர வேண்டும். அந்த அறிவு வளர்ச்சிக்குத் தங்களால் ஆன அரும்பணியைச் செய்ய வேண்டுமென்று கிறித்துவப் பெருமக்கள் நல்ல முறையிலே தங்களை அர்ப்பணித்துக் கொண்டிருக்கிறார்கள்.",
+      "sourcePage": 51,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     51
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழகத்தைப் பொறுத்தவரையில் தமிழ் மொழியை வளர்ப்பதற்கு கிறித்தவ பெரியவர்கள் பலர் முன் வந்தார்கள் என்பதைத் தமிழக வரலாறு கூறிக் கொண்டிருக்கிறது. அத்தகைய கிறித்தவப் பெரியவர்களுக்கு - தமிழ் வளர்த்த அந்தக் கிறித்தவ அறிஞர்களுக்கு நாம் நன்றி காட்ட வேண்டுமென்பதற்கு அடையாளமாகத்தான் தமிழ்நாட்டிலே - உலகத் தமிழ் மாநாடு நடைபெற்றபோது - எங்கள் தலைவர் பேரறிஞர் அண்ணா அவர்கள் முதலமைச்சராகப் பொறுப்பேற்றிருந்த காலக் கட்டத்தில் - சென்னைக் கடற்கரையில் இன்றைய காமராஜர் சாலையில் அன்றைக்கு கால்டுவெல், ஜி.யு. போப், வீரமாமுனிவர் போன்ற கிறித்தவ மதப் பெரியவர்களை, அறிஞர்களை - சிலை வைத்து பாராட்டினார் என்பதை நீங்கள் எல்லாம் மிக நன்றாக அறிவீர்கள்.",
+      "sourcePage": 51,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     51
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிறித்தவ மதம், இஸ்லாமிய மதம், இந்து மதம், புத்த மதம் என்றெல்லாம் மதங்கள் இருக்கின்றன. மதம் மக்களை அன்பால் இணைக்க வேண்டும். அதுதான் மதம். வம்பால் மக்களைப் பிரிக்கின்ற ஒன்று மதம் அல்ல; அது மதவெறி. அந்த மதவெறிக்கு யாருமே - இந்த மேடையில் அமர்ந்திருக்கின்ற நாங்கள், எந்த அரசியல் கட்சிகளைச் சார்ந்தவர்களாக இருந்தாலுங்கூட, அதற்கும் அப்பாற்பட்ட நிலையில் மதவெறியைத் தமிழகத்திலே, ஏன் இந்தியத் திருநாட்டிலேயே நுழைய",
+      "sourcePage": 51,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     51
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விடக்கூடாது; நுழைந்தால் அந்த வெறியை அகற்றியே தீர வேண்டும் என்று சங்கல்பம் செய்து கொண்டிருப்பவர்கள்தான் இந்த மேடையிலே அமர்ந்து கொண்டிருக்கிறோம்.",
+      "sourcePage": 52,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     52
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த உறுதிமொழியை நீங்கள் எல்லாம் உங்களுடைய உள்ளத்திலே பதிய வைத்துக் கொள்ள வேண்டும் என்பதுதான் எங்களுடைய அவா.",
+      "sourcePage": 52,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     52
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்றைக்கு இந்த நல்ல திருச்சபையினுடைய இனிய விழாவில் - எழுச்சி மிகுந்த விழாவில் - பல்லாயிரக்கணக்கான மக்கள் குழுமியிருக்கின்ற இந்த விழாவில் - பல நாடுகளிலேயிருந்து கூட வருகை தந்து இந்த விழாவைச் சிறப்பிக்கின்ற இந்த வேளையில் நாம் அனைவரும் எடுத்துக் கொள்ள வேண்டிய சூளுரை மத நல்லிணக்கம் காண்போம்; மனித நேயம் காப்போம் - இதுதான் ஏசுநாதர் வழியில் - ஏசுநாதருடைய புகழ் போற்றுகின்ற அவருடைய அருள் போற்றுகின்ற, அவருடைய அன்பு போற்றுகின்ற அவருடைய நினைவு போற்றுகின்ற கிறித்தவ சமுதாயம் நடத்துகின்ற இந்தப் பெருவிழாவிலே நாம் பூண வேண்டிய உறுதிமொழி என்று கூறி இந்த அளவில் உங்களிடமிருந்து விடை பெறுகிறேன்.",
+      "sourcePage": 52,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     52
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "16-1-98 அன்று இந்திய சுவிசேஷத் திருச்சபை விழாவில் ஆற்றிய உரை",
+    "sourcePage": 52
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Indian Evangelical Church Function",
+    "sourcePage": 49
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our Bishop has taken up, at intervals, all the time in which I, People’s Leader Moopanar and the others were supposed to speak, delivering fine addresses and filling all of us with inward joy. Through his worthy and excellent effort, this fivefold great celebration is taking place here with enthusiasm and in a splendid manner.",
+      "sourcePage": 49,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     49
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "While taking part in this function and speaking, the Bishop, with the feeling that he had somehow to reveal what lay in his heart, kept expressing it from time to time. In one way, that was a source of happiness to me, to Moopanar, to Peter Alphonse and to the others. Whatever else may be said, I cannot refrain from appreciating the way Kumari Ananthan spoke—searching for words in a manner that established that he is indeed a man of literary wealth, and demonstrating that he has a skilled “hand” in inserting them into the people’s forum as well.",
+      "sourcePage": 49,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     49
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It is arguments of this kind—debates of this kind, debates that ought to be conducted in a civilised manner—",
+      "sourcePage": 49,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     49
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "that politics needs; I am one who very much desires that. In that sense, even though so many people are here, our man of literary wealth Kumari Ananthan remained firm that the policy he holds must be established. There is a `கை` (“kai”, hand/skill) even inside `கொள்கை` (“kolgai”, policy)! (loud laughter) I appreciate the firmness with which he sought to establish it.",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For a principle—for the principle he held—Lord Jesus dared to give even his life. But in the country today, many people are ready to give up the principle itself in order to keep themselves alive. (loud laughter) We are holding this church celebration in remembrance of Jesus. As all those who spoke before me pointed out, as a sign that people of good heart at this good celebration will do whatever good deed ought to be done, houses for the poor to live in are being provided, bicycles needed by them are being provided, and dhotis and saris are being given free to the needy. I offer my heartfelt appreciation for joining such fine acts to this celebration.",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "If education has today become an area of great development in this subcontinent, I will never forget that the Christian community is a community that has rendered great service in the field of education.",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even amid British domination—and also in a sphere beyond that domination—",
+      "sourcePage": 50,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     50
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "in the spiritual field, in the religious field, and beyond sectarian religious arguments, Christian people of distinction have dedicated themselves well to the conviction that knowledge must grow throughout the Indian land and that they must render whatever valuable service they can for that growth of knowledge.",
+      "sourcePage": 51,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     51
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As far as Tamil Nadu is concerned, the history of Tamil Nadu records that many Christian elders came forward to foster the Tamil language. As a sign that we must show gratitude to such Christian elders—to those Christian scholars who fostered Tamil—when the World Tamil Conference was held in Tamil Nadu, during the period when our leader Perarignar Anna was Chief Minister, he honoured Christian religious elders and scholars such as Caldwell, G.U. Pope and Veeramamunivar by having statues erected for them on the Chennai seafront, on what is today Kamarajar Salai. All of you know this very well.",
+      "sourcePage": 51,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     51
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There are religions called Christianity, Islam, Hinduism, Buddhism and so on. Religion must unite people through love. That is religion. Something that divides people through conflict is not religion; it is religious fanaticism. None of us should give room to that fanaticism. We who are seated on this stage, whatever political parties we may belong to, stand beyond those affiliations in having resolved that religious fanaticism must not be allowed to enter Tamil Nadu—indeed, the sacred land of India itself—and that if it does enter,",
+      "sourcePage": 51,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     51
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "we must remove that fanaticism without fail.",
+      "sourcePage": 52,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     52
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our desire is that all of you should imprint that pledge in your hearts.",
+      "sourcePage": 52,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     52
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Today, at this fine and pleasant celebration of this good Church—at this stirring celebration where many thousands of people have gathered, and at this moment when people have come even from many countries to lend distinction to it—the vow that all of us must take is: **Let us build religious harmony; let us safeguard humaneness.** This is the pledge we must take at this great celebration conducted by the Christian community that follows the path of Jesus, praises the glory of Jesus, praises his grace, praises his love, and cherishes his memory. Saying this, I take leave of you at this point.",
+      "sourcePage": 52,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     52
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered at the Indian Evangelical Church function on 16-1-98.",
+    "sourcePage": 52
+   }
+  ]
+ },
+ "sourcePages": [
+  49,
+  50,
+  51,
+  52
+ ],
+ "venue": null,
+ "event": {
+  "ta": "இந்திய சுவிசேஷத் திருச்சபை விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-2",
+  "titleTa": "முத்துக் குளியல் — பாகம் II",
+  "titleEn": "Muthukkuliyal — Part II",
+  "ordinal": 4,
+  "total": 36
+ }
+}

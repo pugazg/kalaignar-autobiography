@@ -23,6 +23,8 @@ import { discoveryShelves } from "../data/collections";
 import sitemap from "../app/sitemap";
 import { loadWave7Cinema, normalizeWave7Cinema, WAVE7_CINEMA_SLUGS, type Wave7CinemaSlug } from "../data/wave7-cinema";
 import { generateStaticParams as naamSections, dynamicParams as naamDyn } from "../app/cinema/naam/[section]/page";
+// Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -38,7 +40,8 @@ const w7bLive = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "pu
 // discovery net +10: the arumbu trio + the pre-existing பெரிய இடத்துப் பெண் standalone card collapse into the
 // four-member arumbu-1978 collection.
 const W7B = { works: 13, discovery: 10, sitemap: 225, build: 225 };
-const g = (base: number, delta: number) => base + (w7bLive ? delta : 0);
+const W7K = publishedWorks().some((w) => w.id === "kuraloviyam") ? W7K_ALL : { works: 0, collections: 0, discovery: 0, visible: 0, sitemap: 0, build: 0 };
+const g = (base: number, delta: number, w7k = 0) => base + (w7bLive ? delta : 0) + w7k;
 
 const rawOf = (slug: string) => JSON.parse(fs.readFileSync(path.join(root, "public/data/cinema", slug, "reader.json"), "utf8"));
 const provOf = (slug: string) => JSON.parse(fs.readFileSync(path.join(root, "public/data/cinema", slug, "provenance.json"), "utf8"));
@@ -49,7 +52,7 @@ const NAAM_WRONG_SHA = "3043e1cd"; // reader_json_sha256 prefix — points at re
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, g(219, W7B.works), `catalogue is exactly ${g(219, W7B.works)} published works (216 + 3 Batch-1 cinema${w7bLive ? " + 13 Wave-7 B2-B4" : ""})`);
+eq(works.length, g(219, W7B.works, W7K.works), `catalogue is exactly ${g(219, W7B.works, W7K.works)} published works (216 + 3 Batch-1 cinema${w7bLive ? " + 13 Wave-7 B2-B4" : ""}${W7K.works ? " + 101 Wave-7 B5/B6/K" : ""})`);
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["cinema-writing"], 10, "Cinema Writing holds 10 works (7 + 3)");
@@ -81,15 +84,15 @@ for (const slug of WAVE7_CINEMA_SLUGS) {
 
 // ── 2. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, g(80, W7B.discovery), `/read discovery is ${g(80, W7B.discovery)} entries (77 + 3${w7bLive ? " + 11 Wave-7 B2-B4" : ""})`);
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "40 discovery entries still visible (cinema already over cap)");
+eq(shelves.flatMap((s) => s.entries).length, g(80, W7B.discovery, W7K.discovery), `/read discovery is ${g(80, W7B.discovery, W7K.discovery)} entries (77 + 3${w7bLive ? " + 11 Wave-7 B2-B4" : ""})`);
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible, "40 discovery entries still visible (cinema already over cap) + 1 later Literary Commentary entry");
 eq(shelves.find((s) => s.shelf.id === "cinema-writing")!.entries.length, 10, "Cinema Writing renders 10 discovery entries");
 eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id)), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "same six over-cap shelves");
 
 // ── 3. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace("https://nenjukkuneethi.org", "")));
-eq(urls.length, g(4042, W7B.sitemap), `sitemap has exactly ${g(4042, W7B.sitemap)} URLs (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+eq(urls.length, g(4042, W7B.sitemap, W7K.sitemap), `sitemap has exactly ${g(4042, W7B.sitemap, W7K.sitemap)} URLs (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const p3Routes: string[] = p3.works.flatMap((w: any) => w.routes);
 eq(p3Routes.length, 133, "P3 manifest still declares 133 routes");
@@ -189,11 +192,11 @@ const clone = <T,>(x: T): T => JSON.parse(JSON.stringify(x));
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size, g(4051, W7B.build), `build prerender routes == ${g(4051, W7B.build)} (3918 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+  eq(keys.size, g(4051, W7B.build, W7K.build), `build prerender routes == ${g(4051, W7B.build, W7K.build)} (3918 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
   for (const r of p3Routes) ok(keys.has(r), `route prerendered: ${r}`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, g(4046, W7B.build), `build .html == ${g(4046, W7B.build)} (3913 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+  eq(html, g(4046, W7B.build, W7K.build), `build .html == ${g(4046, W7B.build, W7K.build)} (3913 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }

@@ -15,6 +15,7 @@ import sitemap from "../app/sitemap";
 import { manthiriItemSlugs, rajaSectionSlugs } from "../lib/cinema-wave5-routes";
 import type { ManthiriReader } from "../data/manthiri-kumari";
 import type { RajaRaniReader } from "../data/raja-rani";
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 
 const CAP = 6; // must match INITIAL_WORKS_PER_SHELF
 let checks = 0;
@@ -28,7 +29,7 @@ const R = readerOf<RajaRaniReader>("raja-rani");
 
 // ── CATALOGUE ───────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 232, "catalogue holds 232 published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(works.length, 232 + W7K.works, "catalogue holds 333 published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/K: +101)");
 const man = LIBRARY_WORKS.filter((w) => w.slug === "manthiri-kumari");
 const raja = LIBRARY_WORKS.filter((w) => w.slug === "raja-rani");
 eq(man.length, 1, "exactly one Manthiri Kumari work record");
@@ -46,20 +47,20 @@ eq(byShelf["cinema-writing"], 10, "Cinema Writing holds 10 works (post Wave-7 B1
 eq(byShelf["poetry"], 14, "Poetry 14 (post Wave-6 P4)");
 eq(byShelf["fiction"], 162, "Fiction 162 (post Wave-6 P4 + Batch-7; post Wave-7 B2-B4: +5 novels)");
 eq(byShelf["drama"], 10, "Drama 10 (post Wave-6 P4; post Wave-7 B2-B4: +2 dramas)");
-eq(byShelf["speeches"], 17, "Speeches 17 (post Wave-6 P4)");
+eq(byShelf["speeches"], 17 + W7K.speeches, "Speeches 117 (post Wave-6 P4: 17; post Wave-7 B5/B6: +100)");
 eq(byShelf["essays-articles"], 15, "Essays & Articles 15 (post Wave-6 P4; post Wave-7 B2-B4: +6 essays)");
-eq(byShelf["literary-commentary"], 2, "Literary Commentary unchanged (2)");
+eq(byShelf["literary-commentary"], 2 + W7K.literaryCommentary, "Literary Commentary 3 (post Wave-7: +Kuraloviyam)");
 eq(byShelf["life-writing"], 1, "Life Writing unchanged (1)");
 eq(byShelf["letters"], 1, "Letters unchanged (1)");
 eq(Object.keys(byShelf).length, 9, "exactly 9 non-empty shelves");
-eq(LIBRARY_COLLECTIONS.length, 7, "collections are 7 (1977 + 5 Batch-7 + arumbu-1978)");
+eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "collections are 9 (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");
 
 // ── DISCOVERY ─────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 90, "90 discovery entries (post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
+eq(entries.length, 90 + W7K.discovery, "96 discovery entries (post Wave-7 B5/B6/K: +6; post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
 const initiallyVisible = shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0);
-eq(initiallyVisible, 40, "40 initially visible discovery entries (post Batch-7: Fiction over-cap)");
+eq(initiallyVisible, 40 + W7K.visible, "41 initially visible discovery entries (post Batch-7: Fiction over-cap; post Wave-7: +1 Literary Commentary under the cap)");
 const cinema = shelves.find((s) => s.shelf.id === "cinema-writing")!;
 eq(cinema.entries.length, 10, "Cinema Writing renders 10 discovery entries (post Wave-7 B1: +3)");
 ok(cinema.entries.length > CAP, "Cinema Writing is now over the cap — disclosure control active");
@@ -81,7 +82,7 @@ eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction h
 // ── SITEMAP ─────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
 const origin = new URL(urls[0]).origin;
-eq(urls.length, 4267, "sitemap holds 4267 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225)");
+eq(urls.length, 4267 + W7K.sitemap, "sitemap holds 4779 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225; post Wave-7 B5/B6/K: +512)");
 eq(new Set(urls).size, urls.length, "sitemap has 0 duplicate URLs");
 const manUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/manthiri-kumari`));
 const rajaUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/raja-rani`));

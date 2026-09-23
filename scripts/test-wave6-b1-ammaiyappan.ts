@@ -24,6 +24,7 @@ import sitemap from "../app/sitemap";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves } from "../data/collections";
 import type { AmmaiyappanReader } from "../data/ammaiyappan";
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 
 const BASE = "https://nenjukkuneethi.org";
 let checks = 0;
@@ -73,7 +74,7 @@ ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-1 mani
 const urls = sitemap().map((e) => e.url);
 eq(urls.filter((u) => u.startsWith(`${BASE}/cinema/ammaiyappan`)).length, 65, "65 ammaiyappan URLs in the sitemap (landing + /source + 63 scenes)");
 const works = publishedWorks();
-eq(works.length, 232, "catalogue is 232 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
+eq(works.length, 232 + W7K.works, "catalogue is 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
 ok(works.some((w) => w.slug === "ammaiyappan"), "ammaiyappan IS in the catalogue");
 const cinemaEntries = discoveryShelves().find((s) => s.shelf.id === "cinema-writing")!.entries;
 eq(cinemaEntries.length, 10, "Cinema discovery is 10 entries (ammaiyappan + 3 Wave-7 B1)");

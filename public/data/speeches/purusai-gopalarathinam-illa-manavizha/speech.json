@@ -1,0 +1,952 @@
+{
+ "workId": "purusai-gopalarathinam-illa-manavizha",
+ "slug": "purusai-gopalarathinam-illa-manavizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/purusai-gopalarathinam-illa-manavizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": null,
+ "year": null,
+ "title": {
+  "ta": "புரசை கோபாலரத்தினம் இல்ல மணவிழா",
+  "en": "Purusai Gopalarathinam House Wedding"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.51,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "புரசை கோபாலரத்தினம் இல்ல மணவிழா",
+    "sourcePage": 69
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பரசுராமன் அவர்களுடைய சகோதரர் கோபாலரத்தினத்தின் செல்வி மலர்விழி என்ற செந்தமிழ்ச் செல்விக்கும், சேலம் மாவட்டம் - மேட்டூர் வட்டம் எல்லைக்குடையூர் சுப்பிரமணியம் அவர்களுடைய செல்வன் முரளிதரனுக்கும் நம் அனைவருடைய இனிய நல்வாழ்த்துக்களோடு மணவிழா நிகழ்ச்சி இங்கே நிறைவேறியிருக்கிறது.",
+      "sourcePage": 69,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     69
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நிகழ்ச்சி யாருடைய குடும்ப நிகழ்ச்சி என்பதை எனக்கு முன்னால் பேசியவர்கள் எல்லாம் எடுத்துக் கூறியிருக்கின்றார்கள்.",
+      "sourcePage": 69,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     69
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம்முடைய பரசுராமன் அவர்கள் எப்பொழுதுமே வஞ்சம் இல்லாத நெஞ்சம் படைத்தவர். கள்ளங்கபட மற்றவர். கிராமத்துக்காரர்கள் அநேகமாக அப்படித்தான் இருப்பார்கள். அதனால் அவர், விளிக்கும்போது, “கலைஞர் அவர்களே” என்று சொல்லிவிட்டு, பேராசிரியர் இங்கு வந்திருக்கிறாரா இல்லையா என்பதைப் பற்றிக் கூட தெரிந்து கொள்ளாமல், “பேராசிரியர் அவர்களே” என்று சொன்னதை நீங்கள் எல்லாம் கேட்டு மேடையை உற்று உற்றுப் பார்த்தீர்கள்; ஒருவேளை நமக்குத் தெரியாமல் பேராசிரியர் வந்து",
+      "sourcePage": 69,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     69
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எங்காவது உட்கார்ந்திருக்கிறாரோ என்று! அப்படிக் கள்ளங்கபடமற்றவர் பரசுராமன். அவருடைய இல்லத்தில் நடைபெறுகின்ற இந்த மணவிழா நிகழ்ச்சியிலே நான் கலந்து கொண்டு மணமக்களை வாழ்த்துவது மாத்திரமல்ல; இப்படிப்பட்ட வெள்ளை உள்ளம் படைத்தவர்களை எல்லாம், கள்ளமில்லாத உள்ளம் படைத்தவர்களை எல்லாம் நீங்கள் நாடாளுமன்றத்திற்கு அனுப்பி வைக்க வேண்டும் என்ற கடமையை உணர்த்துவதற்காகவும் உங்கள் முன்னால் நான் நின்று கொண்டிருக்கிறேன்.",
+      "sourcePage": 70,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     70
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தத் தொகுதியைப் பொறுத்தவரையில் மத்திய சென்னையில் திமுக வேட்பாளராக தம்பி முரசொலி மாறன் நிறுத்தப்பட்டிருக்கிறார். இங்கே உங்களை யெல்லாம் பார்த்து, “மத்திய சென்னைத்தொகுதிக்கு மாத்திரம் வாக்களியுங்கள்!” என்று நான் கேட்க முடியாது. நீங்கள் சேலம் மாவட்டத்திலிருந்து வந்திருக்கின்றீர்கள். செங்கற்பட்டிலிருந்து வந்திருக்கின்றீர்கள். சென்னை, வடசென்னை பகுதியிலிருந்து வந்திருக்கின்றீர்கள். குறிப்பாக வந்திருக்கின்றவர்களில் பெரும்பாலோர் யார் என்று எனக்கு நன்றாகத் தெரியும். இட ஒதுக்கீட்டில் தி.மு.க. ஆட்சியில் 20 சதவிகித இட ஒதுக்கீடு பெற்றவர்கள்தாம் பெரும்பாலும் இங்கே இருக்கின்றீர்கள் என்பதையும் நான் நன்றாக அறிவேன். (பலத்த கைதட்டல்)",
+      "sourcePage": 70,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     70
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "போராடிப் போராடிப் பார்த்து பல பேரை, துப்பாக்கி ரவைகளுக்கெல்லாம் பலி கொடுத்தும் கூட கிடைக்காத அந்த இட ஒதுக்கீட்டை, 89-ஆம் ஆண்டு நான் ஆட்சிப் பொறுப்புக்கு வந்தவுடன், யாரை அழைத்துப் பேச வேண்டுமோ அவர்களையெல்லாம் அழைத்துப் பேசி - “மிகவும் பின்தங்கிய மக்களுக்கு 20 சதவிகிதம் இனி வழங்கப்படும்” என்ற ஆணையை",
+      "sourcePage": 70,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     70
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பிறப்பித்தவன்தான் உங்கள் முன்னால் நின்று கொண்டிருக்கிறேன் என்பதை நீங்கள் மிக நன்றாக அறிவீர்கள்.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழ்நாட்டில் தாழ்த்தப்பட்ட, பிற்படுத்தப்பட்ட, மிகவும் பிற்படுத்தப்பட்ட மக்களின் நலனுக்காக 1916-ஆம் ஆண்டுக்கு முன்பே ஆரம்பிக்கப்பட்டதுதான் திராவிட இயக்கமாகும்.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தத் திராவிட இயக்கத்தின் வழித்தோன்றலாக அரசியல் பரிணாம வளர்ச்சி பெற்று, இன்றைக்குப் பணியாற்றிக் கொண்டிருக்கின்ற இயக்கம்தான் திராவிட முன்னேற்றக் கழகமாகும்.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1967-ஆம் ஆண்டு அண்ணா அவர்களுடைய தலைமையிலே தி.மு. கழகம் ஆட்சிப் பொறுப்பை ஏற்று என்றாலும் கூட, அதற்கு முன்பு ஒருமுறை - 20 ஆண்டு கால காங்கிரஸ் ஆட்சிக்கு முன்பு, தமிழ்நாட்டை என் கேரளத்திலே சில பகுதிகளையும் ஆந்திரத்திலே சில பகுதிகளையும், கர்நாடகத்திலே சில பகுதிகளையும் உள்ளடக்கிய சென்னை மாகாணத்தை, சென்னை ராஜ்யத்தை ஆளுகின்ற பொறுப்பை ஏற்றிருந்து நீதிக்கட்சி என்பதை நீங்கள் அறிவீர்கள். அந்த நீதிக்கட்சியின் பாரம்பரியம்தான், அதனுடைய அரசியல் வாரிசுதான் தி.மு. கழகமாகும்.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீதிக் கட்சியின் கொள்கை என்ன? சமத்துவம், சமதர்மம் - அதனால்தான் நீதிக்கட்சி தன்னுடைய கொடியிலே அன்றைக்குத் தராசு சின்னத்தை பொறித்திருந்தது. எல்லோருக்கும் சமத்துவம் வேண்டும், சமதர்மம் வழங்கப்பட வேண்டும் என்பதற்காகத்தான் அந்தக் கொடியைப் பொறித்து, நீதிக்கட்சி, ஆங்கிலத்திலே 'Justice Party' (ஜஸ்டிஸ் பார்ட்டி) என்று அழைக்கப்பட்ட அந்த இயக்கம் இன்றைக்கு அதனுடைய அரசியல் வாரிசான தி.மு. கழகமாக விளங்கிக் கொண்டிருக்கிறது என்பதை உங்களுக்கு நான் சுட்டிக்காட்ட கடமைப்பட்டிருக்கின்றேன்.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தந்தை பெரியார் அவர்கள் இந்த இயக்கத்திற்குத் தலைமையேற்று, அதன் பின்னர் பேரறிஞர் அண்ணா அவர்கள் இந்த இயக்கத்தை ஆட்சிப் பொறுப்பிலும் அமர்த்த வேண்டும். அதற்கும் மக்களுடைய ஆதரவைப் பெற வேண்டும் - பெரியார் சொல்லுகின்ற சமூகச் சீர்திருத்தக் கருத்துக்களை எல்லாம் சட்டமாக ஆக்க வேண்டுமேயானால், நாம் ஆட்சிப் பொறுப்புக்குச் சென்றாக வேண்டும். ஏனென்றால், காங்கிரஸ் ஆட்சிக் காலத்திலே பெரியாருடைய சமூகச் சீர்திருத்தக் கொள்கைகளை, பெரியாருடைய கோரிக்கைகளை, திராவிடர் கழகத்தின் எண்ணங்களை, கருத்துக்களை; பெரியாரின் ஆதரவைப் பெற்று வெற்றி பெற்றிருந்தாலும்கூட, காங்கிரஸ் அமைச்சரவையில் அதை எல்லாம் அவர்கள் ஏற்றுக் கொள்ளவில்லை.",
+      "sourcePage": 72,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     72
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பெரியார் போராடிப் பார்த்தார். பெரியாருக்காக நாங்கள் சட்டமன்றத்திலே வாதாடிப் பார்த்தோம். சுயமரியாதைத் திருமணம் சட்டப்படி செல்லுபடியாக வேண்டும் என்று தனிநபர் தீர்மானம் எல்லாம் கொடுத்தோம். அதை எல்லாம் ஏற்றுக் கொள்ளவில்லை. மாறன் குறிப்பிட்டதைப் போல, அண்ணா முதலமைச்சராக வந்த பிறகுதான், “சுயமரியாதை திருமணம் சட்டப்படி செல்லுபடியாக ஆகும்” என்ற தீர்மானமே கொண்டு வரப்பட்டு நிறைவேற்றப்பட்டது.",
+      "sourcePage": 72,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     72
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த மண்ணுக்கு ‘தமிழ்நாடு’ என்று பெயர் வைக்க வேண்டும் என்பதற்காக, சங்கரலிங்க நாடார் போன்ற தியாகிகள் எல்லாம் தங்களுடைய உயிரையே விட்டார்கள்; உண்ணா நோன்பிருந்து! அப்பொழுதும் இந்த மண்ணுக்கு அந்தப் பெயர் வைக்கப்படவில்லை. அறிஞர் அண்ணா முதல்வராகப் பொறுப்பேற்று, தி.மு.கழக ஆட்சியிலேதான் ‘தமிழ்நாடு’ என்ற பெயரை இந்த மண் பெற்றது என்பதை நீங்கள் அறிவீர்கள்.",
+      "sourcePage": 72,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     72
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போலவே இந்தியின் ஆதிக்கத்தை எதிர்த்து, 1937-38-ஆம் ஆண்டுகளில் இருந்து போராடி பல உயிர்களை அதற்குப் பலியாகக் கொடுத்து, கிடைக்காத அந்த வெற்றி - அண்ணா அவர்கள் முதல்வராகப் பொறுப்பேற்று தி.மு.கழக ஆட்சி வந்த பிறகுதான், “இனிமேல் தமிழ் நாட்டில் இந்தி ஆதிக்கத்திற்கு இடமில்லை” என்ற ஒரு நிலையான ஆணை பிறப்பிக்கப்பட்டு “தமிழ்நாட்டுப் பள்ளிக் கூடங்களில் இனிமேல் தமிழ், ஆங்கிலம் இரண்டும்தான் - இந்திக்கு இடமில்லை” என்று இந்தியாவிலே அறிவித்த ஒரே ஒரு மாநிலம் தமிழ்நாடுதான், அதற்குக் காரணம், திராவிட முன்னேற்றக் கழக ஆட்சிதான்; அறிஞர் அண்ணா அவர்கள்தான் என்பதை நீங்கள் எல்லாம் அறிவீர்கள்.",
+      "sourcePage": 73,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     73
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவே சமூக சீர்திருத்த இயக்கமாக இருந்த திராவிட இயக்கம், அரசியல் ரீதியாகவும் பங்கு பெற்று சமூகச் சீர்திருத்தக் கருத்துக்கள் பலவற்றைச் சட்டமாக்குகின்ற அந்தப் பெரும் பணியிலே வெற்றி கண்டிருக்கின்றது.",
+      "sourcePage": 73,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     73
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உங்களுக்குத் தெரியும்; 89-ஆம் ஆண்டு நான் மூன்றாவது முறையாக முதலமைச்சராக இருந்தபோதுதான், சொத்துரிமையிலே பெண்களுக்கும் சமஉரிமை உண்டு, ஆண்களைப் போல பெற்றோருடைய சொத்தில் பெண்களுக்கும் சரிபாதி உண்டு என்ற சட்டத்தைக் கொண்டு வந்து நிறைவேற்றினேன். அப்பொழுது சொன்னேன்; “1929-ஆம் ஆண்டு செங்கற்பட்டில் நடைபெற்ற சுயமரியாதை மாநாட்டில் தந்தை பெரியார் அவர்கள் கொண்டு வந்த தீர்மானம் இது. பெண்களுக்கும் சொத்தில் சமஉரிமை வேண்டும் என்ற தீர்மானம். அதை அறுபது ஆண்டுகளுக்குப் பிறகு, இன்றைக்குப் பெரியாருடைய அந்த எண்ணத்தைச் சட்டமாக நான் நிறைவேற்றி இருக்கின்றேன்” என்று சட்டமன்றத்திலே 89-ஆம் ஆண்டு சொன்னேன்.",
+      "sourcePage": 73,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     73
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பெண்களுக்குச் சொத்திலே சமஉரிமை மாத்திரம் அல்ல; இன்றைக்குக் கடந்த ஆறு அல்லது ஏழு மாதங்களுக்கு முன்பு நடந்து முடிந்த, இந்த அரசு நடத்திய உள்ளாட்சி மன்றத் தேர்தல்களில் - மாநகராட்சி மன்றம், நகராட்சி மன்றம், ஒன்றியங்கள், வேறு பல ஊராட்சி மன்றங்கள் இங்கெல்லாம் நடைபெற்ற தேர்தலில் பெண்களுக்கு 33 சதவிகித இடஒதுக்கீடு செய்த ஒரே ஆட்சி தி.மு.கழக ஆட்சிதான் என்பதை உங்களுக்கு நான் விளக்கக் கடமைப்பட்டிருக்கின்றேன்.",
+      "sourcePage": 74,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     74
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திருச்சியிலே ஒரு பெண் மேயர் (இங்கே சென்னையிலே ஒரு ஆண் மேயர் இருப்பதைப் போல) திருநெல்வேலியிலே ஒரு பெண் மேயர். அந்த அளவிற்குப் பெண்களுக்கு உரிமை வழங்கப்பட்டது. அது மாத்திரமல்ல; கழக ஆட்சியிலேதான் 89-ஆம் ஆண்டு, திருமணமாகாத பெண்கள் 8-ஆவது வரையிலே படித்திருந்தால் போதும் - படித்து அதிலே பாஸ் பண்ணியிருக்க வேண்டும் என்று கூட அல்ல - படித்திருந்தாலே போதும். அந்த ஏழைப் பெண்களின் திருமணத்திற்கு 5000 ரூபாய் நிதி உதவி என்று அறிவித்து, இப்பொழுது நான்காவது முறையாக நான் ஆட்சிக்கு வந்த பிறகு அந்த 5000 ரூபாய் போதாது என்பதற்காக 10,000 ரூபாய் வழங்கப்படும் என்று அறிவித்து இந்த ஒன்றரை ஆண்டுக் காலத்திலே மாத்திரம், 46,000 தம்பதிகளுக்கு 46 கோடி ரூபாய் செலவிலே திருமணங்கள் நடத்தி வைக்கப்பட்டிருக்கிறது. இது இந்த ஆட்சி.",
+      "sourcePage": 74,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     74
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதற்கு முன்பிருந்த ஆட்சி எப்படிப்பட்ட ஆட்சி என்பதை நீங்கள் அறிவீர்கள். அதை இங்கே நம்முடைய பேரவைத் துணைத் தலைவர் தம்பி பரிதி. இளம்வழுதி விளக்கமாக எடுத்துச் சொல்லியிருக்கின்றார். வளர்ப்பு மகன் கல்யாணத்திற்கு நூறு கோடி ரூபாய் செலவழித்தார் என்று சொன்னார்கள். நாம்கூட சொல்ல",
+      "sourcePage": 74,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     74
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வில்லை. அவர்களே, அவர்களுடைய சொந்த டி.வி.யிலே “வரலாறு காணாத திருமணம்” என்று வருணித்தார்கள். “உலகத்திலே இதுவரை இப்படி ஒரு திருமணம் நடக்கவுமில்லை. இனிமேல் நடக்கப் போவதுமில்லை” என்று அவர்களுடைய டி.வி.யிலேயே ஒளிபரப்பினார்கள். இது ஊரறிந்த உண்மை.",
+      "sourcePage": 75,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     75
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் என்ன ஆனது? அடுத்த வருடம் அந்த அம்மையார் சொல்லிவிட்டார்? “அவர் என்னுடைய வளர்ப்பு மகனே அல்ல” என்று! வளர்ப்பு மகன் சுதாகரனுக்குத் திருமணம் என்று பத்திரிகை அடித்து, இங்கே இருக்கின்ற பாமர மக்களுக்கு மாத்திரமல்ல; பாரதப் பிரதமருக்கு, ஜனாதிபதிக்கு எல்லாம் கொடுத்து விட்டு இங்கே அமர்க்களமாகத் திருமணத்தை நடத்தி முடித்துவிட்டு, ஓராண்டு கழித்துச் சொல்கிறார்கள், “அவன் வளர்ப்பு மகனே அல்ல” என்று. ஓராண்டுக்கு முன்பு சொன்னதை, அடுத்த ஆண்டு மாற்றிக் கொள்ளக் கூடிய அவ்வளவு சாமர்த்தியசாலி உலகத்திலேயே ஜெயலலிதாவைத் தவிர வேறு யாருமே இருக்க முடியாது. ஒரு நாளைக்கு உயிர்த்தோழி என்பார்கள். அடுத்த நாள், “தோழி அல்ல, உடன்பிறவாச் சகோதரி” என்பார்கள். “அவரை விட்டு என்னால் பிரிந்திருக்க முடியாது” என்பார்கள். சில மாதம் மந்திரிகள் எல்லாம் போய் கேட்டார்கள்; “அம்மா அவர்களால்தானே உங்களுக்குக் கெட்ட பெயர். கொஞ்சம் அவர்களை விட்டுப் பிரிந்து இருங்களேன்” என்று கேட்டார்கள். அந்த அம்மா திருப்பிக் கேட்டார்கள்; “நீ உன் மனைவியை விட்டுப் பிரிந்திருப்பாயா?” என்று! தடாலடிக் கேள்வி, அதிரடிக் கேள்வி! அசந்து போய் விட்டார்கள் எல்லா அமைச்சர்களும்! “உன்னால் எப்படி உனது மனைவியை விட்டுப் பிரிந்திருக்க முடியாதோ அதைப்போல நான் சசிகலாவை விட்டுப் பிரிந்திருக்க முடியாது” என்று ஒரே",
+      "sourcePage": 75,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     75
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வார்த்தையிலே பதிலளித்து - அவர்களை எல்லாம் விரட்டிய பெருமாட்டிதான் முன்னாள் முதல்வர் ஜெயலலிதா.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவருடைய ஆட்சியிலே நடைபெற்ற ஊழல்களை எல்லாம் நீங்கள் அறிவீர்கள். ஒவ்வொன்றாகச் சொல்ல நான் விரும்பவில்லை. உதாரணத்திற்கு ஒன்றை மாத்திரம் சொல்கிறேன், நீங்கள் புரிந்து கொள்ளுங்கள்.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என் மீதும், சிதம்பரத்தின் மீதும் அந்த அம்மாவுக்கு ரொம்ப கோபம். மறுபடியும் அந்த அம்மா ஆட்சிக்கு வருவார்களாம். என்னையும், சிதம்பரத்தையும், மூப்பனாரையும் கூண்டில் நிறுத்துவார்களாம். விசாரணை செய்வார்களாம். தண்டிப்பார்களாம். என்னவோ, இவர்களே நீதிபதிகள் மாதிரி, எல்லாம் இப்பொழுதே சொல்லி விட்டார்கள்.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிதம்பரத்தின் மீது என்ன கோபம் தெரியுமா? இந்த அம்மாவிற்கு மூன்று லட்சம் அமெரிக்க டாலர் வெளிநாட்டிலிருந்து வந்தது. மூன்று லட்சம் டாலர் என்றால், நம்முடைய இந்தியப் பணத்திற்கு 1 கோடி ரூபாய். இதைக் கண்டு பிடித்து விட்டார் சிதம்பரம். அதிகாரிகளை விசாரிக்கச் சொன்னார்; “பணம் எங்கே என்று கேளுங்கள்” என்று! அதிகாரிகள் வந்து கேட்டார்கள். “மூன்று லட்சம் டாலர் வந்ததா?” என்று. “ஆமாம் வந்தது” என்றார். “இல்லை” என்று சொல்ல முடியாது - ஏன் என்றால், தனது பெயரிலேயே இந்த அம்மா வங்கியில் போட்டிருக்கிறார். அதனால், ‘இல்லை’ என்று சொல்ல முடியவில்லை. “வந்தது” என்றார். “யார் அனுப்பியது?” என்று கேட்டார்கள். “தெரியாது” என்றார்.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தெரியாத ஒருவர் அமெரிக்காவில் இருந்து அம்மையார் ஜெயலலிதாவிற்கு ஒரு கோடி ரூபாய்",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அனுப்புகிறார். தெரியாதவர். அட்ரஸ் தெரியாதவன் அனுப்புகிறான். தெருவில் போகிறவன் அனுப்புகிறான், ஒரு கோடி ரூபாயை!",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்ன செய்தீர்கள்?” என்றால், “வங்கியில் போட்டேன்” என்றார். “ஏன் போட்டீர்கள்? தெரியாத ஒருவர் அனுப்பும்போது, அதை நீங்கள் அவருக்கே திருப்பி அனுப்ப வேண்டியதுதானே?” என்று கேட்டார்கள். “அனுப்பியவர் முகவரி தெரியவில்லை. ஆகவே உடனே ஆடிட்டரைக் கூப்பிட்டுக் கேட்டேன். ‘என்ன செய்யலாம்?’ என்று. ஆடிட்டரிடம், “இப்படி ஒரு கோடி ரூபாய் வந்திருக்கிறது. யார் அனுப்பியது என்று தெரியவில்லை, என்ன செய்வது தெரியவில்லை” என்று கேட்டேன். ஆடிட்டர் சொன்னார்; உங்கள் பெயரிலேயே பாங்கில் போட்டுக் கொள்ளுங்கள், என்று சொன்னார்” என்கிறார் ஜெயலலிதா. ஆடிட்டரை கூப்பிட்டு கேட்டுத் தெரிந்து கொண்டு வங்கியிலேயே போட்டுக் கொண்டார்களாம். கிராமத்திலே சொல்வார்கள்; “ஒண்ணும் தெரியாத பாப்பா, போட்டுக் கிட்டாளாம் தாழ்ப்பாளை” என்று அந்த மாதிரி, இந்த அம்மா தன் பெயரிலேயே போட்டுக் கொண்டாராம்.",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கொஞ்சம் யோசித்துப் பாருங்கள். இது கல்யாணம். இங்கே அ.தி.மு.க.வினரும் வந்திருப்பார்கள். பரசுராமன், அவர்களைக் கூட அழைத்திருக்கக் கூடும். தேர்தல் நேரத்தில் எல்லோரையும் அழைத்திருப்பார். அவர்கள் கூட வந்திருக்கலாம்.",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அ.தி.மு.க.வைச் சேர்ந்த தம்பிகள் யோசித்துப் பார்க்க வேண்டும். சரி, ஒரு கோடி ரூபாய் வந்தது. என்ன செய்வது என்று தெரியாமல் ஆடிட்டரைக் கூப்பிட்டுக் கேட்டார். அதற்குப் பதிலாக அந்த ஒரு கோடி ரூபாயை கட்சி நிதியிலேயே ஏன் போட்டிருக்கக் கூடாது? யோசித்துப் பார்த்தீர்களா? அந்த அம்மையார் முதல்வராக",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இருந்தபோதுதானே இந்தப் பணம் வந்தது? முதலமைச்சர் நிவாரண நிதியிலே ஏன் அந்தப் பணத்தைப் போட்டிருக்கக் கூடாது. கட்சி நிதி ஞாபகத்திற்கு வரவில்லை. முதலமைச்சர் நிவாரண நிதி மூளையில் படவில்லை. சொந்தத்தில், பாங்கில் தனது பெயரிலேயே அந்தப் பணத்தைப் போட்டுக் கொண்டிருக்கிறார்.",
+      "sourcePage": 78,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     78
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இப்படிப்பட்ட ஊழல்கள் ஒன்றல்ல, இரண்டல்ல; பலகோடி ரூபாய்க்கு ஐந்தாண்டு கால ஆட்சியில் நடைபெற்றிருக்கின்றது. அவைகளை எல்லாம் களைந்து விட்டுத்தான், 96-ஆம் ஆண்டு தேர்தலில் தி.மு.கழகத்திற்கும், த.மா.க.விற்கும் மற்ற தோழமைக் கட்சிகளுக்கும் உங்களுடைய ஆதரவைத் தந்து வெற்றி பெற வைத்தீர்கள். உங்களுடைய கட்டளைப்படிதான் நாங்கள், அந்த அம்மையாரையும் மற்ற அமைச்சர்களையும் நீதிமன்றத்திலே நிறுத்தி விசாரித்துக் கொண்டிருக்கிறோம். அந்த விசாரணை தொடர வேண்டும் என்பதற்காகவும், மத்தியிலே ஒரு நல்ல ஆட்சி இருந்து - ஒன்றரை ஆண்டுக் காலத்திலே அந்த ஆட்சி கவிழ்க்கப்பட வேண்டிய சூழ்நிலை ஏற்பட்டு விட்டது. அந்த நல்லாட்சி மீண்டும் அங்கே மலரவும், உங்களுடைய மேலான வாழ்த்துக்களை மணமக்களுக்கு அளியுங்கள். வாக்குகளை மாறனுக்கு வழங்குங்கள் என்று கேட்டுக் கொள்கிறேன்.",
+      "sourcePage": 78,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     78
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "புரசை கோபாலரத்தினம் இல்ல\nமணவிழாவில் ஆற்றிய உரை",
+    "sourcePage": 78
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Purusai Gopalarathinam House Wedding",
+    "sourcePage": 69
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With the warm good wishes of all of us, the wedding ceremony has been completed here between the Tamil maiden Malarvizhi, the daughter of Gopalarathinam, who is Parasuraman's brother, and Muralidharan, the son of Subramaniam of Ellaikkudaiyur, Mettur taluk, Salem district.",
+      "sourcePage": 69,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     69
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Those who spoke before me have all explained whose family function this is.",
+      "sourcePage": 69,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     69
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our Parasuraman has always been a man with a heart free of guile. He is without deceit or duplicity. Village people are generally like that. So, while addressing us, after saying, “Kalaignar avargale,” without even knowing whether the Professor had come here or not, he said, “Professor avargale.” All of you heard that and kept peering at the stage, wondering whether, without our knowing it, the Professor had come and",
+      "sourcePage": 69,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     69
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "was sitting somewhere! Such is Parasuraman, a man without guile. By taking part in this wedding taking place in his home, I have not merely come to bless the bride and groom; I also stand before you to remind you of your duty to send to Parliament people with such pure hearts, people with hearts free of deceit.",
+      "sourcePage": 70,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     70
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As far as this constituency is concerned, brother Murasoli Maran has been fielded as the DMK candidate in Central Chennai. Looking at all of you here, I cannot ask, “Vote only in the Central Chennai constituency!” You have come from Salem district. You have come from Chengalpattu. You have come from Chennai and North Chennai. I know very well who most of those who have come here are. I also know very well that most of you here are people who received the 20 per cent reservation under the DMK government. (loud applause)",
+      "sourcePage": 70,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     70
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That reservation could not be obtained despite struggle after struggle and even after many people were sacrificed to bullets. As soon as I assumed the responsibility of government in 1989, I called everyone who had to be called and spoke with them, and issued the order that “20 per cent reservation shall henceforth be provided to the most backward people.”",
+      "sourcePage": 70,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     70
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You know very well that the person who issued that order is the one standing before you.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Dravidian Movement was begun even before 1916 for the welfare of the oppressed, backward and most backward people of Tamil Nadu.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The movement that has politically evolved as a successor to that Dravidian Movement and is working today is the Dravida Munnetra Kazhagam.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Although the DMK assumed responsibility for government under Anna's leadership in 1967, before that—before the twenty years of Congress rule—you know that the Justice Party had once taken responsibility for governing the Madras Presidency, the Madras State, which included Tamil Nadu, some parts of Kerala, some parts of Andhra and some parts of Karnataka. That Justice Party's tradition is the DMK's tradition; the DMK is its political heir.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "**Source note:** At this point the frozen Tamil contains the irregular phrase `தமிழ்நாட்டை என்`. The English does not silently rewrite that source difficulty; the surrounding sentence is rendered conservatively from the evident structure.",
+    "sourcePage": 71
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "What was the policy of the Justice Party? Equality and social justice. That is why, in those days, the Justice Party placed the symbol of a balance scale on its flag. It placed that symbol because equality and social justice had to be given to everyone. That movement, called the “Justice Party” in English, has its political heir today in the Dravida Munnetra Kazhagam; I am duty-bound to point that out to you.",
+      "sourcePage": 71,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     71
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thanthai Periyar led this movement, and after him Perarignar Anna held that this movement should also be placed in charge of government and that it should win the people's support for that purpose. If the social-reform ideas advocated by Periyar were to be made into law, we had to enter government. For during the Congress period, even though Congress had won with Periyar's support, its Cabinet did not accept Periyar's social-reform policies, Periyar's demands, or the thoughts and views of the Dravidar Kazhagam.",
+      "sourcePage": 72,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     72
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Periyar struggled. We argued in the Legislative Assembly on Periyar's behalf. We even introduced a private member's resolution that Self-Respect marriages should be legally valid. None of that was accepted. As Maran pointed out, only after Anna became Chief Minister was a resolution brought forward and passed declaring that “Self-Respect marriages shall be legally valid.”",
+      "sourcePage": 72,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     72
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For this land to be named “Tamil Nadu,” martyrs such as Sankaralinga Nadar gave up their very lives, fasting unto death! Even then, this land was not given that name. You know that only after Arignar Anna assumed office as Chief Minister, under the DMK government, did this land receive the name “Tamil Nadu.”",
+      "sourcePage": 72,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     72
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Likewise, people had fought against the dominance of Hindi from 1937–38 onward and many lives had been sacrificed without securing that victory. Only after Anna became Chief Minister and the DMK government came to office was a firm order issued that “there will henceforth be no place for Hindi domination in Tamil Nadu,” and it was declared that “in Tamil Nadu's schools there will henceforth be only Tamil and English—there is no place for Hindi.” You all know that Tamil Nadu was the only state in India to make such a declaration, and that the reason was the DMK government and Arignar Anna.",
+      "sourcePage": 73,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     73
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus the Dravidian Movement, which had been a social-reform movement, also entered politics and succeeded in the great task of turning many social-reform ideas into law.",
+      "sourcePage": 73,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     73
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You know this: it was when I was Chief Minister for the third time, in 1989, that I brought in and enacted a law giving women equal rights in property, an equal half-share in their parents' property just like men. At that time I said in the Legislative Assembly: “This was a resolution moved by Thanthai Periyar at the Self-Respect Conference held in Chengalpattu in 1929—a resolution that women should have equal rights in property. Sixty years later, today, I have made that idea of Periyar into law.”",
+      "sourcePage": 73,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     73
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Not only equal rights for women in property. In the local-body elections conducted by this government six or seven months ago—in municipal corporations, municipalities, unions and various village panchayats—the only government to provide 33 per cent reservation for women was the DMK government; I am duty-bound to explain that to you.",
+      "sourcePage": 74,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     74
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is a woman Mayor in Tiruchirappalli (just as there is a male Mayor here in Chennai) and a woman Mayor in Tirunelveli. Women were given rights to that extent. Not only that: under the Kazhagam government in 1989, it was announced that unmarried women need only have studied up to the eighth standard—not even that they must have passed, merely that they had studied—and those poor women would receive Rs. 5,000 in financial assistance for marriage. After I came to office for the fourth time, saying that Rs. 5,000 was not enough, I announced Rs. 10,000. In this year and a half alone, marriages have been conducted for 46,000 couples at an expenditure of Rs. 46 crore. This is this government.",
+      "sourcePage": 74,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     74
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You know what kind of government the previous one was. Our Deputy Speaker, brother Parithi Ilamvazhuthi, explained it clearly here. They said a hundred crore rupees was spent on the foster son's wedding. We did not even say",
+      "sourcePage": 74,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     74
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "that. They themselves described it on their own television channel as a “wedding without precedent in history.” On their own television they broadcast, “There has never been a wedding like this anywhere in the world, and there never will be one again.” This is a fact known to the whole town.",
+      "sourcePage": 75,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     75
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But what happened? The next year that lady said, “He is not my foster son at all”! They printed invitations saying it was the wedding of foster son Sudhakaran, distributed them not merely to the ordinary people here but even to the Prime Minister of India and the President, conducted the wedding here with great pomp, and a year later said, “He is not my foster son.” In the whole world, there can be no one except Jayalalithaa clever enough to change in the next year what she said a year earlier. One day she would call someone a close friend. The next day she would say, “Not a friend, but a sister not born of the same womb.” She would say, “I cannot live separated from her.” Some ministers went and asked, “Amma, is it not because of her that you have acquired a bad name? Could you not stay apart from her for a while?” That Amma asked in return, “Would you live apart from your wife?” A sudden question, a thunderbolt question! All the ministers were stunned. “Just as you cannot live apart from your wife, I cannot live apart from Sasikala,” she replied in a single",
+      "sourcePage": 75,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     75
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "word and drove them all away—the former Chief Minister Jayalalithaa, that great lady.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "**Source note:** The frozen Tamil contains the irregular phrase `சில மாதம் மந்திரிகள்` on PDF 76; E2 conservatively retains the evident referent as “some ministers” without altering the frozen Tamil layer.",
+    "sourcePage": 76
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "You know all the corruption that took place under her government. I do not wish to list every item. I shall give just one example; you may understand from it.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That lady is very angry with me and with Chidambaram. She says she will come back to power. She says she will put me, Chidambaram and Moopanar in the dock. She says she will conduct inquiries and punish us. As though they themselves were the judges, they have already announced everything now.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Do you know why she is angry with Chidambaram? Three hundred thousand US dollars came to this lady from abroad. Three hundred thousand dollars meant one crore rupees in our Indian currency. Chidambaram discovered this. He told the officials to inquire: “Ask where the money came from!” The officials came and asked, “Did three hundred thousand dollars arrive?” “Yes, it did,” she said. She could not say “no,” because this lady had deposited it in a bank in her own name. So she could not deny it. “It came,” she said. “Who sent it?” they asked. “I do not know,” she said.",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "An unknown person in America sends one crore rupees to Madam Jayalalithaa—",
+      "sourcePage": 76,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     76
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "an unknown person. A man whose address is unknown sends it. A man walking along the street sends one crore rupees!",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When asked, “What did you do?” she said, “I deposited it in the bank.” They asked, “Why did you deposit it? When an unknown person sent it, should you not have sent it back to that person?” She said, “I did not know the sender's address. So I immediately called the auditor and asked, ‘What can I do?’ I told the auditor, ‘One crore rupees has come like this. I do not know who sent it; I do not know what to do.’ The auditor said, ‘Deposit it in the bank in your own name.’” Thus, says Jayalalithaa, after calling the auditor and finding out what to do, she deposited it in the bank in her own name. In the villages they say, “The little girl who knew nothing, they say, latched the door.” In the same way, this Amma supposedly deposited it in her own name.",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Think about it for a moment. This is a wedding. AIADMK members may also have come here. Parasuraman may have invited them too. It is election time; he would have invited everyone. They too may have come.",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The brothers belonging to the AIADMK should think about this. All right, one crore rupees came. She did not know what to do and called the auditor to ask. Instead, why could that one crore rupees not have been deposited in the party fund itself? Have you thought about that? Was not that lady the Chief Minister",
+      "sourcePage": 77,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     77
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "when this money arrived? Why could she not have deposited that money in the Chief Minister's Relief Fund? The party fund did not come to mind. The Chief Minister's Relief Fund did not enter her head. She deposited that money privately, in a bank, in her own name.",
+      "sourcePage": 78,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     78
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Corrupt acts of this kind were not one or two; they took place to the tune of many crores of rupees during five years of rule. It was only after clearing all that away that, in the 1996 election, you gave your support to the DMK, the Tamil Maanila Congress and the other allied parties and made us victorious. It is only on your command that we are placing that lady and the other ministers before the courts and conducting the cases. Those inquiries must continue. At the Centre there had been a good government, but within a year and a half a situation arose in which that government had to fall. So that good government may bloom there again, give your finest blessings to the bride and groom, and give your votes to Maran—that is my request.",
+      "sourcePage": 78,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     78
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered at the wedding in the house of Purusai Gopalarathinam.",
+    "sourcePage": 78
+   }
+  ]
+ },
+ "sourcePages": [
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78
+ ],
+ "venue": null,
+ "event": {
+  "ta": "புரசை கோபாலரத்தினம் இல்ல மணவிழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-2",
+  "titleTa": "முத்துக் குளியல் — பாகம் II",
+  "titleEn": "Muthukkuliyal — Part II",
+  "ordinal": 7,
+  "total": 36
+ }
+}

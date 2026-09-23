@@ -29,6 +29,15 @@ function loadLetterIds(): string[] {
   }
 }
 
+function loadKuraloviyamUnitIds(): string[] {
+  try {
+    const p = path.join(process.cwd(), "public/data/kuraloviyam/index.json");
+    return (JSON.parse(fs.readFileSync(p, "utf-8")) as { units: { id: string }[] }).units.map((u) => u.id);
+  } catch {
+    return [];
+  }
+}
+
 function loadTholkappiyamIds(): string[] {
   try {
     const p = path.join(process.cwd(), "public/data/tholkappiyam/index.json");
@@ -439,6 +448,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // quality. This adds 1465 URLs to a sitemap of ~1300, far inside the 50,000-URL limit, so
     // there is no explosion to avoid. அதிகாரம் pages rank a step below the landing because they
     // are navigational hubs; the குறள் pages carry the reading.
+    // குறளோவியம் (Wave 7 P4): landing, source and every reading unit from the vendored index — the same
+    // registry the /kuraloviyam/[unit] route reads, so the sitemap cannot drift from the routes.
+    { url: `${BASE}/kuraloviyam`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${BASE}/kuraloviyam/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ...loadKuraloviyamUnitIds().map((id) => ({ url: `${BASE}/kuraloviyam/${id}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.5 })),
     { url: `${BASE}/thirukkural`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${BASE}/thirukkural/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
     ...thirukkural.adhikarams.map((n) => ({

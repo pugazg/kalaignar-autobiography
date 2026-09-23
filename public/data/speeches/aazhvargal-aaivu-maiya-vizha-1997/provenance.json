@@ -1,0 +1,66 @@
+{
+ "workId": "aazhvargal-aaivu-maiya-vizha-1997",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/aazhvargal-aaivu-maiya-vizha-1997",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "555–569",
+  "printedSpeechPages": "554–568",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_034_pages_551-567.pdf",
+    "scans": "551–567",
+    "sha256": "3b023e09ac3d6f0299cfd22efe769443a4e048d9e3158c3a864402a1eacec478",
+    "bytes": 47966175
+   },
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_035_pages_568-584.pdf",
+    "scans": "568–584",
+    "sha256": "e1bc746acde0ceed77ac709f540caf90a4df0d4b72659a886d2435d47425e621",
+    "bytes": 47194943
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 55,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ]
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "condensed English rendering (not a full translation)"
+ },
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.33,
+  "tamilBodyWords": 2130,
+  "englishBodyWords": 708,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 2,
+  "tamilResolvedParagraphs": 49,
+  "englishParagraphs": 12,
+  "sourcePagesCovered": 15
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

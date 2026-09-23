@@ -1,0 +1,63 @@
+{
+ "work": "kuraloviyam",
+ "id": "front-07",
+ "kind": "front-matter",
+ "titleTa": "பகுதித் தலைப்பு",
+ "titleEn": "Section title leaf",
+ "scans": [
+  32,
+  33
+ ],
+ "printedSpan": [
+  "null",
+  "16"
+ ],
+ "pages": [
+  {
+   "scan": 32,
+   "printed": "null",
+   "pageType": "section-title",
+   "ta": [
+    {
+     "kind": "heading",
+     "level": 1,
+     "text": "கலைஞரின்"
+    },
+    {
+     "kind": "heading",
+     "level": 1,
+     "text": "குறளோவியம்"
+    }
+   ],
+   "en": [
+    {
+     "kind": "heading",
+     "level": 1,
+     "text": "Kalaignar's"
+    },
+    {
+     "kind": "heading",
+     "level": 1,
+     "text": "Kuraloviyam"
+    }
+   ]
+  },
+  {
+   "scan": 33,
+   "printed": "16",
+   "pageType": "blank",
+   "ta": [
+    {
+     "kind": "archival",
+     "text": "No source-side body text is visibly printed on this page; faint show-through from the reverse is not transcribed."
+    }
+   ],
+   "en": [
+    {
+     "kind": "archival",
+     "text": "No source-side body text is visibly printed on this page; faint show-through from the reverse is not transcribed or translated."
+    }
+   ]
+  }
+ ]
+}

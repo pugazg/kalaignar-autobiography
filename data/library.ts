@@ -18,6 +18,7 @@
 
 import { chapterIndex } from "./references";
 import { WAVE6_B7_WORKS } from "./wave6-b7-catalogue";
+import { WAVE7_B5_B6_K_WORKS } from "./wave7-b5-b6-k-catalogue";
 
 // ── Shelves ──────────────────────────────────────────────────────────────────
 // Fixed public shelf taxonomy from the cross-project master handover. All nine
@@ -3438,6 +3439,16 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     unitCount: { value: 19, labelTa: "கட்டுரைகள்", labelEn: "articles" },
     provenanceHref: "/essays/pesum-kalai-valarppom/source",
   },
+
+  // ── Wave 7 P4 — publish 101 works: B5a 61 + B5b 36 public speeches (முத்துக் குளியல் I/II), B6 3 assembly
+  // speeches, and the qualified Kuraloviyam ──────────────────────────────────────────────────────────────
+  // Catalogue 232→333 (Speeches 17→117, Literary Commentary 2→3). Generated from the frozen import manifests
+  // (public-speeches 6ca57fe2, assembly-speeches 7a7fed1d, literary-commentary d542b4cc) by
+  // scripts/generate-wave7-b5-b6-k-catalogue.mjs. The two முத்துக் குளியல் volumes and இருளும் ஒளியும் are
+  // publications, not works: the first two are LibraryCollections (data/collections.ts), the third is provenance
+  // only. Kuraloviyam is ONE work (its six intake Parts are never entries) published READY-WITH-QUALIFICATION:
+  // scans 13, 14, 15, 19 are permanently source-limited and stated on its card. No rights record is inherited.
+  ...WAVE7_B5_B6_K_WORKS,
 ];
 
 // ── Selectors ────────────────────────────────────────────────────────────────

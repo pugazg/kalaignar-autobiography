@@ -30,6 +30,8 @@ import sitemap from "../app/sitemap";
 import { PLAY_SLUGS } from "../data/plays";
 import { NOVEL_SLUGS } from "../data/novels";
 import { ESSAY_SLUGS } from "../data/essays";
+// Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam) contribution — derived, see lib/wave7-b5-b6-k-contribution.ts.
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -73,7 +75,7 @@ const EXPECT: Record<string, Ex> = {
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 232, "catalogue is exactly 232 published works (219 + 13 Wave-7 B2-B4)");
+eq(works.length, 232 + W7K.works, "catalogue is exactly 232 + later Wave-7 B5/B6/Kuraloviyam 101 = 333 published works (219 + 13 Wave-7 B2-B4 + 101)");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["drama"], 10, "Drama holds 10 works (8 + 2)");
@@ -111,7 +113,7 @@ eq(TRIO.filter((s) => bySlug.get(s)?.state === "published").length, 3, "the arum
 eq(new Set(TRIO.map((s) => bySlug.get(s)?.id)).size, 3, "the trio have three distinct catalogue ids");
 
 // ── 2. COLLECTIONS ──────────────────────────────────────────────────────────────────────────────────
-eq(LIBRARY_COLLECTIONS.length, 7, "collection registry is 7 (1977 + 5 Batch-7 + arumbu-1978)");
+eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "collection registry is 7 (1977 + 5 Batch-7 + arumbu-1978) + the later 2 முத்துக் குளியல் = 9");
 eq(COLLECTION_IDS.filter((id) => id === "arumbu-1978").length, 1, "arumbu-1978 registered exactly once");
 const arumbu = collectionById("arumbu-1978");
 ok(!!arumbu, "arumbu-1978 resolves by id");
@@ -147,8 +149,8 @@ for (const s of ALL13) ok(!COLLECTION_IDS.includes(s), `${s} is not registered a
 // ── 3. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 90, "/read discovery is 90 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40, "40 discovery entries still visible (the three shelves were already over cap)");
+eq(entries.length, 90 + W7K.discovery, "/read discovery is 90 + later Wave-7 B5/B6/K 6 = 96 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible, "40 discovery entries still visible from this batch (the three shelves were already over cap) + 1 later Literary Commentary entry under the cap");
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction renders 20 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "drama")!.entries.length, 10, "Drama renders 10 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "essays-articles")!.entries.length, 15, "Essays & Articles renders 15 discovery entries");
@@ -164,7 +166,7 @@ ok(fictionEntryIds.includes("surulimalai") && fictionEntryIds.includes("vellikki
 // ── 4. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace(BASE, "")));
-eq(urls.length, 4267, "sitemap has exactly 4267 URLs (4042 + 224 direct + 1 collection route)");
+eq(urls.length, 4267 + W7K.sitemap, "sitemap has exactly 4267 URLs (4042 + 224 direct + 1 collection route) + the later Wave-7 B5/B6/K 512");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 eq(P3_ROUTES.length, 224, "P3 manifest still declares 224 direct routes");
 for (const r of P3_ROUTES) ok(urlSet.has(r), `sitemap exposes direct route ${r}`);
@@ -201,7 +203,7 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 // A8: duplicate a catalogue identity → uniqueness guard fires.
 { const dup = [...LIBRARY_WORKS.map((w) => w.id), "arumbu"]; ok(new Set(dup).size !== dup.length, "A8 a duplicated catalogue id is detectable"); eq(new Set(LIBRARY_WORKS.map((w) => w.id)).size, LIBRARY_WORKS.length, "A8 the LIVE catalogue has no duplicate id"); eq(new Set(LIBRARY_WORKS.map((w) => w.slug)).size, LIBRARY_WORKS.length, "A8 the LIVE catalogue has no duplicate slug"); }
 // A9: drop/add a work → the exact catalogue count guard fires.
-{ ok(works.length - 1 !== 232 && works.length + 1 !== 232, "A9 a dropped/added work would change the count away from 232"); eq(works.length, 232, "A9 the LIVE catalogue is exactly 232"); }
+{ const LIVE = 232 + W7K.works; ok(works.length - 1 !== LIVE && works.length + 1 !== LIVE, "A9 a dropped/added work would change the count away from the live total"); eq(works.length, LIVE, "A9 the LIVE catalogue is exactly 232 + 101 (later Wave-7 batch)"); }
 // A10: invent surulimalai chapter 6/7 → the derived routes never contain them.
 { ok(!P3_ROUTES.includes("/novels/surulimalai/06-chapter-06") && !P3_ROUTES.includes("/novels/surulimalai/07-chapter-07"), "A10 no invented surulimalai chapter 6/7 route exists"); }
 // A11: omit a valid sitemap route → completeness guard fires.
@@ -209,7 +211,7 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 // A12: publish a foreign/unknown slug → fail-closed (absent from the public registries).
 { ok(!(ESSAY_SLUGS as readonly string[]).includes("fabricated-essay") && !(NOVEL_SLUGS as readonly string[]).includes("fabricated-novel"), "A12 an unknown slug is not in any public registry (fail-closed)"); }
 // A13: collection count must be exactly 7 (arumbu-1978 added exactly once).
-{ ok(LIBRARY_COLLECTIONS.length - 1 !== 7, "A13 a second arumbu-1978 would change the count away from 7"); eq(LIBRARY_COLLECTIONS.length, 7, "A13 the LIVE registry has exactly 7 collections"); }
+{ const LIVE = 7 + W7K.collections; ok(LIBRARY_COLLECTIONS.length - 1 !== LIVE, "A13 a second arumbu-1978 would change the count away from the live total"); eq(LIBRARY_COLLECTIONS.length, LIVE, "A13 the LIVE registry has exactly 7 + 2 (later முத்துக் குளியல்) collections"); ok(LIBRARY_COLLECTIONS.filter((c) => c.id === "arumbu-1978").length === 1, "A13 exactly one arumbu-1978"); }
 // A14: memberCount must equal the roster length (4) and never be inflated to a fifth.
 { eq(arumbu!.memberCount.value, arumbu!.members.length, "A14 the LIVE memberCount equals the roster length"); eq(arumbu!.memberCount.value, 4, "A14 memberCount is exactly 4"); ok(arumbu!.memberCount.value !== 5, "A14 memberCount is not inflated to a fifth member"); }
 // A15: all four members must collapse — none may also be a standalone Fiction card (incl. பெரிய இடத்துப் பெண்).
@@ -230,12 +232,12 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size, 4276, "build prerender routes == 4276 (4275 P3 + 1 collection route)");
+  eq(keys.size, 4276 + W7K.build, "build prerender routes == 4276 (4275 P3 + 1 collection route) + later Wave-7 B5/B6/K 512");
   for (const r of P3_ROUTES) ok(keys.has(r), `route prerendered: ${r}`);
   ok(keys.has("/collections/arumbu-1978"), "arumbu-1978 collection route prerendered");
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, 4271, "build .html == 4271 (4270 P3 + 1 collection route)");
+  eq(html, 4271 + W7K.build, "build .html == 4271 (4270 P3 + 1 collection route) + later Wave-7 B5/B6/K 512");
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }

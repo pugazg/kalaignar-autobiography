@@ -20,6 +20,14 @@ import { COLLECTION_IDS, collectionById, collectionMemberWorks } from "@/data/co
  * Not exported: a Next.js page module may only export the framework's own reserved names.
  */
 function payloadExtent(href: string): { pages?: string; scans?: string } {
+  // A speech states its extent in its provenance: printed range + scan range within the controlling publication.
+  const sp = /^\/speeches\/([^/]+)$/.exec(href);
+  if (sp) {
+    try {
+      const s = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/speeches", sp[1], "provenance.json"), "utf-8")).source ?? {};
+      return { pages: typeof s.printedSpeechPages === "string" ? s.printedSpeechPages : undefined, scans: typeof s.speechScanPages === "string" ? s.speechScanPages : undefined };
+    } catch { return {}; }
+  }
   const m = /^\/stories\/([^/]+)$/.exec(href);
   if (!m) return {};
   const read = (f: string) => {

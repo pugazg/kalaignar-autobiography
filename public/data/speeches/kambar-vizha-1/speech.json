@@ -1,0 +1,1321 @@
+{
+ "workId": "kambar-vizha-1",
+ "slug": "kambar-vizha-1",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/kambar-vizha-1",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1969-04",
+ "year": 1969,
+ "title": {
+  "ta": "கம்பர் விழா (1)",
+  "en": "Kambar Festival (1)"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.39,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கம்பர் விழா (1)",
+    "sourcePage": 32
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வழக்கம் போல் காரைக்குடியில் நடக்கின்ற கம்பர் விழாவுக்கு, வழக்கத்திற்கு மாறாக நான் வந்திருக்கிறேன்.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்ன பேசப்போகிறேன் என்கிற வினாக் குறியோடு நீங்களெல்லாம் கூடியிருக்கிறீர்கள் என்பதை நானறிவேன்.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“ஒரு காலத்தில், கம்பராமாயணத்தை எரிக்க வேண்டுமெனச் சொன்னவனாயிற்றே! இவன் எப்படி இங்கு வந்தான்?” என்று நீங்கள் கேட்பதைவிட “கம்பராமாயணத்தை எரிக்க வேண்டுமென சொன்னவனாயிற்றே! எப்படி இவனை அழைத்தார்கள்?” என்று கேட்பதுதான் பொருத்தமான கேள்வியாகும்.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே எனக்கு இருக்கிற துணிவைவிட என்னை இங்கு அழைத்தவர்களுக்கு இருக்கிற துணிவு அதிகம் என்று கருதுகிறேன்.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கம்பராமாயணம், சுமார் பதினைந்து இருபதாண்டுகளுக்கு முன்பு தமிழ்நாட்டிலே பிரச்சினைக்குரிய ஒன்றாக ஆயிற்று. அதனை எரிக்க வேண்டும் என்கிற புயல்வேகப் பிரச்சாரம் தமிழ்நாட்டிலே பெரியார் அவர்களால் தொடங்கி வைக்கப்பட்டுப் பல சொற்போர்கள் தமிழகத்தில் நடைபெற்றன. நாவலர் சோமசுந்தர பாரதியாரை எதிர்த்தும், சொல்லின் செல்வர் சேதுப்பிள்ளையை எதிர்த்தும் பேரறிஞர் அண்ணா அவர்கள் சொற்போர் புரிந்தார்கள். இறுதியாக அண்ணா அவர்களின் கருத்துக்களை எதிர்ப்பதற்காக வந்தவர்கள், கம்பராமாயணத்தை அதனுடைய கவி நயத்திற்காக",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எரிக்காமல் இருக்க வேண்டுமென்று கேட்டுக் கொண்டார்களே தவிர அந்தக் கதாபாத்திரங்களின்பால் தங்களுக்கு உள்ள பக்தியை வெளிப்படுத்தவில்லை. அன்று கிடைத்த அந்த வெற்றியின் காரணமாகத்தான் எரிக்கின்ற முயற்சி கைவிடப்பட்டது.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எரிப்பதிலே பலவகை உண்டு. அடுப்பெரிப்பது நல்ல அறுசுவையான உணவு கிடைப்பதற்காக; விளக்கு எரிப்பது வீட்டிலே ஒளி கிடைப்பதற்காக; அதைப் போலவே கம்பராமாயணத்தை எரிக்க வேண்டும் என்று கூறியதும் கம்பனுடைய கவியுள்ளத்தை மட்டும் புலவர்கள் நாட்டு மக்களிடத்திலே எடுத்துச் சொல்ல வேண்டும் என்பதற்காகத்தான் என்பதைப் புலவர் பெருமக்கள் புரிந்து கொண்டார்கள்.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே, புலவர்கள் புரிந்துகொண்ட பிறகு அந்தக் காரியத்தைச் செய்ய வேண்டியதில்லை என்றுதான் அந்த முயற்சி கைவிடப்பட்டது!",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்கே தலைமை வகித்துப் பேசிய நண்பர் அவர்கள் மிகத் தெளிவாக ஒன்றைக் குறிப்பிட்டார்கள்.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழா இராமனைப் பாராட்டுவதற்காகவோ - இலக்குவனைப் பாராட்டுவதற்காகவோ நடைபெறுவது அல்ல - இது கம்பனைப் பாராட்டுகிற விழா என்று குறிப்பிட்டார்கள். நானும் அதற்காகத்தான் வந்திருக்கிறேன்!",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாங்கள் கம்பனைப் பாராட்டுகிறோம் என்பது, திரு. சா. கணேசன் அவர்கள் அழைத்து நான் இங்கே வந்த பிறகு புரிந்து கொள்கிற ஒன்றல்ல. உலகத்தமிழ் மாநாடு நடைபெற்றபொழுது தமிழ்நாட்டுப் புலவர் பெருமக்களுக்கெல்லாம் சென்னை கடற்கரையில் சிலைகள் வைத்த நேரத்தில், கம்பருக்கும் ஒரு சிலை வைத்துள்ள நாங்கள் கம்பனைப் பாராட்டத் தவறியவர்களல்லர்-கம்பனுடைய தமிழைப் பாராட்டத் தவறியவர்களல்லர் என்பதை நீங்கள் புரிந்துகொள்ளவேண்டும்.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இராவணனை இரக்கமற்ற அரக்கன் என்று கம்பர் கூறியதை எதிர்த்து அவன் நீதிமன்றத்திலே ஒரு வழக்குத் தொடுக்கிறான்.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இராவணன் நீதிமன்றத்தில் கம்பனைக் குற்றஞ் சாட்டி வழக்குத் தொடர்ந்து பேசுகிற நேரத்தில் அவனுடைய அந்த வாதத் திறமையையும் கம்பனுடைய கவிதைத் திறமையையும் பார்த்து, என்ன தீர்ப்புச் சொல்வதென்று புரியாமல் திகைத்து நீதிதேவன் மயங்கி விழுந்து விடுகிறான் - திரை விழுகிறது; நாடகம் முடிகிறது.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த வாதத்தைக் கேட்டவர்கள் அனைவரும் மயங்குகிறார்கள்; ஆகவே நீதிதேவன் மயங்குவதில் வியப்பில்லை என்று கருத்துப்பட அண்ணா அவர்கள் “நீதிதேவன் மயக்கம்” என்ற அந்த நாடகத்தை முடித்திருக்கிறார்கள். இதிலே அண்ணாதான் இராவணனாக நடித்தார்கள் என்பது நினைவு கூரத்தக்கது.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வால்மீகி இராமாயணத்தில் வருகின்ற கதாபாத்திரங்களுக்கெல்லாம் கம்பர் தமிழ் வடிவம் கொடுத்து - தமிழர்களது கலாச்சாரம், தமிழர்களுடைய பண்பாடு, தமிழர்களுடைய நெறி - இவைகளுக்கு ஒப்புக் கொண்டு வர மிகவும் முயன்றிருக்கின்றார்.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கோடிட்டுக் கொள்ள வேண்டும் - முயன்றிருக்கிறார் என்றுதான் நான் கூறினேன்.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இறுதியாக, அவர்களைத் தமிழ்க் கதாபாத்திரங்களாகக் கம்பர் கொண்டு வந்துவிடவில்லை. அதற்கு ஆதாரம் தேவை என்றால் எனக்குப் பாதுகாப்பாகச் சிலம்புச் செல்வர் ம.பொ.சி. அவர்கள் இருக்கிறார்கள்.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்களை எதிரிலே வைத்துக் கொண்டுதான் நான் இந்த விவாதத்தைத் துவக்குகிறேன். எனக்கு ஒரு நண்பர் கடிதம் எழுதினார்: “கம்பர் விழாவில் கலந்து கொள்கிறீர்களாமே! மிகவும் நன்று! வியப்படைகிறோம்! ஆனாலும் மகிழ்ச்சி கொள்கிறோம்! விழாவிலே உங்களுக்குப் பயன்படுகிற வகையிலே சிலம்புச் செல்வர்",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ம.பொ.சி. அவர்களுடைய ‘கம்பர் கவியின்பம்’ என்ற புத்தகத்தை உங்களுக்கு அனுப்பி வைக்கிறேன்”, என்று தெரிவித்து, அந்தப் புத்தகத்தையும் அனுப்பி வைத்தார். அதை நான் நேற்றுப் புகைவண்டியில் வருகிற நேரத்தில் முழுவதும் படித்துப் பார்த்தேன்.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தலைவர் அவர்கள் இராமன் வாலியைக் கொன்றது சரிதான் என்று அவரே வாதாடியதாகக் குறிப்பிட்டார். இன்று எனக்குப் பிறகு பேசவிருக்கிற சிலம்புச் செல்வர் ம.பொ.சி. அவர்கள் அந்த நிகழ்ச்சி பற்றி என்ன கூறுகிறார்கள் என்று கவனித்தால் ‘இராமன், வாலியைக் கொன்றது நீதியற்ற செயல் என்ற முடிவுக்கு நான் வர வேண்டியவனாக இருக்கிறேன்!’ என்றுதான் புத்தகத்தையே முடிக்கிறார்.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்கு மேல் அவர் என்ன நினைக்கிறார் என்பதற்குப் புத்தகத்தில் இடமில்லை.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கம்பனிலும் இடமில்லை என்கிறார் திரு. சா. கணேசன் அவர்கள். ஆகவேதான் பின்னால் இருந்து தாக்குவது - மறைந்திருந்து தாக்குவது - தமிழர்களது போர் முறையல்ல என்பதால்தான், கம்பர், வாலியின் வாயுரையாகவே வீரத்தினுடைய மகிமையைப் பற்றி பேசச் செய்கிறார்.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இவ்வளவு பெரிய மாவீரனான இராமனே என்னை மறைந்திருந்து தாக்கலாமா?” என்ற கேள்வியை வாலியின் மூலமாகக் கம்பரே எழுப்புகிறார் போலும்!",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்கு இராமனால்கூடப் பதில் சொல்ல முடியவில்லை. ஆனால் இந்த விழாவினுடைய தலைவர் அவர்கள், “சுக்கிரீவனுடைய மனைவியை வாலி அபகரித்துக் கொண்டான், அதற்காக வாலியை இராமன் மறைந்திருந்து கொன்று ஓராவிற்கு நியாயந்தான்” என்று விவரித்தார்;",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால், தன்னுடைய மனைவியை வாலி அபகரித்துக் கொண்டான் என்று குற்றஞ்சாட்டி",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதற்காக அவனுக்குத் தண்டனை வாங்கிக் கொடுத்தானே சுக்கிரீவன், அந்தச் சுக்கிரீவன் வால்மீகி இராமாயணத்திலே என்ன செய்தான்? வாலி இறந்த பிறகு அவனுடைய மனைவி தாரையைத் தன்னுடைய மனைவியாக ஆக்கிக் கொண்டான். இது வால்மீகி இராமாயணத்தின்படி. ஆனால், கம்பர் இதற்கு இடம் தரவில்லை.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வால்மீகி இராமாயணத்தில் வாலி இறந்ததும் அவனுடைய மாளிகைக்கு இலக்குவன் செல்கிறான். அப்படிச் செல்கிற நேரத்தில், வாலியினுடைய மனைவியான தாரை - கணவனை இழந்த தாரை - மிக அழகாகத் தன்னை அலங்கரித்துக் கொண்டு - ஆண்கள் பார்த்தால் - கவர்ந்திடத் தக்கவண்ணம் மிக ஒயிலாக இலக்குவனுக்கு முன்னால் வருகிறாள். அப்படி வருகிற நேரத்தில் இலக்குவனுக்குக்கூட அயோத்தியிலிருக்கிற தன்னுடைய மனைவி ஞாபகம் வந்துவிடுகிறது என்று வால்மீகி எழுதுகிறார்.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் கம்பரோ தாரையை அப்படிப்பட்ட பெண்ணாகச் சித்தரித்துக் காட்ட விரும்பவில்லை. இலக்குவன் வாலியினுடைய மாளிகைக்குச் செல்கிற நேரத்தில், தாரை வெள்ளுடை பூண்டு, தமிழ்நாட்டுப் பெண்களுக்குரிய விதவைக் கோலத்தோடு, தலைமுடி கோலத்தோடு வருகிறாள்! இவ்வாறு தாரையைப் பற்றிக் கம்பர் வர்ணிக்கிறார்.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால் வால்மீகி இராமாயணத்திலிருந்து தமிழ் நாட்டிற்கு ஏற்றவாறு அந்தப் புனைவினைக் கையாண்டு, கம்பர் தமிழர்களுக்காக இராமாயணத்தை யாத்தார். அதில் குறிப்பிட்டிருக்கிற கதாபாத்திரங்களைப் பற்றி ஓரிடத்திலே நியாயமாகப் பேசுகிறார். பிறிதோரிடத்தில் அவர்களைப்பற்றி நியாயக் குறைவாகப் பேசுகிறார்கள்.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கதாபாத்திரங்கள் அல்ல முக்கியம்; நானேகூட எத்தனையோ கதைகளை எழுதியிருக்கிறேன்.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் எழுதிய கதாபாத்திரங்களைப் பாராட்டுவதற்காகச் சிறப்புக் கூட்டங்கள் நடத்தியதில்லை. எத்தனையோ கதைகளை எழுதிய பிறகு, எழுத்தாளர் என்ற அளவிலேதான் என்னைப் பாராட்டியிருக்கிறார்கள்.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலம்புச் செல்வர் ம.பொ.சி. அவர்கள், எத்தனையோ அருமையான நூல்களை எழுதியிருக்கிறார். அவற்றில் எத்தனையோ பாத்திரங்களை எல்லாம் படைத்திருக்கிறார். அவற்றையெல்லாம் பாராட்டுவதற்காக விழா நடந்ததில்லை. இப்படியெல்லாம் பாத்திரங்களைப் படைத்திருக்கிறாரே - இன்னின்ன கருத்துக்களை எடுத்து இயம்பியிருக்கிறாரே! என்பதற்காகத்தான் சிலம்புச் செல்வர் ம.பொ.சி. அவர்களை நான் பாராட்டுகிறேன்.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போலவே நமது சா. கணேசன் அவர்கள் பல பாராட்டுக்களைப் பெற்றிருக்கிறார். அவர் உருவாக்கிய கதாபாத்திரங்களுக்காக அல்ல, அப்படிப்பட்ட பாத்திரங்களை உருவாக்குகின்ற திறமை பெற்றமைக்காகத்தான் பாராட்டப் பெற்றிருக்கிறார்.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிலம்புச் செல்வர் எழுதியிருக்கின்ற ‘கம்பர் கவியின்ப’த்திலேகூட ஓரிடத்திலே கண்ணனையும் இராமனையும் ஒப்பிடுகிறார்.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "யுத்த களத்திலே இராவணன் நிராயுதபாணியாக நிற்கிறான். அந்த நேரத்திலே இராமன், “இன்று போய் நாளை வா” என்று சொல்லி இராவணனை அனுப்பி வைக்கின்றான். இதுவன்றோ யுத்த மரபு? இதுவன்றோ யுத்த தர்மம்? என்று இராமனை சிலம்புச் செல்வர் பாராட்டுகிறார். அங்கே பாராட்டி விட்டுக் கண்ணனை இழுத்து நிறுத்தி, யுத்த களத்தில் நீதியுடன் நடந்து கொள்ளவில்லை. இந்தக் கண்ணன் தந்திர முறைகளால் யுத்த நெறிக்கு முரண்பாடாகக் கர்ணனைக் கொல்வதற்கு உடன்பாடாக இருந்தான். ஆகவே கண்ணன் காட்டிய",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வழியை நான் ஏற்றுக் கொள்ள மாட்டேன்; யுத்த தந்திரங்களில் கண்ணன் சிறந்தவனாக இருக்கின்றான். ஆனால் பிடிக்க வேண்டிய முறைகளும் நல்ல முறைகளாக இருக்க வேண்டும் என்று ம.பொ.சி. அங்கே வாதிட்டுக் கண்ணனைக் குற்றவாளியாக்கி, இராமனைத் தர்மவானாக ஆக்கிக் காட்டுகிறார்.",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மறுபடியும் ஒரு பத்துப் பக்கம் புரட்டினால் அங்கே பழையபடியும் அவர் கண்ணனையும் இராமனையும் சந்திக்க வைக்கிறார்; வாலி வதைப் படத்தில்!",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வாலி வதைப் படலத்தில் இராமன் செய்தது தவறுதான்; இரு சகோதரர்களின் பிரச்சினையில் தலையிட்டு, ஆயுதத்தால் ஒருவனைக் கொன்று முடிவு கட்டுவது நல்லதல்ல என்று கூறி இராமனைக் குற்றவாளியாக்கிவிட்டுப் பாண்டவர்களுக்கும், கௌரவர்களுக்கும் சகோதரச் சண்டை என்று வந்த பிறகு - கண்ணன் தன் கையில் ஆயுதம் தாங்காமலேயே - அதில் குறுக்கிடாமலிருந்தார், அவர் ஆயுதம் தாங்கவில்லை. ஆகவே கண்ணனுடைய செயல் இந்த இடத்தில் சிறந்தது; இராமனுடைய செயல் ஒப்புக் கொள்ளத் தக்கதல்ல என்று இதே புத்தகத்தில் இரண்டு இடங்களில் இத்தகைய இருவேறு கருத்துக்களைக் கூறுகிறார் சிலம்புச் செல்வர்.",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் சிலம்புச் செல்வரைக் குறை கூறவில்லை. அந்தக் கதாபாத்திரங்கள் இப்படிப்பட்ட முரண்பாடான நிலையில் படைக்கப்பட்டிருக்கிறார்கள். எந்த நூலாக இருந்தாலும் எப்படி அந்தக் கதாபாத்திரங்கள் படைக்கப்பட்டிருந்தாலும் விமர்சிக்கிற நாமே குழப்பங்களுக்கு ஆளாகிற அளவுக்கு அந்தக் கதாபாத்திரங்கள் உருவாக்கப்பட்டிருந்தாலும் அந்தக் கதாபாத்திரங்கள் மூலமாகப் பேசப்படுகின்ற தமிழ் இருக்கிறதே, அந்தக் கதாபாத்திரங்கள் மூலமாகக் கம்பர் வடித்திருக்கின்ற உண்மை இருக்கிறதே, அதன் மூலமாக அவன் தமிழுக்கு ஆற்றியிருக்கின்ற தொண்டு இருக்கிறதே, அது தமிழ் உள்ளளவும் தமிழ்நாடு உள்ளளவும் தமிழகத்திலே கடைசித்",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழன் உள்ளளவும் பாராட்டத் தக்கதாகும் என்பதை நான் மறுக்கவில்லை.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திரு. ம.பொ.சி. எங்கே சிறு தவறு நடந்தாலும் மன்னிக்க மாட்டார். ஆகவேதான் பக்கத்திற்குப் பக்கம் அவருடைய “கம்பர் கவியின்பம்” என்ற நூலில் கம்பராமாயணத்தின் கதாபாத்திரமானாலும் வால்மீகியினுடைய கதாபாத்திரமானாலும் தனது வன்மையான கண்டனங்களைப் பொழிகிறார்; அதே நேரத்தில் சமாதானங்களையும் சொல்கிறார்.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இராமாயணத்தின் வாலி வதைப் படலம் கம்பராமாயணத்திற்கே களங்கம் என்று கூறிவிட்டு அடுத்துச் சொல்கிறார்; “என்ன செய்வது? சந்திரனிலேயே களங்க மில்லையா?” என்று.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆகவே சந்திரனில் களங்கம் இருப்பதனாலேயே சந்திரனுக்கு அழகு என்று குறிப்பிட்டு, அவர் கம்பராமாயணத்தைக் காப்பாற்ற விரும்புகிறார். எதற்காக? தமிழுக்காக!",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆக, எரிக்க வேண்டும் என்று சொன்ன நேரத்தில் நாங்கள் என்னென்ன கருத்துக்களைச் சொன்னோமோ; இன்னமும் சொல்கிறோமோ அதே கருத்துக்களை, எரிக்க வேண்டாம் என்ற தரப்பிலே சிலம்புச் செல்வர் ம.பொ.சி. அவர்கள் அன்றைக்கே மிகத் தெளிவாக எழுதியிருக்கிறார்கள். ஆகவே, அவர் குற்றம் இருக்கிற இடத்தில் கண்டிக்கும் ஆற்றல் படைத்தவர் என்று நான் பெரிதும் பாராட்டக் கடமைப்பட்டிருக்கிறேன்.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்று இந்த விழாவில் கலந்து கொள்கிற சிலம்புச் செல்வர் ஒரு காலத்தில் திராவிட இயக்கத்தை எதிர்த்து மாநாடு நடத்தினார். இன்று திராவிட முன்னேற்றக் கழக அரசுக்கு உறுதுணையாக இருக்கிறார்! என்ன காரணம்?",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திராவிட-நாடு பிரிவினைக் கொள்கையை நாங்கள் விட்டுவிட்ட காரணத்தால் எங்களுடன் இணைந்திருப்பதாக வெளிப்படையாக அறிவித்தார்; இணைந்தார்.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதைப் போலவே நான் கம்பர் விழாவிலே பேச வந்திருக்கிறேன் என்றால், இப்போது பெரும்பாலான புலவர்கள் கம்பருடைய கவிநயத்தை மாத்திரம் பாராட்டுகிறார்கள்; பாத்திரங்களை விட்டு விட்டார்கள் என்ற காரணத்தினால் நான் இங்கு வந்திருக்கிறேனே அல்லாமல் வேறல்ல; ஆக, விட்டுக் கொடுக்கின்ற தன்மை இருசாராருக்கும் வருகின்ற நேரத்தில், ஒருவரோடொருவர் கலந்து அணுகி நெருங்கிட வாய்ப்பு ஏற்படுகிறது. அந்த முறையில்தான் இந்த விழாவிலே கலந்து கொள்கிற வாய்ப்பினை நான் பெற்றேன்.",
+      "sourcePage": 40,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     40
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழா மூலமாகக் கம்பனுடைய புகழை ஒருவருக்கொருவர் எண்ணி மகிழ்கிற அதே நேரத்தில், கம்பன் வளர்த்த புகழ்த் தமிழ் மேலும் வளர்க்கப்பட, அந்தத் தமிழுக்கு மேலும் ஆக்கம், ஊக்கம் அளிக்கப்படக் கம்பனைப் பாராட்டிக் கொண்டிருந்தால் மட்டும் போதாது! அந்தத் தமிழ் ஏற்றம் பெற அனைவரும் பாடுபட வேண்டும் என்று வேண்டிக் கேட்டுக் கொள்கிறேன்.",
+      "sourcePage": 40,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     40
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1969-ஆம் ஆண்டு ஏப்ரல் திங்கள்\nகாரைக்குடி கம்பர் விழாவில்\nஆற்றிய உரை.",
+    "sourcePage": 40
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Kambar Festival (1)",
+    "sourcePage": 32
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As usual, the Kambar Festival is being held in Karaikudi; unusually, I have come to it.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I know that all of you have gathered with a question mark in your minds about what I am going to say.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Rather than asking, “Was he not the man who once said that the Kamba Ramayanam should be burned? How has he come here?”, the more appropriate question would be: “Was he not the man who said that the Kamba Ramayanam should be burned? How did they invite him here?”",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So I believe that those who invited me possess even more courage than I do.",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Some fifteen or twenty years ago, the Kamba Ramayanam became a matter of controversy in Tamil Nadu. A storm-like campaign calling for it to be burned was launched by Periyar, and many wars of words took place across Tamil Nadu. Perarignar Anna debated against Navalar Somasundara Bharathiar and against Sollin Selvar Sethu Pillai. In the end, those who came to oppose Anna's arguments asked that the Kamba Ramayanam not be burned for the sake of its poetic beauty,",
+      "sourcePage": 32,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     32
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "but they did not express devotion to its characters. It was because of that victory that the attempt to burn it was abandoned.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There are many kinds of burning. A stove is lit so that delicious food may be cooked; a lamp is lit so that the house may have light. Likewise, when it was said that the Kamba Ramayanam should be burned, the purpose was to make scholars bring Kamban's poetic genius alone before the people. The learned scholars understood this.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Once the scholars understood it, there was no need to carry out the act; that is why the attempt was given up.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The friend who presided over this function made one point very clearly.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He said that this festival is not being held to praise Rama or Lakshmana; it is a festival to praise Kamban. That is precisely why I have come.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Our appreciation of Kamban did not begin only after Thiru Sa. Ganesan invited me here. When statues were installed on the Chennai seafront for the great Tamil scholars during the World Tamil Conference, we also installed a statue for Kamban. We are therefore not people who failed to honour Kamban, nor people who failed to honour Kamban's Tamil. You must understand that.",
+      "sourcePage": 33,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     33
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In Anna's play, Ravana brings a case before a court against Kamban for calling him a merciless demon.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As Ravana stands in court accusing Kamban, the judge, Neethidevan, listens to Ravana's argumentative skill and Kamban's poetic skill, becomes unable to decide what judgment to give, faints and falls. The curtain drops; the play ends.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Those who hear the argument themselves become dazed. Anna therefore ends the play, titled *Neethidevan Mayakkam*, with the idea that there is nothing surprising about Neethidevan himself fainting. It is worth remembering that Anna himself played Ravana in it.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kamban tried very hard to give the characters of Valmiki's Ramayana a Tamil form — to adapt them to Tamil culture, Tamil values and Tamil norms.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The word to underline is “tried.” That is exactly what I said.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Ultimately, Kamban did not fully turn them into Tamil characters. If proof is needed, Silambu Selvar M.P. Sivagnanam is here as my protection.",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "With him sitting before me, I begin this discussion. A friend wrote to me: “I hear you are participating in the Kambar Festival. Very good! We are surprised — but also pleased. I am sending you Silambu Selvar",
+      "sourcePage": 34,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     34
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "M.P. Sivagnanam's book *Kambar Kaviyinbam*, which may be useful to you at the festival.” He sent me the book, and I read it fully yesterday while travelling by train.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The chairman said that he himself had argued that Rama was right to kill Vali. But if you look at what Silambu Selvar M.P. Sivagnanam, who will speak after me today, says of the episode, he ends the book by saying: “I am compelled to conclude that Rama's killing of Vali was an unjust act.”",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is no room left in the book to say what else he thinks.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thiru Sa. Ganesan says there is no room in Kamban either. Because attacking from behind — from concealment — is not the Tamil way of warfare, Kamban makes Vali himself speak of the glory of valour.",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Through Vali, Kamban himself seems to raise the question: “Can even a great warrior like Rama attack me from hiding?”",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Even Rama cannot answer it. Yet the chairman of this festival explained: “Vali seized Sugriva's wife; therefore Rama's killing Vali from concealment was justice.”",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But Sugriva, who accused Vali of taking his wife and secured punishment for him —",
+      "sourcePage": 35,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     35
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "what did that Sugriva do in Valmiki's Ramayana? After Vali died, he took Vali's wife Tara as his own wife. That is according to Valmiki's Ramayana. Kamban, however, did not allow that.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In Valmiki's Ramayana, after Vali's death, Lakshmana goes to Vali's palace. Tara, Vali's widow, appears beautifully adorned and attractive; Valmiki writes that even Lakshmana is reminded of his wife in Ayodhya.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Kamban did not wish to portray Tara in that way. When Lakshmana goes to Vali's palace, Tara appears in white, in the widow's form familiar to Tamil women, with the appropriate hair and appearance. That is how Kamban describes her.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thus, taking the narrative from Valmiki's Ramayana and handling it in a way suited to Tamil Nadu, Kamban composed a Ramayana for Tamils. In one place he treats the characters fairly; in another, less fairly.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The characters themselves are not the main thing. I too have written many stories.",
+      "sourcePage": 36,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     36
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "No special meetings have been held to praise the characters I created. After writing many stories, I have been praised only in my capacity as a writer.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Silambu Selvar M.P. Sivagnanam has written many fine books and created many characters in them. Festivals are not held to praise all those characters. I praise him because he has created such characters and expressed such ideas.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Likewise, our Sa. Ganesan has received much appreciation, not because of characters he created, but because he possessed the ability to create such characters.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In *Kambar Kaviyinbam*, Silambu Selvar compares Krishna and Rama at one point.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "On the battlefield Ravana stands unarmed. Rama says, “Go today and come tomorrow,” and sends him away. Is this not the tradition of war? Is this not the dharma of war? Silambu Selvar praises Rama for this. He then brings Krishna into the comparison and says Krishna did not act justly on the battlefield: by strategic devices he agreed to Karna being killed contrary to the ethics of war. Therefore, M.P. Sivagnanam argues there that he cannot accept Krishna's method; Krishna may be great in strategy, but the methods adopted must themselves be good. He makes Krishna the accused and presents Rama as righteous.",
+      "sourcePage": 37,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     37
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Turn another ten pages and once again he brings Krishna and Rama together, this time in the episode of Vali's death.",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There he says that Rama's act was wrong: it was not right to intervene in a dispute between two brothers and end it by killing one with a weapon. Rama is thus made the accused. But when the dispute between the Pandavas and Kauravas is described as a quarrel among brothers, Krishna did not himself bear a weapon and did not intervene in that way. Therefore Krishna's conduct is superior in this instance, and Rama's conduct cannot be accepted. Thus, in two places in the same book Silambu Selvar gives two apparently different judgments.",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I am not finding fault with Silambu Selvar. The characters themselves have been created in such contradictory situations. Whatever the work and however the characters are shaped, they can leave even the critic confused. Yet the Tamil spoken through those characters, the truths Kamban shaped through them, and the service he thereby rendered to Tamil — as long as Tamil lives, as long as Tamil Nadu lives, as long as the last Tamil person lives in Tamil Nadu —",
+      "sourcePage": 38,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     38
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I do not deny that all this deserves praise.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Thiru M.P. Sivagnanam does not forgive even a small fault. Thus, page after page in *Kambar Kaviyinbam*, whether the character belongs to the Kamba Ramayanam or to Valmiki, he pours out forceful criticism and, at the same time, offers reconciliations.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He says that the Vali-vadha episode is a blemish even on the Kamba Ramayanam and then adds: “What can be done? Is there not a blemish even on the moon?”",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "By saying that the moon is beautiful precisely with its blemish, he seeks to protect the Kamba Ramayanam. Why? For Tamil.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "So the very arguments that we made when we said it should be burned — and that we still make — were clearly written even then by Silambu Selvar M.P. Sivagnanam from the side that said it should not be burned. I therefore greatly appreciate his capacity to condemn a fault wherever he finds one.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The Silambu Selvar participating in this festival once held a conference against the Dravidian movement. Today he supports the Dravida Munnetra Kazhagam government. Why?",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He publicly declared that he joined us because we had abandoned the Dravida Nadu secession demand; and he joined us.",
+      "sourcePage": 39,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     39
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In the same way, if I have come to speak at the Kambar Festival, it is because most scholars now praise only Kamban's poetic beauty and leave aside the characters. When a willingness to concede develops on both sides, there is an opportunity to meet, approach and come closer to one another. It is in that manner that I obtained the opportunity to take part in this festival.",
+      "sourcePage": 40,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     40
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Through this festival, while we rejoice together in Kamban's fame, it is not enough merely to praise Kamban. The glorious Tamil that Kamban nurtured must grow further; that Tamil must receive still greater strength and encouragement. I request that everyone work for the advancement of that Tamil.",
+      "sourcePage": 40,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     40
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered at the Kambar Festival in Karaikudi in April 1969. The source states the month and year only; no exact day is given.",
+    "sourcePage": 40
+   }
+  ]
+ },
+ "sourcePages": [
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40
+ ],
+ "venue": {
+  "ta": "காரைக்குடி",
+  "en": null
+ },
+ "event": {
+  "ta": "கம்பர் விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 3,
+  "total": 61
+ }
+}

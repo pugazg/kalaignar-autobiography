@@ -228,6 +228,23 @@ jobs:
       # projection to the client component, and that public notes carry no stale workflow-state wording.
       - name: Essay public provenance (notes + serialization boundary)
         run: npm run test:essay-public-provenance
+      # Wave 7 B5a / B5b / B6 / Kuraloviyam — the build/UI/public-boundary gates (after Build). The generated
+      # catalogue must equal a fresh generation; P1 hidden boundary is stage-aware; P2 renders every work in
+      # both UI languages and layers; P3 proves the 510 direct routes; P4 owns the published surface; the
+      # public-provenance test reads the BUILT HTML + RSC of every speech /source page and every Kuraloviyam
+      # page and proves no internal archival state is serialized to the browser.
+      - name: Wave 7 B5/B6/Kuraloviyam — generated catalogue is byte-identical
+        run: node scripts/generate-wave7-b5-b6-k-catalogue.mjs --verify
+      - name: Wave 7 B5/B6/Kuraloviyam P1 hidden-boundary (stage-aware)
+        run: npm run test:wave7-b5-b6-k-p1-hidden
+      - name: Wave 7 B5/B6/Kuraloviyam P2 render regression
+        run: npm run test:wave7-b5-b6-k-p2-render
+      - name: Wave 7 B5/B6/Kuraloviyam P3 routes
+        run: npm run test:wave7-b5-b6-k-p3-routes
+      - name: Wave 7 B5/B6/Kuraloviyam P4 publication integration
+        run: npm run test:wave7-b5-b6-k-p4-integration
+      - name: Wave 7 B5/B6/Kuraloviyam public provenance (built HTML/RSC serialization)
+        run: npm run test:wave7-b5-b6-k-public-provenance
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -484,6 +501,21 @@ jobs:
               "essays/viduthalai-kilarcci": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
               "essays/meesai-mulaiththa-vayathil": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
               "essays/pesum-kalai-valarppom": { repo: "kalaignar-essays", dir: "kalaignar-essays-wave7" },
+              // ── WAVE 7 B5a / B5b / B6 / KURALOVIYAM — pinned at the frozen Wave-7 P0 commits. The 97
+              // முத்துக் குளியல் speeches share one public-speeches checkout and the 3 assembly speeches one
+              // assembly-speeches checkout — each at a LATER commit than the Wave-6 works, so each gets its
+              // OWN -wave7 directory. Every one of the 100 is registered (from the frozen import manifest), so
+              // the same-directory/same-pin guard proves all 100 provenance records name one commit per repo.
+              ...Object.fromEntries(
+                JSON.parse(fs.readFileSync("data/internal/wave7/b5-b6-speeches-manifest.json", "utf8")).works.map((w) => [
+                  `speeches/${w.slug}`,
+                  w.batch === "B6"
+                    ? { repo: "kalaignar-assembly-speeches", dir: "kalaignar-assembly-speeches-wave7" }
+                    : { repo: "kalaignar-public-speeches", dir: "kalaignar-public-speeches-wave7" },
+                ]),
+              ),
+              // Kuraloviyam pins the literary-commentary archive at its own Wave-7 commit (not the Thirukkural pin).
+              "kuraloviyam": { repo: "kalaignar-literary-commentary", dir: "kalaignar-literary-commentary-wave7" },
             };
             const seen = new Map();
             for (const [p, spec] of Object.entries(works)) {
@@ -650,6 +682,25 @@ jobs:
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
         run: node scripts/validate-wave7-b2-b4-p2-fidelity.mjs "$KDL_SOURCES_DIR/kalaignar-stage-plays-wave7" "$KDL_SOURCES_DIR/kalaignar-novels-wave7" "$KDL_SOURCES_DIR/kalaignar-essays-wave7"
+      # Wave 7 B5a / B5b / B6 / Kuraloviyam (101 works) — P1 INDEPENDENT source/import validation (census
+      # set-equality derived from the source, subtree pins, qualification from the page records), P2
+      # INDEPENDENT source fidelity (presence → structure → equality, Tamil + English, every work), and the
+      # DETERMINISTIC REGENERATION proof: both importers regenerate every vendored payload + internal manifest
+      # at the frozen pins and require byte-identity (510 files).
+      - name: Wave 7 B5/B6/Kuraloviyam P1 — source/import fidelity (101 works)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave7-b5-b6-k-p1.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches-wave7" "$KDL_SOURCES_DIR/kalaignar-assembly-speeches-wave7" "$KDL_SOURCES_DIR/kalaignar-literary-commentary-wave7"
+      - name: Wave 7 B5/B6/Kuraloviyam P2 — source render fidelity (101 works)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: node scripts/validate-wave7-b5-b6-k-p2-fidelity.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches-wave7" "$KDL_SOURCES_DIR/kalaignar-assembly-speeches-wave7" "$KDL_SOURCES_DIR/kalaignar-literary-commentary-wave7"
+      - name: Wave 7 B5/B6/Kuraloviyam — deterministic regeneration (importers --verify)
+        if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
+        env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
+        run: |
+          node scripts/import-wave7-speeches.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches-wave7" "$KDL_SOURCES_DIR/kalaignar-assembly-speeches-wave7" --verify
+          node scripts/import-kuraloviyam.mjs "$KDL_SOURCES_DIR/kalaignar-literary-commentary-wave7" --verify
       - name: Speeches batch (Wave 6 B3)
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }

@@ -1,0 +1,52 @@
+{
+ "workId": "ambur-sampangi-illa-manavizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/ambur-sampangi-illa-manavizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - II",
+  "firstEditionTa": "முதல் பதிப்பு 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "coverPriceTa": "ரூ. 150/-",
+  "scanFilename": "TVA_BOK_0065802_முத்துக்குளியல்_பாகம்_2.pdf",
+  "scanSha256": "48631b4fc5258df33213dbb742aec70ff6aace4fcd294f377e5750b406f5d9b2",
+  "scanFileSizeBytes": 232470104,
+  "scanTotalPages": 425,
+  "speechScanPages": "173–183",
+  "printedSpeechPages": "172–182",
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-2",
+   "ordinal": 16,
+   "total": 36
+  },
+  "speechFactsNotStated": [
+   "date"
+  ],
+  "speechFactsNoteEn": "No date is stated in the collection contents, numbered/titled opening, or separate closing note; do not infer one. Opening body on PDF 173 / printed p.172 states: ஆம்பூர் சம்பங்கி இல்லத்தில் நடைபெறுகின்ற இந்த மணவிழா நிகழ்ச்சியில்"
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation"
+ },
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.47,
+  "tamilBodyWords": 1482,
+  "englishBodyWords": 2175,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 28,
+  "englishParagraphs": 28,
+  "sourcePagesCovered": 11
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

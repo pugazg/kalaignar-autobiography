@@ -1,0 +1,813 @@
+{
+ "workId": "sudhandhira-thina-ponvizha",
+ "slug": "sudhandhira-thina-ponvizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/sudhandhira-thina-ponvizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1997-08-16",
+ "year": 1997,
+ "title": {
+  "ta": "சுதந்திர தின பொன்விழா",
+  "en": "Independence Day Golden Jubilee"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.46,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சுதந்திர தின பொன்விழா",
+    "sourcePage": 480
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பேரன்பு கொண்டோரே,\nபெரியோரே,\nபெற்ற தாய்மாரே,\nஎன் உயிரினும் மேலான அன்பு\nஉடன்பிறப்புக்களே,",
+      "sourcePage": 480,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     480
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுதந்திரத் திருநாளில் ஆகஸ்டு 15-ஆம் நாள் தேசியக் கொடியேற்றும் உரிமை, மக்களால் தேர்ந்தெடுக்கப்பட்ட மாநில முதலமைச்சர்களுக்கு அளிக்கப்பட வேண்டுமென மத்திய அரசுடன் வாதாடி, இந்தக் கோட்டைக் கொத்தளத்தில் 23 ஆண்டுகளுக்கு முன்பு 1974-ல் மகிழ்ச்சியுடன் இந்த மணிக் கொடியை ஏற்றிவைத்திடும் வாய்ப்பு பெற்றிருந்த எனக்கு, இப்போது சுதந்திர நாள் பொன்விழா ஆண்டிலும் இந்தக் கொடியை ஏற்றி வைக்கும் பெரும் பேற்றினை வழங்கியுள்ள தமிழகத் திருநாட்டு மக்கள் அனைவருக்கும் என் இதயமார்ந்த நன்றியையும் - பணிவு மிகுந்த வணக்கத்தையும் - பாசம் நிறைந்த வாழ்த்துக்களையும் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 480,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     480
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம் அன்னைத் திருநாடு, அடிமை விலங்கை உடைத்தெறிந்து விடுதலை பெற்று ஆயிற்று ஐம்பது ஆண்டுகள் எனினும்; இன்னமும் நாம் முழுமையான சுதந்திர விடியலை எதிர்பார்த்து வைகறைப் பொழுதிலேதான் இருக்கிறோம் என்பதை மறந்து விடுவதற்கில்லை.",
+      "sourcePage": 480,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     480
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விடுதலை வேட்கை கொண்ட வீரன் ஒருவனைப் பார்த்து வெள்ளைக்கார துரையொருவன்,",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“தொண்டு செய்யும் அடிமை - உனக்கு\nசுதந்திர நினைவோடா?\nபண்டு கண்டதுண்டோ - அதற்குப்\nபாத்திர மாவாயோ?\nசாதிச் சண்டை போச்சோ? - உங்கள்\nசமயச் சண்டை போச்சோ?\nநீதி சொல்ல வந்தாய் - கண்முன்\nநிற்கொணாது போடா!”",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று கூறியதாகப் பாரதியார் பாடினாரே; அந்தப் பாட்டு இந்தச் சுதந்திரப் பொன்விழா ஆண்டிலும் பாடப்பட வேண்டிய நிலை இருப்பதை எண்ணிடும் போது புண்ணில் வேல்பட்டது போன்ற துடிதுடிப்பும் துன்பமுமன்றோ நம்மைத் துளைத்தெடுக்கிறது!",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நினைத்துப் பார்க்க வேண்டாமா; நம் நெஞ்சில் நிழலாட வேண்டாமா; தமது தலைக் குருதியில் நனைத்து உயிர் மூச்சை சுதந்திரக் கொடி பறந்திட காற்றாக வழங்கிய தியாகத் திருவிளக்குகள் எத்தனை பேர் இந்த நாட்டு விடுதலைக்கு அடித்தளமாக அமைத்துள்ளனர்!",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தென்னாப்பிரிக்காவில் இனவெறி எதிர்ப்புப் போராட்டத்தில் சிறையேகி மாண்டுவிட்ட மகளிர்குல இள மணிச்சுடர் தில்லையாடி வள்ளியம்மாளின் தியாகம்தான்; இந்திய நாட்டு விடுதலைப் போராட்டத் தீற்கான உணர்வைத் தனக்கு எழுப்பியது என்றுரைத்த உத்தமர் காந்தியடிகளின் தலைமையில் பெற்ற சுதந்திரத்திற்குப் பொன்விழா - சுதந்திரம் வாங்கித் தந்தவருக்கே என்ன பரிசளித்தது இந்த நாடு!",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“என்னைப் பற்றிக் கவலையில்லை - நான்\nவாங்கித் தந்த சுதந்திரத்தையாவது காப்பாற்றுங்கள்”",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்ற வேண்டுகோளுடன் தானே காந்தியடிகள் கடைசியாகக் கண் மூடியிருப்பார்!",
+      "sourcePage": 481,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     481
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதை நினைத்தாவது நாம் பெற்ற சுதந்திரத்தைப் பேணிக் காத்திட இந்நாளில் உறுதி பூணுவோம்.",
+      "sourcePage": 482,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     482
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுதந்திரமுடன் இயங்கிடும் எத்தனையோ நாடுகளின் நிலையோடு ஒப்பிடுகையில் நமது இந்திய நாட்டு நிலைமை, மற்றிலும் வேறுபட்டது. உள்நாட்டு சச்சரவு வாய்ந்த உணவுதான் குழந்தைகளுக்கு வழங்கப்பட வேண்டுமென வேறு நாடுகளில் அறிவுரைகள் செயல் வடிவம் பெறுகின்ற போது, எந்தச் சத்து பற்றியும் கவலை இல்லை, எதையாவது போட்டு, கத்துகிற வயிறை அடைப்பதற்கு உணவு என்ற பெயரால் ஒரு பொருள் கிடைக்குமா என ஏங்குகின்ற ஏழைகள் இங்கே அங்கிங்கெனாதபடி அலைந்து கொண்டிருக்கின்றனர்.",
+      "sourcePage": 482,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     482
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "காயும் கதிரவனை மறைக்கக் கையையே குடையாகக் கொண்டும், மழையில் ஒதுங்க மரத்தடியையே மாளிகையாகப் பாவித்தும் நமது மக்கள் தொகையில் பெரும் பகுதியினர் காலத்தை ஓட்டிக் கொண்டிருக்கிறார்கள்.",
+      "sourcePage": 482,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     482
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆண்டவனின் புத்திரர்கள் என்று அன்று அழைக்கப்படுகிற அரிசனங்கள் எனப்படும் ஆதிதிராவிடர் லட்சோப லட்சம் பேர் வாழுகின்ற வீடுகள் குக்கிராமத்துக் குப்பைத் தொட்டிகளாக இருக்கின்றன.",
+      "sourcePage": 482,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     482
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உணவு வழங்கும் உழவன் மானங்காக்க உடை தரும் நெசவாளி - வியர்வைத் துளிகளை தன்னைப் பெற்றெடுத்த இந்திய மண்ணுக்குப் பன்னீர் துளிகளாகத் தெளித்துக் கொண்டிருக்கும் தொழிலாளி - சுரங்கம் தோண்டுவோன் - முத்துக் குளிப்போன் - மீனவன் - உலைக்கூடத்தில் வதைபடுவோன் - மண் சுமப்போன் - மரம் ஏறுவோன் - உடை வெளுப்போன் - முடி திருத்துவோன் - ஏதோ இரண்டெழுத்துப் படித்து எழுத்தா பணி புரிவோன் - இன்னோரன்ன மக்கள் தொகுதியினர் வாழ்விலே இன்பத் தென்றல் வீசிடவில்லை. அதற்காக முயற்சிகள் எடுக்கப்படாமல்",
+      "sourcePage": 482,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     482
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இல்லை. ஆனால், அந்த முயற்சிகள், முழுப் பயனையும் அளித்திடத்தக்க வண்ணம் அமைந்திடவில்லை. ஐந்து பேருக்காகத் தயாரிக்கப்படும் விருந்து, பரிமாறப்படுகிற நேரத்தில் பத்துப் பதினைந்து பேருக்கு என்ற நிலை பெற்று விடுமேயானால், அதனை அருந்தி மகிழ்வதில் முழுமை எப்படி இருந்திட இயலும்?",
+      "sourcePage": 483,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     483
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“எல்லையுடைய புவியின் மீது\nஎல்லையற்ற வளர்ச்சி, சாத்தியமன்று”",
+      "sourcePage": 483,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     483
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்பதை ஒவ்வொரு தனி மனிதனும் உணர்ந்து, அதற்கேற்ப நடந்தால்தான், வளர்ச்சித் திட்டங்களில் முழுப் பயனைச் சமுதாயம் பெற்றிட முடியும். எத்தகைய பொருளாதார முன்னேற்றத் திட்டங்களைத் தீட்டினாலும், கட்டுக்கடங்காத வகையில் மக்கள் பெருக்கம் செல்லுமேயானால், திட்டப்பட்ட பொருளாதாரத் திட்டங்கள், காட்டில் காய்ந்த நிலவாகத்தான் ஆகிவிடும்.",
+      "sourcePage": 483,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     483
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இத்துணை சிரமங்களுக்கிடையே மக்கள்பணி நடைபெறும் போது அரசின் முயற்சிகளைத் தகர்த்தெறியும் பொருளாதாரக் குற்றவாளிகள் - சமூக விரோதிகள், சாதி சமய வெறி பிடித்தோர்; எரியும் வீட்டில் பிடுங்கியவரை ஆதாயம் என்பதுபோலத் தங்கள் கைவரிசையைக் காட்டிக் கொண்டுதான் இருக்கிறார்கள். இந்த மக்கள் நல விரோதிகளைத் தடுத்து நிறுத்த - அரசு எடுத்திடும் நடவடிக்கைகளில் பொதுமக்கள் முழு ஒத்துழைப்பைத் தந்திட வேண்டும்.",
+      "sourcePage": 483,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     483
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடத்தல்காரர் - கருப்புப் பண முதலைகள் - வரி ஏய்ப்போர் - கலப்பட வணிகர் - பதுக்கல் மனிதர் - ஊழல் பெருச்சாளிகள் - வன்முறை விரும்பிகள் - இவர்களைச் சமுதாயத்தின் ஓர் அங்கம் என்று கூறக்கூட நா கூசுகிறது. சமுதாயத்தை அழிக்கும் புற்று நோயாக அவர்கள் வளர்ந்து வருகிறார்கள். அந்தக் கொடிய நோய் தடுக்கப்பட - அதன் கோரப்பிடியிலிருந்து நமது மக்கள் விடுவிக்கப்பட சபதம் ஏற்கும் ஆண்டாக இந்தப் பொன்விழா ஆண்டு அமைந்திடல் வேண்டும்.",
+      "sourcePage": 483,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     483
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இருள் - மழை - புயல் இவற்றுக்கிடையே மின்னல் வெளிச்சத்தில் வழி தெரிந்து நடப்பதைப் போல இந்த ஐம்பதாண்டு காலமாக இடையில் வந்த நெருக்கடி நெருப்பாற்றையும் கடந்து நிற்பதுதான், நமது இந்திய நாட்டின் ஜனநாயகமாகும்.",
+      "sourcePage": 484,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     484
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒரு துணைக் கண்டம் எனக் கூறப்படும் இந்தப் பெரிய நாடு, பெரிய ஜனநாயக நாடாகவும் திகழ்ந்து, மற்ற பல நாடுகளுக்கு மத்தியில் தனது மதிப்பை உயர்த்திக் கொண்டிருப்பதை இந்தப் பொன் விழா ஆண்டில் நினைத்துப் பூரிப்புக் கொள்கிறோம்.",
+      "sourcePage": 484,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     484
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மக்களாட்சியின் மாண்புக்கு தமிழகத்தில் சங்க காலத்திலேயே அடையாளம் உண்டு என்பதை நமது இலக்கியங்கள் அறிவிக்கின்றன. ஊராட்சித் தலைவர்கள் மக்களால் தேர்வு செய்யப்பட்டதை உத்திரமேரூர் கல்வெட்டு தெரிவிக்கிறது.",
+      "sourcePage": 484,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     484
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உள்ளாட்சி மன்றங்களில் ஊனமுற்றிருந்த ஜனநாயகத்தைக் குணப்படுத்தி, கடந்த ஆண்டு நடமாட வைத்த பெருமை உங்களால் உருவாக்கப்பட்ட இந்த அரசுக்கு உண்டு. அந்த உள்ளாட்சிகளுக்குத் தேவையான நிதியும் - போதுமான அதிகாரப் பொறுப்புகளும் படிப்படியாக வழங்கப்பட்டு வருகின்றன.",
+      "sourcePage": 484,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     484
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கிராமங்கள்தான் நாட்டின் முதுகெலும்பு என்று காந்தியடிகள் சொன்ன வாசகத்தை மறவாமல் - நாடு, நகரம், கிராமம், குக்கிராமம், பட்டி தொட்டி அனைத்திலும் இந்த அரசின் பணிகள் பரவலாக நடைபெறுவதற்கு கட்சிச் சார்பற்ற முறையில் அனைத்து மக்களின் அன்பான ஆதரவும் வேண்டப்படுகிறது.",
+      "sourcePage": 484,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     484
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அடிப்படை வசதிகளான பாதுகாக்கப்பட்ட குடி தண்ணீர், சாலை வசதி, மின்சாரம், மருத்துவ வசதி, உணவு, உடை, உறையுள் போன்ற மக்களின் குறைந்த பட்ச தேவைகளை நிறைவு செய்ய வேண்டும் என்ற குறிக்கோளை நோக்கித்தான் இந்த அரசின் திட்டங்கள் தீட்டப்படுகின்றன.",
+      "sourcePage": 484,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     484
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தியாகங்கள் பல செய்து இந்தத் திருநாட்டை மீட்டவர்கள் நாட்டின் நலிவு போக்க நாளும் உழைத்திடும் நல்லவர்கள் - அனைவரும் காணும் கனவுகளை நிறைவேற்றிடத் தொடர்ப்பயணம் மேற்கொண்டிருக்கும் நாம், அந்தத் தியாக சீலர்களைப் போற்றிப் புகழ்வதுடன் நில்லாமல், அவர்தம் வாழ்வில் வறுமைத் தேள் கொட்டாமலும் பாதுகாத்திடும் பொறுப்பையும் ஏற்றுள்ளோம்.",
+      "sourcePage": 485,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     485
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த தியாகிகளின் ஓய்வூதியமாக மாதம் ஆயிரத்து ஐநூறு ரூபாய் வழங்கி வருகிறது தமிழக அரசு!",
+      "sourcePage": 485,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     485
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுதந்திரம் அடைந்த ஐம்பதாம் ஆண்டு பொன் விழா நினைவாக - இனிமேல் விடுதலைப் போர்த் தியாகிகளுக்கு மத்திய அரசு இந்தப் பொன்விழா ஆண்டில் அறிவிக்கும் ஓய்வூதியப் பயன் எவ்வளவோ - அந்த அளவுக்குச் சமமான பயனை மாநில அரசு ஓய்வூதியம் பெறும் தியாகிகளும் பெற்றிட வழிவகை செய்யப்படும் என்பதை மகிழ்ச்சியோடு இங்கே அறிவிக்கிறேன். (பலத்த கைதட்டல்)",
+      "sourcePage": 485,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     485
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிதம்பரனார் சிறையில் இழுத்த செக்கைத் தேடிக் கண்டுபிடித்து அதனைச் சென்னையில் காட்சிப் பொருளாக வைத்து முதல் ... தியாகத் தலைவர்களின் நினைவாக எத்தனையோ செயல்களை ஆற்றியுள்ள இந்த அரசு; ஆகஸ்டு 31-மதுரையில் நடத்த இருக்கும் தீண்டாமை ஒழிப்பு மாநாட்டையொட்டி, அதே நாளில் தியாகச் செம்மல் முன்னாள் அமைச்சர் கக்கன் அவர்களின் சிலையமைப்பு விழாவை நடத்த இருக்கிறது. (கைதட்டல்)",
+      "sourcePage": 485,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     485
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீண்ட காலக் கோரிக்கையாக இருந்துவரும் விசுவநாததாஸ் அவர்கள் வாழ்ந்த மதுரை திருமங்கலம் இல்லத்தை அரசு நினைவகமாக இந்தப் பொன்விழா ஆண்டில் மாற்றிட இருக்கிறது என்பது மட்டுமல்ல; கட்டபொம்மன் வாரிசுகளுக்கும், மருதுபாண்டியர் வாரிசுகளுக்கும், சுந்தரலிங்கம் வாரிசுகளுக்கும்",
+      "sourcePage": 485,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     485
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உதவிடுவது போல விசுவநாததாஸ் வாரிசுகளுக்கும் உதவிடும் என்பதை மகிழ்ச்சியுடன் தெரிவித்துக் கொள்கிறேன். (கைதட்டல்)",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சுதந்திர தின வெள்ளிவிழா 1972-ஆம் ஆண்டு நான் அறிவித்தது போலவே; இந்தப் பொன்விழா ஆண்டிலும் சிறைவாழ் கைதிகளுக்கு சலுகைகள் சிலவற்றை அறிவிக்கிறேன்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பத்தாண்டுகளுக்கு மேல் தண்டனை பெற்றோருக்கு ஓராண்டு காலத் தண்டனைக் குறைப்பு. இந்தச் சலுகை மூலம் 139 சிறைக் கைதிகள் விடுதலை பெறுவார்கள்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஐந்தாண்டுகளுக்கு மேல் பத்தாண்டுகளுக்குள் தண்டனை பெற்றோருக்கு ஓராண்டு காலம் தண்டனைக் குறைப்பு. இதன் மூலம் 24 கைதிகள் விடுதலை பெறுவார்கள்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஓராண்டுக்கு மேல் ஐந்தாண்டுகள் வரை தண்டனை பெற்றோருக்கு நான்கரை மாதம் தண்டனைக் குறைப்பு. இதன் வாயிலாக 64 சிறைக் கைதிகள் விடுதலை பெறுவார்கள்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மூன்று மாதங்களுக்கு மேல் ஓராண்டு வரை தண்டனை பெற்றோர் பாதிக் கால தண்டனை அனுபவித்திருந்தால் மீதிக் காலத் தண்டனை குறைக்கப்பட்டு விடுதலையாவார். இதன் மூலம் 166 கைதிகள் விடுதலை அடைவார்கள்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதே கைதிகள் பாதிக் காலத் தண்டனை அனுபவிக்காமல் இருந்தால், அவர்களுக்கு மூன்று மாதம் தண்டனைக் குறைப்பு. இந்தச் சலுகை காரணமாக 72 கைதிகள் விடுதலை அடைவார்கள்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மூன்று மாதமும் அதற்குக் குறைவாகவும் தண்டனை பெற்றோர் அனைவருமே விடுதலையாவார். இந்த வகையில் 89 சிறைக் கைதிகள் விடுதலை ஆவார்கள்.",
+      "sourcePage": 486,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     486
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவே தற்போது அறிவிக்கப்படும் இந்தச் சலுகைகளின் பலனாக 554 சிறைக் கைதிகள் உடனடியாக விடுவிக்கப்படுவதோடு, சுமார் 3,300 சிறைக் கைதிகள் தண்டனை குறைப்புப் பயனையும் அடைவார்கள் என்பதை இந்தப் பொன்விழா நாளில் அறிவிப்பதில் நான் பெரிதும் மகிழ்ச்சி அடைகின்றேன்.",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த அறிவிப்புகள் தேன் குடங்கள் அல்ல; வெறும் தேன் துளிகள்தான் என்பதை நானறிவேன்.",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாழ்த்தப்பட்ட மக்கள் - பிற்படுத்தப்பட்ட மக்கள் - மிகவும் பிற்படுத்தப்பட்ட மக்கள் - நடுத்தர மக்கள் - அலுவலர்கள் - அனைத்துத் தொழிலாளர்கள் - எல்லோரது பிரச்சினைகளையும் மையமாக வைத்து, அரசின் சக்கரம் சுழல வேண்டுமென்று அண்ணா அவர்களின் வழிநின்று, நாளும் செயல்படும் இந்த அரசு என உறுதி அளிக்கிறேன்.",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டின் ஒற்றுமை, ஒருமைப்பாடு, இறையாண்மை காத்து, தமிழர் கொற்றம் சிறக்கப் பணியாற்றுவோம்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டுக்குழைத்த நல்லோர் வழியில் நடை போடுவோம்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உத்தமர் காந்தியடிகள் - உண்மையே கடவுள் என்றார்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அறிஞர் அண்ணா - ஏழையின் சிரிப்பில் இறைவனைக் காண்போம் என்றார்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கைமாறு கருதாமல் கடமையைச் செய் என்றார் தந்தை பெரியார்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உழைப்பே உயர்வு தரும் என்றார் பெருந்தலைவர் காமராசர்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இவர்கள் எண்ணமெல்லாம் தமிழர் வாழ்வில் வண்ணமாகப் பொலிவுற, இந்தச் சுதந்திரப் பொன்விழா நாளில் தொண்டாற்ற தூய சபதம் ஏற்றிடுவோம்!",
+      "sourcePage": 487,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     487
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "- முரசொலி 16-8-97",
+    "sourcePage": 487
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi opens by recalling that in 1974 he had argued that elected State Chief Ministers should have the right to hoist the national flag on Independence Day. Twenty-three years later, during the Golden Jubilee year of independence, he thanks the people of Tamil Nadu for giving him the opportunity once again to hoist the flag at Fort St George.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He cautions that fifty years after independence, India should not assume that complete freedom has already been achieved. Quoting Bharati's lines on slavery, caste and religious conflict, he asks whether the poet's challenge remains painfully relevant even in the Golden Jubilee year.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi invokes the sacrifices behind independence, including Thillaiyadi Valliammai and Gandhi, and asks what reward the country has given those who won freedom. He says Gandhi's final appeal might be understood as a plea not to worry about him but to protect the freedom that had been won.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The speech then turns to poverty and social inequality. Karunanidhi contrasts the nutritional advice available in wealthier societies with the reality of poor families in India struggling merely to silence hunger. He describes the hardship of agricultural labourers, weavers, industrial workers, fishers, miners, washermen, barbers and many other working people whose lives have not yet felt the “breeze of happiness.”",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He argues that economic development cannot succeed if population growth overwhelms planned resources. Alongside development, the government and public must also confront black money, smuggling, tax evasion, adulteration, hoarding, corruption, violence, caste hatred and religious fanaticism, which he describes as social cancers.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi praises the survival of Indian democracy through crises and recalls older democratic traditions in Tamil society, including evidence from the Uthiramerur inscriptions. He says local democracy has been revived and local bodies are gradually receiving funds and powers. Government policy, he adds, is directed toward basic needs such as safe drinking water, roads, electricity, medical care, food, clothing and shelter.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He then announces measures for freedom fighters. Tamil Nadu already provides a monthly pension of 1,500 rupees, and the State will match the benefit announced by the Union Government for freedom fighters during the Golden Jubilee year. He also refers to memorial measures associated with V. O. Chidambaranar, Kakkan, Viswanatha Das, Kattabomman, the Maruthu brothers and Sundaralingam.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A substantial part of the address announces sentence remissions for prisoners: one year for those serving more than ten years; one year for those serving between five and ten years; four and a half months for those serving between one and five years; release in specified cases after half a sentence for those serving between three months and one year; and shorter remissions for other categories. Karunanidhi states that 554 prisoners will be released immediately and around 3,300 will benefit from sentence reductions.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He closes by saying these announcements are only drops of honey, not jars of honey. The government, he says, must revolve around the problems of oppressed, backward, most-backward and middle-class people, employees and workers. The final pledge is to protect unity, sovereignty and social justice, following the ideals associated with Gandhi, Anna, Periyar and Kamaraj.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "note",
+    "text": "**`முரசொலி`, 16 August 1997.**",
+    "sourcePage": 487
+   }
+  ]
+ },
+ "sourcePages": [
+  480,
+  481,
+  482,
+  483,
+  484,
+  485,
+  486,
+  487
+ ],
+ "venue": null,
+ "event": {
+  "ta": "சுதந்திர தின பொன்விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 49,
+  "total": 61
+ }
+}

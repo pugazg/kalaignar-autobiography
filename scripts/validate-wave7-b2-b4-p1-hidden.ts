@@ -21,6 +21,9 @@ import path from "node:path";
 import { publishedWorks, LIBRARY_WORKS } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import sitemap from "../app/sitemap";
+// Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): its derived contribution is added ONLY once it is published.
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
+const W7K = (LIBRARY_WORKS.some((w) => w.id === "kuraloviyam") ? W7K_ALL : { works: 0, collections: 0, discovery: 0, visible: 0, sitemap: 0, build: 0 });
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -70,7 +73,7 @@ if (phase === "pre-P4") {
   eq(inSitemap, 0, "no B2-B4 landing exposed in the sitemap");
 } else {
   // P4: publication flip — exact published surface owned by the P4 integration validator.
-  eq(works.length, P1_FROZEN.catalogue + 13, "catalogue grew by exactly the 13 works (232)");
+  eq(works.length, P1_FROZEN.catalogue + 13 + W7K.works, "catalogue grew by exactly the 13 works (232) — plus the later Wave-7 B5/B6/K 101 once published");
   for (const s of slugs) ok(libIds.has(s), `${s}: now a published LibraryWork`);
   eq(inSitemap, 13, "all 13 B2-B4 landings now in the sitemap");
   ok(sm.length >= P1_FROZEN.sitemap + P3_ROUTES, "sitemap grew by at least the 224 direct routes");
@@ -89,10 +92,10 @@ if (fs.existsSync(pm)) {
   let wave7Routes = 0;
   for (const w of manifest.works) { const base = routeFor(w); wave7Routes += keys.filter((k) => k === base || k.startsWith(`${base}/`)).length; }
   eq(wave7Routes, expectedNew, `direct B2-B4 routes in build == ${expectedNew} (${routesBuilt ? "P3/P4" : "P1/P2"})`);
-  eq(keys.length, P1_FROZEN.build.prerender + expectedNew + collectionRoutes, `build prerender == 4051${expectedNew ? ` + ${expectedNew}` : ""}${collectionRoutes ? ` + ${collectionRoutes} (arumbu-1978 route)` : ""}`);
+  eq(keys.length, P1_FROZEN.build.prerender + expectedNew + collectionRoutes + W7K.build, `build prerender == 4051${expectedNew ? ` + ${expectedNew}` : ""}${collectionRoutes ? ` + ${collectionRoutes} (arumbu-1978 route)` : ""}`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, P1_FROZEN.build.html + expectedNew + collectionRoutes, `build .html == 4046${expectedNew ? ` + ${expectedNew}` : ""}${collectionRoutes ? ` + ${collectionRoutes}` : ""}`);
+  eq(html, P1_FROZEN.build.html + expectedNew + collectionRoutes + W7K.build, `build .html == 4046${expectedNew ? ` + ${expectedNew}` : ""}${collectionRoutes ? ` + ${collectionRoutes}` : ""}`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }

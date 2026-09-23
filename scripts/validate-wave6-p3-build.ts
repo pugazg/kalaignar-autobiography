@@ -26,6 +26,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
+import { WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
+import { LIBRARY_WORKS } from "../data/library";
 
 const root = process.cwd();
 const readJSON = <T,>(p: string): T => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
@@ -122,10 +124,15 @@ if (fs.existsSync(manifestPath)) {
   // remainder stay exact.
   const w7bp3 = readJSON<{ works: { routes: string[] }[] }>("data/internal/wave7/b2-b4-p3-routes.json");
   const w7bRoutes = [...w7bp3.works.flatMap((w) => w.routes), "/collections/arumbu-1978"];
-  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...b7Routes, ...w7Routes, ...w7bRoutes]);
+  // Wave 7 B5a/B5b/B6/Kuraloviyam: 200 speech + 310 Kuraloviyam direct routes from its P3, plus the two
+  // முத்துக் குளியல் collection landings once it is published (P4) — derived in lib/wave7-b5-b6-k-contribution.ts.
+  const w7kPublished = LIBRARY_WORKS.some((w) => w.id === "kuraloviyam");
+  const w7kRoutes = WAVE7_B5_B6_K_ROUTES.filter((r) => w7kPublished || !r.startsWith("/collections/"));
+  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...b7Routes, ...w7Routes, ...w7bRoutes, ...w7kRoutes]);
   // Exact whole-build totals, DERIVED (baseline + Wave-6 cumulative + Batch-7 + Wave-7 B1 + Wave-7 B2-B4), never a constant.
-  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length}`);
-  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length}`);
+  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length + w7kRoutes.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length} + Wave-7 B5/B6/K ${w7kRoutes.length}`);
+  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length + w7kRoutes.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length} + Wave-7 B5/B6/K ${w7kRoutes.length}`);
+  for (const r of w7kRoutes) ok(routeKeys.includes(r), `build prerenders Wave-7 B5/B6/K route ${r}`);
   // Every Wave-6 route present; representative invalid routes absent.
   for (const r of manifest.cumulativeRoutes) ok(routeKeys.includes(r), `build prerenders Wave-6 route ${r}`);
   for (const bad of ["/cinema/ammaiyappan/scene-000", "/cinema/ammaiyappan/scene-064", "/cinema/ammaiyappan/scene-999", "/cinema/ammaiyappan/foo"]) {

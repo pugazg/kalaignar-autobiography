@@ -1,0 +1,66 @@
+{
+ "workId": "madurai-theendamai-ozhippu-maanadu",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/madurai-theendamai-ozhippu-maanadu",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "515–528",
+  "printedSpeechPages": "514–527",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_031_pages_500-515.pdf",
+    "scans": "500–515",
+    "sha256": "8b0fbe0a8e29acc75147de9b4d7faf880ba1d247e4a795b739f63449030c7059",
+    "bytes": 46094338
+   },
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_032_pages_516-533.pdf",
+    "scans": "516–533",
+    "sha256": "587fc1fc11f1b4036465c01f65d82decabde0a798b4d5a4d6344fc6e536142df",
+    "bytes": 48954454
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 52,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ]
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "condensed English rendering (not a full translation)"
+ },
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.31,
+  "tamilBodyWords": 1826,
+  "englishBodyWords": 564,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 2,
+  "tamilResolvedParagraphs": 48,
+  "englishParagraphs": 10,
+  "sourcePagesCovered": 14
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

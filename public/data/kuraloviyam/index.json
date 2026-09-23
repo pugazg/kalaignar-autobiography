@@ -1,0 +1,9040 @@
+{
+ "work": "kuraloviyam",
+ "titleTa": "குறளோவியம்",
+ "titleEn": "Kuraloviyam",
+ "authorTa": "கலைஞர் மு. கருணாநிதி",
+ "authorEn": "Kalaignar M. Karunanidhi",
+ "scanTotal": 666,
+ "entryCount": 300,
+ "units": [
+  {
+   "id": "front-01",
+   "kind": "front-matter",
+   "titleTa": "முகப்பு, தலைப்பு, பதிப்பு விவரம்",
+   "titleEn": "Cover, title and edition imprint",
+   "scanSpan": [
+    1,
+    3
+   ],
+   "printedSpan": [
+    "null",
+    "null"
+   ]
+  },
+  {
+   "id": "front-02",
+   "kind": "front-matter",
+   "titleTa": "முகப்புரை",
+   "titleEn": "Preface",
+   "scanSpan": [
+    4,
+    8
+   ],
+   "printedSpan": [
+    "iii",
+    "vii"
+   ]
+  },
+  {
+   "id": "front-03",
+   "kind": "front-matter",
+   "titleTa": "மதிப்புரை",
+   "titleEn": "Critical appreciation",
+   "scanSpan": [
+    9,
+    12
+   ],
+   "printedSpan": [
+    "viii",
+    "xi"
+   ]
+  },
+  {
+   "id": "front-04",
+   "kind": "front-matter",
+   "titleTa": "பிந்தைய பதிப்புகளின் முகப்புரைகள் (கையெழுத்துப் படிவங்கள்)",
+   "titleEn": "Later-edition prefaces (handwritten facsimiles)",
+   "scanSpan": [
+    13,
+    15
+   ],
+   "printedSpan": [
+    "xii",
+    "xiv"
+   ],
+   "sourceLimitedScans": [
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "id": "front-05",
+   "kind": "front-matter",
+   "titleTa": "முதற்பதிப்பு நிழற்படமும் பதிப்பகக் குறிப்பும்",
+   "titleEn": "First-edition photograph and publisher's note",
+   "scanSpan": [
+    16,
+    17
+   ],
+   "printedSpan": [
+    "xv",
+    "xvi"
+   ]
+  },
+  {
+   "id": "front-06",
+   "kind": "front-matter",
+   "titleTa": "பாராட்டுரைகளும் கலைஞர் ஏற்புரையும்",
+   "titleEn": "Appreciations and Kalaignar's response",
+   "scanSpan": [
+    18,
+    31
+   ],
+   "printedSpan": [
+    "1",
+    "14"
+   ],
+   "sourceLimitedScans": [
+    19
+   ]
+  },
+  {
+   "id": "front-07",
+   "kind": "front-matter",
+   "titleTa": "பகுதித் தலைப்பு",
+   "titleEn": "Section title leaf",
+   "scanSpan": [
+    32,
+    33
+   ],
+   "printedSpan": [
+    "null",
+    "16"
+   ]
+  },
+  {
+   "id": "entry-001",
+   "kind": "entry",
+   "number": 1,
+   "contentsKey": "வையத்துள் வாழ்வாங்கு",
+   "printedSpan": [
+    17,
+    19
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 5,
+     "titleTa": "இல்வாழ்க்கை",
+     "kurals": [
+      50
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    34,
+    36
+   ]
+  },
+  {
+   "id": "entry-002",
+   "kind": "entry",
+   "number": 2,
+   "contentsKey": "அ. காலை அரும்பி / ஆ. அழல்போலும் மாலைக்கு",
+   "printedSpan": [
+    20,
+    21
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 123,
+     "titleTa": "பொழுதுகண்டு இரங்கல்",
+     "kurals": [
+      1227,
+      1228
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    37,
+    38
+   ]
+  },
+  {
+   "id": "entry-003",
+   "kind": "entry",
+   "number": 3,
+   "contentsKey": "குழலினிது யாழினிது",
+   "printedSpan": [
+    22,
+    23
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 7,
+     "titleTa": "மக்கட்பேறு",
+     "kurals": [
+      66
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    39,
+    40
+   ]
+  },
+  {
+   "id": "entry-004",
+   "kind": "entry",
+   "number": 4,
+   "contentsKey": "அ. ஒருமைக்கண் தான்கற்ற / ஆ. ஓர்த்துள்ளம் உள்ளது",
+   "printedSpan": [
+    24,
+    25
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 40,
+     "titleTa": "கல்வி",
+     "kurals": [
+      398
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    },
+    {
+     "chapter": 36,
+     "titleTa": "மெய்யுணர்தல்",
+     "kurals": [
+      357
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    41,
+    42
+   ]
+  },
+  {
+   "id": "entry-005",
+   "kind": "entry",
+   "number": 5,
+   "contentsKey": "அ. இருநோக்கு இவளுண்கண் / ஆ. யான்நோக்குங்காலை",
+   "printedSpan": [
+    26,
+    27
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 110,
+     "titleTa": "குறிப்பறிதல்",
+     "kurals": [
+      1091,
+      1094
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    43,
+    44
+   ]
+  },
+  {
+   "id": "entry-006",
+   "kind": "entry",
+   "number": 6,
+   "contentsKey": "சொல்லுதல் யார்க்கும்",
+   "printedSpan": [
+    28,
+    30
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 67,
+     "titleTa": "வினைத்திட்பம்",
+     "kurals": [
+      664
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    45,
+    47
+   ]
+  },
+  {
+   "id": "entry-007",
+   "kind": "entry",
+   "number": 7,
+   "contentsKey": "உறாஅர்க்கு உறு நோய்",
+   "printedSpan": [
+    31,
+    32
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 120,
+     "titleTa": "தனிப்படர் மிகுதி",
+     "kurals": [
+      1200
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    48,
+    49
+   ]
+  },
+  {
+   "id": "entry-008",
+   "kind": "entry",
+   "number": 8,
+   "contentsKey": "அறத்தாறு இதுவென",
+   "printedSpan": [
+    33,
+    34
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 4,
+     "titleTa": "அறன் வலியுறுத்தல்",
+     "kurals": [
+      37
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    50,
+    51
+   ]
+  },
+  {
+   "id": "entry-009",
+   "kind": "entry",
+   "number": 9,
+   "contentsKey": "அற்றேமென்று அல்லல்",
+   "printedSpan": [
+    35,
+    36
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 63,
+     "titleTa": "இடுக்கண் அழியாமை",
+     "kurals": [
+      626
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    52,
+    53
+   ]
+  },
+  {
+   "id": "entry-010",
+   "kind": "entry",
+   "number": 10,
+   "contentsKey": "அ. மதியும் மடந்தை / ஆ. தாம்வீழ்வார் மென்றோள்",
+   "printedSpan": [
+    37,
+    38
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 112,
+     "titleTa": "நலம் புனைந்துரைத்தல்",
+     "kurals": [
+      1116
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    },
+    {
+     "chapter": 111,
+     "titleTa": "புணர்ச்சி மகிழ்தல்",
+     "kurals": [
+      1103
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    54,
+    55
+   ]
+  },
+  {
+   "id": "entry-011",
+   "kind": "entry",
+   "number": 11,
+   "contentsKey": "வாள்போல் பகைவரை",
+   "printedSpan": [
+    39,
+    40
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 89,
+     "titleTa": "உட்பகை",
+     "kurals": [
+      882
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    56,
+    57
+   ]
+  },
+  {
+   "id": "entry-012",
+   "kind": "entry",
+   "number": 12,
+   "contentsKey": "அ. கெடுப்பதூஉம் கெட்டார்க்கு / ஆ. தெய்வந் தொழாஅள்",
+   "printedSpan": [
+    41,
+    42
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 2,
+     "titleTa": "வான்சிறப்பு",
+     "kurals": [
+      15
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    },
+    {
+     "chapter": 6,
+     "titleTa": "வாழ்க்கைத் துணை நலம்",
+     "kurals": [
+      55
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    58,
+    59
+   ]
+  },
+  {
+   "id": "entry-013",
+   "kind": "entry",
+   "number": 13,
+   "contentsKey": "மறமானம் மாண்ட",
+   "printedSpan": [
+    43,
+    44
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 77,
+     "titleTa": "படைமாட்சி",
+     "kurals": [
+      766
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "படையியல்",
+     "iyalKey": "05-padaiyal"
+    }
+   ],
+   "scanSpan": [
+    60,
+    61
+   ]
+  },
+  {
+   "id": "entry-014",
+   "kind": "entry",
+   "number": 14,
+   "contentsKey": "அ. தொழிலொடு தோள்நெகிழ / ஆ. நனவினால் நல்கா / இ. கயலுண்கண் யானிரப்ப",
+   "printedSpan": [
+    45,
+    46
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 124,
+     "titleTa": "உறுப்பு நலனழிதல்",
+     "kurals": [
+      1236
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    },
+    {
+     "chapter": 122,
+     "titleTa": "கனவு நிலையுரைத்தல்",
+     "kurals": [
+      1213,
+      1212
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    62,
+    63
+   ]
+  },
+  {
+   "id": "entry-015",
+   "kind": "entry",
+   "number": 15,
+   "contentsKey": "நாடொறும் நாடி",
+   "printedSpan": [
+    47,
+    48
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 56,
+     "titleTa": "கொடுங்கோன்மை",
+     "kurals": [
+      553
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    64,
+    65
+   ]
+  },
+  {
+   "id": "entry-016",
+   "kind": "entry",
+   "number": 16,
+   "contentsKey": "பயனில்சொல் பாராட்டு",
+   "printedSpan": [
+    49,
+    50
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 20,
+     "titleTa": "பயனில சொல்லாமை",
+     "kurals": [
+      196
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    66,
+    67
+   ]
+  },
+  {
+   "id": "entry-017",
+   "kind": "entry",
+   "number": 17,
+   "contentsKey": "பழுதெண்ணும் மந்திரியின்",
+   "printedSpan": [
+    51,
+    52
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 64,
+     "titleTa": "அமைச்சு",
+     "kurals": [
+      639
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    68,
+    69
+   ]
+  },
+  {
+   "id": "entry-018",
+   "kind": "entry",
+   "number": 18,
+   "contentsKey": "அ. காணிற் குவளை / ஆ. அனிச்சமும் அன்னத்தின் / இ. கருமணியிற் பாவாய்நீ",
+   "printedSpan": [
+    53,
+    54
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 112,
+     "titleTa": "நலம்புனைந்துரைத்தல்",
+     "kurals": [
+      1114,
+      1120
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    },
+    {
+     "chapter": 113,
+     "titleTa": "காதற் சிறப்புரைத்தல்",
+     "kurals": [
+      1123
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    70,
+    71
+   ]
+  },
+  {
+   "id": "entry-019",
+   "kind": "entry",
+   "number": 19,
+   "contentsKey": "அவையறியார் சொல்லல்மேற்",
+   "printedSpan": [
+    55,
+    56
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 72,
+     "titleTa": "அவை அறிதல்",
+     "kurals": [
+      713
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    72,
+    73
+   ]
+  },
+  {
+   "id": "entry-020",
+   "kind": "entry",
+   "number": 20,
+   "contentsKey": "அற்றார் அழிபசி",
+   "printedSpan": [
+    57,
+    58
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 23,
+     "titleTa": "ஈகை",
+     "kurals": [
+      226
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    74,
+    75
+   ]
+  },
+  {
+   "id": "entry-021",
+   "kind": "entry",
+   "number": 21,
+   "contentsKey": "அல்லற்பட்டு ஆற்றாது",
+   "printedSpan": [
+    59,
+    60
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 56,
+     "titleTa": "கொடுங்கோன்மை",
+     "kurals": [
+      555
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    76,
+    77
+   ]
+  },
+  {
+   "id": "entry-022",
+   "kind": "entry",
+   "number": 22,
+   "contentsKey": "ஒஒ இனிதே",
+   "printedSpan": [
+    61,
+    61
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 118,
+     "titleTa": "கண்விதுப்பழிதல்",
+     "kurals": [
+      1176
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    78,
+    78
+   ]
+  },
+  {
+   "id": "entry-023",
+   "kind": "entry",
+   "number": 23,
+   "contentsKey": "இழத்தொறூஉம் காதலிக்கும்",
+   "printedSpan": [
+    62,
+    63
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 94,
+     "titleTa": "சூது",
+     "kurals": [
+      940
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    79,
+    80
+   ]
+  },
+  {
+   "id": "entry-024",
+   "kind": "entry",
+   "number": 24,
+   "contentsKey": "அவர்தந்தார் என்னும்",
+   "printedSpan": [
+    64,
+    65
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 119,
+     "titleTa": "பசப்புறுபருவரல்",
+     "kurals": [
+      1182
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    81,
+    82
+   ]
+  },
+  {
+   "id": "entry-025",
+   "kind": "entry",
+   "number": 25,
+   "contentsKey": "வேலன்று வென்றி",
+   "printedSpan": [
+    66,
+    67
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 55,
+     "titleTa": "செங்கோன்மை",
+     "kurals": [
+      546
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    83,
+    84
+   ]
+  },
+  {
+   "id": "entry-026",
+   "kind": "entry",
+   "number": 26,
+   "contentsKey": "நனவென ஒன்றில்லை",
+   "printedSpan": [
+    68,
+    69
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 122,
+     "titleTa": "கனவுநிலையுரைத்தல்",
+     "kurals": [
+      1216
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    85,
+    86
+   ]
+  },
+  {
+   "id": "entry-027",
+   "kind": "entry",
+   "number": 27,
+   "contentsKey": "இறந்தமைந்த சார்புடைய",
+   "printedSpan": [
+    70,
+    71
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 90,
+     "titleTa": "பெரியாரைப் பிழையாமை",
+     "kurals": [
+      900
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    87,
+    88
+   ]
+  },
+  {
+   "id": "entry-028",
+   "kind": "entry",
+   "number": 28,
+   "contentsKey": "அ. காமமும் நாணும் / ஆ. கரத்தலும் ஆற்றேன் இந் / இ. புல்லிக் கிடந்தேன்",
+   "printedSpan": [
+    72,
+    73
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 117,
+     "titleTa": "படர்மெலிந்திரங்கல்",
+     "kurals": [
+      1163,
+      1162
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    },
+    {
+     "chapter": 119,
+     "titleTa": "பசப்புறுபருவரல்",
+     "kurals": [
+      1187
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    89,
+    90
+   ]
+  },
+  {
+   "id": "entry-029",
+   "kind": "entry",
+   "number": 29,
+   "contentsKey": "கனை கொடிது யாழ்கோடு",
+   "printedSpan": [
+    74,
+    75
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 28,
+     "titleTa": "கூடாவொழுக்கம்",
+     "kurals": [
+      279
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    91,
+    92
+   ]
+  },
+  {
+   "id": "entry-030",
+   "kind": "entry",
+   "number": 30,
+   "contentsKey": "அ. மறைப்பெறல் ஊரார்க்கு / ஆ. வாராக்கால் துஞ்சா",
+   "printedSpan": [
+    76,
+    77
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 118,
+     "titleTa": "கண் விதுப்பழிதல்",
+     "kurals": [
+      1180,
+      1179
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    93,
+    94
+   ]
+  },
+  {
+   "id": "entry-031",
+   "kind": "entry",
+   "number": 31,
+   "contentsKey": "கண்ணுடையர் என்பவர்",
+   "printedSpan": [
+    78,
+    79
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 40,
+     "titleTa": "கல்வி",
+     "kurals": [
+      393
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    95,
+    96
+   ]
+  },
+  {
+   "id": "entry-032",
+   "kind": "entry",
+   "number": 32,
+   "contentsKey": "அ. சிறுமை நமக்கொழிய / ஆ. முயக்கிடைத் தண்வளி",
+   "printedSpan": [
+    80,
+    81
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 124,
+     "titleTa": "உறுப்புநலனழிதல்",
+     "kurals": [
+      1231,
+      1239
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    97,
+    98
+   ]
+  },
+  {
+   "id": "entry-033",
+   "kind": "entry",
+   "number": 33,
+   "contentsKey": "நெடுநீர் மறவி",
+   "printedSpan": [
+    82,
+    84
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 61,
+     "titleTa": "மடி இன்மை",
+     "kurals": [
+      605
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    99,
+    101
+   ]
+  },
+  {
+   "id": "entry-034",
+   "kind": "entry",
+   "number": 34,
+   "contentsKey": "புலப்பல் எனச் சென்றேன்",
+   "printedSpan": [
+    85,
+    86
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 126,
+     "titleTa": "நிறையழிதல்",
+     "kurals": [
+      1259
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    102,
+    103
+   ]
+  },
+  {
+   "id": "entry-035",
+   "kind": "entry",
+   "number": 35,
+   "contentsKey": "அமரகத்து ஆற்றறுக்கும்",
+   "printedSpan": [
+    87,
+    88
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 82,
+     "titleTa": "தீ நட்பு",
+     "kurals": [
+      814
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    104,
+    105
+   ]
+  },
+  {
+   "id": "entry-036",
+   "kind": "entry",
+   "number": 36,
+   "contentsKey": "செல்விடத்துக் காப்பான்",
+   "printedSpan": [
+    89,
+    90
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 31,
+     "titleTa": "வெகுளாமை",
+     "kurals": [
+      301
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    106,
+    107
+   ]
+  },
+  {
+   "id": "entry-037",
+   "kind": "entry",
+   "number": 37,
+   "contentsKey": "வாளாற்றுப் புற்கென்ற",
+   "printedSpan": [
+    91,
+    91
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 127,
+     "titleTa": "அவர்வயின் விதும்பல்",
+     "kurals": [
+      1261
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    108,
+    108
+   ]
+  },
+  {
+   "id": "entry-038",
+   "kind": "entry",
+   "number": 38,
+   "contentsKey": "அ. விரைந்து தொழில்கேட்கும் / ஆ. இணரூழ்த்தும் நாறா",
+   "printedSpan": [
+    92,
+    94
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 65,
+     "titleTa": "சொல்வன்மை",
+     "kurals": [
+      648,
+      650
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    109,
+    111
+   ]
+  },
+  {
+   "id": "entry-039",
+   "kind": "entry",
+   "number": 39,
+   "contentsKey": "ஊடுதல் காமத்திற்கு",
+   "printedSpan": [
+    95,
+    96
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 133,
+     "titleTa": "ஊடலுவகை",
+     "kurals": [
+      1330
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    112,
+    113
+   ]
+  },
+  {
+   "id": "entry-040",
+   "kind": "entry",
+   "number": 40,
+   "contentsKey": "நுண்மாண் நுழைபுலம்",
+   "printedSpan": [
+    97,
+    98
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 41,
+     "titleTa": "கல்லாமை",
+     "kurals": [
+      407
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    114,
+    115
+   ]
+  },
+  {
+   "id": "entry-041",
+   "kind": "entry",
+   "number": 41,
+   "contentsKey": "உள்ளக் களித்தலும்",
+   "printedSpan": [
+    99,
+    99
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 129,
+     "titleTa": "புணர்ச்சி விதும்பல்",
+     "kurals": [
+      1281
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    116,
+    116
+   ]
+  },
+  {
+   "id": "entry-042",
+   "kind": "entry",
+   "number": 42,
+   "contentsKey": "அ. பொய்மையும் வாய்மை / ஆ. தன்னெஞ் சறிவது",
+   "printedSpan": [
+    100,
+    101
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 30,
+     "titleTa": "வாய்மை",
+     "kurals": [
+      292,
+      293
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    117,
+    118
+   ]
+  },
+  {
+   "id": "entry-043",
+   "kind": "entry",
+   "number": 43,
+   "contentsKey": "எழுதுங்கால் கோல்காணா",
+   "printedSpan": [
+    102,
+    103
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 129,
+     "titleTa": "புணர்ச்சி விதும்பல்",
+     "kurals": [
+      1285
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    119,
+    120
+   ]
+  },
+  {
+   "id": "entry-044",
+   "kind": "entry",
+   "number": 44,
+   "contentsKey": "தேரான் தெளிவும்",
+   "printedSpan": [
+    104,
+    106
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 51,
+     "titleTa": "தெரிந்து தெளிதல்",
+     "kurals": [
+      510
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    121,
+    123
+   ]
+  },
+  {
+   "id": "entry-045",
+   "kind": "entry",
+   "number": 45,
+   "contentsKey": "அவர்நெஞ்சு அவர்க்காதல்",
+   "printedSpan": [
+    107,
+    108
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 130,
+     "titleTa": "நெஞ்சொடு புலத்தல்",
+     "kurals": [
+      1291
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    124,
+    125
+   ]
+  },
+  {
+   "id": "entry-046",
+   "kind": "entry",
+   "number": 46,
+   "contentsKey": "அ. என்பி லதனை / ஆ. தொழுத கையுள்ளும்",
+   "printedSpan": [
+    109,
+    110
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "PARTIAL-SOURCE-METADATA",
+   "assignments": [
+    {
+     "chapter": 83,
+     "titleTa": "கூடா நட்பு",
+     "kurals": [
+      828
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    126,
+    127
+   ]
+  },
+  {
+   "id": "entry-047",
+   "kind": "entry",
+   "number": 47,
+   "contentsKey": "அ. வழுத்தினாள் தும்மினேன் / ஆ. ஊடி யிருந்தேமா",
+   "printedSpan": [
+    111,
+    112
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 132,
+     "titleTa": "புலவி நுணுக்கம்",
+     "kurals": [
+      1317,
+      1312
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    128,
+    129
+   ]
+  },
+  {
+   "id": "entry-048",
+   "kind": "entry",
+   "number": 48,
+   "contentsKey": "இனிய உளவாக",
+   "printedSpan": [
+    113,
+    114
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 10,
+     "titleTa": "இனியவை கூறல்",
+     "kurals": [
+      100
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    130,
+    131
+   ]
+  },
+  {
+   "id": "entry-049",
+   "kind": "entry",
+   "number": 49,
+   "contentsKey": "அ. கோட்டுப்பூச் சூடினும் / ஆ. நினைத்திருந்து நோக்கினும்",
+   "printedSpan": [
+    115,
+    116
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 132,
+     "titleTa": "புலவி நுணுக்கம்",
+     "kurals": [
+      1313,
+      1320
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    132,
+    133
+   ]
+  },
+  {
+   "id": "entry-050",
+   "kind": "entry",
+   "number": 50,
+   "contentsKey": "செவியிற் சுவையுணரா",
+   "printedSpan": [
+    117,
+    118
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 42,
+     "titleTa": "கேள்வி",
+     "kurals": [
+      420
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    134,
+    135
+   ]
+  },
+  {
+   "id": "entry-051",
+   "kind": "entry",
+   "number": 51,
+   "contentsKey": "காதலர் இல்வழி",
+   "printedSpan": [
+    119,
+    120
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 123,
+     "titleTa": "பொழுதுகண்டு இரங்கல்",
+     "kurals": [
+      1224
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    136,
+    137
+   ]
+  },
+  {
+   "id": "entry-052",
+   "kind": "entry",
+   "number": 52,
+   "contentsKey": "பகல்வெல்லும் கூகையை",
+   "printedSpan": [
+    121,
+    122
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 49,
+     "titleTa": "காலம் அறிதல்",
+     "kurals": [
+      481
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    138,
+    139
+   ]
+  },
+  {
+   "id": "entry-053",
+   "kind": "entry",
+   "number": 53,
+   "contentsKey": "கண்ணும் கொளச்சேறி",
+   "printedSpan": [
+    123,
+    124
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 125,
+     "titleTa": "நெஞ்சொடு கிளத்தல்",
+     "kurals": [
+      1244
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    140,
+    141
+   ]
+  },
+  {
+   "id": "entry-054",
+   "kind": "entry",
+   "number": 54,
+   "contentsKey": "புறங்குன்றி கண்டனையார்",
+   "printedSpan": [
+    125,
+    126
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 28,
+     "titleTa": "கூடா ஒழுக்கம்",
+     "kurals": [
+      277
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    142,
+    143
+   ]
+  },
+  {
+   "id": "entry-055",
+   "kind": "entry",
+   "number": 55,
+   "contentsKey": "கண்டு மன்னும்",
+   "printedSpan": [
+    127,
+    128
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 115,
+     "titleTa": "அலர் அறிவுறுத்தல்",
+     "kurals": [
+      1146
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    144,
+    145
+   ]
+  },
+  {
+   "id": "entry-056",
+   "kind": "entry",
+   "number": 56,
+   "contentsKey": "நன்றாற்ற லுள்ளும்",
+   "printedSpan": [
+    129,
+    130
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 47,
+     "titleTa": "தெரிந்து செயல்வகை",
+     "kurals": [
+      469
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    146,
+    147
+   ]
+  },
+  {
+   "id": "entry-057",
+   "kind": "entry",
+   "number": 57,
+   "contentsKey": "விடாஅது சென்றாரை",
+   "printedSpan": [
+    131,
+    132
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 121,
+     "titleTa": "நினைந்தவர் புலம்பல்",
+     "kurals": [
+      1210
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    148,
+    149
+   ]
+  },
+  {
+   "id": "entry-058",
+   "kind": "entry",
+   "number": 58,
+   "contentsKey": "அ. அறன்கடை நின்றாருள் / ஆ. எளிதென இல்லிறப்பான்",
+   "printedSpan": [
+    133,
+    135
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 15,
+     "titleTa": "பிறனில் விழையாமை",
+     "kurals": [
+      142,
+      145
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    150,
+    152
+   ]
+  },
+  {
+   "id": "entry-059",
+   "kind": "entry",
+   "number": 59,
+   "contentsKey": "கலந்துணர்த்தும் காதலர்",
+   "printedSpan": [
+    136,
+    136
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 125,
+     "titleTa": "நெஞ்சொடு கிளத்தல்",
+     "kurals": [
+      1246
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    153,
+    153
+   ]
+  },
+  {
+   "id": "entry-060",
+   "kind": "entry",
+   "number": 60,
+   "contentsKey": "உணலினும் உண்டது",
+   "printedSpan": [
+    137,
+    138
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 133,
+     "titleTa": "ஊடலுவகை",
+     "kurals": [
+      1326
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    154,
+    155
+   ]
+  },
+  {
+   "id": "entry-061",
+   "kind": "entry",
+   "number": 61,
+   "contentsKey": "எப்பொருள் யார்யார்வாய்",
+   "printedSpan": [
+    139,
+    140
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 43,
+     "titleTa": "அறிவுடைமை",
+     "kurals": [
+      423
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    156,
+    157
+   ]
+  },
+  {
+   "id": "entry-062",
+   "kind": "entry",
+   "number": 62,
+   "contentsKey": "செல்லாமை உண்டேல்",
+   "printedSpan": [
+    141,
+    142
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 116,
+     "titleTa": "பிரிவாற்றாமை",
+     "kurals": [
+      1151
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    158,
+    159
+   ]
+  },
+  {
+   "id": "entry-063",
+   "kind": "entry",
+   "number": 63,
+   "contentsKey": "காலாழ் களரின்",
+   "printedSpan": [
+    143,
+    144
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 50,
+     "titleTa": "இடனறிதல்",
+     "kurals": [
+      500
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    160,
+    161
+   ]
+  },
+  {
+   "id": "entry-064",
+   "kind": "entry",
+   "number": 64,
+   "contentsKey": "துன்னியார் குற்றமும்",
+   "printedSpan": [
+    145,
+    146
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 19,
+     "titleTa": "புறங்கூறாமை",
+     "kurals": [
+      188
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    162,
+    163
+   ]
+  },
+  {
+   "id": "entry-065",
+   "kind": "entry",
+   "number": 65,
+   "contentsKey": "ஒருதலையான் இன்னாது",
+   "printedSpan": [
+    147,
+    148
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 120,
+     "titleTa": "தனிப்படர்மிகுதி",
+     "kurals": [
+      1196
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    164,
+    165
+   ]
+  },
+  {
+   "id": "entry-066",
+   "kind": "entry",
+   "number": 66,
+   "contentsKey": "தாளாண்மை இல்லாதான்",
+   "printedSpan": [
+    149,
+    150
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 62,
+     "titleTa": "ஆள்வினையுடைமை",
+     "kurals": [
+      614
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    166,
+    167
+   ]
+  },
+  {
+   "id": "entry-067",
+   "kind": "entry",
+   "number": 67,
+   "contentsKey": "கெட்டார்க்கு நட்டாரில்",
+   "printedSpan": [
+    151,
+    152
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 130,
+     "titleTa": "நெஞ்சொடு புலத்தல்",
+     "kurals": [
+      1293
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    168,
+    169
+   ]
+  },
+  {
+   "id": "entry-068",
+   "kind": "entry",
+   "number": 68,
+   "contentsKey": "பெயக்கண்டும் நஞ்சுண்டு",
+   "printedSpan": [
+    153,
+    154
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 58,
+     "titleTa": "கண்ணோட்டம்",
+     "kurals": [
+      580
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    170,
+    171
+   ]
+  },
+  {
+   "id": "entry-069",
+   "kind": "entry",
+   "number": 69,
+   "contentsKey": "பெண்ணினால் பெண்மை",
+   "printedSpan": [
+    155,
+    156
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 128,
+     "titleTa": "குறிப்பறிவுறுத்தல்",
+     "kurals": [
+      1280
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    172,
+    173
+   ]
+  },
+  {
+   "id": "entry-070",
+   "kind": "entry",
+   "number": 70,
+   "contentsKey": "சிதைவிடத்து ஒல்கார்",
+   "printedSpan": [
+    157,
+    158
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 60,
+     "titleTa": "ஊக்கம் உடைமை",
+     "kurals": [
+      597
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    174,
+    175
+   ]
+  },
+  {
+   "id": "entry-071",
+   "kind": "entry",
+   "number": 71,
+   "contentsKey": "அ. கொடியார் கொடுமையின் / ஆ. மன்னுயிர் எல்லாம்",
+   "printedSpan": [
+    159,
+    161
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 117,
+     "titleTa": "படர்மெலிந்திரங்கல்",
+     "kurals": [
+      1168,
+      1169
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    176,
+    178
+   ]
+  },
+  {
+   "id": "entry-072",
+   "kind": "entry",
+   "number": 72,
+   "contentsKey": "அ. இடுக்கண் வருங்கால் / ஆ. ஒன்றொன்றித் தந்த",
+   "printedSpan": [
+    162,
+    163
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 63,
+     "titleTa": "இடுக்கண் அழியாமை",
+     "kurals": [
+      621
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    },
+    {
+     "chapter": 59,
+     "titleTa": "ஒற்றாடல்",
+     "kurals": [
+      588
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    179,
+    180
+   ]
+  },
+  {
+   "id": "entry-073",
+   "kind": "entry",
+   "number": 73,
+   "contentsKey": "உள்ளினேன் என்றேன்",
+   "printedSpan": [
+    164,
+    166
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 132,
+     "titleTa": "புலவி நுணுக்கம்",
+     "kurals": [
+      1316
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    181,
+    183
+   ]
+  },
+  {
+   "id": "entry-074",
+   "kind": "entry",
+   "number": 74,
+   "contentsKey": "அ. ஊழிற் பெருவலி / ஆ. ஊழையும் உப்பக்கம்",
+   "printedSpan": [
+    167,
+    169
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 38,
+     "titleTa": "ஊழ்",
+     "kurals": [
+      380
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "ஊழியல்",
+     "iyalKey": "04-oozhiyal"
+    },
+    {
+     "chapter": 62,
+     "titleTa": "ஆள்வினையுடைமை",
+     "kurals": [
+      620
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    184,
+    186
+   ]
+  },
+  {
+   "id": "entry-075",
+   "kind": "entry",
+   "number": 75,
+   "contentsKey": "புன்கண்ணை வாழி",
+   "printedSpan": [
+    170,
+    171
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 123,
+     "titleTa": "பொழுதுகண்டிரங்கல்",
+     "kurals": [
+      1222
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    187,
+    188
+   ]
+  },
+  {
+   "id": "entry-076",
+   "kind": "entry",
+   "number": 76,
+   "contentsKey": "வெள்ளத் தனைய",
+   "printedSpan": [
+    172,
+    173
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 63,
+     "titleTa": "இடுக்கண் அழியாமை",
+     "kurals": [
+      622
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    189,
+    190
+   ]
+  },
+  {
+   "id": "entry-077",
+   "kind": "entry",
+   "number": 77,
+   "contentsKey": "அ. இல்லை தவறவர்க்கு / ஆ. புலத்தலின் புத்தேள்நாடு",
+   "printedSpan": [
+    174,
+    175
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 133,
+     "titleTa": "ஊடலுவகை",
+     "kurals": [
+      1321,
+      1323
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    191,
+    192
+   ]
+  },
+  {
+   "id": "entry-078",
+   "kind": "entry",
+   "number": 78,
+   "contentsKey": "சாதலின் இன்னாது",
+   "printedSpan": [
+    176,
+    177
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 23,
+     "titleTa": "ஈகை",
+     "kurals": [
+      230
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    193,
+    194
+   ]
+  },
+  {
+   "id": "entry-079",
+   "kind": "entry",
+   "number": 79,
+   "contentsKey": "அ. ஒண்ணுதற் கோழ / ஆ. கடாஅக் களிற்றின்மேல் / இ. நோக்கினாள் நோக்கெதிர்",
+   "printedSpan": [
+    178,
+    179
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 109,
+     "titleTa": "தகையணங்குறுத்தல்",
+     "kurals": [
+      1088,
+      1087,
+      1082
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    195,
+    196
+   ]
+  },
+  {
+   "id": "entry-080",
+   "kind": "entry",
+   "number": 80,
+   "contentsKey": "இன்பத்துள் இன்பம்",
+   "printedSpan": [
+    180,
+    182
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 63,
+     "titleTa": "இடுக்கண் அழியாமை",
+     "kurals": [
+      629
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    197,
+    199
+   ]
+  },
+  {
+   "id": "entry-081",
+   "kind": "entry",
+   "number": 81,
+   "contentsKey": "வீழும் இருவர்க்கு",
+   "printedSpan": [
+    183,
+    184
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 111,
+     "titleTa": "புணர்ச்சி மகிழ்தல்",
+     "kurals": [
+      1108
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    200,
+    201
+   ]
+  },
+  {
+   "id": "entry-082",
+   "kind": "entry",
+   "number": 82,
+   "contentsKey": "கைவேல் களிற்றொடு",
+   "printedSpan": [
+    185,
+    187
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 78,
+     "titleTa": "படைச்செருக்கு",
+     "kurals": [
+      774
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "படையியல்",
+     "iyalKey": "05-padaiyal"
+    }
+   ],
+   "scanSpan": [
+    202,
+    204
+   ]
+  },
+  {
+   "id": "entry-083",
+   "kind": "entry",
+   "number": 83,
+   "contentsKey": "நெய்யால் எரிநுதுப்போம்",
+   "printedSpan": [
+    188,
+    189
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 115,
+     "titleTa": "அலர் அறிவுறுத்தல்",
+     "kurals": [
+      1148
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    205,
+    206
+   ]
+  },
+  {
+   "id": "entry-084",
+   "kind": "entry",
+   "number": 84,
+   "contentsKey": "அ. விழுப்புண் படாத / ஆ. விழித்தகண் வேல்கொண்டு",
+   "printedSpan": [
+    190,
+    191
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 78,
+     "titleTa": "படைச்செருக்கு",
+     "kurals": [
+      776,
+      775
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "படையியல்",
+     "iyalKey": "05-padaiyal"
+    }
+   ],
+   "scanSpan": [
+    207,
+    208
+   ]
+  },
+  {
+   "id": "entry-085",
+   "kind": "entry",
+   "number": 85,
+   "contentsKey": "உளம்போன்று உள்வழி",
+   "printedSpan": [
+    192,
+    193
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 117,
+     "titleTa": "படர்மெலிந்திரங்கல்",
+     "kurals": [
+      1170
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    209,
+    210
+   ]
+  },
+  {
+   "id": "entry-086",
+   "kind": "entry",
+   "number": 86,
+   "contentsKey": "அறிவினுள் எல்லாம்",
+   "printedSpan": [
+    194,
+    195
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 21,
+     "titleTa": "தீவினையச்சம்",
+     "kurals": [
+      203
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    211,
+    212
+   ]
+  },
+  {
+   "id": "entry-087",
+   "kind": "entry",
+   "number": 87,
+   "contentsKey": "நாணும் மறந்தேன்",
+   "printedSpan": [
+    196,
+    197
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 130,
+     "titleTa": "நெஞ்சொடு புலத்தல்",
+     "kurals": [
+      1297
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    213,
+    214
+   ]
+  },
+  {
+   "id": "entry-088",
+   "kind": "entry",
+   "number": 88,
+   "contentsKey": "புறந்தார்கண் நீர்மல்க",
+   "printedSpan": [
+    198,
+    199
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 78,
+     "titleTa": "படைச் செருக்கு",
+     "kurals": [
+      780
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "படையியல்",
+     "iyalKey": "05-padaiyal"
+    }
+   ],
+   "scanSpan": [
+    215,
+    216
+   ]
+  },
+  {
+   "id": "entry-089",
+   "kind": "entry",
+   "number": 89,
+   "contentsKey": "உப்பமைந்தற்றால்",
+   "printedSpan": [
+    200,
+    201
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 131,
+     "titleTa": "புலவி",
+     "kurals": [
+      1302
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    217,
+    218
+   ]
+  },
+  {
+   "id": "entry-090",
+   "kind": "entry",
+   "number": 90,
+   "contentsKey": "கெடுங்காலைக் கைவிடுவார்",
+   "printedSpan": [
+    202,
+    203
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 80,
+     "titleTa": "நட்பாராய்தல்",
+     "kurals": [
+      799
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    219,
+    220
+   ]
+  },
+  {
+   "id": "entry-091",
+   "kind": "entry",
+   "number": 91,
+   "contentsKey": "செறிதொடி செய்திறந்த",
+   "printedSpan": [
+    204,
+    205
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 128,
+     "titleTa": "குறிப்பறிவுறுத்தல்",
+     "kurals": [
+      1275
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    221,
+    222
+   ]
+  },
+  {
+   "id": "entry-092",
+   "kind": "entry",
+   "number": 92,
+   "contentsKey": "அ. மையல் ஒருவன் / ஆ. பெரிதினிது பேதையார்",
+   "printedSpan": [
+    206,
+    207
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 84,
+     "titleTa": "பேதைமை",
+     "kurals": [
+      838,
+      839
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    223,
+    224
+   ]
+  },
+  {
+   "id": "entry-093",
+   "kind": "entry",
+   "number": 93,
+   "contentsKey": "அ. நினைப்பவர் போன்று / ஆ. தும்முச் செறுப்ப / இ. மறைப்பேன்மன் யான்",
+   "printedSpan": [
+    208,
+    209
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 121,
+     "titleTa": "நினைந்தவர் புலம்பல்",
+     "kurals": [
+      1203
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    },
+    {
+     "chapter": 132,
+     "titleTa": "புலவி நுணுக்கம்",
+     "kurals": [
+      1318
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    },
+    {
+     "chapter": 126,
+     "titleTa": "நிறையழிதல்",
+     "kurals": [
+      1253
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    225,
+    226
+   ]
+  },
+  {
+   "id": "entry-094",
+   "kind": "entry",
+   "number": 94,
+   "contentsKey": "அ. அகழ்வாரைத் தாங்கும் / ஆ. அறன்நோக்கி ஆற்றும்கொல்",
+   "printedSpan": [
+    210,
+    211
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 16,
+     "titleTa": "பொறையுடைமை",
+     "kurals": [
+      151
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    },
+    {
+     "chapter": 19,
+     "titleTa": "புறங்கூறாமை",
+     "kurals": [
+      189
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    227,
+    228
+   ]
+  },
+  {
+   "id": "entry-095",
+   "kind": "entry",
+   "number": 95,
+   "contentsKey": "நினைத்தொன்று சொல்லாயோ",
+   "printedSpan": [
+    212,
+    213
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 125,
+     "titleTa": "நெஞ்சொடு கிளத்தல்",
+     "kurals": [
+      1241
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    229,
+    230
+   ]
+  },
+  {
+   "id": "entry-096",
+   "kind": "entry",
+   "number": 96,
+   "contentsKey": "பொருட்பெண்டிர் பொய்ம்மை",
+   "printedSpan": [
+    214,
+    215
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 92,
+     "titleTa": "வரைவின் மகளிர்",
+     "kurals": [
+      913
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    231,
+    232
+   ]
+  },
+  {
+   "id": "entry-097",
+   "kind": "entry",
+   "number": 97,
+   "contentsKey": "கண்ணாம் கழும்வது",
+   "printedSpan": [
+    216,
+    217
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 118,
+     "titleTa": "கண்விதுப்பழிதல்",
+     "kurals": [
+      1171
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    233,
+    234
+   ]
+  },
+  {
+   "id": "entry-098",
+   "kind": "entry",
+   "number": 98,
+   "contentsKey": "மோப்பக் குழையும்",
+   "printedSpan": [
+    218,
+    219
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 9,
+     "titleTa": "விருந்தோம்பல்",
+     "kurals": [
+      90
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    235,
+    236
+   ]
+  },
+  {
+   "id": "entry-099",
+   "kind": "entry",
+   "number": 99,
+   "contentsKey": "அ. அறுவாய் நிறைந்த / ஆ. மாதர் முகம்போல்",
+   "printedSpan": [
+    220,
+    221
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 112,
+     "titleTa": "நலம்புனைந்துரைத்தல்",
+     "kurals": [
+      1117,
+      1118
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    237,
+    238
+   ]
+  },
+  {
+   "id": "entry-100",
+   "kind": "entry",
+   "number": 100,
+   "contentsKey": "களித்தானைக் காரணம்",
+   "printedSpan": [
+    222,
+    223
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 93,
+     "titleTa": "கள்ளுண்ணாமை",
+     "kurals": [
+      929
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    239,
+    240
+   ]
+  },
+  {
+   "id": "entry-101",
+   "kind": "entry",
+   "number": 101,
+   "contentsKey": "விளக்கற்றம் பார்க்கும்",
+   "printedSpan": [
+    224,
+    225
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 119,
+     "titleTa": "பசப்புறுபருவரல்",
+     "kurals": [
+      1186
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    241,
+    242
+   ]
+  },
+  {
+   "id": "entry-102",
+   "kind": "entry",
+   "number": 102,
+   "contentsKey": "அ. சுழன்றும் ஏர்ப்பின்னது / ஆ. அமிழ்தினும் ஆற்ற",
+   "printedSpan": [
+    226,
+    227
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 104,
+     "titleTa": "உழவு",
+     "kurals": [
+      1031
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    },
+    {
+     "chapter": 7,
+     "titleTa": "மக்கட்பேறு",
+     "kurals": [
+      64
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    243,
+    244
+   ]
+  },
+  {
+   "id": "entry-103",
+   "kind": "entry",
+   "number": 103,
+   "contentsKey": "அ. துனியும் புலவியும் / ஆ. நீரும் நிழலது",
+   "printedSpan": [
+    228,
+    230
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 131,
+     "titleTa": "புலவி",
+     "kurals": [
+      1306,
+      1309
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    245,
+    247
+   ]
+  },
+  {
+   "id": "entry-104",
+   "kind": "entry",
+   "number": 104,
+   "contentsKey": "அ. உழுதுண்டு வாழ்வாரே / ஆ. வலியில் நிலைமையான்",
+   "printedSpan": [
+    231,
+    232
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "PARTIAL-SOURCE-METADATA",
+   "assignments": [
+    {
+     "chapter": 28,
+     "titleTa": "கூடாவொழுக்கம்",
+     "kurals": [
+      273
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    248,
+    249
+   ]
+  },
+  {
+   "id": "entry-105",
+   "kind": "entry",
+   "number": 105,
+   "contentsKey": "அ. தினைத்துணையும் ஊடாமை / ஆ. ஊடற்கண் சென்றேன்மன் / இ. கண்ணின் துனித்தே",
+   "printedSpan": [
+    233,
+    234
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 129,
+     "titleTa": "புணர்ச்சி விதும்பல்",
+     "kurals": [
+      1282,
+      1284,
+      1290
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    250,
+    251
+   ]
+  },
+  {
+   "id": "entry-106",
+   "kind": "entry",
+   "number": 106,
+   "contentsKey": "செல்லான் கிழவன்",
+   "printedSpan": [
+    235,
+    236
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 104,
+     "titleTa": "உழவு",
+     "kurals": [
+      1039
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    252,
+    253
+   ]
+  },
+  {
+   "id": "entry-107",
+   "kind": "entry",
+   "number": 107,
+   "contentsKey": "காமக் கணிச்சி",
+   "printedSpan": [
+    237,
+    238
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 126,
+     "titleTa": "நிறையழிதல்",
+     "kurals": [
+      1251
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    254,
+    255
+   ]
+  },
+  {
+   "id": "entry-108",
+   "kind": "entry",
+   "number": 108,
+   "contentsKey": "நெருப்பினுள் துஞ்சலும்",
+   "printedSpan": [
+    239,
+    240
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 105,
+     "titleTa": "நல்குரவு",
+     "kurals": [
+      1049
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    256,
+    257
+   ]
+  },
+  {
+   "id": "entry-109",
+   "kind": "entry",
+   "number": 109,
+   "contentsKey": "அ. கண்ணுள்ளின் போகார் / ஆ. உள்ளுவன் மன்னான்",
+   "printedSpan": [
+    241,
+    242
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 113,
+     "titleTa": "காதற்சிறப்புரைத்தல்",
+     "kurals": [
+      1126,
+      1125
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    258,
+    259
+   ]
+  },
+  {
+   "id": "entry-110",
+   "kind": "entry",
+   "number": 110,
+   "contentsKey": "தீயினாற் சுட்டபுண்",
+   "printedSpan": [
+    243,
+    244
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 13,
+     "titleTa": "அடக்கமுடைமை",
+     "kurals": [
+      129
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    260,
+    261
+   ]
+  },
+  {
+   "id": "entry-111",
+   "kind": "entry",
+   "number": 111,
+   "contentsKey": "யாங்கண்ணின் காண",
+   "printedSpan": [
+    245,
+    246
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 114,
+     "titleTa": "நாணுத் துறவுரைத்தல்",
+     "kurals": [
+      1140
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    262,
+    263
+   ]
+  },
+  {
+   "id": "entry-112",
+   "kind": "entry",
+   "number": 112,
+   "contentsKey": "கேட்டினும் உண்டோர்",
+   "printedSpan": [
+    247,
+    248
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 80,
+     "titleTa": "நட்பாராய்தல்",
+     "kurals": [
+      796
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    264,
+    265
+   ]
+  },
+  {
+   "id": "entry-113",
+   "kind": "entry",
+   "number": 113,
+   "contentsKey": "நனவினால் நம்நீத்தார்",
+   "printedSpan": [
+    249,
+    250
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 122,
+     "titleTa": "கனவுநிலை உரைத்தல்",
+     "kurals": [
+      1220
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    266,
+    267
+   ]
+  },
+  {
+   "id": "entry-114",
+   "kind": "entry",
+   "number": 114,
+   "contentsKey": "ஒருத்தாரை ஒன்றாக",
+   "printedSpan": [
+    251,
+    252
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 16,
+     "titleTa": "பொறையுடைமை",
+     "kurals": [
+      155
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    268,
+    269
+   ]
+  },
+  {
+   "id": "entry-115",
+   "kind": "entry",
+   "number": 115,
+   "contentsKey": "ஊடலில் தோற்றவர்",
+   "printedSpan": [
+    253,
+    254
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 133,
+     "titleTa": "ஊடலுவகை",
+     "kurals": [
+      1327
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    270,
+    271
+   ]
+  },
+  {
+   "id": "entry-116",
+   "kind": "entry",
+   "number": 116,
+   "contentsKey": "ஒழுக்கம் உடைமை",
+   "printedSpan": [
+    255,
+    256
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 14,
+     "titleTa": "ஒழுக்கமுடைமை",
+     "kurals": [
+      133
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    272,
+    273
+   ]
+  },
+  {
+   "id": "entry-117",
+   "kind": "entry",
+   "number": 117,
+   "contentsKey": "புலப்பேன்கொல் புல்லுவேன்",
+   "printedSpan": [
+    257,
+    258
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 127,
+     "titleTa": "அவர்வயின்விதும்பல்",
+     "kurals": [
+      1267
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    274,
+    275
+   ]
+  },
+  {
+   "id": "entry-118",
+   "kind": "entry",
+   "number": 118,
+   "contentsKey": "நுனிக்கொம்பர் ஏறினார்",
+   "printedSpan": [
+    259,
+    260
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 48,
+     "titleTa": "வலியறிதல்",
+     "kurals": [
+      476
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    276,
+    277
+   ]
+  },
+  {
+   "id": "entry-119",
+   "kind": "entry",
+   "number": 119,
+   "contentsKey": "உய்த்தல் அறிந்து",
+   "printedSpan": [
+    261,
+    262
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 129,
+     "titleTa": "புணர்ச்சி விதும்பல்",
+     "kurals": [
+      1287
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    278,
+    279
+   ]
+  },
+  {
+   "id": "entry-120",
+   "kind": "entry",
+   "number": 120,
+   "contentsKey": "கழாஅக்கால் பள்ளியுள்",
+   "printedSpan": [
+    263,
+    264
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 84,
+     "titleTa": "பேதைமை",
+     "kurals": [
+      840
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    280,
+    281
+   ]
+  },
+  {
+   "id": "entry-121",
+   "kind": "entry",
+   "number": 121,
+   "contentsKey": "தம்மில் இருந்து",
+   "printedSpan": [
+    265,
+    266
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 111,
+     "titleTa": "புணர்ச்சி மகிழ்தல்",
+     "kurals": [
+      1107
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    282,
+    283
+   ]
+  },
+  {
+   "id": "entry-122",
+   "kind": "entry",
+   "number": 122,
+   "contentsKey": "இடிப்பாரை இல்லாத",
+   "printedSpan": [
+    267,
+    268
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 45,
+     "titleTa": "பெரியாரைத் துணைக்கோடல்",
+     "kurals": [
+      448
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    284,
+    285
+   ]
+  },
+  {
+   "id": "entry-123",
+   "kind": "entry",
+   "number": 123,
+   "contentsKey": "நகையுடையார் நல்கார்",
+   "printedSpan": [
+    269,
+    270
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 120,
+     "titleTa": "தனிப்படர் மிகுதி",
+     "kurals": [
+      1199
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    286,
+    287
+   ]
+  },
+  {
+   "id": "entry-124",
+   "kind": "entry",
+   "number": 124,
+   "contentsKey": "அ. பற்றி விடாஅது / ஆ. பற்றுக பற்றற்றான்",
+   "printedSpan": [
+    271,
+    272
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 35,
+     "titleTa": "துறவு",
+     "kurals": [
+      347,
+      350
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    288,
+    289
+   ]
+  },
+  {
+   "id": "entry-125",
+   "kind": "entry",
+   "number": 125,
+   "contentsKey": "ஒருநாள் எழுநாள்போல்",
+   "printedSpan": [
+    273,
+    274
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 127,
+     "titleTa": "அவர் வயின் விதும்பல்",
+     "kurals": [
+      1269
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    290,
+    291
+   ]
+  },
+  {
+   "id": "entry-126",
+   "kind": "entry",
+   "number": 126,
+   "contentsKey": "பற்றற்ற கண்ணும்",
+   "printedSpan": [
+    275,
+    276
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 53,
+     "titleTa": "சுற்றந் தழால்",
+     "kurals": [
+      521
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    292,
+    293
+   ]
+  },
+  {
+   "id": "entry-127",
+   "kind": "entry",
+   "number": 127,
+   "contentsKey": "கூடிய காமம்",
+   "printedSpan": [
+    277,
+    278
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 127,
+     "titleTa": "அவர் வயின் விதும்பல்",
+     "kurals": [
+      1264
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    294,
+    295
+   ]
+  },
+  {
+   "id": "entry-128",
+   "kind": "entry",
+   "number": 128,
+   "contentsKey": "உலைவிடத்து ஊறஞ்சா",
+   "printedSpan": [
+    279,
+    280
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 77,
+     "titleTa": "படைமாட்சி",
+     "kurals": [
+      762
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "படையியல்",
+     "iyalKey": "05-padaiyal"
+    }
+   ],
+   "scanSpan": [
+    296,
+    297
+   ]
+  },
+  {
+   "id": "entry-129",
+   "kind": "entry",
+   "number": 129,
+   "contentsKey": "துஞ்சுங்கால் தோள்மேலர்",
+   "printedSpan": [
+    281,
+    282
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 122,
+     "titleTa": "கனவு நிலை உரைத்தல்",
+     "kurals": [
+      1218
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    298,
+    299
+   ]
+  },
+  {
+   "id": "entry-130",
+   "kind": "entry",
+   "number": 130,
+   "contentsKey": "மடியுளாள் மாமுகடி",
+   "printedSpan": [
+    283,
+    285
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 62,
+     "titleTa": "ஆள்வினை உடைமை",
+     "kurals": [
+      617
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    300,
+    302
+   ]
+  },
+  {
+   "id": "entry-131",
+   "kind": "entry",
+   "number": 131,
+   "contentsKey": "அ. செற்றவர் பின்சேறல் / ஆ. நினைந்தயில் இட்டன்ன / இ. நாணென ஒன்றோ",
+   "printedSpan": [
+    286,
+    287
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 126,
+     "titleTa": "நிறையழிதல்",
+     "kurals": [
+      1256,
+      1260,
+      1257
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    303,
+    304
+   ]
+  },
+  {
+   "id": "entry-132",
+   "kind": "entry",
+   "number": 132,
+   "contentsKey": "பல்லார் முனிய",
+   "printedSpan": [
+    288,
+    289
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 20,
+     "titleTa": "பயனில சொல்லாமை",
+     "kurals": [
+      191
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    305,
+    306
+   ]
+  },
+  {
+   "id": "entry-133",
+   "kind": "entry",
+   "number": 133,
+   "contentsKey": "தஞ்சம் தமரல்லர்",
+   "printedSpan": [
+    290,
+    291
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 130,
+     "titleTa": "நெஞ்சொடு புலத்தல்",
+     "kurals": [
+      1300
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    307,
+    308
+   ]
+  },
+  {
+   "id": "entry-134",
+   "kind": "entry",
+   "number": 134,
+   "contentsKey": "அ. ஆக்கம் அதர்வினாய் / ஆ. மடுத்தவா யெல்லாம்",
+   "printedSpan": [
+    292,
+    293
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 60,
+     "titleTa": "ஊக்கம் உடைமை",
+     "kurals": [
+      594
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    },
+    {
+     "chapter": 63,
+     "titleTa": "இடுக்கண் அழியாமை",
+     "kurals": [
+      624
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    309,
+    310
+   ]
+  },
+  {
+   "id": "entry-135",
+   "kind": "entry",
+   "number": 135,
+   "contentsKey": "காமம் விடு ஒன்றோ",
+   "printedSpan": [
+    294,
+    295
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 125,
+     "titleTa": "நெஞ்சொடு கிளத்தல்",
+     "kurals": [
+      1247
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    311,
+    312
+   ]
+  },
+  {
+   "id": "entry-136",
+   "kind": "entry",
+   "number": 136,
+   "contentsKey": "இலமென்று அசைஇ",
+   "printedSpan": [
+    296,
+    297
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 104,
+     "titleTa": "உழவு",
+     "kurals": [
+      1040
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    313,
+    314
+   ]
+  },
+  {
+   "id": "entry-137",
+   "kind": "entry",
+   "number": 137,
+   "contentsKey": "பசந்தாள் இவள்",
+   "printedSpan": [
+    298,
+    299
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 119,
+     "titleTa": "பசப்புறு பருவரல்",
+     "kurals": [
+      1188
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    315,
+    316
+   ]
+  },
+  {
+   "id": "entry-138",
+   "kind": "entry",
+   "number": 138,
+   "contentsKey": "அமைந்தாங் கொழுகான்",
+   "printedSpan": [
+    300,
+    301
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 48,
+     "titleTa": "வலியறிதல்",
+     "kurals": [
+      474
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    317,
+    318
+   ]
+  },
+  {
+   "id": "entry-139",
+   "kind": "entry",
+   "number": 139,
+   "contentsKey": "செறாஅச் சிறுசொல்லும்",
+   "printedSpan": [
+    302,
+    304
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 110,
+     "titleTa": "குறிப்பறிதல்",
+     "kurals": [
+      1097
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    319,
+    321
+   ]
+  },
+  {
+   "id": "entry-140",
+   "kind": "entry",
+   "number": 140,
+   "contentsKey": "அ. அளவறிந்து வாழாதான் / ஆ. உடைத்தம் வலியறியார்",
+   "printedSpan": [
+    305,
+    306
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 48,
+     "titleTa": "வலியறிதல்",
+     "kurals": [
+      479,
+      473
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    322,
+    323
+   ]
+  },
+  {
+   "id": "entry-141",
+   "kind": "entry",
+   "number": 141,
+   "contentsKey": "சிறைகாக்குங் காப்புவன்",
+   "printedSpan": [
+    307,
+    308
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 6,
+     "titleTa": "வாழ்க்கைத்துணைநலம்",
+     "kurals": [
+      57
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    324,
+    325
+   ]
+  },
+  {
+   "id": "entry-142",
+   "kind": "entry",
+   "number": 142,
+   "contentsKey": "பண்டறியேன் கூற்றென்",
+   "printedSpan": [
+    309,
+    310
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 109,
+     "titleTa": "தகையணங்குறுத்தல்",
+     "kurals": [
+      1083
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    326,
+    327
+   ]
+  },
+  {
+   "id": "entry-143",
+   "kind": "entry",
+   "number": 143,
+   "contentsKey": "அற்றார்க்கொன்று ஆற்றாதான்",
+   "printedSpan": [
+    311,
+    312
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 101,
+     "titleTa": "நன்றியில் செல்வம்",
+     "kurals": [
+      1007
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    328,
+    329
+   ]
+  },
+  {
+   "id": "entry-144",
+   "kind": "entry",
+   "number": 144,
+   "contentsKey": "அழுக்காறு அவா வெகுளி",
+   "printedSpan": [
+    313,
+    314
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 4,
+     "titleTa": "அறன் வலியுறுத்தல்",
+     "kurals": [
+      35
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    330,
+    331
+   ]
+  },
+  {
+   "id": "entry-145",
+   "kind": "entry",
+   "number": 145,
+   "contentsKey": "கடுமொழியும் கையிகந்த",
+   "printedSpan": [
+    315,
+    316
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 57,
+     "titleTa": "வெருவந்த செய்யாமை",
+     "kurals": [
+      567
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    332,
+    333
+   ]
+  },
+  {
+   "id": "entry-146",
+   "kind": "entry",
+   "number": 146,
+   "contentsKey": "பெயலாற்றா நீருலந்த",
+   "printedSpan": [
+    317,
+    318
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 118,
+     "titleTa": "கண்விதுப்பழிதல்",
+     "kurals": [
+      1174
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    334,
+    335
+   ]
+  },
+  {
+   "id": "entry-147",
+   "kind": "entry",
+   "number": 147,
+   "contentsKey": "கொடுத்துங் கொள்ளவேண்டும்",
+   "printedSpan": [
+    319,
+    320
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 87,
+     "titleTa": "பகைமாட்சி",
+     "kurals": [
+      867
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    336,
+    337
+   ]
+  },
+  {
+   "id": "entry-148",
+   "kind": "entry",
+   "number": 148,
+   "contentsKey": "இன்னா செய்தாரை",
+   "printedSpan": [
+    321,
+    322
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 32,
+     "titleTa": "இன்னா செய்யாமை",
+     "kurals": [
+      314
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    338,
+    339
+   ]
+  },
+  {
+   "id": "entry-149",
+   "kind": "entry",
+   "number": 149,
+   "contentsKey": "தந்நெஞ்சத்து எம்மை",
+   "printedSpan": [
+    323,
+    324
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 121,
+     "titleTa": "நினைந்தவர் புலம்பல்",
+     "kurals": [
+      1205
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    340,
+    341
+   ]
+  },
+  {
+   "id": "entry-150",
+   "kind": "entry",
+   "number": 150,
+   "contentsKey": "ஆய்ந்தாய்ந்து கொள்ளாதான்",
+   "printedSpan": [
+    325,
+    326
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 80,
+     "titleTa": "நட்பாராய்தல்",
+     "kurals": [
+      792
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    342,
+    343
+   ]
+  },
+  {
+   "id": "entry-151",
+   "kind": "entry",
+   "number": 151,
+   "contentsKey": "கூத்தாட்டு அவைக் குழாத்து",
+   "printedSpan": [
+    327,
+    328
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 34,
+     "titleTa": "நிலையாமை",
+     "kurals": [
+      332
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    344,
+    345
+   ]
+  },
+  {
+   "id": "entry-152",
+   "kind": "entry",
+   "number": 152,
+   "contentsKey": "பிரிவுரைக்கும் வன் கண்ணர்",
+   "printedSpan": [
+    329,
+    330
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 116,
+     "titleTa": "பிரிவாற்றாமை",
+     "kurals": [
+      1156
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    346,
+    347
+   ]
+  },
+  {
+   "id": "entry-153",
+   "kind": "entry",
+   "number": 153,
+   "contentsKey": "நாளென ஒன்று போல்",
+   "printedSpan": [
+    331,
+    332
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 34,
+     "titleTa": "நிலையாமை",
+     "kurals": [
+      334
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    348,
+    349
+   ]
+  },
+  {
+   "id": "entry-154",
+   "kind": "entry",
+   "number": 154,
+   "contentsKey": "பிணிக்கு மருந்து",
+   "printedSpan": [
+    333,
+    334
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 111,
+     "titleTa": "புணர்ச்சி மகிழ்தல்",
+     "kurals": [
+      1102
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    350,
+    351
+   ]
+  },
+  {
+   "id": "entry-155",
+   "kind": "entry",
+   "number": 155,
+   "contentsKey": "உள்ளற்க உள்ளம்",
+   "printedSpan": [
+    335,
+    336
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 80,
+     "titleTa": "நட்பாராய்தல்",
+     "kurals": [
+      798
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    352,
+    353
+   ]
+  },
+  {
+   "id": "entry-156",
+   "kind": "entry",
+   "number": 156,
+   "contentsKey": "அழுக்காறு உடையார்க்கு",
+   "printedSpan": [
+    337,
+    338
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 17,
+     "titleTa": "அழுக்காறாமை",
+     "kurals": [
+      165
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    354,
+    355
+   ]
+  },
+  {
+   "id": "entry-157",
+   "kind": "entry",
+   "number": 157,
+   "contentsKey": "பாலொடு தேன்கலந்து",
+   "printedSpan": [
+    339,
+    340
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 113,
+     "titleTa": "காதற் சிறப்புரைத்தல்",
+     "kurals": [
+      1121
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    356,
+    357
+   ]
+  },
+  {
+   "id": "entry-158",
+   "kind": "entry",
+   "number": 158,
+   "contentsKey": "அ. கொலையிற் கொடியாரை / ஆ. கொலைமேற் கொண்டாரின்",
+   "printedSpan": [
+    341,
+    342
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 55,
+     "titleTa": "செங்கோன்மை",
+     "kurals": [
+      550
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    },
+    {
+     "chapter": 56,
+     "titleTa": "கொடுங்கோன்மை",
+     "kurals": [
+      551
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    358,
+    359
+   ]
+  },
+  {
+   "id": "entry-159",
+   "kind": "entry",
+   "number": 159,
+   "contentsKey": "நெஞ்சில் துறவார்",
+   "printedSpan": [
+    343,
+    344
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 28,
+     "titleTa": "கூடா ஒழுக்கம்",
+     "kurals": [
+      276
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    360,
+    361
+   ]
+  },
+  {
+   "id": "entry-160",
+   "kind": "entry",
+   "number": 160,
+   "contentsKey": "நிறைநெஞ்சம் இல்லவர்",
+   "printedSpan": [
+    345,
+    346
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 92,
+     "titleTa": "வரைவின் மகளிர்",
+     "kurals": [
+      917
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    362,
+    363
+   ]
+  },
+  {
+   "id": "entry-161",
+   "kind": "entry",
+   "number": 161,
+   "contentsKey": "வலியார்முன் தன்னை",
+   "printedSpan": [
+    347,
+    348
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 26,
+     "titleTa": "அருளுடைமை",
+     "kurals": [
+      250
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    364,
+    365
+   ]
+  },
+  {
+   "id": "entry-162",
+   "kind": "entry",
+   "number": 162,
+   "contentsKey": "எல்லைக்கண் நின்றார்",
+   "printedSpan": [
+    349,
+    350
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 81,
+     "titleTa": "பழைமை",
+     "kurals": [
+      806
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    366,
+    367
+   ]
+  },
+  {
+   "id": "entry-163",
+   "kind": "entry",
+   "number": 163,
+   "contentsKey": "உவந்துறைவர் உள்ளத்துள்",
+   "printedSpan": [
+    351,
+    352
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 113,
+     "titleTa": "காதற் சிறப்புரைத்தல்",
+     "kurals": [
+      1130
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    368,
+    369
+   ]
+  },
+  {
+   "id": "entry-164",
+   "kind": "entry",
+   "number": 164,
+   "contentsKey": "அ. தொகச்சொல்லித் தூவாத / ஆ. இறுதி பயப்பினும்",
+   "printedSpan": [
+    353,
+    354
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 69,
+     "titleTa": "தூது",
+     "kurals": [
+      685,
+      690
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    370,
+    371
+   ]
+  },
+  {
+   "id": "entry-165",
+   "kind": "entry",
+   "number": 165,
+   "contentsKey": "பொறாமை அஞ்சும்",
+   "printedSpan": [
+    355,
+    356
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 130,
+     "titleTa": "நெஞ்சொடு புலத்தல்",
+     "kurals": [
+      1295
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    372,
+    373
+   ]
+  },
+  {
+   "id": "entry-166",
+   "kind": "entry",
+   "number": 166,
+   "contentsKey": "நிறைமொழி மாந்தர்",
+   "printedSpan": [
+    357,
+    358
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 3,
+     "titleTa": "நீத்தார் பெருமை",
+     "kurals": [
+      28
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    374,
+    375
+   ]
+  },
+  {
+   "id": "entry-167",
+   "kind": "entry",
+   "number": 167,
+   "contentsKey": "மேவிருந்தும் மேலல்லார்",
+   "printedSpan": [
+    359,
+    360
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 98,
+     "titleTa": "பெருமை",
+     "kurals": [
+      973
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    376,
+    377
+   ]
+  },
+  {
+   "id": "entry-168",
+   "kind": "entry",
+   "number": 168,
+   "contentsKey": "காலைக்குச் செய்த நன்று",
+   "printedSpan": [
+    361,
+    362
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 123,
+     "titleTa": "பொழுதுகண்டு இரங்கல்",
+     "kurals": [
+      1225
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    378,
+    379
+   ]
+  },
+  {
+   "id": "entry-169",
+   "kind": "entry",
+   "number": 169,
+   "contentsKey": "வசையெனப வையத்தார்க்கு",
+   "printedSpan": [
+    363,
+    364
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 24,
+     "titleTa": "புகழ்",
+     "kurals": [
+      238
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    380,
+    381
+   ]
+  },
+  {
+   "id": "entry-170",
+   "kind": "entry",
+   "number": 170,
+   "contentsKey": "பணியுமாம் என்றும்",
+   "printedSpan": [
+    365,
+    366
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 98,
+     "titleTa": "பெருமை",
+     "kurals": [
+      978
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    382,
+    383
+   ]
+  },
+  {
+   "id": "entry-171",
+   "kind": "entry",
+   "number": 171,
+   "contentsKey": "ஊடி யவரை",
+   "printedSpan": [
+    367,
+    368
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 131,
+     "titleTa": "புலவி",
+     "kurals": [
+      1304
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    384,
+    385
+   ]
+  },
+  {
+   "id": "entry-172",
+   "kind": "entry",
+   "number": 172,
+   "contentsKey": "நிறைநீர் நீரவர்",
+   "printedSpan": [
+    369,
+    370
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 79,
+     "titleTa": "நட்பு",
+     "kurals": [
+      782
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    386,
+    387
+   ]
+  },
+  {
+   "id": "entry-173",
+   "kind": "entry",
+   "number": 173,
+   "contentsKey": "துறந்தார் பெருமை",
+   "printedSpan": [
+    371,
+    372
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 3,
+     "titleTa": "நீத்தார் பெருமை",
+     "kurals": [
+      22
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    388,
+    389
+   ]
+  },
+  {
+   "id": "entry-174",
+   "kind": "entry",
+   "number": 174,
+   "contentsKey": "அ. இருபுனலும் வாய்ந்த / ஆ. உறுபசியும் ஓவா / இ. ஆங்கமை வெய்திய",
+   "printedSpan": [
+    373,
+    374
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 74,
+     "titleTa": "அரணியல்",
+     "kurals": [
+      737,
+      734,
+      740
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரணியல்",
+     "iyalKey": "03-araniyal"
+    }
+   ],
+   "scanSpan": [
+    390,
+    391
+   ]
+  },
+  {
+   "id": "entry-175",
+   "kind": "entry",
+   "number": 175,
+   "contentsKey": "வினைகலந்து வென்றீக",
+   "printedSpan": [
+    375,
+    376
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 127,
+     "titleTa": "அவர்வயின் விதும்பல்",
+     "kurals": [
+      1268
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    392,
+    393
+   ]
+  },
+  {
+   "id": "entry-176",
+   "kind": "entry",
+   "number": 176,
+   "contentsKey": "மனைத்தக்க மாண்புடையள்",
+   "printedSpan": [
+    377,
+    378
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 6,
+     "titleTa": "வாழ்க்கைத் துணை நலம்",
+     "kurals": [
+      51
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    394,
+    395
+   ]
+  },
+  {
+   "id": "entry-177",
+   "kind": "entry",
+   "number": 177,
+   "contentsKey": "சாயலும் நாணும்",
+   "printedSpan": [
+    379,
+    380
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 119,
+     "titleTa": "பசப்புறு பருவரல்",
+     "kurals": [
+      1183
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    396,
+    397
+   ]
+  },
+  {
+   "id": "entry-178",
+   "kind": "entry",
+   "number": 178,
+   "contentsKey": "கல்லார்ப் பிணிக்கும்",
+   "printedSpan": [
+    381,
+    382
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 57,
+     "titleTa": "வெருவந்த செய்யாமை",
+     "kurals": [
+      570
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    398,
+    399
+   ]
+  },
+  {
+   "id": "entry-179",
+   "kind": "entry",
+   "number": 179,
+   "contentsKey": "துப்பார்க்குத் துப்பாய",
+   "printedSpan": [
+    383,
+    384
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 2,
+     "titleTa": "வான் சிறப்பு",
+     "kurals": [
+      12
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    400,
+    401
+   ]
+  },
+  {
+   "id": "entry-180",
+   "kind": "entry",
+   "number": 180,
+   "contentsKey": "காமக் கடும்புனல்",
+   "printedSpan": [
+    385,
+    387
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 114,
+     "titleTa": "நாணுத் துறவுரைத்தல்",
+     "kurals": [
+      1134
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    402,
+    404
+   ]
+  },
+  {
+   "id": "entry-181",
+   "kind": "entry",
+   "number": 181,
+   "contentsKey": "உறுவது சீர் தூக்கும்",
+   "printedSpan": [
+    388,
+    390
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 82,
+     "titleTa": "தீ நட்பு",
+     "kurals": [
+      813
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    405,
+    407
+   ]
+  },
+  {
+   "id": "entry-182",
+   "kind": "entry",
+   "number": 182,
+   "contentsKey": "தன்னுயிர்க்கு இன்னாமை",
+   "printedSpan": [
+    391,
+    392
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 32,
+     "titleTa": "இன்னா செய்யாமை",
+     "kurals": [
+      318
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    408,
+    409
+   ]
+  },
+  {
+   "id": "entry-183",
+   "kind": "entry",
+   "number": 183,
+   "contentsKey": "பன்மாயக் கள்வன்",
+   "printedSpan": [
+    393,
+    394
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 126,
+     "titleTa": "நிறையழிதல்",
+     "kurals": [
+      1258
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    410,
+    411
+   ]
+  },
+  {
+   "id": "entry-184",
+   "kind": "entry",
+   "number": 184,
+   "contentsKey": "நெடும்புனலுள் வெல்லும்",
+   "printedSpan": [
+    395,
+    396
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 50,
+     "titleTa": "இடம் அறிதல்",
+     "kurals": [
+      495
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    412,
+    413
+   ]
+  },
+  {
+   "id": "entry-185",
+   "kind": "entry",
+   "number": 185,
+   "contentsKey": "கெடுவல்யான் என்பது",
+   "printedSpan": [
+    397,
+    398
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 12,
+     "titleTa": "நடுவுநிலைமை",
+     "kurals": [
+      116
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    414,
+    415
+   ]
+  },
+  {
+   "id": "entry-186",
+   "kind": "entry",
+   "number": 186,
+   "contentsKey": "இன்கண் உடைத்தவர்",
+   "printedSpan": [
+    399,
+    400
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 116,
+     "titleTa": "பிரிவாற்றாமை",
+     "kurals": [
+      1152
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    416,
+    417
+   ]
+  },
+  {
+   "id": "entry-187",
+   "kind": "entry",
+   "number": 187,
+   "contentsKey": "அ. ஏற்றிற் குரியர் / ஆ. மக்களே போல்வர்",
+   "printedSpan": [
+    401,
+    403
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 108,
+     "titleTa": "கயமை",
+     "kurals": [
+      1080,
+      1071
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    418,
+    420
+   ]
+  },
+  {
+   "id": "entry-188",
+   "kind": "entry",
+   "number": 188,
+   "contentsKey": "அ. நன்னீரை வாழி / ஆ. முறிமேனி முத்தம்",
+   "printedSpan": [
+    404,
+    405
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 112,
+     "titleTa": "நலம்புனைந்துரைத்தல்",
+     "kurals": [
+      1111,
+      1113
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    421,
+    422
+   ]
+  },
+  {
+   "id": "entry-189",
+   "kind": "entry",
+   "number": 189,
+   "contentsKey": "வினைவலியும் தன்வலியும்",
+   "printedSpan": [
+    406,
+    407
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 48,
+     "titleTa": "வலியறிதல்",
+     "kurals": [
+      471
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    423,
+    424
+   ]
+  },
+  {
+   "id": "entry-190",
+   "kind": "entry",
+   "number": 190,
+   "contentsKey": "குணமென்னுங் குன்றேறி",
+   "printedSpan": [
+    408,
+    409
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 3,
+     "titleTa": "நீத்தார் பெருமை",
+     "kurals": [
+      29
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    425,
+    426
+   ]
+  },
+  {
+   "id": "entry-191",
+   "kind": "entry",
+   "number": 191,
+   "contentsKey": "அ. புல்லி விடாஅப் / ஆ. ஊடுக மன்னோ",
+   "printedSpan": [
+    410,
+    411
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 133,
+     "titleTa": "ஊடலுவகை",
+     "kurals": [
+      1324,
+      1329
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    427,
+    428
+   ]
+  },
+  {
+   "id": "entry-192",
+   "kind": "entry",
+   "number": 192,
+   "contentsKey": "ஊக்கம் உடையான்",
+   "printedSpan": [
+    412,
+    413
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 49,
+     "titleTa": "காலம் அறிதல்",
+     "kurals": [
+      486
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    429,
+    430
+   ]
+  },
+  {
+   "id": "entry-193",
+   "kind": "entry",
+   "number": 193,
+   "contentsKey": "புறத்துறுப் பெல்லாம்",
+   "printedSpan": [
+    414,
+    415
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 8,
+     "titleTa": "அன்புடைமை",
+     "kurals": [
+      79
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    431,
+    432
+   ]
+  },
+  {
+   "id": "entry-194",
+   "kind": "entry",
+   "number": 194,
+   "contentsKey": "அ. நகையுள்ளும் இன்னாது / ஆ. பண்பிலான் பெற்ற",
+   "printedSpan": [
+    416,
+    418
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 100,
+     "titleTa": "பண்புடைமை",
+     "kurals": [
+      995,
+      1000
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    433,
+    435
+   ]
+  },
+  {
+   "id": "entry-195",
+   "kind": "entry",
+   "number": 195,
+   "contentsKey": "வருகமன் கொண்கன்",
+   "printedSpan": [
+    419,
+    420
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 127,
+     "titleTa": "அவர்வயின் விதும்பல்",
+     "kurals": [
+      1266
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    436,
+    437
+   ]
+  },
+  {
+   "id": "entry-196",
+   "kind": "entry",
+   "number": 196,
+   "contentsKey": "கொக்கொக்கக் கூம்பும்",
+   "printedSpan": [
+    421,
+    422
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 49,
+     "titleTa": "காலம் அறிதல்",
+     "kurals": [
+      490
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    438,
+    439
+   ]
+  },
+  {
+   "id": "entry-197",
+   "kind": "entry",
+   "number": 197,
+   "contentsKey": "அரிதாற்றி அல்லல்நோய்",
+   "printedSpan": [
+    423,
+    424
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 116,
+     "titleTa": "பிரிவாற்றாமை",
+     "kurals": [
+      1160
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    440,
+    441
+   ]
+  },
+  {
+   "id": "entry-198",
+   "kind": "entry",
+   "number": 198,
+   "contentsKey": "உறின்நட்டு அறின் ஒரூஉம்",
+   "printedSpan": [
+    425,
+    426
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 82,
+     "titleTa": "தீ நட்பு",
+     "kurals": [
+      812
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    442,
+    443
+   ]
+  },
+  {
+   "id": "entry-199",
+   "kind": "entry",
+   "number": 199,
+   "contentsKey": "மனத்துக்கண் மாசிலன்",
+   "printedSpan": [
+    427,
+    428
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 4,
+     "titleTa": "அறன்வலியுறுத்தல்",
+     "kurals": [
+      34
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    444,
+    445
+   ]
+  },
+  {
+   "id": "entry-200",
+   "kind": "entry",
+   "number": 200,
+   "contentsKey": "கதுமெனத் தாம்நோக்கி",
+   "printedSpan": [
+    429,
+    430
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 118,
+     "titleTa": "கண்விதுப்பழிதல்",
+     "kurals": [
+      1173
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    446,
+    447
+   ]
+  },
+  {
+   "id": "entry-201",
+   "kind": "entry",
+   "number": 201,
+   "contentsKey": "இன்மையின் இன்னாது",
+   "printedSpan": [
+    431,
+    432
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 56,
+     "titleTa": "கொடுங்கோன்மை",
+     "kurals": [
+      558
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    448,
+    449
+   ]
+  },
+  {
+   "id": "entry-202",
+   "kind": "entry",
+   "number": 202,
+   "contentsKey": "ஈன்ற பொழுதின்",
+   "printedSpan": [
+    433,
+    435
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 7,
+     "titleTa": "மக்கட்பேறு",
+     "kurals": [
+      69
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    450,
+    452
+   ]
+  },
+  {
+   "id": "entry-203",
+   "kind": "entry",
+   "number": 203,
+   "contentsKey": "அ. கண்ணுள்ளார் காத / ஆ. இமைப்பின் கரப்பாக்கு",
+   "printedSpan": [
+    435,
+    437
+   ],
+   "contentsLocatorNote": {
+    "printed": 435,
+    "textBeginsScan": 453,
+    "textBeginsPrinted": 436
+   },
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 113,
+     "titleTa": "காதற் சிறப்புரைத்தல்",
+     "kurals": [
+      1127,
+      1129
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    453,
+    454
+   ]
+  },
+  {
+   "id": "entry-204",
+   "kind": "entry",
+   "number": 204,
+   "contentsKey": "மயிர்நீப்பின் வாழா",
+   "printedSpan": [
+    438,
+    439
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 97,
+     "titleTa": "மானம்",
+     "kurals": [
+      969
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    455,
+    456
+   ]
+  },
+  {
+   "id": "entry-205",
+   "kind": "entry",
+   "number": 205,
+   "contentsKey": "பயன்தூக்கார் செய்த",
+   "printedSpan": [
+    440,
+    441
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 11,
+     "titleTa": "செய்ந்நன்றி யறிதல்",
+     "kurals": [
+      103
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    457,
+    458
+   ]
+  },
+  {
+   "id": "entry-206",
+   "kind": "entry",
+   "number": 206,
+   "contentsKey": "ஏமுற்றவரினும்",
+   "printedSpan": [
+    442,
+    444
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 88,
+     "titleTa": "பகைத்திறம் தெரிதல்",
+     "kurals": [
+      873
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    459,
+    461
+   ]
+  },
+  {
+   "id": "entry-207",
+   "kind": "entry",
+   "number": 207,
+   "contentsKey": "முயங்கிய கைகளை",
+   "printedSpan": [
+    445,
+    446
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 124,
+     "titleTa": "உறுப்புநலன் அழிதல்",
+     "kurals": [
+      1238
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    462,
+    463
+   ]
+  },
+  {
+   "id": "entry-208",
+   "kind": "entry",
+   "number": 208,
+   "contentsKey": "செயற்கை அறிந்த",
+   "printedSpan": [
+    447,
+    448
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 64,
+     "titleTa": "அமைச்சு",
+     "kurals": [
+      637
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    464,
+    465
+   ]
+  },
+  {
+   "id": "entry-209",
+   "kind": "entry",
+   "number": 209,
+   "contentsKey": "கண்ணிறைந்த காரிகை",
+   "printedSpan": [
+    449,
+    450
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 128,
+     "titleTa": "குறிப்பறிவுறுத்தல்",
+     "kurals": [
+      1272
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    466,
+    467
+   ]
+  },
+  {
+   "id": "entry-210",
+   "kind": "entry",
+   "number": 210,
+   "contentsKey": "புறங்கூறிப் பொய்த்துயிர்",
+   "printedSpan": [
+    451,
+    452
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 19,
+     "titleTa": "புறங்கூறாமை",
+     "kurals": [
+      183
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    468,
+    469
+   ]
+  },
+  {
+   "id": "entry-211",
+   "kind": "entry",
+   "number": 211,
+   "contentsKey": "அணங்குகொல் ஆய்மயில்",
+   "printedSpan": [
+    453,
+    454
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 109,
+     "titleTa": "தகையணங்குறுத்தல்",
+     "kurals": [
+      1081
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    470,
+    471
+   ]
+  },
+  {
+   "id": "entry-212",
+   "kind": "entry",
+   "number": 212,
+   "contentsKey": "பகையகத்துப் பேடிகை",
+   "printedSpan": [
+    455,
+    456
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 73,
+     "titleTa": "அவை அஞ்சாமை",
+     "kurals": [
+      727
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    472,
+    473
+   ]
+  },
+  {
+   "id": "entry-213",
+   "kind": "entry",
+   "number": 213,
+   "contentsKey": "வசையிலா வண்பயன்",
+   "printedSpan": [
+    457,
+    458
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 24,
+     "titleTa": "புகழ்",
+     "kurals": [
+      239
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    474,
+    475
+   ]
+  },
+  {
+   "id": "entry-214",
+   "kind": "entry",
+   "number": 214,
+   "contentsKey": "இற்றிறந்தார் கண்ணேயும்",
+   "printedSpan": [
+    459,
+    460
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 105,
+     "titleTa": "நல்குரவு",
+     "kurals": [
+      1044
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    476,
+    477
+   ]
+  },
+  {
+   "id": "entry-215",
+   "kind": "entry",
+   "number": 215,
+   "contentsKey": "கொடும்புருவம் கோடா",
+   "printedSpan": [
+    461,
+    461
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 109,
+     "titleTa": "தகையணங்குறுத்தல்",
+     "kurals": [
+      1086
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    478,
+    478
+   ]
+  },
+  {
+   "id": "entry-216",
+   "kind": "entry",
+   "number": 216,
+   "contentsKey": "பணிவுடையன் இன்சொல்லன்",
+   "printedSpan": [
+    462,
+    463
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 10,
+     "titleTa": "இனியவை கூறல்",
+     "kurals": [
+      95
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    479,
+    480
+   ]
+  },
+  {
+   "id": "entry-217",
+   "kind": "entry",
+   "number": 217,
+   "contentsKey": "நிலத்தியல்பால் நீர்திரிந்து",
+   "printedSpan": [
+    464,
+    465
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 46,
+     "titleTa": "சிற்றினம் சேராமை",
+     "kurals": [
+      452
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    481,
+    482
+   ]
+  },
+  {
+   "id": "entry-218",
+   "kind": "entry",
+   "number": 218,
+   "contentsKey": "அறிதோறு அறியாமை",
+   "printedSpan": [
+    466,
+    467
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 111,
+     "titleTa": "புணர்ச்சி மகிழ்தல்",
+     "kurals": [
+      1110
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    483,
+    484
+   ]
+  },
+  {
+   "id": "entry-219",
+   "kind": "entry",
+   "number": 219,
+   "contentsKey": "அங்கணத்துள் உக்க",
+   "printedSpan": [
+    468,
+    469
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 72,
+     "titleTa": "அவை அறிதல்",
+     "kurals": [
+      720
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    485,
+    486
+   ]
+  },
+  {
+   "id": "entry-220",
+   "kind": "entry",
+   "number": 220,
+   "contentsKey": "ஐந்தவித்தான் ஆற்றல்",
+   "printedSpan": [
+    470,
+    471
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 3,
+     "titleTa": "நீத்தார் பெருமை",
+     "kurals": [
+      25
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "பாயிரவியல்",
+     "iyalKey": "01-payiraviyal"
+    }
+   ],
+   "scanSpan": [
+    487,
+    488
+   ]
+  },
+  {
+   "id": "entry-221",
+   "kind": "entry",
+   "number": 221,
+   "contentsKey": "சலத்தால் பொருள் செய்து",
+   "printedSpan": [
+    472,
+    473
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 66,
+     "titleTa": "வினைத்தூய்மை",
+     "kurals": [
+      660
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    489,
+    490
+   ]
+  },
+  {
+   "id": "entry-222",
+   "kind": "entry",
+   "number": 222,
+   "contentsKey": "இன்பம் கடல்மற்று",
+   "printedSpan": [
+    474,
+    475
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 117,
+     "titleTa": "படர்மெலிந்திரங்கல்",
+     "kurals": [
+      1166
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    491,
+    492
+   ]
+  },
+  {
+   "id": "entry-223",
+   "kind": "entry",
+   "number": 223,
+   "contentsKey": "கல்லாதான் சொற்கா",
+   "printedSpan": [
+    476,
+    477
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 41,
+     "titleTa": "கல்லாமை",
+     "kurals": [
+      402
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    493,
+    494
+   ]
+  },
+  {
+   "id": "entry-224",
+   "kind": "entry",
+   "number": 224,
+   "contentsKey": "அன்பிற்கும் உண்டோ",
+   "printedSpan": [
+    478,
+    479
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 8,
+     "titleTa": "அன்புடைமை",
+     "kurals": [
+      71
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    495,
+    496
+   ]
+  },
+  {
+   "id": "entry-225",
+   "kind": "entry",
+   "number": 225,
+   "contentsKey": "வினையால் வினையாக்கி",
+   "printedSpan": [
+    480,
+    481
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 68,
+     "titleTa": "வினைசெயல்வகை",
+     "kurals": [
+      678
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    497,
+    498
+   ]
+  },
+  {
+   "id": "entry-226",
+   "kind": "entry",
+   "number": 226,
+   "contentsKey": "நிறையரியர் மன் அளியர்",
+   "printedSpan": [
+    482,
+    483
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 114,
+     "titleTa": "நாணுத்துறவுரைத்தல்",
+     "kurals": [
+      1138
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    499,
+    500
+   ]
+  },
+  {
+   "id": "entry-227",
+   "kind": "entry",
+   "number": 227,
+   "contentsKey": "எதிரார் குற்றம் போல்",
+   "printedSpan": [
+    484,
+    485
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 19,
+     "titleTa": "புறங்கூறாமை",
+     "kurals": [
+      190
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    501,
+    502
+   ]
+  },
+  {
+   "id": "entry-228",
+   "kind": "entry",
+   "number": 228,
+   "contentsKey": "உறாஅது தவர்போல்",
+   "printedSpan": [
+    486,
+    487
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 110,
+     "titleTa": "குறிப்பறிதல்",
+     "kurals": [
+      1096
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    503,
+    504
+   ]
+  },
+  {
+   "id": "entry-229",
+   "kind": "entry",
+   "number": 229,
+   "contentsKey": "ஆக்கமுங் கேடும்",
+   "printedSpan": [
+    488,
+    489
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 65,
+     "titleTa": "சொல் வன்மை",
+     "kurals": [
+      642
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    505,
+    506
+   ]
+  },
+  {
+   "id": "entry-230",
+   "kind": "entry",
+   "number": 230,
+   "contentsKey": "செற்றார்பின் செல்லா",
+   "printedSpan": [
+    490,
+    491
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 126,
+     "titleTa": "நிறையழிதல்",
+     "kurals": [
+      1255
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    507,
+    508
+   ]
+  },
+  {
+   "id": "entry-231",
+   "kind": "entry",
+   "number": 231,
+   "contentsKey": "ஊழி பெயரினும்",
+   "printedSpan": [
+    492,
+    493
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 99,
+     "titleTa": "சான்றாண்மை",
+     "kurals": [
+      989
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    509,
+    510
+   ]
+  },
+  {
+   "id": "entry-232",
+   "kind": "entry",
+   "number": 232,
+   "contentsKey": "உள்ளத்தார் காதலர்",
+   "printedSpan": [
+    494,
+    495
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 125,
+     "titleTa": "நெஞ்சொடு கிளத்தல்",
+     "kurals": [
+      1249
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    511,
+    512
+   ]
+  },
+  {
+   "id": "entry-233",
+   "kind": "entry",
+   "number": 233,
+   "contentsKey": "துன்பம் உறவரினும்",
+   "printedSpan": [
+    496,
+    498
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 67,
+     "titleTa": "வினைத்திட்பம்",
+     "kurals": [
+      669
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    513,
+    515
+   ]
+  },
+  {
+   "id": "entry-234",
+   "kind": "entry",
+   "number": 234,
+   "contentsKey": "கூற்றம் குதித்தலும்",
+   "printedSpan": [
+    499,
+    500
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 27,
+     "titleTa": "தவம்",
+     "kurals": [
+      269
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    516,
+    517
+   ]
+  },
+  {
+   "id": "entry-235",
+   "kind": "entry",
+   "number": 235,
+   "contentsKey": "வெருவந்த செய் தொழுகும்",
+   "printedSpan": [
+    501,
+    502
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 57,
+     "titleTa": "வெருவந்தசெய்யாமை",
+     "kurals": [
+      563
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    518,
+    519
+   ]
+  },
+  {
+   "id": "entry-236",
+   "kind": "entry",
+   "number": 236,
+   "contentsKey": "இனித்தக்க இன்னா",
+   "printedSpan": [
+    503,
+    504
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 129,
+     "titleTa": "புணர்ச்சி விதும்பல்",
+     "kurals": [
+      1288
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    520,
+    521
+   ]
+  },
+  {
+   "id": "entry-237",
+   "kind": "entry",
+   "number": 237,
+   "contentsKey": "நாண்அகத் தில்லார்",
+   "printedSpan": [
+    505,
+    506
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 102,
+     "titleTa": "நாணுடைமை",
+     "kurals": [
+      1020
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    522,
+    523
+   ]
+  },
+  {
+   "id": "entry-238",
+   "kind": "entry",
+   "number": 238,
+   "contentsKey": "எந்தன்றி கொன்றார்க்கும்",
+   "printedSpan": [
+    507,
+    509
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 11,
+     "titleTa": "செய்ந்நன்றி அறிதல்",
+     "kurals": [
+      110
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    524,
+    526
+   ]
+  },
+  {
+   "id": "entry-239",
+   "kind": "entry",
+   "number": 239,
+   "contentsKey": "செவிகைப்பச் சொற்பொறுக்கும்",
+   "printedSpan": [
+    510,
+    511
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 39,
+     "titleTa": "இறைமாட்சி",
+     "kurals": [
+      389
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    527,
+    528
+   ]
+  },
+  {
+   "id": "entry-240",
+   "kind": "entry",
+   "number": 240,
+   "contentsKey": "கண்டுகேட்டு உண்டுயிர்த்து",
+   "printedSpan": [
+    512,
+    513
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 111,
+     "titleTa": "புணர்ச்சி மகிழ்தல்",
+     "kurals": [
+      1101
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    529,
+    530
+   ]
+  },
+  {
+   "id": "entry-241",
+   "kind": "entry",
+   "number": 241,
+   "contentsKey": "கருமம் செயவொருவன்",
+   "printedSpan": [
+    514,
+    515
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 103,
+     "titleTa": "குடி செயல்வகை",
+     "kurals": [
+      1021
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    531,
+    532
+   ]
+  },
+  {
+   "id": "entry-242",
+   "kind": "entry",
+   "number": 242,
+   "contentsKey": "உரமொருவற்கு உள்ள",
+   "printedSpan": [
+    516,
+    517
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 60,
+     "titleTa": "ஊக்கம் உடைமை",
+     "kurals": [
+      600
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    533,
+    534
+   ]
+  },
+  {
+   "id": "entry-243",
+   "kind": "entry",
+   "number": 243,
+   "contentsKey": "உயிர்உடம்பின் நீக்கியார்",
+   "printedSpan": [
+    518,
+    519
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 33,
+     "titleTa": "கொல்லாமை",
+     "kurals": [
+      330
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    535,
+    536
+   ]
+  },
+  {
+   "id": "entry-244",
+   "kind": "entry",
+   "number": 244,
+   "contentsKey": "ஒளியார்முன் ஒள்ளிய",
+   "printedSpan": [
+    520,
+    521
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 72,
+     "titleTa": "அவை அறிதல்",
+     "kurals": [
+      714
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    537,
+    538
+   ]
+  },
+  {
+   "id": "entry-245",
+   "kind": "entry",
+   "number": 245,
+   "contentsKey": "மிகுதியான் மிக்கவை",
+   "printedSpan": [
+    522,
+    523
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 16,
+     "titleTa": "பொறையுடைமை",
+     "kurals": [
+      158
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    539,
+    540
+   ]
+  },
+  {
+   "id": "entry-246",
+   "kind": "entry",
+   "number": 246,
+   "contentsKey": "பண்ணென்னாம் பாடற்கு",
+   "printedSpan": [
+    524,
+    525
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 58,
+     "titleTa": "கண்ணோட்டம்",
+     "kurals": [
+      573
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    541,
+    542
+   ]
+  },
+  {
+   "id": "entry-247",
+   "kind": "entry",
+   "number": 247,
+   "contentsKey": "உழந்துழந்து உள்நீர்",
+   "printedSpan": [
+    526,
+    527
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 118,
+     "titleTa": "கண்விதுப்பழிதல்",
+     "kurals": [
+      1177
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    543,
+    544
+   ]
+  },
+  {
+   "id": "entry-248",
+   "kind": "entry",
+   "number": 248,
+   "contentsKey": "குடிசெய்வார்க்கு இல்லை",
+   "printedSpan": [
+    528,
+    529
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 103,
+     "titleTa": "குடி செயல் வகை",
+     "kurals": [
+      1028
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    545,
+    546
+   ]
+  },
+  {
+   "id": "entry-249",
+   "kind": "entry",
+   "number": 249,
+   "contentsKey": "விருந்து புறத்ததா",
+   "printedSpan": [
+    530,
+    531
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 9,
+     "titleTa": "விருந்தோம்பல்",
+     "kurals": [
+      82
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    547,
+    548
+   ]
+  },
+  {
+   "id": "entry-250",
+   "kind": "entry",
+   "number": 250,
+   "contentsKey": "உள்ளுவ தெல்லாம்",
+   "printedSpan": [
+    532,
+    534
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 60,
+     "titleTa": "ஊக்கம் உடைமை",
+     "kurals": [
+      596
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    549,
+    551
+   ]
+  },
+  {
+   "id": "entry-251",
+   "kind": "entry",
+   "number": 251,
+   "contentsKey": "மலரன்ன கண்ணாள்",
+   "printedSpan": [
+    535,
+    536
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 115,
+     "titleTa": "அலர் அறிவுறுத்தல்",
+     "kurals": [
+      1142
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    552,
+    553
+   ]
+  },
+  {
+   "id": "entry-252",
+   "kind": "entry",
+   "number": 252,
+   "contentsKey": "நிழல்நீரும் இன்னாத",
+   "printedSpan": [
+    537,
+    538
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 89,
+     "titleTa": "உட்பகை",
+     "kurals": [
+      881
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    554,
+    555
+   ]
+  },
+  {
+   "id": "entry-253",
+   "kind": "entry",
+   "number": 253,
+   "contentsKey": "அ. இயற்றலும் ஈட்டலும் / ஆ. பகுத்துண்டு பல்லுயிர்",
+   "printedSpan": [
+    539,
+    541
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 39,
+     "titleTa": "இறைமாட்சி",
+     "kurals": [
+      385
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    },
+    {
+     "chapter": 33,
+     "titleTa": "கொல்லாமை",
+     "kurals": [
+      322
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    556,
+    558
+   ]
+  },
+  {
+   "id": "entry-254",
+   "kind": "entry",
+   "number": 254,
+   "contentsKey": "காக்கை கரவா",
+   "printedSpan": [
+    542,
+    543
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 53,
+     "titleTa": "சுற்றந்தழால்",
+     "kurals": [
+      527
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    559,
+    560
+   ]
+  },
+  {
+   "id": "entry-255",
+   "kind": "entry",
+   "number": 255,
+   "contentsKey": "மணியில் திகழ்தரு",
+   "printedSpan": [
+    544,
+    546
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 128,
+     "titleTa": "குறிப்பறிவுறுத்தல்",
+     "kurals": [
+      1273
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    561,
+    563
+   ]
+  },
+  {
+   "id": "entry-256",
+   "kind": "entry",
+   "number": 256,
+   "contentsKey": "ஆகாறு அளவிட்டி",
+   "printedSpan": [
+    547,
+    548
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 48,
+     "titleTa": "வலியறிதல்",
+     "kurals": [
+      478
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    564,
+    565
+   ]
+  },
+  {
+   "id": "entry-257",
+   "kind": "entry",
+   "number": 257,
+   "contentsKey": "மக்கள்மெய் தீண்டல்",
+   "printedSpan": [
+    549,
+    550
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 7,
+     "titleTa": "மக்கட்பேறு",
+     "kurals": [
+      65
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    566,
+    567
+   ]
+  },
+  {
+   "id": "entry-258",
+   "kind": "entry",
+   "number": 258,
+   "contentsKey": "அ. உற்றவன் தீர்ப்பான் / ஆ. மருந்தென வேண்டாவாம் / இ. நோய்நாடி நோய்முதல்",
+   "printedSpan": [
+    551,
+    552
+   ],
+   "expectedKuralCount": 3,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 95,
+     "titleTa": "மருந்து",
+     "kurals": [
+      950,
+      942,
+      948
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    568,
+    569
+   ]
+  },
+  {
+   "id": "entry-259",
+   "kind": "entry",
+   "number": 259,
+   "contentsKey": "மாலையோ அல்லை",
+   "printedSpan": [
+    553,
+    554
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 123,
+     "titleTa": "பொழுதுகண்டு இரங்கல்",
+     "kurals": [
+      1221
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    570,
+    571
+   ]
+  },
+  {
+   "id": "entry-260",
+   "kind": "entry",
+   "number": 260,
+   "contentsKey": "மருவுக மாசற்றார்",
+   "printedSpan": [
+    555,
+    556
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 80,
+     "titleTa": "நட்பாராய்தல்",
+     "kurals": [
+      800
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    572,
+    573
+   ]
+  },
+  {
+   "id": "entry-261",
+   "kind": "entry",
+   "number": 261,
+   "contentsKey": "கண்டொடு கண்ணிணை",
+   "printedSpan": [
+    557,
+    559
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 110,
+     "titleTa": "குறிப்பறிதல்",
+     "kurals": [
+      1100
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    574,
+    576
+   ]
+  },
+  {
+   "id": "entry-262",
+   "kind": "entry",
+   "number": 262,
+   "contentsKey": "ஏந்திய கொள்கையார்",
+   "printedSpan": [
+    560,
+    561
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 90,
+     "titleTa": "பெரியாரைப் பிழையாமை",
+     "kurals": [
+      899
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    577,
+    578
+   ]
+  },
+  {
+   "id": "entry-263",
+   "kind": "entry",
+   "number": 263,
+   "contentsKey": "தற்காத்துத் தற்கொண்டான்",
+   "printedSpan": [
+    562,
+    563
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 6,
+     "titleTa": "வாழ்க்கைத் துணைநலம்",
+     "kurals": [
+      56
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    579,
+    580
+   ]
+  },
+  {
+   "id": "entry-264",
+   "kind": "entry",
+   "number": 264,
+   "contentsKey": "பிறப்பொக்கும் எல்லா",
+   "printedSpan": [
+    564,
+    565
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 98,
+     "titleTa": "பெருமை",
+     "kurals": [
+      972
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    581,
+    582
+   ]
+  },
+  {
+   "id": "entry-265",
+   "kind": "entry",
+   "number": 265,
+   "contentsKey": "இம்மைப் பிறப்பில்",
+   "printedSpan": [
+    566,
+    567
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 132,
+     "titleTa": "புலவி நுணுக்கம்",
+     "kurals": [
+      1315
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    583,
+    584
+   ]
+  },
+  {
+   "id": "entry-266",
+   "kind": "entry",
+   "number": 266,
+   "contentsKey": "நிலத்தில் கிடந்தமை",
+   "printedSpan": [
+    568,
+    569
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 96,
+     "titleTa": "குடிமை",
+     "kurals": [
+      959
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    585,
+    586
+   ]
+  },
+  {
+   "id": "entry-267",
+   "kind": "entry",
+   "number": 267,
+   "contentsKey": "சொற்கோட்டம் இல்லது",
+   "printedSpan": [
+    570,
+    571
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 12,
+     "titleTa": "நடுவு நிலைமை",
+     "kurals": [
+      119
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    587,
+    588
+   ]
+  },
+  {
+   "id": "entry-268",
+   "kind": "entry",
+   "number": 268,
+   "contentsKey": "கல்லாத மேற்கொண்டு",
+   "printedSpan": [
+    572,
+    573
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 85,
+     "titleTa": "புல்லறிவாண்மை",
+     "kurals": [
+      845
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    589,
+    590
+   ]
+  },
+  {
+   "id": "entry-269",
+   "kind": "entry",
+   "number": 269,
+   "contentsKey": "உப்பாடு இலாதவர்",
+   "printedSpan": [
+    574,
+    575
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 89,
+     "titleTa": "உட்பகை",
+     "kurals": [
+      890
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    591,
+    592
+   ]
+  },
+  {
+   "id": "entry-270",
+   "kind": "entry",
+   "number": 270,
+   "contentsKey": "பழியஞ்சிப் பாத்தூண்",
+   "printedSpan": [
+    576,
+    577
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 5,
+     "titleTa": "இல்வாழ்வியல்",
+     "kurals": [
+      44
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    593,
+    594
+   ]
+  },
+  {
+   "id": "entry-271",
+   "kind": "entry",
+   "number": 271,
+   "contentsKey": "செய்யக்க அல்ல",
+   "printedSpan": [
+    578,
+    579
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 47,
+     "titleTa": "தெரிந்து செயல்வகை",
+     "kurals": [
+      466
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    595,
+    596
+   ]
+  },
+  {
+   "id": "entry-272",
+   "kind": "entry",
+   "number": 272,
+   "contentsKey": "இடுக்கட் படினும்",
+   "printedSpan": [
+    580,
+    581
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 66,
+     "titleTa": "வினைத்தூய்மை",
+     "kurals": [
+      654
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    597,
+    598
+   ]
+  },
+  {
+   "id": "entry-273",
+   "kind": "entry",
+   "number": 273,
+   "contentsKey": "எள்ளாமை வேண்டுவான்",
+   "printedSpan": [
+    582,
+    583
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 29,
+     "titleTa": "கள்ளாமை",
+     "kurals": [
+      281
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    599,
+    600
+   ]
+  },
+  {
+   "id": "entry-274",
+   "kind": "entry",
+   "number": 274,
+   "contentsKey": "செப்பின் புணர்ச்சி போல்",
+   "printedSpan": [
+    584,
+    585
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 89,
+     "titleTa": "உட்பகை",
+     "kurals": [
+      887
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "நட்பியல்",
+     "iyalKey": "06-natpiyal"
+    }
+   ],
+   "scanSpan": [
+    601,
+    602
+   ]
+  },
+  {
+   "id": "entry-275",
+   "kind": "entry",
+   "number": 275,
+   "contentsKey": "ஊரவர் கொளவை",
+   "printedSpan": [
+    586,
+    587
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 115,
+     "titleTa": "அலர் அறிவுறுத்தல்",
+     "kurals": [
+      1147
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    603,
+    604
+   ]
+  },
+  {
+   "id": "entry-276",
+   "kind": "entry",
+   "number": 276,
+   "contentsKey": "ஒட்டார்பின் சென்றொருவன்",
+   "printedSpan": [
+    588,
+    590
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 97,
+     "titleTa": "மானம்",
+     "kurals": [
+      967
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    605,
+    607
+   ]
+  },
+  {
+   "id": "entry-277",
+   "kind": "entry",
+   "number": 277,
+   "contentsKey": "நிலையில் திரியாது",
+   "printedSpan": [
+    591,
+    592
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 13,
+     "titleTa": "அடக்கமுடைமை",
+     "kurals": [
+      124
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    608,
+    609
+   ]
+  },
+  {
+   "id": "entry-278",
+   "kind": "entry",
+   "number": 278,
+   "contentsKey": "தாங்குக தாங்கி",
+   "printedSpan": [
+    593,
+    595
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 68,
+     "titleTa": "வினைசெயல்வகை",
+     "kurals": [
+      672
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    610,
+    612
+   ]
+  },
+  {
+   "id": "entry-279",
+   "kind": "entry",
+   "number": 279,
+   "contentsKey": "எனைத்தொன்று இனிதேகாண்",
+   "printedSpan": [
+    596,
+    597
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 121,
+     "titleTa": "நினைந்தவர் புலம்பல்",
+     "kurals": [
+      1202
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    613,
+    614
+   ]
+  },
+  {
+   "id": "entry-280",
+   "kind": "entry",
+   "number": 280,
+   "contentsKey": "முறைப்படச் சூழ்ந்தும்",
+   "printedSpan": [
+    598,
+    599
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 64,
+     "titleTa": "அமைச்சு",
+     "kurals": [
+      640
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    615,
+    616
+   ]
+  },
+  {
+   "id": "entry-281",
+   "kind": "entry",
+   "number": 281,
+   "contentsKey": "உலகத்தோடு ஒட்ட",
+   "printedSpan": [
+    600,
+    601
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 14,
+     "titleTa": "ஒழுக்கமுடைமை",
+     "kurals": [
+      140
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    617,
+    618
+   ]
+  },
+  {
+   "id": "entry-282",
+   "kind": "entry",
+   "number": 282,
+   "contentsKey": "அ. அடுத்தது காட்டும் / ஆ. நுண்ணியம் என்பார்",
+   "printedSpan": [
+    602,
+    603
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 71,
+     "titleTa": "குறிப்பறிதல்",
+     "kurals": [
+      706,
+      710
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அமைச்சியல்",
+     "iyalKey": "02-amaichiyal"
+    }
+   ],
+   "scanSpan": [
+    619,
+    620
+   ]
+  },
+  {
+   "id": "entry-283",
+   "kind": "entry",
+   "number": 283,
+   "contentsKey": "முகைமொக்குள் உள்ளது",
+   "printedSpan": [
+    604,
+    605
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 128,
+     "titleTa": "குறிப்பறிவுறுத்தல்",
+     "kurals": [
+      1274
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    621,
+    622
+   ]
+  },
+  {
+   "id": "entry-284",
+   "kind": "entry",
+   "number": 284,
+   "contentsKey": "அமரகத்து வன் கண்ணர்",
+   "printedSpan": [
+    606,
+    607
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 103,
+     "titleTa": "குடிசெயல்வகை",
+     "kurals": [
+      1027
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    623,
+    624
+   ]
+  },
+  {
+   "id": "entry-285",
+   "kind": "entry",
+   "number": 285,
+   "contentsKey": "பெறுமவற்றுள் யாமறிவது",
+   "printedSpan": [
+    608,
+    609
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 7,
+     "titleTa": "மக்கட்பேறு",
+     "kurals": [
+      61
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    625,
+    626
+   ]
+  },
+  {
+   "id": "entry-286",
+   "kind": "entry",
+   "number": 286,
+   "contentsKey": "இகழ்ச்சியின் கெட்டாரை",
+   "printedSpan": [
+    610,
+    611
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 54,
+     "titleTa": "பொச்சாவாமை",
+     "kurals": [
+      539
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    627,
+    628
+   ]
+  },
+  {
+   "id": "entry-287",
+   "kind": "entry",
+   "number": 287,
+   "contentsKey": "நெஞ்சத்தார் காதல்",
+   "printedSpan": [
+    612,
+    613
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 113,
+     "titleTa": "காதற் சிறப்புரைத்தல்",
+     "kurals": [
+      1128
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    629,
+    630
+   ]
+  },
+  {
+   "id": "entry-288",
+   "kind": "entry",
+   "number": 288,
+   "contentsKey": "ஈர்ங்கை விதிரார்",
+   "printedSpan": [
+    614,
+    615
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 108,
+     "titleTa": "கயமை",
+     "kurals": [
+      1077
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    631,
+    632
+   ]
+  },
+  {
+   "id": "entry-289",
+   "kind": "entry",
+   "number": 289,
+   "contentsKey": "அஞ்சுவ தோரும்",
+   "printedSpan": [
+    616,
+    617
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 37,
+     "titleTa": "அவா அறுத்தல்",
+     "kurals": [
+      366
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    633,
+    634
+   ]
+  },
+  {
+   "id": "entry-290",
+   "kind": "entry",
+   "number": 290,
+   "contentsKey": "அறனிழுக்கா தல்லவை",
+   "printedSpan": [
+    618,
+    619
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 39,
+     "titleTa": "இறைமாட்சி",
+     "kurals": [
+      384
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    635,
+    636
+   ]
+  },
+  {
+   "id": "entry-291",
+   "kind": "entry",
+   "number": 291,
+   "contentsKey": "பரிந்தவர் நல்காரென்று",
+   "printedSpan": [
+    620,
+    621
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 125,
+     "titleTa": "நெஞ்சொடு கிளத்தல்",
+     "kurals": [
+      1248
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    637,
+    638
+   ]
+  },
+  {
+   "id": "entry-292",
+   "kind": "entry",
+   "number": 292,
+   "contentsKey": "எனைமாட்சித் தாகிய",
+   "printedSpan": [
+    622,
+    623
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 75,
+     "titleTa": "அரண்",
+     "kurals": [
+      750
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரணியல்",
+     "iyalKey": "03-araniyal"
+    }
+   ],
+   "scanSpan": [
+    639,
+    640
+   ]
+  },
+  {
+   "id": "entry-293",
+   "kind": "entry",
+   "number": 293,
+   "contentsKey": "அ. கொல்லான் புலாலை / ஆ. அவிசொரிந் தாயிரம்",
+   "printedSpan": [
+    624,
+    625
+   ],
+   "expectedKuralCount": 2,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 26,
+     "titleTa": "புலால் மறுத்தல்",
+     "kurals": [
+      260,
+      259
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    641,
+    642
+   ]
+  },
+  {
+   "id": "entry-294",
+   "kind": "entry",
+   "number": 294,
+   "contentsKey": "சிற்றினம் அஞ்சும்",
+   "printedSpan": [
+    626,
+    627
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 46,
+     "titleTa": "சிற்றினம் சேராமை",
+     "kurals": [
+      451
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "அரசியல்",
+     "iyalKey": "01-arasiyal"
+    }
+   ],
+   "scanSpan": [
+    643,
+    644
+   ]
+  },
+  {
+   "id": "entry-295",
+   "kind": "entry",
+   "number": 295,
+   "contentsKey": "வாழ்தல் உயிர்க்கன்னள்",
+   "printedSpan": [
+    628,
+    630
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 113,
+     "titleTa": "காதற் சிறப்புரைத்தல்",
+     "kurals": [
+      1124
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "களவியல்",
+     "iyalKey": "01-kalaviyal"
+    }
+   ],
+   "scanSpan": [
+    645,
+    647
+   ]
+  },
+  {
+   "id": "entry-296",
+   "kind": "entry",
+   "number": 296,
+   "contentsKey": "குன்றின் அனையாரும்",
+   "printedSpan": [
+    631,
+    632
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 97,
+     "titleTa": "மானம்",
+     "kurals": [
+      965
+     ],
+     "bookTa": "பொருட்பால்",
+     "bookKey": "02-porul",
+     "iyalTa": "குடியியல்",
+     "iyalKey": "07-kudiyiyal"
+    }
+   ],
+   "scanSpan": [
+    648,
+    649
+   ]
+  },
+  {
+   "id": "entry-297",
+   "kind": "entry",
+   "number": 297,
+   "contentsKey": "காதலர் தூதொடு",
+   "printedSpan": [
+    633,
+    634
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 122,
+     "titleTa": "கனவுநிலை உரைத்தல்",
+     "kurals": [
+      1211
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    650,
+    651
+   ]
+  },
+  {
+   "id": "entry-298",
+   "kind": "entry",
+   "number": 298,
+   "contentsKey": "புகழ்புரிந்த இல்லிலோர்க்கு",
+   "printedSpan": [
+    635,
+    636
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 6,
+     "titleTa": "வாழ்க்கைத் துணைநலம்",
+     "kurals": [
+      59
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "இல்லறவியல்",
+     "iyalKey": "02-illaraviyal"
+    }
+   ],
+   "scanSpan": [
+    652,
+    653
+   ]
+  },
+  {
+   "id": "entry-299",
+   "kind": "entry",
+   "number": 299,
+   "contentsKey": "பெரிதாற்றிப் பெட்ப",
+   "printedSpan": [
+    637,
+    638
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 128,
+     "titleTa": "குறிப்பறிவுறுத்தல்",
+     "kurals": [
+      1276
+     ],
+     "bookTa": "இன்பத்துப்பால்",
+     "bookKey": "03-inbam",
+     "iyalTa": "கற்பியல்",
+     "iyalKey": "02-karpiyal"
+    }
+   ],
+   "scanSpan": [
+    654,
+    655
+   ]
+  },
+  {
+   "id": "entry-300",
+   "kind": "entry",
+   "number": 300,
+   "contentsKey": "நெருநல் உளனொருவன்",
+   "printedSpan": [
+    639,
+    640
+   ],
+   "expectedKuralCount": 1,
+   "crosswalkStatus": "RESOLVED",
+   "assignments": [
+    {
+     "chapter": 34,
+     "titleTa": "நிலையாமை",
+     "kurals": [
+      336
+     ],
+     "bookTa": "அறத்துப்பால்",
+     "bookKey": "01-aram",
+     "iyalTa": "துறவறவியல்",
+     "iyalKey": "03-thuravaraviyal"
+    }
+   ],
+   "scanSpan": [
+    656,
+    657
+   ]
+  },
+  {
+   "id": "back-matter",
+   "kind": "back-matter",
+   "titleTa": "பொருளடக்கமும் பின்னட்டையும்",
+   "titleEn": "Printed contents and back cover",
+   "scanSpan": [
+    658,
+    666
+   ],
+   "printedSpan": [
+    "641",
+    "unnumbered"
+   ]
+  }
+ ]
+}

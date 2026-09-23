@@ -1,0 +1,49 @@
+{
+ "workId": "isaithamizhin-unmai-varalaru-nool-veliyittu-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/isaithamizhin-unmai-varalaru-nool-veliyittu-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - II",
+  "firstEditionTa": "முதல் பதிப்பு 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "coverPriceTa": "ரூ. 150/-",
+  "scanFilename": "TVA_BOK_0065802_முத்துக்குளியல்_பாகம்_2.pdf",
+  "scanSha256": "48631b4fc5258df33213dbb742aec70ff6aace4fcd294f377e5750b406f5d9b2",
+  "scanFileSizeBytes": 232470104,
+  "scanTotalPages": 425,
+  "speechScanPages": "351–363",
+  "printedSpeechPages": "350–362",
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-2",
+   "ordinal": 30,
+   "total": 36
+  },
+  "speechFactsNoteEn": "The separate closing note explicitly states சென்னையில்."
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "faithful reading translation"
+ },
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.52,
+  "tamilBodyWords": 1831,
+  "englishBodyWords": 2788,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 1,
+  "tamilResolvedParagraphs": 43,
+  "englishParagraphs": 43,
+  "sourcePagesCovered": 13
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}

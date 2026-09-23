@@ -1,0 +1,400 @@
+{
+ "workId": "nila-mutram",
+ "slug": "nila-mutram",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/nila-mutram",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1973-04-19",
+ "year": 1973,
+ "title": {
+  "ta": "நிலா முற்றம்",
+  "en": "Moonlit Courtyard"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.71,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "நிலா முற்றம்",
+    "sourcePage": 180
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இது நேரம்வரை இசைச் சித்தர் சிதம்பரம் ஜெயராமன் அவர்கள் “மயக்கம்... மயக்கம்...” என்று பாடியது போல் - இந்த இரண்டு நாளும் நாமனைவரும் தமிழ் மயக்கத்தால் மெய்மறந்து இருந்தோம்.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழா முடியும் போதே! இந்தக் கடற்கரையை விட்டுப் பிரியப் போகிறோமே என்ற கவலை உள்ளத்தில் எழத்தான் செய்கிறது.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்தக் கடற்கரை, பிரிவின் சோகத்தை அதிகமாக உணர்ந்த கடற்கரை. இந்தக் கடற்கரையில் இரண்டு நாட்கள் தமிழ்ச் சமுதாயமும் தமிழினமும் வீறு கொள்ளத்தக்க வகையில் அமைச்சர்களும், தமிழ்ச் சான்றோர்களும், புலவர்களும், கவிஞர்களும், கலைஞர்களும் உரை நிகழ்த்தினார்கள்.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தமிழ் கூறும் நல்லுலகத்தை எப்படி முன்னேற்றுவது என்பது பற்றியும், ஆய்ந்துரைத்தார்கள்.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கடல்கொண்ட காவிரிப்பூம்பட்டினம் புதிய பூம்புகாராக உருவாகிக் காட்சியளிக்கிறது. அந்தக் காட்சி இன்று ஆட்சியிலிருக்கிற நாம் இருந்தாலும், இல்லாவிட்டாலும், எதிர்காலத்தில் தமிழ் உள்ளவரை, தமிழ் உணர்வுகள் உள்ளவரை நிலைபெற வேண்டும் என்று நெஞ்சார எண்ணுகிறோம் நாம்.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நீலத்திரைக் கடல் தாலாட்டும் இந்தப் பூமி, இந்திய பூபாகத்தில் பல்வேறு மாநில மக்களுக்கும் வெளிநாட்டவர்களுக்கும் கலங்கரை விளக்கமாகத் திகழ வேண்டும். இரண்டு நாட்களாகச் சொற்பொழிவாற்றியவர்களும்,",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கவிதை மழை பொழிந்தோரும் சிலப்பதிகாரத்தின் எழிலைச் சித்தரித்தார்கள். இங்கே சிலப்பதிகாரக் கலைக்கூடம் அமைய வேண்டும். பழைய பூம்புகாரை அமைக்க வேண்டும். பழைய பூம்புகாரில் உள்ள அனைத்தும் இப்போது பல்வேறு இடங்களில் அமைக்க வேண்டும் என்று எண்ணியபோதே, “இது முடியுமா? காலம் போதுமா?” என்று எண்ணினோம். 1970-ல் இந்தப் பணி தொடங்கியது. பணி பாதி அளவில் நின்றபோது “விழாக் கோலம் காண்போமா? அந்த விழாவை நடத்துவோமா?” என்று எண்ணுகிற நிலையில் 1971-ஆம் ஆண்டு வந்தது. அதே 71-ஆம் ஆண்டையும் வெற்றிகரமாகத் தாண்டினோம். இப்போது 73-ஆம் ஆண்டு புதிய பூம்புகாரின் முழுமையான அமைப்பை, நிறை நிலா விழாவைச் சிலப்பதிகாரக் கலைக்கூட விழாவை நடத்துகிறோம்.",
+      "sourcePage": 181,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     181
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1974-லிலும் நாமே அந்த விழாவை நடத்துவோம். 75-லும் நாமே அந்த விழாவை நடத்துவோம். 76-லும் அந்த விழாவை நடத்துவோம். இந்தத் தமிழக ஆட்சி தமிழர்களுக்காக நடத்தப்படும் ஆட்சியாகும். இந்த ஆட்சியே இந்தக் கடற்கரைப் பெருவெளியில் நிச்சயமாக நடத்தும்.",
+      "sourcePage": 181,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     181
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எத்தனையோ விழாக்கள் நாட்டில் நடைபெறுகின்றன. ஆனால் இந்த விழாவைத்தான் அனைவரும் கூர்ந்து கவனிக்கின்றனர்.",
+      "sourcePage": 181,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     181
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சில ஏடுகளில்கூட எத்தனையோ பிரச்சினைகள் நாட்டில் இருக்கும்போது இந்திர விழா என்ற பெயரில் பூம்புகார் விழா நடைபெறுவதை ஏன் என்று அரசியல் ரீதியில் கேள்விகள் கேட்கிறார்கள். தமிழ் உணர்வு உள்ள நம்மைப் பொறுத்தவரை தமிழ்ச் சமுதாயத்தின் சீர்த்தியை - கடலால் அழிக்கப்பட்ட பூம்புகாரை - மீண்டும் உருவாக்க வேண்டும் என்ற ஆர்வத்தோடு - மன்னிக்க வேண்டும் வெறியோடு - ஈடுபட்டு, வெற்றியும் பெற்றிருக்கிறோம்.",
+      "sourcePage": 181,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     181
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மயிலாப்பூரில் அறுபத்துமூவர் விழா நடக்கிறது. அரசியல்வாதிகளுக்கு அக்கறையில்லை. திருவாரூரில் தேரோட்ட விழா நடக்கிறது. அரசியல்வாதிகளுக்கு அக்கறையில்லை. மதுரையில் சித்திரைத் திருவிழா நடக்கிறது. அரசியல்வாதிகளுக்கு அக்கறையில்லை. ஆனால் இந்த விழாவில் அரசியல் வாதிகளுக்கு அக்கறை வரக் காரணம், இது நாம் இருக்கிற விழா; தமிழர்கள் இருக்கும் விழா, இந்த பூம்புகார்த் திருவிழா புராணத் திருவிழா அல்ல; பக்தித் திருவிழா அல்ல. ஆண்டவர்களுக்கு எடுக்கும் விழா. ஆம். பழந்தமிழகத்தை ஆண்டவருக்கு எடுக்கும் விழா.",
+      "sourcePage": 182,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     182
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வடபுலம் சென்ற கரிகால் பெருவளத்தானுக்கும், பாண்டிய நெடுஞ்செழியனுக்கும், சேரன் செங்குட்டுவனுக்கும் எடுக்கும் விழா. இவ்வளவு பெருமையுடையவர்களுக்கு இன்று விழா எடுக்கிறோம். முதலில் நாம் யார் என்பதை அறிந்து கொள்வதற்காகவே விழா எடுக்கிறோம். காலையில் கருத்தரங்கத்தில் ஒரு புலவர் குறிப்பிட்டார். “பழந்தமிழகத்தில் எந்தப் புலவர் காவியம் பாடினாலும், காப்பியம் தீட்டினாலும், இலக்கியம் செய்தாலும் அது மன்னர்களைப் பற்றி, அவர்களின் பரம்பரையைப் பற்றி, அவர்களின் சாதனைகளைப் பற்றி பாடியதாகவே இருக்கும். ஆனால் இளங்கோவடிகள்தான் சாதாரண சாமான்ய குடும்பத்தைச் சார்ந்த, நடுத்தர வணிகக் குடும்பத்தைச் சார்ந்த கோவலனை நாயகனாக்கிக் கண்ணகியை நாயகியாக்கிக் காவியம் தீட்டினார்” என்றார்.",
+      "sourcePage": 182,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     182
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சாதாரண சாமான்ய மக்களுக்காக நடத்தப்படும் இந்த ஆட்சி அவர்களுக்காக விழா எடுக்கிறது வியப்புக்குரியதல்ல; நேற்று காலை நடந்த ஊர்வலத்தின் வெற்றிக்குக் காரணமானவர்கள் பாராட்டுக்குரியவர்கள். இந்த இரண்டு நாள் நிகழ்ச்சிகளிலும் கலந்து கொண்ட அனைவருக்கும் எனது நன்றி பாராட்டு. தமிழக வரலாற்றில் இப்போது ஏற்பட்டிருக்கும் புதிய திருப்பம்",
+      "sourcePage": 182,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     182
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உற்சாகத்தை அளிக்கத்தக்க விதத்தில், புதிய ஆர்வத்தை ஏற்படுத்தும் விதத்தில் - அமைந்துள்ளது.",
+      "sourcePage": 183,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     183
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நேற்றும் இன்னும் பத்து லட்சத்துக்கு மேற்பட்ட மக்கள் விழாவினில் கலந்து கொண்டிருக்கிறார்கள். இப்படிப்பட்ட மகத்தான விழாவில் எந்தவிதமான சங்கடமும் ஏற்படாமல் அமைதிகாத்த அனைவருக்கும் பாராட்டினைத் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 183,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     183
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "1973-ஆம் ஆண்டு ஏப்ரல் 19-ஆம் நாள் பூம்புகாரில் சிலப்பதிகாரக் கலைக்கூடத் திறப்பு விழாவில் பேசியது.",
+    "sourcePage": 183
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Moonlit Courtyard",
+    "sourcePage": 180
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "For two days, as though under the spell of the song “Mayakkam... Mayakkam...,” all of us have been immersed in a Tamil enchantment. Now that the festival is ending, there is real sadness in leaving this shore.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This coast, once associated with separation and loss, has for two days heard ministers, scholars, poets and artists speak about Tamil society, Tamil identity and the future of the Tamil world.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The sea-lost Kaveripoompattinam is appearing again as a new Poompuhar. Whether or not those now in office remain, this vision should endure as long as Tamil and Tamil feeling endure.",
+      "sourcePage": 180,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     180
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Speakers and poets have portrayed the beauty of *Silappathikaram*. Work on the new Poompuhar and the epic's art gallery began in 1970 and passed through uncertainty before reaching this full moon festival in 1973.",
+      "sourcePage": 181,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     181
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I say we will continue such festivals in the years ahead. Critics ask why a Poompuhar festival should be held while the State has many problems. Our answer is that reviving the cultural memory of a city destroyed by the sea is itself an important public task, and we have pursued it with determination.",
+      "sourcePage": 181,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     181
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Many religious festivals take place without drawing political criticism. This festival attracts attention because it is a Tamil historical festival—not a puranic or devotional celebration, but one remembering those who ruled ancient Tamilakam.",
+      "sourcePage": 182,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     182
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "We honour Karikala, Nedunchezhiyan and Senguttuvan so that we first understand who we are. A speaker observed that Ilango's distinctiveness lay in making people from an ordinary merchant family—Kovalan and Kannagi—the centre of his epic rather than merely celebrating kings.",
+      "sourcePage": 182,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     182
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "A government that speaks for ordinary people naturally finds meaning in such a festival.",
+      "sourcePage": 182,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     182
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "More than a million people have taken part over these days, and the gathering has remained peaceful. I thank and congratulate all who made that possible.",
+      "sourcePage": 183,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     183
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The new turn now visible in Tamil history gives us renewed enthusiasm.",
+      "sourcePage": 183,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     183
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "Speech delivered on 19 April 1973 at Poompuhar during the opening of the *Silappathikaram* Art Gallery.",
+    "sourcePage": 183
+   }
+  ]
+ },
+ "sourcePages": [
+  180,
+  181,
+  182,
+  183
+ ],
+ "venue": null,
+ "event": null,
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 24,
+  "total": 61
+ }
+}

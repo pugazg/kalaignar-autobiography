@@ -53,12 +53,12 @@ const shelves = discoveryShelves();
 const c = collectionById(BENCHMARK);
 
 // ── 1. Registry ──────────────────────────────────────────────────────────────────────────────────
-eq(LIBRARY_COLLECTIONS.length, 7, "seven collections are declared (1977 + 5 Batch-7 short-story anthologies + Wave-7 B3 arumbu-1978)");
+eq(LIBRARY_COLLECTIONS.length, 9, "nine collections are declared (1977 + 5 Batch-7 short-story anthologies + Wave-7 B3 arumbu-1978 + the two Wave-7 முத்துக் குளியல் speech volumes)");
 eq(COLLECTION_IDS, [
   BENCHMARK, "1982-mudiyatha-thodarkathai", "1987-kalaignar-sonna-kuttik-kathaigal",
   "2004-kalaignarin-kuttik-kathaigal", "2008-kalaignar-sonna-kathaigal", "2009-16-kathaiyinile",
-  "arumbu-1978",
-], "the route registry lists the 1977 benchmark, the 5 Batch-7 collection ids, then arumbu-1978");
+  "arumbu-1978", "muthukkuliyal-part-1", "muthukkuliyal-part-2",
+], "the route registry lists the 1977 benchmark, the 5 Batch-7 collection ids, arumbu-1978, then the two முத்துக் குளியல் volumes");
 ok(!!c, "the benchmark collection resolves by id");
 if (!c) {
   console.error("collections — the benchmark collection is missing; nothing further can run");
@@ -91,9 +91,9 @@ const entries = shelves.flatMap((s) => s.entries);
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
-eq(works.length, 232, "the catalogue holds 232 published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13)");
-eq(entries.length, 90, "the page holds 90 discovery entries (post Wave-7 B2-B4: +10 net — +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now a collection member)");
-eq(entries.filter((e) => e.kind === "collection").length, 7, "seven collection entries across all shelves (1977 + 5 Batch-7 + arumbu-1978)");
+eq(works.length, 333, "the catalogue holds 333 published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
+eq(entries.length, 96, "the page holds 96 discovery entries (post Wave-7 B2-B4: 90; Wave-7 B5/B6/Kuraloviyam: +6 — 97 speeches collapse into 2 முத்துக் குளியல் cards, +3 assembly speeches, +Kuraloviyam)");
+eq(entries.filter((e) => e.kind === "collection").length, 9, "nine collection entries across all shelves (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "the Fiction shelf is rendered");
@@ -131,11 +131,23 @@ ok(cardHrefs.includes("/novels/balipeedam-nokki"), "பலிபீடம் ந
 ok(cardHrefs.includes("/stories/kizhavan-kanavu"), "கிழவன் கனவு still renders");
 
 // Other shelves are untouched, and Phase 0 still governs the ones over the cap.
-for (const s of shelves.filter((x) => x.shelf.id !== "fiction")) {
+for (const s of shelves.filter((x) => x.shelf.id !== "fiction" && x.shelf.id !== "speeches")) {
   eq(s.entries.length, s.works.length, `${s.shelf.en}: every work is still its own entry`);
 }
+// Speeches (Wave-7 P4): the 97 முத்துக் குளியல் speeches collapse into their two volume cards (collections
+// first), then the 20 standalone speeches — the 17 earlier ones and the 3 Wave-7 assembly speeches.
 const speeches = shelves.find((s) => s.shelf.id === "speeches");
-eq(speeches!.entries.length, 17, "Speeches has 17 entries (post Wave-6 P4)");
+eq(speeches!.works.length, 117, "Speeches holds 117 works (17 + 100 Wave-7)");
+eq(speeches!.entries.length, 22, "Speeches has 22 entries (2 முத்துக் குளியல் collection cards + 20 standalone speeches)");
+eq(speeches!.entries.slice(0, 2).map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)), ["muthukkuliyal-part-1", "muthukkuliyal-part-2"], "Speeches shows the two முத்துக் குளியல் volumes first");
+eq(speeches!.entries.slice(2).filter((e) => e.kind === "collection").length, 0, "the other 20 Speeches entries are standalone works");
+for (const id of ["muthukkuliyal-part-1", "muthukkuliyal-part-2"]) {
+  const mc = collectionById(id)!;
+  eq(mc.members.length, id.endsWith("1") ? 61 : 36, `${id}: member count`);
+  eq(mc.members.map((m) => m.ordinal), Array.from({ length: mc.members.length }, (_, i) => i + 1), `${id}: printed ordinals 1..N in order`);
+  eq(mc.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => h && cardHrefs.includes(h)), [], `${id}: no member renders as its own card on /read`);
+  eq(cardHrefs.filter((h) => h === mc.href).length, 1, `${id}: the collection card renders exactly once`);
+}
 ok(/<details/.test(html), "the Speeches disclosure survives Phase 1");
 // Post Batch-7 Fiction (18 entries) is ALSO over the cap, so six shelves now render one <details> each:
 // fiction, poetry, drama, cinema-writing, speeches, essays-articles.

@@ -1,0 +1,960 @@
+{
+ "workId": "chennai-thiraiyulagam-nadathiya-paarattu-vizha",
+ "slug": "chennai-thiraiyulagam-nadathiya-paarattu-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/chennai-thiraiyulagam-nadathiya-paarattu-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1998-09-27",
+ "year": 1998,
+ "title": {
+  "ta": "சென்னை - திரையுலகம் நடத்திய பாராட்டுவிழா",
+  "en": "Chennai - Film Industry Appreciation Function"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "full-translation",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 1.63,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "சென்னை - திரையுலகம் நடத்திய பாராட்டுவிழா",
+    "sourcePage": 330
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலை உலகப் பெருமக்கள் தம்பி எ.வி.எம். சரவணன், கே.ஆர்.ஜி., சிந்தாமணி முருகேசன் மற்றும் விழாக்குழுவிலே இடம்பெற்றுள்ள பாசமிகு நண்பர்கள், அவர்களோடு உடன் இருந்து ஒத்துழைத்த தம்பி கவியரசு வைரமுத்து, இவர்கள் அனைவருக்கும் என்னுடைய இதயமார்ந்த நன்றியை முதற்கண் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 330,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     330
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "சிவாஜி பேசும்போது, பெரியவர் பலர் இருக்கும்போது என்னை ஏன் இந்த விழாவிற்குத் தலைமை ஏற்க அழைத்தீர்கள் என்று கேட்டார். பெரியவர்கள் இருக்கலாம். ஆனால், கலை உலக விழாவிற்குத் தலைமை ஏற்க உரியவர் ஒருவர்தான். (பலத்த கைதட்டல்) எனவே தான் சிவாஜி இந்த விழாவிற்குத் தலைமை ஏற்றிருக்கிறார்.",
+      "sourcePage": 330,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     330
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வரவேற்புரையாற்றிய இயக்குநர் சிகரம் பாலசந்தர் அவர்களும், வாழ்த்துரை வழங்கிய பாரதிராஜா அவர்களும், இடையிலே ஏற்பட்ட சில தடங்கல்களை எல்லாம் குறிப்பிட்டார்கள். பல தடைகளுக்குப் பிறகு இந்த விழா நடைபெறுவதாகச் சுட்டிக் காட்டினார்கள்.",
+      "sourcePage": 330,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     330
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒன்றை நினைவூட்ட விரும்புகின்றேன். ஒரு போராட்டத்தில் அறிஞர் அண்ணா அவர்கள் வாழ்ந்த காலத்தில் சொல்கிறேன். ஒரு போராட்டத்தில் நான் சிறையிலே அடைக்கப்பட்டு, திருச்சி சிறைச்சாலையில் இருந்து வெளிவந்தேன். என்னை வரவேற்க, பேரறிஞர் அண்ணா அவர்கள் திருச்சி சிறைவாசலில் காத்திருந்து வரவேற்றார். அன்று திருச்சியிலே எனக்குப் பாராட்டுக் கூட்டம். மறுநாள் சென்னையிலே அண்ணா தலைமையிலே பாராட்டுக்கூட்டம்.",
+      "sourcePage": 331,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     331
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அண்ணா சொன்னார். “நீ திருச்சியிலே பேசி விட்டு, நாளைக்குக் காஞ்சிபுரம் வந்துவிடு. அங்கே வீட்டில் உனக்கு விருந்து. இருவரும் சேர்ந்து சென்னை பாராட்டு விழாவுக்குச் செல்லலாம்,” என்று சொன்னார். அவ்வாறு திருச்சி விழாவிலே கலந்து கொண்டுவிட்டு மறுநாள் காலையிலே காஞ்சிபுரம் சென்று மதிய உணவு அண்ணா வீட்டில் அருந்திவிட்டு, மாலையிலே இருவரும் புறப்பட்டுச் சென்னைக்கு விழாவிற்கு வந்தபோது, வருகிற வழியிலே இப்போது இருக்கின்ற அண்ணா அறிவாலயத்திற்குப் பக்கத்திலே உள்ள அன்பகத்தில் இருந்து எங்களை வரவேற்று ஊர்வலம் புறப்பட்டது. அண்ணாவும், நானும் ஒரு ரதத்திலே அமர்த்தி வைக்கப்பட்டு, ஊர்வலம் கடற்கரைக்குச் சென்றது. கடற்கரையிலே திருவிழா நடைபெறுகிறது. அண்ணா பாராட்டிப் பேசினார். இரவு பத்து மணிக்கு அண்ணாவும், நானும் இல்லத்திற்குத் திரும்பினோம்.",
+      "sourcePage": 331,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     331
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்பொழுது என்னுடைய அன்னையார் அஞ்சுகம் அம்மையார் அவர்கள் எங்களை வரவேற்று, கூடத்திலே அமரவைத்தார். “என்னம்மா சொக்கியமா?” என்று அம்மாவைப் பார்த்து அண்ணா கேட்டார். அப்பொழுது அம்மா, அண்ணா அவர்களைப் பார்த்து சொன்னார். “என் தம்பி நீங்கள் நேற்று வேலூர் சிறையிலிருந்து",
+      "sourcePage": 331,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     331
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விடுதலையானீர்கள். விடுதலையானவுடன் காஞ்சிபுரம் வந்து அம்மாவைப் பார்த்தீர்கள். ஆமாம்! அம்மாவைப் பார்த்து விட்டு, மறுபடியும் திரும்பி வேலூருக்குச் சென்று கூட்டத்தில் பேசினீர்கள் இல்லையா?” என்று கேட்டார். “ஆமாம் அம்மா” என்றார் அண்ணா. “உங்களை உங்கள் அம்மா ஒரு நாள் கஷ்டப்பட்டு பெற்றிருக்கிறார்கள் போலும். நான் என் பிள்ளையை 26 நாள் கஷ்டப்பட்டுப் பெற்றேன். அதனால்தான் என் பிள்ளை திருச்சியிலே விடுதலை பெற்று, திருச்சிக் கூட்டத்திலே பேசிவிட்டு, காஞ்சிபுரம் வந்து, சென்னைக்கு வந்தும் வீட்டுக்கு வராமல் உங்களோடு கடற்கரைக் கூட்டத்தில் பேசிவிட்டு இப்போதுதான் வந்திருக்கிறான்” என்று சொன்னார்கள். அப்போது அண்ணா கலகலவென்று சிரித்தார்.",
+      "sourcePage": 332,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     332
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதை ஏன் சொல்கிறேன் என்றால், நான் பிறப்பதற்கே 26 நாள் கஷ்டம். பிறப்பதே ஒரு போராட்டம். பிறப்பதற்கே ஒரு போராட்டம் நடத்தி வெளிவந்தவன். ஒரு விழாவிலே கலந்துகொள்வதென்றால், அதற்கு எவ்வளவு தடைகளைக் கடந்து வர வேண்டும். வாழ்க்கையே போராட்டமாக அமைந்த காரணத்தினாலேதான், நான் இந்த நிகழ்ச்சியைச் சுட்டிக் காட்டினேன்.",
+      "sourcePage": 332,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     332
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நிகழ்ச்சியை ஏற்பாடு செய்து, எனக்கு வெள்ளியால் ஆன உருவச்சிலை, தங்கச்சங்கிலி, கடிகாரம் போன்ற பல பொருள்களை அளித்திருக்கின்றார்கள். எங்கும், எந்த மேடையிலும் இப்படிப்பட்ட தங்கச்சங்கிலிகளை அணிவித்ததுண்டு. நான் மேடையிலே அவைகளை அணிந்துகொண்டு பேசியதில்லை. ஆனால், அதை இப்போது கழற்றக் கூடாது என்பது என்னுடைய ஆருயிர் நண்பனுடைய ஆணை. பக்கத்திலே இருந்து கழற்ற விடாமல்",
+      "sourcePage": 332,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     332
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பார்த்துக் கொண்டார். எனவேதான் அணிந்துகொண்டு உங்கள் முன்னால் நின்று கொண்டிருக்கின்றேன்.",
+      "sourcePage": 333,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     333
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கலை உலகத்திலே உள்ள பெருமக்களுக்கு, இங்கே அமர்ந்து இருக்கின்ற தம்பி சூப்பர் ஸ்டார் ரஜினி ஆனாலும், சுப்ரீம் ஸ்டார் தம்பி சரத்குமார் ஆனாலும், அல்லது என்னாலே புகழ்ந்துரைக்கப்பட்ட கலைஞானி தம்பி கமல் ஆனாலும், எழுச்சிக்கலைஞர் தம்பி விஜயகாந்த் ஆனாலும் அவர்களைப் போன்ற வேறு பல கலைஞர்கள் ஆனாலும், அவர்களுக்கெல்லாம் நான் ஒன்றும் பெரிதாக சாதித்துவிடவில்லை. அவர்களோடு சேர்ந்து 45-46-ஆம் ஆண்டில் இருந்து வளர்ந்தவன் என்கின்ற முறையிலும், அவர்களெல்லாம் பிறக்காத நேரத்திலேகூட, அவர்களெல்லாம் குழந்தைப் பருவத்திலே இருந்த காலத்திலேகூட, கலை உலகத்திலே ஈடுபாடு கொண்டவன் என்ற காரணத்தாலும், இன்றைக்கு 75-வது வயது நடைபெறுகிறது என்ற காரணத்தாலும், திரை உலகத்தைப் பொறுத்த வரையில், கலை உலகத்தைப் பொறுத்தவரையிலே 50 ஆண்டுகளைக் கடந்து விட்டவன் என்ற காரணத்தாலும், இந்தப் பொன்விழா, பவளவிழா இரண்டு விழாக்களையும் இங்கே நடத்திக் கொண்டிருக்கிறார்கள். அவர்களுடைய சிறந்த உள்ளத்திற்கு, பரந்த உள்ளத்திற்கு, பெருந்தன்மை வாய்ந்த உள்ளத்திற்கு, நான்தான் கடமைப்பட்டிருக்கிறேன் அல்லாமல், அவர்கள் யாரும் எனக்குக் கடமைப்பட்டவர்கள் அல்ல.",
+      "sourcePage": 333,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     333
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "திரை உலகத்தைப் பொறுத்தவரையில், இன்று நான் மகிழ்ச்சியடைகின்ற அளவிற்குப் பெரும் வளர்ச்சி ஏற்பட்டிருக்கிறது. அந்தத் தொழிலுக்கு அத்தகைய வளர்ச்சி ஏற்பட்டிருக்கிறதா என்றால் அது விவாதத்துக்குரிய ஒன்று. அதற்கு ஏற்பட்ட இடையூறுகளையெல்லாம்",
+      "sourcePage": 333,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     333
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்கள் என்னிடத்தில் எடுத்துச் சொல்லி, ஒரு அரசு எந்த அளவிற்கு அதற்கான உதவிகளைச் செய்ய முடியுமோ, அந்த உதவிகளைச் செய்கின்ற பொறுப்பை நான் ஏற்றுக்கொண்டேன் என்றாலும் கூட, முழுமையாகத் தமிழ்த் திரையுலகம், வெளிச்சத்திற்கு இன்றைக்கு வந்துவிட்டது; இருள் முழுமையாக மறைந்துவிட்டது என்று சொல்வதற்கில்லை. காரணம், எத்தனையோ சொல்லலாம். அவைகளையெல்லாம் இங்கே விளக்க விரும்பவில்லை நேரமாகிவிட்டது.",
+      "sourcePage": 334,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     334
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒன்றை நான் மகிழ்ச்சியோடு தெரிவித்துக் கொள்கிறேன். இந்த விழாவின் மூலமாகக் கலை உலகம் ஒன்றுபட்டு நிற்கிறது என்பதுதான் அந்த மகிழ்ச்சிக்குக் காரணம். (பலத்த கைதட்டல்) கலை உலகத்திலே வேற்றுமைகள் தோன்றாதா? தோன்றிய வேற்றுமைகள் அப்படியே சிரஞ்சீவித்தனம் வாய்ந்ததாக இருக்காதா? என்றெல்லாம் எதிர்பார்த்தவர்களுக்குப் பதிலளிக்கின்ற வகையில், உங்கள் அனைவரையும் ஒன்று சேர இந்த மேடையில் பார்ப்பதில் நான் மிகுந்த பெருமையடைகின்றேன். நீங்கள் தந்த வெள்ளிச் சிலையை விட, நீங்கள் வழங்கிய பரிசுகள் அனைத்தையும்விட, நீங்கள் வழங்கிய பாராட்டுக்கள், வாழ்த்துக்கள் அத்தனையும் விட, நீங்கள் அனைவரும் ஒற்றுமையாக மேடையில் அமர்ந்திருக்கின்ற காட்சியைத்தான் நான் கண்ணுளிர பார்க்கின்றேன். மனங்குளிர மகிழ்கின்றேன். இந்தக் காட்சி தொடரவேண்டும் என்று நான் விரும்புகின்றேன்.",
+      "sourcePage": 334,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     334
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்கே உரையாற்றிய பாலுமகேந்திரா அவர்கள் ஒரு கருத்தைச் சொன்னார்கள். பள்ளிக்கூடப் பாடங்களில் திரைக்கலையை ஒரு பாடமாக வைக்கவேண்டும் என்று சொன்னார். அவர் சினிமாவை ஒரு பாடமாக வைக்க",
+      "sourcePage": 334,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     334
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வேண்டும் என்று சொன்னார் என்றாலும், திரைக்கலையை ஒரு பாடமாக வைக்கவேண்டும் என்றுதான் அதற்குப் பொருள். அதற்கான முயற்சிகளை எப்படி மேற்கொள்ளலாம் என்பது குறித்து, கல்வி அமைச்சர் பேராசிரியர் இங்கு இருக்கிறார். அவரோடு கலந்து அதையும் ஒரு பாடமாக வைப்பது நலம் என்று கருதுகிறேன். ஏனென்றால், இப்போது இருக்கின்ற பாடங்களை எல்லா மாணவர்களும் விரும்பிப் படிக்க பள்ளிக்கூடத்திற்கு வருவதில்லை. அந்தப் பாடத்தை வைத்தாலாவது (பலத்த சிரிப்பு, கைதட்டல்) மாணவர்கள் அனைவரும் விரும்பி, பள்ளிக்கூடத்திற்கு வரமாட்டார்களா? என்கின்ற அந்த ஆசையில் பாலு மகேந்திரா சொன்ன யோசனையைப் பரிசீலிப்போம் நல்ல யோசனைதான் என்று நான் கூற விரும்புகின்றேன்.",
+      "sourcePage": 335,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     335
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நேரம் அதிகமாகி விட்டது. இந்த இடத்தைப் பொறுத்த வரையில் வடநாட்டைச் சேர்ந்த ஆனால், தமிழ்நாட்டிலே வாழ்ந்து கொண்டிருக்கிற குஜராத் மாநிலத்தின் நண்பர்கள் விழா ஒன்றை இங்கே நடத்திக் கொண்டிருக்கிறார்கள். அவர்கள் நமக்காக, நம்முடைய நெருக்கடியை உணர்ந்து அவர்களாகவே முன்வந்து, அவர்கள் வடக்கே உள்ளவர்களாக இருந்தாலும்கூட, தெற்கே உள்ளவர்களுக்கு இல்லாத அந்த அக்கறையோடு (பலத்த கைதட்டல்) இனிமேல் வடக்கு தெற்கு என்று பேசாதீர்கள் என்று எனக்கு அறிவுரை சொல்வதைப் போல, இந்த இடத்தையும் அவர்கள் தாராளமாகத் தந்து, இந்த நிகழ்ச்சிக்குப் பிறகு, தங்களுடைய நிகழ்ச்சிகளை நடத்திக்கொள்வதாகக் கூறி, அது மாத்திரமல்ல. முதலமைச்சர் நிதிக்காக ஒரு இலட்ச ரூபாய்க்கும் மேற்பட்ட காசோலை ஒன்றையும் இங்கே வழங்கியிருக்கின்றார்கள். அந்தக் காசோலையைப் பிரித்து பார்த்து எவ்வளவு என்று எண்ணிப்பார்த்தேன். ஏனென்றால்,",
+      "sourcePage": 335,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     335
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எல்லாம் ஒன்று ஒன்று ஒன்று என்று ஒரு லட்சத்து பதினோராயிரத்து நூற்றி பதினொன்று என்று இருந்தது.",
+      "sourcePage": 336,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     336
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்தக் காசோலையை நான் உற்றுப் பார்த்தபோது, சிவாஜி முகத்தைத் திருப்பிக்கொண்டு, இன்னும் அந்த பொருளாளர் நினைப்பு போகவில்லையா என்று கண்களால் கேட்டார். (சிரிப்பு) ஏனென்றால் அவர் இங்கே குறிப்பிட்டதைப் போல, நானும் அவரும், ஏதோ இன்றைக்குப் பத்து ஆண்டுக்காலம், இருபது ஆண்டுக்காலம் என்றல்ல. அவர் இங்கே சுட்டிக்காட்டியதைப் போல், தஞ்சைத் தெருக்கள், திருவாரூர்த் தெருக்கள் குடந்தைத் தெருக்கள், சென்னைத் தெருக்கள் என்று ஒரு காலத்திலே அலைந்து திரிந்தவர்கள். விளையாட்டுப் பிள்ளைகளாக இருந்தவர்கள். அறிஞர் அண்ணா அவர்கள் எங்களையெல்லாம் இணைத்து, எங்களைத் தம்பிகளாக ஏற்றுக் கொண்ட அந்தக் காலக் கட்டத்தில், கலைத்துறையின் மூலமாக கொள்கைப் பிரச்சாரத்தைச் செய்ய வேண்டுமென்று முடிவெடுத்துப் பணியாற்றிய அந்தக் காலகட்டத்தில், நானும் சிவாஜியும் சேர்ந்து இயக்கப் பிரச்சாரங்கள், நாடகங்கள் சிலவற்றிலே கலந்து கொண்டிருக்கின்றோம்.",
+      "sourcePage": 336,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     336
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தூக்குமேடை நாடகம், வாழ முடியாதவர்கள் நாடகம் என்று இப்படிப் பல நாடகங்கள். அந்த நாடகங்களிலே நடித்தபோதுதான், நெல்லை மாவட்டத்திலே சங்கரன் கோவிலில் தஞ்சை மாவட்டத்தின் புயல் நிதிக்காக நாடகத்தை நடத்தியபோது, நானும் சிவாஜியும் அங்கு போயிருந்தோம். காலையிலே போய்ச் சேர்ந்தோம். நாடகத்திற்கு ஏற்பாடு செய்தவர்கள் மேடைக்குப் பக்கத்திலே ஒப்பனை அறைகளை",
+      "sourcePage": 336,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     336
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அமைக்கவில்லை. என்ன செய்வது என்று தெரியாமல், நாங்கள் தங்கியிருந்த இடத்திலேயே ஒப்பனை செய்து கொண்டு, அங்கிருந்து புறப்பட்டு நாடகம் நடக்கிற இடத்திற்குப் போனால், அந்த இடத்திலே நாடக மேடைக்குப் பின்புறத்திலே வழிகிடையாது. நாடகம் பார்க்க வந்திருக்கின்ற மக்களைத் தாண்டித்தான் போக வேண்டும். நானும் சிவாஜியும் மற்ற நடிகர்களும் தலையிலே முக்காடு போட்டுக்கொண்டு, மக்கள் குழுமியிருந்த அந்தப் பகுதியைக் கடந்து மேடைக்குச் சென்றோம். நடித்தோம்.",
+      "sourcePage": 337,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     337
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நடித்த பிறகு, எங்களை உண்மையிலே நாடகம் நடத்தியவர்கள் முக்காடு போட வைத்துவிட்டார்கள். 4000 ரூபாய் அன்றைக்கு நாடகத்திலே கிடைத்த மிச்சத் தொகையை எடுத்துக் கொண்டு, புயல் நிவாரண நிதிக்காக நடத்திய நாடகத்தின் எஞ்சிய தொகையை நாடகம் நடத்தியவர் எடுத்துக் கொண்டு காணாமல் போய்விட்டார். எப்படி நாங்கள் திரும்பி வருவதென்று தெரியவில்லை. “வாழ முடியாதவர்கள்” நாடகத்தை நடத்திய நாங்கள் ஊருக்குத் திரும்ப முடியாதவர்கள் ஆனோம்.",
+      "sourcePage": 337,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     337
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அப்போதுதான் தங்கப்பழம், கே.வி.கே. சாமி, சிவசாமி என்ற நண்பர்கள் நாடகம் பார்க்க வந்திருந்தார்கள். அவர்கள் சென்னைக்குத் திரும்பி போவதற்காகவாவது ஒரு நாடகத்தை தூத்துக்குடியில் நடத்துங்கள் என்று எங்களை அழைத்துச் சென்றார்கள். காலையிலே விளம்பரம் செய்து மாலையிலே நாடகத்தை நடத்திவிட்டு, அதிலே மிச்சப்பட்ட தொகையைக் கொண்டு சென்னைக்கு திரும்பி வந்தோம். இப்படிச் சோதனையான காலத்தில், வேதனையான காலத்தில், இந்த இயக்கத்திலே என்னோடு ஒத்துழைத்து அண்ணா",
+      "sourcePage": 337,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     337
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவர்களுக்குத் தம்பியாகவும், பெரியாருக்கு மாணவனாகவும் திகழ்ந்தவர்தான் என்னுடைய ஆருயிர் நண்பர் சிவாஜி அவர்கள். அந்த அன்பும் பாசமும் வற்றிவிடவில்லை. வற்றாது. எந்தக் காலத்திலும் வற்றாது என்பதற்கு அடையாளமாக அவருடைய உள்ளம் திறந்த பேச்சு இங்கே அமைந்திருந்ததை நீங்கள் கண்டீர்கள்.",
+      "sourcePage": 338,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     338
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நான் மகிழ்ச்சியோடு இங்கு வந்து பேசவேண்டும் என்றிருந்தேன். ஆனால், என்னைக் கண்ணீர்விட வைத்துப் பேச என்று சொன்னார். எத்தகைய உணர்ச்சிக் குமுறலோடு இங்கு வந்தேன் என்பதும், தம்பி பிரபுதான் கைதாங்கலாக இந்த ஒலிபெருக்கிக்கு முன்னால் அழைத்து வரமுடிந்தது என்பதும் நீங்களெல்லாம் அறிவீர்கள். அந்த அளவிற்கு உணர்ச்சிப்பிழம்பாக நான் ஆகிவிட்டேன். தன்னுடைய வயதை எடுத்துக்கொள்ளச் சொன்னார்.",
+      "sourcePage": 338,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     338
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கமல் குறிப்பிட்டதைப்போல, பகுத்தறிவாளர்கள் அதை ஏற்றுக்கொள்ள இயலாது, ஏனென்றால், யார் வயதையும் யாரும் எடுத்துக் கொள்ளமுடியாது. நானும் சரி, சிவாஜியும் சரி, பல்லாண்டுக் காலம் வாழவேண்டுமென்று நீங்கள் வாழ்த்துவீர்களேயானால், இங்கே அமர்ந்திருக்கின்ற நீங்களெல்லாம்கூட, அத்தகைய வாழ்த்துக்களைப் பெற்றவர்கள்தாம். அத்தகைய பரிசுகளை, பாராட்டுக்களைப் பெற்றவர்கள்தாம். இதுபோன்ற விழாக்களில் கதாநாயகர்களாக அமர்ந்தவர்கள்தாம். எனவே, பல்லாண்டு காலம் வாழ்க என்று வாழ்த்துவது, ஒருவருடைய இயற்கையான முடிவிற்குப் பிறகுகூட, பல்லாண்டு காலம் மக்கள் மனதிலே அவர்களுடைய பெயர் நிலைப்பதுதான் பல்லாண்டு காலம் வாழ்க என்பதற்குப் பொருள். (பலத்த கைதட்டல்) என்னுடைய ஆருயிர் நண்பா!",
+      "sourcePage": 338,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     338
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆரம்ப கால நண்பா! கலை உலகத்திற்குக் கிடைத்த கற்கண்டே, கருவூலமே, சிவாஜியே நீயும், நானும் அடிக்கடிச் சந்திக்கிறோமா, இல்லையா? என்று பலபேருக்குத் தெரியாது. சந்திப்பு என்று பத்திரிகைகளில் வராத காரணத்தால்; நமக்குள்ளே எத்தனையோ வேறுபாடுகள் என்று வியாக்கியானங்கள் நாட்டிலே நடைபெற்றுக் கொண்டிருக்கின்றன. அந்த வியாக்கியானங்களையெல்லாம் மீறி, நீயும் நானும் ஒன்று தான். இரு உருவங்கள் ஒரே உள்ளம். ஒரே உயிர் என்ற அளவிலே நாம் இருக்கின்றோம். இன்று காலையிலேயே என் தாய் அஞ்சுகத்தம்மையார் நினைவையொட்டி வெளியிடப்பட்ட மலர் ஒன்றைப் பார்க்க நேரிட்டது. அதிலே சிவாஜி என் அம்மாவைப் பற்றி எழுதிய கட்டுரையில் குறிப்பிடுகிறார். அஞ்சுகத்தாய் வேறு. என் தாய் வேறா? எனக்கும் கலைஞர் மு.க.வுக்கும் இரண்டு பேருக்கும் ஒரே தாய்தான். அந்த தாய் அஞ்சுகத்தாய் என்று குறிப்பிடப்பட்டிருக்கின்றார். அதைப் போலத்தான் சிவாஜியின் தாய் என் தாய் அவருக்குத் தாய். நாங்கள் இருவரும் தமிழ்த்தாயின் மக்கள். உங்களின் சகோதரர்கள்.",
+      "sourcePage": 339,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     339
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த இனிய எழுச்சி விழாவிற்குக் கர்நாடகத்திலே இருந்து வருகை தந்துள்ள முதலமைச்சர் ஜே.எச். பட்டேல் அவர்கள் இங்கே குறிப்பிட்டார். என்னை விட அந்தச் சிலை வயதான தோற்றத்தில் இருக்கிறது என்று குறிப்பிட்டார். ஆனால், அவர் எனக்குக் கடிதம் எழுதும் போதெல்லாம். My Dear Old Man, How are you என்றுதான் எழுதுவார். ஆங்கிலத்தில் எழுதும்போது அப்படித்தான் எழுதுவார். அந்தக் கடிதத்தை யாரோ தவறாகப் பார்த்து விட்டு, இப்படிச் சிலை செய்துவிட்டார்களோ என்னவோ எனக்குத் தெரியாது. (பலத்த சிரிப்பு) கர்நாடக முதலமைச்சரை ஏன் இங்கு அழைத்தோம். ஏன் அழைக்கப்",
+      "sourcePage": 339,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     339
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பட்டிருக்கிறார். நாம் அழைத்து அழைத்து வராமல் இருந்த ஒன்றே வந்துவிட்டபிறகு, (பலத்த கைதட்டல்) அதைத் தந்தவரை அழைக்கவேண்டாமா என்பதற்காகத்தான் அவரை அழைத்திருக்கின்றோம். அவருக்கும், அவரோடு வந்த அமைச்சர் ஆனந்தத் அவர்களுக்கும், இந்த விழாக்குழுவின் சார்பாக நன்றியைத் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "விழாக்குழுவினர் எத்தகைய சிரமங்கள் எடுத்துக் கொண்டு இந்த விழாவை நடத்தினார்கள் என்பது எனக்கு நன்றாகத் தெரியும். எவ்வளவு பாடுபட்டார்கள் என்பதும் எனக்கு நன்றாகத் தெரியும். ஆனால், அவர்கள் பட்டபாடு வீண்போகவில்லை. இந்த விழாவைக் கடந்த 20-ஆம் தேதியே வைத்துக்கொள்ளலாம் என்று நான் தேதி கொடுத்திருந்தேன். கே.ஆர்.ஜி.யும் எ.வி.எம். சரவணனும், சிந்தாமணி முருகேசனும் மற்றவர்களும் பாரதிராஜாவும் என்னைச் சந்தித்தபோது, 27-ஆம் தேதிதான் வசதியாக இருக்கும் என்று சொன்னார்கள். நான் அப்போது சொன்னேன். மழைக்காலம் நெருங்குகின்ற காலக்கட்டம். எனவே 20-ஆம் தேதியே வைத்துக்கொள்ளுங்கள் என்று சொன்னேன். இல்லை இந்தத் தேதிதான் என்று பிடிவாதம் பிடித்தார்கள். சில வேளைகளில் நான் சொல்வதையும் கேட்கவேண்டும் என்பதை இதில் இருந்தாவது புரிந்து கொள்ளவேண்டும் என்று குறிப்பிட விரும்புகின்றேன்.",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆனால், குறிப்பிட்ட இடத்தில் நேரு ஸ்டேடியம் திறந்த வெளியில் இந்த விழா நடைபெற்றிருந்தால், இன்றைக்கு விழா நடைபெற்றிருக்க முடியாது. இயற்கையின் சீற்றத்தால், பொழிகின்ற மழையினால் விழா நடைபெற்றிருக்க முடியாது.",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அங்கே நடைபெறாமல், இந்த விழா இங்கே நடைபெறுவதற்கு உதவியவர்களுக்கு என்னுடைய",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இதயமார்ந்த நன்றியைத் தெரிவித்துக்கொள்கின்றேன். (பலத்த கைதட்டல்) எந்தத் தடைகள் வந்தாலும், “தடைக் கற்கள் உண்டென்றாலும் தடந்தோள் உண்டெனச் சிரிப்பாய்” - என்றான் புரட்சிக்கவிஞர் பாரதிதாசன். அதைப்போல தடைக்கற்கள் எத்தனை வந்தாலும், அதைத் தாண்டிச் செல்கின்ற தடந்தோள் கொண்டவர்கள் நம்முடைய கலை உலகத்து நண்பர்கள் என்பதை நிரூபித்துக்காட்டியிருக்கின்றார்கள். அவர்களுக்கும், என்னை வாழ்த்திய கலை உலகப் பெருமக்களுக்கும் அவர்கள் வயதிலே சிறியவர்களாக இருந்தால், அவர்களின் கையைப்பிடித்து நான் என்னுடைய ஆனந்தக்கண்ணீரைப் பொழிகிறேன். என்னைவிட வயதிலே பெரியவர்களுடைய கால்களில் என் கண்ணீர் முத்துக்களை உதிர்த்து அவர்களையெல்லாம் வணங்கி நன்றி தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 341,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     341
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "27-9-98 அன்று சென்னையில் திரையுலகம் நடத்திய பாராட்டு விழாவில் ஆற்றிய உரை",
+    "sourcePage": 341
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "English translation",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "Chennai - Film Industry Appreciation Function",
+    "sourcePage": 330
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To the distinguished members of the film world—brother E.V.M. Saravanan, K.R.G., Chinthamani Murugesan, the affectionate friends who are part of the organising committee, and brother Kaviyarasu Vairamuthu, who stood with them and cooperated—I first convey my heartfelt thanks to all of you.",
+      "sourcePage": 330,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     330
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "While speaking, Sivaji asked why he had been invited to preside over this function when there were so many elders. There may be many elders. But there is only one person fit to preside over a function of the film world. (Loud applause) That is why Sivaji has presided over this function.",
+      "sourcePage": 330,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     330
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Iyakkunar Sigaram Balachander, who delivered the welcome address, and Bharathiraja, who offered felicitations, both referred to the various obstacles that arose along the way. They pointed out that this function is being held after many obstacles.",
+      "sourcePage": 330,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     330
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I wish to remind you of one thing. I am speaking of a struggle from the time when Arignar Anna was alive. In the course of a struggle I was imprisoned, and I came out of Tiruchirappalli prison. To receive me, Perarignar Anna waited at the gates of the Tiruchirappalli prison and welcomed me. That day there was an appreciation meeting for me in Tiruchirappalli. The next day there was an appreciation meeting in Chennai under Anna's leadership.",
+      "sourcePage": 331,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     331
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Anna said, “After speaking in Tiruchirappalli, come to Kanchipuram tomorrow. You will have a meal at home there. The two of us can then go together to the appreciation function in Chennai.” So, after taking part in the Tiruchirappalli function, I went to Kanchipuram the next morning, had lunch at Anna's home, and in the evening the two of us set out for the function in Chennai. On the way, from Anbagam, which is beside what is now Anna Arivalayam, a procession set out after welcoming us. Anna and I were seated in a chariot and the procession went to the seafront. At the seafront, a festival was taking place. Anna spoke in appreciation. At ten at night, Anna and I returned home.",
+      "sourcePage": 331,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     331
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At that time my mother, Anjugam Ammaiyar, welcomed us and seated us in the hall. Looking at my mother, Anna asked, “What, Amma, are you well?” Then my mother looked at Anna and said, “My younger brother, yesterday you were released from Vellore prison.",
+      "sourcePage": 331,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     331
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“As soon as you were released, you came to Kanchipuram and saw your mother. Yes! After seeing your mother, you went back again to Vellore and spoke at a meeting, did you not?” she asked. “Yes, Amma,” said Anna. “It seems your mother suffered for one day to give birth to you. I suffered for 26 days to give birth to my child. That is why my child, after being released in Tiruchirappalli and speaking at the Tiruchirappalli meeting, came to Kanchipuram, came on to Chennai, and without even coming home went with you to speak at the seafront meeting, and has only now come home,” she said. At that, Anna laughed heartily.",
+      "sourcePage": 332,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     332
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Why do I say this? Even my birth took 26 days of suffering. Birth itself was a struggle. I am one who came into the world after waging a struggle even to be born. If I am to take part in a function, how many obstacles must I cross to reach it? It is because life itself has taken the form of a struggle that I recalled this incident.",
+      "sourcePage": 332,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     332
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Those who organised this event have presented me with a silver statue, a gold chain, a watch and several other things. At many places and on many stages such gold chains have been placed around my neck. I have never stood on a stage and spoken while wearing them. But my dearest friend's command is that I must not remove this one now. Standing beside me, he made sure I did not take it off.",
+      "sourcePage": 332,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     332
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "That is why I am standing before you wearing it.",
+      "sourcePage": 333,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     333
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To the distinguished people of the art world—whether it is brother Super Star Rajini seated here, Supreme Star brother Sarathkumar, Kalaignani brother Kamal whom I have praised, Ezhuchikkalaignar brother Vijayakanth, or the many other artists like them—I have not accomplished anything very great for them. Rather, I grew together with them from the years 45-46; I was involved in the art world even at a time when some of them had not yet been born and when some were still children; I am now in my 75th year; and, as far as the film world and the art world are concerned, I have crossed fifty years. For these reasons they are conducting both a golden-jubilee celebration and a pavala-vizha celebration here. It is I who am indebted to their fine hearts, their broad hearts, their magnanimous hearts; none of them is indebted to me.",
+      "sourcePage": 333,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     333
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As far as the film world is concerned, it has grown enormously, to an extent that gives me great happiness today. Whether the industry itself has experienced a corresponding growth is a matter for debate. They have brought to me the many difficulties that have affected it, and though I have accepted the responsibility of providing whatever assistance a government can provide,",
+      "sourcePage": 333,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     333
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "it cannot be said that the Tamil film world has today come completely into the light and that the darkness has disappeared entirely. There are many reasons one could mention. I do not wish to explain all of them here; it is already late.",
+      "sourcePage": 334,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     334
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There is one thing I am happy to say. Through this function the art world stands united, and that is the reason for my happiness. (Loud applause) Will differences not arise in the art world? Will the differences that have arisen not remain permanently? In answer to those who expected such things, I take immense pride in seeing all of you together on this stage. More than the silver statue you have given me, more than all the gifts you have presented, more than all the praise and felicitations you have offered, it is the sight of all of you seated together on this stage in unity that brings delight to my eyes and joy to my heart. I want this sight to continue.",
+      "sourcePage": 334,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     334
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Balu Mahendra, who spoke here, expressed one idea. He said that film art should be made a subject in the school curriculum. Although he said that cinema should be made a subject,",
+      "sourcePage": 334,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     334
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "what he meant was that film art should be made a subject. The Education Minister, the Professor, is here; I think it would be good to consult him about how such an effort might be undertaken and to make it a subject. After all, not every student now comes to school eagerly to study the subjects that already exist. If that subject were introduced, perhaps (Loud laughter, applause) all the students would come to school eagerly! With that hope, I wish to say that we shall consider Balu Mahendra's suggestion; it is indeed a good suggestion.",
+      "sourcePage": 335,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     335
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "It has become very late. As for this venue, friends from the State of Gujarat—people from North India who are living in Tamil Nadu—are conducting a function here. Understanding our difficulty, they themselves came forward and, though they are from the North, showed a concern that even people in the South did not show. (Loud applause) As though advising me, “Do not speak of North and South anymore,” they generously made this place available to us, saying that they would hold their own programmes after this event. Not only that, they have also presented here a cheque for more than one lakh rupees for the Chief Minister's Fund. I looked closely at the cheque and counted the amount. Because—",
+      "sourcePage": 335,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     335
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "it was all ones: one lakh eleven thousand one hundred and eleven.",
+      "sourcePage": 336,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     336
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "When I looked intently at that cheque, Sivaji turned his face toward me and, with his eyes, asked, “Has that treasurer's habit still not left you?” (Laughter) Because, as he mentioned here, it is not as though he and I have been together merely for ten years or twenty years. As he pointed out here, there was a time when we wandered the streets of Thanjavur, the streets of Thiruvarur, the streets of Kudanthai, and the streets of Chennai. We were playful young men. In that period when Arignar Anna brought us all together and accepted us as his younger brothers, and when we decided to work through the arts to carry out ideological propaganda, Sivaji and I together took part in movement propaganda and in several plays.",
+      "sourcePage": 336,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     336
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "There were many such plays—`Thookkumedai`, `Vaazha Mudiyathavargal`, and others. It was while acting in those plays that, when a drama was staged at Sankarankovil in Tirunelveli district to raise money for the Thanjavur district cyclone-relief fund, Sivaji and I had gone there. We arrived in the morning. The organisers of the drama had not arranged make-up rooms beside the stage.",
+      "sourcePage": 336,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     336
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Not knowing what else to do, we put on our make-up at the place where we were staying and set out from there for the place where the drama was to be performed. But there was no way to reach the rear of the stage. We had to pass through the people who had come to watch the drama. Sivaji, the other actors and I covered our heads and crossed the area where the crowd had gathered to reach the stage. We performed.",
+      "sourcePage": 337,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     337
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After we had performed, the people who conducted the drama truly made us cover our heads. Taking the 4000 rupees that remained from the day's performance—the balance from the drama held for cyclone relief—the organiser disappeared. We did not know how we were going to return. We who had staged `Vaazha Mudiyathavargal`—“Those Who Cannot Live”—became people who could not get back home.",
+      "sourcePage": 337,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     337
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "At that time, friends Thangapazham, K.V.K. Samy and Sivasamy had come to watch the drama. They took us with them, saying, “At least to enable you to return to Chennai, stage one drama in Thoothukudi.” They publicised it in the morning, we staged the drama that evening, and with the amount left over from it we returned to Chennai. In such a testing time, in such a painful time, the one who worked with me in this movement, as a younger brother to Anna",
+      "sourcePage": 337,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     337
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "and as a student of Periyar, was my dearest friend Sivaji. That love and affection have not dried up. They will not dry up. You saw in the open-hearted speech he delivered here a sign that they will never dry up at any time.",
+      "sourcePage": 338,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     338
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I had intended to come here and speak happily. But he told me to speak after making me shed tears. You all know the surge of emotion with which I came here, and that it was brother Prabhu who had to support me by the hand and bring me before this microphone. I had become such a flame of emotion. Sivaji asked me to take his years.",
+      "sourcePage": 338,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     338
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "As Kamal pointed out, rationalists cannot accept that, because no one can take another person's years. Whether it is I or Sivaji, if you wish that we should live for many years, then all of you seated here too are people who have received such wishes. You too have received such gifts and appreciation. You too have sat as the central figures at functions like this. Therefore, when we wish that someone should “live for many years,” what it means is that even after that person's natural end, his name should remain for many years in the hearts of the people. (Loud applause) My dearest friend!",
+      "sourcePage": 338,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     338
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "My friend from the earliest days! Sweet candy given to the art world, treasure-house, Sivaji! Many people do not know whether you and I meet often or whether we do not. Because reports of our meetings do not appear in the newspapers, interpretations are constantly being made across the country that there are all kinds of differences between us. Beyond all those interpretations, you and I are one. We are two forms with one heart. We are as one life.",
+      "sourcePage": 339,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     339
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "This very morning I happened to see a commemorative volume published in memory of my mother Anjugathammaiyar. In the article Sivaji wrote there about my mother, he says: “Is Anjugaththai one person and my mother another? Kalaignar M.K. and I, both of us, have only one mother. That mother is Anjugaththai.” In the same way, Sivaji's mother is my mother, and my mother is his mother. The two of us are children of Mother Tamil. We are your brothers.",
+      "sourcePage": 339,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     339
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karnataka Chief Minister J.H. Patel, who has come from Karnataka for this pleasant, stirring function, observed here that the statue looks older than I do. But whenever he writes me a letter, he writes only, “My Dear Old Man, How are you”. That is how he writes in English. I do not know whether someone saw that letter by mistake and made the statue like this. (Loud laughter) Why did we invite the Karnataka Chief Minister here? Why has he been invited—",
+      "sourcePage": 339,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     339
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "After the very thing that did not come despite our calling and calling has finally come, (Loud applause) should we not invite the person who gave it? That is why we have invited him. On behalf of this organising committee, I convey my thanks to him and to Minister Anandath, who came with him.",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "I know very well what kinds of difficulties the organising committee took upon itself to conduct this function. I know very well how hard they worked. But their labour has not gone in vain. I had given them a date, saying that this function could be held on the 20th itself. When K.R.G., E.V.M. Saravanan, Chinthamani Murugesan, the others and Bharathiraja met me, they said that only the 27th would be convenient. I told them then that the rainy season was approaching, and therefore they should keep it on the 20th. “No, this is the date,” they insisted. I wish to point out that, at least from this, they should understand that sometimes they must listen to what I say too.",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "But if this function had been held at the originally specified place, in the open at Nehru Stadium, it could not have taken place today. Because of nature's fury, because of the pouring rain, the function could not have been held.",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "To those who helped make it possible for this function to take place here instead of there, I offer my",
+      "sourcePage": 340,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     340
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "heartfelt thanks. (Loud applause) Whatever obstacles may come, Revolutionary Poet Bharathidasan said, “Though there be obstructing stones, smile, saying, ‘There are broad shoulders.’” In the same way, however many obstacles may come, our friends of the art world have proved that they possess broad shoulders capable of crossing them. To them, and to the distinguished people of the art world who felicitated me, if they are younger than I am, I hold their hands and shed my tears of joy. At the feet of those who are older than I am, I let fall the pearls of my tears, bow to them all, and convey my thanks.",
+      "sourcePage": 341,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     341
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "“Speech delivered on 27-9-98 in Chennai at the appreciation function conducted by the film industry.”",
+    "sourcePage": 341
+   }
+  ]
+ },
+ "sourcePages": [
+  330,
+  331,
+  332,
+  333,
+  334,
+  335,
+  336,
+  337,
+  338,
+  339,
+  340,
+  341
+ ],
+ "venue": {
+  "ta": "சென்னை",
+  "en": null
+ },
+ "event": {
+  "ta": "திரையுலகம் நடத்திய பாராட்டு விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-2",
+  "titleTa": "முத்துக் குளியல் — பாகம் II",
+  "titleEn": "Muthukkuliyal — Part II",
+  "ordinal": 28,
+  "total": 36
+ }
+}

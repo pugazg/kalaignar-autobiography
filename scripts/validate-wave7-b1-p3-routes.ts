@@ -34,6 +34,8 @@ import "../app/cinema/vandikkaran-magan/page";
 import "../app/cinema/vandikkaran-magan/source/page";
 import "../app/cinema/naam/page";
 import "../app/cinema/naam/source/page";
+// Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
+import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 
 const SECTION_MOD: Record<Wave7CinemaSlug, { params: () => { section: string }[]; dyn: unknown }> = {
   "maruthanattu-ilavarasi": { params: maruSections as () => { section: string }[], dyn: maruDyn },
@@ -138,7 +140,7 @@ if (fs.existsSync(pm)) {
   // total. Its own routes are proved by validate-wave7-b2-b4-*; here they are only added to the live total
   // so this stays a live gate at the P4 tip without weakening B1's recorded afterP3 (4051).
   const w7bLive = LIBRARY_WORKS.some((w) => w.slug === "arumbu" && w.state === "published");
-  const w7bBuild = w7bLive ? 225 : 0;
+  const w7bBuild = (w7bLive ? 225 : 0) + (LIBRARY_WORKS.some((w) => w.id === "kuraloviyam") ? W7K_ALL.build : 0); // + later Wave-7 B5/B6/K routes once published
   eq(routeKeys.size, p3.buildDelta.afterP3.prerenderRoutes + w7bBuild, `build prerender total == recorded afterP3${w7bBuild ? " + 225 (Wave-7 B2-B4)" : ""} (${p3.buildDelta.afterP3.prerenderRoutes + w7bBuild})`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");

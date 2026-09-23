@@ -1,0 +1,922 @@
+{
+ "workId": "kannimara-pothu-noolaga-nootrandu-vizha",
+ "slug": "kannimara-pothu-noolaga-nootrandu-vizha",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/kannimara-pothu-noolaga-nootrandu-vizha",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "shelf": "speeches",
+ "subtype": "public-speech",
+ "readerStructure": "speech",
+ "date": "1997-09-13",
+ "year": 1997,
+ "title": {
+  "ta": "கன்னிமாரா பொது நூலக நூற்றாண்டு விழா",
+  "en": "Connemara Public Library Centenary Function"
+ },
+ "speechType": "public-speech-constituent",
+ "speaker": {
+  "nameTa": "கலைஞர் மு. கருணாநிதி",
+  "nameEn": "M. Karunanidhi"
+ },
+ "transcriptionStatus": "verified-complete",
+ "translationStatus": "verified-complete",
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.4,
+  "basis": "body-word-count"
+ },
+ "tamil": {
+  "sectionTitleTa": "தமிழ் மூல உரை",
+  "blocks": [
+   {
+    "kind": "heading",
+    "text": "கன்னிமாரா பொது நூலக",
+    "sourcePage": 595
+   },
+   {
+    "kind": "heading",
+    "text": "நூற்றாண்டு விழா",
+    "sourcePage": 595
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கன்னிமாரா பொது நூலகத்தின் நூற்றாண்டு விழா - பொதுநூலகத் துறையின் வெள்ளிவிழா - ஆகிய இரு விழாக்களும் சீரோடும் சிறப்போடும் நடைபெறுகின்ற இந்த நாளில் உங்களோடு இந்த விழாவில் கலந்துகொள்கிற வாய்ப்பு பெற்றமைக்காக என்னுடைய மகிழ்ச்சியைத் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 595,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     595
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த நூலகத்தின் சிறப்புக்களை எனக்கு முன்னால் இங்கே உரையாற்றிய பேராசிரியர் அவர்களும், பேரவைத் தலைவர் அவர்களும், மற்றும் நண்பர்களும் எடுத்துக் கூறியிருக்கிறார்கள். இந்த விழாவில் ஒன்றை நான் குறிப்பிட்டுச் சொல்ல வேண்டும். எங்களுக்கெல்லாம் மாறி மாறி பல பொன்னாடைகள் இங்கே வழங்கப்பட்டன. இந்த பொன்னாடைகளுக்குப் பதிலாக நூல்களே வழங்கப்பட்டிருக்குமானால் (கைத்தட்டல்) நான் மிகுந்த மகிழ்ச்சி அடைந்திருப்பேன்.",
+      "sourcePage": 595,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     595
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒருவேளை, நல்லி சொல்லக்கூடும் - பொன்னாடையும் நூலில் ஆனதுதானே என்று சொல்லக்கூடும். (பலத்த கைத்தட்டல்) இருந்தாலும் ஒரு பொன்னாடையின் விலையும் அதற்குப் பதிலாக நீங்கள் நூல்களாக வழங்கினால் எத்தனை நூல்களை நாங்கள் பெற்றிருக்க முடியும் என்ற நிலையையும் எண்ணிப் பார்த்தால் -",
+      "sourcePage": 595,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     595
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இனியாவது நடைபெறுகின்ற விழாக்களில், அது நூலகத்தின் விழாவாகத்தான் இருக்க வேண்டுமென்றில்லை; அது மணவிழா நிகழ்ச்சியாக இருந்தாலும் பரிசளிப்பது, அன்பளிப்பு வழங்குவது, மாலை மரியாதை செய்வது என்ற இவற்றுக்குப் பதிலாக நூல்களை வழங்குவதை கன்னிமாரா பொது நூலக நூற்றாண்டு விழாவிலேயிருந்து நாம் தொடங்க வேண்டுமென்று கேட்டுக் கொள்கிறேன். (பலத்த கைத்தட்டல்)",
+      "sourcePage": 596,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     596
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நூலகம் அமைத்தல், படிப்பகம் அமைத்தல் இவை எத்துணை பயனுடையது என்பதை நான் என்னுடைய பொது வாழ்க்கையிலே கண்டவன். நான் இளம் மாணவனாக இருந்த காலகட்டத்தில் திருவாரூரில் சிறுவர் சீர்திருத்தச் சங்கம் என்று ஒரு அமைப்பை உருவாக்கி ஒரு சிறிய ஓலைக் குடிசையிலே அந்தச் சங்கத்தை நடத்திக் கொண்டிருந்த போது, அந்தச் சங்கத்திற்குள்ளேயும் பத்து, பதினைந்து நூல்கள் - பெரியவர்கள், பெருமக்கள் எழுதிய நூல்கள் - அங்கே படிப்பதற்கென்று இருந்தது உண்டு.",
+      "sourcePage": 596,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     596
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அதன்பின்னர், 45,46ஆம் ஆண்டுகளில் நான் கோவையில் - திரைப்படத் தொழிலில் ஈடுபாடு கொண்டு அங்கே கோவைக்கு அருகேயுள்ள சிங்காநல்லூரில் வாழ்ந்து வந்தேன். அந்தச் சிங்காநல்லூர் பகுதி, அந்தக் காலக்கட்டத்தில் ஒரு பயங்கரமான வன்முறைப் பகுதி. அங்கேதான் எனக்கு வீடு கிடைத்தது. குடும்பத்தோடு நான் அங்கே வசித்துக் கொண்டிருந்தேன். அங்கே இருந்தாலுங்கூட, நான் ஏற்றுக்கொண்ட கொள்கைகளை, அந்தப் பகுதியில் பரப்பிட வேண்டுமென்ற அவா எனக்கு மிகையாக இருந்தது. ஆனால் அந்த ஆவலை வெளியிட்டால் உயிருக்கே ஆபத்து என்பது எனக்குத் தெரியும். அப்படிப்பட்ட இடம்.",
+      "sourcePage": 596,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     596
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அங்கே ஒவ்வொரு நாளும் ஒரு கொலை விழும் - அரசியல் கொலை.",
+      "sourcePage": 597,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     597
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அந்த இடத்திலிருந்து நான் திரைப்படத் தொழிலில் வசனங்களை எழுதுகிற, திரைக்கதை எழுதுகிற அந்தப் பணியை ஆற்றிக் கொண்டிருந்தபோது - எனக்கொரு நண்பர் அங்கே கிடைத்தார். அவர் பெயர் அண்ணாசாமி. அவரும் நானும் நெருங்கிப் பழகினோம். இன்னும் சொல்லப் போனால், அவருடைய வீட்டின் ஒரு பகுதியிலேதான் நான் குடும்பத்தோடு வாழ்ந்து கொண்டிருந்தேன். எனக்கு எப்படியாவது அந்தப் பகுதியிலே வேறு பல கட்சிகளுடைய வன்முறைகளுக்கிடையிலேயும் நம்முடைய கொள்கைகளை - தந்தை பெரியாரின் சிந்தனைகளை - அண்ணாவின் எண்ணங்களைப் பரப்ப வேண்டும் என்ற அந்த ஆர்வம் என்னைத் துளைத்துக் கொண்டேயிருந்த காரணத்தால் - நானும் நண்பர் அண்ணாசாமியும் சேர்ந்து ஒரு யோசனை செய்தோம்.",
+      "sourcePage": 597,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     597
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பாரதி படிப்பகம் - பாரதி நூலகம் என்ற ஒன்றை அங்கே அமைத்தோம். பாரதியின் பெயரால் நூலகம், படிப்பகம் அமைத்தால்தான் அங்கே, அது இருக்கும். இல்லாவிட்டால் உடைத்தெறியப்படும், அந்தக் காலக் கட்டத்தில்! பாரதிதாசன் பெயராலோ, பெரியார் பெயராலோ, அண்ணா பெயராலோ நூலகம் அமைத்தால் அவைகள் அங்கே அந்தக் காலத்தில் இருக்க முடியாது.",
+      "sourcePage": 597,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     597
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவே, பாரதியார் பெயரால் நூலகம் அமைத்து, அதிலே திராவிடர் இயக்கச் சார்பற்ற ஏடுகளையெல்லாம் கொஞ்சம் கொஞ்சமாக வாங்கி, அதைப் படிக்கின்ற ஆர்வத்தை அந்தப் பகுதியிலே உள்ள மக்களிடத்திலே பரப்பி, ஒவ்வொரு நாளும் அவர்களும் வந்து காலை, மாலை நேரங்களில் அங்கே வாங்கி வழங்கப்படுகின்ற",
+      "sourcePage": 597,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     597
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாளேடுகளை, வார ஏடுகளை, புத்தகங்களைப் படித்துக் கொண்டிருந்த போது - வாழைப்பழத்தில் ஊசியை ஏற்றுவதைப் போல - வார ஏடுகளிலே திராவிடநாடு ஏடு வரவழைக்கப்பட்டது. குடியரசு ஏடு வரவழைக்கப்பட்டது. நாளேடுகளில் - மற்ற நாளேடுகளோடு ஒரு நாளேடாக விடுதலை ஏடு வரவழைக்கப்பட்டது.",
+      "sourcePage": 598,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     598
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்றைக்குச் சொல்கிறேன்; சிங்காநல்லூர் எங்கள் இயக்கத்தின் கோட்டையாக இருக்கிறதென்றால், அன்றைக்கு 45-ஆம் ஆண்டு உருவான பாரதி படிப்பகம் தான் காரணம் என்று கூறுவேன். (கைத்தட்டல்)",
+      "sourcePage": 598,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     598
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவே நூலகத்தின் பயனை, படிப்பகத்தின் பயனை அனுபவ ரீதியாக நான் உணர்ந்தவன் என்ற காரணத்தால், மற்றவர்களும் நூலகத்தின் பயனைத் துய்க்க வேண்டும், உணர வேண்டுமென்று வேண்டுகோளை இந்த நல்ல விழாவிலே நான் விடுக்கக் கடமைப்பட்டிருக்கிறேன்.",
+      "sourcePage": 598,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     598
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அண்ணா அவர்கள் எந்த அளவிற்கு ஆர்வத்தோடு புத்தகங்களைப் படிப்பார்கள் என்பதை நம்முடைய பேராசிரியர் அவர்கள் இங்கே சுட்டிக்காட்டியிருக்கிறார்கள்.",
+      "sourcePage": 598,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     598
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தகங்களைப் படிக்க வேண்டும் என்கிற அண்ணா அவர்களின் ஆர்வம் - அதற்கு ஒரு உச்சக் கட்டத்தைச் சொல்ல வேண்டுமென்றால் - அண்ணா அவர்கள் நோய்வாய்ப்பட்டு, அமெரிக்கா சென்று - அமெரிக்காவிலிருந்து திரும்பிவந்து மீண்டும் இரண்டாவது தடவையாக நோய் அவரைப் பற்றிக் கொண்டு அடையாறு மருத்துவமனையிலே அறுவை சிகிச்சை செய்ய வேண்டுமென்ற சூழ்நிலையில் இரண்டாவது முறையாக மருத்துவமனையிலே அண்ணா அனுமதிக்கப்பட்டார். நானும் பேராசிரியர் போன்றவர்களும் அவரைச் சூழ இருந்தோம்.",
+      "sourcePage": 598,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     598
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அவரை அறுவை சிகிச்சைக்காக அழைத்துச் செல்கின்ற நேரம் வரையில் - (அறுவைச் சிகிச்சைக்குச் சென்ற பிறகு அண்ணா கண் திறக்கவில்லை; பிறகு மறைந்து விட்டார்) - ஆனால் செல்கின்ற நேரம் வரையிலே அவர் ஒரு புத்தகத்தைப் படித்துக் கொண்டேயிருந்தார். அந்தப் புத்தகத்தைக் கீழே வைக்கவே இல்லை. அங்கிருந்த மருத்துவர்கள் அண்ணா அவர்களை அறுவைச் சிகிச்சை அறைக்கு வாருங்கள் என்று அழைத்துச் செல்ல வந்தபிறகுதான், அந்தப் புத்தகத்தை அண்ணா அவர்கள் மூடி வைத்தார்கள். அப்படி இறுதிக் கட்டத்திலே கூட - இறுதி மூச்சு விடுகின்ற நேரத்திலே கூட - தன்னுடைய உயிர் இனி நிலைக்கப் போவதில்லை என்றுதானே உணர்ந்த அந்தச் சூழலிலேகூட அண்ணா அவர்கள் புத்தகத்தைப் படித்துக் கொண்டிருந்தார் என்பதைச் சொல்வதற்குக் காரணம், இன்றைக்கு புத்தகங்களைப் படிப்பதே ஒரு அலுப்பான விஷயம்; தேவையற்ற வேலை என்று எண்ணிக் கொண்டிருக்கின்ற இளைய தலைமுறைக்கு இந்தச் செய்தி எட்ட வேண்டும் என்பதற்காகத்தான் அடையாறு மருத்துவமனையிலே அறுவை சிகிச்சைக்குச் செல்கின்ற அந்தக்கணம் வரையிலே புத்தகம் படித்துக் கொண்டிருந்த அண்ணா அவர்களின் செயலை நான் நினைவூட்ட வேண்டியவனாக இருக்கிறேன்.",
+      "sourcePage": 599,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     599
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இங்கே நல்லி பேசும்போது சரஸ்வதி மகாலைப் பற்றியெல்லாம் சொன்னார். நூல் நிலையங்களைப் பற்றி நாம் எண்ணுகிற நேரத்தில் பல இலக்கியங்கள், பல காப்பியங்கள் எல்லாம் இன்றைக்கு அழியாமல் காப்பாற்றப்படுவதற்குக் காரணமாக இருந்த இரண்டு சான்றோர்களையும் நாம் மறந்துவிட முடியாது.",
+      "sourcePage": 599,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     599
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "தாமோதரனார், உ.வே.சாமிநாதய்யர் என்ற இந்த இரண்டு பெரியவர்களும் நூல்களை - பழைய ஏடுகளை - சுவடிகளைத் தேடி அலைந்து எவ்வளவு சிரமப்பட்டார்கள்! எதற்காக? அவர்கள் படித்து மகிழ்வதற்காகவா? அல்ல. தாங்களும் படித்து, எதிர்காலச் சமுதாயமும் அதைப் படிக்க வேண்டும், பழைய இலக்கியங்களைத் தெரிந்து கொள்ள வேண்டும், என்ற உணர்வோடு அவர்கள் அரும்பாடுபட்டு அவைகளையெல்லாம் திரட்டித் தந்தார்கள். இல்லாவிட்டால் இன்றைக்கு பளபளப்பாக அச்சு வாகனம் ஏறி நம்முடைய கண்களுக்கும் கருத்துக்களுக்கும் விருந்தாக இருக்கின்ற பல இலக்கியங்கள் நமக்குக் கிட்டாமலே போயிருக்கும். அத்தகைய பெரியவர்களை எல்லாம் இதுபோன்ற விழாக்களிலே நாம் நினைவு கூர்வது அவர்களுக்கு நாம் செலுத்துகின்ற நன்றிக்கடனாகும்.",
+      "sourcePage": 600,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     600
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "புத்தக நிலையங்களைப்பற்றி, நூலகங்களைப்பற்றி புரட்சிக்கவிஞர் பாரதிதாசன் அவர்கள்:",
+      "sourcePage": 600,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     600
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“மனிதரெலாம் அன்புநெறி காண்பதற்கும்\nமனோபாவம் வானைப் போல் விரிவடைந்து\nதனி மனித தத்துவமாம் இருளைப் போக்கிச்\nசகமக்கள் ஒன்றென்பதுணர்வதற்கும்,\nஇனிதினிதாய் எழுந்த உயர் எண்ணமெல்லாம்\nஇலகுவது புலவர்தரு சுவடிச்சாலை”",
+      "sourcePage": 600,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     600
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று குறிப்பிடுகிறார். அந்தச் சுவடிச் சாலை ஒவ்வொரு வீட்டிலும் இருக்க வேண்டும் என்பதைத்தான் பேரறிஞர் அண்ணா அவர்கள் வலியுறுத்தினார்கள்.",
+      "sourcePage": 600,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     600
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1949-ஆம் ஆண்டு வானொலியில் பேரறிஞர் அண்ணா அவர்கள் “வீட்டிற்கு ஒரு புத்தகசாலை” என்ற தலைப்பிலே பேசிய அந்த உரையை உங்கள் முன்னால் நான் வைக்க விரும்புகிறேன்.",
+      "sourcePage": 600,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     600
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "அண்ணா பேசுகிறார்:-",
+      "sourcePage": 601,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     601
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“பெரும்பாலான வீடுகளின் அமைப்பையே பாருங்கள். கூடம் - பாதுகாப்பான அறை - படுக்கை அறை - சமையலறை - பூஜை அறை இவை எல்லாம் இருக்கும் - புத்தகம் உள்ள இடம், படிப்பதற்கென்று ஓர் அறை - தேடிப் பாருங்கள் மிக மிகக் கஷ்டம். பல வீடுகளிலே, தூண்களின் மீது சாளரங்களின் இடுக்கில், பிள்ளையார் மாடத்தில் சில புத்தகங்கள் இருக்கும். ஆனால், புத்தகசாலை உண்டா? என்று கேளுங்கள் - பதில் கூற மாட்டார்கள்; ஒரு புன்னகை தோன்றும். “பைத்தியக்காரா! இது வீடு. நீ என்ன இங்கு வந்து, புத்தகசாலை கேட்கிறாயே!” என்று பொருள், அந்தப் புன்னகைக்கு!",
+      "sourcePage": 601,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     601
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீடுகளில் மேஜை, நாற்காலி, சோபாக்கள் இருக்கும்; பீரோக்கள் இருக்கும்; அவைகளில் வெள்ளிப் பாத்திர தாம்பாளமும், விதவிதமான வட்டில்களும், பன்னீர் செம்பும் இருக்கும்; பித்தளைப் பாத்திரங்கள் இருக்கும். உடைகள் சிறுகடை அளவுக்கு இருக்கும். மருந்து வகைகள் சிறு வைத்திய சாலை அளவுக்கு இருக்கும் அப்படிப் பட்ட வசதியுள்ள வீடுகளிலேயுங்கூட, புத்தகசாலை இராது; இருக்க வேண்டுமென்று எண்ணம் வருவதே இல்லை! அவசியமும் தோன்றுவது இல்லை.",
+      "sourcePage": 601,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     601
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "“இந்தச் செப்புக்குடம் சீரங்கத்தில் வாங்கியது, தேவா கல்யாணத்தின்போது திருப்பதியில் வாங்கினோம். இந்தத் தாம்பாளத்தைப் பெல்லாரிக்குச் சென்றோமே பெண் பார்க்க, அப்போது வாங்கினோம். இந்த இரத்தின் ஜமக்காளத்தைக் கார்த்திகை தீபத்தின்போது திருவண்ணாமலையில் வாங்கினோம். சிதம்பரத்திலே",
+      "sourcePage": 601,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     601
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆருத்ரா தரிசனத்தின்போது இதை வாங்கினோம்” என்று நமது வீடுகளில் பல சாமான்களைக் காட்டுவர். சாமான் ஒவ்வொன்றுக்கும் ஒரு சரித்திரமே கூறுவார்கள். ஆனால், பத்து நல்ல புத்தகங்களைக் காட்டி இன்ன சந்தர்ப்பத்தில் இவைகளை வாங்கினோம் என்று கூறமாட்டார்கள்.",
+      "sourcePage": 602,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     602
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீட்டில் அலங்காரத்தையும் விசேஷகால உபயோகத்திற்கான சாதனங்களையும் கவனிப்பது போல, வீட்டிற்கோர் புத்தகசாலை, சிறிய அளவிலாவது அமைக்க நிச்சயமாகக் கவனம் செலுத்த வேண்டும். அக்கறை காட்ட வேண்டும். அறிவு ஆயுதமாக்கிவிட்ட நாட்களிலே வாழும் நாம், இனியும் இந்தக் காரியத்தைக் கவனியா திருப்பது, நாட்டுக்கு மறைமுகமாகச் செய்யும் துரோகமாகும்.",
+      "sourcePage": 602,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     602
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீட்டிற்கோர் புத்தகசாலை நிச்சயம் வேண்டும். வாழ்க்கையில் அடிப்படைத் தேவைகளுக்கு அடுத்த இடம், அலங்காரப் பொருள்களுக்கும், போக போக்கியப் பொருள்களுக்கும் தரப்படும் நிலைமாறி புத்தகசாலைக்கு அந்த இடம் தரப்பட வேண்டும். உணவு, உடை, அடிப்படைத் தேவை. அந்தத் தேவையைப் பூர்த்தி செய்தானதும், முதல் இடம், புத்தக சாலைக்குத் தரப்பட வேண்டும். எவ்வளவு செலவு? ஏது அவ்வளவு பணம்? என்று கேட்பர். பலருக்குத் தேவையான அளவு புத்தகம் வாங்கத்தான் முடியாது - இந்தக் குறையைப் போக்க பொதுப் புத்தக சாலைகளை நடத்தி, சர்க்கார், நகர சபைகள், பொதுநலக் கழகங்கள் பணிபுரிய வேண்டும். ஆனால் சில அடிப்படை அறிவுக்குத் தேவையான புத்தகங்களையாவது, வீடுகளில் சேகரித்துப் பயன்படுத்தும் முறை இருக்க வேண்டும்.",
+      "sourcePage": 602,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     602
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீட்டிற்கோர் புத்தக சாலை அமைக்க வேண்டும். மக்களின் மனத்திலே உலக அறிவு புக வழி செய்ய வேண்டும். நிபுணத்துவம் தரும் ஏடுகள்கூட அல்ல - அடிப்படை உண்மைகளையாவது அறிவிக்கும் நூல்கள் சிலவாவது வேண்டும்.",
+      "sourcePage": 603,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     603
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "வீடுகளிலே நடைபெறும் விசேஷங்களின்போது, வெளியூர்கள் சென்று திரும்பும்போது, பரிசளிப்புகள் நடத்தும்போது, புத்தகங்கள் வாங்குவது என்று ஒரு பழக்கத்தைக் கொஞ்சம் வசதியுள்ள வீட்டார் சில காலத்துக்காவது ஏற்படுத்திக் கொண்டால், சுலபத்தில் ஒரு சிறு புத்தகசாலையை அமைத்து விடலாம்.",
+      "sourcePage": 603,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     603
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "உலக அறிவை, உருப்படியான காரியத்துக்குப் பயன்படும் அறிவைத் தரக்கூடிய புத்தகங்களைச் சேகரிக்க வேண்டும். பழைய முறைகளையும் எண்ணங்களையும் மேலும் ஊட்டக்கூடிய ஏடுகளைச் சேகரித்து அதற்குப் புத்தகசாலை என்று பெயரிடுவது, குருடர்களைக் கூட்டி வைத்து, அவர்கள் உள்ள இடத்துக்கு, வழிகாட்டுவோர் வாழும் இடம் என்று பெயரிடுவது போன்ற கோமாளிக் கூத்தாக முடியும்.",
+      "sourcePage": 603,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     603
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஒவ்வோர் வீட்டிலும் வசதி கிடைத்ததும், வசதி ஏற்படுத்திக் கொண்டதும், அமைக்க வேண்டிய புத்தகசாலையில் நாட்டு வரலாறு, உலக நாடுகளின் நிலையை குறிக்கும் நூல்கள் இவை முதலிடம் பெற வேண்டும். பொதுவாகவே, மக்களின் அறிவுக்குத் தெளிவும் ஆண்மைக்கு உரமும், ஒழுக்கத்துக்கு வலிவும் தரத்தக்க நூல்கள் இருக்க வேண்டுமேயொழிய, வாழும் இடத்தை வகையற்றது என்று கூறி, விண்ணுலகுக்கு வழிகாட்டும் நூல்களும், மாயா வாதத்தையும், மன",
+      "sourcePage": 603,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     603
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "மருட்சியையும் தரும் ஏடுகளும், தன்னம்பிக்கையைக் கெடுத்து, விதியை அதிகமாக வலியுறுத்திப் பெண்களை இழித்தும் பழித்தும் பேசிடும் நூல்களும் இருத்தலாகாது.",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பஞ்சாங்கம் அல்ல. புத்தகசாலையில் இருக்க வேண்டியது அட்லாஸ் - உலகப்படம் இருக்க வேண்டும்.",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பூகோள, சரித ஏடுகள் கட்டாயம் இருக்க வேண்டும் - நமக்கு உண்மை உலகைக் காட்ட, நமக்கு ஒழுக்கத்தையும், வாழ்வுக்கான நல்ல நிலைகளையும் உருவாக்க வீட்டிற்கோர் திருக்குறள் கட்டாயமாக இருக்க வேண்டும்.",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நமது தமிழகத்தின் தனிச்சிறப்பு என்று கூறத்தகும் சங்க இலக்கிய சாரத்தைச் சாமான்யரும் அறிந்து வாசிக்கக் கூடிய முறையில் தீட்டப்பட்ட ஏடுகள் இருக்க வேண்டும். குறைந்த பட்சம், மக்கள் முன்னேற்றத்துக்கும் வாழ்க்கை வசதிக்கும் உதவும், விஞ்ஞானக் கண்டுபிடிப்புகளைப் பற்றிய முக்கியமான தகவலைத் தெரிவிக்கும் நூல் இருக்க வேண்டும்.",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நாட்டு விடுதலைக்கு உழைத்தவர்கள், மக்களின் மனமாசு துடைத்தவர்கள், தொலைதேசங்களைக் கண்டவர்கள், வீரர்கள், விவேகிகள் ஆகியோரின் வாழ்க்கைக் குறிப்பு ஏடுகள் இருக்க வேண்டும்.",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த அடிப்படையில் ‘வீட்டிற்கோர் புத்தகசாலை’ அமைத்துக் கொண்டால் நாட்டுக்கு நல்ல நிலை ஏற்படும்”",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "என்று அண்ணா அவர்கள் 1949ஆம் ஆண்டிலேயே வானொலி மூலமாகச் சொல்வது இயலாதிருந்த அந்தக் காலக் கட்டத்தில், இந்தக் கருத்துக்களைச் சொல்லியிருக்கிறார்.",
+      "sourcePage": 604,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     604
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "ஆங்கிலேயர்களால் - எனக்கு முன்னால் பேசியவர்கள் எடுத்துக்காட்டியதைப் போல - அடிமைத்தனம் போன்ற பல துன்பங்கள் நமக்கு ஏற்பட்டாலுங்கூட - உலகத்தைக் காணுகின்ற அறிவை வளர்க்கின்ற பல அற்புதச் சாதனைகளும் நிகழ்த்தப்பட்டிருக்கின்றது. அவற்றிலே ஒன்று லைப்ரரி - நூலகம் என்று சொன்னால் மிகையாகாது.",
+      "sourcePage": 605,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     605
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கன்னிமாரா என்று இந்த நூலகத்திற்குப் பெயர் வந்ததே - சென்னை மாகாணக் கவர்னராக இருந்த கன்னிமாரா பிரபு 1890-ஆம் ஆண்டு திட்டமிட்டு - அவர் பணியிலிருந்து திரும்ப இங்கிலாந்து சென்ற பிறகு - உருவானது 1896இல் இந்தக் கன்னிமாரா நூலகம். இப்படி உருவான இந்த நூலகம், பேராசிரியர் அவர்கள் குறிப்பிட்டதைப் போல - 1950இல் பொது நூலகச் சட்டம் கொண்டுவரப்பட்டு - பொது நூலகமாகவும், தமிழக நூலகங்களுக்கெல்லாம் தலைமை நூலகமாகவும் இன்றைக்கு உயர்ந்திருக்கிறது. 1954இல் மத்திய அரசு நூல்கள் விநியோகச் சட்டம் என்ற ஒரு சட்டத்தைக் கொண்டு வந்து மும்பாய், கல்கத்தா, புதுடெல்லி, சென்னை கன்னிமாரா ஆகிய நூலகங்களையெல்லாம் தேசிய மதிப்பைப் பெறக்கூடிய நிலையை உருவாக்கியது.",
+      "sourcePage": 605,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     605
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1910ஆம் ஆண்டு இந்த நூலகத்திலே 48,000 நூல்கள் இருந்தன. ஆனால் இன்றைக்கு ஐந்தேகால் இலட்சம் நூல்கள் இருக்கிறது என்பதை மகிழ்ச்சியோடு நான் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 605,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     605
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த ஐந்தேகால் லட்சம் நூல்களை மூன்றரை இலட்சம் வாசகர்கள் பயன்படுத்திக் கொள்கிறார்கள். 1896இல் கன்னிமாரா நூலகக் கட்டிடம் உருவாக்கப்பட்டு நூலகம் தொடங்கியதற்குப் பிறகு - 78 ஆண்டுகளுக்குப் பிறகு 1974இல் கழகம் ஆட்சியிலே இருந்தபோதுதான் இந்தக் கட்டிடத்தோடு சேர்த்து மூன்றடுக்குக் கட்டடம் கட்டப்பட்டது என்பதை நான் மிகுந்த பெருமையோடு சொல்லிக் கொள்கிறேன்.",
+      "sourcePage": 605,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     605
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இன்றைக்கு பேராசிரியர் அவர்கள் இங்கே எடுத்துக்காட்டியதைப் போல இந்த நூற்றாண்டு விழாவையொட்டி ஒரு கோடியே 48 லட்சம் ரூபாய் (பேராசிரியர்கூட ஒரு கோடியே 45 இலட்சம் என்றார் - கொடுத்தவன் நான்) (பலத்த சிரிப்பு) கூடுதல் கட்டிட வசதிக்காக வழங்கப்பட்டிருக்கின்றது என்பதையும் தெரிவித்துக் கொள்கிறேன். அது மாத்திரமல்ல; வாசகர்களின் வசதிகளைப் பெருக்க - நூலகத்திற்குத் தேவையான தளவாடப் பொருள்களை எல்லாம் வாங்குவதற்கு ஒரு கோடி ரூபாய் மேலும் கன்னிமாரா நூலகத்திற்கு (பலத்த கைத்தட்டல்) இந்த ஆண்டு ஒதுக்கப்பட்டிருக்கிறது.",
+      "sourcePage": 606,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     606
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நூலகத்தை மக்கள் இயக்கமாக மாற்ற 1989ஆம் ஆண்டு நாங்கள் இரண்டாண்டு காலம் ஆட்சிப் பொறுப்பிலே இருந்தபோதே, அந்தக் காலக் கட்டத்தில் பேராசிரியர் அவர்களுடைய உறுதுணையோடு தமிழகம் முழுவதும் நூலகங்கள் - இதை மக்கள் இயக்கமாக ஆக்க வேண்டுமென்ற திட்டத்தின்படி தமிழகம் முழுவதும் நூலகங்கள் பரவலாகத் தொடங்குவதற்கான முயற்சிகள் மேற்கொள்ளப்பட்டு இன்றைக்கு அந்த நூலகங்களில் உறுப்பினர்களாக மாத்திரம் 25 இலட்சம் பேர் இருக்கிறார்கள் என்பதையும் நான் இங்கே தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 606,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     606
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பகுதி நேர நூலகங்களாக - அந்த மக்கள் இயக்கமாக நூலகங்களை மாற்றியதன் காரணமாக 1,146 நூலகங்கள் இருக்கின்றன.",
+      "sourcePage": 606,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     606
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கல்கத்தாவில் ராஜாராம் மோகன்ராய் அவர்கள் பெயரால் ஓர் அறக்கட்டளை இருக்கின்றது. அந்த அறக்கட்டளை எந்தவொரு மாநில அரசு அந்த மாநிலத்திலே இருக்கிற நூலகத்திற்கு எவ்வளவு தொகை ஒதுக்கினாலும் அதற்கு ஈடாக ஒரு தொகையை ஒதுக்கிக் கொண்டிருக்க",
+      "sourcePage": 606,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     606
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "கின்றது. கடந்தகால ஆட்சியில் நூலகங்களுக்காக பத்து லட்ச ரூபாய் நிதி ஒதுக்கினார்கள். உடனே ராஜாராம் மோகன்ராய் அறக்கட்டளையும் பத்து லட்ச ரூபாய் நிதி அளித்தது. இந்த ஆட்சியில் நாங்கள் நூலகங்களுக்காக முப்பது லட்ச ரூபாய் வழங்கப்பட்டிருக்கின்றது. இன்றைக்கு இந்தியாவிலுள்ள எல்லா மாநிலங்களைக் காட்டிலும் நூலக விவகாரத்தில் தமிழ்நாடுதான் இந்த அறக்கட்டளையின் அதிக தொகையைப் பெற்ற ஒரேயொரு மாநிலம் (கைத்தட்டல்) என்பதையும் நான் தெரிவித்துக் கொள்கிறேன்.",
+      "sourcePage": 607,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     607
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "1974ஆம் ஆண்டு நூலக அலுவலர்கள் 13 பேர். 74இல் எந்த ஆட்சி என்பது உங்களுக்குத் தெரியும். அப்போது நூலக அலுவலர்கள் 13 பேர் நியமிக்கப்பட்டார்கள். 89-91இல் எந்த ஆட்சி என்பது உங்களுக்குத் தெரியும். அப்போது மூன்று நூலக அலுவலர்கள் நியமிக்கப்பட்டார்கள். பிறகு 96,97இல் இப்பொழுது ஏழு நூலகர்கள் நியமிக்கப்பட்டிருக்கின்றார்கள். மொத்தம் 23 பேர். இவையிலே என்னவென்று கேட்காதீர்கள். எதுவும் இல்லாத காரணத்தால் அதை விட்டுவிட்டேன். இல்லாததை எப்படிச் சொல்ல முடியும்.",
+      "sourcePage": 607,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     607
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "எனவே 29 மாவட்டங்களில் தமிழகத்திலே 23 நூலக அலுவலர்கள் நியமிக்கப்பட்டிருக்கின்றார்கள். மற்ற மாவட்டங்களிலும் நியமிக்கப்படவிருக்கிறார்கள் என்பதையும் நூல்பயிலுவதிலே தன்னுடைய வாழ்க்கையின் பெரும்பகுதியைச் செலவிட்ட பேரறிஞர் அண்ணா அவர்களுடைய தம்பிகளாகிய நாங்கள் இன்றைக்கு ஆட்சிப் பொறுப்பிலே இருக்கின்ற காரணத்தால் நூலகத்தின் பெருமையை உணர்ந்தவர்கள் - படிப்பின் பெருமையை உணர்ந்தவர்கள் - புத்தகத்தின் பெருமையை உணர்ந்தவர்கள். எனவே நூலகங்கள் எல்லா இடங்களிலும் கன்னிமாரா நூலகத்தைப்போல",
+      "sourcePage": 607,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     607
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "பல கன்னிமாரா நூலகங்கள் தமிழகம் முழுவதும் உருவாக இந்த அரசு தொடர்ந்து முனைப்போடு பணியாற்றும் என்ற நல்ல செய்தியை இந்த விழாவிலே அறிவிக்கிறேன்.",
+      "sourcePage": 608,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     608
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "இந்த விழாவிலே நம்முடைய எம்.எம். அவர்கள் ஐந்து இலட்ச ரூபாயை இந்த நூலகத்திற்காக வழங்கி கலைஞர் கட்டளையிட்டால் இன்னும் வழங்குவேன் என்று சொன்னார். அவர் வழங்குவதற்கு முன்பே என்னைக் கேட்டிருந்தால் எவ்வளவு வழங்க வேண்டுமென்று சொல்லியிருப்பேன். (பலத்த சிரிப்பு) இனிமேல் நான் கட்டளையிட விரும்பவில்லை. தானாகவே வழங்குவார் என்று எதிர்பார்க்கிறேன்.",
+      "sourcePage": 608,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     608
+    ]
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "நம்முடைய நல்லி அவர்கள் புத்தகக் கண்காட்சிக்கு ஒரு கட்டிடத்தைக் கட்ட வேண்டுமென்று சொன்னார். நான் அவருக்குச் சொல்லிக் கொள்கிறேன். உங்கள் பெயரால் ஒரு கட்டிடத்தைக் கட்டுங்கள். (பலத்த சிரிப்பு) நூலில் மூழ்கித் திளைக்கின்ற உங்களுக்கு, ஆயிரக் கணக்கான நூல்களைப் படிக்கும் உங்களுக்கு, இளமை முதல் புத்தகங்களைப் படிப்பதிலே ஆர்வம் உள்ள உங்களுக்கு இந்த ஆர்வம் பிறக்கட்டும். இன்றைக்கு கன்னிமாரா பிரபுவின் பெயரை நாம் எப்படிச் சொல்லிக் கொண்டிருக்கின்றோமோ, அதைப் போல அந்தப் புத்தகக் கண்காட்சி சாலை (கைத்தட்டல்) நல்லி குப்புசாமியின் பெயரைச் சொல்லிக் கொண்டேயிருக்குமென்று நான் கருதுகிறேன். இப்போது தியாகராயர் நகரிலே மாத்திரம் நல்லியிருந்தால் போதாது. நூலகத்திலும் நல்லியின் பெயர் இருக்க வேண்டுமென்று கூறி, வாழ்த்தி விடைபெறுகிறேன்.",
+      "sourcePage": 608,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": [
+     608
+    ]
+   },
+   {
+    "kind": "note",
+    "text": "- முரசொலி 13-9-97",
+    "sourcePage": 608
+   }
+  ]
+ },
+ "english": {
+  "sectionTitleEn": "Condensed English rendering",
+  "blocks": [
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi opens by expressing happiness at taking part in two linked celebrations: the centenary of the Connemara Public Library and the silver jubilee of the Public Libraries Department. After noting that speakers before him have described the library's achievements, he makes a practical suggestion: at functions of this kind, books would be more useful gifts than ceremonial shawls. He jokes that a shawl too is made from thread, but says the same expenditure could instead place many books in people's hands.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He broadens the point from library celebrations to public life generally. Even at weddings and other functions, he suggests replacing garlands and ceremonial gifts with books. He recalls that books and reading rooms had been part of his own public activity since youth, beginning with a children's reform association in Tiruvarur that kept a small collection of books.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi then recounts his years in the mid-1940s at Singanallur near Coimbatore while working in the film industry. The area, he says, was politically violent, yet he and a friend, Annasamy, wanted to spread the ideas of Periyar and Anna. Because a library openly named after Dravidian leaders might not have survived, they established a Bharathi Reading Room / Bharathi Library. Alongside general newspapers and magazines they gradually introduced `திராவிடநாடு`, `குடியரசு`, and `விடுதலை`. He credits that reading-room effort with helping turn Singanallur into a stronghold of their movement.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "The speech then turns to Annadurai's passion for reading. Karunanidhi recalls that even shortly before being taken for surgery at the Adyar hospital, Anna continued reading a book and put it down only when doctors came to take him to the operating theatre. He presents the episode as a lesson for a younger generation that may regard reading as tedious or unnecessary.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi next remembers C. W. Damodaram Pillai and U. V. Swaminatha Iyer, who searched for, collected and preserved old manuscripts so that later generations could read Tamil's older literature. He says commemorating such figures at library functions is itself a debt of gratitude.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He quotes Bharathidasan on the role of a repository of books in broadening human feeling, overcoming narrow individualism and enabling people to recognise their common humanity. He then recalls Annadurai's 1949 radio address, **“வீட்டிற்கு ஒரு புத்தகசாலை”** (“A Library for Every Home”), and reproduces at length Anna's argument that homes routinely make space for furniture, utensils, clothes, medicines and ceremonial objects while rarely reserving space for books.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Anna's prescription, as quoted in the speech, is that a household library should rank immediately after the basic needs of food and clothing. Public libraries must help those who cannot afford many books, but every home should still keep at least a basic collection. Such a collection should include useful knowledge, history, geography, an atlas, the `திருக்குறள்`, accessible selections from Sangam literature, science, and biographies of people who worked for freedom and social progress. Karunanidhi emphasises Anna's warning against filling a library with books that reinforce fatalism, prejudice, or degrading ideas.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi then sketches the history of the Connemara Public Library. He says Lord Connemara planned it in 1890, after which it opened in 1896; the library later rose to become a public and state-level library, while legislation in 1954 helped give major libraries at Mumbai, Calcutta, New Delhi and Chennai national standing. He states that the collection grew from **48,000** books in 1910 to roughly **five-and-a-quarter lakh** books, used by about **three-and-a-half lakh** readers.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He recalls that in 1974, during a DMK government, a three-storey addition was built beside the older structure. For the centenary, he says, the government had sanctioned **₹1.48 crore** for additional building facilities — joking that the professor on stage had understated the amount as ₹1.45 crore — and another **₹1 crore** for furniture and equipment.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "Karunanidhi describes efforts begun during the 1989–91 government to turn libraries into a people's movement. He gives figures for library membership, part-time libraries, and assistance from the Raja Rammohun Roy Library Foundation, noting that Tamil Nadu had received especially high support because of the state's own allocations.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "He also cites staffing figures for district library officers and says the current government, shaped by Anna's respect for learning and books, intends to extend library services throughout Tamil Nadu.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "paragraph",
+    "segments": [
+     {
+      "text": "In closing, Karunanidhi welcomes a donation of **₹5 lakh** to the library and jokes that if he had been consulted in advance he might have named a larger amount. Responding to a proposal for a permanent book-exhibition building, he urges the philanthropist Nalli Kuppusamy to build one in his own name, so that his name too will become permanently associated with books and libraries.",
+      "sourcePage": null,
+      "joinToNext": "end"
+     }
+    ],
+    "sourcePages": []
+   },
+   {
+    "kind": "note",
+    "text": "**`முரசொலி`, 13 September 1997.**",
+    "sourcePage": 608
+   }
+  ]
+ },
+ "sourcePages": [
+  595,
+  596,
+  597,
+  598,
+  599,
+  600,
+  601,
+  602,
+  603,
+  604,
+  605,
+  606,
+  607,
+  608
+ ],
+ "venue": null,
+ "event": {
+  "ta": "கன்னிமாரா பொது நூலக நூற்றாண்டு விழா",
+  "en": null
+ },
+ "occasion": null,
+ "audience": null,
+ "collection": {
+  "id": "muthukkuliyal-part-1",
+  "titleTa": "முத்துக் குளியல் — பாகம் I",
+  "titleEn": "Muthukkuliyal — Part I",
+  "ordinal": 58,
+  "total": 61
+ }
+}

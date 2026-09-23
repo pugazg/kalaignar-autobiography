@@ -31,6 +31,8 @@ export type SpeechParagraph = {
   kind: "paragraph";
   segments: SpeechTextSegment[];
   sourcePages: number[]; // the source pages this one logical paragraph spans
+  /** Quoted text the speaker recites (verse, a cited passage) — set as a quotation. Words unchanged. */
+  quote?: true;
 };
 
 export type SpeechHeading = { kind: "heading"; text: string; sourcePage?: number | null };
@@ -62,6 +64,15 @@ export type SpeechBlock = SpeechParagraph | SpeechHeading | SpeechNote | SpeechU
 
 export type SpeechBilingualName = { nameTa: string; nameEn: string; roleTa?: string; roleEn?: string };
 export type SpeechBilingualText = { ta: string; en: string };
+/** A source fact the source states only in Tamil (e.g. a venue). `en` is null — never an invented gloss. */
+export type SpeechSourceText = { ta: string; en: string | null };
+
+/**
+ * FORM of the English layer, MEASURED at import (English ÷ Tamil body words), never inferred from a status
+ * string. "condensed" is an English rendering markedly shorter than the Tamil — a summary, not a full
+ * translation — and is always labelled as such. Absent on speeches released before this field existed.
+ */
+export type SpeechEnglishForm = "full-translation" | "condensed";
 
 // Common fields shared by every speech subtype. The Tamil stream is authoritative; the English
 // stream is the verified faithful reading translation.
@@ -94,6 +105,10 @@ type SpeechBase = {
   // pages at all: a recording is not paginated, and emitting an empty array or a synthetic range
   // would be a fabricated page claim. Every print speech continues to carry it.
   sourcePages?: number[];
+  englishForm?: SpeechEnglishForm;
+  englishCoverage?: { englishToTamilWordRatio: number; basis: "body-word-count" };
+  /** The printed collection this speech is an item of, with its printed ordinal (source-backed). */
+  collection?: { id: string; titleTa: string; titleEn: string; ordinal: number; total: number };
 };
 
 // A legislative-assembly speech: it has a legislature and a parliamentary event/context. These
@@ -112,10 +127,10 @@ export type PublicSpeech = SpeechBase & {
   // Every one of these is OPTIONAL because a booklet may establish none of them. `venue` is null
   // when the examined source does not state one (Arappor); it carries the source-stated venue when
   // it does (Poonthottam). Nothing here is ever inferred from an edition/publication fact.
-  venue?: SpeechBilingualText | null;
-  event?: SpeechBilingualText | null;
-  occasion?: SpeechBilingualText | null;
-  audience?: SpeechBilingualText | null;
+  venue?: SpeechBilingualText | SpeechSourceText | null;
+  event?: SpeechBilingualText | SpeechSourceText | null;
+  occasion?: SpeechBilingualText | SpeechSourceText | null;
+  audience?: SpeechBilingualText | SpeechSourceText | null;
 };
 
 // Vendored per-speech content (speech.json). Discriminated on `subtype` so assembly-specific and
@@ -231,6 +246,13 @@ export type SpeechProvenance = {
     // SOURCE FACTS, not implementation blockers, and are surfaced as such on the provenance page.
     speechFactsNotStated?: string[];
     speechFactsNoteEn?: string;
+    /** The collection's printed historical rights line, verbatim (e.g. "உரிமை : ஆசிரியருக்கே") — a source
+     *  edition fact, distinct from any present rights status. */
+    rightsNoticeTa?: string;
+    /** Where the controlling scan was supplied as exact-range split PDFs: the split(s) carrying this speech. */
+    scanSplits?: { filename: string; scans: string; sha256: string; bytes: number }[];
+    /** This speech's place in its printed collection. */
+    collectionItem?: { collectionId: string; ordinal: number; total: number };
   };
   /** AUDIO source facts. Present only where `sourceForm` is `"audio"`. */
   audioSource?: SpeechAudioSource;
@@ -320,6 +342,9 @@ export type SpeechProvenance = {
   };
   /** Absent where the archive records no curatorial notes for this speech. */
   notes?: string[];
+  /** Measured English form (see SpeechEnglishForm) and its basis. */
+  englishForm?: SpeechEnglishForm;
+  englishCoverage?: { englishToTamilWordRatio: number; tamilBodyWords: number; englishBodyWords: number; basis: "body-word-count" };
 
   // ── TWO BOUNDARY-EVIDENCE MODELS, DELIBERATELY NOT MERGED ──────────────────────────────────────
   //
@@ -371,6 +396,7 @@ export type SpeechProvenance = {
 // Lightweight catalog of integrated speech slugs (build/import authority; the public catalog
 // entry lives in data/library.ts). One benchmark per subtype so far: an assembly speech
 // (udhaya-kathir) and a public speech (poonthottam).
+import { WAVE7_SPEECH_SLUGS } from "@/lib/speeches-wave7-routes";
 export const SPEECH_SLUGS = [
   "udhaya-kathir",
   "poonthottam",
@@ -396,5 +422,7 @@ export const SPEECH_SLUGS = [
   "idhaya-perikai",
   "namathu-nilai",
   "palli-vazhkkai",
+  // ── Wave 7 P4 — the 100 B5a / B5b / B6 speeches, promoted from the Wave-7 route registry ──
+  ...WAVE7_SPEECH_SLUGS,
 ] as const;
 export type SpeechSlug = (typeof SPEECH_SLUGS)[number];

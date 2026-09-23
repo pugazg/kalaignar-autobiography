@@ -1,0 +1,66 @@
+{
+ "workId": "haikku-kavithaigal",
+ "sourceRepo": "pugazg/kalaignar-public-speeches",
+ "sourcePath": "speeches/haikku-kavithaigal",
+ "sourceCommit": "6ca57fe20706ebcb59f3432e8067fd11a1565b54",
+ "source": {
+  "publicationTitleTa": "முத்துக் குளியல் — பாகம் - I",
+  "firstEditionTa": "முதற் பதிப்பு : மே 2000",
+  "publisherTa": "பூம்புகார் பதிப்பகம்",
+  "publisherAddressTa": "63, பிரகாசம் சாலை (பிராட்வே), சென்னை - 600 108",
+  "printerTa": "ஈகிள் பிரஸ், சென்னை - 13",
+  "coverPriceTa": "ரூ. 200/-",
+  "rightsNoticeTa": "உரிமை : ஆசிரியருக்கே",
+  "scanFilename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1.pdf",
+  "scanTotalPages": 641,
+  "speechScanPages": "459–470",
+  "printedSpeechPages": "458–469",
+  "scanSplits": [
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_028_pages_448-465.pdf",
+    "scans": "448–465",
+    "sha256": "609fca8e072a41c1246a4d6b983beb4e212d6c40863170f9fc3967c6f37436bc",
+    "bytes": 47644768
+   },
+   {
+    "filename": "TVA_BOK_0065801_முத்துக்குளியல்_பாகம்_1_part_029_pages_466-482.pdf",
+    "scans": "466–482",
+    "sha256": "e5de4c44383c19c34b0f937778e9c4019561d633467dfe694195c6705c124020",
+    "bytes": 46748582
+   }
+  ],
+  "collectionItem": {
+   "collectionId": "muthukkuliyal-part-1",
+   "ordinal": 46,
+   "total": 61
+  },
+  "speechFactsNotStated": [
+   "venue"
+  ]
+ },
+ "transcription": {
+  "status": "verified-complete",
+  "verified_against_scan": true
+ },
+ "translation": {
+  "status": "verified-complete",
+  "type": "condensed English rendering (not a full translation)"
+ },
+ "englishForm": "condensed",
+ "englishCoverage": {
+  "englishToTamilWordRatio": 0.3,
+  "tamilBodyWords": 1565,
+  "englishBodyWords": 471,
+  "basis": "body-word-count"
+ },
+ "archiveDerived": {
+  "sectionHeadings": 2,
+  "tamilResolvedParagraphs": 66,
+  "englishParagraphs": 8,
+  "sourcePagesCovered": 12
+ },
+ "notes": [
+  "The controlling source is the scanned printed collection; it is not vendored. Its identity travels as filename, SHA-256 and page map.",
+  "The speech's printed closing line (date / occasion) is shown as a separate note, outside the speech body, exactly as the source keeps it."
+ ]
+}
