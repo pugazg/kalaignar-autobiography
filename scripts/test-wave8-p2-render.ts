@@ -252,6 +252,12 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
       for (const m of all(h, /<[a-z0-9]+ [^>]*data-citation-ids="([^"]+)"[^>]*>/g)) { ok(/data-role="(source-citation|source-note)"/.test(m[0]), `${label}: record-linked block rendered as ${m[0].match(/data-role="([^"]+)"/)?.[1]}`); m[1].split(" ").forEach((id: string) => citationsSeen.add(id)); }
       // Ornaments stay ornaments.
       for (const m of all(h, /<[a-z0-9]+ [^>]*data-kind="ornament"[^>]*>/g)) ok(/data-role="ornament"/.test(m[0]) && !/data-citation-ids/.test(m[0]), `${label}: ornament rendered as ${m[0].match(/data-role="([^"]+)"/)?.[1]}`);
+      // Printed matter never presented as archive description on a scan that is not an illustration.
+      for (const pg of s.pages.filter((q) => !q.illustration)) {
+        const a = h.indexOf(`data-scan="${pg.scan}"`), nxt = s.pages.find((q) => q.scan === pg.scan + 1);
+        const seg = h.slice(a, nxt ? h.indexOf(`data-scan="${nxt.scan}"`) : undefined);
+        ok(!/data-role="(text|quotation|gloss|gloss-heading|section-title|printed-heading|right-aligned-fragment|source-citation|source-note)"[^>]*data-presentation="archival"/.test(seg), `${label}: printed matter on scan ${pg.scan} presented as archive description`);
+      }
       // Archive descriptions never read as the book's text.
       for (const m of all(h, /<[a-z0-9]+ [^>]*data-role="(archival-label|archival-description|copy-specific-marking)"[^>]*>/g)) ok(/data-presentation="archival"/.test(m[0]), `${label}: archival ${m[1]} presented as text`);
       // Scan 8.
