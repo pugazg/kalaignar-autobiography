@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { BookOpen, Drama, Info } from "lucide-react";
-import type { Play } from "@/data/plays";
+import type { Play, PlayReadingUnit } from "@/data/plays";
 import { useLang } from "@/lib/i18n";
 
 /**
@@ -29,6 +29,59 @@ export default function PlayLanding({ play }: { play: Play }) {
   const numberedCount = play.readingUnits.filter((u) => u.kind === "scene").length;
   const compressedRanges = play.readingUnits.filter((u) => u.kind === "compressed-scene-range").map((u) => fmtRange(u.sceneRange ?? []));
   const unnumberedCount = play.readingUnits.filter((u) => u.kind === "unnumbered-scene").length;
+  // A play printed in separately numbered PARTS (ஒரே முத்தம்: the main play, then `நகைச் சுவைப் பகுதி.` numbered
+  // 1–3 afresh). Absent for every single-part play, whose landing is unchanged.
+  const parts = play.parts?.map((part) => ({ part, units: play.readingUnits.filter((u) => u.partId === part.id) })) ?? null;
+  const mainPart = parts?.find((g) => g.part.headingTa === null) ?? null;
+  const titledParts = parts?.filter((g) => g.part.headingTa !== null) ?? [];
+
+  const row = (s: PlayReadingUnit) => (
+    <li key={s.slug}>
+      <Link href={`/plays/${play.slug}/${s.slug}`} className="focus-ring group flex gap-3 py-3">
+        <span className="w-8 shrink-0 pt-0.5 text-right text-xs tabular-nums text-ink/40 dark:text-night-text/40">
+          {s.order ?? "—"}
+        </span>
+        <span className="min-w-0">
+          <span className="block font-tamil text-[15px] text-ink group-hover:text-marina dark:text-night-text" lang="ta">{s.titleTa}</span>
+          <span className="block font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</span>
+          {s.kind === "closing-tableau" && (
+            <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+              <Drama className="h-3 w-3 text-marina" aria-hidden />
+              {ta ? "எண்ணிடப்படாத நிறைவுக் காட்சி — காட்சி-39 அல்ல" : "unnumbered closing tableau — not Scene 39"}
+            </span>
+          )}
+          {s.kind === "continuous-body" && (
+            <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+              <Drama className="h-3 w-3 text-marina" aria-hidden />
+              {ta ? "காட்சிப் பிரிவின்றி ஒரே தொடர் பகுதி" : "one continuous text — the source prints no scenes"}
+            </span>
+          )}
+          {s.kind === "compressed-scene-range" && (
+            <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+              <Drama className="h-3 w-3 text-marina" aria-hidden />
+              {ta ? `மூலம் தொகுத்த காட்சிகள் ${s.sceneRange?.join(", ")}` : `source-compressed scenes ${s.sceneRange?.join(", ")}`}
+            </span>
+          )}
+          {s.kind === "unnumbered-scene" && (
+            <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+              <Drama className="h-3 w-3 text-marina" aria-hidden />
+              {ta ? "எண்ணிடப்படாத காட்சி — காட்சி 22/23 அல்ல" : "unnumbered scene — not Scene 22/23"}
+            </span>
+          )}
+          {s.kind === "source-representation-unit" && (
+            <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
+              <Drama className="h-3 w-3 text-marina" aria-hidden />
+              {ta ? `மூல அமைப்பு அலகு ${s.editorialUnitId} — காட்சி எண் அல்ல` : `${s.editorialUnitId} — an editorial unit, not a scene number`}
+              {s.assembledFromVerifiedPages === false && (ta ? " · மூலச் சேதக் குறிகள் உள்ளன" : " · carries source-loss markers")}
+            </span>
+          )}
+          <span className="mt-0.5 block text-[11px] text-ink/40 dark:text-night-text/40">
+            {ta ? "ஸ்கேன்" : "scans"} {s.sourceScans.join(", ")}
+          </span>
+        </span>
+      </Link>
+    </li>
+  );
 
   return (
     <div className="min-h-screen bg-paper dark:bg-night dark:text-night-text">
@@ -111,6 +164,9 @@ export default function PlayLanding({ play }: { play: Play }) {
               ? ta ? "தொடர் நாடகப் பகுதி" : "Continuous dramatic text"
               : sru
                 ? ta ? `மூல அமைப்பு அலகுகள் — ${play.readingUnits.length}` : `Source-representation units — ${play.readingUnits.length}`
+                : parts
+                  // Separately numbered parts: each part's count, never one flattened total.
+                  ? parts.map((g) => `${g.part.headingTa === null ? (ta ? "காட்சிகள்" : "Scenes") : ta ? g.part.headingTa : g.part.headingEn} — ${g.units.length}`).join(" · ")
                 : mixedSceneStructure
                   // A mixed work's reading units are NOT all individually numbered scenes, so count
                   // reading units, not scenes.
@@ -129,6 +185,10 @@ export default function PlayLanding({ play }: { play: Play }) {
                 ? ta
                   ? `இந்நூலின் மூலம் காட்சி எண்களையோ அங்கங்களையோ அச்சிடவில்லை. இழப்பின்றித் தொகுக்க ${play.readingUnits.length} தொகுப்பு அலகுகள் (SRU) மூல அமைப்பின்படி வரையறுக்கப்பட்டுள்ளன; அவை வழிசெலுத்தலுக்கானவை, காட்சி எண்கள் அல்ல.`
                   : `The source prints no scene numbers or acts. For lossless assembly it is divided into ${play.readingUnits.length} editorial source-representation units (SRUs) defined by the source's own transitions — navigation, not scene numbers.`
+                : parts
+                  ? ta
+                    ? `இந்தப் பதிப்பு முதன்மை நாடகத்தின் ${mainPart?.units.length ?? 0} காட்சிகளை அச்சிட்டு, அதன்பின் ${titledParts.map((g) => `${g.part.headingTa} எனத் தனித் தலைப்பிட்ட பகுதியையும் அதன் ${g.units.length} காட்சிகளையும் (காட்சி 1–${g.units.length}, தனியாக எண்ணிடப்பட்டவை)`).join(", ")} அச்சிடுகிறது. அக்காட்சிகள் முதன்மை நாடகத்தின் தொடர் எண்களாக மாற்றப்படவில்லை.`
+                    : `The edition prints the main play's ${mainPart?.units.length ?? 0} source-numbered scenes, followed by ${titledParts.map((g) => `a separately titled ${(g.part.headingEn ?? "").toLowerCase()}, ${g.part.headingTa}, with ${g.units.length} independently numbered scenes (Scenes 1–${g.units.length})`).join(", then ")}. Those scenes are not renumbered into the main play's sequence.`
                 : mixedSceneStructure
                   // MIXED scene sequence — built from the actual reading-unit kinds, never asserted
                   // for every scene-sequence play. (Kagithapoo: 21 numbered scenes + one compressed
@@ -158,55 +218,24 @@ export default function PlayLanding({ play }: { play: Play }) {
               </span>
             </p>
           )}
+          {parts ? (
+            // One list per printed part, each under its own printed heading, each numbered as the source numbers it.
+            parts.map((g) => (
+              <div key={g.part.id} className="mt-6" data-testid="play-part-group" data-part-id={g.part.id}>
+                {g.part.headingTa !== null && (
+                  <h3 className="font-tamil text-base font-semibold text-ink dark:text-night-text" lang="ta">
+                    {g.part.headingTa}
+                    <span className="ml-2 font-display text-sm font-normal text-ink/55 dark:text-night-text/55" lang="en">{g.part.headingEn}</span>
+                  </h3>
+                )}
+                <ol className="mt-2 divide-y divide-ink/10 dark:divide-white/10">{g.units.map(row)}</ol>
+              </div>
+            ))
+          ) : (
           <ol className="mt-4 divide-y divide-ink/10 dark:divide-white/10">
-            {play.readingUnits.map((s) => (
-              <li key={s.slug}>
-                <Link href={`/plays/${play.slug}/${s.slug}`} className="focus-ring group flex gap-3 py-3">
-                  <span className="w-8 shrink-0 pt-0.5 text-right text-xs tabular-nums text-ink/40 dark:text-night-text/40">
-                    {s.order ?? "—"}
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block font-tamil text-[15px] text-ink group-hover:text-marina dark:text-night-text" lang="ta">{s.titleTa}</span>
-                    <span className="block font-display text-sm text-ink/55 dark:text-night-text/55">{s.titleEn}</span>
-                    {s.kind === "closing-tableau" && (
-                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
-                        <Drama className="h-3 w-3 text-marina" aria-hidden />
-                        {ta ? "எண்ணிடப்படாத நிறைவுக் காட்சி — காட்சி-39 அல்ல" : "unnumbered closing tableau — not Scene 39"}
-                      </span>
-                    )}
-                    {s.kind === "continuous-body" && (
-                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
-                        <Drama className="h-3 w-3 text-marina" aria-hidden />
-                        {ta ? "காட்சிப் பிரிவின்றி ஒரே தொடர் பகுதி" : "one continuous text — the source prints no scenes"}
-                      </span>
-                    )}
-                    {s.kind === "compressed-scene-range" && (
-                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
-                        <Drama className="h-3 w-3 text-marina" aria-hidden />
-                        {ta ? `மூலம் தொகுத்த காட்சிகள் ${s.sceneRange?.join(", ")}` : `source-compressed scenes ${s.sceneRange?.join(", ")}`}
-                      </span>
-                    )}
-                    {s.kind === "unnumbered-scene" && (
-                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
-                        <Drama className="h-3 w-3 text-marina" aria-hidden />
-                        {ta ? "எண்ணிடப்படாத காட்சி — காட்சி 22/23 அல்ல" : "unnumbered scene — not Scene 22/23"}
-                      </span>
-                    )}
-                    {s.kind === "source-representation-unit" && (
-                      <span className="mt-1 inline-flex items-center gap-1 rounded border border-dashed border-marina/40 px-1.5 py-0.5 text-[11px] text-ink/60 dark:text-night-text/60" lang={ta ? "ta" : "en"}>
-                        <Drama className="h-3 w-3 text-marina" aria-hidden />
-                        {ta ? `மூல அமைப்பு அலகு ${s.editorialUnitId} — காட்சி எண் அல்ல` : `${s.editorialUnitId} — an editorial unit, not a scene number`}
-                        {s.assembledFromVerifiedPages === false && (ta ? " · மூலச் சேதக் குறிகள் உள்ளன" : " · carries source-loss markers")}
-                      </span>
-                    )}
-                    <span className="mt-0.5 block text-[11px] text-ink/40 dark:text-night-text/40">
-                      {ta ? "ஸ்கேன்" : "scans"} {s.sourceScans.join(", ")}
-                    </span>
-                  </span>
-                </Link>
-              </li>
-            ))}
+            {play.readingUnits.map(row)}
           </ol>
+          )}
         </section>
       </div>
     </div>

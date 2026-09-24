@@ -7,6 +7,7 @@ import ShareButtons from "@/components/ShareButtons";
 import type { Play, PlayOpeningNote, PlayReadingUnit, PlayUnit } from "@/data/plays";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { playPartScope, playPartSceneLabel } from "@/lib/play-metadata";
 
 const OBSTRUCTION = "⟦later library stamp obscures leading letters⟧";
 
@@ -40,6 +41,8 @@ export default function PlayReader({
   const heading = showEn ? scene.headingEn ?? scene.headingTa : scene.headingTa;
   const title = showEn ? scene.titleEn : scene.titleTa;
   const setting = showEn ? scene.settingEn : scene.settingTa;
+  // A play printed in separately numbered parts: every scene label is scoped to its part. Null for single-part plays.
+  const partScope = playPartScope(play, scene);
 
   /**
    * Splits text on the source-obstruction marker so the marker itself renders as visible archival
@@ -148,8 +151,32 @@ export default function PlayReader({
                   ? ta ? "எண்ணிடப்படாத காட்சி" : "Unnumbered scene"
                   : scene.kind === "source-representation-unit"
                     ? ta ? `மூல அமைப்பு அலகு ${srIndex} / ${play.readingUnits.length}` : `Source-representation unit ${srIndex} of ${play.readingUnits.length}`
-                    : ta ? `காட்சி ${scene.order} / ${play.sceneCount}` : `Scene ${scene.order} of ${play.sceneCount}`}
+                    : partScope
+                      ? playPartSceneLabel(partScope, scene.order, ta ? "ta" : "en")
+                      : ta ? `காட்சி ${scene.order} / ${play.sceneCount}` : `Scene ${scene.order} of ${play.sceneCount}`}
         </p>
+
+        {/* Part identity — only for a play printed in separately numbered parts. The supplementary part's
+            scenes restart at 1; saying so where a reader meets them stops them being read as scenes 31–33. */}
+        {partScope && (
+          <p
+            className="mt-3 inline-flex items-start gap-1.5 rounded-xl border border-dashed border-marina/40 bg-marina/[0.06] px-3 py-2 text-xs leading-relaxed text-ink/70 dark:text-night-text/70"
+            lang={ta ? "ta" : "en"}
+            data-testid="play-part"
+            data-part-id={partScope.part.id}
+          >
+            <Drama className="mt-0.5 h-3.5 w-3.5 shrink-0 text-marina" aria-hidden />
+            <span>
+              {partScope.part.headingTa === null
+                ? ta
+                  ? `முதன்மை நாடகம் — ${partScope.count} காட்சிகள்.`
+                  : `The main play — ${partScope.count} scenes.`
+                : ta
+                  ? `முதன்மை நாடகத்துக்குப் பின் மூலம் தனித் தலைப்புடன் அச்சிட்டுள்ள பகுதி: ${partScope.part.headingTa} இதன் காட்சிகள் 1 முதல் ${partScope.count} வரை தனியாக எண்ணிடப்பட்டுள்ளன; இவை முதன்மை நாடகத்தின் தொடர் எண்கள் அல்ல.`
+                  : `A separately titled part printed after the main play: ${partScope.part.headingTa} (${partScope.part.headingEn}). Its scenes are numbered 1–${partScope.count} on their own; they do not continue the main play's numbering.`}
+            </span>
+          </p>
+        )}
 
         {heading && (
           <p className="mt-3 font-tamil text-sm text-ink/55 dark:text-night-text/55" lang={showEn ? "en" : "ta"}>{heading}</p>
