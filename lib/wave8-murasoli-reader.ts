@@ -11,6 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { MurasoliLetterMeta } from "@/data/murasoli";
+import { publicApparatus } from "@/lib/wave8-public-text";
 
 export const WAVE8_MURASOLI_VOLUMES = [42, 43, 44, 45, 46, 47] as const;
 
@@ -69,7 +70,8 @@ export function toWave8Letter(v: P1Volume, l: P1Letter): Wave8MurasoliLetter {
     english: {
       text: l.english.text,
       subtitle: l.english.subtitle ?? null,
-      translatorNote: l.english.translatorNote,
+      // Public-safe: workflow / audit wording in the note is audit history (kept in the hidden P1 data), not reader text.
+      translatorNote: publicApparatus(l.english.translatorNote),
       method: l.english.translationMethod,
     },
     qualification: l.qualification ? { kind: l.qualification.kind, missingPrintedPages: l.qualification.missingPrintedPages, lastAvailablePrintedPage: l.qualification.lastAvailablePrintedPage } : null,

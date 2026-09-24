@@ -69,7 +69,9 @@
     "test:wave7-b5-b6-k-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave7-b5-b6-k-p4-integration.ts",
     "test:wave7-b5-b6-k-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave7-b5-b6-k-public-provenance.ts",
     "test:drama-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-drama-public-provenance.ts",
-    "test:wave8-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p1-hidden.ts"
+    "test:wave8-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p1-hidden.ts",
+    "test:wave8-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave8-p2-render.ts",
+    "test:wave8-p2-fidelity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p2-fidelity.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

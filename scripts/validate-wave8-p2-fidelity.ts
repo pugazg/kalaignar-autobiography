@@ -62,6 +62,18 @@ function value(v: string): unknown {
 const noComments = (t: string) => t.replace(/<!--[\s\S]*?-->/g, "");
 /** Content lines: trailing whitespace dropped, blank lines dropped. */
 const contentLines = (t: string) => t.split("\n").map((l) => l.replace(/\s+$/, "")).filter((l) => l.trim() !== "");
+/**
+ * The validator's OWN reading of workflow / audit prose (independent of lib/wave8-public-text.ts). Public reader data
+ * must never contain it; where the archive's apparatus is shown, only such wording may have been removed.
+ */
+const WORKFLOW = /audited|Immediate authority|canonical (Tamil|record)|closed (Tamil|scene|artifact|layer|source)|source-closed|\blocked\b|user[- ](source )?adjudicat|adjudicated (from|on)|source adjudication|Pass-\d|\bWFV\b|\bOCR\b|English witness|cross-witness|alignment review|alignment has been verified|(terminal|explicit) hold|source hold|hold status|inherit that hold|source-secure|held action|globally blocked|formerly held|(is|are) (now |fully )?verified|reproduced (in full )?below|preserved below|resolved (Tamil|action|word)|pilot translation|`[^`]*\.md`/i;
+/** Is every sentence/clause of `pub` present verbatim in `src`? (Nothing reworded, nothing added.) */
+const flat = (t: string) => t.split("\n").map((l) => l.replace(/^(?:>\s?|\s)+/, "").replace(/^[-*]\s+/, "").trim()).filter((l) => l && !/^\*\*[^*]+\*\*$/.test(l)).join(" ");
+const verbatimSubset = (pub: string, src: string) => {
+  const s = flat(src);
+  // Per line first (a list item or quote line is its own unit), then per sentence / clause.
+  return pub.split("\n").map((l) => flat(l)).filter(Boolean).flatMap((l) => l.split(/(?<=[.!?`])\s+|;\s+/)).map((x) => x.replace(/[.;]$/, "").trim()).filter(Boolean).every((x) => s.includes(x));
+};
 const git = (dir: string, ...a: string[]) => execFileSync("git", ["-C", dir, ...a], { encoding: "utf8" }).trim();
 
 // ── pins ───────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -223,7 +235,13 @@ function readEnglishSrc(file: string): SrcEnglish {
       const body = contentLines(l.english.text);
       ok(JSON.stringify(body) === JSON.stringify(paired.body), `B1 ${id}: English body differs — ${firstDiff(paired.body, body)}`);
       ok(!/^\*\*Tamil source:|^> \*\*Translator/m.test(l.english.text) && !l.english.text.split("\n").some((x) => /^#{2,3} /.test(x) && APPARATUS_HEADING.test(x)), `B1 ${id}: apparatus inside the English body`);
-      ok((l.english.translatorNote ?? "").split("\n").filter(Boolean).join("\n") === paired.note.join("\n"), `B1 ${id}: translator's note not carried apart exactly`);
+      // The translator's note is shown apart from the letter, public-safe: only workflow wording may be missing.
+      const note = l.english.translatorNote ?? "";
+      ok(!WORKFLOW.test(note), `B1 ${id}: workflow/audit wording in the public translator's note`);
+      ok(verbatimSubset(note, paired.note.join("\n")), `B1 ${id}: translator's note is not a verbatim subset of the source note`);
+      const srcNoteSentences = flat(paired.note.join("\n")).split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean);
+      ok(srcNoteSentences.filter((x) => !WORKFLOW.test(x)).every((x) => flat(note).includes(x.replace(/[.]$/, ""))), `B1 ${id}: a non-workflow sentence of the translator's note was dropped`);
+      if (paired.note.length) tally("B1 translator notes (public-safe)");
     }
   }
   ok(srcTotal === 342, `B1: the pinned source holds ${srcTotal} letters, expected 342`);
@@ -359,8 +377,14 @@ const unitLines = (u: PlayUnit) => {
       ok(!modelLines.some((l) => /^## |Assembly provenance|Translation notes|source boundary:/.test(l)), `B2 ${u.slug} ${lang}: apparatus/comment inside the scene text`);
     }
     // The English notes are the English apparatus exactly, held apart.
+    // Translation notes: apart from the text, public-safe — verbatim from the apparatus, only workflow wording removed.
     const notes = u.english.notes.map((n) => n.text).join("\n\n");
-    ok(notes === s.en.apparatus && u.english.notes.every((n) => n.kind === "translation-note"), `B2 ${u.slug}: translation notes differ from the printed apparatus`);
+    ok(u.english.notes.every((n) => n.kind === "translation-note"), `B2 ${u.slug}: notes not typed translation-note`);
+    ok(!WORKFLOW.test(notes), `B2 ${u.slug}: workflow/audit wording in the public translation notes`);
+    ok(verbatimSubset(notes, s.en.apparatus), `B2 ${u.slug}: translation notes are not a verbatim subset of the source apparatus`);
+    const items = s.en.apparatus.split(/\n(?=- )/).flatMap((x) => x.replace(/^- /, "").split(/(?<=[.!?])\s+/)).map((x) => x.trim()).filter(Boolean);
+    ok(items.filter((x) => !WORKFLOW.test(x)).every((x) => notes.includes(x.replace(/[.]$/, ""))), `B2 ${u.slug}: a non-workflow translation note was dropped`);
+    tally("B2 notes kept", items.filter((x) => !WORKFLOW.test(x)).length); tally("B2 notes withheld (workflow)", items.filter((x) => WORKFLOW.test(x)).length);
   }
   ok(play.readingUnits.filter((u) => u.partId === supPart?.id).map((u) => u.order).join(",") === "1,2,3", "B2: the comedy section is numbered 1, 2, 3 — never 31–33");
 }
@@ -442,15 +466,42 @@ const sig = (s: string) => (s.match(/[஀-௿0-9A-Za-z]/g) ?? []).join("");
     for (const [lang, body, blocks] of [["ta", t.body, p.tamil], ["en", e.body, p.english]] as const) {
       tally(`B3 ${lang} pages`);
       const src = pageLines(body);
-      const model = blocks.flatMap((b) => b.lines.filter((l) => l.trim() !== "").map((l) => ({ text: l, b })));
-      // EQUALITY — no line lost, none invented, order kept, each line its own line.
-      ok(JSON.stringify(model.map((x) => x.text)) === JSON.stringify(src.map((x) => x.text)), `B3 scan ${scan} ${lang}: lines differ from the source page — ${firstDiff(src.map((x) => x.text), model.map((x) => x.text))}`);
+      const modelLines = blocks.flatMap((b) => b.lines.filter((l) => l.trim() !== "").map((l) => ({ text: l, b })));
+      // Which source lines are the ARCHIVE speaking (an archival label's section, or a whole illustration scan)?
+      const archiveCtx: boolean[] = [];
+      { let c = false; for (const x of src) { if (x.cls === "h1" || x.cls === "h2" || x.cls === "h3") c = x.cls === "h2" && ARCHIVAL.has(x.heading!); archiveCtx.push(c || !!p.illustration); } }
+      // EQUALITY — every printed line carried exactly, in order, each its own line. The ONLY permitted difference: in
+      // archive prose, workflow wording withheld (a line dropped, or a verbatim sentence-subset kept) — never in text.
+      const pairs: { s: (typeof src)[number]; m: (typeof modelLines)[number] }[] = [];
+      let j = 0, bad = "";
+      for (let i = 0; i < src.length && !bad; i++) {
+        const sl = src[i], ml = modelLines[j];
+        if (ml && ml.text === sl.text) { pairs.push({ s: sl, m: ml }); j++; continue; }
+        if (archiveCtx[i] && WORKFLOW.test(sl.text)) {
+          if (ml && ml.b.presentation === "archival" && verbatimSubset(ml.text, sl.text) && !WORKFLOW.test(ml.text)) { pairs.push({ s: sl, m: ml }); j++; tally("B3 archive lines filtered"); continue; }
+          tally("B3 archive lines withheld (workflow)"); continue;
+        }
+        bad = `line ${i}: source ${JSON.stringify(sl.text.slice(0, 80))} vs model ${JSON.stringify(ml?.text.slice(0, 80))}`;
+      }
+      if (!bad && j !== modelLines.length) bad = `model carries ${modelLines.length - j} line(s) the source page does not print`;
+      ok(!bad, `B3 scan ${scan} ${lang}: lines differ from the source page — ${bad}`);
       tally(`B3 ${lang} lines`, src.length);
+      // PRESENTATION — archive vs printed matter, from each block's own evidence (never from the page type alone).
+      for (const b of blocks) {
+        const words = b.lines.join(" ");
+        const visual = /illustration|ஓவிய|caption|picture|image|physical-page/i.test(words);
+        const archiveTyped = ["archival-label", "archival-description", "copy-specific-marking"].includes(b.role);
+        const expectArchival = archiveTyped || (p.illustration && visual);
+        ok(b.presentation === (expectArchival ? "archival" : "text"), `B3 scan ${scan} ${lang}: ${b.role} block ${JSON.stringify(words.slice(0, 50))} presented ${b.presentation} — ${expectArchival ? "the archive's description must be labelled archival" : "printed matter must never be reclassified as archival description"}`);
+        if (b.presentation === "archival") ok(!WORKFLOW.test(words), `B3 scan ${scan} ${lang}: workflow wording in archive description`);
+      }
+      ok(!p.illustration || p.pureIllustration === blocks.every((b) => b.presentation === "archival") || lang === "en", `B3 scan ${scan}: pure/mixed illustration flag disagrees with its blocks`);
+      if (p.illustration && lang === "ta") tally(p.pureIllustration ? "B3 pure illustration scans" : "B3 mixed illustration scans");
       // STRUCTURE — the printed markup class of every line agrees with the model block that carries it.
       let ctx: "archival" | "gloss" | null = null;
       let lastBlock: unknown = null;
-      for (let k = 0; k < Math.min(src.length, model.length); k++) {
-        const s = src[k], { b } = model[k];
+      for (let k = 0; k < pairs.length; k++) {
+        const { s, m: { b } } = pairs[k];
         roleSeen.add(b.role);
         const kindOk =
           s.cls === "h1" ? b.kind === "heading" && b.level === 1 :

@@ -56,12 +56,14 @@ const pubBlock = (b: SangatamilBlock): SangatamilBlock => ({
   ...(b.level !== undefined ? { level: b.level } : {}),
   ...(b.align !== undefined ? { align: b.align } : {}),
   ...(b.citationIds !== undefined ? { citationIds: [...b.citationIds] } : {}),
+  presentation: b.presentation,
 });
 const pubPage = (p: SangatamilPage): SangatamilPage => ({
   scan: p.scan,
   printedPage: p.printedPage,
   pageType: p.pageType,
   illustration: p.illustration,
+  pureIllustration: p.pureIllustration,
   sourceLimited: p.sourceLimited ? { kind: p.sourceLimited.kind } : null,
   tamil: p.tamil.map(pubBlock),
   english: p.english.map(pubBlock),

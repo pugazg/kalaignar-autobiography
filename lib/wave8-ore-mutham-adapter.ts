@@ -10,10 +10,12 @@
 //   label EXACTLY as printed · anything else → dialogue with NO printed label (never attributed to anyone).
 // Each scene's printed setting line (`இடம்:-` / `Location:`) is the unit's setting, kept verbatim. The archive's
 // `## Assembly provenance` (Tamil) is workflow apparatus and never becomes text; the English `## Translation notes`
-// are carried as translation notes, rendered apart from the translation.
+// become translation notes, rendered apart from the translation and filtered to their public-safe sentences
+// (lib/wave8-public-text.ts): workflow / closure / adjudication wording stays in the hidden P1 data.
 import fs from "node:fs";
 import path from "node:path";
 import type { Play, PlayProvenance, PlayReadingUnit, PlayUnit, PlayNote } from "@/data/plays";
+import { publicApparatus } from "@/lib/wave8-public-text";
 
 type P1Unit = {
   id: string; partId: string; printedSceneNumber: number; headingTa: string; headingEn: string;
@@ -85,7 +87,9 @@ export function parseSceneText(text: string, lang: "ta" | "en"): { setting: stri
 
 /** The English `## Translation notes` apparatus → translation notes (never translation text). */
 function translationNotes(apparatus: string): PlayNote[] {
-  const body = apparatus.replace(/^## Translation notes\s*\n?/, "").trim();
+  // Public-safe: workflow / closure / adjudication wording is audit history (kept in the hidden P1 data); only the
+  // durable translation clarifications are reader text. Surviving wording is verbatim.
+  const body = publicApparatus(apparatus.replace(/^## Translation notes\s*\n?/, "").trim());
   return body ? [{ kind: "translation-note", text: body }] : [];
 }
 

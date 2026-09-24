@@ -8,15 +8,16 @@
 // its hard lineation (one source line = one line), and archive descriptions never become body text.
 //
 // Two page-level facts drive presentation, both from the source's own page records:
-//   • `illustration` — the 97 full-page illustration scans. Whatever blocks such a page carries are the archive's
-//     description of the image (some source records set that description as an unlabelled paragraph), so every
-//     block on an illustration page is presented as archival, never as the book's text.
+//   • `illustration` — the 97 full-page illustration scans. The archive's description of an image is presented as
+//     archival, never as the book's text; a block on such a scan is archival only when it is archive-typed or its own
+//     words describe the visual record, so any genuinely printed line on an illustration scan stays text.
 //   • `sourceLimited` — scan 8's handwritten foreword letter is permanently not transcribed. The page carries only
 //     its heading and the archive's description; the reader adds a durable source-condition statement. It is
 //     never transcribed and never described as pending.
 // P1 page annotations are workflow/audit notes and are deliberately not carried.
 import fs from "node:fs";
 import path from "node:path";
+import { publicSentences } from "@/lib/wave8-public-text";
 
 export const SANGATAMIL_ROLES = [
   "text", "section-title", "printed-heading", "quotation", "source-citation", "source-note", "gloss-heading", "gloss",
@@ -33,6 +34,13 @@ export type SangatamilBlock = {
   align?: "left" | "center" | "right";
   /** The printed source citation(s) / source note(s) this block belongs to (P001…), where the archive records them. */
   citationIds?: string[];
+  /**
+   * How a reader must present the block: `text` is printed matter of the book (Kalaignar's words, quoted verse,
+   * citations, glosses, front matter); `archival` is the ARCHIVE describing the physical page — a labelled visual
+   * record, a library/ownership marking, or the archive's own note on an illustration scan. Decided per block from the
+   * block's own role and words, never from the page type alone.
+   */
+  presentation: "text" | "archival";
 };
 
 export type SangatamilPage = {
@@ -40,6 +48,8 @@ export type SangatamilPage = {
   printedPage: string | null;
   pageType: string;
   illustration: boolean;
+  /** A full-page illustration scan that carries no printed text at all (every block is the archive's description). */
+  pureIllustration: boolean;
   sourceLimited: { kind: "handwritten-facsimile" } | null;
   tamil: SangatamilBlock[];
   english: SangatamilBlock[];
@@ -92,14 +102,30 @@ export function loadSangatamilP1(): P1 {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/internal/wave8/sangatamil/sangatamil.json"), "utf8"));
 }
 
-const toBlock = (b: P1Block): SangatamilBlock => ({
-  kind: b.type,
-  role: b.role,
-  lines: b.lines.map((l) => l.replace(/\s+$/, "")),
-  ...(b.level !== undefined ? { level: b.level } : {}),
-  ...(b.align !== undefined ? { align: b.align } : {}),
-  ...(b.provenanceIds?.length ? { citationIds: [...b.provenanceIds] } : {}),
-});
+const ARCHIVAL_ROLES = new Set<SangatamilRole>(["archival-label", "archival-description", "copy-specific-marking"]);
+/**
+ * On an illustration scan, the archive sometimes records its description of the image as a plain paragraph or
+ * heading. Such a block names the visual record itself (the illustration, the picture, the absence of a caption or
+ * printed text, the physical-page record). A block that does not is printed matter and stays text.
+ */
+const DESCRIBES_VISUAL = /illustration|ஓவிய|\bcaption\b|physical[- ]page record|printed (literary|body) text|no printed literary|full-page colour|\bpainting\b|\bdrawing\b/i;
+
+function toBlock(b: P1Block, onIllustration: boolean): SangatamilBlock {
+  const archival = ARCHIVAL_ROLES.has(b.role) || (onIllustration && DESCRIBES_VISUAL.test(b.lines.join(" ")));
+  // Archive prose is filtered to its public-safe sentences (workflow / capture-stage wording is audit history);
+  // printed matter is carried exactly.
+  const lines = b.lines.map((l) => l.replace(/\s+$/, ""));
+  const shown = archival && b.role !== "archival-label" ? lines.map((l) => (l.trim() ? publicSentences(l) : l)).filter((l, i) => !lines[i].trim() || l !== "") : lines;
+  return {
+    kind: b.type,
+    role: b.role,
+    lines: shown,
+    ...(b.level !== undefined ? { level: b.level } : {}),
+    ...(b.align !== undefined ? { align: b.align } : {}),
+    ...(b.provenanceIds?.length ? { citationIds: [...b.provenanceIds] } : {}),
+    presentation: archival ? "archival" : "text",
+  };
+}
 
 export function toSangatamilWork(p1: P1 = loadSangatamilP1()): SangatamilWork {
   const byScan = new Map(p1.pages.map((p) => [p.scan, p]));
@@ -109,14 +135,18 @@ export function toSangatamilWork(p1: P1 = loadSangatamilP1()): SangatamilWork {
     for (let scan = s.scans[0]; scan <= s.scans[1]; scan++) {
       const p = byScan.get(scan);
       if (!p) throw new Error(`sangatamil: scan ${scan} missing from P1 pages`);
+      const illustration = p.pageType === "illustration";
+      const tamil = p.tamil.blocks.map((b) => toBlock(b, illustration)).filter((b) => b.lines.some((l) => l.trim()));
+      const english = p.english.blocks.map((b) => toBlock(b, illustration)).filter((b) => b.lines.some((l) => l.trim()));
       pages.push({
         scan,
         printedPage: p.printedPage,
         pageType: p.pageType,
-        illustration: p.pageType === "illustration",
+        illustration,
+        pureIllustration: illustration && [...tamil, ...english].every((b) => b.presentation === "archival"),
         sourceLimited: p.sourceLimitation?.kind === "permanent-source-limited" ? { kind: "handwritten-facsimile" } : null,
-        tamil: p.tamil.blocks.map(toBlock),
-        english: p.english.blocks.map(toBlock),
+        tamil,
+        english,
       });
     }
     const kind = idx === 0 ? "front-matter" : idx === last ? "back-matter" : "section";

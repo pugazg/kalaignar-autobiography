@@ -130,14 +130,14 @@ export default function SangatamilReader({
 
 function Page({ page: p, showEn, ta }: { page: SangatamilPage; showEn: boolean; ta: boolean }) {
   const blocks = showEn ? p.english : p.tamil;
-  const body = blocks.map((b, i) => renderBlock(b, i, ta, p.illustration));
+  const body = blocks.map((b, i) => renderBlock(b, i, ta, p.pureIllustration));
   return (
     <section
       aria-label={p.printedPage ? (ta ? `அச்சுப் பக்கம் ${p.printedPage}` : `Printed page ${p.printedPage}`) : ta ? `ஸ்கேன் ${p.scan}` : `Scan ${p.scan}`}
       data-scan={p.scan}
       data-printed-page={p.printedPage ?? ""}
       data-page-type={p.pageType}
-      data-illustration={p.illustration ? "true" : undefined}
+      data-illustration={p.illustration ? (p.pureIllustration ? "pure" : "mixed") : undefined}
     >
       <div className="my-5 flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" role="separator" data-print="hide">
         <span className="h-px w-5 bg-ink/10 dark:bg-white/10" aria-hidden />
@@ -148,9 +148,10 @@ function Page({ page: p, showEn, ta }: { page: SangatamilPage; showEn: boolean; 
         </span>
         <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
       </div>
-      {p.illustration ? (
-        // A full-page illustration scan. Whatever the archive records here describes the image; it is framed as
-        // that description and never read as the book's text.
+      {p.pureIllustration ? (
+        // A full-page illustration scan with no printed text: everything recorded here is the archive's description
+        // of the image, framed as that description and never read as the book's text. (On a scan that also carries
+        // printed matter, the printed lines render as text and only the archive's description is labelled.)
         <figure className="mb-6 rounded-xl border border-dashed border-ink/20 bg-ink/[0.02] px-4 py-3 font-body text-[0.78em] leading-relaxed text-ink/60 dark:border-white/20 dark:bg-white/[0.03] dark:text-night-text/60" data-testid="illustration-page" data-presentation="archival">
           <figcaption className="mb-1.5 flex items-center gap-1.5 text-[0.85em] font-semibold uppercase tracking-wider text-ink/50 dark:text-night-text/50" lang={ta ? "ta" : "en"}>
             <ImageIcon className="h-3.5 w-3.5" aria-hidden /> {ta ? "முழுப்பக்க ஓவியம் — அச்சிட்ட உரை இல்லை" : "Full-page illustration — no printed text"}
@@ -196,15 +197,25 @@ function Lines({ lines }: { lines: string[] }) {
   );
 }
 
-function renderBlock(b: SangatamilBlock, i: number, ta: boolean, onIllustration: boolean): ReactNode {
+function renderBlock(b: SangatamilBlock, i: number, ta: boolean, inIllustrationFrame: boolean): ReactNode {
   const data = {
     "data-role": b.role,
     "data-kind": b.kind,
     ...(b.citationIds ? { "data-citation-ids": b.citationIds.join(" ") } : {}),
-    "data-presentation": onIllustration || b.role.startsWith("archival") || b.role === "copy-specific-marking" ? "archival" : "text",
+    "data-presentation": b.presentation,
   };
-  if (onIllustration) {
+  // Inside a pure-illustration frame every block is the archive's description (the frame carries the label).
+  if (inIllustrationFrame) {
     return <p key={i} className="mt-1" {...data}><Lines lines={b.lines} /></p>;
+  }
+  // The archive describing a visual element on a page that also carries printed matter: labelled, never body text.
+  if (b.presentation === "archival" && !b.role.startsWith("archival") && b.role !== "copy-specific-marking") {
+    return (
+      <p key={i} className="mb-5 flex gap-2 rounded-lg bg-ink/[0.03] px-3 py-2 font-body text-[0.75em] leading-relaxed text-ink/55 dark:bg-white/[0.04] dark:text-night-text/55" {...data}>
+        <ImageIcon className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden />
+        <span><span className="font-semibold" lang={ta ? "ta" : "en"}>{ta ? "காப்பக விவரிப்பு: " : "Archival description: "}</span><Lines lines={b.lines} /></span>
+      </p>
+    );
   }
   switch (b.role) {
     case "section-title":
