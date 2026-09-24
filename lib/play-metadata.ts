@@ -5,7 +5,27 @@
 // "Scene N" the source does not print, and never emit "Scene null", "0 scenes", or "Scene 1 of 0".
 // These helpers are the single authority both page `generateMetadata` functions call, so the
 // Batch-2 metadata regression test can assert on the exact strings Next.js will emit.
-import type { Play, PlayReadingUnit } from "@/data/plays";
+import type { Play, PlayPart, PlayReadingUnit } from "@/data/plays";
+
+/**
+ * A unit's own numbering scope, for a play that prints separately numbered PARTS (Wave 8: ஒரே முத்தம் prints the main
+ * play, காட்சி 1–30, then `நகைச் சுவைப் பகுதி.`, காட்சி 1–3 afresh). `count` is that part's scene count, so a
+ * supplementary scene reads "நகைச் சுவைப் பகுதி. · காட்சி 1 / 3" — never "காட்சி 31" and never an unscoped
+ * "காட்சி 1 / 33". Null for every single-part play (no `parts`), whose rendering is unchanged.
+ */
+export function playPartScope(play: Play, unit: PlayReadingUnit): { part: PlayPart; count: number } | null {
+  if (!play.parts || !unit.partId) return null;
+  const part = play.parts.find((p) => p.id === unit.partId);
+  if (!part) throw new Error(`${play.slug}/${unit.slug}: unknown part ${unit.partId}`);
+  return { part, count: play.readingUnits.filter((u) => u.partId === part.id).length };
+}
+
+/** The part-scoped scene label: "காட்சி 5 / 30", "நகைச் சுவைப் பகுதி. · காட்சி 1 / 3" (and the English equivalents). */
+export function playPartSceneLabel(scope: { part: PlayPart; count: number }, order: number | null, lang: "ta" | "en"): string {
+  const head = lang === "ta" ? scope.part.headingTa : scope.part.headingEn;
+  const n = lang === "ta" ? `காட்சி ${order} / ${scope.count}` : `Scene ${order} of ${scope.count}`;
+  return head ? `${head} · ${n}` : n;
+}
 
 /** Format a scene-number set as a range ("2–5") when contiguous, else a list ("2, 3, 5"). */
 function fmtNums(nums: number[]): string {
@@ -20,6 +40,17 @@ export function playStructurePhrase(play: Play): string {
   if (play.structureKind === "continuous-play") return "one continuous dramatic text with no scene division";
   if (play.structureKind === "editorial-sru-sequence") {
     return `${play.readingUnits.length} editorial source-representation units; the source prints no scene numbers or acts`;
+  }
+  // A play printed in separately numbered PARTS: each part keeps its own numbering, so describe the parts — never
+  // one flattened "33 scenes".
+  if (play.parts) {
+    const bits = play.parts.map((part) => {
+      const n = play.readingUnits.filter((u) => u.partId === part.id).length;
+      return part.headingTa === null
+        ? `${n} source-numbered scenes`
+        : `a separately titled ${(part.headingEn ?? "").toLowerCase()} (${part.headingTa}) with ${n} independently numbered scenes`;
+    });
+    return `${bits[0]}, followed by ${bits.slice(1).join(", then ")}`;
   }
   // scene-sequence — describe the ACTUAL mix, never collapse a compressed range or an unnumbered
   // scene into a plain "N scenes".
@@ -81,11 +112,18 @@ export function playSceneDescription(play: Play, scene: PlayReadingUnit): string
       const ordinal = play.readingUnits.findIndex((u) => u.slug === scene.slug) + 1;
       return `Source-representation unit ${ordinal} of ${total} — editorial navigation, not a source scene number.`;
     }
-    default:
+    default: {
+      const scope = playPartScope(play, scene);
+      if (scope) {
+        return scope.part.headingEn
+          ? `${scope.part.headingEn} · Scene ${scene.order} of ${scope.count} — a separately titled, separately numbered part of ${play.title.en}.`
+          : `Scene ${scene.order} of ${scope.count} of the main play — ${scene.titleEn}.`;
+      }
       // Ordinary source-numbered scene. For a MIXED-structure work (a compressed range / unnumbered
       // scene present) "Scene N of ${sceneCount}" would mislead, so name it a source-numbered scene.
       return mixed
         ? `Source-numbered Scene ${scene.order} — ${scene.titleEn}.`
         : `Scene ${scene.order} of ${play.sceneCount} — ${scene.titleEn}.`;
+    }
   }
 }

@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, CheckCircle2, ChevronLeft, ChevronRight, Circle, Clock, Home, ListOrdered, Minus, Plus } from "lucide-react";
+import { ArrowLeft, BookOpen, CheckCircle2, ChevronLeft, ChevronRight, Circle, Clock, Home, ListOrdered, Minus, Plus, TriangleAlert } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
 import ShareQuote from "@/components/ShareQuote";
 import type { MurasoliLetterMeta } from "@/data/murasoli";
+import type { Wave8MurasoliLetter } from "@/lib/wave8-murasoli-reader";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { queryForms } from "@/lib/transliterate";
@@ -19,6 +20,14 @@ type Props = {
   next: Letter | null;
   alsoInVolume: Letter[];
   sourceUrl?: string;
+  /**
+   * Wave 8 (Vols 42–47): the complete, source-pinned reader payload, injected by the server. When present the letter
+   * renders from it — page-segmented Tamil, released English, source-condition qualification — and NOTHING is
+   * fetched. When absent (Vols 48–54) the original fetch path runs unchanged.
+   */
+  content?: Wave8MurasoliLetter;
+  /** Test/SSR seed for the English toggle (injected letters only); defaults to Tamil. */
+  initialShowEn?: boolean;
 };
 
 const READ_KEY = "mu:read";
@@ -30,7 +39,7 @@ function formatDate(iso: string) {
   return `${Number(d)}.${Number(m)}.${y}`;
 }
 
-export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume, sourceUrl }: Props) {
+export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume, sourceUrl, content, initialShowEn }: Props) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const [paras, setParas] = useState<string[] | null>(null);
@@ -45,9 +54,10 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
   const [enTitle, setEnTitle] = useState<string | null>(null);
   const [enSalutation, setEnSalutation] = useState<string | null>(null);
   const [enNote, setEnNote] = useState<string | null>(null);
-  const [showEn, setShowEn] = useState(false);
+  const [showEn, setShowEn] = useState(content ? initialShowEn ?? false : false);
 
   useEffect(() => {
+    if (content) return; // Wave-8 letters are injected in full; the legacy public-JSON fetch never runs for them.
     setParas(null);
     setError(false);
     setEnParas(null);
@@ -77,12 +87,14 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
   // (auto at ~95% + manual toggle), and recording this as the resume point.
   const { progress, isRead, toggleRead } = useReaderProgress({
     id: letter.id,
-    ready: !!paras,
+    ready: !!paras || !!content,
     readKey: READ_KEY,
     posPrefix: POS_PREFIX,
     lastKey: LAST_KEY,
   });
-  const readMins = paras ? Math.max(1, Math.round(paras.join(" ").split(/\s+/).length / 200)) : null;
+  const readMins = content
+    ? Math.max(1, Math.round(content.tamilPages.map((p) => p.text).join(" ").split(/\s+/).length / 200))
+    : paras ? Math.max(1, Math.round(paras.join(" ").split(/\s+/).length / 200)) : null;
 
   const sizes = ["text-base", "text-lg", "text-xl"];
 
@@ -162,10 +174,13 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
           {letter.number != null && <> · {letter.number}</>}
         </p>
         <h1 className="mt-3 font-tamil text-2xl font-semibold leading-snug text-ink dark:text-night-text sm:text-3xl" lang="ta">
-          {showEn && enTitle ? enTitle : letter.title.ta}
+          {content ? (showEn ? content.title.en : letter.title.ta) : showEn && enTitle ? enTitle : letter.title.ta}
         </h1>
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink/50 dark:text-night-text/50">
           {letter.date && <span>{ta ? "நாள்" : "Dated"} {formatDate(letter.date)}</span>}
+          {content?.date.fromPrintedContents && (
+            <span data-testid="date-from-contents">{ta ? "(தேதி: அச்சிட்ட பொருளடக்கத்திலிருந்து)" : "(date from the printed contents)"}</span>
+          )}
           {readMins !== null && (
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" aria-hidden />
@@ -182,7 +197,7 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
 
         <div className="mt-4 flex flex-wrap items-center gap-3" data-print="hide">
           <ShareButtons title={`${letter.title.ta} · முரசொலி`} path={`/murasoli/${letter.id}`} />
-          {enParas && (
+          {(enParas || content) && (
             <div className="inline-flex overflow-hidden rounded-full border border-marina/40 text-xs font-medium">
               <button
                 onClick={() => setShowEn(false)}
@@ -202,7 +217,9 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
           )}
         </div>
 
-        {showEn && enParas && (
+        {content && <Wave8Notices content={content} ta={ta} showEn={showEn} />}
+
+        {!content && showEn && enParas && (
           <p className="mt-4 rounded-xl border border-dashed border-brass/50 bg-brass/[0.06] px-4 py-2.5 text-xs leading-relaxed text-ink/70 dark:text-night-text/70">
             {ta
               ? "இது ஒரு மொழிபெயர்ப்பு"
@@ -221,14 +238,14 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
           </p>
         )}
 
-        {showEn && enNote && (
+        {!content && showEn && enNote && (
           <p className="mt-3 text-xs italic leading-relaxed text-ink/55 dark:text-night-text/55">
             {enNote}
           </p>
         )}
 
         {/* In-letter jump list for long letters (Tamil view only; mechanical labels) */}
-        {!showEn && paras && paras.length > 12 && (
+        {!content && !showEn && paras && paras.length > 12 && (
           <details className="not-prose mt-6 rounded-xl border border-ink/10 bg-white/60 p-4 text-sm dark:border-white/10 dark:bg-night-surface/60" data-print="hide">
             <summary className="focus-ring inline-flex cursor-pointer items-center gap-2 text-marina dark:text-marina-light">
               <ListOrdered className="h-4 w-4" aria-hidden />
@@ -247,7 +264,9 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
           </details>
         )}
 
-        <div className={cn("mt-8 space-y-5 leading-loose text-ink/90 dark:text-night-text/90", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
+        {content && <Wave8Body content={content} ta={ta} showEn={showEn} sizeClass={sizes[font]} />}
+
+        {!content && <div className={cn("mt-8 space-y-5 leading-loose text-ink/90 dark:text-night-text/90", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"}>
           {!paras && !error && <p className="text-sm text-ink/50 dark:text-night-text/50">{ta ? "கடிதம் ஏற்றப்படுகிறது…" : "Loading the letter…"}</p>}
           {error && <p className="text-sm text-ink/50 dark:text-night-text/50">{ta ? "இந்தக் கடிதத்தை ஏற்ற முடியவில்லை." : "This letter could not be loaded."}</p>}
           {!showEn && paras && salutation && <p className="font-medium text-marina dark:text-marina-light">{salutation}</p>}
@@ -276,7 +295,7 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
               </a>
             </p>
           )}
-        </div>
+        </div>}
 
         <nav className="mt-12 flex items-center justify-between gap-3 border-t border-ink/10 pt-6 dark:border-white/10" aria-label="Letter navigation">
           {prev ? (
@@ -313,6 +332,112 @@ export default function MurasoliLetterReader({ letter, prev, next, alsoInVolume,
         )}
       </article>
       <ShareQuote title={letter.title.ta} refLabel={letter.number != null ? (ta ? `கடிதம் ${letter.number}` : `Letter ${letter.number}`) : `முரசொலி · தொகுதி ${letter.volume}`} />
+    </div>
+  );
+}
+
+// ── Wave 8 (Vols 42–47): injected, source-pinned letters ─────────────────────────────────────────────────────────────
+// Faithful inline Markdown the archive uses in its transcriptions (**bold**, *italic*, `code`, `\*` escapes).
+function inline(text: string): ReactNode {
+  const nodes: ReactNode[] = [];
+  const re = /\\([*_`])|\*\*([^*]+)\*\*|\*([^*\n]+)\*|`([^`]+)`/g;
+  let last = 0; let m: RegExpExecArray | null; let k = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    if (m[1] !== undefined) nodes.push(m[1]);
+    else if (m[2] !== undefined) nodes.push(<strong key={k++} className="font-semibold">{m[2]}</strong>);
+    else if (m[3] !== undefined) nodes.push(<em key={k++}>{m[3]}</em>);
+    else nodes.push(<code key={k++} className="rounded bg-ink/[0.06] px-1 py-0.5 text-[0.9em] dark:bg-white/10">{m[4]}</code>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
+/** Split a source text into blank-line-separated blocks, keeping every source line (hard breaks stay line breaks). */
+function blocks(text: string): string[] {
+  return text.split(/\n[ \t]*\n/).map((b) => b.replace(/[ \t]+$/gm, "")).filter((b) => b.trim() !== "");
+}
+
+function renderBlock(b: string, key: number, lang: "ta" | "en"): ReactNode {
+  const h = /^(#{1,6}) (.+)$/.exec(b);
+  if (h && !b.includes("\n")) return <h2 key={key} className="mt-6 font-semibold leading-snug text-marina dark:text-marina-light" data-block="heading">{inline(h[2])}</h2>;
+  if (b.split("\n").every((l) => l.startsWith(">"))) {
+    return <blockquote key={key} className="whitespace-pre-line border-l-2 border-marina/40 py-1 pl-4 text-ink/80 dark:text-night-text/80" data-block="quotation">{inline(b.split("\n").map((l) => l.replace(/^> ?/, "")).join("\n"))}</blockquote>;
+  }
+  return <p key={key} className="whitespace-pre-line" data-block={lang === "ta" ? "tamil" : "english"}>{inline(b)}</p>;
+}
+
+function Wave8Notices({ content, ta, showEn }: { content: Wave8MurasoliLetter; ta: boolean; showEn: boolean }) {
+  const q = content.qualification;
+  return (
+    <>
+      {q && (
+        <div className="mt-4 rounded-xl border border-dashed border-ink/30 bg-ink/[0.03] px-4 py-3 text-xs leading-relaxed text-ink/75 dark:border-white/25 dark:bg-white/[0.04] dark:text-night-text/75" role="note" data-testid="source-condition" data-kind={q.kind} data-missing-printed-pages={q.missingPrintedPages.join(",")}>
+          <p className="flex items-center gap-1.5 font-semibold uppercase tracking-wider text-ink/60 dark:text-night-text/60">
+            <TriangleAlert className="h-3.5 w-3.5" aria-hidden /> {ta ? "மூலத்தின் நிலையான குறைவு" : "Permanent source condition"}
+          </p>
+          <p className="mt-1.5" lang={ta ? "ta" : "en"}>
+            {ta
+              ? `இக்கடிதம் மூலத்திலேயே முழுமையற்றது: அச்சுப் பக்கம் ${q.missingPrintedPages.join(", ")} கிடைக்கும் ஒரே மூல நூலில் இல்லை. கிடைக்கும் பக்கங்களின் உரை மட்டுமே இங்கு உள்ளது; விடுபட்ட தொடர்ச்சி, நிறைவுப் பகுதி, கையொப்பம், தேதி எவையும் உருவாக்கப்படவில்லை.`
+              : `This letter is incomplete in the source itself: printed page ${q.missingPrintedPages.join(", ")} is absent from the only available source volume. Only the surviving pages are given here; no continuation, closing, signature or date has been supplied.`}
+          </p>
+        </div>
+      )}
+      <p className={cn("mt-4 rounded-xl border border-dashed px-4 py-2.5 text-xs leading-relaxed", showEn ? "border-brass/50 bg-brass/[0.06] text-ink/70 dark:text-night-text/70" : "border-ink/15 bg-ink/[0.02] text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60")} lang={ta ? "ta" : "en"} data-testid="layer-note">
+        {showEn
+          ? ta
+            ? "இது இத்திட்டத்தால் உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
+            : "This is a project-created English translation. The Tamil original remains authoritative."
+          : ta
+            ? "கீழே அச்சிட்ட நூலின் ஸ்கேனுடன் நேரடியாக ஒப்பிட்டுச் சரிபார்க்கப்பட்ட தமிழ் உரை, மூலப் பக்க வாரியாக."
+            : "Below is the Tamil text verified directly against the scanned printed volume, page by source page."}
+      </p>
+      {showEn && content.english.translatorNote && (
+        <p className="mt-3 text-xs italic leading-relaxed text-ink/55 dark:text-night-text/55" data-testid="translator-note">
+          {inline(content.english.translatorNote.split("\n").map((l) => l.replace(/^> ?/, "")).filter((l) => l.trim()).join(" "))}
+        </p>
+      )}
+    </>
+  );
+}
+
+function Wave8Body({ content, ta, showEn, sizeClass }: { content: Wave8MurasoliLetter; ta: boolean; showEn: boolean; sizeClass: string }) {
+  const q = content.qualification;
+  const end = q && (
+    <p className="mt-6 rounded-lg bg-ink/[0.04] px-3 py-2 font-body text-xs italic text-ink/60 dark:bg-white/[0.05] dark:text-night-text/60" data-testid="source-ends" lang={ta ? "ta" : "en"}>
+      {ta
+        ? `[மூலம் இங்கு முடிகிறது — அச்சுப் பக்கம் ${q.missingPrintedPages.join(", ")} இல்லை. தொடர்ச்சி, நிறைவு, கையொப்பம், தேதி எதுவும் சேர்க்கப்படவில்லை.]`
+        : `[The surviving source ends here — printed page ${q.missingPrintedPages.join(", ")} is absent. No continuation, closing, signature or date has been supplied.]`}
+    </p>
+  );
+  return (
+    <div className={cn("mt-8 space-y-5 leading-loose text-ink/90 dark:text-night-text/90", showEn ? "font-body" : "font-tamil", sizeClass)} lang={showEn ? "en" : "ta"} data-testid="wave8-letter-body">
+      {showEn ? (
+        <>
+          {content.english.subtitle && <p className="text-sm text-ink/60 dark:text-night-text/60" data-block="subtitle">{inline(content.english.subtitle)}</p>}
+          {blocks(content.english.text).map((b, i) => renderBlock(b, i, "en"))}
+        </>
+      ) : (
+        content.tamilPages.map((p) => (
+          <section key={p.pdfPage} data-pdf-page={p.pdfPage} data-printed-page={p.printedPage ?? ""} aria-label={ta ? `அச்சுப் பக்கம் ${p.printedPage ?? "—"}` : `Printed page ${p.printedPage ?? "—"}`} className="space-y-5">
+            <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-ink/35 dark:text-night-text/35" role="separator" data-print="hide">
+              <span className="h-px w-5 bg-ink/10 dark:bg-white/10" aria-hidden />
+              <span className="font-body normal-case tracking-normal">
+                {ta ? `அச்சுப் பக்கம் ${p.printedPage ?? "—"} · PDF ${p.pdfPage}` : `p. ${p.printedPage ?? "—"} · PDF ${p.pdfPage}`}
+              </span>
+              <span className="h-px flex-1 bg-ink/10 dark:bg-white/10" aria-hidden />
+            </div>
+            {blocks(p.text).map((b, i) => renderBlock(b, i, "ta"))}
+          </section>
+        ))
+      )}
+      {end}
+      <p className="mt-10 border-t border-ink/10 pt-4 text-xs italic text-ink/45 dark:border-white/10 dark:text-night-text/45" lang={ta ? "ta" : "en"} data-testid="wave8-provenance">
+        {ta
+          ? `மூலம்: கலைஞரின் கடிதங்கள் — தொகுதி ${content.volume} (சீதை பதிப்பகம்), ${content.source.filename}; PDF பக்கம் ${content.pdfPages[0]}–${content.pdfPages[1]}. தமிழ் உரை அச்சிட்ட நூலின் ஸ்கேனுடன் நேரடியாகச் சரிபார்க்கப்பட்டது; அச்சிட்ட கடித எண் மாற்றமின்றித் தரப்பட்டுள்ளது.`
+          : `Source: Kalaignarin Kaditangal — Volume ${content.volume} (Seethai Pathippagam), ${content.source.filename}; PDF pages ${content.pdfPages[0]}–${content.pdfPages[1]}. The Tamil text is verified directly against the scanned printed volume; the letter number is given exactly as printed.`}
+      </p>
     </div>
   );
 }

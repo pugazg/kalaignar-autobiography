@@ -254,6 +254,12 @@ jobs:
       # Wave-8 data holds Murasoli 42-47, Ore Mutham and Sangath Tamil with their source-faithful invariants.
       - name: Wave 8 P1 hidden foundation (public boundary + internal invariants)
         run: npm run test:wave8-p1-hidden
+      # Wave 8 P2 — the hidden reader layer through the REAL components (no route exists): Murasoli 42-47 (342 x Tamil /
+      # English), Ore Mutham (landing, source, 33 x Tamil / English, printed parts) and Sangath Tamil (landing, source,
+      # 104 x Tamil / English, 497 scans), fed only through the public-safe projections; plus byte-identical locks on the
+      # 346 public Murasoli letters and the 10 public Drama works.
+      - name: Wave 8 P2 hidden reader render regression
+        run: npm run test:wave8-p2-render
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -739,6 +745,15 @@ jobs:
             echo "$dir <- $repo @ $(git -C "$W8/$dir" rev-parse HEAD)"
           done
           node scripts/import-wave8.mjs "$W8/murasoli" "$W8/stage" "$W8/lit" --verify
+      # Wave 8 P2 — INDEPENDENT source fidelity: re-reads the same freshly fetched frozen pins with its own parsing (not the
+      # P1 importer or the P2 adapters) and compares them with what the P2 readers are given — PRESENCE, STRUCTURE,
+      # EQUALITY for 342 letters, 33 scenes and 497 pages, public-safe apparatus, and archive-vs-text presentation.
+      - name: Wave 8 P2 — independent source fidelity (frozen pins)
+        if: ${{ !cancelled() }}
+        run: |
+          set -euo pipefail
+          W8="$RUNNER_TEMP/wave8-sources"
+          npm run -s test:wave8-p2-fidelity -- "$W8/murasoli" "$W8/stage" "$W8/lit"
       - name: Speeches batch (Wave 6 B3)
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
