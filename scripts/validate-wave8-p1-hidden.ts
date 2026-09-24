@@ -248,4 +248,4 @@ if (fail.length) {
 }
 console.log(`\nwave8-p1-hidden — ${checks} checks, 0 failed`);
 console.log(PUB ? "  P4: published — catalogue 335 · Drama 11 · Literary Commentary 4 · /read 98/42 · sitemap 5262/0 (all 483 Wave-8 routes) · build 5271/5266 · Murasoli 42–54 / 688 (48–54 byte-identical)" : P3 ? "  P3: 483 direct Wave-8 routes built (4788/4783 + 483), still undiscovered — catalogue / discovery / sitemap / Murasoli 48–54 unchanged" : "");
-console.log("  public boundary unchanged (333 · Letters 1 · Drama 10 · Lit Comm 3 · collections 9 · /read 96/41 · sitemap 4779/0 · build 4788/4783 · Murasoli 48–54 byte-identical) · Murasoli 42–47 342/342 · ஒரே முத்தம் 30+3 · சங்கத் தமிழ் 497 (scan 8 source-limited) · 119 provenance records typed");
+if (!PUB) console.log("  public boundary unchanged (333 · Letters 1 · Drama 10 · Lit Comm 3 · collections 9 · /read 96/41 · sitemap 4779/0 · build 4788/4783 · Murasoli 48–54 byte-identical) · Murasoli 42–47 342/342 · ஒரே முத்தம் 30+3 · சங்கத் தமிழ் 497 (scan 8 source-limited) · 119 provenance records typed");
