@@ -2157,7 +2157,7 @@
    "anchorScan": 253,
    "sectionSeq": 47,
    "tamilBlocks": [
-    7,
+    8,
     9
    ],
    "locatedBy": "signature",
@@ -2217,7 +2217,7 @@
    "anchorScan": 282,
    "sectionSeq": 54,
    "tamilBlocks": [
-    9,
+    10,
     10
    ],
    "locatedBy": "signature",
@@ -2325,7 +2325,7 @@
    "anchorScan": 322,
    "sectionSeq": 63,
    "tamilBlocks": [
-    1,
+    2,
     2
    ],
    "locatedBy": "signature",
@@ -64837,12 +64837,9 @@
      },
      {
       "type": "ornament",
-      "role": "source-citation",
+      "role": "ornament",
       "lines": [
        "*"
-      ],
-      "provenanceIds": [
-       "P056"
       ]
      },
      {
@@ -71094,12 +71091,9 @@
      },
      {
       "type": "ornament",
-      "role": "source-citation",
+      "role": "ornament",
       "lines": [
        "*"
-      ],
-      "provenanceIds": [
-       "P061"
       ]
      },
      {
@@ -76817,12 +76811,9 @@
      },
      {
       "type": "ornament",
-      "role": "source-citation",
+      "role": "ornament",
       "lines": [
        "*"
-      ],
-      "provenanceIds": [
-       "P070"
       ]
      },
      {

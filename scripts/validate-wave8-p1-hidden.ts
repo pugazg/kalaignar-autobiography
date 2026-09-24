@@ -169,6 +169,24 @@ const typedTa = sg.pages.flatMap((p: any) => p.tamil.blocks.filter((b: any) => b
 eq(new Set(typedTa).size, 119, "all 119 records typed as Tamil source-citation / source-note blocks (never text)");
 ok(sg.citations.every((c: any) => sg.pages[c.anchorScan - 1].english.blocks.some((b: any) => (b.role === "source-citation" || b.role === "source-note") && (b.provenanceIds ?? []).includes(c.id))), "every record's anchor page has typed English provenance");
 ok(sg.pages.every((p: any) => [...p.tamil.blocks, ...p.english.blocks].every((b: any) => !b.lines.some((l: string) => /<!--|-->/.test(l)))), "archival comments never inside block text");
+// A printed ornament (`*` separator) is never provenance: across EVERY Tamil and English block of every scan, an
+// `ornament` block keeps role `ornament` and carries no provenance ids. Generic by construction — no scan or record
+// is named. (A letters-only citation match once absorbed the separator printed before a citation into the run.)
+const ornamentViolations = (doc: any): string[] =>
+  doc.pages.flatMap((p: any) => (["tamil", "english"] as const).flatMap((lang) => p[lang].blocks.flatMap((b: any, i: number) =>
+    b.type === "ornament" && (b.role !== "ornament" || b.provenanceIds !== undefined || b.role === "source-citation" || b.role === "source-note")
+      ? [`scan ${p.scan} ${lang} block ${i}: ornament typed ${b.role}${b.provenanceIds ? ` / ${b.provenanceIds}` : ""}`] : [])));
+eq(ornamentViolations(sg), [], "no ornament block (Tamil or English) is typed provenance or carries provenance ids");
+ok(sg.citations.every((c: any) => sg.pages[c.anchorScan - 1].tamil.blocks.slice(c.tamilBlocks[0], c.tamilBlocks[1] + 1).every((b: any) => b.type !== "ornament" && (b.provenanceIds ?? []).includes(c.id))), "every located provenance run is ornament-free and carries its record id");
+// Adversarial self-test: the invariant must catch an ornament given a provenance role or id (checked on a copy).
+{
+  const firstOrn = (doc: any) => doc.pages.flatMap((p: any) => p.tamil.blocks).find((b: any) => b.type === "ornament");
+  const asRole = JSON.parse(JSON.stringify(sg)); firstOrn(asRole).role = "source-citation";
+  const asId = JSON.parse(JSON.stringify(sg)); firstOrn(asId).provenanceIds = [sg.citations[0].id];
+  const asNote = JSON.parse(JSON.stringify(sg)); firstOrn(asNote).role = "source-note";
+  const base = ornamentViolations(sg).length;
+  ok([asRole, asId, asNote].every((d) => ornamentViolations(d).length === base + 1), "adversarial: the ornament invariant fails closed on an ornament typed source-citation / source-note or carrying a provenance id");
+}
 
 // ══ C. Integrity ═══════════════════════════════════════════════════════════════════════════════════
 for (const a of manifest.artifacts as { path: string; sha256: string; bytes: number }[]) {
