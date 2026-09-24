@@ -25,6 +25,7 @@ import sitemap from "../app/sitemap";
 import { PLAY_SLUGS } from "../data/plays";
 import { WAVE6_DRAMA_SLUGS } from "../lib/drama-wave6-routes";
 import { WAVE7_DRAMA_SLUGS } from "../lib/drama-wave7-routes";
+import { WAVE8_DRAMA_SLUGS } from "../lib/drama-wave8-routes";
 // The /plays route registry is the de-duplicated union of these three lists (app/plays/[slug]/page.tsx).
 const ALL_PLAY_SLUGS: readonly string[] = Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS, ...WAVE7_DRAMA_SLUGS]));
 
@@ -51,6 +52,14 @@ const P1_FROZEN = {
 };
 
 const manifest = readJSON<any>(`${W8}/wave8-p1-manifest.json`);
+// Stage awareness (P3+): P3 makes the Wave-8 cohort DIRECTLY addressable (still undiscovered). Its committed route
+// manifest is the only thing that extends the route-surface expectations below; every P1 number stays as recorded.
+const P3_FILE = `${W8}/wave8-p3-routes.json`;
+const P3 = fs.existsSync(path.join(process.cwd(), P3_FILE)) ? readJSON<{ stage: string; discoverable: boolean; sitemapExposed: boolean; counts: Record<string, number>; cohorts: Record<string, { routes: string[] }> }>(P3_FILE) : null;
+const P3_ROUTES = P3 ? Object.values(P3.cohorts).flatMap((c) => c.routes) : [];
+const P3_OK = !!P3 && P3.stage === "P3" && P3.discoverable === false && P3.sitemapExposed === false
+  && JSON.stringify(P3.counts) === JSON.stringify({ murasoli: 342, oreMutham: 35, sangatamil: 106, total: 483, unique: 483 }) && new Set(P3_ROUTES).size === 483;
+const P3_DELTA = P3 ? 483 : 0;
 eq(manifest.stage, "P1", "manifest records stage P1");
 
 // ══ A. Public invariants ════════════════════════════════════════════════════════════════════════════
@@ -70,7 +79,7 @@ ok(!libIds.has("ore-mutham"), "ore-mutham is NOT a LibraryWork");
 ok(!libIds.has("sangatamil"), "sangatamil is NOT a LibraryWork");
 eq(LIBRARY_WORKS.filter((w) => w.id === "murasoli-letters").length, 1, "murasoli-letters remains exactly one LibraryWork");
 eq(ALL_PLAY_SLUGS.length, 10, "/plays route registry still 10 plays");
-ok(!ALL_PLAY_SLUGS.includes("ore-mutham"), "ore-mutham is in no /plays route registry");
+ok(!ALL_PLAY_SLUGS.includes("ore-mutham") && (P3 ? P3_OK && JSON.stringify(WAVE8_DRAMA_SLUGS) === '["ore-mutham"]' : !(WAVE8_DRAMA_SLUGS as readonly string[]).length), P3 ? "ore-mutham is in no public /plays registry — only the hidden Wave-8 direct-route registry (P3)" : "ore-mutham is in no /plays route registry");
 
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
 eq(sm.length, P1_FROZEN.sitemap, "sitemap still 4779");
@@ -94,7 +103,9 @@ eq(sha(fs.readFileSync("public/data/murasoli/letters-index.json")), P1_FROZEN.mu
 ok(!fs.existsSync("public/data/plays/ore-mutham"), "no public ore-mutham payload");
 ok(!walk("public").some((f) => /sangatamil|ore-mutham|m4[2-7]-l\d/i.test(f)), "no Wave-8 file anywhere under public/");
 const appDirs = walk("app").map((f) => f.replace(/\\/g, "/"));
-ok(!appDirs.some((f) => /sangatamil|ore-mutham/.test(f)), "no Wave-8 route directory under app/");
+const w8App = appDirs.filter((f) => /sangatamil|ore-mutham/.test(f)).sort();
+ok(P3 ? JSON.stringify(w8App) === JSON.stringify(["app/sangatamil/[section]/page.tsx", "app/sangatamil/page.tsx", "app/sangatamil/source/page.tsx"]) : w8App.length === 0,
+  P3 ? "Wave-8 route files under app/ are exactly the P3 /sangatamil family (ore-mutham rides the generic /plays routes)" : "no Wave-8 route directory under app/");
 
 // Built output (fail closed without a build): prerender / HTML unchanged, no Wave-8 page built.
 const NEXT = path.join(root, ".next");
@@ -103,9 +114,10 @@ if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
 } else {
   const pm = JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, unknown> };
   const routes = Object.keys(pm.routes);
-  eq(routes.length, P1_FROZEN.build.prerender, "build prerender routes still 4788");
-  eq(walk(path.join(NEXT, "server/app")).filter((f) => f.endsWith(".html")).length, P1_FROZEN.build.html, "build .html files still 4783");
-  ok(!routes.some((r) => /\/plays\/ore-mutham|sangatamil|\/murasoli\/m4[2-7]-/.test(r)), "no Wave-8 route prerendered");
+  eq(routes.length, P1_FROZEN.build.prerender + P3_DELTA, P3 ? "build prerender routes = 4788 + 483 Wave-8 direct routes (P3)" : "build prerender routes still 4788");
+  eq(walk(path.join(NEXT, "server/app")).filter((f) => f.endsWith(".html")).length, P1_FROZEN.build.html + P3_DELTA, P3 ? "build .html files = 4783 + 483 (P3)" : "build .html files still 4783");
+  const w8Built = routes.filter((r) => /\/plays\/ore-mutham|sangatamil|\/murasoli\/m4[2-7]-/.test(r)).sort();
+  ok(P3 ? JSON.stringify(w8Built) === JSON.stringify([...P3_ROUTES].sort()) : w8Built.length === 0, P3 ? "Wave-8 prerendered routes are exactly the 483 P3 direct routes" : "no Wave-8 route prerendered");
 }
 
 // ══ B. Internal invariants ══════════════════════════════════════════════════════════════════════════
@@ -211,4 +223,5 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave8-p1-hidden — ${checks} checks, 0 failed`);
+console.log(P3 ? "  P3: 483 direct Wave-8 routes built (4788/4783 + 483), still undiscovered — catalogue / discovery / sitemap / Murasoli 48–54 unchanged" : "");
 console.log("  public boundary unchanged (333 · Letters 1 · Drama 10 · Lit Comm 3 · collections 9 · /read 96/41 · sitemap 4779/0 · build 4788/4783 · Murasoli 48–54 byte-identical) · Murasoli 42–47 342/342 · ஒரே முத்தம் 30+3 · சங்கத் தமிழ் 497 (scan 8 source-limited) · 119 provenance records typed");

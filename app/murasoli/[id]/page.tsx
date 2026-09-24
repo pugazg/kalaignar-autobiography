@@ -4,6 +4,8 @@ import path from "node:path";
 import MurasoliReader from "@/components/MurasoliReader";
 import MurasoliLetterReader from "@/components/MurasoliLetterReader";
 import type { MurasoliIndex, MurasoliLettersIndex } from "@/data/murasoli";
+import { loadWave8MurasoliLetters, toLetterMeta, type Wave8MurasoliLetter } from "@/lib/wave8-murasoli-reader";
+import { toPublicWave8Letter } from "@/lib/wave8-public-provenance";
 
 function loadJSON<T>(rel: string): T | null {
   try {
@@ -16,12 +18,19 @@ function loadJSON<T>(rel: string): T | null {
 const loadIndex = () => loadJSON<MurasoliIndex>("public/data/murasoli/index.json");
 const loadLetters = () => loadJSON<MurasoliLettersIndex>("public/data/murasoli/letters-index.json");
 
+// Wave 8 (P3, hidden): Volumes 42–47 are served from the hidden P1 data through the P2 reader model — no public/data
+// payload, never in the public indexes, the landing or the sitemap. Route ids are the source-derived `routeSlug`s
+// (unique even where printed numbers repeat: two Vol-46 letters print 3637; 3647–3649 recur in Vols 46 and 47).
+let wave8: Wave8MurasoliLetter[] | null = null;
+const loadWave8 = () => (wave8 ??= loadWave8MurasoliLetters());
+
 export function generateStaticParams() {
   const idx = loadIndex();
   const letters = loadLetters();
   return [
     ...(idx ? idx.volumes.flatMap((v) => v.pages.map((pg) => ({ id: pg.id }))) : []),
     ...(letters ? letters.volumes.flatMap((v) => v.letters.map((l) => ({ id: l.id }))) : []),
+    ...loadWave8().map((l) => ({ id: l.id })),
   ];
 }
 
@@ -51,6 +60,27 @@ export default function MurasoliRoute({ params }: { params: { id: string } }) {
         />
       );
     }
+  }
+
+  // Wave 8 (P3, hidden): a Volume 42–47 letter. Navigation stays inside Volumes 42–47 (reading order), so no public
+  // Volume 48–54 page links into — or is linked from — the hidden cohort before P4. Only the public projection of the
+  // letter crosses to the client component; the hidden P1 record never does.
+  const w8 = loadWave8();
+  const wi = w8.findIndex((l) => l.id === params.id);
+  if (wi !== -1) {
+    const l = w8[wi];
+    const inVol = w8.filter((x) => x.volume === l.volume);
+    const vi = inVol.findIndex((x) => x.id === l.id);
+    const alsoInVolume = [1, 2, 3].map((k) => inVol[(vi + k) % inVol.length]).filter((x) => x.id !== l.id).map(toLetterMeta);
+    return (
+      <MurasoliLetterReader
+        letter={toLetterMeta(l)}
+        prev={wi > 0 ? toLetterMeta(w8[wi - 1]) : null}
+        next={wi < w8.length - 1 ? toLetterMeta(w8[wi + 1]) : null}
+        alsoInVolume={alsoInVolume}
+        content={toPublicWave8Letter(l)}
+      />
+    );
   }
 
   // Otherwise a source page: /murasoli/m54-p0006.

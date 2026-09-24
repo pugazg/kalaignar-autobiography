@@ -25,6 +25,7 @@ import { loadWave7Cinema, normalizeWave7Cinema, WAVE7_CINEMA_SLUGS, type Wave7Ci
 import { generateStaticParams as naamSections, dynamicParams as naamDyn } from "../app/cinema/naam/[section]/page";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -192,11 +193,11 @@ const clone = <T,>(x: T): T => JSON.parse(JSON.stringify(x));
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size, g(4051, W7B.build, W7K.build), `build prerender routes == ${g(4051, W7B.build, W7K.build)} (3918 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+  eq(keys.size, g(4051, W7B.build, W7K.build) + W8.build, `build prerender routes == ${g(4051, W7B.build, W7K.build)} (3918 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
   for (const r of p3Routes) ok(keys.has(r), `route prerendered: ${r}`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, g(4046, W7B.build, W7K.build), `build .html == ${g(4046, W7B.build, W7K.build)} (3913 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+  eq(html, g(4046, W7B.build, W7K.build) + W8.build, `build .html == ${g(4046, W7B.build, W7K.build)} (3913 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
