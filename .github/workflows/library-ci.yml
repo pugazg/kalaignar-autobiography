@@ -260,6 +260,13 @@ jobs:
       # 346 public Murasoli letters and the 10 public Drama works.
       - name: Wave 8 P2 hidden reader render regression
         run: npm run test:wave8-p2-render
+      # Wave 8 P3 — direct-but-undiscovered routes (Murasoli 42-47: 342 · Ore Mutham: 35 · Sangath Tamil: 106 = 483),
+      # served from the hidden internal data through the P2 models and public projections (no public/data payload). The
+      # route manifest must regenerate byte-identically, and the independent validator re-derives the routes from the
+      # frozen internal data and checks them against the manifest, the real generateStaticParams(), page resolution
+      # (fabricated ids 404), the built prerender manifest (+483), the built payloads and the unchanged sitemap.
+      - name: Wave 8 P3 direct hidden routes (manifest --verify + independent route validator)
+        run: npm run test:wave8-p3-routes
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.

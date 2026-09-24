@@ -71,7 +71,9 @@
     "test:drama-public-provenance": "tsx --tsconfig tsconfig.scripts.json scripts/test-drama-public-provenance.ts",
     "test:wave8-p1-hidden": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p1-hidden.ts",
     "test:wave8-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave8-p2-render.ts",
-    "test:wave8-p2-fidelity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p2-fidelity.ts"
+    "test:wave8-p2-fidelity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p2-fidelity.ts",
+    "build:wave8-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p3-routes.ts",
+    "test:wave8-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p3-routes.ts --verify && tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p3-routes.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
