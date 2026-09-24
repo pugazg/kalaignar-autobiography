@@ -387,8 +387,8 @@ function Wave8Notices({ content, ta, showEn }: { content: Wave8MurasoliLetter; t
       <p className={cn("mt-4 rounded-xl border border-dashed px-4 py-2.5 text-xs leading-relaxed", showEn ? "border-brass/50 bg-brass/[0.06] text-ink/70 dark:text-night-text/70" : "border-ink/15 bg-ink/[0.02] text-ink/60 dark:border-white/15 dark:bg-white/[0.03] dark:text-night-text/60")} lang={ta ? "ta" : "en"} data-testid="layer-note">
         {showEn
           ? ta
-            ? "இது இத்திட்டத்தின் ஆங்கில மொழிபெயர்ப்பு — மூலத்துடன் ஒப்பிட்டுச் சரிபார்த்து, இருமொழி இணைவு மற்றும் பதிப்பாய்வு முடிந்து வெளியிடப்பட்டது. தமிழ் மூலமே சான்றுநிலை."
-            : "A project English translation, released after source-checking, bilingual alignment and editorial review. The Tamil original remains authoritative."
+            ? "இது இத்திட்டத்தால் உருவாக்கப்பட்ட ஆங்கில மொழிபெயர்ப்பு. தமிழ் மூலமே சான்றுநிலை."
+            : "This is a project-created English translation. The Tamil original remains authoritative."
           : ta
             ? "கீழே அச்சிட்ட நூலின் ஸ்கேனுடன் நேரடியாக ஒப்பிட்டுச் சரிபார்க்கப்பட்ட தமிழ் உரை, மூலப் பக்க வாரியாக."
             : "Below is the Tamil text verified directly against the scanned printed volume, page by source page."}

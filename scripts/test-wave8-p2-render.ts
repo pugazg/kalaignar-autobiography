@@ -59,6 +59,23 @@ const LEAK = /\bundefined\b|>null<|\bNaN\b|\[object Object\]/;
 const WORKFLOW = /Immediate authority|audited (canonical )?Tamil|complete audited|canonical Tamil|closed Tamil|source-closed|\blocked (Volume|conventions|scene|Tamil)|user[- ](source )?adjudicat|Pass-\d|\bWFV\b|\bno OCR\b|secondary English witness|alignment review|globally blocked|formerly held|terminal (Tamil )?(source )?hold|reproduced below|\.md`|scenes\/[a-z-]+\d+\.md|TRANSLATION_MANIFEST|Gate [A-Z]\d/;
 const COMMENT = /<!--|&lt;!--|-->|--&gt;/;
 /**
+ * Review / lifecycle-stage wording (English and Tamil) that constructed public surfaces — layer notes, translator-note
+ * and provenance panels, source pages, public projections — must never carry. Independent of lib/wave8-public-text.ts.
+ * Durable provenance ("verified directly against the scanned printed volume", "the Tamil original remains
+ * authoritative", "no published English witness was used") is NOT lifecycle wording and is not matched.
+ */
+const LIFECYCLE = /source-checking|bilingual alignment|alignment (review|is complete|complete)|editorial review|translated and reviewed|drafted and reviewed|(draft|drafted) or review|completion\/release status|release status|released after|release-ready|review (is )?complete|audit (is )?complete|\bapproved\b|closure|hold remains|இருமொழி இணைவு|பதிப்பாய்வு|முடிந்து வெளியிடப்பட்டது|ஒப்பிட்டுச் சரிபார்த்து, இருமொழி/i;
+// Detector self-test: each reviewed lifecycle phrase is caught on its own; durable provenance is not.
+for (const x of ["released after source-checking, bilingual alignment and editorial review", "source-checking", "bilingual alignment", "editorial review", "33 / 33 scenes translated and reviewed against the verified Tamil", "The source repository's completion/release status is an editorial and archival judgement", "no source-condition hold remains in the reading text", "drafted and reviewed WITHOUT any published English edition", "இருமொழி இணைவு மற்றும் பதிப்பாய்வு முடிந்து வெளியிடப்பட்டது"]) ok(LIFECYCLE.test(x), `detector: lifecycle phrase not caught — ${x}`);
+for (const x of ["The Tamil text is verified directly against the scanned printed volume", "131 / 131 page records verified against the scan", "The Tamil original remains authoritative.", "No missing wording is reconstructed.", "No secondary/published English witness was used for this translation."]) ok(!LIFECYCLE.test(x), `detector: durable provenance wrongly flagged — ${x}`);
+/** Visible text of every element carrying one of these data-testid values. */
+const surfaces = (h: string, ids: string[]) => ids.flatMap((id) => {
+  const out: string[] = [];
+  const re = new RegExp(`<(\\w+)[^>]*data-testid="${id}"[^>]*>`, "g");
+  for (const m of Array.from(h.matchAll(re))) { const end = h.indexOf(`</${m[1]}>`, m.index! + m[0].length); out.push(visible(h.slice(m.index!, end < 0 ? undefined : end))); }
+  return out;
+}).join(" | ");
+/**
  * Hard workflow markers never allowed anywhere — including inside a released translation body, which is carried
  * exactly as released and therefore not sentence-filtered (a translator's in-text aside may still call the source
  * "the audited Tamil"; that wording is listed for review, never rewritten here).
@@ -98,6 +115,11 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
     ok(hasLatin(visible(hEn)) && enLines.length > 0 && [enLines[0], enLines[Math.floor(enLines.length / 2)], enLines[enLines.length - 1]].every((x) => shows(hEn, x)), `${label}: English body not rendered`);
     if (hasLatin(visible(hEn))) en++;
     ok(!hTa.includes('data-block="english"'), `${label}: English leaked into the Tamil layer`);
+    // Constructed UI surfaces (never the released translation body): no review / lifecycle wording, Tamil or English UI.
+    for (const [lang, h] of [["ta", hTa], ["en", hEn], ["ta-ui/en-layer", r(createElement(MurasoliLetterReader, { ...props, initialShowEn: true }))]] as const) {
+      const sf = surfaces(h, ["layer-note", "translator-note", "wave8-provenance", "source-condition", "date-from-contents"]);
+      ok(sf.length > 0 && !LIFECYCLE.test(sf), `${label} ${lang}: lifecycle wording on a constructed surface — ${sf.match(LIFECYCLE)?.[0]}`);
+    }
     // Printed number exactly as printed.
     ok(visible(hTa).includes(String(l.printedNumber)), `${label}: printed number ${l.printedNumber} not displayed`);
     // Source condition.
@@ -154,10 +176,14 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
   ok(/30 source-numbered scenes, followed by a separately titled comedy section \(நகைச் சுவைப் பகுதி\.\) with 3 independently numbered scenes/.test(playLandingDescription(play)), "B2: landing description states 30 + a titled comedy section with 3 scenes");
   // Source / provenance (public projection only)
   const { play: head, prov } = toPublicOreMuthamSource();
+  const provText = JSON.stringify(prov);
+  ok(!LIFECYCLE.test(provText), `B2 source projection: lifecycle wording — ${provText.match(LIFECYCLE)?.[0]}`);
+  ok(/^English translation available for all 33 source scenes/.test(prov.english.status), `B2 source projection: english.status is a durable availability fact (${prov.english.status})`);
   for (const lang of ["ta", "en"] as const) {
     const h = r(createElement(PlaySource, { play: head, prov }), lang);
     guard(h, `B2 source ${lang}`);
     ok(h.includes(esc(prov.source.scanSha256)) && /never renumbered 31–33/.test(visible(h)), `B2 source ${lang}: scan identity + part-numbering note`);
+    ok(!LIFECYCLE.test(visible(h)), `B2 source ${lang}: lifecycle wording rendered — ${visible(h).match(LIFECYCLE)?.[0]}`);
   }
   // 33 units × Tamil / English
   for (let i = 0; i < u.length; i++) {
@@ -231,6 +257,7 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
     guard(src, `B3 source ${lang}`);
     ok(/497/.test(visible(src)) && /115/.test(visible(src)) && /\b4\b/.test(visible(src)) && src.includes('data-role="source-limited"'), `B3 source ${lang}: 497 pages · 115 + 4 provenance · scan 8 condition`);
     ok(!/pending/i.test(visible(src)), `B3 source ${lang}: scan 8 never described as pending`);
+    ok(!LIFECYCLE.test(visible(src)) && !LIFECYCLE.test(visible(h)), `B3 landing/source ${lang}: lifecycle wording`);
   }
   const scansSeen = new Set<number>(); const citationsSeen = new Set<string>();
   for (let i = 0; i < S.length; i++) {
@@ -240,6 +267,7 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
       const h = r(createElement(SangatamilReader, { titleTa: w.title.ta, section: s, ...nav, initialShowEn: showEn }), lang);
       const label = `B3 ${s.slug} ${lang}`;
       guard(h, label);
+      ok(!LIFECYCLE.test(surfaces(h, ["layer-note"])), `${label}: lifecycle wording in the layer note`);
       const scans = [...all(h, /<section[^>]*data-scan="(\d+)"/g)].map((m) => Number(m[1]));
       ok(JSON.stringify(scans) === JSON.stringify(s.pages.map((p) => p.scan)), `${label}: scans ${scans} ≠ ${s.pages.map((p) => p.scan)}`);
       scans.forEach((x) => scansSeen.add(x));
@@ -292,7 +320,7 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
 
 // ══ Public-safe projections: serialization boundary ════════════════════════════════════════════════════════════
 {
-  const FORBIDDEN_KEYS = /"(hidden|wave|batch|readiness|releaseState|release|status|tamilStatus|englishStatus|visualFidelity|verification|currentCheckpoint|annotations|apparatus|provenanceIds|locatedBy|englishReview|assembledFromVerifiedPages|sourceConditionScans|file|dialect|chapterDialect|note|workflow|validation|audit)":/;
+  const FORBIDDEN_KEYS = /"(hidden|wave|batch|readiness|releaseState|release|tamilStatus|englishStatus|visualFidelity|verification|currentCheckpoint|annotations|apparatus|provenanceIds|locatedBy|englishReview|assembledFromVerifiedPages|sourceConditionScans|file|dialect|chapterDialect|note|workflow|validation|audit)":/;
   const w = toSangatamilWork();
   const samples: [string, unknown][] = [
     ["Murasoli letter", toPublicWave8Letter(loadWave8MurasoliLetters()[0])],
@@ -303,8 +331,13 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
     ...w.sections.map((s) => [`sangatamil ${s.slug}`, toPublicSangatamilSection(s)] as [string, unknown]),
   ];
   for (const [label, obj] of samples) {
-    // The Drama provenance boundary's allowlisted English-layer `status` statement is a durable public field.
-    const j = JSON.stringify(obj).replace(/"english":\{"kind":"project-created","status":/, '"english":{"kind":"project-created","englishState":');
+    const j = JSON.stringify(obj);
+    // The generic Drama schema's public `english.status` field is legitimate by name; its VALUE must be durable
+    // provenance. Any other `status` key is internal state.
+    const statusKeys = (j.match(/"status":/g) ?? []).length;
+    const allowedStatus = label === "ore-mutham source" ? 1 : 0;
+    ok(statusKeys === allowedStatus, `projection ${label}: ${statusKeys} status field(s), expected ${allowedStatus}`);
+    ok(!LIFECYCLE.test(j), `projection ${label}: lifecycle wording ${j.match(LIFECYCLE)?.[0]}`);
     ok(!FORBIDDEN_KEYS.test(j), `projection ${label}: internal key ${j.match(FORBIDDEN_KEYS)?.[1]}`);
     ok(!WORKFLOW.test(j), `projection ${label}: workflow prose ${j.match(WORKFLOW)?.[0]}`);
     ok(!/<!--/.test(j), `projection ${label}: archival comment`);
@@ -315,7 +348,7 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
 
 if (fail.length) {
   console.error(`\nwave8-p2-render — ${checks} checks, ${fail.length} FAILED`);
-  for (const f of fail.slice(0, 60)) console.error("  ✗ " + f);
+  for (const f of (process.env.ALL_FAILS ? fail : fail.slice(0, 60))) console.error("  ✗ " + f);
   process.exit(1);
 }
 console.log(`wave8-p2-render — ${checks} checks, 0 failed`);

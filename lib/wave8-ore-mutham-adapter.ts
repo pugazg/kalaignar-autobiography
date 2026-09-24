@@ -153,7 +153,7 @@ const PROJECT_RIGHTS: PlayProvenance["projectRights"] = {
   distinctionNote: "This is the PRESENT project-level rights status of Kalaignar's underlying stage play. The edition's own publisher and edition lines are edition facts, not statements about those rights.",
   thirdPartyNote: "Nationalisation applies to Kalaignar's underlying authored play. It does NOT extend to the edition's publisher/imprint matter, decorative artwork, illustrations, advertisements, or the library's stamps and accession marks.",
   projectTranslationNote: "The English reading layer is a project-created, source-linked independent translation with its own distinct provenance; it is not covered by the nationalisation of the Tamil work.",
-  archivalStatusNote: "The source repository's completion/release status is an editorial and archival judgement about transcription and translation completeness. It is NOT, by itself, a copyright, public-domain or republication-rights determination.",
+  archivalStatusNote: "Transcription and translation completeness are editorial matters and do not determine copyright, public-domain, or republication rights.",
   evidencePending: "The Government Order's exact number and formal ISSUE date must be verified from the order itself; 2024-12-22 is the public handover date only. Neither is invented here.",
 };
 
@@ -179,7 +179,7 @@ export function toOreMuthamProvenance(p1: OreMuthamP1 = loadOreMuthamP1()): Play
       sourcePdfCommitted: false,
       scanIdentityBasis: "Filename, byte size and SHA-256 as recorded by the source archive's metadata/source.md; the PDF itself is not committed.",
       pageRecordsVerified: `${p1.verification.pageRecords} / ${p1.controllingSource.physicalScans} page records verified against the scan`,
-      sourceAudit: "Every scene is assembled from verified page records; no source-condition hold remains in the reading text.",
+      sourceAudit: "Every scene is assembled from page records verified against the scan; no missing wording is reconstructed.",
       assembledLayer: `${play.readingUnits.length} reading units — ${main.unitCount} main-play scenes (காட்சி 1–${main.unitCount}) and the ${supp.unitCount} scenes of the separately titled ${supp.headingTa} (காட்சி 1–${supp.unitCount})`,
       bodyScans: `${play.bodyScans.from}–${play.bodyScans.to}`,
       publicationYearNote: `The edition statement is carried as printed (${p1.editionTa}); no publication year is promoted to the catalogue.`,
@@ -187,9 +187,9 @@ export function toOreMuthamProvenance(p1: OreMuthamP1 = loadOreMuthamP1()): Play
     },
     english: {
       kind: "project-created",
-      status: `${play.readingUnits.length} / ${play.readingUnits.length} scenes translated and reviewed against the verified Tamil`,
-      independence: "The reader's English is the project-created independent translation, drafted and reviewed WITHOUT any published English edition.",
-      secondaryWitnessNote: "No secondary/published English witness was used to draft or review this translation.",
+      status: `English translation available for all ${play.readingUnits.length} source scenes.`,
+      independence: "The reader's English is the project-created independent translation, made without reference to any published English edition.",
+      secondaryWitnessNote: "No secondary/published English witness was used for this translation.",
       notesSeparated: "The English layer's translation notes are carried OUTSIDE the reading body in a separately labelled area.",
     },
     archiveDerived: {

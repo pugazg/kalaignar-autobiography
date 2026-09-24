@@ -18,6 +18,8 @@ export const PROCESS_PATTERNS: readonly RegExp[] = [
   /\bsource-closed\b/i,
   /\blocked\b[^.;]*\b(conventions?|glossary|treatment|artifact|scene|source|Tamil|layer|line)\b/i,
   /\b(alignment|translation) (has been|was) (verified|reviewed)\b/i,
+  /\bsource-checking\b|\bbilingual (source[- ])?alignment\b|\beditorial review\b|\btranslated and reviewed\b|\bdrafted and reviewed\b/i,
+  /\bcompletion\/release status\b|\brelease status\b|\breleased after\b|\brelease-ready\b/i,
   /\b(reproduced|preserved) (in full )?below\b/i,
   /\b(terminal|explicit) holds?\b|\bheld (action|word|lodging)\b|\bsource hold\b|\bhold status\b|\binherit (that|the|this) hold\b|\bsource-secure\b/i,
   /\bresolved (Tamil|action|word)\b/i,
