@@ -27,11 +27,13 @@ const loadWave8 = () => (wave8 ??= loadWave8MurasoliLetters());
 export function generateStaticParams() {
   const idx = loadIndex();
   const letters = loadLetters();
-  return [
-    ...(idx ? idx.volumes.flatMap((v) => v.pages.map((pg) => ({ id: pg.id }))) : []),
-    ...(letters ? letters.volumes.flatMap((v) => v.letters.map((l) => ({ id: l.id }))) : []),
-    ...loadWave8().map((l) => ({ id: l.id })),
+  // P4: the public letters index lists the published Wave-8 letters too; the Set keeps every id exactly once.
+  const ids = [
+    ...(idx ? idx.volumes.flatMap((v) => v.pages.map((pg) => pg.id)) : []),
+    ...(letters ? letters.volumes.flatMap((v) => v.letters.map((l) => l.id)) : []),
+    ...loadWave8().map((l) => l.id),
   ];
+  return Array.from(new Set(ids)).map((id) => ({ id }));
 }
 
 export default function MurasoliRoute({ params }: { params: { id: string } }) {
@@ -42,6 +44,23 @@ export default function MurasoliRoute({ params }: { params: { id: string } }) {
       v.letters.map((l) => ({ ...l, volume: v.volume })),
     );
     const li = flat.findIndex((l) => l.id === params.id);
+    // A published Wave-8 letter (P4): one continuous reading sequence with the existing volumes (…47 → 48…), its
+    // body served from the server-side reader model through the public projection — never a public/data fetch.
+    const w8Published = li !== -1 ? loadWave8().find((l) => l.id === params.id) : undefined;
+    if (w8Published) {
+      const inVol = flat.filter((l) => l.volume === flat[li].volume);
+      const vi = inVol.findIndex((l) => l.id === flat[li].id);
+      const alsoInVolume = [1, 2, 3].map((k) => inVol[(vi + k) % inVol.length]).filter((l) => l.id !== flat[li].id);
+      return (
+        <MurasoliLetterReader
+          letter={flat[li]}
+          prev={li > 0 ? flat[li - 1] : null}
+          next={li < flat.length - 1 ? flat[li + 1] : null}
+          alsoInVolume={alsoInVolume}
+          content={toPublicWave8Letter(w8Published)}
+        />
+      );
+    }
     if (li !== -1) {
       const pageIdx = loadIndex();
       const sourceUrl = pageIdx?.volumes.find((v) => v.volume === flat[li].volume)?.sourceUrl;
@@ -62,9 +81,8 @@ export default function MurasoliRoute({ params }: { params: { id: string } }) {
     }
   }
 
-  // Wave 8 (P3, hidden): a Volume 42–47 letter. Navigation stays inside Volumes 42–47 (reading order), so no public
-  // Volume 48–54 page links into — or is linked from — the hidden cohort before P4. Only the public projection of the
-  // letter crosses to the client component; the hidden P1 record never does.
+  // Wave 8 letter NOT (yet) in the public index — the P3 direct-but-undiscovered state. Navigation stays inside
+  // Volumes 42–47, so no public page links into an unpublished letter. Only the public projection crosses to the client.
   const w8 = loadWave8();
   const wi = w8.findIndex((l) => l.id === params.id);
   if (wi !== -1) {

@@ -270,15 +270,16 @@ export const LIBRARY_WORKS: LibraryWork[] = [
     readerStructure: "letter",
     href: "/murasoli",
     state: "published",
-    descTa: "உடன்பிறப்புகளுக்கு எழுதிய கடிதங்கள்",
-    descEn: "Letters to udanpirappukkal",
-    // Only volumes 48–54 of the intended full "Murasoli — The Letters" collection
-    // are integrated → "partial" at the work/collection boundary (even though every
-    // integrated volume carries Tamil). This is a collection-boundary status, not a
-    // per-unit one.
+    descTa: "உடன்பிறப்புகளுக்கு எழுதிய கடிதங்கள் — தொகுதி 42–54",
+    descEn: "Letters to udanpirappukkal — Volumes 42–54",
+    // Wave 8 P4: Volumes 42–47 join this ONE work (they are never separate works). Only volumes 42–54 of the
+    // intended 54-volume "Murasoli — The Letters" collection are integrated → "partial" at the work/collection
+    // boundary (even though every integrated volume carries Tamil). This is a collection-boundary status, not a
+    // per-unit one. The integrated volumes come from different archival source records, so no single
+    // sourceRepo/sourceCommit is asserted for the work; each reader carries its own provenance.
     tamil: "partial",
-    // English exists for most integrated volumes but not all (e.g. vol 54 is
-    // Tamil-only), and the collection itself is partial → "partial".
+    // English exists for most integrated volumes but not all (vol 54 is Tamil-only; 42–53 carry English), and the
+    // collection itself is partial → "partial".
     english: "partial",
     // englishKind intentionally UNSET — the provenance/kind of the Murasoli English
     // layer is not established in the implementation data (not guessed).
@@ -3449,6 +3450,62 @@ export const LIBRARY_WORKS: LibraryWork[] = [
   // only. Kuraloviyam is ONE work (its six intake Parts are never entries) published READY-WITH-QUALIFICATION:
   // scans 13, 14, 15, 19 are permanently source-limited and stated on its card. No rights record is inherited.
   ...WAVE7_B5_B6_K_WORKS,
+
+  // ── Wave 8 P4 — publish ஒரே முத்தம் and சங்கத் தமிழ் (Murasoli 42–47 joined murasoli-letters above) ──────────────
+  // Catalogue 333→335 (Drama 10→11, Literary Commentary 3→4). Both works were already direct-routed at P3 and are
+  // served from the hidden internal data through the P2 reader models (no public/data payload). Identity and edition
+  // facts come from the frozen P1 records (stage-plays 521fe545, literary-commentary e23548b0).
+  {
+    id: "ore-mutham",
+    slug: "ore-mutham",
+    titleTa: "ஒரே முத்தம்",
+    titleEn: "Ore Mutham",
+    shelf: "drama",
+    subtype: "stage-play",
+    readerStructure: "stage-play",
+    href: "/plays/ore-mutham",
+    state: "published",
+    // The edition prints TWO numbering scopes: the main play (காட்சி 1–30), then a separately titled
+    // `நகைச் சுவைப் பகுதி.` whose scenes are numbered 1–3 afresh — never 31–33.
+    descTa: "மேடை நாடகம்: 30 காட்சிகள்; அதன்பின் தனித் தலைப்புடைய நகைச் சுவைப் பகுதி. — அதன் காட்சிகள் 1–3 தனியாக எண்ணிடப்பட்டவை",
+    descEn: "Stage play in 30 scenes, followed by a separately titled comedy section (நகைச் சுவைப் பகுதி.) whose own Scenes 1–3 are numbered afresh — not Scenes 31–33",
+    sourceRepo: "pugazg/kalaignar-stage-plays",
+    sourcePath: "works/ore-mutham",
+    sourceCommit: "521fe5452e3e9ed54baa81e672325ce6ba501c5e",
+    edition: "ஐந்தாம் பதிப்பு, 1964",
+    tamil: "complete",
+    english: "complete",
+    englishKind: "project-created",
+    unitCount: { value: 33, labelTa: "காட்சிகள் (30 + நகைச் சுவைப் பகுதி 3)", labelEn: "scenes (30 + 3 in the comedy section)" },
+    // The same project-level record its provenance page carries: Kalaignar's underlying Tamil play only.
+    rights: RIGHTS_NATIONALISED,
+    provenanceHref: "/plays/ore-mutham/source",
+  },
+  {
+    id: "sangatamil",
+    slug: "sangatamil",
+    titleTa: "சங்கத் தமிழ்",
+    titleEn: "Sangatamil",
+    shelf: "literary-commentary",
+    subtype: "commentary",
+    readerStructure: "commentary-unit",
+    href: "/sangatamil",
+    state: "published",
+    // Published READY-WITH-QUALIFICATION: scan 8 (the handwritten full-page foreword letter) is permanently
+    // source-limited — described, never transcribed or reconstructed — so coverage is "partial", stated on the card.
+    descTa: "சங்கப் பாடல்களுக்குக் கலைஞரின் எளிய நடை விளக்கக் கவிதைகள் — 102 பகுதிகள்; ஸ்கேன் 8-இன் கையெழுத்து முன்னுரைக் கடிதம் மூலத்தின் நிலையான வரம்புடையது — படியெடுக்கப்படவில்லை",
+    descEn: "Kalaignar's plain-verse retellings of Sangam poems — 102 sections; the handwritten foreword letter on scan 8 is permanently source-limited and not transcribed",
+    sourceRepo: "pugazg/kalaignar-literary-commentary",
+    sourcePath: "works/sangatamil",
+    sourceCommit: "e23548b09547a2308407e60e5e67c1a03fee5354",
+    tamil: "partial",
+    english: "partial",
+    englishKind: "project-created",
+    // 104 source-order READING sections = front matter + 102 literary sections + back cover (not 104 poems).
+    unitCount: { value: 104, labelTa: "வாசிப்புப் பகுதிகள்", labelEn: "reading sections" },
+    // No `rights`: the frozen provenance establishes none for this work; never inherited from sibling works.
+    provenanceHref: "/sangatamil/source",
+  },
 ];
 
 // ── Selectors ────────────────────────────────────────────────────────────────

@@ -8,6 +8,19 @@ import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { matchesQuery } from "@/lib/transliterate";
 
+/** "Volumes 42–47" / "Volume 54" / "Volumes 42–45, 47" — contiguous runs collapsed. */
+function volRange(vols: number[], ta: boolean) {
+  const s = [...vols].sort((a, b) => a - b);
+  const runs: string[] = [];
+  for (let i = 0; i < s.length; i++) {
+    let j = i;
+    while (j + 1 < s.length && s[j + 1] === s[j] + 1) j++;
+    runs.push(i === j ? `${s[i]}` : `${s[i]}–${s[j]}`);
+    i = j;
+  }
+  return ta ? `தொகுதி ${runs.join(", ")}` : `${s.length > 1 ? "Volumes" : "Volume"} ${runs.join(", ")}`;
+}
+
 function formatDate(iso: string) {
   const [y, m, d] = iso.split("-");
   return `${Number(d)}.${Number(m)}.${y}`;
@@ -59,14 +72,14 @@ export default function MurasoliLibrary() {
   // corpus for the brief moment before the indexes finish loading.
   const allVols = idx?.volumes.map((v) => v.volume) ?? [];
   const letterVols = idx?.volumes.filter((v) => v.pages.length === 0).map((v) => v.volume) ?? [];
-  const firstVol = allVols.length ? Math.min(...allVols) : 49;
-  const lastVol = allVols.length ? Math.max(...allVols) : 54;
-  const enFirst = letterVols.length ? Math.min(...letterVols) : 49;
-  const enLast = letterVols.length ? Math.max(...letterVols) : 53;
-  // Era of the currently-available volumes (49–54). Kept as stable editorial copy
-  // rather than derived from per-letter dates, which still carry OCR typos (e.g.
-  // one 2017 sign-off in Vol 51). Revisit when the earlier volumes (1–48) arrive.
-  const yearSpan = "2013–2016";
+  const tamilOnlyVols = allVols.filter((v) => !letterVols.includes(v));
+  const firstVol = allVols.length ? Math.min(...allVols) : null;
+  const lastVol = allVols.length ? Math.max(...allVols) : null;
+  // How each volume's Tamil was established, from the index itself: the Wave-8 volumes (42–47) are carried from
+  // archival page records verified against the scanned printed volume; the others keep their original OCR pipeline.
+  const verifiedVols = idx?.volumes.filter((v) => v.textProvenance === "source-verified-page-records").map((v) => v.volume) ?? [];
+  const ocrVols = allVols.filter((v) => !verifiedVols.includes(v));
+  // No year span is stated: the per-letter dates are not a reliable basis for one across the integrated volumes.
 
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
@@ -91,11 +104,13 @@ export default function MurasoliLibrary() {
               ? "உடன்பிறப்புகளுக்கு கலைஞர் முரசொலியில் எழுதிய கடிதங்கள் — மூல தமிழில், தொகுதி வாரியாக. இத்தொகுப்பு படிப்படியாக 54 தொகுதிகளாக விரிவடையும்."
               : "Karunanidhi's letters to udanpirappukkal, published in Murasoli — in original Tamil, volume by volume. This collection is growing toward all 54 volumes."}
           </p>
-          <p className="mt-3 max-w-xl rounded-xl border border-marina/25 bg-marina/[0.05] px-4 py-2.5 text-sm text-ink/70 dark:bg-marina/10 dark:text-night-text/70">
-            {ta
-              ? `54 தொகுதிகளில் தொகுதி ${firstVol} முதல் ${lastVol} வரை (${yearSpan}) முதற்கனிகளாக வாசிக்கக் கிடைக்கின்றன — தொகுதி ${enFirst} முதல் ${enLast} வரை, தமிழ் மூலத்துடன் முழு ஆங்கில மொழிபெயர்ப்பும் கொண்டவை. எஞ்சிய தொகுதிகள் ஒவ்வொன்றாக வந்து சேரும்.`
-              : `Volumes ${firstVol} to ${lastVol} (${yearSpan}) are the first of the fifty-four to arrive — Volumes ${enFirst} through ${enLast} each with a full English translation alongside the authoritative Tamil. The rest are on their way, each joining as its text and corrections are completed.`}
-          </p>
+          {firstVol !== null && (
+            <p className="mt-3 max-w-xl rounded-xl border border-marina/25 bg-marina/[0.05] px-4 py-2.5 text-sm text-ink/70 dark:bg-marina/10 dark:text-night-text/70" data-testid="murasoli-availability">
+              {ta
+                ? `54 தொகுதிகளில் தொகுதி ${firstVol} முதல் ${lastVol} வரை இப்போது வாசிக்கக் கிடைக்கின்றன${letterVols.length ? ` — ${volRange(letterVols, true)}: தமிழ் மூலத்துடன் முழு ஆங்கில மொழிபெயர்ப்பும்` : ""}${tamilOnlyVols.length ? `; ${volRange(tamilOnlyVols, true)}: தமிழ் மட்டும்` : ""}. எஞ்சிய தொகுதிகள் ஒவ்வொன்றாக வந்து சேரும்.`
+                : `Volumes ${firstVol} to ${lastVol} of the fifty-four are available now${letterVols.length ? ` — ${volRange(letterVols, false)} with a full English translation alongside the authoritative Tamil` : ""}${tamilOnlyVols.length ? `; ${volRange(tamilOnlyVols, false)} in Tamil only` : ""}. The rest are on their way, each joining as its text is completed.`}
+            </p>
+          )}
           {idx && (
             <p className="mt-3 text-xs text-ink/45 dark:text-night-text/45">
               {ta
@@ -165,18 +180,19 @@ export default function MurasoliLibrary() {
               <div className="flex items-start gap-3">
                 <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-brass" aria-hidden />
                 <div className="text-sm leading-relaxed text-ink/75 dark:text-night-text/75" lang={lang}>
+                  {/* Provenance differs by volume — stated per cohort, never as a blanket claim. */}
                   {ta ? (
-                    <>
-                      <p>
-                        இக்கடிதங்கள் அச்சு நூல்களிலிருந்து OCR தொழில்நுட்பத்தால் எடுக்கப்பட்டவை — <strong>எழுத்துப் பிழைகள் இருக்கும்</strong>. தானியங்கி மற்றும் கைமுறைத் திருத்தங்கள் தொடர்ந்து நடைபெறுகின்றன. பிழை கண்டால் தெரிவியுங்கள்:
-                      </p>
-                    </>
+                    <p data-testid="murasoli-provenance-note">
+                      {verifiedVols.length > 0 && <>{volRange(verifiedVols, true)}: அச்சிட்ட நூலின் ஸ்கேனுடன் ஒப்பிட்டுச் சரிபார்க்கப்பட்ட ஆவணப் பக்கப் பதிவுகளிலிருந்து தரப்பட்டவை. </>}
+                      {ocrVols.length > 0 && <>{volRange(ocrVols, true)}: அச்சு நூல்களிலிருந்து OCR தொழில்நுட்பத்தால் எடுக்கப்பட்டவை — <strong>எழுத்துப் பிழைகள் இருக்கலாம்</strong>; திருத்தங்கள் தொடர்ந்து நடைபெறுகின்றன. </>}
+                      ஒவ்வொரு கடிதத்தின் மூல விவரமும் அதன் பக்கத்திலேயே உள்ளது. பிழை கண்டால் தெரிவியுங்கள்:
+                    </p>
                   ) : (
-                    <>
-                      <p>
-                        These letters are OCR-extracted from the printed volumes — <strong>they will contain recognition errors</strong>. Automated and manual correction is ongoing. If you spot a mistake, please tell us:
-                      </p>
-                    </>
+                    <p data-testid="murasoli-provenance-note">
+                      {verifiedVols.length > 0 && <>{volRange(verifiedVols, false)} {verifiedVols.length > 1 ? "are" : "is"} carried from archival page records verified against the scanned printed volumes. </>}
+                      {ocrVols.length > 0 && <>{volRange(ocrVols, false)} {ocrVols.length > 1 ? "were" : "was"} OCR-extracted from the printed volumes — <strong>they may contain recognition errors</strong>; correction is ongoing. </>}
+                      Each letter&apos;s reader carries its own source details. If you spot a mistake, please tell us:
+                    </p>
                   )}
                   <a
                     href="https://github.com/pugazg/kalaignar-autobiography/issues/new?title=Murasoli%20correction&labels=correction&body=Letter%2Fpage%20id%3A%20%0AWhat%20should%20change%3A%20%0ASource%2Freason%3A%20"
@@ -236,7 +252,7 @@ export default function MurasoliLibrary() {
                                     <span className="min-w-0 flex-1">
                                       <span className="block truncate font-tamil text-marina dark:text-marina-light" lang="ta">{l.title.ta}</span>
                                       <span className="block text-[11px] text-ink/40 dark:text-night-text/40">
-                                        {l.date ? `${formatDate(l.date)} · ` : ""}{l.pages.length} {ta ? "பக்கங்கள்" : "pages"}
+                                        {l.date ? `${formatDate(l.date)} · ` : ""}{l.pageCount ?? l.pages.length} {ta ? "பக்கங்கள்" : "pages"}
                                       </span>
                                     </span>
                                   </Link>
@@ -283,8 +299,8 @@ export default function MurasoliLibrary() {
 
             <p className="mt-10 rounded-xl border border-brass/30 bg-brass/[0.05] p-4 text-xs italic text-ink/55 dark:text-night-text/55">
               {ta
-                ? "மூலம்: தமிழ் இணைய நூலகம் (tamildigitallibrary.in) — சென்னைப் பல்கலைக்கழக ஆவணம். உரிமை: நாட்டுடைமையாக்கப்பட்டது."
-                : "Source: Tamil Digital Library (tamildigitallibrary.in) — University of Madras holdings. Rights: nationalised."}
+                ? "மூலமும் சான்றும் ஒவ்வொரு தொகுதியுடனும் கடிதத்துடனும் தரப்பட்டுள்ளன. உரிமை: நாட்டுடைமையாக்கப்பட்டது."
+                : "Source and provenance details are carried with each integrated volume and letter. Rights: nationalised."}
             </p>
           </>
         )}

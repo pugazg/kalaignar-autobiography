@@ -14,6 +14,12 @@ export type MurasoliVolume = {
   pageCount: number;
   pages: MurasoliPage[];
   sourceUrl?: string; // the scanned source (Tamil Digital Library entry)
+  /**
+   * How this volume's Tamil text was established, where it differs from the collection's original OCR pipeline.
+   * Wave 8 (Vols 42–47): "source-verified-page-records" — carried from archival page records verified against the
+   * scanned printed volume (the reader and its provenance note are authoritative). Absent = the existing volumes.
+   */
+  textProvenance?: "source-verified-page-records";
 };
 export type MurasoliIndex = {
   collection: "murasoli";
@@ -33,6 +39,12 @@ export type MurasoliLetterMeta = {
   date: string | null; // ISO yyyy-mm-dd, from the sign-off
   title: MurasoliTitle;
   pages: string[]; // source page ids
+  /**
+   * Physical source pages the letter spans, for display. Set only for letters that have NO legacy page-fetch
+   * contract (Wave 8, Vols 42–47: served from the server-side reader model, so `pages` stays empty rather than
+   * holding invented page ids). Display `pageCount ?? pages.length`.
+   */
+  pageCount?: number;
 };
 export type MurasoliLettersVolume = {
   volume: number;
