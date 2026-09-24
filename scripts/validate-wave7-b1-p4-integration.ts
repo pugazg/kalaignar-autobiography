@@ -53,7 +53,7 @@ const NAAM_WRONG_SHA = "3043e1cd"; // reader_json_sha256 prefix — points at re
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, g(219, W7B.works, W7K.works), `catalogue is exactly ${g(219, W7B.works, W7K.works)} published works (216 + 3 Batch-1 cinema${w7bLive ? " + 13 Wave-7 B2-B4" : ""}${W7K.works ? " + 101 Wave-7 B5/B6/K" : ""})`);
+eq(works.length, (g(219, W7B.works, W7K.works) + W8.works), `catalogue is exactly ${(g(219, W7B.works, W7K.works) + W8.works)} published works (216 + 3 Batch-1 cinema${w7bLive ? " + 13 Wave-7 B2-B4" : ""}${W7K.works ? " + 101 Wave-7 B5/B6/K" : ""})`);
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["cinema-writing"], 10, "Cinema Writing holds 10 works (7 + 3)");
@@ -85,15 +85,15 @@ for (const slug of WAVE7_CINEMA_SLUGS) {
 
 // ── 2. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, g(80, W7B.discovery, W7K.discovery), `/read discovery is ${g(80, W7B.discovery, W7K.discovery)} entries (77 + 3${w7bLive ? " + 11 Wave-7 B2-B4" : ""})`);
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible, "40 discovery entries still visible (cinema already over cap) + 1 later Literary Commentary entry");
+eq(shelves.flatMap((s) => s.entries).length, (g(80, W7B.discovery, W7K.discovery) + W8.discovery), `/read discovery is ${(g(80, W7B.discovery, W7K.discovery) + W8.discovery)} entries (77 + 3${w7bLive ? " + 11 Wave-7 B2-B4" : ""})`);
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible + W8.visible, "40 discovery entries still visible (cinema already over cap) + 1 later Literary Commentary entry");
 eq(shelves.find((s) => s.shelf.id === "cinema-writing")!.entries.length, 10, "Cinema Writing renders 10 discovery entries");
 eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id)), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "same six over-cap shelves");
 
 // ── 3. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace("https://nenjukkuneethi.org", "")));
-eq(urls.length, g(4042, W7B.sitemap, W7K.sitemap), `sitemap has exactly ${g(4042, W7B.sitemap, W7K.sitemap)} URLs (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+eq(urls.length, (g(4042, W7B.sitemap, W7K.sitemap) + W8.sitemap), `sitemap has exactly ${(g(4042, W7B.sitemap, W7K.sitemap) + W8.sitemap)} URLs (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const p3Routes: string[] = p3.works.flatMap((w: any) => w.routes);
 eq(p3Routes.length, 133, "P3 manifest still declares 133 routes");

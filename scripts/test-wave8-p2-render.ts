@@ -27,7 +27,7 @@ import PlaySource from "../components/PlaySource";
 import SangatamilLanding from "../components/SangatamilLanding";
 import SangatamilReader from "../components/SangatamilReader";
 import SangatamilSource from "../components/SangatamilSource";
-import { loadWave8MurasoliLetters, toLetterMeta } from "../lib/wave8-murasoli-reader";
+import { loadWave8MurasoliLetters, toLetterMeta, WAVE8_MURASOLI_VOLUMES } from "../lib/wave8-murasoli-reader";
 import { toOreMuthamPlay } from "../lib/wave8-ore-mutham-adapter";
 import { toSangatamilWork, loadSangatamilP1 } from "../lib/wave8-sangatamil-reader";
 import { playLandingDescription, playSceneDescription } from "../lib/play-metadata";
@@ -144,7 +144,10 @@ const all = (h: string, re: RegExp) => Array.from(h.matchAll(re));
   ok(visible(h3681).trimEnd().length > 0 && !/அன்புள்ள,\s*மு\.க\./.test(last.text), "B1 3681: no closing/signature supplied after the missing page");
   // Public Vols 48–54: the pre-P2 reader output is unchanged (legacy fetch path, no injected content).
   const idx = JSON.parse(fs.readFileSync("public/data/murasoli/letters-index.json", "utf8"));
-  const flat = idx.volumes.flatMap((v: { volume: number; letters: object[] }) => v.letters.map((l) => ({ ...l, volume: v.volume }))) as { id: string; volume: number }[];
+  // The lock covers the pre-Wave-8 public cohort (Vols 48–54, navigating among themselves) exactly as P2 defined it.
+  // At P4 the public index also lists the published Wave-8 Volumes 42–47; they are scoped out here (their rendering is
+  // covered above, and the published 42 → 54 navigation by the P4 validators).
+  const flat = idx.volumes.filter((v: { volume: number }) => !(WAVE8_MURASOLI_VOLUMES as readonly number[]).includes(v.volume)).flatMap((v: { volume: number; letters: object[] }) => v.letters.map((l) => ({ ...l, volume: v.volume }))) as { id: string; volume: number }[];
   ok(flat.length === 346 && flat.every((l) => l.volume >= 48 && l.volume <= 54), `B1: public Murasoli remains Vols 48–54, 346 letters (got ${flat.length})`);
   const h = crypto.createHash("sha256");
   flat.forEach((l, i) => {

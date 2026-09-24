@@ -71,7 +71,7 @@ const gAdd = (base: number, b1delta: number, w7bDelta: number, w7kDelta = 0) => 
 const W7K = LIBRARY_WORKS.some((w) => w.id === "kuraloviyam") ? W7K_ALL : { works: 0, collections: 0, discovery: 0, visible: 0, sitemap: 0, build: 0 };
 
 // ── Public surface: frozen P1 boundary (+ this batch's contribution once published) ──────────────────────
-eq(published.length, gAdd(P1_FROZEN.catalogue, C.works, W7B.works, W7K.works), `catalogue == P1 ${P1_FROZEN.catalogue}${phase === "P4" ? ` + ${C.works}` : ""}${w7bPublished ? ` + ${W7B.works} (Wave-7 B2-B4)` : ""}`);
+eq(published.length, (gAdd(P1_FROZEN.catalogue, C.works, W7B.works, W7K.works) + W8.works), `catalogue == P1 ${P1_FROZEN.catalogue}${phase === "P4" ? ` + ${C.works}` : ""}${w7bPublished ? ` + ${W7B.works} (Wave-7 B2-B4)` : ""}`);
 const byShelf: Record<string, number> = {};
 for (const w of published) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["cinema-writing"], add(P1_FROZEN.cinemaWorks, C.cinema), `Cinema Writing == P1 ${P1_FROZEN.cinemaWorks}${phase === "P4" ? ` + ${C.cinema}` : ""}`);
@@ -84,13 +84,13 @@ for (const s of slugs) {
   ok(!(STORY_SLUGS as readonly string[]).includes(s), `${s} is never a story slug`);
 }
 const shelves = discoveryShelves();
-eq(shelves.flatMap((x) => x.entries).length, gAdd(P1_FROZEN.discovery, C.discovery, W7B.discovery, W7K.discovery), `/read discovery == P1 ${P1_FROZEN.discovery}${phase === "P4" ? ` + ${C.discovery}` : ""}${w7bPublished ? ` + ${W7B.discovery} (Wave-7 B2-B4)` : ""}`);
-eq(shelves.reduce((n, x) => n + Math.min(x.entries.length, 6), 0), P1_FROZEN.visible + W7K.visible, "/read initially visible still 40 (cinema already over cap) — + 1 later Literary Commentary entry once Wave-7 B5/B6/K is live");
+eq(shelves.flatMap((x) => x.entries).length, (gAdd(P1_FROZEN.discovery, C.discovery, W7B.discovery, W7K.discovery) + W8.discovery), `/read discovery == P1 ${P1_FROZEN.discovery}${phase === "P4" ? ` + ${C.discovery}` : ""}${w7bPublished ? ` + ${W7B.discovery} (Wave-7 B2-B4)` : ""}`);
+eq(shelves.reduce((n, x) => n + Math.min(x.entries.length, 6), 0), P1_FROZEN.visible + W7K.visible + W8.visible, "/read initially visible still 40 (cinema already over cap) — + 1 later Literary Commentary entry once Wave-7 B5/B6/K is live");
 eq(shelves.find((x) => x.shelf.id === "cinema-writing")!.entries.length, add(P1_FROZEN.cinemaDiscovery, C.cinema), `Cinema Writing discovery == P1 ${P1_FROZEN.cinemaDiscovery}${phase === "P4" ? ` + ${C.cinema}` : ""}`);
 
 // ── Sitemap: P1 boundary (+ this batch's URLs once published) ────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, gAdd(P1_FROZEN.sitemap, C.sitemap, W7B.sitemap, W7K.sitemap), `sitemap == P1 ${P1_FROZEN.sitemap}${phase === "P4" ? ` + ${C.sitemap}` : ""}${w7bPublished ? ` + ${W7B.sitemap} (Wave-7 B2-B4)` : ""}`);
+eq(urls.length, (gAdd(P1_FROZEN.sitemap, C.sitemap, W7B.sitemap, W7K.sitemap) + W8.sitemap), `sitemap == P1 ${P1_FROZEN.sitemap}${phase === "P4" ? ` + ${C.sitemap}` : ""}${w7bPublished ? ` + ${W7B.sitemap} (Wave-7 B2-B4)` : ""}`);
 eq(urls.length - new Set(urls).size, P1_FROZEN.sitemapDup, "sitemap still 0 duplicates");
 for (const s of slugs) {
   const exposed = urls.some((u) => u.includes(`/cinema/${s}`));

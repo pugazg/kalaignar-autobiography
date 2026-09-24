@@ -27,6 +27,9 @@ import sitemap from "../app/sitemap";
 import { publishedWorks } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
+import { isWave8Drama } from "../lib/drama-wave8-routes";
+import { toOreMuthamPlay, toOreMuthamProvenance } from "../lib/wave8-ore-mutham-adapter";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const BASE = "https://nenjukkuneethi.org";
 let checks = 0;
@@ -38,7 +41,9 @@ const strip = (s: string) => s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").tri
 const ta = (el: React.ReactElement) => strip(renderToStaticMarkup(createElement(LangProvider, null, el))); // Tamil default
 const en = (el: React.ReactElement) => strip(renderToStaticMarkup(el)); // context default = English
 
-const load = (slug: string) => ({
+// Wave 8 (ore-mutham): no public/data payload — the play and its archival record are built on the server from the
+// hidden P1 data (the builders its routes use), so it takes part in the same rendered-landing regression.
+const load = (slug: string) => (isWave8Drama(slug) ? { play: toOreMuthamPlay(), prov: toOreMuthamProvenance() } : {
   play: JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/plays", slug, "play.json"), "utf8")) as Play,
   prov: JSON.parse(fs.readFileSync(path.join(process.cwd(), "public/data/plays", slug, "provenance.json"), "utf8")) as PlayProvenance,
 });
@@ -71,10 +76,10 @@ ok(batch.discoverable === false && batch.sitemapExposed === false, "Batch-2 mani
 const urls = sitemap().map((e) => e.url);
 for (const slug of WAVE6_DRAMA_SLUGS) ok(urls.filter((u) => u === `${BASE}/plays/${slug}` || u.startsWith(`${BASE}/plays/${slug}/`)).length > 0, `${slug} URLs present in the sitemap (P4)`);
 const works = publishedWorks();
-eq(works.length, 232 + W7K.works, "catalogue is 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
+eq(works.length, 232 + W7K.works + W8.works, "catalogue is 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
 for (const slug of WAVE6_DRAMA_SLUGS) ok(works.some((w) => w.slug === slug), `${slug} IS in the catalogue`);
 const dramaEntries = discoveryShelves().find((s) => s.shelf.id === "drama")!.entries;
-eq(dramaEntries.length, 10, "Drama discovery is 10 entries (3 Wave-6 cards + 2 Wave-7 B2 dramas)");
+eq(dramaEntries.length, 10 + W8.drama, "Drama discovery is 10 entries (+ later Wave-8 ore-mutham) (3 Wave-6 cards + 2 Wave-7 B2 dramas)");
 eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "public collection registry is 9 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978 + 2 முத்துக் குளியல்)");
 
 // ── 3. RENDERED SEMANTICS ───────────────────────────────────────────────────────

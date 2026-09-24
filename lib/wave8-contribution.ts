@@ -14,7 +14,7 @@ import path from "node:path";
 type Stage = { stage: string; sitemapExposed: boolean; cohorts: Record<string, { routes: string[] }> };
 const FILE = path.join(process.cwd(), "data/internal/wave8/wave8-p3-routes.json");
 const record: Stage | null = fs.existsSync(FILE) ? (JSON.parse(fs.readFileSync(FILE, "utf8")) as Stage) : null;
-type Published = { stage: string; published: boolean; catalogue: { delta: number }; collections: { delta: number }; discovery: { delta: number }; visible: { delta: number }; sitemap: { delta: number } };
+type Published = { stage: string; published: boolean; newWorkShelves: Record<string, number>; catalogue: { delta: number }; collections: { delta: number }; discovery: { delta: number }; visible: { delta: number }; sitemap: { delta: number } };
 const P4_FILE = path.join(process.cwd(), "data/internal/wave8/wave8-p4-publication.json");
 const p4: Published | null = fs.existsSync(P4_FILE) ? (JSON.parse(fs.readFileSync(P4_FILE, "utf8")) as Published) : null;
 /** True once the Wave-8 cohort is published (P4). */
@@ -26,6 +26,9 @@ export const WAVE8_ROUTES: readonly string[] = record ? Object.values(record.coh
 export const WAVE8_CONTRIBUTION = {
   /** New published works (P4: ore-mutham + sangatamil). */
   works: WAVE8_PUBLISHED ? p4!.catalogue.delta : 0,
+  /** Per-shelf new works (P4: Drama +1 ore-mutham, Literary Commentary +1 sangatamil). */
+  drama: WAVE8_PUBLISHED ? p4!.newWorkShelves["drama"] ?? 0 : 0,
+  literaryCommentary: WAVE8_PUBLISHED ? p4!.newWorkShelves["literary-commentary"] ?? 0 : 0,
   collections: WAVE8_PUBLISHED ? p4!.collections.delta : 0,
   /** New /read discovery entries (P4: the two standalone works). */
   discovery: WAVE8_PUBLISHED ? p4!.discovery.delta : 0,

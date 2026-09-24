@@ -101,6 +101,11 @@ export async function buildRecord() {
     published: true,
     note: "Wave 8 publication: Murasoli Volumes 42–47 join the ONE existing murasoli-letters work; ore-mutham (Drama) and sangatamil (Literary Commentary) are new works. The 483 routes P3 built become discoverable; P4 adds no route. P1–P3 records are unchanged.",
     newLibraryWorks: newWorks.filter((id) => (LIBRARY_WORKS as { id: string }[]).some((w) => w.id === id)),
+    /** Per-shelf growth from the new works (Murasoli 42–47 add no work). */
+    newWorkShelves: Object.fromEntries(Object.entries(
+      (LIBRARY_WORKS as { id: string; shelf: string; state: string }[]).filter((w) => newWorks.includes(w.id) && w.state === "published")
+        .reduce((m: Record<string, number>, w) => ((m[w.shelf] = (m[w.shelf] ?? 0) + 1), m), {}),
+    )),
     catalogue: { before: PRE_P4_SURFACE.catalogue, after: works.length, delta: works.length - PRE_P4_SURFACE.catalogue, shelves: byShelf },
     collections: { before: PRE_P4_SURFACE.collections, after: LIBRARY_COLLECTIONS.length, delta: LIBRARY_COLLECTIONS.length - PRE_P4_SURFACE.collections },
     discovery: { before: PRE_P4_SURFACE.discovery, after: discovery, delta: discovery - PRE_P4_SURFACE.discovery },

@@ -76,10 +76,10 @@ const EXPECT: Record<string, Ex> = {
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 232 + W7K.works, "catalogue is exactly 232 + later Wave-7 B5/B6/Kuraloviyam 101 = 333 published works (219 + 13 Wave-7 B2-B4 + 101)");
+eq(works.length, 232 + W7K.works + W8.works, "catalogue is exactly 232 + later Wave-7 B5/B6/Kuraloviyam 101 = 333 published works (219 + 13 Wave-7 B2-B4 + 101)");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
-eq(byShelf["drama"], 10, "Drama holds 10 works (8 + 2)");
+eq(byShelf["drama"], 10 + W8.drama, "Drama holds 10 works (8 + 2) + later Wave-8 ore-mutham");
 eq(byShelf["fiction"], 162, "Fiction holds 162 works (157 + 5)");
 eq(byShelf["essays-articles"], 15, "Essays & Articles holds 15 works (9 + 6)");
 eq(byShelf["cinema-writing"], 10, "Cinema Writing unchanged at 10 (this batch adds none)");
@@ -150,10 +150,10 @@ for (const s of ALL13) ok(!COLLECTION_IDS.includes(s), `${s} is not registered a
 // ── 3. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 90 + W7K.discovery, "/read discovery is 90 + later Wave-7 B5/B6/K 6 = 96 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible, "40 discovery entries still visible from this batch (the three shelves were already over cap) + 1 later Literary Commentary entry under the cap");
+eq(entries.length, 90 + W7K.discovery + W8.discovery, "/read discovery is 90 + later Wave-7 B5/B6/K 6 = 96 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible + W8.visible, "40 discovery entries still visible from this batch (the three shelves were already over cap) + 1 later Literary Commentary entry under the cap");
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction renders 20 discovery entries");
-eq(shelves.find((s) => s.shelf.id === "drama")!.entries.length, 10, "Drama renders 10 discovery entries");
+eq(shelves.find((s) => s.shelf.id === "drama")!.entries.length, 10 + W8.drama, "Drama renders 10 discovery entries + later Wave-8 ore-mutham");
 eq(shelves.find((s) => s.shelf.id === "essays-articles")!.entries.length, 15, "Essays & Articles renders 15 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "cinema-writing")!.entries.length, 10, "Cinema Writing unchanged at 10 discovery entries");
 eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id)), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "same six over-cap shelves");
@@ -167,7 +167,7 @@ ok(fictionEntryIds.includes("surulimalai") && fictionEntryIds.includes("vellikki
 // ── 4. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace(BASE, "")));
-eq(urls.length, 4267 + W7K.sitemap, "sitemap has exactly 4267 URLs (4042 + 224 direct + 1 collection route) + the later Wave-7 B5/B6/K 512");
+eq(urls.length, 4267 + W7K.sitemap + W8.sitemap, "sitemap has exactly 4267 URLs (4042 + 224 direct + 1 collection route) + the later Wave-7 B5/B6/K 512");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 eq(P3_ROUTES.length, 224, "P3 manifest still declares 224 direct routes");
 for (const r of P3_ROUTES) ok(urlSet.has(r), `sitemap exposes direct route ${r}`);
@@ -204,7 +204,7 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 // A8: duplicate a catalogue identity → uniqueness guard fires.
 { const dup = [...LIBRARY_WORKS.map((w) => w.id), "arumbu"]; ok(new Set(dup).size !== dup.length, "A8 a duplicated catalogue id is detectable"); eq(new Set(LIBRARY_WORKS.map((w) => w.id)).size, LIBRARY_WORKS.length, "A8 the LIVE catalogue has no duplicate id"); eq(new Set(LIBRARY_WORKS.map((w) => w.slug)).size, LIBRARY_WORKS.length, "A8 the LIVE catalogue has no duplicate slug"); }
 // A9: drop/add a work → the exact catalogue count guard fires.
-{ const LIVE = 232 + W7K.works; ok(works.length - 1 !== LIVE && works.length + 1 !== LIVE, "A9 a dropped/added work would change the count away from the live total"); eq(works.length, LIVE, "A9 the LIVE catalogue is exactly 232 + 101 (later Wave-7 batch)"); }
+{ const LIVE = 232 + W7K.works + W8.works; ok(works.length - 1 !== LIVE && works.length + 1 !== LIVE, "A9 a dropped/added work would change the count away from the live total"); eq(works.length, LIVE, "A9 the LIVE catalogue is exactly 232 + 101 (later Wave-7 batch)"); }
 // A10: invent surulimalai chapter 6/7 → the derived routes never contain them.
 { ok(!P3_ROUTES.includes("/novels/surulimalai/06-chapter-06") && !P3_ROUTES.includes("/novels/surulimalai/07-chapter-07"), "A10 no invented surulimalai chapter 6/7 route exists"); }
 // A11: omit a valid sitemap route → completeness guard fires.
