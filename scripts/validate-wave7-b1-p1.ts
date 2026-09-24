@@ -23,6 +23,7 @@ import sitemap from "../app/sitemap";
 import { WAVE7_B1_CONTRIBUTION } from "../lib/wave7-b1-contribution";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -100,13 +101,13 @@ for (const s of slugs) {
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes);
-  eq(keys.length, gAdd(P1_FROZEN.build.prerender, C.build, W7B.build, W7K.build), `build prerender routes == P1 ${P1_FROZEN.build.prerender}${phase === "P4" ? ` + ${C.build}` : ""}${w7bPublished ? ` + ${W7B.build} (Wave-7 B2-B4)` : ""}`);
+  eq(keys.length, gAdd(P1_FROZEN.build.prerender, C.build, W7B.build, W7K.build) + W8.build, `build prerender routes == P1 ${P1_FROZEN.build.prerender}${phase === "P4" ? ` + ${C.build}` : ""}${w7bPublished ? ` + ${W7B.build} (Wave-7 B2-B4)` : ""}`);
   // At P1 there were 0 new /cinema routes; from P3 on the 133 exist. Assert the count matches the phase.
   const newCinema = keys.filter((k) => slugs.some((s) => k === `/cinema/${s}` || k.startsWith(`/cinema/${s}/`))).length;
   eq(newCinema, phase === "P4" ? C.build : P1_FROZEN.newCinemaRoutes, `new /cinema prerendered routes match phase (${phase})`);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, gAdd(P1_FROZEN.build.html, C.build, W7B.build, W7K.build), `build .html == P1 ${P1_FROZEN.build.html}${phase === "P4" ? ` + ${C.build}` : ""}${w7bPublished ? ` + ${W7B.build} (Wave-7 B2-B4)` : ""}`);
+  eq(html, gAdd(P1_FROZEN.build.html, C.build, W7B.build, W7K.build) + W8.build, `build .html == P1 ${P1_FROZEN.build.html}${phase === "P4" ? ` + ${C.build}` : ""}${w7bPublished ? ` + ${W7B.build} (Wave-7 B2-B4)` : ""}`);
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }

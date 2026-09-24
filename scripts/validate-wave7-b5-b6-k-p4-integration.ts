@@ -26,6 +26,7 @@ import { SPEECH_SLUGS } from "../data/speeches";
 import { WAVE7_SPEECH_SLUGS } from "../lib/speeches-wave7-routes";
 import { WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import sitemap from "../app/sitemap";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -111,7 +112,7 @@ if (fs.existsSync(PM)) {
   const keys = Object.keys(JSON.parse(fs.readFileSync(PM, "utf8")).routes);
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   walk(path.join(root, ".next/server/app"));
-  eq({ prerender: keys.length, html }, { prerender: BASE.build.prerender + 512, html: BASE.build.html + 512 }, "build 4276/4271 → 4788/4783");
+  eq({ prerender: keys.length, html }, { prerender: BASE.build.prerender + 512 + W8.build, html: BASE.build.html + 512 + W8.build }, `build 4276/4271 → 4788/4783${W8.build ? ` (+ later Wave-8 ${W8.build})` : ""}`);
   ok(WAVE7_B5_B6_K_ROUTES.every((r) => keys.includes(r)), "every new route is prerendered");
 } else console.log("  (no build tree — build boundary skipped; CI runs this after Build)");
 

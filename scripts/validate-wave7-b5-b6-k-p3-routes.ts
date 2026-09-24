@@ -26,6 +26,7 @@ import { WAVE6_SPEECH_SLUGS } from "../lib/speeches-wave6-routes";
 import { WAVE7_SPEECH_SLUGS } from "../lib/speeches-wave7-routes";
 import { LIBRARY_WORKS } from "../data/library";
 import sitemap from "../app/sitemap";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -81,7 +82,7 @@ if (fs.existsSync(PM)) {
   // Hidden (P3): +510 direct routes. Published (P4): + the two முத்துக் குளியல் collection landings = +512.
   const expected = 510 + (published ? 2 : 0);
   if (published) for (const c of ["/collections/muthukkuliyal-part-1", "/collections/muthukkuliyal-part-2"]) ok(routes.includes(c), `built: ${c} prerendered`);
-  eq({ prerender: routes.length, html }, { prerender: BASELINE_BUILD.prerender + expected, html: BASELINE_BUILD.html + expected }, `build totals == frozen baseline + ${expected}`);
+  eq({ prerender: routes.length, html }, { prerender: BASELINE_BUILD.prerender + expected + W8.build, html: BASELINE_BUILD.html + expected + W8.build }, `build totals == frozen baseline + ${expected}${W8.build ? ` + later Wave-8 ${W8.build}` : ""}`);
 } else console.log("  (no .next build present — built-route checks skipped; CI runs this after Build)");
 
 if (fail.length) {
