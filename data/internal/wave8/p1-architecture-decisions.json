@@ -1,0 +1,51 @@
+{
+ "schema": 1,
+ "note": "INTERNAL — Wave 8 P1 architecture decisions recorded before implementation of readers (P2). Authored, not generated; scripts/validate-wave8-p1-hidden.ts cross-checks every evidence count below against the generated data.",
+ "decisions": [
+  {
+   "segment": "B1",
+   "work": "murasoli-letters",
+   "decision": "Existing-work coverage expansion. Keep the ONE `murasoli-letters` LibraryWork and its `letter` reader structure; Volumes 42–47 are a new source-pinned import feeding that reader in P2. The live Volumes 48–54 payloads stay byte-identical.",
+   "evidence": {
+    "chapterHeaderDialects": { "yaml-front-matter": [42, 43, 46, 47], "markdown-bullets": [44, 45] },
+    "pageRecordDialects": "YAML front matter body (Vols 42/43/46/47, most pages) or `## Source text` … `## Archival notes` (Vols 44/45 and a few 42/43 pages); both parsed without rewriting source files",
+    "noSharedPages": "no PDF page is shared by two letters in any of the six volumes (each letter is a whole page run)",
+    "identityConstraint": "printed numbers are not unique (Vol 46 prints 3637 twice; 3647–3649 recur across Vols 46 and 47): canonical id = m{volume}-{chapter file stem}; routeSlug keeps m{volume}-l{number} where unique in its volume",
+    "englishLayer": "released English records only (volume manifest = release authority); translator note, apparatus link lines, per-letter notes and the embedded `Original Tamil` copy are carried separately or excluded — never as English body text",
+    "p2Needs": ["render Tamil from page-segmented text (page boundaries retained)", "carry Letter 3681 source-incomplete qualification on the reader and a /source surface", "volume navigation 42–54 derived from data"]
+   }
+  },
+  {
+   "segment": "B2",
+   "work": "ore-mutham",
+   "decision": "Stage-play family (`readerStructure: \"stage-play\"`). The only model gap — a separately titled part with its own numbering scope — is closed additively in data/plays.ts: optional `PlayPart` + `Play.parts` and optional `PlayReadingUnit.partId`. No new reader, no route or registry change at P1; the 10 published plays declare no parts and are unaffected.",
+   "evidence": {
+    "parts": [{ "id": "main-play", "printedNumbers": "1–30" }, { "id": "nagai-suvai-pagudhi", "headingTa": "நகைச் சுவைப் பகுதி.", "headingEn": "Comedy Section", "printedNumbers": "1–3" }],
+    "unitIds": "source file stems main-01…main-30, nagai-suvai-01…nagai-suvai-03 (supplementary scenes never renumbered 31–33)",
+    "separatedApparatus": "Tamil `## Assembly provenance` and English `## Translation notes` sections and source-boundary HTML comments are carried apart from scene text",
+    "p2Needs": ["parse scene text into PlayUnit dialogue / stage-direction units", "render the part heading before nagai-suvai-01 and scope scene labels by part"]
+   }
+  },
+  {
+   "segment": "B3",
+   "work": "sangatamil",
+   "decision": "commentary-unit family (the existing `commentary-unit` ReaderStructure, modelled on the Kuraloviyam unit → page → typed-block payload). NOT kural-commentary. No new ReaderStructure: the P1 typed-block data already preserves every required semantic; P2 extends the commentary-unit block vocabulary additively where needed.",
+   "comparison": {
+    "kural-commentary": "REJECTED — a fixed பால் → இயல் → அதிகாரம் → குறள் hierarchy pairing each couplet with a separate commentator voice; சங்கத் தமிழ் has no such hierarchy and is not couplet-plus-commentary.",
+    "tholkappiya-poonga (commentary-unit)": "Units are numbered மலர் with paragraph-only text; சங்கத் தமிழ் prints no மலர் numbering and needs typed verse / citation / gloss blocks — the page/block model of Kuraloviyam fits better within the same family.",
+    "kuraloviyam (commentary-unit)": "ADOPTED MODEL — front-matter / entry / back-matter units over physical pages with page types and typed blocks (heading, paragraph[quote], citation, archival, source-limited{handwritten-facsimile}); scan 8 maps directly onto the existing `source-limited` / `handwritten-facsimile` block."
+   },
+   "evidence": {
+    "hierarchy": "volume → 104 source-order sections (navigation sections.json) → 115 formal provenance units + 4 source-note-only records (119 leaves) → 497 physical scans, each scan in exactly one section",
+    "verseLineation": "every block keeps its source lines exactly (hard-break spaces included); no reflow",
+    "carryOverFragments": "right-aligned printed fragments are typed `right-aligned-fragment` (distinct from citations)",
+    "illustrations": "illustration / blank / facsimile pages carry the archive's description under an archival label, typed `archival-description` — never source text",
+    "frontBackMatter": "front-matter page types typed `front-matter-text`; copy-specific library marks typed `copy-specific-marking`",
+    "printedSourceCitations": "every one of the 119 register records is located on its anchor page and typed `source-citation` / `source-note` (Tamil: register match with a recorded tier; English: translated forms on the same anchor pages) — never Kalaignar's text",
+    "quotedClassicalVerse": "blockquotes typed `quotation` (the quoted Sangam text), glosses under `பொருள் விளக்கம்` typed `gloss`",
+    "scan8": "Tamil `partial` / English `source-limited`, description-only; carried as `sourceLimitation: permanent-source-limited`; handwriting never transcribed or reconstructed",
+    "p2Needs": ["additive commentary-unit block kinds for verse lineation, gloss, ornament and aligned fragments", "section-granular units (front matter = section 000)"]
+   }
+  }
+ ]
+}

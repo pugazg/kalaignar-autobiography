@@ -163,10 +163,27 @@ export type PlayReadingUnitKind =
    */
   | "source-representation-unit";
 
+/**
+ * A separately titled PART of a printed play with its OWN numbering scope (Wave 8: ஒரே முத்தம் prints its main play,
+ * காட்சி 1–30, and then a `நகைச் சுவைப் பகுதி.` whose scenes are numbered 1–3 again). Numbering resets are carried as
+ * parts — never flattened into one sequence (the supplementary scenes are never 31–33). Single-part plays declare
+ * no parts at all; this is purely additive.
+ */
+export type PlayPart = {
+  /** Stable source-derived part id (e.g. `main-play`, `nagai-suvai-pagudhi`). */
+  id: string;
+  /** The part heading EXACTLY as printed; `null` where the source prints none (the main play body). */
+  headingTa: string | null;
+  headingEn: string | null;
+};
+
 export type PlayReadingUnit = {
   /** Printed scene number. `null` wherever the source numbers nothing — tableau, continuous body,
-   *  a compressed range, an unnumbered `காட்சி`, or an editorial SRU. Never invented. */
+   *  a compressed range, an unnumbered `காட்சி`, or an editorial SRU. Never invented. Within a multi-part
+   *  play it is the number printed in that unit's own part (`partId`) — not a play-wide running number. */
   order: number | null;
+  /** The `Play.parts` id this unit belongs to. Absent for single-part plays. */
+  partId?: string;
   /** Source filename stem — "01".."38", "02-05", "unnumbered-between-21-and-24", "sru-01-…". Never re-derived. */
   slug: string;
   kind: PlayReadingUnitKind;
@@ -312,6 +329,11 @@ export type Play = {
    * `continuous-play` the one entry is NOT a scene, and the old name asserted otherwise.
    */
   readingUnits: PlayReadingUnit[];
+  /**
+   * Separately titled parts with their own numbering scopes, in source order (see `PlayPart`). Absent for
+   * single-part plays; when present, every reading unit carries a `partId` naming one of them.
+   */
+  parts?: PlayPart[];
 };
 
 export type PlayProvenance = {

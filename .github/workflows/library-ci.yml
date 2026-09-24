@@ -249,6 +249,11 @@ jobs:
       # HTML + RSC of all 10 Drama source pages; archival hidden/wave/batch/readiness stay in the JSON only.
       - name: Drama public provenance (built HTML/RSC serialization)
         run: npm run test:drama-public-provenance
+      # Wave 8 P1 hidden foundation — the public surface is exactly the Wave-7 accepted baseline (catalogue, shelves,
+      # collections, discovery, sitemap, build, route registries, byte-identical Murasoli 48-54) while the internal
+      # Wave-8 data holds Murasoli 42-47, Ore Mutham and Sangath Tamil with their source-faithful invariants.
+      - name: Wave 8 P1 hidden foundation (public boundary + internal invariants)
+        run: npm run test:wave8-p1-hidden
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.
@@ -705,6 +710,35 @@ jobs:
         run: |
           node scripts/import-wave7-speeches.mjs "$KDL_SOURCES_DIR/kalaignar-public-speeches-wave7" "$KDL_SOURCES_DIR/kalaignar-assembly-speeches-wave7" --verify
           node scripts/import-kuraloviyam.mjs "$KDL_SOURCES_DIR/kalaignar-literary-commentary-wave7" --verify
+      # Wave 8 P1 — hidden data foundation (Murasoli Vols 42-47, Ore Mutham, Sangath Tamil). Self-contained: the three
+      # frozen source pins are read from the committed internal manifest, each repository is fetched BY SHA into its
+      # own directory (outside the shared sources dir), and the importer regenerates everything in memory and fails
+      # unless every committed artifact is byte-identical. The importer itself also refuses any commit or subtree
+      # other than the frozen Wave-8 P0 pins.
+      - name: Wave 8 P1 — deterministic regeneration from frozen pins (import-wave8 --verify)
+        if: ${{ !cancelled() }}
+        run: |
+          set -euo pipefail
+          W8="$RUNNER_TEMP/wave8-sources"
+          mkdir -p "$W8"
+          pins=$(node -e '
+            const m = require("./data/internal/wave8/wave8-p1-manifest.json");
+            const s = m.sources;
+            console.log(`murasoli ${s.murasoli.repo} ${s.murasoli.commit}`);
+            console.log(`stage ${s.oreMutham.repo} ${s.oreMutham.commit}`);
+            console.log(`lit ${s.sangatamil.repo} ${s.sangatamil.commit}`);
+          ')
+          echo "$pins" | while read -r dir repo pin; do
+            git init -q "$W8/$dir"
+            git -C "$W8/$dir" remote add origin "https://github.com/$repo.git"
+            if ! git -C "$W8/$dir" fetch -q --depth 1 origin "$pin"; then
+              echo "::error::Could not fetch $repo at pinned commit $pin"
+              exit 1
+            fi
+            git -C "$W8/$dir" checkout -q FETCH_HEAD
+            echo "$dir <- $repo @ $(git -C "$W8/$dir" rev-parse HEAD)"
+          done
+          node scripts/import-wave8.mjs "$W8/murasoli" "$W8/stage" "$W8/lit" --verify
       - name: Speeches batch (Wave 6 B3)
         if: ${{ !cancelled() && steps.fetch.outcome == 'success' }}
         env: { KDL_SOURCES_DIR: "${{ runner.temp }}/sources" }
