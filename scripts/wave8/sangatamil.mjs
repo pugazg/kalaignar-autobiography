@@ -161,6 +161,11 @@ export function importSangatamil(src) {
   //               the heading + following list/paragraph blocks, with every anthology named in the register present.
   const sig = (s) => (s.match(/[\u0B80-\u0BFF0-9A-Za-z]/g) ?? []).join("");
   const runText = (bs, a, n) => bs.slice(a, a + n).map((b) => b.lines.join("\n")).join("\n");
+  // Invariant: a formal citation or source-note match may never consume an ORNAMENT block. The tokenizer has already
+  // typed a printed separator (`*`) as `ornament`; the letters-only tiers cannot see it, so without this rule a run
+  // could begin one block early on the separator and give it the provenance role. A candidate run that includes an
+  // ornament is refused outright, so the match starts at the provenance material itself.
+  const hasOrnament = (bs, a, n) => bs.slice(a, a + n).some((b) => b.type === "ornament");
   const matchRun = (bs, from, target, maxRun) => {
     const pieces = target.split(/\.{3,}|…/).map(sig).filter(Boolean);
     const openEllipsis = /^\s*(\.{3,}|…)/.test(target), closeEllipsis = /(\.{3,}|…)\s*$/.test(target);
@@ -172,6 +177,7 @@ export function importSangatamil(src) {
       ...(tLines.length > 1 ? [["lines", (t) => { const rl = t.split("\n").map(sig).filter(Boolean); if (rl[0] !== tLines[0]) return false; let at = 0; for (const x of tLines) { const k = rl.indexOf(x, at); if (k < 0) return false; at = k + 1; } return true; }]] : []),
     ];
     for (const [tier, test] of tiers) for (let a = from; a < bs.length; a++) for (let n = 1; n <= maxRun && a + n <= bs.length; n++) {
+      if (hasOrnament(bs, a, n)) break; // every longer run from `a` contains the same ornament
       if (test(runText(bs, a, n))) return [a, n, tier];
     }
     return null;
@@ -180,6 +186,7 @@ export function importSangatamil(src) {
     const h = bs.findIndex((b, j) => j >= from && b.type === "heading" && sig(b.lines.join("")) === "குறிப்பு");
     if (h < 0 || !sig(target).startsWith("குறிப்பு")) return null;
     let n = 1; while (h + n < bs.length && bs[h + n].type === "paragraph") n++;
+    if (hasOrnament(bs, h, n)) return null;
     const names = SANGAM_ANTHOLOGIES.filter((x) => target.includes(x));
     const text = runText(bs, h, n);
     return n > 1 && names.length && names.every((x) => text.includes(x)) ? [h, n, "note-list"] : null;
@@ -242,6 +249,11 @@ export function importSangatamil(src) {
     if (!typed) unmatchedEn.push(`scan ${scan} (${ids.join(", ")})`);
   }
   if (unmatchedEn.length) die(`English provenance not typed on anchor pages (${unmatchedEn.length}):\n  ${unmatchedEn.join("\n  ")}`);
+
+  // Fail closed: after all provenance typing (Tamil register match + English anchor typing), no ornament is provenance.
+  for (const p of pages) for (const [lang, bs] of [["Tamil", p.tamil.blocks], ["English", p.english.blocks]]) for (const b of bs) {
+    if (b.type === "ornament" && (b.role !== "ornament" || b.provenanceIds)) die(`scan ${p.scan} ${lang}: ornament block typed ${b.role}${b.provenanceIds ? ` / ${b.provenanceIds}` : ""} — an ornament is never provenance`);
+  }
 
   // A block that still reads `right-aligned` is a printed carry-over / aligned fragment, not a citation.
   for (const p of pages) for (const b of p.tamil.blocks) if (b.role === "right-aligned") b.role = "right-aligned-fragment";
