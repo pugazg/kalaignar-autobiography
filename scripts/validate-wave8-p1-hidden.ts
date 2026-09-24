@@ -60,44 +60,67 @@ const P3_ROUTES = P3 ? Object.values(P3.cohorts).flatMap((c) => c.routes) : [];
 const P3_OK = !!P3 && P3.stage === "P3" && P3.discoverable === false && P3.sitemapExposed === false
   && JSON.stringify(P3.counts) === JSON.stringify({ murasoli: 342, oreMutham: 35, sangatamil: 106, total: 483, unique: 483 }) && new Set(P3_ROUTES).size === 483;
 const P3_DELTA = P3 ? 483 : 0;
+// Stage P4 (published): the committed publication record flips the PUBLIC-surface expectations to the published
+// Wave-8 surface — two new works, Drama 11 / Literary Commentary 4, /read 98 / 42, sitemap 5262 (all 483 routes),
+// Murasoli 42–54 / 688 letters — while every archival (section B) and integrity (section C) check is unchanged.
+const P4_FILE = `${W8}/wave8-p4-publication.json`;
+const P4 = fs.existsSync(path.join(process.cwd(), P4_FILE)) ? readJSON<{ stage: string; published: boolean }>(P4_FILE) : null;
+const PUB = !!P4 && P4.stage === "P4" && P4.published === true;
+const P4_EXPECT = {
+  catalogue: 335, drama: 11, literaryCommentary: 4, discovery: 98, visible: 42, sitemap: 5262, playRegistry: 11,
+  murasoliPublicVolumes: [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54], murasoliPublicLetters: 688,
+  // Pins computed from the P3 main (d04093e4): every Murasoli file except the two indexes, and the 48–54 entries
+  // inside both indexes, stay byte-identical when Volumes 42–47 are published.
+  murasoliOtherFilesAggregate: "5d062a772e392a5814ebd489e59c122cbbe5408269e3fcb03660cb3382098b05",
+  legacyLettersVolumes: "f710be536495c40c59ce885c52708cce8884164bf7da699a2b8165af48f3832e",
+  legacyIndexVolumes: "b3413a53909a1fb2dbba6bddc37c455f18957327b62991fdfb48c27aa1ffa3f0",
+};
 eq(manifest.stage, "P1", "manifest records stage P1");
 
 // ══ A. Public invariants ════════════════════════════════════════════════════════════════════════════
 const works = publishedWorks();
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
-eq(works.length, P1_FROZEN.catalogue, "catalogue still 333");
-eq(byShelf["letters"], P1_FROZEN.letters, "Letters still 1");
-eq(byShelf["drama"], P1_FROZEN.drama, "Drama still 10");
-eq(byShelf["literary-commentary"], P1_FROZEN.literaryCommentary, "Literary Commentary still 3");
-eq(LIBRARY_COLLECTIONS.length, P1_FROZEN.collections, "collections still 9");
+eq(works.length, PUB ? P4_EXPECT.catalogue : P1_FROZEN.catalogue, PUB ? "catalogue 333 → 335 (P4: ore-mutham + sangatamil)" : "catalogue still 333");
+eq(byShelf["letters"], P1_FROZEN.letters, "Letters still 1 (Murasoli 42–47 join the one murasoli-letters work)");
+eq(byShelf["drama"], PUB ? P4_EXPECT.drama : P1_FROZEN.drama, PUB ? "Drama 10 → 11 (P4)" : "Drama still 10");
+eq(byShelf["literary-commentary"], PUB ? P4_EXPECT.literaryCommentary : P1_FROZEN.literaryCommentary, PUB ? "Literary Commentary 3 → 4 (P4)" : "Literary Commentary still 3");
+eq(LIBRARY_COLLECTIONS.length, P1_FROZEN.collections, "collections still 9 (no Wave-8 collection)");
 const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, P1_FROZEN.discovery, "/read discovery still 96");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), P1_FROZEN.visible, "/read initially visible still 41");
+eq(shelves.flatMap((s) => s.entries).length, PUB ? P4_EXPECT.discovery : P1_FROZEN.discovery, PUB ? "/read discovery 96 → 98 (P4)" : "/read discovery still 96");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), PUB ? P4_EXPECT.visible : P1_FROZEN.visible, PUB ? "/read initially visible 41 → 42 (P4: Literary Commentary under the cap)" : "/read initially visible still 41");
 const libIds = new Set<string>((LIBRARY_WORKS as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
-ok(!libIds.has("ore-mutham"), "ore-mutham is NOT a LibraryWork");
-ok(!libIds.has("sangatamil"), "sangatamil is NOT a LibraryWork");
+ok(PUB ? LIBRARY_WORKS.filter((w) => w.id === "ore-mutham").length === 1 : !libIds.has("ore-mutham"), PUB ? "ore-mutham is exactly one LibraryWork (P4)" : "ore-mutham is NOT a LibraryWork");
+ok(PUB ? LIBRARY_WORKS.filter((w) => w.id === "sangatamil").length === 1 : !libIds.has("sangatamil"), PUB ? "sangatamil is exactly one LibraryWork (P4)" : "sangatamil is NOT a LibraryWork");
 eq(LIBRARY_WORKS.filter((w) => w.id === "murasoli-letters").length, 1, "murasoli-letters remains exactly one LibraryWork");
-eq(ALL_PLAY_SLUGS.length, 10, "/plays route registry still 10 plays");
-ok(!ALL_PLAY_SLUGS.includes("ore-mutham") && (P3 ? P3_OK && JSON.stringify(WAVE8_DRAMA_SLUGS) === '["ore-mutham"]' : !(WAVE8_DRAMA_SLUGS as readonly string[]).length), P3 ? "ore-mutham is in no public /plays registry — only the hidden Wave-8 direct-route registry (P3)" : "ore-mutham is in no /plays route registry");
+eq(ALL_PLAY_SLUGS.length, PUB ? P4_EXPECT.playRegistry : 10, PUB ? "/plays route registry 10 → 11 (P4)" : "/plays route registry still 10 plays");
+ok(PUB ? ALL_PLAY_SLUGS.filter((x) => x === "ore-mutham").length === 1 && P3_OK : !ALL_PLAY_SLUGS.includes("ore-mutham") && (P3 ? P3_OK && JSON.stringify(WAVE8_DRAMA_SLUGS) === '["ore-mutham"]' : !(WAVE8_DRAMA_SLUGS as readonly string[]).length), PUB ? "ore-mutham appears exactly once in the public /plays registry (P4)" : P3 ? "ore-mutham is in no public /plays registry — only the hidden Wave-8 direct-route registry (P3)" : "ore-mutham is in no /plays route registry");
 
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
-eq(sm.length, P1_FROZEN.sitemap, "sitemap still 4779");
+eq(sm.length, PUB ? P4_EXPECT.sitemap : P1_FROZEN.sitemap, PUB ? "sitemap 4779 → 5262 (P4)" : "sitemap still 4779");
 eq(sm.length - new Set(sm).size, P1_FROZEN.sitemapDup, "sitemap 0 duplicates");
-ok(!sm.some((u) => /\/plays\/ore-mutham|sangatamil|\/murasoli\/m4[2-7]-/.test(u)), "no Wave-8 URL in the sitemap");
+const w8InSitemap = sm.map((u) => new URL(u).pathname).filter((u) => /^\/plays\/ore-mutham|^\/sangatamil|^\/murasoli\/m4[2-7]-/.test(u)).sort();
+ok(PUB ? JSON.stringify(w8InSitemap) === JSON.stringify([...P3_ROUTES].sort()) : w8InSitemap.length === 0, PUB ? "sitemap carries exactly the 483 P3 Wave-8 routes (P4)" : "no Wave-8 URL in the sitemap");
 
-// Live Murasoli: still Volumes 48–54, byte-identical.
+// Live Murasoli: Volumes 48–54 byte-identical; at P4, Volumes 42–47 are published ahead of them.
 const mIndex = readJSON<{ volumes: { volume: number }[] }>("public/data/murasoli/index.json");
-eq(mIndex.volumes.map((v) => v.volume), P1_FROZEN.murasoliPublicVolumes, "public Murasoli index still Volumes 48–54");
+eq(mIndex.volumes.map((v) => v.volume), PUB ? P4_EXPECT.murasoliPublicVolumes : P1_FROZEN.murasoliPublicVolumes, PUB ? "public Murasoli index = Volumes 42–54 (P4)" : "public Murasoli index still Volumes 48–54");
 const mLetters = readJSON<{ volumes: { volume: number; letters: unknown[] }[] }>("public/data/murasoli/letters-index.json");
-eq(mLetters.volumes.map((v) => v.volume), P1_FROZEN.murasoliPublicVolumes, "public Murasoli letters-index still Volumes 48–54");
-eq(mLetters.volumes.reduce((n, v) => n + v.letters.length, 0), P1_FROZEN.murasoliPublicLetters, "public Murasoli still 346 letters");
+eq(mLetters.volumes.map((v) => v.volume), PUB ? P4_EXPECT.murasoliPublicVolumes : P1_FROZEN.murasoliPublicVolumes, PUB ? "public Murasoli letters-index = Volumes 42–54 (P4)" : "public Murasoli letters-index still Volumes 48–54");
+eq(mLetters.volumes.reduce((n, v) => n + v.letters.length, 0), PUB ? P4_EXPECT.murasoliPublicLetters : P1_FROZEN.murasoliPublicLetters, PUB ? "public Murasoli 346 → 688 letters (P4)" : "public Murasoli still 346 letters");
 const walk = (d: string): string[] => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
 const mFiles = walk("public/data/murasoli").sort();
 eq(mFiles.length, P1_FROZEN.murasoliPublic.files, "public Murasoli file count unchanged (1000)");
-eq(sha(mFiles.map((f) => f + "\u0000" + sha(fs.readFileSync(f))).join("\n")), P1_FROZEN.murasoliPublic.aggregate, "public Murasoli payload (all 1000 files, Vols 48–54) byte-identical");
-eq(sha(fs.readFileSync("public/data/murasoli/index.json")), P1_FROZEN.murasoliPublic.indexJson, "public/data/murasoli/index.json byte-identical");
-eq(sha(fs.readFileSync("public/data/murasoli/letters-index.json")), P1_FROZEN.murasoliPublic.lettersIndexJson, "public/data/murasoli/letters-index.json byte-identical");
+const INDEXES = ["public/data/murasoli/index.json", "public/data/murasoli/letters-index.json"];
+if (PUB) {
+  eq(sha(mFiles.filter((f) => !INDEXES.includes(f.replace(/\\/g, "/"))).map((f) => f + "\u0000" + sha(fs.readFileSync(f))).join("\n")), P4_EXPECT.murasoliOtherFilesAggregate, "public Murasoli payload: every file except the two indexes (998) byte-identical (P4)");
+  eq(sha(JSON.stringify(readJSON<{ volumes: { volume: number }[] }>(INDEXES[0]).volumes.filter((v) => v.volume >= 48))), P4_EXPECT.legacyIndexVolumes, "index.json: the Volume 48–54 entries byte-identical (P4)");
+  eq(sha(JSON.stringify(mLetters.volumes.filter((v) => v.volume >= 48))), P4_EXPECT.legacyLettersVolumes, "letters-index.json: the Volume 48–54 entries byte-identical (P4)");
+} else {
+  eq(sha(mFiles.map((f) => f + "\u0000" + sha(fs.readFileSync(f))).join("\n")), P1_FROZEN.murasoliPublic.aggregate, "public Murasoli payload (all 1000 files, Vols 48–54) byte-identical");
+  eq(sha(fs.readFileSync("public/data/murasoli/index.json")), P1_FROZEN.murasoliPublic.indexJson, "public/data/murasoli/index.json byte-identical");
+  eq(sha(fs.readFileSync("public/data/murasoli/letters-index.json")), P1_FROZEN.murasoliPublic.lettersIndexJson, "public/data/murasoli/letters-index.json byte-identical");
+}
 
 // No Wave-8 payload anywhere public; no Wave-8 route registry membership.
 ok(!fs.existsSync("public/data/plays/ore-mutham"), "no public ore-mutham payload");
@@ -211,8 +234,9 @@ const decisions = readJSON<any>(`${W8}/p1-architecture-decisions.json`).decision
 eq(decisions.map((d: any) => d.work), ["murasoli-letters", "ore-mutham", "sangatamil"], "architecture decisions recorded for all three segments");
 ok(/commentary-unit family/.test(decisions[2].decision) && /REJECTED/.test(decisions[2].comparison["kural-commentary"]), "sangatamil: commentary-unit family, kural-commentary rejected");
 ok(/104 source-order sections/.test(decisions[2].evidence.hierarchy) && /115 formal provenance units \+ 4 source-note-only records \(119 leaves\)/.test(decisions[2].evidence.hierarchy), "decision evidence counts agree with the generated data");
-// Additive play model: no published play declares parts or partIds.
-for (const slug of ALL_PLAY_SLUGS) {
+// Additive play model: no published play declares parts or partIds — except the one two-part work, ஒரே முத்தம்
+// (Wave-8 registry; published at P4, served from the server-side model, never from a public payload).
+for (const slug of ALL_PLAY_SLUGS.filter((x) => !(WAVE8_DRAMA_SLUGS as readonly string[]).includes(x))) {
   const p = readJSON<{ parts?: unknown; readingUnits: { partId?: string }[] }>(`public/data/plays/${slug}/play.json`);
   ok(p.parts === undefined && p.readingUnits.every((u) => u.partId === undefined), `${slug}: single-part play unaffected by the additive PlayPart model`);
 }
@@ -223,5 +247,5 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\nwave8-p1-hidden — ${checks} checks, 0 failed`);
-console.log(P3 ? "  P3: 483 direct Wave-8 routes built (4788/4783 + 483), still undiscovered — catalogue / discovery / sitemap / Murasoli 48–54 unchanged" : "");
-console.log("  public boundary unchanged (333 · Letters 1 · Drama 10 · Lit Comm 3 · collections 9 · /read 96/41 · sitemap 4779/0 · build 4788/4783 · Murasoli 48–54 byte-identical) · Murasoli 42–47 342/342 · ஒரே முத்தம் 30+3 · சங்கத் தமிழ் 497 (scan 8 source-limited) · 119 provenance records typed");
+console.log(PUB ? "  P4: published — catalogue 335 · Drama 11 · Literary Commentary 4 · /read 98/42 · sitemap 5262/0 (all 483 Wave-8 routes) · build 5271/5266 · Murasoli 42–54 / 688 (48–54 byte-identical)" : P3 ? "  P3: 483 direct Wave-8 routes built (4788/4783 + 483), still undiscovered — catalogue / discovery / sitemap / Murasoli 48–54 unchanged" : "");
+if (!PUB) console.log("  public boundary unchanged (333 · Letters 1 · Drama 10 · Lit Comm 3 · collections 9 · /read 96/41 · sitemap 4779/0 · build 4788/4783 · Murasoli 48–54 byte-identical) · Murasoli 42–47 342/342 · ஒரே முத்தம் 30+3 · சங்கத் தமிழ் 497 (scan 8 source-limited) · 119 provenance records typed");

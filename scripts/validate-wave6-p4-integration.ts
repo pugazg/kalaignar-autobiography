@@ -96,7 +96,7 @@ const W7B_ROUTES = new Set<string>([...w7bp3.works.flatMap((w) => w.routes), "/c
 const W7K_ROUTES = new Set<string>(WAVE7_B5_B6_K_ROUTES);
 // Recover the frozen Wave-6-P4 census from the live one: remove Batch-7 + Wave-7-B2-B4 fiction (passed as
 // minusFiction), Wave-7 B1 cinema, and Wave-7-B2-B4 drama & essays.
-const toWave6Census = (m: Record<string, number>, minusFiction: number, minusSpeeches: number) => ({ ...m, fiction: m.fiction - minusFiction, "cinema-writing": (m["cinema-writing"] ?? 0) - W7.cinema, drama: (m.drama ?? 0) - W7B.drama, "essays-articles": (m["essays-articles"] ?? 0) - W7B.essays, speeches: (m.speeches ?? 0) - minusSpeeches, "literary-commentary": (m["literary-commentary"] ?? 0) - W7K.literaryCommentary });
+const toWave6Census = (m: Record<string, number>, minusFiction: number, minusSpeeches: number) => ({ ...m, fiction: m.fiction - minusFiction, "cinema-writing": (m["cinema-writing"] ?? 0) - W7.cinema, drama: (m.drama ?? 0) - W7B.drama - W8.drama, "essays-articles": (m["essays-articles"] ?? 0) - W7B.essays, speeches: (m.speeches ?? 0) - minusSpeeches, "literary-commentary": (m["literary-commentary"] ?? 0) - W7K.literaryCommentary - W8.literaryCommentary });
 
 // The 22 Wave-6 works P4 publishes (cinema work has a dedicated loader, not a slug registry).
 const WAVE6_CINEMA_SLUGS = ["ammaiyappan"] as const;
@@ -112,7 +112,7 @@ const WAVE6_WORK_SLUGS = [
 
 // ── 1. CATALOGUE — 100 works, exact 9-shelf census, the 22 present once, no leakage ──
 const works = publishedWorks();
-eq(works.length, 100 + B7.works + W7.works + W7B.works + W7K.works, "catalogue is exactly 333 published works (100 Batches 1–6 + 116 Batch-7 + 3 Wave-7 B1 + 13 Wave-7 B2-B4 + 101 Wave-7 B5/B6/K)");
+eq(works.length, 100 + B7.works + W7.works + W7B.works + W7K.works + W8.works, "catalogue is exactly 333 published works (100 Batches 1–6 + 116 Batch-7 + 3 Wave-7 B1 + 13 Wave-7 B2-B4 + 101 Wave-7 B5/B6/K)");
 eq(WAVE6_WORK_SLUGS.length, 22, "exactly 22 Wave-6 work slugs are enumerated");
 const catBy: Record<string, number> = {};
 for (const w of works) catBy[w.shelf] = (catBy[w.shelf] ?? 0) + 1;
@@ -121,13 +121,13 @@ eqMap(catBy, {
   letters: 1,
   fiction: 41 + B7.works + W7B.fictionCat, // 162 — Batch 7 +116 short stories, Wave-7 B2-B4 +5 novels
   poetry: 14,
-  drama: 8 + W7B.drama, // 10 — Wave-7 B2-B4 +2 dramas
+  drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1 added 3 cinema works
   speeches: 17 + W7K.speeches, // 117 — Wave-7 B5/B6 +100 speeches
   "essays-articles": 9 + W7B.essays, // 15 — Wave-7 B2-B4 +6 essays
-  "literary-commentary": 2 + W7K.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
+  "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
 }, "catalogue per-shelf census matches the post-Wave-7-B5/B6/K target");
-eq(Object.values(catBy).reduce((a, b) => a + b, 0), 100 + B7.works + W7.works + W7B.works + W7K.works, "shelf census sums to 333");
+eq(Object.values(catBy).reduce((a, b) => a + b, 0), 100 + B7.works + W7.works + W7B.works + W7K.works + W8.works, "shelf census sums to 333");
 eq(Object.keys(catBy).length, 9, "exactly 9 non-empty shelves");
 const slugCount = (slug: string) => works.filter((w) => w.slug === slug).length;
 for (const s of WAVE6_WORK_SLUGS) eq(slugCount(s), 1, `Wave-6 work ${s} appears exactly once in the catalogue`);
@@ -160,25 +160,25 @@ for (const s of shelves) {
   visible += Math.min(n, CAP);
   if (n > CAP) overCap.push(s.shelf.id);
 }
-eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery + W7K.discovery, "/read discovery is exactly 96 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 10 Wave-7 B2-B4 + 6 Wave-7 B5/B6/K)");
+eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery + W7K.discovery + W8.discovery, "/read discovery is exactly 96 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 10 Wave-7 B2-B4 + 6 Wave-7 B5/B6/K)");
 eqMap(discBy, {
   "life-writing": 1,
   letters: 1,
   fiction: 5 + B7.fictionDiscovery + W7B.fictionDisc, // 20 — Wave-7 B2-B4 +2 net (arumbu-1978 card + 2 standalone − பெரிய standalone collapsed)
   poetry: 14,
-  drama: 8 + W7B.drama, // 10 — Wave-7 B2-B4 +2 dramas
+  drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1's 3 cinema works are standalone discovery entries
   speeches: 17 + W7K.speechDiscovery, // 22 — Wave-7: 2 முத்துக் குளியல் collection cards + 3 assembly speeches
   "essays-articles": 9 + W7B.essays, // 15 — Wave-7 B2-B4 +6 essays
-  "literary-commentary": 2 + W7K.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
+  "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
 }, "/read discovery per-shelf census matches the post-Wave-7-B5/B6/K target");
-eq(visible, 39 + B7.visible + W7B.visible + W7K.visible, "41 discovery entries are initially visible under the disclosure cap (Wave-7 B2-B4 shelves already over-cap; Wave-7 +1 Literary Commentary under the cap)");
+eq(visible, 39 + B7.visible + W7B.visible + W7K.visible + W8.visible, "41 discovery entries are initially visible under the disclosure cap (Wave-7 B2-B4 shelves already over-cap; Wave-7 +1 Literary Commentary under the cap)");
 eq(uniqSorted(overCap), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "exactly the six expected shelves are over the disclosure cap (unchanged by Wave-7 B2-B4)");
 eq(discBy.fiction, 5 + B7.fictionDiscovery + W7B.fictionDisc, "fiction discovery is 20 (7 collection cards + 13 standalone works)");
 
 // ── 4. SITEMAP — 3672 URLs, 0 duplicates, Wave-6 set == p3 cumulativeRoutes EXACTLY ──
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, 3672 + B7.sitemap + W7.sitemap + W7B.sitemap + W7K.sitemap, "sitemap has exactly 4779 URLs (3672 Batches 1–6 + 237 Batch-7 + 133 Wave-7 B1 + 225 Wave-7 B2-B4 + 512 Wave-7 B5/B6/K)");
+eq(urls.length, 3672 + B7.sitemap + W7.sitemap + W7B.sitemap + W7K.sitemap + W8.sitemap, "sitemap has exactly 4779 URLs (3672 Batches 1–6 + 237 Batch-7 + 133 Wave-7 B1 + 225 Wave-7 B2-B4 + 512 Wave-7 B5/B6/K)");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicate URLs");
 const urlSet = new Set(urls);
 const wave6InSitemap = manifest.cumulativeRoutes.filter((r) => urlSet.has(`${BASE}${r}`));
@@ -245,14 +245,14 @@ const rec = record as {
 // The record is the FROZEN Batches-1–6 snapshot, so it is cross-checked against (live − Batch-7).
 eq(rec.workCount, 22, "record workCount == 22");
 eq(rec.collectionsAdded, 0, "record collectionsAdded == 0");
-eq(rec.catalogue.after, works.length - B7.works - W7.works - W7B.works - W7K.works, "record catalogue.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
+eq(rec.catalogue.after, works.length - B7.works - W7.works - W7B.works - W7K.works - W8.works, "record catalogue.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
 eqMap(rec.catalogue.shelfCensusAfter, toWave6Census(catBy, B7.works + W7B.fictionCat, W7K.speeches), "record catalogue shelf census == live − later-wave contributions");
 eq(rec.collections.after, LIBRARY_COLLECTIONS.length - B7.collections - W7B.collections - W7K.collections, "record collections.after == live − Batch-7 − arumbu-1978 − 2 முத்துக் குளியல் (Wave-7 B1 added no collection)");
-eq(rec.discovery.after, discTotal - B7.discovery - W7.discovery - W7B.discovery - W7K.discovery, "record discovery.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
-eq(rec.discovery.initiallyVisible, visible - B7.visible - W7K.visible, "record discovery.initiallyVisible == live − Batch-7 (Wave-7 B1 added 0 visible: cinema over-cap)");
+eq(rec.discovery.after, discTotal - B7.discovery - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery, "record discovery.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
+eq(rec.discovery.initiallyVisible, visible - B7.visible - W7K.visible - W8.visible, "record discovery.initiallyVisible == live − Batch-7 (Wave-7 B1 added 0 visible: cinema over-cap)");
 eqMap(rec.discovery.perShelfAfter, toWave6Census(discBy, B7.fictionDiscovery + W7B.fictionDisc, W7K.speechDiscovery), "record discovery per-shelf census == live − later-wave contributions");
 eq(uniqSorted(rec.discovery.overCapShelves), uniqSorted(overCap.filter((s) => s !== "fiction")), "record over-cap shelves == live − Batch-7 (fiction); Wave-7 B1 added no over-cap shelf");
-eq(rec.sitemap.after, urls.length - B7.sitemap - W7.sitemap - W7B.sitemap - W7K.sitemap, "record sitemap.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
+eq(rec.sitemap.after, urls.length - B7.sitemap - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap, "record sitemap.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
 eq(rec.sitemap.duplicates, urls.length - new Set(urls).size, "record sitemap duplicates == live");
 eq(rec.build.prerenderRoutes, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount, "record build prerenderRoutes == baseline + Wave-6");
 eq(rec.build.htmlFiles, baseline.htmlFileCount + manifest.cumulativeRouteCount, "record build htmlFiles == baseline + Wave-6");

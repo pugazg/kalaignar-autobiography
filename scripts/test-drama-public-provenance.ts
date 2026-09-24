@@ -32,6 +32,9 @@ import {
 } from "../lib/play-public-provenance";
 import { PLAY_SLUGS, type Play, type PlayProvenance } from "../data/plays";
 import { LIBRARY_WORKS } from "../data/library";
+import { isWave8Drama } from "../lib/drama-wave8-routes";
+import { toOreMuthamPlay, toOreMuthamProvenance } from "../lib/wave8-ore-mutham-adapter";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -40,8 +43,12 @@ const readJSON = <T,>(p: string): T => JSON.parse(fs.readFileSync(path.join(root
 const ta = (el: React.ReactElement) => renderToStaticMarkup(createElement(LangProvider, null, el));
 const en = (el: React.ReactElement) => renderToStaticMarkup(createElement(LangProvider, { initialLang: "en", children: el }));
 const PLAYS = [...PLAY_SLUGS] as string[];
+// Wave 8 (ore-mutham) has no public/data payload: its archival record and play are built on the server from the
+// hidden P1 data (the same builders its route uses), so it is checked by exactly the same boundary tests.
+const provOf = (slug: string) => (isWave8Drama(slug) ? (toOreMuthamProvenance() as PlayProvenance & Record<string, unknown>) : readJSON<PlayProvenance & Record<string, unknown>>(`public/data/plays/${slug}/provenance.json`));
+const playOf = (slug: string) => (isWave8Drama(slug) ? toOreMuthamPlay() : readJSON<Play>(`public/data/plays/${slug}/play.json`));
 const W7B2 = ["iratha-kanneer", "nachuk-koppai"];
-ok(PLAYS.length === 10 && W7B2.every((s) => PLAYS.includes(s)), `10 Drama works on the shared /source route (found ${PLAYS.length})`);
+ok(PLAYS.length === 10 + W8.drama && W7B2.every((s) => PLAYS.includes(s)), `${10 + W8.drama} Drama works on the shared /source route (found ${PLAYS.length})`);
 
 // Internal-only state (the audit's finding list) — never public.
 const INTERNAL = ["hidden", "wave", "batch", "readiness", "discoverable", "sitemapExposed", "publicRoute", "sourceTree", "shelf"];
@@ -76,8 +83,8 @@ function violations(v: unknown, at = "", out: string[] = []): string[] {
 
 // ── 1–3. Per play: archival retained, projection clean, render identical ─────────────────────────────────
 for (const slug of PLAYS) {
-  const raw = readJSON<PlayProvenance & Record<string, unknown>>(`public/data/plays/${slug}/provenance.json`);
-  const play = readJSON<Play>(`public/data/plays/${slug}/play.json`);
+  const raw = provOf(slug);
+  const play = playOf(slug);
   const pub = toPublicPlayProvenance(raw);
   const head = toPublicPlayHead(play);
   const json = JSON.stringify(pub) + JSON.stringify(head);
@@ -118,8 +125,8 @@ for (const slug of PLAYS) {
   const el = PlaySourcePage({ params: { slug } });
   const props = isValidElement(el) ? (el.props as { play: unknown; prov: unknown }) : { play: null, prov: null };
   ok(isValidElement(el) && el.type === PlaySource, `${slug}: /source route renders PlaySource`);
-  ok(JSON.stringify(props.prov) === JSON.stringify(toPublicPlayProvenance(readJSON(`public/data/plays/${slug}/provenance.json`))), `${slug}: the route passes exactly toPublicPlayProvenance(raw)`);
-  ok(JSON.stringify(props.play) === JSON.stringify(toPublicPlayHead(readJSON(`public/data/plays/${slug}/play.json`))), `${slug}: the route passes exactly toPublicPlayHead(play) — never the reading payload`);
+  ok(JSON.stringify(props.prov) === JSON.stringify(toPublicPlayProvenance(provOf(slug))), `${slug}: the route passes exactly toPublicPlayProvenance(raw)`);
+  ok(JSON.stringify(props.play) === JSON.stringify(toPublicPlayHead(playOf(slug))), `${slug}: the route passes exactly toPublicPlayHead(play) — never the reading payload`);
 }
 
 // ── 5. nachuk-koppai qualification — still published, still a permanent source condition ────────────────
@@ -146,7 +153,7 @@ if (!fs.existsSync(APP)) {
 } else {
   const LEAK = KEY_RE([...INTERNAL, ...NOT_RENDERED]);
   for (const slug of PLAYS) {
-    const raw = readJSON<PlayProvenance>(`public/data/plays/${slug}/provenance.json`);
+    const raw = provOf(slug);
     for (const ext of ["html", "rsc"]) {
       const f = path.join(APP, slug, `source.${ext}`);
       ok(fs.existsSync(f), `${slug}: built /source.${ext} exists`);
@@ -166,4 +173,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\ndrama-public-provenance — ${checks} checks, 0 failed`);
-console.log("  10 Drama /source pages: archival P1 records retained · projection allowlisted at every level (sentinels dropped) · renders identically · route passes exactly the projections · nachuk scan-22 qualification published · built HTML/RSC free of internal state and reading text");
+console.log(`  ${PLAYS.length} Drama /source pages: archival P1 records retained · projection allowlisted at every level (sentinels dropped) · renders identically · route passes exactly the projections · nachuk scan-22 qualification published · built HTML/RSC free of internal state and reading text`);

@@ -74,7 +74,7 @@ if (phase === "pre-P4") {
   eq(inSitemap, 0, "no B2-B4 landing exposed in the sitemap");
 } else {
   // P4: publication flip — exact published surface owned by the P4 integration validator.
-  eq(works.length, P1_FROZEN.catalogue + 13 + W7K.works, "catalogue grew by exactly the 13 works (232) — plus the later Wave-7 B5/B6/K 101 once published");
+  eq(works.length, P1_FROZEN.catalogue + 13 + W7K.works + W8.works, "catalogue grew by exactly the 13 works (232) — plus the later Wave-7 B5/B6/K 101 once published");
   for (const s of slugs) ok(libIds.has(s), `${s}: now a published LibraryWork`);
   eq(inSitemap, 13, "all 13 B2-B4 landings now in the sitemap");
   ok(sm.length >= P1_FROZEN.sitemap + P3_ROUTES, "sitemap grew by at least the 224 direct routes");

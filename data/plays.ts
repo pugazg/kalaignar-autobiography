@@ -510,5 +510,9 @@ export const PLAY_SLUGS = [
   // their landings in the sitemap. nachuk-koppai carries a disclosed terminal source hold.
   "iratha-kanneer",
   "nachuk-koppai",
+  // Wave 8 P4 — ஒரே முத்தம் promoted from the direct-only Wave-8 registry (lib/drama-wave8-routes.ts). It has NO
+  // public/data/plays payload: its reader, /source and sitemap scene list come from the server-side P2 model (the
+  // route union dedups it against WAVE8_DRAMA_SLUGS, so no route is added).
+  "ore-mutham",
 ] as const;
 export type PlaySlug = (typeof PLAY_SLUGS)[number];

@@ -82,7 +82,16 @@ const W8_MURASOLI = /^m4[2-7]-/;
 const mParams = (MurasoliRoute.generateStaticParams() as { id: string }[]).map((p) => p.id);
 const legacyIdx = readJSON<{ volumes: { volume: number; pages: { id: string }[] }[] }>("public/data/murasoli/index.json");
 const legacyLetters = readJSON<{ volumes: { volume: number; letters: { id: string }[] }[] }>("public/data/murasoli/letters-index.json");
-const legacyParams = [...legacyIdx.volumes.flatMap((v) => v.pages.map((p) => p.id)), ...legacyLetters.volumes.flatMap((v) => v.letters.map((l) => l.id))];
+// Stage: P4 (the committed publication record) publishes the cohort — the boundary checks below flip accordingly;
+// every route-identity / resolution / 404 / projection / build check is stage-independent.
+const P4_REC = fs.existsSync(path.join(root, "data/internal/wave8/wave8-p4-publication.json")) ? readJSON<{ stage: string; published: boolean }>("data/internal/wave8/wave8-p4-publication.json") : null;
+const PUB = !!P4_REC && P4_REC.stage === "P4" && P4_REC.published === true;
+const W8_VOLS = [42, 43, 44, 45, 46, 47];
+// The existing (pre-Wave-8) Murasoli cohort — Vols 48–54 — whatever stage the public index is at.
+const legacyVolsL = legacyLetters.volumes.filter((v) => !W8_VOLS.includes(v.volume));
+const legacyParams = [...legacyIdx.volumes.flatMap((v) => v.pages.map((p) => p.id)), ...legacyVolsL.flatMap((v) => v.letters.map((l) => l.id))];
+const lastW8 = EXPECT.murasoli[EXPECT.murasoli.length - 1].split("/")[2];
+const firstLegacy = legacyVolsL[0].letters[0].id;
 ok(same(mParams.filter((x) => W8_MURASOLI.test(x)).map((x) => `/murasoli/${x}`), EXPECT.murasoli), "Murasoli generateStaticParams: exactly the 342 Wave-8 route ids, in reading order");
 ok(same(mParams.filter((x) => !W8_MURASOLI.test(x)), legacyParams), `Murasoli generateStaticParams: existing Vols 48–54 params unchanged (${legacyParams.length})`);
 ok(new Set(mParams).size === mParams.length, "Murasoli params unique");
@@ -106,7 +115,10 @@ for (const r of EXPECT.murasoli) {
   resolved++;
   ok(out.html.includes('data-testid="wave8-letter-body"') && !RAW_FIELDS.test(propsOf(out.element)), `${r}: must render the injected Wave-8 letter from its public projection only`);
   const navLinks = Array.from(out.html.matchAll(/href="\/murasoli\/(m\d\d-[^"]+)"/g)).map((m) => m[1]);
-  ok(navLinks.every((x) => W8_MURASOLI.test(x)), `${r}: navigation leaves Volumes 42–47 (${navLinks.filter((x) => !W8_MURASOLI.test(x))})`);
+  // P3: navigation stays inside Volumes 42–47. P4: one continuous sequence — the only step out of 42–47 is the last
+  // Vol-47 letter's "next" into the first Vol-48 letter.
+  const outside = navLinks.filter((x) => !W8_MURASOLI.test(x));
+  ok(PUB && r.endsWith(`/${lastW8}`) ? JSON.stringify(outside) === JSON.stringify([firstLegacy]) : outside.length === 0, `${r}: navigation leaves Volumes 42–47 (${outside})`);
 }
 const twin = EXPECT.murasoli.filter((r) => /^\/murasoli\/m46-l3637/.test(r));
 ok(twin.length === 2 && twin[0] !== twin[1] && twin.every((r) => visible(resolve(MurasoliRoute.default as never, { id: r.split("/")[2] }).html ?? "").includes("3637")), "both Vol-46 printed-3637 letters are distinct routes and both display 3637");
@@ -117,12 +129,12 @@ const r3681 = resolve(MurasoliRoute.default as never, { id: "m47-l3681" });
 ok(!!r3681.html && r3681.html.includes('data-testid="source-condition"') && r3681.html.includes('data-missing-printed-pages="252"') && !r3681.html.includes('data-printed-page="252"') && r3681.html.includes('data-testid="source-ends"'), "m47-l3681: permanent source-incomplete notice; printed page 252 absent; nothing continued");
 for (const fake of ["m42-l3377", "m46-l3636", "m47-l3706", "m41-l3300", "m42-l3364-x"]) ok(resolve(MurasoliRoute.default as never, { id: fake }).notFound, `fabricated /murasoli/${fake} must 404`);
 // Public Vol 48: its first letter never links back into hidden Vol 47; all 346 legacy letters render without Wave-8 links.
-const firstPublic = legacyLetters.volumes[0].letters[0].id;
-const legacyFirst = resolve(MurasoliRoute.default as never, { id: firstPublic });
-ok(!!legacyFirst.html && !/href="\/murasoli\/m4[2-7]-/.test(legacyFirst.html), `public first letter ${firstPublic}: no link into hidden Volumes 42–47`);
+const legacyFirst = resolve(MurasoliRoute.default as never, { id: firstLegacy });
+const firstLinks = Array.from((legacyFirst.html ?? "").matchAll(/href="\/murasoli\/(m4[2-7]-[^"]+)"/g)).map((m) => m[1]);
+ok(!!legacyFirst.html && (PUB ? JSON.stringify(firstLinks) === JSON.stringify([lastW8]) : firstLinks.length === 0), PUB ? `first Vol-48 letter ${firstLegacy}: "previous" is the last Vol-47 letter ${lastW8} (P4: one continuous sequence)` : `public first letter ${firstLegacy}: no link into hidden Volumes 42–47`);
 let legacyLeak = 0;
-for (const v of legacyLetters.volumes) for (const l of v.letters) { const h = resolve(MurasoliRoute.default as never, { id: l.id }).html ?? ""; if (/m4[2-7]-l\d/.test(h) || h.includes('data-testid="wave8-letter-body"')) legacyLeak++; }
-ok(legacyLeak === 0, `public Vols 48–54 letters reference hidden Wave-8 letters (${legacyLeak})`);
+for (const v of legacyVolsL) for (const l of v.letters) { const h = resolve(MurasoliRoute.default as never, { id: l.id }).html ?? ""; if ((/m4[2-7]-l\d/.test(h) && !(PUB && l.id === firstLegacy)) || h.includes('data-testid="wave8-letter-body"')) legacyLeak++; }
+ok(legacyLeak === 0, `Vols 48–54 letters reference Wave-8 letters beyond the published boundary step (${legacyLeak})`);
 
 // ஒரே முத்தம்
 const oreLanding = resolve(PlayLandingRoute.default as never, { slug: "ore-mutham" });
@@ -158,10 +170,16 @@ for (const fake of ["105-extra", "001", "section-1", "000-front-matter-2", "104-
 
 // ══ 5. Publication boundary (P3: direct, undiscovered) ═════════════════════════════════════════════════════════
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
-ok(!sm.some((u) => /\/plays\/ore-mutham|\/sangatamil|\/murasoli\/m4[2-7]-/.test(u)), `sitemap carries Wave-8 URLs (${sm.filter((u) => /ore-mutham|sangatamil|m4[2-7]-/.test(u)).length})`);
-ok(sm.length === 4779 && new Set(sm).size === 4779, `sitemap 4779 / 0 duplicates (got ${sm.length})`);
-ok(!(PLAY_SLUGS as readonly string[]).includes("ore-mutham") && !(LIBRARY_WORKS as { id: string; slug: string }[]).some((w) => w.id === "ore-mutham" || w.id === "sangatamil" || w.slug === "sangatamil"), "no catalogue / PLAY_SLUGS membership at P3");
-ok(same(legacyIdx.volumes.map((v) => String(v.volume)), ["48", "49", "50", "51", "52", "53", "54"]) && same(legacyLetters.volumes.map((v) => String(v.volume)), ["48", "49", "50", "51", "52", "53", "54"]) && legacyLetters.volumes.reduce((n, v) => n + v.letters.length, 0) === 346, "Murasoli public indexes (landing, search, progress, cards) still Volumes 48–54 / 346 letters");
+const smW8 = sm.map((u) => new URL(u).pathname).filter((u) => /^\/plays\/ore-mutham|^\/sangatamil|^\/murasoli\/m4[2-7]-/.test(u)).sort();
+ok(PUB ? same(smW8, sorted(EXPECT_ALL)) : smW8.length === 0, PUB ? `sitemap carries exactly the 483 Wave-8 routes (P4; found ${smW8.length})` : `sitemap carries Wave-8 URLs (${smW8.length})`);
+const SM_TOTAL = PUB ? 5262 : 4779;
+ok(sm.length === SM_TOTAL && new Set(sm).size === SM_TOTAL, `sitemap ${SM_TOTAL} / 0 duplicates (got ${sm.length})`);
+const lw = LIBRARY_WORKS as { id: string; slug: string }[];
+ok(PUB ? (PLAY_SLUGS as readonly string[]).filter((x) => x === "ore-mutham").length === 1 && lw.filter((w) => w.id === "ore-mutham").length === 1 && lw.filter((w) => w.id === "sangatamil").length === 1
+  : !(PLAY_SLUGS as readonly string[]).includes("ore-mutham") && !lw.some((w) => w.id === "ore-mutham" || w.id === "sangatamil" || w.slug === "sangatamil"),
+  PUB ? "P4: ore-mutham once in PLAY_SLUGS; ore-mutham and sangatamil each exactly one LibraryWork" : "no catalogue / PLAY_SLUGS membership at P3");
+const PUB_VOLS = PUB ? ["42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54"] : ["48", "49", "50", "51", "52", "53", "54"];
+ok(same(legacyIdx.volumes.map((v) => String(v.volume)), PUB_VOLS) && same(legacyLetters.volumes.map((v) => String(v.volume)), PUB_VOLS) && legacyLetters.volumes.reduce((n, v) => n + v.letters.length, 0) === (PUB ? 688 : 346), PUB ? "Murasoli public indexes (landing, search, progress, cards) = Volumes 42–54 / 688 letters (P4)" : "Murasoli public indexes (landing, search, progress, cards) still Volumes 48–54 / 346 letters");
 const walk = (d: string): string[] => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
 ok(!walk("public").some((f) => /sangatamil|ore-mutham|m4[2-7]-l\d|wave8/i.test(f)), "no Wave-8 file anywhere under public/");
 const libSrc = fs.readFileSync("components/MurasoliLibrary.tsx", "utf8");

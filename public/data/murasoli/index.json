@@ -4,8 +4,44 @@
     "en": "Murasoli — Letters to Udanpirappukkal",
     "ta": "முரசொலி — உடன்பிறப்புகளுக்கு"
   },
-  "rights": "Nationalised. Source: Tamil Nadu Government Digital Library.",
+  "rights": "Nationalised. Source details are carried with each integrated volume and letter.",
   "volumes": [
+    {
+      "volume": 42,
+      "pageCount": 402,
+      "pages": [],
+      "textProvenance": "source-verified-page-records"
+    },
+    {
+      "volume": 43,
+      "pageCount": 402,
+      "pages": [],
+      "textProvenance": "source-verified-page-records"
+    },
+    {
+      "volume": 44,
+      "pageCount": 400,
+      "pages": [],
+      "textProvenance": "source-verified-page-records"
+    },
+    {
+      "volume": 45,
+      "pageCount": 402,
+      "pages": [],
+      "textProvenance": "source-verified-page-records"
+    },
+    {
+      "volume": 46,
+      "pageCount": 402,
+      "pages": [],
+      "textProvenance": "source-verified-page-records"
+    },
+    {
+      "volume": 47,
+      "pageCount": 401,
+      "pages": [],
+      "textProvenance": "source-verified-page-records"
+    },
     {
       "volume": 48,
       "pageCount": 399,
@@ -3119,6 +3155,6 @@
       "sourceUrl": "https://tamildigitallibrary.in"
     }
   ],
-  "totalPages": 2732,
-  "volumeCount": 7
+  "totalPages": 5141,
+  "volumeCount": 13
 }

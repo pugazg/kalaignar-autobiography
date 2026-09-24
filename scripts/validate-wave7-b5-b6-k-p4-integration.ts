@@ -45,11 +45,11 @@ eq([B5A.length, B5B.length, B6.length, NEW.length], [61, 36, 3, 101], "populatio
 // ── 1. CATALOGUE ──────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
 const byShelf = (id: string) => works.filter((w) => w.shelf === id).length;
-eq(works.length, BASE.catalogue + 101, "catalogue 232 → 333");
+eq(works.length, BASE.catalogue + 101 + W8.works, "catalogue 232 → 333 (+ later Wave-8)");
 eq(new Set(works.map((w) => w.id)).size, works.length, "no duplicate catalogue id");
 eq(new Set(works.map((w) => w.slug)).size, works.length, "no duplicate catalogue slug");
 eq({ speeches: byShelf("speeches"), literaryCommentary: byShelf("literary-commentary"), drama: byShelf("drama"), fiction: byShelf("fiction"), essays: byShelf("essays-articles"), cinema: byShelf("cinema-writing"), poetry: byShelf("poetry"), lifeWriting: byShelf("life-writing"), letters: byShelf("letters") },
-  { speeches: 117, literaryCommentary: 3, drama: 10, fiction: 162, essays: 15, cinema: 10, poetry: 14, lifeWriting: 1, letters: 1 }, "shelf census: Speeches 17→117, Literary Commentary 2→3, every other shelf unchanged");
+  { speeches: 117, literaryCommentary: 3 + W8.literaryCommentary, drama: 10 + W8.drama, fiction: 162, essays: 15, cinema: 10, poetry: 14, lifeWriting: 1, letters: 1 }, "shelf census: Speeches 17→117, Literary Commentary 2→3, every other shelf unchanged");
 for (const id of NEW) eq(LIBRARY_WORKS.filter((w) => w.id === id).length, 1, `${id}: exactly one LibraryWork`);
 for (const bad of ["muthukkuliyal-part-1", "muthukkuliyal-part-2", "irulum-oliyum", "1973-irulum-oliyum", "pazhaiya-varalarum-ilaiya-thalaimuraiyum", "kalaivanar-nsk-memorial-day-audio-06"]) ok(!LIBRARY_WORKS.some((w) => w.id === bad || w.slug === bad), `negative guard: ${bad} is not a LibraryWork`);
 ok(!LIBRARY_WORKS.some((w) => /kuraloviyam-part|part-00[1-6]/.test(w.id)), "negative guard: no Kuraloviyam intake Part is a LibraryWork");
@@ -88,19 +88,19 @@ eq(collectionsForWork("kuraloviyam").length, 0, "Kuraloviyam belongs to no colle
 // ── 3. DISCOVERY ──────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, BASE.discovery + 6, "/read discovery 90 → 96");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), BASE.visible + 1, "initially visible 40 → 41 (Speeches already over the cap; Literary Commentary 3 under it)");
+eq(entries.length, BASE.discovery + 6 + W8.discovery, "/read discovery 90 → 96 (+ later Wave-8)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), BASE.visible + 1 + W8.visible, "initially visible 40 → 41 (Speeches already over the cap; Literary Commentary 3 under it)");
 const sp = shelves.find((s) => s.shelf.id === "speeches")!;
 eq(sp.entries.length, 22, "Speeches discovery = 2 collection cards + 20 standalone speeches");
 eq(sp.entries.filter((e) => e.kind === "collection").map((e) => (e.kind === "collection" ? e.collection.id : "")), ["muthukkuliyal-part-1", "muthukkuliyal-part-2"], "Speeches collection cards");
 ok(sp.entries.every((e) => e.kind !== "work" || ![...B5A, ...B5B].includes(e.work.id)), "no முத்துக் குளியல் member appears as its own discovery card");
 ok(B6.every((s) => sp.entries.some((e) => e.kind === "work" && e.work.id === s)), "the 3 assembly speeches are standalone discovery entries");
-eq(shelves.find((s) => s.shelf.id === "literary-commentary")!.entries.length, 3, "Literary Commentary discovery = 3");
+eq(shelves.find((s) => s.shelf.id === "literary-commentary")!.entries.length, 3 + W8.literaryCommentary, "Literary Commentary discovery = 3 (+ later Wave-8 sangatamil)");
 
 // ── 4. SITEMAP ────────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const paths = urls.map((u) => new URL(u).pathname);
-eq(urls.length, BASE.sitemap + 512, "sitemap 4267 → 4779");
+eq(urls.length, BASE.sitemap + 512 + W8.sitemap, "sitemap 4267 → 4779 (+ later Wave-8 483)");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 eq(WAVE7_B5_B6_K_ROUTES.length, 512, "new routes = 200 speech + 310 Kuraloviyam + 2 collection landings");
 ok(WAVE7_B5_B6_K_ROUTES.every((r) => paths.includes(r)), "every new route is in the sitemap");

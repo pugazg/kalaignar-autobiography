@@ -32,6 +32,7 @@ import {
 } from "../data/poems";
 import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "../lib/poems-wave6-routes";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
+import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
 const EXISTING = "idhayathai-thanthidu-anna";
 
@@ -107,9 +108,9 @@ eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations are declar
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 232 + W7K.works, "the catalogue holds 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
+eq(works.length, 232 + W7K.works + W8.works, "the catalogue holds 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 90 + W7K.discovery, "96 discovery entries (post Wave-7 B5/B6/Kuraloviyam: +6; post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +10 net — +13 works minus arumbu trio collapse minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 90 + W7K.discovery + W8.discovery, "96 discovery entries (post Wave-7 B5/B6/Kuraloviyam: +6; post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +10 net — +13 works minus arumbu trio collapse minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
 ok(!!poetry, "the Poetry shelf is present");
 eq(poetry!.works.length, 14, "Poetry holds 14 works (10 standalone + 4 publications, post Wave-6 P4)");
 // Each publication is ONE discovery entry even though it holds many items — one work with reading

@@ -1,0 +1,105 @@
+{
+ "stage": "P4",
+ "published": true,
+ "note": "Wave 8 publication: Murasoli Volumes 42–47 join the ONE existing murasoli-letters work; ore-mutham (Drama) and sangatamil (Literary Commentary) are new works. The 483 routes P3 built become discoverable; P4 adds no route. P1–P3 records are unchanged.",
+ "newLibraryWorks": [
+  "ore-mutham",
+  "sangatamil"
+ ],
+ "newWorkShelves": {
+  "drama": 1,
+  "literary-commentary": 1
+ },
+ "catalogue": {
+  "before": 333,
+  "after": 335,
+  "delta": 2,
+  "shelves": {
+   "life-writing": 1,
+   "letters": 1,
+   "literary-commentary": 4,
+   "cinema-writing": 10,
+   "speeches": 117,
+   "poetry": 14,
+   "essays-articles": 15,
+   "fiction": 162,
+   "drama": 11
+  }
+ },
+ "collections": {
+  "before": 9,
+  "after": 9,
+  "delta": 0
+ },
+ "discovery": {
+  "before": 96,
+  "after": 98,
+  "delta": 2
+ },
+ "visible": {
+  "before": 41,
+  "after": 42,
+  "delta": 1
+ },
+ "playSlugs": {
+  "count": 11,
+  "oreMuthamOccurrences": 1
+ },
+ "sitemap": {
+  "before": 4779,
+  "after": 5262,
+  "delta": 483,
+  "duplicates": 0,
+  "wave8Routes": 483,
+  "wave8ByFamily": {
+   "murasoli": 342,
+   "oreMutham": 35,
+   "sangatamil": 106
+  }
+ },
+ "build": {
+  "routeDeltaFromP3": 0,
+  "prerender": 5271,
+  "html": 5266,
+  "generatedStaticPages": 5274
+ },
+ "p3RouteSet": {
+  "count": 483,
+  "sha256": "59e265e91cd47b2f7e0e063f09fcccf636f0b6e3b4e10e7aab51f43c7220bc2b"
+ },
+ "murasoli": {
+  "volumes": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54
+  ],
+  "volumeCount": 13,
+  "letters": 688,
+  "lettersByVolume": {
+   "42": 64,
+   "43": 56,
+   "44": 53,
+   "45": 55,
+   "46": 55,
+   "47": 59,
+   "48": 58,
+   "49": 53,
+   "50": 50,
+   "51": 49,
+   "52": 50,
+   "53": 50,
+   "54": 36
+  },
+  "totalPages": 5141
+ }
+}

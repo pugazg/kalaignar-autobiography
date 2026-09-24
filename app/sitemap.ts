@@ -16,6 +16,8 @@ import { wave7CinemaSectionSlugs } from "@/lib/cinema-wave7-routes";
 import { WAVE7_CINEMA_SLUGS } from "@/data/wave7-cinema";
 import type { ManthiriReader } from "@/data/manthiri-kumari";
 import type { RajaRaniReader } from "@/data/raja-rani";
+import { loadWave8Play } from "@/lib/drama-wave8-routes";
+import { sangatamilSectionSlugs } from "@/lib/sangatamil-server";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -159,6 +161,9 @@ function loadNovelSectionSlugs(slug: string): string[] {
  * not print.
  */
 function loadPlayReadingUnitSlugs(slug: string): string[] {
+  // Wave 8 (ஒரே முத்தம்): no public/data payload — its units come from the same server-side model its routes use.
+  const w8 = loadWave8Play(slug);
+  if (w8) return w8.readingUnits.map((u) => u.slug);
   try {
     const p = path.join(process.cwd(), "public/data/plays", slug, "play.json");
     const play = JSON.parse(fs.readFileSync(p, "utf8")) as { readingUnits: { slug: string }[] };
@@ -453,6 +458,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kuraloviyam`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${BASE}/kuraloviyam/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
     ...loadKuraloviyamUnitIds().map((id) => ({ url: `${BASE}/kuraloviyam/${id}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.5 })),
+    // சங்கத் தமிழ் (Wave 8 P4): landing, source and every source-order section from the same registry the
+    // /sangatamil/[section] route reads (lib/sangatamil-server.ts) — never a 1..104 range.
+    { url: `${BASE}/sangatamil`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${BASE}/sangatamil/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    ...sangatamilSectionSlugs().map((id) => ({ url: `${BASE}/sangatamil/${id}`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.5 })),
     { url: `${BASE}/thirukkural`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
     { url: `${BASE}/thirukkural/source`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
     ...thirukkural.adhikarams.map((n) => ({
