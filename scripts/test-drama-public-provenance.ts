@@ -173,4 +173,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`\ndrama-public-provenance — ${checks} checks, 0 failed`);
-console.log("  10 Drama /source pages: archival P1 records retained · projection allowlisted at every level (sentinels dropped) · renders identically · route passes exactly the projections · nachuk scan-22 qualification published · built HTML/RSC free of internal state and reading text");
+console.log(`  ${PLAYS.length} Drama /source pages: archival P1 records retained · projection allowlisted at every level (sentinels dropped) · renders identically · route passes exactly the projections · nachuk scan-22 qualification published · built HTML/RSC free of internal state and reading text`);
