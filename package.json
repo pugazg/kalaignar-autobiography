@@ -73,7 +73,10 @@
     "test:wave8-p2-render": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave8-p2-render.ts",
     "test:wave8-p2-fidelity": "tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p2-fidelity.ts",
     "build:wave8-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p3-routes.ts",
-    "test:wave8-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p3-routes.ts --verify && tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p3-routes.ts"
+    "test:wave8-p3-routes": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p3-routes.ts --verify && tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p3-routes.ts",
+    "build:wave8-p4-publication": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p4-publication.ts",
+    "test:wave8-p4-integration": "tsx --tsconfig tsconfig.scripts.json scripts/build-wave8-p4-publication.ts --verify && tsx --tsconfig tsconfig.scripts.json scripts/validate-wave8-p4-integration.ts",
+    "test:wave8-p4-publication-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-wave8-p4-publication-ui.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

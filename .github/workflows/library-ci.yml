@@ -267,6 +267,14 @@ jobs:
       # (fabricated ids 404), the built prerender manifest (+483), the built payloads and the unchanged sitemap.
       - name: Wave 8 P3 direct hidden routes (manifest --verify + independent route validator)
         run: npm run test:wave8-p3-routes
+      # Wave 8 P4 — publication: catalogue 333->335 (ore-mutham, sangatamil), Murasoli 42-47 joined to the one
+      # murasoli-letters work (public indexes 42-54 / 688, metadata only), /read 98/42, sitemap 4779->5262 (exactly the
+      # 483 P3 routes), build unchanged. The publication record and Murasoli indexes must regenerate byte-identically; the
+      # independent validator re-derives the Murasoli expectations from the frozen internal records.
+      - name: Wave 8 P4 publication integration (record --verify + independent validator)
+        run: npm run test:wave8-p4-integration
+      - name: Wave 8 P4 publication UI (/read cards, /murasoli landing, published readers)
+        run: npm run test:wave8-p4-publication-ui
       # Wave 4 P4 — cross-witness regression / public-semantics hardening. Both steps derive their
       # expectations from the witness registry + resolver + already-vendored payloads (no source
       # clone), so they run here in the build/UI job rather than the source-integrity job below.

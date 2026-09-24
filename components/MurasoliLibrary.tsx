@@ -26,13 +26,22 @@ function formatDate(iso: string) {
   return `${Number(d)}.${Number(m)}.${y}`;
 }
 
-export default function MurasoliLibrary() {
+export default function MurasoliLibrary({
+  initialIndex,
+  initialLetters,
+  initialQuery,
+}: {
+  /** Test/SSR seeds (the route passes none: the indexes are fetched on the client). */
+  initialIndex?: MurasoliIndex;
+  initialLetters?: MurasoliLettersIndex;
+  initialQuery?: string;
+}) {
   const { lang } = useLang();
   const ta = lang === "ta";
-  const [idx, setIdx] = useState<MurasoliIndex | null>(null);
-  const [letters, setLetters] = useState<MurasoliLettersIndex | null>(null);
-  const [open, setOpen] = useState<number | null>(null);
-  const [query, setQuery] = useState("");
+  const [idx, setIdx] = useState<MurasoliIndex | null>(initialIndex ?? null);
+  const [letters, setLetters] = useState<MurasoliLettersIndex | null>(initialLetters ?? null);
+  const [open, setOpen] = useState<number | null>(initialIndex?.volumes[0]?.volume ?? null);
+  const [query, setQuery] = useState(initialQuery ?? "");
   // "Your shelf": letters read + last read (per-device), mirroring /read.
   const [read, setRead] = useState<string[]>([]);
   const [last, setLast] = useState<string | null>(null);
