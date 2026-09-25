@@ -12,6 +12,7 @@
     "test:daily-kural": "tsx scripts/test-daily-kural.ts",
     "test:shelf-disclosure": "tsx --tsconfig tsconfig.scripts.json scripts/test-shelf-disclosure.ts",
     "test:collections": "tsx --tsconfig tsconfig.scripts.json scripts/test-collections.ts",
+    "test:read-categories": "tsx --tsconfig tsconfig.scripts.json scripts/test-read-categories.ts",
     "test:poetry-architecture": "tsx --tsconfig tsconfig.scripts.json scripts/test-poetry-architecture.ts",
     "test:standalone-poem-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-standalone-poem-ui.ts",
     "test:publication-ui": "tsx --tsconfig tsconfig.scripts.json scripts/test-publication-ui.ts",

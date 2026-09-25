@@ -16,7 +16,7 @@ import { useLang } from "@/lib/i18n";
 
 // Per-shelf presentation (UI only — kept out of the data model). Icons for the six
 // currently-empty shelves are pre-mapped so Phase-2+ works render without changes.
-const shelfIcon: Record<ShelfId, typeof BookOpen> = {
+export const shelfIcon: Record<ShelfId, typeof BookOpen> = {
   "life-writing": BookText,
   letters: Mail,
   fiction: BookOpen,
@@ -55,7 +55,7 @@ const accentFor = (shelf: ShelfId) =>
  * One catalogue card. Unchanged from the single-grid version — it is a component only so that the
  * cards above and below a shelf's disclosure are rendered by the same code and cannot drift apart.
  */
-function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
+export function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
   const a = accentFor(work.shelf);
   const Icon = shelfIcon[work.shelf] ?? BookOpen;
   const desc = ta ? work.descTa : work.descEn;

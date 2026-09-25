@@ -74,6 +74,11 @@ jobs:
         run: npm run test:poetry-architecture
       - name: Reading Room shelf disclosure
         run: npm run test:shelf-disclosure
+      # Reading Room IA v2 R2-A: the category registry, the nine /read category routes (rendered coverage of
+      # all 335 works, each on exactly one page), 0 collisions with the 391 memoir chapters, the Letters corpus
+      # treatment derived from public/data/murasoli, and catalogue invariance (no R3 work). Needs no source clone.
+      - name: Reading Room categories (IA v2 R2-A)
+        run: npm run test:read-categories
       # Runs AFTER the build above, so it can check the sitemap and prerendered pages the build
       # actually emitted — the archival-validators job never builds, so that half of the sitemap
       # proof can only run here.
