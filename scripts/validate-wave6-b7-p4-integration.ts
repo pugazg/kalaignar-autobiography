@@ -42,6 +42,7 @@ import { WAVE7_B1_CONTRIBUTION } from "../lib/wave7-b1-contribution";
 // speech collections. Subtracted like W7/W7B so this Batch-7 record stays exactly checkable at the P4 tip.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
 const W7K_COLLECTION_IDS = ["muthukkuliyal-part-1", "muthukkuliyal-part-2"];
 
 const root = process.cwd();
@@ -208,10 +209,10 @@ ok(urlSet.has(`/collections/1977-kalaignar-karunanidhiyin-sirukathaigal`), "site
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size - W7.build - W7B.build - W7K.build - W8.build, 3918, "build prerender routes == 3918 (excluding later Wave-7 B1's 133 + B2-B4's 225 + B5/B6/K + Wave-8)");
+  eq(keys.size - W7.build - W7B.build - W7K.build - W8.build - R2.build, 3918, "build prerender routes == 3918 (excluding later Wave-7 B1's 133 + B2-B4's 225 + B5/B6/K + Wave-8 + R2 categories)");
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html - W7.build - W7B.build - W7K.build - W8.build, 3913, "build .html == 3913 (excluding later Wave-7 B1's 133 + B2-B4's 225 + B5/B6/K + Wave-8)");
+  eq(html - W7.build - W7B.build - W7K.build - W8.build - R2.build, 3913, "build .html == 3913 (excluding later Wave-7 B1's 133 + B2-B4's 225 + B5/B6/K + Wave-8 + R2 categories)");
   for (const s of b7Slugs) { ok(keys.has(`/stories/${s}`), `${s}: reader prerendered`); ok(keys.has(`/stories/${s}/source`), `${s}: source prerendered`); }
   for (const id of NEW_COLLECTION_IDS) ok(keys.has(`/collections/${id}`), `${id}: collection landing prerendered`);
 } else {

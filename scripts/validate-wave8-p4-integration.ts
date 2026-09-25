@@ -23,6 +23,7 @@ import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import { PLAY_SLUGS } from "../data/plays";
 import sitemap from "../app/sitemap";
 import * as MurasoliRoute from "../app/murasoli/[id]/page";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
 
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -160,7 +161,7 @@ else {
   const routes = Object.keys((JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, unknown> }).routes);
   const walk = (d: string): string[] => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
   const html = walk(path.join(NEXT, "server/app")).filter((f) => f.endsWith(".html"));
-  eq({ prerender: routes.length, html: html.length }, { prerender: 5271, html: 5266 }, "build unchanged from P3: 5271 prerender / 5266 html (P4 adds no route)");
+  eq({ prerender: routes.length, html: html.length }, { prerender: 5271 + R2.build, html: 5266 + R2.build }, `build unchanged from P3: 5271 prerender / 5266 html (P4 adds no route) + later R2 categories ${R2.build}`);
   eq(routes.filter((r) => p3All.has(r)).length, 483, "all 483 P3 routes still prerendered");
   ok(!routes.some((r) => /^\/plays\/ore-mutham\/(31|main-31)$|^\/murasoli\/m42-l3377$/.test(r)), "no fabricated route built");
   for (const r of ["/plays/ore-mutham/source", "/sangatamil/source", "/plays/ore-mutham", "/sangatamil"]) {

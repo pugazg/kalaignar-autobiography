@@ -26,6 +26,7 @@ import { PLAY_SLUGS } from "../data/plays";
 import { WAVE6_DRAMA_SLUGS } from "../lib/drama-wave6-routes";
 import { WAVE7_DRAMA_SLUGS } from "../lib/drama-wave7-routes";
 import { WAVE8_DRAMA_SLUGS } from "../lib/drama-wave8-routes";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
 // The /plays route registry is the de-duplicated union of these three lists (app/plays/[slug]/page.tsx).
 const ALL_PLAY_SLUGS: readonly string[] = Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS, ...WAVE7_DRAMA_SLUGS]));
 
@@ -137,8 +138,8 @@ if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
 } else {
   const pm = JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, unknown> };
   const routes = Object.keys(pm.routes);
-  eq(routes.length, P1_FROZEN.build.prerender + P3_DELTA, P3 ? "build prerender routes = 4788 + 483 Wave-8 direct routes (P3)" : "build prerender routes still 4788");
-  eq(walk(path.join(NEXT, "server/app")).filter((f) => f.endsWith(".html")).length, P1_FROZEN.build.html + P3_DELTA, P3 ? "build .html files = 4783 + 483 (P3)" : "build .html files still 4783");
+  eq(routes.length, P1_FROZEN.build.prerender + P3_DELTA + R2.build, P3 ? "build prerender routes = 4788 + 483 Wave-8 direct routes (P3) + later R2 category routes" : "build prerender routes still 4788 (+ later R2 category routes)");
+  eq(walk(path.join(NEXT, "server/app")).filter((f) => f.endsWith(".html")).length, P1_FROZEN.build.html + P3_DELTA + R2.build, P3 ? "build .html files = 4783 + 483 (P3) + later R2 category routes" : "build .html files still 4783 (+ later R2 category routes)");
   const w8Built = routes.filter((r) => /\/plays\/ore-mutham|sangatamil|\/murasoli\/m4[2-7]-/.test(r)).sort();
   ok(P3 ? JSON.stringify(w8Built) === JSON.stringify([...P3_ROUTES].sort()) : w8Built.length === 0, P3 ? "Wave-8 prerendered routes are exactly the 483 P3 direct routes" : "no Wave-8 route prerendered");
 }

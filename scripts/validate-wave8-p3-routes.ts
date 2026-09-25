@@ -29,6 +29,7 @@ import * as SangatamilSourceRoute from "../app/sangatamil/source/page";
 import sitemap from "../app/sitemap";
 import { PLAY_SLUGS } from "../data/plays";
 import { LIBRARY_WORKS } from "../data/library";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
 
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -196,9 +197,9 @@ if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
   const missing = EXPECT_ALL.filter((r) => !set.has(r));
   ok(missing.length === 0, `all 483 Wave-8 routes prerendered (${missing.length} missing: ${missing.slice(0, 5)})`);
   ok(same(sorted(routes.filter((r) => /\/plays\/ore-mutham|^\/sangatamil|\/murasoli\/m4[2-7]-/.test(r))), sorted(EXPECT_ALL)), "no extra Wave-8 route prerendered");
-  ok(routes.length === P2_BASELINE.prerender + 483, `prerender routes ${routes.length} = clean-P2 baseline ${P2_BASELINE.prerender} + 483`);
+  ok(routes.length === P2_BASELINE.prerender + 483 + R2.build, `prerender routes ${routes.length} = clean-P2 baseline ${P2_BASELINE.prerender} + 483 + later R2 categories ${R2.build}`);
   const html = walk(path.join(NEXT, "server/app")).filter((f) => f.endsWith(".html"));
-  ok(html.length === P2_BASELINE.html + 483, `.html files ${html.length} = clean-P2 baseline ${P2_BASELINE.html} + 483`);
+  ok(html.length === P2_BASELINE.html + 483 + R2.build, `.html files ${html.length} = clean-P2 baseline ${P2_BASELINE.html} + 483 + later R2 categories ${R2.build}`);
   // The built HTML (with its inline RSC payload) of every Wave-8 page: no hidden-record field reaches the client.
   let scanned = 0, leaked: string[] = [];
   for (const r of EXPECT_ALL) {

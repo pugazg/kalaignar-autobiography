@@ -20,7 +20,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { SHELVES, publishedWorks, type ShelfId } from "../data/library";
 import { LIBRARY_COLLECTIONS, collectionMemberWorks } from "../data/collections";
 import { chapterIndex } from "../data/references";
-import { READ_CATEGORIES, categoryForShelf, worksInCategory } from "../data/read-categories";
+import { READ_CATEGORIES, READ_CATEGORY_ROUTES, READ_IA_R2_CONTRIBUTION, categoryForShelf, worksInCategory } from "../data/read-categories";
 import { loadMurasoliCorpusSummary, summarizeMurasoliCorpus } from "../lib/murasoli-corpus";
 import ChapterPage, { generateStaticParams as chapterParams } from "../app/read/[id]/page";
 import AutobiographyPage from "../app/read/autobiography/page";
@@ -254,6 +254,24 @@ eq(digest, R2_BASE_PUBLISHED_ID_DIGEST, "published id set is unchanged from the 
 for (const [source, target] of R3_MERGES) {
   eq(works.filter((w) => w.id === source).map((w) => w.shelf), ["fiction"], `R3 merge source ${source} is still a separate Fiction work`);
   eq(works.filter((w) => w.id === target).length, 0, `R3 merge target ${target} is not created in R2`);
+}
+
+// ── 7. Built output (fails closed without a build; CI runs this after `npm run build`) ──────────────────────
+// Earlier-wave validators add READ_IA_R2_CONTRIBUTION.build to their whole-build pins. This is what makes that term
+// honest: the category routes are exactly what R2-A adds to the build, each prerendered, and none reaches the sitemap.
+const NEXT = path.join(process.cwd(), ".next");
+if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
+  ok(false, "no production build (.next/prerender-manifest.json) — run `npm run build`; the build checks cannot be skipped");
+} else {
+  const built = Object.keys((JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, unknown> }).routes);
+  eq(READ_IA_R2_CONTRIBUTION.build, 9, "R2 build contribution = 9 (one page per registry route)");
+  eq(built.filter((r) => READ_CATEGORY_ROUTES.includes(r)).sort(), [...READ_CATEGORY_ROUTES].sort(), "all 9 category routes are prerendered");
+  for (const r of READ_CATEGORY_ROUTES) ok(fs.existsSync(path.join(NEXT, "server/app", `${r}.html`)), `${r}.html is built`);
+  eq(built.filter((r) => /^\/read\/[^/]+$/.test(r) && !chapterIds.includes(r.slice(6)) && !READ_CATEGORY_ROUTES.includes(r) && r !== "/read/nenjukku-neethi"), [], "no other /read/<x> page is built");
+  const sitemap = path.join(NEXT, "server/app/sitemap.xml.body");
+  ok(fs.existsSync(sitemap), "sitemap.xml is built");
+  const locs = fs.existsSync(sitemap) ? (fs.readFileSync(sitemap, "utf8").match(/<loc>[^<]*<\/loc>/g) ?? []) : [];
+  eq(locs.filter((l) => READ_CATEGORY_ROUTES.some((r) => l.endsWith(`${r}</loc>`))), [], "R2-A adds no category URL to the sitemap");
 }
 
 // ── Report ──────────────────────────────────────────────────────────────────────────────────────────────────
