@@ -695,6 +695,7 @@ export interface PoetryWitnessRelation {
  * "Lend Me Your Heart, Anna"; the standalone தென்னவன் காதை carries a scan-151 editorial exception the
  * anthology item does not). Neither supersedes the other; neither is corrected from the other.
  */
+// <r3-generated POETRY_WITNESS_RELATIONS: from data/internal/r3/relations.json by scripts/build-r3-identity.ts — do not edit>
 export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
   {
     id: "idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01",
@@ -717,6 +718,7 @@ export const POETRY_WITNESS_RELATIONS: PoetryWitnessRelation[] = [
     },
   },
 ];
+// </r3-generated>
 
 /**
  * The witness relationships in which (slug, itemSlug?) is one endpoint, each paired with its

@@ -79,6 +79,11 @@ jobs:
       # treatment derived from public/data/murasoli, and catalogue invariance (no R3 work). Needs no source clone.
       - name: Reading Room categories (IA v2 R2-A)
         run: npm run test:read-categories
+      # Reading Room IA v2 R3: the generated identity manifest and relation registry must regenerate byte-for-byte from
+      # the frozen resolved manifest (blob b7b3530d) and the frozen pre-R3 boundary; the stage state decides what is
+      # live; R3-A (foundation) must leave the catalogue, collections, sitemap and build exactly at the boundary.
+      - name: Reading Room R3 identity and relations
+        run: npm run test:r3-identity
       # Runs AFTER the build above, so it can check the sitemap and prerendered pages the build
       # actually emitted — the archival-validators job never builds, so that half of the sitemap
       # proof can only run here.
