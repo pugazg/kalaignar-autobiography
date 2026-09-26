@@ -25,7 +25,6 @@ import sitemap from "../app/sitemap";
 import * as MurasoliRoute from "../app/murasoli/[id]/page";
 import { READ_IA_R2_CONTRIBUTION as R2, READ_IA_R2_ROUTES } from "../lib/read-ia-r2-contribution";
 import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
-import { isR3Published } from "../lib/read-ia-r3-projection";
 
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -49,8 +48,9 @@ eq(works.filter((w) => w.shelf === "letters").map((w) => w.id), ["murasoli-lette
 const mw = works.find((w) => w.id === "murasoli-letters")!;
 ok(mw.tamil === "partial" && mw.english === "partial" && !mw.sourceCommit && /42–54/.test(mw.descEn ?? ""), "murasoli-letters: coverage partial/partial (13 of 54 volumes), no single invented source commit, description states 42–54");
 ok(!LIBRARY_WORKS.some((w) => w.id !== "murasoli-letters" && (w.readerStructure === "letter" || w.shelf === "letters")) && !LIBRARY_WORKS.some((w) => /(vol(ume)?[-\s]?4[2-7]|^m4[2-7]-|murasoli.*(vol|4[2-7]))/i.test(`${w.id} ${w.slug}`)), "negative guard: no Murasoli volume (42–47) is a LibraryWork (no other letter-structured / Letters-shelf work)");
-// R3 identities are excluded only when they are NOT Murasoli-derived (R3-B: the Kavithaigal poem "It Is Over—a Comedy Drama!").
-ok(!LIBRARY_WORKS.some((w) => /nagai|சுவைப்|comedy/i.test(w.id + w.slug + w.titleTa + w.titleEn) && !(isR3Published(w) && !w.href.startsWith("/murasoli"))), "negative guard: நகைச் சுவைப் பகுதி. is not a second work");
+// Since R3-B the probe's ONLY allowed match is the canonical Kavithaigal poem "It Is Over—a Comedy Drama!"
+// (/poems/kalaignarin-kavithaigal/it-is-over-a-comedy-drama); any other match, Murasoli or not, fails.
+eq(LIBRARY_WORKS.filter((w) => /nagai|சுவைப்|comedy/i.test(w.id + w.slug + w.titleTa + w.titleEn)).map((w) => w.id), ["it-is-over-a-comedy-drama"], "negative guard: நகைச் சுவைப் பகுதி. is not a second work (the probe's only catalogue match is the R3-B poem it-is-over-a-comedy-drama)");
 ok(!LIBRARY_WORKS.some((w) => /^\d{3}-|sangatamil-/.test(w.id) || (w.id !== "sangatamil" && /சங்கத் தமிழ்/.test(w.titleTa))), "negative guard: no Sangatamil section is a LibraryWork");
 const one = (id: string) => LIBRARY_WORKS.filter((w) => w.id === id);
 eq(one("ore-mutham").length, 1, "ore-mutham exactly once");
