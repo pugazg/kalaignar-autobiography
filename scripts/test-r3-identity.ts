@@ -183,15 +183,17 @@ for (const c of LIBRARY_COLLECTIONS) {
 {
   // The capability, exercised on a hypothetical R3-D state (never the live one): the merged witness resolves only
   // when active and only when its canonical target is published; an unknown id still fails closed.
-  const r = R.find((x) => x.class === "merged-witness" && (x.witness.record as LibraryWork).id === "sirai-kodiyathu")!;
+  const r = R.find((x) => x.class === "merged-witness" && (x.witness.record as LibraryWork).id === "sirai-kodiyathu");
+  ok(!!r, "the sirai-kodiyathu → green-parrot merged-witness record exists");
   const target = { ...(LIBRARY_WORKS[0] as LibraryWork), id: "green-parrot", state: "published" as const };
   const worksAfter = [...LIBRARY_WORKS.filter((w) => w.id !== "sirai-kodiyathu"), target];
   let threw = false;
   try { resolveCollectionMember("sirai-kodiyathu", worksAfter, R); } catch { threw = true; }
   ok(threw, "a DORMANT merged witness does not resolve (fails closed)");
-  const active = R.map((x) => (x.id === r.id ? { ...x, state: "active" as const } : x));
-  const res = resolveCollectionMember("sirai-kodiyathu", worksAfter, active);
-  ok(res.kind === "merged-witness" && res.canonical.id === "green-parrot", "an ACTIVE merged witness resolves to its canonical target");
+  const active = R.map((x) => (x.id === r?.id ? { ...x, state: "active" as const } : x));
+  let res: ReturnType<typeof resolveCollectionMember> | undefined;
+  try { res = resolveCollectionMember("sirai-kodiyathu", worksAfter, active); } catch { res = undefined; }
+  ok(res?.kind === "merged-witness" && res.canonical.id === "green-parrot", "an ACTIVE merged witness resolves to its canonical target");
   threw = false;
   try { resolveCollectionMember("not-a-work", worksAfter, active); } catch { threw = true; }
   ok(threw, "an unknown member id still fails closed");
