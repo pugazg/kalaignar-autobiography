@@ -18,6 +18,7 @@ import type { ManthiriReader } from "@/data/manthiri-kumari";
 import type { RajaRaniReader } from "@/data/raja-rani";
 import { loadWave8Play } from "@/lib/drama-wave8-routes";
 import { sangatamilSectionSlugs } from "@/lib/sangatamil-server";
+import { READ_CATEGORY_ROUTES } from "@/data/read-categories";
 
 const BASE = "https://nenjukkuneethi.org";
 
@@ -235,6 +236,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/read`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/read/nenjukku-neethi`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+    // Reading Room IA v2: the nine /read category pages, from the category registry (never typed here).
+    ...READ_CATEGORY_ROUTES.map((route) => ({
+      url: `${BASE}${route}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
     ...chapterIndex.map((c) => ({
       url: `${BASE}/read/${c.id}`,
       lastModified: now,

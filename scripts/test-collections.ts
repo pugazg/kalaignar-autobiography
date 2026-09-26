@@ -126,16 +126,25 @@ eq(
   "Fiction shows the 7 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7 + 2 Wave-7 B3 novels; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)",
 );
 
-// Rendered surfaces (R2-B). /read carries no collection card and no work card; the Fiction category page lists every
-// member of the anthology individually (a collection never replaces its members), and no collection card yet —
-// secondary collection sections are R2-C.
+// Rendered surfaces. /read carries no collection card and no work card (R2-B). Each category page lists every member
+// individually in its WORK grid (a collection never replaces its members); since R2-C a secondary Collections section
+// after the grid links each of the shelf's collections exactly once.
 const hrefsOf = (h: string) => (h.match(/<a[^>]+href="([^"]+)"/g) ?? []).map((a) => /href="([^"]+)"/.exec(a)![1]);
+/** One data-testid block of a category page (the work grid or the Collections section), up to its section's end. */
+const blockOf = (h: string, id: string) => {
+  const i = h.indexOf(`data-testid="${id}"`);
+  return i === -1 ? "" : h.slice(i, h.indexOf("</section>", i));
+};
 const cardHrefs = hrefsOf(html);
-const fictionHrefs = hrefsOf(fictionPage);
-const speechesHrefs = hrefsOf(speechesPage);
+const fictionHrefs = hrefsOf(blockOf(fictionPage, "category-works"));
+const speechesHrefs = hrefsOf(blockOf(speechesPage, "category-works"));
+const fictionCollectionHrefs = hrefsOf(blockOf(fictionPage, "category-collections"));
+const speechesCollectionHrefs = hrefsOf(blockOf(speechesPage, "category-collections"));
 eq(cardHrefs.filter((h) => h.startsWith("/collections/")), [], "/read renders no collection card");
 eq(cardHrefs.filter((h) => works.some((w) => w.href === h)), [], "/read renders no work card");
-eq(fictionHrefs.filter((h) => h === c.href).length, 0, "the Fiction page renders no collection card in place of works");
+eq(fictionHrefs.filter((h) => h === c.href).length, 0, "the Fiction work grid renders no collection card in place of works");
+eq(fictionCollectionHrefs.filter((h) => h === c.href).length, 1, "the Fiction Collections section links the anthology exactly once (R2-C)");
+eq(fictionCollectionHrefs, LIBRARY_COLLECTIONS.filter((x) => x.shelf === "fiction").map((x) => x.href), "the Fiction Collections section links exactly its 7 collections, in registry order");
 eq(
   c.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => !h || !fictionHrefs.includes(h)),
   [],
@@ -166,7 +175,8 @@ for (const id of ["muthukkuliyal-part-1", "muthukkuliyal-part-2"]) {
   eq(mc.members.length, id.endsWith("1") ? 61 : 36, `${id}: member count`);
   eq(mc.members.map((m) => m.ordinal), Array.from({ length: mc.members.length }, (_, i) => i + 1), `${id}: printed ordinals 1..N in order`);
   eq(mc.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => !h || !speechesHrefs.includes(h)), [], `${id}: every member is listed individually on /read/speeches`);
-  eq(speechesHrefs.filter((h) => h === mc.href).length, 0, `${id}: no collection card replaces its members on /read/speeches`);
+  eq(speechesHrefs.filter((h) => h === mc.href).length, 0, `${id}: no collection card replaces its members in the /read/speeches work grid`);
+  eq(speechesCollectionHrefs.filter((h) => h === mc.href).length, 1, `${id}: linked exactly once in the /read/speeches Collections section (R2-C)`);
 }
 // The historical disclosure is retired from /read; the discovery model still records 6 over-cap shelves (data).
 eq((html.match(/<details/g) ?? []).length, 0, "/read renders no disclosure (R2-B)");

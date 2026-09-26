@@ -24,7 +24,7 @@ import { WAVE7_B1_CONTRIBUTION } from "../lib/wave7-b1-contribution";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -91,7 +91,7 @@ eq(shelves.find((x) => x.shelf.id === "cinema-writing")!.entries.length, add(P1_
 
 // ── Sitemap: P1 boundary (+ this batch's URLs once published) ────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, (gAdd(P1_FROZEN.sitemap, C.sitemap, W7B.sitemap, W7K.sitemap) + W8.sitemap), `sitemap == P1 ${P1_FROZEN.sitemap}${phase === "P4" ? ` + ${C.sitemap}` : ""}${w7bPublished ? ` + ${W7B.sitemap} (Wave-7 B2-B4)` : ""}`);
+eq(urls.length, (gAdd(P1_FROZEN.sitemap, C.sitemap, W7B.sitemap, W7K.sitemap) + W8.sitemap + R2.sitemap), `sitemap (+ later Wave-8 + R2 categories) == P1 ${P1_FROZEN.sitemap}${phase === "P4" ? ` + ${C.sitemap}` : ""}${w7bPublished ? ` + ${W7B.sitemap} (Wave-7 B2-B4)` : ""}`);
 eq(urls.length - new Set(urls).size, P1_FROZEN.sitemapDup, "sitemap still 0 duplicates");
 for (const s of slugs) {
   const exposed = urls.some((u) => u.includes(`/cinema/${s}`));

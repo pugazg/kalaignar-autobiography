@@ -27,7 +27,7 @@ import { WAVE7_SPEECH_SLUGS } from "../lib/speeches-wave7-routes";
 import { LIBRARY_WORKS } from "../data/library";
 import sitemap from "../app/sitemap";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];

@@ -29,7 +29,7 @@ import { createHash } from "node:crypto";
 import { WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import { LIBRARY_WORKS } from "../data/library";
 import { WAVE8_CONTRIBUTION as W8, WAVE8_ROUTES } from "../lib/wave8-contribution";
-import { READ_CATEGORY_ROUTES } from "../data/read-categories";
+import { READ_IA_R2_ROUTES as READ_CATEGORY_ROUTES } from "../lib/read-ia-r2-contribution";
 
 const root = process.cwd();
 const readJSON = <T,>(p: string): T => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));

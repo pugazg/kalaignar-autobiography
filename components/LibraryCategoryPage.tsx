@@ -5,22 +5,24 @@ import type { ReactNode } from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { ShelfId } from "@/data/library";
-import { categoryForShelf, shelfForCategory, worksInCategory } from "@/data/read-categories";
+import { categoryForShelf, collectionsInCategory, shelfForCategory, worksInCategory } from "@/data/read-categories";
 import { useLang } from "@/lib/i18n";
-import { WorkCard } from "./LibraryHome";
+import { CollectionCard, WorkCard } from "./LibraryHome";
 
 /**
- * One Reading Room category page (/read/<category>) — Reading Room IA v2, stage R2-A.
+ * One Reading Room category page (/read/<category>) — Reading Room IA v2 (introduced in R2-A; collections in R2-C).
  *
  * Lists EVERY published canonical work on the shelf, individually, in catalogue order. There is no
  * disclosure cap, no sort and no pagination: Fiction shows all its works and Speeches all its works,
  * including every member of a collection — collection membership never suppresses a work here.
  *
- * The cards are the /read landing's own `WorkCard`, so a work looks and links the same on both surfaces.
+ * The cards are the shared `WorkCard` (components/LibraryHome.tsx). After the works, a shelf that has collections
+ * (Fiction, Speeches) shows them as a secondary section of the shared `CollectionCard`, linking the existing
+ * /collections/<id> pages; a shelf without collections shows no such section.
  *
  * `corpus` is an optional server-rendered slot, used only by Letters: that category's single work is a
  * corpus, and its summary is derived from the Murasoli data on the server (see LettersCorpusSummary). It is
- * passed in as an element for the same reason /read passes in its Daily Kural — this is a client component.
+ * passed in as an element because this is a client component and the summary is read on the server.
  */
 export default function LibraryCategoryPage({ shelf, corpus }: { shelf: ShelfId; corpus?: ReactNode }) {
   const { lang } = useLang();
@@ -28,6 +30,7 @@ export default function LibraryCategoryPage({ shelf, corpus }: { shelf: ShelfId;
   const category = categoryForShelf(shelf);
   const labels = shelfForCategory(shelf);
   const works = worksInCategory(shelf);
+  const collections = collectionsInCategory(shelf);
 
   const backLink = (
     <Link
@@ -82,6 +85,32 @@ export default function LibraryCategoryPage({ shelf, corpus }: { shelf: ShelfId;
             ))}
           </div>
         </section>
+
+        {/* Collections are SECONDARY provenance/navigation (R2-C): after the full work list, never in place of it —
+            every member is already listed individually above. The section is omitted where a shelf has none. */}
+        {collections.length > 0 && (
+          <section aria-labelledby="category-collections" className="mb-10" data-testid="category-collections">
+            <h2
+              id="category-collections"
+              className="mb-1 flex items-baseline gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/65 dark:text-night-text/65"
+            >
+              <span className="font-tamil text-sm normal-case tracking-normal" lang="ta">
+                தொகுப்புகள்
+              </span>
+              <span>Collections</span>
+            </h2>
+            <p className="mb-3 text-xs text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : undefined}>
+              {ta
+                ? "இப்படைப்புகள் இடம்பெறும் அச்சுத் தொகுப்புகள். ஒவ்வொரு படைப்பும் மேலே தனியாகவும் உள்ளது."
+                : "The printed collections these works appear in. Every work is also listed individually above."}
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {collections.map((c) => (
+                <CollectionCard key={c.id} collection={c} ta={ta} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {corpus}
 
