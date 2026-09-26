@@ -43,6 +43,7 @@ import { WAVE6_NOVEL_SLUGS } from "../lib/novels-wave6-routes";
 import { WAVE6_ESSAY_SLUGS } from "../lib/essays-wave6-routes";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K, WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8, WAVE8_ROUTES } from "../lib/wave8-contribution";
+import { READ_CATEGORY_ROUTES } from "../data/read-categories";
 
 const BASE = "https://nenjukkuneethi.org";
 const root = process.cwd();
@@ -220,12 +221,12 @@ if (fs.existsSync(manifestPath)) {
   const htmlCount = countHtml(path.join(root, ".next/server/app"));
   // Batches 1–6 added their cumulative route set; Batch 7 added B7_ROUTES (232 story + 5 collection);
   // Wave 7 B1 added W7_ROUTES (133 cinema).
-  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + B7_ROUTES.size + W7_ROUTES.size + W7B_ROUTES.size + W7K_ROUTES.size + WAVE8_ROUTES.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${B7_ROUTES.size} + Wave-7 B1 ${W7_ROUTES.size} + Wave-7 B2-B4 ${W7B_ROUTES.size} + Wave-7 B5/B6/K ${W7K_ROUTES.size} + Wave-8 ${WAVE8_ROUTES.length}`);
-  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + B7_ROUTES.size + W7_ROUTES.size + W7B_ROUTES.size + W7K_ROUTES.size + WAVE8_ROUTES.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${B7_ROUTES.size} + Wave-7 B1 ${W7_ROUTES.size} + Wave-7 B2-B4 ${W7B_ROUTES.size} + Wave-7 B5/B6/K ${W7K_ROUTES.size} + Wave-8 ${WAVE8_ROUTES.length}`);
+  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + B7_ROUTES.size + W7_ROUTES.size + W7B_ROUTES.size + W7K_ROUTES.size + WAVE8_ROUTES.length + READ_CATEGORY_ROUTES.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${B7_ROUTES.size} + Wave-7 B1 ${W7_ROUTES.size} + Wave-7 B2-B4 ${W7B_ROUTES.size} + Wave-7 B5/B6/K ${W7K_ROUTES.size} + Wave-8 ${WAVE8_ROUTES.length} + R2 categories ${READ_CATEGORY_ROUTES.length}`);
+  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + B7_ROUTES.size + W7_ROUTES.size + W7B_ROUTES.size + W7K_ROUTES.size + WAVE8_ROUTES.length + READ_CATEGORY_ROUTES.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${B7_ROUTES.size} + Wave-7 B1 ${W7_ROUTES.size} + Wave-7 B2-B4 ${W7B_ROUTES.size} + Wave-7 B5/B6/K ${W7K_ROUTES.size} + Wave-8 ${WAVE8_ROUTES.length} + R2 categories ${READ_CATEGORY_ROUTES.length}`);
   // The pre-Wave-6 remainder must still be the frozen baseline once the Wave-6 cumulative routes, the
   // Batch-7 routes, the Wave-7 B1 routes AND the Wave-7 B2-B4 routes are removed — proving each later
   // batch added exactly its own routes and nothing else moved.
-  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...Array.from(B7_ROUTES), ...Array.from(W7_ROUTES), ...Array.from(W7B_ROUTES), ...Array.from(W7K_ROUTES), ...WAVE8_ROUTES]);
+  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...Array.from(B7_ROUTES), ...Array.from(W7_ROUTES), ...Array.from(W7B_ROUTES), ...Array.from(W7K_ROUTES), ...WAVE8_ROUTES, ...READ_CATEGORY_ROUTES]);
   const remainder = routeKeys.filter((k) => !laterRoutes.has(k)).sort();
   eq(remainder.length, baseline.prerenderManifestRouteCount, "pre-Wave-6 build remainder count == frozen baseline");
   eq(createHash("sha256").update(JSON.stringify(remainder)).digest("hex"), baseline.routeSetSha256, "pre-Wave-6 build remainder route-set SHA-256 == frozen base hash (no unexpected routes)");

@@ -29,6 +29,7 @@ import { createHash } from "node:crypto";
 import { WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import { LIBRARY_WORKS } from "../data/library";
 import { WAVE8_CONTRIBUTION as W8, WAVE8_ROUTES } from "../lib/wave8-contribution";
+import { READ_CATEGORY_ROUTES } from "../data/read-categories";
 
 const root = process.cwd();
 const readJSON = <T,>(p: string): T => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
@@ -130,10 +131,11 @@ if (fs.existsSync(manifestPath)) {
   const w7kPublished = LIBRARY_WORKS.some((w) => w.id === "kuraloviyam");
   const w7kRoutes = WAVE7_B5_B6_K_ROUTES.filter((r) => w7kPublished || !r.startsWith("/collections/"));
   // Wave 8 P3: 483 direct routes (lib/wave8-contribution.ts), added after this manifest was frozen.
-  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...b7Routes, ...w7Routes, ...w7bRoutes, ...w7kRoutes, ...WAVE8_ROUTES]);
+  // Reading Room IA v2 R2-A: the 9 /read category pages (data/read-categories.ts), added after it too.
+  const laterRoutes = new Set<string>([...manifest.cumulativeRoutes, ...b7Routes, ...w7Routes, ...w7bRoutes, ...w7kRoutes, ...WAVE8_ROUTES, ...READ_CATEGORY_ROUTES]);
   // Exact whole-build totals, DERIVED (baseline + Wave-6 cumulative + Batch-7 + Wave-7 B1 + Wave-7 B2-B4), never a constant.
-  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length + w7kRoutes.length + WAVE8_ROUTES.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length} + Wave-7 B5/B6/K ${w7kRoutes.length} + Wave-8 ${WAVE8_ROUTES.length}`);
-  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length + w7kRoutes.length + WAVE8_ROUTES.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length} + Wave-7 B5/B6/K ${w7kRoutes.length} + Wave-8 ${WAVE8_ROUTES.length}`);
+  eq(routeKeys.length, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length + w7kRoutes.length + WAVE8_ROUTES.length + READ_CATEGORY_ROUTES.length, `build prerender routes == baseline ${baseline.prerenderManifestRouteCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length} + Wave-7 B5/B6/K ${w7kRoutes.length} + Wave-8 ${WAVE8_ROUTES.length} + R2 categories ${READ_CATEGORY_ROUTES.length}`);
+  eq(htmlCount, baseline.htmlFileCount + manifest.cumulativeRouteCount + b7Routes.length + w7Routes.length + w7bRoutes.length + w7kRoutes.length + WAVE8_ROUTES.length + READ_CATEGORY_ROUTES.length, `build .html == baseline ${baseline.htmlFileCount} + Wave-6 ${manifest.cumulativeRouteCount} + Batch-7 ${b7Routes.length} + Wave-7 B1 ${w7Routes.length} + Wave-7 B2-B4 ${w7bRoutes.length} + Wave-7 B5/B6/K ${w7kRoutes.length} + Wave-8 ${WAVE8_ROUTES.length} + R2 categories ${READ_CATEGORY_ROUTES.length}`);
   for (const r of w7kRoutes) ok(routeKeys.includes(r), `build prerenders Wave-7 B5/B6/K route ${r}`);
   // Every Wave-6 route present; representative invalid routes absent.
   for (const r of manifest.cumulativeRoutes) ok(routeKeys.includes(r), `build prerenders Wave-6 route ${r}`);

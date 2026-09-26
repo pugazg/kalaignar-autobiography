@@ -33,6 +33,7 @@ import { ESSAY_SLUGS } from "../data/essays";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam) contribution — derived, see lib/wave7-b5-b6-k-contribution.ts.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -233,12 +234,12 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 const pm = path.join(root, ".next/prerender-manifest.json");
 if (fs.existsSync(pm)) {
   const keys = new Set(Object.keys((JSON.parse(fs.readFileSync(pm, "utf8")) as { routes: Record<string, unknown> }).routes));
-  eq(keys.size, 4276 + W7K.build + W8.build, "build prerender routes == 4276 (4275 P3 + 1 collection route) + later Wave-7 B5/B6/K 512 + later Wave-8 direct routes");
+  eq(keys.size, 4276 + W7K.build + W8.build + R2.build, "build prerender routes == 4276 (4275 P3 + 1 collection route) + later Wave-7 B5/B6/K 512 + later Wave-8 direct routes + later R2 category routes");
   for (const r of P3_ROUTES) ok(keys.has(r), `route prerendered: ${r}`);
   ok(keys.has("/collections/arumbu-1978"), "arumbu-1978 collection route prerendered");
   let html = 0; const walk = (d: string) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith(".html")) html++; } };
   try { walk(path.join(root, ".next/server/app")); } catch { /* */ }
-  eq(html, 4271 + W7K.build + W8.build, "build .html == 4271 (4270 P3 + 1 collection route) + later Wave-7 B5/B6/K 512 + later Wave-8 direct routes");
+  eq(html, 4271 + W7K.build + W8.build + R2.build, "build .html == 4271 (4270 P3 + 1 collection route) + later Wave-7 B5/B6/K 512 + later Wave-8 direct routes + later R2 category routes");
 } else {
   console.error("  · BUILD-boundary check SKIPPED — no .next/prerender-manifest.json (CI runs this after build).");
 }
