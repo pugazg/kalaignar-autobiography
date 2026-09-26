@@ -42,7 +42,7 @@ export interface Shelf {
 }
 
 export const SHELVES: Shelf[] = [
-  { id: "life-writing", order: 1, ta: "வாழ்க்கை எழுத்து", en: "Life Writing" },
+  { id: "life-writing", order: 1, ta: "சுயசரிதை", en: "Life Writing" },
   { id: "letters", order: 2, ta: "கடிதங்கள்", en: "Letters" },
   { id: "fiction", order: 3, ta: "புனைகதை", en: "Fiction" },
   { id: "poetry", order: 4, ta: "கவிதைகள்", en: "Poetry" },

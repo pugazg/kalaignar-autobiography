@@ -27,7 +27,7 @@ import { renderElements } from "../components/PoemReader";
 import { POEM_SLUGS } from "../data/poems";
 import type { Poem, PoemProvenance } from "../data/poems";
 import { publishedWorks } from "../data/library";
-import LibraryHome from "../components/LibraryHome";
+import LibraryCategoryPage from "../components/LibraryCategoryPage";
 
 let checks = 0;
 const failures: string[] = [];
@@ -506,14 +506,16 @@ function verseHtml(w: (typeof works)[number], layer: "tamil" | "english"): strin
     ok(!p.ta.includes(REJECTED) && !p.en.includes(REJECTED), `${w.slug}: the rejected label is absent from the provenance page`);
   }
 
-  // The reader shows no duplicated secondary title, and the catalogue card shows no invented one.
+  // The reader shows no duplicated secondary title, and the catalogue card shows no invented one. Since Reading Room IA
+  // v2 R2-B the work cards live on the Poetry category page (/read/poetry), not on the /read landing, so the card is
+  // checked there — the same WorkCard, now on the surface that renders it.
   for (const w of works) {
     const hasTitle = w.poem.title.en !== w.poem.title.ta;
     const reader = renderToStaticMarkup(
       createElement("div", null, renderElements(w.poem.tamil.elements.slice(0, 1) as never, true)),
     );
     void reader;
-    const home = renderToStaticMarkup(createElement(LibraryHome));
+    const home = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: "poetry" }));
     const entry = publishedWorks().find((x) => x.slug === w.slug)!;
     ok(home.includes(entry.titleTa), `${w.slug}: the catalogue card shows the canonical Tamil title`);
     if (!hasTitle) {

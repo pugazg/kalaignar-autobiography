@@ -18,7 +18,7 @@ import type { RajaRaniReader } from "../data/raja-rani";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 
-const CAP = 6; // must match INITIAL_WORKS_PER_SHELF
+const CAP = 6; // the historical /read disclosure cap (INITIAL_WORKS_PER_SHELF until R2-B); discovery-model data only
 let checks = 0;
 const failures: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) failures.push(l); };

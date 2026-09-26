@@ -22,6 +22,7 @@ import path from "node:path";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import LibraryHome from "../components/LibraryHome";
+import LibraryCategoryPage from "../components/LibraryCategoryPage";
 import CollectionLanding, { type CollectionMemberRow } from "../components/CollectionLanding";
 import { publishedWorks } from "../data/library";
 import { STORY_SLUGS } from "../data/stories";
@@ -86,18 +87,24 @@ eq(
 );
 
 // ── 2. Discovery ─────────────────────────────────────────────────────────────────────────────────
+// Reading Room IA v2 R2-B: the discovery model below (collection entries standing in for their members) is no longer
+// RENDERED — /read is nine category cards, and each category page lists every canonical work individually. The model's
+// arithmetic is kept as the historical data-level record it is; the rendered checks now run on the surfaces that
+// actually ship: /read (no collection or work card) and the Fiction / Speeches category pages (every member listed).
 const html = renderToStaticMarkup(createElement(LibraryHome));
+const fictionPage = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: "fiction" }));
+const speechesPage = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: "speeches" }));
 const entries = shelves.flatMap((s) => s.entries);
 
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
 eq(works.length, 333 + W8.works, "the catalogue holds 333 (+ Wave-8: ore-mutham, sangatamil) published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
-eq(entries.length, 96 + W8.discovery, "the page holds 96 (+ Wave-8 2 standalone works) discovery entries (post Wave-7 B2-B4: 90; Wave-7 B5/B6/Kuraloviyam: +6 — 97 speeches collapse into 2 முத்துக் குளியல் cards, +3 assembly speeches, +Kuraloviyam)");
+eq(entries.length, 96 + W8.discovery, "the discovery model (data; not rendered since R2-B) holds 96 (+ Wave-8 2 standalone works) discovery entries (post Wave-7 B2-B4: 90; Wave-7 B5/B6/Kuraloviyam: +6 — 97 speeches collapse into 2 முத்துக் குளியல் cards, +3 assembly speeches, +Kuraloviyam)");
 eq(entries.filter((e) => e.kind === "collection").length, 9, "nine collection entries across all shelves (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
-ok(!!fiction, "the Fiction shelf is rendered");
+ok(!!fiction, "the discovery model has a Fiction shelf");
 eq(fiction!.works.length, 162, "Fiction holds 162 works (post Batch-7: +116 short stories; post Wave-7 B2-B4: +5 novels)");
 eq(fiction!.entries.length, 20, "Fiction shows 20 discovery entries (7 collections collapse; 13 standalone works)");
 eq(
@@ -119,17 +126,29 @@ eq(
   "Fiction shows the 7 collections, then the standalone works (2 Wave-6 novels + 8 non-collection Batch-7 + 2 Wave-7 B3 novels; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)",
 );
 
-// The collection appears once; no member appears as its own card.
-const cardHrefs = (html.match(/<a[^>]+href="([^"]+)"/g) ?? []).map((a) => /href="([^"]+)"/.exec(a)![1]);
-eq(cardHrefs.filter((h) => h === c.href).length, 1, "the collection card renders exactly once");
-const memberHrefsOnRead = c.members
-  .map((m) => works.find((w) => w.id === m.workId)?.href)
-  .filter((h) => h && cardHrefs.includes(h));
-eq(memberHrefsOnRead, [], "no anthology member renders as its own card on /read");
+// Rendered surfaces (R2-B). /read carries no collection card and no work card; the Fiction category page lists every
+// member of the anthology individually (a collection never replaces its members), and no collection card yet —
+// secondary collection sections are R2-C.
+const hrefsOf = (h: string) => (h.match(/<a[^>]+href="([^"]+)"/g) ?? []).map((a) => /href="([^"]+)"/.exec(a)![1]);
+const cardHrefs = hrefsOf(html);
+const fictionHrefs = hrefsOf(fictionPage);
+const speechesHrefs = hrefsOf(speechesPage);
+eq(cardHrefs.filter((h) => h.startsWith("/collections/")), [], "/read renders no collection card");
+eq(cardHrefs.filter((h) => works.some((w) => w.href === h)), [], "/read renders no work card");
+eq(fictionHrefs.filter((h) => h === c.href).length, 0, "the Fiction page renders no collection card in place of works");
+eq(
+  c.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => !h || !fictionHrefs.includes(h)),
+  [],
+  "every anthology member is listed individually on /read/fiction",
+);
 
-// The two standalone Fiction works must still be there — collapsing must not over-reach.
-ok(cardHrefs.includes("/novels/balipeedam-nokki"), "பலிபீடம் நோக்கி still renders");
-ok(cardHrefs.includes("/stories/kizhavan-kanavu"), "கிழவன் கனவு still renders");
+// The standalone Fiction works are listed too.
+ok(fictionHrefs.includes("/novels/balipeedam-nokki"), "பலிபீடம் நோக்கி is listed on /read/fiction");
+ok(fictionHrefs.includes("/stories/kizhavan-kanavu"), "கிழவன் கனவு is listed on /read/fiction");
+// Every Fiction collection's members, across all 7 collections, are on the page.
+for (const fc of LIBRARY_COLLECTIONS.filter((x) => x.shelf === "fiction")) {
+  eq(fc.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => !h || !fictionHrefs.includes(h)), [], `${fc.id}: every member is listed on /read/fiction`);
+}
 
 // Other shelves are untouched, and Phase 0 still governs the ones over the cap.
 for (const s of shelves.filter((x) => x.shelf.id !== "fiction" && x.shelf.id !== "speeches")) {
@@ -146,19 +165,20 @@ for (const id of ["muthukkuliyal-part-1", "muthukkuliyal-part-2"]) {
   const mc = collectionById(id)!;
   eq(mc.members.length, id.endsWith("1") ? 61 : 36, `${id}: member count`);
   eq(mc.members.map((m) => m.ordinal), Array.from({ length: mc.members.length }, (_, i) => i + 1), `${id}: printed ordinals 1..N in order`);
-  eq(mc.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => h && cardHrefs.includes(h)), [], `${id}: no member renders as its own card on /read`);
-  eq(cardHrefs.filter((h) => h === mc.href).length, 1, `${id}: the collection card renders exactly once`);
+  eq(mc.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => !h || !speechesHrefs.includes(h)), [], `${id}: every member is listed individually on /read/speeches`);
+  eq(speechesHrefs.filter((h) => h === mc.href).length, 0, `${id}: no collection card replaces its members on /read/speeches`);
 }
-ok(/<details/.test(html), "the Speeches disclosure survives Phase 1");
-// Post Batch-7 Fiction (18 entries) is ALSO over the cap, so six shelves now render one <details> each:
-// fiction, poetry, drama, cinema-writing, speeches, essays-articles.
-eq((html.match(/<details/g) ?? []).length, 6, "the six over-cap shelves (incl. Fiction) each render one disclosure");
+// The historical disclosure is retired from /read; the discovery model still records 6 over-cap shelves (data).
+eq((html.match(/<details/g) ?? []).length, 0, "/read renders no disclosure (R2-B)");
+eq(shelves.filter((x) => x.entries.length > 6).length, 6, "the discovery model still has six over-cap shelves (data; historical cap 6)");
 
-// The shelf heading states works, never entries.
-const fictionSection = html.slice(html.indexOf('aria-labelledby="shelf-fiction"'));
-const fictionHeading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(fictionSection);
-ok(!!fictionHeading && /\b162\b/.test(fictionHeading[1]), "the Fiction heading states 162 works, not 21");
-ok(!!fictionHeading && /\b7\b/.test(fictionHeading[1]), "the Fiction heading states its 7 collections");
+// The Fiction category card states works as its primary count, and its collections secondarily — never entries.
+const fictionCard = html.slice(html.indexOf('data-shelf="fiction"'), html.indexOf("</a>", html.indexOf('data-shelf="fiction"')));
+ok(/162 works/.test(fictionCard), "the Fiction card states 162 works, not 20 entries");
+ok(/7 collections/.test(fictionCard), "the Fiction card states its 7 collections");
+ok(!/\b20 works\b/.test(fictionCard), "the Fiction card never states the 20 discovery entries");
+const speechesCard = html.slice(html.indexOf('data-shelf="speeches"'), html.indexOf("</a>", html.indexOf('data-shelf="speeches"')));
+ok(/117 works/.test(speechesCard) && /2 collections/.test(speechesCard), "the Speeches card states 117 works · 2 collections");
 
 // ── 3. Reverse lookup is derived, plural, and not stored ─────────────────────────────────────────
 // Batch 7's 2009 anthology reprints eleven 1977 stories, so those members now legitimately belong to TWO
@@ -271,7 +291,7 @@ ok(pageHrefs.includes("/read"), "the page links back to the Reading Room");
 const stripComments = (s: string) => s.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
 const homeSrc = stripComments(fs.readFileSync(path.join(process.cwd(), "components/LibraryHome.tsx"), "utf-8"));
 const landingSrc = stripComments(fs.readFileSync(path.join(process.cwd(), "components/CollectionLanding.tsx"), "utf-8"));
-const collectionCardSrc = homeSrc.slice(homeSrc.indexOf("function CollectionCard("), homeSrc.indexOf("function DiscoveryCard("));
+const collectionCardSrc = homeSrc.slice(homeSrc.indexOf("function CollectionCard("), homeSrc.indexOf("function CategoryCard("));
 
 ok(collectionCardSrc.includes("dark:focus-visible:ring-night-text/70"), "the collection card overrides its dark focus ring");
 ok(!collectionCardSrc.includes("dark:group-hover:text-marina-light"), "the collection card title has no marina-light dark hover (3.8:1)");
@@ -296,8 +316,9 @@ ok(
 ok(landingSrc.includes("dark:hover:text-night-text"), "the back link states an accessible dark hover");
 ok(/<span className="text-ink\/65 dark:text-night-text\/65">Contents<\/span>/.test(landingSrc), "the Contents label states an accessible token");
 ok(!/text-ink\/40|dark:text-night-text\/40/.test(landingSrc), "no /40 text remains on the collection page");
-const shelfCount = /className="ml-auto shrink-0 font-normal tabular-nums ([^"]*)"/.exec(homeSrc);
-ok(!!shelfCount && shelfCount[1].includes("text-ink/65"), "the shelf work/collection count uses an accessible token");
+// The work/collection count moved from the retired shelf heading to the R2-B category card; it keeps the /65 token.
+const shelfCount = /className="mt-1\.5 text-xs tabular-nums ([^"]*)"\s+lang=\{ta \? "ta" : undefined\}\s+data-testid="read-category-count"/.exec(homeSrc);
+ok(!!shelfCount && shelfCount[1].includes("text-ink/65"), "the category card work/collection count uses an accessible token");
 
 // Print: the identity block is exempted, the Back link is not.
 const css = fs.readFileSync(path.join(process.cwd(), "app/globals.css"), "utf-8");

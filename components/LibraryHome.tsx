@@ -1,18 +1,21 @@
 "use client";
 
-import type { ReactNode } from "react";
-
-import { BookOpen, BookText, ChevronDown, Clapperboard, Feather, Flower2, Home, Library, Mail, Mic, Newspaper, Theater } from "lucide-react";
+import { BookOpen, BookText, Clapperboard, Feather, Flower2, Home, Library, Mail, Mic, Newspaper, Theater } from "lucide-react";
 import Link from "next/link";
 import { type LibraryWork, type ShelfId } from "@/data/library";
-import { discoveryShelves, type DiscoveryEntry, type LibraryCollection } from "@/data/collections";
+import { type LibraryCollection } from "@/data/collections";
+import { READ_CATEGORIES, collectionsInCategory, shelfForCategory, worksInCategory, type ReadCategory } from "@/data/read-categories";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/i18n";
 
-// Global Kalaignar Digital Library landing page. Catalog-driven: shelves and work
-// cards come from `data/library.ts` (published entries only). Nenjukku Neethi no
-// longer defines this page's identity — its memoir-specific search / stats live on
-// the /read/nenjukku-neethi collection surface.
+// Global Kalaignar Digital Library landing page (/read). Since Reading Room IA v2 R2-B it is CATEGORY-FIRST: exactly
+// nine category cards, one per shelf, each linking to its category page (/read/<category>), which lists every
+// canonical work. The landing itself renders no work card, no collection card and no Daily Kural. Routes come from the
+// category registry (data/read-categories.ts); labels from `SHELVES`; counts are derived, never typed.
+//
+// The historical discovery view (collection-substituted entries under a 6-per-shelf disclosure) is retired from this
+// page. Its data model, `discoveryShelves()` in data/collections.ts, is kept unchanged for the validators that record
+// it. `WorkCard` and `CollectionCard` stay here as the shared card presentation reused by the category pages.
 
 // Per-shelf presentation (UI only — kept out of the data model). Icons for the six
 // currently-empty shelves are pre-mapped so Phase-2+ works render without changes.
@@ -28,17 +31,8 @@ export const shelfIcon: Record<ShelfId, typeof BookOpen> = {
   "literary-commentary": Flower2,
 };
 
-/**
- * How many work cards a shelf shows before the rest move behind a disclosure.
- *
- * Six fills exactly three rows of the `sm:grid-cols-2` grid below and stays a short scroll on a
- * phone. It is a PRESENTATION cap only: every published work is still rendered, still linked and
- * still in the catalogue — Fiction remains 39 works whether its disclosure is open or closed.
- */
-const INITIAL_WORKS_PER_SHELF = 6;
-
 // Two accents from the existing design language: brass for commentary, marina otherwise.
-const accentFor = (shelf: ShelfId) =>
+export const accentFor = (shelf: ShelfId) =>
   shelf === "literary-commentary" || shelf === "poetry" || shelf === "essays-articles"
     ? {
         border: "border-brass/30 hover:border-brass/60",
@@ -52,8 +46,8 @@ const accentFor = (shelf: ShelfId) =>
       };
 
 /**
- * One catalogue card. Unchanged from the single-grid version — it is a component only so that the
- * cards above and below a shelf's disclosure are rendered by the same code and cannot drift apart.
+ * One catalogue work card, visually unchanged. Since R2-B it is rendered by the category pages
+ * (components/LibraryCategoryPage.tsx), not by this landing; it lives here so both surfaces share one card.
  */
 export function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
   const a = accentFor(work.shelf);
@@ -98,7 +92,7 @@ export function WorkCard({ work, ta }: { work: LibraryWork; ta: boolean }) {
  * It is a fact about the PUBLICATION and is never pushed down onto a member story as its own first
  * publication date, which the source records deliberately keep apart.
  */
-function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta: boolean }) {
+export function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta: boolean }) {
   const a = accentFor(collection.shelf);
   const desc = ta ? collection.descTa : collection.descEn;
   const count = collection.memberCount;
@@ -162,25 +156,61 @@ function CollectionCard({ collection, ta }: { collection: LibraryCollection; ta:
   );
 }
 
-/** One discovery entry: a collection standing in for its members, or a work standing for itself. */
-function DiscoveryCard({ entry, ta }: { entry: DiscoveryEntry; ta: boolean }) {
-  return entry.kind === "collection" ? (
-    <CollectionCard collection={entry.collection} ta={ta} />
-  ) : (
-    <WorkCard work={entry.work} ta={ta} />
+/**
+ * One /read category card: the shelf's labels, its icon, and its CANONICAL WORK COUNT as the primary figure.
+ *
+ * The collection count is secondary metadata, appended only where the shelf has collections (Fiction, Speeches) —
+ * a collection never replaces its members, and the old collection-substituted "discovery entry" count is never
+ * shown. Both numbers are derived from the catalogue and the collection registry at render time.
+ *
+ * The title hover is written locally rather than taken from accentFor(): its dark half
+ * (`dark:group-hover:text-marina-light`) measures 3.8:1 on this card's dark surface, under 4.5:1 for a title this
+ * size — the same local treatment CollectionCard uses. The dark focus ring is overridden to night-text/70 because
+ * `.focus-ring`'s ring-marina is 2.5:1 against the dark page, under the 3:1 WCAG 1.4.11 asks of it.
+ */
+export function CategoryCard({ category, ta }: { category: ReadCategory; ta: boolean }) {
+  const a = accentFor(category.shelf);
+  const Icon = shelfIcon[category.shelf] ?? BookOpen;
+  const labels = shelfForCategory(category.shelf);
+  const works = worksInCategory(category.shelf).length;
+  const collections = collectionsInCategory(category.shelf).length;
+  const count = ta
+    ? `${works} ${works === 1 ? "படைப்பு" : "படைப்புகள்"}` +
+      (collections > 0 ? ` \u00b7 ${collections} ${collections === 1 ? "தொகுப்பு" : "தொகுப்புகள்"}` : "")
+    : `${works} ${works === 1 ? "work" : "works"}` +
+      (collections > 0 ? ` \u00b7 ${collections} ${collections === 1 ? "collection" : "collections"}` : "");
+  return (
+    <Link
+      href={category.route}
+      data-testid="read-category-card"
+      data-shelf={category.shelf}
+      className={cn(
+        "focus-ring group flex h-full flex-col rounded-2xl border bg-white/60 p-4 transition dark:bg-night-surface/60 dark:focus-visible:ring-night-text/70",
+        a.border,
+      )}
+    >
+      <Icon className={cn("h-5 w-5 shrink-0", a.icon)} aria-hidden />
+      <span
+        className="mt-2 font-tamil text-[17px] font-medium group-hover:text-marina dark:group-hover:text-night-text"
+        lang="ta"
+      >
+        {labels.ta}
+      </span>
+      <span className="mt-0.5 text-xs text-ink/65 dark:text-night-text/65">{labels.en}</span>
+      <span
+        className="mt-1.5 text-xs tabular-nums text-ink/65 dark:text-night-text/65"
+        lang={ta ? "ta" : undefined}
+        data-testid="read-category-count"
+      >
+        {count}
+      </span>
+    </Link>
   );
 }
 
-/**
- * `dailyKural` arrives as a rendered server component from app/read/page.tsx. It is a prop rather
- * than an import because this file is a client component and the panel must resolve its date on
- * the server. It sits at the top of <main>, immediately after the banner — deliberately NOT inside
- * the <header>, which the print stylesheet deletes outright.
- */
-export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) {
+export default function LibraryHome() {
   const { lang } = useLang();
   const ta = lang === "ta";
-  const shelves = discoveryShelves();
 
   return (
     <div className="min-h-screen bg-paper pb-24 dark:bg-night dark:text-night-text">
@@ -205,96 +235,27 @@ export default function LibraryHome({ dailyKural }: { dailyKural?: ReactNode }) 
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-10 sm:px-6">
-        {dailyKural}
-
-        {shelves.map(({ shelf, works, entries, collections }) => {
-          // Presentation only: the same array, split. Declaration order is preserved across both
-          // halves, so an entry never moves shelf position by being deferred.
-          //
-          // THE CAP APPLIES TO DISCOVERY ENTRIES, NOT WORKS — and that is the whole Phase-1 mechanism.
-          // Fiction still holds 39 works, but they now arrive as 3 entries (the anthology plus two
-          // standalone works), which is below the cap, so its disclosure simply does not render. No
-          // shelf id appears anywhere in this logic: Speeches still has 14 entries and still gets its
-          // disclosure, by exactly the same rule.
-          const initial = entries.slice(0, INITIAL_WORKS_PER_SHELF);
-          const overflow = entries.slice(INITIAL_WORKS_PER_SHELF);
-          return (
-            <section key={shelf.id} aria-labelledby={`shelf-${shelf.id}`} className="mb-10">
-              <h2
-                id={`shelf-${shelf.id}`}
-                className="mb-3 flex items-baseline gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/50 dark:text-night-text/50"
-              >
-                <span className="font-tamil text-sm normal-case tracking-normal text-ink/70 dark:text-night-text/70" lang="ta">
-                  {shelf.ta}
-                </span>
-                <span>{shelf.en}</span>
-                {/* THE SHELF COUNT IS THE WORK COUNT, ALWAYS. Fiction reads "39 works" even though
-                    it renders 3 cards: the catalogue did not shrink, only the discovery density did.
-                    The collection tally is appended where one exists, because "39 works" over three
-                    cards would otherwise leave a reader wondering where the other 36 stories went.
-                    Internal vocabulary — "discovery entries" — never reaches the page. */}
-                {/* ink/65 rather than ink/40: this span now also carries Phase-1's "· 1 collection",
-                    and at /40 that new copy measured 2.53:1 light and 3.32:1 dark. One span cannot hold
-                    two contrast levels, so the shelf work count rises with it. */}
-                <span className="ml-auto shrink-0 font-normal tabular-nums text-ink/65 dark:text-night-text/65">
-                  {ta
-                    ? `${works.length} ${works.length === 1 ? "படைப்பு" : "படைப்புகள்"}`
-                    : `${works.length} ${works.length === 1 ? "work" : "works"}`}
-                  {collections.length > 0 &&
-                    (ta
-                      ? ` \u00b7 ${collections.length} ${collections.length === 1 ? "தொகுப்பு" : "தொகுப்புகள்"}`
-                      : ` \u00b7 ${collections.length} ${collections.length === 1 ? "collection" : "collections"}`)}
-                </span>
-              </h2>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {initial.map((e) => (
-                  <DiscoveryCard key={e.key} entry={e} ta={ta} />
-                ))}
-              </div>
-              {overflow.length > 0 && (
-                // Native <details>, deliberately: the disclosure then works with JavaScript
-                // unavailable, carries its own keyboard and expanded-state semantics without a
-                // hand-written aria-expanded to fall out of sync, and — unlike a `hidden` div —
-                // keeps the closed cards out of the tab order for free.
-                <details className="library-shelf-overflow group/disclosure mt-3">
-                  {/* min-h-11 is a 44px touch target. It is padding, not weight: the control stays a
-                      small line of text, and the extra height is invisible on the page.
-
-                      DARK MODE IS NOT `marina-light` HERE. The readers' <summary> elements use
-                      `dark:text-marina-light`, but that is #1B7F87 on the #0C1116 Reading Room, which
-                      measures 4.00:1 — under the 4.5:1 WCAG AA floor for text this size. Rather than
-                      change a token shared with the whole app, this one control uses
-                      `dark:text-night-text/70`, already used a few lines above for the shelf label:
-                      #A9A7A0 on #0C1116, 7.88:1. Light mode keeps marina at 7.10:1.
-
-                      THE FOCUS RING NEEDS THE SAME LOCAL TREATMENT. `.focus-ring` draws ring-marina
-                      in both themes; in dark that is #0E5D63 against the #0C1116 offset and page,
-                      2.5:1 — under the 3:1 that WCAG 1.4.11 (Level AA) asks of an author-supplied
-                      focus indicator. The shared utility is left alone for the whole app and this
-                      one control overrides only its dark ring colour, to the same night-text/70 the
-                      label uses: 7.88:1. Light mode keeps marina on paper at 7.10:1 and is
-                      untouched. Geometry is unchanged — still ring-2 with ring-offset-2. */}
-                  <summary className="focus-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded py-2 text-xs text-marina dark:text-night-text/70 dark:focus-visible:ring-night-text/70">
-                    {/* `display:inline-flex` suppresses the native triangle, so the affordance is drawn
-                        explicitly — the same compensation the readers' <summary> elements already make.
-                        It flips instantly on open; no transition. The group is NAMED: the work cards
-                        below carry their own bare `group` for title hover, and an unnamed group here
-                        would make hovering anywhere in the overflow light up every title inside it. */}
-                    <ChevronDown className="h-3.5 w-3.5 shrink-0 group-open/disclosure:rotate-180" aria-hidden />
-                    {ta
-                      ? `மேலும் ${overflow.length} ${overflow.length === 1 ? "படைப்பைக்" : "படைப்புகளைக்"} காட்டு`
-                      : `Show ${overflow.length} more ${overflow.length === 1 ? "work" : "works"}`}
-                  </summary>
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                    {overflow.map((e) => (
-                      <DiscoveryCard key={e.key} entry={e} ta={ta} />
-                    ))}
-                  </div>
-                </details>
-              )}
-            </section>
-          );
-        })}
+        <section aria-labelledby="read-categories" className="mb-10">
+          <h2
+            id="read-categories"
+            className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/65 dark:text-night-text/65"
+          >
+            {ta ? (
+              <span className="font-tamil text-sm normal-case tracking-normal" lang="ta">
+                வகை வாரியாக
+              </span>
+            ) : (
+              "Browse by category"
+            )}
+          </h2>
+          <ul className="grid gap-3 sm:grid-cols-2" data-testid="read-categories">
+            {READ_CATEGORIES.map((c) => (
+              <li key={c.shelf}>
+                <CategoryCard category={c} ta={ta} />
+              </li>
+            ))}
+          </ul>
+        </section>
       </main>
     </div>
   );
