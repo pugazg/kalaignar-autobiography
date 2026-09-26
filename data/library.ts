@@ -3508,6 +3508,29 @@ export const LIBRARY_WORKS: LibraryWork[] = [
   },
 ];
 
+// ── Source publications (Reading Room IA v2 R3) ─────────────────────────────
+/**
+ * A SOURCE PUBLICATION that is not a canonical work: a printed book whose every unit has been resolved into canonical
+ * works, witnesses or dependent headings (frozen R3 plan §6). It keeps every URL, reader and `/source` page, but it is
+ * not listed as a work in category discovery.
+ *
+ * The record is the publication's FORMER LibraryWork record, carried verbatim (id, slug, titles, href, source pins,
+ * edition and rights only where present, language coverage, unit count, provenance href), plus a `kind`
+ * discriminator and the R3 stage that demoted it. Nothing is invented for it: a field its former record did not carry
+ * stays absent.
+ */
+export type LibraryPublication = Omit<LibraryWork, "state"> & {
+  kind: "source-publication";
+  /** The R3 stage that turned the former canonical work into a publication record. */
+  demotedIn: "R3-B" | "R3-C";
+};
+
+/**
+ * Publication records. EMPTY in R3-A: no publication is demoted until R3-B (Poetry) and R3-C (Essays) move their
+ * records here from `LIBRARY_WORKS`, as generated from data/internal/r3/identity-manifest.json.
+ */
+export const LIBRARY_PUBLICATIONS: LibraryPublication[] = [];
+
 // ── Selectors ────────────────────────────────────────────────────────────────
 /** Only intentionally published works are ever exposed publicly. */
 export function publishedWorks(): LibraryWork[] {
