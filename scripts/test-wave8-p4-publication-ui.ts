@@ -3,8 +3,10 @@
  *
  *   npx tsx --tsconfig tsconfig.scripts.json scripts/test-wave8-p4-publication-ui.ts
  *
- * /read (LibraryHome): the ஒரே முத்தம் and சங்கத் தமிழ் cards exist; Murasoli stays one card; the Sangatamil card discloses
- * the permanent scan-8 limitation; the Ore Mutham card states 30 + a separately numbered comedy section (never 31–33).
+ * Category pages (R2-B: the work cards moved from the /read landing to /read/<category>): the ஒரே முத்தம் card on
+ * /read/drama and the சங்கத் தமிழ் card on /read/literary-commentary exist; Murasoli stays one work card on /read/letters;
+ * the Sangatamil card discloses the permanent scan-8 limitation; the Ore Mutham card states 30 + a separately numbered
+ * comedy section (never 31–33). /read itself renders none of these work cards — only the category cards.
  * /murasoli (MurasoliLibrary, seeded with the published public indexes): Volumes 42–54, 688 letters, search reaches a
  * Wave-8 letter by title and by printed number, Wave-8 page counts are real (never "0 pages"), and the copy carries no
  * stale year span, no blanket OCR claim and no blanket TDL / University-of-Madras source claim.
@@ -17,6 +19,9 @@ import { createElement, type ReactElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { LangProvider } from "../lib/i18n";
 import LibraryHome from "../components/LibraryHome";
+import DramaPage from "../app/read/drama/page";
+import LettersPage from "../app/read/letters/page";
+import LiteraryCommentaryPage from "../app/read/literary-commentary/page";
 import MurasoliLibrary from "../components/MurasoliLibrary";
 import * as MurasoliRoute from "../app/murasoli/[id]/page";
 import * as PlaySceneRoute from "../app/plays/[slug]/[scene]/page";
@@ -31,16 +36,23 @@ const count = (h: string, re: RegExp) => (h.match(new RegExp(re.source, "g")) ??
 const readJSON = <T,>(rel: string): T => JSON.parse(fs.readFileSync(path.join(process.cwd(), rel), "utf8"));
 const page = (Page: unknown, params: Record<string, string>, lang: "ta" | "en" = "ta") => { try { return r((Page as (p: { params: Record<string, string> }) => ReactElement)({ params }), lang); } catch { return ""; } };
 
-// ══ /read ═══════════════════════════════════════════════════════════════════════════════════════════════════════
+// ══ Category pages (/read/drama · /read/literary-commentary · /read/letters) and the /read landing ════════════════
+/** A category page's work grid only (its "category-works" section), so page chrome and the Letters corpus link are excluded. */
+const grid = (h: string) => { const i = h.indexOf('data-testid="category-works"'); return i === -1 ? "" : h.slice(i, h.indexOf("</section>", i)); };
 for (const lang of ["en", "ta"] as const) {
-  const h = r(createElement(LibraryHome, {}), lang);
+  const home = r(createElement(LibraryHome, {}), lang);
+  ok(!/href="\/plays\/ore-mutham"|href="\/sangatamil"|href="\/murasoli"/.test(home), `/read ${lang}: the landing renders no work card (Ore, Sangatamil and Murasoli are on their category pages)`);
+  const drama = grid(r(createElement(DramaPage), lang));
+  const lit = grid(r(createElement(LiteraryCommentaryPage), lang));
+  const lettersGrid = grid(r(createElement(LettersPage), lang));
+  const h = drama + lit + lettersGrid;
   const v = visible(h);
-  ok(h.includes('href="/plays/ore-mutham"'), `/read ${lang}: Ore Mutham card`);
-  ok(h.includes('href="/sangatamil"'), `/read ${lang}: Sangatamil card`);
-  ok(count(h, /href="\/murasoli"/) === 1, `/read ${lang}: Murasoli is ONE card (${count(h, /href="\/murasoli"/)})`);
-  ok(lang === "en" ? /scan 8 is permanently source-limited and not transcribed/.test(v) : /ஸ்கேன் 8-இன் கையெழுத்து முன்னுரைக் கடிதம் மூலத்தின் நிலையான வரம்புடையது/.test(v), `/read ${lang}: Sangatamil card discloses the permanent scan-8 limitation`);
-  ok(lang === "en" ? /30 scenes, followed by a separately titled comedy section .* Scenes 1–3 are numbered afresh — not Scenes 31–33/.test(v) : /30 காட்சிகள்; அதன்பின் தனித் தலைப்புடைய நகைச் சுவைப் பகுதி\. — அதன் காட்சிகள் 1–3 தனியாக எண்ணிடப்பட்டவை/.test(v), `/read ${lang}: Ore card states 30 + a separately numbered 3 (not 33 sequential scenes)`);
-  ok(!/Scene 3[1-3]\b(?! —)|காட்சி 3[1-3]\b/.test(v.replace(/not Scenes 31–33/g, "")), `/read ${lang}: no card numbers a scene 31–33`);
+  ok(drama.includes('href="/plays/ore-mutham"'), `/read/drama ${lang}: Ore Mutham card`);
+  ok(lit.includes('href="/sangatamil"'), `/read/literary-commentary ${lang}: Sangatamil card`);
+  ok(count(lettersGrid, /href="\/murasoli"/) === 1, `/read/letters ${lang}: Murasoli is ONE work card (${count(lettersGrid, /href="\/murasoli"/)})`);
+  ok(lang === "en" ? /scan 8 is permanently source-limited and not transcribed/.test(v) : /ஸ்கேன் 8-இன் கையெழுத்து முன்னுரைக் கடிதம் மூலத்தின் நிலையான வரம்புடையது/.test(v), `/read/literary-commentary ${lang}: Sangatamil card discloses the permanent scan-8 limitation`);
+  ok(lang === "en" ? /30 scenes, followed by a separately titled comedy section .* Scenes 1–3 are numbered afresh — not Scenes 31–33/.test(v) : /30 காட்சிகள்; அதன்பின் தனித் தலைப்புடைய நகைச் சுவைப் பகுதி\. — அதன் காட்சிகள் 1–3 தனியாக எண்ணிடப்பட்டவை/.test(v), `/read/drama ${lang}: Ore card states 30 + a separately numbered 3 (not 33 sequential scenes)`);
+  ok(!/Scene 3[1-3]\b(?! —)|காட்சி 3[1-3]\b/.test(v.replace(/not Scenes 31–33/g, "")), `category pages ${lang}: no card numbers a scene 31–33`);
 }
 
 // ══ /murasoli ═══════════════════════════════════════════════════════════════════════════════════════════════════
@@ -92,4 +104,4 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`wave8-p4-publication-ui — ${checks} checks, 0 failed`);
-console.log("  /read: Ore + Sangatamil cards, one Murasoli card, scan-8 + 30+3 disclosures · /murasoli: 42–54 · 688 · real page counts · search · cohort-accurate provenance copy · 9 published readers");
+console.log("  category pages: Ore (drama) + Sangatamil (lit. commentary) cards, one Murasoli work card (letters), scan-8 + 30+3 disclosures · /read: no work card · /murasoli: 42–54 · 688 · real page counts · search · cohort-accurate provenance copy · 9 published readers");

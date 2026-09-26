@@ -43,7 +43,10 @@ import { WAVE6_NOVEL_SLUGS } from "../lib/novels-wave6-routes";
 import { WAVE6_ESSAY_SLUGS } from "../lib/essays-wave6-routes";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K, WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8, WAVE8_ROUTES } from "../lib/wave8-contribution";
-import { READ_CATEGORY_ROUTES } from "../data/read-categories";
+import { READ_CATEGORY_ROUTES, categoryForShelf } from "../data/read-categories";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import LibraryCategoryPage from "../components/LibraryCategoryPage";
 
 const BASE = "https://nenjukkuneethi.org";
 const root = process.cwd();
@@ -146,9 +149,13 @@ eq(uniqSorted(LIBRARY_COLLECTIONS.map((c) => c.id).filter((id) => id !== "1977-k
 for (const s of WAVE6_WORK_SLUGS) ok(!LIBRARY_COLLECTIONS.some((c) => c.id === s), `Wave-6 work ${s} is not registered as a collection`);
 
 // ── 3. /read DISCOVERY — 64 entries, exact per-shelf census, 39 visible, expected over-cap set ──
-const CAP = 6; // components/LibraryHome.tsx INITIAL_WORKS_PER_SHELF — guarded below.
+// Reading Room IA v2 R2-B retired the rendered discovery view from /read (now nine category cards) and removed
+// INITIAL_WORKS_PER_SHELF with it. The census below is the discovery DATA MODEL (`discoveryShelves()`, unchanged), kept
+// as the frozen Wave-6 history it records; the cap is that model's historical constant. The current public surface —
+// every Wave-6 work listed on its category page — is proven right after the census.
+const CAP = 6; // the historical /read disclosure cap (INITIAL_WORKS_PER_SHELF until R2-B)
 const libraryHome = fs.readFileSync(path.join(root, "components/LibraryHome.tsx"), "utf8");
-ok(/const\s+INITIAL_WORKS_PER_SHELF\s*=\s*6\b/.test(libraryHome), "disclosure cap constant is still 6 (INITIAL_WORKS_PER_SHELF)");
+ok(!/const\s+INITIAL_WORKS_PER_SHELF\b/.test(libraryHome), "the retired /read disclosure cap is no longer defined by LibraryHome (R2-B)");
 const shelves = discoveryShelves();
 const discBy: Record<string, number> = {};
 let discTotal = 0;
@@ -176,6 +183,20 @@ eqMap(discBy, {
 eq(visible, 39 + B7.visible + W7B.visible + W7K.visible + W8.visible, "41 discovery entries are initially visible under the disclosure cap (Wave-7 B2-B4 shelves already over-cap; Wave-7 +1 Literary Commentary under the cap)");
 eq(uniqSorted(overCap), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "exactly the six expected shelves are over the disclosure cap (unchanged by Wave-7 B2-B4)");
 eq(discBy.fiction, 5 + B7.fictionDiscovery + W7B.fictionDisc, "fiction discovery is 20 (7 collection cards + 13 standalone works)");
+// Current public surface (R2-B): each of the 22 Wave-6 works is listed, as its own card, on its category page.
+{
+  const pages = new Map<string, string>();
+  for (const s of WAVE6_WORK_SLUGS) {
+    const w = LIBRARY_WORKS.find((x) => x.slug === s && x.state === "published");
+    if (!w) { ok(false, `Wave-6 work ${s} is published`); continue; }
+    if (!pages.has(w.shelf)) {
+      const html = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: w.shelf }));
+      const at = html.indexOf('data-testid="category-works"');
+      pages.set(w.shelf, at === -1 ? "" : html.slice(at, html.indexOf("</section>", at)));
+    }
+    ok(pages.get(w.shelf)!.includes(`href="${w.href}"`), `Wave-6 work ${s} is listed on ${categoryForShelf(w.shelf).route}`);
+  }
+}
 
 // ── 4. SITEMAP — 3672 URLs, 0 duplicates, Wave-6 set == p3 cumulativeRoutes EXACTLY ──
 const urls = sitemap().map((e) => e.url);

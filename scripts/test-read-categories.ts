@@ -1,11 +1,11 @@
 /**
- * Reading Room IA v2 — R2-A validator: category registry, the nine /read category routes, catalogue coverage,
- * the Letters corpus treatment and catalogue invariance.
+ * Reading Room IA v2 — R2 validator: category registry, the nine /read category routes, catalogue coverage, the
+ * Letters corpus treatment, catalogue invariance (R2-A), and the category-first /read landing (R2-B).
  *
  *   npm run test:read-categories
  *
- * Scope is R2-A only. It asserts nothing about the /read landing (still the discovery view in this stage;
- * test:shelf-disclosure owns it), the sitemap or build totals — those change in later stages.
+ * Scope is R2-A + R2-B. /read is exactly nine category cards (no work card, collection card, disclosure or Daily
+ * Kural), and the shared `life-writing` label is சுயசரிதை. The sitemap is still R2-C's: no category URL is in it yet.
  *
  * Coverage is checked on RENDERED MARKUP from each route file's own default export, not on a re-derivation of
  * the shelf filter: the risk is a work that stops being delivered by a page, and only counting the anchors the
@@ -18,9 +18,11 @@ import path from "node:path";
 import { createElement, type ReactElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { SHELVES, publishedWorks, type ShelfId } from "../data/library";
+import { LangProvider } from "../lib/i18n";
+import ReadIndex from "../app/read/page";
 import { LIBRARY_COLLECTIONS, collectionMemberWorks } from "../data/collections";
 import { chapterIndex } from "../data/references";
-import { READ_CATEGORIES, READ_CATEGORY_ROUTES, READ_IA_R2_CONTRIBUTION, categoryForShelf, worksInCategory } from "../data/read-categories";
+import { READ_CATEGORIES, READ_CATEGORY_ROUTES, READ_IA_R2_CONTRIBUTION, categoryForShelf, collectionsInCategory, worksInCategory } from "../data/read-categories";
 import { loadMurasoliCorpusSummary, summarizeMurasoliCorpus } from "../lib/murasoli-corpus";
 import ChapterPage, { generateStaticParams as chapterParams } from "../app/read/[id]/page";
 import AutobiographyPage from "../app/read/autobiography/page";
@@ -256,7 +258,64 @@ for (const [source, target] of R3_MERGES) {
   eq(works.filter((w) => w.id === target).length, 0, `R3 merge target ${target} is not created in R2`);
 }
 
-// ── 7. Built output (fails closed without a build; CI runs this after `npm run build`) ──────────────────────
+// ── 7. The /read landing (R2-B) ─────────────────────────────────────────────────────────────────────────────
+// Rendered from the actual route module (app/read/page.tsx), in both languages.
+const EXPECTED_COLLECTIONS: Partial<Record<ShelfId, number>> = { fiction: 7, speeches: 2 };
+for (const lang of ["en", "ta"] as const) {
+  const home = renderToStaticMarkup(createElement(LangProvider, { initialLang: lang, children: createElement(ReadIndex) }));
+  const cardRe = /<a[^>]*data-testid="read-category-card"[^>]*>[\s\S]*?<\/a>/g;
+  const cards = home.match(cardRe) ?? [];
+  eq(cards.length, 9, `/read ${lang}: exactly 9 category cards`);
+  const cardHrefs = cards.map((c) => /href="([^"]+)"/.exec(c)?.[1]);
+  eq(cardHrefs, [...READ_CATEGORY_ROUTES], `/read ${lang}: card links are exactly the 9 registry routes, in order`);
+  eq(new Set(cardHrefs).size, 9, `/read ${lang}: 9 unique category links`);
+  eq(cards.map((c) => /data-shelf="([^"]+)"/.exec(c)?.[1]), SHELVES.map((sh) => sh.id), `/read ${lang}: cards follow SHELVES order`);
+  eq(hrefsIn(home).filter((h) => h !== "/" && !READ_CATEGORY_ROUTES.includes(h)), [], `/read ${lang}: no link besides Home and the 9 categories`);
+  eq(hrefsIn(home).filter((h) => works.some((w) => w.href === h)).length, 0, `/read ${lang}: 0 canonical work cards`);
+  eq(hrefsIn(home).filter((h) => h.startsWith("/collections/")).length, 0, `/read ${lang}: 0 collection cards`);
+  ok(!home.includes("daily-kural") && !home.includes("இன்றைய குறள்"), `/read ${lang}: no Daily Kural panel`);
+  eq((home.match(/<details/g) ?? []).length, 0, `/read ${lang}: no shelf-disclosure <details>`);
+  eq((home.match(/<h1[\s>]/g) ?? []).length, 1, `/read ${lang}: exactly one h1`);
+  ok(home.includes('<main id="main"'), `/read ${lang}: main landmark`);
+  for (const c of READ_CATEGORIES) {
+    const card = cards.find((x) => x.includes(`data-shelf="${c.shelf}"`)) ?? "";
+    const sh = SHELVES.find((x) => x.id === c.shelf)!;
+    ok(card.includes(`lang="ta">${sh.ta}<`), `/read ${lang}: ${c.shelf} card carries its Tamil label, marked lang="ta"`);
+    ok(card.includes(`>${sh.en.replace("&", "&amp;")}<`), `/read ${lang}: ${c.shelf} card carries its English label`);
+    ok(/<svg[^>]*aria-hidden="true"/.test(card), `/read ${lang}: ${c.shelf} card carries its (decorative) icon`);
+    const count = /data-testid="read-category-count"[^>]*>([^<]*)</.exec(card)?.[1] ?? "";
+    const n = EXPECTED_COUNTS[c.shelf];
+    const k = EXPECTED_COLLECTIONS[c.shelf] ?? 0;
+    eq(worksInCategory(c.shelf).length, n, `${c.shelf}: derived work count = ${n}`);
+    eq(collectionsInCategory(c.shelf).length, k, `${c.shelf}: derived collection count = ${k}`);
+    const primary = lang === "en" ? `${n} ${n === 1 ? "work" : "works"}` : `${n} ${n === 1 ? "படைப்பு" : "படைப்புகள்"}`;
+    const secondary = k === 0 ? "" : lang === "en" ? ` · ${k} ${k === 1 ? "collection" : "collections"}` : ` · ${k} ${k === 1 ? "தொகுப்பு" : "தொகுப்புகள்"}`;
+    eq(count, primary + secondary, `/read ${lang}: ${c.shelf} card count reads "${primary + secondary}" (work count primary)`);
+  }
+  ok((cards.find((x) => x.includes('data-shelf="life-writing"')) ?? "").includes("சுயசரிதை"), `/read ${lang}: the life-writing card shows சுயசரிதை`);
+}
+// The label is the shared shelf label, so the category page carries it too — one source of truth.
+eq(SHELVES.find((sh) => sh.id === "life-writing")?.ta, "சுயசரிதை", "SHELVES: life-writing Tamil label is சுயசரிதை (R2-B)");
+ok((rendered["life-writing"] ?? "").includes("சுயசரிதை") && !(rendered["life-writing"] ?? "").includes("வாழ்க்கை எழுத்து"), "/read/autobiography shows the shared சுயசரிதை label");
+ok(SHELVES.every((sh) => sh.ta !== "வாழ்க்கை எழுத்து"), "the retired label வாழ்க்கை எழுத்து is not a shelf label");
+
+// Source contract: Daily Kural is no longer rendered on /read, and is otherwise untouched.
+{
+  const readSrc = fs.readFileSync("app/read/page.tsx", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:])\/\/.*$/gm, "$1");
+  ok(!/DailyKural|daily-kural/.test(readSrc), "app/read/page.tsx no longer imports or renders DailyKural");
+  // Removed deliberately: `revalidate = 900` existed only to keep the daily Kural current. A clean build proved the
+  // removal adds and removes no route (5280 prerendered either way); /read simply becomes fully static (section 8).
+  ok(!/export\s+const\s+revalidate\b/.test(readSrc), "app/read/page.tsx no longer revalidates (it carried only the Daily Kural)");
+  ok(fs.existsSync("components/DailyKural.tsx") && fs.existsSync("lib/daily-kural.ts") && fs.existsSync("scripts/test-daily-kural.ts"), "Daily Kural component, logic and test are retained");
+  const pkg = JSON.parse(fs.readFileSync("package.json", "utf8")) as { scripts: Record<string, string> };
+  ok(/test-daily-kural\.ts/.test(pkg.scripts["test:daily-kural"] ?? ""), "test:daily-kural is still registered");
+  ok(/npm run test:daily-kural/.test(fs.readFileSync(".github/workflows/library-ci.yml", "utf8")), "test:daily-kural still runs in CI");
+  const homeSrc = fs.readFileSync("components/LibraryHome.tsx", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:])\/\/.*$/gm, "$1");
+  ok(!/discoveryShelves|INITIAL_WORKS_PER_SHELF|DailyKural/.test(homeSrc), "LibraryHome renders neither the discovery model nor the Daily Kural");
+  ok(/READ_CATEGORIES/.test(homeSrc) && !/\/read\/(autobiography|letters|fiction|poetry|drama|cinema|speeches|essays|literary-commentary)/.test(homeSrc), "LibraryHome takes its routes from the registry (none typed)");
+}
+
+// ── 8. Built output (fails closed without a build; CI runs this after `npm run build`) ──────────────────────
 // Earlier-wave validators add READ_IA_R2_CONTRIBUTION.build to their whole-build pins. This is what makes that term
 // honest: the category routes are exactly what R2-A adds to the build, each prerendered, and none reaches the sitemap.
 const NEXT = path.join(process.cwd(), ".next");
@@ -264,7 +323,9 @@ if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
   ok(false, "no production build (.next/prerender-manifest.json) — run `npm run build`; the build checks cannot be skipped");
 } else {
   const built = Object.keys((JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, unknown> }).routes);
-  eq(READ_IA_R2_CONTRIBUTION.build, 9, "R2 build contribution = 9 (one page per registry route)");
+  eq(READ_IA_R2_CONTRIBUTION.build, 9, "R2 build contribution = 9 (one page per registry route; R2-B adds no route)");
+  const readEntry = (JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, { initialRevalidateSeconds: number | false }> }).routes["/read"];
+  ok(!!readEntry && readEntry.initialRevalidateSeconds === false, "/read is prerendered fully static (no revalidation once the Daily Kural is gone)");
   eq(built.filter((r) => READ_CATEGORY_ROUTES.includes(r)).sort(), [...READ_CATEGORY_ROUTES].sort(), "all 9 category routes are prerendered");
   for (const r of READ_CATEGORY_ROUTES) ok(fs.existsSync(path.join(NEXT, "server/app", `${r}.html`)), `${r}.html is built`);
   eq(built.filter((r) => /^\/read\/[^/]+$/.test(r) && !chapterIds.includes(r.slice(6)) && !READ_CATEGORY_ROUTES.includes(r) && r !== "/read/nenjukku-neethi"), [], "no other /read/<x> page is built");

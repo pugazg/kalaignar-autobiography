@@ -29,8 +29,12 @@ import type { ManthiriReader } from "../data/manthiri-kumari";
 import type { RajaRaniReader } from "../data/raja-rani";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import LibraryHome from "../components/LibraryHome";
+import LibraryCategoryPage from "../components/LibraryCategoryPage";
 
-const CAP = 6; // must match INITIAL_WORKS_PER_SHELF in components/LibraryHome.tsx
+const CAP = 6; // the historical /read disclosure cap (INITIAL_WORKS_PER_SHELF until R2-B retired the rendered discovery view)
 const BASE = "https://nenjukkuneethi.org";
 const root = process.cwd();
 
@@ -276,8 +280,22 @@ const entries = shelves.flatMap((s) => s.entries);
 eq(entries.length, 90 + W7K.discovery + W8.discovery, "A5 discovery entries = 96 (post Wave-7 B5/B6/K: +6; post Wave-7 B2-B4: +10 net — arumbu trio + பெரிய இடத்துப் பெண் collapse into arumbu-1978)");
 eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible + W8.visible, "A5 initially visible discovery entries = 41 (cinema already over-cap; +1 Literary Commentary under the cap)");
 const cin = shelves.find((s) => s.shelf.id === "cinema-writing")!;
-eq(cin.entries.length, 10, "A5 Cinema renders 10 discovery entries (post Wave-7 B1: +3)");
-ok(cin.entries.length > CAP, "A5 Cinema is over the cap — disclosure control active (10 > 6)");
+eq(cin.entries.length, 10, "A5 Cinema has 10 discovery entries in the discovery model (post Wave-7 B1: +3)");
+ok(cin.entries.length > CAP, "A5 Cinema is over the historical cap in the discovery model (10 > 6; data — /read renders no disclosure since R2-B)");
+// Current public surface (R2-B): /read is nine category cards with no disclosure; the Cinema category page lists all
+// ten Cinema works individually, in catalogue order.
+{
+  const home = renderToStaticMarkup(createElement(LibraryHome));
+  eq((home.match(/<details/g) ?? []).length, 0, "A5 /read renders no disclosure (R2-B category landing)");
+  const page = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: "cinema-writing" }));
+  const at = page.indexOf('data-testid="category-works"');
+  const grid = at === -1 ? "" : page.slice(at, page.indexOf("</section>", at));
+  const hrefs: string[] = [];
+  const re = /<a[^>]+href="([^"]+)"/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(grid)) !== null) hrefs.push(m[1]);
+  eq(hrefs, publishedWorks().filter((w) => w.shelf === "cinema-writing").map((w) => w.href), "A5 /read/cinema lists all 10 Cinema works in catalogue order");
+}
 eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "poetry", "speeches"], "A5 the six over-cap shelves (post Batch-7: Fiction joined)");
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "A5 Fiction has 20 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)");
 

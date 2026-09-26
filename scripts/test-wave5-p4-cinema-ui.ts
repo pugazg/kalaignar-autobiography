@@ -3,14 +3,18 @@
  *
  *   npx tsx --tsconfig tsconfig.scripts.json scripts/test-wave5-p4-cinema-ui.ts
  *
- * Renders the REAL /read catalogue component (LibraryHome) in both languages and proves the six frozen
+ * Renders the REAL catalogue surface in both languages and proves the six frozen
  * Wave-5 Cinema cards keep their distinct public semantics side by side (Wave 6 P4 added ammaiyappan as
  * the 7th cinema card, which pushes the shelf over the disclosure cap). It is deliberately NOT the 443-check P2
  * reader test (which renders each work's reader/source) nor the P3 data-layer catalogue test: it
  * asserts what the SHELF actually renders across all six works — order, per-card copy, and disclosure —
  * so a shared shelf/reader-structure or a shared card component cannot flatten one work into another.
  *
- * What renders on a /read card is the title + description only (see components/LibraryHome.tsx
+ * Reading Room IA v2 R2-B: the Cinema work cards are rendered by the Cinema category page (/read/cinema,
+ * components/LibraryCategoryPage.tsx) — the same WorkCard, in full with no disclosure — and /read is nine category
+ * cards. So the card assertions below run on /read/cinema; section 4 records the retired /read disclosure as data only.
+ *
+ * What renders on a work card is the title + description only (see components/LibraryHome.tsx
  * WorkCard). Unit-count LABELS and reader-only fields (source scene numbers, authorship tiers, the
  * song-11/scene-58 relation) are NOT on the card — those distinctions are proven where they live, in
  * scripts/validate-wave5-p4-cinema-integrity.ts. This file proves the rendered card surface.
@@ -21,26 +25,27 @@
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import LibraryHome from "../components/LibraryHome";
+import LibraryCategoryPage from "../components/LibraryCategoryPage";
 import { LangProvider } from "../lib/i18n";
 import { discoveryShelves } from "../data/collections";
 
-const CAP = 6; // must match INITIAL_WORKS_PER_SHELF
+const CAP = 6; // the HISTORICAL /read disclosure cap (retired from the page in R2-B; recorded as data in section 4)
 let checks = 0;
 const failures: string[] = [];
 const ok = (cond: boolean, label: string) => { checks++; if (!cond) failures.push(label); };
 const eq = <T,>(a: T, b: T, label: string) => { checks++; if (JSON.stringify(a) !== JSON.stringify(b)) failures.push(`${label}\n     expected ${JSON.stringify(b)}\n     actual   ${JSON.stringify(a)}`); };
 
 // Bare render → context default lang "en"; LangProvider wrapper → its useState initial "ta".
-const htmlEn = renderToStaticMarkup(createElement(LibraryHome));
-const htmlTa = renderToStaticMarkup(createElement(LangProvider, null, createElement(LibraryHome)));
+const htmlEn = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: "cinema-writing" }));
+const htmlTa = renderToStaticMarkup(createElement(LangProvider, null, createElement(LibraryCategoryPage, { shelf: "cinema-writing" })));
+const homeEn = renderToStaticMarkup(createElement(LibraryHome));
 
-/** The markup of one shelf <section>, sliced by its aria-labelledby anchor (same technique as test-shelf-disclosure). */
-function sectionHtml(html: string, shelfId: string): string {
-  const start = html.indexOf(`aria-labelledby="shelf-${shelfId}"`);
+/** The category page's work grid (its "category-works" section). */
+function worksGrid(html: string): string {
+  const start = html.indexOf('data-testid="category-works"');
   if (start === -1) return "";
-  const rest = html.slice(start);
-  const end = rest.indexOf("</section>");
-  return end === -1 ? rest : rest.slice(0, end);
+  const end = html.indexOf("</section>", start);
+  return end === -1 ? html.slice(start) : html.slice(start, end);
 }
 function hrefsIn(s: string): string[] {
   const re = /<a[^>]+href="([^"]+)"/g;
@@ -59,14 +64,13 @@ function cardHtml(section: string, href: string): string {
 }
 const textOf = (s: string) => s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 
-const cinemaEn = sectionHtml(htmlEn, "cinema-writing");
-const cinemaTa = sectionHtml(htmlTa, "cinema-writing");
-ok(cinemaEn.length > 0 && cinemaTa.length > 0, "Cinema Writing section renders in both languages");
+const cinemaEn = worksGrid(htmlEn);
+const cinemaTa = worksGrid(htmlTa);
+ok(cinemaEn.length > 0 && cinemaTa.length > 0, "the /read/cinema work grid renders in both languages");
 
 // ── 1. Cinema cards in EXACT onboarding order (rendered hrefs) ────────────────────────────────────
 // Wave 6 P4 published ammaiyappan (Wave-6 Batch 1) as the 7th cinema card; Wave 7 B1 adds the 8th–10th
-// (maruthanattu · vandikkaran · naam) in manifest order. All render inside the shelf's disclosure, since
-// the shelf is over the cap — see section 4.
+// (maruthanattu · vandikkaran · naam) in manifest order. Since R2-B all ten render on /read/cinema, in full.
 const ORDER = [
   "/cinema/manohara", "/cinema/parasakthi", "/cinema/tirumbippaar",
   "/cinema/thirai-isai-paadalgal", "/cinema/manthiri-kumari", "/cinema/raja-rani",
@@ -124,17 +128,16 @@ for (const href of ["/cinema/manthiri-kumari", "/cinema/raja-rani"]) {
   ok(!/rights|nationalis|உரிமை/i.test(both), `${href} card renders no rights claim`);
 }
 
-// ── 4. Over-cap shelves render a disclosure ───────────────────────────────────────────────────────
-// Wave 6 P4 pushed Cinema (7), Poetry (14), Drama (8), Essays & Articles (9) over the cap alongside
-// Speeches (17); each renders one <details>. (Fiction stays at 5 — at/under the cap — so no disclosure.)
-ok(cinemaEn.indexOf("<details") !== -1, "Cinema section renders a disclosure (10 entries, over the cap)");
-const speechesEn = sectionHtml(htmlEn, "speeches");
-ok(speechesEn.indexOf("<details") !== -1, "Speeches section carries a disclosure");
-const totalDetails = (htmlEn.match(/<details/g) ?? []).length;
-eq(totalDetails, 6, "six disclosures on the whole page (the six over-cap shelves; Batch-7 pushed Fiction over)");
-// Cross-check the rendered disclosure count matches the derived over-cap shelf set.
+// ── 4. The retired /read disclosure — now data only ──────────────────────────────────────────────
+// Until R2-A, the six over-cap shelves each rendered one <details> on /read, Cinema (10 entries) among them. R2-B
+// retired that UI: /read renders nine category cards and no disclosure, and /read/cinema shows all ten cards with no
+// disclosure. The over-cap shelf set is still derivable from the unchanged discovery model and is recorded as data.
+eq((homeEn.match(/<details/g) ?? []).length, 0, "/read renders no disclosure (R2-B)");
+eq((htmlEn.match(/<details/g) ?? []).length, 0, "/read/cinema renders all ten cards with no disclosure");
+ok(/href="\/read\/cinema"/.test(homeEn), "/read links the Cinema category page");
+ok(/data-shelf="cinema-writing"[\s\S]*?>10 works</.test(homeEn), "the /read Cinema card states its 10 works");
 const overCap = discoveryShelves().filter((s) => s.entries.length > CAP).map((s) => s.shelf.id);
-eq(overCap, ["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"], "the six over-cap shelves (post Batch-7: Fiction joined)");
+eq(overCap, ["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"], "the discovery model's six over-cap shelves (data; post Batch-7: Fiction joined)");
 
 // ── Report ──────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {
@@ -143,5 +146,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`\nwave5-p4-cinema-ui — ${checks} checks, 0 failed`);
-  console.log("  10 Cinema cards in onboarding order (+ammaiyappan Wave-6, +3 Wave-7 B1) · per-work semantics distinct · Manthiri credit kept · Raja neutral · no year/edition/rights · Cinema over-cap · 6 disclosures");
+  console.log("  10 Cinema cards on /read/cinema in onboarding order (+ammaiyappan Wave-6, +3 Wave-7 B1) · per-work semantics distinct · Manthiri credit kept · Raja neutral · no year/edition/rights · /read 0 disclosures · discovery model 6 over-cap shelves (data)");
 }

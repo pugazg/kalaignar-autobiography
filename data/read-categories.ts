@@ -1,17 +1,18 @@
-// Reading Room IA v2 — R2 category registry (stage R2-A).
+// Reading Room IA v2 — R2 category registry (introduced in R2-A; drives the /read landing since R2-B).
 //
 // The ONE place that maps the nine existing shelves to their category routes under /read. It carries route
 // metadata only. It does NOT carry membership: which works sit on a category is always derived from
 // `publishedWorks()` and each work's own `shelf`, so there is no second source of truth to drift.
 //
-// Stored shelf ids are not renamed. The public shelf labels still come from `SHELVES` in data/library.ts —
-// the `life-writing` Tamil label change belongs to a later stage and is deliberately not made here.
+// Stored shelf ids are not renamed. The public shelf labels come from `SHELVES` in data/library.ts, the single
+// source for both the /read category cards and the category pages (R2-B: `life-writing` reads சுயசரிதை there).
 //
 // Every slug is checked against the 391 memoir chapter ids served by app/read/[id] and against
 // `nenjukku-neethi` (scripts/test-read-categories.ts). Static segments take precedence over [id] in the App
 // Router, so a slug that collided would shadow a chapter — none does.
 
 import { SHELVES, publishedWorks, type LibraryWork, type Shelf, type ShelfId } from "./library";
+import { LIBRARY_COLLECTIONS, type LibraryCollection } from "./collections";
 
 export interface ReadCategory {
   shelf: ShelfId;
@@ -74,6 +75,14 @@ export function shelfForCategory(shelf: ShelfId): Shelf {
  */
 export function worksInCategory(shelf: ShelfId): LibraryWork[] {
   return publishedWorks().filter((w) => w.shelf === shelf);
+}
+
+/**
+ * The collections on a shelf, from the collection registry. Secondary context only: a category's primary count is
+ * always its canonical works, and a collection never stands in for its members.
+ */
+export function collectionsInCategory(shelf: ShelfId): LibraryCollection[] {
+  return LIBRARY_COLLECTIONS.filter((c) => c.shelf === shelf);
 }
 
 /** Page metadata for a category route, derived from the registry and the shared shelf labels. */

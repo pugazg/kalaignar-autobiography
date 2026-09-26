@@ -1,17 +1,26 @@
 /**
- * Tests for the /read shelf progressive disclosure (Reading Room Wayfinding, Phase 0).
+ * Tests for /read shelf delivery — re-scoped for Reading Room IA v2 R2-B.
  *
  *   npx tsx scripts/test-shelf-disclosure.ts
  *
- * Plain assertions run by tsx, matching scripts/test-daily-kural.ts — the repo has no test runner,
- * and adding one for a presentation cap would be a larger change than the thing under test.
+ * HISTORY. This file was written for the Phase-0 progressive disclosure: /read rendered every shelf's discovery
+ * entries with the first 6 visible and the rest behind a native <details>. R2-B retired that public surface. /read is
+ * now nine category cards, and every work is delivered by its category page (/read/<category>) in full, with no
+ * disclosure at all.
  *
- * These assertions run against the RENDERED MARKUP rather than against a re-implementation of the
- * slice. That distinction is the whole point of the test: the cap is a display decision, and the
- * risk it introduces is that a work stops being delivered — dropped from the HTML, duplicated
- * across the two grids, or reordered. Checking `works.slice(0, 6)` again would prove none of that,
- * because it would share the defect with the code it is checking. Rendering the component and
- * counting the anchors it actually emits is what proves every published work still ships.
+ * What is kept, and where:
+ *   1. The discovery DATA MODEL, `discoveryShelves()`, is unchanged and is still recorded here as a historical
+ *      data-level invariant (98 entries, 42 within the historical 6-per-shelf cap, 6 over-cap shelves), with its
+ *      derivation rules. It is no longer claimed to be rendered anywhere.
+ *   2. The inventory guarantee this file existed for — a display decision must never stop a work being delivered —
+ *      is now proven on the RENDERED category pages: every published work's link is emitted exactly once, in
+ *      catalogue order, and none is hidden behind a disclosure.
+ *   3. The landing is proven to be the category landing: 9 cards, no work/collection card, no <details>.
+ *   4. The accessibility decisions pinned for the old disclosure (dark text and focus ring on night-text/70) are
+ *      carried to the control that replaced it, the category card.
+ *
+ * These assertions run against RENDERED MARKUP, not a re-implementation, for the reason this file always gave:
+ * counting the anchors a page actually emits is what proves every published work still ships.
  *
  * Exits non-zero on failure so it can be wired into CI alongside the archival validators.
  */
@@ -21,10 +30,13 @@ import path from "node:path";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import LibraryHome from "../components/LibraryHome";
-import { publishedWorks } from "../data/library";
-import { discoveryShelves } from "../data/collections";
+import LibraryCategoryPage from "../components/LibraryCategoryPage";
+import { SHELVES, publishedWorks } from "../data/library";
+import { LIBRARY_COLLECTIONS, discoveryShelves } from "../data/collections";
+import { READ_CATEGORIES, READ_CATEGORY_ROUTES } from "../data/read-categories";
 
-const CAP = 6; // must match INITIAL_WORKS_PER_SHELF in components/LibraryHome.tsx
+/** The HISTORICAL /read disclosure cap (Phase 0 → R2-A). Kept only to state the frozen discovery arithmetic below. */
+const HISTORICAL_CAP = 6;
 
 let checks = 0;
 const failures: string[] = [];
@@ -37,22 +49,6 @@ const eq = <T,>(a: T, b: T, label: string) => {
   if (JSON.stringify(a) !== JSON.stringify(b)) failures.push(`${label}\n     expected ${JSON.stringify(b)}\n     actual   ${JSON.stringify(a)}`);
 };
 
-// ── Render ───────────────────────────────────────────────────────────────────────────────────────
-// createElement rather than JSX so this file stays .ts: the components use Next's automatic JSX
-// runtime and do not import React, which a standalone tsx run outside Next cannot supply.
-const html = renderToStaticMarkup(createElement(LibraryHome));
-const shelves = discoveryShelves();
-const works = publishedWorks();
-
-/** The markup for one shelf <section>, sliced out by its aria-labelledby anchor. */
-function sectionHtml(shelfId: string): string {
-  const start = html.indexOf(`aria-labelledby="shelf-${shelfId}"`);
-  if (start === -1) return "";
-  const rest = html.slice(start);
-  const end = rest.indexOf("</section>");
-  return end === -1 ? rest : rest.slice(0, end);
-}
-
 /** exec loop rather than [...matchAll]: the app's tsconfig target predates downlevelIteration. */
 function hrefsIn(s: string): string[] {
   const re = /<a[^>]+href="([^"]+)"/g;
@@ -62,107 +58,95 @@ function hrefsIn(s: string): string[] {
   return out;
 }
 
-// ── 1. Every discovery entry is delivered, exactly once ──────────────────────────────────────────
-// The inventory check: a display cap must never change what the page ships. Since Phase 1 the unit of
-// display is the DISCOVERY ENTRY, not the work — a collection entry stands in for its members — so the
-// inventory is checked against the entries the catalogue derives, and the work count is asserted
-// separately below precisely because the two numbers are no longer the same.
+// createElement rather than JSX so this file stays .ts: the components use Next's automatic JSX runtime and do not
+// import React, which a standalone tsx run outside Next cannot supply.
+const home = renderToStaticMarkup(createElement(LibraryHome));
+const works = publishedWorks();
+const shelves = discoveryShelves();
+
+// ── 1. The discovery data model — historical, data-level ─────────────────────────────────────────────────────
+// Frozen at R2-A (the last stage that rendered it): 335 works → 98 entries, 42 within the cap, 6 over-cap shelves.
 const entries = shelves.flatMap((s) => s.entries);
-const entryHrefs = entries.map((e) => (e.kind === "collection" ? e.collection.href : e.work.href));
-const allCardHrefs = shelves.flatMap((s) => hrefsIn(sectionHtml(s.shelf.id)));
-eq(allCardHrefs.length, entries.length, `every discovery entry is rendered (${entries.length} card links)`);
-eq(new Set(allCardHrefs).size, entries.length, "no entry is rendered twice");
-eq([...allCardHrefs].sort(), [...entryHrefs].sort(), "the rendered hrefs are exactly the derived entry hrefs");
-
-// The catalogue did not shrink. Works and cards are different measurements and this pins both.
-ok(works.length > entries.length, `the catalogue holds more works (${works.length}) than the page holds cards (${entries.length})`);
-
-// ── 2–6. Per shelf: cap, disclosure presence, split, order, remainder ────────────────────────────
-for (const { shelf, works: shelfWorks, entries: shelfEntries } of shelves) {
-  const s = sectionHtml(shelf.id);
-  const label = `${shelf.en} (${shelfWorks.length} works / ${shelfEntries.length} entries)`;
-  const entryHref = (e: (typeof shelfEntries)[number]) => (e.kind === "collection" ? e.collection.href : e.work.href);
-  ok(s.length > 0, `${label}: shelf section is rendered`);
-
-  const detailsAt = s.indexOf("<details");
-  const hasDisclosure = detailsAt !== -1;
-
-  // THE CAP COUNTS ENTRIES, NOT WORKS. Literary-commentary has 2 works and 2 entries, so it has no
-  // disclosure; Fiction has 157 works but 18 ENTRIES (six collections collapse), so it is over the cap
-  // and does — and that must follow from the entry count, not from any test for a named shelf.
-  if (shelfEntries.length <= CAP) {
-    ok(!hasDisclosure, `${label}: no disclosure on a shelf of ${shelfEntries.length} ≤ ${CAP} entries`);
-    eq(hrefsIn(s), shelfEntries.map(entryHref), `${label}: all entries shown, in derived order`);
-  } else {
-    ok(hasDisclosure, `${label}: has a disclosure`);
-    const before = hrefsIn(s.slice(0, detailsAt));
-    const inside = hrefsIn(s.slice(detailsAt));
-
-    eq(before.length, CAP, `${label}: exactly ${CAP} cards before the disclosure`);
-    eq(before, shelfEntries.slice(0, CAP).map(entryHref), `${label}: the first ${CAP} are the first ${CAP} derived`);
-    eq(inside, shelfEntries.slice(CAP).map(entryHref), `${label}: the overflow is the remainder, in derived order`);
-    eq([...before, ...inside], shelfEntries.map(entryHref), `${label}: derived order is preserved across the split`);
-
-    // The summary must state the true remainder — a wrong number here is a promise the page breaks.
-    const summary = /<summary[^>]*>([\s\S]*?)<\/summary>/.exec(s.slice(detailsAt));
-    ok(!!summary, `${label}: the disclosure has a <summary>`);
-    const remainder = shelfEntries.length - CAP;
-    ok(
-      !!summary && new RegExp(`\\b${remainder}\\b`).test(summary[1]),
-      `${label}: the summary names the remainder (${remainder})`,
-    );
-    ok(!!summary && summary[1].replace(/<[^>]*>/g, "").trim().length > 0, `${label}: the summary has a text label, not only a marker`);
-  }
-
-  // The shelf heading carries the shelf's TOTAL, not the visible count.
-  const heading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(s);
-  ok(
-    !!heading && new RegExp(`\\b${shelfWorks.length}\\b`).test(heading[1]),
-    `${label}: the heading states the full published count`,
-  );
+const entryHref = (e: (typeof entries)[number]) => (e.kind === "collection" ? e.collection.href : e.work.href);
+eq(entries.length, 98, "discoveryShelves(): 98 discovery entries (historical)");
+eq(new Set(entries.map(entryHref)).size, entries.length, "discoveryShelves(): every entry is distinct");
+eq(shelves.reduce((n, s) => n + Math.min(HISTORICAL_CAP, s.entries.length), 0), 42, "discoveryShelves(): 42 entries within the historical 6-per-shelf cap");
+eq(shelves.filter((s) => s.entries.length > HISTORICAL_CAP).length, 6, "discoveryShelves(): 6 shelves over the historical cap");
+eq(shelves.reduce((n, s) => n + s.works.length, 0), works.length, "discoveryShelves(): its shelves still hold every published work");
+ok(works.length > entries.length, `the catalogue holds more works (${works.length}) than the discovery model has entries (${entries.length})`);
+for (const s of shelves) {
+  // The derivation rule that made the entry count smaller than the work count: a collection entry stands in for its
+  // members, and every other work stands for itself. Checked as data, per shelf.
+  const members = new Set(s.collections.flatMap((c) => c.members.map((m) => m.workId)));
+  const standalone = s.works.filter((w) => !members.has(w.id));
+  eq(s.entries.length, s.collections.length + standalone.length, `${s.shelf.en}: entries = collections + standalone works (data)`);
 }
 
-// ── 7. Native disclosure semantics, so it survives without JavaScript ────────────────────────────
-const detailsCount = (html.match(/<details/g) ?? []).length;
-const summaryCount = (html.match(/<summary/g) ?? []).length;
-eq(detailsCount, shelves.filter((s) => s.entries.length > CAP).length, "one <details> per over-cap shelf");
-eq(summaryCount, detailsCount, "every <details> has exactly one <summary>");
-ok(!/aria-expanded/.test(html), "no hand-written aria-expanded duplicating native <details> state");
-ok(!/\shidden(=|\s|>)/.test(html), "no `hidden` attribute — that would stay hidden without JavaScript");
+// ── 2. The landing is the category landing ───────────────────────────────────────────────────────────────────
+const homeHrefs = hrefsIn(home);
+eq(homeHrefs.filter((h) => h !== "/"), [...READ_CATEGORY_ROUTES], "/read links only to the 9 category routes (plus Home), in order");
+eq((home.match(/data-testid="read-category-card"/g) ?? []).length, 9, "/read renders exactly 9 category cards");
+eq(homeHrefs.filter((h) => works.some((w) => w.href === h)).length, 0, "/read renders no work card");
+eq(homeHrefs.filter((h) => h.startsWith("/collections/")).length, 0, "/read renders no collection card");
+eq((home.match(/<details/g) ?? []).length, 0, "/read has no shelf disclosure <details>");
+eq((home.match(/<summary/g) ?? []).length, 0, "/read has no <summary>");
+ok(!/aria-expanded/.test(home), "/read has no hand-written aria-expanded");
+ok(!/\shidden(=|\s|>)/.test(home), "/read hides nothing behind a `hidden` attribute");
 
-// ── 8. The disclosure's dark-mode text stays above the AA floor ──────────────────────────────────
-// `dark:text-marina-light` is #1B7F87 on the #0C1116 Reading Room: 4.00:1, under the 4.5:1 WCAG AA
-// minimum for text this size. The class is correct elsewhere in the app on other backgrounds, which
-// is exactly why a reviewer could reinstate it here without noticing. This pins the decision.
-const summaries = /<summary[^>]*class="([^"]*)"/.exec(html);
-ok(!!summaries, "the disclosure summary carries a class list");
-ok(!!summaries && !summaries[1].includes("dark:text-marina-light"),
-   "the summary does not use dark:text-marina-light (4.00:1, below AA)");
-ok(!!summaries && summaries[1].includes("dark:text-night-text/70"),
-   "the summary uses the accessible dark class dark:text-night-text/70 (7.88:1)");
-// Same reasoning for the focus indicator: .focus-ring draws ring-marina, which is 2.5:1 against the
-// dark offset and page — under the 3:1 WCAG 1.4.11 (AA) asks of an author-supplied focus indicator.
-// The shared utility stays as it is for the rest of the app; this control overrides its dark ring.
-ok(!!summaries && summaries[1].includes("dark:focus-visible:ring-night-text/70"),
-   "the summary overrides its dark focus ring to night-text/70 (7.88:1, not marina's 2.5:1)");
+// ── 3. Full delivery, now through the category pages ─────────────────────────────────────────────────────────
+// The guarantee this file exists for: every published work is delivered, exactly once, in derived order, with nothing
+// behind a disclosure — measured on what the category pages actually emit.
+const delivered: string[] = [];
+for (const c of READ_CATEGORIES) {
+  const page = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: c.shelf }));
+  const start = page.indexOf('data-testid="category-works"');
+  const grid = start === -1 ? "" : page.slice(start, page.indexOf("</section>", start));
+  const expected = works.filter((w) => w.shelf === c.shelf).map((w) => w.href);
+  eq(hrefsIn(grid), expected, `${c.route}: every work on the shelf is delivered, in catalogue order`);
+  eq((page.match(/<details/g) ?? []).length, 0, `${c.route}: no disclosure — nothing is deferred`);
+  ok(!/\shidden(=|\s|>)/.test(page), `${c.route}: nothing is hidden`);
+  delivered.push(...hrefsIn(grid));
+}
+eq(delivered.length, works.length, `category pages deliver ${works.length} work links in total`);
+eq(new Set(delivered).size, works.length, "no work is delivered twice");
+eq([...delivered].sort(), works.map((w) => w.href).sort(), "the delivered links are exactly the published works");
 
-// ── 9. Phase 1 boundaries ────────────────────────────────────────────────────────────────────────
-// A guard, not a feature test: the collection architecture is a separately authorized phase, and
-// this file is the cheapest place to notice it arriving early.
-const root = path.join(process.cwd());
-// Phase 0's guard here asserted that data/collections.ts did NOT exist, to keep that PR from drifting
-// into the collection model. Phase 1 IS that model, so the guard is replaced rather than deleted: the
-// shelf component must still hold no collection logic and no shelf special-case — it renders whatever
-// entries the catalogue derives, and the grouping rules live in data/collections.ts, where the
-// source-linked validator can reach them.
-const home = fs.readFileSync(path.join(root, "components/LibraryHome.tsx"), "utf-8");
-ok(fs.existsSync(path.join(root, "data/collections.ts")), "the collection model lives in data/collections.ts");
+// ── 4. The landing card's count is the WORK count, never the discovery-entry count ───────────────────────────
+for (const shelf of SHELVES) {
+  const i = home.indexOf(`data-shelf="${shelf.id}"`);
+  const card = i === -1 ? "" : home.slice(i, home.indexOf("</a>", i));
+  const n = works.filter((w) => w.shelf === shelf.id).length;
+  const d = shelves.find((s) => s.shelf.id === shelf.id)?.entries.length ?? 0;
+  ok(new RegExp(`>${n} works?`).test(card), `${shelf.en}: the card states its ${n} works`);
+  if (d !== n) ok(!new RegExp(`>${d} works?`).test(card), `${shelf.en}: the card does not state the ${d} discovery entries as its count`);
+}
+
+// ── 5. Accessibility decisions carried to the control that replaced the disclosure ───────────────────────────
+// `.focus-ring` draws ring-marina, 2.5:1 against the dark page — under WCAG 1.4.11's 3:1. The disclosure overrode its
+// dark ring to night-text/70 (7.88:1); the category card, now the landing's only control, carries the same override.
+// Its title hover is written locally, not from accentFor()'s `dark:group-hover:text-marina-light` (3.8:1 on the card).
+const cardClass = /<a[^>]+data-testid="read-category-card"[^>]*class="([^"]*)"|<a[^>]+class="([^"]*)"[^>]*data-testid="read-category-card"/.exec(home);
+const cls = cardClass ? cardClass[1] ?? cardClass[2] : "";
+ok(cls.includes("dark:focus-visible:ring-night-text/70"), "category card overrides its dark focus ring to night-text/70");
+ok(!home.includes("dark:group-hover:text-marina-light"), "no category-card title hovers to marina-light in dark mode (3.8:1)");
+
+// ── 6. Boundaries ────────────────────────────────────────────────────────────────────────────────────────────
+// The landing holds no membership and no shelf special-case: it renders the registry, and counts come from the
+// catalogue and the collection registry through data/read-categories.ts.
+const root = process.cwd();
+// Comments are stripped: the file's own history notes name the retired model, and only code counts here.
+const src = fs
+  .readFileSync(path.join(root, "components/LibraryHome.tsx"), "utf-8")
+  .replace(/\/\*[\s\S]*?\*\//g, "")
+  .replace(/(^|[^:])\/\/.*$/gm, "$1");
 for (const forbidden of ['=== "fiction"', '=== "speeches"', "shelf.id ===", "shelfId ==="]) {
-  ok(!home.includes(forbidden), `LibraryHome special-cases no shelf: ${forbidden}`);
+  ok(!src.includes(forbidden), `LibraryHome special-cases no shelf: ${forbidden}`);
 }
-ok(!/collectionForWork|LIBRARY_COLLECTIONS/.test(home), "LibraryHome derives no membership itself");
+ok(!/collectionForWork|LIBRARY_COLLECTIONS/.test(src), "LibraryHome derives no membership itself");
+ok(!/discoveryShelves|INITIAL_WORKS_PER_SHELF|<details/.test(src), "LibraryHome no longer renders the discovery model or a disclosure");
+eq(LIBRARY_COLLECTIONS.length, 9, "the collection registry is unchanged: 9 collections");
 
-// ── Report ───────────────────────────────────────────────────────────────────────────────────────
+// ── Report ───────────────────────────────────────────────────────────────────────────────────────────────────
 if (failures.length) {
   console.error(`shelf-disclosure — ${checks} checks, ${failures.length} FAILED\n`);
   for (const f of failures) console.error(`  ✗ ${f}`);
@@ -170,9 +154,7 @@ if (failures.length) {
 } else {
   console.log(`shelf-disclosure — ${checks} checks, 0 failed`);
   console.log(
-    `  ${works.length} works across ${shelves.length} shelves · ` +
-      `${entries.length} discovery entries · ` +
-      `${shelves.reduce((n2, s) => n2 + Math.min(CAP, s.entries.length), 0)} initially visible · ` +
-      `${detailsCount} ${detailsCount === 1 ? "disclosure" : "disclosures"}`,
+    `  /read: 9 category cards, 0 disclosures · ${delivered.length} works delivered by 9 category pages · ` +
+      `discovery model (data only): ${entries.length} entries · 42 within the historical cap · 6 over-cap shelves`,
   );
 }
