@@ -5,9 +5,9 @@ import type { ReactNode } from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { ShelfId } from "@/data/library";
-import { categoryForShelf, collectionsInCategory, shelfForCategory, worksInCategory } from "@/data/read-categories";
+import { categoryForShelf, collectionsInCategory, publicationsInCategory, shelfForCategory, worksInCategory } from "@/data/read-categories";
 import { useLang } from "@/lib/i18n";
-import { CollectionCard, WorkCard } from "./LibraryHome";
+import { CollectionCard, PublicationCard, WorkCard } from "./LibraryHome";
 
 /**
  * One Reading Room category page (/read/<category>) — Reading Room IA v2 (introduced in R2-A; collections in R2-C).
@@ -31,6 +31,7 @@ export default function LibraryCategoryPage({ shelf, corpus }: { shelf: ShelfId;
   const labels = shelfForCategory(shelf);
   const works = worksInCategory(shelf);
   const collections = collectionsInCategory(shelf);
+  const publications = publicationsInCategory(shelf);
 
   const backLink = (
     <Link
@@ -107,6 +108,32 @@ export default function LibraryCategoryPage({ shelf, corpus }: { shelf: ShelfId;
             <div className="grid gap-3 sm:grid-cols-2">
               {collections.map((c) => (
                 <CollectionCard key={c.id} collection={c} ta={ta} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Source publications (R3) are SECONDARY provenance/navigation, after the works and collections: books whose
+            units are now canonical works (listed individually above) or witnesses. Omitted where a shelf has none. */}
+        {publications.length > 0 && (
+          <section aria-labelledby="category-publications" className="mb-10" data-testid="category-publications">
+            <h2
+              id="category-publications"
+              className="mb-1 flex items-baseline gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/65 dark:text-night-text/65"
+            >
+              <span className="font-tamil text-sm normal-case tracking-normal" lang="ta">
+                நூல்கள்
+              </span>
+              <span>Publications</span>
+            </h2>
+            <p className="mb-3 text-xs text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : undefined}>
+              {ta
+                ? "இப்படைப்புகள் அச்சான மூல நூல்கள். ஒவ்வொரு படைப்பும் மேலே தனியாகவும் உள்ளது."
+                : "The source books these works were printed in. Every work is also listed individually above."}
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {publications.map((p) => (
+                <PublicationCard key={p.id} publication={p} ta={ta} />
               ))}
             </div>
           </section>

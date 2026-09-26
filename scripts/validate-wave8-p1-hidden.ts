@@ -27,6 +27,7 @@ import { WAVE6_DRAMA_SLUGS } from "../lib/drama-wave6-routes";
 import { WAVE7_DRAMA_SLUGS } from "../lib/drama-wave7-routes";
 import { WAVE8_DRAMA_SLUGS } from "../lib/drama-wave8-routes";
 import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 // The /plays route registry is the de-duplicated union of these three lists (app/plays/[slug]/page.tsx).
 const ALL_PLAY_SLUGS: readonly string[] = Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS, ...WAVE7_DRAMA_SLUGS]));
 
@@ -82,14 +83,14 @@ eq(manifest.stage, "P1", "manifest records stage P1");
 const works = publishedWorks();
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
-eq(works.length, PUB ? P4_EXPECT.catalogue : P1_FROZEN.catalogue, PUB ? "catalogue 333 → 335 (P4: ore-mutham + sangatamil)" : "catalogue still 333");
+eq(works.length, PUB ? P4_EXPECT.catalogue + R3.works : P1_FROZEN.catalogue, PUB ? "catalogue 333 → 335 (P4: ore-mutham + sangatamil; + later R3)" : "catalogue still 333");
 eq(byShelf["letters"], P1_FROZEN.letters, "Letters still 1 (Murasoli 42–47 join the one murasoli-letters work)");
 eq(byShelf["drama"], PUB ? P4_EXPECT.drama : P1_FROZEN.drama, PUB ? "Drama 10 → 11 (P4)" : "Drama still 10");
 eq(byShelf["literary-commentary"], PUB ? P4_EXPECT.literaryCommentary : P1_FROZEN.literaryCommentary, PUB ? "Literary Commentary 3 → 4 (P4)" : "Literary Commentary still 3");
 eq(LIBRARY_COLLECTIONS.length, P1_FROZEN.collections, "collections still 9 (no Wave-8 collection)");
 const shelves = discoveryShelves();
-eq(shelves.flatMap((s) => s.entries).length, PUB ? P4_EXPECT.discovery : P1_FROZEN.discovery, PUB ? "/read discovery 96 → 98 (P4)" : "/read discovery still 96");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), PUB ? P4_EXPECT.visible : P1_FROZEN.visible, PUB ? "/read initially visible 41 → 42 (P4: Literary Commentary under the cap)" : "/read initially visible still 41");
+eq(shelves.flatMap((s) => s.entries).length, PUB ? P4_EXPECT.discovery + R3.discovery : P1_FROZEN.discovery, PUB ? "/read discovery 96 → 98 (P4; + later R3)" : "/read discovery still 96");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), PUB ? P4_EXPECT.visible + R3.visible : P1_FROZEN.visible, PUB ? "/read initially visible 41 → 42 (P4: Literary Commentary under the cap)" : "/read initially visible still 41");
 const libIds = new Set<string>((LIBRARY_WORKS as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
 ok(PUB ? LIBRARY_WORKS.filter((w) => w.id === "ore-mutham").length === 1 : !libIds.has("ore-mutham"), PUB ? "ore-mutham is exactly one LibraryWork (P4)" : "ore-mutham is NOT a LibraryWork");
 ok(PUB ? LIBRARY_WORKS.filter((w) => w.id === "sangatamil").length === 1 : !libIds.has("sangatamil"), PUB ? "sangatamil is exactly one LibraryWork (P4)" : "sangatamil is NOT a LibraryWork");

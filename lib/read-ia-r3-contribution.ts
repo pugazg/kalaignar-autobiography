@@ -41,8 +41,15 @@ export const READ_IA_R3_CONTRIBUTION = {
   /** R3 creates and removes no LibraryCollection (plan §6.5); membership is never edited (§7). */
   collections: 0,
   discovery: Object.values(discoveryByShelf).reduce((a, b) => a + b, 0),
+  /** The discovery term per shelf. */
+  discoveryShelves: discoveryByShelf,
   visible: SHELF_IDS.reduce(
     (n, s) => n + Math.min(6, (boundary.discovery[s] ?? 0) + discoveryByShelf[s]) - Math.min(6, boundary.discovery[s] ?? 0),
+    0,
+  ),
+  /** The change in the number of shelves over the historical 6-per-shelf discovery cap. */
+  overCap: SHELF_IDS.reduce(
+    (n, s) => n + Number((boundary.discovery[s] ?? 0) + discoveryByShelf[s] > 6) - Number((boundary.discovery[s] ?? 0) > 6),
     0,
   ),
   build: newRoutes.size,

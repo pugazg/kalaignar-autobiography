@@ -26,7 +26,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
-import { publishedWorks, LIBRARY_WORKS } from "../data/library";
+import { publishedWorks, catalogueRecord, LIBRARY_PUBLICATIONS, LIBRARY_WORKS } from "../data/library";
+import { preR3Works } from "../lib/read-ia-r3-projection";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import sitemap from "../app/sitemap";
 import { generateMetadata as poemLandingMetadata } from "../app/poems/[slug]/page";
@@ -48,6 +49,7 @@ import { READ_IA_R2_ROUTES as READ_CATEGORY_ROUTES, READ_IA_R2_CONTRIBUTION as R
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import LibraryCategoryPage from "../components/LibraryCategoryPage";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 
 const BASE = "https://nenjukkuneethi.org";
 const root = process.cwd();
@@ -101,7 +103,9 @@ const W7B_ROUTES = new Set<string>([...w7bp3.works.flatMap((w) => w.routes), "/c
 const W7K_ROUTES = new Set<string>(WAVE7_B5_B6_K_ROUTES);
 // Recover the frozen Wave-6-P4 census from the live one: remove Batch-7 + Wave-7-B2-B4 fiction (passed as
 // minusFiction), Wave-7 B1 cinema, and Wave-7-B2-B4 drama & essays.
-const toWave6Census = (m: Record<string, number>, minusFiction: number, minusSpeeches: number) => ({ ...m, fiction: m.fiction - minusFiction, "cinema-writing": (m["cinema-writing"] ?? 0) - W7.cinema, drama: (m.drama ?? 0) - W7B.drama - W8.drama, "essays-articles": (m["essays-articles"] ?? 0) - W7B.essays, speeches: (m.speeches ?? 0) - minusSpeeches, "literary-commentary": (m["literary-commentary"] ?? 0) - W7K.literaryCommentary - W8.literaryCommentary });
+// `minusR3` is the R3 per-shelf term (works or discovery) subtracted from every shelf first.
+const minusR3Terms = (m: Record<string, number>, r3: Record<string, number>) => Object.fromEntries(Object.entries(m).map(([k, n]) => [k, n - (r3[k] ?? 0)]));
+const toWave6Census = (m0: Record<string, number>, minusFiction: number, minusSpeeches: number, minusR3: Record<string, number>) => ((m) => ({ ...m, fiction: m.fiction - minusFiction, "cinema-writing": (m["cinema-writing"] ?? 0) - W7.cinema, drama: (m.drama ?? 0) - W7B.drama - W8.drama, "essays-articles": (m["essays-articles"] ?? 0) - W7B.essays, speeches: (m.speeches ?? 0) - minusSpeeches, "literary-commentary": (m["literary-commentary"] ?? 0) - W7K.literaryCommentary - W8.literaryCommentary }))(minusR3Terms(m0, minusR3));
 
 // The 22 Wave-6 works P4 publishes (cinema work has a dedicated loader, not a slug registry).
 const WAVE6_CINEMA_SLUGS = ["ammaiyappan"] as const;
@@ -117,7 +121,7 @@ const WAVE6_WORK_SLUGS = [
 
 // ── 1. CATALOGUE — 100 works, exact 9-shelf census, the 22 present once, no leakage ──
 const works = publishedWorks();
-eq(works.length, 100 + B7.works + W7.works + W7B.works + W7K.works + W8.works, "catalogue is exactly 333 published works (100 Batches 1–6 + 116 Batch-7 + 3 Wave-7 B1 + 13 Wave-7 B2-B4 + 101 Wave-7 B5/B6/K)");
+eq(works.length, 100 + B7.works + W7.works + W7B.works + W7K.works + W8.works + R3.works, "catalogue is exactly 333 published works (100 Batches 1–6 + 116 Batch-7 + 3 Wave-7 B1 + 13 Wave-7 B2-B4 + 101 Wave-7 B5/B6/K)");
 eq(WAVE6_WORK_SLUGS.length, 22, "exactly 22 Wave-6 work slugs are enumerated");
 const catBy: Record<string, number> = {};
 for (const w of works) catBy[w.shelf] = (catBy[w.shelf] ?? 0) + 1;
@@ -125,21 +129,22 @@ eqMap(catBy, {
   "life-writing": 1,
   letters: 1,
   fiction: 41 + B7.works + W7B.fictionCat, // 162 — Batch 7 +116 short stories, Wave-7 B2-B4 +5 novels
-  poetry: 14,
+  poetry: 14 + R3.shelves.poetry, // + R3 (R3-B: +162 Poetry identities − 3 demoted publications)
   drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1 added 3 cinema works
   speeches: 17 + W7K.speeches, // 117 — Wave-7 B5/B6 +100 speeches
-  "essays-articles": 9 + W7B.essays, // 15 — Wave-7 B2-B4 +6 essays
+  "essays-articles": 9 + W7B.essays + R3.shelves["essays-articles"], // 15 — Wave-7 B2-B4 +6 essays (+ R3: Meesai demoted)
   "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
 }, "catalogue per-shelf census matches the post-Wave-7-B5/B6/K target");
-eq(Object.values(catBy).reduce((a, b) => a + b, 0), 100 + B7.works + W7.works + W7B.works + W7K.works + W8.works, "shelf census sums to 333");
+eq(Object.values(catBy).reduce((a, b) => a + b, 0), 100 + B7.works + W7.works + W7B.works + W7K.works + W8.works + R3.works, "shelf census sums to 333");
 eq(Object.keys(catBy).length, 9, "exactly 9 non-empty shelves");
-const slugCount = (slug: string) => works.filter((w) => w.slug === slug).length;
+// Judged on the pre-R3 projection: a publication R3 demoted is still its one record, R3 identities are not Wave-6 works.
+const slugCount = (slug: string) => preR3Works(works).filter((w) => w.slug === slug).length;
 for (const s of WAVE6_WORK_SLUGS) eq(slugCount(s), 1, `Wave-6 work ${s} appears exactly once in the catalogue`);
 eq(new Set(works.map((w) => w.slug)).size, works.length, "no duplicate slug in the catalogue");
 // No leakage: the only Wave-6-registry works in the catalogue are the 22 expected ones.
 const registrySet = new Set<string>(WAVE6_WORK_SLUGS);
-const publishedWave6 = works.map((w) => w.slug).filter((s) => registrySet.has(s));
+const publishedWave6 = preR3Works(works).map((w) => w.slug).filter((s) => registrySet.has(s)); // pre-R3 projection
 eq(uniqSorted(publishedWave6), uniqSorted([...WAVE6_WORK_SLUGS]), "exactly the 22 Wave-6 works are published (no Batch-7+ leakage)");
 
 // ── 2. COLLECTIONS — 6 (the 1977 anthology + 5 Batch-7); no Batches-1–6 work became a collection ──
@@ -169,33 +174,37 @@ for (const s of shelves) {
   visible += Math.min(n, CAP);
   if (n > CAP) overCap.push(s.shelf.id);
 }
-eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery + W7K.discovery + W8.discovery, "/read discovery is exactly 96 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 10 Wave-7 B2-B4 + 6 Wave-7 B5/B6/K)");
+eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery + W7K.discovery + W8.discovery + R3.discovery, "/read discovery is exactly 96 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 10 Wave-7 B2-B4 + 6 Wave-7 B5/B6/K)");
 eqMap(discBy, {
   "life-writing": 1,
   letters: 1,
   fiction: 5 + B7.fictionDiscovery + W7B.fictionDisc, // 20 — Wave-7 B2-B4 +2 net (arumbu-1978 card + 2 standalone − பெரிய standalone collapsed)
-  poetry: 14,
+  poetry: 14 + R3.discoveryShelves.poetry, // + R3 (R3-B: +162 Poetry identities − 3 demoted publications)
   drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1's 3 cinema works are standalone discovery entries
   speeches: 17 + W7K.speechDiscovery, // 22 — Wave-7: 2 முத்துக் குளியல் collection cards + 3 assembly speeches
-  "essays-articles": 9 + W7B.essays, // 15 — Wave-7 B2-B4 +6 essays
+  "essays-articles": 9 + W7B.essays + R3.discoveryShelves["essays-articles"], // 15 — Wave-7 B2-B4 +6 essays (+ R3: Meesai demoted)
   "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
 }, "/read discovery per-shelf census matches the post-Wave-7-B5/B6/K target");
-eq(visible, 39 + B7.visible + W7B.visible + W7K.visible + W8.visible, "41 discovery entries are initially visible under the disclosure cap (Wave-7 B2-B4 shelves already over-cap; Wave-7 +1 Literary Commentary under the cap)");
+eq(visible, 39 + B7.visible + W7B.visible + W7K.visible + W8.visible + R3.visible, "41 discovery entries are initially visible under the disclosure cap (Wave-7 B2-B4 shelves already over-cap; Wave-7 +1 Literary Commentary under the cap)");
 eq(uniqSorted(overCap), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "exactly the six expected shelves are over the disclosure cap (unchanged by Wave-7 B2-B4)");
 eq(discBy.fiction, 5 + B7.fictionDiscovery + W7B.fictionDisc, "fiction discovery is 20 (7 collection cards + 13 standalone works)");
 // Current public surface (R2-B): each of the 22 Wave-6 works is listed, as its own card, on its category page.
 {
   const pages = new Map<string, string>();
   for (const s of WAVE6_WORK_SLUGS) {
-    const w = LIBRARY_WORKS.find((x) => x.slug === s && x.state === "published");
+    // Since R3, a demoted publication is listed in its category page's Publications section instead of the work grid.
+    const pubRec = LIBRARY_PUBLICATIONS.find((x) => x.slug === s);
+    const w = LIBRARY_WORKS.find((x) => x.slug === s && x.state === "published") ?? pubRec;
     if (!w) { ok(false, `Wave-6 work ${s} is published`); continue; }
-    if (!pages.has(w.shelf)) {
+    const section = pubRec ? "category-publications" : "category-works";
+    const key = `${w.shelf}|${section}`;
+    if (!pages.has(key)) {
       const html = renderToStaticMarkup(createElement(LibraryCategoryPage, { shelf: w.shelf }));
-      const at = html.indexOf('data-testid="category-works"');
-      pages.set(w.shelf, at === -1 ? "" : html.slice(at, html.indexOf("</section>", at)));
+      const at = html.indexOf(`data-testid="${section}"`);
+      pages.set(key, at === -1 ? "" : html.slice(at, html.indexOf("</section>", at)));
     }
-    ok(pages.get(w.shelf)!.includes(`href="${w.href}"`), `Wave-6 work ${s} is listed on ${categoryForShelf(w.shelf).route}`);
+    ok(pages.get(key)!.includes(`href="${w.href}"`), `Wave-6 work ${s} is listed on ${categoryForShelf(w.shelf).route}${pubRec ? " (Publications)" : ""}`);
   }
 }
 
@@ -268,12 +277,12 @@ const rec = record as {
 // The record is the FROZEN Batches-1–6 snapshot, so it is cross-checked against (live − Batch-7).
 eq(rec.workCount, 22, "record workCount == 22");
 eq(rec.collectionsAdded, 0, "record collectionsAdded == 0");
-eq(rec.catalogue.after, works.length - B7.works - W7.works - W7B.works - W7K.works - W8.works, "record catalogue.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
-eqMap(rec.catalogue.shelfCensusAfter, toWave6Census(catBy, B7.works + W7B.fictionCat, W7K.speeches), "record catalogue shelf census == live − later-wave contributions");
+eq(rec.catalogue.after, works.length - B7.works - W7.works - W7B.works - W7K.works - W8.works - R3.works, "record catalogue.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
+eqMap(rec.catalogue.shelfCensusAfter, toWave6Census(catBy, B7.works + W7B.fictionCat, W7K.speeches, R3.shelves), "record catalogue shelf census == live − later-wave contributions");
 eq(rec.collections.after, LIBRARY_COLLECTIONS.length - B7.collections - W7B.collections - W7K.collections, "record collections.after == live − Batch-7 − arumbu-1978 − 2 முத்துக் குளியல் (Wave-7 B1 added no collection)");
-eq(rec.discovery.after, discTotal - B7.discovery - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery, "record discovery.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
-eq(rec.discovery.initiallyVisible, visible - B7.visible - W7K.visible - W8.visible, "record discovery.initiallyVisible == live − Batch-7 (Wave-7 B1 added 0 visible: cinema over-cap)");
-eqMap(rec.discovery.perShelfAfter, toWave6Census(discBy, B7.fictionDiscovery + W7B.fictionDisc, W7K.speechDiscovery), "record discovery per-shelf census == live − later-wave contributions");
+eq(rec.discovery.after, discTotal - B7.discovery - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery - R3.discovery, "record discovery.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
+eq(rec.discovery.initiallyVisible, visible - B7.visible - W7K.visible - W8.visible - R3.visible, "record discovery.initiallyVisible == live − Batch-7 (Wave-7 B1 added 0 visible: cinema over-cap)");
+eqMap(rec.discovery.perShelfAfter, toWave6Census(discBy, B7.fictionDiscovery + W7B.fictionDisc, W7K.speechDiscovery, R3.discoveryShelves), "record discovery per-shelf census == live − later-wave contributions");
 eq(uniqSorted(rec.discovery.overCapShelves), uniqSorted(overCap.filter((s) => s !== "fiction")), "record over-cap shelves == live − Batch-7 (fiction); Wave-7 B1 added no over-cap shelf");
 eq(rec.sitemap.after, urls.length - B7.sitemap - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap - R2.sitemap, "record sitemap.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K − Wave-8 − R2");
 eq(rec.sitemap.duplicates, urls.length - new Set(urls).size, "record sitemap duplicates == live");
@@ -281,7 +290,8 @@ eq(rec.build.prerenderRoutes, baseline.prerenderManifestRouteCount + manifest.cu
 eq(rec.build.htmlFiles, baseline.htmlFileCount + manifest.cumulativeRouteCount, "record build htmlFiles == baseline + Wave-6");
 
 // ── 8. SEMANTIC RESTRAINT — source-faithful catalogue copy (no fabricated numbering/date/venue/edition) ──
-const W = (slug: string) => { const w = LIBRARY_WORKS.find((x) => x.slug === slug); if (!w) throw new Error(`missing catalogue entry ${slug}`); return w; };
+// A catalogue record: a LibraryWork, or (since R3) a demoted publication's record, kept verbatim.
+const W = (slug: string) => { const w = catalogueRecord(slug); if (!w || w.slug !== slug) throw new Error(`missing catalogue entry ${slug}`); return w; };
 const has = (s: string | undefined, re: RegExp) => !!s && re.test(s);
 
 {

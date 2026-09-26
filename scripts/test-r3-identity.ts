@@ -14,7 +14,7 @@ import { LIBRARY_COLLECTIONS, collectionMemberWorks } from "../data/collections"
 import { LIBRARY_PUBLICATIONS, LIBRARY_WORKS, publishedWorks, type LibraryWork } from "../data/library";
 import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS, POETRY_WITNESS_RELATIONS } from "../data/poems";
 import sitemap from "../app/sitemap";
-import { resolveWitnessLinks } from "../lib/witness";
+import { r3WitnessLinksForPage, resolveWitnessLinks } from "../lib/witness";
 import { R3_IDENTITY, R3_RELATIONS, activeRelations, canonicalFor, publicationAppearances, witnessesOf, type WorkRelation } from "../lib/work-relations";
 import { resolveCollectionMember, resolveCollectionMembers } from "../lib/collection-members";
 import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
@@ -166,13 +166,35 @@ const endpoints: [string, string?][] = [
   }),
 ];
 const rendered = endpoints.flatMap(([s, i]) => resolveWitnessLinks(s, i).map((l) => `${s}${i ? "/" + i : ""} → ${l.href} [${l.id}]`));
-eq([...rendered].sort(), [
+// The two Wave-4 relations render exactly as before, on both endpoints (their link lines are unchanged).
+for (const line of [
   "idhayathai-thanthidu-anna → /poems/kalaignarin-kavithaigal/give-me-your-heart-anna [idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01]",
   "thennan-kathai → /poems/kalaignarin-kavithaigal/the-tale-of-the-southerner [thennan-kathai--kalaignarin-kavithaigal--item-02]",
   "kalaignarin-kavithaigal/give-me-your-heart-anna → /poems/idhayathai-thanthidu-anna [idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01]",
   "kalaignarin-kavithaigal/the-tale-of-the-southerner → /poems/thennan-kathai [thennan-kathai--kalaignarin-kavithaigal--item-02]",
-].sort(), "exactly the two pre-R3 witness links render, on both endpoints");
-eq(rendered.length, 4, "4 rendered witness links (2 relations × 2 endpoints)");
+]) ok(rendered.includes(line), `pre-R3 witness link unchanged: ${line}`);
+{
+  // Every ACTIVE R3 relation renders on its canonical work's page and, where it has one, on its witness's page; no
+  // DORMANT relation renders on any page (canonical pages, witness pages, publication landings, essay units).
+  const pageOf = (h: string) => h.split("#")[0];
+  const pages = new Set<string>([
+    ...publishedWorks().map((w) => pageOf(w.href)),
+    ...R.map((r) => r.witness.locator).filter((l): l is string => !!l).map(pageOf),
+    ...LIBRARY_PUBLICATIONS.map((p) => p.href),
+  ]);
+  const shown = new Map<string, Set<string>>();
+  for (const p of Array.from(pages)) for (const l of r3WitnessLinksForPage(p)) shown.set(l.id, new Set([...Array.from(shown.get(l.id) ?? []), p]));
+  for (const r of activeRelations().filter((x) => !x.legacyPoetryView)) {
+    const home = publishedWorks().find((w) => w.id === r.canonicalId);
+    ok(!!home && !!shown.get(r.id)?.has(pageOf(home.href)), `${r.id}: renders on its canonical work's page`);
+    if (r.witness.locator) ok(!!shown.get(r.id)?.has(pageOf(r.witness.locator)), `${r.id}: renders on its witness's page`);
+  }
+  eq(Array.from(shown.keys()).filter((id) => R.find((r) => r.id === id)?.state !== "active"), [], "no dormant relation renders on any page");
+  // The standalone / item poem pages expose exactly the same R3 set through resolveWitnessLinks.
+  eq(rendered.filter((x) => !/\[(idhayathai-thanthidu-anna|thennan-kathai)--kalaignarin-kavithaigal--item-0[12]\]$/.test(x)).length,
+    endpoints.reduce((n, [s, i]) => n + r3WitnessLinksForPage(i ? `/poems/${s}/${i}` : `/poems/${s}`).length, 0),
+    "poem pages render exactly the R3 links their page resolves (plus the two Wave-4 links)");
+}
 
 // ── 6. Collections and the dormant merged-witness resolver ───────────────────────────────────────────────────────
 for (const c of LIBRARY_COLLECTIONS) {
@@ -242,11 +264,60 @@ if (stages.length === 1 && stages[0] === "R3-A") {
   eq({ works: R3.works, collections: R3.collections, discovery: R3.discovery, visible: R3.visible, build: R3.build, sitemap: R3.sitemap, shelves: Object.values(R3.shelves).every((v) => v === 0) }, { works: 0, collections: 0, discovery: 0, visible: 0, build: 0, sitemap: 0, shelves: true }, "R3-A: every READ_IA_R3_CONTRIBUTION term is 0");
 }
 
+// ── 9b. R3-B: Poetry promotion ──────────────────────────────────────────────────────────────────────────────────
+if (stages.join() === "R3-A,R3-B") {
+  const pubW = W.filter((w) => w.state === "published");
+  eq(pubW.length, 162, "R3-B: 162 identities published");
+  eq(sorted(tally(pubW, (w) => w.family)), { "ina-poem": 3, meesai: 25, "poetry-1975": 3, "poetry-kaalap": 57, "poetry-kavithaigal": 74 }, "R3-B: exactly the five Poetry families (57 + 74 + 3 + 3 + 25)");
+  eq(W.filter((w) => w.state === "dormant").length, 87, "R3-B: the 87 R3-C identities stay dormant");
+  eq(publishedWorks().length, 493, "R3-B: canonical catalogue 493");
+  eq(sorted(tally(publishedWorks(), (w) => w.shelf)), { "cinema-writing": 10, drama: 11, "essays-articles": 14, fiction: 162, letters: 1, "life-writing": 1, "literary-commentary": 4, poetry: 173, speeches: 117 }, "R3-B: shelves 1/1/162/173/11/10/117/14/4");
+  eq({ works: R3.works, poetry: R3.shelves.poetry, essays: R3.shelves["essays-articles"], build: R3.build, sitemap: R3.sitemap, collections: R3.collections }, { works: 158, poetry: 159, essays: -1, build: 0, sitemap: 0, collections: 0 }, "R3-B: derived contribution +158 (Poetry +159, Essays −1), build/sitemap/collections 0");
+  eq(LIBRARY_PUBLICATIONS.map((p) => [p.id, p.shelf, p.kind, p.demotedIn]), [
+    ["kaalap-pezhaiyum-kavithai-saaviyum", "poetry", "source-publication", "R3-B"],
+    ["kalaignarin-kavithaigal", "poetry", "source-publication", "R3-B"],
+    ["kalaignarin-kaviyaranga-kavithaigal-1975", "poetry", "source-publication", "R3-B"],
+    ["meesai-mulaiththa-vayathil", "essays-articles", "source-publication", "R3-B"],
+  ], "R3-B: exactly four publication records (3 Poetry, 1 Essays)");
+  for (const p of LIBRARY_PUBLICATIONS) {
+    const former = boundary.catalogue.records.find((r) => r.id === p.id)!;
+    const { state: _s, ...formerRest } = former;
+    const { kind: _k, demotedIn: _d, ...rest } = p;
+    eq(rest, formerRest, `${p.id}: publication record is its former LibraryWork record verbatim (minus state)`);
+    ok(!LIBRARY_WORKS.some((w) => w.id === p.id) && !publishedWorks().some((w) => w.href === p.href), `${p.id}: no longer a canonical LibraryWork or canonical href`);
+    ok(smSet.has(p.href) && (!p.provenanceHref || smSet.has(p.provenanceHref)), `${p.id}: its landing and /source routes remain`);
+  }
+  eq(activeRelations().length, 20, "R3-B: 20 active relations (2 pre-R3 + 18 R3-B)");
+  eq(R.filter((r) => r.state === "dormant").map((r) => r.introducedIn).sort(), [...Array(2).fill("R3-C"), ...Array(27).fill("R3-D")].sort(), "R3-B: the 29 dormant relations are exactly R3-C (2) and R3-D (27)");
+  ok(R.filter((r) => r.introducedIn === "R3-B").every((r) => r.state === "active"), "R3-B: all 18 R3-B relations are active");
+  for (const id of ["sirai-kodiyathu", "neeyum-kaithi-naanum-kaithi", "aadik-kaatre", "pugazhe-nee-oru-pudhir", "sorgaththirku-vandhathu-eppadi"]) ok(published.has(id), `R3-B: future merge source ${id} is still a canonical Fiction work`);
+  eq(LIBRARY_COLLECTIONS.length, 9, "R3-B: collections 9");
+  eq(sha256(JSON.stringify(LIBRARY_COLLECTIONS)), sha256(JSON.stringify(boundary.collections.records)), "R3-B: collection records unchanged");
+  // The Ina anchors: all eleven printed poem boundaries carry their id (Tamil-first static HTML).
+  const inaHtml = path.join(process.cwd(), ".next/server/app/essays/ina-muzhakkam/articles/kavithaigal.html");
+  if (fs.existsSync(inaHtml)) {
+    const h = fs.readFileSync(inaHtml, "utf8");
+    eq(Array.from({ length: 11 }, (_, i) => h.includes(`id="poem-6-${i + 1}"`)), Array(11).fill(true), "R3-B: anchors poem-6-1 … poem-6-11 are emitted on the ina unit");
+  }
+}
+{
+  // Stage-generic: no DO_NOT_PROMOTE row is ever a LibraryWork.
+  // A DNP unit never becomes canonical: its route is never a canonical href, and its id never enters the catalogue
+  // (unless it was already a pre-R3 work id — the publication-titled first units share their publication's id).
+  const dnp = E.filter((e) => e.resolved.decision === "DO_NOT_PROMOTE") as (Row & { currentRoute: string })[];
+  // Exact href strings: the ina `kavithaigal` heading (DNP) legitimately shares its PATHNAME with the three fragment
+  // works, but its own locator (no fragment) must never be a canonical href.
+  const hrefs = new Set(publishedWorks().map((w) => w.href));
+  eq(dnp.length, 20, "20 DO_NOT_PROMOTE rows");
+  eq(dnp.filter((e) => hrefs.has(e.currentRoute)).map((e) => e.key), [], "no DO_NOT_PROMOTE unit's route is a canonical href");
+  eq(dnp.filter((e) => LIBRARY_WORKS.some((w) => w.id === e.resolved.canonicalId) && !boundary.catalogue.records.some((r) => r.id === e.resolved.canonicalId)).map((e) => e.key), [], "no DO_NOT_PROMOTE row has become a new LibraryWork");
+}
+
 // ── 10. Sitemap and build: the boundary plus the derived R3 terms ────────────────────────────────────────────────
 eq(sm.length, boundary.sitemap.count + R3.sitemap, "sitemap() = pre-R3 5271-path boundary + R3.sitemap");
 eq(sha256(boundary.sitemap.paths.join("\n")), boundary.sitemap.sha256, "the frozen pre-R3 sitemap set is internally consistent");
 eq(boundary.sitemap.paths.filter((p) => !smSet.has(p)), [], "every pre-R3 sitemap URL is still in the sitemap");
-if (stages.length === 1) eq(sha256([...sm].sort().join("\n")), boundary.sitemap.sha256, "R3-A: the sitemap set is byte-identical to the boundary");
+if (R3.sitemap === 0) eq(sha256([...sm].sort().join("\n")), boundary.sitemap.sha256, "the sitemap set is byte-identical to the pre-R3 boundary (R3 adds no sitemap URL)");
 const NEXT = path.join(process.cwd(), ".next");
 if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
   ok(false, "no production build (.next/prerender-manifest.json) — run `npm run build`; the build checks cannot be skipped");

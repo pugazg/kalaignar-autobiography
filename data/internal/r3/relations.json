@@ -21,7 +21,7 @@
     "ownerDecisionRef": "OD1"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "idhayathai-thanthidu-anna--kalaignarin-kavithaigal--item-01",
@@ -94,7 +94,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-1->scales-of-justice",
@@ -115,7 +115,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-2->would-they-accept",
@@ -136,7 +136,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-3->know-it-as-a-storm",
@@ -157,7 +157,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-5->have-you-heard",
@@ -178,7 +178,7 @@
     "ownerDecisionRef": "OD2"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-6->have-you-heard",
@@ -199,7 +199,7 @@
     "ownerDecisionRef": "OD2"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-9->when-does-defeat-come",
@@ -220,7 +220,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-10->still-this-clamour",
@@ -241,7 +241,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:ina-muzhakkam/kavithaigal#poem-6-11->varna-or-death",
@@ -262,7 +262,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:thudikkum-ilamai/poompuhar->idhaya-perikai",
@@ -333,7 +333,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:meesai-mulaiththa-vayathil/pachchaikkili->green-parrot",
@@ -354,7 +354,7 @@
     "ownerDecisionRef": null
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:kalaignarin-kaviyaranga-kavithaigal-1975/scans-21-32->gunanayagar-nehru",
@@ -376,7 +376,7 @@
     "basis": "1975 page-map 'existing Nehru witness'; transcribed scans 21–32 overlap 0.87 with item 19, 0.92 of booklet inside range"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:kalaignarin-kaviyaranga-kavithaigal-1975/scans-9-20->idhayathai-thanthidu-anna",
@@ -398,7 +398,7 @@
     "basis": "1975 page-map 'existing Anna witness'; transcribed scans 9–20 body overlap 0.945/0.940"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:kalaignarin-kaviyaranga-kavithaigal-1975/scans-71-77->freedom-fighters",
@@ -420,7 +420,7 @@
     "basis": "1975 page-map 'existing விடுதலை வீரர்கள்'"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/TVA_BOK_0004067->freedom-fighters",
@@ -440,7 +440,7 @@
     "basis": "kalaignar-poems CROSS_WITNESS_AUDIT_VIDUTHALAI_VEERARKAL_AIVAR_1968.md — PASS"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:kalaignarin-kaviyaranga-kavithaigal-1975/scans-33-45->on-the-path-called-life",
@@ -462,7 +462,7 @@
     "basis": "1975 page-map 'existing வாழ்வெனும் பாதையில் witness'"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:kalaignarin-kaviyaranga-kavithaigal-1975/scans-78-84->father-periyar",
@@ -484,7 +484,7 @@
     "basis": "1975 page-map 'existing தந்தை பெரியார்'"
    },
    "introducedIn": "R3-B",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:merged/sirai-kodiyathu->green-parrot",

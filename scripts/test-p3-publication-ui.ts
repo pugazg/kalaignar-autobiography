@@ -19,7 +19,7 @@ import PublicationItemReader from "../components/PublicationItemReader";
 import PublicationSource from "../components/PublicationSource";
 import WitnessNote from "../components/WitnessNote";
 import { LangProvider } from "../lib/i18n";
-import { resolveWitnessLinks } from "../lib/witness";
+import { r3WitnessLinksForPage, resolveWitnessLinks } from "../lib/witness";
 import { POETRY_WITNESS_RELATIONS } from "../data/poems";
 import type { PoetryPublication } from "../data/poems";
 
@@ -108,7 +108,11 @@ function readerHtml(ord: number, witnessLinks = resolveWitnessLinks(SLUG, pub.it
     ["kalaignarin-kavithaigal", "the-tale-of-the-southerner", "/poems/thennan-kathai"],
   ];
   for (const [slug, itemSlug, expectedHref] of dirs) {
-    const links = resolveWitnessLinks(slug, itemSlug);
+    // The Wave-4 link first; any ACTIVE R3 relation for the page follows it (proved to be exactly the page's R3 list).
+    const all = resolveWitnessLinks(slug, itemSlug);
+    const tail = r3WitnessLinksForPage(itemSlug ? `/poems/${slug}/${itemSlug}` : `/poems/${slug}`);
+    eq(all.slice(all.length - tail.length).map((l) => l.id), tail.map((l) => l.id), `R3 tail for ${slug} is exactly its active R3 relations`);
+    const links = all.slice(0, all.length - tail.length);
     eq(links.length, 1, `witness link exists for ${slug}${itemSlug ? "/" + itemSlug : ""}`);
     eq(links[0]?.href, expectedHref, `witness link resolves to ${expectedHref}`);
     const html = renderToStaticMarkup(createElement(WitnessNote, { links }));

@@ -16,15 +16,21 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import WitnessNote from "../components/WitnessNote";
 import { LangProvider } from "../lib/i18n";
-import { resolveWitnessLinks } from "../lib/witness";
+import { r3WitnessLinksForPage, resolveWitnessLinks } from "../lib/witness";
 
 let checks = 0;
 const failures: string[] = [];
 const ok = (cond: boolean, label: string) => { checks++; if (!cond) failures.push(label); };
 const eq = <T,>(a: T, b: T, label: string) => { checks++; if (JSON.stringify(a) !== JSON.stringify(b)) failures.push(`${label}\n     expected ${JSON.stringify(b)}\n     actual   ${JSON.stringify(a)}`); };
 
+// Wave-4 links only: an ACTIVE R3 relation on the same page (R3-B: the 1975 scan-range witness of Idhayathai, which
+// has no page and so renders no anchor) is appended after them and is proved to be exactly the page's R3 list.
+const r3Tail = (slug: string, itemSlug?: string) => r3WitnessLinksForPage(itemSlug ? `/poems/${slug}/${itemSlug}` : `/poems/${slug}`);
 const bi = (slug: string, itemSlug?: string) => {
-  const links = resolveWitnessLinks(slug, itemSlug);
+  const all = resolveWitnessLinks(slug, itemSlug);
+  const tail = r3Tail(slug, itemSlug);
+  eq(all.slice(all.length - tail.length).map((l) => l.id), tail.map((l) => l.id), `${slug}${itemSlug ? "/" + itemSlug : ""}: the R3 tail is exactly the page's active R3 relations`);
+  const links = all.slice(0, all.length - tail.length);
   const el = createElement(WitnessNote, { links });
   return { links, ta: renderToStaticMarkup(createElement(LangProvider, null, el)), en: renderToStaticMarkup(el) };
 };

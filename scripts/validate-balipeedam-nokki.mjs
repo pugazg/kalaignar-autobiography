@@ -55,7 +55,10 @@ function catalogEntries(src) {
       i = stop - 1;
     } else s += c;
   }
-  const decl = s.indexOf("LIBRARY_WORKS");
+  // Since Reading Room IA v2 R3-B the catalogue's record literal is `CATALOGUE_RECORDS` (LIBRARY_WORKS is derived from it
+  // plus the generated data/r3-catalogue.ts, none of which is Fiction in R3-B); before R3 it was LIBRARY_WORKS itself.
+  const records = s.indexOf("const CATALOGUE_RECORDS");
+  const decl = records !== -1 ? records : s.indexOf("LIBRARY_WORKS");
   // The array opener is the LAST "[" before the first entry — `s.indexOf("[", decl)` would find the
   // one in the `LibraryWork[]` type annotation instead.
   const open = s.lastIndexOf("[", s.indexOf("{", decl));

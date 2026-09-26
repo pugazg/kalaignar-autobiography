@@ -11,7 +11,7 @@
 // `nenjukku-neethi` (scripts/test-read-categories.ts). Static segments take precedence over [id] in the App
 // Router, so a slug that collided would shadow a chapter — none does.
 
-import { SHELVES, publishedWorks, type LibraryWork, type Shelf, type ShelfId } from "./library";
+import { LIBRARY_PUBLICATIONS, SHELVES, publishedWorks, type LibraryPublication, type LibraryWork, type Shelf, type ShelfId } from "./library";
 import { LIBRARY_COLLECTIONS, type LibraryCollection } from "./collections";
 
 export interface ReadCategory {
@@ -78,6 +78,15 @@ export function worksInCategory(shelf: ShelfId): LibraryWork[] {
  */
 export function collectionsInCategory(shelf: ShelfId): LibraryCollection[] {
   return LIBRARY_COLLECTIONS.filter((c) => c.shelf === shelf);
+}
+
+/**
+ * The source publications (Reading Room IA v2 R3 publication records) on a shelf — books whose units are now
+ * canonical works or witnesses. Secondary provenance/navigation only, listed on the shelf the record carries; a
+ * publication never stands in for, or hides, a canonical work.
+ */
+export function publicationsInCategory(shelf: ShelfId): LibraryPublication[] {
+  return LIBRARY_PUBLICATIONS.filter((p) => p.shelf === shelf);
 }
 
 /** Page metadata for a category route, derived from the registry and the shared shelf labels. */

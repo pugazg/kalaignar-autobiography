@@ -125,7 +125,7 @@ export default function PoemPage({ params }: { params: { slug: string } }) {
   if (isPublication(params.slug)) {
     const pub = loadPublication(params.slug);
     if (!pub) notFound();
-    return <PublicationLanding pub={publicationBrief(pub)} />;
+    return <PublicationLanding pub={publicationBrief(pub)} witnessLinks={resolveWitnessLinks(params.slug)} />;
   }
   if (!ALL_POEM_SLUGS.includes(params.slug)) notFound();
   if (!loadPoem(params.slug)) notFound();

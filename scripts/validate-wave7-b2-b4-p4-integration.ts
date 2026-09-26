@@ -25,6 +25,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { publishedWorks, LIBRARY_WORKS, type LibraryWork } from "../data/library";
+import { preR3Works } from "../lib/read-ia-r3-projection";
 import { discoveryShelves, LIBRARY_COLLECTIONS, COLLECTION_IDS, collectionById } from "../data/collections";
 import sitemap from "../app/sitemap";
 import { PLAY_SLUGS } from "../data/plays";
@@ -34,6 +35,7 @@ import { ESSAY_SLUGS } from "../data/essays";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -77,16 +79,18 @@ const EXPECT: Record<string, Ex> = {
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length, 232 + W7K.works + W8.works, "catalogue is exactly 232 + later Wave-7 B5/B6/Kuraloviyam 101 = 333 published works (219 + 13 Wave-7 B2-B4 + 101)");
+eq(works.length, 232 + W7K.works + W8.works + R3.works, "catalogue is exactly 232 + later Wave-7 B5/B6/Kuraloviyam 101 = 333 published works (219 + 13 Wave-7 B2-B4 + 101)");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["drama"], 10 + W8.drama, "Drama holds 10 works (8 + 2) + later Wave-8 ore-mutham");
 eq(byShelf["fiction"], 162, "Fiction holds 162 works (157 + 5)");
-eq(byShelf["essays-articles"], 15, "Essays & Articles holds 15 works (9 + 6)");
+eq(byShelf["essays-articles"], 15 + R3.shelves["essays-articles"], "Essays & Articles holds 15 works (9 + 6) (+ R3: Meesai demoted in R3-B)");
 eq(byShelf["cinema-writing"], 10, "Cinema Writing unchanged at 10 (this batch adds none)");
 eq(Object.keys(byShelf).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "letters", "life-writing", "literary-commentary", "poetry", "speeches"], "still exactly 9 non-empty shelves");
 
-const bySlug = new Map(LIBRARY_WORKS.map((w) => [w.slug, w] as const));
+// The 13 are judged on the pre-R3 projection: R3-B demotes Meesai to a publication record kept verbatim (test-r3-identity).
+const PRE_R3 = preR3Works(LIBRARY_WORKS);
+const bySlug = new Map(PRE_R3.map((w) => [w.slug, w] as const));
 for (const slug of ALL13) {
   const w = bySlug.get(slug) as LibraryWork | undefined;
   const ex = EXPECT[slug];
@@ -96,7 +100,7 @@ for (const slug of ALL13) {
   eq([w.titleTa, w.titleEn, w.subtype], [ex.titleTa, ex.titleEn, ex.subtype], `${slug}: titles + subtype`);
   eq([w.tamil, w.english, w.englishKind], ["complete", "complete", "project-created"], `${slug}: language completeness + English kind`);
   eq(w.unitCount?.value, ex.unit, `${slug}: unitCount == source count (${ex.unit})`);
-  eq(LIBRARY_WORKS.filter((x) => x.slug === slug).length, 1, `${slug}: published exactly once`);
+  eq(PRE_R3.filter((x) => x.slug === slug).length, 1, `${slug}: published exactly once`);
   // Rights are evidence-based: drama + novels carry the nationalisation record; essays carry none.
   if (ex.rights) {
     ok(w.rights?.rightsStatus === "nationalised-by-tamil-nadu-government", `${slug}: carries the nationalisation rights record`);
@@ -151,11 +155,11 @@ for (const s of ALL13) ok(!COLLECTION_IDS.includes(s), `${s} is not registered a
 // ── 3. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 90 + W7K.discovery + W8.discovery, "/read discovery is 90 + later Wave-7 B5/B6/K 6 = 96 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible + W8.visible, "40 discovery entries still visible from this batch (the three shelves were already over cap) + 1 later Literary Commentary entry under the cap");
+eq(entries.length, 90 + W7K.discovery + W8.discovery + R3.discovery, "/read discovery is 90 + later Wave-7 B5/B6/K 6 = 96 entries (80 + 10 net: +13 works, minus the arumbu trio collapse, minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0), 40 + W7K.visible + W8.visible + R3.visible, "40 discovery entries still visible from this batch (the three shelves were already over cap) + 1 later Literary Commentary entry under the cap");
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction renders 20 discovery entries");
 eq(shelves.find((s) => s.shelf.id === "drama")!.entries.length, 10 + W8.drama, "Drama renders 10 discovery entries + later Wave-8 ore-mutham");
-eq(shelves.find((s) => s.shelf.id === "essays-articles")!.entries.length, 15, "Essays & Articles renders 15 discovery entries");
+eq(shelves.find((s) => s.shelf.id === "essays-articles")!.entries.length, 15 + R3.discoveryShelves["essays-articles"], "Essays & Articles renders 15 discovery entries (+ R3)");
 eq(shelves.find((s) => s.shelf.id === "cinema-writing")!.entries.length, 10, "Cinema Writing unchanged at 10 discovery entries");
 eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id)), uniqSorted(["fiction", "poetry", "drama", "cinema-writing", "speeches", "essays-articles"]), "same six over-cap shelves");
 // All FOUR members collapse into ONE collection card, not four standalone cards — including the
@@ -205,7 +209,7 @@ for (const arr of [PLAY_SLUGS, NOVEL_SLUGS, ESSAY_SLUGS] as readonly (readonly s
 // A8: duplicate a catalogue identity → uniqueness guard fires.
 { const dup = [...LIBRARY_WORKS.map((w) => w.id), "arumbu"]; ok(new Set(dup).size !== dup.length, "A8 a duplicated catalogue id is detectable"); eq(new Set(LIBRARY_WORKS.map((w) => w.id)).size, LIBRARY_WORKS.length, "A8 the LIVE catalogue has no duplicate id"); eq(new Set(LIBRARY_WORKS.map((w) => w.slug)).size, LIBRARY_WORKS.length, "A8 the LIVE catalogue has no duplicate slug"); }
 // A9: drop/add a work → the exact catalogue count guard fires.
-{ const LIVE = 232 + W7K.works + W8.works; ok(works.length - 1 !== LIVE && works.length + 1 !== LIVE, "A9 a dropped/added work would change the count away from the live total"); eq(works.length, LIVE, "A9 the LIVE catalogue is exactly 232 + 101 (later Wave-7 batch)"); }
+{ const LIVE = 232 + W7K.works + W8.works + R3.works; ok(works.length - 1 !== LIVE && works.length + 1 !== LIVE, "A9 a dropped/added work would change the count away from the live total"); eq(works.length, LIVE, "A9 the LIVE catalogue is exactly 232 + 101 (later Wave-7 batch)"); }
 // A10: invent surulimalai chapter 6/7 → the derived routes never contain them.
 { ok(!P3_ROUTES.includes("/novels/surulimalai/06-chapter-06") && !P3_ROUTES.includes("/novels/surulimalai/07-chapter-07"), "A10 no invented surulimalai chapter 6/7 route exists"); }
 // A11: omit a valid sitemap route → completeness guard fires.

@@ -21,8 +21,8 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { POETRY_WITNESS_RELATIONS, witnessCounterparts, POEM_SLUGS, POETRY_PUBLICATION_SLUGS } from "../data/poems";
 import type { PoetryPublication, PoetryPublicationProvenance, Poem, PoemProvenance } from "../data/poems";
-import { resolveWitnessLinks } from "../lib/witness";
-import { publishedWorks } from "../data/library";
+import { r3WitnessLinksForPage, resolveWitnessLinks } from "../lib/witness";
+import { LIBRARY_PUBLICATIONS, publishedWorks } from "../data/library";
 
 let pass = 0;
 const failures: string[] = [];
@@ -94,7 +94,11 @@ for (const r of POETRY_WITNESS_RELATIONS) {
   const works = publishedWorks();
   for (const r of POETRY_WITNESS_RELATIONS) {
     for (const ep of [r.a, r.b]) {
-      check(`endpoint ${ep.slug}${ep.itemSlug ? "/" + ep.itemSlug : ""}: work is published`, works.some((w) => w.slug === ep.slug));
+      // Since R3-B a publication endpoint's container is a publication record (LIBRARY_PUBLICATIONS), not a LibraryWork.
+      check(
+        `endpoint ${ep.slug}${ep.itemSlug ? "/" + ep.itemSlug : ""}: work is published (or, since R3, its publication record exists)`,
+        works.some((w) => w.slug === ep.slug) || (!!ep.itemSlug && LIBRARY_PUBLICATIONS.some((p) => p.slug === ep.slug)),
+      );
       if (ep.itemSlug) {
         const pub = readJson<PoetryPublication>(`public/data/poems/${ep.slug}/publication.json`);
         check(`endpoint item ${ep.slug}/${ep.itemSlug}: exists in the publication roster`, pub.items.some((i) => i.slug === ep.itemSlug));
@@ -116,8 +120,12 @@ for (const r of POETRY_WITNESS_RELATIONS) {
   for (const [slug, itemSlug, expectedHref] of directions) {
     const counterparts = witnessCounterparts(slug, itemSlug);
     eq(`witnessCounterparts(${slug}${itemSlug ? "/" + itemSlug : ""}) returns exactly one`, counterparts.length, 1);
-    const links = resolveWitnessLinks(slug, itemSlug);
-    eq(`resolveWitnessLinks(${slug}${itemSlug ? "/" + itemSlug : ""}) returns exactly one`, links.length, 1);
+    // The Wave-4 link comes first; any ACTIVE R3 relation for the same page follows it, exactly as r3WitnessLinksForPage lists.
+    const all = resolveWitnessLinks(slug, itemSlug);
+    const r3 = r3WitnessLinksForPage(itemSlug ? `/poems/${slug}/${itemSlug}` : `/poems/${slug}`);
+    eq(`resolveWitnessLinks(${slug}${itemSlug ? "/" + itemSlug : ""}): the R3 tail is exactly the page's active R3 relations`, all.slice(all.length - r3.length).map((l) => l.id), r3.map((l) => l.id));
+    const links = all.slice(0, all.length - r3.length);
+    eq(`resolveWitnessLinks(${slug}${itemSlug ? "/" + itemSlug : ""}) returns exactly one (Wave-4)`, links.length, 1);
     eq(`link resolves to ${expectedHref}`, links[0]?.href, expectedHref);
     const c = counterparts[0]?.counterpart;
     check(`counterpart of ${slug}${itemSlug ? "/" + itemSlug : ""} is not itself`, !!c && !(c.slug === slug && (c.itemSlug ?? undefined) === (itemSlug ?? undefined)));
