@@ -19,12 +19,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import { publishedWorks, LIBRARY_WORKS } from "../data/library";
+import { preR3Works } from "../lib/read-ia-r3-projection";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import sitemap from "../app/sitemap";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): its derived contribution is added ONLY once it is published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 const W7K = (LIBRARY_WORKS.some((w) => w.id === "kuraloviyam") ? W7K_ALL : { works: 0, collections: 0, discovery: 0, visible: 0, sitemap: 0, build: 0 });
 
 const root = process.cwd();
@@ -47,7 +49,8 @@ for (const w of manifest.works) {
 }
 
 // ── Phase detection ──────────────────────────────────────────────────────────────────────────────────
-const libIds = new Set<string>((LIBRARY_WORKS as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
+// Judged on the pre-R3 projection: R3-B demotes Meesai to a publication record, which is not this cohort un-publishing.
+const libIds = new Set<string>((preR3Works(LIBRARY_WORKS) as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
 const publishedCount = slugs.filter((s) => libIds.has(s)).length;
 ok(publishedCount === 0 || publishedCount === 13, "publication is all-or-nothing for the 13-work cohort");
 const routeFor = (w: { slug: string; shelf: string }) => (w.shelf === "drama" ? `/plays/${w.slug}` : w.shelf === "fiction" ? `/novels/${w.slug}` : `/essays/${w.slug}`);
@@ -75,7 +78,7 @@ if (phase === "pre-P4") {
   eq(inSitemap, 0, "no B2-B4 landing exposed in the sitemap");
 } else {
   // P4: publication flip — exact published surface owned by the P4 integration validator.
-  eq(works.length, P1_FROZEN.catalogue + 13 + W7K.works + W8.works, "catalogue grew by exactly the 13 works (232) — plus the later Wave-7 B5/B6/K 101 once published");
+  eq(works.length, P1_FROZEN.catalogue + 13 + W7K.works + W8.works + R3.works, "catalogue grew by exactly the 13 works (232) — plus the later Wave-7 B5/B6/K 101 once published");
   for (const s of slugs) ok(libIds.has(s), `${s}: now a published LibraryWork`);
   eq(inSitemap, 13, "all 13 B2-B4 landings now in the sitemap");
   ok(sm.length >= P1_FROZEN.sitemap + P3_ROUTES, "sitemap grew by at least the 224 direct routes");

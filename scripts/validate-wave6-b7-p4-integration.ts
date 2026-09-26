@@ -43,6 +43,7 @@ import { WAVE7_B1_CONTRIBUTION } from "../lib/wave7-b1-contribution";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 const W7K_COLLECTION_IDS = ["muthukkuliyal-part-1", "muthukkuliyal-part-2"];
 
 const root = process.cwd();
@@ -83,7 +84,7 @@ const NEW_COLLECTION_IDS = manifest.groups.filter((g) => g.publicCollectionPlann
 
 // ── 1. CATALOGUE ────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
-eq(works.length - W7.works - W7B.works - W7K.works - W8.works, 216, "catalogue is 216 published works (100 + 116 Batch-7), excluding later Wave-7 B1 + B2-B4 + B5/B6/K");
+eq(works.length - W7.works - W7B.works - W7K.works - W8.works - R3.works, 216, "catalogue is 216 published works (100 + 116 Batch-7), excluding later Wave-7 B1 + B2-B4 + B5/B6/K");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf.fiction - W7B.fictionCat, 157, "Fiction shelf is 157 works (41 + 116), excluding later Wave-7 B2-B4 novels");
@@ -182,8 +183,8 @@ for (const id of existing2009) {
 // ── 6. DISCOVERY ────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const CAP = 6;
-eq(shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery, 77, "/read discovery is 77 entries (excluding later Wave-7 B1 + B2-B4)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible - W8.visible, 40, "40 discovery entries initially visible (excluding the later Literary Commentary entry)");
+eq(shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery - R3.discovery, 77, "/read discovery is 77 entries (excluding later Wave-7 B1 + B2-B4)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible - W8.visible - R3.visible, 40, "40 discovery entries initially visible (excluding the later Literary Commentary entry)");
 const fiction = shelves.find((s) => s.shelf.id === "fiction")!;
 eq(fiction.works.length - W7B.fictionCat, 157, "fiction discovery works 157 (excluding later Wave-7 B2-B4 novels)");
 eq(fiction.entries.length - W7B.fictionDisc, 18, "fiction discovery entries 18 (excluding later Wave-7 B2-B4)");
@@ -220,13 +221,13 @@ if (fs.existsSync(pm)) {
 }
 
 // ── 9. DURABLE RECORD cross-check ─────────────────────────────────────────────────────────────────────
-eq(record.publish.catalogue.after, works.length - W7.works - W7B.works - W7K.works - W8.works, "record catalogue.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
+eq(record.publish.catalogue.after, works.length - W7.works - W7B.works - W7K.works - W8.works - R3.works, "record catalogue.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
 eq(record.publish.fiction.after, byShelf.fiction - W7B.fictionCat, "record fiction.after == live − Wave-7 B2-B4 novels");
 eq(record.publish.storySlugs.after, STORY_SLUGS.length, "record storySlugs.after == live (B2-B4 novels are not STORY_SLUGS)");
 eq(record.publish.collections.after, LIBRARY_COLLECTIONS.length - W7B.collections - W7K.collections, "record collections.after == live − arumbu-1978 − 2 முத்துக் குளியல்");
-eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery, "record discovery.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
+eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery - R3.discovery, "record discovery.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
 eq(record.publish.discovery.fictionEntries.after, fiction.entries.length - W7B.fictionDisc, "record fiction discovery entries == live − Wave-7 B2-B4");
-eq(record.publish.discovery.visible.after, shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible - W8.visible, "record visible == live − the later Literary Commentary entry");
+eq(record.publish.discovery.visible.after, shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible - W8.visible - R3.visible, "record visible == live − the later Literary Commentary entry");
 eq(record.publish.sitemap.after, urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap - R2.sitemap, "record sitemap.after == live − Wave-7 B1 − B2-B4 − B5/B6/K − Wave-8 − R2");
 eq(uniqSorted(record.pluralMembers), ["jaadi-kutti-poduma", "kuruvi-rameswaram"], "record plural members");
 for (const rc of record.collections) {
@@ -311,12 +312,12 @@ for (const s of b7Slugs) eq(provJSON(s).batch, 7, `${s}: provenance batch === 7`
 // A11: no Batch-7 description fabricates a first-publication year (provenance-only copy).
 for (const s of b7Slugs) { const w = bySlug.get(s)!; ok(!/\b(18|19|20)\d{2}\b/.test(`${w.descTa} ${w.descEn}`), `${s}: description states no fabricated year`); }
 // A12: catalogue growth is exactly +116 over the pre-Batch-7 100 (Wave-7 B1's later +3 subtracted out).
-eq(works.length - 116 - W7.works - W7B.works - W7K.works - W8.works, 100, "pre-Batch-7 catalogue was exactly 100");
+eq(works.length - 116 - W7.works - W7B.works - W7K.works - W8.works - R3.works, 100, "pre-Batch-7 catalogue was exactly 100");
 // A13: Fiction is the ONLY shelf whose census changed.
 const sortObj = (o: Record<string, number>) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
 // Subtract Batch-7's fiction AND the later Wave-7 B1 cinema works to recover the pre-Batch-7 census: this
 // proves BATCH-7 changed only Fiction (Wave-7 B1's cinema growth is a later, separate batch).
-eq(sortObj({ ...byShelf, fiction: byShelf.fiction - 116 - W7B.fictionCat, "cinema-writing": byShelf["cinema-writing"] - W7.cinema, drama: byShelf.drama - W7B.drama - W8.drama, "essays-articles": byShelf["essays-articles"] - W7B.essays, speeches: byShelf.speeches - W7K.speeches, "literary-commentary": byShelf["literary-commentary"] - W7K.literaryCommentary - W8.literaryCommentary }), sortObj({ "life-writing": 1, letters: 1, fiction: 41, poetry: 14, drama: 8, "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2 }), "Batch-7 grew only the Fiction shelf (later Wave-7 B1 cinema + B2-B4 drama/novels/essays subtracted out)");
+eq(sortObj({ ...byShelf, fiction: byShelf.fiction - 116 - W7B.fictionCat, "cinema-writing": byShelf["cinema-writing"] - W7.cinema, drama: byShelf.drama - W7B.drama - W8.drama, "essays-articles": byShelf["essays-articles"] - W7B.essays - R3.shelves["essays-articles"], poetry: byShelf.poetry - R3.shelves.poetry, speeches: byShelf.speeches - W7K.speeches, "literary-commentary": byShelf["literary-commentary"] - W7K.literaryCommentary - W8.literaryCommentary }), sortObj({ "life-writing": 1, letters: 1, fiction: 41, poetry: 14, drama: 8, "cinema-writing": 7, speeches: 17, "essays-articles": 9, "literary-commentary": 2 }), "Batch-7 grew only the Fiction shelf (later Wave-7 B1 cinema + B2-B4 drama/novels/essays subtracted out)");
 // A14: the union of the 5 collections' distinct members equals 97 new + 16 (2009) − 0… i.e. new works in collections = 108.
 const inAnyCollection = new Set<string>(); for (const c of LIBRARY_COLLECTIONS.filter((x) => x.id !== "1977-kalaignar-karunanidhiyin-sirukathaigal")) for (const m of c.members) inAnyCollection.add(m.workId);
 eq(Array.from(inAnyCollection).filter((s) => b7Slugs.includes(s)).length, 108, "108 of the 116 new works belong to a Batch-7 collection (8 stand alone)");

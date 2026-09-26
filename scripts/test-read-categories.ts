@@ -26,6 +26,8 @@ import { LIBRARY_COLLECTIONS, collectionMemberWorks } from "../data/collections"
 import { chapterIndex } from "../data/references";
 import { READ_CATEGORIES, READ_CATEGORY_ROUTES, categoryForShelf, collectionsInCategory, worksInCategory } from "../data/read-categories";
 import { READ_IA_R2_CONTRIBUTION, READ_IA_R2_ROUTES } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
+import { isR3Published, preR3Works } from "../lib/read-ia-r3-projection";
 import sitemapRoutes from "../app/sitemap";
 import { loadMurasoliCorpusSummary, summarizeMurasoliCorpus } from "../lib/murasoli-corpus";
 import ChapterPage, { generateStaticParams as chapterParams } from "../app/read/[id]/page";
@@ -86,7 +88,8 @@ const EXPECTED_ROUTES: Record<ShelfId, string> = {
   "essays-articles": "/read/essays",
   "literary-commentary": "/read/literary-commentary",
 };
-const EXPECTED_COUNTS: Record<ShelfId, number> = {
+/** The R2 per-shelf counts; R3 stages add their derived per-shelf delta (lib/read-ia-r3-contribution.ts). */
+const R2_COUNTS: Record<ShelfId, number> = {
   "life-writing": 1,
   letters: 1,
   fiction: 162,
@@ -97,6 +100,10 @@ const EXPECTED_COUNTS: Record<ShelfId, number> = {
   "essays-articles": 15,
   "literary-commentary": 4,
 };
+const EXPECTED_COUNTS = Object.fromEntries(
+  Object.entries(R2_COUNTS).map(([s, n]) => [s, n + (R3.shelves[s] ?? 0)]),
+) as Record<ShelfId, number>;
+const EXPECTED_TOTAL = 335 + R3.works;
 /**
  * sha256 of the 335 published ids, sorted and newline-joined, at the R2 base (implementation f991043c). R2 is
  * information architecture only: any added work (a resolved-manifest CREATE item), removed work or merge changes
@@ -195,13 +202,13 @@ for (const c of READ_CATEGORIES) {
   for (const w of expected) seen.set(w.id, (seen.get(w.id) ?? 0) + 1);
   total += cardHrefs.length;
 }
-eq(total, 335, "category pages list 335 works in total");
-eq(works.length, 335, "published works = 335");
-eq(new Set(works.map((w) => w.href)).size, 335, "published work hrefs are unique (a rendered href identifies one work)");
+eq(total, EXPECTED_TOTAL, "category pages list 335 works in total (+ R3)");
+eq(works.length, EXPECTED_TOTAL, "published works = 335 (+ R3)");
+eq(new Set(works.map((w) => w.href)).size, EXPECTED_TOTAL, "published work hrefs are unique (a rendered href identifies one work)");
 eq(Array.from(seen.keys()).sort(), works.map((w) => w.id).sort(), "the union of category works is exactly the published set");
 eq(Array.from(seen.values()).filter((n) => n !== 1).length, 0, "every published work appears on exactly one category page");
 const allCardHrefs = READ_CATEGORIES.flatMap((c) => hrefsIn(testIdBlock(rendered[c.shelf] ?? "", "category-works", "div")));
-eq(new Set(allCardHrefs).size, 335, "335 distinct work links across the nine pages");
+eq(new Set(allCardHrefs).size, EXPECTED_TOTAL, "335 (+ R3) distinct work links across the nine pages");
 
 // Collection membership never suppresses a member.
 eq(LIBRARY_COLLECTIONS.length, 9, "collections = 9");
@@ -255,11 +262,14 @@ eq(works.filter((w) => letterIds.has(w.id) || /^\/murasoli\/./.test(w.href) || /
 
 // ── 6. Catalogue invariance ─────────────────────────────────────────────────────────────────────────────────
 for (const s of shelfIds) eq(works.filter((w) => w.shelf === s).length, EXPECTED_COUNTS[s], `shelf ${s} = ${EXPECTED_COUNTS[s]}`);
-const digest = createHash("sha256").update(works.map((w) => w.id).sort().join("\n")).digest("hex");
-eq(digest, R2_BASE_PUBLISHED_ID_DIGEST, "published id set is unchanged from the R2 base (no CREATE work, no merge)");
+// Judged on the pre-R3 projection (the stage's R3 identities removed, its demoted publications restored): R2 itself
+// added, removed and merged nothing. test-r3-identity pins that the projected-away delta is exactly the R3 stage's.
+const digest = createHash("sha256").update(preR3Works(works).map((w) => w.id).sort().join("\n")).digest("hex");
+eq(digest, R2_BASE_PUBLISHED_ID_DIGEST, "published id set, less the R3 delta, is unchanged from the R2 base (no CREATE work, no merge)");
 for (const [source, target] of R3_MERGES) {
   eq(works.filter((w) => w.id === source).map((w) => w.shelf), ["fiction"], `R3 merge source ${source} is still a separate Fiction work`);
-  eq(works.filter((w) => w.id === target).length, 0, `R3 merge target ${target} is not created in R2`);
+  // A merge target exists only as an R3-published identity (R3-B publishes the Meesai poems; the merge itself is R3-C).
+  eq(works.filter((w) => w.id === target && !isR3Published(w)).length, 0, `R3 merge target ${target} is not created in R2`);
 }
 
 // ── 7. The /read landing (R2-B) ─────────────────────────────────────────────────────────────────────────────

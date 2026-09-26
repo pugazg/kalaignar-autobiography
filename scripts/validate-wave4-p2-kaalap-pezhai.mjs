@@ -124,7 +124,25 @@ eq("exactly one catalogue entry for the publication", (libraryTs.match(new RegEx
   check("catalogue entry is a poetry-publication", block.includes('readerStructure: "poetry-publication"'));
 }
 // No 58 top-level LibraryWorks: none of the item slugs is a catalogue id.
-for (const it of pub.items) check(`item ${it.ordinal} is not a top-level LibraryWork`, !libraryTs.includes(`id: "${it.slug}"`));
+// Reading Room IA v2 R3 reconciliation (explicit, against data/internal/r3/identity-manifest.json). The Wave-4 fact holds
+// for the historical catalogue literal (data/library.ts): no item is a top-level record there. Since R3-B an item is a
+// canonical LibraryWork ONLY as the identity manifest records — generated into data/r3-catalogue.ts at the item's own
+// route — and a witness item (or an item of an unpublished stage) is never one.
+const r3Manifest = JSON.parse(readText(path.join(process.cwd(), "data/internal/r3/identity-manifest.json")));
+const r3CatalogueTs = readText(path.join(process.cwd(), "data/r3-catalogue.ts"));
+const r3Publication = r3Manifest.publications.find((p) => p.id === SLUG);
+const r3PublishedIds = new Set(r3Manifest.works.filter((w) => w.state === "published").map((w) => w.id));
+check("R3: the identity manifest maps this publication", !!r3Publication);
+for (const it of pub.items) {
+  check(`item ${it.ordinal} is not a top-level LibraryWork in the historical catalogue literal`, !libraryTs.includes(`id: "${it.slug}"`));
+  const unit = r3Publication?.units.find((u) => u.unit === it.slug);
+  const expectWork = !!unit && unit.role === "canonical" && r3PublishedIds.has(unit.canonicalId);
+  check(`item ${it.ordinal}: mapped in the R3 identity manifest`, !!unit);
+  check(
+    `item ${it.ordinal}: a canonical LibraryWork exactly as the R3 identity manifest records (${expectWork ? "published " + unit.canonicalId : "none"})`,
+    r3CatalogueTs.includes(`"href": "${unit?.locator}"`) === expectWork && (!expectWork || r3CatalogueTs.includes(`"id": "${unit.canonicalId}"`)),
+  );
+}
 
 // ── ITEM ROSTER ──────────────────────────────────────────────────────────────────────────────────
 eq("ordinals are exactly 1..58 in order", pub.items.map((i) => i.ordinal), Array.from({ length: 58 }, (_, i) => i + 1));
