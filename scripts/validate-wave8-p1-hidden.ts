@@ -26,7 +26,7 @@ import { PLAY_SLUGS } from "../data/plays";
 import { WAVE6_DRAMA_SLUGS } from "../lib/drama-wave6-routes";
 import { WAVE7_DRAMA_SLUGS } from "../lib/drama-wave7-routes";
 import { WAVE8_DRAMA_SLUGS } from "../lib/drama-wave8-routes";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 // The /plays route registry is the de-duplicated union of these three lists (app/plays/[slug]/page.tsx).
 const ALL_PLAY_SLUGS: readonly string[] = Array.from(new Set<string>([...PLAY_SLUGS, ...WAVE6_DRAMA_SLUGS, ...WAVE7_DRAMA_SLUGS]));
 
@@ -98,7 +98,7 @@ eq(ALL_PLAY_SLUGS.length, PUB ? P4_EXPECT.playRegistry : 10, PUB ? "/plays route
 ok(PUB ? ALL_PLAY_SLUGS.filter((x) => x === "ore-mutham").length === 1 && P3_OK : !ALL_PLAY_SLUGS.includes("ore-mutham") && (P3 ? P3_OK && JSON.stringify(WAVE8_DRAMA_SLUGS) === '["ore-mutham"]' : !(WAVE8_DRAMA_SLUGS as readonly string[]).length), PUB ? "ore-mutham appears exactly once in the public /plays registry (P4)" : P3 ? "ore-mutham is in no public /plays registry — only the hidden Wave-8 direct-route registry (P3)" : "ore-mutham is in no /plays route registry");
 
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
-eq(sm.length, PUB ? P4_EXPECT.sitemap : P1_FROZEN.sitemap, PUB ? "sitemap 4779 → 5262 (P4)" : "sitemap still 4779");
+eq(sm.length, (PUB ? P4_EXPECT.sitemap : P1_FROZEN.sitemap) + R2.sitemap, PUB ? "sitemap 4779 → 5262 (P4) + later R2 category URLs" : "sitemap still 4779 (+ later R2 category URLs)");
 eq(sm.length - new Set(sm).size, P1_FROZEN.sitemapDup, "sitemap 0 duplicates");
 const w8InSitemap = sm.map((u) => new URL(u).pathname).filter((u) => /^\/plays\/ore-mutham|^\/sangatamil|^\/murasoli\/m4[2-7]-/.test(u)).sort();
 ok(PUB ? JSON.stringify(w8InSitemap) === JSON.stringify([...P3_ROUTES].sort()) : w8InSitemap.length === 0, PUB ? "sitemap carries exactly the 483 P3 Wave-8 routes (P4)" : "no Wave-8 URL in the sitemap");

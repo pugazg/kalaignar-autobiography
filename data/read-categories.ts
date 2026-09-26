@@ -47,13 +47,8 @@ export const READ_CATEGORIES: readonly ReadCategory[] = [
 /** The nine category routes, derived from the registry. */
 export const READ_CATEGORY_ROUTES: readonly string[] = READ_CATEGORIES.map((c) => c.route);
 
-/**
- * R2's exact contribution to the BUILT surface, DERIVED from the registry (never hand-typed): one static page per
- * category route. Earlier-wave validators that pin a live whole-build total ADD `build`, and exclude
- * READ_CATEGORY_ROUTES from any frozen pre-wave route remainder — the same reconciliation lib/wave8-contribution.ts
- * provides for Wave 8. Build only: the category routes are not in the sitemap in R2-A, which adds no URL there.
- */
-export const READ_IA_R2_CONTRIBUTION = { build: READ_CATEGORY_ROUTES.length } as const;
+// R2's build/sitemap contribution is derived from READ_CATEGORY_ROUTES in lib/read-ia-r2-contribution.ts (the one
+// canonical declaration), not here.
 
 /** The registry entry for a shelf. Every ShelfId has exactly one; a missing one is a programming error. */
 export function categoryForShelf(shelf: ShelfId): ReadCategory {

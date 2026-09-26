@@ -29,6 +29,7 @@ import type { ManthiriReader } from "../data/manthiri-kumari";
 import type { RajaRaniReader } from "../data/raja-rani";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import LibraryHome from "../components/LibraryHome";
@@ -300,7 +301,7 @@ eq(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.id).sort(), 
 eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "A5 Fiction has 20 discovery entries despite 162 works (post Batch-7 + Wave-7 B2-B4; பெரிய இடத்துப் பெண் collapsed into arumbu-1978)");
 
 // ── A6. Sitemap boundary ────────────────────────────────────────────────────────────────────────
-eq(urls.length, 4267 + W7K.sitemap + W8.sitemap, "A6 sitemap holds 4779 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225; post Wave-7 B5/B6/K: +512)");
+eq(urls.length, 4267 + W7K.sitemap + W8.sitemap + R2.sitemap, "A6 sitemap holds 4779 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225; post Wave-7 B5/B6/K: +512) + later Wave-8 + later R2 category URLs");
 eq(new Set(urls).size, urls.length, "A6 sitemap has 0 duplicate URLs");
 
 // ── A7. Build-output boundary — SCOPED TO THE SIX FROZEN WAVE-5 CINEMA FAMILIES ────────────────────

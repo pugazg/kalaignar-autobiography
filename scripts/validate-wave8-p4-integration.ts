@@ -23,7 +23,7 @@ import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import { PLAY_SLUGS } from "../data/plays";
 import sitemap from "../app/sitemap";
 import * as MurasoliRoute from "../app/murasoli/[id]/page";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2, READ_IA_R2_ROUTES } from "../lib/read-ia-r2-contribution";
 
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -144,13 +144,13 @@ ok(render("m42-l3377") === "" && render("m46-l3636") === "", "fabricated letter 
 
 // ══ SITEMAP ═════════════════════════════════════════════════════════════════════════════════════════════════════
 const urls = (sitemap() as { url: string }[]).map((e) => new URL(e.url).pathname);
-eq(urls.length, 5262, "sitemap 4779 → 5262");
+eq(urls.length, 5262 + R2.sitemap, "sitemap 4779 → 5262 (+ later R2 category URLs)");
 eq(urls.length - new Set(urls).size, 0, "0 duplicate sitemap URLs");
 const P3 = readJSON<{ cohorts: Record<"murasoli" | "oreMutham" | "sangatamil", { routes: string[] }> }>("data/internal/wave8/wave8-p3-routes.json");
 const inSm = new Set(urls);
 for (const k of ["murasoli", "oreMutham", "sangatamil"] as const) eq(P3.cohorts[k].routes.filter((r) => inSm.has(r)).length, { murasoli: 342, oreMutham: 35, sangatamil: 106 }[k], `sitemap carries every P3 ${k} route`);
 const p3All = new Set(Object.values(P3.cohorts).flatMap((c) => c.routes));
-eq(urls.filter((u) => !p3All.has(u)).length, 4779, "the sitemap minus the 483 P3 routes is exactly the pre-P4 4779 (delta exactly +483)");
+eq(urls.filter((u) => !p3All.has(u) && !READ_IA_R2_ROUTES.includes(u)).length, 4779, "the sitemap minus the 483 P3 routes (and the later R2 category URLs) is exactly the pre-P4 4779 (delta exactly +483)");
 ok(!urls.some((u) => /\/murasoli\/m42-l3377|\/plays\/ore-mutham\/(31|main-31|nagai-suvai-04)$|\/sangatamil\/(105|section-)/.test(u)), "no fabricated route in the sitemap");
 ok(urls.filter((u) => u === "/murasoli").length === 1, "the existing /murasoli landing is listed once (not a new URL)");
 

@@ -33,7 +33,7 @@ import { ESSAY_SLUGS } from "../data/essays";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam) contribution — derived, see lib/wave7-b5-b6-k-contribution.ts.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -168,7 +168,7 @@ ok(fictionEntryIds.includes("surulimalai") && fictionEntryIds.includes("vellikki
 // ── 4. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace(BASE, "")));
-eq(urls.length, 4267 + W7K.sitemap + W8.sitemap, "sitemap has exactly 4267 URLs (4042 + 224 direct + 1 collection route) + the later Wave-7 B5/B6/K 512");
+eq(urls.length, 4267 + W7K.sitemap + W8.sitemap + R2.sitemap, "sitemap has exactly 4267 URLs (4042 + 224 direct + 1 collection route) + the later Wave-7 B5/B6/K 512 + later Wave-8 + later R2 category URLs");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 eq(P3_ROUTES.length, 224, "P3 manifest still declares 224 direct routes");
 for (const r of P3_ROUTES) ok(urlSet.has(r), `sitemap exposes direct route ${r}`);

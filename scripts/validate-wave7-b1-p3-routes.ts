@@ -37,7 +37,7 @@ import "../app/cinema/naam/source/page";
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const SECTION_MOD: Record<Wave7CinemaSlug, { params: () => { section: string }[]; dyn: unknown }> = {
   "maruthanattu-ilavarasi": { params: maruSections as () => { section: string }[], dyn: maruDyn },

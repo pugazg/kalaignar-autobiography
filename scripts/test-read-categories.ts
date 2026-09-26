@@ -1,11 +1,13 @@
 /**
- * Reading Room IA v2 — R2 validator: category registry, the nine /read category routes, catalogue coverage, the
- * Letters corpus treatment, catalogue invariance (R2-A), and the category-first /read landing (R2-B).
+ * Reading Room IA v2 — the whole-R2 validator: category registry, the nine /read category routes, catalogue coverage,
+ * the Letters corpus treatment, catalogue invariance (R2-A); the category-first /read landing (R2-B); and the secondary
+ * collection sections, the sitemap +9 and the canonical R2 contribution module (R2-C).
  *
  *   npm run test:read-categories
  *
- * Scope is R2-A + R2-B. /read is exactly nine category cards (no work card, collection card, disclosure or Daily
- * Kural), and the shared `life-writing` label is சுயசரிதை. The sitemap is still R2-C's: no category URL is in it yet.
+ * /read is exactly nine category cards (no work card, collection card, disclosure or Daily Kural), and the shared
+ * `life-writing` label is சுயசரிதை. Category pages list every work, then — for Fiction (7) and Speeches (2) only — a
+ * secondary Collections section. The sitemap is the frozen pre-R2 set plus exactly the nine category URLs.
  *
  * Coverage is checked on RENDERED MARKUP from each route file's own default export, not on a re-derivation of
  * the shelf filter: the risk is a work that stops being delivered by a page, and only counting the anchors the
@@ -22,7 +24,9 @@ import { LangProvider } from "../lib/i18n";
 import ReadIndex from "../app/read/page";
 import { LIBRARY_COLLECTIONS, collectionMemberWorks } from "../data/collections";
 import { chapterIndex } from "../data/references";
-import { READ_CATEGORIES, READ_CATEGORY_ROUTES, READ_IA_R2_CONTRIBUTION, categoryForShelf, collectionsInCategory, worksInCategory } from "../data/read-categories";
+import { READ_CATEGORIES, READ_CATEGORY_ROUTES, categoryForShelf, collectionsInCategory, worksInCategory } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION, READ_IA_R2_ROUTES } from "../lib/read-ia-r2-contribution";
+import sitemapRoutes from "../app/sitemap";
 import { loadMurasoliCorpusSummary, summarizeMurasoliCorpus } from "../lib/murasoli-corpus";
 import ChapterPage, { generateStaticParams as chapterParams } from "../app/read/[id]/page";
 import AutobiographyPage from "../app/read/autobiography/page";
@@ -315,15 +319,75 @@ ok(SHELVES.every((sh) => sh.ta !== "வாழ்க்கை எழுத்த�
   ok(/READ_CATEGORIES/.test(homeSrc) && !/\/read\/(autobiography|letters|fiction|poetry|drama|cinema|speeches|essays|literary-commentary)/.test(homeSrc), "LibraryHome takes its routes from the registry (none typed)");
 }
 
-// ── 8. Built output (fails closed without a build; CI runs this after `npm run build`) ──────────────────────
-// Earlier-wave validators add READ_IA_R2_CONTRIBUTION.build to their whole-build pins. This is what makes that term
-// honest: the category routes are exactly what R2-A adds to the build, each prerendered, and none reaches the sitemap.
+// ── 8. Secondary collection sections (R2-C) ─────────────────────────────────────────────────────────────────
+// After the full work list, and only where the shelf has collections: the existing CollectionCard, linking the
+// existing /collections/<id> routes. A collection never replaces a member — every member stays in the work grid.
+const allCollectionHrefs = LIBRARY_COLLECTIONS.map((c) => c.href);
+eq(allCollectionHrefs.filter((h) => /^\/collections\/[^/]+$/.test(h)).length, 9, "all 9 collections keep their /collections/<id> route");
+for (const c of READ_CATEGORIES) {
+  const html = rendered[c.shelf] ?? "";
+  const expected = collectionsInCategory(c.shelf).map((x) => x.href);
+  const section = testIdBlock(html, "category-collections", "section");
+  if (expected.length === 0) {
+    ok(section === "", `${c.route}: no Collections section (0 collections)`);
+    ok(!/id="category-collections"/.test(html), `${c.route}: no empty Collections heading`);
+    continue;
+  }
+  eq(hrefsIn(section), expected, `${c.route}: ${expected.length} secondary collection cards, in registry order`);
+  ok(expected.every((h) => allCollectionHrefs.includes(h)), `${c.route}: collection cards link the existing /collections/<id> routes`);
+  ok(html.indexOf('data-testid="category-works"') < html.indexOf('data-testid="category-collections"'), `${c.route}: Collections follows the canonical works`);
+  ok(/<h2[^>]*id="category-collections"[^>]*>[\s\S]*?lang="ta">தொகுப்புகள்<[\s\S]*?Collections<\/span><\/h2>/.test(section), `${c.route}: bilingual Collections / தொகுப்புகள் h2`);
+  const grid = hrefsIn(testIdBlock(html, "category-works", "div"));
+  const members = collectionsInCategory(c.shelf).flatMap((x) => collectionMemberWorks(x).map((m) => m.work.href));
+  eq(members.filter((h) => !grid.includes(h)), [], `${c.route}: every collection member is still an individual work card`);
+  eq(grid.length, EXPECTED_COUNTS[c.shelf], `${c.route}: the work grid still holds all ${EXPECTED_COUNTS[c.shelf]} works`);
+}
+eq(READ_CATEGORIES.map((c) => hrefsIn(testIdBlock(rendered[c.shelf] ?? "", "category-collections", "section")).length), [0, 0, 7, 0, 0, 0, 2, 0, 0], "collection cards per category: Fiction 7, Speeches 2, others 0");
+
+// ── 9. The canonical R2 contribution module (R2-C) ──────────────────────────────────────────────────────────
+// One declaration, derived from the registry: build and sitemap are both the number of category routes. Earlier-wave
+// validators add these terms; no second contribution object may exist.
+eq(READ_IA_R2_ROUTES, READ_CATEGORY_ROUTES, "READ_IA_R2_ROUTES is the registry's route list");
+eq(READ_IA_R2_CONTRIBUTION.build, READ_CATEGORY_ROUTES.length, "R2 build contribution = number of category routes");
+eq(READ_IA_R2_CONTRIBUTION.sitemap, READ_CATEGORY_ROUTES.length, "R2 sitemap contribution = number of category routes");
+{
+  const strip = (x: string) => x.replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:])\/\/.*$/gm, "$1");
+  const lib = strip(fs.readFileSync("lib/read-ia-r2-contribution.ts", "utf8"));
+  ok(!/\b9\b/.test(lib), "the contribution module types no literal 9 (both terms are derived)");
+  ok(/build:\s*READ_IA_R2_ROUTES\.length/.test(lib) && /sitemap:\s*READ_IA_R2_ROUTES\.length/.test(lib), "build and sitemap are READ_IA_R2_ROUTES.length");
+  ok(!/READ_IA_R2_CONTRIBUTION/.test(strip(fs.readFileSync("data/read-categories.ts", "utf8"))), "data/read-categories.ts declares no second contribution object");
+  const sm = strip(fs.readFileSync("app/sitemap.ts", "utf8"));
+  ok(/READ_CATEGORY_ROUTES\.map/.test(sm), "app/sitemap.ts derives the category URLs from the registry");
+  ok(!/\/read\/(autobiography|letters|fiction|poetry|drama|cinema|speeches|essays|literary-commentary)\b/.test(sm), "app/sitemap.ts types no category slug");
+}
+
+// ── 10. Sitemap: the frozen pre-R2 set plus exactly the category URLs (R2-C) ────────────────────────────────
+/**
+ * The pre-R2 sitemap, frozen: 5262 unique paths, sha256 of the sorted, newline-joined paths — measured on the R2-B
+ * implementation tree cb70d857 (identical to the pre-R2 sitemap at f991043c; R2-A and R2-B changed no sitemap URL).
+ * The final sitemap minus READ_IA_R2_ROUTES must reproduce it exactly: no URL disappeared, none changed, none added
+ * beyond the category routes.
+ */
+const PRE_R2_SITEMAP = { count: 5262, sha256: "5e017f0238ac1849ee4209e50306fe600125f84ee3c704bf527f29f747ffe2b5" };
+{
+  const paths = sitemapRoutes().map((e) => e.url.replace("https://nenjukkuneethi.org", "") || "/");
+  eq(paths.length, PRE_R2_SITEMAP.count + READ_IA_R2_CONTRIBUTION.sitemap, "sitemap() = frozen pre-R2 5262 + R2 sitemap contribution");
+  eq(paths.length - new Set(paths).size, 0, "sitemap() has 0 duplicate URLs");
+  for (const r of READ_IA_R2_ROUTES) eq(paths.filter((p) => p === r).length, 1, `sitemap() lists ${r} exactly once`);
+  const remainder = paths.filter((p) => !READ_IA_R2_ROUTES.includes(p)).sort();
+  eq(remainder.length, PRE_R2_SITEMAP.count, "sitemap() minus the category routes = 5262 pre-R2 URLs");
+  eq(createHash("sha256").update(remainder.join("\n")).digest("hex"), PRE_R2_SITEMAP.sha256, "the pre-R2 sitemap set is preserved exactly (no URL disappeared or changed)");
+}
+
+// ── 11. Built output (fails closed without a build; CI runs this after `npm run build`) ─────────────────────
+// Earlier-wave validators add READ_IA_R2_CONTRIBUTION.build (and, since R2-C, .sitemap) to their whole-surface pins.
+// This is what makes those terms honest: the category routes are exactly what R2 adds to the build and the sitemap.
 const NEXT = path.join(process.cwd(), ".next");
 if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
   ok(false, "no production build (.next/prerender-manifest.json) — run `npm run build`; the build checks cannot be skipped");
 } else {
   const built = Object.keys((JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, unknown> }).routes);
-  eq(READ_IA_R2_CONTRIBUTION.build, 9, "R2 build contribution = 9 (one page per registry route; R2-B adds no route)");
+  eq(READ_IA_R2_CONTRIBUTION.build, 9, "R2 build contribution derives to 9 (one page per registry route; R2-B and R2-C add no page)");
   const readEntry = (JSON.parse(fs.readFileSync(path.join(NEXT, "prerender-manifest.json"), "utf8")) as { routes: Record<string, { initialRevalidateSeconds: number | false }> }).routes["/read"];
   ok(!!readEntry && readEntry.initialRevalidateSeconds === false, "/read is prerendered fully static (no revalidation once the Daily Kural is gone)");
   eq(built.filter((r) => READ_CATEGORY_ROUTES.includes(r)).sort(), [...READ_CATEGORY_ROUTES].sort(), "all 9 category routes are prerendered");
@@ -332,7 +396,16 @@ if (!fs.existsSync(path.join(NEXT, "prerender-manifest.json"))) {
   const sitemap = path.join(NEXT, "server/app/sitemap.xml.body");
   ok(fs.existsSync(sitemap), "sitemap.xml is built");
   const locs = fs.existsSync(sitemap) ? (fs.readFileSync(sitemap, "utf8").match(/<loc>[^<]*<\/loc>/g) ?? []) : [];
-  eq(locs.filter((l) => READ_CATEGORY_ROUTES.some((r) => l.endsWith(`${r}</loc>`))), [], "R2-A adds no category URL to the sitemap");
+  eq(READ_IA_R2_CONTRIBUTION.sitemap, 9, "R2 sitemap contribution derives to 9");
+  for (const r of READ_IA_R2_ROUTES) eq(locs.filter((l) => l.endsWith(`${r}</loc>`)).length, 1, `built sitemap lists ${r} exactly once`);
+  eq(locs.length, PRE_R2_SITEMAP.count + READ_IA_R2_CONTRIBUTION.sitemap, "built sitemap = frozen pre-R2 5262 + R2 sitemap contribution");
+  eq(locs.length - new Set(locs).size, 0, "built sitemap has 0 duplicate URLs");
+  const builtRemainder = locs
+    .map((l) => l.slice(5, -6).replace("https://nenjukkuneethi.org", "") || "/")
+    .filter((p) => !READ_IA_R2_ROUTES.includes(p))
+    .sort();
+  eq(createHash("sha256").update(builtRemainder.join("\n")).digest("hex"), PRE_R2_SITEMAP.sha256, "built sitemap minus the category routes is exactly the pre-R2 set");
+  for (const h of LIBRARY_COLLECTIONS.map((c) => c.href)) ok(built.includes(h), `collection route ${h} is still prerendered`);
 }
 
 // ── Report ──────────────────────────────────────────────────────────────────────────────────────────────────

@@ -29,7 +29,7 @@ import { generateStaticParams as essayArticleParams } from "../app/essays/[slug]
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): its derived contribution is added ONLY once it is published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 const W7K = (LIBRARY_WORKS.some((w) => w.id === "kuraloviyam") ? W7K_ALL : { works: 0, collections: 0, discovery: 0, visible: 0, sitemap: 0, build: 0 });
 
 const root = process.cwd();

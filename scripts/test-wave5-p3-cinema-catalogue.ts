@@ -17,6 +17,7 @@ import type { ManthiriReader } from "../data/manthiri-kumari";
 import type { RajaRaniReader } from "../data/raja-rani";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const CAP = 6; // the historical /read disclosure cap (INITIAL_WORKS_PER_SHELF until R2-B); discovery-model data only
 let checks = 0;
@@ -83,7 +84,7 @@ eq(shelves.find((s) => s.shelf.id === "fiction")!.entries.length, 20, "Fiction h
 // ── SITEMAP ─────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
 const origin = new URL(urls[0]).origin;
-eq(urls.length, 4267 + W7K.sitemap + W8.sitemap, "sitemap holds 4779 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225; post Wave-7 B5/B6/K: +512)");
+eq(urls.length, 4267 + W7K.sitemap + W8.sitemap + R2.sitemap, "sitemap holds 4779 URLs (post Wave-7 B1: +133 cinema; post Wave-7 B2-B4: +225; post Wave-7 B5/B6/K: +512) + later Wave-8 + later R2 category URLs");
 eq(new Set(urls).size, urls.length, "sitemap has 0 duplicate URLs");
 const manUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/manthiri-kumari`));
 const rajaUrls = urls.filter((u) => u.startsWith(`${origin}/cinema/raja-rani`));

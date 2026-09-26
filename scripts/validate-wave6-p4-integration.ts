@@ -43,7 +43,8 @@ import { WAVE6_NOVEL_SLUGS } from "../lib/novels-wave6-routes";
 import { WAVE6_ESSAY_SLUGS } from "../lib/essays-wave6-routes";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K, WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8, WAVE8_ROUTES } from "../lib/wave8-contribution";
-import { READ_CATEGORY_ROUTES, categoryForShelf } from "../data/read-categories";
+import { categoryForShelf } from "../data/read-categories";
+import { READ_IA_R2_ROUTES as READ_CATEGORY_ROUTES, READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import LibraryCategoryPage from "../components/LibraryCategoryPage";
@@ -200,7 +201,7 @@ eq(discBy.fiction, 5 + B7.fictionDiscovery + W7B.fictionDisc, "fiction discovery
 
 // ── 4. SITEMAP — 3672 URLs, 0 duplicates, Wave-6 set == p3 cumulativeRoutes EXACTLY ──
 const urls = sitemap().map((e) => e.url);
-eq(urls.length, 3672 + B7.sitemap + W7.sitemap + W7B.sitemap + W7K.sitemap + W8.sitemap, "sitemap has exactly 4779 URLs (3672 Batches 1–6 + 237 Batch-7 + 133 Wave-7 B1 + 225 Wave-7 B2-B4 + 512 Wave-7 B5/B6/K)");
+eq(urls.length, 3672 + B7.sitemap + W7.sitemap + W7B.sitemap + W7K.sitemap + W8.sitemap + R2.sitemap, "sitemap has exactly 4779 URLs (3672 Batches 1–6 + 237 Batch-7 + 133 Wave-7 B1 + 225 Wave-7 B2-B4 + 512 Wave-7 B5/B6/K) + later Wave-8 + later R2 category URLs");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicate URLs");
 const urlSet = new Set(urls);
 const wave6InSitemap = manifest.cumulativeRoutes.filter((r) => urlSet.has(`${BASE}${r}`));
@@ -274,7 +275,7 @@ eq(rec.discovery.after, discTotal - B7.discovery - W7.discovery - W7B.discovery 
 eq(rec.discovery.initiallyVisible, visible - B7.visible - W7K.visible - W8.visible, "record discovery.initiallyVisible == live − Batch-7 (Wave-7 B1 added 0 visible: cinema over-cap)");
 eqMap(rec.discovery.perShelfAfter, toWave6Census(discBy, B7.fictionDiscovery + W7B.fictionDisc, W7K.speechDiscovery), "record discovery per-shelf census == live − later-wave contributions");
 eq(uniqSorted(rec.discovery.overCapShelves), uniqSorted(overCap.filter((s) => s !== "fiction")), "record over-cap shelves == live − Batch-7 (fiction); Wave-7 B1 added no over-cap shelf");
-eq(rec.sitemap.after, urls.length - B7.sitemap - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap, "record sitemap.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K");
+eq(rec.sitemap.after, urls.length - B7.sitemap - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap - R2.sitemap, "record sitemap.after == live − Batch-7 − Wave-7 B1 − Wave-7 B2-B4 − B5/B6/K − Wave-8 − R2");
 eq(rec.sitemap.duplicates, urls.length - new Set(urls).size, "record sitemap duplicates == live");
 eq(rec.build.prerenderRoutes, baseline.prerenderManifestRouteCount + manifest.cumulativeRouteCount, "record build prerenderRoutes == baseline + Wave-6");
 eq(rec.build.htmlFiles, baseline.htmlFileCount + manifest.cumulativeRouteCount, "record build htmlFiles == baseline + Wave-6");

@@ -26,7 +26,7 @@ import { generateStaticParams as naamSections, dynamicParams as naamDyn } from "
 // Later Wave-7 batch (B5a/B5b/B6/Kuraloviyam): derived contribution, folded into GLOBAL totals only once published.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K_ALL } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -94,7 +94,7 @@ eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.i
 // ── 3. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const urlSet = new Set(urls.map((u) => u.replace("https://nenjukkuneethi.org", "")));
-eq(urls.length, (g(4042, W7B.sitemap, W7K.sitemap) + W8.sitemap), `sitemap has exactly ${(g(4042, W7B.sitemap, W7K.sitemap) + W8.sitemap)} URLs (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
+eq(urls.length, (g(4042, W7B.sitemap, W7K.sitemap) + W8.sitemap + R2.sitemap), `sitemap has exactly ${(g(4042, W7B.sitemap, W7K.sitemap) + W8.sitemap + R2.sitemap)} URLs (incl. later Wave-8 + R2 categories) (3909 + 133${w7bLive ? " + 225 Wave-7 B2-B4" : ""})`);
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const p3Routes: string[] = p3.works.flatMap((w: any) => w.routes);
 eq(p3Routes.length, 133, "P3 manifest still declares 133 routes");

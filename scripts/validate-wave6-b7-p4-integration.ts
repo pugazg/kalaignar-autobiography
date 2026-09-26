@@ -42,7 +42,7 @@ import { WAVE7_B1_CONTRIBUTION } from "../lib/wave7-b1-contribution";
 // speech collections. Subtracted like W7/W7B so this Batch-7 record stays exactly checkable at the P4 tip.
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 const W7K_COLLECTION_IDS = ["muthukkuliyal-part-1", "muthukkuliyal-part-2"];
 
 const root = process.cwd();
@@ -198,7 +198,7 @@ eq(uniqSorted(shelves.filter((s) => s.entries.length > CAP).map((s) => s.shelf.i
 
 // ── 7. SITEMAP ──────────────────────────────────────────────────────────────────────────────────────
 const urls = sitemap().map((e) => e.url);
-eq(urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap, 3909, "sitemap has 3909 URLs (excluding later Wave-7 B1's 133 + B2-B4's 225)");
+eq(urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap - R2.sitemap, 3909, "sitemap has 3909 URLs (excluding later Wave-7 B1's 133 + B2-B4's 225 + B5/B6/K + Wave-8 + R2 categories)");
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 const urlSet = new Set(urls.map((u) => u.replace(/^https?:\/\/[^/]+/, "")));
 for (const s of b7Slugs) { ok(urlSet.has(`/stories/${s}`), `sitemap has /stories/${s}`); ok(urlSet.has(`/stories/${s}/source`), `sitemap has /stories/${s}/source`); }
@@ -227,7 +227,7 @@ eq(record.publish.collections.after, LIBRARY_COLLECTIONS.length - W7B.collection
 eq(record.publish.discovery.after, shelves.flatMap((s) => s.entries).length - W7.discovery - W7B.discovery - W7K.discovery - W8.discovery, "record discovery.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
 eq(record.publish.discovery.fictionEntries.after, fiction.entries.length - W7B.fictionDisc, "record fiction discovery entries == live − Wave-7 B2-B4");
 eq(record.publish.discovery.visible.after, shelves.reduce((n, s) => n + Math.min(s.entries.length, CAP), 0) - W7K.visible - W8.visible, "record visible == live − the later Literary Commentary entry");
-eq(record.publish.sitemap.after, urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap, "record sitemap.after == live − Wave-7 B1 − B2-B4 − B5/B6/K");
+eq(record.publish.sitemap.after, urls.length - W7.sitemap - W7B.sitemap - W7K.sitemap - W8.sitemap - R2.sitemap, "record sitemap.after == live − Wave-7 B1 − B2-B4 − B5/B6/K − Wave-8 − R2");
 eq(uniqSorted(record.pluralMembers), ["jaadi-kutti-poduma", "kuruvi-rameswaram"], "record plural members");
 for (const rc of record.collections) {
   const c = collectionById(rc.id)!;

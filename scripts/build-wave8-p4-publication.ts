@@ -83,6 +83,7 @@ export async function buildRecord() {
   const { discoveryShelves, LIBRARY_COLLECTIONS } = await import("../data/collections");
   const { PLAY_SLUGS } = await import("../data/plays");
   const sitemap = (await import("../app/sitemap")).default;
+  const { READ_IA_R2_ROUTES } = await import("../lib/read-ia-r2-contribution");
   const p3 = JSON.parse(fs.readFileSync(P3, "utf8")) as { counts: Record<string, number>; cohorts: Record<string, { routes: string[] }> };
   const p3Routes = Object.values(p3.cohorts).flatMap((c) => c.routes);
   const works = publishedWorks();
@@ -91,7 +92,9 @@ export async function buildRecord() {
   const shelves = discoveryShelves();
   const discovery = shelves.flatMap((s) => s.entries).length;
   const visible = shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0);
-  const urls = (sitemap() as { url: string }[]).map((e) => new URL(e.url).pathname);
+  // The record is the frozen Wave-8 P4 surface: the later Reading Room IA v2 category URLs (R2-C) are excluded, exactly as
+  // earlier-wave validators exclude later cohorts, so --verify keeps regenerating the committed record byte-for-byte.
+  const urls = (sitemap() as { url: string }[]).map((e) => new URL(e.url).pathname).filter((p) => !READ_IA_R2_ROUTES.includes(p));
   const inSitemap = new Set(urls);
   const li = JSON.parse(fs.readFileSync(LETTERS, "utf8")) as LettersIndex;
   const idx = JSON.parse(fs.readFileSync(IDX, "utf8")) as Index;

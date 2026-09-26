@@ -29,7 +29,7 @@ import * as SangatamilSourceRoute from "../app/sangatamil/source/page";
 import sitemap from "../app/sitemap";
 import { PLAY_SLUGS } from "../data/plays";
 import { LIBRARY_WORKS } from "../data/library";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -173,7 +173,7 @@ for (const fake of ["105-extra", "001", "section-1", "000-front-matter-2", "104-
 const sm = (sitemap() as { url: string }[]).map((e) => e.url);
 const smW8 = sm.map((u) => new URL(u).pathname).filter((u) => /^\/plays\/ore-mutham|^\/sangatamil|^\/murasoli\/m4[2-7]-/.test(u)).sort();
 ok(PUB ? same(smW8, sorted(EXPECT_ALL)) : smW8.length === 0, PUB ? `sitemap carries exactly the 483 Wave-8 routes (P4; found ${smW8.length})` : `sitemap carries Wave-8 URLs (${smW8.length})`);
-const SM_TOTAL = PUB ? 5262 : 4779;
+const SM_TOTAL = (PUB ? 5262 : 4779) + R2.sitemap; // + the later R2 category URLs (lib/read-ia-r2-contribution.ts)
 ok(sm.length === SM_TOTAL && new Set(sm).size === SM_TOTAL, `sitemap ${SM_TOTAL} / 0 duplicates (got ${sm.length})`);
 const lw = LIBRARY_WORKS as { id: string; slug: string }[];
 ok(PUB ? (PLAY_SLUGS as readonly string[]).filter((x) => x === "ore-mutham").length === 1 && lw.filter((w) => w.id === "ore-mutham").length === 1 && lw.filter((w) => w.id === "sangatamil").length === 1

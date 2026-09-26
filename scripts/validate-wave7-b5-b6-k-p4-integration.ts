@@ -27,7 +27,7 @@ import { WAVE7_SPEECH_SLUGS } from "../lib/speeches-wave7-routes";
 import { WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import sitemap from "../app/sitemap";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
-import { READ_IA_R2_CONTRIBUTION as R2 } from "../data/read-categories";
+import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -101,7 +101,7 @@ eq(shelves.find((s) => s.shelf.id === "literary-commentary")!.entries.length, 3 
 // ── 4. SITEMAP ────────────────────────────────────────────────────────────────────────────────────────
 const urls = (sitemap() as { url: string }[]).map((e) => e.url);
 const paths = urls.map((u) => new URL(u).pathname);
-eq(urls.length, BASE.sitemap + 512 + W8.sitemap, "sitemap 4267 → 4779 (+ later Wave-8 483)");
+eq(urls.length, BASE.sitemap + 512 + W8.sitemap + R2.sitemap, `sitemap 4267 → 4779 (+ later Wave-8 483 + later R2 categories ${R2.sitemap})`);
 eq(urls.length - new Set(urls).size, 0, "sitemap has 0 duplicates");
 eq(WAVE7_B5_B6_K_ROUTES.length, 512, "new routes = 200 speech + 310 Kuraloviyam + 2 collection landings");
 ok(WAVE7_B5_B6_K_ROUTES.every((r) => paths.includes(r)), "every new route is in the sitemap");
