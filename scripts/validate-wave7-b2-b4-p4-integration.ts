@@ -83,7 +83,7 @@ eq(works.length, 232 + W7K.works + W8.works + R3.works, "catalogue is exactly 23
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(byShelf["drama"], 10 + W8.drama, "Drama holds 10 works (8 + 2) + later Wave-8 ore-mutham");
-eq(byShelf["fiction"], 162, "Fiction holds 162 works (157 + 5)");
+eq(byShelf["fiction"], 162 + R3.shelves.fiction, "Fiction holds 162 works (157 + 5) (+ R3-D merges)");
 eq(byShelf["essays-articles"], 15 + R3.shelves["essays-articles"], "Essays & Articles holds 15 works (9 + 6) (+ R3: Meesai demoted in R3-B)");
 eq(byShelf["cinema-writing"], 10, "Cinema Writing unchanged at 10 (this batch adds none)");
 eq(Object.keys(byShelf).sort(), ["cinema-writing", "drama", "essays-articles", "fiction", "letters", "life-writing", "literary-commentary", "poetry", "speeches"], "still exactly 9 non-empty shelves");

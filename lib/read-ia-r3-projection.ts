@@ -6,7 +6,7 @@
 // so a historical assertion keeps its full strength against the records it was written for. test-r3-identity pins
 // the other direction: that the removed and restored sets are exactly the stage's authorized delta.
 import { LIBRARY_PUBLICATIONS, type LibraryWork } from "@/data/library";
-import { R3_IDENTITY } from "./work-relations";
+import { R3_IDENTITY, activeMergedWitness } from "./work-relations";
 
 const PUBLISHED = new Set(R3_IDENTITY.works.filter((w) => w.state === "published").map((w) => w.id));
 
@@ -18,11 +18,37 @@ export const R3_RESTORED_PUBLICATIONS: LibraryWork[] = LIBRARY_PUBLICATIONS.map(
   ({ kind: _kind, demotedIn: _demotedIn, ...rest }) => ({ ...rest, state: "published" }) as LibraryWork,
 );
 
-/** A live list of LibraryWorks projected back to pre-R3: R3 identities removed, demoted publications restored. */
+/**
+ * The five frozen R3-D merges (OD3–OD5): legacy Batch-7 story id → canonical target. A validator that pins these
+ * stories as published LibraryWorks admits EXACTLY these ids, and only while their merged-witness relation is ACTIVE
+ * (then the story is its verbatim legacy record there, at its preserved route) — never an arbitrary merged witness.
+ */
+export const R3_MERGED_LEGACY: ReadonlyMap<string, string> = new Map([
+  ["neeyum-kaithi-naanum-kaithi", "piraiye"],
+  ["sorgaththirku-vandhathu-eppadi", "sorgga-logaththil"],
+  ["aadik-kaatre", "adikkaatru"],
+  ["sirai-kodiyathu", "green-parrot"],
+  ["pugazhe-nee-oru-pudhir", "pugazh"],
+]);
+/** The verbatim legacy record of one of the five, when its merged-witness relation is active and targets the frozen id. */
+export function mergedLegacyRecord(id: string): LibraryWork | undefined {
+  const r = activeMergedWitness(id);
+  return r && R3_MERGED_LEGACY.get(id) === r.canonicalId ? (r.witness.record as LibraryWork) : undefined;
+}
+/** The legacy records of every active frozen merge (R3-D), verbatim. */
+export const R3_MERGED_LEGACY_RECORDS: LibraryWork[] = Array.from(R3_MERGED_LEGACY.keys())
+  .map((id) => mergedLegacyRecord(id))
+  .filter((w): w is LibraryWork => !!w);
+
+/**
+ * A live list of LibraryWorks projected back to pre-R3: R3 identities removed, demoted publications restored, and
+ * (R3-D) merged legacy works restored from their verbatim merged-witness records.
+ */
 export function preR3Works(works: readonly LibraryWork[], shelf?: string): LibraryWork[] {
   return [
     ...works.filter((w) => !isR3Published(w)),
     ...R3_RESTORED_PUBLICATIONS.filter((p) => shelf === undefined || p.shelf === shelf),
+    ...R3_MERGED_LEGACY_RECORDS.filter((w) => (shelf === undefined || w.shelf === shelf) && !works.some((x) => x.id === w.id)),
   ];
 }
 

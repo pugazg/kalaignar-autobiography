@@ -128,7 +128,7 @@ for (const w of works) catBy[w.shelf] = (catBy[w.shelf] ?? 0) + 1;
 eqMap(catBy, {
   "life-writing": 1,
   letters: 1 + R3.shelves.letters, // + R3 (R3-C: the two OD8 Letters)
-  fiction: 41 + B7.works + W7B.fictionCat, // 162 — Batch 7 +116 short stories, Wave-7 B2-B4 +5 novels
+  fiction: 41 + B7.works + W7B.fictionCat + R3.shelves.fiction, // 162 — Batch 7 +116 short stories, Wave-7 B2-B4 +5 novels (+ R3-D: −5 merges)
   poetry: 14 + R3.shelves.poetry, // + R3 (R3-B: +162 Poetry identities − 3 demoted publications)
   drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1 added 3 cinema works

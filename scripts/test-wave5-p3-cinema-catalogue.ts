@@ -48,7 +48,7 @@ for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 // Post Wave-6 P4 census (this Wave-5 P3 test's baseline moves with the published world).
 eq(byShelf["cinema-writing"], 10, "Cinema Writing holds 10 works (post Wave-7 B1: +3)");
 eq(byShelf["poetry"], 14 + R3.shelves.poetry, "Poetry 14 (post Wave-6 P4; + R3)");
-eq(byShelf["fiction"], 162, "Fiction 162 (post Wave-6 P4 + Batch-7; post Wave-7 B2-B4: +5 novels)");
+eq(byShelf["fiction"], 162 + R3.shelves.fiction, "Fiction 162 (post Wave-6 P4 + Batch-7; post Wave-7 B2-B4: +5 novels; + R3-D merges)");
 eq(byShelf["drama"], 10 + W8.drama, "Drama 10 (+ Wave-8 ore-mutham) (post Wave-6 P4; post Wave-7 B2-B4: +2 dramas)");
 eq(byShelf["speeches"], 17 + W7K.speeches + R3.shelves.speeches, "Speeches 117 (post Wave-6 P4: 17; post Wave-7 B5/B6: +100; + R3)");
 eq(byShelf["essays-articles"], 15 + R3.shelves["essays-articles"], "Essays & Articles 15 (post Wave-6 P4; post Wave-7 B2-B4: +6 essays; + R3)");
