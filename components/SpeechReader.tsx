@@ -4,10 +4,12 @@ import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, AudioLines, BookOpen, Calendar, Home, Info, Landmark, MapPin, Mic, Minus, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
+import WitnessNote from "@/components/WitnessNote";
 import type { Speech, SpeechBlock, SpeechBilingualText, SpeechSourceText } from "@/data/speeches";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { useReaderProgress } from "@/lib/useReaderProgress";
+import type { WitnessLink } from "@/lib/witness";
 
 const LAST_KEY = "speeches:last";
 const POS_PREFIX = "speeches:pos:";
@@ -16,12 +18,15 @@ export default function SpeechReader({
   slug,
   initialSpeech,
   initialShowEn,
+  witnessLinks = [],
 }: {
   slug: string;
   /** Test/SSR seed: the speech payload. The live route passes only `slug` and fetches it. */
   initialSpeech?: Speech;
   /** Test/SSR seed for the English toggle; defaults to false so the live reader is Tamil-first. */
   initialShowEn?: boolean;
+  /** R3: active relation links for this speech (lib/witness.ts `r3WitnessLinksForPage`); renders nothing when empty. */
+  witnessLinks?: WitnessLink[];
 }) {
   const { lang } = useLang();
   const ta = lang === "ta";
@@ -199,6 +204,7 @@ export default function SpeechReader({
             {renderBlocks(blocks, ta)}
           </div>
         )}
+        {speech && <WitnessNote links={witnessLinks} />}
 
         {/* Provenance / source note. */}
         {speech && (

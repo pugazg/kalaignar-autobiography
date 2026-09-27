@@ -41,7 +41,7 @@ const BOUNDARY_SHA256 = "d2975f49c000dcd19f31b092a0e097451ceaef3af85f486798e3cff
 /** The R3 stage state. The ONLY switch that activates R3 content; each later stage PR advances it by one stage. */
 const STAGE_ORDER = ["R3-A", "R3-B", "R3-C", "R3-D"] as const;
 type Stage = (typeof STAGE_ORDER)[number];
-const PUBLISHED_STAGES: readonly Stage[] = ["R3-A", "R3-B"];
+const PUBLISHED_STAGES: readonly Stage[] = ["R3-A", "R3-B", "R3-C"];
 
 /** Frozen plan §13: the stage that introduces each CREATE family and demotes each publication. */
 const FAMILY_STAGE: Record<string, Stage> = {
@@ -321,6 +321,12 @@ function generate() {
     const units = p.kind === "poems" ? (j.items ?? []).map((i) => ({ slug: i.slug, n: i.ordinal })) : (j.articles ?? []).map((a) => ({ slug: a.slug, n: a.number }));
     return { title: j.title, year: j.publicationYear ?? j.firstEdition?.year ?? null, count: j.itemCount ?? j.articleCount ?? units.length, units };
   };
+  // R3-C prose units: the frozen manifest's subtype names the kind; the position is the unit's archive ordinal.
+  const PROSE_UNIT: Record<string, { ta: string; en: string }> = {
+    essay: { ta: "கட்டுரை", en: "essay" },
+    letter: { ta: "கடிதம்", en: "letter" },
+    "public-speech": { ta: "உரை", en: "speech" },
+  };
   const INHERIT = ["sourceRepo", "sourcePath", "sourceCommit", "edition", "tamil", "english", "englishKind", "rights", "provenanceHref"] as const;
   const catalogue = works.filter((w) => w.state === "published").map((w) => {
     const parent = boundary.catalogue.records.find((r) => r.id === w.parentPublicationId)!;
@@ -334,7 +340,9 @@ function generate() {
       ? [`${pubTa} — «${unit.slug === INA.unitSlug ? "கவிதைகள்" : unit.slug}» பகுதியின் கவிதை ${pos}`, `${pubEn} — poem ${pos}, in its unit “Kavithaigal”`]
       : w.subtype === "ezhuthoviyam"
         ? [`${pubTa} — எழுத்தோவியம் ${pos} / ${f.count}`, `${pubEn} — piece ${pos} of ${f.count} (எழுத்தோவியம், a prose-poem)`]
-        : [`${pubTa} — கவிதை ${pos} / ${f.count}`, `${pubEn} — poem ${pos} of ${f.count}`];
+        : w.subtype in PROSE_UNIT
+          ? [`${pubTa} — ${PROSE_UNIT[w.subtype].ta} · பகுதி ${pos} / ${f.count}`, `${pubEn} — ${PROSE_UNIT[w.subtype].en}, unit ${pos} of ${f.count}`]
+          : [`${pubTa} — கவிதை ${pos} / ${f.count}`, `${pubEn} — poem ${pos} of ${f.count}`];
     const rec: Record<string, unknown> = {
       id: w.id, slug: w.id, titleTa: w.titleTa, titleEn: w.titleEn, shelf: w.shelf, subtype: w.subtype,
       readerStructure: "publication-unit", href: w.locator.href, state: "published", descTa, descEn,

@@ -7,6 +7,7 @@ import { SPEECH_SLUGS } from "@/data/speeches";
 import type { Speech } from "@/data/speeches";
 import { WAVE6_SPEECH_SLUGS } from "@/lib/speeches-wave6-routes";
 import { WAVE7_SPEECH_SLUGS } from "@/lib/speeches-wave7-routes";
+import { r3WitnessLinksForPage } from "@/lib/witness";
 
 // Wave 6 P4: the Wave-6 speeches are now promoted into SPEECH_SLUGS, so this union is deduplicated
 // (a `Set`) to keep exactly one prerender param per slug. WAVE6_SPEECH_SLUGS is retained as a helper
@@ -63,5 +64,8 @@ export default function SpeechPage({ params }: { params: { slug: string } }) {
   if (!ALL_SPEECH_SLUGS.includes(params.slug)) notFound();
   const s = loadSpeech(params.slug);
   if (!s) notFound();
-  return <SpeechReader slug={params.slug} />;
+  // R3: active relations for this speech (R3-C: the two idhaya-perikai section witnesses). Passed only when present,
+  // so every other speech page is unchanged.
+  const witnessLinks = r3WitnessLinksForPage(`/speeches/${params.slug}`);
+  return <SpeechReader slug={params.slug} {...(witnessLinks.length ? { witnessLinks } : {})} />;
 }
