@@ -84,7 +84,7 @@ const works = publishedWorks();
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 eq(works.length, PUB ? P4_EXPECT.catalogue + R3.works : P1_FROZEN.catalogue, PUB ? "catalogue 333 → 335 (P4: ore-mutham + sangatamil; + later R3)" : "catalogue still 333");
-eq(byShelf["letters"], P1_FROZEN.letters, "Letters still 1 (Murasoli 42–47 join the one murasoli-letters work)");
+eq(byShelf["letters"], P1_FROZEN.letters + R3.shelves.letters, "Letters still 1 (Murasoli 42–47 join the one murasoli-letters work; + the R3 OD8 Letters)");
 eq(byShelf["drama"], PUB ? P4_EXPECT.drama : P1_FROZEN.drama, PUB ? "Drama 10 → 11 (P4)" : "Drama still 10");
 eq(byShelf["literary-commentary"], PUB ? P4_EXPECT.literaryCommentary : P1_FROZEN.literaryCommentary, PUB ? "Literary Commentary 3 → 4 (P4)" : "Literary Commentary still 3");
 eq(LIBRARY_COLLECTIONS.length, P1_FROZEN.collections, "collections still 9 (no Wave-8 collection)");

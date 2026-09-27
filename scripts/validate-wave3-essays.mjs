@@ -371,6 +371,31 @@ group("CATALOGUE AND ROUTES");
     check(`${w.slug}: catalogue invents NO rights block`, !/\brights:/.test(entry));
     check(`${w.slug}: English marked project-created`, entry.includes('englishKind: "project-created"'));
   }
+  // Reading Room IA v2 R3 reconciliation (explicit, against data/internal/r3/identity-manifest.json). A Wave-3 publication
+  // that R3 demotes keeps its record above verbatim as a publication record (listed in data/r3-catalogue.ts); its units
+  // become canonical works ONLY as the identity manifest records, at their own article routes, and — the Wave-3 rule —
+  // every promoted record invents no edition, unitCount or rights (the parent carries none to inherit).
+  const r3m = JSON.parse(read(path.join(process.cwd(), "data/internal/r3/identity-manifest.json")));
+  const r3Ts = read(path.join(process.cwd(), "data/r3-catalogue.ts"));
+  const r3Published = new Set(r3m.works.filter((x) => x.state === "published").map((x) => x.id));
+  for (const w of WORKS) {
+    const pub = r3m.publications.find((p) => p.id === w.slug);
+    if (!pub) continue;
+    const demoted = pub.state === "demoted";
+    eq(`${w.slug}: listed as an R3 demoted publication exactly when the manifest demotes it`,
+       new RegExp(`"id": "${w.slug}",\\s*"demotedIn": "R3-[BCD]"`).test(r3Ts), demoted);
+    for (const u of pub.units) {
+      const expectWork = u.role === "canonical" && r3Published.has(u.canonicalId);
+      const at = r3Ts.indexOf(`"href": "${u.locator}"`);
+      check(`${w.slug}/${u.unit}: a canonical work exactly as the R3 identity manifest records (${expectWork ? u.canonicalId : "none"})`,
+            (at !== -1) === expectWork && (!expectWork || r3Ts.lastIndexOf(`"id": "${u.canonicalId}"`, at) > r3Ts.lastIndexOf("\n  {", at)));
+      if (expectWork) {
+        const rec = r3Ts.slice(r3Ts.lastIndexOf("\n  {", at), r3Ts.indexOf("\n  }", at));
+        check(`${u.canonicalId}: promoted record invents NO edition / unitCount / rights`, !/"(edition|unitCount|rights)":/.test(rec));
+        check(`${u.canonicalId}: promoted record carries the reviewed pin`, rec.includes(PIN));
+      }
+    }
+  }
   check(`${REFERENCE} remains catalogued`, lib.includes(`id: "${REFERENCE}"`));
   check(`${REFERENCE} remains in ESSAY_SLUGS`, essays.includes(`"${REFERENCE}"`));
   const sitemap = read(path.join(process.cwd(), "app/sitemap.ts"));

@@ -50,11 +50,11 @@ eq(byShelf["cinema-writing"], 10, "Cinema Writing holds 10 works (post Wave-7 B1
 eq(byShelf["poetry"], 14 + R3.shelves.poetry, "Poetry 14 (post Wave-6 P4; + R3)");
 eq(byShelf["fiction"], 162, "Fiction 162 (post Wave-6 P4 + Batch-7; post Wave-7 B2-B4: +5 novels)");
 eq(byShelf["drama"], 10 + W8.drama, "Drama 10 (+ Wave-8 ore-mutham) (post Wave-6 P4; post Wave-7 B2-B4: +2 dramas)");
-eq(byShelf["speeches"], 17 + W7K.speeches, "Speeches 117 (post Wave-6 P4: 17; post Wave-7 B5/B6: +100)");
+eq(byShelf["speeches"], 17 + W7K.speeches + R3.shelves.speeches, "Speeches 117 (post Wave-6 P4: 17; post Wave-7 B5/B6: +100; + R3)");
 eq(byShelf["essays-articles"], 15 + R3.shelves["essays-articles"], "Essays & Articles 15 (post Wave-6 P4; post Wave-7 B2-B4: +6 essays; + R3)");
 eq(byShelf["literary-commentary"], 2 + W7K.literaryCommentary + W8.literaryCommentary, "Literary Commentary 3 (post Wave-7: +Kuraloviyam)");
 eq(byShelf["life-writing"], 1, "Life Writing unchanged (1)");
-eq(byShelf["letters"], 1, "Letters unchanged (1)");
+eq(byShelf["letters"], 1 + R3.shelves.letters, "Letters unchanged (1; + the R3 OD8 Letters)");
 eq(Object.keys(byShelf).length, 9, "exactly 9 non-empty shelves");
 eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "collections are 9 (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");
 

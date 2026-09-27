@@ -40,6 +40,7 @@ import CinemaPage from "../app/read/cinema/page";
 import SpeechesPage from "../app/read/speeches/page";
 import EssaysPage from "../app/read/essays/page";
 import LiteraryCommentaryPage from "../app/read/literary-commentary/page";
+import { R3_OD8_LETTERS, isOd8Letter } from "../lib/read-ia-r3-projection";
 
 let checks = 0;
 const failures: string[] = [];
@@ -229,10 +230,12 @@ for (const c of READ_CATEGORIES) {
 
 // ── 5. Letters ──────────────────────────────────────────────────────────────────────────────────────────────
 const letters = rendered.letters ?? "";
-eq(works.filter((w) => w.shelf === "letters").map((w) => w.id), ["murasoli-letters"], "Letters holds one canonical work: murasoli-letters");
+// R3-C: the one Murasoli corpus work plus exactly the two OD8 Letters (Sinthanaiyum units; not Murasoli letters).
+eq(works.filter((w) => w.shelf === "letters" && !isOd8Letter(w)).map((w) => w.id), ["murasoli-letters"], "Letters holds one Murasoli corpus work: murasoli-letters (+ exactly the R3 OD8 Letters)");
+eq(works.filter((w) => w.shelf === "letters" && isOd8Letter(w)).map((w) => w.id).sort(), Array.from(R3_OD8_LETTERS).sort(), "the Letters shelf's other works are exactly the published OD8 pair, at their Sinthanaiyum unit routes");
 eq(works.filter((w) => w.id === "murasoli-letters").length, 1, "murasoli-letters occurs exactly once");
 const mur = works.find((w) => w.id === "murasoli-letters");
-eq(hrefsIn(testIdBlock(letters, "category-works", "div")), [mur?.href], "/read/letters lists murasoli-letters as its only work card");
+eq(hrefsIn(testIdBlock(letters, "category-works", "div")), [mur?.href, ...works.filter((w) => w.shelf === "letters" && isOd8Letter(w)).map((w) => w.href)], "/read/letters lists murasoli-letters first, then exactly the OD8 Letters");
 
 const idx = JSON.parse(fs.readFileSync("public/data/murasoli/index.json", "utf8"));
 const lidx = JSON.parse(fs.readFileSync("public/data/murasoli/letters-index.json", "utf8"));
@@ -427,5 +430,5 @@ if (failures.length) {
 console.log(
   `✓ test-read-categories: ${checks} checks — 9 categories, 9 routes, 0 collisions with 391 chapters, ` +
     `${READ_CATEGORIES.map((c) => EXPECTED_COUNTS[c.shelf]).join("/")} = ${total} works each listed once, ` +
-    `Letters 1 work + corpus ${corpus.firstVolume}–${corpus.lastVolume} · ${corpus.volumeCount} volumes · ${corpus.letterCount} letters → /murasoli`,
+    `Letters: murasoli-letters + corpus ${corpus.firstVolume}–${corpus.lastVolume} · ${corpus.volumeCount} volumes · ${corpus.letterCount} letters → /murasoli${R3_OD8_LETTERS.size ? ` · + ${R3_OD8_LETTERS.size} OD8 Letters` : ""}`,
 );

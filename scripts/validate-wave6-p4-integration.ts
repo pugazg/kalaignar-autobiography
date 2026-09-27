@@ -127,12 +127,12 @@ const catBy: Record<string, number> = {};
 for (const w of works) catBy[w.shelf] = (catBy[w.shelf] ?? 0) + 1;
 eqMap(catBy, {
   "life-writing": 1,
-  letters: 1,
+  letters: 1 + R3.shelves.letters, // + R3 (R3-C: the two OD8 Letters)
   fiction: 41 + B7.works + W7B.fictionCat, // 162 — Batch 7 +116 short stories, Wave-7 B2-B4 +5 novels
   poetry: 14 + R3.shelves.poetry, // + R3 (R3-B: +162 Poetry identities − 3 demoted publications)
   drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1 added 3 cinema works
-  speeches: 17 + W7K.speeches, // 117 — Wave-7 B5/B6 +100 speeches
+  speeches: 17 + W7K.speeches + R3.shelves.speeches, // 117 — Wave-7 B5/B6 +100 speeches (+ R3-C thudikkum-ilamai-urai)
   "essays-articles": 9 + W7B.essays + R3.shelves["essays-articles"], // 15 — Wave-7 B2-B4 +6 essays (+ R3: Meesai demoted)
   "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
 }, "catalogue per-shelf census matches the post-Wave-7-B5/B6/K target");
@@ -177,12 +177,12 @@ for (const s of shelves) {
 eq(discTotal, 64 + B7.discovery + W7.discovery + W7B.discovery + W7K.discovery + W8.discovery + R3.discovery, "/read discovery is exactly 96 entries (64 Batches 1–6 + 13 Batch-7 + 3 Wave-7 B1 + 10 Wave-7 B2-B4 + 6 Wave-7 B5/B6/K)");
 eqMap(discBy, {
   "life-writing": 1,
-  letters: 1,
+  letters: 1 + R3.discoveryShelves.letters,
   fiction: 5 + B7.fictionDiscovery + W7B.fictionDisc, // 20 — Wave-7 B2-B4 +2 net (arumbu-1978 card + 2 standalone − பெரிய standalone collapsed)
   poetry: 14 + R3.discoveryShelves.poetry, // + R3 (R3-B: +162 Poetry identities − 3 demoted publications)
   drama: 8 + W7B.drama + W8.drama, // 10 — Wave-7 B2-B4 +2 dramas (+ Wave-8 ore-mutham)
   "cinema-writing": 7 + W7.cinema, // 10 — Wave-7 B1's 3 cinema works are standalone discovery entries
-  speeches: 17 + W7K.speechDiscovery, // 22 — Wave-7: 2 முத்துக் குளியல் collection cards + 3 assembly speeches
+  speeches: 17 + W7K.speechDiscovery + R3.discoveryShelves.speeches, // 22 — Wave-7: 2 முத்துக் குளியல் collection cards + 3 assembly speeches
   "essays-articles": 9 + W7B.essays + R3.discoveryShelves["essays-articles"], // 15 — Wave-7 B2-B4 +6 essays (+ R3: Meesai demoted)
   "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary, // 3 — Wave-7 +Kuraloviyam
 }, "/read discovery per-shelf census matches the post-Wave-7-B5/B6/K target");
