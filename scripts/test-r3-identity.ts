@@ -300,6 +300,92 @@ if (stages.join() === "R3-A,R3-B") {
     eq(Array.from({ length: 11 }, (_, i) => h.includes(`id="poem-6-${i + 1}"`)), Array(11).fill(true), "R3-B: anchors poem-6-1 … poem-6-11 are emitted on the ina unit");
   }
 }
+// ── 9c. R3-C: Essays / Letters / Speech promotion (frozen plan §13 R3-C) ─────────────────────────────────────────
+if (stages.join() === "R3-A,R3-B,R3-C") {
+  const pubW = W.filter((w) => w.state === "published");
+  const rc = W.filter((w) => w.introducedIn === "R3-C");
+  eq(pubW.length, 249, "R3-C: all 249 CREATE identities are published");
+  eq(W.filter((w) => w.state !== "published").length, 0, "R3-C: no CREATE identity remains dormant");
+  // Each CREATE identity is exactly one canonical LibraryWork, on its frozen resolved shelf and subtype.
+  const createRow = new Map(CREATE.map((e) => [e.resolved.canonicalId, e]));
+  eq(W.filter((w) => LIBRARY_WORKS.filter((x) => x.id === w.id).length !== 1).map((w) => w.id), [], "R3-C: every CREATE identity is a LibraryWork exactly once");
+  eq(W.filter((w) => { const x = LIBRARY_WORKS.find((y) => y.id === w.id); return !x || x.shelf !== w.shelf || x.subtype !== w.subtype || x.shelf !== createRow.get(w.id)?.resolved.shelf; }).map((w) => w.id), [], "R3-C: all 249 on their frozen shelf and subtype");
+  eq(rc.length, 87, "R3-C: 87 R3-C identities");
+  eq(sorted(tally(rc, (w) => w.family)), {
+    "essays-kolaikkalam": 6, "essays-perumoochu": 13, "essays-sinthanaiyum-seyalum": 50, "essays-thiraavida-sampaththu": 2,
+    "essays-thudikkum-ilamai": 2, "essays-unarchchimaalai": 9, "ina-prose": 5,
+  }, "R3-C: exactly the seven R3-C families");
+  eq(sorted(tally(rc, (w) => `${w.shelf}/${w.subtype}`)), { "essays-articles/essay": 84, "letters/letter": 2, "speeches/public-speech": 1 }, "R3-C: 84 Essays, 2 Letters, 1 Speech");
+  eq(rc.filter((w) => w.shelf === "letters").map((w) => w.id).sort(), ["athiga-uyaram-thaanduvatharku", "paasiyum-thoosiyum"], "R3-C: the two OD8 Letters are exactly the approved pair");
+  eq(rc.filter((w) => w.shelf === "speeches").map((w) => w.id), ["thudikkum-ilamai-urai"], "R3-C: thudikkum-ilamai-urai is the only R3-C Speech");
+  // Reader routes are reused, never invented: every R3-C work reads at its existing publication-unit route.
+  for (const w of rc) {
+    const x = LIBRARY_WORKS.find((y) => y.id === w.id);
+    ok(!!x, `R3-C ${w.id}: is a canonical LibraryWork`);
+    if (!x) continue;
+    ok(x.readerStructure === "publication-unit" && x.href === w.locator.href && x.href.startsWith(`/essays/${w.parentPublicationId}/articles/`) && smSet.has(x.href), `R3-C ${w.id}: reads at its existing unit route ${w.locator.href}`);
+    // Source pins and metadata are inherited from the parent publication exactly (no unit-level pin exists).
+    const parent = boundary.catalogue.records.find((r) => r.id === w.parentPublicationId) as unknown as Record<string, unknown>;
+    const rec = x as unknown as Record<string, unknown>;
+    ok(["sourceRepo", "sourcePath", "sourceCommit", "edition", "tamil", "english", "englishKind", "rights", "provenanceHref"].every((k) => JSON.stringify(rec[k]) === JSON.stringify(parent[k])), `R3-C ${w.id}: source pins and metadata inherited from ${w.parentPublicationId} exactly`);
+  }
+  eq(publishedWorks().length, 573, "R3-C: canonical catalogue 573");
+  eq(sorted(tally(publishedWorks(), (w) => w.shelf)), { "cinema-writing": 10, drama: 11, "essays-articles": 91, fiction: 162, letters: 3, "life-writing": 1, "literary-commentary": 4, poetry: 173, speeches: 118 }, "R3-C: shelves 1/3/162/173/11/10/118/91/4");
+  eq({ works: R3.works, poetry: R3.shelves.poetry, essays: R3.shelves["essays-articles"], letters: R3.shelves.letters, speeches: R3.shelves.speeches, others: Object.entries(R3.shelves).filter(([k]) => !["poetry", "essays-articles", "letters", "speeches"].includes(k)).every(([, v]) => v === 0), build: R3.build, sitemap: R3.sitemap, collections: R3.collections },
+    { works: 238, poetry: 159, essays: 76, letters: 2, speeches: 1, others: true, build: 0, sitemap: 0, collections: 0 }, "R3-C: derived contribution +238 (Poetry +159, Essays +76, Letters +2, Speeches +1), all else 0");
+  eq(LIBRARY_PUBLICATIONS.map((p) => [p.id, p.shelf, p.kind, p.demotedIn]).sort(), [
+    ["kaalap-pezhaiyum-kavithai-saaviyum", "poetry", "source-publication", "R3-B"],
+    ["kalaignarin-kavithaigal", "poetry", "source-publication", "R3-B"],
+    ["kalaignarin-kaviyaranga-kavithaigal-1975", "poetry", "source-publication", "R3-B"],
+    ["meesai-mulaiththa-vayathil", "essays-articles", "source-publication", "R3-B"],
+    ["ina-muzhakkam", "essays-articles", "source-publication", "R3-C"],
+    ["unarchchimaalai", "essays-articles", "source-publication", "R3-C"],
+    ["thiraavida-sampaththu", "essays-articles", "source-publication", "R3-C"],
+    ["kolaikkalam", "essays-articles", "source-publication", "R3-C"],
+    ["sinthanaiyum-seyalum", "essays-articles", "source-publication", "R3-C"],
+    ["perumoochu", "essays-articles", "source-publication", "R3-C"],
+    ["thudikkum-ilamai", "essays-articles", "source-publication", "R3-C"],
+  ].sort(), "R3-C: exactly 11 publication records (Poetry 3, Essays 8), the 7 new ones demoted in R3-C");
+  for (const p of LIBRARY_PUBLICATIONS) {
+    const former = boundary.catalogue.records.find((r) => r.id === p.id)!;
+    const { state: _s, ...formerRest } = former;
+    const { kind: _k, demotedIn: _d, ...rest } = p;
+    eq(rest, formerRest, `${p.id}: publication record is its former LibraryWork record verbatim (minus state)`);
+    ok(!LIBRARY_WORKS.some((w) => w.id === p.id) && !publishedWorks().some((w) => w.href === p.href), `${p.id}: no longer a canonical LibraryWork or canonical href`);
+    ok(smSet.has(p.href) && (!p.provenanceHref || smSet.has(p.provenanceHref)), `${p.id}: its landing and /source routes remain`);
+  }
+  // Relations: exactly the two R3-C section witnesses of idhaya-perikai join the active set.
+  const RC_REL = ["r3:thudikkum-ilamai/poompuhar->idhaya-perikai", "r3:thudikkum-ilamai/vetri-vilakku->idhaya-perikai"];
+  eq(activeRelations().length, 22, "R3-C: 22 active relations (2 pre-R3 + 18 R3-B + 2 R3-C)");
+  eq(R.filter((r) => r.introducedIn === "R3-C").map((r) => [r.id, r.state]), RC_REL.map((id) => [id, "active"]), "R3-C: exactly the two R3-C relations are active");
+  eq(sorted(tally(R.filter((r) => r.state === "dormant"), (r) => `${r.introducedIn}/${r.class}`)), { "R3-D/commentary-section": 11, "R3-D/external-publication": 11, "R3-D/merged-witness": 5 }, "R3-C: the 27 dormant relations are exactly R3-D (5 merges, 11 Sangatamil, 11 1958)");
+  for (const id of RC_REL) {
+    const r = R.find((x) => x.id === id)!;
+    ok(r.class === "source-publication" && r.relation === "SAME_CANONICAL_ESSAY_ALTERNATE_WITNESS" && r.level === "section" && r.canonicalId === "idhaya-perikai" && published.has("idhaya-perikai"), `${id}: a section witness of the published idhaya-perikai`);
+    ok(!LIBRARY_WORKS.some((w) => w.href === r.witness.locator || w.id === r.witness.unitSlug), `${id}: the witness unit ${r.witness.unitSlug} is not a canonical LibraryWork`);
+  }
+  eq(r3WitnessLinksForPage("/speeches/idhaya-perikai").map((l) => [l.id, l.href]), RC_REL.map((id) => [id, R.find((x) => x.id === id)!.witness.locator ?? undefined]), "R3-C: idhaya-perikai shows exactly its two section witnesses, linked");
+  for (const id of RC_REL) eq(r3WitnessLinksForPage(String(R.find((x) => x.id === id)!.witness.locator)).map((l) => [l.id, l.href]), [[id, "/speeches/idhaya-perikai"]], `${id}: the witness unit links back to idhaya-perikai`);
+  // The five merges stay R3-D: every source is still a canonical Fiction work; every target now exists.
+  for (const r of R.filter((x) => x.class === "merged-witness")) {
+    const src = (r.witness.record as LibraryWork).id;
+    ok(r.state === "dormant" && r.introducedIn === "R3-D", `${r.id}: merged-witness stays dormant R3-D`);
+    ok(LIBRARY_WORKS.some((w) => w.id === src && w.shelf === "fiction"), `R3-C: merge source ${src} is still a canonical Fiction work`);
+    ok(published.has(r.canonicalId), `R3-C: merge target ${r.canonicalId} is canonical`);
+  }
+  eq(LIBRARY_COLLECTIONS.length, 9, "R3-C: collections 9");
+  eq(sha256(JSON.stringify(LIBRARY_COLLECTIONS)), sha256(JSON.stringify(boundary.collections.records)), "R3-C: collection records unchanged");
+  // Built pages: the Ina anchors stay; idhaya-perikai and both witness units carry their notes.
+  const built = (r: string) => { const f = path.join(process.cwd(), ".next/server/app", `${r}.html`); return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : null; };
+  const ina = built("essays/ina-muzhakkam/articles/kavithaigal");
+  if (ina) eq(Array.from({ length: 11 }, (_, i) => ina.includes(`id="poem-6-${i + 1}"`)), Array(11).fill(true), "R3-C: anchors poem-6-1 … poem-6-11 are still emitted on the ina unit");
+  const perikai = built("speeches/idhaya-perikai");
+  if (perikai) ok(perikai.includes("Section 3 of this work") && perikai.includes("Section 4 of this work"), "R3-C: the idhaya-perikai page carries its two section-witness links");
+  for (const u of ["poompuhar", "vetri-vilakku"]) {
+    const h = built(`essays/thudikkum-ilamai/articles/${u}`);
+    if (h) ok(h.includes("/speeches/idhaya-perikai") && /இன் ஒரு மூல ஆதாரப் பதிப்பு|is a source witness of section/.test(h), `R3-C: the ${u} witness unit links back to idhaya-perikai`);
+  }
+}
 {
   // Stage-generic: no DO_NOT_PROMOTE row is ever a LibraryWork.
   // A DNP unit never becomes canonical: its route is never a canonical href, and its id never enters the catalogue
