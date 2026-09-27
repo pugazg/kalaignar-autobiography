@@ -23,7 +23,7 @@ import { ESSAY_SLUGS } from "../data/essays";
 import type { EssayPublication, EssayProvenance } from "../data/essays";
 import { WAVE6_ESSAY_SLUGS } from "../lib/essays-wave6-routes";
 import sitemap from "../app/sitemap";
-import { publishedWorks } from "../data/library";
+import { LIBRARY_PUBLICATIONS, publishedWorks } from "../data/library";
 import { discoveryShelves, LIBRARY_COLLECTIONS } from "../data/collections";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
@@ -114,8 +114,12 @@ ok(!!essaysShelf, "Essays & Articles discovery shelf present");
 const essayEntries = essaysShelf ? essaysShelf.entries : [];
 eq(essayEntries.length, 15 + R3.discoveryShelves["essays-articles"], "A12: Essays & Articles discovery is 15 entries (4 existing + 5 Wave-6 cards + 6 Wave-7 B4 essays)");
 for (const s of WAVE6_ESSAY_SLUGS) {
-  ok(works.some((w) => w.slug === s), `A11: ${s} IS in the catalogue`);
-  ok(essayEntries.some((e) => (e as { slug?: string; work?: { slug?: string } }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s), `A12: ${s} IS an Essays discovery entry`);
+  // Since R3-C a fully decomposed Wave-6 essay publication (ina-muzhakkam, kolaikkalam, sinthanaiyum-seyalum) keeps its
+  // record verbatim as an Essays publication record instead of a work / discovery entry (test-r3-identity pins which).
+  const pubRec = LIBRARY_PUBLICATIONS.find((p) => p.slug === s);
+  const isEntry = essayEntries.some((e) => (e as { slug?: string; work?: { slug?: string } }).slug === s || (e as { work?: { slug?: string } }).work?.slug === s);
+  ok(works.some((w) => w.slug === s) !== !!pubRec, `A11: ${s} IS in the catalogue (a work, or since R3 a publication record)`);
+  ok(pubRec ? !isEntry && pubRec.shelf === "essays-articles" : isEntry, `A12: ${s} IS an Essays discovery entry (or since R3 an Essays publication record)`);
 }
 // A14: exactly the 74 derived routes — no unrelated extra direct route in the batch manifest.
 eq(batch.routes.length, 74, "A14: no unrelated extra direct route (exactly 74)");

@@ -25,3 +25,13 @@ export function preR3Works(works: readonly LibraryWork[], shelf?: string): Libra
     ...R3_RESTORED_PUBLICATIONS.filter((p) => shelf === undefined || p.shelf === shelf),
   ];
 }
+
+/**
+ * The two OD8 canonical Letters (R3-C; `sinthanaiyum-seyalum` units, frozen resolved manifest), once published. They
+ * are NOT Murasoli-corpus letters: validators that pin "the Letters shelf is the one Murasoli corpus work" admit
+ * exactly this pair, read at its existing essay-unit routes, and nothing else.
+ */
+export const R3_OD8_LETTERS: ReadonlySet<string> = new Set(["paasiyum-thoosiyum", "athiga-uyaram-thaanduvatharku"].filter((id) => PUBLISHED.has(id)));
+/** True for an OD8 Letter at its own Sinthanaiyum unit route (never a Murasoli route or letter reader). */
+export const isOd8Letter = (w: { id: string; href: string; readerStructure?: string }) =>
+  R3_OD8_LETTERS.has(w.id) && w.readerStructure === "publication-unit" && w.href === `/essays/sinthanaiyum-seyalum/articles/${w.id}`;

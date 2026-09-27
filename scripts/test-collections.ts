@@ -167,8 +167,8 @@ for (const s of shelves.filter((x) => x.shelf.id !== "fiction" && x.shelf.id !==
 // Speeches (Wave-7 P4): the 97 முத்துக் குளியல் speeches collapse into their two volume cards (collections
 // first), then the 20 standalone speeches — the 17 earlier ones and the 3 Wave-7 assembly speeches.
 const speeches = shelves.find((s) => s.shelf.id === "speeches");
-eq(speeches!.works.length, 117, "Speeches holds 117 works (17 + 100 Wave-7)");
-eq(speeches!.entries.length, 22, "Speeches has 22 entries (2 முத்துக் குளியல் collection cards + 20 standalone speeches)");
+eq(speeches!.works.length, 117 + R3.shelves.speeches, "Speeches holds 117 works (17 + 100 Wave-7; + R3)");
+eq(speeches!.entries.length, 22 + R3.discoveryShelves.speeches, "Speeches has 22 entries (2 முத்துக் குளியல் collection cards + 20 standalone speeches)");
 eq(speeches!.entries.slice(0, 2).map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)), ["muthukkuliyal-part-1", "muthukkuliyal-part-2"], "Speeches shows the two முத்துக் குளியல் volumes first");
 eq(speeches!.entries.slice(2).filter((e) => e.kind === "collection").length, 0, "the other 20 Speeches entries are standalone works");
 for (const id of ["muthukkuliyal-part-1", "muthukkuliyal-part-2"]) {
@@ -189,7 +189,7 @@ ok(/162 works/.test(fictionCard), "the Fiction card states 162 works, not 20 ent
 ok(/7 collections/.test(fictionCard), "the Fiction card states its 7 collections");
 ok(!/\b20 works\b/.test(fictionCard), "the Fiction card never states the 20 discovery entries");
 const speechesCard = html.slice(html.indexOf('data-shelf="speeches"'), html.indexOf("</a>", html.indexOf('data-shelf="speeches"')));
-ok(/117 works/.test(speechesCard) && /2 collections/.test(speechesCard), "the Speeches card states 117 works · 2 collections");
+ok(new RegExp(`\\b${117 + R3.shelves.speeches} works`).test(speechesCard) && /2 collections/.test(speechesCard), "the Speeches card states 117 (+ R3) works · 2 collections");
 
 // ── 3. Reverse lookup is derived, plural, and not stored ─────────────────────────────────────────
 // Batch 7's 2009 anthology reprints eleven 1977 stories, so those members now legitimately belong to TWO

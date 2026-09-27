@@ -272,8 +272,8 @@ for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] || 0) + 1;
 // the object's key order) is not mistaken for a census change.
 const sortedCensus = (o: Record<string, number>) => Object.entries(o).sort((a, b) => a[0].localeCompare(b[0]));
 eq(sortedCensus(byShelf), sortedCensus({
-  "life-writing": 1, letters: 1, fiction: 162, poetry: 14 + R3.shelves.poetry, drama: 10 + W8.drama,
-  "cinema-writing": 10, speeches: 17 + W7K.speeches, "essays-articles": 15 + R3.shelves["essays-articles"], "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary,
+  "life-writing": 1, letters: 1 + R3.shelves.letters, fiction: 162, poetry: 14 + R3.shelves.poetry, drama: 10 + W8.drama,
+  "cinema-writing": 10, speeches: 17 + W7K.speeches + R3.shelves.speeches, "essays-articles": 15 + R3.shelves["essays-articles"], "literary-commentary": 2 + W7K.literaryCommentary + W8.literaryCommentary,
 }), "A5 shelf census (post Wave-7 B2-B4: Fiction 157→162, Drama 8→10, Essays 9→15; post Wave-7 B5/B6/K: Speeches 17→117, Literary Commentary 2→3)");
 eq(Object.keys(byShelf).length, 9, "A5 exactly 9 non-empty shelves");
 eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "A5 collections = 9 (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");

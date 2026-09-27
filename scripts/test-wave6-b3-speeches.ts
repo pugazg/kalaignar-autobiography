@@ -61,7 +61,7 @@ const works = publishedWorks();
 eq(works.length, 232 + W7K.works + W8.works + R3.works, "catalogue is 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
 for (const slug of WAVE6_SPEECH_SLUGS) ok(works.some((w) => w.slug === slug), `${slug} IS in the catalogue`);
 const speechEntries = discoveryShelves().find((s) => s.shelf.id === "speeches")!.entries;
-eq(speechEntries.length, 17 + W7K.speechDiscovery, "Speeches discovery is 22 entries (3 Wave-6 cards added; Wave-7: +2 முத்துக் குளியல் collection cards + 3 assembly speeches)");
+eq(speechEntries.length, 17 + W7K.speechDiscovery + R3.discoveryShelves.speeches, "Speeches discovery is 22 entries (3 Wave-6 cards added; Wave-7: +2 முத்துக் குளியல் collection cards + 3 assembly speeches)");
 eq(LIBRARY_COLLECTIONS.length, 7 + W7K.collections, "public collection registry is 9 (1977 + 5 Batch-7 short-story anthologies + arumbu-1978 + 2 முத்துக் குளியல்)");
 
 // ── 3. DATA SEMANTICS + RENDERED /source ────────────────────────────────────────

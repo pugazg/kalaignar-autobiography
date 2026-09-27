@@ -62,7 +62,7 @@ if (stage === "hidden") {
   eq(present.length, 101, "published: the P4 flip is atomic — all 101 are LibraryWorks");
   eq(NEW_IDS.filter((id) => LIBRARY_WORKS.filter((w) => w.id === id).length !== 1), [], "published: each new work appears exactly once");
   eq(works.length, BASELINE.catalogue + 101 + W8.works + R3.works, "published: catalogue == 232 + 101 (+ later Wave-8)");
-  eq(shelf("speeches"), BASELINE.speeches + 100, "published: Speeches == 17 + 100");
+  eq(shelf("speeches"), BASELINE.speeches + 100 + R3.shelves.speeches, "published: Speeches == 17 + 100 (+ R3)");
   eq(shelf("literary-commentary"), BASELINE.literaryCommentary + 1 + W8.literaryCommentary, "published: Literary Commentary == 2 + 1 (+ later Wave-8 sangatamil)");
   eq({ drama: shelf("drama"), fiction: shelf("fiction"), essays: shelf("essays-articles"), cinema: shelf("cinema-writing") }, { drama: 10 + W8.drama, fiction: 162, essays: 15 + R3.shelves["essays-articles"], cinema: 10 }, "published: other shelves unchanged (+ later Wave-8 ore-mutham; + R3)");
   eq(LIBRARY_COLLECTIONS.length, BASELINE.collections + 2, "published: collections == 7 + 2 (the two முத்துக் குளியல் publications)");

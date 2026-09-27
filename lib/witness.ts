@@ -83,6 +83,18 @@ const NOTE = {
   toCanonical: { ta: "இப்பதிப்பு பின்வரும் கவிதையின் ஒரு மூல ஆதாரப் பதிப்பு:", en: "This printing is a source witness of the poem" },
   elsewhere: { ta: "இக்கவிதை மேலும் அச்சான இடம்:", en: "This poem was also printed in" },
 };
+/** A `section`-level relation (R3-C: the two `idhaya-perikai` sections) names the canonical work's printed section. */
+const sectionOf = (r: WorkRelation) => (r.level === "section" ? (r.canonicalSection as { ordinal: number; titleTa: string }) : null);
+const SECTION_NOTE = {
+  toWitness: (s: { ordinal: number; titleTa: string }) => ({
+    ta: `இப்படைப்பின் பகுதி ${s.ordinal} «${s.titleTa}» மற்றொரு மூல ஆதாரப் பதிப்பாகவும் கிடைக்கிறது:`,
+    en: `Section ${s.ordinal} of this work, «${s.titleTa}», is also available in another source witness:`,
+  }),
+  toCanonical: (s: { ordinal: number; titleTa: string }) => ({
+    ta: `இப்பதிப்பு பின்வரும் படைப்பின் பகுதி ${s.ordinal} «${s.titleTa}» இன் ஒரு மூல ஆதாரப் பதிப்பு:`,
+    en: `This printing is a source witness of section ${s.ordinal}, «${s.titleTa}», of`,
+  }),
+};
 
 /** Titles of a witness, from its publication record and payload (never copied into the relation record). */
 function witnessTitles(r: WorkRelation): { work: { ta: string; en: string }; item?: { ta: string; en: string } } | null {
@@ -128,19 +140,27 @@ export function r3WitnessLinksForPage(pathname: string): WitnessLink[] {
       const t = witnessTitles(r);
       if (!t) continue;
       const loc = r.witness.locator;
+      const sec = sectionOf(r);
+      const note = sec ? SECTION_NOTE.toWitness(sec) : loc ? NOTE.toWitness : NOTE.elsewhere;
       out.push({
         id: r.id,
         ...(loc ? { href: loc } : {}),
         workTitleTa: t.work.ta,
         workTitleEn: t.work.en,
         ...(t.item ? { itemTitleTa: t.item.ta, itemTitleEn: t.item.en } : {}),
-        noteTa: loc ? NOTE.toWitness.ta : NOTE.elsewhere.ta,
-        noteEn: loc ? NOTE.toWitness.en : NOTE.elsewhere.en,
+        noteTa: note.ta,
+        noteEn: note.en,
       });
     } else if (r.witness.locator && pageOf(r.witness.locator) === pathname) {
       const c = works.find((w) => w.id === r.canonicalId);
       if (!c) continue; // an active relation always targets a published work (validated); never render a dangling one
       const t = witnessTitles(r);
+      const sec = sectionOf(r);
+      if (sec) {
+        const note = SECTION_NOTE.toCanonical(sec);
+        out.push({ id: r.id, href: c.href, workTitleTa: c.titleTa, workTitleEn: c.titleEn, noteTa: note.ta, noteEn: note.en });
+        continue;
+      }
       out.push({
         id: r.id,
         href: c.href,
