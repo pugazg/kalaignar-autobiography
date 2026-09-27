@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { BookOpen, Feather, Home, Layers } from "lucide-react";
 import { useLang } from "@/lib/i18n";
+import WitnessNote from "@/components/WitnessNote";
+import type { WitnessLink } from "@/lib/witness";
 
 export type PublicationItemBrief = {
   ordinal: number;
@@ -118,7 +120,7 @@ function describePublication(pub: PublicationBrief, ta: boolean): string {
 }
 
 /** The publication landing: source-backed publication info and all reading items, in canonical order. */
-export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
+export default function PublicationLanding({ pub, witnessLinks }: { pub: PublicationBrief; witnessLinks?: WitnessLink[] }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   // A verse-novel (readingUnitKind "section") is labelled by its work form and counts SECTIONS, never
@@ -164,6 +166,7 @@ export default function PublicationLanding({ pub }: { pub: PublicationBrief }) {
             its items, never as a link or an item itself. A publication with no groups renders one
             flat list. */}
         {renderGroupedItems(pub, ta)}
+        {witnessLinks && witnessLinks.length > 0 && <WitnessNote links={witnessLinks} />}
       </main>
     </div>
   );

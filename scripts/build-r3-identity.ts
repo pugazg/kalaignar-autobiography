@@ -15,7 +15,10 @@
  *   data/internal/r3/identity-manifest.json — the 249 CREATE identities, the 11 publications' unit-role maps, stage state
  *   data/internal/r3/relations.json         — the ONE relation registry (49 records), each with its stage and state
  *   data/poems.ts (POETRY_WITNESS_RELATIONS) — a GENERATED compatibility view of the two live Poetry relations
- * Nothing here publishes a LibraryWork: the stage state decides what is active, and R3-A publishes no R3 stage content.
+ *   data/r3-catalogue.ts                    — the canonical LibraryWork records of every PUBLISHED R3 identity, and the
+ *                                             ids of the publications demoted so far (the catalogue slice)
+ * The stage state decides what is published: a CREATE identity becomes a LibraryWork, and a publication leaves the
+ * canonical catalogue for LIBRARY_PUBLICATIONS, only when its stage is in PUBLISHED_STAGES.
  */
 import crypto from "node:crypto";
 import fs from "node:fs";
@@ -28,6 +31,7 @@ const BOUNDARY = path.join(DIR, "pre-r3-boundary.json");
 const IDENTITY = path.join(DIR, "identity-manifest.json");
 const RELATIONS = path.join(DIR, "relations.json");
 const POEMS_TS = path.join(root, "data/poems.ts");
+const CATALOGUE_TS = path.join(root, "data/r3-catalogue.ts");
 
 /** The frozen resolved manifest's git blob (READING_ROOM_IA_V2_RESOLVED_MANIFEST.json at pugazg/kalaignar-tribute). */
 const MANIFEST_GIT_BLOB = "b7b3530d54ba9c354b43313eecd69e78e76a92b5";
@@ -37,7 +41,7 @@ const BOUNDARY_SHA256 = "d2975f49c000dcd19f31b092a0e097451ceaef3af85f486798e3cff
 /** The R3 stage state. The ONLY switch that activates R3 content; each later stage PR advances it by one stage. */
 const STAGE_ORDER = ["R3-A", "R3-B", "R3-C", "R3-D"] as const;
 type Stage = (typeof STAGE_ORDER)[number];
-const PUBLISHED_STAGES: readonly Stage[] = ["R3-A"];
+const PUBLISHED_STAGES: readonly Stage[] = ["R3-A", "R3-B"];
 
 /** Frozen plan §13: the stage that introduces each CREATE family and demotes each publication. */
 const FAMILY_STAGE: Record<string, Stage> = {
@@ -306,6 +310,49 @@ function generate() {
   const relIds = rels.map((r) => r.id);
   if (new Set(relIds).size !== relIds.length) fail("relation ids are not unique");
 
+  // ── the canonical catalogue slice: one LibraryWork per PUBLISHED identity, generated from its parent publication ──
+  // Fields come only from the parent's own pre-R3 catalogue record and payload: source pins, edition and rights are
+  // inherited only where the parent carries them; the description states publication, year and printed position only.
+  const payloadFacts = (pubId: string) => {
+    const p = PUBLICATIONS.find((x) => x.id === pubId)!;
+    const j = readJSON<{ title: { ta: string; en: string }; publicationYear?: number; firstEdition?: { year?: number }; items?: { slug: string; ordinal: number }[]; articles?: { slug: string; number: number }[]; itemCount?: number; articleCount?: number }>(
+      path.join(root, "public/data", p.kind, p.id, "publication.json"),
+    );
+    const units = p.kind === "poems" ? (j.items ?? []).map((i) => ({ slug: i.slug, n: i.ordinal })) : (j.articles ?? []).map((a) => ({ slug: a.slug, n: a.number }));
+    return { title: j.title, year: j.publicationYear ?? j.firstEdition?.year ?? null, count: j.itemCount ?? j.articleCount ?? units.length, units };
+  };
+  const INHERIT = ["sourceRepo", "sourcePath", "sourceCommit", "edition", "tamil", "english", "englishKind", "rights", "provenanceHref"] as const;
+  const catalogue = works.filter((w) => w.state === "published").map((w) => {
+    const parent = boundary.catalogue.records.find((r) => r.id === w.parentPublicationId)!;
+    const f = payloadFacts(w.parentPublicationId);
+    const loc = creLocator.get(w.id)!;
+    const unit = f.units.find((u) => u.slug === loc.unitSlug) ?? fail(`${w.id}: unit ${loc.unitSlug} not in payload`);
+    const pos = loc.fragment ? loc.fragment.replace(/^poem-/, "").replace("-", ".") : String(unit.n);
+    const pubTa = `${f.title.ta}${f.year ? ` (${f.year})` : ""}`;
+    const pubEn = `${f.title.en}${f.year ? ` (${f.year})` : ""}`;
+    const [descTa, descEn] = loc.fragment
+      ? [`${pubTa} — «${unit.slug === INA.unitSlug ? "கவிதைகள்" : unit.slug}» பகுதியின் கவிதை ${pos}`, `${pubEn} — poem ${pos}, in its unit “Kavithaigal”`]
+      : w.subtype === "ezhuthoviyam"
+        ? [`${pubTa} — எழுத்தோவியம் ${pos} / ${f.count}`, `${pubEn} — piece ${pos} of ${f.count} (எழுத்தோவியம், a prose-poem)`]
+        : [`${pubTa} — கவிதை ${pos} / ${f.count}`, `${pubEn} — poem ${pos} of ${f.count}`];
+    const rec: Record<string, unknown> = {
+      id: w.id, slug: w.id, titleTa: w.titleTa, titleEn: w.titleEn, shelf: w.shelf, subtype: w.subtype,
+      readerStructure: "publication-unit", href: w.locator.href, state: "published", descTa, descEn,
+    };
+    for (const k of INHERIT) if (parent[k] !== undefined) rec[k] = parent[k];
+    rec.publication = { id: w.parentPublicationId, unit: loc.unitSlug, fragment: loc.fragment };
+    return rec;
+  });
+  const demotedIds = publications.filter((p) => p.state === "demoted").map((p) => ({ id: p.id, demotedIn: p.demotedIn }));
+  const catalogueTs =
+    `// GENERATED by scripts/build-r3-identity.ts — do not edit by hand (CI re-generates with --verify).\n` +
+    `// Reading Room IA v2 R3: the canonical LibraryWork record of every PUBLISHED R3 identity (stages ${PUBLISHED_STAGES.join(", ")}),\n` +
+    `// derived from data/internal/r3/identity-manifest.json, the frozen pre-R3 boundary and the reader payloads, and the\n` +
+    `// publications demoted so far. Every record reuses its existing reading route; no text is copied here.\n` +
+    `import type { LibraryWork } from "@/data/library";\n\n` +
+    `export const R3_PUBLISHED_WORKS: LibraryWork[] = ${JSON.stringify(catalogue, null, 2)};\n\n` +
+    `export const R3_DEMOTED_PUBLICATIONS: { id: string; demotedIn: "R3-B" | "R3-C" }[] = ${JSON.stringify(demotedIds, null, 2)};\n`;
+
   const identity = {
     schema: 1,
     note: "Reading Room IA v2 R3 identity manifest — GENERATED by scripts/build-r3-identity.ts; do not edit. Runtime/planning identity data: only stages in stageState.published are live.",
@@ -338,7 +385,7 @@ function generate() {
   if (at === -1 || to === -1 || to < at) fail("data/poems.ts is missing the r3-generated POETRY_WITNESS_RELATIONS markers");
   const poemsOut = poems.slice(0, at + BEGIN.length) + block + poems.slice(to);
 
-  return { [IDENTITY]: json(identity), [RELATIONS]: json(relations), [POEMS_TS]: poemsOut };
+  return { [IDENTITY]: json(identity), [RELATIONS]: json(relations), [POEMS_TS]: poemsOut, [CATALOGUE_TS]: catalogueTs };
 }
 
 async function main() {

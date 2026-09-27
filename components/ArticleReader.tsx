@@ -4,6 +4,8 @@ import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, ChevronLeft, ChevronRight, Home, Info, List, Minus, Newspaper, Plus } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
+import WitnessNote from "@/components/WitnessNote";
+import type { WitnessLink } from "@/lib/witness";
 import type { Article, ArticleBlock, EssayPublication } from "@/data/essays";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -23,11 +25,21 @@ export default function ArticleReader({
   prev,
   next,
   initialShowEn,
+  subheadingAnchors,
+  witnessLinks,
 }: {
   pub: EssayPublication;
   article: Article;
   prev: Article | null;
   next: Article | null;
+  /**
+   * Reading Room IA v2 R3: stable fragment ids for this unit's PRINTED subheadings, in order (e.g. `poem-6-1` …
+   * `poem-6-11` for the eleven poems printed inside இன முழக்கம் unit 6). Only the ids are added — the text, order and
+   * layout of the subheadings are unchanged. Absent for every other unit.
+   */
+  subheadingAnchors?: string[];
+  /** Reading Room IA v2 R3: derived cross-witness links for this unit (active relations only). */
+  witnessLinks?: WitnessLink[];
   /** Test/SSR seed for the English toggle; defaults to false so the live reader is Tamil-first. */
   initialShowEn?: boolean;
 }) {
@@ -128,8 +140,10 @@ export default function ArticleReader({
             a block that runs across a printed page is ONE block carrying both pages, so the prose is
             never interrupted by a page marker and never silently re-paragraphed. */}
         <div className={cn("mt-8", showEn ? "font-body" : "font-tamil", sizes[font])} lang={showEn ? "en" : "ta"} data-testid="reader-body">
-          {renderBlocks(blocks, article, ta)}
+          {renderBlocks(blocks, article, ta, subheadingAnchors)}
         </div>
+
+        {witnessLinks && witnessLinks.length > 0 && <WitnessNote links={witnessLinks} />}
 
         {/* Translator/editorial notes — released alongside the English article and labelled by the
             source itself as NOT part of Kalaignar's text. They live outside the body and are shown
@@ -186,13 +200,14 @@ export default function ArticleReader({
 // the archive leaves UNRESOLVED. Such an edge must assert neither "same paragraph" nor "new
 // paragraph": the marker is deliberately weaker than the paragraph gap above it, and it survives
 // print (see globals.css) because dropping it on paper would silently assert a clean break.
-function renderBlocks(blocks: ArticleBlock[], article: Article, ta: boolean) {
+function renderBlocks(blocks: ArticleBlock[], article: Article, ta: boolean, anchors?: string[]) {
   const unresolved = new Map(
     article.pageTransitions.filter((t) => t.relation === "unknown").map((t) => [t.fromScan, t]),
   );
   const out: ReactNode[] = [];
+  let subheading = 0;
   blocks.forEach((b, i) => {
-    out.push(renderBlock(b, i));
+    out.push(renderBlock(b, i, b.kind === "subheading" ? anchors?.[subheading++] : undefined));
     const last = b.sourcePages[b.sourcePages.length - 1];
     const nextFirst = blocks[i + 1]?.sourcePages[0];
     const t = last && nextFirst && nextFirst.scan === last.scan + 1 ? unresolved.get(last.scan) : undefined;
@@ -231,11 +246,12 @@ function PageRelationRule({ toPrinted, toScan, ta }: { toPrinted: number | null;
   );
 }
 
-function renderBlock(b: ArticleBlock, i: number) {
+function renderBlock(b: ArticleBlock, i: number, anchorId?: string) {
   if (b.kind === "subheading") {
-    // A subheading PRINTED IN THE SOURCE, inside the article body.
+    // A subheading PRINTED IN THE SOURCE, inside the article body. `anchorId` (R3) is a stable fragment for a printed
+    // poem boundary; it adds an id (and the scroll margin that clears the sticky header) only, never text.
     return (
-      <h2 key={i} className="mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light">
+      <h2 key={i} id={anchorId} className={`${anchorId ? "scroll-mt-28 " : ""}mb-3 mt-8 font-semibold leading-snug text-marina dark:text-marina-light`}>
         {inline(b.text)}
       </h2>
     );

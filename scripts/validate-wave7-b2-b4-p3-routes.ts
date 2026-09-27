@@ -17,6 +17,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { LIBRARY_WORKS } from "../data/library";
+import { preR3Works } from "../lib/read-ia-r3-projection";
 import { discoveryShelves } from "../data/collections";
 import sitemap from "../app/sitemap";
 import { WAVE7_DRAMA_SLUGS } from "../lib/drama-wave7-routes";
@@ -74,7 +75,8 @@ ok(!nsp.some((p) => p.slug === "surulimalai" && (p.section === "06-chapter-06" |
 // in LIBRARY_WORKS / discovery / sitemap is not: hidden before P4, published at/after P4. CI builds the
 // P4 tip, so this stays a live gate rather than asserting a permanent absence that P4 would break.
 const ALL13 = [...WAVE7_DRAMA_SLUGS, ...WAVE7_NOVEL_SLUGS, ...WAVE7_ESSAY_SLUGS];
-const libIds = new Set<string>((LIBRARY_WORKS as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
+// Judged on the pre-R3 projection: R3-B demotes Meesai to a publication record, which is not this cohort un-publishing.
+const libIds = new Set<string>((preR3Works(LIBRARY_WORKS) as { id: string; slug: string }[]).flatMap((w) => [w.id, w.slug]));
 const publishedThisBatch = ALL13.filter((s) => libIds.has(s));
 const phase = publishedThisBatch.length === 0 ? "pre-P4" : "P4";
 ok(publishedThisBatch.length === 0 || publishedThisBatch.length === 13, "phase coherent: 0 (hidden) or all 13 (published)");

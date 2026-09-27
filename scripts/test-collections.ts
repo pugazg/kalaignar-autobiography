@@ -34,6 +34,7 @@ import {
   collectionMemberWorks,
   discoveryShelves,
 } from "../data/collections";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 
 const BENCHMARK = "1977-kalaignar-karunanidhiyin-sirukathaigal";
 
@@ -99,8 +100,8 @@ const entries = shelves.flatMap((s) => s.entries);
 // Wave 4 P1 published three standalone Poetry works. A standalone poem is its own discovery entry,
 // so both numbers move by the same three — which is exactly what distinguishes this from adding
 // members to a collection, where works move and entries do not.
-eq(works.length, 333 + W8.works, "the catalogue holds 333 (+ Wave-8: ore-mutham, sangatamil) published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
-eq(entries.length, 96 + W8.discovery, "the discovery model (data; not rendered since R2-B) holds 96 (+ Wave-8 2 standalone works) discovery entries (post Wave-7 B2-B4: 90; Wave-7 B5/B6/Kuraloviyam: +6 — 97 speeches collapse into 2 முத்துக் குளியல் cards, +3 assembly speeches, +Kuraloviyam)");
+eq(works.length, 333 + W8.works + R3.works, "the catalogue holds 333 (+ Wave-8: ore-mutham, sangatamil) published works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
+eq(entries.length, 96 + W8.discovery + R3.discovery, "the discovery model (data; not rendered since R2-B) holds 96 (+ Wave-8 2 standalone works) discovery entries (post Wave-7 B2-B4: 90; Wave-7 B5/B6/Kuraloviyam: +6 — 97 speeches collapse into 2 முத்துக் குளியல் cards, +3 assembly speeches, +Kuraloviyam)");
 eq(entries.filter((e) => e.kind === "collection").length, 9, "nine collection entries across all shelves (1977 + 5 Batch-7 + arumbu-1978 + 2 முத்துக் குளியல்)");
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");

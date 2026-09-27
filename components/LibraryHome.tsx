@@ -1,8 +1,8 @@
 "use client";
 
-import { BookOpen, BookText, Clapperboard, Feather, Flower2, Home, Library, Mail, Mic, Newspaper, Theater } from "lucide-react";
+import { BookMarked, BookOpen, BookText, Clapperboard, Feather, Flower2, Home, Library, Mail, Mic, Newspaper, Theater } from "lucide-react";
 import Link from "next/link";
-import { type LibraryWork, type ShelfId } from "@/data/library";
+import { type LibraryPublication, type LibraryWork, type ShelfId } from "@/data/library";
 import { type LibraryCollection } from "@/data/collections";
 import { READ_CATEGORIES, collectionsInCategory, shelfForCategory, worksInCategory, type ReadCategory } from "@/data/read-categories";
 import { cn } from "@/lib/utils";
@@ -147,6 +147,66 @@ export function CollectionCard({ collection, ta }: { collection: LibraryCollecti
           count.labelEn
         )}
       </span>
+      {desc && (
+        <span className="mt-1.5 text-xs leading-snug text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : undefined}>
+          {desc}
+        </span>
+      )}
+    </Link>
+  );
+}
+
+/**
+ * A SOURCE PUBLICATION card (Reading Room IA v2 R3): a printed book whose units are canonical works or witnesses, shown
+ * in a category page's secondary Publications section. Deliberately not a WorkCard — it states "Publication" in text
+ * (not colour alone) and its unit count, and it links the publication's existing contents page.
+ * The title hover and dark focus ring follow CollectionCard's measured local treatment.
+ */
+export function PublicationCard({ publication, ta }: { publication: LibraryPublication; ta: boolean }) {
+  const a = accentFor(publication.shelf);
+  const desc = ta ? publication.descTa : publication.descEn;
+  const count = publication.unitCount;
+  return (
+    <Link
+      href={publication.href}
+      data-testid="publication-card"
+      className={cn(
+        "focus-ring group flex flex-col rounded-2xl border bg-white/60 p-4 transition sm:col-span-2 dark:bg-night-surface/60 dark:focus-visible:ring-night-text/70",
+        a.border,
+      )}
+    >
+      <span className="flex items-center gap-2">
+        <BookMarked className={cn("h-5 w-5 shrink-0", a.icon)} aria-hidden />
+        <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink/65 dark:text-night-text/65">
+          {ta ? "நூல்" : "Publication"}
+        </span>
+      </span>
+      <span className="mt-2 font-tamil text-[17px] font-medium group-hover:text-marina dark:group-hover:text-night-text" lang="ta">
+        {publication.titleTa}
+      </span>
+      <span className="mt-0.5 text-xs text-ink/65 dark:text-night-text/65">{publication.titleEn}</span>
+      {(publication.edition || count) && (
+        <span className="mt-1.5 text-xs tabular-nums text-ink/65 dark:text-night-text/65">
+          {publication.edition && (
+            <span className="font-tamil" lang="ta">
+              {publication.edition}
+            </span>
+          )}
+          {publication.edition && count && " \u00b7 "}
+          {count && (
+            <>
+              {count.value}{" "}
+              {ta ? (
+                <span className="font-tamil" lang="ta">
+                  {count.labelTa}
+                </span>
+              ) : (
+                count.labelEn
+              )}
+            </>
+          )}
+        </span>
+      )}
       {desc && (
         <span className="mt-1.5 text-xs leading-snug text-ink/65 dark:text-night-text/65" lang={ta ? "ta" : undefined}>
           {desc}

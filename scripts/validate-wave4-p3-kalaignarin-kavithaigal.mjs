@@ -96,6 +96,16 @@ eq("exactly one catalogue entry", (libraryTs.match(new RegExp(`\\n    id: "${SLU
 // Poetry top-level count is 14 (post Wave-6 P4: 6 + eight Batch-4 poetry works); collections still 1.
 {
   eq("fourteen top-level Poetry works (post Wave-6 P4)", (libraryTs.match(/\n    shelf: "poetry",/g) ?? []).length, 14);
+  // R3: the literal still declares the 14 records (a demoted publication keeps its record verbatim, as a
+  // LibraryPublication); the live Poetry shelf adds exactly the R3 Poetry identities the manifest publishes, less the
+  // Poetry publications it demotes — checked here against the manifest, not a typed number.
+  const r3m = JSON.parse(readText(path.join(process.cwd(), "data/internal/r3/identity-manifest.json")));
+  const r3Poetry = r3m.works.filter((w) => w.state === "published" && w.shelf === "poetry").length;
+  const r3Ts = readText(path.join(process.cwd(), "data/r3-catalogue.ts"));
+  eq("R3 Poetry identities in data/r3-catalogue.ts == the identity manifest's published Poetry works", (r3Ts.match(/\n    "shelf": "poetry",/g) ?? []).length, r3Poetry);
+  const demotedPoetry = r3m.publications.filter((p) => p.state === "demoted" && p.formerShelf === "poetry").map((p) => p.id);
+  check("every demoted Poetry publication is one of the 14 literal records", demotedPoetry.every((id) => libraryTs.includes(`\n    id: "${id}",`)));
+  check("R3 demotions are listed in data/r3-catalogue.ts exactly as the manifest records", demotedPoetry.every((id) => new RegExp(`"id": "${id}",\\s*"demotedIn": "R3-[BCD]"`).test(r3Ts)));
   const m = /export const LIBRARY_COLLECTIONS:[^=]*=\s*\[([\s\S]*?)\n\];/.exec(collectionsTs);
   // Wave-4 introduced NO new collection; the only Wave-4-era inline collection was the 1977 anthology.
   // Later waves add more (Wave-7 B3's arumbu-1978 inline), so reconstruct the historical Wave-4 count by
@@ -108,7 +118,25 @@ eq("exactly one catalogue entry", (libraryTs.match(new RegExp(`\\n    id: "${SLU
   check("no unexpected inline collection beyond 1977 + recognized later declarations", inlineCollectionIds.every((id) => id === BENCHMARK_1977 || KNOWN_LATER_COLLECTIONS.has(id)));
   eq("Wave-4 introduced no new collection (inline count minus later-wave declarations == 1)", inlineCollectionIds.filter((id) => !KNOWN_LATER_COLLECTIONS.has(id)).length, 1);
 }
-for (const it of pub.items) check(`item ${it.ordinal} is not a top-level LibraryWork`, !libraryTs.includes(`id: "${it.slug}"`));
+// Reading Room IA v2 R3 reconciliation (explicit, against data/internal/r3/identity-manifest.json). The Wave-4 fact holds
+// for the historical catalogue literal (data/library.ts): no item is a top-level record there. Since R3-B an item is a
+// canonical LibraryWork ONLY as the identity manifest records — generated into data/r3-catalogue.ts at the item's own
+// route — and a witness item (or an item of an unpublished stage) is never one.
+const r3Manifest = JSON.parse(readText(path.join(process.cwd(), "data/internal/r3/identity-manifest.json")));
+const r3CatalogueTs = readText(path.join(process.cwd(), "data/r3-catalogue.ts"));
+const r3Publication = r3Manifest.publications.find((p) => p.id === SLUG);
+const r3PublishedIds = new Set(r3Manifest.works.filter((w) => w.state === "published").map((w) => w.id));
+check("R3: the identity manifest maps this publication", !!r3Publication);
+for (const it of pub.items) {
+  check(`item ${it.ordinal} is not a top-level LibraryWork in the historical catalogue literal`, !libraryTs.includes(`id: "${it.slug}"`));
+  const unit = r3Publication?.units.find((u) => u.unit === it.slug);
+  const expectWork = !!unit && unit.role === "canonical" && r3PublishedIds.has(unit.canonicalId);
+  check(`item ${it.ordinal}: mapped in the R3 identity manifest`, !!unit);
+  check(
+    `item ${it.ordinal}: a canonical LibraryWork exactly as the R3 identity manifest records (${expectWork ? "published " + unit.canonicalId : "none"})`,
+    r3CatalogueTs.includes(`"href": "${unit?.locator}"`) === expectWork && (!expectWork || r3CatalogueTs.includes(`"id": "${unit.canonicalId}"`)),
+  );
+}
 
 // ── ITEM ROSTER + SLUGS ──────────────────────────────────────────────────────────────────────────
 eq("ordinals are exactly 1..77 in order", pub.items.map((i) => i.ordinal), Array.from({ length: 77 }, (_, i) => i + 1));

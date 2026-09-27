@@ -33,6 +33,8 @@ import {
 import { WAVE6_POEM_SLUGS, WAVE6_POETRY_PUBLICATION_SLUGS } from "../lib/poems-wave6-routes";
 import { WAVE7_B5_B6_K_CONTRIBUTION as W7K } from "../lib/wave7-b5-b6-k-contribution";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
+import { preR3Works } from "../lib/read-ia-r3-projection";
 
 const EXISTING = "idhayathai-thanthidu-anna";
 
@@ -108,20 +110,22 @@ eq(POETRY_WITNESS_RELATIONS.length, 2, "exactly two witness relations are declar
 const works = publishedWorks();
 const shelves = discoveryShelves();
 const poetry = shelves.find((s) => s.shelf.id === "poetry");
-eq(works.length, 232 + W7K.works + W8.works, "the catalogue holds 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
+eq(works.length, 232 + W7K.works + W8.works + R3.works, "the catalogue holds 333 works (post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +13; post Wave-7 B5/B6/Kuraloviyam: +101)");
 eq(shelves.length, 9, "still 9 non-empty shelves");
-eq(shelves.reduce((n, s) => n + s.entries.length, 0), 90 + W7K.discovery + W8.discovery, "96 discovery entries (post Wave-7 B5/B6/Kuraloviyam: +6; post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +10 net — +13 works minus arumbu trio collapse minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
+eq(shelves.reduce((n, s) => n + s.entries.length, 0), 90 + W7K.discovery + W8.discovery + R3.discovery, "96 discovery entries (post Wave-7 B5/B6/Kuraloviyam: +6; post Wave-7 B1: +3 cinema; post Wave-7 B2-B4: +10 net — +13 works minus arumbu trio collapse minus the pre-existing பெரிய இடத்துப் பெண் standalone card now an arumbu-1978 member)");
 ok(!!poetry, "the Poetry shelf is present");
-eq(poetry!.works.length, 14, "Poetry holds 14 works (10 standalone + 4 publications, post Wave-6 P4)");
+eq(poetry!.works.length, 14 + R3.shelves.poetry, "Poetry holds 14 works (10 standalone + 4 publications, post Wave-6 P4; + the R3 Poetry delta)");
 // Each publication is ONE discovery entry even though it holds many items — one work with reading
 // units, so works and entries still move together on the Poetry shelf (unlike Fiction's 157/18).
-eq(poetry!.entries.length, 14, "Poetry shows 14 discovery entries (post Wave-6 P4)");
-eq(poetry!.works.map((w) => w.slug).sort(), [...STANDALONE_ALL, ...PUBLICATIONS_ALL].sort(), "the Poetry shelf's works are the ten standalones plus the four publications");
+eq(poetry!.entries.length, 14 + R3.discoveryShelves.poetry, "Poetry shows 14 discovery entries (post Wave-6 P4; + the R3 Poetry delta)");
+// Membership is judged on the pre-R3 projection (R3 identities removed, demoted publications restored verbatim).
+const poetryPreR3 = preR3Works(poetry!.works, "poetry");
+eq(poetryPreR3.map((w) => w.slug).sort(), [...STANDALONE_ALL, ...PUBLICATIONS_ALL].sort(), "the Poetry shelf's works are the ten standalones plus the four publications");
 {
-  const existing = poetry!.works.find((w) => w.slug === EXISTING)!;
+  const existing = poetryPreR3.find((w) => w.slug === EXISTING)!;
   eq(existing.href, `/poems/${EXISTING}`, "the existing Poetry route is unchanged");
   eq(existing.provenanceHref, `/poems/${EXISTING}/source`, "the existing Poetry source route is unchanged");
-  const publication = poetry!.works.find((w) => w.slug === PUBLICATION)!;
+  const publication = poetryPreR3.find((w) => w.slug === PUBLICATION)!;
   eq(publication.href, `/poems/${PUBLICATION}`, "the publication landing route");
   eq(publication.provenanceHref, `/poems/${PUBLICATION}/source`, "the publication source route");
   eq(publication.unitCount?.value, 58, "the publication carries unitCount 58");

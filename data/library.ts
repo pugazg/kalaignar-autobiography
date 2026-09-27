@@ -19,6 +19,7 @@
 import { chapterIndex } from "./references";
 import { WAVE6_B7_WORKS } from "./wave6-b7-catalogue";
 import { WAVE7_B5_B6_K_WORKS } from "./wave7-b5-b6-k-catalogue";
+import { R3_DEMOTED_PUBLICATIONS, R3_PUBLISHED_WORKS } from "./r3-catalogue";
 
 // ── Shelves ──────────────────────────────────────────────────────────────────
 // Fixed public shelf taxonomy from the cross-project master handover. All nine
@@ -88,7 +89,11 @@ export type ReaderStructure =
   // collection): this is one booklet with a summary and 15 separately headed performance blocks in
   // source order — the booklet prints no scene-numbering system, and the ordinals are archival
   // navigation.
-  | "film-booklet";
+  | "film-booklet"
+  // Reading Room IA v2 R3: a canonical work whose reading surface is ONE UNIT of a source publication's existing
+  // reader (a poem item, an essay unit, or a printed poem inside a unit, addressed by fragment). The work gains
+  // canonical identity; its text stays in the publication's payload and is read on the existing route.
+  | "publication-unit";
 
 // Language COVERAGE for the *intended catalog work / collection boundary* — NOT
 // merely "every unit currently vendored happens to have this language". A work whose
@@ -203,6 +208,12 @@ export interface LibraryWork {
 
   /** Provenance / source-note page, where one exists. */
   provenanceHref?: string;
+
+  /**
+   * R3 only: the source publication and unit this canonical work is read in (`fragment` for a printed poem inside a
+   * unit). Present exactly on `publication-unit` works, generated in data/r3-catalogue.ts.
+   */
+  publication?: { id: string; unit: string; fragment: string | null };
 }
 
 // ── The catalog ──────────────────────────────────────────────────────────────
@@ -242,7 +253,11 @@ const RIGHTS_NATIONALISED: WorkRights = {
   note: "Nationalisation applies to Kalaignar's underlying Tamil work; it does not extend to the project-created English translation, to publisher/edition/printer matter, cover/design, or library marks, nor to any third-party material quoted within.",
 };
 
-export const LIBRARY_WORKS: LibraryWork[] = [
+/**
+ * Every catalogue record authored before R3, in declaration order — the canonical works AND the source publications
+ * R3 has since demoted (their records stay here verbatim; see LIBRARY_PUBLICATIONS). Public code reads LIBRARY_WORKS.
+ */
+const CATALOGUE_RECORDS: LibraryWork[] = [
   {
     id: "nenjukku-neethi",
     slug: "nenjukku-neethi",
@@ -3525,13 +3540,38 @@ export type LibraryPublication = Omit<LibraryWork, "state"> & {
   demotedIn: "R3-B" | "R3-C";
 };
 
+const DEMOTED = new Map(R3_DEMOTED_PUBLICATIONS.map((d) => [d.id, d.demotedIn]));
+
 /**
- * Publication records. EMPTY in R3-A: no publication is demoted until R3-B (Poetry) and R3-C (Essays) move their
- * records here from `LIBRARY_WORKS`, as generated from data/internal/r3/identity-manifest.json.
+ * The canonical catalogue: every pre-R3 record that has not been demoted to a publication, then the canonical works R3
+ * has published (generated in data/r3-catalogue.ts from the R3 identity manifest; never hand-typed).
  */
-export const LIBRARY_PUBLICATIONS: LibraryPublication[] = [];
+export const LIBRARY_WORKS: LibraryWork[] = [...CATALOGUE_RECORDS.filter((w) => !DEMOTED.has(w.id)), ...R3_PUBLISHED_WORKS];
+
+/**
+ * Publication records: the source publications R3 has demoted so far (R3-B: the three Poetry publications and Meesai;
+ * R3-C: the seven essay publications). Each is its former catalogue record VERBATIM — minus `state`, which belongs to
+ * canonical works — plus `kind` and the demoting stage. Nothing is added or invented.
+ */
+export const LIBRARY_PUBLICATIONS: LibraryPublication[] = CATALOGUE_RECORDS.filter((w) => DEMOTED.has(w.id)).map(({ state: _state, ...rest }) => ({
+  ...rest,
+  kind: "source-publication" as const,
+  demotedIn: DEMOTED.get(rest.id)!,
+}));
 
 // ── Selectors ────────────────────────────────────────────────────────────────
+/**
+ * A catalogue RECORD by id or slug: a canonical LibraryWork, or — since R3 — a source publication's record (its
+ * former LibraryWork record, verbatim). For checks about a record's own metadata (href, source pins, rights, units),
+ * which R3 does not change; canonical status is `publishedWorks()`'s concern, not this lookup's.
+ */
+export function catalogueRecord(idOrSlug: string): LibraryWork | LibraryPublication | undefined {
+  return (
+    LIBRARY_WORKS.find((w) => w.id === idOrSlug || w.slug === idOrSlug) ??
+    LIBRARY_PUBLICATIONS.find((p) => p.id === idOrSlug || p.slug === idOrSlug)
+  );
+}
+
 /** Only intentionally published works are ever exposed publicly. */
 export function publishedWorks(): LibraryWork[] {
   return LIBRARY_WORKS.filter((w) => w.state === "published");

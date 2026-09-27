@@ -34,6 +34,7 @@ import LibraryCategoryPage from "../components/LibraryCategoryPage";
 import { SHELVES, publishedWorks } from "../data/library";
 import { LIBRARY_COLLECTIONS, discoveryShelves } from "../data/collections";
 import { READ_CATEGORIES, READ_CATEGORY_ROUTES } from "../data/read-categories";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 
 /** The HISTORICAL /read disclosure cap (Phase 0 → R2-A). Kept only to state the frozen discovery arithmetic below. */
 const HISTORICAL_CAP = 6;
@@ -66,12 +67,13 @@ const shelves = discoveryShelves();
 
 // ── 1. The discovery data model — historical, data-level ─────────────────────────────────────────────────────
 // Frozen at R2-A (the last stage that rendered it): 335 works → 98 entries, 42 within the cap, 6 over-cap shelves.
+// R3 stages add their derived discovery / visible / over-cap terms (lib/read-ia-r3-contribution.ts).
 const entries = shelves.flatMap((s) => s.entries);
 const entryHref = (e: (typeof entries)[number]) => (e.kind === "collection" ? e.collection.href : e.work.href);
-eq(entries.length, 98, "discoveryShelves(): 98 discovery entries (historical)");
+eq(entries.length, 98 + R3.discovery, "discoveryShelves(): 98 discovery entries (historical; + R3)");
 eq(new Set(entries.map(entryHref)).size, entries.length, "discoveryShelves(): every entry is distinct");
-eq(shelves.reduce((n, s) => n + Math.min(HISTORICAL_CAP, s.entries.length), 0), 42, "discoveryShelves(): 42 entries within the historical 6-per-shelf cap");
-eq(shelves.filter((s) => s.entries.length > HISTORICAL_CAP).length, 6, "discoveryShelves(): 6 shelves over the historical cap");
+eq(shelves.reduce((n, s) => n + Math.min(HISTORICAL_CAP, s.entries.length), 0), 42 + R3.visible, "discoveryShelves(): 42 entries within the historical 6-per-shelf cap (+ R3)");
+eq(shelves.filter((s) => s.entries.length > HISTORICAL_CAP).length, 6 + R3.overCap, "discoveryShelves(): 6 shelves over the historical cap (+ R3)");
 eq(shelves.reduce((n, s) => n + s.works.length, 0), works.length, "discoveryShelves(): its shelves still hold every published work");
 ok(works.length > entries.length, `the catalogue holds more works (${works.length}) than the discovery model has entries (${entries.length})`);
 for (const s of shelves) {
@@ -155,6 +157,6 @@ if (failures.length) {
   console.log(`shelf-disclosure — ${checks} checks, 0 failed`);
   console.log(
     `  /read: 9 category cards, 0 disclosures · ${delivered.length} works delivered by 9 category pages · ` +
-      `discovery model (data only): ${entries.length} entries · 42 within the historical cap · 6 over-cap shelves`,
+      `discovery model (data only): ${entries.length} entries · ${42 + R3.visible} within the historical cap · ${6 + R3.overCap} over-cap shelves`,
   );
 }

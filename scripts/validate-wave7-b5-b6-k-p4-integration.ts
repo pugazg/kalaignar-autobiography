@@ -28,6 +28,7 @@ import { WAVE7_B5_B6_K_ROUTES } from "../lib/wave7-b5-b6-k-contribution";
 import sitemap from "../app/sitemap";
 import { WAVE8_CONTRIBUTION as W8 } from "../lib/wave8-contribution";
 import { READ_IA_R2_CONTRIBUTION as R2 } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 
 const root = process.cwd();
 let checks = 0; const fail: string[] = [];
@@ -46,11 +47,11 @@ eq([B5A.length, B5B.length, B6.length, NEW.length], [61, 36, 3, 101], "populatio
 // ── 1. CATALOGUE ──────────────────────────────────────────────────────────────────────────────────────
 const works = publishedWorks();
 const byShelf = (id: string) => works.filter((w) => w.shelf === id).length;
-eq(works.length, BASE.catalogue + 101 + W8.works, "catalogue 232 → 333 (+ later Wave-8)");
+eq(works.length, BASE.catalogue + 101 + W8.works + R3.works, "catalogue 232 → 333 (+ later Wave-8)");
 eq(new Set(works.map((w) => w.id)).size, works.length, "no duplicate catalogue id");
 eq(new Set(works.map((w) => w.slug)).size, works.length, "no duplicate catalogue slug");
 eq({ speeches: byShelf("speeches"), literaryCommentary: byShelf("literary-commentary"), drama: byShelf("drama"), fiction: byShelf("fiction"), essays: byShelf("essays-articles"), cinema: byShelf("cinema-writing"), poetry: byShelf("poetry"), lifeWriting: byShelf("life-writing"), letters: byShelf("letters") },
-  { speeches: 117, literaryCommentary: 3 + W8.literaryCommentary, drama: 10 + W8.drama, fiction: 162, essays: 15, cinema: 10, poetry: 14, lifeWriting: 1, letters: 1 }, "shelf census: Speeches 17→117, Literary Commentary 2→3, every other shelf unchanged");
+  { speeches: 117, literaryCommentary: 3 + W8.literaryCommentary, drama: 10 + W8.drama, fiction: 162, essays: 15 + R3.shelves["essays-articles"], cinema: 10, poetry: 14 + R3.shelves.poetry, lifeWriting: 1, letters: 1 }, "shelf census: Speeches 17→117, Literary Commentary 2→3, every other shelf unchanged (+ R3)");
 for (const id of NEW) eq(LIBRARY_WORKS.filter((w) => w.id === id).length, 1, `${id}: exactly one LibraryWork`);
 for (const bad of ["muthukkuliyal-part-1", "muthukkuliyal-part-2", "irulum-oliyum", "1973-irulum-oliyum", "pazhaiya-varalarum-ilaiya-thalaimuraiyum", "kalaivanar-nsk-memorial-day-audio-06"]) ok(!LIBRARY_WORKS.some((w) => w.id === bad || w.slug === bad), `negative guard: ${bad} is not a LibraryWork`);
 ok(!LIBRARY_WORKS.some((w) => /kuraloviyam-part|part-00[1-6]/.test(w.id)), "negative guard: no Kuraloviyam intake Part is a LibraryWork");
@@ -89,8 +90,8 @@ eq(collectionsForWork("kuraloviyam").length, 0, "Kuraloviyam belongs to no colle
 // ── 3. DISCOVERY ──────────────────────────────────────────────────────────────────────────────────────
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, BASE.discovery + 6 + W8.discovery, "/read discovery 90 → 96 (+ later Wave-8)");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), BASE.visible + 1 + W8.visible, "initially visible 40 → 41 (Speeches already over the cap; Literary Commentary 3 under it)");
+eq(entries.length, BASE.discovery + 6 + W8.discovery + R3.discovery, "/read discovery 90 → 96 (+ later Wave-8)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), BASE.visible + 1 + W8.visible + R3.visible, "initially visible 40 → 41 (Speeches already over the cap; Literary Commentary 3 under it)");
 const sp = shelves.find((s) => s.shelf.id === "speeches")!;
 eq(sp.entries.length, 22, "Speeches discovery = 2 collection cards + 20 standalone speeches");
 eq(sp.entries.filter((e) => e.kind === "collection").map((e) => (e.kind === "collection" ? e.collection.id : "")), ["muthukkuliyal-part-1", "muthukkuliyal-part-2"], "Speeches collection cards");

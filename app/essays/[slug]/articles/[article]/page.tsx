@@ -9,6 +9,18 @@ import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
 import { WAVE7_ESSAY_SLUGS } from "@/lib/essays-wave7-routes";
 const ALL_ESSAY_SLUGS: readonly string[] = Array.from(new Set<string>([...ESSAY_SLUGS, ...WAVE6_ESSAY_SLUGS, ...WAVE7_ESSAY_SLUGS]));
 import { printedPagesLabel, publicationMetaSentence, scanRunsLabel } from "@/lib/essay-source-facts";
+import { publicationAppearances } from "@/lib/work-relations";
+import { r3WitnessLinksForPage } from "@/lib/witness";
+
+/**
+ * Reading Room IA v2 R3: the stable fragment ids of a unit's printed poem boundaries, POSITIONAL over its printed
+ * subheadings (`undefined` where no live identity or relation uses that boundary). Only இன முழக்கம் unit 6 has any.
+ */
+function subheadingAnchors(pubSlug: string, articleSlug: string): string[] | undefined {
+  const units = publicationAppearances(pubSlug).filter((u) => u.unit.startsWith(`${articleSlug}#`));
+  if (!units.some((u) => u.live)) return undefined;
+  return units.map((u) => (u.live ? u.unit.slice(articleSlug.length + 1) : (undefined as unknown as string)));
+}
 
 function loadPublication(slug: string): EssayPublication | null {
   try {
@@ -59,6 +71,8 @@ export default function ArticlePage({ params }: { params: { slug: string; articl
       article={pub.articles[i]}
       prev={i > 0 ? pub.articles[i - 1] : null}
       next={i < pub.articles.length - 1 ? pub.articles[i + 1] : null}
+      subheadingAnchors={subheadingAnchors(params.slug, params.article)}
+      witnessLinks={r3WitnessLinksForPage(`/essays/${params.slug}/articles/${params.article}`)}
     />
   );
 }

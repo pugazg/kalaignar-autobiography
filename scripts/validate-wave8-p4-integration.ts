@@ -24,6 +24,7 @@ import { PLAY_SLUGS } from "../data/plays";
 import sitemap from "../app/sitemap";
 import * as MurasoliRoute from "../app/murasoli/[id]/page";
 import { READ_IA_R2_CONTRIBUTION as R2, READ_IA_R2_ROUTES } from "../lib/read-ia-r2-contribution";
+import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
 
 let checks = 0; const fail: string[] = [];
 const ok = (c: boolean, l: string) => { checks++; if (!c) fail.push(l); };
@@ -35,19 +36,21 @@ const RAW = /"(releaseState|apparatus|annotations|currentCheckpoint|verification
 
 // ══ CATALOGUE ═══════════════════════════════════════════════════════════════════════════════════════════════════
 const works = publishedWorks();
-eq(works.length, 335, "catalogue 333 → 335");
+eq(works.length, 335 + R3.works, "catalogue 333 → 335 (+ later R3)");
 eq(new Set(works.map((w) => w.id)).size, works.length, "unique catalogue ids");
 eq(new Set(works.map((w) => w.slug)).size, works.length, "unique catalogue slugs");
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 const sortObj = (o: Record<string, number>) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
-eq(sortObj(byShelf), sortObj({ "life-writing": 1, letters: 1, fiction: 162, poetry: 14, drama: 11, "cinema-writing": 10, speeches: 117, "essays-articles": 15, "literary-commentary": 4 }), "shelf census: Drama 10→11, Literary Commentary 3→4, every other shelf unchanged");
+eq(sortObj(byShelf), sortObj({ "life-writing": 1, letters: 1, fiction: 162, poetry: 14 + R3.shelves.poetry, drama: 11, "cinema-writing": 10, speeches: 117, "essays-articles": 15 + R3.shelves["essays-articles"], "literary-commentary": 4 }), "shelf census: Drama 10→11, Literary Commentary 3→4, every other shelf unchanged (+ later R3)");
 eq(LIBRARY_WORKS.filter((w) => w.id === "murasoli-letters").length, 1, "exactly ONE Murasoli LibraryWork");
 eq(works.filter((w) => w.shelf === "letters").map((w) => w.id), ["murasoli-letters"], "the Letters shelf is the one murasoli-letters work");
 const mw = works.find((w) => w.id === "murasoli-letters")!;
 ok(mw.tamil === "partial" && mw.english === "partial" && !mw.sourceCommit && /42–54/.test(mw.descEn ?? ""), "murasoli-letters: coverage partial/partial (13 of 54 volumes), no single invented source commit, description states 42–54");
 ok(!LIBRARY_WORKS.some((w) => w.id !== "murasoli-letters" && (w.readerStructure === "letter" || w.shelf === "letters")) && !LIBRARY_WORKS.some((w) => /(vol(ume)?[-\s]?4[2-7]|^m4[2-7]-|murasoli.*(vol|4[2-7]))/i.test(`${w.id} ${w.slug}`)), "negative guard: no Murasoli volume (42–47) is a LibraryWork (no other letter-structured / Letters-shelf work)");
-ok(!LIBRARY_WORKS.some((w) => /nagai|சுவைப்|comedy/i.test(w.id + w.slug + w.titleTa + w.titleEn)), "negative guard: நகைச் சுவைப் பகுதி. is not a second work");
+// Since R3-B the probe's ONLY allowed match is the canonical Kavithaigal poem "It Is Over—a Comedy Drama!"
+// (/poems/kalaignarin-kavithaigal/it-is-over-a-comedy-drama); any other match, Murasoli or not, fails.
+eq(LIBRARY_WORKS.filter((w) => /nagai|சுவைப்|comedy/i.test(w.id + w.slug + w.titleTa + w.titleEn)).map((w) => w.id), ["it-is-over-a-comedy-drama"], "negative guard: நகைச் சுவைப் பகுதி. is not a second work (the probe's only catalogue match is the R3-B poem it-is-over-a-comedy-drama)");
 ok(!LIBRARY_WORKS.some((w) => /^\d{3}-|sangatamil-/.test(w.id) || (w.id !== "sangatamil" && /சங்கத் தமிழ்/.test(w.titleTa))), "negative guard: no Sangatamil section is a LibraryWork");
 const one = (id: string) => LIBRARY_WORKS.filter((w) => w.id === id);
 eq(one("ore-mutham").length, 1, "ore-mutham exactly once");
@@ -72,8 +75,8 @@ eq(LIBRARY_COLLECTIONS.length, 9, "collections stay 9");
 ok(!LIBRARY_COLLECTIONS.some((c) => /murasoli|ore-mutham|sangatamil|nagai/i.test(c.id)), "no Wave-8 collection");
 const shelves = discoveryShelves();
 const entries = shelves.flatMap((s) => s.entries);
-eq(entries.length, 98, "/read discovery 96 → 98");
-eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), 42, "/read initially visible 41 → 42 (Drama already over the cap; Literary Commentary 3 → 4 under it)");
+eq(entries.length, 98 + R3.discovery, "/read discovery 96 → 98 (+ later R3)");
+eq(shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0), 42 + R3.visible, "/read initially visible 41 → 42 (+ later R3) (Drama already over the cap; Literary Commentary 3 → 4 under it)");
 const shelfEntries = (id: string) => shelves.find((s) => s.shelf.id === id)?.entries ?? [];
 ok(shelfEntries("drama").some((e) => e.kind === "work" && e.work.id === "ore-mutham") && shelfEntries("drama").length === 11, "Drama discovery: ore-mutham a standalone entry (11 entries)");
 ok(shelfEntries("literary-commentary").some((e) => e.kind === "work" && e.work.id === "sangatamil") && shelfEntries("literary-commentary").length === 4, "Literary Commentary discovery: sangatamil a standalone entry (4 entries)");

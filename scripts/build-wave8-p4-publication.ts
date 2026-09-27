@@ -84,14 +84,18 @@ export async function buildRecord() {
   const { PLAY_SLUGS } = await import("../data/plays");
   const sitemap = (await import("../app/sitemap")).default;
   const { READ_IA_R2_ROUTES } = await import("../lib/read-ia-r2-contribution");
+  const { READ_IA_R3_CONTRIBUTION: R3 } = await import("../lib/read-ia-r3-contribution");
+  const { preR3Works } = await import("../lib/read-ia-r3-projection");
   const p3 = JSON.parse(fs.readFileSync(P3, "utf8")) as { counts: Record<string, number>; cohorts: Record<string, { routes: string[] }> };
   const p3Routes = Object.values(p3.cohorts).flatMap((c) => c.routes);
-  const works = publishedWorks();
+  // The record is the frozen Wave-8 P4 surface: the later Reading Room IA v2 R3 stages are projected out (R3 identities
+  // removed, demoted publications restored; discovery/visible less the derived R3 terms), exactly as the R2-C URLs are.
+  const works = preR3Works(publishedWorks());
   const byShelf: Record<string, number> = {};
   for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
   const shelves = discoveryShelves();
-  const discovery = shelves.flatMap((s) => s.entries).length;
-  const visible = shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0);
+  const discovery = shelves.flatMap((s) => s.entries).length - R3.discovery;
+  const visible = shelves.reduce((n, s) => n + Math.min(s.entries.length, 6), 0) - R3.visible;
   // The record is the frozen Wave-8 P4 surface: the later Reading Room IA v2 category URLs (R2-C) are excluded, exactly as
   // earlier-wave validators exclude later cohorts, so --verify keeps regenerating the committed record byte-for-byte.
   const urls = (sitemap() as { url: string }[]).map((e) => new URL(e.url).pathname).filter((p) => !READ_IA_R2_ROUTES.includes(p));
