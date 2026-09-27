@@ -38,6 +38,7 @@
 import { LIBRARY_WORKS, SHELVES, publishedWorks, type LibraryWork, type Shelf, type ShelfId } from "@/data/library";
 import { WAVE6_B7_COLLECTIONS } from "@/data/wave6-b7-catalogue";
 import { WAVE7_MUTHUKKULIYAL_COLLECTIONS } from "@/data/wave7-b5-b6-k-catalogue";
+import { resolveCollectionMembers } from "@/lib/collection-members";
 
 export type CollectionKind = "anthology";
 
@@ -300,20 +301,15 @@ export function collectionsForWork(workId: string): readonly LibraryCollection[]
  * nothing on screen says anything is missing. A declared member that does not resolve is a defect in
  * the declaration or the catalogue, and it stops the build rather than quietly shrinking the archive.
  */
-export function collectionMemberWorks(c: LibraryCollection): Array<{ member: CollectionMember; work: LibraryWork }> {
-  return [...c.members]
-    .sort((a, b) => (a.ordinal ?? 0) - (b.ordinal ?? 0))
-    .map((member) => {
-      const work = LIBRARY_WORKS.find((w) => w.id === member.workId);
-      if (!work) {
-        throw new Error(
-          `collection "${c.id}" declares member "${member.workId}", which resolves to no LibraryWork. ` +
-            `A declared member is never dropped silently: fix the roster in data/collections.ts or the ` +
-            `catalogue entry in data/library.ts.`,
-        );
-      }
-      return { member, work };
-    });
+export function collectionMemberWorks(c: LibraryCollection): Array<{ member: CollectionMember; work: LibraryWork; merged?: { canonical: LibraryWork } }> {
+  // R3-D (frozen R3 plan §7): a member resolves to a canonical LibraryWork, or to an ACTIVE merged-witness relation —
+  // the printed old-title witness, returned as its verbatim former record (its preserved route), with its canonical
+  // target. Membership is never repointed; anything else still fails closed (lib/collection-members.ts).
+  return resolveCollectionMembers(c).map(({ member, resolved }) =>
+    resolved.kind === "work"
+      ? { member, work: resolved.work }
+      : { member, work: resolved.relation.witness.record as LibraryWork, merged: { canonical: resolved.canonical } },
+  );
 }
 
 // ── Discovery ───────────────────────────────────────────────────────────────────────────────────────

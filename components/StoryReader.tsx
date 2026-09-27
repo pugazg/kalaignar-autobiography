@@ -5,6 +5,8 @@ import Link from "next/link";
 import type { Story, StoryBlock, StoryTextSegment } from "@/data/stories";
 import { useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import WitnessNote from "@/components/WitnessNote";
+import type { WitnessLink } from "@/lib/witness";
 
 /**
  * கிழவன் கனவு and the Fiction short-story form — one continuous printed story, read straight through.
@@ -38,7 +40,7 @@ import { cn } from "@/lib/utils";
  * the global print stylesheet deletes `nav`, `header` and `footer` outright. Only the navigation and
  * the toggle itself are hidden from paper, where their removal is correct.
  */
-export default function StoryReader({ story }: { story: Story }) {
+export default function StoryReader({ story, witnessLinks = [] }: { story: Story; /** R3-D: the merged-witness notice (lib/witness.ts); renders nothing when empty. */ witnessLinks?: WitnessLink[] }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   // Source-first: the verified Tamil is authoritative and shown by default; the English reading
@@ -119,6 +121,8 @@ export default function StoryReader({ story }: { story: Story }) {
         <div className={cn("mt-10 break-words", showEn ? "font-body text-base" : "font-tamil text-lg")} lang={showEn ? "en" : "ta"}>
           {renderBlocks(blocks)}
         </div>
+
+        <WitnessNote links={witnessLinks} />
 
         {/* The one link out to the evidence interface. A div, so it survives print — and it names the
             provenance page without reproducing any of it here. */}

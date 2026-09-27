@@ -1,12 +1,12 @@
-// Reading Room IA v2 R3 — collection-member resolution with merged witnesses (frozen R3 plan §7). DORMANT until R3-D.
+// Reading Room IA v2 R3 — collection-member resolution with merged witnesses (frozen R3 plan §7). ACTIVE since R3-D.
 //
 // A collection member id resolves to (1) a canonical LibraryWork, or (2) an ACTIVE `merged-witness` record — the
 // printed old-title witness of a work that R3-D merges into a canonical target. Anything else fails closed, exactly as
 // collectionMemberWorks() does today. LIBRARY_COLLECTIONS membership is never edited: the printed 2004 book contains
 // the old-title witness, so the member id stays the witness id.
 //
-// R3-A: no merged witness is active, so every member of every collection resolves as (1). Nothing renders from this
-// module yet; the collection pages still use collectionMemberWorks().
+// R3-D: the five merged-witness relations are active, so the five 2004-anthology members resolve as (2); every other
+// member of every collection resolves as (1). data/collections.ts `collectionMemberWorks()` resolves through here.
 import { LIBRARY_WORKS, type LibraryWork } from "@/data/library";
 import type { LibraryCollection } from "@/data/collections";
 import { R3_RELATIONS, activeMergedWitness, type WorkRelation } from "@/lib/work-relations";
@@ -39,5 +39,12 @@ export function resolveCollectionMember(
 export function resolveCollectionMembers(c: LibraryCollection, works?: readonly LibraryWork[], relations?: readonly WorkRelation[]) {
   return [...c.members]
     .sort((a, b) => (a.ordinal ?? 0) - (b.ordinal ?? 0))
-    .map((member) => ({ member, resolved: resolveCollectionMember(member.workId, works, relations) }));
+    .map((member) => {
+      try {
+        return { member, resolved: resolveCollectionMember(member.workId, works, relations) };
+      } catch (e) {
+        // Fail closed, naming the collection: a declared member is never dropped silently.
+        throw new Error(`collection "${c.id}" declares member "${member.workId}": ${e instanceof Error ? e.message : String(e)}`);
+      }
+    });
 }
