@@ -6,6 +6,7 @@ import StoryReader from "@/components/StoryReader";
 import { STORY_SLUGS } from "@/data/stories";
 import { WAVE6_B7_STORY_SLUGS } from "@/lib/stories-wave6-routes";
 import type { Story } from "@/data/stories";
+import { r3WitnessLinksForPage } from "@/lib/witness";
 
 // Wave 6 Batch 7 P3: the discovered STORY_SLUGS PLUS the 116 hidden Batch-7 slugs. The latter are
 // prerendered (URL-addressable) but stay out of catalogue / /read / sitemap until Batch 7 P4. Deduped
@@ -47,5 +48,8 @@ export default function StoryPage({ params }: { params: { slug: string } }) {
   if (!ALL_STORY_SLUGS.includes(params.slug)) notFound();
   const story = loadStory(params.slug);
   if (!story) notFound();
-  return <StoryReader story={story} />;
+  // R3-D: a story merged into a canonical work keeps its printed text here, unchanged; it gains only a derived notice
+  // naming the canonical work. Passed only when present, so every other story page is unchanged.
+  const witnessLinks = r3WitnessLinksForPage(`/stories/${params.slug}`);
+  return <StoryReader story={story} {...(witnessLinks.length ? { witnessLinks } : {})} />;
 }

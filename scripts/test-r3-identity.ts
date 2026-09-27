@@ -14,10 +14,11 @@ import { LIBRARY_COLLECTIONS, collectionMemberWorks } from "../data/collections"
 import { LIBRARY_PUBLICATIONS, LIBRARY_WORKS, publishedWorks, type LibraryWork } from "../data/library";
 import { POEM_SLUGS, POETRY_PUBLICATION_SLUGS, POETRY_WITNESS_RELATIONS } from "../data/poems";
 import sitemap from "../app/sitemap";
-import { r3WitnessLinksForPage, resolveWitnessLinks } from "../lib/witness";
-import { R3_IDENTITY, R3_RELATIONS, activeRelations, canonicalFor, publicationAppearances, witnessesOf, type WorkRelation } from "../lib/work-relations";
+import { CANONICAL_SIDE_ONLY, publicationRelationNote, r3WitnessLinksForPage, resolveWitnessLinks } from "../lib/witness";
+import { R3_IDENTITY, R3_RELATIONS, activeMergedWitness, activeRelations, canonicalFor, publicationAppearances, witnessesOf, type WorkRelation } from "../lib/work-relations";
 import { resolveCollectionMember, resolveCollectionMembers } from "../lib/collection-members";
 import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
+import { R3_MERGED_LEGACY, mergedLegacyRecord } from "../lib/read-ia-r3-projection";
 
 let checks = 0;
 const failures: string[] = [];
@@ -187,7 +188,8 @@ for (const line of [
   for (const r of activeRelations().filter((x) => !x.legacyPoetryView)) {
     const home = publishedWorks().find((w) => w.id === r.canonicalId);
     ok(!!home && !!shown.get(r.id)?.has(pageOf(home.href)), `${r.id}: renders on its canonical work's page`);
-    if (r.witness.locator) ok(!!shown.get(r.id)?.has(pageOf(r.witness.locator)), `${r.id}: renders on its witness's page`);
+    // Canonical-side-only classes (R3-D Sangatamil) must NOT render on the witness page; every other class must.
+    if (r.witness.locator) ok(!!shown.get(r.id)?.has(pageOf(r.witness.locator)) === !CANONICAL_SIDE_ONLY.has(r.class), `${r.id}: ${CANONICAL_SIDE_ONLY.has(r.class) ? "does NOT render" : "renders"} on its witness's page`);
   }
   eq(Array.from(shown.keys()).filter((id) => R.find((r) => r.id === id)?.state !== "active"), [], "no dormant relation renders on any page");
   // The standalone / item poem pages expose exactly the same R3 set through resolveWitnessLinks.
@@ -198,9 +200,12 @@ for (const line of [
 
 // ── 6. Collections and the dormant merged-witness resolver ───────────────────────────────────────────────────────
 for (const c of LIBRARY_COLLECTIONS) {
-  const viaNew = resolveCollectionMembers(c).map(({ member, resolved }) => [member.workId, resolved.kind, resolved.kind === "work" ? resolved.work.id : ""]);
-  const viaOld = collectionMemberWorks(c).map(({ member, work }) => [member.workId, "work", work.id]);
-  eq(viaNew, viaOld, `${c.id}: every member resolves as a canonical LibraryWork, identically to collectionMemberWorks()`);
+  // collectionMemberWorks() resolves through the merged-witness resolver: a member is a canonical work, or (R3-D) an
+  // active merged witness — its verbatim legacy record plus its canonical target. Both paths must agree exactly.
+  const viaNew = resolveCollectionMembers(c).map(({ member, resolved }) => [member.workId, resolved.kind, resolved.kind === "work" ? resolved.work.id : (resolved.relation.witness.record as LibraryWork).id, resolved.kind === "work" ? "" : resolved.canonical.id]);
+  const viaOld = collectionMemberWorks(c).map(({ member, work, merged }) => [member.workId, merged ? "merged-witness" : "work", work.id, merged?.canonical.id ?? ""]);
+  eq(viaNew, viaOld, `${c.id}: every member resolves identically through collectionMemberWorks() and the resolver`);
+  eq(viaNew.filter(([id, kind]) => kind === "merged-witness" && !activeMergedWitness(id)), [], `${c.id}: only ACTIVE merged witnesses resolve as merged-witness`);
 }
 {
   // The capability, exercised on a hypothetical R3-D state (never the live one): the merged witness resolves only
@@ -208,9 +213,10 @@ for (const c of LIBRARY_COLLECTIONS) {
   const r = R.find((x) => x.class === "merged-witness" && (x.witness.record as LibraryWork).id === "sirai-kodiyathu");
   ok(!!r, "the sirai-kodiyathu → green-parrot merged-witness record exists");
   const target = { ...(LIBRARY_WORKS[0] as LibraryWork), id: "green-parrot", state: "published" as const };
-  const worksAfter = [...LIBRARY_WORKS.filter((w) => w.id !== "sirai-kodiyathu"), target];
+  const worksAfter = [...LIBRARY_WORKS.filter((w) => w.id !== "sirai-kodiyathu" && w.id !== "green-parrot"), target];
+  const dormant = R.map((x) => (x.id === r?.id ? { ...x, state: "dormant" as const } : x));
   let threw = false;
-  try { resolveCollectionMember("sirai-kodiyathu", worksAfter, R); } catch { threw = true; }
+  try { resolveCollectionMember("sirai-kodiyathu", worksAfter, dormant); } catch { threw = true; }
   ok(threw, "a DORMANT merged witness does not resolve (fails closed)");
   const active = R.map((x) => (x.id === r?.id ? { ...x, state: "active" as const } : x));
   let res: ReturnType<typeof resolveCollectionMember> | undefined;
@@ -385,6 +391,136 @@ if (stages.join() === "R3-A,R3-B,R3-C") {
     const h = built(`essays/thudikkum-ilamai/articles/${u}`);
     if (h) ok(h.includes("/speeches/idhaya-perikai") && /இன் ஒரு மூல ஆதாரப் பதிப்பு|is a source witness of section/.test(h), `R3-C: the ${u} witness unit links back to idhaya-perikai`);
   }
+}
+// ── 9d. R3-D: merges, Sangatamil, 1958 — the final R3 state (frozen plan §7, §9, §10, §13 R3-D) ─────────────────
+/** The five frozen merges (OD3–OD5): legacy Fiction work → canonical target, and the 2004 ordinal it is printed at. */
+const R3D_MERGES: ReadonlyArray<[legacy: string, target: string, ordinal: number]> = [
+  ["neeyum-kaithi-naanum-kaithi", "piraiye", 2], ["sorgaththirku-vandhathu-eppadi", "sorgga-logaththil", 14],
+  ["aadik-kaatre", "adikkaatru", 17], ["sirai-kodiyathu", "green-parrot", 20], ["pugazhe-nee-oru-pudhir", "pugazh", 23],
+];
+/** The five merged stories' payloads, pinned from the pre-R3D tree (Batch-7 import 171d7b37): a merge never edits a story. */
+const MERGED_STORY_PAYLOADS: Record<string, string> = {
+  "neeyum-kaithi-naanum-kaithi/provenance.json": "10f7a2dc3d23ff12c914e9e4aa2f3f270cf5781a48c2baa24cb82c853810b717",
+  "neeyum-kaithi-naanum-kaithi/story.json": "7be43bcbfaa65a673e9f167ed63ffbe15477c9a7c8a769a72153a0e1361b7cf4",
+  "sorgaththirku-vandhathu-eppadi/provenance.json": "3ac6a3e29a9d0e0a250a05caa68a8048643a28fbb80d55c09352b72d5a49729c",
+  "sorgaththirku-vandhathu-eppadi/story.json": "bd96c480801439102c2762ce0dc508fac6aa0f1f2cc3b3f4b756934f8cbc534e",
+  "aadik-kaatre/provenance.json": "436a4a36835b87d9cd69c538ec0a52e5f1c05f59e5c269e4bbecc4b723824e09",
+  "aadik-kaatre/story.json": "7ebc17e63e65b82a9540bd5679a25a2523643c5c17190bbe280ad85b0dbb2fa7",
+  "sirai-kodiyathu/provenance.json": "a09712ceae89cffb8f84f742f08c2393b8517aaa48cfcfcbc9874aed2b6708b8",
+  "sirai-kodiyathu/story.json": "3bfdba31e08ce589b5b08dde8c7f077def4e7f4f4af26b4dcaefe06c55f03a75",
+  "pugazhe-nee-oru-pudhir/provenance.json": "08465d2338f2badbab6d00f0b1c57122564b9af05a39057db34efe688c78c8b1",
+  "pugazhe-nee-oru-pudhir/story.json": "549030defb97976bc369464acb9dcb305bfe4ba937c58f7bd5a3322103dd3561",
+};
+/**
+ * The Sangatamil landing and its 104 section pages, normalized (script / link / asset references removed), pinned from
+ * the R3-C build of tree 6c4ad32a (Production-identical): R3 changes nothing Sangatamil renders (frozen plan §9).
+ */
+const SANGATAMIL_R3C_AGGREGATE = "0b813c64db2f01df6356b59df4b0528b8f51e1a95541c22e28b362ed8014bdd0";
+const normHtml = (h: string) => h.replace(/<script\b[\s\S]*?<\/script>/g, "").replace(/<link\b[^>]*>/g, "").replace(/\/_next\/static\/[^"')\s]+/g, "");
+if (stages.join() === "R3-A,R3-B,R3-C,R3-D") {
+  const pubW = W.filter((w) => w.state === "published");
+  eq(pubW.length, 249, "R3-D: all 249 CREATE identities are published");
+  eq(W.filter((w) => w.state !== "published").length, 0, "R3-D: no CREATE identity is dormant");
+  const createRow = new Map(CREATE.map((e) => [e.resolved.canonicalId, e]));
+  eq(W.filter((w) => { const x = LIBRARY_WORKS.filter((y) => y.id === w.id); return x.length !== 1 || x[0].shelf !== w.shelf || x[0].subtype !== w.subtype || x[0].shelf !== createRow.get(w.id)?.resolved.shelf; }).map((w) => w.id), [], "R3-D: every CREATE identity is canonical exactly once, on its frozen shelf and subtype");
+  eq(publishedWorks().length, 568, "R3-D: canonical catalogue 568");
+  eq(sorted(tally(publishedWorks(), (w) => w.shelf)), { "cinema-writing": 10, drama: 11, "essays-articles": 91, fiction: 157, letters: 3, "life-writing": 1, "literary-commentary": 4, poetry: 173, speeches: 118 }, "R3-D: shelves 1/3/157/173/11/10/118/91/4");
+  eq({ works: R3.works, fiction: R3.shelves.fiction, poetry: R3.shelves.poetry, essays: R3.shelves["essays-articles"], letters: R3.shelves.letters, speeches: R3.shelves.speeches, others: Object.entries(R3.shelves).filter(([k]) => !["fiction", "poetry", "essays-articles", "letters", "speeches"].includes(k)).every(([, v]) => v === 0), build: R3.build, sitemap: R3.sitemap, collections: R3.collections },
+    { works: 233, fiction: -5, poetry: 159, essays: 76, letters: 2, speeches: 1, others: true, build: 0, sitemap: 0, collections: 0 }, "R3-D: derived contribution +233 (Fiction −5, Poetry +159, Essays +76, Letters +2, Speeches +1), all else 0");
+  eq(LIBRARY_PUBLICATIONS.length, 11, "R3-D: 11 publication records (no further demotion or restoration)");
+  eq(sorted(tally(LIBRARY_PUBLICATIONS, (p) => `${p.shelf}/${p.demotedIn}`)), { "essays-articles/R3-B": 1, "essays-articles/R3-C": 7, "poetry/R3-B": 3 }, "R3-D: publication records unchanged (Poetry 3, Essays 8)");
+  for (const p of LIBRARY_PUBLICATIONS) {
+    const { state: _s, ...formerRest } = boundary.catalogue.records.find((r) => r.id === p.id)!;
+    const { kind: _k, demotedIn: _d, ...rest } = p;
+    eq(rest, formerRest, `${p.id}: publication record is its former LibraryWork record verbatim (minus state)`);
+  }
+  // Relations: every record active; classes and levels unchanged and distinct.
+  eq({ total: R.length, active: activeRelations().length, dormant: R.filter((r) => r.state !== "active").length }, { total: 49, active: 49, dormant: 0 }, "R3-D: 49 relations, all active, 0 dormant");
+  eq(sorted(tally([...R], (r) => r.class)), { "commentary-section": 11, "external-publication": 11, "merged-witness": 5, "source-publication": 22 }, "R3-D: classes 22 / 5 / 11 / 11");
+  eq(sorted(tally([...R], (r) => `${r.class}/${r.level}`)), { "commentary-section/section": 11, "external-publication/chapter": 10, "external-publication/publication": 1, "merged-witness/work": 5, "source-publication/section": 2, "source-publication/work": 20 }, "R3-D: levels work / section / chapter / publication, by class");
+
+  // ── the five merges ──
+  const coll2004 = LIBRARY_COLLECTIONS.find((c) => c.id === "2004-kalaignarin-kuttik-kathaigal")!;
+  const frozen2004 = (boundary.collections.records as { id: string; members: { workId: string; ordinal?: number }[] }[]).find((c) => c.id === coll2004.id)!;
+  eq(R.filter((r) => r.class === "merged-witness").map((r) => [(r.witness.record as LibraryWork).id, r.canonicalId]).sort(), R3D_MERGES.map(([l, t]) => [l, t]).sort(), "R3-D: exactly the five frozen merges are the merged-witness records");
+  for (const [legacy, target, ordinal] of R3D_MERGES) {
+    const rels = R.filter((r) => r.class === "merged-witness" && (r.witness.record as LibraryWork).id === legacy);
+    ok(!LIBRARY_WORKS.some((w) => w.id === legacy) && !publishedWorks().some((w) => w.href === `/stories/${legacy}`), `${legacy}: no longer a canonical LibraryWork or canonical href`);
+    ok(rels.length === 1 && rels[0].state === "active" && rels[0].canonicalId === target, `${legacy}: exactly one ACTIVE merged-witness record → ${target}`);
+    eq(publishedWorks().filter((w) => w.id === target).length, 1, `${legacy}: target ${target} is canonical exactly once`);
+    ok(smSet.has(`/stories/${legacy}`) && smSet.has(`/stories/${legacy}/source`), `${legacy}: its story route and /source are preserved`);
+    for (const f of ["story.json", "provenance.json"]) eq(sha256(fs.readFileSync(path.join(process.cwd(), "public/data/stories", legacy, f))), MERGED_STORY_PAYLOADS[`${legacy}/${f}`], `${legacy}/${f}: story payload unchanged`);
+    const onStory = r3WitnessLinksForPage(`/stories/${legacy}`);
+    const tw = publishedWorks().find((w) => w.id === target)!;
+    eq(onStory.map((l) => [l.id, l.href]), [[rels[0]?.id, tw.href]], `${legacy}: its story page carries exactly the notice linking ${target}`);
+    ok(onStory.every((l) => (tw.shelf === "essays-articles" ? /\bessay\b/.test(l.noteEn) && !/\bpoem\b/.test(l.noteEn) : /\bpoem\b/.test(l.noteEn))), `${legacy}: the notice is work-type aware (${tw.shelf})`);
+    ok(r3WitnessLinksForPage(tw.href.split("#")[0]).some((l) => l.id === rels[0]?.id && l.href === `/stories/${legacy}`), `${target}: its page lists the legacy story witness`);
+    eq(coll2004.members.filter((m) => m.workId === legacy).map((m) => m.ordinal), [ordinal], `${legacy}: still a 2004 member at printed ordinal ${ordinal}`);
+  }
+  eq(Array.from(R3_MERGED_LEGACY).sort(), R3D_MERGES.map(([l, t]) => [l, t]).sort(), "validators' narrow merge exception (R3_MERGED_LEGACY) is exactly the five frozen merges");
+  eq(R3D_MERGES.filter(([l]) => !mergedLegacyRecord(l)).map(([l]) => l), [], "every frozen merge resolves to its active legacy record");
+  // green-parrot keeps its Meesai witness and gains the merged story, without duplication.
+  eq(r3WitnessLinksForPage("/poems/kalaignarin-kavithaigal/green-parrot").map((l) => l.href), ["/essays/meesai-mulaiththa-vayathil/articles/pachchaikkili", "/stories/sirai-kodiyathu"], "green-parrot: Meesai witness kept + merged story added, once each");
+  // ── collections: data untouched, resolution learns merged witnesses ──
+  eq(sha256(JSON.stringify(LIBRARY_COLLECTIONS)), sha256(JSON.stringify(boundary.collections.records)), "R3-D: LIBRARY_COLLECTIONS is byte-identical to the frozen pre-R3 boundary");
+  eq(coll2004.members.length, 34, "2004 anthology: 34 members");
+  eq(coll2004.members.map((m) => [m.workId, m.ordinal]), frozen2004.members.map((m) => [m.workId, m.ordinal]), "2004 anthology: member ids, order and ordinals unchanged");
+  const res2004 = resolveCollectionMembers(coll2004);
+  eq(res2004.filter((x) => x.resolved.kind === "merged-witness").map((x) => [x.member.workId, x.resolved.kind === "merged-witness" ? x.resolved.canonical.id : ""]).sort(), R3D_MERGES.map(([l, t]) => [l, t]).sort(), "2004 anthology: exactly the five legacy ids resolve as merged-witness, to their canonical targets");
+  eq(res2004.filter((x) => x.resolved.kind === "work").length, 29, "2004 anthology: the other 29 members resolve as canonical works");
+  { let threw = false; try { resolveCollectionMember("undeclared-missing-member"); } catch { threw = true; } ok(threw, "an undeclared missing member still fails closed"); }
+  {
+    // Negative control: repointing one member to its canonical id is caught by the frozen-membership assertion.
+    const repointed = coll2004.members.map((m) => (m.workId === "sirai-kodiyathu" ? { ...m, workId: "green-parrot" } : m));
+    ok(JSON.stringify(repointed.map((m) => [m.workId, m.ordinal])) !== JSON.stringify(frozen2004.members.map((m) => [m.workId, m.ordinal])), "negative control: a repointed collection member fails the frozen-membership assertion");
+  }
+  const built = (r: string) => { const f = path.join(process.cwd(), ".next/server/app", `${r}.html`); return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : null; };
+  const collHtml = built("collections/2004-kalaignarin-kuttik-kathaigal");
+  if (collHtml) {
+    for (const [legacy, target] of R3D_MERGES) {
+      const tw = publishedWorks().find((w) => w.id === target)!;
+      ok(collHtml.includes(`href="/stories/${legacy}"`) && collHtml.includes(`href="${tw.href.replace(/&/g, "&amp;")}"`), `2004 collection page: ${legacy} links its story and its canonical ${target}`);
+    }
+    eq((collHtml.match(/href="\/stories\/[^"/]+"/g) ?? []).length, 34, "2004 collection page: 34 member story links");
+  }
+  // ── Sangatamil: canonical side only; its own pages unchanged ──
+  eq(publishedWorks().filter((w) => w.id === "sangatamil").map((w) => w.shelf), ["literary-commentary"], "Sangatamil: one Literary Commentary LibraryWork");
+  eq(publishedWorks().filter((w) => w.href.startsWith("/sangatamil/")).length, 0, "Sangatamil: no section is a LibraryWork");
+  const sgRel = R.filter((r) => r.class === "commentary-section");
+  eq(sgRel.length, 11, "Sangatamil: 11 commentary-section relations");
+  for (let n = 1; n <= 11; n++) {
+    const route = `/sangatamil/${String(91 + n).padStart(3, "0")}-oruthalaik-kaadhal-${String(n).padStart(2, "0")}`;
+    eq(r3WitnessLinksForPage(`/poems/oruthalaik-kathal/section-${n}`).map((l) => l.href), [route], `oruthalaik-kathal section ${n}: exactly its one Sangatamil link ${route}`);
+  }
+  const landing = r3WitnessLinksForPage("/poems/oruthalaik-kathal").map((l) => l.href);
+  eq(landing.filter((h) => h?.startsWith("/sangatamil/")).length, 11, "oruthalaik-kathal landing: all 11 Sangatamil sections");
+  ok(landing.includes("/poems/kaalap-pezhaiyum-kavithai-saaviyum/can-he-be-bought-with-love"), "oruthalaik-kathal landing: the Kaalap witness is kept");
+  const sgRoutes = sm.filter((p) => p === "/sangatamil" || /^\/sangatamil\/\d{3}-/.test(p));
+  eq(sgRoutes.length, 105, "Sangatamil: landing + 104 section routes in the sitemap");
+  eq(sgRoutes.flatMap((p) => r3WitnessLinksForPage(p)).length, 0, "Sangatamil: no reverse relation note resolves on any Sangatamil page");
+  if (built("sangatamil")) {
+    const dir = path.join(process.cwd(), ".next/server/app/sangatamil");
+    const files = ["sangatamil.html", ...fs.readdirSync(dir).filter((f) => f.endsWith(".html") && f !== "source.html").sort().map((f) => `sangatamil/${f}`)];
+    const lines = files.map((f) => `${f} ${sha256(normHtml(fs.readFileSync(path.join(process.cwd(), ".next/server/app", f), "utf8")))}`);
+    eq({ pages: files.length, aggregate: sha256(lines.join("\n")) }, { pages: 105, aggregate: SANGATAMIL_R3C_AGGREGATE }, "Sangatamil: landing + 104 section pages render byte-identically to R3-C (normalized)");
+  }
+  // ── 1958 தேனலைகள் ──
+  const ext = R.filter((r) => r.class === "external-publication" && r.witness.externalId === "1958-thenalaigal");
+  eq({ total: ext.length, chapter: ext.filter((r) => r.level === "chapter").length, publication: ext.filter((r) => r.level === "publication").length }, { total: 11, chapter: 10, publication: 1 }, "1958: 10 chapter-level + 1 publication-level relations");
+  ok(ext.filter((r) => r.level === "chapter").every((r) => typeof r.witness.alai === "number") && ext.filter((r) => r.level === "publication").every((r) => !("alai" in r.witness)), "1958: chapter records carry an அலை; the publication record carries none");
+  ok(!R.some((r) => r.witness.alai === 3 || /முத்துமாலை/.test(String(r.witness.headingTa ?? ""))), "1958: no relation maps அலை 3 முத்துமாலை");
+  ok(!LIBRARY_WORKS.some((w) => /1958|thenalaigal-1958/.test(w.id)) && !sm.some((p) => /1958/.test(p)), "1958: the publication is not a LibraryWork and has no route");
+  for (const r of ext) {
+    const home = publishedWorks().find((w) => w.id === r.canonicalId)!;
+    const note = r3WitnessLinksForPage(home.href).find((l) => l.id === r.id);
+    ok(!!note && !note.href && (r.level === "chapter" ? note.noteEn.includes(`அலை ${r.witness.alai} «${r.witness.headingTa}»`) && !note.detailEn : note.noteEn === "Related to the 1958 publication" && /no chapter equivalence/.test(note.detailEn ?? "")), `${r.canonicalId}: shows its ${r.level}-level 1958 note (no link)`);
+  }
+  const od6 = publicationRelationNote("meesai-mulaiththa-vayathil");
+  ok(!!od6 && /Units 16–26/.test(od6.en) && /அலை 3 is not mapped/.test(od6.en) && /அலை 1 relates at publication level only/.test(od6.en), "Meesai landing: the OD6 publication-level note (units 16–26; அலை 1 publication-level; அலை 3 unmapped)");
+  const meesaiHtml = built("essays/meesai-mulaiththa-vayathil");
+  if (meesaiHtml) ok(meesaiHtml.includes('data-testid="publication-relation-note"'), "Meesai landing page renders the OD6 note");
+  // ── the built story pages carry their notice ──
+  for (const [legacy] of R3D_MERGES) { const h = built(`stories/${legacy}`); if (h) ok(/மூல ஆதாரப் பதிப்பு/.test(h), `stories/${legacy}: the built page carries the merged-witness notice`); }
 }
 {
   // Stage-generic: no DO_NOT_PROMOTE row is ever a LibraryWork.

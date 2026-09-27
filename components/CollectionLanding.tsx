@@ -22,6 +22,8 @@ export type CollectionMemberRow = {
   pages?: string;
   /** This member's scan span within this publication, as a display label; absent if unestablished. */
   scans?: string;
+  /** R3-D: the canonical work this printed witness was merged into (derived from its merged-witness relation). */
+  canonical?: { href: string; titleTa: string; titleEn: string };
 };
 
 /**
@@ -154,6 +156,17 @@ export default function CollectionLanding({
                   </span>
                 )}
               </Link>
+              {m.canonical && (
+                // Outside the row link (links never nest). The row still reads the printed title and route; this only
+                // names the canonical work the printed witness belongs to.
+                <p className="mt-1 pl-4 text-xs text-ink/65 dark:text-night-text/65" lang={lang}>
+                  {ta ? "முதன்மைப் படைப்பு: " : "Canonical work: "}
+                  <Link href={m.canonical.href} className="focus-ring rounded text-marina underline decoration-dotted underline-offset-2 hover:text-marina/80 dark:text-marina-light" lang="ta">
+                    {m.canonical.titleTa}
+                  </Link>
+                  {!ta && <span> ({m.canonical.titleEn})</span>}
+                </p>
+              )}
             </li>
           ))}
         </ol>

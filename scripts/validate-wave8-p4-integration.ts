@@ -43,7 +43,7 @@ eq(new Set(works.map((w) => w.slug)).size, works.length, "unique catalogue slugs
 const byShelf: Record<string, number> = {};
 for (const w of works) byShelf[w.shelf] = (byShelf[w.shelf] ?? 0) + 1;
 const sortObj = (o: Record<string, number>) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
-eq(sortObj(byShelf), sortObj({ "life-writing": 1, letters: 1 + R3.shelves.letters, fiction: 162, poetry: 14 + R3.shelves.poetry, drama: 11, "cinema-writing": 10, speeches: 117 + R3.shelves.speeches, "essays-articles": 15 + R3.shelves["essays-articles"], "literary-commentary": 4 }), "shelf census: Drama 10→11, Literary Commentary 3→4, every other shelf unchanged (+ later R3)");
+eq(sortObj(byShelf), sortObj({ "life-writing": 1, letters: 1 + R3.shelves.letters, fiction: 162 + R3.shelves.fiction, poetry: 14 + R3.shelves.poetry, drama: 11, "cinema-writing": 10, speeches: 117 + R3.shelves.speeches, "essays-articles": 15 + R3.shelves["essays-articles"], "literary-commentary": 4 }), "shelf census: Drama 10→11, Literary Commentary 3→4, every other shelf unchanged (+ later R3)");
 eq(LIBRARY_WORKS.filter((w) => w.id === "murasoli-letters").length, 1, "exactly ONE Murasoli LibraryWork");
 eq(works.filter((w) => w.shelf === "letters" && !isOd8Letter(w)).map((w) => w.id), ["murasoli-letters"], "the Letters shelf is the one murasoli-letters work (+ exactly the R3 OD8 Letters, not Murasoli letters)");
 eq(works.filter((w) => w.shelf === "letters" && isOd8Letter(w)).map((w) => w.id).sort(), Array.from(R3_OD8_LETTERS).sort(), "the only other Letters-shelf works are the published OD8 pair at their Sinthanaiyum routes");

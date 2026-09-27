@@ -39,6 +39,7 @@ export default function WitnessNote({ links }: { links: WitnessLink[] }) {
                 {label}
               </span>
             )}
+            {(ta ? l.detailTa : l.detailEn) && <span className="text-ink/60 dark:text-night-text/60"> — {ta ? l.detailTa : l.detailEn}</span>}
           </p>
         );
       })}

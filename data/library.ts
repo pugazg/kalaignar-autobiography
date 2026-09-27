@@ -19,7 +19,7 @@
 import { chapterIndex } from "./references";
 import { WAVE6_B7_WORKS } from "./wave6-b7-catalogue";
 import { WAVE7_B5_B6_K_WORKS } from "./wave7-b5-b6-k-catalogue";
-import { R3_DEMOTED_PUBLICATIONS, R3_PUBLISHED_WORKS } from "./r3-catalogue";
+import { R3_DEMOTED_PUBLICATIONS, R3_MERGED_WITNESSES, R3_PUBLISHED_WORKS } from "./r3-catalogue";
 
 // ── Shelves ──────────────────────────────────────────────────────────────────
 // Fixed public shelf taxonomy from the cross-project master handover. All nine
@@ -3541,12 +3541,16 @@ export type LibraryPublication = Omit<LibraryWork, "state"> & {
 };
 
 const DEMOTED = new Map(R3_DEMOTED_PUBLICATIONS.map((d) => [d.id, d.demotedIn]));
+/** R3-D: the former works an ACTIVE merged-witness relation has merged into a canonical target (relations.json). */
+const MERGED = new Set(R3_MERGED_WITNESSES.map((m) => m.id));
 
 /**
- * The canonical catalogue: every pre-R3 record that has not been demoted to a publication, then the canonical works R3
- * has published (generated in data/r3-catalogue.ts from the R3 identity manifest; never hand-typed).
+ * The canonical catalogue: every pre-R3 record that has been neither demoted to a publication nor merged into a
+ * canonical target, then the canonical works R3 has published (generated in data/r3-catalogue.ts from the R3 identity
+ * manifest; never hand-typed). A merged record's route, story payload and collection membership are all preserved; it
+ * resolves through its merged-witness relation (lib/collection-members.ts), never as a LibraryWork.
  */
-export const LIBRARY_WORKS: LibraryWork[] = [...CATALOGUE_RECORDS.filter((w) => !DEMOTED.has(w.id)), ...R3_PUBLISHED_WORKS];
+export const LIBRARY_WORKS: LibraryWork[] = [...CATALOGUE_RECORDS.filter((w) => !DEMOTED.has(w.id) && !MERGED.has(w.id)), ...R3_PUBLISHED_WORKS];
 
 /**
  * Publication records: the source publications R3 has demoted so far (R3-B: the three Poetry publications and Meesai;
@@ -3562,13 +3566,15 @@ export const LIBRARY_PUBLICATIONS: LibraryPublication[] = CATALOGUE_RECORDS.filt
 // ── Selectors ────────────────────────────────────────────────────────────────
 /**
  * A catalogue RECORD by id or slug: a canonical LibraryWork, or — since R3 — a source publication's record (its
- * former LibraryWork record, verbatim). For checks about a record's own metadata (href, source pins, rights, units),
- * which R3 does not change; canonical status is `publishedWorks()`'s concern, not this lookup's.
+ * former LibraryWork record, verbatim), or a merged work's former record (verbatim; R3-D). For checks about a record's
+ * own metadata (href, source pins, rights, units), which R3 does not change; canonical status is `publishedWorks()`'s
+ * concern, not this lookup's.
  */
 export function catalogueRecord(idOrSlug: string): LibraryWork | LibraryPublication | undefined {
   return (
     LIBRARY_WORKS.find((w) => w.id === idOrSlug || w.slug === idOrSlug) ??
-    LIBRARY_PUBLICATIONS.find((p) => p.id === idOrSlug || p.slug === idOrSlug)
+    LIBRARY_PUBLICATIONS.find((p) => p.id === idOrSlug || p.slug === idOrSlug) ??
+    CATALOGUE_RECORDS.find((w) => MERGED.has(w.id) && (w.id === idOrSlug || w.slug === idOrSlug))
   );
 }
 

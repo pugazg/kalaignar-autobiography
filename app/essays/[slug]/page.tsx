@@ -8,6 +8,7 @@ import type { EssayPublication } from "@/data/essays";
 import { publicationMetaSentence } from "@/lib/essay-source-facts";
 import { WAVE6_ESSAY_SLUGS } from "@/lib/essays-wave6-routes";
 import { WAVE7_ESSAY_SLUGS } from "@/lib/essays-wave7-routes";
+import { publicationRelationNote } from "@/lib/witness";
 
 // Wave 6 P4: ESSAY_SLUGS now includes the Wave-6 Batch-6 publications, so this union is deduplicated
 // (a `Set`) to prerender each landing page once. WAVE6_ESSAY_SLUGS is retained as a helper registry.
@@ -42,5 +43,7 @@ export default function EssayPublicationPage({ params }: { params: { slug: strin
   if (!ALL_ESSAY_SLUGS.includes(params.slug)) notFound();
   const pub = loadPublication(params.slug);
   if (!pub) notFound();
-  return <EssayLanding pub={pub} />;
+  // R3-D: a derived publication-level relation note (Meesai ↔ the 1958 தேனலைகள்); passed only when present.
+  const publicationNote = publicationRelationNote(params.slug);
+  return <EssayLanding pub={pub} {...(publicationNote ? { publicationNote } : {})} />;
 }

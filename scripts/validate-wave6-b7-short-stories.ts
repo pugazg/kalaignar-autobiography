@@ -25,6 +25,7 @@ import { execFileSync } from "node:child_process";
 import { publishedWorks } from "../data/library";
 import { COLLECTION_IDS } from "../data/collections";
 import { STORY_SLUGS } from "../data/stories";
+import { mergedLegacyRecord } from "../lib/read-ia-r3-projection";
 
 const root = process.cwd();
 let checks = 0;
@@ -208,7 +209,8 @@ eq(manifest.directRouteCountP1, 0, "manifest records directRouteCountP1=0 (froze
 const publishedIds = new Set(publishedWorks().map((w) => w.id));
 const storySet = new Set(STORY_SLUGS as readonly string[]);
 for (const slug of allSlugs) {
-  ok(publishedIds.has(slug), `${slug} is now a published LibraryWork (P4 realized)`);
+  // R3-D: exactly the five frozen merges are, instead, their active merged-witness legacy record (route and /source kept).
+  ok(publishedIds.has(slug) || !!mergedLegacyRecord(slug), `${slug} is now a published LibraryWork (P4 realized; since R3-D one of the five frozen merges is its merged-witness record)`);
   ok(storySet.has(slug), `${slug} is now a discovered STORY_SLUGS entry (P4 realized)`);
 }
 const plannedCollectionIds = (manifest.groups as Array<{ publicCollectionPlanned?: boolean; collectionDir: string | null }>)

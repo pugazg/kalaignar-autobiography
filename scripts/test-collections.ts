@@ -35,6 +35,7 @@ import {
   discoveryShelves,
 } from "../data/collections";
 import { READ_IA_R3_CONTRIBUTION as R3 } from "../lib/read-ia-r3-contribution";
+import { mergedLegacyRecord } from "../lib/read-ia-r3-projection";
 
 const BENCHMARK = "1977-kalaignar-karunanidhiyin-sirukathaigal";
 
@@ -106,7 +107,7 @@ eq(entries.filter((e) => e.kind === "collection").length, 9, "nine collection en
 
 const fiction = shelves.find((s) => s.shelf.id === "fiction");
 ok(!!fiction, "the discovery model has a Fiction shelf");
-eq(fiction!.works.length, 162, "Fiction holds 162 works (post Batch-7: +116 short stories; post Wave-7 B2-B4: +5 novels)");
+eq(fiction!.works.length, 162 + R3.shelves.fiction, "Fiction holds 162 works (+ R3: the five R3-D merges) (post Batch-7: +116 short stories; post Wave-7 B2-B4: +5 novels)");
 eq(fiction!.entries.length, 20, "Fiction shows 20 discovery entries (7 collections collapse; 13 standalone works)");
 eq(
   fiction!.entries.map((e) => (e.kind === "collection" ? e.collection.id : e.work.id)),
@@ -157,7 +158,9 @@ ok(fictionHrefs.includes("/novels/balipeedam-nokki"), "பலிபீடம் 
 ok(fictionHrefs.includes("/stories/kizhavan-kanavu"), "கிழவன் கனவு is listed on /read/fiction");
 // Every Fiction collection's members, across all 7 collections, are on the page.
 for (const fc of LIBRARY_COLLECTIONS.filter((x) => x.shelf === "fiction")) {
-  eq(fc.members.map((m) => works.find((w) => w.id === m.workId)?.href).filter((h) => !h || !fictionHrefs.includes(h)), [], `${fc.id}: every member is listed on /read/fiction`);
+  // R3-D: a merged member (its active merged-witness relation) is listed as its canonical work, on that work's shelf.
+  eq(collectionMemberWorks(fc).filter((m) => !m.merged).map((m) => m.work.href).filter((h) => !fictionHrefs.includes(h)), [], `${fc.id}: every member is listed on /read/fiction`);
+  eq(collectionMemberWorks(fc).filter((m) => m.merged).map((m) => m.work.id).filter((id) => !mergedLegacyRecord(id)), [], `${fc.id}: the only non-Fiction-listed members are the frozen R3-D merges`);
 }
 
 // Other shelves are untouched, and Phase 0 still governs the ones over the cap.
@@ -185,7 +188,7 @@ eq(shelves.filter((x) => x.entries.length > 6).length, 6, "the discovery model s
 
 // The Fiction category card states works as its primary count, and its collections secondarily — never entries.
 const fictionCard = html.slice(html.indexOf('data-shelf="fiction"'), html.indexOf("</a>", html.indexOf('data-shelf="fiction"')));
-ok(/162 works/.test(fictionCard), "the Fiction card states 162 works, not 20 entries");
+ok(new RegExp(`\\b${162 + R3.shelves.fiction} works`).test(fictionCard), "the Fiction card states 162 (+ R3) works, not 20 entries");
 ok(/7 collections/.test(fictionCard), "the Fiction card states its 7 collections");
 ok(!/\b20 works\b/.test(fictionCard), "the Fiction card never states the 20 discovery entries");
 const speechesCard = html.slice(html.indexOf('data-shelf="speeches"'), html.indexOf("</a>", html.indexOf('data-shelf="speeches"')));

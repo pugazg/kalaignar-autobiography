@@ -343,8 +343,12 @@ ok("plural membership is exercised: at least one 1977 member also belongs to ano
 const declSrcForShape = fs.readFileSync(path.join(process.cwd(), "data/collections.ts"), "utf8");
 ok("the reverse map stores a list, not one collection per work",
    /ReadonlyMap<string,\s*readonly LibraryCollection\[\]>/.test(declSrcForShape));
+// Reading Room IA v2 R3-D: collectionMemberWorks() resolves through lib/collection-members.ts (which also admits an
+// ACTIVE merged-witness member); the fail-closed throw lives there. Checked in both files, never weakened.
+const resolverSrcForShape = fs.readFileSync(path.join(process.cwd(), "lib/collection-members.ts"), "utf8");
 ok("member resolution fails closed rather than filtering unresolved members",
-   /throw new Error\(/.test(declSrcForShape) && !/\.filter\(\(x\): x is/.test(declSrcForShape));
+   (/throw new Error\(/.test(declSrcForShape) || (/resolveCollectionMembers\(/.test(declSrcForShape) && /throw new Error\(/.test(resolverSrcForShape))) &&
+   !/\.filter\(\(x\): x is/.test(declSrcForShape) && !/\.filter\(\(x\): x is/.test(resolverSrcForShape));
 
 // ── F. No inference from presentation prose ─────────────────────────────────────────────────────────
 startGroup("NO INFERENCE");

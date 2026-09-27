@@ -523,7 +523,7 @@
     "ownerDecisionRef": "OD3"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:merged/sorgaththirku-vandhathu-eppadi->sorgga-logaththil",
@@ -562,7 +562,7 @@
     "ownerDecisionRef": "OD5"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:merged/neeyum-kaithi-naanum-kaithi->piraiye",
@@ -601,7 +601,7 @@
     "ownerDecisionRef": "OD4"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:merged/aadik-kaatre->adikkaatru",
@@ -640,7 +640,7 @@
     "ownerDecisionRef": "OD4"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:merged/pugazhe-nee-oru-pudhir->pugazh",
@@ -679,7 +679,7 @@
     "ownerDecisionRef": "OD4"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/092-oruthalaik-kaadhal-01->oruthalaik-kathal#section-1",
@@ -702,7 +702,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/093-oruthalaik-kaadhal-02->oruthalaik-kathal#section-2",
@@ -725,7 +725,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/094-oruthalaik-kaadhal-03->oruthalaik-kathal#section-3",
@@ -748,7 +748,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/095-oruthalaik-kaadhal-04->oruthalaik-kathal#section-4",
@@ -771,7 +771,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/096-oruthalaik-kaadhal-05->oruthalaik-kathal#section-5",
@@ -794,7 +794,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/097-oruthalaik-kaadhal-06->oruthalaik-kathal#section-6",
@@ -817,7 +817,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/098-oruthalaik-kaadhal-07->oruthalaik-kathal#section-7",
@@ -840,7 +840,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/099-oruthalaik-kaadhal-08->oruthalaik-kathal#section-8",
@@ -863,7 +863,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/100-oruthalaik-kaadhal-09->oruthalaik-kathal#section-9",
@@ -886,7 +886,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/101-oruthalaik-kaadhal-10->oruthalaik-kathal#section-10",
@@ -909,7 +909,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:sangatamil/102-oruthalaik-kaadhal-11->oruthalaik-kathal#section-11",
@@ -932,7 +932,7 @@
     "source": "kalaignar-literary-commentary@e23548b09547a2308407e60e5e67c1a03fee5354 works/sangatamil/pages 0425 divider + 0426–0496 (oruthalaik-kaadhal-01…11)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal->thenalaigal",
@@ -943,6 +943,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "indicates": {
      "alai": 1,
      "headingTa": "முத்தாரம்"
@@ -954,7 +960,7 @@
     "level": "publication-only (indicated, not mapped)"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-2->mayiliragu",
@@ -965,6 +971,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 2,
     "headingTa": "மயிலிறகு",
     "pdfScans": "18–29",
@@ -976,7 +988,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-4->madal",
@@ -987,6 +999,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 4,
     "headingTa": "மடல்",
     "pdfScans": "39–44",
@@ -998,7 +1016,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-5->thozhi",
@@ -1009,6 +1027,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 5,
     "headingTa": "தோழி",
     "pdfScans": "45–52",
@@ -1020,7 +1044,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-6->maruthaani",
@@ -1031,6 +1055,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 6,
     "headingTa": "மருதாணி",
     "pdfScans": "53–60",
@@ -1042,7 +1072,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-7->aruvi",
@@ -1053,6 +1083,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 7,
     "headingTa": "அருவி",
     "pdfScans": "61–67",
@@ -1064,7 +1100,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-8->muram",
@@ -1075,6 +1111,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 8,
     "headingTa": "முறம்",
     "pdfScans": "68–74",
@@ -1086,7 +1128,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-9->yaazh",
@@ -1097,6 +1139,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 9,
     "headingTa": "யாழ்",
     "pdfScans": "75–82",
@@ -1108,7 +1156,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-10->sirpi",
@@ -1119,6 +1167,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 10,
     "headingTa": "சிற்பி",
     "pdfScans": "83–95",
@@ -1130,7 +1184,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-11->seval-sandai",
@@ -1141,6 +1195,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 11,
     "headingTa": "சேவல் சண்டை",
     "pdfScans": "96–104",
@@ -1152,7 +1212,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   },
   {
    "id": "r3:external/1958-thenalaigal/alai-12->aandu-vizha",
@@ -1163,6 +1223,12 @@
    "witness": {
     "kind": "external-publication",
     "externalId": "1958-thenalaigal",
+    "titleTa": "தேனலைகள்",
+    "year": 1958,
+    "dateEn": "December 1958",
+    "dateTa": "டிசம்பர் 1958",
+    "catalogueRef": "TVA_BOK_0064030",
+    "sourceRef": "pugazg/kalaignar-short-stories@7205a10892d0b208df2617766844f480b6a2c798 collections/1958-thenalaigal/README.md",
     "alai": 12,
     "headingTa": "ஆண்டு விழா",
     "pdfScans": "105–111",
@@ -1174,7 +1240,7 @@
     "level": "chapter"
    },
    "introducedIn": "R3-D",
-   "state": "dormant"
+   "state": "active"
   }
  ]
 }

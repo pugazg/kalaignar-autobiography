@@ -48,7 +48,9 @@ function rows(id: string): CollectionMemberRow[] {
   if (!c) return [];
   // Order comes from the declaration's source-backed ordinals, never from catalogue declaration order,
   // title or page number.
-  return collectionMemberWorks(c).map(({ member, work }) => {
+  // R3-D: a merged member is still its printed old-title witness (its preserved story route); it gains only a derived
+  // link to the canonical work it was merged into.
+  return collectionMemberWorks(c).map(({ member, work, merged }) => {
     const payload = payloadExtent(work.href);
     return {
       ordinal: member.ordinal,
@@ -58,6 +60,7 @@ function rows(id: string): CollectionMemberRow[] {
       href: work.href,
       pages: member.localPages ?? payload.pages,
       scans: member.localScans ?? payload.scans,
+      ...(merged ? { canonical: { href: merged.canonical.href, titleTa: merged.canonical.titleTa, titleEn: merged.canonical.titleEn } } : {}),
     };
   });
 }

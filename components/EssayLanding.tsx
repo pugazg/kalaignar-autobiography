@@ -9,7 +9,7 @@ import { articleNumberingNote, editionRows, printedPagesLabel, scanRunsLabel, is
 
 // The publication landing: title, author, source-edition context and the source-numbered table of
 // contents. The publication is ONE catalog work; its 14 articles are reading units inside it.
-export default function EssayLanding({ pub }: { pub: EssayPublication }) {
+export default function EssayLanding({ pub, publicationNote }: { pub: EssayPublication; /** R3-D: a derived publication-level relation note (lib/witness.ts `publicationRelationNote`). */ publicationNote?: { ta: string; en: string } }) {
   const { lang } = useLang();
   const ta = lang === "ta";
   const first = pub.articles[0];
@@ -71,6 +71,11 @@ export default function EssayLanding({ pub }: { pub: EssayPublication }) {
       </header>
 
       <main id="main" className="mx-auto max-w-3xl px-5 pt-8 sm:px-6">
+        {publicationNote && (
+          <p className="mb-6 rounded-xl border border-dashed border-marina/30 bg-marina/[0.04] px-4 py-3 text-sm text-ink/70 dark:border-marina-light/30 dark:bg-marina-light/[0.05] dark:text-night-text/70" lang={lang} data-testid="publication-relation-note">
+            {ta ? publicationNote.ta : publicationNote.en}
+          </p>
+        )}
         <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-marina dark:text-marina-light">
           {pub.articleCount === 1
             ? (sectioned ? (ta ? "பகுதி" : "The section") : (ta ? "கட்டுரை" : "The essay"))

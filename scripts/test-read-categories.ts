@@ -40,7 +40,7 @@ import CinemaPage from "../app/read/cinema/page";
 import SpeechesPage from "../app/read/speeches/page";
 import EssaysPage from "../app/read/essays/page";
 import LiteraryCommentaryPage from "../app/read/literary-commentary/page";
-import { R3_OD8_LETTERS, isOd8Letter } from "../lib/read-ia-r3-projection";
+import { R3_OD8_LETTERS, isOd8Letter, mergedLegacyRecord } from "../lib/read-ia-r3-projection";
 
 let checks = 0;
 const failures: string[] = [];
@@ -221,7 +221,11 @@ for (const [shelf, n] of [["fiction", 149], ["speeches", 97]] as const) {
   );
   eq(members.size, n, `${shelf}: ${n} distinct collection member works`);
   const cards = new Set(hrefsIn(testIdBlock(rendered[shelf] ?? "", "category-works", "div")));
-  eq(Array.from(members).filter((h) => !cards.has(h)), [], `${shelf}: every collection member is listed individually`);
+  // R3-D: a merged member (one of the five frozen merges) is listed individually as its canonical work, on that
+  // work's own category page; every other member is listed on this shelf's page.
+  const all = LIBRARY_COLLECTIONS.filter((c) => c.shelf === shelf).flatMap((c) => collectionMemberWorks(c));
+  eq(all.filter((m) => !m.merged && !cards.has(m.work.href)).map((m) => m.work.id), [], `${shelf}: every collection member is listed individually`);
+  eq(all.filter((m) => m.merged && !(mergedLegacyRecord(m.work.id) && hrefsIn(testIdBlock(rendered[m.merged.canonical.shelf] ?? "", "category-works", "div")).includes(m.merged.canonical.href))).map((m) => m.work.id), [], `${shelf}: every merged member (a frozen R3-D merge) is listed as its canonical work on that work's category page`);
 }
 for (const c of READ_CATEGORIES) {
   const cards = hrefsIn(testIdBlock(rendered[c.shelf] ?? "", "category-works", "div"));
@@ -270,8 +274,10 @@ for (const s of shelfIds) eq(works.filter((w) => w.shelf === s).length, EXPECTED
 const digest = createHash("sha256").update(preR3Works(works).map((w) => w.id).sort().join("\n")).digest("hex");
 eq(digest, R2_BASE_PUBLISHED_ID_DIGEST, "published id set, less the R3 delta, is unchanged from the R2 base (no CREATE work, no merge)");
 for (const [source, target] of R3_MERGES) {
-  eq(works.filter((w) => w.id === source).map((w) => w.shelf), ["fiction"], `R3 merge source ${source} is still a separate Fiction work`);
-  // A merge target exists only as an R3-published identity (R3-B publishes the Meesai poems; the merge itself is R3-C).
+  // Until R3-D the source is a separate Fiction work; after, it is exactly its active frozen merged-witness record.
+  if (mergedLegacyRecord(source)) ok(!works.some((w) => w.id === source) && works.some((w) => w.id === target), `R3 merge source ${source} is merged into ${target} (R3-D)`);
+  else eq(works.filter((w) => w.id === source).map((w) => w.shelf), ["fiction"], `R3 merge source ${source} is still a separate Fiction work`);
+  // A merge target exists only as an R3-published identity (R3-B/R3-C publish the targets; the merge itself is R3-D).
   eq(works.filter((w) => w.id === target && !isR3Published(w)).length, 0, `R3 merge target ${target} is not created in R2`);
 }
 
@@ -351,8 +357,8 @@ for (const c of READ_CATEGORIES) {
   ok(html.indexOf('data-testid="category-works"') < html.indexOf('data-testid="category-collections"'), `${c.route}: Collections follows the canonical works`);
   ok(/<h2[^>]*id="category-collections"[^>]*>[\s\S]*?lang="ta">தொகுப்புகள்<[\s\S]*?Collections<\/span><\/h2>/.test(section), `${c.route}: bilingual Collections / தொகுப்புகள் h2`);
   const grid = hrefsIn(testIdBlock(html, "category-works", "div"));
-  const members = collectionsInCategory(c.shelf).flatMap((x) => collectionMemberWorks(x).map((m) => m.work.href));
-  eq(members.filter((h) => !grid.includes(h)), [], `${c.route}: every collection member is still an individual work card`);
+  const members = collectionsInCategory(c.shelf).flatMap((x) => collectionMemberWorks(x).filter((m) => !m.merged).map((m) => m.work.href));
+  eq(members.filter((h) => !grid.includes(h)), [], `${c.route}: every collection member is still an individual work card (R3-D merged members: as their canonical work)`);
   eq(grid.length, EXPECTED_COUNTS[c.shelf], `${c.route}: the work grid still holds all ${EXPECTED_COUNTS[c.shelf]} works`);
 }
 eq(READ_CATEGORIES.map((c) => hrefsIn(testIdBlock(rendered[c.shelf] ?? "", "category-collections", "section")).length), [0, 0, 7, 0, 0, 0, 2, 0, 0], "collection cards per category: Fiction 7, Speeches 2, others 0");
